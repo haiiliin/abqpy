@@ -508,32 +508,6 @@ deprecated commands used in the script createLug.py, use the following commands:
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedArgsUsed" title="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedArgsUsed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getDeprecatedArgsUsed</span></code></a>()</p></td>
-<td><p>This method returns a list of deprecated arguments used since the last call to resetDeprecatedArgsUsed.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedMethodsUsed" title="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedMethodsUsed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getDeprecatedMethodsUsed</span></code></a>()</p></td>
-<td><p>This method returns a list of deprecated methods used since the last call to resetDeprecatedMethodsUsed.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedArgsUsed" title="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedArgsUsed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resetDeprecatedArgsUsed</span></code></a>()</p></td>
-<td><p>This method clears the list of deprecated arguments used.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedMethodsUsed" title="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedMethodsUsed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resetDeprecatedMethodsUsed</span></code></a>()</p></td>
-<td><p>This method clears the list of deprecated methods used.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.setValues" title="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([includeDeprecated, ...])</p></td>
-<td><p>This method modifies the BackwardCompatibility object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -928,20 +902,6 @@ The Repository object is derived from the dict object.
 - values
 -
 [changeKey(…)](<a class="reference external" href="https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-utlrepositorypyc.htm?ContextScope=all#simaker-utlrepositorychangekeypyc">https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-utlrepositorypyc.htm?ContextScope=all#simaker-utlrepositorychangekeypyc</a>)</p>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.Repository.Repository.changeKey" title="abaqus.UtilityAndView.Repository.Repository.changeKey"><code class="xref py py-obj docutils literal notranslate"><span class="pre">changeKey</span></code></a>(fromName, toName)</p></td>
-<td><p>This method changes the name of a key in a repository and the <strong>name</strong> member of the value object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -1159,62 +1119,6 @@ the Layer within a viewport.</p>
 <span class="n">session</span><span class="o">.</span><span class="n">views</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>displayedObjectScreenHeight</strong></dt><dd></dd>
-<dt><strong>displayedObjectScreenWidth</strong></dt><dd></dd>
-<dt><strong>layerTransform</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.fitView" title="abaqus.UtilityAndView.View.View.fitView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fitView</span></code></a>([drawImmediately])</p></td>
-<td><p>This method scales the displayable object (such as a part, the assembly, or an <strong>X - Y</strong> plot) to fit the viewport.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.next" title="abaqus.UtilityAndView.View.View.next"><code class="xref py py-obj docutils literal notranslate"><span class="pre">next</span></code></a>([drawImmediately])</p></td>
-<td><p>This method restores the view in the viewport to the next view setting in the list.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.pan" title="abaqus.UtilityAndView.View.View.pan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pan</span></code></a>([xFraction, yFraction, asMovie, ...])</p></td>
-<td><p>This method pans the view in the viewport using absolute, not relative, mode.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.previous" title="abaqus.UtilityAndView.View.View.previous"><code class="xref py py-obj docutils literal notranslate"><span class="pre">previous</span></code></a>([drawImmediately])</p></td>
-<td><p>This method restores the view in the viewport to the previous view setting in the list.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.rotate" title="abaqus.UtilityAndView.View.View.rotate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rotate</span></code></a>([xAngle, yAngle, zAngle, mode, ...])</p></td>
-<td><p>This method rotates the view in the viewport.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.setLayerTransform" title="abaqus.UtilityAndView.View.View.setLayerTransform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setLayerTransform</span></code></a>([layerTransform, options, ...])</p></td>
-<td><p>This method modifies the transformation used to position a Layer.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.setProjection" title="abaqus.UtilityAndView.View.View.setProjection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setProjection</span></code></a>(projection[, drawImmediately])</p></td>
-<td><p>This method modifies the appearance of three-dimensional models in the viewport.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.setRotationCenter" title="abaqus.UtilityAndView.View.View.setRotationCenter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setRotationCenter</span></code></a>(rotationCenter)</p></td>
-<td><p>This method sets the center of rotation to the specified location.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.setValues" title="abaqus.UtilityAndView.View.View.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([movieMode])</p></td>
-<td><p>This method modifies the View object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.setViewpoint" title="abaqus.UtilityAndView.View.View.setViewpoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setViewpoint</span></code></a>(viewVector[, cameraUpVector, ...])</p></td>
-<td><p>This method sets the camera's position in the viewport.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.zoom" title="abaqus.UtilityAndView.View.View.zoom"><code class="xref py py-obj docutils literal notranslate"><span class="pre">zoom</span></code></a>(zoomFactor[, mode, asMovie, ...])</p></td>
-<td><p>This method magnifies the view in the viewport.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.zoomRectangle" title="abaqus.UtilityAndView.View.View.zoomRectangle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">zoomRectangle</span></code></a>(point1, point2[, drawImmediately])</p></td>
-<td><p>This method fills the viewport with the graphics located within the given rectangle.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>

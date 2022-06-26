@@ -435,30 +435,6 @@ The CommonOptions object is derived from the DGCommonOptions object.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>autoDeformationScaleValue</strong></dt><dd></dd>
-<dt><strong>coordinateScaleFactors</strong></dt><dd></dd>
-<dt><strong>nonuniformScaleFactor</strong></dt><dd></dd>
-<dt><strong>uniformScaleFactor</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([options, renderStyle, ...])</p></td>
-<td><p>This method modifies the CommonOptions object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -1164,33 +1140,6 @@ The ContourOptions object is derived from the DGContourOptions object.</p>
 <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">partDisplay</span><span class="o">.</span><span class="n">displayGroupInstances</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">odbDisplayOptions</span><span class="o">.</span><span class="n">contourOptions</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>autoMaxValue</strong></dt><dd></dd>
-<dt><strong>autoMinValue</strong></dt><dd></dd>
-<dt><strong>intervalLineAttributes</strong></dt><dd></dd>
-<dt><strong>intervalValues</strong></dt><dd></dd>
-<dt><strong>maxValue</strong></dt><dd></dd>
-<dt><strong>minValue</strong></dt><dd></dd>
-<dt><strong>outsideLimitsMode</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([options, contourType, ...])</p></td>
-<td><p>This method modifies the ContourOptions object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -1932,27 +1881,6 @@ The DisplayBodyOptions object is derived from the DGDisplayBodyOptions object.</
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>coordinateScaleFactors</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([options, visibleEdges, ...])</p></td>
-<td><p>This method modifies the DisplayBodyOptions object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2247,70 +2175,6 @@ other <strong>odbDisplay</strong> members are created and can be set to customiz
 <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">odbDisplay</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>applyStatusToUndeformed</strong></dt><dd></dd>
-<dt><strong>statusInsideRange</strong></dt><dd></dd>
-<dt><strong>statusMaximum</strong></dt><dd></dd>
-<dt><strong>statusMinimum</strong></dt><dd></dd>
-<dt><strong>statusVariable</strong></dt><dd></dd>
-<dt><strong>symbolVariable</strong></dt><dd></dd>
-<dt><strong>useStatus</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ViewCut</span></code></a>(name, shape, origin, normal, axis2, ...)</p></td>
-<td><p>This method creates a ViewCut object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.moveCameraToCsys" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.moveCameraToCsys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveCameraToCsys</span></code></a>()</p></td>
-<td><p>This method specifies a new position for the camera.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setDeformedVariable</span></code></a>(variableLabel, field)</p></td>
-<td><p>This method specifies the field output variable or FieldOutput object to be used when displaying the deformed shape of the model.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setPrimarySectionPoint</span></code></a>(sectionPoint, activePly)</p></td>
-<td><p>This method specifies the section point for the current primary, symbol and status variables.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setPrimaryVariable</span></code></a>(variableLabel, field, ...)</p></td>
-<td><p>This method specifies the field output variable for which to obtain results.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setStatusVariable</span></code></a>(variableLabel, field, ...)</p></td>
-<td><p>This method specifies the field output variable for filtering element display based on a status criteria.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setStreamVariable</span></code></a>(variableLabel)</p></td>
-<td><p>This method specifies the field output variable for which to obtain results used for stream plots.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setSymbolVariable</span></code></a>(variableLabel, field, ...)</p></td>
-<td><p>This method specifies the field output variable for which to obtain results used for symbol plots.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([visibleDisplayGroups, viewCut, ...])</p></td>
-<td><p>This method specifies member values for the OdbDisplay object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 55%" />
-<col style="width: 45%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>setFrame</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -3157,20 +3021,6 @@ The OrientationOptions object is derived from the DGOrientationOptions object.</
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([options, axis1Color, showAxis1, ...])</p></td>
-<td><p>This method modifies the OrientationOptions object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -3445,28 +3295,6 @@ The SuperimposeOptions object is derived from the DGSuperimposeOptions object.</
 <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">partDisplay</span><span class="o">.</span><span class="n">displayGroupInstances</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">odbDisplayOptions</span><span class="o">.</span><span class="n">superimposeOptions</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>coordinateScaleFactors</strong></dt><dd></dd>
-<dt><strong>nonuniformOffset</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([options, renderStyle, ...])</p></td>
-<td><p>This method modifies the SuperimposeOptions object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -4144,30 +3972,6 @@ The SymbolOptions object is derived from the DGSymbolOptions object.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>tensorMaxValue</strong></dt><dd></dd>
-<dt><strong>tensorMinValue</strong></dt><dd></dd>
-<dt><strong>vectorMaxValue</strong></dt><dd></dd>
-<dt><strong>vectorMinValue</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([options, vectorQuantity, ...])</p></td>
-<td><p>This method modifies the SymbolOptions object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4835,33 +4639,6 @@ session.viewports[name].odbDisplay.viewCuts repository.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>angle</strong></dt><dd></dd>
-<dt><strong>position</strong></dt><dd></dd>
-<dt><strong>radius</strong></dt><dd></dd>
-<dt><strong>value</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.setValues" title="abaqus.OdbDisplay.ViewCut.ViewCut.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([angle, motion, position, radius, ...])</p></td>
-<td><p>This method modifies the ViewCut object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.updateVariable" title="abaqus.OdbDisplay.ViewCut.ViewCut.updateVariable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">updateVariable</span></code></a>()</p></td>
-<td><p>This method updates the field associated with an isosurface cut to be consistent with the current primary variable.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -5201,20 +4978,6 @@ a session is started.</p>
 <span class="n">session</span><span class="o">.</span><span class="n">viewerOptions</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues" title="abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([primaryVariableCaching, ...])</p></td>
-<td><p>This method modifies the ViewerOptions object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>

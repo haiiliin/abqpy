@@ -477,7 +477,7 @@ easier, and that is what <cite>abqpy</cite> does.</p>
 </section>
 <section id="merge-parts-to-assembly">
 <h3>Merge parts to assembly<a class="headerlink" href="#merge-parts-to-assembly" title="Permalink to this headline">#</a></h3>
-<p>We can use <code class="xref py py-meth docutils literal notranslate"><span class="pre">Instance()</span></code> to create instances：</p>
+<p>We can use <a class="reference internal" href="reference/mdb/model/assembly.html#abaqus.Assembly.AssemblyBase.AssemblyBase.Instance" title="abaqus.Assembly.AssemblyBase.AssemblyBase.Instance"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Instance()</span></code></a> to create instances：</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">DatumCsysByDefault</span><span class="p">(</span><span class="n">CARTESIAN</span><span class="p">)</span>
 <span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">Instance</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;instance&#39;</span><span class="p">,</span> <span class="n">part</span><span class="o">=</span><span class="n">part</span><span class="p">,</span> <span class="n">dependent</span><span class="o">=</span><span class="n">ON</span><span class="p">)</span>
 </pre></div>
@@ -552,7 +552,7 @@ easier, and that is what <cite>abqpy</cite> does.</p>
 </section>
 <section id="create-jobs">
 <h3>Create jobs<a class="headerlink" href="#create-jobs" title="Permalink to this headline">#</a></h3>
-<p>We can use <code class="xref py py-meth docutils literal notranslate"><span class="pre">Job()</span></code> to create a job:</p>
+<p>We can use <a class="reference internal" href="reference/mdb.html#abaqus.Job.JobMdb.JobMdb.Job" title="abaqus.Job.JobMdb.JobMdb.Job"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Job()</span></code></a> to create a job:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">job</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Job-1&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s1">&#39;Model-1&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -568,7 +568,7 @@ easier, and that is what <cite>abqpy</cite> does.</p>
 </section>
 <section id="save-the-abaqus-model-to-a-cae-file">
 <h3>Save the Abaqus model to a <cite>.cae</cite> file<a class="headerlink" href="#save-the-abaqus-model-to-a-cae-file" title="Permalink to this headline">#</a></h3>
-<p>We can use <code class="xref py py-class docutils literal notranslate"><span class="pre">saveAs</span></code> to save the Abaqus model to a <cite>.cae</cite> file:</p>
+<p>We can use <a class="reference internal" href="reference/mdb.html#abaqus.Mdb.MdbBase.MdbBase.saveAs" title="abaqus.Mdb.MdbBase.MdbBase.saveAs"><code class="xref py py-class docutils literal notranslate"><span class="pre">saveAs</span></code></a> to save the Abaqus model to a <cite>.cae</cite> file:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">saveAs</span><span class="p">(</span><span class="s1">&#39;compression.cae&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -576,7 +576,7 @@ easier, and that is what <cite>abqpy</cite> does.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus cae -noGUI script.py
 </pre></div>
 </div>
-<p>In order to make it simple, this has been done in the <code class="xref py py-meth docutils literal notranslate"><span class="pre">saveAs()</span></code> function:</p>
+<p>In order to make it simple, this has been done in the <a class="reference internal" href="reference/mdb.html#abaqus.Mdb.MdbBase.MdbBase.saveAs" title="abaqus.Mdb.MdbBase.MdbBase.saveAs"><code class="xref py py-meth docutils literal notranslate"><span class="pre">saveAs()</span></code></a> function:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">saveAs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pathName</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
     <span class="n">abaqus</span> <span class="o">=</span> <span class="s1">&#39;abaqus&#39;</span>
     <span class="k">if</span> <span class="s1">&#39;ABAQUS_BAT_PATH&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
@@ -684,7 +684,7 @@ easier, and that is what <cite>abqpy</cite> does.</p>
 </section>
 <section id="open-the-output-database">
 <h3>Open the output database<a class="headerlink" href="#open-the-output-database" title="Permalink to this headline">#</a></h3>
-<p>We can use <code class="xref py py-meth docutils literal notranslate"><span class="pre">openOdb()</span></code> to open the output database:</p>
+<p>We can use <a class="reference internal" href="reference/session.html#abaqus.Session.SessionBase.SessionBase.openOdb" title="abaqus.Session.SessionBase.SessionBase.openOdb"><code class="xref py py-meth docutils literal notranslate"><span class="pre">openOdb()</span></code></a> to open the output database:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">odb</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">openOdb</span><span class="p">(</span><span class="s1">&#39;Job-1.odb&#39;</span><span class="p">)</span>
 </pre></div>
 </div>

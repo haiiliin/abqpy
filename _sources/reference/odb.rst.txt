@@ -12,36 +12,43 @@ Odb
 
 .. autoclass:: abaqus.Odb.Odb.Odb
     :members:
-    :inherited-members:
 
     .. autoclasstoc::
 
-Amplitude features of the Odb
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OdbBase
+~~~~~~~
+
+.. autoclass:: abaqus.Odb.OdbBase.OdbBase
+    :members:
+
+    .. autoclasstoc::
+
+AmplitudeOdb
+~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb
     :members:
 
     .. autoclasstoc::
 
-Filter features of the Odb
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+FilterOdb
+~~~~~~~~~
 
 .. autoclass:: abaqus.FilterFilterOdb.FilterOdb
     :members:
 
     .. autoclasstoc::
 
-Material features of the Odb
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MaterialOdb
+~~~~~~~~~~~
 
 .. autoclass:: abaqus.Material.MaterialOdb.MaterialOdb
     :members:
 
     .. autoclasstoc::
 
-Beam Section Profile features of the Odb
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BeamSectionProfileOdb
+~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb
     :members:
@@ -157,7 +164,14 @@ OdbAssembly
 
 .. autoclass:: abaqus.Odb.OdbAssembly.OdbAssembly
     :members:
-    :inherited-members:
+
+    .. autoclasstoc::
+
+OdbAssemblyBase
+~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase
+    :members:
 
     .. autoclasstoc::
 
@@ -398,7 +412,14 @@ UserData
 
 .. autoclass:: abaqus.Odb.UserData.UserData
     :members:
-    :inherited-members:
+
+    .. autoclasstoc::
+
+UserDataBase
+~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Odb.UserDataBase.UserDataBase
+    :members:
 
     .. autoclasstoc::
 

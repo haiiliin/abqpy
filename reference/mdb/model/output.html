@@ -413,29 +413,6 @@
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest" title="abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FieldOutputRequest</span></code></a>(name, createStepName[, ...])</p></td>
-<td><p>This method creates a FieldOutputRequest object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest" title="abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistoryOutputRequest</span></code></a>(name, createStepName[, ...])</p></td>
-<td><p>This method creates a HistoryOutputRequest object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.OutputModel.OutputModel.IntegratedOutputSection" title="abaqus.StepOutput.OutputModel.OutputModel.IntegratedOutputSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IntegratedOutputSection</span></code></a>(name, surface[, ...])</p></td>
-<td><p>This method creates an IntegratedOutputSection object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.OutputModel.OutputModel.TimePoint" title="abaqus.StepOutput.OutputModel.OutputModel.TimePoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TimePoint</span></code></a>(name, points)</p></td>
-<td><p>This method creates a TimePoint object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest">
 <span class="sig-name descname"><span class="pre">FieldOutputRequest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createStepName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MODEL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'PRESELECT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ALL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeInterval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EVERY_TIME_INCREMENT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numIntervals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeMarks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boltLoad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sectionPoints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interactions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rebar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EXCLUDE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fasteners</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">assembledFastener</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">assembledFastenerSet</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exteriorOnly</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layupNames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layupLocationMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SPECIFIED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputAtPlyTop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputAtPlyMid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputAtPlyBottom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'INTEGRATION_POINTS'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/OutputModel.py#L23-L171"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest" title="Permalink to this definition">#</a></dt>
@@ -748,26 +725,6 @@ derived from the Step.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint" title="abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DiagnosticPrint</span></code></a>([allke, criticalElement, ...])</p></td>
-<td><p>This method creates a DiagnosticPrint object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.OutputStep.OutputStep.Monitor" title="abaqus.StepOutput.OutputStep.OutputStep.Monitor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Monitor</span></code></a>(node, dof, frequency)</p></td>
-<td><p>This method creates a request for a degree of freedom to be monitored in a general or modal procedure.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.OutputStep.OutputStep.Restart" title="abaqus.StepOutput.OutputStep.OutputStep.Restart"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Restart</span></code></a>([numberIntervals, timeMarks, ...])</p></td>
-<td><p>This method creates a restart request.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint">
 <span class="sig-name descname"><span class="pre">DiagnosticPrint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">allke</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criticalElement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dmass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">etotal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contact</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelChange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plasticity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residual</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solve</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/OutputStep.py#L23-L109"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint" title="Permalink to this definition">#</a></dt>
@@ -828,7 +785,7 @@ default value is OFF.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>diagnosticPrint: <a class="reference internal" href="#abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint" title="abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DiagnosticPrint</span></code></a></dt><dd><p>A <a class="reference internal" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint" title="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint"><code class="xref py py-class docutils literal notranslate"><span class="pre">DiagnosticPrint</span></code></a> object</p>
+<dt>diagnosticPrint: <a class="reference internal" href="step.html#abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint" title="abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DiagnosticPrint</span></code></a></dt><dd><p>A <a class="reference internal" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint" title="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint"><code class="xref py py-class docutils literal notranslate"><span class="pre">DiagnosticPrint</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -879,7 +836,7 @@ Abaqus/Standard analysis.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>monitor: <a class="reference internal" href="#abaqus.StepOutput.OutputStep.OutputStep.Monitor" title="abaqus.StepOutput.OutputStep.OutputStep.Monitor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Monitor</span></code></a></dt><dd><p>A <a class="reference internal" href="#abaqus.StepOutput.Monitor.Monitor" title="abaqus.StepOutput.Monitor.Monitor"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monitor</span></code></a> object</p>
+<dt>monitor: <a class="reference internal" href="step.html#abaqus.StepOutput.OutputStep.OutputStep.Monitor" title="abaqus.StepOutput.OutputStep.OutputStep.Monitor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Monitor</span></code></a></dt><dd><p>A <a class="reference internal" href="#abaqus.StepOutput.Monitor.Monitor" title="abaqus.StepOutput.Monitor.Monitor"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monitor</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -918,7 +875,7 @@ analyses.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>restart: <a class="reference internal" href="#abaqus.StepOutput.OutputStep.OutputStep.Restart" title="abaqus.StepOutput.OutputStep.OutputStep.Restart"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Restart</span></code></a></dt><dd><p>A <a class="reference internal" href="#abaqus.StepOutput.Restart.Restart" title="abaqus.StepOutput.Restart.Restart"><code class="xref py py-class docutils literal notranslate"><span class="pre">Restart</span></code></a> object</p>
+<dt>restart: <a class="reference internal" href="step.html#abaqus.StepOutput.OutputStep.OutputStep.Restart" title="abaqus.StepOutput.OutputStep.OutputStep.Restart"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Restart</span></code></a></dt><dd><p>A <a class="reference internal" href="#abaqus.StepOutput.Restart.Restart" title="abaqus.StepOutput.Restart.Restart"><code class="xref py py-class docutils literal notranslate"><span class="pre">Restart</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -953,20 +910,6 @@ specific diagnostic checks</p>
 <ul class="simple">
 <li><p>DIAGNOSTICS</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.setValues" title="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the DiagnosticPrint object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -1147,45 +1090,6 @@ default value is ON.</p>
 </dl>
 </li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>interactions</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.deactivate" title="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
-<td><p>This method deactivates the field output request in the specified step and all its subsequent steps.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.move" title="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
-<td><p>This method moves the field output request state object from one step to a different step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.reset" title="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
-<td><p>This method resets the field output request state of the specified step to the state of the previous step.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.resume" title="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
-<td><p>This method resumes the field output request that was previously suppressed.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.setValues" title="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([region, variables, frequency, ...])</p></td>
-<td><p>This method modifies the data for an existing FieldOutputRequest object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.setValuesInStep" title="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, variables, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing FieldOutputRequest object in the specified step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.suppress" title="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
-<td><p>This method suppresses the field output request.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -1475,21 +1379,6 @@ The FieldOutputRequestState object has no constructor or methods.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>frequencyState</strong></dt><dd></dd>
-<dt><strong>modesState</strong></dt><dd></dd>
-<dt><strong>numIntervalsState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-<dt><strong>timeIntervalState</strong></dt><dd></dd>
-<dt><strong>timeMarksState</strong></dt><dd></dd>
-<dt><strong>timePointState</strong></dt><dd></dd>
-<dt><strong>variables</strong></dt><dd></dd>
-<dt><strong>variablesState</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -1700,45 +1589,6 @@ variables. Possible values are UNSET, SET, and UNCHANGED.</p>
 </dl>
 </li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>interactions</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.deactivate" title="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
-<td><p>This method deactivates the history output request in the specified step and all subsequent steps.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.move" title="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
-<td><p>This method moves the history output request state object from one step to a different step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.reset" title="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
-<td><p>This method resets the history output request state of the specified step to the state of the previous step.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.resume" title="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
-<td><p>This method resumes the history output request that was previously suppressed.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValues" title="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([region, variables, frequency, ...])</p></td>
-<td><p>This method modifies the data for an existing HistoryOutputRequest object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValuesInStep" title="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, variables, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing HistoryOutputRequest object in the specified step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.suppress" title="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
-<td><p>This method suppresses the history output request.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -2038,20 +1888,6 @@ The HistoryOutputRequestState object has no constructor or methods.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>frequencyState</strong></dt><dd></dd>
-<dt><strong>modesState</strong></dt><dd></dd>
-<dt><strong>numIntervalsState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-<dt><strong>timeIntervalState</strong></dt><dd></dd>
-<dt><strong>timePointState</strong></dt><dd></dd>
-<dt><strong>variables</strong></dt><dd></dd>
-<dt><strong>variablesState</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2228,28 +2064,6 @@ variables. Possible values are UNSET, SET, and UNCHANGED.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>localCsys</strong></dt><dd></dd>
-<dt><strong>refPoint</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.setValues" title="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(surface[, refPoint, ...])</p></td>
-<td><p>This method modifies the IntegratedOutputSection object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2415,20 +2229,6 @@ such that a least-squares fit surface will be used. The default value is OFF.</p
 <li><p>MONITOR</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.Monitor.Monitor.setValues" title="abaqus.StepOutput.Monitor.Monitor.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Monitor object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2519,20 +2319,6 @@ Abaqus/Standard analysis.</p>
 <ul class="simple">
 <li><p>RESTART</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.Restart.Restart.setValues" title="abaqus.StepOutput.Restart.Restart.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Restart object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -2643,20 +2429,6 @@ database or restart files.</p>
 <ul class="simple">
 <li><p>TIME POINTS</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.TimePoint.TimePoint.setValues" title="abaqus.StepOutput.TimePoint.TimePoint.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the TimePoint object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>

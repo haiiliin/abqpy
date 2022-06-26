@@ -11,6 +11,8 @@ Create material calibrations
 .. autoclass:: abaqus.Calibration.CalibrationModel.CalibrationModel
     :members:
 
+    .. autoclasstoc::
+
 
 Object features
 ---------------

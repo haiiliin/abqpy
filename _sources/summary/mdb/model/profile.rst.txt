@@ -13,8 +13,12 @@ In Mdb
 .. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel
     :noindex:
 
+    .. autoclasstoc::
+
 In Odb
 ~~~~~~
 
 .. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb
     :noindex:
+
+    .. autoclasstoc::

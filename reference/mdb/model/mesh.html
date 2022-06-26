@@ -418,110 +418,6 @@ created.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.assignStackDirection" title="abaqus.Mesh.MeshAssembly.MeshAssembly.assignStackDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assignStackDirection</span></code></a>(cells, referenceRegion)</p></td>
-<td><p>This method assigns a stack direction to geometric cells.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.associateMeshWithGeometry" title="abaqus.Mesh.MeshAssembly.MeshAssembly.associateMeshWithGeometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">associateMeshWithGeometry</span></code></a>(geometricEntity[, ...])</p></td>
-<td><p>This method associates a geometric entity with mesh entities that are either orphan elements, bounds orphan elements, or were created using the bottom-up meshing technique.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.createVirtualTopology" title="abaqus.Mesh.MeshAssembly.MeshAssembly.createVirtualTopology"><code class="xref py py-obj docutils literal notranslate"><span class="pre">createVirtualTopology</span></code></a>(regions[, ...])</p></td>
-<td><p>This method creates a virtual topology feature by automatically merging faces and edges based on a set of geometric parameters.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.deleteBoundaryLayerControls" title="abaqus.Mesh.MeshAssembly.MeshAssembly.deleteBoundaryLayerControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteBoundaryLayerControls</span></code></a>(regions)</p></td>
-<td><p>This method deletes the control parameters for boundary layer mesh for all the specified regions.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.deleteMesh" title="abaqus.Mesh.MeshAssembly.MeshAssembly.deleteMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteMesh</span></code></a>(regions)</p></td>
-<td><p>This method deletes a subset of the mesh that contains the native elements from the given part instances or regions.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.deleteMeshAssociationWithGeometry" title="abaqus.Mesh.MeshAssembly.MeshAssembly.deleteMeshAssociationWithGeometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteMeshAssociationWithGeometry</span></code></a>(...[, ...])</p></td>
-<td><p>This method deletes the association of geometric entities with mesh entities.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.deletePreviewMesh" title="abaqus.Mesh.MeshAssembly.MeshAssembly.deletePreviewMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deletePreviewMesh</span></code></a>()</p></td>
-<td><p>This method deletes all boundary meshes in the assembly.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.deleteSeeds" title="abaqus.Mesh.MeshAssembly.MeshAssembly.deleteSeeds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteSeeds</span></code></a>(regions)</p></td>
-<td><p>This method deletes the global edge seeds from the given part instances or deletes the local edge seeds from the given edges.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpExtrudedMesh" title="abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpExtrudedMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpExtrudedMesh</span></code></a>(cell, ...[, ...])</p></td>
-<td><p>This method generates solid elements by extruding a 2D mesh along a vector, either on an orphan mesh or within a cell region using a bottom-up technique.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpRevolvedMesh" title="abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpRevolvedMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpRevolvedMesh</span></code></a>(cell, ...[, ...])</p></td>
-<td><p>This method generates solid elements by revolving a 2D mesh around an axis, either on an orphan mesh or within a cell region using a bottom-up technique.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpSweptMesh" title="abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpSweptMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpSweptMesh</span></code></a>(cell[, ...])</p></td>
-<td><p>This method generates solid elements by sweeping a 2D mesh, either on an orphan mesh or within a cell region using a bottom-up technique.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.generateMesh" title="abaqus.Mesh.MeshAssembly.MeshAssembly.generateMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateMesh</span></code></a>([regions, ...])</p></td>
-<td><p>This method generates a mesh in the given part instances or regions.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds" title="abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getEdgeSeeds</span></code></a>(edge, attribute)</p></td>
-<td><p>This method returns an edge seed parameter for a specified edge of an assembly.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getElementType" title="abaqus.Mesh.MeshAssembly.MeshAssembly.getElementType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElementType</span></code></a>(region, elemShape)</p></td>
-<td><p>This method returns the ElemType object of a given element shape assigned to a region of the assembly.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces" title="abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getIncompatibleMeshInterfaces</span></code></a>([cells])</p></td>
-<td><p>This method returns a sequence of face objects that are meshed with incompatible elements.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl" title="abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMeshControl</span></code></a>(region, attribute)</p></td>
-<td><p>This method returns a mesh control parameter for the specified region of the assembly.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshStats" title="abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshStats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMeshStats</span></code></a>(regions)</p></td>
-<td><p>This method returns the mesh statistics for the given part instances or regions.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getPartSeeds" title="abaqus.Mesh.MeshAssembly.MeshAssembly.getPartSeeds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPartSeeds</span></code></a>(region, attribute)</p></td>
-<td><p>This method returns a part seed parameter for the specified instance.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getUnmeshedRegions" title="abaqus.Mesh.MeshAssembly.MeshAssembly.getUnmeshedRegions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getUnmeshedRegions</span></code></a>()</p></td>
-<td><p>This method returns all geometric regions in the assembly that require a mesh for submitting an analysis but are either unmeshed or are meshed incompletely.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity" title="abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ignoreEntity</span></code></a>(entities)</p></td>
-<td><p>This method creates a virtual topology feature.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity" title="abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">restoreIgnoredEntity</span></code></a>(entities)</p></td>
-<td><p>This method restores vertices and edges that have been merged using a virtual topology feature.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias" title="abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeByBias</span></code></a>(biasMethod, end1Edges, ...[, ...])</p></td>
-<td><p>This method seeds the given edges nonuniformly using the specified number of elements and bias ratio or the specified minimum and maximum element sizes.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber" title="abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeByNumber</span></code></a>(edges, number[, constraint])</p></td>
-<td><p>This method seeds the given edges uniformly based on the number of elements along the edges.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeBySize" title="abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeBySize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeBySize</span></code></a>(edges, size[, ...])</p></td>
-<td><p>This method seeds the given edges either uniformly or following edge curvature distribution, based on the desired element size.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedPartInstance" title="abaqus.Mesh.MeshAssembly.MeshAssembly.seedPartInstance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedPartInstance</span></code></a>(regions, size[, ...])</p></td>
-<td><p>This method assigns global edge seeds to the given part instances.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls" title="abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setBoundaryLayerControls</span></code></a>(regions, ...[, ...])</p></td>
-<td><p>This method sets the control parameters for boundary layer mesh for the specified regions.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setElementType" title="abaqus.Mesh.MeshAssembly.MeshAssembly.setElementType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setElementType</span></code></a>(regions, elemTypes)</p></td>
-<td><p>This method assigns element types to the specified regions.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setLogicalCorners" title="abaqus.Mesh.MeshAssembly.MeshAssembly.setLogicalCorners"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setLogicalCorners</span></code></a>(region, corners)</p></td>
-<td><p>This method sets the logical corners for a mappable face region.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setMeshControls" title="abaqus.Mesh.MeshAssembly.MeshAssembly.setMeshControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setMeshControls</span></code></a>(regions[, elemShape, ...])</p></td>
-<td><p>This method sets the mesh control parameters for the specified regions.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath" title="abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setSweepPath</span></code></a>(region, edge, sense)</p></td>
-<td><p>This method sets the sweep path for a sweepable region or the revolve path for a revolvable region.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality" title="abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verifyMeshQuality</span></code></a>(criterion[, threshold, ...])</p></td>
-<td><p>This method tests the quality of part instance meshes and returns poor-quality elements.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">AssemblyBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
@@ -2237,15 +2133,6 @@ command.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>initialGapOpening</strong></dt><dd></dd>
-<dt><strong>linearKinematicCtrl</strong></dt><dd></dd>
-<dt><strong>maxDegradation</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2576,32 +2463,6 @@ instance.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshEdge.MeshEdge.getElemFaces" title="abaqus.Mesh.MeshEdge.MeshEdge.getElemFaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElemFaces</span></code></a>()</p></td>
-<td><p>This method returns a tuple of unique MeshFace objects that share the element edge.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshEdge.MeshEdge.getElements" title="abaqus.Mesh.MeshEdge.MeshEdge.getElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElements</span></code></a>()</p></td>
-<td><p>This method returns a tuple of elements that share the element edge.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshEdge.MeshEdge.getElementsViaTopology" title="abaqus.Mesh.MeshEdge.MeshEdge.getElementsViaTopology"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElementsViaTopology</span></code></a>([domain])</p></td>
-<td><p>This method returns an array of MeshElement objects that are obtained by recursively finding adjacent elements via topology.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshEdge.MeshEdge.getNodes" title="abaqus.Mesh.MeshEdge.MeshEdge.getNodes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getNodes</span></code></a>()</p></td>
-<td><p>This method returns a tuple of nodes on the element edge.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshEdge.MeshEdge.getNodesViaTopology" title="abaqus.Mesh.MeshEdge.MeshEdge.getNodesViaTopology"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getNodesViaTopology</span></code></a>([domain])</p></td>
-<td><p>This method returns an array of MeshNode objects that lie along element edges topologically in line with the element edge.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2736,23 +2597,6 @@ all elements in the mesh are included.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">elementEdges</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshEdgeArray.MeshEdgeArray.getMask" title="abaqus.Mesh.MeshEdgeArray.MeshEdgeArray.getMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMask</span></code></a>()</p></td>
-<td><p>This method returns a string specifying the object or objects.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshEdgeArray.MeshEdgeArray.getSequenceFromMask" title="abaqus.Mesh.MeshEdgeArray.MeshEdgeArray.getSequenceFromMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSequenceFromMask</span></code></a>(mask)</p></td>
-<td><p>This method returns the objects in the MeshEdgeArray identified using the specified <strong>mask</strong>.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -2972,47 +2816,6 @@ the element label.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">surfaces</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">elements</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>connectivity</strong></dt><dd></dd>
-<dt><strong>label</strong></dt><dd></dd>
-<dt><strong>type</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElement.MeshElement.Element" title="abaqus.Mesh.MeshElement.MeshElement.Element"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Element</span></code></a>(nodes, elemShape[, label])</p></td>
-<td><p>This method creates an element on an orphan mesh part from a sequence of nodes.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElement.MeshElement.getAdjacentElements" title="abaqus.Mesh.MeshElement.MeshElement.getAdjacentElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getAdjacentElements</span></code></a>()</p></td>
-<td><p>This method returns an array of element objects adjacent to the mesh element.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElement.MeshElement.getElemEdges" title="abaqus.Mesh.MeshElement.MeshElement.getElemEdges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElemEdges</span></code></a>()</p></td>
-<td><p>This method returns a tuple of unique element edge objects on the element.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElement.MeshElement.getElemFaces" title="abaqus.Mesh.MeshElement.MeshElement.getElemFaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElemFaces</span></code></a>()</p></td>
-<td><p>This method returns a tuple of unique element face objects on the element.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElement.MeshElement.getElementsByFeatureEdge" title="abaqus.Mesh.MeshElement.MeshElement.getElementsByFeatureEdge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElementsByFeatureEdge</span></code></a>(angle)</p></td>
-<td><p>This method returns an array of mesh element objects that are obtained by recursively finding adjacent elements along a feature edge with a face angle of less than or equal to the specified angle.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElement.MeshElement.getNodes" title="abaqus.Mesh.MeshElement.MeshElement.getNodes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getNodes</span></code></a>()</p></td>
-<td><p>This method returns a tuple of node objects of the element.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElement.MeshElement.setValues" title="abaqus.Mesh.MeshElement.MeshElement.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([label])</p></td>
-<td><p>This method modifies the MeshElement object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -3265,41 +3068,6 @@ in use by any other element of the same part.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">surfaces</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">elements</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.getBoundingBox" title="abaqus.Mesh.MeshElementArray.MeshElementArray.getBoundingBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getBoundingBox</span></code></a>()</p></td>
-<td><p>This method returns a dictionary of two tuples representing minimum and maximum boundary values of the bounding box of the minimum size containing the element sequence.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox" title="abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingBox</span></code></a>([xMin, yMin, zMin, xMax, ...])</p></td>
-<td><p>This method returns an array of element objects that lie within the specified bounding box.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingCylinder" title="abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingCylinder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingCylinder</span></code></a>(center1, center2, radius)</p></td>
-<td><p>This method returns an array of element objects that lie within the specified bounding cylinder.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingSphere" title="abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingSphere"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingSphere</span></code></a>(center, radius)</p></td>
-<td><p>This method returns an array of element objects that lie within the specified bounding sphere.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.getFromLabel" title="abaqus.Mesh.MeshElementArray.MeshElementArray.getFromLabel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFromLabel</span></code></a>(label)</p></td>
-<td><p>This method returns the object in the MeshElementArray with the given label.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.getMask" title="abaqus.Mesh.MeshElementArray.MeshElementArray.getMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMask</span></code></a>()</p></td>
-<td><p>This method returns a string specifying the object or objects.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.getSequenceFromMask" title="abaqus.Mesh.MeshElementArray.MeshElementArray.getSequenceFromMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSequenceFromMask</span></code></a>(mask)</p></td>
-<td><p>This method returns the objects in the MeshElementArray identified using the specified <strong>mask</strong>.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.sequenceFromLabels" title="abaqus.Mesh.MeshElementArray.MeshElementArray.sequenceFromLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sequenceFromLabels</span></code></a>(labels)</p></td>
-<td><p>This method returns the objects in the MeshElementArray identified using the specified labels.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -3658,20 +3426,6 @@ abaqus_v6.env file only; they should not be used during an Abaqus/CAE session.</
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MesherOptions.MesherOptions.setValues" title="abaqus.Mesh.MesherOptions.MesherOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([elemShape2D, elemShape3D, ...])</p></td>
-<td><p>This method modifies the MesherOptions object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -3743,58 +3497,6 @@ instance.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">elemFaces</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>face</strong></dt><dd></dd>
-<dt><strong>label</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshFace.MeshFace.getElemEdges" title="abaqus.Mesh.MeshFace.MeshFace.getElemEdges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElemEdges</span></code></a>()</p></td>
-<td><p>This method returns a tuple of unique element edges on the element face.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshFace.MeshFace.getElemEdgesByFaceAngle" title="abaqus.Mesh.MeshFace.MeshFace.getElemEdgesByFaceAngle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElemEdgesByFaceAngle</span></code></a>(angle)</p></td>
-<td><p>This method returns an array of element edge objects that are obtained by recursively finding adjacent element edges that are at an angle of less than or equal to the specified face angle.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshFace.MeshFace.getElemFacesByFaceAngle" title="abaqus.Mesh.MeshFace.MeshFace.getElemFacesByFaceAngle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElemFacesByFaceAngle</span></code></a>(angle)</p></td>
-<td><p>This method returns an array of element face objects that are obtained by recursively finding adjacent element faces that are at an angle of less than or equal to the specified angle.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLayer" title="abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLayer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElemFacesByLayer</span></code></a>(numLayers)</p></td>
-<td><p>This method returns an array of element face objects, obtained by traversing shell elements or the exterior of a solid mesh, and recursively finding adjacent element faces by layer.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLimitingAngle" title="abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLimitingAngle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElemFacesByLimitingAngle</span></code></a>(angle)</p></td>
-<td><p>This method returns an array of element edge objects that are obtained by recursively finding adjacent element faces that are at an angle of less than or equal to the specified face angle with the seed face.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshFace.MeshFace.getElements" title="abaqus.Mesh.MeshFace.MeshFace.getElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElements</span></code></a>()</p></td>
-<td><p>This method returns a tuple of elements that share the element face.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshFace.MeshFace.getElementsByFaceAngle" title="abaqus.Mesh.MeshFace.MeshFace.getElementsByFaceAngle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElementsByFaceAngle</span></code></a>(angle)</p></td>
-<td><p>This method returns an array of mesh Element objects that are obtained by recursively finding adjacent element faces that are at an angle of less than or equal to the specified angle.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshFace.MeshFace.getElementsViaTopology" title="abaqus.Mesh.MeshFace.MeshFace.getElementsViaTopology"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElementsViaTopology</span></code></a>()</p></td>
-<td><p>This method returns an array of mesh Element objects that are obtained by recursively finding adjacent elements via topology.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshFace.MeshFace.getNodes" title="abaqus.Mesh.MeshFace.MeshFace.getNodes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getNodes</span></code></a>()</p></td>
-<td><p>This method returns a tuple of nodes on the element face.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshFace.MeshFace.getNodesByFaceAngle" title="abaqus.Mesh.MeshFace.MeshFace.getNodesByFaceAngle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getNodesByFaceAngle</span></code></a>(angle)</p></td>
-<td><p>This method returns an array of mesh node objects that are obtained by recursively finding adjacent element faces that are at an angle of less than or equal to the specified angle.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshFace.MeshFace.getNormal" title="abaqus.Mesh.MeshFace.MeshFace.getNormal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getNormal</span></code></a>()</p></td>
-<td><p>This method returns the normal direction for the element face.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -4098,23 +3800,6 @@ collapsed such that a normal cannot be computed, a zero-length vector is returne
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshFaceArray.MeshFaceArray.getMask" title="abaqus.Mesh.MeshFaceArray.MeshFaceArray.getMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMask</span></code></a>()</p></td>
-<td><p>This method returns a string specifying the object or objects.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshFaceArray.MeshFaceArray.getSequenceFromMask" title="abaqus.Mesh.MeshFaceArray.MeshFaceArray.getSequenceFromMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSequenceFromMask</span></code></a>(mask)</p></td>
-<td><p>This method returns the objects in the MeshFaceArray identified using the specified <strong>mask</strong>.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4334,40 +4019,6 @@ internal numbering of the node repository. The index does not refer to the node 
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>coordinates</strong></dt><dd></dd>
-<dt><strong>label</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNode.MeshNode.getElemEdges" title="abaqus.Mesh.MeshNode.MeshNode.getElemEdges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElemEdges</span></code></a>()</p></td>
-<td><p>This method returns a tuple of element edge objects that share the node.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNode.MeshNode.getElemFaces" title="abaqus.Mesh.MeshNode.MeshNode.getElemFaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElemFaces</span></code></a>()</p></td>
-<td><p>This method returns a tuple of element face objects that share the node.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNode.MeshNode.getElements" title="abaqus.Mesh.MeshNode.MeshNode.getElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElements</span></code></a>()</p></td>
-<td><p>This method returns a tuple of element objects that share the node.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge" title="abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getNodesByFeatureEdge</span></code></a>(angle)</p></td>
-<td><p>This method returns an array of mesh node objects that are obtained by recursively finding adjacent nodes along a feature edge that are at an angle of less than or equal to the specified face angle.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNode.MeshNode.setValues" title="abaqus.Mesh.MeshNode.MeshNode.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([label])</p></td>
-<td><p>This method modifies the MeshNode object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4560,44 +4211,6 @@ any other node of the same part.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">surfaces</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">nodes</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getBoundingBox" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.getBoundingBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getBoundingBox</span></code></a>()</p></td>
-<td><p>This method returns a dictionary of two tuples representing minimum and maximum boundary values of the bounding box of the minimum size containing the node sequence.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingBox" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingBox</span></code></a>([xMin, yMin, zMin, xMax, ...])</p></td>
-<td><p>This method returns an array of nodes that lie within the specified bounding box.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingCylinder" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingCylinder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingCylinder</span></code></a>(center1, center2, radius)</p></td>
-<td><p>This method returns an array of node objects that lie within the specified bounding cylinder.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingSphere" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingSphere"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingSphere</span></code></a>(center, radius)</p></td>
-<td><p>This method returns an array of node objects that lie within the specified bounding sphere.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getClosest" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.getClosest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getClosest</span></code></a>(coordinates[, numToFind, ...])</p></td>
-<td><p>This method returns the node or nodes closest to the given point or set of points.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getFromLabel" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.getFromLabel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFromLabel</span></code></a>(label)</p></td>
-<td><p>This method returns the object in the MeshNodeArray with the given label.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getMask" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.getMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMask</span></code></a>()</p></td>
-<td><p>This method returns a string specifying the object or objects.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getSequenceFromMask" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.getSequenceFromMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSequenceFromMask</span></code></a>(mask)</p></td>
-<td><p>This method returns the objects in the MeshNodeArray identified using the specified <strong>mask</strong>.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sequenceFromLabels</span></code></a>(labels)</p></td>
-<td><p>This method returns the objects in the MeshNodeArray identified using the specified labels.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -4987,113 +4600,6 @@ object, see Part object.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.Node" title="abaqus.Mesh.MeshPart.MeshPart.Node"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Node</span></code></a>(coordinates[, localCsys, label])</p></td>
-<td><p>This method creates a node on an orphan mesh part.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.assignStackDirection" title="abaqus.Mesh.MeshPart.MeshPart.assignStackDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assignStackDirection</span></code></a>(cells, referenceRegion)</p></td>
-<td><p>This method assigns a stack direction to geometric cells.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.associateMeshWithGeometry" title="abaqus.Mesh.MeshPart.MeshPart.associateMeshWithGeometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">associateMeshWithGeometry</span></code></a>(geometricEntity[, ...])</p></td>
-<td><p>This method associates a geometric entity with mesh entities that are either orphan elements, bounds orphan elements, or were created using the bottom-up meshing technique.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.createVirtualTopology" title="abaqus.Mesh.MeshPart.MeshPart.createVirtualTopology"><code class="xref py py-obj docutils literal notranslate"><span class="pre">createVirtualTopology</span></code></a>([regions, ...])</p></td>
-<td><p>This method creates a virtual topology feature by automatically merging faces and edges based on a set of geometric parameters.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.deleteBoundaryLayerControls" title="abaqus.Mesh.MeshPart.MeshPart.deleteBoundaryLayerControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteBoundaryLayerControls</span></code></a>(regions)</p></td>
-<td><p>This method deletes the control parameters for boundary layer mesh for all the specified regions.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.deleteMesh" title="abaqus.Mesh.MeshPart.MeshPart.deleteMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteMesh</span></code></a>(regions)</p></td>
-<td><p>This method deletes a subset of the mesh that contains the native elements from the given parts or regions.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.deleteMeshAssociationWithGeometry" title="abaqus.Mesh.MeshPart.MeshPart.deleteMeshAssociationWithGeometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteMeshAssociationWithGeometry</span></code></a>(...[, ...])</p></td>
-<td><p>This method deletes the association of geometric entities with mesh entities.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.deletePreviewMesh" title="abaqus.Mesh.MeshPart.MeshPart.deletePreviewMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deletePreviewMesh</span></code></a>()</p></td>
-<td><p>This method deletes all boundary meshes in the parts.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.deleteSeeds" title="abaqus.Mesh.MeshPart.MeshPart.deleteSeeds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteSeeds</span></code></a>(regions)</p></td>
-<td><p>This method deletes the global edge seeds from the given parts or deletes the local edge seeds from the given edges.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.generateBottomUpExtrudedMesh" title="abaqus.Mesh.MeshPart.MeshPart.generateBottomUpExtrudedMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpExtrudedMesh</span></code></a>(cell, ...[, ...])</p></td>
-<td><p>This method generates solid elements by extruding a 2D mesh along a vector, either on an orphan mesh or within a cell region using a bottom-up technique.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.generateBottomUpRevolvedMesh" title="abaqus.Mesh.MeshPart.MeshPart.generateBottomUpRevolvedMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpRevolvedMesh</span></code></a>(cell, ...[, ...])</p></td>
-<td><p>This method generates solid elements by revolving a 2D mesh around an axis, either on an orphan mesh or within a cell region using a bottom-up technique.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.generateBottomUpSweptMesh" title="abaqus.Mesh.MeshPart.MeshPart.generateBottomUpSweptMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpSweptMesh</span></code></a>(cell[, ...])</p></td>
-<td><p>This method generates solid elements by sweeping a 2D mesh, either on an orphan mesh or within a cell region using a bottom-up technique.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.generateMesh" title="abaqus.Mesh.MeshPart.MeshPart.generateMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateMesh</span></code></a>([regions, ...])</p></td>
-<td><p>This method generates a mesh in the given parts or regions.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds" title="abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getEdgeSeeds</span></code></a>(edge, attribute)</p></td>
-<td><p>This method returns an edge seed parameter for a specified edge of a part.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.getElementType" title="abaqus.Mesh.MeshPart.MeshPart.getElementType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElementType</span></code></a>(region, elemShape)</p></td>
-<td><p>This method returns the ElemType object of a given element shape assigned to a region of a part.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces" title="abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getIncompatibleMeshInterfaces</span></code></a>([cells])</p></td>
-<td><p>This method returns a sequence of <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><code class="xref py py-class docutils literal notranslate"><span class="pre">Face</span></code></a> objects that are meshed with incompatible elements.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.getMeshControl" title="abaqus.Mesh.MeshPart.MeshPart.getMeshControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMeshControl</span></code></a>(region, attribute)</p></td>
-<td><p>This method returns a mesh control parameter for the specified region of a part.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.getMeshStats" title="abaqus.Mesh.MeshPart.MeshPart.getMeshStats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMeshStats</span></code></a>(regions)</p></td>
-<td><p>This method returns the mesh statistics for the given regions.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.getPartSeeds" title="abaqus.Mesh.MeshPart.MeshPart.getPartSeeds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPartSeeds</span></code></a>(attribute)</p></td>
-<td><p>This method returns a part seed parameter for the part.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.getUnmeshedRegions" title="abaqus.Mesh.MeshPart.MeshPart.getUnmeshedRegions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getUnmeshedRegions</span></code></a>()</p></td>
-<td><p>This method returns all geometric regions in the part that require a mesh for submitting an analysis but are either unmeshed or are meshed incompletely.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.ignoreEntity" title="abaqus.Mesh.MeshPart.MeshPart.ignoreEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ignoreEntity</span></code></a>(entities)</p></td>
-<td><p>This method creates a virtual topology feature.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity" title="abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">restoreIgnoredEntity</span></code></a>(entities)</p></td>
-<td><p>This method restores vertices and edges that have been merged using a virtual topology feature.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias" title="abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeByBias</span></code></a>(biasMethod, end1Edges, ...[, ...])</p></td>
-<td><p>This method seeds the given edges nonuniformly using the specified number of elements and bias ratio or the specified minimum and maximum element sizes.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber" title="abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeByNumber</span></code></a>(edges, number[, constraint])</p></td>
-<td><p>This method seeds the given edges uniformly based on the number of elements along the edges.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize" title="abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeBySize</span></code></a>(edges, size[, ...])</p></td>
-<td><p>This method seeds the given edges either uniformly or following edge curvature distribution, based on the desired element size.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.seedPart" title="abaqus.Mesh.MeshPart.MeshPart.seedPart"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedPart</span></code></a>(size[, deviationFactor, ...])</p></td>
-<td><p>This method assigns global edge seeds to the given parts.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls" title="abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setBoundaryLayerControls</span></code></a>(regions, ...[, ...])</p></td>
-<td><p>This method sets the control parameters for boundary layer mesh for the specified regions.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.setElementType" title="abaqus.Mesh.MeshPart.MeshPart.setElementType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setElementType</span></code></a>(regions, elemTypes)</p></td>
-<td><p>This method assigns element types to the specified regions.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.setLogicalCorners" title="abaqus.Mesh.MeshPart.MeshPart.setLogicalCorners"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setLogicalCorners</span></code></a>(region, corners)</p></td>
-<td><p>This method sets the logical corners for a mappable face region.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.setMeshControls" title="abaqus.Mesh.MeshPart.MeshPart.setMeshControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setMeshControls</span></code></a>(regions[, elemShape, ...])</p></td>
-<td><p>This method sets the mesh control parameters for the specified regions.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.setSweepPath" title="abaqus.Mesh.MeshPart.MeshPart.setSweepPath"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setSweepPath</span></code></a>(region, edge, sense)</p></td>
-<td><p>This method sets the sweep path for a sweepable region or the revolve path for a revolvable region.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality" title="abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verifyMeshQuality</span></code></a>(criterion[, threshold, ...])</p></td>
-<td><p>This method tests the mesh quality of a part and returns poor-quality elements.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">PartBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
@@ -5228,100 +4734,100 @@ object, see Part object.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.assignStackDirection" title="abaqus.Mesh.MeshPart.MeshPart.assignStackDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assignStackDirection</span></code></a>(cells, referenceRegion)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.assignStackDirection" title="abaqus.Mesh.MeshPart.MeshPart.assignStackDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assignStackDirection</span></code></a>(cells, referenceRegion)</p></td>
 <td><p>This method assigns a stack direction to geometric cells.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.associateMeshWithGeometry" title="abaqus.Mesh.MeshPart.MeshPart.associateMeshWithGeometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">associateMeshWithGeometry</span></code></a>(geometricEntity[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.associateMeshWithGeometry" title="abaqus.Mesh.MeshPart.MeshPart.associateMeshWithGeometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">associateMeshWithGeometry</span></code></a>(geometricEntity[, ...])</p></td>
 <td><p>This method associates a geometric entity with mesh entities that are either orphan elements, bounds orphan elements, or were created using the bottom-up meshing technique.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.createVirtualTopology" title="abaqus.Mesh.MeshPart.MeshPart.createVirtualTopology"><code class="xref py py-obj docutils literal notranslate"><span class="pre">createVirtualTopology</span></code></a>([regions, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.createVirtualTopology" title="abaqus.Mesh.MeshPart.MeshPart.createVirtualTopology"><code class="xref py py-obj docutils literal notranslate"><span class="pre">createVirtualTopology</span></code></a>([regions, ...])</p></td>
 <td><p>This method creates a virtual topology feature by automatically merging faces and edges based on a set of geometric parameters.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.deleteBoundaryLayerControls" title="abaqus.Mesh.MeshPart.MeshPart.deleteBoundaryLayerControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteBoundaryLayerControls</span></code></a>(regions)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.deleteBoundaryLayerControls" title="abaqus.Mesh.MeshPart.MeshPart.deleteBoundaryLayerControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteBoundaryLayerControls</span></code></a>(regions)</p></td>
 <td><p>This method deletes the control parameters for boundary layer mesh for all the specified regions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.deleteMesh" title="abaqus.Mesh.MeshPart.MeshPart.deleteMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteMesh</span></code></a>(regions)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.deleteMesh" title="abaqus.Mesh.MeshPart.MeshPart.deleteMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteMesh</span></code></a>(regions)</p></td>
 <td><p>This method deletes a subset of the mesh that contains the native elements from the given parts or regions.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.deleteMeshAssociationWithGeometry" title="abaqus.Mesh.MeshPart.MeshPart.deleteMeshAssociationWithGeometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteMeshAssociationWithGeometry</span></code></a>(...[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.deleteMeshAssociationWithGeometry" title="abaqus.Mesh.MeshPart.MeshPart.deleteMeshAssociationWithGeometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteMeshAssociationWithGeometry</span></code></a>(...[, ...])</p></td>
 <td><p>This method deletes the association of geometric entities with mesh entities.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.deletePreviewMesh" title="abaqus.Mesh.MeshPart.MeshPart.deletePreviewMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deletePreviewMesh</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.deletePreviewMesh" title="abaqus.Mesh.MeshPart.MeshPart.deletePreviewMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deletePreviewMesh</span></code></a>()</p></td>
 <td><p>This method deletes all boundary meshes in the parts.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.deleteSeeds" title="abaqus.Mesh.MeshPart.MeshPart.deleteSeeds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteSeeds</span></code></a>(regions)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.deleteSeeds" title="abaqus.Mesh.MeshPart.MeshPart.deleteSeeds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteSeeds</span></code></a>(regions)</p></td>
 <td><p>This method deletes the global edge seeds from the given parts or deletes the local edge seeds from the given edges.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.generateMesh" title="abaqus.Mesh.MeshPart.MeshPart.generateMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateMesh</span></code></a>([regions, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.generateMesh" title="abaqus.Mesh.MeshPart.MeshPart.generateMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateMesh</span></code></a>([regions, ...])</p></td>
 <td><p>This method generates a mesh in the given parts or regions.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.generateBottomUpExtrudedMesh" title="abaqus.Mesh.MeshPart.MeshPart.generateBottomUpExtrudedMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpExtrudedMesh</span></code></a>(cell, ...[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.generateBottomUpExtrudedMesh" title="abaqus.Mesh.MeshPart.MeshPart.generateBottomUpExtrudedMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpExtrudedMesh</span></code></a>(cell, ...[, ...])</p></td>
 <td><p>This method generates solid elements by extruding a 2D mesh along a vector, either on an orphan mesh or within a cell region using a bottom-up technique.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.generateBottomUpSweptMesh" title="abaqus.Mesh.MeshPart.MeshPart.generateBottomUpSweptMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpSweptMesh</span></code></a>(cell[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.generateBottomUpSweptMesh" title="abaqus.Mesh.MeshPart.MeshPart.generateBottomUpSweptMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpSweptMesh</span></code></a>(cell[, ...])</p></td>
 <td><p>This method generates solid elements by sweeping a 2D mesh, either on an orphan mesh or within a cell region using a bottom-up technique.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.generateBottomUpRevolvedMesh" title="abaqus.Mesh.MeshPart.MeshPart.generateBottomUpRevolvedMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpRevolvedMesh</span></code></a>(cell, ...[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.generateBottomUpRevolvedMesh" title="abaqus.Mesh.MeshPart.MeshPart.generateBottomUpRevolvedMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpRevolvedMesh</span></code></a>(cell, ...[, ...])</p></td>
 <td><p>This method generates solid elements by revolving a 2D mesh around an axis, either on an orphan mesh or within a cell region using a bottom-up technique.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds" title="abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getEdgeSeeds</span></code></a>(edge, attribute)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds" title="abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getEdgeSeeds</span></code></a>(edge, attribute)</p></td>
 <td><p>This method returns an edge seed parameter for a specified edge of a part.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.getElementType" title="abaqus.Mesh.MeshPart.MeshPart.getElementType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElementType</span></code></a>(region, elemShape)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.getElementType" title="abaqus.Mesh.MeshPart.MeshPart.getElementType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElementType</span></code></a>(region, elemShape)</p></td>
 <td><p>This method returns the ElemType object of a given element shape assigned to a region of a part.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces" title="abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getIncompatibleMeshInterfaces</span></code></a>([cells])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces" title="abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getIncompatibleMeshInterfaces</span></code></a>([cells])</p></td>
 <td><p>This method returns a sequence of <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><code class="xref py py-class docutils literal notranslate"><span class="pre">Face</span></code></a> objects that are meshed with incompatible elements.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.getMeshControl" title="abaqus.Mesh.MeshPart.MeshPart.getMeshControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMeshControl</span></code></a>(region, attribute)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.getMeshControl" title="abaqus.Mesh.MeshPart.MeshPart.getMeshControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMeshControl</span></code></a>(region, attribute)</p></td>
 <td><p>This method returns a mesh control parameter for the specified region of a part.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.getMeshStats" title="abaqus.Mesh.MeshPart.MeshPart.getMeshStats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMeshStats</span></code></a>(regions)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.getMeshStats" title="abaqus.Mesh.MeshPart.MeshPart.getMeshStats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMeshStats</span></code></a>(regions)</p></td>
 <td><p>This method returns the mesh statistics for the given regions.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.getPartSeeds" title="abaqus.Mesh.MeshPart.MeshPart.getPartSeeds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPartSeeds</span></code></a>(attribute)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.getPartSeeds" title="abaqus.Mesh.MeshPart.MeshPart.getPartSeeds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPartSeeds</span></code></a>(attribute)</p></td>
 <td><p>This method returns a part seed parameter for the part.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.getUnmeshedRegions" title="abaqus.Mesh.MeshPart.MeshPart.getUnmeshedRegions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getUnmeshedRegions</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.getUnmeshedRegions" title="abaqus.Mesh.MeshPart.MeshPart.getUnmeshedRegions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getUnmeshedRegions</span></code></a>()</p></td>
 <td><p>This method returns all geometric regions in the part that require a mesh for submitting an analysis but are either unmeshed or are meshed incompletely.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.ignoreEntity" title="abaqus.Mesh.MeshPart.MeshPart.ignoreEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ignoreEntity</span></code></a>(entities)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.ignoreEntity" title="abaqus.Mesh.MeshPart.MeshPart.ignoreEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ignoreEntity</span></code></a>(entities)</p></td>
 <td><p>This method creates a virtual topology feature.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity" title="abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">restoreIgnoredEntity</span></code></a>(entities)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity" title="abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">restoreIgnoredEntity</span></code></a>(entities)</p></td>
 <td><p>This method restores vertices and edges that have been merged using a virtual topology feature.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias" title="abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeByBias</span></code></a>(biasMethod, end1Edges, ...[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias" title="abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeByBias</span></code></a>(biasMethod, end1Edges, ...[, ...])</p></td>
 <td><p>This method seeds the given edges nonuniformly using the specified number of elements and bias ratio or the specified minimum and maximum element sizes.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber" title="abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeByNumber</span></code></a>(edges, number[, constraint])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber" title="abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeByNumber</span></code></a>(edges, number[, constraint])</p></td>
 <td><p>This method seeds the given edges uniformly based on the number of elements along the edges.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize" title="abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeBySize</span></code></a>(edges, size[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize" title="abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeBySize</span></code></a>(edges, size[, ...])</p></td>
 <td><p>This method seeds the given edges either uniformly or following edge curvature distribution, based on the desired element size.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.seedPart" title="abaqus.Mesh.MeshPart.MeshPart.seedPart"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedPart</span></code></a>(size[, deviationFactor, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.seedPart" title="abaqus.Mesh.MeshPart.MeshPart.seedPart"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedPart</span></code></a>(size[, deviationFactor, ...])</p></td>
 <td><p>This method assigns global edge seeds to the given parts.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls" title="abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setBoundaryLayerControls</span></code></a>(regions, ...[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls" title="abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setBoundaryLayerControls</span></code></a>(regions, ...[, ...])</p></td>
 <td><p>This method sets the control parameters for boundary layer mesh for the specified regions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.setElementType" title="abaqus.Mesh.MeshPart.MeshPart.setElementType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setElementType</span></code></a>(regions, elemTypes)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.setElementType" title="abaqus.Mesh.MeshPart.MeshPart.setElementType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setElementType</span></code></a>(regions, elemTypes)</p></td>
 <td><p>This method assigns element types to the specified regions.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.setLogicalCorners" title="abaqus.Mesh.MeshPart.MeshPart.setLogicalCorners"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setLogicalCorners</span></code></a>(region, corners)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.setLogicalCorners" title="abaqus.Mesh.MeshPart.MeshPart.setLogicalCorners"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setLogicalCorners</span></code></a>(region, corners)</p></td>
 <td><p>This method sets the logical corners for a mappable face region.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.setMeshControls" title="abaqus.Mesh.MeshPart.MeshPart.setMeshControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setMeshControls</span></code></a>(regions[, elemShape, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.setMeshControls" title="abaqus.Mesh.MeshPart.MeshPart.setMeshControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setMeshControls</span></code></a>(regions[, elemShape, ...])</p></td>
 <td><p>This method sets the mesh control parameters for the specified regions.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.setSweepPath" title="abaqus.Mesh.MeshPart.MeshPart.setSweepPath"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setSweepPath</span></code></a>(region, edge, sense)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.setSweepPath" title="abaqus.Mesh.MeshPart.MeshPart.setSweepPath"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setSweepPath</span></code></a>(region, edge, sense)</p></td>
 <td><p>This method sets the sweep path for a sweepable region or the revolve path for a revolvable region.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality" title="abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verifyMeshQuality</span></code></a>(criterion[, threshold, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality" title="abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verifyMeshQuality</span></code></a>(criterion[, threshold, ...])</p></td>
 <td><p>This method tests the mesh quality of a part and returns poor-quality elements.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshPart.MeshPart.Node" title="abaqus.Mesh.MeshPart.MeshPart.Node"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Node</span></code></a>(coordinates[, localCsys, label])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="part.html#abaqus.Mesh.MeshPart.MeshPart.Node" title="abaqus.Mesh.MeshPart.MeshPart.Node"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Node</span></code></a>(coordinates[, localCsys, label])</p></td>
 <td><p>This method creates a node on an orphan mesh part.</p></td>
 </tr>
 </tbody>
@@ -7082,22 +6588,6 @@ the getMeshStats command. The object does not have any methods.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>numHexElems</strong></dt><dd></dd>
-<dt><strong>numLineElems</strong></dt><dd></dd>
-<dt><strong>numMeshedRegions</strong></dt><dd></dd>
-<dt><strong>numNodes</strong></dt><dd></dd>
-<dt><strong>numPointElems</strong></dt><dd></dd>
-<dt><strong>numPyramidElems</strong></dt><dd></dd>
-<dt><strong>numQuadElems</strong></dt><dd></dd>
-<dt><strong>numTetElems</strong></dt><dd></dd>
-<dt><strong>numTriElems</strong></dt><dd></dd>
-<dt><strong>numWedgeElems</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">

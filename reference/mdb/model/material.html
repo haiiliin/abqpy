@@ -415,20 +415,6 @@
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.MaterialModel.MaterialModel.Material" title="abaqus.Material.MaterialModel.MaterialModel.Material"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Material</span></code></a>(name[, description, materialIdentifier])</p></td>
-<td><p>This method creates a Material object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Material.MaterialModel.MaterialModel.Material">
 <span class="sig-name descname"><span class="pre">Material</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">materialIdentifier</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Material/MaterialModel.py#L16-L45"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Material.MaterialModel.MaterialModel.Material" title="Permalink to this definition">#</a></dt>
@@ -479,7 +465,63 @@ string.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OdbBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isReadOnly</span></code></p></td>
+<td><p>A Boolean specifying whether the output database was opened with read-only access.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">amplitudes</span></code></p></td>
+<td><p>A repository of Amplitude objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></p></td>
+<td><p>A repository of Filter objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">rootAssembly</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../odb.html#abaqus.Odb.OdbAssembly.OdbAssembly" title="abaqus.Odb.OdbAssembly.OdbAssembly"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbAssembly</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">jobData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../odb.html#abaqus.Odb.JobData.JobData" title="abaqus.Odb.JobData.JobData"><code class="xref py py-class docutils literal notranslate"><span class="pre">JobData</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parts</span></code></p></td>
+<td><p>A repository of OdbPart objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">materials</span></code></p></td>
+<td><p>A repository of Material objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">steps</span></code></p></td>
+<td><p>A repository of OdbStep objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sections</span></code></p></td>
+<td><p>A repository of Section objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sectionCategories</span></code></p></td>
+<td><p>A repository of SectionCategory objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sectorDefinition</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../odb.html#abaqus.Odb.SectorDefinition.SectorDefinition" title="abaqus.Odb.SectorDefinition.SectorDefinition"><code class="xref py py-class docutils literal notranslate"><span class="pre">SectorDefinition</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">userData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../odb.html#abaqus.Odb.UserData.UserData" title="abaqus.Odb.UserData.UserData"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserData</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">customData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">profiles</span></code></p></td>
+<td><p>A repository of Profile objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <colgroup>
@@ -493,6 +535,33 @@ string.</p>
 </tbody>
 </table>
 </div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OdbBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, analysisTitle, description, ...])</p></td>
+<td><p>This method creates a new Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code>()</p></td>
+<td><p>This method closes an output database.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFrame</span></code>(frameValue[, match])</p></td>
+<td><p>This method returns the frame at the specified time, frequency, or mode.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code>()</p></td>
+<td><p>This method saves output to an output database (.odb ) file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code>()</p></td>
+<td><p>This method is used to update an Odb object in memory while an Abaqus analysis writes data to the associated output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Material.MaterialOdb.MaterialOdb.Material">
 <span class="sig-name descname"><span class="pre">Material</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">materialIdentifier</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Material/MaterialOdb.py#L17-L46"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Material.MaterialOdb.MaterialOdb.Material" title="Permalink to this definition">#</a></dt>
@@ -556,221 +625,6 @@ that one Material object cannot contain two AcousticMedium objects, for example.
 <ul class="simple">
 <li><p>MATERIAL</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.AcousticMedium" title="abaqus.Material.Material.Material.AcousticMedium"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AcousticMedium</span></code></a>([acousticVolumetricDrag, ...])</p></td>
-<td><p>This method creates an AcousticMedium object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.BrittleCracking" title="abaqus.Material.Material.Material.BrittleCracking"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BrittleCracking</span></code></a>(table[, ...])</p></td>
-<td><p>This method creates a BrittleCracking object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.CapPlasticity" title="abaqus.Material.Material.Material.CapPlasticity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CapPlasticity</span></code></a>(table[, ...])</p></td>
-<td><p>This method creates a CapPlasticity object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.CastIronPlasticity" title="abaqus.Material.Material.Material.CastIronPlasticity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CastIronPlasticity</span></code></a>(table[, ...])</p></td>
-<td><p>This method creates a CastIronPlasticity object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.ClayPlasticity" title="abaqus.Material.Material.Material.ClayPlasticity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClayPlasticity</span></code></a>(table[, intercept, ...])</p></td>
-<td><p>This method creates a ClayPlasticity object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Concrete" title="abaqus.Material.Material.Material.Concrete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Concrete</span></code></a>(table[, temperatureDependency, ...])</p></td>
-<td><p>This method creates a Concrete object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.ConcreteDamagedPlasticity" title="abaqus.Material.Material.Material.ConcreteDamagedPlasticity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConcreteDamagedPlasticity</span></code></a>(table[, ...])</p></td>
-<td><p>This method creates a ConcreteDamagedPlasticity object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Conductivity" title="abaqus.Material.Material.Material.Conductivity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Conductivity</span></code></a>(table[, type, ...])</p></td>
-<td><p>This method creates a Conductivity object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Creep" title="abaqus.Material.Material.Material.Creep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Creep</span></code></a>(table[, law, temperatureDependency, ...])</p></td>
-<td><p>This method creates a Creep object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.CrushableFoam" title="abaqus.Material.Material.Material.CrushableFoam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CrushableFoam</span></code></a>(table[, hardening, ...])</p></td>
-<td><p>This method creates a CrushableFoam object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Damping" title="abaqus.Material.Material.Material.Damping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Damping</span></code></a>([alpha, beta, composite, structural])</p></td>
-<td><p>This method creates a Damping object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.DeformationPlasticity" title="abaqus.Material.Material.Material.DeformationPlasticity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DeformationPlasticity</span></code></a>(table[, ...])</p></td>
-<td><p>This method creates a DeformationPlasticity object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Density" title="abaqus.Material.Material.Material.Density"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Density</span></code></a>(table[, temperatureDependency, ...])</p></td>
-<td><p>This method creates a Density object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Depvar" title="abaqus.Material.Material.Material.Depvar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Depvar</span></code></a>([deleteVar, n])</p></td>
-<td><p>This method creates a Depvar object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Dielectric" title="abaqus.Material.Material.Material.Dielectric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dielectric</span></code></a>(table[, type, ...])</p></td>
-<td><p>This method creates a Dielectric object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Diffusivity" title="abaqus.Material.Material.Material.Diffusivity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Diffusivity</span></code></a>(table[, type, law, ...])</p></td>
-<td><p>This method creates a Diffusivity object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.DruckerPrager" title="abaqus.Material.Material.Material.DruckerPrager"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DruckerPrager</span></code></a>(table[, shearCriterion, ...])</p></td>
-<td><p>This method creates a DruckerPrager object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.DuctileDamageInitiation" title="abaqus.Material.Material.Material.DuctileDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DuctileDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Elastic" title="abaqus.Material.Material.Material.Elastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Elastic</span></code></a>(table[, type, noCompression, ...])</p></td>
-<td><p>This method creates an Elastic object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.ElectricalConductivity" title="abaqus.Material.Material.Material.ElectricalConductivity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ElectricalConductivity</span></code></a>(table[, type, ...])</p></td>
-<td><p>This method creates an ElectricalConductivity object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Eos" title="abaqus.Material.Material.Material.Eos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Eos</span></code></a>([type, temperatureDependency, ...])</p></td>
-<td><p>This method creates an Eos object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Expansion" title="abaqus.Material.Material.Material.Expansion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expansion</span></code></a>([type, userSubroutine, zero, ...])</p></td>
-<td><p>This method creates an Expansion object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.FldDamageInitiation" title="abaqus.Material.Material.Material.FldDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FldDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.FlsdDamageInitiation" title="abaqus.Material.Material.Material.FlsdDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FlsdDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.FluidLeakoff" title="abaqus.Material.Material.Material.FluidLeakoff"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FluidLeakoff</span></code></a>([temperatureDependency, ...])</p></td>
-<td><p>This method creates a FluidLeakoff object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.GapFlow" title="abaqus.Material.Material.Material.GapFlow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapFlow</span></code></a>(table[, kmax, ...])</p></td>
-<td><p>This method creates a GapFlow object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.GasketMembraneElastic" title="abaqus.Material.Material.Material.GasketMembraneElastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GasketMembraneElastic</span></code></a>(table[, ...])</p></td>
-<td><p>This method creates a GasketMembraneElastic object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.GasketThicknessBehavior" title="abaqus.Material.Material.Material.GasketThicknessBehavior"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GasketThicknessBehavior</span></code></a>(table[, ...])</p></td>
-<td><p>This method creates a GasketThicknessBehavior object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.GasketTransverseShearElastic" title="abaqus.Material.Material.Material.GasketTransverseShearElastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GasketTransverseShearElastic</span></code></a>(table[, ...])</p></td>
-<td><p>This method creates a GasketTransverseShearElastic object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Gel" title="abaqus.Material.Material.Material.Gel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gel</span></code></a>(table)</p></td>
-<td><p>This method creates a Gel object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.HashinDamageInitiation" title="abaqus.Material.Material.Material.HashinDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HashinDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Hyperelastic" title="abaqus.Material.Material.Material.Hyperelastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hyperelastic</span></code></a>(table[, type, moduliTimeScale, ...])</p></td>
-<td><p>This method creates a Hyperelastic object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Hyperfoam" title="abaqus.Material.Material.Material.Hyperfoam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hyperfoam</span></code></a>([testData, poisson, n, ...])</p></td>
-<td><p>This method creates a Hyperfoam object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Hypoelastic" title="abaqus.Material.Material.Material.Hypoelastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hypoelastic</span></code></a>(table[, user])</p></td>
-<td><p>This method creates a Hypoelastic object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.InelasticHeatFraction" title="abaqus.Material.Material.Material.InelasticHeatFraction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InelasticHeatFraction</span></code></a>([fraction])</p></td>
-<td><p>This method creates an InelasticHeatFraction object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.JohnsonCookDamageInitiation" title="abaqus.Material.Material.Material.JohnsonCookDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">JohnsonCookDamageInitiation</span></code></a>(table[, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.JouleHeatFraction" title="abaqus.Material.Material.Material.JouleHeatFraction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">JouleHeatFraction</span></code></a>([fraction])</p></td>
-<td><p>This method creates a JouleHeatFraction object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.LatentHeat" title="abaqus.Material.Material.Material.LatentHeat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LatentHeat</span></code></a>(table)</p></td>
-<td><p>This method creates a LatentHeat object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.LowDensityFoam" title="abaqus.Material.Material.Material.LowDensityFoam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowDensityFoam</span></code></a>([elementRemoval, ...])</p></td>
-<td><p>This method creates a LowDensityFoam object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.MagneticPermeability" title="abaqus.Material.Material.Material.MagneticPermeability"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MagneticPermeability</span></code></a>(table, table2, table3)</p></td>
-<td><p>This method creates a MagneticPermeability object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.MaxeDamageInitiation" title="abaqus.Material.Material.Material.MaxeDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxeDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.MaxpeDamageInitiation" title="abaqus.Material.Material.Material.MaxpeDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxpeDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.MaxpsDamageInitiation" title="abaqus.Material.Material.Material.MaxpsDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxpsDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.MaxsDamageInitiation" title="abaqus.Material.Material.Material.MaxsDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxsDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.MkDamageInitiation" title="abaqus.Material.Material.Material.MkDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MkDamageInitiation</span></code></a>(table[, definition, feq, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.MohrCoulombPlasticity" title="abaqus.Material.Material.Material.MohrCoulombPlasticity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MohrCoulombPlasticity</span></code></a>(table[, ...])</p></td>
-<td><p>This method creates a MohrCoulombPlasticity object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.MoistureSwelling" title="abaqus.Material.Material.Material.MoistureSwelling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MoistureSwelling</span></code></a>(table)</p></td>
-<td><p>This method creates a MoistureSwelling object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.MsfldDamageInitiation" title="abaqus.Material.Material.Material.MsfldDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MsfldDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Permeability" title="abaqus.Material.Material.Material.Permeability"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Permeability</span></code></a>(specificWeight, ...[, type, ...])</p></td>
-<td><p>This method creates a Permeability object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Piezoelectric" title="abaqus.Material.Material.Material.Piezoelectric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Piezoelectric</span></code></a>(table[, type, ...])</p></td>
-<td><p>This method creates a Piezoelectric object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Plastic" title="abaqus.Material.Material.Material.Plastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Plastic</span></code></a>(table[, hardening, rate, dataType, ...])</p></td>
-<td><p>This method creates a Plastic object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.PoreFluidExpansion" title="abaqus.Material.Material.Material.PoreFluidExpansion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PoreFluidExpansion</span></code></a>(table[, zero, ...])</p></td>
-<td><p>This method creates a PoreFluidExpansion object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.PorousBulkModuli" title="abaqus.Material.Material.Material.PorousBulkModuli"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PorousBulkModuli</span></code></a>(table[, temperatureDependency])</p></td>
-<td><p>This method creates a PorousBulkModuli object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.PorousElastic" title="abaqus.Material.Material.Material.PorousElastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PorousElastic</span></code></a>(table[, shear, ...])</p></td>
-<td><p>This method creates a PorousElastic object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.PorousMetalPlasticity" title="abaqus.Material.Material.Material.PorousMetalPlasticity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PorousMetalPlasticity</span></code></a>(table[, ...])</p></td>
-<td><p>This method creates a PorousMetalPlasticity object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.QuadeDamageInitiation" title="abaqus.Material.Material.Material.QuadeDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuadeDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.QuadsDamageInitiation" title="abaqus.Material.Material.Material.QuadsDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuadsDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Regularization" title="abaqus.Material.Material.Material.Regularization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Regularization</span></code></a>([rtol, strainRateRegularization])</p></td>
-<td><p>This method creates a Regularization object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.ShearDamageInitiation" title="abaqus.Material.Material.Material.ShearDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShearDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Solubility" title="abaqus.Material.Material.Material.Solubility"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Solubility</span></code></a>(table[, temperatureDependency, ...])</p></td>
-<td><p>This method creates a Solubility object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Sorption" title="abaqus.Material.Material.Material.Sorption"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sorption</span></code></a>(absorptionTable[, lawAbsorption, ...])</p></td>
-<td><p>This method creates a Sorption object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.SpecificHeat" title="abaqus.Material.Material.Material.SpecificHeat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SpecificHeat</span></code></a>(table[, law, ...])</p></td>
-<td><p>This method creates a SpecificHeat object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Swelling" title="abaqus.Material.Material.Material.Swelling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Swelling</span></code></a>(table[, law, ...])</p></td>
-<td><p>This method creates a Swelling object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.UserMaterial" title="abaqus.Material.Material.Material.UserMaterial"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserMaterial</span></code></a>([type, unsymm, ...])</p></td>
-<td><p>This method creates a UserMaterial object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.UserOutputVariables" title="abaqus.Material.Material.Material.UserOutputVariables"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserOutputVariables</span></code></a>([n])</p></td>
-<td><p>This method creates a UserOutputVariables object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Viscoelastic" title="abaqus.Material.Material.Material.Viscoelastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Viscoelastic</span></code></a>(domain, table[, frequency, ...])</p></td>
-<td><p>This method creates a Viscoelastic object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Viscosity" title="abaqus.Material.Material.Material.Viscosity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Viscosity</span></code></a>(table[, type, ...])</p></td>
-<td><p>This method creates a Viscosity object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.Material.Material.Viscous" title="abaqus.Material.Material.Material.Viscous"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Viscous</span></code></a>(table[, law, temperatureDependency, ...])</p></td>
-<td><p>This method creates a Viscous object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -4667,20 +4521,6 @@ CREEP and TOTAL. The default value is TOTAL.</p>
 <li><p>DENSITY</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Density.Density.Density.setValues" title="abaqus.Material.Density.Density.Density.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Density object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4834,20 +4674,6 @@ is not allowed in an Abaqus/Explicit analysis.</p></li>
 <li><p>HYPERELASTIC</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Elastic.HyperElastic.Hyperelastic.Hyperelastic.setValues" title="abaqus.Material.Elastic.HyperElastic.Hyperelastic.Hyperelastic.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Hyperelastic object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4971,20 +4797,6 @@ Abaqus/Explicit analysis.</p></li>
 <ul class="simple">
 <li><p>HYPERFOAM</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Elastic.HyperElastic.HyperFoam.Hyperfoam.Hyperfoam.setValues" title="abaqus.Material.Elastic.HyperElastic.HyperFoam.Hyperfoam.Hyperfoam.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Hyperfoam object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -5121,20 +4933,6 @@ compliances or relaxation moduli as functions of time.</p>
 <li><p>COMBINED TEST DATA</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData.setValues" title="abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the CombinedTestData object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -5191,20 +4989,6 @@ behavior of elastomers.</p>
 <ul class="simple">
 <li><p>HYSTERESIS</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Elastic.HyperElastic.ViscoElastic.Hysteresis.Hysteresis.setValues" title="abaqus.Material.Elastic.HyperElastic.ViscoElastic.Hysteresis.Hysteresis.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Hysteresis object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -5345,20 +5129,6 @@ expansion of the bulk relaxation modulus.</p></li>
 <li><p>VISCOELASTIC</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic.setValues" title="abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Viscoelastic object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -5475,20 +5245,6 @@ expansion of the bulk relaxation modulus.</p></li>
 <ul class="simple">
 <li><p>HYPOELASTIC</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Elastic.HypoElastic.Hypoelastic.Hypoelastic.setValues" title="abaqus.Material.Elastic.HypoElastic.Hypoelastic.Hypoelastic.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Hypoelastic object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -5683,20 +5439,6 @@ expansion of the bulk relaxation modulus.</p></li>
 <li><p>ELASTIC</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Elastic.Linear.Elastic.Elastic.setValues" title="abaqus.Material.Elastic.Linear.Elastic.Elastic.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Elastic object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -5796,20 +5538,6 @@ expansion of the bulk relaxation modulus.</p></li>
 <li><p>FAIL STRAIN</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Elastic.Linear.FailStrain.FailStrain.setValues" title="abaqus.Material.Elastic.Linear.FailStrain.FailStrain.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the FailStrain object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -5881,20 +5609,6 @@ The default value is zero.</p></li>
 <li><p>FAIL STRESS</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Elastic.Linear.FailStress.FailStress.setValues" title="abaqus.Material.Elastic.Linear.FailStress.FailStress.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the FailStress object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -5953,20 +5667,6 @@ The default value is zero.</p></li>
 <ul class="simple">
 <li><p>LOW DENSITY FOAM</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Elastic.LowDensityFoam.LowDensityFoam.LowDensityFoam.setValues" title="abaqus.Material.Elastic.LowDensityFoam.LowDensityFoam.LowDensityFoam.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the LowDensityFoam object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -6088,20 +5788,6 @@ The default value is zero.</p></li>
 <li><p>POROUS ELASTIC</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic.setValues" title="abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the PorousElastic object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -6174,20 +5860,6 @@ The default value is zero.</p></li>
 <ul class="simple">
 <li><p>SUPERELASTIC</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Elastic.SuperElastic.SuperElasticity.SuperElasticity.setValues" title="abaqus.Material.Elastic.SuperElastic.SuperElasticity.SuperElasticity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the SuperElasticity object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -6290,20 +5962,6 @@ for a hydrodynamic material.</p>
 <ul class="simple">
 <li><p>DETONATION POINT</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Eos.DetonationPoint.DetonationPoint.setValues" title="abaqus.Material.Eos.DetonationPoint.DetonationPoint.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the DetonationPoint object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -6432,20 +6090,6 @@ for a hydrodynamic material.</p>
 <ul class="simple">
 <li><p>EOS COMPACTION</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Eos.EosCompaction.EosCompaction.setValues" title="abaqus.Material.Eos.EosCompaction.EosCompaction.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the EosCompaction object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -6670,20 +6314,6 @@ cohesive elements.</p>
 <li><p>GAP FLOW</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Gap.GapFlow.GapFlow.setValues" title="abaqus.Material.Gap.GapFlow.GapFlow.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the GapFlow object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -6748,20 +6378,6 @@ pressure through variable CS11.</p>
 <li><p>GASKET CONTACT AREA</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Gasket.ContactArea.ContactArea.setValues" title="abaqus.Material.Gasket.ContactArea.ContactArea.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ContactArea object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -6820,20 +6436,6 @@ behavior of a gasket.</p>
 <ul class="simple">
 <li><p>GASKET ELASTICITY</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic.setValues" title="abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the GasketMembraneElastic object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -6971,20 +6573,6 @@ gasket.</p>
 <li><p>GASKET THICKNESS BEHAVIOR</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior.setValues" title="abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the GasketThicknessBehavior object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -7072,20 +6660,6 @@ transverse shear behavior of a gasket.</p>
 <li><p>GASKET ELASTICITY</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Gasket.GasketTransverseShearElastic.GasketTransverseShearElastic.setValues" title="abaqus.Material.Gasket.GasketTransverseShearElastic.GasketTransverseShearElastic.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the GasketTransverseShearElastic object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -7146,20 +6720,6 @@ transverse shear behavior of a gasket.</p>
 <ul class="simple">
 <li><p>ACOUSTIC MEDIUM</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium.setValues" title="abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the AcousticMedium object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -7266,20 +6826,6 @@ transverse shear behavior of a gasket.</p>
 <li><p>DIELECTRIC</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric.setValues" title="abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Dielectric object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -7374,20 +6920,6 @@ transverse shear behavior of a gasket.</p>
 <ul class="simple">
 <li><p>ELECTRICAL CONDUCTIVITY</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity.setValues" title="abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ElectricalConductivity object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -7515,20 +7047,6 @@ transverse shear behavior of a gasket.</p>
 <li><p>MAGNETIC PERMEABILITY</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.Electromagnetic.MagneticPermeability.MagneticPermeability.setValues" title="abaqus.Material.Others.Electromagnetic.MagneticPermeability.MagneticPermeability.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the MagneticPermeability object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -7643,20 +7161,6 @@ transverse shear behavior of a gasket.</p>
 <li><p>PIEZOELECTRIC</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.Electromagnetic.Piezoelectric.Piezoelectric.setValues" title="abaqus.Material.Others.Electromagnetic.Piezoelectric.Piezoelectric.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Piezoelectric object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -7751,20 +7255,6 @@ transverse shear behavior of a gasket.</p>
 <ul class="simple">
 <li><p>CONDUCTIVITY</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.HeatTransfer.Conductivity.Conductivity.setValues" title="abaqus.Material.Others.HeatTransfer.Conductivity.Conductivity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Conductivity object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -7863,20 +7353,6 @@ dissipation that appears as a heat source.</p>
 <li><p>INELASTIC HEAT FRACTION</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.HeatTransfer.InelasticHeatFraction.InelasticHeatFraction.setValues" title="abaqus.Material.Others.HeatTransfer.InelasticHeatFraction.InelasticHeatFraction.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the InelasticHeatFraction object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -7932,20 +7408,6 @@ dissipation that appears as a heat source.</p>
 <ul class="simple">
 <li><p>JOULE HEAT FRACTION</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.HeatTransfer.JouleHeatFraction.JouleHeatFraction.setValues" title="abaqus.Material.Others.HeatTransfer.JouleHeatFraction.JouleHeatFraction.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the JouleHeatFraction object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -8008,20 +7470,6 @@ dissipation that appears as a heat source.</p>
 <ul class="simple">
 <li><p>LATENT HEAT</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.HeatTransfer.LatentHeat.LatentHeat.setValues" title="abaqus.Material.Others.HeatTransfer.LatentHeat.LatentHeat.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the LatentHeat object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -8086,20 +7534,6 @@ dissipation that appears as a heat source.</p>
 <ul class="simple">
 <li><p>SPECIFIC HEAT</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.HeatTransfer.SpecificHeat.SpecificHeat.setValues" title="abaqus.Material.Others.HeatTransfer.SpecificHeat.SpecificHeat.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the SpecificHeat object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -8209,20 +7643,6 @@ dissipation that appears as a heat source.</p>
 <li><p>DIFFUSIVITY</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.MassDiffusion.Diffusivity.Diffusivity.setValues" title="abaqus.Material.Others.MassDiffusion.Diffusivity.Diffusivity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Diffusivity object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -8319,20 +7739,6 @@ dissipation that appears as a heat source.</p>
 <li><p>KAPPA</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.MassDiffusion.PressureEffect.PressureEffect.setValues" title="abaqus.Material.Others.MassDiffusion.PressureEffect.PressureEffect.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the PressureEffect object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -8396,20 +7802,6 @@ dissipation that appears as a heat source.</p>
 <ul class="simple">
 <li><p>SOLUBILITY</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.MassDiffusion.Solubility.Solubility.setValues" title="abaqus.Material.Others.MassDiffusion.Solubility.Solubility.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Solubility object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -8476,20 +7868,6 @@ dissipation that appears as a heat source.</p>
 <li><p>KAPPA</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.MassDiffusion.SoretEffect.SoretEffect.setValues" title="abaqus.Material.Others.MassDiffusion.SoretEffect.SoretEffect.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the SoretEffect object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -8548,20 +7926,6 @@ dissipation that appears as a heat source.</p>
 <ul class="simple">
 <li><p>DAMPING</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.Mechanical.Damping.Damping.setValues" title="abaqus.Material.Others.Mechanical.Damping.Damping.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Damping object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -8663,20 +8027,6 @@ dissipation that appears as a heat source.</p>
 <li><p>EXPANSION</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.Mechanical.Expansion.Expansion.setValues" title="abaqus.Material.Others.Mechanical.Expansion.Expansion.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Expansion object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -8741,20 +8091,6 @@ hydraulic fluid.</p>
 <ul class="simple">
 <li><p>EXPANSION</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.Mechanical.PoreFluidExpansion.PoreFluidExpansion.setValues" title="abaqus.Material.Others.Mechanical.PoreFluidExpansion.PoreFluidExpansion.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the PoreFluidExpansion object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -8823,20 +8159,6 @@ analysis.</p>
 <li><p>TRS</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.Mechanical.Viscosity.Trs.Trs.setValues" title="abaqus.Material.Others.Mechanical.Viscosity.Trs.Trs.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Trs object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -8894,20 +8216,6 @@ analysis.</p>
 <ul class="simple">
 <li><p>VISCOSITY</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.Mechanical.Viscosity.Viscosity.Viscosity.setValues" title="abaqus.Material.Others.Mechanical.Viscosity.Viscosity.Viscosity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Viscosity object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -9002,20 +8310,6 @@ elements.</p>
 <li><p>FLUID LEAKOFF</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.PoreFluidFlow.FluidLeakoff.FluidLeakoff.setValues" title="abaqus.Material.Others.PoreFluidFlow.FluidLeakoff.FluidLeakoff.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the FluidLeakoff object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -9072,20 +8366,6 @@ elements.</p>
 <li><p>GEL</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.PoreFluidFlow.Gel.Gel.setValues" title="abaqus.Material.Others.PoreFluidFlow.Gel.Gel.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Gel object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -9141,20 +8421,6 @@ elements.</p>
 <ul class="simple">
 <li><p>MOISTURE SWELLING</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.PoreFluidFlow.MoistureSwelling.MoistureSwelling.MoistureSwelling.setValues" title="abaqus.Material.Others.PoreFluidFlow.MoistureSwelling.MoistureSwelling.MoistureSwelling.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the MoistureSwelling object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -9267,20 +8533,6 @@ elements.</p>
 <li><p>PERMEABILITY</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.PoreFluidFlow.Permeability.Permeability.Permeability.setValues" title="abaqus.Material.Others.PoreFluidFlow.Permeability.Permeability.Permeability.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Permeability object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -9376,20 +8628,6 @@ material on the saturation of the wetting liquid.</p>
 <li><p>PERMEABILITY</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.PoreFluidFlow.Permeability.SaturationDependence.SaturationDependence.setValues" title="abaqus.Material.Others.PoreFluidFlow.Permeability.SaturationDependence.SaturationDependence.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the SaturationDependence object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -9451,20 +8689,6 @@ on the velocity of fluid flow.</p>
 <ul class="simple">
 <li><p>PERMEABILITY</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.PoreFluidFlow.Permeability.VelocityDependence.VelocityDependence.setValues" title="abaqus.Material.Others.PoreFluidFlow.Permeability.VelocityDependence.VelocityDependence.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the VelocityDependence object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -9528,20 +8752,6 @@ on the velocity of fluid flow.</p>
 <ul class="simple">
 <li><p>POROUS BULK MODULI</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.PoreFluidFlow.PorousBulkModuli.PorousBulkModuli.setValues" title="abaqus.Material.Others.PoreFluidFlow.PorousBulkModuli.PorousBulkModuli.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the PorousBulkModuli object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -9614,20 +8824,6 @@ porous medium in the analysis of coupled wetting liquid flow and porous medium s
 <li><p>SORPTION</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.PoreFluidFlow.Sorption.Sorption.setValues" title="abaqus.Material.Others.PoreFluidFlow.Sorption.Sorption.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Sorption object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -9686,20 +8882,6 @@ porous medium in the analysis of coupled wetting liquid flow and porous medium s
 <ul class="simple">
 <li><p>DEPVAR</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.User.Depvar.Depvar.setValues" title="abaqus.Material.Others.User.Depvar.Depvar.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Depvar object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -9798,20 +8980,6 @@ or VUMAT.</p>
 <li><p>USER MATERIAL</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.User.UserMaterial.UserMaterial.setValues" title="abaqus.Material.Others.User.UserMaterial.UserMaterial.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the UserMaterial object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -9867,20 +9035,6 @@ or VUMAT.</p>
 <ul class="simple">
 <li><p>USER OUTPUT VARIABLES</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Others.User.UserOutputVariables.UserOutputVariables.setValues" title="abaqus.Material.Others.User.UserOutputVariables.UserOutputVariables.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the UserOutputVariables object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -9983,20 +9137,6 @@ brittle cracking material model.</p>
 <ul class="simple">
 <li><p>BRITTLE CRACKING</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking.setValues" title="abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the BrittleCracking object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -10103,20 +9243,6 @@ brittle cracking material model.</p>
 <li><p>BRITTLE FAILURE</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Concrete.BrittleFailure.BrittleFailure.setValues" title="abaqus.Material.Plastic.Concrete.BrittleFailure.BrittleFailure.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the BrittleFailure object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -10201,20 +9327,6 @@ a brittle cracking model.</p>
 <li><p>BRITTLE SHEAR</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Concrete.BrittleShear.BrittleShear.setValues" title="abaqus.Material.Plastic.Concrete.BrittleShear.BrittleShear.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the BrittleShear object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -10279,20 +9391,6 @@ a brittle cracking model.</p>
 <ul class="simple">
 <li><p>CONCRETE</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Concrete.Concrete.Concrete.setValues" title="abaqus.Material.Plastic.Concrete.Concrete.Concrete.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Concrete object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -10400,20 +9498,6 @@ plasticity model.</p>
 <li><p>CONCRETE COMPRESSION DAMAGE</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Concrete.ConcreteCompressionDamage.ConcreteCompressionDamage.setValues" title="abaqus.Material.Plastic.Concrete.ConcreteCompressionDamage.ConcreteCompressionDamage.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ConcreteCompressionDamage object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -10480,20 +9564,6 @@ plasticity model.</p>
 <ul class="simple">
 <li><p>CONCRETE COMPRESSION HARDENING</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Concrete.ConcreteCompressionHardening.ConcreteCompressionHardening.setValues" title="abaqus.Material.Plastic.Concrete.ConcreteCompressionHardening.ConcreteCompressionHardening.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ConcreteCompressionHardening object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -10568,20 +9638,6 @@ Abaqus/Explicit analysis. The default value is 0.0.</p></li>
 <ul class="simple">
 <li><p>CONCRETE DAMAGED PLASTICITY</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Concrete.ConcreteDamagedPlasticity.ConcreteDamagedPlasticity.setValues" title="abaqus.Material.Plastic.Concrete.ConcreteDamagedPlasticity.ConcreteDamagedPlasticity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ConcreteDamagedPlasticity object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -10716,20 +9772,6 @@ model.</p>
 <li><p>CONCRETE TENSION DAMAGE</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Concrete.ConcreteTensionDamage.ConcreteTensionDamage.setValues" title="abaqus.Material.Plastic.Concrete.ConcreteTensionDamage.ConcreteTensionDamage.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ConcreteTensionDamage object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -10829,20 +9871,6 @@ plasticity model.</p>
 <li><p>CONCRETE TENSION STIFFENING</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Concrete.ConcreteTensionStiffening.ConcreteTensionStiffening.setValues" title="abaqus.Material.Plastic.Concrete.ConcreteTensionStiffening.ConcreteTensionStiffening.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ConcreteTensionStiffening object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -10917,20 +9945,6 @@ tensile cracking stress under uniaxial tension. The default value is 1/3.</p></l
 <li><p>FAILURE RATIOS</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Concrete.FailureRatios.FailureRatios.setValues" title="abaqus.Material.Plastic.Concrete.FailureRatios.FailureRatios.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the FailureRatios object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -11000,20 +10014,6 @@ crack surfaces in a Concrete model as a function of the tensile strain across th
 <ul class="simple">
 <li><p>SHEAR RETENTION</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Concrete.ShearRetention.ShearRetention.setValues" title="abaqus.Material.Plastic.Concrete.ShearRetention.ShearRetention.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ShearRetention object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -11097,20 +10097,6 @@ Concrete model.</p>
 <ul class="simple">
 <li><p>TENSION STIFFENING</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Concrete.TensionStiffening.TensionStiffening.setValues" title="abaqus.Material.Plastic.Concrete.TensionStiffening.TensionStiffening.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the TensionStiffening object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -11261,20 +10247,6 @@ Concrete model.</p>
 <li><p>CREEP</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Creep.Creep.Creep.setValues" title="abaqus.Material.Plastic.Creep.Creep.Creep.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Creep object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -11374,20 +10346,6 @@ Concrete model.</p>
 <li><p>CLAY HARDENING</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening.setValues" title="abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ClayHardening object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -11479,20 +10437,6 @@ corresponding to <span class="math notranslate nohighlight">\(\left.p_{c}\right|
 <ul class="simple">
 <li><p>CLAY PLASTICITY</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity.setValues" title="abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ClayPlasticity object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -11605,20 +10549,6 @@ to initial yield stress in hydrostatic compression, <span class="math notranslat
 <li><p>CRUSHABLE FOAM</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.CrushableFoam.CrushableFoam.CrushableFoam.setValues" title="abaqus.Material.Plastic.CrushableFoam.CrushableFoam.CrushableFoam.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the CrushableFoam object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -11716,20 +10646,6 @@ value entered must always be zero.)</p></li>
 <ul class="simple">
 <li><p>CRUSHABLE FOAM HARDENING</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.CrushableFoam.CrushableFoamHardening.CrushableFoamHardening.setValues" title="abaqus.Material.Plastic.CrushableFoam.CrushableFoamHardening.CrushableFoamHardening.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the CrushableFoamHardening object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -11836,20 +10752,6 @@ the value in degrees.</p></li>
 <ul class="simple">
 <li><p>DRUCKER PRAGER</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPrager.DruckerPrager.setValues" title="abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPrager.DruckerPrager.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the DruckerPrager object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -11992,20 +10894,6 @@ the value in degrees.</p></li>
 <li><p>DRUCKER PRAGER CREEP</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerCreep.DruckerPragerCreep.setValues" title="abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerCreep.DruckerPragerCreep.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the DruckerPragerCreep object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -12075,20 +10963,6 @@ hardening curve applies.</p></li>
 <li><p>DRUCKER PRAGER HARDENING</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerHardening.DruckerPragerHardening.setValues" title="abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerHardening.DruckerPragerHardening.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the DruckerPragerHardening object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -12149,20 +11023,6 @@ hardening curve applies.</p></li>
 <ul class="simple">
 <li><p>TRIAXIAL TEST DATA</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.DruckerPrager.Extended.TriaxialTestData.TriaxialTestData.setValues" title="abaqus.Material.Plastic.DruckerPrager.Extended.TriaxialTestData.TriaxialTestData.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the TriaxialTestData object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -12267,20 +11127,6 @@ hardening curve applies.</p></li>
 <li><p>CAP CREEP</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion.setValues" title="abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the CapCreepCohesion object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -12374,20 +11220,6 @@ hardening curve applies.</p></li>
 <li><p>CAP CREEP</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation.setValues" title="abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the CapCreepConsolidation object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -12445,20 +11277,6 @@ hardening curve applies.</p></li>
 <ul class="simple">
 <li><p>CAP HARDENING</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapHardening.CapHardening.setValues" title="abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapHardening.CapHardening.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the CapHardening object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -12531,20 +11349,6 @@ no transition surface). Abaqus/Standard assumes <span class="math notranslate no
 <ul class="simple">
 <li><p>CAP PLASTICITY</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapPlasticity.CapPlasticity.setValues" title="abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapPlasticity.CapPlasticity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the CapPlasticity object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -12656,20 +11460,6 @@ no transition surface). Abaqus/Standard assumes <span class="math notranslate no
 <li><p>ANNEAL TEMPERATURE</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature.setValues" title="abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the AnnealTemperature object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -12739,20 +11529,6 @@ plasticity model.</p>
 <li><p>CAST IRON COMPRESSION HARDENING</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Metal.CastIron.CastIronCompressionHardening.CastIronCompressionHardening.setValues" title="abaqus.Material.Plastic.Metal.CastIron.CastIronCompressionHardening.CastIronCompressionHardening.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the CastIronCompressionHardening object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -12816,20 +11592,6 @@ plasticity model.</p>
 <ul class="simple">
 <li><p>CAST IRON PLASTICITY</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Metal.CastIron.CastIronPlasticity.CastIronPlasticity.setValues" title="abaqus.Material.Plastic.Metal.CastIron.CastIronPlasticity.CastIronPlasticity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the CastIronPlasticity object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -12928,20 +11690,6 @@ model.</p>
 <li><p>CAST IRON TENSION HARDENING</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Metal.CastIron.CastIronTensionHardening.CastIronTensionHardening.setValues" title="abaqus.Material.Plastic.Metal.CastIron.CastIronTensionHardening.CastIronTensionHardening.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the CastIronTensionHardening object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -13008,20 +11756,6 @@ model.</p>
 <li><p>CYCLED PLASTIC</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Metal.Cyclic.CycledPlastic.CycledPlastic.setValues" title="abaqus.Material.Plastic.Metal.Cyclic.CycledPlastic.CycledPlastic.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the CycledPlastic object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -13081,20 +11815,6 @@ isotropic/kinematic hardening model.</p>
 <ul class="simple">
 <li><p>CYCLIC HARDENING</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Metal.Cyclic.CyclicHardening.CyclicHardening.setValues" title="abaqus.Material.Plastic.Metal.Cyclic.CyclicHardening.CyclicHardening.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the CyclicHardening object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -13156,20 +11876,6 @@ isotropic/kinematic hardening model.</p>
 <ul class="simple">
 <li><p>DEFORMATION PLASTICITY</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Metal.Deformation.DeformationPlasticity.DeformationPlasticity.setValues" title="abaqus.Material.Plastic.Metal.Deformation.DeformationPlasticity.DeformationPlasticity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the DeformationPlasticity object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -13233,20 +11939,6 @@ Laboratory.</p>
 <li><p>ORNL</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Metal.ORNL.Ornl.Ornl.setValues" title="abaqus.Material.Plastic.Metal.ORNL.Ornl.Ornl.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Ornl object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -13306,20 +11998,6 @@ metal.</p>
 <ul class="simple">
 <li><p>POROUS FAILURE CRITERIA</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Metal.Porous.PorousFailureCriteria.PorousFailureCriteria.setValues" title="abaqus.Material.Plastic.Metal.Porous.PorousFailureCriteria.PorousFailureCriteria.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the PorousFailureCriteria object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -13386,20 +12064,6 @@ metal.</p>
 <ul class="simple">
 <li><p>POROUS METAL PLASTICITY</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Metal.Porous.PorousMetalPlasticity.PorousMetalPlasticity.setValues" title="abaqus.Material.Plastic.Metal.Porous.PorousMetalPlasticity.PorousMetalPlasticity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the PorousMetalPlasticity object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -13498,20 +12162,6 @@ metal.</p>
 <li><p>VOID NUCLEATION</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Metal.Porous.VoidNucleation.VoidNucleation.setValues" title="abaqus.Material.Plastic.Metal.Porous.VoidNucleation.VoidNucleation.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the VoidNucleation object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -13609,20 +12259,6 @@ metal.</p>
 <ul class="simple">
 <li><p>RATE DEPENDENT</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent.setValues" title="abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the RateDependent object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -13776,20 +12412,6 @@ material model.</p>
 <li><p>VISCOUS</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.setValues" title="abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Viscous object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -13875,20 +12497,6 @@ model.</p>
 <li><p>MOHR COULOMB HARDENING</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening.setValues" title="abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the MohrCoulombHardening object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -13954,20 +12562,6 @@ in the <span class="math notranslate nohighlight">\(p-R_{m c} q\)</span> plane.<
 <ul class="simple">
 <li><p>MOHR COULOMB</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity.setValues" title="abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the MohrCoulombPlasticity object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -14066,20 +12660,6 @@ entered must always be zero.)</p></li>
 <ul class="simple">
 <li><p>TENSION CUTOFF</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.MohrCoulomb.TensionCutOff.TensionCutOff.setValues" title="abaqus.Material.Plastic.MohrCoulomb.TensionCutOff.TensionCutOff.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the TensionCutOff object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -14210,20 +12790,6 @@ entered must always be zero.)</p></li>
 <ul class="simple">
 <li><p>PLASTIC</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Plastic.Plastic.setValues" title="abaqus.Material.Plastic.Plastic.Plastic.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Plastic object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -14365,20 +12931,6 @@ entered must always be zero.)</p></li>
 <li><p>POTENTIAL</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Potential.Potential.setValues" title="abaqus.Material.Plastic.Potential.Potential.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Potential object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -14442,20 +12994,6 @@ total strain to define the piecewise linear hardening of a martensite material m
 <ul class="simple">
 <li><p>SUPERELASTIC HARDENING</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.SuperElastic.SuperElasticHardening.SuperElasticHardening.setValues" title="abaqus.Material.Plastic.SuperElastic.SuperElasticHardening.SuperElasticHardening.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the SuperElasticHardening object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -14521,20 +13059,6 @@ transformation stress levels of a material model.</p>
 <ul class="simple">
 <li><p>SUPERELASTIC HARDENING MODIFICATIONS</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.SuperElastic.SuperElasticHardeningModifications.SuperElasticHardeningModifications.setValues" title="abaqus.Material.Plastic.SuperElastic.SuperElasticHardeningModifications.SuperElasticHardeningModifications.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the SuperElasticHardeningModifications object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -14602,20 +13126,6 @@ transformation stress levels of a material model.</p>
 <ul class="simple">
 <li><p>SWELLING</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Plastic.Swelling.Swelling.Swelling.setValues" title="abaqus.Material.Plastic.Swelling.Swelling.Swelling.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Swelling object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -14880,20 +13390,6 @@ damage.</p>
 <li><p>DAMAGE EVOLUTION</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution.setValues" title="abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the DamageEvolution object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -15147,71 +13643,6 @@ damage.</p>
 <ul class="simple">
 <li><p>DAMAGE INITIATION</p></li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>damageEvolution</strong></dt><dd></dd>
-<dt><strong>damageStabilization</strong></dt><dd></dd>
-<dt><strong>table</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DuctileDamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DuctileDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DuctileDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FldDamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FldDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FldDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FlsdDamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FlsdDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FlsdDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.HashinDamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.HashinDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HashinDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.JohnsonCookDamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.JohnsonCookDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">JohnsonCookDamageInitiation</span></code></a>(table[, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MaxeDamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MaxeDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxeDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MaxpeDamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MaxpeDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxpeDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MaxpsDamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MaxpsDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxpsDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MaxsDamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MaxsDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxsDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MkDamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MkDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MkDamageInitiation</span></code></a>(table[, definition, feq, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MsfldDamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MsfldDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MsfldDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.QuadeDamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.QuadeDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuadeDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.QuadsDamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.QuadsDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuadsDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.ShearDamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.ShearDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShearDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.setValues" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the DamageInitiation object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -16532,20 +14963,6 @@ for fiber-reinforced materials.</p>
 <li><p>DAMAGE STABILIZATION</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageStabilization.DamageStabilization.setValues" title="abaqus.Material.ProgressiveDamageFailure.DamageStabilization.DamageStabilization.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the DamageStabilization object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -16629,20 +15046,6 @@ damage model for surface-based cohesive behavior or enriched cohesive behavior.<
 <li><p>DAMAGE STABILIZATION</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive.setValues" title="abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the DamageStabilizationCohesive object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -16710,20 +15113,6 @@ damage model for surface-based cohesive behavior or enriched cohesive behavior.<
 <ul class="simple">
 <li><p>RATIOS</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Ratios.Ratios.setValues" title="abaqus.Material.Ratios.Ratios.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Ratios object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -16818,20 +15207,6 @@ data.</p>
 <ul class="simple">
 <li><p>DASHPOT</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.Regularization.Regularization.setValues" title="abaqus.Material.Regularization.Regularization.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Regularization object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -16929,20 +15304,6 @@ LOGARITHMIC.</p>
 <li><p>BIAXIAL TEST DATA</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.TestData.BiaxialTestData.BiaxialTestData.setValues" title="abaqus.Material.TestData.BiaxialTestData.BiaxialTestData.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the BiaxialTestData object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -16977,21 +15338,7 @@ LOGARITHMIC.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Material.TestData.BiaxialTestDataArray.BiaxialTestDataArray">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BiaxialTestDataArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Material/TestData/BiaxialTestDataArray.py#L4-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Material.TestData.BiaxialTestDataArray.BiaxialTestDataArray" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>findAt</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="autoclasstoc docutils container">
+<dd><div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -17281,20 +15628,6 @@ tension).</p>
 <li><p>PLANAR TEST DATA</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.TestData.PlanarTestData.PlanarTestData.setValues" title="abaqus.Material.TestData.PlanarTestData.PlanarTestData.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the PlanarTestData object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -17329,21 +15662,7 @@ tension).</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Material.TestData.PlanarTestDataArray.PlanarTestDataArray">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PlanarTestDataArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Material/TestData/PlanarTestDataArray.py#L4-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Material.TestData.PlanarTestDataArray.PlanarTestDataArray" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>findAt</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="autoclasstoc docutils container">
+<dd><div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -17520,20 +15839,6 @@ modulus as a function of time.</p>
 <li><p>SHEAR TEST DATA</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.TestData.ShearTestData.ShearTestData.setValues" title="abaqus.Material.TestData.ShearTestData.ShearTestData.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ShearTestData object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -17588,20 +15893,6 @@ modulus as a function of time.</p>
 <ul class="simple">
 <li><p>SIMPLE SHEAR TEST DATA</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.TestData.SimpleShearTestData.SimpleShearTestData.setValues" title="abaqus.Material.TestData.SimpleShearTestData.SimpleShearTestData.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the SimpleShearTestData object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -17689,20 +15980,6 @@ modulus as a function of time.</p>
 <li><p>UNIAXIAL TEST DATA</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.TestData.UniaxialTestData.UniaxialTestData.setValues" title="abaqus.Material.TestData.UniaxialTestData.UniaxialTestData.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the UniaxialTestData object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -17737,21 +16014,7 @@ modulus as a function of time.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Material.TestData.UniaxialTestDataArray.UniaxialTestDataArray">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UniaxialTestDataArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Material/TestData/UniaxialTestDataArray.py#L4-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Material.TestData.UniaxialTestDataArray.UniaxialTestDataArray" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>findAt</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="autoclasstoc docutils container">
+<dd><div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -17945,20 +16208,6 @@ modulus as a function of time.</p>
 <ul class="simple">
 <li><p>VOLUMETRIC TEST DATA</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Material.TestData.VolumetricTestData.VolumetricTestData.setValues" title="abaqus.Material.TestData.VolumetricTestData.VolumetricTestData.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the VolumetricTestData object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>

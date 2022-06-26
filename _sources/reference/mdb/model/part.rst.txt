@@ -22,7 +22,46 @@ Part
 
 .. autoclass:: abaqus.Part.Part.Part
     :members:
-    :inherited-members:
+
+    .. autoclasstoc::
+
+PartBase
+~~~~~~~~
+
+.. autoclass:: abaqus.Part.Partbase.PartBase
+    :members:
+
+    .. autoclasstoc::
+
+MeshEditPart
+~~~~~~~~~~~~
+
+.. autoclass:: abaqus.EditMesh.MeshEditPart.MeshEditPart
+    :members:
+
+    .. autoclasstoc::
+
+MeshPart
+~~~~~~~~
+
+.. autoclass:: abaqus.Mesh.MeshPart.MeshPart
+    :members:
+
+    .. autoclasstoc::
+
+PropertyPart
+~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Property.PropertyPart.PropertyPart
+    :members:
+
+    .. autoclasstoc::
+
+RegionPart
+~~~~~~~~~~
+
+.. autoclass:: abaqus.Region.RegionPart.RegionPart
+    :members:
 
     .. autoclasstoc::
 

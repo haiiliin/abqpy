@@ -413,7 +413,171 @@
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">stefanBoltzmann</span></code></p></td>
+<td><p>None or a Float specifying the Stefan-Boltzmann constant.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">absoluteZero</span></code></p></td>
+<td><p>None or a Float specifying the absolute zero constant.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">waveFormulation</span></code></p></td>
+<td><p>A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">universalGas</span></code></p></td>
+<td><p>None or a Float specifying the universal gas constant.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">noPartsInputFile</span></code></p></td>
+<td><p>A Boolean specifying whether an input file should be written without parts and assemblies.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartIncrement</span></code></p></td>
+<td><p>An Int specifying the increment, interval, iteration or cycle where the restart analysis will start.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">endRestartStep</span></code></p></td>
+<td><p>A Boolean specifying that the step specified by <strong>restartStep</strong> should be terminated at the increment specified by <strong>restartIncrement</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">shellToSolid</span></code></p></td>
+<td><p>A Boolean specifying that a shell global model drives a solid submodel.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">lastChangedCount</span></code></p></td>
+<td><p>A Float specifying the time stamp that indicates when the model was last changed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></p></td>
+<td><p>A String specifying the purpose and contents of the Model object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartJob</span></code></p></td>
+<td><p>A String specifying the name of the job that generated the restart data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartStep</span></code></p></td>
+<td><p>A String specifying the name of the step where the restart analysis will start.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">globalJob</span></code></p></td>
+<td><p>A String specifying the name of the job that generated the results for the global model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyConstraints</span></code></p></td>
+<td><p>A boolean specifying the status of constraints created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyConnectors</span></code></p></td>
+<td><p>A boolean specifying the status of connectors created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyInteractions</span></code></p></td>
+<td><p>A boolean specifying the status of interactions created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">keywordBlock</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model.html#abaqus.Model.KeywordBlock.KeywordBlock" title="abaqus.Model.KeywordBlock.KeywordBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">KeywordBlock</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">rootAssembly</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../../reference/mdb/model/assembly.html#abaqus.Assembly.Assembly.Assembly" title="abaqus.Assembly.Assembly.Assembly"><code class="xref py py-class docutils literal notranslate"><span class="pre">Assembly</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">amplitudes</span></code></p></td>
+<td><p>A repository of Amplitude objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">profiles</span></code></p></td>
+<td><p>A repository of Profile objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundaryConditions</span></code></p></td>
+<td><p>A repository of BoundaryCondition objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">constraints</span></code></p></td>
+<td><p>A repository of ConstrainedSketchConstraint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyticalFields</span></code></p></td>
+<td><p>A repository of AnalyticalField objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">discreteFields</span></code></p></td>
+<td><p>A repository of DiscreteField objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">predefinedFields</span></code></p></td>
+<td><p>A repository of PredefinedField objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactions</span></code></p></td>
+<td><p>A repository of Interaction objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactionProperties</span></code></p></td>
+<td><p>A repository of InteractionProperty objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactControls</span></code></p></td>
+<td><p>A repository of ContactControl objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactInitializations</span></code></p></td>
+<td><p>A repository of ContactInitialization objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactStabilizations</span></code></p></td>
+<td><p>A repository of ContactStabilization objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkedInstances</span></code></p></td>
+<td><p>A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkedParts</span></code></p></td>
+<td><p>A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">loads</span></code></p></td>
+<td><p>A repository of Load objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">materials</span></code></p></td>
+<td><p>A repository of Material objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">calibrations</span></code></p></td>
+<td><p>A repository of Calibration objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sections</span></code></p></td>
+<td><p>A repository of Section objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">remeshingRules</span></code></p></td>
+<td><p>A repository of RemeshingRule objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sketches</span></code></p></td>
+<td><p>A repository of ConstrainedSketch objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parts</span></code></p></td>
+<td><p>A repository of Part objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">steps</span></code></p></td>
+<td><p>A repository of Step objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">featureOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/part_assembly/feature.html#abaqus.Feature.FeatureOptions.FeatureOptions" title="abaqus.Feature.FeatureOptions.FeatureOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshConstraints</span></code></p></td>
+<td><p>A repository of AdaptiveMeshConstraint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshControls</span></code></p></td>
+<td><p>A repository of AdaptiveMeshControl objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">timePoints</span></code></p></td>
+<td><p>A repository of TimePoint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></p></td>
+<td><p>A repository of Filter objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">integratedOutputSections</span></code></p></td>
+<td><p>A repository of IntegratedOutputSection objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldOutputRequests</span></code></p></td>
+<td><p>A repository of FieldOutputRequest objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">historyOutputRequests</span></code></p></td>
+<td><p>A repository of HistoryOutputRequest objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimizationTasks</span></code></p></td>
+<td><p>A repository of OptimizationTask objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <colgroup>
@@ -421,30 +585,57 @@
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshConstraint" title="abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshConstraint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdaptiveMeshConstraint</span></code></a>(name, category, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.adaptiveRemesh" title="abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.adaptiveRemesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveRemesh</span></code></a>(odb)</p></td>
+<td><p>This method remeshes the model using the active remesh rules in the model and the error indicator results from a previous analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshConstraint" title="abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshConstraint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdaptiveMeshConstraint</span></code></a>(name, category, region)</p></td>
 <td><p>The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary Lagrangian Eularian (ALE) style AdaptiveMeshConstraint objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl" title="abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdaptiveMeshControl</span></code></a>(name[, remapping, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl" title="abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdaptiveMeshControl</span></code></a>(name[, remapping, ...])</p></td>
 <td><p>This method creates an AdaptiveMeshControl object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint" title="abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisplacementAdaptiveMeshConstraint</span></code></a>(name, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint" title="abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisplacementAdaptiveMeshConstraint</span></code></a>(name, ...)</p></td>
 <td><p>This method creates a DisplacementAdaptiveMeshConstraint object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule" title="abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RemeshingRule</span></code></a>(name, stepName, variables[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule" title="abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RemeshingRule</span></code></a>(name, stepName, variables[, ...])</p></td>
 <td><p>This method creates a RemeshingRule object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint" title="abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VelocityAdaptiveMeshConstraint</span></code></a>(name, ...[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint" title="abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VelocityAdaptiveMeshConstraint</span></code></a>(name, ...[, ...])</p></td>
 <td><p>This method creates a VelocityAdaptiveMeshConstraint object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.adaptiveRemesh" title="abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.adaptiveRemesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveRemesh</span></code></a>(odb)</p></td>
-<td><p>This method remeshes the model using the active remesh rules in the model and the error indicator results from a previous analysis.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, description, ...])</p></td>
+<td><p>This method creates a Model object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromInputFile</span></code>(name, inputFileName)</p></td>
+<td><p>This method creates a Model object by reading the keywords in an input file and creating the corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromOdbFile</span></code>(name, odbFileName)</p></td>
+<td><p>This method creates a Model object by reading an output database and creating any corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromNastranFile</span></code>(modelName, inputFileName)</p></td>
+<td><p>This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>([description, noPartsInputFile, ...])</p></td>
+<td><p>This method modifies the Model object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
 </dd></dl>
 
 </section>
+<hr class="docutils" />
 <section id="create-adaptivity-mesh-state-features">
 <h2>Create adaptivity mesh state features<a class="headerlink" href="#create-adaptivity-mesh-state-features" title="Permalink to this headline">#</a></h2>
 <dl class="py class">
@@ -462,7 +653,84 @@ derived from the Step.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">StepBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">explicit</span></code></p></td>
+<td><p>A SymbolicConstant specifying whether the step has an explicit procedure type (<a href="#id1"><span class="problematic" id="id2">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">perturbation</span></code></p></td>
+<td><p>A Boolean specifying whether the step has a perturbation procedure type.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">nonmechanical</span></code></p></td>
+<td><p>A Boolean specifying whether the step has a mechanical procedure type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">procedureType</span></code></p></td>
+<td><p>A SymbolicConstant specifying the Abaqus procedure.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></p></td>
+<td><p>A Boolean specifying whether the step is suppressed or not.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldOutputRequestState</span></code></p></td>
+<td><p>A repository of FieldOutputRequestState objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">historyOutputRequestState</span></code></p></td>
+<td><p>A repository of HistoryOutputRequestState objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">diagnosticPrint</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/output.html#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint" title="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint"><code class="xref py py-class docutils literal notranslate"><span class="pre">DiagnosticPrint</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">monitor</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/output.html#abaqus.StepOutput.Monitor.Monitor" title="abaqus.StepOutput.Monitor.Monitor"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monitor</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restart</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/output.html#abaqus.StepOutput.Restart.Restart" title="abaqus.StepOutput.Restart.Restart"><code class="xref py py-class docutils literal notranslate"><span class="pre">Restart</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshConstraintStates</span></code></p></td>
+<td><p>A repository of AdaptiveMeshConstraintState objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshDomains</span></code></p></td>
+<td><p>A repository of AdaptiveMeshDomain objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">control</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.Control.Control" title="abaqus.StepMiscellaneous.Control.Control"><code class="xref py py-class docutils literal notranslate"><span class="pre">Control</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">solverControl</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SolverControl.SolverControl" title="abaqus.StepMiscellaneous.SolverControl.SolverControl"><code class="xref py py-class docutils literal notranslate"><span class="pre">SolverControl</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundaryConditionStates</span></code></p></td>
+<td><p>A repository of BoundaryConditionState objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactionStates</span></code></p></td>
+<td><p>A repository of InteractionState objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">loadStates</span></code></p></td>
+<td><p>A repository of LoadState objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">loadCases</span></code></p></td>
+<td><p>A repository of LoadCase objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">predefinedFieldStates</span></code></p></td>
+<td><p>A repository of PredefinedFieldState objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">activateElements</span></code></p></td>
+<td><p>A repository of ActivateElements objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <colgroup>
@@ -470,21 +738,39 @@ derived from the Step.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState" title="abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdaptiveMeshConstraintState</span></code></a>([...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/step.html#abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState" title="abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdaptiveMeshConstraintState</span></code></a>([...])</p></td>
 <td><p>The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary Lagrangian Eularian (ALE) style AdaptiveMeshConstraintState objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain" title="abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdaptiveMeshDomain</span></code></a>(region[, controls, ...])</p></td>
-<td><p>The AdaptiveMeshDomain object defines the region and controls that govern an Arbitrary Lagrangian Eularian (ALE) style adaptive smoothing mesh domain.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState" title="abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisplacementAdaptiveMeshConstraintState</span></code></a>([...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/step.html#abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState" title="abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisplacementAdaptiveMeshConstraintState</span></code></a>([...])</p></td>
 <td><p>The DisplacementAdaptiveMeshConstraintState object stores the propagating data for an Arbitrary Lagrangian Eularian (ALE) style displacement/rotation adaptive mesh constraint in a step.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState" title="abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VelocityAdaptiveMeshConstraintState</span></code></a>([v1, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/step.html#abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState" title="abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VelocityAdaptiveMeshConstraintState</span></code></a>([v1, ...])</p></td>
 <td><p>The VelocityAdaptiveMeshConstraintState object stores the propagating data for an Arbitrary Lagrangian Eularian (ALE) style velocity adaptive mesh constraint in a step.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/step.html#abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain" title="abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdaptiveMeshDomain</span></code></a>(region[, controls, ...])</p></td>
+<td><p>The AdaptiveMeshDomain object defines the region and controls that govern an Arbitrary Lagrangian Eularian (ALE) style adaptive smoothing mesh domain.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">StepBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the step that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the step.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 </dd></dl>
 
 </section>

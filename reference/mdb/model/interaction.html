@@ -413,7 +413,171 @@
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">stefanBoltzmann</span></code></p></td>
+<td><p>None or a Float specifying the Stefan-Boltzmann constant.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">absoluteZero</span></code></p></td>
+<td><p>None or a Float specifying the absolute zero constant.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">waveFormulation</span></code></p></td>
+<td><p>A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">universalGas</span></code></p></td>
+<td><p>None or a Float specifying the universal gas constant.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">noPartsInputFile</span></code></p></td>
+<td><p>A Boolean specifying whether an input file should be written without parts and assemblies.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartIncrement</span></code></p></td>
+<td><p>An Int specifying the increment, interval, iteration or cycle where the restart analysis will start.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">endRestartStep</span></code></p></td>
+<td><p>A Boolean specifying that the step specified by <strong>restartStep</strong> should be terminated at the increment specified by <strong>restartIncrement</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">shellToSolid</span></code></p></td>
+<td><p>A Boolean specifying that a shell global model drives a solid submodel.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">lastChangedCount</span></code></p></td>
+<td><p>A Float specifying the time stamp that indicates when the model was last changed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></p></td>
+<td><p>A String specifying the purpose and contents of the Model object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartJob</span></code></p></td>
+<td><p>A String specifying the name of the job that generated the restart data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartStep</span></code></p></td>
+<td><p>A String specifying the name of the step where the restart analysis will start.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">globalJob</span></code></p></td>
+<td><p>A String specifying the name of the job that generated the results for the global model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyConstraints</span></code></p></td>
+<td><p>A boolean specifying the status of constraints created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyConnectors</span></code></p></td>
+<td><p>A boolean specifying the status of connectors created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyInteractions</span></code></p></td>
+<td><p>A boolean specifying the status of interactions created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">keywordBlock</span></code></p></td>
+<td><p>A <a class="reference internal" href="../model.html#abaqus.Model.KeywordBlock.KeywordBlock" title="abaqus.Model.KeywordBlock.KeywordBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">KeywordBlock</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">rootAssembly</span></code></p></td>
+<td><p>An <a class="reference internal" href="assembly.html#abaqus.Assembly.Assembly.Assembly" title="abaqus.Assembly.Assembly.Assembly"><code class="xref py py-class docutils literal notranslate"><span class="pre">Assembly</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">amplitudes</span></code></p></td>
+<td><p>A repository of Amplitude objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">profiles</span></code></p></td>
+<td><p>A repository of Profile objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundaryConditions</span></code></p></td>
+<td><p>A repository of BoundaryCondition objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">constraints</span></code></p></td>
+<td><p>A repository of ConstrainedSketchConstraint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyticalFields</span></code></p></td>
+<td><p>A repository of AnalyticalField objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">discreteFields</span></code></p></td>
+<td><p>A repository of DiscreteField objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">predefinedFields</span></code></p></td>
+<td><p>A repository of PredefinedField objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactions</span></code></p></td>
+<td><p>A repository of Interaction objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactionProperties</span></code></p></td>
+<td><p>A repository of InteractionProperty objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactControls</span></code></p></td>
+<td><p>A repository of ContactControl objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactInitializations</span></code></p></td>
+<td><p>A repository of ContactInitialization objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactStabilizations</span></code></p></td>
+<td><p>A repository of ContactStabilization objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkedInstances</span></code></p></td>
+<td><p>A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkedParts</span></code></p></td>
+<td><p>A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">loads</span></code></p></td>
+<td><p>A repository of Load objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">materials</span></code></p></td>
+<td><p>A repository of Material objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">calibrations</span></code></p></td>
+<td><p>A repository of Calibration objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sections</span></code></p></td>
+<td><p>A repository of Section objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">remeshingRules</span></code></p></td>
+<td><p>A repository of RemeshingRule objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sketches</span></code></p></td>
+<td><p>A repository of ConstrainedSketch objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parts</span></code></p></td>
+<td><p>A repository of Part objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">steps</span></code></p></td>
+<td><p>A repository of Step objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">featureOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="part_assembly/feature.html#abaqus.Feature.FeatureOptions.FeatureOptions" title="abaqus.Feature.FeatureOptions.FeatureOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshConstraints</span></code></p></td>
+<td><p>A repository of AdaptiveMeshConstraint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshControls</span></code></p></td>
+<td><p>A repository of AdaptiveMeshControl objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">timePoints</span></code></p></td>
+<td><p>A repository of TimePoint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></p></td>
+<td><p>A repository of Filter objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">integratedOutputSections</span></code></p></td>
+<td><p>A repository of IntegratedOutputSection objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldOutputRequests</span></code></p></td>
+<td><p>A repository of FieldOutputRequest objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">historyOutputRequests</span></code></p></td>
+<td><p>A repository of HistoryOutputRequest objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimizationTasks</span></code></p></td>
+<td><p>A repository of OptimizationTask objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <colgroup>
@@ -421,6 +585,12 @@
 <col style="width: 90%" />
 </colgroup>
 <tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.contactDetection" title="abaqus.Interaction.InteractionModel.InteractionModel.contactDetection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactDetection</span></code></a>([name, createStepName, ...])</p></td>
+<td><p>This method uses contact detection to create SurfaceToSurfaceContactStd, SurfaceToSurfaceContactExp, and Tie objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.getSurfaceSeparation" title="abaqus.Interaction.InteractionModel.InteractionModel.getSurfaceSeparation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSurfaceSeparation</span></code></a>()</p></td>
+<td><p>This method returns a list of all possible contacts that can be created using the ContactDetection method.</p></td>
+</tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.AcousticImpedance" title="abaqus.Interaction.InteractionModel.InteractionModel.AcousticImpedance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AcousticImpedance</span></code></a>(name, createStepName, surface)</p></td>
 <td><p>This method creates an AcousticImpedance object.</p></td>
 </tr>
@@ -523,15 +693,99 @@
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.XFEMCrackGrowth" title="abaqus.Interaction.InteractionModel.InteractionModel.XFEMCrackGrowth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XFEMCrackGrowth</span></code></a>(name, createStepName, crackName)</p></td>
 <td><p>This method creates an XFEMCrackGrowth object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.contactDetection" title="abaqus.Interaction.InteractionModel.InteractionModel.contactDetection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactDetection</span></code></a>([name, createStepName, ...])</p></td>
-<td><p>This method uses contact detection to create SurfaceToSurfaceContactStd, SurfaceToSurfaceContactExp, and Tie objects.</p></td>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">InteractionContactControlModel</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.ExpContactControl" title="abaqus.Interaction.InteractionModel.InteractionModel.ExpContactControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExpContactControl</span></code></a>(name[, globTrkChoice, ...])</p></td>
+<td><p>This method creates an ExpContactControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.getSurfaceSeparation" title="abaqus.Interaction.InteractionModel.InteractionModel.getSurfaceSeparation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSurfaceSeparation</span></code></a>()</p></td>
-<td><p>This method returns a list of all possible contacts that can be created using the ContactDetection method.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.StdContactControl" title="abaqus.Interaction.InteractionModel.InteractionModel.StdContactControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StdContactControl</span></code></a>(name[, ...])</p></td>
+<td><p>This method creates an StdContactControl object.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">InteractionContactInitializationModel</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.StdInitialization" title="abaqus.Interaction.InteractionModel.InteractionModel.StdInitialization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StdInitialization</span></code></a>(name[, overclosureType, ...])</p></td>
+<td><p>This method creates a StdInitialization object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">InteractionPropertyModel</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.AcousticImpedanceProp" title="abaqus.Interaction.InteractionModel.InteractionModel.AcousticImpedanceProp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AcousticImpedanceProp</span></code></a>(name, tableType, table)</p></td>
+<td><p>This method creates an AcousticImpedanceProp object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.ActuatorSensorProp" title="abaqus.Interaction.InteractionModel.InteractionModel.ActuatorSensorProp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ActuatorSensorProp</span></code></a>(name[, realProperties, ...])</p></td>
+<td><p>This method creates an ActuatorSensorProp object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.CavityRadiationProp" title="abaqus.Interaction.InteractionModel.InteractionModel.CavityRadiationProp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CavityRadiationProp</span></code></a>(name[, ...])</p></td>
+<td><p>This method creates a CavityRadiationProp object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.ContactProperty" title="abaqus.Interaction.InteractionModel.InteractionModel.ContactProperty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ContactProperty</span></code></a>(name)</p></td>
+<td><p>This method creates a ContactProperty object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.FilmConditionProp" title="abaqus.Interaction.InteractionModel.InteractionModel.FilmConditionProp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FilmConditionProp</span></code></a>(name[, ...])</p></td>
+<td><p>This method creates a FilmConditionProp object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.FluidCavityProperty" title="abaqus.Interaction.InteractionModel.InteractionModel.FluidCavityProperty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FluidCavityProperty</span></code></a>(name[, definition, ...])</p></td>
+<td><p>This method creates a FluidCavityProperty object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.FluidExchangeProperty" title="abaqus.Interaction.InteractionModel.InteractionModel.FluidExchangeProperty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FluidExchangeProperty</span></code></a>(name, dataTable[, ...])</p></td>
+<td><p>This method creates a FluidExchangeProperty object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.InteractionModel.InteractionModel.IncidentWaveProperty" title="abaqus.Interaction.InteractionModel.InteractionModel.IncidentWaveProperty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IncidentWaveProperty</span></code></a>(name[, definition, ...])</p></td>
+<td><p>This method creates an IncidentWaveProperty object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, description, ...])</p></td>
+<td><p>This method creates a Model object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromInputFile</span></code>(name, inputFileName)</p></td>
+<td><p>This method creates a Model object by reading the keywords in an input file and creating the corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromOdbFile</span></code>(name, odbFileName)</p></td>
+<td><p>This method creates a Model object by reading an output database and creating any corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromNastranFile</span></code>(modelName, inputFileName)</p></td>
+<td><p>This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>([description, noPartsInputFile, ...])</p></td>
+<td><p>This method modifies the Model object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Interaction.InteractionModel.InteractionModel.AcousticImpedance">
 <span class="sig-name descname"><span class="pre">AcousticImpedance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createStepName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">definition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'TABULAR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interactionProperty</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nonreflectingType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'PLANE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">semimajorAxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eccentricity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centerCoordinates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directionCosine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/InteractionModel.py#L202-L284"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.InteractionModel.InteractionModel.AcousticImpedance" title="Permalink to this definition">#</a></dt>
@@ -3055,30 +3309,6 @@ BK, and <strong>modeMixRatio</strong> = ENERGY, the table data specify the follo
 <li><p>DAMAGE STABILIZATION</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>evolTable</strong></dt><dd></dd>
-<dt><strong>exponent</strong></dt><dd></dd>
-<dt><strong>initTable</strong></dt><dd></dd>
-<dt><strong>viscosityCoef</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactDamage.ContactDamage.setValues" title="abaqus.Interaction.ContactDamage.ContactDamage.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ContactDamage object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -3333,27 +3563,6 @@ only when <strong>useEvolution</strong> = ON. The default value is OFF.</p>
 <li><p>CONTACT DAMPING</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>table</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactDamping.ContactDamping.setValues" title="abaqus.Interaction.ContactDamping.ContactDamping.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ContactDamping object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -3476,57 +3685,6 @@ The ContactProperty object is derived from the InteractionProperty object.</p>
 <ul class="simple">
 <li><p>SURFACE INTERACTION</p></li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>radiation</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactProperty.ContactProperty.CohesiveBehavior" title="abaqus.Interaction.ContactProperty.ContactProperty.CohesiveBehavior"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CohesiveBehavior</span></code></a>([repeatedContacts, ...])</p></td>
-<td><p>This method creates a CohesiveBehavior object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactProperty.ContactProperty.Damage" title="abaqus.Interaction.ContactProperty.ContactProperty.Damage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Damage</span></code></a>(initTable[, criterion, initTempDep, ...])</p></td>
-<td><p>This method creates a ContactDamage object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactProperty.ContactProperty.Damping" title="abaqus.Interaction.ContactProperty.ContactProperty.Damping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Damping</span></code></a>([definition, tangentFraction, ...])</p></td>
-<td><p>This method creates a ContactDamping object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactProperty.ContactProperty.ElectricalConductance" title="abaqus.Interaction.ContactProperty.ContactProperty.ElectricalConductance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ElectricalConductance</span></code></a>([definition, ...])</p></td>
-<td><p>This method creates a GapElectricalConductance object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactProperty.ContactProperty.FractureCriterion" title="abaqus.Interaction.ContactProperty.ContactProperty.FractureCriterion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FractureCriterion</span></code></a>(initTable[, type, ...])</p></td>
-<td><p>This method creates a FractureCriterion object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactProperty.ContactProperty.GeometricProperties" title="abaqus.Interaction.ContactProperty.ContactProperty.GeometricProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeometricProperties</span></code></a>([contactArea, ...])</p></td>
-<td><p>This method creates a GeometricProperties object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactProperty.ContactProperty.HeatGeneration" title="abaqus.Interaction.ContactProperty.ContactProperty.HeatGeneration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HeatGeneration</span></code></a>([conversionFraction, ...])</p></td>
-<td><p>This method creates a GapHeatGeneration object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactProperty.ContactProperty.NormalBehavior" title="abaqus.Interaction.ContactProperty.ContactProperty.NormalBehavior"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NormalBehavior</span></code></a>([contactStiffness, ...])</p></td>
-<td><p>This method creates a NormalBehavior object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactProperty.ContactProperty.Radiation" title="abaqus.Interaction.ContactProperty.ContactProperty.Radiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Radiation</span></code></a>(mainEmissivity, ...)</p></td>
-<td><p>This method creates a Radiation object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactProperty.ContactProperty.TangentialBehavior" title="abaqus.Interaction.ContactProperty.ContactProperty.TangentialBehavior"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TangentialBehavior</span></code></a>([formulation, ...])</p></td>
-<td><p>This method creates a ContactTangentialBehavior object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactProperty.ContactProperty.ThermalConductance" title="abaqus.Interaction.ContactProperty.ContactProperty.ThermalConductance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ThermalConductance</span></code></a>([definition, ...])</p></td>
-<td><p>This method creates a ThermalConductance object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -4297,26 +4455,6 @@ object has no constructor or members.</p>
 <li><p>CONTACT PROPERTY ASSIGNMENT</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment.appendInStep" title="abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment.appendInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">appendInStep</span></code></a>(stepName, assignments)</p></td>
-<td><p>This method allows addition of contact property assignments to new domain pairs in a given step.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment.changeValuesInStep" title="abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment.changeValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">changeValuesInStep</span></code></a>(stepName, index, value)</p></td>
-<td><p>This method allows modification of contact property assignments to domain pairs already defined in a given step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment.delete" title="abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices, surfPair)</p></td>
-<td><p>The delete method allows you to delete existing contact property assignments.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4449,35 +4587,6 @@ The methods are described below.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">interactions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.Interaction.Interaction.deactivate" title="abaqus.Interaction.Interaction.Interaction.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
-<td><p>This method deactivates the interaction in the specified step and all its subsequent steps.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.Interaction.Interaction.delete" title="abaqus.Interaction.Interaction.Interaction.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
-<td><p>This method allows you to delete existing interactions.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.Interaction.Interaction.move" title="abaqus.Interaction.Interaction.Interaction.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
-<td><p>This method moves an interaction from one step to another.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.Interaction.Interaction.reset" title="abaqus.Interaction.Interaction.Interaction.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
-<td><p>This method reactivates an interaction that was deactivated previously.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.Interaction.Interaction.resume" title="abaqus.Interaction.Interaction.Interaction.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
-<td><p>This method resumes an interaction that was previously suppressed.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.Interaction.Interaction.suppress" title="abaqus.Interaction.Interaction.Interaction.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
-<td><p>This method suppresses an interaction.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -4628,26 +4737,6 @@ InitializationAssignment object has no constructor or members.</p>
 <li><p>CONTACT INITIALIZATION ASSIGNMENT</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.InitializationAssignment.InitializationAssignment.appendInStep" title="abaqus.Interaction.InitializationAssignment.InitializationAssignment.appendInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">appendInStep</span></code></a>(stepName, assignments)</p></td>
-<td><p>This method allows addition of contact initialization assignments to new domain pairs in a given step.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.InitializationAssignment.InitializationAssignment.changeValuesInStep" title="abaqus.Interaction.InitializationAssignment.InitializationAssignment.changeValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">changeValuesInStep</span></code></a>(stepName, index, value)</p></td>
-<td><p>This method allows modification of contact initialization assignments to domain pairs already defined in a given step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.InitializationAssignment.InitializationAssignment.delete" title="abaqus.Interaction.InitializationAssignment.InitializationAssignment.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
-<td><p>The delete method allows you to delete existing contact initialization assignments from a ContactStd or ContactExp object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4773,13 +4862,6 @@ InteractionState object are common to all objects derived from InteractionState.
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4837,23 +4919,6 @@ The AcousticImpedance object is derived from the Interaction object.</p>
 <ul class="simple">
 <li><p>SIMPEDANCE</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.AcousticImpedance.AcousticImpedance.setValues" title="abaqus.Interaction.AcousticImpedance.AcousticImpedance.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([definition, interactionProperty, ...])</p></td>
-<td><p>This method modifies the data for an existing AcousticImpedance object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.AcousticImpedance.AcousticImpedance.setValuesInStep" title="abaqus.Interaction.AcousticImpedance.AcousticImpedance.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, interactionProperty])</p></td>
-<td><p>This method modifies the propagating data for an existing AcousticImpedance object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -5116,20 +5181,6 @@ The AcousticImpedanceProp object is derived from the InteractionProperty object.
 <li><p>IMPEDANCE PROPERTY</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp.setValues" title="abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([frequencyDependency])</p></td>
-<td><p>This method modifies the AcousticImpedanceProp object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -5327,14 +5378,6 @@ The AcousticImpedanceState object is derived from the InteractionState object.</
 <li><p>SIMPEDANCE</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>interactionPropertyState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -5433,20 +5476,6 @@ The ActuatorSensor object is derived from the Interaction object.</p>
 </dl>
 </li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ActuatorSensor.ActuatorSensor.setValues" title="abaqus.Interaction.ActuatorSensor.ActuatorSensor.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ActuatorSensor object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -5597,20 +5626,6 @@ The ActuatorSensorProp object is derived from the InteractionProperty object.</p
 <ul class="simple">
 <li><p>UEL PROPERTY</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp.setValues" title="abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([realProperties, integerProperties])</p></td>
-<td><p>This method modifies the ActuatorSensorProp object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -5799,13 +5814,6 @@ The ActuatorSensorState object is derived from the InteractionState object.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -5887,33 +5895,6 @@ The CavityRadiation object is derived from the Interaction object.</p>
 </dl>
 </li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>ambientTemp</strong></dt><dd></dd>
-<dt><strong>periodicDistZ</strong></dt><dd></dd>
-<dt><strong>periodicSymZ</strong></dt><dd></dd>
-<dt><strong>reflectionSymZ</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.CavityRadiation.CavityRadiation.setValues" title="abaqus.Interaction.CavityRadiation.CavityRadiation.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([surfaceEmissivities, ...])</p></td>
-<td><p>This method modifies the data for an existing CavityRadiation object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.CavityRadiation.CavityRadiation.setValuesInStep" title="abaqus.Interaction.CavityRadiation.CavityRadiation.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, blocking, ...])</p></td>
-<td><p>This method modifies the propagating data of an existing CavityRadiation object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -6465,20 +6446,6 @@ The CavityRadiationProp object is derived from the InteractionProperty object.</
 <li><p>EMISSIVITY</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.CavityRadiationProp.CavityRadiationProp.setValues" title="abaqus.Interaction.CavityRadiationProp.CavityRadiationProp.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([temperatureDependency, ...])</p></td>
-<td><p>This method modifies the CavityRadiationProp object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -6681,21 +6648,6 @@ The CavityRadiationState object is derived from the InteractionState object.</p>
 <li><p>RADIATION VIEWFACTOR</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>blocking</strong></dt><dd></dd>
-<dt><strong>blockingState</strong></dt><dd></dd>
-<dt><strong>blockingSurfacesState</strong></dt><dd></dd>
-<dt><strong>rangeOfView</strong></dt><dd></dd>
-<dt><strong>rangeOfViewState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-<dt><strong>surfaceReflectionState</strong></dt><dd></dd>
-<dt><strong>viewfactorAccuracyTol</strong></dt><dd></dd>
-<dt><strong>viewfactorAccuracyTolState</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -6886,20 +6838,6 @@ member. Possible values are UNSET, SET, UNCHANGED, and FREED.</p>
 <li><p>COHESIVE BEHAVIOR</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.CohesiveBehavior.CohesiveBehavior.setValues" title="abaqus.Interaction.CohesiveBehavior.CohesiveBehavior.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the CohesiveBehavior object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -7029,23 +6967,6 @@ The ConcentratedFilmCondition object is derived from the Interaction object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">interactions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition.setValues" title="abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([nodalArea, explicitRegionType, ...])</p></td>
-<td><p>This method modifies the data for an existing ConcentratedFilmCondition object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition.setValuesInStep" title="abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName)</p></td>
-<td><p>This method modifies the propagating data of an existing ConcentratedFilmCondition object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -7357,22 +7278,6 @@ The ConcentratedFilmConditionState object is derived from the InteractionState o
 <li><p>CFILM</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>filmCoeff</strong></dt><dd></dd>
-<dt><strong>filmCoeffAmplitudeState</strong></dt><dd></dd>
-<dt><strong>filmCoeffState</strong></dt><dd></dd>
-<dt><strong>interactionPropertyState</strong></dt><dd></dd>
-<dt><strong>nodalArea</strong></dt><dd></dd>
-<dt><strong>nodalAreaState</strong></dt><dd></dd>
-<dt><strong>sinkAmplitudeState</strong></dt><dd></dd>
-<dt><strong>sinkTemperature</strong></dt><dd></dd>
-<dt><strong>sinkTemperatureState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -7556,23 +7461,6 @@ The ConcentratedRadiationToAmbient object is derived from the Interaction object
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">interactions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient.setValues" title="abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([nodalArea, explicitRegionType, ...])</p></td>
-<td><p>This method modifies the data for an existing ConcentratedRadiationToAmbient object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient.setValuesInStep" title="abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, nodalArea, ...])</p></td>
-<td><p>This method modifies the propagating data of an existing ConcentratedRadiationToAmbient object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -7810,20 +7698,6 @@ object.</p>
 <li><p>CRADIATE</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>ambientTemperature</strong></dt><dd></dd>
-<dt><strong>ambientTemperatureAmpState</strong></dt><dd></dd>
-<dt><strong>ambientTemperatureState</strong></dt><dd></dd>
-<dt><strong>emissivity</strong></dt><dd></dd>
-<dt><strong>emissivityState</strong></dt><dd></dd>
-<dt><strong>nodalArea</strong></dt><dd></dd>
-<dt><strong>nodalAreaState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -8449,29 +8323,6 @@ interaction property.</p>
 <li><p>CHANGE FRICTION</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>elasticSlipStiffness</strong></dt><dd></dd>
-<dt><strong>shearStressLimit</strong></dt><dd></dd>
-<dt><strong>table</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior.setValues" title="abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ContactTangentialBehavior object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -8687,26 +8538,6 @@ The CyclicSymmetry object is derived from the Interaction object.</p>
 </dl>
 </li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.CyclicSymmetry.CyclicSymmetry.setValues" title="abaqus.Interaction.CyclicSymmetry.CyclicSymmetry.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([extractedNodalDiameter, ...])</p></td>
-<td><p>This method modifies the data for an existing CyclicSymmetry object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.CyclicSymmetry.CyclicSymmetry.setValuesInStep" title="abaqus.Interaction.CyclicSymmetry.CyclicSymmetry.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, ...])</p></td>
-<td><p>This method modifies the propagating data of an existing CyclicSymmetry object in the specified step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.CyclicSymmetry.CyclicSymmetry.swapSurfaces" title="abaqus.Interaction.CyclicSymmetry.CyclicSymmetry.swapSurfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">swapSurfaces</span></code></a>()</p></td>
-<td><p>This method switches the main and secondary surfaces of a cyclic symmetry interaction.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -9021,17 +8852,6 @@ The CyclicSymmetryState object is derived from the InteractionState object.</p>
 </li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>excitiationNodalDiameterState</strong></dt><dd></dd>
-<dt><strong>extractedNodalDiameterState</strong></dt><dd></dd>
-<dt><strong>highestNodalDiameterState</strong></dt><dd></dd>
-<dt><strong>lowestNodalDiameterState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -9188,23 +9008,6 @@ The ElasticFoundation object is derived from the Interaction object.</p>
 <li><p>FOUNDATION</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ElasticFoundation.ElasticFoundation.setValues" title="abaqus.Interaction.ElasticFoundation.ElasticFoundation.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the data for an existing ElasticFoundation object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.ElasticFoundation.ElasticFoundation.setValuesInStep" title="abaqus.Interaction.ElasticFoundation.ElasticFoundation.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, stiffness])</p></td>
-<td><p>This method modifies the propagating data of an existing ElasticFoundation object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Interaction</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
@@ -9337,15 +9140,6 @@ The ElasticFoundationState object is derived from the InteractionState object.</
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>status</strong></dt><dd></dd>
-<dt><strong>stiffness</strong></dt><dd></dd>
-<dt><strong>stiffnessState</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -9435,27 +9229,6 @@ The ExpContactControl object is derived from the ContactControl object.</p>
 <ul class="simple">
 <li><p>CONTACT CONTROLS</p></li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>globTrkInc</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ExpContactControl.ExpContactControl.setValues" title="abaqus.Interaction.ExpContactControl.ExpContactControl.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([globTrkChoice, globTrkInc, ...])</p></td>
-<td><p>This method modifies the ExpContactControl object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -9615,23 +9388,6 @@ The FilmCondition object is derived from the Interaction object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">interactions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.FilmCondition.FilmCondition.setValues" title="abaqus.Interaction.FilmCondition.FilmCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([interactionProperty, ...])</p></td>
-<td><p>This method modifies the data for an existing FilmCondition object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.FilmCondition.FilmCondition.setValuesInStep" title="abaqus.Interaction.FilmCondition.FilmCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName)</p></td>
-<td><p>This method modifies the propagating data of an existing FilmCondition object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -9909,20 +9665,6 @@ The FilmConditionProp object is derived from the InteractionProperty object.</p>
 <li><p>FILM PROPERTY</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.FilmConditionProp.FilmConditionProp.setValues" title="abaqus.Interaction.FilmConditionProp.FilmConditionProp.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([temperatureDependency, ...])</p></td>
-<td><p>This method modifies the FilmConditionProp object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -10141,20 +9883,6 @@ The FilmConditionState object is derived from the InteractionState object.</p>
 </li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>filmCoeff</strong></dt><dd></dd>
-<dt><strong>filmCoeffAmplitudeState</strong></dt><dd></dd>
-<dt><strong>filmCoeffState</strong></dt><dd></dd>
-<dt><strong>interactionPropertyState</strong></dt><dd></dd>
-<dt><strong>sinkAmplitudeState</strong></dt><dd></dd>
-<dt><strong>sinkTemperature</strong></dt><dd></dd>
-<dt><strong>sinkTemperatureState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -10321,20 +10049,6 @@ The FluidCavity object is derived from the Interaction object.</p>
 <ul class="simple">
 <li><p>FLUID CAVITY</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.FluidCavity.FluidCavity.setValues" title="abaqus.Interaction.FluidCavity.FluidCavity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([ambientPressure, thickness, ...])</p></td>
-<td><p>This method modifies the FluidCavity object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -10530,28 +10244,6 @@ The FluidCavityProperty object is derived from the InteractionProperty object.</
 </dl>
 </li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>fluidDensity</strong></dt><dd></dd>
-<dt><strong>molecularWeight</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.setValues" title="abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([definition, fluidDensity, ...])</p></td>
-<td><p>This method modifies the FluidCavityProperty object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -11025,13 +10717,6 @@ The FluidCavityState object is derived from the InteractionState object.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -11102,20 +10787,6 @@ The FluidExchange object is derived from the Interaction object.</p>
 <ul class="simple">
 <li><p>FLUID EXCHANGE</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.FluidExchange.FluidExchange.setValues" title="abaqus.Interaction.FluidExchange.FluidExchange.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([definition, secondCavity, ...])</p></td>
-<td><p>This method modifies the FluidExchange object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -11282,20 +10953,6 @@ The FluidExchangeProperty object is derived from the InteractionProperty object.
 <ul class="simple">
 <li><p>FLUID EXCHANGE PROPERTY</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty.setValues" title="abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([definition, pressureDependency, ...])</p></td>
-<td><p>This method modifies the FluidExchangeProperty object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -11573,13 +11230,6 @@ The FluidExchangeState object is derived from the InteractionState object.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -11711,20 +11361,6 @@ interaction property.</p>
 <ul class="simple">
 <li><p>FRACTURE CRITERION</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.setValues" title="abaqus.Interaction.FractureCriterion.FractureCriterion.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the FractureCriterion object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -11887,20 +11523,6 @@ interaction property.</p>
 <li><p>GAP ELECTRICAL CONDUCTANCE</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.setValues" title="abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the GapElectricalConductance object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -12050,20 +11672,6 @@ property.</p>
 <li><p>GAP HEAT GENERATION</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.GapHeatGeneration.GapHeatGeneration.setValues" title="abaqus.Interaction.GapHeatGeneration.GapHeatGeneration.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the GapHeatGeneration object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -12143,29 +11751,6 @@ The default value is 0.5.</p>
 <ul class="simple">
 <li><p>SURFACE INTERACTION</p></li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>modelType</strong></dt><dd></dd>
-<dt><strong>padThickness</strong></dt><dd></dd>
-<dt><strong>trackingThickness</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.GeometricProperties.GeometricProperties.setValues" title="abaqus.Interaction.GeometricProperties.GeometricProperties.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the GeometricProperties object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -12303,29 +11888,6 @@ The IncidentWave object is derived from the Interaction object.</p>
 <ul class="simple">
 <li><p>INCIDENT WAVE INTERACTION</p></li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>detonationTime</strong></dt><dd></dd>
-<dt><strong>initialDepth</strong></dt><dd></dd>
-<dt><strong>referenceMagnitude</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.IncidentWave.IncidentWave.setValues" title="abaqus.Interaction.IncidentWave.IncidentWave.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([definition, amplitude, ...])</p></td>
-<td><p>This method modifies the IncidentWave object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -12595,44 +12157,6 @@ The IncidentWaveProperty object is derived from the InteractionProperty object.<
 </dl>
 </li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>absoluteStepControl</strong></dt><dd></dd>
-<dt><strong>atmosphericPressure</strong></dt><dd></dd>
-<dt><strong>chargeDensity</strong></dt><dd></dd>
-<dt><strong>chargeMass</strong></dt><dd></dd>
-<dt><strong>constantA</strong></dt><dd></dd>
-<dt><strong>constantB</strong></dt><dd></dd>
-<dt><strong>constantK1</strong></dt><dd></dd>
-<dt><strong>constantK2</strong></dt><dd></dd>
-<dt><strong>constantKc</strong></dt><dd></dd>
-<dt><strong>dragCoefficient</strong></dt><dd></dd>
-<dt><strong>duration</strong></dt><dd></dd>
-<dt><strong>fluidDensity</strong></dt><dd></dd>
-<dt><strong>gravity</strong></dt><dd></dd>
-<dt><strong>massTNT</strong></dt><dd></dd>
-<dt><strong>relativeStepControl</strong></dt><dd></dd>
-<dt><strong>seedNumber</strong></dt><dd></dd>
-<dt><strong>soundSpeed</strong></dt><dd></dd>
-<dt><strong>specificHeatRatio</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty.setValues" title="abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([definition, propagationModel, ...])</p></td>
-<td><p>This method modifies the IncidentWaveProperty object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -13246,13 +12770,6 @@ The IncidentWaveState object is derived from the InteractionState object.</p>
 <li><p>INCIDENT WAVE INTERACTION</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -13313,26 +12830,6 @@ constructor or members.</p>
 <ul class="simple">
 <li><p>CONTACT FORMULATION</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment.appendInStep" title="abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment.appendInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">appendInStep</span></code></a>(stepName, assignments)</p></td>
-<td><p>This method allows addition of main-secondary assignments to new surface pairs in a given step.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment.changeValuesInStep" title="abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment.changeValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">changeValuesInStep</span></code></a>(stepName, index, value)</p></td>
-<td><p>This method allows modification of main-secondary assignments already defined on surface pairs in a given step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment.delete" title="abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
-<td><p>The delete method allows you to delete existing main-secondary assignments.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -13445,30 +12942,6 @@ The ModelChange object is derived from the Interaction object.</p>
 <ul class="simple">
 <li><p>MODEL CHANGE</p></li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>region</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ModelChange.ModelChange.setValues" title="abaqus.Interaction.ModelChange.ModelChange.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([isRestart, regionType, region, ...])</p></td>
-<td><p>This method modifies the data for an existing ModelChange object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.ModelChange.ModelChange.setValuesInStep" title="abaqus.Interaction.ModelChange.ModelChange.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, activeInStep, ...])</p></td>
-<td><p>This method modifies the propagating data of an existing ModelChange object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -13699,27 +13172,6 @@ default value is OFF.</p>
 <li><p>SURFACE BEHAVIOR</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>maxStiffness</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.NormalBehavior.NormalBehavior.setValues" title="abaqus.Interaction.NormalBehavior.NormalBehavior.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the NormalBehavior object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -13944,23 +13396,6 @@ The PressurePenetration object is derived from the Interaction object.</p>
 <li><p>PRESSURE PENETRATION</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.PressurePenetration.PressurePenetration.setValues" title="abaqus.Interaction.PressurePenetration.PressurePenetration.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([amplitude, penetrationTime])</p></td>
-<td><p>This method modifies the data for an existing PressurePenetration object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.PressurePenetration.PressurePenetration.setValuesInStep" title="abaqus.Interaction.PressurePenetration.PressurePenetration.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing PressurePenetration object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -14164,20 +13599,6 @@ The PressurePenetrationState object is derived from the InteractionState object.
 <li><p>PRESSURE PENETRATION</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>criticalPressure</strong></dt><dd></dd>
-<dt><strong>criticalPressureState</strong></dt><dd></dd>
-<dt><strong>penetrationPressure</strong></dt><dd></dd>
-<dt><strong>penetrationPressureState</strong></dt><dd></dd>
-<dt><strong>penetrationTime</strong></dt><dd></dd>
-<dt><strong>penetrationTimeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -14328,20 +13749,6 @@ Possible values are:</p>
 <li><p>GAP RADIATION</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.Radiation.Radiation.setValues" title="abaqus.Interaction.Radiation.Radiation.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the Radiation object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -14405,23 +13812,6 @@ The RadiationToAmbient object is derived from the Interaction object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">interactions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.RadiationToAmbient.RadiationToAmbient.setValues" title="abaqus.Interaction.RadiationToAmbient.RadiationToAmbient.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([field, distributionType, ...])</p></td>
-<td><p>This method modifies the data for an existing RadiationToAmbient object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.RadiationToAmbient.RadiationToAmbient.setValuesInStep" title="abaqus.Interaction.RadiationToAmbient.RadiationToAmbient.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName)</p></td>
-<td><p>This method modifies the propagating data of an existing RadiationToAmbient object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -14652,18 +14042,6 @@ The RadiationToAmbientState object is derived from the InteractionState object.<
 <li><p>SRADIATE</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>ambientTemperature</strong></dt><dd></dd>
-<dt><strong>ambientTemperatureAmpState</strong></dt><dd></dd>
-<dt><strong>ambientTemperatureState</strong></dt><dd></dd>
-<dt><strong>emissivity</strong></dt><dd></dd>
-<dt><strong>emissivityState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -14799,20 +14177,6 @@ objects. The RegionPairs object has no constructor or members.</p>
 </li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.RegionPairs.RegionPairs.setValuesInStep" title="abaqus.Interaction.RegionPairs.RegionPairs.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, useAllstar, ...])</p></td>
-<td><p>This method allows addition and removal of domain pairs in a given step.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -14878,23 +14242,6 @@ The SelfContactExp object is derived from the Interaction object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">interactions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.SelfContactExp.SelfContactExp.setValues" title="abaqus.Interaction.SelfContactExp.SelfContactExp.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([mechanicalConstraint, ...])</p></td>
-<td><p>This method modifies the data for an existing SelfContactExp object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.SelfContactExp.SelfContactExp.setValuesInStep" title="abaqus.Interaction.SelfContactExp.SelfContactExp.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing SelfContactExp object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -15087,15 +14434,6 @@ The SelfContactExpState object is derived from the InteractionState object.</p>
 </li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>contactControlsState</strong></dt><dd></dd>
-<dt><strong>interactionPropertyState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -15201,23 +14539,6 @@ The SelfContactStd object is derived from the Interaction object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">interactions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.SelfContactStd.SelfContactStd.setValues" title="abaqus.Interaction.SelfContactStd.SelfContactStd.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([enforcement, thickness, smooth, ...])</p></td>
-<td><p>This method modifies the data for an existing SelfContactStd object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.SelfContactStd.SelfContactStd.setValuesInStep" title="abaqus.Interaction.SelfContactStd.SelfContactStd.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, ...])</p></td>
-<td><p>This method modifies the propagating data of an existing SelfContactStd object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -15462,15 +14783,6 @@ The SelfContactStdState object is derived from the InteractionState object.</p>
 </li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>contactControlsState</strong></dt><dd></dd>
-<dt><strong>interactionPropertyState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -15581,26 +14893,6 @@ has no constructor or members.</p>
 <li><p>CONTACT FORMULATION</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment.appendInStep" title="abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment.appendInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">appendInStep</span></code></a>(stepName, assignments)</p></td>
-<td><p>This method allows you to add sliding transition assignments to new surface pairs in a given step.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment.changeValuesInStep" title="abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment.changeValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">changeValuesInStep</span></code></a>(stepName, index, value)</p></td>
-<td><p>This method allows you to modify sliding transition assignments already defined on surface pairs in a given step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment.delete" title="abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
-<td><p>The delete method allows you to delete existing sliding transition assignments.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -15705,26 +14997,6 @@ constructor or members.</p>
 <ul class="simple">
 <li><p>SURFACE PROPERTY ASSIGNMENT</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.appendInStep" title="abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.appendInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">appendInStep</span></code></a>(stepName, assignments)</p></td>
-<td><p>This method allows addition of surface smoothing assignments to new surfaces in a given step.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.changeValuesInStep" title="abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.changeValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">changeValuesInStep</span></code></a>(stepName, index, value)</p></td>
-<td><p>This method allows modification of surface smoothing assignments already defined on surfaces in a given step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.delete" title="abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
-<td><p>The delete method allows you to delete existing surface smoothing assignments from ContactExp and ContactStd objects.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -15835,26 +15107,6 @@ has no constructor or members.</p>
 <li><p>CONTACT STABILIZATION</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.StabilizationAssignment.StabilizationAssignment.appendInStep" title="abaqus.Interaction.StabilizationAssignment.StabilizationAssignment.appendInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">appendInStep</span></code></a>(stepName, assignments)</p></td>
-<td><p>This method allows addition of contact stabilization assignments to new domain pairs in a given step.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.StabilizationAssignment.StabilizationAssignment.changeValuesInStep" title="abaqus.Interaction.StabilizationAssignment.StabilizationAssignment.changeValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">changeValuesInStep</span></code></a>(stepName, index, value)</p></td>
-<td><p>This method allows modification of contact stabilization assignments to domain pairs already defined in a given step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.StabilizationAssignment.StabilizationAssignment.delete" title="abaqus.Interaction.StabilizationAssignment.StabilizationAssignment.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
-<td><p>The delete method allows you to delete existing contact stabilization assignments from a ContactStd object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -15960,30 +15212,6 @@ The StdContactControl object is derived from the ContactControl object.</p>
 <ul class="simple">
 <li><p>CONTACT CONTROLS</p></li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>absolutePenetrationTolerance</strong></dt><dd></dd>
-<dt><strong>frictionOnset</strong></dt><dd></dd>
-<dt><strong>relativePenetrationTolerance</strong></dt><dd></dd>
-<dt><strong>zeroDamping</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.StdContactControl.StdContactControl.setValues" title="abaqus.Interaction.StdContactControl.StdContactControl.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([stiffnessScaleFactor, ...])</p></td>
-<td><p>This method modifies the StdContactControl object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -16345,30 +15573,6 @@ The StdInitialization object is derived from the ContactInitialization object.</
 <li><p>CONTACT INITIALIZATION DATA</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>clearanceDistance</strong></dt><dd></dd>
-<dt><strong>interferenceDistance</strong></dt><dd></dd>
-<dt><strong>openingTolerance</strong></dt><dd></dd>
-<dt><strong>overclosureTolerance</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.StdInitialization.StdInitialization.setValues" title="abaqus.Interaction.StdInitialization.StdInitialization.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([overclosureType, ...])</p></td>
-<td><p>This method modifies the StdInitialization object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -16518,27 +15722,6 @@ The StdStabilization object is derived from the ContactStabilization object.</p>
 <ul class="simple">
 <li><p>CONTACT STABILIZATION</p></li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>zeroDistance</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.StdStabilization.StdStabilization.setValues" title="abaqus.Interaction.StdStabilization.StdStabilization.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([zeroDistance, reductionFactor, ...])</p></td>
-<td><p>This method modifies the StdStabilization object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -16694,20 +15877,6 @@ The StdXplCosimulation object is derived from the Interaction object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">interactions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.StdXplCosimulation.StdXplCosimulation.setValues" title="abaqus.Interaction.StdXplCosimulation.StdXplCosimulation.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([incrementation, stepSize, ...])</p></td>
-<td><p>This method modifies the StdXplCosimulation object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -16887,13 +16056,6 @@ The StdXplCosimulationState object is derived from the InteractionState object.<
 </li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -16964,26 +16126,6 @@ SurfaceFeatureAssignment object has no constructor or members.</p>
 <ul class="simple">
 <li><p>SURFACE PROPERTY ASSIGNMENT</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep" title="abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">appendInStep</span></code></a>(stepName, assignments)</p></td>
-<td><p>This method allows addition of surface feature angle assignments to new surfaces in a given step.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep" title="abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">changeValuesInStep</span></code></a>(stepName, index, value)</p></td>
-<td><p>This method allows modification of surface feature angle assignments already defined on surfaces in a given step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.delete" title="abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
-<td><p>The delete method allows you to delete existing surface feature angle assignments from a ContactExp object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -17117,26 +16259,6 @@ SurfaceOffsetAssignment object has no constructor or members.</p>
 <li><p>SURFACE PROPERTY ASSIGNMENT</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment.appendInStep" title="abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment.appendInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">appendInStep</span></code></a>(stepName, assignments)</p></td>
-<td><p>This method allows addition of surface offset fraction assignments to new surfaces in a given step.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment.changeValuesInStep" title="abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment.changeValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">changeValuesInStep</span></code></a>(stepName, index, value)</p></td>
-<td><p>This method allows modification of surface offset fraction assignments already defined on surfaces in a given step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment.delete" title="abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
-<td><p>The delete method allows you to delete existing surface offset fraction assignments.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -17248,26 +16370,6 @@ has no constructor or members.</p>
 <ul class="simple">
 <li><p>SURFACE PROPERTY ASSIGNMENT</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.appendInStep" title="abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.appendInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">appendInStep</span></code></a>(stepName, assignments)</p></td>
-<td><p>This method allows addition of surface thickness assignments to new surfaces in a given step.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.changeValuesInStep" title="abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.changeValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">changeValuesInStep</span></code></a>(stepName, index, value)</p></td>
-<td><p>This method allows modification of surface thickness assignments already defined on surfaces in a given step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.delete" title="abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
-<td><p>The delete method allows you to delete existing surface thickness assignments.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -17385,36 +16487,6 @@ The SurfaceToSurfaceContactExp object is derived from the Interaction object.</p
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">interactions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>clearanceRegion</strong></dt><dd></dd>
-<dt><strong>datumAxis</strong></dt><dd></dd>
-<dt><strong>halfThreadAngle</strong></dt><dd></dd>
-<dt><strong>pitch</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp.setValues" title="abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([mechanicalConstraint, ...])</p></td>
-<td><p>This method modifies the data for an existing SurfaceToSurfaceContactExp object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp.setValuesInStep" title="abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing SurfaceToSurfaceContactExp object in the specified step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp.swapSurfaces" title="abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp.swapSurfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">swapSurfaces</span></code></a>()</p></td>
-<td><p>This method switches the main and secondary surfaces of a surface-to-surface contact pair.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -17745,38 +16817,6 @@ The SurfaceToSurfaceContactStd object is derived from the Interaction object.</p
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">interactions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>adjustSet</strong></dt><dd></dd>
-<dt><strong>bondingSet</strong></dt><dd></dd>
-<dt><strong>clearanceRegion</strong></dt><dd></dd>
-<dt><strong>datumAxis</strong></dt><dd></dd>
-<dt><strong>halfThreadAngle</strong></dt><dd></dd>
-<dt><strong>pitch</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValues" title="abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([interferenceType, overclosure, ...])</p></td>
-<td><p>This method modifies the data for an existing SurfaceToSurfaceContactStd object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValuesInStep" title="abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing SurfaceToSurfaceContactStd object in the specified step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.swapSurfaces" title="abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.swapSurfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">swapSurfaces</span></code></a>()</p></td>
-<td><p>This method switches the main and secondary surfaces of a surface-to-surface contact pair.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -18383,15 +17423,6 @@ The SurfaceToSurfaceExpState object is derived from the InteractionState object.
 </li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>contactControlsState</strong></dt><dd></dd>
-<dt><strong>interactionPropertyState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -18513,24 +17544,6 @@ The SurfaceToSurfaceStdState object is derived from the InteractionState object.
 </li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>contactControlsState</strong></dt><dd></dd>
-<dt><strong>direction</strong></dt><dd></dd>
-<dt><strong>directionState</strong></dt><dd></dd>
-<dt><strong>interactionPropertyState</strong></dt><dd></dd>
-<dt><strong>interferenceDirectionType</strong></dt><dd></dd>
-<dt><strong>interferenceDirectionTypeState</strong></dt><dd></dd>
-<dt><strong>interferenceType</strong></dt><dd></dd>
-<dt><strong>interferenceTypeState</strong></dt><dd></dd>
-<dt><strong>overclosure</strong></dt><dd></dd>
-<dt><strong>overclosureState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -18767,20 +17780,6 @@ property.</p>
 <li><p>GAP CONDUCTANCE</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.ThermalConductance.ThermalConductance.setValues" title="abaqus.Interaction.ThermalConductance.ThermalConductance.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ThermalConductance object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -18950,23 +17949,6 @@ The XFEMCrackGrowth object is derived from the Interaction object.</p>
 <li><p>ENRICHMENT ACTIVATION</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth.setValues" title="abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([allowGrowth])</p></td>
-<td><p>This method modifies the data for an existing XFEMCrackGrowth object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth.setValuesInStep" title="abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, allowGrowth])</p></td>
-<td><p>This method modifies the propagating data for an existing XFEMCrackGrowth object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -19126,14 +18108,6 @@ The XFEMCrackGrowthState object is derived from the InteractionState object.</p>
 <li><p>ENRICHMENT ACTIVATION</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>allowGrowthState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">

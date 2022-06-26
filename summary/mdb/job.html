@@ -515,9 +515,115 @@ available.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">MdbBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">version</span></code></p></td>
+<td><p>An Int specifying the release number of the Mdb object in memory.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">lastChangedCount</span></code></p></td>
+<td><p>A Float specifying the value of a counter associated with the Mdb object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">jobs</span></code></p></td>
+<td><p>A repository of Job objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptivityProcesses</span></code></p></td>
+<td><p>A repository of AdaptivityProcess objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">coexecutions</span></code></p></td>
+<td><p>A repository of Coexecution objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimizationProcesses</span></code></p></td>
+<td><p>A repository of OptimizationProcess objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">meshEditOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/mdb/edit_mesh.html#abaqus.EditMesh.MeshEditOptions.MeshEditOptions" title="abaqus.EditMesh.MeshEditOptions.MeshEditOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshEditOptions</span></code></a> object specifying the undo/redo behavior when editing meshes on parts or part instances.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">models</span></code></p></td>
+<td><p>A repository of Model objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">customData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">annotations</span></code></p></td>
+<td><p>A repository of Annotation objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb.html#abaqus.Job.JobMdb.JobMdb.Job" title="abaqus.Job.JobMdb.JobMdb.Job"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Job</span></code></a>(name, model[, description, type, queue, ...])</p></td>
+<td><p>This method creates an analysis job using a model on a model database (MDB) for the model definition.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb.html#abaqus.Job.JobMdb.JobMdb.JobFromInputFile" title="abaqus.Job.JobMdb.JobMdb.JobFromInputFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">JobFromInputFile</span></code></a>(name, inputFileName[, ...])</p></td>
+<td><p>This method creates an analysis job using an input file for the model definition.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb.html#abaqus.Job.JobMdb.JobMdb.OptimizationProcess" title="abaqus.Job.JobMdb.JobMdb.OptimizationProcess"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OptimizationProcess</span></code></a>(name, model, task, ...)</p></td>
+<td><p>This method creates an OptimizationProcess object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">MdbBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([pathName])</p></td>
+<td><p>This constructor creates an empty Mdb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">importDxf</span></code>(fileName)</p></td>
+<td><p>This method creates a ConstrainedSketch object from a file containing dxf-format (AutoCAD) geometry.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">openMdb</span></code>(pathName)</p></td>
+<td><p>This method opens an existing model database file.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code>()</p></td>
+<td><p>This method closes an open Mdb object but does not save the Mdb object to disk.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code>()</p></td>
+<td><p>This method saves an Mdb object to disk at the location specified by <strong>pathName</strong> (<em>pathName</em> is a member of the Mdb object).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveAs</span></code>(pathName)</p></td>
+<td><p>This method saves an Mdb object to disk at the specified location.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">openAuxMdb</span></code>(pathName)</p></td>
+<td><p>This method opens an auxiliary Mdb object on the disk at the specified location.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">closeAuxMdb</span></code>()</p></td>
+<td><p>This method closes the auxiliary Mdb which had been opened earlier using the openAuxMdb command.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getAuxMdbModelNames</span></code>()</p></td>
+<td><p>This method returns a list of model names present in the auxiliary Mdb which had been opened earlier using the openAuxMdb command.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyAuxMdbModel</span></code>(fromName[, toName])</p></td>
+<td><p>This method copies a specified model from the auxiliary Mdb which had been opened earlier using the openAuxMdb command.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
 </dd></dl>
 
 </section>
+<hr class="docutils" />
 <section id="create-queues-in-session">
 <h2>Create queues in Session<a class="headerlink" href="#create-queues-in-session" title="Permalink to this headline">#</a></h2>
 <dl class="py method">
@@ -566,7 +672,7 @@ local machine. The default value is OFF.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.JobSession.JobSession.Queue" title="abaqus.Job.JobSession.JobSession.Queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Queue</span></code></a></dt><dd><p>A <a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Queue.Queue" title="abaqus.Job.Queue.Queue"><code class="xref py py-class docutils literal notranslate"><span class="pre">Queue</span></code></a> object.</p>
+<dt><a class="reference internal" href="../../reference/session.html#abaqus.Job.JobSession.JobSession.Queue" title="abaqus.Job.JobSession.JobSession.Queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Queue</span></code></a></dt><dd><p>A <a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Queue.Queue" title="abaqus.Job.Queue.Queue"><code class="xref py py-class docutils literal notranslate"><span class="pre">Queue</span></code></a> object.</p>
 </dd>
 </dl>
 </dd>
@@ -579,9 +685,307 @@ local machine. The default value is OFF.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">attachedToGui</span></code></p></td>
+<td><p>A Boolean specifying whether an Abaqus interactive session is running.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">replayInProgress</span></code></p></td>
+<td><p>A Boolean specifying whether Abaqus is executing a replay file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryFootprint</span></code></p></td>
+<td><p>A Float specifying the memory usage value for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryMaxFootprint</span></code></p></td>
+<td><p>A Float specifying the maximum value for the memory usage for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryLimit</span></code></p></td>
+<td><p>A Float specifying the limit for the memory use for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">colors</span></code></p></td>
+<td><p>A repository of Color objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">journalOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session.html#abaqus.Session.JournalOptions.JournalOptions" title="abaqus.Session.JournalOptions.JournalOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">JournalOptions</span></code></a> object specifying how to record selection of geometry in the journal and replay files.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">memoryReductionOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session.html#abaqus.Session.MemoryReductionOptions.MemoryReductionOptions" title="abaqus.Session.MemoryReductionOptions.MemoryReductionOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryReductionOptions</span></code></a> object specifying options for running in reduced memory mode.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeQuery</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/path.html#abaqus.PathAndProbe.NodeQuery.NodeQuery" title="abaqus.PathAndProbe.NodeQuery.NodeQuery"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeQuery</span></code></a> object specifying nodes and their coordinates in a path.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sketcherOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/mdb/model/sketcher.html#abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions" title="abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketcherOptions</span></code></a> object specifying common options for all sketches.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewerOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/odb_display.html#abaqus.OdbDisplay.ViewerOptions.ViewerOptions" title="abaqus.OdbDisplay.ViewerOptions.ViewerOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewerOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">animationOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../reference/session/animation.html#abaqus.Animation.AnimationOptions.AnimationOptions" title="abaqus.Animation.AnimationOptions.AnimationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnimationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">aviOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../reference/session/animation.html#abaqus.Animation.AVIOptions.AVIOptions" title="abaqus.Animation.AVIOptions.AVIOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AVIOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageAnimationOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../reference/session/animation.html#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions" title="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageAnimation</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../reference/session/animation.html#abaqus.Animation.ImageAnimation.ImageAnimation" title="abaqus.Animation.ImageAnimation.ImageAnimation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">quickTimeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/animation.html#abaqus.Animation.QuickTimeOptions.QuickTimeOptions" title="abaqus.Animation.QuickTimeOptions.QuickTimeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuickTimeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewports</span></code></p></td>
+<td><p>A repository of Viewport objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">customData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultFieldReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultFreeBodyReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodyReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbs</span></code></p></td>
+<td><p>A repository of Odb objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">scratchOdbs</span></code></p></td>
+<td><p>A repository of ScratchOdb objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultOdbDisplay</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/odb_display.html#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultOdbDisplay</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultPlot</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/xy.html#abaqus.XY.DefaultPlot.DefaultPlot" title="abaqus.XY.DefaultPlot.DefaultPlot"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultPlot</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultChartOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/xy.html#abaqus.XY.DefaultChartOptions.DefaultChartOptions" title="abaqus.XY.DefaultChartOptions.DefaultChartOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultChartOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbData</span></code></p></td>
+<td><p>A repository of OdbData objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mdbData</span></code></p></td>
+<td><p>A repository of MdbData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">paths</span></code></p></td>
+<td><p>A repository of Path objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodies</span></code></p></td>
+<td><p>A repository of FreeBody objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">streams</span></code></p></td>
+<td><p>A repository of Stream objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">spectrums</span></code></p></td>
+<td><p>A repository of Spectrum objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentProbeValues</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/path.html#abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues" title="abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues"><code class="xref py py-class docutils literal notranslate"><span class="pre">CurrentProbeValues</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultProbeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/path.html#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/path.html#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeReport</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/path.html#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeReport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultProbeReport</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/path.html#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeReport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectedProbeValues</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/path.html#abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues" title="abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectedProbeValues</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/print.html#abaqus.Print.PrintOptions.PrintOptions" title="abaqus.Print.PrintOptions.PrintOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PrintOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">epsOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../reference/session/print.html#abaqus.Print.EpsOptions.EpsOptions" title="abaqus.Print.EpsOptions.EpsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">EpsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pageSetupOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/print.html#abaqus.Print.PageSetupOptions.PageSetupOptions" title="abaqus.Print.PageSetupOptions.PageSetupOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PageSetupOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pngOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/print.html#abaqus.Print.PngOptions.PngOptions" title="abaqus.Print.PngOptions.PngOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PngOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">psOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/print.html#abaqus.Print.PsOptions.PsOptions" title="abaqus.Print.PsOptions.PsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">svgOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/print.html#abaqus.Print.SvgOptions.SvgOptions" title="abaqus.Print.SvgOptions.SvgOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">SvgOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tiffOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/mdb/model/predefined.html#abaqus.PredefinedField.TiffOptions.TiffOptions" title="abaqus.PredefinedField.TiffOptions.TiffOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">TiffOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoColors</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../reference/session.html#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoColors</span></code></a> object specifying the color palette to be used for color coding.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyColors</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../reference/session.html#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoColors</span></code></a> object specifying the color palette to be used forXYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyDataObjects</span></code></p></td>
+<td><p>A repository of XYData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">curves</span></code></p></td>
+<td><p>A repository of XYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyPlots</span></code></p></td>
+<td><p>A repository of XYPlot objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">charts</span></code></p></td>
+<td><p>A repository of Chart objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultXYReportOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../reference/session/xy.html#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyReportOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../reference/session/xy.html#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">views</span></code></p></td>
+<td><p>A repository of View objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">networkDatabaseConnectors</span></code></p></td>
+<td><p>A repository of NetworkDatabaseConnector objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayGroups</span></code></p></td>
+<td><p>A repository of DisplayGroup objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsInfo</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/display_options.html#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo" title="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsInfo</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultGraphicsOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultViewportAnnotationOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/display_options.html#abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions" title="abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportAnnotationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">queues</span></code></p></td>
+<td><p>A repository of Queue objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentViewportName</span></code></p></td>
+<td><p>A String specifying the name of the current viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sessionState</span></code></p></td>
+<td><p>A Dictionary object specifying the viewports and their associated models.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">images</span></code></p></td>
+<td><p>A repository of Image objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">movies</span></code></p></td>
+<td><p>A repository of Movie objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultLightOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/display_options.html#abaqus.DisplayOptions.LightOptions.LightOptions" title="abaqus.DisplayOptions.LightOptions.LightOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">LightOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawingArea</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/session/canvas.html#abaqus.Canvas.DrawingArea.DrawingArea" title="abaqus.Canvas.DrawingArea.DrawingArea"><code class="xref py py-class docutils literal notranslate"><span class="pre">DrawingArea</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultMesherOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../reference/mdb/model/mesh.html#abaqus.Mesh.MesherOptions.MesherOptions" title="abaqus.Mesh.MesherOptions.MesherOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MesherOptions</span></code></a> object specifying how to control default settings in the Mesh module.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawings</span></code></p></td>
+<td><p>A repository of Drawing objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/session.html#abaqus.Job.JobSession.JobSession.Queue" title="abaqus.Job.JobSession.JobSession.Queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Queue</span></code></a>(name, queueName[, hostName, fileCopy, ...])</p></td>
+<td><p>This method creates a Queue object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>([kernelMemoryLimit])</p></td>
+<td><p>This method modifies the Session object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableCADConnection</span></code>(CADName[, portNum])</p></td>
+<td><p>This method enables the Abaqus/CAE listening port for the specified <strong>CAD</strong> system.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isCADConnectionEnabled</span></code>()</p></td>
+<td><p>This method checks the status of CAD Connection.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableCADConnection</span></code>(CADName)</p></td>
+<td><p>This method disables an associative import CAD connection that was enabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableParameterUpdate</span></code>(CADName, CADVersion[, ...])</p></td>
+<td><p>This method enables parameter updates for ProE and NX by establishing a connection with the listening port previously setup by the CAD application.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setCADPortNumber</span></code>(CADName, Port)</p></td>
+<td><p>This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a connection with the listening port previously setup by the CAD application.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">updateCADParameters</span></code>(modelName, CADName, ...)</p></td>
+<td><p>This method updates the parameters for the specified model using the specified parameter file.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableParameterUpdate</span></code>(CADName)</p></td>
+<td><p>This method disables an associative CAD connection using parameters.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToFile</span></code>(fileName[, format, ...])</p></td>
+<td><p>This method prints canvas objects to a file using the attributes stored in the PrintOptions object and the appropriate format options object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToPrinter</span></code>([printCommand, numCopies, ...])</p></td>
+<td><p>This method prints canvas objects to a Windows printer or to a PostScript printer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveOptions</span></code>(directory)</p></td>
+<td><p>This method saves your customized display settings.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeVrmlFile</span></code>(fileName[, format, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">write3DXMLFile</span></code>(fileName[, format, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeOBJFile</span></code>(fileName[, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">openOdb</span></code>(name, *args, **kwargs)</p></td>
+<td><p>This method opens an existing output database (.odb) file and creates a new Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">exit</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
 </dd></dl>
 
 </section>
+<hr class="docutils" />
 <section id="job">
 <h2>Job<a class="headerlink" href="#job" title="Permalink to this headline">#</a></h2>
 <dl class="py class">
@@ -609,15 +1013,8 @@ objects derived from Job.</p>
 </li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>analysis</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <colgroup>
@@ -625,21 +1022,108 @@ objects derived from Job.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.clearMessage" title="abaqus.Job.Job.Job.clearMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clearMessage</span></code></a>()</p></td>
-<td><p>This method clears <strong>messages</strong> and sets the <strong>status</strong> to NONE.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.name" title="abaqus.Job.Job.Job.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the name of the new job.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.kill" title="abaqus.Job.Job.Job.kill"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kill</span></code></a>()</p></td>
-<td><p>This method kills the analysis of a job.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.type" title="abaqus.Job.Job.Job.type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of job.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.submit" title="abaqus.Job.Job.Job.submit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">submit</span></code></a>([consistencyChecking, datacheckJob, ...])</p></td>
-<td><p>This method submits a job for analysis.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.waitHours" title="abaqus.Job.Job.Job.waitHours"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitHours</span></code></a></p></td>
+<td><p>An Int specifying the number of hours to wait before submitting the job.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.waitForCompletion" title="abaqus.Job.Job.Job.waitForCompletion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitForCompletion</span></code></a>()</p></td>
-<td><p>This method interrupts the execution of the script until the end of the analysis.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.waitMinutes" title="abaqus.Job.Job.Job.waitMinutes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitMinutes</span></code></a></p></td>
+<td><p>An Int specifying the number of minutes to wait before submitting the job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.numCpus" title="abaqus.Job.Job.Job.numCpus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numCpus</span></code></a></p></td>
+<td><p>An Int specifying the number of CPUs to use for this analysis if parallel processing is available.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.memory" title="abaqus.Job.Job.Job.memory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">memory</span></code></a></p></td>
+<td><p>An Int specifying the amount of memory available to Abaqus analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.memoryUnits" title="abaqus.Job.Job.Job.memoryUnits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">memoryUnits</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the units for the amount of memory used in an Abaqus analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.getMemoryFromAnalysis" title="abaqus.Job.Job.Job.getMemoryFromAnalysis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMemoryFromAnalysis</span></code></a></p></td>
+<td><p>A Boolean specifying whether to retrieve the recommended memory settings from the last datacheck or analysis run and use those values in subsequent submissions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.explicitPrecision" title="abaqus.Job.Job.Job.explicitPrecision"><code class="xref py py-obj docutils literal notranslate"><span class="pre">explicitPrecision</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether to use the double precision version of Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.nodalOutputPrecision" title="abaqus.Job.Job.Job.nodalOutputPrecision"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodalOutputPrecision</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the precision of the nodal output written to the output database.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.parallelizationMethodExplicit" title="abaqus.Job.Job.Job.parallelizationMethodExplicit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parallelizationMethodExplicit</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.numDomains" title="abaqus.Job.Job.Job.numDomains"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numDomains</span></code></a></p></td>
+<td><p>An Int specifying the number of domains for parallel execution in Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.activateLoadBalancing" title="abaqus.Job.Job.Job.activateLoadBalancing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">activateLoadBalancing</span></code></a></p></td>
+<td><p>A Boolean specifying whether to activate dyanmic load balancing for jobs running on multiple processors with multiple domains in Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.multiprocessingMode" title="abaqus.Job.Job.Job.multiprocessingMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">multiprocessingMode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether an analysis is decomposed into threads or into multiple processes that communicate through a message passing interface (MPI).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.numThreadsPerMpiProcess" title="abaqus.Job.Job.Job.numThreadsPerMpiProcess"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numThreadsPerMpiProcess</span></code></a></p></td>
+<td><p>An Int specifying the number of threads per MPI process to use for this analysis if parallel processing is available.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.analysis" title="abaqus.Job.Job.Job.analysis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analysis</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.status" title="abaqus.Job.Job.Job.status"><code class="xref py py-obj docutils literal notranslate"><span class="pre">status</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the status of the analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.queue" title="abaqus.Job.Job.Job.queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">queue</span></code></a></p></td>
+<td><p>A String specifying the name of the queue to which to submit the job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.atTime" title="abaqus.Job.Job.Job.atTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">atTime</span></code></a></p></td>
+<td><p>A String specifying the time at which to submit the job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.scratch" title="abaqus.Job.Job.Job.scratch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scratch</span></code></a></p></td>
+<td><p>A String specifying the location of the scratch directory.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.userSubroutine" title="abaqus.Job.Job.Job.userSubroutine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">userSubroutine</span></code></a></p></td>
+<td><p>A String specifying the file containing the user's subroutine definitions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.messages" title="abaqus.Job.Job.Job.messages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.MessageArray.MessageArray" title="abaqus.Job.MessageArray.MessageArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageArray</span></code></a> object specifying the messages received during an analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.environment" title="abaqus.Job.Job.Job.environment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">environment</span></code></a></p></td>
+<td><p>A tuple of Strings specifying the environment variables and their values.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.licenseType" title="abaqus.Job.Job.Job.licenseType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">licenseType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of license type being used in the case of the DSLS SimUnit license model.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.kill" title="abaqus.Job.Job.Job.kill"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kill</span></code></a>()</p></td>
+<td><p>This method kills the analysis of a job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.submit" title="abaqus.Job.Job.Job.submit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">submit</span></code></a>([consistencyChecking, datacheckJob, ...])</p></td>
+<td><p>This method submits a job for analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.waitForCompletion" title="abaqus.Job.Job.Job.waitForCompletion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitForCompletion</span></code></a>()</p></td>
+<td><p>This method interrupts the execution of the script until the end of the analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job.clearMessage" title="abaqus.Job.Job.Job.clearMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clearMessage</span></code></a>()</p></td>
+<td><p>This method clears <strong>messages</strong> and sets the <strong>status</strong> to NONE.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 </dd></dl>
 
 </section>

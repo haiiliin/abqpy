@@ -405,51 +405,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Connector.ConnectorSection.ConnectorSection">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConnectorSection</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Connector/ConnectorSection.py#L17-L851"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Connector.ConnectorSection.ConnectorSection" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorDamage</span></code></a>([coupling, criterion, ...])</p></td>
-<td><p>This method creates a connector damage behavior option for a ConnectorSection object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorDamping</span></code></a>([behavior, coupling, ...])</p></td>
-<td><p>This method creates a connector damping behavior option for a ConnectorSection object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorElasticity</span></code></a>([behavior, coupling, ...])</p></td>
-<td><p>This method creates a connector elasticity behavior option for a ConnectorSection object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFailure" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFailure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorFailure</span></code></a>([releaseComponent, ...])</p></td>
-<td><p>This method creates a connector failure behavior option for a ConnectorSection object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorFriction</span></code></a>([frictionModel, ...])</p></td>
-<td><p>This method creates a connector friction behavior option for a ConnectorSection object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorLock" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorLock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorLock</span></code></a>([lockingComponent, minMotion, ...])</p></td>
-<td><p>This method creates a connector lock behavior option for a ConnectorSection.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorPlasticity</span></code></a>([coupling, isotropic, ...])</p></td>
-<td><p>This method creates a connector plasticity behavior option for a ConnectorSection object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorPotential</span></code></a>([componentStyle, ...])</p></td>
-<td><p>This method creates a connector potential object to be used in conjunction with an allowable connector behavior option.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorStop</span></code></a>([minMotion, maxMotion, components])</p></td>
-<td><p>This method creates a connector stop behavior option for a ConnectorSection object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.DerivedComponent" title="abaqus.Connector.ConnectorSection.ConnectorSection.DerivedComponent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DerivedComponent</span></code></a>()</p></td>
-<td><p>This method creates a DerivedComponent object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior" title="abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TangentialBehavior</span></code></a>([formulation, ...])</p></td>
-<td><p>This method creates a TangentialBehavior object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<dl class="py method">
+<dd><dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage">
 <span class="sig-name descname"><span class="pre">ConnectorDamage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coupling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UNCOUPLED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criterion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FORCE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initiationTemperature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initiationPotentialOperator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SUM'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initiationPotentialExponent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initiationDependencies</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolutionType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MOTION_TYPE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">softening</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'LINEAR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useAffected</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degradation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MAXIMUM'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolutionTemperature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolutionDependencies</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolutionPotentialOperator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SUM'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolutionPotentialExponent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initiationPotentials</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolutionPotentials</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initiationTable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolutionTable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">affectedComponents</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Connector/ConnectorSection.py#L18-L151"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a connector damage behavior option for a ConnectorSection object.</p>
@@ -1235,23 +1191,6 @@ table data are described below. The default value is an empty sequence.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions" title="abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorOptions</span></code></a>([useBehRegSettings, ...])</p></td>
-<td><p>This method creates a connector options object to be used in conjunction with an allowable connector behavior option, derived component term, or connector section.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Connector.CDCTerm.CDCTerm.setValues" title="abaqus.Connector.CDCTerm.CDCTerm.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the CDCTerm object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -1492,21 +1431,7 @@ values are POSITIVE and NEGATIVE. The default value is POSITIVE.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Connector.CDCTermArray.CDCTermArray">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CDCTermArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Connector/CDCTermArray.py#L4-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Connector.CDCTermArray.CDCTermArray" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>findAt</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="autoclasstoc docutils container">
+<dd><div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1661,26 +1586,6 @@ derived from the ConnectorBehaviorOption.</p>
 <span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">sections</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">behaviorOptions</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions" title="abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorOptions</span></code></a>([useBehRegSettings, ...])</p></td>
-<td><p>This method creates a connector options object to be used in conjunction with an allowable connector behavior option, derived component term, or connector section.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.DerivedComponent" title="abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.DerivedComponent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DerivedComponent</span></code></a>()</p></td>
-<td><p>This method creates a DerivedComponent object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior" title="abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TangentialBehavior</span></code></a>([formulation, ...])</p></td>
-<td><p>This method creates a TangentialBehavior object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -1964,21 +1869,7 @@ for this ConnectorBehaviorOption.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConnectorBehaviorOptionArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Connector/ConnectorBehaviorOptionArray.py#L4-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>findAt</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="autoclasstoc docutils container">
+<dd><div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -2210,28 +2101,6 @@ The ConnectorDamage object is derived from the ConnectorBehaviorOption object.</
 <ul class="simple">
 <li><p>CONNECTOR DAMAGE INITIATION</p></li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>evolutionPotentials</strong></dt><dd></dd>
-<dt><strong>initiationPotentials</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorDamage.ConnectorDamage.setValues" title="abaqus.Connector.ConnectorDamage.ConnectorDamage.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ConnectorDamage object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -2656,20 +2525,6 @@ The ConnectorDamping object is derived from the ConnectorBehaviorOption object.<
 <li><p>CONNECTOR DAMPING</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorDamping.ConnectorDamping.setValues" title="abaqus.Connector.ConnectorDamping.ConnectorDamping.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ConnectorDamping object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2930,20 +2785,6 @@ The ConnectorElasticity object is derived from the ConnectorBehaviorOption objec
 <li><p>CONNECTOR ELASTICITY</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorElasticity.ConnectorElasticity.setValues" title="abaqus.Connector.ConnectorElasticity.ConnectorElasticity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ConnectorElasticity object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -3171,30 +3012,6 @@ The ConnectorFailure object is derived from the ConnectorBehaviorOption object.<
 <li><p>CONNECTOR FAILURE</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>maxForce</strong></dt><dd></dd>
-<dt><strong>maxMotion</strong></dt><dd></dd>
-<dt><strong>minForce</strong></dt><dd></dd>
-<dt><strong>minMotion</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorFailure.ConnectorFailure.setValues" title="abaqus.Connector.ConnectorFailure.ConnectorFailure.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ConnectorFailure object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -3385,29 +3202,6 @@ The ConnectorFriction object is derived from the ConnectorBehaviorOption object.
 <ul class="simple">
 <li><p>CONNECTOR FRICTION</p></li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>connectorPotentials</strong></dt><dd></dd>
-<dt><strong>stickStiffness</strong></dt><dd></dd>
-<dt><strong>tangentDirection</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorFriction.ConnectorFriction.setValues" title="abaqus.Connector.ConnectorFriction.ConnectorFriction.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ConnectorFriction object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -3765,30 +3559,6 @@ The ConnectorLock object is derived from the ConnectorBehaviorOption object.</p>
 <li><p>CONNECTOR LOCK</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>maxForce</strong></dt><dd></dd>
-<dt><strong>maxMotion</strong></dt><dd></dd>
-<dt><strong>minForce</strong></dt><dd></dd>
-<dt><strong>minMotion</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorLock.ConnectorLock.setValues" title="abaqus.Connector.ConnectorLock.ConnectorLock.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ConnectorLock object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4015,20 +3785,6 @@ kinematicOptions.</p>
 </dl>
 </li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorOptions.ConnectorOptions.setValues" title="abaqus.Connector.ConnectorOptions.ConnectorOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ConnectorOptions object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -4275,27 +4031,6 @@ The ConnectorPlasticity object is derived from the ConnectorBehaviorOption objec
 <li><p>CONNECTOR HARDENING</p></li>
 <li><p>CONNECTOR POTENTIAL</p></li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>connectorPotentials</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.setValues" title="abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ConnectorPlasticity object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -4610,23 +4345,6 @@ that behavior—IniPotential and EvoPotential.</p>
 <li><p>CONNECTOR POTENTIAL</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorPotential.ConnectorPotential.DerivedComponent" title="abaqus.Connector.ConnectorPotential.ConnectorPotential.DerivedComponent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DerivedComponent</span></code></a>()</p></td>
-<td><p>This method creates a DerivedComponent object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorPotential.ConnectorPotential.setValues" title="abaqus.Connector.ConnectorPotential.ConnectorPotential.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ConnectorPotential object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4796,21 +4514,7 @@ and NEGATIVE. The default value is POSITIVE.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConnectorPotentialArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Connector/ConnectorPotentialArray.py#L4-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>findAt</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="autoclasstoc docutils container">
+<dd><div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -4968,28 +4672,6 @@ The ConnectorStop object is derived from the ConnectorBehaviorOption object.</p>
 <ul class="simple">
 <li><p>CONNECTOR STOP</p></li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>maxMotion</strong></dt><dd></dd>
-<dt><strong>minMotion</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorStop.ConnectorStop.setValues" title="abaqus.Connector.ConnectorStop.ConnectorStop.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ConnectorStop object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -5153,23 +4835,6 @@ ConnectorFriction and Potential objects.</p>
 <ul class="simple">
 <li><p>CONNECTOR DERIVED COMPONENT</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm" title="abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CDCTerm</span></code></a>(intrinsicComponents, table[, ...])</p></td>
-<td><p>This method creates a CDCTerm object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Connector.DerivedComponent.DerivedComponent.setValues" title="abaqus.Connector.DerivedComponent.DerivedComponent.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the DerivedComponent object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -5363,29 +5028,6 @@ behavior option.</p>
 <ul class="simple">
 <li><p>FRICTION</p></li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>absoluteDistance</strong></dt><dd></dd>
-<dt><strong>fraction</strong></dt><dd></dd>
-<dt><strong>shearStressLimit</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.TangentialBehavior.TangentialBehavior.setValues" title="abaqus.Connector.TangentialBehavior.TangentialBehavior.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the TangentialBehavior object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>

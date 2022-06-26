@@ -17,3 +17,5 @@ Create loads
 
 .. autoclass:: abaqus.Load.LoadModel.LoadModel
     :noindex:
+
+    .. autoclasstoc::

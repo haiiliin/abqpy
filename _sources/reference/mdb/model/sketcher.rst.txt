@@ -11,6 +11,8 @@ Create constrained sketches
 .. autoclass:: abaqus.Sketcher.SketchModel.SketchModel
     :members:
 
+    .. autoclasstoc::
+
 
 Object features
 ---------------
@@ -20,7 +22,46 @@ ConstrainedSketch
 
 .. autoclass:: abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch
     :members:
-    :inherited-members:
+
+    .. autoclasstoc::
+
+ConstrainedSketchConstraintModel
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel
+    :members:
+
+    .. autoclasstoc::
+
+ConstrainedSketchDimensionModel
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel
+    :members:
+
+    .. autoclasstoc::
+
+ConstrainedSketchGeometryModel
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel
+    :members:
+
+    .. autoclasstoc::
+
+ConstrainedSketchParameterModel
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Sketcher.ConstrainedSketchParameter.ConstrainedSketchParameterModel.ConstrainedSketchParameterModel
+    :members:
+
+    .. autoclasstoc::
+
+ConstrainedSketchVertexModel
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexModel.ConstrainedSketchVertexModel
+    :members:
 
     .. autoclasstoc::
 

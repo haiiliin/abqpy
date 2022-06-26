@@ -11,6 +11,8 @@ Create boundary conditions
 .. autoclass:: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel
     :members:
 
+    .. autoclasstoc::
+
 
 Object features
 ---------------

@@ -10,6 +10,8 @@ Create interactions
 .. autoclass:: abaqus.Interaction.InteractionModel.InteractionModel
     :members:
 
+    .. autoclasstoc::
+
 
 Object features
 ---------------

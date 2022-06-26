@@ -10,6 +10,10 @@ Create parts
 .. autoclass:: abaqus.Part.PartModel.PartModel
     :noindex:
 
+    .. autoclasstoc::
+
 .. autoclass:: abaqus.Part.PartBase.PartBase
     :noindex:
+
+    .. autoclasstoc::
     :members: PartFromBooleanCut, PartFromBooleanMerge, PartFromExtrude2DMesh, PartFromGeometryFile, PartFromInstanceMesh, PartFromMesh, PartFromMeshMirror, PartFromNodesAndElements, PartFromOdb, PartFromSection3DMeshByPlane, PartFromSubstructure, Part2DGeomFrom2DMesh, PartFromSubstructure

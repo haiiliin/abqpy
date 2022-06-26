@@ -35,3 +35,13 @@ Create models
 
 .. autoclass:: abaqus.Mdb.Mdb.Mdb
     :noindex:
+
+    .. autoclasstoc::
+
+Model
+-----
+
+.. autoclass:: abaqus.Model.Model.Model
+    :noindex:
+
+    .. autoclasstoc::

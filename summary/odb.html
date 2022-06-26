@@ -411,7 +411,63 @@
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OdbBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isReadOnly</span></code></p></td>
+<td><p>A Boolean specifying whether the output database was opened with read-only access.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">amplitudes</span></code></p></td>
+<td><p>A repository of Amplitude objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></p></td>
+<td><p>A repository of Filter objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">rootAssembly</span></code></p></td>
+<td><p>An <a class="reference internal" href="../reference/odb.html#abaqus.Odb.OdbAssembly.OdbAssembly" title="abaqus.Odb.OdbAssembly.OdbAssembly"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbAssembly</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">jobData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../reference/odb.html#abaqus.Odb.JobData.JobData" title="abaqus.Odb.JobData.JobData"><code class="xref py py-class docutils literal notranslate"><span class="pre">JobData</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parts</span></code></p></td>
+<td><p>A repository of OdbPart objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">materials</span></code></p></td>
+<td><p>A repository of Material objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">steps</span></code></p></td>
+<td><p>A repository of OdbStep objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sections</span></code></p></td>
+<td><p>A repository of Section objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sectionCategories</span></code></p></td>
+<td><p>A repository of SectionCategory objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sectorDefinition</span></code></p></td>
+<td><p>A <a class="reference internal" href="../reference/odb.html#abaqus.Odb.SectorDefinition.SectorDefinition" title="abaqus.Odb.SectorDefinition.SectorDefinition"><code class="xref py py-class docutils literal notranslate"><span class="pre">SectorDefinition</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">userData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../reference/odb.html#abaqus.Odb.UserData.UserData" title="abaqus.Odb.UserData.UserData"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserData</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">customData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../reference/kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">profiles</span></code></p></td>
+<td><p>A repository of Profile objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <colgroup>
@@ -422,15 +478,160 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.Part" title="abaqus.Odb.Odb.Odb.Part"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></a>(name, embeddedSpace, type)</p></td>
 <td><p>This method creates an OdbPart object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.SectionCategory" title="abaqus.Odb.Odb.Odb.SectionCategory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SectionCategory</span></code></a>(name, description)</p></td>
-<td><p>This method creates a SectionCategory object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.Step" title="abaqus.Odb.Odb.Odb.Step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Step</span></code></a>(name, description, domain[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.Step" title="abaqus.Odb.Odb.Odb.Step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Step</span></code></a>(name, description, domain[, ...])</p></td>
 <td><p>This method creates an OdbStep object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.SectionCategory" title="abaqus.Odb.Odb.Odb.SectionCategory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SectionCategory</span></code></a>(name, description)</p></td>
+<td><p>This method creates a SectionCategory object.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">AmplitudeOdb</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ActuatorAmplitude</span></code>(name[, timeSpan])</p></td>
+<td><p>This method creates a ActuatorAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DecayAmplitude</span></code>(name, initial, maximum, ...)</p></td>
+<td><p>This method creates a DecayAmplitude object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">EquallySpacedAmplitude</span></code>(name, fixedInterval, data)</p></td>
+<td><p>This method creates an EquallySpacedAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModulatedAmplitude</span></code>(name, initial, magnitude, ...)</p></td>
+<td><p>This method creates a ModulatedAmplitude object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeriodicAmplitude</span></code>(name, frequency, start, ...)</p></td>
+<td><p>This method creates a PeriodicAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PsdDefinition</span></code>(name, data[, unitType, ...])</p></td>
+<td><p>This method creates a PsdDefinition object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SmoothStepAmplitude</span></code>(name, data[, timeSpan])</p></td>
+<td><p>This method creates a SmoothStepAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SolutionDependentAmplitude</span></code>(name[, initial, ...])</p></td>
+<td><p>This method creates a SolutionDependentAmplitude object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SpectrumAmplitude</span></code>(name, method, data[, ...])</p></td>
+<td><p>This method creates a SpectrumAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabularAmplitude</span></code>(name, data[, smooth, timeSpan])</p></td>
+<td><p>This method creates a TabularAmplitude object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">FilterOdb</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ButterworthFilter</span></code>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates a ButterworthFilter object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chebyshev1Filter</span></code>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates a Chebyshev1Filter object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chebyshev2Filter</span></code>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates a Chebyshev2Filter object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">OperatorFilter</span></code>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates an OperatorFilter object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">MaterialOdb</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Material</span></code>(name[, description, materialIdentifier])</p></td>
+<td><p>This method creates a Material object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BeamSectionProfileOdb</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ArbitraryProfile</span></code>(name, table)</p></td>
+<td><p>This method creates a ArbitraryProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BoxProfile</span></code>(name, a, b, uniformThickness, t1)</p></td>
+<td><p>This method creates a BoxProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CircularProfile</span></code>(name, r)</p></td>
+<td><p>This method creates a CircularProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeneralizedProfile</span></code>(name, area, i11, i12, ...)</p></td>
+<td><p>This method creates a GeneralizedProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HexagonalProfile</span></code>(name, r, t)</p></td>
+<td><p>This method creates a HexagonalProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">IProfile</span></code>(name, l, h, b1, b2, t1, t2, t3)</p></td>
+<td><p>This method creates an IProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">LProfile</span></code>(name, a, b, t1, t2)</p></td>
+<td><p>This method creates a LProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PipeProfile</span></code>(name, r, t)</p></td>
+<td><p>This method creates a PipeProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RectangularProfile</span></code>(name, a, b)</p></td>
+<td><p>This method creates a RectangularProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TProfile</span></code>(name, b, h, l, tf, tw)</p></td>
+<td><p>This method creates a TProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrapezoidalProfile</span></code>(name, a, b, c, d)</p></td>
+<td><p>This method creates a TrapezoidalProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OdbBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, analysisTitle, description, ...])</p></td>
+<td><p>This method creates a new Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code>()</p></td>
+<td><p>This method closes an output database.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFrame</span></code>(frameValue[, match])</p></td>
+<td><p>This method returns the frame at the specified time, frequency, or mode.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code>()</p></td>
+<td><p>This method saves output to an output database (.odb ) file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code>()</p></td>
+<td><p>This method is used to update an Odb object in memory while an Abaqus analysis writes data to the associated output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 </dd></dl>
 
 </section>

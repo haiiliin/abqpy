@@ -451,7 +451,7 @@ local machine. The default value is OFF.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference internal" href="#abaqus.Job.JobSession.JobSession.Queue" title="abaqus.Job.JobSession.JobSession.Queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Queue</span></code></a></dt><dd><p>A <a class="reference internal" href="#abaqus.Job.Queue.Queue" title="abaqus.Job.Queue.Queue"><code class="xref py py-class docutils literal notranslate"><span class="pre">Queue</span></code></a> object.</p>
+<dt><a class="reference internal" href="../session.html#abaqus.Job.JobSession.JobSession.Queue" title="abaqus.Job.JobSession.JobSession.Queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Queue</span></code></a></dt><dd><p>A <a class="reference internal" href="#abaqus.Job.Queue.Queue" title="abaqus.Job.Queue.Queue"><code class="xref py py-class docutils literal notranslate"><span class="pre">Queue</span></code></a> object.</p>
 </dd>
 </dl>
 </dd>
@@ -493,37 +493,6 @@ co-simulation analysis.</p>
 </dl>
 </li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>secondaryAnalysisProducts</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.kill" title="abaqus.Job.Coexecution.Coexecution.kill"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kill</span></code></a>()</p></td>
-<td><p>This method kills the analysis of a co-execution.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.submit" title="abaqus.Job.Coexecution.Coexecution.submit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">submit</span></code></a>([consistencyChecking, datacheckJob, ...])</p></td>
-<td><p>This method submits a co-execution for analysis.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.waitForCompletion" title="abaqus.Job.Coexecution.Coexecution.waitForCompletion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitForCompletion</span></code></a>()</p></td>
-<td><p>This method interrupts the execution of the script until the end of all the analyses.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.writeInput" title="abaqus.Job.Coexecution.Coexecution.writeInput"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeInput</span></code></a>([consistencyChecking])</p></td>
-<td><p>This method writes an input file for each analysis in the co-execution.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -788,37 +757,6 @@ objects derived from Job.</p>
 </dl>
 </li>
 </ul>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>analysis</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.clearMessage" title="abaqus.Job.Job.Job.clearMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clearMessage</span></code></a>()</p></td>
-<td><p>This method clears <strong>messages</strong> and sets the <strong>status</strong> to NONE.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.kill" title="abaqus.Job.Job.Job.kill"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kill</span></code></a>()</p></td>
-<td><p>This method kills the analysis of a job.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.submit" title="abaqus.Job.Job.Job.submit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">submit</span></code></a>([consistencyChecking, datacheckJob, ...])</p></td>
-<td><p>This method submits a job for analysis.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.waitForCompletion" title="abaqus.Job.Job.Job.waitForCompletion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitForCompletion</span></code></a>()</p></td>
-<td><p>This method interrupts the execution of the script until the end of the analysis.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -1175,28 +1113,6 @@ The JobFromInputFile object is derived from the Job object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">jobs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>analysis</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.setValues" title="abaqus.Job.JobFromInputFile.JobFromInputFile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([type, queue, waitHours, ...])</p></td>
-<td><p>This method modifies the JobFromInputFile object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -1673,14 +1589,6 @@ option).</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>data</strong></dt><dd></dd>
-<dt><strong>type</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -1748,21 +1656,7 @@ DataObject.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Job.MessageArray.MessageArray">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MessageArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/MessageArray.py#L4-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.MessageArray.MessageArray" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>findAt</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="autoclasstoc docutils container">
+<dd><div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1915,31 +1809,6 @@ The ModelJob object is derived from the Job object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">jobs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>analysis</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.setValues" title="abaqus.Job.ModelJob.ModelJob.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the ModelJob object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.writeInput" title="abaqus.Job.ModelJob.ModelJob.writeInput"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeInput</span></code></a>([consistencyChecking])</p></td>
-<td><p>This method writes an input file.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -2410,39 +2279,6 @@ defined using an optimization task.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">optimizationProcesses</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>saveEvery</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.extract" title="abaqus.Job.OptimizationProcess.OptimizationProcess.extract"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract</span></code></a>(outputFileName, designCycle[, ...])</p></td>
-<td><p>This method extracts a surface mesh from the optimized model.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.setValues" title="abaqus.Job.OptimizationProcess.OptimizationProcess.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([description, maxDesignCycle, ...])</p></td>
-<td><p>This method modifies the OptimizationProcess object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.submit" title="abaqus.Job.OptimizationProcess.OptimizationProcess.submit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">submit</span></code></a>([validate])</p></td>
-<td><p>This method submits an optimization process.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.waitForCompletion" title="abaqus.Job.OptimizationProcess.OptimizationProcess.waitForCompletion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitForCompletion</span></code></a>()</p></td>
-<td><p>This method interrupts the execution of the script until the end of all the analyses.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.writeParAndInputFiles" title="abaqus.Job.OptimizationProcess.OptimizationProcess.writeParAndInputFiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeParAndInputFiles</span></code></a>()</p></td>
-<td><p>This method allows you to write par and input files for an optimization task.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>

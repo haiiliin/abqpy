@@ -419,31 +419,6 @@ The AnimationOptions object has no constructor command. Abaqus creates the
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>maxTime</strong></dt><dd></dd>
-<dt><strong>maxTimeAutoValue</strong></dt><dd></dd>
-<dt><strong>minTime</strong></dt><dd></dd>
-<dt><strong>minTimeAutoValue</strong></dt><dd></dd>
-<dt><strong>timeIncrement</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.setValues" title="abaqus.Animation.AnimationOptions.AnimationOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([mode, frameRate, frameCounter, ...])</p></td>
-<td><p>This method modifies the AnimationOptions object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -812,23 +787,6 @@ Session object, see Session object.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">animation</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationSession.AnimationSession.Movie" title="abaqus.Animation.AnimationSession.AnimationSession.Movie"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Movie</span></code></a>(name, fileName[, startFrame, ...])</p></td>
-<td><p>This method creates a Movie object from the contents of the specified file.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation" title="abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeImageAnimation</span></code></a>(fileName, format[, ...])</p></td>
-<td><p>This method writes the animations present in the list of canvas objects to a file.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -1236,20 +1194,6 @@ member when the animation module is imported.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AVIOptions.AVIOptions.setValues" title="abaqus.Animation.AVIOptions.AVIOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([compressionMethod, ...])</p></td>
-<td><p>This method modifies the AVIOptions object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -1327,26 +1271,6 @@ dimensions.</p>
 <span class="n">session</span><span class="o">.</span><span class="n">imageAnimation</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.ImageAnimation.ImageAnimation.close" title="abaqus.Animation.ImageAnimation.ImageAnimation.close"><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code></a>()</p></td>
-<td><p>This method closes the ImageAnimation object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.ImageAnimation.ImageAnimation.closed" title="abaqus.Animation.ImageAnimation.ImageAnimation.closed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">closed</span></code></a>()</p></td>
-<td><p>This method indicates if the ImageAnimation is open or closed for writing animation frames.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.ImageAnimation.ImageAnimation.writeFrame" title="abaqus.Animation.ImageAnimation.ImageAnimation.writeFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeFrame</span></code></a>([canvasObjects])</p></td>
-<td><p>This method adds a frame to the ImageAnimation object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -1443,20 +1367,6 @@ creates the <strong>imageAnimationOptions</strong> member when the animation mod
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.setValues" title="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([frameRate, timeScale, ...])</p></td>
-<td><p>This method modifies the ImageAnimationOptions object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -1516,33 +1426,6 @@ Upon creation, the Movie object is added to the session.movies repository.</p>
 <span class="n">session</span><span class="o">.</span><span class="n">movies</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>duration</strong></dt><dd></dd>
-<dt><strong>endFrame</strong></dt><dd></dd>
-<dt><strong>height</strong></dt><dd></dd>
-<dt><strong>memory</strong></dt><dd></dd>
-<dt><strong>numFrames</strong></dt><dd></dd>
-<dt><strong>timelineEndFrame</strong></dt><dd></dd>
-<dt><strong>width</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.Movie.Movie.setValues" title="abaqus.Animation.Movie.Movie.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([startFrame, endFrame, ...])</p></td>
-<td><p>This method modifies the Movie object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -1762,20 +1645,6 @@ creates the <strong>quickTimeOptions</strong> member when the animation module i
 <span class="n">session</span><span class="o">.</span><span class="n">quickTimeOptions</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues" title="abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([compressionMethod, ...])</p></td>
-<td><p>This method modifies the QuickTimeOptions object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues">

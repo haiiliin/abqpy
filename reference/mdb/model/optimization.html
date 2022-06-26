@@ -413,29 +413,6 @@
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.BeadTask" title="abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.BeadTask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadTask</span></code></a>(name[, algorithm, ...])</p></td>
-<td><p>This method creates a BeadTask object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.ShapeTask" title="abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.ShapeTask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeTask</span></code></a>(name[, absoluteStepSizeControl, ...])</p></td>
-<td><p>This method creates a ShapeTask object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.SizingTask" title="abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.SizingTask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingTask</span></code></a>(name[, ...])</p></td>
-<td><p>This method creates a SizingTask object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.TopologyTask" title="abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.TopologyTask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyTask</span></code></a>(name[, abaqusSensitivities, ...])</p></td>
-<td><p>This method creates a TopologyTask object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.BeadTask">
 <span class="sig-name descname"><span class="pre">BeadTask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">algorithm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'GENERAL_OPTIMIZATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">areBCRegionsFrozen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beadIter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beadMaxMembraneStress</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beadMinStress</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beadPerturbation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beadWidth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curveSmooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filterRadius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filterRadiusBy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'VALUE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flipNormalDir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frozenBoundaryConditionRegion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MODEL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isSensCalcOnlyOnDesignNodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeTrackingRegion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MODEL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodalMoveLimit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeSmooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeUpdateStrategy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'CONSERVATIVE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numTrackedModes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">updateShapeBasisVectors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EVERY_CYCLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groupOperator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Optimization/OptimizationTaskModel.py#L22-L150"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.BeadTask" title="Permalink to this definition">#</a></dt>
@@ -899,7 +876,42 @@ value of False means that the existing algorithm will be used.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Optimization.OptimizationTask.OptimizationTask">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OptimizationTask</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Optimization/OptimizationTask.py#L45-L1989"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Optimization.OptimizationTask.OptimizationTask" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
+<dd><div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OptimizationTaskBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the optimization task repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">region</span></code></p></td>
+<td><p>The SymbolicConstant MODEL or a Region object specifying the region to which the optimization task is applied.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">designResponses</span></code></p></td>
+<td><p>A repository of DesignResponse objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">objectiveFunctions</span></code></p></td>
+<td><p>A repository of ObjectiveFunction objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimizationConstraints</span></code></p></td>
+<td><p>A repository of OptimizationConstraint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">geometricRestrictions</span></code></p></td>
+<td><p>A repository of GeometricRestriction objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">stopConditions</span></code></p></td>
+<td><p>A repository of StopCondition objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <colgroup>
@@ -907,38 +919,8 @@ value of False means that the existing algorithm will be used.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadFixedRegion</span></code></a>(name, region[, csys, u1, u2, u3])</p></td>
-<td><p>This method creates a BeadFixedRegion object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadGrowth</span></code></a>(name, region[, beadGrowth, shrink])</p></td>
-<td><p>This method creates a BeadGrowth object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPenetrationCheck</span></code></a>(name, ...)</p></td>
-<td><p>This method creates a BeadPenetrationCheck object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPlanarSymmetry</span></code></a>(name, region[, axis, csys])</p></td>
-<td><p>This method creates a BeadPlanarSymmetry object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPointSymmetry</span></code></a>(name, region[, csys])</p></td>
-<td><p>This method creates a BeadPointSymmetry object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadRotationalSymmetry</span></code></a>(name, angle, region)</p></td>
-<td><p>This method creates a BeadRotationalSymmetry object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection" title="abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignDirection</span></code></a>(name, region[, csys, ...])</p></td>
-<td><p>This method creates a DesignDirection object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrillControl</span></code></a>(name, clientDirection, region)</p></td>
-<td><p>This method creates a DrillControl object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.FixedRegion" title="abaqus.Optimization.OptimizationTask.OptimizationTask.FixedRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FixedRegion</span></code></a>(name, region[, csys, ...])</p></td>
-<td><p>This method creates a FixedRegion object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea" title="abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FrozenArea</span></code></a>(name[, region])</p></td>
-<td><p>This method creates a FrozenArea object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.Growth" title="abaqus.Optimization.OptimizationTask.OptimizationTask.Growth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Growth</span></code></a>(name, region[, growth, ...])</p></td>
-<td><p>This method creates a Growth object.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SingleTermDesignResponse</span></code></a>(name, identifier[, ...])</p></td>
+<td><p>This method creates a SingleTermDesignResponse object.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ObjectiveFunction" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ObjectiveFunction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ObjectiveFunction</span></code></a>(name, objectives[, target])</p></td>
 <td><p>This method creates an ObjectiveFunction object.</p></td>
@@ -946,26 +928,56 @@ value of False means that the existing algorithm will be used.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.OptimizationConstraint" title="abaqus.Optimization.OptimizationTask.OptimizationTask.OptimizationConstraint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OptimizationConstraint</span></code></a>(name, designResponse, ...)</p></td>
 <td><p>This method creates an OptimizationConstraint object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck" title="abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PenetrationCheck</span></code></a>(name, ...[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadFixedRegion</span></code></a>(name, region[, csys, u1, u2, u3])</p></td>
+<td><p>This method creates a BeadFixedRegion object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadGrowth</span></code></a>(name, region[, beadGrowth, shrink])</p></td>
+<td><p>This method creates a BeadGrowth object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPenetrationCheck</span></code></a>(name, ...)</p></td>
+<td><p>This method creates a BeadPenetrationCheck object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPlanarSymmetry</span></code></a>(name, region[, axis, csys])</p></td>
+<td><p>This method creates a BeadPlanarSymmetry object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPointSymmetry</span></code></a>(name, region[, csys])</p></td>
+<td><p>This method creates a BeadPointSymmetry object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadRotationalSymmetry</span></code></a>(name, angle, region)</p></td>
+<td><p>This method creates a BeadRotationalSymmetry object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection" title="abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignDirection</span></code></a>(name, region[, csys, ...])</p></td>
+<td><p>This method creates a DesignDirection object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrillControl</span></code></a>(name, clientDirection, region)</p></td>
+<td><p>This method creates a DrillControl object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.FixedRegion" title="abaqus.Optimization.OptimizationTask.OptimizationTask.FixedRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FixedRegion</span></code></a>(name, region[, csys, ...])</p></td>
+<td><p>This method creates a FixedRegion object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea" title="abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FrozenArea</span></code></a>(name[, region])</p></td>
+<td><p>This method creates a FrozenArea object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.Growth" title="abaqus.Optimization.OptimizationTask.OptimizationTask.Growth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Growth</span></code></a>(name, region[, growth, ...])</p></td>
+<td><p>This method creates a Growth object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck" title="abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PenetrationCheck</span></code></a>(name, ...[, ...])</p></td>
 <td><p>This method creates a PenetrationCheck object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeDemoldControl</span></code></a>(name, pullDirection, region)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeDemoldControl</span></code></a>(name, pullDirection, region)</p></td>
 <td><p>This method creates a ShapeDemoldControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeMemberSize</span></code></a>(name, region[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeMemberSize</span></code></a>(name, region[, ...])</p></td>
 <td><p>This method creates a ShapeMemberSize object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePlanarSymmetry</span></code></a>(name, clientDirection, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePlanarSymmetry</span></code></a>(name, clientDirection, ...)</p></td>
 <td><p>This method creates a ShapePlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePointSymmetry</span></code></a>(name, region[, csys, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePointSymmetry</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a ShapePointSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeRotationalSymmetry</span></code></a>(name, ...[, angle, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeRotationalSymmetry</span></code></a>(name, ...[, angle, ...])</p></td>
 <td><p>This method creates a ShapeRotationalSymmetry object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SingleTermDesignResponse</span></code></a>(name, identifier[, ...])</p></td>
-<td><p>This method creates a SingleTermDesignResponse object.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingClusterAreas" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingClusterAreas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingClusterAreas</span></code></a>(name, regions)</p></td>
 <td><p>This method creates a SizingClusterAreas object.</p></td>
@@ -1021,6 +1033,8 @@ value of False means that the existing algorithm will be used.</p>
 </tbody>
 </table>
 </div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion">
 <span class="sig-name descname"><span class="pre">BeadFixedRegion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Optimization/OptimizationTask.py#L202-L248"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion" title="Permalink to this definition">#</a></dt>
@@ -2653,27 +2667,6 @@ The BeadFixedRegion object is derived from the GeometricRestriction object.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.BeadFixedRegion.BeadFixedRegion.setValues" title="abaqus.Optimization.BeadFixedRegion.BeadFixedRegion.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([csys, u1, u2, u3])</p></td>
-<td><p>This method modifies the BeadFixedRegion object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2807,20 +2800,6 @@ The BeadGrowth object is derived from the GeometricRestriction object.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.BeadGrowth.BeadGrowth.setValues" title="abaqus.Optimization.BeadGrowth.BeadGrowth.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([beadGrowth, shrink])</p></td>
-<td><p>This method modifies the BeadGrowth object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2926,20 +2905,6 @@ The BeadPenetrationCheck object is derived from the GeometricRestriction object.
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck.setValues" title="abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the BeadPenetrationCheck object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricRestriction</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
@@ -3008,27 +2973,6 @@ The BeadPlanarSymmetry object is derived from the GeometricRestriction object.</
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometricRestrictions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry.setValues" title="abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([axis, csys])</p></td>
-<td><p>This method modifies the BeadPlanarSymmetry object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -3137,27 +3081,6 @@ The BeadPointSymmetry object is derived from the GeometricRestriction object.</p
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry.setValues" title="abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([csys])</p></td>
-<td><p>This method modifies the BeadPointSymmetry object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -3252,27 +3175,6 @@ The BeadRotationalSymmetry object is derived from the GeometricRestriction objec
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometricRestrictions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry.setValues" title="abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([axis, csys])</p></td>
-<td><p>This method modifies the BeadRotationalSymmetry object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -3386,20 +3288,6 @@ The BeadTask object is derived from the OptimizationTask object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.BeadTask.BeadTask.setValues" title="abaqus.Optimization.BeadTask.BeadTask.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([abaqusSensitivities, algorithm, ...])</p></td>
-<td><p>This method modifies the BeadTask object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -3919,28 +3807,6 @@ The CombinedTermDesignResponse object is derived from the DesignResponse object.
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>filterMaxRadius</strong></dt><dd></dd>
-<dt><strong>highCutOff</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.CombinedTermDesignResponse.CombinedTermDesignResponse.setValues" title="abaqus.Optimization.CombinedTermDesignResponse.CombinedTermDesignResponse.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([filterMaxRadius, filterExponent, ...])</p></td>
-<td><p>This method modifies the CombinedTermDesignResponse object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4183,28 +4049,6 @@ The DesignDirection object is derived from the GeometricRestriction object.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-<dt><strong>mainPoint</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.DesignDirection.DesignDirection.setValues" title="abaqus.Optimization.DesignDirection.DesignDirection.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([csys, mainPoint, ...])</p></td>
-<td><p>This method modifies the DesignDirection object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4442,28 +4286,6 @@ The DrillControl object is derived from the GeometricRestriction object.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-<dt><strong>mainPoint</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.DrillControl.DrillControl.setValues" title="abaqus.Optimization.DrillControl.DrillControl.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([csys, drawAngle, mainPoint, ...])</p></td>
-<td><p>This method modifies the DrillControl object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4666,27 +4488,6 @@ The FixedRegion object is derived from the GeometricRestriction object.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.FixedRegion.FixedRegion.setValues" title="abaqus.Optimization.FixedRegion.FixedRegion.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([csys, ...])</p></td>
-<td><p>This method modifies the FixedRegion object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4832,20 +4633,6 @@ The FrozenArea object is derived from the GeometricRestriction object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometricRestrictions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.FrozenArea.FrozenArea.setValues" title="abaqus.Optimization.FrozenArea.FrozenArea.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([region])</p></td>
-<td><p>This method modifies the FrozenArea object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -4995,20 +4782,6 @@ The Growth object is derived from the GeometricRestriction object.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.Growth.Growth.setValues" title="abaqus.Optimization.Growth.Growth.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([growth, ...])</p></td>
-<td><p>This method modifies the Growth object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -5126,20 +4899,6 @@ The LocalStopCondition object is derived from the StopCondition object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">stopConditions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.LocalStopCondition.LocalStopCondition.setValues" title="abaqus.Optimization.LocalStopCondition.LocalStopCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([comparisonOperation, identifier, ...])</p></td>
-<td><p>This method modifies the LocalStopCondition object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -5333,20 +5092,6 @@ condition is applied. The default value is MODEL.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.ObjectiveFunction.ObjectiveFunction.setValues" title="abaqus.Optimization.ObjectiveFunction.ObjectiveFunction.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([target])</p></td>
-<td><p>This method modifies the ObjectiveFunction object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -5442,20 +5187,6 @@ topology of the model.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationConstraints</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationConstraint.OptimizationConstraint.setValues" title="abaqus.Optimization.OptimizationConstraint.OptimizationConstraint.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([restrictionMethod])</p></td>
-<td><p>This method modifies the OptimizationConstraint object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -5623,21 +5354,7 @@ OFF.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Optimization.OptimizationObjectiveArray.OptimizationObjectiveArray">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OptimizationObjectiveArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Optimization/OptimizationObjectiveArray.py#L4-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Optimization.OptimizationObjectiveArray.OptimizationObjectiveArray" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>findAt</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="autoclasstoc docutils container">
+<dd><div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -5790,20 +5507,6 @@ This page discusses:</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.PenetrationCheck.PenetrationCheck.setValues" title="abaqus.Optimization.PenetrationCheck.PenetrationCheck.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([presumeFeasibleRegionAtStart])</p></td>
-<td><p>This method modifies the PenetrationCheck object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -5901,27 +5604,6 @@ The ShapeDemoldControl object is derived from the GeometricRestriction object.</
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometricRestrictions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.setValues" title="abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([collisionCheckRegion, csys, ...])</p></td>
-<td><p>This method modifies the ShapeDemoldControl object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -6128,20 +5810,6 @@ The ShapeMemberSize object is derived from the GeometricRestriction object.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.setValues" title="abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([maxThickness, minThickness, ...])</p></td>
-<td><p>This method modifies the ShapeMemberSize object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -6277,27 +5945,6 @@ The ShapePlanarSymmetry object is derived from the GeometricRestriction object.<
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometricRestrictions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry.setValues" title="abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([allowNonSymmetricMesh, csys, ...])</p></td>
-<td><p>This method modifies the ShapePlanarSymmetry object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -6469,27 +6116,6 @@ The ShapePointSymmetry object is derived from the GeometricRestriction object.</
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry.setValues" title="abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([csys, mainPointDetermination, ...])</p></td>
-<td><p>This method modifies the ShapePointSymmetry object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -6649,29 +6275,6 @@ The ShapeRotationalSymmetry object is derived from the GeometricRestriction obje
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometricRestrictions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-<dt><strong>mainPoint</strong></dt><dd></dd>
-<dt><strong>startPoint</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.setValues" title="abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([allowNonSymmetricMesh, angle, ...])</p></td>
-<td><p>This method modifies the ShapeRotationalSymmetry object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -6881,32 +6484,6 @@ The ShapeTask object is derived from the OptimizationTask object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>equalityConstraintTolerance</strong></dt><dd></dd>
-<dt><strong>filterMaxRadius</strong></dt><dd></dd>
-<dt><strong>filterRadiusReduction</strong></dt><dd></dd>
-<dt><strong>layerReferenceRegion</strong></dt><dd></dd>
-<dt><strong>numSmoothedElementLayers</strong></dt><dd></dd>
-<dt><strong>smoothingRegion</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.ShapeTask.ShapeTask.setValues" title="abaqus.Optimization.ShapeTask.ShapeTask.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([abaqusSensitivities, ...])</p></td>
-<td><p>This method modifies the ShapeTask object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -7760,29 +7337,6 @@ The SingleTermDesignResponse object is derived from the DesignResponse object.</
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-<dt><strong>drivingRegion</strong></dt><dd></dd>
-<dt><strong>stepOptions</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse.setValues" title="abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([csys, drivingRegion, operation, ...])</p></td>
-<td><p>This method modifies the SingleTermDesignResponse object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -7956,20 +7510,6 @@ The SizingClusterAreas object is derived from the GeometricRestriction object.</
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.SizingClusterAreas.SizingClusterAreas.setValues" title="abaqus.Optimization.SizingClusterAreas.SizingClusterAreas.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the SizingClusterAreas object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricRestriction</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
@@ -8039,27 +7579,6 @@ The SizingCyclicSymmetry object is derived from the GeometricRestriction object.
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometricRestrictions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry.setValues" title="abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([axis, csys, ignoreFrozenArea])</p></td>
-<td><p>This method modifies the SizingCyclicSymmetry object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -8187,20 +7706,6 @@ The SizingFrozenArea object is derived from the GeometricRestriction object.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.SizingFrozenArea.SizingFrozenArea.setValues" title="abaqus.Optimization.SizingFrozenArea.SizingFrozenArea.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the SizingFrozenArea object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricRestriction</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
@@ -8263,20 +7768,6 @@ The SizingMemberSize object is derived from the GeometricRestriction object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometricRestrictions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.SizingMemberSize.SizingMemberSize.setValues" title="abaqus.Optimization.SizingMemberSize.SizingMemberSize.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the sizingMemberSize object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -8346,27 +7837,6 @@ The SizingPlanarSymmetry object is derived from the GeometricRestriction object.
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometricRestrictions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry.setValues" title="abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the sizingPlanarSymmetry object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -8470,27 +7940,6 @@ The SizingPointSymmetry object is derived from the GeometricRestriction object.<
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometricRestrictions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry.setValues" title="abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([csys, ignoreFrozenArea])</p></td>
-<td><p>This method modifies the SizingPointSymmetry object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -8597,27 +8046,6 @@ The SizingRotationalSymmetry object is derived from the GeometricRestriction obj
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometricRestrictions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry.setValues" title="abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([axis, csys, ignoreFrozenArea])</p></td>
-<td><p>This method modifies the SizingRotationalSymmetry object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -8742,20 +8170,6 @@ The SizingTask object is derived from the OptimizationTask object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.SizingTask.SizingTask.setValues" title="abaqus.Optimization.SizingTask.SizingTask.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([abaqusSensitivities, ...])</p></td>
-<td><p>This method modifies the SizingTask object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -9163,29 +8577,6 @@ The SlideRegionControl object is derived from the GeometricRestriction object.</
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-<dt><strong>freeFormRegion</strong></dt><dd></dd>
-<dt><strong>revolvedRegion</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.SlideRegionControl.SlideRegionControl.setValues" title="abaqus.Optimization.SlideRegionControl.SlideRegionControl.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([approach, csys, freeFormRegion, ...])</p></td>
-<td><p>This method modifies the SlideRegionControl object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -9382,28 +8773,6 @@ The StampControl object is derived from the GeometricRestriction object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometricRestrictions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-<dt><strong>mainPoint</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.StampControl.StampControl.setValues" title="abaqus.Optimization.StampControl.StampControl.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([csys, drawAngle, mainPoint, ...])</p></td>
-<td><p>This method modifies the StampControl object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -9680,21 +9049,7 @@ is ALL.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Optimization.StepOptionArray.StepOptionArray">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StepOptionArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Optimization/StepOptionArray.py#L4-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Optimization.StepOptionArray.StepOptionArray" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>findAt</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="autoclasstoc docutils container">
+<dd><div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -9899,27 +9254,6 @@ The TopologyCyclicSymmetry object is derived from the GeometricRestriction objec
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.setValues" title="abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([axis, csys, ignoreFrozenArea])</p></td>
-<td><p>This method modifies the TopologyCyclicSymmetry object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -10046,28 +9380,6 @@ The TopologyDemoldControl object is derived from the GeometricRestriction object
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometricRestrictions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-<dt><strong>pointRegion</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.setValues" title="abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([csys, draftAngle, ...])</p></td>
-<td><p>This method modifies the TopologyDemoldControl object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -10230,20 +9542,6 @@ The TopologyMemberSize object is derived from the GeometricRestriction object.</
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.setValues" title="abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([maxThickness, minThickness, ...])</p></td>
-<td><p>This method modifies the TopologyMemberSize object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -10371,28 +9669,6 @@ The TopologyMillingControl object is derived from the GeometricRestriction objec
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometricRestrictions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-<dt><strong>radius</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.TopologyMillingControl.TopologyMillingControl.setValues" title="abaqus.Optimization.TopologyMillingControl.TopologyMillingControl.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([csys, millingCheckRegion, radius])</p></td>
-<td><p>This method modifies the TopologyMillingControl object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -10528,27 +9804,6 @@ The TopologyPlanarSymmetry object is derived from the GeometricRestriction objec
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.setValues" title="abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([axis, csys, ignoreFrozenArea])</p></td>
-<td><p>This method modifies the TopologyPlanarSymmetry object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -10668,27 +9923,6 @@ The TopologyPointSymmetry object is derived from the GeometricRestriction object
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.setValues" title="abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([csys, ignoreFrozenArea])</p></td>
-<td><p>This method modifies the TopologyPointSymmetry object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -10794,27 +10028,6 @@ The TopologyRotationalSymmetry object is derived from the GeometricRestriction o
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometricRestrictions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.setValues" title="abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([axis, csys, ignoreFrozenArea])</p></td>
-<td><p>This method modifies the TopologyRotationalSymmetry object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -10939,34 +10152,6 @@ The TopologyTask object is derived from the OptimizationTask object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>filterRadius</strong></dt><dd></dd>
-<dt><strong>minDensity</strong></dt><dd></dd>
-<dt><strong>objectiveFunctionDeltaStopCriteria</strong></dt><dd></dd>
-<dt><strong>softDeletionRegion</strong></dt><dd></dd>
-<dt><strong>softDeletionThreshold</strong></dt><dd></dd>
-<dt><strong>structuralMassDamping</strong></dt><dd></dd>
-<dt><strong>viscousMassDamping</strong></dt><dd></dd>
-<dt><strong>viscousStiffnessDamping</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.TopologyTask.TopologyTask.setValues" title="abaqus.Optimization.TopologyTask.TopologyTask.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([abaqusSensitivities, algorithm, ...])</p></td>
-<td><p>This method modifies the TopologyTask object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -11678,28 +10863,6 @@ The TurnControl object is derived from the GeometricRestriction object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">optimizationTasks</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometricRestrictions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>csys</strong></dt><dd></dd>
-<dt><strong>mainPoint</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.TurnControl.TurnControl.setValues" title="abaqus.Optimization.TurnControl.TurnControl.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([csys, mainPoint, ...])</p></td>
-<td><p>This method modifies the TurnControl object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>

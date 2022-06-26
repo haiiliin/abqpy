@@ -10,3 +10,5 @@ Create properties for Part
 
 .. autoclass:: abaqus.Property.PropertyPart.PropertyPart
     :noindex:
+
+    .. autoclasstoc::

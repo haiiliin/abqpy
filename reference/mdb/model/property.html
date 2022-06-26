@@ -408,27 +408,7 @@
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PropertyPart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimensionality</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">twist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Property/PropertyPart.py#L12-L252"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Property.PropertyPart.PropertyPart" title="Permalink to this definition">#</a></dt>
 <dt class="sig sig-object py">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PropertyPart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">objectToCopy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mirrorPlane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NONE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compressFeatureList</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">separate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Property.PropertyPart.PropertyPart.CompositeLayup" title="abaqus.Property.PropertyPart.PropertyPart.CompositeLayup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CompositeLayup</span></code></a>(name[, description, ...])</p></td>
-<td><p>This method creates a CompositeLayup object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation" title="abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaterialOrientation</span></code></a>([region, localCsys, ...])</p></td>
-<td><p>This method creates a MaterialOrientation object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Property.PropertyPart.PropertyPart.SectionAssignment" title="abaqus.Property.PropertyPart.PropertyPart.SectionAssignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SectionAssignment</span></code></a>(region, sectionName[, ...])</p></td>
-<td><p>This method creates a SectionAssignment object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<dl class="py method">
+<dd><dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Property.PropertyPart.PropertyPart.CompositeLayup">
 <span class="sig-name descname"><span class="pre">CompositeLayup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offsetType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'GLOBAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offsetField</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offsetValues</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SHELL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symmetric</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Property/PropertyPart.py#L13-L74"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Property.PropertyPart.PropertyPart.CompositeLayup" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a CompositeLayup object.</p>
@@ -641,41 +621,6 @@ OFFSET_FIELD. The default value is SINGLE_VALUE.</p>
 </dl>
 </li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Property.CompositeLayup.CompositeLayup.CompositePly" title="abaqus.Property.CompositeLayup.CompositeLayup.CompositePly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CompositePly</span></code></a>(thickness, region, material, ...)</p></td>
-<td><p>This method creates a CompositePly object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection" title="abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CompositeShellSection</span></code></a>(name, layup[, ...])</p></td>
-<td><p>This method creates a CompositeShellSection object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Property.CompositeLayup.CompositeLayup.GeometryShellSection" title="abaqus.Property.CompositeLayup.CompositeLayup.GeometryShellSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeometryShellSection</span></code></a>([nodalThicknessField, ...])</p></td>
-<td><p>This method creates a GeometryShellSection object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection" title="abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HomogeneousShellSection</span></code></a>(name, material[, ...])</p></td>
-<td><p>This method creates a HomogeneousShellSection object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Property.CompositeLayup.CompositeLayup.deletePlies" title="abaqus.Property.CompositeLayup.CompositeLayup.deletePlies"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deletePlies</span></code></a>()</p></td>
-<td><p>This method deletes all of the plies from a composite layup.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Property.CompositeLayup.CompositeLayup.resume" title="abaqus.Property.CompositeLayup.CompositeLayup.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
-<td><p>This method resumes a composite layup that was previously suppressed.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Property.CompositeLayup.CompositeLayup.setValues" title="abaqus.Property.CompositeLayup.CompositeLayup.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([description, offsetType, ...])</p></td>
-<td><p>This method modifies the CompositeLayup object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Property.CompositeLayup.CompositeLayup.suppress" title="abaqus.Property.CompositeLayup.CompositeLayup.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
-<td><p>This method suppresses a composite layup.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -1223,13 +1168,6 @@ The default value is OFF.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>orientation</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -1400,21 +1338,7 @@ value is SPECIFY_THICKNESS.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Property.CompositePlyArray.CompositePlyArray">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CompositePlyArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Property/CompositePlyArray.py#L4-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Property.CompositePlyArray.CompositePlyArray" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>findAt</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="autoclasstoc docutils container">
+<dd><div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1570,34 +1494,6 @@ composite layups.</p>
 <span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">instance</span><span class="o">.</span><span class="n">materialOrientations</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>localCsys</strong></dt><dd></dd>
-<dt><strong>normalAxisDatum</strong></dt><dd></dd>
-<dt><strong>normalAxisRegion</strong></dt><dd></dd>
-<dt><strong>primaryAxisDatum</strong></dt><dd></dd>
-<dt><strong>primaryAxisRegion</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation" title="abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReferenceOrientation</span></code></a>([localCsys, axis, ...])</p></td>
-<td><p>This method creates a MaterialOrientation object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Property.MaterialOrientation.MaterialOrientation.setValues" title="abaqus.Property.MaterialOrientation.MaterialOrientation.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the MaterialOrientation object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -1960,21 +1856,7 @@ STACK_1, STACK_2, STACK_3, and STACK_ORIENTATION. The default value is STACK_3.<
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Property.MaterialOrientationArray.MaterialOrientationArray">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MaterialOrientationArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Property/MaterialOrientationArray.py#L4-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Property.MaterialOrientationArray.MaterialOrientationArray" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>findAt</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="autoclasstoc docutils container">
+<dd><div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -2145,20 +2027,6 @@ created.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment" title="abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SectionAssignment</span></code></a>(region, sectionName[, ...])</p></td>
-<td><p>This method creates a SectionAssignment object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -2730,29 +2598,6 @@ part. Section assignments on the assembly are limited to connector elements only
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Property.SectionAssignment.SectionAssignment.getVertices" title="abaqus.Property.SectionAssignment.SectionAssignment.getVertices"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getVertices</span></code></a>()</p></td>
-<td><p>This method is only valid for connector section assignments.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Property.SectionAssignment.SectionAssignment.resume" title="abaqus.Property.SectionAssignment.SectionAssignment.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
-<td><p>This method resumes the section assignment that was previously suppressed.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Property.SectionAssignment.SectionAssignment.setValues" title="abaqus.Property.SectionAssignment.SectionAssignment.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the SectionAssignment object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Property.SectionAssignment.SectionAssignment.suppress" title="abaqus.Property.SectionAssignment.SectionAssignment.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
-<td><p>This method suppresses the section assignment.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2906,21 +2751,7 @@ FROM_SECTION and FROM_GEOMETRY. The default value is FROM_SECTION.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Property.SectionAssignmentArray.SectionAssignmentArray">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SectionAssignmentArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Property/SectionAssignmentArray.py#L4-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Property.SectionAssignmentArray.SectionAssignmentArray" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>findAt</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="autoclasstoc docutils container">
+<dd><div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">

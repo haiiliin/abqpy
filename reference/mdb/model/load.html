@@ -417,7 +417,171 @@
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">stefanBoltzmann</span></code></p></td>
+<td><p>None or a Float specifying the Stefan-Boltzmann constant.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">absoluteZero</span></code></p></td>
+<td><p>None or a Float specifying the absolute zero constant.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">waveFormulation</span></code></p></td>
+<td><p>A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">universalGas</span></code></p></td>
+<td><p>None or a Float specifying the universal gas constant.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">noPartsInputFile</span></code></p></td>
+<td><p>A Boolean specifying whether an input file should be written without parts and assemblies.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartIncrement</span></code></p></td>
+<td><p>An Int specifying the increment, interval, iteration or cycle where the restart analysis will start.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">endRestartStep</span></code></p></td>
+<td><p>A Boolean specifying that the step specified by <strong>restartStep</strong> should be terminated at the increment specified by <strong>restartIncrement</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">shellToSolid</span></code></p></td>
+<td><p>A Boolean specifying that a shell global model drives a solid submodel.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">lastChangedCount</span></code></p></td>
+<td><p>A Float specifying the time stamp that indicates when the model was last changed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></p></td>
+<td><p>A String specifying the purpose and contents of the Model object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartJob</span></code></p></td>
+<td><p>A String specifying the name of the job that generated the restart data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartStep</span></code></p></td>
+<td><p>A String specifying the name of the step where the restart analysis will start.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">globalJob</span></code></p></td>
+<td><p>A String specifying the name of the job that generated the results for the global model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyConstraints</span></code></p></td>
+<td><p>A boolean specifying the status of constraints created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyConnectors</span></code></p></td>
+<td><p>A boolean specifying the status of connectors created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyInteractions</span></code></p></td>
+<td><p>A boolean specifying the status of interactions created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">keywordBlock</span></code></p></td>
+<td><p>A <a class="reference internal" href="../model.html#abaqus.Model.KeywordBlock.KeywordBlock" title="abaqus.Model.KeywordBlock.KeywordBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">KeywordBlock</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">rootAssembly</span></code></p></td>
+<td><p>An <a class="reference internal" href="assembly.html#abaqus.Assembly.Assembly.Assembly" title="abaqus.Assembly.Assembly.Assembly"><code class="xref py py-class docutils literal notranslate"><span class="pre">Assembly</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">amplitudes</span></code></p></td>
+<td><p>A repository of Amplitude objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">profiles</span></code></p></td>
+<td><p>A repository of Profile objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundaryConditions</span></code></p></td>
+<td><p>A repository of BoundaryCondition objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">constraints</span></code></p></td>
+<td><p>A repository of ConstrainedSketchConstraint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyticalFields</span></code></p></td>
+<td><p>A repository of AnalyticalField objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">discreteFields</span></code></p></td>
+<td><p>A repository of DiscreteField objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">predefinedFields</span></code></p></td>
+<td><p>A repository of PredefinedField objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactions</span></code></p></td>
+<td><p>A repository of Interaction objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactionProperties</span></code></p></td>
+<td><p>A repository of InteractionProperty objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactControls</span></code></p></td>
+<td><p>A repository of ContactControl objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactInitializations</span></code></p></td>
+<td><p>A repository of ContactInitialization objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactStabilizations</span></code></p></td>
+<td><p>A repository of ContactStabilization objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkedInstances</span></code></p></td>
+<td><p>A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkedParts</span></code></p></td>
+<td><p>A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">loads</span></code></p></td>
+<td><p>A repository of Load objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">materials</span></code></p></td>
+<td><p>A repository of Material objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">calibrations</span></code></p></td>
+<td><p>A repository of Calibration objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sections</span></code></p></td>
+<td><p>A repository of Section objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">remeshingRules</span></code></p></td>
+<td><p>A repository of RemeshingRule objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sketches</span></code></p></td>
+<td><p>A repository of ConstrainedSketch objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parts</span></code></p></td>
+<td><p>A repository of Part objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">steps</span></code></p></td>
+<td><p>A repository of Step objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">featureOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="part_assembly/feature.html#abaqus.Feature.FeatureOptions.FeatureOptions" title="abaqus.Feature.FeatureOptions.FeatureOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshConstraints</span></code></p></td>
+<td><p>A repository of AdaptiveMeshConstraint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshControls</span></code></p></td>
+<td><p>A repository of AdaptiveMeshControl objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">timePoints</span></code></p></td>
+<td><p>A repository of TimePoint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></p></td>
+<td><p>A repository of Filter objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">integratedOutputSections</span></code></p></td>
+<td><p>A repository of IntegratedOutputSection objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldOutputRequests</span></code></p></td>
+<td><p>A repository of FieldOutputRequest objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">historyOutputRequests</span></code></p></td>
+<td><p>A repository of HistoryOutputRequest objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimizationTasks</span></code></p></td>
+<td><p>A repository of OptimizationTask objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <colgroup>
@@ -455,14 +619,14 @@
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.LoadModel.LoadModel.ConcCurrent" title="abaqus.Load.LoadModel.LoadModel.ConcCurrent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConcCurrent</span></code></a>(name, createStepName, region, ...)</p></td>
 <td><p>This method creates a ConcCurrent object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.LoadModel.LoadModel.ConcPoreFluid" title="abaqus.Load.LoadModel.LoadModel.ConcPoreFluid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConcPoreFluid</span></code></a>(name, createStepName, region, ...)</p></td>
-<td><p>This method creates a ConcPoreFluid object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.LoadModel.LoadModel.ConcentratedForce" title="abaqus.Load.LoadModel.LoadModel.ConcentratedForce"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConcentratedForce</span></code></a>(name, createStepName, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.LoadModel.LoadModel.ConcentratedForce" title="abaqus.Load.LoadModel.LoadModel.ConcentratedForce"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConcentratedForce</span></code></a>(name, createStepName, region)</p></td>
 <td><p>This method creates a ConcentratedForce object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.LoadModel.LoadModel.ConcentratedHeatFlux" title="abaqus.Load.LoadModel.LoadModel.ConcentratedHeatFlux"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConcentratedHeatFlux</span></code></a>(name, createStepName, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.LoadModel.LoadModel.ConcentratedHeatFlux" title="abaqus.Load.LoadModel.LoadModel.ConcentratedHeatFlux"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConcentratedHeatFlux</span></code></a>(name, createStepName, ...)</p></td>
 <td><p>This method creates a ConcentratedHeatFlux object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.LoadModel.LoadModel.ConcPoreFluid" title="abaqus.Load.LoadModel.LoadModel.ConcPoreFluid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConcPoreFluid</span></code></a>(name, createStepName, region, ...)</p></td>
+<td><p>This method creates a ConcPoreFluid object.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.LoadModel.LoadModel.ConnectorForce" title="abaqus.Load.LoadModel.LoadModel.ConnectorForce"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorForce</span></code></a>(name, createStepName[, ...])</p></td>
 <td><p>This method creates a ConnectorForce object on a wire region.</p></td>
@@ -533,6 +697,33 @@
 </tbody>
 </table>
 </div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, description, ...])</p></td>
+<td><p>This method creates a Model object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromInputFile</span></code>(name, inputFileName)</p></td>
+<td><p>This method creates a Model object by reading the keywords in an input file and creating the corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromOdbFile</span></code>(name, odbFileName)</p></td>
+<td><p>This method creates a Model object by reading an output database and creating any corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromNastranFile</span></code>(modelName, inputFileName)</p></td>
+<td><p>This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>([description, noPartsInputFile, ...])</p></td>
+<td><p>This method modifies the Model object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Load.LoadModel.LoadModel.BodyCharge">
 <span class="sig-name descname"><span class="pre">BodyCharge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createStepName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">magnitude</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UNSET'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distributionType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UNIFORM'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/LoadModel.py#L53-L103"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.LoadModel.LoadModel.BodyCharge" title="Permalink to this definition">#</a></dt>
@@ -2326,35 +2517,6 @@ objects derived from Load.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.Load.Load.deactivate" title="abaqus.Load.Load.Load.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
-<td><p>This method deactivates the load in the specified step and all its subsequent steps.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.Load.Load.delete" title="abaqus.Load.Load.Load.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
-<td><p>This method allows you to delete existing loads.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.Load.Load.move" title="abaqus.Load.Load.Load.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
-<td><p>This method moves the load state object from one step to a different step.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.Load.Load.reset" title="abaqus.Load.Load.Load.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
-<td><p>This method resets the load state of the specified step to the state of the previous general analysis step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.Load.Load.resume" title="abaqus.Load.Load.Load.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
-<td><p>This method resumes the load that was previously suppressed.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.Load.Load.suppress" title="abaqus.Load.Load.Load.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
-<td><p>This method suppresses the load.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2508,14 +2670,6 @@ object are common to all objects derived from LoadState.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2588,23 +2742,6 @@ The BodyCharge object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.BodyCharge.BodyCharge.setValues" title="abaqus.Load.BodyCharge.BodyCharge.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([amplitude, distributionType, field])</p></td>
-<td><p>This method modifies the data for an existing BodyCharge object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.BodyCharge.BodyCharge.setValuesInStep" title="abaqus.Load.BodyCharge.BodyCharge.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing BodyCharge object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -2797,16 +2934,6 @@ The BodyChargeState object is derived from the LoadState object.</p>
 <li><p>DECHARGE</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2918,23 +3045,6 @@ The BodyConcentrationFlux object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux.setValues" title="abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([field, distributionType, amplitude])</p></td>
-<td><p>This method modifies the data for an existing BodyConcentrationFlux object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux.setValuesInStep" title="abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing BodyConcentrationFlux object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -3128,16 +3238,6 @@ The BodyConcentrationFluxState object is derived from the LoadState object.</p>
 <li><p>CFLUX</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -3248,23 +3348,6 @@ The BodyCurrent object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.BodyCurrent.BodyCurrent.setValues" title="abaqus.Load.BodyCurrent.BodyCurrent.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([amplitude, distributionType, field])</p></td>
-<td><p>This method modifies the data for an existing BodyCurrent object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.BodyCurrent.BodyCurrent.setValuesInStep" title="abaqus.Load.BodyCurrent.BodyCurrent.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing BodyCurrent object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -3450,23 +3533,6 @@ The BodyCurrentDensity object is derived from the Load object.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.BodyCurrentDensity.BodyCurrentDensity.setValues" title="abaqus.Load.BodyCurrentDensity.BodyCurrentDensity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([amplitude, distributionType])</p></td>
-<td><p>This method modifies the data for an existing BodyCurrentDensity object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.BodyCurrentDensity.BodyCurrentDensity.setValuesInStep" title="abaqus.Load.BodyCurrentDensity.BodyCurrentDensity.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, comp1, comp2, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing BodyCurrentDensity object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -3647,16 +3713,6 @@ The BodyCurrentState object is derived from the LoadState object.</p>
 <li><p>DECURRENT</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -3771,23 +3827,6 @@ The BodyForce object is derived from the Load object.</p>
 <ul class="simple">
 <li><p>DLOAD</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.BodyForce.BodyForce.setValues" title="abaqus.Load.BodyForce.BodyForce.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([field, distributionType, comp1, ...])</p></td>
-<td><p>This method modifies the data for an existing BodyForce object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.BodyForce.BodyForce.setValuesInStep" title="abaqus.Load.BodyForce.BodyForce.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, comp1, comp2, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing BodyForce object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -3998,20 +4037,6 @@ The BodyForceState object is derived from the LoadState object.</p>
 <li><p>DLOAD</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>comp1</strong></dt><dd></dd>
-<dt><strong>comp1State</strong></dt><dd></dd>
-<dt><strong>comp2</strong></dt><dd></dd>
-<dt><strong>comp2State</strong></dt><dd></dd>
-<dt><strong>comp3</strong></dt><dd></dd>
-<dt><strong>comp3State</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4160,23 +4185,6 @@ The BodyHeatFlux object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.BodyHeatFlux.BodyHeatFlux.setValues" title="abaqus.Load.BodyHeatFlux.BodyHeatFlux.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([field, distributionType, amplitude])</p></td>
-<td><p>This method modifies the data for an existing BodyHeatFlux object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.BodyHeatFlux.BodyHeatFlux.setValuesInStep" title="abaqus.Load.BodyHeatFlux.BodyHeatFlux.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing BodyHeatFlux object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -4369,16 +4377,6 @@ The BodyHeatFluxState object is derived from the LoadState object.</p>
 <li><p>DFLUX</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4500,23 +4498,6 @@ The BoltLoad object is derived from the Load object.</p>
 </dl>
 </li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.BoltLoad.BoltLoad.setValues" title="abaqus.Load.BoltLoad.BoltLoad.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([boltMethod, datumAxis, ...])</p></td>
-<td><p>This method modifies the data for an existing BoltLoad object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.BoltLoad.BoltLoad.setValuesInStep" title="abaqus.Load.BoltLoad.BoltLoad.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, boltMethod, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing BoltLoad object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -4713,18 +4694,6 @@ The BoltLoadState object is derived from the LoadState object.</p>
 </li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>boltMethod</strong></dt><dd></dd>
-<dt><strong>boltMethodState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -4855,23 +4824,6 @@ The ConcCharge object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.ConcCharge.ConcCharge.setValues" title="abaqus.Load.ConcCharge.ConcCharge.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, field, amplitude])</p></td>
-<td><p>This method modifies the data for an existing ConcCharge object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.ConcCharge.ConcCharge.setValuesInStep" title="abaqus.Load.ConcCharge.ConcCharge.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing ConcCharge object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -5057,23 +5009,6 @@ The ConcConcFlux object is derived from the Load object.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.ConcConcFlux.ConcConcFlux.setValues" title="abaqus.Load.ConcConcFlux.ConcConcFlux.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, field, amplitude])</p></td>
-<td><p>This method modifies the data for an existing ConcConcFlux object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.ConcConcFlux.ConcConcFlux.setValuesInStep" title="abaqus.Load.ConcConcFlux.ConcConcFlux.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing ConcConcFlux object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -5257,23 +5192,6 @@ The ConcCurrent object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.ConcCurrent.ConcCurrent.setValues" title="abaqus.Load.ConcCurrent.ConcCurrent.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, field, amplitude])</p></td>
-<td><p>This method modifies the data for an existing ConcCurrent object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.ConcCurrent.ConcCurrent.setValuesInStep" title="abaqus.Load.ConcCurrent.ConcCurrent.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing ConcCurrent object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -5466,16 +5384,6 @@ The ConcCurrentState object is derived from the LoadState object.</p>
 <li><p>CECURRENT</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -5594,16 +5502,6 @@ The ConcentratedChargeState object is derived from the LoadState object.</p>
 <li><p>CECHARGE</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -5723,16 +5621,6 @@ The ConcentratedConcentrationFluxState object is derived from the LoadState obje
 <li><p>CFLUX</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -5843,30 +5731,6 @@ The ConcentratedForce object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>localCsys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.ConcentratedForce.ConcentratedForce.setValues" title="abaqus.Load.ConcentratedForce.ConcentratedForce.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, field, cf1, ...])</p></td>
-<td><p>This method modifies the data for an existing ConcentratedForce object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.ConcentratedForce.ConcentratedForce.setValuesInStep" title="abaqus.Load.ConcentratedForce.ConcentratedForce.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, cf1, cf2, cf3, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing ConcentratedForce object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -6110,20 +5974,6 @@ The ConcentratedForceState object is derived from the LoadState object.</p>
 <li><p>CLOAD</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>cf1</strong></dt><dd></dd>
-<dt><strong>cf1State</strong></dt><dd></dd>
-<dt><strong>cf2</strong></dt><dd></dd>
-<dt><strong>cf2State</strong></dt><dd></dd>
-<dt><strong>cf3</strong></dt><dd></dd>
-<dt><strong>cf3State</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -6272,23 +6122,6 @@ The ConcentratedHeatFlux object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux.setValues" title="abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, field, ...])</p></td>
-<td><p>This method modifies the data for an existing ConcentratedHeatFlux object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux.setValuesInStep" title="abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing ConcentratedHeatFlux object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -6649,16 +6482,6 @@ The ConcentratedPoreFluidState object is derived from the LoadState object.</p>
 <li><p>CLOAD</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -6769,23 +6592,6 @@ The ConcPoreFluid object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.ConcPoreFluid.ConcPoreFluid.setValues" title="abaqus.Load.ConcPoreFluid.ConcPoreFluid.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, field, amplitude])</p></td>
-<td><p>This method modifies the data for an existing ConcPoreFluid object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.ConcPoreFluid.ConcPoreFluid.setValuesInStep" title="abaqus.Load.ConcPoreFluid.ConcPoreFluid.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing ConcPoreFluid object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -6970,23 +6776,6 @@ The ConnectorForce object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.ConnectorForce.ConnectorForce.setValues" title="abaqus.Load.ConnectorForce.ConnectorForce.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([region, fastenerName, ...])</p></td>
-<td><p>This method modifies the data for an existing ConnectorForce object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.ConnectorForce.ConnectorForce.setValuesInStep" title="abaqus.Load.ConnectorForce.ConnectorForce.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, f1, f2, f3, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing ConnectorForce object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -7206,20 +6995,6 @@ The ConnectorForceState object is derived from the LoadState object.</p>
 <li><p>CONNECTOR LOAD</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>f1</strong></dt><dd></dd>
-<dt><strong>f1State</strong></dt><dd></dd>
-<dt><strong>f2</strong></dt><dd></dd>
-<dt><strong>f2State</strong></dt><dd></dd>
-<dt><strong>f3</strong></dt><dd></dd>
-<dt><strong>f3State</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -7374,23 +7149,6 @@ The ConnectorMoment object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.ConnectorMoment.ConnectorMoment.setValues" title="abaqus.Load.ConnectorMoment.ConnectorMoment.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([region, fastenerName, ...])</p></td>
-<td><p>This method modifies the data for an existing ConnectorMoment object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.ConnectorMoment.ConnectorMoment.setValuesInStep" title="abaqus.Load.ConnectorMoment.ConnectorMoment.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, m1, m2, m3, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing ConnectorMoment object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -7612,20 +7370,6 @@ The ConnectorMomentState object is derived from the LoadState object.</p>
 <li><p>CONNECTOR LOAD</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>m1</strong></dt><dd></dd>
-<dt><strong>m1State</strong></dt><dd></dd>
-<dt><strong>m2</strong></dt><dd></dd>
-<dt><strong>m2State</strong></dt><dd></dd>
-<dt><strong>m3</strong></dt><dd></dd>
-<dt><strong>m3State</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -7778,31 +7522,6 @@ The CoriolisForce object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>point1</strong></dt><dd></dd>
-<dt><strong>point2</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.CoriolisForce.CoriolisForce.setValues" title="abaqus.Load.CoriolisForce.CoriolisForce.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([amplitude, distributionType, field])</p></td>
-<td><p>This method modifies the data for an existing CoriolisForce object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.CoriolisForce.CoriolisForce.setValuesInStep" title="abaqus.Load.CoriolisForce.CoriolisForce.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing CoriolisForce object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -8013,16 +7732,6 @@ The CoriolisForceState object is derived from the LoadState object.</p>
 <li><p>DLOAD</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -8133,23 +7842,6 @@ The Gravity object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.Gravity.Gravity.setValues" title="abaqus.Load.Gravity.Gravity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, field, region, ...])</p></td>
-<td><p>This method modifies the data for an existing Gravity object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.Gravity.Gravity.setValuesInStep" title="abaqus.Load.Gravity.Gravity.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, comp1, comp2, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing Gravity object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -8361,20 +8053,6 @@ The GravityState object is derived from the LoadState object.</p>
 <li><p>DLOAD</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>comp1</strong></dt><dd></dd>
-<dt><strong>comp1State</strong></dt><dd></dd>
-<dt><strong>comp2</strong></dt><dd></dd>
-<dt><strong>comp2State</strong></dt><dd></dd>
-<dt><strong>comp3</strong></dt><dd></dd>
-<dt><strong>comp3State</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -8532,16 +8210,6 @@ The HydrostaticFluidFlowState object is derived from the LoadState object.</p>
 <li><p>FLUID FLUX</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -8652,30 +8320,6 @@ The InertiaRelief object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>localCoordinates</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.InertiaRelief.InertiaRelief.setValues" title="abaqus.Load.InertiaRelief.InertiaRelief.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([u1, u2, u3, ur1, ur2, ur3, ...])</p></td>
-<td><p>This method modifies the data for an existing InertiaRelief object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.InertiaRelief.InertiaRelief.setValuesInStep" title="abaqus.Load.InertiaRelief.InertiaRelief.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, u1, u2, u3, ur1, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing InertiaRelief object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -8889,23 +8533,6 @@ The InertiaReliefState object is derived from the LoadState object.</p>
 <li><p>INERTIA RELIEF</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>fixedState</strong></dt><dd></dd>
-<dt><strong>referencePoint</strong></dt><dd></dd>
-<dt><strong>referencePointState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-<dt><strong>u1State</strong></dt><dd></dd>
-<dt><strong>u2State</strong></dt><dd></dd>
-<dt><strong>u3State</strong></dt><dd></dd>
-<dt><strong>ur1State</strong></dt><dd></dd>
-<dt><strong>ur2State</strong></dt><dd></dd>
-<dt><strong>ur3State</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -9164,23 +8791,6 @@ The InwardVolAccel object is derived from the Load object.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.InwardVolAccel.InwardVolAccel.setValues" title="abaqus.Load.InwardVolAccel.InwardVolAccel.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, field, amplitude])</p></td>
-<td><p>This method modifies the data for an existing InwardVolAccel object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.InwardVolAccel.InwardVolAccel.setValuesInStep" title="abaqus.Load.InwardVolAccel.InwardVolAccel.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing InwardVolAccel object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -9373,16 +8983,6 @@ The InwardVolAccelState object is derived from the LoadState object.</p>
 <li><p>CLOAD</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -9493,23 +9093,6 @@ The LineLoad object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.LineLoad.LineLoad.setValues" title="abaqus.Load.LineLoad.LineLoad.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, field, comp1, ...])</p></td>
-<td><p>This method modifies the data for an existing LineLoad object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.LineLoad.LineLoad.setValuesInStep" title="abaqus.Load.LineLoad.LineLoad.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, comp1, comp2, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing LineLoad object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -9733,20 +9316,6 @@ The LineLoadState object is derived from the LoadState object.</p>
 <li><p>DLOAD</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>comp1</strong></dt><dd></dd>
-<dt><strong>comp1State</strong></dt><dd></dd>
-<dt><strong>comp2</strong></dt><dd></dd>
-<dt><strong>comp2State</strong></dt><dd></dd>
-<dt><strong>comp3</strong></dt><dd></dd>
-<dt><strong>comp3State</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -9888,21 +9457,7 @@ values are:</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.LoadStep.LoadStep">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LoadStep</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/LoadStep.py#L6-L49"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.LoadStep.LoadStep" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#id7" title="abaqus.Load.LoadStep.LoadStep.LoadCase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LoadCase</span></code></a>(name[, boundaryConditions, loads, ...])</p></td>
-<td><p>This method creates a load case in a step.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="autoclasstoc docutils container">
+<dd><div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">StepBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -10069,30 +9624,6 @@ The Moment object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>localCsys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.Moment.Moment.setValues" title="abaqus.Load.Moment.Moment.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([cm1, cm2, cm3, amplitude, ...])</p></td>
-<td><p>This method modifies the data for an existing Moment object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.Moment.Moment.setValuesInStep" title="abaqus.Load.Moment.Moment.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, comp1, comp2, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing Moment object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -10334,20 +9865,6 @@ The MomentState object is derived from the LoadState object.</p>
 <li><p>CLOAD</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>cm1</strong></dt><dd></dd>
-<dt><strong>cm1State</strong></dt><dd></dd>
-<dt><strong>cm2</strong></dt><dd></dd>
-<dt><strong>cm2State</strong></dt><dd></dd>
-<dt><strong>cm3</strong></dt><dd></dd>
-<dt><strong>cm3State</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -10496,23 +10013,6 @@ The PEGLoad object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.PEGLoad.PEGLoad.setValues" title="abaqus.Load.PEGLoad.PEGLoad.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, field, comp1, ...])</p></td>
-<td><p>This method modifies the data for an existing PEGLoad object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.PEGLoad.PEGLoad.setValuesInStep" title="abaqus.Load.PEGLoad.PEGLoad.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, comp1, comp2, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing PEGLoad object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -10722,20 +10222,6 @@ The PEGLoadState object is derived from the LoadState object.</p>
 <li><p>CLOAD</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>comp1</strong></dt><dd></dd>
-<dt><strong>comp1State</strong></dt><dd></dd>
-<dt><strong>comp2</strong></dt><dd></dd>
-<dt><strong>comp2State</strong></dt><dd></dd>
-<dt><strong>comp3</strong></dt><dd></dd>
-<dt><strong>comp3State</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -10885,30 +10371,6 @@ The PipePressure object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>diameter</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.PipePressure.PipePressure.setValues" title="abaqus.Load.PipePressure.PipePressure.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([field, amplitude, ...])</p></td>
-<td><p>This method modifies the data for an existing PipePressure object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.PipePressure.PipePressure.setValuesInStep" title="abaqus.Load.PipePressure.PipePressure.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing PipePressure object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -11135,20 +10597,6 @@ The PipePressureState object is derived from the LoadState object.</p>
 </li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>hReference</strong></dt><dd></dd>
-<dt><strong>hReferenceState</strong></dt><dd></dd>
-<dt><strong>hZero</strong></dt><dd></dd>
-<dt><strong>hZeroState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -11299,23 +10747,6 @@ The Pressure object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.Pressure.Pressure.setValues" title="abaqus.Load.Pressure.Pressure.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([field, refPoint, ...])</p></td>
-<td><p>This method modifies the data for an existing Pressure object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.Pressure.Pressure.setValuesInStep" title="abaqus.Load.Pressure.Pressure.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing Pressure object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -11525,20 +10956,6 @@ The PressureState object is derived from the LoadState object.</p>
 </li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>hReference</strong></dt><dd></dd>
-<dt><strong>hReferenceState</strong></dt><dd></dd>
-<dt><strong>hZero</strong></dt><dd></dd>
-<dt><strong>hZeroState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -11689,31 +11106,6 @@ The RotationalBodyForce object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>point1</strong></dt><dd></dd>
-<dt><strong>point2</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.RotationalBodyForce.RotationalBodyForce.setValues" title="abaqus.Load.RotationalBodyForce.RotationalBodyForce.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, field, ...])</p></td>
-<td><p>This method modifies the data for an existing RotationalBodyForce object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.RotationalBodyForce.RotationalBodyForce.setValuesInStep" title="abaqus.Load.RotationalBodyForce.RotationalBodyForce.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing RotationalBodyForce object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -11955,16 +11347,6 @@ The RotationalBodyForceState object is derived from the LoadState object.</p>
 <li><p>DLOAD</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -12075,23 +11457,6 @@ The ShellEdgeLoad object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValues" title="abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, field, ...])</p></td>
-<td><p>This method modifies the data for an existing ShellEdgeLoad object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValuesInStep" title="abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing ShellEdgeLoad object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -12327,16 +11692,6 @@ The ShellEdgeLoadState object is derived from the LoadState object.</p>
 </li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -12447,30 +11802,6 @@ The SubmodelSB object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>absoluteExteriorTolerance</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.SubmodelSB.SubmodelSB.setValues" title="abaqus.Load.SubmodelSB.SubmodelSB.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([globalDrivingRegion, ...])</p></td>
-<td><p>This method modifies the data for an existing SubmodelSB object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.SubmodelSB.SubmodelSB.setValuesInStep" title="abaqus.Load.SubmodelSB.SubmodelSB.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, fixed, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing SubmodelSB object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -12691,17 +12022,6 @@ The SubmodelSBState object is derived from the LoadState object.</p>
 </li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>globalIncrement</strong></dt><dd></dd>
-<dt><strong>globalIncrementState</strong></dt><dd></dd>
-<dt><strong>globalStepState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -12836,23 +12156,6 @@ The SubstructureLoad object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.SubstructureLoad.SubstructureLoad.setValues" title="abaqus.Load.SubstructureLoad.SubstructureLoad.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([amplitude])</p></td>
-<td><p>This method modifies the data for an existing SubstructureLoad object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.SubstructureLoad.SubstructureLoad.setValuesInStep" title="abaqus.Load.SubstructureLoad.SubstructureLoad.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, loadCaseNames, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing SubstructureLoad object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -13019,16 +12322,6 @@ The SubstructureLoadState object is derived from the LoadState object.</p>
 <li><p>SLOAD</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -13148,23 +12441,6 @@ The SurfaceCharge object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.SurfaceCharge.SurfaceCharge.setValues" title="abaqus.Load.SurfaceCharge.SurfaceCharge.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, field, amplitude])</p></td>
-<td><p>This method modifies the data for an existing SurfaceCharge object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.SurfaceCharge.SurfaceCharge.setValuesInStep" title="abaqus.Load.SurfaceCharge.SurfaceCharge.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing SurfaceCharge object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -13357,16 +12633,6 @@ The SurfaceChargeState object is derived from the LoadState object.</p>
 <li><p>DSECHARGE</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -13478,23 +12744,6 @@ The SurfaceConcentrationFlux object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux.setValues" title="abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([field, distributionType, amplitude])</p></td>
-<td><p>This method modifies the data for an existing SurfaceConcentrationFlux object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux.setValuesInStep" title="abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing SurfaceConcentrationFlux object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -13691,16 +12940,6 @@ The SurfaceConcentrationFluxState object is derived from the LoadState object.</
 <li><p>DSFLUX</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -13811,23 +13050,6 @@ The SurfaceCurrent object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.SurfaceCurrent.SurfaceCurrent.setValues" title="abaqus.Load.SurfaceCurrent.SurfaceCurrent.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, field, amplitude])</p></td>
-<td><p>This method modifies the data for an existing SurfaceCurrent object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.SurfaceCurrent.SurfaceCurrent.setValuesInStep" title="abaqus.Load.SurfaceCurrent.SurfaceCurrent.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing SurfaceCurrent object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -14013,23 +13235,6 @@ The SurfaceCurrentDensity object is derived from the Load object.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity.setValues" title="abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, amplitude])</p></td>
-<td><p>This method modifies the data for an existing SurfaceCurrentDensity object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity.setValuesInStep" title="abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, comp1, comp2, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing SurfaceCurrentDensity object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -14210,16 +13415,6 @@ The SurfaceCurrentState object is derived from the LoadState object.</p>
 <li><p>DSECURRENT</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -14330,23 +13525,6 @@ The SurfaceHeatFlux object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux.setValues" title="abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([field, distributionType, amplitude])</p></td>
-<td><p>This method modifies the data for an existing SurfaceHeatFlux object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux.setValuesInStep" title="abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing SurfaceHeatFlux object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -14540,16 +13718,6 @@ The SurfaceHeatFluxState object is derived from the LoadState object.</p>
 <li><p>DSFLUX</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -14661,23 +13829,6 @@ The SurfacePoreFluid object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.SurfacePoreFluid.SurfacePoreFluid.setValues" title="abaqus.Load.SurfacePoreFluid.SurfacePoreFluid.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([field, distributionType, amplitude])</p></td>
-<td><p>This method modifies the data for an existing SurfacePoreFluid object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.SurfacePoreFluid.SurfacePoreFluid.setValuesInStep" title="abaqus.Load.SurfacePoreFluid.SurfacePoreFluid.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing SurfacePoreFluid object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -14872,16 +14023,6 @@ The SurfacePoreFluidState object is derived from the LoadState object.</p>
 <li><p>DSFLOW</p></li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -14992,30 +14133,6 @@ The SurfaceTraction object is derived from the Load object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>localCsys</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.SurfaceTraction.SurfaceTraction.setValues" title="abaqus.Load.SurfaceTraction.SurfaceTraction.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, field, ...])</p></td>
-<td><p>This method modifies the data for an existing SurfaceTraction object in the step where it is created.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.SurfaceTraction.SurfaceTraction.setValuesInStep" title="abaqus.Load.SurfaceTraction.SurfaceTraction.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing SurfaceTraction object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -15338,16 +14455,6 @@ The SurfaceTractionState object is derived from the LoadState object.</p>
 </li>
 </ul>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>magnitude</strong></dt><dd></dd>
-<dt><strong>magnitudeState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -15454,21 +14561,7 @@ values are:</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="id0">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LoadStep</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/LoadStep.py#L6-L49"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id0" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#id7" title="abaqus.Load.LoadStep.LoadStep.LoadCase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LoadCase</span></code></a>(name[, boundaryConditions, loads, ...])</p></td>
-<td><p>This method creates a load case in a step.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="autoclasstoc docutils container">
+<dd><div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">StepBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -15636,26 +14729,6 @@ condition.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">loadCases</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.LoadCase.LoadCase.resume" title="abaqus.Load.LoadCase.LoadCase.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
-<td><p>This method resumes the load case that was previously suppressed.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Load.LoadCase.LoadCase.setValues" title="abaqus.Load.LoadCase.LoadCase.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([boundaryConditions, loads, ...])</p></td>
-<td><p>This method modifies the LoadCase object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Load.LoadCase.LoadCase.suppress" title="abaqus.Load.LoadCase.LoadCase.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
-<td><p>This method suppresses the load case.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>

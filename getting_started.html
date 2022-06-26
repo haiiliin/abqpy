@@ -455,7 +455,7 @@ own Python interpreter without opening Abaqus</strong>, which is achieved via th
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus cae -noGUI script.py
 </pre></div>
 </div>
-<p>The secret is hided in the <a class="reference internal" href="reference/mdb.html#abaqus.Mdb.Mdb.Mdb.saveAs" title="abaqus.Mdb.Mdb.Mdb.saveAs"><code class="xref py py-meth docutils literal notranslate"><span class="pre">saveAs()</span></code></a> method:</p>
+<p>The secret is hided in the <code class="xref py py-meth docutils literal notranslate"><span class="pre">saveAs()</span></code> method:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">saveAs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pathName</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
     <span class="n">abaqus</span> <span class="o">=</span> <span class="s1">&#39;abaqus&#39;</span>
     <span class="k">if</span> <span class="s1">&#39;ABAQUS_BAT_PATH&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
@@ -463,12 +463,12 @@ own Python interpreter without opening Abaqus</strong>, which is achieved via th
     <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> cae -noGUI </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">abaqus</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
 </pre></div>
 </div>
-<p>In this package, the <a class="reference internal" href="reference/mdb.html#abaqus.Mdb.Mdb.Mdb.saveAs" title="abaqus.Mdb.Mdb.Mdb.saveAs"><code class="xref py py-meth docutils literal notranslate"><span class="pre">saveAs()</span></code></a> method is reimplemented, if you call this method in your
+<p>In this package, the <code class="xref py py-meth docutils literal notranslate"><span class="pre">saveAs()</span></code> method is reimplemented, if you call this method in your
 script (i.e., <cite>mdb.saveAs(‘model.cae’)</cite>), the Python interpreter (not Abaqus Python interpreter) will use the
-<strong>abaqus</strong> command to submit this script to Abaqus, when it is submited to Abaqus, <a class="reference internal" href="reference/mdb.html#abaqus.Mdb.Mdb.Mdb.saveAs" title="abaqus.Mdb.Mdb.Mdb.saveAs"><code class="xref py py-meth docutils literal notranslate"><span class="pre">saveAs()</span></code></a>
+<strong>abaqus</strong> command to submit this script to Abaqus, when it is submited to Abaqus, <code class="xref py py-meth docutils literal notranslate"><span class="pre">saveAs()</span></code>
 will be just a normal method to save the model because <cite>abqpy</cite> is not installed in Abaqus Python interpreter.</p>
-<p>In the output script, we might not have to use the <a class="reference internal" href="reference/mdb.html#abaqus.Mdb.Mdb.Mdb.saveAs" title="abaqus.Mdb.Mdb.Mdb.saveAs"><code class="xref py py-meth docutils literal notranslate"><span class="pre">saveAs()</span></code></a> method, then another similar
-method <a class="reference internal" href="reference/session.html#abaqus.Session.Session.Session.openOdb" title="abaqus.Session.Session.Session.openOdb"><code class="xref py py-meth docutils literal notranslate"><span class="pre">openOdb()</span></code></a> is also reimplemented:</p>
+<p>In the output script, we might not have to use the <code class="xref py py-meth docutils literal notranslate"><span class="pre">saveAs()</span></code> method, then another similar
+method <code class="xref py py-meth docutils literal notranslate"><span class="pre">openOdb()</span></code> is also reimplemented:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">openOdb</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">abaqus</span> <span class="o">=</span> <span class="s1">&#39;abaqus&#39;</span>
     <span class="k">if</span> <span class="s1">&#39;ABAQUS_BAT_PATH&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>

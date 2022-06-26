@@ -415,7 +415,171 @@
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">stefanBoltzmann</span></code></p></td>
+<td><p>None or a Float specifying the Stefan-Boltzmann constant.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">absoluteZero</span></code></p></td>
+<td><p>None or a Float specifying the absolute zero constant.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">waveFormulation</span></code></p></td>
+<td><p>A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">universalGas</span></code></p></td>
+<td><p>None or a Float specifying the universal gas constant.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">noPartsInputFile</span></code></p></td>
+<td><p>A Boolean specifying whether an input file should be written without parts and assemblies.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartIncrement</span></code></p></td>
+<td><p>An Int specifying the increment, interval, iteration or cycle where the restart analysis will start.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">endRestartStep</span></code></p></td>
+<td><p>A Boolean specifying that the step specified by <strong>restartStep</strong> should be terminated at the increment specified by <strong>restartIncrement</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">shellToSolid</span></code></p></td>
+<td><p>A Boolean specifying that a shell global model drives a solid submodel.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">lastChangedCount</span></code></p></td>
+<td><p>A Float specifying the time stamp that indicates when the model was last changed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></p></td>
+<td><p>A String specifying the purpose and contents of the Model object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartJob</span></code></p></td>
+<td><p>A String specifying the name of the job that generated the restart data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartStep</span></code></p></td>
+<td><p>A String specifying the name of the step where the restart analysis will start.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">globalJob</span></code></p></td>
+<td><p>A String specifying the name of the job that generated the results for the global model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyConstraints</span></code></p></td>
+<td><p>A boolean specifying the status of constraints created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyConnectors</span></code></p></td>
+<td><p>A boolean specifying the status of connectors created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyInteractions</span></code></p></td>
+<td><p>A boolean specifying the status of interactions created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">keywordBlock</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model.html#abaqus.Model.KeywordBlock.KeywordBlock" title="abaqus.Model.KeywordBlock.KeywordBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">KeywordBlock</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">rootAssembly</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../../reference/mdb/model/assembly.html#abaqus.Assembly.Assembly.Assembly" title="abaqus.Assembly.Assembly.Assembly"><code class="xref py py-class docutils literal notranslate"><span class="pre">Assembly</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">amplitudes</span></code></p></td>
+<td><p>A repository of Amplitude objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">profiles</span></code></p></td>
+<td><p>A repository of Profile objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundaryConditions</span></code></p></td>
+<td><p>A repository of BoundaryCondition objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">constraints</span></code></p></td>
+<td><p>A repository of ConstrainedSketchConstraint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyticalFields</span></code></p></td>
+<td><p>A repository of AnalyticalField objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">discreteFields</span></code></p></td>
+<td><p>A repository of DiscreteField objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">predefinedFields</span></code></p></td>
+<td><p>A repository of PredefinedField objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactions</span></code></p></td>
+<td><p>A repository of Interaction objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactionProperties</span></code></p></td>
+<td><p>A repository of InteractionProperty objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactControls</span></code></p></td>
+<td><p>A repository of ContactControl objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactInitializations</span></code></p></td>
+<td><p>A repository of ContactInitialization objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactStabilizations</span></code></p></td>
+<td><p>A repository of ContactStabilization objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkedInstances</span></code></p></td>
+<td><p>A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkedParts</span></code></p></td>
+<td><p>A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">loads</span></code></p></td>
+<td><p>A repository of Load objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">materials</span></code></p></td>
+<td><p>A repository of Material objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">calibrations</span></code></p></td>
+<td><p>A repository of Calibration objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sections</span></code></p></td>
+<td><p>A repository of Section objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">remeshingRules</span></code></p></td>
+<td><p>A repository of RemeshingRule objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sketches</span></code></p></td>
+<td><p>A repository of ConstrainedSketch objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parts</span></code></p></td>
+<td><p>A repository of Part objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">steps</span></code></p></td>
+<td><p>A repository of Step objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">featureOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/part_assembly/feature.html#abaqus.Feature.FeatureOptions.FeatureOptions" title="abaqus.Feature.FeatureOptions.FeatureOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshConstraints</span></code></p></td>
+<td><p>A repository of AdaptiveMeshConstraint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshControls</span></code></p></td>
+<td><p>A repository of AdaptiveMeshControl objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">timePoints</span></code></p></td>
+<td><p>A repository of TimePoint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></p></td>
+<td><p>A repository of Filter objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">integratedOutputSections</span></code></p></td>
+<td><p>A repository of IntegratedOutputSection objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldOutputRequests</span></code></p></td>
+<td><p>A repository of FieldOutputRequest objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">historyOutputRequests</span></code></p></td>
+<td><p>A repository of HistoryOutputRequest objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimizationTasks</span></code></p></td>
+<td><p>A repository of OptimizationTask objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <colgroup>
@@ -429,9 +593,36 @@
 </tbody>
 </table>
 </div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, description, ...])</p></td>
+<td><p>This method creates a Model object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromInputFile</span></code>(name, inputFileName)</p></td>
+<td><p>This method creates a Model object by reading the keywords in an input file and creating the corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromOdbFile</span></code>(name, odbFileName)</p></td>
+<td><p>This method creates a Model object by reading an output database and creating any corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromNastranFile</span></code>(modelName, inputFileName)</p></td>
+<td><p>This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>([description, noPartsInputFile, ...])</p></td>
+<td><p>This method modifies the Model object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
 </dd></dl>
 
 </section>
+<hr class="docutils" />
 <section id="in-odb">
 <h3>In Odb<a class="headerlink" href="#in-odb" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
@@ -446,7 +637,63 @@
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OdbBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isReadOnly</span></code></p></td>
+<td><p>A Boolean specifying whether the output database was opened with read-only access.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">amplitudes</span></code></p></td>
+<td><p>A repository of Amplitude objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></p></td>
+<td><p>A repository of Filter objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">rootAssembly</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbAssembly.OdbAssembly" title="abaqus.Odb.OdbAssembly.OdbAssembly"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbAssembly</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">jobData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.JobData.JobData" title="abaqus.Odb.JobData.JobData"><code class="xref py py-class docutils literal notranslate"><span class="pre">JobData</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parts</span></code></p></td>
+<td><p>A repository of OdbPart objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">materials</span></code></p></td>
+<td><p>A repository of Material objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">steps</span></code></p></td>
+<td><p>A repository of OdbStep objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sections</span></code></p></td>
+<td><p>A repository of Section objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sectionCategories</span></code></p></td>
+<td><p>A repository of SectionCategory objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sectorDefinition</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.SectorDefinition.SectorDefinition" title="abaqus.Odb.SectorDefinition.SectorDefinition"><code class="xref py py-class docutils literal notranslate"><span class="pre">SectorDefinition</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">userData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.UserData.UserData" title="abaqus.Odb.UserData.UserData"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserData</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">customData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">profiles</span></code></p></td>
+<td><p>A repository of Profile objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <colgroup>
@@ -460,10 +707,37 @@
 </tbody>
 </table>
 </div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OdbBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, analysisTitle, description, ...])</p></td>
+<td><p>This method creates a new Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code>()</p></td>
+<td><p>This method closes an output database.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFrame</span></code>(frameValue[, match])</p></td>
+<td><p>This method returns the frame at the specified time, frequency, or mode.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code>()</p></td>
+<td><p>This method saves output to an output database (.odb ) file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code>()</p></td>
+<td><p>This method is used to update an Odb object in memory while an Abaqus analysis writes data to the associated output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
 </dd></dl>
 
 </section>
 </section>
+<hr class="docutils" />
 <section id="assign-properties-to-the-material">
 <h2>Assign properties to the material<a class="headerlink" href="#assign-properties-to-the-material" title="Permalink to this headline">#</a></h2>
 <dl class="py class">
@@ -491,7 +765,234 @@ that one Material object cannot contain two AcousticMedium objects, for example.
 <li><p>MATERIAL</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">MaterialBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">acousticMedium</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium" title="abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium"><code class="xref py py-class docutils literal notranslate"><span class="pre">AcousticMedium</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">brittleCracking</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking" title="abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking"><code class="xref py py-class docutils literal notranslate"><span class="pre">BrittleCracking</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">capPlasticity</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapPlasticity.CapPlasticity" title="abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapPlasticity.CapPlasticity"><code class="xref py py-class docutils literal notranslate"><span class="pre">CapPlasticity</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">castIronPlasticity</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Plastic.Metal.CastIron.CastIronPlasticity.CastIronPlasticity" title="abaqus.Material.Plastic.Metal.CastIron.CastIronPlasticity.CastIronPlasticity"><code class="xref py py-class docutils literal notranslate"><span class="pre">CastIronPlasticity</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clayPlasticity</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity" title="abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClayPlasticity</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">concrete</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Plastic.Concrete.Concrete.Concrete" title="abaqus.Material.Plastic.Concrete.Concrete.Concrete"><code class="xref py py-class docutils literal notranslate"><span class="pre">Concrete</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">concreteDamagedPlasticity</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Plastic.Concrete.ConcreteDamagedPlasticity.ConcreteDamagedPlasticity" title="abaqus.Material.Plastic.Concrete.ConcreteDamagedPlasticity.ConcreteDamagedPlasticity"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConcreteDamagedPlasticity</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">conductivity</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.HeatTransfer.Conductivity.Conductivity" title="abaqus.Material.Others.HeatTransfer.Conductivity.Conductivity"><code class="xref py py-class docutils literal notranslate"><span class="pre">Conductivity</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">creep</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Plastic.Creep.Creep.Creep" title="abaqus.Material.Plastic.Creep.Creep.Creep"><code class="xref py py-class docutils literal notranslate"><span class="pre">Creep</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">crushableFoam</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Plastic.CrushableFoam.CrushableFoam.CrushableFoam" title="abaqus.Material.Plastic.CrushableFoam.CrushableFoam.CrushableFoam"><code class="xref py py-class docutils literal notranslate"><span class="pre">CrushableFoam</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ductileDamageInitiation</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fldDamageInitiation</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">flsdDamageInitiation</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">johnsonCookDamageInitiation</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">maxeDamageInitiation</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">maxsDamageInitiation</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">maxpeDamageInitiation</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">maxpsDamageInitiation</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mkDamageInitiation</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">msfldDamageInitiation</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">quadeDamageInitiation</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">quadsDamageInitiation</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">shearDamageInitiation</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">hashinDamageInitiation</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">damping</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.Mechanical.Damping.Damping" title="abaqus.Material.Others.Mechanical.Damping.Damping"><code class="xref py py-class docutils literal notranslate"><span class="pre">Damping</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deformationPlasticity</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Plastic.Metal.Deformation.DeformationPlasticity.DeformationPlasticity" title="abaqus.Material.Plastic.Metal.Deformation.DeformationPlasticity.DeformationPlasticity"><code class="xref py py-class docutils literal notranslate"><span class="pre">DeformationPlasticity</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">density</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Density.Density.Density" title="abaqus.Material.Density.Density.Density"><code class="xref py py-class docutils literal notranslate"><span class="pre">Density</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">depvar</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.User.Depvar.Depvar" title="abaqus.Material.Others.User.Depvar.Depvar"><code class="xref py py-class docutils literal notranslate"><span class="pre">Depvar</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">dielectric</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric" title="abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dielectric</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">diffusivity</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.MassDiffusion.Diffusivity.Diffusivity" title="abaqus.Material.Others.MassDiffusion.Diffusivity.Diffusivity"><code class="xref py py-class docutils literal notranslate"><span class="pre">Diffusivity</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">druckerPrager</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPrager.DruckerPrager" title="abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPrager.DruckerPrager"><code class="xref py py-class docutils literal notranslate"><span class="pre">DruckerPrager</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">elastic</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Elastic.Linear.Elastic.Elastic" title="abaqus.Material.Elastic.Linear.Elastic.Elastic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Elastic</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">electricalConductivity</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity" title="abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity"><code class="xref py py-class docutils literal notranslate"><span class="pre">ElectricalConductivity</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">eos</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Eos.Eos.Eos" title="abaqus.Material.Eos.Eos.Eos"><code class="xref py py-class docutils literal notranslate"><span class="pre">Eos</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">expansion</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.Mechanical.Expansion.Expansion" title="abaqus.Material.Others.Mechanical.Expansion.Expansion"><code class="xref py py-class docutils literal notranslate"><span class="pre">Expansion</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fluidLeakoff</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.PoreFluidFlow.FluidLeakoff.FluidLeakoff" title="abaqus.Material.Others.PoreFluidFlow.FluidLeakoff.FluidLeakoff"><code class="xref py py-class docutils literal notranslate"><span class="pre">FluidLeakoff</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">gapFlow</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Gap.GapFlow.GapFlow" title="abaqus.Material.Gap.GapFlow.GapFlow"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapFlow</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">gasketThicknessBehavior</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior" title="abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior"><code class="xref py py-class docutils literal notranslate"><span class="pre">GasketThicknessBehavior</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">gasketTransverseShearElastic</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Gasket.GasketTransverseShearElastic.GasketTransverseShearElastic" title="abaqus.Material.Gasket.GasketTransverseShearElastic.GasketTransverseShearElastic"><code class="xref py py-class docutils literal notranslate"><span class="pre">GasketTransverseShearElastic</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">gasketMembraneElastic</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic" title="abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic"><code class="xref py py-class docutils literal notranslate"><span class="pre">GasketMembraneElastic</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">gel</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.PoreFluidFlow.Gel.Gel" title="abaqus.Material.Others.PoreFluidFlow.Gel.Gel"><code class="xref py py-class docutils literal notranslate"><span class="pre">Gel</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">heatGeneration</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.HeatTransfer.HeatGeneration.HeatGeneration" title="abaqus.Material.Others.HeatTransfer.HeatGeneration.HeatGeneration"><code class="xref py py-class docutils literal notranslate"><span class="pre">HeatGeneration</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">hyperelastic</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Elastic.HyperElastic.Hyperelastic.Hyperelastic" title="abaqus.Material.Elastic.HyperElastic.Hyperelastic.Hyperelastic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hyperelastic</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">hyperfoam</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Elastic.HyperElastic.HyperFoam.Hyperfoam.Hyperfoam" title="abaqus.Material.Elastic.HyperElastic.HyperFoam.Hyperfoam.Hyperfoam"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hyperfoam</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">hypoelastic</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Elastic.HypoElastic.Hypoelastic.Hypoelastic" title="abaqus.Material.Elastic.HypoElastic.Hypoelastic.Hypoelastic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hypoelastic</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">inelasticHeatFraction</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.HeatTransfer.InelasticHeatFraction.InelasticHeatFraction" title="abaqus.Material.Others.HeatTransfer.InelasticHeatFraction.InelasticHeatFraction"><code class="xref py py-class docutils literal notranslate"><span class="pre">InelasticHeatFraction</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">jouleHeatFraction</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.HeatTransfer.JouleHeatFraction.JouleHeatFraction" title="abaqus.Material.Others.HeatTransfer.JouleHeatFraction.JouleHeatFraction"><code class="xref py py-class docutils literal notranslate"><span class="pre">JouleHeatFraction</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">latentHeat</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.HeatTransfer.LatentHeat.LatentHeat" title="abaqus.Material.Others.HeatTransfer.LatentHeat.LatentHeat"><code class="xref py py-class docutils literal notranslate"><span class="pre">LatentHeat</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">lowDensityFoam</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Elastic.LowDensityFoam.LowDensityFoam.LowDensityFoam" title="abaqus.Material.Elastic.LowDensityFoam.LowDensityFoam.LowDensityFoam"><code class="xref py py-class docutils literal notranslate"><span class="pre">LowDensityFoam</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">magneticPermeability</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.Electromagnetic.MagneticPermeability.MagneticPermeability" title="abaqus.Material.Others.Electromagnetic.MagneticPermeability.MagneticPermeability"><code class="xref py py-class docutils literal notranslate"><span class="pre">MagneticPermeability</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mohrCoulombPlasticity</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity" title="abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity"><code class="xref py py-class docutils literal notranslate"><span class="pre">MohrCoulombPlasticity</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">moistureSwelling</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.PoreFluidFlow.MoistureSwelling.MoistureSwelling.MoistureSwelling" title="abaqus.Material.Others.PoreFluidFlow.MoistureSwelling.MoistureSwelling.MoistureSwelling"><code class="xref py py-class docutils literal notranslate"><span class="pre">MoistureSwelling</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mullinsEffect</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.TestData.MullinsEffect.MullinsEffect" title="abaqus.Material.TestData.MullinsEffect.MullinsEffect"><code class="xref py py-class docutils literal notranslate"><span class="pre">MullinsEffect</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">permeability</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.PoreFluidFlow.Permeability.Permeability.Permeability" title="abaqus.Material.Others.PoreFluidFlow.Permeability.Permeability.Permeability"><code class="xref py py-class docutils literal notranslate"><span class="pre">Permeability</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">piezoelectric</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.Electromagnetic.Piezoelectric.Piezoelectric" title="abaqus.Material.Others.Electromagnetic.Piezoelectric.Piezoelectric"><code class="xref py py-class docutils literal notranslate"><span class="pre">Piezoelectric</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">plastic</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Plastic.Plastic.Plastic" title="abaqus.Material.Plastic.Plastic.Plastic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Plastic</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">poreFluidExpansion</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.Mechanical.PoreFluidExpansion.PoreFluidExpansion" title="abaqus.Material.Others.Mechanical.PoreFluidExpansion.PoreFluidExpansion"><code class="xref py py-class docutils literal notranslate"><span class="pre">PoreFluidExpansion</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">porousBulkModuli</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.PoreFluidFlow.PorousBulkModuli.PorousBulkModuli" title="abaqus.Material.Others.PoreFluidFlow.PorousBulkModuli.PorousBulkModuli"><code class="xref py py-class docutils literal notranslate"><span class="pre">PorousBulkModuli</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">porousElastic</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic" title="abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic"><code class="xref py py-class docutils literal notranslate"><span class="pre">PorousElastic</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">porousMetalPlasticity</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Plastic.Metal.Porous.PorousMetalPlasticity.PorousMetalPlasticity" title="abaqus.Material.Plastic.Metal.Porous.PorousMetalPlasticity.PorousMetalPlasticity"><code class="xref py py-class docutils literal notranslate"><span class="pre">PorousMetalPlasticity</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">regularization</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Regularization.Regularization" title="abaqus.Material.Regularization.Regularization"><code class="xref py py-class docutils literal notranslate"><span class="pre">Regularization</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">solubility</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.MassDiffusion.Solubility.Solubility" title="abaqus.Material.Others.MassDiffusion.Solubility.Solubility"><code class="xref py py-class docutils literal notranslate"><span class="pre">Solubility</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sorption</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.PoreFluidFlow.Sorption.Sorption" title="abaqus.Material.Others.PoreFluidFlow.Sorption.Sorption"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sorption</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">specificHeat</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.HeatTransfer.SpecificHeat.SpecificHeat" title="abaqus.Material.Others.HeatTransfer.SpecificHeat.SpecificHeat"><code class="xref py py-class docutils literal notranslate"><span class="pre">SpecificHeat</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">swelling</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Plastic.Swelling.Swelling.Swelling" title="abaqus.Material.Plastic.Swelling.Swelling.Swelling"><code class="xref py py-class docutils literal notranslate"><span class="pre">Swelling</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">userDefinedField</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.User.UserDefinedField.UserDefinedField" title="abaqus.Material.Others.User.UserDefinedField.UserDefinedField"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserDefinedField</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">userMaterial</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.User.UserMaterial.UserMaterial" title="abaqus.Material.Others.User.UserMaterial.UserMaterial"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserMaterial</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">userOutputVariables</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.User.UserOutputVariables.UserOutputVariables" title="abaqus.Material.Others.User.UserOutputVariables.UserOutputVariables"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserOutputVariables</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viscoelastic</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic" title="abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Viscoelastic</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viscosity</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Others.Mechanical.Viscosity.Viscosity.Viscosity" title="abaqus.Material.Others.Mechanical.Viscosity.Viscosity.Viscosity"><code class="xref py py-class docutils literal notranslate"><span class="pre">Viscosity</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viscous</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous" title="abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous"><code class="xref py py-class docutils literal notranslate"><span class="pre">Viscous</span></code></a> object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <colgroup>
@@ -550,47 +1051,35 @@ that one Material object cannot contain two AcousticMedium objects, for example.
 <tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.DruckerPrager" title="abaqus.Material.Material.Material.DruckerPrager"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DruckerPrager</span></code></a>(table[, shearCriterion, ...])</p></td>
 <td><p>This method creates a DruckerPrager object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.DuctileDamageInitiation" title="abaqus.Material.Material.Material.DuctileDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DuctileDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Elastic" title="abaqus.Material.Material.Material.Elastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Elastic</span></code></a>(table[, type, noCompression, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Elastic" title="abaqus.Material.Material.Material.Elastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Elastic</span></code></a>(table[, type, noCompression, ...])</p></td>
 <td><p>This method creates an Elastic object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.ElectricalConductivity" title="abaqus.Material.Material.Material.ElectricalConductivity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ElectricalConductivity</span></code></a>(table[, type, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.ElectricalConductivity" title="abaqus.Material.Material.Material.ElectricalConductivity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ElectricalConductivity</span></code></a>(table[, type, ...])</p></td>
 <td><p>This method creates an ElectricalConductivity object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Eos" title="abaqus.Material.Material.Material.Eos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Eos</span></code></a>([type, temperatureDependency, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Eos" title="abaqus.Material.Material.Material.Eos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Eos</span></code></a>([type, temperatureDependency, ...])</p></td>
 <td><p>This method creates an Eos object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Expansion" title="abaqus.Material.Material.Material.Expansion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expansion</span></code></a>([type, userSubroutine, zero, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Expansion" title="abaqus.Material.Material.Material.Expansion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expansion</span></code></a>([type, userSubroutine, zero, ...])</p></td>
 <td><p>This method creates an Expansion object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.FldDamageInitiation" title="abaqus.Material.Material.Material.FldDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FldDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.FlsdDamageInitiation" title="abaqus.Material.Material.Material.FlsdDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FlsdDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.FluidLeakoff" title="abaqus.Material.Material.Material.FluidLeakoff"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FluidLeakoff</span></code></a>([temperatureDependency, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.FluidLeakoff" title="abaqus.Material.Material.Material.FluidLeakoff"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FluidLeakoff</span></code></a>([temperatureDependency, ...])</p></td>
 <td><p>This method creates a FluidLeakoff object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.GapFlow" title="abaqus.Material.Material.Material.GapFlow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapFlow</span></code></a>(table[, kmax, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.GapFlow" title="abaqus.Material.Material.Material.GapFlow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapFlow</span></code></a>(table[, kmax, ...])</p></td>
 <td><p>This method creates a GapFlow object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.GasketMembraneElastic" title="abaqus.Material.Material.Material.GasketMembraneElastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GasketMembraneElastic</span></code></a>(table[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.GasketMembraneElastic" title="abaqus.Material.Material.Material.GasketMembraneElastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GasketMembraneElastic</span></code></a>(table[, ...])</p></td>
 <td><p>This method creates a GasketMembraneElastic object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.GasketThicknessBehavior" title="abaqus.Material.Material.Material.GasketThicknessBehavior"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GasketThicknessBehavior</span></code></a>(table[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.GasketThicknessBehavior" title="abaqus.Material.Material.Material.GasketThicknessBehavior"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GasketThicknessBehavior</span></code></a>(table[, ...])</p></td>
 <td><p>This method creates a GasketThicknessBehavior object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.GasketTransverseShearElastic" title="abaqus.Material.Material.Material.GasketTransverseShearElastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GasketTransverseShearElastic</span></code></a>(table[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.GasketTransverseShearElastic" title="abaqus.Material.Material.Material.GasketTransverseShearElastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GasketTransverseShearElastic</span></code></a>(table[, ...])</p></td>
 <td><p>This method creates a GasketTransverseShearElastic object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Gel" title="abaqus.Material.Material.Material.Gel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gel</span></code></a>(table)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Gel" title="abaqus.Material.Material.Material.Gel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gel</span></code></a>(table)</p></td>
 <td><p>This method creates a Gel object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.HashinDamageInitiation" title="abaqus.Material.Material.Material.HashinDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HashinDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Hyperelastic" title="abaqus.Material.Material.Material.Hyperelastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hyperelastic</span></code></a>(table[, type, moduliTimeScale, ...])</p></td>
 <td><p>This method creates a Hyperelastic object.</p></td>
@@ -604,35 +1093,17 @@ that one Material object cannot contain two AcousticMedium objects, for example.
 <tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.InelasticHeatFraction" title="abaqus.Material.Material.Material.InelasticHeatFraction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InelasticHeatFraction</span></code></a>([fraction])</p></td>
 <td><p>This method creates an InelasticHeatFraction object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.JohnsonCookDamageInitiation" title="abaqus.Material.Material.Material.JohnsonCookDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">JohnsonCookDamageInitiation</span></code></a>(table[, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.JouleHeatFraction" title="abaqus.Material.Material.Material.JouleHeatFraction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">JouleHeatFraction</span></code></a>([fraction])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.JouleHeatFraction" title="abaqus.Material.Material.Material.JouleHeatFraction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">JouleHeatFraction</span></code></a>([fraction])</p></td>
 <td><p>This method creates a JouleHeatFraction object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.LatentHeat" title="abaqus.Material.Material.Material.LatentHeat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LatentHeat</span></code></a>(table)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.LatentHeat" title="abaqus.Material.Material.Material.LatentHeat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LatentHeat</span></code></a>(table)</p></td>
 <td><p>This method creates a LatentHeat object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.LowDensityFoam" title="abaqus.Material.Material.Material.LowDensityFoam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowDensityFoam</span></code></a>([elementRemoval, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.LowDensityFoam" title="abaqus.Material.Material.Material.LowDensityFoam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowDensityFoam</span></code></a>([elementRemoval, ...])</p></td>
 <td><p>This method creates a LowDensityFoam object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.MagneticPermeability" title="abaqus.Material.Material.Material.MagneticPermeability"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MagneticPermeability</span></code></a>(table, table2, table3)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.MagneticPermeability" title="abaqus.Material.Material.Material.MagneticPermeability"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MagneticPermeability</span></code></a>(table, table2, table3)</p></td>
 <td><p>This method creates a MagneticPermeability object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.MaxeDamageInitiation" title="abaqus.Material.Material.Material.MaxeDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxeDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.MaxpeDamageInitiation" title="abaqus.Material.Material.Material.MaxpeDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxpeDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.MaxpsDamageInitiation" title="abaqus.Material.Material.Material.MaxpsDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxpsDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.MaxsDamageInitiation" title="abaqus.Material.Material.Material.MaxsDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxsDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.MkDamageInitiation" title="abaqus.Material.Material.Material.MkDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MkDamageInitiation</span></code></a>(table[, definition, feq, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.MohrCoulombPlasticity" title="abaqus.Material.Material.Material.MohrCoulombPlasticity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MohrCoulombPlasticity</span></code></a>(table[, ...])</p></td>
 <td><p>This method creates a MohrCoulombPlasticity object.</p></td>
@@ -640,41 +1111,29 @@ that one Material object cannot contain two AcousticMedium objects, for example.
 <tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.MoistureSwelling" title="abaqus.Material.Material.Material.MoistureSwelling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MoistureSwelling</span></code></a>(table)</p></td>
 <td><p>This method creates a MoistureSwelling object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.MsfldDamageInitiation" title="abaqus.Material.Material.Material.MsfldDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MsfldDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Permeability" title="abaqus.Material.Material.Material.Permeability"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Permeability</span></code></a>(specificWeight, ...[, type, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Permeability" title="abaqus.Material.Material.Material.Permeability"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Permeability</span></code></a>(specificWeight, ...[, type, ...])</p></td>
 <td><p>This method creates a Permeability object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Piezoelectric" title="abaqus.Material.Material.Material.Piezoelectric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Piezoelectric</span></code></a>(table[, type, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Piezoelectric" title="abaqus.Material.Material.Material.Piezoelectric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Piezoelectric</span></code></a>(table[, type, ...])</p></td>
 <td><p>This method creates a Piezoelectric object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Plastic" title="abaqus.Material.Material.Material.Plastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Plastic</span></code></a>(table[, hardening, rate, dataType, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Plastic" title="abaqus.Material.Material.Material.Plastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Plastic</span></code></a>(table[, hardening, rate, dataType, ...])</p></td>
 <td><p>This method creates a Plastic object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.PoreFluidExpansion" title="abaqus.Material.Material.Material.PoreFluidExpansion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PoreFluidExpansion</span></code></a>(table[, zero, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.PoreFluidExpansion" title="abaqus.Material.Material.Material.PoreFluidExpansion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PoreFluidExpansion</span></code></a>(table[, zero, ...])</p></td>
 <td><p>This method creates a PoreFluidExpansion object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.PorousBulkModuli" title="abaqus.Material.Material.Material.PorousBulkModuli"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PorousBulkModuli</span></code></a>(table[, temperatureDependency])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.PorousBulkModuli" title="abaqus.Material.Material.Material.PorousBulkModuli"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PorousBulkModuli</span></code></a>(table[, temperatureDependency])</p></td>
 <td><p>This method creates a PorousBulkModuli object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.PorousElastic" title="abaqus.Material.Material.Material.PorousElastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PorousElastic</span></code></a>(table[, shear, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.PorousElastic" title="abaqus.Material.Material.Material.PorousElastic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PorousElastic</span></code></a>(table[, shear, ...])</p></td>
 <td><p>This method creates a PorousElastic object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.PorousMetalPlasticity" title="abaqus.Material.Material.Material.PorousMetalPlasticity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PorousMetalPlasticity</span></code></a>(table[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.PorousMetalPlasticity" title="abaqus.Material.Material.Material.PorousMetalPlasticity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PorousMetalPlasticity</span></code></a>(table[, ...])</p></td>
 <td><p>This method creates a PorousMetalPlasticity object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.QuadeDamageInitiation" title="abaqus.Material.Material.Material.QuadeDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuadeDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.QuadsDamageInitiation" title="abaqus.Material.Material.Material.QuadsDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuadsDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Regularization" title="abaqus.Material.Material.Material.Regularization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Regularization</span></code></a>([rtol, strainRateRegularization])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Regularization" title="abaqus.Material.Material.Material.Regularization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Regularization</span></code></a>([rtol, strainRateRegularization])</p></td>
 <td><p>This method creates a Regularization object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.ShearDamageInitiation" title="abaqus.Material.Material.Material.ShearDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShearDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
-<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Solubility" title="abaqus.Material.Material.Material.Solubility"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Solubility</span></code></a>(table[, temperatureDependency, ...])</p></td>
 <td><p>This method creates a Solubility object.</p></td>
@@ -703,9 +1162,69 @@ that one Material object cannot contain two AcousticMedium objects, for example.
 <tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.Viscous" title="abaqus.Material.Material.Material.Viscous"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Viscous</span></code></a>(table[, law, temperatureDependency, ...])</p></td>
 <td><p>This method creates a Viscous object.</p></td>
 </tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.DuctileDamageInitiation" title="abaqus.Material.Material.Material.DuctileDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DuctileDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
+<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.FldDamageInitiation" title="abaqus.Material.Material.Material.FldDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FldDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
+<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.FlsdDamageInitiation" title="abaqus.Material.Material.Material.FlsdDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FlsdDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
+<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.JohnsonCookDamageInitiation" title="abaqus.Material.Material.Material.JohnsonCookDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">JohnsonCookDamageInitiation</span></code></a>(table[, ...])</p></td>
+<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.MaxeDamageInitiation" title="abaqus.Material.Material.Material.MaxeDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxeDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
+<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.MaxsDamageInitiation" title="abaqus.Material.Material.Material.MaxsDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxsDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
+<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.MkDamageInitiation" title="abaqus.Material.Material.Material.MkDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MkDamageInitiation</span></code></a>(table[, definition, feq, ...])</p></td>
+<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.MsfldDamageInitiation" title="abaqus.Material.Material.Material.MsfldDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MsfldDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
+<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.QuadeDamageInitiation" title="abaqus.Material.Material.Material.QuadeDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuadeDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
+<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.QuadsDamageInitiation" title="abaqus.Material.Material.Material.QuadsDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuadsDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
+<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.MaxpeDamageInitiation" title="abaqus.Material.Material.Material.MaxpeDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxpeDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
+<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.MaxpsDamageInitiation" title="abaqus.Material.Material.Material.MaxpsDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxpsDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
+<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.ShearDamageInitiation" title="abaqus.Material.Material.Material.ShearDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShearDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
+<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.Material.Material.HashinDamageInitiation" title="abaqus.Material.Material.Material.HashinDamageInitiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HashinDamageInitiation</span></code></a>(table[, definition, ...])</p></td>
+<td><p>This method creates A <a class="reference internal" href="../../../reference/mdb/model/material.html#abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation" title="abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">DamageInitiation</span></code></a> object.</p></td>
+</tr>
 </tbody>
 </table>
 </div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">MaterialBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, description, materialIdentifier])</p></td>
+<td><p>This method creates a Material object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">materialsFromOdb</span></code>(fileName)</p></td>
+<td><p>This methods creates Material objects by reading an output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 </dd></dl>
 
 </section>

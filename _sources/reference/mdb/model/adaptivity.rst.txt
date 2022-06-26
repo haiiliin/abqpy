@@ -11,6 +11,8 @@ Create adaptivity mesh control features
 .. autoclass:: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel
     :members:
 
+    .. autoclasstoc::
+
 
 Create adaptivity mesh state features
 -------------------------------------
@@ -18,12 +20,16 @@ Create adaptivity mesh state features
 .. autoclass:: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep
     :members:
 
+    .. autoclasstoc::
+
 
 Create features for AdaptivityIteration
 ---------------------------------------
 
 .. autoclass:: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration
     :members:
+
+    .. autoclasstoc::
 
 
 Object Features

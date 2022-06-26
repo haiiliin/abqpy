@@ -439,32 +439,6 @@ object, see Part object.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.RegionPart.RegionPart.EditSkin" title="abaqus.Region.RegionPart.RegionPart.EditSkin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EditSkin</span></code></a>([name, faces, edges, elementFaces, ...])</p></td>
-<td><p>This method modifies underlying entities of the selected skin.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Region.RegionPart.RegionPart.Set" title="abaqus.Region.RegionPart.RegionPart.Set"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Set</span></code></a>([skinFaces, skinEdges, stringerEdges])</p></td>
-<td><p>This method creates a set from a sequence of objects in a model database.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.RegionPart.RegionPart.Skin" title="abaqus.Region.RegionPart.RegionPart.Skin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Skin</span></code></a>(name[, faces, edges, elementFaces, ...])</p></td>
-<td><p>This method creates a skin from a sequence of objects in a model database.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Region.RegionPart.RegionPart.Stringer" title="abaqus.Region.RegionPart.RegionPart.Stringer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Stringer</span></code></a>(name[, edges, elementEdges])</p></td>
-<td><p>This method creates a stringer from a sequence of objects in a model database.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.RegionPart.RegionPart.Surface" title="abaqus.Region.RegionPart.RegionPart.Surface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Surface</span></code></a>([side1Faces, side2Faces, ...])</p></td>
-<td><p>This method creates a surface from a sequence of objects in a model database.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Region.RegionPart.RegionPart.EditSkin">
 <span class="sig-name descname"><span class="pre">EditSkin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementEdges</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Region/RegionPart.py#L360-L401"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Region.RegionPart.RegionPart.EditSkin" title="Permalink to this definition">#</a></dt>
@@ -735,33 +709,6 @@ created.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.RegionAssembly.RegionAssembly.Surface" title="abaqus.Region.RegionAssembly.RegionAssembly.Surface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Surface</span></code></a>([side1Faces, side2Faces, ...])</p></td>
-<td><p>This method creates a surface from a sequence of objects in a model database.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 41%" />
-<col style="width: 59%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>Set</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Region.RegionAssembly.RegionAssembly.Set">
 <span class="sig-name descname"><span class="pre">Set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mesh.html#abaqus.Mesh.MeshNode.MeshNode" title="abaqus.Mesh.MeshNode.MeshNode"><span class="pre">MeshNode</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mesh.html#abaqus.Mesh.MeshElement.MeshElement" title="abaqus.Mesh.MeshElement.MeshElement"><span class="pre">MeshElement</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vertices</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Vertex.Vertex" title="abaqus.BasicGeometry.Vertex.Vertex"><span class="pre">Vertex</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><span class="pre">Edge</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><span class="pre">Face</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cells</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Cell.Cell" title="abaqus.BasicGeometry.Cell.Cell"><span class="pre">Cell</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xVertices</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Vertex.Vertex" title="abaqus.BasicGeometry.Vertex.Vertex"><span class="pre">Vertex</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xEdges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><span class="pre">Edge</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xFaces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><span class="pre">Face</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referencePoints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.ReferencePoint.ReferencePoint" title="abaqus.BasicGeometry.ReferencePoint.ReferencePoint"><span class="pre">ReferencePoint</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skinFaces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skinEdges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stringerEdges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Region.Set.Set" title="abaqus.Region.Set.Set"><span class="pre">Set</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Region/RegionAssembly.py#L289-L291"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Region.RegionAssembly.RegionAssembly.Set" title="Permalink to this definition">#</a></dt>
@@ -896,38 +843,6 @@ object, see Part object.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">regionToolset</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.RegionPartBase.RegionPartBase.clashSets" title="abaqus.Region.RegionPartBase.RegionPartBase.clashSets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clashSets</span></code></a>(arg1, arg2)</p></td>
-<td><p>This command prints a message describing the relationship between the contents of two sets. Possible outcomes are:     - Both sets are the same. - Set 2 is a subset of set 1. - Set 2 is a superset of set 1. - Set 2 intersects set 1. - Set 2 touches set 1 (their boundaries intersect). - Set 2 and set 1 are disjoint. This command accepts only positional arguments and has no keywords.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Region.RegionPartBase.RegionPartBase.deleteSets" title="abaqus.Region.RegionPartBase.RegionPartBase.deleteSets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteSets</span></code></a>(setNames)</p></td>
-<td><p>This command deletes the given sets from the part.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.RegionPartBase.RegionPartBase.deleteSurfaces" title="abaqus.Region.RegionPartBase.RegionPartBase.deleteSurfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteSurfaces</span></code></a>(surfaceNames)</p></td>
-<td><p>This command deletes the given surfaces from the part.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Region.RegionPartBase.RegionPartBase.isSetInternal" title="abaqus.Region.RegionPartBase.RegionPartBase.isSetInternal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isSetInternal</span></code></a>(setName)</p></td>
-<td><p>This command returns a flag indicating whether the Set is Internal.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.RegionPartBase.RegionPartBase.isSurfaceInternal" title="abaqus.Region.RegionPartBase.RegionPartBase.isSurfaceInternal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isSurfaceInternal</span></code></a>(surfaceName)</p></td>
-<td><p>This command returns a flag indicating whether the Surface is Internal.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Region.RegionPartBase.RegionPartBase.markSetInternal" title="abaqus.Region.RegionPartBase.RegionPartBase.markSetInternal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">markSetInternal</span></code></a>(setName, internalSet)</p></td>
-<td><p>This command marks the given Set as internal or external.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.RegionPartBase.RegionPartBase.markSurfaceInternal" title="abaqus.Region.RegionPartBase.RegionPartBase.markSurfaceInternal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">markSurfaceInternal</span></code></a>(setName, internalSurface)</p></td>
-<td><p>This command marks the given Surface as internal or external.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -1810,38 +1725,6 @@ Assembly object, see Assembly object.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets" title="abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clashSets</span></code></a>(arg1, arg2)</p></td>
-<td><p>This command prints a message describing the relationship between the contents of two sets. Possible outcomes are:     - Both sets are the same. - Set 2 is a subset of set 1. - Set 2 is a superset of set 1. - Set 2 intersects set 1. - Set 2 touches set 1 (their boundaries intersect). - Set 2 and set 1 are disjoint. This command accepts only positional arguments and has no keywords.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.deleteSets" title="abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.deleteSets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteSets</span></code></a>(setNames)</p></td>
-<td><p>This command deletes the given sets from the assembly.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.deleteSurfaces" title="abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.deleteSurfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteSurfaces</span></code></a>(surfaceNames)</p></td>
-<td><p>This command deletes the given surfaces from the assembly.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSetInternal" title="abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSetInternal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isSetInternal</span></code></a>(setName)</p></td>
-<td><p>This command returns a flag indicating whether the Set is Internal.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSurfaceInternal" title="abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSurfaceInternal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isSurfaceInternal</span></code></a>(surfaceName)</p></td>
-<td><p>This command returns a flag indicating whether the Surface is Internal.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSetInternal" title="abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSetInternal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">markSetInternal</span></code></a>(setName, internalSet)</p></td>
-<td><p>This command marks the given Set as internal or external.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSurfaceInternal" title="abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSurfaceInternal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">markSurfaceInternal</span></code></a>(setName, internalSurface)</p></td>
-<td><p>This command marks the given Surface as internal or external.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">AssemblyBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
@@ -2559,21 +2442,7 @@ internal set.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Region.RegionArray.RegionArray">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegionArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Region/RegionArray.py#L4-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Region.RegionArray.RegionArray" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>findAt</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="autoclasstoc docutils container">
+<dd><div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -2746,32 +2615,6 @@ len(transmissionSet.elements)=7</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.Set.Set.MapSetsFromOdb" title="abaqus.Region.Set.Set.MapSetsFromOdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapSetsFromOdb</span></code></a>(odbPath, odbSets[, partSets, ...])</p></td>
-<td><p>This method creates sets based on mapping sets from element centroid locations in an Odb.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Region.Set.Set.SetByBoolean" title="abaqus.Region.Set.Set.SetByBoolean"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetByBoolean</span></code></a>(name, sets[, operation])</p></td>
-<td><p>This method creates a set by performing a boolean operation on two or more input sets.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.Set.Set.SetFromColor" title="abaqus.Region.Set.Set.SetFromColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetFromColor</span></code></a>(name, color)</p></td>
-<td><p>This method creates a set containing faces of the part marked with a specified color attribute.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Region.Set.Set.SetFromElementLabels" title="abaqus.Region.Set.Set.SetFromElementLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetFromElementLabels</span></code></a>(name, elementLabels)</p></td>
-<td><p>This method creates a set from a sequence of element labels in a model database.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.Set.Set.SetFromNodeLabels" title="abaqus.Region.Set.Set.SetFromNodeLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetFromNodeLabels</span></code></a>(name, nodeLabels)</p></td>
-<td><p>This method creates a set from a sequence of node labels in a model database.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -3099,20 +2942,6 @@ example, for a part:<cite>nodeLabels=(2,3,5,7)`For an assembly:`nodeLabels=((‘
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.Skin.Skin.EditSkin" title="abaqus.Region.Skin.Skin.EditSkin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EditSkin</span></code></a>([name, faces, edges, elementFaces, ...])</p></td>
-<td><p>This method modifies underlying entities of the selected skin.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -3234,20 +3063,6 @@ created. Applicable to axisymmetric parts.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.Stringer.Stringer.EditStringer" title="abaqus.Region.Stringer.Stringer.EditStringer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EditStringer</span></code></a>(name[, edges, elementEdges])</p></td>
-<td><p>This method modifies underlying entities of the selected stringer.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -3362,31 +3177,6 @@ available from the <strong>surface</strong> member of the Assembly object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">surfaces</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>instances</strong></dt><dd></dd>
-<dt><strong>sides</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.Surface.Surface.SurfaceByBoolean" title="abaqus.Region.Surface.Surface.SurfaceByBoolean"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SurfaceByBoolean</span></code></a>(name, surfaces[, operation])</p></td>
-<td><p>This method creates a surface by performing a boolean operation on two or more input surfaces.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Region.Surface.Surface.SurfaceFromElsets" title="abaqus.Region.Surface.Surface.SurfaceFromElsets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SurfaceFromElsets</span></code></a>(name, elementSetSeq)</p></td>
-<td><p>This method creates a surface from a sequence of element sets in a model database.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>

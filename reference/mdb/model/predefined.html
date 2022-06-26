@@ -413,35 +413,6 @@
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure" title="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FluidCavityPressure</span></code></a>(name, fluidCavity, ...)</p></td>
-<td><p>This method creates a FluidCavityPressure object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState" title="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InitialState</span></code></a>(name, instances, fileName[, ...])</p></td>
-<td><p>This method creates an InitialState predefined field object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening" title="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KinematicHardening</span></code></a>(name, region[, ...])</p></td>
-<td><p>This method creates a KinematicHardening object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment" title="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaterialAssignment</span></code></a>(name, instanceList[, ...])</p></td>
-<td><p>This method creates a MaterialAssignment predefined field object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature" title="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Temperature</span></code></a>(name, createStepName, region[, ...])</p></td>
-<td><p>This method creates a Temperature object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity" title="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Velocity</span></code></a>(name, region, velocity1, velocity2, ...)</p></td>
-<td><p>This method creates a Velocity predefined field object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure">
 <span class="sig-name descname"><span class="pre">FluidCavityPressure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fluidCavity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fluidPressure</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PredefinedField/PredefinedFieldModel.py#L32-L61"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure" title="Permalink to this definition">#</a></dt>
@@ -776,6 +747,76 @@ and FIELD_ANALYTICAL. The default value is MAGNITUDE.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.axisBegin">
+<span class="sig-name descname"><span class="pre">axisBegin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PredefinedField/PredefinedFieldModel.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.axisBegin" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of Floats specifying the <em>X-</em>, <em>Y-</em>, and <strong>Z</strong>- coordinates of the starting
+point of the axis about which <strong>omega</strong> is defined.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.axisEnd">
+<span class="sig-name descname"><span class="pre">axisEnd</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PredefinedField/PredefinedFieldModel.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.axisEnd" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of Floats specifying the <em>X-</em>, <em>Y-</em>, and <strong>Z</strong>- coordinates of the end point of
+the axis about which <strong>omega</strong> is defined.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.fileName">
+<span class="sig-name descname"><span class="pre">fileName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PredefinedField/PredefinedFieldModel.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.fileName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the job that generated the initial state data.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.fluidCavity">
+<span class="sig-name descname"><span class="pre">fluidCavity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PredefinedField/PredefinedFieldModel.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.fluidCavity" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of a Fluid Cavity Interaction.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.fluidPressure">
+<span class="sig-name descname"><span class="pre">fluidPressure</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PredefinedField/PredefinedFieldModel.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.fluidPressure" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the initial fluid pressure.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.instanceList">
+<span class="sig-name descname"><span class="pre">instanceList</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="assembly.html#abaqus.Assembly.PartInstanceArray.PartInstanceArray" title="abaqus.Assembly.PartInstanceArray.PartInstanceArray"><span class="pre">PartInstanceArray</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PredefinedField/PredefinedFieldModel.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.instanceList" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="assembly.html#abaqus.Assembly.PartInstanceArray.PartInstanceArray" title="abaqus.Assembly.PartInstanceArray.PartInstanceArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartInstanceArray</span></code></a> object specifying the part instances to which the predefined field
+is applied. All instances must be assigned the same Eulerian section.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.instances">
+<span class="sig-name descname"><span class="pre">instances</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="assembly.html#abaqus.Assembly.PartInstanceArray.PartInstanceArray" title="abaqus.Assembly.PartInstanceArray.PartInstanceArray"><span class="pre">PartInstanceArray</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PredefinedField/PredefinedFieldModel.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.instances" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="assembly.html#abaqus.Assembly.PartInstanceArray.PartInstanceArray" title="abaqus.Assembly.PartInstanceArray.PartInstanceArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartInstanceArray</span></code></a> object specifying the instances to which the predefined field is
+applied.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.omega">
+<span class="sig-name descname"><span class="pre">omega</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PredefinedField/PredefinedFieldModel.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.omega" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the angular velocity.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.velocity1">
+<span class="sig-name descname"><span class="pre">velocity1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PredefinedField/PredefinedFieldModel.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.velocity1" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the first component of the velocity.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.velocity2">
+<span class="sig-name descname"><span class="pre">velocity2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PredefinedField/PredefinedFieldModel.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.velocity2" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the second component of the velocity.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.velocity3">
+<span class="sig-name descname"><span class="pre">velocity3</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PredefinedField/PredefinedFieldModel.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.velocity3" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the third component of the velocity.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -805,29 +846,6 @@ obtained through the predefined field repository of the Step object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">predefinedFields</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.PredefinedField.PredefinedField.delete" title="abaqus.PredefinedField.PredefinedField.PredefinedField.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
-<td><p>This method allows you to delete existing fields.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PredefinedField.PredefinedField.PredefinedField.move" title="abaqus.PredefinedField.PredefinedField.PredefinedField.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
-<td><p>This method moves a specific PredefinedFieldState object from one step to a different step.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.PredefinedField.PredefinedField.resume" title="abaqus.PredefinedField.PredefinedField.PredefinedField.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
-<td><p>This method resumes the predefined field that was previously suppressed.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PredefinedField.PredefinedField.PredefinedField.suppress" title="abaqus.PredefinedField.PredefinedField.PredefinedField.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
-<td><p>This method suppresses the predefined field.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -968,13 +986,6 @@ The PredefinedFieldState object has no constructor or methods.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -1039,20 +1050,6 @@ The FluidCavityPressure object is derived from the PredefinedField object.</p>
 <ul class="simple">
 <li><p>INITIAL CONDITIONS</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.setValues" title="abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the FluidCavityPressure object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -1226,13 +1223,6 @@ MaterialAssignment predefined field.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>fractionList</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -1289,20 +1279,6 @@ The InitialState object is derived from the PredefinedField object.</p>
 <ul class="simple">
 <li><p>INSTANCE</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.InitialState.InitialState.setValues" title="abaqus.PredefinedField.InitialState.InitialState.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([endStep, endIncrement, ...])</p></td>
-<td><p>This method modifies the InitialState object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -1468,20 +1444,6 @@ The KinematicHardening object is derived from the PredefinedField object.</p>
 <ul class="simple">
 <li><p>INITIAL CONDITIONS</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.KinematicHardening.KinematicHardening.setValues" title="abaqus.PredefinedField.KinematicHardening.KinematicHardening.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([numBackStress, ...])</p></td>
-<td><p>This method modifies the KinematicHardening object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -1692,20 +1654,6 @@ The MaterialAssignment object is derived from the PredefinedField object.</p>
 <li><p>INITIAL CONDITIONS</p></li>
 </ul>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.setValues" title="abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([useFields, assignmentList, ...])</p></td>
-<td><p>This method modifies the MaterialAssignment object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -1901,26 +1849,6 @@ The Temperature object is derived from the PredefinedField object.</p>
 </dl>
 </li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.Temperature.Temperature.move" title="abaqus.PredefinedField.Temperature.Temperature.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
-<td><p>This method moves the TemperatureState object from one step to a different step.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PredefinedField.Temperature.Temperature.setValues" title="abaqus.PredefinedField.Temperature.Temperature.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, ...])</p></td>
-<td><p>This method modifies the data for an existing Temperature object in the step where it is created.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.Temperature.Temperature.setValuesInStep" title="abaqus.PredefinedField.Temperature.Temperature.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, field, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing Temperature object in the specified step.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -2251,24 +2179,6 @@ The TemperatureState object is derived from the PredefinedFieldState object.</p>
 </pre></div>
 </div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>amplitudeState</strong></dt><dd></dd>
-<dt><strong>beginIncrement</strong></dt><dd></dd>
-<dt><strong>beginIncrementState</strong></dt><dd></dd>
-<dt><strong>beginStepState</strong></dt><dd></dd>
-<dt><strong>endIncrement</strong></dt><dd></dd>
-<dt><strong>endIncrementState</strong></dt><dd></dd>
-<dt><strong>endStep</strong></dt><dd></dd>
-<dt><strong>endStepState</strong></dt><dd></dd>
-<dt><strong>fileNameState</strong></dt><dd></dd>
-<dt><strong>magnitudesState</strong></dt><dd></dd>
-<dt><strong>midsideState</strong></dt><dd></dd>
-<dt><strong>status</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2524,20 +2434,6 @@ member when a session is started.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.TiffOptions.TiffOptions.setValues" title="abaqus.PredefinedField.TiffOptions.TiffOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([imageSize])</p></td>
-<td><p>This method modifies the TiffOptions object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2613,20 +2509,6 @@ The Velocity object is derived from the PredefinedField object.</p>
 <ul class="simple">
 <li><p>INITIAL CONDITIONS</p></li>
 </ul>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.Velocity.Velocity.setValues" title="abaqus.PredefinedField.Velocity.Velocity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([field, distributionType])</p></td>
-<td><p>This method modifies the Velocity object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>

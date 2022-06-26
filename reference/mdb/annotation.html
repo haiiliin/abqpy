@@ -678,38 +678,6 @@ object are common to all objects derived from Annotation.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.bringForward" title="abaqus.Annotation.Annotation.Annotation.bringForward"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringForward</span></code></a>()</p></td>
-<td><p>This method brings the Annotation object one position up in the annotation stack.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.bringToFront" title="abaqus.Annotation.Annotation.Annotation.bringToFront"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringToFront</span></code></a>()</p></td>
-<td><p>This method brings the Annotation object to the top of the annotation stack.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.moveAfter" title="abaqus.Annotation.Annotation.Annotation.moveAfter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveAfter</span></code></a>(name)</p></td>
-<td><p>This method moves the Annotation object after another object in the same repository.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.moveBefore" title="abaqus.Annotation.Annotation.Annotation.moveBefore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveBefore</span></code></a>(name)</p></td>
-<td><p>This method moves the Annotation object before another object in the same repository.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.sendBackward" title="abaqus.Annotation.Annotation.Annotation.sendBackward"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendBackward</span></code></a>()</p></td>
-<td><p>This method sends the Annotation object one position down in the annotation stack.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.sendToBack" title="abaqus.Annotation.Annotation.Annotation.sendToBack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendToBack</span></code></a>()</p></td>
-<td><p>This method sends the Annotation object to the bottom of the annotation stack.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.translate" title="abaqus.Annotation.Annotation.Annotation.translate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translate</span></code></a>([x, y])</p></td>
-<td><p>This method translates the Annotation object on the viewport plane.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -853,35 +821,6 @@ can control which annotations are displayed in a particular viewport.</p>
 <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">annotationsToPlot</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringForward</span></code></a>(index)</p></td>
-<td><p>This method brings the Annotation object one position forward in the AnnotationsToPlotArray sequence.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringToFront</span></code></a>(index)</p></td>
-<td><p>This method brings the Annotation object to the beginning of the AnnotationsToPlotArray sequence.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveAfter</span></code></a>(index, other)</p></td>
-<td><p>This method moves the Annotation object after another object in the same AnnotationsToPlotArray sequence.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveBefore</span></code></a>(index, other)</p></td>
-<td><p>This method moves the Annotation object before another object in the same AnnotationsToPlotArray sequence.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendBackward</span></code></a>(index)</p></td>
-<td><p>This method sends the Annotation object one position backward in the AnnotationsToPlotArray sequence.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendToBack</span></code></a>(index)</p></td>
-<td><p>This method sends the Annotation object to the end of the AnnotationsToPlotArray sequence.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
@@ -1146,20 +1085,6 @@ Viewport object, see Viewport object.</p>
 </pre></div>
 </div>
 </div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="../session/canvas.html#abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation" title="abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plotAnnotation</span></code></a>(annotation[, index])</p></td>
-<td><p>This method plots an Annotation object in aViewport.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
@@ -1395,26 +1320,6 @@ The Arrow object is derived from the Annotation object.</p>
 <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">annotationsToPlot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.setValues" title="abaqus.Annotation.Arrow.Arrow.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([startPoint, endPoint, ...])</p></td>
-<td><p>This method modifies the Arrow object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.translateEndPoint" title="abaqus.Annotation.Arrow.Arrow.translateEndPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translateEndPoint</span></code></a>([x, y])</p></td>
-<td><p>This method translates the end point of the Arrow object on the viewport plane.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.translateStartPoint" title="abaqus.Annotation.Arrow.Arrow.translateStartPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translateStartPoint</span></code></a>([x, y])</p></td>
-<td><p>This method translates the start point of the Arrow object on the viewport plane.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -1770,28 +1675,6 @@ The Text object is derived from the Annotation object.</p>
 <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">annotationsToPlot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>height</strong></dt><dd></dd>
-<dt><strong>width</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Text.Text.setValues" title="abaqus.Annotation.Text.Text.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([text, offset, anchor, ...])</p></td>
-<td><p>This method modifies the Text object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Annotation.Text.Text.anchor">

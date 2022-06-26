@@ -177,9 +177,6 @@ XYPlot
 
     .. autoclasstoc::
 
-XYPlotBase
-~~~~~~~~~~
-
 .. autoclass:: abaqus.XY.XYPlotBase.XYPlotBase
     :members:
 

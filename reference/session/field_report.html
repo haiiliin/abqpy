@@ -405,24 +405,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportSession.FieldReportSession">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FieldReportSession</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/FieldReport/FieldReportSession.py#L7-L141"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportSession.FieldReportSession" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldRepor" title="abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldRepor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeFieldRepor</span></code></a>(filename, append, sortItem, ...)</p></td>
-<td><p>This method writes a FieldOutput object to a user-defined ASCII file.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyRepor" title="abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyRepor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeFreeBodyRepor</span></code></a>(fileName, append[, step, ...])</p></td>
-<td><p>This method writes a FreeBody object to a user-defined ASCII file.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<dl class="py method">
+<dd><dl class="py method">
 <dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldRepor">
 <span class="sig-name descname"><span class="pre">writeFieldRepor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sortItem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputPosition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displayGroup</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SPECIFY'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/FieldReport/FieldReportSession.py#L8-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldRepor" title="Permalink to this definition">#</a></dt>
 <dd><p>This method writes a FieldOutput object to a user-defined ASCII file.</p>
@@ -563,23 +546,6 @@ Visualization module.</p>
 <span class="n">session</span><span class="o">.</span><span class="n">fieldReportOptions</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NumberFormat</span></code></a>([blankPad, format, numDigits, ...])</p></td>
-<td><p>This method creates a NumberFormat object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(numColumns, numberFormat[, ...])</p></td>
-<td><p>This method modifies the FieldReportOptions object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -730,20 +696,6 @@ FreeBodyReportOptions object has no constructor. Abaqus creates the
 <span class="n">session</span><span class="o">.</span><span class="n">freeBodyReportOptions</span>
 </pre></div>
 </div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([numDigits, forceThreshold, ...])</p></td>
-<td><p>This method modifies the FreeBodyReportOptions object.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
