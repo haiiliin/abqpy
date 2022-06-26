@@ -21,52 +21,55 @@ class FractureCriterion:
         
         If **type** = VCCT for **mixedModeBehavior** = BK or REEDER, the table data specify the following:
         
-            - Mode I critical energy release rate, GICGI⁢C.
-            - Mode II critical energy release rate, GIICGI⁢I⁢C.
-            - Mode III critical energy release rate, GIIICGI⁢I⁢I⁢C.
-            - Exponent, ηη.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Mode I critical energy release rate, :math:`G_{I C}`.
+        - Mode II critical energy release rate, :math:`G_{I I C}`.
+        - Mode III critical energy release rate, :math:`G_{I I I C}`.
+        - Exponent, :math:`\eta`.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+        
         If **type** = VCCT for **mixedModeBehavior** = POWER, the table data specify the following:
         
-            - Mode I critical energy release rate, GICGI⁢C.
-            - Mode II critical energy release rate, GIICGI⁢I⁢C.
-            - Mode III critical energy release rate, GIIICGI⁢I⁢I⁢C.
-            - Exponent, ama⁢m.
-            - Exponent, ana⁢n.
-            - Exponent, aoa⁢o.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Mode I critical energy release rate, :math:`G_{I C}`.
+        - Mode II critical energy release rate, :math:`G_{I I C}`.
+        - Mode III critical energy release rate, :math:`G_{I I I C}`.
+        - Exponent, :math:`am`.
+        - Exponent, :math:`an`.
+        - Exponent, :math:`ao`.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+        
         If **type** = ENHANCED VCCT for **mixedModeBehavior** = BK or REEDER, the table data specify the following:
         
-            - Mode I critical energy release rate for onset crack, GICGI⁢C.
-            - Mode II critical energy release rate for onset crack, GIICGI⁢I⁢C.
-            - Mode III critical energy release rate for onset crack, GIIICGI⁢I⁢I⁢C.
-            - Mode I critical energy release rate for crack propagation, GICGI⁢C.
-            - Mode II critical energy release rate for crack propagation, GIICGI⁢I⁢C.
-            - Mode III critical energy release rate for crack propagation, GIIICGI⁢I⁢I⁢C.
-            - Exponent, ηη.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Mode I critical energy release rate for onset crack, :math:`G_{I C}`.
+        - Mode II critical energy release rate for onset crack, :math:`G_{I I C}`.
+        - Mode III critical energy release rate for onset crack, :math:`G_{I I I C}`.
+        - Mode I critical energy release rate for crack propagation, :math:`G_{I C}`.
+        - Mode II critical energy release rate for crack propagation, :math:`G_{I I C}`.
+        - Mode III critical energy release rate for crack propagation, :math:`G_{I I I C}`.
+        - Exponent, :math:`\eta`
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+        
         If **type** = ENHANCED VCCT for **mixedModeBehavior** = POWER, the table data specify the following:
         
-            - Mode I critical energy release rate for onset crack, GICGI⁢C.
-            - Mode II critical energy release rate for onset crack, GIICGI⁢I⁢C.
-            - Mode III critical energy release rate for onset crack, GIIICGI⁢I⁢I⁢C.
-            - Mode I critical energy release rate for crack propagation, GICGI⁢C.
-            - Mode II critical energy release rate for crack propagation, GIICGI⁢I⁢C.
-            - Mode III critical energy release rate for crack propagation, GIIICGI⁢I⁢I⁢C.
-            - Exponent, ama⁢m.
-            - Exponent, ana⁢n.
-            - Exponent, aoa⁢o.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Mode I critical energy release rate for onset crack, :math:`G_{I C}`.
+        - Mode II critical energy release rate for onset crack, :math:`G_{I I C}`.
+        - Mode III critical energy release rate for onset crack, :math:`G_{I I I C}`.
+        - Mode I critical energy release rate for crack propagation, :math:`G_{I C}`.
+        - Mode II critical energy release rate for crack propagation, :math:`G_{I I C}`.
+        - Mode III critical energy release rate for crack propagation, :math:`G_{I I I C}`.
+        - Exponent, :math:`am`.
+        - Exponent, :math:`an`.
+        - Exponent, :math:`ao`.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
         The corresponding analysis keywords are:
 

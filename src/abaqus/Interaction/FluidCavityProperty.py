@@ -18,11 +18,11 @@ class FluidCavityProperty(ContactProperty):
         The corresponding analysis keywords are:
 
         - FLUID BEHAVIOR
-                - CAPACITY
-                - FLUID BULK MODULUS
-                - FLUID DENSITY
-                - FLUID EXPANSION
-                - MOLECULAR WEIGHT
+        - CAPACITY
+        - FLUID BULK MODULUS
+        - FLUID DENSITY
+        - FLUID EXPANSION
+        - MOLECULAR WEIGHT
     """
 
     #: A String specifying the interaction property repository key.

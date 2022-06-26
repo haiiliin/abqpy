@@ -1880,6 +1880,7 @@ class BoundaryConditionModel(ModelBase):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
+        
         Returns
         -------
         TypeBC
@@ -1927,6 +1928,7 @@ class BoundaryConditionModel(ModelBase):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
+        
         Returns
         -------
         TypeBC

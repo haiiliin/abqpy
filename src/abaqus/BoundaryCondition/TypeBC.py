@@ -46,6 +46,7 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> None:
         """This method creates an TypeBC object.
+        
         .. note:: 
             This function can be accessed by:
 
@@ -92,6 +93,7 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> "TypeBC":
         """This method creates an encastre TypeBC object.
+        
         .. note:: 
             This function can be accessed by:
 
@@ -132,6 +134,7 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> "TypeBC":
         """This method creates a pinned TypeBC object.
+        
         .. note:: 
             This function can be accessed by:
 
@@ -172,6 +175,7 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies symmetry about the **X**-axis.
+        
         .. note:: 
             This function can be accessed by:
 
@@ -212,6 +216,7 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies symmetry about the **Y**-axis.
+        
         .. note:: 
             This function can be accessed by:
 
@@ -252,6 +257,7 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies symmetry about the **Z**-axis.
+        
         .. note:: 
             This function can be accessed by:
 
@@ -292,6 +298,7 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies antisymmetry about the **X**-axis.
+        
         .. note:: 
             This function can be accessed by:
 
@@ -332,6 +339,7 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies antisymmetry about the **Y**-axis.
+        
         .. note:: 
             This function can be accessed by:
 
@@ -372,6 +380,7 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies antisymmetry about the **Z**-axis.
+        
         .. note:: 
             This function can be accessed by:
 
@@ -412,6 +421,7 @@ class TypeBC(BoundaryCondition):
     ):
         """This method modifies the data for an existing TypeBC object in the step where it is
         created.
+        
         Parameters
         ----------
         region

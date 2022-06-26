@@ -18,6 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 import inspect
+import os
 import re
 import sys
 
@@ -29,6 +30,9 @@ author = 'WANG Hailin'
 release = '2016a0'
 
 # -- General configuration ---------------------------------------------------
+
+# Add source code
+sys.path.insert(0, os.path.abspath('../../src'))
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom

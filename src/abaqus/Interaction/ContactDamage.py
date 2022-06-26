@@ -38,86 +38,94 @@ class ContactDamage:
         
         If **evolutionType** = DISPLACEMENT, **softening** = LINEAR, and **useMixedMode** = OFF, the table data specify the following:
         
-            - Effective total or Plastic displacement at failure, measured from the time of damage initiation.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Effective total or Plastic displacement at failure, measured from the time of damage initiation.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+        
         If **evolutionType** = ENERGY, **softening** = LINEAR or EXPONENTIAL, and **useMixedMode** = OFF, the table data specify the following:
         
-            - Fracture energy.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Fracture energy.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+        
         If **evolutionType** = DISPLACEMENT, **softening** = LINEAR, **useMixedMode** = ON, **mixedModeType** = TABULAR, and
         **modeMixRatio** = ENERGY or TRACTION, the table data specify the following:
         
-            - Total displacement at failure, measured from the time of damage initiation.
-            - Appropriate mode mix ratio.
-            - Appropriate mode mix ratio (if relevant, for three dimensional problems with anisotropic shear behavior).
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Total displacement at failure, measured from the time of damage initiation.
+        - Appropriate mode mix ratio.
+        - Appropriate mode mix ratio (if relevant, for three dimensional problems with anisotropic shear behavior).
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+        
         If **evolutionType** = ENERGY, **softening** = LINEAR or EXPONENTIAL, **useMixedMode** = ON, **mixedModeType** = TABULAR, and
         **modeMixRatio** = ENERGY or TRACTION, the table data specify the following:
         
-            - Fracture energy.
-            - Appropriate mode mix ratio.
-            - Appropriate mode mix ratio (if relevant, for three dimensional problems with anisotropic shear behavior).
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Fracture energy.
+        - Appropriate mode mix ratio.
+        - Appropriate mode mix ratio (if relevant, for three dimensional problems with anisotropic shear behavior).
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+        
         If **evolutionType** = DISPLACEMENT, **softening** = EXPONENTIAL, and **useMixedMode** = OFF, the table data specify the following:
         
-            - Effective total or Plastic displacement at failure, measured from the time of damage initiation.
-            - Exponential law parameter.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Effective total or Plastic displacement at failure, measured from the time of damage initiation.
+        - Exponential law parameter.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+        
         If **evolutionType** = DISPLACEMENT, **softening** = EXPONENTIAL, **useMixedMode** = ON, **mixedModeType** = TABULAR, and
         **modeMixRatio** = ENERGY or TRACTION, the table data specify the following:
         
-            - Total displacement at failure, measured from the time of damage initiation.
-            - Exponential law parameter.
-            - Appropriate mode mix ratio.
-            - Appropriate mode mix ratio (if relevant, for three dimensional problems with anisotropic shear behavior).
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Total displacement at failure, measured from the time of damage initiation.
+        - Exponential law parameter.
+        - Appropriate mode mix ratio.
+        - Appropriate mode mix ratio (if relevant, for three dimensional problems with anisotropic shear behavior).
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+        
         If **evolutionType** = DISPLACEMENT, **softening** = TABULAR, and **useMixedMode** = OFF, the table data specify the following:
         
-            - Damage variable.
-            - Effective total or Plastic displacement at failure, measured from the time of damage initiation.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Damage variable.
+        - Effective total or Plastic displacement at failure, measured from the time of damage initiation.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+        
         If **evolutionType** = DISPLACEMENT, **softening** = TABULAR, **useMixedMode** = ON, **mixedModeType** = TABULAR, and
         **modeMixRatio** = ENERGY or TRACTION, the table data specify the following:
         
-            - Damage variable.
-            - Effective total displacement, measured from the time of damage initiation.
-            - Appropriate mode mix ratio.
-            - Appropriate mode mix ratio (if relevant, for three dimensional problems with anisotropic shear behavior).
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Damage variable.
+        - Effective total displacement, measured from the time of damage initiation.
+        - Appropriate mode mix ratio.
+        - Appropriate mode mix ratio (if relevant, for three dimensional problems with anisotropic shear behavior).
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+        
         If **evolutionType** = ENERGY, **softening** = LINEAR or EXPONENTIAL, **useMixedMode** = ON, **mixedModeType** = POWER_LAW or
         BK, and **modeMixRatio** = ENERGY, the table data specify the following:
         
-            - Normal mode fracture energy.
-            - Shear mode fracture energy for failure in the first shear direction.
-            - Shear mode fracture energy for failure in the second shear direction.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Normal mode fracture energy.
+        - Shear mode fracture energy for failure in the first shear direction.
+        - Shear mode fracture energy for failure in the second shear direction.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
         The corresponding analysis keywords are:
 
