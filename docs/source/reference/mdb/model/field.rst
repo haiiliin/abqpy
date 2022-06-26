@@ -9,6 +9,7 @@ Create fields
 -------------
 
 .. autoclass:: abaqus.Field.FieldModel.FieldModel
+    :noindex:
     :members:
 
     .. autoclasstoc::

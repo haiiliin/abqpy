@@ -18,6 +18,7 @@ In Mdb
 ~~~~~~
 
 .. autoclass:: abaqus.Section.SectionModel.SectionModel
+    :noindex:
     :members:
 
     .. autoclasstoc::
@@ -27,6 +28,7 @@ In Odb
 ~~~~~~
 
 .. autoclass:: abaqus.Section.SectionOdb.SectionOdb
+    :noindex:
     :members:
 
     .. autoclasstoc::

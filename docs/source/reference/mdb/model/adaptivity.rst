@@ -9,6 +9,7 @@ Create adaptivity mesh control features
 ---------------------------------------
 
 .. autoclass:: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel
+    :noindex:
     :members:
 
     .. autoclasstoc::
@@ -18,6 +19,7 @@ Create adaptivity mesh state features
 -------------------------------------
 
 .. autoclass:: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep
+    :noindex:
     :members:
 
     .. autoclasstoc::
@@ -27,6 +29,7 @@ Create features for AdaptivityIteration
 ---------------------------------------
 
 .. autoclass:: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration
+    :noindex:
     :members:
 
     .. autoclasstoc::

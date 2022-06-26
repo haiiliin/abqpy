@@ -11,6 +11,7 @@ In Mdb
 ~~~~~~
 
 .. autoclass:: abaqus.Filter.FilterModel.FilterModel
+    :noindex:
     :members:
 
 In Odb
