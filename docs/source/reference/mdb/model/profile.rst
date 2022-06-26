@@ -19,6 +19,8 @@ In Odb
 .. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb
     :members:
 
+    .. autoclassdoc::
+
 
 Object features
 ---------------
@@ -29,11 +31,15 @@ Profile
 .. autoclass:: abaqus.BeamSectionProfile.Profile.Profile
     :members:
 
+    .. autoclassdoc::
+
 ArbitraryProfile
 ~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile
     :members:
+
+    .. autoclassdoc::
 
 BoxProfile
 ~~~~~~~~~~
@@ -41,11 +47,15 @@ BoxProfile
 .. autoclass:: abaqus.BeamSectionProfile.BoxProfile.BoxProfile
     :members:
 
+    .. autoclassdoc::
+
 CircularProfile
 ~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.BeamSectionProfile.CircularProfile.CircularProfile
     :members:
+
+    .. autoclassdoc::
 
 GeneralizedProfile
 ~~~~~~~~~~~~~~~~~~
@@ -53,11 +63,15 @@ GeneralizedProfile
 .. autoclass:: abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile
     :members:
 
+    .. autoclassdoc::
+
 HexagonalProfile
 ~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile
     :members:
+
+    .. autoclassdoc::
 
 IProfile
 ~~~~~~~~
@@ -65,11 +79,15 @@ IProfile
 .. autoclass:: abaqus.BeamSectionProfile.IProfile.IProfile
     :members:
 
+    .. autoclassdoc::
+
 LProfile
 ~~~~~~~~
 
 .. autoclass:: abaqus.BeamSectionProfile.LProfile.LProfile
     :members:
+
+    .. autoclassdoc::
 
 PipeProfile
 ~~~~~~~~~~~
@@ -77,11 +95,15 @@ PipeProfile
 .. autoclass:: abaqus.BeamSectionProfile.PipeProfile.PipeProfile
     :members:
 
+    .. autoclassdoc::
+
 RectangularProfile
 ~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile
     :members:
+
+    .. autoclassdoc::
 
 TProfile
 ~~~~~~~~
@@ -89,9 +111,13 @@ TProfile
 .. autoclass:: abaqus.BeamSectionProfile.TProfile.TProfile
     :members:
 
+    .. autoclassdoc::
+
 TrapezoidalProfile
 ~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile
     :members:
+
+    .. autoclassdoc::
 

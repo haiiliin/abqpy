@@ -18,8 +18,12 @@ Object features
 Assembly
 ~~~~~~~~
 
-.. autoclass:: abaqus.Assembly.Assembly.AssemAssemblyblyBase
+.. autoclass:: abaqus.Assembly.Assembly.Assembly
     :members:
+
+    .. autoclassdoc::
+
+    .. autoclasstoc::
 
 ConnectorOrientation
 ~~~~~~~~~~~~~~~~~~~~
@@ -27,11 +31,15 @@ ConnectorOrientation
 .. autoclass:: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation
     :members:
 
+    .. autoclassdoc::
+
 ConnectorOrientationArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray
     :members:
+
+    .. autoclassdoc::
 
 Feature
 ~~~~~~~
@@ -39,11 +47,15 @@ Feature
 .. autoclass:: abaqus.Assembly.Feature.Feature
     :members:
 
+    .. autoclassdoc::
+
 ModelInstance
 ~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Model.Model.ModelInstance
     :members:
+
+    .. autoclassdoc::
 
 PartInstance
 ~~~~~~~~~~~~
@@ -51,9 +63,13 @@ PartInstance
 .. autoclass:: abaqus.Assembly.PartInstance.PartInstance
     :members:
 
+    .. autoclassdoc::
+
 PartInstanceArray
 ~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Assembly.PartInstanceArray.PartInstanceArray
     :members:
+
+    .. autoclassdoc::
 

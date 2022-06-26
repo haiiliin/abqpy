@@ -19,11 +19,15 @@ CommandRegister
 .. autoclass:: abaqus.CustomKernel.CommandRegister.CommandRegister
     :members:
 
+    .. autoclassdoc::
+
 RegisteredDictionary
 ~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary
     :members:
+
+    .. autoclassdoc::
 
 RegisteredList
 ~~~~~~~~~~~~~~
@@ -31,11 +35,15 @@ RegisteredList
 .. autoclass:: abaqus.CustomKernel.RegisteredList.RegisteredList
     :members:
 
+    .. autoclassdoc::
+
 RegisteredTuple
 ~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple
     :members:
+
+    .. autoclassdoc::
 
 RepositorySupport
 ~~~~~~~~~~~~~~~~~

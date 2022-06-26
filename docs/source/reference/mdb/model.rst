@@ -35,7 +35,7 @@ Create models
 --------------
 
 .. autoclass:: abaqus.Mdb.Mdb.Mdb
-    :noindex:
+    :members:
 
 
 Object features
@@ -47,6 +47,8 @@ Model
 .. autoclass:: abaqus.Model.Model.Model
     :members:
     :inherited-members:
+
+    .. autoclasstoc::
 
 KeywordBlock
 ~~~~~~~~~~~~

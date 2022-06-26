@@ -30,11 +30,15 @@ Amplitude
 .. autoclass:: abaqus.Amplitude.Amplitude.Amplitude
     :members:
 
+    .. autoclassdoc::
+
 ActuatorAmplitude
 ~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude
     :members:
+
+    .. autoclassdoc::
 
 BaselineCorrection
 ~~~~~~~~~~~~~~~~~~
@@ -42,11 +46,15 @@ BaselineCorrection
 .. autoclass:: abaqus.Amplitude.BaselineCorrection.BaselineCorrection
     :members:
 
+    .. autoclassdoc::
+
 Correlation
 ~~~~~~~~~~~
 
 .. autoclass:: abaqus.Amplitude.Correlation.Correlation
     :members:
+
+    .. autoclassdoc::
 
 CorrelationArray
 ~~~~~~~~~~~~~~~~
@@ -54,11 +62,15 @@ CorrelationArray
 .. autoclass:: abaqus.Amplitude.CorrelationArray.CorrelationArray
     :members:
 
+    .. autoclassdoc::
+
 DecayAmplitude
 ~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Amplitude.DecayAmplitude.DecayAmplitude
     :members:
+
+    .. autoclassdoc::
 
 EquallySpacedAmplitude
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -66,11 +78,15 @@ EquallySpacedAmplitude
 .. autoclass:: abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude
     :members:
 
+    .. autoclassdoc::
+
 ModulatedAmplitude
 ~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude
     :members:
+
+    .. autoclassdoc::
 
 PeriodicAmplitude
 ~~~~~~~~~~~~~~~~~
@@ -78,11 +94,15 @@ PeriodicAmplitude
 .. autoclass:: abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude
     :members:
 
+    .. autoclassdoc::
+
 Property
 ~~~~~~~~
 
 .. autoclass:: abaqus.Amplitude.Property.Property
     :members:
+
+    .. autoclassdoc::
 
 PsdDefinition
 ~~~~~~~~~~~~~
@@ -90,11 +110,15 @@ PsdDefinition
 .. autoclass:: abaqus.Amplitude.PsdDefinition.PsdDefinition
     :members:
 
+    .. autoclassdoc::
+
 SmoothStepAmplitude
 ~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude
     :members:
+
+    .. autoclassdoc::
 
 SolutionDependentAmplitude
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -102,14 +126,20 @@ SolutionDependentAmplitude
 .. autoclass:: abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude
     :members:
 
+    .. autoclassdoc::
+
 SpectrumAmplitude
 ~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude
     :members:
 
+    .. autoclassdoc::
+
 TabularAmplitude
 ~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Amplitude.TabularAmplitude.TabularAmplitude
     :members:
+
+    .. autoclassdoc::

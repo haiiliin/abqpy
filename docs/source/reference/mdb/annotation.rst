@@ -24,11 +24,15 @@ Annotation
 .. autoclass:: abaqus.Annotation.Annotation.Annotation
     :members:
 
+    .. autoclassdoc::
+
 AnnotationsToPlotArray
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray
     :members:
+
+    .. autoclassdoc::
 
 AnnotationViewport
 ~~~~~~~~~~~~~~~~~~
@@ -36,11 +40,15 @@ AnnotationViewport
 .. autoclass:: abaqus.Annotation.AnnotationViewport.AnnotationViewport
     :members:
 
+    .. autoclassdoc::
+
 Arrow
 ~~~~~
 
 .. autoclass:: abaqus.Annotation.Arrow.Arrow
     :members:
+
+    .. autoclassdoc::
 
 Text
 ~~~~

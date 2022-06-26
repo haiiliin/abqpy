@@ -35,6 +35,7 @@ release = '2016a0'
 # ones.
 extensions = [
     'sphinx_toolbox.more_autodoc.overloads',
+    'autoclasstoc',
     'sphinx.ext.autodoc',
     'sphinx_autodoc_typehints',
     'numpydoc',
@@ -123,6 +124,10 @@ python_use_unqualified_type_names = True
 autodoc_typehints_format = 'short'
 typehints_defaults = 'comma'
 typehints_document_rtype = False
+
+autodoc_default_options = {
+    'undoc-members': False,
+}
 
 numpydoc_show_class_members = True
 numpydoc_show_inherited_class_members = False

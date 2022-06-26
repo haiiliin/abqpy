@@ -18,15 +18,21 @@ AbaqusNDarray
 .. autoclass:: abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray
     :members:
 
+    .. autoclassdoc::
+
 InputFile
 ~~~~~~~~~
 
 .. autoclass:: abaqus.InputFileParser.InputFile.InputFile
     :members:
 
+    .. autoclassdoc::
+
 Keyword
 ~~~~~~~
 
 .. autoclass:: abaqus.InputFileParser.Keyword.Keyword
     :members:
+
+    .. autoclassdoc::
 

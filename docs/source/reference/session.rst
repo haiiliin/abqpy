@@ -29,6 +29,8 @@ Session
     :members:
     :inherited-members:
 
+    .. autoclassdoc::
+
 
 AutoColors
 ~~~~~~~~~~
@@ -36,11 +38,15 @@ AutoColors
 .. autoclass:: abaqus.Session.AutoColors.AutoColors
     :members:
 
+    .. autoclassdoc::
+
 Color
 ~~~~~
 
 .. autoclass:: abaqus.Session.Color.Color
     :members:
+
+    .. autoclassdoc::
 
 Drawing
 ~~~~~~~
@@ -48,11 +54,15 @@ Drawing
 .. autoclass:: abaqus.Session.Drawing.Drawing
     :members:
 
+    .. autoclassdoc::
+
 Image
 ~~~~~
 
 .. autoclass:: abaqus.Session.Image.Image
     :members:
+
+    .. autoclassdoc::
 
 JournalOptions
 ~~~~~~~~~~~~~~
@@ -60,11 +70,15 @@ JournalOptions
 .. autoclass:: abaqus.Session.JournalOptions.JournalOptions
     :members:
 
+    .. autoclassdoc::
+
 MemoryReductionOptions
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Session.MemoryReductionOptions.MemoryReductionOptions
     :members:
+
+    .. autoclassdoc::
 
 NetworkDatabaseConnector
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -72,9 +86,13 @@ NetworkDatabaseConnector
 .. autoclass:: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector
     :members:
 
+    .. autoclassdoc::
+
 NumberFormat
 ~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Session.NumberFormat.NumberFormat
     :members:
+
+    .. autoclassdoc::
 

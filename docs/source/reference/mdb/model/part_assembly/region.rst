@@ -33,22 +33,14 @@ Assembly sets contain regions of an assembly and are used by many commands that 
 Create regions for Part
 -----------------------
 
-.. automethod:: abaqus.Region.RegionPart.RegionPart.Surface
-
-.. automethod:: abaqus.Region.RegionPart.RegionPart.Set
-
-.. automethod:: abaqus.Region.RegionPart.RegionPart.Skin
-
-.. automethod:: abaqus.Region.RegionPart.RegionPart.EditSkin
-
-.. automethod:: abaqus.Region.RegionPart.RegionPart.Stringer
+.. autoclass:: abaqus.Region.RegionPart.RegionPart
+    :members:
 
 Create regions for Assembly
 ---------------------------
 
-.. automethod:: abaqus.Region.RegionAssembly.RegionAssembly.Surface
-
-.. automethod:: abaqus.Region.RegionAssembly.RegionAssembly.Set
+.. autoclass:: abaqus.Region.RegionAssembly.RegionAssembly
+    :members:
 
 
 Object features
@@ -60,11 +52,15 @@ Region features for Part
 .. autoclass:: abaqus.Region.RegionPartBase.RegionPartBase
     :members:
 
+    .. autoclassdoc::
+
 Region features for Assembly
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase
     :members:
+
+    .. autoclassdoc::
 
 Region
 ~~~~~~
@@ -72,11 +68,15 @@ Region
 .. autoclass:: abaqus.Region.Region.Region
     :members:
 
+    .. autoclassdoc::
+
 RegionArray
 ~~~~~~~~~~~
 
 .. autoclass:: abaqus.Region.RegionArray.RegionArray
     :members:
+
+    .. autoclassdoc::
 
 Set
 ~~~
@@ -84,11 +84,15 @@ Set
 .. autoclass:: abaqus.Region.Set.Set
     :members:
 
+    .. autoclassdoc::
+
 Skin
 ~~~~
 
 .. autoclass:: abaqus.Region.Skin.Skin
     :members:
+
+    .. autoclassdoc::
 
 Stringer
 ~~~~~~~~
@@ -96,9 +100,13 @@ Stringer
 .. autoclass:: abaqus.Region.Stringer.Stringer
     :members:
 
+    .. autoclassdoc::
+
 Surface
 ~~~~~~~
 
 .. autoclass:: abaqus.Region.Surface.Surface
     :members:
+
+    .. autoclassdoc::
 

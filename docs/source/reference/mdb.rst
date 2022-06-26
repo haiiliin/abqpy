@@ -19,5 +19,7 @@ Object features
 ---------------
 
 .. autoclass:: abaqus.Mdb.Mdb.Mdb
-    :members:
-    :inherited-members:
+   :members:
+   :inherited-members:
+
+   .. autoclasstoc::
