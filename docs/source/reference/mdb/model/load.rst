@@ -18,6 +18,8 @@ Create loads
 .. autoclass:: abaqus.Load.LoadModel.LoadModel
     :members:
 
+    .. autoclasstoc::
+
 
 Object features of loads
 ~~~~~~~~~~~~~~~~~~~~~~~~

@@ -27,7 +27,70 @@ Session
 
 .. autoclass:: abaqus.Session.Session.Session
     :members:
-    :inherited-members:
+
+    .. autoclasstoc::
+
+SessionBase
+~~~~~~~~~~~
+
+.. autoclass:: abaqus.Session.SessionBase.SessionBase
+    :members:
+
+    .. autoclasstoc::
+
+AnimationSession
+~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Animation.AnimationSession.AnimationSession
+    :members:
+
+    .. autoclasstoc::
+
+DisplayGroupSession
+~~~~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession
+    :members:
+
+    .. autoclasstoc::
+
+FieldReportSession
+~~~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.FieldReport.FieldReportSession.FieldReportSession
+    :members:
+
+    .. autoclasstoc::
+
+JobSession
+~~~~~~~~~~
+
+.. autoclass:: abaqus.Job.JobSession.JobSession
+    :members:
+
+    .. autoclasstoc::
+
+OdbSession
+~~~~~~~~~~
+
+.. autoclass:: abaqus.Odb.OdbSession.OdbSession
+    :members:
+
+    .. autoclasstoc::
+
+PathSession
+~~~~~~~~~~~
+
+.. autoclass:: abaqus.PathAndProbe.PathSession.PathSession
+    :members:
+
+    .. autoclasstoc::
+
+XYSession
+~~~~~~~~~
+
+.. autoclass:: abaqus.XY.XYSession.XYSession
+    :members:
 
     .. autoclasstoc::
 

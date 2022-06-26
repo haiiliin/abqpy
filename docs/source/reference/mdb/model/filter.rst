@@ -19,6 +19,8 @@ In Odb
 .. autoclass:: abaqus.Filter.FilterOdb.FilterOdb
     :members:
 
+    .. autoclasstoc::
+
 
 Object features
 ---------------

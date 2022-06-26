@@ -20,12 +20,16 @@ In Mdb
 .. autoclass:: abaqus.Section.SectionModel.SectionModel
     :members:
 
+    .. autoclasstoc::
+
 
 In Odb
 ~~~~~~
 
 .. autoclass:: abaqus.Section.SectionOdb.SectionOdb
     :members:
+
+    .. autoclasstoc::
 
 
 Object features
@@ -36,7 +40,22 @@ Section
 
 .. autoclass:: abaqus.Section.Section.Section
     :members:
-    :inherited-members:
+
+    .. autoclasstoc::
+
+SectionBase
+~~~~~~~~~~~
+
+.. autoclass:: abaqus.Section.SectionBase.SectionBase
+    :members:
+
+    .. autoclasstoc::
+
+ConnectorSection
+~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Connector.ConnectorSection.ConnectorSection
+    :members:
 
     .. autoclasstoc::
 

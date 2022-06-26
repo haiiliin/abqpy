@@ -19,6 +19,8 @@ In Odb
 .. autoclass:: abaqus.Material.MaterialOdb.MaterialOdb
     :members:
 
+    .. autoclasstoc::
+
 
 Assign properties to the material
 ---------------------------------

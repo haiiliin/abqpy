@@ -13,12 +13,16 @@ In Mdb
 .. autoclass:: abaqus.Amplitude.AmplitudeModel.AmplitudeModel
     :members:
 
+    .. autoclasstoc::
+
 
 In Odb
 ~~~~~~
 
 .. autoclass:: abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb
     :members:
+
+    .. autoclasstoc::
 
 
 Object features

@@ -11,6 +11,8 @@ Create instances
 .. autoclass:: abaqus.Assembly.AssemblyModel.AssemblyModel
     :members:
 
+    .. autoclasstoc::
+
 
 Object features
 ---------------
@@ -22,6 +24,12 @@ Assembly
     :members:
 
     .. autoclasstoc::
+
+AssemblyBase
+~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Assembly.AssemblyBase.AssemblyBase
+    :members:
 
     .. autoclasstoc::
 

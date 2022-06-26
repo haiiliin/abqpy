@@ -11,6 +11,7 @@ from .XYPlotBase import XYPlotBase
 
 
 class XYPlot(XYPlotBase):
+    
     @staticmethod
     def AreaStyle(
         color: str = "", fill: Boolean = ON, style: SymbolicConstant = SOLID

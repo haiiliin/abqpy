@@ -16,6 +16,8 @@ Assign features to optimization tasks
 .. autoclass:: abaqus.Optimization.OptimizationTask.OptimizationTask
     :members:
 
+    .. autoclasstoc::
+
 
 Object features
 ---------------

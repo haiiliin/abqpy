@@ -30,6 +30,7 @@ class ConstrainedSketch(
     ConstrainedSketchParameterModel,
     ConstrainedSketchVertexModel,
 ):
+    
     @typing.overload
     def __init__(
         self,

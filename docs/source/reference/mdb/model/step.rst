@@ -25,7 +25,30 @@ Step
 
 .. autoclass:: abaqus.Step.Step.Step
     :members:
-    :inherited-members:
+
+    .. autoclasstoc::
+
+StepBase
+~~~~~~~~
+
+.. autoclass:: abaqus.Step.StepBase.StepBase
+    :members:
+
+    .. autoclasstoc::
+
+AdaptivityStep
+~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep
+    :members:
+
+    .. autoclasstoc::
+
+OutputStep
+~~~~~~~~~~
+
+.. autoclass:: abaqus.StepOutput.OutputStep.OutputStep
+    :members:
 
     .. autoclasstoc::
 

@@ -10,3 +10,5 @@ Create predefined fields
 
 .. autoclass:: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel
     :noindex:
+
+    .. autoclasstoc::

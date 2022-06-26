@@ -13,9 +13,13 @@ In Mdb
 .. autoclass:: abaqus.Amplitude.AmplitudeModel.AmplitudeModel
     :noindex:
 
+    .. autoclasstoc::
+
 
 In Odb
 ~~~~~~
 
 .. autoclass:: abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb
     :noindex:
+
+    .. autoclasstoc::

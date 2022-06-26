@@ -37,6 +37,8 @@ Create models
 .. autoclass:: abaqus.Mdb.Mdb.Mdb
     :members:
 
+    .. autoclasstoc::
+
 
 Object features
 ---------------
@@ -46,7 +48,158 @@ Model
 
 .. autoclass:: abaqus.Model.Model.Model
     :members:
-    :inherited-members:
+
+    .. autoclasstoc::
+
+ModelBase
+~~~~~~~~~
+
+.. autoclass:: abaqus.Model.ModelBase.ModelBase
+    :members:
+
+    .. autoclasstoc::
+
+AdaptivityModel
+~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel
+    :members:
+
+    .. autoclasstoc::
+
+AmplitudeModel
+~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Amplitude.AmplitudeModel.AmplitudeModel
+    :members:
+
+    .. autoclasstoc::
+
+AssemblyModel
+~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Assembly.AssemblyModel.AssemblyModel
+    :members:
+
+    .. autoclasstoc::
+
+BoundaryConditionModel
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel
+    :members:
+
+    .. autoclasstoc::
+
+CalibrationModel
+~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Calibration.CalibrationModel.CalibrationModel
+    :members:
+
+    .. autoclasstoc::
+
+ConstraintModel
+~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Constraint.ConstraintModel.ConstraintModel
+    :members:
+
+    .. autoclasstoc::
+
+FilterModel
+~~~~~~~~~~~
+
+.. autoclass:: abaqus.Filter.FilterModel.FilterModel
+    :members:
+
+    .. autoclasstoc::
+
+InteractionModel
+~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Interaction.InteractionModel.InteractionModel
+    :members:
+
+    .. autoclasstoc::
+
+LoadModel
+~~~~~~~~~
+
+.. autoclass:: abaqus.Load.LoadModel.LoadModel
+    :members:
+
+    .. autoclasstoc::
+
+MaterialModel
+~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Material.MaterialModel.MaterialModel
+    :members:
+
+    .. autoclasstoc::
+
+OptimizationTaskModel
+~~~~~~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel
+    :members:
+
+    .. autoclasstoc::
+
+PartModel
+~~~~~~~~~
+
+.. autoclass:: abaqus.Part.PartModel.PartModel
+    :members:
+
+    .. autoclasstoc::
+
+PredefinedFieldModel
+~~~~~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel
+    :members:
+
+    .. autoclasstoc::
+
+BeamSectionProfileModel
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel
+    :members:
+
+    .. autoclasstoc::
+
+OutputModel
+~~~~~~~~~~~
+
+.. autoclass:: StepOutput.StepOutput.OutputModel.OutputModel
+    :members:
+
+    .. autoclasstoc::
+
+SectionModel
+~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Section.SectionModel.SectionModel
+    :members:
+
+    .. autoclasstoc::
+
+SketchModel
+~~~~~~~~~~~
+
+.. autoclass:: abaqus.Sketch.SketchModel.SketchModel
+    :members:
+
+    .. autoclasstoc::
+
+StepModel
+~~~~~~~~~
+
+.. autoclass:: abaqus.Step.StepModel.StepModel
+    :members:
 
     .. autoclasstoc::
 

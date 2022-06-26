@@ -11,3 +11,5 @@ Abaqus Model Database
 
 .. autoclass:: abaqus.Mdb.Mdb.Mdb
     :noindex:
+
+    .. autoclasstoc::

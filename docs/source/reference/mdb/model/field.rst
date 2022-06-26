@@ -11,6 +11,8 @@ Create fields
 .. autoclass:: abaqus.Field.FieldModel.FieldModel
     :members:
 
+    .. autoclasstoc::
+
 
 Object features
 ---------------

@@ -20,9 +20,13 @@ In Mdb
 .. autoclass:: abaqus.Section.SectionModel.SectionModel
     :noindex:
 
+    .. autoclasstoc::
+
 
 In Odb
 ~~~~~~
 
 .. autoclass:: abaqus.Section.SectionOdb.SectionOdb
     :noindex:
+
+    .. autoclasstoc::
