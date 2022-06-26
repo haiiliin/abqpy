@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -443,6 +444,102 @@ The AnimationOptions object has no constructor command. Abaqus creates the
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.mode" title="abaqus.Animation.AnimationOptions.AnimationOptions.mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the animation mode.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.frameRate" title="abaqus.Animation.AnimationOptions.AnimationOptions.frameRate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">frameRate</span></code></a></p></td>
+<td><p>An Int specifying the animation rate in frames/second.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.frameCounter" title="abaqus.Animation.AnimationOptions.AnimationOptions.frameCounter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">frameCounter</span></code></a></p></td>
+<td><p>A Boolean specifying whether to show the frame counter.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.relativeScaling" title="abaqus.Animation.AnimationOptions.AnimationOptions.relativeScaling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">relativeScaling</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the relative scaling when the AnimationController object's <strong>animationType</strong> = SCALE_FACTOR or HARMONIC.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.numScaleFactorFrames" title="abaqus.Animation.AnimationOptions.AnimationOptions.numScaleFactorFrames"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numScaleFactorFrames</span></code></a></p></td>
+<td><p>An Int specifying the number of frames to be used when the AnimationController object's <strong>animationType</strong> = SCALE_FACTOR or HARMONIC.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.timeHistoryMode" title="abaqus.Animation.AnimationOptions.AnimationOptions.timeHistoryMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeHistoryMode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether the time history animation is time based or frame based.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.maxTime" title="abaqus.Animation.AnimationOptions.AnimationOptions.maxTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maxTime</span></code></a></p></td>
+<td><p>A Float specifying the maximum time for time based time history animation when <strong>maxTimeAutoCompute</strong> = False.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.maxTimeAutoCompute" title="abaqus.Animation.AnimationOptions.AnimationOptions.maxTimeAutoCompute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maxTimeAutoCompute</span></code></a></p></td>
+<td><p>A Boolean specifying whether the animation maximum time value should be computed from the active frames when <strong>timeHistoryMode</strong> is set to TIME_BASED.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.maxTimeAutoValue" title="abaqus.Animation.AnimationOptions.AnimationOptions.maxTimeAutoValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maxTimeAutoValue</span></code></a></p></td>
+<td><p>A Float specifying the maximum time when <strong>timeHistoryMode</strong> is set to TIME_BASED and the <strong>maxTimeAutoCompute</strong> value is True.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.minTime" title="abaqus.Animation.AnimationOptions.AnimationOptions.minTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minTime</span></code></a></p></td>
+<td><p>A Float specifying the minimum time for time based time history animation when <strong>minTimeAutoCompute</strong> = False.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.minTimeAutoCompute" title="abaqus.Animation.AnimationOptions.AnimationOptions.minTimeAutoCompute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minTimeAutoCompute</span></code></a></p></td>
+<td><p>A Boolean specifying whether the animation minimum time value should be computed from the active frames when <strong>timeHistoryMode</strong> is set to TIME_BASED.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.minTimeAutoValue" title="abaqus.Animation.AnimationOptions.AnimationOptions.minTimeAutoValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minTimeAutoValue</span></code></a></p></td>
+<td><p>A Float specifying the minimum time when <strong>timeHistoryMode</strong> is set to TIME_BASED and the <strong>minTimeAutoCompute</strong> value is True.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.timeIncrement" title="abaqus.Animation.AnimationOptions.AnimationOptions.timeIncrement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeIncrement</span></code></a></p></td>
+<td><p>A Float specifying the time increment for frame selection when <strong>timeHistoryMode</strong> is set to TIME_BASED.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyUseHighlightMethod" title="abaqus.Animation.AnimationOptions.AnimationOptions.xyUseHighlightMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyUseHighlightMethod</span></code></a></p></td>
+<td><p>A Boolean specifying whether to use the highlight method to draw the time tracker line and symbols.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyShowLine" title="abaqus.Animation.AnimationOptions.AnimationOptions.xyShowLine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyShowLine</span></code></a></p></td>
+<td><p>A Boolean specifying whether to show the time tracker line.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyLineStyle" title="abaqus.Animation.AnimationOptions.AnimationOptions.xyLineStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyLineStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the <strong>X - Y</strong> time tracker line style.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyLineThickness" title="abaqus.Animation.AnimationOptions.AnimationOptions.xyLineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyLineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the <strong>X - Y</strong> time tracker line thickness.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyShowSymbol" title="abaqus.Animation.AnimationOptions.AnimationOptions.xyShowSymbol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyShowSymbol</span></code></a></p></td>
+<td><p>A Boolean specifying whether to show the time tracker symbols.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolMarker" title="abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolMarker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xySymbolMarker</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the marker type to be used for all animation capable <strong>X - Y</strong> curve or the SymbolicConstant DEFAULT specifying that the system will take the marker associated to each curve Possible values are:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolSize" title="abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xySymbolSize</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the size of the markers.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyLineColor" title="abaqus.Animation.AnimationOptions.AnimationOptions.xyLineColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyLineColor</span></code></a></p></td>
+<td><p>A String specifying the color used to plot the <strong>X - Y</strong> time tracker line when <strong>xyUseHighlightMethod</strong> = False.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolColor" title="abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xySymbolColor</span></code></a></p></td>
+<td><p>A String specifying the color used to plot <strong>X - Y</strong> time tracker symbols when <strong>xyUseHighlightMethod</strong> = False.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions.setValues" title="abaqus.Animation.AnimationOptions.AnimationOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([mode, frameRate, frameCounter, ...])</p></td>
+<td><p>This method modifies the AnimationOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.frameCounter">
 <span class="sig-name descname"><span class="pre">frameCounter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py#L27-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.frameCounter" title="Permalink to this definition">#</a></dt>
@@ -733,6 +830,307 @@ Session object, see Session object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">attachedToGui</span></code></p></td>
+<td><p>A Boolean specifying whether an Abaqus interactive session is running.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">replayInProgress</span></code></p></td>
+<td><p>A Boolean specifying whether Abaqus is executing a replay file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryFootprint</span></code></p></td>
+<td><p>A Float specifying the memory usage value for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryMaxFootprint</span></code></p></td>
+<td><p>A Float specifying the maximum value for the memory usage for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryLimit</span></code></p></td>
+<td><p>A Float specifying the limit for the memory use for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">colors</span></code></p></td>
+<td><p>A repository of Color objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">journalOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../session.html#abaqus.Session.JournalOptions.JournalOptions" title="abaqus.Session.JournalOptions.JournalOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">JournalOptions</span></code></a> object specifying how to record selection of geometry in the journal and replay files.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">memoryReductionOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../session.html#abaqus.Session.MemoryReductionOptions.MemoryReductionOptions" title="abaqus.Session.MemoryReductionOptions.MemoryReductionOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryReductionOptions</span></code></a> object specifying options for running in reduced memory mode.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeQuery</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.NodeQuery.NodeQuery" title="abaqus.PathAndProbe.NodeQuery.NodeQuery"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeQuery</span></code></a> object specifying nodes and their coordinates in a path.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sketcherOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../mdb/model/sketcher.html#abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions" title="abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketcherOptions</span></code></a> object specifying common options for all sketches.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewerOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.ViewerOptions.ViewerOptions" title="abaqus.OdbDisplay.ViewerOptions.ViewerOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewerOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">animationOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.Animation.AnimationOptions.AnimationOptions" title="abaqus.Animation.AnimationOptions.AnimationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnimationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">aviOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.Animation.AVIOptions.AVIOptions" title="abaqus.Animation.AVIOptions.AVIOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AVIOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageAnimationOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions" title="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageAnimation</span></code></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.Animation.ImageAnimation.ImageAnimation" title="abaqus.Animation.ImageAnimation.ImageAnimation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">quickTimeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Animation.QuickTimeOptions.QuickTimeOptions" title="abaqus.Animation.QuickTimeOptions.QuickTimeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuickTimeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewports</span></code></p></td>
+<td><p>A repository of Viewport objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">customData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultFieldReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultFreeBodyReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodyReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbs</span></code></p></td>
+<td><p>A repository of Odb objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">scratchOdbs</span></code></p></td>
+<td><p>A repository of ScratchOdb objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultOdbDisplay</span></code></p></td>
+<td><p>A <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultOdbDisplay</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultPlot</span></code></p></td>
+<td><p>A <a class="reference internal" href="xy.html#abaqus.XY.DefaultPlot.DefaultPlot" title="abaqus.XY.DefaultPlot.DefaultPlot"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultPlot</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultChartOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="xy.html#abaqus.XY.DefaultChartOptions.DefaultChartOptions" title="abaqus.XY.DefaultChartOptions.DefaultChartOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultChartOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbData</span></code></p></td>
+<td><p>A repository of OdbData objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mdbData</span></code></p></td>
+<td><p>A repository of MdbData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">paths</span></code></p></td>
+<td><p>A repository of Path objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodies</span></code></p></td>
+<td><p>A repository of FreeBody objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">streams</span></code></p></td>
+<td><p>A repository of Stream objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">spectrums</span></code></p></td>
+<td><p>A repository of Spectrum objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentProbeValues</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues" title="abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues"><code class="xref py py-class docutils literal notranslate"><span class="pre">CurrentProbeValues</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultProbeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeReport</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeReport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultProbeReport</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeReport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectedProbeValues</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues" title="abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectedProbeValues</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PrintOptions.PrintOptions" title="abaqus.Print.PrintOptions.PrintOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PrintOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">epsOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="print.html#abaqus.Print.EpsOptions.EpsOptions" title="abaqus.Print.EpsOptions.EpsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">EpsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pageSetupOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PageSetupOptions.PageSetupOptions" title="abaqus.Print.PageSetupOptions.PageSetupOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PageSetupOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pngOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PngOptions.PngOptions" title="abaqus.Print.PngOptions.PngOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PngOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">psOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PsOptions.PsOptions" title="abaqus.Print.PsOptions.PsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">svgOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.SvgOptions.SvgOptions" title="abaqus.Print.SvgOptions.SvgOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">SvgOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tiffOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../mdb/model/predefined.html#abaqus.PredefinedField.TiffOptions.TiffOptions" title="abaqus.PredefinedField.TiffOptions.TiffOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">TiffOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoColors</span></code></p></td>
+<td><p>An <a class="reference internal" href="../session.html#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoColors</span></code></a> object specifying the color palette to be used for color coding.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyColors</span></code></p></td>
+<td><p>An <a class="reference internal" href="../session.html#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoColors</span></code></a> object specifying the color palette to be used forXYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyDataObjects</span></code></p></td>
+<td><p>A repository of XYData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">curves</span></code></p></td>
+<td><p>A repository of XYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyPlots</span></code></p></td>
+<td><p>A repository of XYPlot objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">charts</span></code></p></td>
+<td><p>A repository of Chart objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultXYReportOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="xy.html#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyReportOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="xy.html#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">views</span></code></p></td>
+<td><p>A repository of View objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">networkDatabaseConnectors</span></code></p></td>
+<td><p>A repository of NetworkDatabaseConnector objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayGroups</span></code></p></td>
+<td><p>A repository of DisplayGroup objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsInfo</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo" title="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsInfo</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultGraphicsOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultViewportAnnotationOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions" title="abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportAnnotationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">queues</span></code></p></td>
+<td><p>A repository of Queue objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentViewportName</span></code></p></td>
+<td><p>A String specifying the name of the current viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sessionState</span></code></p></td>
+<td><p>A Dictionary object specifying the viewports and their associated models.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">images</span></code></p></td>
+<td><p>A repository of Image objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">movies</span></code></p></td>
+<td><p>A repository of Movie objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultLightOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.LightOptions.LightOptions" title="abaqus.DisplayOptions.LightOptions.LightOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">LightOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawingArea</span></code></p></td>
+<td><p>A <a class="reference internal" href="canvas.html#abaqus.Canvas.DrawingArea.DrawingArea" title="abaqus.Canvas.DrawingArea.DrawingArea"><code class="xref py py-class docutils literal notranslate"><span class="pre">DrawingArea</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultMesherOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../mdb/model/mesh.html#abaqus.Mesh.MesherOptions.MesherOptions" title="abaqus.Mesh.MesherOptions.MesherOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MesherOptions</span></code></a> object specifying how to control default settings in the Mesh module.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawings</span></code></p></td>
+<td><p>A repository of Drawing objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation" title="abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeImageAnimation</span></code></a>(fileName, format[, ...])</p></td>
+<td><p>This method writes the animations present in the list of canvas objects to a file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.AnimationSession.AnimationSession.Movie" title="abaqus.Animation.AnimationSession.AnimationSession.Movie"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Movie</span></code></a>(name, fileName[, startFrame, ...])</p></td>
+<td><p>This method creates a Movie object from the contents of the specified file.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>([kernelMemoryLimit])</p></td>
+<td><p>This method modifies the Session object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableCADConnection</span></code>(CADName[, portNum])</p></td>
+<td><p>This method enables the Abaqus/CAE listening port for the specified <strong>CAD</strong> system.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isCADConnectionEnabled</span></code>()</p></td>
+<td><p>This method checks the status of CAD Connection.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableCADConnection</span></code>(CADName)</p></td>
+<td><p>This method disables an associative import CAD connection that was enabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableParameterUpdate</span></code>(CADName, CADVersion[, ...])</p></td>
+<td><p>This method enables parameter updates for ProE and NX by establishing a connection with the listening port previously setup by the CAD application.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setCADPortNumber</span></code>(CADName, Port)</p></td>
+<td><p>This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a connection with the listening port previously setup by the CAD application.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">updateCADParameters</span></code>(modelName, CADName, ...)</p></td>
+<td><p>This method updates the parameters for the specified model using the specified parameter file.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableParameterUpdate</span></code>(CADName)</p></td>
+<td><p>This method disables an associative CAD connection using parameters.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToFile</span></code>(fileName[, format, ...])</p></td>
+<td><p>This method prints canvas objects to a file using the attributes stored in the PrintOptions object and the appropriate format options object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToPrinter</span></code>([printCommand, numCopies, ...])</p></td>
+<td><p>This method prints canvas objects to a Windows printer or to a PostScript printer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveOptions</span></code>(directory)</p></td>
+<td><p>This method saves your customized display settings.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeVrmlFile</span></code>(fileName[, format, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">write3DXMLFile</span></code>(fileName[, format, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeOBJFile</span></code>(fileName[, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">openOdb</span></code>(name, *args, **kwargs)</p></td>
+<td><p>This method opens an existing output database (.odb) file and creates a new Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">exit</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Animation.AnimationSession.AnimationSession.Movie">
 <span class="sig-name descname"><span class="pre">Movie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineStartFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineEndFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineStartTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineEndTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'END_FRAME_TIME'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationSession.py#L40-L114"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationSession.AnimationSession.Movie" title="Permalink to this definition">#</a></dt>
@@ -852,6 +1250,23 @@ member when the animation module is imported.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.AVIOptions.AVIOptions.setValues" title="abaqus.Animation.AVIOptions.AVIOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([compressionMethod, ...])</p></td>
+<td><p>This method modifies the AVIOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Animation.AVIOptions.AVIOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">compressionMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'RLE8'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compressionQuality</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">codecOptions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sizeDefinition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SIZE_ON_SCREEN'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AVIOptions.py#L18-L62"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AVIOptions.AVIOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -933,6 +1348,48 @@ dimensions.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.ImageAnimation.ImageAnimation.fileName" title="abaqus.Animation.ImageAnimation.ImageAnimation.fileName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fileName</span></code></a></p></td>
+<td><p>A String specifying the file to which the animation frames is to be written.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(fileName, format)</p></td>
+<td><p>This method creates an ImageAnimation object from the specified filename and format.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.ImageAnimation.ImageAnimation.writeFrame" title="abaqus.Animation.ImageAnimation.ImageAnimation.writeFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeFrame</span></code></a>([canvasObjects])</p></td>
+<td><p>This method adds a frame to the ImageAnimation object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.ImageAnimation.ImageAnimation.close" title="abaqus.Animation.ImageAnimation.ImageAnimation.close"><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code></a>()</p></td>
+<td><p>This method closes the ImageAnimation object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.ImageAnimation.ImageAnimation.closed" title="abaqus.Animation.ImageAnimation.ImageAnimation.closed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">closed</span></code></a>()</p></td>
+<td><p>This method indicates if the ImageAnimation is open or closed for writing animation frames.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Animation.ImageAnimation.ImageAnimation.close">
 <span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/ImageAnimation.py#L55-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.ImageAnimation.ImageAnimation.close" title="Permalink to this definition">#</a></dt>
@@ -1000,6 +1457,23 @@ creates the <strong>imageAnimationOptions</strong> member when the animation mod
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.setValues" title="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([frameRate, timeScale, ...])</p></td>
+<td><p>This method modifies the ImageAnimationOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frameRate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeScale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vpDecorations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vpBackground</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/ImageAnimationOptions.py#L18-L44"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -1070,6 +1544,72 @@ Upon creation, the Movie object is added to the session.movies repository.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.Movie.Movie.width" title="abaqus.Animation.Movie.Movie.width"><code class="xref py py-obj docutils literal notranslate"><span class="pre">width</span></code></a></p></td>
+<td><p>An Int specifying the width of the movie in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.Movie.Movie.height" title="abaqus.Animation.Movie.Movie.height"><code class="xref py py-obj docutils literal notranslate"><span class="pre">height</span></code></a></p></td>
+<td><p>An Int specifying the height of the movie in pixels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.Movie.Movie.numFrames" title="abaqus.Animation.Movie.Movie.numFrames"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numFrames</span></code></a></p></td>
+<td><p>An Int specifying the total number of frames on the movie file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.Movie.Movie.duration" title="abaqus.Animation.Movie.Movie.duration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">duration</span></code></a></p></td>
+<td><p>A Float specifying the duration of the movie in seconds.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.Movie.Movie.memory" title="abaqus.Animation.Movie.Movie.memory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">memory</span></code></a></p></td>
+<td><p>An Int specifying the memory taken by the movie frames as selected.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.Movie.Movie.startFrame" title="abaqus.Animation.Movie.Movie.startFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">startFrame</span></code></a></p></td>
+<td><p>An Int specifying the first frame to be displayed from this movie.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.Movie.Movie.endFrame" title="abaqus.Animation.Movie.Movie.endFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">endFrame</span></code></a></p></td>
+<td><p>An Int specifying the last frame to be displayed from this movie.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.Movie.Movie.timelineStartFrame" title="abaqus.Animation.Movie.Movie.timelineStartFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timelineStartFrame</span></code></a></p></td>
+<td><p>An Int specifying the global timeline frame number that corresponds to <strong>startFrame</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.Movie.Movie.timelineEndFrame" title="abaqus.Animation.Movie.Movie.timelineEndFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timelineEndFrame</span></code></a></p></td>
+<td><p>An Int specifying the global timeline frame number that corresponds to <strong>endFrame</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.Movie.Movie.timelineStartTime" title="abaqus.Animation.Movie.Movie.timelineStartTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timelineStartTime</span></code></a></p></td>
+<td><p>A Float specifying the global timeline time that corresponds to the time of <strong>startFrame</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.Movie.Movie.timelineEndTime" title="abaqus.Animation.Movie.Movie.timelineEndTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timelineEndTime</span></code></a></p></td>
+<td><p>The SymbolicConstant END_FRAME_TIME or a Float specifying the global timeline time that corresponds to the time of <strong>endFrame</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, fileName[, startFrame, ...])</p></td>
+<td><p>This method creates a Movie object from the contents of the specified file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.Movie.Movie.setValues" title="abaqus.Animation.Movie.Movie.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([startFrame, endFrame, ...])</p></td>
+<td><p>This method modifies the Movie object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.duration">
 <span class="sig-name descname"><span class="pre">duration</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/Movie.py#L28-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.duration" title="Permalink to this definition">#</a></dt>

@@ -13,7 +13,7 @@ redentABQ
 .. autoclass:: abaqus.TextRepresentation.redentABQ.redentABQ
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 textRepr
 ~~~~~~~~
@@ -21,7 +21,7 @@ textRepr
 .. autoclass:: abaqus.TextRepresentation.textRepr.textRepr
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TextReprOptions
 ~~~~~~~~~~~~~~~
@@ -29,5 +29,5 @@ TextReprOptions
 .. autoclass:: abaqus.TextRepresentation.TextReprOptions.TextReprOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

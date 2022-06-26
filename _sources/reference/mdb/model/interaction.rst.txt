@@ -20,7 +20,7 @@ ContactControl
 .. autoclass:: abaqus.Interaction.ContactControl.ContactControl
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ContactDamage
 ~~~~~~~~~~~~~
@@ -28,7 +28,7 @@ ContactDamage
 .. autoclass:: abaqus.Interaction.ContactDamage.ContactDamage
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ContactDamping
 ~~~~~~~~~~~~~~
@@ -36,7 +36,7 @@ ContactDamping
 .. autoclass:: abaqus.Interaction.ContactDamping.ContactDamping
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ContactInitialization
 ~~~~~~~~~~~~~~~~~~~~~
@@ -44,7 +44,7 @@ ContactInitialization
 .. autoclass:: abaqus.Interaction.ContactInitialization.ContactInitialization
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ContactProperty
 ~~~~~~~~~~~~~~~
@@ -52,7 +52,7 @@ ContactProperty
 .. autoclass:: abaqus.Interaction.ContactProperty.ContactProperty
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ContactPropertyAssignment
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,7 +60,7 @@ ContactPropertyAssignment
 .. autoclass:: abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ContactStabilization
 ~~~~~~~~~~~~~~~~~~~~
@@ -68,7 +68,7 @@ ContactStabilization
 .. autoclass:: abaqus.Interaction.ContactStabilization.ContactStabilization
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Interaction
 ~~~~~~~~~~~
@@ -76,7 +76,7 @@ Interaction
 .. autoclass:: abaqus.Interaction.Interaction.Interaction
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 InitializationAssignment
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -84,7 +84,7 @@ InitializationAssignment
 .. autoclass:: abaqus.Interaction.InitializationAssignment.InitializationAssignment
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 InteractionProperty
 ~~~~~~~~~~~~~~~~~~~
@@ -92,7 +92,7 @@ InteractionProperty
 .. autoclass:: abaqus.Interaction.InteractionProperty.InteractionProperty
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 InteractionState
 ~~~~~~~~~~~~~~~~
@@ -100,7 +100,7 @@ InteractionState
 .. autoclass:: abaqus.Interaction.InteractionState.InteractionState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AcousticImpedance
 ~~~~~~~~~~~~~~~~~
@@ -108,7 +108,7 @@ AcousticImpedance
 .. autoclass:: abaqus.Interaction.AcousticImpedance.AcousticImpedance
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AcousticImpedanceProp
 ~~~~~~~~~~~~~~~~~~~~~
@@ -116,7 +116,7 @@ AcousticImpedanceProp
 .. autoclass:: abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AcousticImpedanceState
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -124,7 +124,7 @@ AcousticImpedanceState
 .. autoclass:: abaqus.Interaction.AcousticImpedanceState.AcousticImpedanceState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ActuatorSensor
 ~~~~~~~~~~~~~~
@@ -132,7 +132,7 @@ ActuatorSensor
 .. autoclass:: abaqus.Interaction.ActuatorSensor.ActuatorSensor
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ActuatorSensorProp
 ~~~~~~~~~~~~~~~~~~
@@ -140,7 +140,7 @@ ActuatorSensorProp
 .. autoclass:: abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ActuatorSensorState
 ~~~~~~~~~~~~~~~~~~~
@@ -148,7 +148,7 @@ ActuatorSensorState
 .. autoclass:: abaqus.Interaction.ActuatorSensorState.ActuatorSensorState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CavityRadiation
 ~~~~~~~~~~~~~~~
@@ -156,7 +156,7 @@ CavityRadiation
 .. autoclass:: abaqus.Interaction.CavityRadiation.CavityRadiation
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CavityRadiationProp
 ~~~~~~~~~~~~~~~~~~~
@@ -164,7 +164,7 @@ CavityRadiationProp
 .. autoclass:: abaqus.Interaction.CavityRadiationProp.CavityRadiationProp
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CavityRadiationState
 ~~~~~~~~~~~~~~~~~~~~
@@ -172,7 +172,7 @@ CavityRadiationState
 .. autoclass:: abaqus.Interaction.CavityRadiationState.CavityRadiationState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CohesiveBehavior
 ~~~~~~~~~~~~~~~~
@@ -180,7 +180,7 @@ CohesiveBehavior
 .. autoclass:: abaqus.Interaction.CohesiveBehavior.CohesiveBehavior
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcentratedFilmCondition
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -188,7 +188,7 @@ ConcentratedFilmCondition
 .. autoclass:: abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcentratedFilmConditionState
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -196,7 +196,7 @@ ConcentratedFilmConditionState
 .. autoclass:: abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcentratedRadiationToAmbient
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -204,7 +204,7 @@ ConcentratedRadiationToAmbient
 .. autoclass:: abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcentratedRadiationToAmbientState
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -212,7 +212,7 @@ ConcentratedRadiationToAmbientState
 .. autoclass:: abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ContactExp
 ~~~~~~~~~~
@@ -220,7 +220,7 @@ ContactExp
 .. autoclass:: abaqus.Interaction.ContactExp.ContactExp
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ContactStd
 ~~~~~~~~~~
@@ -228,7 +228,7 @@ ContactStd
 .. autoclass:: abaqus.Interaction.ContactStd.ContactStd
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ContactTangentialBehavior
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -236,7 +236,7 @@ ContactTangentialBehavior
 .. autoclass:: abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CyclicSymmetry
 ~~~~~~~~~~~~~~
@@ -244,7 +244,7 @@ CyclicSymmetry
 .. autoclass:: abaqus.Interaction.CyclicSymmetry.CyclicSymmetry
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CyclicSymmetryState
 ~~~~~~~~~~~~~~~~~~~
@@ -252,7 +252,7 @@ CyclicSymmetryState
 .. autoclass:: abaqus.Interaction.CyclicSymmetryState.CyclicSymmetryState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ElasticFoundation
 ~~~~~~~~~~~~~~~~~
@@ -260,7 +260,7 @@ ElasticFoundation
 .. autoclass:: abaqus.Interaction.ElasticFoundation.ElasticFoundation
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ElasticFoundationState
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -268,7 +268,7 @@ ElasticFoundationState
 .. autoclass:: abaqus.Interaction.ElasticFoundationState.ElasticFoundationState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ExpContactControl
 ~~~~~~~~~~~~~~~~~
@@ -276,7 +276,7 @@ ExpContactControl
 .. autoclass:: abaqus.Interaction.ExpContactControl.ExpContactControl
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FilmCondition
 ~~~~~~~~~~~~~
@@ -284,7 +284,7 @@ FilmCondition
 .. autoclass:: abaqus.Interaction.FilmCondition.FilmCondition
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FilmConditionProp
 ~~~~~~~~~~~~~~~~~
@@ -292,7 +292,7 @@ FilmConditionProp
 .. autoclass:: abaqus.Interaction.FilmConditionProp.FilmConditionProp
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FilmConditionState
 ~~~~~~~~~~~~~~~~~~
@@ -300,7 +300,7 @@ FilmConditionState
 .. autoclass:: abaqus.Interaction.FilmConditionState.FilmConditionState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FluidCavity
 ~~~~~~~~~~~
@@ -308,7 +308,7 @@ FluidCavity
 .. autoclass:: abaqus.Interaction.FluidCavity.FluidCavity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FluidCavityProperty
 ~~~~~~~~~~~~~~~~~~~
@@ -316,7 +316,7 @@ FluidCavityProperty
 .. autoclass:: abaqus.Interaction.FluidCavityProperty.FluidCavityProperty
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FluidCavityState
 ~~~~~~~~~~~~~~~~
@@ -324,7 +324,7 @@ FluidCavityState
 .. autoclass:: abaqus.Interaction.FluidCavityState.FluidCavityState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FluidExchange
 ~~~~~~~~~~~~~
@@ -332,7 +332,7 @@ FluidExchange
 .. autoclass:: abaqus.Interaction.FluidExchange.FluidExchange
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FluidExchangeProperty
 ~~~~~~~~~~~~~~~~~~~~~
@@ -340,7 +340,7 @@ FluidExchangeProperty
 .. autoclass:: abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FluidExchangeState
 ~~~~~~~~~~~~~~~~~~
@@ -348,7 +348,7 @@ FluidExchangeState
 .. autoclass:: abaqus.Interaction.FluidExchangeState.FluidExchangeState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FractureCriterion
 ~~~~~~~~~~~~~~~~~
@@ -356,7 +356,7 @@ FractureCriterion
 .. autoclass:: abaqus.Interaction.FractureCriterion.FractureCriterion
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 GapElectricalConductance
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -364,7 +364,7 @@ GapElectricalConductance
 .. autoclass:: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 GapHeatGeneration
 ~~~~~~~~~~~~~~~~~
@@ -372,7 +372,7 @@ GapHeatGeneration
 .. autoclass:: abaqus.Interaction.GapHeatGeneration.GapHeatGeneration
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 GeometricProperties
 ~~~~~~~~~~~~~~~~~~~
@@ -380,7 +380,7 @@ GeometricProperties
 .. autoclass:: abaqus.Interaction.GeometricProperties.GeometricProperties
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 IncidentWave
 ~~~~~~~~~~~~
@@ -388,7 +388,7 @@ IncidentWave
 .. autoclass:: abaqus.Interaction.IncidentWave.IncidentWave
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 IncidentWaveProperty
 ~~~~~~~~~~~~~~~~~~~~
@@ -396,7 +396,7 @@ IncidentWaveProperty
 .. autoclass:: abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 IncidentWaveState
 ~~~~~~~~~~~~~~~~~
@@ -404,7 +404,7 @@ IncidentWaveState
 .. autoclass:: abaqus.Interaction.IncidentWaveState.IncidentWaveState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MainSecondaryAssignment
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -412,7 +412,7 @@ MainSecondaryAssignment
 .. autoclass:: abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ModelChange
 ~~~~~~~~~~~
@@ -420,7 +420,7 @@ ModelChange
 .. autoclass:: abaqus.Interaction.ModelChange.ModelChange
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 NormalBehavior
 ~~~~~~~~~~~~~~
@@ -428,7 +428,7 @@ NormalBehavior
 .. autoclass:: abaqus.Interaction.NormalBehavior.NormalBehavior
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 
 PressurePenetration
@@ -437,7 +437,7 @@ PressurePenetration
 .. autoclass:: abaqus.Interaction.PressurePenetration.PressurePenetration
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PressurePenetrationState
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -445,7 +445,7 @@ PressurePenetrationState
 .. autoclass:: abaqus.Interaction.PressurePenetrationState.PressurePenetrationState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Radiation
 ~~~~~~~~~
@@ -453,7 +453,7 @@ Radiation
 .. autoclass:: abaqus.Interaction.Radiation.Radiation
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RadiationToAmbient
 ~~~~~~~~~~~~~~~~~~
@@ -461,7 +461,7 @@ RadiationToAmbient
 .. autoclass:: abaqus.Interaction.RadiationToAmbient.RadiationToAmbient
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RadiationToAmbientState
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -469,7 +469,7 @@ RadiationToAmbientState
 .. autoclass:: abaqus.Interaction.RadiationToAmbientState.RadiationToAmbientState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RegionPairs
 ~~~~~~~~~~~
@@ -477,7 +477,7 @@ RegionPairs
 .. autoclass:: abaqus.Interaction.RegionPairs.RegionPairs
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SelfContactExp
 ~~~~~~~~~~~~~~
@@ -485,7 +485,7 @@ SelfContactExp
 .. autoclass:: abaqus.Interaction.SelfContactExp.SelfContactExp
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SelfContactExpState
 ~~~~~~~~~~~~~~~~~~~
@@ -493,7 +493,7 @@ SelfContactExpState
 .. autoclass:: abaqus.Interaction.SelfContactExpState.SelfContactExpState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SelfContactStd
 ~~~~~~~~~~~~~~
@@ -501,7 +501,7 @@ SelfContactStd
 .. autoclass:: abaqus.Interaction.SelfContactStd.SelfContactStd
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SelfContactStdState
 ~~~~~~~~~~~~~~~~~~~
@@ -509,7 +509,7 @@ SelfContactStdState
 .. autoclass:: abaqus.Interaction.SelfContactStdState.SelfContactStdState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SlidingTransitionAssignment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -517,7 +517,7 @@ SlidingTransitionAssignment
 .. autoclass:: abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SmoothingAssignment
 ~~~~~~~~~~~~~~~~~~~
@@ -525,7 +525,7 @@ SmoothingAssignment
 .. autoclass:: abaqus.Interaction.SmoothingAssignment.SmoothingAssignment
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StabilizationAssignment
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -533,7 +533,7 @@ StabilizationAssignment
 .. autoclass:: abaqus.Interaction.StabilizationAssignment.StabilizationAssignment
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StdContactControl
 ~~~~~~~~~~~~~~~~~
@@ -541,7 +541,7 @@ StdContactControl
 .. autoclass:: abaqus.Interaction.StdContactControl.StdContactControl
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StdInitialization
 ~~~~~~~~~~~~~~~~~
@@ -549,7 +549,7 @@ StdInitialization
 .. autoclass:: abaqus.Interaction.StdInitialization.StdInitialization
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StdStabilization
 ~~~~~~~~~~~~~~~~
@@ -557,7 +557,7 @@ StdStabilization
 .. autoclass:: abaqus.Interaction.StdStabilization.StdStabilization
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StdXplCosimulation
 ~~~~~~~~~~~~~~~~~~
@@ -565,7 +565,7 @@ StdXplCosimulation
 .. autoclass:: abaqus.Interaction.StdXplCosimulation.StdXplCosimulation
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StdXplCosimulationState
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -573,7 +573,7 @@ StdXplCosimulationState
 .. autoclass:: abaqus.Interaction.StdXplCosimulationState.StdXplCosimulationState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 
 SurfaceFeatureAssignment
@@ -582,7 +582,7 @@ SurfaceFeatureAssignment
 .. autoclass:: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 
 SurfaceOffsetAssignment
@@ -591,7 +591,7 @@ SurfaceOffsetAssignment
 .. autoclass:: abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceThicknessAssignment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -599,7 +599,7 @@ SurfaceThicknessAssignment
 .. autoclass:: abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceToSurfaceContactExp
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -607,7 +607,7 @@ SurfaceToSurfaceContactExp
 .. autoclass:: abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceToSurfaceContactStd
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -615,7 +615,7 @@ SurfaceToSurfaceContactStd
 .. autoclass:: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceToSurfaceExpState
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -623,7 +623,7 @@ SurfaceToSurfaceExpState
 .. autoclass:: abaqus.Interaction.SurfaceToSurfaceExpState.SurfaceToSurfaceExpState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceToSurfaceStdState
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -631,7 +631,7 @@ SurfaceToSurfaceStdState
 .. autoclass:: abaqus.Interaction.SurfaceToSurfaceStdState.SurfaceToSurfaceStdState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 
 ThermalConductance
@@ -640,7 +640,7 @@ ThermalConductance
 .. autoclass:: abaqus.Interaction.ThermalConductance.ThermalConductance
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 XFEMCrackGrowth
 ~~~~~~~~~~~~~~~
@@ -648,7 +648,7 @@ XFEMCrackGrowth
 .. autoclass:: abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 XFEMCrackGrowthState
 ~~~~~~~~~~~~~~~~~~~~
@@ -656,5 +656,5 @@ XFEMCrackGrowthState
 .. autoclass:: abaqus.Interaction.XFEMCrackGrowthState.XFEMCrackGrowthState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

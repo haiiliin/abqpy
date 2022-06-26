@@ -13,7 +13,7 @@ EpsOptions
 .. autoclass:: abaqus.Print.EpsOptions.EpsOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PageSetupOptions
 ~~~~~~~~~~~~~~~~
@@ -21,7 +21,7 @@ PageSetupOptions
 .. autoclass:: abaqus.Print.PageSetupOptions.PageSetupOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PngOptions
 ~~~~~~~~~~
@@ -29,7 +29,7 @@ PngOptions
 .. autoclass:: abaqus.Print.PngOptions.PngOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PrintOptions
 ~~~~~~~~~~~~
@@ -37,7 +37,7 @@ PrintOptions
 .. autoclass:: abaqus.Print.PrintOptions.PrintOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PsOptions
 ~~~~~~~~~
@@ -45,7 +45,7 @@ PsOptions
 .. autoclass:: abaqus.Print.PsOptions.PsOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SvgOptions
 ~~~~~~~~~~
@@ -53,5 +53,5 @@ SvgOptions
 .. autoclass:: abaqus.Print.SvgOptions.SvgOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

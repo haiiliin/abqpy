@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -418,6 +419,304 @@
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">attachedToGui</span></code></p></td>
+<td><p>A Boolean specifying whether an Abaqus interactive session is running.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">replayInProgress</span></code></p></td>
+<td><p>A Boolean specifying whether Abaqus is executing a replay file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryFootprint</span></code></p></td>
+<td><p>A Float specifying the memory usage value for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryMaxFootprint</span></code></p></td>
+<td><p>A Float specifying the maximum value for the memory usage for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryLimit</span></code></p></td>
+<td><p>A Float specifying the limit for the memory use for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">colors</span></code></p></td>
+<td><p>A repository of Color objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">journalOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../session.html#abaqus.Session.JournalOptions.JournalOptions" title="abaqus.Session.JournalOptions.JournalOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">JournalOptions</span></code></a> object specifying how to record selection of geometry in the journal and replay files.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">memoryReductionOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../session.html#abaqus.Session.MemoryReductionOptions.MemoryReductionOptions" title="abaqus.Session.MemoryReductionOptions.MemoryReductionOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryReductionOptions</span></code></a> object specifying options for running in reduced memory mode.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeQuery</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.NodeQuery.NodeQuery" title="abaqus.PathAndProbe.NodeQuery.NodeQuery"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeQuery</span></code></a> object specifying nodes and their coordinates in a path.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sketcherOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../mdb/model/sketcher.html#abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions" title="abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketcherOptions</span></code></a> object specifying common options for all sketches.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewerOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.ViewerOptions.ViewerOptions" title="abaqus.OdbDisplay.ViewerOptions.ViewerOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewerOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">animationOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="animation.html#abaqus.Animation.AnimationOptions.AnimationOptions" title="abaqus.Animation.AnimationOptions.AnimationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnimationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">aviOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="animation.html#abaqus.Animation.AVIOptions.AVIOptions" title="abaqus.Animation.AVIOptions.AVIOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AVIOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageAnimationOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="animation.html#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions" title="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageAnimation</span></code></p></td>
+<td><p>An <a class="reference internal" href="animation.html#abaqus.Animation.ImageAnimation.ImageAnimation" title="abaqus.Animation.ImageAnimation.ImageAnimation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">quickTimeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="animation.html#abaqus.Animation.QuickTimeOptions.QuickTimeOptions" title="abaqus.Animation.QuickTimeOptions.QuickTimeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuickTimeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewports</span></code></p></td>
+<td><p>A repository of Viewport objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">customData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultFieldReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultFreeBodyReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodyReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbs</span></code></p></td>
+<td><p>A repository of Odb objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">scratchOdbs</span></code></p></td>
+<td><p>A repository of ScratchOdb objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultOdbDisplay</span></code></p></td>
+<td><p>A <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultOdbDisplay</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultPlot</span></code></p></td>
+<td><p>A <a class="reference internal" href="xy.html#abaqus.XY.DefaultPlot.DefaultPlot" title="abaqus.XY.DefaultPlot.DefaultPlot"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultPlot</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultChartOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="xy.html#abaqus.XY.DefaultChartOptions.DefaultChartOptions" title="abaqus.XY.DefaultChartOptions.DefaultChartOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultChartOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbData</span></code></p></td>
+<td><p>A repository of OdbData objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mdbData</span></code></p></td>
+<td><p>A repository of MdbData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">paths</span></code></p></td>
+<td><p>A repository of Path objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodies</span></code></p></td>
+<td><p>A repository of FreeBody objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">streams</span></code></p></td>
+<td><p>A repository of Stream objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">spectrums</span></code></p></td>
+<td><p>A repository of Spectrum objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentProbeValues</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues" title="abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues"><code class="xref py py-class docutils literal notranslate"><span class="pre">CurrentProbeValues</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultProbeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeReport</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeReport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultProbeReport</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeReport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectedProbeValues</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues" title="abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectedProbeValues</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PrintOptions.PrintOptions" title="abaqus.Print.PrintOptions.PrintOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PrintOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">epsOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="print.html#abaqus.Print.EpsOptions.EpsOptions" title="abaqus.Print.EpsOptions.EpsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">EpsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pageSetupOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PageSetupOptions.PageSetupOptions" title="abaqus.Print.PageSetupOptions.PageSetupOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PageSetupOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pngOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PngOptions.PngOptions" title="abaqus.Print.PngOptions.PngOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PngOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">psOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PsOptions.PsOptions" title="abaqus.Print.PsOptions.PsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">svgOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.SvgOptions.SvgOptions" title="abaqus.Print.SvgOptions.SvgOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">SvgOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tiffOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../mdb/model/predefined.html#abaqus.PredefinedField.TiffOptions.TiffOptions" title="abaqus.PredefinedField.TiffOptions.TiffOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">TiffOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoColors</span></code></p></td>
+<td><p>An <a class="reference internal" href="../session.html#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoColors</span></code></a> object specifying the color palette to be used for color coding.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyColors</span></code></p></td>
+<td><p>An <a class="reference internal" href="../session.html#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoColors</span></code></a> object specifying the color palette to be used forXYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyDataObjects</span></code></p></td>
+<td><p>A repository of XYData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">curves</span></code></p></td>
+<td><p>A repository of XYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyPlots</span></code></p></td>
+<td><p>A repository of XYPlot objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">charts</span></code></p></td>
+<td><p>A repository of Chart objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultXYReportOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="xy.html#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyReportOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="xy.html#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">views</span></code></p></td>
+<td><p>A repository of View objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">networkDatabaseConnectors</span></code></p></td>
+<td><p>A repository of NetworkDatabaseConnector objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayGroups</span></code></p></td>
+<td><p>A repository of DisplayGroup objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsInfo</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo" title="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsInfo</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultGraphicsOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultViewportAnnotationOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions" title="abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportAnnotationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">queues</span></code></p></td>
+<td><p>A repository of Queue objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentViewportName</span></code></p></td>
+<td><p>A String specifying the name of the current viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sessionState</span></code></p></td>
+<td><p>A Dictionary object specifying the viewports and their associated models.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">images</span></code></p></td>
+<td><p>A repository of Image objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">movies</span></code></p></td>
+<td><p>A repository of Movie objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultLightOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.LightOptions.LightOptions" title="abaqus.DisplayOptions.LightOptions.LightOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">LightOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawingArea</span></code></p></td>
+<td><p>A <a class="reference internal" href="canvas.html#abaqus.Canvas.DrawingArea.DrawingArea" title="abaqus.Canvas.DrawingArea.DrawingArea"><code class="xref py py-class docutils literal notranslate"><span class="pre">DrawingArea</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultMesherOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../mdb/model/mesh.html#abaqus.Mesh.MesherOptions.MesherOptions" title="abaqus.Mesh.MesherOptions.MesherOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MesherOptions</span></code></a> object specifying how to control default settings in the Mesh module.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawings</span></code></p></td>
+<td><p>A repository of Drawing objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup" title="abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisplayGroup</span></code></a>(name, leaf)</p></td>
+<td><p>This method creates a DisplayGroup object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>([kernelMemoryLimit])</p></td>
+<td><p>This method modifies the Session object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableCADConnection</span></code>(CADName[, portNum])</p></td>
+<td><p>This method enables the Abaqus/CAE listening port for the specified <strong>CAD</strong> system.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isCADConnectionEnabled</span></code>()</p></td>
+<td><p>This method checks the status of CAD Connection.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableCADConnection</span></code>(CADName)</p></td>
+<td><p>This method disables an associative import CAD connection that was enabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableParameterUpdate</span></code>(CADName, CADVersion[, ...])</p></td>
+<td><p>This method enables parameter updates for ProE and NX by establishing a connection with the listening port previously setup by the CAD application.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setCADPortNumber</span></code>(CADName, Port)</p></td>
+<td><p>This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a connection with the listening port previously setup by the CAD application.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">updateCADParameters</span></code>(modelName, CADName, ...)</p></td>
+<td><p>This method updates the parameters for the specified model using the specified parameter file.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableParameterUpdate</span></code>(CADName)</p></td>
+<td><p>This method disables an associative CAD connection using parameters.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToFile</span></code>(fileName[, format, ...])</p></td>
+<td><p>This method prints canvas objects to a file using the attributes stored in the PrintOptions object and the appropriate format options object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToPrinter</span></code>([printCommand, numCopies, ...])</p></td>
+<td><p>This method prints canvas objects to a Windows printer or to a PostScript printer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveOptions</span></code>(directory)</p></td>
+<td><p>This method saves your customized display settings.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeVrmlFile</span></code>(fileName[, format, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">write3DXMLFile</span></code>(fileName[, format, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeOBJFile</span></code>(fileName[, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">openOdb</span></code>(name, *args, **kwargs)</p></td>
+<td><p>This method opens an existing output database (.odb) file and creates a new Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">exit</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup">
 <span class="sig-name descname"><span class="pre">DisplayGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leaf</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupSession.py#L7-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup" title="Permalink to this definition">#</a></dt>
@@ -514,6 +813,75 @@ viewport.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.canUndo" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.canUndo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">canUndo</span></code></a></p></td>
+<td><p>A Boolean specifying whether Undo is possible or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.canRedo" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.canRedo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">canRedo</span></code></a></p></td>
+<td><p>A Boolean specifying whether Redo is possible or not.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.name" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.module" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.module"><code class="xref py py-obj docutils literal notranslate"><span class="pre">module</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the module in which the display group has been created.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.modelName" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.modelName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">modelName</span></code></a></p></td>
+<td><p>A String specifying the name of the model to which the display group belongs when the module is part- or assembly-based.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.partName" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.partName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">partName</span></code></a></p></td>
+<td><p>A String specifying the name of the part to which the display group belongs when the module is part-based.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, leaf)</p></td>
+<td><p>This method creates a DisplayGroup object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.add" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.add"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add</span></code></a>(leaf)</p></td>
+<td><p>This method adds the specified items to the display group.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.either" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.either"><code class="xref py py-obj docutils literal notranslate"><span class="pre">either</span></code></a>(leaf)</p></td>
+<td><p>This method redefines the display group to be only those items that are not shared by the <strong>leaf</strong> argument and by the display group.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.intersect" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.intersect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">intersect</span></code></a>(leaf)</p></td>
+<td><p>This method redefines the display group to be only those items that are shared by the <strong>leaf</strong> argument and the display group.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.redoLast" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.redoLast"><code class="xref py py-obj docutils literal notranslate"><span class="pre">redoLast</span></code></a>()</p></td>
+<td><p>This method redoes the last undone operation on the display group.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.remove" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.remove"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove</span></code></a>(leaf)</p></td>
+<td><p>This method removes the specified items from the display group.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.replace" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.replace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">replace</span></code></a>(leaf)</p></td>
+<td><p>This method replaces the contents of the display group with the specified items.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.undoLast" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.undoLast"><code class="xref py py-obj docutils literal notranslate"><span class="pre">undoLast</span></code></a>()</p></td>
+<td><p>This method undoes the last operation performed on the display group.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.add">
 <span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leaf</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L71-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.add" title="Permalink to this definition">#</a></dt>
@@ -660,6 +1028,135 @@ contents.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray.findAt" title="abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray.findAt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">findAt</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__repr__</span></code>(/)</p></td>
+<td><p>Return repr(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getattribute__</span></code>(name, /)</p></td>
+<td><p>Return getattr(self, name).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__lt__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__le__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__eq__</span></code>(value, /)</p></td>
+<td><p>Return self==value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ne__</span></code>(value, /)</p></td>
+<td><p>Return self!=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__gt__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ge__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iter__</span></code>(/)</p></td>
+<td><p>Implement iter(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code>(/)</p></td>
+<td><p>Return len(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code></p></td>
+<td><p>x.__getitem__(y) &lt;==&gt; x[y]</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__setitem__</span></code>(key, value, /)</p></td>
+<td><p>Set self[key] to value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__delitem__</span></code>(key, /)</p></td>
+<td><p>Delete self[key].</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__add__</span></code>(value, /)</p></td>
+<td><p>Return self+value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__mul__</span></code>(value, /)</p></td>
+<td><p>Return self*value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__rmul__</span></code>(value, /)</p></td>
+<td><p>Return value*self.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__contains__</span></code>(key, /)</p></td>
+<td><p>Return key in self.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iadd__</span></code>(value, /)</p></td>
+<td><p>Implement self+=value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__imul__</span></code>(value, /)</p></td>
+<td><p>Implement self*=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__reversed__</span></code>(/)</p></td>
+<td><p>Return a reverse iterator over the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__sizeof__</span></code>(/)</p></td>
+<td><p>Return the size of the list in memory, in bytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code>(/)</p></td>
+<td><p>Remove all items from list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code>(/)</p></td>
+<td><p>Return a shallow copy of the list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">append</span></code>(object, /)</p></td>
+<td><p>Append object to the end of the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert</span></code>(index, object, /)</p></td>
+<td><p>Insert object before index.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">extend</span></code>(iterable, /)</p></td>
+<td><p>Extend list by appending elements from the iterable.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code>([index])</p></td>
+<td><p>Remove and return item at index (default last).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove</span></code>(value, /)</p></td>
+<td><p>Remove first occurrence of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">index</span></code>(value[, start, stop])</p></td>
+<td><p>Return first index of value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">count</span></code>(value, /)</p></td>
+<td><p>Return number of occurrences of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reverse</span></code>(/)</p></td>
+<td><p>Reverse <em>IN PLACE</em>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sort</span></code>(*[, key, reverse])</p></td>
+<td><p>Sort the list in ascending order and return None.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__class_getitem__</span></code></p></td>
+<td><p>See PEP 585</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray.findAt">
 <span class="sig-name descname"><span class="pre">findAt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupArray.py#L5-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray.findAt" title="Permalink to this definition">#</a></dt>
@@ -712,6 +1209,51 @@ group and places it in the DisplayGroupInstanceRepository object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.name" title="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.lockOptions" title="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.lockOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lockOptions</span></code></a></p></td>
+<td><p>A Boolean specifying whether the display options stored on the DisplayGroupInstance object should be synchronized with changes to the viewport display options.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.odbDisplayOptions" title="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.odbDisplayOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbDisplayOptions</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions" title="abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbDisplayOptions</span></code></a> object specifying this member is available only for DisplayGroupInstance objects that are members of the DisplayGroupInstance repository member of the OdbDisplay object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.nodes" title="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.nodes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodes</span></code></a>()</p></td>
+<td><p>This method is used to obtain the list of nodes present in the DisplayGroupInstance object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.elements" title="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.elements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elements</span></code></a>()</p></td>
+<td><p>This method returns the list of elements present in the DisplayGroupInstance object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.setValues" title="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([lockOptions])</p></td>
+<td><p>This method modifies the DisplayGroupInstance object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.elements">
 <span class="sig-name descname"><span class="pre">elements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L57-L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.elements" title="Permalink to this definition">#</a></dt>
@@ -828,6 +1370,23 @@ repository defines additional methods as described below.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository.syncOptions" title="abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository.syncOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">syncOptions</span></code></a>(name[, updateInstances])</p></td>
+<td><p>This method synchronizes the display options stored on the OdbDisplay object with the display options stored on the DisplayGroupInstance object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository.syncOptions">
 <span class="sig-name descname"><span class="pre">syncOptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">updateInstances</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstanceRepository.py#L19-L32"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository.syncOptions" title="Permalink to this definition">#</a></dt>
@@ -869,6 +1428,23 @@ the DisplayGroup expression is evaluated, and they can have SymbolicConstant val
 </pre></div>
 </div>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(leafType)</p></td>
+<td><p>This method creates a Leaf object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.Leaf.Leaf.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/Leaf.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.Leaf.Leaf.leafType" title="Permalink to this definition">#</a></dt>
@@ -906,6 +1482,52 @@ The LeafFromDatums object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums.leafType" title="abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(datumSeq)</p></td>
+<td><p>This method creates a Leaf object from a sequence of datum objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(datumSeq)</p></td>
+<td><p>This method creates a Leaf object from a sequence of datum objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromDatums.py#L21-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums.leafType" title="Permalink to this definition">#</a></dt>
@@ -940,6 +1562,52 @@ commands.The LeafFromDisplayGroup object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup.leafType" title="abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(displayGroup)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Display Group objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(displayGroup)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Display Group objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup.displayGroup">
 <span class="sig-name descname"><span class="pre">displayGroup</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray" title="abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray"><span class="pre">DisplayGroupArray</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromDisplayGroup.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup.displayGroup" title="Permalink to this definition">#</a></dt>
@@ -981,6 +1649,52 @@ This page discusses:</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels.leafType" title="abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(partInstanceName, elementLabels)</p></td>
+<td><p>This method creates a Leaf object from a sequence of element labels that belong to a single part instance.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(partInstanceName, elementLabels)</p></td>
+<td><p>This method creates a Leaf object from a sequence of element labels that belong to a single part instance.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels.elementLabels">
 <span class="sig-name descname"><span class="pre">elementLabels</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromElementLabels.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels.elementLabels" title="Permalink to this definition">#</a></dt>
@@ -1030,6 +1744,52 @@ The LeafFromElementSets object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets.leafType" title="abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementSets)</p></td>
+<td><p>This method creates a Leaf object from a sequence of element sets.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementSets)</p></td>
+<td><p>This method creates a Leaf object from a sequence of element sets.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets.elementSets">
 <span class="sig-name descname"><span class="pre">elementSets</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromElementSets.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets.elementSets" title="Permalink to this definition">#</a></dt>
@@ -1072,6 +1832,61 @@ The LeafFromElementVarRange object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange.leafType" title="abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange.minimumRange" title="abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange.minimumRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minimumRange</span></code></a></p></td>
+<td><p>A Float specifying the minimum value for the variable range.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange.maximumRange" title="abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange.maximumRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maximumRange</span></code></a></p></td>
+<td><p>A Float specifying the maximum value for the variable range.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange.insideRange" title="abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange.insideRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">insideRange</span></code></a></p></td>
+<td><p>A Boolean specifying the method used to evaluate the range.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([minimumRange, maximumRange, ...])</p></td>
+<td><p>This method creates a Leaf object from elements with values lying in a variable range.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([minimumRange, maximumRange, ...])</p></td>
+<td><p>This method creates a Leaf object from elements with values lying in a variable range.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange.insideRange">
 <span class="sig-name descname"><span class="pre">insideRange</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromElementVarRange.py#L32-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange.insideRange" title="Permalink to this definition">#</a></dt>
@@ -1127,6 +1942,52 @@ The LeafFromGeometry object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromGeometry.LeafFromGeometry.leafType" title="abaqus.DisplayGroup.LeafFromGeometry.LeafFromGeometry.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([edgeSeq, faceSeq, cellSeq])</p></td>
+<td><p>This method creates a Leaf object from a sequence of edge, face and cell geometry objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([edgeSeq, faceSeq, cellSeq])</p></td>
+<td><p>This method creates a Leaf object from a sequence of edge, face and cell geometry objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromGeometry.LeafFromGeometry.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromGeometry.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromGeometry.LeafFromGeometry.leafType" title="Permalink to this definition">#</a></dt>
@@ -1161,6 +2022,52 @@ The LeafFromInstance object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromInstance.LeafFromInstance.leafType" title="abaqus.DisplayGroup.LeafFromInstance.LeafFromInstance.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(instances)</p></td>
+<td><p>This method creates a Leaf object from a sequence of part instance objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(instances)</p></td>
+<td><p>This method creates a Leaf object from a sequence of part instance objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromInstance.LeafFromInstance.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromInstance.py#L21-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromInstance.LeafFromInstance.leafType" title="Permalink to this definition">#</a></dt>
@@ -1195,6 +2102,52 @@ The LeafFromInstanceElementLabels object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromInstanceElementLabels.LeafFromInstanceElementLabels.leafType" title="abaqus.DisplayGroup.LeafFromInstanceElementLabels.LeafFromInstanceElementLabels.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementLabels)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying the element labels.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementLabels)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying the element labels.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromInstanceElementLabels.LeafFromInstanceElementLabels.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromInstanceElementLabels.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromInstanceElementLabels.LeafFromInstanceElementLabels.leafType" title="Permalink to this definition">#</a></dt>
@@ -1229,6 +2182,52 @@ The LeafFromInstanceNodeLabels object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromInstanceNodeLabels.LeafFromInstanceNodeLabels.leafType" title="abaqus.DisplayGroup.LeafFromInstanceNodeLabels.LeafFromInstanceNodeLabels.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(nodeLabels)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying the node labels.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(nodeLabels)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying the node labels.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromInstanceNodeLabels.LeafFromInstanceNodeLabels.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromInstanceNodeLabels.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromInstanceNodeLabels.LeafFromInstanceNodeLabels.leafType" title="Permalink to this definition">#</a></dt>
@@ -1263,6 +2262,52 @@ The LeafFromMeshElementLabels object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromMeshElementLabels.LeafFromMeshElementLabels.leafType" title="abaqus.DisplayGroup.LeafFromMeshElementLabels.LeafFromMeshElementLabels.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementSeq)</p></td>
+<td><p>This method creates a Leaf object from a sequence of mesh element objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementSeq)</p></td>
+<td><p>This method creates a Leaf object from a sequence of mesh element objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromMeshElementLabels.LeafFromMeshElementLabels.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromMeshElementLabels.py#L21-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromMeshElementLabels.LeafFromMeshElementLabels.leafType" title="Permalink to this definition">#</a></dt>
@@ -1297,6 +2342,52 @@ The LeafFromMeshNodeLabels object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromMeshNodeLabels.LeafFromMeshNodeLabels.leafType" title="abaqus.DisplayGroup.LeafFromMeshNodeLabels.LeafFromMeshNodeLabels.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(nodeSeq)</p></td>
+<td><p>This method creates a Leaf object from a sequence of mesh node objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(nodeSeq)</p></td>
+<td><p>This method creates a Leaf object from a sequence of mesh node objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromMeshNodeLabels.LeafFromMeshNodeLabels.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromMeshNodeLabels.py#L21-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromMeshNodeLabels.LeafFromMeshNodeLabels.leafType" title="Permalink to this definition">#</a></dt>
@@ -1331,6 +2422,52 @@ The LeafFromMeshSurfaceSets object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromMeshSurfaceSets.LeafFromMeshSurfaceSets.leafType" title="abaqus.DisplayGroup.LeafFromMeshSurfaceSets.LeafFromMeshSurfaceSets.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(surfaceSets)</p></td>
+<td><p>This method creates a Leaf object from a sequence of surface sets.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(surfaceSets)</p></td>
+<td><p>This method creates a Leaf object from a sequence of surface sets.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromMeshSurfaceSets.LeafFromMeshSurfaceSets.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromMeshSurfaceSets.py#L21-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromMeshSurfaceSets.LeafFromMeshSurfaceSets.leafType" title="Permalink to this definition">#</a></dt>
@@ -1365,6 +2502,52 @@ The LeafFromModelElemLabels object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromModelElemLabels.LeafFromModelElemLabels.leafType" title="abaqus.DisplayGroup.LeafFromModelElemLabels.LeafFromModelElemLabels.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementLabels)</p></td>
+<td><p>This method creates a Leaf object from a sequence of element labels spanning several part instances.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementLabels)</p></td>
+<td><p>This method creates a Leaf object from a sequence of element labels spanning several part instances.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromModelElemLabels.LeafFromModelElemLabels.elementLabels">
 <span class="sig-name descname"><span class="pre">elementLabels</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromModelElemLabels.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromModelElemLabels.LeafFromModelElemLabels.elementLabels" title="Permalink to this definition">#</a></dt>
@@ -1411,6 +2594,52 @@ The LeafFromModelNodeLabels object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromModelNodeLabels.LeafFromModelNodeLabels.leafType" title="abaqus.DisplayGroup.LeafFromModelNodeLabels.LeafFromModelNodeLabels.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(nodeLabels)</p></td>
+<td><p>This method creates a Leaf object from a sequence of node labels spanning several part instances.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(nodeLabels)</p></td>
+<td><p>This method creates a Leaf object from a sequence of node labels spanning several part instances.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromModelNodeLabels.LeafFromModelNodeLabels.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromModelNodeLabels.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromModelNodeLabels.LeafFromModelNodeLabels.leafType" title="Permalink to this definition">#</a></dt>
@@ -1457,6 +2686,52 @@ The LeafFromNodeLabels object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels.leafType" title="abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(partInstanceName, nodeLabels)</p></td>
+<td><p>This method creates a Leaf object from a sequence of node labels that belong to a single part instance.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(partInstanceName, nodeLabels)</p></td>
+<td><p>This method creates a Leaf object from a sequence of node labels that belong to a single part instance.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromNodeLabels.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels.leafType" title="Permalink to this definition">#</a></dt>
@@ -1506,6 +2781,52 @@ The LeafFromNodeSets object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets.leafType" title="abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(nodeSets)</p></td>
+<td><p>This method creates a Leaf object from a sequence of node sets.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(nodeSets)</p></td>
+<td><p>This method creates a Leaf object from a sequence of node sets.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromNodeSets.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets.leafType" title="Permalink to this definition">#</a></dt>
@@ -1547,6 +2868,61 @@ The LeafFromNodeVarRange object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange.leafType" title="abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange.minimumRange" title="abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange.minimumRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minimumRange</span></code></a></p></td>
+<td><p>A Float specifying the minimum value for the variable range.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange.maximumRange" title="abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange.maximumRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maximumRange</span></code></a></p></td>
+<td><p>A Float specifying the maximum value for the variable range.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange.insideRange" title="abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange.insideRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">insideRange</span></code></a></p></td>
+<td><p>A Boolean specifying the method used to evaluate the range.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([minimumRange, maximumRange, ...])</p></td>
+<td><p>This method creates a Leaf object from nodes with values lying in a variable range.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([minimumRange, maximumRange, ...])</p></td>
+<td><p>This method creates a Leaf object from nodes with values lying in a variable range.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange.insideRange">
 <span class="sig-name descname"><span class="pre">insideRange</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromNodeVarRange.py#L32-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange.insideRange" title="Permalink to this definition">#</a></dt>
@@ -1602,6 +2978,52 @@ The LeafFromOdbEdgePick object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromOdbEdgePick.LeafFromOdbEdgePick.leafType" title="abaqus.DisplayGroup.LeafFromOdbEdgePick.LeafFromOdbEdgePick.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(edgePick)</p></td>
+<td><p>This method creates a Leaf object from a tuple containing machine readable, compact strings defining the edges picked for each part instance.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(edgePick)</p></td>
+<td><p>This method creates a Leaf object from a tuple containing machine readable, compact strings defining the edges picked for each part instance.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromOdbEdgePick.LeafFromOdbEdgePick.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbEdgePick.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbEdgePick.LeafFromOdbEdgePick.leafType" title="Permalink to this definition">#</a></dt>
@@ -1636,6 +3058,52 @@ The LeafFromOdbElementLayups object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromOdbElementLayups.LeafFromOdbElementLayups.leafType" title="abaqus.DisplayGroup.LeafFromOdbElementLayups.LeafFromOdbElementLayups.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementLayups)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying layup names.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementLayups)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying layup names.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromOdbElementLayups.LeafFromOdbElementLayups.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementLayups.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementLayups.LeafFromOdbElementLayups.leafType" title="Permalink to this definition">#</a></dt>
@@ -1670,6 +3138,52 @@ The LeafFromOdbElementMaterials object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromOdbElementMaterials.LeafFromOdbElementMaterials.leafType" title="abaqus.DisplayGroup.LeafFromOdbElementMaterials.LeafFromOdbElementMaterials.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementMaterials)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying material names.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementMaterials)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying material names.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromOdbElementMaterials.LeafFromOdbElementMaterials.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementMaterials.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementMaterials.LeafFromOdbElementMaterials.leafType" title="Permalink to this definition">#</a></dt>
@@ -1704,6 +3218,52 @@ The LeafFromOdbElementPick object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromOdbElementPick.LeafFromOdbElementPick.leafType" title="abaqus.DisplayGroup.LeafFromOdbElementPick.LeafFromOdbElementPick.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementPick)</p></td>
+<td><p>This method creates a Leaf object from a tuple containing machine readable, compact strings defining the elements picked for each part instance.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementPick)</p></td>
+<td><p>This method creates a Leaf object from a tuple containing machine readable, compact strings defining the elements picked for each part instance.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromOdbElementPick.LeafFromOdbElementPick.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementPick.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementPick.LeafFromOdbElementPick.leafType" title="Permalink to this definition">#</a></dt>
@@ -1738,6 +3298,52 @@ The LeafFromOdbElementPlies object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromOdbElementPlies.LeafFromOdbElementPlies.leafType" title="abaqus.DisplayGroup.LeafFromOdbElementPlies.LeafFromOdbElementPlies.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementPlies)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying ply names.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementPlies)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying ply names.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromOdbElementPlies.LeafFromOdbElementPlies.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementPlies.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementPlies.LeafFromOdbElementPlies.leafType" title="Permalink to this definition">#</a></dt>
@@ -1772,6 +3378,52 @@ The LeafFromOdbElementSections object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromOdbElementSections.LeafFromOdbElementSections.leafType" title="abaqus.DisplayGroup.LeafFromOdbElementSections.LeafFromOdbElementSections.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementSections)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying section names.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementSections)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying section names.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromOdbElementSections.LeafFromOdbElementSections.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementSections.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementSections.LeafFromOdbElementSections.leafType" title="Permalink to this definition">#</a></dt>
@@ -1806,6 +3458,52 @@ The LeafFromOdbElementTypes object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromOdbElementTypes.LeafFromOdbElementTypes.leafType" title="abaqus.DisplayGroup.LeafFromOdbElementTypes.LeafFromOdbElementTypes.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementTypes)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying element names.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(elementTypes)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying element names.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromOdbElementTypes.LeafFromOdbElementTypes.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementTypes.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementTypes.LeafFromOdbElementTypes.leafType" title="Permalink to this definition">#</a></dt>
@@ -1840,6 +3538,52 @@ The LeafFromOdbNodePick object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromOdbNodePick.LeafFromOdbNodePick.leafType" title="abaqus.DisplayGroup.LeafFromOdbNodePick.LeafFromOdbNodePick.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(nodePick)</p></td>
+<td><p>This method creates a Leaf object from a tuple containing machine readable, compact strings defining the nodes picked for each part instance.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(nodePick)</p></td>
+<td><p>This method creates a Leaf object from a tuple containing machine readable, compact strings defining the nodes picked for each part instance.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromOdbNodePick.LeafFromOdbNodePick.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbNodePick.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbNodePick.LeafFromOdbNodePick.leafType" title="Permalink to this definition">#</a></dt>
@@ -1874,6 +3618,52 @@ The LeafFromPartElementLabels object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromPartElementLabels.LeafFromPartElementLabels.leafType" title="abaqus.DisplayGroup.LeafFromPartElementLabels.LeafFromPartElementLabels.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(part, elementLabels)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying element labels.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(part, elementLabels)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying element labels.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromPartElementLabels.LeafFromPartElementLabels.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromPartElementLabels.py#L21-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromPartElementLabels.LeafFromPartElementLabels.leafType" title="Permalink to this definition">#</a></dt>
@@ -1908,6 +3698,52 @@ The LeafFromPartInstance object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance.leafType" title="abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(partInstanceName)</p></td>
+<td><p>This method creates a Leaf object from a list of part instance names.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(partInstanceName)</p></td>
+<td><p>This method creates a Leaf object from a list of part instance names.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromPartInstance.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance.leafType" title="Permalink to this definition">#</a></dt>
@@ -1948,6 +3784,52 @@ The LeafFromPartNodeLabels object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromPartNodeLabels.LeafFromPartNodeLabels.leafType" title="abaqus.DisplayGroup.LeafFromPartNodeLabels.LeafFromPartNodeLabels.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(part, nodeLabels)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying node labels.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(part, nodeLabels)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Strings specifying node labels.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromPartNodeLabels.LeafFromPartNodeLabels.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromPartNodeLabels.py#L21-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromPartNodeLabels.LeafFromPartNodeLabels.leafType" title="Permalink to this definition">#</a></dt>
@@ -1982,6 +3864,52 @@ The LeafFromReferencePoint object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint.leafType" title="abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(refPtSeq)</p></td>
+<td><p>This method creates a Leaf object from a sequence of ReferencePoint objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(refPtSeq)</p></td>
+<td><p>This method creates a Leaf object from a sequence of ReferencePoint objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromReferencePoint.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint.leafType" title="Permalink to this definition">#</a></dt>
@@ -2016,6 +3944,52 @@ The LeafFromSets object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromSets.LeafFromSets.leafType" title="abaqus.DisplayGroup.LeafFromSets.LeafFromSets.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(sets)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Set objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(sets)</p></td>
+<td><p>This method creates a Leaf object from a sequence of Set objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromSets.LeafFromSets.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromSets.py#L21-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromSets.LeafFromSets.leafType" title="Permalink to this definition">#</a></dt>
@@ -2050,6 +4024,52 @@ The LeafFromSurfaceSets object is derived from the Leaf object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets.leafType" title="abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets.leafType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leafType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the leaf type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(surfaceSets)</p></td>
+<td><p>This method creates a Leaf object from a sequence of surface sets.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Leaf</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(surfaceSets)</p></td>
+<td><p>This method creates a Leaf object from a sequence of surface sets.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromSurfaceSets.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets.leafType" title="Permalink to this definition">#</a></dt>

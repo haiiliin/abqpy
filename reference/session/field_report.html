@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -580,6 +581,42 @@ Visualization module.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.numberFormat" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.numberFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numberFormat</span></code></a></p></td>
+<td><p>Format of the number</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(numColumns, numberFormat[, ...])</p></td>
+<td><p>This method modifies the FieldReportOptions object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NumberFormat</span></code></a>([blankPad, format, numDigits, ...])</p></td>
+<td><p>This method creates a NumberFormat object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat">
 <span class="sig-name descname"><span class="pre">NumberFormat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blankPad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ENGINEERING'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/FieldReport/FieldReportOptions.py#L76-L119"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat" title="Permalink to this definition">#</a></dt>
@@ -708,6 +745,23 @@ FreeBodyReportOptions object has no constructor. Abaqus creates the
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([numDigits, forceThreshold, ...])</p></td>
+<td><p>This method modifies the FreeBodyReportOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numDigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forceThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">momentThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberFormat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SCIENTIFIC'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reportFormat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NORMAL_ANNOTATED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csysType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'GLOBAL'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/FieldReport/FreeBodyReportOptions.py#L20-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -761,9 +815,125 @@ describing the given variable.</p>
 </pre></div>
 </div>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__repr__</span></code>(/)</p></td>
+<td><p>Return repr(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getattribute__</span></code>(name, /)</p></td>
+<td><p>Return getattr(self, name).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__lt__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__le__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__eq__</span></code>(value, /)</p></td>
+<td><p>Return self==value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ne__</span></code>(value, /)</p></td>
+<td><p>Return self!=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__gt__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ge__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iter__</span></code>(/)</p></td>
+<td><p>Implement iter(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code>(/)</p></td>
+<td><p>Return len(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code></p></td>
+<td><p>x.__getitem__(y) &lt;==&gt; x[y]</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__setitem__</span></code>(key, value, /)</p></td>
+<td><p>Set self[key] to value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__delitem__</span></code>(key, /)</p></td>
+<td><p>Delete self[key].</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__add__</span></code>(value, /)</p></td>
+<td><p>Return self+value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__mul__</span></code>(value, /)</p></td>
+<td><p>Return self*value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__rmul__</span></code>(value, /)</p></td>
+<td><p>Return value*self.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__contains__</span></code>(key, /)</p></td>
+<td><p>Return key in self.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iadd__</span></code>(value, /)</p></td>
+<td><p>Implement self+=value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__imul__</span></code>(value, /)</p></td>
+<td><p>Implement self*=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__reversed__</span></code>(/)</p></td>
+<td><p>Return a reverse iterator over the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__sizeof__</span></code>(/)</p></td>
+<td><p>Return the size of the list in memory, in bytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code>(/)</p></td>
+<td><p>Remove all items from list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code>(/)</p></td>
+<td><p>Return a shallow copy of the list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">append</span></code>(object, /)</p></td>
+<td><p>Append object to the end of the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert</span></code>(index, object, /)</p></td>
+<td><p>Insert object before index.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">extend</span></code>(iterable, /)</p></td>
+<td><p>Extend list by appending elements from the iterable.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code>([index])</p></td>
+<td><p>Remove and return item at index (default last).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove</span></code>(value, /)</p></td>
+<td><p>Remove first occurrence of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">index</span></code>(value[, start, stop])</p></td>
+<td><p>Return first index of value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">count</span></code>(value, /)</p></td>
+<td><p>Return number of occurrences of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reverse</span></code>(/)</p></td>
+<td><p>Reverse <em>IN PLACE</em>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sort</span></code>(*[, key, reverse])</p></td>
+<td><p>Sort the list in ascending order and return None.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__class_getitem__</span></code></p></td>
+<td><p>See PEP 585</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
 </dd></dl>
 
 </section>
+<hr class="docutils" />
 <section id="odbmodelfieldvarlist">
 <h3>OdbModelFieldVarList<a class="headerlink" href="#odbmodelfieldvarlist" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
@@ -783,6 +953,7 @@ the current OdbDisplay object.</p>
 </dd></dl>
 
 </section>
+<hr class="docutils" />
 <section id="writefieldreport">
 <h3>writeFieldReport<a class="headerlink" href="#writefieldreport" title="Permalink to this headline">#</a></h3>
 </section>

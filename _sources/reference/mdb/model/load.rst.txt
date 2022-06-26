@@ -28,7 +28,7 @@ Load
 .. autoclass:: abaqus.Load.Load.Load
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 LoadState
 *********
@@ -36,7 +36,7 @@ LoadState
 .. autoclass:: abaqus.Load.LoadState.LoadState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BodyCharge
 **********
@@ -44,7 +44,7 @@ BodyCharge
 .. autoclass:: abaqus.Load.BodyCharge.BodyCharge
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BodyChargeState
 ***************
@@ -52,7 +52,7 @@ BodyChargeState
 .. autoclass:: abaqus.Load.BodyChargeState.BodyChargeState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BodyConcentrationFlux
 *********************
@@ -60,7 +60,7 @@ BodyConcentrationFlux
 .. autoclass:: abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BodyConcentrationFluxState
 **************************
@@ -68,7 +68,7 @@ BodyConcentrationFluxState
 .. autoclass:: abaqus.Load.BodyConcentrationFluxState.BodyConcentrationFluxState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BodyCurrent
 ***********
@@ -76,7 +76,7 @@ BodyCurrent
 .. autoclass:: abaqus.Load.BodyCurrent.BodyCurrent
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BodyCurrentDensity
 ******************
@@ -84,7 +84,7 @@ BodyCurrentDensity
 .. autoclass:: abaqus.Load.BodyCurrentDensity.BodyCurrentDensity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BodyCurrentState
 ****************
@@ -92,7 +92,7 @@ BodyCurrentState
 .. autoclass:: abaqus.Load.BodyCurrentState.BodyCurrentState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BodyForce
 *********
@@ -100,7 +100,7 @@ BodyForce
 .. autoclass:: abaqus.Load.BodyForce.BodyForce
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BodyForceState
 **************
@@ -108,7 +108,7 @@ BodyForceState
 .. autoclass:: abaqus.Load.BodyForceState.BodyForceState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BodyHeatFlux
 ************
@@ -116,7 +116,7 @@ BodyHeatFlux
 .. autoclass:: abaqus.Load.BodyHeatFlux.BodyHeatFlux
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BodyHeatFluxState
 *****************
@@ -124,7 +124,7 @@ BodyHeatFluxState
 .. autoclass:: abaqus.Load.BodyHeatFluxState.BodyHeatFluxState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BoltLoad
 ********
@@ -132,7 +132,7 @@ BoltLoad
 .. autoclass:: abaqus.Load.BoltLoad.BoltLoad
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BoltLoadState
 *************
@@ -140,7 +140,7 @@ BoltLoadState
 .. autoclass:: abaqus.Load.BoltLoadState.BoltLoadState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcCharge
 **********
@@ -148,7 +148,7 @@ ConcCharge
 .. autoclass:: abaqus.Load.ConcCharge.ConcCharge
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcConcFlux
 ************
@@ -156,7 +156,7 @@ ConcConcFlux
 .. autoclass:: abaqus.Load.ConcConcFlux.ConcConcFlux
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcCurrent
 ***********
@@ -164,7 +164,7 @@ ConcCurrent
 .. autoclass:: abaqus.Load.ConcCurrent.ConcCurrent
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcCurrentState
 ****************
@@ -172,7 +172,7 @@ ConcCurrentState
 .. autoclass:: abaqus.Load.ConcCurrentState.ConcCurrentState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcentratedChargeState
 ***********************
@@ -180,7 +180,7 @@ ConcentratedChargeState
 .. autoclass:: abaqus.Load.ConcentratedChargeState.ConcentratedChargeState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcentratedConcentrationFluxState
 **********************************
@@ -188,7 +188,7 @@ ConcentratedConcentrationFluxState
 .. autoclass:: abaqus.Load.ConcentratedConcentrationFluxState.ConcentratedConcentrationFluxState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcentratedForce
 *****************
@@ -196,7 +196,7 @@ ConcentratedForce
 .. autoclass:: abaqus.Load.ConcentratedForce.ConcentratedForce
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcentratedForceState
 **********************
@@ -204,7 +204,7 @@ ConcentratedForceState
 .. autoclass:: abaqus.Load.ConcentratedForceState.ConcentratedForceState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcentratedHeatFlux
 ********************
@@ -212,7 +212,7 @@ ConcentratedHeatFlux
 .. autoclass:: abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcentratedHeatFluxState
 *************************
@@ -220,7 +220,7 @@ ConcentratedHeatFluxState
 .. autoclass:: abaqus.Load.ConcentratedHeatFluxState.ConcentratedHeatFluxState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcentratedPoreFluidState
 **************************
@@ -228,7 +228,7 @@ ConcentratedPoreFluidState
 .. autoclass:: abaqus.Load.ConcentratedPoreFluidState.ConcentratedPoreFluidState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcPoreFluid
 *************
@@ -236,7 +236,7 @@ ConcPoreFluid
 .. autoclass:: abaqus.Load.ConcPoreFluid.ConcPoreFluid
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorForce
 **************
@@ -244,7 +244,7 @@ ConnectorForce
 .. autoclass:: abaqus.Load.ConnectorForce.ConnectorForce
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorForceState
 *******************
@@ -252,7 +252,7 @@ ConnectorForceState
 .. autoclass:: abaqus.Load.ConnectorForceState.ConnectorForceState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorMoment
 ***************
@@ -260,7 +260,7 @@ ConnectorMoment
 .. autoclass:: abaqus.Load.ConnectorMoment.ConnectorMoment
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorMomentState
 ********************
@@ -268,7 +268,7 @@ ConnectorMomentState
 .. autoclass:: abaqus.Load.ConnectorMomentState.ConnectorMomentState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CoriolisForce
 *************
@@ -276,7 +276,7 @@ CoriolisForce
 .. autoclass:: abaqus.Load.CoriolisForce.CoriolisForce
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CoriolisForceState
 ******************
@@ -284,7 +284,7 @@ CoriolisForceState
 .. autoclass:: abaqus.Load.CoriolisForceState.CoriolisForceState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Gravity
 *******
@@ -292,7 +292,7 @@ Gravity
 .. autoclass:: abaqus.Load.Gravity.Gravity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 GravityState
 ************
@@ -300,7 +300,7 @@ GravityState
 .. autoclass:: abaqus.Load.GravityState.GravityState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HydrostaticFluidFlowState
 *************************
@@ -308,7 +308,7 @@ HydrostaticFluidFlowState
 .. autoclass:: abaqus.Load.HydrostaticFluidFlowState.HydrostaticFluidFlowState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 InertiaRelief
 *************
@@ -316,7 +316,7 @@ InertiaRelief
 .. autoclass:: abaqus.Load.InertiaRelief.InertiaRelief
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 InertiaReliefState
 ******************
@@ -324,7 +324,7 @@ InertiaReliefState
 .. autoclass:: abaqus.Load.InertiaReliefState.InertiaReliefState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 InwardVolAccel
 **************
@@ -332,7 +332,7 @@ InwardVolAccel
 .. autoclass:: abaqus.Load.InwardVolAccel.InwardVolAccel
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 InwardVolAccelState
 *******************
@@ -340,7 +340,7 @@ InwardVolAccelState
 .. autoclass:: abaqus.Load.InwardVolAccelState.InwardVolAccelState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 LineLoad
 ********
@@ -348,7 +348,7 @@ LineLoad
 .. autoclass:: abaqus.Load.LineLoad.LineLoad
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 LineLoadState
 *************
@@ -356,7 +356,7 @@ LineLoadState
 .. autoclass:: abaqus.Load.LineLoadState.LineLoadState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 LoadStep
 ********
@@ -364,7 +364,7 @@ LoadStep
 .. autoclass:: abaqus.Load.LoadStep.LoadStep
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Moment
 ******
@@ -372,7 +372,7 @@ Moment
 .. autoclass:: abaqus.Load.Moment.Moment
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MomentState
 ***********
@@ -380,7 +380,7 @@ MomentState
 .. autoclass:: abaqus.Load.MomentState.MomentState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PEGLoad
 *******
@@ -388,7 +388,7 @@ PEGLoad
 .. autoclass:: abaqus.Load.PEGLoad.PEGLoad
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PEGLoadState
 ************
@@ -396,7 +396,7 @@ PEGLoadState
 .. autoclass:: abaqus.Load.PEGLoadState.PEGLoadState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PipePressure
 ************
@@ -404,7 +404,7 @@ PipePressure
 .. autoclass:: abaqus.Load.PipePressure.PipePressure
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PipePressureState
 *****************
@@ -412,7 +412,7 @@ PipePressureState
 .. autoclass:: abaqus.Load.PipePressureState.PipePressureState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Pressure
 ********
@@ -420,7 +420,7 @@ Pressure
 .. autoclass:: abaqus.Load.Pressure.Pressure
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PressureState
 *************
@@ -428,7 +428,7 @@ PressureState
 .. autoclass:: abaqus.Load.PressureState.PressureState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RotationalBodyForce
 *******************
@@ -436,7 +436,7 @@ RotationalBodyForce
 .. autoclass:: abaqus.Load.RotationalBodyForce.RotationalBodyForce
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RotationalBodyForceState
 ************************
@@ -444,7 +444,7 @@ RotationalBodyForceState
 .. autoclass:: abaqus.Load.RotationalBodyForceState.RotationalBodyForceState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ShellEdgeLoad
 *************
@@ -452,7 +452,7 @@ ShellEdgeLoad
 .. autoclass:: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ShellEdgeLoadState
 ******************
@@ -460,7 +460,7 @@ ShellEdgeLoadState
 .. autoclass:: abaqus.Load.ShellEdgeLoadState.ShellEdgeLoadState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SubmodelSB
 **********
@@ -468,7 +468,7 @@ SubmodelSB
 .. autoclass:: abaqus.Load.SubmodelSB.SubmodelSB
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SubmodelSBState
 ***************
@@ -476,7 +476,7 @@ SubmodelSBState
 .. autoclass:: abaqus.Load.SubmodelSBState.SubmodelSBState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SubstructureLoad
 ****************
@@ -484,7 +484,7 @@ SubstructureLoad
 .. autoclass:: abaqus.Load.SubstructureLoad.SubstructureLoad
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SubstructureLoadState
 *********************
@@ -492,7 +492,7 @@ SubstructureLoadState
 .. autoclass:: abaqus.Load.SubstructureLoadState.SubstructureLoadState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceCharge
 *************
@@ -500,7 +500,7 @@ SurfaceCharge
 .. autoclass:: abaqus.Load.SurfaceCharge.SurfaceCharge
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceChargeState
 ******************
@@ -508,7 +508,7 @@ SurfaceChargeState
 .. autoclass:: abaqus.Load.SurfaceChargeState.SurfaceChargeState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceConcentrationFlux
 ************************
@@ -516,7 +516,7 @@ SurfaceConcentrationFlux
 .. autoclass:: abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceConcentrationFluxState
 *****************************
@@ -524,7 +524,7 @@ SurfaceConcentrationFluxState
 .. autoclass:: abaqus.Load.SurfaceConcentrationFluxState.SurfaceConcentrationFluxState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceCurrent
 **************
@@ -532,7 +532,7 @@ SurfaceCurrent
 .. autoclass:: abaqus.Load.SurfaceCurrent.SurfaceCurrent
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceCurrentDensity
 *********************
@@ -540,7 +540,7 @@ SurfaceCurrentDensity
 .. autoclass:: abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceCurrentState
 *******************
@@ -548,7 +548,7 @@ SurfaceCurrentState
 .. autoclass:: abaqus.Load.SurfaceCurrentState.SurfaceCurrentState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceHeatFlux
 ***************
@@ -556,7 +556,7 @@ SurfaceHeatFlux
 .. autoclass:: abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceHeatFluxState
 ********************
@@ -564,7 +564,7 @@ SurfaceHeatFluxState
 .. autoclass:: abaqus.Load.SurfaceHeatFluxState.SurfaceHeatFluxState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfacePoreFluid
 ****************
@@ -572,7 +572,7 @@ SurfacePoreFluid
 .. autoclass:: abaqus.Load.SurfacePoreFluid.SurfacePoreFluid
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfacePoreFluidState
 *********************
@@ -580,7 +580,7 @@ SurfacePoreFluidState
 .. autoclass:: abaqus.Load.SurfacePoreFluidState.SurfacePoreFluidState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceTraction
 ***************
@@ -588,7 +588,7 @@ SurfaceTraction
 .. autoclass:: abaqus.Load.SurfaceTraction.SurfaceTraction
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceTractionState
 ********************
@@ -596,7 +596,7 @@ SurfaceTractionState
 .. autoclass:: abaqus.Load.SurfaceTractionState.SurfaceTractionState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 
 Load case
@@ -611,7 +611,7 @@ Create load cases
 .. autoclass:: abaqus.Load.LoadStep.LoadStep
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 
 Object features of load cases
@@ -620,4 +620,4 @@ Object features of load cases
 .. autoclass:: abaqus.Load.LoadCase.LoadCase
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::

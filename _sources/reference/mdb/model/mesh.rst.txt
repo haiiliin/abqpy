@@ -13,7 +13,7 @@ Mesh features for Assembly
 .. autoclass:: abaqus.Mesh.MeshAssembly.MeshAssembly
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ElemType
 ~~~~~~~~
@@ -21,7 +21,7 @@ ElemType
 .. autoclass:: abaqus.Mesh.ElemType.ElemType
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MeshEdge
 ~~~~~~~~
@@ -29,7 +29,7 @@ MeshEdge
 .. autoclass:: abaqus.Mesh.MeshEdge.MeshEdge
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MeshEdgeArray
 ~~~~~~~~~~~~~
@@ -37,7 +37,7 @@ MeshEdgeArray
 .. autoclass:: abaqus.Mesh.MeshEdgeArray.MeshEdgeArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MeshElement
 ~~~~~~~~~~~
@@ -45,7 +45,7 @@ MeshElement
 .. autoclass:: abaqus.Mesh.MeshElement.MeshElement
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MeshElementArray
 ~~~~~~~~~~~~~~~~
@@ -53,7 +53,7 @@ MeshElementArray
 .. autoclass:: abaqus.Mesh.MeshElementArray.MeshElementArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MesherOptions
 ~~~~~~~~~~~~~
@@ -61,7 +61,7 @@ MesherOptions
 .. autoclass:: abaqus.Mesh.MesherOptions.MesherOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MeshFace
 ~~~~~~~~
@@ -69,7 +69,7 @@ MeshFace
 .. autoclass:: abaqus.Mesh.MeshFace.MeshFace
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MeshFaceArray
 ~~~~~~~~~~~~~
@@ -77,7 +77,7 @@ MeshFaceArray
 .. autoclass:: abaqus.Mesh.MeshFaceArray.MeshFaceArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MeshNode
 ~~~~~~~~
@@ -85,7 +85,7 @@ MeshNode
 .. autoclass:: abaqus.Mesh.MeshNode.MeshNode
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MeshNodeArray
 ~~~~~~~~~~~~~
@@ -93,7 +93,7 @@ MeshNodeArray
 .. autoclass:: abaqus.Mesh.MeshNodeArray.MeshNodeArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MeshPart
 ~~~~~~~~
@@ -101,7 +101,7 @@ MeshPart
 .. autoclass:: abaqus.Mesh.MeshPart.MeshPart
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MeshStats
 ~~~~~~~~~
@@ -109,5 +109,5 @@ MeshStats
 .. autoclass:: abaqus.Mesh.MeshStats.MeshStats
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

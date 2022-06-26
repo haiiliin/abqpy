@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -1027,6 +1028,133 @@ located in another directory.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OdbBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isReadOnly</span></code></p></td>
+<td><p>A Boolean specifying whether the output database was opened with read-only access.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">amplitudes</span></code></p></td>
+<td><p>A repository of Amplitude objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></p></td>
+<td><p>A repository of Filter objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">rootAssembly</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../odb.html#abaqus.Odb.OdbAssembly.OdbAssembly" title="abaqus.Odb.OdbAssembly.OdbAssembly"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbAssembly</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">jobData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../odb.html#abaqus.Odb.JobData.JobData" title="abaqus.Odb.JobData.JobData"><code class="xref py py-class docutils literal notranslate"><span class="pre">JobData</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parts</span></code></p></td>
+<td><p>A repository of OdbPart objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">materials</span></code></p></td>
+<td><p>A repository of Material objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">steps</span></code></p></td>
+<td><p>A repository of OdbStep objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sections</span></code></p></td>
+<td><p>A repository of Section objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sectionCategories</span></code></p></td>
+<td><p>A repository of SectionCategory objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sectorDefinition</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../odb.html#abaqus.Odb.SectorDefinition.SectorDefinition" title="abaqus.Odb.SectorDefinition.SectorDefinition"><code class="xref py py-class docutils literal notranslate"><span class="pre">SectorDefinition</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">userData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../odb.html#abaqus.Odb.UserData.UserData" title="abaqus.Odb.UserData.UserData"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserData</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">customData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">profiles</span></code></p></td>
+<td><p>A repository of Profile objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.ArbitraryProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.ArbitraryProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ArbitraryProfile</span></code></a>(name, table)</p></td>
+<td><p>This method creates a ArbitraryProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BoxProfile</span></code></a>(name, a, b, uniformThickness, t1)</p></td>
+<td><p>This method creates a BoxProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.CircularProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.CircularProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CircularProfile</span></code></a>(name, r)</p></td>
+<td><p>This method creates a CircularProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeneralizedProfile</span></code></a>(name, area, i11, i12, ...)</p></td>
+<td><p>This method creates a GeneralizedProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.HexagonalProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.HexagonalProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HexagonalProfile</span></code></a>(name, r, t)</p></td>
+<td><p>This method creates a HexagonalProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IProfile</span></code></a>(name, l, h, b1, b2, t1, t2, t3)</p></td>
+<td><p>This method creates an IProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.LProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.LProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LProfile</span></code></a>(name, a, b, t1, t2)</p></td>
+<td><p>This method creates a LProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.PipeProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.PipeProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PipeProfile</span></code></a>(name, r, t)</p></td>
+<td><p>This method creates a PipeProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RectangularProfile</span></code></a>(name, a, b)</p></td>
+<td><p>This method creates a RectangularProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TProfile</span></code></a>(name, b, h, l, tf, tw)</p></td>
+<td><p>This method creates a TProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrapezoidalProfile</span></code></a>(name, a, b, c, d)</p></td>
+<td><p>This method creates a TrapezoidalProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OdbBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, analysisTitle, description, ...])</p></td>
+<td><p>This method creates a new Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code>()</p></td>
+<td><p>This method closes an output database.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFrame</span></code>(frameValue[, match])</p></td>
+<td><p>This method returns the frame at the specified time, frequency, or mode.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code>()</p></td>
+<td><p>This method saves output to an output database (.odb ) file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code>()</p></td>
+<td><p>This method is used to update an Odb object in memory while an Abaqus analysis writes data to the associated output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.ArbitraryProfile">
 <span class="sig-name descname"><span class="pre">ArbitraryProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py#L28-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.ArbitraryProfile" title="Permalink to this definition">#</a></dt>
@@ -1539,6 +1667,39 @@ is an abstract base type.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.Profile.Profile.name" title="abaqus.BeamSectionProfile.Profile.Profile.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.Profile.Profile.beamProfilesFromOdb" title="abaqus.BeamSectionProfile.Profile.Profile.beamProfilesFromOdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamProfilesFromOdb</span></code></a>(fileName)</p></td>
+<td><p>This method creates Profile objects by reading an output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.Profile.Profile.beamProfilesFromOdb">
 <span class="sig-name descname"><span class="pre">beamProfilesFromOdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/Profile.py#L19-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.Profile.Profile.beamProfilesFromOdb" title="Permalink to this definition">#</a></dt>
@@ -1625,6 +1786,55 @@ The first sequence in the table specifies the following:</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, table)</p></td>
+<td><p>This method creates a ArbitraryProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.setValues" title="abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the ArbitraryProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamProfilesFromOdb</span></code>(fileName)</p></td>
+<td><p>This method creates Profile objects by reading an output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/ArbitraryProfile.py#L72-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.setValues" title="Permalink to this definition">#</a></dt>
@@ -1682,6 +1892,74 @@ The BoxProfile object is derived from the Profile object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t2" title="abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">t2</span></code></a></p></td>
+<td><p>A Float specifying the wall thickness of the second segment.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t3" title="abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">t3</span></code></a></p></td>
+<td><p>A Float specifying the wall thickness of the third segment.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t4" title="abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t4"><code class="xref py py-obj docutils literal notranslate"><span class="pre">t4</span></code></a></p></td>
+<td><p>A Float specifying the wall thickness of the fourth segment.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, a, b, uniformThickness, t1[, ...])</p></td>
+<td><p>This method creates a BoxProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile.setValues" title="abaqus.BeamSectionProfile.BoxProfile.BoxProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([t2, t3, t4])</p></td>
+<td><p>This method modifies the BoxProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamProfilesFromOdb</span></code>(fileName)</p></td>
+<td><p>This method creates Profile objects by reading an output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.BoxProfile.BoxProfile.a">
 <span class="sig-name descname"><span class="pre">a</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/BoxProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile.a" title="Permalink to this definition">#</a></dt>
@@ -1794,6 +2072,55 @@ The CircularProfile object is derived from the Profile object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, r)</p></td>
+<td><p>This method creates a CircularProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.CircularProfile.CircularProfile.setValues" title="abaqus.BeamSectionProfile.CircularProfile.CircularProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the CircularProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamProfilesFromOdb</span></code>(fileName)</p></td>
+<td><p>This method creates Profile objects by reading an output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.CircularProfile.CircularProfile.r">
 <span class="sig-name descname"><span class="pre">r</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/CircularProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.CircularProfile.CircularProfile.r" title="Permalink to this definition">#</a></dt>
@@ -1854,6 +2181,55 @@ The GeneralizedProfile object is derived from the Profile object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, area, i11, i12, i22, j, ...)</p></td>
+<td><p>This method creates a GeneralizedProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.setValues" title="abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the GeneralizedProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamProfilesFromOdb</span></code>(fileName)</p></td>
+<td><p>This method creates Profile objects by reading an output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.area">
 <span class="sig-name descname"><span class="pre">area</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/GeneralizedProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.area" title="Permalink to this definition">#</a></dt>
@@ -1947,6 +2323,55 @@ The HexagonalProfile object is derived from the Profile object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, r, t)</p></td>
+<td><p>This method creates a HexagonalProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.setValues" title="abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the HexagonalProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamProfilesFromOdb</span></code>(fileName)</p></td>
+<td><p>This method creates Profile objects by reading an output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.r">
 <span class="sig-name descname"><span class="pre">r</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/HexagonalProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.r" title="Permalink to this definition">#</a></dt>
@@ -2013,6 +2438,55 @@ The IProfile object is derived from the Profile object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, l, h, b1, b2, t1, t2, t3)</p></td>
+<td><p>This method creates an IProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.IProfile.IProfile.setValues" title="abaqus.BeamSectionProfile.IProfile.IProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the IProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamProfilesFromOdb</span></code>(fileName)</p></td>
+<td><p>This method creates Profile objects by reading an output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.IProfile.IProfile.b1">
 <span class="sig-name descname"><span class="pre">b1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/IProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.IProfile.IProfile.b1" title="Permalink to this definition">#</a></dt>
@@ -2108,6 +2582,55 @@ The LProfile object is derived from the Profile object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, a, b, t1, t2)</p></td>
+<td><p>This method creates a LProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.LProfile.LProfile.setValues" title="abaqus.BeamSectionProfile.LProfile.LProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the LProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamProfilesFromOdb</span></code>(fileName)</p></td>
+<td><p>This method creates Profile objects by reading an output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.LProfile.LProfile.a">
 <span class="sig-name descname"><span class="pre">a</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/LProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.LProfile.LProfile.a" title="Permalink to this definition">#</a></dt>
@@ -2187,6 +2710,55 @@ The PipeProfile object is derived from the Profile object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, r, t)</p></td>
+<td><p>This method creates a PipeProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.PipeProfile.PipeProfile.setValues" title="abaqus.BeamSectionProfile.PipeProfile.PipeProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the PipeProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamProfilesFromOdb</span></code>(fileName)</p></td>
+<td><p>This method creates Profile objects by reading an output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.PipeProfile.PipeProfile.r">
 <span class="sig-name descname"><span class="pre">r</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/PipeProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.PipeProfile.PipeProfile.r" title="Permalink to this definition">#</a></dt>
@@ -2252,6 +2824,55 @@ The RectangularProfile object is derived from the Profile object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, a, b)</p></td>
+<td><p>This method creates a RectangularProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.setValues" title="abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the RectangularProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamProfilesFromOdb</span></code>(fileName)</p></td>
+<td><p>This method creates Profile objects by reading an output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.a">
 <span class="sig-name descname"><span class="pre">a</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/RectangularProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.a" title="Permalink to this definition">#</a></dt>
@@ -2317,6 +2938,55 @@ The TProfile object is derived from the Profile object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, b, h, l, tf, tw)</p></td>
+<td><p>This method creates a TProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.TProfile.TProfile.setValues" title="abaqus.BeamSectionProfile.TProfile.TProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the TProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamProfilesFromOdb</span></code>(fileName)</p></td>
+<td><p>This method creates Profile objects by reading an output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TProfile.TProfile.b">
 <span class="sig-name descname"><span class="pre">b</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TProfile.TProfile.b" title="Permalink to this definition">#</a></dt>
@@ -2403,6 +3073,55 @@ The TrapezoidalProfile object is derived from the Profile object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, a, b, c, d)</p></td>
+<td><p>This method creates a TrapezoidalProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.setValues" title="abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the TrapezoidalProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamProfilesFromOdb</span></code>(fileName)</p></td>
+<td><p>This method creates Profile objects by reading an output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.a">
 <span class="sig-name descname"><span class="pre">a</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TrapezoidalProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.a" title="Permalink to this definition">#</a></dt>

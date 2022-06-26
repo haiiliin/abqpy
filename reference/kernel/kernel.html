@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -417,9 +418,26 @@ capable of notifying the GUI when the contents of the class change.</p>
 </pre></div>
 </div>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>()</p></td>
+<td><p>This class allows you to derive a general class that can be queried from the GUI and is capable of notifying the GUI when the contents of the class change.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </dd></dl>
 
 </section>
+<hr class="docutils" />
 <section id="registereddictionary">
 <h3>RegisteredDictionary<a class="headerlink" href="#registereddictionary" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
@@ -453,6 +471,42 @@ The RegisteredDictionary object is derived from the CommandRegister object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>()</p></td>
+<td><p>This method creates a RegisteredDictionary object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods" title="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Methods</span></code></a>()</p></td>
+<td><p>The RegisteredDictionary object supports the same methods as a Python dictionary.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey" title="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey"><code class="xref py py-obj docutils literal notranslate"><span class="pre">changeKey</span></code></a>(fromName, toName)</p></td>
+<td><p>This method changes the name of a key in the dictionary.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>()</p></td>
+<td><p>This method creates a RegisteredDictionary object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods">
 <span class="sig-name descname"><span class="pre">Methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/CustomKernel/RegisteredDictionary.py#L36-L40"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods" title="Permalink to this definition">#</a></dt>
@@ -508,6 +562,39 @@ The RegisteredList object is derived from the CommandRegister object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>()</p></td>
+<td><p>This method creates a RegisteredList object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.CustomKernel.RegisteredList.RegisteredList.Methods" title="abaqus.CustomKernel.RegisteredList.RegisteredList.Methods"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Methods</span></code></a>()</p></td>
+<td><p>The RegisteredList object supports the same methods as a standard Python list object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>()</p></td>
+<td><p>This method creates a RegisteredList object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredList.RegisteredList.Methods">
 <span class="sig-name descname"><span class="pre">Methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/CustomKernel/RegisteredList.py#L35-L37"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredList.RegisteredList.Methods" title="Permalink to this definition">#</a></dt>
@@ -546,6 +633,39 @@ The RegisteredTuple object is derived from the CommandRegister object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(tuple)</p></td>
+<td><p>This method creates a RegisteredTuple object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods" title="abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Methods</span></code></a>()</p></td>
+<td><p>The RegisteredTuple object supports the same methods as a standard Python list object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(tuple)</p></td>
+<td><p>This method creates a RegisteredTuple object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods">
 <span class="sig-name descname"><span class="pre">Methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/CustomKernel/RegisteredTuple.py#L40-L42"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods" title="Permalink to this definition">#</a></dt>

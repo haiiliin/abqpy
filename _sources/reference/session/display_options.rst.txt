@@ -14,7 +14,7 @@ AssemblyDisplayOptions
 .. autoclass:: abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BCDisplayOptions
 ~~~~~~~~~~~~~~~~
@@ -22,7 +22,7 @@ BCDisplayOptions
 .. autoclass:: abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConstraintDisplayOptions
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -30,7 +30,7 @@ ConstraintDisplayOptions
 .. autoclass:: abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EngineeringFeatureDisplayOptions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -38,7 +38,7 @@ EngineeringFeatureDisplayOptions
 .. autoclass:: abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 GeometricRestrictionDisplayOptions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -46,7 +46,7 @@ GeometricRestrictionDisplayOptions
 .. autoclass:: abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 GeometryDisplayOptions
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -54,7 +54,7 @@ GeometryDisplayOptions
 .. autoclass:: abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 GraphicsInfo
 ~~~~~~~~~~~~
@@ -62,7 +62,7 @@ GraphicsInfo
 .. autoclass:: abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 GraphicsOptions
 ~~~~~~~~~~~~~~~
@@ -70,7 +70,7 @@ GraphicsOptions
 .. autoclass:: abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 InteractionDisplayOptions
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -78,7 +78,7 @@ InteractionDisplayOptions
 .. autoclass:: abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Light
 ~~~~~
@@ -86,7 +86,7 @@ Light
 .. autoclass:: abaqus.DisplayOptions.Light.Light
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 LightArray
 ~~~~~~~~~~
@@ -94,7 +94,7 @@ LightArray
 .. autoclass:: abaqus.DisplayOptions.LightArray.LightArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 LightOptions
 ~~~~~~~~~~~~
@@ -102,7 +102,7 @@ LightOptions
 .. autoclass:: abaqus.DisplayOptions.LightOptions.LightOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 LoadDisplayOptions
 ~~~~~~~~~~~~~~~~~~
@@ -110,7 +110,7 @@ LoadDisplayOptions
 .. autoclass:: abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MeshDisplayOptions
 ~~~~~~~~~~~~~~~~~~
@@ -118,7 +118,7 @@ MeshDisplayOptions
 .. autoclass:: abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OptimizationTaskDisplayOptions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -126,7 +126,7 @@ OptimizationTaskDisplayOptions
 .. autoclass:: abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PartDisplayOptions
 ~~~~~~~~~~~~~~~~~~
@@ -134,7 +134,7 @@ PartDisplayOptions
 .. autoclass:: abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PredefinedFieldDisplayOptions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -142,7 +142,7 @@ PredefinedFieldDisplayOptions
 .. autoclass:: abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StopConditionDisplayOptions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -150,7 +150,7 @@ StopConditionDisplayOptions
 .. autoclass:: abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SymbolDisplayOptions
 ~~~~~~~~~~~~~~~~~~~~
@@ -158,7 +158,7 @@ SymbolDisplayOptions
 .. autoclass:: abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ViewportAnnotationOptions
 ~~~~~~~~~~~~~~~~~~~~~~~~~

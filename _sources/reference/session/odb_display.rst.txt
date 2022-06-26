@@ -13,7 +13,7 @@ CommonOptions
 .. autoclass:: abaqus.OdbDisplay.CommonOptions.CommonOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ContourOptions
 ~~~~~~~~~~~~~~
@@ -21,7 +21,7 @@ ContourOptions
 .. autoclass:: abaqus.OdbDisplay.ContourOptions.ContourOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DefaultOdbDisplay
 ~~~~~~~~~~~~~~~~~
@@ -29,7 +29,7 @@ DefaultOdbDisplay
 .. autoclass:: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DisplayBodyOptions
 ~~~~~~~~~~~~~~~~~~
@@ -37,7 +37,7 @@ DisplayBodyOptions
 .. autoclass:: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDisplay
 ~~~~~~~~~~
@@ -45,7 +45,7 @@ OdbDisplay
 .. autoclass:: abaqus.OdbDisplay.OdbDisplay.OdbDisplay
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OrientationOptions
 ~~~~~~~~~~~~~~~~~~
@@ -53,7 +53,7 @@ OrientationOptions
 .. autoclass:: abaqus.OdbDisplay.OrientationOptions.OrientationOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SuperimposeOptions
 ~~~~~~~~~~~~~~~~~~
@@ -61,7 +61,7 @@ SuperimposeOptions
 .. autoclass:: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SymbolOptions
 ~~~~~~~~~~~~~
@@ -69,7 +69,7 @@ SymbolOptions
 .. autoclass:: abaqus.OdbDisplay.SymbolOptions.SymbolOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ViewCut
 ~~~~~~~
@@ -77,7 +77,7 @@ ViewCut
 .. autoclass:: abaqus.OdbDisplay.ViewCut.ViewCut
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ViewerOptions
 ~~~~~~~~~~~~~
@@ -85,5 +85,5 @@ ViewerOptions
 .. autoclass:: abaqus.OdbDisplay.ViewerOptions.ViewerOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

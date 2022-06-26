@@ -14,7 +14,7 @@ Viewport
 .. autoclass:: abaqus.Canvas.Viewport.Viewport
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 
 Object features
@@ -26,7 +26,7 @@ Annotation features of Viewport
 .. autoclass:: abaqus.Annotation.AnnotationViewport.AnnotationViewport
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AttributeColorMap
 ~~~~~~~~~~~~~~~~~
@@ -34,7 +34,7 @@ AttributeColorMap
 .. autoclass:: abaqus.Canvas.AttributeColorMap.AttributeColorMap
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Canvas
 ~~~~~~
@@ -42,7 +42,7 @@ Canvas
 .. autoclass:: abaqus.Canvas.Canvas.Canvas
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Displayable
 ~~~~~~~~~~~
@@ -50,7 +50,7 @@ Displayable
 .. autoclass:: abaqus.Canvas.Displayable.Displayable
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DrawingArea
 ~~~~~~~~~~~
@@ -58,7 +58,7 @@ DrawingArea
 .. autoclass:: abaqus.Canvas.DrawingArea.DrawingArea
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Highlight
 ~~~~~~~~~
@@ -66,7 +66,7 @@ Highlight
 .. autoclass:: abaqus.Canvas.Highlight.Highlight
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ImageOptions
 ~~~~~~~~~~~~
@@ -74,7 +74,7 @@ ImageOptions
 .. autoclass:: abaqus.Canvas.ImageOptions.ImageOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Layer
 ~~~~~
@@ -82,7 +82,7 @@ Layer
 .. autoclass:: abaqus.Canvas.Layer.Layer
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MovieOptions
 ~~~~~~~~~~~~
@@ -90,7 +90,7 @@ MovieOptions
 .. autoclass:: abaqus.Canvas.MovieOptions.MovieOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ViewportBase
 ~~~~~~~~~~~~

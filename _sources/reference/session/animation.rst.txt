@@ -15,7 +15,7 @@ AnimationOptions
 .. autoclass:: abaqus.Animation.AnimationOptions.AnimationOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AnimationSession
 ~~~~~~~~~~~~~~~~
@@ -23,7 +23,7 @@ AnimationSession
 .. autoclass:: abaqus.Animation.AnimationSession.AnimationSession
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AVIOptions
 ~~~~~~~~~~
@@ -31,7 +31,7 @@ AVIOptions
 .. autoclass:: abaqus.Animation.AVIOptions.AVIOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ImageAnimation
 ~~~~~~~~~~~~~~
@@ -39,7 +39,7 @@ ImageAnimation
 .. autoclass:: abaqus.Animation.ImageAnimation.ImageAnimation
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ImageAnimationOptions
 ~~~~~~~~~~~~~~~~~~~~~
@@ -47,7 +47,7 @@ ImageAnimationOptions
 .. autoclass:: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Movie
 ~~~~~
@@ -55,7 +55,7 @@ Movie
 .. autoclass:: abaqus.Animation.Movie.Movie
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 QuickTimeOptions
 ~~~~~~~~~~~~~~~~

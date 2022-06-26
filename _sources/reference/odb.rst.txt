@@ -22,7 +22,7 @@ Amplitude features of the Odb
 .. autoclass:: abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Filter features of the Odb
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -30,7 +30,7 @@ Filter features of the Odb
 .. autoclass:: abaqus.FilterFilterOdb.FilterOdb
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Material features of the Odb
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -38,7 +38,7 @@ Material features of the Odb
 .. autoclass:: abaqus.Material.MaterialOdb.MaterialOdb
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Beam Section Profile features of the Odb
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -46,7 +46,7 @@ Beam Section Profile features of the Odb
 .. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AnalyticSurface
 ~~~~~~~~~~~~~~~
@@ -54,7 +54,7 @@ AnalyticSurface
 .. autoclass:: abaqus.Odb.AnalyticSurface.AnalyticSurface
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AnalyticSurfaceSegment
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -62,7 +62,7 @@ AnalyticSurfaceSegment
 .. autoclass:: abaqus.Odb.AnalyticSurfaceSegment.AnalyticSurfaceSegment
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BeamOrientation
 ~~~~~~~~~~~~~~~
@@ -70,7 +70,7 @@ BeamOrientation
 .. autoclass:: abaqus.Odb.BeamOrientation.BeamOrientation
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BeamOrientationArray
 ~~~~~~~~~~~~~~~~~~~~
@@ -78,7 +78,7 @@ BeamOrientationArray
 .. autoclass:: abaqus.Odb.BeamOrientationArray.BeamOrientationArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FieldBulkData
 ~~~~~~~~~~~~~
@@ -86,7 +86,7 @@ FieldBulkData
 .. autoclass:: abaqus.Odb.FieldBulkData.FieldBulkData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FieldLocation
 ~~~~~~~~~~~~~
@@ -94,7 +94,7 @@ FieldLocation
 .. autoclass:: abaqus.Odb.FieldLocation.FieldLocation
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FieldLocationArray
 ~~~~~~~~~~~~~~~~~~
@@ -102,7 +102,7 @@ FieldLocationArray
 .. autoclass:: abaqus.Odb.FieldLocationArray.FieldLocationArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FieldOutput
 ~~~~~~~~~~~
@@ -110,7 +110,7 @@ FieldOutput
 .. autoclass:: abaqus.Odb.FieldOutput.FieldOutput
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FieldValue
 ~~~~~~~~~~
@@ -118,7 +118,7 @@ FieldValue
 .. autoclass:: abaqus.Odb.FieldValue.FieldValue
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HistoryOutput
 ~~~~~~~~~~~~~
@@ -126,7 +126,7 @@ HistoryOutput
 .. autoclass:: abaqus.Odb.HistoryOutput.HistoryOutput
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HistoryPoint
 ~~~~~~~~~~~~
@@ -134,7 +134,7 @@ HistoryPoint
 .. autoclass:: abaqus.Odb.HistoryPoint.HistoryPoint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HistoryRegion
 ~~~~~~~~~~~~~
@@ -142,7 +142,7 @@ HistoryRegion
 .. autoclass:: abaqus.Odb.HistoryRegion.HistoryRegion
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 JobData
 ~~~~~~~
@@ -150,7 +150,7 @@ JobData
 .. autoclass:: abaqus.Odb.JobData.JobData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbAssembly
 ~~~~~~~~~~~
@@ -159,7 +159,7 @@ OdbAssembly
     :members:
     :inherited-members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbCommands
 ~~~~~~~~~~~
@@ -167,7 +167,7 @@ OdbCommands
 .. autoclass:: abaqus.Odb.OdbCommands.OdbCommands
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDatumCsys
 ~~~~~~~~~~~~
@@ -175,7 +175,7 @@ OdbDatumCsys
 .. autoclass:: abaqus.Odb.OdbDatumCsys.OdbDatumCsys
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbFrame
 ~~~~~~~~
@@ -183,7 +183,7 @@ OdbFrame
 .. autoclass:: abaqus.Odb.OdbFrame.OdbFrame
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbFrameArray
 ~~~~~~~~~~~~~
@@ -191,7 +191,7 @@ OdbFrameArray
 .. autoclass:: abaqus.Odb.OdbFrameArray.OdbFrameArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbInstance
 ~~~~~~~~~~~
@@ -199,7 +199,7 @@ OdbInstance
 .. autoclass:: abaqus.Odb.OdbInstance.OdbInstance
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbInstanceBase
 ~~~~~~~~~~~~~~~
@@ -207,7 +207,7 @@ OdbInstanceBase
 .. autoclass:: abaqus.Odb.OdbInstanceBase.OdbInstanceBase
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbLoadCase
 ~~~~~~~~~~~
@@ -215,7 +215,7 @@ OdbLoadCase
 .. autoclass:: abaqus.Odb.OdbLoadCase.OdbLoadCase
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbMeshElement
 ~~~~~~~~~~~~~~
@@ -223,7 +223,7 @@ OdbMeshElement
 .. autoclass:: abaqus.Odb.OdbMeshElement.OdbMeshElement
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbMeshElementArray
 ~~~~~~~~~~~~~~~~~~~
@@ -231,7 +231,7 @@ OdbMeshElementArray
 .. autoclass:: abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbMeshNode
 ~~~~~~~~~~~
@@ -239,7 +239,7 @@ OdbMeshNode
 .. autoclass:: abaqus.Odb.OdbMeshNode.OdbMeshNode
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbMeshNodeArray
 ~~~~~~~~~~~~~~~~
@@ -247,7 +247,7 @@ OdbMeshNodeArray
 .. autoclass:: abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbPart
 ~~~~~~~
@@ -255,7 +255,7 @@ OdbPart
 .. autoclass:: abaqus.Odb.OdbPart.OdbPart
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbPartBase
 ~~~~~~~~~~~
@@ -263,7 +263,7 @@ OdbPartBase
 .. autoclass:: abaqus.Odb.OdbPartBase.OdbPartBase
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbPretensionSection
 ~~~~~~~~~~~~~~~~~~~~
@@ -271,7 +271,7 @@ OdbPretensionSection
 .. autoclass:: abaqus.Odb.OdbPretensionSection.OdbPretensionSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbPretensionSectionArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -279,7 +279,7 @@ OdbPretensionSectionArray
 .. autoclass:: abaqus.Odb.OdbPretensionSectionArray.OdbPretensionSectionArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbRigidBody
 ~~~~~~~~~~~~
@@ -287,7 +287,7 @@ OdbRigidBody
 .. autoclass:: abaqus.Odb.OdbRigidBody.OdbRigidBody
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbRigidBodyArray
 ~~~~~~~~~~~~~~~~~
@@ -295,7 +295,7 @@ OdbRigidBodyArray
 .. autoclass:: abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbSequenceAnalyticSurfaceSegment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -303,7 +303,7 @@ OdbSequenceAnalyticSurfaceSegment
 .. autoclass:: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbSession
 ~~~~~~~~~~
@@ -311,7 +311,7 @@ OdbSession
 .. autoclass:: abaqus.Odb.OdbSession.OdbSession
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbSet
 ~~~~~~
@@ -319,7 +319,7 @@ OdbSet
 .. autoclass:: abaqus.Odb.OdbSet.OdbSet
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbStep
 ~~~~~~~
@@ -327,7 +327,7 @@ OdbStep
 .. autoclass:: abaqus.Odb.OdbStep.OdbStep
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbStepBase
 ~~~~~~~~~~~
@@ -335,7 +335,7 @@ OdbStepBase
 .. autoclass:: abaqus.Odb.OdbStepBase.OdbStepBase
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RebarOrientation
 ~~~~~~~~~~~~~~~~
@@ -343,7 +343,7 @@ RebarOrientation
 .. autoclass:: abaqus.Odb.RebarOrientation.RebarOrientation
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RebarOrientationArray
 ~~~~~~~~~~~~~~~~~~~~~
@@ -351,7 +351,7 @@ RebarOrientationArray
 .. autoclass:: abaqus.Odb.RebarOrientationArray.RebarOrientationArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ScratchOdb
 ~~~~~~~~~~
@@ -359,7 +359,7 @@ ScratchOdb
 .. autoclass:: abaqus.Odb.ScratchOdb.ScratchOdb
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SectionCategory
 ~~~~~~~~~~~~~~~
@@ -367,7 +367,7 @@ SectionCategory
 .. autoclass:: abaqus.Odb.SectionCategory.SectionCategory
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SectionPoint
 ~~~~~~~~~~~~
@@ -375,7 +375,7 @@ SectionPoint
 .. autoclass:: abaqus.Odb.SectionPoint.SectionPoint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SectionPointArray
 ~~~~~~~~~~~~~~~~~
@@ -383,7 +383,7 @@ SectionPointArray
 .. autoclass:: abaqus.Odb.SectionPointArray.SectionPointArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SectorDefinition
 ~~~~~~~~~~~~~~~~
@@ -391,7 +391,7 @@ SectorDefinition
 .. autoclass:: abaqus.Odb.SectorDefinition.SectorDefinition
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 UserData
 ~~~~~~~~
@@ -400,5 +400,5 @@ UserData
     :members:
     :inherited-members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -426,6 +427,7 @@ objects derived from the Datum.</p>
 </dd></dl>
 
 </section>
+<hr class="docutils" />
 <section id="datumaxis">
 <h3>DatumAxis<a class="headerlink" href="#datumaxis" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
@@ -454,6 +456,26 @@ The DatumAxis object is derived from the Datum object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Datum.DatumAxis.DatumAxis.pointOn" title="abaqus.Datum.DatumAxis.DatumAxis.pointOn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pointOn</span></code></a></p></td>
+<td><p>A tuple of Floats specifying the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point located on the datum.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Datum.DatumAxis.DatumAxis.direction" title="abaqus.Datum.DatumAxis.DatumAxis.direction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">direction</span></code></a></p></td>
+<td><p>A tuple of Floats specifying a sequence of three Floats specifying the direction of the axis.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Datum.DatumAxis.DatumAxis.direction">
 <span class="sig-name descname"><span class="pre">direction</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Datum/DatumAxis.py#L4-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Datum.DatumAxis.DatumAxis.direction" title="Permalink to this definition">#</a></dt>
@@ -504,6 +526,35 @@ The DatumCsys object is derived from the Datum object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Datum.DatumCsys.DatumCsys.coordSysType" title="abaqus.Datum.DatumCsys.DatumCsys.coordSysType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordSysType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of the coordinate system.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Datum.DatumCsys.DatumCsys.origin" title="abaqus.Datum.DatumCsys.DatumCsys.origin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">origin</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Datum.DatumPoint.DatumPoint" title="abaqus.Datum.DatumPoint.DatumPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatumPoint</span></code></a> object specifying the origin of the coordinate system.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Datum.DatumCsys.DatumCsys.axis1" title="abaqus.Datum.DatumCsys.DatumCsys.axis1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axis1</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Datum.DatumAxis.DatumAxis" title="abaqus.Datum.DatumAxis.DatumAxis"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatumAxis</span></code></a> object specifying the 1-direction of the coordinate system.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Datum.DatumCsys.DatumCsys.axis2" title="abaqus.Datum.DatumCsys.DatumCsys.axis2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axis2</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Datum.DatumAxis.DatumAxis" title="abaqus.Datum.DatumAxis.DatumAxis"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatumAxis</span></code></a> object specifying the 2-direction of the coordinate system.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Datum.DatumCsys.DatumCsys.axis3" title="abaqus.Datum.DatumCsys.DatumCsys.axis3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axis3</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Datum.DatumAxis.DatumAxis" title="abaqus.Datum.DatumAxis.DatumAxis"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatumAxis</span></code></a> object specifying the 3-direction of the coordinate system.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Datum.DatumCsys.DatumCsys.axis1">
 <span class="sig-name descname"><span class="pre">axis1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Datum.DatumAxis.DatumAxis" title="abaqus.Datum.DatumAxis.DatumAxis"><span class="pre">DatumAxis</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Datum.DatumAxis.DatumAxis</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Datum/DatumCsys.py#L38-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Datum.DatumCsys.DatumCsys.axis1" title="Permalink to this definition">#</a></dt>
@@ -566,6 +617,26 @@ The DatumPlane object is derived from the Datum object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Datum.DatumPlane.DatumPlane.pointOn" title="abaqus.Datum.DatumPlane.DatumPlane.pointOn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pointOn</span></code></a></p></td>
+<td><p>A tuple of Floats specifying the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point located on the datum.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Datum.DatumPlane.DatumPlane.normal" title="abaqus.Datum.DatumPlane.DatumPlane.normal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normal</span></code></a></p></td>
+<td><p>A tuple of Floats specifying a sequence of three Floats specifying the normal.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Datum.DatumPlane.DatumPlane.normal">
 <span class="sig-name descname"><span class="pre">normal</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Datum/DatumPlane.py#L4-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Datum.DatumPlane.DatumPlane.normal" title="Permalink to this definition">#</a></dt>
@@ -610,6 +681,23 @@ The DatumPoint object is derived from the Datum object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Datum.DatumPoint.DatumPoint.pointOn" title="abaqus.Datum.DatumPoint.DatumPoint.pointOn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pointOn</span></code></a></p></td>
+<td><p>A tuple of Floats specifying the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point located on the datum.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Datum.DatumPoint.DatumPoint.pointOn">
 <span class="sig-name descname"><span class="pre">pointOn</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Datum/DatumPoint.py#L4-L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Datum.DatumPoint.DatumPoint.pointOn" title="Permalink to this definition">#</a></dt>

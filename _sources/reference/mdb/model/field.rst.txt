@@ -21,7 +21,7 @@ Field
 .. autoclass:: abaqus.Field.Field.Field
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AnalyticalField
 ~~~~~~~~~~~~~~~
@@ -29,7 +29,7 @@ AnalyticalField
 .. autoclass:: abaqus.Field.AnalyticalField.AnalyticalField
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DataTable
 ~~~~~~~~~
@@ -37,7 +37,7 @@ DataTable
 .. autoclass:: abaqus.Field.DataTable.DataTable
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DataTableArray
 ~~~~~~~~~~~~~~
@@ -45,7 +45,7 @@ DataTableArray
 .. autoclass:: abaqus.Field.DataTableArray.DataTableArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DiscreteField
 ~~~~~~~~~~~~~
@@ -53,7 +53,7 @@ DiscreteField
 .. autoclass:: abaqus.Field.DiscreteField.DiscreteField
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ExpressionField
 ~~~~~~~~~~~~~~~
@@ -61,7 +61,7 @@ ExpressionField
 .. autoclass:: abaqus.Field.ExpressionField.ExpressionField
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MappedField
 ~~~~~~~~~~~
@@ -69,7 +69,7 @@ MappedField
 .. autoclass:: abaqus.Field.MappedField.MappedField
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbMeshRegionData
 ~~~~~~~~~~~~~~~~~
@@ -77,5 +77,5 @@ OdbMeshRegionData
 .. autoclass:: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

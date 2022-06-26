@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -439,9 +440,26 @@ Python bool (True, False), or a Python int (1, 0).</p>
 </pre></div>
 </div>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(value)</p></td>
+<td><p>The AbaqusBoolean method creates an AbaqusBoolean object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </dd></dl>
 
 </section>
+<hr class="docutils" />
 <section id="backwardcompatibility">
 <h3>BackwardCompatibility<a class="headerlink" href="#backwardcompatibility" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
@@ -516,6 +534,57 @@ deprecated commands used in the script createLug.py, use the following commands:
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.includeDeprecated" title="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.includeDeprecated"><code class="xref py py-obj docutils literal notranslate"><span class="pre">includeDeprecated</span></code></a></p></td>
+<td><p>A Boolean specifying whether deprecated members, methods, and arguments can be seen and used.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.reportDeprecated" title="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.reportDeprecated"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reportDeprecated</span></code></a></p></td>
+<td><p>A Boolean specifying whether a warning is displayed after running a script that contains deprecated commands.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.showKeysInReport" title="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.showKeysInReport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">showKeysInReport</span></code></a></p></td>
+<td><p>A Boolean specifying whether the keys and indices are included in the report that is displayed when <strong>reportDeprecated</strong> is True.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedMethodsUsed" title="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedMethodsUsed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getDeprecatedMethodsUsed</span></code></a>()</p></td>
+<td><p>This method returns a list of deprecated methods used since the last call to resetDeprecatedMethodsUsed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedArgsUsed" title="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedArgsUsed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getDeprecatedArgsUsed</span></code></a>()</p></td>
+<td><p>This method returns a list of deprecated arguments used since the last call to resetDeprecatedArgsUsed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedMethodsUsed" title="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedMethodsUsed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resetDeprecatedMethodsUsed</span></code></a>()</p></td>
+<td><p>This method clears the list of deprecated methods used.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedArgsUsed" title="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedArgsUsed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resetDeprecatedArgsUsed</span></code></a>()</p></td>
+<td><p>This method clears the list of deprecated arguments used.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.setValues" title="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([includeDeprecated, ...])</p></td>
+<td><p>This method modifies the BackwardCompatibility object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedArgsUsed">
 <span class="sig-name descname"><span class="pre">getDeprecatedArgsUsed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py#L76-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedArgsUsed" title="Permalink to this definition">#</a></dt>
@@ -873,6 +942,129 @@ The Repository object is derived from the dict object.
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.Repository.Repository.changeKey" title="abaqus.UtilityAndView.Repository.Repository.changeKey"><code class="xref py py-obj docutils literal notranslate"><span class="pre">changeKey</span></code></a>(fromName, toName)</p></td>
+<td><p>This method changes the name of a key in a repository and the <strong>name</strong> member of the value object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__repr__</span></code>(/)</p></td>
+<td><p>Return repr(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getattribute__</span></code>(name, /)</p></td>
+<td><p>Return getattr(self, name).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__lt__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__le__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__eq__</span></code>(value, /)</p></td>
+<td><p>Return self==value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ne__</span></code>(value, /)</p></td>
+<td><p>Return self!=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__gt__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ge__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iter__</span></code>(/)</p></td>
+<td><p>Implement iter(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__or__</span></code>(value, /)</p></td>
+<td><p>Return self|value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ror__</span></code>(value, /)</p></td>
+<td><p>Return value|self.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ior__</span></code>(value, /)</p></td>
+<td><p>Return self|=value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code>(/)</p></td>
+<td><p>Return len(self).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code></p></td>
+<td><p>x.__getitem__(y) &lt;==&gt; x[y]</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__setitem__</span></code>(key, value, /)</p></td>
+<td><p>Set self[key] to value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__delitem__</span></code>(key, /)</p></td>
+<td><p>Delete self[key].</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__contains__</span></code>(key, /)</p></td>
+<td><p>True if the dictionary has the specified key, else False.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__sizeof__</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get</span></code>(key[, default])</p></td>
+<td><p>Return the value for key if key is in the dictionary, else default.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setdefault</span></code>(key[, default])</p></td>
+<td><p>Insert key with a value of default if key is not in the dictionary.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code>(key[, default])</p></td>
+<td><p>If the key is not found, return the default if given; otherwise, raise a KeyError.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">popitem</span></code>(/)</p></td>
+<td><p>Remove and return a (key, value) pair as a 2-tuple.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">keys</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">items</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code>([E, ]**F)</p></td>
+<td><p>If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k] If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v In either case, this is followed by: for k in F:  D[k] = F[k]</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromkeys</span></code>(iterable[, value])</p></td>
+<td><p>Create a new dictionary with keys from iterable and values set to value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__reversed__</span></code>(/)</p></td>
+<td><p>Return a reverse iterator over the dict keys.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__class_getitem__</span></code></p></td>
+<td><p>See PEP 585</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.UtilityAndView.Repository.Repository.changeKey">
 <span class="sig-name descname"><span class="pre">changeKey</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fromName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/Repository.py#L22-L33"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.Repository.Repository.changeKey" title="Permalink to this definition">#</a></dt>
@@ -921,9 +1113,26 @@ symbolicConstants module.</p>
 </pre></div>
 </div>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(text)</p></td>
+<td><p>The SymbolicConstant method creates a SymbolicConstant object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </dd></dl>
 
 </section>
+<hr class="docutils" />
 <section id="upgrade">
 <h3>Upgrade<a class="headerlink" href="#upgrade" title="Permalink to this headline">#</a></h3>
 </section>
@@ -1007,6 +1216,84 @@ the Layer within a viewport.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.displayedObjectScreenWidth" title="abaqus.UtilityAndView.View.View.displayedObjectScreenWidth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayedObjectScreenWidth</span></code></a></p></td>
+<td><p>A Float specifying the width in viewport millimeters of the bounding rectangle around the viewport contents.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.displayedObjectScreenHeight" title="abaqus.UtilityAndView.View.View.displayedObjectScreenHeight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayedObjectScreenHeight</span></code></a></p></td>
+<td><p>A Float specifying the height in viewport millimeters of the bounding rectangle around the viewport contents.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.layerTransform" title="abaqus.UtilityAndView.View.View.layerTransform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">layerTransform</span></code></a></p></td>
+<td><p>A tuple of Floats specifying a transformation matrix used to position the contents of the Layer within a viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.movieMode" title="abaqus.UtilityAndView.View.View.movieMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">movieMode</span></code></a></p></td>
+<td><p>A Boolean specifying whether or not the camera is in movie mode.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, nearPlane, farPlane, width, ...)</p></td>
+<td><p>This method creates a View object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.fitView" title="abaqus.UtilityAndView.View.View.fitView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fitView</span></code></a>([drawImmediately])</p></td>
+<td><p>This method scales the displayable object (such as a part, the assembly, or an <strong>X - Y</strong> plot) to fit the viewport.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.next" title="abaqus.UtilityAndView.View.View.next"><code class="xref py py-obj docutils literal notranslate"><span class="pre">next</span></code></a>([drawImmediately])</p></td>
+<td><p>This method restores the view in the viewport to the next view setting in the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.pan" title="abaqus.UtilityAndView.View.View.pan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pan</span></code></a>([xFraction, yFraction, asMovie, ...])</p></td>
+<td><p>This method pans the view in the viewport using absolute, not relative, mode.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.previous" title="abaqus.UtilityAndView.View.View.previous"><code class="xref py py-obj docutils literal notranslate"><span class="pre">previous</span></code></a>([drawImmediately])</p></td>
+<td><p>This method restores the view in the viewport to the previous view setting in the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.rotate" title="abaqus.UtilityAndView.View.View.rotate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rotate</span></code></a>([xAngle, yAngle, zAngle, mode, ...])</p></td>
+<td><p>This method rotates the view in the viewport.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.setLayerTransform" title="abaqus.UtilityAndView.View.View.setLayerTransform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setLayerTransform</span></code></a>([layerTransform, options, ...])</p></td>
+<td><p>This method modifies the transformation used to position a Layer.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.setProjection" title="abaqus.UtilityAndView.View.View.setProjection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setProjection</span></code></a>(projection[, drawImmediately])</p></td>
+<td><p>This method modifies the appearance of three-dimensional models in the viewport.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.setRotationCenter" title="abaqus.UtilityAndView.View.View.setRotationCenter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setRotationCenter</span></code></a>(rotationCenter)</p></td>
+<td><p>This method sets the center of rotation to the specified location.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.setValues" title="abaqus.UtilityAndView.View.View.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([movieMode])</p></td>
+<td><p>This method modifies the View object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.setViewpoint" title="abaqus.UtilityAndView.View.View.setViewpoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setViewpoint</span></code></a>(viewVector[, cameraUpVector, ...])</p></td>
+<td><p>This method sets the camera's position in the viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.zoom" title="abaqus.UtilityAndView.View.View.zoom"><code class="xref py py-obj docutils literal notranslate"><span class="pre">zoom</span></code></a>(zoomFactor[, mode, asMovie, ...])</p></td>
+<td><p>This method magnifies the view in the viewport.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.zoomRectangle" title="abaqus.UtilityAndView.View.View.zoomRectangle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">zoomRectangle</span></code></a>(point1, point2[, drawImmediately])</p></td>
+<td><p>This method fills the viewport with the graphics located within the given rectangle.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.autoFit">
 <span class="sig-name descname"><span class="pre">autoFit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.autoFit" title="Permalink to this definition">#</a></dt>

@@ -26,7 +26,7 @@ DiagnosticPrint
 .. autoclass:: abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FieldOutputRequest
 ~~~~~~~~~~~~~~~~~~
@@ -34,7 +34,7 @@ FieldOutputRequest
 .. autoclass:: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FieldOutputRequestState
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -42,7 +42,7 @@ FieldOutputRequestState
 .. autoclass:: abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HistoryOutputRequest
 ~~~~~~~~~~~~~~~~~~~~
@@ -50,7 +50,7 @@ HistoryOutputRequest
 .. autoclass:: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HistoryOutputRequestState
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -58,7 +58,7 @@ HistoryOutputRequestState
 .. autoclass:: abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 IntegratedOutputSection
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -66,7 +66,7 @@ IntegratedOutputSection
 .. autoclass:: abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Monitor
 ~~~~~~~
@@ -74,7 +74,7 @@ Monitor
 .. autoclass:: abaqus.StepOutput.Monitor.Monitor
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Restart
 ~~~~~~~
@@ -82,7 +82,7 @@ Restart
 .. autoclass:: abaqus.StepOutput.Restart.Restart
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TimePoint
 ~~~~~~~~~
@@ -90,4 +90,4 @@ TimePoint
 .. autoclass:: abaqus.StepOutput.TimePoint.TimePoint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::

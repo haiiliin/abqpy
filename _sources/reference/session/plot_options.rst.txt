@@ -13,7 +13,7 @@ BasicOptions
 .. autoclass:: abaqus.PlotOptions.BasicOptions.BasicOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CouplingConstraint
 ~~~~~~~~~~~~~~~~~~
@@ -21,7 +21,7 @@ CouplingConstraint
 .. autoclass:: abaqus.PlotOptions.CouplingConstraint.CouplingConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DetailPlotOptions
 ~~~~~~~~~~~~~~~~~
@@ -29,7 +29,7 @@ DetailPlotOptions
 .. autoclass:: abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DGCommonOptions
 ~~~~~~~~~~~~~~~
@@ -37,7 +37,7 @@ DGCommonOptions
 .. autoclass:: abaqus.PlotOptions.DGCommonOptions.DGCommonOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DGContourOptions
 ~~~~~~~~~~~~~~~~
@@ -45,7 +45,7 @@ DGContourOptions
 .. autoclass:: abaqus.PlotOptions.DGContourOptions.DGContourOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DGDisplayBodyOptions
 ~~~~~~~~~~~~~~~~~~~~
@@ -53,7 +53,7 @@ DGDisplayBodyOptions
 .. autoclass:: abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DGOrientationOptions
 ~~~~~~~~~~~~~~~~~~~~
@@ -61,7 +61,7 @@ DGOrientationOptions
 .. autoclass:: abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DGSuperimposeOptions
 ~~~~~~~~~~~~~~~~~~~~
@@ -69,7 +69,7 @@ DGSuperimposeOptions
 .. autoclass:: abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DGSymbolOptions
 ~~~~~~~~~~~~~~~
@@ -77,7 +77,7 @@ DGSymbolOptions
 .. autoclass:: abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DisplayOptions
 ~~~~~~~~~~~~~~
@@ -85,7 +85,7 @@ DisplayOptions
 .. autoclass:: abaqus.PlotOptions.DisplayOptions.DisplayOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FreeBodyOptions
 ~~~~~~~~~~~~~~~
@@ -93,7 +93,7 @@ FreeBodyOptions
 .. autoclass:: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HistoryVariable
 ~~~~~~~~~~~~~~~
@@ -101,7 +101,7 @@ HistoryVariable
 .. autoclass:: abaqus.PlotOptions.HistoryVariable.HistoryVariable
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MdbData
 ~~~~~~~
@@ -109,7 +109,7 @@ MdbData
 .. autoclass:: abaqus.PlotOptions.MdbData.MdbData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MdbDataFrame
 ~~~~~~~~~~~~
@@ -117,7 +117,7 @@ MdbDataFrame
 .. autoclass:: abaqus.PlotOptions.MdbDataFrame.MdbDataFrame
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MdbDataFrameArray
 ~~~~~~~~~~~~~~~~~
@@ -125,7 +125,7 @@ MdbDataFrameArray
 .. autoclass:: abaqus.PlotOptions.MdbDataFrameArray.MdbDataFrameArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MdbDataInstance
 ~~~~~~~~~~~~~~~
@@ -133,7 +133,7 @@ MdbDataInstance
 .. autoclass:: abaqus.PlotOptions.MdbDataInstance.MdbDataInstance
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MdbDataStep
 ~~~~~~~~~~~
@@ -141,7 +141,7 @@ MdbDataStep
 .. autoclass:: abaqus.PlotOptions.MdbDataStep.MdbDataStep
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MpcConstraint
 ~~~~~~~~~~~~~
@@ -149,7 +149,7 @@ MpcConstraint
 .. autoclass:: abaqus.PlotOptions.MpcConstraint.MpcConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbAnalysisError
 ~~~~~~~~~~~~~~~~
@@ -157,7 +157,7 @@ OdbAnalysisError
 .. autoclass:: abaqus.PlotOptions.OdbAnalysisError.OdbAnalysisError
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbAnalysisWarning
 ~~~~~~~~~~~~~~~~~~
@@ -165,7 +165,7 @@ OdbAnalysisWarning
 .. autoclass:: abaqus.PlotOptions.OdbAnalysisWarning.OdbAnalysisWarning
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbAuxiliaryData
 ~~~~~~~~~~~~~~~~
@@ -173,7 +173,7 @@ OdbAuxiliaryData
 .. autoclass:: abaqus.PlotOptions.OdbAuxiliaryData.OdbAuxiliaryData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbContactDiagnostics
 ~~~~~~~~~~~~~~~~~~~~~
@@ -181,7 +181,7 @@ OdbContactDiagnostics
 .. autoclass:: abaqus.PlotOptions.OdbContactDiagnostics.OdbContactDiagnostics
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbData
 ~~~~~~~
@@ -189,7 +189,7 @@ OdbData
 .. autoclass:: abaqus.PlotOptions.OdbData.OdbData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDataDatumCsys
 ~~~~~~~~~~~~~~~~
@@ -197,7 +197,7 @@ OdbDataDatumCsys
 .. autoclass:: abaqus.PlotOptions.OdbDataDatumCsys.OdbDataDatumCsys
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDataElementSet
 ~~~~~~~~~~~~~~~~~
@@ -205,7 +205,7 @@ OdbDataElementSet
 .. autoclass:: abaqus.PlotOptions.OdbDataElementSet.OdbDataElementSet
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDataFrame
 ~~~~~~~~~~~~
@@ -213,7 +213,7 @@ OdbDataFrame
 .. autoclass:: abaqus.PlotOptions.OdbDataFrame.OdbDataFrame
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDataFrameArray
 ~~~~~~~~~~~~~~~~~
@@ -221,7 +221,7 @@ OdbDataFrameArray
 .. autoclass:: abaqus.PlotOptions.OdbDataFrameArray.OdbDataFrameArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDataInstance
 ~~~~~~~~~~~~~~~
@@ -229,7 +229,7 @@ OdbDataInstance
 .. autoclass:: abaqus.PlotOptions.OdbDataInstance.OdbDataInstance
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDataMaterial
 ~~~~~~~~~~~~~~~
@@ -237,7 +237,7 @@ OdbDataMaterial
 .. autoclass:: abaqus.PlotOptions.OdbDataMaterial.OdbDataMaterial
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDataNodeSet
 ~~~~~~~~~~~~~~
@@ -245,7 +245,7 @@ OdbDataNodeSet
 .. autoclass:: abaqus.PlotOptions.OdbDataNodeSet.OdbDataNodeSet
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDataSection
 ~~~~~~~~~~~~~~
@@ -253,7 +253,7 @@ OdbDataSection
 .. autoclass:: abaqus.PlotOptions.OdbDataSection.OdbDataSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDataStep
 ~~~~~~~~~~~
@@ -261,7 +261,7 @@ OdbDataStep
 .. autoclass:: abaqus.PlotOptions.OdbDataStep.OdbDataStep
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDataSurfaceSet
 ~~~~~~~~~~~~~~~~~
@@ -269,7 +269,7 @@ OdbDataSurfaceSet
 .. autoclass:: abaqus.PlotOptions.OdbDataSurfaceSet.OdbDataSurfaceSet
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDiagnosticAttempt
 ~~~~~~~~~~~~~~~~~~~~
@@ -277,7 +277,7 @@ OdbDiagnosticAttempt
 .. autoclass:: abaqus.PlotOptions.OdbDiagnosticAttempt.OdbDiagnosticAttempt
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDiagnosticData
 ~~~~~~~~~~~~~~~~~
@@ -285,7 +285,7 @@ OdbDiagnosticData
 .. autoclass:: abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDiagnosticIncrement
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -293,7 +293,7 @@ OdbDiagnosticIncrement
 .. autoclass:: abaqus.PlotOptions.OdbDiagnosticIncrement.OdbDiagnosticIncrement
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDiagnosticStep
 ~~~~~~~~~~~~~~~~~
@@ -301,7 +301,7 @@ OdbDiagnosticStep
 .. autoclass:: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbDisplayOptions
 ~~~~~~~~~~~~~~~~~
@@ -309,7 +309,7 @@ OdbDisplayOptions
 .. autoclass:: abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbJobTime
 ~~~~~~~~~~
@@ -317,7 +317,7 @@ OdbJobTime
 .. autoclass:: abaqus.PlotOptions.OdbJobTime.OdbJobTime
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OdbNumericalProblemSummary
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -325,7 +325,7 @@ OdbNumericalProblemSummary
 .. autoclass:: abaqus.PlotOptions.OdbNumericalProblemSummary.OdbNumericalProblemSummary
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OptionArg
 ~~~~~~~~~
@@ -333,7 +333,7 @@ OptionArg
 .. autoclass:: abaqus.PlotOptions.OptionArg.OptionArg
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PlyStackPlotOptions
 ~~~~~~~~~~~~~~~~~~~
@@ -341,7 +341,7 @@ PlyStackPlotOptions
 .. autoclass:: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RigidBodyConstraint
 ~~~~~~~~~~~~~~~~~~~
@@ -349,7 +349,7 @@ RigidBodyConstraint
 .. autoclass:: abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StreamOptions
 ~~~~~~~~~~~~~
@@ -357,7 +357,7 @@ StreamOptions
 .. autoclass:: abaqus.PlotOptions.StreamOptions.StreamOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TieConstraint
 ~~~~~~~~~~~~~
@@ -365,7 +365,7 @@ TieConstraint
 .. autoclass:: abaqus.PlotOptions.TieConstraint.TieConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ViewCutOptions
 ~~~~~~~~~~~~~~
@@ -373,5 +373,5 @@ ViewCutOptions
 .. autoclass:: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

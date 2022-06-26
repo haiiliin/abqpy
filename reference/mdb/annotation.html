@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -709,6 +710,57 @@ object are common to all objects derived from Annotation.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.name" title="abaqus.Annotation.Annotation.Annotation.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the annotation repository key.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.bringToFront" title="abaqus.Annotation.Annotation.Annotation.bringToFront"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringToFront</span></code></a>()</p></td>
+<td><p>This method brings the Annotation object to the top of the annotation stack.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.sendToBack" title="abaqus.Annotation.Annotation.Annotation.sendToBack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendToBack</span></code></a>()</p></td>
+<td><p>This method sends the Annotation object to the bottom of the annotation stack.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.bringForward" title="abaqus.Annotation.Annotation.Annotation.bringForward"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringForward</span></code></a>()</p></td>
+<td><p>This method brings the Annotation object one position up in the annotation stack.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.sendBackward" title="abaqus.Annotation.Annotation.Annotation.sendBackward"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendBackward</span></code></a>()</p></td>
+<td><p>This method sends the Annotation object one position down in the annotation stack.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.moveBefore" title="abaqus.Annotation.Annotation.Annotation.moveBefore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveBefore</span></code></a>(name)</p></td>
+<td><p>This method moves the Annotation object before another object in the same repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.moveAfter" title="abaqus.Annotation.Annotation.Annotation.moveAfter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveAfter</span></code></a>(name)</p></td>
+<td><p>This method moves the Annotation object after another object in the same repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.translate" title="abaqus.Annotation.Annotation.Annotation.translate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translate</span></code></a>([x, y])</p></td>
+<td><p>This method translates the Annotation object on the viewport plane.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Annotation.Annotation.Annotation.bringForward">
 <span class="sig-name descname"><span class="pre">bringForward</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Annotation.py#L28-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Annotation.Annotation.bringForward" title="Permalink to this definition">#</a></dt>
@@ -831,6 +883,150 @@ can control which annotations are displayed in a particular viewport.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringForward</span></code></a>(index)</p></td>
+<td><p>This method brings the Annotation object one position forward in the AnnotationsToPlotArray sequence.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringToFront</span></code></a>(index)</p></td>
+<td><p>This method brings the Annotation object to the beginning of the AnnotationsToPlotArray sequence.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveAfter</span></code></a>(index, other)</p></td>
+<td><p>This method moves the Annotation object after another object in the same AnnotationsToPlotArray sequence.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveBefore</span></code></a>(index, other)</p></td>
+<td><p>This method moves the Annotation object before another object in the same AnnotationsToPlotArray sequence.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendBackward</span></code></a>(index)</p></td>
+<td><p>This method sends the Annotation object one position backward in the AnnotationsToPlotArray sequence.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendToBack</span></code></a>(index)</p></td>
+<td><p>This method sends the Annotation object to the end of the AnnotationsToPlotArray sequence.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__repr__</span></code>(/)</p></td>
+<td><p>Return repr(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getattribute__</span></code>(name, /)</p></td>
+<td><p>Return getattr(self, name).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__lt__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__le__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__eq__</span></code>(value, /)</p></td>
+<td><p>Return self==value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ne__</span></code>(value, /)</p></td>
+<td><p>Return self!=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__gt__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ge__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iter__</span></code>(/)</p></td>
+<td><p>Implement iter(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code>(/)</p></td>
+<td><p>Return len(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code></p></td>
+<td><p>x.__getitem__(y) &lt;==&gt; x[y]</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__setitem__</span></code>(key, value, /)</p></td>
+<td><p>Set self[key] to value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__delitem__</span></code>(key, /)</p></td>
+<td><p>Delete self[key].</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__add__</span></code>(value, /)</p></td>
+<td><p>Return self+value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__mul__</span></code>(value, /)</p></td>
+<td><p>Return self*value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__rmul__</span></code>(value, /)</p></td>
+<td><p>Return value*self.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__contains__</span></code>(key, /)</p></td>
+<td><p>Return key in self.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iadd__</span></code>(value, /)</p></td>
+<td><p>Implement self+=value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__imul__</span></code>(value, /)</p></td>
+<td><p>Implement self*=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__reversed__</span></code>(/)</p></td>
+<td><p>Return a reverse iterator over the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__sizeof__</span></code>(/)</p></td>
+<td><p>Return the size of the list in memory, in bytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code>(/)</p></td>
+<td><p>Remove all items from list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code>(/)</p></td>
+<td><p>Return a shallow copy of the list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">append</span></code>(object, /)</p></td>
+<td><p>Append object to the end of the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert</span></code>(index, object, /)</p></td>
+<td><p>Insert object before index.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">extend</span></code>(iterable, /)</p></td>
+<td><p>Extend list by appending elements from the iterable.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code>([index])</p></td>
+<td><p>Remove and return item at index (default last).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove</span></code>(value, /)</p></td>
+<td><p>Remove first occurrence of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">index</span></code>(value[, start, stop])</p></td>
+<td><p>Return first index of value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">count</span></code>(value, /)</p></td>
+<td><p>Return number of occurrences of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reverse</span></code>(/)</p></td>
+<td><p>Reverse <em>IN PLACE</em>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sort</span></code>(*[, key, reverse])</p></td>
+<td><p>Sort the list in ascending order and return None.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__class_getitem__</span></code></p></td>
+<td><p>See PEP 585</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward">
 <span class="sig-name descname"><span class="pre">bringForward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/AnnotationsToPlotArray.py#L18-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward" title="Permalink to this definition">#</a></dt>
@@ -964,6 +1160,205 @@ Viewport object, see Viewport object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayMode</span></code></p></td>
+<td><p>A SymbolicConstant specifying the display mode of the viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewManipLayers</span></code></p></td>
+<td><p>A SymbolicConstant specifying which layer or layers will be controlled by the view manipulation tools when <strong>displayMode</strong> = OVERLAY.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">layerOffset</span></code></p></td>
+<td><p>A Float specifying a factor to be used in offsetting layers in the screen Z direction.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">windowState</span></code></p></td>
+<td><p>A SymbolicConstant specifying the current state of a viewport.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentWidth</span></code></p></td>
+<td><p>A Float specifying the width in millimeters of the current viewport, regardless of the value of <strong>windowState</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentHeight</span></code></p></td>
+<td><p>A Float specifying the height in millimeters of the current viewport, regardless of the value of <strong>windowState</strong>, and including the title bar.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">applyLinkedCommands</span></code></p></td>
+<td><p>A Boolean specifying whether the viewport is linked for synchronization.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">activeColorModes</span></code></p></td>
+<td><p>A SymbolicConstant specifying the currently active color mappings.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">colorMode</span></code></p></td>
+<td><p>A SymbolicConstant specifying the last applied color mapping.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">translucency</span></code></p></td>
+<td><p>A Float specifying the translucency that will be applied to objects colored using <strong>initialColor</strong> and it needs to be set along with <strong>initialColor</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">animationConnect</span></code></p></td>
+<td><p>A Boolean specifying whether an animation is connected to the viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">colorMappings</span></code></p></td>
+<td><p>A repository of AttributeColorMap objects specifying the objects cannot be constructed but the following attribute maps are supported:     &quot;type&quot;     &quot;Element set&quot;     &quot;Material&quot;     &quot;Section&quot;     &quot;Default&quot;     &quot;Part&quot;     &quot;Part instance&quot;     &quot;Element type&quot;     &quot;Averaging region&quot;     &quot;Assembly&quot;     &quot;Property&quot;     &quot;Set&quot;     &quot;Surface&quot;     &quot;Skin&quot;     &quot;Profile&quot;     &quot;Part shape&quot;     &quot;Part status&quot;     &quot;Part geometry&quot;     &quot;Meshability&quot;     &quot;Instance type&quot;     &quot;Load&quot;     &quot;Boundary condition&quot;     &quot;Interaction&quot;     &quot;Constraint&quot;     &quot;Interaction type&quot;     &quot;Constraint type&quot;     &quot;Display group&quot;     &quot;Selection group&quot;     &quot;Interaction property&quot;     &quot;Connector&quot;     &quot;Connector type&quot;     &quot;Connector property&quot;     &quot;Internal set&quot;     &quot;Internal surface&quot;     &quot;mapColors&quot;     &quot;autoColors&quot;     &quot;overrides&quot;     &quot;defaultAutoColors&quot;     &quot;defaultOverrides&quot;     &quot;objectToCopy&quot;     &quot;colorMapping&quot;     &quot;colorMappings&quot;     &quot;colorMode&quot;     &quot;attributeColors&quot;     &quot;updateOverrides&quot;     &quot;colorCodeOverride&quot;     &quot;initialColor&quot;     &quot;Layup&quot;     &quot;Ply&quot;</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialColor</span></code></p></td>
+<td><p>A String specifying the color that will be applied to all objects in the viewport at the start of color coding.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentLayer</span></code></p></td>
+<td><p>A String specifying which layer is affected by options settings when <strong>displayMode</strong> =OVERLAY.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayedObject</span></code></p></td>
+<td><p>A <a class="reference internal" href="../session/canvas.html#abaqus.Canvas.Displayable.Displayable" title="abaqus.Canvas.Displayable.Displayable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Displayable</span></code></a> object specifying the object to be displayed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">layers</span></code></p></td>
+<td><p>A repository of Layer objects specifying the key to the repository is a String with the name of the layer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">view</span></code></p></td>
+<td><p>A <a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a> object specifying the object that controls viewing of the viewport content.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbDisplay</span></code></p></td>
+<td><p>An <a class="reference internal" href="../session/odb_display.html#abaqus.OdbDisplay.OdbDisplay.OdbDisplay" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbDisplay</span></code></a> object specifying the display options for the Odb object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">partDisplay</span></code></p></td>
+<td><p>A <a class="reference internal" href="../session/display_options.html#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartDisplayOptions</span></code></a> object specifying the display options for the Part object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">assemblyDisplay</span></code></p></td>
+<td><p>An <a class="reference internal" href="../session/display_options.html#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AssemblyDisplayOptions</span></code></a> object specifying the display options for the Assembly object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewportAnnotationOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../session/display_options.html#abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions" title="abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportAnnotationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">detailPlotOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../session/plot_options.html#abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions" title="abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DetailPlotOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">annotationsToPlot</span></code></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnnotationsToPlotArray</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">visibleLayers</span></code></p></td>
+<td><p>A tuple of Strings specifying the names of layers that will be displayed in the viewport when <strong>displayMode</strong> = OVERLAY.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentOrigin</span></code></p></td>
+<td><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-coordinates in millimeters in the canvas coordinate system of the lower left corner of the current viewport, regardless of the value of <strong>windowState</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">iconOrigin</span></code></p></td>
+<td><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-coordinates in millimeters of the lower left corner of the current viewport from a coordinate system having its origin in the lower left corner of the drawing area.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">lightOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../session/display_options.html#abaqus.DisplayOptions.LightOptions.LightOptions" title="abaqus.DisplayOptions.LightOptions.LightOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">LightOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="../session/canvas.html#abaqus.Canvas.ImageOptions.ImageOptions" title="abaqus.Canvas.ImageOptions.ImageOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">movieOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../session/canvas.html#abaqus.Canvas.MovieOptions.MovieOptions" title="abaqus.Canvas.MovieOptions.MovieOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MovieOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawings</span></code></p></td>
+<td><p>A tuple of Strings specifying keys to the session.drawings repository.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../session/canvas.html#abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation" title="abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plotAnnotation</span></code></a>(annotation[, index])</p></td>
+<td><p>This method plots an Annotation object in aViewport.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, origin, width, height, ...])</p></td>
+<td><p>This method creates a Viewport object with the specified origin and dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringToFront</span></code>()</p></td>
+<td><p>This method moves the Viewport object to the front.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableMultipleColors</span></code>()</p></td>
+<td><p>This method disables applying multiple color mappings that was enabled using enableMultipleColors</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableRefresh</span></code>()</p></td>
+<td><p>This method disables Viewport refresh.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableColorCodeUpdates</span></code>()</p></td>
+<td><p>This method disables Viewport updates and internal computations triggered because of color coding.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableMultipleColors</span></code>()</p></td>
+<td><p>This method enables multiple color mappings to be applied at the same time.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableRefresh</span></code>()</p></td>
+<td><p>This method enables Viewport refresh disabled using disableRefresh.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableColorCodeUpdates</span></code>()</p></td>
+<td><p>This method enables Viewport color code updates disabled using disableColorCodeUpdates.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getActiveElementLabels</span></code>([useCut, printResults])</p></td>
+<td><p>This method returns the element labels currently active in the viewport based on the current display group.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getActiveNodeLabels</span></code>([useCut, printResults])</p></td>
+<td><p>This method returns the node labels currently active in the viewport based on the current display group.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPrimVarMinMaxLoc</span></code>()</p></td>
+<td><p>This method returns a dictionary containing the minimum, maximum and their location for the current primary variable.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">makeCurrent</span></code>()</p></td>
+<td><p>This method makes theViewport object the current viewport.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">maximize</span></code>()</p></td>
+<td><p>This method maximizes the Viewport object to fill the drawing area.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">minimize</span></code>()</p></td>
+<td><p>This method minimizes the Viewport object to appear as an abbreviated title bar.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">offset</span></code>([deltaX, deltaY])</p></td>
+<td><p>This method modifies the current <strong>X</strong>-<em>Y</em> location of the viewport by the specified distance.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restore</span></code>()</p></td>
+<td><p>This method restores a maximized or minimized Viewport object to its previous size and location.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendToBack</span></code>()</p></td>
+<td><p>This method moves the Viewport object to the back.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setColor</span></code>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">forceRefresh</span></code>()</p></td>
+<td><p>This method causes the Viewport to refresh immediately.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>([displayedObject, displayMode, ...])</p></td>
+<td><p>This method modifies the Viewport object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">addDrawings</span></code>([names])</p></td>
+<td><p>This method identifies the names of Drawing objects to be rendered in the Viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">removeDrawings</span></code>([names])</p></td>
+<td><p>This method identifies the names of Drawing objects to no longer be rendered in the Viewport.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeDisplay</span></code>([numFrames, numSeconds, ...])</p></td>
+<td><p>This method refreshes the Viewport display <strong>numFrames</strong> times and then checks to see if <strong>numSeconds</strong> seconds have elapsed.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation">
 <span class="sig-name descname"><span class="pre">plotAnnotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">annotation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/AnnotationViewport.py#L17-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation" title="Permalink to this definition">#</a></dt>
@@ -1021,6 +1416,122 @@ The Arrow object is derived from the Annotation object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.startPoint" title="abaqus.Annotation.Arrow.Arrow.startPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">startPoint</span></code></a></p></td>
+<td><p>A pair of Floats specifying the start point <strong>X</strong>- and <strong>Y</strong>-offsets in millimeters from <strong>startAnchor</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.endPoint" title="abaqus.Annotation.Arrow.Arrow.endPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">endPoint</span></code></a></p></td>
+<td><p>A pair of Floats specifying the end point <strong>X</strong>- and <strong>Y</strong>-offsets in millimeters from <strong>endAnchor</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.startAnchor" title="abaqus.Annotation.Arrow.Arrow.startAnchor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">startAnchor</span></code></a></p></td>
+<td><p>A SymbolicConstant or a sequence of Floats specifying a point.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.endAnchor" title="abaqus.Annotation.Arrow.Arrow.endAnchor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">endAnchor</span></code></a></p></td>
+<td><p>A SymbolicConstant or a sequence of Floats specifying a point.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.startHeadStyle" title="abaqus.Annotation.Arrow.Arrow.startHeadStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">startHeadStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the style of the start head.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.endHeadStyle" title="abaqus.Annotation.Arrow.Arrow.endHeadStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">endHeadStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the style of the end head.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.startGap" title="abaqus.Annotation.Arrow.Arrow.startGap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">startGap</span></code></a></p></td>
+<td><p>A Float specifying the distance in millimeters between the arrow start point and the arrow start head.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.endGap" title="abaqus.Annotation.Arrow.Arrow.endGap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">endGap</span></code></a></p></td>
+<td><p>A Float specifying the distance in millimeters between the arrow end point and the arrow end head.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.color" title="abaqus.Annotation.Arrow.Arrow.color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">color</span></code></a></p></td>
+<td><p>A String specifying the color of the arrow.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.lineStyle" title="abaqus.Annotation.Arrow.Arrow.lineStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lineStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the line style of the arrow.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.lineThickness" title="abaqus.Annotation.Arrow.Arrow.lineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the line thickness of the arrow.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Annotation</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the annotation repository key.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, startPoint, endPoint, ...])</p></td>
+<td><p>This method creates an Arrow object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.translateStartPoint" title="abaqus.Annotation.Arrow.Arrow.translateStartPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translateStartPoint</span></code></a>([x, y])</p></td>
+<td><p>This method translates the start point of the Arrow object on the viewport plane.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.translateEndPoint" title="abaqus.Annotation.Arrow.Arrow.translateEndPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translateEndPoint</span></code></a>([x, y])</p></td>
+<td><p>This method translates the end point of the Arrow object on the viewport plane.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.setValues" title="abaqus.Annotation.Arrow.Arrow.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([startPoint, endPoint, ...])</p></td>
+<td><p>This method modifies the Arrow object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Annotation</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringToFront</span></code>()</p></td>
+<td><p>This method brings the Annotation object to the top of the annotation stack.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendToBack</span></code>()</p></td>
+<td><p>This method sends the Annotation object to the bottom of the annotation stack.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringForward</span></code>()</p></td>
+<td><p>This method brings the Annotation object one position up in the annotation stack.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendBackward</span></code>()</p></td>
+<td><p>This method sends the Annotation object one position down in the annotation stack.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveBefore</span></code>(name)</p></td>
+<td><p>This method moves the Annotation object before another object in the same repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveAfter</span></code>(name)</p></td>
+<td><p>This method moves the Annotation object after another object in the same repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">translate</span></code>([x, y])</p></td>
+<td><p>This method translates the Annotation object on the viewport plane.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow.color">
 <span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Arrow.py#L109-L111"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow.color" title="Permalink to this definition">#</a></dt>

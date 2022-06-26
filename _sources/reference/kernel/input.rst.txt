@@ -18,7 +18,7 @@ AbaqusNDarray
 .. autoclass:: abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 InputFile
 ~~~~~~~~~
@@ -26,7 +26,7 @@ InputFile
 .. autoclass:: abaqus.InputFileParser.InputFile.InputFile
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Keyword
 ~~~~~~~
@@ -34,5 +34,5 @@ Keyword
 .. autoclass:: abaqus.InputFileParser.Keyword.Keyword
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

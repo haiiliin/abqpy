@@ -29,7 +29,7 @@ Filter
 .. autoclass:: abaqus.Filter.Filter.Filter
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ButterworthFilter
 ~~~~~~~~~~~~~~~~~
@@ -37,7 +37,7 @@ ButterworthFilter
 .. autoclass:: abaqus.Filter.ButterworthFilter.ButterworthFilter
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Chebyshev1Filter
 ~~~~~~~~~~~~~~~~
@@ -45,7 +45,7 @@ Chebyshev1Filter
 .. autoclass:: abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Chebyshev2Filter
 ~~~~~~~~~~~~~~~~
@@ -53,7 +53,7 @@ Chebyshev2Filter
 .. autoclass:: abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OperatorFilter
 ~~~~~~~~~~~~~~
@@ -61,5 +61,5 @@ OperatorFilter
 .. autoclass:: abaqus.Filter.OperatorFilter.OperatorFilter
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -452,6 +453,7 @@ cases, it will be False.</p>
 </dd></dl>
 
 </section>
+<hr class="docutils" />
 <section id="inputfile">
 <h3>InputFile<a class="headerlink" href="#inputfile" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
@@ -480,6 +482,51 @@ objects can be created using the methods described in this section.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.file" title="abaqus.InputFileParser.InputFile.InputFile.file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">file</span></code></a></p></td>
+<td><p>A String specifying the source file name of the Abaqus input file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.directory" title="abaqus.InputFileParser.InputFile.InputFile.directory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">directory</span></code></a></p></td>
+<td><p>A String specifying the directory where the input file is located.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.includes" title="abaqus.InputFileParser.InputFile.InputFile.includes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">includes</span></code></a></p></td>
+<td><p>A sequence of Strings specifying any additional input files included in the specified input file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.missingIncludes" title="abaqus.InputFileParser.InputFile.InputFile.missingIncludes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">missingIncludes</span></code></a></p></td>
+<td><p>A sequence of Strings for input files included in the specified input file that could not be located.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(file[, directory])</p></td>
+<td><p>This method creates an InputFile object by reading an Abaqus input file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.parse" title="abaqus.InputFileParser.InputFile.InputFile.parse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse</span></code></a>([organize, verbose, bulk, usePyArray])</p></td>
+<td><p>This method parses the input file associated with the InputFile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.InputFileParser.InputFile.InputFile.directory">
 <span class="sig-name descname"><span class="pre">directory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/InputFileParser/InputFile.py#L19-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.directory" title="Permalink to this definition">#</a></dt>
@@ -570,6 +617,35 @@ Keyword objects are returned via the InputFile.parse() method.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.InputFileParser.Keyword.Keyword.name" title="abaqus.InputFileParser.Keyword.Keyword.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the name of the keyword.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.InputFileParser.Keyword.Keyword.parameter" title="abaqus.InputFileParser.Keyword.Keyword.parameter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parameter</span></code></a></p></td>
+<td><p>A Dictionary of Strings specifying the keyword parameters.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.InputFileParser.Keyword.Keyword.data" title="abaqus.InputFileParser.Keyword.Keyword.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a></p></td>
+<td><p>A sequence of sequences or an AbaqusNDarray object specifying the keyword data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.InputFileParser.Keyword.Keyword.suboptions" title="abaqus.InputFileParser.Keyword.Keyword.suboptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suboptions</span></code></a></p></td>
+<td><p>A KeywordSequence specifying the suboptions of the keyword.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.InputFileParser.Keyword.Keyword.comments" title="abaqus.InputFileParser.Keyword.Keyword.comments"><code class="xref py py-obj docutils literal notranslate"><span class="pre">comments</span></code></a></p></td>
+<td><p>A sequence of Strings specifying the comments.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.InputFileParser.Keyword.Keyword.comments">
 <span class="sig-name descname"><span class="pre">comments</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/InputFileParser/Keyword.py#L1-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.Keyword.Keyword.comments" title="Permalink to this definition">#</a></dt>

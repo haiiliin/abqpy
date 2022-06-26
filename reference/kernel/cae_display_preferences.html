@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -433,6 +434,42 @@ guiPreferences section of the abaqus_2021.gpr file.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.fileName" title="abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.fileName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fileName</span></code></a></p></td>
+<td><p>A String specifying the path to the preferences file.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save" title="abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code></a>([backupFile])</p></td>
+<td><p>This method saves the guiPreferences section specified in the current <strong>fileName</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.saveAs" title="abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.saveAs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveAs</span></code></a>(fileName)</p></td>
+<td><p>This method saves the guiPreferences settings to the specified location.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.fileName">
 <span class="sig-name descname"><span class="pre">fileName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/AbaqusCAEDisplayPreferences/CaeGuiPrefs.py#L4-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.fileName" title="Permalink to this definition">#</a></dt>
@@ -502,6 +539,42 @@ preferences file, <strong>fileName</strong>. Default is True.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.fileName" title="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.fileName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fileName</span></code></a></p></td>
+<td><p>A String specifying the path to the preferences file that the CaeKerPrefs object represents.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save" title="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code></a>([backupFile])</p></td>
+<td><p>This method saves the sessionOptions in the current <strong>fileName</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs" title="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveAs</span></code></a>([fileName, directory])</p></td>
+<td><p>This method saves the sessionOptions to the specified location.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.fileName">
 <span class="sig-name descname"><span class="pre">fileName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/AbaqusCAEDisplayPreferences/CaeKerPrefs.py#L18-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.fileName" title="Permalink to this definition">#</a></dt>

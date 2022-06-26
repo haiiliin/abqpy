@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -435,6 +436,95 @@ DataObject instances have the following members, regardless of type:</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.phase" title="abaqus.Messaging.DataObject.DataObject.phase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phase</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the phase of the analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.processId" title="abaqus.Messaging.DataObject.DataObject.processId"><code class="xref py py-obj docutils literal notranslate"><span class="pre">processId</span></code></a></p></td>
+<td><p>An Int specifying the process ID of the analysis product.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.threadId" title="abaqus.Messaging.DataObject.DataObject.threadId"><code class="xref py py-obj docutils literal notranslate"><span class="pre">threadId</span></code></a></p></td>
+<td><p>An Int specifying the thread ID of the analysis product.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.timeStamp" title="abaqus.Messaging.DataObject.DataObject.timeStamp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeStamp</span></code></a></p></td>
+<td><p>An Int specifying the time the message was sent in seconds since 00:00:00 UTC, January 1, 1970.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.attempts" title="abaqus.Messaging.DataObject.DataObject.attempts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">attempts</span></code></a></p></td>
+<td><p>An Int specifying the number of attempts made to reach equilibrium during this step.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.dof" title="abaqus.Messaging.DataObject.DataObject.dof"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dof</span></code></a></p></td>
+<td><p>An Int specifying the degree of freedom requested for monitoring the output.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.equilibrium" title="abaqus.Messaging.DataObject.DataObject.equilibrium"><code class="xref py py-obj docutils literal notranslate"><span class="pre">equilibrium</span></code></a></p></td>
+<td><p>An Int specifying the number of equilibrium iterations made during this increment.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.increment" title="abaqus.Messaging.DataObject.DataObject.increment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">increment</span></code></a></p></td>
+<td><p>An Int specifying the increment of the analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.iterations" title="abaqus.Messaging.DataObject.DataObject.iterations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iterations</span></code></a></p></td>
+<td><p>An Int specifying the number of iterations in the step.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.node" title="abaqus.Messaging.DataObject.DataObject.node"><code class="xref py py-obj docutils literal notranslate"><span class="pre">node</span></code></a></p></td>
+<td><p>An Int specifying the node number requested for monitoring output.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.severe" title="abaqus.Messaging.DataObject.DataObject.severe"><code class="xref py py-obj docutils literal notranslate"><span class="pre">severe</span></code></a></p></td>
+<td><p>An Int specifying the number of severe discontinuity iterations completed during this increment.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.step" title="abaqus.Messaging.DataObject.DataObject.step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">step</span></code></a></p></td>
+<td><p>An Int specifying the current step number.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.stepId" title="abaqus.Messaging.DataObject.DataObject.stepId"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stepId</span></code></a></p></td>
+<td><p>An Int specifying the ID of the step.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.stepTime" title="abaqus.Messaging.DataObject.DataObject.stepTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stepTime</span></code></a></p></td>
+<td><p>A Float specifying the step time corresponding to the current increment.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.time" title="abaqus.Messaging.DataObject.DataObject.time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">time</span></code></a></p></td>
+<td><p>A Float specifying the total time corresponding to the monitor data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.timeIncrement" title="abaqus.Messaging.DataObject.DataObject.timeIncrement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeIncrement</span></code></a></p></td>
+<td><p>A Float specifying the time increment used in the current step.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.totalTime" title="abaqus.Messaging.DataObject.DataObject.totalTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">totalTime</span></code></a></p></td>
+<td><p>A Float specifying the total time completed in the analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.value" title="abaqus.Messaging.DataObject.DataObject.value"><code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code></a></p></td>
+<td><p>A Float specifying the current value of the degree of freedom requested for monitoring.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.clientHost" title="abaqus.Messaging.DataObject.DataObject.clientHost"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clientHost</span></code></a></p></td>
+<td><p>A String specifying the host name of the machine that is running the analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.clientName" title="abaqus.Messaging.DataObject.DataObject.clientName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clientName</span></code></a></p></td>
+<td><p>A String specifying the name of the client that responded to the callback function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.file" title="abaqus.Messaging.DataObject.DataObject.file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">file</span></code></a></p></td>
+<td><p>A String specifying the full path of the output database.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.heading" title="abaqus.Messaging.DataObject.DataObject.heading"><code class="xref py py-obj docutils literal notranslate"><span class="pre">heading</span></code></a></p></td>
+<td><p>A String specifying the job heading.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.message" title="abaqus.Messaging.DataObject.DataObject.message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">message</span></code></a></p></td>
+<td><p>A String specifying the job heading.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.nset" title="abaqus.Messaging.DataObject.DataObject.nset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nset</span></code></a></p></td>
+<td><p>A String specifying the node set specified for monitoring output.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.stepName" title="abaqus.Messaging.DataObject.DataObject.stepName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stepName</span></code></a></p></td>
+<td><p>A String specifying the name of the step.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.attempts">
 <span class="sig-name descname"><span class="pre">attempts</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Messaging/DataObject.py#L30-L31"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.attempts" title="Permalink to this definition">#</a></dt>
@@ -630,6 +720,29 @@ object.)</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback" title="abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback"><code class="xref py py-obj docutils literal notranslate"><span class="pre">addMessageCallback</span></code></a>(jobName, messageType, ...)</p></td>
+<td><p>This method specifies a callback function that will be called when the specified message is received from the analysis product.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback" title="abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback"><code class="xref py py-obj docutils literal notranslate"><span class="pre">removeMessageCallback</span></code></a>(jobName, messageType, ...)</p></td>
+<td><p>This method removes a callback function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.checkMonitorStatus" title="abaqus.Messaging.MonitorMgr.MonitorMgr.checkMonitorStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">checkMonitorStatus</span></code></a>()</p></td>
+<td><p>This method raises a MonitorError exception if the monitoring status is not ENABLED.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback">
 <span class="sig-name descname"><span class="pre">addMessageCallback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jobName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">messageType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Messaging/MonitorMgr.py#L18-L46"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback" title="Permalink to this definition">#</a></dt>

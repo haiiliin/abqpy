@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -524,6 +525,84 @@ co-simulation analysis.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.name" title="abaqus.Job.Coexecution.Coexecution.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the name of the new job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.type" title="abaqus.Job.Coexecution.Coexecution.type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of analysis to execute for the co-execution.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.mainAnalysisProduct" title="abaqus.Job.Coexecution.Coexecution.mainAnalysisProduct"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mainAnalysisProduct</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the analysis product type of the main model for the co-execution.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.waitHours" title="abaqus.Job.Coexecution.Coexecution.waitHours"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitHours</span></code></a></p></td>
+<td><p>An Int specifying the number of hours to wait before submitting the co-execution.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.waitMinutes" title="abaqus.Job.Coexecution.Coexecution.waitMinutes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitMinutes</span></code></a></p></td>
+<td><p>An Int specifying the number of minutes to wait before submitting the job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.status" title="abaqus.Job.Coexecution.Coexecution.status"><code class="xref py py-obj docutils literal notranslate"><span class="pre">status</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the status of the co-execution.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.queue" title="abaqus.Job.Coexecution.Coexecution.queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">queue</span></code></a></p></td>
+<td><p>A String specifying the name of the queue to which to submit the co-execution.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.atTime" title="abaqus.Job.Coexecution.Coexecution.atTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">atTime</span></code></a></p></td>
+<td><p>A String specifying the time at which to submit the co-execution.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.jobs" title="abaqus.Job.Coexecution.Coexecution.jobs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">jobs</span></code></a></p></td>
+<td><p>A repository of Job objects specifying the jobs that comprise this co-execution.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.secondaryModels" title="abaqus.Job.Coexecution.Coexecution.secondaryModels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">secondaryModels</span></code></a></p></td>
+<td><p>A tuple of Strings specifying the names of the secondary models for the co-execution.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.secondaryAnalysisProducts" title="abaqus.Job.Coexecution.Coexecution.secondaryAnalysisProducts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">secondaryAnalysisProducts</span></code></a></p></td>
+<td><p>A tuple of SymbolicConstants specifying the analysis product types of the secondary models for the co-execution.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.mainModel" title="abaqus.Job.Coexecution.Coexecution.mainModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mainModel</span></code></a></p></td>
+<td><p>A String specifying the name of the main model for the co-execution.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.licenseType" title="abaqus.Job.Coexecution.Coexecution.licenseType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">licenseType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of license type being used in case of DSLS SimUnit license model.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.kill" title="abaqus.Job.Coexecution.Coexecution.kill"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kill</span></code></a>()</p></td>
+<td><p>This method kills the analysis of a co-execution.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.submit" title="abaqus.Job.Coexecution.Coexecution.submit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">submit</span></code></a>([consistencyChecking, datacheckJob, ...])</p></td>
+<td><p>This method submits a co-execution for analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.writeInput" title="abaqus.Job.Coexecution.Coexecution.writeInput"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeInput</span></code></a>([consistencyChecking])</p></td>
+<td><p>This method writes an input file for each analysis in the co-execution.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.waitForCompletion" title="abaqus.Job.Coexecution.Coexecution.waitForCompletion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitForCompletion</span></code></a>()</p></td>
+<td><p>This method interrupts the execution of the script until the end of all the analyses.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.atTime">
 <span class="sig-name descname"><span class="pre">atTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Coexecution.py#L58-L64"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.atTime" title="Permalink to this definition">#</a></dt>
@@ -741,6 +820,117 @@ objects derived from Job.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.name" title="abaqus.Job.Job.Job.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the name of the new job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.type" title="abaqus.Job.Job.Job.type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.waitHours" title="abaqus.Job.Job.Job.waitHours"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitHours</span></code></a></p></td>
+<td><p>An Int specifying the number of hours to wait before submitting the job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.waitMinutes" title="abaqus.Job.Job.Job.waitMinutes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitMinutes</span></code></a></p></td>
+<td><p>An Int specifying the number of minutes to wait before submitting the job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.numCpus" title="abaqus.Job.Job.Job.numCpus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numCpus</span></code></a></p></td>
+<td><p>An Int specifying the number of CPUs to use for this analysis if parallel processing is available.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.memory" title="abaqus.Job.Job.Job.memory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">memory</span></code></a></p></td>
+<td><p>An Int specifying the amount of memory available to Abaqus analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.memoryUnits" title="abaqus.Job.Job.Job.memoryUnits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">memoryUnits</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the units for the amount of memory used in an Abaqus analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.getMemoryFromAnalysis" title="abaqus.Job.Job.Job.getMemoryFromAnalysis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMemoryFromAnalysis</span></code></a></p></td>
+<td><p>A Boolean specifying whether to retrieve the recommended memory settings from the last datacheck or analysis run and use those values in subsequent submissions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.explicitPrecision" title="abaqus.Job.Job.Job.explicitPrecision"><code class="xref py py-obj docutils literal notranslate"><span class="pre">explicitPrecision</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether to use the double precision version of Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.nodalOutputPrecision" title="abaqus.Job.Job.Job.nodalOutputPrecision"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodalOutputPrecision</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the precision of the nodal output written to the output database.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.parallelizationMethodExplicit" title="abaqus.Job.Job.Job.parallelizationMethodExplicit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parallelizationMethodExplicit</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.numDomains" title="abaqus.Job.Job.Job.numDomains"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numDomains</span></code></a></p></td>
+<td><p>An Int specifying the number of domains for parallel execution in Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.activateLoadBalancing" title="abaqus.Job.Job.Job.activateLoadBalancing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">activateLoadBalancing</span></code></a></p></td>
+<td><p>A Boolean specifying whether to activate dyanmic load balancing for jobs running on multiple processors with multiple domains in Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.multiprocessingMode" title="abaqus.Job.Job.Job.multiprocessingMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">multiprocessingMode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether an analysis is decomposed into threads or into multiple processes that communicate through a message passing interface (MPI).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.numThreadsPerMpiProcess" title="abaqus.Job.Job.Job.numThreadsPerMpiProcess"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numThreadsPerMpiProcess</span></code></a></p></td>
+<td><p>An Int specifying the number of threads per MPI process to use for this analysis if parallel processing is available.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.analysis" title="abaqus.Job.Job.Job.analysis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analysis</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.status" title="abaqus.Job.Job.Job.status"><code class="xref py py-obj docutils literal notranslate"><span class="pre">status</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the status of the analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.queue" title="abaqus.Job.Job.Job.queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">queue</span></code></a></p></td>
+<td><p>A String specifying the name of the queue to which to submit the job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.atTime" title="abaqus.Job.Job.Job.atTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">atTime</span></code></a></p></td>
+<td><p>A String specifying the time at which to submit the job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.scratch" title="abaqus.Job.Job.Job.scratch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scratch</span></code></a></p></td>
+<td><p>A String specifying the location of the scratch directory.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.userSubroutine" title="abaqus.Job.Job.Job.userSubroutine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">userSubroutine</span></code></a></p></td>
+<td><p>A String specifying the file containing the user's subroutine definitions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.messages" title="abaqus.Job.Job.Job.messages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Job.MessageArray.MessageArray" title="abaqus.Job.MessageArray.MessageArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageArray</span></code></a> object specifying the messages received during an analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.environment" title="abaqus.Job.Job.Job.environment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">environment</span></code></a></p></td>
+<td><p>A tuple of Strings specifying the environment variables and their values.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.licenseType" title="abaqus.Job.Job.Job.licenseType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">licenseType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of license type being used in the case of the DSLS SimUnit license model.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.kill" title="abaqus.Job.Job.Job.kill"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kill</span></code></a>()</p></td>
+<td><p>This method kills the analysis of a job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.submit" title="abaqus.Job.Job.Job.submit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">submit</span></code></a>([consistencyChecking, datacheckJob, ...])</p></td>
+<td><p>This method submits a job for analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.waitForCompletion" title="abaqus.Job.Job.Job.waitForCompletion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitForCompletion</span></code></a>()</p></td>
+<td><p>This method interrupts the execution of the script until the end of the analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.clearMessage" title="abaqus.Job.Job.Job.clearMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clearMessage</span></code></a>()</p></td>
+<td><p>This method clears <strong>messages</strong> and sets the <strong>status</strong> to NONE.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Job.Job.Job.activateLoadBalancing">
 <span class="sig-name descname"><span class="pre">activateLoadBalancing</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py#L80-L82"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.activateLoadBalancing" title="Permalink to this definition">#</a></dt>
@@ -1008,6 +1198,209 @@ The JobFromInputFile object is derived from the Job object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.getMemoryFromAnalysis" title="abaqus.Job.JobFromInputFile.JobFromInputFile.getMemoryFromAnalysis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMemoryFromAnalysis</span></code></a></p></td>
+<td><p>A Boolean specifying whether to retrieve the recommended memory settings from the last datacheck or analysis run and use those values in subsequent submissions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.analysis" title="abaqus.Job.JobFromInputFile.JobFromInputFile.analysis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analysis</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.status" title="abaqus.Job.JobFromInputFile.JobFromInputFile.status"><code class="xref py py-obj docutils literal notranslate"><span class="pre">status</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the status of the analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.messages" title="abaqus.Job.JobFromInputFile.JobFromInputFile.messages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Job.MessageArray.MessageArray" title="abaqus.Job.MessageArray.MessageArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageArray</span></code></a> object specifying the messages received during an analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.environment" title="abaqus.Job.JobFromInputFile.JobFromInputFile.environment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">environment</span></code></a></p></td>
+<td><p>A tuple of Strings specifying the environment variables and their values.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.type" title="abaqus.Job.JobFromInputFile.JobFromInputFile.type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.queue" title="abaqus.Job.JobFromInputFile.JobFromInputFile.queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">queue</span></code></a></p></td>
+<td><p>A String specifying the name of the queue to which to submit the job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.waitHours" title="abaqus.Job.JobFromInputFile.JobFromInputFile.waitHours"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitHours</span></code></a></p></td>
+<td><p>An Int specifying the number of hours to wait before submitting the job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.waitMinutes" title="abaqus.Job.JobFromInputFile.JobFromInputFile.waitMinutes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitMinutes</span></code></a></p></td>
+<td><p>An Int specifying the number of minutes to wait before submitting the job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.atTime" title="abaqus.Job.JobFromInputFile.JobFromInputFile.atTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">atTime</span></code></a></p></td>
+<td><p>A String specifying the time at which to submit the job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.scratch" title="abaqus.Job.JobFromInputFile.JobFromInputFile.scratch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scratch</span></code></a></p></td>
+<td><p>A String specifying the location of the scratch directory.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.userSubroutine" title="abaqus.Job.JobFromInputFile.JobFromInputFile.userSubroutine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">userSubroutine</span></code></a></p></td>
+<td><p>A String specifying the file containing the user's subroutine definitions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.numCpus" title="abaqus.Job.JobFromInputFile.JobFromInputFile.numCpus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numCpus</span></code></a></p></td>
+<td><p>An Int specifying the number of CPUs to use for this analysis if parallel processing is available.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.memory" title="abaqus.Job.JobFromInputFile.JobFromInputFile.memory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">memory</span></code></a></p></td>
+<td><p>An Int specifying the amount of memory available to Abaqus analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.memoryUnits" title="abaqus.Job.JobFromInputFile.JobFromInputFile.memoryUnits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">memoryUnits</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the units for the amount of memory used in an Abaqus analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.explicitPrecision" title="abaqus.Job.JobFromInputFile.JobFromInputFile.explicitPrecision"><code class="xref py py-obj docutils literal notranslate"><span class="pre">explicitPrecision</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether to use the double precision version of Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.nodalOutputPrecision" title="abaqus.Job.JobFromInputFile.JobFromInputFile.nodalOutputPrecision"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodalOutputPrecision</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the precision of the nodal output written to the output database.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.parallelizationMethodExplicit" title="abaqus.Job.JobFromInputFile.JobFromInputFile.parallelizationMethodExplicit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parallelizationMethodExplicit</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.numDomains" title="abaqus.Job.JobFromInputFile.JobFromInputFile.numDomains"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numDomains</span></code></a></p></td>
+<td><p>An Int specifying the number of domains for parallel execution in Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.activateLoadBalancing" title="abaqus.Job.JobFromInputFile.JobFromInputFile.activateLoadBalancing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">activateLoadBalancing</span></code></a></p></td>
+<td><p>A Boolean specifying whether to activate dyanmic load balancing for jobs running on multiple processors with multiple domains in Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.multiprocessingMode" title="abaqus.Job.JobFromInputFile.JobFromInputFile.multiprocessingMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">multiprocessingMode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether an analysis is decomposed into threads or into multiple processes that communicate through a message passing interface (MPI).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.licenseType" title="abaqus.Job.JobFromInputFile.JobFromInputFile.licenseType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">licenseType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of license type being used in the case of the DSLS SimUnit license model.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Job</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the name of the new job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.type" title="abaqus.Job.JobFromInputFile.JobFromInputFile.type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.waitHours" title="abaqus.Job.JobFromInputFile.JobFromInputFile.waitHours"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitHours</span></code></a></p></td>
+<td><p>An Int specifying the number of hours to wait before submitting the job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.waitMinutes" title="abaqus.Job.JobFromInputFile.JobFromInputFile.waitMinutes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitMinutes</span></code></a></p></td>
+<td><p>An Int specifying the number of minutes to wait before submitting the job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.numCpus" title="abaqus.Job.JobFromInputFile.JobFromInputFile.numCpus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numCpus</span></code></a></p></td>
+<td><p>An Int specifying the number of CPUs to use for this analysis if parallel processing is available.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.memory" title="abaqus.Job.JobFromInputFile.JobFromInputFile.memory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">memory</span></code></a></p></td>
+<td><p>An Int specifying the amount of memory available to Abaqus analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.memoryUnits" title="abaqus.Job.JobFromInputFile.JobFromInputFile.memoryUnits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">memoryUnits</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the units for the amount of memory used in an Abaqus analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.getMemoryFromAnalysis" title="abaqus.Job.JobFromInputFile.JobFromInputFile.getMemoryFromAnalysis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMemoryFromAnalysis</span></code></a></p></td>
+<td><p>A Boolean specifying whether to retrieve the recommended memory settings from the last datacheck or analysis run and use those values in subsequent submissions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.explicitPrecision" title="abaqus.Job.JobFromInputFile.JobFromInputFile.explicitPrecision"><code class="xref py py-obj docutils literal notranslate"><span class="pre">explicitPrecision</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether to use the double precision version of Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.nodalOutputPrecision" title="abaqus.Job.JobFromInputFile.JobFromInputFile.nodalOutputPrecision"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodalOutputPrecision</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the precision of the nodal output written to the output database.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.parallelizationMethodExplicit" title="abaqus.Job.JobFromInputFile.JobFromInputFile.parallelizationMethodExplicit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parallelizationMethodExplicit</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.numDomains" title="abaqus.Job.JobFromInputFile.JobFromInputFile.numDomains"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numDomains</span></code></a></p></td>
+<td><p>An Int specifying the number of domains for parallel execution in Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.activateLoadBalancing" title="abaqus.Job.JobFromInputFile.JobFromInputFile.activateLoadBalancing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">activateLoadBalancing</span></code></a></p></td>
+<td><p>A Boolean specifying whether to activate dyanmic load balancing for jobs running on multiple processors with multiple domains in Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.multiprocessingMode" title="abaqus.Job.JobFromInputFile.JobFromInputFile.multiprocessingMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">multiprocessingMode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether an analysis is decomposed into threads or into multiple processes that communicate through a message passing interface (MPI).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">numThreadsPerMpiProcess</span></code></p></td>
+<td><p>An Int specifying the number of threads per MPI process to use for this analysis if parallel processing is available.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.analysis" title="abaqus.Job.JobFromInputFile.JobFromInputFile.analysis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analysis</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.status" title="abaqus.Job.JobFromInputFile.JobFromInputFile.status"><code class="xref py py-obj docutils literal notranslate"><span class="pre">status</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the status of the analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.queue" title="abaqus.Job.JobFromInputFile.JobFromInputFile.queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">queue</span></code></a></p></td>
+<td><p>A String specifying the name of the queue to which to submit the job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.atTime" title="abaqus.Job.JobFromInputFile.JobFromInputFile.atTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">atTime</span></code></a></p></td>
+<td><p>A String specifying the time at which to submit the job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.scratch" title="abaqus.Job.JobFromInputFile.JobFromInputFile.scratch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scratch</span></code></a></p></td>
+<td><p>A String specifying the location of the scratch directory.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.userSubroutine" title="abaqus.Job.JobFromInputFile.JobFromInputFile.userSubroutine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">userSubroutine</span></code></a></p></td>
+<td><p>A String specifying the file containing the user's subroutine definitions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.messages" title="abaqus.Job.JobFromInputFile.JobFromInputFile.messages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Job.MessageArray.MessageArray" title="abaqus.Job.MessageArray.MessageArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageArray</span></code></a> object specifying the messages received during an analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.environment" title="abaqus.Job.JobFromInputFile.JobFromInputFile.environment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">environment</span></code></a></p></td>
+<td><p>A tuple of Strings specifying the environment variables and their values.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.licenseType" title="abaqus.Job.JobFromInputFile.JobFromInputFile.licenseType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">licenseType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of license type being used in the case of the DSLS SimUnit license model.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, inputFileName[, type, queue, ...])</p></td>
+<td><p>This method creates an analysis job using an input file for the model definition.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.setValues" title="abaqus.Job.JobFromInputFile.JobFromInputFile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([type, queue, waitHours, ...])</p></td>
+<td><p>This method modifies the JobFromInputFile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Job</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kill</span></code>()</p></td>
+<td><p>This method kills the analysis of a job.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">submit</span></code>([consistencyChecking, datacheckJob, ...])</p></td>
+<td><p>This method submits a job for analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitForCompletion</span></code>()</p></td>
+<td><p>This method interrupts the execution of the script until the end of the analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clearMessage</span></code>()</p></td>
+<td><p>This method clears <strong>messages</strong> and sets the <strong>status</strong> to NONE.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.activateLoadBalancing">
 <span class="sig-name descname"><span class="pre">activateLoadBalancing</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py#L116-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.activateLoadBalancing" title="Permalink to this definition">#</a></dt>
@@ -1288,6 +1681,26 @@ option).</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Message.Message.type" title="abaqus.Job.Message.Message.type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of message.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Message.Message.data" title="abaqus.Job.Message.Message.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a></p></td>
+<td><p>A Dictionary object specifying the data returned by the analysis product.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Job.Message.Message.data">
 <span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Message.py#L4-L49"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Message.Message.data" title="Permalink to this definition">#</a></dt>
@@ -1349,6 +1762,135 @@ DataObject.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.MessageArray.MessageArray.findAt" title="abaqus.Job.MessageArray.MessageArray.findAt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">findAt</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__repr__</span></code>(/)</p></td>
+<td><p>Return repr(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getattribute__</span></code>(name, /)</p></td>
+<td><p>Return getattr(self, name).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__lt__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__le__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__eq__</span></code>(value, /)</p></td>
+<td><p>Return self==value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ne__</span></code>(value, /)</p></td>
+<td><p>Return self!=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__gt__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ge__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iter__</span></code>(/)</p></td>
+<td><p>Implement iter(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code>(/)</p></td>
+<td><p>Return len(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code></p></td>
+<td><p>x.__getitem__(y) &lt;==&gt; x[y]</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__setitem__</span></code>(key, value, /)</p></td>
+<td><p>Set self[key] to value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__delitem__</span></code>(key, /)</p></td>
+<td><p>Delete self[key].</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__add__</span></code>(value, /)</p></td>
+<td><p>Return self+value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__mul__</span></code>(value, /)</p></td>
+<td><p>Return self*value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__rmul__</span></code>(value, /)</p></td>
+<td><p>Return value*self.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__contains__</span></code>(key, /)</p></td>
+<td><p>Return key in self.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iadd__</span></code>(value, /)</p></td>
+<td><p>Implement self+=value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__imul__</span></code>(value, /)</p></td>
+<td><p>Implement self*=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__reversed__</span></code>(/)</p></td>
+<td><p>Return a reverse iterator over the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__sizeof__</span></code>(/)</p></td>
+<td><p>Return the size of the list in memory, in bytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code>(/)</p></td>
+<td><p>Remove all items from list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code>(/)</p></td>
+<td><p>Return a shallow copy of the list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">append</span></code>(object, /)</p></td>
+<td><p>Append object to the end of the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert</span></code>(index, object, /)</p></td>
+<td><p>Insert object before index.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">extend</span></code>(iterable, /)</p></td>
+<td><p>Extend list by appending elements from the iterable.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code>([index])</p></td>
+<td><p>Remove and return item at index (default last).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove</span></code>(value, /)</p></td>
+<td><p>Remove first occurrence of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">index</span></code>(value[, start, stop])</p></td>
+<td><p>Return first index of value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">count</span></code>(value, /)</p></td>
+<td><p>Return number of occurrences of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reverse</span></code>(/)</p></td>
+<td><p>Reverse <em>IN PLACE</em>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sort</span></code>(*[, key, reverse])</p></td>
+<td><p>Sort the list in ascending order and return None.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__class_getitem__</span></code></p></td>
+<td><p>See PEP 585</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Job.MessageArray.MessageArray.findAt">
 <span class="sig-name descname"><span class="pre">findAt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/MessageArray.py#L5-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.MessageArray.MessageArray.findAt" title="Permalink to this definition">#</a></dt>
@@ -1399,6 +1941,230 @@ The ModelJob object is derived from the Job object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.name" title="abaqus.Job.ModelJob.ModelJob.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the name of the new job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.echoPrint" title="abaqus.Job.ModelJob.ModelJob.echoPrint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">echoPrint</span></code></a></p></td>
+<td><p>A Boolean specifying whether an echo of the input data is printed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.contactPrint" title="abaqus.Job.ModelJob.ModelJob.contactPrint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactPrint</span></code></a></p></td>
+<td><p>A Boolean specifying whether contact constraint data are printed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.modelPrint" title="abaqus.Job.ModelJob.ModelJob.modelPrint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">modelPrint</span></code></a></p></td>
+<td><p>A Boolean specifying whether model definition data are printed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.historyPrint" title="abaqus.Job.ModelJob.ModelJob.historyPrint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">historyPrint</span></code></a></p></td>
+<td><p>A Boolean specifying whether history data are printed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.model" title="abaqus.Job.ModelJob.ModelJob.model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">model</span></code></a></p></td>
+<td><p>A String specifying the name of the model to be analyzed or a Model object specifying the model to be analyzed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.description" title="abaqus.Job.ModelJob.ModelJob.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
+<td><p>A String specifying a description of the job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.type" title="abaqus.Job.ModelJob.ModelJob.type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.waitHours" title="abaqus.Job.ModelJob.ModelJob.waitHours"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitHours</span></code></a></p></td>
+<td><p>An Int specifying the number of hours to wait before submitting the job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.waitMinutes" title="abaqus.Job.ModelJob.ModelJob.waitMinutes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitMinutes</span></code></a></p></td>
+<td><p>An Int specifying the number of minutes to wait before submitting the job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.numCpus" title="abaqus.Job.ModelJob.ModelJob.numCpus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numCpus</span></code></a></p></td>
+<td><p>An Int specifying the number of CPUs to use for this analysis if parallel processing is available.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.memory" title="abaqus.Job.ModelJob.ModelJob.memory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">memory</span></code></a></p></td>
+<td><p>An Int specifying the amount of memory available to Abaqus analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.memoryUnits" title="abaqus.Job.ModelJob.ModelJob.memoryUnits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">memoryUnits</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the units for the amount of memory used in an Abaqus analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.getMemoryFromAnalysis" title="abaqus.Job.ModelJob.ModelJob.getMemoryFromAnalysis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMemoryFromAnalysis</span></code></a></p></td>
+<td><p>A Boolean specifying whether to retrieve the recommended memory settings from the last datacheck or analysis run and use those values in subsequent submissions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.explicitPrecision" title="abaqus.Job.ModelJob.ModelJob.explicitPrecision"><code class="xref py py-obj docutils literal notranslate"><span class="pre">explicitPrecision</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether to use the double precision version of Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.nodalOutputPrecision" title="abaqus.Job.ModelJob.ModelJob.nodalOutputPrecision"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodalOutputPrecision</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the precision of the nodal output written to the output database.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.parallelizationMethodExplicit" title="abaqus.Job.ModelJob.ModelJob.parallelizationMethodExplicit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parallelizationMethodExplicit</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.numDomains" title="abaqus.Job.ModelJob.ModelJob.numDomains"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numDomains</span></code></a></p></td>
+<td><p>An Int specifying the number of domains for parallel execution in Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.activateLoadBalancing" title="abaqus.Job.ModelJob.ModelJob.activateLoadBalancing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">activateLoadBalancing</span></code></a></p></td>
+<td><p>A Boolean specifying whether to activate dyanmic load balancing for jobs running on multiple processors with multiple domains in Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.multiprocessingMode" title="abaqus.Job.ModelJob.ModelJob.multiprocessingMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">multiprocessingMode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether an analysis is decomposed into threads or into multiple processes that communicate through a message passing interface (MPI).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.analysis" title="abaqus.Job.ModelJob.ModelJob.analysis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analysis</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.status" title="abaqus.Job.ModelJob.ModelJob.status"><code class="xref py py-obj docutils literal notranslate"><span class="pre">status</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the status of the analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.queue" title="abaqus.Job.ModelJob.ModelJob.queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">queue</span></code></a></p></td>
+<td><p>A String specifying the name of the queue to which to submit the job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.atTime" title="abaqus.Job.ModelJob.ModelJob.atTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">atTime</span></code></a></p></td>
+<td><p>A String specifying the time at which to submit the job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.scratch" title="abaqus.Job.ModelJob.ModelJob.scratch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scratch</span></code></a></p></td>
+<td><p>A String specifying the location of the scratch directory.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.userSubroutine" title="abaqus.Job.ModelJob.ModelJob.userSubroutine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">userSubroutine</span></code></a></p></td>
+<td><p>A String specifying the file containing the user's subroutine definitions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.messages" title="abaqus.Job.ModelJob.ModelJob.messages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Job.MessageArray.MessageArray" title="abaqus.Job.MessageArray.MessageArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageArray</span></code></a> object specifying the messages received during an analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.environment" title="abaqus.Job.ModelJob.ModelJob.environment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">environment</span></code></a></p></td>
+<td><p>A tuple of Strings specifying the environment variables and their values.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Job</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.name" title="abaqus.Job.ModelJob.ModelJob.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the name of the new job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.type" title="abaqus.Job.ModelJob.ModelJob.type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.waitHours" title="abaqus.Job.ModelJob.ModelJob.waitHours"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitHours</span></code></a></p></td>
+<td><p>An Int specifying the number of hours to wait before submitting the job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.waitMinutes" title="abaqus.Job.ModelJob.ModelJob.waitMinutes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitMinutes</span></code></a></p></td>
+<td><p>An Int specifying the number of minutes to wait before submitting the job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.numCpus" title="abaqus.Job.ModelJob.ModelJob.numCpus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numCpus</span></code></a></p></td>
+<td><p>An Int specifying the number of CPUs to use for this analysis if parallel processing is available.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.memory" title="abaqus.Job.ModelJob.ModelJob.memory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">memory</span></code></a></p></td>
+<td><p>An Int specifying the amount of memory available to Abaqus analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.memoryUnits" title="abaqus.Job.ModelJob.ModelJob.memoryUnits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">memoryUnits</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the units for the amount of memory used in an Abaqus analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.getMemoryFromAnalysis" title="abaqus.Job.ModelJob.ModelJob.getMemoryFromAnalysis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMemoryFromAnalysis</span></code></a></p></td>
+<td><p>A Boolean specifying whether to retrieve the recommended memory settings from the last datacheck or analysis run and use those values in subsequent submissions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.explicitPrecision" title="abaqus.Job.ModelJob.ModelJob.explicitPrecision"><code class="xref py py-obj docutils literal notranslate"><span class="pre">explicitPrecision</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether to use the double precision version of Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.nodalOutputPrecision" title="abaqus.Job.ModelJob.ModelJob.nodalOutputPrecision"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodalOutputPrecision</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the precision of the nodal output written to the output database.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.parallelizationMethodExplicit" title="abaqus.Job.ModelJob.ModelJob.parallelizationMethodExplicit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parallelizationMethodExplicit</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.numDomains" title="abaqus.Job.ModelJob.ModelJob.numDomains"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numDomains</span></code></a></p></td>
+<td><p>An Int specifying the number of domains for parallel execution in Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.activateLoadBalancing" title="abaqus.Job.ModelJob.ModelJob.activateLoadBalancing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">activateLoadBalancing</span></code></a></p></td>
+<td><p>A Boolean specifying whether to activate dyanmic load balancing for jobs running on multiple processors with multiple domains in Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.multiprocessingMode" title="abaqus.Job.ModelJob.ModelJob.multiprocessingMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">multiprocessingMode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether an analysis is decomposed into threads or into multiple processes that communicate through a message passing interface (MPI).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">numThreadsPerMpiProcess</span></code></p></td>
+<td><p>An Int specifying the number of threads per MPI process to use for this analysis if parallel processing is available.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.analysis" title="abaqus.Job.ModelJob.ModelJob.analysis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analysis</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or Abaqus/Explicit.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.status" title="abaqus.Job.ModelJob.ModelJob.status"><code class="xref py py-obj docutils literal notranslate"><span class="pre">status</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the status of the analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.queue" title="abaqus.Job.ModelJob.ModelJob.queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">queue</span></code></a></p></td>
+<td><p>A String specifying the name of the queue to which to submit the job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.atTime" title="abaqus.Job.ModelJob.ModelJob.atTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">atTime</span></code></a></p></td>
+<td><p>A String specifying the time at which to submit the job.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.scratch" title="abaqus.Job.ModelJob.ModelJob.scratch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scratch</span></code></a></p></td>
+<td><p>A String specifying the location of the scratch directory.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.userSubroutine" title="abaqus.Job.ModelJob.ModelJob.userSubroutine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">userSubroutine</span></code></a></p></td>
+<td><p>A String specifying the file containing the user's subroutine definitions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.messages" title="abaqus.Job.ModelJob.ModelJob.messages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Job.MessageArray.MessageArray" title="abaqus.Job.MessageArray.MessageArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageArray</span></code></a> object specifying the messages received during an analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.environment" title="abaqus.Job.ModelJob.ModelJob.environment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">environment</span></code></a></p></td>
+<td><p>A tuple of Strings specifying the environment variables and their values.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">licenseType</span></code></p></td>
+<td><p>A SymbolicConstant specifying the type of license type being used in the case of the DSLS SimUnit license model.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, model[, description, type, ...])</p></td>
+<td><p>This method creates an analysis job using a model on a model database (MDB) for the model definition.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.writeInput" title="abaqus.Job.ModelJob.ModelJob.writeInput"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeInput</span></code></a>([consistencyChecking])</p></td>
+<td><p>This method writes an input file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.setValues" title="abaqus.Job.ModelJob.ModelJob.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the ModelJob object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Job</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kill</span></code>()</p></td>
+<td><p>This method kills the analysis of a job.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">submit</span></code>([consistencyChecking, datacheckJob, ...])</p></td>
+<td><p>This method submits a job for analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitForCompletion</span></code>()</p></td>
+<td><p>This method interrupts the execution of the script until the end of the analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clearMessage</span></code>()</p></td>
+<td><p>This method clears <strong>messages</strong> and sets the <strong>status</strong> to NONE.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.activateLoadBalancing">
 <span class="sig-name descname"><span class="pre">activateLoadBalancing</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py#L98-L100"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.activateLoadBalancing" title="Permalink to this definition">#</a></dt>
@@ -1678,6 +2444,72 @@ defined using an optimization task.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.description" title="abaqus.Job.OptimizationProcess.OptimizationProcess.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
+<td><p>A String specifying a description of the optimization process.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.maxDesignCycle" title="abaqus.Job.OptimizationProcess.OptimizationProcess.maxDesignCycle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maxDesignCycle</span></code></a></p></td>
+<td><p>An Int specifying the maximum number of allowed design cycles for the optimization process.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.dataSaveFrequency" title="abaqus.Job.OptimizationProcess.OptimizationProcess.dataSaveFrequency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dataSaveFrequency</span></code></a></p></td>
+<td><p>An Enum specifying whether Abaqus should save every iteration file in the optimization process or a selection of iteration files saved at a user-specified frequency.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.saveInitial" title="abaqus.Job.OptimizationProcess.OptimizationProcess.saveInitial"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveInitial</span></code></a></p></td>
+<td><p>A Boolean specifying whether the initial cycle should be saved when <strong>dataSaveFrequency</strong> is OPT_DATASAVE_SPECIFY_CYCLE.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.saveFirst" title="abaqus.Job.OptimizationProcess.OptimizationProcess.saveFirst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveFirst</span></code></a></p></td>
+<td><p>A Boolean specifying whether the first cycle should be saved when <strong>dataSaveFrequency</strong> is OPT_DATASAVE_SPECIFY_CYCLE.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.saveLast" title="abaqus.Job.OptimizationProcess.OptimizationProcess.saveLast"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveLast</span></code></a></p></td>
+<td><p>A Boolean specifying whether the last cycle should be saved when <strong>dataSaveFrequency</strong> is OPT_DATASAVE_SPECIFY_CYCLE.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.saveEvery" title="abaqus.Job.OptimizationProcess.OptimizationProcess.saveEvery"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveEvery</span></code></a></p></td>
+<td><p>An Int specifying every nth cycle iterations to be saved when <strong>dataSaveFrequency</strong> is OPT_DATASAVE_SPECIFY_CYCLE.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, model, task, prototypeJob[, ...])</p></td>
+<td><p>This method creates an OptimizationProcess object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.writeParAndInputFiles" title="abaqus.Job.OptimizationProcess.OptimizationProcess.writeParAndInputFiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeParAndInputFiles</span></code></a>()</p></td>
+<td><p>This method allows you to write par and input files for an optimization task.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.submit" title="abaqus.Job.OptimizationProcess.OptimizationProcess.submit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">submit</span></code></a>([validate])</p></td>
+<td><p>This method submits an optimization process.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.waitForCompletion" title="abaqus.Job.OptimizationProcess.OptimizationProcess.waitForCompletion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitForCompletion</span></code></a>()</p></td>
+<td><p>This method interrupts the execution of the script until the end of all the analyses.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.extract" title="abaqus.Job.OptimizationProcess.OptimizationProcess.extract"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract</span></code></a>(outputFileName, designCycle[, ...])</p></td>
+<td><p>This method extracts a surface mesh from the optimized model.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.setValues" title="abaqus.Job.OptimizationProcess.OptimizationProcess.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([description, maxDesignCycle, ...])</p></td>
+<td><p>This method modifies the OptimizationProcess object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.dataSaveFrequency">
 <span class="sig-name descname"><span class="pre">dataSaveFrequency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'OPT_DATASAVE_SPECIFY_CYCLE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/OptimizationProcess.py#L38-L44"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.dataSaveFrequency" title="Permalink to this definition">#</a></dt>

@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -458,6 +459,359 @@
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">attachedToGui</span></code></p></td>
+<td><p>A Boolean specifying whether an Abaqus interactive session is running.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">replayInProgress</span></code></p></td>
+<td><p>A Boolean specifying whether Abaqus is executing a replay file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryFootprint</span></code></p></td>
+<td><p>A Float specifying the memory usage value for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryMaxFootprint</span></code></p></td>
+<td><p>A Float specifying the maximum value for the memory usage for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryLimit</span></code></p></td>
+<td><p>A Float specifying the limit for the memory use for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">colors</span></code></p></td>
+<td><p>A repository of Color objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">journalOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../session.html#abaqus.Session.JournalOptions.JournalOptions" title="abaqus.Session.JournalOptions.JournalOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">JournalOptions</span></code></a> object specifying how to record selection of geometry in the journal and replay files.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">memoryReductionOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../session.html#abaqus.Session.MemoryReductionOptions.MemoryReductionOptions" title="abaqus.Session.MemoryReductionOptions.MemoryReductionOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryReductionOptions</span></code></a> object specifying options for running in reduced memory mode.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeQuery</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.NodeQuery.NodeQuery" title="abaqus.PathAndProbe.NodeQuery.NodeQuery"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeQuery</span></code></a> object specifying nodes and their coordinates in a path.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sketcherOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../mdb/model/sketcher.html#abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions" title="abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketcherOptions</span></code></a> object specifying common options for all sketches.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewerOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.ViewerOptions.ViewerOptions" title="abaqus.OdbDisplay.ViewerOptions.ViewerOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewerOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">animationOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="animation.html#abaqus.Animation.AnimationOptions.AnimationOptions" title="abaqus.Animation.AnimationOptions.AnimationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnimationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">aviOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="animation.html#abaqus.Animation.AVIOptions.AVIOptions" title="abaqus.Animation.AVIOptions.AVIOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AVIOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageAnimationOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="animation.html#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions" title="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageAnimation</span></code></p></td>
+<td><p>An <a class="reference internal" href="animation.html#abaqus.Animation.ImageAnimation.ImageAnimation" title="abaqus.Animation.ImageAnimation.ImageAnimation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">quickTimeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="animation.html#abaqus.Animation.QuickTimeOptions.QuickTimeOptions" title="abaqus.Animation.QuickTimeOptions.QuickTimeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuickTimeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewports</span></code></p></td>
+<td><p>A repository of Viewport objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">customData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultFieldReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultFreeBodyReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodyReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbs</span></code></p></td>
+<td><p>A repository of Odb objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">scratchOdbs</span></code></p></td>
+<td><p>A repository of ScratchOdb objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultOdbDisplay</span></code></p></td>
+<td><p>A <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultOdbDisplay</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultPlot</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.DefaultPlot.DefaultPlot" title="abaqus.XY.DefaultPlot.DefaultPlot"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultPlot</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultChartOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.DefaultChartOptions.DefaultChartOptions" title="abaqus.XY.DefaultChartOptions.DefaultChartOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultChartOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbData</span></code></p></td>
+<td><p>A repository of OdbData objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mdbData</span></code></p></td>
+<td><p>A repository of MdbData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">paths</span></code></p></td>
+<td><p>A repository of Path objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodies</span></code></p></td>
+<td><p>A repository of FreeBody objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">streams</span></code></p></td>
+<td><p>A repository of Stream objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">spectrums</span></code></p></td>
+<td><p>A repository of Spectrum objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentProbeValues</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues" title="abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues"><code class="xref py py-class docutils literal notranslate"><span class="pre">CurrentProbeValues</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultProbeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeReport</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeReport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultProbeReport</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeReport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectedProbeValues</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues" title="abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectedProbeValues</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PrintOptions.PrintOptions" title="abaqus.Print.PrintOptions.PrintOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PrintOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">epsOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="print.html#abaqus.Print.EpsOptions.EpsOptions" title="abaqus.Print.EpsOptions.EpsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">EpsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pageSetupOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PageSetupOptions.PageSetupOptions" title="abaqus.Print.PageSetupOptions.PageSetupOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PageSetupOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pngOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PngOptions.PngOptions" title="abaqus.Print.PngOptions.PngOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PngOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">psOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PsOptions.PsOptions" title="abaqus.Print.PsOptions.PsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">svgOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.SvgOptions.SvgOptions" title="abaqus.Print.SvgOptions.SvgOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">SvgOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tiffOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../mdb/model/predefined.html#abaqus.PredefinedField.TiffOptions.TiffOptions" title="abaqus.PredefinedField.TiffOptions.TiffOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">TiffOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoColors</span></code></p></td>
+<td><p>An <a class="reference internal" href="../session.html#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoColors</span></code></a> object specifying the color palette to be used for color coding.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyColors</span></code></p></td>
+<td><p>An <a class="reference internal" href="../session.html#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoColors</span></code></a> object specifying the color palette to be used forXYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyDataObjects</span></code></p></td>
+<td><p>A repository of XYData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">curves</span></code></p></td>
+<td><p>A repository of XYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyPlots</span></code></p></td>
+<td><p>A repository of XYPlot objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">charts</span></code></p></td>
+<td><p>A repository of Chart objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultXYReportOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyReportOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">views</span></code></p></td>
+<td><p>A repository of View objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">networkDatabaseConnectors</span></code></p></td>
+<td><p>A repository of NetworkDatabaseConnector objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayGroups</span></code></p></td>
+<td><p>A repository of DisplayGroup objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsInfo</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo" title="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsInfo</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultGraphicsOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultViewportAnnotationOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions" title="abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportAnnotationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">queues</span></code></p></td>
+<td><p>A repository of Queue objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentViewportName</span></code></p></td>
+<td><p>A String specifying the name of the current viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sessionState</span></code></p></td>
+<td><p>A Dictionary object specifying the viewports and their associated models.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">images</span></code></p></td>
+<td><p>A repository of Image objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">movies</span></code></p></td>
+<td><p>A repository of Movie objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultLightOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.LightOptions.LightOptions" title="abaqus.DisplayOptions.LightOptions.LightOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">LightOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawingArea</span></code></p></td>
+<td><p>A <a class="reference internal" href="canvas.html#abaqus.Canvas.DrawingArea.DrawingArea" title="abaqus.Canvas.DrawingArea.DrawingArea"><code class="xref py py-class docutils literal notranslate"><span class="pre">DrawingArea</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultMesherOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../mdb/model/mesh.html#abaqus.Mesh.MesherOptions.MesherOptions" title="abaqus.Mesh.MesherOptions.MesherOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MesherOptions</span></code></a> object specifying how to control default settings in the Mesh module.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawings</span></code></p></td>
+<td><p>A repository of Drawing objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYSession.XYSession.AreaStyle" title="abaqus.XY.XYSession.XYSession.AreaStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AreaStyle</span></code></a>([color, fill, style])</p></td>
+<td><p>This method creates an AreaStyle.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYSession.XYSession.LineStyle" title="abaqus.XY.XYSession.XYSession.LineStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LineStyle</span></code></a>([color, show, style, thickness])</p></td>
+<td><p>This method creates a LineStyle.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYSession.XYSession.QuantityType" title="abaqus.XY.XYSession.XYSession.QuantityType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuantityType</span></code></a>([label, type])</p></td>
+<td><p>This method creates a QuantityType object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYSession.XYSession.SymbolStyle" title="abaqus.XY.XYSession.XYSession.SymbolStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolStyle</span></code></a>([color, show, marker, size])</p></td>
+<td><p>This method creates a SymbolStyle object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYSession.XYSession.TextStyle" title="abaqus.XY.XYSession.XYSession.TextStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TextStyle</span></code></a>([color, show, font, rotationAngle])</p></td>
+<td><p>This method creates a TextStyle.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYSession.XYSession.XYData" title="abaqus.XY.XYSession.XYSession.XYData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYSession.XYSession.XYDataFromFile" title="abaqus.XY.XYSession.XYSession.XYDataFromFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYDataFromFile</span></code></a>(fileName[, name, ...])</p></td>
+<td><p>This method creates an XYData object from data in an ASCII file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYSession.XYSession.XYDataFromHistory" title="abaqus.XY.XYSession.XYSession.XYDataFromHistory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYDataFromHistory</span></code></a>(odb, outputVariableName, steps)</p></td>
+<td><p>This method creates an XYData object by reading history data from an Odb object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYSession.XYSession.xyDataListFromField" title="abaqus.XY.XYSession.XYSession.xyDataListFromField"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyDataListFromField</span></code></a>(odb, outputPosition, ...)</p></td>
+<td><p>This method creates a list of XYData objects by reading field data from an Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYSession.XYSession.XYDataFromFreeBody" title="abaqus.XY.XYSession.XYSession.XYDataFromFreeBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYDataFromFreeBody</span></code></a>(odb[, force, moment, ...])</p></td>
+<td><p>This method creates a list of XYData objects by computing free body data from an Odb object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYSession.XYSession.XYDataFromPath" title="abaqus.XY.XYSession.XYSession.XYDataFromPath"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYDataFromPath</span></code></a>(path, name, ...[, viewport, ...])</p></td>
+<td><p>This method creates an XYData object from path information.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">XYSessionBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">linearizeStress</span></code>(name, path, startPoint, ...)</p></td>
+<td><p>This method is used to perform stress linearization along a defined stress line.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setPathTolerance</span></code>([tolerance])</p></td>
+<td><p>This method is used to set the <strong>tolerance</strong> to be used when creating XYData objects by extracting results along Path objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPathTolerance</span></code>()</p></td>
+<td><p>This method is used to get the <strong>tolerance</strong> used when creating XYData objects by extracting results along Path objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setLimitForXYDataPlots</span></code>([limit])</p></td>
+<td><p>This method is used to set the <strong>limit</strong> for number of XY data objects while creating XYData from field output.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getLimitForXYDataPlots</span></code>()</p></td>
+<td><p>This method is used to get the <strong>limit</strong> for number of XY data objects while creating XYData from field output.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>([kernelMemoryLimit])</p></td>
+<td><p>This method modifies the Session object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableCADConnection</span></code>(CADName[, portNum])</p></td>
+<td><p>This method enables the Abaqus/CAE listening port for the specified <strong>CAD</strong> system.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isCADConnectionEnabled</span></code>()</p></td>
+<td><p>This method checks the status of CAD Connection.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableCADConnection</span></code>(CADName)</p></td>
+<td><p>This method disables an associative import CAD connection that was enabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableParameterUpdate</span></code>(CADName, CADVersion[, ...])</p></td>
+<td><p>This method enables parameter updates for ProE and NX by establishing a connection with the listening port previously setup by the CAD application.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setCADPortNumber</span></code>(CADName, Port)</p></td>
+<td><p>This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a connection with the listening port previously setup by the CAD application.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">updateCADParameters</span></code>(modelName, CADName, ...)</p></td>
+<td><p>This method updates the parameters for the specified model using the specified parameter file.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableParameterUpdate</span></code>(CADName)</p></td>
+<td><p>This method disables an associative CAD connection using parameters.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToFile</span></code>(fileName[, format, ...])</p></td>
+<td><p>This method prints canvas objects to a file using the attributes stored in the PrintOptions object and the appropriate format options object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToPrinter</span></code>([printCommand, numCopies, ...])</p></td>
+<td><p>This method prints canvas objects to a Windows printer or to a PostScript printer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveOptions</span></code>(directory)</p></td>
+<td><p>This method saves your customized display settings.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeVrmlFile</span></code>(fileName[, format, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">write3DXMLFile</span></code>(fileName[, format, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeOBJFile</span></code>(fileName[, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">openOdb</span></code>(name, *args, **kwargs)</p></td>
+<td><p>This method opens an existing output database (.odb) file and creates a new Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">exit</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.XYSession.XYSession.AreaStyle">
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AreaStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fill</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLID'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYSession.py#L20-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYSession.XYSession.AreaStyle" title="Permalink to this definition">#</a></dt>
@@ -1183,6 +1537,316 @@ Session object, see Session object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">attachedToGui</span></code></p></td>
+<td><p>A Boolean specifying whether an Abaqus interactive session is running.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">replayInProgress</span></code></p></td>
+<td><p>A Boolean specifying whether Abaqus is executing a replay file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryFootprint</span></code></p></td>
+<td><p>A Float specifying the memory usage value for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryMaxFootprint</span></code></p></td>
+<td><p>A Float specifying the maximum value for the memory usage for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryLimit</span></code></p></td>
+<td><p>A Float specifying the limit for the memory use for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">colors</span></code></p></td>
+<td><p>A repository of Color objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">journalOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../session.html#abaqus.Session.JournalOptions.JournalOptions" title="abaqus.Session.JournalOptions.JournalOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">JournalOptions</span></code></a> object specifying how to record selection of geometry in the journal and replay files.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">memoryReductionOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../session.html#abaqus.Session.MemoryReductionOptions.MemoryReductionOptions" title="abaqus.Session.MemoryReductionOptions.MemoryReductionOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryReductionOptions</span></code></a> object specifying options for running in reduced memory mode.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeQuery</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.NodeQuery.NodeQuery" title="abaqus.PathAndProbe.NodeQuery.NodeQuery"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeQuery</span></code></a> object specifying nodes and their coordinates in a path.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sketcherOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../mdb/model/sketcher.html#abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions" title="abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketcherOptions</span></code></a> object specifying common options for all sketches.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewerOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.ViewerOptions.ViewerOptions" title="abaqus.OdbDisplay.ViewerOptions.ViewerOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewerOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">animationOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="animation.html#abaqus.Animation.AnimationOptions.AnimationOptions" title="abaqus.Animation.AnimationOptions.AnimationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnimationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">aviOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="animation.html#abaqus.Animation.AVIOptions.AVIOptions" title="abaqus.Animation.AVIOptions.AVIOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AVIOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageAnimationOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="animation.html#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions" title="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageAnimation</span></code></p></td>
+<td><p>An <a class="reference internal" href="animation.html#abaqus.Animation.ImageAnimation.ImageAnimation" title="abaqus.Animation.ImageAnimation.ImageAnimation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">quickTimeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="animation.html#abaqus.Animation.QuickTimeOptions.QuickTimeOptions" title="abaqus.Animation.QuickTimeOptions.QuickTimeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuickTimeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewports</span></code></p></td>
+<td><p>A repository of Viewport objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">customData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultFieldReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultFreeBodyReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodyReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbs</span></code></p></td>
+<td><p>A repository of Odb objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">scratchOdbs</span></code></p></td>
+<td><p>A repository of ScratchOdb objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultOdbDisplay</span></code></p></td>
+<td><p>A <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultOdbDisplay</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultPlot</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.DefaultPlot.DefaultPlot" title="abaqus.XY.DefaultPlot.DefaultPlot"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultPlot</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultChartOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.DefaultChartOptions.DefaultChartOptions" title="abaqus.XY.DefaultChartOptions.DefaultChartOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultChartOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbData</span></code></p></td>
+<td><p>A repository of OdbData objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mdbData</span></code></p></td>
+<td><p>A repository of MdbData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">paths</span></code></p></td>
+<td><p>A repository of Path objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodies</span></code></p></td>
+<td><p>A repository of FreeBody objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">streams</span></code></p></td>
+<td><p>A repository of Stream objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">spectrums</span></code></p></td>
+<td><p>A repository of Spectrum objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentProbeValues</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues" title="abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues"><code class="xref py py-class docutils literal notranslate"><span class="pre">CurrentProbeValues</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultProbeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeReport</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeReport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultProbeReport</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeReport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectedProbeValues</span></code></p></td>
+<td><p>A <a class="reference internal" href="path.html#abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues" title="abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectedProbeValues</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PrintOptions.PrintOptions" title="abaqus.Print.PrintOptions.PrintOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PrintOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">epsOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="print.html#abaqus.Print.EpsOptions.EpsOptions" title="abaqus.Print.EpsOptions.EpsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">EpsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pageSetupOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PageSetupOptions.PageSetupOptions" title="abaqus.Print.PageSetupOptions.PageSetupOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PageSetupOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pngOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PngOptions.PngOptions" title="abaqus.Print.PngOptions.PngOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PngOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">psOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PsOptions.PsOptions" title="abaqus.Print.PsOptions.PsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">svgOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.SvgOptions.SvgOptions" title="abaqus.Print.SvgOptions.SvgOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">SvgOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tiffOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../mdb/model/predefined.html#abaqus.PredefinedField.TiffOptions.TiffOptions" title="abaqus.PredefinedField.TiffOptions.TiffOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">TiffOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoColors</span></code></p></td>
+<td><p>An <a class="reference internal" href="../session.html#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoColors</span></code></a> object specifying the color palette to be used for color coding.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyColors</span></code></p></td>
+<td><p>An <a class="reference internal" href="../session.html#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoColors</span></code></a> object specifying the color palette to be used forXYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyDataObjects</span></code></p></td>
+<td><p>A repository of XYData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">curves</span></code></p></td>
+<td><p>A repository of XYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyPlots</span></code></p></td>
+<td><p>A repository of XYPlot objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">charts</span></code></p></td>
+<td><p>A repository of Chart objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultXYReportOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyReportOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">views</span></code></p></td>
+<td><p>A repository of View objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">networkDatabaseConnectors</span></code></p></td>
+<td><p>A repository of NetworkDatabaseConnector objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayGroups</span></code></p></td>
+<td><p>A repository of DisplayGroup objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsInfo</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo" title="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsInfo</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultGraphicsOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultViewportAnnotationOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions" title="abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportAnnotationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">queues</span></code></p></td>
+<td><p>A repository of Queue objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentViewportName</span></code></p></td>
+<td><p>A String specifying the name of the current viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sessionState</span></code></p></td>
+<td><p>A Dictionary object specifying the viewports and their associated models.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">images</span></code></p></td>
+<td><p>A repository of Image objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">movies</span></code></p></td>
+<td><p>A repository of Movie objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultLightOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.LightOptions.LightOptions" title="abaqus.DisplayOptions.LightOptions.LightOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">LightOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawingArea</span></code></p></td>
+<td><p>A <a class="reference internal" href="canvas.html#abaqus.Canvas.DrawingArea.DrawingArea" title="abaqus.Canvas.DrawingArea.DrawingArea"><code class="xref py py-class docutils literal notranslate"><span class="pre">DrawingArea</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultMesherOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../mdb/model/mesh.html#abaqus.Mesh.MesherOptions.MesherOptions" title="abaqus.Mesh.MesherOptions.MesherOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MesherOptions</span></code></a> object specifying how to control default settings in the Mesh module.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawings</span></code></p></td>
+<td><p>A repository of Drawing objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress" title="abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">linearizeStress</span></code></a>(name, path, startPoint, ...)</p></td>
+<td><p>This method is used to perform stress linearization along a defined stress line.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYSessionBase.XYSessionBase.setPathTolerance" title="abaqus.XY.XYSessionBase.XYSessionBase.setPathTolerance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setPathTolerance</span></code></a>([tolerance])</p></td>
+<td><p>This method is used to set the <strong>tolerance</strong> to be used when creating XYData objects by extracting results along Path objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYSessionBase.XYSessionBase.getPathTolerance" title="abaqus.XY.XYSessionBase.XYSessionBase.getPathTolerance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPathTolerance</span></code></a>()</p></td>
+<td><p>This method is used to get the <strong>tolerance</strong> used when creating XYData objects by extracting results along Path objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYSessionBase.XYSessionBase.setLimitForXYDataPlots" title="abaqus.XY.XYSessionBase.XYSessionBase.setLimitForXYDataPlots"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setLimitForXYDataPlots</span></code></a>([limit])</p></td>
+<td><p>This method is used to set the <strong>limit</strong> for number of XY data objects while creating XYData from field output.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYSessionBase.XYSessionBase.getLimitForXYDataPlots" title="abaqus.XY.XYSessionBase.XYSessionBase.getLimitForXYDataPlots"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getLimitForXYDataPlots</span></code></a>()</p></td>
+<td><p>This method is used to get the <strong>limit</strong> for number of XY data objects while creating XYData from field output.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>([kernelMemoryLimit])</p></td>
+<td><p>This method modifies the Session object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableCADConnection</span></code>(CADName[, portNum])</p></td>
+<td><p>This method enables the Abaqus/CAE listening port for the specified <strong>CAD</strong> system.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isCADConnectionEnabled</span></code>()</p></td>
+<td><p>This method checks the status of CAD Connection.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableCADConnection</span></code>(CADName)</p></td>
+<td><p>This method disables an associative import CAD connection that was enabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableParameterUpdate</span></code>(CADName, CADVersion[, ...])</p></td>
+<td><p>This method enables parameter updates for ProE and NX by establishing a connection with the listening port previously setup by the CAD application.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setCADPortNumber</span></code>(CADName, Port)</p></td>
+<td><p>This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a connection with the listening port previously setup by the CAD application.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">updateCADParameters</span></code>(modelName, CADName, ...)</p></td>
+<td><p>This method updates the parameters for the specified model using the specified parameter file.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableParameterUpdate</span></code>(CADName)</p></td>
+<td><p>This method disables an associative CAD connection using parameters.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToFile</span></code>(fileName[, format, ...])</p></td>
+<td><p>This method prints canvas objects to a file using the attributes stored in the PrintOptions object and the appropriate format options object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToPrinter</span></code>([printCommand, numCopies, ...])</p></td>
+<td><p>This method prints canvas objects to a Windows printer or to a PostScript printer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveOptions</span></code>(directory)</p></td>
+<td><p>This method saves your customized display settings.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeVrmlFile</span></code>(fileName[, format, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">write3DXMLFile</span></code>(fileName[, format, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeOBJFile</span></code>(fileName[, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">openOdb</span></code>(name, *args, **kwargs)</p></td>
+<td><p>This method opens an existing output database (.odb) file and creates a new Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">exit</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.XYSessionBase.XYSessionBase.getLimitForXYDataPlots">
 <span class="sig-name descname"><span class="pre">getLimitForXYDataPlots</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYSessionBase.py#L184-L192"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYSessionBase.XYSessionBase.getLimitForXYDataPlots" title="Permalink to this definition">#</a></dt>
@@ -1406,6 +2070,84 @@ PlotTitle, or Legend objects are created.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.inset" title="abaqus.XY.Area.Area.inset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">inset</span></code></a></p></td>
+<td><p>A Boolean specifying whether the area is inset or occupies a reserved area.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.positionMethod" title="abaqus.XY.Area.Area.positionMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">positionMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying how the area is positioned.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.alignment" title="abaqus.XY.Area.Area.alignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">alignment</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the relative position of the area in its parent when <strong>positionMethod</strong> = AUTO_ALIGN.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.sizeMethod" title="abaqus.XY.Area.Area.sizeMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sizeMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying how the area size is defined.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.width" title="abaqus.XY.Area.Area.width"><code class="xref py py-obj docutils literal notranslate"><span class="pre">width</span></code></a></p></td>
+<td><p>A Float specifying the width of the area in mm.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.height" title="abaqus.XY.Area.Area.height"><code class="xref py py-obj docutils literal notranslate"><span class="pre">height</span></code></a></p></td>
+<td><p>A Float specifying the height of the area in mm.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.widthScale" title="abaqus.XY.Area.Area.widthScale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">widthScale</span></code></a></p></td>
+<td><p>A Float specifying the scale as a fraction of the width of the available area when the sizeMethod=MANUAL.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.heightScale" title="abaqus.XY.Area.Area.heightScale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">heightScale</span></code></a></p></td>
+<td><p>A Float specifying the scale as a fraction of the height of the available area when the <strong>sizeMethod</strong> = MANUAL.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.pl" title="abaqus.XY.Area.Area.pl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl</span></code></a></p></td>
+<td><p>A Float specifying the left padding of the area in mm.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.pr" title="abaqus.XY.Area.Area.pr"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pr</span></code></a></p></td>
+<td><p>A Float specifying the right padding of the area in mm.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.pt" title="abaqus.XY.Area.Area.pt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pt</span></code></a></p></td>
+<td><p>A Float specifying the top padding of the area in mm.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.pb" title="abaqus.XY.Area.Area.pb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pb</span></code></a></p></td>
+<td><p>A Float specifying the bottom padding of the area in mm.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.style" title="abaqus.XY.Area.Area.style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">style</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.AreaStyle.AreaStyle" title="abaqus.XY.AreaStyle.AreaStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">AreaStyle</span></code></a> object specifying whether and how to fill the area.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.border" title="abaqus.XY.Area.Area.border"><code class="xref py py-obj docutils literal notranslate"><span class="pre">border</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying whether and how to draw the border of the area.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.origin" title="abaqus.XY.Area.Area.origin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">origin</span></code></a></p></td>
+<td><p>A pair of Floats specifying the X- and Y-offsets in millimeters from the lower-left corner of the XYPlot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.originOffset" title="abaqus.XY.Area.Area.originOffset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">originOffset</span></code></a></p></td>
+<td><p>A pair of Floats specifying the X- and Y-offsets of the origin as a fraction of the available area.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Area.Area.setValues" title="abaqus.XY.Area.Area.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(area, style, border[, ...])</p></td>
+<td><p>This method modifies the Area object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.XY.Area.Area.alignment">
 <span class="sig-name descname"><span class="pre">alignment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'BOTTOM_LEFT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py#L39-L52"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.alignment" title="Permalink to this definition">#</a></dt>
@@ -1637,6 +2379,48 @@ AreaStyle objects can be created using the methods described below.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AreaStyle.AreaStyle.color" title="abaqus.XY.AreaStyle.AreaStyle.color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">color</span></code></a></p></td>
+<td><p>A String specifying the color to be used when filling an area with this AreaStyle object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.AreaStyle.AreaStyle.fill" title="abaqus.XY.AreaStyle.AreaStyle.fill"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fill</span></code></a></p></td>
+<td><p>A Boolean specifying whether to fill the area when using this AreaStyle.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AreaStyle.AreaStyle.style" title="abaqus.XY.AreaStyle.AreaStyle.style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">style</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the area pattern style to be used when filling an area using this AreaStyle.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([color, fill, style])</p></td>
+<td><p>This method creates an AreaStyle.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.AreaStyle.AreaStyle.setValues" title="abaqus.XY.AreaStyle.AreaStyle.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([color, fill, style])</p></td>
+<td><p>This method modifies the AreaStyle object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.XY.AreaStyle.AreaStyle.color">
 <span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AreaStyle.py#L34-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AreaStyle.AreaStyle.color" title="Permalink to this definition">#</a></dt>
@@ -1716,6 +2500,66 @@ automatically created when adding XYCurve objects to a Chart object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Axis.Axis.labelFrequency" title="abaqus.XY.Axis.Axis.labelFrequency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">labelFrequency</span></code></a></p></td>
+<td><p>An Int specifying the frequency of the labels with respect to the tick marks.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Axis.Axis.tickLength" title="abaqus.XY.Axis.Axis.tickLength"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickLength</span></code></a></p></td>
+<td><p>A Float specifying the length of the ticks in mm.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Axis.Axis.placement" title="abaqus.XY.Axis.Axis.placement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">placement</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the placement of the axis on the grid.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Axis.Axis.tickPlacement" title="abaqus.XY.Axis.Axis.tickPlacement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickPlacement</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying how tick marks are placed on the axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Axis.Axis.labelPlacement" title="abaqus.XY.Axis.Axis.labelPlacement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">labelPlacement</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying how labels are placed on the axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Axis.Axis.axisData" title="abaqus.XY.Axis.Axis.axisData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axisData</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.AxisData.AxisData" title="abaqus.XY.AxisData.AxisData"><code class="xref py py-class docutils literal notranslate"><span class="pre">AxisData</span></code></a> object specifying the numerical data of the axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Axis.Axis.lineStyle" title="abaqus.XY.Axis.Axis.lineStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lineStyle</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying the line properties used to display the axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Axis.Axis.labelStyle" title="abaqus.XY.Axis.Axis.labelStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">labelStyle</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextStyle</span></code></a> object specifying the text properties to be used when displaying axis labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Axis.Axis.titleStyle" title="abaqus.XY.Axis.Axis.titleStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">titleStyle</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextStyle</span></code></a> object specifying the text properties to be used when displaying the axis title.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Axis.Axis.tickStyle" title="abaqus.XY.Axis.Axis.tickStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickStyle</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying the line properties to be used when displaying axis ticks.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Axis.Axis.setValues" title="abaqus.XY.Axis.Axis.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(axis[, labelFrequency, ...])</p></td>
+<td><p>This method modifies the Axis object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.XY.Axis.Axis.axisData">
 <span class="sig-name descname"><span class="pre">axisData</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.AxisData.AxisData" title="abaqus.XY.AxisData.AxisData"><span class="pre">AxisData</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.AxisData.AxisData</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Axis.py#L55-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Axis.Axis.axisData" title="Permalink to this definition">#</a></dt>
@@ -1864,6 +2708,135 @@ title.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AxisArray.AxisArray.findAt" title="abaqus.XY.AxisArray.AxisArray.findAt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">findAt</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__repr__</span></code>(/)</p></td>
+<td><p>Return repr(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getattribute__</span></code>(name, /)</p></td>
+<td><p>Return getattr(self, name).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__lt__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__le__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__eq__</span></code>(value, /)</p></td>
+<td><p>Return self==value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ne__</span></code>(value, /)</p></td>
+<td><p>Return self!=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__gt__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ge__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iter__</span></code>(/)</p></td>
+<td><p>Implement iter(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code>(/)</p></td>
+<td><p>Return len(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code></p></td>
+<td><p>x.__getitem__(y) &lt;==&gt; x[y]</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__setitem__</span></code>(key, value, /)</p></td>
+<td><p>Set self[key] to value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__delitem__</span></code>(key, /)</p></td>
+<td><p>Delete self[key].</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__add__</span></code>(value, /)</p></td>
+<td><p>Return self+value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__mul__</span></code>(value, /)</p></td>
+<td><p>Return self*value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__rmul__</span></code>(value, /)</p></td>
+<td><p>Return value*self.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__contains__</span></code>(key, /)</p></td>
+<td><p>Return key in self.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iadd__</span></code>(value, /)</p></td>
+<td><p>Implement self+=value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__imul__</span></code>(value, /)</p></td>
+<td><p>Implement self*=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__reversed__</span></code>(/)</p></td>
+<td><p>Return a reverse iterator over the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__sizeof__</span></code>(/)</p></td>
+<td><p>Return the size of the list in memory, in bytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code>(/)</p></td>
+<td><p>Remove all items from list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code>(/)</p></td>
+<td><p>Return a shallow copy of the list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">append</span></code>(object, /)</p></td>
+<td><p>Append object to the end of the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert</span></code>(index, object, /)</p></td>
+<td><p>Insert object before index.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">extend</span></code>(iterable, /)</p></td>
+<td><p>Extend list by appending elements from the iterable.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code>([index])</p></td>
+<td><p>Remove and return item at index (default last).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove</span></code>(value, /)</p></td>
+<td><p>Remove first occurrence of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">index</span></code>(value[, start, stop])</p></td>
+<td><p>Return first index of value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">count</span></code>(value, /)</p></td>
+<td><p>Return number of occurrences of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reverse</span></code>(/)</p></td>
+<td><p>Reverse <em>IN PLACE</em>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sort</span></code>(*[, key, reverse])</p></td>
+<td><p>Sort the list in ascending order and return None.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__class_getitem__</span></code></p></td>
+<td><p>See PEP 585</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.AxisArray.AxisArray.findAt">
 <span class="sig-name descname"><span class="pre">findAt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisArray.py#L5-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisArray.AxisArray.findAt" title="Permalink to this definition">#</a></dt>
@@ -1924,6 +2897,114 @@ automatically created when creating an Axis object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.dbReference" title="abaqus.XY.AxisData.AxisData.dbReference"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dbReference</span></code></a></p></td>
+<td><p>A Float specifying the reference value for decibel computation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.direction" title="abaqus.XY.AxisData.AxisData.direction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">direction</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the direction of the axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.labelFormat" title="abaqus.XY.AxisData.AxisData.labelFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">labelFormat</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying how tick labels are formatted.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.labelNumDigits" title="abaqus.XY.AxisData.AxisData.labelNumDigits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">labelNumDigits</span></code></a></p></td>
+<td><p>An Int specifying the number of significant digits displayed for the labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.maxAutoCompute" title="abaqus.XY.AxisData.AxisData.maxAutoCompute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maxAutoCompute</span></code></a></p></td>
+<td><p>A Boolean specifying whether or not to use the automatically computed maximum value for the axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.maxAutoValue" title="abaqus.XY.AxisData.AxisData.maxAutoValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maxAutoValue</span></code></a></p></td>
+<td><p>A Float specifying the maximum value when <strong>maxAutoCompute</strong> is true.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.maxValue" title="abaqus.XY.AxisData.AxisData.maxValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maxValue</span></code></a></p></td>
+<td><p>A Float specifying the maximum value when <strong>maxAutoCompute</strong> is false.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.maxShownValue" title="abaqus.XY.AxisData.AxisData.maxShownValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maxShownValue</span></code></a></p></td>
+<td><p>A Float specifying the current maximum value displayed for this axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.minAutoCompute" title="abaqus.XY.AxisData.AxisData.minAutoCompute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minAutoCompute</span></code></a></p></td>
+<td><p>A Boolean specifying whether or not to use the automatically computed minimum value for the axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.minAutoValue" title="abaqus.XY.AxisData.AxisData.minAutoValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minAutoValue</span></code></a></p></td>
+<td><p>A Float specifying the minimum value when <strong>minAutoCompute</strong> is true.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.minValue" title="abaqus.XY.AxisData.AxisData.minValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minValue</span></code></a></p></td>
+<td><p>A Float specifying the minimum value when <strong>minAutoCompute</strong> is false.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.minShownValue" title="abaqus.XY.AxisData.AxisData.minShownValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minShownValue</span></code></a></p></td>
+<td><p>A Float specifying the current minimum value displayed for this axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.minorTickCount" title="abaqus.XY.AxisData.AxisData.minorTickCount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minorTickCount</span></code></a></p></td>
+<td><p>An Int specifying the number the number of minor tick marks between major ticks.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.scale" title="abaqus.XY.AxisData.AxisData.scale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scale</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of scale to use for the axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.tickMode" title="abaqus.XY.AxisData.AxisData.tickMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickMode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of scale to use for the axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.tickCount" title="abaqus.XY.AxisData.AxisData.tickCount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickCount</span></code></a></p></td>
+<td><p>An Int specifying the number of major tick marks on the axis when <strong>tickMode</strong> =TOTAL_NUMBER.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.tickCountShown" title="abaqus.XY.AxisData.AxisData.tickCountShown"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickCountShown</span></code></a></p></td>
+<td><p>An Int specifying the number of major ticks effectively shown.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.tickIncrement" title="abaqus.XY.AxisData.AxisData.tickIncrement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickIncrement</span></code></a></p></td>
+<td><p>A Float specifying the increment of the major tick marks on the axis when <strong>tickMode</strong> = INCREMENT.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.tickIncrementShown" title="abaqus.XY.AxisData.AxisData.tickIncrementShown"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickIncrementShown</span></code></a></p></td>
+<td><p>A Float specifying the shown tick increment of the major ticks.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.useSystemTitle" title="abaqus.XY.AxisData.AxisData.useSystemTitle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">useSystemTitle</span></code></a></p></td>
+<td><p>A Boolean specifying whether the title to use for the axis title is system defined or user defined.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.curves" title="abaqus.XY.AxisData.AxisData.curves"><code class="xref py py-obj docutils literal notranslate"><span class="pre">curves</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.XYCurveArray.XYCurveArray" title="abaqus.XY.XYCurveArray.XYCurveArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYCurveArray</span></code></a> object specifying a read-only sequence of Curve objects associated to this axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.quantityType" title="abaqus.XY.AxisData.AxisData.quantityType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">quantityType</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.QuantityType.QuantityType" title="abaqus.XY.QuantityType.QuantityType"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuantityType</span></code></a> object specifying the quantity type: i.e. the physical dimension and associated label of the data represented by this axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.tickValues" title="abaqus.XY.AxisData.AxisData.tickValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickValues</span></code></a></p></td>
+<td><p>A tuple of Floats specifying the read-only major tick values shown.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.tickLabels" title="abaqus.XY.AxisData.AxisData.tickLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickLabels</span></code></a></p></td>
+<td><p>A tuple of Strings specifying the read-only major tick labels shown.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.systemTitle" title="abaqus.XY.AxisData.AxisData.systemTitle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">systemTitle</span></code></a></p></td>
+<td><p>A String specifying the system title.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.title" title="abaqus.XY.AxisData.AxisData.title"><code class="xref py py-obj docutils literal notranslate"><span class="pre">title</span></code></a></p></td>
+<td><p>A String specifying the title of the axis.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AxisData.AxisData.setValues" title="abaqus.XY.AxisData.AxisData.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([axisData, labelFormat, ...])</p></td>
+<td><p>This method modifies the AxisData object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.curves">
 <span class="sig-name descname"><span class="pre">curves</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.XYCurveArray.XYCurveArray" title="abaqus.XY.XYCurveArray.XYCurveArray"><span class="pre">XYCurveArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py#L117-L119"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.curves" title="Permalink to this definition">#</a></dt>
@@ -2256,6 +3337,111 @@ created when creating an XYPlot object</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.name" title="abaqus.XY.Chart.Chart.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the name of the Chart object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.useQuantityType" title="abaqus.XY.Chart.Chart.useQuantityType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">useQuantityType</span></code></a></p></td>
+<td><p>A Boolean specifying whether to use the QuantityType to associate curves with axes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.aspectRatio" title="abaqus.XY.Chart.Chart.aspectRatio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aspectRatio</span></code></a></p></td>
+<td><p>A Float specifying the aspect ratio of the grid area.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.curves" title="abaqus.XY.Chart.Chart.curves"><code class="xref py py-obj docutils literal notranslate"><span class="pre">curves</span></code></a></p></td>
+<td><p>A repository of XYCurve objects specifying a repository of XYCurve objects to display in the Chart.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.axes1" title="abaqus.XY.Chart.Chart.axes1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axes1</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.AxisArray.AxisArray" title="abaqus.XY.AxisArray.AxisArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">AxisArray</span></code></a> object specifying a read-only sequence of axis objects displayed as axes1 - the abscissa for a Cartesian chart.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.axes2" title="abaqus.XY.Chart.Chart.axes2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axes2</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.AxisArray.AxisArray" title="abaqus.XY.AxisArray.AxisArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">AxisArray</span></code></a> object specifying a read-only sequence of axis objects displayed as axes2 - the ordinate for a Cartesian chart.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.area" title="abaqus.XY.Chart.Chart.area"><code class="xref py py-obj docutils literal notranslate"><span class="pre">area</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><code class="xref py py-class docutils literal notranslate"><span class="pre">Area</span></code></a> object specifying position, padding, background and borders of the chart.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.gridArea" title="abaqus.XY.Chart.Chart.gridArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gridArea</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><code class="xref py py-class docutils literal notranslate"><span class="pre">Area</span></code></a> object specifying how to display the grid area.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.legend" title="abaqus.XY.Chart.Chart.legend"><code class="xref py py-obj docutils literal notranslate"><span class="pre">legend</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.Legend.Legend" title="abaqus.XY.Legend.Legend"><code class="xref py py-class docutils literal notranslate"><span class="pre">Legend</span></code></a> object specifying the attributes for the legend of the chart.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.majorAxis1GridStyle" title="abaqus.XY.Chart.Chart.majorAxis1GridStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">majorAxis1GridStyle</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying the line properties to be used when drawing major gridlines along axis 1.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.majorAxis2GridStyle" title="abaqus.XY.Chart.Chart.majorAxis2GridStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">majorAxis2GridStyle</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying the line properties to be used when drawing major gridlines along axis 2.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.minorAxis1GridStyle" title="abaqus.XY.Chart.Chart.minorAxis1GridStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minorAxis1GridStyle</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying the line properties to be used when drawing minor gridlines along axis 1.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.minorAxis2GridStyle" title="abaqus.XY.Chart.Chart.minorAxis2GridStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minorAxis2GridStyle</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying the line properties to be used when drawing minor gridlines along axis 2.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.tagTextStyle" title="abaqus.XY.Chart.Chart.tagTextStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tagTextStyle</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextStyle</span></code></a> object specifying the text properties to be used when creating tags.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.tagAreaStyle" title="abaqus.XY.Chart.Chart.tagAreaStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tagAreaStyle</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.AreaStyle.AreaStyle" title="abaqus.XY.AreaStyle.AreaStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">AreaStyle</span></code></a> object specifying the area properties to be used when creating tags.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.tagBorder" title="abaqus.XY.Chart.Chart.tagBorder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tagBorder</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying the tag area border properties to be used when creating tags.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.transform" title="abaqus.XY.Chart.Chart.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a></p></td>
+<td><p>A tuple of Floats specifying a transformation matrix used to scale or pan along the axes of the Chart.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.autoColor" title="abaqus.XY.Chart.Chart.autoColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoColor</span></code></a>([lines, symbols])</p></td>
+<td><p>This method distributes the colors on all curves displayed in the chart using the color palette defined by the xyColors object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.autoSymbol" title="abaqus.XY.Chart.Chart.autoSymbol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoSymbol</span></code></a>()</p></td>
+<td><p>This method distributes the symbols on all curves displayed in the chart.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.fitCurves" title="abaqus.XY.Chart.Chart.fitCurves"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fitCurves</span></code></a>()</p></td>
+<td><p>This method resets the transform of the chart.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.getAxis1" title="abaqus.XY.Chart.Chart.getAxis1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getAxis1</span></code></a>(curve, quantityType)</p></td>
+<td><p>This method returns the Axis object used for displaying the Axis1 of the XYCurve specified by name or object or used for the given QuantityType object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.getAxis2" title="abaqus.XY.Chart.Chart.getAxis2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getAxis2</span></code></a>(curve, quantityType)</p></td>
+<td><p>This method returns the Axis object used for displaying the Axis2 of the XYCurve specified by name or object or used for the given QuantityType object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.moveAxisUp" title="abaqus.XY.Chart.Chart.moveAxisUp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveAxisUp</span></code></a>(axis)</p></td>
+<td><p>This method moves the relative position of the given Axis object up in the axis sequence of the Chart.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.moveAxisDown" title="abaqus.XY.Chart.Chart.moveAxisDown"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveAxisDown</span></code></a>(axis)</p></td>
+<td><p>This method moves the relative position of the given Axis object down in the axis sequence of the Chart.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.removeCurve" title="abaqus.XY.Chart.Chart.removeCurve"><code class="xref py py-obj docutils literal notranslate"><span class="pre">removeCurve</span></code></a>(curve)</p></td>
+<td><p>This method removes the given XYCurve from the Chart.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Chart.Chart.setValues" title="abaqus.XY.Chart.Chart.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([chart, curvesToPlot, ...])</p></td>
+<td><p>This method modifies the Chart object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.area">
 <span class="sig-name descname"><span class="pre">area</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><span class="pre">Area</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.Area.Area</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py#L49-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.area" title="Permalink to this definition">#</a></dt>
@@ -2581,6 +3767,39 @@ DefaultChartOptions object is automatically created when opening a session.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.DefaultChartOptions.DefaultChartOptions.areaStyle" title="abaqus.XY.DefaultChartOptions.DefaultChartOptions.areaStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">areaStyle</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.DefaultChartOptions.DefaultChartOptions.setValues" title="abaqus.XY.DefaultChartOptions.DefaultChartOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(areaStyle[, aspectRatio, ...])</p></td>
+<td><p>This method modifies the DefaultChartOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.XY.DefaultChartOptions.DefaultChartOptions.areaStyle">
 <span class="sig-name descname"><span class="pre">areaStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.AreaStyle.AreaStyle" title="abaqus.XY.AreaStyle.AreaStyle"><span class="pre">AreaStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.AreaStyle.AreaStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/DefaultChartOptions.py#L24-L24"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.DefaultChartOptions.DefaultChartOptions.areaStyle" title="Permalink to this definition">#</a></dt>
@@ -2656,6 +3875,26 @@ automatically created when opening a session.</p>
 </pre></div>
 </div>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.DefaultPlot.DefaultPlot.area" title="abaqus.XY.DefaultPlot.DefaultPlot.area"><code class="xref py py-obj docutils literal notranslate"><span class="pre">area</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><code class="xref py py-class docutils literal notranslate"><span class="pre">Area</span></code></a> object specifying an Area used to hold on to the default display properties for the plot area.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.DefaultPlot.DefaultPlot.title" title="abaqus.XY.DefaultPlot.DefaultPlot.title"><code class="xref py py-obj docutils literal notranslate"><span class="pre">title</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.Title.Title" title="abaqus.XY.Title.Title"><code class="xref py py-class docutils literal notranslate"><span class="pre">Title</span></code></a> object specifying a Title object used to hold on to the default properties of the XY-Plot title.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.XY.DefaultPlot.DefaultPlot.area">
 <span class="sig-name descname"><span class="pre">area</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><span class="pre">Area</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.Area.Area</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/DefaultPlot.py#L19-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.DefaultPlot.DefaultPlot.area" title="Permalink to this definition">#</a></dt>
@@ -2704,6 +3943,60 @@ object is automatically created when creating a Chart object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Legend.Legend.numberFormat" title="abaqus.XY.Legend.Legend.numberFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numberFormat</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying how the minimum and maximum values are formatted.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Legend.Legend.numDigits" title="abaqus.XY.Legend.Legend.numDigits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numDigits</span></code></a></p></td>
+<td><p>An Int specifying the number of significant digits displayed for the minimum and maximum values.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Legend.Legend.show" title="abaqus.XY.Legend.Legend.show"><code class="xref py py-obj docutils literal notranslate"><span class="pre">show</span></code></a></p></td>
+<td><p>A Boolean specifying whether to show the legend.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Legend.Legend.showMinMax" title="abaqus.XY.Legend.Legend.showMinMax"><code class="xref py py-obj docutils literal notranslate"><span class="pre">showMinMax</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the minimum and maximum values.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Legend.Legend.area" title="abaqus.XY.Legend.Legend.area"><code class="xref py py-obj docutils literal notranslate"><span class="pre">area</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><code class="xref py py-class docutils literal notranslate"><span class="pre">Area</span></code></a> object specifying the area of the legend.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Legend.Legend.textStyle" title="abaqus.XY.Legend.Legend.textStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">textStyle</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextStyle</span></code></a> object specifying the text properties used to display the legend text.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Legend.Legend.title" title="abaqus.XY.Legend.Legend.title"><code class="xref py py-obj docutils literal notranslate"><span class="pre">title</span></code></a></p></td>
+<td><p>A String specifying the title to appear on the legend.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Legend.Legend.titleStyle" title="abaqus.XY.Legend.Legend.titleStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">titleStyle</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextStyle</span></code></a> object specifying the text properties used to display the legend title.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Legend.Legend.setValues" title="abaqus.XY.Legend.Legend.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(legend[, show, showMinMax, title, ...])</p></td>
+<td><p>This method modifies the Legend object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.XY.Legend.Legend.area">
 <span class="sig-name descname"><span class="pre">area</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><span class="pre">Area</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.Area.Area</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Legend.py#L37-L38"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Legend.Legend.area" title="Permalink to this definition">#</a></dt>
@@ -2871,6 +4164,51 @@ LineStyle objects can be created using the methods described below.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle.color" title="abaqus.XY.LineStyle.LineStyle.color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">color</span></code></a></p></td>
+<td><p>A String specifying the color to be used when drawing a line with this LineStyle object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle.show" title="abaqus.XY.LineStyle.LineStyle.show"><code class="xref py py-obj docutils literal notranslate"><span class="pre">show</span></code></a></p></td>
+<td><p>A Boolean specifying whether to draw the line when using this LineStyle.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle.style" title="abaqus.XY.LineStyle.LineStyle.style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">style</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the line style to be used when drawing lines using this LineStyle.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle.thickness" title="abaqus.XY.LineStyle.LineStyle.thickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">thickness</span></code></a></p></td>
+<td><p>A Float specifying the line thickness in mm to be used when drawing lines using this LineStyle.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([color, show, style, thickness])</p></td>
+<td><p>This method creates a LineStyle.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle.setValues" title="abaqus.XY.LineStyle.LineStyle.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([color, show, style, thickness])</p></td>
+<td><p>This method modifies the LineStyle object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.XY.LineStyle.LineStyle.color">
 <span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/LineStyle.py#L66-L68"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.LineStyle.LineStyle.color" title="Permalink to this definition">#</a></dt>
@@ -3001,6 +4339,45 @@ QuantityType objects can be created using the methods described below.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.QuantityType.QuantityType.label" title="abaqus.XY.QuantityType.QuantityType.label"><code class="xref py py-obj docutils literal notranslate"><span class="pre">label</span></code></a></p></td>
+<td><p>A String specifying the label for this quantity type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.QuantityType.QuantityType.type" title="abaqus.XY.QuantityType.QuantityType.type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the physical dimension of the axis.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([label, type])</p></td>
+<td><p>This method creates a QuantityType object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.QuantityType.QuantityType.setValues" title="abaqus.XY.QuantityType.QuantityType.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the QuantityType object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.XY.QuantityType.QuantityType.label">
 <span class="sig-name descname"><span class="pre">label</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/QuantityType.py#L54-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.QuantityType.QuantityType.label" title="Permalink to this definition">#</a></dt>
@@ -3136,6 +4513,54 @@ SymbolStyle objects can be created using the methods described below.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.SymbolStyle.SymbolStyle.color" title="abaqus.XY.SymbolStyle.SymbolStyle.color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">color</span></code></a></p></td>
+<td><p>A String specifying the color to be used when drawing a marker with this SymbolStyle object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.SymbolStyle.SymbolStyle.show" title="abaqus.XY.SymbolStyle.SymbolStyle.show"><code class="xref py py-obj docutils literal notranslate"><span class="pre">show</span></code></a></p></td>
+<td><p>A Boolean specifying whether to draw the marker when using this SymbolStyle object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.SymbolStyle.SymbolStyle.marker" title="abaqus.XY.SymbolStyle.SymbolStyle.marker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">marker</span></code></a></p></td>
+<td><p><ul class="simple">
+<li><p>FILLED_CIRCLE</p></li>
+</ul>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.SymbolStyle.SymbolStyle.size" title="abaqus.XY.SymbolStyle.SymbolStyle.size"><code class="xref py py-obj docutils literal notranslate"><span class="pre">size</span></code></a></p></td>
+<td><p>A Float specifying the marker size to be used when drawing markers using this SymbolStyle object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([color, show, marker, size])</p></td>
+<td><p>This method creates a SymbolStyle object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.SymbolStyle.SymbolStyle.setValues" title="abaqus.XY.SymbolStyle.SymbolStyle.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([color, show, marker, size])</p></td>
+<td><p>This method modifies the SymbolStyle object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.XY.SymbolStyle.SymbolStyle.color">
 <span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/SymbolStyle.py#L27-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.SymbolStyle.SymbolStyle.color" title="Permalink to this definition">#</a></dt>
@@ -3270,6 +4695,51 @@ methods described below.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle.color" title="abaqus.XY.TextStyle.TextStyle.color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">color</span></code></a></p></td>
+<td><p>A String specifying the color to be used when drawing text with this TextStyle object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle.show" title="abaqus.XY.TextStyle.TextStyle.show"><code class="xref py py-obj docutils literal notranslate"><span class="pre">show</span></code></a></p></td>
+<td><p>A Boolean specifying whether to draw the text when using this TextStyle object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle.font" title="abaqus.XY.TextStyle.TextStyle.font"><code class="xref py py-obj docutils literal notranslate"><span class="pre">font</span></code></a></p></td>
+<td><p>A String specifying the name of the font to be used when drawing text with this TextStyle object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle.rotationAngle" title="abaqus.XY.TextStyle.TextStyle.rotationAngle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rotationAngle</span></code></a></p></td>
+<td><p>A Float specifying the angle in degrees used for displaying the text.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([color, show, font, rotationAngle])</p></td>
+<td><p>This method creates a TextStyle.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle.setValues" title="abaqus.XY.TextStyle.TextStyle.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([color, show, font, rotationAngle])</p></td>
+<td><p>This method modifies the TextStyle object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.XY.TextStyle.TextStyle.color">
 <span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/TextStyle.py#L41-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.TextStyle.TextStyle.color" title="Permalink to this definition">#</a></dt>
@@ -3355,6 +4825,48 @@ object is automatically created when creating a XYPlot object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Title.Title.useDefault" title="abaqus.XY.Title.Title.useDefault"><code class="xref py py-obj docutils literal notranslate"><span class="pre">useDefault</span></code></a></p></td>
+<td><p>A Boolean specifying whether to show the default title.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Title.Title.area" title="abaqus.XY.Title.Title.area"><code class="xref py py-obj docutils literal notranslate"><span class="pre">area</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><code class="xref py py-class docutils literal notranslate"><span class="pre">Area</span></code></a> object specifying the area of the title.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Title.Title.text" title="abaqus.XY.Title.Title.text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text</span></code></a></p></td>
+<td><p>A String specifying the text to appear as a title.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.Title.Title.titleStyle" title="abaqus.XY.Title.Title.titleStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">titleStyle</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextStyle</span></code></a> object specifying the text properties used to display the legend title.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.Title.Title.setValues" title="abaqus.XY.Title.Title.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(title[, text, area, useDefault, ...])</p></td>
+<td><p>This method modifies the Title object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.XY.Title.Title.area">
 <span class="sig-name descname"><span class="pre">area</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><span class="pre">Area</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.Area.Area</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Title.py#L23-L24"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Title.Title.area" title="Permalink to this definition">#</a></dt>
@@ -3457,6 +4969,66 @@ XYPlot object name. The default value is an empty string.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYCurve.XYCurve.name" title="abaqus.XY.XYCurve.XYCurve.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYCurve.XYCurve.symbolFrequency" title="abaqus.XY.XYCurve.XYCurve.symbolFrequency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">symbolFrequency</span></code></a></p></td>
+<td><p>An Int specifying the frequency of plotting the markers.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYCurve.XYCurve.useDefault" title="abaqus.XY.XYCurve.XYCurve.useDefault"><code class="xref py py-obj docutils literal notranslate"><span class="pre">useDefault</span></code></a></p></td>
+<td><p>A Boolean specifying whether to use the system supplied legend label.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYCurve.XYCurve.legendSource" title="abaqus.XY.XYCurve.XYCurve.legendSource"><code class="xref py py-obj docutils literal notranslate"><span class="pre">legendSource</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying how the system supplied, default legend label is to be generated.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYCurve.XYCurve.data" title="abaqus.XY.XYCurve.XYCurve.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.XYData.XYData" title="abaqus.XY.XYData.XYData"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYData</span></code></a> object specifying the data for the curve.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYCurve.XYCurve.lineStyle" title="abaqus.XY.XYCurve.XYCurve.lineStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lineStyle</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying the line properties used to display the curve.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYCurve.XYCurve.symbolStyle" title="abaqus.XY.XYCurve.XYCurve.symbolStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">symbolStyle</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.SymbolStyle.SymbolStyle" title="abaqus.XY.SymbolStyle.SymbolStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolStyle</span></code></a> object specifying the symbol properties used to display the curve.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYCurve.XYCurve.legendLabel" title="abaqus.XY.XYCurve.XYCurve.legendLabel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">legendLabel</span></code></a></p></td>
+<td><p>A String specifying the label to be displayed in the legend.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYCurve.XYCurve.displayTypes" title="abaqus.XY.XYCurve.XYCurve.displayTypes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayTypes</span></code></a></p></td>
+<td><p>A tuple of SymbolicConstants specifying that describe how curves are to be displayed.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYCurve.XYCurve.Curve" title="abaqus.XY.XYCurve.XYCurve.Curve"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Curve</span></code></a>(name, data)</p></td>
+<td><p>This method creates an XYCurve object from an XYData object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYCurve.XYCurve.setValues" title="abaqus.XY.XYCurve.XYCurve.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([displayTypes, legendLabel, ...])</p></td>
+<td><p>This method modifies the XYCurve object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.XYCurve.XYCurve.Curve">
 <span class="sig-name descname"><span class="pre">Curve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYCurve.py#L62-L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYCurve.XYCurve.Curve" title="Permalink to this definition">#</a></dt>
@@ -3594,6 +5166,135 @@ is ON.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYCurveArray.XYCurveArray.findAt" title="abaqus.XY.XYCurveArray.XYCurveArray.findAt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">findAt</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__repr__</span></code>(/)</p></td>
+<td><p>Return repr(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getattribute__</span></code>(name, /)</p></td>
+<td><p>Return getattr(self, name).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__lt__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__le__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__eq__</span></code>(value, /)</p></td>
+<td><p>Return self==value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ne__</span></code>(value, /)</p></td>
+<td><p>Return self!=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__gt__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ge__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iter__</span></code>(/)</p></td>
+<td><p>Implement iter(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code>(/)</p></td>
+<td><p>Return len(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code></p></td>
+<td><p>x.__getitem__(y) &lt;==&gt; x[y]</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__setitem__</span></code>(key, value, /)</p></td>
+<td><p>Set self[key] to value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__delitem__</span></code>(key, /)</p></td>
+<td><p>Delete self[key].</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__add__</span></code>(value, /)</p></td>
+<td><p>Return self+value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__mul__</span></code>(value, /)</p></td>
+<td><p>Return self*value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__rmul__</span></code>(value, /)</p></td>
+<td><p>Return value*self.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__contains__</span></code>(key, /)</p></td>
+<td><p>Return key in self.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iadd__</span></code>(value, /)</p></td>
+<td><p>Implement self+=value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__imul__</span></code>(value, /)</p></td>
+<td><p>Implement self*=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__reversed__</span></code>(/)</p></td>
+<td><p>Return a reverse iterator over the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__sizeof__</span></code>(/)</p></td>
+<td><p>Return the size of the list in memory, in bytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code>(/)</p></td>
+<td><p>Remove all items from list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code>(/)</p></td>
+<td><p>Return a shallow copy of the list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">append</span></code>(object, /)</p></td>
+<td><p>Append object to the end of the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert</span></code>(index, object, /)</p></td>
+<td><p>Insert object before index.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">extend</span></code>(iterable, /)</p></td>
+<td><p>Extend list by appending elements from the iterable.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code>([index])</p></td>
+<td><p>Remove and return item at index (default last).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove</span></code>(value, /)</p></td>
+<td><p>Remove first occurrence of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">index</span></code>(value[, start, stop])</p></td>
+<td><p>Return first index of value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">count</span></code>(value, /)</p></td>
+<td><p>Return number of occurrences of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reverse</span></code>(/)</p></td>
+<td><p>Reverse <em>IN PLACE</em>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sort</span></code>(*[, key, reverse])</p></td>
+<td><p>Sort the list in ascending order and return None.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__class_getitem__</span></code></p></td>
+<td><p>See PEP 585</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.XYCurveArray.XYCurveArray.findAt">
 <span class="sig-name descname"><span class="pre">findAt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYCurveArray.py#L5-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYCurveArray.XYCurveArray.findAt" title="Permalink to this definition">#</a></dt>
@@ -3682,6 +5383,96 @@ operations found in the abaqusMath module.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.sourceType" title="abaqus.XY.XYData.XYData.sourceType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sourceType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the source type of the XYData object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.fileName" title="abaqus.XY.XYData.XYData.fileName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fileName</span></code></a></p></td>
+<td><p>A String specifying the source file name of the XYData object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.description" title="abaqus.XY.XYData.XYData.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
+<td><p>A String specifying the complete description of the XYData object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.name" title="abaqus.XY.XYData.XYData.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>The repository key.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.sourceDescription" title="abaqus.XY.XYData.XYData.sourceDescription"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sourceDescription</span></code></a></p></td>
+<td><p>A String specifying the source of the <strong>X - Y</strong> data (e.g., “Entered from keyboard”, “Taken from ASCII file”, “Read from an ODB”, etc.).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.contentDescription" title="abaqus.XY.XYData.XYData.contentDescription"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contentDescription</span></code></a></p></td>
+<td><p>A String specifying the content of the <strong>X - Y</strong> data (e.g., “field 1 vs.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.positionDescription" title="abaqus.XY.XYData.XYData.positionDescription"><code class="xref py py-obj docutils literal notranslate"><span class="pre">positionDescription</span></code></a></p></td>
+<td><p>A String specifying additional information about the <strong>X - Y</strong> data (e.g., “for whole model”).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.legendLabel" title="abaqus.XY.XYData.XYData.legendLabel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">legendLabel</span></code></a></p></td>
+<td><p>A String specifying the label to be used in the legend.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.xValuesLabel" title="abaqus.XY.XYData.XYData.xValuesLabel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xValuesLabel</span></code></a></p></td>
+<td><p>A String specifying the label for the X-values.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.yValuesLabel" title="abaqus.XY.XYData.XYData.yValuesLabel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">yValuesLabel</span></code></a></p></td>
+<td><p>A String specifying the label for the Y-values.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.axis1QuantityType" title="abaqus.XY.XYData.XYData.axis1QuantityType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axis1QuantityType</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.QuantityType.QuantityType" title="abaqus.XY.QuantityType.QuantityType"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuantityType</span></code></a> object specifying the QuantityType object associated to the X -axis1- values.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.axis2QuantityType" title="abaqus.XY.XYData.XYData.axis2QuantityType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axis2QuantityType</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.QuantityType.QuantityType" title="abaqus.XY.QuantityType.QuantityType"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuantityType</span></code></a> object specifying the QuantityType object associated to the Y -axis2- values.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.XYDataFromFile" title="abaqus.XY.XYData.XYData.XYDataFromFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYDataFromFile</span></code></a>(fileName[, name, ...])</p></td>
+<td><p>This method creates an XYData object from data in an ASCII file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.XYDataFromHistory" title="abaqus.XY.XYData.XYData.XYDataFromHistory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYDataFromHistory</span></code></a>(odb, outputVariableName, steps)</p></td>
+<td><p>This method creates an XYData object by reading history data from an Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.xyDataListFromField" title="abaqus.XY.XYData.XYData.xyDataListFromField"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyDataListFromField</span></code></a>(odb, outputPosition, ...)</p></td>
+<td><p>This method creates a list of XYData objects by reading field data from an Odb object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.XYDataFromFreeBody" title="abaqus.XY.XYData.XYData.XYDataFromFreeBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYDataFromFreeBody</span></code></a>(odb[, force, moment, ...])</p></td>
+<td><p>This method creates a list of XYData objects by computing free body data from an Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.XYDataFromShellThickness" title="abaqus.XY.XYData.XYData.XYDataFromShellThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYDataFromShellThickness</span></code></a>(odb, ...[, ...])</p></td>
+<td><p>This method creates a list of XYData objects by reading through the thickness field data from an Odb object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.XYDataFromPath" title="abaqus.XY.XYData.XYData.XYDataFromPath"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYDataFromPath</span></code></a>(path, name, ...[, viewport, ...])</p></td>
+<td><p>This method creates an XYData object from path information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.save" title="abaqus.XY.XYData.XYData.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code></a>()</p></td>
+<td><p>This method saves a temporary XYData.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYData.XYData.setValues" title="abaqus.XY.XYData.XYData.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([sourceDescription, ...])</p></td>
+<td><p>This method modifies the XYData object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.XYData.XYData.XYDataFromFile">
 <span class="sig-name descname"><span class="pre">XYDataFromFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sourceDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contentDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legendLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xValuesLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yValuesLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis1QuantityType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis2QuantityType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xField</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yField</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skipFrequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYData.py#L188-L266"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYData.XYData.XYDataFromFile" title="Permalink to this definition">#</a></dt>
@@ -4349,6 +6140,97 @@ on the data, and the data will be saved as is.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">XYPlotBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">area</span></code></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><code class="xref py py-class docutils literal notranslate"><span class="pre">Area</span></code></a> object specifying position, padding, background and borders of the XYPlot object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">title</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.Title.Title" title="abaqus.XY.Title.Title"><code class="xref py py-class docutils literal notranslate"><span class="pre">Title</span></code></a> object specifying the title of the XYPlot object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">charts</span></code></p></td>
+<td><p>A repository of Chart objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">curves</span></code></p></td>
+<td><p>A repository of XYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></p></td>
+<td><p>A tuple of Floats specifying a transformation matrix used to scale or pan along the axes of the active Chart object of this XYPlot.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYPlot.XYPlot.AreaStyle" title="abaqus.XY.XYPlot.XYPlot.AreaStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AreaStyle</span></code></a>([color, fill, style])</p></td>
+<td><p>This method creates an AreaStyle.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYPlot.XYPlot.LineStyle" title="abaqus.XY.XYPlot.XYPlot.LineStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LineStyle</span></code></a>([color, show, style, thickness])</p></td>
+<td><p>This method creates a LineStyle.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYPlot.XYPlot.QuantityType" title="abaqus.XY.XYPlot.XYPlot.QuantityType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuantityType</span></code></a>([label, type])</p></td>
+<td><p>This method creates a QuantityType object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYPlot.XYPlot.SymbolStyle" title="abaqus.XY.XYPlot.XYPlot.SymbolStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolStyle</span></code></a>([color, show, marker, size])</p></td>
+<td><p>This method creates a SymbolStyle object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYPlot.XYPlot.TextStyle" title="abaqus.XY.XYPlot.XYPlot.TextStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TextStyle</span></code></a>([color, show, font, rotationAngle])</p></td>
+<td><p>This method creates a TextStyle.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYPlot.XYPlot.XYData" title="abaqus.XY.XYPlot.XYPlot.XYData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">XYPlotBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name)</p></td>
+<td><p>This method creates an empty XYPlot object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoColor</span></code>([lines, symbols])</p></td>
+<td><p>This method distributes the colors on all curves displayed in the XYPlot using the color palette defined by the xyColors AutoColors object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoSymbol</span></code>()</p></td>
+<td><p>This method distributes the symbols on all curves displayed in the XYPlot.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fitCurves</span></code>()</p></td>
+<td><p>This method resets the transform of all the charts of the XYPlot object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">next</span></code>([drawImmediately])</p></td>
+<td><p>This method restores the <strong>transform</strong> member of the active Chart object to the next setting in the transform list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">previous</span></code>([drawImmediately])</p></td>
+<td><p>This method restores the <strong>transform</strong> member of the active Chart object to the previous setting in the transform list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>(title, transform)</p></td>
+<td><p>This method modifies the XYPlot object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.XYPlot.XYPlot.AreaStyle">
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AreaStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fill</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLID'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYPlot.py#L14-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYPlot.XYPlot.AreaStyle" title="Permalink to this definition">#</a></dt>
@@ -4698,6 +6580,69 @@ is 0.0.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.area" title="abaqus.XY.XYPlotBase.XYPlotBase.area"><code class="xref py py-obj docutils literal notranslate"><span class="pre">area</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><code class="xref py py-class docutils literal notranslate"><span class="pre">Area</span></code></a> object specifying position, padding, background and borders of the XYPlot object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.title" title="abaqus.XY.XYPlotBase.XYPlotBase.title"><code class="xref py py-obj docutils literal notranslate"><span class="pre">title</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.XY.Title.Title" title="abaqus.XY.Title.Title"><code class="xref py py-class docutils literal notranslate"><span class="pre">Title</span></code></a> object specifying the title of the XYPlot object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.charts" title="abaqus.XY.XYPlotBase.XYPlotBase.charts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">charts</span></code></a></p></td>
+<td><p>A repository of Chart objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.curves" title="abaqus.XY.XYPlotBase.XYPlotBase.curves"><code class="xref py py-obj docutils literal notranslate"><span class="pre">curves</span></code></a></p></td>
+<td><p>A repository of XYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.transform" title="abaqus.XY.XYPlotBase.XYPlotBase.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a></p></td>
+<td><p>A tuple of Floats specifying a transformation matrix used to scale or pan along the axes of the active Chart object of this XYPlot.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name)</p></td>
+<td><p>This method creates an empty XYPlot object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.autoColor" title="abaqus.XY.XYPlotBase.XYPlotBase.autoColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoColor</span></code></a>([lines, symbols])</p></td>
+<td><p>This method distributes the colors on all curves displayed in the XYPlot using the color palette defined by the xyColors AutoColors object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.autoSymbol" title="abaqus.XY.XYPlotBase.XYPlotBase.autoSymbol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoSymbol</span></code></a>()</p></td>
+<td><p>This method distributes the symbols on all curves displayed in the XYPlot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.fitCurves" title="abaqus.XY.XYPlotBase.XYPlotBase.fitCurves"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fitCurves</span></code></a>()</p></td>
+<td><p>This method resets the transform of all the charts of the XYPlot object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.next" title="abaqus.XY.XYPlotBase.XYPlotBase.next"><code class="xref py py-obj docutils literal notranslate"><span class="pre">next</span></code></a>([drawImmediately])</p></td>
+<td><p>This method restores the <strong>transform</strong> member of the active Chart object to the next setting in the transform list.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.previous" title="abaqus.XY.XYPlotBase.XYPlotBase.previous"><code class="xref py py-obj docutils literal notranslate"><span class="pre">previous</span></code></a>([drawImmediately])</p></td>
+<td><p>This method restores the <strong>transform</strong> member of the active Chart object to the previous setting in the transform list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.setValues" title="abaqus.XY.XYPlotBase.XYPlotBase.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(title, transform)</p></td>
+<td><p>This method modifies the XYPlot object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.XY.XYPlotBase.XYPlotBase.area">
 <span class="sig-name descname"><span class="pre">area</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><span class="pre">Area</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.Area.Area</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYPlotBase.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYPlotBase.XYPlotBase.area" title="Permalink to this definition">#</a></dt>
@@ -4847,6 +6792,23 @@ Abaqus creates the <strong>xyReportOptions</strong> member when you import the V
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYReportOptions.XYReportOptions.setValues" title="abaqus.XY.XYReportOptions.XYReportOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([pageWidth, numDigits, ...])</p></td>
+<td><p>This method modifies the XYReportOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.XYReportOptions.XYReportOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pageWidth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interpolation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">totals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minMax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pageWidthLimited</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberFormat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ENGINEERING'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SINGLE_TABLE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYReportOptions.py#L19-L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYReportOptions.XYReportOptions.setValues" title="Permalink to this definition">#</a></dt>

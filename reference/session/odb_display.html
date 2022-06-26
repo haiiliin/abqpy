@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -458,6 +459,262 @@ The CommonOptions object is derived from the DGCommonOptions object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.deformationScaling" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.deformationScaling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deformationScaling</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the deformation scale factor mode.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.uniformScaleFactor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.uniformScaleFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">uniformScaleFactor</span></code></a></p></td>
+<td><p>A Float specifying the uniform deformation scaling constant when <strong>deformationScaling</strong> = UNIFORM.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.autoDeformationScaleValue" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.autoDeformationScaleValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoDeformationScaleValue</span></code></a></p></td>
+<td><p>A Float specifying the deformation scale factor value when <strong>deformationScaling</strong> = AUTO.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.nonuniformScaleFactor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.nonuniformScaleFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nonuniformScaleFactor</span></code></a></p></td>
+<td><p>A tuple of three Floats specifying the deformation scaling in each of the three coordinate directions when <strong>deformationScaling</strong> = NONUNIFORM.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.renderStyle" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.renderStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">renderStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the render style of the plot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.visibleEdges" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.visibleEdges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visibleEdges</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying which edges to plot.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeLineStyle" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeLineStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeLineStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the edge line style.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeLineThickness" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeLineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeLineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the edge line thickness.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.colorCodeOverride" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.colorCodeOverride"><code class="xref py py-obj docutils literal notranslate"><span class="pre">colorCodeOverride</span></code></a></p></td>
+<td><p>A Boolean specifying whether to allow color coded items in the output database to override the edge and fill color settings.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.elemLabels" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.elemLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elemLabels</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the element labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.faceLabels" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.faceLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">faceLabels</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the face labels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeLabels" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeLabels</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the node labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbols" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSymbols</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the node symbols.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSymbolType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the node symbol types.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolSize" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSymbolSize</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the node symbol size.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.elementShrink" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.elementShrink"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementShrink</span></code></a></p></td>
+<td><p>A Boolean specifying whether elements are displayed in a shrunk format.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.elementShrinkFactor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.elementShrinkFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementShrinkFactor</span></code></a></p></td>
+<td><p>An Int specifying the percentage to shrink the elements when <strong>elementShrink</strong> = ON.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.coordinateScale" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.coordinateScale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordinateScale</span></code></a></p></td>
+<td><p>A Boolean specifying whether to scale coordinates.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.normals" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.normals"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normals</span></code></a></p></td>
+<td><p>A Boolean specifying whether to draw arrows that indicate the directions of element and surface normals.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.normalDisplay" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.normalDisplay"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalDisplay</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether to draw element normals or surface normals.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.normalArrowLength" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.normalArrowLength"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalArrowLength</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the length of the normal arrows.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.normalLineThickness" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.normalLineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalLineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the thickness of the normal arrows.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.normalArrowheadStyle" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.normalArrowheadStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalArrowheadStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the arrowhead style of the normal arrows.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.translucency" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.translucency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translucency</span></code></a></p></td>
+<td><p>A Boolean specifying whether to set translucency.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.translucencyFactor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.translucencyFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translucencyFactor</span></code></a></p></td>
+<td><p>A Float specifying the translucency factor when <strong>translucency</strong> = ON.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeColorWireHide" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeColorWireHide"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeColorWireHide</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the edges of the model when <strong>renderStyle</strong> = WIREFRAME or HIDDEN.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeColorFillShade" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeColorFillShade"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeColorFillShade</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the edges of the model when <strong>renderStyle</strong> = FILLED or SHADED.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.fillColor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.fillColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fillColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to fill elements when <strong>renderStyle</strong> = FILLED or SHADED.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.labelFont" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.labelFont"><code class="xref py py-obj docutils literal notranslate"><span class="pre">labelFont</span></code></a></p></td>
+<td><p>A String specifying the label font to be used for all model labels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.elemLabelColor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.elemLabelColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elemLabelColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the element labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.faceLabelColor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.faceLabelColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">faceLabelColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the face labels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeLabelColor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeLabelColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeLabelColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the node labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolColor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSymbolColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the node symbols.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.faceNormalColor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.faceNormalColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">faceNormalColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the normal to a nonbeam element or to a surface.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.beamN1Color" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.beamN1Color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamN1Color</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot an arrow along the beam n1n1-direction.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.beamN2Color" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.beamN2Color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamN2Color</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot an arrow along the beam n2n2-direction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.beamTangentColor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.beamTangentColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamTangentColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot an arrow along the tangent to a beam.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.coordinateScaleFactors" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.coordinateScaleFactors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordinateScaleFactors</span></code></a></p></td>
+<td><p>A tuple of three Floats specifying the coordinate scaling in each of the three coordinate directions when <strong>coordinateScale</strong> = ON.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">DGCommonOptions</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.renderStyle" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.renderStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">renderStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the render style of the plot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.visibleEdges" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.visibleEdges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visibleEdges</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying which edges to plot.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeLineStyle" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeLineStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeLineStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the edge line style.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeLineThickness" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeLineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeLineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the edge line thickness.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.colorCodeOverride" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.colorCodeOverride"><code class="xref py py-obj docutils literal notranslate"><span class="pre">colorCodeOverride</span></code></a></p></td>
+<td><p>A Boolean specifying whether to allow color coded items in the output database to override the edge and fill color settings.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.elemLabels" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.elemLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elemLabels</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the element labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.faceLabels" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.faceLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">faceLabels</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the face labels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeLabels" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeLabels</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the node labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbols" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSymbols</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the node symbols.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSymbolType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the node symbol types.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolSize" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSymbolSize</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the node symbol size.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.elementShrink" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.elementShrink"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementShrink</span></code></a></p></td>
+<td><p>A Boolean specifying whether elements are displayed in a shrunk format.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.elementShrinkFactor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.elementShrinkFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementShrinkFactor</span></code></a></p></td>
+<td><p>An Int specifying the percentage to shrink the elements when <strong>elementShrink</strong> = ON.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.coordinateScale" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.coordinateScale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordinateScale</span></code></a></p></td>
+<td><p>A Boolean specifying whether to scale coordinates.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.normals" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.normals"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normals</span></code></a></p></td>
+<td><p>A Boolean specifying whether to draw arrows that indicate the directions of element and surface normals.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.normalDisplay" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.normalDisplay"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalDisplay</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether to draw element normals or surface normals.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.normalArrowLength" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.normalArrowLength"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalArrowLength</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the length of the normal arrows.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.normalLineThickness" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.normalLineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalLineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the thickness of the normal arrows.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.normalArrowheadStyle" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.normalArrowheadStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalArrowheadStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the arrowhead style of the normal arrows.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.translucency" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.translucency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translucency</span></code></a></p></td>
+<td><p>A Boolean specifying whether to set translucency.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.translucencyFactor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.translucencyFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translucencyFactor</span></code></a></p></td>
+<td><p>A Float specifying the translucency factor when <strong>translucency</strong> = ON.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeColorWireHide" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeColorWireHide"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeColorWireHide</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the edges of the model when <strong>renderStyle</strong> = WIREFRAME or HIDDEN.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeColorFillShade" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeColorFillShade"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeColorFillShade</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the edges of the model when <strong>renderStyle</strong> = FILLED or SHADED.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.fillColor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.fillColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fillColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to fill elements when <strong>renderStyle</strong> = FILLED or SHADED.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.labelFont" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.labelFont"><code class="xref py py-obj docutils literal notranslate"><span class="pre">labelFont</span></code></a></p></td>
+<td><p>A String specifying the label font to be used for all model labels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.elemLabelColor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.elemLabelColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elemLabelColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the element labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.faceLabelColor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.faceLabelColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">faceLabelColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the face labels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeLabelColor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeLabelColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeLabelColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the node labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolColor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSymbolColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the node symbols.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.faceNormalColor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.faceNormalColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">faceNormalColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the normal to a nonbeam element or to a surface.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.beamN1Color" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.beamN1Color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamN1Color</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot an arrow along the beam n1n1-direction.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.beamN2Color" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.beamN2Color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamN2Color</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot an arrow along the beam n2n2-direction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.beamTangentColor" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.beamTangentColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamTangentColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot an arrow along the tangent to a beam.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.coordinateScaleFactors" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.coordinateScaleFactors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordinateScaleFactors</span></code></a></p></td>
+<td><p>A tuple of three Floats specifying the coordinate scaling in each of the three coordinate directions when <strong>coordinateScale</strong> = ON.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues" title="abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([options, renderStyle, ...])</p></td>
+<td><p>This method modifies the CommonOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.CommonOptions.CommonOptions.autoDeformationScaleValue">
 <span class="sig-name descname"><span class="pre">autoDeformationScaleValue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/OdbDisplay/CommonOptions.py#L44-L46"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions.autoDeformationScaleValue" title="Permalink to this definition">#</a></dt>
@@ -935,6 +1192,202 @@ The ContourOptions object is derived from the DGContourOptions object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.contourType" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.contourType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contourType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the contour type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.numIntervals" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.numIntervals"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numIntervals</span></code></a></p></td>
+<td><p>An Int specifying the number of intervals when <strong>contourStyle</strong> = UNIFORM.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.intervalType" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.intervalType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">intervalType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the interval type of the contour plot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.maxAutoCompute" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.maxAutoCompute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maxAutoCompute</span></code></a></p></td>
+<td><p>A Boolean specifying whether the contour range maximum value should be computed from the output data to be contoured.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.maxValue" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.maxValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maxValue</span></code></a></p></td>
+<td><p>A Float specifying the contour range maximum value to be used in the plot when <strong>maxAutoCompute</strong> = ON.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.minAutoCompute" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.minAutoCompute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minAutoCompute</span></code></a></p></td>
+<td><p>A Boolean specifying whether the contour range minimum value should be computed from the output data to be contoured.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.minValue" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.minValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minValue</span></code></a></p></td>
+<td><p>A Float specifying the contour range minimum value to be used in the plot when <strong>minAutoCompute</strong> = ON.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.animationAutoLimits" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.animationAutoLimits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">animationAutoLimits</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the method to be used when contour limits are automatically computed for animation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.outsideLimitsMode" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.outsideLimitsMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">outsideLimitsMode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the color of contour values that exceed the limits of the plot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.extrapolatedAveraging" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.extrapolatedAveraging"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extrapolatedAveraging</span></code></a></p></td>
+<td><p>A Boolean specifying whether to auto-compute contour limits using extrapolated values alone or extrapolated values that are averaged.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.showMaxLocation" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.showMaxLocation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">showMaxLocation</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display location of maximum value.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.showMinLocation" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.showMinLocation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">showMinLocation</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display location of minimum value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.autoMaxValue" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.autoMaxValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoMaxValue</span></code></a></p></td>
+<td><p>A Float specifying the maximum value to be used in the plot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.autoMinValue" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.autoMinValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoMinValue</span></code></a></p></td>
+<td><p>A Float specifying the minimum value to be used in the plot.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.outsideLimitsAboveColor" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.outsideLimitsAboveColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">outsideLimitsAboveColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used for values that exceed the limits of the plot when <strong>outsideLimitsMode</strong> = SPECIFY.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.outsideLimitsBelowColor" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.outsideLimitsBelowColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">outsideLimitsBelowColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used for values that exceed the limits of the plot when <strong>outsideLimitsMode</strong> = SPECIFY.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.spectrum" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.spectrum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">spectrum</span></code></a></p></td>
+<td><p>A String specifying the name of the color spectrum to be used in the contour plot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.intervalValues" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.intervalValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">intervalValues</span></code></a></p></td>
+<td><p>A tuple of Floats specifying the interval values when <strong>intervalType</strong> = USER_DEFINED.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.contourMethod" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.contourMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contourMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the contour rendering method.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkPlots" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkPlots"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickmarkPlots</span></code></a></p></td>
+<td><p>A Boolean specifying whether tick mark plots should be displayed on line-type elements.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.contourStyle" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.contourStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contourStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the interval style of the contour plot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdges" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contourEdges</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the edges of each contour interval when <strong>contourType</strong> = BANDED or ISOSURFACE.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeStyle" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contourEdgeStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the edge line style to be used to plot the contour edges when <strong>contourType</strong> = BANDED or ISOSURFACE.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeThickness" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contourEdgeThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the edge line thickness to be used to plot the edge of the contour intervals when <strong>contourType</strong> = BANDED or ISOSURFACE.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.averagedOrientationDisplay" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.averagedOrientationDisplay"><code class="xref py py-obj docutils literal notranslate"><span class="pre">averagedOrientationDisplay</span></code></a></p></td>
+<td><p>A Boolean specifying the display of the nodal averaged coordinate systems used when averaging element vector or tensor data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.matchingPlyLabels" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.matchingPlyLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">matchingPlyLabels</span></code></a></p></td>
+<td><p>A Boolean specifying whether the label for the matching ply shows up in the viewport.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.colorByMatchingPlies" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.colorByMatchingPlies"><code class="xref py py-obj docutils literal notranslate"><span class="pre">colorByMatchingPlies</span></code></a></p></td>
+<td><p>A Boolean specifying whether the contour color is driven by the matching ply.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkAxisLength" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkAxisLength"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickmarkAxisLength</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the length of the tick mark plot axes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkBaseValue" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkBaseValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickmarkBaseValue</span></code></a></p></td>
+<td><p>A Float specifying the base contour value defining the tick mark axis contour value that intersects the elements.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkOrientation" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkOrientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickmarkOrientation</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the orientation of the tick mark plots.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.edgeColorLine" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.edgeColorLine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeColorLine</span></code></a></p></td>
+<td><p>A String specifying the edge color to be used when <strong>contourType</strong> = LINE.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.edgeColorBandedQuilt" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.edgeColorBandedQuilt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeColorBandedQuilt</span></code></a></p></td>
+<td><p>A String specifying the edge color to be used when <strong>contourType</strong> = BANDED or QUILT.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeColor" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contourEdgeColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the contour edges when <strong>contourType</strong> = BANDED or ISOSURFACE.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkCurveColor" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkCurveColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickmarkCurveColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the tick mark curve.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.intervalLineAttributes" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.intervalLineAttributes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">intervalLineAttributes</span></code></a></p></td>
+<td><p>A tuple of tuples of SymbolicConstants specifying the line style and line thickness for each interval in the plot when <strong>contourType</strong> = LINE.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">DGContourOptions</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.contourMethod" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.contourMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contourMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the contour rendering method.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkPlots" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkPlots"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickmarkPlots</span></code></a></p></td>
+<td><p>A Boolean specifying whether tick mark plots should be displayed on line-type elements.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.contourStyle" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.contourStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contourStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the interval style of the contour plot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdges" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contourEdges</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the edges of each contour interval when <strong>contourType</strong> = BANDED or ISOSURFACE.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeStyle" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contourEdgeStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the edge line style to be used to plot the contour edges when <strong>contourType</strong> = BANDED or ISOSURFACE.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeThickness" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contourEdgeThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the edge line thickness to be used to plot the edge of the contour intervals when <strong>contourType</strong> = BANDED or ISOSURFACE.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.averagedOrientationDisplay" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.averagedOrientationDisplay"><code class="xref py py-obj docutils literal notranslate"><span class="pre">averagedOrientationDisplay</span></code></a></p></td>
+<td><p>A Boolean specifying the display of the nodal averaged coordinate systems used when averaging element vector or tensor data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.matchingPlyLabels" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.matchingPlyLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">matchingPlyLabels</span></code></a></p></td>
+<td><p>A Boolean specifying whether the label for the matching ply shows up in the viewport.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.colorByMatchingPlies" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.colorByMatchingPlies"><code class="xref py py-obj docutils literal notranslate"><span class="pre">colorByMatchingPlies</span></code></a></p></td>
+<td><p>A Boolean specifying whether the contour color is driven by the matching ply.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkAxisLength" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkAxisLength"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickmarkAxisLength</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the length of the tick mark plot axes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkBaseValue" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkBaseValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickmarkBaseValue</span></code></a></p></td>
+<td><p>A Float specifying the base contour value defining the tick mark axis contour value that intersects the elements.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkOrientation" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkOrientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickmarkOrientation</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the orientation of the tick mark plots.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.edgeColorLine" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.edgeColorLine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeColorLine</span></code></a></p></td>
+<td><p>A String specifying the edge color to be used when <strong>contourType</strong> = LINE.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.edgeColorBandedQuilt" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.edgeColorBandedQuilt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeColorBandedQuilt</span></code></a></p></td>
+<td><p>A String specifying the edge color to be used when <strong>contourType</strong> = BANDED or QUILT.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeColor" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contourEdgeColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the contour edges when <strong>contourType</strong> = BANDED or ISOSURFACE.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkCurveColor" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkCurveColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tickmarkCurveColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the tick mark curve.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.intervalLineAttributes" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.intervalLineAttributes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">intervalLineAttributes</span></code></a></p></td>
+<td><p>A tuple of tuples of SymbolicConstants specifying the line style and line thickness for each interval in the plot when <strong>contourType</strong> = LINE.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues" title="abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([options, contourType, ...])</p></td>
+<td><p>This method modifies the ContourOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.ContourOptions.ContourOptions.animationAutoLimits">
 <span class="sig-name descname"><span class="pre">animationAutoLimits</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ALL_FRAMES'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/OdbDisplay/ContourOptions.py#L64-L69"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions.animationAutoLimits" title="Permalink to this definition">#</a></dt>
@@ -1338,6 +1791,50 @@ object.</p>
 </pre></div>
 </div>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.basicOptions" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.basicOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">basicOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.BasicOptions.BasicOptions" title="abaqus.PlotOptions.BasicOptions.BasicOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">BasicOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.commonOptions" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.commonOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">commonOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions" title="abaqus.OdbDisplay.CommonOptions.CommonOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.contourOptions" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.contourOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contourOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions" title="abaqus.OdbDisplay.ContourOptions.ContourOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ContourOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.displayBodyOptions" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.displayBodyOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayBodyOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayBodyOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.freeBodyOptions" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.freeBodyOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodyOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions" title="abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.streamOptions" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.streamOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">streamOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.StreamOptions.StreamOptions" title="abaqus.PlotOptions.StreamOptions.StreamOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">StreamOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.materialOrientationOptions" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.materialOrientationOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">materialOrientationOptions</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrientationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.superimposeOptions" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.superimposeOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">superimposeOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">SuperimposeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.symbolOptions" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.symbolOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">symbolOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.viewCutOptions" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.viewCutOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewCutOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.ViewCutOptions.ViewCutOptions" title="abaqus.PlotOptions.ViewCutOptions.ViewCutOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewCutOptions</span></code></a> object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.basicOptions">
 <span class="sig-name descname"><span class="pre">basicOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="plot_options.html#abaqus.PlotOptions.BasicOptions.BasicOptions" title="abaqus.PlotOptions.BasicOptions.BasicOptions"><span class="pre">BasicOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.PlotOptions.BasicOptions.BasicOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/OdbDisplay/DefaultOdbDisplay.py#L26-L27"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.basicOptions" title="Permalink to this definition">#</a></dt>
@@ -1456,6 +1953,124 @@ The DisplayBodyOptions object is derived from the DGDisplayBodyOptions object.</
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.visibleEdges" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.visibleEdges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visibleEdges</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying which edges to plot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeLineStyle" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeLineStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeLineStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the edge line style.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeLineThickness" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeLineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeLineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the edge line thickness.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.colorCodeOverride" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.colorCodeOverride"><code class="xref py py-obj docutils literal notranslate"><span class="pre">colorCodeOverride</span></code></a></p></td>
+<td><p>A Boolean specifying whether to allow color coded items in the output database to override the edge and fill color settings.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.elementShrink" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.elementShrink"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementShrink</span></code></a></p></td>
+<td><p>A Boolean specifying whether elements are displayed in a shrunk format.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.elementShrinkFactor" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.elementShrinkFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementShrinkFactor</span></code></a></p></td>
+<td><p>An Int specifying the percentage to shrink the elements when <strong>elementShrink</strong> = ON.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.coordinateScale" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.coordinateScale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordinateScale</span></code></a></p></td>
+<td><p>A Boolean specifying whether to scale coordinates.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.translucency" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.translucency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translucency</span></code></a></p></td>
+<td><p>A Boolean specifying whether to set translucency.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.translucencyFactor" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.translucencyFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translucencyFactor</span></code></a></p></td>
+<td><p>A Float specifying the translucency factor when <strong>translucency</strong> = ON.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeColorWireHide" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeColorWireHide"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeColorWireHide</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the edges of the model when <strong>renderStyle</strong> = WIREFRAME or HIDDEN.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeColorFillShade" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeColorFillShade"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeColorFillShade</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the edges of the model when <strong>renderStyle</strong> = FILLED or SHADED.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.fillColor" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.fillColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fillColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to fill elements when <strong>renderStyle</strong> = FILLED or SHADED.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.coordinateScaleFactors" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.coordinateScaleFactors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordinateScaleFactors</span></code></a></p></td>
+<td><p>A tuple of three Floats specifying the coordinate scaling in each of the three coordinate directions when <strong>coordinateScale</strong> = ON.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">DGDisplayBodyOptions</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.visibleEdges" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.visibleEdges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visibleEdges</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying which edges to plot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeLineStyle" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeLineStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeLineStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the edge line style.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeLineThickness" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeLineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeLineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the edge line thickness.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.colorCodeOverride" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.colorCodeOverride"><code class="xref py py-obj docutils literal notranslate"><span class="pre">colorCodeOverride</span></code></a></p></td>
+<td><p>A Boolean specifying whether to allow color coded items in the output database to override the edge and fill color settings.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.elementShrink" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.elementShrink"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementShrink</span></code></a></p></td>
+<td><p>A Boolean specifying whether elements are displayed in a shrunk format.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.elementShrinkFactor" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.elementShrinkFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementShrinkFactor</span></code></a></p></td>
+<td><p>An Int specifying the percentage to shrink the elements when <strong>elementShrink</strong> = ON.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.coordinateScale" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.coordinateScale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordinateScale</span></code></a></p></td>
+<td><p>A Boolean specifying whether to scale coordinates.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.translucency" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.translucency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translucency</span></code></a></p></td>
+<td><p>A Boolean specifying whether to set translucency.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.translucencyFactor" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.translucencyFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translucencyFactor</span></code></a></p></td>
+<td><p>A Float specifying the translucency factor when <strong>translucency</strong> = ON.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeColorWireHide" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeColorWireHide"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeColorWireHide</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the edges of the model when <strong>renderStyle</strong> = WIREFRAME or HIDDEN.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeColorFillShade" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeColorFillShade"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeColorFillShade</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the edges of the model when <strong>renderStyle</strong> = FILLED or SHADED.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.fillColor" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.fillColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fillColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to fill elements when <strong>renderStyle</strong> = FILLED or SHADED.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.coordinateScaleFactors" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.coordinateScaleFactors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordinateScaleFactors</span></code></a></p></td>
+<td><p>A tuple of three Floats specifying the coordinate scaling in each of the three coordinate directions when <strong>coordinateScale</strong> = ON.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([options, visibleEdges, ...])</p></td>
+<td><p>This method modifies the DisplayBodyOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.colorCodeOverride">
 <span class="sig-name descname"><span class="pre">colorCodeOverride</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/OdbDisplay/DisplayBodyOptions.py#L50-L52"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.colorCodeOverride" title="Permalink to this definition">#</a></dt>
@@ -1697,6 +2312,168 @@ other <strong>odbDisplay</strong> members are created and can be set to customiz
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.name" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the name of the output database associated with the OdbDisplay object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldSteps</span></code></a></p></td>
+<td><p>A tuple of Strings specifying field steps.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldVariables" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldVariables"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldVariables</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="field_report.html#abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList" title="abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbFieldVarList</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.modelVariableList" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.modelVariableList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">modelVariableList</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="field_report.html#abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList" title="abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbModelFieldVarList</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.nodeSet" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.nodeSet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSet</span></code></a></p></td>
+<td><p>A repository of OdbSet objects specifying the set label.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.elementSet" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.elementSet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementSet</span></code></a></p></td>
+<td><p>A repository of OdbSet objects specifying the set label.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.surfaceSet" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.surfaceSet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">surfaceSet</span></code></a></p></td>
+<td><p>A repository of OdbSet objects specifying the set label.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.display" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.display"><code class="xref py py-obj docutils literal notranslate"><span class="pre">display</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.DisplayOptions.DisplayOptions" title="abaqus.PlotOptions.DisplayOptions.DisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.contourOptions" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.contourOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contourOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions" title="abaqus.OdbDisplay.ContourOptions.ContourOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ContourOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.commonOptions" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.commonOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">commonOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions" title="abaqus.OdbDisplay.CommonOptions.CommonOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.symbolOptions" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.symbolOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">symbolOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.superimposeOptions" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.superimposeOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">superimposeOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">SuperimposeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.displayBodyOptions" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.displayBodyOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayBodyOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayBodyOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.freeBodyOptions" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.freeBodyOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodyOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions" title="abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.streamOptions" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.streamOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">streamOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.StreamOptions.StreamOptions" title="abaqus.PlotOptions.StreamOptions.StreamOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">StreamOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.viewCutOptions" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.viewCutOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewCutOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.ViewCutOptions.ViewCutOptions" title="abaqus.PlotOptions.ViewCutOptions.ViewCutOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewCutOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.viewCuts" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.viewCuts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewCuts</span></code></a></p></td>
+<td><p>A repository of ViewCut objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.displayGroup" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.displayGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayGroup</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="display.html#abaqus.DisplayGroup.DisplayGroup.DisplayGroup" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroup</span></code></a> object specifying the current display group and referring to an object in the <strong>displayGroups</strong> member of Session.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.displayGroupInstances" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.displayGroupInstances"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayGroupInstances</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="display.html#abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository" title="abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroupInstanceRepository</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.basicOptions" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.basicOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">basicOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.BasicOptions.BasicOptions" title="abaqus.PlotOptions.BasicOptions.BasicOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">BasicOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.materialOrientationOptions" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.materialOrientationOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">materialOrientationOptions</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrientationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldFrame" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldFrame</span></code></a></p></td>
+<td><p>A tuple of Strings specifying the step label and the frame label when the current step is user defined.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">primaryVariable</span></code></a></p></td>
+<td><p>A tuple specifying variables.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.deformedVariable" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.deformedVariable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deformedVariable</span></code></a></p></td>
+<td><p>A tuple specifying variables.For information on the sequence, see the member <strong>primaryVariable</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.statusVariable" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.statusVariable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">statusVariable</span></code></a></p></td>
+<td><p>A tuple of SymbolicConstants specifying variables.For information on the sequence, see the member <strong>primaryVariable</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.symbolVariable" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.symbolVariable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">symbolVariable</span></code></a></p></td>
+<td><p>A tuple of SymbolicConstants specifying variables.For information on the sequence, see the member <strong>primaryVariable</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.applyStatusToUndeformed" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.applyStatusToUndeformed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">applyStatusToUndeformed</span></code></a></p></td>
+<td><p>A tuple of SymbolicConstants specifying a Boolean to specify if elements are to be removed in undeformed states based on an active status variable</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.statusInsideRange" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.statusInsideRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">statusInsideRange</span></code></a></p></td>
+<td><p>A tuple of SymbolicConstants specifying a Boolean to specify if the status range should be inside a specified minimum and maximum.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.statusMinimum" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.statusMinimum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">statusMinimum</span></code></a></p></td>
+<td><p>A tuple of Floats specifying a Float value for the minimum status range value.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.statusMaximum" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.statusMaximum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">statusMaximum</span></code></a></p></td>
+<td><p>A tuple of Floats specifying a Float value for the maximum status range value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.useStatus" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.useStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">useStatus</span></code></a></p></td>
+<td><p>A tuple of SymbolicConstants specifying a Boolean to specify if elements are to be removed based on the status variable</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.firstFrame" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.firstFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">firstFrame</span></code></a></p></td>
+<td><p>A pair of Ints specifying the step index and the frame index of the first available frame.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.prevFrame" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.prevFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prevFrame</span></code></a></p></td>
+<td><p>A pair of Ints specifying the step index and the frame index of the frame previous to the current frame.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.nextFrame" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.nextFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nextFrame</span></code></a></p></td>
+<td><p>A pair of Ints specifying the step index and the frame index of the frame following the current frame.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.lastFrame" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.lastFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lastFrame</span></code></a></p></td>
+<td><p>A pair of Ints specifying the step index and the frame index of the last available frame.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.moveCameraToCsys" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.moveCameraToCsys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveCameraToCsys</span></code></a>()</p></td>
+<td><p>This method specifies a new position for the camera.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setDeformedVariable</span></code></a>(variableLabel, field)</p></td>
+<td><p>This method specifies the field output variable or FieldOutput object to be used when displaying the deformed shape of the model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setFrame" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setFrame</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setPrimaryVariable</span></code></a>(variableLabel, field, ...)</p></td>
+<td><p>This method specifies the field output variable for which to obtain results.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setPrimarySectionPoint</span></code></a>(sectionPoint, activePly)</p></td>
+<td><p>This method specifies the section point for the current primary, symbol and status variables.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setStatusVariable</span></code></a>(variableLabel, field, ...)</p></td>
+<td><p>This method specifies the field output variable for filtering element display based on a status criteria.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setSymbolVariable</span></code></a>(variableLabel, field, ...)</p></td>
+<td><p>This method specifies the field output variable for which to obtain results used for symbol plots.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setStreamVariable</span></code></a>(variableLabel)</p></td>
+<td><p>This method specifies the field output variable for which to obtain results used for stream plots.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([visibleDisplayGroups, viewCut, ...])</p></td>
+<td><p>This method specifies member values for the OdbDisplay object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ViewCut</span></code></a>(name, shape, origin, normal, axis2, ...)</p></td>
+<td><p>This method creates a ViewCut object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut">
 <span class="sig-name descname"><span class="pre">ViewCut</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normal</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csysName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cylinderAxis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">followDeformation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overrideAveraging</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FIRST_FRAME'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/OdbDisplay/OdbDisplay.py#L539-L624"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut" title="Permalink to this definition">#</a></dt>
@@ -2394,6 +3171,112 @@ The OrientationOptions object is derived from the DGOrientationOptions object.</
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis1" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">showAxis1</span></code></a></p></td>
+<td><p>A Boolean specifying whether axis 1 of the material orientation triad should be displayed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis2" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">showAxis2</span></code></a></p></td>
+<td><p>A Boolean specifying whether axis 2 of the material orientation triad should be displayed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis3" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">showAxis3</span></code></a></p></td>
+<td><p>A Boolean specifying whether axis 3 of the material orientation triad should be displayed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.symbolSize" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.symbolSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">symbolSize</span></code></a></p></td>
+<td><p>A Float specifying the size of the material orientation triad.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.lineThickness" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.lineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the thickness of the material orientation triad.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.orientation" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.orientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orientation</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the orientation used for composites.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.arrowheadStyle" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.arrowheadStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">arrowheadStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the arrowhead style for the material orientation triad.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.scaleMode" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.scaleMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scaleMode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the scaling basis for the material orientation triad.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis1Color" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis1Color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axis1Color</span></code></a></p></td>
+<td><p>A String specifying the color of axis 1 of the material orientation triad.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis2Color" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis2Color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axis2Color</span></code></a></p></td>
+<td><p>A String specifying the color of axis 2 of the material orientation triad.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis3Color" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis3Color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axis3Color</span></code></a></p></td>
+<td><p>A String specifying the color of axis 3 of the material orientation triad.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">DGOrientationOptions</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis1" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">showAxis1</span></code></a></p></td>
+<td><p>A Boolean specifying whether axis 1 of the material orientation triad should be displayed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis2" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">showAxis2</span></code></a></p></td>
+<td><p>A Boolean specifying whether axis 2 of the material orientation triad should be displayed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis3" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">showAxis3</span></code></a></p></td>
+<td><p>A Boolean specifying whether axis 3 of the material orientation triad should be displayed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.symbolSize" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.symbolSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">symbolSize</span></code></a></p></td>
+<td><p>A Float specifying the size of the material orientation triad.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.lineThickness" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.lineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the thickness of the material orientation triad.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.orientation" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.orientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orientation</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the orientation used for composites.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.arrowheadStyle" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.arrowheadStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">arrowheadStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the arrowhead style for the material orientation triad.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.scaleMode" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.scaleMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scaleMode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the scaling basis for the material orientation triad.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis1Color" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis1Color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axis1Color</span></code></a></p></td>
+<td><p>A String specifying the color of axis 1 of the material orientation triad.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis2Color" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis2Color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axis2Color</span></code></a></p></td>
+<td><p>A String specifying the color of axis 2 of the material orientation triad.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis3Color" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis3Color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axis3Color</span></code></a></p></td>
+<td><p>A String specifying the color of axis 3 of the material orientation triad.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([options, axis1Color, showAxis1, ...])</p></td>
+<td><p>This method modifies the OrientationOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.OrientationOptions.OrientationOptions.arrowheadStyle">
 <span class="sig-name descname"><span class="pre">arrowheadStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'NONE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/OdbDisplay/OrientationOptions.py#L61-L63"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions.arrowheadStyle" title="Permalink to this definition">#</a></dt>
@@ -2585,6 +3468,259 @@ The SuperimposeOptions object is derived from the DGSuperimposeOptions object.</
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.deformedOffsetMode" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.deformedOffsetMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deformedOffsetMode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the offset of the deformed shape from the undeformed shape.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.uniformOffset" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.uniformOffset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">uniformOffset</span></code></a></p></td>
+<td><p>A Float specifying the uniform offset value when <strong>deformedOffsetMode</strong> = UNIFORM.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nonuniformOffset" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nonuniformOffset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nonuniformOffset</span></code></a></p></td>
+<td><p>A tuple of three Floats specifying the offset value in each of the three coordinate directions when <strong>deformedOffsetMode</strong> = NONUNIFORM.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.renderStyle" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.renderStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">renderStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the render style of the plot.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.visibleEdges" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.visibleEdges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visibleEdges</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying which edges to plot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeLineStyle" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeLineStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeLineStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the edge line style.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeLineThickness" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeLineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeLineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the edge line thickness.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.colorCodeOverride" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.colorCodeOverride"><code class="xref py py-obj docutils literal notranslate"><span class="pre">colorCodeOverride</span></code></a></p></td>
+<td><p>A Boolean specifying whether to allow color coded items in the output database to override the edge and fill color settings.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elemLabels" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elemLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elemLabels</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the element labels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceLabels" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">faceLabels</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the face labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeLabels" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeLabels</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the node labels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbols" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSymbols</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the node symbols.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolType" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSymbolType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the node symbol types.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolSize" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSymbolSize</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the node symbol size.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elementShrink" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elementShrink"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementShrink</span></code></a></p></td>
+<td><p>A Boolean specifying whether elements are displayed in a shrunk format.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elementShrinkFactor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elementShrinkFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementShrinkFactor</span></code></a></p></td>
+<td><p>An Int specifying the percentage to shrink the elements when <strong>elementShrink</strong> = ON.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.coordinateScale" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.coordinateScale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordinateScale</span></code></a></p></td>
+<td><p>A Boolean specifying whether to scale coordinates.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normals" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normals"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normals</span></code></a></p></td>
+<td><p>A Boolean specifying whether to draw arrows that indicate the directions of element and surface normals.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalDisplay" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalDisplay"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalDisplay</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether to draw element normals and surface normals.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalArrowLength" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalArrowLength"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalArrowLength</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the length of the normal arrows.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalLineThickness" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalLineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalLineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the thickness of the normal arrows.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalArrowheadStyle" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalArrowheadStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalArrowheadStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the arrowhead style of the normal arrows.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.translucency" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.translucency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translucency</span></code></a></p></td>
+<td><p>A Boolean specifying whether to set translucency.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.translucencyFactor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.translucencyFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translucencyFactor</span></code></a></p></td>
+<td><p>A Float specifying the translucency factor when <strong>translucency</strong> = ON.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeColorWireHide" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeColorWireHide"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeColorWireHide</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the edges of the model when <strong>renderStyle</strong> = WIREFRAME or HIDDEN.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeColorFillShade" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeColorFillShade"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeColorFillShade</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the edges of the model when <strong>renderStyle</strong> = FILLED or SHADED.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.fillColor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.fillColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fillColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to fill elements when <strong>renderStyle</strong> = FILLED or SHADED.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.labelFont" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.labelFont"><code class="xref py py-obj docutils literal notranslate"><span class="pre">labelFont</span></code></a></p></td>
+<td><p>A String specifying the label font to be used for all model labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elemLabelColor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elemLabelColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elemLabelColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the element labels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceLabelColor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceLabelColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">faceLabelColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the face labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeLabelColor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeLabelColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeLabelColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the node labels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolColor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSymbolColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the node symbols.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceNormalColor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceNormalColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">faceNormalColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the normal to a nonbeam element or to a surface.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamN1Color" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamN1Color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamN1Color</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot an arrow along the beam n1n1-direction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamN2Color" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamN2Color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamN2Color</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot an arrow along the beam n2n2-direction.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamTangentColor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamTangentColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamTangentColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot an arrow along the tangent to a beam.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.coordinateScaleFactors" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.coordinateScaleFactors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordinateScaleFactors</span></code></a></p></td>
+<td><p>A tuple of three Floats specifying the coordinate scaling in each of the three coordinate directions when <strong>coordinateScale</strong> = ON.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">DGSuperimposeOptions</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.renderStyle" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.renderStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">renderStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the render style of the plot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.visibleEdges" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.visibleEdges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visibleEdges</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying which edges to plot.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeLineStyle" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeLineStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeLineStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the edge line style.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeLineThickness" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeLineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeLineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the edge line thickness.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.colorCodeOverride" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.colorCodeOverride"><code class="xref py py-obj docutils literal notranslate"><span class="pre">colorCodeOverride</span></code></a></p></td>
+<td><p>A Boolean specifying whether to allow color coded items in the output database to override the edge and fill color settings.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elemLabels" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elemLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elemLabels</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the element labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceLabels" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">faceLabels</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the face labels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeLabels" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeLabels</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the node labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbols" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSymbols</span></code></a></p></td>
+<td><p>A Boolean specifying whether to plot the node symbols.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolType" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSymbolType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the node symbol types.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolSize" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSymbolSize</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the node symbol size.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elementShrink" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elementShrink"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementShrink</span></code></a></p></td>
+<td><p>A Boolean specifying whether elements are displayed in a shrunk format.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elementShrinkFactor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elementShrinkFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementShrinkFactor</span></code></a></p></td>
+<td><p>An Int specifying the percentage to shrink the elements when <strong>elementShrink</strong> = ON.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.coordinateScale" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.coordinateScale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordinateScale</span></code></a></p></td>
+<td><p>A Boolean specifying whether to scale coordinates.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normals" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normals"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normals</span></code></a></p></td>
+<td><p>A Boolean specifying whether to draw arrows that indicate the directions of element and surface normals.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalDisplay" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalDisplay"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalDisplay</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether to draw element normals and surface normals.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalArrowLength" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalArrowLength"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalArrowLength</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the length of the normal arrows.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalLineThickness" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalLineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalLineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the thickness of the normal arrows.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalArrowheadStyle" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalArrowheadStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalArrowheadStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the arrowhead style of the normal arrows.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.translucency" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.translucency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translucency</span></code></a></p></td>
+<td><p>A Boolean specifying whether to set translucency.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.translucencyFactor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.translucencyFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translucencyFactor</span></code></a></p></td>
+<td><p>A Float specifying the translucency factor when <strong>translucency</strong> = ON.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeColorWireHide" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeColorWireHide"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeColorWireHide</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the edges of the model when <strong>renderStyle</strong> = WIREFRAME or HIDDEN.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeColorFillShade" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeColorFillShade"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edgeColorFillShade</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the edges of the model when <strong>renderStyle</strong> = FILLED or SHADED.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.fillColor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.fillColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fillColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to fill elements when <strong>renderStyle</strong> = FILLED or SHADED.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.labelFont" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.labelFont"><code class="xref py py-obj docutils literal notranslate"><span class="pre">labelFont</span></code></a></p></td>
+<td><p>A String specifying the label font to be used for all model labels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elemLabelColor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elemLabelColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elemLabelColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the element labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceLabelColor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceLabelColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">faceLabelColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the face labels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeLabelColor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeLabelColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeLabelColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the node labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolColor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeSymbolColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the node symbols.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceNormalColor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceNormalColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">faceNormalColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot the normal to a nonbeam element or to a surface.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamN1Color" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamN1Color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamN1Color</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot an arrow along the beam n1n1-direction.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamN2Color" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamN2Color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamN2Color</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot an arrow along the beam n2n2-direction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamTangentColor" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamTangentColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamTangentColor</span></code></a></p></td>
+<td><p>A String specifying the color to be used to plot an arrow along the tangent to a beam.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.coordinateScaleFactors" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.coordinateScaleFactors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordinateScaleFactors</span></code></a></p></td>
+<td><p>A tuple of three Floats specifying the coordinate scaling in each of the three coordinate directions when <strong>coordinateScale</strong> = ON.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([options, renderStyle, ...])</p></td>
+<td><p>This method modifies the SuperimposeOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamN1Color">
 <span class="sig-name descname"><span class="pre">beamN1Color</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/OdbDisplay/SuperimposeOptions.py#L168-L170"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamN1Color" title="Permalink to this definition">#</a></dt>
@@ -3032,6 +4168,262 @@ The SymbolOptions object is derived from the DGSymbolOptions object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorQuantity" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorQuantity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorQuantity</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the vector quantity to display.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorMaxValueAutoCompute" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorMaxValueAutoCompute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorMaxValueAutoCompute</span></code></a></p></td>
+<td><p>A Boolean specifying whether the maximum vector value is to be computed automatically.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorMaxValue" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorMaxValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorMaxValue</span></code></a></p></td>
+<td><p>A Float specifying the user-specified maximum vector value.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorMinValueAutoCompute" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorMinValueAutoCompute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorMinValueAutoCompute</span></code></a></p></td>
+<td><p>A Boolean specifying whether the minimum vector value is to be computed automatically.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorMinValue" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorMinValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorMinValue</span></code></a></p></td>
+<td><p>A Float specifying the user-specified minimum vector value.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorQuantity" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorQuantity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorQuantity</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the tensor quantity to display.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMaxValueAutoCompute" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMaxValueAutoCompute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorMaxValueAutoCompute</span></code></a></p></td>
+<td><p>A Boolean specifying whether the maximum tensor value is to be computed automatically.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMaxValue" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMaxValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorMaxValue</span></code></a></p></td>
+<td><p>A Float specifying the user-specified maximum tensor value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMinValueAutoCompute" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMinValueAutoCompute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorMinValueAutoCompute</span></code></a></p></td>
+<td><p>A Boolean specifying whether the minimum tensor value is to be computed automatically.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMinValue" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMinValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorMinValue</span></code></a></p></td>
+<td><p>A Float specifying the user-specified minimum tensor value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.autoVectorMaxValue" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.autoVectorMaxValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoVectorMaxValue</span></code></a></p></td>
+<td><p>The SymbolicConstant NOT_SET or a Float specifying the vector maximum value when <strong>vectorMaxValueAutoCompute</strong> = ON.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.autoVectorMinValue" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.autoVectorMinValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoVectorMinValue</span></code></a></p></td>
+<td><p>The SymbolicConstant NOT_SET or a Float specifying the vector minimum value when <strong>vectorMinValueAutoCompute</strong> = ON.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.autoTensorMaxValue" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.autoTensorMaxValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoTensorMaxValue</span></code></a></p></td>
+<td><p>The SymbolicConstant NOT_SET or a Float specifying the tensor maximum value when <strong>tensorMaxValueAutoCompute</strong> = ON.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.autoTensorMinValue" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.autoTensorMinValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoTensorMinValue</span></code></a></p></td>
+<td><p>The SymbolicConstant NOT_SET or a Float specifying the tensor minimum value when <strong>tensorMinValueAutoCompute</strong> = ON.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorLineThickness" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorLineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorLineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the vector line thickness.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColorMethod" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColorMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorColorMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the vector color method.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorColorMethod" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorColorMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorColorMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the tensor color method.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorArrowheadStyle" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorArrowheadStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorArrowheadStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the vector arrowhead style.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.arrowSymbolSize" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.arrowSymbolSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">arrowSymbolSize</span></code></a></p></td>
+<td><p>An Int specifying the length of vector and tensor symbols.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorIntervalNumber" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorIntervalNumber"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorIntervalNumber</span></code></a></p></td>
+<td><p>An Int specifying the number of color intervals for vector symbols.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.symbolDensity" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.symbolDensity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">symbolDensity</span></code></a></p></td>
+<td><p>A Float specifying the factor for randomized sampling.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.constantLengthArrows" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.constantLengthArrows"><code class="xref py py-obj docutils literal notranslate"><span class="pre">constantLengthArrows</span></code></a></p></td>
+<td><p>A Boolean specifying whether to use constant-length arrows for vector symbols.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorIntervalNumber" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorIntervalNumber"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorIntervalNumber</span></code></a></p></td>
+<td><p>An Int specifying the number of color intervals for tensor symbols.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorLineThickness" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorLineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorLineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the line thickness of the tensor symbols.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorArrowheadStyle" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorArrowheadStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorArrowheadStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the arrowhead style of the tensor symbols.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numberFormatT" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numberFormatT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numberFormatT</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the number format for tensor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numberFormatV" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numberFormatV"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numberFormatV</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the number format for vector.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.arrowScaleMode" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.arrowScaleMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">arrowScaleMode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the arrow scaling mode.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.drawLabelT" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.drawLabelT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawLabelT</span></code></a></p></td>
+<td><p>A Boolean specifying whether to draw tensor labels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.drawLabelV" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.drawLabelV"><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawLabelV</span></code></a></p></td>
+<td><p>A Boolean specifying whether to draw vector labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numDigitsT" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numDigitsT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numDigitsT</span></code></a></p></td>
+<td><p>An Int specifying the number of digits in the tensor label.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numDigitsV" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numDigitsV"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numDigitsV</span></code></a></p></td>
+<td><p>An Int specifying the number of digits in the vector label.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColor" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorColor</span></code></a></p></td>
+<td><p>A String specifying the vector color.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColorSpectrum" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColorSpectrum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorColorSpectrum</span></code></a></p></td>
+<td><p>A String specifying the vector color spectrum name.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorColorSpectrum" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorColorSpectrum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorColorSpectrum</span></code></a></p></td>
+<td><p>A String specifying the tensor color spectrum name.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textColorT" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textColorT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">textColorT</span></code></a></p></td>
+<td><p>A String specifying the text color for tensor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textColorV" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textColorV"><code class="xref py py-obj docutils literal notranslate"><span class="pre">textColorV</span></code></a></p></td>
+<td><p>A String specifying the text color for vector.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textFontT" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textFontT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">textFontT</span></code></a></p></td>
+<td><p>A String specifying the text font for tensor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textFontV" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textFontV"><code class="xref py py-obj docutils literal notranslate"><span class="pre">textFontV</span></code></a></p></td>
+<td><p>A String specifying the text font for vector.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMaxPrinColor" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMaxPrinColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorMaxPrinColor</span></code></a></p></td>
+<td><p>A String specifying the color of the maximum principal tensor symbols.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMinPrinColor" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMinPrinColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorMinPrinColor</span></code></a></p></td>
+<td><p>A String specifying the color of the minimum principal tensor symbols.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMidPrinColor" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMidPrinColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorMidPrinColor</span></code></a></p></td>
+<td><p>A String specifying the color of the intermediate principal tensor symbols.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorSelectedPrinColor" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorSelectedPrinColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorSelectedPrinColor</span></code></a></p></td>
+<td><p>A String specifying the color of the selected principal tensor symbols.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">DGSymbolOptions</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorLineThickness" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorLineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorLineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the vector line thickness.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColorMethod" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColorMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorColorMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the vector color method.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorColorMethod" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorColorMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorColorMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the tensor color method.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorArrowheadStyle" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorArrowheadStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorArrowheadStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the vector arrowhead style.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.arrowSymbolSize" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.arrowSymbolSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">arrowSymbolSize</span></code></a></p></td>
+<td><p>An Int specifying the length of vector and tensor symbols.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorIntervalNumber" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorIntervalNumber"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorIntervalNumber</span></code></a></p></td>
+<td><p>An Int specifying the number of color intervals for vector symbols.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.symbolDensity" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.symbolDensity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">symbolDensity</span></code></a></p></td>
+<td><p>A Float specifying the factor for randomized sampling.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.constantLengthArrows" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.constantLengthArrows"><code class="xref py py-obj docutils literal notranslate"><span class="pre">constantLengthArrows</span></code></a></p></td>
+<td><p>A Boolean specifying whether to use constant-length arrows for vector symbols.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorIntervalNumber" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorIntervalNumber"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorIntervalNumber</span></code></a></p></td>
+<td><p>An Int specifying the number of color intervals for tensor symbols.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorLineThickness" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorLineThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorLineThickness</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the line thickness of the tensor symbols.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorArrowheadStyle" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorArrowheadStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorArrowheadStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the arrowhead style of the tensor symbols.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numberFormatT" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numberFormatT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numberFormatT</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the number format for tensor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numberFormatV" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numberFormatV"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numberFormatV</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the number format for vector.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.arrowScaleMode" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.arrowScaleMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">arrowScaleMode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the arrow scaling mode.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.drawLabelT" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.drawLabelT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawLabelT</span></code></a></p></td>
+<td><p>A Boolean specifying whether to draw tensor labels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.drawLabelV" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.drawLabelV"><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawLabelV</span></code></a></p></td>
+<td><p>A Boolean specifying whether to draw vector labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numDigitsT" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numDigitsT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numDigitsT</span></code></a></p></td>
+<td><p>An Int specifying the number of digits in the tensor label.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numDigitsV" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numDigitsV"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numDigitsV</span></code></a></p></td>
+<td><p>An Int specifying the number of digits in the vector label.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColor" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorColor</span></code></a></p></td>
+<td><p>A String specifying the vector color.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColorSpectrum" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColorSpectrum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorColorSpectrum</span></code></a></p></td>
+<td><p>A String specifying the vector color spectrum name.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorColorSpectrum" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorColorSpectrum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorColorSpectrum</span></code></a></p></td>
+<td><p>A String specifying the tensor color spectrum name.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textColorT" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textColorT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">textColorT</span></code></a></p></td>
+<td><p>A String specifying the text color for tensor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textColorV" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textColorV"><code class="xref py py-obj docutils literal notranslate"><span class="pre">textColorV</span></code></a></p></td>
+<td><p>A String specifying the text color for vector.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textFontT" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textFontT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">textFontT</span></code></a></p></td>
+<td><p>A String specifying the text font for tensor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textFontV" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textFontV"><code class="xref py py-obj docutils literal notranslate"><span class="pre">textFontV</span></code></a></p></td>
+<td><p>A String specifying the text font for vector.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMaxPrinColor" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMaxPrinColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorMaxPrinColor</span></code></a></p></td>
+<td><p>A String specifying the color of the maximum principal tensor symbols.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMinPrinColor" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMinPrinColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorMinPrinColor</span></code></a></p></td>
+<td><p>A String specifying the color of the minimum principal tensor symbols.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMidPrinColor" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMidPrinColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorMidPrinColor</span></code></a></p></td>
+<td><p>A String specifying the color of the intermediate principal tensor symbols.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorSelectedPrinColor" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorSelectedPrinColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorSelectedPrinColor</span></code></a></p></td>
+<td><p>A String specifying the color of the selected principal tensor symbols.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([options, vectorQuantity, ...])</p></td>
+<td><p>This method modifies the SymbolOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.SymbolOptions.SymbolOptions.arrowScaleMode">
 <span class="sig-name descname"><span class="pre">arrowScaleMode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'MODEL_SIZE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/OdbDisplay/SymbolOptions.py#L145-L147"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions.arrowScaleMode" title="Permalink to this definition">#</a></dt>
@@ -3470,6 +4862,87 @@ session.viewports[name].odbDisplay.viewCuts repository.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.angle" title="abaqus.OdbDisplay.ViewCut.ViewCut.angle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">angle</span></code></a></p></td>
+<td><p>A Float specifying the rotation angle of the cut defined with a <strong>shape</strong> set to PLANE.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.motion" title="abaqus.OdbDisplay.ViewCut.ViewCut.motion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">motion</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of motion for the cut defined with a <strong>shape</strong> set to PLANE.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.position" title="abaqus.OdbDisplay.ViewCut.ViewCut.position"><code class="xref py py-obj docutils literal notranslate"><span class="pre">position</span></code></a></p></td>
+<td><p>A Float specifying the position of the cut defined with a <strong>shape</strong> set to PLANE.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.radius" title="abaqus.OdbDisplay.ViewCut.ViewCut.radius"><code class="xref py py-obj docutils literal notranslate"><span class="pre">radius</span></code></a></p></td>
+<td><p>A Float specifying the radius of the cut defined with a <strong>shape</strong> set to CYLINDER or SPHERE.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.rotationAxis" title="abaqus.OdbDisplay.ViewCut.ViewCut.rotationAxis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rotationAxis</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the rotation axis for the cut defined with a <strong>shape</strong> set to PLANE.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.value" title="abaqus.OdbDisplay.ViewCut.ViewCut.value"><code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code></a></p></td>
+<td><p>A Float specifying the value of the cut defined with a <strong>shape</strong> set to ISOSURFACE.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.showModelAboveCut" title="abaqus.OdbDisplay.ViewCut.ViewCut.showModelAboveCut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">showModelAboveCut</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the model above the cut.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.showModelOnCut" title="abaqus.OdbDisplay.ViewCut.ViewCut.showModelOnCut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">showModelOnCut</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the model on the cut.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.showModelBelowCut" title="abaqus.OdbDisplay.ViewCut.ViewCut.showModelBelowCut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">showModelBelowCut</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the model below the cut.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.showFreeBodyCut" title="abaqus.OdbDisplay.ViewCut.ViewCut.showFreeBodyCut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">showFreeBodyCut</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the free body cut.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.active" title="abaqus.OdbDisplay.ViewCut.ViewCut.active"><code class="xref py py-obj docutils literal notranslate"><span class="pre">active</span></code></a></p></td>
+<td><p>A Boolean specifying whether the cut is displayed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.cutRange" title="abaqus.OdbDisplay.ViewCut.ViewCut.cutRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cutRange</span></code></a></p></td>
+<td><p>A pair of Floats specifying the acceptable range for positioning the cut.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.followDeformation" title="abaqus.OdbDisplay.ViewCut.ViewCut.followDeformation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">followDeformation</span></code></a></p></td>
+<td><p>A Boolean specifying whether the cut will follow the deformation or be static.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.overrideAveraging" title="abaqus.OdbDisplay.ViewCut.ViewCut.overrideAveraging"><code class="xref py py-obj docutils literal notranslate"><span class="pre">overrideAveraging</span></code></a></p></td>
+<td><p>A Boolean specifying averaging for element based fields associated with isosurface cuts will be set to compute-average with a threshold of 100% when true.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.referenceFrame" title="abaqus.OdbDisplay.ViewCut.ViewCut.referenceFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">referenceFrame</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying which reference frame will be used when the cut follows the deformation.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, shape, origin, normal, axis2, ...)</p></td>
+<td><p>This method creates a ViewCut object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.setValues" title="abaqus.OdbDisplay.ViewCut.ViewCut.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([angle, motion, position, radius, ...])</p></td>
+<td><p>This method modifies the ViewCut object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut.updateVariable" title="abaqus.OdbDisplay.ViewCut.ViewCut.updateVariable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">updateVariable</span></code></a>()</p></td>
+<td><p>This method updates the field associated with an isosurface cut to be consistent with the current primary variable.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.ViewCut.ViewCut.active">
 <span class="sig-name descname"><span class="pre">active</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/OdbDisplay/ViewCut.py#L57-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.ViewCut.ViewCut.active" title="Permalink to this definition">#</a></dt>
@@ -3743,6 +5216,23 @@ a session is started.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues" title="abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([primaryVariableCaching, ...])</p></td>
+<td><p>This method modifies the ViewerOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">primaryVariableCaching</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deformedVariableCaching</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cutVariableCaching</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odbUpdateChecking</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odbUpdateCheckInterval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/OdbDisplay/ViewerOptions.py#L18-L47"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues" title="Permalink to this definition">#</a></dt>

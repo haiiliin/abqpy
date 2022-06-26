@@ -13,6 +13,7 @@ The Python language is used throughout Abaqus, not only in the Abaqus Scripting 
    introduction/python-abaqus
    introduction/python-resources
    introduction/python-interpreter
+   introduction/oop-basics
    introduction/python-basics
    introduction/programming
    introduction/further-reading

@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -634,6 +635,26 @@ objects derived from the Field.</p>
 </pre></div>
 </div>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.Field.Field.name" title="abaqus.Field.Field.Field.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.Field.Field.description" title="abaqus.Field.Field.Field.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
+<td><p>A String specifying the description of the field.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Field.Field.Field.description">
 <span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/Field.py#L1-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.Field.Field.description" title="Permalink to this definition">#</a></dt>
@@ -680,6 +701,64 @@ The AnalyticalField object is derived from the Field object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.AnalyticalField.AnalyticalField.name" title="abaqus.Field.AnalyticalField.AnalyticalField.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.AnalyticalField.AnalyticalField.localCsys" title="abaqus.Field.AnalyticalField.AnalyticalField.localCsys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">localCsys</span></code></a></p></td>
+<td><p>None or a DatumCsys object specifying the local coordinate system of the field.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.AnalyticalField.AnalyticalField.description" title="abaqus.Field.AnalyticalField.AnalyticalField.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
+<td><p>A String specifying the description of the field.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.AnalyticalField.AnalyticalField.odbMeshRegionData" title="abaqus.Field.AnalyticalField.AnalyticalField.odbMeshRegionData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbMeshRegionData</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbMeshRegionData</span></code></a> object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Field</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.AnalyticalField.AnalyticalField.name" title="abaqus.Field.AnalyticalField.AnalyticalField.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.AnalyticalField.AnalyticalField.description" title="abaqus.Field.AnalyticalField.AnalyticalField.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
+<td><p>A String specifying the description of the field.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData" title="abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OdbMeshRegionData</span></code></a>(odbFileName, variableLabel)</p></td>
+<td><p>This method creates an OdbMeshRegionData object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData">
 <span class="sig-name descname"><span class="pre">OdbMeshRegionData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">odbFileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variableLabel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepIndex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frameIndex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputPosition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UNDEFINED_POSITION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SCALAR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">storageType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FLOAT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityToPlot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FIELD_OUTPUT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">averageElementOutput</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useRegionBoundaries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regionBoundaries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NONE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">includeFeatureBoundaries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">featureAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">averageOnlyDisplayed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">averagingThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">75</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">computeOrder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EXTRAPOLATE_COMPUTE_AVERAGE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'REAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sectionPoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refinementType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refinementLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displayOutputPosition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/AnalyticalField.py#L36-L217"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData" title="Permalink to this definition">#</a></dt>
@@ -873,6 +952,35 @@ value is None.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.DataTable.DataTable.dataWidth" title="abaqus.Field.DataTable.DataTable.dataWidth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dataWidth</span></code></a></p></td>
+<td><p>An Int specifying the width of the data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.DataTable.DataTable.name" title="abaqus.Field.DataTable.DataTable.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the index.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.DataTable.DataTable.instanceName" title="abaqus.Field.DataTable.DataTable.instanceName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">instanceName</span></code></a></p></td>
+<td><p>A String specifying the instance name.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.DataTable.DataTable.domain" title="abaqus.Field.DataTable.DataTable.domain"><code class="xref py py-obj docutils literal notranslate"><span class="pre">domain</span></code></a></p></td>
+<td><p>A tuple of Ints specifying the domain node, element or integration point identifiers.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.DataTable.DataTable.table" title="abaqus.Field.DataTable.DataTable.table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">table</span></code></a></p></td>
+<td><p>A tuple of Floats specifying the data within the domain.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Field.DataTable.DataTable.dataWidth">
 <span class="sig-name descname"><span class="pre">dataWidth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DataTable.py#L13-L15"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DataTable.DataTable.dataWidth" title="Permalink to this definition">#</a></dt>
@@ -926,6 +1034,135 @@ scalar data, orientations and 4D tensors.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.DataTableArray.DataTableArray.findAt" title="abaqus.Field.DataTableArray.DataTableArray.findAt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">findAt</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__repr__</span></code>(/)</p></td>
+<td><p>Return repr(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getattribute__</span></code>(name, /)</p></td>
+<td><p>Return getattr(self, name).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__lt__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__le__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__eq__</span></code>(value, /)</p></td>
+<td><p>Return self==value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ne__</span></code>(value, /)</p></td>
+<td><p>Return self!=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__gt__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ge__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iter__</span></code>(/)</p></td>
+<td><p>Implement iter(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code>(/)</p></td>
+<td><p>Return len(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code></p></td>
+<td><p>x.__getitem__(y) &lt;==&gt; x[y]</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__setitem__</span></code>(key, value, /)</p></td>
+<td><p>Set self[key] to value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__delitem__</span></code>(key, /)</p></td>
+<td><p>Delete self[key].</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__add__</span></code>(value, /)</p></td>
+<td><p>Return self+value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__mul__</span></code>(value, /)</p></td>
+<td><p>Return self*value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__rmul__</span></code>(value, /)</p></td>
+<td><p>Return value*self.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__contains__</span></code>(key, /)</p></td>
+<td><p>Return key in self.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iadd__</span></code>(value, /)</p></td>
+<td><p>Implement self+=value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__imul__</span></code>(value, /)</p></td>
+<td><p>Implement self*=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__reversed__</span></code>(/)</p></td>
+<td><p>Return a reverse iterator over the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__sizeof__</span></code>(/)</p></td>
+<td><p>Return the size of the list in memory, in bytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code>(/)</p></td>
+<td><p>Remove all items from list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code>(/)</p></td>
+<td><p>Return a shallow copy of the list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">append</span></code>(object, /)</p></td>
+<td><p>Append object to the end of the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert</span></code>(index, object, /)</p></td>
+<td><p>Insert object before index.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">extend</span></code>(iterable, /)</p></td>
+<td><p>Extend list by appending elements from the iterable.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code>([index])</p></td>
+<td><p>Remove and return item at index (default last).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove</span></code>(value, /)</p></td>
+<td><p>Remove first occurrence of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">index</span></code>(value[, start, stop])</p></td>
+<td><p>Return first index of value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">count</span></code>(value, /)</p></td>
+<td><p>Return number of occurrences of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reverse</span></code>(/)</p></td>
+<td><p>Reverse <em>IN PLACE</em>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sort</span></code>(*[, key, reverse])</p></td>
+<td><p>Sort the list in ascending order and return None.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__class_getitem__</span></code></p></td>
+<td><p>See PEP 585</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Field.DataTableArray.DataTableArray.findAt">
 <span class="sig-name descname"><span class="pre">findAt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DataTableArray.py#L5-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DataTableArray.DataTableArray.findAt" title="Permalink to this definition">#</a></dt>
@@ -977,6 +1214,79 @@ The DiscreteField object is derived from the Field object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.DiscreteField.DiscreteField.location" title="abaqus.Field.DiscreteField.DiscreteField.location"><code class="xref py py-obj docutils literal notranslate"><span class="pre">location</span></code></a></p></td>
+<td><p>A SymbolicConstant or an Int specifying the location of the domain data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.DiscreteField.DiscreteField.dataWidth" title="abaqus.Field.DiscreteField.DiscreteField.dataWidth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dataWidth</span></code></a></p></td>
+<td><p>An Int specifying the width of the supplied data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.DiscreteField.DiscreteField.data" title="abaqus.Field.DiscreteField.DiscreteField.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Field.DataTableArray.DataTableArray" title="abaqus.Field.DataTableArray.DataTableArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataTableArray</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.DiscreteField.DiscreteField.description" title="abaqus.Field.DiscreteField.DiscreteField.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
+<td><p>A String specifying the description of the field.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.DiscreteField.DiscreteField.orientationType" title="abaqus.Field.DiscreteField.DiscreteField.orientationType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orientationType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of the system being described by a discrete field used for an orientation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.DiscreteField.DiscreteField.partLevelOrientation" title="abaqus.Field.DiscreteField.DiscreteField.partLevelOrientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">partLevelOrientation</span></code></a></p></td>
+<td><p>A Boolean specifying whether or not the orientations are described in terms of part level coordinates.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Field</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.DiscreteField.DiscreteField.description" title="abaqus.Field.DiscreteField.DiscreteField.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
+<td><p>A String specifying the description of the field.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, defaultValues, fieldType[, ...])</p></td>
+<td><p>This method creates a DiscreteField object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction" title="abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DiscreteFieldByVolumeFraction</span></code></a>(name, ...[, ...])</p></td>
+<td><p>This method creates a DiscreteField object that represents the volume fraction of each element of an Eulerian Instance that is occupied by a reference instance.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic" title="abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DiscreteFieldFromAnalytic</span></code></a>(name, location, ...)</p></td>
+<td><p>This method creates a DiscreteField object from a AnalyticalField object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.DiscreteField.DiscreteField.setValues" title="abaqus.Field.DiscreteField.DiscreteField.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([location, dataWidth, data, ...])</p></td>
+<td><p>This method modifies the DiscreteField object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction">
 <span class="sig-name descname"><span class="pre">DiscreteFieldByVolumeFraction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eulerianInstance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceInstance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">accuracy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MEDIUM'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">materialLocation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'INSIDE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scaleFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DiscreteField.py#L113-L164"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction" title="Permalink to this definition">#</a></dt>
@@ -1187,6 +1497,96 @@ The ExpressionField object is derived from the AnalyticalField object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.ExpressionField.ExpressionField.localCsys" title="abaqus.Field.ExpressionField.ExpressionField.localCsys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">localCsys</span></code></a></p></td>
+<td><p>None or a DatumCsys object specifying the local coordinate system of the field.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.ExpressionField.ExpressionField.description" title="abaqus.Field.ExpressionField.ExpressionField.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
+<td><p>A String specifying the description of the field.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">AnalyticalField</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.ExpressionField.ExpressionField.localCsys" title="abaqus.Field.ExpressionField.ExpressionField.localCsys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">localCsys</span></code></a></p></td>
+<td><p>None or a DatumCsys object specifying the local coordinate system of the field.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.ExpressionField.ExpressionField.description" title="abaqus.Field.ExpressionField.ExpressionField.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
+<td><p>A String specifying the description of the field.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbMeshRegionData</span></code></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbMeshRegionData</span></code></a> object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Field</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.ExpressionField.ExpressionField.description" title="abaqus.Field.ExpressionField.ExpressionField.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
+<td><p>A String specifying the description of the field.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, expression[, localCsys, ...])</p></td>
+<td><p>This method creates an ExpressionField object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.ExpressionField.ExpressionField.setValues" title="abaqus.Field.ExpressionField.ExpressionField.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([localCsys, description])</p></td>
+<td><p>This method modifies the ExpressionField object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">AnalyticalField</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">OdbMeshRegionData</span></code>(odbFileName, variableLabel)</p></td>
+<td><p>This method creates an OdbMeshRegionData object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Field.ExpressionField.ExpressionField.description">
 <span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/ExpressionField.py#L30-L31"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.ExpressionField.ExpressionField.description" title="Permalink to this definition">#</a></dt>
@@ -1268,6 +1668,147 @@ The MappedField object is derived from the AnalyticalField object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.name" title="abaqus.Field.MappedField.MappedField.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.regionType" title="abaqus.Field.MappedField.MappedField.regionType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">regionType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the data source region type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.partLevelData" title="abaqus.Field.MappedField.MappedField.partLevelData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">partLevelData</span></code></a></p></td>
+<td><p>A Boolean specifying whether or not the point cloud source data are described in terms of part level coordinates.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.pointDataFormat" title="abaqus.Field.MappedField.MappedField.pointDataFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pointDataFormat</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying point cloud source data format.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.gridPointPlane" title="abaqus.Field.MappedField.MappedField.gridPointPlane"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gridPointPlane</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the plane on which the point cloud source data of grid format are described.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.defaultUnMappedValue" title="abaqus.Field.MappedField.MappedField.defaultUnMappedValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultUnMappedValue</span></code></a></p></td>
+<td><p>A Float specifying default parameter (field) value of target model region while its value cannot be calculated from the data source.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.mappingAlgorithm" title="abaqus.Field.MappedField.MappedField.mappingAlgorithm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mappingAlgorithm</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the mapping algorithm for target surface, or on mesh target model when the parameter value are located at nodes, for example nodal temperatures.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.searchTolType" title="abaqus.Field.MappedField.MappedField.searchTolType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">searchTolType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying searching tolerance type in terms of absolute value or a fraction of the average of all element characteristic length in target model region.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.boundarySearchTol" title="abaqus.Field.MappedField.MappedField.boundarySearchTol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundarySearchTol</span></code></a></p></td>
+<td><p>A Float specifying the search distance tolerance value on the exterior boundary of target model region.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.neighborhoodSearchTol" title="abaqus.Field.MappedField.MappedField.neighborhoodSearchTol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">neighborhoodSearchTol</span></code></a></p></td>
+<td><p>A Float specifying the search distance tolerance value used for distance weighting algorithm.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.negativeNormalSearchTol" title="abaqus.Field.MappedField.MappedField.negativeNormalSearchTol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">negativeNormalSearchTol</span></code></a></p></td>
+<td><p>A Float specifying the search distance tolerance value in the negative normal of target surface region.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.positiveNormalSearchTol" title="abaqus.Field.MappedField.MappedField.positiveNormalSearchTol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">positiveNormalSearchTol</span></code></a></p></td>
+<td><p>A Float specifying the search distance tolerance value in the positive normal of target surface region.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.scaleCoordinates" title="abaqus.Field.MappedField.MappedField.scaleCoordinates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scaleCoordinates</span></code></a></p></td>
+<td><p>A Boolean specifying whether or not to scale the user-supplied coordinate values from the point cloud or indicated ODB.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.gridPointData" title="abaqus.Field.MappedField.MappedField.gridPointData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gridPointData</span></code></a></p></td>
+<td><p>A tuple of tuples of Floats specifying the point cloud source data of grid format.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.xyzPointData" title="abaqus.Field.MappedField.MappedField.xyzPointData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyzPointData</span></code></a></p></td>
+<td><p>A tuple of tuples of Floats specifying the point cloud source data of XYZ format.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.odbMeshRegionData" title="abaqus.Field.MappedField.MappedField.odbMeshRegionData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbMeshRegionData</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbMeshRegionData</span></code></a> object specifying the external source data from ODB mesh region.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.coordinateScalingFactors" title="abaqus.Field.MappedField.MappedField.coordinateScalingFactors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordinateScalingFactors</span></code></a></p></td>
+<td><p>A tuple of Floats specifying the scaling factors for the global 1, 2 and 3 directions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.localCsys" title="abaqus.Field.MappedField.MappedField.localCsys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">localCsys</span></code></a></p></td>
+<td><p>None or a DatumCsys object specifying the local coordinate system of the field.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.description" title="abaqus.Field.MappedField.MappedField.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
+<td><p>A String specifying the description of the field.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">AnalyticalField</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.name" title="abaqus.Field.MappedField.MappedField.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.localCsys" title="abaqus.Field.MappedField.MappedField.localCsys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">localCsys</span></code></a></p></td>
+<td><p>None or a DatumCsys object specifying the local coordinate system of the field.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.description" title="abaqus.Field.MappedField.MappedField.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
+<td><p>A String specifying the description of the field.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.odbMeshRegionData" title="abaqus.Field.MappedField.MappedField.odbMeshRegionData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbMeshRegionData</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbMeshRegionData</span></code></a> object specifying the external source data from ODB mesh region.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Field</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.name" title="abaqus.Field.MappedField.MappedField.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.description" title="abaqus.Field.MappedField.MappedField.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
+<td><p>A String specifying the description of the field.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, regionType, partLevelData, ...])</p></td>
+<td><p>This method creates an MappedField object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.MappedField.MappedField.setValues" title="abaqus.Field.MappedField.MappedField.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([regionType, partLevelData, ...])</p></td>
+<td><p>This method modifies the MappedField object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">AnalyticalField</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">OdbMeshRegionData</span></code>(odbFileName, variableLabel)</p></td>
+<td><p>This method creates an OdbMeshRegionData object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.boundarySearchTol">
 <span class="sig-name descname"><span class="pre">boundarySearchTol</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py#L55-L59"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.boundarySearchTol" title="Permalink to this definition">#</a></dt>
@@ -1520,6 +2061,99 @@ file.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.stepIndex" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.stepIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stepIndex</span></code></a></p></td>
+<td><p>An Int specifying the step index.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.frameIndex" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.frameIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">frameIndex</span></code></a></p></td>
+<td><p>An Int specifying the frame in the specified step.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">outputPosition</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the position from which to obtain data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dataType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the data type of the field output variable which should be aligned with the variable.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.storageType" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.storageType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storageType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the storage type of the field output variable which should be aligned with the variable.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.quantityToPlot" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.quantityToPlot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">quantityToPlot</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the quantity to plot.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averageElementOutput" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averageElementOutput"><code class="xref py py-obj docutils literal notranslate"><span class="pre">averageElementOutput</span></code></a></p></td>
+<td><p>A Boolean specifying whether to average the element output.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.useRegionBoundaries" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.useRegionBoundaries"><code class="xref py py-obj docutils literal notranslate"><span class="pre">useRegionBoundaries</span></code></a></p></td>
+<td><p>A Boolean specifying whether to use region boundaries when averaging.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.regionBoundaries" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.regionBoundaries"><code class="xref py py-obj docutils literal notranslate"><span class="pre">regionBoundaries</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of averaging region boundaries.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.includeFeatureBoundaries" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.includeFeatureBoundaries"><code class="xref py py-obj docutils literal notranslate"><span class="pre">includeFeatureBoundaries</span></code></a></p></td>
+<td><p>A Boolean specifying whether to include additional averaging boundaries for shells and membranes based on feature edges.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.featureAngle" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.featureAngle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">featureAngle</span></code></a></p></td>
+<td><p>A Float specifying the feature angle to be used when <strong>includeFeatureBoundaries</strong> = ON.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averageOnlyDisplayed" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averageOnlyDisplayed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">averageOnlyDisplayed</span></code></a></p></td>
+<td><p>A Boolean specifying whether to average only values on displayed elements.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averagingThreshold" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averagingThreshold"><code class="xref py py-obj docutils literal notranslate"><span class="pre">averagingThreshold</span></code></a></p></td>
+<td><p>A Float specifying the nodal averaging threshold percentage.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.computeOrder" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.computeOrder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">computeOrder</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the order or the computations to be performed on the interested field output variable.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.numericForm" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.numericForm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numericForm</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the numeric form in which to display results that contain complex numbers.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.complexAngle" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.complexAngle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">complexAngle</span></code></a></p></td>
+<td><p>A Float specifying the angle (in degrees) at which to display results that contain complex numbers when <a href="#id4"><span class="problematic" id="id5">*</span></a>numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The default value is 0.0.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.odbFileName" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.odbFileName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbFileName</span></code></a></p></td>
+<td><p>A String specifying the name of the output database file (including the .odb extension) to be read into as the source data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.variableLabel" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.variableLabel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">variableLabel</span></code></a></p></td>
+<td><p>A String specifying the field output variable.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.transformationType" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.transformationType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transformationType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of the transformation to apply to the output.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayOutputPosition</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the position where the output is displayed in the viewport.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(odbFileName, variableLabel[, ...])</p></td>
+<td><p>This method creates an OdbMeshRegionData object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.setValues" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the OdbMeshRegionData object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averageElementOutput">
 <span class="sig-name descname"><span class="pre">averageElementOutput</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py#L73-L74"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averageElementOutput" title="Permalink to this definition">#</a></dt>
@@ -1544,7 +2178,7 @@ value is OFF.</p>
 <dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.complexAngle">
 <span class="sig-name descname"><span class="pre">complexAngle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py#L112-L115"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.complexAngle" title="Permalink to this definition">#</a></dt>
 <dd><p>A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id4"><span class="problematic" id="id5">*</span></a>numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The
+complex numbers when <a href="#id6"><span class="problematic" id="id7">*</span></a>numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The
 default value is 0.0.</p>
 </dd></dl>
 

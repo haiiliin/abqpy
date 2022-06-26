@@ -26,7 +26,7 @@ AbaqusBoolean
 .. autoclass:: abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BackwardCompatibility
 ~~~~~~~~~~~~~~~~~~~~~
@@ -34,7 +34,7 @@ BackwardCompatibility
 .. autoclass:: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Callback
 ~~~~~~~~
@@ -42,7 +42,7 @@ Callback
 .. automodule:: abaqus.UtilityAndView.Callback
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Customization
 ~~~~~~~~~~~~~
@@ -50,7 +50,7 @@ Customization
 .. automodule:: abaqus.UtilityAndView.Customization
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Delete
 ~~~~~~
@@ -58,7 +58,7 @@ Delete
 .. automodule:: abaqus.UtilityAndView.Delete
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Method
 ~~~~~~
@@ -66,7 +66,7 @@ Method
 .. automodule:: abaqus.UtilityAndView.Method
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Repository
 ~~~~~~~~~~
@@ -74,7 +74,7 @@ Repository
 .. autoclass:: abaqus.UtilityAndView.Repository.Repository
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Status
 ~~~~~~
@@ -82,7 +82,7 @@ Status
 .. autoclass:: abaqus.UtilityAndView.Status.Status
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SymbolicConstant
 ~~~~~~~~~~~~~~~~
@@ -90,7 +90,7 @@ SymbolicConstant
 .. autoclass:: abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Upgrade
 ~~~~~~~
@@ -98,7 +98,7 @@ Upgrade
 .. autoclass:: abaqus.UtilityAndView.Upgrade.Upgrade
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 User
 ~~~~
@@ -106,7 +106,7 @@ User
 .. autoclass:: abaqus.UtilityAndView.User.User
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 View
 ~~~~
@@ -114,5 +114,5 @@ View
 .. autoclass:: abaqus.UtilityAndView.View.View
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

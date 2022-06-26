@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -1509,6 +1510,26 @@ object are common to all objects derived from the Amplitude.</p>
 </pre></div>
 </div>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.Amplitude.Amplitude.name" title="abaqus.Amplitude.Amplitude.Amplitude.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.Amplitude.Amplitude.timeSpan" title="abaqus.Amplitude.Amplitude.Amplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Amplitude.Amplitude.Amplitude.name">
 <span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/Amplitude.py#L20-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.Amplitude.Amplitude.name" title="Permalink to this definition">#</a></dt>
@@ -1560,6 +1581,58 @@ The ActuatorAmplitude object is derived from the Amplitude object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.timeSpan" title="abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Amplitude</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.timeSpan" title="abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, timeSpan])</p></td>
+<td><p>This method creates a ActuatorAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.setValues" title="abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([timeSpan])</p></td>
+<td><p>This method modifies the ActuatorAmplitude object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ActuatorAmplitude.py#L63-L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.setValues" title="Permalink to this definition">#</a></dt>
@@ -1625,6 +1698,42 @@ drift of the displacement obtained from the time integration of the given accele
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection.intervals" title="abaqus.Amplitude.BaselineCorrection.BaselineCorrection.intervals"><code class="xref py py-obj docutils literal notranslate"><span class="pre">intervals</span></code></a></p></td>
+<td><p>A sequence of Floats specifying the correction time interval end points.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([intervals])</p></td>
+<td><p>This method creates a BaselineCorrection object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection.setValues" title="abaqus.Amplitude.BaselineCorrection.BaselineCorrection.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the BaselineCorrection object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Amplitude.BaselineCorrection.BaselineCorrection.intervals">
 <span class="sig-name descname"><span class="pre">intervals</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/BaselineCorrection.py#L20-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection.intervals" title="Permalink to this definition">#</a></dt>
@@ -1672,6 +1781,48 @@ The Correlation object is derived from the Amplitude object.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.Correlation.Correlation.name" title="abaqus.Amplitude.Correlation.Correlation.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.Correlation.Correlation.approach" title="abaqus.Amplitude.Correlation.Correlation.approach"><code class="xref py py-obj docutils literal notranslate"><span class="pre">approach</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the approach used in the correlation data representation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.Correlation.Correlation.data" title="abaqus.Amplitude.Correlation.Correlation.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a></p></td>
+<td><p>A tuple of tuples of Floats specifying the real and imaginary part of the scaling factor.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.Correlation.Correlation.timeSpan" title="abaqus.Amplitude.Correlation.Correlation.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Amplitude</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.Correlation.Correlation.name" title="abaqus.Amplitude.Correlation.Correlation.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.Correlation.Correlation.timeSpan" title="abaqus.Amplitude.Correlation.Correlation.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Amplitude.Correlation.Correlation.approach">
 <span class="sig-name descname"><span class="pre">approach</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'CORRELATED'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/Correlation.py#L22-L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.Correlation.Correlation.approach" title="Permalink to this definition">#</a></dt>
@@ -1723,6 +1874,135 @@ and TOTAL. The default value is STEP.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.CorrelationArray.CorrelationArray.findAt" title="abaqus.Amplitude.CorrelationArray.CorrelationArray.findAt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">findAt</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__repr__</span></code>(/)</p></td>
+<td><p>Return repr(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getattribute__</span></code>(name, /)</p></td>
+<td><p>Return getattr(self, name).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__lt__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__le__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__eq__</span></code>(value, /)</p></td>
+<td><p>Return self==value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ne__</span></code>(value, /)</p></td>
+<td><p>Return self!=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__gt__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ge__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iter__</span></code>(/)</p></td>
+<td><p>Implement iter(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code>(/)</p></td>
+<td><p>Return len(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code></p></td>
+<td><p>x.__getitem__(y) &lt;==&gt; x[y]</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__setitem__</span></code>(key, value, /)</p></td>
+<td><p>Set self[key] to value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__delitem__</span></code>(key, /)</p></td>
+<td><p>Delete self[key].</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__add__</span></code>(value, /)</p></td>
+<td><p>Return self+value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__mul__</span></code>(value, /)</p></td>
+<td><p>Return self*value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__rmul__</span></code>(value, /)</p></td>
+<td><p>Return value*self.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__contains__</span></code>(key, /)</p></td>
+<td><p>Return key in self.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iadd__</span></code>(value, /)</p></td>
+<td><p>Implement self+=value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__imul__</span></code>(value, /)</p></td>
+<td><p>Implement self*=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__reversed__</span></code>(/)</p></td>
+<td><p>Return a reverse iterator over the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__sizeof__</span></code>(/)</p></td>
+<td><p>Return the size of the list in memory, in bytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code>(/)</p></td>
+<td><p>Remove all items from list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code>(/)</p></td>
+<td><p>Return a shallow copy of the list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">append</span></code>(object, /)</p></td>
+<td><p>Append object to the end of the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert</span></code>(index, object, /)</p></td>
+<td><p>Insert object before index.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">extend</span></code>(iterable, /)</p></td>
+<td><p>Extend list by appending elements from the iterable.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code>([index])</p></td>
+<td><p>Remove and return item at index (default last).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove</span></code>(value, /)</p></td>
+<td><p>Remove first occurrence of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">index</span></code>(value[, start, stop])</p></td>
+<td><p>Return first index of value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">count</span></code>(value, /)</p></td>
+<td><p>Return number of occurrences of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reverse</span></code>(/)</p></td>
+<td><p>Reverse <em>IN PLACE</em>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sort</span></code>(*[, key, reverse])</p></td>
+<td><p>Sort the list in ascending order and return None.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__class_getitem__</span></code></p></td>
+<td><p>See PEP 585</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.CorrelationArray.CorrelationArray.findAt">
 <span class="sig-name descname"><span class="pre">findAt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/CorrelationArray.py#L5-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.CorrelationArray.CorrelationArray.findAt" title="Permalink to this definition">#</a></dt>
@@ -1766,6 +2046,58 @@ The DecayAmplitude object is derived from the Amplitude object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.DecayAmplitude.DecayAmplitude.timeSpan" title="abaqus.Amplitude.DecayAmplitude.DecayAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Amplitude</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.DecayAmplitude.DecayAmplitude.timeSpan" title="abaqus.Amplitude.DecayAmplitude.DecayAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, initial, maximum, start, ...)</p></td>
+<td><p>This method creates a DecayAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.DecayAmplitude.DecayAmplitude.setValues" title="abaqus.Amplitude.DecayAmplitude.DecayAmplitude.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([timeSpan])</p></td>
+<td><p>This method modifies the DecayAmplitude object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Amplitude.DecayAmplitude.DecayAmplitude.decayTime">
 <span class="sig-name descname"><span class="pre">decayTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/DecayAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.DecayAmplitude.DecayAmplitude.decayTime" title="Permalink to this definition">#</a></dt>
@@ -1856,6 +2188,67 @@ The EquallySpacedAmplitude object is derived from the Amplitude object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.baselineCorrection" title="abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.baselineCorrection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">baselineCorrection</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection" title="abaqus.Amplitude.BaselineCorrection.BaselineCorrection"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaselineCorrection</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.begin" title="abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.begin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">begin</span></code></a></p></td>
+<td><p>A Float specifying the time at which the first amplitude data are given.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.smooth" title="abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.smooth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">smooth</span></code></a></p></td>
+<td><p>The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.timeSpan" title="abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Amplitude</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.timeSpan" title="abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, fixedInterval, data[, begin, ...])</p></td>
+<td><p>This method creates an EquallySpacedAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.setValues" title="abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([begin, smooth, timeSpan])</p></td>
+<td><p>This method modifies the EquallySpacedAmplitude object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.baselineCorrection">
 <span class="sig-name descname"><span class="pre">baselineCorrection</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection" title="abaqus.Amplitude.BaselineCorrection.BaselineCorrection"><span class="pre">BaselineCorrection</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Amplitude.BaselineCorrection.BaselineCorrection</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/EquallySpacedAmplitude.py#L28-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.baselineCorrection" title="Permalink to this definition">#</a></dt>
@@ -1964,6 +2357,58 @@ The ModulatedAmplitude object is derived from the Amplitude object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.timeSpan" title="abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Amplitude</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.timeSpan" title="abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, initial, magnitude, start, ...)</p></td>
+<td><p>This method creates a ModulatedAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.setValues" title="abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([timeSpan])</p></td>
+<td><p>This method modifies the ModulatedAmplitude object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.frequency1">
 <span class="sig-name descname"><span class="pre">frequency1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ModulatedAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.frequency1" title="Permalink to this definition">#</a></dt>
@@ -2061,6 +2506,58 @@ The PeriodicAmplitude object is derived from the Amplitude object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.timeSpan" title="abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Amplitude</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.timeSpan" title="abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, frequency, start, a_0, data)</p></td>
+<td><p>This method creates a PeriodicAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.setValues" title="abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([timeSpan])</p></td>
+<td><p>This method modifies the PeriodicAmplitude object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.a_0">
 <span class="sig-name descname"><span class="pre">a_0</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PeriodicAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.a_0" title="Permalink to this definition">#</a></dt>
@@ -2154,6 +2651,73 @@ The PsdDefinition object is derived from the Amplitude object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.unitType" title="abaqus.Amplitude.PsdDefinition.PsdDefinition.unitType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unitType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of units for specifying the frequency function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.referenceGravityAcceleration" title="abaqus.Amplitude.PsdDefinition.PsdDefinition.referenceGravityAcceleration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">referenceGravityAcceleration</span></code></a></p></td>
+<td><p>A Float specifying the reference gravity acceleration.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.referenecePower" title="abaqus.Amplitude.PsdDefinition.PsdDefinition.referenecePower"><code class="xref py py-obj docutils literal notranslate"><span class="pre">referenecePower</span></code></a></p></td>
+<td><p>A Float specifying the reference power value, in load units squared.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.user" title="abaqus.Amplitude.PsdDefinition.PsdDefinition.user"><code class="xref py py-obj docutils literal notranslate"><span class="pre">user</span></code></a></p></td>
+<td><p>A Boolean specifying whether the frequency function is defined in user subroutine UPSD.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.timeSpan" title="abaqus.Amplitude.PsdDefinition.PsdDefinition.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.amplitude" title="abaqus.Amplitude.PsdDefinition.PsdDefinition.amplitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">amplitude</span></code></a></p></td>
+<td><p>A String specifying the name of the amplitude that describes the dynamic event used to define the cross-spectral density frequency function.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Amplitude</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.timeSpan" title="abaqus.Amplitude.PsdDefinition.PsdDefinition.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, data[, unitType, ...])</p></td>
+<td><p>This method creates a PsdDefinition object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues" title="abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([unitType, ...])</p></td>
+<td><p>This method modifies the PsdDefinition object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Amplitude.PsdDefinition.PsdDefinition.amplitude">
 <span class="sig-name descname"><span class="pre">amplitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PsdDefinition.py#L55-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.amplitude" title="Permalink to this definition">#</a></dt>
@@ -2284,6 +2848,58 @@ The SmoothStepAmplitude object is derived from the Amplitude object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.timeSpan" title="abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Amplitude</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.timeSpan" title="abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, data[, timeSpan])</p></td>
+<td><p>This method creates a SmoothStepAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.setValues" title="abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([timeSpan])</p></td>
+<td><p>This method modifies the SmoothStepAmplitude object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.data">
 <span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SmoothStepAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.data" title="Permalink to this definition">#</a></dt>
@@ -2357,6 +2973,67 @@ The SolutionDependentAmplitude object is derived from the Amplitude object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.initial" title="abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.initial"><code class="xref py py-obj docutils literal notranslate"><span class="pre">initial</span></code></a></p></td>
+<td><p>A Float specifying the initial amplitude value.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.minimum" title="abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.minimum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minimum</span></code></a></p></td>
+<td><p>A Float specifying the minimum amplitude value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.maximum" title="abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.maximum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maximum</span></code></a></p></td>
+<td><p>A Float specifying the maximum amplitude value.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.timeSpan" title="abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Amplitude</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.timeSpan" title="abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, initial, minimum, maximum, ...])</p></td>
+<td><p>This method creates a SolutionDependentAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.setValues" title="abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([initial, minimum, maximum, timeSpan])</p></td>
+<td><p>This method modifies the SolutionDependentAmplitude object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.initial">
 <span class="sig-name descname"><span class="pre">initial</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SolutionDependentAmplitude.py#L28-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.initial" title="Permalink to this definition">#</a></dt>
@@ -2453,6 +3130,79 @@ The SpectrumAmplitude object is derived from the Amplitude object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.specificationUnits" title="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.specificationUnits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">specificationUnits</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the units used for specifying the spectrum.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.eventUnits" title="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.eventUnits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">eventUnits</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the units used to describe the dynamic event in the amplitude used for the calculation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.solution" title="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.solution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">solution</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the solution method for the dynamic equations.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.timeIncrement" title="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.timeIncrement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeIncrement</span></code></a></p></td>
+<td><p>A Float specifying the implicit time increment used to calculate the spectrum.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.gravity" title="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.gravity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gravity</span></code></a></p></td>
+<td><p>A Float specifying the acceleration due to gravity.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.criticalDamping" title="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.criticalDamping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">criticalDamping</span></code></a></p></td>
+<td><p>A Boolean specifying whether to calculate the spectrum for only the specified range of critical damping values or a list of values.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.timeSpan" title="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.amplitude" title="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.amplitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">amplitude</span></code></a></p></td>
+<td><p>A String specifying the name of the amplitude that describes the dynamic event used to calculate the spectrum.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Amplitude</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.timeSpan" title="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, method, data[, ...])</p></td>
+<td><p>This method creates a SpectrumAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues" title="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([specificationUnits, eventUnits, ...])</p></td>
+<td><p>This method modifies the SpectrumAmplitude object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.amplitude">
 <span class="sig-name descname"><span class="pre">amplitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SpectrumAmplitude.py#L70-L72"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.amplitude" title="Permalink to this definition">#</a></dt>
@@ -2615,6 +3365,64 @@ The TabularAmplitude object is derived from the Amplitude object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.TabularAmplitude.TabularAmplitude.baselineCorrection" title="abaqus.Amplitude.TabularAmplitude.TabularAmplitude.baselineCorrection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">baselineCorrection</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection" title="abaqus.Amplitude.BaselineCorrection.BaselineCorrection"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaselineCorrection</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.TabularAmplitude.TabularAmplitude.smooth" title="abaqus.Amplitude.TabularAmplitude.TabularAmplitude.smooth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">smooth</span></code></a></p></td>
+<td><p>The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.TabularAmplitude.TabularAmplitude.timeSpan" title="abaqus.Amplitude.TabularAmplitude.TabularAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Amplitude</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.TabularAmplitude.TabularAmplitude.timeSpan" title="abaqus.Amplitude.TabularAmplitude.TabularAmplitude.timeSpan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeSpan</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the time span of the amplitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, data[, smooth, timeSpan])</p></td>
+<td><p>This method creates a TabularAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Amplitude.TabularAmplitude.TabularAmplitude.setValues" title="abaqus.Amplitude.TabularAmplitude.TabularAmplitude.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([smooth, timeSpan])</p></td>
+<td><p>This method modifies the TabularAmplitude object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Amplitude.TabularAmplitude.TabularAmplitude.baselineCorrection">
 <span class="sig-name descname"><span class="pre">baselineCorrection</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection" title="abaqus.Amplitude.BaselineCorrection.BaselineCorrection"><span class="pre">BaselineCorrection</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Amplitude.BaselineCorrection.BaselineCorrection</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/TabularAmplitude.py#L28-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.TabularAmplitude.TabularAmplitude.baselineCorrection" title="Permalink to this definition">#</a></dt>

@@ -21,7 +21,7 @@ Calibration
 .. autoclass:: abaqus.Calibration.Calibration.Calibration
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Behavior
 ~~~~~~~~
@@ -29,7 +29,7 @@ Behavior
 .. autoclass:: abaqus.Calibration.Behavior.Behavior
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DataSet
 ~~~~~~~
@@ -37,4 +37,4 @@ DataSet
 .. autoclass:: abaqus.Calibration.DataSet.DataSet
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::

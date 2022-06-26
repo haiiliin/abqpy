@@ -52,7 +52,7 @@ Region features for Part
 .. autoclass:: abaqus.Region.RegionPartBase.RegionPartBase
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Region features for Assembly
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,7 +60,7 @@ Region features for Assembly
 .. autoclass:: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Region
 ~~~~~~
@@ -68,7 +68,7 @@ Region
 .. autoclass:: abaqus.Region.Region.Region
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RegionArray
 ~~~~~~~~~~~
@@ -76,7 +76,7 @@ RegionArray
 .. autoclass:: abaqus.Region.RegionArray.RegionArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Set
 ~~~
@@ -84,7 +84,7 @@ Set
 .. autoclass:: abaqus.Region.Set.Set
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Skin
 ~~~~
@@ -92,7 +92,7 @@ Skin
 .. autoclass:: abaqus.Region.Skin.Skin
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Stringer
 ~~~~~~~~
@@ -100,7 +100,7 @@ Stringer
 .. autoclass:: abaqus.Region.Stringer.Stringer
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Surface
 ~~~~~~~
@@ -108,5 +108,5 @@ Surface
 .. autoclass:: abaqus.Region.Surface.Surface
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

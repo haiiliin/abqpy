@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -433,6 +434,138 @@ viewport.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.bcs" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.bcs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bcs</span></code></a></p></td>
+<td><p>A Boolean specifying whether boundary conditions are shown.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.connectors" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.connectors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">connectors</span></code></a></p></td>
+<td><p>A Boolean specifying whether connectors are shown.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.cnxEndPoints" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.cnxEndPoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cnxEndPoints</span></code></a></p></td>
+<td><p>A Boolean specifying whether the connector end points are shown.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.cnxLocalAxes" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.cnxLocalAxes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cnxLocalAxes</span></code></a></p></td>
+<td><p>A Boolean specifying whether the connector local coordinate system axes are shown.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.cnxTypeLabels" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.cnxTypeLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cnxTypeLabels</span></code></a></p></td>
+<td><p>A Boolean specifying whether the connector section type labels are shown.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.cnxTagDisplay" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.cnxTagDisplay"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cnxTagDisplay</span></code></a></p></td>
+<td><p>A Boolean specifying whether the tag information is displayed along with the connector section type labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.constraints" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.constraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">constraints</span></code></a></p></td>
+<td><p>A Boolean specifying whether constraints are shown.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.engineeringFeatures" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.engineeringFeatures"><code class="xref py py-obj docutils literal notranslate"><span class="pre">engineeringFeatures</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display engineering features.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.geometricRestrictions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.geometricRestrictions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">geometricRestrictions</span></code></a></p></td>
+<td><p>A Boolean specifying whether geometric restrictions are shown.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.renderBeamProfiles" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.renderBeamProfiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">renderBeamProfiles</span></code></a></p></td>
+<td><p>A Boolean specifying whether to render the beam profiles.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.beamScaleFactor" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.beamScaleFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamScaleFactor</span></code></a></p></td>
+<td><p>A Float specifying the beam profile scale factor.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.predefinedFields" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.predefinedFields"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predefinedFields</span></code></a></p></td>
+<td><p>A Boolean specifying whether fields and initial conditions are shown.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.interactions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.interactions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactions</span></code></a></p></td>
+<td><p>A Boolean specifying whether interactions are shown.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.loads" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.loads"><code class="xref py py-obj docutils literal notranslate"><span class="pre">loads</span></code></a></p></td>
+<td><p>A Boolean specifying whether loads are shown.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.mesh" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.mesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mesh</span></code></a></p></td>
+<td><p>A Boolean specifying whether the mesh is shown.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.optimizationTasks" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.optimizationTasks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimizationTasks</span></code></a></p></td>
+<td><p>A Boolean specifying whether optimization tasks are shown.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.stopConditions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.stopConditions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stopConditions</span></code></a></p></td>
+<td><p>A Boolean specifying whether stop conditions are shown.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.renderStyle" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.renderStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">renderStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying how the image in the viewport is rendered.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.bcOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.bcOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bcOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions" title="abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">BCDisplayOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.constraintOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.constraintOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">constraintOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions" title="abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstraintDisplayOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.displayGroup" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.displayGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayGroup</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="display.html#abaqus.DisplayGroup.DisplayGroup.DisplayGroup" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroup</span></code></a> object specifying the current display group and referring to an object in the <strong>displayGroups</strong> member of Session.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.displayGroupInstances" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.displayGroupInstances"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayGroupInstances</span></code></a></p></td>
+<td><p>A repository of DisplayGroupInstance objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.engineeringFeatureOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.engineeringFeatureOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">engineeringFeatureOptions</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions" title="abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">EngineeringFeatureDisplayOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.predefinedFieldOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.predefinedFieldOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predefinedFieldOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions" title="abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PredefinedFieldDisplayOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.geometricRestrictionOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.geometricRestrictionOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">geometricRestrictionOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions" title="abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricRestrictionDisplayOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.geometryOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.geometryOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">geometryOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions" title="abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryDisplayOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.interactionOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.interactionOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactionOptions</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions" title="abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">InteractionDisplayOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.loadOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.loadOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">loadOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions" title="abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">LoadDisplayOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.meshOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.meshOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">meshOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions" title="abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshDisplayOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.optimizationTaskOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.optimizationTaskOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimizationTaskOptions</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions" title="abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">OptimizationTaskDisplayOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.stopConditionOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.stopConditionOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stopConditionOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions" title="abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">StopConditionDisplayOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.symbolOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.symbolOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">symbolOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions" title="abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolDisplayOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.visibleInstances" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.visibleInstances"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visibleInstances</span></code></a></p></td>
+<td><p>A tuple of Strings specifying the names of the part instances that are visible in the viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.step" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">step</span></code></a></p></td>
+<td><p>A String specifying the step for which objects are to be displayed.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.setValues" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([visibleInstances, step, ...])</p></td>
+<td><p>This method modifies the AssemblyDisplayOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.bcOptions">
 <span class="sig-name descname"><span class="pre">bcOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions" title="abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions"><span class="pre">BCDisplayOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/AssemblyDisplayOptions.py#L97-L98"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.bcOptions" title="Permalink to this definition">#</a></dt>
@@ -752,6 +885,23 @@ session.viewports[name].layers[name].assemblyDisplay.bcOptions</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions.setValues" title="abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([displacement, velocity, ...])</p></td>
+<td><p>This method modifies the BCDisplayOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">velocity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">acceleration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symmetry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">antiSymmetry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temperature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">porePressure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fluidCavityPressure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">acousticPressure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">electricPotential</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">concentration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encastre</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pinned</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/BCDisplayOptions.py#L18-L69"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -827,6 +977,23 @@ session.viewports[name].layers[name].assemblyDisplay.constraintOptions</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions.setValues" title="abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([constraintEquation, ...])</p></td>
+<td><p>This method modifies the ConstraintDisplayOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">constraintEquation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tieConstraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rigidBodyConstraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displayBodyConstraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">couplingConstrain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/ConstraintDisplayOptions.py#L18-L45"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -889,6 +1056,23 @@ viewport, the settings are copied from the current viewport.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions.setValues" title="abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([pointMassInertia, ...])</p></td>
+<td><p>This method modifies the EngineeringFeatureDisplayOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pointMassInertia</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nonstructuralMass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">heatCapacitance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contourIntegral</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">springToGround</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">twoPointSpring</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/EngineeringFeatureDisplayOptions.py#L24-L60"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -957,6 +1141,23 @@ session.viewports[name].layers[name].assemblyDisplay.geometricRestrictionOptions
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions.setValues" title="abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([drillControl, fixedRegion, ...])</p></td>
+<td><p>This method modifies the GeometricRestrictionDisplayOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">drillControl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedRegion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frozenArea</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">growth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">penetrationCheck</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shapeDemoldControl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">designDirection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shapeMemberSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shapePlanarSymmetry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shapePointSymmetry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shapeRotationalSymmetry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stampControl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">slideRegionControl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topologyCyclicSymmetry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topologyDemoldControl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topologyMemberSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topologyPlanarSymmetry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topologyPointSymmetry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topologyRotationalSymmetry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">turnControl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/GeometricRestrictionDisplayOptions.py#L18-L110"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -1068,6 +1269,23 @@ viewport.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions.setValues" title="abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([geometryEdgesInShaded, ...])</p></td>
+<td><p>This method modifies the GeometryDisplayOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">geometryEdgesInShaded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">geometryHiddenEdges</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">geometrySilhouetteEdges</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datumAxes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datumCoordSystems</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datumPlanes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referencePointLabels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referencePointSymbols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceRepresentation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceRepTranslucency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/GeometryDisplayOptions.py#L22-L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -1133,6 +1351,41 @@ The members are all read-only.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">graphicsInfo</span>
 </pre></div>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo.glVersion" title="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo.glVersion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">glVersion</span></code></a></p></td>
+<td><p>A sequence of the type (Int, Int, String) specifying the three components of the OpenGL version.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo.glxServerVersion" title="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo.glxServerVersion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">glxServerVersion</span></code></a></p></td>
+<td><p>A sequence of the type (Int, Int, String) specifying the three components of the glx version of the server.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo.glxClientVersion" title="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo.glxClientVersion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">glxClientVersion</span></code></a></p></td>
+<td><p>A sequence of the type (Int, Int, String) specifying the three components of the of glx version of the client.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo.glVendor" title="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo.glVendor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">glVendor</span></code></a></p></td>
+<td><p>A String specifying the graphics adapter vendor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo.glRenderer" title="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo.glRenderer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">glRenderer</span></code></a></p></td>
+<td><p>A String specifying the name of the rendering device or the name of the software graphics library.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo.glxServerVendor" title="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo.glxServerVendor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">glxServerVendor</span></code></a></p></td>
+<td><p>A String specifying the glx developer on the server side.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo.glxClientVendor" title="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo.glxClientVendor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">glxClientVendor</span></code></a></p></td>
+<td><p>A String specifying the glx developer on the client side.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo.glRenderer">
 <span class="sig-name descname"><span class="pre">glRenderer</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/GraphicsInfo.py#L44-L46"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo.glRenderer" title="Permalink to this definition">#</a></dt>
@@ -1241,6 +1494,132 @@ settings in the environment file. For more information, see Tuning graphics card
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.backgroundOverride" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.backgroundOverride"><code class="xref py py-obj docutils literal notranslate"><span class="pre">backgroundOverride</span></code></a></p></td>
+<td><p>A Boolean specifying whether a viewport background style of GRADIENT can be overridden when displaying certain objects, such as sketches or XY plots.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.backfaceCulling" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.backfaceCulling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">backfaceCulling</span></code></a></p></td>
+<td><p>A Boolean specifying whether facets that are determined to be facing away from the viewer will be drawn.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.graphicsDriver" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.graphicsDriver"><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsDriver</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the graphics driver to use.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.doubleBuffering" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.doubleBuffering"><code class="xref py py-obj docutils literal notranslate"><span class="pre">doubleBuffering</span></code></a></p></td>
+<td><p>A Boolean specifying whether double buffering is used.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.displayLists" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.displayLists"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayLists</span></code></a></p></td>
+<td><p>A Boolean specifying whether a display list will be used to accelerate graphics performance.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.dragMode" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.dragMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dragMode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying which rendering is used during dynamic rotations of the view.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.antiAlias" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.antiAlias"><code class="xref py py-obj docutils literal notranslate"><span class="pre">antiAlias</span></code></a></p></td>
+<td><p>A Boolean specifying whether lines will be smoothed to reduce the jagged effect of rasterization.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.autoFitAfterRotate" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.autoFitAfterRotate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoFitAfterRotate</span></code></a></p></td>
+<td><p>A Boolean specifying whether the model is automatically resized to fit the viewport after each view rotation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.polygonOffsetConstant" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.polygonOffsetConstant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">polygonOffsetConstant</span></code></a></p></td>
+<td><p>A Float specifying the offset added when drawing the faces of a polygon.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.polygonOffsetSlope" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.polygonOffsetSlope"><code class="xref py py-obj docutils literal notranslate"><span class="pre">polygonOffsetSlope</span></code></a></p></td>
+<td><p>A Float specifying the factor that multiplies the slope of each line before the line is added to the vertexes of a polygon face.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.printPolygonOffsetConstant" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.printPolygonOffsetConstant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">printPolygonOffsetConstant</span></code></a></p></td>
+<td><p>A Float specifying the offset added when drawing the faces of a polygon.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.printPolygonOffsetSlope" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.printPolygonOffsetSlope"><code class="xref py py-obj docutils literal notranslate"><span class="pre">printPolygonOffsetSlope</span></code></a></p></td>
+<td><p>A Float specifying the factor that multiplies the slope of each line before the line is added to the vertexes of a polygon face.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.vertexArrays" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.vertexArrays"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vertexArrays</span></code></a></p></td>
+<td><p>A Boolean specifying how the three-dimensional vertices of the model are processed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.vertexArraysInDisplayLists" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.vertexArraysInDisplayLists"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vertexArraysInDisplayLists</span></code></a></p></td>
+<td><p>A Boolean specifying whether the <strong>vertexArrays</strong> setting should temporarily be set to OFF when building a display list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.viewManipDisplayListThreshold" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.viewManipDisplayListThreshold"><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewManipDisplayListThreshold</span></code></a></p></td>
+<td><p>An Int specifying how large a display list may be created in order to accelerate view manipulation operations.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.directRendering" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.directRendering"><code class="xref py py-obj docutils literal notranslate"><span class="pre">directRendering</span></code></a></p></td>
+<td><p>A Boolean specifying how Abaqus renders X11 graphics operations.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.hardwareAcceleration" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.hardwareAcceleration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hardwareAcceleration</span></code></a></p></td>
+<td><p>A Boolean specifying whether a hardware accelerated OpenGL graphics driver will be used on Windows platforms.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.hardwareOverlay" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.hardwareOverlay"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hardwareOverlay</span></code></a></p></td>
+<td><p>A Boolean specifying whether hardware overlay planes will be used if available.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.textureMapping" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.textureMapping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">textureMapping</span></code></a></p></td>
+<td><p>A Boolean specifying whether textures will be used to display contour plots.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.printTextureMapping" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.printTextureMapping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">printTextureMapping</span></code></a></p></td>
+<td><p>A Boolean specifying whether textures will be used to display contour plots.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.backgroundStyle" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.backgroundStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">backgroundStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the background style to be used for all viewport windows.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.accelerateOffScreen" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.accelerateOffScreen"><code class="xref py py-obj docutils literal notranslate"><span class="pre">accelerateOffScreen</span></code></a></p></td>
+<td><p>A Boolean specifying whether the hardware accelerated graphics driver will be used for off-screen rendering.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.backingStore" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.backingStore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">backingStore</span></code></a></p></td>
+<td><p>A Boolean specifying whether a backing store will be used to refresh a viewport after a window occluding the viewport is moved or dismissed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.highlightMethod" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.highlightMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">highlightMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the highlight method.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.hardwareOverlayAvailable" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.hardwareOverlayAvailable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hardwareOverlayAvailable</span></code></a></p></td>
+<td><p>A Boolean specifying if the graphics hardware supports hardware overlay.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.shadersAvailable" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.shadersAvailable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">shadersAvailable</span></code></a></p></td>
+<td><p>A Boolean specifying if the graphics hardware supports the OpenGL Shading Language (GLSL).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.translucencyMode" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.translucencyMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translucencyMode</span></code></a></p></td>
+<td><p>An Int specifying whether speed or accuracy is more important when drawing translucent objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.contourRangeTexturePrecision" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.contourRangeTexturePrecision"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contourRangeTexturePrecision</span></code></a></p></td>
+<td><p>A Float specifying a tolerance used when computing the appropriate scale for transforming result (contour) values to texture values.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.options" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.options"><code class="xref py py-obj docutils literal notranslate"><span class="pre">options</span></code></a></p></td>
+<td><p>None or a GraphicsOptions object specifying the object from which values are to be copied.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.highlightMethodHint" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.highlightMethodHint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">highlightMethodHint</span></code></a></p></td>
+<td><p>A tuple of SymbolicConstants specifying a hint used to modify the highlight method.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.backgroundColor" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.backgroundColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">backgroundColor</span></code></a></p></td>
+<td><p>A String specifying one of the two background colors for all viewport windows.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.backgroundBottomColor" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.backgroundBottomColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">backgroundBottomColor</span></code></a></p></td>
+<td><p>A String specifying one of the two background colors for all viewport windows.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.setValues" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([graphicsDriver, doubleBuffering, ...])</p></td>
+<td><p>This method modifies the GraphicsOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.accelerateOffScreen">
 <span class="sig-name descname"><span class="pre">accelerateOffScreen</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/GraphicsOptions.py#L189-L198"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.accelerateOffScreen" title="Permalink to this definition">#</a></dt>
@@ -1818,6 +2197,23 @@ the settings are copied from the current viewport.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions.setValues" title="abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([surfaceContact, selfContact, ...])</p></td>
+<td><p>This method modifies the InteractionDisplayOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">surfaceContact</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">selfContact</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elasticFoundation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">actuatorSensor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radiationAmbient</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filmCondition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">concentratedRadiationToAmbient</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">concentratedFilmCondition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/InteractionDisplayOptions.py#L21-L62"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -1888,6 +2284,23 @@ The Light object has no constructor; Abaqus creates them as part of the
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.Light.Light.setValues" title="abaqus.DisplayOptions.Light.Light.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([enabled, type, latitude, ...])</p></td>
+<td><p>This method modifies the Light object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.Light.Light.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enabled</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'DIRECTIONAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">longitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">diffuseColor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specularColor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/Light.py#L20-L62"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.Light.Light.setValues" title="Permalink to this definition">#</a></dt>
@@ -1951,6 +2364,135 @@ the <strong>session</strong> object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.LightArray.LightArray.findAt" title="abaqus.DisplayOptions.LightArray.LightArray.findAt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">findAt</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__repr__</span></code>(/)</p></td>
+<td><p>Return repr(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getattribute__</span></code>(name, /)</p></td>
+<td><p>Return getattr(self, name).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__lt__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__le__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__eq__</span></code>(value, /)</p></td>
+<td><p>Return self==value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ne__</span></code>(value, /)</p></td>
+<td><p>Return self!=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__gt__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ge__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iter__</span></code>(/)</p></td>
+<td><p>Implement iter(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code>(/)</p></td>
+<td><p>Return len(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code></p></td>
+<td><p>x.__getitem__(y) &lt;==&gt; x[y]</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__setitem__</span></code>(key, value, /)</p></td>
+<td><p>Set self[key] to value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__delitem__</span></code>(key, /)</p></td>
+<td><p>Delete self[key].</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__add__</span></code>(value, /)</p></td>
+<td><p>Return self+value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__mul__</span></code>(value, /)</p></td>
+<td><p>Return self*value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__rmul__</span></code>(value, /)</p></td>
+<td><p>Return value*self.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__contains__</span></code>(key, /)</p></td>
+<td><p>Return key in self.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iadd__</span></code>(value, /)</p></td>
+<td><p>Implement self+=value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__imul__</span></code>(value, /)</p></td>
+<td><p>Implement self*=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__reversed__</span></code>(/)</p></td>
+<td><p>Return a reverse iterator over the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__sizeof__</span></code>(/)</p></td>
+<td><p>Return the size of the list in memory, in bytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code>(/)</p></td>
+<td><p>Remove all items from list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code>(/)</p></td>
+<td><p>Return a shallow copy of the list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">append</span></code>(object, /)</p></td>
+<td><p>Append object to the end of the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert</span></code>(index, object, /)</p></td>
+<td><p>Insert object before index.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">extend</span></code>(iterable, /)</p></td>
+<td><p>Extend list by appending elements from the iterable.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code>([index])</p></td>
+<td><p>Remove and return item at index (default last).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove</span></code>(value, /)</p></td>
+<td><p>Remove first occurrence of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">index</span></code>(value[, start, stop])</p></td>
+<td><p>Return first index of value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">count</span></code>(value, /)</p></td>
+<td><p>Return number of occurrences of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reverse</span></code>(/)</p></td>
+<td><p>Reverse <em>IN PLACE</em>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sort</span></code>(*[, key, reverse])</p></td>
+<td><p>Sort the list in ascending order and return None.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__class_getitem__</span></code></p></td>
+<td><p>See PEP 585</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.LightArray.LightArray.findAt">
 <span class="sig-name descname"><span class="pre">findAt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/LightArray.py#L5-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.LightArray.LightArray.findAt" title="Permalink to this definition">#</a></dt>
@@ -1992,6 +2534,51 @@ member is copied from the current viewport.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.LightOptions.LightOptions.shading" title="abaqus.DisplayOptions.LightOptions.LightOptions.shading"><code class="xref py py-obj docutils literal notranslate"><span class="pre">shading</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the shading technique that should be used to fill facets for geometric bodies when <strong>renderStyle</strong> =SHADED.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.LightOptions.LightOptions.viewpoint" title="abaqus.DisplayOptions.LightOptions.LightOptions.viewpoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewpoint</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying how specular highlights should be calculated.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.LightOptions.LightOptions.materialShininess" title="abaqus.DisplayOptions.LightOptions.LightOptions.materialShininess"><code class="xref py py-obj docutils literal notranslate"><span class="pre">materialShininess</span></code></a></p></td>
+<td><p>A Float specifying the degree to which specular reflection is focused.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.LightOptions.LightOptions.lights" title="abaqus.DisplayOptions.LightOptions.LightOptions.lights"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lights</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.DisplayOptions.LightArray.LightArray" title="abaqus.DisplayOptions.LightArray.LightArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">LightArray</span></code></a> object of length 8.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.LightOptions.LightOptions.ambientColor" title="abaqus.DisplayOptions.LightOptions.LightOptions.ambientColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ambientColor</span></code></a></p></td>
+<td><p>A String specifying the light applied evenly to the entire scene independent of any individual light.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.LightOptions.LightOptions.setValues" title="abaqus.DisplayOptions.LightOptions.LightOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([shading, viewpoint, ...])</p></td>
+<td><p>This method modifies the LightOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.LightOptions.LightOptions.ambientColor">
 <span class="sig-name descname"><span class="pre">ambientColor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/LightOptions.py#L59-L62"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.LightOptions.LightOptions.ambientColor" title="Permalink to this definition">#</a></dt>
@@ -2128,6 +2715,23 @@ settings are copied from the current viewport.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions.setValues" title="abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([concentratedForce, moment, ...])</p></td>
+<td><p>This method modifies the LoadDisplayOptions object. concentratedForce     ​           A Boolean specifying whether concentrated force symbols are shown. The default value     is ON. moment     ​           A Boolean specifying whether moment symbols are shown. The default value is ON. pressure     ​           A Boolean specifying whether pressure symbols are shown. The default value is ON. pipePressure     ​           A Boolean specifying whether pipe pressure symbols are shown. The default value is     ON. bodyForce     ​           A Boolean specifying whether body force symbols are shown. The default value is ON. lineLoad     ​           A Boolean specifying whether line load symbols are shown. The default value is ON. gravity     ​           A Boolean specifying whether gravity symbols are shown. The default value is ON. boltLoad     ​           A Boolean specifying whether bolt load symbols are shown. The default value is ON. pegLoad     ​           A Boolean specifying whether PEG load symbols are shown. The default value is ON. connectorForce     ​           A Boolean specifying whether connector force symbols are shown. The default value is     ON. connectorMoment     ​           A Boolean specifying whether connector moment symbols are shown. The default value is     ON. inertiaRelief     ​           A Boolean specifying whether inertia relief symbols are shown. The default value is     ON. rotationalIntertiaLoad     ​           A Boolean specifying whether rotational inertia load symbols are shown. The default     value is ON. coriolisForce     ​           A Boolean specifying whether coriolis force symbols are shown. The default value is     ON. bodyHeatFlux     ​           A Boolean specifying whether body heat flux symbols are shown. The default value is     ON. surfaceHeatFlux     ​           A Boolean specifying whether surface heat flux symbols are shown. The default value     is ON. concentratedHeatFlux     ​           A Boolean specifying whether concentrated heat flux symbols are shown. The default     value is ON. concentratedPoreFluid     ​           A Boolean specifying whether concentrated pore fluid symbols are shown. The default     value is ON. surfacePoreFluid     ​           A Boolean specifying whether surface pore fluid symbols are shown. The default value     is ON. hydroFluidFlow     ​           A Boolean specifying whether hydro fluid flow symbols are shown. The default value is     ON. concentratedCharge     ​           A Boolean specifying whether concentrated charge symbols are shown. The default value     is ON. concentratedCurrent     ​           A Boolean specifying whether concentrated current symbols are shown. The default     value is ON. surfaceCharge     ​           A Boolean specifying whether surface charge symbols are shown. The default value is     ON. surfaceCurrent     ​           A Boolean specifying whether surface current symbols are shown. The default value is     ON. bodyCharge     ​           A Boolean specifying whether body charge symbols are shown. The default value is ON. bodyCurrent     ​           A Boolean specifying whether body current symbols are shown. The default value is ON. inwardVolAccel     ​           A Boolean specifying whether inward volume acceleration symbols are shown. The     default value is ON. bodyConcentrationFlux     ​           A Boolean specifying whether body concentration flux symbols are shown. The default     value is ON. surfaceConcentrationFlux     ​           A Boolean specifying whether surface concentration flux symbols are shown. The     default value is ON. concentratedConcentrationFlux     ​   A Boolean specifying whether concentrated concentration flux symbols are shown. The     default value is ON.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">concentratedForce</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">moment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pressure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pipePressure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bodyForce</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineLoad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gravity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boltLoad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pegLoad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connectorForce</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connectorMoment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inertiaRelief</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotationalIntertiaLoad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coriolisForce</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bodyHeatFlux</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surfaceHeatFlux</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">concentratedHeatFlux</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">concentratedPoreFluid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surfacePoreFluid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hydroFluidFlow</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">concentratedCharge</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">concentratedCurrent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surfaceCharge</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surfaceCurrent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bodyCharge</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bodyCurrent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inwardVolAccel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bodyConcentrationFlux</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surfaceConcentrationFlux</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">concentratedConcentrationFlux</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/LoadDisplayOptions.py#L21-L141"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -2261,6 +2865,23 @@ settings are copied from the current viewport.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions.setValues" title="abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([nodeLabels, elementLabels, ...])</p></td>
+<td><p>This method modifies the MeshDisplayOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodeLabels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementLabels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshVisibleEdges</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EXTERIOR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">featureAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshEdgesInShaded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshTechnique</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seeds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/MeshDisplayOptions.py#L23-L69"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -2338,6 +2959,23 @@ viewport, the settings are copied from the current viewport.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions.setValues" title="abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([topologyTask, shapeTask])</p></td>
+<td><p>This method modifies the OptimizationTaskDisplayOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topologyTask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shapeTask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/OptimizationTaskDisplayOptions.py#L21-L35"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -2391,6 +3029,66 @@ create a new viewport, the settings are copied from the current viewport.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.engineeringFeatures" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.engineeringFeatures"><code class="xref py py-obj docutils literal notranslate"><span class="pre">engineeringFeatures</span></code></a></p></td>
+<td><p>A Boolean specifying whether engineering features are shown.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.renderBeamProfiles" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.renderBeamProfiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">renderBeamProfiles</span></code></a></p></td>
+<td><p>A Boolean specifying whether to render the beam profiles.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.beamScaleFactor" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.beamScaleFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamScaleFactor</span></code></a></p></td>
+<td><p>A Float specifying the beam profile scale factor.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.mesh" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.mesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mesh</span></code></a></p></td>
+<td><p>A Boolean specifying whether the mesh should be displayed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.renderStyle" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.renderStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">renderStyle</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying how the image in the viewport is rendered.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.displayGroup" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.displayGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayGroup</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="display.html#abaqus.DisplayGroup.DisplayGroup.DisplayGroup" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroup</span></code></a> object specifying the current display group and referring to an object in the <strong>displayGroups</strong> member of Session.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.displayGroupInstances" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.displayGroupInstances"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayGroupInstances</span></code></a></p></td>
+<td><p>A repository of DisplayGroupInstance objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.engineeringFeatureOptions" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.engineeringFeatureOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">engineeringFeatureOptions</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions" title="abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">EngineeringFeatureDisplayOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.geometryOptions" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.geometryOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">geometryOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions" title="abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometryDisplayOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.meshOptions" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.meshOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">meshOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions" title="abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshDisplayOptions</span></code></a> object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.setValues" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([renderStyle, ...])</p></td>
+<td><p>This method modifies the PartDisplayOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.beamScaleFactor">
 <span class="sig-name descname"><span class="pre">beamScaleFactor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/PartDisplayOptions.py#L32-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions.beamScaleFactor" title="Permalink to this definition">#</a></dt>
@@ -2518,6 +3216,23 @@ viewport, the settings are copied from the current viewport.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions.setValues" title="abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([temperatureField, velocityField, ...])</p></td>
+<td><p>This method modifies the PredefinedFieldDisplayOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">temperatureField</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">velocityField</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">generalField</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stressField</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hardeningField</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/PredefinedFieldDisplayOptions.py#L21-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -2580,6 +3295,23 @@ viewport, the settings are copied from the current viewport.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions.setValues" title="abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([localStopCondition])</p></td>
+<td><p>This method modifies the StopConditionDisplayOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">localStopCondition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/StopConditionDisplayOptions.py#L21-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -2631,6 +3363,23 @@ When you create a new viewport, the settings are copied from the current viewpor
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions.setValues" title="abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([otherSymbolSize, ...])</p></td>
+<td><p>This method modifies the SymbolDisplayOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">otherSymbolSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">12</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arrowSymbolSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">12</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faceSymbolDensity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edgeSymbolDensity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshSymbolFraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">showFields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayOptions/SymbolDisplayOptions.py#L19-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions.setValues" title="Permalink to this definition">#</a></dt>

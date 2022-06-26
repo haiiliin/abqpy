@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -420,6 +421,218 @@
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayMode</span></code></p></td>
+<td><p>A SymbolicConstant specifying the display mode of the viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewManipLayers</span></code></p></td>
+<td><p>A SymbolicConstant specifying which layer or layers will be controlled by the view manipulation tools when <strong>displayMode</strong> = OVERLAY.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">layerOffset</span></code></p></td>
+<td><p>A Float specifying a factor to be used in offsetting layers in the screen Z direction.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">windowState</span></code></p></td>
+<td><p>A SymbolicConstant specifying the current state of a viewport.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentWidth</span></code></p></td>
+<td><p>A Float specifying the width in millimeters of the current viewport, regardless of the value of <strong>windowState</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentHeight</span></code></p></td>
+<td><p>A Float specifying the height in millimeters of the current viewport, regardless of the value of <strong>windowState</strong>, and including the title bar.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">applyLinkedCommands</span></code></p></td>
+<td><p>A Boolean specifying whether the viewport is linked for synchronization.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">activeColorModes</span></code></p></td>
+<td><p>A SymbolicConstant specifying the currently active color mappings.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">colorMode</span></code></p></td>
+<td><p>A SymbolicConstant specifying the last applied color mapping.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">translucency</span></code></p></td>
+<td><p>A Float specifying the translucency that will be applied to objects colored using <strong>initialColor</strong> and it needs to be set along with <strong>initialColor</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">animationConnect</span></code></p></td>
+<td><p>A Boolean specifying whether an animation is connected to the viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">colorMappings</span></code></p></td>
+<td><p>A repository of AttributeColorMap objects specifying the objects cannot be constructed but the following attribute maps are supported:     &quot;type&quot;     &quot;Element set&quot;     &quot;Material&quot;     &quot;Section&quot;     &quot;Default&quot;     &quot;Part&quot;     &quot;Part instance&quot;     &quot;Element type&quot;     &quot;Averaging region&quot;     &quot;Assembly&quot;     &quot;Property&quot;     &quot;Set&quot;     &quot;Surface&quot;     &quot;Skin&quot;     &quot;Profile&quot;     &quot;Part shape&quot;     &quot;Part status&quot;     &quot;Part geometry&quot;     &quot;Meshability&quot;     &quot;Instance type&quot;     &quot;Load&quot;     &quot;Boundary condition&quot;     &quot;Interaction&quot;     &quot;Constraint&quot;     &quot;Interaction type&quot;     &quot;Constraint type&quot;     &quot;Display group&quot;     &quot;Selection group&quot;     &quot;Interaction property&quot;     &quot;Connector&quot;     &quot;Connector type&quot;     &quot;Connector property&quot;     &quot;Internal set&quot;     &quot;Internal surface&quot;     &quot;mapColors&quot;     &quot;autoColors&quot;     &quot;overrides&quot;     &quot;defaultAutoColors&quot;     &quot;defaultOverrides&quot;     &quot;objectToCopy&quot;     &quot;colorMapping&quot;     &quot;colorMappings&quot;     &quot;colorMode&quot;     &quot;attributeColors&quot;     &quot;updateOverrides&quot;     &quot;colorCodeOverride&quot;     &quot;initialColor&quot;     &quot;Layup&quot;     &quot;Ply&quot;</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialColor</span></code></p></td>
+<td><p>A String specifying the color that will be applied to all objects in the viewport at the start of color coding.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentLayer</span></code></p></td>
+<td><p>A String specifying which layer is affected by options settings when <strong>displayMode</strong> =OVERLAY.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayedObject</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Canvas.Displayable.Displayable" title="abaqus.Canvas.Displayable.Displayable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Displayable</span></code></a> object specifying the object to be displayed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">layers</span></code></p></td>
+<td><p>A repository of Layer objects specifying the key to the repository is a String with the name of the layer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">view</span></code></p></td>
+<td><p>A <a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a> object specifying the object that controls viewing of the viewport content.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbDisplay</span></code></p></td>
+<td><p>An <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.OdbDisplay.OdbDisplay" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbDisplay</span></code></a> object specifying the display options for the Odb object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">partDisplay</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartDisplayOptions</span></code></a> object specifying the display options for the Part object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">assemblyDisplay</span></code></p></td>
+<td><p>An <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AssemblyDisplayOptions</span></code></a> object specifying the display options for the Assembly object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewportAnnotationOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions" title="abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportAnnotationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">detailPlotOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions" title="abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DetailPlotOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">annotationsToPlot</span></code></p></td>
+<td><p>An <a class="reference internal" href="../mdb/annotation.html#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnnotationsToPlotArray</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">visibleLayers</span></code></p></td>
+<td><p>A tuple of Strings specifying the names of layers that will be displayed in the viewport when <strong>displayMode</strong> = OVERLAY.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentOrigin</span></code></p></td>
+<td><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-coordinates in millimeters in the canvas coordinate system of the lower left corner of the current viewport, regardless of the value of <strong>windowState</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">iconOrigin</span></code></p></td>
+<td><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-coordinates in millimeters of the lower left corner of the current viewport from a coordinate system having its origin in the lower left corner of the drawing area.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">lightOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.LightOptions.LightOptions" title="abaqus.DisplayOptions.LightOptions.LightOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">LightOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.Canvas.ImageOptions.ImageOptions" title="abaqus.Canvas.ImageOptions.ImageOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">movieOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Canvas.MovieOptions.MovieOptions" title="abaqus.Canvas.MovieOptions.MovieOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MovieOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawings</span></code></p></td>
+<td><p>A tuple of Strings specifying keys to the session.drawings repository.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Canvas.Viewport.Viewport.Layer" title="abaqus.Canvas.Viewport.Viewport.Layer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Layer</span></code></a>(name[, copyViewName])</p></td>
+<td><p>This method creates a Layer object in the Layer repository.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">AnnotationViewport</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">plotAnnotation</span></code>(annotation[, index])</p></td>
+<td><p>This method plots an Annotation object in aViewport.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, origin, width, height, ...])</p></td>
+<td><p>This method creates a Viewport object with the specified origin and dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringToFront</span></code>()</p></td>
+<td><p>This method moves the Viewport object to the front.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableMultipleColors</span></code>()</p></td>
+<td><p>This method disables applying multiple color mappings that was enabled using enableMultipleColors</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableRefresh</span></code>()</p></td>
+<td><p>This method disables Viewport refresh.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableColorCodeUpdates</span></code>()</p></td>
+<td><p>This method disables Viewport updates and internal computations triggered because of color coding.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableMultipleColors</span></code>()</p></td>
+<td><p>This method enables multiple color mappings to be applied at the same time.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableRefresh</span></code>()</p></td>
+<td><p>This method enables Viewport refresh disabled using disableRefresh.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableColorCodeUpdates</span></code>()</p></td>
+<td><p>This method enables Viewport color code updates disabled using disableColorCodeUpdates.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getActiveElementLabels</span></code>([useCut, printResults])</p></td>
+<td><p>This method returns the element labels currently active in the viewport based on the current display group.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getActiveNodeLabels</span></code>([useCut, printResults])</p></td>
+<td><p>This method returns the node labels currently active in the viewport based on the current display group.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPrimVarMinMaxLoc</span></code>()</p></td>
+<td><p>This method returns a dictionary containing the minimum, maximum and their location for the current primary variable.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">makeCurrent</span></code>()</p></td>
+<td><p>This method makes theViewport object the current viewport.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">maximize</span></code>()</p></td>
+<td><p>This method maximizes the Viewport object to fill the drawing area.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">minimize</span></code>()</p></td>
+<td><p>This method minimizes the Viewport object to appear as an abbreviated title bar.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">offset</span></code>([deltaX, deltaY])</p></td>
+<td><p>This method modifies the current <strong>X</strong>-<em>Y</em> location of the viewport by the specified distance.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restore</span></code>()</p></td>
+<td><p>This method restores a maximized or minimized Viewport object to its previous size and location.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendToBack</span></code>()</p></td>
+<td><p>This method moves the Viewport object to the back.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setColor</span></code>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">forceRefresh</span></code>()</p></td>
+<td><p>This method causes the Viewport to refresh immediately.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>([displayedObject, displayMode, ...])</p></td>
+<td><p>This method modifies the Viewport object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">addDrawings</span></code>([names])</p></td>
+<td><p>This method identifies the names of Drawing objects to be rendered in the Viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">removeDrawings</span></code>([names])</p></td>
+<td><p>This method identifies the names of Drawing objects to no longer be rendered in the Viewport.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeDisplay</span></code>([numFrames, numSeconds, ...])</p></td>
+<td><p>This method refreshes the Viewport display <strong>numFrames</strong> times and then checks to see if <strong>numSeconds</strong> seconds have elapsed.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.Viewport.Viewport.Layer">
 <span class="sig-name descname"><span class="pre">Layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyViewName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Viewport.py#L6-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Viewport.Viewport.Layer" title="Permalink to this definition">#</a></dt>
@@ -483,6 +696,205 @@ Viewport object, see Viewport object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayMode</span></code></p></td>
+<td><p>A SymbolicConstant specifying the display mode of the viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewManipLayers</span></code></p></td>
+<td><p>A SymbolicConstant specifying which layer or layers will be controlled by the view manipulation tools when <strong>displayMode</strong> = OVERLAY.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">layerOffset</span></code></p></td>
+<td><p>A Float specifying a factor to be used in offsetting layers in the screen Z direction.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">windowState</span></code></p></td>
+<td><p>A SymbolicConstant specifying the current state of a viewport.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentWidth</span></code></p></td>
+<td><p>A Float specifying the width in millimeters of the current viewport, regardless of the value of <strong>windowState</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentHeight</span></code></p></td>
+<td><p>A Float specifying the height in millimeters of the current viewport, regardless of the value of <strong>windowState</strong>, and including the title bar.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">applyLinkedCommands</span></code></p></td>
+<td><p>A Boolean specifying whether the viewport is linked for synchronization.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">activeColorModes</span></code></p></td>
+<td><p>A SymbolicConstant specifying the currently active color mappings.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">colorMode</span></code></p></td>
+<td><p>A SymbolicConstant specifying the last applied color mapping.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">translucency</span></code></p></td>
+<td><p>A Float specifying the translucency that will be applied to objects colored using <strong>initialColor</strong> and it needs to be set along with <strong>initialColor</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">animationConnect</span></code></p></td>
+<td><p>A Boolean specifying whether an animation is connected to the viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">colorMappings</span></code></p></td>
+<td><p>A repository of AttributeColorMap objects specifying the objects cannot be constructed but the following attribute maps are supported:     &quot;type&quot;     &quot;Element set&quot;     &quot;Material&quot;     &quot;Section&quot;     &quot;Default&quot;     &quot;Part&quot;     &quot;Part instance&quot;     &quot;Element type&quot;     &quot;Averaging region&quot;     &quot;Assembly&quot;     &quot;Property&quot;     &quot;Set&quot;     &quot;Surface&quot;     &quot;Skin&quot;     &quot;Profile&quot;     &quot;Part shape&quot;     &quot;Part status&quot;     &quot;Part geometry&quot;     &quot;Meshability&quot;     &quot;Instance type&quot;     &quot;Load&quot;     &quot;Boundary condition&quot;     &quot;Interaction&quot;     &quot;Constraint&quot;     &quot;Interaction type&quot;     &quot;Constraint type&quot;     &quot;Display group&quot;     &quot;Selection group&quot;     &quot;Interaction property&quot;     &quot;Connector&quot;     &quot;Connector type&quot;     &quot;Connector property&quot;     &quot;Internal set&quot;     &quot;Internal surface&quot;     &quot;mapColors&quot;     &quot;autoColors&quot;     &quot;overrides&quot;     &quot;defaultAutoColors&quot;     &quot;defaultOverrides&quot;     &quot;objectToCopy&quot;     &quot;colorMapping&quot;     &quot;colorMappings&quot;     &quot;colorMode&quot;     &quot;attributeColors&quot;     &quot;updateOverrides&quot;     &quot;colorCodeOverride&quot;     &quot;initialColor&quot;     &quot;Layup&quot;     &quot;Ply&quot;</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialColor</span></code></p></td>
+<td><p>A String specifying the color that will be applied to all objects in the viewport at the start of color coding.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentLayer</span></code></p></td>
+<td><p>A String specifying which layer is affected by options settings when <strong>displayMode</strong> =OVERLAY.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayedObject</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Canvas.Displayable.Displayable" title="abaqus.Canvas.Displayable.Displayable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Displayable</span></code></a> object specifying the object to be displayed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">layers</span></code></p></td>
+<td><p>A repository of Layer objects specifying the key to the repository is a String with the name of the layer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">view</span></code></p></td>
+<td><p>A <a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a> object specifying the object that controls viewing of the viewport content.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbDisplay</span></code></p></td>
+<td><p>An <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.OdbDisplay.OdbDisplay" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbDisplay</span></code></a> object specifying the display options for the Odb object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">partDisplay</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartDisplayOptions</span></code></a> object specifying the display options for the Part object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">assemblyDisplay</span></code></p></td>
+<td><p>An <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AssemblyDisplayOptions</span></code></a> object specifying the display options for the Assembly object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewportAnnotationOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions" title="abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportAnnotationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">detailPlotOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions" title="abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DetailPlotOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">annotationsToPlot</span></code></p></td>
+<td><p>An <a class="reference internal" href="../mdb/annotation.html#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnnotationsToPlotArray</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">visibleLayers</span></code></p></td>
+<td><p>A tuple of Strings specifying the names of layers that will be displayed in the viewport when <strong>displayMode</strong> = OVERLAY.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentOrigin</span></code></p></td>
+<td><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-coordinates in millimeters in the canvas coordinate system of the lower left corner of the current viewport, regardless of the value of <strong>windowState</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">iconOrigin</span></code></p></td>
+<td><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-coordinates in millimeters of the lower left corner of the current viewport from a coordinate system having its origin in the lower left corner of the drawing area.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">lightOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.LightOptions.LightOptions" title="abaqus.DisplayOptions.LightOptions.LightOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">LightOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="#abaqus.Canvas.ImageOptions.ImageOptions" title="abaqus.Canvas.ImageOptions.ImageOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">movieOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Canvas.MovieOptions.MovieOptions" title="abaqus.Canvas.MovieOptions.MovieOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MovieOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawings</span></code></p></td>
+<td><p>A tuple of Strings specifying keys to the session.drawings repository.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation" title="abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plotAnnotation</span></code></a>(annotation[, index])</p></td>
+<td><p>This method plots an Annotation object in aViewport.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, origin, width, height, ...])</p></td>
+<td><p>This method creates a Viewport object with the specified origin and dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringToFront</span></code>()</p></td>
+<td><p>This method moves the Viewport object to the front.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableMultipleColors</span></code>()</p></td>
+<td><p>This method disables applying multiple color mappings that was enabled using enableMultipleColors</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableRefresh</span></code>()</p></td>
+<td><p>This method disables Viewport refresh.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableColorCodeUpdates</span></code>()</p></td>
+<td><p>This method disables Viewport updates and internal computations triggered because of color coding.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableMultipleColors</span></code>()</p></td>
+<td><p>This method enables multiple color mappings to be applied at the same time.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableRefresh</span></code>()</p></td>
+<td><p>This method enables Viewport refresh disabled using disableRefresh.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableColorCodeUpdates</span></code>()</p></td>
+<td><p>This method enables Viewport color code updates disabled using disableColorCodeUpdates.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getActiveElementLabels</span></code>([useCut, printResults])</p></td>
+<td><p>This method returns the element labels currently active in the viewport based on the current display group.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getActiveNodeLabels</span></code>([useCut, printResults])</p></td>
+<td><p>This method returns the node labels currently active in the viewport based on the current display group.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPrimVarMinMaxLoc</span></code>()</p></td>
+<td><p>This method returns a dictionary containing the minimum, maximum and their location for the current primary variable.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">makeCurrent</span></code>()</p></td>
+<td><p>This method makes theViewport object the current viewport.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">maximize</span></code>()</p></td>
+<td><p>This method maximizes the Viewport object to fill the drawing area.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">minimize</span></code>()</p></td>
+<td><p>This method minimizes the Viewport object to appear as an abbreviated title bar.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">offset</span></code>([deltaX, deltaY])</p></td>
+<td><p>This method modifies the current <strong>X</strong>-<em>Y</em> location of the viewport by the specified distance.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restore</span></code>()</p></td>
+<td><p>This method restores a maximized or minimized Viewport object to its previous size and location.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendToBack</span></code>()</p></td>
+<td><p>This method moves the Viewport object to the back.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setColor</span></code>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">forceRefresh</span></code>()</p></td>
+<td><p>This method causes the Viewport to refresh immediately.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>([displayedObject, displayMode, ...])</p></td>
+<td><p>This method modifies the Viewport object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">addDrawings</span></code>([names])</p></td>
+<td><p>This method identifies the names of Drawing objects to be rendered in the Viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">removeDrawings</span></code>([names])</p></td>
+<td><p>This method identifies the names of Drawing objects to no longer be rendered in the Viewport.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeDisplay</span></code>([numFrames, numSeconds, ...])</p></td>
+<td><p>This method refreshes the Viewport display <strong>numFrames</strong> times and then checks to see if <strong>numSeconds</strong> seconds have elapsed.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation">
 <span class="sig-name descname"><span class="pre">plotAnnotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">annotation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/AnnotationViewport.py#L17-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation" title="Permalink to this definition">#</a></dt>
@@ -548,6 +960,54 @@ repository.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Canvas.AttributeColorMap.AttributeColorMap.mapType" title="abaqus.Canvas.AttributeColorMap.AttributeColorMap.mapType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mapType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of AttributeColorMap .</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Canvas.AttributeColorMap.AttributeColorMap.overrides" title="abaqus.Canvas.AttributeColorMap.AttributeColorMap.overrides"><code class="xref py py-obj docutils literal notranslate"><span class="pre">overrides</span></code></a></p></td>
+<td><p>A Dictionary object specifying a color mapping.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Canvas.AttributeColorMap.AttributeColorMap.defaultOverrides" title="abaqus.Canvas.AttributeColorMap.AttributeColorMap.defaultOverrides"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultOverrides</span></code></a></p></td>
+<td><p>A Dictionary object specifying a custom color mapping similar to overrides. For example:<a href="#id1"><span class="problematic" id="id2">`</span></a>defaultOverrides={                        'Copper':(1,''#00FF00', '#00CCFF',                     '#00FF00')}`The color mapping can contain keys that have not been created. When the key is created, it gets the appropriate values from this mapping.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Canvas.AttributeColorMap.AttributeColorMap.attributeColors" title="abaqus.Canvas.AttributeColorMap.AttributeColorMap.attributeColors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">attributeColors</span></code></a></p></td>
+<td><p>A Dictionary object specifying the color settings of each attribute as described in the [updateOverrides ](<a class="reference external" href="https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attributecolormappyc.htm?ContextScope=all#simaker-attributecolormapupdateoverridespyc)method">https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attributecolormappyc.htm?ContextScope=all#simaker-attributecolormapupdateoverridespyc)method</a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Canvas.AttributeColorMap.AttributeColorMap.setDefaults" title="abaqus.Canvas.AttributeColorMap.AttributeColorMap.setDefaults"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setDefaults</span></code></a>()</p></td>
+<td><p>This method resets the AttributeColorMap object to its default state.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Canvas.AttributeColorMap.AttributeColorMap.setValues" title="abaqus.Canvas.AttributeColorMap.AttributeColorMap.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([overrides, defaultOverrides])</p></td>
+<td><p>This method modifies the AttributeColorMap object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Canvas.AttributeColorMap.AttributeColorMap.updateOverrides" title="abaqus.Canvas.AttributeColorMap.AttributeColorMap.updateOverrides"><code class="xref py py-obj docutils literal notranslate"><span class="pre">updateOverrides</span></code></a>([overrides, defaultOverrides])</p></td>
+<td><p>This method specifies additional overrides to be added to the current object definition.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Canvas.AttributeColorMap.AttributeColorMap.attributeColors">
 <span class="sig-name descname"><span class="pre">attributeColors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/AttributeColorMap.py#L37-L40"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.AttributeColorMap.AttributeColorMap.attributeColors" title="Permalink to this definition">#</a></dt>
@@ -560,7 +1020,7 @@ repository.</p>
 <dt class="sig sig-object py" id="abaqus.Canvas.AttributeColorMap.AttributeColorMap.defaultOverrides">
 <span class="sig-name descname"><span class="pre">defaultOverrides</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/AttributeColorMap.py#L31-L35"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.AttributeColorMap.AttributeColorMap.defaultOverrides" title="Permalink to this definition">#</a></dt>
 <dd><p>A Dictionary object specifying a custom color mapping similar to overrides. For
-example:<a href="#id1"><span class="problematic" id="id2">`</span></a>defaultOverrides={                        ‘Copper’:(1,’’#00FF00’, ‘#00CCFF’,</p>
+example:<a href="#id3"><span class="problematic" id="id4">`</span></a>defaultOverrides={                        ‘Copper’:(1,’’#00FF00’, ‘#00CCFF’,</p>
 <blockquote>
 <div><p>‘#00FF00’)}`The color mapping can contain keys that have not been</p>
 </div></blockquote>
@@ -604,7 +1064,7 @@ the active status for the attribute. For example:<cite>overrides={
 ‘Part-1’:(1,’#00FF00’, ‘#00CCFF’,                        ‘#00FF00’)}</cite></p>
 </dd>
 <dt><strong>defaultOverrides</strong></dt><dd><p>A Dictionary object specifying a custom color mapping similar to overrides. For
-example:<a href="#id3"><span class="problematic" id="id4">`</span></a>defaultOverrides={                        ‘Copper’:(1,’’#00FF00’, ‘#00CCFF’,</p>
+example:<a href="#id5"><span class="problematic" id="id6">`</span></a>defaultOverrides={                        ‘Copper’:(1,’’#00FF00’, ‘#00CCFF’,</p>
 <blockquote>
 <div><p>‘#00FF00’)}`The color mapping can contain keys that have not been</p>
 </div></blockquote>
@@ -629,7 +1089,7 @@ the active status for the attribute. For example:<cite>overrides={
 ‘Part-1’:(1,’#00FF00’, ‘#00CCFF’,                        ‘#00FF00’)}</cite></p>
 </dd>
 <dt><strong>defaultOverrides</strong></dt><dd><p>A Dictionary object specifying a custom color mapping similar to overrides. For
-example:<a href="#id5"><span class="problematic" id="id6">`</span></a>defaultOverrides={                        ‘Copper’:(1,’’#00FF00’, ‘#00CCFF’,</p>
+example:<a href="#id7"><span class="problematic" id="id8">`</span></a>defaultOverrides={                        ‘Copper’:(1,’’#00FF00’, ‘#00CCFF’,</p>
 <blockquote>
 <div><p>‘#00FF00’)}`The color mapping can contain keys that have not been</p>
 </div></blockquote>
@@ -643,14 +1103,15 @@ example:<a href="#id5"><span class="problematic" id="id6">`</span></a>defaultOve
 </dd></dl>
 
 </section>
-<section id="id7">
-<h3>Canvas<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
+<section id="id9">
+<h3>Canvas<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Canvas.Canvas.Canvas">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Canvas</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Canvas.py#L1-L2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Canvas.Canvas" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
 
 </section>
+<hr class="docutils" />
 <section id="displayable">
 <h3>Displayable<a class="headerlink" href="#displayable" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
@@ -659,6 +1120,7 @@ example:<a href="#id5"><span class="problematic" id="id6">`</span></a>defaultOve
 <dd></dd></dl>
 
 </section>
+<hr class="docutils" />
 <section id="drawingarea">
 <h3>DrawingArea<a class="headerlink" href="#drawingarea" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
@@ -679,6 +1141,29 @@ placement of viewports.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Canvas.DrawingArea.DrawingArea.width" title="abaqus.Canvas.DrawingArea.DrawingArea.width"><code class="xref py py-obj docutils literal notranslate"><span class="pre">width</span></code></a></p></td>
+<td><p>A Float specifying the width in millimeters.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Canvas.DrawingArea.DrawingArea.height" title="abaqus.Canvas.DrawingArea.DrawingArea.height"><code class="xref py py-obj docutils literal notranslate"><span class="pre">height</span></code></a></p></td>
+<td><p>A Float specifying the height in millimeters.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Canvas.DrawingArea.DrawingArea.origin" title="abaqus.Canvas.DrawingArea.DrawingArea.origin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">origin</span></code></a></p></td>
+<td><p>A pair of Floats specifying the coordinates of the bottom left hand corner in millimeters.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Canvas.DrawingArea.DrawingArea.height">
 <span class="sig-name descname"><span class="pre">height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/DrawingArea.py#L17-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.DrawingArea.DrawingArea.height" title="Permalink to this definition">#</a></dt>
@@ -734,6 +1219,23 @@ the current viewport.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Canvas.ImageOptions.ImageOptions.setValues" title="abaqus.Canvas.ImageOptions.ImageOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([imageName, showImage, ...])</p></td>
+<td><p>This method modifies the ImageOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ImageOptions.ImageOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">imageName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">showImage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FIT_TO_VIEWPORT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'BEST_FIT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alignment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'CENTER'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xScale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yScale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">translucency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ImageOptions.py#L21-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ImageOptions.ImageOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -838,6 +1340,60 @@ If other arguments are also supplied to setValues, they will override the values
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Canvas.Layer.Layer.displayedObject" title="abaqus.Canvas.Layer.Layer.displayedObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayedObject</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Canvas.Displayable.Displayable" title="abaqus.Canvas.Displayable.Displayable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Displayable</span></code></a> object specifying the object to be displayed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Canvas.Layer.Layer.view" title="abaqus.Canvas.Layer.Layer.view"><code class="xref py py-obj docutils literal notranslate"><span class="pre">view</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a> object specifying the object that controls viewing of the layer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Canvas.Layer.Layer.odbDisplay" title="abaqus.Canvas.Layer.Layer.odbDisplay"><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbDisplay</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.OdbDisplay.OdbDisplay" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbDisplay</span></code></a> object specifying the display options for the Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Canvas.Layer.Layer.partDisplay" title="abaqus.Canvas.Layer.Layer.partDisplay"><code class="xref py py-obj docutils literal notranslate"><span class="pre">partDisplay</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartDisplayOptions</span></code></a> object specifying the display options for the Part object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Canvas.Layer.Layer.assemblyDisplay" title="abaqus.Canvas.Layer.Layer.assemblyDisplay"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assemblyDisplay</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AssemblyDisplayOptions</span></code></a> object specifying the display options for the Assembly object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Canvas.Layer.Layer.copyViewName" title="abaqus.Canvas.Layer.Layer.copyViewName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyViewName</span></code></a></p></td>
+<td><p>A String specifying the name of the layer to copy.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, copyViewName])</p></td>
+<td><p>This method creates a Layer object in the Layer repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Canvas.Layer.Layer.moveBefore" title="abaqus.Canvas.Layer.Layer.moveBefore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveBefore</span></code></a>(name)</p></td>
+<td><p>This method moves the layer object before another object in the layer repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Canvas.Layer.Layer.moveAfter" title="abaqus.Canvas.Layer.Layer.moveAfter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveAfter</span></code></a>(name)</p></td>
+<td><p>This method moves the layer object after another object in the layer repository.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Canvas.Layer.Layer.assemblyDisplay">
 <span class="sig-name descname"><span class="pre">assemblyDisplay</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="display_options.html#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions"><span class="pre">AssemblyDisplayOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py#L33-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.assemblyDisplay" title="Permalink to this definition">#</a></dt>
@@ -943,6 +1499,23 @@ the current viewport.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Canvas.MovieOptions.MovieOptions.setValues" title="abaqus.Canvas.MovieOptions.MovieOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([movieName, showMovie, ...])</p></td>
+<td><p>This method modifies the MovieOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.MovieOptions.MovieOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">movieName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">showMovie</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FIT_TO_VIEWPORT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'BEST_FIT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alignment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'CENTER'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xScale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yScale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">translucency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/MovieOptions.py#L21-L92"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.MovieOptions.MovieOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -1797,7 +2370,7 @@ NORMAL, MAXIMIZED, and MINIMIZED.</p>
 <li><a class="reference internal" href="#object-features">Object features</a><ul>
 <li><a class="reference internal" href="#annotation-features-of-viewport">Annotation features of Viewport</a></li>
 <li><a class="reference internal" href="#attributecolormap">AttributeColorMap</a></li>
-<li><a class="reference internal" href="#id7">Canvas</a></li>
+<li><a class="reference internal" href="#id9">Canvas</a></li>
 <li><a class="reference internal" href="#displayable">Displayable</a></li>
 <li><a class="reference internal" href="#drawingarea">DrawingArea</a></li>
 <li><a class="reference internal" href="#highlight">Highlight</a></li>

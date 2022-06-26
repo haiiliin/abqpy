@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -1169,6 +1170,45 @@ the crack domain is shrunk.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.Crack.Crack.name" title="abaqus.EngineeringFeature.Crack.Crack.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.Crack.Crack.suppressed" title="abaqus.EngineeringFeature.Crack.Crack.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the crack is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.Crack.Crack.resume" title="abaqus.EngineeringFeature.Crack.Crack.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
+<td><p>This method resumes the crack that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.Crack.Crack.suppress" title="abaqus.EngineeringFeature.Crack.Crack.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
+<td><p>This method suppresses the crack.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.Crack.Crack.name">
 <span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/Crack.py#L18-L19"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.Crack.Crack.name" title="Permalink to this definition">#</a></dt>
@@ -1230,6 +1270,45 @@ AssembledFastener.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.Fastener.Fastener.name" title="abaqus.EngineeringFeature.Fastener.Fastener.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.Fastener.Fastener.suppressed" title="abaqus.EngineeringFeature.Fastener.Fastener.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the fastener is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.Fastener.Fastener.resume" title="abaqus.EngineeringFeature.Fastener.Fastener.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
+<td><p>This method resumes the fastener that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.Fastener.Fastener.suppress" title="abaqus.EngineeringFeature.Fastener.Fastener.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
+<td><p>This method suppresses the fastener.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.Fastener.Fastener.name">
 <span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/Fastener.py#L19-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.Fastener.Fastener.name" title="Permalink to this definition">#</a></dt>
@@ -1292,6 +1371,45 @@ PointMassInertia.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.Inertia.Inertia.name" title="abaqus.EngineeringFeature.Inertia.Inertia.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.Inertia.Inertia.suppressed" title="abaqus.EngineeringFeature.Inertia.Inertia.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the inertia is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.Inertia.Inertia.resume" title="abaqus.EngineeringFeature.Inertia.Inertia.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
+<td><p>This method resumes the inertia that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.Inertia.Inertia.suppress" title="abaqus.EngineeringFeature.Inertia.Inertia.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
+<td><p>This method suppresses the inertia.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.Inertia.Inertia.name">
 <span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/Inertia.py#L19-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.Inertia.Inertia.name" title="Permalink to this definition">#</a></dt>
@@ -1353,6 +1471,45 @@ TwoPointSpringDashpot objects.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.name" title="abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.suppressed" title="abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the spring/dashpot is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.resume" title="abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
+<td><p>This method resumes the spring/dashpot that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.suppress" title="abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
+<td><p>This method suppresses the spring/dashpot.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.name">
 <span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/SpringDashpot.py#L19-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.name" title="Permalink to this definition">#</a></dt>
@@ -1419,6 +1576,83 @@ The AssembledFastener object is derived from the Fastener object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.suppressed" title="abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the fastener is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.orientMethod" title="abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.orientMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orientMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the method used to orient the virtual instances of the template model at each attachment point.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.localCsys" title="abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.localCsys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">localCsys</span></code></a></p></td>
+<td><p>None or a DatumCsys object specifying the local coordinate system.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.scriptName" title="abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.scriptName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scriptName</span></code></a></p></td>
+<td><p>A String specifying the name of the property generation script.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Fastener</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.suppressed" title="abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the fastener is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, region, templateModel, ...[, ...])</p></td>
+<td><p>This method creates an AssembledFastener object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues" title="abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([orientMethod, localCsys, scriptName])</p></td>
+<td><p>This method modifies the AssembledFastener object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Fastener</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the fastener that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the fastener.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.assignedSurfaces">
 <span class="sig-name descname"><span class="pre">assignedSurfaces</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/AssembledFastener.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.assignedSurfaces" title="Permalink to this definition">#</a></dt>
@@ -1553,6 +1787,98 @@ The ContourIntegral object is derived from the Crack object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.suppressed" title="abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the crack is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.symmetric" title="abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.symmetric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">symmetric</span></code></a></p></td>
+<td><p>A Boolean specifying whether the crack is defined on a half model (about a symmetry plane) or whether it is defined on the whole model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.listOfRegions" title="abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.listOfRegions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">listOfRegions</span></code></a></p></td>
+<td><p>A Boolean specifying whether the regions specified by <strong>crackFront</strong> and <strong>crackTip</strong> are specified using a single region or tuples of region objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackFrontName" title="abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackFrontName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">crackFrontName</span></code></a></p></td>
+<td><p>A String specifying the name of the crack-front region generated from the tuple of regions specifying the crack-front region. This argument is valid only when <strong>listOfRegions</strong> is ON. The default value is <a href="#id5"><span class="problematic" id="id6">**</span></a>name**+Front.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackTipName" title="abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackTipName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">crackTipName</span></code></a></p></td>
+<td><p>A String specifying the name of the crack-tip region generated from the tuple of regions specifying the crack-tip region. This parameter is valid only when <strong>listOfRegions</strong> = ON. The default value is <a href="#id7"><span class="problematic" id="id8">**</span></a>name**+Tip.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackNormal" title="abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackNormal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">crackNormal</span></code></a></p></td>
+<td><p>A sequence of sequences of Floats specifying the two points of the vector that describes the crack normal direction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.qVectors" title="abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.qVectors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">qVectors</span></code></a></p></td>
+<td><p>A sequence of sequences of sequences of Floats specifying the vectors that indicate the set of crack extension directions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.midNodePosition" title="abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.midNodePosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">midNodePosition</span></code></a></p></td>
+<td><p>A Float specifying the position of the midside node along the edges of the second-order elements that radiate from the crack tip.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.collapsedElementAtTip" title="abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.collapsedElementAtTip"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collapsedElementAtTip</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the crack-tip singularity.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Crack</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.suppressed" title="abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the crack is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, crackFront, crackTip, ...[, ...])</p></td>
+<td><p>This method creates a ContourIntegral object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues" title="abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([symmetric, listOfRegions, ...])</p></td>
+<td><p>This method modifies the ContourIntegral object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Crack</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the crack that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the crack.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.collapsedElementAtTip">
 <span class="sig-name descname"><span class="pre">collapsedElementAtTip</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'NONE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/ContourIntegral.py#L82-L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.collapsedElementAtTip" title="Permalink to this definition">#</a></dt>
@@ -1573,7 +1899,7 @@ specified instead of a sequence with a single item in it.</p>
 <span class="sig-name descname"><span class="pre">crackFrontName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/ContourIntegral.py#L54-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackFrontName" title="Permalink to this definition">#</a></dt>
 <dd><p>A String specifying the name of the crack-front region generated from the tuple of
 regions specifying the crack-front region. This argument is valid only when
-<strong>listOfRegions</strong> is ON. The default value is <a href="#id5"><span class="problematic" id="id6">**</span></a>name**+Front.</p>
+<strong>listOfRegions</strong> is ON. The default value is <a href="#id9"><span class="problematic" id="id10">**</span></a>name**+Front.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1598,7 +1924,7 @@ instead of a sequence with a single item in it.</p>
 <span class="sig-name descname"><span class="pre">crackTipName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/ContourIntegral.py#L59-L62"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackTipName" title="Permalink to this definition">#</a></dt>
 <dd><p>A String specifying the name of the crack-tip region generated from the tuple of regions
 specifying the crack-tip region. This parameter is valid only when <strong>listOfRegions</strong> = ON.
-The default value is <a href="#id7"><span class="problematic" id="id8">**</span></a>name**+Tip.</p>
+The default value is <a href="#id11"><span class="problematic" id="id12">**</span></a>name**+Tip.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1648,11 +1974,11 @@ specified using a single region or tuples of region objects. The default value i
 </dd>
 <dt><strong>crackFrontName</strong></dt><dd><p>A String specifying the name of the crack-front region generated from the tuple of
 regions specifying the crack-front region. This argument is valid only when
-<strong>listOfRegions</strong> is ON. The default value is <a href="#id9"><span class="problematic" id="id10">**</span></a>name**+Front.</p>
+<strong>listOfRegions</strong> is ON. The default value is <a href="#id13"><span class="problematic" id="id14">**</span></a>name**+Front.</p>
 </dd>
 <dt><strong>crackTipName</strong></dt><dd><p>A String specifying the name of the crack-tip region generated from the tuple of regions
 specifying the crack-tip region. This parameter is valid only when <strong>listOfRegions</strong> = ON.
-The default value is <a href="#id11"><span class="problematic" id="id12">**</span></a>name**+Tip.</p>
+The default value is <a href="#id15"><span class="problematic" id="id16">**</span></a>name**+Tip.</p>
 </dd>
 <dt><strong>crackNormal</strong></dt><dd><p>A sequence of sequences of Floats specifying the two points of the vector that describes
 the crack normal direction. Each point is defined by a tuple of two or three coordinates
@@ -1729,6 +2055,80 @@ The DebondVCCT object is derived from the Crack object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.suppressed" title="abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the crack is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.debondingForceAmplitude" title="abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.debondingForceAmplitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">debondingForceAmplitude</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether the debond force between the two surfaces at the crack tip is to be released immediately or gradually during the following increment after debonding.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.printToDATFrequency" title="abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.printToDATFrequency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToDATFrequency</span></code></a></p></td>
+<td><p>An Int specifying the frequency at which output will be printed to DAT file.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Crack</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.suppressed" title="abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the crack is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, initiationStep, ...[, ...])</p></td>
+<td><p>This method creates a DebondVCCT object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues" title="abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([debondingForceAmplitude, ...])</p></td>
+<td><p>This method modifies the DebondVCCT object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Crack</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the crack that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the crack.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.debondingForceAmplitude">
 <span class="sig-name descname"><span class="pre">debondingForceAmplitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'STEP'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/DebondVCCT.py#L38-L41"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.debondingForceAmplitude" title="Permalink to this definition">#</a></dt>
@@ -1827,6 +2227,92 @@ The DiscreteFastener object is derived from the Fastener object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.suppressed" title="abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the fastener is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.ur1" title="abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.ur1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ur1</span></code></a></p></td>
+<td><p>A Boolean specifying whether to constrain rotational displacement component about the 1-direction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.ur2" title="abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.ur2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ur2</span></code></a></p></td>
+<td><p>A Boolean specifying whether to constrain rotational displacement component about the 2-direction.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.ur3" title="abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.ur3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ur3</span></code></a></p></td>
+<td><p>A Boolean specifying whether to constrain rotational displacement component about the 3-direction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.coupling" title="abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.coupling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coupling</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the coupling method used to couple the displacement and rotation of each attachment point to the average motion of the surface nodes within the radius of influence from the fastening point.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.weightingMethod" title="abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.weightingMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">weightingMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the weighting scheme to be used to weight the contribution of the displacements of the surface nodes within the radius of influence to the motion of the fastening point.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.localCsys" title="abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.localCsys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">localCsys</span></code></a></p></td>
+<td><p>None or a DatumCsys object specifying the local coordinate system of fastener couplings.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Fastener</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.suppressed" title="abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the fastener is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, region, influenceRadius[, ...])</p></td>
+<td><p>This method creates a DiscreteFastener object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues" title="abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([ur1, ur2, ur3, coupling, ...])</p></td>
+<td><p>This method modifies the DiscreteFastener object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Fastener</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the fastener that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the fastener.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.coupling">
 <span class="sig-name descname"><span class="pre">coupling</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'CONTINUUM'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/DiscreteFastener.py#L52-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.coupling" title="Permalink to this definition">#</a></dt>
@@ -1969,6 +2455,51 @@ repositories. The EngineeringFeature object has no explicit constructor or metho
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.inertias" title="abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.inertias"><code class="xref py py-obj docutils literal notranslate"><span class="pre">inertias</span></code></a></p></td>
+<td><p>A repository of Inertia objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.cracks" title="abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.cracks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cracks</span></code></a></p></td>
+<td><p>A repository of Crack objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.fasteners" title="abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.fasteners"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fasteners</span></code></a></p></td>
+<td><p>A repository of Fastener objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.springDashpots" title="abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.springDashpots"><code class="xref py py-obj docutils literal notranslate"><span class="pre">springDashpots</span></code></a></p></td>
+<td><p>A repository of SpringDashpot objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam" title="abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assignSeam</span></code></a>(regions)</p></td>
+<td><p>This method creates a seam crack along an edge or a face.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam" title="abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteSeam</span></code></a>(regions)</p></td>
+<td><p>This method deletes a seam crack.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam">
 <span class="sig-name descname"><span class="pre">assignSeam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/EngineeringFeatureBase.py#L35-L44"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam" title="Permalink to this definition">#</a></dt>
@@ -2070,6 +2601,80 @@ The HeatCapacitance object is derived from the Inertia object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.suppressed" title="abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the inertia is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.temperatureDependency" title="abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.temperatureDependency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">temperatureDependency</span></code></a></p></td>
+<td><p>A Boolean specifying whether the data depend on temperature.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.dependencies" title="abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.dependencies"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dependencies</span></code></a></p></td>
+<td><p>An Int specifying the number of field variable dependencies.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Inertia</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.suppressed" title="abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the inertia is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, region, table[, ...])</p></td>
+<td><p>This method creates a HeatCapacitance object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues" title="abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([temperatureDependency, dependencies])</p></td>
+<td><p>This method modifies the HeatCapacitance object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Inertia</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the inertia that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the inertia.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.dependencies">
 <span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/HeatCapacitance.py#L50-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.dependencies" title="Permalink to this definition">#</a></dt>
@@ -2156,6 +2761,77 @@ The NonstructuralMass object is derived from the Inertia object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.suppressed" title="abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the inertia is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.distribution" title="abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.distribution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">distribution</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the distribution of the nonstructural mass.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Inertia</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.suppressed" title="abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the inertia is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, region, units, magnitude[, ...])</p></td>
+<td><p>This method creates a NonstructuralMass object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues" title="abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distribution])</p></td>
+<td><p>This method modifies the NonstructuralMass object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Inertia</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the inertia that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the inertia.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.distribution">
 <span class="sig-name descname"><span class="pre">distribution</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'MASS_PROPORTIONAL'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/NonstructuralMass.py#L42-L45"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.distribution" title="Permalink to this definition">#</a></dt>
@@ -2253,6 +2929,146 @@ The PointFastener object is derived from the Fastener object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.suppressed" title="abaqus.EngineeringFeature.PointFastener.PointFastener.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the fastener is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.directionVector" title="abaqus.EngineeringFeature.PointFastener.PointFastener.directionVector"><code class="xref py py-obj docutils literal notranslate"><span class="pre">directionVector</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.VertexArray.VertexArray" title="abaqus.BasicGeometry.VertexArray.VertexArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">VertexArray</span></code></a> object of length 2 specifying the direction of projection.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.targetSurfaces" title="abaqus.EngineeringFeature.PointFastener.PointFastener.targetSurfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">targetSurfaces</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="region.html#abaqus.Region.RegionArray.RegionArray" title="abaqus.Region.RegionArray.RegionArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">RegionArray</span></code></a> object specifying surfaces to be fastened.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.ur1" title="abaqus.EngineeringFeature.PointFastener.PointFastener.ur1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ur1</span></code></a></p></td>
+<td><p>A Boolean specifying whether to constrain rotational displacement component about the 1-direction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.ur2" title="abaqus.EngineeringFeature.PointFastener.PointFastener.ur2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ur2</span></code></a></p></td>
+<td><p>A Boolean specifying whether to constrain rotational displacement component about the 2-direction.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.ur3" title="abaqus.EngineeringFeature.PointFastener.PointFastener.ur3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ur3</span></code></a></p></td>
+<td><p>A Boolean specifying whether to constrain rotational displacement component about the 3-direction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.attachmentMethod" title="abaqus.EngineeringFeature.PointFastener.PointFastener.attachmentMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">attachmentMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the method used to locate points for attaching fasteners.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.influenceRadius" title="abaqus.EngineeringFeature.PointFastener.PointFastener.influenceRadius"><code class="xref py py-obj docutils literal notranslate"><span class="pre">influenceRadius</span></code></a></p></td>
+<td><p>The SymbolicConstant DEFAULT or a Float specifying the maximum distance from the projection point on a connected surface within which the nodes on that surface must lie to contribute to the motion of the projection point.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.searchRadius" title="abaqus.EngineeringFeature.PointFastener.PointFastener.searchRadius"><code class="xref py py-obj docutils literal notranslate"><span class="pre">searchRadius</span></code></a></p></td>
+<td><p>The SymbolicConstant DEFAULT or a Float specifying the distance from the positioning points within which the connected points must lie.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.maximumLayers" title="abaqus.EngineeringFeature.PointFastener.PointFastener.maximumLayers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maximumLayers</span></code></a></p></td>
+<td><p>The SymbolicConstant ALL or an Int specifying the maximum number of layers for each fastener.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.coupling" title="abaqus.EngineeringFeature.PointFastener.PointFastener.coupling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coupling</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the coupling method used to couple the displacement and rotation of each attachment point to the average motion of the surface nodes within the radius of influence from the fastener projection point.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.weightingMethod" title="abaqus.EngineeringFeature.PointFastener.PointFastener.weightingMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">weightingMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the weighting scheme to be used to weight the contribution of the displacements of the surface nodes within the radius of influence to the motion of the fastener projection point.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.additionalMass" title="abaqus.EngineeringFeature.PointFastener.PointFastener.additionalMass"><code class="xref py py-obj docutils literal notranslate"><span class="pre">additionalMass</span></code></a></p></td>
+<td><p>A Float specifying the mass that will be distributed to fastener attachment points.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.adjustOrientation" title="abaqus.EngineeringFeature.PointFastener.PointFastener.adjustOrientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">adjustOrientation</span></code></a></p></td>
+<td><p>A Boolean specifying whether to adjust localCsys such that the local z-axis for each fastener is normal to the surface that is closest to the reference node for that fastener.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.localCsys" title="abaqus.EngineeringFeature.PointFastener.PointFastener.localCsys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">localCsys</span></code></a></p></td>
+<td><p>None or a DatumCsys object specifying the local coordinate system.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.connectionType" title="abaqus.EngineeringFeature.PointFastener.PointFastener.connectionType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">connectionType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the fastener connection type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.sectionName" title="abaqus.EngineeringFeature.PointFastener.PointFastener.sectionName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sectionName</span></code></a></p></td>
+<td><p>A String specifying the connector section assigned to generated connectors.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.connectorOrientationLocalCsys1" title="abaqus.EngineeringFeature.PointFastener.PointFastener.connectorOrientationLocalCsys1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">connectorOrientationLocalCsys1</span></code></a></p></td>
+<td><p>None or a DatumCsys object specifying the local coordinate system of the first connector point in generated connectors.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.axis1" title="abaqus.EngineeringFeature.PointFastener.PointFastener.axis1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axis1</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the axis of a datum coordinate system about which an additional rotation is applied for the first point in generated connectors.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.angle1" title="abaqus.EngineeringFeature.PointFastener.PointFastener.angle1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">angle1</span></code></a></p></td>
+<td><p>A Float specifying the angle of the additional rotation for the first point in generated connectors.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.orient2SameAs1" title="abaqus.EngineeringFeature.PointFastener.PointFastener.orient2SameAs1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orient2SameAs1</span></code></a></p></td>
+<td><p>A Boolean specifying whether or not the second connector point in generated connectors is to use the same local coordinate system, axis, and angle as the first point.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.connectorOrientationLocalCsys2" title="abaqus.EngineeringFeature.PointFastener.PointFastener.connectorOrientationLocalCsys2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">connectorOrientationLocalCsys2</span></code></a></p></td>
+<td><p>None or a DatumCsys object specifying the local coordinate system of the second connector point in generated connectors.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.axis2" title="abaqus.EngineeringFeature.PointFastener.PointFastener.axis2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axis2</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the axis of a datum coordinate system about which an additional rotation is applied for the second point in generated connectors.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.angle2" title="abaqus.EngineeringFeature.PointFastener.PointFastener.angle2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">angle2</span></code></a></p></td>
+<td><p>A Float specifying the angle of the additional rotation for the second point in generated connectors.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.unsorted" title="abaqus.EngineeringFeature.PointFastener.PointFastener.unsorted"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unsorted</span></code></a></p></td>
+<td><p>A Boolean specifying whether the analysis product should leave targetSurfaces in the given unsorted order, or sort them by proximity to determine the connectivity of fastening points.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Fastener</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.suppressed" title="abaqus.EngineeringFeature.PointFastener.PointFastener.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the fastener is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, region, physicalRadius[, ...])</p></td>
+<td><p>This method creates a PointFastener object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.setValues" title="abaqus.EngineeringFeature.PointFastener.PointFastener.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([directionVector, targetSurfaces, ...])</p></td>
+<td><p>This method modifies the PointFastener object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Fastener</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the fastener that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the fastener.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.PointFastener.PointFastener.additionalMass">
 <span class="sig-name descname"><span class="pre">additionalMass</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/PointFastener.py#L96-L98"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.additionalMass" title="Permalink to this definition">#</a></dt>
@@ -2612,6 +3428,113 @@ The PointMassInertia object is derived from the Inertia object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.suppressed" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the inertia is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mass</span></code></a></p></td>
+<td><p>A Float specifying the mass magnitude for isotropic mass.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass1" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mass1</span></code></a></p></td>
+<td><p>A Float specifying the mass in the 1-direction for anisotropic mass.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass2" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mass2</span></code></a></p></td>
+<td><p>A Float specifying the mass in the 2-direction for anisotropic mass.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass3" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mass3</span></code></a></p></td>
+<td><p>A Float specifying the mass in the 3-direction for anisotropic mass.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i11" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i11"><code class="xref py py-obj docutils literal notranslate"><span class="pre">i11</span></code></a></p></td>
+<td><p>A Float specifying the rotary inertia about the local 1-axis, I11I11.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i22" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i22"><code class="xref py py-obj docutils literal notranslate"><span class="pre">i22</span></code></a></p></td>
+<td><p>A Float specifying the rotary inertia about the local 2-axis, I22I22.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i33" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i33"><code class="xref py py-obj docutils literal notranslate"><span class="pre">i33</span></code></a></p></td>
+<td><p>A Float specifying the rotary inertia about the local 3-axis, I33I33.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i12" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i12"><code class="xref py py-obj docutils literal notranslate"><span class="pre">i12</span></code></a></p></td>
+<td><p>A Float specifying the product of inertia, I12I12.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i13" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i13"><code class="xref py py-obj docutils literal notranslate"><span class="pre">i13</span></code></a></p></td>
+<td><p>A Float specifying the product of inertia, I13I13.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i23" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i23"><code class="xref py py-obj docutils literal notranslate"><span class="pre">i23</span></code></a></p></td>
+<td><p>A Float specifying the product of inertia, I23I23.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.localCsys" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.localCsys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">localCsys</span></code></a></p></td>
+<td><p>None or a DatumCsys object specifying the local coordinate system for the anisotropic mass terms (when specified), and the rotary inertia (when specified).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.alpha" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.alpha"><code class="xref py py-obj docutils literal notranslate"><span class="pre">alpha</span></code></a></p></td>
+<td><p>A Float specifying the alpha damping magnitude.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.composite" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.composite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">composite</span></code></a></p></td>
+<td><p>A Float specifying the composite damping magnitude.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Inertia</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.suppressed" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the inertia is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, region[, mass, mass1, mass2, ...])</p></td>
+<td><p>This method creates a PointMassInertia object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([mass, mass1, mass2, mass3, i11, ...])</p></td>
+<td><p>This method modifies the PointMassInertia object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Inertia</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the inertia that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the inertia.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.alpha">
 <span class="sig-name descname"><span class="pre">alpha</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/PointMassInertia.py#L78-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.alpha" title="Permalink to this definition">#</a></dt>
@@ -2817,6 +3740,89 @@ The SpringDashpotToGround object is derived from the SpringDashpot object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.suppressed" title="abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the spring/dashpot is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.orientation" title="abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.orientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orientation</span></code></a></p></td>
+<td><p>None or a DatumCsys object specifying the local directions for the spring and/or dashpot.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.springBehavior" title="abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.springBehavior"><code class="xref py py-obj docutils literal notranslate"><span class="pre">springBehavior</span></code></a></p></td>
+<td><p>A Boolean specifying whether to apply spring behavior to the selected points.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.dashpotBehavior" title="abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.dashpotBehavior"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dashpotBehavior</span></code></a></p></td>
+<td><p>A Boolean specifying whether to apply dashpot behavior to the selected points.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.springStiffness" title="abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.springStiffness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">springStiffness</span></code></a></p></td>
+<td><p>A Float specifying the force per relative displacement for the spring.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.dashpotCoefficient" title="abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.dashpotCoefficient"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dashpotCoefficient</span></code></a></p></td>
+<td><p>A Float specifying the force per relative velocity for the dashpot.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SpringDashpot</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.suppressed" title="abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the spring/dashpot is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, region, dof[, orientation, ...])</p></td>
+<td><p>This method creates a SpringDashpotToGround object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues" title="abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([orientation, springBehavior, ...])</p></td>
+<td><p>This method modifies the SpringDashpotToGround object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SpringDashpot</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the spring/dashpot that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the spring/dashpot.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.dashpotBehavior">
 <span class="sig-name descname"><span class="pre">dashpotBehavior</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/SpringDashpotToGround.py#L52-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.dashpotBehavior" title="Permalink to this definition">#</a></dt>
@@ -2958,6 +3964,95 @@ The TwoPointSpringDashpot object is derived from the SpringDashpot object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.suppressed" title="abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the spring/dashpot is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dof1" title="abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dof1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dof1</span></code></a></p></td>
+<td><p>An Int specifying the degree of freedom with which the springs and/or dashpots are associated at their first points.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dof2" title="abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dof2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dof2</span></code></a></p></td>
+<td><p>An Int specifying the degree of freedom with which the springs and/or dashpots are associated at their second points.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.orientation" title="abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.orientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orientation</span></code></a></p></td>
+<td><p>None or a DatumCsys object specifying the local directions for the spring and/or dashpot.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.springBehavior" title="abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.springBehavior"><code class="xref py py-obj docutils literal notranslate"><span class="pre">springBehavior</span></code></a></p></td>
+<td><p>A Boolean specifying whether to apply spring behavior to the selected point pairs.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dashpotBehavior" title="abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dashpotBehavior"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dashpotBehavior</span></code></a></p></td>
+<td><p>A Boolean specifying whether to apply dashpot behavior to the selected point pairs.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.springStiffness" title="abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.springStiffness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">springStiffness</span></code></a></p></td>
+<td><p>A Float specifying the force per relative displacement for the springs.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dashpotCoefficient" title="abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dashpotCoefficient"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dashpotCoefficient</span></code></a></p></td>
+<td><p>A Float specifying the force per relative velocity for the dashpots.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SpringDashpot</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.suppressed" title="abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the spring/dashpot is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, regionPairs, axis[, dof1, ...])</p></td>
+<td><p>This method creates a TwoPointSpringDashpot object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues" title="abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([dof1, dof2, orientation, ...])</p></td>
+<td><p>This method modifies the TwoPointSpringDashpot object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SpringDashpot</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the spring/dashpot that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the spring/dashpot.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.axis">
 <span class="sig-name descname"><span class="pre">axis</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.axis" title="Permalink to this definition">#</a></dt>
@@ -3127,6 +4222,104 @@ The XFEMCrack object is derived from the Crack object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.suppressed" title="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the crack is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.allowCrackGrowth" title="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.allowCrackGrowth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">allowCrackGrowth</span></code></a></p></td>
+<td><p>A Boolean specifying whether the crack is allowed to propagate (grow).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackLocation" title="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackLocation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">crackLocation</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the initial crack location. This parameter is required when <a href="#id17"><span class="problematic" id="id18">*</span></a>allowCrackGrowth*=OFF.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.singularityCalcRadius" title="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.singularityCalcRadius"><code class="xref py py-obj docutils literal notranslate"><span class="pre">singularityCalcRadius</span></code></a></p></td>
+<td><p>None or a Float specifying the radius from the crack tips within which the elements are used for crack singularity calculations. This argument applies only when <a href="#id19"><span class="problematic" id="id20">*</span></a>allowCrackGrowth*=OFF. The default value is None.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.interactionProperty" title="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.interactionProperty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactionProperty</span></code></a></p></td>
+<td><p>A String specifying the name of the ContactProperty object that defines the contact properties for the crack surfaces.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.elemId" title="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.elemId"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elemId</span></code></a></p></td>
+<td><p>A sequence of Ints specifying the labels of the elements that are intersected by the initial crack location.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.nodeId" title="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.nodeId"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeId</span></code></a></p></td>
+<td><p>A sequence of Ints specifying the position of a node in the corresponding element connectivity.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.hasCrackFront" title="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.hasCrackFront"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hasCrackFront</span></code></a></p></td>
+<td><p>A sequence of Ints specifying the values indicating the inclusion/exclusion of the <em>crackFrontDist</em> values.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackPlaneDist" title="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackPlaneDist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">crackPlaneDist</span></code></a></p></td>
+<td><p>A sequence of Floats specifying the values of the first signed distance function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackFrontDist" title="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackFrontDist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">crackFrontDist</span></code></a></p></td>
+<td><p>A sequence of Floats specifying the values of the second signed distance function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.autoDetectValue" title="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.autoDetectValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoDetectValue</span></code></a></p></td>
+<td><p>An integer specifying the number of element layers around the crack location, to which the crack domain is shrunk.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Crack</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.suppressed" title="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the crack is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, crackDomain[, ...])</p></td>
+<td><p>This method creates a XFEMCrack object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues" title="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([allowCrackGrowth, crackLocation, ...])</p></td>
+<td><p>This method modifies the XFEMCrack object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Crack</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the crack that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the crack.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.allowCrackGrowth">
 <span class="sig-name descname"><span class="pre">allowCrackGrowth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/XFEMCrack.py#L37-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.allowCrackGrowth" title="Permalink to this definition">#</a></dt>
@@ -3159,7 +4352,7 @@ argument is used only by the input file reader.</p>
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackLocation">
 <span class="sig-name descname"><span class="pre">crackLocation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/XFEMCrack.py#L41-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackLocation" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the initial crack location. This parameter is required when
-<a href="#id13"><span class="problematic" id="id14">*</span></a>allowCrackGrowth*=OFF.</p>
+<a href="#id21"><span class="problematic" id="id22">*</span></a>allowCrackGrowth*=OFF.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -3210,11 +4403,11 @@ connectivity. This argument is used only by the input file reader.</p>
 is ON.</p>
 </dd>
 <dt><strong>crackLocation</strong></dt><dd><p>A <a class="reference internal" href="region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the initial crack location. This parameter is required when
-<a href="#id15"><span class="problematic" id="id16">*</span></a>allowCrackGrowth*=OFF.</p>
+<a href="#id23"><span class="problematic" id="id24">*</span></a>allowCrackGrowth*=OFF.</p>
 </dd>
 <dt><strong>singularityCalcRadius</strong></dt><dd><p>None or a Float specifying the radius from the crack tips within which the elements are
 used for crack singularity calculations. This argument applies only when
-<a href="#id17"><span class="problematic" id="id18">*</span></a>allowCrackGrowth*=OFF. The default value is None.</p>
+<a href="#id25"><span class="problematic" id="id26">*</span></a>allowCrackGrowth*=OFF. The default value is None.</p>
 </dd>
 <dt><strong>interactionProperty</strong></dt><dd><p>A String specifying the name of the ContactProperty object that defines the contact
 properties for the crack surfaces. The default value is an empty string.</p>
@@ -3249,7 +4442,7 @@ the crack domain is shrunk.</p>
 <span class="sig-name descname"><span class="pre">singularityCalcRadius</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/XFEMCrack.py#L45-L48"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.singularityCalcRadius" title="Permalink to this definition">#</a></dt>
 <dd><p>None or a Float specifying the radius from the crack tips within which the elements are
 used for crack singularity calculations. This argument applies only when
-<a href="#id19"><span class="problematic" id="id20">*</span></a>allowCrackGrowth*=OFF. The default value is None.</p>
+<a href="#id27"><span class="problematic" id="id28">*</span></a>allowCrackGrowth*=OFF. The default value is None.</p>
 </dd></dl>
 
 <dl class="py attribute">

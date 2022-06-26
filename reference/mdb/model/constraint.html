@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -912,6 +913,48 @@ common to all objects derived from the ConstrainedSketchConstraint.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint.name" title="abaqus.Constraint.Constraint.Constraint.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the constraint repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint.suppressed" title="abaqus.Constraint.Constraint.Constraint.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint.resume" title="abaqus.Constraint.Constraint.Constraint.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
+<td><p>This method resumes the constraint that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint.suppress" title="abaqus.Constraint.Constraint.Constraint.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
+<td><p>This method suppresses the constraint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint.delete" title="abaqus.Constraint.Constraint.Constraint.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
+<td><p>This method allows you to delete existing constraints.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.Constraint.Constraint.delete">
 <span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indices</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Constraint.py#L33-L41"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Constraint.Constraint.delete" title="Permalink to this definition">#</a></dt>
@@ -987,6 +1030,77 @@ The AdjustPoints object is derived from the ConstrainedSketchConstraint object.<
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.suppressed" title="abaqus.Constraint.AdjustPoints.AdjustPoints.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the constraint repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.suppressed" title="abaqus.Constraint.AdjustPoints.AdjustPoints.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, surface, controlPoints)</p></td>
+<td><p>This method creates an AdjustPoints object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.setValues" title="abaqus.Constraint.AdjustPoints.AdjustPoints.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the AdjustPoints object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the constraint that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the constraint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<td><p>This method allows you to delete existing constraints.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Constraint.AdjustPoints.AdjustPoints.controlPoints">
 <span class="sig-name descname"><span class="pre">controlPoints</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/AdjustPoints.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.controlPoints" title="Permalink to this definition">#</a></dt>
@@ -1056,6 +1170,104 @@ The Coupling object is derived from the ConstrainedSketchConstraint object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Coupling.Coupling.suppressed" title="abaqus.Constraint.Coupling.Coupling.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Coupling.Coupling.adjust" title="abaqus.Constraint.Coupling.Coupling.adjust"><code class="xref py py-obj docutils literal notranslate"><span class="pre">adjust</span></code></a></p></td>
+<td><p>A Boolean specifying if the control point will be adjusted (moved) to the surface.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Coupling.Coupling.localCsys" title="abaqus.Constraint.Coupling.Coupling.localCsys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">localCsys</span></code></a></p></td>
+<td><p>None or a DatumCsys object specifying the initial orientation of the local coordinate system for the coupling's degrees of freedom.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Coupling.Coupling.u1" title="abaqus.Constraint.Coupling.Coupling.u1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">u1</span></code></a></p></td>
+<td><p>A Boolean specifying if the displacement component in the 1-direction is constrained to the reference node for a kinematic coupling constraint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Coupling.Coupling.u2" title="abaqus.Constraint.Coupling.Coupling.u2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">u2</span></code></a></p></td>
+<td><p>A Boolean specifying if the displacement component in the 2-direction is constrained to the reference node for a kinematic coupling constraint.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Coupling.Coupling.u3" title="abaqus.Constraint.Coupling.Coupling.u3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">u3</span></code></a></p></td>
+<td><p>A Boolean specifying if the displacement component in the 3-direction is constrained to the reference node for a kinematic coupling constraint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Coupling.Coupling.ur1" title="abaqus.Constraint.Coupling.Coupling.ur1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ur1</span></code></a></p></td>
+<td><p>A Boolean specifying if the rotational displacement component about the 1-direction is constrained to the reference node for a kinematic coupling constraint.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Coupling.Coupling.ur2" title="abaqus.Constraint.Coupling.Coupling.ur2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ur2</span></code></a></p></td>
+<td><p>A Boolean specifying if the rotational displacement component about the 2-direction is constrained to the reference node for a kinematic coupling constraint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Coupling.Coupling.ur3" title="abaqus.Constraint.Coupling.Coupling.ur3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ur3</span></code></a></p></td>
+<td><p>A Boolean specifying if the rotational displacement component about the 3-direction is constrained to the reference node for a kinematic coupling constraint.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Coupling.Coupling.weightingMethod" title="abaqus.Constraint.Coupling.Coupling.weightingMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">weightingMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying an optional weighting method used for calculating the distributing weight factors.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the constraint repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Coupling.Coupling.suppressed" title="abaqus.Constraint.Coupling.Coupling.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, surface, controlPoint, ...[, ...])</p></td>
+<td><p>This method creates a Coupling object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Coupling.Coupling.setValues" title="abaqus.Constraint.Coupling.Coupling.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([adjust, localCsys, u1, u2, u3, ...])</p></td>
+<td><p>This method modifies the Coupling object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the constraint that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the constraint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<td><p>This method allows you to delete existing constraints.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.adjust">
 <span class="sig-name descname"><span class="pre">adjust</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Coupling.py#L46-L49"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.adjust" title="Permalink to this definition">#</a></dt>
@@ -1249,6 +1461,77 @@ The DisplayBody object is derived from the ConstrainedSketchConstraint object.</
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.DisplayBody.DisplayBody.suppressed" title="abaqus.Constraint.DisplayBody.DisplayBody.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the constraint repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.DisplayBody.DisplayBody.suppressed" title="abaqus.Constraint.DisplayBody.DisplayBody.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, instance, controlPoints)</p></td>
+<td><p>This method creates a DisplayBody object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.DisplayBody.DisplayBody.setValues" title="abaqus.Constraint.DisplayBody.DisplayBody.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the DisplayBody object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the constraint that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the constraint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<td><p>This method allows you to delete existing constraints.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Constraint.DisplayBody.DisplayBody.controlPoints">
 <span class="sig-name descname"><span class="pre">controlPoints</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.ModelDotArray.ModelDotArray" title="abaqus.BasicGeometry.ModelDotArray.ModelDotArray"><span class="pre">ModelDotArray</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/DisplayBody.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.DisplayBody.DisplayBody.controlPoints" title="Permalink to this definition">#</a></dt>
@@ -1322,6 +1605,89 @@ The EmbeddedRegion object is derived from the ConstrainedSketchConstraint object
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.suppressed" title="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.weightFactorTolerance" title="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.weightFactorTolerance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">weightFactorTolerance</span></code></a></p></td>
+<td><p>A Float specifying a small value below which the weighting factors will be zeroed out.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.toleranceMethod" title="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.toleranceMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">toleranceMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the method used to determine the embedded element tolerance.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.absoluteTolerance" title="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.absoluteTolerance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">absoluteTolerance</span></code></a></p></td>
+<td><p>A Float specifying the absolute value by which a node on the embedded region may lie outside the host region.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.fractionalTolerance" title="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.fractionalTolerance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fractionalTolerance</span></code></a></p></td>
+<td><p>A Float specifying the fractional value by which a node on the embedded region may lie outside the host region.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the constraint repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.suppressed" title="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, embeddedRegion, hostRegion[, ...])</p></td>
+<td><p>This method creates a EmbeddedRegion object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues" title="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([weightFactorTolerance, ...])</p></td>
+<td><p>This method modifies the EmbeddedRegion object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the constraint that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the constraint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<td><p>This method allows you to delete existing constraints.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.absoluteTolerance">
 <span class="sig-name descname"><span class="pre">absoluteTolerance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/EmbeddedRegion.py#L47-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.absoluteTolerance" title="Permalink to this definition">#</a></dt>
@@ -1443,6 +1809,77 @@ The Equation object is derived from the ConstrainedSketchConstraint object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Equation.Equation.suppressed" title="abaqus.Constraint.Equation.Equation.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the constraint repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Equation.Equation.suppressed" title="abaqus.Constraint.Equation.Equation.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, terms)</p></td>
+<td><p>This method creates an Equation object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Equation.Equation.setValues" title="abaqus.Constraint.Equation.Equation.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p>This method modifies the Equation object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the constraint that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the constraint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<td><p>This method allows you to delete existing constraints.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.Equation.Equation.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Equation.py#L64-L71"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Equation.Equation.setValues" title="Permalink to this definition">#</a></dt>
@@ -1514,6 +1951,86 @@ The MultipointConstraint object is derived from the ConstrainedSketchConstraint 
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.suppressed" title="abaqus.Constraint.MultipointConstraint.MultipointConstraint.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.csys" title="abaqus.Constraint.MultipointConstraint.MultipointConstraint.csys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">csys</span></code></a></p></td>
+<td><p>None or a DatumCsys object specifying the initial orientation of the local coordinate system for the MultipointConstraint's degrees of freedom.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.userType" title="abaqus.Constraint.MultipointConstraint.MultipointConstraint.userType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">userType</span></code></a></p></td>
+<td><p>An Int specifying to differentiate between different constraint types in a user-defined MultipointConstraint.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.userMode" title="abaqus.Constraint.MultipointConstraint.MultipointConstraint.userMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">userMode</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the mode of the constraint when it is user-defined.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the constraint repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.suppressed" title="abaqus.Constraint.MultipointConstraint.MultipointConstraint.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, surface, controlPoint, mpcType)</p></td>
+<td><p>This method creates a MultipointConstraint object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues" title="abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([csys, userType, userMode])</p></td>
+<td><p>This method modifies the MultipointConstraint object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the constraint that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the constraint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<td><p>This method allows you to delete existing constraints.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Constraint.MultipointConstraint.MultipointConstraint.controlPoint">
 <span class="sig-name descname"><span class="pre">controlPoint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/MultipointConstraint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.controlPoint" title="Permalink to this definition">#</a></dt>
@@ -1638,6 +2155,95 @@ The RigidBody object is derived from the ConstrainedSketchConstraint object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.RigidBody.RigidBody.suppressed" title="abaqus.Constraint.RigidBody.RigidBody.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.RigidBody.RigidBody.bodyRegion" title="abaqus.Constraint.RigidBody.RigidBody.bodyRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bodyRegion</span></code></a></p></td>
+<td><p>None or a Region object specifying the elements constrained to the movement of the reference point.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.RigidBody.RigidBody.tieRegion" title="abaqus.Constraint.RigidBody.RigidBody.tieRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tieRegion</span></code></a></p></td>
+<td><p>None or a Region object specifying the nodes tied to the movement of the reference point.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.RigidBody.RigidBody.pinRegion" title="abaqus.Constraint.RigidBody.RigidBody.pinRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pinRegion</span></code></a></p></td>
+<td><p>None or a Region object specifying the nodes pinned to the movement of the reference point.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.RigidBody.RigidBody.surfaceRegion" title="abaqus.Constraint.RigidBody.RigidBody.surfaceRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">surfaceRegion</span></code></a></p></td>
+<td><p>None or a Region object specifying the analytic surface constrained to the movement of the reference point.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.RigidBody.RigidBody.refPointAtCOM" title="abaqus.Constraint.RigidBody.RigidBody.refPointAtCOM"><code class="xref py py-obj docutils literal notranslate"><span class="pre">refPointAtCOM</span></code></a></p></td>
+<td><p>A Boolean specifying whether the analysis product should recompute the reference point position to be at the center of mass.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.RigidBody.RigidBody.isothermal" title="abaqus.Constraint.RigidBody.RigidBody.isothermal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isothermal</span></code></a></p></td>
+<td><p>A Boolean specifying whether the temperature degree of freedom should be constrained.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the constraint repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.RigidBody.RigidBody.suppressed" title="abaqus.Constraint.RigidBody.RigidBody.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, refPointRegion[, bodyRegion, ...])</p></td>
+<td><p>This method creates a RigidBody object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.RigidBody.RigidBody.setValues" title="abaqus.Constraint.RigidBody.RigidBody.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([bodyRegion, tieRegion, ...])</p></td>
+<td><p>This method modifies the RigidBody object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the constraint that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the constraint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<td><p>This method allows you to delete existing constraints.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody.bodyRegion">
 <span class="sig-name descname"><span class="pre">bodyRegion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/RigidBody.py#L34-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.RigidBody.RigidBody.bodyRegion" title="Permalink to this definition">#</a></dt>
@@ -1760,6 +2366,89 @@ The ShellSolidCoupling object is derived from the ConstrainedSketchConstraint ob
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.suppressed" title="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.positionToleranceMethod" title="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.positionToleranceMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">positionToleranceMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the method used to determine the position tolerance.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.positionTolerance" title="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.positionTolerance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">positionTolerance</span></code></a></p></td>
+<td><p>A Float specifying the position tolerance.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.influenceDistanceMethod" title="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.influenceDistanceMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">influenceDistanceMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the method used to determine the influence distance.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.influenceDistance" title="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.influenceDistance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">influenceDistance</span></code></a></p></td>
+<td><p>A Float specifying the influence distance.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the constraint repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.suppressed" title="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, shellEdge, solidFace[, ...])</p></td>
+<td><p>This method creates a ShellSolidCoupling object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues" title="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([positionToleranceMethod, ...])</p></td>
+<td><p>This method modifies the ShellSolidCoupling object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the constraint that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the constraint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<td><p>This method allows you to delete existing constraints.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.influenceDistance">
 <span class="sig-name descname"><span class="pre">influenceDistance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/ShellSolidCoupling.py#L51-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.influenceDistance" title="Permalink to this definition">#</a></dt>
@@ -1875,6 +2564,104 @@ The Tie object is derived from the ConstrainedSketchConstraint object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Tie.Tie.suppressed" title="abaqus.Constraint.Tie.Tie.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Tie.Tie.adjust" title="abaqus.Constraint.Tie.Tie.adjust"><code class="xref py py-obj docutils literal notranslate"><span class="pre">adjust</span></code></a></p></td>
+<td><p>A Boolean specifying whether initial positions of tied secondary nodes are adjusted to lie on the main surface.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Tie.Tie.positionToleranceMethod" title="abaqus.Constraint.Tie.Tie.positionToleranceMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">positionToleranceMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the method used to determine the position tolerance.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Tie.Tie.positionTolerance" title="abaqus.Constraint.Tie.Tie.positionTolerance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">positionTolerance</span></code></a></p></td>
+<td><p>A Float specifying the position tolerance.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Tie.Tie.tieRotations" title="abaqus.Constraint.Tie.Tie.tieRotations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tieRotations</span></code></a></p></td>
+<td><p>A Boolean specifying whether rotation degrees of freedom should be tied.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Tie.Tie.constraintRatioMethod" title="abaqus.Constraint.Tie.Tie.constraintRatioMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">constraintRatioMethod</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the method used to determine the constraint ratio.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Tie.Tie.constraintRatio" title="abaqus.Constraint.Tie.Tie.constraintRatio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">constraintRatio</span></code></a></p></td>
+<td><p>A Float specifying the fractional distance between the main reference surface and the secondary node at which the translational constraint should act.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Tie.Tie.constraintEnforcement" title="abaqus.Constraint.Tie.Tie.constraintEnforcement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">constraintEnforcement</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the discretization method.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Tie.Tie.thickness" title="abaqus.Constraint.Tie.Tie.thickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">thickness</span></code></a></p></td>
+<td><p>A Boolean specifying whether shell element thickness is considered.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the constraint repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Tie.Tie.suppressed" title="abaqus.Constraint.Tie.Tie.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the constraint is suppressed or not.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, main, secondary[, adjust, ...])</p></td>
+<td><p>This method creates a Tie object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Tie.Tie.swapSurfaces" title="abaqus.Constraint.Tie.Tie.swapSurfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">swapSurfaces</span></code></a>()</p></td>
+<td><p>This method switches the main and secondary surfaces of a tied constraint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Tie.Tie.setValues" title="abaqus.Constraint.Tie.Tie.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([adjust, positionToleranceMethod, ...])</p></td>
+<td><p>This method modifies the Tie object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes the constraint that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses the constraint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<td><p>This method allows you to delete existing constraints.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.adjust">
 <span class="sig-name descname"><span class="pre">adjust</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Tie.py#L37-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.adjust" title="Permalink to this definition">#</a></dt>

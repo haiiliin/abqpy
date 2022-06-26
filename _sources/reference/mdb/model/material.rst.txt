@@ -26,7 +26,7 @@ Assign properties to the material
 .. autoclass:: abaqus.Material.Material.Material
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 
 Object features
@@ -42,7 +42,7 @@ Density
 .. autoclass:: abaqus.Material.Density.Density.Density
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Elastic
 ~~~~~~~
@@ -58,7 +58,7 @@ Hyperelastic
 .. autoclass:: abaqus.Material.Elastic.HyperElastic.Hyperelastic.Hyperelastic
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HyperFoam
 '''''''''
@@ -70,7 +70,7 @@ Hyperfoam
 .. autoclass:: abaqus.Material.Elastic.HyperElastic.HyperFoam.Hyperfoam.Hyperfoam
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ViscoElastic
 ''''''''''''
@@ -82,7 +82,7 @@ CombinedTestData
 .. autoclass:: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Hysteresis
 ``````````
@@ -90,7 +90,7 @@ Hysteresis
 .. autoclass:: abaqus.Material.Elastic.HyperElastic.ViscoElastic.Hysteresis.Hysteresis
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Viscoelastic
 ````````````
@@ -98,7 +98,7 @@ Viscoelastic
 .. autoclass:: abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HypoElastic
 ***********
@@ -110,7 +110,7 @@ Hypoelastic
 .. autoclass:: abaqus.Material.Elastic.HypoElastic.Hypoelastic.Hypoelastic
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Linear
 ******
@@ -122,7 +122,7 @@ Elastic
 .. autoclass:: abaqus.Material.Elastic.Linear.Elastic.Elastic
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FailStrain
 ''''''''''
@@ -130,7 +130,7 @@ FailStrain
 .. autoclass:: abaqus.Material.Elastic.Linear.FailStrain.FailStrain
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FailStress
 ''''''''''
@@ -138,7 +138,7 @@ FailStress
 .. autoclass:: abaqus.Material.Elastic.Linear.FailStress.FailStress
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 LowDensityFoam
 **************
@@ -150,7 +150,7 @@ LowDensityFoam
 .. autoclass:: abaqus.Material.Elastic.LowDensityFoam.LowDensityFoam.LowDensityFoam
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Porous
 ******
@@ -162,7 +162,7 @@ PorousElastic
 .. autoclass:: abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SuperElastic
 ************
@@ -174,7 +174,7 @@ SuperElasticity
 .. autoclass:: abaqus.Material.Elastic.SuperElastic.SuperElasticity.SuperElasticity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Eos
 ~~~
@@ -186,7 +186,7 @@ DetonationPoint
 .. autoclass:: abaqus.Material.Eos.DetonationPoint.DetonationPoint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Eos
 ***
@@ -194,7 +194,7 @@ Eos
 .. autoclass:: abaqus.Material.Eos.Eos.Eos
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EosCompaction
 *************
@@ -202,7 +202,7 @@ EosCompaction
 .. autoclass:: abaqus.Material.Eos.EosCompaction.EosCompaction
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 evaluateMaterial
 ~~~~~~~~~~~~~~~~
@@ -210,7 +210,7 @@ evaluateMaterial
 .. automodule:: abaqus.Material.evaluateMaterial
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Gap
 ~~~
@@ -224,7 +224,7 @@ GapFlow
 .. autoclass:: abaqus.Material.Gap.GapFlow.GapFlow
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Gasket
 ~~~~~~
@@ -236,7 +236,7 @@ ContactArea
 .. autoclass:: abaqus.Material.Gasket.ContactArea.ContactArea
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 GasketMembraneElastic
 *********************
@@ -244,7 +244,7 @@ GasketMembraneElastic
 .. autoclass:: abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 GasketThicknessBehavior
 ***********************
@@ -252,7 +252,7 @@ GasketThicknessBehavior
 .. autoclass:: abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 GasketTransverseShearElastic
 ****************************
@@ -260,7 +260,7 @@ GasketTransverseShearElastic
 .. autoclass:: abaqus.Material.Gasket.GasketTransverseShearElastic.GasketTransverseShearElastic
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Others
 ~~~~~~
@@ -276,7 +276,7 @@ AcousticMedium
 .. autoclass:: abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Electromagnetic
 ***************
@@ -288,7 +288,7 @@ Dielectric
 .. autoclass:: abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ElectricalConductivity
 ''''''''''''''''''''''
@@ -296,7 +296,7 @@ ElectricalConductivity
 .. autoclass:: abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MagneticPermeability
 ''''''''''''''''''''
@@ -304,7 +304,7 @@ MagneticPermeability
 .. autoclass:: abaqus.Material.Others.Electromagnetic.MagneticPermeability.MagneticPermeability
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Piezoelectric
 '''''''''''''
@@ -312,7 +312,7 @@ Piezoelectric
 .. autoclass:: abaqus.Material.Others.Electromagnetic.Piezoelectric.Piezoelectric
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HeatTransfer
 ************
@@ -324,7 +324,7 @@ Conductivity
 .. autoclass:: abaqus.Material.Others.HeatTransfer.Conductivity.Conductivity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HeatGeneration
 ''''''''''''''
@@ -332,7 +332,7 @@ HeatGeneration
 .. autoclass:: abaqus.Material.Others.HeatTransfer.HeatGeneration.HeatGeneration
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 InelasticHeatFraction
 '''''''''''''''''''''
@@ -340,7 +340,7 @@ InelasticHeatFraction
 .. autoclass:: abaqus.Material.Others.HeatTransfer.InelasticHeatFraction.InelasticHeatFraction
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 JouleHeatFraction
 '''''''''''''''''
@@ -348,7 +348,7 @@ JouleHeatFraction
 .. autoclass:: abaqus.Material.Others.HeatTransfer.JouleHeatFraction.JouleHeatFraction
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 LatentHeat
 ''''''''''
@@ -356,7 +356,7 @@ LatentHeat
 .. autoclass:: abaqus.Material.Others.HeatTransfer.LatentHeat.LatentHeat
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SpecificHeat
 ''''''''''''
@@ -364,7 +364,7 @@ SpecificHeat
 .. autoclass:: abaqus.Material.Others.HeatTransfer.SpecificHeat.SpecificHeat
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Hydrodynamic
 ************
@@ -380,7 +380,7 @@ Diffusivity
 .. autoclass:: abaqus.Material.Others.MassDiffusion.Diffusivity.Diffusivity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PressureEffect
 ''''''''''''''
@@ -388,7 +388,7 @@ PressureEffect
 .. autoclass:: abaqus.Material.Others.MassDiffusion.PressureEffect.PressureEffect
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Solubility
 ''''''''''
@@ -396,7 +396,7 @@ Solubility
 .. autoclass:: abaqus.Material.Others.MassDiffusion.Solubility.Solubility
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SoretEffect
 '''''''''''
@@ -404,7 +404,7 @@ SoretEffect
 .. autoclass:: abaqus.Material.Others.MassDiffusion.SoretEffect.SoretEffect
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Mechanical
 **********
@@ -416,7 +416,7 @@ Damping
 .. autoclass:: abaqus.Material.Others.Mechanical.Damping.Damping
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Expansion
 '''''''''
@@ -424,7 +424,7 @@ Expansion
 .. autoclass:: abaqus.Material.Others.Mechanical.Expansion.Expansion
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PoreFluidExpansion
 ''''''''''''''''''
@@ -432,7 +432,7 @@ PoreFluidExpansion
 .. autoclass:: abaqus.Material.Others.Mechanical.PoreFluidExpansion.PoreFluidExpansion
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Viscosity
 '''''''''
@@ -444,7 +444,7 @@ Trs
 .. autoclass:: abaqus.Material.Others.Mechanical.Viscosity.Trs.Trs
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Viscosity
 `````````
@@ -452,7 +452,7 @@ Viscosity
 .. autoclass:: abaqus.Material.Others.Mechanical.Viscosity.Viscosity.Viscosity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PoreFluidFlow
 *************
@@ -464,7 +464,7 @@ FluidLeakoff
 .. autoclass:: abaqus.Material.Others.PoreFluidFlow.FluidLeakoff.FluidLeakoff
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Gel
 '''
@@ -472,7 +472,7 @@ Gel
 .. autoclass:: abaqus.Material.Others.PoreFluidFlow.Gel.Gel
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MoistureSwelling
 ''''''''''''''''
@@ -484,7 +484,7 @@ MoistureSwelling
 .. autoclass:: abaqus.Material.Others.PoreFluidFlow.MoistureSwelling.MoistureSwelling.MoistureSwelling
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Permeability
 ''''''''''''
@@ -496,7 +496,7 @@ Permeability
 .. autoclass:: abaqus.Material.Others.PoreFluidFlow.Permeability.Permeability.Permeability
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SaturationDependence
 ````````````````````
@@ -504,7 +504,7 @@ SaturationDependence
 .. autoclass:: abaqus.Material.Others.PoreFluidFlow.Permeability.SaturationDependence.SaturationDependence
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 VelocityDependence
 ``````````````````
@@ -512,7 +512,7 @@ VelocityDependence
 .. autoclass:: abaqus.Material.Others.PoreFluidFlow.Permeability.VelocityDependence.VelocityDependence
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PorousBulkModuli
 ''''''''''''''''
@@ -520,7 +520,7 @@ PorousBulkModuli
 .. autoclass:: abaqus.Material.Others.PoreFluidFlow.PorousBulkModuli.PorousBulkModuli
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Sorption
 ''''''''
@@ -528,7 +528,7 @@ Sorption
 .. autoclass:: abaqus.Material.Others.PoreFluidFlow.Sorption.Sorption
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 User
 ****
@@ -540,7 +540,7 @@ Depvar
 .. autoclass:: abaqus.Material.Others.User.Depvar.Depvar
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 UserDefinedField
 ''''''''''''''''
@@ -548,7 +548,7 @@ UserDefinedField
 .. autoclass:: abaqus.Material.Others.User.UserDefinedField.UserDefinedField
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 UserMaterial
 ''''''''''''
@@ -556,7 +556,7 @@ UserMaterial
 .. autoclass:: abaqus.Material.Others.User.UserMaterial.UserMaterial
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 UserOutputVariables
 '''''''''''''''''''
@@ -564,7 +564,7 @@ UserOutputVariables
 .. autoclass:: abaqus.Material.Others.User.UserOutputVariables.UserOutputVariables
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Plastic
 ~~~~~~~
@@ -580,7 +580,7 @@ BrittleCracking
 .. autoclass:: abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BrittleFailure
 ''''''''''''''
@@ -588,7 +588,7 @@ BrittleFailure
 .. autoclass:: abaqus.Material.Plastic.Concrete.BrittleFailure.BrittleFailure
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BrittleShear
 ''''''''''''
@@ -596,7 +596,7 @@ BrittleShear
 .. autoclass:: abaqus.Material.Plastic.Concrete.BrittleShear.BrittleShear
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Concrete
 ''''''''
@@ -604,7 +604,7 @@ Concrete
 .. autoclass:: abaqus.Material.Plastic.Concrete.Concrete.Concrete
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcreteCompressionDamage
 '''''''''''''''''''''''''
@@ -612,7 +612,7 @@ ConcreteCompressionDamage
 .. autoclass:: abaqus.Material.Plastic.Concrete.ConcreteCompressionDamage.ConcreteCompressionDamage
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcreteCompressionHardening
 ''''''''''''''''''''''''''''
@@ -620,7 +620,7 @@ ConcreteCompressionHardening
 .. autoclass:: abaqus.Material.Plastic.Concrete.ConcreteCompressionHardening.ConcreteCompressionHardening
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcreteDamagedPlasticity
 '''''''''''''''''''''''''
@@ -628,7 +628,7 @@ ConcreteDamagedPlasticity
 .. autoclass:: abaqus.Material.Plastic.Concrete.ConcreteDamagedPlasticity.ConcreteDamagedPlasticity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcreteTensionDamage
 '''''''''''''''''''''
@@ -636,7 +636,7 @@ ConcreteTensionDamage
 .. autoclass:: abaqus.Material.Plastic.Concrete.ConcreteTensionDamage.ConcreteTensionDamage
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcreteTensionStiffening
 '''''''''''''''''''''''''
@@ -644,7 +644,7 @@ ConcreteTensionStiffening
 .. autoclass:: abaqus.Material.Plastic.Concrete.ConcreteTensionStiffening.ConcreteTensionStiffening
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FailureRatios
 '''''''''''''
@@ -652,7 +652,7 @@ FailureRatios
 .. autoclass:: abaqus.Material.Plastic.Concrete.FailureRatios.FailureRatios
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ShearRetention
 ''''''''''''''
@@ -660,7 +660,7 @@ ShearRetention
 .. autoclass:: abaqus.Material.Plastic.Concrete.ShearRetention.ShearRetention
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TensionStiffening
 '''''''''''''''''
@@ -668,7 +668,7 @@ TensionStiffening
 .. autoclass:: abaqus.Material.Plastic.Concrete.TensionStiffening.TensionStiffening
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Creep
 *****
@@ -680,7 +680,7 @@ Creep
 .. autoclass:: abaqus.Material.Plastic.Creep.Creep.Creep
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CriticalStateClay
 *****************
@@ -692,7 +692,7 @@ ClayHardening
 .. autoclass:: abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ClayPlasticity
 ''''''''''''''
@@ -700,7 +700,7 @@ ClayPlasticity
 .. autoclass:: abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CrushableFoam
 *************
@@ -712,7 +712,7 @@ CrushableFoam
 .. autoclass:: abaqus.Material.Plastic.CrushableFoam.CrushableFoam.CrushableFoam
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CrushableFoamHardening
 ''''''''''''''''''''''
@@ -720,7 +720,7 @@ CrushableFoamHardening
 .. autoclass:: abaqus.Material.Plastic.CrushableFoam.CrushableFoamHardening.CrushableFoamHardening
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DruckerPrager
 *************
@@ -736,7 +736,7 @@ DruckerPrager
 .. autoclass:: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPrager.DruckerPrager
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DruckerPragerCreep
 ``````````````````
@@ -744,7 +744,7 @@ DruckerPragerCreep
 .. autoclass:: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerCreep.DruckerPragerCreep
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DruckerPragerHardening
 ``````````````````````
@@ -752,7 +752,7 @@ DruckerPragerHardening
 .. autoclass:: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerHardening.DruckerPragerHardening
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TriaxialTestData
 ````````````````
@@ -760,7 +760,7 @@ TriaxialTestData
 .. autoclass:: abaqus.Material.Plastic.DruckerPrager.Extended.TriaxialTestData.TriaxialTestData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ModifiedCap
 '''''''''''
@@ -772,7 +772,7 @@ CapCreepCohesion
 .. autoclass:: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CapCreepConsolidation
 `````````````````````
@@ -780,7 +780,7 @@ CapCreepConsolidation
 .. autoclass:: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CapHardening
 ````````````
@@ -788,7 +788,7 @@ CapHardening
 .. autoclass:: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapHardening.CapHardening
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CapPlasticity
 `````````````
@@ -796,7 +796,7 @@ CapPlasticity
 .. autoclass:: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapPlasticity.CapPlasticity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Metal
 *****
@@ -812,7 +812,7 @@ AnnealTemperature
 .. autoclass:: abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CastIron
 ''''''''
@@ -824,7 +824,7 @@ CastIronCompressionHardening
 .. autoclass:: abaqus.Material.Plastic.Metal.CastIron.CastIronCompressionHardening.CastIronCompressionHardening
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CastIronPlasticity
 ``````````````````
@@ -832,7 +832,7 @@ CastIronPlasticity
 .. autoclass:: abaqus.Material.Plastic.Metal.CastIron.CastIronPlasticity.CastIronPlasticity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CastIronTensionHardening
 ````````````````````````
@@ -840,7 +840,7 @@ CastIronTensionHardening
 .. autoclass:: abaqus.Material.Plastic.Metal.CastIron.CastIronTensionHardening.CastIronTensionHardening
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Cyclic
 ''''''
@@ -852,7 +852,7 @@ CycledPlastic
 .. autoclass:: abaqus.Material.Plastic.Metal.Cyclic.CycledPlastic.CycledPlastic
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CyclicHardening
 ```````````````
@@ -860,7 +860,7 @@ CyclicHardening
 .. autoclass:: abaqus.Material.Plastic.Metal.Cyclic.CyclicHardening.CyclicHardening
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Deformation
 '''''''''''
@@ -872,7 +872,7 @@ DeformationPlasticity
 .. autoclass:: abaqus.Material.Plastic.Metal.Deformation.DeformationPlasticity.DeformationPlasticity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ORNL
 ''''
@@ -884,7 +884,7 @@ Ornl
 .. autoclass:: abaqus.Material.Plastic.Metal.ORNL.Ornl.Ornl
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Porous
 ''''''
@@ -896,7 +896,7 @@ PorousFailureCriteria
 .. autoclass:: abaqus.Material.Plastic.Metal.Porous.PorousFailureCriteria.PorousFailureCriteria
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PorousMetalPlasticity
 `````````````````````
@@ -904,7 +904,7 @@ PorousMetalPlasticity
 .. autoclass:: abaqus.Material.Plastic.Metal.Porous.PorousMetalPlasticity.PorousMetalPlasticity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 VoidNucleation
 ``````````````
@@ -912,7 +912,7 @@ VoidNucleation
 .. autoclass:: abaqus.Material.Plastic.Metal.Porous.VoidNucleation.VoidNucleation
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RateDependent
 '''''''''''''
@@ -924,7 +924,7 @@ RateDependent
 .. autoclass:: abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TwoLayerViscoPlasticity
 '''''''''''''''''''''''
@@ -936,7 +936,7 @@ Viscous
 .. autoclass:: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MohrCoulomb
 ***********
@@ -948,7 +948,7 @@ MohrCoulombHardening
 .. autoclass:: abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MohrCoulombPlasticity
 '''''''''''''''''''''
@@ -956,7 +956,7 @@ MohrCoulombPlasticity
 .. autoclass:: abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TensionCutOff
 '''''''''''''
@@ -964,7 +964,7 @@ TensionCutOff
 .. autoclass:: abaqus.Material.Plastic.MohrCoulomb.TensionCutOff.TensionCutOff
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Plastic
 *******
@@ -972,7 +972,7 @@ Plastic
 .. autoclass:: abaqus.Material.Plastic.Plastic.Plastic
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Potential
 *********
@@ -980,7 +980,7 @@ Potential
 .. autoclass:: abaqus.Material.Plastic.Potential.Potential
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SuperElastic
 ************
@@ -992,7 +992,7 @@ SuperElasticHardening
 .. autoclass:: abaqus.Material.Plastic.SuperElastic.SuperElasticHardening.SuperElasticHardening
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SuperElasticHardeningModifications
 ''''''''''''''''''''''''''''''''''
@@ -1000,7 +1000,7 @@ SuperElasticHardeningModifications
 .. autoclass:: abaqus.Material.Plastic.SuperElastic.SuperElasticHardeningModifications.SuperElasticHardeningModifications
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Swelling
 ********
@@ -1012,7 +1012,7 @@ Swelling
 .. autoclass:: abaqus.Material.Plastic.Swelling.Swelling.Swelling
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ProgressiveDamageFailure
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1024,7 +1024,7 @@ DamageEvolution
 .. autoclass:: abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DamageInitiation
 ****************
@@ -1032,7 +1032,7 @@ DamageInitiation
 .. autoclass:: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DamageStabilization
 *******************
@@ -1040,7 +1040,7 @@ DamageStabilization
 .. autoclass:: abaqus.Material.ProgressiveDamageFailure.DamageStabilization.DamageStabilization
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DamageStabilizationCohesive
 ***************************
@@ -1048,7 +1048,7 @@ DamageStabilizationCohesive
 .. autoclass:: abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Ratios
 ~~~~~~
@@ -1056,7 +1056,7 @@ Ratios
 .. autoclass:: abaqus.Material.Ratios.Ratios
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Regularization
 ~~~~~~~~~~~~~~
@@ -1064,7 +1064,7 @@ Regularization
 .. autoclass:: abaqus.Material.Regularization.Regularization
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TestData
 ~~~~~~~~
@@ -1076,7 +1076,7 @@ BiaxialTestData
 .. autoclass:: abaqus.Material.TestData.BiaxialTestData.BiaxialTestData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BiaxialTestDataArray
 ********************
@@ -1084,7 +1084,7 @@ BiaxialTestDataArray
 .. autoclass:: abaqus.Material.TestData.BiaxialTestDataArray.BiaxialTestDataArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MullinsEffect
 *************
@@ -1092,7 +1092,7 @@ MullinsEffect
 .. autoclass:: abaqus.Material.TestData.MullinsEffect.MullinsEffect
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PlanarTestData
 **************
@@ -1100,7 +1100,7 @@ PlanarTestData
 .. autoclass:: abaqus.Material.TestData.PlanarTestData.PlanarTestData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PlanarTestDataArray
 *******************
@@ -1108,7 +1108,7 @@ PlanarTestDataArray
 .. autoclass:: abaqus.Material.TestData.PlanarTestDataArray.PlanarTestDataArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ShearTestData
 *************
@@ -1116,7 +1116,7 @@ ShearTestData
 .. autoclass:: abaqus.Material.TestData.ShearTestData.ShearTestData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SimpleShearTestData
 *******************
@@ -1124,7 +1124,7 @@ SimpleShearTestData
 .. autoclass:: abaqus.Material.TestData.SimpleShearTestData.SimpleShearTestData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 UniaxialTestData
 ****************
@@ -1132,7 +1132,7 @@ UniaxialTestData
 .. autoclass:: abaqus.Material.TestData.UniaxialTestData.UniaxialTestData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 UniaxialTestDataArray
 *********************
@@ -1140,7 +1140,7 @@ UniaxialTestDataArray
 .. autoclass:: abaqus.Material.TestData.UniaxialTestDataArray.UniaxialTestDataArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 VolumetricTestData
 ******************
@@ -1148,4 +1148,4 @@ VolumetricTestData
 .. autoclass:: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::

@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -424,6 +425,310 @@
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">attachedToGui</span></code></p></td>
+<td><p>A Boolean specifying whether an Abaqus interactive session is running.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">replayInProgress</span></code></p></td>
+<td><p>A Boolean specifying whether Abaqus is executing a replay file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryFootprint</span></code></p></td>
+<td><p>A Float specifying the memory usage value for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryMaxFootprint</span></code></p></td>
+<td><p>A Float specifying the maximum value for the memory usage for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryLimit</span></code></p></td>
+<td><p>A Float specifying the limit for the memory use for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">colors</span></code></p></td>
+<td><p>A repository of Color objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">journalOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../session.html#abaqus.Session.JournalOptions.JournalOptions" title="abaqus.Session.JournalOptions.JournalOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">JournalOptions</span></code></a> object specifying how to record selection of geometry in the journal and replay files.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">memoryReductionOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../session.html#abaqus.Session.MemoryReductionOptions.MemoryReductionOptions" title="abaqus.Session.MemoryReductionOptions.MemoryReductionOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryReductionOptions</span></code></a> object specifying options for running in reduced memory mode.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeQuery</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.PathAndProbe.NodeQuery.NodeQuery" title="abaqus.PathAndProbe.NodeQuery.NodeQuery"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeQuery</span></code></a> object specifying nodes and their coordinates in a path.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sketcherOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../mdb/model/sketcher.html#abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions" title="abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketcherOptions</span></code></a> object specifying common options for all sketches.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewerOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.ViewerOptions.ViewerOptions" title="abaqus.OdbDisplay.ViewerOptions.ViewerOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewerOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">animationOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="animation.html#abaqus.Animation.AnimationOptions.AnimationOptions" title="abaqus.Animation.AnimationOptions.AnimationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnimationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">aviOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="animation.html#abaqus.Animation.AVIOptions.AVIOptions" title="abaqus.Animation.AVIOptions.AVIOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AVIOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageAnimationOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="animation.html#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions" title="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageAnimation</span></code></p></td>
+<td><p>An <a class="reference internal" href="animation.html#abaqus.Animation.ImageAnimation.ImageAnimation" title="abaqus.Animation.ImageAnimation.ImageAnimation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">quickTimeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="animation.html#abaqus.Animation.QuickTimeOptions.QuickTimeOptions" title="abaqus.Animation.QuickTimeOptions.QuickTimeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuickTimeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewports</span></code></p></td>
+<td><p>A repository of Viewport objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">customData</span></code></p></td>
+<td><p>A <a class="reference internal" href="../kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultFieldReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultFreeBodyReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodyReportOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbs</span></code></p></td>
+<td><p>A repository of Odb objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">scratchOdbs</span></code></p></td>
+<td><p>A repository of ScratchOdb objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultOdbDisplay</span></code></p></td>
+<td><p>A <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultOdbDisplay</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultPlot</span></code></p></td>
+<td><p>A <a class="reference internal" href="xy.html#abaqus.XY.DefaultPlot.DefaultPlot" title="abaqus.XY.DefaultPlot.DefaultPlot"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultPlot</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultChartOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="xy.html#abaqus.XY.DefaultChartOptions.DefaultChartOptions" title="abaqus.XY.DefaultChartOptions.DefaultChartOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultChartOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbData</span></code></p></td>
+<td><p>A repository of OdbData objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mdbData</span></code></p></td>
+<td><p>A repository of MdbData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">paths</span></code></p></td>
+<td><p>A repository of Path objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodies</span></code></p></td>
+<td><p>A repository of FreeBody objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">streams</span></code></p></td>
+<td><p>A repository of Stream objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">spectrums</span></code></p></td>
+<td><p>A repository of Spectrum objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentProbeValues</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues" title="abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues"><code class="xref py py-class docutils literal notranslate"><span class="pre">CurrentProbeValues</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultProbeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeReport</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeReport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultProbeReport</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeReport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectedProbeValues</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues" title="abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectedProbeValues</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PrintOptions.PrintOptions" title="abaqus.Print.PrintOptions.PrintOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PrintOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">epsOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="print.html#abaqus.Print.EpsOptions.EpsOptions" title="abaqus.Print.EpsOptions.EpsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">EpsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pageSetupOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PageSetupOptions.PageSetupOptions" title="abaqus.Print.PageSetupOptions.PageSetupOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PageSetupOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pngOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PngOptions.PngOptions" title="abaqus.Print.PngOptions.PngOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PngOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">psOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.PsOptions.PsOptions" title="abaqus.Print.PsOptions.PsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">svgOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="print.html#abaqus.Print.SvgOptions.SvgOptions" title="abaqus.Print.SvgOptions.SvgOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">SvgOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tiffOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../mdb/model/predefined.html#abaqus.PredefinedField.TiffOptions.TiffOptions" title="abaqus.PredefinedField.TiffOptions.TiffOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">TiffOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoColors</span></code></p></td>
+<td><p>An <a class="reference internal" href="../session.html#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoColors</span></code></a> object specifying the color palette to be used for color coding.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyColors</span></code></p></td>
+<td><p>An <a class="reference internal" href="../session.html#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoColors</span></code></a> object specifying the color palette to be used forXYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyDataObjects</span></code></p></td>
+<td><p>A repository of XYData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">curves</span></code></p></td>
+<td><p>A repository of XYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyPlots</span></code></p></td>
+<td><p>A repository of XYPlot objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">charts</span></code></p></td>
+<td><p>A repository of Chart objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultXYReportOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="xy.html#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyReportOptions</span></code></p></td>
+<td><p>An <a class="reference internal" href="xy.html#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">views</span></code></p></td>
+<td><p>A repository of View objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">networkDatabaseConnectors</span></code></p></td>
+<td><p>A repository of NetworkDatabaseConnector objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayGroups</span></code></p></td>
+<td><p>A repository of DisplayGroup objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsInfo</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo" title="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsInfo</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultGraphicsOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultViewportAnnotationOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions" title="abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportAnnotationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">queues</span></code></p></td>
+<td><p>A repository of Queue objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentViewportName</span></code></p></td>
+<td><p>A String specifying the name of the current viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sessionState</span></code></p></td>
+<td><p>A Dictionary object specifying the viewports and their associated models.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">images</span></code></p></td>
+<td><p>A repository of Image objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">movies</span></code></p></td>
+<td><p>A repository of Movie objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultLightOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.LightOptions.LightOptions" title="abaqus.DisplayOptions.LightOptions.LightOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">LightOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawingArea</span></code></p></td>
+<td><p>A <a class="reference internal" href="canvas.html#abaqus.Canvas.DrawingArea.DrawingArea" title="abaqus.Canvas.DrawingArea.DrawingArea"><code class="xref py py-class docutils literal notranslate"><span class="pre">DrawingArea</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultMesherOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../mdb/model/mesh.html#abaqus.Mesh.MesherOptions.MesherOptions" title="abaqus.Mesh.MesherOptions.MesherOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MesherOptions</span></code></a> object specifying how to control default settings in the Mesh module.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawings</span></code></p></td>
+<td><p>A repository of Drawing objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.PathSession.PathSession.Path" title="abaqus.PathAndProbe.PathSession.PathSession.Path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path</span></code></a>(name, type, expression, ...)</p></td>
+<td><p>This method creates a Path object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.PathSession.PathSession.Spectrum" title="abaqus.PathAndProbe.PathSession.PathSession.Spectrum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Spectrum</span></code></a>(name, colors)</p></td>
+<td><p>This method creates a Spectrum object and places it in the spectrums repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.PathSession.PathSession.Stream" title="abaqus.PathAndProbe.PathSession.PathSession.Stream"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Stream</span></code></a>(name, numPointsOnRake[, pointA, ...])</p></td>
+<td><p>This method creates aStream object and places it in the streams repository.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>([kernelMemoryLimit])</p></td>
+<td><p>This method modifies the Session object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableCADConnection</span></code>(CADName[, portNum])</p></td>
+<td><p>This method enables the Abaqus/CAE listening port for the specified <strong>CAD</strong> system.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isCADConnectionEnabled</span></code>()</p></td>
+<td><p>This method checks the status of CAD Connection.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableCADConnection</span></code>(CADName)</p></td>
+<td><p>This method disables an associative import CAD connection that was enabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableParameterUpdate</span></code>(CADName, CADVersion[, ...])</p></td>
+<td><p>This method enables parameter updates for ProE and NX by establishing a connection with the listening port previously setup by the CAD application.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setCADPortNumber</span></code>(CADName, Port)</p></td>
+<td><p>This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a connection with the listening port previously setup by the CAD application.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">updateCADParameters</span></code>(modelName, CADName, ...)</p></td>
+<td><p>This method updates the parameters for the specified model using the specified parameter file.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableParameterUpdate</span></code>(CADName)</p></td>
+<td><p>This method disables an associative CAD connection using parameters.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToFile</span></code>(fileName[, format, ...])</p></td>
+<td><p>This method prints canvas objects to a file using the attributes stored in the PrintOptions object and the appropriate format options object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToPrinter</span></code>([printCommand, numCopies, ...])</p></td>
+<td><p>This method prints canvas objects to a Windows printer or to a PostScript printer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveOptions</span></code>(directory)</p></td>
+<td><p>This method saves your customized display settings.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeVrmlFile</span></code>(fileName[, format, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">write3DXMLFile</span></code>(fileName[, format, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeOBJFile</span></code>(fileName[, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">openOdb</span></code>(name, *args, **kwargs)</p></td>
+<td><p>This method opens an existing output database (.odb) file and creates a new Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">exit</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.PathSession.PathSession.Path">
 <span class="sig-name descname"><span class="pre">Path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expression</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">circleDefinition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numSegments</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radialAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startRadius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endRadius</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PathAndProbe/PathSession.py#L12-L119"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.PathSession.PathSession.Path" title="Permalink to this definition">#</a></dt>
@@ -618,6 +923,29 @@ computed.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges" title="abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FreeBodyFromEdges</span></code></a>(name, edges[, ...])</p></td>
+<td><p>This method creates a FreeBody object and places it in the freeBodies repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces" title="abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FreeBodyFromFaces</span></code></a>(name, faces[, ...])</p></td>
+<td><p>This method creates a FreeBody object and places it in the freeBodies repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements" title="abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FreeBodyFromNodesElements</span></code></a>(name, elements, nodes)</p></td>
+<td><p>This method creates a FreeBody object and places it in the freeBodies repository.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges">
 <span class="sig-name descname"><span class="pre">FreeBodyFromEdges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summationLoc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'CENTROID'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summationPoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">componentResolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NORMAL_TANGENTIAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csysName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PathAndProbe/FreeBody.py#L17-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges" title="Permalink to this definition">#</a></dt>
@@ -764,6 +1092,23 @@ created when you import the Visualization module.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues.values" title="abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues.values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code></a></p></td>
+<td><p>A tuple of Floats specifying the values obtained while probing.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues.values">
 <span class="sig-name descname"><span class="pre">values</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PathAndProbe/CurrentProbeValues.py#L1-L16"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues.values" title="Permalink to this definition">#</a></dt>
@@ -798,6 +1143,26 @@ import the visualization module.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.NodeQuery.NodeQuery.nodeId" title="abaqus.PathAndProbe.NodeQuery.NodeQuery.nodeId"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeId</span></code></a></p></td>
+<td><p>An Int specifying the ID of the most recently queried node.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.NodeQuery.NodeQuery.nodePos" title="abaqus.PathAndProbe.NodeQuery.NodeQuery.nodePos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodePos</span></code></a></p></td>
+<td><p>A tuple of Floats specifying the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of the most recently queried node.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.NodeQuery.NodeQuery.nodeId">
 <span class="sig-name descname"><span class="pre">nodeId</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PathAndProbe/NodeQuery.py#L15-L17"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.NodeQuery.NodeQuery.nodeId" title="Permalink to this definition">#</a></dt>
@@ -830,6 +1195,39 @@ points.</p>
 </pre></div>
 </div>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.Path.Path.coordinates" title="abaqus.PathAndProbe.Path.Path.coordinates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordinates</span></code></a></p></td>
+<td><p>If <strong>type</strong> = NODE_LIST, <strong>coordinates</strong> is a sequence of tuples of three Floats.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, type, expression, ...)</p></td>
+<td><p>This method creates a Path object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.Path.Path.circleDefinition">
 <span class="sig-name descname"><span class="pre">circleDefinition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PathAndProbe/Path.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.Path.Path.circleDefinition" title="Permalink to this definition">#</a></dt>
@@ -983,6 +1381,93 @@ member are initialized using the values from the <strong>defaultProbeOptions</st
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.probeEntity" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.probeEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeEntity</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the entity being probed when <strong>probeObject</strong> = &quot;ODB&quot;.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.probeOutputPosition" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.probeOutputPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeOutputPosition</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the output position to probe for field output results when <strong>probeObject</strong> = &quot;ODB&quot;.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.partInstance" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.partInstance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">partInstance</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the part instance information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.elementID" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.elementID"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementID</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the element ID information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.elementType" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.elementType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementType</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the element type information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.elementConnectivity" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.elementConnectivity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementConnectivity</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the element connectivity.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.elementFieldResults" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.elementFieldResults"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementFieldResults</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the element field output results.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.nodeId" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.nodeId"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeId</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the node ID when <strong>probeObject</strong> = ODB and <strong>probeEntity</strong> = NODE.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.baseCoordinates" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.baseCoordinates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">baseCoordinates</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the base coordinates of a node when <strong>probeObject</strong> = ODB and <strong>probeEntity</strong> = NODE.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.deformedCoordinates" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.deformedCoordinates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deformedCoordinates</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the deformed coordinates of a node when <strong>probeObject</strong> = ODB and <strong>probeEntity</strong> = NODE.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.attachedElements" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.attachedElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">attachedElements</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the elements attached to a node when <strong>probeObject</strong> = ODB and <strong>probeEntity</strong> = NODE.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.nodeFieldResults" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.nodeFieldResults"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeFieldResults</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the node field output results.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.legend" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.legend"><code class="xref py py-obj docutils literal notranslate"><span class="pre">legend</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the legend for a curve being probed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.xValue" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.xValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xValue</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the <strong>x</strong>-coordinate value of the point on the curve being probed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.yValue" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.yValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">yValue</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the <strong>y</strong>-coordinate value of the point on the curve being probed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.sequenceID" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.sequenceID"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sequenceID</span></code></a></p></td>
+<td><p>A Boolean specifying whether to display the sequence ID of the point on the curve being probed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.interpolateXy" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.interpolateXy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">interpolateXy</span></code></a></p></td>
+<td><p>A Boolean specifying whether to interpolate values within a line segment when <strong>probeObject</strong> = XYPlot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.isFieldOutputAvailable" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.isFieldOutputAvailable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isFieldOutputAvailable</span></code></a></p></td>
+<td><p>A Boolean specifying whether field output is available for probing when <strong>probeObject</strong> = XYPlot.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.probeObject" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.probeObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeObject</span></code></a></p></td>
+<td><p>A String specifying the type of the displayed object being probed.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.setValues" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([options, probeEntity, ...])</p></td>
+<td><p>This method modifies the settings on the ProbeOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.attachedElements">
 <span class="sig-name descname"><span class="pre">attachedElements</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PathAndProbe/ProbeOptions.py#L65-L67"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.attachedElements" title="Permalink to this definition">#</a></dt>
@@ -1237,6 +1722,23 @@ member are initialized using the values from the <strong>defaultProbeReport</str
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeReport.ProbeReport.setValues" title="abaqus.PathAndProbe.ProbeReport.ProbeReport.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([options, numColumns, numDigits, ...])</p></td>
+<td><p>This method modifies the ProbeReport object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.ProbeReport.ProbeReport.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numColumns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFormat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ENGINEERING'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pageWidth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NO_LIMIT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printTotal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printMinMax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PathAndProbe/ProbeReport.py#L21-L61"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.ProbeReport.ProbeReport.setValues" title="Permalink to this definition">#</a></dt>
@@ -1300,6 +1802,32 @@ created when you import the Visualization module.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.length" title="abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.length"><code class="xref py py-obj docutils literal notranslate"><span class="pre">length</span></code></a></p></td>
+<td><p>An Int specifying the length of the <strong>values</strong> member.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.fieldOutputAvailable" title="abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.fieldOutputAvailable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldOutputAvailable</span></code></a></p></td>
+<td><p>A Boolean specifying whether any probe values have been selected (as is necessary prior to writing to a file).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.values" title="abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code></a></p></td>
+<td><p>A tuple of tuples of Floats specifying the selected probe values.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.lastValues" title="abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.lastValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lastValues</span></code></a></p></td>
+<td><p>A tuple of Floats specifying the last sequence of the <strong>values</strong> member.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.fieldOutputAvailable">
 <span class="sig-name descname"><span class="pre">fieldOutputAvailable</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PathAndProbe/SelectedProbeValues.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.fieldOutputAvailable" title="Permalink to this definition">#</a></dt>
@@ -1342,9 +1870,26 @@ to writing to a file).</p>
 </pre></div>
 </div>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, colors)</p></td>
+<td><p>This method creates a Spectrum object and places it in the spectrums repository.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </dd></dl>
 
 </section>
+<hr class="docutils" />
 <section id="stream">
 <h3>Stream<a class="headerlink" href="#stream" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
@@ -1359,6 +1904,23 @@ to writing to a file).</p>
 </pre></div>
 </div>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, numPointsOnRake[, pointA, ...])</p></td>
+<td><p>This method creates aStream object and places it in the streams repository.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 </dd></dl>
 
 </section>

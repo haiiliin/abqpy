@@ -176,6 +176,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-resources.html">Python resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/oop-basics.html">Object-oriented basics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/python-basics.html">The basics of Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/programming.html">Programming techniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../user/python/introduction/further-reading.html">Further reading</a></li>
@@ -961,6 +962,41 @@ all objects derived from the Filter.</p>
 </dl>
 </dd>
 </dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Filter.Filter.name" title="abaqus.Filter.Filter.Filter.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.Filter.Filter.cutoffFrequency" title="abaqus.Filter.Filter.Filter.cutoffFrequency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cutoffFrequency</span></code></a></p></td>
+<td><p>A Float specifying the attenuation point of the filter.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Filter.Filter.order" title="abaqus.Filter.Filter.Filter.order"><code class="xref py py-obj docutils literal notranslate"><span class="pre">order</span></code></a></p></td>
+<td><p>An Int specifying the highest power of the filter transfer function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.Filter.Filter.operation" title="abaqus.Filter.Filter.Filter.operation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">operation</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the filter operator.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Filter.Filter.halt" title="abaqus.Filter.Filter.Filter.halt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">halt</span></code></a></p></td>
+<td><p>A Boolean specifying whether to stop the analysis if the specified limit is reached.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.Filter.Filter.limit" title="abaqus.Filter.Filter.Filter.limit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">limit</span></code></a></p></td>
+<td><p>None or a Float specifying the threshold limit, an upper or lower bound for output values depending on the operation, or a bound for stopping the analysis when Halt is used.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Filter.Filter.invariant" title="abaqus.Filter.Filter.Filter.invariant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">invariant</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the invariant to which filtering is applied.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Filter.Filter.Filter.cutoffFrequency">
 <span class="sig-name descname"><span class="pre">cutoffFrequency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Filter/Filter.py#L24-L26"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Filter.Filter.Filter.cutoffFrequency" title="Permalink to this definition">#</a></dt>
@@ -1057,6 +1093,85 @@ The ButterworthFilter object is derived from the Filter object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.ButterworthFilter.ButterworthFilter.order" title="abaqus.Filter.ButterworthFilter.ButterworthFilter.order"><code class="xref py py-obj docutils literal notranslate"><span class="pre">order</span></code></a></p></td>
+<td><p>An Int specifying the highest power of the filter transfer function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.ButterworthFilter.ButterworthFilter.operation" title="abaqus.Filter.ButterworthFilter.ButterworthFilter.operation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">operation</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the filter operator.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.ButterworthFilter.ButterworthFilter.halt" title="abaqus.Filter.ButterworthFilter.ButterworthFilter.halt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">halt</span></code></a></p></td>
+<td><p>A Boolean specifying whether to stop the analysis if the specified limit is reached.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.ButterworthFilter.ButterworthFilter.limit" title="abaqus.Filter.ButterworthFilter.ButterworthFilter.limit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">limit</span></code></a></p></td>
+<td><p>None or a Float specifying the threshold limit, an upper or lower bound for output values depending on the operation, or a bound for stopping the analysis when Halt is used.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.ButterworthFilter.ButterworthFilter.invariant" title="abaqus.Filter.ButterworthFilter.ButterworthFilter.invariant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">invariant</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the invariant to which filtering is applied.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Filter</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">cutoffFrequency</span></code></p></td>
+<td><p>A Float specifying the attenuation point of the filter.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.ButterworthFilter.ButterworthFilter.order" title="abaqus.Filter.ButterworthFilter.ButterworthFilter.order"><code class="xref py py-obj docutils literal notranslate"><span class="pre">order</span></code></a></p></td>
+<td><p>An Int specifying the highest power of the filter transfer function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.ButterworthFilter.ButterworthFilter.operation" title="abaqus.Filter.ButterworthFilter.ButterworthFilter.operation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">operation</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the filter operator.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.ButterworthFilter.ButterworthFilter.halt" title="abaqus.Filter.ButterworthFilter.ButterworthFilter.halt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">halt</span></code></a></p></td>
+<td><p>A Boolean specifying whether to stop the analysis if the specified limit is reached.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.ButterworthFilter.ButterworthFilter.limit" title="abaqus.Filter.ButterworthFilter.ButterworthFilter.limit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">limit</span></code></a></p></td>
+<td><p>None or a Float specifying the threshold limit, an upper or lower bound for output values depending on the operation, or a bound for stopping the analysis when Halt is used.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.ButterworthFilter.ButterworthFilter.invariant" title="abaqus.Filter.ButterworthFilter.ButterworthFilter.invariant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">invariant</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the invariant to which filtering is applied.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, cutoffFrequency[, order, ...])</p></td>
+<td><p>This method creates a ButterworthFilter object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.ButterworthFilter.ButterworthFilter.setValues" title="abaqus.Filter.ButterworthFilter.ButterworthFilter.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([order, operation, halt, limit, ...])</p></td>
+<td><p>This method modifies the ButterworthFilter object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Filter.ButterworthFilter.ButterworthFilter.halt">
 <span class="sig-name descname"><span class="pre">halt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Filter/ButterworthFilter.py#L41-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Filter.ButterworthFilter.ButterworthFilter.halt" title="Permalink to this definition">#</a></dt>
@@ -1173,6 +1288,88 @@ The Chebyshev1Filter object is derived from the Filter object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.rippleFactor" title="abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.rippleFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rippleFactor</span></code></a></p></td>
+<td><p>A Float specifying the amount of allowable ripple in the filter.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.order" title="abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.order"><code class="xref py py-obj docutils literal notranslate"><span class="pre">order</span></code></a></p></td>
+<td><p>An Int specifying the highest power of the filter transfer function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.operation" title="abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.operation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">operation</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the filter operator.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.halt" title="abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.halt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">halt</span></code></a></p></td>
+<td><p>A Boolean specifying whether to stop the analysis if the specified limit is reached.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.limit" title="abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.limit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">limit</span></code></a></p></td>
+<td><p>None or a Float specifying the threshold limit, an upper or lower bound for output values depending on the operation, or a bound for stopping the analysis when Halt is used.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.invariant" title="abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.invariant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">invariant</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the invariant to which filtering is applied.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Filter</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">cutoffFrequency</span></code></p></td>
+<td><p>A Float specifying the attenuation point of the filter.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.order" title="abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.order"><code class="xref py py-obj docutils literal notranslate"><span class="pre">order</span></code></a></p></td>
+<td><p>An Int specifying the highest power of the filter transfer function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.operation" title="abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.operation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">operation</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the filter operator.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.halt" title="abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.halt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">halt</span></code></a></p></td>
+<td><p>A Boolean specifying whether to stop the analysis if the specified limit is reached.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.limit" title="abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.limit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">limit</span></code></a></p></td>
+<td><p>None or a Float specifying the threshold limit, an upper or lower bound for output values depending on the operation, or a bound for stopping the analysis when Halt is used.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.invariant" title="abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.invariant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">invariant</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the invariant to which filtering is applied.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates a Chebyshev1Filter object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.setValues" title="abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([rippleFactor, order, operation, ...])</p></td>
+<td><p>This method modifies the Chebyshev1Filter object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.halt">
 <span class="sig-name descname"><span class="pre">halt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Filter/Chebyshev1Filter.py#L45-L47"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.halt" title="Permalink to this definition">#</a></dt>
@@ -1299,6 +1496,88 @@ The Chebyshev2Filter object is derived from the Filter object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.rippleFactor" title="abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.rippleFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rippleFactor</span></code></a></p></td>
+<td><p>A Float specifying the amount of allowable ripple in the filter.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.order" title="abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.order"><code class="xref py py-obj docutils literal notranslate"><span class="pre">order</span></code></a></p></td>
+<td><p>An Int specifying the highest power of the filter transfer function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.operation" title="abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.operation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">operation</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the filter operator.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.halt" title="abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.halt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">halt</span></code></a></p></td>
+<td><p>A Boolean specifying whether to stop the analysis if the specified limit is reached.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.limit" title="abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.limit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">limit</span></code></a></p></td>
+<td><p>None or a Float specifying the threshold limit, an upper or lower bound for output values depending on the operation, or a bound for stopping the analysis when Halt is used.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.invariant" title="abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.invariant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">invariant</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the invariant to which filtering is applied.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Filter</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">cutoffFrequency</span></code></p></td>
+<td><p>A Float specifying the attenuation point of the filter.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.order" title="abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.order"><code class="xref py py-obj docutils literal notranslate"><span class="pre">order</span></code></a></p></td>
+<td><p>An Int specifying the highest power of the filter transfer function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.operation" title="abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.operation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">operation</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the filter operator.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.halt" title="abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.halt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">halt</span></code></a></p></td>
+<td><p>A Boolean specifying whether to stop the analysis if the specified limit is reached.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.limit" title="abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.limit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">limit</span></code></a></p></td>
+<td><p>None or a Float specifying the threshold limit, an upper or lower bound for output values depending on the operation, or a bound for stopping the analysis when Halt is used.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.invariant" title="abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.invariant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">invariant</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the invariant to which filtering is applied.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates a Chebyshev2Filter object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.setValues" title="abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([rippleFactor, order, operation, ...])</p></td>
+<td><p>This method modifies the Chebyshev2Filter object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.halt">
 <span class="sig-name descname"><span class="pre">halt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Filter/Chebyshev2Filter.py#L45-L47"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.halt" title="Permalink to this definition">#</a></dt>
@@ -1425,6 +1704,85 @@ The OperatorFilter object is derived from the Filter object.</p>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.OperatorFilter.OperatorFilter.order" title="abaqus.Filter.OperatorFilter.OperatorFilter.order"><code class="xref py py-obj docutils literal notranslate"><span class="pre">order</span></code></a></p></td>
+<td><p>An Int specifying the highest power of the filter transfer function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.OperatorFilter.OperatorFilter.operation" title="abaqus.Filter.OperatorFilter.OperatorFilter.operation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">operation</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the filter operator.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.OperatorFilter.OperatorFilter.halt" title="abaqus.Filter.OperatorFilter.OperatorFilter.halt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">halt</span></code></a></p></td>
+<td><p>A Boolean specifying whether to stop the analysis if the specified limit is reached.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.OperatorFilter.OperatorFilter.limit" title="abaqus.Filter.OperatorFilter.OperatorFilter.limit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">limit</span></code></a></p></td>
+<td><p>None or a Float specifying the threshold limit, an upper or lower bound for output values depending on the operation, or a bound for stopping the analysis when Halt is used.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.OperatorFilter.OperatorFilter.invariant" title="abaqus.Filter.OperatorFilter.OperatorFilter.invariant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">invariant</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the invariant to which filtering is applied.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Filter</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">cutoffFrequency</span></code></p></td>
+<td><p>A Float specifying the attenuation point of the filter.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.OperatorFilter.OperatorFilter.order" title="abaqus.Filter.OperatorFilter.OperatorFilter.order"><code class="xref py py-obj docutils literal notranslate"><span class="pre">order</span></code></a></p></td>
+<td><p>An Int specifying the highest power of the filter transfer function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.OperatorFilter.OperatorFilter.operation" title="abaqus.Filter.OperatorFilter.OperatorFilter.operation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">operation</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the filter operator.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.OperatorFilter.OperatorFilter.halt" title="abaqus.Filter.OperatorFilter.OperatorFilter.halt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">halt</span></code></a></p></td>
+<td><p>A Boolean specifying whether to stop the analysis if the specified limit is reached.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.OperatorFilter.OperatorFilter.limit" title="abaqus.Filter.OperatorFilter.OperatorFilter.limit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">limit</span></code></a></p></td>
+<td><p>None or a Float specifying the threshold limit, an upper or lower bound for output values depending on the operation, or a bound for stopping the analysis when Halt is used.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.OperatorFilter.OperatorFilter.invariant" title="abaqus.Filter.OperatorFilter.OperatorFilter.invariant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">invariant</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the invariant to which filtering is applied.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, cutoffFrequency[, order, ...])</p></td>
+<td><p>This method creates an OperatorFilter object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.OperatorFilter.OperatorFilter.setValues" title="abaqus.Filter.OperatorFilter.OperatorFilter.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([order, operation, halt, limit, ...])</p></td>
+<td><p>This method modifies the OperatorFilter object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Filter.OperatorFilter.OperatorFilter.halt">
 <span class="sig-name descname"><span class="pre">halt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Filter/OperatorFilter.py#L41-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Filter.OperatorFilter.OperatorFilter.halt" title="Permalink to this definition">#</a></dt>

@@ -26,7 +26,7 @@ BeadFixedRegion
 .. autoclass:: abaqus.Optimization.BeadFixedRegion.BeadFixedRegion
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BeadGrowth
 ~~~~~~~~~~
@@ -34,7 +34,7 @@ BeadGrowth
 .. autoclass:: abaqus.Optimization.BeadGrowth.BeadGrowth
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BeadPenetrationCheck
 ~~~~~~~~~~~~~~~~~~~~
@@ -42,7 +42,7 @@ BeadPenetrationCheck
 .. autoclass:: abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BeadPlanarSymmetry
 ~~~~~~~~~~~~~~~~~~
@@ -50,7 +50,7 @@ BeadPlanarSymmetry
 .. autoclass:: abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BeadPointSymmetry
 ~~~~~~~~~~~~~~~~~
@@ -58,7 +58,7 @@ BeadPointSymmetry
 .. autoclass:: abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BeadRotationalSymmetry
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -66,7 +66,7 @@ BeadRotationalSymmetry
 .. autoclass:: abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BeadTask
 ~~~~~~~~
@@ -74,7 +74,7 @@ BeadTask
 .. autoclass:: abaqus.Optimization.BeadTask.BeadTask
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CombinedTermDesignResponse
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -82,7 +82,7 @@ CombinedTermDesignResponse
 .. autoclass:: abaqus.Optimization.CombinedTermDesignResponse.CombinedTermDesignResponse
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DesignDirection
 ~~~~~~~~~~~~~~~
@@ -90,7 +90,7 @@ DesignDirection
 .. autoclass:: abaqus.Optimization.DesignDirection.DesignDirection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DesignResponse
 ~~~~~~~~~~~~~~
@@ -98,7 +98,7 @@ DesignResponse
 .. autoclass:: abaqus.Optimization.DesignResponse.DesignResponse
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DrillControl
 ~~~~~~~~~~~~
@@ -106,7 +106,7 @@ DrillControl
 .. autoclass:: abaqus.Optimization.DrillControl.DrillControl
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FixedRegion
 ~~~~~~~~~~~
@@ -114,7 +114,7 @@ FixedRegion
 .. autoclass:: abaqus.Optimization.FixedRegion.FixedRegion
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FrozenArea
 ~~~~~~~~~~
@@ -122,7 +122,7 @@ FrozenArea
 .. autoclass:: abaqus.Optimization.FrozenArea.FrozenArea
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 GeometricRestriction
 ~~~~~~~~~~~~~~~~~~~~
@@ -130,7 +130,7 @@ GeometricRestriction
 .. autoclass:: abaqus.Optimization.GeometricRestriction.GeometricRestriction
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Growth
 ~~~~~~
@@ -138,7 +138,7 @@ Growth
 .. autoclass:: abaqus.Optimization.Growth.Growth
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 LocalStopCondition
 ~~~~~~~~~~~~~~~~~~
@@ -146,7 +146,7 @@ LocalStopCondition
 .. autoclass:: abaqus.Optimization.LocalStopCondition.LocalStopCondition
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ObjectiveFunction
 ~~~~~~~~~~~~~~~~~
@@ -154,7 +154,7 @@ ObjectiveFunction
 .. autoclass:: abaqus.Optimization.ObjectiveFunction.ObjectiveFunction
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OptimizationConstraint
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -162,7 +162,7 @@ OptimizationConstraint
 .. autoclass:: abaqus.Optimization.OptimizationConstraint.OptimizationConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OptimizationObjective
 ~~~~~~~~~~~~~~~~~~~~~
@@ -170,7 +170,7 @@ OptimizationObjective
 .. autoclass:: abaqus.Optimization.OptimizationObjective.OptimizationObjective
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 OptimizationObjectiveArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -178,7 +178,7 @@ OptimizationObjectiveArray
 .. autoclass:: abaqus.Optimization.OptimizationObjectiveArray.OptimizationObjectiveArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PenetrationCheck
 ~~~~~~~~~~~~~~~~
@@ -186,7 +186,7 @@ PenetrationCheck
 .. autoclass:: abaqus.Optimization.PenetrationCheck.PenetrationCheck
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ShapeDemoldControl
 ~~~~~~~~~~~~~~~~~~
@@ -194,7 +194,7 @@ ShapeDemoldControl
 .. autoclass:: abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ShapeMemberSize
 ~~~~~~~~~~~~~~~
@@ -202,7 +202,7 @@ ShapeMemberSize
 .. autoclass:: abaqus.Optimization.ShapeMemberSize.ShapeMemberSize
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ShapePlanarSymmetry
 ~~~~~~~~~~~~~~~~~~~
@@ -210,7 +210,7 @@ ShapePlanarSymmetry
 .. autoclass:: abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ShapePointSymmetry
 ~~~~~~~~~~~~~~~~~~
@@ -218,7 +218,7 @@ ShapePointSymmetry
 .. autoclass:: abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ShapeRotationalSymmetry
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -226,7 +226,7 @@ ShapeRotationalSymmetry
 .. autoclass:: abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ShapeTask
 ~~~~~~~~~
@@ -234,7 +234,7 @@ ShapeTask
 .. autoclass:: abaqus.Optimization.ShapeTask.ShapeTask
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SingleTermDesignResponse
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -242,7 +242,7 @@ SingleTermDesignResponse
 .. autoclass:: abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SizingClusterAreas
 ~~~~~~~~~~~~~~~~~~
@@ -250,7 +250,7 @@ SizingClusterAreas
 .. autoclass:: abaqus.Optimization.SizingClusterAreas.SizingClusterAreas
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SizingCyclicSymmetry
 ~~~~~~~~~~~~~~~~~~~~
@@ -258,7 +258,7 @@ SizingCyclicSymmetry
 .. autoclass:: abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SizingFrozenArea
 ~~~~~~~~~~~~~~~~
@@ -266,7 +266,7 @@ SizingFrozenArea
 .. autoclass:: abaqus.Optimization.SizingFrozenArea.SizingFrozenArea
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SizingMemberSize
 ~~~~~~~~~~~~~~~~
@@ -274,7 +274,7 @@ SizingMemberSize
 .. autoclass:: abaqus.Optimization.SizingMemberSize.SizingMemberSize
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SizingPlanarSymmetry
 ~~~~~~~~~~~~~~~~~~~~
@@ -282,7 +282,7 @@ SizingPlanarSymmetry
 .. autoclass:: abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SizingPointSymmetry
 ~~~~~~~~~~~~~~~~~~~
@@ -290,7 +290,7 @@ SizingPointSymmetry
 .. autoclass:: abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SizingRotationalSymmetry
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -298,7 +298,7 @@ SizingRotationalSymmetry
 .. autoclass:: abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SizingTask
 ~~~~~~~~~~
@@ -306,7 +306,7 @@ SizingTask
 .. autoclass:: abaqus.Optimization.SizingTask.SizingTask
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SlideRegionControl
 ~~~~~~~~~~~~~~~~~~
@@ -314,7 +314,7 @@ SlideRegionControl
 .. autoclass:: abaqus.Optimization.SlideRegionControl.SlideRegionControl
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StampControl
 ~~~~~~~~~~~~
@@ -322,7 +322,7 @@ StampControl
 .. autoclass:: abaqus.Optimization.StampControl.StampControl
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StepOption
 ~~~~~~~~~~
@@ -330,7 +330,7 @@ StepOption
 .. autoclass:: abaqus.Optimization.StepOption.StepOption
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StepOptionArray
 ~~~~~~~~~~~~~~~
@@ -338,7 +338,7 @@ StepOptionArray
 .. autoclass:: abaqus.Optimization.StepOptionArray.StepOptionArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StopCondition
 ~~~~~~~~~~~~~
@@ -346,7 +346,7 @@ StopCondition
 .. autoclass:: abaqus.Optimization.StopCondition.StopCondition
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TopologyCyclicSymmetry
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -354,7 +354,7 @@ TopologyCyclicSymmetry
 .. autoclass:: abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TopologyDemoldControl
 ~~~~~~~~~~~~~~~~~~~~~
@@ -362,7 +362,7 @@ TopologyDemoldControl
 .. autoclass:: abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TopologyMemberSize
 ~~~~~~~~~~~~~~~~~~
@@ -370,7 +370,7 @@ TopologyMemberSize
 .. autoclass:: abaqus.Optimization.TopologyMemberSize.TopologyMemberSize
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TopologyMillingControl
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -378,7 +378,7 @@ TopologyMillingControl
 .. autoclass:: abaqus.Optimization.TopologyMillingControl.TopologyMillingControl
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TopologyPlanarSymmetry
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -386,7 +386,7 @@ TopologyPlanarSymmetry
 .. autoclass:: abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TopologyPointSymmetry
 ~~~~~~~~~~~~~~~~~~~~~
@@ -394,7 +394,7 @@ TopologyPointSymmetry
 .. autoclass:: abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TopologyRotationalSymmetry
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -402,7 +402,7 @@ TopologyRotationalSymmetry
 .. autoclass:: abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TopologyTask
 ~~~~~~~~~~~~
@@ -410,7 +410,7 @@ TopologyTask
 .. autoclass:: abaqus.Optimization.TopologyTask.TopologyTask
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TurnControl
 ~~~~~~~~~~~
@@ -418,5 +418,5 @@ TurnControl
 .. autoclass:: abaqus.Optimization.TurnControl.TurnControl
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
