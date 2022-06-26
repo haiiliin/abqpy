@@ -9,9 +9,11 @@ Create parts
 ------------
 
 .. autoclass:: abaqus.Part.PartModel.PartModel
+    :noindex:
     :members:
 
 .. autoclass:: abaqus.Part.PartBase.PartBase
+    :noindex:
     :members:
 
 Object features

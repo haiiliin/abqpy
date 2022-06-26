@@ -25,7 +25,7 @@ Python script, even without opening the Abaqus/CAE.
 Other links for this project
 ----------------------------
 
-* GitHub repository: `github.com/haiiliin/abqpy <https://github.com/Haiiliin/abqpy>`_
+* GitHub repository: `github.com/haiiliin/abqpy <https://github.com/haiiliin/abqpy>`_
 * PyPI: `pypi.org/project/abqpy <https://pypi.org/project/abqpy/>`_
 * Anaconda: `anaconda.org/haiiliin/abqpy <https://anaconda.org/haiiliin/abqpy>`_
 * Read the Docs: `readthedocs.org/projects/abqpy <https://readthedocs.org/projects/abqpy>`_
@@ -56,13 +56,13 @@ anaconda, you have to use `pip` to install it manually:
     conda install -c haiiliin abqpy
 
 You may install the latest development version by cloning the
-`GitHub repository <https://github.com/Haiiliin/abqpy>`_ and use `python` to install from
+`GitHub repository <https://github.com/haiiliin/abqpy>`_ and use `python` to install from
 the local directory:
 
 .. code-block:: sh
 
     pip install ipynbname
-    git clone https://github.com/Haiiliin/abqpy.git
+    git clone https://github.com/haiiliin/abqpy.git
     cd abqpy
     python setup.py install
 
@@ -71,7 +71,7 @@ Write your Abaqus/Python script
 
 After installing the `abqpy` package, you can start writing your own Abaqus/Python script
 to build your model. You can refer
-`abqpy/tests at main · Haiiliin/abqpy <https://github.com/Haiiliin/abqpy/tree/main/tests>`_
+`abqpy/tests at main · haiiliin/abqpy <https://github.com/haiiliin/abqpy/tree/main/tests>`_
 for some tests of the script, for more detailed documentation, please check
 `abqpy documentation <https://haiiliin.com/abqpy/>`_.
 

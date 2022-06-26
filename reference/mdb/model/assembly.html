@@ -403,8 +403,8 @@
 <section id="create-instances">
 <h2>Create instances<a class="headerlink" href="#create-instances" title="Permalink to this headline">#</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="abaqus.Assembly.AssemblyModel.AssemblyModel">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AssemblyModel</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/AssemblyModel.py#L12-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AssemblyModel</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/AssemblyModel.py#L12-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Abaqus creates a Model object named <cite>Model-1</cite> when a session is started.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -422,13 +422,13 @@
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.Instance" title="abaqus.Assembly.AssemblyModel.AssemblyModel.Instance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Instance</span></code></a>(name, objectToCopy)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Assembly.AssemblyModel.AssemblyModel.Instance" title="abaqus.Assembly.AssemblyModel.AssemblyModel.Instance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Instance</span></code></a>(name, objectToCopy)</p></td>
 <td><p>This method copies a PartInstance object from the specified model and creates a new PartInstance object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches" title="abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convertAllSketches</span></code></a>([regenerate, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches" title="abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convertAllSketches</span></code></a>([regenerate, ...])</p></td>
 <td><p>This method converts all sketches from Abaqus 6.5 or earlier to the equivalent ConstrainedSketch objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances" title="abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances"><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkInstances</span></code></a>(instancesMap)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances" title="abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances"><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkInstances</span></code></a>(instancesMap)</p></td>
 <td><p>This method links the selected PartInstance objects to the corresponding PartInstance objects from the specified models.</p></td>
 </tr>
 </tbody>
@@ -437,8 +437,8 @@
 </div>
 <hr class="docutils" />
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Assembly.AssemblyModel.AssemblyModel.Instance">
-<span class="sig-name descname"><span class="pre">Instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">objectToCopy</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/AssemblyModel.py#L23-L46"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.Instance" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">objectToCopy</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/AssemblyModel.py#L23-L46"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method copies a PartInstance object from the specified model and creates a new
 PartInstance object.</p>
 <div class="admonition note">
@@ -467,8 +467,8 @@ PartInstance object.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches">
-<span class="sig-name descname"><span class="pre">convertAllSketches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regenerate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">convertReversedSketches</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/AssemblyModel.py#L48-L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">convertAllSketches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regenerate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">convertReversedSketches</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/AssemblyModel.py#L48-L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method converts all sketches from Abaqus 6.5 or earlier to the equivalent
 ConstrainedSketch objects.</p>
 <dl class="field-list simple">
@@ -494,8 +494,8 @@ process.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances">
-<span class="sig-name descname"><span class="pre">linkInstances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instancesMap</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/AssemblyModel.py#L72-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">linkInstances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instancesMap</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/AssemblyModel.py#L72-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method links the selected PartInstance objects to the corresponding PartInstance
 objects from the specified models. If all instances of a Part are selected for linking,
 the Part will be linked as well. If not, a new linked child Part object will be created
@@ -1811,7 +1811,7 @@ created.</p>
 <dt class="sig sig-object py" id="abaqus.Assembly.AssemblyBase.AssemblyBase.Instance">
 <span class="sig-name descname"><span class="pre">Instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">part</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part.html#abaqus.Part.Part.Part" title="abaqus.Part.Part.Part"><span class="pre">Part</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoOffset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dependent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><span class="pre">PartInstance</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/AssemblyBase.py#L206-L237"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyBase.AssemblyBase.Instance" title="Permalink to this definition">#</a></dt>
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">Instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel" title="abaqus.Assembly.AssemblyModel.AssemblyModel"><span class="pre">AssemblyModel</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoOffset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ModelInstance</span></span></span></dt>
+<span class="sig-name descname"><span class="pre">Instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../model.html#abaqus.Assembly.AssemblyModel.AssemblyModel" title="abaqus.Assembly.AssemblyModel.AssemblyModel"><span class="pre">AssemblyModel</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoOffset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ModelInstance</span></span></span></dt>
 <dd><p>This method creates a PartInstance object and puts it into the instances repository.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>

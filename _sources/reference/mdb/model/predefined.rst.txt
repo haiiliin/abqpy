@@ -9,6 +9,7 @@ Create predefined fields
 ------------------------
 
 .. autoclass:: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel
+    :noindex:
     :members:
 
 Object features

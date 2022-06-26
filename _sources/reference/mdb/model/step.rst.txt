@@ -15,6 +15,7 @@ Create steps
 ------------
 
 .. autoclass:: abaqus.Step.StepModel.StepModel
+    :noindex:
     :members:
 
 Object features

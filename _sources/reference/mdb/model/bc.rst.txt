@@ -9,6 +9,7 @@ Create boundary conditions
 --------------------------
 
 .. autoclass:: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel
+    :noindex:
     :members:
 
     .. autoclasstoc::

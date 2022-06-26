@@ -405,8 +405,8 @@
 <section id="mesh-features-for-assembly">
 <h3>Mesh features for Assembly<a class="headerlink" href="#mesh-features-for-assembly" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeshAssembly</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L17-L1077"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeshAssembly</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L17-L1077"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>An <a class="reference internal" href="assembly.html#abaqus.Assembly.Assembly.Assembly" title="abaqus.Assembly.Assembly.Assembly"><code class="xref py py-class docutils literal notranslate"><span class="pre">Assembly</span></code></a> object is a container for instances of parts. The Assembly object has no
 constructor command. Abaqus creates the <strong>rootAssembly</strong> member when a Model object is
 created.</p>
@@ -537,97 +537,97 @@ created.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.assignStackDirection" title="abaqus.Mesh.MeshAssembly.MeshAssembly.assignStackDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assignStackDirection</span></code></a>(cells, referenceRegion)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">assignStackDirection</span></code>(cells, referenceRegion)</p></td>
 <td><p>This method assigns a stack direction to geometric cells.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.associateMeshWithGeometry" title="abaqus.Mesh.MeshAssembly.MeshAssembly.associateMeshWithGeometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">associateMeshWithGeometry</span></code></a>(geometricEntity[, ...])</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">associateMeshWithGeometry</span></code>(geometricEntity[, ...])</p></td>
 <td><p>This method associates a geometric entity with mesh entities that are either orphan elements, bounds orphan elements, or were created using the bottom-up meshing technique.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.createVirtualTopology" title="abaqus.Mesh.MeshAssembly.MeshAssembly.createVirtualTopology"><code class="xref py py-obj docutils literal notranslate"><span class="pre">createVirtualTopology</span></code></a>(regions[, ...])</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">createVirtualTopology</span></code>(regions[, ...])</p></td>
 <td><p>This method creates a virtual topology feature by automatically merging faces and edges based on a set of geometric parameters.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.deleteBoundaryLayerControls" title="abaqus.Mesh.MeshAssembly.MeshAssembly.deleteBoundaryLayerControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteBoundaryLayerControls</span></code></a>(regions)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteBoundaryLayerControls</span></code>(regions)</p></td>
 <td><p>This method deletes the control parameters for boundary layer mesh for all the specified regions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.deleteMesh" title="abaqus.Mesh.MeshAssembly.MeshAssembly.deleteMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteMesh</span></code></a>(regions)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteMesh</span></code>(regions)</p></td>
 <td><p>This method deletes a subset of the mesh that contains the native elements from the given part instances or regions.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.deleteMeshAssociationWithGeometry" title="abaqus.Mesh.MeshAssembly.MeshAssembly.deleteMeshAssociationWithGeometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteMeshAssociationWithGeometry</span></code></a>(...[, ...])</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteMeshAssociationWithGeometry</span></code>(...[, ...])</p></td>
 <td><p>This method deletes the association of geometric entities with mesh entities.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.deletePreviewMesh" title="abaqus.Mesh.MeshAssembly.MeshAssembly.deletePreviewMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deletePreviewMesh</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deletePreviewMesh</span></code>()</p></td>
 <td><p>This method deletes all boundary meshes in the assembly.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.deleteSeeds" title="abaqus.Mesh.MeshAssembly.MeshAssembly.deleteSeeds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteSeeds</span></code></a>(regions)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteSeeds</span></code>(regions)</p></td>
 <td><p>This method deletes the global edge seeds from the given part instances or deletes the local edge seeds from the given edges.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpExtrudedMesh" title="abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpExtrudedMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpExtrudedMesh</span></code></a>(cell, ...[, ...])</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpExtrudedMesh</span></code>(cell, ...[, ...])</p></td>
 <td><p>This method generates solid elements by extruding a 2D mesh along a vector, either on an orphan mesh or within a cell region using a bottom-up technique.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpSweptMesh" title="abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpSweptMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpSweptMesh</span></code></a>(cell[, ...])</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpSweptMesh</span></code>(cell[, ...])</p></td>
 <td><p>This method generates solid elements by sweeping a 2D mesh, either on an orphan mesh or within a cell region using a bottom-up technique.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpRevolvedMesh" title="abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpRevolvedMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpRevolvedMesh</span></code></a>(cell, ...[, ...])</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateBottomUpRevolvedMesh</span></code>(cell, ...[, ...])</p></td>
 <td><p>This method generates solid elements by revolving a 2D mesh around an axis, either on an orphan mesh or within a cell region using a bottom-up technique.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.generateMesh" title="abaqus.Mesh.MeshAssembly.MeshAssembly.generateMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateMesh</span></code></a>([regions, ...])</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateMesh</span></code>([regions, ...])</p></td>
 <td><p>This method generates a mesh in the given part instances or regions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds" title="abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getEdgeSeeds</span></code></a>(edge, attribute)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getEdgeSeeds</span></code>(edge, attribute)</p></td>
 <td><p>This method returns an edge seed parameter for a specified edge of an assembly.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getElementType" title="abaqus.Mesh.MeshAssembly.MeshAssembly.getElementType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElementType</span></code></a>(region, elemShape)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElementType</span></code>(region, elemShape)</p></td>
 <td><p>This method returns the ElemType object of a given element shape assigned to a region of the assembly.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces" title="abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getIncompatibleMeshInterfaces</span></code></a>([cells])</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getIncompatibleMeshInterfaces</span></code>([cells])</p></td>
 <td><p>This method returns a sequence of face objects that are meshed with incompatible elements.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl" title="abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMeshControl</span></code></a>(region, attribute)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMeshControl</span></code>(region, attribute)</p></td>
 <td><p>This method returns a mesh control parameter for the specified region of the assembly.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshStats" title="abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshStats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMeshStats</span></code></a>(regions)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMeshStats</span></code>(regions)</p></td>
 <td><p>This method returns the mesh statistics for the given part instances or regions.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getPartSeeds" title="abaqus.Mesh.MeshAssembly.MeshAssembly.getPartSeeds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPartSeeds</span></code></a>(region, attribute)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPartSeeds</span></code>(region, attribute)</p></td>
 <td><p>This method returns a part seed parameter for the specified instance.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getUnmeshedRegions" title="abaqus.Mesh.MeshAssembly.MeshAssembly.getUnmeshedRegions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getUnmeshedRegions</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getUnmeshedRegions</span></code>()</p></td>
 <td><p>This method returns all geometric regions in the assembly that require a mesh for submitting an analysis but are either unmeshed or are meshed incompletely.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity" title="abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ignoreEntity</span></code></a>(entities)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ignoreEntity</span></code>(entities)</p></td>
 <td><p>This method creates a virtual topology feature.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity" title="abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">restoreIgnoredEntity</span></code></a>(entities)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restoreIgnoredEntity</span></code>(entities)</p></td>
 <td><p>This method restores vertices and edges that have been merged using a virtual topology feature.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias" title="abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeByBias</span></code></a>(biasMethod, end1Edges, ...[, ...])</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeByBias</span></code>(biasMethod, end1Edges, ...[, ...])</p></td>
 <td><p>This method seeds the given edges nonuniformly using the specified number of elements and bias ratio or the specified minimum and maximum element sizes.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber" title="abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeByNumber</span></code></a>(edges, number[, constraint])</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeByNumber</span></code>(edges, number[, constraint])</p></td>
 <td><p>This method seeds the given edges uniformly based on the number of elements along the edges.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeBySize" title="abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeBySize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeBySize</span></code></a>(edges, size[, ...])</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedEdgeBySize</span></code>(edges, size[, ...])</p></td>
 <td><p>This method seeds the given edges either uniformly or following edge curvature distribution, based on the desired element size.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedPartInstance" title="abaqus.Mesh.MeshAssembly.MeshAssembly.seedPartInstance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedPartInstance</span></code></a>(regions, size[, ...])</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">seedPartInstance</span></code>(regions, size[, ...])</p></td>
 <td><p>This method assigns global edge seeds to the given part instances.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls" title="abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setBoundaryLayerControls</span></code></a>(regions, ...[, ...])</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setBoundaryLayerControls</span></code>(regions, ...[, ...])</p></td>
 <td><p>This method sets the control parameters for boundary layer mesh for the specified regions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setElementType" title="abaqus.Mesh.MeshAssembly.MeshAssembly.setElementType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setElementType</span></code></a>(regions, elemTypes)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setElementType</span></code>(regions, elemTypes)</p></td>
 <td><p>This method assigns element types to the specified regions.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setLogicalCorners" title="abaqus.Mesh.MeshAssembly.MeshAssembly.setLogicalCorners"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setLogicalCorners</span></code></a>(region, corners)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setLogicalCorners</span></code>(region, corners)</p></td>
 <td><p>This method sets the logical corners for a mappable face region.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setMeshControls" title="abaqus.Mesh.MeshAssembly.MeshAssembly.setMeshControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setMeshControls</span></code></a>(regions[, elemShape, ...])</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setMeshControls</span></code>(regions[, elemShape, ...])</p></td>
 <td><p>This method sets the mesh control parameters for the specified regions.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath" title="abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setSweepPath</span></code></a>(region, edge, sense)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setSweepPath</span></code>(region, edge, sense)</p></td>
 <td><p>This method sets the sweep path for a sweepable region or the revolve path for a revolvable region.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality" title="abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verifyMeshQuality</span></code></a>(criterion[, threshold, ...])</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">verifyMeshQuality</span></code>(criterion[, threshold, ...])</p></td>
 <td><p>This method tests the quality of part instance meshes and returns poor-quality elements.</p></td>
 </tr>
 </tbody>
@@ -1011,8 +1011,8 @@ created.</p>
 </details></div>
 <hr class="docutils" />
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.assignStackDirection">
-<span class="sig-name descname"><span class="pre">assignStackDirection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceRegion</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L31-L42"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.assignStackDirection" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">assignStackDirection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceRegion</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L31-L42"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method assigns a stack direction to geometric cells. The stack direction will be
 used to orient the elements during mesh generation.</p>
 <dl class="field-list simple">
@@ -1028,8 +1028,8 @@ used to orient the elements during mesh generation.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.associateMeshWithGeometry">
-<span class="sig-name descname"><span class="pre">associateMeshWithGeometry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">geometricEntity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elements=()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemFaces=()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemEdges=()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node=&lt;abaqus.Mesh.MeshNode.MeshNode</span> <span class="pre">object&gt;</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L44-L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.associateMeshWithGeometry" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">associateMeshWithGeometry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">geometricEntity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elements=()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemFaces=()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemEdges=()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node=&lt;abaqus.Mesh.MeshNode.MeshNode</span> <span class="pre">object&gt;</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L44-L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method associates a geometric entity with mesh entities that are either orphan
 elements, bounds orphan elements, or were created using the bottom-up meshing technique.</p>
 <dl class="field-list simple">
@@ -1059,8 +1059,8 @@ geometric edge.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.createVirtualTopology">
-<span class="sig-name descname"><span class="pre">createVirtualTopology</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mergeShortEdges</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shortEdgeThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mergeSmallFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smallFaceAreaThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mergeSliverFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faceAspectRatioThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mergeSmallAngleFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smallFaceCornerAngleThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mergeThinStairFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thinStairFaceThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignoreRedundantEntities</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cornerAngleTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">applyBlendControls</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blendSubtendedAngleTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blendRadiusTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L78-L174"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.createVirtualTopology" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">createVirtualTopology</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mergeShortEdges</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shortEdgeThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mergeSmallFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smallFaceAreaThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mergeSliverFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faceAspectRatioThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mergeSmallAngleFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smallFaceCornerAngleThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mergeThinStairFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thinStairFaceThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignoreRedundantEntities</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cornerAngleTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">applyBlendControls</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blendSubtendedAngleTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blendRadiusTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L78-L174"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method creates a virtual topology feature by automatically merging faces and edges
 based on a set of geometric parameters. The edges and vertices that are being merged
 will be ignored during mesh generation.</p>
@@ -1144,8 +1144,8 @@ equals False.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.deleteBoundaryLayerControls">
-<span class="sig-name descname"><span class="pre">deleteBoundaryLayerControls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L176-L186"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.deleteBoundaryLayerControls" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">deleteBoundaryLayerControls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L176-L186"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method deletes the control parameters for boundary layer mesh for all the specified
 regions.</p>
 <dl class="field-list simple">
@@ -1160,8 +1160,8 @@ mesh control parameters.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.deleteMesh">
-<span class="sig-name descname"><span class="pre">deleteMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L188-L198"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.deleteMesh" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">deleteMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L188-L198"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method deletes a subset of the mesh that contains the native elements from the
 given part instances or regions.</p>
 <dl class="field-list simple">
@@ -1176,8 +1176,8 @@ regions from where the native mesh is to be deleted.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.deleteMeshAssociationWithGeometry">
-<span class="sig-name descname"><span class="pre">deleteMeshAssociationWithGeometry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">geometricEntities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">addBoundingEntities</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L200-L217"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.deleteMeshAssociationWithGeometry" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">deleteMeshAssociationWithGeometry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">geometricEntities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">addBoundingEntities</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L200-L217"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method deletes the association of geometric entities with mesh entities.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1197,15 +1197,15 @@ is False.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.deletePreviewMesh">
-<span class="sig-name descname"><span class="pre">deletePreviewMesh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L219-L223"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.deletePreviewMesh" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">deletePreviewMesh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L219-L223"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method deletes all boundary meshes in the assembly. See the <strong>boundaryPreview</strong>
 argument of generateMesh for information about generating boundary meshes.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.deleteSeeds">
-<span class="sig-name descname"><span class="pre">deleteSeeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L225-L235"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.deleteSeeds" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">deleteSeeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L225-L235"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method deletes the global edge seeds from the given part instances or deletes the
 local edge seeds from the given edges.</p>
 <dl class="field-list simple">
@@ -1220,8 +1220,8 @@ edges from which the seeds are to be deleted.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpExtrudedMesh">
-<span class="sig-name descname"><span class="pre">generateBottomUpExtrudedMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cell</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfLayers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extrudeVector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">geometrySourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemFacesSourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemSourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">targetSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">biasRatio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extendElementSets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L237-L289"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpExtrudedMesh" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">generateBottomUpExtrudedMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cell</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfLayers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extrudeVector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">geometrySourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemFacesSourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemSourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">targetSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">biasRatio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extendElementSets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L237-L289"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method generates solid elements by extruding a 2D mesh along a vector, either on an
 orphan mesh or within a cell region using a bottom-up technique.</p>
 <dl class="field-list simple">
@@ -1266,8 +1266,8 @@ instances. The default value is False.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpRevolvedMesh">
-<span class="sig-name descname"><span class="pre">generateBottomUpRevolvedMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cell</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfLayers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axisOfRevolution</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angleOfRevolution</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">geometrySourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemFacesSourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemSourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extendElementSets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L340-L384"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpRevolvedMesh" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">generateBottomUpRevolvedMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cell</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfLayers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axisOfRevolution</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angleOfRevolution</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">geometrySourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemFacesSourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemSourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extendElementSets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L340-L384"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method generates solid elements by revolving a 2D mesh around an axis, either on an
 orphan mesh or within a cell region using a bottom-up technique.</p>
 <dl class="field-list simple">
@@ -1306,8 +1306,8 @@ instances. The default value is False.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpSweptMesh">
-<span class="sig-name descname"><span class="pre">generateBottomUpSweptMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cell</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">geometrySourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemFacesSourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemSourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">geometryConnectingSides</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemFacesConnectingSides</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemConnectingSides</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">targetSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfLayers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extendElementSets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L291-L338"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.generateBottomUpSweptMesh" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">generateBottomUpSweptMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cell</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">geometrySourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemFacesSourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemSourceSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">geometryConnectingSides</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemFacesConnectingSides</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemConnectingSides</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">targetSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfLayers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extendElementSets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L291-L338"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method generates solid elements by sweeping a 2D mesh, either on an orphan mesh or
 within a cell region using a bottom-up technique.</p>
 <dl class="field-list simple">
@@ -1347,8 +1347,8 @@ instances. The default value is False.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.generateMesh">
-<span class="sig-name descname"><span class="pre">generateMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seedConstraintOverride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshTechniqueOverride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundaryPreview</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundaryMeshOverride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L386-L418"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.generateMesh" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">generateMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seedConstraintOverride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshTechniqueOverride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundaryPreview</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundaryMeshOverride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L386-L418"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method generates a mesh in the given part instances or regions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1378,8 +1378,8 @@ default value is OFF.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds">
-<span class="sig-name descname"><span class="pre">getEdgeSeeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L420-L489"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">getEdgeSeeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L420-L489"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method returns an edge seed parameter for a specified edge of an assembly.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
@@ -1487,8 +1487,8 @@ the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.getElementType">
-<span class="sig-name descname"><span class="pre">getElementType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L491-L513"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getElementType" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">getElementType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L491-L513"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method returns the ElemType object of a given element shape assigned to a region of
 the assembly.</p>
 <dl class="field-list simple">
@@ -1517,8 +1517,8 @@ consistent with the dimension of the <strong>region</strong>.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces">
-<span class="sig-name descname"><span class="pre">getIncompatibleMeshInterfaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L515-L529"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">getIncompatibleMeshInterfaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L515-L529"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method returns a sequence of face objects that are meshed with incompatible
 elements.</p>
 <dl class="field-list simple">
@@ -1538,8 +1538,8 @@ elements.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl">
-<span class="sig-name descname"><span class="pre">getMeshControl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L531-L568"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">getMeshControl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L531-L568"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method returns a mesh control parameter for the specified region of the assembly.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
@@ -1586,8 +1586,8 @@ following: Free quadrilateral meshing or sweep hexahedral meshing with <strong>a
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshStats">
-<span class="sig-name descname"><span class="pre">getMeshStats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L570-L584"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshStats" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">getMeshStats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L570-L584"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method returns the mesh statistics for the given part instances or regions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1607,8 +1607,8 @@ statistics should be returned.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.getPartSeeds">
-<span class="sig-name descname"><span class="pre">getPartSeeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L586-L626"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getPartSeeds" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">getPartSeeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L586-L626"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method returns a part seed parameter for the specified instance.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
@@ -1654,8 +1654,8 @@ seeds are not defined, the return value is zero.</p></li>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.getUnmeshedRegions">
-<span class="sig-name descname"><span class="pre">getUnmeshedRegions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L628-L637"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getUnmeshedRegions" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">getUnmeshedRegions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L628-L637"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method returns all geometric regions in the assembly that require a mesh for
 submitting an analysis but are either unmeshed or are meshed incompletely.</p>
 <dl class="field-list simple">
@@ -1669,8 +1669,8 @@ submitting an analysis but are either unmeshed or are meshed incompletely.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity">
-<span class="sig-name descname"><span class="pre">ignoreEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L639-L655"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">ignoreEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L639-L655"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method creates a virtual topology feature. Virtual topology allows unimportant
 entities to be ignored during mesh generation. You can combine two adjacent faces by
 specifying a common edge to ignore. Similarly, you can combine two adjacent edges by
@@ -1692,8 +1692,8 @@ specifying a common vertex to ignore.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity">
-<span class="sig-name descname"><span class="pre">restoreIgnoredEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L657-L672"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">restoreIgnoredEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L657-L672"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method restores vertices and edges that have been merged using a virtual topology
 feature.</p>
 <dl class="field-list simple">
@@ -1714,8 +1714,8 @@ be restored.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias">
-<span class="sig-name descname"><span class="pre">seedEdgeByBias</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">biasMethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end1Edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end2Edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centerEdges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endEdges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L674-L737"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">seedEdgeByBias</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">biasMethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end1Edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end2Edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centerEdges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endEdges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L674-L737"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method seeds the given edges nonuniformly using the specified number of elements
 and bias ratio or the specified minimum and maximum element sizes.</p>
 <dl class="field-list simple">
@@ -1772,8 +1772,8 @@ of elements, not to the nodal positioning).</p></li>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber">
-<span class="sig-name descname"><span class="pre">seedEdgeByNumber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L739-L760"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">seedEdgeByNumber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L739-L760"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method seeds the given edges uniformly based on the number of elements along the
 edges.</p>
 <dl class="field-list simple">
@@ -1797,8 +1797,8 @@ the nodal positioning).</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeBySize">
-<span class="sig-name descname"><span class="pre">seedEdgeBySize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deviationFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L762-L793"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeBySize" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">seedEdgeBySize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deviationFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L762-L793"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method seeds the given edges either uniformly or following edge curvature
 distribution, based on the desired element size.</p>
 <dl class="field-list simple">
@@ -1827,8 +1827,8 @@ the nodal positioning).</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.seedPartInstance">
-<span class="sig-name descname"><span class="pre">seedPartInstance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deviationFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L795-L823"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedPartInstance" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">seedPartInstance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deviationFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L795-L823"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method assigns global edge seeds to the given part instances.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1854,8 +1854,8 @@ seeds.FINER: The resulting mesh can be finer than the specified seeds.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls">
-<span class="sig-name descname"><span class="pre">setBoundaryLayerControls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">firstElemSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">growthFactor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numLayers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inactiveFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L825-L858"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">setBoundaryLayerControls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">firstElemSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">growthFactor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numLayers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inactiveFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L825-L858"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method sets the control parameters for boundary layer mesh for the specified
 regions.</p>
 <dl class="field-list simple">
@@ -1885,8 +1885,8 @@ selected regions.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.setElementType">
-<span class="sig-name descname"><span class="pre">setElementType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemTypes</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L860-L887"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setElementType" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">setElementType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemTypes</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L860-L887"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method assigns element types to the specified regions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1919,8 +1919,8 @@ incompatible with the newly assigned quadratic Hex element.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.setLogicalCorners">
-<span class="sig-name descname"><span class="pre">setLogicalCorners</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">corners</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L889-L900"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setLogicalCorners" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">setLogicalCorners</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">corners</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L889-L900"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method sets the logical corners for a mappable face region.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1936,8 +1936,8 @@ face region.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.setMeshControls">
-<span class="sig-name descname"><span class="pre">setMeshControls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">technique</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">algorithm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minTransition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sizeGrowth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowMapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L902-L980"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setMeshControls" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">setMeshControls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">technique</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">algorithm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minTransition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sizeGrowth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowMapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L902-L980"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method sets the mesh control parameters for the specified regions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2016,8 +2016,8 @@ can be used on faces that bound three-dimensional <strong>regions</strong>.</p><
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath">
-<span class="sig-name descname"><span class="pre">setSweepPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sense</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L982-L998"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">setSweepPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sense</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L982-L998"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method sets the sweep path for a sweepable region or the revolve path for a
 revolvable region.</p>
 <dl class="field-list simple">
@@ -2038,8 +2038,8 @@ underlying curve will be used.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality">
-<span class="sig-name descname"><span class="pre">verifyMeshQuality</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L1000-L1077"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">verifyMeshQuality</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L1000-L1077"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>This method tests the quality of part instance meshes and returns poor-quality elements.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

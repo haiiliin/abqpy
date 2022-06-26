@@ -9,6 +9,7 @@ Create properties for Part
 --------------------------
 
 .. autoclass:: abaqus.Property.PropertyPart.PropertyPart
+    :noindex:
     :members:
 
 Object features
