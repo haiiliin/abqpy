@@ -19,7 +19,7 @@ CommandRegister
 .. autoclass:: abaqus.CustomKernel.CommandRegister.CommandRegister
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RegisteredDictionary
 ~~~~~~~~~~~~~~~~~~~~
@@ -27,7 +27,7 @@ RegisteredDictionary
 .. autoclass:: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RegisteredList
 ~~~~~~~~~~~~~~
@@ -35,7 +35,7 @@ RegisteredList
 .. autoclass:: abaqus.CustomKernel.RegisteredList.RegisteredList
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RegisteredTuple
 ~~~~~~~~~~~~~~~
@@ -43,7 +43,7 @@ RegisteredTuple
 .. autoclass:: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RepositorySupport
 ~~~~~~~~~~~~~~~~~

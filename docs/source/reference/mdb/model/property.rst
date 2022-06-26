@@ -20,7 +20,7 @@ CompositeLayup
 .. autoclass:: abaqus.Property.CompositeLayup.CompositeLayup
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CompositePly
 ~~~~~~~~~~~~
@@ -28,7 +28,7 @@ CompositePly
 .. autoclass:: abaqus.Property.CompositePly.CompositePly
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CompositePlyArray
 ~~~~~~~~~~~~~~~~~
@@ -36,7 +36,7 @@ CompositePlyArray
 .. autoclass:: abaqus.Property.CompositePlyArray.CompositePlyArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MaterialOrientation
 ~~~~~~~~~~~~~~~~~~~
@@ -44,7 +44,7 @@ MaterialOrientation
 .. autoclass:: abaqus.Property.MaterialOrientation.MaterialOrientation
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MaterialOrientationArray
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -52,7 +52,7 @@ MaterialOrientationArray
 .. autoclass:: abaqus.Property.MaterialOrientationArray.MaterialOrientationArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PlyStackPlot
 ~~~~~~~~~~~~
@@ -60,7 +60,7 @@ PlyStackPlot
 .. autoclass:: abaqus.Property.PlyStackPlot.PlyStackPlot
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PropertyAssembly
 ~~~~~~~~~~~~~~~~
@@ -68,7 +68,7 @@ PropertyAssembly
 .. autoclass:: abaqus.Property.PropertyAssembly.PropertyAssembly
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SectionAssignment
 ~~~~~~~~~~~~~~~~~
@@ -76,7 +76,7 @@ SectionAssignment
 .. autoclass:: abaqus.Property.SectionAssignment.SectionAssignment
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SectionAssignmentArray
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -84,5 +84,5 @@ SectionAssignmentArray
 .. autoclass:: abaqus.Property.SectionAssignmentArray.SectionAssignmentArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

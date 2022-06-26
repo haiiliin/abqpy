@@ -13,7 +13,7 @@ Cell
 .. autoclass:: abaqus.BasicGeometry.Cell.Cell
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CellArray
 ~~~~~~~~~
@@ -21,7 +21,7 @@ CellArray
 .. autoclass:: abaqus.BasicGeometry.CellArray.CellArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Edge
 ~~~~
@@ -29,7 +29,7 @@ Edge
 .. autoclass:: abaqus.BasicGeometry.Edge.Edge
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EdgeArray
 ~~~~~~~~~
@@ -37,7 +37,7 @@ EdgeArray
 .. autoclass:: abaqus.BasicGeometry.EdgeArray.EdgeArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Face
 ~~~~
@@ -45,7 +45,7 @@ Face
 .. autoclass:: abaqus.BasicGeometry.Face.Face
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FaceArray
 ~~~~~~~~~
@@ -53,7 +53,7 @@ FaceArray
 .. autoclass:: abaqus.BasicGeometry.FaceArray.FaceArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 IgnoredEdge
 ~~~~~~~~~~~
@@ -61,7 +61,7 @@ IgnoredEdge
 .. autoclass:: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 IgnoredEdgeArray
 ~~~~~~~~~~~~~~~~
@@ -69,7 +69,7 @@ IgnoredEdgeArray
 .. autoclass:: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 IgnoredVertex
 ~~~~~~~~~~~~~
@@ -77,7 +77,7 @@ IgnoredVertex
 .. autoclass:: abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 IgnoredVertexArray
 ~~~~~~~~~~~~~~~~~~
@@ -85,7 +85,7 @@ IgnoredVertexArray
 .. autoclass:: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 InterestingPoint
 ~~~~~~~~~~~~~~~~
@@ -93,7 +93,7 @@ InterestingPoint
 .. autoclass:: abaqus.BasicGeometry.InterestingPoint.InterestingPoint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ModelDot
 ~~~~~~~~
@@ -101,7 +101,7 @@ ModelDot
 .. autoclass:: abaqus.BasicGeometry.ModelDot.ModelDot
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ModelDotArray
 ~~~~~~~~~~~~~
@@ -109,7 +109,7 @@ ModelDotArray
 .. autoclass:: abaqus.BasicGeometry.ModelDotArray.ModelDotArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ReferencePoint
 ~~~~~~~~~~~~~~
@@ -117,7 +117,7 @@ ReferencePoint
 .. autoclass:: abaqus.BasicGeometry.ReferencePoint.ReferencePoint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ReferencePointArray
 ~~~~~~~~~~~~~~~~~~~
@@ -125,7 +125,7 @@ ReferencePointArray
 .. autoclass:: abaqus.BasicGeometry.ReferencePointArray.ReferencePointArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ReferencePoints
 ~~~~~~~~~~~~~~~
@@ -133,7 +133,7 @@ ReferencePoints
 .. autoclass:: abaqus.BasicGeometry.ReferencePoints.ReferencePoints
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Transform
 ~~~~~~~~~
@@ -141,7 +141,7 @@ Transform
 .. autoclass:: abaqus.BasicGeometry.Transform.Transform
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Vertex
 ~~~~~~
@@ -149,7 +149,7 @@ Vertex
 .. autoclass:: abaqus.BasicGeometry.Vertex.Vertex
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 VertexArray
 ~~~~~~~~~~~
@@ -157,4 +157,4 @@ VertexArray
 .. autoclass:: abaqus.BasicGeometry.VertexArray.VertexArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::

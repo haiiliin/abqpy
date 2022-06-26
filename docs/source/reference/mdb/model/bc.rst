@@ -21,7 +21,7 @@ BoundaryCondition
 .. autoclass:: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BoundaryConditionState
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -29,7 +29,7 @@ BoundaryConditionState
 .. autoclass:: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AccelerationBaseMotionBC
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -37,7 +37,7 @@ AccelerationBaseMotionBC
 .. autoclass:: abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AccelerationBaseMotionBCState
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -45,7 +45,7 @@ AccelerationBaseMotionBCState
 .. autoclass:: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AccelerationBC
 ~~~~~~~~~~~~~~
@@ -53,7 +53,7 @@ AccelerationBC
 .. autoclass:: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AccelerationBCState
 ~~~~~~~~~~~~~~~~~~~
@@ -61,7 +61,7 @@ AccelerationBCState
 .. autoclass:: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AcousticPressureBC
 ~~~~~~~~~~~~~~~~~~
@@ -69,7 +69,7 @@ AcousticPressureBC
 .. autoclass:: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AcousticPressureBCState
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -77,7 +77,7 @@ AcousticPressureBCState
 .. autoclass:: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Calibration
 ~~~~~~~~~~~
@@ -85,7 +85,7 @@ Calibration
 .. autoclass:: abaqus.BoundaryCondition.Calibration.Calibration
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcentrationBC
 ~~~~~~~~~~~~~~~
@@ -93,7 +93,7 @@ ConcentrationBC
 .. autoclass:: abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcentrationBCState
 ~~~~~~~~~~~~~~~~~~~~
@@ -101,7 +101,7 @@ ConcentrationBCState
 .. autoclass:: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnAccelerationBC
 ~~~~~~~~~~~~~~~~~~
@@ -109,7 +109,7 @@ ConnAccelerationBC
 .. autoclass:: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnAccelerationBCState
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -117,7 +117,7 @@ ConnAccelerationBCState
 .. autoclass:: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnDisplacementBC
 ~~~~~~~~~~~~~~~~~~
@@ -125,7 +125,7 @@ ConnDisplacementBC
 .. autoclass:: abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnDisplacementBCState
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -133,7 +133,7 @@ ConnDisplacementBCState
 .. autoclass:: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnVelocityBC
 ~~~~~~~~~~~~~~
@@ -141,7 +141,7 @@ ConnVelocityBC
 .. autoclass:: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnVelocityBCState
 ~~~~~~~~~~~~~~~~~~~
@@ -149,7 +149,7 @@ ConnVelocityBCState
 .. autoclass:: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DisplacementBaseMotionBC
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -157,7 +157,7 @@ DisplacementBaseMotionBC
 .. autoclass:: abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DisplacementBaseMotionBCState
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -165,7 +165,7 @@ DisplacementBaseMotionBCState
 .. autoclass:: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DisplacementBC
 ~~~~~~~~~~~~~~
@@ -173,7 +173,7 @@ DisplacementBC
 .. autoclass:: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DisplacementBCState
 ~~~~~~~~~~~~~~~~~~~
@@ -181,7 +181,7 @@ DisplacementBCState
 .. autoclass:: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ElectricPotentialBC
 ~~~~~~~~~~~~~~~~~~~
@@ -189,7 +189,7 @@ ElectricPotentialBC
 .. autoclass:: abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ElectricPotentialBCState
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -197,7 +197,7 @@ ElectricPotentialBCState
 .. autoclass:: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EulerianBC
 ~~~~~~~~~~
@@ -205,7 +205,7 @@ EulerianBC
 .. autoclass:: abaqus.BoundaryCondition.EulerianBC.EulerianBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EulerianBCState
 ~~~~~~~~~~~~~~~
@@ -213,7 +213,7 @@ EulerianBCState
 .. autoclass:: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EulerianMotionBC
 ~~~~~~~~~~~~~~~~
@@ -221,7 +221,7 @@ EulerianMotionBC
 .. autoclass:: abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EulerianMotionBCState
 ~~~~~~~~~~~~~~~~~~~~~
@@ -229,7 +229,7 @@ EulerianMotionBCState
 .. autoclass:: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FluidCavityPressureBC
 ~~~~~~~~~~~~~~~~~~~~~
@@ -237,7 +237,7 @@ FluidCavityPressureBC
 .. autoclass:: abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FluidCavityPressureBCState
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -245,7 +245,7 @@ FluidCavityPressureBCState
 .. autoclass:: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MagneticVectorPotentialBC
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -253,7 +253,7 @@ MagneticVectorPotentialBC
 .. autoclass:: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MaterialFlowBC
 ~~~~~~~~~~~~~~
@@ -261,7 +261,7 @@ MaterialFlowBC
 .. autoclass:: abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MaterialFlowBCState
 ~~~~~~~~~~~~~~~~~~~
@@ -269,7 +269,7 @@ MaterialFlowBCState
 .. autoclass:: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PorePressureBC
 ~~~~~~~~~~~~~~
@@ -277,7 +277,7 @@ PorePressureBC
 .. autoclass:: abaqus.BoundaryCondition.PorePressureBC.PorePressureBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PorePressureBCState
 ~~~~~~~~~~~~~~~~~~~
@@ -285,7 +285,7 @@ PorePressureBCState
 .. autoclass:: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RetainedNodalDofsBC
 ~~~~~~~~~~~~~~~~~~~
@@ -293,7 +293,7 @@ RetainedNodalDofsBC
 .. autoclass:: abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SecondaryBaseBC
 ~~~~~~~~~~~~~~~
@@ -301,7 +301,7 @@ SecondaryBaseBC
 .. autoclass:: abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SecondaryBaseBCState
 ~~~~~~~~~~~~~~~~~~~~
@@ -309,7 +309,7 @@ SecondaryBaseBCState
 .. autoclass:: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SubmodelBC
 ~~~~~~~~~~
@@ -317,7 +317,7 @@ SubmodelBC
 .. autoclass:: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SubmodelBCState
 ~~~~~~~~~~~~~~~
@@ -325,7 +325,7 @@ SubmodelBCState
 .. autoclass:: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TemperatureBC
 ~~~~~~~~~~~~~
@@ -333,7 +333,7 @@ TemperatureBC
 .. autoclass:: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TemperatureBCState
 ~~~~~~~~~~~~~~~~~~
@@ -341,7 +341,7 @@ TemperatureBCState
 .. autoclass:: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TypeBC
 ~~~~~~
@@ -349,7 +349,7 @@ TypeBC
 .. autoclass:: abaqus.BoundaryCondition.TypeBC.TypeBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TypeBCState
 ~~~~~~~~~~~
@@ -357,7 +357,7 @@ TypeBCState
 .. autoclass:: abaqus.BoundaryCondition.TypeBCState.TypeBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 VelocityBaseMotionBC
 ~~~~~~~~~~~~~~~~~~~~
@@ -365,7 +365,7 @@ VelocityBaseMotionBC
 .. autoclass:: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 VelocityBaseMotionBCState
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -373,7 +373,7 @@ VelocityBaseMotionBCState
 .. autoclass:: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 VelocityBC
 ~~~~~~~~~~
@@ -381,7 +381,7 @@ VelocityBC
 .. autoclass:: abaqus.BoundaryCondition.VelocityBC.VelocityBC
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 VelocityBCState
 ~~~~~~~~~~~~~~~
@@ -389,4 +389,4 @@ VelocityBCState
 .. autoclass:: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::

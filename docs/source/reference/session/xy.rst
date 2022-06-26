@@ -11,7 +11,7 @@ Create XY Objects in Session
 .. autoclass:: abaqus.XY.XYSession.XYSession
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 
 Object features
@@ -23,7 +23,7 @@ XY features for Session
 .. autoclass:: abaqus.XY.XYSessionBase.XYSessionBase
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Area
 ~~~~
@@ -31,7 +31,7 @@ Area
 .. autoclass:: abaqus.XY.Area.Area
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AreaStyle
 ~~~~~~~~~
@@ -39,7 +39,7 @@ AreaStyle
 .. autoclass:: abaqus.XY.AreaStyle.AreaStyle
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Axis
 ~~~~
@@ -47,7 +47,7 @@ Axis
 .. autoclass:: abaqus.XY.Axis.Axis
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AxisArray
 ~~~~~~~~~
@@ -55,7 +55,7 @@ AxisArray
 .. autoclass:: abaqus.XY.AxisArray.AxisArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AxisData
 ~~~~~~~~
@@ -63,7 +63,7 @@ AxisData
 .. autoclass:: abaqus.XY.AxisData.AxisData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Chart
 ~~~~~
@@ -71,7 +71,7 @@ Chart
 .. autoclass:: abaqus.XY.Chart.Chart
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DefaultChartOptions
 ~~~~~~~~~~~~~~~~~~~
@@ -79,7 +79,7 @@ DefaultChartOptions
 .. autoclass:: abaqus.XY.DefaultChartOptions.DefaultChartOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DefaultPlot
 ~~~~~~~~~~~
@@ -87,7 +87,7 @@ DefaultPlot
 .. autoclass:: abaqus.XY.DefaultPlot.DefaultPlot
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Legend
 ~~~~~~
@@ -95,7 +95,7 @@ Legend
 .. autoclass:: abaqus.XY.Legend.Legend
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 LineStyle
 ~~~~~~~~~
@@ -103,7 +103,7 @@ LineStyle
 .. autoclass:: abaqus.XY.LineStyle.LineStyle
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 QuantityType
 ~~~~~~~~~~~~
@@ -111,7 +111,7 @@ QuantityType
 .. autoclass:: abaqus.XY.QuantityType.QuantityType
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SymbolStyle
 ~~~~~~~~~~~
@@ -119,7 +119,7 @@ SymbolStyle
 .. autoclass:: abaqus.XY.SymbolStyle.SymbolStyle
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TextStyle
 ~~~~~~~~~
@@ -127,7 +127,7 @@ TextStyle
 .. autoclass:: abaqus.XY.TextStyle.TextStyle
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Title
 ~~~~~
@@ -135,7 +135,7 @@ Title
 .. autoclass:: abaqus.XY.Title.Title
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 writeXYReport
 ~~~~~~~~~~~~~
@@ -143,7 +143,7 @@ writeXYReport
 .. autoclass:: abaqus.XY.writeXYReport.writeXYReport
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 XYCurve
 ~~~~~~~
@@ -151,7 +151,7 @@ XYCurve
 .. autoclass:: abaqus.XY.XYCurve.XYCurve
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 XYCurveArray
 ~~~~~~~~~~~~
@@ -159,7 +159,7 @@ XYCurveArray
 .. autoclass:: abaqus.XY.XYCurveArray.XYCurveArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 XYData
 ~~~~~~
@@ -167,7 +167,7 @@ XYData
 .. autoclass:: abaqus.XY.XYData.XYData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 XYPlot
 ~~~~~~
@@ -175,7 +175,7 @@ XYPlot
 .. autoclass:: abaqus.XY.XYPlot.XYPlot
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 XYPlotBase
 ~~~~~~~~~~
@@ -183,7 +183,7 @@ XYPlotBase
 .. autoclass:: abaqus.XY.XYPlotBase.XYPlotBase
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 XYReportOptions
 ~~~~~~~~~~~~~~~
@@ -191,5 +191,5 @@ XYReportOptions
 .. autoclass:: abaqus.XY.XYReportOptions.XYReportOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

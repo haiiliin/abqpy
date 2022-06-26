@@ -24,7 +24,7 @@ Annotation
 .. autoclass:: abaqus.Annotation.Annotation.Annotation
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AnnotationsToPlotArray
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -32,7 +32,7 @@ AnnotationsToPlotArray
 .. autoclass:: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AnnotationViewport
 ~~~~~~~~~~~~~~~~~~
@@ -40,7 +40,7 @@ AnnotationViewport
 .. autoclass:: abaqus.Annotation.AnnotationViewport.AnnotationViewport
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Arrow
 ~~~~~
@@ -48,7 +48,7 @@ Arrow
 .. autoclass:: abaqus.Annotation.Arrow.Arrow
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Text
 ~~~~

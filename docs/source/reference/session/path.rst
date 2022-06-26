@@ -11,7 +11,7 @@ Create paths in Session
 .. autoclass:: abaqus.PathAndProbe.PathSession.PathSession
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 
 Create free bodies in Session
@@ -20,7 +20,7 @@ Create free bodies in Session
 .. autoclass:: abaqus.PathAndProbe.FreeBody.FreeBody
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Object features
 ---------------
@@ -31,7 +31,7 @@ CurrentProbeValues
 .. autoclass:: abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 NodeQuery
 ~~~~~~~~~
@@ -39,7 +39,7 @@ NodeQuery
 .. autoclass:: abaqus.PathAndProbe.NodeQuery.NodeQuery
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Path
 ~~~~
@@ -47,7 +47,7 @@ Path
 .. autoclass:: abaqus.PathAndProbe.Path.Path
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ProbeOptions
 ~~~~~~~~~~~~
@@ -55,7 +55,7 @@ ProbeOptions
 .. autoclass:: abaqus.PathAndProbe.ProbeOptions.ProbeOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ProbeReport
 ~~~~~~~~~~~
@@ -63,7 +63,7 @@ ProbeReport
 .. autoclass:: abaqus.PathAndProbe.ProbeReport.ProbeReport
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SelectedProbeValues
 ~~~~~~~~~~~~~~~~~~~
@@ -71,7 +71,7 @@ SelectedProbeValues
 .. autoclass:: abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Spectrum
 ~~~~~~~~
@@ -79,7 +79,7 @@ Spectrum
 .. autoclass:: abaqus.PathAndProbe.Spectrum.Spectrum
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Stream
 ~~~~~~
@@ -87,5 +87,5 @@ Stream
 .. autoclass:: abaqus.PathAndProbe.Stream.Stream
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

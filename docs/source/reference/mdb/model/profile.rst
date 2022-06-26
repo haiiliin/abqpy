@@ -19,7 +19,7 @@ In Odb
 .. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 
 Object features
@@ -31,7 +31,7 @@ Profile
 .. autoclass:: abaqus.BeamSectionProfile.Profile.Profile
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ArbitraryProfile
 ~~~~~~~~~~~~~~~~
@@ -39,7 +39,7 @@ ArbitraryProfile
 .. autoclass:: abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BoxProfile
 ~~~~~~~~~~
@@ -47,7 +47,7 @@ BoxProfile
 .. autoclass:: abaqus.BeamSectionProfile.BoxProfile.BoxProfile
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CircularProfile
 ~~~~~~~~~~~~~~~
@@ -55,7 +55,7 @@ CircularProfile
 .. autoclass:: abaqus.BeamSectionProfile.CircularProfile.CircularProfile
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 GeneralizedProfile
 ~~~~~~~~~~~~~~~~~~
@@ -63,7 +63,7 @@ GeneralizedProfile
 .. autoclass:: abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HexagonalProfile
 ~~~~~~~~~~~~~~~~
@@ -71,7 +71,7 @@ HexagonalProfile
 .. autoclass:: abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 IProfile
 ~~~~~~~~
@@ -79,7 +79,7 @@ IProfile
 .. autoclass:: abaqus.BeamSectionProfile.IProfile.IProfile
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 LProfile
 ~~~~~~~~
@@ -87,7 +87,7 @@ LProfile
 .. autoclass:: abaqus.BeamSectionProfile.LProfile.LProfile
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PipeProfile
 ~~~~~~~~~~~
@@ -95,7 +95,7 @@ PipeProfile
 .. autoclass:: abaqus.BeamSectionProfile.PipeProfile.PipeProfile
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RectangularProfile
 ~~~~~~~~~~~~~~~~~~
@@ -103,7 +103,7 @@ RectangularProfile
 .. autoclass:: abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TProfile
 ~~~~~~~~
@@ -111,7 +111,7 @@ TProfile
 .. autoclass:: abaqus.BeamSectionProfile.TProfile.TProfile
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TrapezoidalProfile
 ~~~~~~~~~~~~~~~~~~
@@ -119,5 +119,5 @@ TrapezoidalProfile
 .. autoclass:: abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

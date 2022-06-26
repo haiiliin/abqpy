@@ -22,7 +22,7 @@ ConstrainedSketch
     :members:
     :inherited-members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 
 CoincidentConstraint
@@ -31,7 +31,7 @@ CoincidentConstraint
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchConstraint.CoincidentConstraint.CoincidentConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConcentricConstraint
 ~~~~~~~~~~~~~~~~~~~~
@@ -39,7 +39,7 @@ ConcentricConstraint
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchConstraint.ConcentricConstraint.ConcentricConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConstrainedSketchConstraint
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -47,7 +47,7 @@ ConstrainedSketchConstraint
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EqualDistanceConstraint
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -55,7 +55,7 @@ EqualDistanceConstraint
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchConstraint.EqualDistanceConstraint.EqualDistanceConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EqualLengthConstraint
 ~~~~~~~~~~~~~~~~~~~~~
@@ -63,7 +63,7 @@ EqualLengthConstraint
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchConstraint.EqualLengthConstraint.EqualLengthConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EqualRadiusConstraint
 ~~~~~~~~~~~~~~~~~~~~~
@@ -71,7 +71,7 @@ EqualRadiusConstraint
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchConstraint.EqualRadiusConstraint.EqualRadiusConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FixedConstraint
 ~~~~~~~~~~~~~~~
@@ -79,7 +79,7 @@ FixedConstraint
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchConstraint.FixedConstraint.FixedConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HorizontalConstraint
 ~~~~~~~~~~~~~~~~~~~~
@@ -87,7 +87,7 @@ HorizontalConstraint
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchConstraint.HorizontalConstraint.HorizontalConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ParallelConstraint
 ~~~~~~~~~~~~~~~~~~
@@ -95,7 +95,7 @@ ParallelConstraint
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchConstraint.ParallelConstraint.ParallelConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PerpendicularConstraint
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -103,7 +103,7 @@ PerpendicularConstraint
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchConstraint.PerpendicularConstraint.PerpendicularConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TangentConstraint
 ~~~~~~~~~~~~~~~~~
@@ -111,7 +111,7 @@ TangentConstraint
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchConstraint.TangentConstraint.TangentConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 VerticalConstraint
 ~~~~~~~~~~~~~~~~~~
@@ -119,7 +119,7 @@ VerticalConstraint
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchConstraint.VerticalConstraint.VerticalConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 
 AngularDimension
@@ -128,7 +128,7 @@ AngularDimension
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchDimension.AngularDimension.AngularDimension
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DistanceDimension
 ~~~~~~~~~~~~~~~~~
@@ -136,7 +136,7 @@ DistanceDimension
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchDimension.DistanceDimension.DistanceDimension
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HorizontalDimension
 ~~~~~~~~~~~~~~~~~~~
@@ -144,7 +144,7 @@ HorizontalDimension
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchDimension.HorizontalDimension.HorizontalDimension
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ObliqueDimension
 ~~~~~~~~~~~~~~~~
@@ -152,7 +152,7 @@ ObliqueDimension
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchDimension.ObliqueDimension.ObliqueDimension
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RadialDimension
 ~~~~~~~~~~~~~~~
@@ -160,7 +160,7 @@ RadialDimension
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchDimension.RadialDimension.RadialDimension
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 VerticalDimension
 ~~~~~~~~~~~~~~~~~
@@ -168,7 +168,7 @@ VerticalDimension
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchDimension.VerticalDimension.VerticalDimension
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConstrainedSketchGeometry
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -176,7 +176,7 @@ ConstrainedSketchGeometry
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConstrainedSketchGeometryArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -184,7 +184,7 @@ ConstrainedSketchGeometryArray
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Arc3Points
 ~~~~~~~~~~
@@ -192,7 +192,7 @@ Arc3Points
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.Arc3Points.Arc3Points
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ArcByCenterEnds
 ~~~~~~~~~~~~~~~
@@ -200,7 +200,7 @@ ArcByCenterEnds
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds.ArcByCenterEnds
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ArcByStartEndTangent
 ~~~~~~~~~~~~~~~~~~~~
@@ -208,7 +208,7 @@ ArcByStartEndTangent
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.ArcByStartEndTangent.ArcByStartEndTangent
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CircleByCenterPerimeter
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -216,7 +216,7 @@ CircleByCenterPerimeter
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.CircleByCenterPerimeter.CircleByCenterPerimeter
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConstructionCircleByCenterPerimeter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -224,7 +224,7 @@ ConstructionCircleByCenterPerimeter
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.ConstructionCircleByCenterPerimeter.ConstructionCircleByCenterPerimeter
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConstructionLine
 ~~~~~~~~~~~~~~~~
@@ -232,7 +232,7 @@ ConstructionLine
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.ConstructionLine.ConstructionLine
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EllipseByCenterPerimeter
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -240,7 +240,7 @@ EllipseByCenterPerimeter
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.EllipseByCenterPerimeter.EllipseByCenterPerimeter
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FilletByRadius
 ~~~~~~~~~~~~~~
@@ -248,7 +248,7 @@ FilletByRadius
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.FilletByRadius.FilletByRadius
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 getPointAtDistance
 ~~~~~~~~~~~~~~~~~~
@@ -256,7 +256,7 @@ getPointAtDistance
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.getPointAtDistance.getPointAtDistance
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Line
 ~~~~
@@ -264,7 +264,7 @@ Line
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.Line.Line
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Spline
 ~~~~~~
@@ -272,7 +272,7 @@ Spline
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.Spline.Spline
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Spot
 ~~~~
@@ -280,7 +280,7 @@ Spot
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.Spot.Spot
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 
 ConstrainedSketcherOptions
@@ -289,7 +289,7 @@ ConstrainedSketcherOptions
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConstrainedSketchImageOptions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -297,7 +297,7 @@ ConstrainedSketchImageOptions
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchImageOptions.ConstrainedSketchImageOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConstrainedSketchOptions
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -305,7 +305,7 @@ ConstrainedSketchOptions
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Parameter
 ~~~~~~~~~
@@ -313,7 +313,7 @@ Parameter
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchParameter.Parameter.Parameter
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 
 ConstrainedSketchVertex
@@ -322,7 +322,7 @@ ConstrainedSketchVertex
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConstrainedSketchVertexArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -330,7 +330,7 @@ ConstrainedSketchVertexArray
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexArray.ConstrainedSketchVertexArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Spot
 ~~~~
@@ -338,4 +338,4 @@ Spot
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchVertex.Spot.Spot
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::

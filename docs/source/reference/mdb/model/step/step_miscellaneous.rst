@@ -13,7 +13,7 @@ CompositeDamping
 .. autoclass:: abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CompositeDampingComponent
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -21,7 +21,7 @@ CompositeDampingComponent
 .. autoclass:: abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CompositeDampingComponentArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -29,7 +29,7 @@ CompositeDampingComponentArray
 .. autoclass:: abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponentArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Control
 ~~~~~~~
@@ -37,7 +37,7 @@ Control
 .. autoclass:: abaqus.StepMiscellaneous.Control.Control
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DirectDamping
 ~~~~~~~~~~~~~
@@ -45,7 +45,7 @@ DirectDamping
 .. autoclass:: abaqus.StepMiscellaneous.DirectDamping.DirectDamping
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DirectDampingByFrequency
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -53,7 +53,7 @@ DirectDampingByFrequency
 .. autoclass:: abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DirectDampingByFrequencyComponent
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,7 +61,7 @@ DirectDampingByFrequencyComponent
 .. autoclass:: abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DirectDampingByFrequencyComponentArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -69,7 +69,7 @@ DirectDampingByFrequencyComponentArray
 .. autoclass:: abaqus.StepMiscellaneous.DirectDampingByFrequencyComponentArray.DirectDampingByFrequencyComponentArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DirectDampingComponent
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -77,7 +77,7 @@ DirectDampingComponent
 .. autoclass:: abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DirectDampingComponentArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -85,7 +85,7 @@ DirectDampingComponentArray
 .. autoclass:: abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponentArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EmagTimeHarmonicFrequency
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -93,7 +93,7 @@ EmagTimeHarmonicFrequency
 .. autoclass:: abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EmagTimeHarmonicFrequencyArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -101,7 +101,7 @@ EmagTimeHarmonicFrequencyArray
 .. autoclass:: abaqus.StepMiscellaneous.EmagTimeHarmonicFrequencyArray.EmagTimeHarmonicFrequencyArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MassScaling
 ~~~~~~~~~~~
@@ -109,7 +109,7 @@ MassScaling
 .. autoclass:: abaqus.StepMiscellaneous.MassScaling.MassScaling
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MassScalingArray
 ~~~~~~~~~~~~~~~~
@@ -117,7 +117,7 @@ MassScalingArray
 .. autoclass:: abaqus.StepMiscellaneous.MassScalingArray.MassScalingArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RandomResponseFrequency
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -125,7 +125,7 @@ RandomResponseFrequency
 .. autoclass:: abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RandomResponseFrequencyArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -133,7 +133,7 @@ RandomResponseFrequencyArray
 .. autoclass:: abaqus.StepMiscellaneous.RandomResponseFrequencyArray.RandomResponseFrequencyArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RayleighDamping
 ~~~~~~~~~~~~~~~
@@ -141,7 +141,7 @@ RayleighDamping
 .. autoclass:: abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RayleighDampingByFrequency
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -149,7 +149,7 @@ RayleighDampingByFrequency
 .. autoclass:: abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RayleighDampingByFrequencyComponent
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -157,7 +157,7 @@ RayleighDampingByFrequencyComponent
 .. autoclass:: abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RayleighDampingByFrequencyComponentArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -165,7 +165,7 @@ RayleighDampingByFrequencyComponentArray
 .. autoclass:: abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponentArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RayleighDampingComponent
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -173,7 +173,7 @@ RayleighDampingComponent
 .. autoclass:: abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RayleighDampingComponentArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -181,7 +181,7 @@ RayleighDampingComponentArray
 .. autoclass:: abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponentArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ResponseSpectrumComponent
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -189,7 +189,7 @@ ResponseSpectrumComponent
 .. autoclass:: abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ResponseSpectrumComponentArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -197,7 +197,7 @@ ResponseSpectrumComponentArray
 .. autoclass:: abaqus.StepMiscellaneous.ResponseSpectrumComponentArray.ResponseSpectrumComponentArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SolverControl
 ~~~~~~~~~~~~~
@@ -205,7 +205,7 @@ SolverControl
 .. autoclass:: abaqus.StepMiscellaneous.SolverControl.SolverControl
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SteadyStateDirectFrequency
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -213,7 +213,7 @@ SteadyStateDirectFrequency
 .. autoclass:: abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SteadyStateDirectFrequencyArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -221,7 +221,7 @@ SteadyStateDirectFrequencyArray
 .. autoclass:: abaqus.StepMiscellaneous.SteadyStateDirectFrequencyArray.SteadyStateDirectFrequencyArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SteadyStateModalFrequency
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -229,7 +229,7 @@ SteadyStateModalFrequency
 .. autoclass:: abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SteadyStateModalFrequencyArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -237,7 +237,7 @@ SteadyStateModalFrequencyArray
 .. autoclass:: abaqus.StepMiscellaneous.SteadyStateModalFrequencyArray.SteadyStateModalFrequencyArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SteadyStateSubspaceFrequency
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -245,7 +245,7 @@ SteadyStateSubspaceFrequency
 .. autoclass:: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SteadyStateSubspaceFrequencyArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -253,7 +253,7 @@ SteadyStateSubspaceFrequencyArray
 .. autoclass:: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequencyArray.SteadyStateSubspaceFrequencyArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StructuralDamping
 ~~~~~~~~~~~~~~~~~
@@ -261,7 +261,7 @@ StructuralDamping
 .. autoclass:: abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StructuralDampingByFrequency
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -269,7 +269,7 @@ StructuralDampingByFrequency
 .. autoclass:: abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StructuralDampingByFrequencyComponent
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -277,7 +277,7 @@ StructuralDampingByFrequencyComponent
 .. autoclass:: abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StructuralDampingByFrequencyComponentArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -285,7 +285,7 @@ StructuralDampingByFrequencyComponentArray
 .. autoclass:: abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponentArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StructuralDampingComponent
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -293,7 +293,7 @@ StructuralDampingComponent
 .. autoclass:: abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 StructuralDampingComponentArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -301,7 +301,7 @@ StructuralDampingComponentArray
 .. autoclass:: abaqus.StepMiscellaneous.StructuralDampingComponentArray.StructuralDampingComponentArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SubstructureGenerateFrequency
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -309,7 +309,7 @@ SubstructureGenerateFrequency
 .. autoclass:: abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SubstructureGenerateFrequencyArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -317,7 +317,7 @@ SubstructureGenerateFrequencyArray
 .. autoclass:: abaqus.StepMiscellaneous.SubstructureGenerateFrequencyArray.SubstructureGenerateFrequencyArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SubstructureGenerateModes
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -325,7 +325,7 @@ SubstructureGenerateModes
 .. autoclass:: abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SubstructureGenerateModesArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -333,5 +333,5 @@ SubstructureGenerateModesArray
 .. autoclass:: abaqus.StepMiscellaneous.SubstructureGenerateModesArray.SubstructureGenerateModesArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

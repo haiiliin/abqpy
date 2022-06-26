@@ -20,7 +20,7 @@ Crack
 .. autoclass:: abaqus.EngineeringFeature.Crack.Crack
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Fastener
 ~~~~~~~~
@@ -28,7 +28,7 @@ Fastener
 .. autoclass:: abaqus.EngineeringFeature.Fastener.Fastener
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Inertia
 ~~~~~~~
@@ -36,7 +36,7 @@ Inertia
 .. autoclass:: abaqus.EngineeringFeature.Inertia.Inertia
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SpringDashpot
 ~~~~~~~~~~~~~
@@ -44,7 +44,7 @@ SpringDashpot
 .. autoclass:: abaqus.EngineeringFeature.SpringDashpot.SpringDashpot
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AssembledFastener
 ~~~~~~~~~~~~~~~~~
@@ -52,7 +52,7 @@ AssembledFastener
 .. autoclass:: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ContourIntegral
 ~~~~~~~~~~~~~~~
@@ -60,7 +60,7 @@ ContourIntegral
 .. autoclass:: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DebondVCCT
 ~~~~~~~~~~
@@ -68,7 +68,7 @@ DebondVCCT
 .. autoclass:: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DiscreteFastener
 ~~~~~~~~~~~~~~~~
@@ -76,7 +76,7 @@ DiscreteFastener
 .. autoclass:: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EngineeringFeatureBase
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -84,7 +84,7 @@ EngineeringFeatureBase
 .. autoclass:: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HeatCapacitance
 ~~~~~~~~~~~~~~~
@@ -92,7 +92,7 @@ HeatCapacitance
 .. autoclass:: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 NonstructuralMass
 ~~~~~~~~~~~~~~~~~
@@ -100,7 +100,7 @@ NonstructuralMass
 .. autoclass:: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PointFastener
 ~~~~~~~~~~~~~
@@ -108,7 +108,7 @@ PointFastener
 .. autoclass:: abaqus.EngineeringFeature.PointFastener.PointFastener
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PointMassInertia
 ~~~~~~~~~~~~~~~~
@@ -116,7 +116,7 @@ PointMassInertia
 .. autoclass:: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SpringDashpotToGround
 ~~~~~~~~~~~~~~~~~~~~~
@@ -124,7 +124,7 @@ SpringDashpotToGround
 .. autoclass:: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TwoPointSpringDashpot
 ~~~~~~~~~~~~~~~~~~~~~
@@ -132,7 +132,7 @@ TwoPointSpringDashpot
 .. autoclass:: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 XFEMCrack
 ~~~~~~~~~
@@ -140,4 +140,4 @@ XFEMCrack
 .. autoclass:: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::

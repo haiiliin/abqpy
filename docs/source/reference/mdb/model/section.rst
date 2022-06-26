@@ -38,7 +38,7 @@ Section
     :members:
     :inherited-members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AcousticInfiniteSection
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -46,7 +46,7 @@ AcousticInfiniteSection
 .. autoclass:: abaqus.Section.AcousticInfiniteSection.AcousticInfiniteSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AcousticInterfaceSection
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -54,7 +54,7 @@ AcousticInterfaceSection
 .. autoclass:: abaqus.Section.AcousticInterfaceSection.AcousticInterfaceSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BeamSection
 ~~~~~~~~~~~
@@ -62,7 +62,7 @@ BeamSection
 .. autoclass:: abaqus.Section.BeamSection.BeamSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CohesiveSection
 ~~~~~~~~~~~~~~~
@@ -70,7 +70,7 @@ CohesiveSection
 .. autoclass:: abaqus.Section.CohesiveSection.CohesiveSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CompositeShellSection
 ~~~~~~~~~~~~~~~~~~~~~
@@ -78,7 +78,7 @@ CompositeShellSection
 .. autoclass:: abaqus.Section.CompositeShellSection.CompositeShellSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CompositeSolidSection
 ~~~~~~~~~~~~~~~~~~~~~
@@ -86,7 +86,7 @@ CompositeSolidSection
 .. autoclass:: abaqus.Section.CompositeSolidSection.CompositeSolidSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorSection
 ~~~~~~~~~~~~~~~~
@@ -94,7 +94,7 @@ ConnectorSection
 .. autoclass:: abaqus.Section.ConnectorSection.ConnectorSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EulerianSection
 ~~~~~~~~~~~~~~~
@@ -102,7 +102,7 @@ EulerianSection
 .. autoclass:: abaqus.Section.EulerianSection.EulerianSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 GasketSection
 ~~~~~~~~~~~~~
@@ -110,7 +110,7 @@ GasketSection
 .. autoclass:: abaqus.Section.GasketSection.GasketSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 GeneralStiffnessSection
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -118,7 +118,7 @@ GeneralStiffnessSection
 .. autoclass:: abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 GeometryShellSection
 ~~~~~~~~~~~~~~~~~~~~
@@ -126,7 +126,7 @@ GeometryShellSection
 .. autoclass:: abaqus.Section.GeometryShellSection.GeometryShellSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HomogeneousShellSection
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -134,7 +134,7 @@ HomogeneousShellSection
 .. autoclass:: abaqus.Section.HomogeneousShellSection.HomogeneousShellSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 HomogeneousSolidSection
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -142,7 +142,7 @@ HomogeneousSolidSection
 .. autoclass:: abaqus.Section.HomogeneousSolidSection.HomogeneousSolidSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 LayerProperties
 ~~~~~~~~~~~~~~~
@@ -150,7 +150,7 @@ LayerProperties
 .. autoclass:: abaqus.Section.LayerProperties.LayerProperties
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 LayerPropertiesArray
 ~~~~~~~~~~~~~~~~~~~~
@@ -158,7 +158,7 @@ LayerPropertiesArray
 .. autoclass:: abaqus.Section.LayerPropertiesArray.LayerPropertiesArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MembraneSection
 ~~~~~~~~~~~~~~~
@@ -166,7 +166,7 @@ MembraneSection
 .. autoclass:: abaqus.Section.MembraneSection.MembraneSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MPCSection
 ~~~~~~~~~~
@@ -174,7 +174,7 @@ MPCSection
 .. autoclass:: abaqus.Section.MPCSection.MPCSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PEGSection
 ~~~~~~~~~~
@@ -182,7 +182,7 @@ PEGSection
 .. autoclass:: abaqus.Section.PEGSection.PEGSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RebarLayers
 ~~~~~~~~~~~
@@ -190,7 +190,7 @@ RebarLayers
 .. autoclass:: abaqus.Section.RebarLayers.RebarLayers
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SectionLayer
 ~~~~~~~~~~~~
@@ -198,7 +198,7 @@ SectionLayer
 .. autoclass:: abaqus.Section.SectionLayer.SectionLayer
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SectionLayerArray
 ~~~~~~~~~~~~~~~~~
@@ -206,12 +206,12 @@ SectionLayerArray
 .. autoclass:: abaqus.Section.SectionLayerArray.SectionLayerArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 .. autoclass:: abaqus.Section.SectionOdb.SectionOdb
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ShellSection
 ~~~~~~~~~~~~
@@ -219,7 +219,7 @@ ShellSection
 .. autoclass:: abaqus.Section.ShellSection.ShellSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SolidSection
 ~~~~~~~~~~~~
@@ -227,7 +227,7 @@ SolidSection
 .. autoclass:: abaqus.Section.SolidSection.SolidSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SurfaceSection
 ~~~~~~~~~~~~~~
@@ -235,7 +235,7 @@ SurfaceSection
 .. autoclass:: abaqus.Section.SurfaceSection.SurfaceSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TransverseShearBeam
 ~~~~~~~~~~~~~~~~~~~
@@ -243,7 +243,7 @@ TransverseShearBeam
 .. autoclass:: abaqus.Section.TransverseShearBeam.TransverseShearBeam
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TransverseShearShell
 ~~~~~~~~~~~~~~~~~~~~
@@ -251,7 +251,7 @@ TransverseShearShell
 .. autoclass:: abaqus.Section.TransverseShearShell.TransverseShearShell
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TrussSection
 ~~~~~~~~~~~~
@@ -259,5 +259,5 @@ TrussSection
 .. autoclass:: abaqus.Section.TrussSection.TrussSection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

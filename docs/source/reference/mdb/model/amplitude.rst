@@ -30,7 +30,7 @@ Amplitude
 .. autoclass:: abaqus.Amplitude.Amplitude.Amplitude
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ActuatorAmplitude
 ~~~~~~~~~~~~~~~~~
@@ -38,7 +38,7 @@ ActuatorAmplitude
 .. autoclass:: abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 BaselineCorrection
 ~~~~~~~~~~~~~~~~~~
@@ -46,7 +46,7 @@ BaselineCorrection
 .. autoclass:: abaqus.Amplitude.BaselineCorrection.BaselineCorrection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Correlation
 ~~~~~~~~~~~
@@ -54,7 +54,7 @@ Correlation
 .. autoclass:: abaqus.Amplitude.Correlation.Correlation
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CorrelationArray
 ~~~~~~~~~~~~~~~~
@@ -62,7 +62,7 @@ CorrelationArray
 .. autoclass:: abaqus.Amplitude.CorrelationArray.CorrelationArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DecayAmplitude
 ~~~~~~~~~~~~~~
@@ -70,7 +70,7 @@ DecayAmplitude
 .. autoclass:: abaqus.Amplitude.DecayAmplitude.DecayAmplitude
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EquallySpacedAmplitude
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -78,7 +78,7 @@ EquallySpacedAmplitude
 .. autoclass:: abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ModulatedAmplitude
 ~~~~~~~~~~~~~~~~~~
@@ -86,7 +86,7 @@ ModulatedAmplitude
 .. autoclass:: abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PeriodicAmplitude
 ~~~~~~~~~~~~~~~~~
@@ -94,7 +94,7 @@ PeriodicAmplitude
 .. autoclass:: abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Property
 ~~~~~~~~
@@ -102,7 +102,7 @@ Property
 .. autoclass:: abaqus.Amplitude.Property.Property
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PsdDefinition
 ~~~~~~~~~~~~~
@@ -110,7 +110,7 @@ PsdDefinition
 .. autoclass:: abaqus.Amplitude.PsdDefinition.PsdDefinition
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SmoothStepAmplitude
 ~~~~~~~~~~~~~~~~~~~
@@ -118,7 +118,7 @@ SmoothStepAmplitude
 .. autoclass:: abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SolutionDependentAmplitude
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -126,7 +126,7 @@ SolutionDependentAmplitude
 .. autoclass:: abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 SpectrumAmplitude
 ~~~~~~~~~~~~~~~~~
@@ -134,7 +134,7 @@ SpectrumAmplitude
 .. autoclass:: abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TabularAmplitude
 ~~~~~~~~~~~~~~~~
@@ -142,4 +142,4 @@ TabularAmplitude
 .. autoclass:: abaqus.Amplitude.TabularAmplitude.TabularAmplitude
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::

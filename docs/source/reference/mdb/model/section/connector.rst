@@ -21,7 +21,7 @@ CDCTerm
 .. autoclass:: abaqus.Connector.CDCTerm.CDCTerm
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 CDCTermArray
 ~~~~~~~~~~~~
@@ -29,7 +29,7 @@ CDCTermArray
 .. autoclass:: abaqus.Connector.CDCTermArray.CDCTermArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorBehaviorOption
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -37,7 +37,7 @@ ConnectorBehaviorOption
 .. autoclass:: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorBehaviorOptionArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -45,7 +45,7 @@ ConnectorBehaviorOptionArray
 .. autoclass:: abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorDamage
 ~~~~~~~~~~~~~~~
@@ -53,7 +53,7 @@ ConnectorDamage
 .. autoclass:: abaqus.Connector.ConnectorDamage.ConnectorDamage
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorDamping
 ~~~~~~~~~~~~~~~~
@@ -61,7 +61,7 @@ ConnectorDamping
 .. autoclass:: abaqus.Connector.ConnectorDamping.ConnectorDamping
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorElasticity
 ~~~~~~~~~~~~~~~~~~~
@@ -69,7 +69,7 @@ ConnectorElasticity
 .. autoclass:: abaqus.Connector.ConnectorElasticity.ConnectorElasticity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorFailure
 ~~~~~~~~~~~~~~~~
@@ -77,7 +77,7 @@ ConnectorFailure
 .. autoclass:: abaqus.Connector.ConnectorFailure.ConnectorFailure
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorFriction
 ~~~~~~~~~~~~~~~~~
@@ -85,7 +85,7 @@ ConnectorFriction
 .. autoclass:: abaqus.Connector.ConnectorFriction.ConnectorFriction
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorLock
 ~~~~~~~~~~~~~
@@ -93,7 +93,7 @@ ConnectorLock
 .. autoclass:: abaqus.Connector.ConnectorLock.ConnectorLock
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorOptions
 ~~~~~~~~~~~~~~~~
@@ -101,7 +101,7 @@ ConnectorOptions
 .. autoclass:: abaqus.Connector.ConnectorOptions.ConnectorOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorPlasticity
 ~~~~~~~~~~~~~~~~~~~
@@ -109,7 +109,7 @@ ConnectorPlasticity
 .. autoclass:: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorPotential
 ~~~~~~~~~~~~~~~~~~
@@ -117,7 +117,7 @@ ConnectorPotential
 .. autoclass:: abaqus.Connector.ConnectorPotential.ConnectorPotential
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorPotentialArray
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -125,7 +125,7 @@ ConnectorPotentialArray
 .. autoclass:: abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ConnectorStop
 ~~~~~~~~~~~~~
@@ -133,7 +133,7 @@ ConnectorStop
 .. autoclass:: abaqus.Connector.ConnectorStop.ConnectorStop
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DerivedComponent
 ~~~~~~~~~~~~~~~~
@@ -141,7 +141,7 @@ DerivedComponent
 .. autoclass:: abaqus.Connector.DerivedComponent.DerivedComponent
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TangentialBehavior
 ~~~~~~~~~~~~~~~~~~
@@ -149,4 +149,4 @@ TangentialBehavior
 .. autoclass:: abaqus.Connector.TangentialBehavior.TangentialBehavior
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::

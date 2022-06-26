@@ -14,7 +14,7 @@ Feature
 .. autoclass:: abaqus.Feature.Feature.Feature
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 FeatureOptions
 ~~~~~~~~~~~~~~
@@ -22,4 +22,4 @@ FeatureOptions
 .. autoclass:: abaqus.Feature.FeatureOptions.FeatureOptions
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::

@@ -10,7 +10,7 @@ Creat table collections for Assembly
 .. autoclass:: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Creat table collections for Model
 ------------------------------------
@@ -18,7 +18,7 @@ Creat table collections for Model
 .. autoclass:: abaqus.TableCollection.TableCollectionModel.TableCollectionModel
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Object features
 ---------------
@@ -29,7 +29,7 @@ ActivateElements
 .. autoclass:: abaqus.TableCollection.ActivateElements.ActivateElements
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DataTable
 ~~~~~~~~~
@@ -37,7 +37,7 @@ DataTable
 .. autoclass:: abaqus.TableCollection.DataTable.DataTable
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DataTableArray
 ~~~~~~~~~~~~~~
@@ -45,7 +45,7 @@ DataTableArray
 .. autoclass:: abaqus.TableCollection.DataTableArray.DataTableArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ElementProgressiveActivation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -53,7 +53,7 @@ ElementProgressiveActivation
 .. autoclass:: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EventSeries
 ~~~~~~~~~~~
@@ -61,7 +61,7 @@ EventSeries
 .. autoclass:: abaqus.TableCollection.EventSeries.EventSeries
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EventSeriesData
 ~~~~~~~~~~~~~~~
@@ -69,7 +69,7 @@ EventSeriesData
 .. autoclass:: abaqus.TableCollection.EventSeriesData.EventSeriesData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EventSeriesType
 ~~~~~~~~~~~~~~~
@@ -77,7 +77,7 @@ EventSeriesType
 .. autoclass:: abaqus.TableCollection.EventSeriesType.EventSeriesType
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ParameterColumn
 ~~~~~~~~~~~~~~~
@@ -85,7 +85,7 @@ ParameterColumn
 .. autoclass:: abaqus.TableCollection.ParameterColumn.ParameterColumn
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ParameterColumnArray
 ~~~~~~~~~~~~~~~~~~~~
@@ -93,7 +93,7 @@ ParameterColumnArray
 .. autoclass:: abaqus.TableCollection.ParameterColumnArray.ParameterColumnArray
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ParameterTable
 ~~~~~~~~~~~~~~
@@ -101,7 +101,7 @@ ParameterTable
 .. autoclass:: abaqus.TableCollection.ParameterTable.ParameterTable
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PropertyTable
 ~~~~~~~~~~~~~
@@ -109,7 +109,7 @@ PropertyTable
 .. autoclass:: abaqus.TableCollection.PropertyTable.PropertyTable
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 PropertyTableData
 ~~~~~~~~~~~~~~~~~
@@ -117,7 +117,7 @@ PropertyTableData
 .. autoclass:: abaqus.TableCollection.PropertyTableData.PropertyTableData
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 TableCollection
 ~~~~~~~~~~~~~~~
@@ -125,5 +125,5 @@ TableCollection
 .. autoclass:: abaqus.TableCollection.TableCollection.TableCollection
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 

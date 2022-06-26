@@ -24,7 +24,7 @@ Part
     :members:
     :inherited-members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AcisFile
 ~~~~~~~~
@@ -32,7 +32,7 @@ AcisFile
 .. autoclass:: abaqus.Part.AcisFile.AcisFile
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AcisMdb
 ~~~~~~~
@@ -40,7 +40,7 @@ AcisMdb
 .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Feature
 ~~~~~~~
@@ -48,4 +48,4 @@ Feature
 .. autoclass:: abaqus.Part.Feature.Feature
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::

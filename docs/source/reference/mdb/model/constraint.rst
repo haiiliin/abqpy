@@ -21,7 +21,7 @@ Constraint
 .. autoclass:: abaqus.Constraint.Constraint.Constraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 AdjustPoints
 ~~~~~~~~~~~~
@@ -29,7 +29,7 @@ AdjustPoints
 .. autoclass:: abaqus.Constraint.AdjustPoints.AdjustPoints
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 
 Coupling
@@ -38,7 +38,7 @@ Coupling
 .. autoclass:: abaqus.Constraint.Coupling.Coupling
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 DisplayBody
 ~~~~~~~~~~~
@@ -46,7 +46,7 @@ DisplayBody
 .. autoclass:: abaqus.Constraint.DisplayBody.DisplayBody
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 EmbeddedRegion
 ~~~~~~~~~~~~~~
@@ -54,7 +54,7 @@ EmbeddedRegion
 .. autoclass:: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Equation
 ~~~~~~~~
@@ -62,7 +62,7 @@ Equation
 .. autoclass:: abaqus.Constraint.Equation.Equation
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 MultipointConstraint
 ~~~~~~~~~~~~~~~~~~~~
@@ -70,7 +70,7 @@ MultipointConstraint
 .. autoclass:: abaqus.Constraint.MultipointConstraint.MultipointConstraint
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 RigidBody
 ~~~~~~~~~
@@ -78,7 +78,7 @@ RigidBody
 .. autoclass:: abaqus.Constraint.RigidBody.RigidBody
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 ShellSolidCoupling
 ~~~~~~~~~~~~~~~~~~
@@ -86,7 +86,7 @@ ShellSolidCoupling
 .. autoclass:: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
 
 Tie
 ~~~
@@ -94,4 +94,4 @@ Tie
 .. autoclass:: abaqus.Constraint.Tie.Tie
     :members:
 
-    .. autoclassdoc::
+    .. autoclasstoc::
