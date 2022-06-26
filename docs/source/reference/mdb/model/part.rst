@@ -24,6 +24,7 @@ Part
 
 .. autoclass:: abaqus.Part.Part.Part
     :members:
+    :inherited-members:
 
     .. autoclasstoc::
 

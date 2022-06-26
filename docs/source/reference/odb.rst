@@ -12,6 +12,7 @@ Odb
 
 .. autoclass:: abaqus.Odb.Odb.Odb
     :members:
+    :inherited-members:
 
     .. autoclasstoc::
 

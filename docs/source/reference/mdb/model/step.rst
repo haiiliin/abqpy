@@ -26,6 +26,7 @@ Step
 
 .. autoclass:: abaqus.Step.Step.Step
     :members:
+    :inherited-members:
 
     .. autoclasstoc::
 

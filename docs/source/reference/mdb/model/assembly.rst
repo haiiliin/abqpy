@@ -23,6 +23,7 @@ Assembly
 
 .. autoclass:: abaqus.Assembly.Assembly.Assembly
     :members:
+    :inherited-members:
 
     .. autoclasstoc::
 

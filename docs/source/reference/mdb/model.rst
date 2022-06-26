@@ -35,6 +35,7 @@ Create models
 --------------
 
 .. autoclass:: abaqus.Mdb.Mdb.Mdb
+    :noindex:
     :members:
 
     .. autoclasstoc::
@@ -48,6 +49,7 @@ Model
 
 .. autoclass:: abaqus.Model.Model.Model
     :members:
+    :inherited-members:
 
     .. autoclasstoc::
 
