@@ -414,7 +414,7 @@
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb</span><span class="p">.</span><span class="n">save</span><span class="p">();</span><span class="w"></span>
 </pre></div>
 </div>
-<p>For a full description of the save command, see <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbBase.OdbBase.save" title="abaqus.Odb.OdbBase.OdbBase.save"><code class="xref py py-meth docutils literal notranslate"><span class="pre">save()</span></code></a>.</p>
+<p>For a full description of the save command, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">save()</span></code>.</p>
 </section>
 <section id="writing-model-data">
 <h2>Writing model data<a class="headerlink" href="#writing-model-data" title="Permalink to this headline">#</a></h2>
@@ -451,7 +451,7 @@
 <span class="n">part1</span><span class="p">.</span><span class="n">addNodes</span><span class="p">(</span><span class="n">nodeLabels</span><span class="p">,</span><span class="w"> </span><span class="n">nodeCoor</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;nodes_1&quot;</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
-<p>For a full description of the addNodes command, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">addNodes()</span></code>. After you have created nodes, you can use the NodeSetFromNodeLabels constructor to create a node set from the node labels. For more information, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">NodeSetFromNodeLabels()</span></code>. Similarly, you use the addElements method to add elements to the part using a sequence of element labels, element connectivity, and element type. You can also define an optional element set and an optional section category. For example,</p>
+<p>For a full description of the addNodes command, see <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbPart.OdbPart.addNodes" title="abaqus.Odb.OdbPart.OdbPart.addNodes"><code class="xref py py-meth docutils literal notranslate"><span class="pre">addNodes()</span></code></a>. After you have created nodes, you can use the NodeSetFromNodeLabels constructor to create a node set from the node labels. For more information, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">NodeSetFromNodeLabels()</span></code>. Similarly, you use the addElements method to add elements to the part using a sequence of element labels, element connectivity, and element type. You can also define an optional element set and an optional section category. For example,</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_SequenceInt</span><span class="w"> </span><span class="n">elLabels</span><span class="p">;</span><span class="w"></span>
 <span class="n">elLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span><span class="w"></span>
 <span class="n">elLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">99</span><span class="p">);</span><span class="w"></span>
@@ -469,7 +469,7 @@
 <span class="w">            </span><span class="s">&quot;s4_els&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">shellCat</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
-<p>For a full description of the addElements command, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">addElements()</span></code>.</p>
+<p>For a full description of the addElements command, see <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbPart.OdbPart.addElements" title="abaqus.Odb.OdbPart.OdbPart.addElements"><code class="xref py py-meth docutils literal notranslate"><span class="pre">addElements()</span></code></a>.</p>
 </li>
 <li><p><strong>The RootAssembly object</strong></p>
 <p>The root assembly is created when you create the output database. You access the RootAssembly object using the same syntax as that used for reading from an output database.</p>
@@ -556,7 +556,7 @@
 </div>
 </li>
 <li><p><strong>Section assignments</strong></p>
-<p>You use the SectionAssignment object to assign sections and their associated material properties to regions of the model. SectionAssignment objects are members of the Odb object. For a full description of the assignSection method, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">assignSection()</span></code>.</p>
+<p>You use the SectionAssignment object to assign sections and their associated material properties to regions of the model. SectionAssignment objects are members of the Odb object. For a full description of the assignSection method, see <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbInstance.OdbInstance.assignSection" title="abaqus.Odb.OdbInstance.OdbInstance.assignSection"><code class="xref py py-meth docutils literal notranslate"><span class="pre">assignSection()</span></code></a>.</p>
 <p>All Elements in an Abaqus analysis need to be associated with section and material properties. Section assignments provide the relationship between elements in an Instance object and their section properties. The section properties include the associated material name. To create an element set and assign a section:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_SequenceInt</span><span class="w"> </span><span class="n">setLabels</span><span class="p">;</span><span class="w"></span>
 <span class="n">setLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
