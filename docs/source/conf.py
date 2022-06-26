@@ -129,6 +129,9 @@ numpydoc_show_inherited_class_members = False
 numpydoc_xref_param_type = True
 add_module_names = False
 
+# Figure numbering
+numfig = True
+
 # True to convert the type definitions in the docstrings as references. Defaults to False.
 napoleon_preprocess_types = True
 

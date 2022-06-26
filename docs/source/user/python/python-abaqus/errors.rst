@@ -58,13 +58,14 @@ Each command in the :doc:`references` lists the standard Abaqus Scripting Interf
 - The exception type.
 - The exception message.
 
-For example, Figure 1 shows the layout of a typical exception description in the online documentation.
+For example, :numref:`cmd-int-exception-nls` shows the layout of a typical exception description in the online documentation.
 
+.. _cmd-int-exception-nls:
 .. figure:: /images/cmd-int-exception-nls.png
     :width: 50%
     :align: center
 
-    Figure 1. The layout of a typical exception description in the online documentation.
+    The layout of a typical exception description in the online documentation.
 
 You use the exception type in your error handling routines.
 

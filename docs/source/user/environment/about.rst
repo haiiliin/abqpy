@@ -6,13 +6,14 @@ The Abaqus PDE is a separate application that you can access from within Abaqus/
 
 It is intended primarily for use with scripts that use the Abaqus/CAE graphical user interface (GUI) or kernel commands, including plug-ins, but you can also use it to work on scripts that are unrelated to Abaqus. The Abaqus PDE also enables you to set breakpoints to pause script execution at a particular line in any Python script, including an Abaqus plug-in.
 
-Figure 1 shows a `.guiLog` file in the Abaqus PDE. The script creates an extruded solid rectangular part named box1 and was recorded by logging the actions to complete the task in the Abaqus/CAE user interface.
+:numref:`cmd-pde-nls` shows a `.guiLog` file in the Abaqus PDE. The script creates an extruded solid rectangular part named box1 and was recorded by logging the actions to complete the task in the Abaqus/CAE user interface.
 
+.. _cmd-pde-nls:
 .. figure:: /images/cmd-pde-nls.png
     :width: 100%
     :align: center
 
-    Figure 1. The Abaqus PDE.
+    The Abaqus PDE.
 
 The PDE controls allow you to complete the following tasks:
 

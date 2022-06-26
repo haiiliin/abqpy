@@ -987,13 +987,14 @@ Use the following command to create the corresponding output database:
     
     abaqus job=singleTriangularElementModel
 
-The results from running the script twice using the single triangular-element model, changing the radius of the sphere, and writing the data back to the original output database are shown in Figure 1.
+The results from running the script twice using the single triangular-element model, changing the radius of the sphere, and writing the data back to the original output database are shown in :numref:`cmd-odb-api-acousticviz`
 
+.. _cmd-odb-api-acousticviz:
 .. figure:: /images/cmd-odb-api-acousticviz.png
     :width: 50%
     :align: center
 
-    Figure 1. Displaying the acoustic pressure on several spheres.
+    Displaying the acoustic pressure on several spheres.
     
 This model simulates the response of a sphere in "breathing" mode (a uniform radial expansion/compression mode). The model consists of one triangular ACIN3D3 element. Each node of the element is placed on a coordinate axis at a distance of :math:`1.0` from the origin that serves as the reference point for the infinite element. The acoustic material properties do not have physical significance; the values used are for convenience only. The loading consists of applying an in-phase pressure boundary condition to all the nodes. Under this loading and geometry, the model behaves as a spherical source (an acoustic monopole) radiating in the radial direction only. The acoustic pressure, :math:`p`, and the acoustic far-field pressure, :math:`p_{F A R}`, at a distance :math:`r` from the center of the sphere are
 

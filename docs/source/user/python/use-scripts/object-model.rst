@@ -23,13 +23,14 @@ The object model is an important concept in object-oriented programming. The obj
 
 Abaqus extends Python with approximately 500 additional objects, and there are many relationships between these objects. As a result, the complete Abaqus object model is too complex to illustrate in a single figure.
 
-In general terms the Abaqus object model is divided into the Session, the Mdb, and the Odb objects, as shown in Figure 1.
+In general terms the Abaqus object model is divided into the Session, the Mdb, and the Odb objects, as shown in :numref:`cmd-int-model-overview-nls`
 
+.. _cmd-int-model-overview-nls:
 .. figure:: /images/cmd-int-model-overview-nls.png
     :width: 100%
     :align: center
 
-    Figure 1. The Abaqus object model.
+    The Abaqus object model.
 
 An object in the object model can be one of the following:
 
@@ -47,41 +48,45 @@ An object in the object model can be one of the following:
 
 - **Session**
 
-  Session objects are objects that are not saved between Abaqus/CAE sessions; for example, the objects that define viewports, remote queues, and user-defined views, as shown in Figure 2.
+  Session objects are objects that are not saved between Abaqus/CAE sessions; for example, the objects that define viewports, remote queues, and user-defined views, as shown in :numref:`cmd-int-model-session-nls`
 
+    .. _cmd-int-model-session-nls:
   .. figure:: /images/cmd-int-model-session-nls.png
       :width: 50%
       :align: center
 
-      Figure 2. The Session object model.
+      The Session object model.
 
-  The viewports container is owned by the Session object, as shown in Figure 3.
+  The viewports container is owned by the Session object, as shown in :numref:`cmd-int-model-session-nls`.
 
+  .. cmd-int-model-session-nls:
   .. figure:: /images/cmd-int-model-viewport-nls.png
       :width: 50%
       :align: center
 
-      Figure 3. The Viewport object model.
+      The Viewport object model.
 
 - **Mdb**
   
-  The statement from abaqus import * creates an instance of the Mdb object called mdb. Mdb objects are objects that are saved in a model database and can be recovered between Abaqus/CAE sessions. Mdb objects include the Model object and the Job object. The Model object, in turn, is comprised of Part objects, Section objects, Material objects, Step objects, etc. Figure 4 shows the basic structure of the objects under the Model object. For more information, see The Model object model.
+  The statement from abaqus import * creates an instance of the Mdb object called mdb. Mdb objects are objects that are saved in a model database and can be recovered between Abaqus/CAE sessions. Mdb objects include the Model object and the Job object. The Model object, in turn, is comprised of Part objects, Section objects, Material objects, Step objects, etc. :numref:`cmd-int-model-model-nls` shows the basic structure of the objects under the Model object. For more information, see The Model object model.
 
+  .. _cmd-int-model-model-nls:
   .. figure:: /images/cmd-int-model-model-nls.png
       :width: 50%
       :align: center
 
-      Figure 4. The structure of the objects under the Model object.
+      The structure of the objects under the Model object.
 
 - **Odb**
 
-  Odb objects are saved in an output database and contain both model and results data, as shown in Figure 5.
+  Odb objects are saved in an output database and contain both model and results data, as shown in :numref:`cmd-int-model-odb-nls`.
 
+  .. cmd-int-model-odb-nls:
   .. figure:: /images/cmd-int-model-odb-nls.png
       :width: 100%
       :align: center
 
-      Figure 5. The Odb object model.
+      The Odb object model.
 
   Most of the commands in the Abaqus Scripting Interface begin with either the Session, the Mdb, or the Odb object. For example,
 
@@ -133,26 +138,28 @@ You can also use tab completion when you are accessing an output database from t
 The Model object model
 ----------------------
 
-The Model object contains many objects. Figure 1 and Figure 2 show the most commonly used objects that are contained in the Part and RootAssembly.
+The Model object contains many objects. :numref:`cmd-int-model-overview-nls-2` and :numref:`cmd-int-model-assembly-nls-2` show the most commonly used objects that are contained in the Part and RootAssembly.
 
+.. _cmd-int-model-overview-nls-2:
 .. figure:: /images/cmd-int-model-overview-nls.png
     :width: 100%
     :align: center
 
-    Figure 1. The Part object model.
+    The Part object model.
 
+.. _cmd-int-model-assembly-nls:
 .. figure:: /images/cmd-int-model-assembly-nls.png
     :width: 100%
     :align: center
 
-    Figure 2. The RootAssembly object model.
+    The RootAssembly object model.
 
 The Job object is separate from the Model object. The object model for the Job object is straightforward; the Job object owns no other objects. The Job object refers to a Model object but is not owned by the Model object.
 
 Using the object model
 ----------------------
 
-- Object model figures such as Figure 4 provide important information to the Abaqus Scripting Interface programmer.
+- Object model figures such as :numref:`cmd-int-abstract-nls` provide important information to the Abaqus Scripting Interface programmer.
 
 - The object model describes the relationships between objects. For example, in object-oriented programming terms a geometry object, such as a Cell, Face, Edge, or Vertex object, is said to be owned by the Part object. The Part object, in turn, is owned by the Model object. This ownership relationship between objects is referred to as the ownership hierarchy of the object model.
 
@@ -173,13 +180,14 @@ Abstract base type
 
 The Abaqus object model includes the concept of an abstract base type. An abstract base type allows similar objects to share common attributes. For example, pressure and concentrated force are both kinds of loads. Object-oriented programmers call the relationship between pressure and load an is a relationship—a pressure is a kind of load. In this example Load is the name of the abstract base type. In the type hierachy Pressure and ConcentratedForce types have a base type Load. A Pressure is a Load.
 
-In Figure 1 AnalysisStep and Step are both abstract base types. In terms of the real world a static step is an analysis step and a static step is also a step. In terms of the object model a StaticStep object is an AnalysisStep object and a StaticStep object is also a Step object.
+In :numref:`cmd-int-abstract-nls` AnalysisStep and Step are both abstract base types. In terms of the real world a static step is an analysis step and a static step is also a step. In terms of the object model a StaticStep object is an AnalysisStep object and a StaticStep object is also a Step object.
 
+.. _cmd-int-abstract-nls:
 .. figure:: /images/cmd-int-abstract-nls.png
     :width: 50%
     :align: center
 
-    Figure 1. An example of the is a relationships between objects.
+    An example of the is a relationships between objects.
 
 In contrast the object model figures described at the beginning of this section show what object-oriented programmers call has a relationships between objects. For example, a session has a viewport repository, and a model has a root assembly.
 

@@ -56,13 +56,14 @@ The default file extensions for use with the Abaqus PDE are .py and .guiLog. A .
 
 As you play a main file script, the Abaqus PDE automatically opens any files that contain functions called by the script, if the files are available in the current path (sys.path). These files are added to the recently used files list in the File menu. The Abaqus PDE also saves a list of recently used files and other files (dependent files) called when you run a main file. This list is saved in the current directory as abaqus_pde.deps.
 
-Figure 1 shows the items in the Abaqus PDE File menu.
+:numref:`cmd-pde-filemenu-nls` shows the items in the Abaqus PDE File menu.
 
+.. _cmd-pde-filemenu-nls:
 .. figure:: /images/cmd-pde-filemenu-nls.png
     :width: 50%
     :align: center
     
-    Figure 1. The File menu
+    The File menu
 
 The following options are available from the File menu:
 
@@ -133,13 +134,14 @@ Selecting the settings for use with a file
 
 Use the **Settings** menu and tools to change some of the options in the Abaqus PDE.
 
-Figure 1 shows the items and default selections in the Abaqus PDE **Settings** menu.
+:numref:`cmd-pde-settingsmenu-nls` shows the items and default selections in the Abaqus PDE **Settings** menu.
 
+.. _cmd-pde-settingsmenu-nls:
 .. figure:: /images/cmd-pde-settingsmenu-nls.png
     :width: 50%
     :align: center
     
-    Figure 1. The Settings menu.
+    The Settings menu.
 
 The following items are available from the **Settings** menu:
 
