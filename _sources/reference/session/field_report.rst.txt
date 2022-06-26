@@ -21,11 +21,15 @@ FieldReportOptions
 .. autoclass:: abaqus.FieldReport.FieldReportOptions.FieldReportOptions
     :members:
 
+    .. autoclassdoc::
+
 FreeBodyReportOptions
 ~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions
     :members:
+
+    .. autoclassdoc::
 
 OdbFieldVarList
 ~~~~~~~~~~~~~~~
@@ -33,11 +37,15 @@ OdbFieldVarList
 .. autoclass:: abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList
     :members:
 
+    .. autoclassdoc::
+
 OdbModelFieldVarList
 ~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList
     :members:
+
+    .. autoclassdoc::
 
 writeFieldReport
 ~~~~~~~~~~~~~~~~
@@ -45,9 +53,13 @@ writeFieldReport
 .. autoclass:: abaqus.FieldReport.writeFieldReport.writeFieldReport
     :members:
 
+    .. autoclassdoc::
+
 writeFreeBodyReport
 ~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport
     :members:
+
+    .. autoclassdoc::
 

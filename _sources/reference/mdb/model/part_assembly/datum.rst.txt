@@ -16,11 +16,15 @@ Datum
 .. autoclass:: abaqus.Datum.Datum.Datum
     :members:
 
+    .. autoclassdoc::
+
 DatumAxis
 ~~~~~~~~~
 
 .. autoclass:: abaqus.Datum.DatumAxis.DatumAxis
     :members:
+
+    .. autoclassdoc::
 
 DatumCsys
 ~~~~~~~~~
@@ -28,14 +32,20 @@ DatumCsys
 .. autoclass:: abaqus.Datum.DatumCsys.DatumCsys
     :members:
 
+    .. autoclassdoc::
+
 DatumPlane
 ~~~~~~~~~~
 
 .. autoclass:: abaqus.Datum.DatumPlane.DatumPlane
     :members:
 
+    .. autoclassdoc::
+
 DatumPoint
 ~~~~~~~~~~
 
 .. autoclass:: abaqus.Datum.DatumPoint.DatumPoint
     :members:
+
+    .. autoclassdoc::

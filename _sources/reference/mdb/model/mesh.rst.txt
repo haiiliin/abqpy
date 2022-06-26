@@ -13,11 +13,15 @@ Mesh features for Assembly
 .. autoclass:: abaqus.Mesh.MeshAssembly.MeshAssembly
     :members:
 
+    .. autoclassdoc::
+
 ElemType
 ~~~~~~~~
 
 .. autoclass:: abaqus.Mesh.ElemType.ElemType
     :members:
+
+    .. autoclassdoc::
 
 MeshEdge
 ~~~~~~~~
@@ -25,11 +29,15 @@ MeshEdge
 .. autoclass:: abaqus.Mesh.MeshEdge.MeshEdge
     :members:
 
+    .. autoclassdoc::
+
 MeshEdgeArray
 ~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Mesh.MeshEdgeArray.MeshEdgeArray
     :members:
+
+    .. autoclassdoc::
 
 MeshElement
 ~~~~~~~~~~~
@@ -37,11 +45,15 @@ MeshElement
 .. autoclass:: abaqus.Mesh.MeshElement.MeshElement
     :members:
 
+    .. autoclassdoc::
+
 MeshElementArray
 ~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Mesh.MeshElementArray.MeshElementArray
     :members:
+
+    .. autoclassdoc::
 
 MesherOptions
 ~~~~~~~~~~~~~
@@ -49,11 +61,15 @@ MesherOptions
 .. autoclass:: abaqus.Mesh.MesherOptions.MesherOptions
     :members:
 
+    .. autoclassdoc::
+
 MeshFace
 ~~~~~~~~
 
 .. autoclass:: abaqus.Mesh.MeshFace.MeshFace
     :members:
+
+    .. autoclassdoc::
 
 MeshFaceArray
 ~~~~~~~~~~~~~
@@ -61,11 +77,15 @@ MeshFaceArray
 .. autoclass:: abaqus.Mesh.MeshFaceArray.MeshFaceArray
     :members:
 
+    .. autoclassdoc::
+
 MeshNode
 ~~~~~~~~
 
 .. autoclass:: abaqus.Mesh.MeshNode.MeshNode
     :members:
+
+    .. autoclassdoc::
 
 MeshNodeArray
 ~~~~~~~~~~~~~
@@ -73,15 +93,21 @@ MeshNodeArray
 .. autoclass:: abaqus.Mesh.MeshNodeArray.MeshNodeArray
     :members:
 
+    .. autoclassdoc::
+
 MeshPart
 ~~~~~~~~
 
 .. autoclass:: abaqus.Mesh.MeshPart.MeshPart
     :members:
 
+    .. autoclassdoc::
+
 MeshStats
 ~~~~~~~~~
 
 .. autoclass:: abaqus.Mesh.MeshStats.MeshStats
     :members:
+
+    .. autoclassdoc::
 

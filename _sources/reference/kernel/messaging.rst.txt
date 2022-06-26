@@ -13,9 +13,13 @@ DataObject
 .. autoclass:: abaqus.Messaging.DataObject.DataObject
     :members:
 
+    .. autoclassdoc::
+
 MonitorMgr
 ~~~~~~~~~~
 
 .. autoclass:: abaqus.Messaging.MonitorMgr.MonitorMgr
     :members:
+
+    .. autoclassdoc::
 

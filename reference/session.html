@@ -9,6 +9,7 @@
         <title>Abaqus Session - abqpy 2016a0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../_static/autoclasstoc.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
     
@@ -1056,6 +1057,11 @@ is 0.0.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.XYData">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">XYData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L395-L397"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.XYData" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.XYDataFromFile">
 <span class="sig-name descname"><span class="pre">XYDataFromFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sourceDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contentDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legendLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xValuesLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yValuesLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis1QuantityType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis2QuantityType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xField</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yField</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skipFrequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L399-L473"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.XYDataFromFile" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates an XYData object from data in an ASCII file.</p>
@@ -1113,7 +1119,7 @@ The default value is 0 (data are read from every row).</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code></dt><dd><p>An <a class="reference internal" href="session/xy.html#abaqus.XY.XYData.XYData" title="abaqus.XY.XYData.XYData"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYData</span></code></a> object</p>
+<dt><a class="reference internal" href="#abaqus.Session.Session.Session.XYData" title="abaqus.Session.Session.Session.XYData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code></a></dt><dd><p>An <a class="reference internal" href="session/xy.html#abaqus.XY.XYData.XYData" title="abaqus.XY.XYData.XYData"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYData</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -1161,7 +1167,7 @@ and <strong>moment</strong>. The default is OFF.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-class docutils literal notranslate"><span class="pre">python:list</span></code>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code>]</dt><dd><p>A list of XYData objects</p>
+<dt><code class="xref py py-class docutils literal notranslate"><span class="pre">python:list</span></code>[<a class="reference internal" href="#abaqus.Session.Session.Session.XYData" title="abaqus.Session.Session.Session.XYData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code></a>]</dt><dd><p>A list of XYData objects</p>
 </dd>
 </dl>
 </dd>
@@ -1224,7 +1230,7 @@ complex numbers when <strong>numericForm</strong> = COMPLEX_VAL_AT_ANGLE. The de
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code></dt><dd><p>An <a class="reference internal" href="session/xy.html#abaqus.XY.XYData.XYData" title="abaqus.XY.XYData.XYData"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYData</span></code></a> object</p>
+<dt><a class="reference internal" href="#abaqus.Session.Session.Session.XYData" title="abaqus.Session.Session.Session.XYData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code></a></dt><dd><p>An <a class="reference internal" href="session/xy.html#abaqus.XY.XYData.XYData" title="abaqus.XY.XYData.XYData"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYData</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -1321,8 +1327,8 @@ data extraction when <strong>projectOntoMesh</strong> =  True. The default value
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>variable</strong> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specified</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">has</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">one</span></code> fieldoutput: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Returns</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">an</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code> object.</dt><dd></dd>
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>variable</strong> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specified</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">has</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">more</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">than</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">one</span></code> fieldoutputs: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Returns</span></code> <code class="xref py py-class docutils literal notranslate"><span class="pre">python:list</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code> objects.</dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>variable</strong> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specified</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">has</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">one</span></code> fieldoutput: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Returns</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">an</span></code> <a class="reference internal" href="#abaqus.Session.Session.Session.XYData" title="abaqus.Session.Session.Session.XYData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code></a> object.</dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>variable</strong> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specified</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">has</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">more</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">than</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">one</span></code> fieldoutputs: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Returns</span></code> <code class="xref py py-class docutils literal notranslate"><span class="pre">python:list</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference internal" href="#abaqus.Session.Session.Session.XYData" title="abaqus.Session.Session.Session.XYData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code></a> objects.</dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1348,6 +1354,138 @@ data extraction when <strong>projectOntoMesh</strong> =  True. The default value
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.animationOptions">
+<span class="sig-name descname"><span class="pre">animationOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/animation.html#abaqus.Animation.AnimationOptions.AnimationOptions" title="abaqus.Animation.AnimationOptions.AnimationOptions"><span class="pre">AnimationOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Animation.AnimationOptions.AnimationOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.animationOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="session/animation.html#abaqus.Animation.AnimationOptions.AnimationOptions" title="abaqus.Animation.AnimationOptions.AnimationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnimationOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.attachedToGui">
+<span class="sig-name descname"><span class="pre">attachedToGui</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Boolean</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.attachedToGui" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether an Abaqus interactive session is running.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.autoColors">
+<span class="sig-name descname"><span class="pre">autoColors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><span class="pre">AutoColors</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Session.AutoColors.AutoColors</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.autoColors" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoColors</span></code></a> object specifying the color palette to be used for color coding.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.aviOptions">
+<span class="sig-name descname"><span class="pre">aviOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/animation.html#abaqus.Animation.AVIOptions.AVIOptions" title="abaqus.Animation.AVIOptions.AVIOptions"><span class="pre">AVIOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Animation.AVIOptions.AVIOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.aviOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="session/animation.html#abaqus.Animation.AVIOptions.AVIOptions" title="abaqus.Animation.AVIOptions.AVIOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AVIOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.charts">
+<span class="sig-name descname"><span class="pre">charts</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="session/xy.html#abaqus.XY.Chart.Chart" title="abaqus.XY.Chart.Chart"><span class="pre">Chart</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.charts" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Chart objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.colors">
+<span class="sig-name descname"><span class="pre">colors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Session.Color.Color" title="abaqus.Session.Color.Color"><span class="pre">Color</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.colors" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Color objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.currentProbeValues">
+<span class="sig-name descname"><span class="pre">currentProbeValues</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/path.html#abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues" title="abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues"><span class="pre">CurrentProbeValues</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.currentProbeValues" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/path.html#abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues" title="abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues"><code class="xref py py-class docutils literal notranslate"><span class="pre">CurrentProbeValues</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.currentViewportName">
+<span class="sig-name descname"><span class="pre">currentViewportName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.currentViewportName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the current viewport.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.curves">
+<span class="sig-name descname"><span class="pre">curves</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="session/xy.html#abaqus.XY.XYCurve.XYCurve" title="abaqus.XY.XYCurve.XYCurve"><span class="pre">XYCurve</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.curves" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of XYCurve objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.customData">
+<span class="sig-name descname"><span class="pre">customData</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><span class="pre">RepositorySupport</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.CustomKernel.RepositorySupport.RepositorySupport</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.customData" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.defaultChartOptions">
+<span class="sig-name descname"><span class="pre">defaultChartOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/xy.html#abaqus.XY.DefaultChartOptions.DefaultChartOptions" title="abaqus.XY.DefaultChartOptions.DefaultChartOptions"><span class="pre">DefaultChartOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.DefaultChartOptions.DefaultChartOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.defaultChartOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/xy.html#abaqus.XY.DefaultChartOptions.DefaultChartOptions" title="abaqus.XY.DefaultChartOptions.DefaultChartOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultChartOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.defaultFieldReportOptions">
+<span class="sig-name descname"><span class="pre">defaultFieldReportOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><span class="pre">FieldReportOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.FieldReport.FieldReportOptions.FieldReportOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.defaultFieldReportOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.defaultFreeBodyReportOptions">
+<span class="sig-name descname"><span class="pre">defaultFreeBodyReportOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><span class="pre">FreeBodyReportOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.defaultFreeBodyReportOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.defaultGraphicsOptions">
+<span class="sig-name descname"><span class="pre">defaultGraphicsOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><span class="pre">GraphicsOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.defaultGraphicsOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.defaultLightOptions">
+<span class="sig-name descname"><span class="pre">defaultLightOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/display_options.html#abaqus.DisplayOptions.LightOptions.LightOptions" title="abaqus.DisplayOptions.LightOptions.LightOptions"><span class="pre">LightOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.DisplayOptions.LightOptions.LightOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.defaultLightOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/display_options.html#abaqus.DisplayOptions.LightOptions.LightOptions" title="abaqus.DisplayOptions.LightOptions.LightOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">LightOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.defaultMesherOptions">
+<span class="sig-name descname"><span class="pre">defaultMesherOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="mdb/model/mesh.html#abaqus.Mesh.MesherOptions.MesherOptions" title="abaqus.Mesh.MesherOptions.MesherOptions"><span class="pre">MesherOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Mesh.MesherOptions.MesherOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.defaultMesherOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="mdb/model/mesh.html#abaqus.Mesh.MesherOptions.MesherOptions" title="abaqus.Mesh.MesherOptions.MesherOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MesherOptions</span></code></a> object specifying how to control default settings in the Mesh module.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.defaultOdbDisplay">
+<span class="sig-name descname"><span class="pre">defaultOdbDisplay</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/odb_display.html#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay"><span class="pre">DefaultOdbDisplay</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.defaultOdbDisplay" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/odb_display.html#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultOdbDisplay</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.defaultPlot">
+<span class="sig-name descname"><span class="pre">defaultPlot</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/xy.html#abaqus.XY.DefaultPlot.DefaultPlot" title="abaqus.XY.DefaultPlot.DefaultPlot"><span class="pre">DefaultPlot</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.DefaultPlot.DefaultPlot</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.defaultPlot" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/xy.html#abaqus.XY.DefaultPlot.DefaultPlot" title="abaqus.XY.DefaultPlot.DefaultPlot"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultPlot</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.defaultProbeOptions">
+<span class="sig-name descname"><span class="pre">defaultProbeOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/path.html#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><span class="pre">ProbeOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.PathAndProbe.ProbeOptions.ProbeOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.defaultProbeOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/path.html#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.defaultProbeReport">
+<span class="sig-name descname"><span class="pre">defaultProbeReport</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/path.html#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><span class="pre">ProbeReport</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.PathAndProbe.ProbeReport.ProbeReport</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.defaultProbeReport" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/path.html#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeReport</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.defaultViewportAnnotationOptions">
+<span class="sig-name descname"><span class="pre">defaultViewportAnnotationOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/display_options.html#abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions" title="abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions"><span class="pre">ViewportAnnotationOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.defaultViewportAnnotationOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/display_options.html#abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions" title="abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportAnnotationOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.defaultXYReportOptions">
+<span class="sig-name descname"><span class="pre">defaultXYReportOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/xy.html#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><span class="pre">XYReportOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.XYReportOptions.XYReportOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.defaultXYReportOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="session/xy.html#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYReportOptions</span></code></a> object.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1378,6 +1516,24 @@ Available option is Pro/ENGINEER.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.displayGroups">
+<span class="sig-name descname"><span class="pre">displayGroups</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="session/display.html#abaqus.DisplayGroup.DisplayGroup.DisplayGroup" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup"><span class="pre">DisplayGroup</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.displayGroups" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of DisplayGroup objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.drawingArea">
+<span class="sig-name descname"><span class="pre">drawingArea</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/canvas.html#abaqus.Canvas.DrawingArea.DrawingArea" title="abaqus.Canvas.DrawingArea.DrawingArea"><span class="pre">DrawingArea</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Canvas.DrawingArea.DrawingArea</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.drawingArea" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/canvas.html#abaqus.Canvas.DrawingArea.DrawingArea" title="abaqus.Canvas.DrawingArea.DrawingArea"><code class="xref py py-class docutils literal notranslate"><span class="pre">DrawingArea</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.drawings">
+<span class="sig-name descname"><span class="pre">drawings</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Session.Drawing.Drawing" title="abaqus.Session.Drawing.Drawing"><span class="pre">Drawing</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.drawings" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Drawing objects.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1430,6 +1586,35 @@ default CAD listening ports are as follow:ProE : 3344NX : 3344</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.epsOptions">
+<span class="sig-name descname"><span class="pre">epsOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/print.html#abaqus.Print.EpsOptions.EpsOptions" title="abaqus.Print.EpsOptions.EpsOptions"><span class="pre">EpsOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Print.EpsOptions.EpsOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.epsOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="session/print.html#abaqus.Print.EpsOptions.EpsOptions" title="abaqus.Print.EpsOptions.EpsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">EpsOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.exit">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">exit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L689-L691"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.exit" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.fieldReportOptions">
+<span class="sig-name descname"><span class="pre">fieldReportOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><span class="pre">FieldReportOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.FieldReport.FieldReportOptions.FieldReportOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.fieldReportOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.freeBodies">
+<span class="sig-name descname"><span class="pre">freeBodies</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="session/path.html#abaqus.PathAndProbe.FreeBody.FreeBody" title="abaqus.PathAndProbe.FreeBody.FreeBody"><span class="pre">FreeBody</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.freeBodies" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of FreeBody objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.freeBodyReportOptions">
+<span class="sig-name descname"><span class="pre">freeBodyReportOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><span class="pre">FreeBodyReportOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.freeBodyReportOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.getLimitForXYDataPlots">
 <span class="sig-name descname"><span class="pre">getLimitForXYDataPlots</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L184-L192"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.getLimitForXYDataPlots" title="Permalink to this definition">#</a></dt>
@@ -1459,6 +1644,36 @@ extracting results along Path objects.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.graphicsInfo">
+<span class="sig-name descname"><span class="pre">graphicsInfo</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/display_options.html#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo" title="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo"><span class="pre">GraphicsInfo</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.graphicsInfo" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/display_options.html#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo" title="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsInfo</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.graphicsOptions">
+<span class="sig-name descname"><span class="pre">graphicsOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><span class="pre">GraphicsOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.graphicsOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.imageAnimation">
+<span class="sig-name descname"><span class="pre">imageAnimation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/animation.html#abaqus.Animation.ImageAnimation.ImageAnimation" title="abaqus.Animation.ImageAnimation.ImageAnimation"><span class="pre">ImageAnimation</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Animation.ImageAnimation.ImageAnimation</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.imageAnimation" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="session/animation.html#abaqus.Animation.ImageAnimation.ImageAnimation" title="abaqus.Animation.ImageAnimation.ImageAnimation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimation</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.imageAnimationOptions">
+<span class="sig-name descname"><span class="pre">imageAnimationOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/animation.html#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions" title="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions"><span class="pre">ImageAnimationOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.imageAnimationOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="session/animation.html#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions" title="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimationOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.images">
+<span class="sig-name descname"><span class="pre">images</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Session.Image.Image" title="abaqus.Session.Image.Image"><span class="pre">Image</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.images" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Image objects.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.isCADConnectionEnabled">
 <span class="sig-name descname"><span class="pre">isCADConnectionEnabled</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L337-L346"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.isCADConnectionEnabled" title="Permalink to this definition">#</a></dt>
@@ -1472,6 +1687,34 @@ disabled.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.journalOptions">
+<span class="sig-name descname"><span class="pre">journalOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Session.JournalOptions.JournalOptions" title="abaqus.Session.JournalOptions.JournalOptions"><span class="pre">JournalOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Session.JournalOptions.JournalOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.journalOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.Session.JournalOptions.JournalOptions" title="abaqus.Session.JournalOptions.JournalOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">JournalOptions</span></code></a> object specifying how to record selection of geometry in the journal
+and replay files.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.kernelMemoryFootprint">
+<span class="sig-name descname"><span class="pre">kernelMemoryFootprint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.kernelMemoryFootprint" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the memory usage value for the Abaqus/CAE kernel process in
+megabytes.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.kernelMemoryLimit">
+<span class="sig-name descname"><span class="pre">kernelMemoryLimit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.kernelMemoryLimit" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the limit for the memory use for the Abaqus/CAE kernel process in
+megabytes.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.kernelMemoryMaxFootprint">
+<span class="sig-name descname"><span class="pre">kernelMemoryMaxFootprint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.kernelMemoryMaxFootprint" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the maximum value for the memory usage for the Abaqus/CAE kernel
+process in megabytes.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1558,7 +1801,7 @@ stress line and placed in the Path repository.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-class docutils literal notranslate"><span class="pre">python:list</span></code>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code>]</dt><dd><p>A list of xyData objects.</p>
+<dt><code class="xref py py-class docutils literal notranslate"><span class="pre">python:list</span></code>[<a class="reference internal" href="#abaqus.Session.Session.Session.XYData" title="abaqus.Session.Session.Session.XYData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code></a>]</dt><dd><p>A list of xyData objects.</p>
 </dd>
 </dl>
 </dd>
@@ -1579,6 +1822,48 @@ the stress linearization plot.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.mdbData">
+<span class="sig-name descname"><span class="pre">mdbData</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="session/plot_options.html#abaqus.PlotOptions.MdbData.MdbData" title="abaqus.PlotOptions.MdbData.MdbData"><span class="pre">MdbData</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.mdbData" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of MdbData objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.memoryReductionOptions">
+<span class="sig-name descname"><span class="pre">memoryReductionOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Session.MemoryReductionOptions.MemoryReductionOptions" title="abaqus.Session.MemoryReductionOptions.MemoryReductionOptions"><span class="pre">MemoryReductionOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Session.MemoryReductionOptions.MemoryReductionOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.memoryReductionOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.Session.MemoryReductionOptions.MemoryReductionOptions" title="abaqus.Session.MemoryReductionOptions.MemoryReductionOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryReductionOptions</span></code></a> object specifying options for running in reduced memory mode.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.movies">
+<span class="sig-name descname"><span class="pre">movies</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="session/animation.html#abaqus.Animation.Movie.Movie" title="abaqus.Animation.Movie.Movie"><span class="pre">Movie</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.movies" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Movie objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.networkDatabaseConnectors">
+<span class="sig-name descname"><span class="pre">networkDatabaseConnectors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector" title="abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector"><span class="pre">NetworkDatabaseConnector</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.networkDatabaseConnectors" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of NetworkDatabaseConnector objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.nodeQuery">
+<span class="sig-name descname"><span class="pre">nodeQuery</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/path.html#abaqus.PathAndProbe.NodeQuery.NodeQuery" title="abaqus.PathAndProbe.NodeQuery.NodeQuery"><span class="pre">NodeQuery</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.PathAndProbe.NodeQuery.NodeQuery</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.nodeQuery" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/path.html#abaqus.PathAndProbe.NodeQuery.NodeQuery" title="abaqus.PathAndProbe.NodeQuery.NodeQuery"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeQuery</span></code></a> object specifying nodes and their coordinates in a path.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.odbData">
+<span class="sig-name descname"><span class="pre">odbData</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="session/plot_options.html#abaqus.PlotOptions.OdbData.OdbData" title="abaqus.PlotOptions.OdbData.OdbData"><span class="pre">OdbData</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.odbData" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of OdbData objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.odbs">
+<span class="sig-name descname"><span class="pre">odbs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><span class="pre">Odb</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.odbs" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Odb objects.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1616,6 +1901,30 @@ installation of Abaqus needs upgrading.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.pageSetupOptions">
+<span class="sig-name descname"><span class="pre">pageSetupOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/print.html#abaqus.Print.PageSetupOptions.PageSetupOptions" title="abaqus.Print.PageSetupOptions.PageSetupOptions"><span class="pre">PageSetupOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Print.PageSetupOptions.PageSetupOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.pageSetupOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/print.html#abaqus.Print.PageSetupOptions.PageSetupOptions" title="abaqus.Print.PageSetupOptions.PageSetupOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PageSetupOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.paths">
+<span class="sig-name descname"><span class="pre">paths</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="session/path.html#abaqus.PathAndProbe.Path.Path" title="abaqus.PathAndProbe.Path.Path"><span class="pre">Path</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.paths" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Path objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.pngOptions">
+<span class="sig-name descname"><span class="pre">pngOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/print.html#abaqus.Print.PngOptions.PngOptions" title="abaqus.Print.PngOptions.PngOptions"><span class="pre">PngOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Print.PngOptions.PngOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.pngOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/print.html#abaqus.Print.PngOptions.PngOptions" title="abaqus.Print.PngOptions.PngOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PngOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.printOptions">
+<span class="sig-name descname"><span class="pre">printOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/print.html#abaqus.Print.PrintOptions.PrintOptions" title="abaqus.Print.PrintOptions.PrintOptions"><span class="pre">PrintOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Print.PrintOptions.PrintOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.printOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/print.html#abaqus.Print.PrintOptions.PrintOptions" title="abaqus.Print.PrintOptions.PrintOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PrintOptions</span></code></a> object.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1688,6 +1997,42 @@ is to print all canvas objects.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.probeOptions">
+<span class="sig-name descname"><span class="pre">probeOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/path.html#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><span class="pre">ProbeOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.PathAndProbe.ProbeOptions.ProbeOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.probeOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/path.html#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.probeReport">
+<span class="sig-name descname"><span class="pre">probeReport</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/path.html#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><span class="pre">ProbeReport</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.PathAndProbe.ProbeReport.ProbeReport</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.probeReport" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/path.html#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeReport</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.psOptions">
+<span class="sig-name descname"><span class="pre">psOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/print.html#abaqus.Print.PsOptions.PsOptions" title="abaqus.Print.PsOptions.PsOptions"><span class="pre">PsOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Print.PsOptions.PsOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.psOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/print.html#abaqus.Print.PsOptions.PsOptions" title="abaqus.Print.PsOptions.PsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PsOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.queues">
+<span class="sig-name descname"><span class="pre">queues</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="mdb/job.html#abaqus.Job.Queue.Queue" title="abaqus.Job.Queue.Queue"><span class="pre">Queue</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.queues" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Queue objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.quickTimeOptions">
+<span class="sig-name descname"><span class="pre">quickTimeOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/animation.html#abaqus.Animation.QuickTimeOptions.QuickTimeOptions" title="abaqus.Animation.QuickTimeOptions.QuickTimeOptions"><span class="pre">QuickTimeOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Animation.QuickTimeOptions.QuickTimeOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.quickTimeOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/animation.html#abaqus.Animation.QuickTimeOptions.QuickTimeOptions" title="abaqus.Animation.QuickTimeOptions.QuickTimeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuickTimeOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.replayInProgress">
+<span class="sig-name descname"><span class="pre">replayInProgress</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Boolean</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.replayInProgress" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether Abaqus is executing a replay file.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.saveOptions">
 <span class="sig-name descname"><span class="pre">saveOptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">directory</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L515-L525"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.saveOptions" title="Permalink to this definition">#</a></dt>
@@ -1702,6 +2047,26 @@ CURRENT.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.scratchOdbs">
+<span class="sig-name descname"><span class="pre">scratchOdbs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="odb.html#abaqus.Odb.ScratchOdb.ScratchOdb" title="abaqus.Odb.ScratchOdb.ScratchOdb"><span class="pre">ScratchOdb</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.scratchOdbs" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of ScratchOdb objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.selectedProbeValues">
+<span class="sig-name descname"><span class="pre">selectedProbeValues</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/path.html#abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues" title="abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues"><span class="pre">SelectedProbeValues</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.selectedProbeValues" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/path.html#abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues" title="abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectedProbeValues</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.sessionState">
+<span class="sig-name descname"><span class="pre">sessionState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.sessionState" title="Permalink to this definition">#</a></dt>
+<dd><p>A Dictionary object specifying the viewports and their associated models. The Dictionary
+key specifies the viewport name. The Dictionary value is a Dictionary specifying the
+model name.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1791,6 +2156,36 @@ less than the physical amount of memory on the machine.The minimum setting allow
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.sketcherOptions">
+<span class="sig-name descname"><span class="pre">sketcherOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="mdb/model/sketcher.html#abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions" title="abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions"><span class="pre">ConstrainedSketcherOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.sketcherOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="mdb/model/sketcher.html#abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions" title="abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketcherOptions</span></code></a> object specifying common options for all sketches.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.spectrums">
+<span class="sig-name descname"><span class="pre">spectrums</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="session/path.html#abaqus.PathAndProbe.Spectrum.Spectrum" title="abaqus.PathAndProbe.Spectrum.Spectrum"><span class="pre">Spectrum</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.spectrums" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Spectrum objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.streams">
+<span class="sig-name descname"><span class="pre">streams</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="session/path.html#abaqus.PathAndProbe.Stream.Stream" title="abaqus.PathAndProbe.Stream.Stream"><span class="pre">Stream</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.streams" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Stream objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.svgOptions">
+<span class="sig-name descname"><span class="pre">svgOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/print.html#abaqus.Print.SvgOptions.SvgOptions" title="abaqus.Print.SvgOptions.SvgOptions"><span class="pre">SvgOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Print.SvgOptions.SvgOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.svgOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/print.html#abaqus.Print.SvgOptions.SvgOptions" title="abaqus.Print.SvgOptions.SvgOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">SvgOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.tiffOptions">
+<span class="sig-name descname"><span class="pre">tiffOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="mdb/model/predefined.html#abaqus.PredefinedField.TiffOptions.TiffOptions" title="abaqus.PredefinedField.TiffOptions.TiffOptions"><span class="pre">TiffOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.PredefinedField.TiffOptions.TiffOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.tiffOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="mdb/model/predefined.html#abaqus.PredefinedField.TiffOptions.TiffOptions" title="abaqus.PredefinedField.TiffOptions.TiffOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">TiffOptions</span></code></a> object.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.updateCADParameters">
 <span class="sig-name descname"><span class="pre">updateCADParameters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modelName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CADName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameterFile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CADPartFile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CADPartName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L396-L430"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.updateCADParameters" title="Permalink to this definition">#</a></dt>
@@ -1822,6 +2217,24 @@ the parts in the specified file.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.viewerOptions">
+<span class="sig-name descname"><span class="pre">viewerOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/odb_display.html#abaqus.OdbDisplay.ViewerOptions.ViewerOptions" title="abaqus.OdbDisplay.ViewerOptions.ViewerOptions"><span class="pre">ViewerOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.OdbDisplay.ViewerOptions.ViewerOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.viewerOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="session/odb_display.html#abaqus.OdbDisplay.ViewerOptions.ViewerOptions" title="abaqus.OdbDisplay.ViewerOptions.ViewerOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewerOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.viewports">
+<span class="sig-name descname"><span class="pre">viewports</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="session/canvas.html#abaqus.Canvas.Viewport.Viewport" title="abaqus.Canvas.Viewport.Viewport"><span class="pre">Viewport</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.viewports" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Viewport objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.views">
+<span class="sig-name descname"><span class="pre">views</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="kernel/utility.html#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><span class="pre">View</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.views" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of View objects.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -2022,6 +2435,12 @@ extension is supplied, an extension is added based on the selected format (.wrl,
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.xyColors">
+<span class="sig-name descname"><span class="pre">xyColors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><span class="pre">AutoColors</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Session.AutoColors.AutoColors</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.xyColors" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoColors</span></code></a> object specifying the color palette to be used forXYCurve objects.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.xyDataListFromField">
 <span class="sig-name descname"><span class="pre">xyDataListFromField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">odb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputPosition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementSets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementLabels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeSets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeLabels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'REAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L548-L641"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.xyDataListFromField" title="Permalink to this definition">#</a></dt>
@@ -2104,11 +2523,29 @@ on the data, and the data will be saved as is.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-class docutils literal notranslate"><span class="pre">python:list</span></code>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code>]</dt><dd><p>A list of XYData objects</p>
+<dt><code class="xref py py-class docutils literal notranslate"><span class="pre">python:list</span></code>[<a class="reference internal" href="#abaqus.Session.Session.Session.XYData" title="abaqus.Session.Session.Session.XYData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code></a>]</dt><dd><p>A list of XYData objects</p>
 </dd>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.xyDataObjects">
+<span class="sig-name descname"><span class="pre">xyDataObjects</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="session/xy.html#abaqus.XY.XYData.XYData" title="abaqus.XY.XYData.XYData"><span class="pre">XYData</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.xyDataObjects" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of XYData objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.xyPlots">
+<span class="sig-name descname"><span class="pre">xyPlots</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="session/xy.html#abaqus.XY.XYPlot.XYPlot" title="abaqus.XY.XYPlot.XYPlot"><span class="pre">XYPlot</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.xyPlots" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of XYPlot objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Session.Session.Session.xyReportOptions">
+<span class="sig-name descname"><span class="pre">xyReportOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="session/xy.html#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><span class="pre">XYReportOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.XYReportOptions.XYReportOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.xyReportOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="session/xy.html#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYReportOptions</span></code></a> object.</p>
 </dd></dl>
 
 </dd></dl>

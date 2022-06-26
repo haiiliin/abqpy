@@ -9,6 +9,7 @@
         <title>Adaptivity - abqpy 2016a0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
     
@@ -791,7 +792,7 @@ indicator results from a previous analysis.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdaptivityIteration</span></code></dt><dd><p>An <a class="reference internal" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration"><code class="xref py py-class docutils literal notranslate"><span class="pre">AdaptivityIteration</span></code></a> object.</p>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdaptivityIteration</span></code></dt><dd><p>An <a class="reference internal" href="#id0" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration"><code class="xref py py-class docutils literal notranslate"><span class="pre">AdaptivityIteration</span></code></a> object.</p>
 </dd>
 </dl>
 </dd>
@@ -1097,50 +1098,155 @@ constraint has no amplitude reference.</p>
 <section id="create-features-for-adaptivityiteration">
 <h2>Create features for AdaptivityIteration<a class="headerlink" href="#create-features-for-adaptivityiteration" title="Permalink to this headline">#</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RuleResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indicatorResults</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numElems</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeElemCount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">satisfiedVars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py#L9-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult" title="Permalink to this definition">#</a></dt>
-<dd><p>The RuleResult object contains result information corresponding to a RemeshingRule
-object for an adaptivity iteration.</p>
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AdaptivityIteration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iteration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jobName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odbPath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remeshingErrors</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py#L5-L158"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration" title="Permalink to this definition">#</a></dt>
+<dd><p>The AdaptivityIteration object contains information about a given iteration of the
+varying topology adaptivity process (adaptive remeshing).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">job</span>
-<span class="n">mdb</span><span class="o">.</span><span class="n">adaptivityProcesses</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">iterations</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">ruleResults</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">adaptivityProcesses</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">iterations</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult.indicatorResults">
-<span class="sig-name descname"><span class="pre">indicatorResults</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">abaqus.Adaptivity.RuleResult.ErrorIndicatorResult</span><span class="p"><span class="pre">]</span></span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult.indicatorResults" title="Permalink to this definition">#</a></dt>
-<dd><p>A repository of ErrorIndicatorResult objects specifying the calculated results from the
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#id1" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorIndicatorResult</span></code></a>(name, results)</p></td>
+<td><p>This method creates an ErrorIndicatorResult with data for an error indicator variable in a RemeshingRule for a given adaptivity iteration.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#id2" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RuleResult</span></code></a>(name, indicatorResults, numElems, ...)</p></td>
+<td><p>This method creates a RuleResult with data for a RemeshingRule for a given adaptivity iteration.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult">
+<span class="sig-name descname"><span class="pre">ErrorIndicatorResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">results</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py#L79-L109"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates an ErrorIndicatorResult with data for an error indicator variable in
+a RemeshingRule for a given adaptivity iteration.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">adaptivityProcesses</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">AdaptivityIteration</span>
+</pre></div>
+</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the name of the error indicator variable to which these results
+correspond.</p>
+</dd>
+<dt><strong>results</strong></dt><dd><p>A String-to-Float Dictionary specifying the calculated results from the sizing function
+corresponding to the error indicator variable represented by this ErrorIndicatorResult.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><a class="reference internal" href="#id1" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorIndicatorResult</span></code></a></dt><dd><p>An <a class="reference internal" href="#abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult" title="abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">ErrorIndicatorResult</span></code></a> object.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbaqusException</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult">
+<span class="sig-name descname"><span class="pre">RuleResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indicatorResults</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numElems</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeElemCount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">satisfiedVars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py#L111-L158"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a RuleResult with data for a RemeshingRule for a given adaptivity
+iteration.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">adaptivityProcesses</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">AdaptivityIteration</span>
+</pre></div>
+</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the name of the Remeshing Rule to which these results correspond.</p>
+</dd>
+<dt><strong>indicatorResults</strong></dt><dd><p>A repository of ErrorIndicatorResult objects specifying the calculated results from the
 sizing function corresponding to the error indicator variables for the Remeshing Rule.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult.minSizeElemCount">
-<span class="sig-name descname"><span class="pre">minSizeElemCount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult.minSizeElemCount" title="Permalink to this definition">#</a></dt>
-<dd><p>An Int specifying the number of elements that were constrained to the minimum element
-size by the Remeshing Rule.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult.name">
-<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult.name" title="Permalink to this definition">#</a></dt>
-<dd><p>A String specifying the name of the Remeshing Rule to which these results correspond.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult.numElems">
-<span class="sig-name descname"><span class="pre">numElems</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult.numElems" title="Permalink to this definition">#</a></dt>
-<dd><p>An Int specifying the number of elements before remeshing in the region of the Remeshing
+</dd>
+<dt><strong>numElems</strong></dt><dd><p>An Int specifying the number of elements before remeshing in the region of the Remeshing
 Rule.</p>
+</dd>
+<dt><strong>minSizeElemCount</strong></dt><dd><p>An Int specifying the number of elements that were constrained to the minimum element
+size by the Remeshing Rule.</p>
+</dd>
+<dt><strong>satisfiedVars</strong></dt><dd><p>A sequence of Strings specifying the error indicator variables that have satisfied the
+Remeshing Rule.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><a class="reference internal" href="#id2" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RuleResult</span></code></a></dt><dd><p>A <a class="reference internal" href="#abaqus.Adaptivity.RuleResult.RuleResult" title="abaqus.Adaptivity.RuleResult.RuleResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">RuleResult</span></code></a> object.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbaqusException</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult.satisfiedVars">
-<span class="sig-name descname"><span class="pre">satisfiedVars</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py#L37-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult.satisfiedVars" title="Permalink to this definition">#</a></dt>
-<dd><p>A sequence of Strings specifying the error indicator variables that have satisfied the
-Remeshing Rule.</p>
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.iteration">
+<span class="sig-name descname"><span class="pre">iteration</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.iteration" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the sequence number for this iteration in the adaptivity process.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.jobName">
+<span class="sig-name descname"><span class="pre">jobName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.jobName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the job that was run for this iteration.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.modelName">
+<span class="sig-name descname"><span class="pre">modelName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.modelName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the model that was analyzed and remeshed in this
+iteration.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.odbPath">
+<span class="sig-name descname"><span class="pre">odbPath</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.odbPath" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the path to the ODB file that was created for this iteration.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.remeshingErrors">
+<span class="sig-name descname"><span class="pre">remeshingErrors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.remeshingErrors" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of part instances which generated errors while remeshing
+the model in this iteration of the adaptivity process.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ruleResults">
+<span class="sig-name descname"><span class="pre">ruleResults</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Adaptivity.RuleResult.RuleResult" title="abaqus.Adaptivity.RuleResult.RuleResult"><span class="pre">RuleResult</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py#L18-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ruleResults" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of RuleResult objects specifying the calculated results from sizing
+functions corresponding to the RemeshingRule objects for this iteration of an adaptivity
+process.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1669,8 +1775,8 @@ increment. The default value is 1.</p>
 <section id="adaptivityiteration">
 <h3>AdaptivityIteration<a class="headerlink" href="#adaptivityiteration" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AdaptivityIteration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iteration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jobName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odbPath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remeshingErrors</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py#L5-L158"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="id0">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AdaptivityIteration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iteration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jobName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odbPath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remeshingErrors</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py#L5-L158"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id0" title="Permalink to this definition">#</a></dt>
 <dd><p>The AdaptivityIteration object contains information about a given iteration of the
 varying topology adaptivity process (adaptive remeshing).</p>
 <div class="admonition note">
@@ -1689,18 +1795,18 @@ varying topology adaptivity process (adaptive remeshing).</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorIndicatorResult</span></code></a>(name, results)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#id1" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorIndicatorResult</span></code></a>(name, results)</p></td>
 <td><p>This method creates an ErrorIndicatorResult with data for an error indicator variable in a RemeshingRule for a given adaptivity iteration.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RuleResult</span></code></a>(name, indicatorResults, numElems, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#id2" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RuleResult</span></code></a>(name, indicatorResults, numElems, ...)</p></td>
 <td><p>This method creates a RuleResult with data for a RemeshingRule for a given adaptivity iteration.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult">
-<span class="sig-name descname"><span class="pre">ErrorIndicatorResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">results</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py#L79-L109"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">ErrorIndicatorResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">results</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py#L79-L109"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id1" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates an ErrorIndicatorResult with data for an error indicator variable in
 a RemeshingRule for a given adaptivity iteration.</p>
 <div class="admonition note">
@@ -1723,7 +1829,7 @@ corresponding to the error indicator variable represented by this ErrorIndicator
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference internal" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorIndicatorResult</span></code></a></dt><dd><p>An <a class="reference internal" href="#abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult" title="abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">ErrorIndicatorResult</span></code></a> object.</p>
+<dt><a class="reference internal" href="#id1" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorIndicatorResult</span></code></a></dt><dd><p>An <a class="reference internal" href="#abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult" title="abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">ErrorIndicatorResult</span></code></a> object.</p>
 </dd>
 </dl>
 </dd>
@@ -1736,8 +1842,8 @@ corresponding to the error indicator variable represented by this ErrorIndicator
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult">
-<span class="sig-name descname"><span class="pre">RuleResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indicatorResults</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numElems</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeElemCount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">satisfiedVars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py#L111-L158"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">RuleResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indicatorResults</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numElems</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeElemCount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">satisfiedVars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py#L111-L158"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id2" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a RuleResult with data for a RemeshingRule for a given adaptivity
 iteration.</p>
 <div class="admonition note">
@@ -1768,7 +1874,7 @@ Remeshing Rule.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference internal" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RuleResult</span></code></a></dt><dd><p>A <a class="reference internal" href="#id0" title="abaqus.Adaptivity.RuleResult.RuleResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">RuleResult</span></code></a> object.</p>
+<dt><a class="reference internal" href="#id2" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RuleResult</span></code></a></dt><dd><p>A <a class="reference internal" href="#abaqus.Adaptivity.RuleResult.RuleResult" title="abaqus.Adaptivity.RuleResult.RuleResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">RuleResult</span></code></a> object.</p>
 </dd>
 </dl>
 </dd>
@@ -1781,40 +1887,40 @@ Remeshing Rule.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.iteration">
-<span class="sig-name descname"><span class="pre">iteration</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.iteration" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="id3">
+<span class="sig-name descname"><span class="pre">iteration</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id3" title="Permalink to this definition">#</a></dt>
 <dd><p>An Int specifying the sequence number for this iteration in the adaptivity process.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.jobName">
-<span class="sig-name descname"><span class="pre">jobName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.jobName" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="id4">
+<span class="sig-name descname"><span class="pre">jobName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id4" title="Permalink to this definition">#</a></dt>
 <dd><p>A String specifying the name of the job that was run for this iteration.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.modelName">
-<span class="sig-name descname"><span class="pre">modelName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.modelName" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="id5">
+<span class="sig-name descname"><span class="pre">modelName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id5" title="Permalink to this definition">#</a></dt>
 <dd><p>A String specifying the name of the model that was analyzed and remeshed in this
 iteration.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.odbPath">
-<span class="sig-name descname"><span class="pre">odbPath</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.odbPath" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="id6">
+<span class="sig-name descname"><span class="pre">odbPath</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id6" title="Permalink to this definition">#</a></dt>
 <dd><p>A String specifying the path to the ODB file that was created for this iteration.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.remeshingErrors">
-<span class="sig-name descname"><span class="pre">remeshingErrors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.remeshingErrors" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="id7">
+<span class="sig-name descname"><span class="pre">remeshingErrors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id7" title="Permalink to this definition">#</a></dt>
 <dd><p>An Int specifying the number of part instances which generated errors while remeshing
 the model in this iteration of the adaptivity process.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ruleResults">
-<span class="sig-name descname"><span class="pre">ruleResults</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#id0" title="abaqus.Adaptivity.RuleResult.RuleResult"><span class="pre">RuleResult</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py#L18-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ruleResults" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="id8">
+<span class="sig-name descname"><span class="pre">ruleResults</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Adaptivity.RuleResult.RuleResult" title="abaqus.Adaptivity.RuleResult.RuleResult"><span class="pre">RuleResult</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityIteration.py#L18-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id8" title="Permalink to this definition">#</a></dt>
 <dd><p>A repository of RuleResult objects specifying the calculated results from sizing
 functions corresponding to the RemeshingRule objects for this iteration of an adaptivity
 process.</p>
@@ -1895,7 +2001,7 @@ the model in this iteration of the adaptivity process.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference internal" href="#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.AdaptivityIteration" title="abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.AdaptivityIteration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdaptivityIteration</span></code></a></dt><dd><p>An <a class="reference internal" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration"><code class="xref py py-class docutils literal notranslate"><span class="pre">AdaptivityIteration</span></code></a> object.</p>
+<dt><a class="reference internal" href="#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.AdaptivityIteration" title="abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.AdaptivityIteration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdaptivityIteration</span></code></a></dt><dd><p>An <a class="reference internal" href="#id0" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration"><code class="xref py py-class docutils literal notranslate"><span class="pre">AdaptivityIteration</span></code></a> object.</p>
 </dd>
 </dl>
 </dd>
@@ -1904,7 +2010,7 @@ the model in this iteration of the adaptivity process.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.iterations">
-<span class="sig-name descname"><span class="pre">iterations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration"><span class="pre">AdaptivityIteration</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityProcess.py#L23-L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.iterations" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">iterations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#id0" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration"><span class="pre">AdaptivityIteration</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/AdaptivityProcess.py#L23-L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.iterations" title="Permalink to this definition">#</a></dt>
 <dd><p>A repository of AdaptivityIteration objects specifying the AdaptivityIteration objects
 received during running the adaptivity process.</p>
 </dd></dl>
@@ -2611,8 +2717,8 @@ error indicators.</p>
 <section id="ruleresult">
 <h3>RuleResult<a class="headerlink" href="#ruleresult" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="id0">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RuleResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indicatorResults</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numElems</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeElemCount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">satisfiedVars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py#L9-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id0" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RuleResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indicatorResults</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numElems</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeElemCount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">satisfiedVars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py#L9-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult" title="Permalink to this definition">#</a></dt>
 <dd><p>The RuleResult object contains result information corresponding to a RemeshingRule
 object for an adaptivity iteration.</p>
 <div class="admonition note">
@@ -2624,35 +2730,35 @@ object for an adaptivity iteration.</p>
 </div>
 </div>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="id1">
-<span class="sig-name descname"><span class="pre">indicatorResults</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">abaqus.Adaptivity.RuleResult.ErrorIndicatorResult</span><span class="p"><span class="pre">]</span></span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id1" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult.indicatorResults">
+<span class="sig-name descname"><span class="pre">indicatorResults</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">abaqus.Adaptivity.RuleResult.ErrorIndicatorResult</span><span class="p"><span class="pre">]</span></span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult.indicatorResults" title="Permalink to this definition">#</a></dt>
 <dd><p>A repository of ErrorIndicatorResult objects specifying the calculated results from the
 sizing function corresponding to the error indicator variables for the Remeshing Rule.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="id2">
-<span class="sig-name descname"><span class="pre">minSizeElemCount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id2" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult.minSizeElemCount">
+<span class="sig-name descname"><span class="pre">minSizeElemCount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult.minSizeElemCount" title="Permalink to this definition">#</a></dt>
 <dd><p>An Int specifying the number of elements that were constrained to the minimum element
 size by the Remeshing Rule.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="id3">
-<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id3" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult.name" title="Permalink to this definition">#</a></dt>
 <dd><p>A String specifying the name of the Remeshing Rule to which these results correspond.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="id4">
-<span class="sig-name descname"><span class="pre">numElems</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id4" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult.numElems">
+<span class="sig-name descname"><span class="pre">numElems</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult.numElems" title="Permalink to this definition">#</a></dt>
 <dd><p>An Int specifying the number of elements before remeshing in the region of the Remeshing
 Rule.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="id5">
-<span class="sig-name descname"><span class="pre">satisfiedVars</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py#L37-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id5" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult.satisfiedVars">
+<span class="sig-name descname"><span class="pre">satisfiedVars</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Adaptivity/RuleResult.py#L37-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult.satisfiedVars" title="Permalink to this definition">#</a></dt>
 <dd><p>A sequence of Strings specifying the error indicator variables that have satisfied the
 Remeshing Rule.</p>
 </dd></dl>

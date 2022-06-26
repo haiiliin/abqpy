@@ -27,11 +27,15 @@ Step
     :members:
     :inherited-members:
 
+    .. autoclasstoc::
+
 AnalysisStep
 ~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Step.AnalysisStep.AnalysisStep
     :members:
+
+    .. autoclassdoc::
 
 AnnealStep
 ~~~~~~~~~~
@@ -39,11 +43,15 @@ AnnealStep
 .. autoclass:: abaqus.Step.AnnealStep.AnnealStep
     :members:
 
+    .. autoclassdoc::
+
 BuckleStep
 ~~~~~~~~~~
 
 .. autoclass:: abaqus.Step.BuckleStep.BuckleStep
     :members:
+
+    .. autoclassdoc::
 
 ComplexFrequencyStep
 ~~~~~~~~~~~~~~~~~~~~
@@ -51,11 +59,15 @@ ComplexFrequencyStep
 .. autoclass:: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep
     :members:
 
+    .. autoclassdoc::
+
 CoupledTempDisplacementStep
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep
     :members:
+
+    .. autoclassdoc::
 
 CoupledThermalElectricalStructuralStep
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -63,11 +75,15 @@ CoupledThermalElectricalStructuralStep
 .. autoclass:: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep
     :members:
 
+    .. autoclassdoc::
+
 CoupledThermalElectricStep
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep
     :members:
+
+    .. autoclassdoc::
 
 DirectCyclicStep
 ~~~~~~~~~~~~~~~~
@@ -75,11 +91,15 @@ DirectCyclicStep
 .. autoclass:: abaqus.Step.DirectCyclicStep.DirectCyclicStep
     :members:
 
+    .. autoclassdoc::
+
 EmagTimeHarmonicStep
 ~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep
     :members:
+
+    .. autoclassdoc::
 
 ExplicitDynamicsStep
 ~~~~~~~~~~~~~~~~~~~~
@@ -87,11 +107,15 @@ ExplicitDynamicsStep
 .. autoclass:: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep
     :members:
 
+    .. autoclassdoc::
+
 FrequencyStep
 ~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Step.FrequencyStep.FrequencyStep
     :members:
+
+    .. autoclassdoc::
 
 GeostaticStep
 ~~~~~~~~~~~~~
@@ -99,11 +123,15 @@ GeostaticStep
 .. autoclass:: abaqus.Step.GeostaticStep.GeostaticStep
     :members:
 
+    .. autoclassdoc::
+
 HeatTransferStep
 ~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Step.HeatTransferStep.HeatTransferStep
     :members:
+
+    .. autoclassdoc::
 
 ImplicitDynamicsStep
 ~~~~~~~~~~~~~~~~~~~~
@@ -111,11 +139,15 @@ ImplicitDynamicsStep
 .. autoclass:: abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep
     :members:
 
+    .. autoclassdoc::
+
 InitialStep
 ~~~~~~~~~~~
 
 .. autoclass:: abaqus.Step.InitialStep.InitialStep
     :members:
+
+    .. autoclassdoc::
 
 MassDiffusionStep
 ~~~~~~~~~~~~~~~~~
@@ -123,11 +155,15 @@ MassDiffusionStep
 .. autoclass:: abaqus.Step.MassDiffusionStep.MassDiffusionStep
     :members:
 
+    .. autoclassdoc::
+
 ModalDynamicsStep
 ~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep
     :members:
+
+    .. autoclassdoc::
 
 RandomResponseStep
 ~~~~~~~~~~~~~~~~~~
@@ -135,11 +171,15 @@ RandomResponseStep
 .. autoclass:: abaqus.Step.RandomResponseStep.RandomResponseStep
     :members:
 
+    .. autoclassdoc::
+
 ResponseSpectrumStep
 ~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep
     :members:
+
+    .. autoclassdoc::
 
 SoilsStep
 ~~~~~~~~~
@@ -147,11 +187,15 @@ SoilsStep
 .. autoclass:: abaqus.Step.SoilsStep.SoilsStep
     :members:
 
+    .. autoclassdoc::
+
 StaticLinearPerturbationStep
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep
     :members:
+
+    .. autoclassdoc::
 
 StaticRiksStep
 ~~~~~~~~~~~~~~
@@ -159,11 +203,15 @@ StaticRiksStep
 .. autoclass:: abaqus.Step.StaticRiksStep.StaticRiksStep
     :members:
 
+    .. autoclassdoc::
+
 StaticStep
 ~~~~~~~~~~
 
 .. autoclass:: abaqus.Step.StaticStep.StaticStep
     :members:
+
+    .. autoclassdoc::
 
 SteadyStateDirectStep
 ~~~~~~~~~~~~~~~~~~~~~
@@ -171,11 +219,15 @@ SteadyStateDirectStep
 .. autoclass:: abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep
     :members:
 
+    .. autoclassdoc::
+
 SteadyStateModalStep
 ~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Step.SteadyStateModalStep.SteadyStateModalStep
     :members:
+
+    .. autoclassdoc::
 
 SteadyStateSubspaceStep
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -183,11 +235,15 @@ SteadyStateSubspaceStep
 .. autoclass:: abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep
     :members:
 
+    .. autoclassdoc::
+
 SubspaceDynamicsStep
 ~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep
     :members:
+
+    .. autoclassdoc::
 
 SubstructureGenerateStep
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -195,14 +251,20 @@ SubstructureGenerateStep
 .. autoclass:: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep
     :members:
 
+    .. autoclassdoc::
+
 TempDisplacementDynamicsStep
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep
     :members:
 
+    .. autoclassdoc::
+
 ViscoStep
 ~~~~~~~~~
 
 .. autoclass:: abaqus.Step.ViscoStep.ViscoStep
     :members:
+
+    .. autoclassdoc::

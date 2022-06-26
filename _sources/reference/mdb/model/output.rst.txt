@@ -26,11 +26,15 @@ DiagnosticPrint
 .. autoclass:: abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint
     :members:
 
+    .. autoclassdoc::
+
 FieldOutputRequest
 ~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest
     :members:
+
+    .. autoclassdoc::
 
 FieldOutputRequestState
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -38,11 +42,15 @@ FieldOutputRequestState
 .. autoclass:: abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState
     :members:
 
+    .. autoclassdoc::
+
 HistoryOutputRequest
 ~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest
     :members:
+
+    .. autoclassdoc::
 
 HistoryOutputRequestState
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -50,11 +58,15 @@ HistoryOutputRequestState
 .. autoclass:: abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState
     :members:
 
+    .. autoclassdoc::
+
 IntegratedOutputSection
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection
     :members:
+
+    .. autoclassdoc::
 
 Monitor
 ~~~~~~~
@@ -62,14 +74,20 @@ Monitor
 .. autoclass:: abaqus.StepOutput.Monitor.Monitor
     :members:
 
+    .. autoclassdoc::
+
 Restart
 ~~~~~~~
 
 .. autoclass:: abaqus.StepOutput.Restart.Restart
     :members:
 
+    .. autoclassdoc::
+
 TimePoint
 ~~~~~~~~~
 
 .. autoclass:: abaqus.StepOutput.TimePoint.TimePoint
     :members:
+
+    .. autoclassdoc::

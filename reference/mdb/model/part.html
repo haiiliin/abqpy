@@ -9,6 +9,7 @@
         <title>Part - abqpy 2016a0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
     
@@ -1569,8 +1570,8 @@ where i and j are zero-based element and face indices, respectively.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Part.PartBase.PartBase.engineeringFeatures">
-<span class="sig-name descname"><span class="pre">engineeringFeatures</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/PartBase.py#L146-L147"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.PartBase.PartBase.engineeringFeatures" title="Permalink to this definition">#</a></dt>
-<dd><p>An <code class="xref py py-class docutils literal notranslate"><span class="pre">EngineeringFeature</span></code> object.</p>
+<span class="sig-name descname"><span class="pre">engineeringFeatures</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/engineering.html#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature" title="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature"><span class="pre">EngineeringFeature</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/PartBase.py#L146-L147"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.PartBase.PartBase.engineeringFeatures" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="part_assembly/engineering.html#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature" title="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature"><code class="xref py py-class docutils literal notranslate"><span class="pre">EngineeringFeature</span></code></a> object.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -4035,6 +4036,11 @@ ZAXIS.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.DatumAxisByRotation">
+<span class="sig-name descname"><span class="pre">DatumAxisByRotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L509-L510"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.DatumAxisByRotation" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Part.Part.Part.DatumAxisByThreePoint">
 <span class="sig-name descname"><span class="pre">DatumAxisByThreePoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point3</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L512-L545"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.DatumAxisByThreePoint" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object normal to the circle
@@ -4399,6 +4405,11 @@ specified line and through the specified point that does not lie on the line.</p
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.DatumPlaneByOffset">
+<span class="sig-name descname"><span class="pre">DatumPlaneByOffset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L910-L911"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.DatumPlaneByOffset" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Part.Part.Part.DatumPlaneByPointNormal">
@@ -6987,7 +6998,7 @@ location.</p>
 </dd>
 <dt class="field-odd">Raises</dt>
 <dd class="field-odd"><dl class="simple">
-<dt>Parterror: <code class="xref py py-obj docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">that</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> 3-dimensional <code class="xref py py-obj docutils literal notranslate"><span class="pre">does</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">contain</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">cells</span></code></dt><dd><p>If the intended volume to be turned into a shell entity is not three-dimensional.</p>
+<dt>Parterror: <code class="xref py py-obj docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">that</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> 3-dimensional <code class="xref py py-obj docutils literal notranslate"><span class="pre">does</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">contain</span></code> <a class="reference internal" href="#abaqus.Part.Part.Part.cells" title="abaqus.Part.Part.Part.cells"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cells</span></code></a></dt><dd><p>If the intended volume to be turned into a shell entity is not three-dimensional.</p>
 </dd>
 </dl>
 </dd>
@@ -8467,6 +8478,32 @@ node. The default value is 0.5.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.allInternalSets">
+<span class="sig-name descname"><span class="pre">allInternalSets</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Set.Set" title="abaqus.Region.Set.Set"><span class="pre">Set</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.allInternalSets" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Set objects specifying picked regions.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.allInternalSurfaces">
+<span class="sig-name descname"><span class="pre">allInternalSurfaces</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Surface.Surface" title="abaqus.Region.Surface.Surface"><span class="pre">Surface</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.allInternalSurfaces" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Surface objects specifying picked regions.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.allSets">
+<span class="sig-name descname"><span class="pre">allSets</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Set.Set" title="abaqus.Region.Set.Set"><span class="pre">Set</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.allSets" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Set objects specifying the contents of the <strong>allSets</strong> repository is the
+same as the contents of the <strong>sets</strong> repository.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.allSurfaces">
+<span class="sig-name descname"><span class="pre">allSurfaces</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Surface.Surface" title="abaqus.Region.Surface.Surface"><span class="pre">Surface</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.allSurfaces" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Surface objects specifying the contents of the <strong>allSurfaces</strong> repository
+is the same as the contents of the <strong>surfaces</strong> repository.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Part.Part.Part.assignStackDirection">
 <span class="sig-name descname"><span class="pre">assignStackDirection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceRegion</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L29-L40"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.assignStackDirection" title="Permalink to this definition">#</a></dt>
@@ -8552,6 +8589,12 @@ geometric edge.</p>
 <span class="sig-name descname"><span class="pre">backup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L911-L915"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.backup" title="Permalink to this definition">#</a></dt>
 <dd><p>This method makes a backup copy of the features in the part. Use the restore method to
 retrieve the part’s features from the backup.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.cells">
+<span class="sig-name descname"><span class="pre">cells</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.CellArray.CellArray" title="abaqus.BasicGeometry.CellArray.CellArray"><span class="pre">CellArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.BasicGeometry.CellArray.CellArray</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.cells" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.CellArray.CellArray" title="abaqus.BasicGeometry.CellArray.CellArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">CellArray</span></code></a> object specifying all the cells in the part.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -8686,6 +8729,12 @@ mesh.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.compositeLayups">
+<span class="sig-name descname"><span class="pre">compositeLayups</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="property.html#abaqus.Property.CompositeLayup.CompositeLayup" title="abaqus.Property.CompositeLayup.CompositeLayup"><span class="pre">CompositeLayup</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.compositeLayups" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of CompositeLayup objects.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Part.Part.Part.convertSolidMeshToShell">
 <span class="sig-name descname"><span class="pre">convertSolidMeshToShell</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L114-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.convertSolidMeshToShell" title="Permalink to this definition">#</a></dt>
@@ -8810,6 +8859,12 @@ equals False.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.datums">
+<span class="sig-name descname"><span class="pre">datums</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="part_assembly/datum.html#abaqus.Datum.Datum.Datum" title="abaqus.Datum.Datum.Datum"><span class="pre">Datum</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.datums" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Datum objects specifying all the datums in the part.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -8973,6 +9028,12 @@ seeds are to be deleted.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.edges">
+<span class="sig-name descname"><span class="pre">edges</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.EdgeArray.EdgeArray" title="abaqus.BasicGeometry.EdgeArray.EdgeArray"><span class="pre">EdgeArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.BasicGeometry.EdgeArray.EdgeArray</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.edges" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.EdgeArray.EdgeArray" title="abaqus.BasicGeometry.EdgeArray.EdgeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">EdgeArray</span></code></a> object specifying all the edges in the part.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Part.Part.Part.editNode">
 <span class="sig-name descname"><span class="pre">editNode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coordinate1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coordinate2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coordinate3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coordinates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectToGeometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L153-L209"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.editNode" title="Permalink to this definition">#</a></dt>
@@ -9022,6 +9083,71 @@ location and then projects it back to the original face. The default value is ON
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.elemEdges">
+<span class="sig-name descname"><span class="pre">elemEdges</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="mesh.html#abaqus.Mesh.MeshEdge.MeshEdge" title="abaqus.Mesh.MeshEdge.MeshEdge"><span class="pre">MeshEdge</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.elemEdges" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of MeshEdge objects specifying all the element edges in the part. For a
+given element and a given edge index on a given face within that element, the
+corresponding MeshEdge object can be retrieved from the repository by using the key
+calculated as (i*32 + j*4 + k), where i, j, and k are zero-based element, face, and edge
+indices, respectively.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.elemFaces">
+<span class="sig-name descname"><span class="pre">elemFaces</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="mesh.html#abaqus.Mesh.MeshFace.MeshFace" title="abaqus.Mesh.MeshFace.MeshFace"><span class="pre">MeshFace</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.elemFaces" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of MeshFace objects specifying all the element faces in the part. For a
+given element and a given face index within that element, the corresponding MeshFace
+object can be retrieved from the repository by using the key calculated as (i*8 + j),
+where i and j are zero-based element and face indices, respectively.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.elementEdges">
+<span class="sig-name descname"><span class="pre">elementEdges</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="mesh.html#abaqus.Mesh.MeshEdgeArray.MeshEdgeArray" title="abaqus.Mesh.MeshEdgeArray.MeshEdgeArray"><span class="pre">MeshEdgeArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.elementEdges" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="mesh.html#abaqus.Mesh.MeshEdgeArray.MeshEdgeArray" title="abaqus.Mesh.MeshEdgeArray.MeshEdgeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshEdgeArray</span></code></a> object specifying all the unique element edges in the part.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.elementFaces">
+<span class="sig-name descname"><span class="pre">elementFaces</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="mesh.html#abaqus.Mesh.MeshFaceArray.MeshFaceArray" title="abaqus.Mesh.MeshFaceArray.MeshFaceArray"><span class="pre">MeshFaceArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.elementFaces" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="mesh.html#abaqus.Mesh.MeshFaceArray.MeshFaceArray" title="abaqus.Mesh.MeshFaceArray.MeshFaceArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshFaceArray</span></code></a> object specifying all the unique element faces in the part.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.elements">
+<span class="sig-name descname"><span class="pre">elements</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="mesh.html#abaqus.Mesh.MeshElementArray.MeshElementArray" title="abaqus.Mesh.MeshElementArray.MeshElementArray"><span class="pre">MeshElementArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.elements" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="mesh.html#abaqus.Mesh.MeshElementArray.MeshElementArray" title="abaqus.Mesh.MeshElementArray.MeshElementArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshElementArray</span></code></a> object specifying all the elements in the part.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.engineeringFeatures">
+<span class="sig-name descname"><span class="pre">engineeringFeatures</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/engineering.html#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature" title="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature"><span class="pre">EngineeringFeature</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.engineeringFeatures" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="part_assembly/engineering.html#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature" title="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature"><code class="xref py py-class docutils literal notranslate"><span class="pre">EngineeringFeature</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.faces">
+<span class="sig-name descname"><span class="pre">faces</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.FaceArray.FaceArray" title="abaqus.BasicGeometry.FaceArray.FaceArray"><span class="pre">FaceArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.BasicGeometry.FaceArray.FaceArray</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.faces" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.FaceArray.FaceArray" title="abaqus.BasicGeometry.FaceArray.FaceArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">FaceArray</span></code></a> object specifying all the faces in the part.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.features">
+<span class="sig-name descname"><span class="pre">features</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><span class="pre">Feature</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.features" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Feature objects specifying all the features in the part.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.featuresById">
+<span class="sig-name descname"><span class="pre">featuresById</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><span class="pre">Feature</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.featuresById" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Feature objects specifying all Feature objects in the part. The Feature
+objects in the featuresById repository are the same as the Feature objects in the
+features’ repository. However, the key to the objects in the featuresById repository is
+an integer specifying the <strong>ID</strong>, whereas the key to the objects in the features
+repository is a string specifying the <strong>name</strong>.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -9210,6 +9336,14 @@ extended to include corresponding offset elements. The default value is False.</
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.geometryValidity">
+<span class="sig-name descname"><span class="pre">geometryValidity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Boolean</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.geometryValidity" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying the validity of the geometry of the part. The value is computed,
+but it can be set to ON to perform feature and mesh operations on an invalid part. There
+is no guarantee that such operations will work if the part was originally invalid.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -9582,7 +9716,7 @@ consistent with the dimension of the <strong>region</strong>.</p>
 </dd>
 <dt class="field-odd">Raises</dt>
 <dd class="field-odd"><dl>
-<dt><strong>Error</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Incorrect</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">feature</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></span></dt><dd><p>An exception occurs if a feature with the given name does not exist.</p>
+<dt><strong>Error</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Incorrect</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">feature</span></code> <a class="reference internal" href="#abaqus.Part.Part.Part.name" title="abaqus.Part.Part.Part.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></span></dt><dd><p>An exception occurs if a feature with the given name does not exist.</p>
 </dd>
 </dl>
 </dd>
@@ -9608,7 +9742,7 @@ consistent with the dimension of the <strong>region</strong>.</p>
 </dd>
 <dt class="field-odd">Raises</dt>
 <dd class="field-odd"><dl class="simple">
-<dt>Error: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Incorrect</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">feature</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></dt><dd><p>An exception occurs if a feature with the given name does not exist.</p>
+<dt>Error: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Incorrect</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">feature</span></code> <a class="reference internal" href="#abaqus.Part.Part.Part.name" title="abaqus.Part.Part.Part.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></dt><dd><p>An exception occurs if a feature with the given name does not exist.</p>
 </dd>
 </dl>
 </dd>
@@ -9634,7 +9768,7 @@ consistent with the dimension of the <strong>region</strong>.</p>
 </dd>
 <dt class="field-odd">Raises</dt>
 <dd class="field-odd"><dl>
-<dt><strong>Error</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Incorrect</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">feature</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></span></dt><dd><p>An exception occurs if a feature with the given name does not exist.</p>
+<dt><strong>Error</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Incorrect</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">feature</span></code> <a class="reference internal" href="#abaqus.Part.Part.Part.name" title="abaqus.Part.Part.Part.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></span></dt><dd><p>An exception occurs if a feature with the given name does not exist.</p>
 </dd>
 </dl>
 </dd>
@@ -9660,7 +9794,7 @@ consistent with the dimension of the <strong>region</strong>.</p>
 </dd>
 <dt class="field-odd">Raises</dt>
 <dd class="field-odd"><dl class="simple">
-<dt>Error: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Incorrect</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">feature</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></dt><dd><p>An exception occurs if a feature with the given name does not exist.</p>
+<dt>Error: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Incorrect</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">feature</span></code> <a class="reference internal" href="#abaqus.Part.Part.Part.name" title="abaqus.Part.Part.Part.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></dt><dd><p>An exception occurs if a feature with the given name does not exist.</p>
 </dd>
 </dl>
 </dd>
@@ -9994,6 +10128,12 @@ an analysis but are either unmeshed or are meshed incompletely.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.id">
+<span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.id" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the ID of the feature.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Part.Part.Part.ignoreEntity">
 <span class="sig-name descname"><span class="pre">ignoreEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L640-L656"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.ignoreEntity" title="Permalink to this definition">#</a></dt>
@@ -10017,6 +10157,18 @@ specifying a common vertex to ignore.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.ignoredEdges">
+<span class="sig-name descname"><span class="pre">ignoredEdges</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray" title="abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray"><span class="pre">IgnoredEdgeArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.ignoredEdges" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray" title="abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">IgnoredEdgeArray</span></code></a> object specifying all the ignored edges in the part.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.ignoredVertices">
+<span class="sig-name descname"><span class="pre">ignoredVertices</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray" title="abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray"><span class="pre">IgnoredVertexArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.ignoredVertices" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray" title="abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">IgnoredVertexArray</span></code></a> object specifying all the ignored vertices in the part.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Part.Part.Part.isAlignedWithSketch">
 <span class="sig-name descname"><span class="pre">isAlignedWithSketch</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L1379-L1394"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.isAlignedWithSketch" title="Permalink to this definition">#</a></dt>
@@ -10037,6 +10189,13 @@ aligned.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.isOutOfDate">
+<span class="sig-name descname"><span class="pre">isOutOfDate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.isOutOfDate" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying that feature parameters have been modified but that the part has not
+been regenerated. Possible values are 0 and 1.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -10113,6 +10272,12 @@ aligned.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.materialOrientations">
+<span class="sig-name descname"><span class="pre">materialOrientations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="property.html#abaqus.Property.MaterialOrientationArray.MaterialOrientationArray" title="abaqus.Property.MaterialOrientationArray.MaterialOrientationArray"><span class="pre">MaterialOrientationArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.materialOrientations" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="property.html#abaqus.Property.MaterialOrientationArray.MaterialOrientationArray" title="abaqus.Property.MaterialOrientationArray.MaterialOrientationArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MaterialOrientationArray</span></code></a> object.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Part.Part.Part.mergeElement">
 <span class="sig-name descname"><span class="pre">mergeElement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elements</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L292-L307"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.mergeElement" title="Permalink to this definition">#</a></dt>
@@ -10132,6 +10297,23 @@ containing the elements to be included in the merge operation.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.mergeNodes">
+<span class="sig-name descname"><span class="pre">mergeNodes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L366-L367"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.mergeNodes" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the repository key.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.nodes">
+<span class="sig-name descname"><span class="pre">nodes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="mesh.html#abaqus.Mesh.MeshNodeArray.MeshNodeArray" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray"><span class="pre">MeshNodeArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.nodes" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="mesh.html#abaqus.Mesh.MeshNodeArray.MeshNodeArray" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshNodeArray</span></code></a> object specifying all the nodes in the part.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -10345,6 +10527,12 @@ on the assembly. It also implies that the user provided a sufficient cache allow
 store the undo operation.</p>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.referencePoints">
+<span class="sig-name descname"><span class="pre">referencePoints</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.ReferencePoints.ReferencePoints" title="abaqus.BasicGeometry.ReferencePoints.ReferencePoints"><span class="pre">ReferencePoints</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.referencePoints" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of ReferencePoint objects.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Part.Part.Part.regenerate">
 <span class="sig-name descname"><span class="pre">regenerate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L1532-L1537"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.regenerate" title="Permalink to this definition">#</a></dt>
@@ -10514,11 +10702,23 @@ resumes the parent features automatically.</p>
 <dd><p>This method resumes the last set of features to be suppressed in the part.</p>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.retainedNodes">
+<span class="sig-name descname"><span class="pre">retainedNodes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="mesh.html#abaqus.Mesh.MeshNodeArray.MeshNodeArray" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray"><span class="pre">MeshNodeArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.retainedNodes" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="mesh.html#abaqus.Mesh.MeshNodeArray.MeshNodeArray" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshNodeArray</span></code></a> object specifying all the retained nodes in the substructure part.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Part.Part.Part.saveGeometryCache">
 <span class="sig-name descname"><span class="pre">saveGeometryCache</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L1577-L1581"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.saveGeometryCache" title="Permalink to this definition">#</a></dt>
 <dd><p>This method caches the current geometry. Caching the current geometry improves
 regeneration performance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.sectionAssignments">
+<span class="sig-name descname"><span class="pre">sectionAssignments</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="property.html#abaqus.Property.SectionAssignmentArray.SectionAssignmentArray" title="abaqus.Property.SectionAssignmentArray.SectionAssignmentArray"><span class="pre">SectionAssignmentArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.sectionAssignments" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="property.html#abaqus.Property.SectionAssignmentArray.SectionAssignmentArray" title="abaqus.Property.SectionAssignmentArray.SectionAssignmentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">SectionAssignmentArray</span></code></a> object.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -10896,6 +11096,18 @@ underlying curve will be used.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.sets">
+<span class="sig-name descname"><span class="pre">sets</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Set.Set" title="abaqus.Region.Set.Set"><span class="pre">Set</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.sets" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Set objects specifying for more information, see Set.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.skins">
+<span class="sig-name descname"><span class="pre">skins</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Skin.Skin" title="abaqus.Region.Skin.Skin"><span class="pre">Skin</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.skins" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Skin objects specifying the skins created on the part.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Part.Part.Part.smoothNodes">
 <span class="sig-name descname"><span class="pre">smoothNodes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodes</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L1733-L1742"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.smoothNodes" title="Permalink to this definition">#</a></dt>
@@ -10943,6 +11155,12 @@ values are 0.0 &lt;&lt; <strong>parameter</strong> &lt;&lt; 1.0. The default val
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.stringers">
+<span class="sig-name descname"><span class="pre">stringers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Stringer.Stringer" title="abaqus.Region.Stringer.Stringer"><span class="pre">Stringer</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.stringers" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Stringer objects specifying the stringers created on the part.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -11000,6 +11218,12 @@ suppressed automatically. Suppressed features can be restored with the resume co
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.surfaces">
+<span class="sig-name descname"><span class="pre">surfaces</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Surface.Surface" title="abaqus.Region.Surface.Surface"><span class="pre">Surface</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.surfaces" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Surface objects specifying for more information, see Surface.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Part.Part.Part.swapMeshEdge">
 <span class="sig-name descname"><span class="pre">swapMeshEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L535-L544"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.swapMeshEdge" title="Permalink to this definition">#</a></dt>
@@ -11013,6 +11237,12 @@ part or an Abaqus native mesh.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.timeStamp">
+<span class="sig-name descname"><span class="pre">timeStamp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.timeStamp" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying when the part was last modified.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -11103,6 +11333,12 @@ numElements (Int); average, worst (Float); worstElement
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.Part.Part.vertices">
+<span class="sig-name descname"><span class="pre">vertices</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.VertexArray.VertexArray" title="abaqus.BasicGeometry.VertexArray.VertexArray"><span class="pre">VertexArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.BasicGeometry.VertexArray.VertexArray</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part.vertices" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.VertexArray.VertexArray" title="abaqus.BasicGeometry.VertexArray.VertexArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">VertexArray</span></code></a> object specifying all the vertices in the part.</p>
 </dd></dl>
 
 <dl class="py method">

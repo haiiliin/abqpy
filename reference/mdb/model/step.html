@@ -9,6 +9,7 @@
         <title>Step - abqpy 2016a0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
     
@@ -2629,6 +2630,143 @@ derived from the Step.</p>
 </pre></div>
 </div>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">StepBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.name" title="abaqus.Step.Step.Step.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.explicit" title="abaqus.Step.Step.Step.explicit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">explicit</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether the step has an explicit procedure type (<a href="#id6"><span class="problematic" id="id7">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.perturbation" title="abaqus.Step.Step.Step.perturbation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">perturbation</span></code></a></p></td>
+<td><p>A Boolean specifying whether the step has a perturbation procedure type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.nonmechanical" title="abaqus.Step.Step.Step.nonmechanical"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nonmechanical</span></code></a></p></td>
+<td><p>A Boolean specifying whether the step has a mechanical procedure type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.procedureType" title="abaqus.Step.Step.Step.procedureType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">procedureType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the Abaqus procedure.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.suppressed" title="abaqus.Step.Step.Step.suppressed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressed</span></code></a></p></td>
+<td><p>A Boolean specifying whether the step is suppressed or not.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.fieldOutputRequestState" title="abaqus.Step.Step.Step.fieldOutputRequestState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldOutputRequestState</span></code></a></p></td>
+<td><p>A repository of FieldOutputRequestState objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.historyOutputRequestState" title="abaqus.Step.Step.Step.historyOutputRequestState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">historyOutputRequestState</span></code></a></p></td>
+<td><p>A repository of HistoryOutputRequestState objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.diagnosticPrint" title="abaqus.Step.Step.Step.diagnosticPrint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">diagnosticPrint</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="output.html#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint" title="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint"><code class="xref py py-class docutils literal notranslate"><span class="pre">DiagnosticPrint</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.monitor" title="abaqus.Step.Step.Step.monitor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">monitor</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="output.html#abaqus.StepOutput.Monitor.Monitor" title="abaqus.StepOutput.Monitor.Monitor"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monitor</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.restart" title="abaqus.Step.Step.Step.restart"><code class="xref py py-obj docutils literal notranslate"><span class="pre">restart</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="output.html#abaqus.StepOutput.Restart.Restart" title="abaqus.StepOutput.Restart.Restart"><code class="xref py py-class docutils literal notranslate"><span class="pre">Restart</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.adaptiveMeshConstraintStates" title="abaqus.Step.Step.Step.adaptiveMeshConstraintStates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshConstraintStates</span></code></a></p></td>
+<td><p>A repository of AdaptiveMeshConstraintState objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.adaptiveMeshDomains" title="abaqus.Step.Step.Step.adaptiveMeshDomains"><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshDomains</span></code></a></p></td>
+<td><p>A repository of AdaptiveMeshDomain objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.control" title="abaqus.Step.Step.Step.control"><code class="xref py py-obj docutils literal notranslate"><span class="pre">control</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="step/step_miscellaneous.html#abaqus.StepMiscellaneous.Control.Control" title="abaqus.StepMiscellaneous.Control.Control"><code class="xref py py-class docutils literal notranslate"><span class="pre">Control</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.solverControl" title="abaqus.Step.Step.Step.solverControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">solverControl</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="step/step_miscellaneous.html#abaqus.StepMiscellaneous.SolverControl.SolverControl" title="abaqus.StepMiscellaneous.SolverControl.SolverControl"><code class="xref py py-class docutils literal notranslate"><span class="pre">SolverControl</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.boundaryConditionStates" title="abaqus.Step.Step.Step.boundaryConditionStates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundaryConditionStates</span></code></a></p></td>
+<td><p>A repository of BoundaryConditionState objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.interactionStates" title="abaqus.Step.Step.Step.interactionStates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactionStates</span></code></a></p></td>
+<td><p>A repository of InteractionState objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.loadStates" title="abaqus.Step.Step.Step.loadStates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">loadStates</span></code></a></p></td>
+<td><p>A repository of LoadState objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.loadCases" title="abaqus.Step.Step.Step.loadCases"><code class="xref py py-obj docutils literal notranslate"><span class="pre">loadCases</span></code></a></p></td>
+<td><p>A repository of LoadCase objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.predefinedFieldStates" title="abaqus.Step.Step.Step.predefinedFieldStates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predefinedFieldStates</span></code></a></p></td>
+<td><p>A repository of PredefinedFieldState objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.activateElements" title="abaqus.Step.Step.Step.activateElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">activateElements</span></code></a></p></td>
+<td><p>A repository of ActivateElements objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">AdaptivityStep</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.AdaptiveMeshConstraintState" title="abaqus.Step.Step.Step.AdaptiveMeshConstraintState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdaptiveMeshConstraintState</span></code></a>([...])</p></td>
+<td><p>The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary Lagrangian Eularian (ALE) style AdaptiveMeshConstraintState objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.DisplacementAdaptiveMeshConstraintState" title="abaqus.Step.Step.Step.DisplacementAdaptiveMeshConstraintState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisplacementAdaptiveMeshConstraintState</span></code></a>([...])</p></td>
+<td><p>The DisplacementAdaptiveMeshConstraintState object stores the propagating data for an Arbitrary Lagrangian Eularian (ALE) style displacement/rotation adaptive mesh constraint in a step.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.VelocityAdaptiveMeshConstraintState" title="abaqus.Step.Step.Step.VelocityAdaptiveMeshConstraintState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VelocityAdaptiveMeshConstraintState</span></code></a>([v1, ...])</p></td>
+<td><p>The VelocityAdaptiveMeshConstraintState object stores the propagating data for an Arbitrary Lagrangian Eularian (ALE) style velocity adaptive mesh constraint in a step.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.AdaptiveMeshDomain" title="abaqus.Step.Step.Step.AdaptiveMeshDomain"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdaptiveMeshDomain</span></code></a>(region[, controls, ...])</p></td>
+<td><p>The AdaptiveMeshDomain object defines the region and controls that govern an Arbitrary Lagrangian Eularian (ALE) style adaptive smoothing mesh domain.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OutputStep</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.DiagnosticPrint" title="abaqus.Step.Step.Step.DiagnosticPrint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DiagnosticPrint</span></code></a>([allke, criticalElement, ...])</p></td>
+<td><p>This method creates a DiagnosticPrint object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.Monitor" title="abaqus.Step.Step.Step.Monitor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Monitor</span></code></a>(node, dof, frequency)</p></td>
+<td><p>This method creates a request for a degree of freedom to be monitored in a general or modal procedure.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.Restart" title="abaqus.Step.Step.Step.Restart"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Restart</span></code></a>([numberIntervals, timeMarks, ...])</p></td>
+<td><p>This method creates a restart request.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">StepBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.resume" title="abaqus.Step.Step.Step.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
+<td><p>This method resumes the step that was previously suppressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Step.Step.Step.suppress" title="abaqus.Step.Step.Step.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
+<td><p>This method suppresses the step.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Step.Step.Step.AdaptiveMeshConstraintState">
 <span class="sig-name descname"><span class="pre">AdaptiveMeshConstraintState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">amplitudeState</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L27-L81"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.AdaptiveMeshConstraintState" title="Permalink to this definition">#</a></dt>
@@ -3041,16 +3179,171 @@ constraint has no amplitude reference.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.activateElements">
+<span class="sig-name descname"><span class="pre">activateElements</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="../../kernel/table_collection.html#abaqus.TableCollection.ActivateElements.ActivateElements" title="abaqus.TableCollection.ActivateElements.ActivateElements"><span class="pre">ActivateElements</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.activateElements" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of ActivateElements objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.adaptiveMeshConstraintStates">
+<span class="sig-name descname"><span class="pre">adaptiveMeshConstraintStates</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="adaptivity.html#abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState" title="abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState"><span class="pre">AdaptiveMeshConstraintState</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.adaptiveMeshConstraintStates" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of AdaptiveMeshConstraintState objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.adaptiveMeshDomains">
+<span class="sig-name descname"><span class="pre">adaptiveMeshDomains</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="adaptivity.html#abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain" title="abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain"><span class="pre">AdaptiveMeshDomain</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.adaptiveMeshDomains" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of AdaptiveMeshDomain objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.boundaryConditionStates">
+<span class="sig-name descname"><span class="pre">boundaryConditionStates</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="bc.html#abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState" title="abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState"><span class="pre">BoundaryConditionState</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.boundaryConditionStates" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of BoundaryConditionState objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.control">
+<span class="sig-name descname"><span class="pre">control</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="step/step_miscellaneous.html#abaqus.StepMiscellaneous.Control.Control" title="abaqus.StepMiscellaneous.Control.Control"><span class="pre">Control</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.StepMiscellaneous.Control.Control</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.control" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="step/step_miscellaneous.html#abaqus.StepMiscellaneous.Control.Control" title="abaqus.StepMiscellaneous.Control.Control"><code class="xref py py-class docutils literal notranslate"><span class="pre">Control</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.diagnosticPrint">
+<span class="sig-name descname"><span class="pre">diagnosticPrint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="output.html#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint" title="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint"><span class="pre">DiagnosticPrint</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.diagnosticPrint" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="output.html#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint" title="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint"><code class="xref py py-class docutils literal notranslate"><span class="pre">DiagnosticPrint</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.explicit">
+<span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.explicit" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
+(<a href="#id8"><span class="problematic" id="id9">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.fieldOutputRequestState">
+<span class="sig-name descname"><span class="pre">fieldOutputRequestState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="output.html#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState" title="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState"><span class="pre">FieldOutputRequestState</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.fieldOutputRequestState" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of FieldOutputRequestState objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.historyOutputRequestState">
+<span class="sig-name descname"><span class="pre">historyOutputRequestState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="output.html#abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState" title="abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState"><span class="pre">HistoryOutputRequestState</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.historyOutputRequestState" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of HistoryOutputRequestState objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.interactionStates">
+<span class="sig-name descname"><span class="pre">interactionStates</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.interactionStates" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of InteractionState objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.loadCases">
+<span class="sig-name descname"><span class="pre">loadCases</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="load.html#abaqus.Load.LoadCase.LoadCase" title="abaqus.Load.LoadCase.LoadCase"><span class="pre">LoadCase</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.loadCases" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of LoadCase objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.loadStates">
+<span class="sig-name descname"><span class="pre">loadStates</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="load.html#abaqus.Load.LoadState.LoadState" title="abaqus.Load.LoadState.LoadState"><span class="pre">LoadState</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.loadStates" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of LoadState objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.monitor">
+<span class="sig-name descname"><span class="pre">monitor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="output.html#abaqus.StepOutput.Monitor.Monitor" title="abaqus.StepOutput.Monitor.Monitor"><span class="pre">Monitor</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.monitor" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="output.html#abaqus.StepOutput.Monitor.Monitor" title="abaqus.StepOutput.Monitor.Monitor"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monitor</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the repository key.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.nonmechanical">
+<span class="sig-name descname"><span class="pre">nonmechanical</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Boolean</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.nonmechanical" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the step has a mechanical procedure type.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.perturbation">
+<span class="sig-name descname"><span class="pre">perturbation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Boolean</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.perturbation" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the step has a perturbation procedure type.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.predefinedFieldStates">
+<span class="sig-name descname"><span class="pre">predefinedFieldStates</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="predefined.html#abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState" title="abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState"><span class="pre">PredefinedFieldState</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.predefinedFieldStates" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of PredefinedFieldState objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.procedureType">
+<span class="sig-name descname"><span class="pre">procedureType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.procedureType" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the Abaqus procedure. Possible values are:</p>
+<ul class="simple">
+<li><p>ANNEAL</p></li>
+<li><p>BUCKLE</p></li>
+<li><p>COMPLEX_FREQUENCY</p></li>
+<li><p>COUPLED_TEMP_DISPLACEMENT</p></li>
+<li><p>COUPLED_THERMAL_ELECTRIC</p></li>
+<li><p>DIRECT_CYCLIC</p></li>
+<li><p>DYNAMIC_IMPLICIT</p></li>
+<li><p>DYNAMIC_EXPLICIT</p></li>
+<li><p>DYNAMIC_SUBSPACE</p></li>
+<li><p>DYNAMIC_TEMP_DISPLACEMENT</p></li>
+<li><p>COUPLED_THERMAL_ELECTRICAL_STRUCTURAL</p></li>
+<li><p>FREQUENCY</p></li>
+<li><p>GEOSTATIC</p></li>
+<li><p>HEAT_TRANSFER</p></li>
+<li><p>MASS_DIFFUSION</p></li>
+<li><p>MODAL_DYNAMICS</p></li>
+<li><p>RANDOM_RESPONSE</p></li>
+<li><p>RESPONSE_SPECTRUM</p></li>
+<li><p>SOILS</p></li>
+<li><p>STATIC_GENERAL</p></li>
+<li><p>STATIC_LINEAR_PERTURBATION</p></li>
+<li><p>STATIC_RIKS</p></li>
+<li><p>STEADY_STATE_DIRECT</p></li>
+<li><p>STEADY_STATE_MODAL</p></li>
+<li><p>STEADY_STATE_SUBSPACE</p></li>
+<li><p>VISCO</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.restart">
+<span class="sig-name descname"><span class="pre">restart</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="output.html#abaqus.StepOutput.Restart.Restart" title="abaqus.StepOutput.Restart.Restart"><span class="pre">Restart</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.StepOutput.Restart.Restart</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.restart" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="output.html#abaqus.StepOutput.Restart.Restart" title="abaqus.StepOutput.Restart.Restart"><code class="xref py py-class docutils literal notranslate"><span class="pre">Restart</span></code></a> object.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Step.Step.Step.resume">
 <span class="sig-name descname"><span class="pre">resume</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L134-L136"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.resume" title="Permalink to this definition">#</a></dt>
 <dd><p>This method resumes the step that was previously suppressed.</p>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.solverControl">
+<span class="sig-name descname"><span class="pre">solverControl</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="step/step_miscellaneous.html#abaqus.StepMiscellaneous.SolverControl.SolverControl" title="abaqus.StepMiscellaneous.SolverControl.SolverControl"><span class="pre">SolverControl</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.StepMiscellaneous.SolverControl.SolverControl</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.solverControl" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="step/step_miscellaneous.html#abaqus.StepMiscellaneous.SolverControl.SolverControl" title="abaqus.StepMiscellaneous.SolverControl.SolverControl"><code class="xref py py-class docutils literal notranslate"><span class="pre">SolverControl</span></code></a> object.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Step.Step.Step.suppress">
 <span class="sig-name descname"><span class="pre">suppress</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L138-L140"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.suppress" title="Permalink to this definition">#</a></dt>
 <dd><p>This method suppresses the step.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Step.Step.Step.suppressed">
+<span class="sig-name descname"><span class="pre">suppressed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Boolean</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/Step.py#L5-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.Step.Step.suppressed" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the step is suppressed or not. The default value is OFF.</p>
 </dd></dl>
 
 </dd></dl>
@@ -3117,7 +3410,7 @@ The AnalysisStep object is derived from the Step object.</p>
 <dt class="sig sig-object py" id="abaqus.Step.AnalysisStep.AnalysisStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/AnalysisStep.py#L36-L38"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.AnalysisStep.AnalysisStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id6"><span class="problematic" id="id7">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id10"><span class="problematic" id="id11">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -3326,7 +3619,7 @@ The AnnealStep object is derived from the AnalysisStep object.</p>
 <dt class="sig sig-object py" id="abaqus.Step.AnnealStep.AnnealStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/AnnealStep.py#L51-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.AnnealStep.AnnealStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id8"><span class="problematic" id="id9">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id12"><span class="problematic" id="id13">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -3587,7 +3880,7 @@ The default value is SUBSPACE.</p>
 <dt class="sig sig-object py" id="abaqus.Step.BuckleStep.BuckleStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/BuckleStep.py#L81-L83"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.BuckleStep.BuckleStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id10"><span class="problematic" id="id11">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id14"><span class="problematic" id="id15">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -3897,7 +4190,7 @@ The ComplexFrequencyStep object is derived from the AnalysisStep object.</p>
 <dt class="sig sig-object py" id="abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/ComplexFrequencyStep.py#L79-L81"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id12"><span class="problematic" id="id13">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id16"><span class="problematic" id="id17">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -4268,7 +4561,7 @@ transient analysis. The default value is 0.0.</p>
 <dt class="sig sig-object py" id="abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/CoupledTempDisplacementStep.py#L133-L135"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id14"><span class="problematic" id="id15">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id18"><span class="problematic" id="id19">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -4455,7 +4748,7 @@ step. The default value is OFF.</p>
 DISSIPATED_ENERGY_FRACTION, and DAMPING_FACTOR. The default value is NONE.</p>
 </dd>
 <dt><strong>stabilizationMagnitude</strong></dt><dd><p>A Float specifying the damping intensity of the automatic damping algorithm if the
-problem is expected to be unstable and <a href="#id16"><span class="problematic" id="id17">**</span></a>stabilizationMethod**≠NONE. The default value is
+problem is expected to be unstable and <a href="#id20"><span class="problematic" id="id21">**</span></a>stabilizationMethod**≠NONE. The default value is
 2×10-4.</p>
 </dd>
 <dt><strong>timeIncrementationMethod</strong></dt><dd><p>A SymbolicConstant specifying the time incrementation method to be used. Possible values
@@ -4535,7 +4828,7 @@ FULL_NEWTON and SEPARATED. The default value is FULL_NEWTON.</p>
 <dt class="sig sig-object py" id="abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.stabilizationMagnitude">
 <span class="sig-name descname"><span class="pre">stabilizationMagnitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/CoupledTempDisplacementStep.py#L56-L59"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.stabilizationMagnitude" title="Permalink to this definition">#</a></dt>
 <dd><p>A Float specifying the damping intensity of the automatic damping algorithm if the
-problem is expected to be unstable and <a href="#id18"><span class="problematic" id="id19">**</span></a>stabilizationMethod**≠NONE. The default value is
+problem is expected to be unstable and <a href="#id22"><span class="problematic" id="id23">**</span></a>stabilizationMethod**≠NONE. The default value is
 2×10-4.</p>
 </dd></dl>
 
@@ -4719,7 +5012,7 @@ transient analysis. The default value is 0.0.</p>
 <dt class="sig sig-object py" id="abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/CoupledThermalElectricalStructuralStep.py#L131-L133"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id20"><span class="problematic" id="id21">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id24"><span class="problematic" id="id25">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -4906,7 +5199,7 @@ step. The default value is OFF.</p>
 DISSIPATED_ENERGY_FRACTION, and DAMPING_FACTOR. The default value is NONE.</p>
 </dd>
 <dt><strong>stabilizationMagnitude</strong></dt><dd><p>A Float specifying the damping intensity of the automatic damping algorithm if the
-problem is expected to be unstable and <a href="#id22"><span class="problematic" id="id23">**</span></a>stabilizationMethod**≠NONE. The default value is
+problem is expected to be unstable and <a href="#id26"><span class="problematic" id="id27">**</span></a>stabilizationMethod**≠NONE. The default value is
 2×10-4.</p>
 </dd>
 <dt><strong>timeIncrementationMethod</strong></dt><dd><p>A SymbolicConstant specifying the time incrementation method to be used. Possible values
@@ -4976,7 +5269,7 @@ the <strong>adaptiveDampingRatio</strong> parameter. The default value is OFF.</
 <dt class="sig sig-object py" id="abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep.stabilizationMagnitude">
 <span class="sig-name descname"><span class="pre">stabilizationMagnitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/CoupledThermalElectricalStructuralStep.py#L58-L61"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep.stabilizationMagnitude" title="Permalink to this definition">#</a></dt>
 <dd><p>A Float specifying the damping intensity of the automatic damping algorithm if the
-problem is expected to be unstable and <a href="#id24"><span class="problematic" id="id25">**</span></a>stabilizationMethod**≠NONE. The default value is
+problem is expected to be unstable and <a href="#id28"><span class="problematic" id="id29">**</span></a>stabilizationMethod**≠NONE. The default value is
 2×10-4.</p>
 </dd></dl>
 
@@ -5132,7 +5425,7 @@ Possible values are PERIOD and SS. The default value is PERIOD.</p>
 <dt class="sig sig-object py" id="abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/CoupledThermalElectricStep.py#L108-L110"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id26"><span class="problematic" id="id27">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id30"><span class="problematic" id="id31">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -5529,7 +5822,7 @@ default value is 0.0.</p>
 <dt class="sig sig-object py" id="abaqus.Step.DirectCyclicStep.DirectCyclicStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/DirectCyclicStep.py#L139-L141"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.DirectCyclicStep.DirectCyclicStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id28"><span class="problematic" id="id29">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id32"><span class="problematic" id="id33">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -5950,7 +6243,7 @@ The EmagTimeHarmonicStep object is derived from the AnalysisStep object.</p>
 <dt class="sig sig-object py" id="abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/EmagTimeHarmonicStep.py#L48-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id30"><span class="problematic" id="id31">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id34"><span class="problematic" id="id35">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -6222,7 +6515,7 @@ value is OFF.</p>
 <dt class="sig sig-object py" id="abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/ExplicitDynamicsStep.py#L92-L94"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id32"><span class="problematic" id="id33">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id36"><span class="problematic" id="id37">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -6595,7 +6888,7 @@ optional arguments are ignored unless <strong>eigensolver</strong> = LANCZOS or 
 <dt class="sig sig-object py" id="abaqus.Step.FrequencyStep.FrequencyStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/FrequencyStep.py#L159-L161"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.FrequencyStep.FrequencyStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id34"><span class="problematic" id="id35">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id38"><span class="problematic" id="id39">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -7069,7 +7362,7 @@ CONVERT_SDI_ON. The default value is PROPAGATED.</p>
 <dt class="sig sig-object py" id="abaqus.Step.GeostaticStep.GeostaticStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/GeostaticStep.py#L99-L101"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.GeostaticStep.GeostaticStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id36"><span class="problematic" id="id37">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id40"><span class="problematic" id="id41">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -7457,7 +7750,7 @@ the solution terminates. The default value is None.Note:This parameter is ignore
 <dt class="sig sig-object py" id="abaqus.Step.HeatTransferStep.HeatTransferStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/HeatTransferStep.py#L117-L119"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.HeatTransferStep.HeatTransferStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id38"><span class="problematic" id="id39">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id42"><span class="problematic" id="id43">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -7877,7 +8170,7 @@ CONVERT_SDI_ON. The default value is PROPAGATED.</p>
 <dt class="sig sig-object py" id="abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/ImplicitDynamicsStep.py#L144-L146"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id40"><span class="problematic" id="id41">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id44"><span class="problematic" id="id45">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -8276,7 +8569,7 @@ The InitialStep object is derived from the AnalysisStep object.</p>
 <dt class="sig sig-object py" id="abaqus.Step.InitialStep.InitialStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/InitialStep.py#L36-L38"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.InitialStep.InitialStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id42"><span class="problematic" id="id43">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id46"><span class="problematic" id="id47">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -8516,7 +8809,7 @@ Possible values are PERIOD and SS. The default value is PERIOD.</p>
 <dt class="sig sig-object py" id="abaqus.Step.MassDiffusionStep.MassDiffusionStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/MassDiffusionStep.py#L95-L97"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.MassDiffusionStep.MassDiffusionStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id44"><span class="problematic" id="id45">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id48"><span class="problematic" id="id49">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -8875,7 +9168,7 @@ value is OFF.</p>
 <dt class="sig sig-object py" id="abaqus.Step.ModalDynamicsStep.ModalDynamicsStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/ModalDynamicsStep.py#L85-L87"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.ModalDynamicsStep.ModalDynamicsStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id46"><span class="problematic" id="id47">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id50"><span class="problematic" id="id51">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -9173,7 +9466,7 @@ The RandomResponseStep object is derived from the AnalysisStep object.</p>
 <dt class="sig sig-object py" id="abaqus.Step.RandomResponseStep.RandomResponseStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/RandomResponseStep.py#L93-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.RandomResponseStep.RandomResponseStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id48"><span class="problematic" id="id49">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id52"><span class="problematic" id="id53">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -9495,7 +9788,7 @@ MULTIPLE_DIRECTION_FORTY_PERCENT_RULE. The default value is SINGLE_DIRECTION.</p
 <dt class="sig sig-object py" id="abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/ResponseSpectrumStep.py#L98-L100"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id50"><span class="problematic" id="id51">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id54"><span class="problematic" id="id55">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -9836,7 +10129,7 @@ Possible values are PERIOD and SS. The default value is PERIOD.</p>
 <dt class="sig sig-object py" id="abaqus.Step.SoilsStep.SoilsStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/SoilsStep.py#L143-L145"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.SoilsStep.SoilsStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id52"><span class="problematic" id="id53">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id56"><span class="problematic" id="id57">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -10255,7 +10548,7 @@ The StaticLinearPerturbationStep object is derived from the AnalysisStep object.
 <dt class="sig sig-object py" id="abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/StaticLinearPerturbationStep.py#L55-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id54"><span class="problematic" id="id55">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id58"><span class="problematic" id="id59">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -10535,7 +10828,7 @@ CONVERT_SDI_ON. The default value is PROPAGATED.</p>
 <dt class="sig sig-object py" id="abaqus.Step.StaticRiksStep.StaticRiksStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/StaticRiksStep.py#L130-L132"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.StaticRiksStep.StaticRiksStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id56"><span class="problematic" id="id57">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id60"><span class="problematic" id="id61">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -10991,7 +11284,7 @@ CONVERT_SDI_ON. The default value is PROPAGATED.</p>
 <dt class="sig sig-object py" id="abaqus.Step.StaticStep.StaticStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/StaticStep.py#L141-L143"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.StaticStep.StaticStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id58"><span class="problematic" id="id59">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id62"><span class="problematic" id="id63">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -11420,7 +11713,7 @@ The SteadyStateDirectStep object is derived from the AnalysisStep object.</p>
 <dt class="sig sig-object py" id="abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/SteadyStateDirectStep.py#L75-L77"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id60"><span class="problematic" id="id61">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id64"><span class="problematic" id="id65">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -11732,7 +12025,7 @@ The SteadyStateModalStep object is derived from the AnalysisStep object.</p>
 <dt class="sig sig-object py" id="abaqus.Step.SteadyStateModalStep.SteadyStateModalStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/SteadyStateModalStep.py#L97-L99"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.SteadyStateModalStep.SteadyStateModalStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id62"><span class="problematic" id="id63">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id66"><span class="problematic" id="id67">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -12031,7 +12324,7 @@ The SteadyStateSubspaceStep object is derived from the AnalysisStep object.</p>
 <dt class="sig sig-object py" id="abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/SteadyStateSubspaceStep.py#L90-L92"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id64"><span class="problematic" id="id65">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id68"><span class="problematic" id="id69">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -12363,7 +12656,7 @@ step. Possible values are STEP and RAMP. The default value is STEP.</p>
 <dt class="sig sig-object py" id="abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/SubspaceDynamicsStep.py#L70-L72"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id66"><span class="problematic" id="id67">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id70"><span class="problematic" id="id71">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -12659,7 +12952,7 @@ The default value is 0.0.</p>
 <dt class="sig sig-object py" id="abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/SubstructureGenerateStep.py#L107-L109"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id68"><span class="problematic" id="id69">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id72"><span class="problematic" id="id73">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -13026,7 +13319,7 @@ The TempDisplacementDynamicsStep object is derived from the AnalysisStep object.
 <dt class="sig sig-object py" id="abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/TempDisplacementDynamicsStep.py#L86-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id70"><span class="problematic" id="id71">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id74"><span class="problematic" id="id75">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -13390,7 +13683,7 @@ CONVERT_SDI_ON. The default value is PROPAGATED.</p>
 <dt class="sig sig-object py" id="abaqus.Step.ViscoStep.ViscoStep.explicit">
 <span class="sig-name descname"><span class="pre">explicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Step/ViscoStep.py#L132-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Step.ViscoStep.ViscoStep.explicit" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether the step has an explicit procedure type
-(<a href="#id72"><span class="problematic" id="id73">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
+(<a href="#id76"><span class="problematic" id="id77">*</span></a>procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).</p>
 </dd></dl>
 
 <dl class="py attribute">

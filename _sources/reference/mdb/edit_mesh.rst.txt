@@ -14,11 +14,15 @@ Edit mesh features of Assembly
 .. autoclass:: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly
     :members:
 
+    .. autoclassdoc::
+
 Edit mesh features of Part
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.EditMesh.MeshEditPart.MeshEditPart
     :members:
+
+    .. autoclassdoc::
 
 MeshEditOptions
 ~~~~~~~~~~~~~~~

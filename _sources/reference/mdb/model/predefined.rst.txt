@@ -20,11 +20,15 @@ Field
 .. autoclass:: abaqus.PredefinedField.Field.Field
     :members:
 
+    .. autoclassdoc::
+
 FieldState
 ~~~~~~~~~~
 
 .. autoclass:: abaqus.PredefinedField.FieldState.FieldState
     :members:
+
+    .. autoclassdoc::
 
 PredefinedField
 ~~~~~~~~~~~~~~~
@@ -32,11 +36,15 @@ PredefinedField
 .. autoclass:: abaqus.PredefinedField.PredefinedField.PredefinedField
     :members:
 
+    .. autoclassdoc::
+
 PredefinedFieldState
 ~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState
     :members:
+
+    .. autoclassdoc::
 
 FluidCavityPressure
 ~~~~~~~~~~~~~~~~~~~
@@ -44,11 +52,15 @@ FluidCavityPressure
 .. autoclass:: abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure
     :members:
 
+    .. autoclassdoc::
+
 IMAField
 ~~~~~~~~
 
 .. autoclass:: abaqus.PredefinedField.IMAField.IMAField
     :members:
+
+    .. autoclassdoc::
 
 IMARegion
 ~~~~~~~~~
@@ -56,11 +68,15 @@ IMARegion
 .. autoclass:: abaqus.PredefinedField.IMARegion.IMARegion
     :members:
 
+    .. autoclassdoc::
+
 InitialState
 ~~~~~~~~~~~~
 
 .. autoclass:: abaqus.PredefinedField.InitialState.InitialState
     :members:
+
+    .. autoclassdoc::
 
 KinematicHardening
 ~~~~~~~~~~~~~~~~~~
@@ -68,11 +84,15 @@ KinematicHardening
 .. autoclass:: abaqus.PredefinedField.KinematicHardening.KinematicHardening
     :members:
 
+    .. autoclassdoc::
+
 MaterialAssignment
 ~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.PredefinedField.MaterialAssignment.MaterialAssignment
     :members:
+
+    .. autoclassdoc::
 
 Temperature
 ~~~~~~~~~~~
@@ -80,11 +100,15 @@ Temperature
 .. autoclass:: abaqus.PredefinedField.Temperature.Temperature
     :members:
 
+    .. autoclassdoc::
+
 TemperatureState
 ~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.PredefinedField.TemperatureState.TemperatureState
     :members:
+
+    .. autoclassdoc::
 
 TiffOptions
 ~~~~~~~~~~~
@@ -92,9 +116,13 @@ TiffOptions
 .. autoclass:: abaqus.PredefinedField.TiffOptions.TiffOptions
     :members:
 
+    .. autoclassdoc::
+
 Velocity
 ~~~~~~~~
 
 .. autoclass:: abaqus.PredefinedField.Velocity.Velocity
     :members:
+
+    .. autoclassdoc::
 

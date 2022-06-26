@@ -22,7 +22,7 @@ Create adaptivity mesh state features
 Create features for AdaptivityIteration
 ---------------------------------------
 
-.. autoclass:: abaqus.Adaptivity.RuleResult.RuleResult
+.. autoclass:: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration
     :members:
 
 
@@ -34,12 +34,16 @@ AdaptiveMeshConstraint
 
 .. autoclass:: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint
     :members:
+
+    .. autoclassdoc::
     
 AdaptiveMeshConstraintState
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState
     :members:
+
+    .. autoclassdoc::
     
 
 AdaptiveMeshControl
@@ -48,11 +52,15 @@ AdaptiveMeshControl
 .. autoclass:: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl
     :members:
 
+    .. autoclassdoc::
+
 AdaptiveMeshDomain
 ~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain
     :members:
+
+    .. autoclassdoc::
 
 AdaptivityIteration
 ~~~~~~~~~~~~~~~~~~~
@@ -60,11 +68,15 @@ AdaptivityIteration
 .. autoclass:: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration
     :members:
 
+    .. autoclassdoc::
+
 AdaptivityProcess
 ~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess
     :members:
+
+    .. autoclassdoc::
 
 DisplacementAdaptiveMeshConstraint
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -72,11 +84,15 @@ DisplacementAdaptiveMeshConstraint
 .. autoclass:: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint
     :members:
 
+    .. autoclassdoc::
+
 DisplacementAdaptiveMeshConstraintState
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState
     :members:
+
+    .. autoclassdoc::
 
 ErrorIndicatorResult
 ~~~~~~~~~~~~~~~~~~~~
@@ -84,11 +100,15 @@ ErrorIndicatorResult
 .. autoclass:: abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult
     :members:
 
+    .. autoclassdoc::
+
 RemeshingRule
 ~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Adaptivity.RemeshingRule.RemeshingRule
     :members:
+
+    .. autoclassdoc::
 
 RuleResult
 ~~~~~~~~~~
@@ -96,14 +116,20 @@ RuleResult
 .. autoclass:: abaqus.Adaptivity.RuleResult.RuleResult
     :members:
 
+    .. autoclassdoc::
+
 VelocityAdaptiveMeshConstraint
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint
     :members:
 
+    .. autoclassdoc::
+
 VelocityAdaptiveMeshConstraintState
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState
     :members:
+
+    .. autoclassdoc::

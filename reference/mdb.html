@@ -9,6 +9,7 @@
         <title>Abaqus Model Database - abqpy 2016a0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../_static/autoclasstoc.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
     
@@ -429,12 +430,162 @@ and analysis controls.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.Model" title="abaqus.Mdb.Mdb.Mdb.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code></a>(name[, description, stefanBoltzmann, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="mdb/model.html#abaqus.Mdb.Mdb.Mdb.Model" title="abaqus.Mdb.Mdb.Mdb.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code></a>(name[, description, stefanBoltzmann, ...])</p></td>
 <td><p>This method creates a Model object.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">MdbBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.version" title="abaqus.Mdb.Mdb.Mdb.version"><code class="xref py py-obj docutils literal notranslate"><span class="pre">version</span></code></a></p></td>
+<td><p>An Int specifying the release number of the Mdb object in memory.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.lastChangedCount" title="abaqus.Mdb.Mdb.Mdb.lastChangedCount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lastChangedCount</span></code></a></p></td>
+<td><p>A Float specifying the value of a counter associated with the Mdb object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.jobs" title="abaqus.Mdb.Mdb.Mdb.jobs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">jobs</span></code></a></p></td>
+<td><p>A repository of Job objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.adaptivityProcesses" title="abaqus.Mdb.Mdb.Mdb.adaptivityProcesses"><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptivityProcesses</span></code></a></p></td>
+<td><p>A repository of AdaptivityProcess objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.coexecutions" title="abaqus.Mdb.Mdb.Mdb.coexecutions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coexecutions</span></code></a></p></td>
+<td><p>A repository of Coexecution objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.optimizationProcesses" title="abaqus.Mdb.Mdb.Mdb.optimizationProcesses"><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimizationProcesses</span></code></a></p></td>
+<td><p>A repository of OptimizationProcess objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.meshEditOptions" title="abaqus.Mdb.Mdb.Mdb.meshEditOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">meshEditOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="mdb/edit_mesh.html#abaqus.EditMesh.MeshEditOptions.MeshEditOptions" title="abaqus.EditMesh.MeshEditOptions.MeshEditOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshEditOptions</span></code></a> object specifying the undo/redo behavior when editing meshes on parts or part instances.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.models" title="abaqus.Mdb.Mdb.Mdb.models"><code class="xref py py-obj docutils literal notranslate"><span class="pre">models</span></code></a></p></td>
+<td><p>A repository of Model objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.customData" title="abaqus.Mdb.Mdb.Mdb.customData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">customData</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.annotations" title="abaqus.Mdb.Mdb.Mdb.annotations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">annotations</span></code></a></p></td>
+<td><p>A repository of Annotation objects.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="mdb/model.html#abaqus.Mdb.Mdb.Mdb.Model" title="abaqus.Mdb.Mdb.Mdb.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code></a>(name[, description, stefanBoltzmann, ...])</p></td>
+<td><p>This method creates a Model object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">AcisMdb</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.openAcis" title="abaqus.Mdb.Mdb.Mdb.openAcis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openAcis</span></code></a>(fileName[, scaleFromFile])</p></td>
+<td><p>This method creates an AcisFile object from a file containing ACIS-format geometry.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.openCatia" title="abaqus.Mdb.Mdb.Mdb.openCatia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openCatia</span></code></a>(fileName[, topology, ...])</p></td>
+<td><p>This method creates an AcisFile object from a file containing V5-format geometry.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.openEnf" title="abaqus.Mdb.Mdb.Mdb.openEnf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openEnf</span></code></a>(fileName, fileType[, topology, ...])</p></td>
+<td><p>This method creates an AcisFile object from a file containing Elysium Neutral File-format geometry that was created by CATIA V5, I-DEAS, or Pro/ENGINEER.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.openIges" title="abaqus.Mdb.Mdb.Mdb.openIges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openIges</span></code></a>(fileName[, trimCurve, ...])</p></td>
+<td><p>This method creates an AcisFile object from a file containing IGES-format geometry.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.openParasolid" title="abaqus.Mdb.Mdb.Mdb.openParasolid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openParasolid</span></code></a>(fileName[, topology])</p></td>
+<td><p>This method creates an AcisFile object from a file containing Parasolid-format geometry.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.openStep" title="abaqus.Mdb.Mdb.Mdb.openStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openStep</span></code></a>(fileName[, scale])</p></td>
+<td><p>This method creates an AcisFile object from a file containing STEP-format geometry.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.openVda" title="abaqus.Mdb.Mdb.Mdb.openVda"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openVda</span></code></a>(fileName)</p></td>
+<td><p>This method creates an AcisFile object from a file containing VDA-FS-format geometry.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">JobMdb</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.Job" title="abaqus.Mdb.Mdb.Mdb.Job"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Job</span></code></a>(name, model[, description, type, queue, ...])</p></td>
+<td><p>This method creates an analysis job using a model on a model database (MDB) for the model definition.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.JobFromInputFile" title="abaqus.Mdb.Mdb.Mdb.JobFromInputFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">JobFromInputFile</span></code></a>(name, inputFileName[, ...])</p></td>
+<td><p>This method creates an analysis job using an input file for the model definition.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.OptimizationProcess" title="abaqus.Mdb.Mdb.Mdb.OptimizationProcess"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OptimizationProcess</span></code></a>(name, model, task, ...)</p></td>
+<td><p>This method creates an OptimizationProcess object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">MdbBase</span></code></summary><div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([pathName])</p></td>
+<td><p>This constructor creates an empty Mdb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.importDxf" title="abaqus.Mdb.Mdb.Mdb.importDxf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">importDxf</span></code></a>(fileName)</p></td>
+<td><p>This method creates a ConstrainedSketch object from a file containing dxf-format (AutoCAD) geometry.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.openMdb" title="abaqus.Mdb.Mdb.Mdb.openMdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openMdb</span></code></a>(pathName)</p></td>
+<td><p>This method opens an existing model database file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.close" title="abaqus.Mdb.Mdb.Mdb.close"><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code></a>()</p></td>
+<td><p>This method closes an open Mdb object but does not save the Mdb object to disk.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.save" title="abaqus.Mdb.Mdb.Mdb.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code></a>()</p></td>
+<td><p>This method saves an Mdb object to disk at the location specified by <strong>pathName</strong> (<em>pathName</em> is a member of the Mdb object).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.saveAs" title="abaqus.Mdb.Mdb.Mdb.saveAs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveAs</span></code></a>(pathName)</p></td>
+<td><p>This method saves an Mdb object to disk at the specified location.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.openAuxMdb" title="abaqus.Mdb.Mdb.Mdb.openAuxMdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openAuxMdb</span></code></a>(pathName)</p></td>
+<td><p>This method opens an auxiliary Mdb object on the disk at the specified location.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.closeAuxMdb" title="abaqus.Mdb.Mdb.Mdb.closeAuxMdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">closeAuxMdb</span></code></a>()</p></td>
+<td><p>This method closes the auxiliary Mdb which had been opened earlier using the openAuxMdb command.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.getAuxMdbModelNames" title="abaqus.Mdb.Mdb.Mdb.getAuxMdbModelNames"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getAuxMdbModelNames</span></code></a>()</p></td>
+<td><p>This method returns a list of model names present in the auxiliary Mdb which had been opened earlier using the openAuxMdb command.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.copyAuxMdbModel" title="abaqus.Mdb.Mdb.Mdb.copyAuxMdbModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyAuxMdbModel</span></code></a>(fromName[, toName])</p></td>
+<td><p>This method copies a specified model from the auxiliary Mdb which had been opened earlier using the openAuxMdb command.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb.Job">
 <span class="sig-name descname"><span class="pre">Job</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ANALYSIS'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitHours</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitMinutes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">echoPrint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contactPrint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelPrint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">historyPrint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scratch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userSubroutine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numCpus</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">90</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memoryUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'PERCENTAGE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explicitPrecision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SINGLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodalOutputPrecision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SINGLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parallelizationMethodExplicit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'DOMAIN'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDomains</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activateLoadBalancing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multiprocessingMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">licenseType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mdb/Mdb.py#L20-L183"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb.Job" title="Permalink to this definition">#</a></dt>
@@ -685,7 +836,7 @@ that instances this model. The default value is ON.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>model: <a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.Model" title="abaqus.Mdb.Mdb.Mdb.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code></a></dt><dd><p>A <a class="reference internal" href="mdb/model.html#abaqus.Model.Model.Model" title="abaqus.Model.Model.Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> object</p>
+<dt>model: <a class="reference internal" href="mdb/model.html#abaqus.Mdb.Mdb.Mdb.Model" title="abaqus.Mdb.Mdb.Mdb.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code></a></dt><dd><p>A <a class="reference internal" href="mdb/model.html#abaqus.Model.Model.Model" title="abaqus.Model.Model.Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -758,6 +909,18 @@ and so on. The default value is None.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb.adaptivityProcesses">
+<span class="sig-name descname"><span class="pre">adaptivityProcesses</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess" title="abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess"><span class="pre">AdaptivityProcess</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mdb/Mdb.py#L7-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb.adaptivityProcesses" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of AdaptivityProcess objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb.annotations">
+<span class="sig-name descname"><span class="pre">annotations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="mdb/annotation.html#abaqus.Annotation.Annotation.Annotation" title="abaqus.Annotation.Annotation.Annotation"><span class="pre">Annotation</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mdb/Mdb.py#L7-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb.annotations" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Annotation objects.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb.close">
 <span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mdb/Mdb.py#L146-L150"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb.close" title="Permalink to this definition">#</a></dt>
@@ -781,6 +944,12 @@ If the auxiliary Mdb was not opened earlier</p>
 <dt class="field-even">Raises</dt>
 <dd class="field-even"></dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb.coexecutions">
+<span class="sig-name descname"><span class="pre">coexecutions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="mdb/job.html#abaqus.Job.Coexecution.Coexecution" title="abaqus.Job.Coexecution.Coexecution"><span class="pre">Coexecution</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mdb/Mdb.py#L7-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb.coexecutions" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Coexecution objects.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -810,6 +979,12 @@ If the model fromName does not exist in the auxiliary Mdb</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb.customData">
+<span class="sig-name descname"><span class="pre">customData</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><span class="pre">RepositorySupport</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.CustomKernel.RepositorySupport.RepositorySupport</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mdb/Mdb.py#L7-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb.customData" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -856,11 +1031,37 @@ be used only if no other formats are available.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb" title="abaqus.Mdb.Mdb.Mdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Mdb</span></code></a></dt><dd><p>A <a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb" title="abaqus.Mdb.Mdb.Mdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mdb</span></code></a> object</p>
+<dt><a class="reference internal" href="mdb/model.html#abaqus.Mdb.Mdb.Mdb" title="abaqus.Mdb.Mdb.Mdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Mdb</span></code></a></dt><dd><p>A <a class="reference internal" href="mdb/model.html#abaqus.Mdb.Mdb.Mdb" title="abaqus.Mdb.Mdb.Mdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mdb</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb.jobs">
+<span class="sig-name descname"><span class="pre">jobs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="mdb/job.html#abaqus.Job.Job.Job" title="abaqus.Job.Job.Job"><span class="pre">Job</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mdb/Mdb.py#L7-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb.jobs" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Job objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb.lastChangedCount">
+<span class="sig-name descname"><span class="pre">lastChangedCount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mdb/Mdb.py#L7-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb.lastChangedCount" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the value of a counter associated with the Mdb object. The counter
+indicates when the Mdb object was last changed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb.meshEditOptions">
+<span class="sig-name descname"><span class="pre">meshEditOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="mdb/edit_mesh.html#abaqus.EditMesh.MeshEditOptions.MeshEditOptions" title="abaqus.EditMesh.MeshEditOptions.MeshEditOptions"><span class="pre">MeshEditOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.EditMesh.MeshEditOptions.MeshEditOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mdb/Mdb.py#L7-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb.meshEditOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="mdb/edit_mesh.html#abaqus.EditMesh.MeshEditOptions.MeshEditOptions" title="abaqus.EditMesh.MeshEditOptions.MeshEditOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshEditOptions</span></code></a> object specifying the undo/redo behavior when editing meshes on parts
+or part instances.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb.models">
+<span class="sig-name descname"><span class="pre">models</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="mdb/model.html#abaqus.Model.Model.Model" title="abaqus.Model.Model.Model"><span class="pre">Model</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'Model-1':</span> <span class="pre">&lt;abaqus.Model.Model.Model</span> <span class="pre">object&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mdb/Mdb.py#L7-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb.models" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Model objects.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -893,7 +1094,7 @@ transform read from the ACIS file. The default value is OFF.</p>
 </dd>
 <dt class="field-odd">Raises</dt>
 <dd class="field-odd"><dl class="simple">
-<dt>Texterror: <code class="xref py py-obj docutils literal notranslate"><span class="pre">ACIS</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">File</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">version</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">exceeds</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Kernel</span></code></dt><dd><p>File is from a newer version of ACIS than the CAE kernel.</p>
+<dt>Texterror: <code class="xref py py-obj docutils literal notranslate"><span class="pre">ACIS</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">File</span></code> <a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb.version" title="abaqus.Mdb.Mdb.Mdb.version"><code class="xref py py-obj docutils literal notranslate"><span class="pre">version</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">exceeds</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Kernel</span></code></dt><dd><p>File is from a newer version of ACIS than the CAE kernel.</p>
 </dd>
 <dt>Texterror: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Failed</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">to</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">read</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">ACIS</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">file</span></code></dt><dd><p>The data in the ACIS file are corrupted.</p>
 </dd>
@@ -1099,7 +1300,7 @@ file extension, Abaqus/CAE attempts to open the file with .cae appended to the p
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb" title="abaqus.Mdb.Mdb.Mdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Mdb</span></code></a></dt><dd><p>A <a class="reference internal" href="#abaqus.Mdb.Mdb.Mdb" title="abaqus.Mdb.Mdb.Mdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mdb</span></code></a> object</p>
+<dt><a class="reference internal" href="mdb/model.html#abaqus.Mdb.Mdb.Mdb" title="abaqus.Mdb.Mdb.Mdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Mdb</span></code></a></dt><dd><p>A <a class="reference internal" href="mdb/model.html#abaqus.Mdb.Mdb.Mdb" title="abaqus.Mdb.Mdb.Mdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mdb</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -1228,6 +1429,12 @@ This object is subsequently used by the PartFromGeometryFile method.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb.optimizationProcesses">
+<span class="sig-name descname"><span class="pre">optimizationProcesses</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="mdb/job.html#abaqus.Job.OptimizationProcess.OptimizationProcess" title="abaqus.Job.OptimizationProcess.OptimizationProcess"><span class="pre">OptimizationProcess</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mdb/Mdb.py#L7-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb.optimizationProcesses" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of OptimizationProcess objects.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb.save">
 <span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mdb/Mdb.py#L152-L171"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb.save" title="Permalink to this definition">#</a></dt>
@@ -1277,6 +1484,12 @@ If the command fails to save the Mdb object to disk for reasons not mentioned ab
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb.version">
+<span class="sig-name descname"><span class="pre">version</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mdb/Mdb.py#L7-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb.version" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the release number of the Mdb object in memory.</p>
 </dd></dl>
 
 </dd></dl>

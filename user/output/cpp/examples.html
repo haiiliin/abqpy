@@ -9,6 +9,7 @@
         <title>Example programs that access data from an output database - abqpy 2016a0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
     
@@ -1075,7 +1076,7 @@
 </section>
 <section id="decreasing-the-amount-of-data-in-an-output-database-by-retaining-data-at-specific-frames">
 <h2>Decreasing the amount of data in an output database by retaining data at specific frames<a class="headerlink" href="#decreasing-the-amount-of-data-in-an-output-database-by-retaining-data-at-specific-frames" title="Permalink to this headline">#</a></h2>
-<p>This example illustrates how you can decrease the size of an output database. In most cases a large output database results from excessive field output being generated over a large number of frames. The Abaqus C++ API does not support the deletion of data from an output database; however, you can use this example program to copy data from select frames into a second output database created by a <strong>datacheck</strong> analysis that has identical model data. The original analysis and the <strong>datacheck</strong> analysis must be run using the same number of processors because the internal organization of data may differ based on the number of processors. The program uses addData to copy data at specified frames from the large output database into the new output database. The addData method works only when the model data in the two output databases are identical. For more information, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">addData()</span></code>.</p>
+<p>This example illustrates how you can decrease the size of an output database. In most cases a large output database results from excessive field output being generated over a large number of frames. The Abaqus C++ API does not support the deletion of data from an output database; however, you can use this example program to copy data from select frames into a second output database created by a <strong>datacheck</strong> analysis that has identical model data. The original analysis and the <strong>datacheck</strong> analysis must be run using the same number of processors because the internal organization of data may differ based on the number of processors. The program uses addData to copy data at specified frames from the large output database into the new output database. The addData method works only when the model data in the two output databases are identical. For more information, see <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.FieldOutput.FieldOutput.addData" title="abaqus.Odb.FieldOutput.FieldOutput.addData"><code class="xref py py-meth docutils literal notranslate"><span class="pre">addData()</span></code></a>.</p>
 <p>When you run the program, the following command line parameters are required:</p>
 <ul>
 <li><p><strong>-smallOdb odbName</strong></p>

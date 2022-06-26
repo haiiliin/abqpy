@@ -12,7 +12,7 @@ Create parts
     :members:
 
 .. autoclass:: abaqus.Part.PartBase.PartBase
-    :members: 
+    :members:
 
 Object features
 ---------------
@@ -24,11 +24,15 @@ Part
     :members:
     :inherited-members:
 
+    .. autoclassdoc::
+
 AcisFile
 ~~~~~~~~
 
 .. autoclass:: abaqus.Part.AcisFile.AcisFile
     :members:
+
+    .. autoclassdoc::
 
 AcisMdb
 ~~~~~~~
@@ -36,8 +40,12 @@ AcisMdb
 .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
     :members:
 
+    .. autoclassdoc::
+
 Feature
 ~~~~~~~
 
 .. autoclass:: abaqus.Part.Feature.Feature
     :members:
+
+    .. autoclassdoc::

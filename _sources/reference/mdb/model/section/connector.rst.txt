@@ -8,29 +8,8 @@ A connector describes the relative motions between two points. A connector also 
 Create connectors
 -----------------
 
-.. automethod:: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage
-
-.. automethod:: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping
-
-.. automethod:: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity
-
-.. automethod:: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFailure
-
-.. automethod:: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction
-
-.. automethod:: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorLock
-
-.. automethod:: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity
-
-.. automethod:: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential
-
-.. automethod:: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop
-
-.. automethod:: abaqus.Connector.ConnectorSection.ConnectorSection.DerivedComponent
-
-.. automethod:: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior
-
-.. automethod:: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm
+.. autoclass:: abaqus.Connector.ConnectorSection.ConnectorSection
+    :members:
 
 
 Object features
@@ -42,11 +21,15 @@ CDCTerm
 .. autoclass:: abaqus.Connector.CDCTerm.CDCTerm
     :members:
 
+    .. autoclassdoc::
+
 CDCTermArray
 ~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Connector.CDCTermArray.CDCTermArray
     :members:
+
+    .. autoclassdoc::
 
 ConnectorBehaviorOption
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -54,11 +37,15 @@ ConnectorBehaviorOption
 .. autoclass:: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption
     :members:
 
+    .. autoclassdoc::
+
 ConnectorBehaviorOptionArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray
     :members:
+
+    .. autoclassdoc::
 
 ConnectorDamage
 ~~~~~~~~~~~~~~~
@@ -66,11 +53,15 @@ ConnectorDamage
 .. autoclass:: abaqus.Connector.ConnectorDamage.ConnectorDamage
     :members:
 
+    .. autoclassdoc::
+
 ConnectorDamping
 ~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Connector.ConnectorDamping.ConnectorDamping
     :members:
+
+    .. autoclassdoc::
 
 ConnectorElasticity
 ~~~~~~~~~~~~~~~~~~~
@@ -78,11 +69,15 @@ ConnectorElasticity
 .. autoclass:: abaqus.Connector.ConnectorElasticity.ConnectorElasticity
     :members:
 
+    .. autoclassdoc::
+
 ConnectorFailure
 ~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Connector.ConnectorFailure.ConnectorFailure
     :members:
+
+    .. autoclassdoc::
 
 ConnectorFriction
 ~~~~~~~~~~~~~~~~~
@@ -90,11 +85,15 @@ ConnectorFriction
 .. autoclass:: abaqus.Connector.ConnectorFriction.ConnectorFriction
     :members:
 
+    .. autoclassdoc::
+
 ConnectorLock
 ~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Connector.ConnectorLock.ConnectorLock
     :members:
+
+    .. autoclassdoc::
 
 ConnectorOptions
 ~~~~~~~~~~~~~~~~
@@ -102,11 +101,15 @@ ConnectorOptions
 .. autoclass:: abaqus.Connector.ConnectorOptions.ConnectorOptions
     :members:
 
+    .. autoclassdoc::
+
 ConnectorPlasticity
 ~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity
     :members:
+
+    .. autoclassdoc::
 
 ConnectorPotential
 ~~~~~~~~~~~~~~~~~~
@@ -114,11 +117,15 @@ ConnectorPotential
 .. autoclass:: abaqus.Connector.ConnectorPotential.ConnectorPotential
     :members:
 
+    .. autoclassdoc::
+
 ConnectorPotentialArray
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray
     :members:
+
+    .. autoclassdoc::
 
 ConnectorStop
 ~~~~~~~~~~~~~
@@ -126,14 +133,20 @@ ConnectorStop
 .. autoclass:: abaqus.Connector.ConnectorStop.ConnectorStop
     :members:
 
+    .. autoclassdoc::
+
 DerivedComponent
 ~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Connector.DerivedComponent.DerivedComponent
     :members:
 
+    .. autoclassdoc::
+
 TangentialBehavior
 ~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Connector.TangentialBehavior.TangentialBehavior
     :members:
+
+    .. autoclassdoc::
