@@ -956,11 +956,11 @@ database file if it is located in another directory.</p>
 </dd>
 <dt><strong>variableLabel</strong></dt><dd><p>A String specifying the field output variable.</p>
 </dd>
-<dt><strong>stepIndex</strong></dt><dd><p>An Int specifying the step index. Possible values are 0 ≤≤ <strong>stepIndex</strong> ≤≤ (<em>numSteps</em> −
+<dt><strong>stepIndex</strong></dt><dd><p>An Int specifying the step index. Possible values are 0 ≤ <strong>stepIndex</strong> ≤ (<strong>numSteps</strong> −
 1). The default value is 0.</p>
 </dd>
-<dt><strong>frameIndex</strong></dt><dd><p>An Int specifying the frame in the specified step. Valid values are 0 ≤≤ <strong>frameIndex</strong> ≤≤
-(<em>numFramesInStep</em> − 1). The default value is 0.</p>
+<dt><strong>frameIndex</strong></dt><dd><p>An Int specifying the frame in the specified step. Valid values are 0 ≤ <strong>frameIndex</strong> ≤
+(<strong>numFramesInStep</strong> − 1). The default value is 0.</p>
 </dd>
 <dt><strong>outputPosition</strong></dt><dd><p>A SymbolicConstant specifying the position where the data is written in the output
 database. Data can be obtained only from the position at which it was written to the
@@ -1000,64 +1000,66 @@ aligned with the variable. Currently only SCALAR is supported. Possible values a
 </ul>
 <p>The default value is SCALAR.</p>
 </dd>
-<dt><strong>storageType</strong></dt><dd><p>​   A SymbolicConstant specifying the storage type of the field output variable which
+<dt><strong>storageType</strong></dt><dd><p>A SymbolicConstant specifying the storage type of the field output variable which
 should be aligned with the variable. Possible values are FLOAT, DOUBLE, INTEGER, and
 BOOLEAN. The default value is FLOAT.</p>
 </dd>
-<dt><strong>quantityToPlot</strong></dt><dd><p>​   A SymbolicConstant specifying the quantity to plot. Currently only FIELD_OUTPUT is
+<dt><strong>quantityToPlot</strong></dt><dd><p>A SymbolicConstant specifying the quantity to plot. Currently only FIELD_OUTPUT is
 supported. Possible values are FIELD_OUTPUT and DISCONTINUITIES. The default value is
 FIELD_OUTPUT.</p>
 </dd>
-<dt><strong>averageElementOutput</strong></dt><dd><p>​   A Boolean specifying whether to average the element output. The default value is OFF.</p>
+<dt><strong>averageElementOutput</strong></dt><dd><p>A Boolean specifying whether to average the element output. The default value is OFF.</p>
 </dd>
-<dt><strong>useRegionBoundaries</strong></dt><dd><p>​   A Boolean specifying whether to use region boundaries when averaging. The default
+<dt><strong>useRegionBoundaries</strong></dt><dd><p>A Boolean specifying whether to use region boundaries when averaging. The default
 value is OFF.</p>
 </dd>
-<dt><strong>regionBoundaries</strong></dt><dd><p>​   A SymbolicConstant specifying the type of averaging region boundaries. Currently only
-NONE and ODB_REGIONS are supported. Possible values are NONE, ODB_REGIONS, ELEMENT_SET,
+<dt><strong>regionBoundaries</strong></dt><dd><blockquote>
+<div><p>A SymbolicConstant specifying the type of averaging region boundaries. Currently only</p>
+</div></blockquote>
+<p>NONE and ODB_REGIONS are supported. Possible values are NONE, ODB_REGIONS, ELEMENT_SET,
 and DISPLAY_GROUPS. The default value is NONE.</p>
 </dd>
-<dt><strong>includeFeatureBoundaries</strong></dt><dd><p>​   A Boolean specifying whether to include additional averaging boundaries for shells and
+<dt><strong>includeFeatureBoundaries</strong></dt><dd><p>A Boolean specifying whether to include additional averaging boundaries for shells and
 membranes based on feature edges. The default value is ON.</p>
 </dd>
-<dt><strong>featureAngle</strong></dt><dd><p>​   A Float specifying the feature angle to be used when <strong>includeFeatureBoundaries</strong> = ON.
+<dt><strong>featureAngle</strong></dt><dd><p>A Float specifying the feature angle to be used when <strong>includeFeatureBoundaries</strong> = ON.
 The default value is 20.0.</p>
 </dd>
-<dt><strong>averageOnlyDisplayed</strong></dt><dd><p>​   A Boolean specifying whether to average only values on displayed elements. The default
+<dt><strong>averageOnlyDisplayed</strong></dt><dd><p>A Boolean specifying whether to average only values on displayed elements. The default
 value is OFF.</p>
 </dd>
-<dt><strong>averagingThreshold</strong></dt><dd><p>​   A Float specifying the nodal averaging threshold percentage. 0 ≤≤ <strong>averagingThreshold</strong>
-≤≤100. The default value is 75.0.</p>
+<dt><strong>averagingThreshold</strong></dt><dd><p>A Float specifying the nodal averaging threshold percentage. 0 ≤ <strong>averagingThreshold</strong>
+≤ 100. The default value is 75.0.</p>
 </dd>
-<dt><strong>computeOrder</strong></dt><dd><p>​   A SymbolicConstant specifying the order or the computations to be performed on the
+<dt><strong>computeOrder</strong></dt><dd><p>A SymbolicConstant specifying the order or the computations to be performed on the
 interested field output variable. Possible values are EXTRAPOLATE_AVERAGE_COMPUTE,
 EXTRAPOLATE_COMPUTE_AVERAGE, EXTRAPOLATE_COMPUTE, EXTRAPOLATE_COMPUTE_DISCONTINUITIES,
 and RAW_DATA. The default value is EXTRAPOLATE_COMPUTE_AVERAGE.</p>
 </dd>
-<dt><strong>numericForm</strong></dt><dd><p>​   A SymbolicConstant specifying the numeric form in which to display results that
+<dt><strong>numericForm</strong></dt><dd><p>A SymbolicConstant specifying the numeric form in which to display results that
 contain complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL,
 IMAGINARY, and COMPLEX_MAG_AT_ANGLE. The default value is REAL.</p>
 </dd>
-<dt><strong>complexAngle</strong></dt><dd><p>​   A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id2"><span class="problematic" id="id3">*</span></a>numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The
+<dt><strong>complexAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) at which to display results that contain
+complex numbers when <strong>numericForm=COMPLEX_MAG_AT_ANGLE</strong> = COMPLEX_MAG_AT_ANGLE. The
 default value is 0.0.</p>
 </dd>
-<dt><strong>sectionPoint</strong></dt><dd><p>​   A Dictionary with String keys and String values. Each key specifies a region in the
+<dt><strong>sectionPoint</strong></dt><dd><p>A Dictionary with String keys and String values. Each key specifies a region in the
 model; the corresponding value specifies a section point within that region. For
 example:
 sectionPoint={‘shell &lt; MAT &gt; &lt; 7 section points &gt;’:’SPOS
 (fraction = 1.0)’, ‘shell &lt; MAT &gt; &lt; 5 section points &gt;’:
 ‘SPOS, (fraction = 1.0)’, }</p>
 </dd>
-<dt><strong>refinementType</strong></dt><dd><p>​   A SymbolicConstant specifying the type of the FieldOutput object. Possible values for
+<dt><strong>refinementType</strong></dt><dd><p>A SymbolicConstant specifying the type of the FieldOutput object. Possible values for
 the SymbolicConstant are NO_REFINEMENT, INVARIANT and COMPONENT. Default argument is
 NO_REFINEMENT. <strong>refinementType</strong> is mandetory if <strong>variableLabel</strong> has an INVARIANT or a
 COMPONENT.</p>
 </dd>
-<dt><strong>refinementLabel</strong></dt><dd><p>​   A String specifying the Label of FieldOutput object. This is required only if the
+<dt><strong>refinementLabel</strong></dt><dd><p>A String specifying the Label of FieldOutput object. This is required only if the
 <strong>refinementType</strong> is INVARIANT or COMPONENT.</p>
 </dd>
-<dt><strong>displayOutputPosition</strong></dt><dd><p>​   A SymbolicConstant specifying the position from which to obtain the data. Possible
+<dt><strong>displayOutputPosition</strong></dt><dd><p>A SymbolicConstant specifying the position from which to obtain the data. Possible
 values are NODAL, INTEGRATION_POINT, ELEMENT_FACE, ELEMENT_NODAL, ELEMENT_CENTROID,
 WHOLE_ELEMENT, WHOLE_REGION, WHOLE_PART_INSTANCE, WHOLE_MODEL, and GENERAL_PARTICLE.</p>
 </dd>
@@ -2119,7 +2121,7 @@ value is an empty sequence.</p>
 <h3>OdbMeshRegionData<a class="headerlink" href="#odbmeshregiondata" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbMeshRegionData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">odbFileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variableLabel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepIndex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frameIndex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputPosition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UNDEFINED_POSITION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SCALAR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">storageType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FLOAT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityToPlot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FIELD_OUTPUT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">averageElementOutput</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useRegionBoundaries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regionBoundaries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NONE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">includeFeatureBoundaries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">featureAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">averageOnlyDisplayed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">averagingThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">75</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">computeOrder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EXTRAPOLATE_COMPUTE_AVERAGE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'REAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transformationType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sectionPoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refinementType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refinementLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displayOutputPosition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py#L4-L300"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbMeshRegionData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">odbFileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variableLabel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepIndex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frameIndex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputPosition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UNDEFINED_POSITION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SCALAR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">storageType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FLOAT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityToPlot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FIELD_OUTPUT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">averageElementOutput</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useRegionBoundaries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regionBoundaries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NONE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">includeFeatureBoundaries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">featureAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">averageOnlyDisplayed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">averagingThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">75</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">computeOrder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EXTRAPOLATE_COMPUTE_AVERAGE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'REAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transformationType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sectionPoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refinementType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refinementLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displayOutputPosition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py#L4-L301"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData" title="Permalink to this definition">#</a></dt>
 <dd><p>The OdbMeshRegionData object defines the external source data of MappedField from an ODB
 file.</p>
 <div class="admonition note">
@@ -2185,7 +2187,7 @@ file.</p>
 <td><p>A SymbolicConstant specifying the numeric form in which to display results that contain complex numbers.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.complexAngle" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.complexAngle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">complexAngle</span></code></a></p></td>
-<td><p>A Float specifying the angle (in degrees) at which to display results that contain complex numbers when <a href="#id4"><span class="problematic" id="id5">*</span></a>numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The default value is 0.0.</p></td>
+<td><p>A Float specifying the angle (in degrees) at which to display results that contain complex numbers when <a href="#id2"><span class="problematic" id="id3">*</span></a>numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The default value is 0.0.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.odbFileName" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.odbFileName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbFileName</span></code></a></p></td>
 <td><p>A String specifying the name of the output database file (including the .odb extension) to be read into as the source data.</p></td>
@@ -2247,7 +2249,7 @@ value is OFF.</p>
 <dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.complexAngle">
 <span class="sig-name descname"><span class="pre">complexAngle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py#L112-L115"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.complexAngle" title="Permalink to this definition">#</a></dt>
 <dd><p>A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id6"><span class="problematic" id="id7">*</span></a>numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The
+complex numbers when <a href="#id4"><span class="problematic" id="id5">*</span></a>numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The
 default value is 0.0.</p>
 </dd></dl>
 
@@ -2370,7 +2372,7 @@ and DISPLAY_GROUPS. The default value is NONE.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py#L298-L300"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py#L299-L301"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the OdbMeshRegionData object.</p>
 </dd></dl>
 

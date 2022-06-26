@@ -3157,7 +3157,7 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 <h3>ContactDamage<a class="headerlink" href="#contactdamage" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ContactDamage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initTable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criterion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MAX_STRESS'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initTempDep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initDependencies</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useEvolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolutionType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'DISPLACEMENT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">softening</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'LINEAR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useMixedMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mixedModeType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'TABULAR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeMixRatio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ENERGY'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exponent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolTempDep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolDependencies</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolTable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useStabilization</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viscosityCoef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L4-L297"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ContactDamage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initTable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criterion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MAX_STRESS'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initTempDep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initDependencies</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useEvolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolutionType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'DISPLACEMENT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">softening</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'LINEAR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useMixedMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mixedModeType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'TABULAR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeMixRatio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ENERGY'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exponent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolTempDep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolDependencies</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolTable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useStabilization</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viscosityCoef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L4-L305"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage" title="Permalink to this definition">#</a></dt>
 <dd><p>The ContactDamage object specifies damage options for a contact interaction property.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3194,29 +3194,24 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 </div></blockquote>
 <p>Table data for <strong>evolTable</strong>:</p>
 <p>If <strong>evolutionType</strong> = DISPLACEMENT, <strong>softening</strong> = LINEAR, and <strong>useMixedMode</strong> = OFF, the table data specify the following:</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>Effective total or Plastic displacement at failure, measured from the time of damage initiation.</p></li>
 <li><p>Temperature, if the data depend on temperature.</p></li>
 <li><p>Value of the first field variable, if the data depend on field variables.</p></li>
 <li><p>Value of the second field variable.</p></li>
 <li><p>Etc.</p></li>
 </ul>
-</div></blockquote>
 <p>If <strong>evolutionType</strong> = ENERGY, <strong>softening</strong> = LINEAR or EXPONENTIAL, and <strong>useMixedMode</strong> = OFF, the table data specify the following:</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>Fracture energy.</p></li>
 <li><p>Temperature, if the data depend on temperature.</p></li>
 <li><p>Value of the first field variable, if the data depend on field variables.</p></li>
 <li><p>Value of the second field variable.</p></li>
 <li><p>Etc.</p></li>
 </ul>
-</div></blockquote>
 <p>If <strong>evolutionType</strong> = DISPLACEMENT, <strong>softening</strong> = LINEAR, <strong>useMixedMode</strong> = ON, <strong>mixedModeType</strong> = TABULAR, and
 <strong>modeMixRatio</strong> = ENERGY or TRACTION, the table data specify the following:</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>Total displacement at failure, measured from the time of damage initiation.</p></li>
 <li><p>Appropriate mode mix ratio.</p></li>
 <li><p>Appropriate mode mix ratio (if relevant, for three dimensional problems with anisotropic shear behavior).</p></li>
@@ -3225,11 +3220,9 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 <li><p>Value of the second field variable.</p></li>
 <li><p>Etc.</p></li>
 </ul>
-</div></blockquote>
 <p>If <strong>evolutionType</strong> = ENERGY, <strong>softening</strong> = LINEAR or EXPONENTIAL, <strong>useMixedMode</strong> = ON, <strong>mixedModeType</strong> = TABULAR, and
 <strong>modeMixRatio</strong> = ENERGY or TRACTION, the table data specify the following:</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>Fracture energy.</p></li>
 <li><p>Appropriate mode mix ratio.</p></li>
 <li><p>Appropriate mode mix ratio (if relevant, for three dimensional problems with anisotropic shear behavior).</p></li>
@@ -3238,10 +3231,8 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 <li><p>Value of the second field variable.</p></li>
 <li><p>Etc.</p></li>
 </ul>
-</div></blockquote>
 <p>If <strong>evolutionType</strong> = DISPLACEMENT, <strong>softening</strong> = EXPONENTIAL, and <strong>useMixedMode</strong> = OFF, the table data specify the following:</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>Effective total or Plastic displacement at failure, measured from the time of damage initiation.</p></li>
 <li><p>Exponential law parameter.</p></li>
 <li><p>Temperature, if the data depend on temperature.</p></li>
@@ -3249,11 +3240,9 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 <li><p>Value of the second field variable.</p></li>
 <li><p>Etc.</p></li>
 </ul>
-</div></blockquote>
 <p>If <strong>evolutionType</strong> = DISPLACEMENT, <strong>softening</strong> = EXPONENTIAL, <strong>useMixedMode</strong> = ON, <strong>mixedModeType</strong> = TABULAR, and
 <strong>modeMixRatio</strong> = ENERGY or TRACTION, the table data specify the following:</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>Total displacement at failure, measured from the time of damage initiation.</p></li>
 <li><p>Exponential law parameter.</p></li>
 <li><p>Appropriate mode mix ratio.</p></li>
@@ -3263,10 +3252,8 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 <li><p>Value of the second field variable.</p></li>
 <li><p>Etc.</p></li>
 </ul>
-</div></blockquote>
 <p>If <strong>evolutionType</strong> = DISPLACEMENT, <strong>softening</strong> = TABULAR, and <strong>useMixedMode</strong> = OFF, the table data specify the following:</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>Damage variable.</p></li>
 <li><p>Effective total or Plastic displacement at failure, measured from the time of damage initiation.</p></li>
 <li><p>Temperature, if the data depend on temperature.</p></li>
@@ -3274,11 +3261,9 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 <li><p>Value of the second field variable.</p></li>
 <li><p>Etc.</p></li>
 </ul>
-</div></blockquote>
 <p>If <strong>evolutionType</strong> = DISPLACEMENT, <strong>softening</strong> = TABULAR, <strong>useMixedMode</strong> = ON, <strong>mixedModeType</strong> = TABULAR, and
 <strong>modeMixRatio</strong> = ENERGY or TRACTION, the table data specify the following:</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>Damage variable.</p></li>
 <li><p>Effective total displacement, measured from the time of damage initiation.</p></li>
 <li><p>Appropriate mode mix ratio.</p></li>
@@ -3288,11 +3273,9 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 <li><p>Value of the second field variable.</p></li>
 <li><p>Etc.</p></li>
 </ul>
-</div></blockquote>
 <p>If <strong>evolutionType</strong> = ENERGY, <strong>softening</strong> = LINEAR or EXPONENTIAL, <strong>useMixedMode</strong> = ON, <strong>mixedModeType</strong> = POWER_LAW or
 BK, and <strong>modeMixRatio</strong> = ENERGY, the table data specify the following:</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>Normal mode fracture energy.</p></li>
 <li><p>Shear mode fracture energy for failure in the first shear direction.</p></li>
 <li><p>Shear mode fracture energy for failure in the second shear direction.</p></li>
@@ -3301,7 +3284,6 @@ BK, and <strong>modeMixRatio</strong> = ENERGY, the table data specify the follo
 <li><p>Value of the second field variable.</p></li>
 <li><p>Etc.</p></li>
 </ul>
-</div></blockquote>
 <p>The corresponding analysis keywords are:</p>
 <ul class="simple">
 <li><p>DAMAGE INITIATION</p></li>
@@ -3392,7 +3374,7 @@ BK, and <strong>modeMixRatio</strong> = ENERGY, the table data specify the follo
 <hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.criterion">
-<span class="sig-name descname"><span class="pre">criterion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'MAX_STRESS'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L129-L132"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.criterion" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">criterion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'MAX_STRESS'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L137-L140"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.criterion" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the type of data used to define the initiation of damage.
 Possible values are MAX_STRESS, MAX_SEPARATION, QUAD_TRACTION, and QUAD_SEPARATION. The
 default value is MAX_STRESS.</p>
@@ -3400,14 +3382,14 @@ default value is MAX_STRESS.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.evolDependencies">
-<span class="sig-name descname"><span class="pre">evolDependencies</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L180-L182"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.evolDependencies" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">evolDependencies</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L188-L190"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.evolDependencies" title="Permalink to this definition">#</a></dt>
 <dd><p>An Int specifying the number of evolution data field variables. This argument is valid
 only when <strong>useEvolution</strong> = ON. The default value is 0.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.evolTable">
-<span class="sig-name descname"><span class="pre">evolTable</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L196-L199"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.evolTable" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">evolTable</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L204-L207"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.evolTable" title="Permalink to this definition">#</a></dt>
 <dd><p>A tuple of tuples of Floats specifying the values defining the damage evolution. The
 items in the table data are described below. This argument is valid only when
 <strong>useEvolution</strong> = ON.</p>
@@ -3415,14 +3397,14 @@ items in the table data are described below. This argument is valid only when
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.evolTempDep">
-<span class="sig-name descname"><span class="pre">evolTempDep</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L176-L178"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.evolTempDep" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">evolTempDep</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L184-L186"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.evolTempDep" title="Permalink to this definition">#</a></dt>
 <dd><p>A Boolean specifying whether the evolution data depend on temperature. This argument is
 valid only when <strong>useEvolution</strong> = ON. The default value is OFF.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.evolutionType">
-<span class="sig-name descname"><span class="pre">evolutionType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DISPLACEMENT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L144-L147"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.evolutionType" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">evolutionType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DISPLACEMENT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L152-L155"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.evolutionType" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the type of data used to define the evolution of damage.
 This argument is valid only when <strong>useEvolution</strong> = ON. Possible values are DISPLACEMENT and
 ENERGY. The default value is DISPLACEMENT.</p>
@@ -3430,7 +3412,7 @@ ENERGY. The default value is DISPLACEMENT.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.exponent">
-<span class="sig-name descname"><span class="pre">exponent</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L171-L174"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.exponent" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">exponent</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L179-L182"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.exponent" title="Permalink to this definition">#</a></dt>
 <dd><p>None or a Float specifying the exponent in the power-law or BK criterion that defines
 the variation of fracture energy with mode mix. This argument is valid only when
 <strong>useEvolution</strong> = ON and when <strong>mixedModeType</strong> = POWER_LAW or BK. The default value is None.</p>
@@ -3438,27 +3420,27 @@ the variation of fracture energy with mode mix. This argument is valid only when
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.initDependencies">
-<span class="sig-name descname"><span class="pre">initDependencies</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L138-L139"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.initDependencies" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">initDependencies</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L146-L147"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.initDependencies" title="Permalink to this definition">#</a></dt>
 <dd><p>An Int specifying the number of initiation data field variables. The default value is 0.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.initTable">
-<span class="sig-name descname"><span class="pre">initTable</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L192-L194"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.initTable" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">initTable</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L200-L202"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.initTable" title="Permalink to this definition">#</a></dt>
 <dd><p>A tuple of tuples of Floats specifying the values defining the damage initiation. The
 items in the table data are described below.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.initTempDep">
-<span class="sig-name descname"><span class="pre">initTempDep</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L134-L136"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.initTempDep" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">initTempDep</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L142-L144"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.initTempDep" title="Permalink to this definition">#</a></dt>
 <dd><p>A Boolean specifying whether the initiation data depend on temperature. The default
 value is OFF.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.mixedModeType">
-<span class="sig-name descname"><span class="pre">mixedModeType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'TABULAR'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L159-L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.mixedModeType" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">mixedModeType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'TABULAR'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L167-L171"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.mixedModeType" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the mode mix fracture criterion. This argument is valid
 only when <strong>useEvolution</strong> = ON and when <strong>useMixedMode</strong> = ON. The POWER_LAW and BK values can
 be used only when <strong>evolutionType</strong> = ENERGY. Possible values are TABULAR, POWER_LAW, and
@@ -3467,7 +3449,7 @@ BK. The default value is TABULAR.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.modeMixRatio">
-<span class="sig-name descname"><span class="pre">modeMixRatio</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ENERGY'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L165-L169"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.modeMixRatio" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">modeMixRatio</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ENERGY'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L173-L177"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.modeMixRatio" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the mode mix ratio type. This argument is valid only when
 <strong>useEvolution</strong> = ON and when <strong>useMixedMode</strong> = ON. The TRACTION value can be used only when
 <strong>mixedModeType</strong> = TABULAR. Possible values are ENERGY and TRACTION. The default value is
@@ -3476,13 +3458,13 @@ ENERGY.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L295-L297"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L303-L305"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the ContactDamage object.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.softening">
-<span class="sig-name descname"><span class="pre">softening</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'LINEAR'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L149-L153"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.softening" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">softening</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'LINEAR'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L157-L161"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.softening" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the type of data used to define the evolution softening
 response. This argument is valid only when <strong>useEvolution</strong> = ON. The TABULAR value can be
 used only when <strong>evolutionType</strong> = DISPLACEMENT. Possible values are LINEAR, EXPONENTIAL,
@@ -3491,27 +3473,27 @@ and TABULAR. The default value is LINEAR.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.useEvolution">
-<span class="sig-name descname"><span class="pre">useEvolution</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L141-L142"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.useEvolution" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">useEvolution</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L149-L150"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.useEvolution" title="Permalink to this definition">#</a></dt>
 <dd><p>A Boolean specifying whether evolution data will be defined. The default value is OFF.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.useMixedMode">
-<span class="sig-name descname"><span class="pre">useMixedMode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L155-L157"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.useMixedMode" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">useMixedMode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L163-L165"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.useMixedMode" title="Permalink to this definition">#</a></dt>
 <dd><p>A Boolean specifying whether evolution data be defined using dependent behavior modes.
 This argument is valid only when <strong>useEvolution</strong> = ON. The default value is OFF.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.useStabilization">
-<span class="sig-name descname"><span class="pre">useStabilization</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L184-L186"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.useStabilization" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">useStabilization</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L192-L194"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.useStabilization" title="Permalink to this definition">#</a></dt>
 <dd><p>A Boolean specifying whether stabilization data will be defined. This argument is valid
 only when <strong>useEvolution</strong> = ON. The default value is OFF.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.ContactDamage.ContactDamage.viscosityCoef">
-<span class="sig-name descname"><span class="pre">viscosityCoef</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L188-L190"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.viscosityCoef" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">viscosityCoef</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/ContactDamage.py#L196-L198"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.ContactDamage.ContactDamage.viscosityCoef" title="Permalink to this definition">#</a></dt>
 <dd><p>None or a Float specifying the viscosity coefficient. This argument is valid only when
 <strong>useStabilization</strong> = ON. The default value is None.</p>
 </dd></dl>
@@ -10232,17 +10214,12 @@ The FluidCavityProperty object is derived from the InteractionProperty object.</
 </div>
 <p>The corresponding analysis keywords are:</p>
 <ul class="simple">
-<li><dl class="simple">
-<dt>FLUID BEHAVIOR</dt><dd><ul>
+<li><p>FLUID BEHAVIOR</p></li>
 <li><p>CAPACITY</p></li>
 <li><p>FLUID BULK MODULUS</p></li>
 <li><p>FLUID DENSITY</p></li>
 <li><p>FLUID EXPANSION</p></li>
 <li><p>MOLECULAR WEIGHT</p></li>
-</ul>
-</dd>
-</dl>
-</li>
 </ul>
 </div>
 <div class="autoclasstoc docutils container">
@@ -11285,7 +11262,7 @@ Possible values are:</p>
 <h3>FractureCriterion<a class="headerlink" href="#fracturecriterion" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Interaction.FractureCriterion.FractureCriterion">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FractureCriterion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initTable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'VCCT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mixedModeBehavior</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'BK'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temperatureDependency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dependencies</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specifyUnstableCrackProp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unstableTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L6-L164"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FractureCriterion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initTable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'VCCT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mixedModeBehavior</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'BK'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temperatureDependency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dependencies</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specifyUnstableCrackProp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unstableTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L6-L167"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion" title="Permalink to this definition">#</a></dt>
 <dd><p>The FractureCriterion object specifies fractureCriterion options for a contact
 interaction property.</p>
 <div class="admonition note">
@@ -11298,65 +11275,57 @@ interaction property.</p>
 <p>The table data for this object are:</p>
 <p>Table data for <strong>initTable</strong>:</p>
 <p>If <strong>type</strong> = VCCT for <strong>mixedModeBehavior</strong> = BK or REEDER, the table data specify the following:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Mode I critical energy release rate, GICGI⁢C.</p></li>
-<li><p>Mode II critical energy release rate, GIICGI⁢I⁢C.</p></li>
-<li><p>Mode III critical energy release rate, GIIICGI⁢I⁢I⁢C.</p></li>
-<li><p>Exponent, ηη.</p></li>
+<ul class="simple">
+<li><p>Mode I critical energy release rate, <span class="math notranslate nohighlight">\(G_{I C}\)</span>.</p></li>
+<li><p>Mode II critical energy release rate, <span class="math notranslate nohighlight">\(G_{I I C}\)</span>.</p></li>
+<li><p>Mode III critical energy release rate, <span class="math notranslate nohighlight">\(G_{I I I C}\)</span>.</p></li>
+<li><p>Exponent, <span class="math notranslate nohighlight">\(\eta\)</span>.</p></li>
 <li><p>Temperature, if the data depend on temperature.</p></li>
 <li><p>Value of the first field variable, if the data depend on field variables.</p></li>
 <li><p>Value of the second field variable.</p></li>
 <li><p>Etc.</p></li>
 </ul>
-</div></blockquote>
 <p>If <strong>type</strong> = VCCT for <strong>mixedModeBehavior</strong> = POWER, the table data specify the following:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Mode I critical energy release rate, GICGI⁢C.</p></li>
-<li><p>Mode II critical energy release rate, GIICGI⁢I⁢C.</p></li>
-<li><p>Mode III critical energy release rate, GIIICGI⁢I⁢I⁢C.</p></li>
-<li><p>Exponent, ama⁢m.</p></li>
-<li><p>Exponent, ana⁢n.</p></li>
-<li><p>Exponent, aoa⁢o.</p></li>
+<ul class="simple">
+<li><p>Mode I critical energy release rate, <span class="math notranslate nohighlight">\(G_{I C}\)</span>.</p></li>
+<li><p>Mode II critical energy release rate, <span class="math notranslate nohighlight">\(G_{I I C}\)</span>.</p></li>
+<li><p>Mode III critical energy release rate, <span class="math notranslate nohighlight">\(G_{I I I C}\)</span>.</p></li>
+<li><p>Exponent, <span class="math notranslate nohighlight">\(am\)</span>.</p></li>
+<li><p>Exponent, <span class="math notranslate nohighlight">\(an\)</span>.</p></li>
+<li><p>Exponent, <span class="math notranslate nohighlight">\(ao\)</span>.</p></li>
 <li><p>Value of the first field variable, if the data depend on field variables.</p></li>
 <li><p>Value of the second field variable.</p></li>
 <li><p>Etc.</p></li>
 </ul>
-</div></blockquote>
 <p>If <strong>type</strong> = ENHANCED VCCT for <strong>mixedModeBehavior</strong> = BK or REEDER, the table data specify the following:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Mode I critical energy release rate for onset crack, GICGI⁢C.</p></li>
-<li><p>Mode II critical energy release rate for onset crack, GIICGI⁢I⁢C.</p></li>
-<li><p>Mode III critical energy release rate for onset crack, GIIICGI⁢I⁢I⁢C.</p></li>
-<li><p>Mode I critical energy release rate for crack propagation, GICGI⁢C.</p></li>
-<li><p>Mode II critical energy release rate for crack propagation, GIICGI⁢I⁢C.</p></li>
-<li><p>Mode III critical energy release rate for crack propagation, GIIICGI⁢I⁢I⁢C.</p></li>
-<li><p>Exponent, ηη.</p></li>
+<ul class="simple">
+<li><p>Mode I critical energy release rate for onset crack, <span class="math notranslate nohighlight">\(G_{I C}\)</span>.</p></li>
+<li><p>Mode II critical energy release rate for onset crack, <span class="math notranslate nohighlight">\(G_{I I C}\)</span>.</p></li>
+<li><p>Mode III critical energy release rate for onset crack, <span class="math notranslate nohighlight">\(G_{I I I C}\)</span>.</p></li>
+<li><p>Mode I critical energy release rate for crack propagation, <span class="math notranslate nohighlight">\(G_{I C}\)</span>.</p></li>
+<li><p>Mode II critical energy release rate for crack propagation, <span class="math notranslate nohighlight">\(G_{I I C}\)</span>.</p></li>
+<li><p>Mode III critical energy release rate for crack propagation, <span class="math notranslate nohighlight">\(G_{I I I C}\)</span>.</p></li>
+<li><p>Exponent, <span class="math notranslate nohighlight">\(\eta\)</span></p></li>
 <li><p>Temperature, if the data depend on temperature.</p></li>
 <li><p>Value of the first field variable, if the data depend on field variables.</p></li>
 <li><p>Value of the second field variable.</p></li>
 <li><p>Etc.</p></li>
 </ul>
-</div></blockquote>
 <p>If <strong>type</strong> = ENHANCED VCCT for <strong>mixedModeBehavior</strong> = POWER, the table data specify the following:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Mode I critical energy release rate for onset crack, GICGI⁢C.</p></li>
-<li><p>Mode II critical energy release rate for onset crack, GIICGI⁢I⁢C.</p></li>
-<li><p>Mode III critical energy release rate for onset crack, GIIICGI⁢I⁢I⁢C.</p></li>
-<li><p>Mode I critical energy release rate for crack propagation, GICGI⁢C.</p></li>
-<li><p>Mode II critical energy release rate for crack propagation, GIICGI⁢I⁢C.</p></li>
-<li><p>Mode III critical energy release rate for crack propagation, GIIICGI⁢I⁢I⁢C.</p></li>
-<li><p>Exponent, ama⁢m.</p></li>
-<li><p>Exponent, ana⁢n.</p></li>
-<li><p>Exponent, aoa⁢o.</p></li>
+<ul class="simple">
+<li><p>Mode I critical energy release rate for onset crack, <span class="math notranslate nohighlight">\(G_{I C}\)</span>.</p></li>
+<li><p>Mode II critical energy release rate for onset crack, <span class="math notranslate nohighlight">\(G_{I I C}\)</span>.</p></li>
+<li><p>Mode III critical energy release rate for onset crack, <span class="math notranslate nohighlight">\(G_{I I I C}\)</span>.</p></li>
+<li><p>Mode I critical energy release rate for crack propagation, <span class="math notranslate nohighlight">\(G_{I C}\)</span>.</p></li>
+<li><p>Mode II critical energy release rate for crack propagation, <span class="math notranslate nohighlight">\(G_{I I C}\)</span>.</p></li>
+<li><p>Mode III critical energy release rate for crack propagation, <span class="math notranslate nohighlight">\(G_{I I I C}\)</span>.</p></li>
+<li><p>Exponent, <span class="math notranslate nohighlight">\(am\)</span>.</p></li>
+<li><p>Exponent, <span class="math notranslate nohighlight">\(an\)</span>.</p></li>
+<li><p>Exponent, <span class="math notranslate nohighlight">\(ao\)</span>.</p></li>
 <li><p>Value of the first field variable, if the data depend on field variables.</p></li>
 <li><p>Value of the second field variable.</p></li>
 <li><p>Etc.</p></li>
 </ul>
-</div></blockquote>
 <p>The corresponding analysis keywords are:</p>
 <ul class="simple">
 <li><p>FRACTURE CRITERION</p></li>
@@ -11418,7 +11387,7 @@ interaction property.</p>
 <hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.FractureCriterion.FractureCriterion.dependencies">
-<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L92-L94"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.dependencies" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L95-L97"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.dependencies" title="Permalink to this definition">#</a></dt>
 <dd><p>An Int specifying the number of fracture criterion data field variables. The default
 value is 0.</p>
 </dd></dl>
@@ -11432,47 +11401,47 @@ The items in the table data are described below.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.FractureCriterion.FractureCriterion.mixedModeBehavior">
-<span class="sig-name descname"><span class="pre">mixedModeBehavior</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'BK'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L84-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.mixedModeBehavior" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">mixedModeBehavior</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'BK'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L87-L89"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.mixedModeBehavior" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the mixed mode behavior type used to define fracture
 criterion. Possible values are BK, POWER, and REEDER. The default value is BK.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Interaction.FractureCriterion.FractureCriterion.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L162-L164"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L165-L167"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the FractureCriterion object.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.FractureCriterion.FractureCriterion.specifyUnstableCrackProp">
-<span class="sig-name descname"><span class="pre">specifyUnstableCrackProp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L99-L101"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.specifyUnstableCrackProp" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">specifyUnstableCrackProp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L102-L104"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.specifyUnstableCrackProp" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying whether to include unstable crack growth tolerance in
 fracture criterion. Possible values are ON and OFF. The default value is OFF.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.FractureCriterion.FractureCriterion.temperatureDependency">
-<span class="sig-name descname"><span class="pre">temperatureDependency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L88-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.temperatureDependency" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">temperatureDependency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L91-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.temperatureDependency" title="Permalink to this definition">#</a></dt>
 <dd><p>A Boolean specifying whether the fracture criterion data depend on temperature. The
 default value is OFF.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.FractureCriterion.FractureCriterion.tolerance">
-<span class="sig-name descname"><span class="pre">tolerance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L96-L97"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.tolerance" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">tolerance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L99-L100"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.tolerance" title="Permalink to this definition">#</a></dt>
 <dd><p>A Float specifying the tolerance for VCCTEnhanced VCCT type. The default value is 0.2.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.FractureCriterion.FractureCriterion.type">
-<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'VCCT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L80-L82"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.type" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'VCCT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L83-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.type" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the type of data used to define the fracture criterion.
 Possible values are VCCT and ENHANCED VCCT. The default value is VCCT.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.FractureCriterion.FractureCriterion.unstableTolerance">
-<span class="sig-name descname"><span class="pre">unstableTolerance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">abaqusConstants.SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L103-L106"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.unstableTolerance" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">unstableTolerance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">abaqusConstants.SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/FractureCriterion.py#L106-L109"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.FractureCriterion.FractureCriterion.unstableTolerance" title="Permalink to this definition">#</a></dt>
 <dd><p>The SymbolicConstant DEFAULT or a Float specifying the tolerance for unstable crack
 propagation. This parameter specified only if <strong>specifyUnstableCrackProp</strong> = ON. The default
 value is DEFAULT.</p>
@@ -11485,7 +11454,7 @@ value is DEFAULT.</p>
 <h3>GapElectricalConductance<a class="headerlink" href="#gapelectricalconductance" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Interaction.GapElectricalConductance.GapElectricalConductance">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">GapElectricalConductance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">definition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'TABULAR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clearanceDependency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pressureDependency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temperatureDependencyC</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dependenciesC</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clearanceDepTable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temperatureDependencyP</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dependenciesP</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pressureDepTable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L4-L132"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">GapElectricalConductance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">definition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'TABULAR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clearanceDependency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pressureDependency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temperatureDependencyC</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dependenciesC</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clearanceDepTable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temperatureDependencyP</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dependenciesP</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pressureDepTable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L4-L133"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance" title="Permalink to this definition">#</a></dt>
 <dd><p>The GapElectricalConductance object specifies electrical conductance for a contact
 interaction property.</p>
 <div class="admonition note">
@@ -11497,8 +11466,7 @@ interaction property.</p>
 </div>
 <p>The table data for this object are:</p>
 <p>The <strong>clearanceDepTable</strong> data specify the following:</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>Conductivity.</p></li>
 <li><p>Clearance.</p></li>
 <li><p>Temperature, if the data depend on temperature.</p></li>
@@ -11506,10 +11474,8 @@ interaction property.</p>
 <li><p>Value of the second field variable.</p></li>
 <li><p>Etc.</p></li>
 </ul>
-</div></blockquote>
 <p>The <strong>pressureDepTable</strong> data specify the following:</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>Conductivity.</p></li>
 <li><p>Pressure.</p></li>
 <li><p>Temperature, if the data depend on temperature.</p></li>
@@ -11517,7 +11483,6 @@ interaction property.</p>
 <li><p>Value of the second field variable.</p></li>
 <li><p>Etc.</p></li>
 </ul>
-</div></blockquote>
 <p>The corresponding analysis keywords are:</p>
 <ul class="simple">
 <li><p>GAP ELECTRICAL CONDUCTANCE</p></li>
@@ -11585,67 +11550,67 @@ interaction property.</p>
 <hr class="docutils" />
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.clearanceDepTable">
-<span class="sig-name descname"><span class="pre">clearanceDepTable</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L58-L60"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.clearanceDepTable" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">clearanceDepTable</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L59-L61"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.clearanceDepTable" title="Permalink to this definition">#</a></dt>
 <dd><p>A sequence of sequences of Floats specifying clearance dependency data. The items in the
 table data are described below.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.clearanceDependency">
-<span class="sig-name descname"><span class="pre">clearanceDependency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L44-L45"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.clearanceDependency" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">clearanceDependency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L45-L46"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.clearanceDependency" title="Permalink to this definition">#</a></dt>
 <dd><p>A Boolean specifying whether to use clearance-dependent data. The default value is ON.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.definition">
-<span class="sig-name descname"><span class="pre">definition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'TABULAR'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L40-L42"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.definition" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">definition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'TABULAR'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L41-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.definition" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying how the electrical conductance is defined. Possible values
 are TABULAR and USER_DEFINED. The default value is TABULAR.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.dependenciesC">
-<span class="sig-name descname"><span class="pre">dependenciesC</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L54-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.dependenciesC" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">dependenciesC</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L55-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.dependenciesC" title="Permalink to this definition">#</a></dt>
 <dd><p>An Int specifying the number of field variables to use with clearance dependency. The
 default value is 0.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.dependenciesP">
-<span class="sig-name descname"><span class="pre">dependenciesP</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L66-L68"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.dependenciesP" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">dependenciesP</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L67-L69"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.dependenciesP" title="Permalink to this definition">#</a></dt>
 <dd><p>An Int specifying the number of field variables to use with pressure dependency. The
 default value is 0.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.pressureDepTable">
-<span class="sig-name descname"><span class="pre">pressureDepTable</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L70-L72"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.pressureDepTable" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">pressureDepTable</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L71-L73"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.pressureDepTable" title="Permalink to this definition">#</a></dt>
 <dd><p>A sequence of sequences of Floats specifying pressure dependency data. The items in the
 table data are described below.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.pressureDependency">
-<span class="sig-name descname"><span class="pre">pressureDependency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L47-L48"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.pressureDependency" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">pressureDependency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L48-L49"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.pressureDependency" title="Permalink to this definition">#</a></dt>
 <dd><p>A Boolean specifying whether to use pressure-dependent data. The default value is OFF.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L130-L132"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L131-L133"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the GapElectricalConductance object.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.temperatureDependencyC">
-<span class="sig-name descname"><span class="pre">temperatureDependencyC</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L50-L52"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.temperatureDependencyC" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">temperatureDependencyC</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L51-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.temperatureDependencyC" title="Permalink to this definition">#</a></dt>
 <dd><p>A Boolean specifying whether to use temperature-dependent data with clearance
 dependency. The default value is OFF.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.temperatureDependencyP">
-<span class="sig-name descname"><span class="pre">temperatureDependencyP</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L62-L64"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.temperatureDependencyP" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">temperatureDependencyP</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/GapElectricalConductance.py#L63-L65"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.temperatureDependencyP" title="Permalink to this definition">#</a></dt>
 <dd><p>A Boolean specifying whether to use temperature-dependent data with pressure dependency.
 The default value is OFF.</p>
 </dd></dl>
@@ -18340,5 +18305,6 @@ Possible values are:</p>
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/scripts/furo.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </body>
 </html>
