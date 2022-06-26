@@ -725,13 +725,14 @@ History output is output defined for a single point or for values calculated for
 .. note::
     History data from an analysis cannot contain multiple points.
 
-The history data object model is shown in Figure 1.
+The history data object model is shown in :numref:`odb-history-nls`
 
+.. _odb-history-nls:
 .. figure:: /images/odb-history-nls.png
     :width: 100%
     :align: center
 
-    Figure 1. The history data object model.
+    The history data object model.
 
 In contrast to field output, which is associated with a frame, history output is associated with a step. History output data are stored in the historyRegions repository under an OdbStep object. Abaqus creates keys to the historyRegions repository that describe the region; for example,
 

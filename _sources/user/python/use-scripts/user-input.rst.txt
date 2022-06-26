@@ -30,6 +30,7 @@ The following examples illustrate the use of the `getInput` function. The first 
 
 The `float` function on the third line converts the string returned by `getInput` into a floating point number. The following figure shows the dialog box that appears when this script is executed:
 
+.. _utl-getinput-nls:
 .. figure:: /images/utl-getinput-nls.png
     :width: 50%
     :align: center
@@ -60,6 +61,7 @@ The following shows how you can modify the macro to accept input from the user. 
 
 The `eval` function in the third line of the macro converts the string returned by the `getInput` function into two integers. When you supply the default values shown in this example to the `getInput` function, the prompt and the text field in the dialog box that appears are shown in the following figure. If the user clicks **[OK]** or presses **[Enter]**, the default values are accepted and returned to the `getInput` function. If the user clicks **[Cancel]**, None is returned.
 
+.. _utl-getinput-default-nls:
 .. figure:: /images/utl-getinput-default-nls.png
     :width: 50%
     :align: center
@@ -82,6 +84,7 @@ The following examples illustrate the use of the `getInputs` function to obtain 
 
 The following figure shows the dialog box that these statements create:
 
+.. _utl-getinputs-nls:
 .. figure:: /images/utl-getinputs-nls.png
     :width: 50%
     :align: center
@@ -124,6 +127,7 @@ The following example illustrates the use of the `getWarningReply` function:
 
 The following figure shows the dialog box that appears when this script is executed:
 
+.. _utl-getwarningreply-nls:
 .. figure:: /images/utl-getwarningreply-nls.png
     :width: 50%
     :align: center

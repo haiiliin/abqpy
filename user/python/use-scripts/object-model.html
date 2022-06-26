@@ -415,11 +415,11 @@
 </li>
 </ul>
 <p>Abaqus extends Python with approximately 500 additional objects, and there are many relationships between these objects. As a result, the complete Abaqus object model is too complex to illustrate in a single figure.</p>
-<p>In general terms the Abaqus object model is divided into the Session, the Mdb, and the Odb objects, as shown in Figure 1.</p>
+<p>In general terms the Abaqus object model is divided into the Session, the Mdb, and the Odb objects, as shown in <a class="reference internal" href="#cmd-int-model-overview-nls"><span class="std std-numref">Fig. 6</span></a></p>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../../../_images/cmd-int-model-overview-nls.png"><img alt="../../../_images/cmd-int-model-overview-nls.png" src="../../../_images/cmd-int-model-overview-nls.png" style="width: 100%;" /></a>
+<span id="cmd-int-model-overview-nls"></span><a class="reference internal image-reference" href="../../../_images/cmd-int-model-overview-nls.png"><img alt="../../../_images/cmd-int-model-overview-nls.png" src="../../../_images/cmd-int-model-overview-nls.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 1. The Abaqus object model.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">The Abaqus object model.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>An object in the object model can be one of the following:</p>
@@ -433,36 +433,38 @@
 <p>The statement <cite>from abaqus import *</cite> imports the Session object (named <cite>session</cite>) and the Mdb object (named <cite>mdb</cite>) and makes them available to your scripts. The statement <cite>from odbAccess import *</cite> allows you to access Abaqus output results from your script. The Session, Mdb, and Odb objects are described as follows:</p>
 </li>
 <li><p><strong>Session</strong></p>
-<p>Session objects are objects that are not saved between Abaqus/CAE sessions; for example, the objects that define viewports, remote queues, and user-defined views, as shown in Figure 2.</p>
+<p>Session objects are objects that are not saved between Abaqus/CAE sessions; for example, the objects that define viewports, remote queues, and user-defined views, as shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">cmd-int-model-session-nls</span></code></p>
+<blockquote>
+<div></div></blockquote>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../../_images/cmd-int-model-session-nls.png"><img alt="../../../_images/cmd-int-model-session-nls.png" src="../../../_images/cmd-int-model-session-nls.png" style="width: 50%;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2. The Session object model.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">The Session object model.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>The viewports container is owned by the Session object, as shown in Figure 3.</p>
+<p>The viewports container is owned by the Session object, as shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">cmd-int-model-session-nls</span></code>.</p>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../../_images/cmd-int-model-viewport-nls.png"><img alt="../../../_images/cmd-int-model-viewport-nls.png" src="../../../_images/cmd-int-model-viewport-nls.png" style="width: 50%;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 3. The Viewport object model.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">The Viewport object model.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </li>
 <li><p><strong>Mdb</strong></p>
-<p>The statement from abaqus import * creates an instance of the Mdb object called mdb. Mdb objects are objects that are saved in a model database and can be recovered between Abaqus/CAE sessions. Mdb objects include the Model object and the Job object. The Model object, in turn, is comprised of Part objects, Section objects, Material objects, Step objects, etc. Figure 4 shows the basic structure of the objects under the Model object. For more information, see The Model object model.</p>
+<p>The statement from abaqus import * creates an instance of the Mdb object called mdb. Mdb objects are objects that are saved in a model database and can be recovered between Abaqus/CAE sessions. Mdb objects include the Model object and the Job object. The Model object, in turn, is comprised of Part objects, Section objects, Material objects, Step objects, etc. <a class="reference internal" href="#cmd-int-model-model-nls"><span class="std std-numref">Fig. 9</span></a> shows the basic structure of the objects under the Model object. For more information, see The Model object model.</p>
 <figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="../../../_images/cmd-int-model-model-nls.png"><img alt="../../../_images/cmd-int-model-model-nls.png" src="../../../_images/cmd-int-model-model-nls.png" style="width: 50%;" /></a>
+<span id="cmd-int-model-model-nls"></span><a class="reference internal image-reference" href="../../../_images/cmd-int-model-model-nls.png"><img alt="../../../_images/cmd-int-model-model-nls.png" src="../../../_images/cmd-int-model-model-nls.png" style="width: 50%;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 4. The structure of the objects under the Model object.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">The structure of the objects under the Model object.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </li>
 <li><p><strong>Odb</strong></p>
-<p>Odb objects are saved in an output database and contain both model and results data, as shown in Figure 5.</p>
+<p>Odb objects are saved in an output database and contain both model and results data, as shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">cmd-int-model-odb-nls</span></code>.</p>
 <figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../../_images/cmd-int-model-odb-nls.png"><img alt="../../../_images/cmd-int-model-odb-nls.png" src="../../../_images/cmd-int-model-odb-nls.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 5. The Odb object model.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">The Odb object model.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Most of the commands in the Abaqus Scripting Interface begin with either the Session, the Mdb, or the Odb object. For example,</p>
@@ -508,17 +510,17 @@
 </section>
 <section id="the-model-object-model">
 <h2>The Model object model<a class="headerlink" href="#the-model-object-model" title="Permalink to this headline">#</a></h2>
-<p>The Model object contains many objects. Figure 1 and Figure 2 show the most commonly used objects that are contained in the Part and RootAssembly.</p>
+<p>The Model object contains many objects. <a class="reference internal" href="#cmd-int-model-overview-nls-2"><span class="std std-numref">Fig. 11</span></a> and <code class="xref std std-numref docutils literal notranslate"><span class="pre">cmd-int-model-assembly-nls-2</span></code> show the most commonly used objects that are contained in the Part and RootAssembly.</p>
 <figure class="align-center" id="id6">
-<a class="reference internal image-reference" href="../../../_images/cmd-int-model-overview-nls.png"><img alt="../../../_images/cmd-int-model-overview-nls.png" src="../../../_images/cmd-int-model-overview-nls.png" style="width: 100%;" /></a>
+<span id="cmd-int-model-overview-nls-2"></span><a class="reference internal image-reference" href="../../../_images/cmd-int-model-overview-nls.png"><img alt="../../../_images/cmd-int-model-overview-nls.png" src="../../../_images/cmd-int-model-overview-nls.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 1. The Part object model.</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">The Part object model.</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id7">
-<a class="reference internal image-reference" href="../../../_images/cmd-int-model-assembly-nls.png"><img alt="../../../_images/cmd-int-model-assembly-nls.png" src="../../../_images/cmd-int-model-assembly-nls.png" style="width: 100%;" /></a>
+<span id="cmd-int-model-assembly-nls"></span><a class="reference internal image-reference" href="../../../_images/cmd-int-model-assembly-nls.png"><img alt="../../../_images/cmd-int-model-assembly-nls.png" src="../../../_images/cmd-int-model-assembly-nls.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2. The RootAssembly object model.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">The RootAssembly object model.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The Job object is separate from the Model object. The object model for the Job object is straightforward; the Job object owns no other objects. The Job object refers to a Model object but is not owned by the Model object.</p>
@@ -526,7 +528,7 @@
 <section id="using-the-object-model">
 <h2>Using the object model<a class="headerlink" href="#using-the-object-model" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>Object model figures such as Figure 4 provide important information to the Abaqus Scripting Interface programmer.</p></li>
+<li><p>Object model figures such as <a class="reference internal" href="#cmd-int-abstract-nls"><span class="std std-numref">Fig. 13</span></a> provide important information to the Abaqus Scripting Interface programmer.</p></li>
 <li><p>The object model describes the relationships between objects. For example, in object-oriented programming terms a geometry object, such as a Cell, Face, Edge, or Vertex object, is said to be owned by the Part object. The Part object, in turn, is owned by the Model object. This ownership relationship between objects is referred to as the ownership hierarchy of the object model.</p></li>
 <li><p>Ownership implies that if an object is copied, everything owned by that object is also copied. Similarly, if an object is deleted, everything owned by the object is deleted. This concept is similar to parent-child relationships in Abaqus/CAE. If you delete a Part, all the children of the part—such as geometry, datums, and regions—are also deleted.</p></li>
 <li><p>The relationships between objects are described in the <cite>Path</cite> and <cite>Access</cite> descriptions in the command reference. For example, the following statement uses the path to a Cell object:</p></li>
@@ -543,11 +545,11 @@
 <section id="abstract-base-type">
 <h2>Abstract base type<a class="headerlink" href="#abstract-base-type" title="Permalink to this headline">#</a></h2>
 <p>The Abaqus object model includes the concept of an abstract base type. An abstract base type allows similar objects to share common attributes. For example, pressure and concentrated force are both kinds of loads. Object-oriented programmers call the relationship between pressure and load an is a relationship—a pressure is a kind of load. In this example Load is the name of the abstract base type. In the type hierachy Pressure and ConcentratedForce types have a base type Load. A Pressure is a Load.</p>
-<p>In Figure 1 AnalysisStep and Step are both abstract base types. In terms of the real world a static step is an analysis step and a static step is also a step. In terms of the object model a StaticStep object is an AnalysisStep object and a StaticStep object is also a Step object.</p>
+<p>In <a class="reference internal" href="#cmd-int-abstract-nls"><span class="std std-numref">Fig. 13</span></a> AnalysisStep and Step are both abstract base types. In terms of the real world a static step is an analysis step and a static step is also a step. In terms of the object model a StaticStep object is an AnalysisStep object and a StaticStep object is also a Step object.</p>
 <figure class="align-center" id="id8">
-<a class="reference internal image-reference" href="../../../_images/cmd-int-abstract-nls.png"><img alt="../../../_images/cmd-int-abstract-nls.png" src="../../../_images/cmd-int-abstract-nls.png" style="width: 50%;" /></a>
+<span id="cmd-int-abstract-nls"></span><a class="reference internal image-reference" href="../../../_images/cmd-int-abstract-nls.png"><img alt="../../../_images/cmd-int-abstract-nls.png" src="../../../_images/cmd-int-abstract-nls.png" style="width: 50%;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 1. An example of the is a relationships between objects.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">An example of the is a relationships between objects.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In contrast the object model figures described at the beginning of this section show what object-oriented programmers call has a relationships between objects. For example, a session has a viewport repository, and a model has a root assembly.</p>

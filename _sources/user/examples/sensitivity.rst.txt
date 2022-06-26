@@ -15,13 +15,13 @@ The problem investigates the effects on the accuracy of the bending moment compu
 - different shell formulations and
 - at different angles.
 
-Figure 1 illustrates the basic geometry of the simply supported skew plate with a uniform distributed load.
+:numref:`cmd-skew-dim` illustrates the basic geometry of the simply supported skew plate with a uniform distributed load.
 
 .. figures:: /images/exxskew-quadmesh-nls.png
     :width: 50%
     :align: center
     
-    Figure 1. A 4 × 4 quadrilateral mesh of the plate.
+    A 4 × 4 quadrilateral mesh of the plate.
 
 The plate is loaded by a uniform pressure of :math:`1\times10^{-6}` MPa applied over the entire surface. The edges of the plate are all simply supported. The analysis is performed for five different values of the skew angle, :math:`\delta`: 90°, 80°, 60°, 40°, and 30°. The analysis is performed for two different quadrilateral elements: S4 and S8R.
 
@@ -107,13 +107,14 @@ Add the angular dimension
 
 3. From the **Edit Feature** dialog box, select **Edit Section Sketch**.
 
-4. From the Sketcher toolbox, select the dimension tool and dimension the angle at the lower left corner of the plate as shown in Figure 1.
+4. From the Sketcher toolbox, select the dimension tool and dimension the angle at the lower left corner of the plate as shown in :numref:`cmd-skew-dim`
 
+.. _cmd-skew-dim:
 .. figure:: /images/cmd-skew-dim.png
     :width: 50%
     :align: center
 
-    Figure 1. Dimension the angle at the lower left corner of the plate.
+    Dimension the angle at the lower left corner of the plate.
 
 Determine the indices of the dimension to modify and the vertices to move
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

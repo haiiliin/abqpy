@@ -410,11 +410,11 @@
 <li><p>Creates a new viewport.</p></li>
 <li><p>Displays a shaded image of the new part in the new viewport.</p></li>
 </ul>
-<p>The new viewport and the shaded part are shown in Figure 1.</p>
+<p>The new viewport and the shaded part are shown in <a class="reference internal" href="#cmd-int-aexample-nls"><span class="std std-numref">Fig. 2</span></a>.</p>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../../../_images/cmd-int-aexample-nls.png"><img alt="../../../_images/cmd-int-aexample-nls.png" src="../../../_images/cmd-int-aexample-nls.png" style="width: 50%;" /></a>
+<span id="cmd-int-aexample-nls"></span><a class="reference internal image-reference" href="../../../_images/cmd-int-aexample-nls.png"><img alt="../../../_images/cmd-int-aexample-nls.png" src="../../../_images/cmd-int-aexample-nls.png" style="width: 50%;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 1. The example creates a new viewport and a part.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">The example creates a new viewport and a part.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The example scripts from this guide can be copied to the user’s working directory by using the Abaqus fetch utility:</p>
@@ -498,16 +498,16 @@
 </pre></div>
 </div>
 <p>These statements provide access to the objects related to sketches and parts. sketch and part are called Python modules.</p>
-<p>The next statement in the script is shown in Figure 2. You can read this statement from right to left as follows:</p>
+<p>The next statement in the script is shown in <a class="reference internal" href="#cmd-righttoleft-nls"><span class="std std-numref">Fig. 3</span></a>. You can read this statement from right to left as follows:</p>
 <ol class="arabic simple">
 <li><p>Create a new model named Model A.</p></li>
 <li><p>Store the new model in the model database mdb.</p></li>
 <li><p>Assign the new model to a variable called myModel.</p></li>
 </ol>
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="../../../_images/cmd-righttoleft-nls.png"><img alt="../../../_images/cmd-righttoleft-nls.png" src="../../../_images/cmd-righttoleft-nls.png" style="width: 50%;" /></a>
+<span id="cmd-righttoleft-nls"></span><a class="reference internal image-reference" href="../../../_images/cmd-righttoleft-nls.png"><img alt="../../../_images/cmd-righttoleft-nls.png" src="../../../_images/cmd-righttoleft-nls.png" style="width: 50%;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 2. Creating a new model.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Creating a new model.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mySketch</span> <span class="o">=</span> <span class="n">myModel</span><span class="o">.</span><span class="n">ConstrainedSketch</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Sketch A&#39;</span><span class="p">,</span> <span class="n">sheetSize</span><span class="o">=</span><span class="mf">200.0</span><span class="p">)</span>

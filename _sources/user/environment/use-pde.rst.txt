@@ -56,13 +56,14 @@ You can use the debugger in the Abaqus PDE to troubleshoot your scripts.
 
 To open the debugger, select **Window -> Debugger** or click **Start debugger**. If you have a script paused in the main window, the debugger opens at the current position of the test. If you do not have a paused script, the debugger automatically begins running the main file and positions the cursor at the start of the script.
 
-The debugger consists of a call stack area, action buttons, and the debugger command line interface (CLI) window, as shown in Figure 1. The debugger is positioned between the Abaqus PDE main window and the message area.
+The debugger consists of a call stack area, action buttons, and the debugger command line interface (CLI) window, as shown in :numref:`cmd-pde-debugger-nls` The debugger is positioned between the Abaqus PDE main window and the message area.
 
+.. _cmd-pde-debugger-nls:
 .. figure:: /images/cmd-pde-debugger-nls.png
     :width: 50%
     :align: center
 
-    Figure 1. The Abaqus PDE debugger.
+    The Abaqus PDE debugger.
 
 The debugger uses a custom Python module named atxPdb, based on the Python pdb module. You can enter Pdb commands in the debugger CLI; you can also enter any Python statements in the debugger CLI. Python statements are executed in the same process—GUI, kernel, or local—that is running the current script (for more information, see :doc:`/user/environment/use-pde:running a script`).
 

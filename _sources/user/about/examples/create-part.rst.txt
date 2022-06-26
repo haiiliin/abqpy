@@ -19,13 +19,14 @@ The script does the following:
 - Displays a shaded image of the new part in the new viewport.
     
 
-The new viewport and the shaded part are shown in Figure 1.
+The new viewport and the shaded part are shown in :numref:`cmd_int_aexample_nls`.
 
+.. _cmd_int_aexample_nls:
 .. figure:: /images/cmd-int-aexample-nls.png
     :width: 50%
     :align: center
     
-    Figure 1. The example creates a new viewport and a part.  
+    The example creates a new viewport and a part.  
   
 
 The example scripts from this guide can be copied to the user's working directory by using the Abaqus fetch utility:
@@ -123,18 +124,19 @@ This statement makes the basic Abaqus objects accessible to the script. It also 
 
 These statements provide access to the objects related to sketches and parts. sketch and part are called Python modules.
 
-The next statement in the script is shown in Figure 2. You can read this statement from right to left as follows:
+The next statement in the script is shown in :numref:`cmd-righttoleft-nls`. You can read this statement from right to left as follows:
 
 1. Create a new model named Model A.
 2. Store the new model in the model database mdb.
 3. Assign the new model to a variable called myModel.
   
 
+.. _cmd-righttoleft-nls:
 .. figure:: /images/cmd-righttoleft-nls.png
     :width: 50%
     :align: center
 
-    Figure 2. Creating a new model. 
+    Creating a new model. 
 
 .. code-block:: python
 

@@ -398,11 +398,11 @@
           <section id="how-the-object-model-for-the-output-database-relates-to-commands">
 <h1>How the object model for the output database relates to commands<a class="headerlink" href="#how-the-object-model-for-the-output-database-relates-to-commands" title="Permalink to this headline">#</a></h1>
 <p>You need to understand the object model for the output database both to read data from it and to write data to it. An object model describes the relationship between objects. The object model for the Abaqus/CAE model is described in <span class="xref std std-doc">user/python/use-scripts/object-model</span>.</p>
-<p>For example, consider the object model for field output data shown in Figure 1. The Odb object at the top of the figure is created when you issue the command to open or create an output database. As you move down the object model, an OdbStep object is a member of the Odb object; similarly, a Frame object is a member of the OdbStep object. The FieldOutput object has two members—fieldValue and fieldLocation.</p>
+<p>For example, consider the object model for field output data shown in <a class="reference internal" href="../python/object-model.html#odb-overview-nls"><span class="std std-numref">Fig. 21</span></a> The Odb object at the top of the figure is created when you issue the command to open or create an output database. As you move down the object model, an OdbStep object is a member of the Odb object; similarly, a Frame object is a member of the OdbStep object. The FieldOutput object has two members—fieldValue and fieldLocation.</p>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../../../_images/odb-overview-nls.png"><img alt="../../../_images/odb-overview-nls.png" src="../../../_images/odb-overview-nls.png" style="width: 100%;" /></a>
+<span id="odb-overview-nls"></span><a class="reference internal image-reference" href="../../../_images/odb-overview-nls.png"><img alt="../../../_images/odb-overview-nls.png" src="../../../_images/odb-overview-nls.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Figure 1. The output database object model.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">The output database object model.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The object model translates directly to the structure of an Abaqus C++ API command. For example, the following command refers to a Frame object in the sequence of frames contained in an OdbStep object:</p>
