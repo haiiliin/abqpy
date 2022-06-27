@@ -165,6 +165,7 @@ OdbAssembly
 
 .. autoclass:: abaqus.Odb.OdbAssembly.OdbAssembly
     :members:
+    :inherited-members:
 
     .. autoclasstoc::
 
@@ -213,6 +214,7 @@ OdbInstance
 
 .. autoclass:: abaqus.Odb.OdbInstance.OdbInstance
     :members:
+    :inherited-members:
 
     .. autoclasstoc::
 
@@ -269,6 +271,7 @@ OdbPart
 
 .. autoclass:: abaqus.Odb.OdbPart.OdbPart
     :members:
+    :inherited-members:
 
     .. autoclasstoc::
 
@@ -341,6 +344,7 @@ OdbStep
 
 .. autoclass:: abaqus.Odb.OdbStep.OdbStep
     :members:
+    :inherited-members:
 
     .. autoclasstoc::
 
@@ -413,6 +417,7 @@ UserData
 
 .. autoclass:: abaqus.Odb.UserData.UserData
     :members:
+    :inherited-members:
 
     .. autoclasstoc::
 
