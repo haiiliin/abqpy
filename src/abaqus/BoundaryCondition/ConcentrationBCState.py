@@ -35,6 +35,7 @@ class ConcentrationBCState(BoundaryConditionState):
     amplitudeState: SymbolicConstant = None
 
     #: A SymbolicConstant specifying the propagation state of the BoundaryConditionState object. Possible values are:
+    #: 
     #: NOT_YET_ACTIVE
     #: CREATED
     #: PROPAGATED
