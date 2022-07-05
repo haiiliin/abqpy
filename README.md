@@ -1,11 +1,12 @@
 # abqpy 2016a1
 
 [![OSCS Status](https://www.oscs1024.com/platform/badge/haiiliin/abqpy.svg?size=small)](https://www.oscs1024.com/project/haiiliin/abqpy?ref=badge_small)
-[![Maintainer](https://img.shields.io/badge/maintainer-haiiliin-blue)](https://github.com/haiiliin)
 [![Documentation Status](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://abqpy.haiiliin.com/en/latest/?badge=latest)
+[![Upload Python Package to PyPI](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-pypi.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-pypi.yml)
+[![Build and Upload Conda Package](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-conda.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-conda.yml)
+
 [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://github.com/haiiliin/abqpy/blob/main/LICENSE)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/abqpy.svg)](https://www.python.org/)
-[![made-with-sphinx-doc](https://img.shields.io/badge/Made%20with-Sphinx-1f425f.svg)](https://www.sphinx-doc.org/)
 [![Anaconda platforms](https://anaconda.org/haiiliin/abqpy/badges/platforms.svg)](https://anaconda.org/haiiliin/abqpy)
 [![GitHub release](https://img.shields.io/github/release/haiiliin/abqpy.svg)](https://GitHub.com/haiiliin/abqpy/releases/)
 [![PyPI download month](https://img.shields.io/pypi/dm/abqpy.svg)](https://pypi.python.org/pypi/abqpy/)
