@@ -36,5 +36,4 @@ jobs:
           platform_osx-64: true
           platform_win-64: true
           user: haiiliin
-          label: auto
           token: ${{ secrets.ANACONDA_TOKEN }} # Replace with the right name of your secret
