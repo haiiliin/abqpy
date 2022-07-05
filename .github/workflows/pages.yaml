@@ -4,7 +4,7 @@ on:
     branches:
     - main
     paths:
-    - 'src'
+    - 'src/**'
     - 'docs/source/**'
   workflow_dispatch:
 jobs:
