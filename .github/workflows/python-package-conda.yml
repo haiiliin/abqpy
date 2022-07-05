@@ -4,6 +4,7 @@ name: Build and upload conda packages
 on:
   release:
     types: ['released', 'prereleased']
+  workflow_dispatch:
 
 # workflow_dispatch:        # Un comment line if you also want to trigger action manually
 
