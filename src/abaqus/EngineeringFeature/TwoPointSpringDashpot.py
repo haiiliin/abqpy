@@ -95,8 +95,7 @@ class TwoPointSpringDashpot(SpringDashpot):
             .. code-block:: python
 
                 mdb.models[name].parts[name].engineeringFeatures.TwoPointSpringDashpot
-                mdb.models[name].rootAssembly.engineeringFeatures\
-                .TwoPointSpringDashpot
+                mdb.models[name].rootAssembly.engineeringFeatures.TwoPointSpringDashpot
             
             Parameters
             ----------

@@ -24,8 +24,7 @@ class SectionPoint:
             session.odbs[name].sectionCategories[name].sectionPoints[i]
             session.odbs[name].steps[name].frames[i].fieldOutputs[name].locations[i].sectionPoints[i]
             session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.elements[i].sectionCategory.sectionPoints[i]
-            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.elementSets[name].elements[i].sectionCategory\
-            .sectionPoints[i]
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.elementSets[name].elements[i].sectionCategory.sectionPoints[i]
             session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.nodeSets[name].elements[i].sectionCategory.sectionPoints[i]
             session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.surfaces[name].elements[i].sectionCategory.sectionPoints[i]
             session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].sectionPoint

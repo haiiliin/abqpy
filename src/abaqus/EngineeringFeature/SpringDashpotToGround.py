@@ -81,8 +81,7 @@ class SpringDashpotToGround(SpringDashpot):
             .. code-block:: python
 
                 mdb.models[name].parts[name].engineeringFeatures.SpringDashpotToGround
-                mdb.models[name].rootAssembly.engineeringFeatures\
-                .SpringDashpotToGround
+                mdb.models[name].rootAssembly.engineeringFeatures.SpringDashpotToGround
             
             Parameters
             ----------

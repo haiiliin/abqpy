@@ -86,8 +86,7 @@ class ConnectorPotential:
             .. code-block:: python
 
                 mdb.models[name].sections[name].behaviorOptions[i].ConnectorPotential
-                session.odbs[name].sections[name].behaviorOptions[i]\
-                .ConnectorPotential
+                session.odbs[name].sections[name].behaviorOptions[i].ConnectorPotential
             
             Parameters
             ----------
@@ -147,8 +146,7 @@ class ConnectorPotential:
             .. code-block:: python
 
                 mdb.models[name].sections[name].behaviorOptions[i].ConnectorPotential
-                session.odbs[name].sections[name].behaviorOptions[i]\
-                .ConnectorPotential
+                session.odbs[name].sections[name].behaviorOptions[i].ConnectorPotential
 
         Returns
         -------
