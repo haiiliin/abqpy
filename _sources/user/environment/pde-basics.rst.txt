@@ -11,7 +11,7 @@ You can choose from several methods to start the Abaqus Python development envir
 
 Use one of the following methods to start the Abaqus PDE. The first two methods start the Abaqus PDE with a link to an Abaqus/CAE session. The last method starts the Abaqus PDE independently from Abaqus/CAE:
 
-- In Abaqus/CAE, select FileAbaqus PDE from the main menu bar.
+- In Abaqus/CAE, select File -> Abaqus PDE from the main menu bar.
 
 - From a system command prompt, enter
 
