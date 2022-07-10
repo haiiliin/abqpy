@@ -9,7 +9,7 @@ Creating .guiLog files
 
 The Abaqus PDE is designed to work any type of Python files, including `.guiLog` files. A `.guiLog` is a Python script that records actions in the Abaqus/CAE GUI. When you create a `.guiLog`, it records every mouse click, dialog box entry, and menu, tool, or viewport selection.
 
-To record actions from Abaqus/CAE, the Abaqus PDE session must be associated with a Abaqus/CAE session. The Abaqus PDE and Abaqus/CAE sessions are associated if you started them together from a command prompt or if you started the Abaqus PDE by selecting FileAbaqus PDE in Abaqus/CAE. For more information on starting the Abaqus PDE, see `Starting the Abaqus Python development environment <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdestart.htm?contextscope=all>`_.
+To record actions from Abaqus/CAE, the Abaqus PDE session must be associated with a Abaqus/CAE session. The Abaqus PDE and Abaqus/CAE sessions are associated if you started them together from a command prompt or if you started the Abaqus PDE by selecting File -> Abaqus PDE in Abaqus/CAE. For more information on starting the Abaqus PDE, see `Starting the Abaqus Python development environment <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdestart.htm?contextscope=all>`_.
 
 1. From the main menu bar in the Abaqus PDE, select FileNew to create a new empty file in the main window.
    
