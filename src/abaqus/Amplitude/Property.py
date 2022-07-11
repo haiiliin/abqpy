@@ -6,11 +6,9 @@ from ..Region.Region import Region
 The part and section modules must be imported to give access to the Property assignment 
 commands. 
 
-Notes
------
-        import part
-        import section
-
+.. note::
+    import part
+    import section
 """
 
 
