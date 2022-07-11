@@ -1,4 +1,4 @@
-# abqpy 2016a2
+# abqpy 2016a3
 
 [![OSCS Status](https://www.oscs1024.com/platform/badge/haiiliin/abqpy.svg?size=small)](https://www.oscs1024.com/project/haiiliin/abqpy?ref=badge_small)
 [![Documentation Status](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://abqpy.haiiliin.com/en/latest/?badge=latest)
