@@ -15,7 +15,7 @@ commands.
 """
 
 
-def assignBeamSectionOrientatio(region: tuple, method: SymbolicConstant, n1: tuple):
+def assignBeamSectionOrientation(region: tuple, method: SymbolicConstant, n1: tuple):
     """This method assigns a beam section orientation to a region of a part.
 
     .. note:: 
@@ -40,7 +40,7 @@ def assignBeamSectionOrientatio(region: tuple, method: SymbolicConstant, n1: tup
     pass
 
 
-def assignMaterialOrientatio(
+def assignMaterialOrientation(
     region: tuple, localCsys: Datum, axis: SymbolicConstant = AXIS_1, angle: float = 0
 ):
     """This method assigns a material orientation to a region.
@@ -71,7 +71,7 @@ def assignMaterialOrientatio(
     pass
 
 
-def assignRebarOrientatio(
+def assignRebarOrientation(
     region: tuple, localCsys: Datum, axis: SymbolicConstant = AXIS_1, angle: float = 0
 ):
     """This method assigns a rebar reference orientation to a region.
@@ -102,7 +102,7 @@ def assignRebarOrientatio(
     pass
 
 
-def flipNorma(regions: Region, referenceRegion: str = ""):
+def flipNormal(regions: Region, referenceRegion: str = ""):
     """This method flips the normals of shell or membrane elements of an orphan mesh or of
     two-dimensional geometric regions.
 
@@ -129,7 +129,7 @@ def flipNorma(regions: Region, referenceRegion: str = ""):
     pass
 
 
-def flipTangen(regions: Region):
+def flipTangent(regions: Region):
     """This method flips the tangents of beam or truss elements of an orphan mesh or of
     one-dimensional geometric regions.
 
@@ -149,7 +149,7 @@ def flipTangen(regions: Region):
     pass
 
 
-def unassignBeamSectionOrientatio(index: int):
+def unassignBeamSectionOrientation(index: int):
     """This method deletes a beam section orientation assignment.
 
     .. note:: 
@@ -167,7 +167,7 @@ def unassignBeamSectionOrientatio(index: int):
     pass
 
 
-def unassignMaterialOrientatio(index: int):
+def unassignMaterialOrientation(index: int):
     """This method deletes a material orientation assignment.
 
     .. note:: 
@@ -185,7 +185,7 @@ def unassignMaterialOrientatio(index: int):
     pass
 
 
-def unassignRebarOrientatio(index: int):
+def unassignRebarOrientation(index: int):
     """This method deletes a rebar orientation assignment.
 
     .. note:: 
