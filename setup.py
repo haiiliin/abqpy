@@ -21,6 +21,7 @@ setuptools.setup(
     ],
     python_requires='>=3.9',
     package_dir={'': 'src'},
+    install_requires=['ipyparams', 'typing-extensions'],
     packages=setuptools.find_packages('src'),
     py_modules=['abaqusConstants', 'animation', 'annotationToolset', 'assembly', 'caeModules', 'caePrefsAccess',
                 'calibration', 'connectorBehavior', 'customKernel', 'deleteObjectCallback', 'displayGroupMdbToolset',
