@@ -16,11 +16,11 @@ def assignBeamSectionOrientatio(region: tuple, method: SymbolicConstant, n1: tup
     """This method assigns a beam section orientation to a region of a part.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                mdb.models[name].parts[*name*].assignBeamSectionOrientation
+            mdb.models[name].parts[*name*].assignBeamSectionOrientation
 
     Parameters
     ----------
@@ -74,11 +74,11 @@ def assignRebarOrientatio(
     """This method assigns a rebar reference orientation to a region.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                mdb.models[name].parts[*name*].assignRebarOrientation
+            mdb.models[name].parts[*name*].assignRebarOrientation
 
     Parameters
     ----------
@@ -104,11 +104,11 @@ def flipNorma(regions: Region, referenceRegion: str = ""):
     two-dimensional geometric regions.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                mdb.models[name].parts[*name*].flipNormal
+            mdb.models[name].parts[*name*].flipNormal
 
     Parameters
     ----------
@@ -131,11 +131,11 @@ def flipTangen(regions: Region):
     one-dimensional geometric regions.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                mdb.models[name].parts[*name*].flipTangent
+            mdb.models[name].parts[*name*].flipTangent
 
     Parameters
     ----------
@@ -150,11 +150,11 @@ def unassignBeamSectionOrientatio(index: int):
     """This method deletes a beam section orientation assignment.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                mdb.models[name].parts[*name*].unassignBeamSectionOrientation
+            mdb.models[name].parts[*name*].unassignBeamSectionOrientation
 
     Parameters
     ----------
@@ -168,11 +168,11 @@ def unassignMaterialOrientatio(index: int):
     """This method deletes a material orientation assignment.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                mdb.models[name].parts[*name*].unassignMaterialOrientation
+            mdb.models[name].parts[*name*].unassignMaterialOrientation
 
     Parameters
     ----------
@@ -186,11 +186,11 @@ def unassignRebarOrientatio(index: int):
     """This method deletes a rebar orientation assignment.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                mdb.models[name].parts[*name*].unassignRebarOrientation
+            mdb.models[name].parts[*name*].unassignRebarOrientation
 
     Parameters
     ----------
