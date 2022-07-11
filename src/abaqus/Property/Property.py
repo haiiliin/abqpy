@@ -7,8 +7,11 @@ The part and section modules must be imported to give access to the Property ass
 commands. 
 
 .. note::
-    import part
-    import section
+
+    .. code-block:: python
+    
+        import part
+        import section
 """
 
 
