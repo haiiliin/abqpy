@@ -22,11 +22,11 @@ def MdbPlyStackPlot(part: Part, region: Region) -> PlyStackPlot:
     composite shell layup.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                section.MdbPlyStackPlot
+            section.MdbPlyStackPlot
 
     Parameters
     ----------
@@ -52,11 +52,11 @@ def OdbPlyStackPlot(odb: Odb, sectionName: str, offset: float = 0):
     object.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                visualization.OdbPlyStackPlot
+            visualization.OdbPlyStackPlot
 
     Parameters
     ----------

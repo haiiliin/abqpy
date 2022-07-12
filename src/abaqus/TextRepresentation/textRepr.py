@@ -4,8 +4,12 @@ from abaqusConstants import *
 the output from the str() function into a formatted string, indented for each object in 
 the recursive listing of a Python object. 
 
-Notes
------
+
+.. note::
+    Theses functions can be accessed by:
+
+    .. code-block:: python
+
         import textRepr
 
 """

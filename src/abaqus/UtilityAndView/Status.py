@@ -10,11 +10,11 @@ def milestone(message: str):
     """This function displays a string in the prompt area.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                milestone
+            milestone
 
     Parameters
     ----------
@@ -29,11 +29,11 @@ def milestone(message: str, percent: int):
     """This function displays a percentage complete message in the prompt area.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                milestone
+            milestone
 
     Parameters
     ----------
@@ -51,11 +51,11 @@ def milestone(message: str, object: str, done: int, total: int):
     total. The form of the message is `operation: object nn out of nn`
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                milestone
+            milestone
 
     Parameters
     ----------

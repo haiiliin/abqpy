@@ -9,11 +9,11 @@ def addImportCallback(moduleName: str, callback: str, userData: str = ""):
     For more information, see An example of a callback function.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                addImportCallback
+            addImportCallback
 
     Parameters
     ----------
@@ -33,11 +33,11 @@ def removeImportCallback(callback: str, userData: str):
     """This function removes a callback added in addImportCallback.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                removeImportCallback
+            removeImportCallback
 
     Parameters
     ----------

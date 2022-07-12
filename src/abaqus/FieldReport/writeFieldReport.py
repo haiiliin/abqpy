@@ -24,11 +24,11 @@ def writeFieldRepor(
     """This method writes a FieldOutput object to a user-defined ASCII file.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                session.writeFieldReport
+            session.writeFieldReport
 
     Parameters
     ----------

@@ -33,11 +33,11 @@ def evaluateMaterial(
     conditions.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                evaluateMaterial
+            evaluateMaterial
 
     Parameters
     ----------

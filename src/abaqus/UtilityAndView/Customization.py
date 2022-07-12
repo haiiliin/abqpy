@@ -20,11 +20,11 @@ def journalMethodCall(objectPath: str, methodName: str, args: tuple, kargs: str)
     should call journalMethodCall.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                journalMethodCall
+            journalMethodCall
 
     Parameters
     ----------

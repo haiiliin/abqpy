@@ -7,18 +7,21 @@ Interface commands.
 For example, in the following script the myCallback function is executed when the 
 writeInput method of an object whose type is JobType (in other words, any Job object) is 
 about to be called: 
-import methodCallback 
-from job import JobType 
-def myCallback(callingObject, arguments, keywordArguments, userData): 
-    print 'An input file  is about to be written.' 
-methodCallback.addCallback(JobType, 'writeInput', myCallback) 
+
+.. code-block:: python
+
+    import methodCallback 
+    from job import JobType 
+    def myCallback(callingObject, arguments, keywordArguments, userData): 
+        print 'An input file  is about to be written.' 
+    methodCallback.addCallback(JobType, 'writeInput', myCallback) 
 
 .. note:: 
-        This object can be accessed by:
+    This object can be accessed by:
 
-        .. code-block:: python
+    .. code-block:: python
 
-            import methodCallback
+        import methodCallback
 
 """
 
@@ -34,11 +37,11 @@ def addCallback(
     commands are about to be executed.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                methodCallback.addCallback
+            methodCallback.addCallback
 
     Parameters
     ----------
@@ -75,11 +78,11 @@ def removeCallback(caller: str, methodName: str, callback: str, userData: str = 
     callback, all arguments must exactly match those used when the callback was added.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                methodCallback.removeCallback
+            methodCallback.removeCallback
 
     Parameters
     ----------

@@ -14,11 +14,11 @@ object is about to be deleted:
     deleteObjectCallback.addCallback(path='mdb.jobs[*]') 
 
 .. note:: 
-        This object can be accessed by:
+    This object can be accessed by:
 
-        .. code-block:: python
+    .. code-block:: python
 
-            import deleteObjectCallback
+        import deleteObjectCallback
 
 """
 
@@ -33,11 +33,11 @@ def deleteObjectCallback(
     mdb.models[name].parts[name].deleteFeature().
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                deleteObjectCallback.addCallback
+            deleteObjectCallback.addCallback
 
     Parameters
     ----------

@@ -46,11 +46,11 @@ def assignMaterialOrientation(
     """This method assigns a material orientation to a region.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                mdb.models[name].parts[*name*].assignMaterialOrientation
+            mdb.models[name].parts[*name*].assignMaterialOrientation
 
     Parameters
     ----------

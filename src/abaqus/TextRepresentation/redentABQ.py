@@ -11,8 +11,12 @@ where the following options are available to customize the redentABQ process:
 For more information on running the **abaqus Python** execution procedure, see Python 
 execution. 
 
-Notes
------
+.. note::
+
+    Theses functions can be accessed by:
+
+    .. code-block:: python
+
         import redentABQ
 
 """

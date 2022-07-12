@@ -6,11 +6,11 @@ one time. It also allows you to upgrade only kernel commands, only GUI commands,
 both. 
 
 .. note:: 
-        This object can be accessed by:
+    This object can be accessed by:
 
-        .. code-block:: python
+    .. code-block:: python
 
-            import upgradeScript
+        import upgradeScript
 
 """
 
@@ -34,11 +34,11 @@ def upgradeScript(
     this guide.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                upgradeScript.upgradeScript
+            upgradeScript.upgradeScript
 
     Parameters
     ----------

@@ -17,11 +17,11 @@ def getInput(prompt: str, default: str = ""):
     **-script**, **-replay**, or **-noGUI**.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                getInput
+            getInput
 
     Parameters
     ----------
@@ -50,11 +50,11 @@ def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
     **-script**, **-replay**, or **-noGUI**.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                getInputs
+            getInputs
 
     Parameters
     ----------
@@ -96,11 +96,11 @@ def getWarningReply(message: str, buttons: str):
     **-start**, **-script**, **-replay**, or **-noGUI**.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                getWarningReply
+            getWarningReply
 
     Parameters
     ----------
