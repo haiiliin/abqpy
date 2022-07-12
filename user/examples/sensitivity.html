@@ -408,7 +408,13 @@
 <li><p>different shell formulations and</p></li>
 <li><p>at different angles.</p></li>
 </ul>
-<p><a class="reference internal" href="#cmd-skew-dim"><span class="std std-numref">Fig. 20</span></a> illustrates the basic geometry of the simply supported skew plate with a uniform distributed load.</p>
+<p><a class="reference internal" href="#cmd-skew-dim"><span class="std std-numref">Fig. 21</span></a> illustrates the basic geometry of the simply supported skew plate with a uniform distributed load.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="images/exxskew-quadmesh-nls.png"><img alt="images/exxskew-quadmesh-nls.png" src="images/exxskew-quadmesh-nls.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">A 4 × 4 quadrilateral mesh of the plate.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>The plate is loaded by a uniform pressure of <span class="math notranslate nohighlight">\(1\times10^{-6}\)</span> MPa applied over the entire surface. The edges of the plate are all simply supported. The analysis is performed for five different values of the skew angle, <span class="math notranslate nohighlight">\(\delta\)</span>: 90°, 80°, 60°, 40°, and 30°. The analysis is performed for two different quadrilateral elements: S4 and S8R.</p>
 <p>The example is divided into two scripts. The controlling script, <cite>skewExample.py</cite>, imports <cite>skewExampleUtils.py</cite>. Use the <strong>fetch</strong> utility to retrieve the scripts:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus fetch <span class="nv">job</span><span class="o">=</span>skewExample
@@ -470,12 +476,12 @@ abaqus fetch <span class="nv">job</span><span class="o">=</span>skewExampleUtils
 <li><p>Return to the Part module.</p></li>
 <li><p>From the main menu bar, select <strong>Feature -&gt; Edit</strong> and select the plate to edit.</p></li>
 <li><p>From the <strong>Edit Feature</strong> dialog box, select <strong>Edit Section Sketch</strong>.</p></li>
-<li><p>From the Sketcher toolbox, select the dimension tool and dimension the angle at the lower left corner of the plate as shown in <a class="reference internal" href="#cmd-skew-dim"><span class="std std-numref">Fig. 20</span></a></p></li>
+<li><p>From the Sketcher toolbox, select the dimension tool and dimension the angle at the lower left corner of the plate as shown in <a class="reference internal" href="#cmd-skew-dim"><span class="std std-numref">Fig. 21</span></a></p></li>
 </ol>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="id2">
 <span id="cmd-skew-dim"></span><a class="reference internal image-reference" href="../../_images/cmd-skew-dim.png"><img alt="../../_images/cmd-skew-dim.png" src="../../_images/cmd-skew-dim.png" style="width: 50%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Dimension the angle at the lower left corner of the plate.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">Dimension the angle at the lower left corner of the plate.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>

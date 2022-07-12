@@ -17,7 +17,7 @@ The problem investigates the effects on the accuracy of the bending moment compu
 
 :numref:`cmd-skew-dim` illustrates the basic geometry of the simply supported skew plate with a uniform distributed load.
 
-.. figures:: /images/exxskew-quadmesh-nls.png
+.. figure:: /images/exxskew-quadmesh-nls.png
     :width: 50%
     :align: center
     

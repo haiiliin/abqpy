@@ -1320,11 +1320,11 @@
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus <span class="nv">job</span><span class="o">=</span>singleTriangularElementModel
 </pre></div>
 </div>
-<p>The results from running the script twice using the single triangular-element model, changing the radius of the sphere, and writing the data back to the original output database are shown in <a class="reference internal" href="#cmd-odb-api-acousticviz"><span class="std std-numref">Fig. 26</span></a></p>
+<p>The results from running the script twice using the single triangular-element model, changing the radius of the sphere, and writing the data back to the original output database are shown in <a class="reference internal" href="#cmd-odb-api-acousticviz"><span class="std std-numref">Fig. 27</span></a></p>
 <figure class="align-center" id="id1">
 <span id="cmd-odb-api-acousticviz"></span><a class="reference internal image-reference" href="../../../_images/cmd-odb-api-acousticviz.png"><img alt="../../../_images/cmd-odb-api-acousticviz.png" src="../../../_images/cmd-odb-api-acousticviz.png" style="width: 50%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Displaying the acoustic pressure on several spheres.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Displaying the acoustic pressure on several spheres.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>This model simulates the response of a sphere in “breathing” mode (a uniform radial expansion/compression mode). The model consists of one triangular ACIN3D3 element. Each node of the element is placed on a coordinate axis at a distance of <span class="math notranslate nohighlight">\(1.0\)</span> from the origin that serves as the reference point for the infinite element. The acoustic material properties do not have physical significance; the values used are for convenience only. The loading consists of applying an in-phase pressure boundary condition to all the nodes. Under this loading and geometry, the model behaves as a spherical source (an acoustic monopole) radiating in the radial direction only. The acoustic pressure, <span class="math notranslate nohighlight">\(p\)</span>, and the acoustic far-field pressure, <span class="math notranslate nohighlight">\(p_{F A R}\)</span>, at a distance <span class="math notranslate nohighlight">\(r\)</span> from the center of the sphere are</p>

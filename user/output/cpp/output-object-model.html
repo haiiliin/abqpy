@@ -399,7 +399,7 @@
         <article role="main">
           <section id="object-model-for-the-output-database">
 <h1>Object model for the output database<a class="headerlink" href="#object-model-for-the-output-database" title="Permalink to this headline">#</a></h1>
-<p>An output database generated from an Abaqus analysis contains both model and results data. The output database object model is shown in <a class="reference internal" href="../python/output-object-model.html#odb-model-nls"><span class="std std-numref">Fig. 22</span></a></p>
+<p>An output database generated from an Abaqus analysis contains both model and results data. The output database object model is shown in <a class="reference internal" href="../python/output-object-model.html#odb-model-nls"><span class="std std-numref">Fig. 23</span></a></p>
 <ul>
 <li><p><strong>Model data</strong></p>
 <p>Model data describe the parts and part instances that make up the root assembly; for example, nodal coordinates, set definitions, and element types.</p>
@@ -455,11 +455,11 @@
 <p>Interaction properties define the physical behavior of surfaces involved in an interaction. Only tangential friction behavior is written to the output database.</p>
 </li>
 </ul>
-<p><a class="reference internal" href="../python/output-object-model.html#odb-model-nls"><span class="std std-numref">Fig. 22</span></a> shows the model data object model.</p>
+<p><a class="reference internal" href="../python/output-object-model.html#odb-model-nls"><span class="std std-numref">Fig. 23</span></a> shows the model data object model.</p>
 <figure class="align-center" id="id1">
 <span id="odb-model-nls"></span><a class="reference internal image-reference" href="../../../_images/odb-model-nls.png"><img alt="../../../_images/odb-model-nls.png" src="../../../_images/odb-model-nls.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 28 </span><span class="caption-text">The model data object model.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 29 </span><span class="caption-text">The model data object model.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -474,11 +474,11 @@
 <p>Each step contains a sequence of frames, where each increment of the analysis that resulted in output to the output database is called a frame. In a frequency or buckling analysis each eigenmode is stored as a separate frame. Similarly, in a steady-state harmonic response analysis each frequency is stored as a separate frame.</p>
 </li>
 <li><p><strong>Field output</strong></p>
-<p>Field output is intended for infrequent requests for a large portion of the model and can be used to generate contour plots, animations, symbol plots, and displaced shape plots in the Visualization module of Abaqus/CAE. You can also use field output to generate an <strong>X - Y</strong> data plot. Only complete sets of basic variables (for example, all the stress or strain components) can be requested as field output. Field output is composed of a cloud of data values (e.g., stress tensors at each integration point for all elements). Each data value has a location, type, and value. You use the regions defined in the model data, such as an element set, to access subsets of the field output data. <a class="reference internal" href="../python/output-object-model.html#odb-field-nls"><span class="std std-numref">Fig. 23</span></a> shows the field output data object model within an output database.</p>
+<p>Field output is intended for infrequent requests for a large portion of the model and can be used to generate contour plots, animations, symbol plots, and displaced shape plots in the Visualization module of Abaqus/CAE. You can also use field output to generate an <strong>X - Y</strong> data plot. Only complete sets of basic variables (for example, all the stress or strain components) can be requested as field output. Field output is composed of a cloud of data values (e.g., stress tensors at each integration point for all elements). Each data value has a location, type, and value. You use the regions defined in the model data, such as an element set, to access subsets of the field output data. <a class="reference internal" href="../python/output-object-model.html#odb-field-nls"><span class="std std-numref">Fig. 24</span></a> shows the field output data object model within an output database.</p>
 <figure class="align-center" id="id2">
 <span id="odb-field-nls"></span><a class="reference internal image-reference" href="../../../_images/odb-field-nls.png"><img alt="../../../_images/odb-field-nls.png" src="../../../_images/odb-field-nls.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 29 </span><span class="caption-text">The field output data object model.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 30 </span><span class="caption-text">The field output data object model.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </li>
@@ -491,11 +491,11 @@
 <li><p>a region</p></li>
 <li><p>the whole model</p></li>
 </ul>
-<p>The output from all history requests that relate to a particular point or region is then collected in one HistoryRegion object. <a class="reference internal" href="../python/read.html#odb-history-nls"><span class="std std-numref">Fig. 25</span></a> shows the history output data object model within an output database.</p>
+<p>The output from all history requests that relate to a particular point or region is then collected in one HistoryRegion object. <a class="reference internal" href="../python/read.html#odb-history-nls"><span class="std std-numref">Fig. 26</span></a> shows the history output data object model within an output database.</p>
 <figure class="align-center" id="id3">
 <span id="odb-history-nls"></span><a class="reference internal image-reference" href="../../../_images/odb-history-nls.png"><img alt="../../../_images/odb-history-nls.png" src="../../../_images/odb-history-nls.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 30 </span><span class="caption-text">The history output data.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 31 </span><span class="caption-text">The history output data.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </li>
