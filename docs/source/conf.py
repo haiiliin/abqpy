@@ -21,6 +21,7 @@ import inspect
 import os
 import re
 import sys
+import typing
 
 project = 'abqpy'
 copyright = '2022, WANG Hailin'
@@ -50,7 +51,7 @@ extensions = [
 
 
 # linkcode source
-def linkcode_resolve(domain: str, info: dict[str, str | list[str]]):
+def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]]):
     """Resolve linkcode source
     Parameters
     ----------
