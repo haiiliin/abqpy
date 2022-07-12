@@ -50,10 +50,8 @@ OdbModelFieldVarList
 writeFieldReport
 ~~~~~~~~~~~~~~~~
 
-.. autoclass:: abaqus.FieldReport.writeFieldReport.writeFieldReport
+.. automodule:: abaqus.FieldReport.writeFieldReport
     :members:
-
-    .. autoclasstoc::
 
 writeFreeBodyReport
 ~~~~~~~~~~~~~~~~~~~
