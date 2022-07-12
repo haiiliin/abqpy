@@ -53,7 +53,7 @@ class SectionCategory:
 
             .. code-block:: python
 
-                session.odbs[*name*].SectionCategory
+                session.odbs[name].SectionCategory
 
         Parameters
         ----------
@@ -77,7 +77,7 @@ class SectionCategory:
 
             .. code-block:: python
 
-                session.odbs[*name*].SectionCategory
+                session.odbs[name].SectionCategory
 
         Parameters
         ----------

@@ -23,7 +23,7 @@ class OdbLoadCase:
 
             .. code-block:: python
 
-                session.odbs[*name*].steps[*name*].LoadCase
+                session.odbs[name].steps[name].LoadCase
 
         Parameters
         ----------

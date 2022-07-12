@@ -30,7 +30,7 @@ class AnimationUserData(UserDataBase):
             .. code-block:: python
 
                 mdb.Arrow
-                session.odbs[*name*].userData.Arrow
+                session.odbs[name].userData.Arrow
 
         Parameters
         ----------
@@ -166,7 +166,7 @@ class AnimationUserData(UserDataBase):
             .. code-block:: python
 
                 mdb.Text
-                session.odbs[*name*].userData.Text
+                session.odbs[name].userData.Text
 
         Parameters
         ----------

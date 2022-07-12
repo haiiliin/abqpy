@@ -123,7 +123,7 @@ class Text(Annotation):
             .. code-block:: python
 
                 mdb.Text
-                session.odbs[*name*].userData.Text
+                session.odbs[name].userData.Text
 
         Parameters
         ----------

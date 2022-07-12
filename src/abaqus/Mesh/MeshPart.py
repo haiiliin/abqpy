@@ -1088,7 +1088,7 @@ class MeshPart(PartBase):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].Node
+                mdb.models[name].parts[name].Node
 
         Parameters
         ----------

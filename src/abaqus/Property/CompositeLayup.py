@@ -82,7 +82,7 @@ class CompositeLayup:
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].CompositeLayup
+                mdb.models[name].parts[name].CompositeLayup
 
         Parameters
         ----------
@@ -190,7 +190,7 @@ class CompositeLayup:
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].CompositeLayup
+                mdb.models[name].parts[name].CompositeLayup
 
         Parameters
         ----------
@@ -304,7 +304,7 @@ class CompositeLayup:
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].CompositeLayup
+                mdb.models[name].parts[name].CompositeLayup
 
         Parameters
         ----------
@@ -419,7 +419,7 @@ class CompositeLayup:
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].CompositeLayup
+                mdb.models[name].parts[name].CompositeLayup
 
         Parameters
         ----------
@@ -519,7 +519,7 @@ class CompositeLayup:
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].CompositeLayup
+                mdb.models[name].parts[name].CompositeLayup
 
         Parameters
         ----------

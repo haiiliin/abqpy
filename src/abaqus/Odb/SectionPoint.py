@@ -45,7 +45,7 @@ class SectionPoint:
 
             .. code-block:: python
 
-                session.odbs[*name*].sectionCategories[*name*].SectionPoint
+                session.odbs[name].sectionCategories[name].SectionPoint
 
         Parameters
         ----------

@@ -119,7 +119,7 @@ class GeometryShellSection(ShellSection):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].compositeLayups[*name*].Section
+                mdb.models[name].parts[name].compositeLayups[name].Section
 
         Parameters
         ----------
@@ -188,7 +188,7 @@ class GeometryShellSection(ShellSection):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].compositeLayups[*name*].Section
+                mdb.models[name].parts[name].compositeLayups[name].Section
 
         Parameters
         ----------

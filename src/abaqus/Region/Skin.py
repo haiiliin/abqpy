@@ -48,7 +48,7 @@ class Skin:
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].Skin
+                mdb.models[name].parts[name].Skin
 
         Parameters
         ----------
@@ -90,7 +90,7 @@ class Skin:
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].Skin
+                mdb.models[name].parts[name].Skin
 
         Parameters
         ----------

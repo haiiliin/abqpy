@@ -66,8 +66,8 @@ class OdbRigidBody:
 
             .. code-block:: python
 
-                session.odbs[*name*].rootAssembly.instances[*name*].RigidBody
-                session.odbs[*name*].rootAssembly.RigidBody
+                session.odbs[name].rootAssembly.instances[name].RigidBody
+                session.odbs[name].rootAssembly.RigidBody
 
         Parameters
         ----------

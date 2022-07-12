@@ -57,9 +57,9 @@ class OdbSet:
 
             .. code-block:: python
 
-                session.odbs[*name*].parts[*name*].NodeSet
-                session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
-                session.odbs[*name*].rootAssembly.NodeSet
+                session.odbs[name].parts[name].NodeSet
+                session.odbs[name].rootAssembly.instances[name].NodeSet
+                session.odbs[name].rootAssembly.NodeSet
 
         Parameters
         ----------
@@ -84,9 +84,9 @@ class OdbSet:
 
             .. code-block:: python
 
-                session.odbs[*name*].parts[*name*].NodeSet
-                session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
-                session.odbs[*name*].rootAssembly.NodeSet
+                session.odbs[name].parts[name].NodeSet
+                session.odbs[name].rootAssembly.instances[name].NodeSet
+                session.odbs[name].rootAssembly.NodeSet
 
         Parameters
         ----------
@@ -114,9 +114,9 @@ class OdbSet:
 
             .. code-block:: python
 
-                session.odbs[*name*].parts[*name*].NodeSet
-                session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
-                session.odbs[*name*].rootAssembly.NodeSet
+                session.odbs[name].parts[name].NodeSet
+                session.odbs[name].rootAssembly.instances[name].NodeSet
+                session.odbs[name].rootAssembly.NodeSet
 
         Parameters
         ----------
@@ -142,9 +142,9 @@ class OdbSet:
 
             .. code-block:: python
 
-                session.odbs[*name*].parts[*name*].NodeSet
-                session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
-                session.odbs[*name*].rootAssembly.NodeSet
+                session.odbs[name].parts[name].NodeSet
+                session.odbs[name].rootAssembly.instances[name].NodeSet
+                session.odbs[name].rootAssembly.NodeSet
 
         Parameters
         ----------
@@ -170,9 +170,9 @@ class OdbSet:
 
             .. code-block:: python
 
-                session.odbs[*name*].parts[*name*].NodeSet
-                session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
-                session.odbs[*name*].rootAssembly.NodeSet
+                session.odbs[name].parts[name].NodeSet
+                session.odbs[name].rootAssembly.instances[name].NodeSet
+                session.odbs[name].rootAssembly.NodeSet
 
         Parameters
         ----------
@@ -212,9 +212,9 @@ class OdbSet:
 
             .. code-block:: python
 
-                session.odbs[*name*].parts[*name*].NodeSet
-                session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
-                session.odbs[*name*].rootAssembly.NodeSet
+                session.odbs[name].parts[name].NodeSet
+                session.odbs[name].rootAssembly.instances[name].NodeSet
+                session.odbs[name].rootAssembly.NodeSet
 
         Parameters
         ----------
@@ -241,9 +241,9 @@ class OdbSet:
 
             .. code-block:: python
 
-                session.odbs[*name*].parts[*name*].NodeSet
-                session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
-                session.odbs[*name*].rootAssembly.NodeSet
+                session.odbs[name].parts[name].NodeSet
+                session.odbs[name].rootAssembly.instances[name].NodeSet
+                session.odbs[name].rootAssembly.NodeSet
 
         Parameters
         ----------

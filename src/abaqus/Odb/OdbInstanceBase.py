@@ -86,7 +86,7 @@ class OdbInstanceBase:
 
             .. code-block:: python
 
-                session.odbs[*name*].rootAssembly.Instance
+                session.odbs[name].rootAssembly.Instance
 
         Parameters
         ----------

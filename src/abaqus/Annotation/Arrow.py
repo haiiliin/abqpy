@@ -141,7 +141,7 @@ class Arrow(Annotation):
             .. code-block:: python
 
                 mdb.Arrow
-                session.odbs[*name*].userData.Arrow
+                session.odbs[name].userData.Arrow
 
         Parameters
         ----------

@@ -32,7 +32,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Returns
         -------
@@ -50,7 +50,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -78,7 +78,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -101,7 +101,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -126,7 +126,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -151,7 +151,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -182,7 +182,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -230,7 +230,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -283,7 +283,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -308,7 +308,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -338,7 +338,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -390,7 +390,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -439,7 +439,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -464,7 +464,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -493,7 +493,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -530,7 +530,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -559,7 +559,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -587,7 +587,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Returns
         -------
@@ -604,7 +604,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -630,7 +630,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -672,7 +672,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -721,7 +721,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -791,7 +791,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -866,7 +866,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -940,7 +940,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1021,7 +1021,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1068,7 +1068,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1118,7 +1118,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1165,7 +1165,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1207,7 +1207,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1243,7 +1243,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1277,7 +1277,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1321,7 +1321,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1348,7 +1348,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1374,7 +1374,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1402,7 +1402,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1437,7 +1437,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1461,7 +1461,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1487,7 +1487,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1520,7 +1520,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1547,7 +1547,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1573,7 +1573,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1599,7 +1599,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1638,7 +1638,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1686,7 +1686,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1761,7 +1761,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1851,7 +1851,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -1929,7 +1929,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -2018,7 +2018,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -2093,7 +2093,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -2181,7 +2181,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -2259,7 +2259,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -2335,7 +2335,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -2371,7 +2371,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -2411,7 +2411,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -2455,7 +2455,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------
@@ -2491,7 +2491,7 @@ class Feature(BaseFeature):
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].AutoRepair
+                mdb.models[name].parts[name].AutoRepair
 
         Parameters
         ----------

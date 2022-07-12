@@ -28,8 +28,8 @@ class InterestingPoint:
 
             .. code-block:: python
 
-                mdb.models[name].parts[*name*].InterestingPoint
-                mdb.models[name].rootAssembly.instances[*name*].InterestingPoint
+                mdb.models[name].parts[name].InterestingPoint
+                mdb.models[name].rootAssembly.instances[name].InterestingPoint
 
         Parameters
         ----------
