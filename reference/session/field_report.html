@@ -906,11 +906,127 @@ the current OdbDisplay object.</p>
 
 </section>
 <hr class="docutils" />
-<section id="writefieldreport">
-<h3>writeFieldReport<a class="headerlink" href="#writefieldreport" title="Permalink to this headline">#</a></h3>
+<section id="module-abaqus.FieldReport.writeFieldReport">
+<span id="writefieldreport"></span><h3>writeFieldReport<a class="headerlink" href="#module-abaqus.FieldReport.writeFieldReport" title="Permalink to this headline">#</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.FieldReport.writeFieldReport.writeFieldReport">
+<span class="sig-name descname"><span class="pre">writeFieldReport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sortItem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputPosition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displayGroup</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SPECIFY'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/FieldReport/writeFieldReport.py#L10-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.writeFieldReport.writeFieldReport" title="Permalink to this definition">#</a></dt>
+<dd><p>This function writes a FieldOutput object to a user-defined ASCII file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">writeFieldReport</span>
+</pre></div>
+</div>
+</div>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>filename</strong></dt><dd><p>A String specifying the name of the file to which field output will be written.</p>
+</dd>
+<dt><strong>append</strong></dt><dd><p>A Boolean specifying whether to append the field output to an existing file. The default
+value is ON.</p>
+</dd>
+<dt><strong>sortItem</strong></dt><dd><p>A String specifying the item by which to sort the tabular values.</p>
+</dd>
+<dt><strong>odb</strong></dt><dd><p>An <a class="reference internal" href="../odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Odb</span></code></a> object from which to obtain field output values.</p>
+</dd>
+<dt><strong>step</strong></dt><dd><p>An Int (or stepIndex) specifying the step from which to obtain field output values.
+Possible values are 0 ≤≤ <strong>step</strong> ≤≤ (<em>numSteps</em> − 1).</p>
+</dd>
+<dt><strong>frame</strong></dt><dd><p>An Int (or frameIndex) specifying the frame from which to obtain field output values.
+Possible values are 0 ≤≤ <strong>frame</strong> ≤≤ (<em>numFramesInStep</em> − 1).</p>
+</dd>
+<dt><strong>outputPosition</strong></dt><dd><p>A SymbolicConstant specifying the position from which to obtain data. Possible values
+are NODAL, INTEGRATION_POINT, ELEMENT_FACE, ELEMENT_NODAL, ELEMENT_CENTROID,
+WHOLE_ELEMENT, WHOLE_REGION, WHOLE_PART_INSTANCE, WHOLE_MODEL, and GENERAL_PARTICLE.</p>
+</dd>
+<dt><strong>displayGroup</strong></dt><dd><p>A <a class="reference internal" href="display.html#abaqus.DisplayGroup.DisplayGroup.DisplayGroup" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroup</span></code></a> object specifying the subset of the model for which to obtain data.</p>
+</dd>
+<dt><strong>variable</strong></dt><dd><p>A sequence of variable description sequences specifying one or more field output
+variables for which to obtain data. Each variable description sequence contains the
+following elements:</p>
+<ul>
+<li><p><strong>element0</strong>: A String specifying the name of the variable.</p></li>
+<li><p><strong>element1</strong>: A SymbolicConstant specifying the output position at which to report data.
+Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE,
+INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and
+WHOLE_REGION.</p></li>
+<li><p><strong>element2</strong>: A Sequence of tuples each consisting of a SymbolicConstant specifying the
+refinement (COMPONENT or INVARIANT), followed by a String specifying the name of a
+component or invariant for which to obtain values.
+If this element is omitted, data are written for all components and invariants (if
+applicable). This element is required if <strong>element3</strong> (the following element in the tuple)
+is included.</p></li>
+<li><p><strong>element3 (if applicable)</strong>: A Dictionary with a String key and a String value
+specifying a single section point at which to report data. The key specifies a region in
+the model; the corresponding value specifies a section point within that region. For
+example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;shell &lt; MAT &gt; &lt; 7 section points &gt;&#39;</span><span class="p">:</span> <span class="s1">&#39;SPOS (fraction = 1.0)&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>If this element is omitted, data are written for all section points (if applicable).
+If this element is omitted, data are written for all section points (if applicable).</p>
+</li>
+</ul>
+</dd>
+<dt><strong>numericForm</strong></dt><dd><p>A SymbolicConstant specifying the numeric form in which to display results that contain
+complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
+and COMPLEX_MAG_AT_ANGLE. The initial value is COMPLEX_MAGNITUDE.</p>
+</dd>
+<dt><strong>complexAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) at which to display results that contain
+complex numbers when <strong>numericForm</strong> = COMPLEX_MAG_AT_ANGLE. The initial value is 0.</p>
+</dd>
+<dt><strong>stepFrame</strong></dt><dd><p>A SymbolicConstant indicating whether to obtain the values from the specified frame or
+from all active frames. Possible values are SPECIFY and ALL. The default value is
+SPECIFY.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
-<section id="writefreebodyreport">
-<h3>writeFreeBodyReport<a class="headerlink" href="#writefreebodyreport" title="Permalink to this headline">#</a></h3>
+<section id="module-abaqus.FieldReport.writeFreeBodyReport">
+<span id="writefreebodyreport"></span><h3>writeFreeBodyReport<a class="headerlink" href="#module-abaqus.FieldReport.writeFreeBodyReport" title="Permalink to this headline">#</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport">
+<span class="sig-name descname"><span class="pre">writeFreeBodyReport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SPECIFY'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/FieldReport/writeFreeBodyReport.py#L9-L49"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport" title="Permalink to this definition">#</a></dt>
+<dd><p>This method writes a FreeBody object to a user-defined ASCII file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">writeFreeBodyReport</span>
+</pre></div>
+</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>fileName</strong></dt><dd><p>A String specifying the name of the file to which the free body output will be written.</p>
+</dd>
+<dt><strong>append</strong></dt><dd><p>A Boolean specifying whether to append the free body output to an existing file. The
+default value is ON.</p>
+</dd>
+<dt><strong>step</strong></dt><dd><p>An Int identifying the step from which to obtain values. The default value is the
+current step.</p>
+</dd>
+<dt><strong>frame</strong></dt><dd><p>An Int identifying the frame from which to obtain values. The default value is the
+current frame.</p>
+</dd>
+<dt><strong>stepFrame</strong></dt><dd><p>A SymbolicConstant indicating whether to obtain the values from the specified frame or
+from all active frames. Possible values are SPECIFY and ALL. The default value is
+SPECIFY.</p>
+</dd>
+<dt><strong>odb</strong></dt><dd><p>An <a class="reference internal" href="../odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Odb</span></code></a> object specifying the output database from which data will be read.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"></dd>
+</dl>
+</dd></dl>
+
 </section>
 </section>
 </section>
@@ -979,8 +1095,8 @@ the current OdbDisplay object.</p>
 <li><a class="reference internal" href="#freebodyreportoptions">FreeBodyReportOptions</a></li>
 <li><a class="reference internal" href="#odbfieldvarlist">OdbFieldVarList</a></li>
 <li><a class="reference internal" href="#odbmodelfieldvarlist">OdbModelFieldVarList</a></li>
-<li><a class="reference internal" href="#writefieldreport">writeFieldReport</a></li>
-<li><a class="reference internal" href="#writefreebodyreport">writeFreeBodyReport</a></li>
+<li><a class="reference internal" href="#module-abaqus.FieldReport.writeFieldReport">writeFieldReport</a></li>
+<li><a class="reference internal" href="#module-abaqus.FieldReport.writeFreeBodyReport">writeFreeBodyReport</a></li>
 </ul>
 </li>
 </ul>
