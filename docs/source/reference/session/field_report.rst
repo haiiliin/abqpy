@@ -56,8 +56,5 @@ writeFieldReport
 writeFreeBodyReport
 ~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport
+.. automodule:: abaqus.FieldReport.writeFreeBodyReport
     :members:
-
-    .. autoclasstoc::
-
