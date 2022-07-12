@@ -21,7 +21,7 @@ def writeFieldReport(
     complexAngle: float = None,
     stepFrame: SymbolicConstant = SPECIFY,
 ):
-    """This method writes a FieldOutput object to a user-defined ASCII file.
+    """This function writes a FieldOutput object to a user-defined ASCII file.
 
     .. note:: 
         This function can be accessed by:
@@ -73,10 +73,11 @@ def writeFieldReport(
           specifying a single section point at which to report data. The key specifies a region in
           the model; the corresponding value specifies a section point within that region. For
           example:
-          ```
-          {'shell < MAT > < 7 section points >':'SPOS
-          (fraction = 1.0)'}
-          ```
+          
+          .. code-block:: python
+          
+            {'shell < MAT > < 7 section points >': 'SPOS (fraction = 1.0)'}
+          
           If this element is omitted, data are written for all section points (if applicable).
           If this element is omitted, data are written for all section points (if applicable).
     numericForm
