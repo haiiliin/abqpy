@@ -7,7 +7,7 @@ from ..Odb.Odb import Odb
 """
 
 
-def writeFieldRepor(
+def writeFieldReport(
     filename: str,
     append: Boolean,
     sortItem: str,

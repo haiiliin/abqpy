@@ -6,7 +6,7 @@ from ..Odb.Odb import Odb
 """
 
 
-def writeFreeBodyRepor(
+def writeFreeBodyReport(
     fileName: str,
     append: Boolean,
     step: int = None,
