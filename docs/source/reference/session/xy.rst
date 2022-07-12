@@ -140,10 +140,8 @@ Title
 writeXYReport
 ~~~~~~~~~~~~~
 
-.. autoclass:: abaqus.XY.writeXYReport.writeXYReport
+.. automodule:: abaqus.XY.writeXYReport
     :members:
-
-    .. autoclasstoc::
 
 XYCurve
 ~~~~~~~
