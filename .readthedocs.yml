@@ -1,6 +1,7 @@
 version: 2
 build:
   os: ubuntu-20.04
+  image: stable
   tools:
     python: "3.10"
 sphinx:
