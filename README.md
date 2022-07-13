@@ -1,7 +1,7 @@
 # abqpy 2016a3
 
 [![OSCS Status](https://www.oscs1024.com/platform/badge/haiiliin/abqpy.svg?size=small)](https://www.oscs1024.com/project/haiiliin/abqpy?ref=badge_small)
-[![Documentation Status](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://abqpy.haiiliin.com/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://readthedocs.org/projects/abqpy)
 [![Pages](https://github.com/haiiliin/abqpy/actions/workflows/pages.yaml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pages.yaml)
 [![Upload Python Package to PyPI](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-pypi.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-pypi.yml)
 [![Build and Upload Conda Package](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-conda.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-conda.yml)
