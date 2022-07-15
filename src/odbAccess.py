@@ -21,6 +21,7 @@ def openOdb(name: str, *args, **kwargs):
     except:
         pass
     os.system(f'{abaqus} cae database={odbName} script={fileName}')
+    os.system('exit')
     return Odb(name)
 
 
