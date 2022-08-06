@@ -70,7 +70,7 @@ class Job:
 
     #: A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.
     #: Possible values are LOOP and DOMAIN. The default value is LOOP.
-    parallelizationMethodExplicit: SymbolicConstant = DOMAIN
+    parallelizationMethodExplicit: SymbolicConstant = Possible values are LOOP and DOMAIN. The default value is LOOP
 
     #: An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
     #: **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
