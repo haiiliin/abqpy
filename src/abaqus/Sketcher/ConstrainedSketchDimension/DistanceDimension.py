@@ -7,7 +7,7 @@ class DistanceDimension(ConstrainedSketchDimension):
     def __init__(
         self,
         entity1: ConstrainedSketchVertex,
-        vertex2: ConstrainedSketchVertex,
+        entity2: ConstrainedSketchVertex,
         textPoint: tuple[float],
         value: float = None,
         reference: Boolean = OFF,
@@ -27,7 +27,7 @@ class DistanceDimension(ConstrainedSketchDimension):
         ----------
         entity1
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or ConstrainedSketchGeometry object.
-        vertex2
+        entity2
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or ConstrainedSketchGeometry object.
         textPoint
             A pair of Floats specifying the location of the dimension text.
