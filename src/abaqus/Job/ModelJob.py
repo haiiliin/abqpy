@@ -161,7 +161,7 @@ class ModelJob(Job):
         memoryUnits: SymbolicConstant = PERCENTAGE,
         explicitPrecision: SymbolicConstant = SINGLE,
         nodalOutputPrecision: SymbolicConstant = SINGLE,
-        parallelizationMethodExplicit: SymbolicConstant = DOMAIN,
+        parallelizationMethodExplicit: SymbolicConstant = LOOP,
         numDomains: int = 1,
         activateLoadBalancing: Boolean = OFF,
         multiprocessingMode: SymbolicConstant = DEFAULT,
