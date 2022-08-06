@@ -6,12 +6,87 @@ pull_request_rules:
     actions:
       backport:
         branches:
-          - V2016
-          - V2017
-          - V2018
-          - V2019
-          - V2020
-          - V2021
           - V2022
+          - V2021
+          - V2020
+          - V2019
+          - V2018
+          - V2017
+          - V2016
+        assignees:
+          - "{{ author }}"
+  - name: Backport V2022
+    conditions:
+      - base=V2022
+      - label=backport-to-stable
+    actions:
+      backport:
+        branches:
+          - V2021
+          - V2020
+          - V2019
+          - V2018
+          - V2017
+          - V2016
+        assignees:
+          - "{{ author }}"
+  - name: Backport V2021
+    conditions:
+      - base=V2021
+      - label=backport-to-stable
+    actions:
+      backport:
+        branches:
+          - V2020
+          - V2019
+          - V2018
+          - V2017
+          - V2016
+        assignees:
+          - "{{ author }}"
+  - name: Backport V2020
+    conditions:
+      - base=V2020
+      - label=backport-to-stable
+    actions:
+      backport:
+        branches:
+          - V2019
+          - V2018
+          - V2017
+          - V2016
+        assignees:
+          - "{{ author }}"
+  - name: Backport V2019
+    conditions:
+      - base=V2019
+      - label=backport-to-stable
+    actions:
+      backport:
+        branches:
+          - V2018
+          - V2017
+          - V2016
+        assignees:
+          - "{{ author }}"
+  - name: Backport V2018
+    conditions:
+      - base=V2018
+      - label=backport-to-stable
+    actions:
+      backport:
+        branches:
+          - V2017
+          - V2016
+        assignees:
+          - "{{ author }}"
+  - name: Backport V2017
+    conditions:
+      - base=V2017
+      - label=backport-to-stable
+    actions:
+      backport:
+        branches:
+          - V2016
         assignees:
           - "{{ author }}"
