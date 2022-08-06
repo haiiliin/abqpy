@@ -51,3 +51,46 @@ class OdbMeshElement:
 
     #: A String specifying the instance name.
     instanceName: str = ""
+
+    def getNormal(
+        self,
+        faceIndex: str,
+        stepName: str = "",
+        frameValue: str = "",
+        match: SymbolicConstant = CLOSEST,
+    ):
+        """This method returns the normal direction for the element face.
+
+        Parameters
+        ----------
+        faceIndex
+            The value of *faceIndex* is 0 for a shell element and can range from 0 to 5 for a solid
+            element.
+        stepName
+            Name of the step.
+        frameValue
+            A Double specifying the value at which the frame is required. *frameValue* can be the
+            total fime or frequency.
+        match
+            A SymbolicConstant specifying which frame to return if there is no frame at the exact
+            frame value. Possible values are CLOSEST, BEFORE, AFTER, and EXACT. The default value is
+            CLOSEST.When *match*=CLOSEST, Abaqus returns the closest frame. If the frame value
+            requested is exactly halfway between two frames, Abaqus returns the frame after the
+            value.When *match*=EXACT, Abaqus raises an exception if the exact frame value does not
+            exist.
+
+        Returns
+        -------
+            A tuple of 3 floats representing the unit normal vector. If the element face is
+            collapsed such that a normal cannot be computed, a zero-length vector is returned.
+
+        Raises
+        ------
+        OdbError: Frame not found
+            If the exact frame is not found.
+        OdbError: Step is not present in the ODB
+            If the step name is not found.
+        OdbError: *stepName* should be specified with *frameValue*
+            If *frameValue* is not provided and *stepName* is empty.
+        """
+        pass
