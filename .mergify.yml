@@ -1,12 +1,10 @@
 pull_request_rules:
   - name: Automatic merge on approval
     conditions:
-      - "#approved-reviews-by>=1"
+      - base=main
+      - label=backport-to-stable
     actions:
       backport:
-        conditions:
-          - base=main
-          - label=backport-to-stable
         branches:
           - V2016
           - V2017
