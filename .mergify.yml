@@ -6,10 +6,12 @@ pull_request_rules:
         - label=backport-to-v2022
     actions:
       backport:
+        title: Backport "{{ title }}" into {{ destination_branch }} (backport #{{ number }})
         branches:
           - V2022
         assignees:
           - "{{ author }}"
+
   - name: Backport to V2021
     conditions:
       - or:
@@ -17,10 +19,12 @@ pull_request_rules:
         - label=backport-to-v2021
     actions:
       backport:
+        title: Backport "{{ title }}" into {{ destination_branch }} (backport #{{ number }})
         branches:
           - V2021
         assignees:
           - "{{ author }}"
+
   - name: Backport to V2020
     conditions:
       - or:
@@ -28,6 +32,7 @@ pull_request_rules:
         - label=backport-to-v2020
     actions:
       backport:
+        title: Backport "{{ title }}" into {{ destination_branch }} (backport #{{ number }})
         branches:
           - V2020
         assignees:
@@ -39,10 +44,12 @@ pull_request_rules:
         - label=backport-to-v2019
     actions:
       backport:
+        title: Backport "{{ title }}" into {{ destination_branch }} (backport #{{ number }})
         branches:
           - V2019
         assignees:
           - "{{ author }}"
+
   - name: Backport to V2018
     conditions:
       - or:
@@ -50,6 +57,7 @@ pull_request_rules:
         - label=backport-to-v2018
     actions:
       backport:
+        title: Backport "{{ title }}" into {{ destination_branch }} (backport #{{ number }})
         branches:
           - V2018
         assignees:
@@ -61,6 +69,7 @@ pull_request_rules:
         - label=backport-to-v2017
     actions:
       backport:
+        title: Backport "{{ title }}" into {{ destination_branch }} (backport #{{ number }})
         branches:
           - V2017
         assignees:
@@ -73,6 +82,7 @@ pull_request_rules:
         - label=backport-to-v2016
     actions:
       backport:
+        title: Backport "{{ title }}" into {{ destination_branch }} (backport #{{ number }})
         branches:
           - V2016
         assignees:
