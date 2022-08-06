@@ -1,0 +1,51 @@
+# .github/release-drafter.yml
+
+name-template: 'V$RESOLVED_VERSION 🌈'
+tag-template: 'v$RESOLVED_VERSION'
+categories:
+  - title: '🚨 Breaking changes'
+    labels:
+      - 'breaking change'
+  - title: '🚀 Features'
+    labels:
+      - 'feature'
+      - 'new feature'
+      - 'enhancement'
+      - 'customization'
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'fix'
+      - 'bugfix'
+      - 'bug'
+      - 'test'
+  - title: '🧰 Maintenance'
+    label: 'chore'
+  - title: '📝 Documentation'
+    labels:
+      - 'documentation'
+      - 'docs'
+      - 'doc'
+  - title: '🤔 Miscellaneous'
+    labels:
+      - 'misc'
+      - '*'
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'minor'
+  patch:
+    labels:
+      - 'patch'
+  default: patch
+template: |
+  ## Changes (Remember to update the version in docs/source/conf.py, setup.py, and delete this before publishing the release!)
+
+  $CHANGES
+
+  **Full Changelog**: https://github.com/haiiliin/abqpy/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
+
