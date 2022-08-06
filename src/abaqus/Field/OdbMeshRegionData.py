@@ -164,7 +164,6 @@ class OdbMeshRegionData:
         computeOrder: SymbolicConstant = EXTRAPOLATE_COMPUTE_AVERAGE,
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
-        transformationType: SymbolicConstant = DEFAULT,
         sectionPoint: str = "",
         refinementType: SymbolicConstant = None,
         refinementLabel: str = "",
@@ -273,9 +272,6 @@ class OdbMeshRegionData:
             A Float specifying the angle (in degrees) at which to display results that contain
             complex numbers when **numericForm=COMPLEX_MAG_AT_ANGLE** = COMPLEX_MAG_AT_ANGLE. The
             default value is 0.0.
-        transformationType
-            A SymbolicConstant specifying the type of the transformation to apply to the output.
-            Possible values are DEFAULT, NODAL, ANGULAR, and LAYUP_ORIENTATION. The default is DEFAULT.
         sectionPoint
             A Dictionary with String keys and String values. Each key specifies a region in the
             model; the corresponding value specifies a section point within that region. For
