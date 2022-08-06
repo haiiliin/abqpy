@@ -1179,6 +1179,7 @@ class StepModel(ModelBase):
         utol: float = None,
         timePeriod: float = 1,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
+        maxNumInc: int = 100,
         initialInc: float = None,
         minInc: float = None,
         maxInc: float = None,
@@ -1232,6 +1233,8 @@ class StepModel(ModelBase):
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
             are FIXED and AUTOMATIC. The default value is AUTOMATIC.
+        maxNumInc
+            An Int specifying the maximum number of increments in a step. The default value is 100.
         initialInc
             A Float specifying the initial time increment. The default value is the total time
             period for the step.Note:This parameter is ignored unless
@@ -1264,6 +1267,7 @@ class StepModel(ModelBase):
             utol,
             timePeriod,
             timeIncrementationMethod,
+            maxNumInc,
             initialInc,
             minInc,
             maxInc,
