@@ -128,9 +128,20 @@ class OdbMeshRegionData:
     transformationType: SymbolicConstant = DEFAULT
 
     #: A SymbolicConstant specifying the position where the output is displayed in the
-    #: viewport. Possible values
-    #: are:UNDEFINED_POSITIONNODALINTEGRATION_POINTELEMENT_FACEELEMENT_NODALELEMENT_CENTROIDWHOLE_ELEMENTWHOLE_REGIONWHOLE_PART_INSTANCEWHOLE_MODELGENERAL_PARTICLEThe
-    #: default value is UNDEFINED_POSITION.
+    #: viewport. Possible values are:
+    #:
+    #: - UNDEFINED_POSITION
+    #: - NODAL
+    #: - INTEGRATION_POINT
+    #: - ELEMENT_FACE
+    #: - ELEMENT_NODAL
+    #: - ELEMENT_CENTROID
+    #: - WHOLE_ELEMENT
+    #: - WHOLE_REGION
+    #: - WHOLE_PART_INSTANCE
+    #: - WHOLE_MODEL
+    #: - GENERAL_PARTICLE
+    #: The default value is UNDEFINED_POSITION.
     displayOutputPosition: SymbolicConstant = UNDEFINED_POSITION
 
     def __init__(
