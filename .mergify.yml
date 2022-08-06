@@ -3,5 +3,17 @@ pull_request_rules:
     conditions:
       - "#approved-reviews-by>=1"
     actions:
-      merge:
-        method: merge
+      backport:
+        conditions:
+          - base=main
+          - label=backport-to-stable
+        branches:
+          - V2016
+          - V2017
+          - V2018
+          - V2019
+          - V2020
+          - V2021
+          - V2022
+        assignees:
+          - "{{ author }}"
