@@ -53,10 +53,6 @@ class SectionLayer:
     #: ROTATION_FIELD. The default value is ROTATION_NONE.
     additionalRotationType: SymbolicConstant = ROTATION_NONE
 
-    #: A SymbolicConstant specifying the method used to describe the thickness. Possible values
-    #: are THICKNESS_MAGNITUDE and THICKNESS_DISCRETE_FIELD. The default value is THICKNESS_MAGNITUDE.
-    thicknessType: SymbolicConstant = THICKNESS_MAGNITUDE
-
     #: A String specifying the ply identifier for this section layer. The default value is "".
     plyName: str = ""
 
@@ -70,9 +66,6 @@ class SectionLayer:
     #: default value is "".
     additionalRotationField: str = ""
 
-    #: A String specifying the name of the field specifying the thickness The default value is "".
-    thicknessField: str = ""
-
     def __init__(
         self,
         thickness: float,
@@ -82,11 +75,9 @@ class SectionLayer:
         axis: SymbolicConstant = AXIS_3,
         angle: float = 0,
         additionalRotationType: SymbolicConstant = ROTATION_NONE,
-        thicknessType: SymbolicConstant = THICKNESS_MAGNITUDE,
         plyName: str = "",
         orientation: SymbolicConstant = None,
         additionalRotationField: str = "",
-        thicknessField: str = "",
     ):
         """This method creates a SectionLayer object.
 
@@ -125,9 +116,6 @@ class SectionLayer:
             A SymbolicConstant specifying the method used to describe the additional rotation when a
             valid orientation is specified. Possible values are ROTATION_NONE, ROTATION_ANGLE, and
             ROTATION_FIELD. The default value is ROTATION_NONE.
-        thicknessType: SymbolicConstant
-            A SymbolicConstant specifying the method used to describe the thickness. Possible values
-            are THICKNESS_MAGNITUDE and THICKNESS_DISCRETE_FIELD. The default value is THICKNESS_MAGNITUDE.
         plyName
             A String specifying the ply identifier for this section layer. The default value is "".
         orientation
@@ -138,8 +126,6 @@ class SectionLayer:
         additionalRotationField
             A String specifying the name of the field specifying the additional rotation. The
             default value is "".
-        thicknessField
-            A String specifying the name of the field specifying the thickness The default value is "".
 
         Returns
         -------
