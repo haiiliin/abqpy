@@ -106,6 +106,11 @@ class ContourOptions(DGContourOptions):
     #: A String specifying the name of the color spectrum to be used in the contour plot. The
     #: default value is "Rainbow".
     spectrum: str = ""
+    
+    #: A Boolean specifying whether the contour legend should show the lowest value at the top
+    #: and the highest value at the bottom (**reversedContourLegendRange=ON**) or vice versa. The
+    #: default value is OFF.
+    reversedContourLegendRange: Boolean = OFF
 
     #: A tuple of Floats specifying the interval values when **intervalType** = USER_DEFINED.
     intervalValues: float = None
@@ -204,6 +209,7 @@ class ContourOptions(DGContourOptions):
         edgeColorLine: str = "",
         edgeColorBandedQuilt: str = "",
         spectrum: str = "",
+        reversedContourLegendRange: Boolean = OFF,
         outsideLimitsMode: SymbolicConstant = None,
         outsideLimitsAboveColor: str = "",
         outsideLimitsBelowColor: str = "",
@@ -277,6 +283,10 @@ class ContourOptions(DGContourOptions):
         spectrum
             A String specifying the name of the color spectrum to be used in the contour plot. The
             default value is "Rainbow".
+        reversedContourLegendRange
+            A Boolean specifying whether the contour legend should show the lowest value at the top
+            and the highest value at the bottom (*reversedContourLegendRange*=ON) or vice versa. The
+            default value is OFF.
         outsideLimitsMode
             A SymbolicConstant specifying the color of contour values that exceed the limits of the
             plot. Possible values are SPECTRUM and SPECIFY.When **outsideLimitsMode** = SPECTRUM, the
