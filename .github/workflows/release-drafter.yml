@@ -1,4 +1,4 @@
-# .github/workflows/release-drafter-main.yml
+# .github/workflows/release-drafter.yml
 
 name: Release Drafter
 
@@ -34,7 +34,7 @@ jobs:
       - uses: release-drafter/release-drafter@v5
         # (Optional) specify config name to use, relative to .github/. Default: release-drafter.yml
         with:
-          config-name: release-drafter-main.yml
+          config-name: release-drafter.yml
         #   disable-autolabeler: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
