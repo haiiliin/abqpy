@@ -62,7 +62,7 @@ When you run the notebook, the package will convert the notebook into a plain Py
 with the same name but with `.py` suffix instead of `.ipynb`, and then it will be submitted 
 to Abaqus kernel. 
 
-Go [github.com/haiiliin/abqpy/tree/main/tests](https://github.com/haiiliin/abqpy/tree/main/tests/compression)
+Go [github.com/haiiliin/abqpy/tree/main/examples](https://github.com/haiiliin/abqpy/tree/main/examples)
 for tests using Jupyter Notebooks to build the Abaqus model.
  
 In order to use the **Jupyter Notebook** feature, you have to install the following packages:
