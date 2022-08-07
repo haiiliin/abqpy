@@ -15,6 +15,7 @@ from .Gasket.GasketMembraneElastic import GasketMembraneElastic
 from .Gasket.GasketThicknessBehavior import GasketThicknessBehavior
 from .Gasket.GasketTransverseShearElastic import GasketTransverseShearElastic
 from .MaterialBase import MaterialBase
+from .Multiscale.MeanFieldHomogenization import MeanFieldHomogenization
 from .Others.Acoustic.AcousticMedium import AcousticMedium
 from .Others.Electromagnetic.Dielectric import Dielectric
 from .Others.Electromagnetic.ElectricalConductivity import ElectricalConductivity
@@ -57,7 +58,6 @@ from .Plastic.Plastic import Plastic
 from .Plastic.Swelling.Swelling import Swelling
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
-from .Multiscale.MeanFieldHomogenization import MeanFieldHomogenization
 
 
 class Material(MaterialBase):

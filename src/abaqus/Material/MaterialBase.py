@@ -12,6 +12,7 @@ from .Gap.GapFlow import GapFlow
 from .Gasket.GasketMembraneElastic import GasketMembraneElastic
 from .Gasket.GasketThicknessBehavior import GasketThicknessBehavior
 from .Gasket.GasketTransverseShearElastic import GasketTransverseShearElastic
+from .Multiscale.MeanFieldHomogenization import MeanFieldHomogenization
 from .Others.Acoustic.AcousticMedium import AcousticMedium
 from .Others.Electromagnetic.Dielectric import Dielectric
 from .Others.Electromagnetic.ElectricalConductivity import ElectricalConductivity
@@ -57,7 +58,7 @@ from .Plastic.Swelling.Swelling import Swelling
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
 from .TestData.MullinsEffect import MullinsEffect
-from .Multiscale.MeanFieldHomogenization import MeanFieldHomogenization
+
 
 class MaterialBase:
     """A :py:class:`~abaqus.Material.Material.Material` object is the object used to specify a material. The Material object stores
