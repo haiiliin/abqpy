@@ -908,7 +908,8 @@ class StepModel(ModelBase):
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
         userDefinedInc: float = None,
-        maintainAttributes: Boolean = False
+        maintainAttributes: Boolean = False,
+        improvedDtMethod: Boolean = ON,
     ) -> ExplicitDynamicsStep:
         """This method creates an ExplicitDynamicsStep object.
 
@@ -962,6 +963,12 @@ class StepModel(ModelBase):
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
             name. The default value is False.
+        improvedDtMethod
+            A Boolean specifying whether to use the "improved" (*improvedDtMethod*=ON) or
+            "conservative" (*improvedDtMethod*=OFF) method to estimate the element stable time
+            increment for three-dimensional continuum elements and elements with plane stress
+            formulations (shell, membrane, and two-dimensional plane stress elements). The default
+            value is ON.
 
         Returns
         -------
@@ -983,6 +990,7 @@ class StepModel(ModelBase):
             quadBulkViscosity,
             userDefinedInc,
             maintainAttributes,
+            improvedDtMethod,
         )
         return step
 
@@ -2864,6 +2872,7 @@ class StepModel(ModelBase):
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
         maintainAttributes: Boolean = False,
+        improvedDtMethod: Boolean = ON,
     ) -> TempDisplacementDynamicsStep:
         """This method creates a TempDisplacementDynamicsStep object.
 
@@ -2912,6 +2921,12 @@ class StepModel(ModelBase):
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
             name. The default value is False.
+        improvedDtMethod
+            A Boolean specifying whether to use the "improved" (*improvedDtMethod*=ON) or
+            "conservative" (*improvedDtMethod*=OFF) method to estimate the element stable time
+            increment for three-dimensional continuum elements and elements with plane stress
+            formulations (shell, membrane, and two-dimensional plane stress elements). The default
+            value is ON.
 
         Returns
         -------
