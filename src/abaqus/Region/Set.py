@@ -278,7 +278,7 @@ class Set:
         """
         pass
 
-    def SetFromNodeLabels(self, name: str, nodeLabels: tuple):
+    def SetFromNodeLabels(self, name: str, nodeLabels: tuple, unsorted: Boolean = False):
         """This method creates a set from a sequence of node labels in a model database.
 
         .. note:: 
@@ -297,6 +297,8 @@ class Set:
             A sequence of node labels. A node label is a sequence of Int node identifiers. For
             example, for a part:`nodeLabels=(2,3,5,7)`For an assembly:`nodeLabels=(('Instance-1',
             (2,3,5,7)), ('Instance-2', (1,2,3)))`
+        unsorted
+            A Boolean specifying whether the created set is unsorted. The default value is False.
 
         Returns
         -------
