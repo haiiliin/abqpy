@@ -78,6 +78,13 @@ class ExplicitDynamicsStep(AnalysisStep):
     #: only when **timeIncrementationMethod** = FIXED_USER_DEFINED_INC. The default value is None.
     userDefinedInc: float = None
 
+    #: A Boolean specifying whether to use the "improved" (*improvedDtMethod*=ON) or
+    #: "conservative" (*improvedDtMethod*=OFF) method to estimate the element stable time
+    #: increment for three-dimensional continuum elements and elements with plane stress
+    #: formulations (shell, membrane, and two-dimensional plane stress elements). The default
+    #: value is ON.
+    improvedDtMethod: Boolean = ON
+
     #: A String specifying the name of the previous step. The new step appears after this step
     #: in the list of analysis steps.
     previous: str = ""
@@ -200,6 +207,7 @@ class ExplicitDynamicsStep(AnalysisStep):
         quadBulkViscosity: float = 1,
         userDefinedInc: float = None,
         maintainAttributes: Boolean = False,
+        improvedDtMethod: Boolean = ON,
     ):
         """This method creates an ExplicitDynamicsStep object.
 
@@ -253,6 +261,12 @@ class ExplicitDynamicsStep(AnalysisStep):
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
             name. The default value is False.
+        improvedDtMethod
+            A Boolean specifying whether to use the "improved" (*improvedDtMethod*=ON) or
+            "conservative" (*improvedDtMethod*=OFF) method to estimate the element stable time
+            increment for three-dimensional continuum elements and elements with plane stress
+            formulations (shell, membrane, and two-dimensional plane stress elements). The default
+            value is ON.
 
         Returns
         -------
@@ -279,6 +293,7 @@ class ExplicitDynamicsStep(AnalysisStep):
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
         userDefinedInc: float = None,
+        improvedDtMethod: Boolean = ON,
     ):
         """This method modifies the ExplicitDynamicsStep object.
 
@@ -317,6 +332,12 @@ class ExplicitDynamicsStep(AnalysisStep):
         userDefinedInc
             None or a Float specifying the user-defined time increment. This argument is required
             only when **timeIncrementationMethod** = FIXED_USER_DEFINED_INC. The default value is None.
+        improvedDtMethod
+            A Boolean specifying whether to use the "improved" (*improvedDtMethod*=ON) or
+            "conservative" (*improvedDtMethod*=OFF) method to estimate the element stable time
+            increment for three-dimensional continuum elements and elements with plane stress
+            formulations (shell, membrane, and two-dimensional plane stress elements). The default
+            value is ON.
 
         Raises
         ------
