@@ -57,7 +57,7 @@ from .Plastic.Swelling.Swelling import Swelling
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
 from .TestData.MullinsEffect import MullinsEffect
-
+from .Multiscale.MeanFieldHomogenization import MeanFieldHomogenization
 
 class MaterialBase:
     """A :py:class:`~abaqus.Material.Material.Material` object is the object used to specify a material. The Material object stores
@@ -302,6 +302,9 @@ class MaterialBase:
 
     #: A :py:class:`~abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous` object.
     viscous: Viscous = Viscous(((),))
+
+    #: A :py:class:`~abaqus.Material.MultiScale.MeanFieldHomogenization.MeanFieldHomogenization` object.
+    meanFieldHomogenization: MeanFieldHomogenization = MeanFieldHomogenization()
 
     def __init__(self, name: str, description: str = "", materialIdentifier: str = ""):
         """This method creates a Material object.
