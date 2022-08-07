@@ -221,13 +221,13 @@ class ViewportBase:
     #: A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters in the canvas
     #: coordinate system of the lower left corner of the current viewport, regardless of the
     #: value of **windowState**.
-    currentOrigin: tuple[float] = ()
+    currentOrigin: tuple[float, ...] = ()
 
     #: A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters of the lower
     #: left corner of the current viewport from a coordinate system having its origin in the
     #: lower left corner of the drawing area. This origin refers to the viewport location when
     #: **windowState** =MINIMIZED.
-    iconOrigin: tuple[float] = ()
+    iconOrigin: tuple[float, ...] = ()
 
     #: A :py:class:`~abaqus.DisplayOptions.LightOptions.LightOptions` object.
     lightOptions: LightOptions = LightOptions()
@@ -245,7 +245,7 @@ class ViewportBase:
     def __init__(
         self,
         name: str,
-        origin: tuple[float] = (),
+        origin: tuple[float, ...] = (),
         width: float = 120,
         height: float = 80,
         border: Boolean = ON,

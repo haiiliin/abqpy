@@ -10,7 +10,7 @@ class AngularDimension(ConstrainedSketchDimension):
         self,
         line1: ConstrainedSketchGeometry,
         line2: ConstrainedSketchGeometry,
-        textPoint: tuple[float],
+        textPoint: tuple[float, ...],
         value: float = None,
         reference: Boolean = OFF,
     ):

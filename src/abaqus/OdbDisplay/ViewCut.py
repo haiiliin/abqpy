@@ -58,7 +58,7 @@ class ViewCut:
     active: Boolean = OFF
 
     #: A pair of Floats specifying the acceptable range for positioning the cut.
-    cutRange: tuple[float] = ()
+    cutRange: tuple[float, ...] = ()
 
     #: A String specifying the repository key.
     name: str
