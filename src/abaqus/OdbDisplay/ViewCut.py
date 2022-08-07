@@ -112,6 +112,10 @@ class ViewCut:
     #: default value is FIRST_FRAME.
     referenceFrame: SymbolicConstant = FIRST_FRAME
 
+    #: A Float returning the cross-sectional area of the cut when *showFreeBodyCut* is set to
+    #: ON.
+    crossSectionalArea: float = None
+
     def __init__(
         self,
         name: str,
