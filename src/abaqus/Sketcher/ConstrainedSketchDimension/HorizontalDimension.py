@@ -8,7 +8,7 @@ class HorizontalDimension(ConstrainedSketchDimension):
         self,
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
-        textPoint: tuple[float],
+        textPoint: tuple[float, ...],
         value: float = None,
         reference: Boolean = OFF,
     ):
