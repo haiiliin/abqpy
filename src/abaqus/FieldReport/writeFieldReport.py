@@ -19,7 +19,6 @@ def writeFieldReport(
     variable: SymbolicConstant,
     numericForm: SymbolicConstant = None,
     complexAngle: float = None,
-    stepFrame: SymbolicConstant = SPECIFY,
 ):
     """This function writes a FieldOutput object to a user-defined ASCII file.
 
@@ -87,9 +86,5 @@ def writeFieldReport(
     complexAngle
         A Float specifying the angle (in degrees) at which to display results that contain
         complex numbers when **numericForm** = COMPLEX_MAG_AT_ANGLE. The initial value is 0.
-    stepFrame
-        A SymbolicConstant indicating whether to obtain the values from the specified frame or
-        from all active frames. Possible values are SPECIFY and ALL. The default value is
-        SPECIFY.
     """
     pass
