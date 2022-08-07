@@ -1,16 +1,15 @@
 class MeanFieldMatrix:
     """The MeanFieldMatrix object specifies the matrix property.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].constituents[name]
-        import odbMaterial
-        session.odbs[name].materials[name].constituents[name]
+            import material
+            mdb.models[name].materials[name].constituents[name]
+            import odbMaterial
+            session.odbs[name].materials[name].constituents[name]
 
     The corresponding analysis keywords are:
 
@@ -23,8 +22,7 @@ class MeanFieldMatrix:
     ):
         """This method creates a MeanFieldMatrix object.
 
-        Notes
-        -----
+        .. note::
             This function can be accessed by:
 
             .. code-block:: python

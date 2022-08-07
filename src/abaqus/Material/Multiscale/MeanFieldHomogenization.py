@@ -7,16 +7,15 @@ from .MeanFieldVoid import MeanFieldVoid
 class MeanFieldHomogenization:
     """The MeanFieldHomogenization object specifies the multiscale material definition.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].meanFieldHomogenization
-        import odbMaterial
-        session.odbs[name].materials[name].meanFieldHomogenization
+            import material
+            mdb.models[name].materials[name].meanFieldHomogenization
+            import odbMaterial
+            session.odbs[name].materials[name].meanFieldHomogenization
 
     The corresponding analysis keywords are:
 
@@ -33,8 +32,7 @@ class MeanFieldHomogenization:
     ):
         """This method creates a MeanFieldHomogenization object.
 
-        Notes
-        -----
+        .. note::
             This function can be accessed by:
 
             .. code-block:: python
@@ -86,8 +84,7 @@ class MeanFieldHomogenization:
     ):
         """This method creates a MeanFieldInclusion object.
 
-        Notes
-        -----
+        .. note::
             This function can be accessed by:
 
             .. code-block:: python
@@ -163,8 +160,7 @@ class MeanFieldHomogenization:
     ):
         """This method creates a MeanFieldMatrix object.
 
-        Notes
-        -----
+        .. note::
             This function can be accessed by:
 
             .. code-block:: python
@@ -211,8 +207,7 @@ class MeanFieldHomogenization:
     ):
         """This method creates a MeanFieldVoid object.
 
-        Notes
-        -----
+        .. note::
             This function can be accessed by:
 
             .. code-block:: python

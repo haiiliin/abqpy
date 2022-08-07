@@ -4,16 +4,15 @@ from abaqusConstants import *
 class MeanFieldVoid:
     """The MeanFieldVoid object specifies the void inclusion property.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].constituents[name]
-        import odbMaterial
-        session.odbs[name].materials[name].constituents[name]
+            import material
+            mdb.models[name].materials[name].constituents[name]
+            import odbMaterial
+            session.odbs[name].materials[name].constituents[name]
 
     The table data for this object are:
 
@@ -48,8 +47,7 @@ class MeanFieldVoid:
     ):
         """This method creates a MeanFieldVoid object.
 
-        Notes
-        -----
+        .. note::
             This function can be accessed by:
 
             .. code-block:: python
