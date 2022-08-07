@@ -6,7 +6,7 @@ on:
   push:
     # FIXME When creating a new main branch, please use the corresponding branch name.
     branches:
-      - main
+      - V2018
   # pull_request event is required only for autolabeler
   pull_request:
     # Only following types are handled by the action, but one can default to all as well
@@ -37,7 +37,7 @@ jobs:
         # FIXME When creating a new main branch, please use the correct config name.
         # FIXME And delete all the config files of release drafter in .github/.
         with:
-          config-name: release-drafter.yml
+          config-name: release-drafter-v2018.yml
         #   disable-autolabeler: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
