@@ -126,15 +126,3 @@ class Cell:
 
         """
         pass
-
-    def getCADAttributes(self):
-        """This method returns an array of CAD attribute strings associated with the cell when the
-        part was created from CAD data.
-
-        Returns
-        -------
-        list[str]
-            An array of String.
-
-        """
-        pass
