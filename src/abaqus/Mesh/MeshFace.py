@@ -76,7 +76,7 @@ class MeshFace:
 
         Returns
         -------
-        normal: tuple[float]
+        normal: tuple[float, ...]
             A tuple of 3 floats representing the unit normal vector. If the element face is
             collapsed such that a normal cannot be computed, a zero-length vector is returned.
         """
