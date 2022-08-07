@@ -132,7 +132,7 @@ class QuantityType:
     #: The default value is NONE
     type: SymbolicConstant = None
 
-    def __init__(self, label: str = "", type: SymbolicConstant = None):
+    def __init__(self, type: SymbolicConstant, label: str = ""):
         """This method creates a QuantityType object.
 
         .. note:: 
@@ -145,8 +145,6 @@ class QuantityType:
 
         Parameters
         ----------
-        label
-            A String specifying the label for this quantity type.
         type
             A SymbolicConstant specifying the physical dimension of the axis. Possible values are:
 
@@ -222,8 +220,8 @@ class QuantityType:
             - VOLUME_FLUX.
             - VOLUME_FLUX_AREA, specifying "Volume flux per area".
             - VOLUME_FRACTION.
-            
-            The default value is NONE
+        label
+            A String specifying the label for this quantity type.
 
         Returns
         -------
