@@ -5,7 +5,7 @@ from ..Session.SessionBase import SessionBase
 
 
 class FieldReportSession(SessionBase):
-    def writeFieldRepor(
+    def writeFieldReport(
         self,
         filename: str,
         append: Boolean,
@@ -18,7 +18,6 @@ class FieldReportSession(SessionBase):
         variable: SymbolicConstant,
         numericForm: SymbolicConstant = None,
         complexAngle: float = None,
-        stepFrame: SymbolicConstant = SPECIFY,
     ):
         """This method writes a FieldOutput object to a user-defined ASCII file.
 
@@ -87,14 +86,10 @@ class FieldReportSession(SessionBase):
         complexAngle
             A Float specifying the angle (in degrees) at which to display results that contain
             complex numbers when **numericForm** = COMPLEX_MAG_AT_ANGLE. The initial value is 0.
-        stepFrame
-            A SymbolicConstant indicating whether to obtain the values from the specified frame or
-            from all active frames. Possible values are SPECIFY and ALL. The default value is
-            SPECIFY.
         """
         pass
 
-    def writeFreeBodyRepor(
+    def writeFreeBodyReport(
         self,
         fileName: str,
         append: Boolean,
