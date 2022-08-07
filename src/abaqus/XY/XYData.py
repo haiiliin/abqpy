@@ -599,6 +599,8 @@ class XYData(tuple):
         numIntervals: int,
         labelType: SymbolicConstant,
         viewport: str = "",
+        removeDuplicateXYPairs: Boolean = True,
+        includeAllElements: Boolean = False,
         step: int = None,
         frame: int = None,
         variable: SymbolicConstant = None,
@@ -643,6 +645,12 @@ class XYData(tuple):
         viewport
             A String specifying the viewport name or an Int specifying the viewport id from which to
             obtain values. The default is the current viewport.
+        removeDuplicateXYPairs
+            A Boolean specifying whether to remove duplicate XY values from the final result. The
+            default value is True.
+        includeAllElements
+            A Boolean specifying whether to include elements which do not lie in the direction of
+            the path. The default value is False.
         step
             An Int identifying the step from which to obtain values. The default value is the
             current step.
