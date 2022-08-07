@@ -96,7 +96,7 @@ class XYPlot(XYPlotBase):
         return lineStyle
 
     @staticmethod
-    def QuantityType(label: str = "", type: SymbolicConstant = None) -> QuantityType:
+    def QuantityType(type: SymbolicConstant, label: str = "") -> QuantityType:
         """This method creates a QuantityType object.
 
         .. note:: 
@@ -109,11 +109,9 @@ class XYPlot(XYPlotBase):
 
         Parameters
         ----------
-        label
-            A String specifying the label for this quantity type.
         type
             A SymbolicConstant specifying the physical dimension of the axis. Possible values are:
-            
+
             - NONE.
             - ACCELERATION.
             - ACOUSTIC_INTENSITY.
@@ -186,15 +184,15 @@ class XYPlot(XYPlotBase):
             - VOLUME_FLUX.
             - VOLUME_FLUX_AREA, specifying "Volume flux per area".
             - VOLUME_FRACTION.
-            
-            The default value is NONE
+        label
+            A String specifying the label for this quantity type.
 
         Returns
         -------
         QuantityType
             A :py:class:`~abaqus.XY.QuantityType.QuantityType` object.
         """
-        quantityType = QuantityType(label, type)
+        quantityType = QuantityType(type, label)
         return quantityType
 
     @staticmethod
