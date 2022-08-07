@@ -1058,7 +1058,7 @@ class PartBase(Feature):
 
         Returns
         -------
-        centroid: tuple[float]
+        centroid: tuple[float, ...]
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid.
             Depending on the arguments provided, this method returns the following:
         
