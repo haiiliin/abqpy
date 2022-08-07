@@ -5,7 +5,7 @@ from ..Session.SessionBase import SessionBase
 
 
 class FieldReportSession(SessionBase):
-    def writeFieldRepor(
+    def writeFieldReport(
         self,
         filename: str,
         append: Boolean,
@@ -94,7 +94,7 @@ class FieldReportSession(SessionBase):
         """
         pass
 
-    def writeFreeBodyRepor(
+    def writeFreeBodyReport(
         self,
         fileName: str,
         append: Boolean,
