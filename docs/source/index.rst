@@ -71,7 +71,7 @@ Write your Abaqus/Python script
 
 After installing the `abqpy` package, you can start writing your own Abaqus/Python script
 to build your model. You can refer
-`abqpy/tests at main · haiiliin/abqpy <https://github.com/haiiliin/abqpy/tree/main/tests>`_
+`abqpy/examples at main · haiiliin/abqpy <https://github.com/haiiliin/abqpy/tree/main/examples>`_
 for some tests of the script, for more detailed documentation, please check
 `abqpy documentation <https://haiiliin.com/abqpy/>`_.
 
