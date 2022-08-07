@@ -12,6 +12,7 @@ from .Gap.GapFlow import GapFlow
 from .Gasket.GasketMembraneElastic import GasketMembraneElastic
 from .Gasket.GasketThicknessBehavior import GasketThicknessBehavior
 from .Gasket.GasketTransverseShearElastic import GasketTransverseShearElastic
+from .Multiscale.MeanFieldHomogenization import MeanFieldHomogenization
 from .Others.Acoustic.AcousticMedium import AcousticMedium
 from .Others.Electromagnetic.Dielectric import Dielectric
 from .Others.Electromagnetic.ElectricalConductivity import ElectricalConductivity
@@ -302,6 +303,9 @@ class MaterialBase:
 
     #: A :py:class:`~abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous` object.
     viscous: Viscous = Viscous(((),))
+
+    #: A :py:class:`~abaqus.Material.MultiScale.MeanFieldHomogenization.MeanFieldHomogenization` object.
+    meanFieldHomogenization: MeanFieldHomogenization = MeanFieldHomogenization()
 
     def __init__(self, name: str, description: str = "", materialIdentifier: str = ""):
         """This method creates a Material object.

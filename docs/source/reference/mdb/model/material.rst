@@ -1153,3 +1153,26 @@ VolumetricTestData
     :members:
 
     .. autoclasstoc::
+
+MultiScale
+~~~~~~~~~~
+
+.. autoclass:: abaqus.Material.MultiScale.MeanFieldHomogenization.MeanFieldHomogenization
+    :members:
+
+    .. autoclasstoc::
+
+.. autoclass:: abaqus.Material.MultiScale.MeanFieldInclusion.MeanFieldInclusion
+    :members:
+
+    .. autoclasstoc::
+
+.. autoclass:: abaqus.Material.MultiScale.MeanFieldMatrix.MeanFieldMatrix
+    :members:
+
+    .. autoclasstoc::
+
+.. autoclass:: abaqus.Material.MultiScale.MeanFieldVoid.MeanFieldVoid
+    :members:
+
+    .. autoclasstoc::
