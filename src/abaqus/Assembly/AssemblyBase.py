@@ -807,7 +807,7 @@ class AssemblyBase(Feature):
         Parameters
         ----------
         fileName
-            A String specifying the name of the file to which to write. The file name's extension is
+            A String specifying the name of the file to which to write.
         version
             A Float specifying the ACIS version. For example, the Float 12.0 corresponds to ACIS
             Version 12.0. The default value is the current version of ACIS.
