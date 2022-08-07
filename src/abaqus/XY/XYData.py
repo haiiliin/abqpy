@@ -10,7 +10,7 @@ class Odb:
     pass
 
 
-class XYData:
+class XYData(tuple):
     """The XYData object is used to store values and attributes associated with XYData type
     objects.
     XYData objects can be created using the methods described below. The methods accessed
