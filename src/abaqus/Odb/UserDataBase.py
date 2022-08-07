@@ -1,3 +1,5 @@
+from abaqusConstants import NONE
+
 from ..Annotation.Annotation import Annotation
 from ..XY.QuantityType import QuantityType
 from ..XY.XYData import XYData
@@ -41,11 +43,11 @@ class UserDataBase:
 
     #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
     #: values.
-    axis1QuantityType: QuantityType = QuantityType()
+    axis1QuantityType: QuantityType = QuantityType(NONE)
 
     #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
     #: values.
-    axis2QuantityType: QuantityType = QuantityType()
+    axis2QuantityType: QuantityType = QuantityType(NONE)
 
     #: A String specifying the label to be used in the legend. The default value is the name of
     #: the XYData object.
