@@ -27,7 +27,7 @@ class ImageOptions:
         alignment: SymbolicConstant = CENTER,
         xScale: float = 1,
         yScale: float = 1,
-        origin: tuple[float] = (),
+        origin: tuple[float, ...] = (),
         translucency: float = 1,
         options: str = None,
     ):

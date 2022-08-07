@@ -33,7 +33,7 @@ class Text(Annotation):
 
     #: A pair of Floats specifying the **X**- and **Y**-offsets in millimeters of the Text object
     #: from **anchor**. The default value is (0, 0).
-    offset: tuple[float] = ()
+    offset: tuple[float, ...] = ()
 
     #: A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
     #: specifies the **X**- and **Y** coordinates as percentages of the viewport width and height.
@@ -104,7 +104,7 @@ class Text(Annotation):
         self,
         name: str,
         text: str = "",
-        offset: tuple[float] = (),
+        offset: tuple[float, ...] = (),
         anchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
         referencePoint: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
         rotationAngle: float = 0,
@@ -203,7 +203,7 @@ class Text(Annotation):
     def setValues(
         self,
         text: str = "",
-        offset: tuple[float] = (),
+        offset: tuple[float, ...] = (),
         anchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
         referencePoint: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
         rotationAngle: float = 0,

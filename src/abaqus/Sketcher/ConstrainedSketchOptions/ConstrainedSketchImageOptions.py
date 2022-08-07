@@ -19,7 +19,7 @@ class ConstrainedSketchImageOptions:
         self,
         imageName: str = "",
         showImage: Boolean = OFF,
-        origin: tuple[float] = (),
+        origin: tuple[float, ...] = (),
         xScale: float = 1,
         yScale: float = 1,
         translucency: float = 1,

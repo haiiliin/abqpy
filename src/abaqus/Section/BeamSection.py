@@ -146,11 +146,11 @@ class BeamSection(Section):
 
     #: A pair of Floats specifying the **X - Y** coordinates of the centroid. The default value is
     #: (0.0, 0.0).
-    centroid: tuple[float] = ()
+    centroid: tuple[float, ...] = ()
 
     #: A pair of Floats specifying the **X - Y** coordinates of the shear center. The default value
     #: is (0.0, 0.0).
-    shearCenter: tuple[float] = ()
+    shearCenter: tuple[float, ...] = ()
 
     #: A String specifying the name of the end profile. The type of the end profile must be
     #: same as that of the start profile. This argument is valid only when **beamShape** = TAPERED.
@@ -185,8 +185,8 @@ class BeamSection(Section):
         material: str = "",
         table: tuple = (),
         outputPts: tuple = (),
-        centroid: tuple[float] = (),
-        shearCenter: tuple[float] = (),
+        centroid: tuple[float, ...] = (),
+        shearCenter: tuple[float, ...] = (),
         profileEnd: str = "",
     ):
         """This method creates a BeamSection object.
@@ -321,8 +321,8 @@ class BeamSection(Section):
         material: str = "",
         table: tuple = (),
         outputPts: tuple = (),
-        centroid: tuple[float] = (),
-        shearCenter: tuple[float] = (),
+        centroid: tuple[float, ...] = (),
+        shearCenter: tuple[float, ...] = (),
         profileEnd: str = "",
     ):
         """This method modifies the BeamSection object.

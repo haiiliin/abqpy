@@ -9,7 +9,7 @@ class RadialDimension(ConstrainedSketchDimension):
     def __init__(
         self,
         curve: ConstrainedSketchGeometry,
-        textPoint: tuple[float],
+        textPoint: tuple[float, ...],
         value: float = None,
         reference: Boolean = OFF,
         majorRadius: float = None,
