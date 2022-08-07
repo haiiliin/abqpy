@@ -120,7 +120,7 @@ class AxisData:
 
     #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the quantity type: i.e. the physical dimension and
     #: associated label of the data represented by this axis.
-    quantityType: QuantityType = QuantityType()
+    quantityType: QuantityType = QuantityType(NONE)
 
     #: A tuple of Floats specifying the read-only major tick values shown.
     tickValues: float = None
