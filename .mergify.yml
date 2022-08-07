@@ -11,6 +11,8 @@ pull_request_rules:
           - V2022
         assignees:
           - "{{ author }}"
+        labels:
+          - backport
 
   - name: Backport to V2021
     conditions:
@@ -24,6 +26,8 @@ pull_request_rules:
           - V2021
         assignees:
           - "{{ author }}"
+        labels:
+          - backport
 
   - name: Backport to V2020
     conditions:
@@ -37,6 +41,9 @@ pull_request_rules:
           - V2020
         assignees:
           - "{{ author }}"
+        labels:
+          - backport
+
   - name: Backport to V2019
     conditions:
       - or:
@@ -49,6 +56,8 @@ pull_request_rules:
           - V2019
         assignees:
           - "{{ author }}"
+        labels:
+          - backport
 
   - name: Backport to V2018
     conditions:
@@ -62,6 +71,9 @@ pull_request_rules:
           - V2018
         assignees:
           - "{{ author }}"
+        labels:
+          - backport
+
   - name: Backport to V2017
     conditions:
       - or:
@@ -74,6 +86,8 @@ pull_request_rules:
           - V2017
         assignees:
           - "{{ author }}"
+        labels:
+          - backport
 
   - name: Backport to V2016
     conditions:
@@ -87,3 +101,5 @@ pull_request_rules:
           - V2016
         assignees:
           - "{{ author }}"
+        labels:
+          - backport
