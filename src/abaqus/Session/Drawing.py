@@ -346,6 +346,7 @@ class Drawing:
         translucency: float = 1,
         lineSize: float = 0,
         pointSize: float = 0,
+        depthTest: Boolean = ON,
     ):
         """This method modifies the rendering of the Drawing object.
 
@@ -391,6 +392,10 @@ class Drawing:
             point. The default value is 0.0.A value of 0.0 will be one pixel on the output device.
             One pixel on the screen is generally visible but one pixel on a 1200 DPI printer may not
             be clear.
+        depthTest
+            A Boolean specifying whether an object's depth will be considered during rendering. The
+            default value is ON.When OFF, the object will not be hidden by other objects in front of
+            it.
 
         Raises
         ------
