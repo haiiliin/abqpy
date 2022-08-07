@@ -394,6 +394,7 @@ class LoadModel(ModelBase):
         datumAxis: DatumAxis,
         boltMethod: SymbolicConstant = APPLY_FORCE,
         amplitude: str = UNSET,
+        preTenSecPartLevel: Boolean = False,
     ) -> BoltLoad:
         """This method creates a BoltLoad object.
 
@@ -426,6 +427,11 @@ class LoadModel(ModelBase):
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
             UNSET should be used if the load has no amplitude reference. The default value is UNSET.
             You should provide the **amplitude** argument only if it is valid for the specified step.
+        preTenSecPartLevel
+            A Boolean specifying whether the pre-tension section is to be defined at the part level.
+            The default value is False. You should provide the **preTenSecPartLevel** argument only if
+            the selected region belongs to a dependent part instance. A pre-tension section cannot
+            be defined at the part level for independent and model instances.
 
         Returns
         -------
@@ -437,7 +443,7 @@ class LoadModel(ModelBase):
         TextError
         """
         self.loads[name] = load = BoltLoad(
-            name, createStepName, region, magnitude, datumAxis, boltMethod, amplitude
+            name, createStepName, region, magnitude, datumAxis, boltMethod, amplitude, preTenSecPartLevel
         )
         return load
 
