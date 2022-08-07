@@ -1,7 +1,9 @@
 # .github/release-drafter.yml
 
-name-template: 'V$RESOLVED_VERSION 🌈'
-tag-template: 'v$RESOLVED_VERSION'
+name-template: 'V$NEXT_PATCH_VERSION 🌈'
+tag-template: 'v$NEXT_PATCH_VERSION'
+filter-by-commitish: true
+commitish: V2019
 categories:
   - title: '🚨 Breaking changes'
     labels:
