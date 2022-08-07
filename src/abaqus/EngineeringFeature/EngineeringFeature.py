@@ -842,7 +842,6 @@ class EngineeringFeature(EngineeringFeatureBase):
         hasCrackFront: tuple = (),
         crackPlaneDist: tuple = (),
         crackFrontDist: tuple = (),
-        autoDetectValue: str = "",
     ) -> XFEMCrack:
         """This method creates a XFEMCrack object. Although the constructor is available both for
         parts and for the assembly, XFEMCrack objects are currently supported only under the
@@ -893,9 +892,6 @@ class EngineeringFeature(EngineeringFeatureBase):
         crackFrontDist
             A sequence of Floats specifying the values of the second signed distance function. This
             argument is used only by the input file reader.
-        autoDetectValue
-            An integer specifying the number of element layers around the crack location, to which
-            the crack domain is shrunk.
 
         Returns
         -------
@@ -914,6 +910,5 @@ class EngineeringFeature(EngineeringFeatureBase):
             hasCrackFront,
             crackPlaneDist,
             crackFrontDist,
-            autoDetectValue,
         )
         return xFEMCrack
