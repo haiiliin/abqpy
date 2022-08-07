@@ -24,11 +24,11 @@ class Arrow(Annotation):
 
     #: A pair of Floats specifying the start point **X**- and **Y**-offsets in millimeters from
     #: **startAnchor**. The default value is (0, 0).
-    startPoint: tuple[float] = ()
+    startPoint: tuple[float, ...] = ()
 
     #: A pair of Floats specifying the end point **X**- and **Y**-offsets in millimeters from
     #: **endAnchor**. The default value is (0, 0).
-    endPoint: tuple[float] = ()
+    endPoint: tuple[float, ...] = ()
 
     #: A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
     #: specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
@@ -121,8 +121,8 @@ class Arrow(Annotation):
     def __init__(
         self,
         name: str,
-        startPoint: tuple[float] = (),
-        endPoint: tuple[float] = (),
+        startPoint: tuple[float, ...] = (),
+        endPoint: tuple[float, ...] = (),
         startAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
         endAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
         startHeadStyle: SymbolicConstant = NONE,
@@ -270,8 +270,8 @@ class Arrow(Annotation):
 
     def setValues(
         self,
-        startPoint: tuple[float] = (),
-        endPoint: tuple[float] = (),
+        startPoint: tuple[float, ...] = (),
+        endPoint: tuple[float, ...] = (),
         startAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
         endAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
         startHeadStyle: SymbolicConstant = NONE,

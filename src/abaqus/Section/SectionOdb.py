@@ -127,8 +127,8 @@ class SectionOdb(OdbBase):
         material: str = "",
         table: tuple = (),
         outputPts: tuple = (),
-        centroid: tuple[float] = (),
-        shearCenter: tuple[float] = (),
+        centroid: tuple[float, ...] = (),
+        shearCenter: tuple[float, ...] = (),
         profileEnd: str = "",
     ) -> BeamSection:
         """This method creates a BeamSection object.
