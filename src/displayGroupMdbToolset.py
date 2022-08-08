@@ -1,4 +1,5 @@
 from abaqus.DisplayGroup.Leaf import Leaf
+from abaqus.DisplayGroup.LeafFromConstraintNames import LeafFromConstraintNames
 from abaqus.DisplayGroup.LeafFromDisplayGroup import LeafFromDisplayGroup
 from abaqus.DisplayGroup.LeafFromElementLabels import LeafFromElementLabels
 from abaqus.DisplayGroup.LeafFromElementSets import LeafFromElementSets
