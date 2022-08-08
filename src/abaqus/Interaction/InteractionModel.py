@@ -795,6 +795,7 @@ class InteractionModel(
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
         smoothingAssignments: SmoothingAssignment = None,
         surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
+        surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
         mainSecondaryAssignments: MainSecondaryAssignment = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
@@ -842,6 +843,9 @@ class InteractionModel(
         surfaceCrushTriggerAssignments
             A :py:class:`~abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment` object specifying the surface crush trigger assignments
             in the contact domain.
+        surfaceFrictionAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment` object specifying the surface friction assignments in the
+            contact domain.
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
