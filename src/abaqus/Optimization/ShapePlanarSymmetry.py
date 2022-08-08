@@ -34,6 +34,10 @@ class ShapePlanarSymmetry(GeometricRestriction):
     #: default value is None.
     csys: int = None
 
+    #: A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
+    #: restriction. The default value is TRUE.
+    allowNonSymmetricMesh: Boolean = TRUE
+
     #: A SymbolicConstant specifying the rule for determining the main node. Possible values
     #: are MAXIMUM and MINIMUM. The default value is MAXIMUM.
     mainPointDetermination: SymbolicConstant = MAXIMUM
@@ -59,6 +63,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
         name: str,
         clientDirection: tuple,
         region: Region,
+        allowNonSymmetricMesh: Boolean = TRUE,
         csys: int = None,
         mainPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
@@ -87,6 +92,9 @@ class ShapePlanarSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
+        allowNonSymmetricMesh
+            A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
+            restriction. The default value is TRUE.
         csys
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
