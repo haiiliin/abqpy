@@ -48,9 +48,14 @@ class ContactPropertyAssignment:
             to be defined.
         assignments
             A sequence of tuples specifying the properties assigned to each surface pair. Each tuple
-            contains three entries: A region object or the SymbolicConstant GLOBAL. A region object
-            or the SymbolicConstant GLOBAL.A String specifying a ContactProperty object associated
-            with this pair of  regions.
+            contains three entries:
+
+            - A region or a material object or the SymbolicConstant GLOBAL.
+            - A region or a material object or the SymbolicConstant SELF. When used with a ContactExp
+              object, this parameter can also be a string that references an Eulerian material
+              surface.
+            - A String specifying a ContactProperty object associated with this pair of
+              regions.
         """
         pass
 
