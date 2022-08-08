@@ -909,6 +909,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         clientDirection: tuple,
         region: Region,
+        allowNonSymmetricMesh: Boolean = TRUE,
         csys: int = None,
         mainPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
@@ -937,6 +938,9 @@ class OptimizationTask(OptimizationTaskBase):
             A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
+        allowNonSymmetricMesh
+            A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
+            restriction. The default value is TRUE.
         csys
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
@@ -966,6 +970,7 @@ class OptimizationTask(OptimizationTaskBase):
             name,
             clientDirection,
             region,
+            allowNonSymmetricMesh,
             csys,
             mainPointDetermination,
             presumeFeasibleRegionAtStart,
@@ -1045,6 +1050,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         clientDirection: tuple,
         region: Region,
+        allowNonSymmetricMesh: Boolean = TRUE,
         angle: float = 0,
         csys: int = None,
         mainPoint: str = None,
@@ -1076,6 +1082,9 @@ class OptimizationTask(OptimizationTaskBase):
             A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
+        allowNonSymmetricMesh
+            A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
+            restriction. The default value is TRUE.
         angle
             A Float specifying the segment size of the repeating pattern in degrees. If the **angle**
             value is 0, no repeating pattern is created. The default value is 0.0.
@@ -1116,6 +1125,7 @@ class OptimizationTask(OptimizationTaskBase):
             name,
             clientDirection,
             region,
+            allowNonSymmetricMesh,
             angle,
             csys,
             mainPoint,
