@@ -44,6 +44,10 @@ class TopologyTask(OptimizationTask):
     #: A String specifying the optimization task repository key.
     name: str
 
+    #: A Boolean specifying whether to use Abaqus to compute the design responses and their
+    #: sensitivities. The default value is True.
+    abaqusSensitivities: Boolean = True
+
     #: A SymbolicConstant specifying the optimization task algorithm. Possible values are
     #: GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
     #: GENERAL_OPTIMIZATION.
@@ -186,6 +190,7 @@ class TopologyTask(OptimizationTask):
     def __init__(
         self,
         name: str,
+        abaqusSensitivities: Boolean = True,
         algorithm: SymbolicConstant = GENERAL_OPTIMIZATION,
         densityMoveLimit: float = 0,
         densityUpdateStrategy: SymbolicConstant = NORMAL,
@@ -234,6 +239,9 @@ class TopologyTask(OptimizationTask):
         ----------
         name
             A String specifying the optimization task repository key.
+        abaqusSensitivities
+            A Boolean specifying whether to use Abaqus to compute the design responses and their
+            sensitivities. The default value is True.
         algorithm
             A SymbolicConstant specifying the optimization task algorithm. Possible values are
             GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
@@ -352,6 +360,7 @@ class TopologyTask(OptimizationTask):
 
     def setValues(
         self,
+        abaqusSensitivities: Boolean = True,
         algorithm: SymbolicConstant = GENERAL_OPTIMIZATION,
         densityMoveLimit: float = 0,
         densityUpdateStrategy: SymbolicConstant = NORMAL,
@@ -391,6 +400,9 @@ class TopologyTask(OptimizationTask):
 
         Parameters
         ----------
+        abaqusSensitivities
+            A Boolean specifying whether to use Abaqus to compute the design responses and their
+            sensitivities. The default value is True.
         algorithm
             A SymbolicConstant specifying the optimization task algorithm. Possible values are
             GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
