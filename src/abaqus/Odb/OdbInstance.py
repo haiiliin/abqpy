@@ -7,7 +7,7 @@ from .OdbSet import OdbSet
 
 
 class OdbInstance(OdbInstanceBase):
-    def OdbRigidBody(
+    def RigidBody(
         self,
         referenceNode: OdbSet,
         position: SymbolicConstant = INPUT,
