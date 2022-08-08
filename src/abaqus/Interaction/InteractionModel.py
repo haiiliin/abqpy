@@ -870,6 +870,7 @@ class InteractionModel(
             surfaceFeatureAssignments,
             smoothingAssignments,
             surfaceCrushTriggerAssignments,
+            surfaceFrictionAssignments,
             mainSecondaryAssignments,
             polarityAssignments,
         )
