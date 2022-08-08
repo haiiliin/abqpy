@@ -62,9 +62,9 @@ class SurfaceThicknessAssignment:
         assignments
             A sequence of tuples specifying the surface thickness assignments. Each tuple contains
             three entries:
-            
-            - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
-              thickness is assigned.
+
+            - A region or a material object or the SymbolicConstant GLOBAL specifying the surface to
+              which the thickness is assigned.
             - A Float or a SymbolicConstant specifying the overriding thickness value to be used in
               the contact definition. Possible values of the SymbolicConstant are ORIGINAL and
               THINNING. The SymbolicConstant THINNING can be specified only in an Abaqus/Explicit

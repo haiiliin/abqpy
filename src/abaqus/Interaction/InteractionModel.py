@@ -6,6 +6,11 @@ from .InteractionContactInitializationModel import InteractionContactInitializat
 from .InteractionContactStabilizationModel import InteractionContactStabilizationModel
 from .InteractionPropertyModel import InteractionPropertyModel
 from .PolarityAssignments import PolarityAssignments
+from .SlidingFormulationAssignment import SlidingFormulationAssignment
+from .SurfaceBeamSmoothingAssignment import SurfaceBeamSmoothingAssignment
+from .SurfaceCrushTriggerAssignment import SurfaceCrushTriggerAssignment
+from .SurfaceFrictionAssignment import SurfaceFrictionAssignment
+from .SurfaceVertexCriteriaAssignment import SurfaceVertexCriteriaAssignment
 from ..BasicGeometry.ModelDot import ModelDot
 from ..Datum.DatumAxis import DatumAxis
 from ..Interaction.AcousticImpedance import AcousticImpedance
@@ -791,7 +796,9 @@ class InteractionModel(
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
-        smoothingAssignments: SmoothingAssignment = None, 
+        smoothingAssignments: SmoothingAssignment = None,
+        surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
+        surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
         mainSecondaryAssignments: MainSecondaryAssignment = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
@@ -836,6 +843,12 @@ class InteractionModel(
         smoothingAssignments
             A :py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment` object specifying the surface smoothing assignments in the contact
             domain.
+        surfaceCrushTriggerAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment` object specifying the surface crush trigger assignments
+            in the contact domain.
+        surfaceFrictionAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment` object specifying the surface friction assignments in the
+            contact domain.
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
@@ -859,6 +872,8 @@ class InteractionModel(
             surfaceOffsetAssignments,
             surfaceFeatureAssignments,
             smoothingAssignments,
+            surfaceCrushTriggerAssignments,
+            surfaceFrictionAssignments,
             mainSecondaryAssignments,
             polarityAssignments,
         )
@@ -875,7 +890,10 @@ class InteractionModel(
         contactPropertyAssignments: ContactPropertyAssignment = None, 
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
+        surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
+        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
+        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
+        slidingFormulationAssignments: tuple[SlidingFormulationAssignment, ...] = None,
         mainSecondaryAssignments: MainSecondaryAssignment = None, 
         initializationAssignments: InitializationAssignment = None, 
         stabilizationAssignments: StabilizationAssignment = None, 
@@ -919,6 +937,20 @@ class InteractionModel(
         surfaceFeatureAssignments
             A :py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment` object specifying the surface feature angle assignments in
             the contact domain.
+        surfaceBeamSmoothingAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment` object specifying the surface beam smoothing
+            assignments in the contact domain.
+        surfaceVertexCriteriaAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment` object specifying the surface vertex criteria
+            assignments in the contact domain.
+        slidingFormulationAssignments
+            A sequence of tuples of :py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment` specifying the sliding formulation assignments. Each tuple contains
+            two entries:
+
+            - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
+              sliding formulation attribute is assigned.
+            - A SymbolicConstant specifying the overriding the smoothness value to be used for the
+              first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
@@ -951,6 +983,9 @@ class InteractionModel(
             surfaceThicknessAssignments,
             surfaceOffsetAssignments,
             surfaceFeatureAssignments,
+            surfaceBeamSmoothingAssignments,
+            surfaceVertexCriteriaAssignments,
+            slidingFormulationAssignments,
             mainSecondaryAssignments,
             initializationAssignments,
             stabilizationAssignments,

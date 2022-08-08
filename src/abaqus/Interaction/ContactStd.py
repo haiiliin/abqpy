@@ -6,12 +6,15 @@ from .InitializationAssignment import InitializationAssignment
 from .Interaction import Interaction
 from .MainSecondaryAssignment import MainSecondaryAssignment
 from .RegionPairs import RegionPairs
+from .SlidingFormulationAssignment import SlidingFormulationAssignment
 from .SlidingTransitionAssignment import SlidingTransitionAssignment
 from .SmoothingAssignment import SmoothingAssignment
 from .StabilizationAssignment import StabilizationAssignment
+from .SurfaceBeamSmoothingAssignment import SurfaceBeamSmoothingAssignment
 from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
 from .SurfaceOffsetAssignment import SurfaceOffsetAssignment
 from .SurfaceThicknessAssignment import SurfaceThicknessAssignment
+from .SurfaceVertexCriteriaAssignment import SurfaceVertexCriteriaAssignment
 
 
 class ContactStd(Interaction):
@@ -104,7 +107,10 @@ class ContactStd(Interaction):
         contactPropertyAssignments: ContactPropertyAssignment = None, 
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
+        surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
+        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
+        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
+        slidingFormulationAssignments: tuple[SlidingFormulationAssignment, ...] = None,
         mainSecondaryAssignments: MainSecondaryAssignment = None, 
         initializationAssignments: InitializationAssignment = None, 
         stabilizationAssignments: StabilizationAssignment = None, 
@@ -148,6 +154,20 @@ class ContactStd(Interaction):
         surfaceFeatureAssignments
             A :py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment` object specifying the surface feature angle assignments in
             the contact domain.
+        surfaceBeamSmoothingAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment` object specifying the surface beam smoothing
+            assignments in the contact domain.
+        surfaceVertexCriteriaAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment` object specifying the surface vertex criteria
+            assignments in the contact domain.
+        slidingFormulationAssignments
+            A sequence of tuples of :py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment` specifying the sliding formulation assignments. Each tuple contains
+            two entries:
+
+            - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
+              sliding formulation attribute is assigned.
+            - A SymbolicConstant specifying the overriding the smoothness value to be used for the
+              first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
@@ -178,6 +198,9 @@ class ContactStd(Interaction):
         name: str,
         createStepName: str,
         globalSmoothing: Boolean = ON,
+        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
+        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
+        slidingFormulationAssignments: tuple[SlidingFormulationAssignment, ...] = None,
         useAllstar: Boolean = OFF,
         includedPairs: SymbolicConstant = None,
         excludedPairs: SymbolicConstant = None,
@@ -209,6 +232,20 @@ class ContactStd(Interaction):
         globalSmoothing
             A Boolean specifying whether surface smoothing (geometric correction) is automatically
             applied to all eligible surfaces. The default value is ON.
+        surfaceBeamSmoothingAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment` object specifying the surface beam smoothing
+            assignments in the contact domain.
+        surfaceVertexCriteriaAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment` object specifying the surface vertex criteria
+            assignments in the contact domain.
+        slidingFormulationAssignments
+            A sequence of tuples of :py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment` specifying the sliding formulation assignments. Each tuple contains
+            two entries:
+
+            - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
+              sliding formulation attribute is assigned.
+            - A SymbolicConstant specifying the overriding the smoothness value to be used for the
+              first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
         useAllstar
             A Boolean specifying whether the contacting surface pairs consist of all exterior faces
             in the model.

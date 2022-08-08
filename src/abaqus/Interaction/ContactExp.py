@@ -7,7 +7,9 @@ from .MainSecondaryAssignment import MainSecondaryAssignment
 from .PolarityAssignments import PolarityAssignments
 from .RegionPairs import RegionPairs
 from .SmoothingAssignment import SmoothingAssignment
+from .SurfaceCrushTriggerAssignment import SurfaceCrushTriggerAssignment
 from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
+from .SurfaceFrictionAssignment import SurfaceFrictionAssignment
 from .SurfaceOffsetAssignment import SurfaceOffsetAssignment
 from .SurfaceThicknessAssignment import SurfaceThicknessAssignment
 
@@ -85,7 +87,9 @@ class ContactExp(Interaction):
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
-        smoothingAssignments: SmoothingAssignment = None, 
+        smoothingAssignments: SmoothingAssignment = None,
+        surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
+        surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
         mainSecondaryAssignments: MainSecondaryAssignment = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
@@ -130,6 +134,12 @@ class ContactExp(Interaction):
         smoothingAssignments
             A :py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment` object specifying the surface smoothing assignments in the contact
             domain.
+        surfaceCrushTriggerAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment` object specifying the surface crush trigger assignments
+            in the contact domain.
+        surfaceFrictionAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment` object specifying the surface friction assignments in the
+            contact domain.
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
@@ -150,6 +160,8 @@ class ContactExp(Interaction):
         name: str,
         createStepName: str,
         globalSmoothing: Boolean = ON,
+        surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
+        surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
         useAllstar: Boolean = OFF,
         includedPairs: SymbolicConstant = None,
         excludedPairs: SymbolicConstant = None,
@@ -179,6 +191,12 @@ class ContactExp(Interaction):
         globalSmoothing
             A Boolean specifying whether surface smoothing (geometric correction) is automatically
             applied to all eligible surfaces. The default value is ON.
+        surfaceCrushTriggerAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment` object specifying the surface crush trigger assignments
+            in the contact domain.
+        surfaceFrictionAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment` object specifying the surface friction assignments in the
+            contact domain.
         useAllstar
             A Boolean specifying whether the contacting surface pair consists of all exterior faces,
             shell edges, beam segments, analytical rigid surfaces, and, when applicable, Eulerian
