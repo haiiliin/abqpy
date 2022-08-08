@@ -38,6 +38,10 @@ class BeadTask(OptimizationTask):
     #: A String specifying the optimization task repository key.
     name: str
 
+    #: A Boolean specifying whether to use Abaqus to compute the design responses and their
+    #: sensitivities. The default value is False.
+    abaqusSensitivities: Boolean = False
+
     #: A SymbolicConstant specifying the optimization task algorithm. Possible values are
     #: GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
     #: GENERAL_OPTIMIZATION.
@@ -123,6 +127,7 @@ class BeadTask(OptimizationTask):
     def __init__(
         self,
         name: str,
+        abaqusSensitivities: Boolean = True,
         algorithm: SymbolicConstant = GENERAL_OPTIMIZATION,
         areBCRegionsFrozen: Boolean = OFF,
         beadIter: str = 1,
@@ -157,6 +162,9 @@ class BeadTask(OptimizationTask):
         ----------
         name
             A String specifying the optimization task repository key.
+        abaqusSensitivities
+            A Boolean specifying whether to use Abaqus to compute the design responses and their
+            sensitivities. The default value is True.
         algorithm
             A SymbolicConstant specifying the optimization task algorithm. Possible values are
             GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is

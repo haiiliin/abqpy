@@ -42,6 +42,10 @@ class SizingTask(OptimizationTask):
     #: A String specifying the optimization task repository key.
     name: str
 
+    #: A Boolean specifying whether to use Abaqus to compute the design responses and their
+    #: sensitivities. The default value is False.
+    abaqusSensitivities: Boolean = False
+
     #: A Float specifying the stop criteria based on the change in element thickness. The
     #: default value is 0.5 × 10-2.
     elementThicknessDeltaStopCriteria: float = 0
@@ -89,6 +93,7 @@ class SizingTask(OptimizationTask):
     def __init__(
         self,
         name: str,
+        abaqusSensitivities: Boolean = True,
         elementThicknessDeltaStopCriteria: float = 0,
         freezeBoundaryConditionRegions: Boolean = OFF,
         freezeLoadRegions: Boolean = ON,
@@ -114,6 +119,9 @@ class SizingTask(OptimizationTask):
         ----------
         name
             A String specifying the optimization task repository key.
+        abaqusSensitivities
+            A Boolean specifying whether to use Abaqus to compute the design responses and their
+            sensitivities. The default value is True.
         elementThicknessDeltaStopCriteria
             A Float specifying the stop criteria based on the change in element thickness. The
             default value is 0.5 × 10-2.
