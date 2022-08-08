@@ -1532,6 +1532,7 @@ class BoundaryConditionModel(ModelBase):
         localCsys: str = None,
         globalIncrement: int = 0,
         centerZoneSize: float = None,
+        intersectionOnly: Boolean = OFF,
     ) -> SubmodelBC:
         """This method creates a SubmodelBC object.
 
@@ -1588,6 +1589,10 @@ class BoundaryConditionModel(ModelBase):
         centerZoneSize
             A Float specifying the thickness of the center zone size around the shell midsurface.
             The default value is None.
+        intersectionOnly
+            A Boolean specifying whether to ignore driven nodes that lie outside the region of
+            elements of the global model after accounting for the exterior search tolerance. The
+            default value is OFF.
 
         Returns
         -------
@@ -1608,6 +1613,7 @@ class BoundaryConditionModel(ModelBase):
             localCsys,
             globalIncrement,
             centerZoneSize,
+            intersectionOnly,
         )
         self.steps[createStepName].boundaryConditionStates[name] = SubmodelBCState()
         return boundaryCondition
