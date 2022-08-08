@@ -4,6 +4,7 @@ from abaqusConstants import *
 from .ContactPropertyAssignment import ContactPropertyAssignment
 from .Interaction import Interaction
 from .MainSecondaryAssignment import MainSecondaryAssignment
+from .PolarityAssignments import PolarityAssignments
 from .RegionPairs import RegionPairs
 from .SmoothingAssignment import SmoothingAssignment
 from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
@@ -68,6 +69,9 @@ class ContactExp(Interaction):
     #: contact domain.
     mainSecondaryAssignments: MainSecondaryAssignment = MainSecondaryAssignment()
 
+    #: A PolarityAssignments object specifying the polarity assignments in the contact domain.
+    polarityAssignments: PolarityAssignments = PolarityAssignments()
+
     @typing.overload
     def __init__(
         self,
@@ -82,7 +86,8 @@ class ContactExp(Interaction):
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
         smoothingAssignments: SmoothingAssignment = None, 
-        mainSecondaryAssignments: MainSecondaryAssignment = None, 
+        mainSecondaryAssignments: MainSecondaryAssignment = None,
+        polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
 
@@ -128,6 +133,8 @@ class ContactExp(Interaction):
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
+        polarityAssignments
+            A PolarityAssignments object specifying the polarity assignments in the contact domain.
 
         Returns
         -------
@@ -152,6 +159,7 @@ class ContactExp(Interaction):
         surfaceFeatureAssignments: typing.Union[SymbolicConstant, float] = PERIMETER,
         smoothingAssignments: SymbolicConstant = None,
         mainSecondaryAssignments: SymbolicConstant = None,
+        polarityAssignments: SymbolicConstant = None,
     ):
         """This method creates a ContactExp object.
 
@@ -231,6 +239,14 @@ class ContactExp(Interaction):
               definition.
             - A SymbolicConstant specifying the status of the first surface. Possible values are
               MAIN and SECONDARY.
+        polarityAssignments
+            A sequence of tuples specifying polarity assignments in the contact domain. Each tuple
+            contains three entries:
+            - A region object or the SymbolicConstant GLOBAL specifying the first surface that
+            defines the polarity assignment.
+            - A region object specifying the second surface in the polarity assignment definition.
+            - A SymbolicConstant specifying the polarity of the second surface. Possible values are
+            SPOS, SNEG, and TWO_SIDED.
 
         Returns
         -------
