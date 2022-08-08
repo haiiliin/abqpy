@@ -127,9 +127,6 @@ class StepBase:
         str, PredefinedFieldState
     ]()
 
-    #: A repository of ActivateElements objects.
-    activateElements: dict[str, ActivateElements] = dict[str, ActivateElements]()
-
     def resume(self):
         """This method resumes the step that was previously suppressed."""
         pass
