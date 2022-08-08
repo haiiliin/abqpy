@@ -605,8 +605,6 @@ class XYData(tuple):
         deformedMag: float = None,
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
-        projectOntoMesh: Boolean = False,
-        projectionTolerance: float = 0,
     ):
         """This method creates an XYData object from path information.
 
@@ -679,12 +677,6 @@ class XYData(tuple):
         complexAngle
             A Float specifying the angle (in degrees) at which to display results that contain
             complex numbers when **numericForm** = COMPLEX_VAL_AT_ANGLE. The default value is 0.
-        projectOntoMesh
-            A Boolean to specify whether to consider the data points that do not lie on or inside
-            the mesh. The default value is False.
-        projectionTolerance
-            A Float specifying the tolerance value for the projected distance considered for the
-            data extraction when **projectOntoMesh** =  True. The default value is 0.
 
         Returns
         -------
