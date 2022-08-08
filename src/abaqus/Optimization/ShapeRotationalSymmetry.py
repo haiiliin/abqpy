@@ -142,7 +142,6 @@ class ShapeRotationalSymmetry(GeometricRestriction):
 
     def setValues(
         self,
-        allowNonSymmetricMesh: Boolean = TRUE,
         angle: float = 0,
         csys: int = None,
         mainPoint: str = None,
@@ -157,9 +156,6 @@ class ShapeRotationalSymmetry(GeometricRestriction):
 
         Parameters
         ----------
-        allowNonSymmetricMesh
-            A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
-            restriction. The default value is TRUE.
         angle
             A Float specifying the segment size of the repeating pattern in degrees. If the **angle**
             value is 0, no repeating pattern is created. The default value is 0.0.
