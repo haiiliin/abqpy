@@ -238,7 +238,7 @@ class OdbAssembly(OdbAssemblyBase):
         self.instances[name] = odbInstance = OdbInstance(name, object, localCoordSystem)
         return odbInstance
 
-    def OdbRigidBody(
+    def RigidBody(
         self,
         referenceNode: OdbSet,
         position: SymbolicConstant = INPUT,
