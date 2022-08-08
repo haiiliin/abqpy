@@ -165,8 +165,6 @@ class ElemType:
         viscosity: float = 0,
         linearBulkViscosity: float = 1,
         quadraticBulkViscosity: float = 1,
-        linearKinematicCtrl: float = None,
-        initialGapOpening: float = None,
     ):
         """This method creates an ElemType object.
 
@@ -275,12 +273,6 @@ class ElemType:
         quadraticBulkViscosity
             A Float specifying the quadratic bulk viscosity scaling factor option for
             Abaqus/Explicit. The default value is 1.0.
-        linearKinematicCtrl
-            A Float specifying the linear kinematic conversion value.This argument is applicable
-            only to some Abaqus/Explicit elements.
-        initialGapOpening
-            A Float specifying the initial gap opening.This parameter is applicable only to some
-            Abaqus/Standard elements.
 
         Returns
         -------
