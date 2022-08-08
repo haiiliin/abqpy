@@ -347,7 +347,6 @@ class OdbInstanceBase:
         elset: str = "",
         pinNodes: str = "",
         tieNodes: str = "",
-        analyticSurface: str = "",
     ):
         """This method defines an OdbRigidBody on the instance.
 
@@ -367,8 +366,6 @@ class OdbInstanceBase:
             An OdbSet specifying pin-type nodes assigned to the rigid body.
         tieNodes
             An OdbSet specifying tie-type nodes assigned to the rigid body.
-        analyticSurface
-            An AnalyticSurface specifying the Analytic Rigid Surface assigned to the rigid body.
 
         Raises
         ------
