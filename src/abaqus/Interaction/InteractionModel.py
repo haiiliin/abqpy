@@ -1961,6 +1961,8 @@ class InteractionModel(
         clearanceRegion: Region = None,
         surfaceSmoothing: SymbolicConstant = NONE,
         bondingSet: Region = None,
+        handedness: SymbolicConstant = RIGHT,
+        normalAdjustment: SymbolicConstant = None,
     ) -> SurfaceToSurfaceContactStd:
         """This method creates a SurfaceToSurfaceContactStd object.
 
@@ -2079,6 +2081,13 @@ class InteractionModel(
         bondingSet
             A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary node sub-set for bonding, used only when the
             contact property CohesiveBehavior option specifies use.
+        handedness
+            A SymbolicConstant specifying the bolt handedness formulation. Possible values are RIGHT
+            and LEFT. The default value is RIGHT.
+        normalAdjustment
+            A SymbolicConstant specifying the bolt normal adjustment formulation for all secondary
+            nodes. Possible values are UNIFORM AXIAL COMPONENT and LOCATION DEPENDENT. The default
+            value is UNIFORM AXIAL COMPONENT.
 
         Returns
         -------
@@ -2117,6 +2126,8 @@ class InteractionModel(
             clearanceRegion,
             surfaceSmoothing,
             bondingSet,
+            handedness,
+            normalAdjustment,
         )
         return interaction
 
