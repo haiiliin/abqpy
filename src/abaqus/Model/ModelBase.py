@@ -1,5 +1,4 @@
 from abaqusConstants import *
-
 from .KeywordBlock import KeywordBlock
 from ..Adaptivity.AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from ..Adaptivity.AdaptiveMeshControl import AdaptiveMeshControl
@@ -32,6 +31,9 @@ from ..StepOutput.FieldOutputRequest import FieldOutputRequest
 from ..StepOutput.HistoryOutputRequest import HistoryOutputRequest
 from ..StepOutput.IntegratedOutputSection import IntegratedOutputSection
 from ..StepOutput.TimePoint import TimePoint
+from ..TableCollection.EventSeriesData import EventSeriesData
+from ..TableCollection.EventSeriesType import EventSeriesType
+from ..TableCollection.TableCollection import TableCollection
 
 
 class ModelBase:
@@ -221,6 +223,15 @@ class ModelBase:
 
     #: A repository of OptimizationTask objects.
     optimizationTasks: dict[str, OptimizationTask] = dict[str, OptimizationTask]()
+
+    #: A repository of TableCollection objects.
+    tableCollections: dict[str, TableCollection] = dict[str, TableCollection]()
+
+    #: A repository of EventSeriesType objects.
+    eventSeriesTypes: dict[str, EventSeriesType] = dict[str, EventSeriesType]()
+
+    #: A repository of EventSeriesData objects.
+    eventSeriesDatas: dict[str, EventSeriesData] = dict[str, EventSeriesData]()
 
     def __init__(
         self,
