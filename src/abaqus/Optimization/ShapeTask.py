@@ -42,6 +42,10 @@ class ShapeTask(OptimizationTask):
     #: A String specifying the optimization task repository key.
     name: str
 
+    #: A Boolean specifying whether to use Abaqus to compute the design responses and their
+    #: sensitivities. The default value is False.
+    abaqusSensitivities: Boolean = False
+
     #: A SymbolicConstant specifying whether to control the permitted absolute step size by the
     #: average optimization displacement or minimum optimization displacement. Possible values
     #: are MINIMUM and AVERAGE. The default value is MINIMUM.
@@ -230,6 +234,7 @@ class ShapeTask(OptimizationTask):
     def __init__(
         self,
         name: str,
+        abaqusSensitivities: Boolean = True,
         absoluteStepSizeControl: SymbolicConstant = MINIMUM,
         activateDurability: Boolean = ON,
         additionalDurabilityFiles: str = "",
@@ -287,6 +292,9 @@ class ShapeTask(OptimizationTask):
         ----------
         name
             A String specifying the optimization task repository key.
+        abaqusSensitivities
+            A Boolean specifying whether to use Abaqus to compute the design responses and their
+            sensitivities. The default value is True.
         absoluteStepSizeControl
             A SymbolicConstant specifying whether to control the permitted absolute step size by the
             average optimization displacement or minimum optimization displacement. Possible values

@@ -164,7 +164,7 @@ class TopologyTask(OptimizationTask):
 
     #: The SymbolicConstant AVERAGE_EDGE_LENGTH or a Float specifying the stiffness mass
     #: damping for the task region. The default value is AVERAGE_EDGE_LENGTH.
-    stiffnessMassDamping: typing.Union[             SymbolicConstant, float         ] = AVERAGE_EDGE_LENGTH
+    stiffnessMassDamping: typing.Union[SymbolicConstant, float] = AVERAGE_EDGE_LENGTH
 
     #: An Int specifying the first design cycle used to evaluate convergence criteria. The
     #: default value is 4.
