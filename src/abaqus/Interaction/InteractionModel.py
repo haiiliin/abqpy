@@ -6,6 +6,8 @@ from .InteractionContactInitializationModel import InteractionContactInitializat
 from .InteractionContactStabilizationModel import InteractionContactStabilizationModel
 from .InteractionPropertyModel import InteractionPropertyModel
 from .PolarityAssignments import PolarityAssignments
+from .SurfaceCrushTriggerAssignment import SurfaceCrushTriggerAssignment
+from .SurfaceFrictionAssignment import SurfaceFrictionAssignment
 from ..BasicGeometry.ModelDot import ModelDot
 from ..Datum.DatumAxis import DatumAxis
 from ..Interaction.AcousticImpedance import AcousticImpedance
@@ -791,7 +793,8 @@ class InteractionModel(
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
-        smoothingAssignments: SmoothingAssignment = None, 
+        smoothingAssignments: SmoothingAssignment = None,
+        surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
         mainSecondaryAssignments: MainSecondaryAssignment = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
@@ -836,6 +839,9 @@ class InteractionModel(
         smoothingAssignments
             A :py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment` object specifying the surface smoothing assignments in the contact
             domain.
+        surfaceCrushTriggerAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment` object specifying the surface crush trigger assignments
+            in the contact domain.
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
@@ -859,6 +865,7 @@ class InteractionModel(
             surfaceOffsetAssignments,
             surfaceFeatureAssignments,
             smoothingAssignments,
+            surfaceCrushTriggerAssignments,
             mainSecondaryAssignments,
             polarityAssignments,
         )
