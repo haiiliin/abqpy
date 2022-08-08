@@ -44,10 +44,6 @@ class TopologyTask(OptimizationTask):
     #: A String specifying the optimization task repository key.
     name: str
 
-    #: A Boolean specifying whether to use Abaqus to compute the design responses and their
-    #: sensitivities. The default value is False.
-    abaqusSensitivities: Boolean = False
-
     #: A SymbolicConstant specifying the optimization task algorithm. Possible values are
     #: GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
     #: GENERAL_OPTIMIZATION.
@@ -164,7 +160,7 @@ class TopologyTask(OptimizationTask):
 
     #: The SymbolicConstant AVERAGE_EDGE_LENGTH or a Float specifying the stiffness mass
     #: damping for the task region. The default value is AVERAGE_EDGE_LENGTH.
-    stiffnessMassDamping: typing.Union[             SymbolicConstant, float         ] = AVERAGE_EDGE_LENGTH
+    stiffnessMassDamping: typing.Union[SymbolicConstant, float] = AVERAGE_EDGE_LENGTH
 
     #: An Int specifying the first design cycle used to evaluate convergence criteria. The
     #: default value is 4.
@@ -190,7 +186,6 @@ class TopologyTask(OptimizationTask):
     def __init__(
         self,
         name: str,
-        abaqusSensitivities: Boolean = False,
         algorithm: SymbolicConstant = GENERAL_OPTIMIZATION,
         densityMoveLimit: float = 0,
         densityUpdateStrategy: SymbolicConstant = NORMAL,
@@ -239,9 +234,6 @@ class TopologyTask(OptimizationTask):
         ----------
         name
             A String specifying the optimization task repository key.
-        abaqusSensitivities
-            A Boolean specifying whether to use Abaqus to compute the design responses and their
-            sensitivities. The default value is False.
         algorithm
             A SymbolicConstant specifying the optimization task algorithm. Possible values are
             GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
@@ -360,7 +352,6 @@ class TopologyTask(OptimizationTask):
 
     def setValues(
         self,
-        abaqusSensitivities: Boolean = True,
         algorithm: SymbolicConstant = GENERAL_OPTIMIZATION,
         densityMoveLimit: float = 0,
         densityUpdateStrategy: SymbolicConstant = NORMAL,
@@ -400,9 +391,6 @@ class TopologyTask(OptimizationTask):
 
         Parameters
         ----------
-        abaqusSensitivities
-            A Boolean specifying whether to use Abaqus to compute the design responses and their
-            sensitivities. The default value is True.
         algorithm
             A SymbolicConstant specifying the optimization task algorithm. Possible values are
             GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
