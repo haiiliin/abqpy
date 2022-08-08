@@ -165,6 +165,8 @@ class ElemType:
         viscosity: float = 0,
         linearBulkViscosity: float = 1,
         quadraticBulkViscosity: float = 1,
+        numFourierModes: int = 1,
+        nodeOffset: int = None,
     ):
         """This method creates an ElemType object.
 
@@ -273,6 +275,14 @@ class ElemType:
         quadraticBulkViscosity
             A Float specifying the quadratic bulk viscosity scaling factor option for
             Abaqus/Explicit. The default value is 1.0.
+        numFourierModes
+            An Int specifying the number of Fourier modes. Possible values are 1, 2, 3, and 4. The
+            default value is 1.This argument is applicable only for axisymmetric elements with
+            nonlinear asymmetric deformation.
+        nodeOffset
+            An Int specifying the positive offset number for specifying the additional nodes needed
+            in the connectivity.This argument is applicable only for axisymmetric elements with
+            nonlinear asymmetric deformation.
 
         Returns
         -------
