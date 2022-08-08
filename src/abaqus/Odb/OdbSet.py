@@ -47,6 +47,12 @@ class OdbSet:
     #: part instance, this member is a sequence of sequences for each part instance.
     faces: SymbolicConstant = None
 
+    #: A repository of an OdbInstance object.
+    instances: str = ""
+
+    #: A Boolean specifying whether the set is internal.
+    isInternal: Boolean = OFF
+
     def __init__(self, name: str, nodes: tuple[OdbMeshNode]):
         """This method creates a node set from an array of OdbMeshNode objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
