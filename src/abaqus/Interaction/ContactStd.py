@@ -9,6 +9,7 @@ from .RegionPairs import RegionPairs
 from .SlidingTransitionAssignment import SlidingTransitionAssignment
 from .SmoothingAssignment import SmoothingAssignment
 from .StabilizationAssignment import StabilizationAssignment
+from .SurfaceBeamSmoothingAssignment import SurfaceBeamSmoothingAssignment
 from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
 from .SurfaceOffsetAssignment import SurfaceOffsetAssignment
 from .SurfaceThicknessAssignment import SurfaceThicknessAssignment
@@ -104,7 +105,8 @@ class ContactStd(Interaction):
         contactPropertyAssignments: ContactPropertyAssignment = None, 
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
+        surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
+        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         mainSecondaryAssignments: MainSecondaryAssignment = None, 
         initializationAssignments: InitializationAssignment = None, 
         stabilizationAssignments: StabilizationAssignment = None, 
@@ -148,6 +150,9 @@ class ContactStd(Interaction):
         surfaceFeatureAssignments
             A :py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment` object specifying the surface feature angle assignments in
             the contact domain.
+        surfaceBeamSmoothingAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment` object specifying the surface beam smoothing
+            assignments in the contact domain.
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
@@ -178,6 +183,7 @@ class ContactStd(Interaction):
         name: str,
         createStepName: str,
         globalSmoothing: Boolean = ON,
+        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         useAllstar: Boolean = OFF,
         includedPairs: SymbolicConstant = None,
         excludedPairs: SymbolicConstant = None,
@@ -209,6 +215,9 @@ class ContactStd(Interaction):
         globalSmoothing
             A Boolean specifying whether surface smoothing (geometric correction) is automatically
             applied to all eligible surfaces. The default value is ON.
+        surfaceBeamSmoothingAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment` object specifying the surface beam smoothing
+            assignments in the contact domain.
         useAllstar
             A Boolean specifying whether the contacting surface pairs consist of all exterior faces
             in the model.

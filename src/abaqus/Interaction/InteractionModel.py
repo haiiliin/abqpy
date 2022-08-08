@@ -6,6 +6,7 @@ from .InteractionContactInitializationModel import InteractionContactInitializat
 from .InteractionContactStabilizationModel import InteractionContactStabilizationModel
 from .InteractionPropertyModel import InteractionPropertyModel
 from .PolarityAssignments import PolarityAssignments
+from .SurfaceBeamSmoothingAssignment import SurfaceBeamSmoothingAssignment
 from .SurfaceCrushTriggerAssignment import SurfaceCrushTriggerAssignment
 from .SurfaceFrictionAssignment import SurfaceFrictionAssignment
 from ..BasicGeometry.ModelDot import ModelDot
@@ -887,7 +888,8 @@ class InteractionModel(
         contactPropertyAssignments: ContactPropertyAssignment = None, 
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
+        surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
+        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         mainSecondaryAssignments: MainSecondaryAssignment = None, 
         initializationAssignments: InitializationAssignment = None, 
         stabilizationAssignments: StabilizationAssignment = None, 
@@ -931,6 +933,9 @@ class InteractionModel(
         surfaceFeatureAssignments
             A :py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment` object specifying the surface feature angle assignments in
             the contact domain.
+        surfaceBeamSmoothingAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment` object specifying the surface beam smoothing
+            assignments in the contact domain.
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
@@ -963,6 +968,7 @@ class InteractionModel(
             surfaceThicknessAssignments,
             surfaceOffsetAssignments,
             surfaceFeatureAssignments,
+            surfaceBeamSmoothingAssignments,
             mainSecondaryAssignments,
             initializationAssignments,
             stabilizationAssignments,
