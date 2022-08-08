@@ -1018,6 +1018,14 @@ Swelling
 
     .. autoclasstoc::
 
+TensileFailure
+**************
+
+.. autoclass:: abaqus.Material.Plastic.TensileFailure.TensileFailure
+    :members:
+
+    .. autoclasstoc::
+
 ProgressiveDamageFailure
 ~~~~~~~~~~~~~~~~~~~~~~~~
 

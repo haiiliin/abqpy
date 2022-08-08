@@ -5,6 +5,7 @@ from .Metal.Cyclic.CyclicHardening import CyclicHardening
 from .Metal.ORNL.Ornl import Ornl
 from .Metal.RateDependent.RateDependent import RateDependent
 from .Potential import Potential
+from .TensileFailure import TensileFailure
 
 
 class Plastic:
@@ -91,6 +92,9 @@ class Plastic:
 
     #: An :py:class:`~abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature` object.
     annealTemperature: AnnealTemperature = AnnealTemperature(((),))
+
+    #: A :py:class:`~abaqus.Material.Plastic.TensileFailure.TensileFailure` object.
+    tensileFailure: TensileFailure = TensileFailure()
 
     def __init__(
         self,
