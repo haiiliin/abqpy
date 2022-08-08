@@ -167,7 +167,3 @@ class Job:
         immediately.
         """
         pass
-
-    def clearMessage(self):
-        """This method clears **messages** and sets the **status** to NONE."""
-        pass
