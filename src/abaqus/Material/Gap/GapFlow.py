@@ -5,54 +5,52 @@ class GapFlow:
     """The GapFlow object specifies tangential flow constitutive parameters for pore pressure
     cohesive elements.
 
-    .. note:: 
-        This object can be accessed by:
+    Notes
+    -----
+    This object can be accessed by:
 
-        .. code-block:: python
+    .. code-block:: python
 
-            import material
-            mdb.models[name].materials[name].gapFlow
-            import odbMaterial
-            session.odbs[name].materials[name].gapFlow
+        import material
+        mdb.models[name].materials[name].gapFlow
+        import odbMaterial
+        session.odbs[name].materials[name].gapFlow
 
-        The table data for this object are:
+    The table data for this object are:
 
-        - If **type** = NEWTONIAN the table data specify the following:
-        
-            - Pore viscosity.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
-        - If **type** = POWER_LAW the table data specify the following:
-        
-            - Consistency.
-            - Exponent.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
-        - If **type** = BINGHAM_PLASTIC the table data specify the following:
-        
-            - Consistency.
-            - Yield stress.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
-        - If **type** = HERSCHEL-BULKLEY the table data specify the following:
-        
-            - Consistency.
-            - Exponent.
-            - Yield stress.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+    - If *type*=NEWTONIAN the table data specify the following:
+        - Pore viscosity.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+    - If *type*=POWER_LAW the table data specify the following:
+        - Consistency.
+        - Exponent.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+    - If *type*=BINGHAM_PLASTIC the table data specify the following:
+        - Consistency.
+        - Yield stress.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+    - If *type*=HERSCHEL-BULKLEY the table data specify the following:
+        - Consistency.
+        - Exponent.
+        - Yield stress.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-        The corresponding analysis keywords are:
+    The corresponding analysis keywords are:
 
-        - GAP FLOW
+    - GAP FLOW
+
     """
 
     def __init__(
@@ -65,7 +63,8 @@ class GapFlow:
     ):
         """This method creates a GapFlow object.
 
-        .. note:: 
+        Notes
+        -----
             This function can be accessed by:
 
             .. code-block:: python
@@ -79,8 +78,8 @@ class GapFlow:
             A sequence of sequences of Floats specifying the items described below.
         kmax
             None or a Float specifying the maximum permeability value that should be used. If
-            **kmax** = None, Abaqus assumes that the permeability is not bounded. This value is
-            meaningful only when **type** = NEWTONIAN. The default value is None.
+            *kmax*=None, Abaqus assumes that the permeability is not bounded. This value is
+            meaningful only when *type*=NEWTONIAN. The default value is None.
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies
@@ -91,11 +90,10 @@ class GapFlow:
 
         Returns
         -------
-        GapFlow
-            A :py:class:`~abaqus.Material.Gap.GapFlow.GapFlow` object.
+            A GapFlow object.
         """
         pass
 
-    def setValues(self, *args, **kwargs):
+    def setValues(self):
         """This method modifies the GapFlow object."""
         pass
