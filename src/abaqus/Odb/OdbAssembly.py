@@ -246,7 +246,6 @@ class OdbAssembly(OdbAssemblyBase):
         elements: OdbSet = OdbSet("set", tuple[OdbMeshNode]()),
         tieNodes: OdbSet = OdbSet("set", tuple[OdbMeshNode]()),
         pinNodes: OdbSet = OdbSet("set", tuple[OdbMeshNode]()),
-        analyticSurface: AnalyticSurface = None, 
     ) -> OdbRigidBody:
         """This method creates a OdbRigidBody object.
 
@@ -279,9 +278,6 @@ class OdbAssembly(OdbAssemblyBase):
         pinNodes
             An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the node set which have only translational degrees of
             freedom associated with the rigid body.
-        analyticSurface
-            An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying the analytic surface whose motion is governed by
-            the motion of rigid body reference node.
 
         Returns
         -------
@@ -295,7 +291,6 @@ class OdbAssembly(OdbAssemblyBase):
             elements,
             tieNodes,
             pinNodes,
-            analyticSurface,
         )
         self.rigidBodies.append(odbRigidBody)
         return odbRigidBody
