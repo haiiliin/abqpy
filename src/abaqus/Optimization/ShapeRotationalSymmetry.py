@@ -39,6 +39,10 @@ class ShapeRotationalSymmetry(GeometricRestriction):
     #: default value is None.
     csys: int = None
 
+    #: A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
+    #: restriction. The default value is TRUE.
+    allowNonSymmetricMesh: Boolean = TRUE
+
     #: None or a Region object specifying the main point used when **mainPointDetermination** is
     #: SPECIFY. The default value is None.
     mainPoint: str = None

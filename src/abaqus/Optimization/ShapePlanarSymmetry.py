@@ -34,6 +34,10 @@ class ShapePlanarSymmetry(GeometricRestriction):
     #: default value is None.
     csys: int = None
 
+    #: A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
+    #: restriction. The default value is TRUE.
+    allowNonSymmetricMesh: Boolean = TRUE
+
     #: A SymbolicConstant specifying the rule for determining the main node. Possible values
     #: are MAXIMUM and MINIMUM. The default value is MAXIMUM.
     mainPointDetermination: SymbolicConstant = MAXIMUM
