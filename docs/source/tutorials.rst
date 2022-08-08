@@ -31,7 +31,7 @@ However, if type hints are provided in Python scripting of Abaqus, things will g
 easier, and that is what `abqpy` does.
 
 
-The example model described in the following is simple, there is a squre structure, the vertical displacement of the bottom face is fixed, and there is a vertical pressure in the top surface, the Abaqus model is showed as follows:
+The example model described in the following is simple, there is a square structure, the vertical displacement of the bottom face is fixed, and there is a vertical pressure in the top surface, the Abaqus model is showed as follows:
 
 
 .. image:: images/model.png
@@ -80,7 +80,7 @@ First we need to create a sketch that will be used to create the part, we need t
     sketch = model.ConstrainedSketch(name='sketch', sheetSize=1.0)
     sketch.rectangle((0, 0), (1, 1))
 
-In this code, we draw a sketch with a squre. Now we can create a part using this sketch:
+In this code, we draw a sketch with a square. Now we can create a part using this sketch:
 
 .. code-block:: Python
 
@@ -339,7 +339,7 @@ The whole script of this example is showed as follows:
 Extract output data
 -------------------
 
-If we want to extract the output data, we have to write an outout script. 
+If we want to extract the output data, we have to write an output script. 
 
 Header of the output script
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
