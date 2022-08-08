@@ -5,6 +5,7 @@ from .InteractionContactControlModel import InteractionContactControlModel
 from .InteractionContactInitializationModel import InteractionContactInitializationModel
 from .InteractionContactStabilizationModel import InteractionContactStabilizationModel
 from .InteractionPropertyModel import InteractionPropertyModel
+from .PolarityAssignments import PolarityAssignments
 from ..BasicGeometry.ModelDot import ModelDot
 from ..Datum.DatumAxis import DatumAxis
 from ..Interaction.AcousticImpedance import AcousticImpedance
@@ -791,7 +792,8 @@ class InteractionModel(
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
         smoothingAssignments: SmoothingAssignment = None, 
-        mainSecondaryAssignments: MainSecondaryAssignment = None, 
+        mainSecondaryAssignments: MainSecondaryAssignment = None,
+        polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
 
@@ -837,6 +839,8 @@ class InteractionModel(
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
+        polarityAssignments
+            A PolarityAssignments object specifying the polarity assignments in the contact domain.
 
         Returns
         -------
@@ -856,6 +860,7 @@ class InteractionModel(
             surfaceFeatureAssignments,
             smoothingAssignments,
             mainSecondaryAssignments,
+            polarityAssignments,
         )
         return interaction
 
