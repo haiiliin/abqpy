@@ -1963,7 +1963,7 @@ class InteractionModel(
         bondingSet: Region = None,
         handedness: SymbolicConstant = RIGHT,
         normalAdjustment: SymbolicConstant = None,
-    ):
+    ) -> SurfaceToSurfaceContactStd:
         """This method creates a SurfaceToSurfaceContactStd object.
 
         .. note:: 
