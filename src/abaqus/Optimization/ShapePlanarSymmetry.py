@@ -117,7 +117,6 @@ class ShapePlanarSymmetry(GeometricRestriction):
 
     def setValues(
         self,
-        allowNonSymmetricMesh: Boolean = TRUE,
         csys: int = None,
         mainPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
@@ -129,9 +128,6 @@ class ShapePlanarSymmetry(GeometricRestriction):
 
         Parameters
         ----------
-        allowNonSymmetricMesh
-            A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
-            restriction. The default value is TRUE.
         csys
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
