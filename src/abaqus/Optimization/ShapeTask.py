@@ -440,7 +440,6 @@ class ShapeTask(OptimizationTask):
 
     def setValues(
         self,
-        abaqusSensitivities: Boolean = True,
         absoluteStepSizeControl: SymbolicConstant = MINIMUM,
         activateDurability: Boolean = ON,
         additionalDurabilityFiles: str = "",
@@ -490,9 +489,6 @@ class ShapeTask(OptimizationTask):
 
         Parameters
         ----------
-        abaqusSensitivities
-            A Boolean specifying whether to use Abaqus to compute the design responses and their
-            sensitivities. The default value is True.
         absoluteStepSizeControl
             A SymbolicConstant specifying whether to control the permitted absolute step size by the
             average optimization displacement or minimum optimization displacement. Possible values
