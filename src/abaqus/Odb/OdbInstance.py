@@ -1,8 +1,5 @@
-from abaqusConstants import *
-from .AnalyticSurface import AnalyticSurface
 from .OdbInstanceBase import OdbInstanceBase
 from .OdbMeshNode import OdbMeshNode
-from .OdbRigidBody import OdbRigidBody
 from .OdbSet import OdbSet
 
 
