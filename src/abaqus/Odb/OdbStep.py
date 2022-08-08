@@ -141,7 +141,7 @@ class OdbStep(OdbStepBase):
         self.frames.append(frame)
         return frame
 
-    def OdbLoadCase(self, name: str) -> OdbLoadCase:
+    def LoadCase(self, name: str) -> OdbLoadCase:
         """This method creates an OdbLoadCase object.
 
         .. note:: 
