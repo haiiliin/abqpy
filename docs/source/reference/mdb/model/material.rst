@@ -221,25 +221,14 @@ Gap
 
 
 
-GapConductance
-**************
-
-.. autoclass:: abaqus.Material.Gap.GapConductance.GapConductance
-
-GapConvection
-*************
-
-.. autoclass:: abaqus.Material.Gap.GapConvection.GapConvection
 
 GapFlow
 *******
 
 .. autoclass:: abaqus.Material.Gap.GapFlow.GapFlow
+    :members:
 
-GapRadiation
-************
-
-.. autoclass:: abaqus.Material.Gap.GapRadiation.GapRadiation
+    .. autoclasstoc::
 
 Gasket
 ~~~~~~
