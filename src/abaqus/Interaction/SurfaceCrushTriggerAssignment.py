@@ -8,18 +8,17 @@ class SurfaceCrushTriggerAssignment:
     definition for surfaces in ContactExp objects. The SurfaceCrushTriggerAssignment object
     has no constructor or members.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name].surfaceCrushTriggerAssignments
+            import interaction
+            mdb.models[name].interactions[name].surfaceCrushTriggerAssignments
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SURFACE PROPERTY ASSIGNMENT
+        - SURFACE PROPERTY ASSIGNMENT
 
     """
 

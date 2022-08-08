@@ -8,14 +8,13 @@ class SurfaceFrictionAssignment:
     for surfaces in ContactExp objects. The SurfaceFrictionAssignment object has no
     constructor or members.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name].surfaceFrictionAssignments
+            import interaction
+            mdb.models[name].interactions[name].surfaceFrictionAssignments
 
     The corresponding analysis keywords are:
 

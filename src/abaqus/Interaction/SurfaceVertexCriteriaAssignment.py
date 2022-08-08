@@ -8,14 +8,13 @@ class SurfaceVertexCriteriaAssignment:
     definition for surfaces in ContactStd objects. The SurfaceVertexCriteriaAssignment
     object has no constructor or members.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name].surfacevertexCriteriaAssignments
+            import interaction
+            mdb.models[name].interactions[name].surfacevertexCriteriaAssignments
 
     The corresponding analysis keywords are:
 
