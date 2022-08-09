@@ -144,6 +144,8 @@ You can specify the version number when installing `abqpy`, for example:
     pip install abqpy==2022a10
     conda install -c haiiliin abqpy=2022a10
 
+A better way is to install the package from source without specifying the patch number:
+
 .. code-block:: sh
 
     pip install git+https://github.com/haiiliin/abqpy.git@V2022
