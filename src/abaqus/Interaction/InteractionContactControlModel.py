@@ -45,7 +45,7 @@ class InteractionContactControlModel(ModelBase):
             value is 1.0.
         warpCheckPeriod
             An Int specifying the number of increments between checks for highly warped facets on
-            main surfaces. The default value is 20.
+            master surfaces. The default value is 20.
         warpCutoff
             A Float specifying the out-of-plane warping angle (in degrees), at which a facet will be
             considered to be highly warped. The default value is 20.0.
@@ -150,7 +150,7 @@ class InteractionContactControlModel(ModelBase):
             value is 0.0.The **perrmx** argument must be specified in conjunction with the **maxchp**
             argument.
         uerrmx
-            A Float specifying the maximum overclosure distance allowed at a secondary node that is
+            A Float specifying the maximum overclosure distance allowed at a slave node that is
             considered to be open. The default value is 0.0.The **uerrmx** argument must be specified
             in conjunction with the **maxchp** argument.
         stabilizeChoice
