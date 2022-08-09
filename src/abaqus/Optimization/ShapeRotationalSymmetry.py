@@ -39,15 +39,7 @@ class ShapeRotationalSymmetry(GeometricRestriction):
     #: default value is None.
     csys: int = None
 
-<<<<<<< HEAD
     #: None or a Region object specifying the main point used when **mainPointDetermination** is
-=======
-    #: A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
-    #: restriction. The default value is TRUE.
-    allowNonSymmetricMesh: Boolean = TRUE
-
-    #: None or a Region object specifying the master point used when **masterPointDetermination** is
->>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
     #: SPECIFY. The default value is None.
     masterPoint: str = None
 
