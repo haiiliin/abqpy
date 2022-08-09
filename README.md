@@ -55,7 +55,7 @@ pip install abqpy
 conda install -c haiiliin abqpy
 ```
 
-## Install Specific Version
+## Install A Specific Version
 
 You can specify the version number when installing `abqpy`, for example:
 ```shell
