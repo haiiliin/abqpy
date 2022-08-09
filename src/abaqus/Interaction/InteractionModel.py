@@ -790,16 +790,9 @@ class InteractionModel(
         contactPropertyAssignments: ContactPropertyAssignment = None, 
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
-<<<<<<< HEAD
-        smoothingAssignments: SmoothingAssignment = None, 
-        mainSecondaryAssignments: MainSecondaryAssignment = None,
-=======
+        surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
         smoothingAssignments: SmoothingAssignment = None,
-        surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
-        surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
-        mainSecondaryAssignments: MasterSlaveAssignment = None,
->>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
+        masterSlaveAssignments: MasterSlaveAssignment = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
@@ -843,7 +836,7 @@ class InteractionModel(
         smoothingAssignments
             A :py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment` object specifying the surface smoothing assignments in the contact
             domain.
-        mainSecondaryAssignments
+        masterSlaveAssignments
             A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
             contact domain.
         polarityAssignments
@@ -866,7 +859,7 @@ class InteractionModel(
             surfaceOffsetAssignments,
             surfaceFeatureAssignments,
             smoothingAssignments,
-            mainSecondaryAssignments,
+            masterSlaveAssignments,
             polarityAssignments,
         )
         return interaction
@@ -881,17 +874,9 @@ class InteractionModel(
         excludedPairs: RegionPairs = None, 
         contactPropertyAssignments: ContactPropertyAssignment = None, 
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
-        surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
-<<<<<<< HEAD
+        surfaceOffsetAssignments: SurfaceOffsetAssignment = None,
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
-        mainSecondaryAssignments: MainSecondaryAssignment = None, 
-=======
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
-        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
-        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: tuple[SlidingFormulationAssignment, ...] = None,
-        mainSecondaryAssignments: MasterSlaveAssignment = None,
->>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
+        masterSlaveAssignments: MasterSlaveAssignment = None,
         initializationAssignments: InitializationAssignment = None, 
         stabilizationAssignments: StabilizationAssignment = None, 
         smoothingAssignments: SmoothingAssignment = None, 
@@ -934,7 +919,7 @@ class InteractionModel(
         surfaceFeatureAssignments
             A :py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment` object specifying the surface feature angle assignments in
             the contact domain.
-        mainSecondaryAssignments
+        masterSlaveAssignments
             A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
             contact domain.
         initializationAssignments
@@ -966,7 +951,7 @@ class InteractionModel(
             surfaceThicknessAssignments,
             surfaceOffsetAssignments,
             surfaceFeatureAssignments,
-            mainSecondaryAssignments,
+            masterSlaveAssignments,
             initializationAssignments,
             stabilizationAssignments,
             smoothingAssignments,

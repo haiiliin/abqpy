@@ -84,16 +84,9 @@ class ContactExp(Interaction):
         contactPropertyAssignments: ContactPropertyAssignment = None, 
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
-<<<<<<< HEAD
-        smoothingAssignments: SmoothingAssignment = None, 
-        mainSecondaryAssignments: MainSecondaryAssignment = None,
-=======
+        surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
         smoothingAssignments: SmoothingAssignment = None,
-        surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
-        surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
         masterSlaveAssignments: MasterSlaveAssignment = None,
->>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
@@ -137,19 +130,8 @@ class ContactExp(Interaction):
         smoothingAssignments
             A :py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment` object specifying the surface smoothing assignments in the contact
             domain.
-<<<<<<< HEAD
-        mainSecondaryAssignments
-            A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
-=======
-        surfaceCrushTriggerAssignments
-            A :py:class:`~abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment` object specifying the surface crush trigger assignments
-            in the contact domain.
-        surfaceFrictionAssignments
-            A :py:class:`~abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment` object specifying the surface friction assignments in the
-            contact domain.
         masterSlaveAssignments
             A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
->>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
             contact domain.
         polarityAssignments
             A PolarityAssignments object specifying the polarity assignments in the contact domain.
