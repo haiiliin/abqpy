@@ -72,6 +72,7 @@ class ConstraintModel(ModelBase):
         ur2: Boolean = ON,
         ur3: Boolean = ON,
         weightingMethod: SymbolicConstant = UNIFORM,
+        alpha: float = 0.0,
     ) -> Coupling:
         """This method creates a Coupling object.
 
@@ -132,6 +133,9 @@ class ConstraintModel(ModelBase):
             distributing weight factors. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC.
             The default value is UNIFORM.The **weightingMethod** argument applies only when
             **couplingType** = DISTRIBUTING.
+        alpha
+            A Float specifying the value of the thermal expansion coefficient. The default value is 0.0.
+            The alpha argument applies only when couplingType=KINEMATIC.
 
         Returns
         -------
@@ -153,6 +157,7 @@ class ConstraintModel(ModelBase):
             ur2,
             ur3,
             weightingMethod,
+            alpha,
         )
         return constraint
 

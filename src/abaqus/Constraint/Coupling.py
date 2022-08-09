@@ -89,6 +89,10 @@ class Coupling(Constraint):
     #: **couplingType** = DISTRIBUTING.
     weightingMethod: SymbolicConstant = UNIFORM
 
+    #: A Float specifying the value of the thermal expansion coefficient. The default value is 0.0.
+    #: The alpha argument applies only when couplingType=KINEMATIC.
+    alpha: float = 0.0
+
     def __init__(
         self,
         name: str,
@@ -105,6 +109,7 @@ class Coupling(Constraint):
         ur2: Boolean = ON,
         ur3: Boolean = ON,
         weightingMethod: SymbolicConstant = UNIFORM,
+        alpha: float = 0.0,
     ):
         """This method creates a Coupling object.
 
@@ -165,6 +170,9 @@ class Coupling(Constraint):
             distributing weight factors. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC.
             The default value is UNIFORM.The **weightingMethod** argument applies only when
             **couplingType** = DISTRIBUTING.
+        alpha
+            A Float specifying the value of the thermal expansion coefficient. The default value is 0.0.
+            The alpha argument applies only when couplingType=KINEMATIC.
 
         Returns
         -------
