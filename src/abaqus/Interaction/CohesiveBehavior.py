@@ -42,10 +42,10 @@ class CohesiveBehavior:
     """
 
     #: A Boolean specifying whether to enforce cohesive behavior for recurrent contacts at
-    #: nodes on the secondary surface subsequent to ultimate failure. The default value is OFF.
+    #: nodes on the slave surface subsequent to ultimate failure. The default value is OFF.
     repeatedContacts: Boolean = OFF
 
-    #: A SymbolicConstant specifying the eligible secondary nodes. Possible values are
+    #: A SymbolicConstant specifying the eligible slave nodes. Possible values are
     #: ALL_NODES, INITIAL_NODES, and SPECIFIED. The default value is ALL_NODES.
     eligibility: SymbolicConstant = ALL_NODES
 
@@ -94,9 +94,9 @@ class CohesiveBehavior:
         ----------
         repeatedContacts
             A Boolean specifying whether to enforce cohesive behavior for recurrent contacts at
-            nodes on the secondary surface subsequent to ultimate failure. The default value is OFF.
+            nodes on the slave surface subsequent to ultimate failure. The default value is OFF.
         eligibility
-            A SymbolicConstant specifying the eligible secondary nodes. Possible values are
+            A SymbolicConstant specifying the eligible slave nodes. Possible values are
             ALL_NODES, INITIAL_NODES, and SPECIFIED. The default value is ALL_NODES.
         defaultPenalties
             A Boolean specifying whether to use the default contact penalties. The default value is
