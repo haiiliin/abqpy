@@ -122,12 +122,6 @@ class JobFromInputFile(Job):
     #: values are DEFAULT, THREADS, and MPI. The default value is DEFAULT.
     multiprocessingMode: SymbolicConstant = DEFAULT
 
-    #: A SymbolicConstant specifying the type of license type being used in the case of the
-    #: DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
-    #: value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
-    #: available.
-    licenseType: SymbolicConstant = DEFAULT
-
     def __init__(
         self,
         name: str,
@@ -148,7 +142,6 @@ class JobFromInputFile(Job):
         numDomains: int = 1,
         activateLoadBalancing: Boolean = OFF,
         multiprocessingMode: SymbolicConstant = DEFAULT,
-        licenseType: SymbolicConstant = DEFAULT,
     ):
         """This method creates an analysis job using an input file for the model definition.
 
@@ -227,11 +220,6 @@ class JobFromInputFile(Job):
             A SymbolicConstant specifying whether an analysis is decomposed into threads or into
             multiple processes that communicate through a message passing interface (MPI). Possible
             values are DEFAULT, THREADS, and MPI. The default value is DEFAULT.
-        licenseType
-            A SymbolicConstant specifying the type of license type being used in the case of the
-            DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
-            value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
-            available.
 
         Returns
         -------
@@ -266,7 +254,6 @@ class JobFromInputFile(Job):
         numDomains: int = 1,
         activateLoadBalancing: Boolean = OFF,
         multiprocessingMode: SymbolicConstant = DEFAULT,
-        licenseType: SymbolicConstant = DEFAULT,
     ):
         """This method modifies the JobFromInputFile object.
 
@@ -331,10 +318,5 @@ class JobFromInputFile(Job):
             A SymbolicConstant specifying whether an analysis is decomposed into threads or into
             multiple processes that communicate through a message passing interface (MPI). Possible
             values are DEFAULT, THREADS, and MPI. The default value is DEFAULT.
-        licenseType
-            A SymbolicConstant specifying the type of license type being used in the case of the
-            DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
-            value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
-            available.
         """
         pass
