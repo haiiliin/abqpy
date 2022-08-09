@@ -52,7 +52,7 @@ class InitializationAssignment:
             - A region object or the SymbolicConstant GLOBAL (for Abaqus/Standard only).
             - A region object or the SymbolicConstant SELF (for Abaqus/Standard only).
             - A String specifying a StdInitialization or ExpInitializationobject associated with this pair of regions.
-            - A String specifying a secondary surface type. This entry is applicable only if the ExpInitialization object is defined with **overclosureType** = CLEARANCE and **adjustNodalCoords** = True.
+            - A String specifying a slave surface type. This entry is applicable only if the ExpInitialization object is defined with **overclosureType** = CLEARANCE and **adjustNodalCoords** = True.
         """
         pass
 

@@ -23,7 +23,7 @@ from ..Interaction.FluidExchange import FluidExchange
 from ..Interaction.FluidInflator import FluidInflator
 from ..Interaction.IncidentWave import IncidentWave
 from ..Interaction.InitializationAssignment import InitializationAssignment
-from ..Interaction.MainSecondaryAssignment import MainSecondaryAssignment
+from ..Interaction.MasterSlaveAssignment import MasterSlaveAssignment
 from ..Interaction.ModelChange import ModelChange
 from ..Interaction.PressurePenetration import PressurePenetration
 from ..Interaction.RadiationToAmbient import RadiationToAmbient
@@ -72,9 +72,9 @@ class InteractionModel(
         mergeWithinAngle: float = 20,
         searchSingleInstances: Boolean = OFF,
         nameEachSurfaceFound: Boolean = ON,
-        createUnionOfMainSurfaces: Boolean = OFF,
-        createUnionOfSecondarySurfaces: Boolean = OFF,
-        createUnionOfMainSecondarySurfaces: Boolean = OFF,
+        createUnionOfMasterSurfaces: Boolean = OFF,
+        createUnionOfSlaveSurfaces: Boolean = OFF,
+        createUnionOfMasterSlaveSurfaces: Boolean = OFF,
         includePlanar: Boolean = ON,
         includeCylindricalSphericalToric: Boolean = ON,
         includeSplineBased: Boolean = ON,
@@ -127,15 +127,15 @@ class InteractionModel(
         nameEachSurfaceFound
             A Boolean specifying whether to assign a name to each surface found. The default value
             is ON.
-        createUnionOfMainSurfaces
-            A Boolean specifying whether to create a surface that is the union of all main surfaces
+        createUnionOfMasterSurfaces
+            A Boolean specifying whether to create a surface that is the union of all master surfaces
             found. The default value is OFF.
-        createUnionOfSecondarySurfaces
-            A Boolean specifying whether to create a surface that is the union of all secondary
+        createUnionOfSlaveSurfaces
+            A Boolean specifying whether to create a surface that is the union of all slave
             surfaces found. The default value is OFF.
-        createUnionOfMainSecondarySurfaces
-            A Boolean specifying whether to create a surface that is the union of all main and
-            secondary surfaces found. The default value is OFF.
+        createUnionOfMasterSlaveSurfaces
+            A Boolean specifying whether to create a surface that is the union of all master and
+            slave surfaces found. The default value is OFF.
         includePlanar
             A Boolean specifying whether to include planar geometry. The default value is ON.
         includeCylindricalSphericalToric
@@ -182,9 +182,9 @@ class InteractionModel(
         Tuple of tuples, where each tuple holds information, to be used in contact creation as
         follows:
         
-        - A string specifying the name of the main surface used in contact.
-        - A string specifying the name of the secondary surface used in contact.
-        - A float specifying the separation distance between the main surface and the secondary
+        - A string specifying the name of the master surface used in contact.
+        - A string specifying the name of the slave surface used in contact.
+        - A float specifying the separation distance between the master surface and the slave
           surface.
         - A boolean specifying whether or not contact surfaces are overclosed..
         """
@@ -790,8 +790,16 @@ class InteractionModel(
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
+<<<<<<< HEAD
         smoothingAssignments: SmoothingAssignment = None, 
         mainSecondaryAssignments: MainSecondaryAssignment = None, 
+=======
+        smoothingAssignments: SmoothingAssignment = None,
+        surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
+        surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
+        mainSecondaryAssignments: MasterSlaveAssignment = None,
+        polarityAssignments: PolarityAssignments = PolarityAssignments(),
+>>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
     ):
         """This method creates a ContactExp object.
 
@@ -835,7 +843,7 @@ class InteractionModel(
             A :py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment` object specifying the surface smoothing assignments in the contact
             domain.
         mainSecondaryAssignments
-            A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
+            A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
             contact domain.
 
         Returns
@@ -870,8 +878,16 @@ class InteractionModel(
         contactPropertyAssignments: ContactPropertyAssignment = None, 
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
+<<<<<<< HEAD
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
         mainSecondaryAssignments: MainSecondaryAssignment = None, 
+=======
+        surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
+        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
+        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
+        slidingFormulationAssignments: tuple[SlidingFormulationAssignment, ...] = None,
+        mainSecondaryAssignments: MasterSlaveAssignment = None,
+>>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
         initializationAssignments: InitializationAssignment = None, 
         stabilizationAssignments: StabilizationAssignment = None, 
         smoothingAssignments: SmoothingAssignment = None, 
@@ -915,7 +931,7 @@ class InteractionModel(
             A :py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment` object specifying the surface feature angle assignments in
             the contact domain.
         mainSecondaryAssignments
-            A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
+            A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
             contact domain.
         initializationAssignments
             An :py:class:`~abaqus.Interaction.InitializationAssignment.InitializationAssignment` object specifying the contact initialization assignments in
@@ -958,8 +974,8 @@ class InteractionModel(
         self,
         name: str,
         createStepName: str,
-        main: Region,
-        secondary: Region,
+        master: Region,
+        slave: Region,
         repetitiveSectors: int,
         axisPoint1: Region,
         axisPoint2: Region,
@@ -987,10 +1003,10 @@ class InteractionModel(
         createStepName
             A String specifying the name of the step in which the cyclic symmetry interaction should
             be created.
-        main
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
-        secondary
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+        master
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the master surface.
+        slave
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the slave surface.
         repetitiveSectors
             An Int specifying the total number of sectors in the cyclic symmetric model.
         axisPoint1
@@ -1021,8 +1037,8 @@ class InteractionModel(
             equal to the highest nodal diameter (specified in the **highestNodalDiameter** parameter).
             The default value is 0.
         adjustTie
-            A Boolean specifying whether or not to adjust the secondary surface of the cyclic
-            symmetry to tie it to the main surface. The default value is ON.
+            A Boolean specifying whether or not to adjust the slave surface of the cyclic
+            symmetry to tie it to the master surface. The default value is ON.
         positionTolerance
             A Float specifying the position tolerance. The*positionTolerance* argument applies only
             when **positionToleranceMethod** = SPECIFY_TOLERANCE. The default value is 0.0.
@@ -1039,8 +1055,8 @@ class InteractionModel(
         self.interactions[name] = interaction = CyclicSymmetry(
             name,
             createStepName,
-            main,
-            secondary,
+            master,
+            slave,
             repetitiveSectors,
             axisPoint1,
             axisPoint2,
@@ -1514,8 +1530,8 @@ class InteractionModel(
         name: str,
         createStepName: str,
         contactInteraction: str,
-        mainPoints: RegionArray,
-        secondaryPoints: RegionArray,
+        masterPoints: RegionArray,
+        slavePoints: RegionArray,
         penetrationPressure: float,
         criticalPressure: float,
         amplitude: str = UNSET,
@@ -1539,11 +1555,11 @@ class InteractionModel(
             created.
         contactInteraction
             A String specifying the name of the Surface-to-surface contact (Standard) interaction.
-        mainPoints
-            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the main surface that are exposed to the
+        masterPoints
+            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the master surface that are exposed to the
             fluid.
-        secondaryPoints
-            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the secondary surface that are exposed to
+        slavePoints
+            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the slave surface that are exposed to
             the fluid.
         penetrationPressure
             A tuple of Floats specifying the fluid pressure magnitude. For steady state dynamic
@@ -1569,8 +1585,8 @@ class InteractionModel(
             name,
             createStepName,
             contactInteraction,
-            mainPoints,
-            secondaryPoints,
+            masterPoints,
+            slavePoints,
             penetrationPressure,
             criticalPressure,
             amplitude,
@@ -1741,7 +1757,7 @@ class InteractionModel(
             A Boolean specifying whether shell/membrane element thickness is considered. The default
             value is ON.This argument in valid only when **enforcement** = SURFACE_TO_SURFACE.
         smooth
-            A Float specifying the degree of smoothing used for deformable or rigid main surfaces
+            A Float specifying the degree of smoothing used for deformable or rigid master surfaces
             involved when **enforcement** = NODE_TO_SURFACE. The value given must lie between 0.0 and
             0.5. The default value is 0.2.
         contactControls
@@ -1821,8 +1837,8 @@ class InteractionModel(
         self,
         name: str,
         createStepName: str,
-        main: Region,
-        secondary: Region,
+        master: Region,
+        slave: Region,
         sliding: SymbolicConstant,
         interactionProperty: str,
         mechanicalConstraint: SymbolicConstant = KINEMATIC,
@@ -1854,9 +1870,9 @@ class InteractionModel(
         createStepName
             A String specifying the name of the step in which the SurfaceToSurfaceContactExp object
             is created.
-        main
+        master
             A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
-        secondary
+        slave
             A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
@@ -1909,8 +1925,8 @@ class InteractionModel(
         self.interactions[name] = interaction = SurfaceToSurfaceContactExp(
             name,
             createStepName,
-            main,
-            secondary,
+            master,
+            slave,
             sliding,
             interactionProperty,
             mechanicalConstraint,
@@ -1981,9 +1997,9 @@ class InteractionModel(
             A String specifying the name of the step in which the SurfaceToSurfaceContactStd object
             is created.
         master
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the master surface.
         slave
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the slave surface.
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
             SMALL.
@@ -2019,15 +2035,15 @@ class InteractionModel(
             interference is applied immediately at the beginning of the step and ramped down to zero
             linearly over the step.
         smooth
-            A Float specifying the degree of smoothing used for deformable or rigid main surfaces
+            A Float specifying the degree of smoothing used for deformable or rigid master surfaces
             involved when **enforcement** = NODE_TO_SURFACE. The value given must lie between 0.0 and
             0.5. The default value is 0.2.
         hcrit
-            A Float specifying the distance by which a secondary node must penetrate the main
+            A Float specifying the distance by which a slave node must penetrate the master
             surface before Abaqus/Standard abandons the current increment and tries again with a
             smaller increment. The default value is 0.0.
         extensionZone
-            A Float specifying a fraction of the end segment or facet edge length by which the main
+            A Float specifying a fraction of the end segment or facet edge length by which the master
             surface is to be extended to avoid numerical round-off errors associated with contact
             modeling. The value given must lie between 0.0 and 0.2. The default value is 0.1.
         adjustMethod
@@ -2079,13 +2095,13 @@ class InteractionModel(
             SurfaceToSurfaceContactStd interactions. Possible values are AUTOMATIC and NONE. The
             default value is NONE.
         bondingSet
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary node sub-set for bonding, used only when the
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the slave node sub-set for bonding, used only when the
             contact property CohesiveBehavior option specifies use.
         handedness
             A SymbolicConstant specifying the bolt handedness formulation. Possible values are RIGHT
             and LEFT. The default value is RIGHT.
         normalAdjustment
-            A SymbolicConstant specifying the bolt normal adjustment formulation for all secondary
+            A SymbolicConstant specifying the bolt normal adjustment formulation for all slave
             nodes. Possible values are UNIFORM AXIAL COMPONENT and LOCATION DEPENDENT. The default
             value is UNIFORM AXIAL COMPONENT.
 

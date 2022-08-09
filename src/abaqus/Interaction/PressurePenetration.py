@@ -31,21 +31,21 @@ class PressurePenetration(Interaction):
     #: A String specifying the name of the Surface-to-surface contact (Standard) interaction.
     contactInteraction: str = ""
 
-    #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the main surface that are exposed to the
+    #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the master surface that are exposed to the
     #: fluid.
-    mainPoints: RegionArray = RegionArray()
+    masterPoints: RegionArray = RegionArray()
 
-    #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the secondary surface that are exposed to
+    #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the slave surface that are exposed to
     #: the fluid.
-    secondaryPoints: RegionArray = RegionArray()
+    slavePoints: RegionArray = RegionArray()
 
     def __init__(
         self,
         name: str,
         createStepName: str,
         contactInteraction: str,
-        mainPoints: RegionArray,
-        secondaryPoints: RegionArray,
+        masterPoints: RegionArray,
+        slavePoints: RegionArray,
         penetrationPressure: float,
         criticalPressure: float,
         amplitude: str = UNSET,
@@ -69,11 +69,11 @@ class PressurePenetration(Interaction):
             created.
         contactInteraction
             A String specifying the name of the Surface-to-surface contact (Standard) interaction.
-        mainPoints
-            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the main surface that are exposed to the
+        masterPoints
+            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the master surface that are exposed to the
             fluid.
-        secondaryPoints
-            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the secondary surface that are exposed to
+        slavePoints
+            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the slave surface that are exposed to
             the fluid.
         penetrationPressure
             A tuple of Floats specifying the fluid pressure magnitude. For steady state dynamic
