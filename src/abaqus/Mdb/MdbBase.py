@@ -2,7 +2,6 @@ from ..Adaptivity.AdaptivityProcess import AdaptivityProcess
 from ..Annotation.Annotation import Annotation
 from ..CustomKernel.RepositorySupport import RepositorySupport
 from ..EditMesh.MeshEditOptions import MeshEditOptions
-from ..Job.Coexecution import Coexecution
 from ..Job.Job import Job
 from ..Job.OptimizationProcess import OptimizationProcess
 from ..Model.Model import Model
@@ -32,9 +31,6 @@ class MdbBase:
 
     #: A repository of AdaptivityProcess objects.
     adaptivityProcesses: dict[str, AdaptivityProcess] = dict[str, AdaptivityProcess]()
-
-    #: A repository of Coexecution objects.
-    coexecutions: dict[str, Coexecution] = dict[str, Coexecution]()
 
     #: A repository of OptimizationProcess objects.
     optimizationProcesses: dict[str, OptimizationProcess] = dict[
