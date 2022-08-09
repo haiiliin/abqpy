@@ -134,8 +134,8 @@ the local directory:
     cd abqpy
     python setup.py install
 
-Install Specific Version
-------------------------
+Install A Specific Version
+--------------------------
 
 You can specify the version number when installing `abqpy`, for example:
 
