@@ -33,16 +33,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
     csys: int = None
-
-<<<<<<< HEAD
     #: A SymbolicConstant specifying the rule for determining the main node. Possible values
-=======
-    #: A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
-    #: restriction. The default value is TRUE.
-    allowNonSymmetricMesh: Boolean = TRUE
-
-    #: A SymbolicConstant specifying the rule for determining the master node. Possible values
->>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
     #: are MAXIMUM and MINIMUM. The default value is MAXIMUM.
     masterPointDetermination: SymbolicConstant = MAXIMUM
 

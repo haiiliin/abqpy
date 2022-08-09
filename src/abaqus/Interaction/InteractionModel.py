@@ -788,17 +788,9 @@ class InteractionModel(
         contactPropertyAssignments: ContactPropertyAssignment = None, 
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
-<<<<<<< HEAD
-        smoothingAssignments: SmoothingAssignment = None, 
-        mainSecondaryAssignments: MainSecondaryAssignment = None, 
-=======
+        surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
         smoothingAssignments: SmoothingAssignment = None,
-        surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
-        surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
-        mainSecondaryAssignments: MasterSlaveAssignment = None,
-        polarityAssignments: PolarityAssignments = PolarityAssignments(),
->>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
+        masterSlaveAssignments: MasterSlaveAssignment = None,
     ):
         """This method creates a ContactExp object.
 
@@ -841,7 +833,7 @@ class InteractionModel(
         smoothingAssignments
             A :py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment` object specifying the surface smoothing assignments in the contact
             domain.
-        mainSecondaryAssignments
+        masterSlaveAssignments
             A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
             contact domain.
 
@@ -862,7 +854,7 @@ class InteractionModel(
             surfaceOffsetAssignments,
             surfaceFeatureAssignments,
             smoothingAssignments,
-            mainSecondaryAssignments,
+            masterSlaveAssignments,
         )
         return interaction
 
@@ -876,17 +868,9 @@ class InteractionModel(
         excludedPairs: RegionPairs = None, 
         contactPropertyAssignments: ContactPropertyAssignment = None, 
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
-        surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
-<<<<<<< HEAD
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
-        mainSecondaryAssignments: MainSecondaryAssignment = None, 
-=======
+        surfaceOffsetAssignments: SurfaceOffsetAssignment = None,
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
-        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
-        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: tuple[SlidingFormulationAssignment, ...] = None,
-        mainSecondaryAssignments: MasterSlaveAssignment = None,
->>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
+        masterSlaveAssignments: MasterSlaveAssignment = None,
         initializationAssignments: InitializationAssignment = None, 
         stabilizationAssignments: StabilizationAssignment = None, 
         smoothingAssignments: SmoothingAssignment = None, 
@@ -929,7 +913,7 @@ class InteractionModel(
         surfaceFeatureAssignments
             A :py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment` object specifying the surface feature angle assignments in
             the contact domain.
-        mainSecondaryAssignments
+        masterSlaveAssignments
             A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
             contact domain.
         initializationAssignments
@@ -961,7 +945,7 @@ class InteractionModel(
             surfaceThicknessAssignments,
             surfaceOffsetAssignments,
             surfaceFeatureAssignments,
-            mainSecondaryAssignments,
+            masterSlaveAssignments,
             initializationAssignments,
             stabilizationAssignments,
             smoothingAssignments,
@@ -2045,16 +2029,6 @@ class InteractionModel(
         bondingSet
             A :py:class:`~abaqus.Region.Region.Region` object specifying the slave node sub-set for bonding, used only when the
             contact property CohesiveBehavior option specifies use.
-<<<<<<< HEAD
-=======
-        handedness
-            A SymbolicConstant specifying the bolt handedness formulation. Possible values are RIGHT
-            and LEFT. The default value is RIGHT.
-        normalAdjustment
-            A SymbolicConstant specifying the bolt normal adjustment formulation for all slave
-            nodes. Possible values are UNIFORM AXIAL COMPONENT and LOCATION DEPENDENT. The default
-            value is UNIFORM AXIAL COMPONENT.
->>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
 
         Returns
         -------
