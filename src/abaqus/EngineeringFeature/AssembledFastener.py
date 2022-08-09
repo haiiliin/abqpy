@@ -40,12 +40,12 @@ class AssembledFastener(Fastener):
     #: referenced by tie or coupling constraints.
     templateSurfaces: tuple
 
-    #: A sequence of Strings specifying the names of the main model surfaces that will be
+    #: A sequence of Strings specifying the names of the master model surfaces that will be
     #: substituted for the template model constraint surfaces.
     assignedSurfaces: tuple
 
     #: A String specifying the name of the property prefix string. This string will be
-    #: prepended to every property name as it is copied to the main model from the template
+    #: prepended to every property name as it is copied to the master model from the template
     #: model.
     propertyPrefix: str
 
@@ -104,11 +104,11 @@ class AssembledFastener(Fastener):
             A sequence of Strings specifying the names of the template model surfaces that are
             referenced by tie or coupling constraints.
         assignedSurfaces
-            A sequence of Strings specifying the names of the main model surfaces that will be
+            A sequence of Strings specifying the names of the master model surfaces that will be
             substituted for the template model constraint surfaces.
         propertyPrefix
             A String specifying the name of the property prefix string. This string will be
-            prepended to every property name as it is copied to the main model from the template
+            prepended to every property name as it is copied to the master model from the template
             model.
         orientMethod
             A SymbolicConstant specifying the method used to orient the virtual instances of the

@@ -14,17 +14,17 @@ class Radiation:
         - GAP RADIATION
     """
 
-    #: A Float specifying the emissivity of the main surface.
-    mainEmissivity: float
+    #: A Float specifying the emissivity of the master surface.
+    masterEmissivity: float
 
-    #: A Float specifying the emissivity of the secondary surface.
-    secondaryEmissivity: float
+    #: A Float specifying the emissivity of the slave surface.
+    slaveEmissivity: float
 
     #: A sequence of sequences of Floats specifying the following:Effective viewfactor, FF.Gap
     #: clearance, dd.
     table: tuple
 
-    def __init__(self, mainEmissivity: float, secondaryEmissivity: float, table: tuple):
+    def __init__(self, masterEmissivity: float, slaveEmissivity: float, table: tuple):
         """This method creates a Radiation object.
 
         .. note:: 
@@ -36,10 +36,10 @@ class Radiation:
 
         Parameters
         ----------
-        mainEmissivity
-            A Float specifying the emissivity of the main surface.
-        secondaryEmissivity
-            A Float specifying the emissivity of the secondary surface.
+        masterEmissivity
+            A Float specifying the emissivity of the master surface.
+        slaveEmissivity
+            A Float specifying the emissivity of the slave surface.
         table
             A sequence of sequences of Floats specifying the following:Effective viewfactor, FF.Gap
             clearance, dd.

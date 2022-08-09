@@ -40,10 +40,10 @@ class SurfaceToSurfaceContactStd(Interaction):
     #: is created.
     createStepName: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the master surface.
     master: Region
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the slave surface.
     slave: Region
 
     #: A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
@@ -88,17 +88,17 @@ class SurfaceToSurfaceContactStd(Interaction):
     #: linearly over the step.
     amplitude: str = ""
 
-    #: A Float specifying the degree of smoothing used for deformable or rigid main surfaces
+    #: A Float specifying the degree of smoothing used for deformable or rigid master surfaces
     #: involved when **enforcement** = NODE_TO_SURFACE. The value given must lie between 0.0 and
     #: 0.5. The default value is 0.2.
     smooth: float = 0
 
-    #: A Float specifying the distance by which a secondary node must penetrate the main
+    #: A Float specifying the distance by which a slave node must penetrate the master
     #: surface before Abaqus/Standard abandons the current increment and tries again with a
     #: smaller increment. The default value is 0.0.
     hcrit: float = 0
 
-    #: A Float specifying a fraction of the end segment or facet edge length by which the main
+    #: A Float specifying a fraction of the end segment or facet edge length by which the master
     #: surface is to be extended to avoid numerical round-off errors associated with contact
     #: modeling. The value given must lie between 0.0 and 0.2. The default value is 0.1.
     extensionZone: float = 0
@@ -167,7 +167,7 @@ class SurfaceToSurfaceContactStd(Interaction):
     #: default value is NONE.
     surfaceSmoothing: SymbolicConstant = NONE
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary node sub-set for bonding, used only when the
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the slave node sub-set for bonding, used only when the
     #: contact property CohesiveBehavior option specifies use.
     bondingSet: Region = None
 
@@ -222,9 +222,9 @@ class SurfaceToSurfaceContactStd(Interaction):
             A String specifying the name of the step in which the SurfaceToSurfaceContactStd object
             is created.
         master
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the master surface.
         slave
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the slave surface.
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
             SMALL.
@@ -260,15 +260,15 @@ class SurfaceToSurfaceContactStd(Interaction):
             interference is applied immediately at the beginning of the step and ramped down to zero
             linearly over the step.
         smooth
-            A Float specifying the degree of smoothing used for deformable or rigid main surfaces
+            A Float specifying the degree of smoothing used for deformable or rigid master surfaces
             involved when **enforcement** = NODE_TO_SURFACE. The value given must lie between 0.0 and
             0.5. The default value is 0.2.
         hcrit
-            A Float specifying the distance by which a secondary node must penetrate the main
+            A Float specifying the distance by which a slave node must penetrate the master
             surface before Abaqus/Standard abandons the current increment and tries again with a
             smaller increment. The default value is 0.0.
         extensionZone
-            A Float specifying a fraction of the end segment or facet edge length by which the main
+            A Float specifying a fraction of the end segment or facet edge length by which the master
             surface is to be extended to avoid numerical round-off errors associated with contact
             modeling. The value given must lie between 0.0 and 0.2. The default value is 0.1.
         adjustMethod
@@ -320,8 +320,18 @@ class SurfaceToSurfaceContactStd(Interaction):
             SurfaceToSurfaceContactStd interactions. Possible values are AUTOMATIC and NONE. The
             default value is NONE.
         bondingSet
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary node sub-set for bonding, used only when the
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the slave node sub-set for bonding, used only when the
             contact property CohesiveBehavior option specifies use.
+<<<<<<< HEAD
+=======
+        handedness
+            A SymbolicConstant specifying the bolt handedness formulation. Possible values are RIGHT
+            and LEFT. The default value is RIGHT.
+        normalAdjustment
+            A SymbolicConstant specifying the bolt normal adjustment formulation for all slave
+            nodes. Possible values are UNIFORM AXIAL COMPONENT and LOCATION DEPENDENT. The default
+            value is UNIFORM AXIAL COMPONENT.
+>>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
 
         Returns
         -------
@@ -332,7 +342,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         pass
 
     def swapSurfaces(self):
-        """This method switches the main and secondary surfaces of a surface-to-surface contact
+        """This method switches the master and slave surfaces of a surface-to-surface contact
         pair. This command is valid only for the step in which the interaction is created.
         """
         pass
@@ -399,15 +409,15 @@ class SurfaceToSurfaceContactStd(Interaction):
             interference is applied immediately at the beginning of the step and ramped down to zero
             linearly over the step.
         smooth
-            A Float specifying the degree of smoothing used for deformable or rigid main surfaces
+            A Float specifying the degree of smoothing used for deformable or rigid master surfaces
             involved when **enforcement** = NODE_TO_SURFACE. The value given must lie between 0.0 and
             0.5. The default value is 0.2.
         hcrit
-            A Float specifying the distance by which a secondary node must penetrate the main
+            A Float specifying the distance by which a slave node must penetrate the master
             surface before Abaqus/Standard abandons the current increment and tries again with a
             smaller increment. The default value is 0.0.
         extensionZone
-            A Float specifying a fraction of the end segment or facet edge length by which the main
+            A Float specifying a fraction of the end segment or facet edge length by which the master
             surface is to be extended to avoid numerical round-off errors associated with contact
             modeling. The value given must lie between 0.0 and 0.2. The default value is 0.1.
         adjustMethod
@@ -459,8 +469,18 @@ class SurfaceToSurfaceContactStd(Interaction):
             SurfaceToSurfaceContactStd interactions. Possible values are AUTOMATIC and NONE. The
             default value is NONE.
         bondingSet
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary node sub-set for bonding, used only when the
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the slave node sub-set for bonding, used only when the
             contact property CohesiveBehavior option specifies use.
+<<<<<<< HEAD
+=======
+        handedness
+            A SymbolicConstant specifying the bolt handedness formulation. Possible values are RIGHT
+            and LEFT. The default value is RIGHT.
+        normalAdjustment
+            A SymbolicConstant specifying the bolt normal adjustment formulation for all slave
+            nodes. Possible values are UNIFORM AXIAL COMPONENT and LOCATION DEPENDENT. The default
+            value is UNIFORM AXIAL COMPONENT.
+>>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
         """
         pass
 

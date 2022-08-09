@@ -353,7 +353,6 @@ class XYData(tuple):
         nodeLabels: tuple = (),
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
-        operator: SymbolicConstant = None,
     ) -> list["XYData"]:
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
@@ -419,15 +418,6 @@ class XYData(tuple):
         complexAngle
             A Float specifying the angle (in degrees) at which to display results that contain
             complex numbers when **numericForm** = COMPLEX_VAL_AT_ANGLE. The default value is 0.
-        operator
-            A SymbolicConstant specifying the mathematical, trigonometric, logarithmic, exponential,
-            or other operations. Possible values are ADD, SUBTRACT, MULTIPLY, DIVIDE, POWER,
-            MINIMUM, MAXIMUM, AVERAGE, RANGE, SRSS, ABSOLUTE, UNARY_NEGATIVE, COSINE,
-            HYPERBOLIC_COSINE, INVERSE_COSINE, SINE, HYPERBOLIC_SINE, INVERSE_SINE, TANGENT,
-            HYPERBOLIC_TANGENT, INVERSE_TANGENT, EXPONENTIAL, NATURAL_LOG, LOG, SQUARE_ROOT,
-            NORMALIZE, DEG2RAD, RAD2DEG, SMOOTH, SWAP, AVERAGE_ALL, MAXIMUM_ENVELOPE,
-            MINIMUM_ENVELOPE, and RANGE_ALL. If no value is defined, no operation will be performed
-            on the data, and the data will be saved as is.
 
         Returns
         -------
