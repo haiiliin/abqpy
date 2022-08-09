@@ -34,13 +34,13 @@ class TurnControl(GeometricRestriction):
     #: default value is None.
     csys: int = None
 
-    #: None or a Region object specifying the main point used when **mainPointDetermination** is
+    #: None or a Region object specifying the master point used when **masterPointDetermination** is
     #: SPECIFY. The default value is None.
-    mainPoint: str = None
+    masterPoint: str = None
 
     #: A SymbolicConstant specifying the rule for assigning point priority. Possible values are
     #: MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-    mainPointDetermination: SymbolicConstant = MAXIMUM
+    masterPointDetermination: SymbolicConstant = MAXIMUM
 
     #: A Boolean specifying whether to ignore the geometric restriction in the first design
     #: cycle. The default value is ON.
@@ -64,8 +64,8 @@ class TurnControl(GeometricRestriction):
         clientDirection: tuple,
         region: Region,
         csys: int = None,
-        mainPoint: str = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPoint: str = None,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -96,10 +96,10 @@ class TurnControl(GeometricRestriction):
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
-        mainPoint
-            None or a Region object specifying the main point used when **mainPointDetermination** is
+        masterPoint
+            None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-        mainPointDetermination
+        masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart
@@ -126,8 +126,8 @@ class TurnControl(GeometricRestriction):
     def setValues(
         self,
         csys: int = None,
-        mainPoint: str = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPoint: str = None,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -141,10 +141,10 @@ class TurnControl(GeometricRestriction):
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
-        mainPoint
-            None or a Region object specifying the main point used when **mainPointDetermination** is
+        masterPoint
+            None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-        mainPointDetermination
+        masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart
