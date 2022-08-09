@@ -43,13 +43,13 @@ class ShapeRotationalSymmetry(GeometricRestriction):
     #: restriction. The default value is TRUE.
     allowNonSymmetricMesh: Boolean = TRUE
 
-    #: None or a Region object specifying the main point used when **mainPointDetermination** is
+    #: None or a Region object specifying the master point used when **masterPointDetermination** is
     #: SPECIFY. The default value is None.
-    mainPoint: str = None
+    masterPoint: str = None
 
-    #: A SymbolicConstant specifying the rule for determining the main node. Possible values
+    #: A SymbolicConstant specifying the rule for determining the master node. Possible values
     #: are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-    mainPointDetermination: SymbolicConstant = MAXIMUM
+    masterPointDetermination: SymbolicConstant = MAXIMUM
 
     #: A Boolean specifying whether to ignore the geometric restriction in the first design
     #: cycle. The default value is ON.
@@ -79,8 +79,8 @@ class ShapeRotationalSymmetry(GeometricRestriction):
         allowNonSymmetricMesh: Boolean = TRUE,
         angle: float = 0,
         csys: int = None,
-        mainPoint: str = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPoint: str = None,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         startPoint: float = None,
         tolerance1: float = 0,
@@ -118,11 +118,11 @@ class ShapeRotationalSymmetry(GeometricRestriction):
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
-        mainPoint
-            None or a Region object specifying the main point used when **mainPointDetermination** is
+        masterPoint
+            None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-        mainPointDetermination
-            A SymbolicConstant specifying the rule for determining the main node. Possible values
+        masterPointDetermination
+            A SymbolicConstant specifying the rule for determining the master node. Possible values
             are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
@@ -153,8 +153,8 @@ class ShapeRotationalSymmetry(GeometricRestriction):
         allowNonSymmetricMesh: Boolean = TRUE,
         angle: float = 0,
         csys: int = None,
-        mainPoint: str = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPoint: str = None,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         startPoint: float = None,
         tolerance1: float = 0,
@@ -175,11 +175,11 @@ class ShapeRotationalSymmetry(GeometricRestriction):
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
-        mainPoint
-            None or a Region object specifying the main point used when **mainPointDetermination** is
+        masterPoint
+            None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-        mainPointDetermination
-            A SymbolicConstant specifying the rule for determining the main node. Possible values
+        masterPointDetermination
+            A SymbolicConstant specifying the rule for determining the master node. Possible values
             are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
