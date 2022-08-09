@@ -3,7 +3,12 @@ import typing
 from abaqusConstants import *
 from .ContactPropertyAssignment import ContactPropertyAssignment
 from .Interaction import Interaction
+<<<<<<< HEAD
 from .MainSecondaryAssignment import MainSecondaryAssignment
+=======
+from .MasterSlaveAssignment import MasterSlaveAssignment
+from .PolarityAssignments import PolarityAssignments
+>>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
 from .RegionPairs import RegionPairs
 from .SmoothingAssignment import SmoothingAssignment
 from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
@@ -64,9 +69,9 @@ class ContactExp(Interaction):
     #: domain.
     smoothingAssignments: SmoothingAssignment = SmoothingAssignment()
 
-    #: A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
+    #: A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
     #: contact domain.
-    mainSecondaryAssignments: MainSecondaryAssignment = MainSecondaryAssignment()
+    masterSlaveAssignments: MasterSlaveAssignment = MasterSlaveAssignment()
 
     @typing.overload
     def __init__(
@@ -81,8 +86,16 @@ class ContactExp(Interaction):
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
+<<<<<<< HEAD
         smoothingAssignments: SmoothingAssignment = None, 
         mainSecondaryAssignments: MainSecondaryAssignment = None, 
+=======
+        smoothingAssignments: SmoothingAssignment = None,
+        surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
+        surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
+        masterSlaveAssignments: MasterSlaveAssignment = None,
+        polarityAssignments: PolarityAssignments = PolarityAssignments(),
+>>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
     ):
         """This method creates a ContactExp object.
 
@@ -125,8 +138,19 @@ class ContactExp(Interaction):
         smoothingAssignments
             A :py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment` object specifying the surface smoothing assignments in the contact
             domain.
+<<<<<<< HEAD
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
+=======
+        surfaceCrushTriggerAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment` object specifying the surface crush trigger assignments
+            in the contact domain.
+        surfaceFrictionAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment` object specifying the surface friction assignments in the
+            contact domain.
+        masterSlaveAssignments
+            A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
+>>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
             contact domain.
 
         Returns
@@ -151,7 +175,12 @@ class ContactExp(Interaction):
         surfaceOffsetAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
         surfaceFeatureAssignments: typing.Union[SymbolicConstant, float] = PERIMETER,
         smoothingAssignments: SymbolicConstant = None,
+<<<<<<< HEAD
         mainSecondaryAssignments: SymbolicConstant = None,
+=======
+        masterSlaveAssignments: SymbolicConstant = None,
+        polarityAssignments: SymbolicConstant = None,
+>>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
     ):
         """This method creates a ContactExp object.
 
@@ -222,12 +251,12 @@ class ContactExp(Interaction):
             - A SymbolicConstant specifying the smoothing option to be used in the contact
               definition. Possible values of the SymbolicConstant are NONE, REVOLUTION, SPHERICAL, or
             TOROIDAL.
-        mainSecondaryAssignments
-            A sequence of tuples specifying pure main-secondary assignments in the contact domain.
+        masterSlaveAssignments
+            A sequence of tuples specifying pure master-slave assignments in the contact domain.
             Each tuple contains three entries:
             - A region object or the SymbolicConstant GLOBAL specifying the first surface that
-              defines the main-secondary assignment.
-            - A region object specifying the second surface in the main-secondary assignment
+              defines the master-slave assignment.
+            - A region object specifying the second surface in the master-slave assignment
               definition.
             - A SymbolicConstant specifying the status of the first surface. Possible values are
               MAIN and SECONDARY.
