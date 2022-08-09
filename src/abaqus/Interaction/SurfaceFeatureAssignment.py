@@ -44,7 +44,7 @@ class SurfaceFeatureAssignment:
               value to be used for the surface. Possible values of the SymbolicConstant are PERIMETER,
               ALL, PICKED, or NONE. The ALL and PICKED values cannot be specified with the GLOBAL
               region constant and can be used only in the Abaqus/Explicit version of general contact.
-            - A Float or a SymbolicConstant specifying the overriding surface secondary feature
+            - A Float or a SymbolicConstant specifying the overriding surface slave feature
               angle value to be used for the surface. Possible values of the SymbolicConstant are
               PERIMETER, ALL, PICKED, or NONE. The ALL and PICKED values cannot be specified with the
               GLOBAL region constant and can be used only in the Abaqus/Explicit version of general
