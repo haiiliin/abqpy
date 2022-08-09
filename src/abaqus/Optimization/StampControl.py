@@ -36,13 +36,13 @@ class StampControl(GeometricRestriction):
     #: A Float specifying the draw angle. The default value is 0.0.
     drawAngle: float = 0
 
-    #: None or a Region object specifying the main point used when **mainPointDetermination** is
+    #: None or a Region object specifying the master point used when **masterPointDetermination** is
     #: SPECIFY. The default value is None.
-    mainPoint: str = None
+    masterPoint: str = None
 
     #: A SymbolicConstant specifying the rule for assigning point priority. Possible values are
     #: MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-    mainPointDetermination: SymbolicConstant = MAXIMUM
+    masterPointDetermination: SymbolicConstant = MAXIMUM
 
     #: A Boolean specifying whether to ignore the geometric restriction in the first design
     #: cycle. The default value is ON.
@@ -70,8 +70,8 @@ class StampControl(GeometricRestriction):
         region: Region,
         csys: int = None,
         drawAngle: float = 0,
-        mainPoint: str = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPoint: str = None,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -104,10 +104,10 @@ class StampControl(GeometricRestriction):
             default value is None.
         drawAngle
             A Float specifying the draw angle. The default value is 0.0.
-        mainPoint
-            None or a Region object specifying the main point used when **mainPointDetermination** is
+        masterPoint
+            None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-        mainPointDetermination
+        masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart
@@ -137,8 +137,8 @@ class StampControl(GeometricRestriction):
         self,
         csys: int = None,
         drawAngle: float = 0,
-        mainPoint: str = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPoint: str = None,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -155,10 +155,10 @@ class StampControl(GeometricRestriction):
             default value is None.
         drawAngle
             A Float specifying the draw angle. The default value is 0.0.
-        mainPoint
-            None or a Region object specifying the main point used when **mainPointDetermination** is
+        masterPoint
+            None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-        mainPointDetermination
+        masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart

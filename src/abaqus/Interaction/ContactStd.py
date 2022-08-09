@@ -4,7 +4,7 @@ from abaqusConstants import *
 from .ContactPropertyAssignment import ContactPropertyAssignment
 from .InitializationAssignment import InitializationAssignment
 from .Interaction import Interaction
-from .MainSecondaryAssignment import MainSecondaryAssignment
+from .MasterSlaveAssignment import MasterSlaveAssignment
 from .RegionPairs import RegionPairs
 from .SlidingTransitionAssignment import SlidingTransitionAssignment
 from .SmoothingAssignment import SmoothingAssignment
@@ -59,9 +59,9 @@ class ContactStd(Interaction):
     #: the contact domain.
     surfaceOffsetAssignments: SurfaceOffsetAssignment = SurfaceOffsetAssignment()
 
-    #: A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
+    #: A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
     #: contact domain.
-    mainSecondaryAssignments: MainSecondaryAssignment = MainSecondaryAssignment()
+    masterSlaveAssignments: MasterSlaveAssignment = MasterSlaveAssignment()
 
     #: An :py:class:`~abaqus.Interaction.InitializationAssignment.InitializationAssignment` object specifying the contact initialization assignments in
     #: the contact domain.
@@ -104,8 +104,16 @@ class ContactStd(Interaction):
         contactPropertyAssignments: ContactPropertyAssignment = None, 
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
+<<<<<<< HEAD
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
         mainSecondaryAssignments: MainSecondaryAssignment = None, 
+=======
+        surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
+        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
+        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
+        slidingFormulationAssignments: tuple[SlidingFormulationAssignment, ...] = None,
+        masterSlaveAssignments: MasterSlaveAssignment = None,
+>>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
         initializationAssignments: InitializationAssignment = None, 
         stabilizationAssignments: StabilizationAssignment = None, 
         smoothingAssignments: SmoothingAssignment = None, 
@@ -148,8 +156,27 @@ class ContactStd(Interaction):
         surfaceFeatureAssignments
             A :py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment` object specifying the surface feature angle assignments in
             the contact domain.
+<<<<<<< HEAD
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
+=======
+        surfaceBeamSmoothingAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment` object specifying the surface beam smoothing
+            assignments in the contact domain.
+        surfaceVertexCriteriaAssignments
+            A :py:class:`~abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment` object specifying the surface vertex criteria
+            assignments in the contact domain.
+        slidingFormulationAssignments
+            A sequence of tuples of :py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment` specifying the sliding formulation assignments. Each tuple contains
+            two entries:
+
+            - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
+              sliding formulation attribute is assigned.
+            - A SymbolicConstant specifying the overriding the smoothness value to be used for the
+              first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
+        masterSlaveAssignments
+            A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
+>>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
             contact domain.
         initializationAssignments
             An :py:class:`~abaqus.Interaction.InitializationAssignment.InitializationAssignment` object specifying the contact initialization assignments in
@@ -185,7 +212,7 @@ class ContactStd(Interaction):
         surfaceFeatureAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
         surfaceThicknessAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
         surfaceOffsetAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
-        mainSecondaryAssignments: SymbolicConstant = None,
+        masterSlaveAssignments: SymbolicConstant = None,
         initializationAssignments: SymbolicConstant = None,
         stabilizationAssignments: SymbolicConstant = None,
         smoothingAssignments: SymbolicConstant = None,
@@ -252,12 +279,12 @@ class ContactStd(Interaction):
               surface offset fraction is assigned.
             - A Float or a SymbolicConstant specifying the offset fraction value to be used in the
               contact definition. Possible values of the SymbolicConstant are ORIGINAL, SPOS, or SNEG.
-        mainSecondaryAssignments
-            A sequence of tuples specifying main-secondary assignments in the contact domain. Each
+        masterSlaveAssignments
+            A sequence of tuples specifying master-slave assignments in the contact domain. Each
             tuple contains three entries:
             - A region object or the SymbolicConstant GLOBAL specifying the first surface that
-              defines the main-secondary assignment.
-            - A region object specifying the second surface in the main-secondary assignment
+              defines the master-slave assignment.
+            - A region object specifying the second surface in the master-slave assignment
               definition.
             - A SymbolicConstant specifying the status of the first surface. Possible values are
               MAIN, SECONDARY, and BALANCED.

@@ -27,11 +27,11 @@ class SurfaceToSurfaceContactExp(Interaction):
     #: is created.
     createStepName: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
-    main: Region
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the master surface.
+    master: Region
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
-    secondary: Region
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the slave surface.
+    slave: Region
 
     #: A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
     #: SMALL.
@@ -93,8 +93,8 @@ class SurfaceToSurfaceContactExp(Interaction):
         self,
         name: str,
         createStepName: str,
-        main: Region,
-        secondary: Region,
+        master: Region,
+        slave: Region,
         sliding: SymbolicConstant,
         interactionProperty: str,
         mechanicalConstraint: SymbolicConstant = KINEMATIC,
@@ -126,10 +126,10 @@ class SurfaceToSurfaceContactExp(Interaction):
         createStepName
             A String specifying the name of the step in which the SurfaceToSurfaceContactExp object
             is created.
-        main
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
-        secondary
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+        master
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the master surface.
+        slave
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the slave surface.
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
             SMALL.
@@ -182,7 +182,7 @@ class SurfaceToSurfaceContactExp(Interaction):
         pass
 
     def swapSurfaces(self):
-        """This method switches the main and secondary surfaces of a surface-to-surface contact
+        """This method switches the master and slave surfaces of a surface-to-surface contact
         pair. This command is valid only during the step in which the interaction is created.
         """
         pass
