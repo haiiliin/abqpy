@@ -146,7 +146,13 @@ You can specify the version number when installing `abqpy`, for example:
 
 .. code-block:: sh
 
-    pip install git+https://github.com/haiiliin/abqpy.git@v2022
+    pip install git+https://github.com/haiiliin/abqpy.git@V2022
+    pip install git+https://github.com/haiiliin/abqpy.git@V2021
+    pip install git+https://github.com/haiiliin/abqpy.git@V2020
+    pip install git+https://github.com/haiiliin/abqpy.git@V2019
+    pip install git+https://github.com/haiiliin/abqpy.git@V2018
+    pip install git+https://github.com/haiiliin/abqpy.git@V2017
+    pip install git+https://github.com/haiiliin/abqpy.git@V2016
 
 Dependencies
 ------------
