@@ -317,7 +317,7 @@ class FieldOutputRequest:
         modes: SymbolicConstant = ALL,
         timeInterval: typing.Union[SymbolicConstant, float] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
-        timePoints: str = None,
+        timePoint: str = None,
         timeMarks: Boolean = OFF,
     ):
         """This method modifies the propagating data for an existing FieldOutputRequest object in
@@ -343,7 +343,7 @@ class FieldOutputRequest:
         numIntervals
             An Int equal to the number of intervals during the step at which output database states
             are to be written. The default value is 20.
-        timePoints
+        timePoint
             A String specifying the name of a time point object. The default value is equal to the
             number of intervals during the step at which output database states are to be written.
             The default value is None.

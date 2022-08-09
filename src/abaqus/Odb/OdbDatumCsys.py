@@ -221,3 +221,38 @@ class OdbDatumCsys:
             An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         pass
+
+    def globalToLocal(
+        self, coordinates: tuple[float, float, float]
+    ) -> tuple[float, float, float]:
+        """This method transforms specified coordinates in the global coordinate system into this
+        local coordinate system.
+
+        Parameters
+        ----------
+        coordinates
+            A tuple of three Floats representing the coordinates in the global coordinate system.
+
+        Returns
+        -------
+        tuple[float, float, float]
+            A tuple of three Floats representing the coordinates in this local coordinate system.
+        """
+        pass
+
+    def localToGlobal(
+        self, coordinates: tuple[float, float, float]
+    ) -> tuple[float, float, float]:
+        """This method transforms specified coordinates in this local coordinate system into the global coordinate system.
+
+        Parameters
+        ----------
+        coordinates
+            A tuple of three Floats representing the coordinates in the local coordinate system.
+
+        Returns
+        -------
+        tuple[float, float, float]
+            A tuple of three Floats representing the coordinates in this global coordinate system.
+        """
+        pass

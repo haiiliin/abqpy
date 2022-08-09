@@ -1,5 +1,7 @@
 import typing
 
+from abaqus.Datum.DatumCsys import DatumCsys
+
 from abaqusConstants import *
 from .AssemblyModel import AssemblyModel
 from .ConnectorOrientationArray import ConnectorOrientationArray
@@ -447,7 +449,7 @@ class AssemblyBase(Feature):
         """
         pass
 
-    def getDistance(self, entity1: str, entity2: str, printResults: Boolean = OFF):
+    def getDistance(self, entity1: str, entity2: str, printResults: Boolean = OFF, csys: DatumCsys = DatumCsys()):
         """Depending on the arguments provided, this method returns one of the following:
         
         - The distance between two points.
@@ -464,6 +466,9 @@ class AssemblyBase(Feature):
             measure.
         printResults
             A Boolean that determines whether a verbose output is to be printed. The default is True
+        csys
+            A DatumCsys object specifying the desired coordinate system of the returned coordinates.
+            By default, coordinates are given in the global coordinate system.
 
         Returns
         -------

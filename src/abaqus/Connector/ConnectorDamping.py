@@ -73,6 +73,10 @@ class ConnectorDamping(ConnectorBehaviorOption):
     #: for this ConnectorBehaviorOption.
     options: ConnectorOptions = ConnectorOptions()
 
+    #: A SymbolicConstant specifying if the damping type is viscous or structural. Possible values are
+    #: VISCOUS and STRUCTURAL. The default value is VISCOUS.
+    type: SymbolicConstant = VISCOUS
+
     #: A SymbolicConstant specifying if the damping behavior is linear or nonlinear. Possible
     #: values are LINEAR and NONLINEAR. The default value is LINEAR.
     behavior: SymbolicConstant = LINEAR
@@ -114,6 +118,7 @@ class ConnectorDamping(ConnectorBehaviorOption):
 
     def __init__(
         self,
+        type: SymbolicConstant = VISCOUS,
         behavior: SymbolicConstant = LINEAR,
         coupling: SymbolicConstant = UNCOUPLED,
         dependencies: int = 0,
@@ -137,6 +142,9 @@ class ConnectorDamping(ConnectorBehaviorOption):
 
         Parameters
         ----------
+        type
+            A SymbolicConstant specifying if the damping type is viscous or structural. Possible values are
+            VISCOUS and STRUCTURAL. The default value is VISCOUS.
         behavior
             A SymbolicConstant specifying if the damping behavior is linear or nonlinear. Possible
             values are LINEAR and NONLINEAR. The default value is LINEAR.

@@ -152,6 +152,7 @@ class ConnectorSection(SectionBase):
 
     def ConnectorDamping(
         self,
+        type: SymbolicConstant = VISCOUS,
         behavior: SymbolicConstant = LINEAR,
         coupling: SymbolicConstant = UNCOUPLED,
         dependencies: int = 0,
@@ -175,6 +176,9 @@ class ConnectorSection(SectionBase):
 
         Parameters
         ----------
+        type
+            A SymbolicConstant specifying if the damping type is viscous or structural. Possible values are
+            VISCOUS and STRUCTURAL. The default value is VISCOUS.
         behavior
             A SymbolicConstant specifying if the damping behavior is linear or nonlinear. Possible
             values are LINEAR and NONLINEAR. The default value is LINEAR.

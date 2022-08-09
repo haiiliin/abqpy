@@ -167,6 +167,8 @@ class ElemType:
         quadraticBulkViscosity: float = 1,
         numFourierModes: int = 1,
         nodeOffset: int = None,
+        linearKinematicCtrl: float = None,
+        initialGapOpening: float = None,
     ):
         """This method creates an ElemType object.
 
@@ -283,6 +285,12 @@ class ElemType:
             An Int specifying the positive offset number for specifying the additional nodes needed
             in the connectivity.This argument is applicable only for axisymmetric elements with
             nonlinear asymmetric deformation.
+        linearKinematicCtrl
+            A Float specifying the linear kinematic conversion value.This argument is applicable
+            only to some Abaqus/Explicit elements.
+        initialGapOpening
+            A Float specifying the initial gap opening.This parameter is applicable only to some
+            Abaqus/Standard elements.
 
         Returns
         -------
