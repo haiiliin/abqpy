@@ -13,7 +13,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    concurrency: pages_staging_environment
+    concurrency: ci-${{ github.ref }}
     steps:
     - uses: actions/setup-python@v2
     - uses: actions/checkout@master
