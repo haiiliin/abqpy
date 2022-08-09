@@ -16,7 +16,7 @@ class MeshFaceArray(list[MeshFace]):
             mdb.models[name].rootAssembly.instances[name].elementFaces
     """
 
-    def __init__(self, elemFaces: list[MeshFace]):
+    def __init__(self, faces: list[MeshFace]):
         """This method creates a MeshFaceArray object.
 
         .. note:: 
@@ -28,7 +28,7 @@ class MeshFaceArray(list[MeshFace]):
 
         Parameters
         ----------
-        elemFaces
+        faces
             A list of MeshFace objects.
 
         Returns

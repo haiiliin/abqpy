@@ -34,7 +34,6 @@ from .StepOptionArray import StepOptionArray
 from .TopologyCyclicSymmetry import TopologyCyclicSymmetry
 from .TopologyDemoldControl import TopologyDemoldControl
 from .TopologyMemberSize import TopologyMemberSize
-from .TopologyMillingControl import TopologyMillingControl
 from .TopologyPlanarSymmetry import TopologyPlanarSymmetry
 from .TopologyPointSymmetry import TopologyPointSymmetry
 from .TopologyRotationalSymmetry import TopologyRotationalSymmetry
@@ -436,8 +435,8 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         region: Region,
         csys: int = None,
-        mainPoint: str = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPoint: str = None,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         movementRestriction: SymbolicConstant = VECTOR,
         presumeFeasibleRegionAtStart: Boolean = ON,
         u1: Boolean = ON,
@@ -465,16 +464,16 @@ class OptimizationTask(OptimizationTaskBase):
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
-        mainPoint
-            None or a Region object specifying the main point used when **mainPointDetermination** is
+        masterPoint
+            None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-        mainPointDetermination
+        masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
         movementRestriction
             A SymbolicConstant specifying whether movement in the region should follow only the
-            direction of the **mainPoint**, only the magnitude, or both the magnitude of the
-            **mainPoint** and the directions specified by **u1**, **u2** and **u3**. Possible values are
+            direction of the **masterPoint**, only the magnitude, or both the magnitude of the
+            **masterPoint** and the directions specified by **u1**, **u2** and **u3**. Possible values are
             DIRECTION, MAGNITUDE, and VECTOR. The default value is VECTOR.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
@@ -501,8 +500,8 @@ class OptimizationTask(OptimizationTaskBase):
             name,
             region,
             csys,
-            mainPoint,
-            mainPointDetermination,
+            masterPoint,
+            masterPointDetermination,
             movementRestriction,
             presumeFeasibleRegionAtStart,
             u1,
@@ -518,8 +517,8 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         csys: int = None,
         drawAngle: float = 0,
-        mainPoint: str = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPoint: str = None,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -553,10 +552,10 @@ class OptimizationTask(OptimizationTaskBase):
             default value is None.
         drawAngle
             A Float specifying the draw angle. The default value is 0.0.
-        mainPoint
-            None or a Region object specifying the main point used when **mainPointDetermination** is
+        masterPoint
+            None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-        mainPointDetermination
+        masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart
@@ -585,8 +584,8 @@ class OptimizationTask(OptimizationTaskBase):
             region,
             csys,
             drawAngle,
-            mainPoint,
-            mainPointDetermination,
+            masterPoint,
+            masterPointDetermination,
             presumeFeasibleRegionAtStart,
             tolerance1,
             tolerance2,
@@ -771,7 +770,7 @@ class OptimizationTask(OptimizationTaskBase):
         collisionCheckRegion: SymbolicConstant = DEMOLD_REGION,
         csys: int = None,
         drawAngle: float = 0,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -809,7 +808,7 @@ class OptimizationTask(OptimizationTaskBase):
             value is None.
         drawAngle
             A Float specifying the draw angle. The default value is 0.0.
-        mainPointDetermination
+        masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM and MINIMUM. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart
@@ -839,7 +838,7 @@ class OptimizationTask(OptimizationTaskBase):
             collisionCheckRegion,
             csys,
             drawAngle,
-            mainPointDetermination,
+            masterPointDetermination,
             presumeFeasibleRegionAtStart,
             tolerance1,
             tolerance2,
@@ -855,8 +854,6 @@ class OptimizationTask(OptimizationTaskBase):
         maxThickness: float = 0,
         minThickness: float = 0,
         sizeRestriction: SymbolicConstant = MINIMUM,
-        assignNodeGroupRegion: str = OFF,
-        nodeGroupRegion: str = "",
     ) -> ShapeMemberSize:
         """This method creates a ShapeMemberSize object.
 
@@ -882,10 +879,6 @@ class OptimizationTask(OptimizationTaskBase):
         sizeRestriction
             A SymbolicConstant specifying whether to restrict the minimum or maximum thickness.
             Possible values are MAXIMUM and MINIMUM. The default value is MINIMUM.
-        assignNodeGroupRegion
-            A bool specifying whether to use the node group region. The default value is OFF.
-        nodeGroupRegion
-            A Node Region object specifying the check node group.
 
         Returns
         -------
@@ -898,8 +891,6 @@ class OptimizationTask(OptimizationTaskBase):
             maxThickness,
             minThickness,
             sizeRestriction,
-            assignNodeGroupRegion,
-            nodeGroupRegion,
         )
         return geometricRestriction
 
@@ -909,7 +900,7 @@ class OptimizationTask(OptimizationTaskBase):
         clientDirection: tuple,
         region: Region,
         csys: int = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -940,8 +931,8 @@ class OptimizationTask(OptimizationTaskBase):
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
-        mainPointDetermination
-            A SymbolicConstant specifying the rule for determining the main node. Possible values
+        masterPointDetermination
+            A SymbolicConstant specifying the rule for determining the master node. Possible values
             are MAXIMUM and MINIMUM. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
@@ -966,7 +957,7 @@ class OptimizationTask(OptimizationTaskBase):
             clientDirection,
             region,
             csys,
-            mainPointDetermination,
+            masterPointDetermination,
             presumeFeasibleRegionAtStart,
             tolerance1,
             tolerance2,
@@ -979,7 +970,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         region: Region,
         csys: int = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -1006,8 +997,8 @@ class OptimizationTask(OptimizationTaskBase):
             None or a DatumCsys object specifying the symmetry point represented as the origin of a
             local coordinate system. If **csys** = None, the global coordinate system is used. When this
             member is queried, it returns an Int. The default value is None.
-        mainPointDetermination
-            A SymbolicConstant specifying the rule for determining the main node. Possible values
+        masterPointDetermination
+            A SymbolicConstant specifying the rule for determining the master node. Possible values
             are MAXIMUM and MINIMUM. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
@@ -1031,7 +1022,7 @@ class OptimizationTask(OptimizationTaskBase):
             name,
             region,
             csys,
-            mainPointDetermination,
+            masterPointDetermination,
             presumeFeasibleRegionAtStart,
             tolerance1,
             tolerance2,
@@ -1046,8 +1037,8 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         angle: float = 0,
         csys: int = None,
-        mainPoint: str = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPoint: str = None,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         startPoint: float = None,
         tolerance1: float = 0,
@@ -1082,11 +1073,11 @@ class OptimizationTask(OptimizationTaskBase):
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
-        mainPoint
-            None or a Region object specifying the main point used when **mainPointDetermination** is
+        masterPoint
+            None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-        mainPointDetermination
-            A SymbolicConstant specifying the rule for determining the main node. Possible values
+        masterPointDetermination
+            A SymbolicConstant specifying the rule for determining the master node. Possible values
             are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
@@ -1117,8 +1108,8 @@ class OptimizationTask(OptimizationTaskBase):
             region,
             angle,
             csys,
-            mainPoint,
-            mainPointDetermination,
+            masterPoint,
+            masterPointDetermination,
             presumeFeasibleRegionAtStart,
             startPoint,
             tolerance1,
@@ -1481,8 +1472,8 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         csys: int = None,
         drawAngle: float = 0,
-        mainPoint: str = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPoint: str = None,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -1515,10 +1506,10 @@ class OptimizationTask(OptimizationTaskBase):
             default value is None.
         drawAngle
             A Float specifying the draw angle. The default value is 0.0.
-        mainPoint
-            None or a Region object specifying the main point used when **mainPointDetermination** is
+        masterPoint
+            None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-        mainPointDetermination
+        masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart
@@ -1547,8 +1538,8 @@ class OptimizationTask(OptimizationTaskBase):
             region,
             csys,
             drawAngle,
-            mainPoint,
-            mainPointDetermination,
+            masterPoint,
+            masterPointDetermination,
             presumeFeasibleRegionAtStart,
             tolerance1,
             tolerance2,
@@ -1721,59 +1712,6 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
-    def TopologyMillingControl(
-        self,
-        name: str,
-        millingDirections: tuple,
-        region: Region,
-        csys: int = None,
-        millingCheckRegion: SymbolicConstant = MILLING_REGION,
-        radius: float = None,
-    ) -> TopologyMillingControl:
-        """This method creates a TopologyMillingControl object.
-
-        .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
-
-                mdb.models[name].optimizationTasks[name].TopologyMillingControl
-
-        Parameters
-        ----------
-        name
-            A String specifying the geometric restriction repository key.
-        millingDirections
-            A tuple of VertexArray objects of length 2 specifying the milling directions. Each point
-            can be specified through a tuple of coordinates instead of through a ConstrainedSketchVertex.
-        region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-        csys
-            None or a DatumCsys object specifying the local coordinate system of the
-            **millingDirections**. If **csys** = None, the global coordinate system is used. When this
-            member is queried, it returns an Int indicating the identifier of the DatumCsys. The
-            default value is None.
-        millingCheckRegion
-            The SymbolicConstant MILLING_REGION or a Region object specifying the milling check
-            region. If the value is MILLING_REGION, the value of **region** is used as both the
-            milling control region and the milling check region. The default value is
-            MILLING_REGION.
-        radius
-            A Float specifying the radius for the collision check during the removal of the elements
-            for the milling criteria.
-
-        Returns
-        -------
-        TopologyMillingControl
-            A :py:class:`~abaqus.Optimization.TopologyMillingControl.TopologyMillingControl` object.
-        """
-        self.geometricRestrictions[
-            name
-        ] = geometricRestriction = TopologyMillingControl(
-            name, millingDirections, region, csys, millingCheckRegion, radius
-        )
-        return geometricRestriction
-
     def TopologyPlanarSymmetry(
         self,
         name: str,
@@ -1918,8 +1856,8 @@ class OptimizationTask(OptimizationTaskBase):
         clientDirection: tuple,
         region: Region,
         csys: int = None,
-        mainPoint: str = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPoint: str = None,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -1950,10 +1888,10 @@ class OptimizationTask(OptimizationTaskBase):
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
-        mainPoint
-            None or a Region object specifying the main point used when **mainPointDetermination** is
+        masterPoint
+            None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-        mainPointDetermination
+        masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart
@@ -1979,8 +1917,8 @@ class OptimizationTask(OptimizationTaskBase):
             clientDirection,
             region,
             csys,
-            mainPoint,
-            mainPointDetermination,
+            masterPoint,
+            masterPointDetermination,
             presumeFeasibleRegionAtStart,
             tolerance1,
             tolerance2,

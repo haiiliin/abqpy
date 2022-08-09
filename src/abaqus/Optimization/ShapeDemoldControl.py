@@ -44,7 +44,7 @@ class ShapeDemoldControl(GeometricRestriction):
 
     #: A SymbolicConstant specifying the rule for assigning point priority. Possible values are
     #: MAXIMUM and MINIMUM. The default value is MAXIMUM.
-    mainPointDetermination: SymbolicConstant = MAXIMUM
+    masterPointDetermination: SymbolicConstant = MAXIMUM
 
     #: A Boolean specifying whether to ignore the geometric restriction in the first design
     #: cycle. The default value is ON.
@@ -73,7 +73,7 @@ class ShapeDemoldControl(GeometricRestriction):
         collisionCheckRegion: SymbolicConstant = DEMOLD_REGION,
         csys: int = None,
         drawAngle: float = 0,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -111,7 +111,7 @@ class ShapeDemoldControl(GeometricRestriction):
             value is None.
         drawAngle
             A Float specifying the draw angle. The default value is 0.0.
-        mainPointDetermination
+        masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM and MINIMUM. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart
@@ -142,7 +142,7 @@ class ShapeDemoldControl(GeometricRestriction):
         collisionCheckRegion: SymbolicConstant = DEMOLD_REGION,
         csys: int = None,
         drawAngle: float = 0,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -164,7 +164,7 @@ class ShapeDemoldControl(GeometricRestriction):
             value is None.
         drawAngle
             A Float specifying the draw angle. The default value is 0.0.
-        mainPointDetermination
+        masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM and MINIMUM. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart

@@ -36,7 +36,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
 
     #: A SymbolicConstant specifying the rule for determining the main node. Possible values
     #: are MAXIMUM and MINIMUM. The default value is MAXIMUM.
-    mainPointDetermination: SymbolicConstant = MAXIMUM
+    masterPointDetermination: SymbolicConstant = MAXIMUM
 
     #: A Boolean specifying whether to ignore the geometric restriction in the first design
     #: cycle. The default value is ON.
@@ -60,7 +60,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
         clientDirection: tuple,
         region: Region,
         csys: int = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -91,8 +91,8 @@ class ShapePlanarSymmetry(GeometricRestriction):
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
-        mainPointDetermination
-            A SymbolicConstant specifying the rule for determining the main node. Possible values
+        masterPointDetermination
+            A SymbolicConstant specifying the rule for determining the master node. Possible values
             are MAXIMUM and MINIMUM. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
@@ -118,7 +118,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
     def setValues(
         self,
         csys: int = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -132,8 +132,8 @@ class ShapePlanarSymmetry(GeometricRestriction):
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
-        mainPointDetermination
-            A SymbolicConstant specifying the rule for determining the main node. Possible values
+        masterPointDetermination
+            A SymbolicConstant specifying the rule for determining the master node. Possible values
             are MAXIMUM and MINIMUM. The default value is MAXIMUM.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
