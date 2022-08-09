@@ -855,8 +855,6 @@ class OptimizationTask(OptimizationTaskBase):
         maxThickness: float = 0,
         minThickness: float = 0,
         sizeRestriction: SymbolicConstant = MINIMUM,
-        assignNodeGroupRegion: str = OFF,
-        nodeGroupRegion: str = "",
     ) -> ShapeMemberSize:
         """This method creates a ShapeMemberSize object.
 
@@ -882,10 +880,6 @@ class OptimizationTask(OptimizationTaskBase):
         sizeRestriction
             A SymbolicConstant specifying whether to restrict the minimum or maximum thickness.
             Possible values are MAXIMUM and MINIMUM. The default value is MINIMUM.
-        assignNodeGroupRegion
-            A bool specifying whether to use the node group region. The default value is OFF.
-        nodeGroupRegion
-            A Node Region object specifying the check node group.
 
         Returns
         -------
@@ -898,8 +892,6 @@ class OptimizationTask(OptimizationTaskBase):
             maxThickness,
             minThickness,
             sizeRestriction,
-            assignNodeGroupRegion,
-            nodeGroupRegion,
         )
         return geometricRestriction
 
