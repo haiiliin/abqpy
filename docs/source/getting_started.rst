@@ -134,7 +134,19 @@ the local directory:
     cd abqpy
     python setup.py install
 
+Install Specific Version
+------------------------
 
+You can specify the version number when installing `abqpy`, for example:
+
+.. code-block:: sh
+
+    pip install abqpy==2022a10
+    conda install -c haiiliin abqpy=2022a10
+
+.. code-block:: sh
+
+    pip install git+https://github.com/haiiliin/abqpy.git@v2022
 
 Dependencies
 ------------
