@@ -55,6 +55,24 @@ pip install abqpy
 conda install -c haiiliin abqpy
 ```
 
+## Install A Specific Version
+
+You can specify the version number when installing `abqpy`, for example:
+```shell
+pip install abqpy==2022a10
+conda install -c haiiliin abqpy=2022a10
+```
+A better way is to install the package from source without specifying the patch number:
+```shell
+pip install git+https://github.com/haiiliin/abqpy.git@V2022
+pip install git+https://github.com/haiiliin/abqpy.git@V2021
+pip install git+https://github.com/haiiliin/abqpy.git@V2020
+pip install git+https://github.com/haiiliin/abqpy.git@V2019
+pip install git+https://github.com/haiiliin/abqpy.git@V2018
+pip install git+https://github.com/haiiliin/abqpy.git@V2017
+pip install git+https://github.com/haiiliin/abqpy.git@V2016
+```
+
 ## Optional Requirements
 
 You can put your Abaqus/Python script into a Jupyter Notebook.
