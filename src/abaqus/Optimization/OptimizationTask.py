@@ -34,7 +34,11 @@ from .StepOptionArray import StepOptionArray
 from .TopologyCyclicSymmetry import TopologyCyclicSymmetry
 from .TopologyDemoldControl import TopologyDemoldControl
 from .TopologyMemberSize import TopologyMemberSize
+<<<<<<< HEAD
 from .TopologyMillingControl import TopologyMillingControl
+=======
+from .TopologyOverhangControl import TopologyOverhangControl
+>>>>>>> 3769627 (Remove TopologyMillingControl for V2016-V2021)
 from .TopologyPlanarSymmetry import TopologyPlanarSymmetry
 from .TopologyPointSymmetry import TopologyPointSymmetry
 from .TopologyRotationalSymmetry import TopologyRotationalSymmetry
@@ -1721,6 +1725,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+<<<<<<< HEAD
     def TopologyMillingControl(
         self,
         name: str,
@@ -1733,16 +1738,38 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a TopologyMillingControl object.
 
         .. note:: 
+=======
+    def TopologyOverhangControl(
+        self,
+        name: str,
+        pullDirection: tuple,
+        region: Region,
+        csys: int = None,
+        draftAngle: float = 45,
+        overhangCheckRegion: SymbolicConstant = OVERHANG_REGION,
+        pointRegion: Region = Region(),
+        radius: float = None,
+        technique: SymbolicConstant = AUTO,
+    ) -> TopologyOverhangControl:
+        """This method creates a TopologyOverhangControl object.
+
+        .. note::
+>>>>>>> 3769627 (Remove TopologyMillingControl for V2016-V2021)
             This function can be accessed by:
 
             .. code-block:: python
 
+<<<<<<< HEAD
                 mdb.models[name].optimizationTasks[name].TopologyMillingControl
+=======
+                mdb.models[name].optimizationTasks[name].TopologyOverhangControl
+>>>>>>> 3769627 (Remove TopologyMillingControl for V2016-V2021)
 
         Parameters
         ----------
         name
             A String specifying the geometric restriction repository key.
+<<<<<<< HEAD
         millingDirections
             A tuple of VertexArray objects of length 2 specifying the milling directions. Each point
             can be specified through a tuple of coordinates instead of through a ConstrainedSketchVertex.
@@ -1771,6 +1798,51 @@ class OptimizationTask(OptimizationTaskBase):
             name
         ] = geometricRestriction = TopologyMillingControl(
             name, millingDirections, region, csys, millingCheckRegion, radius
+=======
+        pullDirection
+            A VertexArray object of length 2 specifying the overhang control print direction.
+            Instead of through a ConstrainedSketchVertex, each point can be specified through a tuple of coordinates.
+        region
+            A Region object specifying the region to which the geometric restriction is applied.
+        csys
+            None or a DatumCsys object specifying the local coordinate system of the
+            *pullDirection*. If *csys*=None, the global coordinate system is used. When this member
+            is queried, it returns an Int indicating the identifier of the DatumCsys. The default
+            value is None.
+        draftAngle
+            A Float specifying the overhang angle. The default value is 45.0.
+        overhangCheckRegion
+            The SymbolicConstant OVERHANG_REGION or a Region object specifying the overhang check
+            region. If the value is OVERHANG_REGION, the value of *region* is used as both the
+            overhang control region and the overhang check region. The default value is
+            OVERHANG_REGION.
+        pointRegion
+            A Region object specifying the point on a plane perpendicular to the *pullDirection*
+            that is used to specify the base plane when *technique* is POINT.
+        radius
+            A Float specifying the radius to define the size of the cones that are used in the
+            internal check for the overhang criteria.
+        technique
+            A SymbolicConstant specifying the overhang control technique used to define the base
+            plane. Possible values are AUTO, POINT, and NONE. The default value is AUTO.
+
+        Returns
+        -------
+            A TopologyOverhangControl object.
+        """
+        self.geometricRestrictions[
+            name
+        ] = geometricRestriction = TopologyOverhangControl(
+            name,
+            pullDirection,
+            region,
+            csys,
+            draftAngle,
+            overhangCheckRegion,
+            pointRegion,
+            radius,
+            technique,
+>>>>>>> 3769627 (Remove TopologyMillingControl for V2016-V2021)
         )
         return geometricRestriction
 

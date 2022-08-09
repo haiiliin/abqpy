@@ -375,14 +375,6 @@ TopologyMemberSize
 
     .. autoclasstoc::
 
-TopologyMillingControl
-~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: abaqus.Optimization.TopologyMillingControl.TopologyMillingControl
-    :members:
-
-    .. autoclasstoc::
-
 TopologyPlanarSymmetry
 ~~~~~~~~~~~~~~~~~~~~~~
 
