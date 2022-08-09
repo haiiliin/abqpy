@@ -81,11 +81,6 @@ class SizingTask(OptimizationTask):
     #: The default value is NORMAL.
     thicknessUpdateStrategy: SymbolicConstant = NORMAL
 
-    #: A Boolean specifying whether the group in the design response will be evaluated using
-    #: the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-    #: value of False means that the existing algorithm will be used.
-    groupOperator: Boolean = OFF
-
     def __init__(
         self,
         name: str,
@@ -99,7 +94,6 @@ class SizingTask(OptimizationTask):
         stopCriteriaDesignCycle: int = 4,
         thicknessMoveLimit: float = 0,
         thicknessUpdateStrategy: SymbolicConstant = NORMAL,
-        groupOperator: Boolean = OFF,
     ):
         """This method creates a SizingTask object.
 
@@ -143,10 +137,6 @@ class SizingTask(OptimizationTask):
             A SymbolicConstant specifying the strategy for how the thickness is updated in the
             method of moving asymptotes. Possible values are NORMAL, CONSERVATIVE, and AGGRESSIVE.
             The default value is NORMAL.
-        groupOperator
-            A Boolean specifying whether the group in the design response will be evaluated using
-            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-            value of False means that the existing algorithm will be used.
 
         Returns
         -------
@@ -168,7 +158,6 @@ class SizingTask(OptimizationTask):
         stopCriteriaDesignCycle: int = 4,
         thicknessMoveLimit: float = 0,
         thicknessUpdateStrategy: SymbolicConstant = NORMAL,
-        groupOperator: Boolean = OFF,
     ):
         """This method modifies the SizingTask object.
 
@@ -203,9 +192,5 @@ class SizingTask(OptimizationTask):
             A SymbolicConstant specifying the strategy for how the thickness is updated in the
             method of moving asymptotes. Possible values are NORMAL, CONSERVATIVE, and AGGRESSIVE.
             The default value is NORMAL.
-        groupOperator
-            A Boolean specifying whether the group in the design response will be evaluated using
-            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-            value of False means that the existing algorithm will be used.
         """
         pass
