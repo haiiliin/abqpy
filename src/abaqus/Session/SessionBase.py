@@ -463,8 +463,8 @@ class SessionBase:
             A sequence of canvas objects (viewports, text strings, or arrows) to print. The default
             is to print all canvas objects.
         compression
-            A Boolean specifying the format for an SVG file. It is only valid to use this argument
-            when **format** is SVG. Possible values are False (Uncompressed) and True (Compressed).
+            A Boolean specifying the format for an SVG file. It is valid to use this argument
+            only when **format** is SVG. Possible values are False (Uncompressed) and True (Compressed).
         """
         pass
 
