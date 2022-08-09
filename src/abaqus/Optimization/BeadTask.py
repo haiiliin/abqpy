@@ -147,7 +147,6 @@ class BeadTask(OptimizationTask):
         nodeUpdateStrategy: SymbolicConstant = CONSERVATIVE,
         numTrackedModes: int = 5,
         updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
-        groupOperator: Boolean = OFF,
     ):
         """This method creates a BeadTask object.
 
@@ -223,10 +222,6 @@ class BeadTask(OptimizationTask):
             A SymbolicConstant specifying whether to update shape basis vectors in the first design
             cycle or every design cycle. Possible values are EVERY_CYCLE and FIRST_CYCLE. The
             default value is EVERY_CYCLE.
-        groupOperator
-            A Boolean specifying whether the group in the design response will be evaluated using
-            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-            value of False means that the existing algorithm will be used.
 
         Returns
         -------
@@ -258,7 +253,6 @@ class BeadTask(OptimizationTask):
         nodeUpdateStrategy: SymbolicConstant = CONSERVATIVE,
         numTrackedModes: int = 5,
         updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
-        groupOperator: Boolean = OFF,
     ):
         """This method modifies the BeadTask object.
 
@@ -325,9 +319,5 @@ class BeadTask(OptimizationTask):
             A SymbolicConstant specifying whether to update shape basis vectors in the first design
             cycle or every design cycle. Possible values are EVERY_CYCLE and FIRST_CYCLE. The
             default value is EVERY_CYCLE.
-        groupOperator
-            A Boolean specifying whether the group in the design response will be evaluated using
-            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-            value of False means that the existing algorithm will be used.
         """
         pass

@@ -5,7 +5,7 @@ from ..Region.RegionArray import RegionArray
 
 
 class SecondaryBaseBC(BoundaryCondition):
-    """The SecondaryBaseBC object stores the data for a secondary base boundary condition.
+    """The SecondaryBaseBC object stores the data for a slave base boundary condition.
     The SecondaryBaseBC object is derived from the BoundaryCondition object.
 
     .. note:: 

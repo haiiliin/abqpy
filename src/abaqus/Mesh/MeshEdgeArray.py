@@ -16,7 +16,7 @@ class MeshEdgeArray(list[MeshEdge]):
             mdb.models[name].rootAssembly.instances[name].elementEdges
     """
 
-    def __init__(self, elemEdges: list[MeshEdge]):
+    def __init__(self, edges: list[MeshEdge]):
         """This method creates a MeshEdgeArray object.
 
         .. note:: 
@@ -28,7 +28,7 @@ class MeshEdgeArray(list[MeshEdge]):
 
         Parameters
         ----------
-        elemEdges
+        edges
             A list of MeshEdge objects.
 
         Returns

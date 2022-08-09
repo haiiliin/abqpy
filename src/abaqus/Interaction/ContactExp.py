@@ -3,7 +3,7 @@ import typing
 from abaqusConstants import *
 from .ContactPropertyAssignment import ContactPropertyAssignment
 from .Interaction import Interaction
-from .MainSecondaryAssignment import MainSecondaryAssignment
+from .MasterSlaveAssignment import MasterSlaveAssignment
 from .PolarityAssignments import PolarityAssignments
 from .RegionPairs import RegionPairs
 from .SmoothingAssignment import SmoothingAssignment
@@ -67,9 +67,9 @@ class ContactExp(Interaction):
     #: domain.
     smoothingAssignments: SmoothingAssignment = SmoothingAssignment()
 
-    #: A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
+    #: A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
     #: contact domain.
-    mainSecondaryAssignments: MainSecondaryAssignment = MainSecondaryAssignment()
+    masterSlaveAssignments: MasterSlaveAssignment = MasterSlaveAssignment()
 
     #: A PolarityAssignments object specifying the polarity assignments in the contact domain.
     polarityAssignments: PolarityAssignments = PolarityAssignments()
@@ -90,7 +90,7 @@ class ContactExp(Interaction):
         smoothingAssignments: SmoothingAssignment = None,
         surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
         surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
-        mainSecondaryAssignments: MainSecondaryAssignment = None,
+        masterSlaveAssignments: MasterSlaveAssignment = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
@@ -140,8 +140,8 @@ class ContactExp(Interaction):
         surfaceFrictionAssignments
             A :py:class:`~abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment` object specifying the surface friction assignments in the
             contact domain.
-        mainSecondaryAssignments
-            A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
+        masterSlaveAssignments
+            A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
             contact domain.
         polarityAssignments
             A PolarityAssignments object specifying the polarity assignments in the contact domain.
@@ -170,7 +170,7 @@ class ContactExp(Interaction):
         surfaceOffsetAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
         surfaceFeatureAssignments: typing.Union[SymbolicConstant, float] = PERIMETER,
         smoothingAssignments: SymbolicConstant = None,
-        mainSecondaryAssignments: SymbolicConstant = None,
+        masterSlaveAssignments: SymbolicConstant = None,
         polarityAssignments: SymbolicConstant = None,
     ):
         """This method creates a ContactExp object.
@@ -248,12 +248,12 @@ class ContactExp(Interaction):
             - A SymbolicConstant specifying the smoothing option to be used in the contact
               definition. Possible values of the SymbolicConstant are NONE, REVOLUTION, SPHERICAL, or
             TOROIDAL.
-        mainSecondaryAssignments
-            A sequence of tuples specifying pure main-secondary assignments in the contact domain.
+        masterSlaveAssignments
+            A sequence of tuples specifying pure master-slave assignments in the contact domain.
             Each tuple contains three entries:
             - A region object or the SymbolicConstant GLOBAL specifying the first surface that
-              defines the main-secondary assignment.
-            - A region object specifying the second surface in the main-secondary assignment
+              defines the master-slave assignment.
+            - A region object specifying the second surface in the master-slave assignment
               definition.
             - A SymbolicConstant specifying the status of the first surface. Possible values are
               MAIN and SECONDARY.
