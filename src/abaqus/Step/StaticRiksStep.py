@@ -343,7 +343,7 @@ class StaticRiksStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -442,4 +442,4 @@ class StaticRiksStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

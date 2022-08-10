@@ -136,7 +136,7 @@ class Creep:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Creep object.
@@ -145,4 +145,4 @@ class Creep:
         ------
         RangeError
         """
-        pass
+        ...

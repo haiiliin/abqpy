@@ -136,7 +136,7 @@ class ConnAccelerationBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -204,7 +204,7 @@ class ConnAccelerationBC(BoundaryCondition):
             A SymbolicConstant specifying how the boundary condition is distributed spatially.
             Possible values are UNIFORM and USER_DEFINED. The default value is UNIFORM.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -255,4 +255,4 @@ class ConnAccelerationBC(BoundaryCondition):
             boundary condition is changed to have no amplitude reference. You should provide the
             **amplitude** argument only if it is valid for the specified step.
         """
-        pass
+        ...

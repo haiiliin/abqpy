@@ -65,7 +65,7 @@ class SizingPointSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, csys: int = None, ignoreFrozenArea: Boolean = OFF):
         """This method modifies the SizingPointSymmetry object.
@@ -79,4 +79,4 @@ class SizingPointSymmetry(GeometricRestriction):
         ignoreFrozenArea
             A Boolean specifying whether to ignore frozen areas. The default value is OFF.
         """
-        pass
+        ...

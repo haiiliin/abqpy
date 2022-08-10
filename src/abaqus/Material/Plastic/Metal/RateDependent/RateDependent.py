@@ -88,7 +88,7 @@ class RateDependent:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the RateDependent object.
@@ -97,4 +97,4 @@ class RateDependent:
         ------
         RangeError
         """
-        pass
+        ...

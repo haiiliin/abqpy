@@ -89,7 +89,7 @@ class RetainedNodalDofsBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -127,7 +127,7 @@ class RetainedNodalDofsBC(BoundaryCondition):
             3-direction. The default value is OFF indicating that the degree of freedom is not
             retained.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -162,4 +162,4 @@ class RetainedNodalDofsBC(BoundaryCondition):
             A Boolean specifying whether to retain the rotational degree of freedom about the
             3-direction.
         """
-        pass
+        ...

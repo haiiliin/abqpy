@@ -213,7 +213,7 @@ class CompositeShellSection(GeometryShellSection):
             A :py:class:`~abaqus.Section.CompositeShellSection.CompositeShellSection` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -296,4 +296,4 @@ class CompositeShellSection(GeometryShellSection):
             argument applies only when **thicknessType** = NODAL_ANALYTICAL_FIELD or
             **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string.
         """
-        pass
+        ...

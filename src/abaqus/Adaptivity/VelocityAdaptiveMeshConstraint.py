@@ -166,7 +166,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
             Possible values are INDEPENDENT, FOLLOW and USER_DEFINED. The default value is
             INDEPENDENT.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -212,4 +212,4 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
             adaptive mesh constraint is changed to have no amplitude reference. You should provide
             the **amplitude** argument only if it is valid for the specified step.
         """
-        pass
+        ...

@@ -230,8 +230,8 @@ class QuantityType:
         QuantityType
             A :py:class:`~abaqus.XY.QuantityType.QuantityType` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the QuantityType object."""
-        pass
+        ...

@@ -27,4 +27,4 @@ class Session(
             session
     """
 
-    pass
+    ...

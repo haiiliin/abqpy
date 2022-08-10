@@ -161,7 +161,7 @@ class HistoryOutputRequest:
             A Boolean specifying whether to output vector-valued nodal variables in the global
             directions. The default value is True.
         """
-        pass
+        ...
 
     def deactivate(self, stepName: str):
         """This method deactivates the history output request in the specified step and all
@@ -173,7 +173,7 @@ class HistoryOutputRequest:
             A String specifying the name of the step in which the history output request is
             deactivated.
         """
-        pass
+        ...
 
     def move(self, fromStepName: str, toStepName: str):
         """This method moves the history output request state object from one step to a different
@@ -188,7 +188,7 @@ class HistoryOutputRequest:
             A String specifying the name of the step to which the history output request state is
             moved.
         """
-        pass
+        ...
 
     def reset(self, stepName: str):
         """This method resets the history output request state of the specified step to the state
@@ -200,15 +200,15 @@ class HistoryOutputRequest:
             A String specifying the name of the step in which the history output request state is
             reset.
         """
-        pass
+        ...
 
     def resume(self):
         """This method resumes the history output request that was previously suppressed."""
-        pass
+        ...
 
     def suppress(self):
         """This method suppresses the history output request."""
-        pass
+        ...
 
     def setValues(
         self,
@@ -315,7 +315,7 @@ class HistoryOutputRequest:
             A Boolean specifying whether to output vector-valued nodal variables in the global
             directions. The default value is True.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -356,4 +356,4 @@ class HistoryOutputRequest:
             number of intervals during the step at which output database states are to be written.
             The default value is None.
         """
-        pass
+        ...

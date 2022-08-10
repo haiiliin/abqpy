@@ -54,4 +54,4 @@ class Title:
         titleStyle
             A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend title.
         """
-        pass
+        ...

@@ -77,7 +77,7 @@ class LowDensityFoam:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the LowDensityFoam object.
@@ -86,4 +86,4 @@ class LowDensityFoam:
         ------
         RangeError
         """
-        pass
+        ...

@@ -344,4 +344,4 @@ class SuperimposeOptions(DGSuperimposeOptions):
         ------
         RangeError
         """
-        pass
+        ...

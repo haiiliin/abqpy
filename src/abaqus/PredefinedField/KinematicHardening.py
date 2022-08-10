@@ -113,7 +113,7 @@ class KinematicHardening(PredefinedField):
             A :py:class:`~abaqus.PredefinedField.KinematicHardening.KinematicHardening` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -150,4 +150,4 @@ class KinematicHardening(PredefinedField):
             A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
             and ANALYTICAL_FIELD. The default value is MAGNITUDE.
         """
-        pass
+        ...

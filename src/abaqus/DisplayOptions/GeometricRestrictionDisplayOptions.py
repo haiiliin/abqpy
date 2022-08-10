@@ -107,4 +107,4 @@ class GeometricRestrictionDisplayOptions:
         ------
         RangeError
         """
-        pass
+        ...

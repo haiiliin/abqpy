@@ -92,7 +92,7 @@ class FieldReportSession(SessionBase):
             from all active frames. Possible values are SPECIFY and ALL. The default value is
             SPECIFY.
         """
-        pass
+        ...
 
     def writeFreeBodyReport(
         self,
@@ -138,4 +138,4 @@ class FieldReportSession(SessionBase):
         Raises
         ------
         """
-        pass
+        ...

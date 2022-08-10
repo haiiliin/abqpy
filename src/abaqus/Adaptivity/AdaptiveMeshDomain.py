@@ -74,7 +74,7 @@ class AdaptiveMeshDomain:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the AdaptiveMeshDomain object.
@@ -83,4 +83,4 @@ class AdaptiveMeshDomain:
         ------
         RangeError
         """
-        pass
+        ...

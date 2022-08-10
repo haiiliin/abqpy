@@ -75,7 +75,7 @@ class TopologyOverhangControl(GeometricRestriction):
             A TopologyOverhangControl object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -112,4 +112,4 @@ class TopologyOverhangControl(GeometricRestriction):
             A SymbolicConstant specifying the overhang control technique used to define the base
             plane. Possible values are AUTO, POINT, and NONE. The default value is AUTO.
         """
-        pass
+        ...

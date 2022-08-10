@@ -75,7 +75,7 @@ class SurfaceCurrentDensity(Load):
             A :py:class:`~abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self, distributionType: SymbolicConstant = UNIFORM, amplitude: str = UNSET
@@ -93,7 +93,7 @@ class SurfaceCurrentDensity(Load):
             UNSET should be used if the load has no amplitude reference. The default value is UNSET.
             You should provide the **amplitude** argument only if it is valid for the specified step.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -123,4 +123,4 @@ class SurfaceCurrentDensity(Load):
             the load is changed to have no amplitude reference. You should provide the **amplitude**
             argument only if it is valid for the specified step.
         """
-        pass
+        ...

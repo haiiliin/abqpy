@@ -69,13 +69,13 @@ class SecondaryBaseBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the data for an existing SecondaryBaseBC object in the step where
         it is created.
         """
-        pass
+        ...
 
     def setValuesInStep(self, stepName: str):
         """This method modifies the propagating data for an existing SecondaryBaseBC object in the
@@ -86,4 +86,4 @@ class SecondaryBaseBC(BoundaryCondition):
         stepName
             A String specifying the name of the step in which the boundary condition is modified.
         """
-        pass
+        ...

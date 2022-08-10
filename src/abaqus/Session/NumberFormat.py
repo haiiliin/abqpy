@@ -77,4 +77,4 @@ class NumberFormat:
         NumberFormat
             A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object.
         """
-        pass
+        ...

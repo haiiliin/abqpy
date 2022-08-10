@@ -116,7 +116,7 @@ class Chebyshev1Filter(Filter):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -156,4 +156,4 @@ class Chebyshev1Filter(Filter):
         ------
         RangeError
         """
-        pass
+        ...

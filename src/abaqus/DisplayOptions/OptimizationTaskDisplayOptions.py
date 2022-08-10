@@ -32,4 +32,4 @@ class OptimizationTaskDisplayOptions:
         ------
         RangeError
         """
-        pass
+        ...

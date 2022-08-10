@@ -89,8 +89,8 @@ class CapCreepCohesion:
         CapCreepCohesion
             A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the CapCreepCohesion object."""
-        pass
+        ...

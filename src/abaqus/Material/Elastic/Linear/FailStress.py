@@ -65,7 +65,7 @@ class FailStress:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the FailStress object.
@@ -74,4 +74,4 @@ class FailStress:
         ------
         RangeError
         """
-        pass
+        ...

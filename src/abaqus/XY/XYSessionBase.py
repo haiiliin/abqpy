@@ -135,7 +135,7 @@ class XYSessionBase(SessionBase):
             the number of intervals along the line, or modify the current display group to obtain
             the stress linearization plot.
         """
-        pass
+        ...
 
     def setPathTolerance(self, tolerance: str = 0):
         """This method is used to set the **tolerance** to be used when creating XYData objects by
@@ -152,7 +152,7 @@ class XYSessionBase(SessionBase):
         -------
         None .
         """
-        pass
+        ...
 
     def getPathTolerance(self):
         """This method is used to get the **tolerance** used when creating XYData objects by
@@ -163,7 +163,7 @@ class XYSessionBase(SessionBase):
         float
             A Double specifying the tolerance.
         """
-        pass
+        ...
 
     def setLimitForXYDataPlots(self, limit: int = None):
         """This method is used to set the **limit** for number of XY data objects while creating
@@ -179,7 +179,7 @@ class XYSessionBase(SessionBase):
         -------
         None .
         """
-        pass
+        ...
 
     def getLimitForXYDataPlots(self):
         """This method is used to get the **limit** for number of XY data objects while creating
@@ -189,4 +189,4 @@ class XYSessionBase(SessionBase):
         -------
         Int specifying the limit for number of XY data objects.
         """
-        pass
+        ...

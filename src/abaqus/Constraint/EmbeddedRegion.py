@@ -110,7 +110,7 @@ class EmbeddedRegion(Constraint):
             An :py:class:`~abaqus.Constraint.EmbeddedRegion.EmbeddedRegion` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -142,4 +142,4 @@ class EmbeddedRegion(Constraint):
             specified, the smaller value will be used.This argument applies only when
             **toleranceMethod** = FRACTIONAL or BOTH.
         """
-        pass
+        ...

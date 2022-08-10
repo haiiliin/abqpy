@@ -152,7 +152,7 @@ class GeneralStiffnessSection(ShellSection):
             A :py:class:`~abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -205,4 +205,4 @@ class GeneralStiffnessSection(ShellSection):
             and/or field data. Each row should contain (Y, alpha, T, F1,...,Fn). The default value
             is an empty sequence.
         """
-        pass
+        ...

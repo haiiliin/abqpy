@@ -70,8 +70,8 @@ class DisplayBody(Constraint):
             A :py:class:`~abaqus.Constraint.DisplayBody.DisplayBody` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the DisplayBody object."""
-        pass
+        ...

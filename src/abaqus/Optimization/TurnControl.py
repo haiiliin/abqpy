@@ -121,7 +121,7 @@ class TurnControl(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.TurnControl.TurnControl` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -160,4 +160,4 @@ class TurnControl(GeometricRestriction):
             A Float specifying the geometric tolerance in the 3-direction. The default value is
             0.01.
         """
-        pass
+        ...

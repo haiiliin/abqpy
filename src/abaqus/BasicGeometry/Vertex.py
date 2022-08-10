@@ -54,7 +54,7 @@ class Vertex:
             A tuple of integers.
 
         """
-        pass
+        ...
 
     def getNodes(self):
         """This method returns an array of node objects that are associated with the vertex.
@@ -65,7 +65,7 @@ class Vertex:
             A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object which is a sequence of MeshNode objects.
 
         """
-        pass
+        ...
 
     def getElements(self):
         """This method returns an array of element objects that are associated with the vertex.
@@ -76,4 +76,4 @@ class Vertex:
             A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which is a sequence of MeshElement objects.
 
         """
-        pass
+        ...

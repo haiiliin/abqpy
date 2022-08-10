@@ -129,7 +129,7 @@ class DesignDirection(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.DesignDirection.DesignDirection` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -177,4 +177,4 @@ class DesignDirection(GeometricRestriction):
             the 3-direction. This is used when **movementRestriction** is VECTOR. The default value is
             ON.
         """
-        pass
+        ...

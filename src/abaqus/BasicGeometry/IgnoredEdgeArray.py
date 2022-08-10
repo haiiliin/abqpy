@@ -76,7 +76,7 @@ class IgnoredEdgeArray:
             An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object or a sequence of IgnoredEdge objects.
 
         """
-        pass
+        ...
 
     def getMask(self):
         """This method returns a string specifying the object or objects.
@@ -87,7 +87,7 @@ class IgnoredEdgeArray:
             A String specifying the object or objects.
 
         """
-        pass
+        ...
 
     def getClosest(self, coordinates: tuple, searchTolerance: str = ""):
         """This method returns a object or objects in the IgnoredEdgeArray closest to the given set
@@ -120,4 +120,4 @@ class IgnoredEdgeArray:
         Error: The mask results in an empty sequence
             An exception occurs if the resulting sequence is empty.
         """
-        pass
+        ...

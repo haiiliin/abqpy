@@ -289,7 +289,7 @@ class GeostaticStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -358,4 +358,4 @@ class GeostaticStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

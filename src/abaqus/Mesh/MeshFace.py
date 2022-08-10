@@ -32,7 +32,7 @@ class MeshFace:
         edges: tuple[MeshEdge]
             A tuple of MeshEdge objects
         """
-        pass
+        ...
 
     def getElements(self):
         """This method returns a tuple of elements that share the element face.
@@ -42,7 +42,7 @@ class MeshFace:
         elements: tuple[MeshElement]
             A tuple of MeshElement objects
         """
-        pass
+        ...
 
     def getNodes(self):
         """This method returns a tuple of nodes on the element face.
@@ -52,7 +52,7 @@ class MeshFace:
         nodes: tuple[MeshNode]
             A tuple of MeshNode objects
         """
-        pass
+        ...
 
     def getNodesByFaceAngle(self, angle: str):
         """This method returns an array of mesh node objects that are obtained by recursively
@@ -69,7 +69,7 @@ class MeshFace:
         nodes: MeshNodeArray
             A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects
         """
-        pass
+        ...
 
     def getNormal(self):
         """This method returns the normal direction for the element face.
@@ -80,7 +80,7 @@ class MeshFace:
             A tuple of 3 floats representing the unit normal vector. If the element face is
             collapsed such that a normal cannot be computed, a zero-length vector is returned.
         """
-        pass
+        ...
 
     def getElemFacesByFaceAngle(self, angle: str):
         """This method returns an array of element face objects that are obtained by recursively
@@ -97,7 +97,7 @@ class MeshFace:
         faces: MeshFaceArray
             A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object, which is a sequence of MeshFace objects.
         """
-        pass
+        ...
 
     def getElemEdgesByFaceAngle(self, angle: str):
         """This method returns an array of element edge objects that are obtained by recursively
@@ -114,7 +114,7 @@ class MeshFace:
         edges: MeshEdgeArray
             A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object, which is a sequence of MeshEdge objects.
         """
-        pass
+        ...
 
     def getElementsByFaceAngle(self, angle: str):
         """This method returns an array of mesh Element objects that are obtained by recursively
@@ -131,7 +131,7 @@ class MeshFace:
         elements: MeshElementArray
             A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
         """
-        pass
+        ...
 
     def getElemFacesByLimitingAngle(self, angle: str):
         """This method returns an array of element edge objects that are obtained by recursively
@@ -148,7 +148,7 @@ class MeshFace:
         faces: MeshFaceArray
             A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object, which is a sequence of MeshFace objects.
         """
-        pass
+        ...
 
     def getElementsViaTopology(self):
         """This method returns an array of mesh Element objects that are obtained by recursively
@@ -159,7 +159,7 @@ class MeshFace:
         elements: MeshElementArray
             A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
         """
-        pass
+        ...
 
     def getElemFacesByLayer(self, numLayers: str):
         """This method returns an array of element face objects, obtained by traversing shell
@@ -176,4 +176,4 @@ class MeshFace:
         faces: MeshFaceArray
             A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object, which is a sequence of MeshFace objects.
         """
-        pass
+        ...

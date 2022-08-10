@@ -126,8 +126,8 @@ class GapElectricalConductance:
         GapElectricalConductance
             A :py:class:`~abaqus.Interaction.GapElectricalConductance.GapElectricalConductance` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the GapElectricalConductance object."""
-        pass
+        ...
