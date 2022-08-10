@@ -73,7 +73,7 @@ class OdbStep(OdbStepBase):
         OdbFrame
             An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
         """
-        pass
+        ...
 
     @typing.overload
     def Frame(self, mode: int, frequency: float, description: str = "") -> OdbFrame:
@@ -103,7 +103,7 @@ class OdbStep(OdbStepBase):
         OdbFrame
             An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
         """
-        pass
+        ...
 
     @typing.overload
     def Frame(
@@ -134,7 +134,7 @@ class OdbStep(OdbStepBase):
         OdbFrame
             An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
         """
-        pass
+        ...
 
     def Frame(self, *args, **kwargs) -> OdbFrame:
         frame = OdbFrame(*args, **kwargs)

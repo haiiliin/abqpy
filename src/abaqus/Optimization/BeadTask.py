@@ -234,7 +234,7 @@ class BeadTask(OptimizationTask):
             A :py:class:`~abaqus.Optimization.BeadTask.BeadTask` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -330,4 +330,4 @@ class BeadTask(OptimizationTask):
             the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
             value of False means that the existing algorithm will be used.
         """
-        pass
+        ...

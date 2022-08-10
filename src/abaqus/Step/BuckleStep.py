@@ -247,7 +247,7 @@ class BuckleStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -296,4 +296,4 @@ class BuckleStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

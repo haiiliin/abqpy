@@ -37,7 +37,7 @@ class SlidingFormulationAssignment:
             formulation on sliding to be assigned to the surface whose index is referenced. Possible
             values are NONE and SMALL_SLIDING.
         """
-        pass
+        ...
 
     def appendInStep(self, stepName: str, assignments: SymbolicConstant):
         """This method allows you to add sliding formulation assignments to new surface pairs in a
@@ -55,7 +55,7 @@ class SlidingFormulationAssignment:
             overriding the smoothness value to be used for the first surface. Possible values of the
             SymbolicConstant are NONE and SMALL_SLIDING.
         """
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing sliding formulation assignments.
@@ -66,4 +66,4 @@ class SlidingFormulationAssignment:
             A sequence of Ints specifying the index of each sliding formulation assignment to
             delete.
         """
-        pass
+        ...

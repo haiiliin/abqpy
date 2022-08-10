@@ -89,8 +89,8 @@ class CapCreepConsolidation:
         CapCreepConsolidation
             A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the CapCreepConsolidation object."""
-        pass
+        ...

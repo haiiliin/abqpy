@@ -106,7 +106,7 @@ class RigidBody(Constraint):
             A :py:class:`~abaqus.Constraint.RigidBody.RigidBody` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -140,4 +140,4 @@ class RigidBody(Constraint):
             A Boolean specifying whether the temperature degree of freedom should be constrained.
             The default value is OFF.
         """
-        pass
+        ...

@@ -66,7 +66,7 @@ class ExpressionField(AnalyticalField):
         TextException
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, localCsys: str = None, description: str = ""):
         """This method modifies the ExpressionField object.
@@ -80,4 +80,4 @@ class ExpressionField(AnalyticalField):
         description
             A String specifying the description of the field. The default value is an empty string.
         """
-        pass
+        ...

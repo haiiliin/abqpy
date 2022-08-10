@@ -87,7 +87,7 @@ class ConcentratedHeatFlux(Load):
             A :py:class:`~abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -116,7 +116,7 @@ class ConcentratedHeatFlux(Load):
             An Int specifying the degree of freedom of the node, to which the concentrated heat flux
             should be applied. The default value is 11.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self, stepName: str, magnitude: float = None, amplitude: str = ""
@@ -137,4 +137,4 @@ class ConcentratedHeatFlux(Load):
             the load is changed to have no amplitude reference. You should provide the **amplitude**
             argument only if it is valid for the specified step.
         """
-        pass
+        ...

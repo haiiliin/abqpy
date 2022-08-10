@@ -131,7 +131,7 @@ class ExpInitialization(ContactInitialization):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -185,4 +185,4 @@ class ExpInitialization(ContactInitialization):
         ------
         RangeError
         """
-        pass
+        ...

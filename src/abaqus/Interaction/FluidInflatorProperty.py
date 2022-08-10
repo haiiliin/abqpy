@@ -111,7 +111,7 @@ class FluidInflatorProperty(ContactProperty):
             A FluidInflatorProperty object.
         """
         super().__init__(name)
-        pass
+        ...
 
     def setValues(
         self,
@@ -147,4 +147,4 @@ class FluidInflatorProperty(ContactProperty):
             A sequence of sequences of Floats specifying the mass fraction or the molar fraction
             corresponding to entered fluid behavior.
         """
-        pass
+        ...

@@ -72,7 +72,7 @@ class Ratios:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Ratios object.
@@ -81,4 +81,4 @@ class Ratios:
         ------
         RangeError
         """
-        pass
+        ...

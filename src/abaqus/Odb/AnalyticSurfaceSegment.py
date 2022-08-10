@@ -55,4 +55,4 @@ class AnalyticSurfaceSegment:
         AnalyticSurfaceSegment
             An :py:class:`~abaqus.Odb.AnalyticSurfaceSegment.AnalyticSurfaceSegment` object.
         """
-        pass
+        ...

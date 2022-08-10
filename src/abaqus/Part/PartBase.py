@@ -36,7 +36,7 @@ from ..Sketcher.ConstrainedSketch import ConstrainedSketch
 
 # prevent circular imports
 class PartInstance:
-    pass
+    ...
 
 
 class PartBase(Feature):
@@ -201,7 +201,7 @@ class PartBase(Feature):
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
         """
-        pass
+        ...
 
     @typing.overload
     def __init__(
@@ -251,10 +251,10 @@ class PartBase(Feature):
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
         """
-        pass
+        ...
 
     def __init__(self, *args, **kwargs):
-        pass
+        ...
 
     def PartFromBooleanCut(
         self, name: str, instanceToBeCut: str, cuttingInstances: tuple[PartInstance]
@@ -284,7 +284,7 @@ class PartBase(Feature):
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
         """
-        pass
+        ...
 
     def PartFromBooleanMerge(
         self,
@@ -337,7 +337,7 @@ class PartBase(Feature):
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
         """
-        pass
+        ...
 
     def PartFromExtrude2DMesh(
         self, name: str, part: "PartBase", depth: float, elementSize: float
@@ -374,7 +374,7 @@ class PartBase(Feature):
             - If the specified part is a rigid body:
               Cannot change dimension of a rigid body.
         """
-        pass
+        ...
 
     def PartFromGeometryFile(
         self,
@@ -466,7 +466,7 @@ class PartBase(Feature):
             - If the type does not correspond to what is found in the ACIS file:
               PartError: type does not match the contents of the file
         """
-        pass
+        ...
 
     def PartFromInstanceMesh(
         self,
@@ -513,7 +513,7 @@ class PartBase(Feature):
             - If the specified part instances do not contain a mesh:
               The selected part instances do not have a mesh for a mesh part.
         """
-        pass
+        ...
 
     def PartFromMesh(self, name: str, copySets: Boolean = False):
         """This method creates a Part object containing the mesh found in the part and places the
@@ -541,7 +541,7 @@ class PartBase(Feature):
             - If the part does not contain a mesh:
               The current part does not contain a mesh for a mesh part.
         """
-        pass
+        ...
 
     def PartFromMeshMirror(
         self, name: str, part: "PartBase", point1: tuple, point2: tuple
@@ -586,7 +586,7 @@ class PartBase(Feature):
             **Z**-axis:
               Mirror plane must be parallel to Z axis for 2D parts
         """
-        pass
+        ...
 
     def PartFromNodesAndElements(
         self,
@@ -636,7 +636,7 @@ class PartBase(Feature):
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
         """
-        pass
+        ...
 
     def PartFromOdb(
         self,
@@ -713,7 +713,7 @@ class PartBase(Feature):
             - If the frame number is invalid:
               OdiError: Invalid frame index: i. Available frame indices: 0 - j.
         """
-        pass
+        ...
 
     def PartFromSection3DMeshByPlane(
         self, name: str, part: "PartBase", point1: float, point2: float, point3: tuple
@@ -762,7 +762,7 @@ class PartBase(Feature):
             - If no elements are cut by the specified plane:
               Cannot reduce part dimension.
         """
-        pass
+        ...
 
     def PartFromSubstructure(self, name: str, substructureFile: str, odbFile: str):
         """This method creates a substructure Part object by reading a substructure sim file and
@@ -797,7 +797,7 @@ class PartBase(Feature):
             supported.The substructure sim file was generated using a version that is different from
             the current version.
         """
-        pass
+        ...
 
     def Part2DGeomFrom2DMesh(
         self,
@@ -850,7 +850,7 @@ class PartBase(Feature):
             If the specified part is a rigid body:
               Cannot create a geometry from a rigid body.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Part object.
@@ -859,7 +859,7 @@ class PartBase(Feature):
         ------
         RangeError
         """
-        pass
+        ...
 
     def addGeomToSketch(self, sketch: ConstrainedSketch):
         """This method converts a part into a sketch by projecting all of the edges of the part
@@ -871,7 +871,7 @@ class PartBase(Feature):
         sketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object.
         """
-        pass
+        ...
 
     def assignThickness(
         self,
@@ -905,13 +905,13 @@ class PartBase(Feature):
             **thickness** is specified. Either **thickness**, **topFaces**, or **bottomFaces** must be
             specified.
         """
-        pass
+        ...
 
     def backup(self):
         """This method makes a backup copy of the features in the part. Use the restore method to
         retrieve the part's features from the backup.
         """
-        pass
+        ...
 
     def checkGeometry(
         self,
@@ -936,17 +936,17 @@ class PartBase(Feature):
             which reports all critical errors. When the default value is used, the stored validity
             status is updated to agree with the result of this check.
         """
-        pass
+        ...
 
     def clearGeometryCache(self):
         """This method clears the geometry cache. Clearing the geometry cache reduces the amount of
         memory being used to cache part features.
         """
-        pass
+        ...
 
     def deleteAllFeatures(self):
         """This method deletes all the features in the part."""
-        pass
+        ...
 
     def deleteFeatures(self, featureNames: tuple):
         """This method deletes the given features.
@@ -956,7 +956,7 @@ class PartBase(Feature):
         featureNames
             A sequence of Strings specifying the feature names that will be deleted from the part.
         """
-        pass
+        ...
 
     def getAngle(
         self, plane1: str, plane2: str, line1: str, line2: str, commonVertex: str = ""
@@ -991,7 +991,7 @@ class PartBase(Feature):
             A Float specifying the angle between the specified entities. If you provide a plane as
             an argument, Abaqus/CAE computes the angle using the normal to the plane.
         """
-        pass
+        ...
 
     def getArea(self, faces: tuple[Face], relativeAccuracy: float = 0):
         """This method returns the total surface area of a given face or group of faces.
@@ -1009,7 +1009,7 @@ class PartBase(Feature):
         area: float
             A Float specifying the sum of the calculated areas of the given faces.
         """
-        pass
+        ...
 
     def getAssociatedCADPaths(self):
         """This method returns the paths to the associated CAD part and root file. These are only
@@ -1022,7 +1022,7 @@ class PartBase(Feature):
         paths: tuple
             A sequence containing the path to the associated CAD part and assembly file
         """
-        pass
+        ...
 
     def getCADParameters(self):
         """This method returns the names and values of the CAD parameters associated with the part.
@@ -1036,7 +1036,7 @@ class PartBase(Feature):
             A dictionary object representing a map of the name of the parameter and its associated
             value.
         """
-        pass
+        ...
 
     def getCentroid(
         self, faces: tuple[Face], cells: tuple[Face], relativeAccuracy: float = 0
@@ -1064,7 +1064,7 @@ class PartBase(Feature):
             - The location of the centroid of a given face or group of faces.
             - The location of the centroid of a given cell or group of cells.
         """
-        pass
+        ...
 
     def getCoordinates(self, entity: str, csys: DatumCsys):
         """This method returns the coordinates of specified point.
@@ -1081,7 +1081,7 @@ class PartBase(Feature):
         -------
             A tuple of 3 Floats representing the coordinates of the specified point.
         """
-        pass
+        ...
 
     def getCurvature(self, edges: tuple[Edge], samplePoints: int = 100):
         """This method returns the maximum curvature of a given edge or group of edges. For an arc,
@@ -1103,7 +1103,7 @@ class PartBase(Feature):
         curvature: float
             A Float specifying the maximum curvature.
         """
-        pass
+        ...
 
     def getDistance(self, entity1: str, entity2: str):
         """Depending on the arguments provided, this method returns one of the following:
@@ -1126,7 +1126,7 @@ class PartBase(Feature):
         distance: float
             A Float specifying the distance between **entity1** and **entity2**.
         """
-        pass
+        ...
 
     def getLength(self, edges: tuple[Edge]):
         """This method returns the length of a given edge or group of edges.
@@ -1141,7 +1141,7 @@ class PartBase(Feature):
         length: float
             A Float specifying the total length
         """
-        pass
+        ...
 
     def getPerimeter(self, faces: tuple[Face]):
         """This method returns the total perimeter of a given face or group of faces. All faces
@@ -1159,7 +1159,7 @@ class PartBase(Feature):
         perimeter: float
             A Float specifying the perimeter
         """
-        pass
+        ...
 
     def getVolume(self, cells: tuple[Cell], relativeAccuracy: float = 0):
         """This method returns the volume area of a given cell or group of cells.
@@ -1177,7 +1177,7 @@ class PartBase(Feature):
         volume: float
             A Float specifying the sum of the areas of the given faces
         """
-        pass
+        ...
 
     def getMassProperties(
         self,
@@ -1295,7 +1295,7 @@ class PartBase(Feature):
             distribution is not supported. Results are computed using Volume Proportional
             distribution.
         """
-        pass
+        ...
 
     def getFeatureFaces(self, name: str):
         """This method returns a sequence of Face objects that are created by the given feature.
@@ -1315,7 +1315,7 @@ class PartBase(Feature):
         Error : Incorrect feature name
             An exception occurs if a feature with the given name does not exist.
         """
-        pass
+        ...
 
     def getFeatureEdges(self, name: str):
         """This method returns a sequence of Edge objects that are created by the given feature.
@@ -1335,7 +1335,7 @@ class PartBase(Feature):
         Error: Incorrect feature name
             An exception occurs if a feature with the given name does not exist.
         """
-        pass
+        ...
 
     def getFeatureCells(self, name: str):
         """This method returns a sequence of Cell objects that are created by the given feature.
@@ -1355,7 +1355,7 @@ class PartBase(Feature):
         Error : Incorrect feature name
             An exception occurs if a feature with the given name does not exist.
         """
-        pass
+        ...
 
     def getFeatureVertices(self, name: str):
         """This method returns a sequence of ConstrainedSketchVertex objects that are created by the given feature.
@@ -1375,7 +1375,7 @@ class PartBase(Feature):
         Error: Incorrect feature name
             An exception occurs if a feature with the given name does not exist.
         """
-        pass
+        ...
 
     def isAlignedWithSketch(self):
         """This method checks if the normal of an analytical rigid surface part is aligned with
@@ -1392,13 +1392,13 @@ class PartBase(Feature):
         AbaqusException: Can only be used with analytical rigid parts
             If the part is not an analytical rigid part.
         """
-        pass
+        ...
 
     def printAssignedSections(self):
         """This method prints information on each section that has been assigned to a region of the
         part.
         """
-        pass
+        ...
 
     def projectEdgesOntoSketch(
         self, sketch: str, edges: tuple, constrainToBackground: Boolean = True
@@ -1421,7 +1421,7 @@ class PartBase(Feature):
             A Boolean that determines whether the projected edges need to constrained to the
             background geometry. The default is True.
         """
-        pass
+        ...
 
     def projectReferencesOntoSketch(
         self,
@@ -1456,7 +1456,7 @@ class PartBase(Feature):
             A sequence of candidate vertices to be projected onto the sketch. By default, all
             vertices are candidates for projection.
         """
-        pass
+        ...
 
     def queryAttributes(self, printResults: Boolean = OFF):
         """This method prints the following information about a part:
@@ -1478,13 +1478,13 @@ class PartBase(Feature):
             information with the keys being numVertices, numEdges, numFaces, numCells,
             numWiredEdges, numShellFaces and numSolidFaces.
         """
-        pass
+        ...
 
     def queryCachedStates(self):
         """This method displays the position of geometric states relative to the sequence of
         features in the part cache. The output is displayed in the message area.
         """
-        pass
+        ...
 
     def queryGeometry(self, relativeAccuracy: float = 0, printResults: Boolean = True):
         """This method prints the following information about a part:
@@ -1511,7 +1511,7 @@ class PartBase(Feature):
             A Dictionary object with string keys, which returns the above information with the keys
             being name, space, type, volume, centroid, category and boundingBox.
         """
-        pass
+        ...
 
     def queryRegionsMissingSections(self):
         """This method returns all regions in the part that do not have a section assignment but
@@ -1522,24 +1522,24 @@ class PartBase(Feature):
         region: Region
             A :py:class:`~abaqus.Region.Region.Region` object, or None
         """
-        pass
+        ...
 
     def queryDisjointPlyRegions(self):
         """This method provides a list of all composite plys in the current part which have
         disjoint regions.
         """
-        pass
+        ...
 
     def regenerate(self):
         """This method regenerates a part. When you modify features, it may be convenient to
         postpone regeneration until you make all your changes, since regeneration can be time
         consuming.
         """
-        pass
+        ...
 
     def regenerationWarnings(self):
         """This method prints any regeneration warnings associated with the features."""
-        pass
+        ...
 
     def removeInvalidGeometry(self):
         """Removes all invalid entities from the part, leaving a valid part. This is not recorded
@@ -1548,18 +1548,18 @@ class PartBase(Feature):
         Note:This may remove valid entities that are connected to invalid ones. You can identify
         invalid entities using the query toolset before using this command.
         """
-        pass
+        ...
 
     def restore(self):
         """This method restores the parameters of all features in the assembly to the value they
         had before a failed regeneration. Use the restore method after a failed regeneration,
         followed by a regenerate command.
         """
-        pass
+        ...
 
     def resumeAllFeatures(self):
         """This method resumes all the suppressed features in the part."""
-        pass
+        ...
 
     def resumeFeatures(self, featureNames: tuple):
         """This method resumes the specified suppressed features in the part.
@@ -1569,17 +1569,17 @@ class PartBase(Feature):
         featureNames
             A tuple of names of features which are to be resumed.
         """
-        pass
+        ...
 
     def resumeLastSetFeatures(self):
         """This method resumes the last set of features to be suppressed in the part."""
-        pass
+        ...
 
     def saveGeometryCache(self):
         """This method caches the current geometry. Caching the current geometry improves
         regeneration performance.
         """
-        pass
+        ...
 
     def setAssociatedCADPaths(self, partFile: str = "", rootFile: str = ""):
         """This method sets the paths to the associated CAD part and root file. This method is only
@@ -1596,7 +1596,7 @@ class PartBase(Feature):
             A String specifying the name of the root associated CAD file. This can be the same as
             the part file or can be the assembly file, depending on the one that was imported.
         """
-        pass
+        ...
 
     def suppressFeatures(self, featureNames: tuple):
         """This method suppresses the given features.
@@ -1606,7 +1606,7 @@ class PartBase(Feature):
         featureNames
             A tuple of names of features which are to be suppressed in the part.
         """
-        pass
+        ...
 
     def writeAcisFile(self, fileName: str, version: float = None):
         """This method exports the geometry of the part to a named file in ACIS format.
@@ -1626,7 +1626,7 @@ class PartBase(Feature):
         Cannot export orphan mesh parts to ACIS
             If the part is an orphan mesh part.
         """
-        pass
+        ...
 
     def writeCADParameters(
         self, paramFile: str, modifiedParams: tuple = (), updatePaths: str = ""
@@ -1646,7 +1646,7 @@ class PartBase(Feature):
             **parameterFile** to the current directory, if the CAD model is present in the current
             directory.
         """
-        pass
+        ...
 
     def writeIgesFile(self, fileName: str, flavor: SymbolicConstant):
         """This method exports the geometry of the part to a named file in IGES format.
@@ -1664,7 +1664,7 @@ class PartBase(Feature):
         Cannot export orphan mesh parts to IGES
             If the part is an orphan mesh part.
         """
-        pass
+        ...
 
     def writeStepFile(self, fileName: str):
         """This method exports the geometry of the part to a named file in STEP format.
@@ -1679,7 +1679,7 @@ class PartBase(Feature):
         Parterror: Cannot export orphan mesh parts to STEP
             If the part contains no geometry.
         """
-        pass
+        ...
 
     def writeVdaFile(self, fileName: str):
         """This method exports the geometry of the part to a named file in VDA-FS format.
@@ -1694,7 +1694,7 @@ class PartBase(Feature):
         Cannot export orphan mesh parts to VDA-FS
             If the part is an orphan mesh part.
         """
-        pass
+        ...
 
     def copyMeshPattern(
         self,
@@ -1731,7 +1731,7 @@ class PartBase(Feature):
             according to index. These coordinates are positions of the nodes of a mesh that will be
             the target face corresponding to nodes provided.
         """
-        pass
+        ...
 
     def smoothNodes(self, nodes: tuple[MeshNode]):
         """This method smooths the given nodes of a native mesh, moving them locally to a more
@@ -1742,23 +1742,23 @@ class PartBase(Feature):
         nodes
             A sequence of MeshNode objects or a Set object containing nodes.
         """
-        pass
+        ...
 
     def Lock(self):
         """This method locks the part. Locking the part prevents any further changes to the part
         that can trigger regeneration of the part.
         """
-        pass
+        ...
 
     def Unlock(self):
         """This method unlocks the part. Unlocking the part allows it to be regenerated after any
         modifications to the part.
         """
-        pass
+        ...
 
     def LockForUpgrade(self):
         """This method locks the part for upgrade. Locking the part prevents any further changes to
         the part that can trigger regeneration of the part. When the part is unlocked, all the
         parts are upgraded and regenrated.
         """
-        pass
+        ...

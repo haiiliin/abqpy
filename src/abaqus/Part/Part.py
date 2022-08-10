@@ -17,4 +17,4 @@ class Part(MeshEditPart, MeshPart, PropertyPart, RegionPart):
             mdb.models[name].parts[name]
     """
 
-    pass
+    ...

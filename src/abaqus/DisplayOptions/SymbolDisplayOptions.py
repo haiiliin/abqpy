@@ -48,4 +48,4 @@ class SymbolDisplayOptions:
             A Boolean specifying whether symbols should be scaled based on analytical field value.
             The default value is ON.
         """
-        pass
+        ...

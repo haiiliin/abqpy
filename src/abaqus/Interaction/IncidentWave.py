@@ -164,7 +164,7 @@ class IncidentWave(Interaction):
             An :py:class:`~abaqus.Interaction.IncidentWave.IncidentWave` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -214,4 +214,4 @@ class IncidentWave(Interaction):
             A Float specifying the magnitude scale factor. The default value is 1.0.This argument is
             valid only when **definition** = CONWEP.
         """
-        pass
+        ...

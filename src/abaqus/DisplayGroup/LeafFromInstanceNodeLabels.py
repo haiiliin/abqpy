@@ -44,4 +44,4 @@ class LeafFromInstanceNodeLabels(Leaf):
             A :py:class:`~abaqus.DisplayGroup.LeafFromInstanceNodeLabels.LeafFromInstanceNodeLabels` object.
         """
         super().__init__(DEFAULT_MODEL)
-        pass
+        ...

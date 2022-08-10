@@ -84,4 +84,4 @@ class DefaultChartOptions:
             A Boolean specifying whether to use the QuantityType to associate curves with axes. The
             default value is ON.
         """
-        pass
+        ...

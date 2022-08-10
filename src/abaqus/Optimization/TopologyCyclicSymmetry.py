@@ -86,7 +86,7 @@ class TopologyCyclicSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -109,4 +109,4 @@ class TopologyCyclicSymmetry(GeometricRestriction):
         ignoreFrozenArea
             A Boolean specifying whether to ignore frozen areas. The default value is OFF.
         """
-        pass
+        ...

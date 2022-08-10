@@ -48,7 +48,7 @@ class MeanFieldMatrix:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self):
         """This method modifies the MeanFieldMatrix object.
@@ -57,4 +57,4 @@ class MeanFieldMatrix:
         ------
         RangeError
         """
-        pass
+        ...

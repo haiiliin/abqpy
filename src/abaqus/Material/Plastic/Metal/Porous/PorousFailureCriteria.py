@@ -44,7 +44,7 @@ class PorousFailureCriteria:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the PorousFailureCriteria object.
@@ -53,4 +53,4 @@ class PorousFailureCriteria:
         ------
         RangeError
         """
-        pass
+        ...

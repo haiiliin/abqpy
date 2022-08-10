@@ -151,7 +151,7 @@ class XFEMCrack(Crack):
             A :py:class:`~abaqus.EngineeringFeature.XFEMCrack.XFEMCrack` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -204,4 +204,4 @@ class XFEMCrack(Crack):
             An integer specifying the number of element layers around the crack location, to which
             the crack domain is shrunk.
         """
-        pass
+        ...

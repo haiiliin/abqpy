@@ -46,4 +46,4 @@ def writeFreeBodyReport(
     Returns
     -------
     """
-    pass
+    ...

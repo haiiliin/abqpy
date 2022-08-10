@@ -124,4 +124,4 @@ class Axis:
             A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties to be used when displaying the axis
             title.
         """
-        pass
+        ...

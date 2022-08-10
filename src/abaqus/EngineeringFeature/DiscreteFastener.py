@@ -132,7 +132,7 @@ class DiscreteFastener(Fastener):
             A :py:class:`~abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -173,4 +173,4 @@ class DiscreteFastener(Fastener):
             If **localCsys** = None, couplings are defined in the global coordinate system. When this
             member is queried, it returns an Int. The default value is None.
         """
-        pass
+        ...

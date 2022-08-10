@@ -123,4 +123,4 @@ class OdbDiagnosticStep:
             number of iterations), STEP_TIME (the cumulative step time until that increment) or
             INC_SIZE (the step time for each increment).
         """
-        pass
+        ...

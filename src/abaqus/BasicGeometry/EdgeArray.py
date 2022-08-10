@@ -60,7 +60,7 @@ class EdgeArray:
             A :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
 
         """
-        pass
+        ...
 
     def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[Edge, typing.List[Edge]]:
         """This method returns the object or objects in the EdgeArray located at the given
@@ -128,7 +128,7 @@ class EdgeArray:
         specifies the **X**-, **Y**-, and **Z**-location of the closest point on the Edge to the given
         point. See program listing above.
         """
-        pass
+        ...
 
     def getSequenceFromMask(self, mask: str):
         """This method returns the object or objects in the EdgeArray identified using the
@@ -151,7 +151,7 @@ class EdgeArray:
         Error: The mask results in an empty sequence
             An exception occurs if the resulting sequence is empty.
         """
-        pass
+        ...
 
     def getMask(self):
         """This method returns a string specifying the object or objects.
@@ -162,7 +162,7 @@ class EdgeArray:
             A String specifying the object or objects.
 
         """
-        pass
+        ...
 
     def getByBoundingBox(
         self,
@@ -196,7 +196,7 @@ class EdgeArray:
             An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
 
         """
-        pass
+        ...
 
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
         """This method returns an array of edge objects that lie within the specified bounding
@@ -219,7 +219,7 @@ class EdgeArray:
             An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
 
         """
-        pass
+        ...
 
     def getByBoundingSphere(self, center: tuple, radius: str):
         """This method returns an array of edge objects that lie within the specified bounding
@@ -238,7 +238,7 @@ class EdgeArray:
             An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
 
         """
-        pass
+        ...
 
     def getBoundingBox(self):
         """This method returns a dictionary of two tuples representing minimum and maximum boundary
@@ -254,4 +254,4 @@ class EdgeArray:
             - **high**: a tuple of three floats representing the maximum **X** -, **Y** -, and **Z** -boundary
               values of the bounding box.
         """
-        pass
+        ...

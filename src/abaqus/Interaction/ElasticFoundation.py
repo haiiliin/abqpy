@@ -62,13 +62,13 @@ class ElasticFoundation(Interaction):
             An :py:class:`~abaqus.Interaction.ElasticFoundation.ElasticFoundation` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the data for an existing ElasticFoundation object in the step where
         it is created.
         """
-        pass
+        ...
 
     def setValuesInStep(self, stepName: str, stiffness: float = None):
         """This method modifies the propagating data of an existing ElasticFoundation object in the
@@ -81,4 +81,4 @@ class ElasticFoundation(Interaction):
         stiffness
             A Float specifying the foundation stiffness per area (or per length for beams).
         """
-        pass
+        ...

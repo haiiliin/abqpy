@@ -257,7 +257,7 @@ class ResponseSpectrumStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -299,4 +299,4 @@ class ResponseSpectrumStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

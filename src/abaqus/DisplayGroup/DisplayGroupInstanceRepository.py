@@ -29,4 +29,4 @@ class DisplayGroupInstanceRepository:
             DisplayGroupInstance objects stored in the DisplayGroupInstanceRepository for which
             **lockOptions** is OFF. The default value of **updateInstances** is ON.
         """
-        pass
+        ...

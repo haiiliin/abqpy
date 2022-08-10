@@ -121,7 +121,7 @@ class AccelerationBC(BoundaryCondition):
             An :py:class:`~abaqus.BoundaryCondition.AccelerationBC.AccelerationBC` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -181,7 +181,7 @@ class AccelerationBC(BoundaryCondition):
             A SymbolicConstant specifying how the boundary condition is distributed spatially.
             Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -226,4 +226,4 @@ class AccelerationBC(BoundaryCondition):
             boundary condition is changed to have no amplitude reference. You should provide the
             **amplitude** argument only if it is valid for the specified step.
         """
-        pass
+        ...

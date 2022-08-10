@@ -75,7 +75,7 @@ class MeshNode:
         node: MeshNode
             A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object
         """
-        pass
+        ...
 
     def getElemEdges(self):
         """This method returns a tuple of element edge objects that share the node.
@@ -85,7 +85,7 @@ class MeshNode:
         edges: tuple[MeshEdge]
             A tuple of MeshEdge objects
         """
-        pass
+        ...
 
     def getElemFaces(self):
         """This method returns a tuple of element face objects that share the node.
@@ -95,7 +95,7 @@ class MeshNode:
         faces: tuple[MeshFace]
             A tuple of MeshFace objects
         """
-        pass
+        ...
 
     def getElements(self):
         """This method returns a tuple of element objects that share the node.
@@ -105,7 +105,7 @@ class MeshNode:
         elements: tuple[MeshElement]
             A tuple of MeshElement objects
         """
-        pass
+        ...
 
     def getNodesByFeatureEdge(self, angle: str):
         """This method returns an array of mesh node objects that are obtained by recursively
@@ -122,7 +122,7 @@ class MeshNode:
         nodes: MeshNodeArray
             A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects
         """
-        pass
+        ...
 
     def setValues(self, label: int = None):
         """This method modifies the MeshNode object.
@@ -134,4 +134,4 @@ class MeshNode:
             an orphan mesh part. The specified label must be non-negative and must not be in use by
             any other node of the same part.
         """
-        pass
+        ...

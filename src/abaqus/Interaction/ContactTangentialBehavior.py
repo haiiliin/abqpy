@@ -174,8 +174,8 @@ class ContactTangentialBehavior:
         ContactTangentialBehavior
             A :py:class:`~abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ContactTangentialBehavior object."""
-        pass
+        ...

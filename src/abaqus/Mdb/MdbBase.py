@@ -102,7 +102,7 @@ class MdbBase:
         Mdb
             A :py:class:`~abaqus.Mdb.Mdb.Mdb` object
         """
-        pass
+        ...
 
     def openMdb(self, pathName: str):
         """This method opens an existing model database file.
@@ -141,13 +141,13 @@ class MdbBase:
             cannot open file;
             If the command fails to open the model database file for reasons not mentioned above
         """
-        pass
+        ...
 
     def close(self):
         """This method closes an open Mdb object but does not save the Mdb object to disk. After
         closing the Mdb object, this method creates a new unnamed empty Mdb object.
         """
-        pass
+        ...
 
     def save(self):
         """This method saves an Mdb object to disk at the location specified by **pathName**
@@ -168,7 +168,7 @@ class MdbBase:
             cannot save file;
             If the command fails to save the Mdb object to disk for reasons not mentioned above
         """
-        pass
+        ...
 
     def saveAs(self, pathName: str):
         """This method saves an Mdb object to disk at the specified location.
@@ -188,7 +188,7 @@ class MdbBase:
             cannot save file;
             If the command fails to save the Mdb object to disk for reasons not mentioned above
         """
-        pass
+        ...
 
     def openAuxMdb(self, pathName: str):
         """This method opens an auxiliary Mdb object on the disk at the specified location. This
@@ -213,7 +213,7 @@ class MdbBase:
             cannot open file;
             If the command fails to open the model database file for reasons not mentioned above
         """
-        pass
+        ...
 
     def closeAuxMdb(self):
         """This method closes the auxiliary Mdb which had been opened earlier using the openAuxMdb
@@ -228,7 +228,7 @@ class MdbBase:
             The auxiliary Mdb was not opened;
             If the auxiliary Mdb was not opened earlier
         """
-        pass
+        ...
 
     def getAuxMdbModelNames(self):
         """This method returns a list of model names present in the auxiliary Mdb which had been
@@ -245,7 +245,7 @@ class MdbBase:
             The auxiliary Mdb was not opened;
             If the auxiliary Mdb was not opened earlier
         """
-        pass
+        ...
 
     def copyAuxMdbModel(self, fromName: str, toName: str = ""):
         """This method copies a specified model from the auxiliary Mdb which had been opened
@@ -269,4 +269,4 @@ class MdbBase:
             fromName does not exist;
             If the model fromName does not exist in the auxiliary Mdb
         """
-        pass
+        ...

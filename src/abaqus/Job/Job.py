@@ -135,7 +135,7 @@ class Job:
 
     def kill(self):
         """This method kills the analysis of a job."""
-        pass
+        ...
 
     def submit(
         self,
@@ -158,7 +158,7 @@ class Job:
             A Boolean specifying whether to run the job as a continuation analysis. The default
             value is False. The datacheckJob and continueJob arguments cannot both be True.
         """
-        pass
+        ...
 
     def waitForCompletion(self):
         """This method interrupts the execution of the script until the end of the analysis. If you
@@ -166,8 +166,8 @@ class Job:
         RUNNING, Abaqus assumes the analysis has either completed or aborted and returns
         immediately.
         """
-        pass
+        ...
 
     def clearMessage(self):
         """This method clears **messages** and sets the **status** to NONE."""
-        pass
+        ...
