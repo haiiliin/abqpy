@@ -10,4 +10,4 @@ class ConstrainedSketchConstraint:
             mdb.models[name].sketches[name].constraints[i]
     """
 
-    pass
+    ...

@@ -208,17 +208,17 @@ class RemeshingRule:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def resume(self):
         """This method resumes the remeshing rule that was previously suppressed."""
-        pass
+        ...
 
     def suppress(self):
         """This method suppresses the remeshing rule. Abaqus will not remesh regions where the
         rules are suppressed.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -301,4 +301,4 @@ class RemeshingRule:
             created during remeshing. Use None to indicate there is not upper limit. The default
             value is None.
         """
-        pass
+        ...

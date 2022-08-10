@@ -154,7 +154,7 @@ class FilmCondition(Interaction):
             A :py:class:`~abaqus.Interaction.FilmCondition.FilmCondition` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -209,7 +209,7 @@ class FilmCondition(Interaction):
             A SymbolicConstant specifying how the sink temperature is distributed. Possible values
             are UNIFORM, ANALYTICAL_FIELD, and DISCRETE_FIELD. The default value is UNIFORM.
         """
-        pass
+        ...
 
     def setValuesInStep(self, stepName: str):
         """This method modifies the propagating data of an existing FilmCondition object in the
@@ -220,4 +220,4 @@ class FilmCondition(Interaction):
         stepName
             A String specifying the name of the step in which the interaction is modified.
         """
-        pass
+        ...

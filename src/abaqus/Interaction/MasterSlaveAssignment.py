@@ -36,7 +36,7 @@ class MasterSlaveAssignment:
             surface whose index is referenced. Possible values are MAIN, SECONDARY, and BALANCED.
             The SymbolicConstant BALANCED can be specified only in an Abaqus/Standard analysis.
         """
-        pass
+        ...
 
     def appendInStep(self, stepName: str, assignments: SymbolicConstant):
         """This method allows addition of master-slave assignments to new surface pairs in a
@@ -57,7 +57,7 @@ class MasterSlaveAssignment:
               BALANCED. The SymbolicConstant BALANCED can be specified only in an Abaqus/Standard
               analysis.
         """
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing master-slave assignments.
@@ -67,4 +67,4 @@ class MasterSlaveAssignment:
         indices
             A sequence of Ints specifying the index of each master-slave assignment to delete.
         """
-        pass
+        ...

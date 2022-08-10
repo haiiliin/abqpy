@@ -142,7 +142,7 @@ class TwoPointSpringDashpot(SpringDashpot):
             A :py:class:`~abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -186,4 +186,4 @@ class TwoPointSpringDashpot(SpringDashpot):
             A Float specifying the force per relative velocity for the dashpots. The default value
             is 0.0.
         """
-        pass
+        ...

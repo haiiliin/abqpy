@@ -77,7 +77,7 @@ class Restart:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Restart object.
@@ -86,4 +86,4 @@ class Restart:
         ------
         RangeError
         """
-        pass
+        ...

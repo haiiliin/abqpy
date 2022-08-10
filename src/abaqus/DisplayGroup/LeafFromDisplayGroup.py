@@ -46,4 +46,4 @@ class LeafFromDisplayGroup(Leaf):
             A :py:class:`~abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup` object.
         """
         super().__init__(DEFAULT_MODEL)
-        pass
+        ...

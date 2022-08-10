@@ -68,8 +68,8 @@ class BiaxialTestData:
         BiaxialTestData
             A :py:class:`~abaqus.Material.TestData.BiaxialTestData.BiaxialTestData` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the BiaxialTestData object."""
-        pass
+        ...

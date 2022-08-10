@@ -34,7 +34,7 @@ class RepositorySupport(CommandRegister):
             A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object.
         """
         super().__init__()
-        pass
+        ...
 
     def Repository(self, name: str, constructors: str):
         """This method installs a repository on the class. The repository is an instance of a
@@ -51,4 +51,4 @@ class RepositorySupport(CommandRegister):
             A constructor or sequence of constructors specifying which classes will store their
             instances in the repository.
         """
-        pass
+        ...

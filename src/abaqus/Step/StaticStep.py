@@ -366,7 +366,7 @@ class StaticStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -477,4 +477,4 @@ class StaticStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

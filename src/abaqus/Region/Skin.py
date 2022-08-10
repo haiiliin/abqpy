@@ -72,7 +72,7 @@ class Skin:
         Skin
             A :py:class:`~abaqus.Region.Skin.Skin` object.
         """
-        pass
+        ...
 
     def EditSkin(
         self,
@@ -114,4 +114,4 @@ class Skin:
         Skin
             A :py:class:`~abaqus.Region.Skin.Skin` object.
         """
-        pass
+        ...

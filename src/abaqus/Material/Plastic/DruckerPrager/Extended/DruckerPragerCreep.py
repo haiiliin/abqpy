@@ -81,7 +81,7 @@ class DruckerPragerCreep:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the DruckerPragerCreep object.
@@ -90,4 +90,4 @@ class DruckerPragerCreep:
         ------
         RangeError
         """
-        pass
+        ...

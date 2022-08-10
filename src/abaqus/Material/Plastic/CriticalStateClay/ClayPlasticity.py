@@ -94,7 +94,7 @@ class ClayPlasticity:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ClayPlasticity object.
@@ -103,4 +103,4 @@ class ClayPlasticity:
         ------
         RangeError
         """
-        pass
+        ...

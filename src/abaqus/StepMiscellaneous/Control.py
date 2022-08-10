@@ -119,4 +119,4 @@ class Control:
         ------
         RangeError
         """
-        pass
+        ...

@@ -75,7 +75,7 @@ class PorousMetalPlasticity:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the PorousMetalPlasticity object.
@@ -84,4 +84,4 @@ class PorousMetalPlasticity:
         ------
         RangeError
         """
-        pass
+        ...

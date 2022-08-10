@@ -52,7 +52,7 @@ class DisplayGroupInstance:
         dict
             A Dictionary object.
         """
-        pass
+        ...
 
     def elements(self):
         """This method returns the list of elements present in the DisplayGroupInstance object. The
@@ -67,7 +67,7 @@ class DisplayGroupInstance:
         dict
             A Dictionary object.
         """
-        pass
+        ...
 
     def setValues(self, lockOptions: Boolean = OFF):
         """This method modifies the DisplayGroupInstance object. The setValues method is available
@@ -83,4 +83,4 @@ class DisplayGroupInstance:
             DisplayGroupInstance repository member of the OdbDisplay object. The default value is
             OFF.
         """
-        pass
+        ...

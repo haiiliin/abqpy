@@ -346,7 +346,7 @@ class TopologyTask(OptimizationTask):
             A :py:class:`~abaqus.Optimization.TopologyTask.TopologyTask` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -496,4 +496,4 @@ class TopologyTask(OptimizationTask):
             None or a Float specifying the viscous stiffness damping for the task region. The
             default value is None.
         """
-        pass
+        ...

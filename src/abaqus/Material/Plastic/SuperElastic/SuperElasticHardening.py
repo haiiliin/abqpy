@@ -47,7 +47,7 @@ class SuperElasticHardening:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the SuperElasticHardening object.
@@ -56,4 +56,4 @@ class SuperElasticHardening:
         ------
         RangeError
         """
-        pass
+        ...

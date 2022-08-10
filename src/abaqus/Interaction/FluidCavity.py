@@ -103,7 +103,7 @@ class FluidCavity(Interaction):
             A :py:class:`~abaqus.Interaction.FluidCavity.FluidCavity` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -129,4 +129,4 @@ class FluidCavity(Interaction):
             A Boolean specifying whether the analysis will check the consistency of the surface
             normals. The default value is ON.
         """
-        pass
+        ...

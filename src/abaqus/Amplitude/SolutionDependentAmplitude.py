@@ -87,7 +87,7 @@ class SolutionDependentAmplitude(Amplitude):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -117,4 +117,4 @@ class SolutionDependentAmplitude(Amplitude):
         ------
         RangeError
         """
-        pass
+        ...

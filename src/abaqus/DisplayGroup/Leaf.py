@@ -43,4 +43,4 @@ class Leaf:
         Leaf
             A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object.
         """
-        pass
+        ...

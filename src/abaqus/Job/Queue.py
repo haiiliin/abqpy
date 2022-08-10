@@ -116,4 +116,4 @@ class Queue:
         Directory in which to run the job on the remote computer is not set
             If **fileCopy** = ON and **directory** is empty.
         """
-        pass
+        ...

@@ -71,7 +71,7 @@ class BackwardCompatibility:
         list[str]
             A list of Strings.
         """
-        pass
+        ...
 
     def getDeprecatedArgsUsed(self):
         """This method returns a list of deprecated arguments used since the last call to
@@ -82,15 +82,15 @@ class BackwardCompatibility:
         list[str]
             A list of Strings.
         """
-        pass
+        ...
 
     def resetDeprecatedMethodsUsed(self):
         """This method clears the list of deprecated methods used."""
-        pass
+        ...
 
     def resetDeprecatedArgsUsed(self):
         """This method clears the list of deprecated arguments used."""
-        pass
+        ...
 
     def setValues(
         self,
@@ -112,4 +112,4 @@ class BackwardCompatibility:
             A Boolean specifying whether the keys and indices are included in the report that is
             displayed when **reportDeprecated** is True. The default value is False.
         """
-        pass
+        ...

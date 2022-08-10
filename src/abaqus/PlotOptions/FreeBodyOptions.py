@@ -148,4 +148,4 @@ class FreeBodyOptions:
             A Boolean specifying whether to use a constant length for all arrows. The default value
             is OFF.
         """
-        pass
+        ...

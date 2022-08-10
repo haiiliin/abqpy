@@ -28,7 +28,7 @@ class CaeKerPrefs:
             A Boolean specifying whether save a numbered backup copy of the preferences file,
             **fileName**. Default is True.
         """
-        pass
+        ...
     
     def saveAs(self, fileName: str = '', directory: typing.Literal["CURRENT", "HOME"] = HOME):
         """This method saves the sessionOptions to the specified location.
@@ -49,4 +49,4 @@ class CaeKerPrefs:
             The default value is HOME. Either **fileName** or **directory** must be
             supplied. The **fileName** or **directory** arguments are mutually exclusive.
         """
-        pass
+        ...

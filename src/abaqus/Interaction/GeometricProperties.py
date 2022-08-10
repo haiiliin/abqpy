@@ -103,8 +103,8 @@ class GeometricProperties:
         GeometricProperties
             A :py:class:`~abaqus.Interaction.GeometricProperties.GeometricProperties` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the GeometricProperties object."""
-        pass
+        ...

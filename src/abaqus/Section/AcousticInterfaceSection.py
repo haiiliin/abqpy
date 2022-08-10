@@ -57,7 +57,7 @@ class AcousticInterfaceSection(Section):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, thickness: float = 1):
         """This method modifies the AcousticInterfaceSection object.
@@ -72,4 +72,4 @@ class AcousticInterfaceSection(Section):
         ------
         RangeError
         """
-        pass
+        ...

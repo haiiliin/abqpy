@@ -50,7 +50,7 @@ class JournalOptions:
             output. The default values are the same as the default values for the NumberFormat
             object.
         """
-        pass
+        ...
 
     def NumberFormat(
         self,

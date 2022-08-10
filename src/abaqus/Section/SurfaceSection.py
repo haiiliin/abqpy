@@ -68,4 +68,4 @@ class SurfaceSection(Section):
         RangeError and InvalidNameError
         """
         super().__init__()
-        pass
+        ...

@@ -62,7 +62,7 @@ class FailStrain:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the FailStrain object.
@@ -71,4 +71,4 @@ class FailStrain:
         ------
         RangeError
         """
-        pass
+        ...

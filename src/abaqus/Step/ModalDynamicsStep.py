@@ -245,7 +245,7 @@ class ModalDynamicsStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -291,4 +291,4 @@ class ModalDynamicsStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

@@ -126,7 +126,7 @@ class ConnectorPotential:
         ------
         ValueError and TextError 
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorPotential object.
@@ -135,7 +135,7 @@ class ConnectorPotential:
         ------
         ValueError
         """
-        pass
+        ...
 
     def DerivedComponent(self) -> DerivedComponent:
         """This method creates a DerivedComponent object.

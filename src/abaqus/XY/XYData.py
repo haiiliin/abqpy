@@ -7,7 +7,7 @@ from ..PathAndProbe.Path import Path
 
 # prevent circular imports
 class Odb:
-    pass
+    ...
 
 
 class XYData(tuple):
@@ -156,7 +156,7 @@ class XYData(tuple):
         XYData
             An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
-        pass
+        ...
 
     @typing.overload
     def __init__(self, objectToCopy: "XYData"):
@@ -180,10 +180,10 @@ class XYData(tuple):
         XYData
             An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
-        pass
+        ...
 
     def __init__(self, *args, **kwargs):
-        pass
+        ...
 
     def XYDataFromFile(
         self,
@@ -263,7 +263,7 @@ class XYData(tuple):
         InvalidNameError
         RangeError
         """
-        pass
+        ...
 
     def XYDataFromHistory(
         self,
@@ -340,7 +340,7 @@ class XYData(tuple):
         InvalidNameError
         RangeError
         """
-        pass
+        ...
 
     def xyDataListFromField(
         self,
@@ -429,7 +429,7 @@ class XYData(tuple):
         InvalidNameError
         RangeError
         """
-        pass
+        ...
 
     def XYDataFromFreeBody(
         self,
@@ -487,7 +487,7 @@ class XYData(tuple):
         InvalidNameError
         RangeError
         """
-        pass
+        ...
 
     def XYDataFromShellThickness(
         self,
@@ -577,7 +577,7 @@ class XYData(tuple):
         InvalidNameError
         RangeError
         """
-        pass
+        ...
 
     def XYDataFromPath(
         self,
@@ -710,13 +710,13 @@ class XYData(tuple):
         ErrorDeformedMagTupleInPathExtract: Deformed magnification tuple must contain X, Y and Z values
             If **deformedMag** does not contain three Floats.
         """
-        pass
+        ...
 
     def save(self):
         """This method saves a temporary XYData. The name of the XYData is changed to "XYData-#".
         If the XYData is already saved, nothing is done.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -758,4 +758,4 @@ class XYData(tuple):
             A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
             values.
         """
-        pass
+        ...
