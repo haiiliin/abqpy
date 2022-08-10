@@ -1,6 +1,7 @@
 import typing
 
 from abaqusConstants import *
+from .Region import Region
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.Face import Face
 from ..BasicGeometry.FaceArray import FaceArray
@@ -8,7 +9,7 @@ from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNodeArray import MeshNodeArray
 
 
-class Surface:
+class Surface(Region):
     """The Surface object stores surfaces selected from the assembly. A surface is comprised of
     geometric or discrete entities but not both. An instance of a Surface object is
     available from the **surface** member of the Assembly object.
