@@ -327,7 +327,7 @@ class PartInstance:
         tuple[PartInstance]
             A sequence of :py:class:`~abaqus.Assembly.PartInstance.PartInstance` objects.
         """
-        pass
+        ...
 
     def RadialInstancePattern(
         self,
