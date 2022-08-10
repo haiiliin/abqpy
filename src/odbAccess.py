@@ -2,7 +2,7 @@ from abaqus.Odb.OdbCommands import *
 from abaqus.UtilityAndView.BackwardCompatibility import BackwardCompatibility
 
 
-def openOdb(name: str, *args, **kwargs):
+def openOdb(name: str, *args, **kwargs) -> Odb:
     abaqus = 'abaqus'
     if 'ABAQUS_BAT_PATH' in os.environ.keys():
         abaqus = os.environ['ABAQUS_BAT_PATH']
