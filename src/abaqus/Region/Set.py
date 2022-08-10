@@ -18,22 +18,23 @@ from ..Mesh.MeshNode import MeshNode
 from ..Mesh.MeshNodeArray import MeshNodeArray
 
 
-class Set:
+class Set(Region):
     """If a set spans more than one part instance, the members **vertices**, **edges**, **faces**,
     **cells**, **elements**, or **nodes** return a sequence of all the queried
     vertices/edges/faces/cells/elements/nodes respectively for each part instance contained
     in the set. For example:
-    assembly=mdb.models['Transmission'].rootAssembly
-    clutchElements=assembly.instances['Clutch'].elements
-    clutchSet=clutchElements[16:18]+clutchElements[78:80]
-    housingElements=assembly.instances['Housing'].elements
-    housingSet=housingElements[45:48]
-    transmissionSet=assembly.Set(name='TransmissionSet', elements=(clutchSet, housingSet))
-    len(transmissionSet.elements)=7
 
-    transmissionSet.elements[0]=mdb.models['Transmission'].rootAssembly.instances['Clutch-1'].elements[16]
+    .. code-block:: python
 
-    transmissionSet.elements[6]=mdb.models['Transmission'].rootAssembly.instances['housing-'].elements[47]
+        assembly=mdb.models['Transmission'].rootAssembly
+        clutchElements=assembly.instances['Clutch'].elements
+        clutchSet=clutchElements[16:18]+clutchElements[78:80]
+        housingElements=assembly.instances['Housing'].elements
+        housingSet=housingElements[45:48]
+        transmissionSet=assembly.Set(name='TransmissionSet', elements=(clutchSet, housingSet))
+        len(transmissionSet.elements)=7
+        transmissionSet.elements[0]=mdb.models['Transmission'].rootAssembly.instances['Clutch-1'].elements[16]
+        transmissionSet.elements[6]=mdb.models['Transmission'].rootAssembly.instances['housing-'].elements[47]
 
     .. note:: 
         This object can be accessed by:
