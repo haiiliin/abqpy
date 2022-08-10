@@ -57,8 +57,8 @@ class ShearTestData:
         ShearTestData
             A :py:class:`~abaqus.Material.TestData.ShearTestData.ShearTestData` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ShearTestData object."""
-        pass
+        ...

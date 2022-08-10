@@ -172,7 +172,7 @@ class Coupling(Constraint):
             A :py:class:`~abaqus.Constraint.Coupling.Coupling` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -228,4 +228,4 @@ class Coupling(Constraint):
             The default value is UNIFORM.The **weightingMethod** argument applies only when
             **couplingType** = DISTRIBUTING.
         """
-        pass
+        ...

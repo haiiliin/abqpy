@@ -46,4 +46,4 @@ class LeafFromPartNodeLabels(Leaf):
             A :py:class:`~abaqus.DisplayGroup.LeafFromPartNodeLabels.LeafFromPartNodeLabels` object.
         """
         super().__init__(DEFAULT_MODEL)
-        pass
+        ...

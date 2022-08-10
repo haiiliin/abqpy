@@ -78,7 +78,7 @@ class AdaptivityProcess:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def submit(
         self,
@@ -100,7 +100,7 @@ class AdaptivityProcess:
             A Boolean specifying whether to run the adaptivity as a continuation analysis. The
             default value is False. The datacheckJob and continueJob arguments cannot both be True.
         """
-        pass
+        ...
 
     def setValues(self, maxIterations: int = 3, jobPrefix: str = ""):
         """This method modifies the AdaptivityProcess object.
@@ -116,7 +116,7 @@ class AdaptivityProcess:
             empty string indicates that the name of the adaptivity process should be used. The
             default value is an empty string.
         """
-        pass
+        ...
 
     def AdaptivityIteration(
         self,

@@ -95,7 +95,7 @@ class TextStyle:
         ------
         ColorError
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -121,4 +121,4 @@ class TextStyle:
             A Float specifying the angle in degrees used for displaying the text. The default value
             is 0.0.
         """
-        pass
+        ...

@@ -29,4 +29,4 @@ class FixedConstraint(ConstrainedSketchConstraint):
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint` object.
 
         """
-        pass
+        ...

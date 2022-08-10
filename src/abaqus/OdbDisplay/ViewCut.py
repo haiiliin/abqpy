@@ -185,7 +185,7 @@ class ViewCut:
         ViewCut
             A :py:class:`~abaqus.OdbDisplay.ViewCut.ViewCut` object.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -275,10 +275,10 @@ class ViewCut:
             the deformation. Possible values are FIRST_FRAME, LAST_FRAME, and CURRENT_FRAME. The
             default value is FIRST_FRAME.
         """
-        pass
+        ...
 
     def updateVariable(self):
         """This method updates the field associated with an isosurface cut to be consistent with
         the current primary variable.
         """
-        pass
+        ...

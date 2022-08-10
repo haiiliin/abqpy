@@ -158,7 +158,7 @@ class Set(Region):
         Set
             A :py:class:`~abaqus.Region.Set.Set` object.
         """
-        pass
+        ...
 
     @typing.overload
     def __init__(self, name: str, objectToCopy: "Set"):
@@ -184,10 +184,10 @@ class Set(Region):
         Set
             A :py:class:`~abaqus.Region.Set.Set` object.
         """
-        pass
+        ...
 
     def __init__(self, *args, **kwargs):
-        pass
+        ...
 
     def SetByBoolean(
         self, name: str, sets: tuple["Set"], operation: SymbolicConstant = UNION
@@ -219,7 +219,7 @@ class Set(Region):
         Set
             A :py:class:`~abaqus.Region.Set.Set` object.
         """
-        pass
+        ...
 
     def SetFromColor(self, name: str, color: tuple):
         """This method creates a set containing faces of the part marked with a specified color
@@ -250,7 +250,7 @@ class Set(Region):
         Set
             A :py:class:`~abaqus.Region.Set.Set` object.
         """
-        pass
+        ...
 
     def SetFromElementLabels(self, name: str, elementLabels: tuple):
         """This method creates a set from a sequence of element labels in a model database.
@@ -277,7 +277,7 @@ class Set(Region):
         Set
             A :py:class:`~abaqus.Region.Set.Set` object.
         """
-        pass
+        ...
 
     def SetFromNodeLabels(self, name: str, nodeLabels: tuple):
         """This method creates a set from a sequence of node labels in a model database.
@@ -304,7 +304,7 @@ class Set(Region):
         Set
             A :py:class:`~abaqus.Region.Set.Set` object.
         """
-        pass
+        ...
 
     def MapSetsFromOdb(
         self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE
@@ -336,4 +336,4 @@ class Set(Region):
         Set
             A :py:class:`~abaqus.Region.Set.Set` object or a tuple of Set objects.
         """
-        pass
+        ...

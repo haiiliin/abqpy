@@ -74,7 +74,7 @@ class AdaptivityIteration:
         AdaptivityIteration
             An :py:class:`~abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration` object.
         """
-        pass
+        ...
 
     def ErrorIndicatorResult(self, name: str, results: str) -> ErrorIndicatorResult:
         """This method creates an ErrorIndicatorResult with data for an error indicator variable in

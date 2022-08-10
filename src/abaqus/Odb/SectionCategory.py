@@ -67,7 +67,7 @@ class SectionCategory:
         SectionCategory
             A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object.
         """
-        pass
+        ...
 
     def SectionPoint(self, number: int, description: str) -> SectionPoint:
         """This method creates a SectionPoint object.

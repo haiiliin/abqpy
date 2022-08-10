@@ -59,7 +59,7 @@ class ClayHardening:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ClayHardening object.
@@ -68,4 +68,4 @@ class ClayHardening:
         ------
         RangeError
         """
-        pass
+        ...

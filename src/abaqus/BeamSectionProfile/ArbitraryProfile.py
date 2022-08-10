@@ -67,7 +67,7 @@ class ArbitraryProfile(Profile):
 
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ArbitraryProfile object.
@@ -77,4 +77,4 @@ class ArbitraryProfile(Profile):
         RangeError
 
         """
-        pass
+        ...

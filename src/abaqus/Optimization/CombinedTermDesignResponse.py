@@ -173,7 +173,7 @@ class CombinedTermDesignResponse(DesignResponse):
             A :py:class:`~abaqus.Optimization.CombinedTermDesignResponse.CombinedTermDesignResponse` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -245,4 +245,4 @@ class CombinedTermDesignResponse(DesignResponse):
             A sequence of Floats specifying the weights to apply to the list of design responses
             used when **method** is WEIGHTED_ADD. The default value is an empty sequence.
         """
-        pass
+        ...

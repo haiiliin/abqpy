@@ -21,4 +21,4 @@ class Transform:
             A tuple of 12 Floats.
 
         """
-        pass
+        ...

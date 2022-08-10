@@ -204,7 +204,7 @@ class Elastic:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Elastic object.
@@ -213,4 +213,4 @@ class Elastic:
         ------
         RangeError
         """
-        pass
+        ...

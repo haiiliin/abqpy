@@ -60,7 +60,7 @@ class BeadGrowth(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.BeadGrowth.BeadGrowth` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, beadGrowth: float = 0, shrink: float = 0):
         """This method modifies the BeadGrowth object.
@@ -74,4 +74,4 @@ class BeadGrowth(GeometricRestriction):
             A Float specifying the maximum optimization displacement in the shrink direction. Either
             **beadGrowth** or **shrink** or both must be specified The default value is 0.0.
         """
-        pass
+        ...

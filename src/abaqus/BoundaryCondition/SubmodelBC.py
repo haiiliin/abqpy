@@ -128,7 +128,7 @@ class SubmodelBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.SubmodelBC.SubmodelBC` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -168,7 +168,7 @@ class SubmodelBC(BoundaryCondition):
             A Float specifying the thickness of the center zone size around the shell midsurface.
             The default value is None.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -208,4 +208,4 @@ class SubmodelBC(BoundaryCondition):
             The default value is None.The **centerZoneSize** argument is applicable only if
             **fixed** = OFF.
         """
-        pass
+        ...

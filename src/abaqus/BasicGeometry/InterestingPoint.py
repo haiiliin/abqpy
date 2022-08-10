@@ -45,4 +45,4 @@ class InterestingPoint:
             An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` object.
 
         """
-        pass
+        ...

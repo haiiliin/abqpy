@@ -129,7 +129,7 @@ class Movie:
             - If the contents of **fileName** are corrupt or can not be decoded:
               ValueError: Unable to decode movie file
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -174,4 +174,4 @@ class Movie:
             or*timelineEndTime* are outside their respective valid range.
               RangeError: startFrame must be an Integer in the range: 0 to numFrames-1
         """
-        pass
+        ...

@@ -80,7 +80,7 @@ class FluidCavityPressureBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self, magnitude: float = 0, amplitude: str = UNSET, fixed: Boolean = OFF
@@ -101,7 +101,7 @@ class FluidCavityPressureBC(BoundaryCondition):
             A Boolean specifying whether the boundary condition should remain fixed at the current
             values at the start of the step. The default value is OFF.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -125,4 +125,4 @@ class FluidCavityPressureBC(BoundaryCondition):
             boundary condition is changed to have no amplitude reference. You should provide the
             **amplitude** argument only if it is valid for the specified step.
         """
-        pass
+        ...

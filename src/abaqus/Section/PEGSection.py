@@ -83,7 +83,7 @@ class PEGSection(Section):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self, thickness: float = 1, wedgeAngle1: float = 0, wedgeAngle2: float = 0
@@ -106,4 +106,4 @@ class PEGSection(Section):
         ------
         RangeError
         """
-        pass
+        ...

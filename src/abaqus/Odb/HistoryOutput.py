@@ -74,7 +74,7 @@ class HistoryOutput:
         HistoryOutput
             A :py:class:`~abaqus.Odb.HistoryOutput.HistoryOutput` object.
         """
-        pass
+        ...
 
     @typing.overload
     def addData(self, frame: str, value: str):
@@ -88,7 +88,7 @@ class HistoryOutput:
         value
             A Double specifying the value of the variable at the frame value specified in **frame**.
         """
-        pass
+        ...
 
     @typing.overload
     def addData(self, frame: tuple, value: tuple):
@@ -108,7 +108,7 @@ class HistoryOutput:
         ValueError
             If the length of **frame** is not the same as the length of **value**.
         """
-        pass
+        ...
 
     @typing.overload
     def addData(self, data: tuple):
@@ -121,7 +121,7 @@ class HistoryOutput:
             **frameValue** is either time, frequency, or mode and **value** is the value of the
             specified variable at **frameValue**. (This value depends on the type of the variable.)
         """
-        pass
+        ...
 
     def addData(self, *args, **kwargs):
-        pass
+        ...

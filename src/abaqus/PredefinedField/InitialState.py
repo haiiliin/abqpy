@@ -89,7 +89,7 @@ class InitialState(PredefinedField):
             An :py:class:`~abaqus.PredefinedField.InitialState.InitialState` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -113,4 +113,4 @@ class InitialState(PredefinedField):
             A Boolean specifying whether to update the reference configuration based on the import
             data. The default value is OFF.
         """
-        pass
+        ...

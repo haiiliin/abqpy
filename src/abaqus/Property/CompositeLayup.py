@@ -117,19 +117,19 @@ class CompositeLayup:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def suppress(self):
         """This method suppresses a composite layup."""
-        pass
+        ...
 
     def resume(self):
         """This method resumes a composite layup that was previously suppressed."""
-        pass
+        ...
 
     def deletePlies(self):
         """This method deletes all of the plies from a composite layup."""
-        pass
+        ...
 
     def setValues(
         self,
@@ -164,7 +164,7 @@ class CompositeLayup:
             A Boolean specifying whether or not the layup should be made symmetric by the analysis.
             The default value is OFF.
         """
-        pass
+        ...
 
     def CompositePly(
         self,

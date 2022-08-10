@@ -43,4 +43,4 @@ class LeafFromMeshSurfaceSets(Leaf):
             A :py:class:`~abaqus.DisplayGroup.LeafFromMeshSurfaceSets.LeafFromMeshSurfaceSets` object.
         """
         super().__init__(DEFAULT_MODEL)
-        pass
+        ...

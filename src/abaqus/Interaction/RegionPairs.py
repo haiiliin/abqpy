@@ -51,4 +51,4 @@ class RegionPairs:
             a ContactExp object, the second parameter of each pair can also be a string that
             references an Eulerian material surface.
         """
-        pass
+        ...

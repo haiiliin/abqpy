@@ -85,7 +85,7 @@ class OdbFrame:
         OdbFrame
             An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
         """
-        pass
+        ...
 
     @typing.overload
     def __init__(self, mode: int, frequency: float, description: str = ""):
@@ -115,7 +115,7 @@ class OdbFrame:
         OdbFrame
             An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
         """
-        pass
+        ...
 
     @typing.overload
     def __init__(
@@ -146,10 +146,10 @@ class OdbFrame:
         OdbFrame
             An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
         """
-        pass
+        ...
 
     def Frame(self, *args, **kwargs):
-        pass
+        ...
 
     @typing.overload
     def FieldOutput(
@@ -204,7 +204,7 @@ class OdbFrame:
         FieldOutput
             A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
-        pass
+        ...
 
     @typing.overload
     def FieldOutput(self, field: "FieldOutput", name: str = "", description: str = ""):
@@ -233,7 +233,7 @@ class OdbFrame:
         FieldOutput
             A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
-        pass
+        ...
 
     def FieldOutput(self, *args, **kwargs):
         if "name" in kwargs.keys():

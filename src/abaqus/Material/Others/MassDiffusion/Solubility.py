@@ -58,7 +58,7 @@ class Solubility:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Solubility object.
@@ -67,4 +67,4 @@ class Solubility:
         ------
         RangeError
         """
-        pass
+        ...

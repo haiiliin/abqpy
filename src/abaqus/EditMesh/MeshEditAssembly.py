@@ -34,7 +34,7 @@ class MeshEditAssembly(AssemblyBase):
             A SymbolicConstant specifying the method used to collapse the edge. Possible values are
             FORWARD, REVERSE, and AVERAGE.
         """
-        pass
+        ...
 
     def combineElement(self, elements: tuple):
         """This method combines two triangular elements of a part instance.
@@ -44,7 +44,7 @@ class MeshEditAssembly(AssemblyBase):
         elements
             A sequence of triangular MeshElement objects specifying the elements to combine.
         """
-        pass
+        ...
 
     def deleteElement(
         self, elements: tuple[MeshElement], deleteUnreferencedNodes: Boolean = OFF
@@ -60,7 +60,7 @@ class MeshEditAssembly(AssemblyBase):
             A Boolean specifying whether to delete all those associated nodes that become
             unreferenced after the given elements are deleted. The default value is OFF.
         """
-        pass
+        ...
 
     def projectNode(self, nodes: tuple[MeshNode], projectionReference: str):
         """This method projects the given nodes of a part instance onto a mesh entity, geometric
@@ -75,7 +75,7 @@ class MeshEditAssembly(AssemblyBase):
             **projectionReference** can be any one of the following objects: MeshNode, MeshEdge,
             MeshFace, ConstrainedSketchVertex, Edge, Face, DatumPoint, DatumAxis, or DatumPlane.
         """
-        pass
+        ...
 
     def editNode(
         self,
@@ -132,7 +132,7 @@ class MeshEditAssembly(AssemblyBase):
         ------
         A coordinate and an offset may not both be specified for the same coordinate component
         """
-        pass
+        ...
 
     @typing.overload
     def mergeNodes(
@@ -156,7 +156,7 @@ class MeshEditAssembly(AssemblyBase):
             A Boolean specifying whether elements with the same connectivity after the merge will
             merged into a single element. The default value is True.
         """
-        pass
+        ...
 
     @typing.overload
     def mergeNodes(
@@ -175,10 +175,10 @@ class MeshEditAssembly(AssemblyBase):
             A Boolean specifying whether elements with the same connectivity after the merge will
             merged into a single element. The default value is True.
         """
-        pass
+        ...
 
     def mergeNodes(self, *args, **kwargs):
-        pass
+        ...
 
     def splitElement(self, elements: tuple):
         """This method splits quadrilateral elements into triangular elements.
@@ -189,7 +189,7 @@ class MeshEditAssembly(AssemblyBase):
             A sequence of quadrilateral MeshElement objects specifying the elements to split. Each
             quadrilateral element is split into two triangular elements by the shorter diagonal.
         """
-        pass
+        ...
 
     def splitMeshEdge(self, edge: str, parameter: float = 0):
         """This method splits an edge of a quadrilateral or triangular element of a part instance.
@@ -202,7 +202,7 @@ class MeshEditAssembly(AssemblyBase):
             A Float specifying the normalized distance along the **edge** at which to split. Possible
             values are 0.0 << **parameter** << 1.0. The default value is 0.5.
         """
-        pass
+        ...
 
     def swapMeshEdge(self, edge: str):
         """This method swaps the diagonal of two adjacent triangular elements of a part instance.
@@ -212,7 +212,7 @@ class MeshEditAssembly(AssemblyBase):
         edge
             A single MeshEdge object specifying the element edge to swap.
         """
-        pass
+        ...
 
     def generateMeshByOffset(
         self,
@@ -265,7 +265,7 @@ class MeshEditAssembly(AssemblyBase):
             A Boolean specifying whether existing element sets that include base elements will be
             extended to include corresponding offset elements. The default value is False.
         """
-        pass
+        ...
 
     def redoMeshEdit(self):
         """This method executes the edit mesh or the bottom-up meshing operation most recently
@@ -275,7 +275,7 @@ class MeshEditAssembly(AssemblyBase):
         further edit mesh commands on the assembly. It also implies that the user provided a
         sufficient cache allowance to store the undo operation.
         """
-        pass
+        ...
 
     def undoMeshEdit(self):
         """This method undoes the most recent edit mesh or the bottom-up meshing operation on an
@@ -284,4 +284,4 @@ class MeshEditAssembly(AssemblyBase):
         executing an edit mesh command on the assembly, the user enabled edit mesh undo with a
         sufficient cache allowance to store the edit mesh operation.
         """
-        pass
+        ...

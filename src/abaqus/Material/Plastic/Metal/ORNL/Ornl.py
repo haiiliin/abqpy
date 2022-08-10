@@ -60,7 +60,7 @@ class Ornl:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Ornl object.
@@ -69,4 +69,4 @@ class Ornl:
         ------
         RangeError
         """
-        pass
+        ...

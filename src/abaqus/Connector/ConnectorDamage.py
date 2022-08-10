@@ -342,7 +342,7 @@ class ConnectorDamage(ConnectorBehaviorOption):
         ValueError and TextError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorDamage object.
@@ -351,4 +351,4 @@ class ConnectorDamage(ConnectorBehaviorOption):
         ------
         ValueError
         """
-        pass
+        ...

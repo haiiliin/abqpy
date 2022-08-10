@@ -341,7 +341,7 @@ class IncidentWaveProperty(ContactProperty):
             An :py:class:`~abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty` object.
         """
         super().__init__(name)
-        pass
+        ...
 
     def setValues(
         self,
@@ -497,4 +497,4 @@ class IncidentWaveProperty(ContactProperty):
             to pascals. The default value is 1.0.This argument is valid only when
             **definition** = AIR_BLAST or **definition** = SURFACE_BLAST.
         """
-        pass
+        ...

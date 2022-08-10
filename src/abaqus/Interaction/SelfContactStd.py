@@ -111,7 +111,7 @@ class SelfContactStd(Interaction):
             A :py:class:`~abaqus.Interaction.SelfContactStd.SelfContactStd` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -140,7 +140,7 @@ class SelfContactStd(Interaction):
             interaction. An empty string indicates that the default contact controls will be used.
             The default value is an empty string.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self, stepName: str, interactionProperty: str = "", contactControls: str = ""
@@ -160,4 +160,4 @@ class SelfContactStd(Interaction):
             interaction. An empty string indicates that the default contact controls will be used.
             The default value is an empty string.
         """
-        pass
+        ...

@@ -329,13 +329,13 @@ class SurfaceToSurfaceContactStd(Interaction):
             A :py:class:`~abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd` object.
         """
         super().__init__()
-        pass
+        ...
 
     def swapSurfaces(self):
         """This method switches the master and slave surfaces of a surface-to-surface contact
         pair. This command is valid only for the step in which the interaction is created.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -462,7 +462,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             A :py:class:`~abaqus.Region.Region.Region` object specifying the slave node sub-set for bonding, used only when the
             contact property CohesiveBehavior option specifies use.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -518,4 +518,4 @@ class SurfaceToSurfaceContactStd(Interaction):
             interaction. The empty string indicates that the default contact controls will be used.
             The default value is an empty string.
         """
-        pass
+        ...

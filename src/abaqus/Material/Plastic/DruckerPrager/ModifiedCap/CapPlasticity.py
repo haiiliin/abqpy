@@ -78,7 +78,7 @@ class CapPlasticity:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the CapPlasticity object.
@@ -87,4 +87,4 @@ class CapPlasticity:
         ------
         RangeError
         """
-        pass
+        ...

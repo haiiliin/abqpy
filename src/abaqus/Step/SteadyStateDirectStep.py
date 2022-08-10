@@ -230,7 +230,7 @@ class SteadyStateDirectStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -268,4 +268,4 @@ class SteadyStateDirectStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

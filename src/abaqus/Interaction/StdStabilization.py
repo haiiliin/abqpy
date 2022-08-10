@@ -101,7 +101,7 @@ class StdStabilization(ContactStabilization):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -140,4 +140,4 @@ class StdStabilization(ContactStabilization):
         ------
         RangeError
         """
-        pass
+        ...

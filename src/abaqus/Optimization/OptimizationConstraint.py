@@ -69,7 +69,7 @@ class OptimizationConstraint:
         InvalidNameError
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, restrictionMethod: SymbolicConstant = ABSOLUTE_EQUAL):
         """This method modifies the OptimizationConstraint object.
@@ -86,4 +86,4 @@ class OptimizationConstraint:
         ------
         RangeError
         """
-        pass
+        ...

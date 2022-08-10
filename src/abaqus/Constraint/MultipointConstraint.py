@@ -106,7 +106,7 @@ class MultipointConstraint(Constraint):
             A :py:class:`~abaqus.Constraint.MultipointConstraint.MultipointConstraint` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -132,4 +132,4 @@ class MultipointConstraint(Constraint):
             Possible values are DOF_MODE_MPC and NODE_MODE_MPC. The default value is
             DOF_MODE_MPC.The **userMode** argument applies only when **mpcType** = USER_MPC.
         """
-        pass
+        ...

@@ -30,4 +30,4 @@ class Arc3Points(ConstrainedSketchGeometry):
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the arc cannot be created).
 
         """
-        pass
+        ...

@@ -234,7 +234,7 @@ class JobFromInputFile(Job):
             RESTART of input file job is not currently supported
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -319,4 +319,4 @@ class JobFromInputFile(Job):
             multiple processes that communicate through a message passing interface (MPI). Possible
             values are DEFAULT, THREADS, and MPI. The default value is DEFAULT.
         """
-        pass
+        ...

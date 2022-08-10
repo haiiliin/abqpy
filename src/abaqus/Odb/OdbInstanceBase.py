@@ -112,7 +112,7 @@ class OdbInstanceBase:
         OdbInstance
             An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object.
         """
-        pass
+        ...
 
     def assignBeamOrientation(
         self, region: str, method: SymbolicConstant, vector: tuple
@@ -130,7 +130,7 @@ class OdbInstanceBase:
             A sequence of three Floats specifying the approximate local n1n1-direction of the beam
             cross-section.
         """
-        pass
+        ...
 
     def assignMaterialOrientation(
         self,
@@ -161,7 +161,7 @@ class OdbInstanceBase:
             values are STACK_1, STACK_2, STACK_3, and STACK_ORIENTATION. The default value is
             STACK_3.
         """
-        pass
+        ...
 
     def assignRebarOrientation(
         self,
@@ -187,7 +187,7 @@ class OdbInstanceBase:
         angle
             A Float specifying the angle of the additional rotation. The default value is 0.0.
         """
-        pass
+        ...
 
     def getElementFromLabel(self, label: int):
         """This method is used to retrieved an element with a specific label from an instance
@@ -208,7 +208,7 @@ class OdbInstanceBase:
         OdbError: Invalid element label
             If no element with the specified label exists.
         """
-        pass
+        ...
 
     def getNodeFromLabel(self, label: int):
         """This method is used to retrieved a node with a specific label from an instance object.
@@ -227,7 +227,7 @@ class OdbInstanceBase:
         OdbError: Invalid node label
             If no node with the specified label exists.
         """
-        pass
+        ...
 
     def assignSection(self, region: str, section: Section):
         """This method is used to assign a section to a region on an instance.
@@ -246,7 +246,7 @@ class OdbInstanceBase:
         OdbError: Section assignment requires element set from this part instance
             If the element set is not from the current instance.
         """
-        pass
+        ...
 
     def AnalyticRigidSurf2DPlanar(
         self, name: str, profile: tuple[AnalyticSurfaceSegment], filletRadius: str = 0
@@ -271,7 +271,7 @@ class OdbInstanceBase:
             If OdbPart associated with the part instance is of type THREE_D.
               
         """
-        pass
+        ...
 
     def AnalyticRigidSurfExtrude(
         self,
@@ -304,7 +304,7 @@ class OdbInstanceBase:
             If OdbPart associated with the part instance is not of type THREE_D.
               
         """
-        pass
+        ...
 
     def AnalyticRigidSurfRevolve(
         self,
@@ -337,7 +337,7 @@ class OdbInstanceBase:
             If OdbPart associated with the part instance is not of type THREE_D.
               
         """
-        pass
+        ...
 
     def RigidBody(
         self,
@@ -372,4 +372,4 @@ class OdbInstanceBase:
         OdbError: Rigid body definition requires a node set
             If **referenceNode** is not a node set.
         """
-        pass
+        ...
