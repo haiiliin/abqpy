@@ -1,5 +1,6 @@
 from abaqusConstants import *
-
+import typing
+from .ConstrainedSketchVertex import ConstrainedSketchVertex
 
 class ConstrainedSketchVertexArray:
     """The ConstrainedSketchVertexArray is a sequence of ConstrainedSketchVertex objects.
@@ -13,7 +14,7 @@ class ConstrainedSketchVertexArray:
             mdb.models[name].sketches[name].vertices[i]
     """
 
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True):
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[ConstrainedSketchVertex, typing.List[ConstrainedSketchVertex]]:
         """This method returns the ConstrainedSketchVertex located at the given coordinates.
 
         Parameters
@@ -29,4 +30,4 @@ class ConstrainedSketchVertexArray:
         ConstrainedSketchVertex
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object.
         """
-        pass
+        return ConstrainedSketchVertex()
