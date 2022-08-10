@@ -68,7 +68,7 @@ class CastIronPlasticity:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the CastIronPlasticity object.
@@ -77,4 +77,4 @@ class CastIronPlasticity:
         ------
         RangeError
         """
-        pass
+        ...

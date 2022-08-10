@@ -44,4 +44,4 @@ class LeafFromDatums(Leaf):
             A :py:class:`~abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums` object.
         """
         super().__init__(DEFAULT_MODEL)
-        pass
+        ...

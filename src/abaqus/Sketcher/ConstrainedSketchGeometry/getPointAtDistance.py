@@ -26,4 +26,4 @@ class getPointAtDistance(ConstrainedSketchGeometry):
             A pair of floats representing the point along the edge.
 
         """
-        pass
+        ...

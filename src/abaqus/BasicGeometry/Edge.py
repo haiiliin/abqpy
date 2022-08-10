@@ -64,7 +64,7 @@ class Edge:
             A Boolean value of True if the tangent is flipped and False if not.
 
         """
-        pass
+        ...
 
     def getCurvature(self, parameter: float, point: tuple):
         """This method returns curvature information at a location on the edge.
@@ -91,7 +91,7 @@ class Edge:
         ------
         The given edge is straight
         """
-        pass
+        ...
 
     def getFaces(self):
         """This method returns a sequence consisting of the face ids of the faces which share this
@@ -103,7 +103,7 @@ class Edge:
             A tuple of integers.
 
         """
-        pass
+        ...
 
     def getAdjacentEdges(self):
         """This method returns an array of Edge objects that share at least one vertex of the edge.
@@ -114,7 +114,7 @@ class Edge:
             An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
 
         """
-        pass
+        ...
 
     def getEdgesByEdgeAngle(self, angle: str):
         """This method returns an array of Edge objects that are obtained by recursively finding
@@ -131,7 +131,7 @@ class Edge:
             An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edgeobjects.
 
         """
-        pass
+        ...
 
     def getNodes(self):
         """This method returns an array of node objects that are associated with the edge.
@@ -142,7 +142,7 @@ class Edge:
             A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects.
 
         """
-        pass
+        ...
 
     def getElements(self):
         """This method returns an array of element objects that are associated with the edge.
@@ -153,7 +153,7 @@ class Edge:
             A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which is a sequence of MeshElement objects.
 
         """
-        pass
+        ...
 
     def getRadius(self):
         """This method returns the radius of circular edges.
@@ -167,7 +167,7 @@ class Edge:
         ------
         The given edges is not circular
         """
-        pass
+        ...
 
     def getSize(self, printResults: str = True):
         """This method returns a Float indicating the length of the edge.
@@ -183,7 +183,7 @@ class Edge:
             A Float.
 
         """
-        pass
+        ...
 
     def getVertices(self):
         """This method returns a sequence of indices of the vertices that bound this edge. The
@@ -197,4 +197,4 @@ class Edge:
             A tuple of integers.
 
         """
-        pass
+        ...

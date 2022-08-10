@@ -47,7 +47,7 @@ class SaturationDependence:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the SaturationDependence object.
@@ -56,4 +56,4 @@ class SaturationDependence:
         ------
         RangeError
         """
-        pass
+        ...

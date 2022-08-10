@@ -90,7 +90,7 @@ class OdbPartBase:
         OdbPart
             An :py:class:`~abaqus.Odb.OdbPart.OdbPart` object.
         """
-        pass
+        ...
 
     @typing.overload
     def addElements(
@@ -119,7 +119,7 @@ class OdbPartBase:
         sectionCategory
             A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object for this element set.
         """
-        pass
+        ...
 
     @typing.overload
     def addElements(
@@ -146,10 +146,10 @@ class OdbPartBase:
         sectionCategory
             A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object for this element set.
         """
-        pass
+        ...
 
     def addElements(self, *args, **kwargs):
-        pass
+        ...
 
     @typing.overload
     def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: str = None):
@@ -166,7 +166,7 @@ class OdbPartBase:
         nodeSetName
             A String specifying a name for this node set. The default value is None.
         """
-        pass
+        ...
 
     @typing.overload
     def addNodes(self, nodeData: tuple, nodeSetName: str = None):
@@ -183,10 +183,10 @@ class OdbPartBase:
         nodeSetName
             A String specifying a name for this node set. The default value is None.
         """
-        pass
+        ...
 
     def addNodes(self, *args, **kwargs):
-        pass
+        ...
 
     def assignBeamOrientation(
         self, region: str, method: SymbolicConstant, vector: tuple
@@ -204,7 +204,7 @@ class OdbPartBase:
             A sequence of three Floats specifying the approximate local  n1n1 -direction of the beam
             cross-section.
         """
-        pass
+        ...
 
     def assignMaterialOrientation(
         self,
@@ -235,7 +235,7 @@ class OdbPartBase:
             values are STACK_1, STACK_2, STACK_3, and STACK_ORIENTATION. The default value is
             STACK_3.
         """
-        pass
+        ...
 
     def assignRebarOrientation(
         self,
@@ -261,7 +261,7 @@ class OdbPartBase:
         angle
             A Float specifying the angle of the additional rotation. The default value is 0.0.
         """
-        pass
+        ...
 
     def getElementFromLabel(self, label: int):
         """This method is used to retrieved an element with a specific label from a part object.
@@ -281,7 +281,7 @@ class OdbPartBase:
         OdbError: Invalid element label
             If no element with the specified label exists.
         """
-        pass
+        ...
 
     def getNodeFromLabel(self, label: int):
         """This method is used to retrieved a node with a specific label from a part object.
@@ -301,7 +301,7 @@ class OdbPartBase:
         OdbError: Invalid node label
             If no node with the specified label exists.
         """
-        pass
+        ...
 
     def AnalyticRigidSurf2DPlanar(
         self, name: str, profile: tuple[AnalyticSurfaceSegment], filletRadius: str = 0
@@ -326,7 +326,7 @@ class OdbPartBase:
         TWO_D_PLANAR or AXISYMMETRIC
             If OdbPart is of type THREE_D.
         """
-        pass
+        ...
 
     def AnalyticRigidSurfExtrude(
         self, name: str, profile: tuple[AnalyticSurfaceSegment], filletRadius: str = 0
@@ -351,7 +351,7 @@ class OdbPartBase:
         of type THREE_D
             If OdbPart is not of type THREE_D.
         """
-        pass
+        ...
 
     def AnalyticRigidSurfRevolve(
         self, name: str, profile: tuple[AnalyticSurfaceSegment], filletRadius: str = 0
@@ -376,4 +376,4 @@ class OdbPartBase:
         of type THREE_D
             If OdbPart is not of type THREE_D.
         """
-        pass
+        ...

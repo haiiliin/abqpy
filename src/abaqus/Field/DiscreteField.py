@@ -108,7 +108,7 @@ class DiscreteField(Field):
         AbaqusException
         """
         super().__init__()
-        pass
+        ...
 
     def DiscreteFieldByVolumeFraction(
         self,
@@ -161,7 +161,7 @@ class DiscreteField(Field):
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DiscreteFieldFromAnalytic(
         self,
@@ -200,7 +200,7 @@ class DiscreteField(Field):
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -232,4 +232,4 @@ class DiscreteField(Field):
             A Boolean specifying whether or not the orientations are described in terms of part
             level coordinates. The default value is OFF.
         """
-        pass
+        ...

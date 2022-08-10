@@ -96,7 +96,7 @@ class GeneralizedProfile(Profile):
 
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the GeneralizedProfile object.
@@ -106,4 +106,4 @@ class GeneralizedProfile(Profile):
         RangeError
 
         """
-        pass
+        ...

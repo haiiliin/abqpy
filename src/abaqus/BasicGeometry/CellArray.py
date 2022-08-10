@@ -48,7 +48,7 @@ class CellArray:
             A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object.
 
         """
-        pass
+        ...
 
     def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[Cell, typing.List[Cell]]:
         """This method returns the object or objects in the CellArray located at the given
@@ -91,6 +91,21 @@ class CellArray:
         """
         return Cell()
 
+<<<<<<< HEAD
+=======
+    def getExteriorFaces(self):
+        """This method returns the cell faces on the exterior of the CellArray. That is, it returns
+        the faces that are referenced by exactly one of the cells in the sequence.
+
+        Returns
+        -------
+        FaceArray
+            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object representing the faces on the exterior of the cells.
+
+        """
+        ...
+
+>>>>>>> 7f9fa3c (Replacing pass statement by Ellipsis object (...))
     def getSequenceFromMask(self, mask: str):
         """This method returns the object or objects in the CellArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
@@ -112,7 +127,7 @@ class CellArray:
         Error: The mask results in an empty sequence
             An exception occurs if the resulting sequence is empty.
         """
-        pass
+        ...
 
     def getMask(self):
         """This method returns a string specifying the object or objects.
@@ -123,7 +138,7 @@ class CellArray:
             A String specifying the object or objects.
 
         """
-        pass
+        ...
 
     def getByBoundingBox(
         self,
@@ -157,7 +172,7 @@ class CellArray:
             A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
 
         """
-        pass
+        ...
 
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
         """This method returns an array of cell objects that lie within the specified bounding
@@ -180,7 +195,7 @@ class CellArray:
             A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
 
         """
-        pass
+        ...
 
     def getByBoundingSphere(self, center: tuple, radius: str):
         """This method returns an array of cell objects that lie within the specified bounding
@@ -199,7 +214,7 @@ class CellArray:
             A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
 
         """
-        pass
+        ...
 
     def getBoundingBox(self):
         """This method returns a dictionary of two tuples representing minimum and maximum boundary
@@ -215,4 +230,4 @@ class CellArray:
             - **high**: a tuple of three floats representing the maximum **X** -, **Y** -, and **Z** -boundary
               values of the bounding box.
         """
-        pass
+        ...

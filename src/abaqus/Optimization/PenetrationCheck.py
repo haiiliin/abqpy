@@ -68,7 +68,7 @@ class PenetrationCheck(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.PenetrationCheck.PenetrationCheck` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, presumeFeasibleRegionAtStart: Boolean = ON):
         """This method modifies the PenetrationCheck object.
@@ -79,4 +79,4 @@ class PenetrationCheck(GeometricRestriction):
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
         """
-        pass
+        ...

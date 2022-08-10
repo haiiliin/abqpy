@@ -96,15 +96,15 @@ class Chart:
         symbols
             A Boolean defining whether color distribution affects curve symbols.
         """
-        pass
+        ...
 
     def autoSymbol(self):
         """This method distributes the symbols on all curves displayed in the chart."""
-        pass
+        ...
 
     def fitCurves(self):
         """This method resets the transform of the chart. It cancels any zoom or pan action."""
-        pass
+        ...
 
     def getAxis1(self, curve: str, quantityType: str):
         """This method returns the Axis object used for displaying the Axis1 of the XYCurve
@@ -131,7 +131,7 @@ class Chart:
         ValueError: QuantityType not found
             If the given QuantityType is not used in the Chart.
         """
-        pass
+        ...
 
     def getAxis2(self, curve: str, quantityType: str):
         """This method returns the Axis object used for displaying the Axis2 of the XYCurve
@@ -158,7 +158,7 @@ class Chart:
         ValueError: QuantityType not found
             - If the given QuantityType is not used in the Chart.
         """
-        pass
+        ...
 
     def moveAxisUp(self, axis: str):
         """This method moves the relative position of the given Axis object up in the axis sequence
@@ -169,7 +169,7 @@ class Chart:
         axis
             The Axis object to be moved.
         """
-        pass
+        ...
 
     def moveAxisDown(self, axis: str):
         """This method moves the relative position of the given Axis object down in the axis
@@ -180,7 +180,7 @@ class Chart:
         axis
             The Axis object to be moved.
         """
-        pass
+        ...
 
     def removeCurve(self, curve: str):
         """This method removes the given XYCurve from the Chart.
@@ -191,7 +191,7 @@ class Chart:
             The XYCurve name or the XYCurve object or a sequence of XYCurve names or XYCurve objects
             to be removed from the Chart.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -229,4 +229,4 @@ class Chart:
         ------
         RangeError
         """
-        pass
+        ...

@@ -186,7 +186,7 @@ class AnnealStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, description: str = "", refTemp: float = None):
         """This method modifies the AnnealStep object.
@@ -203,4 +203,4 @@ class AnnealStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

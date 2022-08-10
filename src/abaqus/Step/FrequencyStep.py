@@ -402,7 +402,7 @@ class FrequencyStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -521,4 +521,4 @@ class FrequencyStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

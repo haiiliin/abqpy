@@ -262,7 +262,7 @@ class EulerianMotionBC(BoundaryCondition):
             An :py:class:`~abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -376,7 +376,7 @@ class EulerianMotionBC(BoundaryCondition):
             None or a Float specifying the buffer between the surface box and the Eulerian section
             mesh bounding box. The default value is 2.0.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -479,4 +479,4 @@ class EulerianMotionBC(BoundaryCondition):
             None or a Float specifying the buffer between the surface box and the Eulerian section
             mesh bounding box. The default value is 2.0.
         """
-        pass
+        ...

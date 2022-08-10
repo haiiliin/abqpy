@@ -146,7 +146,7 @@ class Plastic:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Plastic object.
@@ -155,4 +155,4 @@ class Plastic:
         ------
         RangeError
         """
-        pass
+        ...

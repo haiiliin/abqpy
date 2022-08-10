@@ -183,7 +183,7 @@ class Surface(Region):
         Surface
             A :py:class:`~abaqus.Region.Surface.Surface` object.
         """
-        pass
+        ...
 
     @typing.overload
     def __init__(self, name: str, objectToCopy: "Surface"):
@@ -209,10 +209,10 @@ class Surface(Region):
         Surface
             A :py:class:`~abaqus.Region.Surface.Surface` object.
         """
-        pass
+        ...
 
     def __init__(self, *args, **kwargs):
-        pass
+        ...
 
     def SurfaceByBoolean(
         self, name: str, surfaces: tuple["Surface"], operation: SymbolicConstant = UNION
@@ -245,7 +245,7 @@ class Surface(Region):
         Surface
             A :py:class:`~abaqus.Region.Surface.Surface` object.
         """
-        pass
+        ...
 
     def SurfaceFromElsets(self, name: str, elementSetSeq: tuple):
         """This method creates a surface from a sequence of element sets in a model database.
@@ -272,4 +272,4 @@ class Surface(Region):
         Surface
             A :py:class:`~abaqus.Region.Surface.Surface` object.
         """
-        pass
+        ...

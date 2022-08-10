@@ -11,7 +11,7 @@ from ..Region.Region import Region
 
 
 class Node(MeshNode):
-    pass
+    ...
 
 
 class MeshEditPart(PartBase):
@@ -40,7 +40,7 @@ class MeshEditPart(PartBase):
             values are 0.0 ≤≤ **parameter** ≤≤ 1.0, where 0.0 specifies the position of the corner
             node. The default value is 0.5.
         """
-        pass
+        ...
 
     def cleanMesh(
         self,
@@ -84,7 +84,7 @@ class MeshEditPart(PartBase):
             neighboring elements, but elements could move from their original positions in cases
             where there are multiple adjacent layers of thin elements. The default value is False.
         """
-        pass
+        ...
 
     def collapseMeshEdge(self, edge: str, collapseMethod: SymbolicConstant):
         """This method collapses an edge of a quadrilateral or triangular element of an orphan mesh
@@ -98,7 +98,7 @@ class MeshEditPart(PartBase):
             A SymbolicConstant specifying the method used to collapse the edge. Possible values are
             FORWARD, REVERSE, and AVERAGE.
         """
-        pass
+        ...
 
     def combineElement(self, elements: tuple):
         """This method combines two triangular elements of an orphan mesh part or an Abaqus native
@@ -109,13 +109,13 @@ class MeshEditPart(PartBase):
         elements
             A sequence of triangular MeshElement objects specifying the elements to combine.
         """
-        pass
+        ...
 
     def convertSolidMeshToShell(self):
         """This method removes all solid elements from an orphan mesh part and creates triangular
         or quadrilateral shell elements along their outer faces.
         """
-        pass
+        ...
 
     def deleteElement(
         self, elements: tuple[MeshElement], deleteUnreferencedNodes: Boolean = OFF
@@ -132,7 +132,7 @@ class MeshEditPart(PartBase):
             A Boolean specifying whether to delete all those associated nodes that become
             unreferenced after the given elements are deleted. The default value is OFF.
         """
-        pass
+        ...
 
     def deleteNode(
         self, nodes: tuple[MeshNode], deleteUnreferencedNodes: Boolean = OFF
@@ -148,7 +148,7 @@ class MeshEditPart(PartBase):
             unreferenced after the given nodes and the connected elements are deleted. The default
             value is OFF.
         """
-        pass
+        ...
 
     def editNode(
         self,
@@ -206,7 +206,7 @@ class MeshEditPart(PartBase):
         ------
         A coordinate and an offset may not both be specified for the same coordinate component
         """
-        pass
+        ...
 
     def projectNode(self, nodes: tuple[MeshNode], projectionReference: str):
         """This method projects the given nodes onto a mesh entity, geometric entity, or a datum
@@ -221,7 +221,7 @@ class MeshEditPart(PartBase):
             **projectionReference** can be any one of the following objects: MeshNode, MeshEdge,
             MeshFace, ConstrainedSketchVertex, Edge, Face, DatumPoint, DatumAxis, or DatumPlane.
         """
-        pass
+        ...
 
     def generateMesh(self, elemShape: SymbolicConstant = None):
         """This method generates a new mesh on an orphan mesh part based on the original mesh.
@@ -234,7 +234,7 @@ class MeshEditPart(PartBase):
             sizes are attached, the new mesh will be governed by the sizes of the boundary edges in
             the old mesh.TETCreate a tetrahedral mesh from a closed shell of triangular elements.
         """
-        pass
+        ...
 
     def generateMeshByOffset(
         self,
@@ -287,7 +287,7 @@ class MeshEditPart(PartBase):
             A Boolean specifying whether existing element sets that include base elements will be
             extended to include corresponding offset elements. The default value is False.
         """
-        pass
+        ...
 
     def mergeElement(self, edge: str, elements: str):
         """Merge a selection of elements arranged in layers on an orphan mesh part into a single
@@ -304,7 +304,7 @@ class MeshEditPart(PartBase):
             A MeshElementArray, a list of MeshElement objects, a Set, or a list of Set objects
             containing the elements to be included in the merge operation.
         """
-        pass
+        ...
 
     @typing.overload
     def mergeNodes(
@@ -333,7 +333,7 @@ class MeshEditPart(PartBase):
             the highest node labels are kept; when False the lowest node labels are kept. The
             default value is False. This argument applies only to merging of orphan mesh nodes.
         """
-        pass
+        ...
 
     @typing.overload
     def mergeNodes(
@@ -361,10 +361,10 @@ class MeshEditPart(PartBase):
             the higher node label is kept; when False the lower node label is kept. The default
             value is False. This argument applies only to merging of orphan mesh nodes.
         """
-        pass
+        ...
 
     def mergeNodes(self, *args, **kwargs):
-        pass
+        ...
 
     def orientElements(
         self, pickedElements: tuple[MeshElement], referenceRegion: MeshFace
@@ -379,11 +379,11 @@ class MeshEditPart(PartBase):
             A :py:class:`~abaqus.Mesh.MeshFace.MeshFace` object specifying a reference top face that indicates the desired
             orientation.
         """
-        pass
+        ...
 
     def removeElementSize(self):
         """This method removes the global element size from an orphan mesh part."""
-        pass
+        ...
 
     def renumberElement(
         self,
@@ -422,7 +422,7 @@ class MeshEditPart(PartBase):
         Error: Specified data will result in conflicting labels
             Renumbering will result in conflicting labels
         """
-        pass
+        ...
 
     def renumberNode(
         self,
@@ -461,7 +461,7 @@ class MeshEditPart(PartBase):
         Error: Specified data will result in conflicting labels
             Renumbering will result in conflicting labels.
         """
-        pass
+        ...
 
     def setElementSize(self, size: float):
         """This method sets the global element size for an orphan mesh part.
@@ -471,7 +471,7 @@ class MeshEditPart(PartBase):
         size
             A Float specifying the desired element size.
         """
-        pass
+        ...
 
     def splitElement(self, elements: tuple):
         """This method splits quadrilateral elements of an orphan mesh part or a Abaqus native mesh
@@ -483,7 +483,7 @@ class MeshEditPart(PartBase):
             A sequence of quadrilateral MeshElement objects specifying the elements to split. Each
             quadrilateral element is split into two triangular elements by the shorter diagonal.
         """
-        pass
+        ...
 
     def splitMeshEdge(self, edge: str, parameter: float = 0):
         """This method splits an edge of a quadrilateral or triangular element of an orphan mesh
@@ -497,7 +497,7 @@ class MeshEditPart(PartBase):
             A Float specifying the normalized distance along **edge** at which to split. Possible
             values are 0.0 << **parameter** << 1.0. The default value is 0.5.
         """
-        pass
+        ...
 
     def subdivideElement(
         self,
@@ -530,7 +530,7 @@ class MeshEditPart(PartBase):
             elements, and all specified elements must be reachable by topological navigation from
             this element edge. May not be combined with **face**.
         """
-        pass
+        ...
 
     def swapMeshEdge(self, edge: str):
         """This method swaps the diagonal of two adjacent triangular elements of an orphan mesh
@@ -541,7 +541,7 @@ class MeshEditPart(PartBase):
         edge
             A single MeshEdge object specifying the element edge to swap.
         """
-        pass
+        ...
 
     def wrapMesh(self, radius: float):
         """This method wraps a planar orphan mesh part about the **Z**-axis.
@@ -553,7 +553,7 @@ class MeshEditPart(PartBase):
             wrapping procedure will relocate a node at point (xx, yy) on the planar mesh to
             (x,θ,zx,θ,z), where rr is the specified radius, θθ = xrxr, and zz=yy.
         """
-        pass
+        ...
 
     def redoMeshEdit(self):
         """This method executes the edit mesh or the bottom-up meshing operation most recently
@@ -563,7 +563,7 @@ class MeshEditPart(PartBase):
         on the assembly. It also implies that the user provided a sufficient cache allowance to
         store the undo operation.
         """
-        pass
+        ...
 
     def undoMeshEdit(self):
         """This method undoes the most recent edit mesh or the bottom-up meshing operation on a
@@ -572,4 +572,4 @@ class MeshEditPart(PartBase):
         part, the user enabled edit mesh undo with a sufficient cache allowance to store the
         edit mesh operation.
         """
-        pass
+        ...

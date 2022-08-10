@@ -355,7 +355,7 @@ class CavityRadiation(Interaction):
             A :py:class:`~abaqus.Interaction.CavityRadiation.CavityRadiation` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -545,7 +545,7 @@ class CavityRadiation(Interaction):
             axisymmetric models. This argument applies only for axisymmetric models, and when
             **reflectionSymmetries** = 1. The default value is None.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -583,4 +583,4 @@ class CavityRadiation(Interaction):
             A Float specifying the acceptable tolerance for the viewfactor calculations. The default
             value is 0.05.
         """
-        pass
+        ...

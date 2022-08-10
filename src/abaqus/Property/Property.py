@@ -37,7 +37,7 @@ def assignBeamSectionOrientation(region: tuple, method: SymbolicConstant, n1: tu
         A sequence of three Floats specifying the approximate local n1n1-direction of the beam
         cross-section.
     """
-    pass
+    ...
 
 
 def assignMaterialOrientation(
@@ -68,7 +68,7 @@ def assignMaterialOrientation(
     angle
         A Float specifying the angle of the additional rotation. The default value is 0.0.
     """
-    pass
+    ...
 
 
 def assignRebarOrientation(
@@ -99,7 +99,7 @@ def assignRebarOrientation(
     angle
         A Float specifying the angle of the additional rotation. The default value is 0.0.
     """
-    pass
+    ...
 
 
 def flipNormal(regions: Region, referenceRegion: str = ""):
@@ -126,7 +126,7 @@ def flipNormal(regions: Region, referenceRegion: str = ""):
         argument is applicable only if the argument regions contain a sequence of quadrilateral
         or triangular elements.
     """
-    pass
+    ...
 
 
 def flipTangent(regions: Region):
@@ -146,7 +146,7 @@ def flipTangent(regions: Region):
         A :py:class:`~abaqus.Region.Region.Region` object specifying the region on which normals are flipped. The region contains
         Edge objects or one-dimensional Element objects.
     """
-    pass
+    ...
 
 
 def unassignBeamSectionOrientation(index: int):
@@ -164,7 +164,7 @@ def unassignBeamSectionOrientation(index: int):
     index
         An Int specifying the number of the beam section orientation assignment to be deleted.
     """
-    pass
+    ...
 
 
 def unassignMaterialOrientation(index: int):
@@ -182,7 +182,7 @@ def unassignMaterialOrientation(index: int):
     index
         An Int specifying the number of the material assignment to be deleted.
     """
-    pass
+    ...
 
 
 def unassignRebarOrientation(index: int):
@@ -201,4 +201,4 @@ def unassignRebarOrientation(index: int):
         An Int specifying the number of the rebar reference orientation assignment to be
         deleted.
     """
-    pass
+    ...

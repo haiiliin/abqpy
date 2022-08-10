@@ -163,7 +163,7 @@ class SurfaceTraction(Load):
             A :py:class:`~abaqus.Load.SurfaceTraction.SurfaceTraction` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -229,7 +229,7 @@ class SurfaceTraction(Load):
             A SymbolicConstant specifying how to apply surface traction. Possible values are SHEAR
             and GENERAL. The default value is SHEAR.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -254,4 +254,4 @@ class SurfaceTraction(Load):
             load has no amplitude reference. You should provide the **amplitude** argument only if it
             is valid for the specified step.
         """
-        pass
+        ...

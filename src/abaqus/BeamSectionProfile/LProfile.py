@@ -78,7 +78,7 @@ class LProfile(Profile):
 
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the LProfile object.
@@ -88,4 +88,4 @@ class LProfile(Profile):
         RangeError
 
         """
-        pass
+        ...

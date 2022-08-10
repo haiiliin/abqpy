@@ -26,4 +26,4 @@ class Color:
             A sequence of three Floats specifying the RGB value of the color. The Float values must
             be between 0.0 and 1.0.
         """
-        pass
+        ...

@@ -306,7 +306,7 @@ class ModelBase:
         Model
             A :py:class:`~abaqus.Model.Model.Model` object.
         """
-        pass
+        ...
 
     def ModelFromOdbFile(self, name: str, odbFileName: str):
         """This method creates a Model object by reading an output database and creating any
@@ -333,7 +333,7 @@ class ModelBase:
         Model
             A :py:class:`~abaqus.Model.Model.Model` object.
         """
-        pass
+        ...
 
     def ModelFromNastranFile(
         self,
@@ -421,7 +421,7 @@ class ModelBase:
         Model
             A :py:class:`~abaqus.Model.Model.Model` object.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -485,4 +485,4 @@ class ModelBase:
             A Boolean specifying whether to copy the interactions created in the model to the model
             that instances this model.
         """
-        pass
+        ...

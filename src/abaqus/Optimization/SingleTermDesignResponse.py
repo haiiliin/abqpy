@@ -105,7 +105,7 @@ class SingleTermDesignResponse(DesignResponse):
             A :py:class:`~abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -143,4 +143,4 @@ class SingleTermDesignResponse(DesignResponse):
         stepOptions
             A :py:class:`~abaqus.Optimization.StepOptionArray.StepOptionArray` object.
         """
-        pass
+        ...

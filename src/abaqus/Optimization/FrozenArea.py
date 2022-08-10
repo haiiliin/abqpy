@@ -48,7 +48,7 @@ class FrozenArea(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.FrozenArea.FrozenArea` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, region: Region = Region()):
         """This method modifies the FrozenArea object.
@@ -60,4 +60,4 @@ class FrozenArea(GeometricRestriction):
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         """
-        pass
+        ...

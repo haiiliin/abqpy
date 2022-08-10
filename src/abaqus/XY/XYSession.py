@@ -13,7 +13,7 @@ from ..PathAndProbe.Path import Path
 
 # prevent circular imports
 class Odb:
-    pass
+    ...
 
 
 class XYSession(XYSessionBase):
@@ -363,7 +363,7 @@ class XYSession(XYSessionBase):
         XYData
             An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
-        pass
+        ...
 
     @staticmethod
     @typing.overload
@@ -389,7 +389,7 @@ class XYSession(XYSessionBase):
         XYData
             An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
-        pass
+        ...
 
     @staticmethod
     def XYData(*args, **kwargs) -> XYData:

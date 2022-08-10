@@ -152,7 +152,7 @@ class CDCTerm:
         Raises
         ------
         ValueError and TextError        """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the CDCTerm object.
@@ -161,7 +161,7 @@ class CDCTerm:
         ------
         ValueError
         """
-        pass
+        ...
 
     def ConnectorOptions(
         self,

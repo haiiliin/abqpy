@@ -42,7 +42,7 @@ class OdbPart(OdbPartBase):
         OdbError: Rigid body definition requires a node set
             If **referenceNode** is not a node set.
         """
-        pass
+        ...
 
     def NodeSet(self, name: str, nodes: tuple[OdbMeshNode]) -> OdbSet:
         """This method creates a node set from an array of OdbMeshNode objects (for part

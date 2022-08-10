@@ -60,8 +60,8 @@ class ContactArea:
         ContactArea
             A :py:class:`~abaqus.Material.Gasket.ContactArea.ContactArea` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ContactArea object."""
-        pass
+        ...

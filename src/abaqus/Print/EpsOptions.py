@@ -61,4 +61,4 @@ class EpsOptions:
               RangeError: imageSize must be SIZE_ON_SCREEN or a sequence of 2 Floats >= (*minWidth*,
             **minHeight**)
         """
-        pass
+        ...

@@ -14,4 +14,4 @@ class InteractionProperty:
             The corresponding analysis keywords are:
     """
 
-    pass
+    ...

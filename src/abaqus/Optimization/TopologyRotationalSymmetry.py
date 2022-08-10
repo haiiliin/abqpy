@@ -84,7 +84,7 @@ class TopologyRotationalSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -106,4 +106,4 @@ class TopologyRotationalSymmetry(GeometricRestriction):
         ignoreFrozenArea
             A Boolean specifying whether to ignore frozen areas. The default value is OFF.
         """
-        pass
+        ...

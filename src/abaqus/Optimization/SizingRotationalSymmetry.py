@@ -80,7 +80,7 @@ class SizingRotationalSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -102,4 +102,4 @@ class SizingRotationalSymmetry(GeometricRestriction):
         ignoreFrozenArea
             A Boolean specifying whether to ignore frozen areas. The default value is OFF.
         """
-        pass
+        ...

@@ -51,4 +51,4 @@ class TextReprOptions:
             100. After the maximum number of elements, the remainder are indicated by the string
             '...'.
         """
-        pass
+        ...

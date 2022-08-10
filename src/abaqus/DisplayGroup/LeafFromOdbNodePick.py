@@ -45,4 +45,4 @@ class LeafFromOdbNodePick(Leaf):
             A :py:class:`~abaqus.DisplayGroup.LeafFromOdbNodePick.LeafFromOdbNodePick` object.
         """
         super().__init__(DEFAULT_MODEL)
-        pass
+        ...

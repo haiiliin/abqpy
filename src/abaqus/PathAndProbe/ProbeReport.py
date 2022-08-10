@@ -58,4 +58,4 @@ class ProbeReport:
             output result (when **probeObject** = ”ODB”) or the **x**- and **y**-coordinates (when
             **probeObject** = XYPlot). The default value is OFF.
         """
-        pass
+        ...

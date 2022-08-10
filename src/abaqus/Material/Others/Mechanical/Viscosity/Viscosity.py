@@ -70,7 +70,7 @@ class Viscosity:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Viscosity object.
@@ -79,4 +79,4 @@ class Viscosity:
         ------
         RangeError
         """
-        pass
+        ...
