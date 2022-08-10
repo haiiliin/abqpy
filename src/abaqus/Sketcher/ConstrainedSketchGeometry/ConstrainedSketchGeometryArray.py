@@ -1,4 +1,6 @@
 from abaqusConstants import *
+import typing
+from  .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 
 
 class ConstrainedSketchGeometryArray:
@@ -13,7 +15,7 @@ class ConstrainedSketchGeometryArray:
             mdb.models[name].sketches[name].geometry[i]
     """
 
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True):
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[ConstrainedSketchGeometry, typing.List[ConstrainedSketchGeometry]]:
         """This method returns the ConstrainedSketchGeometry object located at the given
         coordinates.
 
@@ -30,4 +32,4 @@ class ConstrainedSketchGeometryArray:
         ConstrainedSketchGeometry
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object.
         """
-        pass
+        return ConstrainedSketchGeometry()
