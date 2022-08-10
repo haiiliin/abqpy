@@ -117,7 +117,7 @@ class MembraneSection(Section):
         RangeError and InvalidNameError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -158,4 +158,4 @@ class MembraneSection(Section):
         ------
         RangeError
         """
-        pass
+        ...

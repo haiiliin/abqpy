@@ -67,7 +67,7 @@ class ConcreteCompressionHardening:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ConcreteCompressionHardening object.
@@ -76,4 +76,4 @@ class ConcreteCompressionHardening:
         ------
         RangeError
         """
-        pass
+        ...

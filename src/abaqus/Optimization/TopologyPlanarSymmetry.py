@@ -78,7 +78,7 @@ class TopologyPlanarSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -100,4 +100,4 @@ class TopologyPlanarSymmetry(GeometricRestriction):
         ignoreFrozenArea
             A Boolean specifying whether to ignore frozen areas. The default value is OFF.
         """
-        pass
+        ...

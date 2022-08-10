@@ -106,7 +106,7 @@ class ConnectorFailure(ConnectorBehaviorOption):
         ValueError and TextError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorFailure object.
@@ -115,4 +115,4 @@ class ConnectorFailure(ConnectorBehaviorOption):
         ------
         ValueError
         """
-        pass
+        ...

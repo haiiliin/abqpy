@@ -162,7 +162,7 @@ class PointMassInertia(Inertia):
             A :py:class:`~abaqus.EngineeringFeature.PointMassInertia.PointMassInertia` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -223,4 +223,4 @@ class PointMassInertia(Inertia):
             A Float specifying the composite damping magnitude. The default value is 0.0.This
             argument applies only to Abaqus/Standard analyses.
         """
-        pass
+        ...

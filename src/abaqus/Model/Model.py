@@ -52,4 +52,4 @@ class Model(
         - PHYSICAL CONSTANTS
     """
 
-    pass
+    ...

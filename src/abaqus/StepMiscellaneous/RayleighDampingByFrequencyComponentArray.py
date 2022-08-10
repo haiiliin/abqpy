@@ -5,4 +5,4 @@ class RayleighDampingByFrequencyComponentArray(
     list[RayleighDampingByFrequencyComponent]
 ):
     def findAt(self):
-        pass
+        ...

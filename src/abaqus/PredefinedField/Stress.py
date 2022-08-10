@@ -72,7 +72,7 @@ class Stress(PredefinedField):
             A Stress object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -104,4 +104,4 @@ class Stress(PredefinedField):
         sigma23
             A Float specifying the third shear component of the stress.
         """
-        pass
+        ...

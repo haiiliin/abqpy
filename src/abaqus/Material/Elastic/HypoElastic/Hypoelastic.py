@@ -51,8 +51,8 @@ class Hypoelastic:
         Hypoelastic
             A :py:class:`~abaqus.Material.Elastic.HypoElastic.Hypoelastic.Hypoelastic` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Hypoelastic object."""
-        pass
+        ...

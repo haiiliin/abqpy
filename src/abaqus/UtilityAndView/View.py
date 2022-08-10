@@ -174,7 +174,7 @@ class View:
         ------
         RangeError
         """
-        pass
+        ...
 
     def fitView(self, drawImmediately: Boolean = False):
         """This method scales the displayable object (such as a part, the assembly, or an **X - Y**
@@ -187,7 +187,7 @@ class View:
             processed. This is typically only used when writing a script and it is desirable to show
             intermediate results before the script completes. The default value is False.
         """
-        pass
+        ...
 
     def next(self, drawImmediately: Boolean = False):
         """This method restores the view in the viewport to the next view setting in the list.
@@ -202,7 +202,7 @@ class View:
             processed. This is typically only used when writing a script and it is desirable to show
             intermediate results before the script completes. The default value is False.
         """
-        pass
+        ...
 
     def pan(
         self,
@@ -232,7 +232,7 @@ class View:
             desirable to show intermediate results before the script completes. The default value is
             False.
         """
-        pass
+        ...
 
     def previous(self, drawImmediately: Boolean = False):
         """This method restores the view in the viewport to the previous view setting in the list.
@@ -248,7 +248,7 @@ class View:
             desirable to show intermediate results before the script completes. The default value is
             False.
         """
-        pass
+        ...
 
     def rotate(
         self,
@@ -285,7 +285,7 @@ class View:
             desirable to show intermediate results before the script completes. The default value is
             False.
         """
-        pass
+        ...
 
     def setLayerTransform(
         self,
@@ -310,7 +310,7 @@ class View:
             desirable to show intermediate results before the script completes. The default value is
             False.
         """
-        pass
+        ...
 
     def setProjection(
         self, projection: SymbolicConstant, drawImmediately: Boolean = False
@@ -335,7 +335,7 @@ class View:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setRotationCenter(self, rotationCenter: tuple):
         """This method sets the center of rotation to the specified location.
@@ -352,7 +352,7 @@ class View:
             rotationCenter cannot be set using a part instance and node label unless the
             displayed object is an ODB.
         """
-        pass
+        ...
 
     def setValues(self, movieMode: Boolean = OFF):
         """This method modifies the View object.
@@ -368,7 +368,7 @@ class View:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setViewpoint(
         self,
@@ -393,7 +393,7 @@ class View:
             desirable to show intermediate results before the script completes. The default value is
             False.
         """
-        pass
+        ...
 
     def zoom(
         self,
@@ -427,7 +427,7 @@ class View:
         ------
         RangeError
         """
-        pass
+        ...
 
     def zoomRectangle(
         self,
@@ -451,4 +451,4 @@ class View:
             desirable to show intermediate results before the script completes. The default value is
             False.
         """
-        pass
+        ...

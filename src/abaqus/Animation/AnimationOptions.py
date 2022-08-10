@@ -221,4 +221,4 @@ class AnimationOptions:
             **xyUseHighlightMethod** = False. When setting the color to 'Default' the system will take
             the color associated to each curve. The default value is "Default".
         """
-        pass
+        ...

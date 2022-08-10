@@ -176,7 +176,7 @@ class GeometryShellSection(ShellSection):
         GeometryShellSection
             A :py:class:`~abaqus.Section.GeometryShellSection.GeometryShellSection` object.
         """
-        pass
+        ...
 
     def RebarLayers(
         self, rebarSpacing: SymbolicConstant, layerTable: LayerPropertiesArray

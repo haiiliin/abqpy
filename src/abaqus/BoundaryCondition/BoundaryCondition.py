@@ -41,7 +41,7 @@ class BoundaryCondition:
         stepName
             A String specifying the name of the step in which the boundary condition is deactivated.
         """
-        pass
+        ...
 
     def move(self, fromStepName: str, toStepName: str):
         """This method moves the boundary condition state from one step to a different step.
@@ -54,7 +54,7 @@ class BoundaryCondition:
         toStepName
             A String specifying the name of the step to which the boundary condition state is moved.
         """
-        pass
+        ...
 
     def reset(self, stepName: str):
         """This method resets the boundary condition state of the specified step to the state of
@@ -65,15 +65,15 @@ class BoundaryCondition:
         stepName
             A String specifying the name of the step in which the boundary condition state is reset.
         """
-        pass
+        ...
 
     def resume(self):
         """This method resumes the boundary condition that was previously suppressed."""
-        pass
+        ...
 
     def suppress(self):
         """This method suppresses the boundary condition."""
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """This method allows you to delete existing boundary conditions.
@@ -83,10 +83,10 @@ class BoundaryCondition:
         indices
             A sequence of Ints specifying the index of each boundary condition to delete.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
-        pass
+        ...
 
     def setValuesInStep(self, *args, **kwargs):
-        pass
+        ...

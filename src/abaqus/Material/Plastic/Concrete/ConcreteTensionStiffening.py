@@ -96,7 +96,7 @@ class ConcreteTensionStiffening:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ConcreteTensionStiffening object.
@@ -105,4 +105,4 @@ class ConcreteTensionStiffening:
         ------
         RangeError
         """
-        pass
+        ...

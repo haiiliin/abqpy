@@ -59,4 +59,4 @@ class InteractionDisplayOptions:
         ------
         RangeError
         """
-        pass
+        ...

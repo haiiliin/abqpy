@@ -11,4 +11,4 @@ class OdbAnalysisWarning:
             session.odbData[name].diagnosticData.analysisWarnings[i]
     """
 
-    pass
+    ...

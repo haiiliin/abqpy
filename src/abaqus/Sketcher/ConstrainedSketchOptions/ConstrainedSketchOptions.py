@@ -113,4 +113,4 @@ class ConstrainedSketchOptions:
         RangeError
 
         """
-        pass
+        ...

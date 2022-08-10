@@ -10,4 +10,4 @@ class MdbDataFrame:
             session.mdbData[name].steps[i].frames[i]
     """
 
-    pass
+    ...

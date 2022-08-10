@@ -164,7 +164,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
             constraint's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -210,4 +210,4 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
             adaptive mesh constraint is changed to have no amplitude reference. You should provide
             the **amplitude** argument only if it is valid for the specified step.
         """
-        pass
+        ...

@@ -42,7 +42,7 @@ class SurfaceOffsetAssignment:
             - A Float or a SymbolicConstant specifying the surface offset fraction value to be used
               for the surface. Possible values of the SymbolicConstant are ORIGINAL, SPOS, and SNEG.
         """
-        pass
+        ...
 
     def appendInStep(
         self, stepName: str, assignments: typing.Union[SymbolicConstant, float]
@@ -64,7 +64,7 @@ class SurfaceOffsetAssignment:
             - A Float or a SymbolicConstant specifying the surface offset fraction value to be used
               for the surface. Possible values of the SymbolicConstant are ORIGINAL, SPOS, and SNEG.
         """
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing surface offset fraction assignments.
@@ -75,4 +75,4 @@ class SurfaceOffsetAssignment:
             A sequence of Ints specifying the index of each surface offset fraction assignment to
             delete.
         """
-        pass
+        ...

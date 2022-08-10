@@ -75,4 +75,4 @@ class ConstrainedSketcherOptions:
         RangeError
 
         """
-        pass
+        ...

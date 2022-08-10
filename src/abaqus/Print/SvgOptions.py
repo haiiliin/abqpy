@@ -39,4 +39,4 @@ class SvgOptions:
               RangeError: imageSize must be SIZE_ON_SCREEN or a sequence of 2 Ints in the range
             (minWidth, minHeight) <= (width, height) <= (maxWidth, maxHeight).
         """
-        pass
+        ...

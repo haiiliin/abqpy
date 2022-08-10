@@ -47,4 +47,4 @@ class LeafFromConstraintNames(Leaf):
             A LeafFromConstraintNames object.
         """
         super().__init__(DEFAULT_MODEL)
-        pass
+        ...

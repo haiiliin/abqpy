@@ -108,7 +108,7 @@ class BoxProfile(Profile):
 
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, t2: float = 0, t3: float = 0, t4: float = 0):
         """This method modifies the BoxProfile object.
@@ -130,4 +130,4 @@ class BoxProfile(Profile):
         RangeError
 
         """
-        pass
+        ...

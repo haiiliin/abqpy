@@ -76,7 +76,7 @@ class TensionStiffening:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the TensionStiffening object.
@@ -85,4 +85,4 @@ class TensionStiffening:
         ------
         RangeError
         """
-        pass
+        ...

@@ -114,7 +114,7 @@ class NetworkDatabaseConnector:
         NetworkDatabaseConnector
             A :py:class:`~abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector` object.
         """
-        pass
+        ...
 
     def start(self, serverPort: int = 0, serverTimeout: int = 86400):
         """This method starts the remote network database connector server on the remote host.
@@ -130,11 +130,11 @@ class NetworkDatabaseConnector:
             corresponds to one day. The server exits if it does not receive any communication from
             the client during the time specified. The default value is 86400.
         """
-        pass
+        ...
 
     def stop(self):
         """This method stops the remote network database connector server on the remote host."""
-        pass
+        ...
 
     def setValues(
         self,
@@ -172,4 +172,4 @@ class NetworkDatabaseConnector:
             A Boolean specifying whether to start the remote network database connector server. The
             default value is ON.
         """
-        pass
+        ...

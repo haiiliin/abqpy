@@ -26,4 +26,4 @@ def writeXYReport(fileName: str, xyData: tuple[XYData], appendMode: Boolean = ON
         A Boolean specifying whether to append the **X - Y** data to the existing file. The default
         value is ON.
     """
-    pass
+    ...

@@ -111,7 +111,7 @@ class Velocity(PredefinedField):
             A :py:class:`~abaqus.PredefinedField.Velocity.Velocity` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self, field: str = "", distributionType: SymbolicConstant = MAGNITUDE
@@ -128,4 +128,4 @@ class Velocity(PredefinedField):
             A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
             and FIELD_ANALYTICAL. The default value is MAGNITUDE.
         """
-        pass
+        ...

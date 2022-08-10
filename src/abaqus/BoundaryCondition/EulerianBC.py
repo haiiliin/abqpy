@@ -87,7 +87,7 @@ class EulerianBC(BoundaryCondition):
             An :py:class:`~abaqus.BoundaryCondition.EulerianBC.EulerianBC` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -114,7 +114,7 @@ class EulerianBC(BoundaryCondition):
             Possible values are ZERO_PRESSURE, FREE, NON_REFLECTING, and EQUILIBRIUM. The default
             value is ZERO_PRESSURE.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -141,4 +141,4 @@ class EulerianBC(BoundaryCondition):
             Possible values are ZERO_PRESSURE, FREE, NON_REFLECTING, and EQUILIBRIUM. The default
             value is ZERO_PRESSURE.
         """
-        pass
+        ...
