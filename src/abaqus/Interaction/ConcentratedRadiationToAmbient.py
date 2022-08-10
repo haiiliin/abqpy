@@ -124,7 +124,7 @@ class ConcentratedRadiationToAmbient(Interaction):
             A :py:class:`~abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -154,7 +154,7 @@ class ConcentratedRadiationToAmbient(Interaction):
             A SymbolicConstant specifying how the radiation is defined. Possible values are UNIFORM
             and ANALYTICAL_FIELD. The default value is UNIFORM.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -181,4 +181,4 @@ class ConcentratedRadiationToAmbient(Interaction):
             A SymbolicConstant specifying how the radiation is defined. Possible values are UNIFORM
             and ANALYTICAL_FIELD. The default value is UNIFORM.
         """
-        pass
+        ...

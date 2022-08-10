@@ -105,7 +105,7 @@ class OdbAssemblyBase:
         OdbError: Connector orientation assignment requires element set
             If **region** is not an element set.
         """
-        pass
+        ...
 
     def SectionAssignment(self, region: str, section: Section):
         """This method is used to assign a section on an assembly or part. Section assignment on
@@ -123,7 +123,7 @@ class OdbAssemblyBase:
         OdbError: Section assignment requires element set
             If **region** is not an element set.
         """
-        pass
+        ...
 
     def addElements(
         self,
@@ -166,7 +166,7 @@ class OdbAssemblyBase:
         OdbError: Connectivity array must be provided for all element
             If length of label array does not match connectivity data length.
         """
-        pass
+        ...
 
     def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: str = None):
         """This method adds nodes to the OdbAssembly object using node labels and coordinates.
@@ -189,7 +189,7 @@ class OdbAssemblyBase:
         OdbError: Node location specification does not correspond to part dimensions
             If width of coordinate array does not match assembly dimension.
         """
-        pass
+        ...
 
     def RigidBody(
         self,
@@ -227,4 +227,4 @@ class OdbAssemblyBase:
         OdbError: Rigid body definition requires a node set
             If **referenceNode** is not a node set
         """
-        pass
+        ...

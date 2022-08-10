@@ -131,7 +131,7 @@ class StampControl(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.StampControl.StampControl` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -176,4 +176,4 @@ class StampControl(GeometricRestriction):
         undercutTolerance
             A Float specifying the undercut tolerance. The default value is 0.0.
         """
-        pass
+        ...

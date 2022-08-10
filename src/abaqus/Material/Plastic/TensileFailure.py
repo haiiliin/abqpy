@@ -76,7 +76,7 @@ class TensileFailure:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the TensileFailure object.
@@ -85,4 +85,4 @@ class TensileFailure:
         ------
         RangeError
         """
-        pass
+        ...

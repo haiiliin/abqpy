@@ -81,7 +81,7 @@ class SizingCyclicSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -104,4 +104,4 @@ class SizingCyclicSymmetry(GeometricRestriction):
         ignoreFrozenArea
             A Boolean specifying whether to ignore frozen areas. The default value is OFF.
         """
-        pass
+        ...

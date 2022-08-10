@@ -26,7 +26,7 @@ class AnnotationsToPlotArray(list[Annotation]):
             sequence.
 
         """
-        pass
+        ...
 
     def bringToFront(self, index: str):
         """This method brings the Annotation object to the beginning of the AnnotationsToPlotArray
@@ -39,7 +39,7 @@ class AnnotationsToPlotArray(list[Annotation]):
             sequence.
 
         """
-        pass
+        ...
 
     def moveAfter(self, index: str, other: str):
         """This method moves the Annotation object after another object in the same
@@ -55,7 +55,7 @@ class AnnotationsToPlotArray(list[Annotation]):
             AnnotationsToPlotArray sequence after which this object will be moved.
 
         """
-        pass
+        ...
 
     def moveBefore(self, index: str, other: str):
         """This method moves the Annotation object before another object in the same
@@ -71,7 +71,7 @@ class AnnotationsToPlotArray(list[Annotation]):
             sequence before which this object will be moved.
 
         """
-        pass
+        ...
 
     def sendBackward(self, index: str):
         """This method sends the Annotation object one position backward in the
@@ -84,7 +84,7 @@ class AnnotationsToPlotArray(list[Annotation]):
             sequence.
 
         """
-        pass
+        ...
 
     def sendToBack(self, index: str):
         """This method sends the Annotation object to the end of the AnnotationsToPlotArray
@@ -97,4 +97,4 @@ class AnnotationsToPlotArray(list[Annotation]):
             sequence.
 
         """
-        pass
+        ...

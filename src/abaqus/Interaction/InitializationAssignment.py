@@ -35,7 +35,7 @@ class InitializationAssignment:
             A String specifying the value of the contact initialization to be assigned to the domain
             pair whose index is referenced.
         """
-        pass
+        ...
 
     def appendInStep(self, stepName: str, assignments: SymbolicConstant):
         """This method allows addition of contact initialization assignments to new domain pairs in
@@ -54,7 +54,7 @@ class InitializationAssignment:
             - A String specifying a StdInitialization or ExpInitializationobject associated with this pair of regions.
             - A String specifying a secondary surface type. This entry is applicable only if the ExpInitialization object is defined with **overclosureType** = CLEARANCE and **adjustNodalCoords** = True.
         """
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing contact initialization assignments from
@@ -66,4 +66,4 @@ class InitializationAssignment:
             A sequence of Ints specifying the index of each contact initialization assignment to
             delete.
         """
-        pass
+        ...

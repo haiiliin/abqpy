@@ -106,7 +106,7 @@ class DisplacementBaseMotionBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -141,7 +141,7 @@ class DisplacementBaseMotionBC(BoundaryCondition):
             value is UNSET. You should provide the **amplitude** argument only if it is valid for the
             specified step.
         """
-        pass
+        ...
 
     def setValuesInStep(self, stepName: str, amplitude: str = ""):
         """This method modifies the propagating data for an existing DisplacementBaseMotionBC
@@ -158,4 +158,4 @@ class DisplacementBaseMotionBC(BoundaryCondition):
             boundary condition is changed to have no amplitude reference. You should provide the
             **amplitude** argument only if it is valid for the specified step.
         """
-        pass
+        ...

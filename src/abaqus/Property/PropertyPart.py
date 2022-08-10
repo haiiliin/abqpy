@@ -275,7 +275,7 @@ class PropertyPart(PartBase):
             A sequence of three Floats specifying the approximate local n1n1-direction of the beam
             cross-section.
         """
-        pass
+        ...
 
     def assignMaterialOrientation(
         self, region: tuple, localCsys: Datum, axis: SymbolicConstant = AXIS_1, angle: float = 0
@@ -305,7 +305,7 @@ class PropertyPart(PartBase):
         angle
             A Float specifying the angle of the additional rotation. The default value is 0.0.
         """
-        pass
+        ...
 
     def assignRebarOrientation(
         self, region: tuple, localCsys: Datum, axis: SymbolicConstant = AXIS_1, angle: float = 0
@@ -335,7 +335,7 @@ class PropertyPart(PartBase):
         angle
             A Float specifying the angle of the additional rotation. The default value is 0.0.
         """
-        pass
+        ...
 
     def flipNormal(self, regions: Region, referenceRegion: str = ""):
         """This method flips the normals of shell or membrane elements of an orphan mesh or of
@@ -361,7 +361,7 @@ class PropertyPart(PartBase):
             argument is applicable only if the argument regions contain a sequence of quadrilateral
             or triangular elements.
         """
-        pass
+        ...
 
     def flipTangent(self, regions: Region):
         """This method flips the tangents of beam or truss elements of an orphan mesh or of
@@ -380,7 +380,7 @@ class PropertyPart(PartBase):
             A :py:class:`~abaqus.Region.Region.Region` object specifying the region on which normals are flipped. The region contains
             Edge objects or one-dimensional Element objects.
         """
-        pass
+        ...
 
     def unassignBeamSectionOrientation(self, index: int):
         """This method deletes a beam section orientation assignment.
@@ -397,7 +397,7 @@ class PropertyPart(PartBase):
         index
             An Int specifying the number of the beam section orientation assignment to be deleted.
         """
-        pass
+        ...
 
     def unassignMaterialOrientation(self, index: int):
         """This method deletes a material orientation assignment.
@@ -414,7 +414,7 @@ class PropertyPart(PartBase):
         index
             An Int specifying the number of the material assignment to be deleted.
         """
-        pass
+        ...
 
     def unassignRebarOrientation(self, index: int):
         """This method deletes a rebar orientation assignment.
@@ -432,4 +432,4 @@ class PropertyPart(PartBase):
             An Int specifying the number of the rebar reference orientation assignment to be
             deleted.
         """
-        pass
+        ...

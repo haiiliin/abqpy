@@ -53,7 +53,7 @@ class BeadPointSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, csys: int = None):
         """This method modifies the BeadPointSymmetry object.
@@ -65,4 +65,4 @@ class BeadPointSymmetry(GeometricRestriction):
             origin of a local coordinate system. If **csys** = None, the global coordinate system is
             used. When this member is queried, it returns an Int. The default value is None.
         """
-        pass
+        ...

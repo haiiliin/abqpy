@@ -60,4 +60,4 @@ class MesherOptions:
             default for a region not previously assigned any element types. The default value is an
             empty list.
         """
-        pass
+        ...

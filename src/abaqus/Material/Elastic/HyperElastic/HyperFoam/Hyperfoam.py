@@ -94,7 +94,7 @@ class Hyperfoam:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Hyperfoam object.
@@ -103,4 +103,4 @@ class Hyperfoam:
         ------
         RangeError
         """
-        pass
+        ...

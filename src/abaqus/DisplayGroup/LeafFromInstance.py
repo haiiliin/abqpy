@@ -48,4 +48,4 @@ class LeafFromInstance(Leaf):
             If an invalid argument is passed to this method.
         """
         super().__init__(DEFAULT_MODEL)
-        pass
+        ...

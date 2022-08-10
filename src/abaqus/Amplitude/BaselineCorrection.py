@@ -49,7 +49,7 @@ class BaselineCorrection:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the BaselineCorrection object.
@@ -58,4 +58,4 @@ class BaselineCorrection:
         ------
         RangeError
         """
-        pass
+        ...

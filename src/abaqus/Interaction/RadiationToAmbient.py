@@ -118,7 +118,7 @@ class RadiationToAmbient(Interaction):
             A :py:class:`~abaqus.Interaction.RadiationToAmbient.RadiationToAmbient` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -156,7 +156,7 @@ class RadiationToAmbient(Interaction):
             the reference ambient temperature is applied throughout the step. This argument applies
             only when **radiationType** = AMBIENT.
         """
-        pass
+        ...
 
     def setValuesInStep(self, stepName: str):
         """This method modifies the propagating data of an existing RadiationToAmbient object in
@@ -167,4 +167,4 @@ class RadiationToAmbient(Interaction):
         stepName
             A String specifying the name of the step in which the interaction is modified.
         """
-        pass
+        ...

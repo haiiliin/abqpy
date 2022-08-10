@@ -130,4 +130,4 @@ def evaluateMaterial(
     MaterialEvaluationError: Material evaluation is currentlysupported only for hyperelastic materials
         If the material type of the material to be evaluated is not hyperelastic.
     """
-    pass
+    ...

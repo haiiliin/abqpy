@@ -77,7 +77,7 @@ class FilmConditionProp(ContactProperty):
             A :py:class:`~abaqus.Interaction.FilmConditionProp.FilmConditionProp` object.
         """
         super().__init__(name)
-        pass
+        ...
 
     def setValues(
         self,
@@ -102,4 +102,4 @@ class FilmConditionProp(ContactProperty):
             - Value of the second field variable.
             - Etc.
         """
-        pass
+        ...

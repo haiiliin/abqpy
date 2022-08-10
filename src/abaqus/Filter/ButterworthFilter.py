@@ -108,7 +108,7 @@ class ButterworthFilter(Filter):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -144,4 +144,4 @@ class ButterworthFilter(Filter):
         ------
         RangeError
         """
-        pass
+        ...

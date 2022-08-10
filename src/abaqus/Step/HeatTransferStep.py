@@ -316,7 +316,7 @@ class HeatTransferStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -403,4 +403,4 @@ class HeatTransferStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

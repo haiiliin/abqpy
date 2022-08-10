@@ -91,8 +91,8 @@ class ContactDamping:
         ContactDamping
             A :py:class:`~abaqus.Interaction.ContactDamping.ContactDamping` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ContactDamping object."""
-        pass
+        ...

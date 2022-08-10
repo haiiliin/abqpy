@@ -164,7 +164,7 @@ class ContourIntegral(Crack):
             A :py:class:`~abaqus.EngineeringFeature.ContourIntegral.ContourIntegral` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -214,4 +214,4 @@ class ContourIntegral(Crack):
             A SymbolicConstant specifying the crack-tip singularity. Possible values are NONE,
             SINGLE_NODE, and DUPLICATE_NODES. The default value is NONE.
         """
-        pass
+        ...

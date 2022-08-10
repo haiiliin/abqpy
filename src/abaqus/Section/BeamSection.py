@@ -295,7 +295,7 @@ class BeamSection(Section):
             A :py:class:`~abaqus.Section.BeamSection.BeamSection` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -409,4 +409,4 @@ class BeamSection(Section):
             The default value is an empty string. This parameter is available for manipulating the
             model database but not for the ODB API.
         """
-        pass
+        ...

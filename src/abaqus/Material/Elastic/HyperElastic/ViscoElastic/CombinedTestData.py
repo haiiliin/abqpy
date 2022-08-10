@@ -66,8 +66,8 @@ class CombinedTestData:
         CombinedTestData
             A :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the CombinedTestData object."""
-        pass
+        ...

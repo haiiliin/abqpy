@@ -7,4 +7,4 @@ class ModelDot:
     This object can be accessed by:
     """
 
-    pass
+    ...

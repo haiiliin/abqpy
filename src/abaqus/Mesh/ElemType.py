@@ -297,4 +297,4 @@ class ElemType:
         elemType: ElemType
             An :py:class:`~abaqus.Mesh.ElemType.ElemType` object
         """
-        pass
+        ...

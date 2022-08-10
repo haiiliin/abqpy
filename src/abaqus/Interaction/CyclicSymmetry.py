@@ -170,13 +170,13 @@ class CyclicSymmetry(Interaction):
             A :py:class:`~abaqus.Interaction.CyclicSymmetry.CyclicSymmetry` object.
         """
         super().__init__()
-        pass
+        ...
 
     def swapSurfaces(self):
         """This method switches the main and secondary surfaces of a cyclic symmetry interaction.
         This command is valid only during the step in which the interaction is created.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -222,7 +222,7 @@ class CyclicSymmetry(Interaction):
             Possible values are COMPUTED_TOLERANCE and SPECIFY_TOLERANCE. The default value is
             COMPUTED_TOLERANCE.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -258,4 +258,4 @@ class CyclicSymmetry(Interaction):
             equal to the highest nodal diameter (specified in the **highestNodalDiameter** parameter).
             The default value is 0.
         """
-        pass
+        ...

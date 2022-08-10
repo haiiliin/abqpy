@@ -72,7 +72,7 @@ class CompositeSolidSection(Section):
             A :py:class:`~abaqus.Section.CompositeSolidSection.CompositeSolidSection` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, symmetric: Boolean = OFF, layupName: str = ""):
         """This method modifies the CompositeSolidSection object.
@@ -86,4 +86,4 @@ class CompositeSolidSection(Section):
             A String specifying the layup name for this section. The default value is an empty
             string.
         """
-        pass
+        ...

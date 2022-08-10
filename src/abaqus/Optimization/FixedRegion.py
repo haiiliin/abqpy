@@ -95,7 +95,7 @@ class FixedRegion(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.FixedRegion.FixedRegion` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -126,4 +126,4 @@ class FixedRegion(GeometricRestriction):
             A Boolean specifying whether to fix the region in the 3-direction. The default value is
             OFF.
         """
-        pass
+        ...

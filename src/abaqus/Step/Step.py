@@ -17,4 +17,4 @@ class Step(AdaptivityStep, OutputStep, TableCollectionStep):
             import step
             mdb.models[name].steps[name]
     """
-    pass
+    ...

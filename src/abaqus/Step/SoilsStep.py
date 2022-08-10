@@ -370,7 +370,7 @@ class SoilsStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -483,4 +483,4 @@ class SoilsStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

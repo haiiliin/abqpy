@@ -30,4 +30,4 @@ class Repository(dict):
         toName
             A String specifying the new name of the repository key.
         """
-        pass
+        ...

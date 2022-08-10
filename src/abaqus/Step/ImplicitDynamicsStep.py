@@ -369,7 +369,7 @@ class ImplicitDynamicsStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -480,4 +480,4 @@ class ImplicitDynamicsStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

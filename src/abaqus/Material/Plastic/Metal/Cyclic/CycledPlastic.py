@@ -49,8 +49,8 @@ class CycledPlastic:
         CycledPlastic
             A :py:class:`~abaqus.Material.Plastic.Metal.Cyclic.CycledPlastic.CycledPlastic` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the CycledPlastic object."""
-        pass
+        ...

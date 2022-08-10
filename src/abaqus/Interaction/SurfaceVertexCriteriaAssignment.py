@@ -42,7 +42,7 @@ class SurfaceVertexCriteriaAssignment:
             - A Float or a SymbolicConstant specifying the vertex criteria value to be used for the
             surface. Possible values of the SymbolicConstant are ALL_VERTICES or NO_VERTICES.
         """
-        pass
+        ...
 
     def appendInStep(
         self, stepName: str, assignments: typing.Union[SymbolicConstant, float]
@@ -63,7 +63,7 @@ class SurfaceVertexCriteriaAssignment:
             - A Float or a SymbolicConstant specifying the vertex criteria value to be used for the
             surface. Possible values of the SymbolicConstant are ALL_VERTICES or NO_VERTICES.
         """
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing surface vertex criteria assignments from
@@ -75,4 +75,4 @@ class SurfaceVertexCriteriaAssignment:
             A sequence of Ints specifying the index of each surface vertex criteria assignment to
             delete.
         """
-        pass
+        ...

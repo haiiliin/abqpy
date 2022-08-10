@@ -34,7 +34,7 @@ class SurfaceBeamSmoothingAssignment:
             whose index is referenced. Each tuple contains one entry:A Float specifying the surface
             beam smoothing value to be used for the surface.
         """
-        pass
+        ...
 
     def appendInStep(self, stepName: str, assignments: tuple):
         """This method allows addition of surface beam smoothing assignments to new surfaces in a
@@ -50,7 +50,7 @@ class SurfaceBeamSmoothingAssignment:
             contains two entries:A region object specifying the surface to which the smoothing is
             assigned.A Float specifying the surface smoothing value to be used for the surface.
         """
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing surface beam smoothing assignments from
@@ -62,4 +62,4 @@ class SurfaceBeamSmoothingAssignment:
             A sequence of Ints specifying the index of each surface beam smoothing assignment to
             delete.
         """
-        pass
+        ...

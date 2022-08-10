@@ -40,7 +40,7 @@ class SurfaceFrictionAssignment:
             - A Float specifying the overriding friction coefficient value to be used in the contact
             definition.
         """
-        pass
+        ...
 
     def appendInStep(
         self, stepName: str, assignments: typing.Union[SymbolicConstant, float]
@@ -61,7 +61,7 @@ class SurfaceFrictionAssignment:
             - A Float specifying the overriding friction coefficient to be used in the contact
             definition.
         """
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing surface friction assignments.
@@ -71,4 +71,4 @@ class SurfaceFrictionAssignment:
         indices
             A sequence of Ints specifying the index of each surface friction assignment to delete.
         """
-        pass
+        ...

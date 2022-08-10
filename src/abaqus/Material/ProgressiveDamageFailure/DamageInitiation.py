@@ -313,7 +313,7 @@ class DamageInitiation:
         ------
         RangeError
         """
-        pass
+        ...
 
     def FldDamageInitiation(
         self,
@@ -395,7 +395,7 @@ class DamageInitiation:
         ------
         RangeError
         """
-        pass
+        ...
 
     def FlsdDamageInitiation(
         self,
@@ -477,7 +477,7 @@ class DamageInitiation:
         ------
         RangeError
         """
-        pass
+        ...
 
     def JohnsonCookDamageInitiation(
         self,
@@ -559,7 +559,7 @@ class DamageInitiation:
         ------
         RangeError
         """
-        pass
+        ...
 
     def MaxeDamageInitiation(
         self,
@@ -645,7 +645,7 @@ class DamageInitiation:
         ------
         RangeError
         """
-        pass
+        ...
 
     def MaxsDamageInitiation(
         self,
@@ -731,7 +731,7 @@ class DamageInitiation:
         ------
         RangeError
         """
-        pass
+        ...
 
     def MkDamageInitiation(
         self,
@@ -813,7 +813,7 @@ class DamageInitiation:
         ------
         RangeError
         """
-        pass
+        ...
 
     def MsfldDamageInitiation(
         self,
@@ -895,7 +895,7 @@ class DamageInitiation:
         ------
         RangeError
         """
-        pass
+        ...
 
     def QuadeDamageInitiation(
         self,
@@ -981,7 +981,7 @@ class DamageInitiation:
         ------
         RangeError
         """
-        pass
+        ...
 
     def QuadsDamageInitiation(
         self,
@@ -1067,7 +1067,7 @@ class DamageInitiation:
         ------
         RangeError
         """
-        pass
+        ...
 
     def MaxpeDamageInitiation(
         self,
@@ -1153,7 +1153,7 @@ class DamageInitiation:
         ------
         RangeError
         """
-        pass
+        ...
 
     def MaxpsDamageInitiation(
         self,
@@ -1239,7 +1239,7 @@ class DamageInitiation:
         ------
         RangeError
         """
-        pass
+        ...
 
     def ShearDamageInitiation(
         self,
@@ -1321,7 +1321,7 @@ class DamageInitiation:
         ------
         RangeError
         """
-        pass
+        ...
 
     def HashinDamageInitiation(
         self,
@@ -1403,8 +1403,8 @@ class DamageInitiation:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the DamageInitiation object."""
-        pass
+        ...
