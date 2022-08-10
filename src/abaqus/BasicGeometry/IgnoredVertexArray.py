@@ -1,4 +1,6 @@
 from abaqusConstants import *
+import typing
+from .IgnoredVertex import IgnoredVertex
 
 
 class IgnoredVertexArray:
@@ -17,7 +19,7 @@ class IgnoredVertexArray:
             mdb.models[name].rootAssembly.instances[name].ignoredVertices
     """
 
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True):
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[IgnoredVertex, typing.List[IgnoredVertex]]:
         """This method returns the object or objects in the IgnoredVertexArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any
@@ -36,9 +38,13 @@ class IgnoredVertexArray:
             based on the type of input.If **coordinates** is a sequence of Floats, findAt returns the
             IgnoredVertex object at that point.If you omit the **coordinates** keyword argument,
             findAt accepts as arguments a sequence of sequence of floats in the following
-            format:`verts = v.findAt(((20.19686, -169.513997, 27.798593), ),
-            ((19.657627, -167.295749, 27.056402), ),                 ((18.274129, -157.144741,
-            25.15218), ))`
+            format:
+            
+            .. code-block:: python
+            
+            verts = v.findAt(((20.19686, -169.513997, 27.798593), ),
+                             ((19.657627, -167.295749, 27.056402), ),
+                             ((18.274129, -157.144741, 25.15218), ))
         printWarning
             A Boolean specifying whether a message is to be printed to the CLI if no entity is found
             at the specified location. The default value is True.
@@ -49,7 +55,7 @@ class IgnoredVertexArray:
             An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object or a sequence of IgnoredVertex objects.
 
         """
-        pass
+        return IgnoredVertex()
 
     def getSequenceFromMask(self, mask: str):
         """This method returns the object or objects in the IgnoredVertexArray identified using the
