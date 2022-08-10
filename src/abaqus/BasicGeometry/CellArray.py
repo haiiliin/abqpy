@@ -1,3 +1,4 @@
+import typing
 from abaqusConstants import *
 from .Cell import Cell
 
@@ -49,7 +50,7 @@ class CellArray:
         """
         pass
 
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True):
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[Cell, typing.List[Cell]]:
         """This method returns the object or objects in the CellArray located at the given
         coordinates. findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt
         returns any entity that is at the arbitrary point specified or at a distance of less
@@ -71,9 +72,13 @@ class CellArray:
             that point. If **coordinates** is a sequence of sequence of Floats, findAt returns a
             sequence of Cell objects at the given locations. The sequence of sequence of Floats must
             be a sequence of sequence of point and normal data, not a sequence of point data. For
-            example,`cells1 = myCrackedBlockInstance.cells.findAt(                            ((5.5,
-            -8.3, 294.2),),                            ((12.1, -8.3, 287.8),),
-                 ((14.4, -10.4, 285.5),),)`
+            example,
+            
+            .. code-block:: python
+            
+                cells1 = myCrackedBlockInstance.cells.findAt(((5.5, -8.3, 294.2),), 
+                                                             ((12.1, -8.3, 287.8),), 
+                                                             ((14.4, -10.4, 285.5),),)
         printWarning
             A Boolean specifying whether a message is to be printed to the CLI if no entity is found
             at the specified location. The default value is True.
@@ -84,7 +89,7 @@ class CellArray:
             A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object.
 
         """
-        pass
+        return Cell()
 
     def getSequenceFromMask(self, mask: str):
         """This method returns the object or objects in the CellArray identified using the
