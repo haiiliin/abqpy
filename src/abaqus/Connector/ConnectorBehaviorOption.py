@@ -7,7 +7,7 @@ from .TangentialBehavior import TangentialBehavior
 
 # Prevent circular import
 class DerivedComponent:
-    pass
+    ...
 
 
 class ConnectorBehaviorOption:

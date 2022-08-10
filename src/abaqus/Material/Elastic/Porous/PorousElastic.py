@@ -80,7 +80,7 @@ class PorousElastic:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the PorousElastic object.
@@ -89,4 +89,4 @@ class PorousElastic:
         ------
         RangeError
         """
-        pass
+        ...

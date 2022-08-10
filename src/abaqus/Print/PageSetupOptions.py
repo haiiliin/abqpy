@@ -76,4 +76,4 @@ class PageSetupOptions:
             - If **topMargin** + **bottomMargin** is out of range:
               RangeError: topMargin and bottomMargin must produce image height >= minHeight
         """
-        pass
+        ...

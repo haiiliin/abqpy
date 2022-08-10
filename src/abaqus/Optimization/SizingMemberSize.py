@@ -50,8 +50,8 @@ class SizingMemberSize(GeometricRestriction):
         ------
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the sizingMemberSize object."""
-        pass
+        ...

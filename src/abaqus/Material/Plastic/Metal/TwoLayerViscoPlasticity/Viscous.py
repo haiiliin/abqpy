@@ -131,8 +131,8 @@ class Viscous:
         Viscous
             A :py:class:`~abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Viscous object."""
-        pass
+        ...

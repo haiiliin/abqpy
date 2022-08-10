@@ -37,4 +37,4 @@ def journalMethodCall(objectPath: str, methodName: str, args: tuple, kargs: str)
     kargs
         A Python dict object specifying the keyword arguments to be written to the journal file.
     """
-    pass
+    ...

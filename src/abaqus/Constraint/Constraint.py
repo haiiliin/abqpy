@@ -24,11 +24,11 @@ class Constraint:
 
     def resume(self):
         """This method resumes the constraint that was previously suppressed."""
-        pass
+        ...
 
     def suppress(self):
         """This method suppresses the constraint."""
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """This method allows you to delete existing constraints.
@@ -38,4 +38,4 @@ class Constraint:
         indices
             A sequence of Ints specifying the index of each constraint to delete.
         """
-        pass
+        ...

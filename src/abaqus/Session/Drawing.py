@@ -110,7 +110,7 @@ class Drawing:
             - If the user attempts to create a new drawing with the name of an existing drawing:
               ValueError: There is already a drawing with this name
         """
-        pass
+        ...
 
     def setVertices(self, vertexDimension: float, vertexData: tuple):
         """This method accepts the vertex data that defines the Drawing object. It defines in an
@@ -141,7 +141,7 @@ class Drawing:
             - If setVertices has already been called and this call is sending fewer vertices:
               ValueError: **vertexData** cannot be reduced
         """
-        pass
+        ...
 
     def setNormals(self, normalData: tuple):
         """This method accepts the normal data for each vertex. It defines in an array of normal
@@ -167,7 +167,7 @@ class Drawing:
             - If setNormals has already been called and this call is sending fewer values:
               ValueError: **normalData** cannot be reduced.
         """
-        pass
+        ...
 
     def setColors(self, colorDimension: float, colorData: tuple):
         """This method accepts the color data for each vertex. It defines in an array of colors
@@ -203,7 +203,7 @@ class Drawing:
             - If setColors has already been called and this call is sending fewer colors:
               ValueError: **colorData** cannot be reduced
         """
-        pass
+        ...
 
     def setEdgeColor(self, edgeColor: tuple):
         """This method allows a separate, single color to be used when rendering the edges of the
@@ -224,7 +224,7 @@ class Drawing:
             - If **edgeColor** is not a sequence of 0 or 3 Floats:
               ValueError: **edgeColor** must be a tuple with 3 values
         """
-        pass
+        ...
 
     def setPointColor(self, pointColor: tuple):
         """This method allows a separate, single color to be used when rendering the points of the
@@ -245,7 +245,7 @@ class Drawing:
             - If **pointColor** is a not sequence of 0 or 3 Floats:
               ValueError: **pointColor** must be a tuple with 3 values
         """
-        pass
+        ...
 
     def addArrayDraw(
         self,
@@ -290,7 +290,7 @@ class Drawing:
               vertex colors are required for the graphics primitive:
               Drawing request extends past array size of colors.
         """
-        pass
+        ...
 
     def addIndexDraw(
         self,
@@ -334,7 +334,7 @@ class Drawing:
               and vertex colors are required for the graphics primitive:
               Drawing request extends past array size of colors.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -407,4 +407,4 @@ class Drawing:
             - If an invalid **pointSize** value is specified:
               RangeError: **pointSize** must be in the range 0.0 <= value <= 5.0
         """
-        pass
+        ...

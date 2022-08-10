@@ -124,7 +124,7 @@ class FieldOutput:
         FieldOutput
             A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
-        pass
+        ...
 
     def __init__(self, field: "FieldOutput", name: str = "", description: str = ""):
         """This method creates a FieldOutput object from an existing FieldOutput object of the same
@@ -152,10 +152,10 @@ class FieldOutput:
         FieldOutput
             A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
-        pass
+        ...
 
     def __init__(self, *args, **kwargs):
-        pass
+        ...
 
     @typing.overload
     def addData(
@@ -222,7 +222,7 @@ class FieldOutput:
             The addData method throws many exceptions of type odbException. For example, if the
             local coordinate system is specified for scalar data
         """
-        pass
+        ...
 
     @typing.overload
     def addData(self, field: "FieldOutput"):
@@ -241,7 +241,7 @@ class FieldOutput:
             The addData method throws many exceptions of type odbException. For example, if the
             local coordinate system is specified for scalar data
         """
-        pass
+        ...
 
     @typing.overload
     def addData(
@@ -300,10 +300,10 @@ class FieldOutput:
             The addData method throws many exceptions of type odbException. For example, if the
             local coordinate system is specified for scalar data
         """
-        pass
+        ...
 
     def addData(self, *args, **kwargs):
-        pass
+        ...
 
     @typing.overload
     def getScalarField(self, invariant: SymbolicConstant):
@@ -324,7 +324,7 @@ class FieldOutput:
         -------
         AFieldOutput object.
         """
-        pass
+        ...
 
     @typing.overload
     def getScalarField(self, componentLabel: str):
@@ -344,10 +344,10 @@ class FieldOutput:
         FieldOutput
             A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
-        pass
+        ...
 
     def getScalarField(self, *args, **kwargs):
-        pass
+        ...
 
     @typing.overload
     def getSubset(self, position: SymbolicConstant = None, readOnly: Boolean = OFF):
@@ -381,7 +381,7 @@ class FieldOutput:
         FieldOutput
             A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
-        pass
+        ...
 
     @typing.overload
     def getSubset(self, region: str = ""):
@@ -398,7 +398,7 @@ class FieldOutput:
         FieldOutput
             A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
-        pass
+        ...
 
     @typing.overload
     def getSubset(self, localCoordSystem: tuple = ()):
@@ -415,7 +415,7 @@ class FieldOutput:
         FieldOutput
             A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
-        pass
+        ...
 
     @typing.overload
     def getSubset(self, sectionPoint: SectionPoint = None):
@@ -431,7 +431,7 @@ class FieldOutput:
         FieldOutput
             A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
-        pass
+        ...
 
     @typing.overload
     def getSubset(self, location: FieldLocation = FieldLocation()):
@@ -447,7 +447,7 @@ class FieldOutput:
         FieldOutput
             A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
-        pass
+        ...
 
     @typing.overload
     def getSubset(self, region: str = ""):
@@ -463,7 +463,7 @@ class FieldOutput:
         FieldOutput
             A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
-        pass
+        ...
 
     @typing.overload
     def getSubset(self, region: str = ""):
@@ -479,7 +479,7 @@ class FieldOutput:
         FieldOutput
             A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
-        pass
+        ...
 
     @typing.overload
     def getSubset(self, region: str = ""):
@@ -495,7 +495,7 @@ class FieldOutput:
         FieldOutput
             A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
-        pass
+        ...
 
     @typing.overload
     def getSubset(self, elementType: str = ""):
@@ -512,10 +512,10 @@ class FieldOutput:
         FieldOutput
             A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
-        pass
+        ...
 
     def getSubset(self, *args, **kwargs):
-        pass
+        ...
 
     @typing.overload
     def getTransformedField(
@@ -554,7 +554,7 @@ class FieldOutput:
             The getTransformedField method throws an exception if the field contains any assembly
             level nodes.
         """
-        pass
+        ...
 
     @typing.overload
     def getTransformedField(
@@ -600,7 +600,7 @@ class FieldOutput:
             The getTransformedField method throws an exception if the field contains any assembly
             level nodes.
         """
-        pass
+        ...
 
     @typing.overload
     def getTransformedField(
@@ -651,10 +651,10 @@ class FieldOutput:
             The getTransformedField method throws an exception if the field contains any assembly
             level nodes.
         """
-        pass
+        ...
 
     def getTransformedField(self, *args, **kwargs):
-        pass
+        ...
 
     def getConnectorFieldXformedToNodeA(self, deformationField: "FieldOutput" = None):
         """This method generates a new vector field containing the transformed component values of
@@ -680,7 +680,7 @@ class FieldOutput:
             The getConnectorFieldXformedToNodeA method throws an exception if the field requires a
             deformationField and the argument is not supplied.
         """
-        pass
+        ...
 
     def setComponentLabels(self, componentLabels: tuple):
         """This method sets the component labels for the FieldOutput object.
@@ -694,7 +694,7 @@ class FieldOutput:
             is **name** with the suffixes ('1', '2', '3'). If **type** = SCALAR, the default value is an
             empty sequence.
         """
-        pass
+        ...
 
     def setDataType(self, type: SymbolicConstant):
         """This method sets the data type of a FieldOutput object.
@@ -706,7 +706,7 @@ class FieldOutput:
             TENSOR_3D_FULL, TENSOR_3D_PLANAR, TENSOR_3D_SURFACE, TENSOR_2D_PLANAR, and
             TENSOR_2D_SURFACE.
         """
-        pass
+        ...
 
     def setValidInvariants(self, validInvariants: SymbolicConstant):
         """This method sets the invariants valid for the FieldOutput object.
@@ -732,4 +732,4 @@ class FieldOutput:
             
             The default value is an empty sequence.
         """
-        pass
+        ...

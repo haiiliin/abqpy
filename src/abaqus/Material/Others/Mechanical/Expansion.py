@@ -98,7 +98,7 @@ class Expansion:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Expansion object.
@@ -107,4 +107,4 @@ class Expansion:
         ------
         RangeError
         """
-        pass
+        ...

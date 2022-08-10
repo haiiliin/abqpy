@@ -66,4 +66,4 @@ class LeafFromSurfaceVarRange(Leaf):
             A :py:class:`~abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange` object.
         """
         super().__init__(DEFAULT_MODEL)
-        pass
+        ...

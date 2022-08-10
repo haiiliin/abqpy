@@ -101,7 +101,7 @@ class MeanFieldInclusion:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self):
         """This method modifies the MeanFieldInclusion object.
@@ -110,4 +110,4 @@ class MeanFieldInclusion:
         ------
         RangeError
         """
-        pass
+        ...

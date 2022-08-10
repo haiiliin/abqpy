@@ -46,7 +46,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         sketch: ConstrainedSketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
-        pass
+        ...
 
     def ConcentricConstraint(
         self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry
@@ -77,7 +77,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         sketch: ConstrainedSketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
-        pass
+        ...
 
     def EqualLengthConstraint(
         self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry
@@ -104,7 +104,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         sketch: ConstrainedSketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
-        pass
+        ...
 
     def EqualRadiusConstraint(self, entity1: ConstrainedSketchGeometry, entity2: str):
         """This method creates an equal radius constraint. This constraint applies to circles and
@@ -129,7 +129,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         sketch: ConstrainedSketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
-        pass
+        ...
 
     def FixedConstraint(self, entity: ConstrainedSketchGeometry):
         """This method creates a fixed constraint. This constraint applies to a
@@ -154,7 +154,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         sketch: ConstrainedSketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
-        pass
+        ...
 
     def HorizontalConstraint(self, entity: ConstrainedSketchGeometry):
         """This method creates a horizontal constraint. This constraint applies to a line and
@@ -177,7 +177,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         sketch: ConstrainedSketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
-        pass
+        ...
 
     def VerticalConstraint(self, entity: ConstrainedSketchGeometry):
         """This method creates a vertical constraint. This constraint applies to a line and
@@ -200,7 +200,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         sketch: ConstrainedSketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
-        pass
+        ...
 
     def ParallelConstraint(
         self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry
@@ -227,7 +227,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         sketch: ConstrainedSketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
-        pass
+        ...
 
     def PerpendicularConstraint(
         self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry
@@ -255,7 +255,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         sketch: ConstrainedSketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
-        pass
+        ...
 
     def EqualDistanceConstraint(
         self, entity1: str, entity2: ConstrainedSketchGeometry, midpoint: Vertex
@@ -289,7 +289,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         sketch: ConstrainedSketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
-        pass
+        ...
 
     def TangentConstraint(
         self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry
@@ -316,4 +316,4 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         sketch: ConstrainedSketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
-        pass
+        ...

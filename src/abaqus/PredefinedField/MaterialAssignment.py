@@ -106,7 +106,7 @@ class MaterialAssignment(PredefinedField):
             A :py:class:`~abaqus.PredefinedField.MaterialAssignment.MaterialAssignment` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -139,4 +139,4 @@ class MaterialAssignment(PredefinedField):
             assignments. This is a sequence of R,G,B colors, where the values are represented by
             integers between 0 and 255. The default value is an empty sequence.
         """
-        pass
+        ...

@@ -147,7 +147,7 @@ class SpectrumAmplitude(Amplitude):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -199,4 +199,4 @@ class SpectrumAmplitude(Amplitude):
         ------
         RangeError
         """
-        pass
+        ...

@@ -64,7 +64,7 @@ class PipeProfile(Profile):
 
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the PipeProfile object.
@@ -74,4 +74,4 @@ class PipeProfile(Profile):
         RangeError
 
         """
-        pass
+        ...

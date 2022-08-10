@@ -140,7 +140,7 @@ class AcousticImpedance(Interaction):
             An :py:class:`~abaqus.Interaction.AcousticImpedance.AcousticImpedance` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -190,7 +190,7 @@ class AcousticImpedance(Interaction):
             default value is (0, 0, 1).This argument is valid only when **definition** = NONREFLECTING,
             and **nonreflectingType** = ELLIPTICAL or PROLATE.
         """
-        pass
+        ...
 
     def setValuesInStep(self, stepName: str, interactionProperty: str = ""):
         """This method modifies the propagating data for an existing AcousticImpedance object in
@@ -203,4 +203,4 @@ class AcousticImpedance(Interaction):
         interactionProperty
             A String specifying the AcousticImpedanceProp object associated with this interaction.
         """
-        pass
+        ...

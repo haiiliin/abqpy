@@ -88,8 +88,8 @@ class UniaxialTestData:
         UniaxialTestData
             A :py:class:`~abaqus.Material.TestData.UniaxialTestData.UniaxialTestData` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the UniaxialTestData object."""
-        pass
+        ...

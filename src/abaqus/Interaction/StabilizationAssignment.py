@@ -35,7 +35,7 @@ class StabilizationAssignment:
             A String specifying the value of the contact stabilization to be assigned to the domain
             pair whose index is referenced.
         """
-        pass
+        ...
 
     def appendInStep(self, stepName: str, assignments: SymbolicConstant):
         """This method allows addition of contact stabilization assignments to new domain pairs in
@@ -53,7 +53,7 @@ class StabilizationAssignment:
             - A region object or the SymbolicConstant SELF.
             - A String specifying a StdStabilization object associated with this pair of regions.
         """
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing contact stabilization assignments from a
@@ -65,4 +65,4 @@ class StabilizationAssignment:
             A sequence of Ints specifying the index of each contact stabilization assignment to
             delete.
         """
-        pass
+        ...

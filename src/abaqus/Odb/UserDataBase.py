@@ -118,4 +118,4 @@ class UserDataBase:
         XYData
             An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
-        pass
+        ...

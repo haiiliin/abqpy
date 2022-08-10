@@ -47,8 +47,8 @@ class GapHeatGeneration:
         GapHeatGeneration
             A :py:class:`~abaqus.Interaction.GapHeatGeneration.GapHeatGeneration` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the GapHeatGeneration object."""
-        pass
+        ...

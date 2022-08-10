@@ -71,7 +71,7 @@ class Potential:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Potential object.
@@ -80,4 +80,4 @@ class Potential:
         ------
         RangeError
         """
-        pass
+        ...

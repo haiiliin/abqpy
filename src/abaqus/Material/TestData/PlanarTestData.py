@@ -78,8 +78,8 @@ class PlanarTestData:
         PlanarTestData
             A :py:class:`~abaqus.Material.TestData.PlanarTestData.PlanarTestData` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the PlanarTestData object."""
-        pass
+        ...

@@ -100,7 +100,7 @@ class ModelChange(Interaction):
             A :py:class:`~abaqus.Interaction.ModelChange.ModelChange` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -134,7 +134,7 @@ class ModelChange(Interaction):
             This argument is valid only when **isRestart** = False and when **activeInStep** = True. The
             default value is OFF.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self, stepName: str, activeInStep: Boolean = OFF, includeStrain: Boolean = OFF
@@ -154,4 +154,4 @@ class ModelChange(Interaction):
             This argument is valid only when **isRestart** = False and when **activeInStep** = True. The
             default value is OFF.
         """
-        pass
+        ...

@@ -91,4 +91,4 @@ class PartDisplayOptions:
         ------
         RangeError
         """
-        pass
+        ...

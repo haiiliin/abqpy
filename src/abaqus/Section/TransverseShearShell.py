@@ -51,8 +51,8 @@ class TransverseShearShell:
         TransverseShearShell
             A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the TransverseShearShell object."""
-        pass
+        ...

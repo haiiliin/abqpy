@@ -101,7 +101,7 @@ class MeanFieldVoid:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self):
         """This method modifies the MeanFieldVoid object.
@@ -110,4 +110,4 @@ class MeanFieldVoid:
         ------
         RangeError
         """
-        pass
+        ...

@@ -170,4 +170,4 @@ class Area:
         ------
         RangeError
         """
-        pass
+        ...

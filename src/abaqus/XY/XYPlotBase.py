@@ -54,7 +54,7 @@ class XYPlotBase:
         XYPlot
             An :py:class:`~abaqus.XY.XYPlot.XYPlot` object.
         """
-        pass
+        ...
 
     def autoColor(self, lines: Boolean = OFF, symbols: Boolean = OFF):
         """This method distributes the colors on all curves displayed in the XYPlot using the color
@@ -67,17 +67,17 @@ class XYPlotBase:
         symbols
             A Boolean defining whether color distribution affects curve symbols.
         """
-        pass
+        ...
 
     def autoSymbol(self):
         """This method distributes the symbols on all curves displayed in the XYPlot."""
-        pass
+        ...
 
     def fitCurves(self):
         """This method resets the transform of all the charts of the XYPlot object. It cancels any
         zoom or pan action.
         """
-        pass
+        ...
 
     def next(self, drawImmediately: Boolean = False):
         """This method restores the **transform** member of the active Chart object to the next
@@ -91,7 +91,7 @@ class XYPlotBase:
             processed. This is typically only used when writing a script and it is desirable to show
             intermediate results before the script completes. The default value is False.
         """
-        pass
+        ...
 
     def previous(self, drawImmediately: Boolean = False):
         """This method restores the **transform** member of the active Chart object to the previous
@@ -105,7 +105,7 @@ class XYPlotBase:
             processed. This is typically only used when writing a script and it is desirable to show
             intermediate results before the script completes. The default value is False.
         """
-        pass
+        ...
 
     def setValues(self, title: Title, transform: tuple):
         """This method modifies the XYPlot object.
@@ -118,4 +118,4 @@ class XYPlotBase:
             A sequence of Floats specifying a transformation matrix used to scale or pan along the
             axes of the active Chart object of this XYPlot.
         """
-        pass
+        ...

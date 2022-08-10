@@ -144,7 +144,7 @@ class SizingTask(OptimizationTask):
             A :py:class:`~abaqus.Optimization.SizingTask.SizingTask` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -193,4 +193,4 @@ class SizingTask(OptimizationTask):
             method of moving asymptotes. Possible values are NORMAL, CONSERVATIVE, and AGGRESSIVE.
             The default value is NORMAL.
         """
-        pass
+        ...

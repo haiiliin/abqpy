@@ -12,4 +12,4 @@ class ContactStabilization:
             mdb.models[name].contactStabilizations[name]
     """
 
-    pass
+    ...

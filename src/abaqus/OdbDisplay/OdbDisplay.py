@@ -258,7 +258,7 @@ class OdbDisplay:
         **movieMode** = ON (in the View object). The new camera position is the origin of the
         coordinate system specified by the **cameraCsysName** member of the BasicOptions object.
         """
-        pass
+        ...
 
     def setDeformedVariable(self, variableLabel: str, field: str):
         """This method specifies the field output variable or FieldOutput object to be used when
@@ -277,7 +277,7 @@ class OdbDisplay:
             If the viewport is not associated with any Odb object. The current viewport 
             is not associated with an ODB file. Requested operation cancelled.
         """
-        pass
+        ...
 
     @typing.overload
     def setFrame(self, step: int, frame: int):
@@ -302,7 +302,7 @@ class OdbDisplay:
         - If an invalid step index is passed in as argument:
           Invalid step index:step. Available step indices: 0 - n.
         """
-        pass
+        ...
 
     @typing.overload
     def setFrame(self, frame: OdbFrame):
@@ -313,10 +313,10 @@ class OdbDisplay:
         frame
             An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
         """
-        pass
+        ...
 
     def setFrame(self, *args, **kwargs):
-        pass
+        ...
 
     def setPrimaryVariable(
         self,
@@ -359,7 +359,7 @@ class OdbDisplay:
           The current viewport is not associated with an ODB file. Requested operation
           cancelled.
         """
-        pass
+        ...
 
     def setPrimarySectionPoint(self, sectionPoint: dict, activePly: str):
         """This method specifies the section point for the current primary, symbol and status
@@ -381,7 +381,7 @@ class OdbDisplay:
           The current viewport is not associated with an ODB file. Requested operation
           cancelled.
         """
-        pass
+        ...
 
     def setStatusVariable(
         self,
@@ -444,7 +444,7 @@ class OdbDisplay:
           The current viewport is not associated with an ODB file. Requested operation
           cancelled.
         """
-        pass
+        ...
 
     def setSymbolVariable(
         self,
@@ -498,7 +498,7 @@ class OdbDisplay:
           The current viewport is not associated with an ODB file. Requested operation
           cancelled.
         """
-        pass
+        ...
 
     def setStreamVariable(self, variableLabel: str):
         """This method specifies the field output variable for which to obtain results used for
@@ -515,7 +515,7 @@ class OdbDisplay:
           The current viewport is not associated with an ODB file. Requested operation
           cancelled.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -534,7 +534,7 @@ class OdbDisplay:
         viewCutNames
             A List of ViewCut objects.
         """
-        pass
+        ...
 
     def ViewCut(
         self,

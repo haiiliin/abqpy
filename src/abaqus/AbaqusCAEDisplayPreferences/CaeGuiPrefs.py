@@ -26,7 +26,7 @@ class CaeGuiPrefs:
             A Boolean specifying whether Abaqus should save a numbered backup copy of the
             preferences file, **fileName**. Default is True.
         """
-        pass
+        ...
 
     def saveAs(self, fileName: str):
         """This method saves the guiPreferences settings to the specified location.
@@ -36,4 +36,4 @@ class CaeGuiPrefs:
         fileName: str
             A String specifying the path to the preferences file.
         """
-        pass
+        ...

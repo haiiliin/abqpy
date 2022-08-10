@@ -139,4 +139,4 @@ class Eos:
         Raises
         ------
         """
-        pass
+        ...

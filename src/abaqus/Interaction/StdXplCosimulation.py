@@ -90,7 +90,7 @@ class StdXplCosimulation(Interaction):
             A :py:class:`~abaqus.Interaction.StdXplCosimulation.StdXplCosimulation` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -115,4 +115,4 @@ class StdXplCosimulation(Interaction):
             supplied variable. Possible values are DEFAULT and SPECIFIED. The default value is
             DEFAULT.
         """
-        pass
+        ...

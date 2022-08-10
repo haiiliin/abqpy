@@ -119,7 +119,7 @@ class PsdDefinition(Amplitude):
         RangeError
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -160,4 +160,4 @@ class PsdDefinition(Amplitude):
         ------
         RangeError
         """
-        pass
+        ...

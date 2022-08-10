@@ -49,7 +49,7 @@ class InputFile:
         InputFile
             An :py:class:`~abaqus.InputFileParser.InputFile.InputFile` object.
         """
-        pass
+        ...
 
     def parse(
         self,
@@ -89,4 +89,4 @@ class InputFile:
             If you parse an input file more than once, a ValueError is raised for each subsequent
             parsing.
         """
-        pass
+        ...

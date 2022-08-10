@@ -66,4 +66,4 @@ class BCDisplayOptions:
         pinned
             A Boolean specifying whether pinned symbols are shown. The default value is ON.
         """
-        pass
+        ...

@@ -350,4 +350,4 @@ class ContourOptions(DGContourOptions):
         ------
         RangeError
         """
-        pass
+        ...

@@ -160,8 +160,8 @@ class FractureCriterion:
         FractureCriterion
             A :py:class:`~abaqus.Interaction.FractureCriterion.FractureCriterion` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the FractureCriterion object."""
-        pass
+        ...

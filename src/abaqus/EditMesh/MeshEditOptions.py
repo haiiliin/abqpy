@@ -43,4 +43,4 @@ class MeshEditOptions:
             value is OFF.If you change the value of **enableUndo** to True, Abaqus sets **_suspendUndo**
             to False.
         """
-        pass
+        ...

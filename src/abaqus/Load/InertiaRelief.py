@@ -88,7 +88,7 @@ class InertiaRelief(Load):
             An :py:class:`~abaqus.Load.InertiaRelief.InertiaRelief` object.
         """
         super().__init__()
-        pass
+        ...
 
     def setValues(
         self,
@@ -132,7 +132,7 @@ class InertiaRelief(Load):
             directions are defined in the global coordinate system. When this member is queried, it
             returns an Int. The default value is None.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -177,4 +177,4 @@ class InertiaRelief(Load):
             A Boolean specifying whether the inertia relief loading should remain fixed at the
             current loading at the start of the step. The default value is OFF.
         """
-        pass
+        ...
