@@ -101,56 +101,7 @@ class AbaqusBooleanType(int):
 
 AbaqusBoolean = AbaqusBooleanType
 
-
-class BooleanType(int):
-    """
-    bool(x) -> bool
-
-    Returns True when the argument x is true, False otherwise.
-    The builtins True and False are the only two instances of the class bool.
-    The class bool is a subclass of the class int, and cannot be subclassed.
-    """
-
-    def __and__(self, y):  # real signature unknown; restored from __doc__
-        """ x.__and__(y) <==> x&y """
-        pass
-
-    def __init__(self, *args, **kwargs):  # real signature unknown
-        pass
-
-    @staticmethod  # known case of __new__
-    def __new__(S, *more):  # real signature unknown; restored from __doc__
-        """ T.__new__(S, ...) -> a new object with type S, a subtype of T """
-        pass
-
-    def __or__(self, y):  # real signature unknown; restored from __doc__
-        """ x.__or__(y) <==> x|y """
-        pass
-
-    def __rand__(self, y):  # real signature unknown; restored from __doc__
-        """ x.__rand__(y) <==> y&x """
-        pass
-
-    def __repr__(self):  # real signature unknown; restored from __doc__
-        """ x.__repr__() <==> repr(x) """
-        pass
-
-    def __ror__(self, y):  # real signature unknown; restored from __doc__
-        """ x.__ror__(y) <==> y|x """
-        pass
-
-    def __rxor__(self, y):  # real signature unknown; restored from __doc__
-        """ x.__rxor__(y) <==> y^x """
-        pass
-
-    def __str__(self):  # real signature unknown; restored from __doc__
-        """ x.__str__() <==> str(x) """
-        pass
-
-    def __xor__(self, y):  # real signature unknown; restored from __doc__
-        """ x.__xor__(y) <==> x^y """
-        pass
-
+BooleanType = bool
 
 Boolean = BooleanType
 
