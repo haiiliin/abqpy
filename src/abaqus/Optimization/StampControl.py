@@ -131,7 +131,6 @@ class StampControl(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.StampControl.StampControl` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

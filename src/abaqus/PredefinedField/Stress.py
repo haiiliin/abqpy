@@ -72,7 +72,6 @@ class Stress(PredefinedField):
             A Stress object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

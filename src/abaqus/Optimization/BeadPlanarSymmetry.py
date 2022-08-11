@@ -67,7 +67,6 @@ class BeadPlanarSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, axis: SymbolicConstant = AXIS_1, csys: int = None):
         """This method modifies the BeadPlanarSymmetry object.

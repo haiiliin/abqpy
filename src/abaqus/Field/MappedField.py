@@ -213,7 +213,6 @@ class MappedField(AnalyticalField):
         AbaqusException
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

@@ -79,7 +79,6 @@ class BodyCurrent(Load):
             A :py:class:`~abaqus.Load.BodyCurrent.BodyCurrent` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

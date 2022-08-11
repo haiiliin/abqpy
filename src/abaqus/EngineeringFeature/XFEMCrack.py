@@ -151,7 +151,6 @@ class XFEMCrack(Crack):
             A :py:class:`~abaqus.EngineeringFeature.XFEMCrack.XFEMCrack` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

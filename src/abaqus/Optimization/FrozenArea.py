@@ -48,7 +48,6 @@ class FrozenArea(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.FrozenArea.FrozenArea` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, region: Region = Region()):
         """This method modifies the FrozenArea object.

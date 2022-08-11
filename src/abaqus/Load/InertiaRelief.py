@@ -88,7 +88,6 @@ class InertiaRelief(Load):
             An :py:class:`~abaqus.Load.InertiaRelief.InertiaRelief` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

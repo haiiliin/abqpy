@@ -53,7 +53,6 @@ class BeadPointSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, csys: int = None):
         """This method modifies the BeadPointSymmetry object.

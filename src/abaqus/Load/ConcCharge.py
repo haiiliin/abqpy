@@ -79,7 +79,6 @@ class ConcCharge(Load):
             A :py:class:`~abaqus.Load.ConcCharge.ConcCharge` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

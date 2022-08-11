@@ -305,7 +305,6 @@ class PointFastener(Fastener):
             A :py:class:`~abaqus.EngineeringFeature.PointFastener.PointFastener` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

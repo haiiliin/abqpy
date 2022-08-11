@@ -79,7 +79,6 @@ class AcousticImpedanceProp(ContactProperty):
             An :py:class:`~abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp` object.
         """
         super().__init__(name)
-        ...
 
     def setValues(self, frequencyDependency: Boolean = OFF):
         """This method modifies the AcousticImpedanceProp object.

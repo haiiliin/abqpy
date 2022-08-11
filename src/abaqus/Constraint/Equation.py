@@ -59,7 +59,6 @@ class Equation(Constraint):
         If **terms** does not contain more than one entry, Equation must have two or more terms.
         """
         super().__init__()
-        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Equation object.

@@ -80,7 +80,6 @@ class BodyConcentrationFlux(Load):
             A :py:class:`~abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

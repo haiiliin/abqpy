@@ -87,7 +87,6 @@ class DebondVCCT(Crack):
             A :py:class:`~abaqus.EngineeringFeature.DebondVCCT.DebondVCCT` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,
