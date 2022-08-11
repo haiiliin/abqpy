@@ -14,19 +14,7 @@ import re as re  # D:\SIMULIA\Abaqus\6.14-4\tools\SMApy\python2.7\lib\re.pyc
 import sys as sys  # <module 'sys' (built-in)>
 import os as os  # D:\SIMULIA\Abaqus\6.14-4\tools\SMApy\python2.7\lib\os.pyc
 
-# Variables with simple values
-
-FALSE = False
-
-OFF = 0
-
-ON = 1
-
-TRUE = True
-
-
 # no functions
-
 
 # variables with complex values
 
