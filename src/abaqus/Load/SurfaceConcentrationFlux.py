@@ -82,7 +82,6 @@ class SurfaceConcentrationFlux(Load):
             A :py:class:`~abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

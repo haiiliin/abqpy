@@ -63,7 +63,6 @@ class SubstructureLoad(Load):
             A :py:class:`~abaqus.Load.SubstructureLoad.SubstructureLoad` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, amplitude: str = UNSET):
         """This method modifies the data for an existing SubstructureLoad object in the step where

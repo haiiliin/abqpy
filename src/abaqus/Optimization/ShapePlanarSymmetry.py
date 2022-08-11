@@ -113,7 +113,6 @@ class ShapePlanarSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

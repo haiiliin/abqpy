@@ -35,7 +35,6 @@ class RegisteredTuple(CommandRegister):
             A :py:class:`~abaqus.CustomKernel.RegisteredTuple.RegisteredTuple` object.
         """
         super().__init__()
-        ...
 
     def Methods(self):
         """The RegisteredTuple object supports the same methods as a standard Python list object."""

@@ -96,7 +96,6 @@ class PressurePenetration(Interaction):
             A :py:class:`~abaqus.Interaction.PressurePenetration.PressurePenetration` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, amplitude: str = UNSET, penetrationTime: float = 0):
         """This method modifies the data for an existing PressurePenetration object in the step

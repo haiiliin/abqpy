@@ -341,7 +341,6 @@ class IncidentWaveProperty(ContactProperty):
             An :py:class:`~abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty` object.
         """
         super().__init__(name)
-        ...
 
     def setValues(
         self,

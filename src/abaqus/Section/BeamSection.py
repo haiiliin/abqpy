@@ -295,7 +295,6 @@ class BeamSection(Section):
             A :py:class:`~abaqus.Section.BeamSection.BeamSection` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

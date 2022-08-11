@@ -103,7 +103,6 @@ class GasketSection(Section):
             A :py:class:`~abaqus.Section.GasketSection.GasketSection` object.  and ValueError.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

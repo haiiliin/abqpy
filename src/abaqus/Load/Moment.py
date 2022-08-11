@@ -110,7 +110,6 @@ class Moment(Load):
             A :py:class:`~abaqus.Load.Moment.Moment` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

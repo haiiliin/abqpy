@@ -111,7 +111,6 @@ class RotationalBodyForce(Load):
             A :py:class:`~abaqus.Load.RotationalBodyForce.RotationalBodyForce` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

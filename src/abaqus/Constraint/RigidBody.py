@@ -106,7 +106,6 @@ class RigidBody(Constraint):
             A :py:class:`~abaqus.Constraint.RigidBody.RigidBody` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

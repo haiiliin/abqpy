@@ -86,7 +86,6 @@ class ContactProperty(InteractionProperty):
             A :py:class:`~abaqus.Interaction.ContactProperty.ContactProperty` object.
         """
         super().__init__()
-        ...
 
     def TangentialBehavior(
         self,

@@ -240,7 +240,6 @@ class Arrow(Annotation):
 
         """
         super().__init__()
-        ...
 
     def translateStartPoint(self, x: float = None, y: float = None):
         """This method translates the start point of the Arrow object on the viewport plane.

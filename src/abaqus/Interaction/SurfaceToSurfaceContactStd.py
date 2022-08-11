@@ -347,7 +347,6 @@ class SurfaceToSurfaceContactStd(Interaction):
             A :py:class:`~abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd` object.
         """
         super().__init__()
-        ...
 
     def swapSurfaces(self):
         """This method switches the master and slave surfaces of a surface-to-surface contact

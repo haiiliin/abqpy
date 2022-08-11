@@ -62,7 +62,6 @@ class ElasticFoundation(Interaction):
             An :py:class:`~abaqus.Interaction.ElasticFoundation.ElasticFoundation` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the data for an existing ElasticFoundation object in the step where

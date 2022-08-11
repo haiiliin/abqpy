@@ -93,7 +93,6 @@ class Pressure(Load):
             A :py:class:`~abaqus.Load.Pressure.Pressure` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

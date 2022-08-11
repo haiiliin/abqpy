@@ -172,7 +172,6 @@ class Coupling(Constraint):
             A :py:class:`~abaqus.Constraint.Coupling.Coupling` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

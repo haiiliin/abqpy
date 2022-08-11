@@ -74,7 +74,6 @@ class BeadRotationalSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, axis: SymbolicConstant = AXIS_1, csys: int = None):
         """This method modifies the BeadRotationalSymmetry object.

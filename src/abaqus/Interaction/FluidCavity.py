@@ -103,7 +103,6 @@ class FluidCavity(Interaction):
             A :py:class:`~abaqus.Interaction.FluidCavity.FluidCavity` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,
