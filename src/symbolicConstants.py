@@ -47,7 +47,7 @@ TRUE = True
 
 # classes
 
-class AbaqusBooleanType(int):
+class AbaqusBoolean(int):
     """
     AbaqusBoolean is derived from int, and prints as ON or OFF.
         A call to SymbolicConstant("ON/OFF") will return an AbaqusBoolean instance.
@@ -99,14 +99,14 @@ class AbaqusBooleanType(int):
     __dict__ = None  # (!) real value is 'dict_proxy({\'__module__\': \'symbolicConstants\', \'isTrue\': <function isTrue at 0x00000000031652E8>, \'__setstate__\': <function __setstate__ at 0x00000000031653C8>, \'__str__\': <function getText at 0x0000000003165208>, \'__reduce__\': <function __reduce__ at 0x00000000031654A8>, \'getText\': <function getText at 0x0000000003165208>, \'__dict__\': <attribute \'__dict__\' of \'AbaqusBoolean\' objects>, \'_abaqusBooleanON\': ON, \'__weakref__\': <attribute \'__weakref__\' of \'AbaqusBoolean\' objects>, \'_abaqusBooleanOFF\': OFF, \'__copy__\': <function __copy__ at 0x0000000003165438>, \'__new__\': <staticmethod object at 0x000000000314E6A8>, \'getId\': <function getId at 0x0000000003165278>, \'__init__\': <function __init__ at 0x0000000003165128>, \'__hash__\': <function __hash__ at 0x0000000003165198>, \'__getstate__\': <function __getstate__ at 0x0000000003165358>, \'__doc__\': \'\\n    AbaqusBoolean is derived from int, and prints as ON or OFF.\\n    A call to SymbolicConstant("ON/OFF") will return an AbaqusBoolean instance.\\n    \', \'__repr__\': <function getText at 0x0000000003165208>})'
 
 
-AbaqusBoolean = AbaqusBooleanType
+AbaqusBooleanType = AbaqusBoolean
 
 BooleanType = bool
 
 Boolean = BooleanType
 
 
-class SymbolicConstantType(str):
+class SymbolicConstant(str):
     """
     SymbolicConstant(name <,scdId=-1>)
         Abaqus/CAE SymbolicConstant implemented in Python.
@@ -147,4 +147,4 @@ class SymbolicConstantType(str):
     __dict__ = None  # (!) real value is 'dict_proxy({\'__module__\': \'symbolicConstants\', \'__setstate__\': <function __setstate__ at 0x000000000314FDD8>, \'__str__\': <function getText at 0x000000000314FF28>, \'__reduce__\': <function __reduce__ at 0x000000000314FEB8>, \'getText\': <function getText at 0x000000000314FF28>, \'__dict__\': <attribute \'__dict__\' of \'SymbolicConstant\' objects>, \'_cache\': {\'_UNSPECIFIED\': _UNSPECIFIED, \'ON\': ON, \'OFF\': OFF, \'ALL_TYPES\': ALL_TYPES, \'BOTH\': BOTH, \'GUI\': GUI, \'ALL_METHODS\': ALL_METHODS, \'EARLIEST\': EARLIEST, \'KERNEL\': KERNEL, \'LATEST\': LATEST}, \'__lt__\': <function __lt__ at 0x000000000314FC88>, \'__weakref__\': <attribute \'__weakref__\' of \'SymbolicConstant\' objects>, \'__init__\': <function __init__ at 0x000000000314FC18>, \'_counter\': 10, \'__getstate__\': <function __getstate__ at 0x000000000314FD68>, \'__new__\': <staticmethod object at 0x000000000314E678>, \'getId\': <function getId at 0x000000000314FF98>, \'_p\': <_sre.SRE_Pattern object at 0x0000000003106D40>, \'__repr__\': <function getText at 0x000000000314FF28>, \'__hash__\': <function __hash__ at 0x000000000314FCF8>, \'__copy__\': <function __copy__ at 0x000000000314FE48>, \'_addToCache\': <classmethod object at 0x000000000314E5E8>, \'__doc__\': "\\n    SymbolicConstant(name <,scdId=-1>)\\n    Abaqus/CAE SymbolicConstant implemented in Python.\\n    SymbolicConstant(\'ON\'|\'OFF\') will return an AbaqusBoolean instance.\\n    "})'
     
     
-SymbolicConstant = SymbolicConstantType
+SymbolicConstantType = SymbolicConstant
