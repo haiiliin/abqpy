@@ -35,7 +35,7 @@ class IgnoredEdge:
             A Float.
 
         """
-        pass
+        ...
 
     def getRadius(self):
         """This method returns the radius of a circular IgnoredEdge object.
@@ -49,7 +49,7 @@ class IgnoredEdge:
         ------
         The given IgnoredEdge object is not circular
         """
-        pass
+        ...
 
     def getCurvature(self, parameter: float, point: tuple):
         """This method returns curvature information at a location on the IgnoredEdge object.
@@ -77,4 +77,4 @@ class IgnoredEdge:
         ------
         The given IgnoredEdge is straight
         """
-        pass
+        ...

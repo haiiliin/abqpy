@@ -88,7 +88,6 @@ class HeatCapacitance(Inertia):
             A :py:class:`~abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance` object.
         """
         super().__init__()
-        pass
 
     def setValues(self, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method modifies the HeatCapacitance object.
@@ -100,4 +99,4 @@ class HeatCapacitance(Inertia):
         dependencies
             An Int specifying the number of field variable dependencies. The default value is 0.
         """
-        pass
+        ...

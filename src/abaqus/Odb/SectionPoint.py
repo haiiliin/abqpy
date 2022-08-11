@@ -60,4 +60,4 @@ class SectionPoint:
         SectionPoint
             A :py:class:`~abaqus.Odb.SectionPoint.SectionPoint` object.
         """
-        pass
+        ...

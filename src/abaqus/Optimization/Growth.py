@@ -77,7 +77,6 @@ class Growth(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.Growth.Growth` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -99,4 +98,4 @@ class Growth(GeometricRestriction):
             A Float specifying the maximum optimization displacement in the shrink direction. Either
             **growth** or **shrink** or both must be specified The default value is 0.0.
         """
-        pass
+        ...

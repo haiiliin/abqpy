@@ -25,4 +25,4 @@ class ConstructionLine(ConstrainedSketchGeometry):
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the line cannot be created).
 
         """
-        pass
+        ...

@@ -216,7 +216,6 @@ class HomogeneousShellSection(GeometryShellSection):
             A :py:class:`~abaqus.Section.HomogeneousShellSection.HomogeneousShellSection` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -301,4 +300,4 @@ class HomogeneousShellSection(GeometryShellSection):
             argument applies only when **thicknessType** = NODAL_ANALYTICAL_FIELD or
             **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string.
         """
-        pass
+        ...

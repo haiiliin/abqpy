@@ -135,7 +135,6 @@ class ShapeDemoldControl(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -182,4 +181,4 @@ class ShapeDemoldControl(GeometricRestriction):
         undercutTolerance
             A Float specifying the undercut tolerance. The default value is 0.0.
         """
-        pass
+        ...

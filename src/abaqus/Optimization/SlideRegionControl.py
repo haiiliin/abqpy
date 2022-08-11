@@ -133,7 +133,6 @@ class SlideRegionControl(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.SlideRegionControl.SlideRegionControl` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -178,4 +177,4 @@ class SlideRegionControl(GeometricRestriction):
             A Float specifying the geometric tolerance in the 3-direction. This is used when
             **approach** is TURN. The default value is 0.01.
         """
-        pass
+        ...

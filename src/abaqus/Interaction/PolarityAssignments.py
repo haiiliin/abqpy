@@ -33,7 +33,7 @@ class PolarityAssignments:
             A SymbolicConstant specifying the value of the polarity to be assigned to the surface
             whose index is referenced. Possible values are SPOS, SNEG, and TWO_SIDED.
         """
-        pass
+        ...
 
     def appendInStep(self, stepName: str, assignments: SymbolicConstant):
         """This method allows you to add polarity assignments to new surface pairs in a given step.
@@ -51,7 +51,7 @@ class PolarityAssignments:
             - A SymbolicConstant specifying the overriding polarity value to be used for the first
               surface. Possible values of the SymbolicConstant are SPOS, SNEG, and TWO_SIDED.
         """
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing polarity assignments.
@@ -61,4 +61,4 @@ class PolarityAssignments:
         indices
             A sequence of Ints specifying the index of each polarity assignment to delete.
         """
-        pass
+        ...

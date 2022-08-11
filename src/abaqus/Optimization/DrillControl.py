@@ -133,7 +133,6 @@ class DrillControl(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.DrillControl.DrillControl` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -178,4 +177,4 @@ class DrillControl(GeometricRestriction):
         undercutTolerance
             A Float specifying the undercut tolerance. The default value is 0.0.
         """
-        pass
+        ...

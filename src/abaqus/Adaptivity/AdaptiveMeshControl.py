@@ -161,7 +161,7 @@ class AdaptiveMeshControl:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -233,4 +233,4 @@ class AdaptiveMeshControl:
         ------
         RangeError
         """
-        pass
+        ...

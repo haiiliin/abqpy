@@ -240,7 +240,6 @@ class Arrow(Annotation):
 
         """
         super().__init__()
-        pass
 
     def translateStartPoint(self, x: float = None, y: float = None):
         """This method translates the start point of the Arrow object on the viewport plane.
@@ -253,7 +252,7 @@ class Arrow(Annotation):
             A Float specifying the*Y* translation amount in millimeters.
 
         """
-        pass
+        ...
 
     def translateEndPoint(self, x: float = None, y: float = None):
         """This method translates the end point of the Arrow object on the viewport plane.
@@ -266,7 +265,7 @@ class Arrow(Annotation):
             A Float specifying the*Y* translation amount in millimeters.
 
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -334,4 +333,4 @@ class Arrow(Annotation):
             VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.
 
         """
-        pass
+        ...

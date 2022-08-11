@@ -49,8 +49,8 @@ class Radiation:
         Radiation
             A :py:class:`~abaqus.Interaction.Radiation.Radiation` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Radiation object."""
-        pass
+        ...

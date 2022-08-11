@@ -21,7 +21,7 @@ def milestone(message: str):
     message
         A String specifying the text to display.
     """
-    pass
+    ...
 
 
 @typing.overload
@@ -42,7 +42,7 @@ def milestone(message: str, percent: int):
     percent
         An Int specifying the percentage complete.
     """
-    pass
+    ...
 
 
 @typing.overload
@@ -68,8 +68,8 @@ def milestone(message: str, object: str, done: int, total: int):
     total
         An Int specifying the total number.
     """
-    pass
+    ...
 
 
 def milestone(*args, **kwargs):
-    pass
+    ...

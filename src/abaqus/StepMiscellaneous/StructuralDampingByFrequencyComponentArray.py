@@ -5,4 +5,4 @@ class StructuralDampingByFrequencyComponentArray(
     list[StructuralDampingByFrequencyComponent]
 ):
     def findAt(self):
-        pass
+        ...

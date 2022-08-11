@@ -444,7 +444,6 @@ class ShapeTask(OptimizationTask):
             A :py:class:`~abaqus.Optimization.ShapeTask.ShapeTask` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -648,4 +647,4 @@ class ShapeTask(OptimizationTask):
             the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
             value of False means that the existing algorithm will be used.
         """
-        pass
+        ...

@@ -37,7 +37,7 @@ class MeshPart(PartBase):
         referenceRegion
             A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the top side of the stack direction.
         """
-        pass
+        ...
 
     def associateMeshWithGeometry(
         self,
@@ -71,7 +71,7 @@ class MeshPart(PartBase):
         node
             A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object specifying the mesh node to be associated with the geometric vertex.
         """
-        pass
+        ...
 
     def createVirtualTopology(
         self,
@@ -170,7 +170,7 @@ class MeshPart(PartBase):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def deleteBoundaryLayerControls(self, regions: tuple[Cell]):
         """This method deletes the control parameters for boundary layer mesh for all the specified
@@ -182,7 +182,7 @@ class MeshPart(PartBase):
             A sequence of Cell objects specifying the regions for which to set the boundary layer
             mesh control parameters.
         """
-        pass
+        ...
 
     def deleteMesh(self, regions: tuple["Part"]):
         """This method deletes a subset of the mesh that contains the native elements from the
@@ -194,7 +194,7 @@ class MeshPart(PartBase):
             A sequence of Part objects or Region objects specifying the parts or regions from which
             the native mesh is to be deleted.
         """
-        pass
+        ...
 
     def deleteMeshAssociationWithGeometry(
         self, geometricEntities: tuple[Cell], addBoundingEntities: Boolean = False
@@ -213,13 +213,13 @@ class MeshPart(PartBase):
             vertices that bound the face will also be disassociated from the mesh. The default value
             is False.
         """
-        pass
+        ...
 
     def deletePreviewMesh(self):
         """This method deletes all boundary meshes in the parts. See the **boundaryPreview** argument
         of generateMesh for information about generating boundary meshes.
         """
-        pass
+        ...
 
     def deleteSeeds(self, regions: tuple["Part"]):
         """This method deletes the global edge seeds from the given parts or deletes the local edge
@@ -231,7 +231,7 @@ class MeshPart(PartBase):
             A sequence of Part objects or Edge objects specifying the parts or edges from which the
             seeds are to be deleted.
         """
-        pass
+        ...
 
     def generateMesh(
         self,
@@ -265,7 +265,7 @@ class MeshPart(PartBase):
             to be meshed with tetrahedral elements and a boundary preview mesh already exists. The
             default value is OFF.
         """
-        pass
+        ...
 
     def generateBottomUpExtrudedMesh(
         self,
@@ -319,7 +319,7 @@ class MeshPart(PartBase):
             extended to also include extruded elements. This argument is ignored for native parts.
             The default value is False.
         """
-        pass
+        ...
 
     def generateBottomUpSweptMesh(
         self,
@@ -368,7 +368,7 @@ class MeshPart(PartBase):
             extended to also include swept elements. This argument is ignored for native parts. The
             default value is False.
         """
-        pass
+        ...
 
     def generateBottomUpRevolvedMesh(
         self,
@@ -414,7 +414,7 @@ class MeshPart(PartBase):
             extended to also include extruded elements. This argument is ignored for native parts.
             The default value is False.
         """
-        pass
+        ...
 
     def getEdgeSeeds(
         self, edge: Edge, attribute: typing.Union[SymbolicConstant, float]
@@ -485,7 +485,7 @@ class MeshPart(PartBase):
 
         A value of NONE indicates that the edge is not seeded.
         """
-        pass
+        ...
 
     def getElementType(self, region: str, elemShape: SymbolicConstant):
         """This method returns the ElemType object of a given element shape assigned to a region of
@@ -516,7 +516,7 @@ class MeshPart(PartBase):
             The region cannot be associated with element types or the **elemShape** is not
             consistent with the dimension of the **region**.
         """
-        pass
+        ...
 
     def getIncompatibleMeshInterfaces(self, cells: tuple[Cell] = ()):
         """This method returns a sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects that are meshed with incompatible
@@ -532,7 +532,7 @@ class MeshPart(PartBase):
         tuple[Face, ...]
             A sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects.
         """
-        pass
+        ...
 
     def getMeshControl(self, region: str, attribute: SymbolicConstant):
         """This method returns a mesh control parameter for the specified region of a part.
@@ -571,7 +571,7 @@ class MeshPart(PartBase):
         TypeError
             The region cannot carry mesh controls.
         """
-        pass
+        ...
 
     def getMeshStats(self, regions: tuple):
         """This method returns the mesh statistics for the given regions.
@@ -586,7 +586,7 @@ class MeshPart(PartBase):
         MeshStats
             A :py:class:`~abaqus.Mesh.MeshStats.MeshStats` object.
         """
-        pass
+        ...
 
     def getPartSeeds(self, attribute: typing.Union[SymbolicConstant, float]):
         """This method returns a part seed parameter for the part.
@@ -624,7 +624,7 @@ class MeshPart(PartBase):
         Error: Part does not contain native geometry            
             An exception occurs if the part does not contain native geometry.
         """
-        pass
+        ...
 
     def getUnmeshedRegions(self):
         """This method returns all geometric regions in the part that require a mesh for submitting
@@ -635,7 +635,7 @@ class MeshPart(PartBase):
         Region
             A :py:class:`~abaqus.Region.Region.Region` object, or None.
         """
-        pass
+        ...
 
     def ignoreEntity(self, entities: tuple):
         """This method creates a virtual topology feature. Virtual topology allows unimportant
@@ -653,7 +653,7 @@ class MeshPart(PartBase):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def restoreIgnoredEntity(self, entities: tuple[IgnoredVertex]):
         """This method restores vertices and edges that have been merged using a virtual topology
@@ -670,7 +670,7 @@ class MeshPart(PartBase):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def seedEdgeByBias(
         self,
@@ -735,7 +735,7 @@ class MeshPart(PartBase):
             - FIXED: The seeds must be exactly matched by the mesh (only with respect to the number
               of elements, not to the nodal positioning).
         """
-        pass
+        ...
 
     def seedEdgeByNumber(
         self, edges: tuple[Edge], number: int, constraint: SymbolicConstant = FREE
@@ -760,7 +760,7 @@ class MeshPart(PartBase):
             - FIXED: The seeds must be exactly matched by the mesh (only with respect to the number
               of elements, not to the nodal positioning).
         """
-        pass
+        ...
 
     def seedEdgeBySize(
         self,
@@ -795,7 +795,7 @@ class MeshPart(PartBase):
             - FIXED: The seeds must be exactly matched by the mesh (only with respect to the number
               of elements, not to the nodal positioning).
         """
-        pass
+        ...
 
     def seedPart(
         self,
@@ -822,7 +822,7 @@ class MeshPart(PartBase):
             Possible values are:FREE: The resulting mesh can be finer or coarser than the specified
             seeds.FINER: The resulting mesh can be finer than the specified seeds.
         """
-        pass
+        ...
 
     def setBoundaryLayerControls(
         self,
@@ -857,7 +857,7 @@ class MeshPart(PartBase):
         setName
             A String specifying a unique name for a set that will contain boundary layer elements.
         """
-        pass
+        ...
 
     def setElementType(self, regions: tuple, elemTypes: tuple[ElemType]):
         """This method assigns element types to the specified regions.
@@ -886,7 +886,7 @@ class MeshPart(PartBase):
             because the Wedge and Tet elements will remain linear (i.e., As Is) and become
             incompatible with the newly assigned quadratic Hex element.
         """
-        pass
+        ...
 
     def setLogicalCorners(self, region: str, corners: str):
         """This method sets the logical corners for a mappable face region.
@@ -899,7 +899,7 @@ class MeshPart(PartBase):
             Three, four, or five ConstrainedSketchVertex objects defining the logical corners for a given mappable
             face region.
         """
-        pass
+        ...
 
     def setMeshControls(
         self,
@@ -978,7 +978,7 @@ class MeshPart(PartBase):
             - Free tetrahedral meshing. **allowMapped** = True implies that mapped triangular meshing
               can be used on faces that bound three-dimensional **regions**.
         """
-        pass
+        ...
 
     def setSweepPath(self, region: str, edge: Edge, sense: SymbolicConstant):
         """This method sets the sweep path for a sweepable region or the revolve path for a
@@ -996,7 +996,7 @@ class MeshPart(PartBase):
             Possible values are FORWARD or REVERSE.If **sense** = FORWARD, the sense of the given edge's
             underlying curve will be used.
         """
-        pass
+        ...
 
     def verifyMeshQuality(
         self,
@@ -1076,7 +1076,7 @@ class MeshPart(PartBase):
             numElements (Int); average, worst (Float); worstElement 
             (:py:class:`~abaqus.Mesh.MeshElement.MeshElement` object) .
         """
-        pass
+        ...
 
     def Node(
         self, coordinates: tuple, localCsys: DatumCsys = None,  label: int = None

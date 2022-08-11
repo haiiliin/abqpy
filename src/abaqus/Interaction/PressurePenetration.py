@@ -96,7 +96,6 @@ class PressurePenetration(Interaction):
             A :py:class:`~abaqus.Interaction.PressurePenetration.PressurePenetration` object.
         """
         super().__init__()
-        pass
 
     def setValues(self, amplitude: str = UNSET, penetrationTime: float = 0):
         """This method modifies the data for an existing PressurePenetration object in the step
@@ -113,7 +112,7 @@ class PressurePenetration(Interaction):
             on newly penetrated contact surface segments is ramped up to the current magnitude. The
             default value is 0.001.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -147,4 +146,4 @@ class PressurePenetration(Interaction):
             on newly penetrated contact surface segments is ramped up to the current magnitude. The
             default value is 0.001.
         """
-        pass
+        ...

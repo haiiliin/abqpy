@@ -179,13 +179,12 @@ class SurfaceToSurfaceContactExp(Interaction):
             A :py:class:`~abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp` object.
         """
         super().__init__()
-        pass
 
     def swapSurfaces(self):
         """This method switches the main and secondary surfaces of a surface-to-surface contact
         pair. This command is valid only during the step in which the interaction is created.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -244,7 +243,7 @@ class SurfaceToSurfaceContactExp(Interaction):
         clearanceRegion
             A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self, stepName: str, interactionProperty: str = "", contactControls: str = ""
@@ -264,4 +263,4 @@ class SurfaceToSurfaceContactExp(Interaction):
             interaction. An empty string indicates that the default contact controls will be used.
             The default value is an empty string.
         """
-        pass
+        ...

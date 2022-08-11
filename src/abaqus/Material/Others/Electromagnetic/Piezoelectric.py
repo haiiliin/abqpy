@@ -103,8 +103,8 @@ class Piezoelectric:
         Piezoelectric
             A :py:class:`~abaqus.Material.Others.Electromagnetic.Piezoelectric.Piezoelectric` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Piezoelectric object."""
-        pass
+        ...

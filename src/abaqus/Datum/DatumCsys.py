@@ -60,7 +60,7 @@ class DatumCsys(Datum):
         tuple[float, float, float]
             A tuple of three Floats representing the coordinates in this local coordinate system.
         """
-        pass
+        ...
 
     def localToGlobal(
         self, coordinates: tuple[float, float, float]
@@ -77,4 +77,4 @@ class DatumCsys(Datum):
         tuple[float, float, float]
             A tuple of three Floats representing the coordinates in this global coordinate system.
         """
-        pass
+        ...

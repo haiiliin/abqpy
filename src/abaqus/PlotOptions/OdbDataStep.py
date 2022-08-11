@@ -27,4 +27,4 @@ class OdbDataStep:
         update
             A Boolean specifying whether to update the model. The default value is ON
         """
-        pass
+        ...

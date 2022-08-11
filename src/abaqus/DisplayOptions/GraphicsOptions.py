@@ -498,4 +498,4 @@ class GraphicsOptions:
         ------
         RangeError
         """
-        pass
+        ...

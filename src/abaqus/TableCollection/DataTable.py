@@ -48,4 +48,4 @@ class DataTable:
         ------
         AbaqusException
         """
-        pass
+        ...

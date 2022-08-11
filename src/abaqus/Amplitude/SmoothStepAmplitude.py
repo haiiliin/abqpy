@@ -66,7 +66,6 @@ class SmoothStepAmplitude(Amplitude):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(self, timeSpan: SymbolicConstant = STEP):
         """This method modifies the SmoothStepAmplitude object.
@@ -81,4 +80,4 @@ class SmoothStepAmplitude(Amplitude):
         ------
         RangeError
         """
-        pass
+        ...

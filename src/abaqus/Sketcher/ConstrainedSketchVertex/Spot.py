@@ -22,4 +22,4 @@ class Spot(ConstrainedSketchVertex):
         ConstrainedSketchVertex
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object (None if the spot cannot be created).
         """
-        pass
+        ...

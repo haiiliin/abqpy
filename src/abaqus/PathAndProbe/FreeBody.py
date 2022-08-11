@@ -54,7 +54,7 @@ class FreeBody:
         FreeBody
             A :py:class:`~abaqus.PathAndProbe.FreeBody.FreeBody` object.
         """
-        pass
+        ...
 
     def FreeBodyFromFaces(
         self,
@@ -96,7 +96,7 @@ class FreeBody:
         FreeBody
             A :py:class:`~abaqus.PathAndProbe.FreeBody.FreeBody` object.
         """
-        pass
+        ...
 
     def FreeBodyFromNodesElements(
         self,
@@ -141,4 +141,4 @@ class FreeBody:
         FreeBody
             A :py:class:`~abaqus.PathAndProbe.FreeBody.FreeBody` object.
         """
-        pass
+        ...

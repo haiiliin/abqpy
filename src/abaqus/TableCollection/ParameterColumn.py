@@ -79,4 +79,4 @@ class ParameterColumn:
         ------
         Incompatible data are given
         """
-        pass
+        ...

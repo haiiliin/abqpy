@@ -110,7 +110,6 @@ class ConcentratedForce(Load):
             A :py:class:`~abaqus.Load.ConcentratedForce.ConcentratedForce` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -157,7 +156,7 @@ class ConcentratedForce(Load):
             coordinate system. When this member is queried, it returns an Int. The default value is
             None.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -193,4 +192,4 @@ class ConcentratedForce(Load):
             load is changed to have no amplitude reference. You should provide the **amplitude**
             argument only if it is valid for the specified step.
         """
-        pass
+        ...

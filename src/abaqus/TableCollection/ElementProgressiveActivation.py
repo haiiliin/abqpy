@@ -82,7 +82,7 @@ class ElementProgressiveActivation:
         AbaqusException
             If the region does not contain only elements.
         """
-        pass
+        ...
 
     def setValue(self):
         """The method modifies the ElementProgressiveActivation object.
@@ -93,4 +93,4 @@ class ElementProgressiveActivation:
         Raises
         ------
         """
-        pass
+        ...

@@ -50,7 +50,7 @@ class VertexArray:
             A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
 
         """
-        pass
+        ...
 
     def findAt(self, coordinates: tuple, printWarning: Boolean = True):
         """This method returns the object or objects in the VertexArray located at the given
@@ -83,7 +83,7 @@ class VertexArray:
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or a sequence of ConstrainedSketchVertex objects..
 
         """
-        pass
+        ...
 
     def getSequenceFromMask(self, mask: str):
         """This method returns the object or objects in the VertexArray identified using the
@@ -102,7 +102,7 @@ class VertexArray:
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or a sequence of ConstrainedSketchVertex objects..
 
         """
-        pass
+        ...
 
     def getMask(self):
         """This method returns a string specifying the object or objects.
@@ -113,7 +113,7 @@ class VertexArray:
             A String specifying the object or objects.
 
         """
-        pass
+        ...
 
     def getByBoundingBox(
         self,
@@ -148,7 +148,7 @@ class VertexArray:
             A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object, which is a sequence of ConstrainedSketchVertex objects..
 
         """
-        pass
+        ...
 
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
         """This method returns an array of vertex objects that lie within the specified bounding
@@ -171,7 +171,7 @@ class VertexArray:
             A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object, which is a sequence of ConstrainedSketchVertex objects..
 
         """
-        pass
+        ...
 
     def getByBoundingSphere(self, center: tuple, radius: str):
         """This method returns an array of vertex objects that lie within the specified bounding
@@ -190,7 +190,7 @@ class VertexArray:
             A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object, which is a sequence of ConstrainedSketchVertex objects..
 
         """
-        pass
+        ...
 
     def getBoundingBox(self):
         """This method returns a dictionary of two tuples representing minimum and maximum boundary
@@ -207,7 +207,7 @@ class VertexArray:
               values of the bounding box.
 
         """
-        pass
+        ...
 
     def getClosest(self, coordinates: tuple, searchTolerance: str = ""):
         """This method returns a object or objects in the VertexArray closest to the given set of
@@ -240,4 +240,4 @@ class VertexArray:
         Error: The mask results in an empty sequence
             An exception occurs if the resulting sequence is empty.
         """
-        pass
+        ...

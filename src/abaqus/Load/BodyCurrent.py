@@ -79,7 +79,6 @@ class BodyCurrent(Load):
             A :py:class:`~abaqus.Load.BodyCurrent.BodyCurrent` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -104,7 +103,7 @@ class BodyCurrent(Load):
             The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self, stepName: str, magnitude: float = None, amplitude: str = ""
@@ -125,4 +124,4 @@ class BodyCurrent(Load):
             the load is changed to have no amplitude reference. You should provide the **amplitude**
             argument only if it is valid for the specified step.
         """
-        pass
+        ...

@@ -54,15 +54,15 @@ class LoadCase:
         case: LoadCase
             A :py:class:`~abaqus.Load.LoadCase.LoadCase` object
         """
-        pass
+        ...
 
     def resume(self):
         """This method resumes the load case that was previously suppressed."""
-        pass
+        ...
 
     def suppress(self):
         """This method suppresses the load case."""
-        pass
+        ...
 
     def setValues(
         self,
@@ -84,4 +84,4 @@ class LoadCase:
             A Boolean specifying whether to include all active boundary conditions propagated or
             modified from the base state. The default value is ON.
         """
-        pass
+        ...

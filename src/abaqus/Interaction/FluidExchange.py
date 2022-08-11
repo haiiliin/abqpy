@@ -89,7 +89,6 @@ class FluidExchange(Interaction):
             A :py:class:`~abaqus.Interaction.FluidExchange.FluidExchange` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -110,4 +109,4 @@ class FluidExchange(Interaction):
         exchangeArea
             A Float specifying the effective exchange area. The default value is 1.0.
         """
-        pass
+        ...

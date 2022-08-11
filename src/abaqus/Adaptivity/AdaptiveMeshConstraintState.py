@@ -87,4 +87,4 @@ class AdaptiveMeshConstraintState:
             A String specifying the name of the amplitude reference. The String is empty if the  adaptive mesh
             constraint has no amplitude reference.
         """
-        pass
+        ...

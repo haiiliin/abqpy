@@ -35,7 +35,7 @@ class AnimationSession(SessionBase):
             A sequence specifying the canvas objects to capture. The default behavior is to capture
             all canvas objects.
         """
-        pass
+        ...
 
     def Movie(
         self,

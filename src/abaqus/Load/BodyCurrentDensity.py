@@ -75,7 +75,6 @@ class BodyCurrentDensity(Load):
             A :py:class:`~abaqus.Load.BodyCurrentDensity.BodyCurrentDensity` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self, amplitude: str = UNSET, distributionType: SymbolicConstant = UNIFORM
@@ -93,7 +92,7 @@ class BodyCurrentDensity(Load):
             A SymbolicConstant specifying how the load is distributed spatially. Possible values are
             UNIFORM and USER_DEFINED. The default value is UNIFORM.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -123,4 +122,4 @@ class BodyCurrentDensity(Load):
             the load is changed to have no amplitude reference. You should provide the **amplitude**
             argument only if it is valid for the specified step.
         """
-        pass
+        ...

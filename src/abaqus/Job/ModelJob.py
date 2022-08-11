@@ -270,7 +270,7 @@ class ModelJob(Job):
         ModelJob
             A :py:class:`~abaqus.Job.ModelJob.ModelJob` object.
         """
-        pass
+        ...
 
     def writeInput(self, consistencyChecking: Boolean = ON):
         """This method writes an input file.
@@ -282,8 +282,8 @@ class ModelJob(Job):
             value is ON.It is not recommended to turn the consistency checking off unless you are
             absolutely sure the model is consistent.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ModelJob object."""
-        pass
+        ...

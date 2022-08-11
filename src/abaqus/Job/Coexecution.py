@@ -84,7 +84,7 @@ class Coexecution:
 
     def kill(self):
         """This method kills the analysis of a co-execution."""
-        pass
+        ...
 
     def submit(
         self,
@@ -109,7 +109,7 @@ class Coexecution:
             default value is False. The **datacheckJob** and **continueJob** arguments cannot both be
             True.
         """
-        pass
+        ...
 
     def writeInput(self, consistencyChecking: Boolean = ON):
         """This method writes an input file for each analysis in the co-execution.
@@ -121,7 +121,7 @@ class Coexecution:
             The default value is ON. It is not recommended to turn the consistency checking off
             unless you are absolutely sure the models are all consistent.
         """
-        pass
+        ...
 
     def waitForCompletion(self):
         """This method interrupts the execution of the script until the end of all the analyses. If
@@ -129,4 +129,4 @@ class Coexecution:
         RUNNING, Abaqus assumes the analysis has either completed or aborted and returns
         immediately.
         """
-        pass
+        ...
