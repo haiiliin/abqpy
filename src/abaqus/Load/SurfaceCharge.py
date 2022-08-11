@@ -79,7 +79,6 @@ class SurfaceCharge(Load):
             A :py:class:`~abaqus.Load.SurfaceCharge.SurfaceCharge` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

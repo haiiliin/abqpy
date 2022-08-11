@@ -67,7 +67,6 @@ class ArbitraryProfile(Profile):
 
         """
         super().__init__()
-        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ArbitraryProfile object.

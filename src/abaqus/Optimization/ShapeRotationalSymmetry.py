@@ -146,7 +146,6 @@ class ShapeRotationalSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

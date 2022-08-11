@@ -111,7 +111,6 @@ class SelfContactStd(Interaction):
             A :py:class:`~abaqus.Interaction.SelfContactStd.SelfContactStd` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

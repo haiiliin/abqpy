@@ -62,7 +62,6 @@ class XFEMCrackGrowth(Interaction):
             A :py:class:`~abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, allowGrowth: Boolean = ON):
         """This method modifies the data for an existing XFEMCrackGrowth object in the step where

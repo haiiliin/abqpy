@@ -80,7 +80,6 @@ class SizingRotationalSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

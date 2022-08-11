@@ -81,4 +81,3 @@ class MPCSection(Section):
         RangeError and InvalidNameError
         """
         super().__init__()
-        ...

@@ -100,7 +100,6 @@ class ShellSolidCoupling(Constraint):
             A :py:class:`~abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

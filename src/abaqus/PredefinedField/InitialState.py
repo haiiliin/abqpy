@@ -89,7 +89,6 @@ class InitialState(PredefinedField):
             An :py:class:`~abaqus.PredefinedField.InitialState.InitialState` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

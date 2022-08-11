@@ -106,7 +106,6 @@ class MultipointConstraint(Constraint):
             A :py:class:`~abaqus.Constraint.MultipointConstraint.MultipointConstraint` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

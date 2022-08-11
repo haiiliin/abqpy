@@ -90,7 +90,6 @@ class StdXplCosimulation(Interaction):
             A :py:class:`~abaqus.Interaction.StdXplCosimulation.StdXplCosimulation` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

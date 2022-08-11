@@ -69,7 +69,6 @@ class CavityRadiationProp(ContactProperty):
             A :py:class:`~abaqus.Interaction.CavityRadiationProp.CavityRadiationProp` object.
         """
         super().__init__(name)
-        ...
 
     def setValues(
         self,

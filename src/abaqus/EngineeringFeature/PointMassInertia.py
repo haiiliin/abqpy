@@ -162,7 +162,6 @@ class PointMassInertia(Inertia):
             A :py:class:`~abaqus.EngineeringFeature.PointMassInertia.PointMassInertia` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

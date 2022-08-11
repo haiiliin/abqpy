@@ -92,7 +92,6 @@ class BoltLoad(Load):
         TextError
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

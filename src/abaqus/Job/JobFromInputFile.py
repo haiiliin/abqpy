@@ -246,7 +246,6 @@ class JobFromInputFile(Job):
             RESTART of input file job is not currently supported
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

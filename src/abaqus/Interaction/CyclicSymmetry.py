@@ -170,7 +170,6 @@ class CyclicSymmetry(Interaction):
             A :py:class:`~abaqus.Interaction.CyclicSymmetry.CyclicSymmetry` object.
         """
         super().__init__()
-        ...
 
     def swapSurfaces(self):
         """This method switches the main and secondary surfaces of a cyclic symmetry interaction.

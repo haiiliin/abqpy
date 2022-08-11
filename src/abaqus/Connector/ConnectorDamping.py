@@ -187,7 +187,6 @@ class ConnectorDamping(ConnectorBehaviorOption):
         ValueError and TextError
         """
         super().__init__()
-        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorDamping object.

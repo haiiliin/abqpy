@@ -75,7 +75,6 @@ class TopologyOverhangControl(GeometricRestriction):
             A TopologyOverhangControl object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,
