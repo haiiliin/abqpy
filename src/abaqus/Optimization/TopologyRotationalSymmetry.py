@@ -84,7 +84,6 @@ class TopologyRotationalSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

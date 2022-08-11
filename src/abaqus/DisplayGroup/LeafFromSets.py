@@ -43,4 +43,3 @@ class LeafFromSets(Leaf):
             A :py:class:`~abaqus.DisplayGroup.LeafFromSets.LeafFromSets` object.
         """
         super().__init__(DEFAULT_MODEL)
-        ...

@@ -73,7 +73,6 @@ class ShapeMemberSize(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.ShapeMemberSize.ShapeMemberSize` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

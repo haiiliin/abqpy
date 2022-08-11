@@ -57,7 +57,6 @@ class FluidCavityPressure(PredefinedField):
             A :py:class:`~abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the FluidCavityPressure object."""

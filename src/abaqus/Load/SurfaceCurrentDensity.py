@@ -75,7 +75,6 @@ class SurfaceCurrentDensity(Load):
             A :py:class:`~abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self, distributionType: SymbolicConstant = UNIFORM, amplitude: str = UNSET

@@ -355,7 +355,6 @@ class CavityRadiation(Interaction):
             A :py:class:`~abaqus.Interaction.CavityRadiation.CavityRadiation` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

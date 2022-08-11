@@ -164,7 +164,6 @@ class ContourIntegral(Crack):
             A :py:class:`~abaqus.EngineeringFeature.ContourIntegral.ContourIntegral` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

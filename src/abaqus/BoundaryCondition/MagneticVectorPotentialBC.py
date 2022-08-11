@@ -96,7 +96,6 @@ class MagneticVectorPotentialBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

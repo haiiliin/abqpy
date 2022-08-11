@@ -271,7 +271,6 @@ class FluidCavityProperty(ContactProperty):
             A :py:class:`~abaqus.Interaction.FluidCavityProperty.FluidCavityProperty` object.
         """
         super().__init__(name)
-        ...
 
     def setValues(
         self,

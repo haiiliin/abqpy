@@ -90,7 +90,6 @@ class TopologyMillingControl(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.TopologyMillingControl.TopologyMillingControl` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

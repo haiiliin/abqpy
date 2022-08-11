@@ -80,7 +80,6 @@ class SurfacePoreFluid(Load):
             A :py:class:`~abaqus.Load.SurfacePoreFluid.SurfacePoreFluid` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

@@ -81,7 +81,6 @@ class SizingCyclicSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

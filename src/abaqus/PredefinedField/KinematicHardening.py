@@ -113,7 +113,6 @@ class KinematicHardening(PredefinedField):
             A :py:class:`~abaqus.PredefinedField.KinematicHardening.KinematicHardening` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

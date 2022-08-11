@@ -89,7 +89,6 @@ class RetainedNodalDofsBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

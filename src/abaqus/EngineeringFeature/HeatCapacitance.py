@@ -88,7 +88,6 @@ class HeatCapacitance(Inertia):
             A :py:class:`~abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method modifies the HeatCapacitance object.

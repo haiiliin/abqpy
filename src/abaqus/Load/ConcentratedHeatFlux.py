@@ -87,7 +87,6 @@ class ConcentratedHeatFlux(Load):
             A :py:class:`~abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

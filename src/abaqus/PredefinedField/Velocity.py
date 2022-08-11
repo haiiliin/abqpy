@@ -111,7 +111,6 @@ class Velocity(PredefinedField):
             A :py:class:`~abaqus.PredefinedField.Velocity.Velocity` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self, field: str = "", distributionType: SymbolicConstant = MAGNITUDE
