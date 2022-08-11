@@ -31,6 +31,7 @@ Outside Abaqus/CAE, we do not have the same requirement.
 """
 
 from __future__ import annotations
+from typing import Any
 
 # imports
 import re
@@ -116,21 +117,56 @@ Boolean = BooleanType
 class SymbolicConstant(str):
     """
     SymbolicConstant(name <,scdId=-1>)
-        Abaqus/CAE SymbolicConstant implemented in Python.
-        SymbolicConstant('ON'|'OFF') will return an AbaqusBoolean instance.
+    Abaqus/CAE SymbolicConstant implemented in Python.
+    SymbolicConstant('ON'|'OFF') will return an AbaqusBoolean instance.
     """
-
-    def getId(self, *args, **kwargs):  # real signature unknown
-        pass
-
-    def getText(self, *args, **kwargs):  # real signature unknown
-        pass
-
+    
+    def __copy__(self) -> SymbolicConstant:
+        ...
+    
+    def __getstate__(self) -> str:
+        return self.name
+    
+    def __hash__(self) -> int:
+        ...
+       
+    def __init__(self, name:str, scdId:int = -1) -> None:
+        for n in name:
+            if n not in [chr(s) for s in list(range(65,91)) + list(range(48,58))] + ['_']:
+                raise ValueError(f'SymbolicConstant name {name} may only contain upper case, digit or underscore')
+        self.name = name
+    
+    def __lt__(self, other: Any) -> bool:
+        """Sorting method; True if self is < other"""
+        return self < other
+    
+    def __reduce__(self) -> tuple:  # known return case of __reduce__
+        ...
+    
+    def __repr__(self) -> str: 
+        return self.getText()
+    
+    def __setstate__(self, *args) -> None:
+        ...
+    
+    def __str__(self) -> str:
+        return self.name
+    
+    def getId(self) -> int:
+        ...
+    
+    def getText(self) -> str:
+        return self.name
+    
+    @staticmethod 
+    def __new__(cls, *args, **kargs) -> SymbolicConstant:
+        ...
+    
     @classmethod
     def _addToCache(cls, *args, **kwargs):  # real signature unknown
         """
         Helper method for __new__
-                Also used by AbaqusBoolean.__new__
+        Also used by AbaqusBoolean.__new__
         """
         pass
 
