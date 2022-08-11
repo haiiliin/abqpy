@@ -166,12 +166,4 @@ class Job:
         RUNNING, Abaqus assumes the analysis has either completed or aborted and returns
         immediately.
         """
-<<<<<<< HEAD
-        pass
-=======
         ...
-
-    def clearMessage(self):
-        """This method clears **messages** and sets the **status** to NONE."""
-        ...
->>>>>>> 7f9fa3c (Replacing pass statement by Ellipsis object (...))
