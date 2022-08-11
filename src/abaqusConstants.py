@@ -1,3 +1,7 @@
+# encoding: utf-8
+# module abaqusConstantsSupplement
+# from D:\SIMULIA\Abaqus\6.14-4\tools\SMApy\python2.7\lib\site-packages\abaqusConstantsSupplement.pyc
+# by generator 1.147
 """
 abaqusConstantsSupplement.py
 
@@ -5,8 +9,10 @@ This module is included by abaqusConstants and contains SymbolicConstants
 required by ABAQUS that are not defined in C++
 """
 
-from abaqus.UtilityAndView.SymbolicConstant import SymbolicConstant
-
+# imports
+import re as re  # D:\SIMULIA\Abaqus\6.14-4\tools\SMApy\python2.7\lib\re.pyc
+import sys as sys  # <module 'sys' (built-in)>
+import os as os  # D:\SIMULIA\Abaqus\6.14-4\tools\SMApy\python2.7\lib\os.pyc
 
 # Variables with simple values
 
@@ -17,6 +23,9 @@ OFF = 0
 ON = 1
 
 TRUE = True
+
+
+# no functions
 
 
 # variables with complex values
@@ -34,6 +43,50 @@ GUI = None  # (!) real value is 'GUI'
 KERNEL = None  # (!) real value is 'KERNEL'
 
 LATEST = None  # (!) real value is 'LATEST'
+
+
+class SymbolicConstantType(str):
+    """
+    SymbolicConstant(name <,scdId=-1>)
+        Abaqus/CAE SymbolicConstant implemented in Python.
+        SymbolicConstant('ON'|'OFF') will return an AbaqusBoolean instance.
+    """
+
+    def getId(self, *args, **kwargs):  # real signature unknown
+        pass
+
+    def getText(self, *args, **kwargs):  # real signature unknown
+        pass
+
+    @classmethod
+    def _addToCache(cls, *args, **kwargs):  # real signature unknown
+        """
+        Helper method for __new__
+                Also used by AbaqusBoolean.__new__
+        """
+        pass
+
+    __weakref__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    """list of weak references to the object (if defined)"""
+
+    # _cache = {
+    #     'ALL_METHODS': ALL_METHODS,  # (!) forward: ALL_METHODS, real value is 'ALL_METHODS'
+    #     'ALL_TYPES': ALL_TYPES,  # (!) forward: ALL_TYPES, real value is 'ALL_TYPES'
+    #     'BOTH': BOTH,  # (!) forward: BOTH, real value is 'BOTH'
+    #     'EARLIEST': EARLIEST,  # (!) forward: EARLIEST, real value is 'EARLIEST'
+    #     'GUI': GUI,  # (!) forward: GUI, real value is 'GUI'
+    #     'KERNEL': KERNEL,  # (!) forward: KERNEL, real value is 'KERNEL'
+    #     'LATEST': LATEST,  # (!) forward: LATEST, real value is 'LATEST'
+    #     'OFF': 0,
+    #     'ON': 1,
+    #     '_UNSPECIFIED': _UNSPECIFIED,
+    # }
+    _counter = 10
+    _p = None  # (!) real value is '<_sre.SRE_Pattern object at 0x0000000003106D40>'
+    __dict__ = None  # (!) real value is 'dict_proxy({\'__module__\': \'symbolicConstants\', \'__setstate__\': <function __setstate__ at 0x000000000314FDD8>, \'__str__\': <function getText at 0x000000000314FF28>, \'__reduce__\': <function __reduce__ at 0x000000000314FEB8>, \'getText\': <function getText at 0x000000000314FF28>, \'__dict__\': <attribute \'__dict__\' of \'SymbolicConstant\' objects>, \'_cache\': {\'_UNSPECIFIED\': _UNSPECIFIED, \'ON\': ON, \'OFF\': OFF, \'ALL_TYPES\': ALL_TYPES, \'BOTH\': BOTH, \'GUI\': GUI, \'ALL_METHODS\': ALL_METHODS, \'EARLIEST\': EARLIEST, \'KERNEL\': KERNEL, \'LATEST\': LATEST}, \'__lt__\': <function __lt__ at 0x000000000314FC88>, \'__weakref__\': <attribute \'__weakref__\' of \'SymbolicConstant\' objects>, \'__init__\': <function __init__ at 0x000000000314FC18>, \'_counter\': 10, \'__getstate__\': <function __getstate__ at 0x000000000314FD68>, \'__new__\': <staticmethod object at 0x000000000314E678>, \'getId\': <function getId at 0x000000000314FF98>, \'_p\': <_sre.SRE_Pattern object at 0x0000000003106D40>, \'__repr__\': <function getText at 0x000000000314FF28>, \'__hash__\': <function __hash__ at 0x000000000314FCF8>, \'__copy__\': <function __copy__ at 0x000000000314FE48>, \'_addToCache\': <classmethod object at 0x000000000314E5E8>, \'__doc__\': "\\n    SymbolicConstant(name <,scdId=-1>)\\n    Abaqus/CAE SymbolicConstant implemented in Python.\\n    SymbolicConstant(\'ON\'|\'OFF\') will return an AbaqusBoolean instance.\\n    "})'
+    
+    
+SymbolicConstant = SymbolicConstantType
 
 
 A0 = SymbolicConstant('A0')
@@ -2530,3 +2583,4 @@ ZAXIS = SymbolicConstant('ZAXIS')
 ZERO = SymbolicConstant('ZERO')
 ZERO_PRESSURE = SymbolicConstant('ZERO_PRESSURE')
 ZSYMM = SymbolicConstant('ZSYMM')
+# okay decompiling abaqusConstants.pyc
