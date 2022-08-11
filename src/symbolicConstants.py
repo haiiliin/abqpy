@@ -101,7 +101,10 @@ AbaqusBooleanType = AbaqusBoolean
 
 BooleanType = bool
 
-Boolean = BooleanType
+Boolean = AbaqusBoolean
+# It might be `Boolean = BooleanType` here,
+# but all the type annotations functions are using 'Boolean' instead of
+# `AbaqusBoolean`, so this alias may do the job in the type hints warnings
 
 
 class SymbolicConstant(str):
