@@ -30,6 +30,8 @@ function to this module.
 Outside Abaqus/CAE, we do not have the same requirement.
 """
 
+from __future__ import annotations
+
 # imports
 import re
 import sys
@@ -50,46 +52,51 @@ TRUE = True
 class AbaqusBoolean(int):
     """
     AbaqusBoolean is derived from int, and prints as ON or OFF.
-        A call to SymbolicConstant("ON/OFF") will return an AbaqusBoolean instance.
+    A call to SymbolicConstant("ON/OFF") will return an AbaqusBoolean instance.
     """
 
-    def getId(self, *args, **kwargs):  # real signature unknown
-        pass
+    def getId(self) -> int:
+        ...
 
-    def getText(self, *args, **kwargs):  # real signature unknown
-        pass
+    def getText(self) -> str:
+        if bool(self):
+            return 'ON'
+        else:
+            return 'OFF'
 
-    def isTrue(self, *args, **kwargs):  # real signature unknown
-        pass
+    def isTrue(self) -> bool:
+        return bool(self)
 
-    def __copy__(self, *args, **kwargs):  # real signature unknown
-        pass
+    def __copy__(self) -> AbaqusBoolean:
+        ...
+    
+    def __getstate__(self) -> bool:
+        ...
+    
+    def __hash__(self) -> int:
+        ...
 
-    def __getstate__(self, *args, **kwargs):  # real signature unknown
-        pass
-
-    def __hash__(self, *args, **kwargs):  # real signature unknown
-        pass
-
-    def __init__(self, *args, **kwargs):  # real signature unknown
-        pass
+    def __init__(self, value:int) -> None:
+        super().__init__()
+        if value not in (0, 1):
+            raise ValueError(f'AbaqusBoolean must have value argument 0 or 1.  {value} supplied')
 
     @staticmethod  # known case of __new__
     def __new__(cls, *args, **kargs):  # reliably restored by inspect
         # no doc
         pass
 
-    def __reduce__(self, *args, **kwargs):  # real signature unknown
-        pass
+    def __reduce__(self) -> tuple:  # known return case of __reduce__
+        ...
+    
+    def __repr__(self) -> str: 
+        return self.getText()
 
-    def __repr__(self, *args, **kwargs):  # real signature unknown
-        pass
-
-    def __setstate__(self, *args, **kwargs):  # real signature unknown
-        pass
-
-    def __str__(self, *args, **kwargs):  # real signature unknown
-        pass
+    def __setstate__(self, *args) -> None:
+        ...
+    
+    def __str__(self) -> str:
+        return self.getText()
 
     __weakref__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """list of weak references to the object (if defined)"""
