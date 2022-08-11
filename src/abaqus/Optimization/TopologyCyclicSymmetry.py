@@ -86,7 +86,6 @@ class TopologyCyclicSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

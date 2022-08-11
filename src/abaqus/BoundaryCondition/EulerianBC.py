@@ -87,7 +87,6 @@ class EulerianBC(BoundaryCondition):
             An :py:class:`~abaqus.BoundaryCondition.EulerianBC.EulerianBC` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

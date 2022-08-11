@@ -79,7 +79,6 @@ class BodyHeatFlux(Load):
             A :py:class:`~abaqus.Load.BodyHeatFlux.BodyHeatFlux` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

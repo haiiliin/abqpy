@@ -128,7 +128,6 @@ class SubmodelBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.SubmodelBC.SubmodelBC` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

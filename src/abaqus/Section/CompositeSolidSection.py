@@ -72,7 +72,6 @@ class CompositeSolidSection(Section):
             A :py:class:`~abaqus.Section.CompositeSolidSection.CompositeSolidSection` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, symmetric: Boolean = OFF, layupName: str = ""):
         """This method modifies the CompositeSolidSection object.

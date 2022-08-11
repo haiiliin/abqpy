@@ -79,7 +79,6 @@ class SurfaceCurrent(Load):
             A :py:class:`~abaqus.Load.SurfaceCurrent.SurfaceCurrent` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

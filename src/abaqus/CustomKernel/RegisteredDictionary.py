@@ -31,7 +31,6 @@ class RegisteredDictionary(CommandRegister):
             A :py:class:`~abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary` object.
         """
         super().__init__()
-        ...
 
     def Methods(self):
         """The RegisteredDictionary object supports the same methods as a Python dictionary. In

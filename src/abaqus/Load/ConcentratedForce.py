@@ -110,7 +110,6 @@ class ConcentratedForce(Load):
             A :py:class:`~abaqus.Load.ConcentratedForce.ConcentratedForce` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

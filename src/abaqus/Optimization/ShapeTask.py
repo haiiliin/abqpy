@@ -426,7 +426,6 @@ class ShapeTask(OptimizationTask):
             A :py:class:`~abaqus.Optimization.ShapeTask.ShapeTask` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

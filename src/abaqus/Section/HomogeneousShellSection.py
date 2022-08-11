@@ -216,7 +216,6 @@ class HomogeneousShellSection(GeometryShellSection):
             A :py:class:`~abaqus.Section.HomogeneousShellSection.HomogeneousShellSection` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

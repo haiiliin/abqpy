@@ -80,7 +80,6 @@ class InwardVolAccel(Load):
             An :py:class:`~abaqus.Load.InwardVolAccel.InwardVolAccel` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

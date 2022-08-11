@@ -105,7 +105,6 @@ class ExpContactControl(ContactControl):
         RangeError
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

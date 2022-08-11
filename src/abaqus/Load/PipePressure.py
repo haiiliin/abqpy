@@ -102,7 +102,6 @@ class PipePressure(Load):
             A :py:class:`~abaqus.Load.PipePressure.PipePressure` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

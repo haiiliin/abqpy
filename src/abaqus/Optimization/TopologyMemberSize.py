@@ -81,7 +81,6 @@ class TopologyMemberSize(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.TopologyMemberSize.TopologyMemberSize` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

@@ -106,7 +106,6 @@ class MaterialAssignment(PredefinedField):
             A :py:class:`~abaqus.PredefinedField.MaterialAssignment.MaterialAssignment` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

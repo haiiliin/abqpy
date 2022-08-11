@@ -152,7 +152,6 @@ class GeneralStiffnessSection(ShellSection):
             A :py:class:`~abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

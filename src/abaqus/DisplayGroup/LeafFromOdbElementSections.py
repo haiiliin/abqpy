@@ -43,4 +43,3 @@ class LeafFromOdbElementSections(Leaf):
             A :py:class:`~abaqus.DisplayGroup.LeafFromOdbElementSections.LeafFromOdbElementSections` object.
         """
         super().__init__(DEFAULT_MODEL)
-        ...

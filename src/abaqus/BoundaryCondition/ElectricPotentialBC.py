@@ -96,7 +96,6 @@ class ElectricPotentialBC(BoundaryCondition):
             An :py:class:`~abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

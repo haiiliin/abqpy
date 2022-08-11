@@ -103,7 +103,6 @@ class ShapePointSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

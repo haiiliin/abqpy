@@ -45,7 +45,6 @@ class SizingClusterAreas(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.SizingClusterAreas.SizingClusterAreas` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the SizingClusterAreas object."""

@@ -132,7 +132,6 @@ class DiscreteFastener(Fastener):
             A :py:class:`~abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

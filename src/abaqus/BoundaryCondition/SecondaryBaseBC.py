@@ -69,7 +69,6 @@ class SecondaryBaseBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the data for an existing SecondaryBaseBC object in the step where

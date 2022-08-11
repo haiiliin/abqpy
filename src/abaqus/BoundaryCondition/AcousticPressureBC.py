@@ -96,7 +96,6 @@ class AcousticPressureBC(BoundaryCondition):
             An :py:class:`~abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

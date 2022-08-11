@@ -66,7 +66,6 @@ class ExpressionField(AnalyticalField):
         TextException
         """
         super().__init__()
-        ...
 
     def setValues(self, localCsys: str = None, description: str = ""):
         """This method modifies the ExpressionField object.

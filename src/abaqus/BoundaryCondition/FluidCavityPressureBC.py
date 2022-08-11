@@ -80,7 +80,6 @@ class FluidCavityPressureBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self, magnitude: float = 0, amplitude: str = UNSET, fixed: Boolean = OFF

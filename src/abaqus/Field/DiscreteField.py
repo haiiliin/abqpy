@@ -108,7 +108,6 @@ class DiscreteField(Field):
         AbaqusException
         """
         super().__init__()
-        ...
 
     def DiscreteFieldByVolumeFraction(
         self,

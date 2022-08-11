@@ -91,7 +91,6 @@ class CoriolisForce(Load):
             A :py:class:`~abaqus.Load.CoriolisForce.CoriolisForce` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,
