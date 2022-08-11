@@ -208,32 +208,4 @@ class MeshElementArray(list[MeshElement]):
         Error: The mask results in an empty sequence
             An exception occurs if the resulting sequence is empty.
         """
-<<<<<<< HEAD
-        pass
-=======
         ...
-
-    def getExteriorEdges(self):
-        """This method returns the edges on the exterior of the faces in the FaceArray. That is, it
-        returns the edges that are referenced by exactly one of the faces in the sequence.
-
-        Returns
-        -------
-        EdgeArray
-            An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying the exterior edges.
-
-        """
-        ...
-
-    def getExteriorFaces(self):
-        """This method returns the cell faces on the exterior of the CellArray. That is, it returns
-        the faces that are referenced by exactly one of the cells in the sequence.
-
-        Returns
-        -------
-        FaceArray
-            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object representing the faces on the exterior of the cells.
-
-        """
-        ...
->>>>>>> 7f9fa3c (Replacing pass statement by Ellipsis object (...))

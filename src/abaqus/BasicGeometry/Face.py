@@ -269,20 +269,4 @@ class Face:
             A Boolean value of True if the normal is flipped and False if not.
 
         """
-<<<<<<< HEAD
-        pass
-=======
         ...
-
-    def getCADAttributes(self):
-        """This method returns an array of CAD attribute strings associated with the Face when the
-        part was created from CAD data.
-
-        Returns
-        -------
-        list[str]
-            An array of String.
-
-        """
-        ...
->>>>>>> 7f9fa3c (Replacing pass statement by Ellipsis object (...))
