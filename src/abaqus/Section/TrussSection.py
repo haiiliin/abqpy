@@ -61,7 +61,6 @@ class TrussSection(Section):
         RangeError and InvalidNameError
         """
         super().__init__()
-        ...
 
     def setValues(self, area: float = 1):
         """This method modifies the TrussSection object.

@@ -346,7 +346,6 @@ class TopologyTask(OptimizationTask):
             A :py:class:`~abaqus.Optimization.TopologyTask.TopologyTask` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

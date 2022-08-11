@@ -81,7 +81,6 @@ class SelfContactExp(Interaction):
             A :py:class:`~abaqus.Interaction.SelfContactExp.SelfContactExp` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

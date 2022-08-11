@@ -176,7 +176,6 @@ class ConcentratedFilmCondition(Interaction):
             A :py:class:`~abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

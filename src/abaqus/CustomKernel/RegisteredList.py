@@ -30,7 +30,6 @@ class RegisteredList(CommandRegister):
             A :py:class:`~abaqus.CustomKernel.RegisteredList.RegisteredList` object.
         """
         super().__init__()
-        ...
 
     def Methods(self):
         """The RegisteredList object supports the same methods as a standard Python list object."""

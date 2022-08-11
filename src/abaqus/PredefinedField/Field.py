@@ -156,7 +156,6 @@ class Field(PredefinedField):
             A Field object.
         """
         super().__init__()
-        ...
 
     def move(self, fromStepName: str, toStepName: str):
         """This method moves the FieldState object from one step to a different step.

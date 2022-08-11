@@ -100,7 +100,6 @@ class ModelChange(Interaction):
             A :py:class:`~abaqus.Interaction.ModelChange.ModelChange` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

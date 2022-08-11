@@ -79,7 +79,6 @@ class SurfaceHeatFlux(Load):
             A :py:class:`~abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

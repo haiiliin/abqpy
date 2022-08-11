@@ -77,7 +77,6 @@ class Growth(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.Growth.Growth` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

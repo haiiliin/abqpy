@@ -95,7 +95,6 @@ class ConcentrationBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

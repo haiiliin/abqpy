@@ -79,7 +79,6 @@ class BodyCharge(Load):
             A :py:class:`~abaqus.Load.BodyCharge.BodyCharge` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

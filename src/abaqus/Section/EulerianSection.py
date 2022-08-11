@@ -52,7 +52,6 @@ class EulerianSection(Section):
             An :py:class:`~abaqus.Section.EulerianSection.EulerianSection` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the EulerianSection object."""

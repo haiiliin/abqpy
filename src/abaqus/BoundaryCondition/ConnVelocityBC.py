@@ -135,7 +135,6 @@ class ConnVelocityBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

@@ -105,7 +105,6 @@ class SingleTermDesignResponse(DesignResponse):
             A :py:class:`~abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

@@ -95,7 +95,6 @@ class PorePressureBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.PorePressureBC.PorePressureBC` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

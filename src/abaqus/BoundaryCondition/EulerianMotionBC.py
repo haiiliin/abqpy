@@ -262,7 +262,6 @@ class EulerianMotionBC(BoundaryCondition):
             An :py:class:`~abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

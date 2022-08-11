@@ -154,7 +154,6 @@ class ConnDisplacementBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,
