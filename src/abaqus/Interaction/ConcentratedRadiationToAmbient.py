@@ -124,7 +124,6 @@ class ConcentratedRadiationToAmbient(Interaction):
             A :py:class:`~abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

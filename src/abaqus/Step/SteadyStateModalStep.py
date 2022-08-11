@@ -260,7 +260,6 @@ class SteadyStateModalStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

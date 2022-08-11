@@ -121,7 +121,6 @@ class TurnControl(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.TurnControl.TurnControl` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

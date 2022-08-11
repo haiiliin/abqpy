@@ -152,7 +152,6 @@ class ContactExp(Interaction):
             A :py:class:`~abaqus.Interaction.ContactExp.ContactExp` object.
         """
         super().__init__()
-        ...
 
     @typing.overload
     def __init__(
@@ -272,7 +271,6 @@ class ContactExp(Interaction):
             A :py:class:`~abaqus.Interaction.ContactExp.ContactExp` object.
         """
         super().__init__()
-        ...
 
     def __init__(self, *args, **kwargs):
         ...

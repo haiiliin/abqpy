@@ -198,7 +198,6 @@ class Text(Annotation):
 
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

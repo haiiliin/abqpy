@@ -84,7 +84,6 @@ class NonstructuralMass(Inertia):
             A :py:class:`~abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, distribution: SymbolicConstant = MASS_PROPORTIONAL):
         """This method modifies the NonstructuralMass object.

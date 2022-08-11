@@ -146,7 +146,6 @@ class DisplacementBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.DisplacementBC.DisplacementBC` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

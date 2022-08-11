@@ -98,7 +98,6 @@ class TemperatureBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.TemperatureBC.TemperatureBC` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

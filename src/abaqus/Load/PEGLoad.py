@@ -88,7 +88,6 @@ class PEGLoad(Load):
             A :py:class:`~abaqus.Load.PEGLoad.PEGLoad` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

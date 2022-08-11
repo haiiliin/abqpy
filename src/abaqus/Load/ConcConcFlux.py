@@ -79,7 +79,6 @@ class ConcConcFlux(Load):
             A :py:class:`~abaqus.Load.ConcConcFlux.ConcConcFlux` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

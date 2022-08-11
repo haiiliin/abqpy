@@ -118,7 +118,6 @@ class RadiationToAmbient(Interaction):
             A :py:class:`~abaqus.Interaction.RadiationToAmbient.RadiationToAmbient` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

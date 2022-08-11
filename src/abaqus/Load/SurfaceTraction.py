@@ -163,7 +163,6 @@ class SurfaceTraction(Load):
             A :py:class:`~abaqus.Load.SurfaceTraction.SurfaceTraction` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

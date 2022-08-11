@@ -79,7 +79,6 @@ class ConcPoreFluid(Load):
             A :py:class:`~abaqus.Load.ConcPoreFluid.ConcPoreFluid` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

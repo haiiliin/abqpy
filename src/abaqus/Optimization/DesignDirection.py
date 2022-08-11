@@ -129,7 +129,6 @@ class DesignDirection(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.DesignDirection.DesignDirection` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

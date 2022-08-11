@@ -135,7 +135,6 @@ class ShapeDemoldControl(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

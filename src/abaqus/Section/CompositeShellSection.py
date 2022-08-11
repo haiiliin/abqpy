@@ -213,7 +213,6 @@ class CompositeShellSection(GeometryShellSection):
             A :py:class:`~abaqus.Section.CompositeShellSection.CompositeShellSection` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

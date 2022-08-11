@@ -59,7 +59,6 @@ class ActuatorSensorProp(ContactProperty):
             An :py:class:`~abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp` object.
         """
         super().__init__(name)
-        ...
 
     def setValues(self, realProperties: tuple = (), integerProperties: tuple = ()):
         """This method modifies the ActuatorSensorProp object.

@@ -110,7 +110,6 @@ class EmbeddedRegion(Constraint):
             An :py:class:`~abaqus.Constraint.EmbeddedRegion.EmbeddedRegion` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

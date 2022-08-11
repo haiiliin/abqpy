@@ -173,7 +173,6 @@ class CombinedTermDesignResponse(DesignResponse):
             A :py:class:`~abaqus.Optimization.CombinedTermDesignResponse.CombinedTermDesignResponse` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

@@ -77,7 +77,6 @@ class FilmConditionProp(ContactProperty):
             A :py:class:`~abaqus.Interaction.FilmConditionProp.FilmConditionProp` object.
         """
         super().__init__(name)
-        ...
 
     def setValues(
         self,

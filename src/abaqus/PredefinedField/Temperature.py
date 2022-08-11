@@ -160,7 +160,6 @@ class Temperature(PredefinedField):
             A :py:class:`~abaqus.PredefinedField.Temperature.Temperature` object.
         """
         super().__init__()
-        ...
 
     def move(self, fromStepName: str, toStepName: str):
         """This method moves the TemperatureState object from one step to a different step.

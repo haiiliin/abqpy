@@ -111,7 +111,6 @@ class FluidInflatorProperty(ContactProperty):
             A FluidInflatorProperty object.
         """
         super().__init__(name)
-        ...
 
     def setValues(
         self,

@@ -92,7 +92,6 @@ class SubmodelSB(Load):
             A :py:class:`~abaqus.Load.SubmodelSB.SubmodelSB` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

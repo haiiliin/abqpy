@@ -127,7 +127,6 @@ class LocalStopCondition(StopCondition):
             A :py:class:`~abaqus.Optimization.LocalStopCondition.LocalStopCondition` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

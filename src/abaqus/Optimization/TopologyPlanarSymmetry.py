@@ -78,7 +78,6 @@ class TopologyPlanarSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

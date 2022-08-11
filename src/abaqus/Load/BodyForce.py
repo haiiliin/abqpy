@@ -92,7 +92,6 @@ class BodyForce(Load):
             A :py:class:`~abaqus.Load.BodyForce.BodyForce` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,
