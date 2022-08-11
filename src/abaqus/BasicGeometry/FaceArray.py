@@ -101,21 +101,6 @@ class FaceArray:
         """
         ...
 
-<<<<<<< HEAD
-=======
-    def getExteriorEdges(self):
-        """This method returns the edges on the exterior of the faces in the FaceArray. That is, it
-        returns the edges that are referenced by exactly one of the faces in the sequence.
-
-        Returns
-        -------
-        EdgeArray
-            An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying the exterior edges.
-
-        """
-        ...
-
->>>>>>> 7f9fa3c (Replacing pass statement by Ellipsis object (...))
     def getSequenceFromMask(self, mask: str):
         """This method returns the object or objects in the FaceArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to

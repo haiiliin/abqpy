@@ -2029,16 +2029,6 @@ class InteractionModel(
         bondingSet
             A :py:class:`~abaqus.Region.Region.Region` object specifying the slave node sub-set for bonding, used only when the
             contact property CohesiveBehavior option specifies use.
-<<<<<<< HEAD
-=======
-        handedness
-            A SymbolicConstant specifying the bolt handedness formulation. Possible values are RIGHT
-            and LEFT. The default value is RIGHT.
-        normalAdjustment
-            A SymbolicConstant specifying the bolt normal adjustment formulation for all slave
-            nodes. Possible values are UNIFORM AXIAL COMPONENT and LOCATION DEPENDENT. The default
-            value is UNIFORM AXIAL COMPONENT.
->>>>>>> c667dd1 (Rename main to master, secondary to slave for V2016-V2021)
 
         Returns
         -------

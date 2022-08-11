@@ -125,20 +125,4 @@ class Cell:
             A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which is a sequence of MeshElement objects.
 
         """
-<<<<<<< HEAD
-        pass
-=======
         ...
-
-    def getCADAttributes(self):
-        """This method returns an array of CAD attribute strings associated with the cell when the
-        part was created from CAD data.
-
-        Returns
-        -------
-        list[str]
-            An array of String.
-
-        """
-        ...
->>>>>>> 7f9fa3c (Replacing pass statement by Ellipsis object (...))
