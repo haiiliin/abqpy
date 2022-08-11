@@ -1,3 +1,13 @@
+# Variables with simple values
+
+FALSE = False
+
+OFF = 0
+
+ON = 1
+
+TRUE = True
+
 # classes
 
 class AbaqusBooleanType(int):
