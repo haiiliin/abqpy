@@ -190,7 +190,6 @@ class FluidExchangeProperty(ContactProperty):
             A :py:class:`~abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty` object.
         """
         super().__init__(name)
-        ...
 
     def setValues(
         self,

@@ -79,7 +79,6 @@ class ConcCurrent(Load):
             A :py:class:`~abaqus.Load.ConcCurrent.ConcCurrent` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

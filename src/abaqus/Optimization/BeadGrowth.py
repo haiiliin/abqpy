@@ -60,7 +60,6 @@ class BeadGrowth(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.BeadGrowth.BeadGrowth` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, beadGrowth: float = 0, shrink: float = 0):
         """This method modifies the BeadGrowth object.

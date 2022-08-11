@@ -221,7 +221,6 @@ class BeadTask(OptimizationTask):
             A :py:class:`~abaqus.Optimization.BeadTask.BeadTask` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

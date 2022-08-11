@@ -97,7 +97,6 @@ class StdInitialization(ContactInitialization):
         RangeError
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

@@ -96,7 +96,6 @@ class MaterialFlowBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

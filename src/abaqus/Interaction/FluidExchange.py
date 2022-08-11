@@ -89,7 +89,6 @@ class FluidExchange(Interaction):
             A :py:class:`~abaqus.Interaction.FluidExchange.FluidExchange` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

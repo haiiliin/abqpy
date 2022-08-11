@@ -96,7 +96,6 @@ class ConnectorForce(Load):
             A :py:class:`~abaqus.Load.ConnectorForce.ConnectorForce` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

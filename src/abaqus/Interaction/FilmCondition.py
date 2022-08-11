@@ -154,7 +154,6 @@ class FilmCondition(Interaction):
             A :py:class:`~abaqus.Interaction.FilmCondition.FilmCondition` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

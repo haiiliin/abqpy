@@ -70,7 +70,6 @@ class TopologyPointSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry` object.
         """
         super().__init__()
-        ...
 
     def setValues(self, csys: int = None, ignoreFrozenArea: Boolean = OFF):
         """This method modifies the TopologyPointSymmetry object.

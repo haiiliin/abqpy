@@ -95,7 +95,6 @@ class FixedRegion(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.FixedRegion.FixedRegion` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

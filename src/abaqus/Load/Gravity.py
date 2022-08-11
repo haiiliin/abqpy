@@ -88,7 +88,6 @@ class Gravity(Load):
             A :py:class:`~abaqus.Load.Gravity.Gravity` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

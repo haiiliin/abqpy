@@ -54,4 +54,3 @@ class LeafFromGeometry(Leaf):
             If at least one of the sequences is not passed to this method.
         """
         super().__init__(DEFAULT_MODEL)
-        ...

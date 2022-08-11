@@ -95,7 +95,6 @@ class ConnectorMoment(Load):
             A :py:class:`~abaqus.Load.ConnectorMoment.ConnectorMoment` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

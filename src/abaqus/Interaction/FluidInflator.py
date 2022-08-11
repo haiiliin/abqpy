@@ -60,7 +60,6 @@ class FluidInflator(Interaction):
             A FluidInflator object.
         """
         super().__init__()
-        ...
 
     def setValues(self, inflationTimeAmplitude: str = "", massFlowAmplitude: str = ""):
         """This method modifies the FluidInflator object.

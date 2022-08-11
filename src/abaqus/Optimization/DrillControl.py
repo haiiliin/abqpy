@@ -133,7 +133,6 @@ class DrillControl(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.DrillControl.DrillControl` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

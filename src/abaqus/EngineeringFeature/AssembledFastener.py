@@ -128,7 +128,6 @@ class AssembledFastener(Fastener):
             An :py:class:`~abaqus.EngineeringFeature.AssembledFastener.AssembledFastener` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

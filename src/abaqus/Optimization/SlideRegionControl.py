@@ -133,7 +133,6 @@ class SlideRegionControl(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.SlideRegionControl.SlideRegionControl` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

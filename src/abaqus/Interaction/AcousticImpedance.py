@@ -140,7 +140,6 @@ class AcousticImpedance(Interaction):
             An :py:class:`~abaqus.Interaction.AcousticImpedance.AcousticImpedance` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

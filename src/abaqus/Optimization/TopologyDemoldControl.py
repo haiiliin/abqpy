@@ -106,7 +106,6 @@ class TopologyDemoldControl(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl` object.
         """
         super().__init__()
-        ...
 
     def setValues(
         self,

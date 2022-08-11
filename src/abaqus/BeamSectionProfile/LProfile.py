@@ -78,7 +78,6 @@ class LProfile(Profile):
 
         """
         super().__init__()
-        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the LProfile object.
