@@ -218,7 +218,7 @@ class PartInstance:
         PartInstance
             A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
         """
-        pass
+        ...
 
     def InstanceFromBooleanMerge(
         self,
@@ -277,7 +277,7 @@ class PartInstance:
         PartInstance
             A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
         """
-        pass
+        ...
 
     def LinearInstancePattern(
         self,
@@ -327,7 +327,7 @@ class PartInstance:
         tuple[PartInstance]
             A sequence of :py:class:`~abaqus.Assembly.PartInstance.PartInstance` objects.
         """
-        pass
+        ...
 
     def RadialInstancePattern(
         self,
@@ -372,7 +372,7 @@ class PartInstance:
         tuple[PartInstance]
             A sequence of PartInstance objects.
         """
-        pass
+        ...
 
     def checkGeometry(self, detailed: Boolean = OFF, level: int = None):
         """This method checks the validity of the geometry of the part instance and prints a count
@@ -396,7 +396,7 @@ class PartInstance:
         dependent part instance. In this case, this command should be called on the Part
         instead. The geometry of dependent part instances cannot be changed.
         """
-        pass
+        ...
 
     def Contact(
         self,
@@ -430,20 +430,20 @@ class PartInstance:
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def ConvertConstraints(self):
         """This method converts the position constraints of an instance to absolute positions. The
         method deletes the constraint features on the instance but preserves the position in
         space.
         """
-        pass
+        ...
 
     def getPosition(self):
         """This method prints the sum of the translations and rotations applied to the PartInstance
         object.
         """
-        pass
+        ...
 
     def getRotation(self):
         """This method returns a tuple including the point of rotation, axis of rotation, and
@@ -455,7 +455,7 @@ class PartInstance:
             A tuple including the point of rotation, axis of rotation, and rotation angle (in
             degrees).
         """
-        pass
+        ...
 
     def getTranslation(self):
         """This method returns a tuple of three Floats representing translation in the **X**-, **Y**-,
@@ -466,7 +466,7 @@ class PartInstance:
         tuple[float, float, float]
             A tuple of three Floats representing the translation.
         """
-        pass
+        ...
 
     def replace(self, instanceOf: Part, applyConstraints: Boolean = True):
         """This method replaces one instance with an instance of another part.
@@ -481,7 +481,7 @@ class PartInstance:
             is True. A value of False indicates that constraints applies to the instance are deleted
             will be deleted from the feature list.
         """
-        pass
+        ...
 
     def rotateAboutAxis(self, axisPoint: tuple, axisDirection: tuple, angle: float):
         """This method translates an instance by the specified amount.
@@ -497,7 +497,7 @@ class PartInstance:
             A Float specifying the rotation angle in degrees. Use the right-hand rule to determine
             the direction.
         """
-        pass
+        ...
 
     def translate(self, vector: tuple):
         """This method translates an instance by the specified amount.
@@ -507,7 +507,7 @@ class PartInstance:
         vector
             A sequence of three Floats specifying a translation vector.
         """
-        pass
+        ...
 
     def translateTo(
         self,
@@ -540,4 +540,4 @@ class PartInstance:
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...

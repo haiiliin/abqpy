@@ -153,4 +153,4 @@ class DisplayBodyOptions(DGDisplayBodyOptions):
         ------
         RangeError
         """
-        pass
+        ...

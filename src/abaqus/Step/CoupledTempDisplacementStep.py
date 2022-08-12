@@ -349,7 +349,6 @@ class CoupledTempDisplacementStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -451,4 +450,4 @@ class CoupledTempDisplacementStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

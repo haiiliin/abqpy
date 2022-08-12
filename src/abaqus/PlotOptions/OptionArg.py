@@ -127,4 +127,4 @@ class OptionArg:
         ------
         RangeError
         """
-        pass
+        ...

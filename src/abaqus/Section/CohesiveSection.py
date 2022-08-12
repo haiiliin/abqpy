@@ -99,7 +99,6 @@ class CohesiveSection(Section):
         RangeError and InvalidNameError
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -128,4 +127,4 @@ class CohesiveSection(Section):
         ------
         RangeError
         """
-        pass
+        ...

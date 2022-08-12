@@ -65,7 +65,7 @@ class PropertyTable:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, variables: str = ""):
         """This method modifies the PropertyTable object.
@@ -83,7 +83,7 @@ class PropertyTable:
         ------
         RangeError
         """
-        pass
+        ...
 
     def PropertyTableData(
         self,

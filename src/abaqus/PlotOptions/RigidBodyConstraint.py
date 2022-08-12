@@ -21,4 +21,4 @@ class RigidBodyConstraint:
         str
             A String Value: NONE in the absence of constraint data.
         """
-        pass
+        ...

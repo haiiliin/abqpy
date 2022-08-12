@@ -48,15 +48,15 @@ class PredefinedField:
         ------
         TextError
         """
-        pass
+        ...
 
     def resume(self):
         """This method resumes the predefined field that was previously suppressed."""
-        pass
+        ...
 
     def suppress(self):
         """This method suppresses the predefined field."""
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """This method allows you to delete existing fields.
@@ -66,4 +66,4 @@ class PredefinedField:
         indices
             A sequence of Ints specifying the index of each field to delete.
         """
-        pass
+        ...

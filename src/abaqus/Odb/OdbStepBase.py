@@ -165,7 +165,7 @@ class OdbStepBase:
             If **previousStepName** is invalid.
               
         """
-        pass
+        ...
 
     @typing.overload
     def getFrame(self, frameValue: str, match: SymbolicConstant = CLOSEST):
@@ -194,7 +194,7 @@ class OdbStepBase:
         OdbError: Frame not found
             If the OdbFrame object is not found.
         """
-        pass
+        ...
 
     @typing.overload
     def getFrame(self, loadCase: OdbLoadCase):
@@ -215,7 +215,7 @@ class OdbStepBase:
         OdbError: Frame not found
             If the OdbFrame object is not found.
         """
-        pass
+        ...
 
     @typing.overload
     def getFrame(
@@ -249,10 +249,10 @@ class OdbStepBase:
         OdbError: Frame not found
             If the OdbFrame object is not found.
         """
-        pass
+        ...
 
     def getFrame(self, *args, **kwargs):
-        pass
+        ...
 
     def getHistoryRegion(
         self, point: HistoryPoint, loadCase: OdbLoadCase = OdbLoadCase("loadCase")
@@ -277,7 +277,7 @@ class OdbStepBase:
         OdbError: HistoryRegion not found
             If a HistoryRegion object is not found.
         """
-        pass
+        ...
 
     def setDefaultDeformedField(self, field: FieldOutput):
         """This method sets the default deformed field variable in a step.
@@ -287,7 +287,7 @@ class OdbStepBase:
         field
             A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object specifying the default deformed field variable for visualization.
         """
-        pass
+        ...
 
     def setDefaultField(self, field: FieldOutput):
         """This method sets the default field variable in a step.
@@ -297,4 +297,4 @@ class OdbStepBase:
         field
             A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object specifying the default field variable for visualization.
         """
-        pass
+        ...

@@ -263,7 +263,7 @@ class RegionPart(RegionPartBase):
         set: Set
             A :py:class:`~abaqus.Region.Set.Set` object
         """
-        pass
+        ...
 
     @typing.overload
     def Set(self, name: str, objectToCopy: Set) -> Set:
@@ -289,7 +289,7 @@ class RegionPart(RegionPartBase):
         set: Set
             A :py:class:`~abaqus.Region.Set.Set` object
         """
-        pass
+        ...
 
     def Set(self, name, *args, **kwargs) -> Set:
         """This method creates a set from a sequence of objects in a model database.

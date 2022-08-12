@@ -59,7 +59,7 @@ class CastIronTensionHardening:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the CastIronTensionHardening object.
@@ -68,4 +68,4 @@ class CastIronTensionHardening:
         ------
         RangeError
         """
-        pass
+        ...

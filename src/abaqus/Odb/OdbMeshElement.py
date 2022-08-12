@@ -93,4 +93,4 @@ class OdbMeshElement:
         OdbError: *stepName* should be specified with *frameValue*
             If *frameValue* is not provided and *stepName* is empty.
         """
-        pass
+        ...

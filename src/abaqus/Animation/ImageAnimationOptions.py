@@ -41,4 +41,4 @@ class ImageAnimationOptions:
         compass
             A Boolean specifying whether to capture the view compass. The default value is OFF.
         """
-        pass
+        ...

@@ -156,7 +156,6 @@ class Field(PredefinedField):
             A Field object.
         """
         super().__init__()
-        pass
 
     def move(self, fromStepName: str, toStepName: str):
         """This method moves the FieldState object from one step to a different step.
@@ -172,7 +171,7 @@ class Field(PredefinedField):
         ------
             TextError.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -265,7 +264,7 @@ class Field(PredefinedField):
             - If *crossSectionDistribution*=POINTS_THROUGH_SECTION, *magnitudes* is a sequence of
             Doubles specifying the Field at each point.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -347,4 +346,4 @@ class Field(PredefinedField):
             - If *crossSectionDistribution*=POINTS_THROUGH_SECTION, *magnitudes* is a sequence of
             Doubles specifying the Field at each point.
         """
-        pass
+        ...

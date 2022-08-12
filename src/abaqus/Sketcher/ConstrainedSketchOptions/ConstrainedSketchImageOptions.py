@@ -55,4 +55,4 @@ class ConstrainedSketchImageOptions:
         RangeError
 
         """
-        pass
+        ...

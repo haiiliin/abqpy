@@ -25,8 +25,8 @@ class SpringDashpot:
 
     def resume(self):
         """This method resumes the spring/dashpot that was previously suppressed."""
-        pass
+        ...
 
     def suppress(self):
         """This method suppresses the spring/dashpot."""
-        pass
+        ...

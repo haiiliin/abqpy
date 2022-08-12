@@ -48,4 +48,4 @@ class SolverControl:
         ------
         RangeError
         """
-        pass
+        ...

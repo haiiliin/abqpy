@@ -72,7 +72,7 @@ class MeshNodeArray(list[MeshNode]):
         MeshNode
             A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object.
         """
-        pass
+        ...
 
     def getSequenceFromMask(self, mask: str):
         """This method returns the objects in the MeshNodeArray identified using the specified
@@ -89,7 +89,7 @@ class MeshNodeArray(list[MeshNode]):
         MeshNodeArray
             A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
         """
-        pass
+        ...
 
     def getMask(self):
         """This method returns a string specifying the object or objects.
@@ -99,7 +99,7 @@ class MeshNodeArray(list[MeshNode]):
         str
             A String specifying the object or objects.
         """
-        pass
+        ...
 
     def getByBoundingBox(
         self,
@@ -132,7 +132,7 @@ class MeshNodeArray(list[MeshNode]):
         MeshNodeArray
             A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects.
         """
-        pass
+        ...
 
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
         """This method returns an array of node objects that lie within the specified bounding
@@ -153,7 +153,7 @@ class MeshNodeArray(list[MeshNode]):
         MeshNodeArray
             A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects.
         """
-        pass
+        ...
 
     def getByBoundingSphere(self, center: tuple, radius: str):
         """This method returns an array of node objects that lie within the specified bounding
@@ -171,7 +171,7 @@ class MeshNodeArray(list[MeshNode]):
         MeshNodeArray
             A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects.
         """
-        pass
+        ...
 
     def getBoundingBox(self):
         """This method returns a dictionary of two tuples representing minimum and maximum boundary
@@ -190,7 +190,7 @@ class MeshNodeArray(list[MeshNode]):
         Raises
         ------
         """
-        pass
+        ...
 
     def getClosest(
         self, coordinates: str, numToFind: str = 1, searchTolerance: str = ""
@@ -215,7 +215,7 @@ class MeshNodeArray(list[MeshNode]):
             A MeshNode, or a list of MeshNode objects, or a list of lists of MeshNode objects,
             depending on the number of points given and the number of nodes requested.
         """
-        pass
+        ...
 
     def sequenceFromLabels(self, labels: tuple):
         """This method returns the objects in the MeshNodeArray identified using the specified
@@ -236,4 +236,4 @@ class MeshNodeArray(list[MeshNode]):
         Error: The mask results in an empty sequence            
             An exception occurs if the resulting sequence is empty.
         """
-        pass
+        ...

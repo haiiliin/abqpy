@@ -12,4 +12,4 @@ class OdbModelFieldVarList:
             session.viewports[name].odbDisplay.modelVariableList
     """
 
-    pass
+    ...

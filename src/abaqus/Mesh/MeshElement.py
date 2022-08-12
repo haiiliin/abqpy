@@ -81,7 +81,7 @@ class MeshElement:
         element: MeshElement
             A :py:class:`~abaqus.Mesh.MeshElement.MeshElement` object.
         """
-        pass
+        ...
 
     def getNodes(self):
         """This method returns a tuple of node objects of the element.
@@ -91,7 +91,7 @@ class MeshElement:
         tuple[MeshNode, ...]
             A tuple of :py:class:`~abaqus.Mesh.MeshNode.MeshNode` objects.
         """
-        pass
+        ...
 
     def getElemEdges(self):
         """This method returns a tuple of unique element edge objects on the element.
@@ -101,7 +101,7 @@ class MeshElement:
         tuple[MeshEdge, ...]
             A tuple of :py:class:`~abaqus.Mesh.MeshEdge.MeshEdge` objects.
         """
-        pass
+        ...
 
     def getElemFaces(self):
         """This method returns a tuple of unique element face objects on the element.
@@ -111,7 +111,7 @@ class MeshElement:
         tuple[MeshFace, ...]
             A tuple of :py:class:`~abaqus.Mesh.MeshFace.MeshFace` objects.
         """
-        pass
+        ...
 
     def getAdjacentElements(self):
         """This method returns an array of element objects adjacent to the mesh element.
@@ -121,7 +121,7 @@ class MeshElement:
         MeshElementArray
             A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which is a sequence of MeshElement objects.
         """
-        pass
+        ...
 
     def getElementsByFeatureEdge(self, angle: str):
         """This method returns an array of mesh element objects that are obtained by recursively
@@ -138,7 +138,7 @@ class MeshElement:
         MeshElementArray
             A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
         """
-        pass
+        ...
 
     def setValues(self, label: int = None):
         """This method modifies the MeshElement object.
@@ -150,4 +150,4 @@ class MeshElement:
             belongs to an orphan mesh part. The specified label must be non-negative and must not be
             in use by any other element of the same part.
         """
-        pass
+        ...

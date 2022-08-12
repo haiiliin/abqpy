@@ -66,7 +66,7 @@ class HistoryRegion:
         HistoryRegion
             A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
         """
-        pass
+        ...
 
     @typing.overload
     def getSubset(self, variableName: str):
@@ -82,7 +82,7 @@ class HistoryRegion:
         HistoryRegion
             A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
         """
-        pass
+        ...
 
     @typing.overload
     def getSubset(self, start: float):
@@ -99,7 +99,7 @@ class HistoryRegion:
         HistoryRegion
             A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
         """
-        pass
+        ...
 
     @typing.overload
     def getSubset(self, start: float, end: float):
@@ -118,10 +118,10 @@ class HistoryRegion:
         HistoryRegion
             A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
         """
-        pass
+        ...
 
     def getSubset(self, *args, **kwargs):
-        pass
+        ...
 
     def HistoryOutput(
         self,

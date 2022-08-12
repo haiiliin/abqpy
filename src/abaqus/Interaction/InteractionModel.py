@@ -172,7 +172,7 @@ class InteractionModel(
         -------
         None.
         """
-        pass
+        ...
 
     def getSurfaceSeparation(self):
         """This method returns a list of all possible contacts that can be created using the
@@ -189,7 +189,7 @@ class InteractionModel(
           surface.
         - A boolean specifying whether or not contact surfaces are overclosed..
         """
-        pass
+        ...
 
     def AcousticImpedance(
         self,

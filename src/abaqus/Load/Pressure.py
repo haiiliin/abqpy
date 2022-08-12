@@ -93,7 +93,6 @@ class Pressure(Load):
             A :py:class:`~abaqus.Load.Pressure.Pressure` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -123,7 +122,7 @@ class Pressure(Load):
             UNSET should be used if the load has no amplitude reference. The default value is UNSET.
             You should provide the **amplitude** argument only if it is valid for the specified step.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -155,4 +154,4 @@ class Pressure(Load):
             load has no amplitude reference. You should provide the **amplitude** argument only if it
             is valid for the specified step.
         """
-        pass
+        ...

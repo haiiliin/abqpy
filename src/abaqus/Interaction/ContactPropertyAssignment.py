@@ -35,7 +35,7 @@ class ContactPropertyAssignment:
             A String specifying the value of the contact property to be assigned to the domain pair
             whose index is referenced.
         """
-        pass
+        ...
 
     def appendInStep(self, stepName: str, assignments: SymbolicConstant):
         """This method allows addition of contact property assignments to new domain pairs in a
@@ -52,7 +52,7 @@ class ContactPropertyAssignment:
             or the SymbolicConstant GLOBAL.A String specifying a ContactProperty object associated
             with this pair of  regions.
         """
-        pass
+        ...
 
     def delete(self, indices: tuple, surfPair: SymbolicConstant):
         """The delete method allows you to delete existing contact property assignments.
@@ -69,4 +69,4 @@ class ContactPropertyAssignment:
             parameter can also be a string that references an Eulerian material surface. **surfPair**
             and **indices** arguments are mutually exclusive.
         """
-        pass
+        ...

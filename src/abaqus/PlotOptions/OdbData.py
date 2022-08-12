@@ -127,4 +127,4 @@ class OdbData:
             A sequence of (String, Float) sequences specifying the stepName and the stepPeriod.
             Alternatively, this member may take the value ODB_VALUES.
         """
-        pass
+        ...

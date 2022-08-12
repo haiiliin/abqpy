@@ -176,7 +176,6 @@ class ConnectorElasticity(ConnectorBehaviorOption):
         ValueError and TextError
         """
         super().__init__()
-        pass
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorElasticity object.
@@ -185,4 +184,4 @@ class ConnectorElasticity(ConnectorBehaviorOption):
         ------
         ValueError
         """
-        pass
+        ...

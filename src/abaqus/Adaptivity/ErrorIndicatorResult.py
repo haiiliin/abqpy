@@ -51,4 +51,4 @@ class ErrorIndicatorResult(RuleResult):
         ------
         AbaqusException
         """
-        pass
+        ...

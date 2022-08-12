@@ -128,7 +128,6 @@ class AssembledFastener(Fastener):
             An :py:class:`~abaqus.EngineeringFeature.AssembledFastener.AssembledFastener` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -152,4 +151,4 @@ class AssembledFastener(Fastener):
             A String specifying the name of the property generation script. The default value is an
             empty string.
         """
-        pass
+        ...

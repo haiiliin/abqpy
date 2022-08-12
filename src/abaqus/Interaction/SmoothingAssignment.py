@@ -37,7 +37,7 @@ class SmoothingAssignment:
             surface smoothing value to be used for the surface. Possible values of the
             SymbolicConstant are NONE, REVOLUTION, SPHERICAL, and TOROIDAL.
         """
-        pass
+        ...
 
     def appendInStep(self, stepName: str, assignments: SymbolicConstant):
         """This method allows addition of surface smoothing assignments to new surfaces in a given
@@ -55,7 +55,7 @@ class SmoothingAssignment:
             - A SymbolicConstant specifying the surface smoothing value to be used for the surface.
               Possible values of the SymbolicConstant are NONE, REVOLUTION, SPHERICAL, and TOROIDAL.
         """
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing surface smoothing assignments from
@@ -66,4 +66,4 @@ class SmoothingAssignment:
         indices
             A sequence of Ints specifying the index of each surface smoothing assignment to delete.
         """
-        pass
+        ...

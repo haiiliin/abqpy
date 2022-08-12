@@ -108,7 +108,6 @@ class OperatorFilter(Filter):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -144,4 +143,4 @@ class OperatorFilter(Filter):
         ------
         RangeError
         """
-        pass
+        ...
