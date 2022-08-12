@@ -194,8 +194,8 @@ class NormalBehavior:
         NormalBehavior
             A :py:class:`~abaqus.Interaction.NormalBehavior.NormalBehavior` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the NormalBehavior object."""
-        pass
+        ...

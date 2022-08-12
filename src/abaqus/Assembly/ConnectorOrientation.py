@@ -110,8 +110,8 @@ class ConnectorOrientation:
         ConnectorOrientation
             A :py:class:`~abaqus.Assembly.ConnectorOrientation.ConnectorOrientation` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorOrientation object."""
-        pass
+        ...

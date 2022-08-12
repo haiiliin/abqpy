@@ -106,7 +106,7 @@ class DamageStabilization:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the DamageStabilization object.
@@ -115,4 +115,4 @@ class DamageStabilization:
         ------
         RangeError
         """
-        pass
+        ...

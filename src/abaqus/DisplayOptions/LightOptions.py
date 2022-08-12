@@ -109,4 +109,4 @@ class LightOptions:
         ------
         RangeError
         """
-        pass
+        ...

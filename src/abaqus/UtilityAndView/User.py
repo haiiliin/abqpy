@@ -35,7 +35,7 @@ def getInput(prompt: str, default: str = ""):
     str
         A String or None if the user clicks Cancel.
     """
-    pass
+    ...
 
 
 @typing.overload
@@ -77,11 +77,11 @@ def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
         box. If the user clicks the Cancel button, the method returns a sequence of None
         objects.
     """
-    pass
+    ...
 
 
 def getInput(*args, **kwargs):
-    pass
+    ...
 
 
 def getWarningReply(message: str, buttons: str):
@@ -114,4 +114,4 @@ def getWarningReply(message: str, buttons: str):
     -------
     The button that the user clicks.
     """
-    pass
+    ...

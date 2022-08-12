@@ -35,4 +35,4 @@ class OdbLoadCase:
         OdbLoadCase
             An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object.
         """
-        pass
+        ...

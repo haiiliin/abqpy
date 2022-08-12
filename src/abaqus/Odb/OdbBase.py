@@ -99,11 +99,11 @@ class OdbBase:
         Odb
             An :py:class:`~abaqus.Odb.Odb.Odb` object.
         """
-        pass
+        ...
 
     def close(self):
         """This method closes an output database."""
-        pass
+        ...
 
     def getFrame(self, frameValue: str, match: SymbolicConstant = CLOSEST):
         """This method returns the frame at the specified time, frequency, or mode. It will not
@@ -134,7 +134,7 @@ class OdbBase:
         OdbError: Frame not found
             If the exact frame is not found.
         """
-        pass
+        ...
 
     def save(self):
         """This method saves output to an output database (.odb ) file.
@@ -145,7 +145,7 @@ class OdbBase:
             Database save failed. The database was opened as read-only. Modification of data is
             not permitted.
         """
-        pass
+        ...
 
     def update(self):
         """This method is used to update an Odb object in memory while an Abaqus analysis writes
@@ -158,4 +158,4 @@ class OdbBase:
         Boolean
             A Boolean specifying whether additional steps or frames were added to the Odb object.
         """
-        pass
+        ...

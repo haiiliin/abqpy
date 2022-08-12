@@ -190,7 +190,6 @@ class FluidExchangeProperty(ContactProperty):
             A :py:class:`~abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty` object.
         """
         super().__init__(name)
-        pass
 
     def setValues(
         self,
@@ -220,4 +219,4 @@ class FluidExchangeProperty(ContactProperty):
             is applicable only when **definition** = BULK_VISCOSITY, or when
             **definition** = MASS_RATE_LEAK, or when **definition** = VOL_RATE_LEAK. The default value is 0.
         """
-        pass
+        ...

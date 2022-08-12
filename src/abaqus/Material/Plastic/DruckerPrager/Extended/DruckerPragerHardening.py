@@ -73,7 +73,7 @@ class DruckerPragerHardening:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the DruckerPragerHardening object.
@@ -82,4 +82,4 @@ class DruckerPragerHardening:
         ------
         RangeError
         """
-        pass
+        ...

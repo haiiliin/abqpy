@@ -220,4 +220,4 @@ class AxisData:
         ------
         RangeError
         """
-        pass
+        ...

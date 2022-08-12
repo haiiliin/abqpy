@@ -99,7 +99,6 @@ class IProfile(Profile):
 
         """
         super().__init__()
-        pass
 
     def setValues(self, *args, **kwargs):
         """This method modifies the IProfile object.
@@ -109,4 +108,4 @@ class IProfile(Profile):
         RangeError
 
         """
-        pass
+        ...

@@ -89,8 +89,8 @@ class BrittleCracking:
         BrittleCracking
             A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the BrittleCracking object."""
-        pass
+        ...

@@ -438,7 +438,7 @@ class TypeBC(BoundaryCondition):
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         """
-        pass
+        ...
 
     def setValuesInStep(self, stepName: str, typeName: SymbolicConstant = None):
         """This method always returns a value error for a TypeBC; it is inherited from the
@@ -457,4 +457,4 @@ class TypeBC(BoundaryCondition):
         Value Error
             A Symmetry/Antisymmetry/Encastre BC cannot be edited in a propagated step.
         """
-        pass
+        ...

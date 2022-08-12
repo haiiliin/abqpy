@@ -11,4 +11,4 @@ class ContactControl:
             mdb.models[name].contactControls[name]
     """
 
-    pass
+    ...

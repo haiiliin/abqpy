@@ -29,7 +29,7 @@ class MeshEdge:
         tuple[MeshElement, ...]
             A tuple of :py:class:`~abaqus.Mesh.MeshElement.MeshElement` objects.
         """
-        pass
+        ...
 
     def getElementsViaTopology(self, domain: MeshElementArray = MeshElementArray([])):
         """This method returns an array of MeshElement objects that are obtained by recursively
@@ -46,7 +46,7 @@ class MeshEdge:
         MeshElementArray
             A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
         """
-        pass
+        ...
 
     def getNodesViaTopology(self, domain: MeshElementArray = MeshElementArray([])):
         """This method returns an array of MeshNode objects that lie along element edges
@@ -63,7 +63,7 @@ class MeshEdge:
         MeshNodeArray
             A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects.
         """
-        pass
+        ...
 
     def getElemFaces(self):
         """This method returns a tuple of unique MeshFace objects that share the element edge.
@@ -73,7 +73,7 @@ class MeshEdge:
         tuple[MeshFace, ...]
             A tuple of :py:class:`~abaqus.Mesh.MeshFace.MeshFace` objects.
         """
-        pass
+        ...
 
     def getNodes(self):
         """This method returns a tuple of nodes on the element edge.
@@ -83,4 +83,4 @@ class MeshEdge:
         tuple[MeshNode, ...]
             A tuple of :py:class:`~abaqus.Mesh.MeshNode.MeshNode` objects.
         """
-        pass
+        ...

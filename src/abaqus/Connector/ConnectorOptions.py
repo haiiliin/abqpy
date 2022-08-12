@@ -185,7 +185,7 @@ class ConnectorOptions:
         ------
         ValueError and TextError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorOptions object.
@@ -194,4 +194,4 @@ class ConnectorOptions:
         ------
         ValueError
         """
-        pass
+        ...

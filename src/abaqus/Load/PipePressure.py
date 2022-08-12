@@ -102,7 +102,6 @@ class PipePressure(Load):
             A :py:class:`~abaqus.Load.PipePressure.PipePressure` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -131,7 +130,7 @@ class PipePressure(Load):
             A SymbolicConstant specifying whether the pressure is applied internally or externally.
             Possible values are INTERNAL and EXTERNAL. The default value is INTERNAL.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -163,4 +162,4 @@ class PipePressure(Load):
             the load has no amplitude reference. You should provide the **amplitude** argument only if
             it is valid for the specified step.
         """
-        pass
+        ...

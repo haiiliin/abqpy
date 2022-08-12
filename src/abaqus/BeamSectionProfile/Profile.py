@@ -40,4 +40,4 @@ class Profile:
             A list of Profile objects.
 
         """
-        pass
+        ...

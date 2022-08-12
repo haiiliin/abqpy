@@ -71,7 +71,7 @@ class MeshElementArray(list[MeshElement]):
         MeshElement
             A :py:class:`~abaqus.Mesh.MeshElement.MeshElement` object.
         """
-        pass
+        ...
 
     def getSequenceFromMask(self, mask: str):
         """This method returns the objects in the MeshElementArray identified using the specified
@@ -88,7 +88,7 @@ class MeshElementArray(list[MeshElement]):
         MeshElementArray
             A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
         """
-        pass
+        ...
 
     def getMask(self):
         """This method returns a string specifying the object or objects.
@@ -98,7 +98,7 @@ class MeshElementArray(list[MeshElement]):
         str
             A String specifying the object or objects.
         """
-        pass
+        ...
 
     def getByBoundingBox(
         self,
@@ -132,7 +132,7 @@ class MeshElementArray(list[MeshElement]):
         MeshElementArray
             A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
         """
-        pass
+        ...
 
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
         """This method returns an array of element objects that lie within the specified bounding
@@ -153,7 +153,7 @@ class MeshElementArray(list[MeshElement]):
         MeshElementArray
             A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
         """
-        pass
+        ...
 
     def getByBoundingSphere(self, center: tuple, radius: str):
         """This method returns an array of element objects that lie within the specified bounding
@@ -171,7 +171,7 @@ class MeshElementArray(list[MeshElement]):
         MeshElementArray
             A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
         """
-        pass
+        ...
 
     def getBoundingBox(self):
         """This method returns a dictionary of two tuples representing minimum and maximum boundary
@@ -187,7 +187,7 @@ class MeshElementArray(list[MeshElement]):
             - **high**: a tuple of three floats representing the maximum x, y, and z boundary values of
               the bounding box.
         """
-        pass
+        ...
 
     def sequenceFromLabels(self, labels: tuple):
         """This method returns the objects in the MeshElementArray identified using the specified
@@ -208,4 +208,4 @@ class MeshElementArray(list[MeshElement]):
         Error: The mask results in an empty sequence
             An exception occurs if the resulting sequence is empty.
         """
-        pass
+        ...

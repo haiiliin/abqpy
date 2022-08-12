@@ -131,7 +131,7 @@ class Region:
         Region
             A :py:class:`~abaqus.Region.Region.Region` object.
         """
-        pass
+        ...
 
     @typing.overload
     def __init__(
@@ -235,7 +235,7 @@ class Region:
         Region
             A :py:class:`~abaqus.Region.Region.Region` object.
         """
-        pass
+        ...
 
     def __init__(self, *args, **kwargs):
-        pass
+        ...

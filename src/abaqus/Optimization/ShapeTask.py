@@ -426,7 +426,6 @@ class ShapeTask(OptimizationTask):
             A :py:class:`~abaqus.Optimization.ShapeTask.ShapeTask` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -621,4 +620,4 @@ class ShapeTask(OptimizationTask):
             cycle or every design cycle. Possible values are EVERY_CYCLE and FIRST_CYCLE. The
             default value is EVERY_CYCLE.
         """
-        pass
+        ...

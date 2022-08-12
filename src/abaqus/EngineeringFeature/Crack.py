@@ -23,8 +23,8 @@ class Crack:
 
     def resume(self):
         """This method resumes the crack that was previously suppressed."""
-        pass
+        ...
 
     def suppress(self):
         """This method suppresses the crack."""
-        pass
+        ...

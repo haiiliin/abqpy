@@ -83,7 +83,6 @@ class BeadFixedRegion(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.BeadFixedRegion.BeadFixedRegion` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self, csys: int = None, u1: Boolean = OFF, u2: Boolean = OFF, u3: Boolean = OFF
@@ -106,4 +105,4 @@ class BeadFixedRegion(GeometricRestriction):
             A Boolean specifying whether to fix the region in the 3-direction. The default value is
             OFF.
         """
-        pass
+        ...

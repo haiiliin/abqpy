@@ -91,7 +91,6 @@ class CoriolisForce(Load):
             A :py:class:`~abaqus.Load.CoriolisForce.CoriolisForce` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -116,7 +115,7 @@ class CoriolisForce(Load):
             The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self, stepName: str, magnitude: float = None, amplitude: str = ""
@@ -137,4 +136,4 @@ class CoriolisForce(Load):
             the load is changed to have no amplitude reference. You should provide the **amplitude**
             argument only if it is valid for the specified step.
         """
-        pass
+        ...

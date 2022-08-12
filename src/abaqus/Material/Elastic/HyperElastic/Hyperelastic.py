@@ -225,7 +225,7 @@ class Hyperelastic:
         InvalidNameError
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Hyperelastic object.
@@ -234,4 +234,4 @@ class Hyperelastic:
         ------
         RangeError
         """
-        pass
+        ...

@@ -74,7 +74,7 @@ class IgnoredVertexArray:
             An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object or a sequence of IgnoredVertex objects.
 
         """
-        pass
+        ...
 
     def getMask(self):
         """This method returns a string specifying the object or objects.
@@ -85,7 +85,7 @@ class IgnoredVertexArray:
             A String specifying the object or objects.
 
         """
-        pass
+        ...
 
     def getClosest(self, coordinates: tuple, searchTolerance: str = ""):
         """This method returns a object or objects in the IgnoredVertexArray closest to the given
@@ -119,4 +119,4 @@ class IgnoredVertexArray:
         Error: The mask results in an empty sequence
             An exception occurs if the resulting sequence is empty.
         """
-        pass
+        ...

@@ -61,7 +61,7 @@ class TensionCutOff:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the TensionCutOff object.
@@ -70,4 +70,4 @@ class TensionCutOff:
         ------
         RangeError
         """
-        pass
+        ...

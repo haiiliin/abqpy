@@ -198,7 +198,6 @@ class Text(Annotation):
 
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -261,4 +260,4 @@ class Text(Annotation):
             JUSTIFY_LEFT.
 
         """
-        pass
+        ...

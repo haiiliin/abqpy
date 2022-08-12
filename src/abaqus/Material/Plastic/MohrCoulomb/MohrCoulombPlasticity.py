@@ -84,7 +84,7 @@ class MohrCoulombPlasticity:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the MohrCoulombPlasticity object.
@@ -93,4 +93,4 @@ class MohrCoulombPlasticity:
         ------
         RangeError
         """
-        pass
+        ...

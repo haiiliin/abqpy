@@ -138,4 +138,4 @@ class LoadDisplayOptions:
         ------
         RangeError
         """
-        pass
+        ...

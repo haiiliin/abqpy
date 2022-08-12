@@ -60,7 +60,7 @@ class GasketMembraneElastic:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the GasketMembraneElastic object.
@@ -69,4 +69,4 @@ class GasketMembraneElastic:
         ------
         RangeError
         """
-        pass
+        ...

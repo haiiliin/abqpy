@@ -77,7 +77,7 @@ class AreaStyle:
         ------
         ColorError
         """
-        pass
+        ...
 
     def setValues(
         self, color: str = "", fill: Boolean = ON, style: SymbolicConstant = SOLID
@@ -96,4 +96,4 @@ class AreaStyle:
             A SymbolicConstant specifying the area pattern style to be used when filling an area
             using this AreaStyle. The default value is SOLID.
         """
-        pass
+        ...

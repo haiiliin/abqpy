@@ -66,7 +66,7 @@ class GasketTransverseShearElastic:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the GasketTransverseShearElastic object.
@@ -75,4 +75,4 @@ class GasketTransverseShearElastic:
         ------
         RangeError
         """
-        pass
+        ...

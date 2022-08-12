@@ -58,8 +58,7 @@ class AdjustPoints(Constraint):
             An :py:class:`~abaqus.Constraint.AdjustPoints.AdjustPoints` object.
         """
         super().__init__()
-        pass
 
     def setValues(self, *args, **kwargs):
         """This method modifies the AdjustPoints object."""
-        pass
+        ...

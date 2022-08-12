@@ -39,7 +39,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def AddCells(self, faceList: tuple[Face], flipped: Boolean = OFF):
         """This method tries to convert a shell entity to a solid entity. The conversion is not
@@ -67,7 +67,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def AnalyticRigidSurf2DPlanar(self, sketch: ConstrainedSketch):
         """This method creates a first Feature object for an analytical rigid surface by creating a
@@ -90,7 +90,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def AnalyticRigidSurfExtrude(self, sketch: ConstrainedSketch, depth: float = 1):
         """This method creates a first Feature object for an analytical rigid surface by extruding
@@ -115,7 +115,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def AnalyticRigidSurfRevolve(self, sketch: ConstrainedSketch):
         """This method creates a first Feature object for an analytical rigid surface by revolving
@@ -138,7 +138,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def AssignMidsurfaceRegion(self, cellList: tuple[Cell]):
         """This method assign a mid-surface property to sequence of Cell objects. If a reference
@@ -164,7 +164,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def BaseSolidExtrude(
         self,
@@ -209,7 +209,7 @@ class Feature(BaseFeature):
         Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object.
         """
-        pass
+        ...
 
     def BaseSolidRevolve(
         self,
@@ -269,7 +269,7 @@ class Feature(BaseFeature):
         ------
         RangeError
         """
-        pass
+        ...
 
     def BaseSolidSweep(self, sketch: ConstrainedSketch, path: ConstrainedSketch):
         """This method creates a first Feature object by sweeping the given profile
@@ -297,7 +297,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def BaseShell(self, sketch: ConstrainedSketch):
         """This method creates a first Feature object by creating a planar shell from the given
@@ -320,7 +320,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def BaseShellExtrude(
         self,
@@ -369,7 +369,7 @@ class Feature(BaseFeature):
         ------
         RangeError
         """
-        pass
+        ...
 
     def BaseShellRevolve(
         self,
@@ -425,7 +425,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def BaseShellSweep(self, sketch: ConstrainedSketch, path: ConstrainedSketch):
         """This method creates a first Feature object by sweeping the given section
@@ -453,7 +453,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def BaseWire(self, sketch: ConstrainedSketch):
         """This method creates a first Feature object by creating a planar wire from the given
@@ -476,7 +476,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def BlendFaces(
         self,
@@ -519,7 +519,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def Chamfer(self, length: float, edgeList: tuple[Edge]):
         """This method creates an additional Feature object by chamfering the given list of edges
@@ -544,7 +544,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def Mirror(
         self,
@@ -576,7 +576,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def ConvertToAnalytical(self):
         """This method attempts to change entities into a simpler form that will speed up
@@ -594,7 +594,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def ConvertToPrecise(self, method: SymbolicConstant = RECOMPUTE_GEOMETRY):
         """This method attempts to change imprecise entities so that the geometry becomes precise.
@@ -618,7 +618,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def CoverEdges(self, edgeList: tuple[Edge], tryAnalytical: Boolean = False):
         """This method generates a face using the given edges as the face's boundaries. The
@@ -654,7 +654,7 @@ class Feature(BaseFeature):
         Parterror: Cannot construct face geometry
             If the underlying surface is too difficult to fit.
         """
-        pass
+        ...
 
     def Cut(
         self,
@@ -695,7 +695,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def CutExtrude(
         self,
@@ -769,7 +769,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def CutLoft(
         self,
@@ -842,7 +842,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def CutRevolve(
         self,
@@ -911,7 +911,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def CutSweep(
         self,
@@ -1001,7 +1001,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def ExtendFaces(
         self,
@@ -1051,7 +1051,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def FaceFromElementFaces(
         self,
@@ -1095,7 +1095,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def HoleBlindFromEdges(
         self,
@@ -1145,7 +1145,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def HoleFromEdges(
         self,
@@ -1185,7 +1185,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def HoleThruAllFromEdges(
         self,
@@ -1232,7 +1232,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def MergeEdges(self, edgeList: tuple[Edge] = (), extendSelection: Boolean = OFF):
         """This method merges edges either by extending the user selection or using only the
@@ -1259,7 +1259,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def OffsetFaces(
         self,
@@ -1311,7 +1311,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def RemoveCells(self, cellList: tuple[Cell]):
         """This method converts a solid entity to a shell entity.
@@ -1338,7 +1338,7 @@ class Feature(BaseFeature):
         Parterror: ConstrainedSketchGeometry that is not 3-dimensional does not contain cells
             If the intended volume to be turned into a shell entity is not three-dimensional.
         """
-        pass
+        ...
 
     def RemoveFaces(self, faceList: tuple[Face], deleteCells: Boolean = False):
         """This method removes faces from a solid entity or from a shell entity.
@@ -1363,7 +1363,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def RemoveFacesAndStitch(self, faceList: tuple[Face]):
         """This method removes faces from a solid entity and attempts to close the resulting gap by
@@ -1386,7 +1386,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def RemoveRedundantEntities(
         self,
@@ -1424,7 +1424,7 @@ class Feature(BaseFeature):
         Parterror: None of the selected entities are redundant
             If the selected entity is not a redundant entity.
         """
-        pass
+        ...
 
     def RepairFaceNormals(self, faceList: tuple[Face] = ()):
         """This method works on the entire part or a sequence of shell faces. When the entire part
@@ -1449,7 +1449,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def RepairInvalidEdges(self, edgeList: tuple[Edge]):
         """This method repairs invalid edges. It will always attempt to improve edges even if none
@@ -1473,7 +1473,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def RepairSliver(
         self, face: Face, point1: int, point2: int, toleranceChecks: Boolean = True
@@ -1508,7 +1508,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def RepairSmallEdges(self, edgeList: tuple[Edge], toleranceChecks: Boolean = True):
         """This method repairs small edges. This method will attempt to replace selected small
@@ -1535,7 +1535,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def RepairSmallFaces(self, faceList: tuple[Face], toleranceChecks: Boolean = True):
         """This method repairs small faces. It will attempt to replace the selected small faces
@@ -1562,7 +1562,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def ReplaceFaces(self, faceList: tuple[Face], stitch: Boolean = True):
         """This method replaces the selected faces with a single face. If one single face is
@@ -1588,7 +1588,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def Round(self, radius: float, edgeList: tuple[Edge], vertexList: tuple[Vertex]):
         """This method creates an additional Feature object by rounding (filleting) the given list
@@ -1619,7 +1619,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def Shell(
         self,
@@ -1661,7 +1661,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def ShellExtrude(
         self,
@@ -1737,7 +1737,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def ShellLoft(
         self,
@@ -1824,7 +1824,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def ShellRevolve(
         self,
@@ -1899,7 +1899,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def ShellSweep(
         self,
@@ -1993,7 +1993,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def SolidExtrude(
         self,
@@ -2069,7 +2069,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def SolidLoft(
         self,
@@ -2155,7 +2155,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def SolidRevolve(
         self,
@@ -2229,7 +2229,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def SolidSweep(
         self,
@@ -2323,7 +2323,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def Stitch(self, edgeList: tuple[Edge] = (), stitchTolerance: float = None):
         """This method attempts to create a valid part by binding together free and imprecise edges
@@ -2352,7 +2352,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def Wire(
         self,
@@ -2394,7 +2394,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def WireSpline(
         self,
@@ -2438,7 +2438,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def WirePolyLine(
         self,
@@ -2480,7 +2480,7 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def WireFromEdge(self, edgeList: str):
         """This method creates an additional Feature object by creating a Wire by selecting one or
@@ -2503,4 +2503,4 @@ class Feature(BaseFeature):
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...

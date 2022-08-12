@@ -150,8 +150,8 @@ class TangentialBehavior:
         TangentialBehavior
             A :py:class:`~abaqus.Connector.TangentialBehavior.TangentialBehavior` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the TangentialBehavior object."""
-        pass
+        ...

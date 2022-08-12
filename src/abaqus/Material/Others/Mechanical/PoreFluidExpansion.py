@@ -65,7 +65,7 @@ class PoreFluidExpansion:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the PoreFluidExpansion object.
@@ -74,4 +74,4 @@ class PoreFluidExpansion:
         ------
         RangeError
         """
-        pass
+        ...

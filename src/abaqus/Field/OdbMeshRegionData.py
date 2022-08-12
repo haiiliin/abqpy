@@ -301,8 +301,8 @@ class OdbMeshRegionData:
         ------
         TextException
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the OdbMeshRegionData object."""
-        pass
+        ...

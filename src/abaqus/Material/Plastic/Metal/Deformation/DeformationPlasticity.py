@@ -55,7 +55,7 @@ class DeformationPlasticity:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the DeformationPlasticity object.
@@ -64,4 +64,4 @@ class DeformationPlasticity:
         ------
         RangeError
         """
-        pass
+        ...

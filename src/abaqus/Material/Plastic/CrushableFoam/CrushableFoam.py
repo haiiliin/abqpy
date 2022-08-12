@@ -87,7 +87,7 @@ class CrushableFoam:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the CrushableFoam object.
@@ -96,4 +96,4 @@ class CrushableFoam:
         ------
         RangeError
         """
-        pass
+        ...

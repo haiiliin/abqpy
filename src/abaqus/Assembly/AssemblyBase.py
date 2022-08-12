@@ -170,7 +170,7 @@ class AssemblyBase(Feature):
         PartInstance
             A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
         """
-        pass
+        ...
 
     @typing.overload
     def Instance(
@@ -201,7 +201,7 @@ class AssemblyBase(Feature):
         ModelInstance
             A :py:class:`~abaqus.Model.Model.ModelInstance` object.
         """
-        pass
+        ...
 
     def Instance(
         self, name: str, *args, **kwargs
@@ -240,17 +240,17 @@ class AssemblyBase(Feature):
         """This method makes a backup copy of the features in the assembly. The backup() method is
         used in conjunction with the restore() method.
         """
-        pass
+        ...
 
     def clearGeometryCache(self):
         """This method deletes the geometry cache. Deleting the geometry cache reduces the amount
         of memory being used.
         """
-        pass
+        ...
 
     def deleteAllFeatures(self):
         """This method deletes all the features in the assembly."""
-        pass
+        ...
 
     def deleteFeatures(self, featureNames: tuple):
         """This method deletes specified features from the assembly.
@@ -261,7 +261,7 @@ class AssemblyBase(Feature):
             A sequence of Strings specifying the feature names that will be deleted from the
             assembly.
         """
-        pass
+        ...
 
     def excludeFromSimulation(self, instances: tuple[PartInstance], exclude: str):
         """This method excludes the specified part instances from the analysis.
@@ -274,11 +274,11 @@ class AssemblyBase(Feature):
             A Bool specifying whether to exclude the selected instances from the analysis or include
             them.
         """
-        pass
+        ...
 
     def featurelistInfo(self):
         """This method prints the name and status of all the features in the feature lists."""
-        pass
+        ...
 
     def getMassProperties(
         self,
@@ -395,7 +395,7 @@ class AssemblyBase(Feature):
             SUBSTRUCTURE_INCORRECT_PROPERTIES: The user assigned density and thickness is not
             considered for substructures.
         """
-        pass
+        ...
 
     def getAngle(
         self, plane1: str, plane2: str, line1: str, line2: str, commonVertex: str = ""
@@ -430,7 +430,7 @@ class AssemblyBase(Feature):
             A Float specifying the angle between the specified entities. If you provide a plane as
             an argument, Abaqus/CAE computes the angle using the normal to the plane.
         """
-        pass
+        ...
 
     def getCoordinates(self, entity: str):
         """This method returns the coordinates of a specified point.
@@ -445,7 +445,7 @@ class AssemblyBase(Feature):
         tuple[float, float]
             A tuple of three Floats representing the coordinates of the specified point.
         """
-        pass
+        ...
 
     def getDistance(self, entity1: str, entity2: str, printResults: Boolean = OFF):
         """Depending on the arguments provided, this method returns one of the following:
@@ -470,7 +470,7 @@ class AssemblyBase(Feature):
         float
             A Float specifying the calculated distance.
         """
-        pass
+        ...
 
     def getFacesAndVerticesOfAttachmentLines(self, edges: EdgeArray):
         """Given an array of edge objects, this method returns a tuple of dictionary objects. Each
@@ -498,7 +498,7 @@ class AssemblyBase(Feature):
             - **endVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the vertex associated with the other end of the
             attachment line. This end is also associated with the endFace.
         """
-        pass
+        ...
 
     def getSurfaceSections(self, surface: str):
         """This method returns a list of the sections assigned to the regions encompassed by the
@@ -515,7 +515,7 @@ class AssemblyBase(Feature):
             A tuple of strings representing the section names. If no section names are found, the
             tuple will contain one empty string.
         """
-        pass
+        ...
 
     def importEafFile(self, filename: str, ids: tuple = ()):
         """This method imports an assembly from an EAF file into the root assembly.
@@ -530,7 +530,7 @@ class AssemblyBase(Feature):
             **ids** is an empty sequence, all occurrences or parts will be imported. The default value
             is an empty sequence.
         """
-        pass
+        ...
 
     def importParasolidFile(self, filename: str, ids: tuple = ()):
         """This method imports an assembly from the Parasolid file into the root assembly.
@@ -545,7 +545,7 @@ class AssemblyBase(Feature):
             **ids** is an empty sequence, all occurrences or parts will be imported. The default value
             is an empty sequence.
         """
-        pass
+        ...
 
     def importCatiaV5File(self, filename: str, ids: tuple = ()):
         """This method imports an assembly from a CATIA V5 Elysium Neutral file into the root
@@ -562,7 +562,7 @@ class AssemblyBase(Feature):
             **ids** is an empty sequence, all occurrences or parts will be imported. The default value
             is an empty sequence.
         """
-        pass
+        ...
 
     def importEnfFile(self, filename: str, ids: tuple = ()):
         """This method imports an assembly from an Elysium Neutral file created by Pro/ENGINEER,
@@ -579,7 +579,7 @@ class AssemblyBase(Feature):
             **ids** is an empty sequence, all occurrences or parts will be imported. The default value
             is an empty sequence.
         """
-        pass
+        ...
 
     def importIdeasFile(self, filename: str, ids: tuple = ()):
         """This method imports an assembly from an I-DEAS Elysium Neutral file into the root
@@ -596,7 +596,7 @@ class AssemblyBase(Feature):
             **ids** is an empty sequence, all occurrences or parts will be imported. The default value
             is an empty sequence.
         """
-        pass
+        ...
 
     def importProEFile(self, filename: str, ids: tuple = ()):
         """This method imports an assembly from a Pro/ENGINEER Elysium Neutral file into the root
@@ -613,7 +613,7 @@ class AssemblyBase(Feature):
             **ids** is an empty sequence, all occurrences or parts will be imported. The default value
             is an empty sequence.
         """
-        pass
+        ...
 
     def makeDependent(self, instances: tuple[PartInstance]):
         """This method converts the specified part instances from independent to dependent part
@@ -624,7 +624,7 @@ class AssemblyBase(Feature):
         instances
             A sequence of PartInstance objects to convert to dependent part instances.
         """
-        pass
+        ...
 
     def makeIndependent(self, instances: tuple[PartInstance]):
         """This method converts the specified part instances from dependent to independent part
@@ -635,15 +635,15 @@ class AssemblyBase(Feature):
         instances
             A sequence of PartInstance objects to convert to independent part instances.
         """
-        pass
+        ...
 
     def printAssignedSections(self):
         """This method prints a summary of assigned connector sections."""
-        pass
+        ...
 
     def printConnectorOrientations(self):
         """This method prints a summary of connector orientations."""
-        pass
+        ...
 
     def projectReferencesOntoSketch(
         self,
@@ -678,13 +678,13 @@ class AssemblyBase(Feature):
             A sequence of candidate vertices to be projected onto the sketch. By default, all
             vertices are candidates for projection.
         """
-        pass
+        ...
 
     def queryCachedStates(self):
         """This method displays the position of geometric states relative to the sequence of
         features in the assembly cache. The output is displayed in the message area.
         """
-        pass
+        ...
 
     def regenerate(self):
         """This method regenerates the assembly and brings it up to date with the latest values of
@@ -694,22 +694,22 @@ class AssemblyBase(Feature):
         assembly, you should use this command to regenerate the assembly. When you regenerate
         the assembly, it will reflect the changes that you made to the part.
         """
-        pass
+        ...
 
     def regenerationWarnings(self):
         """This method prints any regeneration warnings associated with the features."""
-        pass
+        ...
 
     def restore(self):
         """This method restores the parameters of all features in the assembly to the value they
         had before a failed regeneration. Use the restore method after a failed regeneration,
         followed by a regenerate command.
         """
-        pass
+        ...
 
     def resumeAllFeatures(self):
         """This method resumes all the suppressed features in the part or assembly."""
-        pass
+        ...
 
     def resumeFeatures(self, featureNames: tuple):
         """This method resumes the specified suppressed features in the assembly.
@@ -719,11 +719,11 @@ class AssemblyBase(Feature):
         featureNames
             A sequence of Strings specifying the names of features to resume.
         """
-        pass
+        ...
 
     def resumeLastSetFeatures(self):
         """This method resumes the last set of features to be suppressed in the assembly."""
-        pass
+        ...
 
     def rotate(
         self, instanceList: tuple, axisPoint: tuple, axisDirection: tuple, angle: float
@@ -742,7 +742,7 @@ class AssemblyBase(Feature):
             A Float specifying the rotation angle in degrees. Use the right-hand rule to determine
             the direction.
         """
-        pass
+        ...
 
     def translate(self, instanceList: tuple, vector: tuple):
         """This method translates given instances by the specified amount.
@@ -754,11 +754,11 @@ class AssemblyBase(Feature):
         vector
             A sequence of three Floats specifying a translation vector.
         """
-        pass
+        ...
 
     def saveGeometryCache(self):
         """This method caches the current geometry, which improves regeneration performance."""
-        pass
+        ...
 
     def setValues(self, regenerateConstraintsTogether: Boolean):
         """This method modifies the behavior associated with the specified assembly.
@@ -776,7 +776,7 @@ class AssemblyBase(Feature):
         FeatureError: Regeneration failed
             If one or more features in the assembly fails to regenerate
         """
-        pass
+        ...
 
     def suppressFeatures(self, featureNames: tuple):
         """This method suppresses specified features.
@@ -786,7 +786,7 @@ class AssemblyBase(Feature):
         featureNames
             A sequence of Strings specifying the names of features to suppress in the assembly.
         """
-        pass
+        ...
 
     def unlinkInstances(self, instances: tuple[PartInstance]):
         """This method converts the specified PartInstance objects from linked child instances to
@@ -798,7 +798,7 @@ class AssemblyBase(Feature):
         instances
             A sequence of PartInstance objects to be converted to regular part instances.
         """
-        pass
+        ...
 
     def writeAcisFile(self, fileName: str, version: float = None):
         """This method exports the assembly to a named file in ACIS part (SAT) or assembly (ASAT)
@@ -812,7 +812,7 @@ class AssemblyBase(Feature):
             A Float specifying the ACIS version. For example, the Float 12.0 corresponds to ACIS
             Version 12.0. The default value is the current version of ACIS.
         """
-        pass
+        ...
 
     def writeCADParameters(
         self, paramFile: str, modifiedParams: tuple = (), updatePaths: str = ""
@@ -832,19 +832,19 @@ class AssemblyBase(Feature):
             **parameterFile** to the current directory, if the CAD model is present in the current
             directory.
         """
-        pass
+        ...
 
     def lock(self):
         """This method locks the assembly. Locking the assembly prevents any further changes to the
         assembly that can trigger regeneration of the assembly.
         """
-        pass
+        ...
 
     def unlock(self):
         """This method unlocks the assembly. Unlocking the assembly allows it to be regenerated
         after any modifications to the assembly.
         """
-        pass
+        ...
 
     def setMeshNumberingControl(
         self,
@@ -866,7 +866,7 @@ class AssemblyBase(Feature):
         startElemLabel
             A positive Integer specifying the new start element label.
         """
-        pass
+        ...
 
     def copyMeshPattern(
         self,
@@ -904,7 +904,7 @@ class AssemblyBase(Feature):
             according to index. These coordinates are positions of the nodes of a mesh that will be
             the target face corresponding to nodes provided.
         """
-        pass
+        ...
 
     def smoothNodes(
         self, nodes: tuple[MeshNode] = (), coordinates: tuple[MeshNode] = ()
@@ -920,4 +920,4 @@ class AssemblyBase(Feature):
         coordinates
             A sequence of MeshNode objects or a Set object containing nodes.
         """
-        pass
+        ...

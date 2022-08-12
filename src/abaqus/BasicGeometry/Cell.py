@@ -58,7 +58,7 @@ class Cell:
             A Float.
 
         """
-        pass
+        ...
 
     def getFaces(self):
         """This method returns a sequence consisting of the face IDs of the faces which bound the
@@ -70,7 +70,7 @@ class Cell:
             A tuple of integers.
 
         """
-        pass
+        ...
 
     def getEdges(self):
         """This method returns a sequence consisting of the edge IDs of the edges on the cell.
@@ -81,7 +81,7 @@ class Cell:
             A tuple of integers.
 
         """
-        pass
+        ...
 
     def getVertices(self):
         """This method returns a sequence consisting of the vertex IDs of the vertices on the cell.
@@ -92,7 +92,7 @@ class Cell:
             A tuple of integers.
 
         """
-        pass
+        ...
 
     def getAdjacentCells(self):
         """This method returns an array of cell objects that share at least one face of the cell.
@@ -103,7 +103,7 @@ class Cell:
             A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object which is a sequence of Cell objects.
 
         """
-        pass
+        ...
 
     def getNodes(self):
         """This method returns an array of node objects that are associated with the cell.
@@ -114,7 +114,7 @@ class Cell:
             A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object which is a sequence of MeshNode objects.
 
         """
-        pass
+        ...
 
     def getElements(self):
         """This method returns an array of element objects that are associated with the cell.
@@ -125,4 +125,4 @@ class Cell:
             A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which is a sequence of MeshElement objects.
 
         """
-        pass
+        ...

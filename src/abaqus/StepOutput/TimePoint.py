@@ -50,7 +50,7 @@ class TimePoint:
         InvalidNameError
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the TimePoint object.
@@ -59,4 +59,4 @@ class TimePoint:
         ------
         RangeError
         """
-        pass
+        ...

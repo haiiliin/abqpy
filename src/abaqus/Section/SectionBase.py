@@ -56,4 +56,4 @@ class SectionBase:
         list[Section]
             A list of :py:class:`~abaqus.Section.Section.Section` objects.
         """
-        pass
+        ...

@@ -44,4 +44,4 @@ class Calibration:
         Calibration
             A :py:class:`~abaqus.BoundaryCondition.Calibration.Calibration` object.
         """
-        pass
+        ...
