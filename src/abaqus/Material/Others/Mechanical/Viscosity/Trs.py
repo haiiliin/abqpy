@@ -55,8 +55,8 @@ class Trs:
         Trs
             A :py:class:`~abaqus.Material.Others.Mechanical.Viscosity.Trs.Trs` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Trs object."""
-        pass
+        ...

@@ -51,4 +51,4 @@ class FreeBodyReportOptions:
         FreeBodyReportOptions
             A :py:class:`~abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions` object.
         """
-        pass
+        ...

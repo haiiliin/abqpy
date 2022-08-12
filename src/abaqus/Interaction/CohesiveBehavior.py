@@ -121,8 +121,8 @@ class CohesiveBehavior:
         CohesiveBehavior
             A :py:class:`~abaqus.Interaction.CohesiveBehavior.CohesiveBehavior` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the CohesiveBehavior object."""
-        pass
+        ...

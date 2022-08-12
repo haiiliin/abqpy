@@ -62,7 +62,6 @@ class HomogeneousSolidSection(SolidSection):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(self, thickness: float = 1):
         """This method modifies the HomogeneousSolidSection object.
@@ -77,4 +76,4 @@ class HomogeneousSolidSection(SolidSection):
         ------
         RangeError
         """
-        pass
+        ...

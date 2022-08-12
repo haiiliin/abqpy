@@ -49,4 +49,4 @@ class QuickTimeOptions:
             of the system. The maximum width and height will be at least as large as the screen
             dimensions.
         """
-        pass
+        ...

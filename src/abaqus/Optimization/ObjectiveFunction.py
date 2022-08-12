@@ -62,7 +62,7 @@ class ObjectiveFunction:
         InvalidNameError
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, target: SymbolicConstant = MINIMIZE):
         """This method modifies the ObjectiveFunction object.
@@ -77,4 +77,4 @@ class ObjectiveFunction:
         ------
         RangeError
         """
-        pass
+        ...

@@ -86,7 +86,6 @@ class PeriodicAmplitude(Amplitude):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(self, timeSpan: SymbolicConstant = STEP):
         """This method modifies the PeriodicAmplitude object.
@@ -101,4 +100,4 @@ class PeriodicAmplitude(Amplitude):
         ------
         RangeError
         """
-        pass
+        ...

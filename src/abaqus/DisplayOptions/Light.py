@@ -59,4 +59,4 @@ class Light:
         ------
         RangeError
         """
-        pass
+        ...

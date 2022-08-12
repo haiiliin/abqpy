@@ -57,7 +57,7 @@ class DerivedComponent:
         ------
         ValueError and TextError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the DerivedComponent object.
@@ -66,7 +66,7 @@ class DerivedComponent:
         ------
         ValueError
         """
-        pass
+        ...
 
     def CDCTerm(
         self,

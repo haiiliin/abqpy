@@ -55,8 +55,8 @@ class RebarLayers:
         RebarLayers
             A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the RebarLayers object."""
-        pass
+        ...

@@ -63,7 +63,7 @@ class MeanFieldHomogenization:
         ------
         RangeError
         """
-        pass
+        ...
 
     def MeanFieldInclusion(
         self,
@@ -285,4 +285,4 @@ class MeanFieldHomogenization:
         ------
         RangeError
         """
-        pass
+        ...

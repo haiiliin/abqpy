@@ -64,7 +64,6 @@ class RectangularProfile(Profile):
 
         """
         super().__init__()
-        pass
 
     def setValues(self, *args, **kwargs):
         """This method modifies the RectangularProfile object.
@@ -74,4 +73,4 @@ class RectangularProfile(Profile):
         RangeError
 
         """
-        pass
+        ...

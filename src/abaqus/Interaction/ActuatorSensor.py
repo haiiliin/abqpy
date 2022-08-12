@@ -111,8 +111,7 @@ class ActuatorSensor(Interaction):
             An :py:class:`~abaqus.Interaction.ActuatorSensor.ActuatorSensor` object.
         """
         super().__init__()
-        pass
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ActuatorSensor object."""
-        pass
+        ...

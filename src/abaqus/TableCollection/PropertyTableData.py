@@ -90,7 +90,7 @@ class PropertyTableData:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the PropertyTableData object.
@@ -102,4 +102,4 @@ class PropertyTableData:
         ------
         RangeError
         """
-        pass
+        ...

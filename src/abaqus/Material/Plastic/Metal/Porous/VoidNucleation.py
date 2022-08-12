@@ -60,7 +60,7 @@ class VoidNucleation:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the VoidNucleation object.
@@ -69,4 +69,4 @@ class VoidNucleation:
         ------
         RangeError
         """
-        pass
+        ...

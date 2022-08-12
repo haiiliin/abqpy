@@ -44,7 +44,7 @@ class Calibration:
         Calibration
             A :py:class:`~abaqus.BoundaryCondition.Calibration.Calibration` object.
         """
-        pass
+        ...
 
     def Behavior(self, name: str, typeName: str) -> Behavior:
         """This method creates a Behavior object.

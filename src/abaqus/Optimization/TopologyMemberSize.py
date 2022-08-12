@@ -81,7 +81,6 @@ class TopologyMemberSize(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.TopologyMemberSize.TopologyMemberSize` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -105,4 +104,4 @@ class TopologyMemberSize(GeometricRestriction):
             envelope of both. Possible values are ENVELOPE, MAXIMUM, and MINIMUM. The default value
             is MINIMUM.
         """
-        pass
+        ...

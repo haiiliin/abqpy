@@ -65,7 +65,7 @@ class SpecificHeat:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the SpecificHeat object.
@@ -74,4 +74,4 @@ class SpecificHeat:
         ------
         RangeError
         """
-        pass
+        ...

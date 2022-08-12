@@ -71,7 +71,6 @@ class AcousticInfiniteSection(Section):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(self, thickness: float = 1, order: int = 10):
         """This method modifies the AcousticInfiniteSection object.
@@ -90,4 +89,4 @@ class AcousticInfiniteSection(Section):
         ------
         RangeError
         """
-        pass
+        ...

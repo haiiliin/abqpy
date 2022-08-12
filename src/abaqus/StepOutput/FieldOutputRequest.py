@@ -154,7 +154,7 @@ class FieldOutputRequest:
             written. Possible values are INTEGRATION_POINTS, AVERAGED_AT_NODES, CENTROIDAL, and
             NODES. The default value is INTEGRATION_POINTS.
         """
-        pass
+        ...
 
     def deactivate(self, stepName: str):
         """This method deactivates the field output request in the specified step and all its
@@ -166,7 +166,7 @@ class FieldOutputRequest:
             A String specifying the name of the step in which the field output request is
             deactivated.
         """
-        pass
+        ...
 
     def move(self, fromStepName: str, toStepName: str):
         """This method moves the field output request state object from one step to a different
@@ -181,7 +181,7 @@ class FieldOutputRequest:
             A String specifying the name of the step to which the field output request state is
             moved.
         """
-        pass
+        ...
 
     def reset(self, stepName: str):
         """This method resets the field output request state of the specified step to the state of
@@ -193,15 +193,15 @@ class FieldOutputRequest:
             A String specifying the name of the step in which the field output request state is
             reset.
         """
-        pass
+        ...
 
     def resume(self):
         """This method resumes the field output request that was previously suppressed."""
-        pass
+        ...
 
     def suppress(self):
         """This method suppresses the field output request."""
-        pass
+        ...
 
     def setValues(
         self,
@@ -307,7 +307,7 @@ class FieldOutputRequest:
             written. Possible values are INTEGRATION_POINTS, AVERAGED_AT_NODES, CENTROIDAL, and
             NODES. The default value is INTEGRATION_POINTS.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -351,4 +351,4 @@ class FieldOutputRequest:
             A Boolean specifying when to write results to the output database. The default value is
             OFF.
         """
-        pass
+        ...

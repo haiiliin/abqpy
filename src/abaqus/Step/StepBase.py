@@ -133,8 +133,8 @@ class StepBase:
 
     def resume(self):
         """This method resumes the step that was previously suppressed."""
-        pass
+        ...
 
     def suppress(self):
         """This method suppresses the step."""
-        pass
+        ...

@@ -1,2 +1,2 @@
 class EventSeriesData:
-    pass
+    ...

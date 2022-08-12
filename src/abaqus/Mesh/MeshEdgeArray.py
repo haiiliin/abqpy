@@ -57,7 +57,7 @@ class MeshEdgeArray(list[MeshEdge]):
         Error: The mask results in an empty sequence
             An exception occurs if the resulting sequence is empty.
         """
-        pass
+        ...
 
     def getMask(self):
         """This method returns a string specifying the object or objects.
@@ -67,4 +67,4 @@ class MeshEdgeArray(list[MeshEdge]):
         str
             A String specifying the object or objects.
         """
-        pass
+        ...

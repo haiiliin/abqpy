@@ -103,7 +103,6 @@ class EquallySpacedAmplitude(Amplitude):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -131,4 +130,4 @@ class EquallySpacedAmplitude(Amplitude):
         ------
         RangeError
         """
-        pass
+        ...

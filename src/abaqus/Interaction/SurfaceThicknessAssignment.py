@@ -46,7 +46,7 @@ class SurfaceThicknessAssignment:
             - A Float specifying a scale factor that multiplies the thickness value specified in the
               second entry.
         """
-        pass
+        ...
 
     def appendInStep(
         self, stepName: str, assignments: typing.Union[SymbolicConstant, float]
@@ -72,7 +72,7 @@ class SurfaceThicknessAssignment:
             - A Float specifying a scale factor that multiplies the thickness value specified in the
               second entry.
         """
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing surface thickness assignments.
@@ -82,4 +82,4 @@ class SurfaceThicknessAssignment:
         indices
             A sequence of Ints specifying the index of each surface thickness assignment to delete.
         """
-        pass
+        ...

@@ -51,7 +51,7 @@ class EventSeriesType:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, fields: str = ""):
         """This method modifies the EventSeriesType object.
@@ -68,4 +68,4 @@ class EventSeriesType:
         ------
         RangeError
         """
-        pass
+        ...

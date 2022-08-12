@@ -90,7 +90,6 @@ class TopologyMillingControl(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.TopologyMillingControl.TopologyMillingControl` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -116,4 +115,4 @@ class TopologyMillingControl(GeometricRestriction):
             A Float specifying the radius for the collision check during the removal of the elements
             for the milling criteria.
         """
-        pass
+        ...

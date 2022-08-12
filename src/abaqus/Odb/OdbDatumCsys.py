@@ -76,7 +76,7 @@ class OdbDatumCsys:
         OdbDatumCsys
             An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
-        pass
+        ...
 
     def DatumCsysByThreeNodes(
         self,
@@ -119,7 +119,7 @@ class OdbDatumCsys:
         OdbDatumCsys
             An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
-        pass
+        ...
 
     def DatumCsysByThreeCircNodes(
         self,
@@ -162,7 +162,7 @@ class OdbDatumCsys:
         OdbDatumCsys
             An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
-        pass
+        ...
 
     def DatumCsysBy6dofNode(
         self, name: str, coordSysType: SymbolicConstant, origin: OdbMeshNode
@@ -196,7 +196,7 @@ class OdbDatumCsys:
         OdbDatumCsys
             An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
-        pass
+        ...
 
     def DatumCsys(self, name: str, datumCsys: "OdbDatumCsys"):
         """This method copies oneOdbDatumCsys object to a new OdbDatumCsys object.
@@ -220,7 +220,7 @@ class OdbDatumCsys:
         OdbDatumCsys
             An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
-        pass
+        ...
 
     def globalToLocal(
         self, coordinates: tuple[float, float, float]
@@ -238,7 +238,7 @@ class OdbDatumCsys:
         tuple[float, float, float]
             A tuple of three Floats representing the coordinates in this local coordinate system.
         """
-        pass
+        ...
 
     def localToGlobal(
         self, coordinates: tuple[float, float, float]
@@ -255,4 +255,4 @@ class OdbDatumCsys:
         tuple[float, float, float]
             A tuple of three Floats representing the coordinates in this global coordinate system.
         """
-        pass
+        ...

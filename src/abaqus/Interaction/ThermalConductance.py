@@ -143,8 +143,8 @@ class ThermalConductance:
         ThermalConductance
             A :py:class:`~abaqus.Interaction.ThermalConductance.ThermalConductance` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ThermalConductance object."""
-        pass
+        ...

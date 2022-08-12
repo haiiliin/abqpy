@@ -48,8 +48,8 @@ class MoistureSwelling:
         MoistureSwelling
             A :py:class:`~abaqus.Material.Others.PoreFluidFlow.MoistureSwelling.MoistureSwelling.MoistureSwelling` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the MoistureSwelling object."""
-        pass
+        ...

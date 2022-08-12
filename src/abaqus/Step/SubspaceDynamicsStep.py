@@ -223,7 +223,6 @@ class SubspaceDynamicsStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -262,4 +261,4 @@ class SubspaceDynamicsStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

@@ -166,7 +166,7 @@ class Viscoelastic:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Viscoelastic object.
@@ -175,4 +175,4 @@ class Viscoelastic:
         ------
         RangeError
         """
-        pass
+        ...

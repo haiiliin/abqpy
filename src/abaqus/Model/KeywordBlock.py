@@ -44,7 +44,7 @@ class KeywordBlock:
             edited=False will set the **sieBlocks** member to an empty tuple, thereby discarding all
             previous edits.
         """
-        pass
+        ...
 
     def insert(self, position: int, text: str):
         """This method inserts a String at a specified position in the **sieBlocks** member.
@@ -62,7 +62,7 @@ class KeywordBlock:
         ------
         IndexError
         """
-        pass
+        ...
 
     def replace(self, position: int, text: str):
         """This method replaces a String at a specified position in the **sieBlocks** member.
@@ -79,7 +79,7 @@ class KeywordBlock:
         ------
         IndexError
         """
-        pass
+        ...
 
     def synchVersions(self, storeNodesAndElements: Boolean):
         """This method synchronizes, or merges, the edits made in this object with those made in
@@ -109,4 +109,4 @@ class KeywordBlock:
         ------
         IndexError
         """
-        pass
+        ...

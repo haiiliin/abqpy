@@ -41,7 +41,7 @@ class AttributeColorMap:
 
     def setDefaults(self):
         """This method resets the AttributeColorMap object to its default state."""
-        pass
+        ...
 
     def setValues(self, overrides: dict = None, defaultOverrides: dict = None):
         """This method modifies the AttributeColorMap object.
@@ -60,7 +60,7 @@ class AttributeColorMap:
                                 '#00FF00')}`The color mapping can contain keys that have not been
             created. When the key is created, it gets the appropriate values from this mapping.
         """
-        pass
+        ...
 
     def updateOverrides(self, overrides: dict = None, defaultOverrides: dict = None):
         """This method specifies additional overrides to be added to the current object definition.
@@ -79,4 +79,4 @@ class AttributeColorMap:
                                 '#00FF00')}`The color mapping can contain keys that have not been
             created. When the key is created, it gets the appropriate values from this mapping.
         """
-        pass
+        ...

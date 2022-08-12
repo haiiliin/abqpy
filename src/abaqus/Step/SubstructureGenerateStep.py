@@ -305,7 +305,6 @@ class SubstructureGenerateStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -390,4 +389,4 @@ class SubstructureGenerateStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

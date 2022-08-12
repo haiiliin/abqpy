@@ -48,8 +48,8 @@ class PorousBulkModuli:
         PorousBulkModuli
             A :py:class:`~abaqus.Material.Others.PoreFluidFlow.PorousBulkModuli.PorousBulkModuli` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the PorousBulkModuli object."""
-        pass
+        ...

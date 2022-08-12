@@ -49,7 +49,7 @@ class ParameterTable:
         ParameterTable
             A :py:class:`~abaqus.TableCollection.ParameterTable.ParameterTable` object.
         """
-        pass
+        ...
 
     def Column(
         self,

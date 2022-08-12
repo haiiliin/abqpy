@@ -177,4 +177,4 @@ class CompositePly:
         ------
         AbaqusException
         """
-        pass
+        ...

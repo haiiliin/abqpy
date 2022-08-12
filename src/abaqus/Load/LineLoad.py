@@ -97,7 +97,6 @@ class LineLoad(Load):
             A :py:class:`~abaqus.Load.LineLoad.LineLoad` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -138,7 +137,7 @@ class LineLoad(Load):
             A SymbolicConstant specifying whether the load is applied in a global or the beam local
             frame of reference. Possible values are GLOBAL and LOCAL. The default value is GLOBAL.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -173,4 +172,4 @@ class LineLoad(Load):
             the load is changed to have no amplitude reference. You should provide the **amplitude**
             argument only if it is valid for the specified step.
         """
-        pass
+        ...

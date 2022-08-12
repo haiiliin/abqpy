@@ -31,7 +31,7 @@ class Interaction:
         stepName
             A String specifying the name of the step in which the interaction is deactivated.
         """
-        pass
+        ...
 
     def move(self, fromStepName: str, toStepName: str):
         """This method moves an interaction from one step to another.
@@ -43,7 +43,7 @@ class Interaction:
         toStepName
             A String specifying the name of the step to which to move the interaction.
         """
-        pass
+        ...
 
     def reset(self, stepName: str):
         """This method reactivates an interaction that was deactivated previously. The reset method
@@ -54,15 +54,15 @@ class Interaction:
         stepName
             A String specifying the name of the step in which the interaction is reactivated.
         """
-        pass
+        ...
 
     def resume(self):
         """This method resumes an interaction that was previously suppressed."""
-        pass
+        ...
 
     def suppress(self):
         """This method suppresses an interaction."""
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """This method allows you to delete existing interactions.
@@ -72,4 +72,4 @@ class Interaction:
         indices
             A sequence of Ints specifying the index of each interaction to delete.
         """
-        pass
+        ...

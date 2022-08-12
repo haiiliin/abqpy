@@ -246,7 +246,6 @@ class JobFromInputFile(Job):
             RESTART of input file job is not currently supported
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -337,4 +336,4 @@ class JobFromInputFile(Job):
             value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
             available.
         """
-        pass
+        ...

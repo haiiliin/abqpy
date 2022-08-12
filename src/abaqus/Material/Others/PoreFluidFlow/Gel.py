@@ -44,8 +44,8 @@ class Gel:
         Gel
             A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Gel.Gel` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Gel object."""
-        pass
+        ...

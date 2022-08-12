@@ -320,4 +320,4 @@ class SymbolOptions(DGSymbolOptions):
         ------
         RangeError
         """
-        pass
+        ...

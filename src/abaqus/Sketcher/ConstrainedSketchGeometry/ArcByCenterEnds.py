@@ -43,4 +43,4 @@ class ArcByCenterEnds(ConstrainedSketchGeometry):
         If incompatible data are given, the second endpoint is ignored.
 
         """
-        pass
+        ...

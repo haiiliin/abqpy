@@ -27,7 +27,7 @@ class OdbSequenceAnalyticSurfaceSegment:
         OdbSequenceAnalyticSurfaceSegment
             An :py:class:`~abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment` object.
         """
-        pass
+        ...
 
     def Start(self, origin: tuple):
         """This method adds a AnalyticSurfaceSegment describing the first segment of the surface
@@ -38,7 +38,7 @@ class OdbSequenceAnalyticSurfaceSegment:
         origin
             A sequence of Floats specifying the coordinates of start point.
         """
-        pass
+        ...
 
     def Line(self, endPoint: tuple):
         """This method adds a AnalyticSurfaceSegment describing the line segment of the surface
@@ -49,7 +49,7 @@ class OdbSequenceAnalyticSurfaceSegment:
         endPoint
             A sequence of Floats specifying the coordinates of end point.
         """
-        pass
+        ...
 
     def Circle(self, center: tuple, endPoint: tuple):
         """This method adds a AnalyticSurfaceSegment describing a circular segment of the surface
@@ -62,7 +62,7 @@ class OdbSequenceAnalyticSurfaceSegment:
         endPoint
             A sequence of Floats specifying the coordinates of end point of the circular segment.
         """
-        pass
+        ...
 
     def Parabola(self, middlePoint: tuple, endPoint: tuple):
         """This method adds a AnalyticSurfaceSegment describing a parabolic segment of the surface
@@ -76,4 +76,4 @@ class OdbSequenceAnalyticSurfaceSegment:
         endPoint
             A sequence of Floats specifying the coordinates of end point of the parabolic segment.
         """
-        pass
+        ...
