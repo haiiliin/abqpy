@@ -13,4 +13,4 @@ class OdbFieldVarList(list[str]):
             session.viewports[name].odbDisplay.fieldVariables
     """
 
-    pass
+    ...

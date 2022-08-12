@@ -87,7 +87,6 @@ class DebondVCCT(Crack):
             A :py:class:`~abaqus.EngineeringFeature.DebondVCCT.DebondVCCT` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -106,4 +105,4 @@ class DebondVCCT(Crack):
             An Int specifying the frequency at which output will be printed to DAT file. The default
             value is 1.
         """
-        pass
+        ...

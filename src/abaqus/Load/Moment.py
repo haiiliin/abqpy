@@ -110,7 +110,6 @@ class Moment(Load):
             A :py:class:`~abaqus.Load.Moment.Moment` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -157,7 +156,7 @@ class Moment(Load):
             The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -192,4 +191,4 @@ class Moment(Load):
             the load is changed to have no amplitude reference. You should provide the **amplitude**
             argument only if it is valid for the specified step.
         """
-        pass
+        ...

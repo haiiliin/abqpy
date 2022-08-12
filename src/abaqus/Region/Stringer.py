@@ -55,7 +55,7 @@ class Stringer:
         Stringer
             A :py:class:`~abaqus.Region.Stringer.Stringer` object.
         """
-        pass
+        ...
 
     def EditStringer(
         self, name: str, edges: tuple[Edge] = (), elementEdges: tuple[MeshEdge] = ()
@@ -86,4 +86,4 @@ class Stringer:
         Stringer
             A :py:class:`~abaqus.Region.Stringer.Stringer` object.
         """
-        pass
+        ...

@@ -74,7 +74,7 @@ class BrittleFailure:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the BrittleFailure object.
@@ -83,4 +83,4 @@ class BrittleFailure:
         ------
         RangeError
         """
-        pass
+        ...

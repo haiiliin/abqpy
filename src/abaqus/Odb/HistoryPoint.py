@@ -106,7 +106,7 @@ class HistoryPoint:
         HistoryPoint
             A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
         """
-        pass
+        ...
 
     def __init__(
         self,
@@ -162,7 +162,7 @@ class HistoryPoint:
         HistoryPoint
             A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
         """
-        pass
+        ...
 
     def __init__(self, region: OdbSet):
         """This method creates a HistoryPoint object for a region.
@@ -184,7 +184,7 @@ class HistoryPoint:
         HistoryPoint
             A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
         """
-        pass
+        ...
 
     def __init__(self, assembly: OdbAssembly):
         """This method creates a HistoryPoint object for the OdbAssembly object.
@@ -206,7 +206,7 @@ class HistoryPoint:
         HistoryPoint
             A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
         """
-        pass
+        ...
 
     def __init__(self, instance: OdbInstance):
         """This method creates a HistoryPoint object for the OdbInstance object.
@@ -228,7 +228,7 @@ class HistoryPoint:
         HistoryPoint
             A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
         """
-        pass
+        ...
 
     def __init__(self, *args, **kwargs):
-        pass
+        ...

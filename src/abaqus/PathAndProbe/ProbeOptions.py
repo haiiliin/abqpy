@@ -193,4 +193,4 @@ class ProbeOptions:
             point on the curve. When **interpolateXy** = ON, probing interpolates data to return a value
             at the nearest point on the curve. The default value is OFF.
         """
-        pass
+        ...

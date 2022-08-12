@@ -47,4 +47,4 @@ class MesherOptions:
             A Boolean specifying whether Abaqus/CAE should attempt to minimize the mesh transition
             when it moves from a coarse mesh to a fine mesh. The default value is ON.
         """
-        pass
+        ...

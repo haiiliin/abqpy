@@ -213,7 +213,6 @@ class MappedField(AnalyticalField):
         AbaqusException
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -304,4 +303,4 @@ class MappedField(AnalyticalField):
         description
             A String specifying the description of the field. The default value is an empty string.
         """
-        pass
+        ...

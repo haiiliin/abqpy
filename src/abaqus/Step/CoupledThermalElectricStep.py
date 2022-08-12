@@ -299,7 +299,6 @@ class CoupledThermalElectricStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -376,4 +375,4 @@ class CoupledThermalElectricStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

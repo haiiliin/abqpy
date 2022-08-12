@@ -47,7 +47,7 @@ class LatentHeat:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the LatentHeat object.
@@ -56,4 +56,4 @@ class LatentHeat:
         ------
         RangeError
         """
-        pass
+        ...

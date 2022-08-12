@@ -146,4 +146,4 @@ class SectionLayer:
         SectionLayer
             A :py:class:`~abaqus.Section.SectionLayer.SectionLayer` object.
         """
-        pass
+        ...

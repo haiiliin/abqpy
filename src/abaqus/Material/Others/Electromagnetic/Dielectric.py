@@ -90,8 +90,8 @@ class Dielectric:
         Dielectric
             A :py:class:`~abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Dielectric object."""
-        pass
+        ...

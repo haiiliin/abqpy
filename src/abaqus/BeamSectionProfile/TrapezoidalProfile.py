@@ -74,7 +74,6 @@ class TrapezoidalProfile(Profile):
 
         """
         super().__init__()
-        pass
 
     def setValues(self, *args, **kwargs):
         """This method modifies the TrapezoidalProfile object.
@@ -84,4 +83,4 @@ class TrapezoidalProfile(Profile):
         RangeError
 
         """
-        pass
+        ...

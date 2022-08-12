@@ -64,8 +64,8 @@ class CyclicHardening:
         CyclicHardening
             A :py:class:`~abaqus.Material.Plastic.Metal.Cyclic.CyclicHardening.CyclicHardening` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the CyclicHardening object."""
-        pass
+        ...

@@ -75,7 +75,7 @@ class UserMaterial:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the UserMaterial object.
@@ -84,4 +84,4 @@ class UserMaterial:
         ------
         RangeError
         """
-        pass
+        ...

@@ -201,7 +201,6 @@ class EmagTimeHarmonicStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(
         self, description: str = "", factorization: SymbolicConstant = COMPLEX
@@ -221,4 +220,4 @@ class EmagTimeHarmonicStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

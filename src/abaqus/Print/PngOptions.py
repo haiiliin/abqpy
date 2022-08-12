@@ -16,7 +16,7 @@ class PngOptions:
         Raises
         ------
         """
-        pass
+        ...
 
     def setValues(self, imageSize: SymbolicConstant = SIZE_ON_SCREEN):
         """This method modifies the PngOptions object.
@@ -44,4 +44,4 @@ class PngOptions:
               RangeError: imageSize must be SIZE_ON_SCREEN or a sequence of 2 Ints in the range
             (minWidth, minHeight) <= (width, height) <= (maxWidth, maxHeight).
         """
-        pass
+        ...

@@ -41,7 +41,7 @@ class EngineeringFeatureBase:
             A sequence of Region objects specifying the domain of the seam crack. The Region objects
             must be faces or edges.
         """
-        pass
+        ...
 
     def deleteSeam(self, regions: tuple[Region]):
         """This method deletes a seam crack.
@@ -52,4 +52,4 @@ class EngineeringFeatureBase:
             A sequence of Region objects specifying the domain of the seam crack. The Region objects
             must be faces or edges.
         """
-        pass
+        ...

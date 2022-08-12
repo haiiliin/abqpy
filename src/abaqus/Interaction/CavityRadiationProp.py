@@ -69,7 +69,6 @@ class CavityRadiationProp(ContactProperty):
             A :py:class:`~abaqus.Interaction.CavityRadiationProp.CavityRadiationProp` object.
         """
         super().__init__(name)
-        pass
 
     def setValues(
         self,
@@ -90,4 +89,4 @@ class CavityRadiationProp(ContactProperty):
             ϵϵ.Temperature, if the data depend on temperature.Value of the first field variable, if
             the data depend on field variables.Value of the second field variable.Etc.
         """
-        pass
+        ...

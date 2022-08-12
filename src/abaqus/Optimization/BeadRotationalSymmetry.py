@@ -74,7 +74,6 @@ class BeadRotationalSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry` object.
         """
         super().__init__()
-        pass
 
     def setValues(self, axis: SymbolicConstant = AXIS_1, csys: int = None):
         """This method modifies the BeadRotationalSymmetry object.
@@ -89,4 +88,4 @@ class BeadRotationalSymmetry(GeometricRestriction):
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         """
-        pass
+        ...

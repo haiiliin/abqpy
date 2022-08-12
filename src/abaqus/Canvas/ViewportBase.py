@@ -310,23 +310,23 @@ class ViewportBase:
             - If **height** is out of range:
               RangeError: height must be a Float in the range: 30 <= width <= **maxHeight**
         """
-        pass
+        ...
 
     def bringToFront(self):
         """This method moves the Viewport object to the front."""
-        pass
+        ...
 
     def disableMultipleColors(self):
         """This method disables applying multiple color mappings that was enabled using
         enableMultipleColors
         """
-        pass
+        ...
 
     def disableRefresh(self):
         """This method disables Viewport refresh. Some methods that require the Viewport to be
         up-to-date will override this setting. It is advisable to use this method sparingly.
         """
-        pass
+        ...
 
     def disableColorCodeUpdates(self):
         """This method disables Viewport updates and internal computations triggered because of
@@ -334,21 +334,21 @@ class ViewportBase:
         repeating operations are performed using a script each of which requires color code
         updates. No benefit will be had when color coding is OFF.
         """
-        pass
+        ...
 
     def enableMultipleColors(self):
         """This method enables multiple color mappings to be applied at the same time. It also
         ensures that the Viewport is updated correctly when **initialColor** is set.
         """
-        pass
+        ...
 
     def enableRefresh(self):
         """This method enables Viewport refresh disabled using disableRefresh."""
-        pass
+        ...
 
     def enableColorCodeUpdates(self):
         """This method enables Viewport color code updates disabled using disableColorCodeUpdates."""
-        pass
+        ...
 
     def getActiveElementLabels(
         self, useCut: Boolean = OFF, printResults: Boolean = OFF
@@ -373,7 +373,7 @@ class ViewportBase:
             A Dictionary object of element labels, keyed by OdbInstance name. Returns None if the
             **displayedObject** member is not an Odb object.
         """
-        pass
+        ...
 
     def getActiveNodeLabels(self, useCut: Boolean = OFF, printResults: Boolean = OFF):
         """This method returns the node labels currently active in the viewport based on the
@@ -396,7 +396,7 @@ class ViewportBase:
             A Dictionary object of node labels, keyed by OdbInstance name. Returns None if the
             **displayedObject** member is not an Odb object.
         """
-        pass
+        ...
 
     def getPrimVarMinMaxLoc(self):
         """This method returns a dictionary containing the minimum, maximum and their location for
@@ -409,19 +409,19 @@ class ViewportBase:
             A dictionary with keys 'minPartInstanceName', 'minElementLabel', 'minNodeLabel',
             'minPosition', 'maxPartInstanceName', 'maxElementLabel', 'maxNodeLabel', 'maxPosition' .
         """
-        pass
+        ...
 
     def makeCurrent(self):
         """This method makes theViewport object the current viewport."""
-        pass
+        ...
 
     def maximize(self):
         """This method maximizes the Viewport object to fill the drawing area."""
-        pass
+        ...
 
     def minimize(self):
         """This method minimizes the Viewport object to appear as an abbreviated title bar."""
-        pass
+        ...
 
     def offset(self, deltaX: float = 0, deltaY: float = 0):
         """This method modifies the current **X**-*Y* location of the viewport by the specified
@@ -436,17 +436,17 @@ class ViewportBase:
             A Float specifying the offset in millimeters of the **Y**-component of the viewport
             origin. The default value is 0.
         """
-        pass
+        ...
 
     def restore(self):
         """This method restores a maximized or minimized Viewport object to its previous size and
         location.
         """
-        pass
+        ...
 
     def sendToBack(self):
         """This method moves the Viewport object to the back."""
-        pass
+        ...
 
     @typing.overload
     def setColor(self, initialColor: str, translucency: str = ""):
@@ -462,7 +462,7 @@ class ViewportBase:
             A float in the range of 0.0 to 1.0 specifying how translucent the objects drawn using
             **initialColor** needs to be.
         """
-        pass
+        ...
 
     @typing.overload
     def setColor(self, colorMapping: AttributeColorMap):
@@ -474,7 +474,7 @@ class ViewportBase:
         colorMapping
             An :py:class:`~abaqus.Canvas.AttributeColorMap.AttributeColorMap` object. Possible values are any AttributeColorMap object.
         """
-        pass
+        ...
 
     @typing.overload
     def setColor(
@@ -513,17 +513,17 @@ class ViewportBase:
             A SymbolicConstant specifying the node symbol size for the nodes contained in **leaf**.
             Possible values are SMALL, MEDIUM, and LARGE. The default value is SMALL.
         """
-        pass
+        ...
 
     def setColor(self, *args, **kwargs):
-        pass
+        ...
 
     def forceRefresh(self):
         """This method causes the Viewport to refresh immediately. It is provided to allow scripts
         to refresh the Viewport before the script terminates. Normally, there would only be a
         single cumulative refresh that takes place immediately after the script completes.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -568,7 +568,7 @@ class ViewportBase:
         ------
         RangeError
         """
-        pass
+        ...
 
     def addDrawings(self, names: tuple = ()):
         """This method identifies the names of Drawing objects to be rendered in the Viewport.
@@ -582,7 +582,7 @@ class ViewportBase:
         ------
         ValueError
         """
-        pass
+        ...
 
     def removeDrawings(self, names: tuple = ()):
         """This method identifies the names of Drawing objects to no longer be rendered in the
@@ -597,7 +597,7 @@ class ViewportBase:
         ------
         ValueError
         """
-        pass
+        ...
 
     def timeDisplay(
         self, numFrames: int = 0, numSeconds: int = 10, degreesPerFrame: float = 0
@@ -620,4 +620,4 @@ class ViewportBase:
             A Float specifying the number of degrees to rotate the model view about its Z axis
             before each refresh. The default value is 0.0.
         """
-        pass
+        ...

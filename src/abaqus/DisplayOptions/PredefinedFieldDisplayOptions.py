@@ -47,4 +47,4 @@ class PredefinedFieldDisplayOptions:
         ------
         RangeError
         """
-        pass
+        ...

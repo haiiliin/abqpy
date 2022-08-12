@@ -32,4 +32,4 @@ class PerpendicularConstraint(ConstrainedSketchConstraint):
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint` object.
 
         """
-        pass
+        ...

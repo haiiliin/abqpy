@@ -34,4 +34,4 @@ class FeatureOptions:
             An Int specifying the maximum number of caches to be stored with each part or with the
             assembly. The default value is 5.
         """
-        pass
+        ...

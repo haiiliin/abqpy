@@ -59,7 +59,7 @@ class PressureEffect:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the PressureEffect object.
@@ -68,4 +68,4 @@ class PressureEffect:
         ------
         RangeError
         """
-        pass
+        ...

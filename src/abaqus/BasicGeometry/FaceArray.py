@@ -57,7 +57,7 @@ class FaceArray:
             A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
 
         """
-        pass
+        ...
 
     def findAt(
         self, coordinates: tuple, normal: tuple = (), printWarning: Boolean = True
@@ -99,7 +99,7 @@ class FaceArray:
             A :py:class:`~abaqus.BasicGeometry.Face.Face` object.
 
         """
-        pass
+        ...
 
     def getSequenceFromMask(self, mask: str):
         """This method returns the object or objects in the FaceArray identified using the
@@ -118,7 +118,7 @@ class FaceArray:
             A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a sequence of Face objects.
 
         """
-        pass
+        ...
 
     def getMask(self):
         """This method returns a string specifying the object or objects.
@@ -129,7 +129,7 @@ class FaceArray:
             A String specifying the object or objects.
 
         """
-        pass
+        ...
 
     def getByBoundingBox(
         self,
@@ -163,7 +163,7 @@ class FaceArray:
             A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
 
         """
-        pass
+        ...
 
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
         """This method returns an array of face objects that lie within the specified bounding
@@ -186,7 +186,7 @@ class FaceArray:
             A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
 
         """
-        pass
+        ...
 
     def getByBoundingSphere(self, center: tuple, radius: str):
         """This method returns an array of face objects that lie within the specified bounding
@@ -205,7 +205,7 @@ class FaceArray:
             A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
 
         """
-        pass
+        ...
 
     def getBoundingBox(self):
         """This method returns a dictionary of two tuples representing minimum and maximum boundary
@@ -221,7 +221,7 @@ class FaceArray:
             - **high**: a tuple of three floats representing the maximum **X** -, **Y** -, and **Z**  -boundary
               values of the bounding box.
         """
-        pass
+        ...
 
     def getClosest(self, coordinates: tuple, searchTolerance: str = ""):
         """This method returns an object or objects in the FaceArray closest to the given set of
@@ -254,4 +254,4 @@ class FaceArray:
         Error: The mask results in an empty sequence
             An exception occurs if the resulting sequence is empty.
         """
-        pass
+        ...

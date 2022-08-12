@@ -96,7 +96,6 @@ class ModulatedAmplitude(Amplitude):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(self, timeSpan: SymbolicConstant = STEP):
         """This method modifies the ModulatedAmplitude object.
@@ -111,4 +110,4 @@ class ModulatedAmplitude(Amplitude):
         ------
         RangeError
         """
-        pass
+        ...

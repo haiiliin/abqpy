@@ -115,4 +115,4 @@ class LayerProperties:
         LayerProperties
             A :py:class:`~abaqus.Section.LayerProperties.LayerProperties` object.
         """
-        pass
+        ...

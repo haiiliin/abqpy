@@ -113,7 +113,6 @@ class ShapePlanarSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -148,4 +147,4 @@ class ShapePlanarSymmetry(GeometricRestriction):
             A Float specifying the geometric tolerance in the 3-direction. The default value is
             0.01.
         """
-        pass
+        ...

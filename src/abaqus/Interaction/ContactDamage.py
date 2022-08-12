@@ -298,8 +298,8 @@ class ContactDamage:
         ContactDamage
             A :py:class:`~abaqus.Interaction.ContactDamage.ContactDamage` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ContactDamage object."""
-        pass
+        ...

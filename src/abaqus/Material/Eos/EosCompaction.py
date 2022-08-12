@@ -53,7 +53,7 @@ class EosCompaction:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the EosCompaction object.
@@ -62,4 +62,4 @@ class EosCompaction:
         ------
         RangeError
         """
-        pass
+        ...

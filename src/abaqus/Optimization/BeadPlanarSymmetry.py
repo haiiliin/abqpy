@@ -67,7 +67,6 @@ class BeadPlanarSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry` object.
         """
         super().__init__()
-        pass
 
     def setValues(self, axis: SymbolicConstant = AXIS_1, csys: int = None):
         """This method modifies the BeadPlanarSymmetry object.
@@ -82,4 +81,4 @@ class BeadPlanarSymmetry(GeometricRestriction):
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         """
-        pass
+        ...

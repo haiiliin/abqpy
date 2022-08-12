@@ -57,7 +57,7 @@ class TriaxialTestData:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the TriaxialTestData object.
@@ -66,4 +66,4 @@ class TriaxialTestData:
         ------
         RangeError
         """
-        pass
+        ...

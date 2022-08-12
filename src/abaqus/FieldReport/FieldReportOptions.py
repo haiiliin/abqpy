@@ -67,7 +67,7 @@ class FieldReportOptions:
         FieldReportOptions
             A :py:class:`~abaqus.FieldReport.FieldReportOptions.FieldReportOptions` object.
         """
-        pass
+        ...
 
     def NumberFormat(
         self,

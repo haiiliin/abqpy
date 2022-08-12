@@ -46,8 +46,8 @@ class DetonationPoint:
         DetonationPoint
             A :py:class:`~abaqus.Material.Eos.DetonationPoint.DetonationPoint` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the DetonationPoint object."""
-        pass
+        ...

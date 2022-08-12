@@ -98,7 +98,7 @@ class Permeability:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Permeability object.
@@ -107,4 +107,4 @@ class Permeability:
         ------
         RangeError
         """
-        pass
+        ...

@@ -139,4 +139,4 @@ class OrientationOptions(DGOrientationOptions):
         ------
         RangeError
         """
-        pass
+        ...

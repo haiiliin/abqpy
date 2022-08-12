@@ -6,7 +6,7 @@ from .PartInstance import PartInstance
 
 # Prevent circular import
 class ModelBase:
-    pass
+    ...
 
 
 class AssemblyModel(ModelBase):
@@ -67,7 +67,7 @@ class AssemblyModel(ModelBase):
             A list of strings describing any warnings or errors encountered during the conversion
             process.
         """
-        pass
+        ...
 
     def linkInstances(self, instancesMap: tuple):
         """This method links the selected PartInstance objects to the corresponding PartInstance
@@ -87,4 +87,4 @@ class AssemblyModel(ModelBase):
             A list of strings describing any warnings or errors encountered during the conversion
             process.
         """
-        pass
+        ...

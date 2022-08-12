@@ -42,4 +42,3 @@ class LeafFromReferencePoint(Leaf):
             A :py:class:`~abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint` object.
         """
         super().__init__(DEFAULT_MODEL)
-        pass

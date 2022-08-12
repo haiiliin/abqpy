@@ -92,7 +92,6 @@ class SubmodelSB(Load):
             A :py:class:`~abaqus.Load.SubmodelSB.SubmodelSB` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -123,7 +122,7 @@ class SubmodelSB(Load):
             solution from the last increment will be used. The **globalIncrement** argument is
             applicable only for linear perturbation steps. The default value is 0.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -154,4 +153,4 @@ class SubmodelSB(Load):
             applicable only for linear perturbation steps and if **fixed** = OFF. The default value is
             0.
         """
-        pass
+        ...

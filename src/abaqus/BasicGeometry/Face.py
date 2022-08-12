@@ -63,7 +63,7 @@ class Face:
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid of
             the face.
         """
-        pass
+        ...
 
     def getCurvature(self, point: tuple, uParam: float, vParam: float):
         """This method returns information about the curvature at a location on the face.
@@ -91,7 +91,7 @@ class Face:
             refer to the vectors specifying the two principal axes of the face. 'curvature1' and
             'curvature2' specify the curvatures along the two principal axes.
         """
-        pass
+        ...
 
     def getElements(self):
         """This method returns an array of element objects that are associated with the face.
@@ -102,7 +102,7 @@ class Face:
             A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which is a sequence of MeshElement objects.
 
         """
-        pass
+        ...
 
     def getElementFaces(self, faceSide: SymbolicConstant = BOTH_SIDES):
         """This method returns an array of mesh face objects. Each mesh face object contains the
@@ -121,7 +121,7 @@ class Face:
             A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object which is a sequence of MeshFace objects.
 
         """
-        pass
+        ...
 
     def getNodes(self, faceSide: SymbolicConstant = BOTH_SIDES):
         """This method returns an array of mesh node objects. Each mesh node object contains the
@@ -142,7 +142,7 @@ class Face:
             A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object which is a sequence of MeshNode objects.
 
         """
-        pass
+        ...
 
     def getNormal(self, point: tuple = ()):
         """This method returns the normal to a face at the location specified by the **pointOn**
@@ -167,7 +167,7 @@ class Face:
         An exception is raised if the optional argument **point** is provided but the point cannot
         be projected onto the face.
         """
-        pass
+        ...
 
     def getSize(self, printResults: str = True):
         """This method returns a Float indicating the area of the face.
@@ -183,7 +183,7 @@ class Face:
             A Float.
 
         """
-        pass
+        ...
 
     def getEdges(self):
         """This method returns a sequence consisting of the edge ids of the edges on the face.
@@ -194,7 +194,7 @@ class Face:
         A tuple of integers.
 
         """
-        pass
+        ...
 
     def getVertices(self):
         """This method returns a sequence consisting of the vertex ids of the vertices of the face.
@@ -205,7 +205,7 @@ class Face:
             A tuple of integers.
 
         """
-        pass
+        ...
 
     def getCells(self):
         """This method returns a sequence consisting of the cell ids of the cells to which this
@@ -217,7 +217,7 @@ class Face:
             A tuple of integers.
 
         """
-        pass
+        ...
 
     def getAdjacentFaces(self):
         """This method returns an array of face objects that share at least one edge of the face.
@@ -228,7 +228,7 @@ class Face:
             A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object which is a sequence of Face objects.
 
         """
-        pass
+        ...
 
     def getFacesByFaceAngle(self, angle: str):
         """This method returns an array of Face objects that are obtained by recursively finding
@@ -245,7 +245,7 @@ class Face:
             A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
 
         """
-        pass
+        ...
 
     def getFacesByCurvature(self):
         """This method returns an array of Face objects that are obtained by recursively finding
@@ -257,7 +257,7 @@ class Face:
             A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
 
         """
-        pass
+        ...
 
     def isNormalFlipped(self):
         """This method determines whether the normal to the face is flipped from its default
@@ -269,4 +269,4 @@ class Face:
             A Boolean value of True if the normal is flipped and False if not.
 
         """
-        pass
+        ...

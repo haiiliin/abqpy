@@ -37,19 +37,19 @@ class AnimationController:
         AnimationError: animationType not set
             If **animationType** = NONE:
         """
-        pass
+        ...
 
     def stop(self):
         """This method stops the animation."""
-        pass
+        ...
 
     def incrementFrame(self):
         """This method increments the animation frame."""
-        pass
+        ...
 
     def decrementFrame(self):
         """This method decrements the animation frame."""
-        pass
+        ...
 
     def showFrame(self, frame: int = None, value: float = None):
         """This method renders the specified frame of the animation.
@@ -64,15 +64,15 @@ class AnimationController:
             this value, for **animationType** = SCALE_FACTOR the frame with the scale value nearest to
             this value.
         """
-        pass
+        ...
 
     def showFirstFrame(self):
         """This method renders the first frame of the animation."""
-        pass
+        ...
 
     def showLastFrame(self):
         """This method renders the last frame of the animation."""
-        pass
+        ...
 
     def setValues(self, animationType: SymbolicConstant = NONE):
         """This method modifies the AnimationController object.
@@ -87,4 +87,4 @@ class AnimationController:
         ------
         RangeError
         """
-        pass
+        ...
