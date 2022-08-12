@@ -168,4 +168,4 @@ class ViewportAnnotationOptions:
         ------
         RangeError
         """
-        pass
+        ...

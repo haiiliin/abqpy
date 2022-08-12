@@ -32,7 +32,7 @@ class RegionPartBase(PartBase):
         arg2
             A Set or Surface object specifying set 2.
         """
-        pass
+        ...
 
     def markSetInternal(self, setName: str, internalSet: Boolean):
         """This command marks the given Set as internal or external.
@@ -44,7 +44,7 @@ class RegionPartBase(PartBase):
         internalSet
             A Boolean specifying whether the Set should be marked as internal.
         """
-        pass
+        ...
 
     def markSurfaceInternal(self, setName: str, internalSurface: Boolean):
         """This command marks the given Surface as internal or external.
@@ -56,7 +56,7 @@ class RegionPartBase(PartBase):
         internalSurface
             A Boolean specifying whether the Surface should be marked as internal.
         """
-        pass
+        ...
 
     def isSetInternal(self, setName: str):
         """This command returns a flag indicating whether the Set is Internal.
@@ -66,7 +66,7 @@ class RegionPartBase(PartBase):
         setName
             A string specifying the Set name.
         """
-        pass
+        ...
 
     def isSurfaceInternal(self, surfaceName: str):
         """This command returns a flag indicating whether the Surface is Internal.
@@ -76,7 +76,7 @@ class RegionPartBase(PartBase):
         surfaceName
             A string specifying the Surface name.
         """
-        pass
+        ...
 
     def deleteSets(self, setNames: tuple):
         """This command deletes the given sets from the part.
@@ -86,7 +86,7 @@ class RegionPartBase(PartBase):
         setNames
             A sequence of Strings specifying the set names that will be deleted from the part.
         """
-        pass
+        ...
 
     def deleteSurfaces(self, surfaceNames: tuple):
         """This command deletes the given surfaces from the part.
@@ -96,4 +96,4 @@ class RegionPartBase(PartBase):
         surfaceNames
             A sequence of Strings specifying the surface names that will be deleted from the part.
         """
-        pass
+        ...

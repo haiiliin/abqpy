@@ -305,7 +305,6 @@ class PointFastener(Fastener):
             A :py:class:`~abaqus.EngineeringFeature.PointFastener.PointFastener` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -432,4 +431,4 @@ class PointFastener(Fastener):
             given unsorted order, or sort them by proximity to determine the connectivity of
             fastening points. The default value is OFF.
         """
-        pass
+        ...

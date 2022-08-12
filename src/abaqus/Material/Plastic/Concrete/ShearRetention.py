@@ -64,7 +64,7 @@ class ShearRetention:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ShearRetention object.
@@ -73,4 +73,4 @@ class ShearRetention:
         ------
         RangeError
         """
-        pass
+        ...

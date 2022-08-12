@@ -47,4 +47,4 @@ class Stream:
         Stream
             A :py:class:`~abaqus.PathAndProbe.Stream.Stream` object.
         """
-        pass
+        ...

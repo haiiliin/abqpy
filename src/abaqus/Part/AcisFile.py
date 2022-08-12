@@ -46,7 +46,7 @@ class AcisFile:
         Texterror: Failed to read ACIS file
             The data in the ACIS file are corrupted.
         """
-        pass
+        ...
 
     def openCatia(
         self,
@@ -88,7 +88,7 @@ class AcisFile:
         AcisFile
             An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
         """
-        pass
+        ...
 
     def openEnf(
         self,
@@ -132,7 +132,7 @@ class AcisFile:
         AcisFile
             An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
         """
-        pass
+        ...
 
     def openIges(
         self,
@@ -197,7 +197,7 @@ class AcisFile:
         Texterror: Failed to read IGES file
             The data in the IGES file are corrupted.
         """
-        pass
+        ...
 
     def openParasolid(self, fileName: str, topology: SymbolicConstant = SOLID):
         """This method creates an AcisFile object from a file containing Parasolid-format geometry.
@@ -226,7 +226,7 @@ class AcisFile:
         AcisFile
             An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
         """
-        pass
+        ...
 
     def openStep(self, fileName: str, scale: float = 1):
         """This method creates an AcisFile object from a file containing STEP-format geometry. This
@@ -257,7 +257,7 @@ class AcisFile:
         Texterror: Failed to read STEP file
             The data in the STEP file are corrupted.
         """
-        pass
+        ...
 
     def openVda(self, fileName: str):
         """This method creates an AcisFile object from a file containing VDA-FS-format geometry.
@@ -285,7 +285,7 @@ class AcisFile:
         Texterror: Failed to read VDA file
             The data in the VDA-FS file are corrupted.
         """
-        pass
+        ...
 
     def writeAcisFile(self, fileName: str, version: float = None):
         """This method exports the assembly to a named file in ACIS format.
@@ -300,4 +300,4 @@ class AcisFile:
             A Float specifying the ACIS version. For example, the Float 12.0 corresponds to ACIS
             Version 12.0. The default value is the current version of ACIS.
         """
-        pass
+        ...

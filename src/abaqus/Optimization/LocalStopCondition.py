@@ -127,7 +127,6 @@ class LocalStopCondition(StopCondition):
             A :py:class:`~abaqus.Optimization.LocalStopCondition.LocalStopCondition` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -176,4 +175,4 @@ class LocalStopCondition(StopCondition):
             The SymbolicConstant MODEL or a Region object specifying the region to which the stop
             condition is applied. The default value is MODEL.
         """
-        pass
+        ...

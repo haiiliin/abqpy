@@ -32,4 +32,4 @@ class UserDefinedField:
         UserDefinedField
             A :py:class:`~abaqus.Material.Others.User.UserDefinedField.UserDefinedField` object.
         """
-        pass
+        ...

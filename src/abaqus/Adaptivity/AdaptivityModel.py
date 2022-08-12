@@ -37,7 +37,7 @@ class AdaptivityModel(ModelBase):
         AdaptivityIteration
             An :py:class:`~abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration` object.
         """
-        pass
+        ...
 
     def AdaptiveMeshConstraint(
         self,

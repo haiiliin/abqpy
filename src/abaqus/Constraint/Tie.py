@@ -132,13 +132,12 @@ class Tie(Constraint):
             A :py:class:`~abaqus.Constraint.Tie.Tie` object.
         """
         super().__init__()
-        pass
 
     def swapSurfaces(self):
         """This method switches the master and slave surfaces of a tied constraint. This command
         is valid only during the step in which the interaction is created.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -182,4 +181,4 @@ class Tie(Constraint):
             A Boolean specifying whether shell element thickness is considered. The default value is
             ON.
         """
-        pass
+        ...

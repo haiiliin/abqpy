@@ -31,4 +31,4 @@ class StopConditionDisplayOptions:
         ------
         RangeError
         """
-        pass
+        ...

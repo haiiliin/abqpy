@@ -51,7 +51,7 @@ class SurfaceFeatureAssignment:
               contact.
             - A SymbolicConstant ORIGINAL or CURRENT specifying the configuration.
         """
-        pass
+        ...
 
     def appendInStep(
         self, stepName: str, assignments: typing.Union[SymbolicConstant, float]
@@ -80,7 +80,7 @@ class SurfaceFeatureAssignment:
               contact.
             - A SymbolicConstant ORIGINAL or CURRENT specifying the configuration.
         """
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing surface feature angle assignments from a
@@ -92,4 +92,4 @@ class SurfaceFeatureAssignment:
             A sequence of Ints specifying the index of each surface feature angle assignment to
             delete.
         """
-        pass
+        ...

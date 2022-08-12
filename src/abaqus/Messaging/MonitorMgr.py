@@ -43,7 +43,7 @@ class MonitorMgr:
         userData
             Any Python object or None. This object is passed to the callback function.
         """
-        pass
+        ...
 
     def removeMessageCallback(
         self, jobName: str, messageType: SymbolicConstant, callback: str, userData: str
@@ -91,7 +91,7 @@ class MonitorMgr:
             Any Python object or None; it must be the same as the **userData** argument specified in
             the original call to addMessageCallback.
         """
-        pass
+        ...
 
     def checkMonitorStatus(self):
         """This method raises a MonitorError exception if the monitoring status is not ENABLED.
@@ -101,4 +101,4 @@ class MonitorMgr:
         MonitorError
             Status is not ENABLED
         """
-        pass
+        ...

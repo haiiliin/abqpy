@@ -244,7 +244,6 @@ class StdContactControl(ContactControl):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -355,4 +354,4 @@ class StdContactControl(ContactControl):
         ------
         RangeError
         """
-        pass
+        ...

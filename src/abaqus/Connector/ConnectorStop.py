@@ -72,7 +72,6 @@ class ConnectorStop(ConnectorBehaviorOption):
         ValueError and TextError
         """
         super().__init__()
-        pass
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorStop object.
@@ -81,4 +80,4 @@ class ConnectorStop(ConnectorBehaviorOption):
         ------
         ValueError
         """
-        pass
+        ...

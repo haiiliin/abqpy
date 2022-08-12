@@ -79,7 +79,6 @@ class SurfaceCurrent(Load):
             A :py:class:`~abaqus.Load.SurfaceCurrent.SurfaceCurrent` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -104,7 +103,7 @@ class SurfaceCurrent(Load):
             UNSET should be used if the load has no amplitude reference. The default value is UNSET.
             You should provide the **amplitude** argument only if it is valid for the specified step.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self, stepName: str, magnitude: float = None, amplitude: str = ""
@@ -125,4 +124,4 @@ class SurfaceCurrent(Load):
             the load is changed to have no amplitude reference. You should provide the **amplitude**
             argument only if it is valid for the specified step.
         """
-        pass
+        ...

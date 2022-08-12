@@ -58,7 +58,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         dimension
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object
         """
-        pass
+        ...
 
     def HorizontalDimension(
         self,
@@ -98,7 +98,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         dimension
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object
         """
-        pass
+        ...
 
     def ObliqueDimension(
         self,
@@ -137,7 +137,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         dimension
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object
         """
-        pass
+        ...
 
     def RadialDimension(
         self,
@@ -182,7 +182,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         dimension
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object
         """
-        pass
+        ...
 
     def VerticalDimension(
         self,
@@ -221,7 +221,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         dimension
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object
         """
-        pass
+        ...
 
     def DistanceDimension(
         self,
@@ -261,4 +261,4 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         dimension
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object
         """
-        pass
+        ...

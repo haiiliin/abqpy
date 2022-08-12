@@ -365,4 +365,4 @@ class CommonOptions(DGCommonOptions):
         ------
         RangeError
         """
-        pass
+        ...

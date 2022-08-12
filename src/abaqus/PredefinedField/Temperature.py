@@ -160,7 +160,6 @@ class Temperature(PredefinedField):
             A :py:class:`~abaqus.PredefinedField.Temperature.Temperature` object.
         """
         super().__init__()
-        pass
 
     def move(self, fromStepName: str, toStepName: str):
         """This method moves the TemperatureState object from one step to a different step.
@@ -176,7 +175,7 @@ class Temperature(PredefinedField):
         ------
         TextError
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -274,7 +273,7 @@ class Temperature(PredefinedField):
             a driven node of the field can lie outside the region of the elements of the global
             model. The default value is 0.0. This argument cannot be used with **midside**.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -359,4 +358,4 @@ class Temperature(PredefinedField):
             a driven node of the field can lie outside the region of the elements of the global
             model. The default value is 0.0. This argument cannot be used with **midside**.
         """
-        pass
+        ...

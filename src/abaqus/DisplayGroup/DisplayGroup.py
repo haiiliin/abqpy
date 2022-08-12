@@ -66,7 +66,7 @@ class DisplayGroup:
         DisplayGroup
             A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object.
         """
-        pass
+        ...
 
     def add(self, leaf: Leaf):
         """This method adds the specified items to the display group.
@@ -76,7 +76,7 @@ class DisplayGroup:
         leaf
             A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object specifying the items to add to the display group.
         """
-        pass
+        ...
 
     def either(self, leaf: Leaf):
         """This method redefines the display group to be only those items that are not shared by
@@ -87,7 +87,7 @@ class DisplayGroup:
         leaf
             A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object specifying the items to be excluded from the display group.
         """
-        pass
+        ...
 
     def intersect(self, leaf: Leaf):
         """This method redefines the display group to be only those items that are shared by the
@@ -98,11 +98,11 @@ class DisplayGroup:
         leaf
             A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object specifying the items to be included in the display group.
         """
-        pass
+        ...
 
     def redoLast(self):
         """This method redoes the last undone operation on the display group."""
-        pass
+        ...
 
     def remove(self, leaf: Leaf):
         """This method removes the specified items from the display group.
@@ -112,7 +112,7 @@ class DisplayGroup:
         leaf
             A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object specifying the items to remove from the display group.
         """
-        pass
+        ...
 
     def replace(self, leaf: Leaf):
         """This method replaces the contents of the display group with the specified items.
@@ -123,8 +123,8 @@ class DisplayGroup:
             A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object specifying the items with which to replace the current display group
             contents.
         """
-        pass
+        ...
 
     def undoLast(self):
         """This method undoes the last operation performed on the display group."""
-        pass
+        ...

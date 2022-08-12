@@ -221,7 +221,6 @@ class BeadTask(OptimizationTask):
             A :py:class:`~abaqus.Optimization.BeadTask.BeadTask` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -308,4 +307,4 @@ class BeadTask(OptimizationTask):
             cycle or every design cycle. Possible values are EVERY_CYCLE and FIRST_CYCLE. The
             default value is EVERY_CYCLE.
         """
-        pass
+        ...

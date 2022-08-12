@@ -74,7 +74,7 @@ class OdbSet:
         OdbSet
             An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
-        pass
+        ...
 
     def NodeSetFromNodeLabels(self, name: str, nodeLabels: tuple):
         """This method creates a node set from a sequence of node labels.
@@ -102,7 +102,7 @@ class OdbSet:
         OdbSet
             An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
-        pass
+        ...
 
     def ElementSet(self, name: str, elements: tuple[OdbMeshElement]):
         """This method creates an element set from an array of OdbMeshElement objects (for part
@@ -132,7 +132,7 @@ class OdbSet:
         OdbSet
             An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
-        pass
+        ...
 
     def ElementSetFromElementLabels(self, name: str, elementLabels: tuple):
         """This method creates an element set from a sequence of element labels.
@@ -160,7 +160,7 @@ class OdbSet:
         OdbSet
             An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
-        pass
+        ...
 
     def MeshSurface(self, name: str, meshSurfaces: tuple):
         """This method creates a surface from the element and side identifiers for the assembly.
@@ -202,7 +202,7 @@ class OdbSet:
         OdbSet
             An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
-        pass
+        ...
 
     def MeshSurfaceFromElsets(self, name: str, elementSetSeq: tuple):
         """This method creates a mesh surface from a sequence of element sets.
@@ -231,7 +231,7 @@ class OdbSet:
         OdbSet
             An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
-        pass
+        ...
 
     def MeshSurfaceFromLabels(self, name: str, surfaceLabels: tuple):
         """This method creates a mesh surface from a sequence of surface labels.
@@ -259,4 +259,4 @@ class OdbSet:
         OdbSet
             An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
-        pass
+        ...

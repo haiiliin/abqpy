@@ -49,7 +49,7 @@ class Hysteresis:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Hysteresis object.
@@ -58,4 +58,4 @@ class Hysteresis:
         ------
         RangeError
         """
-        pass
+        ...

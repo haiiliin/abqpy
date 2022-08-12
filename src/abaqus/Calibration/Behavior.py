@@ -58,7 +58,7 @@ class Behavior:
         Behavior
             A :py:class:`~abaqus.Calibration.Behavior.Behavior` object.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -169,7 +169,7 @@ class Behavior:
             A string specifying name of Primary DataSet object. Only valid if the behavior is of
             type FeFpBehavior
         """
-        pass
+        ...
 
     def mapToMaterial(self, materialName: str):
         """This method appends the calibration data obtained from the DataSet object to an existing
@@ -183,7 +183,7 @@ class Behavior:
         materialName
             A String specifying the name of the existing material
         """
-        pass
+        ...
 
     def compute_E(self, dataSet: DataSet):
         """This method computes the value of young's modulus from the existing DataSet object. The
@@ -200,7 +200,7 @@ class Behavior:
             A tuple consisting of a and b values of the regression line(y = ax + b), coefficient of
             determination(r-squared) value and the start and end-points of the line.
         """
-        pass
+        ...
 
     def compute_nu(self, dataSet: DataSet):
         """This method computes the value of Poisson's Ratio from the existing DataSet object. The
@@ -217,7 +217,7 @@ class Behavior:
             A tuple consisting of a and b values of the regression line(y = ax + b), coefficient of
             determination(r-squared) value and the start and end-points of the line.
         """
-        pass
+        ...
 
     def compute_ultimatePoint(self, dataSet: DataSet):
         """This method computes the coordinates of the Ultimate point from the existing DataSet
@@ -232,7 +232,7 @@ class Behavior:
         -------
         Coordinates of the ultimate point.
         """
-        pass
+        ...
 
     def compute_elasticModulus(self, yieldPoint: tuple):
         """This method computes the value of the elastic modulus from the yieldpoint value. The
@@ -248,7 +248,7 @@ class Behavior:
         float
             A float specifying the value of elastic modulus.
         """
-        pass
+        ...
 
     def compute_plasticPoints(
         self,
@@ -279,7 +279,7 @@ class Behavior:
         tuple[tuple[float, ...]]
             A sequence of coordinates of the Plastic points..
         """
-        pass
+        ...
 
     def xyDataDissect(
         self, dsName: str, modelName: str, calibrationName: str, biaxial: Boolean = True
@@ -305,4 +305,4 @@ class Behavior:
             A sequence of strings specifying names of the DataSet objects containing loading,
             unloading, reloading and primary datasets.
         """
-        pass
+        ...

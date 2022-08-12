@@ -106,7 +106,6 @@ class TopologyDemoldControl(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -142,4 +141,4 @@ class TopologyDemoldControl(GeometricRestriction):
             A SymbolicConstant specifying the demold technique. Possible values are AUTO,
             AUTO_TIGHT, POINT, SURFACE, and STAMP. The default value is AUTO.
         """
-        pass
+        ...

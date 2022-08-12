@@ -51,7 +51,7 @@ class AnnealTemperature:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the AnnealTemperature object.
@@ -60,4 +60,4 @@ class AnnealTemperature:
         ------
         RangeError
         """
-        pass
+        ...

@@ -89,4 +89,4 @@ class MovieOptions:
         ------
         RangeError
         """
-        pass
+        ...

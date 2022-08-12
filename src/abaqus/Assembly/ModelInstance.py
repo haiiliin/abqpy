@@ -13,7 +13,7 @@ from ..Region.Surface import Surface
 
 # prevent circular imports
 class Model:
-    pass
+    ...
 
 
 class ModelInstance:
@@ -82,20 +82,20 @@ class ModelInstance:
         ModelInstance
             A :py:class:`~abaqus.Model.Model.ModelInstance` object.
         """
-        pass
+        ...
 
     def ConvertConstraints(self):
         """This method converts the position constraints of an instance to absolute positions. The
         method deletes the constraint features on the instance but preserves the position in
         space.
         """
-        pass
+        ...
 
     def getPosition(self):
         """This method prints the sum of the translations and rotations applied to the
         ModelInstance object.
         """
-        pass
+        ...
 
     def translate(self, vector: tuple):
         """This method translates an instance by the specified amount.
@@ -105,4 +105,4 @@ class ModelInstance:
         vector
             A sequence of three Floats specifying a translation vector.
         """
-        pass
+        ...

@@ -242,4 +242,4 @@ class AssemblyDisplayOptions:
         ------
         RangeError
         """
-        pass
+        ...

@@ -67,4 +67,4 @@ class GeometryDisplayOptions:
         ------
         RangeError
         """
-        pass
+        ...

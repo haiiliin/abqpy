@@ -94,7 +94,7 @@ class ElectricalConductivity:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ElectricalConductivity object.
@@ -103,4 +103,4 @@ class ElectricalConductivity:
         ------
         RangeError
         """
-        pass
+        ...

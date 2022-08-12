@@ -32,7 +32,7 @@ def getGuiPrefsFileName() -> str:
     str
         A String with the default file name for the GUI preferences file.
     """
-    pass
+    ...
 
 
 def getDisplayNamesInGuiPreferences(fileName: str) -> list[str]:
@@ -57,7 +57,7 @@ def getDisplayNamesInGuiPreferences(fileName: str) -> list[str]:
     list[str]
         A list of Strings of displayNames.
     """
-    pass
+    ...
 
 
 def printValuesList(
@@ -94,7 +94,7 @@ def printValuesList(
         A String displaying the path, name, and value for all of the options in the object that
         you select.
     """
-    pass
+    ...
 
 
 def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
@@ -126,7 +126,7 @@ def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
     CaeGuiPrefs
         A :py:class:`~abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs` object.
     """
-    pass
+    ...
 
 
 def openSessionOptions(
@@ -168,4 +168,4 @@ def openSessionOptions(
     CaeKerPrefs
         A :py:class:`~abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs` object.
     """
-    pass
+    ...

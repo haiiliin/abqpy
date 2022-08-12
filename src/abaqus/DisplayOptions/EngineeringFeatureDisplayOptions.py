@@ -57,4 +57,4 @@ class EngineeringFeatureDisplayOptions:
         ------
         RangeError
         """
-        pass
+        ...
