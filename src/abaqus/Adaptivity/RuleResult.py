@@ -3,7 +3,7 @@
 
 # Prevent circular import
 class ErrorIndicatorResult:
-    pass
+    ...
 
 
 class RuleResult:
@@ -82,4 +82,4 @@ class RuleResult:
         ------
         AbaqusException
         """
-        pass
+        ...

@@ -359,7 +359,7 @@ class XYPlot(XYPlotBase):
         XYData
             An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
-        pass
+        ...
 
     @staticmethod
     @typing.overload
@@ -385,7 +385,7 @@ class XYPlot(XYPlotBase):
         XYData
             An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
-        pass
+        ...
 
     @staticmethod
     def XYData(*args, **kwargs) -> XYData:

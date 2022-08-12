@@ -49,7 +49,7 @@ class TableCollection:
         TableCollection
             A :py:class:`~abaqus.TableCollection.TableCollection.TableCollection` object.
         """
-        pass
+        ...
 
     def DataTable(self, label: str) -> DataTable:
         """This method creates a DataTable object and places it in the dataTables array.

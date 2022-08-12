@@ -96,7 +96,7 @@ class EventSeries:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -130,4 +130,4 @@ class EventSeries:
         ------
         RangeError
         """
-        pass
+        ...

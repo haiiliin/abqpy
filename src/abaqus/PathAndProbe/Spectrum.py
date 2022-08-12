@@ -32,4 +32,4 @@ class Spectrum:
         Spectrum
             A :py:class:`~abaqus.PathAndProbe.Spectrum.Spectrum` object.
         """
-        pass
+        ...

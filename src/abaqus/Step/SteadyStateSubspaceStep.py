@@ -258,7 +258,6 @@ class SteadyStateSubspaceStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -309,4 +308,4 @@ class SteadyStateSubspaceStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

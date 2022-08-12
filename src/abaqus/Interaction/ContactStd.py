@@ -190,7 +190,6 @@ class ContactStd(Interaction):
             A :py:class:`~abaqus.Interaction.ContactStd.ContactStd` object.
         """
         super().__init__()
-        pass
 
     @typing.overload
     def __init__(
@@ -333,7 +332,6 @@ class ContactStd(Interaction):
             A :py:class:`~abaqus.Interaction.ContactStd.ContactStd` object.
         """
         super().__init__()
-        pass
 
     def __init__(self, *args, **kwargs):
-        pass
+        ...

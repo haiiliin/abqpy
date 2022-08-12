@@ -182,4 +182,4 @@ class Path:
             When **type** = CIRCUMFERENTIAL or RADIAL, the three points specified in
             **expression** are collinear.
         """
-        pass
+        ...

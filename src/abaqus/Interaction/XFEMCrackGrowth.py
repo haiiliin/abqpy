@@ -62,7 +62,6 @@ class XFEMCrackGrowth(Interaction):
             A :py:class:`~abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth` object.
         """
         super().__init__()
-        pass
 
     def setValues(self, allowGrowth: Boolean = ON):
         """This method modifies the data for an existing XFEMCrackGrowth object in the step where
@@ -74,7 +73,7 @@ class XFEMCrackGrowth(Interaction):
             A Boolean specifying whether the crack is allowed to grow (propagate) during this
             analysis step. The default value is ON.
         """
-        pass
+        ...
 
     def setValuesInStep(self, stepName: str, allowGrowth: Boolean = ON):
         """This method modifies the propagating data for an existing XFEMCrackGrowth object in the
@@ -88,4 +87,4 @@ class XFEMCrackGrowth(Interaction):
             A Boolean specifying whether the crack is allowed to grow (propagate) during this
             analysis step. The default value is ON.
         """
-        pass
+        ...

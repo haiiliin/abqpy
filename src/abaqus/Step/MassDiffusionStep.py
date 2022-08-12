@@ -274,7 +274,6 @@ class MassDiffusionStep(AnalysisStep):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -339,4 +338,4 @@ class MassDiffusionStep(AnalysisStep):
         ------
         RangeError
         """
-        pass
+        ...

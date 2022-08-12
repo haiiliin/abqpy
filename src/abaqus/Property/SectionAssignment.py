@@ -93,15 +93,15 @@ class SectionAssignment:
         SectionAssignment
             A :py:class:`~abaqus.Property.SectionAssignment.SectionAssignment` object.
         """
-        pass
+        ...
 
     def resume(self):
         """This method resumes the section assignment that was previously suppressed."""
-        pass
+        ...
 
     def suppress(self):
         """This method suppresses the section assignment."""
-        pass
+        ...
 
     def getVertices(self):
         """This method is only valid for connector section assignments. This method returns a
@@ -118,8 +118,8 @@ class SectionAssignment:
             An exception is thrown if getVertices() is called on any section assignment except
             connector section assignment. This method is valid only for connector section assignments.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the SectionAssignment object."""
-        pass
+        ...

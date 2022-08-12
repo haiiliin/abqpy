@@ -66,7 +66,6 @@ class HexagonalProfile(Profile):
 
         """
         super().__init__()
-        pass
 
     def setValues(self, *args, **kwargs):
         """This method modifies the HexagonalProfile object.
@@ -76,4 +75,4 @@ class HexagonalProfile(Profile):
         RangeError
 
         """
-        pass
+        ...

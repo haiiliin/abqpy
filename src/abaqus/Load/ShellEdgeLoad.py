@@ -124,7 +124,6 @@ class ShellEdgeLoad(Load):
             A :py:class:`~abaqus.Load.ShellEdgeLoad.ShellEdgeLoad` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -192,7 +191,7 @@ class ShellEdgeLoad(Load):
             A SymbolicConstant specifying how to apply surface traction. Possible values are NORMAL,
             TRANSVERSE, SHEAR, MOMENT and GENERAL. The default value is NORMAL.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -218,4 +217,4 @@ class ShellEdgeLoad(Load):
             load has no amplitude reference. You should provide the **amplitude** argument only if it
             is valid for the specified step.
         """
-        pass
+        ...

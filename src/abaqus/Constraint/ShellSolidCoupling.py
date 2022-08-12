@@ -100,7 +100,6 @@ class ShellSolidCoupling(Constraint):
             A :py:class:`~abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -128,4 +127,4 @@ class ShellSolidCoupling(Constraint):
             A Float specifying the influence distance. The **influenceDistance** argument applies only
             when **influenceDistanceMethod** = SPECIFIED. The default value is 0.0.
         """
-        pass
+        ...

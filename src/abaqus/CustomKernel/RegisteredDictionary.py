@@ -31,13 +31,12 @@ class RegisteredDictionary(CommandRegister):
             A :py:class:`~abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary` object.
         """
         super().__init__()
-        pass
 
     def Methods(self):
         """The RegisteredDictionary object supports the same methods as a Python dictionary. In
         addition, the RegisteredDictionary object supports the changeKey method.
         """
-        pass
+        ...
 
     def changeKey(self, fromName: str, toName: str):
         """This method changes the name of a key in the dictionary.
@@ -49,4 +48,4 @@ class RegisteredDictionary(CommandRegister):
         toName
             A String or an integer specifying the new name for the key.
         """
-        pass
+        ...

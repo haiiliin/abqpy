@@ -49,8 +49,7 @@ class BeadPenetrationCheck(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck` object.
         """
         super().__init__()
-        pass
 
     def setValues(self, *args, **kwargs):
         """This method modifies the BeadPenetrationCheck object."""
-        pass
+        ...

@@ -26,4 +26,4 @@ class CommandRegister:
         CommandRegister
             A :py:class:`~abaqus.CustomKernel.CommandRegister.CommandRegister` object.
         """
-        pass
+        ...

@@ -12,4 +12,4 @@ class ContactInitialization:
             mdb.models[name].contactInitializations[name]
     """
 
-    pass
+    ...

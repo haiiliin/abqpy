@@ -132,11 +132,11 @@ class OptimizationProcess:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def writeParAndInputFiles(self):
         """This method allows you to write par and input files for an optimization task."""
-        pass
+        ...
 
     def submit(self, validate: Boolean = False):
         """This method submits an optimization process.
@@ -147,7 +147,7 @@ class OptimizationProcess:
             A Boolean specifying whether Abaqus should perform the validation of the optimization
             process only. The default value is False.
         """
-        pass
+        ...
 
     def waitForCompletion(self):
         """This method interrupts the execution of the script until the end of all the analyses. If
@@ -155,7 +155,7 @@ class OptimizationProcess:
         RUNNING, Abaqus assumes the analysis has either completed or aborted and returns
         immediately.
         """
-        pass
+        ...
 
     def extract(
         self,
@@ -208,7 +208,7 @@ class OptimizationProcess:
             (according to extractFormat) is created for each part instance. If the argument is not
             specified, no part instance is selected and surface is generated for the whole model.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -251,4 +251,4 @@ class OptimizationProcess:
             iteration 1; if you set **saveEvery** = 3, Abaqus saves file iterations for cycles 1, 4, 7,
             and so on. The default value is None.
         """
-        pass
+        ...

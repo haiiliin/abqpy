@@ -144,8 +144,8 @@ class DiagnosticPrint:
         DiagnosticPrint
             A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the DiagnosticPrint object."""
-        pass
+        ...

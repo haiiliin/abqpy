@@ -96,7 +96,6 @@ class MagneticVectorPotentialBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -137,7 +136,7 @@ class MagneticVectorPotentialBC(BoundaryCondition):
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -170,4 +169,4 @@ class MagneticVectorPotentialBC(BoundaryCondition):
             boundary condition is changed to have no amplitude reference. You should provide the
             **amplitude** argument only if it is valid for the specified step.
         """
-        pass
+        ...

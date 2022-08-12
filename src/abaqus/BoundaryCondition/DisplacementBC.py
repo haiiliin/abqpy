@@ -146,7 +146,6 @@ class DisplacementBC(BoundaryCondition):
             A :py:class:`~abaqus.BoundaryCondition.DisplacementBC.DisplacementBC` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -219,7 +218,7 @@ class DisplacementBC(BoundaryCondition):
             analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -272,4 +271,4 @@ class DisplacementBC(BoundaryCondition):
             analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         """
-        pass
+        ...

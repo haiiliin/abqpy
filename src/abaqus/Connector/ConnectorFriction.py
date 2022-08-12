@@ -273,7 +273,6 @@ class ConnectorFriction(ConnectorBehaviorOption):
         ValueError and TextError
         """
         super().__init__()
-        pass
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorFriction object.
@@ -282,4 +281,4 @@ class ConnectorFriction(ConnectorBehaviorOption):
         ------
         ValueError
         """
-        pass
+        ...

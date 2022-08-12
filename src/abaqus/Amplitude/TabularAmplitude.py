@@ -89,7 +89,6 @@ class TabularAmplitude(Amplitude):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -113,4 +112,4 @@ class TabularAmplitude(Amplitude):
         ------
         RangeError
         """
-        pass
+        ...

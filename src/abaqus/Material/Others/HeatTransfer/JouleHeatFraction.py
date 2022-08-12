@@ -42,7 +42,7 @@ class JouleHeatFraction:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the JouleHeatFraction object.
@@ -51,4 +51,4 @@ class JouleHeatFraction:
         ------
         RangeError
         """
-        pass
+        ...

@@ -61,7 +61,7 @@ class Regularization:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the Regularization object.
@@ -70,4 +70,4 @@ class Regularization:
         ------
         RangeError
         """
-        pass
+        ...

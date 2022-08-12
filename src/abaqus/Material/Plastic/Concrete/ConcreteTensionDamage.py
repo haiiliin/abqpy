@@ -83,7 +83,7 @@ class ConcreteTensionDamage:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the ConcreteTensionDamage object.
@@ -92,4 +92,4 @@ class ConcreteTensionDamage:
         ------
         RangeError
         """
-        pass
+        ...

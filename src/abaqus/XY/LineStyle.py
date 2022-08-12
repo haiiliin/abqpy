@@ -122,7 +122,7 @@ class LineStyle:
         ------
         ColorError
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -149,4 +149,4 @@ class LineStyle:
             A Float specifying the line thickness in mm to be used when drawing lines using this
             LineStyle. The default value is 0.2.
         """
-        pass
+        ...

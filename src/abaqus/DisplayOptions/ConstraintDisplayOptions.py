@@ -42,4 +42,4 @@ class ConstraintDisplayOptions:
             A Boolean specifying whether coupling constraint symbols are shown. The default value is
             ON.
         """
-        pass
+        ...

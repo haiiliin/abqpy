@@ -45,7 +45,7 @@ class SurfaceCrushTriggerAssignment:
             - A Float specifying the crush initiation angle value to be used for the surface.
             - A Float specifying the crush continuation angle value to be used for the surface.
         """
-        pass
+        ...
 
     def appendInStep(
         self, stepName: str, assignments: typing.Union[SymbolicConstant, float]
@@ -69,7 +69,7 @@ class SurfaceCrushTriggerAssignment:
             - A Float specifying the crush initiation angle value to be used for the surface.
             - A Float specifying the crush continuation angle value to be used for the surface.
         """
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing surface crush trigger assignments from a
@@ -81,4 +81,4 @@ class SurfaceCrushTriggerAssignment:
             A sequence of Ints specifying the index of each surface crush trigger assignment to
             delete.
         """
-        pass
+        ...

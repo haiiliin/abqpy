@@ -48,7 +48,7 @@ def isUpgradeRequiredForOdb(upgradeRequiredOdbPath: str):
         A Boolean indicating the result of the test. A value of True indicates that the output
         database needs to be upgraded to the current release.
     """
-    pass
+    ...
 
 
 def maxEnvelop() -> tuple[FieldOutput, FieldOutput]:
@@ -71,7 +71,7 @@ def maxEnvelop() -> tuple[FieldOutput, FieldOutput]:
     TypeError
         This function takes no keyword arguments.
     """
-    pass
+    ...
 
 
 def minEnvelop() -> tuple[FieldOutput, FieldOutput]:
@@ -94,7 +94,7 @@ def minEnvelop() -> tuple[FieldOutput, FieldOutput]:
     TypeError
         This function takes no keyword arguments.
     """
-    pass
+    ...
 
 
 @typing.overload
@@ -134,7 +134,7 @@ def openOdb(path: str, readOnly: Boolean = OFF, readInternalSets: Boolean = OFF)
         installation of Abaqus needs upgrading.
           
     """
-    pass
+    ...
 
 
 @typing.overload
@@ -177,11 +177,11 @@ def openOdb(name: str, path: str = "", readOnly: Boolean = OFF) -> Odb:
     AbaqusError: Cannot open file <filename>
         If the file is not a valid database.
     """
-    pass
+    ...
 
 
 def openOdb(name: str, *args, **kwargs):
-    pass
+    ...
 
 
 def upgradeOdb(existingOdbPath: str, upgradedOdbPath: str):
@@ -216,4 +216,4 @@ def upgradeOdb(existingOdbPath: str, upgradedOdbPath: str):
     OdbError: cannot convert database
         If the output database upgrade fails.
     """
-    pass
+    ...

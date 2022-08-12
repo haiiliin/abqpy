@@ -58,4 +58,3 @@ class LeafFromElementLabels(Leaf):
             A :py:class:`~abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels` object.
         """
         super().__init__(DEFAULT_MODEL)
-        pass

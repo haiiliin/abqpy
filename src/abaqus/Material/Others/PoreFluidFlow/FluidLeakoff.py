@@ -66,8 +66,8 @@ class FluidLeakoff:
         FluidLeakoff
             A :py:class:`~abaqus.Material.Others.PoreFluidFlow.FluidLeakoff.FluidLeakoff` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the FluidLeakoff object."""
-        pass
+        ...

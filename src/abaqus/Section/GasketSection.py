@@ -103,7 +103,6 @@ class GasketSection(Section):
             A :py:class:`~abaqus.Section.GasketSection.GasketSection` object.  and ValueError.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -139,4 +138,4 @@ class GasketSection(Section):
         ------
         ValueError
         """
-        pass
+        ...

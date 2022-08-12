@@ -21,4 +21,4 @@ class TieConstraint:
         tuple[float, ...]
             A tuple containing coordinates of the nodes pertaining to the constraint.
         """
-        pass
+        ...
