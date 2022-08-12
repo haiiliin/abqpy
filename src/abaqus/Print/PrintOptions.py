@@ -52,4 +52,4 @@ class PrintOptions:
             colors to reduce file size. The quality of the image will be compromised. The default
             value is OFF.
         """
-        pass
+        ...

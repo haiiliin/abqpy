@@ -19,4 +19,4 @@ class AutoColors:
             or represent red, green, blue components in hexadecimal form. For instance, '#FF0000'
             for red, '#00FF00' for green and '#0000FF' for blue
         """
-        pass
+        ...

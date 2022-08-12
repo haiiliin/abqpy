@@ -36,7 +36,7 @@ class SlidingTransitionAssignment:
             formulation on sliding to be assigned to the surface whose index is referenced. Possible
             values are ELEMENT_ORDER_SMOOTHING, LINEAR_SMOOTHING, and QUADRATIC_SMOOTHING.
         """
-        pass
+        ...
 
     def appendInStep(self, stepName: str, assignments: SymbolicConstant):
         """This method allows you to add sliding transition assignments to new surface pairs in a
@@ -54,7 +54,7 @@ class SlidingTransitionAssignment:
             overriding the smoothness value to be used for the first surface. Possible values of the
             SymbolicConstant are ELEMENT_ORDER_SMOOTHING, LINEAR_SMOOTHING, and QUADRATIC_SMOOTHING.
         """
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing sliding transition assignments.
@@ -64,4 +64,4 @@ class SlidingTransitionAssignment:
         indices
             A sequence of Ints specifying the index of each sliding transition assignment to delete.
         """
-        pass
+        ...

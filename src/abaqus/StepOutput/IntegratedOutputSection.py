@@ -106,7 +106,7 @@ class IntegratedOutputSection:
         IntegratedOutputSection
             An :py:class:`~abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection` object.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -149,4 +149,4 @@ class IntegratedOutputSection:
             that the 1-axis is normal to the surface, and a projection onto a nonplanar **surface** is
             such that a least-squares fit surface will be used. The default value is OFF.
         """
-        pass
+        ...

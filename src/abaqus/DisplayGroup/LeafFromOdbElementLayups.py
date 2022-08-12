@@ -43,4 +43,3 @@ class LeafFromOdbElementLayups(Leaf):
             A :py:class:`~abaqus.DisplayGroup.LeafFromOdbElementLayups.LeafFromOdbElementLayups` object.
         """
         super().__init__(DEFAULT_MODEL)
-        pass

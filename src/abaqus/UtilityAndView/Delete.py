@@ -59,4 +59,4 @@ def deleteObjectCallback(
         A Boolean specifying that the callback should be called if an object owned by the object
         specified by the **path** argument is about to be deleted. The default value is False.
     """
-    pass
+    ...

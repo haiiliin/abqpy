@@ -58,7 +58,6 @@ class ActuatorAmplitude(Amplitude):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(self, timeSpan: SymbolicConstant = STEP):
         """This method modifies the ActuatorAmplitude object.
@@ -73,4 +72,4 @@ class ActuatorAmplitude(Amplitude):
         ------
         RangeError
         """
-        pass
+        ...

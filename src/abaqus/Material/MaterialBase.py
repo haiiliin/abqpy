@@ -364,4 +364,4 @@ class MaterialBase:
         list[Material]
             A list of :py:class:`~abaqus.Material.Material.Material` objects.
         """
-        pass
+        ...

@@ -97,7 +97,6 @@ class StdInitialization(ContactInitialization):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -134,4 +133,4 @@ class StdInitialization(ContactInitialization):
         ------
         RangeError
         """
-        pass
+        ...

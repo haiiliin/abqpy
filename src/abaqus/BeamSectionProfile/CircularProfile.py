@@ -59,7 +59,6 @@ class CircularProfile(Profile):
 
         """
         super().__init__()
-        pass
 
     def setValues(self, *args, **kwargs):
         """This method modifies the CircularProfile object.
@@ -69,4 +68,4 @@ class CircularProfile(Profile):
         RangeError
 
         """
-        pass
+        ...

@@ -52,7 +52,7 @@ class Image:
             - If the contents of **fileName** are corrupt or can not be decoded:
               ValueError: Unable to decode image file
         """
-        pass
+        ...
 
     def ImageFromMovie(self, name: str, movieName: str, frame: int, time: float):
         """This method creates an Image object from a given frame of an existing Movie object.
@@ -87,4 +87,4 @@ class Image:
             - If **time** and **frame** are given in the same command:
               TypeError: keyword error on time
         """
-        pass
+        ...

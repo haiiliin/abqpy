@@ -231,7 +231,7 @@ class DamageEvolution:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the DamageEvolution object.
@@ -240,4 +240,4 @@ class DamageEvolution:
         ------
         RangeError
         """
-        pass
+        ...

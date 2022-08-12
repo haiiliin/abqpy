@@ -67,7 +67,7 @@ class AdaptiveMeshConstraint:
             degrees of freedom. If **localCsys** = None, the degrees of freedom are defined  in the global coordinate
             system. The default value is None.
         """
-        pass
+        ...
 
     def deactivate(self, stepName: str):
         """This method deactivates the adaptive mesh constraint in the specified step and all
@@ -83,7 +83,7 @@ class AdaptiveMeshConstraint:
         ------
         TextError
         """
-        pass
+        ...
 
     def move(self, fromStepName: str, toStepName: str):
         """This method moves the adaptive mesh constraint state from one step to a different step.
@@ -101,7 +101,7 @@ class AdaptiveMeshConstraint:
         ------
         TextError
         """
-        pass
+        ...
 
     def reset(self, stepName: str):
         """This method resets the adaptive mesh constraint state of the specified step to the state
@@ -117,15 +117,15 @@ class AdaptiveMeshConstraint:
         ------
         TextError
         """
-        pass
+        ...
 
     def resume(self):
         """This method resumes the adaptive mesh constraint that was previously suppressed."""
-        pass
+        ...
 
     def suppress(self):
         """This method suppresses the adaptive mesh constraint."""
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """This method allows you to delete existing adaptive mesh constraints.
@@ -135,4 +135,4 @@ class AdaptiveMeshConstraint:
         indices
             A sequence of Ints specifying the index of each adaptive mesh constraint to delete.
         """
-        pass
+        ...

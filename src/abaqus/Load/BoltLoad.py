@@ -92,7 +92,6 @@ class BoltLoad(Load):
         TextError
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -123,7 +122,7 @@ class BoltLoad(Load):
             the selected region belongs to a dependent part instance. A pre-tension section cannot
             be defined at the part level for independent and model instances.
         """
-        pass
+        ...
 
     def setValuesInStep(
         self,
@@ -151,4 +150,4 @@ class BoltLoad(Load):
             load is changed to have no amplitude reference. You should provide the **amplitude**
             argument only if it is valid for the specified step.
         """
-        pass
+        ...

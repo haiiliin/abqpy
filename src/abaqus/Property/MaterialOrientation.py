@@ -220,7 +220,7 @@ class MaterialOrientation:
         MaterialOrientation
             A :py:class:`~abaqus.Property.MaterialOrientation.MaterialOrientation` object.
         """
-        pass
+        ...
 
     def ReferenceOrientation(
         self,
@@ -332,8 +332,8 @@ class MaterialOrientation:
         MaterialOrientation
             A :py:class:`~abaqus.Property.MaterialOrientation.MaterialOrientation` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the MaterialOrientation object."""
-        pass
+        ...

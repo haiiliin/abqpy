@@ -56,7 +56,7 @@ class DataSet:
         DataSet
             A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
         """
-        pass
+        ...
 
     def setValues(self, data: tuple = ()):
         """This method modifies the data for an existing DataSet object.
@@ -66,4 +66,4 @@ class DataSet:
         data
             A sequence of pairs of Floats specifying data set type pairs.
         """
-        pass
+        ...

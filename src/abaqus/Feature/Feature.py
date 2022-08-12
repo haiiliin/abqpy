@@ -97,7 +97,7 @@ class Feature:
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def AttachmentPointsAlongDirection(
         self,
@@ -192,7 +192,7 @@ class Feature:
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def AttachmentPointsOffsetFromEdges(
         self,
@@ -317,7 +317,7 @@ class Feature:
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def DatumAxisByCylFace(self, face: str):
         """This method creates a Feature object and a DatumAxis object along the axis of a cylinder
@@ -345,7 +345,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumAxisByNormalToPlane(self, plane: str, point: int):
         """This method creates a Feature object and a DatumAxis object normal to the specified
@@ -375,7 +375,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumAxisByParToEdge(self, edge: str, point: int):
         """This method creates a Feature object and a DatumAxis object parallel to the specified
@@ -405,7 +405,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumAxisByPrincipalAxis(self, principalAxis: SymbolicConstant):
         """This method creates a Feature object and a DatumAxis object along one of the three
@@ -434,7 +434,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     @typing.overload
     def DatumAxisByRotation(self, line: str, axis: str, angle: float):
@@ -469,7 +469,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     @typing.overload
     def DatumAxisByRotation(self, line: str, point: int, angle: float):
@@ -504,10 +504,10 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumAxisByRotation(self, *args, **kwargs):
-        pass
+        ...
 
     def DatumAxisByThreePoint(self, point1: int, point2: int, point3: int):
         """This method creates a Feature object and a DatumAxis object normal to the circle
@@ -542,7 +542,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumAxisByThruEdge(self, edge: str):
         """This method creates a Feature object and a DatumAxis object along the specified edge.
@@ -569,7 +569,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumAxisByTwoPlane(self, plane1: str, plane2: str):
         """This method creates a Feature object and a DatumAxis object at the intersection of two
@@ -599,7 +599,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumAxisByTwoPoint(self, point1: int, point2: int):
         """This method creates a Feature object and a DatumAxis object along the line joining two
@@ -629,7 +629,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumCsysByDefault(self, coordSysType: SymbolicConstant, name: str = ""):
         """This method creates a Feature object and a DatumCsys object from the specified default
@@ -660,7 +660,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumCsysByOffset(
         self,
@@ -709,7 +709,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumCsysByThreePoints(
         self,
@@ -767,7 +767,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumCsysByTwoLines(
         self, coordSysType: SymbolicConstant, line1: str, line2: str, name: str = ""
@@ -807,7 +807,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumPlaneByPrincipalPlane(
         self, principalPlane: SymbolicConstant, offset: float
@@ -840,7 +840,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     @typing.overload
     def DatumPlaneByOffset(self, plane: str, flip: SymbolicConstant, offset: float):
@@ -874,7 +874,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     @typing.overload
     def DatumPlaneByOffset(self, plane: str, point: int):
@@ -905,10 +905,10 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumPlaneByOffset(self, *args, **kwargs):
-        pass
+        ...
 
     def DatumPlaneByRotation(self, plane: str, axis: str, angle: float):
         """This method creates a Feature object and a DatumPlane object by rotating a plane about
@@ -940,7 +940,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumPlaneByThreePoints(self, point1: int, point2: int, point3: int):
         """This method creates a Feature object and a DatumPlane object defined by passing through
@@ -972,7 +972,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumPlaneByLinePoint(self, line: str, point: int):
         """This method creates a Feature object and a DatumPlane object that pass through the
@@ -1002,7 +1002,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumPlaneByPointNormal(self, point: int, normal: str):
         """This method creates a Feature object and a DatumPlane object normal to the specified
@@ -1032,7 +1032,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumPlaneByTwoPoint(self, point1: int, point2: int):
         """This method creates a Feature object and a DatumPlane object midway between two points
@@ -1062,7 +1062,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumPointByCoordinate(self, coords: tuple):
         """This method creates a Feature object and a DatumPoint object at the point defined by the
@@ -1087,7 +1087,7 @@ class Feature:
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def DatumPointByOffset(self, point: int, vector: tuple):
         """This method creates a Feature object and a DatumPoint object offset from an existing
@@ -1113,7 +1113,7 @@ class Feature:
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def DatumPointByMidPoint(self, point1: int, point2: int):
         """This method creates a Feature object and a DatumPoint object midway between two points.
@@ -1138,7 +1138,7 @@ class Feature:
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def DatumPointByOnFace(
         self, face: str, edge1: str, offset1: float, edge2: str, offset2: float
@@ -1176,7 +1176,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumPointByEdgeParam(self, edge: Edge, parameter: float):
         """This method creates a Feature object and a DatumPoint object along an edge at a selected
@@ -1208,7 +1208,7 @@ class Feature:
         AbaqusException
         RangeError
         """
-        pass
+        ...
 
     def DatumPointByProjOnEdge(self, point: int, edge: str):
         """This method creates a Feature object and a DatumPoint object along an edge by projecting
@@ -1238,7 +1238,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def DatumPointByProjOnFace(self, point: int, face: Face):
         """This method creates a Feature object and a DatumPoint object on a specified face by
@@ -1269,7 +1269,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def MakeSketchTransform(
         self,
@@ -1318,7 +1318,7 @@ class Feature:
         Up direction is parallel to plane normal
             If the sketchUpEdge is parallel to the sketchPlane.
         """
-        pass
+        ...
 
     def PartitionCellByDatumPlane(self, cells: tuple[Cell], datumPlane: DatumPlane):
         """This method partitions one or more cells using the given datum plane.
@@ -1347,7 +1347,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionCellByExtendFace(self, cells: tuple[Cell], extendFace: str):
         """This method partitions one or more cells by extending the underlying geometry of a given
@@ -1377,7 +1377,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionCellByExtrudeEdge(
         self, cells: tuple[Cell], edges: str, line: str, sense: SymbolicConstant
@@ -1417,7 +1417,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionCellByPatchNCorners(self, cell: Cell, cornerPoints: tuple):
         """This method partitions a cell using an N-sided cutting patch defined by the given corner
@@ -1448,7 +1448,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionCellByPatchNEdges(self, cell: str, edges: tuple[Edge]):
         """This method partitions a cell using an N-sided cutting patch defined by the given edges.
@@ -1478,7 +1478,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionCellByPlaneNormalToEdge(
         self, cells: tuple[Cell], edge: Edge, point: int
@@ -1512,7 +1512,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionCellByPlanePointNormal(
         self, cells: tuple[Cell], point: int, normal: str
@@ -1546,7 +1546,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionCellByPlaneThreePoints(
         self, cells: tuple[Cell], point1: int, point2: int, point3: int
@@ -1582,7 +1582,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionCellBySweepEdge(
         self, cells: tuple[Cell], edges: tuple[Edge], sweepPath: Edge
@@ -1619,7 +1619,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionEdgeByDatumPlane(self, edges: tuple[Edge], datumPlane: DatumPlane):
         """This method partitions an edge where it intersects with a datum plane.
@@ -1648,7 +1648,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionEdgeByParam(self, edges: tuple[Edge], parameter: float):
         """This method partitions one or more edges at the given normalized edge parameter.
@@ -1678,7 +1678,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionEdgeByPoint(self, edge: Edge, point: int):
         """This method partitions an edge at the given point.
@@ -1707,7 +1707,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionFaceByAuto(self, face: Face):
         """This method automatically partitions a target face into simple regions that can be
@@ -1731,7 +1731,7 @@ class Feature:
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def PartitionFaceByCurvedPathEdgeParams(
         self, face: Face, edge1: Edge, parameter1: float, edge2: Edge, parameter2: float
@@ -1771,7 +1771,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionFaceByCurvedPathEdgePoints(
         self, face: Face, edge1: Edge, point1: int, edge2: Edge, point2: int
@@ -1809,7 +1809,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionFaceByDatumPlane(self, faces: tuple[Face], datumPlane: DatumPlane):
         """This method partitions one or more faces using the given datum plane.
@@ -1834,7 +1834,7 @@ class Feature:
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def PartitionFaceByExtendFace(self, faces: tuple[Face], extendFace: Face):
         """This method partitions one or more faces by extending the underlying geometry of another
@@ -1861,7 +1861,7 @@ class Feature:
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def PartitionFaceByIntersectFace(
         self, faces: tuple[Face], cuttingFaces: tuple[Face]
@@ -1889,7 +1889,7 @@ class Feature:
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def PartitionFaceByProjectingEdges(
         self, faces: tuple[Face], edges: tuple[Edge], extendEdges: Boolean = False
@@ -1921,7 +1921,7 @@ class Feature:
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def PartitionFaceByShortestPath(self, faces: tuple[Face], point1: int, point2: int):
         """This method partitions one or more faces using a minimum distance path between the two
@@ -1955,7 +1955,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionFaceBySketch(
         self,
@@ -1997,7 +1997,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionFaceBySketchDistance(
         self,
@@ -2049,7 +2049,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionFaceBySketchRefPoint(
         self,
@@ -2099,7 +2099,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def PartitionFaceBySketchThruAll(
         self,
@@ -2148,7 +2148,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def ReferencePoint(
         self,
@@ -2204,7 +2204,7 @@ class Feature:
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def WirePolyLine(
         self,
@@ -2255,7 +2255,7 @@ class Feature:
         feature: Feature
             A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
-        pass
+        ...
 
     def isSuppressed(self):
         """This method queries the suppressed state of the feature.
@@ -2265,14 +2265,14 @@ class Feature:
         Boolean
             A Boolean value of True if the feature is suppressed and False if it is not suppressed.
         """
-        pass
+        ...
 
     def restore(self):
         """This method restores the parameters of a feature to the value they had when the backup
         method was invoked on the part or assembly. Use the restore method after the backup
         method.
         """
-        pass
+        ...
 
     def resume(self):
         """This method resumes suppressed features. Resuming a feature fully restores it to the
@@ -2280,7 +2280,7 @@ class Feature:
         features, or just selected features. When you resume a child feature, Abaqus/CAE also
         resumes the parent features automatically.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -2319,7 +2319,7 @@ class Feature:
         ------
         AbaqusException
         """
-        pass
+        ...
 
     def suppress(self):
         """This method suppresses features. Suppressing a feature is equivalent to temporarily
@@ -2328,4 +2328,4 @@ class Feature:
         addition, if you suppress a parent feature, all of its child features are also
         suppressed automatically. Suppressed features can be restored with the resume command.
         """
-        pass
+        ...

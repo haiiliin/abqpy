@@ -44,7 +44,7 @@ class InelasticHeatFraction:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the InelasticHeatFraction object.
@@ -53,4 +53,4 @@ class InelasticHeatFraction:
         ------
         RangeError
         """
-        pass
+        ...

@@ -44,8 +44,7 @@ class SizingFrozenArea(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.SizingFrozenArea.SizingFrozenArea` object.
         """
         super().__init__()
-        pass
 
     def setValues(self, *args, **kwargs):
         """This method modifies the SizingFrozenArea object."""
-        pass
+        ...

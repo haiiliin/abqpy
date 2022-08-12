@@ -243,7 +243,6 @@ class ConnectorSection(Section):
         RangeError
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -350,4 +349,4 @@ class ConnectorSection(Section):
         ------
         RangeError
         """
-        pass
+        ...

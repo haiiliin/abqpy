@@ -29,7 +29,7 @@ class Load:
         stepName
             A String specifying the name of the step in which the load is deactivated.
         """
-        pass
+        ...
 
     def move(self, fromStepName: str, toStepName: str):
         """This method moves the load state object from one step to a different step.
@@ -41,7 +41,7 @@ class Load:
         toStepName
             A String specifying the name of the step to which the load state is moved.
         """
-        pass
+        ...
 
     def reset(self, stepName: str):
         """This method resets the load state of the specified step to the state of the previous
@@ -52,15 +52,15 @@ class Load:
         stepName
             A String specifying the name of the step in which the load state is reset.
         """
-        pass
+        ...
 
     def resume(self):
         """This method resumes the load that was previously suppressed."""
-        pass
+        ...
 
     def suppress(self):
         """This method suppresses the load."""
-        pass
+        ...
 
     def delete(self, indices: tuple):
         """This method allows you to delete existing loads.
@@ -70,4 +70,4 @@ class Load:
         indices
             A sequence of Ints specifying the index of each load to delete.
         """
-        pass
+        ...

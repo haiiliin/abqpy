@@ -81,7 +81,7 @@ class XYCurve:
         XYCurve
             An :py:class:`~abaqus.XY.XYCurve.XYCurve` object.
         """
-        pass
+        ...
 
     def setValues(
         self,
@@ -108,4 +108,4 @@ class XYCurve:
             A Boolean specifying whether to use the system supplied legend label. The default value
             is ON.
         """
-        pass
+        ...

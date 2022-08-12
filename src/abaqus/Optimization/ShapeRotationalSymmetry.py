@@ -138,7 +138,6 @@ class ShapeRotationalSymmetry(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -185,4 +184,4 @@ class ShapeRotationalSymmetry(GeometricRestriction):
             A Float specifying the geometric tolerance in the 3-direction. The default value is
             0.01.
         """
-        pass
+        ...

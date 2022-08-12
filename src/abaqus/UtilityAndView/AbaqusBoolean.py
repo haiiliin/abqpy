@@ -43,4 +43,4 @@ class AbaqusBoolean:
         AbaqusBoolean
             An :py:class:`~abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean` object.
         """
-        pass
+        ...

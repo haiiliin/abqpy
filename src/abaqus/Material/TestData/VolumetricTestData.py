@@ -86,8 +86,8 @@ class VolumetricTestData:
         VolumetricTestData
             A :py:class:`~abaqus.Material.TestData.VolumetricTestData.VolumetricTestData` object.
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the VolumetricTestData object."""
-        pass
+        ...

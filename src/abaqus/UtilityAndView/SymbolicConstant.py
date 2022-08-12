@@ -42,4 +42,4 @@ class SymbolicConstant:
         SymbolicConstant
             A :py:class:`~abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant` object.
         """
-        pass
+        ...

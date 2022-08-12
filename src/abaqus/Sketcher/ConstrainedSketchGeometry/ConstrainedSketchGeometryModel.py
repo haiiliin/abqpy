@@ -44,7 +44,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         geometry: ConstrainedSketchGeometry
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
         """
-        pass
+        ...
 
     def ArcByCenterEnds(
         self,
@@ -85,7 +85,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         ------
         If incompatible data are given, the second endpoint is ignored
         """
-        pass
+        ...
 
     def ArcByStartEndTangent(
         self, point1: tuple[float, ...], point2: tuple[float, ...], vector: tuple
@@ -114,7 +114,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         geometry: ConstrainedSketchGeometry
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
         """
-        pass
+        ...
 
     def CircleByCenterPerimeter(self, center: tuple[float, ...], point1: tuple[float, ...]):
         """This method constructs a circle using a center point and a point on the perimeter. The
@@ -139,7 +139,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         geometry: ConstrainedSketchGeometry
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
         """
-        pass
+        ...
 
     def ConstructionCircleByCenterPerimeter(
         self, center: tuple[float, ...], point1: tuple[float, ...]
@@ -167,7 +167,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         geometry: ConstrainedSketchGeometry
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
         """
-        pass
+        ...
 
     def EllipseByCenterPerimeter(
         self, center: tuple[float, ...], axisPoint1: tuple[float, ...], axisPoint2: tuple[float, ...]
@@ -197,7 +197,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         geometry: ConstrainedSketchGeometry
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
         """
-        pass
+        ...
 
     def FilletByRadius(
         self,
@@ -244,7 +244,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         Range Error: cannot construct the Fillet specified
             If the radius given cannot be used to create a fillet between the two curves given.
         """
-        pass
+        ...
 
     def Line(self, point1: tuple[float, ...], point2: tuple[float, ...]):
         """This method creates a line between two given points.
@@ -268,7 +268,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         geometry: ConstrainedSketchGeometry
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
         """
-        pass
+        ...
 
     def ConstructionLine(self, point1: tuple[float, ...], point2: tuple[float, ...]):
         """This method creates an oblique construction line that runs between two given points.
@@ -292,7 +292,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         geometry: ConstrainedSketchGeometry
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
         """
-        pass
+        ...
 
     def Spline(self, points: tuple, constrainPoints: Boolean = True):
         """This method creates a spline curve running through a sequence of points.
@@ -318,7 +318,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         geometry: ConstrainedSketchGeometry
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
         """
-        pass
+        ...
 
     def Spot(self, point: tuple[float, ...]):
         """This method creates a spot construction point located at the specified coordinates. The
@@ -341,7 +341,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         geometry: ConstrainedSketchGeometry
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
         """
-        pass
+        ...
 
     def getVertices(self):
         """This method returns an list of ConstrainedSketchVertex objects which are a part of the
@@ -352,7 +352,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         vertices: list[ConstrainedSketchVertex]
             A list of ConstrainedSketchVertex objects
         """
-        pass
+        ...
 
     def getSize(self):
         """This method returns the length of the given ConstrainedSketchGeometry object.
@@ -362,7 +362,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         length: int
             The length of the given ConstrainedSketchGeometry
         """
-        pass
+        ...
 
     def getPointAtDistance(
         self, point: tuple[float, ...], distance: str, percentage: Boolean = OFF
@@ -387,4 +387,4 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         points: tuple[float, ...]
             A pair of floats representing the point along the edge
         """
-        pass
+        ...

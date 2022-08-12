@@ -61,7 +61,7 @@ class Layer:
         Layer
             A :py:class:`~abaqus.Canvas.Layer.Layer` object.
         """
-        pass
+        ...
 
     def moveBefore(self, name: str):
         """This method moves the layer object before another object in the layer repository.
@@ -71,7 +71,7 @@ class Layer:
         name
             A String specifying the name of the other Layer object.
         """
-        pass
+        ...
 
     def moveAfter(self, name: str):
         """This method moves the layer object after another object in the layer repository.
@@ -81,4 +81,4 @@ class Layer:
         name
             A String specifying the name of the other Layer object.
         """
-        pass
+        ...

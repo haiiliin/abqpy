@@ -86,7 +86,7 @@ class AcousticMedium:
         ------
         RangeError
         """
-        pass
+        ...
 
     def setValues(self, *args, **kwargs):
         """This method modifies the AcousticMedium object.
@@ -95,4 +95,4 @@ class AcousticMedium:
         ------
         RangeError
         """
-        pass
+        ...

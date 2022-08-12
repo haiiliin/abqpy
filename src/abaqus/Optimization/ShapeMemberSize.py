@@ -73,7 +73,6 @@ class ShapeMemberSize(GeometricRestriction):
             A :py:class:`~abaqus.Optimization.ShapeMemberSize.ShapeMemberSize` object.
         """
         super().__init__()
-        pass
 
     def setValues(
         self,
@@ -99,4 +98,4 @@ class ShapeMemberSize(GeometricRestriction):
         nodeGroupRegion
             A Node Region object specifying the check node group.
         """
-        pass
+        ...
