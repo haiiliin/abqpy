@@ -1,7 +1,8 @@
 from abaqusConstants import *
+from ..OptionsBase import OptionsBase
 
 
-class PsOptions:
+class PsOptions(OptionsBase):
     """The PsOptions object stores the settings that Abaqus uses when printing using PostScript
     format. The PsOptions object has no constructor. Abaqus creates the **psOptions** member
     when a session is started.
@@ -65,6 +66,7 @@ class PsOptions:
 
     def setValues(
         self,
+        *,
         paperSize: SymbolicConstant = LETTER,
         topMargin: float = 0.5,
         bottomMargin: float = 0.5,
@@ -142,15 +144,17 @@ class PsOptions:
         RangeError: topMargin and bottomMargin must produce image height >= minHeight
             If **topMargin** + **bottomMargin** is out of range.
         """
-        self.paperSize = paperSize
-        self.topMargin = topMargin
-        self.bottomMargin = bottomMargin
-        self.leftMargin = leftMargin
-        self.rightMargin = rightMargin
-        self.orientation = orientation
-        self.logo = logo
-        self.date = date
-        self.resolution = resolution
-        self.fontType = fontType
-        self.imageFormat = imageFormat
-        self.shadingQuality = shadingQuality
+        super().setValues(
+            paperSize=paperSize,
+            topMargin=topMargin,
+            bottomMargin=bottomMargin,
+            leftMargin=leftMargin,
+            rightMargin=rightMargin,
+            orientation=orientation,
+            logo=logo,
+            date=date,
+            resolution=resolution,
+            fontType=fontType,
+            imageFormat=imageFormat,
+            shadingQuality=shadingQuality,
+        )
