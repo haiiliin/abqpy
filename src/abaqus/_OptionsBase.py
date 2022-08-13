@@ -53,5 +53,4 @@ class _CopyOptionsBase(_OptionsBase):
                 setattr(self, key, getattr(options, key))
 
         for key, value in kwargs:
-            if value is not None:
-                setattr(self, key, value)
+            setattr(self, key, value)
