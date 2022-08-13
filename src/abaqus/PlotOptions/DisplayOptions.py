@@ -1,5 +1,5 @@
 from abaqusConstants import *
-from ._CopyOptionsBase import _CopyOptionsBase
+from .._OptionsBase import _CopyOptionsBase
 
 
 class DisplayOptions(_CopyOptionsBase):

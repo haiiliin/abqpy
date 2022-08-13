@@ -1,6 +1,6 @@
 from abaqusConstants import *
 from ..Datum.DatumCsys import DatumCsys
-from ._CopyOptionsBase import _CopyOptionsBase
+from .._OptionsBase import _CopyOptionsBase
 
 
 class BasicOptions(_CopyOptionsBase):
