@@ -1,3 +1,5 @@
+import typing
+
 from .CommandRegister import CommandRegister
 
 
@@ -35,7 +37,7 @@ class RepositorySupport(CommandRegister):
         """
         super().__init__()
 
-    def Repository(self, name: str, constructors: str):
+    def Repository(self, name: str, constructors: typing.Union[typing.Callable, typing.List[typing.Callable]]) -> None:
         """This method installs a repository on the class. The repository is an instance of a
         RegisteredDictionary class. Refer to RegisteredDictionary for details on its methods.
         The objects stored in the repository are assumed to have an attribute called **name** that
@@ -50,4 +52,5 @@ class RepositorySupport(CommandRegister):
             A constructor or sequence of constructors specifying which classes will store their
             instances in the repository.
         """
+        # TODO: Implement this method
         ...
