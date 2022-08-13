@@ -19,18 +19,22 @@ class Annotation:
 
     def bringToFront(self):
         """This method brings the Annotation object to the top of the annotation stack."""
+        # TODO: implement this method
         ...
 
     def sendToBack(self):
         """This method sends the Annotation object to the bottom of the annotation stack."""
+        # TODO: implement this method
         ...
 
     def bringForward(self):
         """This method brings the Annotation object one position up in the annotation stack."""
+        # TODO: implement this method
         ...
 
     def sendBackward(self):
         """This method sends the Annotation object one position down in the annotation stack."""
+        # TODO: implement this method
         ...
 
     def moveBefore(self, name: str):
@@ -41,6 +45,7 @@ class Annotation:
         name
             A String specifying the name of the other Annotation object.
         """
+        # TODO: implement this method
         ...
 
     def moveAfter(self, name: str):
@@ -51,6 +56,7 @@ class Annotation:
         name
             A String specifying the name of the other Annotation object.
         """
+        # TODO: implement this method
         ...
 
     def translate(self, x: float = None, y: float = None):
@@ -63,4 +69,5 @@ class Annotation:
         y
             A Float specifying the **Y** translation amount in millimeters.
         """
+        # TODO: implement this method
         ...
