@@ -14,13 +14,41 @@ class PrintOptions:
             session.printOptions
     """
 
+    #: A SymbolicConstant specifying how the image is rendered. Possible values are
+    #: BLACK_AND_WHITE, GREYSCALE, and COLOR. The default value is COLOR.
+    rendition: SymbolicConstant = COLOR
+
+    #: A Boolean specifying whether the output includes the viewport border and title. The
+    #: default value is ON.
+    vpDecorations: Boolean = ON
+
+    #: A Boolean specifying whether the output includes viewport backgrounds. The default value is
+    #: OFF.
+    vpBackground: Boolean = OFF
+
+    #: A Boolean specifying whether the output includes the view compass. The default value is OFF.
+    compass: Boolean = OFF
+
+    #: A String specifying the default print command that will be used by the printToPrinter method
+    #: if no **printCommand** argument is provided. The default value is "lpr".
+    printCommand: str = "lpr"
+
+    #: A Boolean specifying whether to delete the temporary files created when an image is printed.
+    #: The default value is ON. You should set the **deleteTemporaryFiles** argument to False if your
+    #: printer does not support print spooling.
+    deleteTemporaryFiles: Boolean = ON
+
+    #: A Boolean specifying whether the raster image printed is reduced from true color to 256 colors
+    #: to reduce file size. The quality of the image will be compromised. The default value is OFF.
+    reduceColors: Boolean = OFF
+
     def setValues(
         self,
         rendition: SymbolicConstant = COLOR,
         vpDecorations: Boolean = ON,
         vpBackground: Boolean = OFF,
         compass: Boolean = OFF,
-        printCommand: str = "",
+        printCommand: str = "lpr",
         deleteTemporaryFiles: Boolean = ON,
         reduceColors: Boolean = OFF,
     ):
@@ -45,11 +73,17 @@ class PrintOptions:
             method if no **printCommand** argument is provided. The default value is "lpr".
         deleteTemporaryFiles
             A Boolean specifying whether to delete the temporary files created when an image is
-            printed. The default value is ON.You should set the **deleteTemporaryFiles** argument to
+            printed. The default value is ON. You should set the **deleteTemporaryFiles** argument to
             False if your printer does not support print spooling.
         reduceColors
             A Boolean specifying whether the raster image printed is reduced from true color to 256
             colors to reduce file size. The quality of the image will be compromised. The default
             value is OFF.
         """
-        ...
+        self.rendition = rendition
+        self.vpDecorations = vpDecorations
+        self.vpBackground = vpBackground
+        self.compass = compass
+        self.printCommand = printCommand
+        self.deleteTemporaryFiles = deleteTemporaryFiles
+        self.reduceColors = reduceColors
