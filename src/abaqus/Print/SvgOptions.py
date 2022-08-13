@@ -1,7 +1,8 @@
 from abaqusConstants import *
+from ..OptionsBase import OptionsBase
 
 
-class SvgOptions:
+class SvgOptions(OptionsBase):
     """The SvgOptions object stores the settings that Abaqus uses when printing in SVG format.
     The SvgOptions object has no constructor. Abaqus creates the **svgOptions** member when a
     session is started.
@@ -23,7 +24,7 @@ class SvgOptions:
     #: be at least as large as the screen dimensions.
     imageSize: SymbolicConstant = SIZE_ON_SCREEN
 
-    def setValues(self, imageSize: SymbolicConstant = SIZE_ON_SCREEN):
+    def setValues(self, *, imageSize: SymbolicConstant = SIZE_ON_SCREEN):
         """This method modifies the SvgOptions object.
 
         Parameters
@@ -47,4 +48,4 @@ class SvgOptions:
             for a given display and **maxWidth** and **maxHeight** are the largest allowable number of
             pixels supported by the system graphics).
         """
-        self.imageSize = imageSize
+        super().setValues(imageSize=imageSize)

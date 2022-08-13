@@ -1,9 +1,10 @@
 import typing
 
 from abaqusConstants import *
+from ..OptionsBase import OptionsBase
 
 
-class PageSetupOptions:
+class PageSetupOptions(OptionsBase):
     """The PageSetupOptions object stores the settings that Abaqus uses when printing using a
     Windows printer. The PageSetupOptions object has no constructor. Abaqus creates the
     **pageSetupOptions** member when a session is started.
@@ -57,6 +58,7 @@ class PageSetupOptions:
 
     def setValues(
         self,
+        *,
         imageSize: typing.Union[SymbolicConstant, float] = FIT_TO_PAGE,
         units: SymbolicConstant = INCHES,
         quality: SymbolicConstant = MEDIUM,
@@ -115,13 +117,15 @@ class PageSetupOptions:
         RangeError: topMargin and bottomMargin must produce image height >= minHeight
             If **topMargin** + **bottomMargin** is out of range.
         """
-        self.imageSize = imageSize
-        self.units = units
-        self.quality = quality
-        self.topMargin = topMargin
-        self.bottomMargin = bottomMargin
-        self.leftMargin = leftMargin
-        self.rightMargin = rightMargin
-        self.orientation = orientation
-        self.logo = logo
-        self.date = date
+        super().setValues(
+            imageSize=imageSize,
+            units=units,
+            quality=quality,
+            topMargin=topMargin,
+            bottomMargin=bottomMargin,
+            leftMargin=leftMargin,
+            rightMargin=rightMargin,
+            orientation=orientation,
+            logo=logo,
+            date=date,
+        )

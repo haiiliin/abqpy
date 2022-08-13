@@ -1,9 +1,10 @@
 import typing
 
 from abaqusConstants import *
+from ..OptionsBase import OptionsBase
 
 
-class EpsOptions:
+class EpsOptions(OptionsBase):
     """The EpsOptions object stores the settings that Abaqus uses when printing using
     Encapsulated PostScript format. The EpsOptions object has no constructor. Abaqus creates
     the **epsOptions** member when a session is started.
@@ -17,7 +18,7 @@ class EpsOptions:
     """
     #: The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the width and height
     #: of the image in the units specified by **units**. Possible numeric values are **imageSize**
-    #: ≥≥ (*minWidth*, **minHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value
+    #: ≥ (*minWidth*, **minHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value
     #: of width and height (*minWidth* and **minHeight**) is 10 mm (approximately 0.4 inches).
     imageSize: typing.Union[SymbolicConstant, float] = SIZE_ON_SCREEN
 
@@ -47,6 +48,7 @@ class EpsOptions:
 
     def setValues(
         self,
+        *,
         imageSize: typing.Union[SymbolicConstant, float] = SIZE_ON_SCREEN,
         units: SymbolicConstant = INCHES,
         resolution: SymbolicConstant = DPI_150,
@@ -61,7 +63,7 @@ class EpsOptions:
         imageSize
             The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the width and height
             of the image in the units specified by **units**. Possible numeric values are **imageSize**
-            ≥≥ (*minWidth*, **minHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value
+            ≥ (*minWidth*, **minHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value
             of width and height (*minWidth* and **minHeight**) is 10 mm (approximately 0.4 inches).
         units
             A SymbolicConstant specifying the units of the **imageSize** argument. This argument is
@@ -88,9 +90,11 @@ class EpsOptions:
         RangeError: imageSize must be SIZE_ON_SCREEN or a sequence of 2 Floats >= (*minWidth*, **minHeight**)
             If either element of **imageSize** is out of range.
         """
-        self.imageSize = imageSize
-        self.units = units
-        self.resolution = resolution
-        self.fontType = fontType
-        self.imageFormat = imageFormat
-        self.shadingQuality = shadingQuality
+        super().setValues(
+            imageSize=imageSize,
+            units=units,
+            resolution=resolution,
+            fontType=fontType,
+            imageFormat=imageFormat,
+            shadingQuality=shadingQuality
+        )
