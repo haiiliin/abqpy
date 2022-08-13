@@ -1,7 +1,8 @@
 from abaqusConstants import *
+from ..OptionsBase import OptionsBase
 
 
-class PngOptions:
+class PngOptions(OptionsBase):
     """The PngOptions object stores the settings that Abaqus uses when printing in PNG format.
     The PngOptions object has no constructor. Abaqus creates the **pngOptions** member when a
     session is started.
@@ -18,7 +19,7 @@ class PngOptions:
     #: screen dimensions.
     imageSize: SymbolicConstant = SIZE_ON_SCREEN
 
-    def setValues(self, imageSize: SymbolicConstant = SIZE_ON_SCREEN):
+    def setValues(self, *, imageSize: SymbolicConstant = SIZE_ON_SCREEN):
         """This method modifies the PngOptions object.
 
         Parameters
@@ -43,4 +44,4 @@ class PngOptions:
             for a given display and **maxWidth** and **maxHeight** are the largest allowable number of
             pixels supported by the system graphics).
         """
-        self.imageSize = imageSize
+        super().setValues(imageSize=imageSize)
