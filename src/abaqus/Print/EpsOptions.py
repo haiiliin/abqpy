@@ -1,10 +1,10 @@
 import typing
 
 from abaqusConstants import *
-from ..OptionsBase import OptionsBase
+from .._OptionsBase import _OptionsBase
 
 
-class EpsOptions(OptionsBase):
+class EpsOptions(_OptionsBase):
     """The EpsOptions object stores the settings that Abaqus uses when printing using
     Encapsulated PostScript format. The EpsOptions object has no constructor. Abaqus creates
     the **epsOptions** member when a session is started.
