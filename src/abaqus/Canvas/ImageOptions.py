@@ -56,6 +56,7 @@ class ImageOptions(_CopyOptionsBase):
 
     #: A SymbolicConstant specifying the relative position of the image in the viewport when
     #: **positionMethod** =AUTO_ALIGN. Possible values are:
+    #: 
     #: - BOTTOM_LEFT
     #: - BOTTOM_CENTER
     #: - BOTTOM_RIGHT
