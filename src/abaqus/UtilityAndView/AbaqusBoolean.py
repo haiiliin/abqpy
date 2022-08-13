@@ -1,4 +1,4 @@
-class AbaqusBoolean:
+class AbaqusBoolean(int):
     """The AbaqusBoolean object is used in a similar way to the SymbolicConstant object. If you
     pass an AbaqusBoolean object to the Python repr() function, the function returns the
     text without quotes. In effect, the text is the variable that, by convention, refers to
@@ -43,4 +43,4 @@ class AbaqusBoolean:
         AbaqusBoolean
             An :py:class:`~abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean` object.
         """
-        ...
+        super().__init__(value)
