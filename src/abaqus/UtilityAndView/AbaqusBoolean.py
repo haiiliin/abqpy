@@ -45,3 +45,6 @@ class AbaqusBoolean(int):
             An :py:class:`~abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean` object.
         """
         super().__init__(value)
+
+
+Boolean = AbaqusBoolean

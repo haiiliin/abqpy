@@ -1,7 +1,3 @@
-# encoding: utf-8
-# module abaqusConstantsSupplement
-# from D:\SIMULIA\Abaqus\6.14-4\tools\SMApy\python2.7\lib\site-packages\abaqusConstantsSupplement.pyc
-# by generator 1.147
 """
 abaqusConstantsSupplement.py
 
@@ -9,11 +5,8 @@ This module is included by abaqusConstants and contains SymbolicConstants
 required by ABAQUS that are not defined in C++
 """
 
-from abaqus.UtilityAndView.AbaqusBoolean import AbaqusBoolean
 from abaqus.UtilityAndView.SymbolicConstant import SymbolicConstant
 
-
-Boolean = AbaqusBoolean
 
 # Variables with simple values
 
@@ -2537,4 +2530,3 @@ ZAXIS = SymbolicConstant('ZAXIS')
 ZERO = SymbolicConstant('ZERO')
 ZERO_PRESSURE = SymbolicConstant('ZERO_PRESSURE')
 ZSYMM = SymbolicConstant('ZSYMM')
-# okay decompiling abaqusConstants.pyc
