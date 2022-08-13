@@ -1,8 +1,8 @@
 from abaqusConstants import *
-from ..OptionsBase import OptionsBase
+from .._OptionsBase import _OptionsBase
 
 
-class SvgOptions(OptionsBase):
+class SvgOptions(_OptionsBase):
     """The SvgOptions object stores the settings that Abaqus uses when printing in SVG format.
     The SvgOptions object has no constructor. Abaqus creates the **svgOptions** member when a
     session is started.
