@@ -4,15 +4,15 @@ remove the highlighting.
 """
 
 
-def highlight(object: str):
+def highlight(object):
     """This method highlights an object in the current viewport.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                highlight
+            highlight
 
     Parameters
     ----------
@@ -20,7 +20,9 @@ def highlight(object: str):
         An object specifying the object in the current viewport to be highlighted. You can
         specify only a single object. Abaqus/CAE highlights only the edges of a face when
         highlighting a surface and a face together. The following objects are supported:
-        **For the MDB**
+
+        - **For the MDB**
+
             - ConstrainedSketchVertex
             - Edge
             - Face
@@ -38,7 +40,8 @@ def highlight(object: str):
             - Boundary condition
             - Predefined field
             - Display group
-        **For the ODB**
+        - **For the ODB**
+
             - Node
             - Element
             - Display group
@@ -46,18 +49,19 @@ def highlight(object: str):
     Returns
     -------
     """
+    # TODO: Implement this method.
     ...
 
 
-def unhighlight(object: str):
+def unhighlight(object):
     """This method removes highlighting from an object in the current viewport.
 
     .. note:: 
-            This function can be accessed by:
+        This function can be accessed by:
 
-            .. code-block:: python
+        .. code-block:: python
 
-                unhighlight
+            unhighlight
 
     Parameters
     ----------
@@ -69,4 +73,5 @@ def unhighlight(object: str):
     Returns
     -------
     """
+    # TODO: Implement this method.
     ...
