@@ -1,8 +1,8 @@
 from abaqusConstants import *
-from ..OptionsBase import OptionsBase
+from .._OptionsBase import _OptionsBase
 
 
-class PngOptions(OptionsBase):
+class PngOptions(_OptionsBase):
     """The PngOptions object stores the settings that Abaqus uses when printing in PNG format.
     The PngOptions object has no constructor. Abaqus creates the **pngOptions** member when a
     session is started.
