@@ -1,7 +1,8 @@
 from abaqusConstants import *
+from .._OptionsBase import _OptionsBase
 
 
-class StreamOptions:
+class StreamOptions(_OptionsBase):
     """The StreamOptions object stores values and attributes associated with a stream plot. The
     StreamOptions object has no constructor command. Abaqus creates a
     *defaultOdbDisplay.streamOptions* member when you import the Visualization module.
@@ -9,9 +10,10 @@ class StreamOptions:
     values from *defaultOdbDisplay.streamOptions*. Abaqus creates the **odbDisplay** member
     when a viewport is created, using the values from **defaultOdbDisplay**.
     StreamOptions objects are accessed in one of two ways:
+
     - The default stream options. These settings are used as defaults when other
-    **streamOptions** members are created. These settings can be set to customize user
-    preferences.
+      **streamOptions** members are created. These settings can be set to customize user
+      preferences.
     - The stream options associated with a particular viewport.
 
     .. note:: 
@@ -27,6 +29,7 @@ class StreamOptions:
 
     def setValues(
         self,
+        *,
         colorMethod: SymbolicConstant = UNIFORM,
         uniformColor: str = "",
         lineThickness: float = 6,
@@ -49,4 +52,10 @@ class StreamOptions:
         numArrows
             An Int specifying the number of arrows on each stream line. The default value is 10.
         """
-        ...
+        super().setValues(
+            colorMethod=colorMethod,
+            uniformColor=uniformColor,
+            lineThickness=lineThickness,
+            showArrow=showArrow,
+            numArrows=numArrows,
+        )
