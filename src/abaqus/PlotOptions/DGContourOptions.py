@@ -64,7 +64,7 @@ class DGContourOptions:
     tickmarkAxisLength: SymbolicConstant = MEDIUM
 
     #: A Float specifying the base contour value defining the tick mark axis contour value that
-    #: intersects the elements. Possible values are **autoMinValue** ≤≤ **tickmarkBaseValue** ≤≤
+    #: intersects the elements. Possible values are **autoMinValue** ≤ **tickmarkBaseValue** ≤
     #: **autoMaxValue**. The default value is 0.0.
     tickmarkBaseValue: float = 0
 
