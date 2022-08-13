@@ -1,7 +1,8 @@
 from abaqusConstants import *
+from ._CopyOptionsBase import _CopyOptionsBase
 
 
-class ViewCutOptions:
+class ViewCutOptions(_CopyOptionsBase):
     """The ViewCutOptions object stores values and attributes associated with a view cut plot.
     The ViewCutOptions object has no constructor command. Abaqus creates a
     *defaultOdbDisplay.viewCutOptions* member when you import the Visualization module.
@@ -108,6 +109,7 @@ class ViewCutOptions:
     def setValues(
         self,
         options: "ViewCutOptions" = None,
+        *,
         belowOptions: str = None,
         useBelowOptions: Boolean = OFF,
         onOptions: str = None,
@@ -135,9 +137,9 @@ class ViewCutOptions:
         Parameters
         ----------
         options
-            A :py:class:`~abaqus.PlotOptions.ViewCutOptions.ViewCutOptions` object from which values are to be copied. If other arguments are also
-            supplied to setValues, they will override the values in **options**. The default value is
-            None.
+            A :py:class:`~abaqus.PlotOptions.ViewCutOptions.ViewCutOptions` object from which values are to be copied.
+            If other arguments are also supplied to setValues, they will override the values in **options**. The default
+            value is None.
         belowOptions
             None or an OptionArg object specifying values to be used for defining the options
             applicable on the model below the cut. The default value is None.
@@ -202,4 +204,27 @@ class ViewCutOptions:
         ------
         RangeError
         """
-        ...
+        super().setValues(
+            options=options,
+            aboveOptions=aboveOptions,
+            belowOptions=belowOptions,
+            componentResolution=componentResolution,
+            csysName=csysName,
+            cutFreeBodyMax=cutFreeBodyMax,
+            cutFreeBodyMin=cutFreeBodyMin,
+            displaySlicing=displaySlicing,
+            freeBodyCutThru=freeBodyCutThru,
+            freeBodyStepThru=freeBodyStepThru,
+            freeBodySumOnPath=freeBodySumOnPath,
+            numCutFreeBody=numCutFreeBody,
+            onOptions=onOptions,
+            pathName=pathName,
+            showHeatFlowRate=showHeatFlowRate,
+            slicingAtPathNodes=slicingAtPathNodes,
+            summationLoc=summationLoc,
+            summationPoint=summationPoint,
+            useAboveOptions=useAboveOptions,
+            useBelowOptions=useBelowOptions,
+            useOnOptions=useOnOptions,
+            yAxis=yAxis,
+        )
