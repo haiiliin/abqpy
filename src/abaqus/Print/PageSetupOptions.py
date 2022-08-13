@@ -1,10 +1,10 @@
 import typing
 
 from abaqusConstants import *
-from ..OptionsBase import OptionsBase
+from .._OptionsBase import _OptionsBase
 
 
-class PageSetupOptions(OptionsBase):
+class PageSetupOptions(_OptionsBase):
     """The PageSetupOptions object stores the settings that Abaqus uses when printing using a
     Windows printer. The PageSetupOptions object has no constructor. Abaqus creates the
     **pageSetupOptions** member when a session is started.
