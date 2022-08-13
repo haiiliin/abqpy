@@ -1,7 +1,7 @@
 import inspect
 
 
-class OptionsBase:
+class _OptionsBase:
 
     @classmethod
     def get_user_attributes(cls) -> list[str]:
@@ -17,7 +17,7 @@ class OptionsBase:
                 if key not in boring and not key.startswith('_') and not callable(value)]
 
     def setValues(self, **kwargs):
-        """This method modifies the OptionsBase object.
+        """This method modifies the _OptionsBase object.
 
         Parameters
         ----------
