@@ -1,7 +1,8 @@
 from abaqusConstants import *
+from .._OptionsBase import _OptionsBase
 
 
-class FreeBodyOptions:
+class FreeBodyOptions(_OptionsBase):
     """The FreeBodyOptions object stores values and attributes associated with a free body
     plot. The FreeBodyOptions object has no constructor command. Abaqus creates a
     *defaultOdbDisplay.freeBodyOptions* member when you import the Visualization module.
@@ -27,6 +28,7 @@ class FreeBodyOptions:
 
     def setValues(
         self,
+        *,
         comp1ColorF: str = "",
         comp1ColorM: str = "",
         comp2ColorF: str = "",
