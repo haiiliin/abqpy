@@ -1,9 +1,10 @@
 import typing
 
 from abaqusConstants import *
+from .._OptionsBase import _OptionsBase
 
 
-class Movie:
+class Movie(_OptionsBase):
     """The Movie object is used to store values and attributes associated with a movie file.
     Upon creation, the Movie object is added to the session.movies repository.
 
@@ -121,15 +122,21 @@ class Movie:
 
         Raises
         ------
-        ValueError
-            - If **fileName** does not exist or can not be read:
-              ValueError: Unable to open movie file
-            - If **fileName** references an unsupported movie file format:
-              ValueError: Unsupported movie format
-            - If the contents of **fileName** are corrupt or can not be decoded:
-              ValueError: Unable to decode movie file
+        ValueError: Unable to open movie file
+            If **fileName** does not exist or can not be read.
+        ValueError: Unsupported movie format
+            If **fileName** references an unsupported movie file format.
+        ValueError: Unable to decode movie file
+            If the contents of **fileName** are corrupt or can not be decoded.
         """
-        ...
+        self.name = name
+        self.fileName = fileName
+        self.startFrame = startFrame
+        self.endFrame = endFrame
+        self.timelineStartFrame = timelineStartFrame
+        self.timelineEndFrame = timelineEndFrame
+        self.timelineStartTime = timelineStartTime
+        self.timelineEndTime = timelineEndTime
 
     def setValues(
         self,
@@ -168,10 +175,15 @@ class Movie:
 
         Raises
         ------
-        RangeError
-            - If
-            **startFrame**,*endFrame*,*timelineStartFrame*,*timelineEndFrame*,*timelineStartTime*,
+        RangeError: startFrame must be an Integer in the range: 0 to numFrames-1
+            If **startFrame**,*endFrame*,*timelineStartFrame*,*timelineEndFrame*,*timelineStartTime*,
             or*timelineEndTime* are outside their respective valid range.
-              RangeError: startFrame must be an Integer in the range: 0 to numFrames-1
         """
-        ...
+        super().setValues(
+            startFrame=startFrame,
+            endFrame=endFrame,
+            timelineStartFrame=timelineStartFrame,
+            timelineEndFrame=timelineEndFrame,
+            timelineStartTime=timelineStartTime,
+            timelineEndTime=timelineEndTime,
+        )

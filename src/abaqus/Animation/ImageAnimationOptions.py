@@ -1,7 +1,8 @@
 from abaqusConstants import *
+from .._OptionsBase import _OptionsBase
 
 
-class ImageAnimationOptions:
+class ImageAnimationOptions(_OptionsBase):
     """The ImageAnimationOptions object is used to store values and attributes associated with
     saving viewport animations. The ImageAnimationOptions object has no constructor. Abaqus
     creates the **imageAnimationOptions** member when the animation module is imported.
@@ -14,6 +15,19 @@ class ImageAnimationOptions:
             import animation
             session.imageAnimationOptions
     """
+    #: An Int specifying the frame rate to record on the saved animation file. The effective
+    #: frame rate in frames per second will be obtained by dividing the given frame rate by the
+    #: time scale.
+    frameRate: int = None
+
+    #: An Int specifying the time scale to apply to the frame rate.
+    vpDecorations: Boolean = ON
+
+    #: A Boolean specifying whether to capture viewport backgrounds. The default value is OFF.
+    vpBackground: Boolean = OFF
+
+    #: A Boolean specifying whether to capture the view compass. The default value is OFF.
+    compass: Boolean = OFF
 
     def setValues(
         self,
@@ -41,4 +55,10 @@ class ImageAnimationOptions:
         compass
             A Boolean specifying whether to capture the view compass. The default value is OFF.
         """
-        ...
+        super().setValues(
+            frameRate=frameRate,
+            timeScale=timeScale,
+            vpDecorations=vpDecorations,
+            vpBackground=vpBackground,
+            compass=compass,
+        )
