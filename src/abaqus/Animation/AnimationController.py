@@ -1,7 +1,8 @@
 from abaqusConstants import *
+from .._OptionsBase import _OptionsBase
 
 
-class AnimationController:
+class AnimationController(_OptionsBase):
     """The AnimationController object controls all object-based animation to be displayed in
     the viewports. The AnimationController object has no constructor. Abaqus creates the
     **animationController** member when it creates the Session object.
@@ -37,18 +38,22 @@ class AnimationController:
         AnimationError: animationType not set
             If **animationType** = NONE:
         """
+        # TODO: implement this method
         ...
 
     def stop(self):
         """This method stops the animation."""
+        # TODO: implement this method
         ...
 
     def incrementFrame(self):
         """This method increments the animation frame."""
+        # TODO: implement this method
         ...
 
     def decrementFrame(self):
         """This method decrements the animation frame."""
+        # TODO: implement this method
         ...
 
     def showFrame(self, frame: int = None, value: float = None):
@@ -64,14 +69,17 @@ class AnimationController:
             this value, for **animationType** = SCALE_FACTOR the frame with the scale value nearest to
             this value.
         """
+        # TODO: implement this method
         ...
 
     def showFirstFrame(self):
         """This method renders the first frame of the animation."""
+        # TODO: implement this method
         ...
 
     def showLastFrame(self):
         """This method renders the last frame of the animation."""
+        # TODO: implement this method
         ...
 
     def setValues(self, animationType: SymbolicConstant = NONE):
@@ -87,4 +95,4 @@ class AnimationController:
         ------
         RangeError
         """
-        ...
+        super().setValues(animationType=animationType)
