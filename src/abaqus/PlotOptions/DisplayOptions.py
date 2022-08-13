@@ -1,7 +1,8 @@
 from abaqusConstants import *
+from .._OptionsBase import _CopyOptionsBase
 
 
-class DisplayOptions:
+class DisplayOptions(_CopyOptionsBase):
     """The DisplayOptions object stores a plot state.
 
     .. note:: 
@@ -27,12 +28,12 @@ class DisplayOptions:
         Parameters
         ----------
         options
-            A :py:class:`~abaqus.PlotOptions.DisplayOptions.DisplayOptions` object from which values are to be copied. If other arguments are also
-            supplied to setValues, they will override the values in **options**. The default value is
-            None.
+            A :py:class:`~abaqus.PlotOptions.DisplayOptions.DisplayOptions` object from which values are to be copied.
+            If other arguments are also supplied to setValues, they will override the values in **options**. The default
+            value is None.
         plotState
             A sequence of SymbolicConstants specifying the plot state of the display. Possible
             values are UNDEFORMED, DEFORMED, CONTOURS_ON_UNDEF, CONTOURS_ON_DEF, SYMBOLS_ON_UNDEF,
             SYMBOLS_ON_DEF, ORIENT_ON_UNDEF, and ORIENT_ON_DEF. The default value is (UNDEFORMED).
         """
-        ...
+        super().setValues(options=options, plotState=plotState)
