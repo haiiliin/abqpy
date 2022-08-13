@@ -16,8 +16,8 @@ class Layer:
             session.viewports[name].layers[name]
     """
 
-    #: A :py:class:`~abaqus.Canvas.Displayable.Displayable` object specifying the object to be displayed. The Displayable type is an
-    #: abstract generalization. The concrete possible types are Part, Assembly,
+    #: A :py:class:`~abaqus.Canvas.Displayable.Displayable` object specifying the object to be displayed. The
+    #: Displayable type is an abstract generalization. The concrete possible types are Part, Assembly,
     #: ConstrainedSketch, Odb, or XYPlot.
     displayedObject: Displayable = Displayable()
 
@@ -27,10 +27,12 @@ class Layer:
     #: An :py:class:`~abaqus.OdbDisplay.OdbDisplay.OdbDisplay` object specifying the display options for the Odb object.
     odbDisplay: OdbDisplay = OdbDisplay()
 
-    #: A :py:class:`~abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions` object specifying the display options for the Part object.
+    #: A :py:class:`~abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions` object specifying the display options
+    #: for the Part object.
     partDisplay: PartDisplayOptions = PartDisplayOptions()
 
-    #: An :py:class:`~abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions` object specifying the display options for the Assembly object.
+    #: An :py:class:`~abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions` object specifying the
+    #: display options for the Assembly object.
     assemblyDisplay: AssemblyDisplayOptions = AssemblyDisplayOptions()
 
     #: A String specifying the repository key.
@@ -61,7 +63,8 @@ class Layer:
         Layer
             A :py:class:`~abaqus.Canvas.Layer.Layer` object.
         """
-        ...
+        self.name = name
+        self.copyViewName = copyViewName
 
     def moveBefore(self, name: str):
         """This method moves the layer object before another object in the layer repository.
@@ -71,6 +74,7 @@ class Layer:
         name
             A String specifying the name of the other Layer object.
         """
+        # TODO: implement this method
         ...
 
     def moveAfter(self, name: str):
@@ -81,4 +85,5 @@ class Layer:
         name
             A String specifying the name of the other Layer object.
         """
+        # TODO: implement this method
         ...
