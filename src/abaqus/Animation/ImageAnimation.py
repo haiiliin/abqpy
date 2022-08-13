@@ -39,7 +39,7 @@ class ImageAnimation:
         ImageAnimation
             An :py:class:`~abaqus.Animation.ImageAnimation.ImageAnimation` object.
         """
-        ...
+        self.fileName = fileName
 
     def writeFrame(self, canvasObjects: tuple = ()):
         """This method adds a frame to the ImageAnimation object.
@@ -50,14 +50,17 @@ class ImageAnimation:
             A sequence specifying the canvas objects to capture. The default is to capture all
             canvas objects.
         """
+        # TODO: implement this method
         ...
 
     def close(self):
         """This method closes the ImageAnimation object."""
+        # TODO: implement this method
         ...
 
     def closed(self):
         """This method indicates if the ImageAnimation is open or closed for writing animation
         frames.
         """
+        # TODO: implement this method
         ...
