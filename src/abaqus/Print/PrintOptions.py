@@ -1,7 +1,8 @@
 from abaqusConstants import *
+from ..OptionsBase import OptionsBase
 
 
-class PrintOptions:
+class PrintOptions(OptionsBase):
     """The PrintOptions object stores the common settings that Abaqus uses for all print
     methods. The PrintOptions object has no constructor. Abaqus creates the **printOptions**
     member when a session is started.
@@ -44,6 +45,7 @@ class PrintOptions:
 
     def setValues(
         self,
+        *,
         rendition: SymbolicConstant = COLOR,
         vpDecorations: Boolean = ON,
         vpBackground: Boolean = OFF,
@@ -80,10 +82,12 @@ class PrintOptions:
             colors to reduce file size. The quality of the image will be compromised. The default
             value is OFF.
         """
-        self.rendition = rendition
-        self.vpDecorations = vpDecorations
-        self.vpBackground = vpBackground
-        self.compass = compass
-        self.printCommand = printCommand
-        self.deleteTemporaryFiles = deleteTemporaryFiles
-        self.reduceColors = reduceColors
+        super().setValues(
+            rendition=rendition,
+            vpDecorations=vpDecorations,
+            vpBackground=vpBackground,
+            compass=compass,
+            printCommand=printCommand,
+            deleteTemporaryFiles=deleteTemporaryFiles,
+            reduceColors=reduceColors,
+        )
