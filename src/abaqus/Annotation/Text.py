@@ -2,9 +2,10 @@ import typing
 
 from abaqusConstants import *
 from .Annotation import Annotation
+from .._OptionsBase import _OptionsBase
 
 
-class Text(Annotation):
+class Text(Annotation, _OptionsBase):
     """The Text object stores the text settings and location of a text annotation.
     The Text object is derived from the Annotation object.
 
@@ -33,7 +34,7 @@ class Text(Annotation):
 
     #: A pair of Floats specifying the **X**- and **Y**-offsets in millimeters of the Text object
     #: from **anchor**. The default value is (0, 0).
-    offset: tuple[float, ...] = ()
+    offset: tuple[float, ...] = (0.0, 0.0)
 
     #: A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
     #: specifies the **X**- and **Y** coordinates as percentages of the viewport width and height.
@@ -74,15 +75,15 @@ class Text(Annotation):
 
     #: A Float specifying the amount of rotation in degrees about **referencePoint**. The default
     #: value is 0.0.
-    rotationAngle: float = 0
+    rotationAngle: float = 0.0
 
     #: A String specifying the color of the Text object. Possible string values are any valid
     #: color. The default value is "White".
-    color: str = ""
+    color: str = "White"
 
     #: A String specifying the font of the Text object. Possible string values are any valid
     #: font specification. The default value is "-*-verdana-medium-r-normal--120-*".
-    font: str = ""
+    font: str = "-*-verdana-medium-r-normal--120-*"
 
     #: A SymbolicConstant specifying the Text object background style. Possible values are
     #: MATCH, TRANSPARENT, and OTHER. The default value is TRANSPARENT.
@@ -104,12 +105,12 @@ class Text(Annotation):
         self,
         name: str,
         text: str = "",
-        offset: tuple[float, ...] = (),
+        offset: tuple[float, ...] = (0.0, 0.0),
         anchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
         referencePoint: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        rotationAngle: float = 0,
-        color: str = "",
-        font: str = "",
+        rotationAngle: float = 0.0,
+        color: str = "White",
+        font: str = "-*-verdana-medium-r-normal--120-*",
         backgroundStyle: SymbolicConstant = TRANSPARENT,
         backgroundColor: str = "",
         box: Boolean = OFF,
@@ -198,16 +199,28 @@ class Text(Annotation):
 
         """
         super().__init__()
+        self.name = name
+        self.text = text
+        self.offset = offset
+        self.anchor = anchor
+        self.referencePoint = referencePoint
+        self.rotationAngle = rotationAngle
+        self.color = color
+        self.font = font
+        self.backgroundStyle = backgroundStyle
+        self.backgroundColor = backgroundColor
+        self.box = box
+        self.justification = justification
 
     def setValues(
         self,
         text: str = "",
-        offset: tuple[float, ...] = (),
+        offset: tuple[float, ...] = (0.0, 0.0),
         anchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
         referencePoint: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        rotationAngle: float = 0,
-        color: str = "",
-        font: str = "",
+        rotationAngle: float = 0.0,
+        color: str = "White",
+        font: str = "-*-verdana-medium-r-normal--120-*",
         backgroundStyle: SymbolicConstant = TRANSPARENT,
         backgroundColor: str = "",
         box: Boolean = OFF,
@@ -228,15 +241,37 @@ class Text(Annotation):
             A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
             the model coordinate system. A SymbolicConstant specifies a relative position. Possible
             values
-            are:BOTTOM_LEFTBOTTOM_CENTERBOTTOM_RIGHTCENTER_LEFTCENTERCENTER_RIGHTTOP_LEFTTOP_CENTERTOP_RIGHTThe
-            default value is BOTTOM_LEFT.
+            are:
+
+            - BOTTOM_LEFT
+            - BOTTOM_CENTER
+            - BOTTOM_RIGHT
+            - CENTER_LEFT
+            - CENTER
+            - CENTER_RIGHT
+            - TOP_LEFT
+            - TOP_CENTER
+            - TOP_RIGHT
+
+            The default value is BOTTOM_LEFT.
         referencePoint
             A SymbolicConstant or a sequence of Floats specifying a point. The sequence of two
             Floats specifies the **X**- and **Y**-coordinates of the reference point of the Text
             annotation given as percentages of its width and height. The SymbolicConstant indicates
             a relative position. Possible values
-            are:BOTTOM_LEFTBOTTOM_CENTERBOTTOM_RIGHTCENTER_LEFTCENTERCENTER_RIGHTTOP_LEFTTOP_CENTERTOP_RIGHTThe
-            default value is BOTTOM_LEFT.
+            are:
+
+            - BOTTOM_LEFT
+            - BOTTOM_CENTER
+            - BOTTOM_RIGHT
+            - CENTER_LEFT
+            - CENTER
+            - CENTER_RIGHT
+            - TOP_LEFT
+            - TOP_CENTER
+            - TOP_RIGHT
+
+            The default value is BOTTOM_LEFT.
         rotationAngle
             A Float specifying the amount of rotation in degrees about **referencePoint**. The default
             value is 0.0.
@@ -260,4 +295,16 @@ class Text(Annotation):
             JUSTIFY_LEFT.
 
         """
-        ...
+        super().setValues(
+            text=text,
+            offset=offset,
+            anchor=anchor,
+            referencePoint=referencePoint,
+            rotationAngle=rotationAngle,
+            color=color,
+            font=font,
+            backgroundStyle=backgroundStyle,
+            backgroundColor=backgroundColor,
+            box=box,
+            justification=justification,
+        )
