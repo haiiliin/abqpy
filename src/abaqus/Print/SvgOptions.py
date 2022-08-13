@@ -15,7 +15,7 @@ class SvgOptions(OptionsBase):
             session.svgOptions
     """
     #: The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of
-    #: the image in pixels. Possible values are (*minWidth*, **minHeight** ) ≤≤ **imageSize** ≤≤
+    #: the image in pixels. Possible values are (*minWidth*, **minHeight** ) ≤ **imageSize** ≤
     #: (*maxWidth* and **maxHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value
     #: of width and height (*minWidth* and **minHeight**) is the number of pixels that occupy 10
     #: mm at the current screen resolution. The value is typically around 50 pixels and may be
@@ -31,7 +31,7 @@ class SvgOptions(OptionsBase):
         ----------
         imageSize
             The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of
-            the image in pixels. Possible values are (*minWidth*, **minHeight** ) ≤≤ **imageSize** ≤≤
+            the image in pixels. Possible values are (*minWidth*, **minHeight** ) ≤ **imageSize** ≤
             (*maxWidth* and **maxHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value
             of width and height (*minWidth* and **minHeight**) is the number of pixels that occupy 10
             mm at the current screen resolution. The value is typically around 50 pixels and may be
