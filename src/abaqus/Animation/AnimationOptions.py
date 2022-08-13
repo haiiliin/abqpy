@@ -1,7 +1,8 @@
 from abaqusConstants import *
+from .._OptionsBase import _OptionsBase
 
 
-class AnimationOptions:
+class AnimationOptions(_OptionsBase):
     """The AnimationOptions object is used to store values and attributes associated with an
     AnimationController object.
     The AnimationOptions object has no constructor command. Abaqus creates the
@@ -20,8 +21,8 @@ class AnimationOptions:
     #: LOOP_BACKWARD, and SWING. The default value is LOOP.
     mode: SymbolicConstant = LOOP
 
-    #: An Int specifying the animation rate in frames/second. Possible values are 1 ≤≤
-    #: **frameRate** ≤≤ 100. The default value is 50.
+    #: An Int specifying the animation rate in frames/second. Possible values are 1 ≤
+    #: **frameRate** ≤ 100. The default value is 50.
     frameRate: int = 50
 
     #: A Boolean specifying whether to show the frame counter. The default value is ON.
@@ -150,8 +151,8 @@ class AnimationOptions:
             A SymbolicConstant specifying the animation mode. Possible values are PLAY_ONCE, LOOP,
             LOOP_BACKWARD, and SWING. The default value is LOOP.
         frameRate
-            An Int specifying the animation rate in frames/second. Possible values are 1 ≤≤
-            **frameRate** ≤≤ 100. The default value is 50.
+            An Int specifying the animation rate in frames/second. Possible values are 1 ≤
+            **frameRate** ≤ 100. The default value is 50.
         frameCounter
             A Boolean specifying whether to show the frame counter. The default value is ON.
         relativeScaling
@@ -221,4 +222,25 @@ class AnimationOptions:
             **xyUseHighlightMethod** = False. When setting the color to 'Default' the system will take
             the color associated to each curve. The default value is "Default".
         """
-        ...
+        super().setValues(
+            mode=mode,
+            frameRate=frameRate,
+            frameCounter=frameCounter,
+            relativeScaling=relativeScaling,
+            numScaleFactorFrames=numScaleFactorFrames,
+            timeHistoryMode=timeHistoryMode,
+            maxTime=maxTime,
+            maxTimeAutoCompute=maxTimeAutoCompute,
+            minTime=minTime,
+            minTimeAutoCompute=minTimeAutoCompute,
+            timeIncrement=timeIncrement,
+            xyUseHighlightMethod=xyUseHighlightMethod,
+            xyShowLine=xyShowLine,
+            xyLineStyle=xyLineStyle,
+            xyLineThickness=xyLineThickness,
+            xyLineColor=xyLineColor,
+            xyShowSymbol=xyShowSymbol,
+            xySymbolMarker=xySymbolMarker,
+            xySymbolSize=xySymbolSize,
+            xySymbolColor=xySymbolColor,
+        )
