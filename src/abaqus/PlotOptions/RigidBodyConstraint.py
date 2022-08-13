@@ -21,4 +21,5 @@ class RigidBodyConstraint:
         str
             A String Value: NONE in the absence of constraint data.
         """
+        # TODO: Implement this method
         ...
