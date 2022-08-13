@@ -14,7 +14,7 @@ class AnnotationViewport(ViewportBase):
             import annotationToolset
     """
 
-    def plotAnnotation(self, annotation: Annotation, index: str = 0.0):
+    def plotAnnotation(self, annotation: Annotation, index: int = 0):
         """This method plots an Annotation object in aViewport.
 
         Parameters
@@ -25,4 +25,5 @@ class AnnotationViewport(ViewportBase):
             An Int specifying the index of the Annotation object in the sequence of annotations to
             plot. The default value is zero.
         """
+        # TODO: implement this method
         ...

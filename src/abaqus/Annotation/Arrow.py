@@ -2,9 +2,10 @@ import typing
 
 from abaqusConstants import *
 from .Annotation import Annotation
+from .._OptionsBase import _OptionsBase
 
 
-class Arrow(Annotation):
+class Arrow(Annotation, _OptionsBase):
     """The Arrow object stores the visual settings and location of an arrow annotation.
     The Arrow object is derived from the Annotation object.
 
@@ -24,11 +25,11 @@ class Arrow(Annotation):
 
     #: A pair of Floats specifying the start point **X**- and **Y**-offsets in millimeters from
     #: **startAnchor**. The default value is (0, 0).
-    startPoint: tuple[float, ...] = ()
+    startPoint: tuple[float, ...] = (0.0, 0.0)
 
     #: A pair of Floats specifying the end point **X**- and **Y**-offsets in millimeters from
     #: **endAnchor**. The default value is (0, 0).
-    endPoint: tuple[float, ...] = ()
+    endPoint: tuple[float, ...] = (0.0, 0.0)
 
     #: A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
     #: specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
@@ -100,15 +101,15 @@ class Arrow(Annotation):
 
     #: A Float specifying the distance in millimeters between the arrow start point and the
     #: arrow start head. The default value is 0.0.
-    startGap: float = 0
+    startGap: float = 0.0
 
     #: A Float specifying the distance in millimeters between the arrow end point and the arrow
     #: end head. The default value is 0.0.
-    endGap: float = 0
+    endGap: float = 0.0
 
     #: A String specifying the color of the arrow. Possible string values are any valid color.
     #: The default value is "White".
-    color: str = ""
+    color: str = "White"
 
     #: A SymbolicConstant specifying the line style of the arrow. Possible values are SOLID,
     #: DASHED, DOTTED, and DOT_DASH. The default value is SOLID.
@@ -121,15 +122,15 @@ class Arrow(Annotation):
     def __init__(
         self,
         name: str,
-        startPoint: tuple[float, ...] = (),
-        endPoint: tuple[float, ...] = (),
+        startPoint: tuple[float, ...] = (0.0, 0.0),
+        endPoint: tuple[float, ...] = (0.0, 0.0),
         startAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
         endAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
         startHeadStyle: SymbolicConstant = NONE,
         endHeadStyle: SymbolicConstant = FILLED_ARROW,
-        startGap: float = 0,
-        endGap: float = 0,
-        color: str = "",
+        startGap: float = 0.0,
+        endGap: float = 0.0,
+        color: str = "White",
         lineStyle: SymbolicConstant = SOLID,
         lineThickness: SymbolicConstant = VERY_THIN,
     ):
@@ -240,6 +241,18 @@ class Arrow(Annotation):
 
         """
         super().__init__()
+        self.name = name
+        self.startPoint = startPoint
+        self.endPoint = endPoint
+        self.startAnchor = startAnchor
+        self.endAnchor = endAnchor
+        self.startHeadStyle = startHeadStyle
+        self.endHeadStyle = endHeadStyle
+        self.startGap = startGap
+        self.endGap = endGap
+        self.color = color
+        self.lineStyle = lineStyle
+        self.lineThickness = lineThickness
 
     def translateStartPoint(self, x: float = None, y: float = None):
         """This method translates the start point of the Arrow object on the viewport plane.
@@ -252,6 +265,7 @@ class Arrow(Annotation):
             A Float specifying the*Y* translation amount in millimeters.
 
         """
+        # TODO: implement this method
         ...
 
     def translateEndPoint(self, x: float = None, y: float = None):
@@ -265,19 +279,20 @@ class Arrow(Annotation):
             A Float specifying the*Y* translation amount in millimeters.
 
         """
+        # TODO: implement this method
         ...
 
     def setValues(
         self,
-        startPoint: tuple[float, ...] = (),
-        endPoint: tuple[float, ...] = (),
+        startPoint: tuple[float, ...] = (0.0, 0.0),
+        endPoint: tuple[float, ...] = (0.0, 0.0),
         startAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
         endAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
         startHeadStyle: SymbolicConstant = NONE,
         endHeadStyle: SymbolicConstant = FILLED_ARROW,
-        startGap: float = 0,
-        endGap: float = 0,
-        color: str = "",
+        startGap: float = 0.0,
+        endGap: float = 0.0,
+        color: str = "White",
         lineStyle: SymbolicConstant = SOLID,
         lineThickness: SymbolicConstant = VERY_THIN,
     ):
@@ -297,7 +312,19 @@ class Arrow(Annotation):
             A sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
             the model coordinate system. A SymbolicConstant indicates a relative position. Possible
             values
-            are:BOTTOM_LEFTBOTTOM_CENTERBOTTOM_RIGHTCENTER_LEFTCENTERCENTER_RIGHTTOP_LEFTTOP_CENTERTOP_RIGHTThe
+            are:
+
+            - BOTTOM_LEFT
+            - BOTTOM_CENTER
+            - BOTTOM_RIGHT
+            - CENTER_LEFT
+            - CENTER
+            - CENTER_RIGHT
+            - TOP_LEFT
+            - TOP_CENTER
+            - TOP_RIGHT
+
+            The
             default value is BOTTOM_LEFT.
         endAnchor
             A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
@@ -305,17 +332,50 @@ class Arrow(Annotation):
             A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
             the model coordinate system. A SymbolicConstant indicates a relative position. Possible
             values
-            are:BOTTOM_LEFTBOTTOM_CENTERBOTTOM_RIGHTCENTER_LEFTCENTERCENTER_RIGHTTOP_LEFTTOP_CENTERTOP_RIGHTThe
+            are:
+
+            - BOTTOM_LEFT
+            - BOTTOM_CENTER
+            - BOTTOM_RIGHT
+            - CENTER_LEFT
+            - CENTER
+            - CENTER_RIGHT
+            - TOP_LEFT
+            - TOP_CENTER
+            - TOP_RIGHT
+
+            The
             default value is BOTTOM_LEFT.
         startHeadStyle
             A SymbolicConstant specifying the style of the start head. Possible values
-            are:ARROWFILLED_ARROWHOLLOW_CIRCLEFILLED_CIRCLEHOLLOW_DIAMONDFILLED_DIAMONDHOLLOW_SQUAREFILLED_SQUARENONEThe
-            default value is NONE.
+            are:
+
+            - ARROW
+            - FILLED_ARROW
+            - HOLLOW_CIRCLE
+            - FILLED_CIRCLE
+            - HOLLOW_DIAMOND
+            - FILLED_DIAMOND
+            - HOLLOW_SQUARE
+            - FILLED_SQUARE
+            - NONE
+
+            The default value is NONE.
         endHeadStyle
             A SymbolicConstant specifying the style of the end head. Possible values
-            are:ARROWFILLED_ARROWHOLLOW_
-            CIRCLEFILLED_CIRCLEHOLLOW_DIAMONDFILLED_DIAMONDHOLLOW_SQUAREFILLED_SQUARENONEThe default
-            value is FILLED_ARROW.
+            are:
+
+            - ARROW
+            - FILLED_ARROW
+            - HOLLOW_CIRCLE
+            - FILLED_CIRCLE
+            - HOLLOW_DIAMOND
+            - FILLED_DIAMOND
+            - HOLLOW_SQUARE
+            - FILLED_SQUARE
+            - NONE
+
+            The default value is FILLED_ARROW.
         startGap
             A Float specifying the distance in millimeters between the arrow start point and the
             arrow start head. The default value is 0.0.
@@ -333,4 +393,16 @@ class Arrow(Annotation):
             VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.
 
         """
-        ...
+        super().setValues(
+            startPoint=startPoint,
+            endPoint=endPoint,
+            startAnchor=startAnchor,
+            endAnchor=endAnchor,
+            startHeadStyle=startHeadStyle,
+            endHeadStyle=endHeadStyle,
+            startGap=startGap,
+            endGap=endGap,
+            color=color,
+            lineStyle=lineStyle,
+            lineThickness=lineThickness,
+        )
