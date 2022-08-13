@@ -60,7 +60,7 @@ class OptionArg:
     translucency: Boolean = OFF
 
     #: A Float specifying the translucency factor when **translucency** = ON. Possible values are
-    #: 0.0 ≤≤ **translucencyFactor** ≤≤ 1.0. The default value is 0.3.
+    #: 0.0 ≤ **translucencyFactor** ≤ 1.0. The default value is 0.3.
     translucencyFactor: float = 0
 
     def __init__(
@@ -116,7 +116,7 @@ class OptionArg:
             A Boolean specifying whether to set translucency. The default value is OFF.
         translucencyFactor
             A Float specifying the translucency factor when **translucency** = ON. Possible values are
-            0.0 ≤≤ **translucencyFactor** ≤≤ 1.0. The default value is 0.3.
+            0.0 ≤ **translucencyFactor** ≤ 1.0. The default value is 0.3.
 
         Returns
         -------
@@ -127,4 +127,13 @@ class OptionArg:
         ------
         RangeError
         """
-        ...
+        self.renderStyle = renderStyle
+        self.visibleEdges = visibleEdges
+        self.edgeColorWireHide = edgeColorWireHide
+        self.edgeColorFillShade = edgeColorFillShade
+        self.edgeLineStyle = edgeLineStyle
+        self.edgeLineThickness = edgeLineThickness
+        self.colorCodeOverride = colorCodeOverride
+        self.fillColor = fillColor
+        self.translucency = translucency
+        self.translucencyFactor = translucencyFactor
