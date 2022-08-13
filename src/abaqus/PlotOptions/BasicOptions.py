@@ -1,8 +1,9 @@
 from abaqusConstants import *
 from ..Datum.DatumCsys import DatumCsys
+from .._OptionsBase import _CopyOptionsBase
 
 
-class BasicOptions:
+class BasicOptions(_CopyOptionsBase):
     """The BasicOptions object stores values and attributes associated with an OdbDisplay
     object.
     The BasicOptions object has no constructor command. Abaqus creates the
@@ -14,9 +15,10 @@ class BasicOptions:
     the session. The attributes from the **defaultOdbDisplay** object are copied from the
     previous active viewport to create the new viewport.
     BasicOptions objects are accessed in one of two ways:
+
     - The default basic options: these settings are used as defaults when other
-    **basicOptions** members are created. These settings can be set to customize user
-    preferences.
+      **basicOptions** members are created. These settings can be set to customize user
+      preferences.
     - The basic options associated with a particular viewport.
 
     .. note:: 
@@ -206,13 +208,13 @@ class BasicOptions:
     sectorSelectionType: SymbolicConstant = SELECT_BY_NUMBER
 
     #: A Float specifying the angle (in degrees) from which to sweep cyclic symmetry sectors
-    #: when **sweepSectors** = ON. Possible values are multiples of the sector angle such that 0 ≤≤
-    #: **sweepSectorStartAngle** ≤≤ 360. The default value is 0.0.
+    #: when **sweepSectors** = ON. Possible values are multiples of the sector angle such that 0 ≤
+    #: **sweepSectorStartAngle** ≤ 360. The default value is 0.0.
     sweepSectorStartAngle: float = 0
 
     #: A Float specifying the angle (in degrees) through which to sweep cyclic symmetry sectors
     #: when **sweepSectors** = ON. Possible values are multiples of the sector angle such that 0 <<
-    #: **sweepSectorEndAngle** ≤≤ 360. The default value is 360.0.
+    #: **sweepSectorEndAngle** ≤ 360. The default value is 360.0.
     sweepSectorEndAngle: float = 360
 
     #: A Boolean specifying whether to extrude analytical surfaces. The default value is ON or
@@ -337,6 +339,10 @@ class BasicOptions:
     #: value is ON.
     averageOnlyDisplayed: Boolean = ON
 
+    #: A Boolean specifying whether to average only values on displayed elements. The default
+    #: value is ON.
+    computeOutput: SymbolicConstant = EXTRAPOLATE_AVERAGE_COMPUTE
+
     #: A SymbolicConstant specifying the type of averaging region boundaries. Possible values
     #: are NONE, ODB_REGIONS, ELEMENT_SET, and DISPLAY_GROUPS. The default value is
     #: ODB_REGIONS.
@@ -377,14 +383,15 @@ class BasicOptions:
     #: system. The default value is GLOBAL.
     patternCsysName: SymbolicConstant = GLOBAL
 
-    #: A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the coordinate system to use for results transformation
+    #: A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the coordinate system to use for results
+    #: transformation
     #: when **transformationType** = USER_SPECIFIED.
     datumCsys: DatumCsys = DatumCsys()
 
     #: A tuple of Ints specifying which sectors to display when
-    #: **sectorSelectionType** = SELECT_BY_NUMBER. Possible values are 1 ≤≤ **selectedSectorNumbers**
-    #: ≤≤ the number of sectors. The default value is (1).
-    selectedSectorNumbers: int = None
+    #: **sectorSelectionType** = SELECT_BY_NUMBER. Possible values are 1 ≤ **selectedSectorNumbers**
+    #: ≤ the number of sectors. The default value is (1).
+    selectedSectorNumbers: tuple[int, ...] = None
 
     #: A tuple of Strings specifying either element set or display group names (depending on
     #: the value of regionBoundaries) defining the averaging region boundaries. The default
@@ -394,6 +401,7 @@ class BasicOptions:
     def setValues(
         self,
         options: "BasicOptions" = None,
+        *,
         cameraCsysName: str = "",
         cameraMovesWithCsys: Boolean = OFF,
         cameraFollowsRotation: Boolean = OFF,
@@ -438,7 +446,7 @@ class BasicOptions:
         sectionPointScheme: SymbolicConstant = CATEGORY_BASED,
         sweepSectors: Boolean = OFF,
         sectorSelectionType: SymbolicConstant = SELECT_BY_NUMBER,
-        selectedSectorNumbers: tuple = (),
+        selectedSectorNumbers: tuple[int, ...] = (),
         sweepSectorStartAngle: float = 0,
         sweepSectorEndAngle: float = 360,
         extrudeArs: Boolean = OFF,
@@ -483,9 +491,9 @@ class BasicOptions:
         Parameters
         ----------
         options
-            A :py:class:`~abaqus.PlotOptions.BasicOptions.BasicOptions` object from which values are to be copied. If other arguments are also
-            supplied to setValues, they will override the values in **options**. The default value is
-            None.
+            A :py:class:`~abaqus.PlotOptions.BasicOptions.BasicOptions` object from which values are to be copied.
+            If other arguments are also supplied to setValues, they will override the values in **options**.
+            The default value is None.
         cameraCsysName
             A String specifying the name of the coordinate system driving the moving camera.
         cameraMovesWithCsys
@@ -618,16 +626,16 @@ class BasicOptions:
             SELECT_BY_NUMBER.
         selectedSectorNumbers
             A sequence of Ints specifying which sectors to display when
-            **sectorSelectionType** = SELECT_BY_NUMBER. Possible values are 1 ≤≤ **selectedSectorNumbers**
-            ≤≤ the number of sectors. The default value is (1).
+            **sectorSelectionType** = SELECT_BY_NUMBER. Possible values are 1 ≤ **selectedSectorNumbers**
+            ≤ the number of sectors. The default value is (1).
         sweepSectorStartAngle
             A Float specifying the angle (in degrees) from which to sweep cyclic symmetry sectors
-            when **sweepSectors** = ON. Possible values are multiples of the sector angle such that 0 ≤≤
-            **sweepSectorStartAngle** ≤≤ 360. The default value is 0.0.
+            when **sweepSectors** = ON. Possible values are multiples of the sector angle such that 0 ≤
+            **sweepSectorStartAngle** ≤ 360. The default value is 0.0.
         sweepSectorEndAngle
             A Float specifying the angle (in degrees) through which to sweep cyclic symmetry sectors
             when **sweepSectors** = ON. Possible values are multiples of the sector angle such that 0 <<
-            **sweepSectorEndAngle** ≤≤ 360. The default value is 360.0.
+            **sweepSectorEndAngle** ≤ 360. The default value is 360.0.
         extrudeArs
             A Boolean specifying whether to extrude analytical surfaces. The default value is ON or
             OFF depending on characteristics of your model.
@@ -707,8 +715,8 @@ class BasicOptions:
             into the layup orientation defined in the composite section. The odb should contain the
             field SORIENT in order to use this option.
         datumCsys
-            A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the coordinate system to use for results transformation
-            when **transformationType** = USER_SPECIFIED.
+            A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the coordinate system to use for results
+            transformation when **transformationType** = USER_SPECIFIED.
         rigidTransformPrimary
             A Boolean specifying whether to perform a rigid transformation of nodal vector datasets
             based on the active user specific system The default value is OFF.
@@ -748,4 +756,89 @@ class BasicOptions:
         RangeError: featureAngle must be a float in the range 0-90, inclusive
             If **featureAngle** is not in the valid range.
         """
-        ...
+        super().setValues(
+            options=options,
+            accountForDeactivatedElems=accountForDeactivatedElems,
+            averageElementOutput=averageElementOutput,
+            averageOnlyDisplayed=averageOnlyDisplayed,
+            averagingThreshold=averagingThreshold,
+            bcDisplay=bcDisplay,
+            beamScaleFactor=beamScaleFactor,
+            cameraCsysName=cameraCsysName,
+            cameraFollowsRotation=cameraFollowsRotation,
+            cameraMovesWithCsys=cameraMovesWithCsys,
+            complexAngle=complexAngle,
+            computeOutput=computeOutput,
+            connectorDisplay=connectorDisplay,
+            coordSystemDisplay=coordSystemDisplay,
+            couplingDisplay=couplingDisplay,
+            curveRefinementLevel=curveRefinementLevel,
+            datumCsys=datumCsys,
+            envelopeCriteria=envelopeCriteria,
+            envelopeDataPosition=envelopeDataPosition,
+            extrudeArs=extrudeArs,
+            extrudeArsDepth=extrudeArsDepth,
+            extrudeArsDepthAutoCompute=extrudeArsDepthAutoCompute,
+            extrudeElem=extrudeElem,
+            extrudeElemDepth=extrudeElemDepth,
+            featureAngle=featureAngle,
+            highlightConnectorPts=highlightConnectorPts,
+            includeFeatureBoundaries=includeFeatureBoundaries,
+            massElements=massElements,
+            mirrorAboutXyPlane=mirrorAboutXyPlane,
+            mirrorAboutXzPlane=mirrorAboutXzPlane,
+            mirrorAboutYzPlane=mirrorAboutYzPlane,
+            mirrorCsysName=mirrorCsysName,
+            mirrorDisplayBodies=mirrorDisplayBodies,
+            mirrorPatternOrder=mirrorPatternOrder,
+            noResultsColor=noResultsColor,
+            numSweepSegmentsArs=numSweepSegmentsArs,
+            numSweepSegmentsElem=numSweepSegmentsElem,
+            numericForm=numericForm,
+            otherSymbolSize=otherSymbolSize,
+            patternCsysName=patternCsysName,
+            patternNumCircular=patternNumCircular,
+            patternNumX=patternNumX,
+            patternNumY=patternNumY,
+            patternNumZ=patternNumZ,
+            patternOffsetX=patternOffsetX,
+            patternOffsetY=patternOffsetY,
+            patternOffsetZ=patternOffsetZ,
+            patternRotationAxis=patternRotationAxis,
+            patternTotalAngle=patternTotalAngle,
+            pc3dElements=pc3dElements,
+            pd3dElements=pd3dElements,
+            plyResultLocation=plyResultLocation,
+            pointElements=pointElements,
+            quantityToPlot=quantityToPlot,
+            referencePoints=referencePoints,
+            regionBoundaries=regionBoundaries,
+            renderBeamProfiles=renderBeamProfiles,
+            renderShellThickness=renderShellThickness,
+            rigidTransformDeformed=rigidTransformDeformed,
+            rigidTransformPrimary=rigidTransformPrimary,
+            scratchCoordSystemDisplay=scratchCoordSystemDisplay,
+            sectionPointScheme=sectionPointScheme,
+            sectionResults=sectionResults,
+            sectorSelectionType=sectorSelectionType,
+            selectedSectorNumbers=selectedSectorNumbers,
+            shellScaleFactor=shellScaleFactor,
+            showConnectorAxes=showConnectorAxes,
+            showConnectorType=showConnectorType,
+            spotWelds=spotWelds,
+            springElements=springElements,
+            sweepArs=sweepArs,
+            sweepElem=sweepElem,
+            sweepEndAngleArs=sweepEndAngleArs,
+            sweepEndAngleElem=sweepEndAngleElem,
+            sweepSectorEndAngle=sweepSectorEndAngle,
+            sweepSectorStartAngle=sweepSectorStartAngle,
+            sweepSectors=sweepSectors,
+            sweepStartAngleArs=sweepStartAngleArs,
+            sweepStartAngleElem=sweepStartAngleElem,
+            tracerParticles=tracerParticles,
+            transformOnDeformed=transformOnDeformed,
+            transformationType=transformationType,
+            useRegionBoundaries=useRegionBoundaries,
+            userRegions=userRegions,
+        )

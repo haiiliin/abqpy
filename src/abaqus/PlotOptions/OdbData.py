@@ -13,9 +13,10 @@ from .OdbDataSurfaceSet import OdbDataSurfaceSet
 from .OdbDiagnosticData import OdbDiagnosticData
 from .RigidBodyConstraint import RigidBodyConstraint
 from .TieConstraint import TieConstraint
+from .._OptionsBase import _OptionsBase
 
 
-class OdbData:
+class OdbData(_OptionsBase):
     """The OdbData object stores non persistent values and attributes associated with an open
     odb for the given session. The OdbData object has no constructor. Abaqus creates the
     **odbData** repository when you import the Visualization module. Abaqus creates a OdbData
@@ -127,4 +128,4 @@ class OdbData:
             A sequence of (String, Float) sequences specifying the stepName and the stepPeriod.
             Alternatively, this member may take the value ODB_VALUES.
         """
-        ...
+        super().setValues(activeFrames=activeFrames, stepPeriods=stepPeriods)
