@@ -39,9 +39,7 @@ class MdbBase:
     coexecutions: typing.Dict[str, Coexecution] = {}
 
     #: A repository of OptimizationProcess objects.
-    optimizationProcesses: typing.Dict[str, OptimizationProcess] = typing.Dict[
-        str, OptimizationProcess
-    ]()
+    optimizationProcesses: typing.Dict[str, OptimizationProcess] = {}
 
     #: A :py:class:`~abaqus.EditMesh.MeshEditOptions.MeshEditOptions` object specifying the undo/redo behavior when editing meshes on parts
     #: or part instances.
