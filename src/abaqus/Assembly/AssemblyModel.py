@@ -63,7 +63,7 @@ class AssemblyModel(ModelBase):
 
         Returns
         -------
-        list[str]
+        typing.List[str]
             A list of strings describing any warnings or errors encountered during the conversion
             process.
         """
@@ -83,7 +83,7 @@ class AssemblyModel(ModelBase):
 
         Returns
         -------
-        list[str]
+        typing.List[str]
             A list of strings describing any warnings or errors encountered during the conversion
             process.
         """

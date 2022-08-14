@@ -59,7 +59,7 @@ class Face:
 
         Returns
         -------
-        tuple[float, ...]
+        typing.Tuple[float, ...]
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid of
             the face.
         """
@@ -158,7 +158,7 @@ class Face:
 
         Returns
         -------
-        tuple[float, ...]
+        typing.Tuple[float, ...]
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components of the normal to the
             face.
 
@@ -190,7 +190,7 @@ class Face:
 
         Returns
         -------
-        tuple[int, ...]
+        typing.Tuple[int, ...]
         A tuple of integers.
 
         """
@@ -201,7 +201,7 @@ class Face:
 
         Returns
         -------
-        tuple[int, ...]
+        typing.Tuple[int, ...]
             A tuple of integers.
 
         """
@@ -213,7 +213,7 @@ class Face:
 
         Returns
         -------
-        tuple[int, ...]
+        typing.Tuple[int, ...]
             A tuple of integers.
 
         """
@@ -277,7 +277,7 @@ class Face:
 
         Returns
         -------
-        list[str]
+        typing.List[str]
             An array of String.
 
         """
