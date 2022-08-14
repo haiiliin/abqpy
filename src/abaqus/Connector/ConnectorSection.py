@@ -707,8 +707,7 @@ class ConnectorSection(SectionBase):
         ------
         ValueError and TextError
         """
-        option = ConnectorPotential()
-        self.behaviorOptions.append(option)
+        self.behaviorOptions[componentNumber].connectorPotentials = option = ConnectorPotential()
         return option
 
     def ConnectorStop(
