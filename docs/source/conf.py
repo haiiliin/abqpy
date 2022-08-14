@@ -28,7 +28,7 @@ copyright = '2022, WANG Hailin'
 author = 'WANG Hailin'
 
 # The full version, including alpha/beta/rc tags
-release = '2016a10'
+release = '2016.0'
 
 # -- General configuration ---------------------------------------------------
 
