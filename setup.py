@@ -14,6 +14,8 @@ setuptools.setup(
     url="https://github.com/haiiliin/abqpy",
     classifiers=[
         "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "License :: OSI Approved :: MIT License",
@@ -28,7 +30,7 @@ setuptools.setup(
         'Anaconda': 'https://anaconda.org/haiiliin/abqpy',
         'Read the Docs': 'https://readthedocs.org/projects/abqpy',
     },
-    python_requires='>=3.9',
+    python_requires='>=3.7',
     package_dir={'': 'src'},
     install_requires=['ipyparams', 'typing-extensions'],
     packages=setuptools.find_packages('src'),
