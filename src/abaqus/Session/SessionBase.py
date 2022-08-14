@@ -443,7 +443,7 @@ class SessionBase:
         self,
         fileName: str,
         format: SymbolicConstant = PNG,
-        canvasObjects: typing.Tuple[Canvas] = (),
+        canvasObjects: typing.Tuple[Canvas, ...] = (),
         compression: Boolean = OFF,
     ):
         """This method prints canvas objects to a file using the attributes stored in the
@@ -471,7 +471,7 @@ class SessionBase:
         self,
         printCommand: str = "",
         numCopies: int = 1,
-        canvasObjects: typing.Tuple[Canvas] = (),
+        canvasObjects: typing.Tuple[Canvas, ...] = (),
     ):
         """This method prints canvas objects to a Windows printer or to a PostScript printer. The
         attributes used for printing to a Windows printer are stored in the PrintOptions object
@@ -524,7 +524,7 @@ class SessionBase:
         ...
 
     def writeVrmlFile(
-        self, fileName: str, format: Boolean = OFF, canvasObjects: typing.Tuple[Canvas] = ()
+        self, fileName: str, format: Boolean = OFF, canvasObjects: typing.Tuple[Canvas, ...] = ()
     ):
         """This method exports the current viewport objects to a file.
 
@@ -542,7 +542,7 @@ class SessionBase:
         ...
 
     def write3DXMLFile(
-        self, fileName: str, format: Boolean = OFF, canvasObjects: typing.Tuple[Canvas] = ()
+        self, fileName: str, format: Boolean = OFF, canvasObjects: typing.Tuple[Canvas, ...] = ()
     ):
         """This method exports the current viewport objects to a file.
 
@@ -559,7 +559,7 @@ class SessionBase:
         """
         ...
 
-    def writeOBJFile(self, fileName: str, canvasObjects: typing.Tuple[Canvas] = ()):
+    def writeOBJFile(self, fileName: str, canvasObjects: typing.Tuple[Canvas, ...] = ()):
         """This method exports the current viewport objects to a file.
 
         Parameters

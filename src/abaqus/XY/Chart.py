@@ -198,7 +198,7 @@ class Chart:
     def setValues(
         self,
         chart: "Chart" = None,
-        curvesToPlot: typing.Tuple[XYCurve] = (),
+        curvesToPlot: typing.Tuple[XYCurve, ...] = (),
         aspectRatio: float = None,
         transform: tuple = (),
         view: View = None,

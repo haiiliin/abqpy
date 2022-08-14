@@ -251,7 +251,7 @@ class OdbInstanceBase:
         ...
 
     def AnalyticRigidSurf2DPlanar(
-        self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment], filletRadius: str = 0
+        self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
     ):
         """This method is used to define a two-dimensional AnalyticSurface object on the instance.
 
@@ -278,7 +278,7 @@ class OdbInstanceBase:
     def AnalyticRigidSurfExtrude(
         self,
         name: str,
-        profile: typing.Tuple[AnalyticSurfaceSegment],
+        profile: typing.Tuple[AnalyticSurfaceSegment, ...],
         filletRadius: str = 0,
         localCoordData: tuple = (),
     ):
@@ -311,7 +311,7 @@ class OdbInstanceBase:
     def AnalyticRigidSurfRevolve(
         self,
         name: str,
-        profile: typing.Tuple[AnalyticSurfaceSegment],
+        profile: typing.Tuple[AnalyticSurfaceSegment, ...],
         filletRadius: str = 0,
         localCoordData: tuple = (),
     ):
