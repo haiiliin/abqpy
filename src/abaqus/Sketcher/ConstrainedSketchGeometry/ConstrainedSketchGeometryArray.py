@@ -3,7 +3,7 @@ import typing
 from  .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 
 
-class ConstrainedSketchGeometryArray:
+class ConstrainedSketchGeometryArray(list[ConstrainedSketchGeometry]):
     """The ConstrainedSketchGeometryArray is a sequence of ConstrainedSketchGeometry objects.
 
     .. note:: 
