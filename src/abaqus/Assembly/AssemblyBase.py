@@ -123,9 +123,7 @@ class AssemblyBase(Feature):
 
     #: A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Model.Model.ModelInstance` object specifying
     #: the ModelInstances.
-    allInstances: typing.Dict[str, typing.Union[PartInstance, ModelInstance]] = typing.Dict[
-        str, typing.Union[PartInstance, ModelInstance]
-    ]()
+    allInstances: typing.Dict[str, typing.Union[PartInstance, ModelInstance]] = {}
 
     #: An :py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature` object.
     engineeringFeatures: EngineeringFeature = EngineeringFeature()

@@ -28,14 +28,10 @@ class BeadTask(OptimizationTask):
     objectiveFunctions: typing.Dict[str, ObjectiveFunction] = {}
 
     #: A repository of OptimizationConstraint objects.
-    optimizationConstraints: typing.Dict[str, OptimizationConstraint] = typing.Dict[
-        str, OptimizationConstraint
-    ]()
+    optimizationConstraints: typing.Dict[str, OptimizationConstraint] = {}
 
     #: A repository of GeometricRestriction objects.
-    geometricRestrictions: typing.Dict[str, GeometricRestriction] = typing.Dict[
-        str, GeometricRestriction
-    ]()
+    geometricRestrictions: typing.Dict[str, GeometricRestriction] = {}
 
     #: A String specifying the optimization task repository key.
     name: str

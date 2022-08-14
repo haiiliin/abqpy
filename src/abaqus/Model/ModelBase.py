@@ -150,14 +150,10 @@ class ModelBase:
     contactControls: typing.Dict[str, ContactControl] = {}
 
     #: A repository of ContactInitialization objects.
-    contactInitializations: typing.Dict[str, ContactInitialization] = typing.Dict[
-        str, ContactInitialization
-    ]()
+    contactInitializations: typing.Dict[str, ContactInitialization] = {}
 
     #: A repository of ContactStabilization objects.
-    contactStabilizations: typing.Dict[str, ContactStabilization] = typing.Dict[
-        str, ContactStabilization
-    ]()
+    contactStabilizations: typing.Dict[str, ContactStabilization] = {}
 
     #: A tuple of tuples of Strings specifying the linked child PartInstance name in the
     #: current model to the corresponding parent PartInstance name in a different model.
@@ -195,14 +191,10 @@ class ModelBase:
     featureOptions: FeatureOptions = FeatureOptions()
 
     #: A repository of AdaptiveMeshConstraint objects.
-    adaptiveMeshConstraints: typing.Dict[str, AdaptiveMeshConstraint] = typing.Dict[
-        str, AdaptiveMeshConstraint
-    ]()
+    adaptiveMeshConstraints: typing.Dict[str, AdaptiveMeshConstraint] = {}
 
     #: A repository of AdaptiveMeshControl objects.
-    adaptiveMeshControls: typing.Dict[str, AdaptiveMeshControl] = typing.Dict[
-        str, AdaptiveMeshControl
-    ]()
+    adaptiveMeshControls: typing.Dict[str, AdaptiveMeshControl] = {}
 
     #: A repository of TimePoint objects.
     timePoints: typing.Dict[str, TimePoint] = {}
@@ -211,17 +203,13 @@ class ModelBase:
     filters: typing.Dict[str, Filter] = {}
 
     #: A repository of IntegratedOutputSection objects.
-    integratedOutputSections: typing.Dict[str, IntegratedOutputSection] = typing.Dict[
-        str, IntegratedOutputSection
-    ]()
+    integratedOutputSections: typing.Dict[str, IntegratedOutputSection] = {}
 
     #: A repository of FieldOutputRequest objects.
     fieldOutputRequests: typing.Dict[str, FieldOutputRequest] = {}
 
     #: A repository of HistoryOutputRequest objects.
-    historyOutputRequests: typing.Dict[str, HistoryOutputRequest] = typing.Dict[
-        str, HistoryOutputRequest
-    ]()
+    historyOutputRequests: typing.Dict[str, HistoryOutputRequest] = {}
 
     #: A repository of OptimizationTask objects.
     optimizationTasks: typing.Dict[str, OptimizationTask] = {}

@@ -107,9 +107,7 @@ class AssemblyDisplayOptions:
     displayGroup: DisplayGroup = DisplayGroup("dg", Leaf(EMPTY_LEAF))
 
     #: A repository of DisplayGroupInstance objects.
-    displayGroupInstances: typing.Dict[str, DisplayGroupInstance] = typing.Dict[
-        str, DisplayGroupInstance
-    ]()
+    displayGroupInstances: typing.Dict[str, DisplayGroupInstance] = {}
 
     #: An :py:class:`~abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions` object.
     engineeringFeatureOptions: EngineeringFeatureDisplayOptions = (
