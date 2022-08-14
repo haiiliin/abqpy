@@ -68,13 +68,13 @@ class PartBase(Feature):
     vertices: VertexArray = VertexArray([])
 
     #: An :py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray` object specifying all the ignored vertices in the part.
-    ignoredVertices: IgnoredVertexArray = IgnoredVertexArray()
+    ignoredVertices: IgnoredVertexArray = []
 
     #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying all the edges in the part.
     edges: EdgeArray = EdgeArray([])
 
     #: An :py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray` object specifying all the ignored edges in the part.
-    ignoredEdges: IgnoredEdgeArray = IgnoredEdgeArray()
+    ignoredEdges: IgnoredEdgeArray = []
 
     #: A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object specifying all the faces in the part.
     faces: FaceArray = FaceArray([])
@@ -146,10 +146,10 @@ class PartBase(Feature):
     engineeringFeatures: EngineeringFeature = EngineeringFeature()
 
     #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
-    sectionAssignments: SectionAssignmentArray = SectionAssignmentArray()
+    sectionAssignments: SectionAssignmentArray = []
 
     #: A :py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray` object.
-    materialOrientations: MaterialOrientationArray = MaterialOrientationArray()
+    materialOrientations: MaterialOrientationArray = []
 
     #: A repository of CompositeLayup objects.
     compositeLayups: typing.Dict[str, CompositeLayup] = {}
