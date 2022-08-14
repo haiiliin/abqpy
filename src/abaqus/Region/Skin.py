@@ -1,3 +1,5 @@
+import typing
+
 from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.Face import Face

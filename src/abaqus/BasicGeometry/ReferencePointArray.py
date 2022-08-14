@@ -1,4 +1,5 @@
-from .ReferencePoint import ReferencePoint
+import typing
 
+from .ReferencePoint import ReferencePoint
 
 ReferencePointArray = typing.List[ReferencePoint]

@@ -1,5 +1,3 @@
-import typing
-
 from abaqusConstants import *
 from .OdbAssembly import OdbAssembly
 from .OdbInstance import OdbInstance

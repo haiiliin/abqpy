@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .ElementProgressiveActivation import ElementProgressiveActivation
 from ..Assembly.AssemblyBase import AssemblyBase

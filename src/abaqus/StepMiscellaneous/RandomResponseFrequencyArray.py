@@ -1,4 +1,5 @@
-from .RandomResponseFrequency import RandomResponseFrequency
+import typing
 
+from .RandomResponseFrequency import RandomResponseFrequency
 
 RandomResponseFrequencyArray = typing.List[RandomResponseFrequency]
