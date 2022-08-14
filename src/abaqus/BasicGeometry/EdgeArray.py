@@ -63,7 +63,7 @@ class EdgeArray(typing.List[Edge]):
         """
         ...
 
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[Edge, typing.typing.List[Edge]]:
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[Edge, typing.List[Edge]]:
         """This method returns the object or objects in the EdgeArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any edge
