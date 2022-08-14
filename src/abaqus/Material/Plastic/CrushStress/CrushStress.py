@@ -29,7 +29,7 @@ class CrushStress:
     """
 
     #: A sequence of sequences of Floats specifying the items described below.
-    crushStressTable: tuple[tuple[float, ...]]
+    crushStressTable: typing.Tuple[typing.Tuple[float, ...]]
 
     #: A Boolean specifying whether the data depend on temperature. The default value is OFF.
     temperatureDependency: Boolean = OFF
@@ -44,7 +44,7 @@ class CrushStress:
 
     def __init__(
         self,
-        crushStressTable: tuple[tuple[float, ...]],
+        crushStressTable: typing.Tuple[typing.Tuple[float, ...]],
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):
@@ -74,7 +74,7 @@ class CrushStress:
 
     def setValues(
         self,
-        crushStressTable: tuple[tuple[float, ...]] = ((),),
+        crushStressTable: typing.Tuple[typing.Tuple[float, ...]] = ((),),
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

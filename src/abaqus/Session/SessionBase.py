@@ -94,7 +94,7 @@ class SessionBase:
     kernelMemoryLimit: float = None
 
     #: A repository of Color objects.
-    colors: dict[str, Color] = dict[str, Color]()
+    colors: typing.Dict[str, Color] = {}
 
     #: A :py:class:`~abaqus.Session.JournalOptions.JournalOptions` object specifying how to record selection of geometry in the journal
     #: and replay files.
@@ -128,7 +128,7 @@ class SessionBase:
     quickTimeOptions: QuickTimeOptions = QuickTimeOptions()
 
     #: A repository of Viewport objects.
-    viewports: dict[str, Viewport] = dict[str, Viewport]()
+    viewports: typing.Dict[str, Viewport] = {}
 
     #: A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object.
     customData: RepositorySupport = RepositorySupport()
@@ -146,10 +146,10 @@ class SessionBase:
     freeBodyReportOptions: FreeBodyReportOptions = FreeBodyReportOptions()
 
     #: A repository of Odb objects.
-    odbs: dict[str, Odb] = dict[str, Odb]()
+    odbs: typing.Dict[str, Odb] = {}
 
     #: A repository of ScratchOdb objects.
-    scratchOdbs: dict[str, ScratchOdb] = dict[str, ScratchOdb]()
+    scratchOdbs: typing.Dict[str, ScratchOdb] = {}
 
     #: A :py:class:`~abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay` object.
     defaultOdbDisplay: DefaultOdbDisplay = DefaultOdbDisplay()
@@ -161,22 +161,22 @@ class SessionBase:
     defaultChartOptions: DefaultChartOptions = DefaultChartOptions()
 
     #: A repository of OdbData objects.
-    odbData: dict[str, OdbData] = dict[str, OdbData]()
+    odbData: typing.Dict[str, OdbData] = {}
 
     #: A repository of MdbData objects.
-    mdbData: dict[str, MdbData] = dict[str, MdbData]()
+    mdbData: typing.Dict[str, MdbData] = {}
 
     #: A repository of Path objects.
-    paths: dict[str, Path] = dict[str, Path]()
+    paths: typing.Dict[str, Path] = {}
 
     #: A repository of FreeBody objects.
-    freeBodies: dict[str, FreeBody] = dict[str, FreeBody]()
+    freeBodies: typing.Dict[str, FreeBody] = {}
 
     #: A repository of Stream objects.
-    streams: dict[str, Stream] = dict[str, Stream]()
+    streams: typing.Dict[str, Stream] = {}
 
     #: A repository of Spectrum objects.
-    spectrums: dict[str, Spectrum] = dict[str, Spectrum]()
+    spectrums: typing.Dict[str, Spectrum] = {}
 
     #: A :py:class:`~abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues` object.
     currentProbeValues: CurrentProbeValues = CurrentProbeValues()
@@ -224,16 +224,16 @@ class SessionBase:
     xyColors: AutoColors = AutoColors()
 
     #: A repository of XYData objects.
-    xyDataObjects: dict[str, XYData] = dict[str, XYData]()
+    xyDataObjects: typing.Dict[str, XYData] = {}
 
     #: A repository of XYCurve objects.
-    curves: dict[str, XYCurve] = dict[str, XYCurve]()
+    curves: typing.Dict[str, XYCurve] = {}
 
     #: A repository of XYPlot objects.
-    xyPlots: dict[str, XYPlot] = dict[str, XYPlot]()
+    xyPlots: typing.Dict[str, XYPlot] = {}
 
     #: A repository of Chart objects.
-    charts: dict[str, Chart] = dict[str, Chart]()
+    charts: typing.Dict[str, Chart] = {}
 
     #: An :py:class:`~abaqus.XY.XYReportOptions.XYReportOptions` object.
     defaultXYReportOptions: XYReportOptions = XYReportOptions()
@@ -242,15 +242,15 @@ class SessionBase:
     xyReportOptions: XYReportOptions = XYReportOptions()
 
     #: A repository of View objects.
-    views: dict[str, View] = dict[str, View]()
+    views: typing.Dict[str, View] = {}
 
     #: A repository of NetworkDatabaseConnector objects.
-    networkDatabaseConnectors: dict[str, NetworkDatabaseConnector] = dict[
+    networkDatabaseConnectors: typing.Dict[str, NetworkDatabaseConnector] = typing.Dict[
         str, NetworkDatabaseConnector
     ]()
 
     #: A repository of DisplayGroup objects.
-    displayGroups: dict[str, DisplayGroup] = dict[str, DisplayGroup]()
+    displayGroups: typing.Dict[str, DisplayGroup] = {}
 
     #: A :py:class:`~abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo` object.
     graphicsInfo: GraphicsInfo = GraphicsInfo()
@@ -267,7 +267,7 @@ class SessionBase:
     )
 
     #: A repository of Queue objects.
-    queues: dict[str, Queue] = dict[str, Queue]()
+    queues: typing.Dict[str, Queue] = {}
 
     #: A String specifying the name of the current viewport.
     currentViewportName: str = ""
@@ -278,10 +278,10 @@ class SessionBase:
     sessionState: dict = None
 
     #: A repository of Image objects.
-    images: dict[str, Image] = dict[str, Image]()
+    images: typing.Dict[str, Image] = {}
 
     #: A repository of Movie objects.
-    movies: dict[str, Movie] = dict[str, Movie]()
+    movies: typing.Dict[str, Movie] = {}
 
     #: A :py:class:`~abaqus.DisplayOptions.LightOptions.LightOptions` object.
     defaultLightOptions: LightOptions = LightOptions()
@@ -293,7 +293,7 @@ class SessionBase:
     defaultMesherOptions: MesherOptions = MesherOptions()
 
     #: A repository of Drawing objects.
-    drawings: dict[str, Drawing] = dict[str, Drawing]()
+    drawings: typing.Dict[str, Drawing] = {}
 
     def setValues(self, kernelMemoryLimit: float = None):
         """This method modifies the Session object.
@@ -445,7 +445,7 @@ class SessionBase:
         self,
         fileName: str,
         format: SymbolicConstant = PNG,
-        canvasObjects: tuple[Canvas] = (),
+        canvasObjects: typing.Tuple[Canvas] = (),
         compression: Boolean = OFF,
     ):
         """This method prints canvas objects to a file using the attributes stored in the
@@ -473,7 +473,7 @@ class SessionBase:
         self,
         printCommand: str = "",
         numCopies: int = 1,
-        canvasObjects: tuple[Canvas] = (),
+        canvasObjects: typing.Tuple[Canvas] = (),
     ):
         """This method prints canvas objects to a Windows printer or to a PostScript printer. The
         attributes used for printing to a Windows printer are stored in the PrintOptions object
@@ -526,7 +526,7 @@ class SessionBase:
         ...
 
     def writeVrmlFile(
-        self, fileName: str, format: Boolean = OFF, canvasObjects: tuple[Canvas] = ()
+        self, fileName: str, format: Boolean = OFF, canvasObjects: typing.Tuple[Canvas] = ()
     ):
         """This method exports the current viewport objects to a file.
 
@@ -544,7 +544,7 @@ class SessionBase:
         ...
 
     def write3DXMLFile(
-        self, fileName: str, format: Boolean = OFF, canvasObjects: tuple[Canvas] = ()
+        self, fileName: str, format: Boolean = OFF, canvasObjects: typing.Tuple[Canvas] = ()
     ):
         """This method exports the current viewport objects to a file.
 
@@ -561,7 +561,7 @@ class SessionBase:
         """
         ...
 
-    def writeOBJFile(self, fileName: str, canvasObjects: tuple[Canvas] = ()):
+    def writeOBJFile(self, fileName: str, canvasObjects: typing.Tuple[Canvas] = ()):
         """This method exports the current viewport objects to a file.
 
         Parameters

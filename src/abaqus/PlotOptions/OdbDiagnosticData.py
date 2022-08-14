@@ -19,13 +19,13 @@ class OdbDiagnosticData:
     """
 
     #: A repository of OdbAnalysisError objects.
-    analysisErrors: dict[str, OdbAnalysisError] = dict[str, OdbAnalysisError]()
+    analysisErrors: typing.Dict[str, OdbAnalysisError] = {}
 
     #: A repository of OdbAnalysisWarning objects.
-    analysisWarnings: dict[str, OdbAnalysisWarning] = dict[str, OdbAnalysisWarning]()
+    analysisWarnings: typing.Dict[str, OdbAnalysisWarning] = {}
 
     #: A repository of OdbDiagnosticStep objects.
-    steps: dict[str, OdbDiagnosticStep] = dict[str, OdbDiagnosticStep]()
+    steps: typing.Dict[str, OdbDiagnosticStep] = {}
 
     #: An :py:class:`~abaqus.PlotOptions.OdbJobTime.OdbJobTime` object.
     jobTime: OdbJobTime = OdbJobTime()

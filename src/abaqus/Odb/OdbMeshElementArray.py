@@ -1,4 +1,4 @@
 from .OdbMeshElement import OdbMeshElement
 
 
-OdbMeshElementArray = list[OdbMeshElement]
+OdbMeshElementArray = typing.List[OdbMeshElement]

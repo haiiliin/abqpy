@@ -47,7 +47,7 @@ class MeshEditAssembly(AssemblyBase):
         ...
 
     def deleteElement(
-        self, elements: tuple[MeshElement], deleteUnreferencedNodes: Boolean = OFF
+        self, elements: typing.Tuple[MeshElement], deleteUnreferencedNodes: Boolean = OFF
     ):
         """This method deletes the given elements from a part instance. The elements must have been
         generated using the bottom-up meshing technique.
@@ -62,7 +62,7 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
-    def projectNode(self, nodes: tuple[MeshNode], projectionReference: str):
+    def projectNode(self, nodes: typing.Tuple[MeshNode], projectionReference: str):
         """This method projects the given nodes of a part instance onto a mesh entity, geometric
         entity, or a datum object.
 
@@ -79,7 +79,7 @@ class MeshEditAssembly(AssemblyBase):
 
     def editNode(
         self,
-        nodes: tuple[MeshNode],
+        nodes: typing.Tuple[MeshNode],
         coordinate1: float = None,
         coordinate2: float = None,
         coordinate3: float = None,
@@ -137,7 +137,7 @@ class MeshEditAssembly(AssemblyBase):
     @typing.overload
     def mergeNodes(
         self,
-        nodes: tuple[MeshNode],
+        nodes: typing.Tuple[MeshNode],
         tolerance: float = None,
         removeDuplicateElements: Boolean = True,
     ):

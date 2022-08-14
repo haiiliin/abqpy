@@ -1,4 +1,4 @@
 from .MassScaling import MassScaling
 
 
-MassScalingArray = list[MassScaling]
+MassScalingArray = typing.List[MassScaling]

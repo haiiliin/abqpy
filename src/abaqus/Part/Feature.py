@@ -41,7 +41,7 @@ class Feature(BaseFeature):
         """
         ...
 
-    def AddCells(self, faceList: tuple[Face], flipped: Boolean = OFF):
+    def AddCells(self, faceList: typing.Tuple[Face], flipped: Boolean = OFF):
         """This method tries to convert a shell entity to a solid entity. The conversion is not
         always successful.
 
@@ -140,7 +140,7 @@ class Feature(BaseFeature):
         """
         ...
 
-    def AssignMidsurfaceRegion(self, cellList: tuple[Cell]):
+    def AssignMidsurfaceRegion(self, cellList: typing.Tuple[Cell]):
         """This method assign a mid-surface property to sequence of Cell objects. If a reference
         representation of the part does not exist, it creates one. It also copies the **cells** to
         the reference representation and deletes the **cells** from the active representation of
@@ -480,7 +480,7 @@ class Feature(BaseFeature):
 
     def BlendFaces(
         self,
-        side1: tuple[Edge],
+        side1: typing.Tuple[Edge],
         side2: tuple,
         method: SymbolicConstant = None,
         path: Edge = None, 
@@ -521,7 +521,7 @@ class Feature(BaseFeature):
         """
         ...
 
-    def Chamfer(self, length: float, edgeList: tuple[Edge]):
+    def Chamfer(self, length: float, edgeList: typing.Tuple[Edge]):
         """This method creates an additional Feature object by chamfering the given list of edges
         with a given length.
 
@@ -620,7 +620,7 @@ class Feature(BaseFeature):
         """
         ...
 
-    def CoverEdges(self, edgeList: tuple[Edge], tryAnalytical: Boolean = False):
+    def CoverEdges(self, edgeList: typing.Tuple[Edge], tryAnalytical: Boolean = False):
         """This method generates a face using the given edges as the face's boundaries. The
         CoverEdges method generates a face by creating the geometry consisting of the underlying
         surface, associated edges, and vertices.
@@ -1005,10 +1005,10 @@ class Feature(BaseFeature):
 
     def ExtendFaces(
         self,
-        faces: tuple[Face] = (),
-        extendAlong: tuple[Edge] = (),
+        faces: typing.Tuple[Face] = (),
+        extendAlong: typing.Tuple[Edge] = (),
         distance: float = None,
-        upToFaces: tuple[Face] = (),
+        upToFaces: typing.Tuple[Face] = (),
         trimToExtendedTargetSurfaces: Boolean = True,
         upToReferenceRep: Boolean = OFF,
     ):
@@ -1234,7 +1234,7 @@ class Feature(BaseFeature):
         """
         ...
 
-    def MergeEdges(self, edgeList: tuple[Edge] = (), extendSelection: Boolean = OFF):
+    def MergeEdges(self, edgeList: typing.Tuple[Edge] = (), extendSelection: Boolean = OFF):
         """This method merges edges either by extending the user selection or using only the
         selected edges.
 
@@ -1263,9 +1263,9 @@ class Feature(BaseFeature):
 
     def OffsetFaces(
         self,
-        faceList: tuple[Face],
+        faceList: typing.Tuple[Face],
         distance: float = None,
-        targetFaces: tuple[Face] = (),
+        targetFaces: typing.Tuple[Face] = (),
         targetFacesMethod: SymbolicConstant = None,
         fractionDistance: float = None,
         trimToReferenceRep: Boolean = OFF,
@@ -1313,7 +1313,7 @@ class Feature(BaseFeature):
         """
         ...
 
-    def RemoveCells(self, cellList: tuple[Cell]):
+    def RemoveCells(self, cellList: typing.Tuple[Cell]):
         """This method converts a solid entity to a shell entity.
 
         .. note:: 
@@ -1340,7 +1340,7 @@ class Feature(BaseFeature):
         """
         ...
 
-    def RemoveFaces(self, faceList: tuple[Face], deleteCells: Boolean = False):
+    def RemoveFaces(self, faceList: typing.Tuple[Face], deleteCells: Boolean = False):
         """This method removes faces from a solid entity or from a shell entity.
 
         .. note:: 
@@ -1365,7 +1365,7 @@ class Feature(BaseFeature):
         """
         ...
 
-    def RemoveFacesAndStitch(self, faceList: tuple[Face]):
+    def RemoveFacesAndStitch(self, faceList: typing.Tuple[Face]):
         """This method removes faces from a solid entity and attempts to close the resulting gap by
         extending the neighboring faces of the solid.
 
@@ -1390,8 +1390,8 @@ class Feature(BaseFeature):
 
     def RemoveRedundantEntities(
         self,
-        vertexList: tuple[Vertex] = (),
-        edgeList: tuple[Edge] = (),
+        vertexList: typing.Tuple[Vertex] = (),
+        edgeList: typing.Tuple[Edge] = (),
         removeEdgeVertices: Boolean = True,
     ):
         """This method removes redundant edges and vertices from a solid or a shell entity. One of
@@ -1426,7 +1426,7 @@ class Feature(BaseFeature):
         """
         ...
 
-    def RepairFaceNormals(self, faceList: tuple[Face] = ()):
+    def RepairFaceNormals(self, faceList: typing.Tuple[Face] = ()):
         """This method works on the entire part or a sequence of shell faces. When the entire part
         is selected, it aligns all the shell face normals, and inverts all of the solid faces'
         normals if the solid was originally inside out. When a few shell faces are selected, it
@@ -1451,7 +1451,7 @@ class Feature(BaseFeature):
         """
         ...
 
-    def RepairInvalidEdges(self, edgeList: tuple[Edge]):
+    def RepairInvalidEdges(self, edgeList: typing.Tuple[Edge]):
         """This method repairs invalid edges. It will always attempt to improve edges even if none
         of selected edges are initially invalid and may leave behind invalid edges that could
         not be repaired.
@@ -1510,7 +1510,7 @@ class Feature(BaseFeature):
         """
         ...
 
-    def RepairSmallEdges(self, edgeList: tuple[Edge], toleranceChecks: Boolean = True):
+    def RepairSmallEdges(self, edgeList: typing.Tuple[Edge], toleranceChecks: Boolean = True):
         """This method repairs small edges. This method will attempt to replace selected small
         edges with vertices and extend the adjacent faces and edges. This method might leave
         behind some small edges that cannot be removed.
@@ -1537,7 +1537,7 @@ class Feature(BaseFeature):
         """
         ...
 
-    def RepairSmallFaces(self, faceList: tuple[Face], toleranceChecks: Boolean = True):
+    def RepairSmallFaces(self, faceList: typing.Tuple[Face], toleranceChecks: Boolean = True):
         """This method repairs small faces. It will attempt to replace the selected small faces
         with edges or vertices and extend the adjacent faces. This method might leave behind
         some small faces that cannot be removed.
@@ -1564,7 +1564,7 @@ class Feature(BaseFeature):
         """
         ...
 
-    def ReplaceFaces(self, faceList: tuple[Face], stitch: Boolean = True):
+    def ReplaceFaces(self, faceList: typing.Tuple[Face], stitch: Boolean = True):
         """This method replaces the selected faces with a single face. If one single face is
         selected, that alone is replaced with a new face.
 
@@ -1590,7 +1590,7 @@ class Feature(BaseFeature):
         """
         ...
 
-    def Round(self, radius: float, edgeList: tuple[Edge], vertexList: tuple[Vertex]):
+    def Round(self, radius: float, edgeList: typing.Tuple[Edge], vertexList: typing.Tuple[Vertex]):
         """This method creates an additional Feature object by rounding (filleting) the given list
         of entities with the given radius.
 
@@ -2325,7 +2325,7 @@ class Feature(BaseFeature):
         """
         ...
 
-    def Stitch(self, edgeList: tuple[Edge] = (), stitchTolerance: float = None):
+    def Stitch(self, edgeList: typing.Tuple[Edge] = (), stitchTolerance: float = None):
         """This method attempts to create a valid part by binding together free and imprecise edges
         of all the faces of a part. If **edgeList** is not given, a global stitch will be
         performed. If **stitchTolerance** is not specified, a value of 1.0 will be used.

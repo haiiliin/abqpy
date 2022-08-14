@@ -1,4 +1,4 @@
 from .Light import Light
 
 
-LightArray = list[Light]
+LightArray = typing.List[Light]

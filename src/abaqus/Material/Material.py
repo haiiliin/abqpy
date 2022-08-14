@@ -525,7 +525,7 @@ class Material(MaterialBase):
 
     def CrushStress(
         self,
-        crushStressTable: tuple[tuple[float, ...]],
+        crushStressTable: typing.Tuple[typing.Tuple[float, ...]],
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

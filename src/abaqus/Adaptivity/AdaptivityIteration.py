@@ -1,3 +1,5 @@
+import typing
+
 from .ErrorIndicatorResult import ErrorIndicatorResult
 from .RuleResult import RuleResult
 
@@ -18,7 +20,7 @@ class AdaptivityIteration:
     #: A repository of RuleResult objects specifying the calculated results from sizing
     #: functions corresponding to the RemeshingRule objects for this iteration of an adaptivity
     #: process.
-    ruleResults: dict[str, RuleResult] = dict[str, RuleResult]()
+    ruleResults: typing.Dict[str, RuleResult] = {}
 
     #: An Int specifying the sequence number for this iteration in the adaptivity process.
     iteration: int
@@ -111,7 +113,7 @@ class AdaptivityIteration:
     def RuleResult(
         self,
         name: str,
-        indicatorResults: dict[str, ErrorIndicatorResult],
+        indicatorResults: typing.Dict[str, ErrorIndicatorResult],
         numElems: int,
         minSizeElemCount: int,
         satisfiedVars: tuple = (),

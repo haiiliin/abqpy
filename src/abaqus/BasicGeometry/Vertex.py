@@ -50,7 +50,7 @@ class Vertex:
 
         Returns
         -------
-        tuple[int, ...]
+        typing.Tuple[int, ...]
             A tuple of integers.
 
         """

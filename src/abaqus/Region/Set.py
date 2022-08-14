@@ -88,17 +88,17 @@ class Set(Region):
     def __init__(
         self,
         name: str,
-        nodes: tuple[MeshNode] = None,
-        elements: tuple[MeshElement] = None,
+        nodes: typing.Tuple[MeshNode] = None,
+        elements: typing.Tuple[MeshElement] = None,
         region: Region = None,
-        vertices: tuple[Vertex] = None,
-        edges: tuple[Edge] = None,
-        faces: tuple[Face] = None,
-        cells: tuple[Cell] = None,
-        xVertices: tuple[Vertex] = None,
-        xEdges: tuple[Edge] = None,
-        xFaces: tuple[Face] = None,
-        referencePoints: tuple[ReferencePoint] = (),
+        vertices: typing.Tuple[Vertex] = None,
+        edges: typing.Tuple[Edge] = None,
+        faces: typing.Tuple[Face] = None,
+        cells: typing.Tuple[Cell] = None,
+        xVertices: typing.Tuple[Vertex] = None,
+        xEdges: typing.Tuple[Edge] = None,
+        xFaces: typing.Tuple[Face] = None,
+        referencePoints: typing.Tuple[ReferencePoint] = (),
         skinFaces: tuple = (),
         skinEdges: tuple = (),
         stringerEdges: tuple = (),
@@ -190,7 +190,7 @@ class Set(Region):
         ...
 
     def SetByBoolean(
-        self, name: str, sets: tuple["Set"], operation: SymbolicConstant = UNION
+        self, name: str, sets: typing.Tuple["Set"], operation: SymbolicConstant = UNION
     ):
         """This method creates a set by performing a boolean operation on two or more input sets.
 
