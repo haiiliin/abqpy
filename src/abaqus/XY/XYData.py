@@ -10,7 +10,7 @@ class Odb:
     ...
 
 
-class XYData(tuple):
+class XYData:
     """The XYData object is used to store values and attributes associated with XYData type
     objects.
     XYData objects can be created using the methods described below. The methods accessed
@@ -89,8 +89,8 @@ class XYData(tuple):
     #: values.
     axis1QuantityType: QuantityType = None
 
-    #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
-    #: values.
+    #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+    #: the Y -axis2- values.
     axis2QuantityType: QuantityType = None
 
     @typing.overload
@@ -145,11 +145,11 @@ class XYData(tuple):
             A String specifying the label for the Y-values. This value may be overridden if the
             **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         axis1QuantityType
-            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
-            values.
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+            the X -axis1- values.
         axis2QuantityType
-            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
-            values.
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+            the Y -axis2- values.
 
         Returns
         -------
