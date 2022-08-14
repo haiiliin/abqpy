@@ -1,3 +1,5 @@
+import typing
+
 
 class DrawingArea:
     """The DrawingArea object specifies the location and size of the drawing area used for

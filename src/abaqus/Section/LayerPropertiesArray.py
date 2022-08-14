@@ -1,4 +1,5 @@
-from .LayerProperties import LayerProperties
+import typing
 
+from .LayerProperties import LayerProperties
 
 LayerPropertiesArray = typing.List[LayerProperties]

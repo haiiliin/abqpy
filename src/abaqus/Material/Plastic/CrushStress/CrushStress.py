@@ -1,5 +1,6 @@
-from abaqusConstants import *
+import typing
 
+from abaqusConstants import *
 from .CrushStressVelocityFactor import CrushStressVelocityFactor
 
 

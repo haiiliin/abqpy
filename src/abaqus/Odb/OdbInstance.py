@@ -1,3 +1,5 @@
+import typing
+
 from .OdbInstanceBase import OdbInstanceBase
 from .OdbMeshNode import OdbMeshNode
 from .OdbSet import OdbSet

@@ -1,3 +1,5 @@
+import typing
+
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 
 

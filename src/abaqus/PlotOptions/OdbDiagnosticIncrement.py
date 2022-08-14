@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .OdbDiagnosticAttempt import OdbDiagnosticAttempt
 

@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .OdbMeshElement import OdbMeshElement
 from .OdbMeshElementArray import OdbMeshElementArray

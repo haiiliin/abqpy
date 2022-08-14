@@ -1,3 +1,5 @@
+import typing
+
 from .ReferencePoint import ReferencePoint
 
 

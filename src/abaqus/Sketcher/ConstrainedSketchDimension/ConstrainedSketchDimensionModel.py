@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from ..ConstrainedSketchBase import ConstrainedSketchBase
 from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (

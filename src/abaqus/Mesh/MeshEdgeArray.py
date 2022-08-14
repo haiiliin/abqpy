@@ -1,3 +1,5 @@
+import typing
+
 from .MeshEdge import MeshEdge
 
 
