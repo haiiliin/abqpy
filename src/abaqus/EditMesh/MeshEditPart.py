@@ -26,7 +26,7 @@ class MeshEditPart(PartBase):
             import meshEdit
     """
 
-    def adjustMidsideNode(self, cornerNodes: typing.Tuple[Node], parameter: float):
+    def adjustMidsideNode(self, cornerNodes: typing.Tuple[Node, ...], parameter: float):
         """This method is used to adjust the midside node of second-order elements of an orphan
         mesh part.
 
@@ -118,7 +118,7 @@ class MeshEditPart(PartBase):
         ...
 
     def deleteElement(
-        self, elements: typing.Tuple[MeshElement], deleteUnreferencedNodes: Boolean = OFF
+        self, elements: typing.Tuple[MeshElement, ...], deleteUnreferencedNodes: Boolean = OFF
     ):
         """This method deletes the given elements from an orphan mesh part or an Abaqus native
         mesh. If the elements belong to an Abaqus native mesh then the elements must have been
@@ -135,7 +135,7 @@ class MeshEditPart(PartBase):
         ...
 
     def deleteNode(
-        self, nodes: typing.Tuple[MeshNode], deleteUnreferencedNodes: Boolean = OFF
+        self, nodes: typing.Tuple[MeshNode, ...], deleteUnreferencedNodes: Boolean = OFF
     ):
         """This method deletes the given nodes from an orphan mesh part.
 
@@ -152,7 +152,7 @@ class MeshEditPart(PartBase):
 
     def editNode(
         self,
-        nodes: typing.Tuple[MeshNode],
+        nodes: typing.Tuple[MeshNode, ...],
         coordinate1: float = None,
         coordinate2: float = None,
         coordinate3: float = None,
@@ -208,7 +208,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
-    def projectNode(self, nodes: typing.Tuple[MeshNode], projectionReference: str):
+    def projectNode(self, nodes: typing.Tuple[MeshNode, ...], projectionReference: str):
         """This method projects the given nodes onto a mesh entity, geometric entity, or a datum
         object. The nodes may belong to an orphan mesh part or to an Abaqus native mesh.
 
@@ -309,7 +309,7 @@ class MeshEditPart(PartBase):
     @typing.overload
     def mergeNodes(
         self,
-        nodes: typing.Tuple[Node],
+        nodes: typing.Tuple[Node, ...],
         tolerance: float = None,
         removeDuplicateElements: Boolean = True,
         keepHighLabels: Boolean = False,
@@ -367,7 +367,7 @@ class MeshEditPart(PartBase):
         ...
 
     def orientElements(
-        self, pickedElements: typing.Tuple[MeshElement], referenceRegion: MeshFace
+        self, pickedElements: typing.Tuple[MeshElement, ...], referenceRegion: MeshFace
     ):
         """This method orients the stack direction of elements in a continuum shell or gasket mesh.
 

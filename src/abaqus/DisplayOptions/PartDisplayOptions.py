@@ -63,7 +63,7 @@ class PartDisplayOptions:
     def setValues(
         self,
         renderStyle: SymbolicConstant = WIREFRAME,
-        visibleDisplayGroups: typing.Tuple[DisplayGroup] = (),
+        visibleDisplayGroups: typing.Tuple[DisplayGroup, ...] = (),
         engineeringFeatures: Boolean = OFF,
         renderBeamProfiles: Boolean = OFF,
         beamScaleFactor: float = 1,

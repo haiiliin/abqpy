@@ -223,7 +223,7 @@ class ConstrainedSketch(
     def copyMirror(
         self,
         mirrorLine: ConstrainedSketchGeometry,
-        objectList: typing.Tuple[ConstrainedSketchGeometry],
+        objectList: typing.Tuple[ConstrainedSketchGeometry, ...],
     ):
         """This method creates copies of the given ConstrainedSketchGeometry objects, mirrors them
         about a selected line, and inserts them into the appropriate repositories of the
@@ -240,7 +240,7 @@ class ConstrainedSketch(
         """
         ...
 
-    def copyMove(self, vector: tuple, objectList: typing.Tuple[ConstrainedSketchGeometry]):
+    def copyMove(self, vector: tuple, objectList: typing.Tuple[ConstrainedSketchGeometry, ...]):
         """This method creates copies of the given ConstrainedSketchGeometry objects, moves them
         from their original position, and inserts them into the appropriate repositories of the
         ConstrainedSketch object.
@@ -258,7 +258,7 @@ class ConstrainedSketch(
         self,
         centerPoint: typing.Tuple[float, ...],
         angle: float,
-        objectList: typing.Tuple[ConstrainedSketchGeometry],
+        objectList: typing.Tuple[ConstrainedSketchGeometry, ...],
     ):
         """This method creates copies of the given ConstrainedSketchGeometry objects, rotates them,
         and inserts them into the appropriate repositories of the ConstrainedSketch object.
@@ -278,7 +278,7 @@ class ConstrainedSketch(
         self,
         scaleValue: float,
         scaleCenter: typing.Tuple[float, ...],
-        objectList: typing.Tuple[ConstrainedSketchGeometry],
+        objectList: typing.Tuple[ConstrainedSketchGeometry, ...],
     ):
         """This method creates copies of the given ConstrainedSketchGeometry objects, scales them
         by the specified value about a selected point, and inserts them into the appropriate
@@ -338,8 +338,8 @@ class ConstrainedSketch(
         number1: int,
         spacing1: float,
         angle1: float,
-        vertexList: typing.Tuple[ConstrainedSketchVertex] = (),
-        geomList: typing.Tuple[ConstrainedSketchGeometry] = (),
+        vertexList: typing.Tuple[ConstrainedSketchVertex, ...] = (),
+        geomList: typing.Tuple[ConstrainedSketchGeometry, ...] = (),
         number2: str = 1,
         spacing2: float = None,
         angle2: float = None,
@@ -388,7 +388,7 @@ class ConstrainedSketch(
         """
         ...
 
-    def mergeVertices(self, value: float, vertexList: typing.Tuple[ConstrainedSketchVertex]):
+    def mergeVertices(self, value: float, vertexList: typing.Tuple[ConstrainedSketchVertex, ...]):
         """This method merges the ConstrainedSketchVertex objects that lie within the specified
         distance of each other. If only one ConstrainedSketchVertex object is selected, it will
         merge all ConstrainedSketchVertex objects that lie within the specified distance of that
@@ -404,7 +404,7 @@ class ConstrainedSketch(
         """
         ...
 
-    def move(self, vector: tuple, objectList: typing.Tuple[ConstrainedSketchGeometry]):
+    def move(self, vector: tuple, objectList: typing.Tuple[ConstrainedSketchGeometry, ...]):
         """This method translates the given ConstrainedSketchGeometry objects by the given vector.
 
         Parameters
@@ -419,7 +419,7 @@ class ConstrainedSketch(
     def offset(
         self,
         distance: float,
-        objectList: typing.Tuple[ConstrainedSketchGeometry],
+        objectList: typing.Tuple[ConstrainedSketchGeometry, ...],
         side: SymbolicConstant,
         filletCorners: Boolean = OFF,
     ):
@@ -447,8 +447,8 @@ class ConstrainedSketch(
         number: int,
         totalAngle: float,
         centerPoint: typing.Tuple[float, ...],
-        vertexList: typing.Tuple[ConstrainedSketchVertex] = (),
-        geomList: typing.Tuple[ConstrainedSketchGeometry] = (),
+        vertexList: typing.Tuple[ConstrainedSketchVertex, ...] = (),
+        geomList: typing.Tuple[ConstrainedSketchGeometry, ...] = (),
     ):
         """This method copies ConstrainedSketchGeometry objects in a radial pattern about a
         specified center point.
@@ -497,7 +497,7 @@ class ConstrainedSketch(
         ...
 
     def removeGapsAndOverlaps(
-        self, tolerance: str, geomList: typing.Tuple[ConstrainedSketchGeometry]
+        self, tolerance: str, geomList: typing.Tuple[ConstrainedSketchGeometry, ...]
     ):
         """This method removes gaps and overlaps between sketch geometries specified by the user.
         This method is particularly useful when cleaning up imported sketches
@@ -516,7 +516,7 @@ class ConstrainedSketch(
         ...
 
     def repairShortEdges(
-        self, geomList: typing.Tuple[ConstrainedSketchGeometry], tolerance: str = ""
+        self, geomList: typing.Tuple[ConstrainedSketchGeometry, ...], tolerance: str = ""
     ):
         """This method deletes the short edges specified, optionally selecting only those short
         edges whose lengths are smaller than the specified tolerance and healing the resultant
@@ -568,7 +568,7 @@ class ConstrainedSketch(
         self,
         scaleValue: float,
         scaleCenter: typing.Tuple[float, ...],
-        objectList: typing.Tuple[ConstrainedSketchGeometry],
+        objectList: typing.Tuple[ConstrainedSketchGeometry, ...],
     ):
         """This method scales the given ConstrainedSketchGeometry objects by the given scale factor
         and about the given point.
