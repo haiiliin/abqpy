@@ -1,3 +1,5 @@
+import typing
+
 class CrushStressVelocityFactor:
     """The CrushStressVelocityFactor object defines how the approach velocity at a crushing interface
     influences a material's resistance to crushing.

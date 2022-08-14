@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .EngineeringFeatureDisplayOptions import EngineeringFeatureDisplayOptions
 from .GeometryDisplayOptions import GeometryDisplayOptions

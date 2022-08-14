@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .._OptionsBase import _CopyOptionsBase
 

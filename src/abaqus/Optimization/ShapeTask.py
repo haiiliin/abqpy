@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .DesignResponse import DesignResponse
 from .GeometricRestriction import GeometricRestriction
