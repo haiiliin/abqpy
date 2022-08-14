@@ -1,11 +1,13 @@
 import typing
 
 from abaqusConstants import *
+from .AnalyticSurface import AnalyticSurface
 from .OdbAssemblyBase import OdbAssemblyBase
 from .OdbDatumCsys import OdbDatumCsys
 from .OdbInstance import OdbInstance
 from .OdbMeshNode import OdbMeshNode
 from .OdbPart import OdbPart
+from .OdbRigidBody import OdbRigidBody
 from .OdbSet import OdbSet
 
 
@@ -244,6 +246,7 @@ class OdbAssembly(OdbAssemblyBase):
         position: SymbolicConstant = INPUT,
         isothermal: Boolean = ON,
 <<<<<<< HEAD
+<<<<<<< HEAD
         elements: OdbSet = OdbSet("set", tuple[OdbMeshNode]()),
         tieNodes: OdbSet = OdbSet("set", tuple[OdbMeshNode]()),
         pinNodes: OdbSet = OdbSet("set", tuple[OdbMeshNode]()),
@@ -251,6 +254,11 @@ class OdbAssembly(OdbAssemblyBase):
         elements: OdbSet = OdbSet("set", ()),()()
         tieNodes: OdbSet = OdbSet("set", typing.Tuple[OdbMeshNode]()),
         pinNodes: OdbSet = OdbSet("set", typing.Tuple[OdbMeshNode]()),
+=======
+        elements: OdbSet = OdbSet("set", ()),
+        tieNodes: OdbSet = OdbSet("set", ()),
+        pinNodes: OdbSet = OdbSet("set", ()),
+>>>>>>> 463a0b2 (Fix typings)
         analyticSurface: AnalyticSurface = None, 
 >>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
     ) -> OdbRigidBody:
