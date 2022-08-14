@@ -1,5 +1,6 @@
 import os
 import re
+import typing
 
 
 def findUserTypePath(type: str, searchDir: str):
