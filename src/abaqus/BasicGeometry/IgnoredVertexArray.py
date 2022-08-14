@@ -20,7 +20,7 @@ class IgnoredVertexArray(typing.List[IgnoredVertex]):
             mdb.models[name].rootAssembly.instances[name].ignoredVertices
     """
 
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[IgnoredVertex, typing.typing.List[IgnoredVertex]]:
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[IgnoredVertex, typing.List[IgnoredVertex]]:
         """This method returns the object or objects in the IgnoredVertexArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any
