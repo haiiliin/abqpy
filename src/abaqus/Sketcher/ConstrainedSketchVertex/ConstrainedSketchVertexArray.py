@@ -16,7 +16,7 @@ class ConstrainedSketchVertexArray(typing.List[ConstrainedSketchVertex]):
             mdb.models[name].sketches[name].vertices[i]
     """
 
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[ConstrainedSketchVertex, typing.typing.List[ConstrainedSketchVertex]]:
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[ConstrainedSketchVertex, typing.List[ConstrainedSketchVertex]]:
         """This method returns the ConstrainedSketchVertex located at the given coordinates.
 
         Parameters
