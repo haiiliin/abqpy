@@ -9,7 +9,7 @@ from ..Amplitude.Amplitude import Amplitude
 from ..Assembly.Assembly import Assembly
 from ..BeamSectionProfile.Profile import Profile
 from ..BoundaryCondition.BoundaryCondition import BoundaryCondition
-from ..BoundaryCondition.Calibration import Calibration
+from ..Calibration.Calibration import Calibration
 from ..Constraint.Constraint import Constraint
 from ..Feature.FeatureOptions import FeatureOptions
 from ..Field.AnalyticalField import AnalyticalField
