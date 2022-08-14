@@ -85,9 +85,7 @@ class SteadyStateSubspaceStep(AnalysisStep):
     description: str = ""
 
     #: A :py:class:`~abaqus.StepMiscellaneous.SteadyStateSubspaceFrequencyArray.SteadyStateSubspaceFrequencyArray` object.
-    frequencyRange: SteadyStateSubspaceFrequencyArray = (
-        SteadyStateSubspaceFrequencyArray()
-    )
+    frequencyRange: SteadyStateSubspaceFrequencyArray = []
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
