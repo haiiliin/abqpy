@@ -1,4 +1,4 @@
-from domdf_python_tools import typing
+import typing
 
 from abaqusConstants import *
 from .ConstrainedSketchDimension import ConstrainedSketchDimension
