@@ -245,22 +245,10 @@ class OdbAssembly(OdbAssemblyBase):
         referenceNode: OdbSet,
         position: SymbolicConstant = INPUT,
         isothermal: Boolean = ON,
-<<<<<<< HEAD
-<<<<<<< HEAD
-        elements: OdbSet = OdbSet("set", tuple[OdbMeshNode]()),
-        tieNodes: OdbSet = OdbSet("set", tuple[OdbMeshNode]()),
-        pinNodes: OdbSet = OdbSet("set", tuple[OdbMeshNode]()),
-=======
-        elements: OdbSet = OdbSet("set", ()),()()
-        tieNodes: OdbSet = OdbSet("set", typing.Tuple[OdbMeshNode]()),
-        pinNodes: OdbSet = OdbSet("set", typing.Tuple[OdbMeshNode]()),
-=======
         elements: OdbSet = OdbSet("set", ()),
         tieNodes: OdbSet = OdbSet("set", ()),
         pinNodes: OdbSet = OdbSet("set", ()),
->>>>>>> 463a0b2 (Fix typings)
         analyticSurface: AnalyticSurface = None, 
->>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
     ) -> OdbRigidBody:
         """This method creates a OdbRigidBody object.
 
@@ -306,6 +294,7 @@ class OdbAssembly(OdbAssemblyBase):
             elements,
             tieNodes,
             pinNodes,
+            analyticSurface,
         )
         self.rigidBodies.append(odbRigidBody)
         return odbRigidBody

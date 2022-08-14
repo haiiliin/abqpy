@@ -119,12 +119,6 @@ class StepBase:
     #: A repository of PredefinedFieldState objects.
     predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
 
-<<<<<<< HEAD
-=======
-    #: A repository of ActivateElements objects.
-    activateElements: typing.Dict[str, ActivateElements] = {}
-
->>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
     def resume(self):
         """This method resumes the step that was previously suppressed."""
         ...
