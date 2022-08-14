@@ -1,4 +1,5 @@
-from .BeamOrientation import BeamOrientation
+import typing
 
+from .BeamOrientation import BeamOrientation
 
 BeamOrientationArray = typing.List[BeamOrientation]

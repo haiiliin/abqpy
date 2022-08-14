@@ -1,4 +1,5 @@
-from .UniaxialTestData import UniaxialTestData
+import typing
 
+from .UniaxialTestData import UniaxialTestData
 
 UniaxialTestDataArray = typing.List[UniaxialTestData]

@@ -1,6 +1,7 @@
 import typing
-from .IgnoredEdge import IgnoredEdge
+
 from abaqusConstants import *
+from .IgnoredEdge import IgnoredEdge
 
 
 class IgnoredEdgeArray(typing.List[IgnoredEdge]):

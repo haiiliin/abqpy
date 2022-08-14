@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .Job import Job
 

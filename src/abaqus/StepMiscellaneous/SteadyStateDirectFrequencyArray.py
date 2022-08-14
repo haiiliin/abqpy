@@ -1,4 +1,5 @@
-from .SteadyStateDirectFrequency import SteadyStateDirectFrequency
+import typing
 
+from .SteadyStateDirectFrequency import SteadyStateDirectFrequency
 
 SteadyStateDirectFrequencyArray = typing.List[SteadyStateDirectFrequency]

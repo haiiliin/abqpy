@@ -1,4 +1,5 @@
-from .SubstructureGenerateFrequency import SubstructureGenerateFrequency
+import typing
 
+from .SubstructureGenerateFrequency import SubstructureGenerateFrequency
 
 SubstructureGenerateFrequencyArray = typing.List[SubstructureGenerateFrequency]

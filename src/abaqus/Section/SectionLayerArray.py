@@ -1,4 +1,5 @@
-from .SectionLayer import SectionLayer
+import typing
 
+from .SectionLayer import SectionLayer
 
 SectionLayerArray = typing.List[SectionLayer]

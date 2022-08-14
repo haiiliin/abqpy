@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .ArbitraryProfile import ArbitraryProfile
 from .BoxProfile import BoxProfile

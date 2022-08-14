@@ -1,3 +1,5 @@
+import typing
+
 from .Annotation import Annotation
 
 
