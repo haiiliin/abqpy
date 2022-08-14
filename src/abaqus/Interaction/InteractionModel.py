@@ -893,7 +893,7 @@ class InteractionModel(
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: tuple[SlidingFormulationAssignment, ...] = None,
+        slidingFormulationAssignments: typing.Tuple[SlidingFormulationAssignment, ...] = None,
         mainSecondaryAssignments: MasterSlaveAssignment = None,
         initializationAssignments: InitializationAssignment = None, 
         stabilizationAssignments: StabilizationAssignment = None, 

@@ -1,3 +1,5 @@
+import typing
+
 from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..Mesh.MeshEdge import MeshEdge
@@ -27,7 +29,7 @@ class Stringer:
     edges: EdgeArray = EdgeArray([])
 
     def __init__(
-        self, name: str, edges: tuple[Edge] = (), elementEdges: tuple[MeshEdge] = ()
+        self, name: str, edges: typing.Tuple[Edge, ...] = (), elementEdges: typing.Tuple[MeshEdge, ...] = ()
     ):
         """This method creates a stringer from a sequence of objects in a model database. At least
         one of the optional arguments needs to be specified.
@@ -58,7 +60,7 @@ class Stringer:
         ...
 
     def EditStringer(
-        self, name: str, edges: tuple[Edge] = (), elementEdges: tuple[MeshEdge] = ()
+        self, name: str, edges: typing.Tuple[Edge, ...] = (), elementEdges: typing.Tuple[MeshEdge, ...] = ()
     ):
         """This method modifies underlying entities of the selected stringer. At least one of the
         optional arguments needs to be specified.

@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .JobData import JobData
 from .OdbAssembly import OdbAssembly
@@ -30,10 +32,10 @@ class OdbBase:
     isReadOnly: Boolean = OFF
 
     #: A repository of Amplitude objects.
-    amplitudes: dict[str, Amplitude] = dict[str, Amplitude]()
+    amplitudes: typing.Dict[str, Amplitude] = {}
 
     #: A repository of Filter objects.
-    filters: dict[str, Filter] = dict[str, Filter]()
+    filters: typing.Dict[str, Filter] = {}
 
     #: An :py:class:`~abaqus.Odb.OdbAssembly.OdbAssembly` object.
     rootAssembly: OdbAssembly = OdbAssembly()
@@ -42,19 +44,19 @@ class OdbBase:
     jobData: JobData = JobData()
 
     #: A repository of OdbPart objects.
-    parts: dict[str, OdbPart] = dict[str, OdbPart]()
+    parts: typing.Dict[str, OdbPart] = {}
 
     #: A repository of Material objects.
-    materials: dict[str, Material] = dict[str, Material]()
+    materials: typing.Dict[str, Material] = {}
 
     #: A repository of OdbStep objects.
-    steps: dict[str, OdbStep] = dict[str, OdbStep]()
+    steps: typing.Dict[str, OdbStep] = {}
 
     #: A repository of Section objects.
-    sections: dict[str, Section] = dict[str, Section]()
+    sections: typing.Dict[str, Section] = {}
 
     #: A repository of SectionCategory objects.
-    sectionCategories: dict[str, SectionCategory] = dict[str, SectionCategory]()
+    sectionCategories: typing.Dict[str, SectionCategory] = {}
 
     #: A :py:class:`~abaqus.Odb.SectorDefinition.SectorDefinition` object.
     sectorDefinition: SectorDefinition = SectorDefinition()
@@ -66,7 +68,7 @@ class OdbBase:
     customData: RepositorySupport = RepositorySupport()
 
     #: A repository of Profile objects.
-    profiles: dict[str, Profile] = dict[str, Profile]()
+    profiles: typing.Dict[str, Profile] = {}
 
     def __init__(
         self, name: str, analysisTitle: str = "", description: str = "", path: str = ""

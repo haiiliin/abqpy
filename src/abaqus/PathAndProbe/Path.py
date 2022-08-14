@@ -19,7 +19,7 @@ class Path:
     #: If **type** = NODE_LIST, **coordinates** is a sequence of tuples of three Floats. This can be
     #: used as the value for the **expression** argument when creating a Path object of **type** =
     #: POINT_LIST.
-    coordinates: list[tuple[float, ...]] = []
+    coordinates: typing.List[typing.Tuple[float, ...]] = []
 
     #: A String specifying the repository key.
     name: str

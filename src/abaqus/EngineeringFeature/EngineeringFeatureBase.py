@@ -1,3 +1,5 @@
+import typing
+
 from .Crack import Crack
 from .Fastener import Fastener
 from .Inertia import Inertia
@@ -21,18 +23,18 @@ class EngineeringFeatureBase:
     """
 
     #: A repository of Inertia objects.
-    inertias: dict[str, Inertia] = dict[str, Inertia]()
+    inertias: typing.Dict[str, Inertia] = {}
 
     #: A repository of Crack objects.
-    cracks: dict[str, Crack] = dict[str, Crack]()
+    cracks: typing.Dict[str, Crack] = {}
 
     #: A repository of Fastener objects.
-    fasteners: dict[str, Fastener] = dict[str, Fastener]()
+    fasteners: typing.Dict[str, Fastener] = {}
 
     #: A repository of SpringDashpot objects.
-    springDashpots: dict[str, SpringDashpot] = dict[str, SpringDashpot]()
+    springDashpots: typing.Dict[str, SpringDashpot] = {}
 
-    def assignSeam(self, regions: tuple[Region]):
+    def assignSeam(self, regions: typing.Tuple[Region, ...]):
         """This method creates a seam crack along an edge or a face.
 
         Parameters
@@ -43,7 +45,7 @@ class EngineeringFeatureBase:
         """
         ...
 
-    def deleteSeam(self, regions: tuple[Region]):
+    def deleteSeam(self, regions: typing.Tuple[Region, ...]):
         """This method deletes a seam crack.
 
         Parameters

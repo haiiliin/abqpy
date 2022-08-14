@@ -1,9 +1,10 @@
 import typing
-from .IgnoredEdge import IgnoredEdge
+
 from abaqusConstants import *
+from .IgnoredEdge import IgnoredEdge
 
 
-class IgnoredEdgeArray(list[IgnoredEdge]):
+class IgnoredEdgeArray(typing.List[IgnoredEdge]):
     """The IgnoredEdgeArray is a sequence of IgnoredEdge objects. If the part is modified, then
     IgnoredEdgeArray must be updated for that part.
 

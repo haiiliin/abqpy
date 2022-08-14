@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 
@@ -5,9 +7,9 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 class ArcByCenterEnds(ConstrainedSketchGeometry):
     def __init__(
         self,
-        center: tuple[float, ...],
-        point1: tuple[float, ...],
-        point2: tuple[float, ...],
+        center: typing.Tuple[float, ...],
+        point1: typing.Tuple[float, ...],
+        point2: typing.Tuple[float, ...],
         direction: SymbolicConstant,
     ):
         """This method constructs an arc using a center point and two vertices. The Arc object is

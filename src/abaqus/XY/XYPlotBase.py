@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .Area import Area
 from .Chart import Chart
@@ -25,10 +27,10 @@ class XYPlotBase:
     title: Title = Title()
 
     #: A repository of Chart objects.
-    charts: dict[str, Chart] = dict[str, Chart]()
+    charts: typing.Dict[str, Chart] = {}
 
     #: A repository of XYCurve objects.
-    curves: dict[str, XYCurve] = dict[str, XYCurve]()
+    curves: typing.Dict[str, XYCurve] = {}
 
     #: A tuple of Floats specifying a transformation matrix used to scale or pan along the axes
     #: of the active Chart object of this XYPlot.

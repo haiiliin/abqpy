@@ -1,8 +1,10 @@
+import typing
+
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 
 
 class ArcByStartEndTangent(ConstrainedSketchGeometry):
-    def __init__(self, point1: tuple[float, ...], point2: tuple[float, ...], vector: tuple):
+    def __init__(self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...], vector: tuple):
         """This method constructs an arc using two vertices. The Arc object is added to the
         geometry repository of the ConstrainedSketch object.
 
