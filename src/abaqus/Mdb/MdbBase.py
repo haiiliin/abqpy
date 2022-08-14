@@ -41,9 +41,7 @@ class MdbBase:
 
 >>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
     #: A repository of OptimizationProcess objects.
-    optimizationProcesses: typing.Dict[str, OptimizationProcess] = typing.Dict[
-        str, OptimizationProcess
-    ]()
+    optimizationProcesses: typing.Dict[str, OptimizationProcess] = {}
 
     #: A :py:class:`~abaqus.EditMesh.MeshEditOptions.MeshEditOptions` object specifying the undo/redo behavior when editing meshes on parts
     #: or part instances.

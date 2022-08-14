@@ -37,14 +37,10 @@ class ConstrainedSketchBase:
     """
 
     #: A repository of ConstrainedSketchConstraint objects.
-    constraints: typing.Dict[str, ConstrainedSketchConstraint] = typing.Dict[
-        str, ConstrainedSketchConstraint
-    ]()
+    constraints: typing.Dict[str, ConstrainedSketchConstraint] = {}
 
     #: A repository of ConstrainedSketchDimension objects.
-    dimensions: typing.Dict[str, ConstrainedSketchDimension] = typing.Dict[
-        str, ConstrainedSketchDimension
-    ]()
+    dimensions: typing.Dict[str, ConstrainedSketchDimension] = {}
 
     #: A :py:class:`~abaqus.Amplitude.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray` object specifying the sketch geometry, such as lines,
     #: arcs, circles, and splines.
@@ -52,9 +48,7 @@ class ConstrainedSketchBase:
 
     #: A repository of ConstrainedSketchParameter objects specifying sketch parameters, which
     #: may be associated with dimensions.
-    parameters: typing.Dict[str, ConstrainedSketchParameter] = typing.Dict[
-        str, ConstrainedSketchParameter
-    ]()
+    parameters: typing.Dict[str, ConstrainedSketchParameter] = {}
 
     #: A :py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions` object specifying the sketch option settings.
     sketchOptions: ConstrainedSketchOptions = ConstrainedSketchOptions()
