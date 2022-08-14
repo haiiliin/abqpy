@@ -3,7 +3,7 @@ from .IgnoredEdge import IgnoredEdge
 from abaqusConstants import *
 
 
-class IgnoredEdgeArray:
+class IgnoredEdgeArray(list[IgnoredEdge]):
     """The IgnoredEdgeArray is a sequence of IgnoredEdge objects. If the part is modified, then
     IgnoredEdgeArray must be updated for that part.
 
