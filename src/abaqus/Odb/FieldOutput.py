@@ -33,7 +33,7 @@ class FieldOutput:
     isComplex: Boolean = OFF
 
     #: A :py:class:`~abaqus.Odb.FieldLocationArray.FieldLocationArray` object.
-    locations: FieldLocationArray = FieldLocationArray()
+    locations: FieldLocationArray = []
 
     #: A :py:class:`~abaqus.Odb.FieldValueArray.FieldValueArray` object specifying the order of the objects in the array is determined
     #: by the Abaqus Scripting Interface; see the **data** argument to the addData method for a

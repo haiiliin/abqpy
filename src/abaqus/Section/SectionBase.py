@@ -24,7 +24,7 @@ class SectionBase:
     """
 
     #: A :py:class:`~abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray` object.
-    behaviorOptions: ConnectorBehaviorOptionArray = ConnectorBehaviorOptionArray()
+    behaviorOptions: ConnectorBehaviorOptionArray = []
 
     #: A String specifying the repository key.
     name: str = ""

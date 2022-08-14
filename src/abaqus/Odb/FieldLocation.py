@@ -27,4 +27,4 @@ class FieldLocation:
     position: SymbolicConstant = None
 
     #: A :py:class:`~abaqus.Odb.SectionPointArray.SectionPointArray` object.
-    sectionPoints: SectionPointArray = SectionPointArray()
+    sectionPoints: SectionPointArray = []

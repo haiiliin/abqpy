@@ -35,7 +35,7 @@ class CompositeLayup:
     orientation: MaterialOrientation = MaterialOrientation(Set(''))
 
     #: A :py:class:`~abaqus.Property.CompositePlyArray.CompositePlyArray` object specifying the plies that make up this composite layup.
-    plies: CompositePlyArray = CompositePlyArray()
+    plies: CompositePlyArray = []
 
     #: A String specifying the repository key.
     name: str
