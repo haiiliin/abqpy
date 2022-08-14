@@ -89,9 +89,7 @@ class OdbData(_OptionsBase):
 
     #: A repository of CouplingConstraint objects specifying the list of distributing
     #: couplings. The repository is read-only.
-    distributingCouplings: typing.Dict[str, CouplingConstraint] = typing.Dict[
-        str, CouplingConstraint
-    ]()
+    distributingCouplings: typing.Dict[str, CouplingConstraint] = {}
 
     #: A repository of CouplingConstraint objects specifying the list of shellsolid couplings.
     #: The repository is read-only.

@@ -25,9 +25,7 @@ class OdbDiagnosticStep:
     characteristicElementLength: str = ""
 
     #: A repository of OdbContactDiagnostics objects.
-    contactDiagnostics: typing.Dict[str, OdbContactDiagnostics] = typing.Dict[
-        str, OdbContactDiagnostics
-    ]()
+    contactDiagnostics: typing.Dict[str, OdbContactDiagnostics] = {}
 
     #: A sequence of string specifying the explicit increment status. This attribute is
     #: read-only.
