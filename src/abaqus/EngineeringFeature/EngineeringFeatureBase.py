@@ -1,3 +1,5 @@
+import typing
+
 from .Crack import Crack
 from .Fastener import Fastener
 from .Inertia import Inertia

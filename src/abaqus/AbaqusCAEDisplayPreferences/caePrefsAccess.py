@@ -1,6 +1,6 @@
-from abaqusConstants import *
 import typing
 
+from abaqusConstants import *
 from .CaeGuiPrefs import CaeGuiPrefs
 from .CaeKerPrefs import CaeKerPrefs
 

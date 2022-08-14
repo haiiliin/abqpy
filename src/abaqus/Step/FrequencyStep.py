@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .AnalysisStep import AnalysisStep
 from ..Adaptivity.AdaptiveMeshConstraintState import AdaptiveMeshConstraintState

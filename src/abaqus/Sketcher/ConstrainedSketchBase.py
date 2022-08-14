@@ -1,8 +1,13 @@
+import typing
+
 from .ConstrainedSketchConstraint.ConstrainedSketchConstraint import (
     ConstrainedSketchConstraint,
 )
 from .ConstrainedSketchDimension.ConstrainedSketchDimension import (
     ConstrainedSketchDimension,
+)
+from .ConstrainedSketchGeometry.ConstrainedSketchGeometryArray import (
+    ConstrainedSketchGeometryArray
 )
 from .ConstrainedSketchOptions.ConstrainedSketchImageOptions import (
     ConstrainedSketchImageOptions,
@@ -13,9 +18,6 @@ from .ConstrainedSketchParameter.ConstrainedSketchParameter import (
 )
 from .ConstrainedSketchVertex.ConstrainedSketchVertexArray import (
     ConstrainedSketchVertexArray,
-)
-from .ConstrainedSketchGeometry.ConstrainedSketchGeometryArray import (
-    ConstrainedSketchGeometryArray
 )
 
 

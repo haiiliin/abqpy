@@ -1,5 +1,8 @@
+import typing
+
 from abaqusConstants import *
 from .PartInstance import PartInstance
+
 
 # from ..Model.ModelBase import ModelBase
 

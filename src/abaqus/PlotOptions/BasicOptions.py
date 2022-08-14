@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from ..Datum.DatumCsys import DatumCsys
 from .._OptionsBase import _CopyOptionsBase

@@ -46,6 +46,10 @@ from .Plastic.Concrete.Concrete import Concrete
 from .Plastic.Concrete.ConcreteDamagedPlasticity import ConcreteDamagedPlasticity
 from .Plastic.Creep.Creep import Creep
 from .Plastic.CriticalStateClay.ClayPlasticity import ClayPlasticity
+<<<<<<< HEAD
+=======
+from .Plastic.CrushStress.CrushStress import CrushStress
+>>>>>>> c28f7bd (Import typing)
 from .Plastic.CrushableFoam.CrushableFoam import CrushableFoam
 from .Plastic.DruckerPrager.Extended.DruckerPrager import DruckerPrager
 from .Plastic.DruckerPrager.ModifiedCap.CapPlasticity import CapPlasticity

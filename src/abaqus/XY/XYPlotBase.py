@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .Area import Area
 from .Chart import Chart

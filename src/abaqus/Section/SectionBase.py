@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .TransverseShearBeam import TransverseShearBeam
 from .TransverseShearShell import TransverseShearShell
