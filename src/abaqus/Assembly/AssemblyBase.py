@@ -1,9 +1,5 @@
 import typing
 
-<<<<<<< HEAD
-=======
-from abaqus.Datum.DatumCsys import DatumCsys
->>>>>>> c28f7bd (Import typing)
 from abaqusConstants import *
 from .AssemblyModel import AssemblyModel
 from .ConnectorOrientationArray import ConnectorOrientationArray

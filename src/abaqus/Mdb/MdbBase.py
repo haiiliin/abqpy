@@ -34,12 +34,6 @@ class MdbBase:
     #: A repository of AdaptivityProcess objects.
     adaptivityProcesses: typing.Dict[str, AdaptivityProcess] = {}
 
-<<<<<<< HEAD
-=======
-    #: A repository of Coexecution objects.
-    coexecutions: typing.Dict[str, Coexecution] = {}
-
->>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
     #: A repository of OptimizationProcess objects.
     optimizationProcesses: typing.Dict[str, OptimizationProcess] = {}
 
