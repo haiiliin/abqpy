@@ -1,7 +1,7 @@
 from .ReferencePoint import ReferencePoint
 
 
-class ReferencePoints(dict[int, ReferencePoint]):
+class ReferencePoints(typing.Dict[int, ReferencePoint]):
     def __getitem__(self, key: int) -> ReferencePoint:
         if key in self.keys():
             return self.get(key)

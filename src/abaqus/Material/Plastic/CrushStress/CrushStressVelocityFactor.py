@@ -23,9 +23,9 @@ class CrushStressVelocityFactor:
     """
 
     #: A sequence of sequences of Floats specifying the items described below.
-    crushStressVelocityFactorTable: tuple[tuple[float, ...]]
+    crushStressVelocityFactorTable: typing.Tuple[typing.Tuple[float, ...]]
 
-    def __init__(self, crushStressVelocityFactorTable: tuple[tuple[float, ...]]):
+    def __init__(self, crushStressVelocityFactorTable: typing.Tuple[typing.Tuple[float, ...]]):
         """This method creates a CrushStressVelocityFactor object.
 
         Parameters
@@ -35,7 +35,7 @@ class CrushStressVelocityFactor:
         """
         self.crushStressVelocityFactorTable = crushStressVelocityFactorTable
 
-    def setValues(self, crushStressVelocityFactorTable: tuple[tuple[float, ...]] = ()):
+    def setValues(self, crushStressVelocityFactorTable: typing.Tuple[typing.Tuple[float, ...]] = ()):
         """This method creates a CrushStressVelocityFactor object.
 
         Parameters

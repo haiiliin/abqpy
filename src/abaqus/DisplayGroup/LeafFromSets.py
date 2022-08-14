@@ -22,7 +22,7 @@ class LeafFromSets(Leaf):
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant = None
 
-    def __init__(self, sets: tuple[Set]):
+    def __init__(self, sets: typing.Tuple[Set]):
         """This method creates a Leaf object from a sequence of Set objects.
 
         .. note:: 

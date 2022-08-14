@@ -28,16 +28,16 @@ class MdbBase:
     lastChangedCount: float = None
 
     #: A repository of Job objects.
-    jobs: dict[str, Job] = dict[str, Job]()
+    jobs: typing.Dict[str, Job] = {}
 
     #: A repository of AdaptivityProcess objects.
-    adaptivityProcesses: dict[str, AdaptivityProcess] = dict[str, AdaptivityProcess]()
+    adaptivityProcesses: typing.Dict[str, AdaptivityProcess] = {}
 
     #: A repository of Coexecution objects.
-    coexecutions: dict[str, Coexecution] = dict[str, Coexecution]()
+    coexecutions: typing.Dict[str, Coexecution] = {}
 
     #: A repository of OptimizationProcess objects.
-    optimizationProcesses: dict[str, OptimizationProcess] = dict[
+    optimizationProcesses: typing.Dict[str, OptimizationProcess] = typing.Dict[
         str, OptimizationProcess
     ]()
 
@@ -46,13 +46,13 @@ class MdbBase:
     meshEditOptions: MeshEditOptions = MeshEditOptions()
 
     #: A repository of Model objects.
-    models: dict[str, Model] = dict[str, Model]()
+    models: typing.Dict[str, Model] = {}
 
     #: A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object.
     customData: RepositorySupport = RepositorySupport()
 
     #: A repository of Annotation objects.
-    annotations: dict[str, Annotation] = dict[str, Annotation]()
+    annotations: typing.Dict[str, Annotation] = {}
 
     def __init__(self, pathName: str = ""):
         """This constructor creates an empty Mdb object.
@@ -236,7 +236,7 @@ class MdbBase:
 
         Returns
         -------
-        list[str]
+        typing.List[str]
             A list of model names present in the auxiliaryMdb
 
         Raises

@@ -1,4 +1,4 @@
 from .SectionLayer import SectionLayer
 
 
-SectionLayerArray = list[SectionLayer]
+SectionLayerArray = typing.List[SectionLayer]

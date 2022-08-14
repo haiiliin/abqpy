@@ -23,7 +23,7 @@ class OdbDiagnosticStep:
     characteristicElementLength: str = ""
 
     #: A repository of OdbContactDiagnostics objects.
-    contactDiagnostics: dict[str, OdbContactDiagnostics] = dict[
+    contactDiagnostics: typing.Dict[str, OdbContactDiagnostics] = typing.Dict[
         str, OdbContactDiagnostics
     ]()
 
@@ -43,7 +43,7 @@ class OdbDiagnosticStep:
     incrementsCompleted: str = ""
 
     #: A repository of OdbDiagnosticIncrement objects.
-    increments: dict[str, OdbDiagnosticIncrement] = dict[str, OdbDiagnosticIncrement]()
+    increments: typing.Dict[str, OdbDiagnosticIncrement] = {}
 
     #: A float specifying the initial increment size for the step. This attribute is read-only.
     initialTimeIncrement: str = ""

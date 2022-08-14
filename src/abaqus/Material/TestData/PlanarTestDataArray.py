@@ -1,4 +1,4 @@
 from .PlanarTestData import PlanarTestData
 
 
-PlanarTestDataArray = list[PlanarTestData]
+PlanarTestDataArray = typing.List[PlanarTestData]

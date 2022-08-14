@@ -1,4 +1,4 @@
 from .Region import Region
 
 
-RegionArray = list[Region]
+RegionArray = typing.List[Region]

@@ -18,7 +18,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
     """
 
     def Arc3Points(
-        self, point1: tuple[float, ...], point2: tuple[float, ...], point3: tuple[float, ...]
+        self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...], point3: typing.Tuple[float, ...]
     ):
         """This method constructs an arc using a two endpoints and an intermediate third point on
         the arc.
@@ -48,9 +48,9 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
     def ArcByCenterEnds(
         self,
-        center: tuple[float, ...],
-        point1: tuple[float, ...],
-        point2: tuple[float, ...],
+        center: typing.Tuple[float, ...],
+        point1: typing.Tuple[float, ...],
+        point2: typing.Tuple[float, ...],
         direction: SymbolicConstant,
     ):
         """This method constructs an arc using a center point and two vertices. The Arc object is
@@ -88,7 +88,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         ...
 
     def ArcByStartEndTangent(
-        self, point1: tuple[float, ...], point2: tuple[float, ...], vector: tuple
+        self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...], vector: tuple
     ):
         """This method constructs an arc using two vertices. The Arc object is added to the
         geometry repository of the ConstrainedSketch object.
@@ -116,7 +116,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
-    def CircleByCenterPerimeter(self, center: tuple[float, ...], point1: tuple[float, ...]):
+    def CircleByCenterPerimeter(self, center: typing.Tuple[float, ...], point1: typing.Tuple[float, ...]):
         """This method constructs a circle using a center point and a point on the perimeter. The
         circle is added to the geometry repository of the ConstrainedSketch object.
 
@@ -142,7 +142,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         ...
 
     def ConstructionCircleByCenterPerimeter(
-        self, center: tuple[float, ...], point1: tuple[float, ...]
+        self, center: typing.Tuple[float, ...], point1: typing.Tuple[float, ...]
     ):
         """This method constructs a construction circle using a center point and a point on the
         perimeter. The circle is added to the geometry repository of the ConstrainedSketch
@@ -170,7 +170,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         ...
 
     def EllipseByCenterPerimeter(
-        self, center: tuple[float, ...], axisPoint1: tuple[float, ...], axisPoint2: tuple[float, ...]
+        self, center: typing.Tuple[float, ...], axisPoint1: typing.Tuple[float, ...], axisPoint2: typing.Tuple[float, ...]
     ):
         """This method constructs an ellipse using a center point, a major axis point, and a minor
         axis point. The ellipse is added to the geometry repository of the ConstrainedSketch
@@ -203,9 +203,9 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         self,
         radius: float,
         curve1: "ConstrainedSketchGeometryModel",
-        nearPoint1: tuple[float, ...],
+        nearPoint1: typing.Tuple[float, ...],
         curve2: "ConstrainedSketchGeometryModel",
-        nearPoint2: tuple[float, ...],
+        nearPoint2: typing.Tuple[float, ...],
     ):
         """This method constructs a fillet arc of a given radius between two curves. The fillet is
         added to the geometry repository of the ConstrainedSketch object.
@@ -246,7 +246,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
-    def Line(self, point1: tuple[float, ...], point2: tuple[float, ...]):
+    def Line(self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...]):
         """This method creates a line between two given points.
 
         .. note:: 
@@ -270,7 +270,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
-    def ConstructionLine(self, point1: tuple[float, ...], point2: tuple[float, ...]):
+    def ConstructionLine(self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...]):
         """This method creates an oblique construction line that runs between two given points.
 
         .. note:: 
@@ -320,7 +320,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
-    def Spot(self, point: tuple[float, ...]):
+    def Spot(self, point: typing.Tuple[float, ...]):
         """This method creates a spot construction point located at the specified coordinates. The
         spot is added to the vertex repository of the ConstrainedSketch object.
 
@@ -349,7 +349,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
         Returns
         -------
-        vertices: list[ConstrainedSketchVertex]
+        vertices: typing.List[ConstrainedSketchVertex]
             A list of ConstrainedSketchVertex objects
         """
         ...
@@ -365,7 +365,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         ...
 
     def getPointAtDistance(
-        self, point: tuple[float, ...], distance: str, percentage: Boolean = OFF
+        self, point: typing.Tuple[float, ...], distance: str, percentage: Boolean = OFF
     ):
         """This method returns a point offset along the given ConstrainedSketchGeometry from the
         given end by a specified arc length distance or a percentage of the total length of the
@@ -384,7 +384,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
         Returns
         -------
-        points: tuple[float, ...]
+        points: typing.Tuple[float, ...]
             A pair of floats representing the point along the edge
         """
         ...

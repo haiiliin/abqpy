@@ -24,7 +24,7 @@ class PropertyTable:
     """
 
     #: A repository of PropertyTableData. Specifies all the propertyTableData in PropertyTable
-    propertyTableDatas: dict[str, PropertyTableData] = dict[str, PropertyTableData]()
+    propertyTableDatas: typing.Dict[str, PropertyTableData] = {}
 
     #: A String specifying the repository key.
     name: str

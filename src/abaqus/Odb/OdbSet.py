@@ -53,7 +53,7 @@ class OdbSet:
     #: A Boolean specifying whether the set is internal.
     isInternal: Boolean = OFF
 
-    def __init__(self, name: str, nodes: tuple[OdbMeshNode]):
+    def __init__(self, name: str, nodes: typing.Tuple[OdbMeshNode]):
         """This method creates a node set from an array of OdbMeshNode objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
         assembly-level sets).
@@ -110,7 +110,7 @@ class OdbSet:
         """
         ...
 
-    def ElementSet(self, name: str, elements: tuple[OdbMeshElement]):
+    def ElementSet(self, name: str, elements: typing.Tuple[OdbMeshElement]):
         """This method creates an element set from an array of OdbMeshElement objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshElement objects (for
         assembly-level sets).
