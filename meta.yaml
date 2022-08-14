@@ -1,6 +1,6 @@
 package:
   name: abqpy
-  version: 2022a10
+  version: 2022.0
 
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt
@@ -8,7 +8,7 @@ build:
 
 source:
   git_url: https://github.com/haiiliin/abqpy.git
-  git_rev: "v2022a10"
+  git_rev: "v2022.0"
 
 requirements:
   build:
