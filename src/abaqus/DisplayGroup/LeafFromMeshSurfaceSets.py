@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .Leaf import Leaf
 from ..Region.Surface import Surface
@@ -22,7 +24,7 @@ class LeafFromMeshSurfaceSets(Leaf):
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant = None
 
-    def __init__(self, surfaceSets: tuple[Surface]):
+    def __init__(self, surfaceSets: typing.Tuple[Surface, ...]):
         """This method creates a Leaf object from a sequence of surface sets.
 
         .. note:: 

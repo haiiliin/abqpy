@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from ..Session.SessionBase import SessionBase
 
@@ -117,7 +119,7 @@ class XYSessionBase(SessionBase):
 
         Returns
         -------
-        list[XYData]
+        typing.List[XYData]
             A list of xyData objects.
 
         Raises

@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .ConstrainedSketchDimension import ConstrainedSketchDimension
 from ..ConstrainedSketchVertex.ConstrainedSketchVertex import ConstrainedSketchVertex
@@ -8,7 +10,7 @@ class DistanceDimension(ConstrainedSketchDimension):
         self,
         entity1: ConstrainedSketchVertex,
         entity2: ConstrainedSketchVertex,
-        textPoint: tuple[float, ...],
+        textPoint: typing.Tuple[float, ...],
         value: float = None,
         reference: Boolean = OFF,
     ):

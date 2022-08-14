@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .ElementProgressiveActivation import ElementProgressiveActivation
 from ..Assembly.AssemblyBase import AssemblyBase
@@ -18,9 +20,7 @@ class TableCollectionAssembly(AssemblyBase):
             mdb.models[name].rootAssembly
     """
 
-    elementProgressiveActivations: dict[str, ElementProgressiveActivation] = dict[
-        str, ElementProgressiveActivation
-    ]()
+    elementProgressiveActivations: typing.Dict[str, ElementProgressiveActivation] = {}
 
     def ElementProgressiveActivation(
         self,

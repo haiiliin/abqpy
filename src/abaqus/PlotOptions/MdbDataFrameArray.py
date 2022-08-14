@@ -1,4 +1,5 @@
+import typing
+
 from .MdbDataFrame import MdbDataFrame
 
-
-MdbDataFrameArray = list[MdbDataFrame]
+MdbDataFrameArray = typing.List[MdbDataFrame]

@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .OdbMeshElement import OdbMeshElement
 from .OdbMeshElementArray import OdbMeshElementArray
@@ -37,11 +39,11 @@ class OdbSet:
 
     #: An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object specifying the nodes of an OdbSet. If a set spans more than
     #: one part instance, this member is a sequence of sequences for each part instance.
-    nodes: OdbMeshNodeArray = OdbMeshNodeArray()
+    nodes: OdbMeshNodeArray = []
 
     #: An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object specifying the elements of an OdbSet. If a set spans more
     #: than one part instance, this member is a sequence of sequences for each part instance.
-    elements: OdbMeshElementArray = OdbMeshElementArray()
+    elements: OdbMeshElementArray = []
 
     #: A tuple of SymbolicConstants specifying the element face. If a set spans more than one
     #: part instance, this member is a sequence of sequences for each part instance.
@@ -53,7 +55,7 @@ class OdbSet:
     #: A Boolean specifying whether the set is internal.
     isInternal: Boolean = OFF
 
-    def __init__(self, name: str, nodes: tuple[OdbMeshNode]):
+    def __init__(self, name: str, nodes: typing.Tuple[OdbMeshNode, ...]):
         """This method creates a node set from an array of OdbMeshNode objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
         assembly-level sets).
@@ -110,7 +112,7 @@ class OdbSet:
         """
         ...
 
-    def ElementSet(self, name: str, elements: tuple[OdbMeshElement]):
+    def ElementSet(self, name: str, elements: typing.Tuple[OdbMeshElement, ...]):
         """This method creates an element set from an array of OdbMeshElement objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshElement objects (for
         assembly-level sets).

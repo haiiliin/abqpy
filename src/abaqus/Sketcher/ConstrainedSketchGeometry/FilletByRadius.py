@@ -1,3 +1,5 @@
+import typing
+
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 
 
@@ -6,9 +8,9 @@ class FilletByRadius(ConstrainedSketchGeometry):
         self,
         radius: float,
         curve1: "ConstrainedSketchGeometry",
-        nearPoint1: tuple[float, ...],
+        nearPoint1: typing.Tuple[float, ...],
         curve2: "ConstrainedSketchGeometry",
-        nearPoint2: tuple[float, ...],
+        nearPoint2: typing.Tuple[float, ...],
     ):
         """This method constructs a fillet arc of a given radius between two curves. The fillet is
         added to the geometry repository of the ConstrainedSketch object.

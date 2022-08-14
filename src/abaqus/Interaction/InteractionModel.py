@@ -873,7 +873,7 @@ class InteractionModel(
         includedPairs: RegionPairs = None, 
         excludedPairs: RegionPairs = None, 
         contactPropertyAssignments: ContactPropertyAssignment = None, 
-        surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
+        surfaceThicknessAssignments: SurfaceThicknessAssignment = None,
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None,
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
         masterSlaveAssignments: MasterSlaveAssignment = None,
