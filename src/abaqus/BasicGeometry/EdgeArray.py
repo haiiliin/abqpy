@@ -3,7 +3,7 @@ from abaqusConstants import *
 from .Edge import Edge
 
 
-class EdgeArray:
+class EdgeArray(list[Edge]):
     """The EdgeArray is a sequence of Edge objects. If the part is modified, then EdgeArray
     must be updated for that part.
 
