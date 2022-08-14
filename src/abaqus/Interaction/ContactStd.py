@@ -110,13 +110,8 @@ class ContactStd(Interaction):
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-<<<<<<< HEAD
-        slidingFormulationAssignments: tuple[SlidingFormulationAssignment, ...] = None,
-        masterSlaveAssignments: MasterSlaveAssignment = None,
-=======
         slidingFormulationAssignments: typing.Tuple[SlidingFormulationAssignment, ...] = None,
-        mainSecondaryAssignments: MainSecondaryAssignment = None, 
->>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
+        masterSlaveAssignments: MasterSlaveAssignment = None,
         initializationAssignments: InitializationAssignment = None, 
         stabilizationAssignments: StabilizationAssignment = None, 
         smoothingAssignments: SmoothingAssignment = None, 
