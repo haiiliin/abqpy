@@ -99,9 +99,7 @@ class SubstructureGenerateStep(AnalysisStep):
     recoveryRegion: Region = Region()
 
     #: A :py:class:`~abaqus.StepMiscellaneous.SubstructureGenerateFrequencyArray.SubstructureGenerateFrequencyArray` object.
-    frequencyRange: SubstructureGenerateFrequencyArray = (
-        SubstructureGenerateFrequencyArray()
-    )
+    frequencyRange: SubstructureGenerateFrequencyArray = []
 
     #: A :py:class:`~abaqus.StepMiscellaneous.SubstructureGenerateModesArray.SubstructureGenerateModesArray` object.
     modeRange: SubstructureGenerateModesArray = []
