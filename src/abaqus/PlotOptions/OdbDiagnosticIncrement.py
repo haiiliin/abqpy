@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .OdbDiagnosticAttempt import OdbDiagnosticAttempt
 
@@ -15,7 +17,7 @@ class OdbDiagnosticIncrement:
     """
 
     #: A repository of OdbDiagnosticAttempt objects.
-    attempts: dict[str, OdbDiagnosticAttempt] = dict[str, OdbDiagnosticAttempt]()
+    attempts: typing.Dict[str, OdbDiagnosticAttempt] = {}
 
     #: A float specifying the size of the initial increment. This attribute is read-only.
     initialSize: str = ""

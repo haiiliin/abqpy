@@ -1,3 +1,5 @@
+import typing
+
 from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.Face import Face
@@ -35,10 +37,10 @@ class Skin:
     def __init__(
         self,
         name: str,
-        faces: tuple[Face] = (),
-        edges: tuple[Edge] = (),
-        elementFaces: tuple[MeshFace] = (),
-        elementEdges: tuple[MeshEdge] = (),
+        faces: typing.Tuple[Face, ...] = (),
+        edges: typing.Tuple[Edge, ...] = (),
+        elementFaces: typing.Tuple[MeshFace, ...] = (),
+        elementEdges: typing.Tuple[MeshEdge, ...] = (),
     ):
         """This method creates a skin from a sequence of objects in a model database. At least one
         of the optional arguments needs to be specified.
@@ -77,10 +79,10 @@ class Skin:
     def EditSkin(
         self,
         name: str = "",
-        faces: tuple[Face] = (),
-        edges: tuple[Edge] = (),
-        elementFaces: tuple[MeshFace] = (),
-        elementEdges: tuple[MeshEdge] = (),
+        faces: typing.Tuple[Face, ...] = (),
+        edges: typing.Tuple[Edge, ...] = (),
+        elementFaces: typing.Tuple[MeshFace, ...] = (),
+        elementEdges: typing.Tuple[MeshEdge, ...] = (),
     ):
         """This method modifies underlying entities of the selected skin. At least one of the
         optional arguments needs to be specified.

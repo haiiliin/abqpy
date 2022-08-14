@@ -14,4 +14,4 @@ class CompositeDamping:
     """
 
     #: A :py:class:`~abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponentArray` object.
-    components: CompositeDampingComponentArray = CompositeDampingComponentArray()
+    components: CompositeDampingComponentArray = []

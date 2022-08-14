@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .MeshNode import MeshNode
 
@@ -55,7 +57,7 @@ class MeshElement:
     connectivity: int = None
 
     def Element(
-        self, nodes: tuple[MeshNode], elemShape: SymbolicConstant, label: int = None
+        self, nodes: typing.Tuple[MeshNode, ...], elemShape: SymbolicConstant, label: int = None
     ):
         """This method creates an element on an orphan mesh part from a sequence of nodes.
 
@@ -88,7 +90,7 @@ class MeshElement:
 
         Returns
         -------
-        tuple[MeshNode, ...]
+        typing.Tuple[MeshNode, ...]
             A tuple of :py:class:`~abaqus.Mesh.MeshNode.MeshNode` objects.
         """
         ...
@@ -98,7 +100,7 @@ class MeshElement:
 
         Returns
         -------
-        tuple[MeshEdge, ...]
+        typing.Tuple[MeshEdge, ...]
             A tuple of :py:class:`~abaqus.Mesh.MeshEdge.MeshEdge` objects.
         """
         ...
@@ -108,7 +110,7 @@ class MeshElement:
 
         Returns
         -------
-        tuple[MeshFace, ...]
+        typing.Tuple[MeshFace, ...]
             A tuple of :py:class:`~abaqus.Mesh.MeshFace.MeshFace` objects.
         """
         ...

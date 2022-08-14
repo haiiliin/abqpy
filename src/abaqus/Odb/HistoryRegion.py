@@ -22,7 +22,7 @@ class HistoryRegion:
     position: SymbolicConstant = None
 
     #: A repository of HistoryOutput objects.
-    historyOutputs: dict[str, HistoryOutput] = dict[str, HistoryOutput]()
+    historyOutputs: typing.Dict[str, HistoryOutput] = {}
 
     #: A String specifying the name of the HistoryRegion object.
     name: str

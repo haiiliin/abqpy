@@ -28,16 +28,16 @@ class ConnectorBehaviorOption:
     """
 
     #: A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object.
-    connectorPotentials: ConnectorPotentialArray = ConnectorPotentialArray()
+    connectorPotentials: ConnectorPotentialArray = []
 
     #: A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object.
     derivedComponent: DerivedComponent = DerivedComponent()
 
     #: A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object.
-    evolutionPotentials: ConnectorPotentialArray = ConnectorPotentialArray()
+    evolutionPotentials: ConnectorPotentialArray = []
 
     #: A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object.
-    initiationPotentials: ConnectorPotentialArray = ConnectorPotentialArray()
+    initiationPotentials: ConnectorPotentialArray = []
 
     #: A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object.
     initiationOptions: ConnectorOptions = ConnectorOptions()

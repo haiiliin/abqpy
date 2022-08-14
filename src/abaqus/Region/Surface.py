@@ -54,26 +54,26 @@ class Surface(Region):
     @typing.overload
     def __init__(
         self,
-        side1Faces: tuple[Face] = None,
-        side2Faces: tuple[Face] = None,
-        side12Faces: tuple[Face] = None,
-        end1Edges: tuple[Face] = None,
-        end2Edges: tuple[Face] = None,
-        circumEdges: tuple[Face] = None,
-        side1Edges: tuple[Face] = None,
-        side2Edges: tuple[Face] = None,
-        face1Elements: tuple[Face] = None,
-        face2Elements: tuple[Face] = None,
-        face3Elements: tuple[Face] = None,
-        face4Elements: tuple[Face] = None,
-        face5Elements: tuple[Face] = None,
-        face6Elements: tuple[Face] = None,
-        side1Elements: tuple[Face] = None,
-        side2Elements: tuple[Face] = None,
-        side12Elements: tuple[Face] = None,
-        end1Elements: tuple[Face] = None,
-        end2Elements: tuple[Face] = None,
-        circumElements: tuple[Face] = None,
+        side1Faces: typing.Tuple[Face, ...] = None,
+        side2Faces: typing.Tuple[Face, ...] = None,
+        side12Faces: typing.Tuple[Face, ...] = None,
+        end1Edges: typing.Tuple[Face, ...] = None,
+        end2Edges: typing.Tuple[Face, ...] = None,
+        circumEdges: typing.Tuple[Face, ...] = None,
+        side1Edges: typing.Tuple[Face, ...] = None,
+        side2Edges: typing.Tuple[Face, ...] = None,
+        face1Elements: typing.Tuple[Face, ...] = None,
+        face2Elements: typing.Tuple[Face, ...] = None,
+        face3Elements: typing.Tuple[Face, ...] = None,
+        face4Elements: typing.Tuple[Face, ...] = None,
+        face5Elements: typing.Tuple[Face, ...] = None,
+        face6Elements: typing.Tuple[Face, ...] = None,
+        side1Elements: typing.Tuple[Face, ...] = None,
+        side2Elements: typing.Tuple[Face, ...] = None,
+        side12Elements: typing.Tuple[Face, ...] = None,
+        end1Elements: typing.Tuple[Face, ...] = None,
+        end2Elements: typing.Tuple[Face, ...] = None,
+        circumElements: typing.Tuple[Face, ...] = None,
         name: str = "",
         **kwargs
     ):
@@ -215,7 +215,7 @@ class Surface(Region):
         ...
 
     def SurfaceByBoolean(
-        self, name: str, surfaces: tuple["Surface"], operation: SymbolicConstant = UNION
+        self, name: str, surfaces: typing.Tuple["Surface"], operation: SymbolicConstant = UNION
     ):
         """This method creates a surface by performing a boolean operation on two or more input
         surfaces.

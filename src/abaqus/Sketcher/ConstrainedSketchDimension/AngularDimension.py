@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .ConstrainedSketchDimension import ConstrainedSketchDimension
 from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
@@ -10,7 +12,7 @@ class AngularDimension(ConstrainedSketchDimension):
         self,
         line1: ConstrainedSketchGeometry,
         line2: ConstrainedSketchGeometry,
-        textPoint: tuple[float, ...],
+        textPoint: typing.Tuple[float, ...],
         value: float = None,
         reference: Boolean = OFF,
     ):

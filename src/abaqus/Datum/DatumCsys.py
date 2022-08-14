@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .Datum import Datum
 from .DatumAxis import DatumAxis

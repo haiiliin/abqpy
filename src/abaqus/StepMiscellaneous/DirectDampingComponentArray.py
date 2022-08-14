@@ -1,4 +1,5 @@
+import typing
+
 from .DirectDampingComponent import DirectDampingComponent
 
-
-DirectDampingComponentArray = list[DirectDampingComponent]
+DirectDampingComponentArray = typing.List[DirectDampingComponent]

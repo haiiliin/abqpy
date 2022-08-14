@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .TransverseShearBeam import TransverseShearBeam
 from .TransverseShearShell import TransverseShearShell
@@ -22,7 +24,7 @@ class SectionBase:
     """
 
     #: A :py:class:`~abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray` object.
-    behaviorOptions: ConnectorBehaviorOptionArray = ConnectorBehaviorOptionArray()
+    behaviorOptions: ConnectorBehaviorOptionArray = []
 
     #: A String specifying the repository key.
     name: str = ""
@@ -53,7 +55,7 @@ class SectionBase:
 
         Returns
         -------
-        list[Section]
+        typing.List[Section]
             A list of :py:class:`~abaqus.Section.Section.Section` objects.
         """
         ...
