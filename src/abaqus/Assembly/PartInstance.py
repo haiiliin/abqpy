@@ -88,13 +88,13 @@ class PartInstance:
     vertices: VertexArray = VertexArray([])
 
     #: An :py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray` object.
-    ignoredVertices: IgnoredVertexArray = IgnoredVertexArray()
+    ignoredVertices: IgnoredVertexArray = []
 
     #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
     edges: EdgeArray = EdgeArray([])
 
     #: An :py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray` object.
-    ignoredEdges: IgnoredEdgeArray = IgnoredEdgeArray()
+    ignoredEdges: IgnoredEdgeArray = []
 
     #: A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
     faces: FaceArray = FaceArray([])

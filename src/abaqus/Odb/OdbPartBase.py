@@ -29,10 +29,10 @@ class OdbPartBase:
     """
 
     #: An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
-    nodes: OdbMeshNodeArray = OdbMeshNodeArray()
+    nodes: OdbMeshNodeArray = []
 
     #: An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object.
-    elements: OdbMeshElementArray = OdbMeshElementArray()
+    elements: OdbMeshElementArray = []
 
     #: A repository of OdbSet objects specifying node sets.
     nodeSets: typing.Dict[str, OdbSet] = {}
@@ -44,19 +44,19 @@ class OdbPartBase:
     surfaces: typing.Dict[str, OdbSet] = {}
 
     #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
-    sectionAssignments: SectionAssignmentArray = SectionAssignmentArray()
+    sectionAssignments: SectionAssignmentArray = []
 
     #: A :py:class:`~abaqus.Odb.BeamOrientationArray.BeamOrientationArray` object.
-    beamOrientations: BeamOrientationArray = BeamOrientationArray()
+    beamOrientations: BeamOrientationArray = []
 
     #: A :py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray` object.
-    materialOrientations: MaterialOrientationArray = MaterialOrientationArray()
+    materialOrientations: MaterialOrientationArray = []
 
     #: A :py:class:`~abaqus.Odb.RebarOrientationArray.RebarOrientationArray` object.
-    rebarOrientations: RebarOrientationArray = RebarOrientationArray()
+    rebarOrientations: RebarOrientationArray = []
 
     #: An :py:class:`~abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray` object.
-    rigidBodies: OdbRigidBodyArray = OdbRigidBodyArray()
+    rigidBodies: OdbRigidBodyArray = []
 
     #: An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying analytic Surface defined on the instance.
     analyticSurface: AnalyticSurface = AnalyticSurface()

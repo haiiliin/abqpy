@@ -82,7 +82,7 @@ class Set(Region):
     xFaces: FaceArray = FaceArray([])
 
     #: A :py:class:`~abaqus.BasicGeometry.ReferencePointArray.ReferencePointArray` object.
-    referencePoints: ReferencePointArray = ReferencePointArray()
+    referencePoints: ReferencePointArray = []
 
     @typing.overload
     def __init__(

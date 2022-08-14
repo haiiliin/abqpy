@@ -37,7 +37,7 @@ class SectionCategory:
     """
 
     #: A :py:class:`~abaqus.Odb.SectionPointArray.SectionPointArray` object.
-    sectionPoints: SectionPointArray = SectionPointArray()
+    sectionPoints: SectionPointArray = []
 
     #: A String specifying the name of the category.
     name: str
