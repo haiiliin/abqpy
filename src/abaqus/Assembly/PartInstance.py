@@ -65,22 +65,22 @@ class PartInstance:
     #: A repository of Set objects specifying the sets created on the part. For more
     #: information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    sets: dict[str, Set] = dict[str, Set]()
+    sets: typing.Dict[str, Set] = {}
 
     #: A repository of Surface objects specifying the surfaces created on the part. For more
     #: information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    surfaces: dict[str, Surface] = dict[str, Surface]()
+    surfaces: typing.Dict[str, Surface] = {}
 
     #: A repository of Skin objects specifying the skins created on the part. For more
     #: information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    skins: dict[str, Skin] = dict[str, Skin]()
+    skins: typing.Dict[str, Skin] = {}
 
     #: A repository of Stringer objects specifying the stringers created on the part. For more
     #: information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    stringers: dict[str, Stringer] = dict[str, Stringer]()
+    stringers: typing.Dict[str, Stringer] = {}
 
     #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
     vertices: VertexArray = VertexArray([])
@@ -101,7 +101,7 @@ class PartInstance:
     cells: CellArray = CellArray([])
 
     #: A repository of Datum objects.
-    datums: list[Datum] = list[Datum]()
+    datums: typing.List[Datum] = []
 
     #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
     elements: MeshElementArray = MeshElementArray([])
@@ -113,7 +113,7 @@ class PartInstance:
     #: For a given element and a given face index within that element, the corresponding
     #: MeshFace object can be retrieved from the repository by using the key calculated as (i*8
     #: + j), where i and j are zero-based element and face indices, respectively.
-    elemFaces: dict[str, MeshFace] = dict[str, MeshFace]()
+    elemFaces: typing.Dict[str, MeshFace] = {}
 
     #: A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object.
     elementFaces: MeshFaceArray = MeshFaceArray([])
@@ -123,13 +123,13 @@ class PartInstance:
     #: corresponding MeshEdge object can be retrieved from the repository by using the key
     #: calculated as (i*32 + j*4 + k), where i, j, and k are zero-based element, face, and edge
     #: indices, respectively.
-    elemEdges: dict[str, MeshEdge] = dict[str, MeshEdge]()
+    elemEdges: typing.Dict[str, MeshEdge] = {}
 
     #: A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object.
     elementEdges: MeshEdgeArray = MeshEdgeArray([])
 
     #: A repository of ReferencePoint objects.
-    referencePoints: dict[str, ReferencePoint] = dict[str, ReferencePoint]()
+    referencePoints: typing.Dict[str, ReferencePoint] = {}
 
     #: A String specifying the name of the part from which the instance was created.
     partName: str = ""
@@ -186,7 +186,7 @@ class PartInstance:
         self,
         name: str,
         instanceToBeCut: str,
-        cuttingInstances: tuple["PartInstance"],
+        cuttingInstances: typing.Tuple["PartInstance"],
         originalInstances: SymbolicConstant = SUPPRESS,
     ):
         """This method creates a PartInstance in the instances repository after subtracting or
@@ -223,7 +223,7 @@ class PartInstance:
     def InstanceFromBooleanMerge(
         self,
         name: str,
-        instances: tuple["PartInstance"],
+        instances: typing.Tuple["PartInstance"],
         keepIntersections: Boolean = False,
         originalInstances: SymbolicConstant = SUPPRESS,
         domain: SymbolicConstant = GEOMETRY,
@@ -288,7 +288,7 @@ class PartInstance:
         spacing2: float,
         direction1: tuple = (),
         direction2: tuple = (),
-    ) -> tuple['PartInstance']:
+    ) -> typing.Tuple['PartInstance']:
         """This method creates multiple PartInstance objects in a linear pattern and puts them into
         the instances repository.
 
@@ -324,7 +324,7 @@ class PartInstance:
 
         Returns
         -------
-        tuple[PartInstance]
+        typing.Tuple[PartInstance]
             A sequence of :py:class:`~abaqus.Assembly.PartInstance.PartInstance` objects.
         """
         ...
@@ -369,7 +369,7 @@ class PartInstance:
 
         Returns
         -------
-        tuple[PartInstance]
+        typing.Tuple[PartInstance]
             A sequence of PartInstance objects.
         """
         ...
@@ -463,7 +463,7 @@ class PartInstance:
 
         Returns
         -------
-        tuple[float, float, float]
+        typing.Tuple[float, float, float]
             A tuple of three Floats representing the translation.
         """
         ...

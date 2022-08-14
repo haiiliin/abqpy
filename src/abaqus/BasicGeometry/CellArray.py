@@ -3,7 +3,7 @@ from abaqusConstants import *
 from .Cell import Cell
 
 
-class CellArray(list[Cell]):
+class CellArray(typing.List[Cell]):
     """The CellArray is a sequence of Cell objects.
 
     .. note:: 
@@ -27,7 +27,7 @@ class CellArray(list[Cell]):
             mdb.models[name].rootAssembly.sets[name].cells
     """
 
-    def __init__(self, cells: list[Cell]):
+    def __init__(self, cells: typing.List[Cell]):
         """This method creates a CellArray object.
 
         .. note:: 
@@ -50,7 +50,7 @@ class CellArray(list[Cell]):
         """
         ...
 
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[Cell, typing.List[Cell]]:
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[Cell, typing.typing.List[Cell]]:
         """This method returns the object or objects in the CellArray located at the given
         coordinates. findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt
         returns any entity that is at the arbitrary point specified or at a distance of less
@@ -219,7 +219,7 @@ class CellArray(list[Cell]):
 
         Returns
         -------
-        dict[str, tuple[float, float, float]]
+        typing.Dict[str, typing.Tuple[float, float, float]]
             A Dictionary object with the following items:
             
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z** -boundary

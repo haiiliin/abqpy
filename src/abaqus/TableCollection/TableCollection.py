@@ -20,13 +20,13 @@ class TableCollection:
     """
 
     #: A repository of the PropertyTable object.
-    propertyTables: dict[str, PropertyTable] = dict[str, PropertyTable]()
+    propertyTables: typing.Dict[str, PropertyTable] = {}
 
     #: A repository of the ParameterTable object
-    parameterTables: dict[str, ParameterTable] = dict[str, ParameterTable]()
+    parameterTables: typing.Dict[str, ParameterTable] = {}
 
     #: sequence of the DataTable object
-    dataTables: list[DataTable] = []
+    dataTables: typing.List[DataTable] = []
 
     def __init__(self, name: str):
         """This method creates a TableCollection object and places it in the tableCollections

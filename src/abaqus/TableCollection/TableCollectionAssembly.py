@@ -18,7 +18,7 @@ class TableCollectionAssembly(AssemblyBase):
             mdb.models[name].rootAssembly
     """
 
-    elementProgressiveActivations: dict[str, ElementProgressiveActivation] = dict[
+    elementProgressiveActivations: typing.Dict[str, ElementProgressiveActivation] = typing.Dict[
         str, ElementProgressiveActivation
     ]()
 

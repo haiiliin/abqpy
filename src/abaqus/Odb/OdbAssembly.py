@@ -243,9 +243,9 @@ class OdbAssembly(OdbAssemblyBase):
         referenceNode: OdbSet,
         position: SymbolicConstant = INPUT,
         isothermal: Boolean = ON,
-        elements: OdbSet = OdbSet("set", tuple[OdbMeshNode]()),
-        tieNodes: OdbSet = OdbSet("set", tuple[OdbMeshNode]()),
-        pinNodes: OdbSet = OdbSet("set", tuple[OdbMeshNode]()),
+        elements: OdbSet = OdbSet("set", ()),()()
+        tieNodes: OdbSet = OdbSet("set", typing.Tuple[OdbMeshNode]()),
+        pinNodes: OdbSet = OdbSet("set", typing.Tuple[OdbMeshNode]()),
         analyticSurface: AnalyticSurface = None, 
     ) -> OdbRigidBody:
         """This method creates a OdbRigidBody object.
@@ -300,7 +300,7 @@ class OdbAssembly(OdbAssemblyBase):
         self.rigidBodies.append(odbRigidBody)
         return odbRigidBody
 
-    def NodeSet(self, name: str, nodes: tuple[OdbMeshNode]) -> OdbSet:
+    def NodeSet(self, name: str, nodes: typing.Tuple[OdbMeshNode]) -> OdbSet:
         """This method creates a node set from an array of OdbMeshNode objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
         assembly-level sets).

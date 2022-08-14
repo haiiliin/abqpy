@@ -1,4 +1,4 @@
-class OdbFieldVarList(list[str]):
+class OdbFieldVarList(typing.List[str]):
     """The read-only OdbFieldVarList object is a sequence listing all variables available for
     the current step and frame. Each item in the sequence is itself a sequence fully
     describing the given variable.
