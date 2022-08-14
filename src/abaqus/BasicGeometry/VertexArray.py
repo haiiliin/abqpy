@@ -2,7 +2,7 @@ from abaqusConstants import *
 from .Vertex import Vertex
 
 
-class VertexArray:
+class VertexArray(list[Vertex]):
     """The VertexArray is a sequence of ConstrainedSketchVertex objects. If the part is modified, then
     VertexArray must be updated for that part.
 
