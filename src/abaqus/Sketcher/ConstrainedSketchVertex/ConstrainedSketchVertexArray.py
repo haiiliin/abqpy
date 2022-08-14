@@ -2,7 +2,8 @@ from abaqusConstants import *
 import typing
 from .ConstrainedSketchVertex import ConstrainedSketchVertex
 
-class ConstrainedSketchVertexArray:
+
+class ConstrainedSketchVertexArray(list[ConstrainedSketchVertex]):
     """The ConstrainedSketchVertexArray is a sequence of ConstrainedSketchVertex objects.
 
     .. note:: 
