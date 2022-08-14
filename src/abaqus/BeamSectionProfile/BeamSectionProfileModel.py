@@ -50,7 +50,7 @@ class BeamSectionProfileModel(ModelBase):
         typing.List[Profile]
             A list of Profile objects.
         """
-        profiles: typing.Dict[Profile] = typing.Dict[Profile]()
+        profiles: typing.Dict[Profile] = {}
         self.profiles.update(profiles)
         return profiles
 
