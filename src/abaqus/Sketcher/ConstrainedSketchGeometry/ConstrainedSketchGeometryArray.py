@@ -16,7 +16,7 @@ class ConstrainedSketchGeometryArray(typing.List[ConstrainedSketchGeometry]):
             mdb.models[name].sketches[name].geometry[i]
     """
 
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[ConstrainedSketchGeometry, typing.typing.List[ConstrainedSketchGeometry]]:
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[ConstrainedSketchGeometry, typing.List[ConstrainedSketchGeometry]]:
         """This method returns the ConstrainedSketchGeometry object located at the given
         coordinates.
 
