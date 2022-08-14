@@ -56,9 +56,9 @@ class OdbRigidBody:
         referenceNode: OdbSet,
         position: SymbolicConstant = INPUT,
         isothermal: Boolean = ON,
-        elements: OdbSet = OdbSet("set", ()),()()
-        tieNodes: OdbSet = OdbSet("set", typing.Tuple[OdbMeshNode]()),
-        pinNodes: OdbSet = OdbSet("set", typing.Tuple[OdbMeshNode]()),
+        elements: OdbSet = OdbSet("set", ()),
+        tieNodes: OdbSet = OdbSet("set", ()),
+        pinNodes: OdbSet = OdbSet("set", ()),
         analyticSurface: AnalyticSurface = None, 
     ):
         """This method creates a OdbRigidBody object.
