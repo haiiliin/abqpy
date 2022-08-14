@@ -265,7 +265,7 @@ class AssemblyBase(Feature):
         """
         ...
 
-    def excludeFromSimulation(self, instances: typing.Tuple[PartInstance], exclude: str):
+    def excludeFromSimulation(self, instances: typing.Tuple[PartInstance, ...], exclude: str):
         """This method excludes the specified part instances from the analysis.
 
         Parameters
@@ -617,7 +617,7 @@ class AssemblyBase(Feature):
         """
         ...
 
-    def makeDependent(self, instances: typing.Tuple[PartInstance]):
+    def makeDependent(self, instances: typing.Tuple[PartInstance, ...]):
         """This method converts the specified part instances from independent to dependent part
         instances.
 
@@ -628,7 +628,7 @@ class AssemblyBase(Feature):
         """
         ...
 
-    def makeIndependent(self, instances: typing.Tuple[PartInstance]):
+    def makeIndependent(self, instances: typing.Tuple[PartInstance, ...]):
         """This method converts the specified part instances from dependent to independent part
         instances.
 
@@ -790,7 +790,7 @@ class AssemblyBase(Feature):
         """
         ...
 
-    def unlinkInstances(self, instances: typing.Tuple[PartInstance]):
+    def unlinkInstances(self, instances: typing.Tuple[PartInstance, ...]):
         """This method converts the specified PartInstance objects from linked child instances to
         regular instances. The parts associated with the selected instances will be converted to
         regular parts as well.
@@ -850,7 +850,7 @@ class AssemblyBase(Feature):
 
     def setMeshNumberingControl(
         self,
-        instances: typing.Tuple[PartInstance],
+        instances: typing.Tuple[PartInstance, ...],
         startNodeLabel: int = None,
         startElemLabel: int = None,
     ):
@@ -872,11 +872,11 @@ class AssemblyBase(Feature):
 
     def copyMeshPattern(
         self,
-        elements: typing.Tuple[MeshElement] = (),
-        faces: typing.Tuple[Face] = (),
-        elemFaces: typing.Tuple[MeshFace] = (),
+        elements: typing.Tuple[MeshElement, ...] = (),
+        faces: typing.Tuple[Face, ...] = (),
+        elemFaces: typing.Tuple[MeshFace, ...] = (),
         targetFace: MeshFace = None,
-        nodes: typing.Tuple[MeshNode] = (),
+        nodes: typing.Tuple[MeshNode, ...] = (),
         coordinates: tuple = (),
     ):
         """This method copies a mesh pattern from a source region consisting of a set of shell
@@ -910,10 +910,14 @@ class AssemblyBase(Feature):
 
     def smoothNodes(
 <<<<<<< HEAD
+<<<<<<< HEAD
         self, nodes: tuple[MeshNode] = (), coordinates: tuple[MeshNode] = ()
 =======
         self, nodes: typing.Tuple[MeshNode] = ()
 >>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
+=======
+        self, nodes: typing.Tuple[MeshNode, ...] = ()
+>>>>>>> c43407d (Update Typing.Tuple)
     ):
         """This method smooths the given nodes of a native mesh, moving them locally to a more
         optimal location that improves the quality of the mesh

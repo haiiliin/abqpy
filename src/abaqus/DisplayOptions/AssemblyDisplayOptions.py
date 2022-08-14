@@ -171,7 +171,7 @@ class AssemblyDisplayOptions:
         cnxTypeLabels: Boolean = ON,
         cnxTagDisplay: Boolean = OFF,
         predefinedFields: Boolean = OFF,
-        visibleDisplayGroups: typing.Tuple[DisplayGroup] = (),
+        visibleDisplayGroups: typing.Tuple[DisplayGroup, ...] = (),
         engineeringFeatures: Boolean = OFF,
         renderBeamProfiles: Boolean = OFF,
         beamScaleFactor: float = 1,
