@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .Job import Job
 
@@ -64,7 +66,7 @@ class Coexecution:
     atTime: str = ""
 
     #: A repository of Job objects specifying the jobs that comprise this co-execution.
-    jobs: dict[str, Job] = dict[str, Job]()
+    jobs: typing.Dict[str, Job] = {}
 
     #: A tuple of Strings specifying the names of the secondary models for the co-execution.
     secondaryModels: tuple = ()

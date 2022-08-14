@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .Datum import Datum
 from .DatumAxis import DatumAxis
@@ -45,8 +47,8 @@ class DatumCsys(Datum):
     axis3: DatumAxis = DatumAxis()
 
     def globalToLocal(
-        self, coordinates: tuple[float, float, float]
-    ) -> tuple[float, float, float]:
+        self, coordinates: typing.Tuple[float, float, float]
+    ) -> typing.Tuple[float, float, float]:
         """This method transforms specified coordinates in the global coordinate system into this
         local coordinate system.
 
@@ -57,14 +59,14 @@ class DatumCsys(Datum):
 
         Returns
         -------
-        tuple[float, float, float]
+        typing.Tuple[float, float, float]
             A tuple of three Floats representing the coordinates in this local coordinate system.
         """
         ...
 
     def localToGlobal(
-        self, coordinates: tuple[float, float, float]
-    ) -> tuple[float, float, float]:
+        self, coordinates: typing.Tuple[float, float, float]
+    ) -> typing.Tuple[float, float, float]:
         """This method transforms specified coordinates in this local coordinate system into the global coordinate system.
 
         Parameters
@@ -74,7 +76,7 @@ class DatumCsys(Datum):
 
         Returns
         -------
-        tuple[float, float, float]
+        typing.Tuple[float, float, float]
             A tuple of three Floats representing the coordinates in this global coordinate system.
         """
         ...

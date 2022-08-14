@@ -23,7 +23,7 @@ class ParameterTable:
     """
 
     #: A ParameterColumnArray specifying all the columns in the ParameterTable.
-    columns: ParameterColumnArray = ParameterColumnArray()
+    columns: ParameterColumnArray = []
 
     #: A DataTableArray specifying all the dataTables in the ParameterTable.
     dataTables: str = ""

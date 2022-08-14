@@ -38,7 +38,7 @@ class OdbFrame:
 
     #: A repository of FieldOutput objects specifying the key to the **fieldOutputs**repository
     #: is a String representing an output variable.
-    fieldOutputs: dict[str, FieldOutput] = dict[str, FieldOutput]()
+    fieldOutputs: typing.Dict[str, FieldOutput] = {}
 
     #: An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object specifying the load case for the frame.
     loadCase: OdbLoadCase = OdbLoadCase("loadCase")

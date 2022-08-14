@@ -36,8 +36,8 @@ Quick Start
 Installation
 ~~~~~~~~~~~~
 
-`abqpy` is using type hints features that require Python 3.9 or a later version, 
-please upgrade it to Python 3.9 or a later version if you are using an earlier version.
+`abqpy` supports Python 3.7 or a later version. If you are using Python 3.6 or an earlier version, please upgrade to Python 3.7
+or later.
 
 `abqpy` is uploaded to `PyPI <https://pypi.org/project/abqpy>`_, you can simply install
 it using pip:

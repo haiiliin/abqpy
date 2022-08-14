@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 
 
@@ -68,7 +70,7 @@ class BackwardCompatibility:
 
         Returns
         -------
-        list[str]
+        typing.List[str]
             A list of Strings.
         """
         ...
@@ -79,7 +81,7 @@ class BackwardCompatibility:
 
         Returns
         -------
-        list[str]
+        typing.List[str]
             A list of Strings.
         """
         ...

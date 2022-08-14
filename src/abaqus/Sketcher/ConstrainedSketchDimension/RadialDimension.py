@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .ConstrainedSketchDimension import ConstrainedSketchDimension
 from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
@@ -9,7 +11,7 @@ class RadialDimension(ConstrainedSketchDimension):
     def __init__(
         self,
         curve: ConstrainedSketchGeometry,
-        textPoint: tuple[float, ...],
+        textPoint: typing.Tuple[float, ...],
         value: float = None,
         reference: Boolean = OFF,
         majorRadius: float = None,
