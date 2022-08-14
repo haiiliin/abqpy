@@ -245,9 +245,7 @@ class SessionBase:
     views: typing.Dict[str, View] = {}
 
     #: A repository of NetworkDatabaseConnector objects.
-    networkDatabaseConnectors: typing.Dict[str, NetworkDatabaseConnector] = typing.Dict[
-        str, NetworkDatabaseConnector
-    ]()
+    networkDatabaseConnectors: typing.Dict[str, NetworkDatabaseConnector] = {}
 
     #: A repository of DisplayGroup objects.
     displayGroups: typing.Dict[str, DisplayGroup] = {}

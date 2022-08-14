@@ -150,14 +150,10 @@ class SubstructureGenerateStep(AnalysisStep):
     suppressed: Boolean = OFF
 
     #: A repository of FieldOutputRequestState objects.
-    fieldOutputRequestState: typing.Dict[str, FieldOutputRequestState] = typing.Dict[
-        str, FieldOutputRequestState
-    ]()
+    fieldOutputRequestState: typing.Dict[str, FieldOutputRequestState] = {}
 
     #: A repository of HistoryOutputRequestState objects.
-    historyOutputRequestState: typing.Dict[str, HistoryOutputRequestState] = typing.Dict[
-        str, HistoryOutputRequestState
-    ]()
+    historyOutputRequestState: typing.Dict[str, HistoryOutputRequestState] = {}
 
     #: A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
@@ -169,9 +165,7 @@ class SubstructureGenerateStep(AnalysisStep):
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
-    adaptiveMeshConstraintStates: typing.Dict[str, AdaptiveMeshConstraintState] = typing.Dict[
-        str, AdaptiveMeshConstraintState
-    ]()
+    adaptiveMeshConstraintStates: typing.Dict[str, AdaptiveMeshConstraintState] = {}
 
     #: A repository of AdaptiveMeshDomain objects.
     adaptiveMeshDomains: typing.Dict[str, AdaptiveMeshDomain] = {}
@@ -183,9 +177,7 @@ class SubstructureGenerateStep(AnalysisStep):
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
-    boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = typing.Dict[
-        str, BoundaryConditionState
-    ]()
+    boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
     interactionStates: int = None
@@ -197,9 +189,7 @@ class SubstructureGenerateStep(AnalysisStep):
     loadCases: typing.Dict[str, LoadCase] = {}
 
     #: A repository of PredefinedFieldState objects.
-    predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = typing.Dict[
-        str, PredefinedFieldState
-    ]()
+    predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
 
     def __init__(
         self,
