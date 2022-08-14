@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .Leaf import Leaf
 from ..Mesh.MeshElement import MeshElement
@@ -22,7 +24,7 @@ class LeafFromMeshElementLabels(Leaf):
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant = None
 
-    def __init__(self, elementSeq: tuple[MeshElement]):
+    def __init__(self, elementSeq: typing.Tuple[MeshElement, ...]):
         """This method creates a Leaf object from a sequence of mesh element objects. Leaf objects
         specify the items in a display group.
 

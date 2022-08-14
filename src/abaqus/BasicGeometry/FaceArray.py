@@ -1,8 +1,10 @@
+import typing
+
 from abaqusConstants import *
 from .Face import Face
 
 
-class FaceArray(list[Face]):
+class FaceArray(typing.List[Face]):
     """The FaceArray is a sequence of Face objects. If the part is modified, then FaceArray
     must be updated for that part.
 
@@ -36,7 +38,7 @@ class FaceArray(list[Face]):
             mdb.models[name].rootAssembly.surfaces[name].faces
     """
 
-    def __init__(self, faces: list[Face]):
+    def __init__(self, faces: typing.List[Face]):
         """This method creates a FaceArray object.
 
         .. note:: 
@@ -225,7 +227,7 @@ class FaceArray(list[Face]):
 
         Returns
         -------
-        dict[str, tuple[float, ...]]
+        typing.Dict[str, typing.Tuple[float, ...]]
             A Dictionary object with the following items:
             
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z**  -boundary

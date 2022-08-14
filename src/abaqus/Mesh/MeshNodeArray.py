@@ -1,7 +1,9 @@
+import typing
+
 from .MeshNode import MeshNode
 
 
-class MeshNodeArray(list[MeshNode]):
+class MeshNodeArray(typing.List[MeshNode]):
     """The MeshNodeArray is a sequence of MeshNode objects.
 
     .. note:: 
@@ -37,7 +39,7 @@ class MeshNodeArray(list[MeshNode]):
             mdb.models[name].rootAssembly.surfaces[name].nodes
     """
 
-    def __init__(self, nodes: list[MeshNode]):
+    def __init__(self, nodes: typing.List[MeshNode]):
         """This method creates a MeshNodeArray object.
 
         .. note:: 
@@ -179,7 +181,7 @@ class MeshNodeArray(list[MeshNode]):
 
         Returns
         -------
-        dict[str, tuple[float, float, float]]
+        typing.Dict[str, typing.Tuple[float, float, float]]
             A Dictionary object with the following items:
             
             - **low**: a tuple of three floats representing the minimum x, y and z boundary values of
@@ -211,7 +213,7 @@ class MeshNodeArray(list[MeshNode]):
 
         Returns
         -------
-        MeshNode | list[MeshNode]
+        MeshNode | typing.List[MeshNode]
             A MeshNode, or a list of MeshNode objects, or a list of lists of MeshNode objects,
             depending on the number of points given and the number of nodes requested.
         """

@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .AdaptivityIteration import AdaptivityIteration
 from ..Job.ModelJob import ModelJob
@@ -22,7 +24,7 @@ class AdaptivityProcess:
 
     #: A repository of AdaptivityIteration objects specifying the AdaptivityIteration objects
     #: received during running the adaptivity process.
-    iterations: dict[int, AdaptivityIteration] = dict[str, AdaptivityIteration]()
+    iterations: typing.Dict[int, AdaptivityIteration] = {}
 
     #: A String specifying the name of the Adaptivity Process.
     name: str

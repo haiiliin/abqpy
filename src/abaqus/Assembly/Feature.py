@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from ..BasicGeometry.Face import Face
 from ..Feature.Feature import Feature as FeatureBase
@@ -20,10 +22,10 @@ class Feature(FeatureBase):
     def AttachmentLines(
         name: str,
         points: int,
-        sourceFaces: tuple[Face],
-        sourceElementFaces: tuple[MeshFace],
-        targetFaces: tuple[Face],
-        targetElementFaces: tuple[MeshFace],
+        sourceFaces: typing.Tuple[Face, ...],
+        sourceElementFaces: typing.Tuple[MeshFace, ...],
+        targetFaces: typing.Tuple[Face, ...],
+        targetElementFaces: typing.Tuple[MeshFace, ...],
         projectionMethod: SymbolicConstant = PROJECT_BY_PROXIMITY,
         projectionDirStartPt: float = None,
         projectionDirEndPt: float = None,

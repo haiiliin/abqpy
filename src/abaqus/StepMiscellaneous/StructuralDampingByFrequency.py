@@ -16,6 +16,4 @@ class StructuralDampingByFrequency:
     """
 
     #: A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponentArray` object.
-    components: StructuralDampingByFrequencyComponentArray = (
-        StructuralDampingByFrequencyComponentArray()
-    )
+    components: StructuralDampingByFrequencyComponentArray = []

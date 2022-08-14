@@ -34,13 +34,13 @@ class OdbStepBase:
     acousticMass: float = None
 
     #: An :py:class:`~abaqus.Odb.OdbFrameArray.OdbFrameArray` object.
-    frames: OdbFrameArray = OdbFrameArray()
+    frames: OdbFrameArray = []
 
     #: A repository of HistoryRegion objects.
-    historyRegions: dict[str, HistoryRegion] = dict[str, HistoryRegion]()
+    historyRegions: typing.Dict[str, HistoryRegion] = {}
 
     #: A repository of OdbLoadCase objects.
-    loadCases: dict[str, OdbLoadCase] = dict[str, OdbLoadCase]()
+    loadCases: typing.Dict[str, OdbLoadCase] = {}
 
     #: A tuple of Floats specifying the coordinates of the center of mass.
     massCenter: float = None

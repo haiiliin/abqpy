@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .AnalysisStep import AnalysisStep
 from ..Adaptivity.AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
@@ -83,9 +85,7 @@ class SteadyStateSubspaceStep(AnalysisStep):
     description: str = ""
 
     #: A :py:class:`~abaqus.StepMiscellaneous.SteadyStateSubspaceFrequencyArray.SteadyStateSubspaceFrequencyArray` object.
-    frequencyRange: SteadyStateSubspaceFrequencyArray = (
-        SteadyStateSubspaceFrequencyArray()
-    )
+    frequencyRange: SteadyStateSubspaceFrequencyArray = []
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
@@ -131,14 +131,10 @@ class SteadyStateSubspaceStep(AnalysisStep):
     suppressed: Boolean = OFF
 
     #: A repository of FieldOutputRequestState objects.
-    fieldOutputRequestState: dict[str, FieldOutputRequestState] = dict[
-        str, FieldOutputRequestState
-    ]()
+    fieldOutputRequestState: typing.Dict[str, FieldOutputRequestState] = {}
 
     #: A repository of HistoryOutputRequestState objects.
-    historyOutputRequestState: dict[str, HistoryOutputRequestState] = dict[
-        str, HistoryOutputRequestState
-    ]()
+    historyOutputRequestState: typing.Dict[str, HistoryOutputRequestState] = {}
 
     #: A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
@@ -150,12 +146,10 @@ class SteadyStateSubspaceStep(AnalysisStep):
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
-    adaptiveMeshConstraintStates: dict[str, AdaptiveMeshConstraintState] = dict[
-        str, AdaptiveMeshConstraintState
-    ]()
+    adaptiveMeshConstraintStates: typing.Dict[str, AdaptiveMeshConstraintState] = {}
 
     #: A repository of AdaptiveMeshDomain objects.
-    adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = dict[str, AdaptiveMeshDomain]()
+    adaptiveMeshDomains: typing.Dict[str, AdaptiveMeshDomain] = {}
 
     #: A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
     control: Control = Control()
@@ -164,23 +158,19 @@ class SteadyStateSubspaceStep(AnalysisStep):
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
-    boundaryConditionStates: dict[str, BoundaryConditionState] = dict[
-        str, BoundaryConditionState
-    ]()
+    boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
     interactionStates: int = None
 
     #: A repository of LoadState objects.
-    loadStates: dict[str, LoadState] = dict[str, LoadState]()
+    loadStates: typing.Dict[str, LoadState] = {}
 
     #: A repository of LoadCase objects.
-    loadCases: dict[str, LoadCase] = dict[str, LoadCase]()
+    loadCases: typing.Dict[str, LoadCase] = {}
 
     #: A repository of PredefinedFieldState objects.
-    predefinedFieldStates: dict[str, PredefinedFieldState] = dict[
-        str, PredefinedFieldState
-    ]()
+    predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
 
     def __init__(
         self,
