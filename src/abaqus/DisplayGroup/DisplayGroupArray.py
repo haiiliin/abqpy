@@ -1,6 +1,4 @@
 from .DisplayGroup import DisplayGroup
 
 
-class DisplayGroupArray(list[DisplayGroup]):
-    def findAt(self):
-        ...
+DisplayGroupArray = list[DisplayGroup]
