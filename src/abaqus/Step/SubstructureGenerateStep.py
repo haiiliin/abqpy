@@ -104,7 +104,7 @@ class SubstructureGenerateStep(AnalysisStep):
     )
 
     #: A :py:class:`~abaqus.StepMiscellaneous.SubstructureGenerateModesArray.SubstructureGenerateModesArray` object.
-    modeRange: SubstructureGenerateModesArray = SubstructureGenerateModesArray()
+    modeRange: SubstructureGenerateModesArray = []
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
