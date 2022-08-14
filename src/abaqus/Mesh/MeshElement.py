@@ -57,7 +57,7 @@ class MeshElement:
     connectivity: int = None
 
     def Element(
-        self, nodes: typing.Tuple[MeshNode], elemShape: SymbolicConstant, label: int = None
+        self, nodes: typing.Tuple[MeshNode, ...], elemShape: SymbolicConstant, label: int = None
     ):
         """This method creates an element on an orphan mesh part from a sequence of nodes.
 

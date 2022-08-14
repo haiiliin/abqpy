@@ -31,26 +31,26 @@ class RegionPart(RegionPartBase):
 
     def Surface(
         self,
-        side1Faces: typing.Tuple[Face] = None,
-        side2Faces: typing.Tuple[Face] = None,
-        side12Faces: typing.Tuple[Face] = None,
-        end1Edges: typing.Tuple[Face] = None,
-        end2Edges: typing.Tuple[Face] = None,
-        circumEdges: typing.Tuple[Face] = None,
-        side1Edges: typing.Tuple[Face] = None,
-        side2Edges: typing.Tuple[Face] = None,
-        face1Elements: typing.Tuple[Face] = None,
-        face2Elements: typing.Tuple[Face] = None,
-        face3Elements: typing.Tuple[Face] = None,
-        face4Elements: typing.Tuple[Face] = None,
-        face5Elements: typing.Tuple[Face] = None,
-        face6Elements: typing.Tuple[Face] = None,
-        side1Elements: typing.Tuple[Face] = None,
-        side2Elements: typing.Tuple[Face] = None,
-        side12Elements: typing.Tuple[Face] = None,
-        end1Elements: typing.Tuple[Face] = None,
-        end2Elements: typing.Tuple[Face] = None,
-        circumElements: typing.Tuple[Face] = None,
+        side1Faces: typing.Tuple[Face, ...] = None,
+        side2Faces: typing.Tuple[Face, ...] = None,
+        side12Faces: typing.Tuple[Face, ...] = None,
+        end1Edges: typing.Tuple[Face, ...] = None,
+        end2Edges: typing.Tuple[Face, ...] = None,
+        circumEdges: typing.Tuple[Face, ...] = None,
+        side1Edges: typing.Tuple[Face, ...] = None,
+        side2Edges: typing.Tuple[Face, ...] = None,
+        face1Elements: typing.Tuple[Face, ...] = None,
+        face2Elements: typing.Tuple[Face, ...] = None,
+        face3Elements: typing.Tuple[Face, ...] = None,
+        face4Elements: typing.Tuple[Face, ...] = None,
+        face5Elements: typing.Tuple[Face, ...] = None,
+        face6Elements: typing.Tuple[Face, ...] = None,
+        side1Elements: typing.Tuple[Face, ...] = None,
+        side2Elements: typing.Tuple[Face, ...] = None,
+        side12Elements: typing.Tuple[Face, ...] = None,
+        end1Elements: typing.Tuple[Face, ...] = None,
+        end2Elements: typing.Tuple[Face, ...] = None,
+        circumElements: typing.Tuple[Face, ...] = None,
         name: str = "",
         **kwargs
     ) -> Surface:
@@ -193,17 +193,17 @@ class RegionPart(RegionPartBase):
     def Set(
         self,
         name: str,
-        nodes: typing.Tuple[MeshNode] = None,
-        elements: typing.Tuple[MeshElement] = None,
+        nodes: typing.Tuple[MeshNode, ...] = None,
+        elements: typing.Tuple[MeshElement, ...] = None,
         region: Region = None,
-        vertices: typing.Tuple[Vertex] = None,
-        edges: typing.Tuple[Edge] = None,
-        faces: typing.Tuple[Face] = None,
-        cells: typing.Tuple[Cell] = None,
-        xVertices: typing.Tuple[Vertex] = None,
-        xEdges: typing.Tuple[Edge] = None,
-        xFaces: typing.Tuple[Face] = None,
-        referencePoints: typing.Tuple[ReferencePoint] = (),
+        vertices: typing.Tuple[Vertex, ...] = None,
+        edges: typing.Tuple[Edge, ...] = None,
+        faces: typing.Tuple[Face, ...] = None,
+        cells: typing.Tuple[Cell, ...] = None,
+        xVertices: typing.Tuple[Vertex, ...] = None,
+        xEdges: typing.Tuple[Edge, ...] = None,
+        xFaces: typing.Tuple[Face, ...] = None,
+        referencePoints: typing.Tuple[ReferencePoint, ...] = (),
         skinFaces: tuple = (),
         skinEdges: tuple = (),
         stringerEdges: tuple = (),
@@ -317,10 +317,10 @@ class RegionPart(RegionPartBase):
     def Skin(
         self,
         name: str,
-        faces: typing.Tuple[Face] = (),
-        edges: typing.Tuple[Edge] = (),
-        elementFaces: typing.Tuple[MeshFace] = (),
-        elementEdges: typing.Tuple[MeshEdge] = (),
+        faces: typing.Tuple[Face, ...] = (),
+        edges: typing.Tuple[Edge, ...] = (),
+        elementFaces: typing.Tuple[MeshFace, ...] = (),
+        elementEdges: typing.Tuple[MeshEdge, ...] = (),
     ) -> Skin:
         """This method creates a skin from a sequence of objects in a model database. At least one
         of the optional arguments needs to be specified.
@@ -360,10 +360,10 @@ class RegionPart(RegionPartBase):
     def EditSkin(
         self,
         name: str = "",
-        faces: typing.Tuple[Face] = (),
-        edges: typing.Tuple[Edge] = (),
-        elementFaces: typing.Tuple[MeshFace] = (),
-        elementEdges: typing.Tuple[MeshEdge] = (),
+        faces: typing.Tuple[Face, ...] = (),
+        edges: typing.Tuple[Edge, ...] = (),
+        elementFaces: typing.Tuple[MeshFace, ...] = (),
+        elementEdges: typing.Tuple[MeshEdge, ...] = (),
     ) -> Skin:
         """This method modifies underlying entities of the selected skin. At least one of the
         optional arguments needs to be specified.
@@ -401,7 +401,7 @@ class RegionPart(RegionPartBase):
         return skin
 
     def Stringer(
-        self, name: str, edges: typing.Tuple[Edge] = (), elementEdges: typing.Tuple[MeshEdge] = ()
+        self, name: str, edges: typing.Tuple[Edge, ...] = (), elementEdges: typing.Tuple[MeshEdge, ...] = ()
     ) -> Stringer:
         """This method creates a stringer from a sequence of objects in a model database. At least
         one of the optional arguments needs to be specified.

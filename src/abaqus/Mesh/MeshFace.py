@@ -31,7 +31,7 @@ class MeshFace:
 
         Returns
         -------
-        edges: typing.Tuple[MeshEdge]
+        edges: typing.Tuple[MeshEdge, ...]
             A tuple of MeshEdge objects
         """
         ...
@@ -41,7 +41,7 @@ class MeshFace:
 
         Returns
         -------
-        elements: typing.Tuple[MeshElement]
+        elements: typing.Tuple[MeshElement, ...]
             A tuple of MeshElement objects
         """
         ...
@@ -51,7 +51,7 @@ class MeshFace:
 
         Returns
         -------
-        nodes: typing.Tuple[MeshNode]
+        nodes: typing.Tuple[MeshNode, ...]
             A tuple of MeshNode objects
         """
         ...

@@ -257,7 +257,7 @@ class PartBase(Feature):
         ...
 
     def PartFromBooleanCut(
-        self, name: str, instanceToBeCut: str, cuttingInstances: typing.Tuple[PartInstance]
+        self, name: str, instanceToBeCut: str, cuttingInstances: typing.Tuple[PartInstance, ...]
     ):
         """This method creates a Part in the parts repository after subtracting or cutting the
         geometries of a group of part instances from that of a base part instance.
@@ -289,7 +289,7 @@ class PartBase(Feature):
     def PartFromBooleanMerge(
         self,
         name: str,
-        instances: typing.Tuple[PartInstance],
+        instances: typing.Tuple[PartInstance, ...],
         keepIntersections: Boolean = False,
         mergeNodes: SymbolicConstant = BOUNDARY_ONLY,
         nodeMergingTolerance: float = None,
@@ -471,7 +471,7 @@ class PartBase(Feature):
     def PartFromInstanceMesh(
         self,
         name: str,
-        partInstances: typing.Tuple[PartInstance] = (),
+        partInstances: typing.Tuple[PartInstance, ...] = (),
         copyPartSets: Boolean = False,
         copyAssemblySets: Boolean = False,
     ):
@@ -875,10 +875,10 @@ class PartBase(Feature):
 
     def assignThickness(
         self,
-        faces: typing.Tuple[Face],
+        faces: typing.Tuple[Face, ...],
         thickness: float = None,
-        topFaces: typing.Tuple[Face] = (),
-        bottomFaces: typing.Tuple[Face] = (),
+        topFaces: typing.Tuple[Face, ...] = (),
+        bottomFaces: typing.Tuple[Face, ...] = (),
     ):
         """This method assigns thickness data to shell faces. The thickness can be used while
         assigning shell and membrane sections to faces.
@@ -993,7 +993,7 @@ class PartBase(Feature):
         """
         ...
 
-    def getArea(self, faces: typing.Tuple[Face], relativeAccuracy: float = 0):
+    def getArea(self, faces: typing.Tuple[Face, ...], relativeAccuracy: float = 0):
         """This method returns the total surface area of a given face or group of faces.
 
         Parameters
@@ -1039,7 +1039,7 @@ class PartBase(Feature):
         ...
 
     def getCentroid(
-        self, faces: typing.Tuple[Face], cells: typing.Tuple[Face], relativeAccuracy: float = 0
+        self, faces: typing.Tuple[Face, ...], cells: typing.Tuple[Face, ...], relativeAccuracy: float = 0
     ):
         """Location of the centroid of a given face/cell or group of faces/cells
         
@@ -1083,7 +1083,7 @@ class PartBase(Feature):
         """
         ...
 
-    def getCurvature(self, edges: typing.Tuple[Edge], samplePoints: int = 100):
+    def getCurvature(self, edges: typing.Tuple[Edge, ...], samplePoints: int = 100):
         """This method returns the maximum curvature of a given edge or group of edges. For an arc,
         the curvature is constant over the entire edge, and equal to the inverse of the radius.
         For a straight line, the curvature is constant and equal to 0. For a spline edge, the
@@ -1128,7 +1128,7 @@ class PartBase(Feature):
         """
         ...
 
-    def getLength(self, edges: typing.Tuple[Edge]):
+    def getLength(self, edges: typing.Tuple[Edge, ...]):
         """This method returns the length of a given edge or group of edges.
 
         Parameters
@@ -1143,7 +1143,7 @@ class PartBase(Feature):
         """
         ...
 
-    def getPerimeter(self, faces: typing.Tuple[Face]):
+    def getPerimeter(self, faces: typing.Tuple[Face, ...]):
         """This method returns the total perimeter of a given face or group of faces. All faces
         need to be on the same part. If the specified faces have shared edges, these edges are
         excluded from the computation, thus providing the length of the outer perimeter of the
@@ -1161,7 +1161,7 @@ class PartBase(Feature):
         """
         ...
 
-    def getVolume(self, cells: typing.Tuple[Cell], relativeAccuracy: float = 0):
+    def getVolume(self, cells: typing.Tuple[Cell, ...], relativeAccuracy: float = 0):
         """This method returns the volume area of a given cell or group of cells.
 
         Parameters
@@ -1307,7 +1307,7 @@ class PartBase(Feature):
 
         Returns
         -------
-        faces: typing.Tuple[Face]
+        faces: typing.Tuple[Face, ...]
             Sequence of Face objects.
 
         Raises
@@ -1327,7 +1327,7 @@ class PartBase(Feature):
 
         Returns
         -------
-        edges: typing.Tuple[Edge]
+        edges: typing.Tuple[Edge, ...]
             Sequence of Edge objects.
 
         Raises
@@ -1347,7 +1347,7 @@ class PartBase(Feature):
 
         Returns
         -------
-        cells: typing.Tuple[Cell]
+        cells: typing.Tuple[Cell, ...]
             Sequence of Cell objects.
 
         Raises
@@ -1367,7 +1367,7 @@ class PartBase(Feature):
 
         Returns
         -------
-        vertices: typing.Tuple[ConstrainedSketchVertex]
+        vertices: typing.Tuple[ConstrainedSketchVertex, ...]
             Sequence of ConstrainedSketchVertex objects.
 
         Raises
@@ -1698,11 +1698,11 @@ class PartBase(Feature):
 
     def copyMeshPattern(
         self,
-        elements: typing.Tuple[MeshElement],
-        faces: typing.Tuple[Face],
-        elemFaces: typing.Tuple[MeshFace],
+        elements: typing.Tuple[MeshElement, ...],
+        faces: typing.Tuple[Face, ...],
+        elemFaces: typing.Tuple[MeshFace, ...],
         targetFace: MeshFace,
-        nodes: typing.Tuple[MeshNode],
+        nodes: typing.Tuple[MeshNode, ...],
         coordinates: tuple,
     ):
         """This method copies a mesh pattern from a source region consisting of a set of shell
@@ -1733,7 +1733,7 @@ class PartBase(Feature):
         """
         ...
 
-    def smoothNodes(self, nodes: typing.Tuple[MeshNode]):
+    def smoothNodes(self, nodes: typing.Tuple[MeshNode, ...]):
         """This method smooths the given nodes of a native mesh, moving them locally to a more
         optimal location that improves the quality of the mesh
 
