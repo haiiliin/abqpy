@@ -1,8 +1,4 @@
 from .StructuralDampingByFrequencyComponent import StructuralDampingByFrequencyComponent
 
 
-class StructuralDampingByFrequencyComponentArray(
-    list[StructuralDampingByFrequencyComponent]
-):
-    def findAt(self):
-        ...
+StructuralDampingByFrequencyComponentArray = list[StructuralDampingByFrequencyComponent]
