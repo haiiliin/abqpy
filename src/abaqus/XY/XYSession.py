@@ -548,7 +548,7 @@ class XYSession(XYSessionBase):
         self,
         odb: Odb,
         outputPosition: SymbolicConstant,
-        variable: tuple[tuple[str, SymbolicConstant, tuple[SymbolicConstant, str]]],
+        variable: typing.Tuple[typing.Tuple[str, SymbolicConstant, typing.Tuple[SymbolicConstant, str]]],
         elementSets: tuple = (),
         elementLabels: tuple = (),
         nodeSets: tuple = (),
@@ -556,7 +556,7 @@ class XYSession(XYSessionBase):
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
         operator: SymbolicConstant = None,
-    ) -> list["XYData"]:
+    ) -> typing.List["XYData"]:
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
         .. note:: 
@@ -635,7 +635,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        list[XYData]
+        typing.List[XYData]
             A list of XYData objects
         """
         self.xyDataObjects["name"] = xyData = XYData(())
@@ -689,7 +689,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        list[XYData]
+        typing.List[XYData]
             A list of XYData objects
         """
         self.xyDataObjects["name"] = xyData = XYData(())

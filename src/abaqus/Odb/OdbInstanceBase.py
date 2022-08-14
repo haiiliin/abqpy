@@ -52,13 +52,13 @@ class OdbInstanceBase:
     elements: OdbMeshElementArray = OdbMeshElementArray()
 
     #: A repository of OdbSet objects specifying node sets.
-    nodeSets: dict[str, OdbSet] = dict[str, OdbSet]()
+    nodeSets: typing.Dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying element sets.
-    elementSets: dict[str, OdbSet] = dict[str, OdbSet]()
+    elementSets: typing.Dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying surfaces.
-    surfaces: dict[str, OdbSet] = dict[str, OdbSet]()
+    surfaces: typing.Dict[str, OdbSet] = {}
 
     #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
     sectionAssignments: SectionAssignmentArray = SectionAssignmentArray()
@@ -249,7 +249,7 @@ class OdbInstanceBase:
         ...
 
     def AnalyticRigidSurf2DPlanar(
-        self, name: str, profile: tuple[AnalyticSurfaceSegment], filletRadius: str = 0
+        self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment], filletRadius: str = 0
     ):
         """This method is used to define a two-dimensional AnalyticSurface object on the instance.
 
@@ -276,7 +276,7 @@ class OdbInstanceBase:
     def AnalyticRigidSurfExtrude(
         self,
         name: str,
-        profile: tuple[AnalyticSurfaceSegment],
+        profile: typing.Tuple[AnalyticSurfaceSegment],
         filletRadius: str = 0,
         localCoordData: tuple = (),
     ):
@@ -309,7 +309,7 @@ class OdbInstanceBase:
     def AnalyticRigidSurfRevolve(
         self,
         name: str,
-        profile: tuple[AnalyticSurfaceSegment],
+        profile: typing.Tuple[AnalyticSurfaceSegment],
         filletRadius: str = 0,
         localCoordData: tuple = (),
     ):

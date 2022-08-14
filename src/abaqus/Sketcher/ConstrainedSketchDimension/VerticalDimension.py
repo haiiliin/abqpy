@@ -8,7 +8,7 @@ class VerticalDimension(ConstrainedSketchDimension):
         self,
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
-        textPoint: tuple[float, ...],
+        textPoint: typing.Tuple[float, ...],
         value: float = None,
         reference: Boolean = OFF,
     ):

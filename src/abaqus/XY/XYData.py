@@ -346,14 +346,19 @@ class XYData(tuple):
         self,
         odb: Odb,
         outputPosition: SymbolicConstant,
-        variable: tuple[tuple],
+        variable: typing.Tuple[tuple],
         elementSets: tuple = (),
         elementLabels: tuple = (),
         nodeSets: tuple = (),
         nodeLabels: tuple = (),
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
+<<<<<<< HEAD
     ) -> list["XYData"]:
+=======
+        operator: SymbolicConstant = None,
+    ) -> typing.List["XYData"]:
+>>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
         .. note:: 
@@ -421,7 +426,7 @@ class XYData(tuple):
 
         Returns
         -------
-        list[XYData]
+        typing.List[XYData]
             A list of XYData objects.
 
         Raises
@@ -479,7 +484,7 @@ class XYData(tuple):
 
         Returns
         -------
-        list[XYData]
+        typing.List[XYData]
             A list of XYData objects.
 
         Raises
@@ -569,7 +574,7 @@ class XYData(tuple):
 
         Returns
         -------
-        list[XYData]
+        typing.List[XYData]
             A list of XYData objects.
 
         Raises

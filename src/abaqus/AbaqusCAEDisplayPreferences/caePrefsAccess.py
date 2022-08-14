@@ -36,7 +36,7 @@ def getGuiPrefsFileName() -> str:
     ...
 
 
-def getDisplayNamesInGuiPreferences(fileName: str) -> list[str]:
+def getDisplayNamesInGuiPreferences(fileName: str) -> typing.List[str]:
     """The abaqus_2021.gpr file stores a separate guiPreferences record for each display that
     you use. This function returns a list of every displayName recorded in the preferences
     file.
@@ -55,7 +55,7 @@ def getDisplayNamesInGuiPreferences(fileName: str) -> list[str]:
 
     Returns
     -------
-    list[str]
+    typing.List[str]
         A list of Strings of displayNames.
     """
     # TODO: Implement this function

@@ -35,15 +35,15 @@ class OdbRigidBody:
 
     #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the element set whose motion is governed by the motion of
     #: rigid body reference node.
-    elements: OdbSet = OdbSet("set", tuple[OdbMeshNode]())
+    elements: OdbSet = OdbSet("set", ())
 
     #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the node set which have both translational and rotational
     #: degrees of freedom associated with the rigid body.
-    tieNodes: OdbSet = OdbSet("set", tuple[OdbMeshNode]())
+    tieNodes: OdbSet = OdbSet("set", ())
 
     #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the node set which have only translational degrees of
     #: freedom associated with the rigid body.
-    pinNodes: OdbSet = OdbSet("set", tuple[OdbMeshNode]())
+    pinNodes: OdbSet = OdbSet("set", ())
 
     #: An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying the analytic surface whose motion is governed by
     #: the motion of rigid body reference node.
@@ -54,9 +54,9 @@ class OdbRigidBody:
         referenceNode: OdbSet,
         position: SymbolicConstant = INPUT,
         isothermal: Boolean = ON,
-        elements: OdbSet = OdbSet("set", tuple[OdbMeshNode]()),
-        tieNodes: OdbSet = OdbSet("set", tuple[OdbMeshNode]()),
-        pinNodes: OdbSet = OdbSet("set", tuple[OdbMeshNode]()),
+        elements: OdbSet = OdbSet("set", ()),()()
+        tieNodes: OdbSet = OdbSet("set", typing.Tuple[OdbMeshNode]()),
+        pinNodes: OdbSet = OdbSet("set", typing.Tuple[OdbMeshNode]()),
         analyticSurface: AnalyticSurface = None, 
     ):
         """This method creates a OdbRigidBody object.

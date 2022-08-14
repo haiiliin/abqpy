@@ -117,7 +117,7 @@ class XYSessionBase(SessionBase):
 
         Returns
         -------
-        list[XYData]
+        typing.List[XYData]
             A list of xyData objects.
 
         Raises

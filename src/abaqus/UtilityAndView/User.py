@@ -72,7 +72,7 @@ def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
 
     Returns
     -------
-    tuple[str, ...]
+    typing.Tuple[str, ...]
         A sequence of Strings representing the data in each of the text fields in the dialog
         box. If the user clicks the Cancel button, the method returns a sequence of None
         objects.

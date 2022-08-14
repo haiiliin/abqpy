@@ -7,8 +7,13 @@ class DistanceDimension(ConstrainedSketchDimension):
     def __init__(
         self,
         entity1: ConstrainedSketchVertex,
+<<<<<<< HEAD
         vertex2: ConstrainedSketchVertex,
         textPoint: tuple[float, ...],
+=======
+        entity2: ConstrainedSketchVertex,
+        textPoint: typing.Tuple[float, ...],
+>>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
         value: float = None,
         reference: Boolean = OFF,
     ):
