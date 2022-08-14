@@ -28,7 +28,7 @@ class MeshAssembly(AssemblyBase):
             mdb.models[name].rootAssembly
     """
 
-    def assignStackDirection(self, cells: typing.Tuple[Cell], referenceRegion: Face):
+    def assignStackDirection(self, cells: typing.Tuple[Cell, ...], referenceRegion: Face):
         """This method assigns a stack direction to geometric cells. The stack direction will be
         used to orient the elements during mesh generation.
 
@@ -44,9 +44,9 @@ class MeshAssembly(AssemblyBase):
     def associateMeshWithGeometry(
         self,
         geometricEntity: str,
-        elements: typing.Tuple[MeshElement] = (),
-        elemFaces: typing.Tuple[MeshFace] = (),
-        elemEdges: typing.Tuple[MeshEdge] = (),
+        elements: typing.Tuple[MeshElement, ...] = (),
+        elemFaces: typing.Tuple[MeshFace, ...] = (),
+        elemEdges: typing.Tuple[MeshEdge, ...] = (),
         node: MeshNode = MeshNode((0, 0, 0)),
     ):
         """This method associates a geometric entity with mesh entities that are either orphan
@@ -77,7 +77,7 @@ class MeshAssembly(AssemblyBase):
 
     def createVirtualTopology(
         self,
-        regions: typing.Tuple[Face],
+        regions: typing.Tuple[Face, ...],
         mergeShortEdges: Boolean = False,
         shortEdgeThreshold: float = None,
         mergeSmallFaces: Boolean = False,
@@ -173,7 +173,7 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    def deleteBoundaryLayerControls(self, regions: typing.Tuple[Cell]):
+    def deleteBoundaryLayerControls(self, regions: typing.Tuple[Cell, ...]):
         """This method deletes the control parameters for boundary layer mesh for all the specified
         regions.
 
@@ -185,7 +185,7 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    def deleteMesh(self, regions: typing.Tuple[PartInstance]):
+    def deleteMesh(self, regions: typing.Tuple[PartInstance, ...]):
         """This method deletes a subset of the mesh that contains the native elements from the
         given part instances or regions.
 
@@ -198,7 +198,7 @@ class MeshAssembly(AssemblyBase):
         ...
 
     def deleteMeshAssociationWithGeometry(
-        self, geometricEntities: typing.Tuple[Cell], addBoundingEntities: Boolean = False
+        self, geometricEntities: typing.Tuple[Cell, ...], addBoundingEntities: Boolean = False
     ):
         """This method deletes the association of geometric entities with mesh entities.
 
@@ -222,7 +222,7 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    def deleteSeeds(self, regions: typing.Tuple[PartInstance]):
+    def deleteSeeds(self, regions: typing.Tuple[PartInstance, ...]):
         """This method deletes the global edge seeds from the given part instances or deletes the
         local edge seeds from the given edges.
 
@@ -240,7 +240,7 @@ class MeshAssembly(AssemblyBase):
         numberOfLayers: int,
         extrudeVector: tuple,
         geometrySourceSide: str = "",
-        elemFacesSourceSide: typing.Tuple[MeshFace] = (),
+        elemFacesSourceSide: typing.Tuple[MeshFace, ...] = (),
         elemSourceSide: tuple = (),
         depth: float = None,
         targetSide: str = "",
@@ -292,10 +292,10 @@ class MeshAssembly(AssemblyBase):
         self,
         cell: Cell,
         geometrySourceSide: str = "",
-        elemFacesSourceSide: typing.Tuple[MeshFace] = (),
+        elemFacesSourceSide: typing.Tuple[MeshFace, ...] = (),
         elemSourceSide: tuple = (),
         geometryConnectingSides: str = "",
-        elemFacesConnectingSides: typing.Tuple[MeshFace] = (),
+        elemFacesConnectingSides: typing.Tuple[MeshFace, ...] = (),
         elemConnectingSides: tuple = (),
         targetSide: Face = None, 
         numberOfLayers: int = None,
@@ -344,7 +344,7 @@ class MeshAssembly(AssemblyBase):
         axisOfRevolution: tuple,
         angleOfRevolution: float,
         geometrySourceSide: str = "",
-        elemFacesSourceSide: typing.Tuple[MeshFace] = (),
+        elemFacesSourceSide: typing.Tuple[MeshFace, ...] = (),
         elemSourceSide: tuple = (),
         extendElementSets: Boolean = False,
     ):
@@ -385,7 +385,7 @@ class MeshAssembly(AssemblyBase):
 
     def generateMesh(
         self,
-        regions: typing.Tuple[PartInstance] = (),
+        regions: typing.Tuple[PartInstance, ...] = (),
         seedConstraintOverride: Boolean = OFF,
         meshTechniqueOverride: Boolean = OFF,
         boundaryPreview: Boolean = OFF,
@@ -512,7 +512,7 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    def getIncompatibleMeshInterfaces(self, cells: typing.Tuple[Cell] = ()):
+    def getIncompatibleMeshInterfaces(self, cells: typing.Tuple[Cell, ...] = ()):
         """This method returns a sequence of face objects that are meshed with incompatible
         elements.
 
@@ -654,7 +654,7 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    def restoreIgnoredEntity(self, entities: typing.Tuple[IgnoredVertex]):
+    def restoreIgnoredEntity(self, entities: typing.Tuple[IgnoredVertex, ...]):
         """This method restores vertices and edges that have been merged using a virtual topology
         feature.
 
@@ -674,10 +674,10 @@ class MeshAssembly(AssemblyBase):
     def seedEdgeByBias(
         self,
         biasMethod: SymbolicConstant,
-        end1Edges: typing.Tuple[Edge],
-        end2Edges: typing.Tuple[Edge],
-        centerEdges: typing.Tuple[Edge],
-        endEdges: typing.Tuple[Edge],
+        end1Edges: typing.Tuple[Edge, ...],
+        end2Edges: typing.Tuple[Edge, ...],
+        centerEdges: typing.Tuple[Edge, ...],
+        endEdges: typing.Tuple[Edge, ...],
         ratio: float,
         number: int,
         minSize: float,
@@ -737,7 +737,7 @@ class MeshAssembly(AssemblyBase):
         ...
 
     def seedEdgeByNumber(
-        self, edges: typing.Tuple[Edge], number: int, constraint: SymbolicConstant = FREE
+        self, edges: typing.Tuple[Edge, ...], number: int, constraint: SymbolicConstant = FREE
     ):
         """This method seeds the given edges uniformly based on the number of elements along the
         edges.
@@ -761,7 +761,7 @@ class MeshAssembly(AssemblyBase):
 
     def seedEdgeBySize(
         self,
-        edges: typing.Tuple[Edge],
+        edges: typing.Tuple[Edge, ...],
         size: float,
         deviationFactor: float = None,
         minSizeFactor: float = None,
@@ -794,7 +794,7 @@ class MeshAssembly(AssemblyBase):
 
     def seedPartInstance(
         self,
-        regions: typing.Tuple[PartInstance],
+        regions: typing.Tuple[PartInstance, ...],
         size: float,
         deviationFactor: float = None,
         minSizeFactor: float = None,
@@ -824,11 +824,11 @@ class MeshAssembly(AssemblyBase):
 
     def setBoundaryLayerControls(
         self,
-        regions: typing.Tuple[Cell],
+        regions: typing.Tuple[Cell, ...],
         firstElemSize: float,
         growthFactor: float,
         numLayers: int,
-        inactiveFaces: typing.Tuple[Face] = (),
+        inactiveFaces: typing.Tuple[Face, ...] = (),
         setName: str = "",
     ):
         """This method sets the control parameters for boundary layer mesh for the specified
@@ -857,7 +857,7 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    def setElementType(self, regions: tuple, elemTypes: typing.Tuple[ElemType]):
+    def setElementType(self, regions: tuple, elemTypes: typing.Tuple[ElemType, ...]):
         """This method assigns element types to the specified regions.
 
         Parameters
