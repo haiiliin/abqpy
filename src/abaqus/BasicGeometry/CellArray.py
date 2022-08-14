@@ -3,7 +3,7 @@ from abaqusConstants import *
 from .Cell import Cell
 
 
-class CellArray:
+class CellArray(list[Cell]):
     """The CellArray is a sequence of Cell objects.
 
     .. note:: 
