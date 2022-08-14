@@ -41,25 +41,25 @@ class OdbAssemblyBase:
     surfaces: typing.Dict[str, OdbSet] = {}
 
     #: An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
-    nodes: OdbMeshNodeArray = OdbMeshNodeArray()
+    nodes: OdbMeshNodeArray = []
 
     #: An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object.
-    elements: OdbMeshElementArray = OdbMeshElementArray()
+    elements: OdbMeshElementArray = []
 
     #: A repository of OdbDatumCsys objects.
     datumCsyses: typing.Dict[str, OdbDatumCsys] = {}
 
     #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
-    sectionAssignments: SectionAssignmentArray = SectionAssignmentArray()
+    sectionAssignments: SectionAssignmentArray = []
 
     #: An :py:class:`~abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray` object.
-    rigidBodies: OdbRigidBodyArray = OdbRigidBodyArray()
+    rigidBodies: OdbRigidBodyArray = []
 
     #: An :py:class:`~abaqus.Odb.OdbPretensionSectionArray.OdbPretensionSectionArray` object.
-    pretensionSections: OdbPretensionSectionArray = OdbPretensionSectionArray()
+    pretensionSections: OdbPretensionSectionArray = []
 
     #: A :py:class:`~abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray` object.
-    connectorOrientations: ConnectorOrientationArray = ConnectorOrientationArray()
+    connectorOrientations: ConnectorOrientationArray = []
 
     def ConnectorOrientation(
         self,

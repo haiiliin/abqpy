@@ -14,4 +14,4 @@ class RayleighDamping:
     """
 
     #: A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponentArray` object.
-    components: RayleighDampingComponentArray = RayleighDampingComponentArray()
+    components: RayleighDampingComponentArray = []
