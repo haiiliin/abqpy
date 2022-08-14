@@ -37,7 +37,7 @@ Installation
 ~~~~~~~~~~~~
 
 `abqpy` supports Python 3.7 or a later version. If you are using Python 3.6 or an earlier version, please upgrade to Python 3.7
-or later.
+or a later version.
 
 `abqpy` is uploaded to `PyPI <https://pypi.org/project/abqpy>`_, you can simply install
 it using pip:
