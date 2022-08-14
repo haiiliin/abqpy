@@ -212,18 +212,6 @@ class ModelBase:
     #: A repository of OptimizationTask objects.
     optimizationTasks: typing.Dict[str, OptimizationTask] = {}
 
-<<<<<<< HEAD
-=======
-    #: A repository of TableCollection objects.
-    tableCollections: typing.Dict[str, TableCollection] = {}
-
-    #: A repository of EventSeriesType objects.
-    eventSeriesTypes: typing.Dict[str, EventSeriesType] = {}
-
-    #: A repository of EventSeriesData objects.
-    eventSeriesDatas: typing.Dict[str, EventSeriesData] = {}
-
->>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
     def __init__(
         self,
         name: str,

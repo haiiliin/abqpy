@@ -18,11 +18,7 @@ class MeshEdgeArray(typing.List[MeshEdge]):
             mdb.models[name].rootAssembly.instances[name].elementEdges
     """
 
-<<<<<<< HEAD
-    def __init__(self, edges: list[MeshEdge]):
-=======
-    def __init__(self, elemEdges: typing.List[MeshEdge]):
->>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
+    def __init__(self, edges: typing.List[MeshEdge]):
         """This method creates a MeshEdgeArray object.
 
         .. note:: 

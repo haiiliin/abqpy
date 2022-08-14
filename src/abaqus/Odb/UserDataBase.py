@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-from abaqusConstants import NONE
-=======
 import typing
->>>>>>> c28f7bd (Import typing)
+
+from abaqusConstants import *
 
 from ..Annotation.Annotation import Annotation
 from ..XY.QuantityType import QuantityType
