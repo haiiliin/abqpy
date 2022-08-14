@@ -1,7 +1,7 @@
 # .github/release-drafter.yml
 
-name-template: 'V$NEXT_PATCH_VERSION 🌈'
-tag-template: 'v$NEXT_PATCH_VERSION'
+name-template: 'V$NEXT_MINOR_VERSION 🌈'
+tag-template: 'v$NEXT_MINOR_VERSION'
 filter-by-commitish: true
 commitish: V2018
 categories:
@@ -35,22 +35,22 @@ categories:
       - 'misc'
       - 'patch'
       - '*'
-version-template: '$MAJORa$PATCH'
+version-template: '${MAJOR}a${MINOR}'
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 version-resolver:
   major:
     labels:
       - 'major'
-  patch:
+  minor:
     labels:
       - 'minor'
       - 'patch'
-  default: patch
+  default: minor
 template: |
   ## Changes (Remember to update the version in docs/source/conf.py, setup.py, and delete this before publishing the release!)
 
   $CHANGES
 
-  **Full Changelog**: https://github.com/haiiliin/abqpy/compare/$PREVIOUS_TAG...v$NEXT_PATCH_VERSION
+  **Full Changelog**: https://github.com/haiiliin/abqpy/compare/$PREVIOUS_TAG...v$NEXT_MINOR_VERSION
 
