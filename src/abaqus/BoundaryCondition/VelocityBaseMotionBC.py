@@ -1,6 +1,6 @@
 from abaqusConstants import *
 from .BoundaryCondition import BoundaryCondition
-from ..Amplitude.CorrelationArray import CorrelationArray
+from ..Amplitude.Correlation import Correlation
 from ..Region.Region import Region
 
 
@@ -32,8 +32,8 @@ class VelocityBaseMotionBC(BoundaryCondition):
     #: value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
     centerOfRotation: tuple = ()
 
-    #: A :py:class:`~abaqus.Amplitude.CorrelationArray.CorrelationArray` object.
-    correlation: CorrelationArray = CorrelationArray()
+    #: A :py:class:`~abaqus.Amplitude.Correlation.Correlation` object.
+    correlation: Correlation = Correlation()
 
     #: A String specifying the name of the SecondaryBaseBC object associated with this boundary
     #: condition. The default value is an empty string.
@@ -58,7 +58,7 @@ class VelocityBaseMotionBC(BoundaryCondition):
         dof: SymbolicConstant,
         amplitudeScaleFactor: float = 1,
         centerOfRotation: tuple = (),
-        correlation: CorrelationArray = None,
+        correlation: Correlation = None,
         secondaryBase: str = "",
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,
@@ -87,7 +87,7 @@ class VelocityBaseMotionBC(BoundaryCondition):
             A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying a tuple containing one center of rotation. The default
             value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
         correlation
-            A :py:class:`~abaqus.Amplitude.CorrelationArray.CorrelationArray` object.
+            A :py:class:`~abaqus.Amplitude.Correlation.Correlation` object.
         secondaryBase
             A String specifying the name of the SecondaryBaseBC object associated with this boundary
             condition. The default value is an empty string.
@@ -111,7 +111,7 @@ class VelocityBaseMotionBC(BoundaryCondition):
         self,
         amplitudeScaleFactor: float = 1,
         centerOfRotation: tuple = (),
-        correlation: CorrelationArray = None,
+        correlation: Correlation = None,
         secondaryBase: str = "",
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,
@@ -127,7 +127,7 @@ class VelocityBaseMotionBC(BoundaryCondition):
             A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying a tuple containing one center of rotation. The default
             value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
         correlation
-            A :py:class:`~abaqus.Amplitude.CorrelationArray.CorrelationArray` object.
+            A :py:class:`~abaqus.Amplitude.Correlation.Correlation` object.
         secondaryBase
             A String specifying the name of the SecondaryBaseBC object associated with this boundary
             condition. The default value is an empty string.
