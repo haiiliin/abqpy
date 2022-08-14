@@ -21,8 +21,8 @@ class MdbData:
 
     #: A repository of MdbDataStep objects specifying the list of steps. The repository is
     #: read-only.
-    steps: dict[str, MdbDataStep] = dict[str, MdbDataStep]()
+    steps: typing.Dict[str, MdbDataStep] = {}
 
     #: A repository of MdbDataInstance objects specifying the list of instances. The repository
     #: is read-only.
-    instances: dict[str, MdbDataInstance] = dict[str, MdbDataInstance]()
+    instances: typing.Dict[str, MdbDataInstance] = {}

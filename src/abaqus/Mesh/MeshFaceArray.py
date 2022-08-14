@@ -1,7 +1,7 @@
 from .MeshFace import MeshFace
 
 
-class MeshFaceArray(list[MeshFace]):
+class MeshFaceArray(typing.List[MeshFace]):
     """The MeshFaceArray is a sequence of MeshFace objects.
 
     .. note:: 
@@ -16,7 +16,11 @@ class MeshFaceArray(list[MeshFace]):
             mdb.models[name].rootAssembly.instances[name].elementFaces
     """
 
+<<<<<<< HEAD
     def __init__(self, faces: list[MeshFace]):
+=======
+    def __init__(self, elemFaces: typing.List[MeshFace]):
+>>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
         """This method creates a MeshFaceArray object.
 
         .. note:: 

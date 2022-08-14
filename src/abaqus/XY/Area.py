@@ -89,12 +89,12 @@ class Area:
 
     #: A pair of Floats specifying the X- and Y-offsets in millimeters from the lower-left
     #: corner of the XYPlot.
-    origin: tuple[float, ...] = ()
+    origin: typing.Tuple[float, ...] = ()
 
     #: A pair of Floats specifying the X- and Y-offsets of the origin as a fraction of the
     #: available area. The **originOffset** argument is ignored unless **positionMethod** = MANUAL.
     #: The default value is (-1, 0). The valid range for each float is (0, 1).
-    originOffset: tuple[float, ...] = ()
+    originOffset: typing.Tuple[float, ...] = ()
 
     def setValues(
         self,
@@ -104,7 +104,7 @@ class Area:
         positionMethod: SymbolicConstant = AUTO_ALIGN,
         alignment: SymbolicConstant = BOTTOM_LEFT,
         sizeMethod: SymbolicConstant = AUTOMATIC,
-        originOffset: tuple[float, ...] = (),
+        originOffset: typing.Tuple[float, ...] = (),
         widthScale: float = 1,
         heightScale: float = 1,
         inset: Boolean = OFF,

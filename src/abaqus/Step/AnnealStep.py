@@ -92,12 +92,12 @@ class AnnealStep(AnalysisStep):
     suppressed: Boolean = OFF
 
     #: A repository of FieldOutputRequestState objects.
-    fieldOutputRequestState: dict[str, FieldOutputRequestState] = dict[
+    fieldOutputRequestState: typing.Dict[str, FieldOutputRequestState] = typing.Dict[
         str, FieldOutputRequestState
     ]()
 
     #: A repository of HistoryOutputRequestState objects.
-    historyOutputRequestState: dict[str, HistoryOutputRequestState] = dict[
+    historyOutputRequestState: typing.Dict[str, HistoryOutputRequestState] = typing.Dict[
         str, HistoryOutputRequestState
     ]()
 
@@ -111,12 +111,12 @@ class AnnealStep(AnalysisStep):
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
-    adaptiveMeshConstraintStates: dict[str, AdaptiveMeshConstraintState] = dict[
+    adaptiveMeshConstraintStates: typing.Dict[str, AdaptiveMeshConstraintState] = typing.Dict[
         str, AdaptiveMeshConstraintState
     ]()
 
     #: A repository of AdaptiveMeshDomain objects.
-    adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = dict[str, AdaptiveMeshDomain]()
+    adaptiveMeshDomains: typing.Dict[str, AdaptiveMeshDomain] = {}
 
     #: A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
     control: Control = Control()
@@ -125,7 +125,7 @@ class AnnealStep(AnalysisStep):
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
-    boundaryConditionStates: dict[str, BoundaryConditionState] = dict[
+    boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = typing.Dict[
         str, BoundaryConditionState
     ]()
 
@@ -133,13 +133,13 @@ class AnnealStep(AnalysisStep):
     interactionStates: int = None
 
     #: A repository of LoadState objects.
-    loadStates: dict[str, LoadState] = dict[str, LoadState]()
+    loadStates: typing.Dict[str, LoadState] = {}
 
     #: A repository of LoadCase objects.
-    loadCases: dict[str, LoadCase] = dict[str, LoadCase]()
+    loadCases: typing.Dict[str, LoadCase] = {}
 
     #: A repository of PredefinedFieldState objects.
-    predefinedFieldStates: dict[str, PredefinedFieldState] = dict[
+    predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = typing.Dict[
         str, PredefinedFieldState
     ]()
 

@@ -1,4 +1,4 @@
 from .OptimizationObjective import OptimizationObjective
 
 
-OptimizationObjectiveArray = list[OptimizationObjective]
+OptimizationObjectiveArray = typing.List[OptimizationObjective]

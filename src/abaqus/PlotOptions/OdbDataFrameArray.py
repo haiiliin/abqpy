@@ -1,4 +1,4 @@
 from .OdbDataFrame import OdbDataFrame
 
 
-OdbDataFrameArray = list[OdbDataFrame]
+OdbDataFrameArray = typing.List[OdbDataFrame]

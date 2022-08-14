@@ -357,7 +357,7 @@ class MaterialBase:
 
         Returns
         -------
-        list[Material]
+        typing.List[Material]
             A list of :py:class:`~abaqus.Material.Material.Material` objects.
         """
         ...

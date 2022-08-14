@@ -35,12 +35,12 @@ class ConstrainedSketchBase:
     """
 
     #: A repository of ConstrainedSketchConstraint objects.
-    constraints: dict[str, ConstrainedSketchConstraint] = dict[
+    constraints: typing.Dict[str, ConstrainedSketchConstraint] = typing.Dict[
         str, ConstrainedSketchConstraint
     ]()
 
     #: A repository of ConstrainedSketchDimension objects.
-    dimensions: dict[str, ConstrainedSketchDimension] = dict[
+    dimensions: typing.Dict[str, ConstrainedSketchDimension] = typing.Dict[
         str, ConstrainedSketchDimension
     ]()
 
@@ -50,7 +50,7 @@ class ConstrainedSketchBase:
 
     #: A repository of ConstrainedSketchParameter objects specifying sketch parameters, which
     #: may be associated with dimensions.
-    parameters: dict[str, ConstrainedSketchParameter] = dict[
+    parameters: typing.Dict[str, ConstrainedSketchParameter] = typing.Dict[
         str, ConstrainedSketchParameter
     ]()
 

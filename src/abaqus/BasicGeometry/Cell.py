@@ -66,7 +66,7 @@ class Cell:
 
         Returns
         -------
-        tuple[int, ...]
+        typing.Tuple[int, ...]
             A tuple of integers.
 
         """
@@ -77,7 +77,7 @@ class Cell:
 
         Returns
         -------
-        tuple[int, ...]
+        typing.Tuple[int, ...]
             A tuple of integers.
 
         """
@@ -88,7 +88,7 @@ class Cell:
 
         Returns
         -------
-        tuple[int, ...]
+        typing.Tuple[int, ...]
             A tuple of integers.
 
         """
@@ -126,3 +126,18 @@ class Cell:
 
         """
         ...
+<<<<<<< HEAD
+=======
+
+    def getCADAttributes(self):
+        """This method returns an array of CAD attribute strings associated with the cell when the
+        part was created from CAD data.
+
+        Returns
+        -------
+        typing.List[str]
+            An array of String.
+
+        """
+        ...
+>>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
