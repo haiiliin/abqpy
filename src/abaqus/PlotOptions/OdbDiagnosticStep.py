@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .OdbContactDiagnostics import OdbContactDiagnostics
 from .OdbDiagnosticIncrement import OdbDiagnosticIncrement
@@ -23,9 +25,7 @@ class OdbDiagnosticStep:
     characteristicElementLength: str = ""
 
     #: A repository of OdbContactDiagnostics objects.
-    contactDiagnostics: dict[str, OdbContactDiagnostics] = dict[
-        str, OdbContactDiagnostics
-    ]()
+    contactDiagnostics: typing.Dict[str, OdbContactDiagnostics] = {}
 
     #: A sequence of string specifying the explicit increment status. This attribute is
     #: read-only.
@@ -43,7 +43,7 @@ class OdbDiagnosticStep:
     incrementsCompleted: str = ""
 
     #: A repository of OdbDiagnosticIncrement objects.
-    increments: dict[str, OdbDiagnosticIncrement] = dict[str, OdbDiagnosticIncrement]()
+    increments: typing.Dict[str, OdbDiagnosticIncrement] = {}
 
     #: A float specifying the initial increment size for the step. This attribute is read-only.
     initialTimeIncrement: str = ""

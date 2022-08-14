@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 
 
@@ -431,8 +433,8 @@ class View:
 
     def zoomRectangle(
         self,
-        point1: tuple[float, ...],
-        point2: tuple[float, ...],
+        point1: typing.Tuple[float, ...],
+        point2: typing.Tuple[float, ...],
         drawImmediately: Boolean = False,
     ):
         """This method fills the viewport with the graphics located within the given rectangle.

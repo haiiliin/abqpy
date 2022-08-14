@@ -1,6 +1,6 @@
-from abaqusConstants import *
-
 import typing
+
+from abaqusConstants import *
 
 
 class CaeKerPrefs:

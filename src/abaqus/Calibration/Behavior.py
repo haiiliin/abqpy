@@ -196,7 +196,7 @@ class Behavior:
 
         Returns
         -------
-        tuple[float, ...]
+        typing.Tuple[float, ...]
             A tuple consisting of a and b values of the regression line(y = ax + b), coefficient of
             determination(r-squared) value and the start and end-points of the line.
         """
@@ -213,7 +213,7 @@ class Behavior:
 
         Returns
         -------
-        tuple[float, ...]
+        typing.Tuple[float, ...]
             A tuple consisting of a and b values of the regression line(y = ax + b), coefficient of
             determination(r-squared) value and the start and end-points of the line.
         """
@@ -276,7 +276,7 @@ class Behavior:
 
         Returns
         -------
-        tuple[tuple[float, ...]]
+        typing.Tuple[typing.Tuple[float, ...]]
             A sequence of coordinates of the Plastic points..
         """
         ...
@@ -301,7 +301,7 @@ class Behavior:
 
         Returns
         -------
-        tuple[str, ...]
+        typing.Tuple[str, ...]
             A sequence of strings specifying names of the DataSet objects containing loading,
             unloading, reloading and primary datasets.
         """

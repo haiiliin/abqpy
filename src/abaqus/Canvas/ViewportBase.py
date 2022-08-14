@@ -36,7 +36,7 @@ class ViewportBase(_OptionsBase):
 
     #: A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters in the canvas
     #: coordinate system of the lower left corner of the viewport. The default origin is (0, 0).
-    origin: tuple[float, ...] = (0.0, 0.0)
+    origin: typing.Tuple[float, ...] = (0.0, 0.0)
 
     #: A Float specifying the width in millimeters of the viewport. Possible values are 30 ≤
     #: **width** ≤ (*maxWidth*). The default value is 120. Note: The maximum value of width
@@ -209,7 +209,7 @@ class ViewportBase(_OptionsBase):
     #: - "initialColor"
     #: - "Layup"
     #: - "Ply"
-    colorMappings: dict[str, AttributeColorMap] = dict[str, AttributeColorMap]()
+    colorMappings: typing.Dict[str, AttributeColorMap] = {}
 
     #: A String specifying the color that will be applied to all objects in the viewport at the
     #: start of color coding. The possible values are 'As is', 'Default' or a string with a
@@ -229,7 +229,7 @@ class ViewportBase(_OptionsBase):
 
     #: A repository of Layer objects specifying the key to the repository is a String with the
     #: name of the layer.
-    layers: dict[str, Layer] = dict[str, Layer]()
+    layers: typing.Dict[str, Layer] = {}
 
     #: A :py:class:`~abaqus.UtilityAndView.View.View` object specifying the object that controls viewing of the
     #: viewport content.
@@ -253,7 +253,7 @@ class ViewportBase(_OptionsBase):
     detailPlotOptions: DetailPlotOptions = DetailPlotOptions()
 
     #: An :py:class:`~abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray` object.
-    annotationsToPlot: AnnotationsToPlotArray = AnnotationsToPlotArray()
+    annotationsToPlot: AnnotationsToPlotArray = []
 
     #: A tuple of Strings specifying the names of layers that will be displayed in the viewport
     #: when **displayMode** = OVERLAY.
@@ -262,13 +262,13 @@ class ViewportBase(_OptionsBase):
     #: A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters in the canvas
     #: coordinate system of the lower left corner of the current viewport, regardless of the
     #: value of **windowState**.
-    currentOrigin: tuple[float, ...] = ()
+    currentOrigin: typing.Tuple[float, ...] = ()
 
     #: A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters of the lower
     #: left corner of the current viewport from a coordinate system having its origin in the
     #: lower left corner of the drawing area. This origin refers to the viewport location when
     #: **windowState** =MINIMIZED.
-    iconOrigin: tuple[float, ...] = ()
+    iconOrigin: typing.Tuple[float, ...] = ()
 
     #: A :py:class:`~abaqus.DisplayOptions.LightOptions.LightOptions` object.
     lightOptions: LightOptions = LightOptions()
@@ -289,7 +289,7 @@ class ViewportBase(_OptionsBase):
     def __init__(
         self,
         name: str,
-        origin: tuple[float, ...] = (0.0, 0.0),
+        origin: typing.Tuple[float, ...] = (0.0, 0.0),
         width: float = 120.0,
         height: float = 80.0,
         border: Boolean = ON,

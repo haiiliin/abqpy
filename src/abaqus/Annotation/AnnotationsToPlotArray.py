@@ -1,7 +1,9 @@
+import typing
+
 from .Annotation import Annotation
 
 
-class AnnotationsToPlotArray(list[Annotation]):
+class AnnotationsToPlotArray(typing.List[Annotation]):
     """The AnnotationsToPlotArray object is a sequence that stores references to plotted
     annotations. By adding annotations to and removing annotations from this sequence, you
     can control which annotations are displayed in a particular viewport.

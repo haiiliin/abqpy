@@ -1,7 +1,9 @@
+import typing
+
 from .MeshEdge import MeshEdge
 
 
-class MeshEdgeArray(list[MeshEdge]):
+class MeshEdgeArray(typing.List[MeshEdge]):
     """The MeshEdgeArray is a sequence of MeshEdge objects.
 
     .. note:: 
@@ -16,7 +18,7 @@ class MeshEdgeArray(list[MeshEdge]):
             mdb.models[name].rootAssembly.instances[name].elementEdges
     """
 
-    def __init__(self, elemEdges: list[MeshEdge]):
+    def __init__(self, elemEdges: typing.List[MeshEdge]):
         """This method creates a MeshEdgeArray object.
 
         .. note:: 

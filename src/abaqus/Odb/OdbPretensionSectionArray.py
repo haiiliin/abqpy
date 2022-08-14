@@ -1,4 +1,5 @@
+import typing
+
 from .OdbPretensionSection import OdbPretensionSection
 
-
-OdbPretensionSectionArray = list[OdbPretensionSection]
+OdbPretensionSectionArray = typing.List[OdbPretensionSection]

@@ -1,3 +1,5 @@
+import typing
+
 from .OdbAuxiliaryData import OdbAuxiliaryData
 
 
@@ -14,7 +16,7 @@ class OdbContactDiagnostics:
     """
 
     #: A repository of OdbAuxiliaryData objects. This attribute is read-only.
-    data: dict[str, OdbAuxiliaryData] = dict[str, OdbAuxiliaryData]()
+    data: typing.Dict[str, OdbAuxiliaryData] = {}
 
     #: A string specifying the opening/overclosure status of the contact. This attribute is
     #: read-only.

@@ -346,7 +346,7 @@ class XYData(tuple):
         self,
         odb: Odb,
         outputPosition: SymbolicConstant,
-        variable: tuple[tuple],
+        variable: typing.Tuple[tuple, ...],
         elementSets: tuple = (),
         elementLabels: tuple = (),
         nodeSets: tuple = (),
@@ -354,7 +354,7 @@ class XYData(tuple):
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
         operator: SymbolicConstant = None,
-    ) -> list["XYData"]:
+    ) -> typing.List["XYData"]:
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
         .. note:: 
@@ -431,7 +431,7 @@ class XYData(tuple):
 
         Returns
         -------
-        list[XYData]
+        typing.List[XYData]
             A list of XYData objects.
 
         Raises
@@ -489,7 +489,7 @@ class XYData(tuple):
 
         Returns
         -------
-        list[XYData]
+        typing.List[XYData]
             A list of XYData objects.
 
         Raises
@@ -579,7 +579,7 @@ class XYData(tuple):
 
         Returns
         -------
-        list[XYData]
+        typing.List[XYData]
             A list of XYData objects.
 
         Raises
