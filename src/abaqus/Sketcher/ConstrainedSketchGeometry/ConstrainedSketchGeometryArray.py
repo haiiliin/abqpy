@@ -3,7 +3,7 @@ import typing
 from  .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 
 
-class ConstrainedSketchGeometryArray(list[ConstrainedSketchGeometry]):
+class ConstrainedSketchGeometryArray(typing.List[ConstrainedSketchGeometry]):
     """The ConstrainedSketchGeometryArray is a sequence of ConstrainedSketchGeometry objects.
 
     .. note:: 
@@ -15,7 +15,7 @@ class ConstrainedSketchGeometryArray(list[ConstrainedSketchGeometry]):
             mdb.models[name].sketches[name].geometry[i]
     """
 
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[ConstrainedSketchGeometry, typing.List[ConstrainedSketchGeometry]]:
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[ConstrainedSketchGeometry, typing.typing.List[ConstrainedSketchGeometry]]:
         """This method returns the ConstrainedSketchGeometry object located at the given
         coordinates.
 

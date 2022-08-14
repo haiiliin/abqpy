@@ -37,7 +37,7 @@ class RepositorySupport(CommandRegister):
         """
         super().__init__()
 
-    def Repository(self, name: str, constructors: typing.Union[typing.Callable, typing.List[typing.Callable]]) -> None:
+    def Repository(self, name: str, constructors: typing.Union[typing.Callable, typing.typing.List[typing.Callable]]) -> None:
         """This method installs a repository on the class. The repository is an instance of a
         RegisteredDictionary class. Refer to RegisteredDictionary for details on its methods.
         The objects stored in the repository are assumed to have an attribute called **name** that

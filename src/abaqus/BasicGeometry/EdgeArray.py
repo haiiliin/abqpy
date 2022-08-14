@@ -3,7 +3,7 @@ from abaqusConstants import *
 from .Edge import Edge
 
 
-class EdgeArray(list[Edge]):
+class EdgeArray(typing.List[Edge]):
     """The EdgeArray is a sequence of Edge objects. If the part is modified, then EdgeArray
     must be updated for that part.
 
@@ -39,7 +39,7 @@ class EdgeArray(list[Edge]):
             mdb.models[name].rootAssembly.surfaces[name].edges
     """
 
-    def __init__(self, edges: list[Edge]):
+    def __init__(self, edges: typing.List[Edge]):
         """This method creates an EdgeArray object.
 
         .. note:: 
@@ -62,7 +62,7 @@ class EdgeArray(list[Edge]):
         """
         ...
 
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[Edge, typing.List[Edge]]:
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[Edge, typing.typing.List[Edge]]:
         """This method returns the object or objects in the EdgeArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any edge
@@ -246,7 +246,7 @@ class EdgeArray(list[Edge]):
 
         Returns
         -------
-        dict[str, tuple[float, float, float]]
+        typing.Dict[str, typing.Tuple[float, float, float]]
             A Dictionary object with the following items:
             
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z** -boundary

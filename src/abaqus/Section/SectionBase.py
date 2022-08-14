@@ -53,7 +53,7 @@ class SectionBase:
 
         Returns
         -------
-        list[Section]
+        typing.List[Section]
             A list of :py:class:`~abaqus.Section.Section.Section` objects.
         """
         ...

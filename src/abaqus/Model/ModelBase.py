@@ -116,42 +116,42 @@ class ModelBase:
     rootAssembly: Assembly = Assembly()
 
     #: A repository of Amplitude objects.
-    amplitudes: dict[str, Amplitude] = dict[str, Amplitude]()
+    amplitudes: typing.Dict[str, Amplitude] = {}
 
     #: A repository of Profile objects.
-    profiles: dict[str, Profile] = dict[str, Profile]()
+    profiles: typing.Dict[str, Profile] = {}
 
     #: A repository of BoundaryCondition objects.
-    boundaryConditions: dict[str, BoundaryCondition] = dict[str, BoundaryCondition]()
+    boundaryConditions: typing.Dict[str, BoundaryCondition] = {}
 
     #: A repository of ConstrainedSketchConstraint objects.
-    constraints: dict[str, Constraint] = dict[str, Constraint]()
+    constraints: typing.Dict[str, Constraint] = {}
 
     #: A repository of AnalyticalField objects.
-    analyticalFields: dict[str, AnalyticalField] = dict[str, AnalyticalField]()
+    analyticalFields: typing.Dict[str, AnalyticalField] = {}
 
     #: A repository of DiscreteField objects.
-    discreteFields: dict[str, DiscreteField] = dict[str, DiscreteField]()
+    discreteFields: typing.Dict[str, DiscreteField] = {}
 
     #: A repository of PredefinedField objects.
-    predefinedFields: dict[str, PredefinedField] = dict[str, PredefinedField]()
+    predefinedFields: typing.Dict[str, PredefinedField] = {}
 
     #: A repository of Interaction objects.
-    interactions: dict[str, Interaction] = dict[str, Interaction]()
+    interactions: typing.Dict[str, Interaction] = {}
 
     #: A repository of InteractionProperty objects.
-    interactionProperties: dict[str, ContactProperty] = dict[str, ContactProperty]()
+    interactionProperties: typing.Dict[str, ContactProperty] = {}
 
     #: A repository of ContactControl objects.
-    contactControls: dict[str, ContactControl] = dict[str, ContactControl]()
+    contactControls: typing.Dict[str, ContactControl] = {}
 
     #: A repository of ContactInitialization objects.
-    contactInitializations: dict[str, ContactInitialization] = dict[
+    contactInitializations: typing.Dict[str, ContactInitialization] = typing.Dict[
         str, ContactInitialization
     ]()
 
     #: A repository of ContactStabilization objects.
-    contactStabilizations: dict[str, ContactStabilization] = dict[
+    contactStabilizations: typing.Dict[str, ContactStabilization] = typing.Dict[
         str, ContactStabilization
     ]()
 
@@ -164,64 +164,76 @@ class ModelBase:
     linkedParts: tuple = ()
 
     #: A repository of Load objects.
-    loads: dict[str, Load] = dict[str, Load]()
+    loads: typing.Dict[str, Load] = {}
 
     #: A repository of Material objects.
-    materials: dict[str, Material] = dict[str, Material]()
+    materials: typing.Dict[str, Material] = {}
 
     #: A repository of Calibration objects.
-    calibrations: dict[str, Calibration] = dict[str, Calibration]()
+    calibrations: typing.Dict[str, Calibration] = {}
 
     #: A repository of Section objects.
-    sections: dict[str, Section] = dict[str, Section]()
+    sections: typing.Dict[str, Section] = {}
 
     #: A repository of RemeshingRule objects.
-    remeshingRules: dict[str, RemeshingRule] = dict[str, RemeshingRule]()
+    remeshingRules: typing.Dict[str, RemeshingRule] = {}
 
     #: A repository of ConstrainedSketch objects.
-    sketches: dict[str, ConstrainedSketch] = dict[str, ConstrainedSketch]()
+    sketches: typing.Dict[str, ConstrainedSketch] = {}
 
     #: A repository of Part objects.
-    parts: dict[str, Part] = dict[str, Part]()
+    parts: typing.Dict[str, Part] = {}
 
     #: A repository of Step objects.
-    steps: dict[str, Step] = dict[str, Step]()
+    steps: typing.Dict[str, Step] = {}
 
     #: A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object.
     featureOptions: FeatureOptions = FeatureOptions()
 
     #: A repository of AdaptiveMeshConstraint objects.
-    adaptiveMeshConstraints: dict[str, AdaptiveMeshConstraint] = dict[
+    adaptiveMeshConstraints: typing.Dict[str, AdaptiveMeshConstraint] = typing.Dict[
         str, AdaptiveMeshConstraint
     ]()
 
     #: A repository of AdaptiveMeshControl objects.
-    adaptiveMeshControls: dict[str, AdaptiveMeshControl] = dict[
+    adaptiveMeshControls: typing.Dict[str, AdaptiveMeshControl] = typing.Dict[
         str, AdaptiveMeshControl
     ]()
 
     #: A repository of TimePoint objects.
-    timePoints: dict[str, TimePoint] = dict[str, TimePoint]()
+    timePoints: typing.Dict[str, TimePoint] = {}
 
     #: A repository of Filter objects.
-    filters: dict[str, Filter] = dict[str, Filter]()
+    filters: typing.Dict[str, Filter] = {}
 
     #: A repository of IntegratedOutputSection objects.
-    integratedOutputSections: dict[str, IntegratedOutputSection] = dict[
+    integratedOutputSections: typing.Dict[str, IntegratedOutputSection] = typing.Dict[
         str, IntegratedOutputSection
     ]()
 
     #: A repository of FieldOutputRequest objects.
-    fieldOutputRequests: dict[str, FieldOutputRequest] = dict[str, FieldOutputRequest]()
+    fieldOutputRequests: typing.Dict[str, FieldOutputRequest] = {}
 
     #: A repository of HistoryOutputRequest objects.
-    historyOutputRequests: dict[str, HistoryOutputRequest] = dict[
+    historyOutputRequests: typing.Dict[str, HistoryOutputRequest] = typing.Dict[
         str, HistoryOutputRequest
     ]()
 
     #: A repository of OptimizationTask objects.
-    optimizationTasks: dict[str, OptimizationTask] = dict[str, OptimizationTask]()
+    optimizationTasks: typing.Dict[str, OptimizationTask] = {}
 
+<<<<<<< HEAD
+=======
+    #: A repository of TableCollection objects.
+    tableCollections: typing.Dict[str, TableCollection] = {}
+
+    #: A repository of EventSeriesType objects.
+    eventSeriesTypes: typing.Dict[str, EventSeriesType] = {}
+
+    #: A repository of EventSeriesData objects.
+    eventSeriesDatas: typing.Dict[str, EventSeriesData] = {}
+
+>>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
     def __init__(
         self,
         name: str,

@@ -105,7 +105,14 @@ class ContactStd(Interaction):
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None,
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
+<<<<<<< HEAD
         masterSlaveAssignments: MasterSlaveAssignment = None,
+=======
+        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
+        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
+        slidingFormulationAssignments: typing.Tuple[SlidingFormulationAssignment, ...] = None,
+        mainSecondaryAssignments: MainSecondaryAssignment = None, 
+>>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
         initializationAssignments: InitializationAssignment = None, 
         stabilizationAssignments: StabilizationAssignment = None, 
         smoothingAssignments: SmoothingAssignment = None, 
@@ -177,6 +184,12 @@ class ContactStd(Interaction):
         name: str,
         createStepName: str,
         globalSmoothing: Boolean = ON,
+<<<<<<< HEAD
+=======
+        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
+        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
+        slidingFormulationAssignments: typing.Tuple[SlidingFormulationAssignment, ...] = None,
+>>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
         useAllstar: Boolean = OFF,
         includedPairs: SymbolicConstant = None,
         excludedPairs: SymbolicConstant = None,

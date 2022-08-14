@@ -1,4 +1,4 @@
 from .XYCurve import XYCurve
 
 
-XYCurveArray = list[XYCurve]
+XYCurveArray = typing.List[XYCurve]

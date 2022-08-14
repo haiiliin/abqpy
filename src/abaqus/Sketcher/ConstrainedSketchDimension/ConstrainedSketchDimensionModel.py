@@ -25,7 +25,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         line1: ConstrainedSketchGeometry,
         line2: ConstrainedSketchGeometry,
-        textPoint: tuple[float, ...],
+        textPoint: typing.Tuple[float, ...],
         value: float = None,
         reference: Boolean = OFF,
     ):
@@ -64,7 +64,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
-        textPoint: tuple[float, ...],
+        textPoint: typing.Tuple[float, ...],
         value: float = None,
         reference: Boolean = OFF,
     ):
@@ -104,7 +104,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
-        textPoint: tuple[float, ...],
+        textPoint: typing.Tuple[float, ...],
         value: float = None,
         reference: Boolean = OFF,
     ):
@@ -142,7 +142,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
     def RadialDimension(
         self,
         curve: ConstrainedSketchGeometry,
-        textPoint: tuple[float, ...],
+        textPoint: typing.Tuple[float, ...],
         value: float = None,
         reference: Boolean = OFF,
         majorRadius: float = None,
@@ -188,7 +188,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
-        textPoint: tuple[float, ...],
+        textPoint: typing.Tuple[float, ...],
         value: float = None,
         reference: Boolean = OFF,
     ):
@@ -227,7 +227,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         entity1: ConstrainedSketchVertex,
         entity2: ConstrainedSketchVertex,
-        textPoint: tuple[float, ...],
+        textPoint: typing.Tuple[float, ...],
         value: float = None,
         reference: Boolean = OFF,
     ):

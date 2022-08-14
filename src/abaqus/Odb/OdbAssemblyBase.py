@@ -27,16 +27,16 @@ class OdbAssemblyBase:
     """
 
     #: A repository of OdbInstance objects.
-    instances: dict[str, OdbInstance] = dict[str, OdbInstance]()
+    instances: typing.Dict[str, OdbInstance] = {}
 
     #: A repository of OdbSet objects specifying node sets.
-    nodeSets: dict[str, OdbSet] = dict[str, OdbSet]()
+    nodeSets: typing.Dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying element sets.
-    elementSets: dict[str, OdbSet] = dict[str, OdbSet]()
+    elementSets: typing.Dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying surfaces.
-    surfaces: dict[str, OdbSet] = dict[str, OdbSet]()
+    surfaces: typing.Dict[str, OdbSet] = {}
 
     #: An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
     nodes: OdbMeshNodeArray = OdbMeshNodeArray()
@@ -45,7 +45,7 @@ class OdbAssemblyBase:
     elements: OdbMeshElementArray = OdbMeshElementArray()
 
     #: A repository of OdbDatumCsys objects.
-    datumCsyses: dict[str, OdbDatumCsys] = dict[str, OdbDatumCsys]()
+    datumCsyses: typing.Dict[str, OdbDatumCsys] = {}
 
     #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
     sectionAssignments: SectionAssignmentArray = SectionAssignmentArray()

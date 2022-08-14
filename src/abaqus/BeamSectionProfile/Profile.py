@@ -36,7 +36,7 @@ class Profile:
 
         Returns
         -------
-        list[Profile]
+        typing.List[Profile]
             A list of Profile objects.
 
         """

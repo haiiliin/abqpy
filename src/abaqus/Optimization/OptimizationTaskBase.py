@@ -29,20 +29,20 @@ class OptimizationTaskBase:
     region: SymbolicConstant = MODEL
 
     #: A repository of DesignResponse objects.
-    designResponses: dict[str, DesignResponse] = dict[str, DesignResponse]()
+    designResponses: typing.Dict[str, DesignResponse] = {}
 
     #: A repository of ObjectiveFunction objects.
-    objectiveFunctions: dict[str, ObjectiveFunction] = dict[str, ObjectiveFunction]()
+    objectiveFunctions: typing.Dict[str, ObjectiveFunction] = {}
 
     #: A repository of OptimizationConstraint objects.
-    optimizationConstraints: dict[str, OptimizationConstraint] = dict[
+    optimizationConstraints: typing.Dict[str, OptimizationConstraint] = typing.Dict[
         str, OptimizationConstraint
     ]()
 
     #: A repository of GeometricRestriction objects.
-    geometricRestrictions: dict[str, GeometricRestriction] = dict[
+    geometricRestrictions: typing.Dict[str, GeometricRestriction] = typing.Dict[
         str, GeometricRestriction
     ]()
 
     #: A repository of StopCondition objects.
-    stopConditions: dict[str, StopCondition] = dict[str, StopCondition]()
+    stopConditions: typing.Dict[str, StopCondition] = {}

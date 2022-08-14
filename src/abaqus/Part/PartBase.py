@@ -84,17 +84,17 @@ class PartBase(Feature):
     cells: CellArray = CellArray([])
 
     #: A repository of Feature objects specifying all the features in the part.
-    features: dict[str, Feature] = dict[str, Feature]()
+    features: typing.Dict[str, Feature] = {}
 
     #: A repository of Feature objects specifying all Feature objects in the part. The Feature
     #: objects in the featuresById repository are the same as the Feature objects in the
     #: features' repository. However, the key to the objects in the featuresById repository is
     #: an integer specifying the **ID**, whereas the key to the objects in the features
     #: repository is a string specifying the **name**.
-    featuresById: dict[str, Feature] = dict[str, Feature]()
+    featuresById: typing.Dict[str, Feature] = {}
 
     #: A repository of Datum objects specifying all the datums in the part.
-    datums: list[Datum] = list[Datum]()
+    datums: typing.List[Datum] = []
 
     #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying all the elements in the part.
     elements: MeshElementArray = MeshElementArray([])
@@ -103,7 +103,7 @@ class PartBase(Feature):
     #: given element and a given face index within that element, the corresponding MeshFace
     #: object can be retrieved from the repository by using the key calculated as (i*8 + j),
     #: where i and j are zero-based element and face indices, respectively.
-    elemFaces: dict[str, MeshFace] = dict[str, MeshFace]()
+    elemFaces: typing.Dict[str, MeshFace] = {}
 
     #: A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object specifying all the unique element faces in the part.
     elementFaces: MeshFaceArray = MeshFaceArray([])
@@ -115,30 +115,30 @@ class PartBase(Feature):
     retainedNodes: MeshNodeArray = MeshNodeArray([])
 
     #: A repository of Set objects specifying for more information, see Set.
-    sets: dict[str, Set] = dict[str, Set]()
+    sets: typing.Dict[str, Set] = {}
 
     #: A repository of Set objects specifying the contents of the **allSets** repository is the
     #: same as the contents of the **sets** repository.
-    allSets: dict[str, Set] = dict[str, Set]()
+    allSets: typing.Dict[str, Set] = {}
 
     #: A repository of Set objects specifying picked regions.
-    allInternalSets: dict[str, Set] = dict[str, Set]()
+    allInternalSets: typing.Dict[str, Set] = {}
 
     #: A repository of Surface objects specifying for more information, see Surface.
-    surfaces: dict[str, Surface] = dict[str, Surface]()
+    surfaces: typing.Dict[str, Surface] = {}
 
     #: A repository of Surface objects specifying the contents of the **allSurfaces** repository
     #: is the same as the contents of the **surfaces** repository.
-    allSurfaces: dict[str, Surface] = dict[str, Surface]()
+    allSurfaces: typing.Dict[str, Surface] = {}
 
     #: A repository of Surface objects specifying picked regions.
-    allInternalSurfaces: dict[str, Surface] = dict[str, Surface]()
+    allInternalSurfaces: typing.Dict[str, Surface] = {}
 
     #: A repository of Skin objects specifying the skins created on the part.
-    skins: dict[str, Skin] = dict[str, Skin]()
+    skins: typing.Dict[str, Skin] = {}
 
     #: A repository of Stringer objects specifying the stringers created on the part.
-    stringers: dict[str, Stringer] = dict[str, Stringer]()
+    stringers: typing.Dict[str, Stringer] = {}
 
     #: A repository of ReferencePoint objects.
     referencePoints: ReferencePoints = ReferencePoints()
@@ -153,14 +153,14 @@ class PartBase(Feature):
     materialOrientations: MaterialOrientationArray = MaterialOrientationArray()
 
     #: A repository of CompositeLayup objects.
-    compositeLayups: dict[str, CompositeLayup] = dict[str, CompositeLayup]()
+    compositeLayups: typing.Dict[str, CompositeLayup] = {}
 
     #: A repository of MeshEdge objects specifying all the element edges in the part. For a
     #: given element and a given edge index on a given face within that element, the
     #: corresponding MeshEdge object can be retrieved from the repository by using the key
     #: calculated as (i*32 + j*4 + k), where i, j, and k are zero-based element, face, and edge
     #: indices, respectively.
-    elemEdges: dict[str, MeshEdge] = dict[str, MeshEdge]()
+    elemEdges: typing.Dict[str, MeshEdge] = {}
 
     #: A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object specifying all the unique element edges in the part.
     elementEdges: MeshEdgeArray = MeshEdgeArray([])
@@ -258,7 +258,7 @@ class PartBase(Feature):
         ...
 
     def PartFromBooleanCut(
-        self, name: str, instanceToBeCut: str, cuttingInstances: tuple[PartInstance]
+        self, name: str, instanceToBeCut: str, cuttingInstances: typing.Tuple[PartInstance]
     ):
         """This method creates a Part in the parts repository after subtracting or cutting the
         geometries of a group of part instances from that of a base part instance.
@@ -290,7 +290,7 @@ class PartBase(Feature):
     def PartFromBooleanMerge(
         self,
         name: str,
-        instances: tuple[PartInstance],
+        instances: typing.Tuple[PartInstance],
         keepIntersections: Boolean = False,
         mergeNodes: SymbolicConstant = BOUNDARY_ONLY,
         nodeMergingTolerance: float = None,
@@ -472,7 +472,7 @@ class PartBase(Feature):
     def PartFromInstanceMesh(
         self,
         name: str,
-        partInstances: tuple[PartInstance] = (),
+        partInstances: typing.Tuple[PartInstance] = (),
         copyPartSets: Boolean = False,
         copyAssemblySets: Boolean = False,
     ):
@@ -876,10 +876,10 @@ class PartBase(Feature):
 
     def assignThickness(
         self,
-        faces: tuple[Face],
+        faces: typing.Tuple[Face],
         thickness: float = None,
-        topFaces: tuple[Face] = (),
-        bottomFaces: tuple[Face] = (),
+        topFaces: typing.Tuple[Face] = (),
+        bottomFaces: typing.Tuple[Face] = (),
     ):
         """This method assigns thickness data to shell faces. The thickness can be used while
         assigning shell and membrane sections to faces.
@@ -994,7 +994,7 @@ class PartBase(Feature):
         """
         ...
 
-    def getArea(self, faces: tuple[Face], relativeAccuracy: float = 0):
+    def getArea(self, faces: typing.Tuple[Face], relativeAccuracy: float = 0):
         """This method returns the total surface area of a given face or group of faces.
 
         Parameters
@@ -1040,7 +1040,7 @@ class PartBase(Feature):
         ...
 
     def getCentroid(
-        self, faces: tuple[Face], cells: tuple[Face], relativeAccuracy: float = 0
+        self, faces: typing.Tuple[Face], cells: typing.Tuple[Face], relativeAccuracy: float = 0
     ):
         """Location of the centroid of a given face/cell or group of faces/cells
         
@@ -1058,7 +1058,7 @@ class PartBase(Feature):
 
         Returns
         -------
-        centroid: tuple[float, ...]
+        centroid: typing.Tuple[float, ...]
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid.
             Depending on the arguments provided, this method returns the following:
         
@@ -1082,7 +1082,7 @@ class PartBase(Feature):
         """
         ...
 
-    def getCurvature(self, edges: tuple[Edge], samplePoints: int = 100):
+    def getCurvature(self, edges: typing.Tuple[Edge], samplePoints: int = 100):
         """This method returns the maximum curvature of a given edge or group of edges. For an arc,
         the curvature is constant over the entire edge, and equal to the inverse of the radius.
         For a straight line, the curvature is constant and equal to 0. For a spline edge, the
@@ -1127,7 +1127,7 @@ class PartBase(Feature):
         """
         ...
 
-    def getLength(self, edges: tuple[Edge]):
+    def getLength(self, edges: typing.Tuple[Edge]):
         """This method returns the length of a given edge or group of edges.
 
         Parameters
@@ -1142,7 +1142,7 @@ class PartBase(Feature):
         """
         ...
 
-    def getPerimeter(self, faces: tuple[Face]):
+    def getPerimeter(self, faces: typing.Tuple[Face]):
         """This method returns the total perimeter of a given face or group of faces. All faces
         need to be on the same part. If the specified faces have shared edges, these edges are
         excluded from the computation, thus providing the length of the outer perimeter of the
@@ -1160,7 +1160,7 @@ class PartBase(Feature):
         """
         ...
 
-    def getVolume(self, cells: tuple[Cell], relativeAccuracy: float = 0):
+    def getVolume(self, cells: typing.Tuple[Cell], relativeAccuracy: float = 0):
         """This method returns the volume area of a given cell or group of cells.
 
         Parameters
@@ -1306,7 +1306,7 @@ class PartBase(Feature):
 
         Returns
         -------
-        faces: tuple[Face]
+        faces: typing.Tuple[Face]
             Sequence of Face objects.
 
         Raises
@@ -1326,7 +1326,7 @@ class PartBase(Feature):
 
         Returns
         -------
-        edges: tuple[Edge]
+        edges: typing.Tuple[Edge]
             Sequence of Edge objects.
 
         Raises
@@ -1346,7 +1346,7 @@ class PartBase(Feature):
 
         Returns
         -------
-        cells: tuple[Cell]
+        cells: typing.Tuple[Cell]
             Sequence of Cell objects.
 
         Raises
@@ -1366,7 +1366,7 @@ class PartBase(Feature):
 
         Returns
         -------
-        vertices: tuple[ConstrainedSketchVertex]
+        vertices: typing.Tuple[ConstrainedSketchVertex]
             Sequence of ConstrainedSketchVertex objects.
 
         Raises
@@ -1697,11 +1697,11 @@ class PartBase(Feature):
 
     def copyMeshPattern(
         self,
-        elements: tuple[MeshElement],
-        faces: tuple[Face],
-        elemFaces: tuple[MeshFace],
+        elements: typing.Tuple[MeshElement],
+        faces: typing.Tuple[Face],
+        elemFaces: typing.Tuple[MeshFace],
         targetFace: MeshFace,
-        nodes: tuple[MeshNode],
+        nodes: typing.Tuple[MeshNode],
         coordinates: tuple,
     ):
         """This method copies a mesh pattern from a source region consisting of a set of shell
@@ -1732,7 +1732,7 @@ class PartBase(Feature):
         """
         ...
 
-    def smoothNodes(self, nodes: tuple[MeshNode]):
+    def smoothNodes(self, nodes: typing.Tuple[MeshNode]):
         """This method smooths the given nodes of a native mesh, moving them locally to a more
         optimal location that improves the quality of the mesh
 

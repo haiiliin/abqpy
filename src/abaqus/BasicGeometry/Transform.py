@@ -17,7 +17,7 @@ class Transform:
 
         Returns
         -------
-        tuple[float, float, float, float, float, float, float, float, float, float, float, float]
+        typing.Tuple[float, float, float, float, float, float, float, float, float, float, float, float]
             A tuple of 12 Floats.
 
         """
