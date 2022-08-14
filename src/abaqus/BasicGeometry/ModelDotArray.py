@@ -1,6 +1,4 @@
 from .ModelDot import ModelDot
 
 
-class ModelDotArray(list[ModelDot]):
-    def findAt(self):
-        ...
+ModelDotArray = list[ModelDot]
