@@ -1,6 +1,4 @@
 from .OdbPretensionSection import OdbPretensionSection
 
 
-class OdbPretensionSectionArray(list[OdbPretensionSection]):
-    def findAt(self):
-        ...
+OdbPretensionSectionArray = list[OdbPretensionSection]
