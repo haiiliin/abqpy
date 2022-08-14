@@ -1,6 +1,5 @@
+import typing
+
 from .ResponseSpectrumComponent import ResponseSpectrumComponent
 
-
-class ResponseSpectrumComponentArray(list[ResponseSpectrumComponent]):
-    def findAt(self):
-        ...
+ResponseSpectrumComponentArray = typing.List[ResponseSpectrumComponent]

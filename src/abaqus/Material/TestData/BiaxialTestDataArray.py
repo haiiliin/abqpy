@@ -1,6 +1,5 @@
+import typing
+
 from .BiaxialTestData import BiaxialTestData
 
-
-class BiaxialTestDataArray(list[BiaxialTestData]):
-    def findAt(self):
-        ...
+BiaxialTestDataArray = typing.List[BiaxialTestData]

@@ -1,6 +1,5 @@
+import typing
+
 from .OdbPretensionSection import OdbPretensionSection
 
-
-class OdbPretensionSectionArray(list[OdbPretensionSection]):
-    def findAt(self):
-        ...
+OdbPretensionSectionArray = typing.List[OdbPretensionSection]

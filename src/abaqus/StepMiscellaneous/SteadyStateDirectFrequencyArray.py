@@ -1,6 +1,5 @@
+import typing
+
 from .SteadyStateDirectFrequency import SteadyStateDirectFrequency
 
-
-class SteadyStateDirectFrequencyArray(list[SteadyStateDirectFrequency]):
-    def findAt(self):
-        ...
+SteadyStateDirectFrequencyArray = typing.List[SteadyStateDirectFrequency]

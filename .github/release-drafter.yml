@@ -2,6 +2,8 @@
 
 name-template: 'V$NEXT_MAJOR_VERSION 🌈'
 tag-template: 'v$NEXT_MAJOR_VERSION'
+filter-by-commitish: true
+commitish: main
 categories:
   - title: '🚨 Breaking changes'
     labels:
@@ -33,18 +35,18 @@ categories:
       - 'misc'
       - 'patch'
       - '*'
-version-template: '$MAJORa$PATCH'
+version-template: '$MAJOR.$MINOR'
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 version-resolver:
   major:
     labels:
       - 'major'
-  patch:
+  minor:
     labels:
       - 'minor'
       - 'patch'
-  default: patch
+  default: minor
 template: |
   ## Changes (Remember to update the version in docs/source/conf.py, setup.py, and delete this before publishing the release!)
 

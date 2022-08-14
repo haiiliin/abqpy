@@ -15,7 +15,7 @@ class OdbDataStep:
     """
 
     #: An :py:class:`~abaqus.PlotOptions.OdbDataFrameArray.OdbDataFrameArray` object specifying the list of frames. The list is read-only.
-    frames: OdbDataFrameArray = OdbDataFrameArray()
+    frames: OdbDataFrameArray = []
 
     def setValues(self, activateFrames: Boolean, update: Boolean = OFF):
         """This method modifies the OdbDataStep object.
@@ -27,4 +27,5 @@ class OdbDataStep:
         update
             A Boolean specifying whether to update the model. The default value is ON
         """
+        # TODO: Implement this method
         ...

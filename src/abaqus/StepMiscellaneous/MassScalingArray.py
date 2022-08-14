@@ -1,6 +1,5 @@
+import typing
+
 from .MassScaling import MassScaling
 
-
-class MassScalingArray(list[MassScaling]):
-    def findAt(self):
-        ...
+MassScalingArray = typing.List[MassScaling]

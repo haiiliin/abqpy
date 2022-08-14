@@ -1,7 +1,9 @@
+import typing
+
 from .Annotation import Annotation
 
 
-class AnnotationsToPlotArray(list[Annotation]):
+class AnnotationsToPlotArray(typing.List[Annotation]):
     """The AnnotationsToPlotArray object is a sequence that stores references to plotted
     annotations. By adding annotations to and removing annotations from this sequence, you
     can control which annotations are displayed in a particular viewport.
@@ -26,6 +28,7 @@ class AnnotationsToPlotArray(list[Annotation]):
             sequence.
 
         """
+        # TODO: implement this method
         ...
 
     def bringToFront(self, index: str):
@@ -39,6 +42,7 @@ class AnnotationsToPlotArray(list[Annotation]):
             sequence.
 
         """
+        # TODO: implement this method
         ...
 
     def moveAfter(self, index: str, other: str):
@@ -55,6 +59,7 @@ class AnnotationsToPlotArray(list[Annotation]):
             AnnotationsToPlotArray sequence after which this object will be moved.
 
         """
+        # TODO: implement this method
         ...
 
     def moveBefore(self, index: str, other: str):
@@ -71,6 +76,7 @@ class AnnotationsToPlotArray(list[Annotation]):
             sequence before which this object will be moved.
 
         """
+        # TODO: implement this method
         ...
 
     def sendBackward(self, index: str):
@@ -84,6 +90,7 @@ class AnnotationsToPlotArray(list[Annotation]):
             sequence.
 
         """
+        # TODO: implement this method
         ...
 
     def sendToBack(self, index: str):
@@ -97,4 +104,5 @@ class AnnotationsToPlotArray(list[Annotation]):
             sequence.
 
         """
+        # TODO: implement this method
         ...

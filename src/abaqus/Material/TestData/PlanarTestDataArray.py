@@ -1,6 +1,5 @@
+import typing
+
 from .PlanarTestData import PlanarTestData
 
-
-class PlanarTestDataArray(list[PlanarTestData]):
-    def findAt(self):
-        ...
+PlanarTestDataArray = typing.List[PlanarTestData]

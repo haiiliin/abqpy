@@ -4,9 +4,11 @@ class AbaqusNDarray:
     numpy.ndarray object, but the numeric elements are returned as standard Python objects,
     not numpy numeric types.
     The numeric elements can be:
+    
     - All ints.
     - All floats.
     - First column int, all other columns floats.
+    
     In the last of these cases, the member **colZeroIsInt** will be True; in the other two
     cases, it will be False.
 
@@ -14,5 +16,4 @@ class AbaqusNDarray:
     -----
     This object can be accessed by:
     """
-
     ...

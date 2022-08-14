@@ -1,6 +1,5 @@
+import typing
+
 from .OdbRigidBody import OdbRigidBody
 
-
-class OdbRigidBodyArray(list[OdbRigidBody]):
-    def findAt(self):
-        ...
+OdbRigidBodyArray = typing.List[OdbRigidBody]

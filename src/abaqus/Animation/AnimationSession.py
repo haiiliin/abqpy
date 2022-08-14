@@ -35,6 +35,7 @@ class AnimationSession(SessionBase):
             A sequence specifying the canvas objects to capture. The default behavior is to capture
             all canvas objects.
         """
+        # TODO: implement this method
         ...
 
     def Movie(
@@ -93,13 +94,12 @@ class AnimationSession(SessionBase):
 
         Raises
         ------
-        ValueError
-            - If **fileName** does not exist or can not be read:
-              ValueError: Unable to open movie file
-            - If **fileName** references an unsupported movie file format:
-              ValueError: Unsupported movie format
-            - If the contents of **fileName** are corrupt or can not be decoded:
-              ValueError: Unable to decode movie file
+        ValueError: Unable to open movie file
+            If **fileName** does not exist or can not be read.
+        ValueError: Unsupported movie format.
+            If **fileName** references an unsupported movie file format
+        ValueError: Unable to decode movie file
+            If the contents of **fileName** are corrupt or can not be decoded.
         """
         self.movies[name] = movie = Movie(
             name,

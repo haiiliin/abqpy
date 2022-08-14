@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .DesignResponse import DesignResponse
 from .GeometricRestriction import GeometricRestriction
@@ -20,20 +22,16 @@ class BeadTask(OptimizationTask):
     """
 
     #: A repository of DesignResponse objects.
-    designResponses: dict[str, DesignResponse] = dict[str, DesignResponse]()
+    designResponses: typing.Dict[str, DesignResponse] = {}
 
     #: A repository of ObjectiveFunction objects.
-    objectiveFunctions: dict[str, ObjectiveFunction] = dict[str, ObjectiveFunction]()
+    objectiveFunctions: typing.Dict[str, ObjectiveFunction] = {}
 
     #: A repository of OptimizationConstraint objects.
-    optimizationConstraints: dict[str, OptimizationConstraint] = dict[
-        str, OptimizationConstraint
-    ]()
+    optimizationConstraints: typing.Dict[str, OptimizationConstraint] = {}
 
     #: A repository of GeometricRestriction objects.
-    geometricRestrictions: dict[str, GeometricRestriction] = dict[
-        str, GeometricRestriction
-    ]()
+    geometricRestrictions: typing.Dict[str, GeometricRestriction] = {}
 
     #: A String specifying the optimization task repository key.
     name: str

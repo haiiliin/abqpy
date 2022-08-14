@@ -1,6 +1,5 @@
+import typing
+
 from .OdbFrame import OdbFrame
 
-
-class OdbFrameArray(list[OdbFrame]):
-    def findAt(self):
-        ...
+OdbFrameArray = typing.List[OdbFrame]

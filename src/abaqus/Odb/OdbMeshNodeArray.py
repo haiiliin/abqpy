@@ -1,6 +1,5 @@
+import typing
+
 from .OdbMeshNode import OdbMeshNode
 
-
-class OdbMeshNodeArray(list[OdbMeshNode]):
-    def findAt(self):
-        ...
+OdbMeshNodeArray = typing.List[OdbMeshNode]

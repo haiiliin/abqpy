@@ -1,6 +1,5 @@
+import typing
+
 from .DataTable import DataTable
 
-
-class DataTableArray(list[DataTable]):
-    def findAt(self):
-        ...
+DataTableArray = typing.List[DataTable]

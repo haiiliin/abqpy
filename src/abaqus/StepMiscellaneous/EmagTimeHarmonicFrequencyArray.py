@@ -1,6 +1,5 @@
+import typing
+
 from .EmagTimeHarmonicFrequency import EmagTimeHarmonicFrequency
 
-
-class EmagTimeHarmonicFrequencyArray(list[EmagTimeHarmonicFrequency]):
-    def findAt(self):
-        ...
+EmagTimeHarmonicFrequencyArray = typing.List[EmagTimeHarmonicFrequency]

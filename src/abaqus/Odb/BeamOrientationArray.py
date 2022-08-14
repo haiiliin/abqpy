@@ -1,6 +1,5 @@
+import typing
+
 from .BeamOrientation import BeamOrientation
 
-
-class BeamOrientationArray(list[BeamOrientation]):
-    def findAt(self):
-        ...
+BeamOrientationArray = typing.List[BeamOrientation]

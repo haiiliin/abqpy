@@ -1,6 +1,5 @@
+import typing
+
 from .OptimizationObjective import OptimizationObjective
 
-
-class OptimizationObjectiveArray(list[OptimizationObjective]):
-    def findAt(self):
-        ...
+OptimizationObjectiveArray = typing.List[OptimizationObjective]

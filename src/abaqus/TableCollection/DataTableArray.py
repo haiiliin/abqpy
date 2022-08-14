@@ -1,5 +1,5 @@
+import typing
+
 from ..TableCollection.DataTable import DataTable
 
-
-class DataTableArray(list[DataTable]):
-    ...
+DataTableArray = typing.List[DataTable]

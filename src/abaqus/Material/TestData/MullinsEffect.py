@@ -37,10 +37,10 @@ class MullinsEffect:
     table: tuple = ()
 
     #: A :py:class:`~abaqus.Material.TestData.UniaxialTestDataArray.UniaxialTestDataArray` object.
-    uniaxialTests: UniaxialTestDataArray = UniaxialTestDataArray()
+    uniaxialTests: UniaxialTestDataArray = []
 
     #: A :py:class:`~abaqus.Material.TestData.BiaxialTestDataArray.BiaxialTestDataArray` object.
-    biaxialTests: BiaxialTestDataArray = BiaxialTestDataArray()
+    biaxialTests: BiaxialTestDataArray = []
 
     #: A :py:class:`~abaqus.Material.TestData.PlanarTestDataArray.PlanarTestDataArray` object.
-    planarTests: PlanarTestDataArray = PlanarTestDataArray()
+    planarTests: PlanarTestDataArray = []

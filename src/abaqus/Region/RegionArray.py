@@ -1,6 +1,5 @@
+import typing
+
 from .Region import Region
 
-
-class RegionArray(list[Region]):
-    def findAt(self):
-        ...
+RegionArray = typing.List[Region]

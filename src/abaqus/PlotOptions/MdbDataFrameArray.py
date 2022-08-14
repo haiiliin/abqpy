@@ -1,6 +1,5 @@
+import typing
+
 from .MdbDataFrame import MdbDataFrame
 
-
-class MdbDataFrameArray(list[MdbDataFrame]):
-    def findAt(self):
-        ...
+MdbDataFrameArray = typing.List[MdbDataFrame]

@@ -1,6 +1,5 @@
+import typing
+
 from .RandomResponseFrequency import RandomResponseFrequency
 
-
-class RandomResponseFrequencyArray(list[RandomResponseFrequency]):
-    def findAt(self):
-        ...
+RandomResponseFrequencyArray = typing.List[RandomResponseFrequency]

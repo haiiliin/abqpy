@@ -1,6 +1,5 @@
+import typing
+
 from .Axis import Axis
 
-
-class AxisArray(list[Axis]):
-    def findAt(self):
-        ...
+AxisArray = typing.List[Axis]

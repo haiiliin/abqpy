@@ -7,7 +7,6 @@ from .AccelerationBaseMotionBC import AccelerationBaseMotionBC
 from .AccelerationBaseMotionBCState import AccelerationBaseMotionBCState
 from .AcousticPressureBC import AcousticPressureBC
 from .AcousticPressureBCState import AcousticPressureBCState
-from .Calibration import Calibration
 from .ConcentrationBC import ConcentrationBC
 from .ConcentrationBCState import ConcentrationBCState
 from .ConnAccelerationBC import ConnAccelerationBC
@@ -45,7 +44,7 @@ from .VelocityBC import VelocityBC
 from .VelocityBCState import VelocityBCState
 from .VelocityBaseMotionBC import VelocityBaseMotionBC
 from .VelocityBaseMotionBCState import VelocityBaseMotionBCState
-from ..Amplitude.CorrelationArray import CorrelationArray
+from ..Amplitude.Correlation import Correlation
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
@@ -69,7 +68,7 @@ class BoundaryConditionModel(ModelBase):
         dof: SymbolicConstant,
         amplitudeScaleFactor: float = 1,
         centerOfRotation: tuple = (),
-        correlation: CorrelationArray = None,
+        correlation: Correlation = None,
         secondaryBase: str = "",
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,
@@ -98,7 +97,7 @@ class BoundaryConditionModel(ModelBase):
             A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying a tuple containing one center of rotation. The default
             value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
         correlation
-            A :py:class:`~abaqus.Amplitude.CorrelationArray.CorrelationArray` object.
+            A :py:class:`~abaqus.Amplitude.Correlation.Correlation` object.
         secondaryBase
             A String specifying the name of the SecondaryBaseBC object associated with this boundary
             condition. The default value is an empty string.
@@ -293,29 +292,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[
             name
         ] = AcousticPressureBCState()
-        return boundaryCondition
-
-    def Calibration(self, name: str) -> Calibration:
-        """This method creates a Calibration object.
-
-        .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
-
-                mdb.models[name].Calibration
-
-        Parameters
-        ----------
-        name
-            A String specifying the name of the new calibration.
-
-        Returns
-        -------
-        calibration: Calibration
-            A :py:class:`~abaqus.BoundaryCondition.Calibration.Calibration` object.
-        """
-        self.boundaryConditions[name] = boundaryCondition = Calibration(name)
         return boundaryCondition
 
     def ConcentrationBC(
@@ -716,7 +692,7 @@ class BoundaryConditionModel(ModelBase):
         dof: SymbolicConstant,
         amplitudeScaleFactor: float = 1,
         centerOfRotation: tuple = (),
-        correlation: CorrelationArray = None,
+        correlation: Correlation = None,
         secondaryBase: str = "",
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,
@@ -745,7 +721,7 @@ class BoundaryConditionModel(ModelBase):
             A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying a tuple containing one center of rotation. The default
             value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
         correlation
-            A :py:class:`~abaqus.Amplitude.CorrelationArray.CorrelationArray` object.
+            A :py:class:`~abaqus.Amplitude.Correlation.Correlation` object.
         secondaryBase
             A String specifying the name of the SecondaryBaseBC object associated with this boundary
             condition. The default value is an empty string.
@@ -1694,7 +1670,7 @@ class BoundaryConditionModel(ModelBase):
         dof: SymbolicConstant,
         amplitudeScaleFactor: float = 1,
         centerOfRotation: tuple = (),
-        correlation: CorrelationArray = None,
+        correlation: Correlation = None,
         secondaryBase: str = "",
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,
@@ -1723,7 +1699,7 @@ class BoundaryConditionModel(ModelBase):
             A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying a tuple containing one center of rotation. The default
             value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
         correlation
-            A :py:class:`~abaqus.Amplitude.CorrelationArray.CorrelationArray` object.
+            A :py:class:`~abaqus.Amplitude.Correlation.Correlation` object.
         secondaryBase
             A String specifying the name of the SecondaryBaseBC object associated with this boundary
             condition. The default value is an empty string.

@@ -1,6 +1,5 @@
+import typing
+
 from .CDCTerm import CDCTerm
 
-
-class CDCTermArray(list[CDCTerm]):
-    def findAt(self):
-        ...
+CDCTermArray = typing.List[CDCTerm]

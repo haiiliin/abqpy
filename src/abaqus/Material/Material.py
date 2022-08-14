@@ -46,8 +46,8 @@ from .Plastic.Concrete.Concrete import Concrete
 from .Plastic.Concrete.ConcreteDamagedPlasticity import ConcreteDamagedPlasticity
 from .Plastic.Creep.Creep import Creep
 from .Plastic.CriticalStateClay.ClayPlasticity import ClayPlasticity
-from .Plastic.CrushableFoam.CrushableFoam import CrushableFoam
 from .Plastic.CrushStress.CrushStress import CrushStress
+from .Plastic.CrushableFoam.CrushableFoam import CrushableFoam
 from .Plastic.DruckerPrager.Extended.DruckerPrager import DruckerPrager
 from .Plastic.DruckerPrager.ModifiedCap.CapPlasticity import CapPlasticity
 from .Plastic.Metal.CastIron.CastIronPlasticity import CastIronPlasticity
@@ -525,7 +525,7 @@ class Material(MaterialBase):
 
     def CrushStress(
         self,
-        crushStressTable: tuple[tuple[float, ...]],
+        crushStressTable: typing.Tuple[typing.Tuple[float, ...]],
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

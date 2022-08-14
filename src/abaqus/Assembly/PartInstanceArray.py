@@ -1,6 +1,5 @@
+import typing
+
 from .PartInstance import PartInstance
 
-
-class PartInstanceArray(list[PartInstance]):
-    def findAt(self):
-        ...
+PartInstanceArray = typing.List[PartInstance]

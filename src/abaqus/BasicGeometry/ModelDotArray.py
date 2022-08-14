@@ -1,6 +1,5 @@
+import typing
+
 from .ModelDot import ModelDot
 
-
-class ModelDotArray(list[ModelDot]):
-    def findAt(self):
-        ...
+ModelDotArray = typing.List[ModelDot]

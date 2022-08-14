@@ -1,9 +1,10 @@
-from abaqusConstants import *
 import typing
+
+from abaqusConstants import *
 from .IgnoredVertex import IgnoredVertex
 
 
-class IgnoredVertexArray:
+class IgnoredVertexArray(typing.List[IgnoredVertex]):
     """The IgnoredVertexArray is a sequence of IgnoredVertex objects. If the part is modified,
     then IgnoredVertexArray must be updated for that part.
 

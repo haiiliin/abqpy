@@ -1,6 +1,5 @@
+import typing
+
 from .Message import Message
 
-
-class MessageArray(list[Message]):
-    def findAt(self):
-        ...
+MessageArray = typing.List[Message]

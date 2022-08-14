@@ -1,6 +1,5 @@
+import typing
+
 from .SectionLayer import SectionLayer
 
-
-class SectionLayerArray(list[SectionLayer]):
-    def findAt(self):
-        ...
+SectionLayerArray = typing.List[SectionLayer]

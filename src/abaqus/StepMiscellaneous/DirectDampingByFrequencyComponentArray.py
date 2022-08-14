@@ -1,6 +1,5 @@
+import typing
+
 from .DirectDampingByFrequencyComponent import DirectDampingByFrequencyComponent
 
-
-class DirectDampingByFrequencyComponentArray(list[DirectDampingByFrequencyComponent]):
-    def findAt(self):
-        ...
+DirectDampingByFrequencyComponentArray = typing.List[DirectDampingByFrequencyComponent]

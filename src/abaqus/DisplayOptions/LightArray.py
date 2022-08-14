@@ -1,6 +1,5 @@
+import typing
+
 from .Light import Light
 
-
-class LightArray(list[Light]):
-    def findAt(self):
-        ...
+LightArray = typing.List[Light]

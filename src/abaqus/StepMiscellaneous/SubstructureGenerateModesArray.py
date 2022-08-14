@@ -1,6 +1,5 @@
+import typing
+
 from .SubstructureGenerateModes import SubstructureGenerateModes
 
-
-class SubstructureGenerateModesArray(list[SubstructureGenerateModes]):
-    def findAt(self):
-        ...
+SubstructureGenerateModesArray = typing.List[SubstructureGenerateModes]

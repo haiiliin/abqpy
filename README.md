@@ -1,4 +1,4 @@
-# abqpy 2022a10
+# abqpy 2022.0
 
 [![OSCS Status](https://www.oscs1024.com/platform/badge/haiiliin/abqpy.svg?size=small)](https://www.oscs1024.com/project/haiiliin/abqpy?ref=badge_small)
 [![Documentation Status](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://readthedocs.org/projects/abqpy)
@@ -40,8 +40,8 @@ contributions, please feel free to create your pull requests.
 
 ## Installation
 
-`abqpy` is using type hints features that require Python 3.9 or a later version, 
-please upgrade it to Python 3.9 or a later version if you are using an earlier version.
+`abqpy` supports Python 3.7 or a later version. If you are using Python 3.6 or an earlier version, please upgrade to Python 3.7 
+or a later version.
 
 `abqpy` is uploaded to [PyPI](https://pypi.org/project/abqpy), you can simply install 
 it using pip:
@@ -59,8 +59,8 @@ conda install -c haiiliin abqpy
 
 You can specify the version number when installing `abqpy`, for example:
 ```shell
-pip install abqpy==2022a10
-conda install -c haiiliin abqpy=2022a10
+pip install abqpy==2022.0
+conda install -c haiiliin abqpy=2022.0
 ```
 A better way is to install the package from source without specifying the patch number:
 ```shell

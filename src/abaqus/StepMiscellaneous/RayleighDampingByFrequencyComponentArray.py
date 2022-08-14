@@ -1,8 +1,5 @@
+import typing
+
 from .RayleighDampingByFrequencyComponent import RayleighDampingByFrequencyComponent
 
-
-class RayleighDampingByFrequencyComponentArray(
-    list[RayleighDampingByFrequencyComponent]
-):
-    def findAt(self):
-        ...
+RayleighDampingByFrequencyComponentArray = typing.List[RayleighDampingByFrequencyComponent]

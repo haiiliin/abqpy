@@ -18,7 +18,8 @@ class TieConstraint:
 
         Returns
         -------
-        tuple[float, ...]
+        typing.Tuple[float, ...]
             A tuple containing coordinates of the nodes pertaining to the constraint.
         """
+        # TODO: Implement this method
         ...

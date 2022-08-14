@@ -1,6 +1,5 @@
+import typing
+
 from .RebarOrientation import RebarOrientation
 
-
-class RebarOrientationArray(list[RebarOrientation]):
-    def findAt(self):
-        ...
+RebarOrientationArray = typing.List[RebarOrientation]

@@ -82,13 +82,13 @@ class OdbDisplay:
     modelVariableList: OdbModelFieldVarList = OdbModelFieldVarList()
 
     #: A repository of OdbSet objects specifying the set label. The repository is read-only.
-    nodeSet: dict[str, OdbSet] = dict[str, OdbSet]()
+    nodeSet: typing.Dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying the set label. The repository is read-only.
-    elementSet: dict[str, OdbSet] = dict[str, OdbSet]()
+    elementSet: typing.Dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying the set label. The repository is read-only.
-    surfaceSet: dict[str, OdbSet] = dict[str, OdbSet]()
+    surfaceSet: typing.Dict[str, OdbSet] = {}
 
     #: A :py:class:`~abaqus.PlotOptions.DisplayOptions.DisplayOptions` object.
     display: DisplayOptions = DisplayOptions()
@@ -118,7 +118,7 @@ class OdbDisplay:
     viewCutOptions: ViewCutOptions = ViewCutOptions()
 
     #: A repository of ViewCut objects.
-    viewCuts: dict[str, ViewCut] = dict[str, ViewCut]()
+    viewCuts: typing.Dict[str, ViewCut] = {}
 
     #: A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the current display group and referring to an object in
     #: the **displayGroups** member of Session.
@@ -138,7 +138,7 @@ class OdbDisplay:
     #: A tuple of Strings specifying the step label and the frame label when the current step
     #: is user defined. Alternatively, **fieldFrame** maybe specified as a pair of Ints with the
     #: step index and the frame index, when the current step is defined in the analysis.
-    fieldFrame: tuple[str] = ()
+    fieldFrame: typing.Tuple[str, ...] = ()
 
     #: A tuple specifying variables.
     #: Each item in the sequence consists of a tuple containing the following elements:

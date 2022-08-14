@@ -1,6 +1,5 @@
+import typing
+
 from .LayerProperties import LayerProperties
 
-
-class LayerPropertiesArray(list[LayerProperties]):
-    def findAt(self):
-        ...
+LayerPropertiesArray = typing.List[LayerProperties]

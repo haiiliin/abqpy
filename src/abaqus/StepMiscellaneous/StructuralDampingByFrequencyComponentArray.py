@@ -1,8 +1,5 @@
+import typing
+
 from .StructuralDampingByFrequencyComponent import StructuralDampingByFrequencyComponent
 
-
-class StructuralDampingByFrequencyComponentArray(
-    list[StructuralDampingByFrequencyComponent]
-):
-    def findAt(self):
-        ...
+StructuralDampingByFrequencyComponentArray = typing.List[StructuralDampingByFrequencyComponent]

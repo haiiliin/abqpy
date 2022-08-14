@@ -1,6 +1,5 @@
+import typing
+
 from .SteadyStateModalFrequency import SteadyStateModalFrequency
 
-
-class SteadyStateModalFrequencyArray(list[SteadyStateModalFrequency]):
-    def findAt(self):
-        ...
+SteadyStateModalFrequencyArray = typing.List[SteadyStateModalFrequency]

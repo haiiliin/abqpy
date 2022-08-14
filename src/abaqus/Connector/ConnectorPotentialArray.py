@@ -1,6 +1,5 @@
+import typing
+
 from .ConnectorPotential import ConnectorPotential
 
-
-class ConnectorPotentialArray(list[ConnectorPotential]):
-    def findAt(self):
-        ...
+ConnectorPotentialArray = typing.List[ConnectorPotential]

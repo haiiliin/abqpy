@@ -1,6 +1,5 @@
+import typing
+
 from .UniaxialTestData import UniaxialTestData
 
-
-class UniaxialTestDataArray(list[UniaxialTestData]):
-    def findAt(self):
-        ...
+UniaxialTestDataArray = typing.List[UniaxialTestData]
