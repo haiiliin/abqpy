@@ -137,10 +137,10 @@ class AssemblyBase(Feature):
     modelName: str = ""
 
     #: A :py:class:`~abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray` object.
-    connectorOrientations: ConnectorOrientationArray = ConnectorOrientationArray()
+    connectorOrientations: ConnectorOrientationArray = []
 
     #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
-    sectionAssignments: SectionAssignmentArray = SectionAssignmentArray()
+    sectionAssignments: SectionAssignmentArray = []
 
     @typing.overload
     def Instance(

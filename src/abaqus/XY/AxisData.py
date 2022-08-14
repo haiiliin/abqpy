@@ -116,7 +116,7 @@ class AxisData:
 
     #: An :py:class:`~abaqus.XY.XYCurveArray.XYCurveArray` object specifying a read-only sequence of Curve objects associated to
     #: this axis.
-    curves: XYCurveArray = XYCurveArray()
+    curves: XYCurveArray = []
 
     #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the quantity type: i.e. the physical dimension and
     #: associated label of the data represented by this axis.

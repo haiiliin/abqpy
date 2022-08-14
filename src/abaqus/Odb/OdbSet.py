@@ -39,11 +39,11 @@ class OdbSet:
 
     #: An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object specifying the nodes of an OdbSet. If a set spans more than
     #: one part instance, this member is a sequence of sequences for each part instance.
-    nodes: OdbMeshNodeArray = OdbMeshNodeArray()
+    nodes: OdbMeshNodeArray = []
 
     #: An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object specifying the elements of an OdbSet. If a set spans more
     #: than one part instance, this member is a sequence of sequences for each part instance.
-    elements: OdbMeshElementArray = OdbMeshElementArray()
+    elements: OdbMeshElementArray = []
 
     #: A tuple of SymbolicConstants specifying the element face. If a set spans more than one
     #: part instance, this member is a sequence of sequences for each part instance.

@@ -65,7 +65,7 @@ class RandomResponseStep(AnalysisStep):
     description: str = ""
 
     #: A :py:class:`~abaqus.StepMiscellaneous.RandomResponseFrequencyArray.RandomResponseFrequencyArray` object specifying frequencies over ranges of modes.
-    freq: RandomResponseFrequencyArray = RandomResponseFrequencyArray()
+    freq: RandomResponseFrequencyArray = []
 
     #: A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object.
     directDamping: DirectDamping = DirectDamping()

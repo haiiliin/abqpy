@@ -34,7 +34,7 @@ class OdbStepBase:
     acousticMass: float = None
 
     #: An :py:class:`~abaqus.Odb.OdbFrameArray.OdbFrameArray` object.
-    frames: OdbFrameArray = OdbFrameArray()
+    frames: OdbFrameArray = []
 
     #: A repository of HistoryRegion objects.
     historyRegions: typing.Dict[str, HistoryRegion] = {}

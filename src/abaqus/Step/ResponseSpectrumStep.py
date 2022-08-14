@@ -70,7 +70,7 @@ class ResponseSpectrumStep(AnalysisStep):
     description: str = ""
 
     #: A :py:class:`~abaqus.StepMiscellaneous.ResponseSpectrumComponentArray.ResponseSpectrumComponentArray` object.
-    components: ResponseSpectrumComponentArray = ResponseSpectrumComponentArray()
+    components: ResponseSpectrumComponentArray = []
 
     #: A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object.
     directDamping: DirectDamping = DirectDamping()

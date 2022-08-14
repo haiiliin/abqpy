@@ -72,7 +72,7 @@ class SteadyStateDirectStep(AnalysisStep):
     description: str = ""
 
     #: A :py:class:`~abaqus.StepMiscellaneous.SteadyStateDirectFrequencyArray.SteadyStateDirectFrequencyArray` object.
-    frequencyRange: SteadyStateDirectFrequencyArray = SteadyStateDirectFrequencyArray()
+    frequencyRange: SteadyStateDirectFrequencyArray = []
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
