@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .BCDisplayOptions import BCDisplayOptions
 from .ConstraintDisplayOptions import ConstraintDisplayOptions

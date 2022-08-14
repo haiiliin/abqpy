@@ -1,4 +1,5 @@
-from .ConnectorPotential import ConnectorPotential
+import typing
 
+from .ConnectorPotential import ConnectorPotential
 
 ConnectorPotentialArray = typing.List[ConnectorPotential]

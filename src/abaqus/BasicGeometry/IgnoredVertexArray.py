@@ -1,5 +1,6 @@
-from abaqusConstants import *
 import typing
+
+from abaqusConstants import *
 from .IgnoredVertex import IgnoredVertex
 
 

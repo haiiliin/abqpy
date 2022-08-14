@@ -1,4 +1,5 @@
-from .SteadyStateModalFrequency import SteadyStateModalFrequency
+import typing
 
+from .SteadyStateModalFrequency import SteadyStateModalFrequency
 
 SteadyStateModalFrequencyArray = typing.List[SteadyStateModalFrequency]

@@ -1,3 +1,5 @@
+import typing
+
 from ..TableCollection.DataTable import DataTable
 from ..TableCollection.ParameterTable import ParameterTable
 from ..TableCollection.PropertyTable import PropertyTable

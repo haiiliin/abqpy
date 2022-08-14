@@ -1,3 +1,5 @@
+import typing
+
 from ..Adaptivity.AdaptivityProcess import AdaptivityProcess
 from ..Annotation.Annotation import Annotation
 from ..CustomKernel.RepositorySupport import RepositorySupport
