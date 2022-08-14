@@ -20,9 +20,7 @@ class TableCollectionAssembly(AssemblyBase):
             mdb.models[name].rootAssembly
     """
 
-    elementProgressiveActivations: typing.Dict[str, ElementProgressiveActivation] = typing.Dict[
-        str, ElementProgressiveActivation
-    ]()
+    elementProgressiveActivations: typing.Dict[str, ElementProgressiveActivation] = {}
 
     def ElementProgressiveActivation(
         self,
