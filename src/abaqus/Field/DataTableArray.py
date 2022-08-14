@@ -1,6 +1,4 @@
 from .DataTable import DataTable
 
 
-class DataTableArray(list[DataTable]):
-    def findAt(self):
-        ...
+DataTableArray = list[DataTable]
