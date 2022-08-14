@@ -48,7 +48,7 @@ class ConstrainedSketchBase:
 
     #: A :py:class:`~abaqus.Amplitude.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray` object specifying the sketch geometry, such as lines,
     #: arcs, circles, and splines.
-    geometry: ConstrainedSketchGeometryArray = ConstrainedSketchGeometryArray()
+    geometry: ConstrainedSketchGeometryArray = []
 
     #: A repository of ConstrainedSketchParameter objects specifying sketch parameters, which
     #: may be associated with dimensions.
@@ -60,7 +60,7 @@ class ConstrainedSketchBase:
     sketchOptions: ConstrainedSketchOptions = ConstrainedSketchOptions()
 
     #: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexArray.ConstrainedSketchVertexArray` object.
-    vertices: ConstrainedSketchVertexArray = ConstrainedSketchVertexArray()
+    vertices: ConstrainedSketchVertexArray = []
 
     #: A :py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchImageOptions.ConstrainedSketchImageOptions` object.
     imageOptions: ConstrainedSketchImageOptions = ConstrainedSketchImageOptions()

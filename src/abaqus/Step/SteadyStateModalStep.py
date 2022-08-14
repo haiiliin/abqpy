@@ -69,7 +69,7 @@ class SteadyStateModalStep(AnalysisStep):
     description: str = ""
 
     #: A :py:class:`~abaqus.StepMiscellaneous.SteadyStateModalFrequencyArray.SteadyStateModalFrequencyArray` object.
-    frequencyRange: SteadyStateModalFrequencyArray = SteadyStateModalFrequencyArray()
+    frequencyRange: SteadyStateModalFrequencyArray = []
 
     #: A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object.
     directDamping: DirectDamping = DirectDamping()

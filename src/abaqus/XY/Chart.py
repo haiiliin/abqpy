@@ -42,11 +42,11 @@ class Chart:
 
     #: An :py:class:`~abaqus.XY.AxisArray.AxisArray` object specifying a read-only sequence of axis objects displayed as axes1 -
     #: the abscissa for a Cartesian chart.
-    axes1: AxisArray = AxisArray()
+    axes1: AxisArray = []
 
     #: An :py:class:`~abaqus.XY.AxisArray.AxisArray` object specifying a read-only sequence of axis objects displayed as axes2 -
     #: the ordinate for a Cartesian chart.
-    axes2: AxisArray = AxisArray()
+    axes2: AxisArray = []
 
     #: An :py:class:`~abaqus.XY.Area.Area` object specifying position, padding, background and borders of the chart.
     area: Area = Area()
