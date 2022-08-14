@@ -1,3 +1,5 @@
+import typing
+
 class ConstrainedSketchVertex:
     """The ConstrainedSketchVertex object stores the vertex position.
 

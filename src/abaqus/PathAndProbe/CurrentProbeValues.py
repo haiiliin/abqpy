@@ -1,3 +1,5 @@
+import typing
+
 class CurrentProbeValues:
     """The CurrentProbeValues object has no constructor. The CurrentProbeValues object is
     created when you import the Visualization module.

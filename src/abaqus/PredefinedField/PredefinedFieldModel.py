@@ -1,4 +1,5 @@
 from abaqusConstants import *
+from .Field import Field
 from .FluidCavityPressure import FluidCavityPressure
 from .InitialState import InitialState
 from .KinematicHardening import KinematicHardening

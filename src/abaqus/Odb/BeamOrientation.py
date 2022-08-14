@@ -1,5 +1,4 @@
 from abaqusConstants import *
-from .OdbMeshNode import OdbMeshNode
 from .OdbSet import OdbSet
 
 

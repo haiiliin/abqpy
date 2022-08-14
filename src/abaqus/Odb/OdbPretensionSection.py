@@ -1,4 +1,3 @@
-from .OdbMeshNode import OdbMeshNode
 from .OdbSet import OdbSet
 
 

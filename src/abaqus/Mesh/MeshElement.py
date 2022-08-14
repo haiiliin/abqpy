@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .MeshNode import MeshNode
 

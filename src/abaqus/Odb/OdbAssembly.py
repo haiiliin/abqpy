@@ -1,11 +1,11 @@
+import typing
+
 from abaqusConstants import *
-from .AnalyticSurface import AnalyticSurface
 from .OdbAssemblyBase import OdbAssemblyBase
 from .OdbDatumCsys import OdbDatumCsys
 from .OdbInstance import OdbInstance
 from .OdbMeshNode import OdbMeshNode
 from .OdbPart import OdbPart
-from .OdbRigidBody import OdbRigidBody
 from .OdbSet import OdbSet
 
 
