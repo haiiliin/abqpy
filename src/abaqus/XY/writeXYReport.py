@@ -8,7 +8,7 @@ from .XYData import XYData
 """
 
 
-def writeXYReport(fileName: str, xyData: typing.Tuple[XYData], appendMode: Boolean = ON):
+def writeXYReport(fileName: str, xyData: typing.Tuple[XYData, ...], appendMode: Boolean = ON):
     """This method writes an XYData object to a user-defined ASCII file.
 
     .. note:: 

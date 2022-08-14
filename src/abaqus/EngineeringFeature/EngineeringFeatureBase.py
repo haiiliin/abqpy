@@ -34,7 +34,7 @@ class EngineeringFeatureBase:
     #: A repository of SpringDashpot objects.
     springDashpots: typing.Dict[str, SpringDashpot] = {}
 
-    def assignSeam(self, regions: typing.Tuple[Region]):
+    def assignSeam(self, regions: typing.Tuple[Region, ...]):
         """This method creates a seam crack along an edge or a face.
 
         Parameters
@@ -45,7 +45,7 @@ class EngineeringFeatureBase:
         """
         ...
 
-    def deleteSeam(self, regions: typing.Tuple[Region]):
+    def deleteSeam(self, regions: typing.Tuple[Region, ...]):
         """This method deletes a seam crack.
 
         Parameters
