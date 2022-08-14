@@ -20,7 +20,7 @@ class IgnoredEdgeArray(typing.List[IgnoredEdge]):
             mdb.models[name].rootAssembly.instances[name].ignoredEdges
     """
 
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[IgnoredEdge, typing.typing.List[IgnoredEdge]]:
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[IgnoredEdge, typing.List[IgnoredEdge]]:
         """This method returns the object or objects in the IgnoredEdgeArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any
