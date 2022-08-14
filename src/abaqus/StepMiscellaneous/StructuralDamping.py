@@ -14,4 +14,4 @@ class StructuralDamping:
     """
 
     #: A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingComponentArray.StructuralDampingComponentArray` object.
-    components: StructuralDampingComponentArray = StructuralDampingComponentArray()
+    components: StructuralDampingComponentArray = []

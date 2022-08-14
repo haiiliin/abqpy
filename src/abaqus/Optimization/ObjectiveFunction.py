@@ -15,7 +15,7 @@ class ObjectiveFunction:
     """
 
     #: Optimization objectives
-    objectives: OptimizationObjectiveArray = OptimizationObjectiveArray()
+    objectives: OptimizationObjectiveArray = []
 
     #: A String specifying the objective function repository key.
     name: str

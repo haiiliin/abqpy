@@ -54,7 +54,7 @@ class LightOptions:
     materialShininess: float = 105
 
     #: A :py:class:`~abaqus.DisplayOptions.LightArray.LightArray` object of length 8.
-    lights: LightArray = LightArray()
+    lights: LightArray = []
 
     #: A String specifying the light applied evenly to the entire scene independent of any
     #: individual light. The initial value is 20% gray. A list of valid color strings is in the

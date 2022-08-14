@@ -122,7 +122,7 @@ class Job:
     userSubroutine: str = ""
 
     #: A :py:class:`~abaqus.Job.MessageArray.MessageArray` object specifying the messages received during an analysis.
-    messages: MessageArray = MessageArray()
+    messages: MessageArray = []
 
     #: A tuple of Strings specifying the environment variables and their values.
     environment: tuple = ()

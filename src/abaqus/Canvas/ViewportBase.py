@@ -253,7 +253,7 @@ class ViewportBase(_OptionsBase):
     detailPlotOptions: DetailPlotOptions = DetailPlotOptions()
 
     #: An :py:class:`~abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray` object.
-    annotationsToPlot: AnnotationsToPlotArray = AnnotationsToPlotArray()
+    annotationsToPlot: AnnotationsToPlotArray = []
 
     #: A tuple of Strings specifying the names of layers that will be displayed in the viewport
     #: when **displayMode** = OVERLAY.
