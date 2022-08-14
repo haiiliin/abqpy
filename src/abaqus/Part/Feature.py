@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.Edge import Edge

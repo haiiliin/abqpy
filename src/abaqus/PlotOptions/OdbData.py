@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .CouplingConstraint import CouplingConstraint
 from .HistoryVariable import HistoryVariable

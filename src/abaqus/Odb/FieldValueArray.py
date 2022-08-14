@@ -1,4 +1,5 @@
-from .FieldValue import FieldValue
+import typing
 
+from .FieldValue import FieldValue
 
 FieldValueArray = typing.List[FieldValue]

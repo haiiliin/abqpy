@@ -1,7 +1,6 @@
 import typing
 
 from abaqus.Datum.DatumCsys import DatumCsys
-
 from abaqusConstants import *
 from .AssemblyModel import AssemblyModel
 from .ConnectorOrientationArray import ConnectorOrientationArray

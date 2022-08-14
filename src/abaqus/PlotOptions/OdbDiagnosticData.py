@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .OdbAnalysisError import OdbAnalysisError
 from .OdbAnalysisWarning import OdbAnalysisWarning

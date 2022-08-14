@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .AreaStyle import AreaStyle
 from .LineStyle import LineStyle
