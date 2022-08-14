@@ -26,7 +26,7 @@ class MeshPart(PartBase):
             import mesh
     """
 
-    def assignStackDirection(self, cells: typing.Tuple[Cell], referenceRegion: Face):
+    def assignStackDirection(self, cells: typing.Tuple[Cell, ...], referenceRegion: Face):
         """This method assigns a stack direction to geometric cells. The stack direction will be
         used to orient the elements during mesh generation.
 
@@ -42,9 +42,9 @@ class MeshPart(PartBase):
     def associateMeshWithGeometry(
         self,
         geometricEntity: str,
-        elements: typing.Tuple[MeshElement] = (),
-        elemFaces: typing.Tuple[MeshFace] = (),
-        elemEdges: typing.Tuple[MeshEdge] = (),
+        elements: typing.Tuple[MeshElement, ...] = (),
+        elemFaces: typing.Tuple[MeshFace, ...] = (),
+        elemEdges: typing.Tuple[MeshEdge, ...] = (),
         node: MeshNode = MeshNode((0, 0, 0)),
     ):
         """This method associates a geometric entity with mesh entities that are either orphan
@@ -75,7 +75,7 @@ class MeshPart(PartBase):
 
     def createVirtualTopology(
         self,
-        regions: typing.Tuple[Face] = (),
+        regions: typing.Tuple[Face, ...] = (),
         mergeShortEdges: Boolean = False,
         shortEdgeThreshold: float = None,
         mergeSmallFaces: Boolean = False,
@@ -172,7 +172,7 @@ class MeshPart(PartBase):
         """
         ...
 
-    def deleteBoundaryLayerControls(self, regions: typing.Tuple[Cell]):
+    def deleteBoundaryLayerControls(self, regions: typing.Tuple[Cell, ...]):
         """This method deletes the control parameters for boundary layer mesh for all the specified
         regions.
 
@@ -197,7 +197,7 @@ class MeshPart(PartBase):
         ...
 
     def deleteMeshAssociationWithGeometry(
-        self, geometricEntities: typing.Tuple[Cell], addBoundingEntities: Boolean = False
+        self, geometricEntities: typing.Tuple[Cell, ...], addBoundingEntities: Boolean = False
     ):
         """This method deletes the association of geometric entities with mesh entities.
 
@@ -273,7 +273,7 @@ class MeshPart(PartBase):
         numberOfLayers: int,
         extrudeVector: tuple,
         geometrySourceSide: str = "",
-        elemFacesSourceSide: typing.Tuple[MeshFace] = (),
+        elemFacesSourceSide: typing.Tuple[MeshFace, ...] = (),
         elemSourceSide: tuple = (),
         depth: float = None,
         targetSide: str = "",
@@ -325,10 +325,10 @@ class MeshPart(PartBase):
         self,
         cell: Cell,
         geometrySourceSide: str = "",
-        elemFacesSourceSide: typing.Tuple[MeshFace] = (),
+        elemFacesSourceSide: typing.Tuple[MeshFace, ...] = (),
         elemSourceSide: tuple = (),
         geometryConnectingSides: str = "",
-        elemFacesConnectingSides: typing.Tuple[MeshFace] = (),
+        elemFacesConnectingSides: typing.Tuple[MeshFace, ...] = (),
         elemConnectingSides: tuple = (),
         targetSide: Face = None, 
         numberOfLayers: int = None,
@@ -377,7 +377,7 @@ class MeshPart(PartBase):
         axisOfRevolution: tuple,
         angleOfRevolution: float,
         geometrySourceSide: str = "",
-        elemFacesSourceSide: typing.Tuple[MeshFace] = (),
+        elemFacesSourceSide: typing.Tuple[MeshFace, ...] = (),
         elemSourceSide: tuple = (),
         extendElementSets: Boolean = False,
     ):
@@ -518,7 +518,7 @@ class MeshPart(PartBase):
         """
         ...
 
-    def getIncompatibleMeshInterfaces(self, cells: typing.Tuple[Cell] = ()):
+    def getIncompatibleMeshInterfaces(self, cells: typing.Tuple[Cell, ...] = ()):
         """This method returns a sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects that are meshed with incompatible
         elements.
 
@@ -655,7 +655,7 @@ class MeshPart(PartBase):
         """
         ...
 
-    def restoreIgnoredEntity(self, entities: typing.Tuple[IgnoredVertex]):
+    def restoreIgnoredEntity(self, entities: typing.Tuple[IgnoredVertex, ...]):
         """This method restores vertices and edges that have been merged using a virtual topology
         feature.
 
@@ -675,10 +675,10 @@ class MeshPart(PartBase):
     def seedEdgeByBias(
         self,
         biasMethod: SymbolicConstant,
-        end1Edges: typing.Tuple[Edge],
-        end2Edges: typing.Tuple[Edge],
-        centerEdges: typing.Tuple[Edge],
-        endEdges: typing.Tuple[Edge],
+        end1Edges: typing.Tuple[Edge, ...],
+        end2Edges: typing.Tuple[Edge, ...],
+        centerEdges: typing.Tuple[Edge, ...],
+        endEdges: typing.Tuple[Edge, ...],
         ratio: float,
         number: int,
         minSize: float,
@@ -738,7 +738,7 @@ class MeshPart(PartBase):
         ...
 
     def seedEdgeByNumber(
-        self, edges: typing.Tuple[Edge], number: int, constraint: SymbolicConstant = FREE
+        self, edges: typing.Tuple[Edge, ...], number: int, constraint: SymbolicConstant = FREE
     ):
         """This method seeds the given edges uniformly based on the number of elements along the
         edges.
@@ -764,7 +764,7 @@ class MeshPart(PartBase):
 
     def seedEdgeBySize(
         self,
-        edges: typing.Tuple[Edge],
+        edges: typing.Tuple[Edge, ...],
         size: float,
         deviationFactor: float = None,
         minSizeFactor: float = None,
@@ -826,11 +826,11 @@ class MeshPart(PartBase):
 
     def setBoundaryLayerControls(
         self,
-        regions: typing.Tuple[Cell],
+        regions: typing.Tuple[Cell, ...],
         firstElemSize: float,
         growthFactor: float,
         numLayers: int,
-        inactiveFaces: typing.Tuple[Face] = (),
+        inactiveFaces: typing.Tuple[Face, ...] = (),
         setName: str = "",
     ):
         """This method sets the control parameters for boundary layer mesh for the specified
@@ -859,7 +859,7 @@ class MeshPart(PartBase):
         """
         ...
 
-    def setElementType(self, regions: tuple, elemTypes: typing.Tuple[ElemType]):
+    def setElementType(self, regions: tuple, elemTypes: typing.Tuple[ElemType, ...]):
         """This method assigns element types to the specified regions.
 
         Parameters

@@ -326,7 +326,7 @@ class PartInstance:
 
         Returns
         -------
-        typing.Tuple[PartInstance]
+        typing.Tuple[PartInstance, ...]
             A sequence of :py:class:`~abaqus.Assembly.PartInstance.PartInstance` objects.
         """
         ...
@@ -371,7 +371,7 @@ class PartInstance:
 
         Returns
         -------
-        typing.Tuple[PartInstance]
+        typing.Tuple[PartInstance, ...]
             A sequence of PartInstance objects.
         """
         ...
