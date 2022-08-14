@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .Density.Density import Density
 from .Elastic.HyperElastic.HyperFoam.Hyperfoam import Hyperfoam
@@ -357,7 +359,7 @@ class MaterialBase:
 
         Returns
         -------
-        list[Material]
+        typing.List[Material]
             A list of :py:class:`~abaqus.Material.Material.Material` objects.
         """
         ...

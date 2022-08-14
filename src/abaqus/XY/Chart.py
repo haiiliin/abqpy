@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .Area import Area
 from .AreaStyle import AreaStyle
@@ -36,15 +38,15 @@ class Chart:
 
     #: A repository of XYCurve objects specifying a repository of XYCurve objects to display in
     #: the Chart.
-    curves: dict[str, XYCurve] = dict[str, XYCurve]()
+    curves: typing.Dict[str, XYCurve] = {}
 
     #: An :py:class:`~abaqus.XY.AxisArray.AxisArray` object specifying a read-only sequence of axis objects displayed as axes1 -
     #: the abscissa for a Cartesian chart.
-    axes1: AxisArray = AxisArray()
+    axes1: AxisArray = []
 
     #: An :py:class:`~abaqus.XY.AxisArray.AxisArray` object specifying a read-only sequence of axis objects displayed as axes2 -
     #: the ordinate for a Cartesian chart.
-    axes2: AxisArray = AxisArray()
+    axes2: AxisArray = []
 
     #: An :py:class:`~abaqus.XY.Area.Area` object specifying position, padding, background and borders of the chart.
     area: Area = Area()
@@ -196,7 +198,7 @@ class Chart:
     def setValues(
         self,
         chart: "Chart" = None,
-        curvesToPlot: tuple[XYCurve] = (),
+        curvesToPlot: typing.Tuple[XYCurve, ...] = (),
         aspectRatio: float = None,
         transform: tuple = (),
         view: View = None,

@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 
 
@@ -66,7 +68,7 @@ class Cell:
 
         Returns
         -------
-        tuple[int, ...]
+        typing.Tuple[int, ...]
             A tuple of integers.
 
         """
@@ -77,7 +79,7 @@ class Cell:
 
         Returns
         -------
-        tuple[int, ...]
+        typing.Tuple[int, ...]
             A tuple of integers.
 
         """
@@ -88,7 +90,7 @@ class Cell:
 
         Returns
         -------
-        tuple[int, ...]
+        typing.Tuple[int, ...]
             A tuple of integers.
 
         """

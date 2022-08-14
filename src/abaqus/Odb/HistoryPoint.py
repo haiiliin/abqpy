@@ -1,5 +1,3 @@
-import typing
-
 from abaqusConstants import *
 from .OdbAssembly import OdbAssembly
 from .OdbInstance import OdbInstance
@@ -73,7 +71,7 @@ class HistoryPoint:
     sectionPoint: SectionPoint = None
 
     #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the region for which the data are to be collected.
-    region: OdbSet = OdbSet("set", tuple[OdbMeshNode]())
+    region: OdbSet = OdbSet("set", ())
 
     #: An :py:class:`~abaqus.Odb.OdbAssembly.OdbAssembly` object specifying the assembly for which the data are to be collected.
     assembly: OdbAssembly = OdbAssembly()

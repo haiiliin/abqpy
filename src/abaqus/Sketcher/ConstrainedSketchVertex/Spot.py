@@ -1,8 +1,10 @@
+import typing
+
 from .ConstrainedSketchVertex import ConstrainedSketchVertex
 
 
 class Spot(ConstrainedSketchVertex):
-    def __init__(self, point: tuple[float, ...]):
+    def __init__(self, point: typing.Tuple[float, ...]):
         """This method creates a spot (construction point) located at the specified coordinates.
 
         .. note:: 

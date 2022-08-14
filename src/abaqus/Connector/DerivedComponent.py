@@ -29,7 +29,7 @@ class DerivedComponent:
     """
 
     #: A :py:class:`~abaqus.Connector.CDCTermArray.CDCTermArray` object.
-    cdcTerms: CDCTermArray = CDCTermArray()
+    cdcTerms: CDCTermArray = []
 
     def __init__(self):
         """This method creates a DerivedComponent object.

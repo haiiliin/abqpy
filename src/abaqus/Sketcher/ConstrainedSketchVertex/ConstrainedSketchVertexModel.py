@@ -1,3 +1,5 @@
+import typing
+
 from ..ConstrainedSketchBase import ConstrainedSketchBase
 
 
@@ -16,7 +18,7 @@ class ConstrainedSketchVertexModel(ConstrainedSketchBase):
             mdb.models[name].sketches[name]
     """
 
-    def Spot(self, point: tuple[float, ...]):
+    def Spot(self, point: typing.Tuple[float, ...]):
         """This method creates a spot (construction point) located at the specified coordinates.
 
         .. note:: 

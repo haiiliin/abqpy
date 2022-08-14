@@ -1,4 +1,6 @@
-from abaqusConstants import NONE
+import typing
+
+from abaqusConstants import *
 
 from ..Annotation.Annotation import Annotation
 from ..XY.QuantityType import QuantityType
@@ -54,10 +56,10 @@ class UserDataBase:
     legendLabel: str = ""
 
     #: A repository of XYData objects.
-    xyDataObjects: dict[str, XYData] = dict[str, XYData]()
+    xyDataObjects: typing.Dict[str, XYData] = {}
 
     #: A repository of Annotation objects.
-    annotations: dict[str, Annotation] = dict[str, Annotation]()
+    annotations: typing.Dict[str, Annotation] = {}
 
     #: A tuple of pairs of Floats specifying the **X - Y** data pairs.
     data: float = None

@@ -1,9 +1,10 @@
 import typing
+
 from abaqusConstants import *
 from .Cell import Cell
 
 
-class CellArray(list[Cell]):
+class CellArray(typing.List[Cell]):
     """The CellArray is a sequence of Cell objects.
 
     .. note:: 
@@ -27,7 +28,7 @@ class CellArray(list[Cell]):
             mdb.models[name].rootAssembly.sets[name].cells
     """
 
-    def __init__(self, cells: list[Cell]):
+    def __init__(self, cells: typing.List[Cell]):
         """This method creates a CellArray object.
 
         .. note:: 
@@ -207,7 +208,7 @@ class CellArray(list[Cell]):
 
         Returns
         -------
-        dict[str, tuple[float, float, float]]
+        typing.Dict[str, typing.Tuple[float, float, float]]
             A Dictionary object with the following items:
             
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z** -boundary

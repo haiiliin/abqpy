@@ -107,7 +107,7 @@ class CavityRadiation(Interaction):
 
     #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the surfaces for which radiation viewfactor control is
     #: being specified.
-    surfaces: RegionArray = RegionArray()
+    surfaces: RegionArray = []
 
     #: A tuple of Strings specifying the names of the Cavity Radiation properties containing
     #: the surface emissivity data. One name per specified surface. The emissivity data is
