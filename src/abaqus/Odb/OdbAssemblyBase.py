@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .OdbDatumCsys import OdbDatumCsys
 from .OdbInstance import OdbInstance
@@ -27,37 +29,37 @@ class OdbAssemblyBase:
     """
 
     #: A repository of OdbInstance objects.
-    instances: dict[str, OdbInstance] = dict[str, OdbInstance]()
+    instances: typing.Dict[str, OdbInstance] = {}
 
     #: A repository of OdbSet objects specifying node sets.
-    nodeSets: dict[str, OdbSet] = dict[str, OdbSet]()
+    nodeSets: typing.Dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying element sets.
-    elementSets: dict[str, OdbSet] = dict[str, OdbSet]()
+    elementSets: typing.Dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying surfaces.
-    surfaces: dict[str, OdbSet] = dict[str, OdbSet]()
+    surfaces: typing.Dict[str, OdbSet] = {}
 
     #: An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
-    nodes: OdbMeshNodeArray = OdbMeshNodeArray()
+    nodes: OdbMeshNodeArray = []
 
     #: An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object.
-    elements: OdbMeshElementArray = OdbMeshElementArray()
+    elements: OdbMeshElementArray = []
 
     #: A repository of OdbDatumCsys objects.
-    datumCsyses: dict[str, OdbDatumCsys] = dict[str, OdbDatumCsys]()
+    datumCsyses: typing.Dict[str, OdbDatumCsys] = {}
 
     #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
-    sectionAssignments: SectionAssignmentArray = SectionAssignmentArray()
+    sectionAssignments: SectionAssignmentArray = []
 
     #: An :py:class:`~abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray` object.
-    rigidBodies: OdbRigidBodyArray = OdbRigidBodyArray()
+    rigidBodies: OdbRigidBodyArray = []
 
     #: An :py:class:`~abaqus.Odb.OdbPretensionSectionArray.OdbPretensionSectionArray` object.
-    pretensionSections: OdbPretensionSectionArray = OdbPretensionSectionArray()
+    pretensionSections: OdbPretensionSectionArray = []
 
     #: A :py:class:`~abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray` object.
-    connectorOrientations: ConnectorOrientationArray = ConnectorOrientationArray()
+    connectorOrientations: ConnectorOrientationArray = []
 
     def ConnectorOrientation(
         self,

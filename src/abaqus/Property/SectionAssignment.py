@@ -109,7 +109,7 @@ class SectionAssignment:
 
         Returns
         -------
-        tuple[tuple[float, ...]]
+        typing.Tuple[typing.Tuple[float, ...]]
             A sequence of tuples of floats.
 
         Raises

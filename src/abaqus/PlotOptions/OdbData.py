@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .CouplingConstraint import CouplingConstraint
 from .HistoryVariable import HistoryVariable
@@ -47,65 +49,63 @@ class OdbData(_OptionsBase):
 
     #: A repository of HistoryVariable objects specifying the history request label. The
     #: repository is read-only.
-    historyVariables: dict[str, HistoryVariable] = dict[str, HistoryVariable]()
+    historyVariables: typing.Dict[str, HistoryVariable] = {}
 
     #: A repository of OdbDataStep objects specifying the list of steps. The repository is
     #: read-only.
-    steps: dict[str, OdbDataStep] = dict[str, OdbDataStep]()
+    steps: typing.Dict[str, OdbDataStep] = {}
 
     #: A repository of OdbDataInstance objects specifying the list of instances. The repository
     #: is read-only.
-    instances: dict[str, OdbDataInstance] = dict[str, OdbDataInstance]()
+    instances: typing.Dict[str, OdbDataInstance] = {}
 
     #: A repository of OdbDataMaterial objects specifying the list of materials. The repository
     #: is read-only.
-    materials: dict[str, OdbDataMaterial] = dict[str, OdbDataMaterial]()
+    materials: typing.Dict[str, OdbDataMaterial] = {}
 
     #: A repository of OdbDataSection objects specifying the list of sections. The repository
     #: is read-only.
-    sections: dict[str, OdbDataSection] = dict[str, OdbDataSection]()
+    sections: typing.Dict[str, OdbDataSection] = {}
 
     #: A repository of OdbDataElementSet objects specifying the list of element sets. The
     #: repository is read-only.
-    elementSets: dict[str, OdbDataElementSet] = dict[str, OdbDataElementSet]()
+    elementSets: typing.Dict[str, OdbDataElementSet] = {}
 
     #: A repository of OdbDataNodeSet objects specifying the list of node sets. The repository
     #: is read-only.
-    nodeSets: dict[str, OdbDataNodeSet] = dict[str, OdbDataNodeSet]()
+    nodeSets: typing.Dict[str, OdbDataNodeSet] = {}
 
     #: A repository of OdbDataSurfaceSet objects specifying the list of surface sets. The
     #: repository is read-only.
-    surfaceSets: dict[str, OdbDataSurfaceSet] = dict[str, OdbDataSurfaceSet]()
+    surfaceSets: typing.Dict[str, OdbDataSurfaceSet] = {}
 
     #: A repository of OdbDataDatumCsys objects specifying the list of coordinate systems
     #: defined in the model. The repository is read-only.
-    datumCsyses: dict[str, OdbDataDatumCsys] = dict[str, OdbDataDatumCsys]()
+    datumCsyses: typing.Dict[str, OdbDataDatumCsys] = {}
 
     #: A repository of CouplingConstraint objects specifying the list of kinematic couplings.
     #: The repository is read-only.
-    kinematicCouplings: dict[str, CouplingConstraint] = dict[str, CouplingConstraint]()
+    kinematicCouplings: typing.Dict[str, CouplingConstraint] = {}
 
     #: A repository of CouplingConstraint objects specifying the list of distributing
     #: couplings. The repository is read-only.
-    distributingCouplings: dict[str, CouplingConstraint] = dict[
-        str, CouplingConstraint
-    ]()
+    distributingCouplings: typing.Dict[str, CouplingConstraint] = {}
 
     #: A repository of CouplingConstraint objects specifying the list of shellsolid couplings.
     #: The repository is read-only.
-    shellSolidCouplings: dict[str, CouplingConstraint] = dict[str, CouplingConstraint]()
+    shellSolidCouplings: typing.Dict[str, CouplingConstraint] = {}
 
     #: A repository of RigidBodyConstraint objects specifying the list of rigid body
     #: constraints. The repository is read-only.
-    rigidbodies: dict[str, RigidBodyConstraint] = dict[str, RigidBodyConstraint]()
+    rigidbodies: typing.Dict[str, RigidBodyConstraint] = {}
 
     #: A repository of MpcConstraint objects specifying the list of multipoint constraints. The
     #: repository is read-only.
-    multiPointConstraints: dict[str, MpcConstraint] = dict[str, MpcConstraint]()
+    multiPointConstraints: typing.Dict[str, MpcConstraint] = {}
 
     #: A repository of TieConstraint objects specifying the list of Tie constraints. The
     #: repository is read-only.
-    ties: dict[str, TieConstraint] = dict[str, TieConstraint]()
+    ties: typing.Dict[str, TieConstraint] = {}
 
     #: An :py:class:`~abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData` object.
     diagnosticData: OdbDiagnosticData = OdbDiagnosticData()

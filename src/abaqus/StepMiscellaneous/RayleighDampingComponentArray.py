@@ -1,4 +1,5 @@
+import typing
+
 from .RayleighDampingComponent import RayleighDampingComponent
 
-
-RayleighDampingComponentArray = list[RayleighDampingComponent]
+RayleighDampingComponentArray = typing.List[RayleighDampingComponent]

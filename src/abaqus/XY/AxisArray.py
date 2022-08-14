@@ -1,4 +1,5 @@
+import typing
+
 from .Axis import Axis
 
-
-AxisArray = list[Axis]
+AxisArray = typing.List[Axis]

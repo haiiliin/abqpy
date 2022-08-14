@@ -33,11 +33,11 @@ class PressurePenetration(Interaction):
 
     #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the master surface that are exposed to the
     #: fluid.
-    masterPoints: RegionArray = RegionArray()
+    masterPoints: RegionArray = []
 
     #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the slave surface that are exposed to
     #: the fluid.
-    slavePoints: RegionArray = RegionArray()
+    slavePoints: RegionArray = []
 
     def __init__(
         self,

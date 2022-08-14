@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .AnalyticSurface import AnalyticSurface
 from .AnalyticSurfaceSegment import AnalyticSurfaceSegment
@@ -46,34 +48,34 @@ class OdbInstanceBase:
     resultState: SymbolicConstant = PROPAGATED
 
     #: An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
-    nodes: OdbMeshNodeArray = OdbMeshNodeArray()
+    nodes: OdbMeshNodeArray = []
 
     #: An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object.
-    elements: OdbMeshElementArray = OdbMeshElementArray()
+    elements: OdbMeshElementArray = []
 
     #: A repository of OdbSet objects specifying node sets.
-    nodeSets: dict[str, OdbSet] = dict[str, OdbSet]()
+    nodeSets: typing.Dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying element sets.
-    elementSets: dict[str, OdbSet] = dict[str, OdbSet]()
+    elementSets: typing.Dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying surfaces.
-    surfaces: dict[str, OdbSet] = dict[str, OdbSet]()
+    surfaces: typing.Dict[str, OdbSet] = {}
 
     #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
-    sectionAssignments: SectionAssignmentArray = SectionAssignmentArray()
+    sectionAssignments: SectionAssignmentArray = []
 
     #: An :py:class:`~abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray` object.
-    rigidBodies: OdbRigidBodyArray = OdbRigidBodyArray()
+    rigidBodies: OdbRigidBodyArray = []
 
     #: A :py:class:`~abaqus.Odb.BeamOrientationArray.BeamOrientationArray` object.
-    beamOrientations: BeamOrientationArray = BeamOrientationArray()
+    beamOrientations: BeamOrientationArray = []
 
     #: A :py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray` object.
-    materialOrientations: MaterialOrientationArray = MaterialOrientationArray()
+    materialOrientations: MaterialOrientationArray = []
 
     #: A :py:class:`~abaqus.Odb.RebarOrientationArray.RebarOrientationArray` object.
-    rebarOrientations: RebarOrientationArray = RebarOrientationArray()
+    rebarOrientations: RebarOrientationArray = []
 
     #: An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying analytic Surface defined on the instance.
     analyticSurface: AnalyticSurface = AnalyticSurface()
@@ -249,7 +251,7 @@ class OdbInstanceBase:
         ...
 
     def AnalyticRigidSurf2DPlanar(
-        self, name: str, profile: tuple[AnalyticSurfaceSegment], filletRadius: str = 0
+        self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
     ):
         """This method is used to define a two-dimensional AnalyticSurface object on the instance.
 
@@ -276,7 +278,7 @@ class OdbInstanceBase:
     def AnalyticRigidSurfExtrude(
         self,
         name: str,
-        profile: tuple[AnalyticSurfaceSegment],
+        profile: typing.Tuple[AnalyticSurfaceSegment, ...],
         filletRadius: str = 0,
         localCoordData: tuple = (),
     ):
@@ -309,7 +311,7 @@ class OdbInstanceBase:
     def AnalyticRigidSurfRevolve(
         self,
         name: str,
-        profile: tuple[AnalyticSurfaceSegment],
+        profile: typing.Tuple[AnalyticSurfaceSegment, ...],
         filletRadius: str = 0,
         localCoordData: tuple = (),
     ):

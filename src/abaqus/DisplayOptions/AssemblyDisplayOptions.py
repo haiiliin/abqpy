@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .BCDisplayOptions import BCDisplayOptions
 from .ConstraintDisplayOptions import ConstraintDisplayOptions
@@ -105,9 +107,7 @@ class AssemblyDisplayOptions:
     displayGroup: DisplayGroup = DisplayGroup("dg", Leaf(EMPTY_LEAF))
 
     #: A repository of DisplayGroupInstance objects.
-    displayGroupInstances: dict[str, DisplayGroupInstance] = dict[
-        str, DisplayGroupInstance
-    ]()
+    displayGroupInstances: typing.Dict[str, DisplayGroupInstance] = {}
 
     #: An :py:class:`~abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions` object.
     engineeringFeatureOptions: EngineeringFeatureDisplayOptions = (
@@ -171,7 +171,7 @@ class AssemblyDisplayOptions:
         cnxTypeLabels: Boolean = ON,
         cnxTagDisplay: Boolean = OFF,
         predefinedFields: Boolean = OFF,
-        visibleDisplayGroups: tuple[DisplayGroup] = (),
+        visibleDisplayGroups: typing.Tuple[DisplayGroup, ...] = (),
         engineeringFeatures: Boolean = OFF,
         renderBeamProfiles: Boolean = OFF,
         beamScaleFactor: float = 1,
