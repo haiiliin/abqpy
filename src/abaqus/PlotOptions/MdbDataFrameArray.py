@@ -1,6 +1,4 @@
 from .MdbDataFrame import MdbDataFrame
 
 
-class MdbDataFrameArray(list[MdbDataFrame]):
-    def findAt(self):
-        ...
+MdbDataFrameArray = list[MdbDataFrame]

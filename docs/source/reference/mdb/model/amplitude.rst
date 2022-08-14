@@ -62,14 +62,6 @@ Correlation
 
     .. autoclasstoc::
 
-CorrelationArray
-~~~~~~~~~~~~~~~~
-
-.. autoclass:: abaqus.Amplitude.CorrelationArray.CorrelationArray
-    :members:
-
-    .. autoclasstoc::
-
 DecayAmplitude
 ~~~~~~~~~~~~~~
 
