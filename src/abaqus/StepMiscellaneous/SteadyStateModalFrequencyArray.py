@@ -1,6 +1,4 @@
 from .SteadyStateModalFrequency import SteadyStateModalFrequency
 
 
-class SteadyStateModalFrequencyArray(list[SteadyStateModalFrequency]):
-    def findAt(self):
-        ...
+SteadyStateModalFrequencyArray = list[SteadyStateModalFrequency]
