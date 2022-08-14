@@ -353,12 +353,7 @@ class XYData(tuple):
         nodeLabels: tuple = (),
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
-<<<<<<< HEAD
-    ) -> list["XYData"]:
-=======
-        operator: SymbolicConstant = None,
     ) -> typing.List["XYData"]:
->>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
         .. note:: 
@@ -594,12 +589,16 @@ class XYData(tuple):
         numIntervals: int,
         labelType: SymbolicConstant,
         viewport: str = "",
+        removeDuplicateXYPairs: Boolean = True,
+        includeAllElements: Boolean = False,
         step: int = None,
         frame: int = None,
         variable: SymbolicConstant = None,
         deformedMag: float = None,
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
+        projectOntoMesh: Boolean = False,
+        projectionTolerance: float = 0,
     ):
         """This method creates an XYData object from path information.
 
@@ -636,6 +635,12 @@ class XYData(tuple):
         viewport
             A String specifying the viewport name or an Int specifying the viewport id from which to
             obtain values. The default is the current viewport.
+        removeDuplicateXYPairs
+            A Boolean specifying whether to remove duplicate XY values from the final result. The
+            default value is True.
+        includeAllElements
+            A Boolean specifying whether to include elements which do not lie in the direction of
+            the path. The default value is False.
         step
             An Int identifying the step from which to obtain values. The default value is the
             current step.
@@ -672,6 +677,12 @@ class XYData(tuple):
         complexAngle
             A Float specifying the angle (in degrees) at which to display results that contain
             complex numbers when **numericForm** = COMPLEX_VAL_AT_ANGLE. The default value is 0.
+        projectOntoMesh
+            A Boolean to specify whether to consider the data points that do not lie on or inside
+            the mesh. The default value is False.
+        projectionTolerance
+            A Float specifying the tolerance value for the projected distance considered for the
+            data extraction when **projectOntoMesh** =  True. The default value is 0.
 
         Returns
         -------

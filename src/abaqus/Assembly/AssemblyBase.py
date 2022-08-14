@@ -1,9 +1,5 @@
 import typing
 
-<<<<<<< HEAD
-=======
-from abaqus.Datum.DatumCsys import DatumCsys
->>>>>>> c28f7bd (Import typing)
 from abaqusConstants import *
 from .AssemblyModel import AssemblyModel
 from .ConnectorOrientationArray import ConnectorOrientationArray
@@ -810,6 +806,8 @@ class AssemblyBase(Feature):
         ----------
         fileName
             A String specifying the name of the file to which to write. The file name's extension is
+            used to determine whether a part or assembly is written. Use the file extension .asat
+            for the assembly format.
         version
             A Float specifying the ACIS version. For example, the Float 12.0 corresponds to ACIS
             Version 12.0. The default value is the current version of ACIS.
@@ -909,15 +907,7 @@ class AssemblyBase(Feature):
         ...
 
     def smoothNodes(
-<<<<<<< HEAD
-<<<<<<< HEAD
-        self, nodes: tuple[MeshNode] = (), coordinates: tuple[MeshNode] = ()
-=======
-        self, nodes: typing.Tuple[MeshNode] = ()
->>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
-=======
         self, nodes: typing.Tuple[MeshNode, ...] = ()
->>>>>>> c43407d (Update Typing.Tuple)
     ):
         """This method smooths the given nodes of a native mesh, moving them locally to a more
         optimal location that improves the quality of the mesh
@@ -925,9 +915,6 @@ class AssemblyBase(Feature):
         Parameters
         ----------
         nodes
-            A sequence of MeshNode objects or a Set object containing nodes. Nodes that are not
-            part of native mesh only will be smoothed
-        coordinates
             A sequence of MeshNode objects or a Set object containing nodes.
         """
         ...

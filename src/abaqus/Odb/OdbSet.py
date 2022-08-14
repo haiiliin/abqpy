@@ -49,21 +49,7 @@ class OdbSet:
     #: part instance, this member is a sequence of sequences for each part instance.
     faces: SymbolicConstant = None
 
-<<<<<<< HEAD
-    def __init__(self, name: str, nodes: tuple[OdbMeshNode]):
-=======
-    #: A repository of an OdbInstance object.
-    instances: str = ""
-
-    #: A Boolean specifying whether the set is internal.
-    isInternal: Boolean = OFF
-
-<<<<<<< HEAD
-    def __init__(self, name: str, nodes: typing.Tuple[OdbMeshNode]):
->>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
-=======
     def __init__(self, name: str, nodes: typing.Tuple[OdbMeshNode, ...]):
->>>>>>> c43407d (Update Typing.Tuple)
         """This method creates a node set from an array of OdbMeshNode objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
         assembly-level sets).
