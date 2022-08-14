@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .JobData import JobData
 from .OdbAssembly import OdbAssembly

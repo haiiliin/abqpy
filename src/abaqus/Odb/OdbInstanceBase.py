@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .AnalyticSurface import AnalyticSurface
 from .AnalyticSurfaceSegment import AnalyticSurfaceSegment

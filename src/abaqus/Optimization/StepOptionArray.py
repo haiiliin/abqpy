@@ -1,4 +1,5 @@
-from .StepOption import StepOption
+import typing
 
+from .StepOption import StepOption
 
 StepOptionArray = typing.List[StepOption]

@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.ReferencePoint import ReferencePoint
@@ -5,7 +7,6 @@ from ..BasicGeometry.VertexArray import VertexArray
 from ..Datum.Datum import Datum
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNodeArray import MeshNodeArray
-
 # from ..Model.Model import Model
 from ..Region.Set import Set
 from ..Region.Surface import Surface

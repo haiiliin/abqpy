@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .OdbContactDiagnostics import OdbContactDiagnostics
 from .OdbDiagnosticIncrement import OdbDiagnosticIncrement

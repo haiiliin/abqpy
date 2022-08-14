@@ -1,3 +1,5 @@
+import typing
+
 from abaqusConstants import *
 from .OdbDatumCsys import OdbDatumCsys
 from .OdbInstance import OdbInstance
