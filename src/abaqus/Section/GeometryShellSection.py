@@ -86,7 +86,7 @@ class GeometryShellSection(ShellSection):
     thicknessField: str = ""
 
     #: A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
-    rebarLayers: RebarLayers = RebarLayers(CONSTANT, LayerPropertiesArray())
+    rebarLayers: RebarLayers = RebarLayers(CONSTANT, [])
 
     #: A String specifying the name of the AnalyticalField or DiscreteField object used to
     #: define the thickness of the shell elements at each node. The **nodalThicknessField**
