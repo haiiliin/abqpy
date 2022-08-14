@@ -16,6 +16,4 @@ class DirectDampingByFrequency:
     """
 
     #: A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequencyComponentArray.DirectDampingByFrequencyComponentArray` object.
-    components: DirectDampingByFrequencyComponentArray = (
-        DirectDampingByFrequencyComponentArray()
-    )
+    components: DirectDampingByFrequencyComponentArray = []
