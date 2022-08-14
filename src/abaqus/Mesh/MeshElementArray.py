@@ -1,7 +1,7 @@
 from .MeshElement import MeshElement
 
 
-class MeshElementArray(list[MeshElement]):
+class MeshElementArray(typing.List[MeshElement]):
     """The MeshElementArray is a sequence of MeshElement objects.
 
     .. note:: 
@@ -36,7 +36,7 @@ class MeshElementArray(list[MeshElement]):
             mdb.models[name].rootAssembly.surfaces[name].elements
     """
 
-    def __init__(self, elements: list[MeshElement]):
+    def __init__(self, elements: typing.List[MeshElement]):
         """This method creates a MeshElementArray object.
 
         .. note:: 
@@ -179,7 +179,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-        dict[str, tuple[float, float, float]]
+        typing.Dict[str, typing.Tuple[float, float, float]]
             A Dictionary object with the following items:
             
             - **low**: a tuple of three floats representing the minimum x, y, and z boundary values of

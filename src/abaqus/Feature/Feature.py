@@ -44,8 +44,8 @@ class Feature:
         name: str,
         points: float,
         projectionMethod: SymbolicConstant = PROJECT_BY_PROXIMITY,
-        projectOnFaces: tuple[Face] = (),
-        projectOnElementFaces: tuple[MeshFace] = (),
+        projectOnFaces: typing.Tuple[Face] = (),
+        projectOnElementFaces: typing.Tuple[MeshFace] = (),
         projectionDirStartPt: float = None,
         projectionDirEndPt: float = None,
         setName: str = "",
@@ -112,8 +112,8 @@ class Feature:
         createPtAtStartPt: Boolean = True,
         createPtAtEndPt: Boolean = True,
         projectionMethod: SymbolicConstant = PROJECT_BY_PROXIMITY,
-        projectOnFaces: tuple[Face] = (),
-        projectOnElementFaces: tuple[MeshFace] = (),
+        projectOnFaces: typing.Tuple[Face] = (),
+        projectOnElementFaces: typing.Tuple[MeshFace] = (),
         projectionDirStartPt: float = None,
         projectionDirEndPt: float = None,
         flipDirection: Boolean = OFF,
@@ -214,8 +214,8 @@ class Feature:
         numberOfRows: str = 1,
         spacingBetweenRows: str = "",
         projectionMethod: SymbolicConstant = PROJECT_BY_PROXIMITY,
-        projectOnFaces: tuple[Face] = (),
-        projectOnElementFaces: tuple[MeshFace] = (),
+        projectOnFaces: typing.Tuple[Face] = (),
+        projectOnElementFaces: typing.Tuple[MeshFace] = (),
         projectionDirStartPt: float = None,
         projectionDirEndPt: float = None,
         setName: str = "",
@@ -1320,7 +1320,7 @@ class Feature:
         """
         ...
 
-    def PartitionCellByDatumPlane(self, cells: tuple[Cell], datumPlane: DatumPlane):
+    def PartitionCellByDatumPlane(self, cells: typing.Tuple[Cell], datumPlane: DatumPlane):
         """This method partitions one or more cells using the given datum plane.
 
         .. note:: 
@@ -1349,7 +1349,7 @@ class Feature:
         """
         ...
 
-    def PartitionCellByExtendFace(self, cells: tuple[Cell], extendFace: str):
+    def PartitionCellByExtendFace(self, cells: typing.Tuple[Cell], extendFace: str):
         """This method partitions one or more cells by extending the underlying geometry of a given
         face to partition the target cells.
 
@@ -1380,7 +1380,7 @@ class Feature:
         ...
 
     def PartitionCellByExtrudeEdge(
-        self, cells: tuple[Cell], edges: str, line: str, sense: SymbolicConstant
+        self, cells: typing.Tuple[Cell], edges: str, line: str, sense: SymbolicConstant
     ):
         """This method partitions one or more cells by extruding selected edges in the given
         direction.
@@ -1450,7 +1450,7 @@ class Feature:
         """
         ...
 
-    def PartitionCellByPatchNEdges(self, cell: str, edges: tuple[Edge]):
+    def PartitionCellByPatchNEdges(self, cell: str, edges: typing.Tuple[Edge]):
         """This method partitions a cell using an N-sided cutting patch defined by the given edges.
 
         .. note:: 
@@ -1481,7 +1481,7 @@ class Feature:
         ...
 
     def PartitionCellByPlaneNormalToEdge(
-        self, cells: tuple[Cell], edge: Edge, point: int
+        self, cells: typing.Tuple[Cell], edge: Edge, point: int
     ):
         """This method partitions one or more cells using a plane normal to an edge at the given
         edge point.
@@ -1515,7 +1515,7 @@ class Feature:
         ...
 
     def PartitionCellByPlanePointNormal(
-        self, cells: tuple[Cell], point: int, normal: str
+        self, cells: typing.Tuple[Cell], point: int, normal: str
     ):
         """This method partitions one or more cells using a plane defined by a point and a normal
         direction.
@@ -1549,7 +1549,7 @@ class Feature:
         ...
 
     def PartitionCellByPlaneThreePoints(
-        self, cells: tuple[Cell], point1: int, point2: int, point3: int
+        self, cells: typing.Tuple[Cell], point1: int, point2: int, point3: int
     ):
         """This method partitions one or more cells using a plane defined by three points.
 
@@ -1585,7 +1585,7 @@ class Feature:
         ...
 
     def PartitionCellBySweepEdge(
-        self, cells: tuple[Cell], edges: tuple[Edge], sweepPath: Edge
+        self, cells: typing.Tuple[Cell], edges: typing.Tuple[Edge], sweepPath: Edge
     ):
         """This method partitions one or more cells by sweeping selected edges along the given
         sweep path.
@@ -1621,7 +1621,7 @@ class Feature:
         """
         ...
 
-    def PartitionEdgeByDatumPlane(self, edges: tuple[Edge], datumPlane: DatumPlane):
+    def PartitionEdgeByDatumPlane(self, edges: typing.Tuple[Edge], datumPlane: DatumPlane):
         """This method partitions an edge where it intersects with a datum plane.
 
         .. note:: 
@@ -1650,7 +1650,7 @@ class Feature:
         """
         ...
 
-    def PartitionEdgeByParam(self, edges: tuple[Edge], parameter: float):
+    def PartitionEdgeByParam(self, edges: typing.Tuple[Edge], parameter: float):
         """This method partitions one or more edges at the given normalized edge parameter.
 
         .. note:: 
@@ -1811,7 +1811,7 @@ class Feature:
         """
         ...
 
-    def PartitionFaceByDatumPlane(self, faces: tuple[Face], datumPlane: DatumPlane):
+    def PartitionFaceByDatumPlane(self, faces: typing.Tuple[Face], datumPlane: DatumPlane):
         """This method partitions one or more faces using the given datum plane.
 
         .. note:: 
@@ -1836,7 +1836,7 @@ class Feature:
         """
         ...
 
-    def PartitionFaceByExtendFace(self, faces: tuple[Face], extendFace: Face):
+    def PartitionFaceByExtendFace(self, faces: typing.Tuple[Face], extendFace: Face):
         """This method partitions one or more faces by extending the underlying geometry of another
         given face to partition the target faces.
 
@@ -1864,7 +1864,7 @@ class Feature:
         ...
 
     def PartitionFaceByIntersectFace(
-        self, faces: tuple[Face], cuttingFaces: tuple[Face]
+        self, faces: typing.Tuple[Face], cuttingFaces: typing.Tuple[Face]
     ):
         """This method partitions one or more faces using the given cutting faces to partition the
         target faces.
@@ -1892,7 +1892,7 @@ class Feature:
         ...
 
     def PartitionFaceByProjectingEdges(
-        self, faces: tuple[Face], edges: tuple[Edge], extendEdges: Boolean = False
+        self, faces: typing.Tuple[Face], edges: typing.Tuple[Edge], extendEdges: Boolean = False
     ):
         """This method partitions one or more faces by projecting the given edges on the target
         faces.
@@ -1923,7 +1923,7 @@ class Feature:
         """
         ...
 
-    def PartitionFaceByShortestPath(self, faces: tuple[Face], point1: int, point2: int):
+    def PartitionFaceByShortestPath(self, faces: typing.Tuple[Face], point1: int, point2: int):
         """This method partitions one or more faces using a minimum distance path between the two
         given points.
 
@@ -1959,7 +1959,7 @@ class Feature:
 
     def PartitionFaceBySketch(
         self,
-        faces: tuple[Face],
+        faces: typing.Tuple[Face],
         sketch: ConstrainedSketch,
         sketchUpEdge: str = "",
         sketchOrientation: SymbolicConstant = RIGHT,
@@ -2001,7 +2001,7 @@ class Feature:
 
     def PartitionFaceBySketchDistance(
         self,
-        faces: tuple[Face],
+        faces: typing.Tuple[Face],
         sketchPlane: str,
         sketchPlaneSide: SymbolicConstant,
         sketchUpEdge: Edge,
@@ -2053,7 +2053,7 @@ class Feature:
 
     def PartitionFaceBySketchRefPoint(
         self,
-        faces: tuple[Face],
+        faces: typing.Tuple[Face],
         sketchPlane: str,
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
@@ -2103,7 +2103,7 @@ class Feature:
 
     def PartitionFaceBySketchThruAll(
         self,
-        faces: tuple[Face],
+        faces: typing.Tuple[Face],
         sketchPlane: str,
         sketchPlaneSide: SymbolicConstant,
         sketchUpEdge: str,
@@ -2182,7 +2182,7 @@ class Feature:
         """
         return self
 
-    def RemoveWireEdges(self, wireEdgeList: tuple[Edge]):
+    def RemoveWireEdges(self, wireEdgeList: typing.Tuple[Edge]):
         """This method removes wire edges.
 
         .. note:: 

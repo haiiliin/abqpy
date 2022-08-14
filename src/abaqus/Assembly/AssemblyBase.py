@@ -72,57 +72,57 @@ class AssemblyBase(Feature):
     nodes: MeshNodeArray = MeshNodeArray([])
 
     #: A repository of PartInstance objects.
-    instances: dict[str, PartInstance] = dict[str, PartInstance]()
+    instances: typing.Dict[str, PartInstance] = {}
 
     #: A repository of Datum objects specifying all Datum objects in the assembly.
-    datums: list[Datum] = list[Datum]()
+    datums: typing.List[Datum] = []
 
     #: A repository of Feature objects specifying all Feature objects in the assembly.
-    features: dict[str, Feature] = dict[str, Feature]()
+    features: typing.Dict[str, Feature] = {}
 
     #: A repository of Feature objects specifying all Feature objects in the assembly.The
     #: Feature objects in the featuresById repository are the same as the Feature objects in
     #: the features repository. However, the key to the objects in the featuresById repository
     #: is an integer specifying the **ID**, whereas the key to the objects in the features
     #: repository is a string specifying the **name**.
-    featuresById: dict[str, Feature] = dict[str, Feature]()
+    featuresById: typing.Dict[str, Feature] = {}
 
     #: A repository of Surface objects specifying for more information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    surfaces: dict[str, Surface] = dict[str, Surface]()
+    surfaces: typing.Dict[str, Surface] = {}
 
     #: A repository of Surface objects specifying for more information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    allSurfaces: dict[str, Surface] = dict[str, Surface]()
+    allSurfaces: typing.Dict[str, Surface] = {}
 
     #: A repository of Surface objects specifying picked regions.
-    allInternalSurfaces: dict[str, Surface] = dict[str, Surface]()
+    allInternalSurfaces: typing.Dict[str, Surface] = {}
 
     #: A repository of Set objects.
-    sets: dict[str, Set] = dict[str, Set]()
+    sets: typing.Dict[str, Set] = {}
 
     #: A repository of Set objects specifying for more information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    allSets: dict[str, Set] = dict[str, Set]()
+    allSets: typing.Dict[str, Set] = {}
 
     #: A repository of Set objects specifying picked regions.
-    allInternalSets: dict[str, Set] = dict[str, Set]()
+    allInternalSets: typing.Dict[str, Set] = {}
 
     #: A repository of Skin objects specifying the skins created on the assembly.
-    skins: dict[str, Skin] = dict[str, Skin]()
+    skins: typing.Dict[str, Skin] = {}
 
     #: A repository of Stringer objects specifying the stringers created on the assembly.
-    stringers: dict[str, Stringer] = dict[str, Stringer]()
+    stringers: typing.Dict[str, Stringer] = {}
 
     #: A repository of ReferencePoint objects.
-    referencePoints: dict[str, ReferencePoint] = dict[str, ReferencePoint]()
+    referencePoints: typing.Dict[str, ReferencePoint] = {}
 
     #: A repository of ModelInstance objects.
-    modelInstances: dict[str, ModelInstance] = dict[str, ModelInstance]()
+    modelInstances: typing.Dict[str, ModelInstance] = {}
 
     #: A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Model.Model.ModelInstance` object specifying
     #: the ModelInstances.
-    allInstances: dict[str, typing.Union[PartInstance, ModelInstance]] = dict[
+    allInstances: typing.Dict[str, typing.Union[PartInstance, ModelInstance]] = typing.Dict[
         str, typing.Union[PartInstance, ModelInstance]
     ]()
 
@@ -263,7 +263,7 @@ class AssemblyBase(Feature):
         """
         ...
 
-    def excludeFromSimulation(self, instances: tuple[PartInstance], exclude: str):
+    def excludeFromSimulation(self, instances: typing.Tuple[PartInstance], exclude: str):
         """This method excludes the specified part instances from the analysis.
 
         Parameters
@@ -442,7 +442,7 @@ class AssemblyBase(Feature):
 
         Returns
         -------
-        tuple[float, float]
+        typing.Tuple[float, float]
             A tuple of three Floats representing the coordinates of the specified point.
         """
         ...
@@ -484,7 +484,7 @@ class AssemblyBase(Feature):
 
         Returns
         -------
-        tuple[dict, ...]
+        typing.Tuple[dict, ...]
             A tuple of dictionary objects. Each dictionary contains five items with the following
             keys:
         
@@ -511,7 +511,7 @@ class AssemblyBase(Feature):
 
         Returns
         -------
-        tuple[str, ...]
+        typing.Tuple[str, ...]
             A tuple of strings representing the section names. If no section names are found, the
             tuple will contain one empty string.
         """
@@ -615,7 +615,7 @@ class AssemblyBase(Feature):
         """
         ...
 
-    def makeDependent(self, instances: tuple[PartInstance]):
+    def makeDependent(self, instances: typing.Tuple[PartInstance]):
         """This method converts the specified part instances from independent to dependent part
         instances.
 
@@ -626,7 +626,7 @@ class AssemblyBase(Feature):
         """
         ...
 
-    def makeIndependent(self, instances: tuple[PartInstance]):
+    def makeIndependent(self, instances: typing.Tuple[PartInstance]):
         """This method converts the specified part instances from dependent to independent part
         instances.
 
@@ -788,7 +788,7 @@ class AssemblyBase(Feature):
         """
         ...
 
-    def unlinkInstances(self, instances: tuple[PartInstance]):
+    def unlinkInstances(self, instances: typing.Tuple[PartInstance]):
         """This method converts the specified PartInstance objects from linked child instances to
         regular instances. The parts associated with the selected instances will be converted to
         regular parts as well.
@@ -850,7 +850,7 @@ class AssemblyBase(Feature):
 
     def setMeshNumberingControl(
         self,
-        instances: tuple[PartInstance],
+        instances: typing.Tuple[PartInstance],
         startNodeLabel: int = None,
         startElemLabel: int = None,
     ):
@@ -872,11 +872,11 @@ class AssemblyBase(Feature):
 
     def copyMeshPattern(
         self,
-        elements: tuple[MeshElement] = (),
-        faces: tuple[Face] = (),
-        elemFaces: tuple[MeshFace] = (),
+        elements: typing.Tuple[MeshElement] = (),
+        faces: typing.Tuple[Face] = (),
+        elemFaces: typing.Tuple[MeshFace] = (),
         targetFace: MeshFace = None,
-        nodes: tuple[MeshNode] = (),
+        nodes: typing.Tuple[MeshNode] = (),
         coordinates: tuple = (),
     ):
         """This method copies a mesh pattern from a source region consisting of a set of shell
@@ -909,7 +909,7 @@ class AssemblyBase(Feature):
         ...
 
     def smoothNodes(
-        self, nodes: tuple[MeshNode] = ()
+        self, nodes: typing.Tuple[MeshNode] = ()
     ):
         """This method smooths the given nodes of a native mesh, moving them locally to a more
         optimal location that improves the quality of the mesh

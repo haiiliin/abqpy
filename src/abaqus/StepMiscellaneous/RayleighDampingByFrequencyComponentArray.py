@@ -1,4 +1,4 @@
 from .RayleighDampingByFrequencyComponent import RayleighDampingByFrequencyComponent
 
 
-RayleighDampingByFrequencyComponentArray = list[RayleighDampingByFrequencyComponent]
+RayleighDampingByFrequencyComponentArray = typing.List[RayleighDampingByFrequencyComponent]

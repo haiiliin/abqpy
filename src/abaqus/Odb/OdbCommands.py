@@ -51,7 +51,7 @@ def isUpgradeRequiredForOdb(upgradeRequiredOdbPath: str):
     ...
 
 
-def maxEnvelop() -> tuple[FieldOutput, FieldOutput]:
+def maxEnvelop() -> typing.Tuple[FieldOutput, FieldOutput]:
     """Retrieve the maximum value of an output variable over a number of fields.
 
     Parameters
@@ -59,7 +59,7 @@ def maxEnvelop() -> tuple[FieldOutput, FieldOutput]:
 
     Returns
     -------
-    tuple[FieldOutput, FieldOutput]
+    typing.Tuple[FieldOutput, FieldOutput]
         A sequence of two fieldOutput objects. The first fieldOutput object contains the maximum
         value. The second fieldOutput object contains the index of the field containing the
         maximum value. The index follows the order in which fields are positioned in the list of
@@ -74,7 +74,7 @@ def maxEnvelop() -> tuple[FieldOutput, FieldOutput]:
     ...
 
 
-def minEnvelop() -> tuple[FieldOutput, FieldOutput]:
+def minEnvelop() -> typing.Tuple[FieldOutput, FieldOutput]:
     """Retrieve the minimum value of an output variable over a number of fields.
 
     Parameters
@@ -82,7 +82,7 @@ def minEnvelop() -> tuple[FieldOutput, FieldOutput]:
 
     Returns
     -------
-    tuple[FieldOutput, FieldOutput]
+    typing.Tuple[FieldOutput, FieldOutput]
         A sequence of two fieldOutput objects. The first fieldOutput object contains the minimum
         value. The second fieldOutput object contains the index of the field containing the
         minimum value. The index follows the order in which fields are positioned in the list of

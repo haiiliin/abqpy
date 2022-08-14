@@ -82,7 +82,7 @@ class MeshNode:
 
         Returns
         -------
-        edges: tuple[MeshEdge]
+        edges: typing.Tuple[MeshEdge]
             A tuple of MeshEdge objects
         """
         ...
@@ -92,7 +92,7 @@ class MeshNode:
 
         Returns
         -------
-        faces: tuple[MeshFace]
+        faces: typing.Tuple[MeshFace]
             A tuple of MeshFace objects
         """
         ...
@@ -102,7 +102,7 @@ class MeshNode:
 
         Returns
         -------
-        elements: tuple[MeshElement]
+        elements: typing.Tuple[MeshElement]
             A tuple of MeshElement objects
         """
         ...
