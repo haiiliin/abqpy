@@ -46,10 +46,6 @@ from .Plastic.Concrete.Concrete import Concrete
 from .Plastic.Concrete.ConcreteDamagedPlasticity import ConcreteDamagedPlasticity
 from .Plastic.Creep.Creep import Creep
 from .Plastic.CriticalStateClay.ClayPlasticity import ClayPlasticity
-<<<<<<< HEAD
-=======
-from .Plastic.CrushStress.CrushStress import CrushStress
->>>>>>> c28f7bd (Import typing)
 from .Plastic.CrushableFoam.CrushableFoam import CrushableFoam
 from .Plastic.DruckerPrager.Extended.DruckerPrager import DruckerPrager
 from .Plastic.DruckerPrager.ModifiedCap.CapPlasticity import CapPlasticity
@@ -526,43 +522,6 @@ class Material(MaterialBase):
         )
         return self.crushableFoam
 
-<<<<<<< HEAD
-=======
-    def CrushStress(
-        self,
-        crushStressTable: typing.Tuple[typing.Tuple[float, ...]],
-        temperatureDependency: Boolean = OFF,
-        dependencies: int = 0,
-    ):
-        """This method creates a CrushStress object.
-
-        .. note::
-            This function can be accessed by:
-
-            .. code-block:: python
-
-                mdb.models[name].materials[name].CrushStress
-                session.odbs[name].materials[name].CrushStress
-
-        Parameters
-        ----------
-        crushStressTable
-            A sequence of sequences of Floats specifying the items described below.
-        temperatureDependency
-            A Boolean specifying whether the data depend on temperature. The default value is OFF.
-        dependencies
-            An Int specifying the number of field variable dependencies. The default value is 0.
-
-        Returns
-        -------
-            A CrushStress object.
-        """
-        self.crushStress = CrushStress(
-            crushStressTable, temperatureDependency, dependencies
-        )
-        return self.crushStress
-
->>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
     def Damping(
         self,
         alpha: float = 0,

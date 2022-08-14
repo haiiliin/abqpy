@@ -103,18 +103,9 @@ class ContactStd(Interaction):
         excludedPairs: RegionPairs = None, 
         contactPropertyAssignments: ContactPropertyAssignment = None, 
         surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
-<<<<<<< HEAD
         surfaceOffsetAssignments: SurfaceOffsetAssignment = None,
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
-        masterSlaveAssignment: MasterSlaveAssignment = None,
-=======
-        surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
         surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
-        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
-        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: typing.Tuple[SlidingFormulationAssignment, ...] = None,
-        mainSecondaryAssignments: MainSecondaryAssignment = None, 
->>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
+        masterSlaveAssignments: MasterSlaveAssignment = None,
         initializationAssignments: InitializationAssignment = None, 
         stabilizationAssignments: StabilizationAssignment = None, 
         smoothingAssignments: SmoothingAssignment = None, 
@@ -158,7 +149,7 @@ class ContactStd(Interaction):
             A :py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment` object specifying the surface feature angle assignments in
             the contact domain.
         masterSlaveAssignments
-            A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the main-secondary assignments in the
+            A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
             contact domain.
         initializationAssignments
             An :py:class:`~abaqus.Interaction.InitializationAssignment.InitializationAssignment` object specifying the contact initialization assignments in
@@ -186,12 +177,6 @@ class ContactStd(Interaction):
         name: str,
         createStepName: str,
         globalSmoothing: Boolean = ON,
-<<<<<<< HEAD
-=======
-        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
-        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: typing.Tuple[SlidingFormulationAssignment, ...] = None,
->>>>>>> 94bc5bb (Use typing annotations to support Python 3.8 and less)
         useAllstar: Boolean = OFF,
         includedPairs: SymbolicConstant = None,
         excludedPairs: SymbolicConstant = None,
