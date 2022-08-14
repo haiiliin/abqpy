@@ -1,5 +1,4 @@
 from ..TableCollection.ParameterColumn import ParameterColumn
 
 
-class ParameterColumnArray(list[ParameterColumn]):
-    ...
+ParameterColumnArray = list[ParameterColumn]

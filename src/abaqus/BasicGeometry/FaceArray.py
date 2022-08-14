@@ -2,7 +2,7 @@ from abaqusConstants import *
 from .Face import Face
 
 
-class FaceArray:
+class FaceArray(list[Face]):
     """The FaceArray is a sequence of Face objects. If the part is modified, then FaceArray
     must be updated for that part.
 
