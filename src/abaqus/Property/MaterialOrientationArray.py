@@ -1,4 +1,4 @@
 from .MaterialOrientation import MaterialOrientation
 
 
-MaterialOrientationArray = list[MaterialOrientation]
+MaterialOrientationArray = typing.List[MaterialOrientation]

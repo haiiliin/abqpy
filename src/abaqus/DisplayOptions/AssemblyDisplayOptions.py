@@ -105,7 +105,7 @@ class AssemblyDisplayOptions:
     displayGroup: DisplayGroup = DisplayGroup("dg", Leaf(EMPTY_LEAF))
 
     #: A repository of DisplayGroupInstance objects.
-    displayGroupInstances: dict[str, DisplayGroupInstance] = dict[
+    displayGroupInstances: typing.Dict[str, DisplayGroupInstance] = typing.Dict[
         str, DisplayGroupInstance
     ]()
 
@@ -171,7 +171,7 @@ class AssemblyDisplayOptions:
         cnxTypeLabels: Boolean = ON,
         cnxTagDisplay: Boolean = OFF,
         predefinedFields: Boolean = OFF,
-        visibleDisplayGroups: tuple[DisplayGroup] = (),
+        visibleDisplayGroups: typing.Tuple[DisplayGroup] = (),
         engineeringFeatures: Boolean = OFF,
         renderBeamProfiles: Boolean = OFF,
         beamScaleFactor: float = 1,

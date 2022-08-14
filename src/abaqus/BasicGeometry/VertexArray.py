@@ -2,7 +2,7 @@ from abaqusConstants import *
 from .Vertex import Vertex
 
 
-class VertexArray(list[Vertex]):
+class VertexArray(typing.List[Vertex]):
     """The VertexArray is a sequence of ConstrainedSketchVertex objects. If the part is modified, then
     VertexArray must be updated for that part.
 
@@ -29,7 +29,7 @@ class VertexArray(list[Vertex]):
             mdb.models[name].rootAssembly.vertices
     """
 
-    def __init__(self, vertices: list[Vertex]):
+    def __init__(self, vertices: typing.List[Vertex]):
         """This method creates a VertexArray object.
 
         .. note:: 
@@ -198,7 +198,7 @@ class VertexArray(list[Vertex]):
 
         Returns
         -------
-        dict[str, tuple[float, float, float]]
+        typing.Dict[str, typing.Tuple[float, float, float]]
             A Dictionary object with the following items:
             
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z** -boundary

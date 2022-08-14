@@ -8,7 +8,7 @@ class DistanceDimension(ConstrainedSketchDimension):
         self,
         entity1: ConstrainedSketchVertex,
         entity2: ConstrainedSketchVertex,
-        textPoint: tuple[float, ...],
+        textPoint: typing.Tuple[float, ...],
         value: float = None,
         reference: Boolean = OFF,
     ):

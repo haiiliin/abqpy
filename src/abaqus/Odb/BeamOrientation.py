@@ -24,7 +24,7 @@ class BeamOrientation:
     method: SymbolicConstant = None
 
     #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying a region for which the beam orientation is defined.
-    region: OdbSet = OdbSet("set", tuple[OdbMeshNode]())
+    region: OdbSet = OdbSet("set", ())
 
     #: A tuple of Floats specifying direction cosines of the n1-direction of the beam
     #: cross-section.
