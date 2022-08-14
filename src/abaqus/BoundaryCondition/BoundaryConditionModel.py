@@ -7,7 +7,6 @@ from .AccelerationBaseMotionBC import AccelerationBaseMotionBC
 from .AccelerationBaseMotionBCState import AccelerationBaseMotionBCState
 from .AcousticPressureBC import AcousticPressureBC
 from .AcousticPressureBCState import AcousticPressureBCState
-from .Calibration import Calibration
 from .ConcentrationBC import ConcentrationBC
 from .ConcentrationBCState import ConcentrationBCState
 from .ConnAccelerationBC import ConnAccelerationBC
@@ -293,29 +292,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[
             name
         ] = AcousticPressureBCState()
-        return boundaryCondition
-
-    def Calibration(self, name: str) -> Calibration:
-        """This method creates a Calibration object.
-
-        .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
-
-                mdb.models[name].Calibration
-
-        Parameters
-        ----------
-        name
-            A String specifying the name of the new calibration.
-
-        Returns
-        -------
-        calibration: Calibration
-            A :py:class:`~abaqus.BoundaryCondition.Calibration.Calibration` object.
-        """
-        self.boundaryConditions[name] = boundaryCondition = Calibration(name)
         return boundaryCondition
 
     def ConcentrationBC(

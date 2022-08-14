@@ -85,18 +85,18 @@ class XYData(tuple):
     #: **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
     yValuesLabel: str = ""
 
-    #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
-    #: values.
+    #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the
+    #: X -axis1- values.
     axis1QuantityType: QuantityType = None
 
-    #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
-    #: values.
+    #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+    #: the Y -axis2- values.
     axis2QuantityType: QuantityType = None
 
     @typing.overload
     def __init__(
         self,
-        data: tuple,
+        data: tuple = (),
         name: str = "",
         sourceDescription: str = "",
         contentDescription: str = "",
@@ -145,11 +145,11 @@ class XYData(tuple):
             A String specifying the label for the Y-values. This value may be overridden if the
             **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         axis1QuantityType
-            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
-            values.
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+            the X -axis1- values.
         axis2QuantityType
-            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
-            values.
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+            the Y -axis2- values.
 
         Returns
         -------
@@ -237,11 +237,11 @@ class XYData(tuple):
             A String specifying the label for the Y-values. This value may be overridden if the
             **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         axis1QuantityType
-            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
-            values.
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+            the X -axis1- values.
         axis2QuantityType
-            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
-            values.
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+            the Y -axis2- values.
         xField
             An Int specifying the field from which the **X**-data will be read. Fields are delimited
             by spaces, tabs, or commas. The default value is 1.
@@ -386,11 +386,16 @@ class XYData(tuple):
             COMPONENT.Label: A String specifying the invariant or the component; for example,
             'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The
             dictionary contains pairs of the following:A String specifying the category selection
-            label.A String specifying the section point label.For example,
-            variable=('S',INTEGRATION_POINT, ((COMPONENT, 'S22' ), ), )
-            variable=(('S',INTEGRATION_POINT, ((COMPONENT, 'S11' ), ), ), ('U',NODAL,((COMPONENT, 'U1'),)),)
-            variable=(('S', INTEGRATION_POINT, ((INVARIANT, 'Mises' ), ),{'shell < STEEL > < 3 section points >':'SNEG, (fraction = -1.0)', }), )
-                                          `
+            label.A String specifying the section point label. For example,
+
+            .. code-block:: python
+
+                variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
+                variable = (('S', INTEGRATION_POINT, ((COMPONENT, 'S11'), ), ),
+                            ('U', NODAL,((COMPONENT, 'U1'), )), )
+                variable = (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises'), ),
+                             {'shell < STEEL > < 3 section points >': 'SNEG, (fraction = -1.0)', }), )
+
         elementSets
             A sequence of Strings specifying element sets or a String specifying a single element
             set.
@@ -762,10 +767,10 @@ class XYData(tuple):
             A String specifying the label for the Y-values. This value may be overridden if the
             **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         axis1QuantityType
-            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
-            values.
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+            the X -axis1- values.
         axis2QuantityType
-            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
-            values.
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+            the Y -axis2- values.
         """
         ...
