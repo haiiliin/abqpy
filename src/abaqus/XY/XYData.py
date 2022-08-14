@@ -346,7 +346,7 @@ class XYData(tuple):
         self,
         odb: Odb,
         outputPosition: SymbolicConstant,
-        variable: typing.Tuple[tuple],
+        variable: typing.Tuple[tuple, ...],
         elementSets: tuple = (),
         elementLabels: tuple = (),
         nodeSets: tuple = (),

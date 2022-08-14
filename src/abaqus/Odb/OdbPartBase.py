@@ -304,7 +304,7 @@ class OdbPartBase:
         ...
 
     def AnalyticRigidSurf2DPlanar(
-        self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment], filletRadius: str = 0
+        self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
     ):
         """This method is used to define a two-dimensional AnalyticSurface object on the part
         object.
@@ -329,7 +329,7 @@ class OdbPartBase:
         ...
 
     def AnalyticRigidSurfExtrude(
-        self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment], filletRadius: str = 0
+        self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
     ):
         """This method is used to define a three-dimensional cylindrical AnalyticSurface on the
         part object.
@@ -354,7 +354,7 @@ class OdbPartBase:
         ...
 
     def AnalyticRigidSurfRevolve(
-        self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment], filletRadius: str = 0
+        self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
     ):
         """This method is used to define a three-dimensional AnalyticSurface of revolution on the
         part object.
