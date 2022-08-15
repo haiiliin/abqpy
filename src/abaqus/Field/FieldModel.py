@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .DataTableArray import DataTableArray
 from .DiscreteField import DiscreteField
 from .ExpressionField import ExpressionField

@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .OdbDatumCsys import OdbDatumCsys
 from .OdbInstance import OdbInstance
 from .OdbMeshElementArray import OdbMeshElementArray

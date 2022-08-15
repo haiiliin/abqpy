@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 from abaqusConstants import *
+=======
+from ..UtilityAndView.abaqusConstants import *
+from .Field import Field
+>>>>>>> 466b132 (Relative imports to use `abaqusConstants` module)
 from .FluidCavityPressure import FluidCavityPressure
 from .InitialState import InitialState
 from .KinematicHardening import KinematicHardening

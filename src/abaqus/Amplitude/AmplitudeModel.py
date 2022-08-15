@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .ActuatorAmplitude import ActuatorAmplitude
 from .DecayAmplitude import DecayAmplitude
 from .EquallySpacedAmplitude import EquallySpacedAmplitude

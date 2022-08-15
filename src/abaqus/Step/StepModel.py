@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..Step.AnnealStep import AnnealStep
