@@ -45,9 +45,8 @@ class SymbolicConstant(str):
         SymbolicConstant
             A :py:class:`~abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant` object.
         """
-        for n in text:
-            if n not in [chr(s) for s in list(range(65,91)) + list(range(48,58))] + ['_']:
-                raise ValueError(f'SymbolicConstant name {text} may only contain upper case, digit or underscore')
+        if not text.isupper() or not text.isidentifier():
+            raise ValueError(f'SymbolicConstant name {text} may only contain upper case, digit or underscore')
         self.text = text
 
     def __copy__(self) -> SymbolicConstant:
