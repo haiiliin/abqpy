@@ -2,7 +2,7 @@ from .AbaqusBoolean import AbaqusBoolean
 from __future__ import annotations
 from typing import Any, Union
 
-class SymbolicConstant(str):
+class SymbolicConstant:
     """The SymbolicConstant object represents a string in a way that can be stored in a replay
     file and used as an argument to Abaqus Scripting Interface methods and functions. By
     convention the string representation of the SymbolicConstant object is the same as its
