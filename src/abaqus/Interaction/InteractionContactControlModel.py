@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .ExpContactControl import ExpContactControl
 from .ExpInitialization import ExpInitialization
 from .StdContactControl import StdContactControl

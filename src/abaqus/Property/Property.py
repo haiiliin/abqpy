@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from ..Datum.Datum import Datum
 from ..Region.Region import Region
 

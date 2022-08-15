@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from .....UtilityAndView.abaqusConstants import *
 from .CastIronCompressionHardening import CastIronCompressionHardening
 from .CastIronTensionHardening import CastIronTensionHardening
 

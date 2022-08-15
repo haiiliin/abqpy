@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from .....UtilityAndView.abaqusConstants import *
 from .DruckerPragerCreep import DruckerPragerCreep
 from .DruckerPragerHardening import DruckerPragerHardening
 from .TriaxialTestData import TriaxialTestData

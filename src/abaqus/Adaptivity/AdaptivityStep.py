@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
 from .AdaptiveMeshDomain import AdaptiveMeshDomain
 from .DisplacementAdaptiveMeshConstraintState import (

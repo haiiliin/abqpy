@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .CommonOptions import CommonOptions
 from .ContourOptions import ContourOptions
 from .DisplayBodyOptions import DisplayBodyOptions

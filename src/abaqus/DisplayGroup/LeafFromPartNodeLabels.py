@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Leaf import Leaf
 from ..Part.Part import Part
 

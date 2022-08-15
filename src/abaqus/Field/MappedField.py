@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .AnalyticalField import AnalyticalField
 from .OdbMeshRegionData import OdbMeshRegionData
 

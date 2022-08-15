@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .AutoColors import AutoColors
 from .Color import Color
 from .Drawing import Drawing

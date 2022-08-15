@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .LoadCase import LoadCase
 from ..Step.StepBase import StepBase
 
