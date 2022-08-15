@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Material import Material
 
 """ This command evaluates the behavior of a hyperelastic material under standard test 

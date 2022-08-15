@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Field import Field
 from .FluidCavityPressure import FluidCavityPressure
 from .InitialState import InitialState

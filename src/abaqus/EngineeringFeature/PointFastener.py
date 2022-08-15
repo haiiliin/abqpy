@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Fastener import Fastener
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray

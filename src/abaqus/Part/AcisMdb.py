@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .AcisFile import AcisFile
 from ..Mdb.MdbBase import MdbBase
 

@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .SectionAssignment import SectionAssignment
 from ..Assembly.AssemblyBase import AssemblyBase
 from ..Region.Set import Set

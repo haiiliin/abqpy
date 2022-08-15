@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .EventSeries import EventSeries
 from .EventSeriesType import EventSeriesType
 from ..Model.ModelBase import ModelBase
