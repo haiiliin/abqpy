@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import *
 from .BiaxialTestDataArray import BiaxialTestDataArray
 from .PlanarTestDataArray import PlanarTestDataArray
 from .UniaxialTestDataArray import UniaxialTestDataArray

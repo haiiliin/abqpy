@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .AccelerationBC import AccelerationBC
 from .AccelerationBCState import AccelerationBCState
 from .AccelerationBaseMotionBC import AccelerationBaseMotionBC

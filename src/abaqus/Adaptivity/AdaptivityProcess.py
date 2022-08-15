@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .AdaptivityIteration import AdaptivityIteration
 from ..Job.ModelJob import ModelJob
 

@@ -1,7 +1,11 @@
 import typing
 
+<<<<<<< HEAD
 from abaqusConstants import *
 
+=======
+from ..UtilityAndView.abaqusConstants import *
+>>>>>>> 466b132 (Relative imports to use `abaqusConstants` module)
 from .KeywordBlock import KeywordBlock
 from ..Adaptivity.AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from ..Adaptivity.AdaptiveMeshControl import AdaptiveMeshControl
