@@ -71,7 +71,7 @@ pip install git+https://github.com/haiiliin/abqpy.git@V2016
 您可以将 Abaqus/Python 脚本放入 Jupyter Notebook。 当您运行该 Notebook 时，
 `abqpy` 会将该 Notebook 转换为具有相同名称 `.ipynb` 文件，然后将其提交给 Abaqus。
 
-访问 [examples](main/examples) 查看使用 Jupyter Notebook 构建 Abaqus 模型的案例。
+访问 [案例页](main/examples) 查看使用 Jupyter Notebook 创建 Abaqus 模型的案例。
  
 为了使用 **Jupyter Notebook** 功能，您必须安装以下 Python 包：
 ```shell
