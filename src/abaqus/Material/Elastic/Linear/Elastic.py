@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ....UtilityAndView.abaqusConstants import *
 from .FailStrain import FailStrain
 from .FailStress import FailStress
 

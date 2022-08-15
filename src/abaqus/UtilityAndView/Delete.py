@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 
 """The deleteObjectCallback module provides methods that allow you to register a callback 
 that will be invoked when specified Abaqus Scripting Interface objects are about to be 

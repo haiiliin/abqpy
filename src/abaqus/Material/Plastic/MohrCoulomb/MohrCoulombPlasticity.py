@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ....UtilityAndView.abaqusConstants import *
 from .MohrCoulombHardening import MohrCoulombHardening
 from .TensionCutOff import TensionCutOff
 

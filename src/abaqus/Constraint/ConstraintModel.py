@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .AdjustPoints import AdjustPoints
 from .Coupling import Coupling
 from .DisplayBody import DisplayBody
