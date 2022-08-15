@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Queue import Queue
 from ..Session.SessionBase import SessionBase
 

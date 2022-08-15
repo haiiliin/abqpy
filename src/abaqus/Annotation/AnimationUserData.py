@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Arrow import Arrow
 from .Text import Text
 from ..Odb.UserDataBase import UserDataBase

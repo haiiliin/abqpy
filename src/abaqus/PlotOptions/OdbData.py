@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .CouplingConstraint import CouplingConstraint
 from .HistoryVariable import HistoryVariable
 from .MpcConstraint import MpcConstraint

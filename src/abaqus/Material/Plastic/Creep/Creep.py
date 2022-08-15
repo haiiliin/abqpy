@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ....UtilityAndView.abaqusConstants import *
 from ..Metal.ORNL.Ornl import Ornl
 from ..Potential import Potential
 

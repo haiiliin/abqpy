@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .BeadTask import BeadTask
 from .ShapeTask import ShapeTask
 from .SizingTask import SizingTask

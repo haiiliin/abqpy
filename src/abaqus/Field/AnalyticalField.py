@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Field import Field
 from .OdbMeshRegionData import OdbMeshRegionData
 from ..Datum.DatumCsys import DatumCsys

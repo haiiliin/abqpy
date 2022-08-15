@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .DesignResponse import DesignResponse
 from .StepOptionArray import StepOptionArray
 
