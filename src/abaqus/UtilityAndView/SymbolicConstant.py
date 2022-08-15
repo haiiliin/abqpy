@@ -24,7 +24,7 @@ class SymbolicConstant(str):
             from abaqusConstants import *
     """
 
-    def __init__(self, name: str, scdId:int = -1) -> None:
+    def __init__(self, text: str, scdId:int = -1) -> None:
         """The SymbolicConstant method creates a SymbolicConstant object.
 
         .. note:: 
@@ -45,16 +45,16 @@ class SymbolicConstant(str):
         SymbolicConstant
             A :py:class:`~abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant` object.
         """
-        for n in name:
+        for n in text:
             if n not in [chr(s) for s in list(range(65,91)) + list(range(48,58))] + ['_']:
-                raise ValueError(f'SymbolicConstant name {name} may only contain upper case, digit or underscore')
-        self.name = name
+                raise ValueError(f'SymbolicConstant name {text} may only contain upper case, digit or underscore')
+        self.text = text
 
     def __copy__(self) -> SymbolicConstant:
         ...
     
     def __getstate__(self) -> str:
-        return self.name
+        return self.text
     
     def __hash__(self) -> int:
         ...
@@ -73,13 +73,13 @@ class SymbolicConstant(str):
         ...
     
     def __str__(self) -> str:
-        return self.name
+        return self.text
     
     def getId(self) -> int:
         ...
     
     def getText(self) -> str:
-        return self.name
+        return self.text
     
     @staticmethod 
     def __new__(cls, *args, **kargs) -> SymbolicConstant:
