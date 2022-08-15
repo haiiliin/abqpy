@@ -1,7 +1,3 @@
-# encoding: utf-8
-# module abaqusConstantsSupplement
-# from D:\SIMULIA\Abaqus\6.14-4\tools\SMApy\python2.7\lib\site-packages\abaqusConstantsSupplement.pyc
-# by generator 1.147
 """
 abaqusConstantsSupplement.py
 
@@ -9,12 +5,19 @@ This module is included by abaqusConstants and contains SymbolicConstants
 required by ABAQUS that are not defined in C++
 """
 
-# imports
-import re as re  # D:\SIMULIA\Abaqus\6.14-4\tools\SMApy\python2.7\lib\re.pyc
-import sys as sys  # <module 'sys' (built-in)>
-import os as os  # D:\SIMULIA\Abaqus\6.14-4\tools\SMApy\python2.7\lib\os.pyc
+from abaqus.UtilityAndView.SymbolicConstant import SymbolicConstant
 
-# no functions
+
+# Variables with simple values
+
+FALSE = False
+
+OFF = 0
+
+ON = 1
+
+TRUE = True
+
 
 # variables with complex values
 
@@ -32,7 +35,6 @@ KERNEL = None  # (!) real value is 'KERNEL'
 
 LATEST = None  # (!) real value is 'LATEST'
 
-from symbolicConstants import *
 
 A0 = SymbolicConstant('A0')
 A1 = SymbolicConstant('A1')
@@ -2528,4 +2530,3 @@ ZAXIS = SymbolicConstant('ZAXIS')
 ZERO = SymbolicConstant('ZERO')
 ZERO_PRESSURE = SymbolicConstant('ZERO_PRESSURE')
 ZSYMM = SymbolicConstant('ZSYMM')
-# okay decompiling abaqusConstants.pyc
