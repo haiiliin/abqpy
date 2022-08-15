@@ -12,7 +12,7 @@
 [![GitHub release](https://img.shields.io/github/release/haiiliin/abqpy.svg)](https://GitHub.com/haiiliin/abqpy/releases/)
 [![PyPI download month](https://img.shields.io/pypi/dm/abqpy.svg)](https://pypi.python.org/pypi/abqpy/)
 
-Migrating pyabaqus to abqpy.
+Read this in other languages: [English](README.md), [简体中文](README-zh-cn.md).
 
 Type hints for Abaqus/Python scripting
 
@@ -44,7 +44,7 @@ contributions, please feel free to create your pull requests.
 or a later version.
 
 `abqpy` is uploaded to [PyPI](https://pypi.org/project/abqpy), you can simply install 
-it using pip:
+it using `pip`:
 ```shell
 pip install abqpy
 ```
@@ -80,8 +80,7 @@ When you run the notebook, the package will convert the notebook into a plain Py
 with the same name but with `.py` suffix instead of `.ipynb`, and then it will be submitted 
 to Abaqus kernel. 
 
-Go [github.com/haiiliin/abqpy/tree/main/examples](https://github.com/haiiliin/abqpy/tree/main/examples)
-for tests using Jupyter Notebooks to build the Abaqus model.
+Go [examples](main/examples) for tests using Jupyter Notebooks to build the Abaqus model.
  
 In order to use the **Jupyter Notebook** feature, you have to install the following packages:
 ```shell
@@ -128,12 +127,12 @@ system variable named `ABAQUS_BAT_PATH`, and set the value to the file path of t
 
 - Create an Abaqus Model
 
-  ![Model](https://github.com/haiiliin/abqpy/blob/main/docs/source/images/model-code.gif "Create an Abaqus Model")
+  ![Model](docs/source/images/model-code.gif "Create an Abaqus Model")
 
 - Extract Output Data
 
-  ![Output](https://github.com/haiiliin/abqpy/blob/main/docs/source/images/output-code.gif "Extract Output Data")
+  ![Output](docs/source/images/output-code.gif "Extract Output Data")
 
 ## Explore more
 
-For detailed usage of this package, please refer to the [documentation](https://haiiliin.com/abqpy/).
+For detailed usage of this package, please refer to the [documentation](https://abqpy.haiiliin.com/).
