@@ -24,7 +24,7 @@ class SymbolicConstant(str):
             from abaqusConstants import *
     """
 
-    def __init__(self, text: str, scdId:int = -1) -> None:
+    def __init__(self, text: str) -> None:
         """The SymbolicConstant method creates a SymbolicConstant object.
 
         .. note:: 
