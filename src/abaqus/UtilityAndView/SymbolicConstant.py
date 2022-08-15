@@ -1,4 +1,5 @@
 from __future__ import annotations
+from typing import Any
 
 class SymbolicConstant(str):
     """The SymbolicConstant object represents a string in a way that can be stored in a replay
