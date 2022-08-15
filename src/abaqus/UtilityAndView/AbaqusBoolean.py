@@ -1,4 +1,6 @@
-class AbaqusBoolean:
+from __future__ import annotations
+
+class AbaqusBoolean(int):
     """The AbaqusBoolean object is used in a similar way to the SymbolicConstant object. If you
     pass an AbaqusBoolean object to the Python repr() function, the function returns the
     text without quotes. In effect, the text is the variable that, by convention, refers to
@@ -22,7 +24,7 @@ class AbaqusBoolean:
             from abaqusConstants import *
     """
 
-    def __init__(self, value: int):
+    def __init__(self, value: int) -> None:
         """The AbaqusBoolean method creates an AbaqusBoolean object.
 
         .. note:: 
@@ -43,4 +45,47 @@ class AbaqusBoolean:
         AbaqusBoolean
             An :py:class:`~abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean` object.
         """
+        super().__init__()
+        if value not in (0, 1):
+            raise ValueError(f'AbaqusBoolean must have value argument 0 or 1.  {value} supplied')
+    
+    def getId(self) -> int:
         ...
+    
+    def getText(self) -> str:
+        if bool(self):
+            return 'ON'
+        else:
+            return 'OFF'
+    
+    def isTrue(self) -> bool:
+        return bool(self)
+    
+    def __copy__(self) -> AbaqusBoolean:
+        ...
+    
+    def __getstate__(self) -> bool:
+        ...
+    
+    def __hash__(self) -> int:
+        ...
+    
+    @staticmethod  # known case of __new__
+    def __new__(cls, *args, **kargs):  # reliably restored by inspect
+        # no doc
+        pass
+
+    def __reduce__(self) -> tuple:  # known return case of __reduce__
+        ...
+    
+    def __repr__(self) -> str: 
+        return self.getText()
+
+    def __setstate__(self, *args) -> None:
+        ...
+    
+    def __str__(self) -> str:
+        return self.getText()
+
+    __weakref__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    """list of weak references to the object (if defined)"""

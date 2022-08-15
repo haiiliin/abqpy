@@ -1,4 +1,8 @@
-class SymbolicConstant:
+from .AbaqusBoolean import AbaqusBoolean
+from __future__ import annotations
+from typing import Any, Union
+
+class SymbolicConstant(str):
     """The SymbolicConstant object represents a string in a way that can be stored in a replay
     file and used as an argument to Abaqus Scripting Interface methods and functions. By
     convention the string representation of the SymbolicConstant object is the same as its
@@ -21,7 +25,7 @@ class SymbolicConstant:
             from abaqusConstants import *
     """
 
-    def __init__(self, text: str):
+    def __init__(self, text: str) -> None:
         """The SymbolicConstant method creates a SymbolicConstant object.
 
         .. note:: 
@@ -42,4 +46,57 @@ class SymbolicConstant:
         SymbolicConstant
             A :py:class:`~abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant` object.
         """
+        if not text.isupper() or not text.isidentifier():
+            raise ValueError(f'SymbolicConstant name {text} may only contain upper case, digit or underscore')
+        self.text = text
+
+    def __copy__(self) -> SymbolicConstant:
         ...
+    
+    def __getstate__(self) -> str:
+        return self.text
+    
+    def __hash__(self) -> int:
+        ...
+    
+    def __lt__(self, other: Any) -> bool:
+        """Sorting method; True if self is < other"""
+        return self < other
+    
+    def __reduce__(self) -> tuple:  # known return case of __reduce__
+        ...
+    
+    def __repr__(self) -> str: 
+        return self.getText()
+    
+    def __setstate__(self, *args) -> None:
+        ...
+    
+    def __str__(self) -> str:
+        return self.text
+    
+    def getId(self) -> int:
+        ...
+    
+    def getText(self) -> str:
+        return self.text
+    
+    @staticmethod 
+    def __new__(cls, name: str, *args, **kargs) -> Union[SymbolicConstant,AbaqusBoolean]:
+        if name == "ON":
+            return AbaqusBoolean(1)
+        elif name == "OFF":
+            return AbaqusBoolean(0)
+        else:
+            return super().__new__(cls)
+    
+    @classmethod
+    def _addToCache(cls, *args, **kwargs):  # real signature unknown
+        """
+        Helper method for __new__
+        Also used by AbaqusBoolean.__new__
+        """
+        pass
+
+    __weakref__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    """list of weak references to the object (if defined)"""
