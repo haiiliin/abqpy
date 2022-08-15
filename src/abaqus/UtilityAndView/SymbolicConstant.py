@@ -1,5 +1,5 @@
-from .AbaqusBoolean import AbaqusBoolean
 from __future__ import annotations
+from .AbaqusBoolean import AbaqusBoolean
 from typing import Any, Union
 
 class SymbolicConstant:
