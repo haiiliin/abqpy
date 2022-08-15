@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Density.Density import Density
 from .Elastic.HyperElastic.HyperFoam.Hyperfoam import Hyperfoam
 from .Elastic.HyperElastic.Hyperelastic import Hyperelastic

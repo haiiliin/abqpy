@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import *
 from .MeanFieldInclusion import MeanFieldInclusion
 from .MeanFieldMatrix import MeanFieldMatrix
 from .MeanFieldVoid import MeanFieldVoid

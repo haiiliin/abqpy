@@ -22,7 +22,7 @@ class SymbolicConstant:
         .. code-block:: python
 
             from symbolicConstants import *
-            from abaqusConstants import *
+            from ..UtilityAndView.abaqusConstants import *
     """
 
     def __init__(self, text: str) -> None:

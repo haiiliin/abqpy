@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .AttributeColorMap import AttributeColorMap
 from .Displayable import Displayable
 from .ImageOptions import ImageOptions

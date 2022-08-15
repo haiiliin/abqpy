@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .AssembledFastener import AssembledFastener
 from .ContourIntegral import ContourIntegral
 from .DebondVCCT import DebondVCCT

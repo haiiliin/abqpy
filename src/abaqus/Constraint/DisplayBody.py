@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Constraint import Constraint
 from ..Assembly.PartInstance import PartInstance
 from ..BasicGeometry.ModelDotArray import ModelDotArray
