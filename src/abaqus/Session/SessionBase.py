@@ -1,4 +1,5 @@
 import typing
+import sys
 
 from ..UtilityAndView.abaqusConstants import *
 from .AutoColors import AutoColors
@@ -686,4 +687,4 @@ class SessionBase:
 
     @staticmethod
     def exit():
-        os.system("exit")
+        sys.exit()
