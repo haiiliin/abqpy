@@ -1,5 +1,6 @@
+from .AbaqusBoolean import AbaqusBoolean
 from __future__ import annotations
-from typing import Any
+from typing import Any, Union
 
 class SymbolicConstant(str):
     """The SymbolicConstant object represents a string in a way that can be stored in a replay
@@ -81,8 +82,13 @@ class SymbolicConstant(str):
         return self.text
     
     @staticmethod 
-    def __new__(cls, *args, **kargs) -> SymbolicConstant:
-        ...
+    def __new__(cls, name: str, *args, **kargs) -> Union[SymbolicConstant,AbaqusBoolean]:
+        if name == "ON":
+            return AbaqusBoolean(1)
+        elif name == "OFF":
+            return AbaqusBoolean(0)
+        else:
+            return super().__new__(cls)
     
     @classmethod
     def _addToCache(cls, *args, **kwargs):  # real signature unknown
