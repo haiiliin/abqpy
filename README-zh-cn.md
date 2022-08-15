@@ -17,7 +17,7 @@
 Abaqus/Python 脚本的类型提示
 
 `abqpy` 是一个 Python 包，为 Abaqus 的 Python 脚本提供类型提示，您可以使用它方便地编写 Abaqus Python 脚本。 
-它还提供了一些简单的 API 来执行 Abaqus 命令，以便您可以运行 Python 脚本来构建模型、
+它还提供了一些简单的 API 来执行 Abaqus 命令，以便您可以运行 Python 脚本来创建模型、
 提交作业并提取输出数据，即使不打开 Abaqus/CAE。
 
 ## 该项目的其他链接
@@ -30,7 +30,7 @@ Abaqus/Python 脚本的类型提示
 
 ## 欢迎拉取合并请求
 
-由于`abqpy`是从 Abaqus 官方文档中重构出来的，很多文档字符串的格式还不完善，比如 
+由于`abqpy`是从 Abaqus 官方文档中重构出来的，很多文档字符串的格式还不完善，比如
 数学方程，对象的属性，由于我的时间有限，这些东西还没有完成，如果有人愿意做出任何贡献，
 请随时创建您的拉取请求。
 
@@ -55,7 +55,7 @@ conda install -c haiiliin abqpy
 pip install abqpy==2019.0
 conda install -c haiiliin abqpy=2019.0
 ```
-A better way is to install the package from source without specifying the patch number:
+更好的方法是直接从源代码安装最新的版本，这样你可以仅指定主版本号：
 ```shell
 pip install git+https://github.com/haiiliin/abqpy.git@V2022
 pip install git+https://github.com/haiiliin/abqpy.git@V2021
@@ -124,4 +124,4 @@ C:/SIMULIA/Commands/abaqus.bat
 
 ## 更多
 
-更详细使用请参考[文档](https://abqpy.haiiliin.com/)。
+更详细使用请参考 [文档](https://abqpy.haiiliin.com/)。
