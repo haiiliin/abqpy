@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .DesignResponse import DesignResponse
 from .GeometricRestriction import GeometricRestriction
 from .ObjectiveFunction import ObjectiveFunction

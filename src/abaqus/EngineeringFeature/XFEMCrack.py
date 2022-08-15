@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Crack import Crack
 from ..Region.Region import Region
 

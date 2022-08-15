@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .CohesiveBehavior import CohesiveBehavior
 from .ContactDamage import ContactDamage
 from .ContactDamping import ContactDamping

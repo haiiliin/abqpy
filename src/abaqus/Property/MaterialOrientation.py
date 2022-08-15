@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from ..Datum.DatumAxis import DatumAxis
 from ..Datum.DatumCsys import DatumCsys
 from ..Region.Set import Set

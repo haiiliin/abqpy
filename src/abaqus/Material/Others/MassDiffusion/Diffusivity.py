@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ....UtilityAndView.abaqusConstants import *
 from .PressureEffect import PressureEffect
 from .SoretEffect import SoretEffect
 
