@@ -1,7 +1,7 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .IgnoredVertex import IgnoredVertex
+from ..UtilityAndView.abaqusConstants import *
 
 
 class IgnoredVertexArray(typing.List[IgnoredVertex]):

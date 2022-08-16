@@ -1,12 +1,12 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .DesignResponse import DesignResponse
 from .GeometricRestriction import GeometricRestriction
 from .ObjectiveFunction import ObjectiveFunction
 from .OptimizationConstraint import OptimizationConstraint
 from .OptimizationTask import OptimizationTask
 from .StopCondition import StopCondition
+from ..UtilityAndView.abaqusConstants import *
 
 
 class SizingTask(OptimizationTask):

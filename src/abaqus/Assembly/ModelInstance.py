@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.ReferencePoint import ReferencePoint
 from ..BasicGeometry.VertexArray import VertexArray
@@ -10,6 +9,7 @@ from ..Mesh.MeshNodeArray import MeshNodeArray
 # from ..Model.Model import Model
 from ..Region.Set import Set
 from ..Region.Surface import Surface
+from ..UtilityAndView.abaqusConstants import *
 
 
 # prevent circular imports

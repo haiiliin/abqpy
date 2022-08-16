@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .ContactPropertyAssignment import ContactPropertyAssignment
 from .Interaction import Interaction
 from .MasterSlaveAssignment import MasterSlaveAssignment
@@ -12,6 +11,7 @@ from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
 from .SurfaceFrictionAssignment import SurfaceFrictionAssignment
 from .SurfaceOffsetAssignment import SurfaceOffsetAssignment
 from .SurfaceThicknessAssignment import SurfaceThicknessAssignment
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ContactExp(Interaction):

@@ -1,7 +1,7 @@
 import typing
 
-from ...UtilityAndView.abaqusConstants import *
 from ..ConstrainedSketchBase import ConstrainedSketchBase
+from ...UtilityAndView.abaqusConstants import *
 
 
 class ConstrainedSketchGeometryModel(ConstrainedSketchBase):

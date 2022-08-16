@@ -1,11 +1,11 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .OdbAnalysisError import OdbAnalysisError
 from .OdbAnalysisWarning import OdbAnalysisWarning
 from .OdbDiagnosticStep import OdbDiagnosticStep
 from .OdbJobTime import OdbJobTime
 from .OdbNumericalProblemSummary import OdbNumericalProblemSummary
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OdbDiagnosticData:

@@ -1,8 +1,8 @@
-from ....UtilityAndView.abaqusConstants import *
 from .ConcreteCompressionDamage import ConcreteCompressionDamage
 from .ConcreteCompressionHardening import ConcreteCompressionHardening
 from .ConcreteTensionDamage import ConcreteTensionDamage
 from .ConcreteTensionStiffening import ConcreteTensionStiffening
+from ....UtilityAndView.abaqusConstants import *
 
 
 class ConcreteDamagedPlasticity:

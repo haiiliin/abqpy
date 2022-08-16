@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
 from .ConnectorOptions import ConnectorOptions
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ConnectorDamping(ConnectorBehaviorOption):

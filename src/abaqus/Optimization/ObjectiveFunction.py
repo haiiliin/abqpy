@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .OptimizationObjectiveArray import OptimizationObjectiveArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ObjectiveFunction:

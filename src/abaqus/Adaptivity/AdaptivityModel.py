@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from .AdaptiveMeshControl import AdaptiveMeshControl
 from .DisplacementAdaptiveMeshConstraint import DisplacementAdaptiveMeshConstraint
@@ -10,6 +9,7 @@ from ..Datum.DatumCsys import DatumCsys
 from ..Model.ModelBase import ModelBase
 from ..Odb.Odb import Odb
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class AdaptivityModel(ModelBase):

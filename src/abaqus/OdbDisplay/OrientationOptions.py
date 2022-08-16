@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from ..PlotOptions.DGOrientationOptions import DGOrientationOptions
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OrientationOptions(DGOrientationOptions):

@@ -1,7 +1,7 @@
-from ..UtilityAndView.abaqusConstants import *
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
 from .ConnectorOptions import ConnectorOptions
 from .ConnectorPotentialArray import ConnectorPotentialArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ConnectorDamage(ConnectorBehaviorOption):
