@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .OdbSequenceAnalyticSurfaceSegment import OdbSequenceAnalyticSurfaceSegment
+from ..UtilityAndView.abaqusConstants import *
 
 
 class AnalyticSurface:

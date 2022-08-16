@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Material import Material
+from ..UtilityAndView.abaqusConstants import *
 
 """ This command evaluates the behavior of a hyperelastic material under standard test 
 conditions. 

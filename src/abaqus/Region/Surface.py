@@ -1,12 +1,12 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Region import Region
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.Face import Face
 from ..BasicGeometry.FaceArray import FaceArray
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNodeArray import MeshNodeArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class Surface(Region):

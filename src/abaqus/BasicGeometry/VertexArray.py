@@ -1,7 +1,7 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Vertex import Vertex
+from ..UtilityAndView.abaqusConstants import *
 
 
 class VertexArray(typing.List[Vertex]):

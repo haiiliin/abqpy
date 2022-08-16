@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .BCDisplayOptions import BCDisplayOptions
 from .ConstraintDisplayOptions import ConstraintDisplayOptions
 from .EngineeringFeatureDisplayOptions import EngineeringFeatureDisplayOptions
@@ -16,6 +15,7 @@ from .SymbolDisplayOptions import SymbolDisplayOptions
 from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..DisplayGroup.DisplayGroupInstance import DisplayGroupInstance
 from ..DisplayGroup.Leaf import Leaf
+from ..UtilityAndView.abaqusConstants import *
 
 
 class AssemblyDisplayOptions:

@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .ContactStabilization import ContactStabilization
+from ..UtilityAndView.abaqusConstants import *
 
 
 class StdStabilization(ContactStabilization):

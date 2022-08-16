@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .ConstrainedSketchConstraint.ConstrainedSketchConstraintModel import (
     ConstrainedSketchConstraintModel,
 )
@@ -21,6 +20,7 @@ from .ConstrainedSketchVertex.ConstrainedSketchVertexModel import (
     ConstrainedSketchVertexModel,
 )
 from ..Part.AcisFile import AcisFile
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ConstrainedSketch(

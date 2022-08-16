@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 from ..UtilityAndView.abaqusConstants import *
+=======
+from .Field import Field
+>>>>>>> 5d4c4f0 (Optimize Imports Using PyCharm)
 from .FluidCavityPressure import FluidCavityPressure
 from .InitialState import InitialState
 from .KinematicHardening import KinematicHardening
@@ -9,6 +13,7 @@ from .Velocity import Velocity
 from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class PredefinedFieldModel(

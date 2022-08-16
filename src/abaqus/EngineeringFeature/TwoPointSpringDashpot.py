@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .SpringDashpot import SpringDashpot
+from ..UtilityAndView.abaqusConstants import *
 
 
 class TwoPointSpringDashpot(SpringDashpot):

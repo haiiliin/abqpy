@@ -1,7 +1,7 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Cell import Cell
+from ..UtilityAndView.abaqusConstants import *
 
 
 class CellArray(typing.List[Cell]):

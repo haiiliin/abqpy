@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .SectionCategory import SectionCategory
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OdbMeshElement:

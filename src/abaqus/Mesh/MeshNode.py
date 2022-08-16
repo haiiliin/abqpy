@@ -1,5 +1,3 @@
-import typing
-
 from ..Datum.DatumCsys import DatumCsys
 
 

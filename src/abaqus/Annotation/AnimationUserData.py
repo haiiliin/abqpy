@@ -1,9 +1,9 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Arrow import Arrow
 from .Text import Text
 from ..Odb.UserDataBase import UserDataBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class AnimationUserData(UserDataBase):

@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Section import Section
 from .TransverseShearBeam import TransverseShearBeam
+from ..UtilityAndView.abaqusConstants import *
 
 
 class BeamSection(Section):
