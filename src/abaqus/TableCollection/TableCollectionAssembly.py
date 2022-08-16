@@ -1,9 +1,9 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .ElementProgressiveActivation import ElementProgressiveActivation
 from ..Assembly.AssemblyBase import AssemblyBase
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class TableCollectionAssembly(AssemblyBase):

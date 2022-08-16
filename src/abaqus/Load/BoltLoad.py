@@ -1,7 +1,7 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Load import Load
 from ..Datum.DatumAxis import DatumAxis
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class BoltLoad(Load):

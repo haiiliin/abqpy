@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .OdbDatumCsys import OdbDatumCsys
 from .OdbSet import OdbSet
+from ..UtilityAndView.abaqusConstants import *
 
 
 class RebarOrientation:

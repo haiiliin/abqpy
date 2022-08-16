@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .CommonOptions import CommonOptions
 from .ContourOptions import ContourOptions
 from .DisplayBodyOptions import DisplayBodyOptions
@@ -20,6 +19,7 @@ from ..PlotOptions.DisplayOptions import DisplayOptions
 from ..PlotOptions.FreeBodyOptions import FreeBodyOptions
 from ..PlotOptions.StreamOptions import StreamOptions
 from ..PlotOptions.ViewCutOptions import ViewCutOptions
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OdbDisplay:

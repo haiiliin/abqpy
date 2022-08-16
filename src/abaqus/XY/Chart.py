@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Area import Area
 from .AreaStyle import AreaStyle
 from .AxisArray import AxisArray
@@ -9,6 +8,7 @@ from .LineStyle import LineStyle
 from .TextStyle import TextStyle
 from .XYCurve import XYCurve
 from ..UtilityAndView.View import View
+from ..UtilityAndView.abaqusConstants import *
 
 
 class Chart:

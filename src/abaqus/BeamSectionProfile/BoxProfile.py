@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Profile import Profile
+from ..UtilityAndView.abaqusConstants import *
 
 
 class BoxProfile(Profile):

@@ -1,4 +1,3 @@
-from ...UtilityAndView.abaqusConstants import *
 from .Metal.Annealing.AnnealTemperature import AnnealTemperature
 from .Metal.Cyclic.CycledPlastic import CycledPlastic
 from .Metal.Cyclic.CyclicHardening import CyclicHardening
@@ -6,6 +5,7 @@ from .Metal.ORNL.Ornl import Ornl
 from .Metal.RateDependent.RateDependent import RateDependent
 from .Potential import Potential
 from .TensileFailure import TensileFailure
+from ...UtilityAndView.abaqusConstants import *
 
 
 class Plastic:

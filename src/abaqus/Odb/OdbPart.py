@@ -1,9 +1,9 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .OdbMeshNode import OdbMeshNode
 from .OdbPartBase import OdbPartBase
 from .OdbSet import OdbSet
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OdbPart(OdbPartBase):

@@ -1,9 +1,9 @@
-from ..UtilityAndView.abaqusConstants import *
 from .DataTableArray import DataTableArray
 from .DiscreteField import DiscreteField
 from .ExpressionField import ExpressionField
 from .MappedField import MappedField
 from ..Model.ModelBase import ModelBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class FieldModel(ModelBase):

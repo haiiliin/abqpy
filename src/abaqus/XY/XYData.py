@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .QuantityType import QuantityType
 from ..PathAndProbe.Path import Path
+from ..UtilityAndView.abaqusConstants import *
 
 
 # prevent circular imports

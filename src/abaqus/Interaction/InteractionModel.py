@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .InteractionContactControlModel import InteractionContactControlModel
 from .InteractionContactInitializationModel import InteractionContactInitializationModel
 from .InteractionContactStabilizationModel import InteractionContactStabilizationModel
@@ -48,6 +47,7 @@ from ..Interaction.SurfaceToSurfaceContactStd import SurfaceToSurfaceContactStd
 from ..Interaction.XFEMCrackGrowth import XFEMCrackGrowth
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class InteractionModel(

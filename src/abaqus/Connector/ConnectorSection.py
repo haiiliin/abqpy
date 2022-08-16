@@ -1,4 +1,3 @@
-from ..UtilityAndView.abaqusConstants import *
 from .ConnectorDamage import ConnectorDamage
 from .ConnectorDamping import ConnectorDamping
 from .ConnectorElasticity import ConnectorElasticity
@@ -12,6 +11,7 @@ from .ConnectorStop import ConnectorStop
 from .DerivedComponent import DerivedComponent
 from .TangentialBehavior import TangentialBehavior
 from ..Section.SectionBase import SectionBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ConnectorSection(SectionBase):
