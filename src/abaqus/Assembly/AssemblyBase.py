@@ -1,11 +1,6 @@
 import typing
 
-<<<<<<< HEAD
-from abaqusConstants import *
-=======
-from abaqus.Datum.DatumCsys import DatumCsys
 from ..UtilityAndView.abaqusConstants import *
->>>>>>> 466b132 (Relative imports to use `abaqusConstants` module)
 from .AssemblyModel import AssemblyModel
 from .ConnectorOrientationArray import ConnectorOrientationArray
 from .Feature import Feature
