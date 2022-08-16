@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .DataTableArray import DataTableArray
 from .Field import Field
 from ..Assembly.PartInstance import PartInstance

@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .ArbitraryProfile import ArbitraryProfile
 from .BoxProfile import BoxProfile
 from .CircularProfile import CircularProfile

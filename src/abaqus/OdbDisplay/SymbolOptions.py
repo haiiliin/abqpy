@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from ..PlotOptions.DGSymbolOptions import DGSymbolOptions
 
 

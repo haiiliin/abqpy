@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from .....UtilityAndView.abaqusConstants import *
 from .SaturationDependence import SaturationDependence
 from .VelocityDependence import VelocityDependence
 

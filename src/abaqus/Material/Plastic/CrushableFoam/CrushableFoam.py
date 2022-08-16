@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ....UtilityAndView.abaqusConstants import *
 from .CrushableFoamHardening import CrushableFoamHardening
 from ..Metal.RateDependent.RateDependent import RateDependent
 

@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .FieldLocation import FieldLocation
 from .FieldLocationArray import FieldLocationArray
 from .FieldValueArray import FieldValueArray

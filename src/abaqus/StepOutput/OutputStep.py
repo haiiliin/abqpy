@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .DiagnosticPrint import DiagnosticPrint
 from .Monitor import Monitor
 from .Restart import Restart
