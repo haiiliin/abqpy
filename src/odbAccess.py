@@ -1,3 +1,5 @@
+import os
+import sys
 from abaqus.Odb.OdbCommands import *
 from abaqus.UtilityAndView.BackwardCompatibility import BackwardCompatibility
 
@@ -21,7 +23,7 @@ def openOdb(name: str, *args, **kwargs) -> Odb:
     except:
         pass
     os.system(f'{abaqus} cae database={odbName} script={fileName}')
-    os.system('exit')
+    sys.exit()
     return Odb(name)
 
 
