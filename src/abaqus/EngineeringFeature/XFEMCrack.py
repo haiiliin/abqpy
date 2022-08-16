@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Crack import Crack
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class XFEMCrack(Crack):

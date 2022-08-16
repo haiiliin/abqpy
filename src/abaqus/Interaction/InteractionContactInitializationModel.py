@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .StdInitialization import StdInitialization
 from ..Model.ModelBase import ModelBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class InteractionContactInitializationModel(ModelBase):

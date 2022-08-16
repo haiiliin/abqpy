@@ -1,7 +1,7 @@
-from ..UtilityAndView.abaqusConstants import *
 from .ExpContactControl import ExpContactControl
 from .StdContactControl import StdContactControl
 from ..Model.ModelBase import ModelBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class InteractionContactControlModel(ModelBase):

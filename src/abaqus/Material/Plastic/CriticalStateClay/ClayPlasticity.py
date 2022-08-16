@@ -1,5 +1,5 @@
-from ....UtilityAndView.abaqusConstants import *
 from .ClayHardening import ClayHardening
+from ....UtilityAndView.abaqusConstants import *
 
 
 class ClayPlasticity:

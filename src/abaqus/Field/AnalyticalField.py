@@ -1,7 +1,7 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Field import Field
 from .OdbMeshRegionData import OdbMeshRegionData
 from ..Datum.DatumCsys import DatumCsys
+from ..UtilityAndView.abaqusConstants import *
 
 
 class AnalyticalField(Field):

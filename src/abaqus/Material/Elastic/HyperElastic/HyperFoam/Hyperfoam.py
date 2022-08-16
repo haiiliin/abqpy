@@ -1,9 +1,9 @@
-from .....UtilityAndView.abaqusConstants import *
 from ....TestData.BiaxialTestData import BiaxialTestData
 from ....TestData.PlanarTestData import PlanarTestData
 from ....TestData.SimpleShearTestData import SimpleShearTestData
 from ....TestData.UniaxialTestData import UniaxialTestData
 from ....TestData.VolumetricTestData import VolumetricTestData
+from .....UtilityAndView.abaqusConstants import *
 
 
 class Hyperfoam:

@@ -1,5 +1,5 @@
-from .SymbolicConstant import SymbolicConstant
 from .AbaqusBoolean import AbaqusBoolean
+from .SymbolicConstant import SymbolicConstant
 
 # Alias for methods type annotation
 Boolean = AbaqusBoolean

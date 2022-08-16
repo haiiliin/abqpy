@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from ..Model.ModelBase import ModelBase
 from ..Part.Part import Part
+from ..UtilityAndView.abaqusConstants import *
 
 
 class PartModel(ModelBase):

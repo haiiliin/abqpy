@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Leaf import Leaf
+from ..UtilityAndView.abaqusConstants import *
 
 
 class LeafFromNodeLabels(Leaf):

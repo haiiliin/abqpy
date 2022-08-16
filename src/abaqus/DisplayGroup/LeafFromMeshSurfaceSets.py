@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Leaf import Leaf
 from ..Region.Surface import Surface
+from ..UtilityAndView.abaqusConstants import *
 
 
 class LeafFromMeshSurfaceSets(Leaf):

@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .CouplingConstraint import CouplingConstraint
 from .HistoryVariable import HistoryVariable
 from .MpcConstraint import MpcConstraint
@@ -15,6 +14,7 @@ from .OdbDataSurfaceSet import OdbDataSurfaceSet
 from .OdbDiagnosticData import OdbDiagnosticData
 from .RigidBodyConstraint import RigidBodyConstraint
 from .TieConstraint import TieConstraint
+from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
 
 

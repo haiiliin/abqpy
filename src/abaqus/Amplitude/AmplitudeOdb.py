@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .ActuatorAmplitude import ActuatorAmplitude
 from .DecayAmplitude import DecayAmplitude
 from .EquallySpacedAmplitude import EquallySpacedAmplitude
@@ -12,6 +11,7 @@ from .SolutionDependentAmplitude import SolutionDependentAmplitude
 from .SpectrumAmplitude import SpectrumAmplitude
 from .TabularAmplitude import TabularAmplitude
 from ..Odb.OdbBase import OdbBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class AmplitudeOdb(OdbBase):

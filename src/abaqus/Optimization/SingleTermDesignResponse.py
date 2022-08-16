@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .DesignResponse import DesignResponse
 from .StepOptionArray import StepOptionArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class SingleTermDesignResponse(DesignResponse):

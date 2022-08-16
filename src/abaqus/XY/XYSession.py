@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .AreaStyle import AreaStyle
 from .LineStyle import LineStyle
 from .QuantityType import QuantityType
@@ -9,6 +8,7 @@ from .TextStyle import TextStyle
 from .XYData import XYData
 from .XYSessionBase import XYSessionBase
 from ..PathAndProbe.Path import Path
+from ..UtilityAndView.abaqusConstants import *
 
 
 # prevent circular imports

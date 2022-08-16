@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..Step.AnnealStep import AnnealStep
@@ -67,6 +66,7 @@ from ..StepMiscellaneous.SubstructureGenerateFrequencyArray import (
 from ..StepMiscellaneous.SubstructureGenerateModesArray import (
     SubstructureGenerateModesArray,
 )
+from ..UtilityAndView.abaqusConstants import *
 
 
 class StepModel(ModelBase):

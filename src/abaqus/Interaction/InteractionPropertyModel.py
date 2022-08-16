@@ -1,4 +1,3 @@
-from ..UtilityAndView.abaqusConstants import *
 from .AcousticImpedanceProp import AcousticImpedanceProp
 from .ActuatorSensorProp import ActuatorSensorProp
 from .CavityRadiationProp import CavityRadiationProp
@@ -8,6 +7,7 @@ from .FluidCavityProperty import FluidCavityProperty
 from .FluidExchangeProperty import FluidExchangeProperty
 from .IncidentWaveProperty import IncidentWaveProperty
 from ..Model.ModelBase import ModelBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class InteractionPropertyModel(ModelBase):

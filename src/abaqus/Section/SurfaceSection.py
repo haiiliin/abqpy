@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .RebarLayers import RebarLayers
 from .Section import Section
+from ..UtilityAndView.abaqusConstants import *
 
 
 class SurfaceSection(Section):

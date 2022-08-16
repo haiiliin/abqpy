@@ -1,10 +1,10 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .OdbMeshElement import OdbMeshElement
 from .OdbMeshElementArray import OdbMeshElementArray
 from .OdbMeshNode import OdbMeshNode
 from .OdbMeshNodeArray import OdbMeshNodeArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OdbSet:

@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):

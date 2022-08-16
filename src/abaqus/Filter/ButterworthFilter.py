@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Filter import Filter
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ButterworthFilter(Filter):

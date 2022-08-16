@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Job import Job
 from .MessageArray import MessageArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class JobFromInputFile(Job):
