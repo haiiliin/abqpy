@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-from ..UtilityAndView.abaqusConstants import *
-=======
-from .Field import Field
->>>>>>> 5d4c4f0 (Optimize Imports Using PyCharm)
 from .FluidCavityPressure import FluidCavityPressure
 from .InitialState import InitialState
 from .KinematicHardening import KinematicHardening
