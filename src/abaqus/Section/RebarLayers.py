@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .LayerPropertiesArray import LayerPropertiesArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class RebarLayers:

@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .AdjustPoints import AdjustPoints
 from .Coupling import Coupling
 from .DisplayBody import DisplayBody
@@ -14,6 +13,7 @@ from ..Assembly.PartInstance import PartInstance
 from ..BasicGeometry.ModelDotArray import ModelDotArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ConstraintModel(ModelBase):

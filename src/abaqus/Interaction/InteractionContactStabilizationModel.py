@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .StdStabilization import StdStabilization
 from ..Model.ModelBase import ModelBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class InteractionContactStabilizationModel(ModelBase):

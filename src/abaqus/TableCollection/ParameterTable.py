@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from ..TableCollection.ParameterColumn import ParameterColumn
 from ..TableCollection.ParameterColumnArray import ParameterColumnArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ParameterTable:

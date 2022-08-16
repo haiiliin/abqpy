@@ -1,7 +1,7 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .OdbMeshNode import OdbMeshNode
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OdbDatumCsys:

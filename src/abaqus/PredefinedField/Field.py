@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .PredefinedField import PredefinedField
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class Field(PredefinedField):

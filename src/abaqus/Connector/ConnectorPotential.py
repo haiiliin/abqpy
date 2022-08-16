@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .DerivedComponent import DerivedComponent
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ConnectorPotential:

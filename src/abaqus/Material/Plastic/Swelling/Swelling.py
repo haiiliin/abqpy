@@ -1,5 +1,5 @@
-from ....UtilityAndView.abaqusConstants import *
 from ...Ratios import Ratios
+from ....UtilityAndView.abaqusConstants import *
 
 
 class Swelling:

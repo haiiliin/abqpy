@@ -1,4 +1,3 @@
-from ..UtilityAndView.abaqusConstants import *
 from .AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
 from .AdaptiveMeshDomain import AdaptiveMeshDomain
 from .DisplacementAdaptiveMeshConstraintState import (
@@ -7,6 +6,7 @@ from .DisplacementAdaptiveMeshConstraintState import (
 from .VelocityAdaptiveMeshConstraintState import VelocityAdaptiveMeshConstraintState
 from ..Region.Region import Region
 from ..Step.StepBase import StepBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class AdaptivityStep(StepBase):

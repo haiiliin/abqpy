@@ -1,5 +1,5 @@
-from .....UtilityAndView.abaqusConstants import *
 from .Trs import Trs
+from .....UtilityAndView.abaqusConstants import *
 
 
 class Viscosity:

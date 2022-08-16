@@ -1,7 +1,7 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .PropertyTableData import PropertyTableData
+from ..UtilityAndView.abaqusConstants import *
 
 
 class PropertyTable:

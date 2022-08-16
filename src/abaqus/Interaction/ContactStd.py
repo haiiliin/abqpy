@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .ContactPropertyAssignment import ContactPropertyAssignment
 from .InitializationAssignment import InitializationAssignment
 from .Interaction import Interaction
@@ -15,6 +14,7 @@ from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
 from .SurfaceOffsetAssignment import SurfaceOffsetAssignment
 from .SurfaceThicknessAssignment import SurfaceThicknessAssignment
 from .SurfaceVertexCriteriaAssignment import SurfaceVertexCriteriaAssignment
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ContactStd(Interaction):

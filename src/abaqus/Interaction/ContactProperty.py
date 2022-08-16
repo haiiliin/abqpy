@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .CohesiveBehavior import CohesiveBehavior
 from .ContactDamage import ContactDamage
 from .ContactDamping import ContactDamping
@@ -13,6 +12,7 @@ from .InteractionProperty import InteractionProperty
 from .NormalBehavior import NormalBehavior
 from .Radiation import Radiation
 from .ThermalConductance import ThermalConductance
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ContactProperty(InteractionProperty):

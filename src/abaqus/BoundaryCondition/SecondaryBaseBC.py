@@ -1,7 +1,7 @@
-from ..UtilityAndView.abaqusConstants import *
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class SecondaryBaseBC(BoundaryCondition):

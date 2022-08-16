@@ -1,7 +1,7 @@
 import typing
 
-from ...UtilityAndView.abaqusConstants import *
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
+from ...UtilityAndView.abaqusConstants import *
 
 
 class ConstrainedSketchGeometryArray(typing.List[ConstrainedSketchGeometry]):

@@ -1,7 +1,7 @@
-from ..UtilityAndView.abaqusConstants import *
 from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..Odb.Odb import Odb
 from ..Session.SessionBase import SessionBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class FieldReportSession(SessionBase):
