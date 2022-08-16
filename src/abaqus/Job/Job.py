@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .MessageArray import MessageArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class Job:

@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Movie import Movie
 from ..Session.SessionBase import SessionBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class AnimationSession(SessionBase):

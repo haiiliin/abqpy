@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .FieldOutput import FieldOutput
 from .OdbLoadCase import OdbLoadCase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OdbFrame:

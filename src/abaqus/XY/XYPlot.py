@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .AreaStyle import AreaStyle
 from .LineStyle import LineStyle
 from .QuantityType import QuantityType
@@ -8,6 +7,7 @@ from .SymbolStyle import SymbolStyle
 from .TextStyle import TextStyle
 from .XYData import XYData
 from .XYPlotBase import XYPlotBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class XYPlot(XYPlotBase):

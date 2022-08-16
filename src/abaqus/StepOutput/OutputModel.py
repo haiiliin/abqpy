@@ -1,12 +1,12 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .FieldOutputRequest import FieldOutputRequest
 from .HistoryOutputRequest import HistoryOutputRequest
 from .IntegratedOutputSection import IntegratedOutputSection
 from .TimePoint import TimePoint
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OutputModel(ModelBase):

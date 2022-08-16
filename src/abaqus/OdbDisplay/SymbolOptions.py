@@ -1,7 +1,7 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from ..PlotOptions.DGSymbolOptions import DGSymbolOptions
+from ..UtilityAndView.abaqusConstants import *
 
 
 class SymbolOptions(DGSymbolOptions):

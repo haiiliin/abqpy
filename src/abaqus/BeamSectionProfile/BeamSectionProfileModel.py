@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .ArbitraryProfile import ArbitraryProfile
 from .BoxProfile import BoxProfile
 from .CircularProfile import CircularProfile
@@ -14,6 +13,7 @@ from .RectangularProfile import RectangularProfile
 from .TProfile import TProfile
 from .TrapezoidalProfile import TrapezoidalProfile
 from ..Model.ModelBase import ModelBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class BeamSectionProfileModel(ModelBase):

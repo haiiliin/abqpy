@@ -1,4 +1,3 @@
-from ..UtilityAndView.abaqusConstants import *
 from .CompositePly import CompositePly
 from .CompositePlyArray import CompositePlyArray
 from .MaterialOrientation import MaterialOrientation
@@ -8,6 +7,7 @@ from ..Section.CompositeShellSection import CompositeShellSection
 from ..Section.GeometryShellSection import GeometryShellSection
 from ..Section.HomogeneousShellSection import HomogeneousShellSection
 from ..Section.SectionLayerArray import SectionLayerArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class CompositeLayup:

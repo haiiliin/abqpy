@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .LightArray import LightArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class LightOptions:

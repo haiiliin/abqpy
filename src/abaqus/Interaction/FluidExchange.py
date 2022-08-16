@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Interaction import Interaction
+from ..UtilityAndView.abaqusConstants import *
 
 
 class FluidExchange(Interaction):

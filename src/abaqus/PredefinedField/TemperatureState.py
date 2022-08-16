@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .PredefinedFieldState import PredefinedFieldState
+from ..UtilityAndView.abaqusConstants import *
 
 
 class TemperatureState(PredefinedFieldState):

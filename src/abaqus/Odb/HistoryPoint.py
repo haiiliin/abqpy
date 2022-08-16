@@ -1,4 +1,3 @@
-from ..UtilityAndView.abaqusConstants import *
 from .OdbAssembly import OdbAssembly
 from .OdbInstance import OdbInstance
 from .OdbMeshElement import OdbMeshElement
@@ -6,6 +5,7 @@ from .OdbMeshNode import OdbMeshNode
 from .OdbPart import OdbPart
 from .OdbSet import OdbSet
 from .SectionPoint import SectionPoint
+from ..UtilityAndView.abaqusConstants import *
 
 
 class HistoryPoint:

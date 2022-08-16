@@ -1,8 +1,8 @@
 import typing
 
-from ...UtilityAndView.abaqusConstants import *
 from .ConstrainedSketchDimension import ConstrainedSketchDimension
 from ..ConstrainedSketchVertex.ConstrainedSketchVertex import ConstrainedSketchVertex
+from ...UtilityAndView.abaqusConstants import *
 
 
 class VerticalDimension(ConstrainedSketchDimension):

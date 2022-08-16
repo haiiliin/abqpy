@@ -1,9 +1,9 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from ..BasicGeometry.Face import Face
 from ..Feature.Feature import Feature as FeatureBase
 from ..Mesh.MeshFace import MeshFace
+from ..UtilityAndView.abaqusConstants import *
 
 
 class Feature(FeatureBase):

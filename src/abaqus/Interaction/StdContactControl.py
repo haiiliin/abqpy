@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .ContactControl import ContactControl
+from ..UtilityAndView.abaqusConstants import *
 
 
 class StdContactControl(ContactControl):

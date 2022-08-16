@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .SpringDashpot import SpringDashpot
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class SpringDashpotToGround(SpringDashpot):

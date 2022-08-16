@@ -1,5 +1,5 @@
-from .....UtilityAndView.abaqusConstants import *
 from ...Potential import Potential
+from .....UtilityAndView.abaqusConstants import *
 
 
 class Viscous:

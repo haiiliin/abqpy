@@ -1,6 +1,6 @@
-from ....UtilityAndView.abaqusConstants import *
 from .CrushableFoamHardening import CrushableFoamHardening
 from ..Metal.RateDependent.RateDependent import RateDependent
+from ....UtilityAndView.abaqusConstants import *
 
 
 class CrushableFoam:
