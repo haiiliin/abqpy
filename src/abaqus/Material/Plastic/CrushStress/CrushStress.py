@@ -1,7 +1,7 @@
 import typing
 
-from ....UtilityAndView.abaqusConstants import *
 from .CrushStressVelocityFactor import CrushStressVelocityFactor
+from ....UtilityAndView.abaqusConstants import *
 
 
 class CrushStress:

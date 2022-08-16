@@ -1,4 +1,3 @@
-from ..UtilityAndView.abaqusConstants import *
 from .BeadFixedRegion import BeadFixedRegion
 from .BeadGrowth import BeadGrowth
 from .BeadPenetrationCheck import BeadPenetrationCheck
@@ -41,6 +40,7 @@ from .TopologyPointSymmetry import TopologyPointSymmetry
 from .TopologyRotationalSymmetry import TopologyRotationalSymmetry
 from .TurnControl import TurnControl
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OptimizationTask(OptimizationTaskBase):

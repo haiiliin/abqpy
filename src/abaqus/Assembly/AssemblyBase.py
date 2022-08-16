@@ -1,7 +1,6 @@
 import typing
 
 from abaqus.Datum.DatumCsys import DatumCsys
-from ..UtilityAndView.abaqusConstants import *
 from .AssemblyModel import AssemblyModel
 from .ConnectorOrientationArray import ConnectorOrientationArray
 from .Feature import Feature
@@ -24,6 +23,7 @@ from ..Region.Set import Set
 from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
+from ..UtilityAndView.abaqusConstants import *
 
 
 class AssemblyBase(Feature):

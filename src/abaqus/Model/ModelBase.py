@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .KeywordBlock import KeywordBlock
 from ..Adaptivity.AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from ..Adaptivity.AdaptiveMeshControl import AdaptiveMeshControl
@@ -36,6 +35,7 @@ from ..StepOutput.TimePoint import TimePoint
 from ..TableCollection.EventSeriesData import EventSeriesData
 from ..TableCollection.EventSeriesType import EventSeriesType
 from ..TableCollection.TableCollection import TableCollection
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ModelBase:

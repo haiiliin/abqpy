@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .FieldOutput import FieldOutput
 from .Odb import Odb
+from ..UtilityAndView.abaqusConstants import *
 
 """The Odb commands do the following: 
 - Determine if an output database (.odb) file needs to be upgraded to the current 

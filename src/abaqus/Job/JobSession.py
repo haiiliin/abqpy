@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Queue import Queue
 from ..Session.SessionBase import SessionBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class JobSession(SessionBase):

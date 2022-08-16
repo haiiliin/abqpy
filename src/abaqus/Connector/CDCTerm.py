@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .ConnectorOptions import ConnectorOptions
+from ..UtilityAndView.abaqusConstants import *
 
 
 class CDCTerm:

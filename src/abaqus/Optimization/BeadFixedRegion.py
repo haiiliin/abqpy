@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class BeadFixedRegion(GeometricRestriction):

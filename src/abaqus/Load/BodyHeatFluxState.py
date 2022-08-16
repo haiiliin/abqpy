@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .LoadState import LoadState
+from ..UtilityAndView.abaqusConstants import *
 
 
 class BodyHeatFluxState(LoadState):

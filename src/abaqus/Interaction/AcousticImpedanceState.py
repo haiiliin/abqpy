@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .InteractionState import InteractionState
+from ..UtilityAndView.abaqusConstants import *
 
 
 class AcousticImpedanceState(InteractionState):

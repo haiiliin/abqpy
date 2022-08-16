@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .JobData import JobData
 from .OdbAssembly import OdbAssembly
 from .OdbPart import OdbPart
@@ -14,6 +13,7 @@ from ..CustomKernel.RepositorySupport import RepositorySupport
 from ..Filter.Filter import Filter
 from ..Material.Material import Material
 from ..Section.Section import Section
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OdbBase:

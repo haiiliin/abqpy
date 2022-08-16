@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .AcisFile import AcisFile
 from .Feature import Feature
 from ..BasicGeometry.Cell import Cell
@@ -32,6 +31,7 @@ from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch
+from ..UtilityAndView.abaqusConstants import *
 
 
 # prevent circular imports

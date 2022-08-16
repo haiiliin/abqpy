@@ -1,7 +1,7 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Job import Job
+from ..UtilityAndView.abaqusConstants import *
 
 
 class Coexecution:
