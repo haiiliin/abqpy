@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Datum import Datum
 from .DatumAxis import DatumAxis
 from .DatumPoint import DatumPoint

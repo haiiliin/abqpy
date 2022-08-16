@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .TransverseShearBeam import TransverseShearBeam
 from .TransverseShearShell import TransverseShearShell
 from ..Connector.ConnectorSection import ConnectorSection

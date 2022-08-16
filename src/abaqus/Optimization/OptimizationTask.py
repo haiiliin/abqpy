@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .BeadFixedRegion import BeadFixedRegion
 from .BeadGrowth import BeadGrowth
 from .BeadPenetrationCheck import BeadPenetrationCheck

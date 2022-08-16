@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .AxisData import AxisData
 from .LineStyle import LineStyle
 from .TextStyle import TextStyle

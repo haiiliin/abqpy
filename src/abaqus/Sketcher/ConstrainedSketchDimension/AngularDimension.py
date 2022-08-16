@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import *
 from .ConstrainedSketchDimension import ConstrainedSketchDimension
 from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
     ConstrainedSketchGeometry,
