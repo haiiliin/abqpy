@@ -4,11 +4,7 @@ from .Metal.Cyclic.CyclicHardening import CyclicHardening
 from .Metal.ORNL.Ornl import Ornl
 from .Metal.RateDependent.RateDependent import RateDependent
 from .Potential import Potential
-<<<<<<< HEAD
-=======
-from .TensileFailure import TensileFailure
 from ...UtilityAndView.abaqusConstants import *
->>>>>>> 5d4c4f0 (Optimize Imports Using PyCharm)
 
 
 class Plastic:

@@ -1,10 +1,5 @@
 import typing
 
-<<<<<<< HEAD
-from ..UtilityAndView.abaqusConstants import *
-=======
-from abaqus.Datum.DatumCsys import DatumCsys
->>>>>>> 5d4c4f0 (Optimize Imports Using PyCharm)
 from .AssemblyModel import AssemblyModel
 from .ConnectorOrientationArray import ConnectorOrientationArray
 from .Feature import Feature
