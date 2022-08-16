@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from ..PlotOptions.OdbDisplayOptions import OdbDisplayOptions
+from ..UtilityAndView.abaqusConstants import *
 
 
 class DisplayGroupInstance:

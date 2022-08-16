@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Leaf import Leaf
 from ..Region.Set import Set
+from ..UtilityAndView.abaqusConstants import *
 
 
 class LeafFromSets(Leaf):

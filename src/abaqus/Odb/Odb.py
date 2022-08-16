@@ -1,4 +1,3 @@
-from ..UtilityAndView.abaqusConstants import *
 from .OdbPart import OdbPart
 from .OdbStep import OdbStep
 from .SectionCategory import SectionCategory
@@ -6,6 +5,7 @@ from ..Amplitude.AmplitudeOdb import AmplitudeOdb
 from ..BeamSectionProfile.BeamSectionProfileOdb import BeamSectionProfileOdb
 from ..Filter.FilterOdb import FilterOdb
 from ..Material.MaterialOdb import MaterialOdb
+from ..UtilityAndView.abaqusConstants import *
 
 
 class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):

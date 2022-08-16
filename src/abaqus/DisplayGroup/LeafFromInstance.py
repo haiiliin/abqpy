@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Leaf import Leaf
 from ..Assembly.PartInstance import PartInstance
+from ..UtilityAndView.abaqusConstants import *
 
 
 class LeafFromInstance(Leaf):

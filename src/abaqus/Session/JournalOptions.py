@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .NumberFormat import NumberFormat
+from ..UtilityAndView.abaqusConstants import *
 
 
 class JournalOptions:

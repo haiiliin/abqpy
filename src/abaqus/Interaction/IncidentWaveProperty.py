@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .ContactProperty import ContactProperty
+from ..UtilityAndView.abaqusConstants import *
 
 
 class IncidentWaveProperty(ContactProperty):

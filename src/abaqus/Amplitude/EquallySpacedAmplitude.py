@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Amplitude import Amplitude
 from .BaselineCorrection import BaselineCorrection
+from ..UtilityAndView.abaqusConstants import *
 
 
 class EquallySpacedAmplitude(Amplitude):

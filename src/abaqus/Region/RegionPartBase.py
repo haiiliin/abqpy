@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from ..Part.PartBase import PartBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class RegionPartBase(PartBase):

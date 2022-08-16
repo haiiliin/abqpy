@@ -1,7 +1,7 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Face import Face
+from ..UtilityAndView.abaqusConstants import *
 
 
 class FaceArray(typing.List[Face]):

@@ -1,7 +1,7 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Interaction import Interaction
 from ..BasicGeometry.ModelDot import ModelDot
 from ..Region.RegionArray import RegionArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class CavityRadiation(Interaction):
