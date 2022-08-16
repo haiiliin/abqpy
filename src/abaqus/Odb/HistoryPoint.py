@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .OdbAssembly import OdbAssembly
 from .OdbInstance import OdbInstance
 from .OdbMeshElement import OdbMeshElement

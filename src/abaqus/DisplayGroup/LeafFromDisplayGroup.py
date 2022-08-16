@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .DisplayGroupArray import DisplayGroupArray
 from .Leaf import Leaf
 

@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Annotation import Annotation
 from .._OptionsBase import _OptionsBase
 

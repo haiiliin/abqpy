@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from .AdaptiveMeshControl import AdaptiveMeshControl
 from .DisplacementAdaptiveMeshConstraint import DisplacementAdaptiveMeshConstraint

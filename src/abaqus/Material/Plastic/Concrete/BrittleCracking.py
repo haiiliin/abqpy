@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ....UtilityAndView.abaqusConstants import *
 from .BrittleFailure import BrittleFailure
 from .BrittleShear import BrittleShear
 

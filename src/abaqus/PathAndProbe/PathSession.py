@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Path import Path
 from .Spectrum import Spectrum
 from .Stream import Stream

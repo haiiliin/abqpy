@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from .....UtilityAndView.abaqusConstants import *
 from ....TestData.BiaxialTestData import BiaxialTestData
 from ....TestData.PlanarTestData import PlanarTestData
 from ....TestData.SimpleShearTestData import SimpleShearTestData
