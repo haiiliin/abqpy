@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 
 """The upgradeScript module allows you to upgrade scripts from one release of Abaqus to a 
 later release. The upgradeScript module allows you to upgrade over several releases at 

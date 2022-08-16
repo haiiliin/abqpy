@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.ReferencePoint import ReferencePoint
 from ..BasicGeometry.VertexArray import VertexArray

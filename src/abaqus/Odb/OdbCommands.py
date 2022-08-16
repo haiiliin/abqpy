@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .FieldOutput import FieldOutput
 from .Odb import Odb
 

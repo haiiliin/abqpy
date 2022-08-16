@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 
 """The Python module textRepr contains functions to print an Abaqus object and to convert 
 the output from the str() function into a formatted string, indented for each object in 

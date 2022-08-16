@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .FieldOutputRequest import FieldOutputRequest
 from .HistoryOutputRequest import HistoryOutputRequest
 from .IntegratedOutputSection import IntegratedOutputSection

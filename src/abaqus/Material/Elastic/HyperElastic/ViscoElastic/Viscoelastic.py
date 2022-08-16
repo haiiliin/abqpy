@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from .....UtilityAndView.abaqusConstants import *
 from .CombinedTestData import CombinedTestData
 from ....Others.Mechanical.Viscosity.Trs import Trs
 from ....TestData.ShearTestData import ShearTestData
