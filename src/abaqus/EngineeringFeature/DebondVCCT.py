@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Crack import Crack
+from ..UtilityAndView.abaqusConstants import *
 
 
 class DebondVCCT(Crack):

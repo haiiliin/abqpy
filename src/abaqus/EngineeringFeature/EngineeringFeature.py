@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .AssembledFastener import AssembledFastener
 from .ContourIntegral import ContourIntegral
 from .DebondVCCT import DebondVCCT
@@ -15,6 +14,7 @@ from .TwoPointSpringDashpot import TwoPointSpringDashpot
 from .XFEMCrack import XFEMCrack
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class EngineeringFeature(EngineeringFeatureBase):

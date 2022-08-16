@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Interaction import Interaction
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ConcentratedRadiationToAmbient(Interaction):

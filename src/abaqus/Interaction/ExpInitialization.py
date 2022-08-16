@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .ContactInitialization import ContactInitialization
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ExpInitialization(ContactInitialization):

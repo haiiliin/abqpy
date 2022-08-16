@@ -1,7 +1,7 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from ..Session.SessionBase import SessionBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class XYSessionBase(SessionBase):

@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Constraint import Constraint
+from ..UtilityAndView.abaqusConstants import *
 
 
 class Equation(Constraint):
