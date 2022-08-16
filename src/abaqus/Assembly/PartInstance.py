@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from ..BasicGeometry.CellArray import CellArray
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.FaceArray import FaceArray
@@ -20,6 +19,7 @@ from ..Region.Set import Set
 from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
+from ..UtilityAndView.abaqusConstants import *
 
 
 class PartInstance:

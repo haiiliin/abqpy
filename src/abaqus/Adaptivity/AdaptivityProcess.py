@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .AdaptivityIteration import AdaptivityIteration
 from ..Job.ModelJob import ModelJob
+from ..UtilityAndView.abaqusConstants import *
 
 
 class AdaptivityProcess:

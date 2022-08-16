@@ -1,4 +1,3 @@
-from ..UtilityAndView.abaqusConstants import *
 from .CompositeLayup import CompositeLayup
 from .MaterialOrientation import MaterialOrientation
 from .SectionAssignment import SectionAssignment
@@ -9,6 +8,7 @@ from ..Part.PartBase import PartBase
 from ..Region.Region import Region
 from ..Region.Set import Set
 from ..Region.Surface import Surface
+from ..UtilityAndView.abaqusConstants import *
 
 
 class PropertyPart(PartBase):

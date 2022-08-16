@@ -1,7 +1,7 @@
-from ..UtilityAndView.abaqusConstants import *
 from .BoundaryCondition import BoundaryCondition
 from ..Amplitude.Correlation import Correlation
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class DisplacementBaseMotionBC(BoundaryCondition):

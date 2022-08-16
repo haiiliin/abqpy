@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .AcisFile import AcisFile
 from ..Mdb.MdbBase import MdbBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class AcisMdb(MdbBase):

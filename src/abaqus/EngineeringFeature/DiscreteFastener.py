@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Fastener import Fastener
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class DiscreteFastener(Fastener):

@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Section import Section
 from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ConnectorSection(Section):

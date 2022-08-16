@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .AccelerationBC import AccelerationBC
 from .AccelerationBCState import AccelerationBCState
 from .AccelerationBaseMotionBC import AccelerationBaseMotionBC
@@ -48,6 +47,7 @@ from ..Amplitude.Correlation import Correlation
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class BoundaryConditionModel(ModelBase):
