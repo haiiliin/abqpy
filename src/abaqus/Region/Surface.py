@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Region import Region
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.Face import Face

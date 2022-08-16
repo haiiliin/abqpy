@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .AcousticImpedanceProp import AcousticImpedanceProp
 from .ActuatorSensorProp import ActuatorSensorProp
 from .CavityRadiationProp import CavityRadiationProp

@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 
 """The Python module redentABQ is a wrapper around the Python redent module. The module 
 makes the indentation in a Python text file consistent. 

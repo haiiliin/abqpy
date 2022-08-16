@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .CompositePly import CompositePly
 from .CompositePlyArray import CompositePlyArray
 from .MaterialOrientation import MaterialOrientation

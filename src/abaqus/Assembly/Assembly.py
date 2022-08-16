@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .ConnectorOrientation import ConnectorOrientation
 from ..Datum.DatumCsys import DatumCsys
 from ..EditMesh.MeshEditAssembly import MeshEditAssembly

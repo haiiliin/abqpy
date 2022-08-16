@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .OdbPart import OdbPart
 from .OdbStep import OdbStep
 from .SectionCategory import SectionCategory
