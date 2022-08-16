@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Inertia import Inertia
 from ..Region.Region import Region
 

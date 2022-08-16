@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .ConnectorDamage import ConnectorDamage
 from .ConnectorDamping import ConnectorDamping
 from .ConnectorElasticity import ConnectorElasticity

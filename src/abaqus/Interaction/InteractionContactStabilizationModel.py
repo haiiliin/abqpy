@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .StdStabilization import StdStabilization
 from ..Model.ModelBase import ModelBase
 

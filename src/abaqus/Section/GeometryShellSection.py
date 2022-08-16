@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .LayerPropertiesArray import LayerPropertiesArray
 from .RebarLayers import RebarLayers
 from .ShellSection import ShellSection

@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .JobData import JobData
 from .OdbAssembly import OdbAssembly
 from .OdbPart import OdbPart

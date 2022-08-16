@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Interaction import Interaction
 from ..Region.Region import Region
 
