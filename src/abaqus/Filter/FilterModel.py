@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .ButterworthFilter import ButterworthFilter
 from .Chebyshev1Filter import Chebyshev1Filter
 from .Chebyshev2Filter import Chebyshev2Filter

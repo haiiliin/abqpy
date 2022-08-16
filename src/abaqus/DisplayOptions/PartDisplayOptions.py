@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .EngineeringFeatureDisplayOptions import EngineeringFeatureDisplayOptions
 from .GeometryDisplayOptions import GeometryDisplayOptions
 from .MeshDisplayOptions import MeshDisplayOptions

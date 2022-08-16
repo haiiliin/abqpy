@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Interaction import Interaction
 from ..BasicGeometry.ModelDot import ModelDot
 from ..Region.RegionArray import RegionArray

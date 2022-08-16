@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .AnalyticSurface import AnalyticSurface
 from .OdbMeshNode import OdbMeshNode
 from .OdbSet import OdbSet

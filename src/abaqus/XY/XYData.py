@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .QuantityType import QuantityType
 from ..PathAndProbe.Path import Path
 

@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 
 """The methodCallback module provides functions that allow you to register a callback that 
 will be invoked when certain Abaqus Scripting Interface commands are about to be 

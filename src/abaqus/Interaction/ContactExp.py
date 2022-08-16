@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .ContactPropertyAssignment import ContactPropertyAssignment
 from .Interaction import Interaction
 from .MasterSlaveAssignment import MasterSlaveAssignment

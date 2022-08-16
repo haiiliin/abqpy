@@ -1,6 +1,6 @@
 import typing
 
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Leaf import Leaf
 from ..Mesh.MeshElement import MeshElement
 
