@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .AreaStyle import AreaStyle
 from .LineStyle import LineStyle
+from ..UtilityAndView.abaqusConstants import *
 
 
 class Area:

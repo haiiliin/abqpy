@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .SectionPointArray import SectionPointArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class FieldLocation:

@@ -1,6 +1,10 @@
 import typing
 
+<<<<<<< HEAD
 from ..UtilityAndView.abaqusConstants import *
+=======
+from abaqus.Datum.DatumCsys import DatumCsys
+>>>>>>> 5d4c4f0 (Optimize Imports Using PyCharm)
 from .AssemblyModel import AssemblyModel
 from .ConnectorOrientationArray import ConnectorOrientationArray
 from .Feature import Feature
@@ -23,6 +27,7 @@ from ..Region.Set import Set
 from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
+from ..UtilityAndView.abaqusConstants import *
 
 
 class AssemblyBase(Feature):

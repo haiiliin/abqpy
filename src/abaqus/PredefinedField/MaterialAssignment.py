@@ -1,7 +1,7 @@
-from ..UtilityAndView.abaqusConstants import *
 from .PredefinedField import PredefinedField
 from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class MaterialAssignment(PredefinedField):

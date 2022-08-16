@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .OdbDataFrameArray import OdbDataFrameArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OdbDataStep:

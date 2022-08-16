@@ -1,11 +1,11 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from ..Assembly.AssemblyBase import AssemblyBase
 from ..Datum.DatumCsys import DatumCsys
 from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshNode import MeshNode
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class MeshEditAssembly(AssemblyBase):

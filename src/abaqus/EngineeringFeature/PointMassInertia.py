@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Inertia import Inertia
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class PointMassInertia(Inertia):

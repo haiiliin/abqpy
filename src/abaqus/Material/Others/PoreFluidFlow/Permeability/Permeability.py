@@ -1,6 +1,6 @@
-from .....UtilityAndView.abaqusConstants import *
 from .SaturationDependence import SaturationDependence
 from .VelocityDependence import VelocityDependence
+from .....UtilityAndView.abaqusConstants import *
 
 
 class Permeability:

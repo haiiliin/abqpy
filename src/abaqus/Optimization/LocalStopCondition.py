@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .StopCondition import StopCondition
+from ..UtilityAndView.abaqusConstants import *
 
 
 class LocalStopCondition(StopCondition):

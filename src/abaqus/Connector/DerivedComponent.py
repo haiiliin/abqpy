@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .CDCTerm import CDCTerm
 from .CDCTermArray import CDCTermArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class DerivedComponent:
