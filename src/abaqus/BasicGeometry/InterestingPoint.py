@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Edge import Edge
+from ..UtilityAndView.abaqusConstants import *
 
 
 class InterestingPoint:

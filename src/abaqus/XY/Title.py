@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Area import Area
 from .TextStyle import TextStyle
+from ..UtilityAndView.abaqusConstants import *
 
 
 class Title:

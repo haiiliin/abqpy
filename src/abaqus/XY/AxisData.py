@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .QuantityType import QuantityType
 from .XYCurveArray import XYCurveArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class AxisData:

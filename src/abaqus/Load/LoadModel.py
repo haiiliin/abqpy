@@ -1,4 +1,3 @@
-from ..UtilityAndView.abaqusConstants import *
 from .BodyCharge import BodyCharge
 from .BodyConcentrationFlux import BodyConcentrationFlux
 from .BodyCurrent import BodyCurrent
@@ -37,6 +36,7 @@ from .SurfaceTraction import SurfaceTraction
 from ..Datum.DatumAxis import DatumAxis
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class LoadModel(ModelBase):

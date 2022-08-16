@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from ..Session.NumberFormat import NumberFormat
+from ..UtilityAndView.abaqusConstants import *
 
 
 class FieldReportOptions:

@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Leaf import Leaf
 from ..Mesh.MeshNode import MeshNode
+from ..UtilityAndView.abaqusConstants import *
 
 
 class LeafFromMeshNodeLabels(Leaf):

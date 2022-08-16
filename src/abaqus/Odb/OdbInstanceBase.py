@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .AnalyticSurface import AnalyticSurface
 from .AnalyticSurfaceSegment import AnalyticSurfaceSegment
 from .BeamOrientationArray import BeamOrientationArray
@@ -14,6 +13,7 @@ from .RebarOrientationArray import RebarOrientationArray
 from ..Property.MaterialOrientationArray import MaterialOrientationArray
 from ..Property.SectionAssignmentArray import SectionAssignmentArray
 from ..Section.Section import Section
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OdbInstanceBase:

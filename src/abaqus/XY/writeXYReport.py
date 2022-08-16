@@ -1,7 +1,7 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .XYData import XYData
+from ..UtilityAndView.abaqusConstants import *
 
 """This method writes an XYData object to a user-defined ASCII file. 
 

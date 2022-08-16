@@ -1,11 +1,11 @@
 import typing
 
-from ....UtilityAndView.abaqusConstants import *
 from .ViscoElastic.Hysteresis import Hysteresis
 from ...TestData.BiaxialTestData import BiaxialTestData
 from ...TestData.PlanarTestData import PlanarTestData
 from ...TestData.UniaxialTestData import UniaxialTestData
 from ...TestData.VolumetricTestData import VolumetricTestData
+from ....UtilityAndView.abaqusConstants import *
 
 
 class Hyperelastic:

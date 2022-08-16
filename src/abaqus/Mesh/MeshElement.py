@@ -1,7 +1,7 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .MeshNode import MeshNode
+from ..UtilityAndView.abaqusConstants import *
 
 
 class MeshElement:
