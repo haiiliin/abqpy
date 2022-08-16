@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ElectricPotentialBC(BoundaryCondition):

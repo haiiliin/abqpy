@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Region import Region
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.CellArray import CellArray
@@ -16,6 +15,7 @@ from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNode import MeshNode
 from ..Mesh.MeshNodeArray import MeshNodeArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class Set(Region):

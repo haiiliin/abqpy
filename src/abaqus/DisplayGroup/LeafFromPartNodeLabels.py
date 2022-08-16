@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Leaf import Leaf
 from ..Part.Part import Part
+from ..UtilityAndView.abaqusConstants import *
 
 
 class LeafFromPartNodeLabels(Leaf):

@@ -1,11 +1,11 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .BeadTask import BeadTask
 from .ShapeTask import ShapeTask
 from .SizingTask import SizingTask
 from .TopologyTask import TopologyTask
 from ..Model.ModelBase import ModelBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OptimizationTaskModel(ModelBase):

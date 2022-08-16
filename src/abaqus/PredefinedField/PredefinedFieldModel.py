@@ -1,4 +1,3 @@
-from ..UtilityAndView.abaqusConstants import *
 from .FluidCavityPressure import FluidCavityPressure
 from .InitialState import InitialState
 from .KinematicHardening import KinematicHardening
@@ -9,6 +8,7 @@ from .Velocity import Velocity
 from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class PredefinedFieldModel(

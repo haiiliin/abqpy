@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from ..PlotOptions.DGCommonOptions import DGCommonOptions
+from ..UtilityAndView.abaqusConstants import *
 
 
 class CommonOptions(DGCommonOptions):

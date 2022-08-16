@@ -1,6 +1,9 @@
 from __future__ import annotations
-from .AbaqusBoolean import AbaqusBoolean
+
 from typing import Any, Union
+
+from .AbaqusBoolean import AbaqusBoolean
+
 
 class SymbolicConstant:
     """The SymbolicConstant object represents a string in a way that can be stored in a replay

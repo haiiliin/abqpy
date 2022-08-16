@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .AnalyticSurface import AnalyticSurface
 from .OdbAssemblyBase import OdbAssemblyBase
 from .OdbDatumCsys import OdbDatumCsys
@@ -9,6 +8,7 @@ from .OdbMeshNode import OdbMeshNode
 from .OdbPart import OdbPart
 from .OdbRigidBody import OdbRigidBody
 from .OdbSet import OdbSet
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OdbAssembly(OdbAssemblyBase):

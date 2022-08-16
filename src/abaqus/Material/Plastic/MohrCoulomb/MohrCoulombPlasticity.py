@@ -1,6 +1,6 @@
-from ....UtilityAndView.abaqusConstants import *
 from .MohrCoulombHardening import MohrCoulombHardening
 from .TensionCutOff import TensionCutOff
+from ....UtilityAndView.abaqusConstants import *
 
 
 class MohrCoulombPlasticity:

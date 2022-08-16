@@ -1,7 +1,6 @@
-import typing
 import sys
+import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .AutoColors import AutoColors
 from .Color import Color
 from .Drawing import Drawing
@@ -54,6 +53,7 @@ from ..Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions import (
     ConstrainedSketcherOptions,
 )
 from ..UtilityAndView.View import View
+from ..UtilityAndView.abaqusConstants import *
 from ..XY.Chart import Chart
 from ..XY.DefaultChartOptions import DefaultChartOptions
 from ..XY.DefaultPlot import DefaultPlot

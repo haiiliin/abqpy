@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
+from ..UtilityAndView.abaqusConstants import *
 
 
 class DisplacementAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):

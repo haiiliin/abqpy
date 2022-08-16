@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .BoundaryConditionState import BoundaryConditionState
+from ..UtilityAndView.abaqusConstants import *
 
 
 class EulerianMotionBCState(BoundaryConditionState):

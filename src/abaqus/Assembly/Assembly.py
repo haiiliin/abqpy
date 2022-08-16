@@ -1,4 +1,3 @@
-from ..UtilityAndView.abaqusConstants import *
 from .ConnectorOrientation import ConnectorOrientation
 from ..Datum.DatumCsys import DatumCsys
 from ..EditMesh.MeshEditAssembly import MeshEditAssembly
@@ -6,6 +5,7 @@ from ..Mesh.MeshAssembly import MeshAssembly
 from ..Property.PropertyAssembly import PropertyAssembly
 from ..Region.RegionAssembly import RegionAssembly
 from ..Region.Set import Set
+from ..UtilityAndView.abaqusConstants import *
 
 
 class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly):

@@ -1,8 +1,7 @@
-from ..UtilityAndView.abaqusConstants import *
 from .ConnectorOptions import ConnectorOptions
 from .ConnectorPotentialArray import ConnectorPotentialArray
-
 from .TangentialBehavior import TangentialBehavior
+from ..UtilityAndView.abaqusConstants import *
 
 
 # Prevent circular import

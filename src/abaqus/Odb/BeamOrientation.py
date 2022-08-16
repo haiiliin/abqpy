@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .OdbSet import OdbSet
+from ..UtilityAndView.abaqusConstants import *
 
 
 class BeamOrientation:
