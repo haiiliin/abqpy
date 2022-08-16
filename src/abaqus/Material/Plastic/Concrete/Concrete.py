@@ -1,7 +1,7 @@
-from ....UtilityAndView.abaqusConstants import *
 from .FailureRatios import FailureRatios
 from .ShearRetention import ShearRetention
 from .TensionStiffening import TensionStiffening
+from ....UtilityAndView.abaqusConstants import *
 
 
 class Concrete:

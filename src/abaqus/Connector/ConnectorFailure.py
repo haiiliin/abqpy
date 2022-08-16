@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ConnectorFailure(ConnectorBehaviorOption):

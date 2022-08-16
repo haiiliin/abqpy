@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from ..Datum.DatumCsys import DatumCsys
 from ..Region.Set import Set
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ConnectorOrientation:

@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .ElemType import ElemType
 from .MeshEdge import MeshEdge
 from .MeshElement import MeshElement
@@ -12,6 +11,7 @@ from ..BasicGeometry.Face import Face
 from ..BasicGeometry.IgnoredVertex import IgnoredVertex
 from ..Datum.DatumCsys import DatumCsys
 from ..Part.PartBase import PartBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class MeshPart(PartBase):

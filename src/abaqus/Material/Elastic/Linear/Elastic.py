@@ -1,6 +1,6 @@
-from ....UtilityAndView.abaqusConstants import *
 from .FailStrain import FailStrain
 from .FailStress import FailStress
+from ....UtilityAndView.abaqusConstants import *
 
 
 class Elastic:

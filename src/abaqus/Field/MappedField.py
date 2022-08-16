@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .AnalyticalField import AnalyticalField
 from .OdbMeshRegionData import OdbMeshRegionData
+from ..UtilityAndView.abaqusConstants import *
 
 
 class MappedField(AnalyticalField):

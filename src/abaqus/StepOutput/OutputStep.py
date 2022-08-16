@@ -1,8 +1,8 @@
-from ..UtilityAndView.abaqusConstants import *
 from .DiagnosticPrint import DiagnosticPrint
 from .Monitor import Monitor
 from .Restart import Restart
 from ..Step.StepBase import StepBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OutputStep(StepBase):

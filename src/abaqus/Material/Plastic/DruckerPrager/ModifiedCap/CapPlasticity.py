@@ -1,7 +1,7 @@
-from .....UtilityAndView.abaqusConstants import *
 from .CapCreepCohesion import CapCreepCohesion
 from .CapCreepConsolidation import CapCreepConsolidation
 from .CapHardening import CapHardening
+from .....UtilityAndView.abaqusConstants import *
 
 
 class CapPlasticity:

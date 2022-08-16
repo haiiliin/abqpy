@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ElementProgressiveActivation:

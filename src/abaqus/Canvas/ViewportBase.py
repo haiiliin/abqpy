@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .AttributeColorMap import AttributeColorMap
 from .Displayable import Displayable
 from .ImageOptions import ImageOptions
@@ -16,6 +15,7 @@ from ..DisplayOptions.ViewportAnnotationOptions import ViewportAnnotationOptions
 from ..OdbDisplay.OdbDisplay import OdbDisplay
 from ..PlotOptions.DetailPlotOptions import DetailPlotOptions
 from ..UtilityAndView.View import View
+from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
 
 

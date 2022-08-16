@@ -1,7 +1,7 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .OdbDiagnosticAttempt import OdbDiagnosticAttempt
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OdbDiagnosticIncrement:
