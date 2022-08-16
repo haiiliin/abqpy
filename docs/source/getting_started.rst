@@ -141,8 +141,8 @@ You can specify the version number when installing `abqpy`, for example:
 
 .. code-block:: sh
 
-    pip install abqpy==2020.0
-    conda install -c haiiliin abqpy=2020.0
+    pip install abqpy==2020.1
+    conda install -c haiiliin abqpy=2020.1
 
 A better way is to install the package from source without specifying the patch number:
 
