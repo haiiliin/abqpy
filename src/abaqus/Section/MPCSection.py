@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Section import Section
+from ..UtilityAndView.abaqusConstants import *
 
 
 class MPCSection(Section):

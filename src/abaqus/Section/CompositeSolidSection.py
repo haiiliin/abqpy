@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Section import Section
 from .SectionLayerArray import SectionLayerArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class CompositeSolidSection(Section):

@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from ..PlotOptions.DGDisplayBodyOptions import DGDisplayBodyOptions
+from ..UtilityAndView.abaqusConstants import *
 
 
 class DisplayBodyOptions(DGDisplayBodyOptions):

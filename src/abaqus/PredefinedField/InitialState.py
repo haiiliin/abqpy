@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .PredefinedField import PredefinedField
 from ..Assembly.PartInstanceArray import PartInstanceArray
+from ..UtilityAndView.abaqusConstants import *
 
 
 class InitialState(PredefinedField):

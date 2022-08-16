@@ -1,7 +1,7 @@
-from ...UtilityAndView.abaqusConstants import *
 from .DamageEvolution import DamageEvolution
 from .DamageStabilization import DamageStabilization
 from .DamageStabilizationCohesive import DamageStabilizationCohesive
+from ...UtilityAndView.abaqusConstants import *
 
 
 class DamageInitiation:

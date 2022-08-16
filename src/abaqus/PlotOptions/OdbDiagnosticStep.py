@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .OdbContactDiagnostics import OdbContactDiagnostics
 from .OdbDiagnosticIncrement import OdbDiagnosticIncrement
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OdbDiagnosticStep:

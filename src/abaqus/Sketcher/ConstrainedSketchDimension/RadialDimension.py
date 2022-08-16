@@ -1,10 +1,10 @@
 import typing
 
-from ...UtilityAndView.abaqusConstants import *
 from .ConstrainedSketchDimension import ConstrainedSketchDimension
 from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
     ConstrainedSketchGeometry,
 )
+from ...UtilityAndView.abaqusConstants import *
 
 
 class RadialDimension(ConstrainedSketchDimension):

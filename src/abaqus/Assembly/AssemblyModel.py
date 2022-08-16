@@ -1,7 +1,7 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .PartInstance import PartInstance
+from ..UtilityAndView.abaqusConstants import *
 
 
 # from ..Model.ModelBase import ModelBase

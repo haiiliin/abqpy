@@ -1,10 +1,10 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Area import Area
 from .Chart import Chart
 from .Title import Title
 from .XYCurve import XYCurve
+from ..UtilityAndView.abaqusConstants import *
 
 
 class XYPlotBase:
