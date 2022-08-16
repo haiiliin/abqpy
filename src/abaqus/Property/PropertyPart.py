@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .CompositeLayup import CompositeLayup
 from .MaterialOrientation import MaterialOrientation
 from .SectionAssignment import SectionAssignment

@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .BoundaryCondition import BoundaryCondition
 from ..Amplitude.Correlation import Correlation
 from ..Region.Region import Region

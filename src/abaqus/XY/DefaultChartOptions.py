@@ -1,4 +1,4 @@
-from abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import *
 from .Area import Area
 from .AreaStyle import AreaStyle
 from .Axis import Axis
