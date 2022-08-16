@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .HistoryOutput import HistoryOutput
 from .HistoryPoint import HistoryPoint
+from ..UtilityAndView.abaqusConstants import *
 
 
 class HistoryRegion:

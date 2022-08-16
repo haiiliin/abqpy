@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Amplitude import Amplitude
+from ..UtilityAndView.abaqusConstants import *
 
 
 class PsdDefinition(Amplitude):

@@ -1,5 +1,5 @@
-from ...UtilityAndView.abaqusConstants import *
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
+from ...UtilityAndView.abaqusConstants import *
 
 
 class Spline(ConstrainedSketchGeometry):

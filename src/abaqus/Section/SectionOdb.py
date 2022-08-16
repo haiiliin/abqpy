@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .AcousticInfiniteSection import AcousticInfiniteSection
 from .AcousticInterfaceSection import AcousticInterfaceSection
 from .BeamSection import BeamSection
@@ -21,6 +20,7 @@ from .SurfaceSection import SurfaceSection
 from .TrussSection import TrussSection
 from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
 from ..Odb.OdbBase import OdbBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class SectionOdb(OdbBase):

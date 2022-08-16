@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..Odb.Odb import Odb
+from ..UtilityAndView.abaqusConstants import *
 
 """This command writes a field output report to a file. 
 

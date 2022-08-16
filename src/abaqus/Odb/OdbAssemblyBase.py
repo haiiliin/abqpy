@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .OdbDatumCsys import OdbDatumCsys
 from .OdbInstance import OdbInstance
 from .OdbMeshElementArray import OdbMeshElementArray
@@ -12,6 +11,7 @@ from .SectionCategory import SectionCategory
 from ..Assembly.ConnectorOrientationArray import ConnectorOrientationArray
 from ..Property.SectionAssignmentArray import SectionAssignmentArray
 from ..Section.Section import Section
+from ..UtilityAndView.abaqusConstants import *
 
 
 class OdbAssemblyBase:

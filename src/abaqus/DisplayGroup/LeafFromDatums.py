@@ -1,8 +1,8 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Leaf import Leaf
 from ..Datum.Datum import Datum
+from ..UtilityAndView.abaqusConstants import *
 
 
 class LeafFromDatums(Leaf):

@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from ..Datum.DatumCsys import DatumCsys
 from ..Mesh.MeshEdge import MeshEdge
 from ..Mesh.MeshElement import MeshElement
@@ -8,6 +7,7 @@ from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
 from ..Part.PartBase import PartBase
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class Node(MeshNode):

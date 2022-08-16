@@ -1,6 +1,6 @@
-from ..UtilityAndView.abaqusConstants import *
 from .Constraint import Constraint
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 class MultipointConstraint(Constraint):

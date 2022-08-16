@@ -1,5 +1,5 @@
-from ...UtilityAndView.abaqusConstants import *
 from .ContactArea import ContactArea
+from ...UtilityAndView.abaqusConstants import *
 
 
 class GasketThicknessBehavior:

@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from .DataSet import DataSet
+from ..UtilityAndView.abaqusConstants import *
 
 
 class Behavior:

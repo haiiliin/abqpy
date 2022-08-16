@@ -1,7 +1,7 @@
-from ..UtilityAndView.abaqusConstants import *
 from .OdbInstance import OdbInstance
 from .OdbPart import OdbPart
 from .SectionPoint import SectionPoint
+from ..UtilityAndView.abaqusConstants import *
 
 
 class FieldBulkData:

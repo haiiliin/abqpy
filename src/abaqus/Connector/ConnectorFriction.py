@@ -1,9 +1,9 @@
-from ..UtilityAndView.abaqusConstants import *
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
 from .ConnectorOptions import ConnectorOptions
 from .ConnectorPotentialArray import ConnectorPotentialArray
 from .DerivedComponent import DerivedComponent
 from .TangentialBehavior import TangentialBehavior
+from ..UtilityAndView.abaqusConstants import *
 
 
 class ConnectorFriction(ConnectorBehaviorOption):

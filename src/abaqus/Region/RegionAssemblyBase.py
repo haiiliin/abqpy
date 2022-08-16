@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from ..Assembly.AssemblyBase import AssemblyBase
+from ..UtilityAndView.abaqusConstants import *
 
 
 class RegionAssemblyBase(AssemblyBase):

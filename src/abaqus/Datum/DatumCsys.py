@@ -1,9 +1,9 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from .Datum import Datum
 from .DatumAxis import DatumAxis
 from .DatumPoint import DatumPoint
+from ..UtilityAndView.abaqusConstants import *
 
 
 class DatumCsys(Datum):

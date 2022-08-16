@@ -1,7 +1,7 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from ..Datum.DatumCsys import DatumCsys
+from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _CopyOptionsBase
 
 

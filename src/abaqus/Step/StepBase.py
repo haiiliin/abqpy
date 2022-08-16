@@ -1,6 +1,5 @@
 import typing
 
-from ..UtilityAndView.abaqusConstants import *
 from ..Adaptivity.AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
 from ..Adaptivity.AdaptiveMeshDomain import AdaptiveMeshDomain
 from ..BoundaryCondition.BoundaryConditionState import BoundaryConditionState
@@ -14,6 +13,11 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
+<<<<<<< HEAD
+=======
+from ..TableCollection.ActivateElements import ActivateElements
+from ..UtilityAndView.abaqusConstants import *
+>>>>>>> 5d4c4f0 (Optimize Imports Using PyCharm)
 
 
 class StepBase:

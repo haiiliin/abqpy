@@ -1,5 +1,5 @@
-from ..UtilityAndView.abaqusConstants import *
 from ..Region.Set import Set
+from ..UtilityAndView.abaqusConstants import *
 
 
 class SectionAssignment:
