@@ -32,13 +32,7 @@ from ..StepOutput.FieldOutputRequest import FieldOutputRequest
 from ..StepOutput.HistoryOutputRequest import HistoryOutputRequest
 from ..StepOutput.IntegratedOutputSection import IntegratedOutputSection
 from ..StepOutput.TimePoint import TimePoint
-<<<<<<< HEAD
-=======
-from ..TableCollection.EventSeriesData import EventSeriesData
-from ..TableCollection.EventSeriesType import EventSeriesType
-from ..TableCollection.TableCollection import TableCollection
 from ..UtilityAndView.abaqusConstants import *
->>>>>>> 5d4c4f0 (Optimize Imports Using PyCharm)
 
 
 class ModelBase:
