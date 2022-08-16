@@ -1,4 +1,4 @@
-# abqpy 2022.0
+# abqpy 2022.1
 
 [![OSCS Status](https://www.oscs1024.com/platform/badge/haiiliin/abqpy.svg?size=small)](https://www.oscs1024.com/project/haiiliin/abqpy?ref=badge_small)
 [![Documentation Status](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://readthedocs.org/projects/abqpy)
@@ -52,8 +52,8 @@ conda install -c haiiliin abqpy
 
 您可以在安装 `abqpy` 时指定版本号，例如：
 ```shell
-pip install abqpy==2022.0
-conda install -c haiiliin abqpy=2022.0
+pip install abqpy==2022.1
+conda install -c haiiliin abqpy=2022.1
 ```
 更好的方法是直接从源代码安装最新的版本，这样你可以仅指定主版本号：
 ```shell
