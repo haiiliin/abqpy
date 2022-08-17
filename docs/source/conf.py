@@ -23,12 +23,14 @@ import re
 import sys
 import typing
 
+from importlib import metadata
+
 project = 'abqpy'
 copyright = '2022, WANG Hailin'
 author = 'WANG Hailin'
 
 # The full version, including alpha/beta/rc tags
-release = '2016.1'
+release = metadata.version('abqpy')
 
 # -- General configuration ---------------------------------------------------
 
