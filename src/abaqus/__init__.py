@@ -1,5 +1,6 @@
 import os
 import sys
+from pathlib import Path
 
 from .Canvas.Highlight import *
 from .Mdb.Mdb import Mdb as AbaqusMdb
@@ -7,8 +8,10 @@ from .Odb.Odb import Odb
 from .Session.Session import Session as AbaqusSession
 from .UtilityAndView.BackwardCompatibility import BackwardCompatibility
 
-from pathlib import Path
-from ._version import version
+try:
+    from ._version import version
+except ImportError:
+    version = '0.0.0-unknown'
 
 
 def _get_version():
