@@ -30,15 +30,7 @@ copyright = '2022, WANG Hailin'
 author = 'WANG Hailin'
 
 # The full version, including alpha/beta/rc tags
-<<<<<<< HEAD
-<<<<<<< HEAD
-release = '2020.1'
-=======
-release = version('abqpy')
->>>>>>> d6499ed (Support auto manage version)
-=======
 release = metadata.version('abqpy')
->>>>>>> 68fbf01 (Resolve errors)
 
 # -- General configuration ---------------------------------------------------
 
