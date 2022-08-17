@@ -1,8 +1,10 @@
 import os
 import re
 import typing
-from abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs import CaeGuiPrefs
+
 import parso
+
+from abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs import CaeGuiPrefs
 
 
 class AbaqusDocumentationLink:
@@ -13,7 +15,7 @@ class AbaqusDocumentationLink:
         version: typing.Literal['2016', '2017', '2018', '2019', '2020', '2020', '2021', '2022'],
         type: typing.Literal['class', 'module'],
         class_or_module_name: str,
-    ) -> str:
+    ) -> tuple[str, str]:
         """Generate a link to the Abaqus class documentation.
 
         Parameters
@@ -29,11 +31,13 @@ class AbaqusDocumentationLink:
         -------
         str
             The link to the documentation.
+        str
+            The link with label.
         """
-        name = f"{type if type == 'module' else ''}{class_or_module_name.lower()}"
+        name = f"{type if type == 'gprmodule' else ''}{class_or_module_name.lower()}"
         link = (f"https://help.3ds.com/{version}/English/DSSIMULIA_Established/SIMACAEKERRefMap/"
-                f"simaker-c-gpr{name}pyc.htm?contextscope=all")
-        return f"Check `{class_or_module_name} on help.3ds.com/{version} <{link}>`_."
+                f"simaker-c-{name}pyc.htm?contextscope=all")
+        return link, f"Check `{class_or_module_name} on help.3ds.com/{version} <{link}>`_."
 
     @classmethod
     def _method_or_function_link(
@@ -42,7 +46,7 @@ class AbaqusDocumentationLink:
         type: typing.Literal['class', 'module'],
         class_or_module_name: str,
         method_or_function_name: str,
-    ) -> str:
+    ) -> tuple[str, str]:
         """Generate a link to the Abaqus function documentation.
 
         Parameters
@@ -60,12 +64,20 @@ class AbaqusDocumentationLink:
         -------
         str
             The link to the documentation.
+        str
+            The link with label.
         """
-        name = f"{type if type == 'module' else ''}{class_or_module_name.lower()}"
+        name = f"{type if type == 'gprmodule' else ''}{class_or_module_name.lower()}"
+        if type == 'class' and method_or_function_name == '__init__':
+            method_or_function_name = class_or_module_name
         link = (f"https://help.3ds.com/{version}/English/DSSIMULIA_Established/SIMACAEKERRefMap/"
-                f"simaker-c-gpr{name}pyc.htm?contextscope=all"
+                f"simaker-c-{name}pyc.htm?contextscope=all"
                 f"#simaker-{name}{method_or_function_name.lower()}pyc")
-        return f"Check `{class_or_module_name}.{method_or_function_name}() on help.3ds.com/{version} <{link}>`_."
+        if method_or_function_name == class_or_module_name and type == 'class':
+            signature = f"{class_or_module_name}()"
+        else:
+            signature = f"{class_or_module_name}.{method_or_function_name}()"
+        return link, f"Check `{signature} on help.3ds.com/{version} <{link}>`_."
 
     @classmethod
     def _add_link_in_class_or_module_docstring(
@@ -93,8 +105,8 @@ class AbaqusDocumentationLink:
         str
             The docstring with the link to the Abaqus documentation.
         """
-        return (docstring.rstrip() + '\n\n' + ' ' * (0 if type == 'module' else 4) +
-                cls._class_or_module_link(version, type, class_or_module_name))
+        link, link_with_label = cls._class_or_module_link(version, type, class_or_module_name)
+        return docstring.rstrip() + '\n\n' + ' ' * (0 if type == 'module' else 4) + link_with_label
 
     @classmethod
     def _add_link_in_method_or_function_docstring(
@@ -125,10 +137,9 @@ class AbaqusDocumentationLink:
         str
             The docstring with the link to the Abaqus documentation.
         """
-        return re.sub(r'(\n\s+?)(Parameters\n\s+----------)',
-                      r'\1' + cls._method_or_function_link(version, type, class_or_module_name,
-                                                           method_or_function_name) +
-                      r'\1\2', docstring)
+        link, link_with_label = cls._method_or_function_link(version, type, class_or_module_name,
+                                                             method_or_function_name)
+        return re.sub(r'(\n\s+?)(Parameters\n\s+----------)', r'\1' + link_with_label + r'\1\2', docstring)
 
     @classmethod
     def class_link(
@@ -148,9 +159,9 @@ class AbaqusDocumentationLink:
         Returns
         -------
         str
-            The link to the documentation.
+            The link with label.
         """
-        return cls._class_or_module_link(version, 'class', class_name)
+        return cls._class_or_module_link(version, 'class', class_name)[1]
 
     @classmethod
     def module_link(
@@ -170,9 +181,9 @@ class AbaqusDocumentationLink:
         Returns
         -------
         str
-            The link to the documentation.
+            The link with label.
         """
-        return cls._class_or_module_link(version, 'module', module_name)
+        return cls._class_or_module_link(version, 'module', module_name)[1]
 
     @classmethod
     def method_link(
@@ -194,9 +205,9 @@ class AbaqusDocumentationLink:
         Returns
         -------
         str
-            The link to the documentation.
+            The link with label.
         """
-        return cls._method_or_function_link(version, 'class', class_name, method_name)
+        return cls._method_or_function_link(version, 'class', class_name, method_name)[1]
 
     @classmethod
     def function_link(
@@ -219,9 +230,9 @@ class AbaqusDocumentationLink:
         Returns
         -------
         str
-            The link to the documentation.
+            The link with label.
         """
-        return cls._method_or_function_link(version, 'module', module_name, function_name)
+        return cls._method_or_function_link(version, 'module', module_name, function_name)[1]
 
     @classmethod
     def add_link_in_class_docstring(
@@ -377,22 +388,32 @@ class AbaqusDocumentationLink:
                             try:
                                 docstring = re.findall(r'(?<=def )\w+[\w\W]+?"""([\w\W]+?)\n\s*"""',
                                                        cchild.get_code())[0]
-                                docstring_with_link = cls.add_link_in_method_docstring(
-                                    version=version,
-                                    class_name=child.name.value,
-                                    method_name=cchild.name.value,
-                                    docstring=docstring,
-                                )
+                                if cchild.name.value.istitle():
+                                    class_name = cchild.name.value
+                                    docstring_with_link = cls.add_link_in_class_docstring(
+                                        version=version,
+                                        class_name=class_name,
+                                        docstring=docstring,
+                                    )
+                                else:
+                                    method_name = cchild.name.value
+                                    docstring_with_link = cls.add_link_in_method_docstring(
+                                        version=version,
+                                        class_name=child.name.value,
+                                        method_name=method_name,
+                                        docstring=docstring,
+                                    )
                                 source = source.replace(docstring, docstring_with_link)
                             except IndexError:
                                 continue
                 elif child.type == 'funcdef':
                     try:
                         docstring = re.findall(r'(?<=def )\w+[\w\W]+?"""([\w\W]+?)\n\s*"""', child.get_code())[0]
+                        func_name = child.name.value
                         docstring_with_link = cls.add_link_in_function_docstring(
                             version=version,
                             module_name=module_name,
-                            function_name=child.name.value,
+                            function_name=func_name,
                             docstring=docstring,
                         )
                         source = source.replace(docstring, docstring_with_link)
@@ -484,6 +505,7 @@ def test_add_docstring_to_module():
 
 def generate_docstrings():
     def add_docstrings_to_folder(version, folder_name, force_link=False, write_to_file=False):
+        print('# Adding docstrings to {}'.format(folder_name))
         for folder_or_file_name in os.listdir(folder_name):
             if folder_or_file_name.startswith('_'):
                 continue
@@ -503,7 +525,7 @@ def generate_docstrings():
                     write_to_file=write_to_file,
                 )
 
-    base = 'src/abaqus/AbaqusCAEDisplayPreferences'
+    base = 'src/abaqus'
     add_docstrings_to_folder(
         version='2022',
         folder_name=base,
