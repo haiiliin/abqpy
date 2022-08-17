@@ -5,7 +5,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="abqpy",
+<<<<<<< HEAD
     version="2017.1",
+=======
+>>>>>>> d6499ed (Support auto manage version)
     author="WANG Hailin",
     author_email="hailin.wang@connect.polyu.hk",
     description="Type hints for Abaqus/Python scripting",
@@ -31,6 +34,14 @@ setuptools.setup(
         'Anaconda': 'https://anaconda.org/haiiliin/abqpy',
         'Read the Docs': 'https://readthedocs.org/projects/abqpy',
     },
+    use_scm_version = {
+        "root": ".",
+        "relative_to": __file__,
+        "local_scheme": "node-and-date",
+        "write_to": "src/abaqus/_version.py",
+        "fallback_version": "0.0+UNKNOWN",
+    },
+    setup_requires=['setuptools_scm'],
     python_requires='>=3.7',
     package_dir={'': 'src'},
     install_requires=['ipyparams', 'typing-extensions'],
