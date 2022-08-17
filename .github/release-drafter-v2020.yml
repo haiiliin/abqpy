@@ -1,7 +1,7 @@
 # .github/release-drafter.yml
 
-name-template: 'V$NEXT_PATCH_VERSION 🌈'
-tag-template: 'v$NEXT_PATCH_VERSION'
+name-template: 'V$RESOLVED_VERSION 🌈'
+tag-template: 'v$RESOLVED_VERSION'
 filter-by-commitish: true
 commitish: V2020
 categories:
@@ -54,5 +54,5 @@ template: |
 
   $CHANGES
 
-  **Full Changelog**: https://github.com/haiiliin/abqpy/compare/$PREVIOUS_TAG...v$NEXT_PATCH_VERSION
+  **Full Changelog**: https://github.com/haiiliin/abqpy/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
 
