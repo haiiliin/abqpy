@@ -5,10 +5,6 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="abqpy",
-<<<<<<< HEAD
-    version="2019.1",
-=======
->>>>>>> d6499ed (Support auto manage version)
     author="WANG Hailin",
     author_email="hailin.wang@connect.polyu.hk",
     description="Type hints for Abaqus/Python scripting",
