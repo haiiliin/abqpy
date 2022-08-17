@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# abqpy 2017.1
-=======
-# abqpy 2022
->>>>>>> d6499ed (Support auto manage version)
+# abqpy 2017
 
 [![OSCS Status](https://www.oscs1024.com/platform/badge/haiiliin/abqpy.svg?size=small)](https://www.oscs1024.com/project/haiiliin/abqpy?ref=badge_small)
 [![Documentation Status](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://readthedocs.org/projects/abqpy)
@@ -63,8 +59,8 @@ conda install -c haiiliin abqpy
 
 You can specify the version number when installing `abqpy`, for example:
 ```shell
-pip install abqpy==2017.1
-conda install -c haiiliin abqpy=2017.1
+pip install abqpy==2018.1
+conda install -c haiiliin abqpy=2018.1
 ```
 A better way is to install the package from source without specifying the patch number:
 ```shell
