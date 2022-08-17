@@ -23,19 +23,19 @@ import re
 import sys
 import typing
 
-from importlib.metadata import version
-
-# Add source code
-sys.path.insert(0, os.path.abspath('../../src'))
+from importlib import metadata
 
 project = 'abqpy'
 copyright = '2022, WANG Hailin'
 author = 'WANG Hailin'
 
 # The full version, including alpha/beta/rc tags
-release = version('abqpy')
+release = metadata.version('abqpy')
 
 # -- General configuration ---------------------------------------------------
+
+# Add source code
+sys.path.insert(0, os.path.abspath('../../src'))
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
