@@ -8,7 +8,7 @@ from .Session.Session import Session as AbaqusSession
 from .UtilityAndView.BackwardCompatibility import BackwardCompatibility
 
 from pathlib import Path
-from . import _version
+from ._version import version
 
 
 def _get_version():
@@ -24,12 +24,12 @@ def _get_version():
                 root=root,
                 version_scheme="release-branch-semver",
                 local_scheme="node-and-date",
-                fallback_version=_version.version,
+                fallback_version=version,
             )
         except ValueError:
-            return _version.version
+            return version
     else:  # Get the version from the _version.py setuptools_scm file.
-        return _version.version
+        return version
 
 
 __version__ = _get_version()
