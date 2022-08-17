@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# abqpy 2018.1
-=======
-# abqpy 2022
->>>>>>> d6499ed (Support auto manage version)
+# abqpy 2018
 
 [![OSCS Status](https://www.oscs1024.com/platform/badge/haiiliin/abqpy.svg?size=small)](https://www.oscs1024.com/project/haiiliin/abqpy?ref=badge_small)
 [![Documentation Status](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://readthedocs.org/projects/abqpy)
