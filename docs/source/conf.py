@@ -23,17 +23,23 @@ import re
 import sys
 import typing
 
+from importlib.metadata import version
+
+# Add source code
+sys.path.insert(0, os.path.abspath('../../src'))
+
 project = 'abqpy'
 copyright = '2022, WANG Hailin'
 author = 'WANG Hailin'
 
 # The full version, including alpha/beta/rc tags
+<<<<<<< HEAD
 release = '2016.1'
+=======
+release = version('abqpy')
+>>>>>>> d6499ed (Support auto manage version)
 
 # -- General configuration ---------------------------------------------------
-
-# Add source code
-sys.path.insert(0, os.path.abspath('../../src'))
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -102,7 +108,7 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
             except Exception:
                 return baseurl
         source, lineno = inspect.getsourcelines(obj)
-        attr_sources: list[str] = re.findall(rf'\n(    {attr}: [\w\W]+?)\n\n', '\n'.join(source))
+        attr_sources: list[str] = re.findall(rf'\n(\s\s\s\s{attr}: [\w\W]+?)\n\n', '\n'.join(source))
         if len(attr_sources) > 0:
             attr_source = attr_sources[0].splitlines()
 
