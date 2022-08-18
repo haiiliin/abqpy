@@ -322,7 +322,8 @@ class FieldOutput:
 
         Returns
         -------
-        AFieldOutput object.
+        FieldOutput
+            A FieldOutput object.
         """
         ...
 
