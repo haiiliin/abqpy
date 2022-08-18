@@ -141,19 +141,14 @@ You can specify the version number when installing `abqpy`, for example:
 
 .. code-block:: sh
 
-<<<<<<< HEAD
-    pip install abqpy==2017.1
-    conda install -c haiiliin abqpy=2017.1
-=======
-    pip install abqpy==2022.1.1
-    conda install -c haiiliin abqpy=2022.1.1
->>>>>>> 3c1b430 (Update installation guide)
+    pip install abqpy==2017.1.1
+    conda install -c haiiliin abqpy=2017.1.1
 
 A better way is to use * to match specific version:
 
 .. code-block:: sh
 
-    pip install abqpy==2022.*.*
+    pip install abqpy==2017.*.*
 
 Dependencies
 ------------

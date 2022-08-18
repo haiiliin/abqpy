@@ -52,12 +52,12 @@ conda install -c haiiliin abqpy
 
 您可以在安装 `abqpy` 时指定版本号，例如：
 ```shell
-pip install abqpy==2017.1
-conda install -c haiiliin abqpy=2017.1
+pip install abqpy==2017.1.1
+conda install -c haiiliin abqpy=2017.1.1
 ```
 更好的方法是使用 * 来匹配特定版本：
 ```shell
-pip install abqpy==2022.*.*
+pip install abqpy==2017.*.*
 ```
 
 ## 可选依赖
