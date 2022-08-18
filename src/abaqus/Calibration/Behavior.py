@@ -230,7 +230,8 @@ class Behavior:
 
         Returns
         -------
-        Coordinates of the ultimate point.
+        typing.Tuple[float, ...]
+            Coordinates of the ultimate point.
         """
         ...
 
