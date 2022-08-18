@@ -179,14 +179,15 @@ class InteractionModel(
 
         Returns
         -------
-        Tuple of tuples, where each tuple holds information, to be used in contact creation as
-        follows:
-        
-        - A string specifying the name of the master surface used in contact.
-        - A string specifying the name of the slave surface used in contact.
-        - A float specifying the separation distance between the master surface and the slave
-          surface.
-        - A boolean specifying whether or not contact surfaces are overclosed..
+        typing.Tuple[typing.Tuple[str, str, float, bool], ...]
+            Tuple of tuples, where each tuple holds information, to be used in contact creation as
+            follows:
+            
+            - A string specifying the name of the master surface used in contact.
+            - A string specifying the name of the slave surface used in contact.
+            - A float specifying the separation distance between the master surface and the slave
+            surface.
+            - A boolean specifying whether or not contact surfaces are overclosed..
         """
         ...
 
