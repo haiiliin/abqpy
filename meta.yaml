@@ -11,12 +11,16 @@ build:
   skip: True # [py<37]
 
 source:
+<<<<<<< HEAD
   git_url: https://github.com/haiiliin/abqpy.git
 <<<<<<< HEAD
   git_rev: "v2016.1"
 =======
   git_rev: "{{ GIT_DESCRIBE_TAG }}"
 >>>>>>> 95f744e (Manage auto version from Git in Conda)
+=======
+  git_url: .
+>>>>>>> 4e3a33a (Update meta.yaml)
 
 requirements:
   build:
