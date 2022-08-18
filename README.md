@@ -59,17 +59,12 @@ conda install -c haiiliin abqpy
 
 You can specify the version number when installing `abqpy`, for example:
 ```shell
-<<<<<<< HEAD
-pip install abqpy==2016.1
-conda install -c haiiliin abqpy=2016.1
-=======
-pip install abqpy==2022.1.1
-conda install -c haiiliin abqpy=2022.1.1
->>>>>>> 3c1b430 (Update installation guide)
+pip install abqpy==2016.1.1
+conda install -c haiiliin abqpy=2016.1.1
 ```
 A better way is to use * to match specific version:
 ```shell
-pip install abqpy==2022.*.*
+pip install abqpy==2016.*.*
 ```
 
 ## Optional Requirements
