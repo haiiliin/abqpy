@@ -126,13 +126,14 @@ class EdgeArray(typing.List[Edge]):
 
         Returns
         -------
-        This method returns a dictionary object. The key to the dictionary object is the
-        position of the input point in the tuple specified in the **coordinates** starting at
-        index 0. If a closest edge could be found then the value is a sequence consisting of two
-        objects. The first object in the sequence is an Edge that is close to the input point
-        referred to by the key. The second object in the sequence is a sequence of floats that
-        specifies the **X**-, **Y**-, and **Z**-location of the closest point on the Edge to the given
-        point. See program listing above.
+        dict
+            This method returns a dictionary object. The key to the dictionary object is the
+            position of the input point in the tuple specified in the **coordinates** starting at
+            index 0. If a closest edge could be found then the value is a sequence consisting of two
+            objects. The first object in the sequence is an Edge that is close to the input point
+            referred to by the key. The second object in the sequence is a sequence of floats that
+            specifies the **X**-, **Y**-, and **Z**-location of the closest point on the Edge to the given
+            point. See program listing above.
         """
         ...
 
