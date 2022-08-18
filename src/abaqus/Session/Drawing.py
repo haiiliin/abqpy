@@ -128,7 +128,8 @@ class Drawing:
 
         Returns
         -------
-        The number of vertices described.
+        int
+            The number of vertices described.
 
         Raises
         ------
@@ -156,16 +157,16 @@ class Drawing:
 
         Returns
         -------
-        The number of normals described.
+        int
+            The number of normals described.
 
         Raises
         ------
         RangeError
-            ValueError.
-            - If **normalData** is sequence with less than 3 values:
-              ValueError: **normalData** must have at least three values.
-            - If setNormals has already been called and this call is sending fewer values:
-              ValueError: **normalData** cannot be reduced.
+        ValueError: **normalData** must have at least three values
+            If **normalData** is sequence with less than 3 values.
+        ValueError: **normalData** cannot be reduced
+            If setNormals has already been called and this call is sending fewer values.
         """
         ...
 
@@ -190,18 +191,17 @@ class Drawing:
 
         Returns
         -------
-        The number of colors described.
+        int 
+            The number of colors described.
 
         Raises
         ------
-        RangeError
-            ValueError.
-            - If an invalid **colorDimension** is specified:
-              RangeError: **colorDimension** must be in the range 3 <= value <= 4
-            - If **colorData** is an empty sequence:
-              ValueError: **colorData** cannot be empty.
-            - If setColors has already been called and this call is sending fewer colors:
-              ValueError: **colorData** cannot be reduced
+        RangeError: **colorDimension** must be in the range 3 <= value <= 4
+            If an invalid **colorDimension** is specified.
+        ValueError: **colorData** cannot be empty
+            If **colorData** is an empty sequence.
+        ValueError: **colorData** cannot be reduced
+            If setColors has already been called and this call is sending fewer colors.
         """
         ...
 
@@ -276,13 +276,14 @@ class Drawing:
 
         Returns
         -------
-        The total number of rendering commands that have been specified.
+        int
+            The total number of rendering commands that have been specified.
 
         Raises
         ------
         ValueError
-            - If (**startIndex** + **numVertices** - 1) is larger than the length of the vertex array:
-        ValueError: Drawing request extends past array size of vertices.
+            If (**startIndex** + **numVertices** - 1) is larger than the length of the vertex array:
+        ValueError: Drawing request extends past array size of vertices
             - If (**startIndex** + **numVertices** - 1) is larger than the length of the normal array
               and normals are required for the graphics primitive:
               Drawing request extends past array size of normals.
@@ -318,7 +319,8 @@ class Drawing:
 
         Returns
         -------
-        The total number of rendering commands that have been specified.
+        int 
+            The total number of rendering commands that have been specified.
 
         Raises
         ------

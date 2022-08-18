@@ -307,7 +307,7 @@ class SessionBase:
             Abaqus/CAE. In this case the limit can be changed to 2800 MB.If the kernel memory size
             reaches the **abq_ker_memory** value or the virtual memory limit of the machine, the
             following message will be displayed:`Operation did not complete due to a memory
-            allocation failure.`For optimal performance, the memory limit should be set to a value
+            allocation failure. For optimal performance, the memory limit should be set to a value
             less than the physical amount of memory on the machine.The minimum setting allowed is
             256 MB.
         """
@@ -329,7 +329,8 @@ class SessionBase:
 
         Returns
         -------
-        The connection port number used for the CAD connection.
+        int 
+            The connection port number used for the CAD connection.
         """
         ...
 

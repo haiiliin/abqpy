@@ -233,23 +233,29 @@ class FaceArray(typing.List[Face]):
         ----------
         coordinates
             A sequence of a sequence of floats, where each sequence of floats describes the **X**-,
-            **Y**-, and **Z**-coordinates of a
-            point.`r=f.getClosest(coordinates=((20.0,20.0,10.0),(-1.0, -15.0, 15),))``r.keys()``[0,
-            1]``r[0]``(mdb.models['Model-1'].parts['Part-1'].faces[0],
-              (15.7090625762939, 20.0, 10.0))`
+            **Y**-, and **Z**-coordinates of a point.
+            
+            .. code-block:: python
+            
+                >>> r=f.getClosest(coordinates=((20.0, 20.0, 10.0), (-1.0, -15.0, 15), ))
+                >>> r.keys()
+                [0, 1]
+                >>> r[0]
+                (mdb.models['Model-1'].parts['Part-1'].faces[0], (15.7090625762939, 20.0, 10.0))
         searchTolerance
             A double specifying the distance within which the closest object must lie. The default
             value is half of the parent part/instance size.
 
         Returns
         -------
-        This method returns a dictionary object. The key to the dictionary object is the
-        position of the input point in the tuple specified in the **coordinates** starting at
-        index 0. If a closest face could be found then the value is a sequence consisting of two
-        objects. The first object in the sequence is a Face that is close to the input point
-        referred to by the key. The second object in the sequence is a sequence of floats that
-        specifies the **X**-, **Y**-, and **Z**-location of the closest point on the Face to the given
-        point. See program listing above.
+        dict
+            This method returns a dictionary object. The key to the dictionary object is the
+            position of the input point in the tuple specified in the **coordinates** starting at
+            index 0. If a closest face could be found then the value is a sequence consisting of two
+            objects. The first object in the sequence is a Face that is close to the input point
+            referred to by the key. The second object in the sequence is a sequence of floats that
+            specifies the **X**-, **Y**-, and **Z**-location of the closest point on the Face to the given
+            point. See program listing above.
 
         Raises
         ------
