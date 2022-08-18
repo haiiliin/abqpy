@@ -27,7 +27,7 @@ class DruckerPragerCreep:
             - Etc.
         - If **law** = SINGHM, the table data specify the following:
         
-            - A. (Units of :math:`\mathrm{T}^{-1} .` )
+            - A. (Units of :math:`\mathrm{T}^{-1}`. )
             - :math:`\alpha`. (Units of :math:`F^{-1} L^{2}`.)
             - :math:`m`.
             - :math:`t_{1} \cdot` (Units of :math:`\mathrm{T}`.)
