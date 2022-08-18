@@ -189,6 +189,7 @@ class XYSessionBase(SessionBase):
 
         Returns
         -------
-        Int specifying the limit for number of XY data objects.
+        int 
+            Int specifying the limit for number of XY data objects.
         """
         ...
