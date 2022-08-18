@@ -444,46 +444,47 @@ class MeshPart(PartBase):
 
         Returns
         -------
-        The return value is a Float, an Int, or a SymbolicConstant depending on the value of the
-        **attribute** argument.
+        typing.Union[float, int, SymbolicConstant]
+            The return value is a Float, an Int, or a SymbolicConstant depending on the value of the
+            **attribute** argument.
 
-        The return value is dependent on the **attribute** argument.
+            The return value is dependent on the **attribute** argument.
 
-        - If **attribute** = EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying
-          the edge seeding method used to create the seeds along the edge. Possible values are: UNIFORM_BY_NUMBER, UNIFORM_BY_SIZE, CURVATURE_BASED_BY_SIZE, BIASED, NONE
+            - If **attribute** = EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying
+            the edge seeding method used to create the seeds along the edge. Possible values are: UNIFORM_BY_NUMBER, UNIFORM_BY_SIZE, CURVATURE_BASED_BY_SIZE, BIASED, NONE
 
-        - If **attribute** = BIAS_METHOD, the return value is a SymbolicConstant specifying the bias
-          type used to create the seeds along the edge. Possible values are: SINGLE, DOUBLE, NONE
+            - If **attribute** = BIAS_METHOD, the return value is a SymbolicConstant specifying the bias
+            type used to create the seeds along the edge. Possible values are: SINGLE, DOUBLE, NONE
 
-        - If **attribute** = NUMBER, the return value is an Int specifying the number of element
-          seeds along the edge.
-        - If **attribute** = AVERAGE_SIZE, the return value is a Float specifying the average
-          element size along the edge.
-        - If **attribute** = DEVIATION_FACTOR, the return value is a Float specifying the deviation
-          factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If edge
-          seeds are not defined, the return value is zero.
-        - If **attribute** = MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
-          smallest allowable element as a fraction of the specified global element size. If edge
-          seeds are not defined, the return value is zero.
-        - If **attribute** = BIAS_RATIO, the return value is a Float specifying the length ratio of
-          the largest element to the smallest element.
-        - If **attribute** = BIAS_MIN_SIZE, the return value is a Float specifying the length of the
-          largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
-          specified by minimum and maximum sizes.
-        - If **attribute** = BIAS_MAX_SIZE, the return value is a Float specifying the length of the
-          largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
-          specified by minimum and maximum sizes.
-        - If **attribute** = VERTEX_ADJ_TO_SMALLEST_ELEM, the return value is an Int specifying the
-          ID of the vertex next to the smallest element; only applicable if the
-          EDGE_SEEDING_METHOD is BIASED.
-        - If **attribute** = SMALLEST_ELEM_LOCATION, the return value is a SymbolicConstant
-          specifying the location of smallest elements for double bias seeds; only applicable if
-          the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are: SMALLEST_ELEM_AT_CENTER, SMALLEST_ELEM_AT_ENDS, NONE
+            - If **attribute** = NUMBER, the return value is an Int specifying the number of element
+            seeds along the edge.
+            - If **attribute** = AVERAGE_SIZE, the return value is a Float specifying the average
+            element size along the edge.
+            - If **attribute** = DEVIATION_FACTOR, the return value is a Float specifying the deviation
+            factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If edge
+            seeds are not defined, the return value is zero.
+            - If **attribute** = MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
+            smallest allowable element as a fraction of the specified global element size. If edge
+            seeds are not defined, the return value is zero.
+            - If **attribute** = BIAS_RATIO, the return value is a Float specifying the length ratio of
+            the largest element to the smallest element.
+            - If **attribute** = BIAS_MIN_SIZE, the return value is a Float specifying the length of the
+            largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
+            specified by minimum and maximum sizes.
+            - If **attribute** = BIAS_MAX_SIZE, the return value is a Float specifying the length of the
+            largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
+            specified by minimum and maximum sizes.
+            - If **attribute** = VERTEX_ADJ_TO_SMALLEST_ELEM, the return value is an Int specifying the
+            ID of the vertex next to the smallest element; only applicable if the
+            EDGE_SEEDING_METHOD is BIASED.
+            - If **attribute** = SMALLEST_ELEM_LOCATION, the return value is a SymbolicConstant
+            specifying the location of smallest elements for double bias seeds; only applicable if
+            the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are: SMALLEST_ELEM_AT_CENTER, SMALLEST_ELEM_AT_ENDS, NONE
 
-        - If **attribute** = CONSTRAINT, the return value is a SymbolicConstant specifying how close
-          the seeds must be matched by the mesh. Possible values are: FREE, FINER, FIXED, NONE
+            - If **attribute** = CONSTRAINT, the return value is a SymbolicConstant specifying how close
+            the seeds must be matched by the mesh. Possible values are: FREE, FINER, FIXED, NONE
 
-        A value of NONE indicates that the edge is not seeded.
+            A value of NONE indicates that the edge is not seeded.
         """
         ...
 
@@ -508,7 +509,8 @@ class MeshPart(PartBase):
 
         Returns
         -------
-        ElemType object.
+        ElementType
+            An ElemType object.
 
         Raises
         ------
@@ -563,8 +565,9 @@ class MeshPart(PartBase):
 
         Returns
         -------
-        The return value is a SymbolicConstant or a Boolean depending on the value of the
-        **attribute** argument.
+        typing.Union[bool, SymbolicConstant]
+            The return value is a SymbolicConstant or a Boolean depending on the value of the
+            **attribute** argument.
 
         Raises
         ------
@@ -617,7 +620,8 @@ class MeshPart(PartBase):
 
         Returns
         -------
-        The return value is a Float that depends on the value of the **attribute** argument.
+        float
+            The return value is a Float that depends on the value of the **attribute** argument.
 
         Raises
         ------
