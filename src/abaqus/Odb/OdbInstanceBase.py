@@ -222,7 +222,8 @@ class OdbInstanceBase:
 
         Returns
         -------
-        AnOdbMeshNode object.
+        OdbMeshNode
+            An OdbMeshNode object.
 
         Raises
         ------
