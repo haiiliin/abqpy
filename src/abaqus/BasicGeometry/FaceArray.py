@@ -233,10 +233,15 @@ class FaceArray(typing.List[Face]):
         ----------
         coordinates
             A sequence of a sequence of floats, where each sequence of floats describes the **X**-,
-            **Y**-, and **Z**-coordinates of a
-            point.`r=f.getClosest(coordinates=((20.0,20.0,10.0),(-1.0, -15.0, 15),))``r.keys()``[0,
-            1]``r[0]``(mdb.models['Model-1'].parts['Part-1'].faces[0],
-              (15.7090625762939, 20.0, 10.0))`
+            **Y**-, and **Z**-coordinates of a point.
+            
+            .. code-block:: python
+            
+                >>> r=f.getClosest(coordinates=((20.0, 20.0, 10.0), (-1.0, -15.0, 15), ))
+                >>> r.keys()
+                [0, 1]
+                >>> r[0]
+                (mdb.models['Model-1'].parts['Part-1'].faces[0], (15.7090625762939, 20.0, 10.0))
         searchTolerance
             A double specifying the distance within which the closest object must lie. The default
             value is half of the parent part/instance size.
