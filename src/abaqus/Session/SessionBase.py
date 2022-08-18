@@ -329,7 +329,8 @@ class SessionBase:
 
         Returns
         -------
-        The connection port number used for the CAD connection.
+        int 
+            The connection port number used for the CAD connection.
         """
         ...
 
