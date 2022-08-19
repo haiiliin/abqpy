@@ -10,10 +10,12 @@ class KeywordBlock:
     object has no constructor. A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object is created when you create a model
     object. A model object contains only one KeywordBlock object.
 
-    Notes
-    -----
-    This object can be accessed by:
-        mdb.models[name].keywordBlock
+    .. note::
+        This object can be accessed by:
+        
+        .. code-block:: python
+        
+            mdb.models[name].keywordBlock
     """
 
     #: A Boolean specifying whether the Keywords Editor has been used to change the model.
