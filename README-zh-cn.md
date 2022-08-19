@@ -57,7 +57,7 @@ conda install -c haiiliin abqpy=2016.1.1
 ```
 更好的方法是使用 * 来匹配特定版本：
 ```shell
-pip install abqpy==2016.*.*
+pip install abqpy==2016.*
 ```
 
 ## 可选依赖
