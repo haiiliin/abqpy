@@ -36,7 +36,7 @@ class EmagTimeHarmonicStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - ELECTROMAGNETIC TIME HARMONIC
-                - STEP
+        - STEP
     """
 
     #: A SymbolicConstant specifying the type of matrix storage. Possible values are SYMMETRIC,

@@ -33,7 +33,7 @@ class ComplexFrequencyStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - COMPLEX FREQUENCY
-                - STEP
+        - STEP
     """
 
     #: A String specifying the repository key.

@@ -34,7 +34,7 @@ class SubspaceDynamicsStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - DYNAMIC
-                - STEP
+        - STEP
     """
 
     #: A String specifying the repository key.

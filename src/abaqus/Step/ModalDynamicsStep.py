@@ -38,9 +38,9 @@ class ModalDynamicsStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - DAMPING
-                - MODAL DAMPING
-                - MODAL DYNAMIC
-                - STEP
+        - MODAL DAMPING
+        - MODAL DYNAMIC
+        - STEP
     """
 
     #: A String specifying the repository key.
