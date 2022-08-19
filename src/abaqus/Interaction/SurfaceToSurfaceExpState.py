@@ -21,7 +21,7 @@ class SurfaceToSurfaceExpState(InteractionState):
         The corresponding analysis keywords are:
 
         - CONTACT CONTROLS
-                - CONTACT PAIR
+        - CONTACT PAIR
     """
 
     #: A SymbolicConstant specifying the propagation state of the **interactionProperty** member.

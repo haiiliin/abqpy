@@ -24,8 +24,8 @@ class CompositeLayup:
         The corresponding analysis keywords are:
 
         - SHELL SECTION
-                - SHELL GENERAL SECTION
-                - SOLID SECTION
+        - SHELL GENERAL SECTION
+        - SOLID SECTION
     """
 
     #: A :py:class:`~abaqus.Section.GeometryShellSection.GeometryShellSection` object.
