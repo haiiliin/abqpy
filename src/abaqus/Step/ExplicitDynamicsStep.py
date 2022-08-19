@@ -34,10 +34,11 @@ class ExplicitDynamicsStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - BULK VISCOSITY
-                - DYNAMIC
-                - FIXED MASS SCALING
-                - STEP
-                - VARIABLE MASS SCALING
+        - DYNAMIC
+        - FIXED MASS SCALING
+        - BULK VISCOSITY
+        - DYNAMIC
+        - VARIABLE MASS SCALING
     """
 
     #: A String specifying the repository key.
