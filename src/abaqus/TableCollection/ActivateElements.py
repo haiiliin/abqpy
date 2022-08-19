@@ -12,7 +12,7 @@ class ActivateElements:
         The corresponding analysis keywords are:
 
         - ActivateElements
-                - ElementProgressiveActivation
+        - ElementProgressiveActivation
     """
 
     #: A String specifying the name of the tableCollection object.

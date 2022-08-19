@@ -33,7 +33,7 @@ class ViscoStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - VISCO
-                - STEP
+        - STEP
     """
 
     #: A String specifying the repository key.

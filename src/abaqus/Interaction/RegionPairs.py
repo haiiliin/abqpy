@@ -17,7 +17,7 @@ class RegionPairs:
         The corresponding analysis keywords are:
 
         - CONTACT INCLUSIONS
-                - CONTACT EXCLUSIONS
+        - CONTACT EXCLUSIONS
     """
 
     def setValuesInStep(

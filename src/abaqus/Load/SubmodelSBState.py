@@ -20,7 +20,7 @@ class SubmodelSBState(LoadState):
         The corresponding analysis keywords are:
 
         - SUBMODEL
-                - DSLOAD
+        - DSLOAD
     """
 
     #: A SymbolicConstant specifying the propagation state of the **globalStep** member. Possible

@@ -20,7 +20,7 @@ class FilmConditionState(InteractionState):
         The corresponding analysis keywords are:
 
         - SFILM
-                - FILM
+        - FILM
     """
 
     #: A SymbolicConstant specifying the propagation state of the **interactionProperty** member.
