@@ -20,8 +20,8 @@ class ConnectorSection(Section):
         The corresponding analysis keywords are:
 
         - CONNECTOR SECTION
-                - CONNECTOR BEHAVIOR
-                - CONNECTOR CONSTITUTIVE REFERENCE
+        - CONNECTOR BEHAVIOR
+        - CONNECTOR CONSTITUTIVE REFERENCE
     """
 
     #: A String specifying the repository key.

@@ -22,7 +22,7 @@ class PropertyTable:
         The corresponding analysis keywords are:
 
         - PROPERTY TABLE TYPE
-                - PROPERTY TABLE
+        - PROPERTY TABLE
     """
 
     #: A repository of PropertyTableData. Specifies all the propertyTableData in PropertyTable

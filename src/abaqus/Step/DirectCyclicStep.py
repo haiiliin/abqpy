@@ -35,7 +35,7 @@ class DirectCyclicStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - DIRECT CYCLIC
-                - STEP
+        - STEP
     """
 
     #: A String specifying the repository key.

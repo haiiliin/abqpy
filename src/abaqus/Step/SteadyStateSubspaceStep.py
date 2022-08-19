@@ -37,7 +37,7 @@ class SteadyStateSubspaceStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - STEADY STATE DYNAMICS
-                - STEP
+        - STEP
     """
 
     #: A String specifying the repository key.
