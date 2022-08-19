@@ -12,13 +12,12 @@ class ImageOptions(_CopyOptionsBase):
     a viewport when the viewport is created using the values in the **imageOptions** member of
     the current viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block::
+        .. code-block:: python
 
-        session.viewports[name].imageOptions
+            session.viewports[name].imageOptions
     """
     #: A String specifying the name of the image. A list of valid image names is in the
     #: **images** repository in the **session** object.

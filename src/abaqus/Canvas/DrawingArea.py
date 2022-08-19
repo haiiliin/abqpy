@@ -5,13 +5,12 @@ class DrawingArea:
     """The DrawingArea object specifies the location and size of the drawing area used for
     placement of viewports.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block::
+        .. code-block:: python
 
-        session.drawingArea
+            session.drawingArea
     """
 
     #: A Float specifying the width in millimeters.

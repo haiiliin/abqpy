@@ -12,14 +12,13 @@ class LightOptions:
     member when a session is started. When a new viewport is created, the **lightOptions**
     member is copied from the current viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block::
+        .. code-block:: python
 
-        session.defaultLightOptions
-        session.viewports[name].lightOptions
+            session.defaultLightOptions
+            session.viewports[name].lightOptions
     """
 
     #: A SymbolicConstant specifying the shading technique that should be used to fill facets

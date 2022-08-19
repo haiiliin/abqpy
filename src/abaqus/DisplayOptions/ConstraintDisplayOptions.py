@@ -8,11 +8,13 @@ class ConstraintDisplayOptions:
     The ConstraintDisplayOptions object has no constructor. When you create a new viewport,
     the settings are copied from the current viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
-        session.viewports[name].assemblyDisplay.constraintOptions
-        session.viewports[name].layers[name].assemblyDisplay.constraintOptions
+    .. note::
+        This object can be accessed by:
+        
+        .. code-block:: python
+        
+            session.viewports[name].assemblyDisplay.constraintOptions
+            session.viewports[name].layers[name].assemblyDisplay.constraintOptions
     """
 
     def setValues(
