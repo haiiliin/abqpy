@@ -7,16 +7,15 @@ class GeometryDisplayOptions:
     constructor. When you create a new viewport, the settings are copied from the current
     viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block::
+        .. code-block:: python
 
-        session.viewports[name].assemblyDisplay.geometryOptions
-        session.viewports[name].layers[name].assemblyDisplay.geometryOptions
-        session.viewports[name].layers[name].partDisplay.geometryOptions
-        session.viewports[name].partDisplay.geometryOptions
+            session.viewports[name].assemblyDisplay.geometryOptions
+            session.viewports[name].layers[name].assemblyDisplay.geometryOptions
+            session.viewports[name].layers[name].partDisplay.geometryOptions
+            session.viewports[name].partDisplay.geometryOptions
     """
 
     def setValues(

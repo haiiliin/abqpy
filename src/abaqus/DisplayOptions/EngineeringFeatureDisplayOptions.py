@@ -8,17 +8,16 @@ class EngineeringFeatureDisplayOptions:
     The EngineeringFeatureDisplayOptions object has no constructor. When you create a new
     viewport, the settings are copied from the current viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block::
+        .. code-block:: python
 
-        session.viewports[name].assemblyDisplay.engineeringFeatureOptions
-        session.viewports[name].layers[name].assemblyDisplay.engineeringFeatureOptions
-        import part
-        session.viewports[name].layers[name].partDisplay.engineeringFeatureOptions
-        session.viewports[name].partDisplay.engineeringFeatureOptions
+            session.viewports[name].assemblyDisplay.engineeringFeatureOptions
+            session.viewports[name].layers[name].assemblyDisplay.engineeringFeatureOptions
+            import part
+            session.viewports[name].layers[name].partDisplay.engineeringFeatureOptions
+            session.viewports[name].partDisplay.engineeringFeatureOptions
     """
 
     def setValues(

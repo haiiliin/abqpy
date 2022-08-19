@@ -15,14 +15,13 @@ class GraphicsOptions:
     Abaqus/CAE, or if you wish to override the default graphics options, you can modify
     settings in the environment file. For more information, see Tuning graphics cards.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block::
+        .. code-block:: python
 
-        session.defaultGraphicsOptions
-        session.graphicsOptions
+            session.defaultGraphicsOptions
+            session.graphicsOptions
     """
 
     #: A Boolean specifying whether a viewport background style of GRADIENT can be overridden
