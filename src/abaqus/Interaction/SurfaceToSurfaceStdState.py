@@ -21,8 +21,8 @@ class SurfaceToSurfaceStdState(InteractionState):
         The corresponding analysis keywords are:
 
         - CONTACT CONTROLS
-                - CONTACT PAIR
-                - CONTACT INTERFERENCE
+        - CONTACT PAIR
+        - CONTACT INTERFERENCE
     """
 
     #: A SymbolicConstant specifying the propagation state of the **interactionProperty** member.

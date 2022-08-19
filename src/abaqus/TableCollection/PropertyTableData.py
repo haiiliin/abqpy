@@ -17,7 +17,7 @@ class PropertyTableData:
         The corresponding analysis keywords are:
 
         - PROPERTY TABLE TYPE
-                - PROPERTY TABLE
+        - PROPERTY TABLE
     """
 
     #: A String specifying a unique label name for the current PropertyTable object.
