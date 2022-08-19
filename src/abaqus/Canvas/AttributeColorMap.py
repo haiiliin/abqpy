@@ -9,13 +9,12 @@ class AttributeColorMap(_OptionsBase):
     AttributeColorMap object to be updated in the session.viewports[name].colorMappings
     repository.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block::
+        .. code-block:: python
 
-        session.viewports[name].colorMappings[name]
+            session.viewports[name].colorMappings[name]
     """
 
     #: A SymbolicConstant specifying the type of AttributeColorMap . Possible values are
