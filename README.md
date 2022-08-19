@@ -64,7 +64,7 @@ conda install -c haiiliin abqpy=2022.1.1
 ```
 A better way is to use * to match specific version:
 ```shell
-pip install abqpy==2022.*.*
+pip install abqpy==2022.*
 ```
 
 ## Optional Requirements
