@@ -20,9 +20,9 @@ class CyclicSymmetryState(InteractionState):
         The corresponding analysis keywords are:
 
         - CLOAD
-                - DLOAD
-                - DSLOAD
-                - SELECT CYCLIC SYMMETRY MODES
+        - DLOAD
+        - DSLOAD
+        - SELECT CYCLIC SYMMETRY MODES
     """
 
     #: A SymbolicConstant specifying whether Abaqus should extract all possible nodal diameters

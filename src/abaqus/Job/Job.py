@@ -19,7 +19,7 @@ class Job:
         The corresponding analysis keywords are:
 
         - HEADING
-                - PREPRINT
+        - PREPRINT
     """
 
     #: A String specifying the name of the new job. The name must be a valid Abaqus/CAE object
