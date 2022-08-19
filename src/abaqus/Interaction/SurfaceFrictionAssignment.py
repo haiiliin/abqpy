@@ -16,9 +16,9 @@ class SurfaceFrictionAssignment:
             import interaction
             mdb.models[name].interactions[name].surfaceFrictionAssignments
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SURFACE PROPERTY ASSIGNMENT
+        - SURFACE PROPERTY ASSIGNMENT
 
     """
 

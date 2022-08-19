@@ -14,9 +14,9 @@ class SlidingFormulationAssignment:
             import interaction
             mdb.models[name].interactions[name].slidingFormulationAssignments
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONTACT FORMULATION
+        - CONTACT FORMULATION
 
     """
 

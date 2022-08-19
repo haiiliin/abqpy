@@ -11,9 +11,9 @@ class MeanFieldMatrix:
             import odbMaterial
             session.odbs[name].materials[name].constituents[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONSTITUENT
+        - CONSTITUENT
 
     """
 
