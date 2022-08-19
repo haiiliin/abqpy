@@ -7,18 +7,17 @@ class Stress(PredefinedField):
     """The Stress object stores the data for an initial stress predefined field.
     The Stress object is derived from the PredefinedField object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].predefinedFields[name]
+            import load
+            mdb.models[name].predefinedFields[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - INITIAL CONDITIONS
+        - INITIAL CONDITIONS
 
     """
 
@@ -36,8 +35,7 @@ class Stress(PredefinedField):
     ):
         """This method creates a Stress predefined field object.
 
-        Notes
-        -----
+        .. note::
         This function can be accessed by:
 
         .. code-block:: python

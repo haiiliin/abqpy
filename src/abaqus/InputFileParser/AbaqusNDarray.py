@@ -11,9 +11,5 @@ class AbaqusNDarray:
     
     In the last of these cases, the member **colZeroIsInt** will be True; in the other two
     cases, it will be False.
-
-    Notes
-    -----
-    This object can be accessed by:
     """
     ...
