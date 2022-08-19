@@ -20,7 +20,7 @@ class BoltLoadState(LoadState):
         The corresponding analysis keywords are:
 
         - CLOAD
-                - BOUNDARY
+        - BOUNDARY
     """
 
     #: A SymbolicConstant specifying the type of bolt load. Possible values are APPLY_FORCE,

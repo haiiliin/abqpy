@@ -36,7 +36,7 @@ class CoupledThermalElectricalStructuralStep(AnalysisStep):
 
         - COUPLED TEMPERATURE-DISPLACEMENT
                 - SOLUTION TECHNIQUE
-                - STEP
+        - STEP
     """
 
     #: A String specifying the repository key.

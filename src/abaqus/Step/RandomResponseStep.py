@@ -45,9 +45,9 @@ class RandomResponseStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - DAMPING
-                - MODAL DAMPING
-                - RANDOM RESPONSE
-                - STEP
+        - MODAL DAMPING
+        - RANDOM RESPONSE
+        - STEP
     """
 
     #: A String specifying the repository key.

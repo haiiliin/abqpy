@@ -20,8 +20,8 @@ class ActuatorSensor(Interaction):
         The corresponding analysis keywords are:
 
         - ELEMENT
-                - USER ELEMENT
-                - INITIAL CONDITIONS
+        - USER ELEMENT
+        - INITIAL CONDITIONS
     """
 
     #: A String specifying the repository key.
