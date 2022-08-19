@@ -16,9 +16,9 @@ class SurfaceVertexCriteriaAssignment:
             import interaction
             mdb.models[name].interactions[name].surfacevertexCriteriaAssignments
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SURFACE PROPERTY ASSIGNMENT
+        - SURFACE PROPERTY ASSIGNMENT
 
     """
 
