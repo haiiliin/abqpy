@@ -33,7 +33,7 @@ class MassDiffusionStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - MASS DIFFUSION
-                - STEP
+        - STEP
     """
 
     #: A String specifying the repository key.

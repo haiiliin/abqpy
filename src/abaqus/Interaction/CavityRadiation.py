@@ -20,12 +20,12 @@ class CavityRadiation(Interaction):
         The corresponding analysis keywords are:
 
         - CAVITY DEFINITION
-                - CYCLIC
-                - EMISSIVITY
-                - PERIODIC
-                - RADIATION SYMMETRY
-                - RADIATION VIEWFACTOR
-                - REFLECTION
+        - CYCLIC
+        - EMISSIVITY
+        - PERIODIC
+        - RADIATION SYMMETRY
+        - RADIATION VIEWFACTOR
+        - REFLECTION
     """
 
     #: A String specifying the repository key.

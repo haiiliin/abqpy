@@ -32,7 +32,7 @@ class BuckleStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - BUCKLE
-                - STEP
+        - STEP
     """
 
     #: A String specifying the repository key.
