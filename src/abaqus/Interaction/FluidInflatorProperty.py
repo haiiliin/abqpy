@@ -64,13 +64,12 @@ class FluidInflatorProperty(ContactProperty):
     ):
         """This method creates a FluidInflatorProperty object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note::
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].FluidInflatorProperty
+                mdb.models[name].FluidInflatorProperty
 
         Parameters
         ----------
