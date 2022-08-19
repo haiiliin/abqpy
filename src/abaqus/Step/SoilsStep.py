@@ -33,7 +33,7 @@ class SoilsStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - SOILS
-                - STEP
+        - STEP
     """
 
     #: A String specifying the repository key.

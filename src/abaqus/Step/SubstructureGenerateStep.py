@@ -39,7 +39,7 @@ class SubstructureGenerateStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - SUBSTRUCTURE GENERATE
-                - STEP
+        - STEP
     """
 
     #: A String specifying the repository key.

@@ -33,7 +33,7 @@ class FrequencyStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - FREQUENCY
-                - STEP
+        - STEP
     """
 
     #: A String specifying the repository key.
