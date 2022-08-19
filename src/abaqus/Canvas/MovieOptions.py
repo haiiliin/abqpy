@@ -12,13 +12,12 @@ class MovieOptions(_CopyOptionsBase):
     a viewport when the viewport is created using the values in the **movieOptions** member of
     the current viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block::
+        .. code-block:: python
 
-        session.viewports[name].movieOptions
+            session.viewports[name].movieOptions
     """
     #: A String specifying the name of the movie. A list of valid movie names is in the
     #: **movies** repository in the **session** object.

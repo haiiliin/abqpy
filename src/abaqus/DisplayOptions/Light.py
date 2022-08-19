@@ -7,14 +7,13 @@ class Light:
     The Light object has no constructor; Abaqus creates them as part of the
     **defaultLightOptions** and the **lightOptions** objects when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block::
+        .. code-block:: python
 
-        session.defaultLightOptions.lights[i]
-        session.viewports[name].lightOptions.lights[i]
+            session.defaultLightOptions.lights[i]
+            session.viewports[name].lightOptions.lights[i]
     """
 
     def setValues(
