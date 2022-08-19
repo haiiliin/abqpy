@@ -104,8 +104,8 @@ Therefore, if you want to run your Python script in Abaqus Python environment, p
 Installation
 ------------
 
-`abqpy` is using type hints features that require Python 3.9 or a later version, 
-please upgrade it to Python 3.9 or a later version if you are using an earlier version.
+`abqpy` supports Python 3.7 or a later version. If you are using Python 3.6 or an earlier version, please upgrade to Python 3.7
+or a later version.
 
 `abqpy` is uploaded to `PyPI <https://pypi.org/project/abqpy>`_, you can simply install 
 it using pip, since abqpy (from V1.0.15) depends on `ipynbname` and it is not distributed to
