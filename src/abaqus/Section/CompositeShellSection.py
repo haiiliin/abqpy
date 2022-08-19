@@ -23,7 +23,7 @@ class CompositeShellSection(GeometryShellSection):
         The corresponding analysis keywords are:
 
         - SHELL SECTION
-                - SHELL GENERAL SECTION
+        - SHELL GENERAL SECTION
     """
 
     #: A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.

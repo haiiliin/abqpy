@@ -42,13 +42,13 @@ class ConnectorOptions:
         The corresponding analysis keywords are:
 
         - CONNECTOR BEHAVIOR
-                - CONNECTOR DAMAGE INITIATION
-                - CONNECTOR DAMAGE EVOLUTION
-                - CONNECTOR DAMPING
-                - CONNECTOR DERIVED COMPONENT
-                - CONNECTOR ELASTICITY
-                - CONNECTOR FRICTION
-                - CONNECTOR PLASTICITY
+        - CONNECTOR DAMAGE INITIATION
+        - CONNECTOR DAMAGE EVOLUTION
+        - CONNECTOR DAMPING
+        - CONNECTOR DERIVED COMPONENT
+        - CONNECTOR ELASTICITY
+        - CONNECTOR FRICTION
+        - CONNECTOR PLASTICITY
     """
 
     #: A Boolean specifying whether or not to use the behavior-level settings for

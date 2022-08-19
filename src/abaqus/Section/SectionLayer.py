@@ -18,7 +18,7 @@ class SectionLayer:
         The corresponding analysis keywords are:
 
         - SHELL SECTION
-                - SHELL GENERAL SECTION
+        - SHELL GENERAL SECTION
     """
 
     #: A Float specifying the thickness of the section layer.
