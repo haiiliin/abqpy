@@ -46,7 +46,7 @@ class ResponseSpectrumStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - RESPONSE SPECTRUM
-                - STEP
+        - STEP
     """
 
     #: A String specifying the repository key.

@@ -20,8 +20,8 @@ class SelfContactStdState(InteractionState):
         The corresponding analysis keywords are:
 
         - CONTACT CONTROLS
-                - CONTACT PAIR
-                - MODEL CHANGE
+        - CONTACT PAIR
+        - MODEL CHANGE
     """
 
     #: A SymbolicConstant specifying the propagation state of the **interactionProperty** member.

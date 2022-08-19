@@ -33,7 +33,7 @@ class HeatTransferStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - HEAT TRANSFER
-                - STEP
+        - STEP
     """
 
     #: A String specifying the repository key.
