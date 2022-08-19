@@ -20,8 +20,8 @@ class TwoPointSpringDashpot(SpringDashpot):
         The corresponding analysis keywords are:
 
         - ELEMENT
-                - SPRING
-                - DASHPOT
+        - SPRING
+        - DASHPOT
     """
 
     #: A Boolean specifying whether the spring/dashpot is suppressed or not. The default value

@@ -33,7 +33,7 @@ class AnnealStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - ANNEAL
-                - STEP
+        - STEP
     """
 
     #: A String specifying the repository key.

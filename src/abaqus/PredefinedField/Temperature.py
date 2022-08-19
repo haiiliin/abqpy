@@ -18,7 +18,7 @@ class Temperature(PredefinedField):
         The corresponding analysis keywords are:
 
         - INITIAL CONDITIONS
-                - TEMPERATURE
+        - TEMPERATURE
     """
 
     #: A String specifying the repository key.
