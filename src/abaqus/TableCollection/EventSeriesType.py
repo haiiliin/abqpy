@@ -11,7 +11,7 @@ class EventSeriesType:
         The corresponding analysis keywords are:
 
         - EVENT SERIES TYPE
-                - EVENT SERIES
+        - EVENT SERIES
     """
 
     #: A String specifying the repository key.

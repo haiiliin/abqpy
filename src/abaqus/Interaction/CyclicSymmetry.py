@@ -18,11 +18,10 @@ class CyclicSymmetry(Interaction):
         The corresponding analysis keywords are:
 
         - CLOAD
-                - CYCLIC SYMMETRY MODEL
-                - DLOAD
-                - DSLOAD
-                - SELECT CYCLIC SYMMETRY MODES
-                - TIE
+        - CYCLIC SYMMETRY MODEL
+        - DLOAD        - CLOAD        - CYCLIC SYMMETRY MODEL
+        - DLOAD        - SELECT CYCLIC SYMMETRY MODES
+        - TIE
     """
 
     #: A String specifying the repository key.
