@@ -8,16 +8,15 @@ class CrushStress:
     """The CrushStress object specifies the crush stress of a material.
 
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].crushStress
-        import odbMaterial
-        session.odbs[name].materials[name].crushStress
+            import material
+            mdb.models[name].materials[name].crushStress
+            import odbMaterial
+            session.odbs[name].materials[name].crushStress
 
         The table data for this object are:
 
@@ -51,8 +50,7 @@ class CrushStress:
     ):
         """This method creates a CrushStress object.
 
-        Notes
-        -----
+        .. note::
             This function can be accessed by:
 
             .. code-block:: python
@@ -81,8 +79,7 @@ class CrushStress:
     ):
         """This method creates a CrushStress object.
 
-        Notes
-        -----
+        .. note::
             This function can be accessed by:
 
             .. code-block:: python

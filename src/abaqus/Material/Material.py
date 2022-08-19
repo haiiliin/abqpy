@@ -3883,8 +3883,7 @@ class Material(MaterialBase):
     ):
         """This method creates a MeanFieldHomogenization object.
 
-        Notes
-        -----
+        .. note::
             This function can be accessed by:
 
             .. code-block:: python
