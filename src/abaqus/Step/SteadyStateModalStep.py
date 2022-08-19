@@ -45,9 +45,9 @@ class SteadyStateModalStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - DAMPING
-                - MODAL DAMPING
-                - STEADY STATE DYNAMICS
-                - STEP
+        - MODAL DAMPING
+        - STEADY STATE DYNAMICS
+        - STEP
     """
 
     #: A String specifying the repository key.

@@ -21,7 +21,7 @@ class SurfaceTractionState(LoadState):
         The corresponding analysis keywords are:
 
         - DSLOAD
-                - DLOAD
+        - DLOAD
     """
 
     #: A Float or a Complex specifying the load magnitude.

@@ -18,8 +18,8 @@ class IncidentWaveProperty(ContactProperty):
         The corresponding analysis keywords are:
 
         - INCIDENT WAVE INTERACTION PROPERTY
-                - UNDEX CHARGE PROPERTY
-                - CONWEP CHARGE PROPERTY
+        - UNDEX CHARGE PROPERTY
+        - CONWEP CHARGE PROPERTY
     """
 
     #: A String specifying the interaction property repository key.
