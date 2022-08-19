@@ -40,7 +40,7 @@ setuptools.setup(
     setup_requires=['setuptools_scm'],
     python_requires='>=3.7',
     package_dir={'': 'src'},
-    install_requires=['ipyparams', 'typing-extensions'],
+    install_requires=['typing-extensions', 'setuptools_scm'],
     packages=setuptools.find_packages('src'),
     py_modules=['abaqusConstants', 'animation', 'annotationToolset', 'assembly', 'caeModules', 'caePrefsAccess',
                 'calibration', 'connectorBehavior', 'customKernel', 'deleteObjectCallback', 'displayGroupMdbToolset',
