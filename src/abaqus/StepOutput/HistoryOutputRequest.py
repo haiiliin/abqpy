@@ -17,13 +17,16 @@ class HistoryOutputRequest:
         The corresponding analysis keywords are:
 
         - CONTACT OUTPUT
-                - ELEMENT OUTPUT
-                - ENERGY OUTPUT
-                - INCREMENTATION OUTPUT
-                - MODAL OUTPUT
-                - NODE OUTPUT
-                - OUTPUT
-                - RADIATION OUTPUT
+        - ELEMENT OUTPUT
+        - ENERGY OUTPUT
+        - CONTACT OUTPUT
+        - ELEMENT OUTPUT
+        - ENERGY OUTPUT        
+        - MODAL OUTPUT
+        - CONTACT OUTPUT
+        - ELEMENT OUTPUT
+        - OUTPUT
+        - RADIATION OUTPUT
     """
 
     #: A String specifying a bolt load from which output is requested. The default value is an

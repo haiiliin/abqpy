@@ -34,7 +34,7 @@ class GeostaticStep(AnalysisStep):
         The corresponding analysis keywords are:
 
         - GEOSTATIC
-                - STEP
+        - STEP
     """
 
     #: A String specifying the repository key.

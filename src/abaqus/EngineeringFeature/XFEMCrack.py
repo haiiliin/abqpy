@@ -21,7 +21,7 @@ class XFEMCrack(Crack):
         The corresponding analysis keywords are:
 
         - ENRICHMENT
-                - INITIAL CONDITIONS
+        - INITIAL CONDITIONS
     """
 
     #: A Boolean specifying whether the crack is suppressed or not. The default value is OFF.
