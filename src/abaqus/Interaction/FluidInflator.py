@@ -14,9 +14,9 @@ class FluidInflator(Interaction):
             import interaction
             mdb.models[name].interactions[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - FLUID INFLATOR
+        - FLUID INFLATOR
 
     """
 
