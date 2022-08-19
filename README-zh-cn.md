@@ -36,7 +36,7 @@ Abaqus/Python 脚本的类型提示
 
 ## 安装
 
-`abqpy` 支持 Python 3.7 或更高的版本。 如果您使用的是 Python 3.6 或更早的版本，请升级到 Python 3.7 或更高版本。
+`abqpy` 支持 Python 3.6 或更高的版本。 如果您使用的是 Python 3.5 或更早的版本，请升级到 Python 3.6 或更高版本。
 
 `abqpy` 已经被上传到 [PyPI](https://pypi.org/project/abqpy)，你可以简单地使用 `pip` 进行安装：
 ```shell

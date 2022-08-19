@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 from typing import Any, Union
 
 from .AbaqusBoolean import AbaqusBoolean
@@ -53,7 +51,7 @@ class SymbolicConstant:
             raise ValueError(f'SymbolicConstant name {text} may only contain upper case, digit or underscore')
         self.text = text
 
-    def __copy__(self) -> SymbolicConstant:
+    def __copy__(self) -> 'SymbolicConstant':
         ...
     
     def __getstate__(self) -> str:
@@ -85,7 +83,7 @@ class SymbolicConstant:
         return self.text
     
     @staticmethod 
-    def __new__(cls, name: str, *args, **kargs) -> Union[SymbolicConstant,AbaqusBoolean]:
+    def __new__(cls, name: str, *args, **kargs) -> Union['SymbolicConstant', AbaqusBoolean]:
         if name == "ON":
             return AbaqusBoolean(1)
         elif name == "OFF":
