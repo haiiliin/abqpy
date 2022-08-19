@@ -2169,13 +2169,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies antisymmetry about the **Z**-axis.
         
-        Notes
-        -----
-        This function can be accessed by:
-        
-        .. code-block:: python
-        
-            mdb.models[name].ZasymmBC
+        .. note::
+            This function can be accessed by:
+            
+            .. code-block:: python
+            
+                mdb.models[name].ZasymmBC
             
         Parameters
         ----------

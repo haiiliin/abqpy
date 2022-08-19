@@ -7,13 +7,12 @@ class MeshEditOptions:
     The MeshEditOptions object has no constructor. Abaqus creates the **MeshEditOptions**
     member when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block::
+        .. code-block:: python
 
-        mdb.meshEditOptions
+            mdb.meshEditOptions
     """
 
     def setValues(
