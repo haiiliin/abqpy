@@ -13,14 +13,13 @@ class ViewportAnnotationOptions:
     **defaultViewportAnnotationOptions** member when a session is started. When a new viewport
     is created, the settings are copied from the current viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block::
+        .. code-block:: python
 
-        session.defaultViewportAnnotationOptions
-        session.viewports[name].viewportAnnotationOptions
+            session.defaultViewportAnnotationOptions
+            session.viewports[name].viewportAnnotationOptions
     """
 
     def setValues(
