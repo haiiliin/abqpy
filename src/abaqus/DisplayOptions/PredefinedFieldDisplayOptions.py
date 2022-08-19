@@ -8,14 +8,13 @@ class PredefinedFieldDisplayOptions:
     The PredefinedFieldDisplayOptions object has no constructor. When you create a new
     viewport, the settings are copied from the current viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block::
+        .. code-block:: python
 
-        session.viewports[name].assemblyDisplay.predefinedFieldOptions
-        session.viewports[name].layers[name].assemblyDisplay.predefinedFieldOptions
+            session.viewports[name].assemblyDisplay.predefinedFieldOptions
+            session.viewports[name].layers[name].assemblyDisplay.predefinedFieldOptions
     """
 
     def setValues(

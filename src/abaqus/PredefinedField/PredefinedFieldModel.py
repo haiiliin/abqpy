@@ -458,13 +458,12 @@ class PredefinedFieldModel(
     ):
         """This method creates a Stress predefined field object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note::
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Stress
+                mdb.models[name].Stress
 
         Parameters
         ----------
@@ -527,8 +526,7 @@ class PredefinedFieldModel(
     ):
         """This method creates a Field object.
 
-        Notes
-        -----
+        .. note::
         This function can be accessed by:
 
         .. code-block:: python
