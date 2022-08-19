@@ -17,9 +17,9 @@ class MeanFieldHomogenization:
             import odbMaterial
             session.odbs[name].materials[name].meanFieldHomogenization
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - MEAN FIELD HOMOGENIZATION
+        - MEAN FIELD HOMOGENIZATION
 
     """
 

@@ -19,14 +19,14 @@ class CrushStress:
         import odbMaterial
         session.odbs[name].materials[name].crushStress
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Scaling factor.
-    - Relative velocity.
+        - Scaling factor.
+        - Relative velocity.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CRUSH STRESS
+        - CRUSH STRESS
     """
 
     #: A sequence of sequences of Floats specifying the items described below.
