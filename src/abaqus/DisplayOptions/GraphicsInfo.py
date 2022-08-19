@@ -9,13 +9,12 @@ class GraphicsInfo:
     the name of the server and the name of the client.
     The members are all read-only.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block::
+        .. code-block:: python
 
-        session.graphicsInfo
+            session.graphicsInfo
     """
 
     #: A sequence of the type (Int, Int, String) specifying the three components of the OpenGL
