@@ -1,7 +1,9 @@
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class StreamOptions(_OptionsBase):
     """The StreamOptions object stores values and attributes associated with a stream plot. The
     StreamOptions object has no constructor command. Abaqus creates a
@@ -27,6 +29,7 @@ class StreamOptions(_OptionsBase):
             session.viewports[name].odbDisplay.streamOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         *,

@@ -2,8 +2,10 @@ import typing
 
 from .MeshNode import MeshNode
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MeshElement:
     """The MeshElement object refers to an element of a native mesh or an orphan mesh. A
     MeshElement object can be accessed via a part or part instance using an index that
@@ -56,6 +58,7 @@ class MeshElement:
     #: connectivity is node labels instead of node indices.
     connectivity: int = None
 
+    @abaqus_method_doc
     def Element(
         self, nodes: typing.Tuple[MeshNode, ...], elemShape: SymbolicConstant, label: int = None
     ):
@@ -85,6 +88,7 @@ class MeshElement:
         """
         ...
 
+    @abaqus_method_doc
     def getNodes(self):
         """This method returns a tuple of node objects of the element.
 
@@ -95,6 +99,7 @@ class MeshElement:
         """
         ...
 
+    @abaqus_method_doc
     def getElemEdges(self):
         """This method returns a tuple of unique element edge objects on the element.
 
@@ -105,6 +110,7 @@ class MeshElement:
         """
         ...
 
+    @abaqus_method_doc
     def getElemFaces(self):
         """This method returns a tuple of unique element face objects on the element.
 
@@ -115,6 +121,7 @@ class MeshElement:
         """
         ...
 
+    @abaqus_method_doc
     def getAdjacentElements(self):
         """This method returns an array of element objects adjacent to the mesh element.
 
@@ -125,6 +132,7 @@ class MeshElement:
         """
         ...
 
+    @abaqus_method_doc
     def getElementsByFeatureEdge(self, angle: str):
         """This method returns an array of mesh element objects that are obtained by recursively
         finding adjacent elements along a feature edge with a face angle of less than or equal
@@ -142,6 +150,7 @@ class MeshElement:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, label: int = None):
         """This method modifies the MeshElement object.
 

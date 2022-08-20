@@ -1,7 +1,9 @@
 from .ClayHardening import ClayHardening
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ClayPlasticity:
     r"""The ClayPlasticity object specifies the extended Cam-clay plasticity model.
 
@@ -51,6 +53,7 @@ class ClayPlasticity:
     #: A :py:class:`~abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening` object.
     clayHardening: ClayHardening = ClayHardening(((),))
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -96,6 +99,7 @@ class ClayPlasticity:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ClayPlasticity object.
 

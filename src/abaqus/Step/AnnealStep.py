@@ -15,8 +15,10 @@ from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AnnealStep(AnalysisStep):
     """The AnnealStep object anneals a structure by setting the velocities and all appropriate
     state variables to zero.
@@ -135,6 +137,7 @@ class AnnealStep(AnalysisStep):
     #: A repository of PredefinedFieldState objects.
     predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -179,6 +182,7 @@ class AnnealStep(AnalysisStep):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, description: str = "", refTemp: float = None):
         """This method modifies the AnnealStep object.
 

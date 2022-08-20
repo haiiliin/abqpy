@@ -1,7 +1,9 @@
 from .Area import Area
 from .Title import Title
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class DefaultPlot:
     """The DefaultPlot object is used to hold on default plot attributes. The DefaultPlot
     object attributes are used whenever an XYPlot object is created. A :py:class:`~abaqus.XY.DefaultPlot.DefaultPlot` object is

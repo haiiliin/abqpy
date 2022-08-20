@@ -1,8 +1,10 @@
 from .Area import Area
 from .TextStyle import TextStyle
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Title:
     """The Title object is used to store the display attributes of the XYPlot title. An Title
     object is automatically created when creating a XYPlot object.
@@ -30,6 +32,7 @@ class Title:
     #: A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend title.
     titleStyle: TextStyle = TextStyle()
 
+    @abaqus_method_doc
     def setValues(
         self,
         title: "Title",

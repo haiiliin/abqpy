@@ -1,7 +1,9 @@
 from .LoadState import LoadState
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class ConnectorForceState(LoadState):
     """The ConnectorForceState object stores the propagating data for a connector force in a
     step. One instance of this object is created internally by the ConnectorForce object for

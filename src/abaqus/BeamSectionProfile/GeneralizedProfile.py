@@ -1,6 +1,8 @@
 from .Profile import Profile
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class GeneralizedProfile(Profile):
     """The GeneralizedProfile object defines the properties of a profile via its area, moment
     of inertia, etc.
@@ -45,6 +47,7 @@ class GeneralizedProfile(Profile):
     #: A Float specifying the warping constant, ΓWΓW.
     gammaW: float
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -97,6 +100,7 @@ class GeneralizedProfile(Profile):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the GeneralizedProfile object.
 

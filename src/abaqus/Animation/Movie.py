@@ -2,8 +2,10 @@ import typing
 
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Movie(_OptionsBase):
     """The Movie object is used to store values and attributes associated with a movie file.
     Upon creation, the Movie object is added to the session.movies repository.
@@ -66,6 +68,7 @@ class Movie(_OptionsBase):
     #: time in this movie corresponding to **endFrame**. The default value is END_FRAME_TIME.
     timelineEndTime: typing.Union[SymbolicConstant, float] = END_FRAME_TIME
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -138,6 +141,7 @@ class Movie(_OptionsBase):
         self.timelineStartTime = timelineStartTime
         self.timelineEndTime = timelineEndTime
 
+    @abaqus_method_doc
     def setValues(
         self,
         startFrame: int = 0,

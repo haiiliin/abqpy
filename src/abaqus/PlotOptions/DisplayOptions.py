@@ -1,7 +1,9 @@
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _CopyOptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DisplayOptions(_CopyOptionsBase):
     """The DisplayOptions object stores a plot state.
 
@@ -20,6 +22,7 @@ class DisplayOptions(_CopyOptionsBase):
     #: SYMBOLS_ON_DEF, ORIENT_ON_UNDEF, and ORIENT_ON_DEF. The default value is (UNDEFORMED).
     plotState: SymbolicConstant = None
 
+    @abaqus_method_doc
     def setValues(
         self, options: "DisplayOptions" = None, plotState: SymbolicConstant = None
     ):

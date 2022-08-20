@@ -12,8 +12,10 @@ from ..Assembly.ConnectorOrientationArray import ConnectorOrientationArray
 from ..Property.SectionAssignmentArray import SectionAssignmentArray
 from ..Section.Section import Section
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbAssemblyBase:
     """The OdbAssembly object has no constructor; it is created automatically when an Odb
     object is created. Abaqus creates the **rootAssembly** member when an Odb object is
@@ -61,6 +63,7 @@ class OdbAssemblyBase:
     #: A :py:class:`~abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray` object.
     connectorOrientations: ConnectorOrientationArray = []
 
+    @abaqus_method_doc
     def ConnectorOrientation(
         self,
         region: str,
@@ -109,6 +112,7 @@ class OdbAssemblyBase:
         """
         ...
 
+    @abaqus_method_doc
     def SectionAssignment(self, region: str, section: Section):
         """This method is used to assign a section on an assembly or part. Section assignment on
         the assembly is limited to the connector elements only.
@@ -127,6 +131,7 @@ class OdbAssemblyBase:
         """
         ...
 
+    @abaqus_method_doc
     def addElements(
         self,
         labels: tuple,
@@ -170,6 +175,7 @@ class OdbAssemblyBase:
         """
         ...
 
+    @abaqus_method_doc
     def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: str = None):
         """This method adds nodes to the OdbAssembly object using node labels and coordinates.
         Warning:Adding nodes not in ascending order of their labels may cause Abaqus/Viewer to
@@ -193,6 +199,7 @@ class OdbAssemblyBase:
         """
         ...
 
+    @abaqus_method_doc
     def RigidBody(
         self,
         referenceNode: str,

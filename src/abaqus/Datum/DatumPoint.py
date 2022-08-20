@@ -1,6 +1,8 @@
 from .Datum import Datum
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class DatumPoint(Datum):
     """The DatumPoint object has no direct constructor; it is created when a Feature object is
     created. For example, the DatumPointByCoordinate method creates a Feature object that

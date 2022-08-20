@@ -8,9 +8,12 @@ from .FluidExchangeProperty import FluidExchangeProperty
 from .IncidentWaveProperty import IncidentWaveProperty
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class InteractionPropertyModel(ModelBase):
+    @abaqus_method_doc
     def AcousticImpedanceProp(
         self,
         name: str,
@@ -55,6 +58,7 @@ class InteractionPropertyModel(ModelBase):
         )
         return interactionProperty
 
+    @abaqus_method_doc
     def ActuatorSensorProp(
         self, name: str, realProperties: tuple = (), integerProperties: tuple = ()
     ) -> ActuatorSensorProp:
@@ -88,6 +92,7 @@ class InteractionPropertyModel(ModelBase):
         )
         return interactionProperty
 
+    @abaqus_method_doc
     def CavityRadiationProp(
         self,
         name: str,
@@ -127,6 +132,7 @@ class InteractionPropertyModel(ModelBase):
         )
         return interactionProperty
 
+    @abaqus_method_doc
     def ContactProperty(self, name: str) -> ContactProperty:
         """This method creates a ContactProperty object.
 
@@ -150,6 +156,7 @@ class InteractionPropertyModel(ModelBase):
         self.interactionProperties[name] = interactionProperty = ContactProperty(name)
         return interactionProperty
 
+    @abaqus_method_doc
     def FilmConditionProp(
         self,
         name: str,
@@ -193,6 +200,7 @@ class InteractionPropertyModel(ModelBase):
         )
         return interactionProperty
 
+    @abaqus_method_doc
     def FluidCavityProperty(
         self,
         name: str,
@@ -348,6 +356,7 @@ class InteractionPropertyModel(ModelBase):
         )
         return interactionProperty
 
+    @abaqus_method_doc
     def FluidExchangeProperty(
         self,
         name: str,
@@ -453,6 +462,87 @@ class InteractionPropertyModel(ModelBase):
         )
         return interactionProperty
 
+<<<<<<< HEAD
+=======
+    @abaqus_method_doc
+    def FluidInflatorProperty(
+        self,
+        name: str,
+        definition: str,
+        effectiveArea: float,
+        tankVolume: float,
+        dischargeCoefficient: float = None,
+        dataTable: tuple = (),
+        numFluids: int = None,
+        mixtureType: str = "",
+        inflationTime: tuple = (),
+        fluidbehaviorName: tuple = (),
+        massFraction: tuple = (),
+    ) -> FluidInflatorProperty:
+        """This method creates a FluidInflatorProperty object.
+
+        .. note::
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].FluidInflatorProperty
+
+        Parameters
+        ----------
+        name
+            A String specifying the interaction property repository key.
+        definition
+            A Symbolic constant specifying the method used for modeling the flow characteristics of
+            inflators. The default value is *definition*=DUAL PRESSURE. The possible values are DUAL
+            PRESSURE, PRESSURE AND MASS, TANK TEST, and TEMPERATURE AND MASS.
+        effectiveArea
+            A Float specifying the total inflator orifice area. This argument is applicable only if
+            *definition*=DUAL PRESSURE or *definition*=PRESSURE AND MASS.
+        tankVolume
+            A Float specifying the tank volume. This argument is applicable only if
+            *definition*=DUAL PRESSURE or *definition*=TANK TEST.
+        dischargeCoefficient
+            A Float specifying the discharge coefficient. This argument is applicable only if
+            *definition*=DUAL PRESSURE or *definition*=PRESSURE AND MASS.
+        dataTable
+            A sequence of sequences of Floats specifying the items described in the "Table data"
+            section below.
+        numFluids
+            An Int specifying the number of gas species used for this inflator.
+        mixtureType
+            A Symbolic constant specifying whether to use mass fraction or the molar fraction for a
+            mixture of ideal gases. The default value is MASS FRACTION. The possible values are MASS
+            FRACTION or MOLAR FRACTION.
+        inflationTime
+            A sequence of sequences of Floats specifying the inflation time.
+        fluidbehaviorName
+            A sequence of sequences of Strings specifying fluid behavior names.
+        massFraction
+            A sequence of sequences of Floats specifying the mass fraction or the molar fraction
+            corresponding to entered fluid behavior.
+
+        Returns
+        -------
+            A FluidInflatorProperty object.
+        """
+        self.interactionProperties[name] = interactionProperty = FluidInflatorProperty(
+            name,
+            definition,
+            effectiveArea,
+            tankVolume,
+            dischargeCoefficient,
+            dataTable,
+            numFluids,
+            mixtureType,
+            inflationTime,
+            fluidbehaviorName,
+            massFraction,
+        )
+        return interactionProperty
+
+    @abaqus_method_doc
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def IncidentWaveProperty(
         self,
         name: str,

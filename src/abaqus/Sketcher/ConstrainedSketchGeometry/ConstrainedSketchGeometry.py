@@ -1,6 +1,8 @@
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class ConstrainedSketchGeometry:
     """The ConstrainedSketchGeometry object stores the geometry of a sketch, such as lines,
     circles, arcs, and construction lines.

@@ -2,8 +2,10 @@ import typing
 
 from .Cell import Cell
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CellArray(typing.List[Cell]):
     """The CellArray is a sequence of Cell objects.
 
@@ -28,6 +30,7 @@ class CellArray(typing.List[Cell]):
             mdb.models[name].rootAssembly.sets[name].cells
     """
 
+    @abaqus_method_doc
     def __init__(self, cells: typing.List[Cell]):
         """This method creates a CellArray object.
 
@@ -51,6 +54,7 @@ class CellArray(typing.List[Cell]):
         """
         ...
 
+    @abaqus_method_doc
     def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[Cell, typing.List[Cell]]:
         """This method returns the object or objects in the CellArray located at the given
         coordinates. findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt
@@ -92,6 +96,23 @@ class CellArray(typing.List[Cell]):
         """
         return Cell()
 
+<<<<<<< HEAD
+=======
+    @abaqus_method_doc
+    def getExteriorFaces(self):
+        """This method returns the cell faces on the exterior of the CellArray. That is, it returns
+        the faces that are referenced by exactly one of the cells in the sequence.
+
+        Returns
+        -------
+        FaceArray
+            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object representing the faces on the exterior of the cells.
+
+        """
+        ...
+
+    @abaqus_method_doc
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def getSequenceFromMask(self, mask: str):
         """This method returns the object or objects in the CellArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
@@ -115,6 +136,7 @@ class CellArray(typing.List[Cell]):
         """
         ...
 
+    @abaqus_method_doc
     def getMask(self):
         """This method returns a string specifying the object or objects.
 
@@ -126,6 +148,7 @@ class CellArray(typing.List[Cell]):
         """
         ...
 
+    @abaqus_method_doc
     def getByBoundingBox(
         self,
         xMin: str = "",
@@ -160,6 +183,7 @@ class CellArray(typing.List[Cell]):
         """
         ...
 
+    @abaqus_method_doc
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
         """This method returns an array of cell objects that lie within the specified bounding
         cylinder.
@@ -183,6 +207,7 @@ class CellArray(typing.List[Cell]):
         """
         ...
 
+    @abaqus_method_doc
     def getByBoundingSphere(self, center: tuple, radius: str):
         """This method returns an array of cell objects that lie within the specified bounding
         sphere.
@@ -202,6 +227,7 @@ class CellArray(typing.List[Cell]):
         """
         ...
 
+    @abaqus_method_doc
     def getBoundingBox(self):
         """This method returns a dictionary of two tuples representing minimum and maximum boundary
         values of the bounding box of the minimum size containing the cell sequence.

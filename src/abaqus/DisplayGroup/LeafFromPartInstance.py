@@ -1,7 +1,9 @@
 from .Leaf import Leaf
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LeafFromPartInstance(Leaf):
     """The LeafFromPartInstance object can be used whenever a Leaf object is expected as an
     argument. Leaf objects are used to specify the items in a display group. Leaf objects
@@ -24,6 +26,7 @@ class LeafFromPartInstance(Leaf):
     #: A sequence of Strings specifying the names of the part instances.
     partInstanceName: tuple
 
+    @abaqus_method_doc
     def __init__(self, partInstanceName: tuple):
         """This method creates a Leaf object from a list of part instance names.
 

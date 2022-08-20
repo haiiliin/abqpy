@@ -1,8 +1,10 @@
 import typing
 
 from .MeshElement import MeshElement
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MeshElementArray(typing.List[MeshElement]):
     """The MeshElementArray is a sequence of MeshElement objects.
 
@@ -38,6 +40,7 @@ class MeshElementArray(typing.List[MeshElement]):
             mdb.models[name].rootAssembly.surfaces[name].elements
     """
 
+    @abaqus_method_doc
     def __init__(self, elements: typing.List[MeshElement]):
         """This method creates a MeshElementArray object.
 
@@ -60,6 +63,7 @@ class MeshElementArray(typing.List[MeshElement]):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def getFromLabel(self, label: int):
         """This method returns the object in the MeshElementArray with the given label.
 
@@ -75,6 +79,7 @@ class MeshElementArray(typing.List[MeshElement]):
         """
         ...
 
+    @abaqus_method_doc
     def getSequenceFromMask(self, mask: str):
         """This method returns the objects in the MeshElementArray identified using the specified
         **mask**. This command is generated when the JournalOptions are set to COMPRESSEDINDEX.
@@ -92,6 +97,7 @@ class MeshElementArray(typing.List[MeshElement]):
         """
         ...
 
+    @abaqus_method_doc
     def getMask(self):
         """This method returns a string specifying the object or objects.
 
@@ -102,6 +108,7 @@ class MeshElementArray(typing.List[MeshElement]):
         """
         ...
 
+    @abaqus_method_doc
     def getByBoundingBox(
         self,
         xMin: str = "",
@@ -136,6 +143,7 @@ class MeshElementArray(typing.List[MeshElement]):
         """
         ...
 
+    @abaqus_method_doc
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
         """This method returns an array of element objects that lie within the specified bounding
         cylinder.
@@ -157,6 +165,7 @@ class MeshElementArray(typing.List[MeshElement]):
         """
         ...
 
+    @abaqus_method_doc
     def getByBoundingSphere(self, center: tuple, radius: str):
         """This method returns an array of element objects that lie within the specified bounding
         sphere.
@@ -175,6 +184,7 @@ class MeshElementArray(typing.List[MeshElement]):
         """
         ...
 
+    @abaqus_method_doc
     def getBoundingBox(self):
         """This method returns a dictionary of two tuples representing minimum and maximum boundary
         values of the bounding box of the minimum size containing the element sequence.
@@ -191,6 +201,7 @@ class MeshElementArray(typing.List[MeshElement]):
         """
         ...
 
+    @abaqus_method_doc
     def sequenceFromLabels(self, labels: tuple):
         """This method returns the objects in the MeshElementArray identified using the specified
         labels.
@@ -211,3 +222,32 @@ class MeshElementArray(typing.List[MeshElement]):
             An exception occurs if the resulting sequence is empty.
         """
         ...
+<<<<<<< HEAD
+=======
+
+    @abaqus_method_doc
+    def getExteriorEdges(self):
+        """This method returns the edges on the exterior of the faces in the FaceArray. That is, it
+        returns the edges that are referenced by exactly one of the faces in the sequence.
+
+        Returns
+        -------
+        EdgeArray
+            An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying the exterior edges.
+
+        """
+        ...
+
+    @abaqus_method_doc
+    def getExteriorFaces(self):
+        """This method returns the cell faces on the exterior of the CellArray. That is, it returns
+        the faces that are referenced by exactly one of the cells in the sequence.
+
+        Returns
+        -------
+        FaceArray
+            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object representing the faces on the exterior of the cells.
+
+        """
+        ...
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)

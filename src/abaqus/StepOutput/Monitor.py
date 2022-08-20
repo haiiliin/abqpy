@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Monitor:
     """The Monitor object defines a degree of freedom to monitor.
 
@@ -45,6 +47,7 @@ class Monitor:
     #: Abaqus/Standard analysis.
     frequency: int
 
+    @abaqus_method_doc
     def __init__(self, node: str, dof: SymbolicConstant, frequency: int):
         """This method creates a request for a degree of freedom to be monitored in a general or
         modal procedure.
@@ -95,6 +98,7 @@ class Monitor:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Monitor object.
 

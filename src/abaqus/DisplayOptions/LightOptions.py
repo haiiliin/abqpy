@@ -1,7 +1,9 @@
 from .LightArray import LightArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LightOptions:
     """The LightOptions object stores settings that control how objects are lit when the
     **renderStyle** is set to SHADED. LightOptions objects are accessed in one of two ways:
@@ -60,6 +62,7 @@ class LightOptions:
     #: **colors** map in the **session** object.
     ambientColor: str = ""
 
+    @abaqus_method_doc
     def setValues(
         self,
         shading: SymbolicConstant = GOURAUD,

@@ -59,15 +59,20 @@ from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
 from .TestData.MullinsEffect import MullinsEffect
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MaterialBase:
     """A :py:class:`~abaqus.Material.Material.Material` object is the object used to specify a material. The Material object stores
     the various settings that determine how a material behaves.
     A material is created by combining one or more individual material options and sub
     options. A particular material option is associated with the Material object through a
     member. For example: the **acousticMedium** member may contain an AcousticMedium object.
-    The alternative of having a MaterialOption abstract base class and a container of
+    The alternative of having a MaterialOption abstract base from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
+class and a container of
     MaterialOptions was rejected because it would make it more difficult to enforce the fact
     that one Material object cannot contain two AcousticMedium objects, for example.
 
@@ -305,6 +310,13 @@ class MaterialBase:
     #: A :py:class:`~abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous` object.
     viscous: Viscous = Viscous(((),))
 
+<<<<<<< HEAD
+=======
+    #: A :py:class:`~abaqus.Material.MultiScale.MeanFieldHomogenization.MeanFieldHomogenization` object.
+    meanFieldHomogenization: MeanFieldHomogenization = MeanFieldHomogenization()
+
+    @abaqus_method_doc
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def __init__(self, name: str, description: str = "", materialIdentifier: str = ""):
         """This method creates a Material object.
 
@@ -338,6 +350,7 @@ class MaterialBase:
             materialIdentifier,
         )
 
+    @abaqus_method_doc
     def materialsFromOdb(self, fileName: str):
         """This methods creates Material objects by reading an output database. The new materials
         are placed in the materials repository.

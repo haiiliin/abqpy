@@ -2,8 +2,10 @@ from .AxisData import AxisData
 from .LineStyle import LineStyle
 from .TextStyle import TextStyle
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Axis:
     """The Axis object is used to store the display attributes of axes. Axes objects are
     automatically created when adding XYCurve objects to a Chart object.
@@ -69,6 +71,7 @@ class Axis:
     #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when displaying axis ticks.
     tickStyle: LineStyle = LineStyle()
 
+    @abaqus_method_doc
     def setValues(
         self,
         axis: "Axis",

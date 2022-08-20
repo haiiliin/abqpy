@@ -11,8 +11,10 @@ from .TProfile import TProfile
 from .TrapezoidalProfile import TrapezoidalProfile
 from ..Odb.OdbBase import OdbBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BeamSectionProfileOdb(OdbBase):
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
@@ -25,6 +27,7 @@ class BeamSectionProfileOdb(OdbBase):
             session.odbs[name]
     """
 
+    @abaqus_method_doc
     def ArbitraryProfile(self, name: str, table: tuple) -> ArbitraryProfile:
         """This method creates a ArbitraryProfile object.
 
@@ -55,6 +58,7 @@ class BeamSectionProfileOdb(OdbBase):
         self.profiles[name] = arbitraryProfile = ArbitraryProfile(name, table)
         return arbitraryProfile
 
+    @abaqus_method_doc
     def BoxProfile(
         self,
         name: str,
@@ -115,6 +119,7 @@ class BeamSectionProfileOdb(OdbBase):
         )
         return boxProfile
 
+    @abaqus_method_doc
     def CircularProfile(self, name: str, r: float) -> CircularProfile:
         """This method creates a CircularProfile object.
 
@@ -147,6 +152,7 @@ class BeamSectionProfileOdb(OdbBase):
         self.profiles[name] = circularProfile = CircularProfile(name, r)
         return circularProfile
 
+    @abaqus_method_doc
     def GeneralizedProfile(
         self,
         name: str,
@@ -201,6 +207,7 @@ class BeamSectionProfileOdb(OdbBase):
         )
         return generalizedProfile
 
+    @abaqus_method_doc
     def HexagonalProfile(self, name: str, r: float, t: float) -> HexagonalProfile:
         """This method creates a HexagonalProfile object.
 
@@ -236,6 +243,7 @@ class BeamSectionProfileOdb(OdbBase):
         self.profiles[name] = hexagonalProfile = HexagonalProfile(name, r, t)
         return hexagonalProfile
 
+    @abaqus_method_doc
     def IProfile(
         self,
         name: str,
@@ -290,6 +298,7 @@ class BeamSectionProfileOdb(OdbBase):
         self.profiles[name] = iProfile = IProfile(name, l, h, b1, b2, t1, t2, t3)
         return iProfile
 
+    @abaqus_method_doc
     def LProfile(self, name: str, a: float, b: float, t1: float, t2: float) -> LProfile:
         """This method creates a LProfile object.
 
@@ -330,6 +339,7 @@ class BeamSectionProfileOdb(OdbBase):
         self.profiles[name] = lProfile = LProfile(name, a, b, t1, t2)
         return lProfile
 
+    @abaqus_method_doc
     def PipeProfile(self, name: str, r: float, t: float) -> PipeProfile:
         """This method creates a PipeProfile object.
 
@@ -364,6 +374,7 @@ class BeamSectionProfileOdb(OdbBase):
         self.profiles[name] = pipeProfile = PipeProfile(name, r, t)
         return pipeProfile
 
+    @abaqus_method_doc
     def RectangularProfile(self, name: str, a: float, b: float) -> RectangularProfile:
         """This method creates a RectangularProfile object.
 
@@ -398,6 +409,7 @@ class BeamSectionProfileOdb(OdbBase):
         self.profiles[name] = rectangularProfile = RectangularProfile(name, a, b)
         return rectangularProfile
 
+    @abaqus_method_doc
     def TProfile(
         self, name: str, b: float, h: float, l: float, tf: float, tw: float
     ) -> TProfile:
@@ -443,6 +455,7 @@ class BeamSectionProfileOdb(OdbBase):
         self.profiles[name] = tProfile = TProfile(name, b, h, l, tf, tw)
         return tProfile
 
+    @abaqus_method_doc
     def TrapezoidalProfile(
         self, name: str, a: float, b: float, c: float, d: float
     ) -> TrapezoidalProfile:

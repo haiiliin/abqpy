@@ -2,8 +2,10 @@ from .OdbInstance import OdbInstance
 from .OdbPart import OdbPart
 from .SectionPoint import SectionPoint
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class FieldValue:
     """The FieldValue object represents the field data at a point. The FieldValue object has no
     constructor; it is created by the Odb object when data are added to the FieldOutput

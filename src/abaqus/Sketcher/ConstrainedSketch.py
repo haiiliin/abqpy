@@ -21,8 +21,10 @@ from .ConstrainedSketchVertex.ConstrainedSketchVertexModel import (
 )
 from ..Part.AcisFile import AcisFile
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConstrainedSketch(
     ConstrainedSketchConstraintModel,
     ConstrainedSketchDimensionModel,
@@ -32,6 +34,7 @@ class ConstrainedSketch(
 ):
     
     @typing.overload
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -74,6 +77,7 @@ class ConstrainedSketch(
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(self, name: str, objectToCopy: "ConstrainedSketch"):
         """This method copies one ConstrainedSketch object to a new ConstrainedSketch object. Note:
         If the name of the sketch to be copied to is __edit__, Abaqus creates an exact copy that
@@ -102,6 +106,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def __init__(self, *args, **kwargs):
         ...
 
@@ -130,6 +135,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def print(self):
         """This method prints the following statistics about a sketch:
         - The sketch Id (a positive integer).
@@ -139,6 +145,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def assignCenterline(self, line: ConstrainedSketchGeometry):
         """This method indicates the construction line that will be used as a centerline for
         revolved features.
@@ -151,6 +158,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def assignCenterOfTwist(self, point: ConstrainedSketchVertex):
         """This method indicates the isolated point that will be used as the center of twist when
         an extruded feature is created with twist.
@@ -163,6 +171,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def autoDimension(self, objectList: tuple):
         """This method applies dimensions to the selected ConstrainedSketchGeometry objects in an
         effort to make the ConstrainedSketch well defined.
@@ -174,6 +183,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def autoTrimCurve(self, curve1: str, point1: typing.Tuple[float, ...], parameter1: float):
         """This method automatically trims a selected ConstrainedSketchGeometry object at the
         specified location. If the object does not intersect other ConstrainedSketchGeometry
@@ -192,6 +202,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def breakCurve(
         self,
         curve1: ConstrainedSketchGeometry,
@@ -220,6 +231,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def copyMirror(
         self,
         mirrorLine: ConstrainedSketchGeometry,
@@ -240,6 +252,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def copyMove(self, vector: tuple, objectList: typing.Tuple[ConstrainedSketchGeometry, ...]):
         """This method creates copies of the given ConstrainedSketchGeometry objects, moves them
         from their original position, and inserts them into the appropriate repositories of the
@@ -254,6 +267,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def copyRotate(
         self,
         centerPoint: typing.Tuple[float, ...],
@@ -274,6 +288,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def copyScale(
         self,
         scaleValue: float,
@@ -295,6 +310,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def delete(self, objectList: tuple):
         """This method deletes the given ConstrainedSketchGeometry, ConstrainedSketchDimension, or
         ConstrainedSketchConstraint objects.
@@ -307,6 +323,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def deleteParameter(self, name: str):
         """The command deletes a specified parameter.
 
@@ -317,6 +334,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def dragEntity(self, entity: str, points: tuple):
         """This method drags a specified ConstrainedSketchGeometry or ConstrainedSketchVertex
         object to a specific location.
@@ -333,6 +351,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def linearPattern(
         self,
         number1: int,
@@ -388,6 +407,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def mergeVertices(self, value: float, vertexList: typing.Tuple[ConstrainedSketchVertex, ...]):
         """This method merges the ConstrainedSketchVertex objects that lie within the specified
         distance of each other. If only one ConstrainedSketchVertex object is selected, it will
@@ -404,6 +424,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def move(self, vector: tuple, objectList: typing.Tuple[ConstrainedSketchGeometry, ...]):
         """This method translates the given ConstrainedSketchGeometry objects by the given vector.
 
@@ -416,6 +437,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def offset(
         self,
         distance: float,
@@ -442,6 +464,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def radialPattern(
         self,
         number: int,
@@ -473,10 +496,12 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def resetView(self):
         """This method resets the view to be perpendicular to the sketching plane."""
         ...
 
+    @abaqus_method_doc
     def rectangle(self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...]):
         """This method creates four lines that form a rectangle with diagonal corners defined by
         the given points and inserts them into the geometry repository of the ConstrainedSketch
@@ -496,6 +521,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def removeGapsAndOverlaps(
         self, tolerance: str, geomList: typing.Tuple[ConstrainedSketchGeometry, ...]
     ):
@@ -515,6 +541,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def repairShortEdges(
         self, geomList: typing.Tuple[ConstrainedSketchGeometry, ...], tolerance: str = ""
     ):
@@ -535,6 +562,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def retrieveSketch(self, sketch: "ConstrainedSketch"):
         """This method copies all ConstrainedSketchGeometry, ConstrainedSketchDimension,
         ConstrainedSketchConstraint, and ConstrainedSketchParameter objects from the specified
@@ -549,6 +577,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def rotate(self, centerPoint: typing.Tuple[float, ...], angle: float, objectList: tuple):
         """This method rotates the given ConstrainedSketchGeometry objects by the given angle and
         about the given point.
@@ -564,6 +593,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def scale(
         self,
         scaleValue: float,
@@ -584,6 +614,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def setPrimaryObject(self, option: SymbolicConstant):
         """This method makes the ConstrainedSketch object the primary object in the current
         viewport. The sketch remains the primary object in the current viewport until an
@@ -601,6 +632,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def trimExtendCurve(
         self, curve1: str, point1: typing.Tuple[float, ...], curve2: str, point2: typing.Tuple[float, ...]
     ):
@@ -625,10 +657,12 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def undo(self):
         """This method undoes the effects of the last ConstrainedSketch object method."""
         ...
 
+    @abaqus_method_doc
     def unsetPrimaryObject(self):
         """This method removes the ConstrainedSketch object from the current viewport, reversing
         the effects of the setPrimaryobject command. If the **option** argument was set to
@@ -638,6 +672,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def writeAcisFile(self, fileName: str, version: float = None):
         """This method exports the geometry of the sketch to a named file in ACIS format.
 
@@ -651,6 +686,7 @@ class ConstrainedSketch(
         """
         ...
 
+    @abaqus_method_doc
     def writeIgesFile(self, filename: str, flavor: SymbolicConstant = None):
         """This method exports the geometry of the sketch to a named file in IGES format.
 

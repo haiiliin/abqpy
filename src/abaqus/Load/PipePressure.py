@@ -1,8 +1,10 @@
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PipePressure(Load):
     """The PipePressure object stores the data for a pressure applied to pipe or elbow
     elements.
@@ -39,6 +41,7 @@ class PipePressure(Load):
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -103,6 +106,7 @@ class PipePressure(Load):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         field: str = "",
@@ -132,6 +136,7 @@ class PipePressure(Load):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

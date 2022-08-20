@@ -3,8 +3,10 @@ from .RebarLayers import RebarLayers
 from .ShellSection import ShellSection
 from .TransverseShearShell import TransverseShearShell
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class GeometryShellSection(ShellSection):
     """The GeometryShellSection object defines the properties of a geometry shell section. The
     GeometryShellSection object has no explicit constructor and no methods. The
@@ -97,6 +99,7 @@ class GeometryShellSection(ShellSection):
     #: A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object specifying the transverse shear stiffness properties.
     transverseShear: TransverseShearShell = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         nodalThicknessField: str = "",
@@ -178,6 +181,7 @@ class GeometryShellSection(ShellSection):
         """
         ...
 
+    @abaqus_method_doc
     def RebarLayers(
         self, rebarSpacing: SymbolicConstant, layerTable: LayerPropertiesArray
     ) -> RebarLayers:

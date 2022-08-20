@@ -1,7 +1,9 @@
 from .ContactProperty import ContactProperty
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FilmConditionProp(ContactProperty):
     """The FilmConditionProp object is an interaction property that defines a film coefficient
     as a function of temperature and field variables.
@@ -38,6 +40,7 @@ class FilmConditionProp(ContactProperty):
     #: - Etc.
     property: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -78,6 +81,7 @@ class FilmConditionProp(ContactProperty):
         """
         super().__init__(name)
 
+    @abaqus_method_doc
     def setValues(
         self,
         temperatureDependency: Boolean = OFF,

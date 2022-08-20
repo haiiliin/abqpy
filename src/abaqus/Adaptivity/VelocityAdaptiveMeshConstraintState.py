@@ -1,7 +1,9 @@
 from .AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class VelocityAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
     """The VelocityAdaptiveMeshConstraintState object stores the propagating data for an
     Arbitrary Lagrangian Eularian (ALE) style velocity adaptive mesh constraint in a step.
@@ -82,6 +84,7 @@ class VelocityAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
     #: adaptive mesh constraint has no amplitude reference.
     amplitude: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         v1: float = None,

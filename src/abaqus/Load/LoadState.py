@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class LoadState:
     """The LoadState object is the abstract base type for other LoadState objects. The
     LoadState object has no explicit constructor or methods. The members of the LoadState

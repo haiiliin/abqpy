@@ -6,8 +6,10 @@ from ...TestData.PlanarTestData import PlanarTestData
 from ...TestData.UniaxialTestData import UniaxialTestData
 from ...TestData.VolumetricTestData import VolumetricTestData
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Hyperelastic:
     r"""The Hyperelastic object specifies elastic properties for approximately incompressible
     elastomers.
@@ -109,6 +111,7 @@ class Hyperelastic:
     #: A :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Hysteresis.Hysteresis` object.
     hysteresis: Hysteresis = Hysteresis(((),))
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -227,6 +230,7 @@ class Hyperelastic:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Hyperelastic object.
 

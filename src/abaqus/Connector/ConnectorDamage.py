@@ -2,8 +2,10 @@ from .ConnectorBehaviorOption import ConnectorBehaviorOption
 from .ConnectorOptions import ConnectorOptions
 from .ConnectorPotentialArray import ConnectorPotentialArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConnectorDamage(ConnectorBehaviorOption):
     """The ConnectorDamage object defines damage behavior for one or more components of a
     connector's relative motion.
@@ -210,6 +212,7 @@ class ConnectorDamage(ConnectorBehaviorOption):
     #: value is an empty sequence.
     components: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self,
         coupling: SymbolicConstant = UNCOUPLED,
@@ -343,6 +346,7 @@ class ConnectorDamage(ConnectorBehaviorOption):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorDamage object.
 

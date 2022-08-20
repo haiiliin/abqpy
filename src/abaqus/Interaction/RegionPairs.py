@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class RegionPairs:
     """The RegionPairs object stores the domain pair definition for ContactExp and ContactStd
     objects. The RegionPairs object has no constructor or members.
@@ -20,6 +22,7 @@ class RegionPairs:
         - CONTACT EXCLUSIONS
     """
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

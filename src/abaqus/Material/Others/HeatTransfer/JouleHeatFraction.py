@@ -1,3 +1,6 @@
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class JouleHeatFraction:
     """The JouleHeatFraction object defines the fraction of electric energy released as heat.
 
@@ -16,6 +19,7 @@ class JouleHeatFraction:
         - JOULE HEAT FRACTION
     """
 
+    @abaqus_method_doc
     def __init__(self, fraction: float = 1):
         """This method creates a JouleHeatFraction object.
 
@@ -44,6 +48,7 @@ class JouleHeatFraction:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the JouleHeatFraction object.
 

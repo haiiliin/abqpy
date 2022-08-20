@@ -1,8 +1,10 @@
 import typing
 
 from .MeshFace import MeshFace
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MeshFaceArray(typing.List[MeshFace]):
     """The MeshFaceArray is a sequence of MeshFace objects.
 
@@ -18,7 +20,12 @@ class MeshFaceArray(typing.List[MeshFace]):
             mdb.models[name].rootAssembly.instances[name].elementFaces
     """
 
+<<<<<<< HEAD
     def __init__(self, faces: typing.List[MeshFace]):
+=======
+    @abaqus_method_doc
+    def __init__(self, elemFaces: typing.List[MeshFace]):
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
         """This method creates a MeshFaceArray object.
 
         .. note:: 
@@ -40,6 +47,7 @@ class MeshFaceArray(typing.List[MeshFace]):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def getSequenceFromMask(self, mask: str):
         """This method returns the objects in the MeshFaceArray identified using the specified
         **mask**. When large number of objects are involved, this method is highly efficient.
@@ -61,6 +69,7 @@ class MeshFaceArray(typing.List[MeshFace]):
         """
         ...
 
+    @abaqus_method_doc
     def getMask(self):
         """This method returns a string specifying the object or objects.
 

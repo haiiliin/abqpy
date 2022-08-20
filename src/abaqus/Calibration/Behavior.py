@@ -1,7 +1,9 @@
 from .DataSet import DataSet
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Behavior:
     """The Behavior object specifies the method used for calibrating a material.
 
@@ -35,6 +37,7 @@ class Behavior:
     #: "ElasPlasIsoBehavior", "FeFpBehavior", or a user plug-in behavior type.
     typeName: str
 
+    @abaqus_method_doc
     def __init__(self, name: str, typeName: str):
         """This method creates a Behavior object.
 
@@ -60,6 +63,7 @@ class Behavior:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         E: str = "",
@@ -171,6 +175,7 @@ class Behavior:
         """
         ...
 
+    @abaqus_method_doc
     def mapToMaterial(self, materialName: str):
         """This method appends the calibration data obtained from the DataSet object to an existing
         material object. In the case of ElasIsoBehavior, it appends the young's modulus and
@@ -185,6 +190,7 @@ class Behavior:
         """
         ...
 
+    @abaqus_method_doc
     def compute_E(self, dataSet: DataSet):
         """This method computes the value of young's modulus from the existing DataSet object. The
         method is only valid for ElasIsoBehavior type of behavior.
@@ -202,6 +208,7 @@ class Behavior:
         """
         ...
 
+    @abaqus_method_doc
     def compute_nu(self, dataSet: DataSet):
         """This method computes the value of Poisson's Ratio from the existing DataSet object. The
         method is only valid for ElasIsoBehavior and ElasPlasIsoBehavior type of behavior.
@@ -219,6 +226,7 @@ class Behavior:
         """
         ...
 
+    @abaqus_method_doc
     def compute_ultimatePoint(self, dataSet: DataSet):
         """This method computes the coordinates of the Ultimate point from the existing DataSet
         object. The method is only valid for ElasPlasIsoBehavior type of behavior.
@@ -235,6 +243,7 @@ class Behavior:
         """
         ...
 
+    @abaqus_method_doc
     def compute_elasticModulus(self, yieldPoint: tuple):
         """This method computes the value of the elastic modulus from the yieldpoint value. The
         method is only valid for ElasPlasIsoBehavior type of behavior.
@@ -251,6 +260,7 @@ class Behavior:
         """
         ...
 
+    @abaqus_method_doc
     def compute_plasticPoints(
         self,
         dataSet: DataSet,
@@ -282,6 +292,7 @@ class Behavior:
         """
         ...
 
+    @abaqus_method_doc
     def xyDataDissect(
         self, dsName: str, modelName: str, calibrationName: str, biaxial: Boolean = True
     ):

@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class NetworkDatabaseConnector:
     """The NetworkDatabaseConnector object allows you to access an output database on a remote
     system.
@@ -53,6 +55,7 @@ class NetworkDatabaseConnector:
     #: default value is ON.
     allowAutomaticStartup: Boolean = ON
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -116,6 +119,7 @@ class NetworkDatabaseConnector:
         """
         ...
 
+    @abaqus_method_doc
     def start(self, serverPort: int = 0, serverTimeout: int = 86400):
         """This method starts the remote network database connector server on the remote host.
 
@@ -132,10 +136,12 @@ class NetworkDatabaseConnector:
         """
         ...
 
+    @abaqus_method_doc
     def stop(self):
         """This method stops the remote network database connector server on the remote host."""
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         remoteAbaqusDriverName: str = "",

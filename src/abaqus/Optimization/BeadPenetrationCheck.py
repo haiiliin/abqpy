@@ -1,7 +1,9 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BeadPenetrationCheck(GeometricRestriction):
     """The BeadPenetrationCheck object defines a penetration check geometric restriction.
     The BeadPenetrationCheck object is derived from the GeometricRestriction object.
@@ -24,6 +26,7 @@ class BeadPenetrationCheck(GeometricRestriction):
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
     region: Region
 
+    @abaqus_method_doc
     def __init__(self, name: str, beadPenetrationCheckRegion: Region, region: Region):
         """This method creates a BeadPenetrationCheck object.
 
@@ -50,6 +53,7 @@ class BeadPenetrationCheck(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the BeadPenetrationCheck object."""
         ...

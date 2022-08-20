@@ -1,3 +1,6 @@
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class Gel:
     r"""The Gel object defines a swelling gel.
 
@@ -23,6 +26,7 @@ class Gel:
         - GEL
     """
 
+    @abaqus_method_doc
     def __init__(self, table: tuple):
         """This method creates a Gel object.
 
@@ -46,6 +50,7 @@ class Gel:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Gel object."""
         ...

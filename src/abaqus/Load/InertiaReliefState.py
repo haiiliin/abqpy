@@ -1,7 +1,9 @@
 from .LoadState import LoadState
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class InertiaReliefState(LoadState):
     """The InertiaReliefState object stores the propagating data for an inertia relief load in
     a step. One instance of this object is created internally by the InertiaRelief object

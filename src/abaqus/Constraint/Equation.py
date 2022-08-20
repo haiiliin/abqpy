@@ -1,7 +1,9 @@
 from .Constraint import Constraint
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Equation(Constraint):
     """The Equation object defines a linear multi-point constraint between a set of degrees of
     freedom.
@@ -31,6 +33,7 @@ class Equation(Constraint):
     #: degree of freedom, and coordinate system ID. The coordinate system ID is optional.
     terms: tuple
 
+    @abaqus_method_doc
     def __init__(self, name: str, terms: tuple):
         """This method creates an Equation object.
 
@@ -60,6 +63,7 @@ class Equation(Constraint):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Equation object.
 

@@ -1,8 +1,10 @@
 import typing
 
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class HistoryOutputRequest:
     """The HistoryOutputRequest object defines a history output request.
 
@@ -47,6 +49,7 @@ class HistoryOutputRequest:
     #: None.The sequence can contain only one String.
     interactions: tuple = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -166,6 +169,7 @@ class HistoryOutputRequest:
         """
         ...
 
+    @abaqus_method_doc
     def deactivate(self, stepName: str):
         """This method deactivates the history output request in the specified step and all
         subsequent steps.
@@ -178,6 +182,7 @@ class HistoryOutputRequest:
         """
         ...
 
+    @abaqus_method_doc
     def move(self, fromStepName: str, toStepName: str):
         """This method moves the history output request state object from one step to a different
         step.
@@ -193,6 +198,7 @@ class HistoryOutputRequest:
         """
         ...
 
+    @abaqus_method_doc
     def reset(self, stepName: str):
         """This method resets the history output request state of the specified step to the state
         of the previous step.
@@ -205,14 +211,17 @@ class HistoryOutputRequest:
         """
         ...
 
+    @abaqus_method_doc
     def resume(self):
         """This method resumes the history output request that was previously suppressed."""
         ...
 
+    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the history output request."""
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         region: SymbolicConstant = MODEL,
@@ -320,6 +329,7 @@ class HistoryOutputRequest:
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AdaptiveMeshControl:
     r"""The AdaptiveMeshControl object is used to control various aspects of Arbitrary
     Lagrangian Eularian (ALE) style adaptive smoothing and advection algorithms applied to
@@ -76,6 +78,7 @@ class AdaptiveMeshControl:
     #: method. The default value is 0.0.
     standardVolumetricSmoothingWeight: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -163,6 +166,7 @@ class AdaptiveMeshControl:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         remapping: SymbolicConstant = SECOND_ORDER_ADVECTION,

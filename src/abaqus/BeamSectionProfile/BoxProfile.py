@@ -1,7 +1,9 @@
 from .Profile import Profile
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BoxProfile(Profile):
     """The BoxProfile object defines the properties of a box profile.
     The BoxProfile object is derived from the Profile object.
@@ -51,6 +53,7 @@ class BoxProfile(Profile):
     #: **uniformThickness** = OFF. The default value is 0.0.
     t4: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -109,6 +112,7 @@ class BoxProfile(Profile):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, t2: float = 0, t3: float = 0, t4: float = 0):
         """This method modifies the BoxProfile object.
 

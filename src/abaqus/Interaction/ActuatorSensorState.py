@@ -1,7 +1,9 @@
 from .InteractionState import InteractionState
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class ActuatorSensorState(InteractionState):
     """The ActuatorSensorState object stores the propagating data of an actuator sensor in a
     step. One instance of this object is created internally by the ActuatorSensor object for

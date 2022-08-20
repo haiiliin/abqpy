@@ -1,7 +1,9 @@
 from .Amplitude import Amplitude
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PsdDefinition(Amplitude):
     """The PsdDefinition object defines the cross-spectral density frequency function for
     random response loading.
@@ -57,6 +59,7 @@ class PsdDefinition(Amplitude):
     #: string.
     amplitude: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -120,6 +123,7 @@ class PsdDefinition(Amplitude):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         unitType: SymbolicConstant = FORCE,

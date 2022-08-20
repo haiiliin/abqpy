@@ -1,4 +1,5 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_function_doc
 
 """The Python module redentABQ is a wrapper around the Python redent module. The module 
 makes the indentation in a Python text file consistent. 
@@ -22,6 +23,7 @@ execution.
 """
 
 
+@abaqus_function_doc
 def indentFile(
     path: str, indent: str = "", backup: Boolean = False, runTest: Boolean = False
 ):

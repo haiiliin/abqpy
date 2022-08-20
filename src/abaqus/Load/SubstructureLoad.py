@@ -1,8 +1,10 @@
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SubstructureLoad(Load):
     """The SubstructureLoad object defines a substructure load.
     The SubstructureLoad object is derived from the Load object.
@@ -22,6 +24,7 @@ class SubstructureLoad(Load):
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -64,6 +67,7 @@ class SubstructureLoad(Load):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, amplitude: str = UNSET):
         """This method modifies the data for an existing SubstructureLoad object in the step where
         it is created.
@@ -77,6 +81,7 @@ class SubstructureLoad(Load):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

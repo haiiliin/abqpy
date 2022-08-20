@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AnalyticSurfaceSegment:
     """An individual segment of the analytic surface.
 
@@ -27,6 +29,7 @@ class AnalyticSurfaceSegment:
     #: single row contains coordinates of the start/end point.
     data: tuple
 
+    @abaqus_method_doc
     def __init__(self, type: SymbolicConstant, data: tuple):
         """This method creates an AnalyticSurfaceSegment object.
 
