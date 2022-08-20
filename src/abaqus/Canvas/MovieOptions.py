@@ -2,8 +2,10 @@ import typing
 
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _CopyOptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MovieOptions(_CopyOptionsBase):
     """The MovieOptions object stores settings that control how the movie background for an
     animation is rendered in a particular viewport. MovieOptions objects are accessed from
@@ -91,6 +93,7 @@ class MovieOptions(_CopyOptionsBase):
     #: The default value is 1.0.
     translucency: float = 1.0
 
+    @abaqus_method_doc
     def setValues(
         self,
         movieName: str = "",

@@ -1,8 +1,10 @@
 """These functions execute Python commands or functions.
 
 """
+from .._decorators import abaqus_function_doc
 
 
+@abaqus_function_doc
 def addImportCallback(moduleName: str, callback: str, userData: str = ""):
     """This function defines a function to be called when a specified Abaqus/CAE module is
     imported. You cannot specify a custom module.
@@ -29,6 +31,7 @@ def addImportCallback(moduleName: str, callback: str, userData: str = ""):
     ...
 
 
+@abaqus_function_doc
 def removeImportCallback(callback: str, userData: str):
     """This function removes a callback added in addImportCallback.
 

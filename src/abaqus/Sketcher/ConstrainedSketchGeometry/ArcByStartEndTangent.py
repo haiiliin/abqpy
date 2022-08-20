@@ -1,9 +1,12 @@
 import typing
 
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ArcByStartEndTangent(ConstrainedSketchGeometry):
+    @abaqus_method_doc
     def __init__(self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...], vector: tuple):
         """This method constructs an arc using two vertices. The Arc object is added to the
         geometry repository of the ConstrainedSketch object.

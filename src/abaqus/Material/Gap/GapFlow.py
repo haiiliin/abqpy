@@ -1,6 +1,8 @@
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class GapFlow:
     """The GapFlow object specifies tangential flow constitutive parameters for pore pressure
     cohesive elements.
@@ -55,6 +57,7 @@ class GapFlow:
         - GAP FLOW
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -96,6 +99,7 @@ class GapFlow:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the GapFlow object."""
         ...

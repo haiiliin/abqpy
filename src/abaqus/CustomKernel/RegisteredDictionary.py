@@ -1,8 +1,13 @@
 from .CommandRegister import CommandRegister
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class RegisteredDictionary(CommandRegister, dict):
-    """This class allows you to create a dictionary that can be queried from the GUI and is
+    """This from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
+class allows you to create a dictionary that can be queried from the GUI and is
     capable of notifying the GUI when the contents of the dictionary change. The keys to a
     RegisteredDictionary must be either strings or integers.
     The RegisteredDictionary object is derived from the CommandRegister object.
@@ -15,6 +20,7 @@ class RegisteredDictionary(CommandRegister, dict):
             import customKernel
     """
 
+    @abaqus_method_doc
     def __init__(self):
         """This method creates a RegisteredDictionary object.
 
@@ -32,6 +38,7 @@ class RegisteredDictionary(CommandRegister, dict):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def Methods(self):
         """The RegisteredDictionary object supports the same methods as a Python dictionary. In
         addition, the RegisteredDictionary object supports the changeKey method.
@@ -39,6 +46,7 @@ class RegisteredDictionary(CommandRegister, dict):
         # TODO: Implement this method
         ...
 
+    @abaqus_method_doc
     def changeKey(self, fromName: str, toName: str):
         """This method changes the name of a key in the dictionary.
 

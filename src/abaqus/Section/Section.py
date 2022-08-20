@@ -4,9 +4,12 @@ from .TransverseShearBeam import TransverseShearBeam
 from .TransverseShearShell import TransverseShearShell
 from ..Connector.ConnectorSection import ConnectorSection
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Section(ConnectorSection):
+    @abaqus_method_doc
     def TransverseShearBeam(
         self,
         scfDefinition: SymbolicConstant,
@@ -49,6 +52,7 @@ class Section(ConnectorSection):
         )
         return transverseShearBeam
 
+    @abaqus_method_doc
     def TransverseShearShell(
         self, k11: float, k22: float, k12: float
     ) -> TransverseShearShell:

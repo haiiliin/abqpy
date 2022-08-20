@@ -1,7 +1,9 @@
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class IntegratedOutputSection:
     """The IntegratedOutputSection object specifies parameters used for integrated output.
 
@@ -50,6 +52,7 @@ class IntegratedOutputSection:
     #: such that a least-squares fit surface will be used. The default value is OFF.
     projectOrientation: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -108,6 +111,7 @@ class IntegratedOutputSection:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         surface: Region,

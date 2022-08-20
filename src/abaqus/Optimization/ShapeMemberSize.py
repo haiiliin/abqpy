@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ShapeMemberSize(GeometricRestriction):
     """The ShapeMemberSize object defines a shape member size geometric restriction.
     The ShapeMemberSize object is derived from the GeometricRestriction object.
@@ -34,6 +36,16 @@ class ShapeMemberSize(GeometricRestriction):
     #: Possible values are MAXIMUM and MINIMUM. The default value is MINIMUM.
     sizeRestriction: SymbolicConstant = MINIMUM
 
+<<<<<<< HEAD
+=======
+    #: A bool specifying whether to use the node group region. The default value is OFF.
+    assignNodeGroupRegion: str = OFF
+
+    #: A Node Region object specifying the check node group.
+    nodeGroupRegion: str = ""
+
+    @abaqus_method_doc
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def __init__(
         self,
         name: str,
@@ -74,6 +86,7 @@ class ShapeMemberSize(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         maxThickness: float = 0,

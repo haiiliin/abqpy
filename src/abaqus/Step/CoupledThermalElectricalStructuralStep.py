@@ -15,8 +15,10 @@ from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CoupledThermalElectricalStructuralStep(AnalysisStep):
     """The CoupledThermalElectricalStructuralStep object is used to analyze problems where the
     simultaneous solution of the temperature, stress/displacement and electrical fields is
@@ -215,6 +217,7 @@ class CoupledThermalElectricalStructuralStep(AnalysisStep):
     #: A repository of PredefinedFieldState objects.
     predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -336,6 +339,7 @@ class CoupledThermalElectricalStructuralStep(AnalysisStep):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         description: str = "",

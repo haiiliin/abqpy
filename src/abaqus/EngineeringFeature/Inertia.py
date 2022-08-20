@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Inertia:
     """The Inertia object is the abstract base type for HeatCapacitance, NonstructuralMass, and
     PointMassInertia.
@@ -22,10 +24,12 @@ class Inertia:
     #: A Boolean specifying whether the inertia is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
 
+    @abaqus_method_doc
     def resume(self):
         """This method resumes the inertia that was previously suppressed."""
         ...
 
+    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the inertia."""
         ...

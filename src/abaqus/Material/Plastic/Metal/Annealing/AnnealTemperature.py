@@ -1,3 +1,6 @@
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class AnnealTemperature:
     r"""The AnnealTemperature object specifies the material annealing temperature.
 
@@ -24,6 +27,7 @@ class AnnealTemperature:
         - ANNEAL TEMPERATURE
     """
 
+    @abaqus_method_doc
     def __init__(self, table: tuple, dependencies: int = 0):
         """This method creates an AnnealTemperature object.
 
@@ -53,6 +57,7 @@ class AnnealTemperature:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the AnnealTemperature object.
 

@@ -2,9 +2,12 @@ from .ConstrainedSketchConstraint import ConstrainedSketchConstraint
 from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
     ConstrainedSketchGeometry,
 )
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FixedConstraint(ConstrainedSketchConstraint):
+    @abaqus_method_doc
     def __init__(self, entity: ConstrainedSketchGeometry):
         """This method creates a fixed constraint. This constraint applies to a
         ConstrainedSketchGeometry object or a ConstrainedSketchVertex object and constrains them to be fixed in

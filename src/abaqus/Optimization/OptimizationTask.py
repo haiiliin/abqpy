@@ -40,9 +40,12 @@ from .TopologyRotationalSymmetry import TopologyRotationalSymmetry
 from .TurnControl import TurnControl
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OptimizationTask(OptimizationTaskBase):
+    @abaqus_method_doc
     def SingleTermDesignResponse(
         self,
         name: str,
@@ -112,6 +115,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return singleTermDesignResponse
 
+    @abaqus_method_doc
     def ObjectiveFunction(
         self,
         name: str,
@@ -152,6 +156,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return objectiveFunction
 
+    @abaqus_method_doc
     def OptimizationConstraint(
         self,
         name: str,
@@ -199,6 +204,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return optimizationConstraint
 
+    @abaqus_method_doc
     def BeadFixedRegion(
         self,
         name: str,
@@ -247,6 +253,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def BeadGrowth(
         self, name: str, region: Region, beadGrowth: float = 0, shrink: float = 0
     ) -> BeadGrowth:
@@ -282,6 +289,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def BeadPenetrationCheck(
         self, name: str, beadPenetrationCheckRegion: Region, region: Region
     ) -> BeadPenetrationCheck:
@@ -313,6 +321,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def BeadPlanarSymmetry(
         self,
         name: str,
@@ -353,6 +362,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def BeadPointSymmetry(
         self, name: str, region: Region, csys: int = None
     ) -> BeadPointSymmetry:
@@ -386,6 +396,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def BeadRotationalSymmetry(
         self,
         name: str,
@@ -431,6 +442,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def DesignDirection(
         self,
         name: str,
@@ -511,6 +523,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def DrillControl(
         self,
         name: str,
@@ -595,6 +608,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def FixedRegion(
         self,
         name: str,
@@ -649,6 +663,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def FrozenArea(self, name: str, region: Region = Region()) -> FrozenArea:
         """This method creates a FrozenArea object.
 
@@ -678,6 +693,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def Growth(
         self,
         name: str,
@@ -723,6 +739,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def PenetrationCheck(
         self,
         name: str,
@@ -763,6 +780,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def ShapeDemoldControl(
         self,
         name: str,
@@ -848,6 +866,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def ShapeMemberSize(
         self,
         name: str,
@@ -895,6 +914,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def ShapePlanarSymmetry(
         self,
         name: str,
@@ -971,6 +991,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def ShapePointSymmetry(
         self,
         name: str,
@@ -1036,6 +1057,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def ShapeRotationalSymmetry(
         self,
         name: str,
@@ -1129,6 +1151,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def SizingClusterAreas(self, name: str, regions: tuple) -> SizingClusterAreas:
         """This method creates a SizingClusterAreas object.
 
@@ -1157,6 +1180,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def SizingCyclicSymmetry(
         self,
         name: str,
@@ -1204,6 +1228,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def SizingFrozenArea(self, name: str, region: Region) -> SizingFrozenArea:
         """This method creates a SizingFrozenArea object.
 
@@ -1231,6 +1256,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def SizingMemberSize(
         self, name: str, region: Region, minWidth: float
     ) -> SizingMemberSize:
@@ -1263,6 +1289,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def SizingPlanarSymmetry(
         self,
         name: str,
@@ -1306,6 +1333,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def SizingPointSymmetry(
         self,
         name: str,
@@ -1345,6 +1373,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def SizingRotationalSymmetry(
         self,
         name: str,
@@ -1393,6 +1422,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def SlideRegionControl(
         self,
         name: str,
@@ -1476,6 +1506,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def StampControl(
         self,
         name: str,
@@ -1559,6 +1590,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def TopologyCyclicSymmetry(
         self,
         name: str,
@@ -1610,6 +1642,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def TopologyDemoldControl(
         self,
         name: str,
@@ -1676,6 +1709,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def TopologyMemberSize(
         self,
         name: str,
@@ -1723,6 +1757,64 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+<<<<<<< HEAD
+=======
+    @abaqus_method_doc
+    def TopologyMillingControl(
+        self,
+        name: str,
+        millingDirections: tuple,
+        region: Region,
+        csys: int = None,
+        millingCheckRegion: SymbolicConstant = MILLING_REGION,
+        radius: float = None,
+    ) -> TopologyMillingControl:
+        """This method creates a TopologyMillingControl object.
+
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].optimizationTasks[name].TopologyMillingControl
+
+        Parameters
+        ----------
+        name
+            A String specifying the geometric restriction repository key.
+        millingDirections
+            A tuple of VertexArray objects of length 2 specifying the milling directions. Each point
+            can be specified through a tuple of coordinates instead of through a ConstrainedSketchVertex.
+        region
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+        csys
+            None or a DatumCsys object specifying the local coordinate system of the
+            **millingDirections**. If **csys** = None, the global coordinate system is used. When this
+            member is queried, it returns an Int indicating the identifier of the DatumCsys. The
+            default value is None.
+        millingCheckRegion
+            The SymbolicConstant MILLING_REGION or a Region object specifying the milling check
+            region. If the value is MILLING_REGION, the value of **region** is used as both the
+            milling control region and the milling check region. The default value is
+            MILLING_REGION.
+        radius
+            A Float specifying the radius for the collision check during the removal of the elements
+            for the milling criteria.
+
+        Returns
+        -------
+        TopologyMillingControl
+            A :py:class:`~abaqus.Optimization.TopologyMillingControl.TopologyMillingControl` object.
+        """
+        self.geometricRestrictions[
+            name
+        ] = geometricRestriction = TopologyMillingControl(
+            name, millingDirections, region, csys, millingCheckRegion, radius
+        )
+        return geometricRestriction
+
+    @abaqus_method_doc
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def TopologyOverhangControl(
         self,
         name: str,
@@ -1794,6 +1886,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def TopologyPlanarSymmetry(
         self,
         name: str,
@@ -1841,6 +1934,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def TopologyPointSymmetry(
         self,
         name: str,
@@ -1882,6 +1976,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def TopologyRotationalSymmetry(
         self,
         name: str,
@@ -1932,6 +2027,7 @@ class OptimizationTask(OptimizationTaskBase):
         )
         return geometricRestriction
 
+    @abaqus_method_doc
     def TurnControl(
         self,
         name: str,

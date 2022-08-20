@@ -4,8 +4,10 @@ from ..BasicGeometry.InterestingPoint import InterestingPoint
 from ..BasicGeometry.Vertex import Vertex
 from ..Datum.Datum import Datum
 from ..Mesh.MeshNode import MeshNode
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ReferencePoint:
     """The ReferencePoint object has no direct constructor; it is created when a Feature object
     is created. The ReferencePoint method creates a Feature object that creates a
@@ -34,6 +36,7 @@ class ReferencePoint:
             mdb.models[name].rootAssembly.sets[name].referencePoints[i]
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         point: typing.Union[tuple, Vertex, InterestingPoint, MeshNode, Datum],

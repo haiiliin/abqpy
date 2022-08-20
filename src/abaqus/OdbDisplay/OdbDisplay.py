@@ -20,8 +20,10 @@ from ..PlotOptions.FreeBodyOptions import FreeBodyOptions
 from ..PlotOptions.StreamOptions import StreamOptions
 from ..PlotOptions.ViewCutOptions import ViewCutOptions
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbDisplay:
     """The OdbDisplay object stores the context of an output database for a viewport. The
     OdbDisplay object has no constructor. Abaqus creates the **defaultOdbDisplay** member when
@@ -253,6 +255,7 @@ class OdbDisplay:
     #: frame. This sequence is read-only.
     lastFrame: str = ""
 
+    @abaqus_method_doc
     def moveCameraToCsys(self):
         """This method specifies a new position for the camera. It is available only when
         **movieMode** = ON (in the View object). The new camera position is the origin of the
@@ -260,6 +263,7 @@ class OdbDisplay:
         """
         ...
 
+    @abaqus_method_doc
     def setDeformedVariable(self, variableLabel: str, field: str):
         """This method specifies the field output variable or FieldOutput object to be used when
         displaying the deformed shape of the model.
@@ -280,6 +284,7 @@ class OdbDisplay:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def setFrame(self, step: int, frame: int):
         """This method specifies the step and frame for the OdbDisplay object.
 
@@ -305,6 +310,7 @@ class OdbDisplay:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def setFrame(self, frame: OdbFrame):
         """This method specifies the frame for the OdbDisplay object.
 
@@ -315,6 +321,7 @@ class OdbDisplay:
         """
         ...
 
+    @abaqus_method_doc
     def setFrame(self, *args, **kwargs):
         ...
 
@@ -361,6 +368,7 @@ class OdbDisplay:
         """
         ...
 
+    @abaqus_method_doc
     def setPrimarySectionPoint(self, sectionPoint: dict, activePly: str):
         """This method specifies the section point for the current primary, symbol and status
         variables.
@@ -383,6 +391,7 @@ class OdbDisplay:
         """
         ...
 
+    @abaqus_method_doc
     def setStatusVariable(
         self,
         variableLabel: str,
@@ -446,6 +455,7 @@ class OdbDisplay:
         """
         ...
 
+    @abaqus_method_doc
     def setSymbolVariable(
         self,
         variableLabel: str,
@@ -500,6 +510,7 @@ class OdbDisplay:
         """
         ...
 
+    @abaqus_method_doc
     def setStreamVariable(self, variableLabel: str):
         """This method specifies the field output variable for which to obtain results used for
         stream plots. This variable must be in the form of nodal vector data.
@@ -517,6 +528,7 @@ class OdbDisplay:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         visibleDisplayGroups: str = "",
@@ -536,6 +548,7 @@ class OdbDisplay:
         """
         ...
 
+    @abaqus_method_doc
     def ViewCut(
         self,
         name: str,

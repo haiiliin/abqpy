@@ -1,8 +1,10 @@
 import typing
 
 from ..ConstrainedSketchBase import ConstrainedSketchBase
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConstrainedSketchVertexModel(ConstrainedSketchBase):
     """A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object contains the entities that are used to create a sketch. The
     objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
@@ -18,6 +20,7 @@ class ConstrainedSketchVertexModel(ConstrainedSketchBase):
             mdb.models[name].sketches[name]
     """
 
+    @abaqus_method_doc
     def Spot(self, point: typing.Tuple[float, ...]):
         """This method creates a spot (construction point) located at the specified coordinates.
 

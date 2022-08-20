@@ -1,8 +1,10 @@
 from .OdbDatumCsys import OdbDatumCsys
 from .OdbSet import OdbSet
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class RebarOrientation:
     """The RebarOrientation object represents the orientation of the rebar reference.
 

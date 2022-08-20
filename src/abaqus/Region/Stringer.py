@@ -4,8 +4,10 @@ from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..Mesh.MeshEdge import MeshEdge
 from ..Mesh.MeshElementArray import MeshElementArray
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Stringer:
     """The Stringer object stores information on stringer reinforcements created on entities.
 
@@ -28,6 +30,7 @@ class Stringer:
     #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
     edges: EdgeArray = EdgeArray([])
 
+    @abaqus_method_doc
     def __init__(
         self, name: str, edges: typing.Tuple[Edge, ...] = (), elementEdges: typing.Tuple[MeshEdge, ...] = ()
     ):
@@ -59,6 +62,7 @@ class Stringer:
         """
         ...
 
+    @abaqus_method_doc
     def EditStringer(
         self, name: str, edges: typing.Tuple[Edge, ...] = (), elementEdges: typing.Tuple[MeshEdge, ...] = ()
     ):

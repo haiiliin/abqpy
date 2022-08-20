@@ -1,7 +1,9 @@
 from .Trs import Trs
 from .....UtilityAndView.abaqusConstants import *
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Viscosity:
     """The Viscosity object specifies mechanical viscosity.
 
@@ -33,6 +35,7 @@ class Viscosity:
     #: A :py:class:`~abaqus.Material.Others.Mechanical.Viscosity.Trs.Trs` object.
     trs: Trs = Trs()
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -72,6 +75,7 @@ class Viscosity:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Viscosity object.
 

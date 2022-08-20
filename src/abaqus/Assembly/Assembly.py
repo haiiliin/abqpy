@@ -6,8 +6,10 @@ from ..Property.PropertyAssembly import PropertyAssembly
 from ..Region.RegionAssembly import RegionAssembly
 from ..Region.Set import Set
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly):
     """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
@@ -22,6 +24,7 @@ class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly)
             mdb.models[name].rootAssembly
     """
 
+    @abaqus_method_doc
     def ConnectorOrientation(
         self,
         region: Set,

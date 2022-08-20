@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class OdbNumericalProblemSummary:
     """The OdbNumericalProblemSummary object stores the numerical problem summary of a job.
 

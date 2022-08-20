@@ -2,8 +2,10 @@ import typing
 
 from .OdbMeshNode import OdbMeshNode
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbDatumCsys:
     """The OdbDatumCsys object contains a coordinate system that can be stored in an output
     database. You can create the datum coordinate system in the Visualization module during
@@ -40,6 +42,7 @@ class OdbDatumCsys:
     #: A tuple of Floats specifying a point on the **Z**-axis.
     zAxis: float = None
 
+    @abaqus_method_doc
     def DatumCsysByThreePoints(
         self,
         name: str,
@@ -80,6 +83,7 @@ class OdbDatumCsys:
         """
         ...
 
+    @abaqus_method_doc
     def DatumCsysByThreeNodes(
         self,
         name: str,
@@ -123,6 +127,7 @@ class OdbDatumCsys:
         """
         ...
 
+    @abaqus_method_doc
     def DatumCsysByThreeCircNodes(
         self,
         name: str,
@@ -166,6 +171,7 @@ class OdbDatumCsys:
         """
         ...
 
+    @abaqus_method_doc
     def DatumCsysBy6dofNode(
         self, name: str, coordSysType: SymbolicConstant, origin: OdbMeshNode
     ):
@@ -200,6 +206,7 @@ class OdbDatumCsys:
         """
         ...
 
+    @abaqus_method_doc
     def DatumCsys(self, name: str, datumCsys: "OdbDatumCsys"):
         """This method copies oneOdbDatumCsys object to a new OdbDatumCsys object.
 
@@ -223,3 +230,43 @@ class OdbDatumCsys:
             An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         ...
+<<<<<<< HEAD
+=======
+
+    @abaqus_method_doc
+    def globalToLocal(
+        self, coordinates: typing.Tuple[float, float, float]
+    ) -> typing.Tuple[float, float, float]:
+        """This method transforms specified coordinates in the global coordinate system into this
+        local coordinate system.
+
+        Parameters
+        ----------
+        coordinates
+            A tuple of three Floats representing the coordinates in the global coordinate system.
+
+        Returns
+        -------
+        typing.Tuple[float, float, float]
+            A tuple of three Floats representing the coordinates in this local coordinate system.
+        """
+        ...
+
+    @abaqus_method_doc
+    def localToGlobal(
+        self, coordinates: typing.Tuple[float, float, float]
+    ) -> typing.Tuple[float, float, float]:
+        """This method transforms specified coordinates in this local coordinate system into the global coordinate system.
+
+        Parameters
+        ----------
+        coordinates
+            A tuple of three Floats representing the coordinates in the local coordinate system.
+
+        Returns
+        -------
+        typing.Tuple[float, float, float]
+            A tuple of three Floats representing the coordinates in this global coordinate system.
+        """
+        ...
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)

@@ -1,7 +1,9 @@
 from .Interaction import Interaction
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class XFEMCrackGrowth(Interaction):
     """The XFEMCrackGrowth object defines the enrichment activation state for an XFEMCrack.
     The XFEMCrackGrowth object is derived from the Interaction object.
@@ -32,6 +34,7 @@ class XFEMCrackGrowth(Interaction):
     #: analysis step. The default value is ON.
     allowGrowth: Boolean = ON
 
+    @abaqus_method_doc
     def __init__(
         self, name: str, createStepName: str, crackName: str, allowGrowth: Boolean = ON
     ):
@@ -63,6 +66,7 @@ class XFEMCrackGrowth(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, allowGrowth: Boolean = ON):
         """This method modifies the data for an existing XFEMCrackGrowth object in the step where
         it is created.
@@ -75,6 +79,7 @@ class XFEMCrackGrowth(Interaction):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(self, stepName: str, allowGrowth: Boolean = ON):
         """This method modifies the propagating data for an existing XFEMCrackGrowth object in the
         specified step.

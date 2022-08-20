@@ -1,6 +1,8 @@
 from .....UtilityAndView.abaqusConstants import *
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Ornl:
     """The Ornl object specifies the constitutive model developed by Oak Ridge National
     Laboratory.
@@ -22,6 +24,7 @@ class Ornl:
         - ORNL
     """
 
+    @abaqus_method_doc
     def __init__(self, a: float = 0, h: float = None, reset: Boolean = OFF):
         """This method creates an Ornl object.
 
@@ -62,6 +65,7 @@ class Ornl:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Ornl object.
 

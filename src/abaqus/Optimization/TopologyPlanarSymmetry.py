@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TopologyPlanarSymmetry(GeometricRestriction):
     """The TopologyPlanarSymmetry object defines a topology planar symmetry geometric
     restriction.
@@ -37,6 +39,7 @@ class TopologyPlanarSymmetry(GeometricRestriction):
     #: A Boolean specifying whether to ignore frozen areas. The default value is OFF.
     ignoreFrozenArea: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -79,6 +82,7 @@ class TopologyPlanarSymmetry(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         axis: SymbolicConstant = AXIS_1,

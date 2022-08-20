@@ -3,8 +3,10 @@ from ....Others.Mechanical.Viscosity.Trs import Trs
 from ....TestData.ShearTestData import ShearTestData
 from ....TestData.VolumetricTestData import VolumetricTestData
 from .....UtilityAndView.abaqusConstants import *
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Viscoelastic:
     r"""The Viscoelastic object specifies dissipative behavior for use with elasticity.
 
@@ -96,6 +98,7 @@ class Viscoelastic:
     #: A :py:class:`~abaqus.Material.TestData.VolumetricTestData.VolumetricTestData` object.
     volumetricTestData: VolumetricTestData = VolumetricTestData(((),))
 
+    @abaqus_method_doc
     def __init__(
         self,
         domain: SymbolicConstant,
@@ -168,6 +171,7 @@ class Viscoelastic:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Viscoelastic object.
 

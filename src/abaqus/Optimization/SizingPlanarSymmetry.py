@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SizingPlanarSymmetry(GeometricRestriction):
     """The SizingPlanarSymmetry object defines a sizing planar symmetry geometric restriction.
     The SizingPlanarSymmetry object is derived from the GeometricRestriction object.
@@ -34,6 +36,7 @@ class SizingPlanarSymmetry(GeometricRestriction):
     #: A Boolean specifying whether to ignore frozen areas. The default value is OFF.
     ignoreFrozenArea: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -74,6 +77,7 @@ class SizingPlanarSymmetry(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the sizingPlanarSymmetry object."""
         ...

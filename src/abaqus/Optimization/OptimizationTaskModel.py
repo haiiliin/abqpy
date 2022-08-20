@@ -6,8 +6,10 @@ from .SizingTask import SizingTask
 from .TopologyTask import TopologyTask
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OptimizationTaskModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
@@ -19,6 +21,7 @@ class OptimizationTaskModel(ModelBase):
             mdb.models[name]
     """
 
+    @abaqus_method_doc
     def BeadTask(
         self,
         name: str,
@@ -148,6 +151,7 @@ class OptimizationTaskModel(ModelBase):
         )
         return optimizationTask
 
+    @abaqus_method_doc
     def ShapeTask(
         self,
         name: str,
@@ -403,6 +407,7 @@ class OptimizationTaskModel(ModelBase):
         )
         return optimizationTask
 
+    @abaqus_method_doc
     def SizingTask(
         self,
         name: str,
@@ -485,6 +490,7 @@ class OptimizationTaskModel(ModelBase):
         )
         return optimizationTask
 
+    @abaqus_method_doc
     def TopologyTask(
         self,
         name: str,

@@ -3,7 +3,6 @@ import typing
 
 from . import __version__
 
-
 version = __version__[:4]
 
 if not version.startswith('20'):

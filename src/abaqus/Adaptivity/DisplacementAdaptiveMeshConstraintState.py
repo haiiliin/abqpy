@@ -1,7 +1,9 @@
 from .AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DisplacementAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
     """The DisplacementAdaptiveMeshConstraintState object stores the propagating data for an
     Arbitrary Lagrangian Eularian (ALE) style displacement/rotation adaptive mesh constraint
@@ -88,6 +90,7 @@ class DisplacementAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
     #: adaptive mesh constraint has no amplitude reference.
     amplitude: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         u1: float = None,

@@ -1,6 +1,8 @@
 from .....UtilityAndView.abaqusConstants import *
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Trs:
     r"""The Trs object defines the temperature-time shift for time history viscoelastic
     analysis.
@@ -28,6 +30,7 @@ class Trs:
         - TRS
     """
 
+    @abaqus_method_doc
     def __init__(self, definition: SymbolicConstant = WLF, table: tuple = ()):
         """This method creates a Trs object.
 
@@ -57,6 +60,7 @@ class Trs:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Trs object."""
         ...

@@ -1,7 +1,9 @@
 from .SectionPointArray import SectionPointArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class FieldLocation:
     """The FieldLocation object specifies locations for which data are available in the field.
     For example, a displacement field will have a FieldLocation object with a **position**

@@ -7,8 +7,10 @@ from .OdbInstance import OdbInstance
 from .OdbSet import OdbSet
 from .SectionPoint import SectionPoint
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FieldOutput:
     """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object contains field data for a specific output variable.
 
@@ -72,6 +74,7 @@ class FieldOutput:
     #: parameter applies only to tensor field outputs. The default value is OFF.
     isEngineeringTensor: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -126,6 +129,7 @@ class FieldOutput:
         """
         ...
 
+    @abaqus_method_doc
     def __init__(self, field: "FieldOutput", name: str = "", description: str = ""):
         """This method creates a FieldOutput object from an existing FieldOutput object of the same
         output database.
@@ -154,6 +158,7 @@ class FieldOutput:
         """
         ...
 
+    @abaqus_method_doc
     def __init__(self, *args, **kwargs):
         ...
 
@@ -225,6 +230,7 @@ class FieldOutput:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def addData(self, field: "FieldOutput"):
         """This method adds the data from a field created using the getSubset method and
         mathematical operators to the database. The user must create a field to contain the new
@@ -244,6 +250,7 @@ class FieldOutput:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def addData(
         self,
         position: SymbolicConstant,
@@ -302,6 +309,7 @@ class FieldOutput:
         """
         ...
 
+    @abaqus_method_doc
     def addData(self, *args, **kwargs):
         ...
 
@@ -328,6 +336,7 @@ class FieldOutput:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getScalarField(self, componentLabel: str):
         """This method generates a scalar field containing the extracted component or calculated
         invariant values. The new field will hold values for the same nodes or elements as the
@@ -347,6 +356,7 @@ class FieldOutput:
         """
         ...
 
+    @abaqus_method_doc
     def getScalarField(self, *args, **kwargs):
         ...
 
@@ -385,6 +395,7 @@ class FieldOutput:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getSubset(self, region: str = ""):
         """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
@@ -402,6 +413,7 @@ class FieldOutput:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getSubset(self, localCoordSystem: tuple = ()):
         """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
@@ -419,6 +431,7 @@ class FieldOutput:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getSubset(self, sectionPoint: SectionPoint = None):
         """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
@@ -435,6 +448,7 @@ class FieldOutput:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getSubset(self, location: FieldLocation = FieldLocation()):
         """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
@@ -451,6 +465,7 @@ class FieldOutput:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getSubset(self, region: str = ""):
         """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
@@ -467,6 +482,7 @@ class FieldOutput:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getSubset(self, region: str = ""):
         """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
@@ -483,6 +499,7 @@ class FieldOutput:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getSubset(self, region: str = ""):
         """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
@@ -499,6 +516,7 @@ class FieldOutput:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getSubset(self, elementType: str = ""):
         """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
@@ -515,6 +533,7 @@ class FieldOutput:
         """
         ...
 
+    @abaqus_method_doc
     def getSubset(self, *args, **kwargs):
         ...
 
@@ -558,6 +577,7 @@ class FieldOutput:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getTransformedField(
         self,
         datumCsys: str,
@@ -604,6 +624,7 @@ class FieldOutput:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getTransformedField(
         self,
         datumCsys: str,
@@ -654,6 +675,7 @@ class FieldOutput:
         """
         ...
 
+    @abaqus_method_doc
     def getTransformedField(self, *args, **kwargs):
         ...
 
@@ -683,6 +705,7 @@ class FieldOutput:
         """
         ...
 
+    @abaqus_method_doc
     def setComponentLabels(self, componentLabels: tuple):
         """This method sets the component labels for the FieldOutput object.
 
@@ -697,6 +720,7 @@ class FieldOutput:
         """
         ...
 
+    @abaqus_method_doc
     def setDataType(self, type: SymbolicConstant):
         """This method sets the data type of a FieldOutput object.
 
@@ -709,6 +733,7 @@ class FieldOutput:
         """
         ...
 
+    @abaqus_method_doc
     def setValidInvariants(self, validInvariants: SymbolicConstant):
         """This method sets the invariants valid for the FieldOutput object.
 

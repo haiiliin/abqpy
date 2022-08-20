@@ -1,7 +1,9 @@
 from .MessageArray import MessageArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Job:
     """The Job object is the abstract base type for other Job objects. The Job object has no
     explicit constructor. The methods and members of the Job object are common to all
@@ -133,10 +135,12 @@ class Job:
     #: available.
     licenseType: SymbolicConstant = DEFAULT
 
+    @abaqus_method_doc
     def kill(self):
         """This method kills the analysis of a job."""
         ...
 
+    @abaqus_method_doc
     def submit(
         self,
         consistencyChecking: Boolean = ON,
@@ -160,6 +164,7 @@ class Job:
         """
         ...
 
+    @abaqus_method_doc
     def waitForCompletion(self):
         """This method interrupts the execution of the script until the end of the analysis. If you
         call the waitForCompletion method and the **status** member is neither SUBMITTED nor
@@ -168,6 +173,7 @@ class Job:
         """
         ...
 
+    @abaqus_method_doc
     def clearMessage(self):
         """This method clears **messages** and sets the **status** to NONE."""
         ...

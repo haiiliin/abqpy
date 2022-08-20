@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbMeshRegionData:
     """The OdbMeshRegionData object defines the external source data of MappedField from an ODB
     file.
@@ -144,6 +146,7 @@ class OdbMeshRegionData:
     #: The default value is UNDEFINED_POSITION.
     displayOutputPosition: SymbolicConstant = UNDEFINED_POSITION
 
+    @abaqus_method_doc
     def __init__(
         self,
         odbFileName: str,
@@ -303,6 +306,7 @@ class OdbMeshRegionData:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the OdbMeshRegionData object."""
         ...
