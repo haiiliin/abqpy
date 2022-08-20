@@ -1,4 +1,5 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_function_doc
 
 """The methodCallback module provides functions that allow you to register a callback that 
 will be invoked when certain Abaqus Scripting Interface commands are about to be 
@@ -12,6 +13,7 @@ about to be called:
 
     import methodCallback 
     from job import JobType 
+    @abaqus_method_doc
     def myCallback(callingObject, arguments, keywordArguments, userData): 
         print 'An input file  is about to be written.' 
     methodCallback.addCallback(JobType, 'writeInput', myCallback) 
@@ -26,6 +28,7 @@ about to be called:
 """
 
 
+@abaqus_function_doc
 def addCallback(
     caller: str,
     methodName: str,
@@ -73,6 +76,7 @@ def addCallback(
     ...
 
 
+@abaqus_function_doc
 def removeCallback(caller: str, methodName: str, callback: str, userData: str = None):
     """This method removes a callback added by the addCallback method. To successfully remove a
     callback, all arguments must exactly match those used when the callback was added.

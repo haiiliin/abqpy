@@ -2,8 +2,10 @@ from .SectionAssignment import SectionAssignment
 from ..Assembly.AssemblyBase import AssemblyBase
 from ..Region.Set import Set
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PropertyAssembly(AssemblyBase):
     """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
@@ -18,6 +20,7 @@ class PropertyAssembly(AssemblyBase):
             mdb.models[name].rootAssembly
     """
 
+    @abaqus_method_doc
     def SectionAssignment(
         self,
         region: Set,

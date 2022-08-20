@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FixedRegion(GeometricRestriction):
     """The FixedRegion object defines a fixed region geometric restriction.
     The FixedRegion object is derived from the GeometricRestriction object.
@@ -45,6 +47,7 @@ class FixedRegion(GeometricRestriction):
     #: OFF.
     u3: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -96,6 +99,7 @@ class FixedRegion(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         csys: int = None,

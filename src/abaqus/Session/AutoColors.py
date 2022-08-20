@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class AutoColors:
     """The AutoColors object defines a color palette.
 
@@ -9,6 +12,7 @@ class AutoColors:
             session.autoColors
     """
 
+    @abaqus_method_doc
     def setValues(self, colors: tuple):
         """This method changes the color palette.
 

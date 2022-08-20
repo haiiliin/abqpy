@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TopologyRotationalSymmetry(GeometricRestriction):
     """The TopologyRotationalSymmetry object defines a topology rotational symmetry geometric
     restriction.
@@ -40,6 +42,7 @@ class TopologyRotationalSymmetry(GeometricRestriction):
     #: A Boolean specifying whether to ignore frozen areas. The default value is OFF.
     ignoreFrozenArea: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -85,6 +88,7 @@ class TopologyRotationalSymmetry(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         axis: SymbolicConstant = AXIS_1,

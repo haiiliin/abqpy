@@ -1,3 +1,6 @@
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class CombinedTestData:
     r"""The CombinedTestData object specifies simultaneously the normalized shear and bulk
     compliances or relaxation moduli as functions of time.
@@ -30,6 +33,7 @@ class CombinedTestData:
         - COMBINED TEST DATA
     """
 
+    @abaqus_method_doc
     def __init__(self, table: tuple, volinf: float = None, shrinf: float = None):
         """This method creates a CombinedTestData object.
 
@@ -68,6 +72,7 @@ class CombinedTestData:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the CombinedTestData object."""
         ...

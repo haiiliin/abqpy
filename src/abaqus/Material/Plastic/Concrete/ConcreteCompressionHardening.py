@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConcreteCompressionHardening:
     """The ConcreteCompressionHardening object specifies hardening for the concrete damaged
     plasticity model.
@@ -30,6 +32,7 @@ class ConcreteCompressionHardening:
         - CONCRETE COMPRESSION HARDENING
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -69,6 +72,7 @@ class ConcreteCompressionHardening:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConcreteCompressionHardening object.
 

@@ -1,7 +1,9 @@
 from .LoadState import LoadState
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class BodyForceState(LoadState):
     """The BodyForceState object stores the propagating data of a body force in a step. One
     instance of this object is created internally by the BodyForce object for each step. The

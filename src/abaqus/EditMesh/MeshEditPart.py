@@ -8,8 +8,10 @@ from ..Mesh.MeshNode import MeshNode
 from ..Part.PartBase import PartBase
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Node(MeshNode):
     ...
 
@@ -26,6 +28,7 @@ class MeshEditPart(PartBase):
             import meshEdit
     """
 
+    @abaqus_method_doc
     def adjustMidsideNode(self, cornerNodes: typing.Tuple[Node, ...], parameter: float):
         """This method is used to adjust the midside node of second-order elements of an orphan
         mesh part.
@@ -42,6 +45,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def cleanMesh(
         self,
         mergeTolerance: float,
@@ -86,6 +90,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def collapseMeshEdge(self, edge: str, collapseMethod: SymbolicConstant):
         """This method collapses an edge of a quadrilateral or triangular element of an orphan mesh
         part or part instance.
@@ -100,6 +105,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def combineElement(self, elements: tuple):
         """This method combines two triangular elements of an orphan mesh part or an Abaqus native
         mesh.
@@ -111,12 +117,14 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def convertSolidMeshToShell(self):
         """This method removes all solid elements from an orphan mesh part and creates triangular
         or quadrilateral shell elements along their outer faces.
         """
         ...
 
+    @abaqus_method_doc
     def deleteElement(
         self, elements: typing.Tuple[MeshElement, ...], deleteUnreferencedNodes: Boolean = OFF
     ):
@@ -134,6 +142,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def deleteNode(
         self, nodes: typing.Tuple[MeshNode, ...], deleteUnreferencedNodes: Boolean = OFF
     ):
@@ -150,6 +159,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def editNode(
         self,
         nodes: typing.Tuple[MeshNode, ...],
@@ -208,6 +218,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def projectNode(self, nodes: typing.Tuple[MeshNode, ...], projectionReference: str):
         """This method projects the given nodes onto a mesh entity, geometric entity, or a datum
         object. The nodes may belong to an orphan mesh part or to an Abaqus native mesh.
@@ -223,6 +234,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def generateMesh(self, elemShape: SymbolicConstant = None):
         """This method generates a new mesh on an orphan mesh part based on the original mesh.
 
@@ -236,6 +248,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def generateMeshByOffset(
         self,
         region: Region,
@@ -289,6 +302,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def mergeElement(self, edge: str, elements: str):
         """Merge a selection of elements arranged in layers on an orphan mesh part into a single
         layer.
@@ -307,6 +321,7 @@ class MeshEditPart(PartBase):
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def mergeNodes(
         self,
         nodes: typing.Tuple[Node, ...],
@@ -336,6 +351,7 @@ class MeshEditPart(PartBase):
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def mergeNodes(
         self,
         node1: MeshNode,
@@ -363,6 +379,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def mergeNodes(self, *args, **kwargs):
         ...
 
@@ -381,10 +398,12 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def removeElementSize(self):
         """This method removes the global element size from an orphan mesh part."""
         ...
 
+    @abaqus_method_doc
     def renumberElement(
         self,
         elements: tuple = (),
@@ -424,6 +443,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def renumberNode(
         self,
         nodes: tuple = (),
@@ -463,6 +483,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def setElementSize(self, size: float):
         """This method sets the global element size for an orphan mesh part.
 
@@ -473,6 +494,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def splitElement(self, elements: tuple):
         """This method splits quadrilateral elements of an orphan mesh part or a Abaqus native mesh
         into triangular elements.
@@ -485,6 +507,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def splitMeshEdge(self, edge: str, parameter: float = 0):
         """This method splits an edge of a quadrilateral or triangular element of an orphan mesh
         part or an Abaqus native mesh.
@@ -499,6 +522,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def subdivideElement(
         self,
         elements: str = "",
@@ -532,6 +556,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def swapMeshEdge(self, edge: str):
         """This method swaps the diagonal of two adjacent triangular elements of an orphan mesh
         part or an Abaqus native mesh.
@@ -543,6 +568,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def wrapMesh(self, radius: float):
         """This method wraps a planar orphan mesh part about the **Z**-axis.
 
@@ -555,6 +581,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def redoMeshEdit(self):
         """This method executes the edit mesh or the bottom-up meshing operation most recently
         undone by the undoMeshEdit method on an part. A redo action must be currently available
@@ -565,6 +592,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def undoMeshEdit(self):
         """This method undoes the most recent edit mesh or the bottom-up meshing operation on a
         part and restores the mesh to its previous state. An edit mesh undo action must be

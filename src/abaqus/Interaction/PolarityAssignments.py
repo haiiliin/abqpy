@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PolarityAssignments:
     """The PolarityAssignments object stores the polarity assignment definition for surfaces in
     ContactExp objects. The PolarityAssignments object has no constructor or members.
@@ -18,6 +20,7 @@ class PolarityAssignments:
         - CONTACT FORMULATION
     """
 
+    @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: SymbolicConstant):
         """This method allows you to modify polarity assignments already defined on surface pairs
         in a given step.
@@ -35,6 +38,7 @@ class PolarityAssignments:
         """
         ...
 
+    @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: SymbolicConstant):
         """This method allows you to add polarity assignments to new surface pairs in a given step.
 
@@ -53,6 +57,7 @@ class PolarityAssignments:
         """
         ...
 
+    @abaqus_method_doc
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing polarity assignments.
 

@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MemoryReductionOptions:
     """The MemoryReductionOptions object controls the default settings that Abaqus/CAE uses for
     running in reduced memory mode. The MemoryReductionOptions object has no constructor.
@@ -14,6 +16,7 @@ class MemoryReductionOptions:
             session.memoryReductionOptions
     """
 
+    @abaqus_method_doc
     def setValues(self, reducedMemoryMode: Boolean = ON, percentThreshold: float = 75):
         """This method modifies the MemoryReductionOptions object.
 

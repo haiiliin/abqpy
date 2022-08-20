@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ProbeOptions:
     """The ProbeOptions object is used to store settings associated with probing a model or an
     **X - Y** plot. The ProbeOptions object has no constructor. Abaqus creates the
@@ -103,6 +105,7 @@ class ProbeOptions:
     #: "ODB" and "XYPlot". This member is read-only.
     probeObject: str = ""
 
+    @abaqus_method_doc
     def setValues(
         self,
         options: "ProbeOptions" = None,

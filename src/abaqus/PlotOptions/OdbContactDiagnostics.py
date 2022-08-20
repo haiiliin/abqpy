@@ -1,8 +1,10 @@
 import typing
 
 from .OdbAuxiliaryData import OdbAuxiliaryData
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class OdbContactDiagnostics:
     """The OdbDiagnosticContact object.
 

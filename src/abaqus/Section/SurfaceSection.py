@@ -1,8 +1,10 @@
 from .RebarLayers import RebarLayers
 from .Section import Section
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SurfaceSection(Section):
     """The SurfaceSection object defines the properties of a surface section.
     The SurfaceSection object is derived from the Section object.
@@ -36,6 +38,7 @@ class SurfaceSection(Section):
     #: 0.0.
     density: float = 0
 
+    @abaqus_method_doc
     def __init__(self, name: str, useDensity: Boolean = OFF, density: float = 0):
         """This method creates a SurfaceSection object.
 

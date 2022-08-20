@@ -1,6 +1,8 @@
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConstrainedSketchOptions:
     """The ConstrainedSketchOptions object is used to store values and attributes associated
     with a particular sketch. The ConstrainedSketchOptions object has no constructor.
@@ -14,6 +16,7 @@ class ConstrainedSketchOptions:
             mdb.models[name].sketches[name].sketchOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         sheetSize: float = None,

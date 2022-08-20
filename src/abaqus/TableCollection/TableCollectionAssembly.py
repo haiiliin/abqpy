@@ -4,8 +4,10 @@ from .ElementProgressiveActivation import ElementProgressiveActivation
 from ..Assembly.AssemblyBase import AssemblyBase
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TableCollectionAssembly(AssemblyBase):
     """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
@@ -22,6 +24,7 @@ class TableCollectionAssembly(AssemblyBase):
 
     elementProgressiveActivations: typing.Dict[str, ElementProgressiveActivation] = {}
 
+    @abaqus_method_doc
     def ElementProgressiveActivation(
         self,
         name: str,

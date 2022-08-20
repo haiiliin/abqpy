@@ -1,7 +1,9 @@
 from .PredefinedField import PredefinedField
 from ..Region.Region import Region
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FluidCavityPressure(PredefinedField):
     """The FluidCavityPressure object stores the data for initial fluid cavity pressures. The
     base class*region* argument can not be specifed with this object.
@@ -32,6 +34,7 @@ class FluidCavityPressure(PredefinedField):
     #: A Float specifying the initial fluid pressure.
     fluidPressure: float
 
+    @abaqus_method_doc
     def __init__(self, name: str, fluidCavity: str, fluidPressure: float):
         """This method creates a FluidCavityPressure object.
 
@@ -58,6 +61,7 @@ class FluidCavityPressure(PredefinedField):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the FluidCavityPressure object."""
         ...

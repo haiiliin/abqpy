@@ -1,7 +1,9 @@
 from .Leaf import Leaf
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LeafFromConstraintNames(Leaf):
     """The LeafFromConstraintNames object can be used whenever a Leaf object is expected as an
     argument.
@@ -23,6 +25,7 @@ class LeafFromConstraintNames(Leaf):
     #: SHELL_TO_SOLID_COUPLING, DISTRIBUTING_COUPLING, KINEMATIC_COUPLING, RIGID_BODY, and MPC.
     leafType: SymbolicConstant = None
 
+    @abaqus_method_doc
     def __init__(self, name: tuple, type: SymbolicConstant):
         """This method creates a Leaf object from a sequence of constraint objects. Leaf objects
         specify the items in a display group.

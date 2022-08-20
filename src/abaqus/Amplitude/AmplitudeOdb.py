@@ -12,8 +12,10 @@ from .SpectrumAmplitude import SpectrumAmplitude
 from .TabularAmplitude import TabularAmplitude
 from ..Odb.OdbBase import OdbBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AmplitudeOdb(OdbBase):
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
@@ -26,6 +28,7 @@ class AmplitudeOdb(OdbBase):
             session.odbs[name]
     """
 
+    @abaqus_method_doc
     def ActuatorAmplitude(
         self, name: str, timeSpan: SymbolicConstant = STEP
     ) -> ActuatorAmplitude:
@@ -60,6 +63,7 @@ class AmplitudeOdb(OdbBase):
         self.amplitudes[name] = amplitude = ActuatorAmplitude(name, timeSpan)
         return amplitude
 
+    @abaqus_method_doc
     def DecayAmplitude(
         self,
         name: str,
@@ -110,6 +114,7 @@ class AmplitudeOdb(OdbBase):
         )
         return amplitude
 
+    @abaqus_method_doc
     def EquallySpacedAmplitude(
         self,
         name: str,
@@ -165,6 +170,7 @@ class AmplitudeOdb(OdbBase):
         )
         return amplitude
 
+    @abaqus_method_doc
     def ModulatedAmplitude(
         self,
         name: str,
@@ -220,6 +226,7 @@ class AmplitudeOdb(OdbBase):
         )
         return amplitude
 
+    @abaqus_method_doc
     def PeriodicAmplitude(
         self,
         name: str,
@@ -270,6 +277,7 @@ class AmplitudeOdb(OdbBase):
         )
         return amplitude
 
+    @abaqus_method_doc
     def PsdDefinition(
         self,
         name: str,
@@ -343,6 +351,7 @@ class AmplitudeOdb(OdbBase):
         )
         return amplitude
 
+    @abaqus_method_doc
     def SmoothStepAmplitude(
         self, name: str, data: tuple, timeSpan: SymbolicConstant = STEP
     ) -> SmoothStepAmplitude:
@@ -380,6 +389,7 @@ class AmplitudeOdb(OdbBase):
         self.amplitudes[name] = amplitude = SmoothStepAmplitude(name, data, timeSpan)
         return amplitude
 
+    @abaqus_method_doc
     def SolutionDependentAmplitude(
         self,
         name: str,
@@ -430,6 +440,7 @@ class AmplitudeOdb(OdbBase):
         )
         return amplitude
 
+    @abaqus_method_doc
     def SpectrumAmplitude(
         self,
         name: str,
@@ -520,6 +531,7 @@ class AmplitudeOdb(OdbBase):
         )
         return amplitude
 
+    @abaqus_method_doc
     def TabularAmplitude(
         self,
         name: str,

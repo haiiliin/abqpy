@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Conductivity:
     r"""The Conductivity object specifies thermal conductivity.
 
@@ -50,6 +52,7 @@ class Conductivity:
         - CONDUCTIVITY
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -90,6 +93,7 @@ class Conductivity:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Conductivity object.
 

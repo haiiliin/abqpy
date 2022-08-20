@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TangentialBehavior:
     """The TangentialBehavior object specifies tangential behavior for a connector friction
     behavior option.
@@ -86,6 +88,7 @@ class TangentialBehavior:
     #: table data are described below. The default value is an empty sequence.
     table: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self,
         formulation: SymbolicConstant = PENALTY,
@@ -152,6 +155,7 @@ class TangentialBehavior:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the TangentialBehavior object."""
         ...

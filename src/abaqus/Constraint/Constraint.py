@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Constraint:
     """The ConstrainedSketchConstraint object is the abstract base type for other ConstrainedSketchConstraint objects. The
     ConstrainedSketchConstraint object has no explicit constructor. The members of the ConstrainedSketchConstraint object are
@@ -22,14 +24,17 @@ class Constraint:
     #: OFF.
     suppressed: Boolean = OFF
 
+    @abaqus_method_doc
     def resume(self):
         """This method resumes the constraint that was previously suppressed."""
         ...
 
+    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the constraint."""
         ...
 
+    @abaqus_method_doc
     def delete(self, indices: tuple):
         """This method allows you to delete existing constraints.
 

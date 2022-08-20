@@ -3,6 +3,7 @@ import typing
 from .FieldOutput import FieldOutput
 from .Odb import Odb
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_function_doc
 
 """The Odb commands do the following: 
 - Determine if an output database (.odb) file needs to be upgraded to the current 
@@ -16,6 +17,7 @@ database to a new file.
 """
 
 
+@abaqus_function_doc
 def isUpgradeRequiredForOdb(upgradeRequiredOdbPath: str):
     """This method determines if an output database file needs to be upgraded to the current
     release.
@@ -51,6 +53,7 @@ def isUpgradeRequiredForOdb(upgradeRequiredOdbPath: str):
     ...
 
 
+@abaqus_function_doc
 def maxEnvelop() -> typing.Tuple[FieldOutput, FieldOutput]:
     """Retrieve the maximum value of an output variable over a number of fields.
 
@@ -74,6 +77,7 @@ def maxEnvelop() -> typing.Tuple[FieldOutput, FieldOutput]:
     ...
 
 
+@abaqus_function_doc
 def minEnvelop() -> typing.Tuple[FieldOutput, FieldOutput]:
     """Retrieve the minimum value of an output variable over a number of fields.
 
@@ -97,6 +101,7 @@ def minEnvelop() -> typing.Tuple[FieldOutput, FieldOutput]:
     ...
 
 
+@abaqus_function_doc
 @typing.overload
 def openOdb(path: str, readOnly: Boolean = OFF, readInternalSets: Boolean = OFF) -> Odb:
     """This method opens an existing output database (.odb) file and creates a new Odb object.
@@ -137,6 +142,7 @@ def openOdb(path: str, readOnly: Boolean = OFF, readInternalSets: Boolean = OFF)
     ...
 
 
+@abaqus_function_doc
 @typing.overload
 def openOdb(name: str, path: str = "", readOnly: Boolean = OFF) -> Odb:
     """This method opens an existing output database (.odb) file and creates a new Odb object.
@@ -180,10 +186,12 @@ def openOdb(name: str, path: str = "", readOnly: Boolean = OFF) -> Odb:
     ...
 
 
+@abaqus_function_doc
 def openOdb(name: str, *args, **kwargs):
     ...
 
 
+@abaqus_function_doc
 def upgradeOdb(existingOdbPath: str, upgradedOdbPath: str):
     """This method upgrades an existing Odb object to the current release and writes the
     upgraded version of the Odb object to a file. In addition, Abaqus/CAE writes information

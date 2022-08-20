@@ -2,8 +2,10 @@ import typing
 
 from .ErrorIndicatorResult import ErrorIndicatorResult
 from .RuleResult import RuleResult
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AdaptivityIteration:
     """The AdaptivityIteration object contains information about a given iteration of the
     varying topology adaptivity process (adaptive remeshing).
@@ -39,6 +41,7 @@ class AdaptivityIteration:
     #: the model in this iteration of the adaptivity process.
     remeshingErrors: int
 
+    @abaqus_method_doc
     def __init__(
         self,
         iteration: int,
@@ -78,6 +81,7 @@ class AdaptivityIteration:
         """
         ...
 
+    @abaqus_method_doc
     def ErrorIndicatorResult(self, name: str, results: str) -> ErrorIndicatorResult:
         """This method creates an ErrorIndicatorResult with data for an error indicator variable in
         a RemeshingRule for a given adaptivity iteration.
@@ -110,6 +114,7 @@ class AdaptivityIteration:
         self.ruleResults[name] = ruleResult = ErrorIndicatorResult(name, results)
         return ruleResult
 
+    @abaqus_method_doc
     def RuleResult(
         self,
         name: str,

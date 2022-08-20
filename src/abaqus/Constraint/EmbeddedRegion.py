@@ -1,8 +1,10 @@
 from .Constraint import Constraint
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class EmbeddedRegion(Constraint):
     """The EmbeddedRegion object allows you to embed a region of the model within a “host”
     region of the model or within the whole model.
@@ -57,6 +59,7 @@ class EmbeddedRegion(Constraint):
     #: **toleranceMethod** = FRACTIONAL or BOTH.
     fractionalTolerance: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -111,6 +114,7 @@ class EmbeddedRegion(Constraint):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         weightFactorTolerance: float = None,

@@ -1,8 +1,10 @@
 from .RebarLayers import RebarLayers
 from .Section import Section
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MembraneSection(Section):
     """The MembraneSection object defines the properties of a membrane section.
     The MembraneSection object is derived from the Section object.
@@ -58,6 +60,7 @@ class MembraneSection(Section):
     #: value is an empty string.
     thicknessField: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -118,6 +121,7 @@ class MembraneSection(Section):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         thickness: float = 1,

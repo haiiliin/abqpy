@@ -1,8 +1,10 @@
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Pressure(Load):
     """The Pressure object defines a pressure load.
     The Pressure object is derived from the Load object.
@@ -32,6 +34,7 @@ class Pressure(Load):
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -94,6 +97,7 @@ class Pressure(Load):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         field: str = "",
@@ -124,6 +128,7 @@ class Pressure(Load):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

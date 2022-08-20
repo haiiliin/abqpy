@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DesignDirection(GeometricRestriction):
     """The DesignDirection object defines a design direction geometric restriction.
     The DesignDirection object is derived from the GeometricRestriction object.
@@ -62,6 +64,7 @@ class DesignDirection(GeometricRestriction):
     #: ON.
     u3: Boolean = ON
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -130,6 +133,7 @@ class DesignDirection(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         csys: int = None,

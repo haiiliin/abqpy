@@ -1,3 +1,6 @@
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class UserDefinedField:
     """The UserDefinedField object redefines field variables at a material point.
 
@@ -16,6 +19,7 @@ class UserDefinedField:
         - USER DEFINED FIELD
     """
 
+    @abaqus_method_doc
     def __init__(self):
         """This method defines a UserDefinedField object.
 

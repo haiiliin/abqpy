@@ -1,8 +1,10 @@
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BodyCurrentDensity(Load):
     """The BodyCurrentDensity object stores the data for a body current.
     The BodyCurrentDensity object is derived from the Load object.
@@ -26,6 +28,7 @@ class BodyCurrentDensity(Load):
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -76,6 +79,7 @@ class BodyCurrentDensity(Load):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self, amplitude: str = UNSET, distributionType: SymbolicConstant = UNIFORM
     ):
@@ -94,6 +98,7 @@ class BodyCurrentDensity(Load):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

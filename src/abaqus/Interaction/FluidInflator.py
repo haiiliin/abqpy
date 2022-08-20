@@ -1,6 +1,8 @@
 from .Interaction import Interaction
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FluidInflator(Interaction):
     """The FluidInflator object is used to define a fluid inflator to model deployment of an
     airbag.
@@ -20,6 +22,7 @@ class FluidInflator(Interaction):
 
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -61,6 +64,7 @@ class FluidInflator(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, inflationTimeAmplitude: str = "", massFlowAmplitude: str = ""):
         """This method modifies the FluidInflator object.
 
