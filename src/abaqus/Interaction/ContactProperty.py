@@ -13,8 +13,10 @@ from .NormalBehavior import NormalBehavior
 from .Radiation import Radiation
 from .ThermalConductance import ThermalConductance
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ContactProperty(InteractionProperty):
     """The ContactProperty object defines a contact interaction property.
     The ContactProperty object is derived from the InteractionProperty object.
@@ -65,6 +67,7 @@ class ContactProperty(InteractionProperty):
     #: A :py:class:`~abaqus.Interaction.GapElectricalConductance.GapElectricalConductance` object.
     electricalConductance: GapElectricalConductance = GapElectricalConductance()
 
+    @abaqus_method_doc
     def __init__(self, name: str):
         """This method creates a ContactProperty object.
 
@@ -87,6 +90,7 @@ class ContactProperty(InteractionProperty):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def TangentialBehavior(
         self,
         formulation: SymbolicConstant = FRICTIONLESS,
@@ -181,6 +185,7 @@ class ContactProperty(InteractionProperty):
         )
         return self.tangentialBehavior
 
+    @abaqus_method_doc
     def NormalBehavior(
         self,
         contactStiffness: typing.Union[SymbolicConstant, float] = DEFAULT,
@@ -292,6 +297,7 @@ class ContactProperty(InteractionProperty):
         )
         return self.normalBehavior
 
+    @abaqus_method_doc
     def Damping(
         self,
         definition: SymbolicConstant = DAMPING_COEFFICIENT,
@@ -335,6 +341,7 @@ class ContactProperty(InteractionProperty):
         )
         return self.damping
 
+    @abaqus_method_doc
     def Damage(
         self,
         initTable: tuple,
@@ -447,6 +454,7 @@ class ContactProperty(InteractionProperty):
         )
         return self.damage
 
+    @abaqus_method_doc
     def FractureCriterion(
         self,
         initTable: tuple,
@@ -511,6 +519,7 @@ class ContactProperty(InteractionProperty):
         )
         return self.fractureCriterion
 
+    @abaqus_method_doc
     def CohesiveBehavior(
         self,
         repeatedContacts: Boolean = OFF,
@@ -572,6 +581,7 @@ class ContactProperty(InteractionProperty):
         )
         return self.cohesiveBehavior
 
+    @abaqus_method_doc
     def ThermalConductance(
         self,
         definition: SymbolicConstant = TABULAR,
@@ -649,6 +659,7 @@ class ContactProperty(InteractionProperty):
         )
         return self.thermalConductance
 
+    @abaqus_method_doc
     def HeatGeneration(
         self, conversionFraction: float = 1, secondaryFraction: float = 0
     ):
@@ -678,6 +689,7 @@ class ContactProperty(InteractionProperty):
         self.heatGeneration = GapHeatGeneration(conversionFraction, secondaryFraction)
         return self.heatGeneration
 
+    @abaqus_method_doc
     def Radiation(
         self, mainEmissivity: float, secondaryEmissivity: float, table: tuple
     ):
@@ -708,6 +720,7 @@ class ContactProperty(InteractionProperty):
         self.radiation = Radiation(mainEmissivity, secondaryEmissivity, table)
         return self.radiation
 
+    @abaqus_method_doc
     def GeometricProperties(
         self,
         contactArea: float = 1,
@@ -772,6 +785,7 @@ class ContactProperty(InteractionProperty):
         )
         return self.geometricProperties
 
+    @abaqus_method_doc
     def ElectricalConductance(
         self,
         definition: SymbolicConstant = TABULAR,

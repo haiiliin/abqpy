@@ -2,8 +2,10 @@ import typing
 
 from .IgnoredEdge import IgnoredEdge
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class IgnoredEdgeArray(typing.List[IgnoredEdge]):
     """The IgnoredEdgeArray is a sequence of IgnoredEdge objects. If the part is modified, then
     IgnoredEdgeArray must be updated for that part.
@@ -20,6 +22,7 @@ class IgnoredEdgeArray(typing.List[IgnoredEdge]):
             mdb.models[name].rootAssembly.instances[name].ignoredEdges
     """
 
+    @abaqus_method_doc
     def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[IgnoredEdge, typing.List[IgnoredEdge]]:
         """This method returns the object or objects in the IgnoredEdgeArray located at the given
         coordinates.
@@ -60,6 +63,7 @@ class IgnoredEdgeArray(typing.List[IgnoredEdge]):
         """
         return IgnoredEdge()
 
+    @abaqus_method_doc
     def getSequenceFromMask(self, mask: str):
         """This method returns the object or objects in the IgnoredEdgeArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
@@ -79,6 +83,7 @@ class IgnoredEdgeArray(typing.List[IgnoredEdge]):
         """
         ...
 
+    @abaqus_method_doc
     def getMask(self):
         """This method returns a string specifying the object or objects.
 
@@ -90,6 +95,7 @@ class IgnoredEdgeArray(typing.List[IgnoredEdge]):
         """
         ...
 
+    @abaqus_method_doc
     def getClosest(self, coordinates: tuple, searchTolerance: str = ""):
         """This method returns a object or objects in the IgnoredEdgeArray closest to the given set
         of points, where the given points need not lie on the edges in the IgnoredEdgeArray.

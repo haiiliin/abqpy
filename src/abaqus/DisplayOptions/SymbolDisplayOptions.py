@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SymbolDisplayOptions:
     """The SymbolDisplayOptions object stores settings that specify how the assembly is
     displayed in a particular viewport. The SymbolDisplayOptions object has no constructor.
@@ -15,6 +17,7 @@ class SymbolDisplayOptions:
             session.viewports[name].layers[name].assemblyDisplay.symbolOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         otherSymbolSize: int = 12,

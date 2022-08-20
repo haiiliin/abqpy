@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BeadPlanarSymmetry(GeometricRestriction):
     """The BeadPlanarSymmetry object defines a bead planar symmetry geometric restriction.
     The BeadPlanarSymmetry object is derived from the GeometricRestriction object.
@@ -31,6 +33,7 @@ class BeadPlanarSymmetry(GeometricRestriction):
     #: default value is None.
     csys: int = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -68,6 +71,7 @@ class BeadPlanarSymmetry(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, axis: SymbolicConstant = AXIS_1, csys: int = None):
         """This method modifies the BeadPlanarSymmetry object.
 

@@ -1,8 +1,10 @@
 from .Interaction import Interaction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CyclicSymmetry(Interaction):
     """The CyclicSymmetry object defines a cyclic symmetry analysis.
     The CyclicSymmetry object is derived from the Interaction object.
@@ -86,6 +88,7 @@ class CyclicSymmetry(Interaction):
     #: COMPUTED_TOLERANCE.
     positionToleranceMethod: SymbolicConstant = COMPUTED_TOLERANCE
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -170,12 +173,14 @@ class CyclicSymmetry(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def swapSurfaces(self):
         """This method switches the main and secondary surfaces of a cyclic symmetry interaction.
         This command is valid only during the step in which the interaction is created.
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         extractedNodalDiameter: SymbolicConstant = ALL_NODAL_DIAMETER,
@@ -222,6 +227,7 @@ class CyclicSymmetry(Interaction):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

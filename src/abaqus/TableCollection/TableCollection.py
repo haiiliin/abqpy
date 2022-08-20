@@ -3,8 +3,10 @@ import typing
 from ..TableCollection.DataTable import DataTable
 from ..TableCollection.ParameterTable import ParameterTable
 from ..TableCollection.PropertyTable import PropertyTable
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TableCollection:
     """A TableCollection is an object used to define the containers that encapsulate the
     ParameterTable and PropertyTable objects.
@@ -30,6 +32,7 @@ class TableCollection:
     #: sequence of the DataTable object
     dataTables: typing.List[DataTable] = []
 
+    @abaqus_method_doc
     def __init__(self, name: str):
         """This method creates a TableCollection object and places it in the tableCollections
         repository.
@@ -53,6 +56,7 @@ class TableCollection:
         """
         ...
 
+    @abaqus_method_doc
     def DataTable(self, label: str) -> DataTable:
         """This method creates a DataTable object and places it in the dataTables array.
 
@@ -81,6 +85,7 @@ class TableCollection:
         self.dataTables.append(dataTable)
         return dataTable
 
+    @abaqus_method_doc
     def ParameterTable(self, name: str) -> ParameterTable:
         """This method creates a ParameterTable object and places it in the parameterTables
         repository.
@@ -105,6 +110,7 @@ class TableCollection:
         self.parameterTables[name] = parameterTable = ParameterTable(name)
         return parameterTable
 
+    @abaqus_method_doc
     def PropertyTable(
         self, name: str, properties: str, variables: str = ""
     ) -> PropertyTable:

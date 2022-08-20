@@ -8,10 +8,13 @@ from .TextStyle import TextStyle
 from .XYData import XYData
 from .XYPlotBase import XYPlotBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class XYPlot(XYPlotBase):
     
+    @abaqus_method_doc
     @staticmethod
     def AreaStyle(
         color: str = "", fill: Boolean = ON, style: SymbolicConstant = SOLID
@@ -50,6 +53,7 @@ class XYPlot(XYPlotBase):
         areaStyle = AreaStyle(color, fill, style)
         return areaStyle
 
+    @abaqus_method_doc
     @staticmethod
     def LineStyle(
         color: str = "",
@@ -95,6 +99,7 @@ class XYPlot(XYPlotBase):
         lineStyle = LineStyle(color, show, style, thickness)
         return lineStyle
 
+    @abaqus_method_doc
     @staticmethod
     def QuantityType(label: str = "", type: SymbolicConstant = None) -> QuantityType:
         """This method creates a QuantityType object.
@@ -197,6 +202,7 @@ class XYPlot(XYPlotBase):
         quantityType = QuantityType(label, type)
         return quantityType
 
+    @abaqus_method_doc
     @staticmethod
     def SymbolStyle(
         color: str = "",
@@ -255,6 +261,7 @@ class XYPlot(XYPlotBase):
         symbolStyle = SymbolStyle(color, show, marker, size)
         return symbolStyle
 
+    @abaqus_method_doc
     @staticmethod
     def TextStyle(
         color: str = "", show: Boolean = ON, font: str = "", rotationAngle: float = 0
@@ -298,6 +305,7 @@ class XYPlot(XYPlotBase):
 
     @staticmethod
     @typing.overload
+    @abaqus_method_doc
     def XYData(
         data: tuple,
         name: str = "",
@@ -363,6 +371,7 @@ class XYPlot(XYPlotBase):
 
     @staticmethod
     @typing.overload
+    @abaqus_method_doc
     def XYData(objectToCopy: XYData) -> XYData:
         """This method creates an XYData object by copying an existing XYData object.
 

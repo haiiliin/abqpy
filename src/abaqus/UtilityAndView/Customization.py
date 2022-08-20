@@ -2,12 +2,15 @@
 file. 
 
 """
+from .._decorators import abaqus_function_doc
 
 
+@abaqus_function_doc
 def journalMethodCall(objectPath: str, methodName: str, args: tuple, kargs: str):
     """This function may be used by a user-defined command to record itself in the Abaqus
     journal file.
     For example
+    @abaqus_method_doc
     def setValues( self, **kargs ):
             for arg,value in kargs.items():
                 setattr(arg, value)

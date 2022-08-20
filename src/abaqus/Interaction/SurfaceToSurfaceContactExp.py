@@ -4,8 +4,10 @@ from .Interaction import Interaction
 from ..Datum.DatumAxis import DatumAxis
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SurfaceToSurfaceContactExp(Interaction):
     """The SurfaceToSurfaceContactExp object defines surface-to-surface contact during an
     Abaqus/Explicit analysis.
@@ -89,6 +91,7 @@ class SurfaceToSurfaceContactExp(Interaction):
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
     clearanceRegion: Region = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -180,12 +183,14 @@ class SurfaceToSurfaceContactExp(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def swapSurfaces(self):
         """This method switches the main and secondary surfaces of a surface-to-surface contact
         pair. This command is valid only during the step in which the interaction is created.
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         mechanicalConstraint: SymbolicConstant = KINEMATIC,
@@ -245,6 +250,7 @@ class SurfaceToSurfaceContactExp(Interaction):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self, stepName: str, interactionProperty: str = "", contactControls: str = ""
     ):

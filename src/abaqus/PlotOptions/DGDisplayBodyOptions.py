@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class DGDisplayBodyOptions:
     """The DGDisplayBodyOptions object stores values and attributes applied to display bodies.
     The DGDisplayBodyOptions object has no constructor command. Abaqus creates an

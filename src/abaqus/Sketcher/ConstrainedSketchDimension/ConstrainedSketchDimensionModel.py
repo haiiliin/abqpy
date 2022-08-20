@@ -6,8 +6,10 @@ from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
 )
 from ..ConstrainedSketchVertex.ConstrainedSketchVertex import ConstrainedSketchVertex
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
     """A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object contains the entities that are used to create a sketch. The
     objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
@@ -23,6 +25,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
             mdb.models[name].sketches[name]
     """
 
+    @abaqus_method_doc
     def AngularDimension(
         self,
         line1: ConstrainedSketchGeometry,
@@ -62,6 +65,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def HorizontalDimension(
         self,
         vertex1: ConstrainedSketchVertex,
@@ -102,6 +106,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def ObliqueDimension(
         self,
         vertex1: ConstrainedSketchVertex,
@@ -141,6 +146,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def RadialDimension(
         self,
         curve: ConstrainedSketchGeometry,
@@ -186,6 +192,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def VerticalDimension(
         self,
         vertex1: ConstrainedSketchVertex,
@@ -225,6 +232,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def DistanceDimension(
         self,
         entity1: ConstrainedSketchVertex,

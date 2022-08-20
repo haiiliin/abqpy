@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class Message:
     """The Message object contains information about a given phase of the simulation. Job
     messages are not returned if a script is run without the Abaqus/CAE GUI (using the noGUI

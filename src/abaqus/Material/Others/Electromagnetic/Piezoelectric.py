@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Piezoelectric:
     r"""The Piezoelectric object specifies piezoelectric material properties.
 
@@ -69,6 +71,7 @@ class Piezoelectric:
         - PIEZOELECTRIC
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -105,6 +108,7 @@ class Piezoelectric:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Piezoelectric object."""
         ...

@@ -2,12 +2,14 @@ import typing
 
 from .XYData import XYData
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_function_doc
 
 """This method writes an XYData object to a user-defined ASCII file. 
 
 """
 
 
+@abaqus_function_doc
 def writeXYReport(fileName: str, xyData: typing.Tuple[XYData, ...], appendMode: Boolean = ON):
     """This method writes an XYData object to a user-defined ASCII file.
 

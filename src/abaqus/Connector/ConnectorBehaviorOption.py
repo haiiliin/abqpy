@@ -2,6 +2,7 @@ from .ConnectorOptions import ConnectorOptions
 from .ConnectorPotentialArray import ConnectorPotentialArray
 from .TangentialBehavior import TangentialBehavior
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 # Prevent circular import
@@ -9,6 +10,7 @@ class DerivedComponent:
     ...
 
 
+@abaqus_class_doc
 class ConnectorBehaviorOption:
     """The ConnectorBehaviorOption object is the abstract base type for other
     ConnectorBehaviorOption objects. The ConnectorBehaviorOption object has no explicit
@@ -54,6 +56,7 @@ class ConnectorBehaviorOption:
     #: A :py:class:`~abaqus.Connector.TangentialBehavior.TangentialBehavior` object
     tangentialBehavior: TangentialBehavior = TangentialBehavior()
 
+    @abaqus_method_doc
     def TangentialBehavior(
         self,
         formulation: SymbolicConstant = PENALTY,
@@ -133,6 +136,7 @@ class ConnectorBehaviorOption:
         )
         return tangentialBehavior
 
+    @abaqus_method_doc
     def DerivedComponent(self) -> DerivedComponent:
         """This method creates a DerivedComponent object.
 
@@ -156,6 +160,7 @@ class ConnectorBehaviorOption:
         self.derivedComponent = derivedComponent = DerivedComponent()
         return derivedComponent
 
+    @abaqus_method_doc
     def ConnectorOptions(
         self,
         useBehRegSettings: Boolean = ON,

@@ -1,7 +1,9 @@
 from ...TestData.UniaxialTestData import UniaxialTestData
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LowDensityFoam:
     """The LowDensityFoam object specifies properties for low-density foam.
 
@@ -26,6 +28,7 @@ class LowDensityFoam:
     #: A :py:class:`~abaqus.Material.TestData.UniaxialTestData.UniaxialTestData` object.
     uniaxialCompressionTestData: UniaxialTestData = UniaxialTestData(((),))
 
+    @abaqus_method_doc
     def __init__(
         self,
         elementRemoval: Boolean = OFF,
@@ -79,6 +82,7 @@ class LowDensityFoam:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the LowDensityFoam object.
 

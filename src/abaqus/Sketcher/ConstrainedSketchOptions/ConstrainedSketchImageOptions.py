@@ -1,8 +1,10 @@
 import typing
 
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConstrainedSketchImageOptions:
     """The ConstrainedSketchImageOptions object is used to store values and attributes
     associated with the background image for a particular sketch. The
@@ -17,6 +19,7 @@ class ConstrainedSketchImageOptions:
             mdb.models[name].sketches[name].imageOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         imageName: str = "",

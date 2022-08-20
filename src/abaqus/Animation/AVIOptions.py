@@ -1,7 +1,9 @@
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AVIOptions(_OptionsBase):
     """The AVIOptions object is used to store values and attributes to be used in generating
     AVI animation. The AVIOptions object has no constructor. Abaqus creates the **aviOptions**
@@ -45,6 +47,7 @@ class AVIOptions(_OptionsBase):
     #: screen size.
     imageSize: int = None
 
+    @abaqus_method_doc
     def setValues(
         self,
         compressionMethod: SymbolicConstant = RLE8,

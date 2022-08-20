@@ -1,7 +1,9 @@
 from .Annotation import Annotation
 from ..Canvas.ViewportBase import ViewportBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AnnotationViewport(ViewportBase):
     """The following commands operate on Viewport objects. For more information about the
     Viewport object, see Viewport object.
@@ -14,6 +16,7 @@ class AnnotationViewport(ViewportBase):
             import annotationToolset
     """
 
+    @abaqus_method_doc
     def plotAnnotation(self, annotation: Annotation, index: int = 0):
         """This method plots an Annotation object in aViewport.
 

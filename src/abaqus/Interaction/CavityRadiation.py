@@ -2,8 +2,10 @@ from .Interaction import Interaction
 from ..BasicGeometry.ModelDot import ModelDot
 from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CavityRadiation(Interaction):
     """The CavityRadiation object defines cavities for thermal radiation heat transfer and
     controls the calculation of viewfactors.
@@ -144,6 +146,7 @@ class CavityRadiation(Interaction):
     #: **periodicSymmetries** = 3. The default value is an empty sequence.
     periodicDistance_3: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -356,6 +359,7 @@ class CavityRadiation(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         surfaceEmissivities: tuple = (),
@@ -546,6 +550,7 @@ class CavityRadiation(Interaction):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

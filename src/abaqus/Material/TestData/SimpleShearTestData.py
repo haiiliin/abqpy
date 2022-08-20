@@ -1,3 +1,6 @@
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class SimpleShearTestData:
     r"""The SimpleShearTestData object provides simple shear test data.
 
@@ -22,6 +25,7 @@ class SimpleShearTestData:
         - SIMPLE SHEAR TEST DATA
     """
 
+    @abaqus_method_doc
     def __init__(self, table: tuple):
         """This method creates a SimpleShearTestData object.
 
@@ -45,6 +49,7 @@ class SimpleShearTestData:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the SimpleShearTestData object."""
         ...

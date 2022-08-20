@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ParameterColumn:
     """The ParameterColumn object is used to define the type of parameters that will
     collectively build the type of parameter table. Once the object is created, it is
@@ -36,6 +38,7 @@ class ParameterColumn:
     #: A Set of allowed values for the parameter.
     allowedValues: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         type: SymbolicConstant,

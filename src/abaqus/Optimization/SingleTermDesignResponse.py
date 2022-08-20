@@ -1,8 +1,10 @@
 from .DesignResponse import DesignResponse
 from .StepOptionArray import StepOptionArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SingleTermDesignResponse(DesignResponse):
     """The SingleTermDesignResponse object defines a single-term design response.
     The SingleTermDesignResponse object is derived from the DesignResponse object.
@@ -50,6 +52,7 @@ class SingleTermDesignResponse(DesignResponse):
     #: A :py:class:`~abaqus.Optimization.StepOptionArray.StepOptionArray` object.
     stepOptions: StepOptionArray = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -106,6 +109,7 @@ class SingleTermDesignResponse(DesignResponse):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         csys: int = None,

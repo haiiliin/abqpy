@@ -1,3 +1,7 @@
+from .._decorators import abaqus_class_doc
+
+
+@abaqus_class_doc
 class SectorDefinition:
     """The SectorDefinition object describes the number of symmetry sectors and axis of
     symmetry for a cyclic symmetry model.

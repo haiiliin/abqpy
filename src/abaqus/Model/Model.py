@@ -16,8 +16,10 @@ from ..Section.SectionModel import SectionModel
 from ..Sketcher.SketchModel import SketchModel
 from ..Step.StepModel import StepModel
 from ..StepOutput.OutputModel import OutputModel
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class Model(
     AdaptivityModel,
     AmplitudeModel,

@@ -1,7 +1,9 @@
 from ..Step.StepBase import StepBase
 from ..TableCollection.ActivateElements import ActivateElements
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TableCollectionStep(StepBase):
     """The Step object stores the parameters that determine the context of the step. The Step
     object is the abstract base type for other Step objects. The Step object has no explicit
@@ -17,6 +19,7 @@ class TableCollectionStep(StepBase):
             mdb.models[name].steps[name]
     """
 
+    @abaqus_method_doc
     def ActivateElements(
         self,
         tableCollection: str,

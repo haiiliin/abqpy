@@ -1,8 +1,10 @@
 from .AnalyticalField import AnalyticalField
 from .OdbMeshRegionData import OdbMeshRegionData
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MappedField(AnalyticalField):
     """The MappedField object defines a spatially varying field whose value is calculated from
     an external source data.
@@ -104,6 +106,7 @@ class MappedField(AnalyticalField):
     #: A String specifying the description of the field. The default value is an empty string.
     description: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -214,6 +217,7 @@ class MappedField(AnalyticalField):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         regionType: SymbolicConstant = POINT,

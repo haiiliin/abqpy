@@ -1,8 +1,10 @@
 from .FailStrain import FailStrain
 from .FailStress import FailStress
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Elastic:
     r"""The Elastic object specifies elastic material properties.
 
@@ -144,6 +146,7 @@ class Elastic:
     #: A :py:class:`~abaqus.Material.Elastic.Linear.FailStrain.FailStrain` object.
     failStrain: FailStrain = FailStrain(((),))
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -206,6 +209,7 @@ class Elastic:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Elastic object.
 

@@ -1,7 +1,9 @@
 from .NumberFormat import NumberFormat
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class JournalOptions:
     """A :py:class:`~abaqus.Session.JournalOptions.JournalOptions` object specifies how to record selection of geometry in the journal and
     replay files. **journalOptions** can also be used to set the numeric formatting options
@@ -20,6 +22,7 @@ class JournalOptions:
     #: Format of the number
     numberFormat: NumberFormat = NumberFormat()
 
+    @abaqus_method_doc
     def setValues(
         self,
         replayGeometry: SymbolicConstant = COMPRESSEDINDEX,
@@ -52,6 +55,7 @@ class JournalOptions:
         """
         ...
 
+    @abaqus_method_doc
     def NumberFormat(
         self,
         blankPad: Boolean = ON,

@@ -3,8 +3,10 @@ import typing
 from .AreaStyle import AreaStyle
 from .LineStyle import LineStyle
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Area:
     """The Area object is used to display a rectangular area in an XYPlot. The Area object has
     no constructor. Area objects are automatically created whenever a XYPlot, Chart,
@@ -98,6 +100,7 @@ class Area:
     #: The default value is (-1, 0). The valid range for each float is (0, 1).
     originOffset: typing.Tuple[float, ...] = ()
 
+    @abaqus_method_doc
     def setValues(
         self,
         area: "Area",

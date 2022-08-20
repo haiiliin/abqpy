@@ -2,8 +2,10 @@ from .Field import Field
 from .OdbMeshRegionData import OdbMeshRegionData
 from ..Datum.DatumCsys import DatumCsys
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AnalyticalField(Field):
     """The AnalyticalField object is the abstract base type for other AnalyticalField objects.
     The AnalyticalField object has no explicit constructor. The methods and members of the
@@ -33,6 +35,7 @@ class AnalyticalField(Field):
     #: An :py:class:`~abaqus.Field.OdbMeshRegionData.OdbMeshRegionData` object.
     odbMeshRegionData: OdbMeshRegionData = OdbMeshRegionData("", "")
 
+    @abaqus_method_doc
     def OdbMeshRegionData(
         self,
         odbFileName: str,

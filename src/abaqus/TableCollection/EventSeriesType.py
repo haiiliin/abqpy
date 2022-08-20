@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class EventSeriesType:
     """The EventSeriesType object is used to define a type of event in a process.
 
@@ -23,6 +26,7 @@ class EventSeriesType:
     #: A String array specifying fields. The default value is an empty array.
     fields: str = ""
 
+    @abaqus_method_doc
     def __init__(self, name: str, createStepName: str, fields: str = ""):
         """This method creates an EventSeriesType object.
 
@@ -53,6 +57,7 @@ class EventSeriesType:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, fields: str = ""):
         """This method modifies the EventSeriesType object.
 

@@ -1,9 +1,12 @@
 import typing
 
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Line(ConstrainedSketchGeometry):
+    @abaqus_method_doc
     def __init__(self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...]):
         """This method creates a line between two given points.
 

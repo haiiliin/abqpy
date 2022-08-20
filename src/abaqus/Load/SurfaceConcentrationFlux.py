@@ -1,8 +1,10 @@
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SurfaceConcentrationFlux(Load):
     """The SurfaceConcentrationFlux object defines surface concentration flux from a region or
     into a region.
@@ -33,6 +35,7 @@ class SurfaceConcentrationFlux(Load):
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -83,6 +86,7 @@ class SurfaceConcentrationFlux(Load):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         field: str = "",
@@ -109,6 +113,7 @@ class SurfaceConcentrationFlux(Load):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self, stepName: str, magnitude: float = None, amplitude: str = ""
     ):

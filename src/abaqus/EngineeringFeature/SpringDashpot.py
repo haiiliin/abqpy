@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SpringDashpot:
     """The SpringDashpot object is the abstract base type for the SpringDashpotToGround and
     TwoPointSpringDashpot objects.
@@ -23,10 +25,12 @@ class SpringDashpot:
     #: is OFF.
     suppressed: Boolean = OFF
 
+    @abaqus_method_doc
     def resume(self):
         """This method resumes the spring/dashpot that was previously suppressed."""
         ...
 
+    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the spring/dashpot."""
         ...

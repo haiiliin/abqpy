@@ -1,6 +1,8 @@
 from .Section import Section
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AcousticInfiniteSection(Section):
     """The AcousticInfiniteSection object defines the properties of an acoustic section.
     The AcousticInfiniteSection object is derived from the Section object.
@@ -35,6 +37,7 @@ class AcousticInfiniteSection(Section):
     #: **order** ≤≤ 10. The default value is 10.
     order: int = 10
 
+    @abaqus_method_doc
     def __init__(self, name: str, material: str, thickness: float = 1, order: int = 10):
         """This method creates an AcousticInfiniteSection object.
 
@@ -72,6 +75,7 @@ class AcousticInfiniteSection(Section):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, thickness: float = 1, order: int = 10):
         """This method modifies the AcousticInfiniteSection object.
 

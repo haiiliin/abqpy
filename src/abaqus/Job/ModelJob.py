@@ -1,8 +1,10 @@
 from .Job import Job
 from .MessageArray import MessageArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ModelJob(Job):
     """The ModelJob object defines a Job object which analyzes a model on a model database
     (MDB).
@@ -140,6 +142,7 @@ class ModelJob(Job):
     #: A tuple of Strings specifying the environment variables and their values.
     environment: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -272,6 +275,7 @@ class ModelJob(Job):
         """
         ...
 
+    @abaqus_method_doc
     def writeInput(self, consistencyChecking: Boolean = ON):
         """This method writes an input file.
 
@@ -284,6 +288,7 @@ class ModelJob(Job):
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ModelJob object."""
         ...

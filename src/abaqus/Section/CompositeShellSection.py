@@ -3,8 +3,10 @@ from .RebarLayers import RebarLayers
 from .SectionLayerArray import SectionLayerArray
 from .TransverseShearShell import TransverseShearShell
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CompositeShellSection(GeometryShellSection):
     """The CompositeShellSection object defines the properties of a composite shell section.
     The CompositeShellSection object is derived from the GeometryShellSection object.
@@ -111,6 +113,7 @@ class CompositeShellSection(GeometryShellSection):
     #: **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string.
     nodalThicknessField: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -214,6 +217,7 @@ class CompositeShellSection(GeometryShellSection):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         symmetric: Boolean = OFF,

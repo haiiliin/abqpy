@@ -1,8 +1,10 @@
 from .StructuralDampingByFrequencyComponentArray import (
     StructuralDampingByFrequencyComponentArray,
 )
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class StructuralDampingByFrequency:
     """A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency` object contains structural damping parameters.
 

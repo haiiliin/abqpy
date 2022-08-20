@@ -1,8 +1,10 @@
 from .PredefinedField import PredefinedField
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Velocity(PredefinedField):
     """The Velocity object stores the data for an initial velocity predefined field.
     The Velocity object is derived from the PredefinedField object.
@@ -55,6 +57,7 @@ class Velocity(PredefinedField):
     #: and FIELD_ANALYTICAL. The default value is MAGNITUDE.
     distributionType: SymbolicConstant = MAGNITUDE
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -112,6 +115,7 @@ class Velocity(PredefinedField):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self, field: str = "", distributionType: SymbolicConstant = MAGNITUDE
     ):

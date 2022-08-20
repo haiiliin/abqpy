@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class OdbDataDatumCsys:
     """The OdbDataDatumCsys object stores coordinate system data.
 

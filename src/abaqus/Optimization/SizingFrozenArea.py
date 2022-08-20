@@ -1,7 +1,9 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SizingFrozenArea(GeometricRestriction):
     """The SizingFrozenArea object defines a sizing frozen area geometric restriction.
     The SizingFrozenArea object is derived from the GeometricRestriction object.
@@ -21,6 +23,7 @@ class SizingFrozenArea(GeometricRestriction):
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
     region: Region
 
+    @abaqus_method_doc
     def __init__(self, name: str, region: Region):
         """This method creates a SizingFrozenArea object.
 
@@ -45,6 +48,7 @@ class SizingFrozenArea(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the SizingFrozenArea object."""
         ...

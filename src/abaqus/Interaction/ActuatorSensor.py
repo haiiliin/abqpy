@@ -1,8 +1,10 @@
 from .Interaction import Interaction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ActuatorSensor(Interaction):
     """The ActuatorSensor object defines a single point actuator where the actuation is
     determined by a user subroutine (UEL). The subroutine senses the data at the same point
@@ -57,6 +59,7 @@ class ActuatorSensor(Interaction):
     #: A sequence of Floats specifying the initial values of the solution-dependent variables.
     solutionDepVars: tuple
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -112,6 +115,7 @@ class ActuatorSensor(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ActuatorSensor object."""
         ...

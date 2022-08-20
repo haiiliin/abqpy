@@ -3,8 +3,10 @@ import typing
 from .FieldOutput import FieldOutput
 from .OdbLoadCase import OdbLoadCase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbFrame:
     """The domain of the OdbFrame object is taken from the parent step.
 
@@ -57,6 +59,7 @@ class OdbFrame:
     description: str = ""
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(self, incrementNumber: int, frameValue: float, description: str = ""):
         """This method creates an OdbFrame object and appends it to the frame sequence.
 
@@ -88,6 +91,7 @@ class OdbFrame:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(self, mode: int, frequency: float, description: str = ""):
         """This constructor creates an OdbFrame object in the frequency domain and appends it to
         the frame sequence. The arguments to the constructor are valid only when
@@ -118,6 +122,7 @@ class OdbFrame:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(
         self, loadCase: OdbLoadCase, description: str = "", frequency: float = 0
     ):
@@ -148,6 +153,7 @@ class OdbFrame:
         """
         ...
 
+    @abaqus_method_doc
     def Frame(self, *args, **kwargs):
         ...
 
@@ -207,6 +213,7 @@ class OdbFrame:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def FieldOutput(self, field: "FieldOutput", name: str = "", description: str = ""):
         """This method creates a FieldOutput object from an existing FieldOutput object of the same
         output database.

@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class GraphicsOptions:
     """The GraphicsOptions object stores settings that control how objects are rendered in all
     viewports. GraphicsOptions objects are accessed in one of two ways:
@@ -258,6 +260,7 @@ class GraphicsOptions:
     #: valid color strings is in the **colors** map in the Session object.
     backgroundBottomColor: str = ""
 
+    @abaqus_method_doc
     def setValues(
         self,
         graphicsDriver: SymbolicConstant = None,

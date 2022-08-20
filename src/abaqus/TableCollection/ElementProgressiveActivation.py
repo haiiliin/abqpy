@@ -1,7 +1,9 @@
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ElementProgressiveActivation:
     """The ElementProgressiveActivation object is used to specify elements that can be
     activated during an analysis.
@@ -37,6 +39,7 @@ class ElementProgressiveActivation:
     #: exposed areas of the element facets are considered. The default value is NONE.
     freeSurfaceType: SymbolicConstant = NONE
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -84,6 +87,7 @@ class ElementProgressiveActivation:
         """
         ...
 
+    @abaqus_method_doc
     def setValue(self):
         """The method modifies the ElementProgressiveActivation object.
 

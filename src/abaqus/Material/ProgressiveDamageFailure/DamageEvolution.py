@@ -1,6 +1,8 @@
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DamageEvolution:
     """The DamageEvolution object specifies material properties to define the evolution of
     damage.
@@ -152,6 +154,7 @@ class DamageEvolution:
         - DAMAGE EVOLUTION
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         type: SymbolicConstant,
@@ -233,6 +236,7 @@ class DamageEvolution:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DamageEvolution object.
 

@@ -12,9 +12,12 @@ from .DerivedComponent import DerivedComponent
 from .TangentialBehavior import TangentialBehavior
 from ..Section.SectionBase import SectionBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConnectorSection(SectionBase):
+    @abaqus_method_doc
     def ConnectorDamage(
         self,
         coupling: SymbolicConstant = UNCOUPLED,
@@ -150,6 +153,7 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions.append(option)
         return option
 
+    @abaqus_method_doc
     def ConnectorDamping(
         self,
         type: SymbolicConstant = VISCOUS,
@@ -224,6 +228,7 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions.append(option)
         return option
 
+    @abaqus_method_doc
     def ConnectorElasticity(
         self,
         behavior: SymbolicConstant = LINEAR,
@@ -298,6 +303,7 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions.append(option)
         return option
 
+    @abaqus_method_doc
     def ConnectorFailure(
         self,
         releaseComponent: SymbolicConstant = ALL,
@@ -357,6 +363,7 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions.append(option)
         return option
 
+    @abaqus_method_doc
     def ConnectorFriction(
         self,
         frictionModel: SymbolicConstant = PREDEFINED,
@@ -492,6 +499,7 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions.append(option)
         return option
 
+    @abaqus_method_doc
     def ConnectorLock(
         self,
         lockingComponent: SymbolicConstant = ALL,
@@ -552,6 +560,7 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions.append(option)
         return option
 
+    @abaqus_method_doc
     def ConnectorPlasticity(
         self,
         coupling: SymbolicConstant = UNCOUPLED,
@@ -652,6 +661,7 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions.append(option)
         return option
 
+    @abaqus_method_doc
     def ConnectorPotential(
         self,
         componentStyle: SymbolicConstant = COMPONENT_NUMBER,
@@ -714,6 +724,7 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions[componentNumber].connectorPotentials = option = ConnectorPotential()
         return option
 
+    @abaqus_method_doc
     def ConnectorStop(
         self, minMotion: float = None, maxMotion: float = None, components: tuple = ()
     ):
@@ -755,6 +766,7 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions.append(option)
         return option
 
+    @abaqus_method_doc
     def DerivedComponent(self):
         """This method creates a DerivedComponent object.
 
@@ -785,6 +797,7 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions.append(option)
         return option
 
+    @abaqus_method_doc
     def TangentialBehavior(
         self,
         formulation: SymbolicConstant = PENALTY,

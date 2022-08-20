@@ -1,7 +1,9 @@
 from .Amplitude import Amplitude
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SmoothStepAmplitude(Amplitude):
     """The SmoothStepAmplitude object defines an amplitude that ramps up or down smoothly from
     one data point to another.
@@ -33,6 +35,7 @@ class SmoothStepAmplitude(Amplitude):
     #: and TOTAL. The default value is STEP.
     timeSpan: SymbolicConstant = STEP
 
+    @abaqus_method_doc
     def __init__(self, name: str, data: tuple, timeSpan: SymbolicConstant = STEP):
         """This method creates a SmoothStepAmplitude object.
 
@@ -67,6 +70,7 @@ class SmoothStepAmplitude(Amplitude):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, timeSpan: SymbolicConstant = STEP):
         """This method modifies the SmoothStepAmplitude object.
 

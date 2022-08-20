@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Fastener:
     """The Fastener object is the abstract base type for PointFastener, DiscreteFastener, and
     AssembledFastener.
@@ -23,10 +25,12 @@ class Fastener:
     #: OFF.
     suppressed: Boolean = OFF
 
+    @abaqus_method_doc
     def resume(self):
         """This method resumes the fastener that was previously suppressed."""
         ...
 
+    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the fastener."""
         ...
