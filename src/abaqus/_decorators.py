@@ -49,7 +49,7 @@ class AbaqusDoc:
         Parameters
         ----------
         type : 'class' or 'module'
-            Type of the object, class or module.
+            Type of the object, 'class' or 'module'.
         class_or_module_name : str
             The name of the class or module.
         prefix : str
@@ -80,7 +80,7 @@ class AbaqusDoc:
         Parameters
         ----------
         type : 'method' or 'function'
-            Type of the object, class or module.
+            Type of the object, 'method' or 'function'.
         class_or_module_name : str
             The name of the module.
         method_or_function_name : str
@@ -124,7 +124,7 @@ class AbaqusDoc:
         Parameters
         ----------
         type : 'class' or 'module'
-            Type of the object, class or module.
+            Type of the object, 'class' or 'module'.
         class_or_module_name : str
             The name of the class or module.
         docstring : str
@@ -155,8 +155,8 @@ class AbaqusDoc:
 
         Parameters
         ----------
-        type : 'class' or 'module'
-            Type of the object, class or module.
+        type : 'method' or 'function'
+            Type of the object, 'method' or 'function'.
         class_or_module_name : str
             The name of the module.
         method_or_function_name : str
