@@ -1,7 +1,9 @@
 from .Interaction import Interaction
 from ..Region.Region import Region
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ElasticFoundation(Interaction):
     """The ElasticFoundation object defines a mechanical foundation.
     The ElasticFoundation object is derived from the Interaction object.
@@ -32,6 +34,7 @@ class ElasticFoundation(Interaction):
     #: A Float specifying the foundation stiffness per area (or per length for beams).
     stiffness: float
 
+    @abaqus_method_doc
     def __init__(
         self, name: str, createStepName: str, surface: Region, stiffness: float
     ):
@@ -63,12 +66,14 @@ class ElasticFoundation(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the data for an existing ElasticFoundation object in the step where
         it is created.
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(self, stepName: str, stiffness: float = None):
         """This method modifies the propagating data of an existing ElasticFoundation object in the
         specified step.

@@ -1,8 +1,10 @@
 from .Job import Job
 from .MessageArray import MessageArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class JobFromInputFile(Job):
     """The JobFromInputFile object defines a Job object which analyzes a model contained in an
     input file.
@@ -128,6 +130,7 @@ class JobFromInputFile(Job):
     #: available.
     licenseType: SymbolicConstant = DEFAULT
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -247,6 +250,7 @@ class JobFromInputFile(Job):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         type: SymbolicConstant = ANALYSIS,

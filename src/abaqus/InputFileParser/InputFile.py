@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class InputFile:
     """The InputFile object is used to store the definitions in an Abaqus input file. InputFile
     objects can be created using the methods described in this section.
@@ -27,6 +29,7 @@ class InputFile:
     #: not be located.
     missingIncludes: tuple = ()
 
+    @abaqus_method_doc
     def __init__(self, file: str, directory: str = ""):
         """This method creates an InputFile object by reading an Abaqus input file.
 
@@ -51,6 +54,7 @@ class InputFile:
         """
         ...
 
+    @abaqus_method_doc
     def parse(
         self,
         organize: Boolean = False,

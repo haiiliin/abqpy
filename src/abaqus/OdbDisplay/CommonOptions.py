@@ -1,7 +1,9 @@
 from ..PlotOptions.DGCommonOptions import DGCommonOptions
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CommonOptions(DGCommonOptions):
     """The CommonOptions object stores values and attributes that are common to all plot
     states. The CommonOptions object has no constructor command. Abaqus creates a
@@ -192,6 +194,7 @@ class CommonOptions(DGCommonOptions):
     #: coordinate directions when **coordinateScale** = ON. The default value is (1, 1, 1).
     coordinateScaleFactors: float = None
 
+    @abaqus_method_doc
     def setValues(
         self,
         options: "CommonOptions" = None,

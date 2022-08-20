@@ -2,8 +2,10 @@ from .GeometryShellSection import GeometryShellSection
 from .RebarLayers import RebarLayers
 from .TransverseShearShell import TransverseShearShell
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class HomogeneousShellSection(GeometryShellSection):
     """The HomogeneousShellSection object defines the properties of a shell section.
     The HomogeneousShellSection object is derived from the GeometryShellSection object.
@@ -112,6 +114,7 @@ class HomogeneousShellSection(GeometryShellSection):
     #: **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string.
     nodalThicknessField: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -217,6 +220,7 @@ class HomogeneousShellSection(GeometryShellSection):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         thickness: float = 0,

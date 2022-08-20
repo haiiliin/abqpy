@@ -3,8 +3,10 @@ import typing
 from .Movie import Movie
 from ..Session.SessionBase import SessionBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AnimationSession(SessionBase):
     """The following commands operate on Session objects. For more information about the
     Session object, see Session object.
@@ -17,6 +19,7 @@ class AnimationSession(SessionBase):
             import animation
     """
 
+    @abaqus_method_doc
     def writeImageAnimation(
         self, fileName: str, format: SymbolicConstant, canvasObjects: tuple = ()
     ):
@@ -38,6 +41,7 @@ class AnimationSession(SessionBase):
         # TODO: implement this method
         ...
 
+    @abaqus_method_doc
     def Movie(
         self,
         name: str,

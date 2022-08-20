@@ -1,8 +1,10 @@
 from .Interaction import Interaction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class StdXplCosimulation(Interaction):
     """The StdXplCosimulation object defines co-simulation behavior between Abaqus/Standard and
     Abaqus/Explicit.
@@ -43,6 +45,7 @@ class StdXplCosimulation(Interaction):
     #: DEFAULT.
     stepSizeDefinition: SymbolicConstant = DEFAULT
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -91,6 +94,7 @@ class StdXplCosimulation(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         incrementation: SymbolicConstant = ALLOW_SUBCYCLING,

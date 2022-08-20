@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Vertex:
     """Vertices are point regions of geometry.
 
@@ -44,6 +46,7 @@ class Vertex:
     #: applicable).
     instanceName: float = None
 
+    @abaqus_method_doc
     def getEdges(self):
         """This method returns a sequence consisting of the edge ids of the edges which share this
         vertex.
@@ -56,6 +59,7 @@ class Vertex:
         """
         ...
 
+    @abaqus_method_doc
     def getNodes(self):
         """This method returns an array of node objects that are associated with the vertex.
 
@@ -67,6 +71,7 @@ class Vertex:
         """
         ...
 
+    @abaqus_method_doc
     def getElements(self):
         """This method returns an array of element objects that are associated with the vertex.
 

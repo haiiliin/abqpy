@@ -2,8 +2,10 @@ import typing
 
 from ..ConstrainedSketchBase import ConstrainedSketchBase
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
     """A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object contains the entities that are used to create a sketch. The
     objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
@@ -19,6 +21,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
             mdb.models[name].sketches[name]
     """
 
+    @abaqus_method_doc
     def Arc3Points(
         self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...], point3: typing.Tuple[float, ...]
     ):
@@ -48,6 +51,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def ArcByCenterEnds(
         self,
         center: typing.Tuple[float, ...],
@@ -89,6 +93,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def ArcByStartEndTangent(
         self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...], vector: tuple
     ):
@@ -118,6 +123,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def CircleByCenterPerimeter(self, center: typing.Tuple[float, ...], point1: typing.Tuple[float, ...]):
         """This method constructs a circle using a center point and a point on the perimeter. The
         circle is added to the geometry repository of the ConstrainedSketch object.
@@ -143,6 +149,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def ConstructionCircleByCenterPerimeter(
         self, center: typing.Tuple[float, ...], point1: typing.Tuple[float, ...]
     ):
@@ -171,6 +178,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def EllipseByCenterPerimeter(
         self, center: typing.Tuple[float, ...], axisPoint1: typing.Tuple[float, ...], axisPoint2: typing.Tuple[float, ...]
     ):
@@ -201,6 +209,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def FilletByRadius(
         self,
         radius: float,
@@ -248,6 +257,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def Line(self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...]):
         """This method creates a line between two given points.
 
@@ -272,6 +282,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def ConstructionLine(self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...]):
         """This method creates an oblique construction line that runs between two given points.
 
@@ -296,6 +307,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def Spline(self, points: tuple, constrainPoints: Boolean = True):
         """This method creates a spline curve running through a sequence of points.
 
@@ -322,6 +334,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def Spot(self, point: typing.Tuple[float, ...]):
         """This method creates a spot construction point located at the specified coordinates. The
         spot is added to the vertex repository of the ConstrainedSketch object.
@@ -345,6 +358,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def getVertices(self):
         """This method returns an list of ConstrainedSketchVertex objects which are a part of the
         given ConstrainedSketchGeometry object.
@@ -356,6 +370,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def getSize(self):
         """This method returns the length of the given ConstrainedSketchGeometry object.
 
@@ -366,6 +381,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """
         ...
 
+    @abaqus_method_doc
     def getPointAtDistance(
         self, point: typing.Tuple[float, ...], distance: str, percentage: Boolean = OFF
     ):

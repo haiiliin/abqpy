@@ -1,7 +1,9 @@
 from .InteractionState import InteractionState
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class FluidInflatorState(InteractionState):
     """The FluidInflatorState object stores the propagating data for a FluidInflator object.
     One instance of this object is created internally by the FluidInflator object for each

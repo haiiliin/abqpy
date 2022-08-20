@@ -3,9 +3,12 @@ from .ExpInitialization import ExpInitialization
 from .StdContactControl import StdContactControl
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class InteractionContactControlModel(ModelBase):
+    @abaqus_method_doc
     def ExpContactControl(
         self,
         name: str,
@@ -71,6 +74,7 @@ class InteractionContactControlModel(ModelBase):
         )
         return contactControl
 
+    @abaqus_method_doc
     def StdContactControl(
         self,
         name: str,
@@ -217,6 +221,7 @@ class InteractionContactControlModel(ModelBase):
         )
         return contactControl
 
+    @abaqus_method_doc
     def ExpInitialization(
         self,
         name: str,

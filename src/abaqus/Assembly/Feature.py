@@ -4,8 +4,10 @@ from ..BasicGeometry.Face import Face
 from ..Feature.Feature import Feature as FeatureBase
 from ..Mesh.MeshFace import MeshFace
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Feature(FeatureBase):
     """The following commands operate on Feature objects. For more information about the
     Feature object, see Feature object.
@@ -19,6 +21,7 @@ class Feature(FeatureBase):
     """
 
     @staticmethod
+    @abaqus_method_doc
     def AttachmentLines(
         name: str,
         points: int,
@@ -107,6 +110,7 @@ class Feature(FeatureBase):
         return Feature()
 
     @staticmethod
+    @abaqus_method_doc
     def Coaxial(movableAxis: str, fixedAxis: str, flip: Boolean) -> "Feature":
         """This method moves an instance so that its selected face is coaxial with the selected
         face of a fixed instance.
@@ -139,6 +143,7 @@ class Feature(FeatureBase):
         return Feature()
 
     @staticmethod
+    @abaqus_method_doc
     def CoincidentPoint(movablePoint: str, fixedPoint: str) -> "Feature":
         """This method moves an instance so that a specified point is coincident with a specified
         point of a fixed instance.
@@ -167,6 +172,7 @@ class Feature(FeatureBase):
         return Feature()
 
     @staticmethod
+    @abaqus_method_doc
     def EdgeToEdge(
         movableAxis: str, fixedAxis: str, flip: Boolean, clearance: float
     ) -> "Feature":
@@ -207,6 +213,7 @@ class Feature(FeatureBase):
         return Feature()
 
     @staticmethod
+    @abaqus_method_doc
     def FaceToFace(
         movablePlane: str, fixedPlane: str, flip: Boolean, clearance: float
     ) -> "Feature":
@@ -246,6 +253,7 @@ class Feature(FeatureBase):
         return Feature()
 
     @staticmethod
+    @abaqus_method_doc
     def ParallelCsys(movableCsys: str, fixedCsys: str) -> "Feature":
         """This method moves an instance so that its Datum coordinate system is parallel to a Datum
         coordinate system of a fixed instance.
@@ -276,6 +284,7 @@ class Feature(FeatureBase):
         return Feature()
 
     @staticmethod
+    @abaqus_method_doc
     def ParallelEdge(movableAxis: str, fixedAxis: str, flip: Boolean) -> "Feature":
         """This method moves an instance so that its edge is parallel to an edge of a fixed
         instance.
@@ -311,6 +320,7 @@ class Feature(FeatureBase):
         return Feature()
 
     @staticmethod
+    @abaqus_method_doc
     def ParallelFace(movablePlane: str, fixedPlane: str, flip: Boolean) -> "Feature":
         """This method moves an instance so that its face is parallel to a face of a fixed
         instance.

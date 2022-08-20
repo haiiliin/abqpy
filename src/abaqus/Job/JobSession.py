@@ -1,9 +1,12 @@
 from .Queue import Queue
 from ..Session.SessionBase import SessionBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class JobSession(SessionBase):
+    @abaqus_method_doc
     def Queue(
         self,
         name: str,

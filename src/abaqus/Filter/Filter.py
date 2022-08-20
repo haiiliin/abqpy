@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class Filter:
     """The Filter object is the abstract base type for other Filter objects. The Filter object
     has no explicit constructor. The methods and members of the Filter object are common to

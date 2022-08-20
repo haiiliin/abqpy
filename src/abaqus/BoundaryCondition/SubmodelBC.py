@@ -1,8 +1,10 @@
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SubmodelBC(BoundaryCondition):
     """The SubmodelBC object stores the data for a submodel boundary condition.
     The SubmodelBC object is derived from the BoundaryCondition object.
@@ -50,6 +52,7 @@ class SubmodelBC(BoundaryCondition):
     #: in the global coordinate system. The default value is None.
     localCsys: str = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -134,6 +137,7 @@ class SubmodelBC(BoundaryCondition):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         globalDrivingRegion: str = "",
@@ -174,6 +178,7 @@ class SubmodelBC(BoundaryCondition):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class Radiation:
     """The Radiation object specifies radiation for a contact interaction property.
 
@@ -24,6 +27,7 @@ class Radiation:
     #: clearance, dd.
     table: tuple
 
+    @abaqus_method_doc
     def __init__(self, mainEmissivity: float, secondaryEmissivity: float, table: tuple):
         """This method creates a Radiation object.
 
@@ -51,6 +55,7 @@ class Radiation:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Radiation object."""
         ...

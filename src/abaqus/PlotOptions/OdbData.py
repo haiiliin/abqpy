@@ -16,8 +16,10 @@ from .RigidBodyConstraint import RigidBodyConstraint
 from .TieConstraint import TieConstraint
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbData(_OptionsBase):
     """The OdbData object stores non persistent values and attributes associated with an open
     odb for the given session. The OdbData object has no constructor. Abaqus creates the
@@ -110,6 +112,7 @@ class OdbData(_OptionsBase):
     #: An :py:class:`~abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData` object.
     diagnosticData: OdbDiagnosticData = OdbDiagnosticData()
 
+    @abaqus_method_doc
     def setValues(self, activeFrames: SymbolicConstant = None, stepPeriods: tuple = ()):
         """This method modifies the OdbData object.
 

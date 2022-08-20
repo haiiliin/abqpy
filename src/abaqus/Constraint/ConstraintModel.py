@@ -14,8 +14,10 @@ from ..BasicGeometry.ModelDotArray import ModelDotArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConstraintModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
@@ -27,6 +29,7 @@ class ConstraintModel(ModelBase):
             mdb.models[name]
     """
 
+    @abaqus_method_doc
     def AdjustPoints(
         self, name: str, surface: Region, controlPoints: Region
     ) -> AdjustPoints:
@@ -56,6 +59,7 @@ class ConstraintModel(ModelBase):
         self.constraints[name] = constraint = AdjustPoints(name, surface, controlPoints)
         return constraint
 
+    @abaqus_method_doc
     def Coupling(
         self,
         name: str,
@@ -161,6 +165,7 @@ class ConstraintModel(ModelBase):
         )
         return constraint
 
+    @abaqus_method_doc
     def DisplayBody(
         self, name: str, instance: PartInstance, controlPoints: ModelDotArray
     ) -> DisplayBody:
@@ -194,6 +199,7 @@ class ConstraintModel(ModelBase):
         self.constraints[name] = constraint = DisplayBody(name, instance, controlPoints)
         return constraint
 
+    @abaqus_method_doc
     def EmbeddedRegion(
         self,
         name: str,
@@ -257,6 +263,7 @@ class ConstraintModel(ModelBase):
         )
         return constraint
 
+    @abaqus_method_doc
     def Equation(self, name: str, terms: tuple) -> Equation:
         """This method creates an Equation object.
 
@@ -287,6 +294,7 @@ class ConstraintModel(ModelBase):
         self.constraints[name] = constraint = Equation(name, terms)
         return constraint
 
+    @abaqus_method_doc
     def MultipointConstraint(
         self,
         name: str,
@@ -342,6 +350,7 @@ class ConstraintModel(ModelBase):
         )
         return constraint
 
+    @abaqus_method_doc
     def RigidBody(
         self,
         name: str,
@@ -404,6 +413,7 @@ class ConstraintModel(ModelBase):
         )
         return constraint
 
+    @abaqus_method_doc
     def ShellSolidCoupling(
         self,
         name: str,
@@ -462,6 +472,7 @@ class ConstraintModel(ModelBase):
         )
         return constraint
 
+    @abaqus_method_doc
     def Tie(
         self,
         name: str,

@@ -1,7 +1,9 @@
 from .Section import Section
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CohesiveSection(Section):
     """The CohesiveSection object defines the properties of a cohesive section.
     The CohesiveSection object is derived from the Section object.
@@ -47,6 +49,7 @@ class CohesiveSection(Section):
     #: is None.
     outOfPlaneThickness: float = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -100,6 +103,7 @@ class CohesiveSection(Section):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         initialThicknessType: SymbolicConstant = SOLVER_DEFAULT,

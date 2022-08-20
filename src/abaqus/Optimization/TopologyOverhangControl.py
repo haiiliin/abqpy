@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TopologyOverhangControl(GeometricRestriction):
     """The TopologyOverhangControl object defines a topology overhang control geometric
     restriction.
@@ -18,6 +20,7 @@ class TopologyOverhangControl(GeometricRestriction):
 
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -76,6 +79,7 @@ class TopologyOverhangControl(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         csys: int = None,

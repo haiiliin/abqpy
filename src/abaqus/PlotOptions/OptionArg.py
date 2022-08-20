@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OptionArg:
     """The OptionArg object is used to store values and attributes as a temporary object to be
     associated with a viewCutOptions object. The OptionArg object has only a constructor
@@ -63,6 +65,7 @@ class OptionArg:
     #: 0.0 ≤ **translucencyFactor** ≤ 1.0. The default value is 0.3.
     translucencyFactor: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         renderStyle: SymbolicConstant = WIREFRAME,

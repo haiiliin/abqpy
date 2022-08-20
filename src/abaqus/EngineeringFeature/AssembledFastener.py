@@ -1,8 +1,10 @@
 from .Fastener import Fastener
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AssembledFastener(Fastener):
     """The AssembledFastener object defines an assembled fastener.
     The AssembledFastener object is derived from the Fastener object.
@@ -63,6 +65,7 @@ class AssembledFastener(Fastener):
     #: empty string.
     scriptName: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -129,6 +132,7 @@ class AssembledFastener(Fastener):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         orientMethod: SymbolicConstant = NORMALS,

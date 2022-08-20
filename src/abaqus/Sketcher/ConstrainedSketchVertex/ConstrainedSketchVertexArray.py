@@ -2,8 +2,10 @@ import typing
 
 from .ConstrainedSketchVertex import ConstrainedSketchVertex
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConstrainedSketchVertexArray(typing.List[ConstrainedSketchVertex]):
     """The ConstrainedSketchVertexArray is a sequence of ConstrainedSketchVertex objects.
 
@@ -16,6 +18,7 @@ class ConstrainedSketchVertexArray(typing.List[ConstrainedSketchVertex]):
             mdb.models[name].sketches[name].vertices[i]
     """
 
+    @abaqus_method_doc
     def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[ConstrainedSketchVertex, typing.List[ConstrainedSketchVertex]]:
         """This method returns the ConstrainedSketchVertex located at the given coordinates.
 

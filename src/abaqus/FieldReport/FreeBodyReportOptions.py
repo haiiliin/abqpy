@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FreeBodyReportOptions:
     """The FreeBodyReportOptions object stores settings used by the writeFreeBodyReport method
     when you write free body computational results to an ASCII file. The
@@ -17,6 +19,7 @@ class FreeBodyReportOptions:
             session.freeBodyReportOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         numDigits: int = 3,

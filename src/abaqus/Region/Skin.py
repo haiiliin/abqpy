@@ -7,8 +7,10 @@ from ..BasicGeometry.FaceArray import FaceArray
 from ..Mesh.MeshEdge import MeshEdge
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshFace import MeshFace
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Skin:
     """The Skin object stores information on skin reinforcements created on entities.
 
@@ -34,6 +36,7 @@ class Skin:
     #: A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
     faces: FaceArray = FaceArray([])
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -76,6 +79,7 @@ class Skin:
         """
         ...
 
+    @abaqus_method_doc
     def EditSkin(
         self,
         name: str = "",

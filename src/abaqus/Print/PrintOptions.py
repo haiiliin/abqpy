@@ -1,7 +1,9 @@
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PrintOptions(_OptionsBase):
     """The PrintOptions object stores the common settings that Abaqus uses for all print
     methods. The PrintOptions object has no constructor. Abaqus creates the **printOptions**
@@ -43,6 +45,7 @@ class PrintOptions(_OptionsBase):
     #: to reduce file size. The quality of the image will be compromised. The default value is OFF.
     reduceColors: Boolean = OFF
 
+    @abaqus_method_doc
     def setValues(
         self,
         *,

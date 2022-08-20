@@ -1,8 +1,10 @@
 import typing
 
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SurfaceFrictionAssignment:
     """The SurfaceFrictionAssignment object stores the surface friction assignment definition
     for surfaces in ContactExp objects. The SurfaceFrictionAssignment object has no
@@ -22,6 +24,7 @@ class SurfaceFrictionAssignment:
 
     """
 
+    @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: float):
         """This method allows modification of surface friction assignments already defined on
         surfaces in a given step.
@@ -42,6 +45,7 @@ class SurfaceFrictionAssignment:
         """
         ...
 
+    @abaqus_method_doc
     def appendInStep(
         self, stepName: str, assignments: typing.Union[SymbolicConstant, float]
     ):
@@ -63,6 +67,7 @@ class SurfaceFrictionAssignment:
         """
         ...
 
+    @abaqus_method_doc
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing surface friction assignments.
 

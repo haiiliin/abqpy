@@ -14,8 +14,10 @@ from ..Filter.Filter import Filter
 from ..Material.Material import Material
 from ..Section.Section import Section
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbBase:
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
@@ -70,6 +72,7 @@ class OdbBase:
     #: A repository of Profile objects.
     profiles: typing.Dict[str, Profile] = {}
 
+    @abaqus_method_doc
     def __init__(
         self, name: str, analysisTitle: str = "", description: str = "", path: str = ""
     ):
@@ -103,10 +106,12 @@ class OdbBase:
         """
         ...
 
+    @abaqus_method_doc
     def close(self):
         """This method closes an output database."""
         ...
 
+    @abaqus_method_doc
     def getFrame(self, frameValue: str, match: SymbolicConstant = CLOSEST):
         """This method returns the frame at the specified time, frequency, or mode. It will not
         interpolate values between frames. The method is not applicable to an Odb object
@@ -138,6 +143,7 @@ class OdbBase:
         """
         ...
 
+    @abaqus_method_doc
     def save(self):
         """This method saves output to an output database (.odb ) file.
 
@@ -149,6 +155,7 @@ class OdbBase:
         """
         ...
 
+    @abaqus_method_doc
     def update(self):
         """This method is used to update an Odb object in memory while an Abaqus analysis writes
         data to the associated output database. update checks if additional steps have been

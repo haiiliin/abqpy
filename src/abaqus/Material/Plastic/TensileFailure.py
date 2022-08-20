@@ -1,6 +1,8 @@
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TensileFailure:
     """The TensileFailure object specifies the material tensile failure.
 
@@ -29,6 +31,7 @@ class TensileFailure:
         - TENSILE FAILURE
     """
 
+    @abaqus_method_doc
     def tensileFailure(
         self,
         table: tuple,
@@ -78,6 +81,7 @@ class TensileFailure:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the TensileFailure object.
 

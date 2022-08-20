@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class ActivateElements:
     """The ActivateElements object is used turn on progressive element activation within a step
     definition.
@@ -29,6 +32,7 @@ class ActivateElements:
     #: activation.
     expansionTimeConstant: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         tableCollection: str,
@@ -69,6 +73,7 @@ class ActivateElements:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ActivateElements object.
 

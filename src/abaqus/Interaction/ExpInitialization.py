@@ -1,7 +1,9 @@
 from .ContactInitialization import ContactInitialization
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ExpInitialization(ContactInitialization):
     """The ExpInitialization object is used in conjunction with ContactExp in Abaqus/Explicit
     analyses to specify contact initialization data.
@@ -63,6 +65,7 @@ class ExpInitialization(ContactInitialization):
     #: when **overclosureType** = INTERFERENCE.
     stepFraction: float = 1
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -132,6 +135,7 @@ class ExpInitialization(ContactInitialization):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         overclosureType: SymbolicConstant = ADJUST,

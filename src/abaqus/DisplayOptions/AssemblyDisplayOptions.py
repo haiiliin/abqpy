@@ -16,8 +16,10 @@ from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..DisplayGroup.DisplayGroupInstance import DisplayGroupInstance
 from ..DisplayGroup.Leaf import Leaf
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AssemblyDisplayOptions:
     """The AssemblyDisplayOptions object stores settings that specify how assemblies are to be
     displayed in a particular viewport. The AssemblyDisplayOptions object has no
@@ -155,6 +157,7 @@ class AssemblyDisplayOptions:
     #: any valid step name. The default value is "Initial".
     step: str = ""
 
+    @abaqus_method_doc
     def setValues(
         self,
         visibleInstances: tuple = (),

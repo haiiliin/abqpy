@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class DGContourOptions:
     """The DGContourOptions object stores values and attributes associated with a contour plot.
     The DGContourOptions object has no constructor command. Abaqus creates an

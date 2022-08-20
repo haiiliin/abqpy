@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DrillControl(GeometricRestriction):
     """The DrillControl object defines a drill control geometric restriction.
     The DrillControl object is derived from the GeometricRestriction object.
@@ -64,6 +66,7 @@ class DrillControl(GeometricRestriction):
     #: A Float specifying the undercut tolerance. The default value is 0.0.
     undercutTolerance: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -134,6 +137,7 @@ class DrillControl(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         csys: int = None,

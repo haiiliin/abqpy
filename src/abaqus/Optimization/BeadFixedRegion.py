@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BeadFixedRegion(GeometricRestriction):
     """The BeadFixedRegion object defines a fixed region geometric restriction.
     The BeadFixedRegion object is derived from the GeometricRestriction object.
@@ -39,6 +41,7 @@ class BeadFixedRegion(GeometricRestriction):
     #: OFF.
     u3: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -84,6 +87,7 @@ class BeadFixedRegion(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self, csys: int = None, u1: Boolean = OFF, u2: Boolean = OFF, u3: Boolean = OFF
     ):

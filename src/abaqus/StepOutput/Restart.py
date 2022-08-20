@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Restart:
     """The Restart object defines a restart request.
 
@@ -35,6 +37,7 @@ class Restart:
     #: analyses.
     frequency: int = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         numberIntervals: int = 0,
@@ -79,6 +82,7 @@ class Restart:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Restart object.
 

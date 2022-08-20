@@ -1,3 +1,6 @@
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class PorousFailureCriteria:
     """The PorousFailureCriteria object specifies the material failure criteria for a porous
     metal.
@@ -17,6 +20,7 @@ class PorousFailureCriteria:
         - POROUS FAILURE CRITERIA
     """
 
+    @abaqus_method_doc
     def __init__(self, fraction: float = 1, criticalFraction: float = 1):
         """This method creates a PorousFailureCriteria object.
 
@@ -46,6 +50,7 @@ class PorousFailureCriteria:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the PorousFailureCriteria object.
 

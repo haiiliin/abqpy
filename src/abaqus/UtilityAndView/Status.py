@@ -1,10 +1,13 @@
 import typing
 
+from .._decorators import abaqus_function_doc
+
 """These functions display status information. 
 
 """
 
 
+@abaqus_function_doc
 @typing.overload
 def milestone(message: str):
     """This function displays a string in the prompt area.
@@ -24,6 +27,7 @@ def milestone(message: str):
     ...
 
 
+@abaqus_function_doc
 @typing.overload
 def milestone(message: str, percent: int):
     """This function displays a percentage complete message in the prompt area.
@@ -45,6 +49,7 @@ def milestone(message: str, percent: int):
     ...
 
 
+@abaqus_function_doc
 @typing.overload
 def milestone(message: str, object: str, done: int, total: int):
     """This function displays a message in the prompt area indicating the number done out of a
@@ -71,5 +76,6 @@ def milestone(message: str, object: str, done: int, total: int):
     ...
 
 
+@abaqus_function_doc
 def milestone(*args, **kwargs):
     ...

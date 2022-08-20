@@ -2,8 +2,10 @@ import typing
 
 from .CrushStressVelocityFactor import CrushStressVelocityFactor
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CrushStress:
     """The CrushStress object specifies the crush stress of a material.
 
@@ -42,6 +44,7 @@ class CrushStress:
         ((),)
     )
 
+    @abaqus_method_doc
     def __init__(
         self,
         crushStressTable: typing.Tuple[typing.Tuple[float, ...]],
@@ -71,6 +74,7 @@ class CrushStress:
         self.temperatureDependency = temperatureDependency
         self.dependencies = dependencies
 
+    @abaqus_method_doc
     def setValues(
         self,
         crushStressTable: typing.Tuple[typing.Tuple[float, ...]] = ((),),
