@@ -14,8 +14,10 @@ from ..Property.MaterialOrientationArray import MaterialOrientationArray
 from ..Property.SectionAssignmentArray import SectionAssignmentArray
 from ..Section.Section import Section
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbInstanceBase:
     """A part instance is the usage of a part within an assembly.
 
@@ -80,6 +82,7 @@ class OdbInstanceBase:
     #: An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying analytic Surface defined on the instance.
     analyticSurface: AnalyticSurface = AnalyticSurface()
 
+    @abaqus_method_doc
     def __init__(self, name: str, object: OdbPart, localCoordSystem: tuple = ()):
         """This method creates an OdbInstance object from an OdbPart object.
 
@@ -116,6 +119,7 @@ class OdbInstanceBase:
         """
         ...
 
+    @abaqus_method_doc
     def assignBeamOrientation(
         self, region: str, method: SymbolicConstant, vector: tuple
     ):
@@ -134,6 +138,7 @@ class OdbInstanceBase:
         """
         ...
 
+    @abaqus_method_doc
     def assignMaterialOrientation(
         self,
         region: str,
@@ -165,6 +170,7 @@ class OdbInstanceBase:
         """
         ...
 
+    @abaqus_method_doc
     def assignRebarOrientation(
         self,
         region: str,
@@ -191,6 +197,7 @@ class OdbInstanceBase:
         """
         ...
 
+    @abaqus_method_doc
     def getElementFromLabel(self, label: int):
         """This method is used to retrieved an element with a specific label from an instance
         object.
@@ -212,6 +219,7 @@ class OdbInstanceBase:
         """
         ...
 
+    @abaqus_method_doc
     def getNodeFromLabel(self, label: int):
         """This method is used to retrieved a node with a specific label from an instance object.
 
@@ -232,6 +240,7 @@ class OdbInstanceBase:
         """
         ...
 
+    @abaqus_method_doc
     def assignSection(self, region: str, section: Section):
         """This method is used to assign a section to a region on an instance.
 
@@ -251,6 +260,7 @@ class OdbInstanceBase:
         """
         ...
 
+    @abaqus_method_doc
     def AnalyticRigidSurf2DPlanar(
         self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
     ):
@@ -276,6 +286,7 @@ class OdbInstanceBase:
         """
         ...
 
+    @abaqus_method_doc
     def AnalyticRigidSurfExtrude(
         self,
         name: str,
@@ -309,6 +320,7 @@ class OdbInstanceBase:
         """
         ...
 
+    @abaqus_method_doc
     def AnalyticRigidSurfRevolve(
         self,
         name: str,
@@ -342,6 +354,7 @@ class OdbInstanceBase:
         """
         ...
 
+    @abaqus_method_doc
     def RigidBody(
         self,
         referenceNode: str,

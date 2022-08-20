@@ -1,3 +1,6 @@
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class TriaxialTestData:
     """The TriaxialTestData object provides triaxial test data.
 
@@ -21,6 +24,7 @@ class TriaxialTestData:
         - TRIAXIAL TEST DATA
     """
 
+    @abaqus_method_doc
     def __init__(
         self, table: tuple, a: float = None, b: float = None, pt: float = None
     ):
@@ -59,6 +63,7 @@ class TriaxialTestData:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the TriaxialTestData object.
 

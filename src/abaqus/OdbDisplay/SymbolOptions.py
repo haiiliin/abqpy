@@ -2,8 +2,10 @@ import typing
 
 from ..PlotOptions.DGSymbolOptions import DGSymbolOptions
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SymbolOptions(DGSymbolOptions):
     """The SymbolOptions object stores values and attributes associated with a symbol plot. The
     SymbolOptions object has no constructor command. Abaqus creates a
@@ -195,6 +197,7 @@ class SymbolOptions(DGSymbolOptions):
     #: value is "Red".
     tensorSelectedPrinColor: str = ""
 
+    @abaqus_method_doc
     def setValues(
         self,
         options: "SymbolOptions" = None,

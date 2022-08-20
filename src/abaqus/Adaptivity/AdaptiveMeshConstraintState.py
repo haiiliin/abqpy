@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AdaptiveMeshConstraintState:
     """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary
     Lagrangian Eularian (ALE) style AdaptiveMeshConstraintState objects. The
@@ -42,6 +44,7 @@ class AdaptiveMeshConstraintState:
     #: adaptive mesh constraint has no amplitude reference.
     amplitude: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         amplitudeState: SymbolicConstant = None,

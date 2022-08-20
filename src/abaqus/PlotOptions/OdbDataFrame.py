@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbDataFrame:
     """The OdbDataFrame object.
 
@@ -13,6 +15,7 @@ class OdbDataFrame:
             session.odbData[name].steps[i].frames[i]
     """
 
+    @abaqus_method_doc
     def setValues(self, activateFrame: Boolean, update: Boolean = OFF):
         """This method modifies the OdbDataFrame object.
 

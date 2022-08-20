@@ -3,10 +3,13 @@ import typing
 from .OdbInstanceBase import OdbInstanceBase
 from .OdbMeshNode import OdbMeshNode
 from .OdbSet import OdbSet
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbInstance(OdbInstanceBase):
 
+    @abaqus_method_doc
     def NodeSet(self, name: str, nodes: typing.Tuple[OdbMeshNode, ...]) -> OdbSet:
         """This method creates a node set from an array of OdbMeshNode objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for

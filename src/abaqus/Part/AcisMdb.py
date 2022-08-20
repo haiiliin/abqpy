@@ -1,8 +1,10 @@
 from .AcisFile import AcisFile
 from ..Mdb.MdbBase import MdbBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AcisMdb(MdbBase):
     """The Mdb object is the high-level Abaqus model database. A model database stores models
     and analysis controls.
@@ -15,6 +17,7 @@ class AcisMdb(MdbBase):
             mdb
     """
 
+    @abaqus_method_doc
     @staticmethod
     def openAcis(fileName: str, scaleFromFile: Boolean = OFF):
         """This method creates an AcisFile object from a file containing ACIS-format geometry. This
@@ -49,6 +52,7 @@ class AcisMdb(MdbBase):
         """
         return AcisFile()
 
+    @abaqus_method_doc
     @staticmethod
     def openCatia(
         fileName: str,
@@ -91,6 +95,7 @@ class AcisMdb(MdbBase):
         """
         return AcisFile()
 
+    @abaqus_method_doc
     @staticmethod
     def openEnf(
         fileName: str,
@@ -135,6 +140,7 @@ class AcisMdb(MdbBase):
         """
         return AcisFile()
 
+    @abaqus_method_doc
     @staticmethod
     def openIges(
         fileName: str,
@@ -200,6 +206,7 @@ class AcisMdb(MdbBase):
         """
         return AcisFile()
 
+    @abaqus_method_doc
     @staticmethod
     def openParasolid(fileName: str, topology: SymbolicConstant = SOLID):
         """This method creates an AcisFile object from a file containing Parasolid-format geometry.
@@ -230,6 +237,7 @@ class AcisMdb(MdbBase):
         """
         return AcisFile()
 
+    @abaqus_method_doc
     @staticmethod
     def openStep(fileName: str, scale: float = 1):
         """This method creates an AcisFile object from a file containing STEP-format geometry. This
@@ -262,6 +270,7 @@ class AcisMdb(MdbBase):
         """
         return AcisFile()
 
+    @abaqus_method_doc
     @staticmethod
     def openVda(fileName: str):
         """This method creates an AcisFile object from a file containing VDA-FS-format geometry.
@@ -290,3 +299,41 @@ class AcisMdb(MdbBase):
             The data in the VDA-FS file are corrupted.
         """
         return AcisFile()
+<<<<<<< HEAD
+=======
+
+    @abaqus_method_doc
+    @staticmethod
+    def openSolidworks(fileName: str, topology: SymbolicConstant = SOLID):
+        """This method creates an AcisFile object from a file containing Solidworks format
+        geometry. This object is subsequently used by the PartFromGeometryFile method.
+
+        .. note::
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                openSolidworks
+
+        Parameters
+        ----------
+        fileName
+            A String specifying the path to the Solidworks file to open.
+        topology
+            A SymbolicConstant specifying the topology of the data to be read from the file and of
+            the part to be created. Possible values are SOLID, SHELL, and WIRE. If *topology*=SOLID,
+            Abaqus/CAE attempts to attach cells to create a solid entity. If *topology*=SHELL,
+            Abaqus/CAE builds the body as a shell entity, not as a solid entity. The default value
+            is SOLID.
+
+        Returns
+        -------
+            An AcisFile object.
+
+        Raises
+        ------
+        Texterror: Failed to read Solidworks file
+            The data in the Solidworks file are corrupted.
+        """
+        return AcisFile()
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)

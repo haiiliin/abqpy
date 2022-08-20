@@ -4,8 +4,10 @@ from .Interaction import Interaction
 from ..Datum.DatumAxis import DatumAxis
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SurfaceToSurfaceContactStd(Interaction):
     """The SurfaceToSurfaceContactStd object defines surface-to-surface contact during an
     Abaqus/Standard analysis.
@@ -171,6 +173,19 @@ class SurfaceToSurfaceContactStd(Interaction):
     #: contact property CohesiveBehavior option specifies use.
     bondingSet: Region = None
 
+<<<<<<< HEAD
+=======
+    #: A SymbolicConstant specifying the bolt handedness formulation. Possible values are RIGHT
+    #: and LEFT. The default value is RIGHT.
+    handedness: SymbolicConstant = RIGHT
+
+    #: A SymbolicConstant specifying the bolt normal adjustment formulation for all secondary
+    #: nodes. Possible values are UNIFORM AXIAL COMPONENT and LOCATION DEPENDENT. The default
+    #: value is UNIFORM AXIAL COMPONENT.
+    normalAdjustment: SymbolicConstant = NONE
+
+    @abaqus_method_doc
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def __init__(
         self,
         name: str,
@@ -330,12 +345,14 @@ class SurfaceToSurfaceContactStd(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def swapSurfaces(self):
         """This method switches the master and slave surfaces of a surface-to-surface contact
         pair. This command is valid only for the step in which the interaction is created.
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         interferenceType: SymbolicConstant = NONE,
@@ -463,6 +480,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

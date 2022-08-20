@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Growth(GeometricRestriction):
     """The Growth object defines a growth geometric restriction.
     The Growth object is derived from the GeometricRestriction object.
@@ -36,6 +38,7 @@ class Growth(GeometricRestriction):
     #: **growth** or **shrink** or both must be specified The default value is 0.0.
     shrink: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -78,6 +81,7 @@ class Growth(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         growth: float = 0,

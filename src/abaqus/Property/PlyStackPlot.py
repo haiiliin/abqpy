@@ -1,8 +1,10 @@
 from ..Odb.Odb import Odb
 from ..Part.Part import Part
 from ..Region.Region import Region
+from .._decorators import abaqus_class_doc, abaqus_function_doc
 
 
+@abaqus_class_doc
 class PlyStackPlot:
     """The PlyStackPlot object is used to plot the stacking of plies in a composite layup or in
     a composite shell section.
@@ -17,6 +19,7 @@ class PlyStackPlot:
     """
 
 
+@abaqus_function_doc
 def MdbPlyStackPlot(part: Part, region: Region) -> PlyStackPlot:
     """This method creates a PlyStackPlot object from a region of a part that contains a
     composite shell layup.
@@ -47,6 +50,7 @@ def MdbPlyStackPlot(part: Part, region: Region) -> PlyStackPlot:
     return PlyStackPlot()
 
 
+@abaqus_function_doc
 def OdbPlyStackPlot(odb: Odb, sectionName: str, offset: float = 0):
     """This method creates a PlyStackPlot object from a composite shell section of an Odb
     object.

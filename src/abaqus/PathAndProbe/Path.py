@@ -1,8 +1,10 @@
 import typing
 
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Path:
     """The Path object defines a line through your model by specifying a series of nodes or
     points.
@@ -88,6 +90,7 @@ class Path:
     #: path. This argument is valid only when **type** = RADIAL.
     endRadius: typing.Union[SymbolicConstant, float]
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,

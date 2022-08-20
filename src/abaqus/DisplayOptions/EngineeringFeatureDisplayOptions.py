@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class EngineeringFeatureDisplayOptions:
     """The EngineeringFeatureDisplayOptions object stores settings that specify how assemblies
     are to be displayed in a particular viewport when
@@ -20,6 +22,7 @@ class EngineeringFeatureDisplayOptions:
             session.viewports[name].partDisplay.engineeringFeatureOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         pointMassInertia: Boolean = ON,

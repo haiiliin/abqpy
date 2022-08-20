@@ -1,6 +1,8 @@
 from .....UtilityAndView.abaqusConstants import *
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DeformationPlasticity:
     r"""The DeformationPlasticity object specifies the deformation plasticity model.
 
@@ -28,6 +30,7 @@ class DeformationPlasticity:
         - DEFORMATION PLASTICITY
     """
 
+    @abaqus_method_doc
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF):
         """This method creates a DeformationPlasticity object.
 
@@ -57,6 +60,7 @@ class DeformationPlasticity:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DeformationPlasticity object.
 

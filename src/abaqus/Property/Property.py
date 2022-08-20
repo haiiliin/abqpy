@@ -1,6 +1,7 @@
 from ..Datum.Datum import Datum
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_function_doc
 
 """The Property assignment commands are used to assign and unassign properties to parts. 
 The part and section modules must be imported to give access to the Property assignment 
@@ -15,6 +16,7 @@ commands.
 """
 
 
+@abaqus_function_doc
 def assignBeamSectionOrientation(region: tuple, method: SymbolicConstant, n1: tuple):
     """This method assigns a beam section orientation to a region of a part.
 
@@ -40,6 +42,7 @@ def assignBeamSectionOrientation(region: tuple, method: SymbolicConstant, n1: tu
     ...
 
 
+@abaqus_function_doc
 def assignMaterialOrientation(
     region: tuple, localCsys: Datum, axis: SymbolicConstant = AXIS_1, angle: float = 0
 ):
@@ -71,6 +74,7 @@ def assignMaterialOrientation(
     ...
 
 
+@abaqus_function_doc
 def assignRebarOrientation(
     region: tuple, localCsys: Datum, axis: SymbolicConstant = AXIS_1, angle: float = 0
 ):
@@ -102,6 +106,7 @@ def assignRebarOrientation(
     ...
 
 
+@abaqus_function_doc
 def flipNormal(regions: Region, referenceRegion: str = ""):
     """This method flips the normals of shell or membrane elements of an orphan mesh or of
     two-dimensional geometric regions.
@@ -129,6 +134,7 @@ def flipNormal(regions: Region, referenceRegion: str = ""):
     ...
 
 
+@abaqus_function_doc
 def flipTangent(regions: Region):
     """This method flips the tangents of beam or truss elements of an orphan mesh or of
     one-dimensional geometric regions.
@@ -149,6 +155,7 @@ def flipTangent(regions: Region):
     ...
 
 
+@abaqus_function_doc
 def unassignBeamSectionOrientation(index: int):
     """This method deletes a beam section orientation assignment.
 
@@ -167,6 +174,7 @@ def unassignBeamSectionOrientation(index: int):
     ...
 
 
+@abaqus_function_doc
 def unassignMaterialOrientation(index: int):
     """This method deletes a material orientation assignment.
 
@@ -185,6 +193,7 @@ def unassignMaterialOrientation(index: int):
     ...
 
 
+@abaqus_function_doc
 def unassignRebarOrientation(index: int):
     """This method deletes a rebar orientation assignment.
 

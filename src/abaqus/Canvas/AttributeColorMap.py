@@ -1,7 +1,9 @@
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AttributeColorMap(_OptionsBase):
     """The AttributeColorMap object is used to store values and attributes associated with
     AttributeColorMap type objects. AttributeColorMap objects can be modified using the
@@ -38,11 +40,13 @@ class AttributeColorMap(_OptionsBase):
     #: :meth:`abaqus.Canvas.AttributeColorMap.updateOverrides` method.
     attributeColors: dict = None
 
+    @abaqus_method_doc
     def setDefaults(self):
         """This method resets the AttributeColorMap object to its default state."""
         #: TODO: Implement this method.
         ...
 
+    @abaqus_method_doc
     def setValues(self, overrides: dict = None, defaultOverrides: dict = None):
         """This method modifies the AttributeColorMap object.
 
@@ -62,6 +66,7 @@ class AttributeColorMap(_OptionsBase):
         """
         super().setValues(overrides=overrides, defaultOverrides=defaultOverrides)
 
+    @abaqus_method_doc
     def updateOverrides(self, overrides: dict = None, defaultOverrides: dict = None):
         """This method specifies additional overrides to be added to the current object definition.
 

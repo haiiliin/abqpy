@@ -1,7 +1,9 @@
 from .BoundaryConditionState import BoundaryConditionState
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class AccelerationBCState(BoundaryConditionState):
     """The AccelerationBCState object stores the propagating data of an acceleration boundary
     condition in a step. One instance of this object is created internally by the

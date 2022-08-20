@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FreeBody:
     """The FreeBody object defines a section across which resultant forces and moments are
     computed.
@@ -14,6 +16,7 @@ class FreeBody:
             session.freeBodies[name]
     """
 
+    @abaqus_method_doc
     def FreeBodyFromEdges(
         self,
         name: str,
@@ -56,6 +59,7 @@ class FreeBody:
         """
         ...
 
+    @abaqus_method_doc
     def FreeBodyFromFaces(
         self,
         name: str,
@@ -98,6 +102,7 @@ class FreeBody:
         """
         ...
 
+    @abaqus_method_doc
     def FreeBodyFromNodesElements(
         self,
         name: str,

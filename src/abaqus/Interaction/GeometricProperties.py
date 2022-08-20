@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class GeometricProperties:
     """The GeometricProperties object specifies surface interaction properties.
 
@@ -50,6 +52,7 @@ class GeometricProperties:
     #: A SymbolicConstant specifying the surface interaction model type.
     modelType: SymbolicConstant = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         contactArea: float = 1,
@@ -105,6 +108,7 @@ class GeometricProperties:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the GeometricProperties object."""
         ...

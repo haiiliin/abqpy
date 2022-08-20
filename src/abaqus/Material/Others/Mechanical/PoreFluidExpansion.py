@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PoreFluidExpansion:
     r"""The PoreFluidExpansion object specifies the thermal expansion coefficient for a
     hydraulic fluid.
@@ -28,6 +30,7 @@ class PoreFluidExpansion:
         - EXPANSION
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -67,6 +70,7 @@ class PoreFluidExpansion:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the PoreFluidExpansion object.
 

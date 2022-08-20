@@ -12,8 +12,10 @@ from ..BasicGeometry.IgnoredVertex import IgnoredVertex
 from ..Datum.DatumCsys import DatumCsys
 from ..Part.PartBase import PartBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MeshPart(PartBase):
     """The following commands operate on Part objects. For more information about the Part
     object, see Part object.
@@ -26,6 +28,7 @@ class MeshPart(PartBase):
             import mesh
     """
 
+    @abaqus_method_doc
     def assignStackDirection(self, cells: typing.Tuple[Cell, ...], referenceRegion: Face):
         """This method assigns a stack direction to geometric cells. The stack direction will be
         used to orient the elements during mesh generation.
@@ -39,6 +42,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def associateMeshWithGeometry(
         self,
         geometricEntity: str,
@@ -73,6 +77,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def createVirtualTopology(
         self,
         regions: typing.Tuple[Face, ...] = (),
@@ -172,6 +177,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def deleteBoundaryLayerControls(self, regions: typing.Tuple[Cell, ...]):
         """This method deletes the control parameters for boundary layer mesh for all the specified
         regions.
@@ -184,6 +190,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def deleteMesh(self, regions: typing.Tuple["Part"]):
         """This method deletes a subset of the mesh that contains the native elements from the
         given parts or regions.
@@ -196,6 +203,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def deleteMeshAssociationWithGeometry(
         self, geometricEntities: typing.Tuple[Cell, ...], addBoundingEntities: Boolean = False
     ):
@@ -215,12 +223,14 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def deletePreviewMesh(self):
         """This method deletes all boundary meshes in the parts. See the **boundaryPreview** argument
         of generateMesh for information about generating boundary meshes.
         """
         ...
 
+    @abaqus_method_doc
     def deleteSeeds(self, regions: typing.Tuple["Part"]):
         """This method deletes the global edge seeds from the given parts or deletes the local edge
         seeds from the given edges.
@@ -233,6 +243,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def generateMesh(
         self,
         regions: typing.Tuple["Part"] = (),
@@ -267,6 +278,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def generateBottomUpExtrudedMesh(
         self,
         cell: Cell,
@@ -321,6 +333,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def generateBottomUpSweptMesh(
         self,
         cell: Cell,
@@ -370,6 +383,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def generateBottomUpRevolvedMesh(
         self,
         cell: Cell,
@@ -416,6 +430,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def getEdgeSeeds(
         self, edge: Edge, attribute: typing.Union[SymbolicConstant, float]
     ):
@@ -488,6 +503,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def getElementType(self, region: str, elemShape: SymbolicConstant):
         """This method returns the ElemType object of a given element shape assigned to a region of
         a part.
@@ -520,6 +536,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def getIncompatibleMeshInterfaces(self, cells: typing.Tuple[Cell, ...] = ()):
         """This method returns a sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects that are meshed with incompatible
         elements.
@@ -536,6 +553,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def getMeshControl(self, region: str, attribute: SymbolicConstant):
         """This method returns a mesh control parameter for the specified region of a part.
 
@@ -576,6 +594,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def getMeshStats(self, regions: tuple):
         """This method returns the mesh statistics for the given regions.
 
@@ -591,6 +610,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def getPartSeeds(self, attribute: typing.Union[SymbolicConstant, float]):
         """This method returns a part seed parameter for the part.
 
@@ -630,6 +650,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def getUnmeshedRegions(self):
         """This method returns all geometric regions in the part that require a mesh for submitting
         an analysis but are either unmeshed or are meshed incompletely.
@@ -641,6 +662,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def ignoreEntity(self, entities: tuple):
         """This method creates a virtual topology feature. Virtual topology allows unimportant
         entities to be ignored during mesh generation. You can combine two adjacent faces by
@@ -659,6 +681,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def restoreIgnoredEntity(self, entities: typing.Tuple[IgnoredVertex, ...]):
         """This method restores vertices and edges that have been merged using a virtual topology
         feature.
@@ -676,6 +699,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def seedEdgeByBias(
         self,
         biasMethod: SymbolicConstant,
@@ -741,6 +765,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def seedEdgeByNumber(
         self, edges: typing.Tuple[Edge, ...], number: int, constraint: SymbolicConstant = FREE
     ):
@@ -766,6 +791,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def seedEdgeBySize(
         self,
         edges: typing.Tuple[Edge, ...],
@@ -801,6 +827,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def seedPart(
         self,
         size: float,
@@ -828,6 +855,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def setBoundaryLayerControls(
         self,
         regions: typing.Tuple[Cell, ...],
@@ -863,6 +891,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def setElementType(self, regions: tuple, elemTypes: typing.Tuple[ElemType, ...]):
         """This method assigns element types to the specified regions.
 
@@ -892,6 +921,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def setLogicalCorners(self, region: str, corners: str):
         """This method sets the logical corners for a mappable face region.
 
@@ -905,6 +935,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def setMeshControls(
         self,
         regions: tuple,
@@ -984,6 +1015,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def setSweepPath(self, region: str, edge: Edge, sense: SymbolicConstant):
         """This method sets the sweep path for a sweepable region or the revolve path for a
         revolvable region.
@@ -1002,6 +1034,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def verifyMeshQuality(
         self,
         criterion: SymbolicConstant,
@@ -1082,6 +1115,7 @@ class MeshPart(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def Node(
         self, coordinates: tuple, localCsys: DatumCsys = None,  label: int = None
     ):

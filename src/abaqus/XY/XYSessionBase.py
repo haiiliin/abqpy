@@ -2,8 +2,10 @@ import typing
 
 from ..Session.SessionBase import SessionBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class XYSessionBase(SessionBase):
     """The following commands operate on Session objects. For more information about the
     Session object, see Session object.
@@ -16,6 +18,7 @@ class XYSessionBase(SessionBase):
             import visualization
     """
 
+    @abaqus_method_doc
     def linearizeStress(
         self,
         name: str,
@@ -139,6 +142,7 @@ class XYSessionBase(SessionBase):
         """
         ...
 
+    @abaqus_method_doc
     def setPathTolerance(self, tolerance: str = 0):
         """This method is used to set the **tolerance** to be used when creating XYData objects by
         extracting results along Path objects. This command should be exercised with caution
@@ -156,6 +160,7 @@ class XYSessionBase(SessionBase):
         """
         ...
 
+    @abaqus_method_doc
     def getPathTolerance(self):
         """This method is used to get the **tolerance** used when creating XYData objects by
         extracting results along Path objects.
@@ -167,6 +172,7 @@ class XYSessionBase(SessionBase):
         """
         ...
 
+    @abaqus_method_doc
     def setLimitForXYDataPlots(self, limit: int = None):
         """This method is used to set the **limit** for number of XY data objects while creating
         XYData from field output.
@@ -183,6 +189,7 @@ class XYSessionBase(SessionBase):
         """
         ...
 
+    @abaqus_method_doc
     def getLimitForXYDataPlots(self):
         """This method is used to get the **limit** for number of XY data objects while creating
         XYData from field output.

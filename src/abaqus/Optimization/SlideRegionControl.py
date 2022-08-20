@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SlideRegionControl(GeometricRestriction):
     """The SlideRegionControl object defines a slide region control geometric restriction.
     The SlideRegionControl object is derived from the GeometricRestriction object.
@@ -64,6 +66,7 @@ class SlideRegionControl(GeometricRestriction):
     #: **approach** is TURN. The default value is 0.01.
     tolerance3: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -134,6 +137,7 @@ class SlideRegionControl(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         approach: SymbolicConstant = FREE_FORM,

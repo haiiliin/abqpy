@@ -1,7 +1,9 @@
 from ..PlotOptions.DGContourOptions import DGContourOptions
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ContourOptions(DGContourOptions):
     """The ContourOptions object stores values and attributes associated with a contour plot.
     The ContourOptions object has no constructor command. Abaqus creates a
@@ -191,6 +193,15 @@ class ContourOptions(DGContourOptions):
     #: default is ((SOLID, VERY_THIN), ).
     intervalLineAttributes: SymbolicConstant = None
 
+<<<<<<< HEAD
+=======
+    #: A Boolean specifying whether to hide the values outside the specified min/max in the
+    #: contour legend. This setting hides the *autoMinValue* and *autoMaxValue* from the
+    #: spectrum when *legendHideOutsideLimits*=ON.The default value is OFF.
+    legendHideOutsideLimits: Boolean = OFF
+
+    @abaqus_method_doc
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def setValues(
         self,
         options: "ContourOptions" = None,

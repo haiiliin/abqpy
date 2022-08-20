@@ -1,8 +1,10 @@
 from ..Metal.ORNL.Ornl import Ornl
 from ..Potential import Potential
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Creep:
     r"""The Creep object defines a creep law.
 
@@ -93,6 +95,7 @@ class Creep:
     #: A :py:class:`~abaqus.Material.Plastic.Potential.Potential` object.
     potential: Potential = Potential(((),))
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -138,6 +141,7 @@ class Creep:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Creep object.
 

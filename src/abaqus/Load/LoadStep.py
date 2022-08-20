@@ -1,9 +1,12 @@
 from .LoadCase import LoadCase
 from ..Step.StepBase import StepBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LoadStep(StepBase):
+    @abaqus_method_doc
     def LoadCase(
         self,
         name: str,

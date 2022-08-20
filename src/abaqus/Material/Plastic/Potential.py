@@ -1,6 +1,8 @@
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Potential:
     """The Potential object defines an anisotropic yield/creep model.
 
@@ -36,6 +38,7 @@ class Potential:
         - POTENTIAL
     """
 
+    @abaqus_method_doc
     def __init__(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ):
@@ -73,6 +76,7 @@ class Potential:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Potential object.
 

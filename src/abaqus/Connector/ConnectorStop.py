@@ -1,6 +1,8 @@
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConnectorStop(ConnectorBehaviorOption):
     """The ConnectorStop object defines connector stops for one or more components of a
     connector's relative motion.
@@ -34,6 +36,7 @@ class ConnectorStop(ConnectorBehaviorOption):
     #: specified. The default value is an empty sequence.
     components: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self, minMotion: float = None, maxMotion: float = None, components: tuple = ()
     ):
@@ -73,6 +76,7 @@ class ConnectorStop(ConnectorBehaviorOption):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorStop object.
 

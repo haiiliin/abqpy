@@ -1,6 +1,8 @@
 from .Section import Section
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PEGSection(Section):
     """The PEGSection object defines the properties of a solid section.
     The PEGSection object is derived from the Section object.
@@ -38,6 +40,7 @@ class PEGSection(Section):
     #: planes, ΔϕyΔ⁢ϕy. The default value is 0.0.
     wedgeAngle2: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -84,6 +87,7 @@ class PEGSection(Section):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self, thickness: float = 1, wedgeAngle1: float = 0, wedgeAngle2: float = 0
     ):

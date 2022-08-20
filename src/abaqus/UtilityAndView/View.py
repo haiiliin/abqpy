@@ -1,8 +1,10 @@
 import typing
 
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class View:
     """The Session and Viewport View objects store view settings for custom (both predefined
     and user-defined) views. The paradigm used to define a view is based on a camera
@@ -93,6 +95,7 @@ class View:
     #: OFF.
     movieMode: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -178,6 +181,7 @@ class View:
         """
         ...
 
+    @abaqus_method_doc
     def fitView(self, drawImmediately: Boolean = False):
         """This method scales the displayable object (such as a part, the assembly, or an **X - Y**
         plot) to fit the viewport.
@@ -191,6 +195,7 @@ class View:
         """
         ...
 
+    @abaqus_method_doc
     def next(self, drawImmediately: Boolean = False):
         """This method restores the view in the viewport to the next view setting in the list.
         (There is a list of eight views stored for each viewport.) If there is no next view, no
@@ -206,6 +211,7 @@ class View:
         """
         ...
 
+    @abaqus_method_doc
     def pan(
         self,
         xFraction: float = 0,
@@ -236,6 +242,7 @@ class View:
         """
         ...
 
+    @abaqus_method_doc
     def previous(self, drawImmediately: Boolean = False):
         """This method restores the view in the viewport to the previous view setting in the list.
         (There is a list of eight views stored for each viewport.) If there is no previous view,
@@ -252,6 +259,7 @@ class View:
         """
         ...
 
+    @abaqus_method_doc
     def rotate(
         self,
         xAngle: float = 0,
@@ -289,6 +297,7 @@ class View:
         """
         ...
 
+    @abaqus_method_doc
     def setLayerTransform(
         self,
         layerTransform: tuple = (),
@@ -314,6 +323,7 @@ class View:
         """
         ...
 
+    @abaqus_method_doc
     def setProjection(
         self, projection: SymbolicConstant, drawImmediately: Boolean = False
     ):
@@ -339,6 +349,7 @@ class View:
         """
         ...
 
+    @abaqus_method_doc
     def setRotationCenter(self, rotationCenter: tuple):
         """This method sets the center of rotation to the specified location.
 
@@ -356,6 +367,7 @@ class View:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, movieMode: Boolean = OFF):
         """This method modifies the View object.
         Note:This method is not available for a Layer View.
@@ -372,6 +384,7 @@ class View:
         """
         ...
 
+    @abaqus_method_doc
     def setViewpoint(
         self,
         viewVector: tuple,
@@ -397,6 +410,7 @@ class View:
         """
         ...
 
+    @abaqus_method_doc
     def zoom(
         self,
         zoomFactor: float,
@@ -431,6 +445,7 @@ class View:
         """
         ...
 
+    @abaqus_method_doc
     def zoomRectangle(
         self,
         point1: typing.Tuple[float, ...],

@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ElemType:
     """The ElemType object is an argument object used as an argument in the setElementType
     command.
@@ -140,6 +142,7 @@ class ElemType:
     #: Abaqus/Standard elements.
     initialGapOpening: float = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         elemCode: SymbolicConstant,

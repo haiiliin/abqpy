@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SymbolStyle:
     """The SymbolStyle object is used to define the marker properties to be used when drawing
     curves.
@@ -55,6 +57,7 @@ class SymbolStyle:
     #: SymbolStyle object. The default value is 2.0.
     size: float = 2
 
+    @abaqus_method_doc
     def __init__(
         self,
         color: str = "",
@@ -112,6 +115,7 @@ class SymbolStyle:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         color: str = "",

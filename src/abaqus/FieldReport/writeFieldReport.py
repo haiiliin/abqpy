@@ -1,12 +1,14 @@
 from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..Odb.Odb import Odb
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_function_doc
 
 """This command writes a field output report to a file. 
 
 """
 
 
+@abaqus_function_doc
 def writeFieldReport(
     filename: str,
     append: Boolean,

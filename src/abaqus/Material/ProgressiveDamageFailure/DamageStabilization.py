@@ -1,3 +1,6 @@
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class DamageStabilization:
     """The DamageStabilization object specifies the viscosity coefficients for the damage model
     for fiber-reinforced materials.
@@ -43,6 +46,7 @@ class DamageStabilization:
         - DAMAGE STABILIZATION
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         fiberTensileCoeff: float,
@@ -108,6 +112,7 @@ class DamageStabilization:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DamageStabilization object.
 

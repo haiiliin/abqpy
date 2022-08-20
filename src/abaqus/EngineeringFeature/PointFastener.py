@@ -4,8 +4,10 @@ from .Fastener import Fastener
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PointFastener(Fastener):
     """The PointFastener object defines a point fastener.
     The PointFastener object is derived from the Fastener object.
@@ -155,6 +157,7 @@ class PointFastener(Fastener):
     #: fastening points. The default value is OFF.
     unsorted: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -306,6 +309,7 @@ class PointFastener(Fastener):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         directionVector: tuple = None,

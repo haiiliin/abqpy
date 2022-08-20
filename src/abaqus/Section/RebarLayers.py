@@ -1,7 +1,9 @@
 from .LayerPropertiesArray import LayerPropertiesArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class RebarLayers:
     """The RebarLayers object defines the rebar properties of a section.
 
@@ -28,6 +30,7 @@ class RebarLayers:
     #: A :py:class:`~abaqus.Section.LayerPropertiesArray.LayerPropertiesArray` object specifying the layers of reinforcement.
     layerTable: LayerPropertiesArray
 
+    @abaqus_method_doc
     def __init__(
         self, rebarSpacing: SymbolicConstant, layerTable: LayerPropertiesArray
     ):
@@ -57,6 +60,7 @@ class RebarLayers:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the RebarLayers object."""
         ...

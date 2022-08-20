@@ -6,10 +6,10 @@ from ..BasicGeometry.VertexArray import VertexArray
 from ..Datum.Datum import Datum
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNodeArray import MeshNodeArray
-# from ..Model.Model import Model
 from ..Region.Set import Set
 from ..Region.Surface import Surface
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 # prevent circular imports
@@ -17,6 +17,7 @@ class Model:
     ...
 
 
+@abaqus_class_doc
 class ModelInstance:
     """A :py:class:`~abaqus.Model.Model.ModelInstance` object is an instance of a Model.
 
@@ -57,6 +58,7 @@ class ModelInstance:
     #: A repository of ReferencePoint objects.
     referencePoints: typing.Dict[str, ReferencePoint] = {}
 
+    @abaqus_method_doc
     def __init__(self, name: str, model: Model, autoOffset: Boolean = OFF):
         """This method creates a ModelInstance object and puts it into the instances repository.
 
@@ -85,6 +87,7 @@ class ModelInstance:
         """
         ...
 
+    @abaqus_method_doc
     def ConvertConstraints(self):
         """This method converts the position constraints of an instance to absolute positions. The
         method deletes the constraint features on the instance but preserves the position in
@@ -92,12 +95,34 @@ class ModelInstance:
         """
         ...
 
+    @abaqus_method_doc
     def getPosition(self):
         """This method prints the sum of the translations and rotations applied to the
         ModelInstance object.
         """
         ...
 
+<<<<<<< HEAD
+=======
+    @abaqus_method_doc
+    def replace(self, instanceOf: Model, applyConstraints: Boolean = True):
+        """This method replaces one instance with an instance of another model.
+
+        Parameters
+        ----------
+        instanceOf
+            A Model object to be instanced. If the model does not exist, no ModelInstance object is
+            created.
+        applyConstraints
+            A Boolean specifying whether to apply existing constraints on the new instance or to
+            position the new instance in the same place as the original instance. The default value
+            is True. A value of False indicates that constraints applies to the instance are deleted
+            will be deleted from the feature list.
+        """
+        ...
+
+    @abaqus_method_doc
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def translate(self, vector: tuple):
         """This method translates an instance by the specified amount.
 
