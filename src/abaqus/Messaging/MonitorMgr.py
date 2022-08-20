@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MonitorMgr:
     """An instance of the MonitorMgr object is created when you import the abaqus module. No
     other instance of the MonitorMgr object is required. (This MonitorMgr object is not to
@@ -15,6 +17,7 @@ class MonitorMgr:
             monitorManager
     """
 
+    @abaqus_method_doc
     def addMessageCallback(
         self,
         jobName: str,
@@ -45,6 +48,7 @@ class MonitorMgr:
         """
         ...
 
+    @abaqus_method_doc
     def removeMessageCallback(
         self, jobName: str, messageType: SymbolicConstant, callback: str, userData: str
     ):
@@ -93,6 +97,7 @@ class MonitorMgr:
         """
         ...
 
+    @abaqus_method_doc
     def checkMonitorStatus(self):
         """This method raises a MonitorError exception if the monitoring status is not ENABLED.
 

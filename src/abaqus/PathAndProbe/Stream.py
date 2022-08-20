@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class Stream:
     """TheStream object defines a set of streamlines in fluid mechanics.
 
@@ -10,6 +13,7 @@ class Stream:
             session.streams[name]
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,

@@ -1,8 +1,10 @@
 from .PredefinedField import PredefinedField
 from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class InitialState(PredefinedField):
     """The InitialState object stores the data for an initial state predefined field.
     The InitialState object is derived from the PredefinedField object.
@@ -44,6 +46,7 @@ class InitialState(PredefinedField):
     #: data. The default value is OFF.
     updateReferenceConfiguration: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -90,6 +93,7 @@ class InitialState(PredefinedField):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         endStep: SymbolicConstant = LAST_STEP,

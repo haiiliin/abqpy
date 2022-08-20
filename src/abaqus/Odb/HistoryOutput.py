@@ -1,8 +1,10 @@
 import typing
 
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class HistoryOutput:
     """The HistoryOutput object contains the history output at a point for the specified
     variable.
@@ -40,6 +42,7 @@ class HistoryOutput:
     #: MID_PRINCIPAL, and MIN_PRINCIPAL. The default value is an empty sequence.
     validInvariants: SymbolicConstant = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -77,6 +80,7 @@ class HistoryOutput:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def addData(self, frame: str, value: str):
         """This method adds data to the **data** member of the HistoryOutput object.
 
@@ -91,6 +95,7 @@ class HistoryOutput:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def addData(self, frame: tuple, value: tuple):
         """This method adds data to the **data** member of the HistoryOutput object.
 
@@ -111,6 +116,7 @@ class HistoryOutput:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def addData(self, data: tuple):
         """This method adds data to the **data** member of the HistoryOutput object.
 

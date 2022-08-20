@@ -1,7 +1,9 @@
 from .OptimizationObjectiveArray import OptimizationObjectiveArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ObjectiveFunction:
     """The ObjectiveFunction object defines the objective of the optimization.
 
@@ -27,6 +29,7 @@ class ObjectiveFunction:
     #: MINIMIZE, MAXIMIZE, and MINIMIZE_MAXIMUM. The default value is MINIMIZE.
     target: SymbolicConstant = MINIMIZE
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -64,6 +67,7 @@ class ObjectiveFunction:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, target: SymbolicConstant = MINIMIZE):
         """This method modifies the ObjectiveFunction object.
 

@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MeshEditOptions:
     """The MeshEditOptions object stores settings that specify the behavior when editing meshes
     on parts or part instances.
@@ -15,6 +17,7 @@ class MeshEditOptions:
             mdb.meshEditOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         maxUndoCacheElements: float = 0,

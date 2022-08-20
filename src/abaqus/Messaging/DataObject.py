@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class DataObject:
     """An instance of the DataObject object is passed to each callback. The DataObject object
     has no methods. The members of a DataObject object depend on the type of the object. All

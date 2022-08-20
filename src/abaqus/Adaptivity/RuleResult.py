@@ -1,6 +1,6 @@
 import typing
 
-# from .ErrorIndicatorResult import ErrorIndicatorResult
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 # Prevent circular import
@@ -8,6 +8,7 @@ class ErrorIndicatorResult:
     ...
 
 
+@abaqus_class_doc
 class RuleResult:
     """The RuleResult object contains result information corresponding to a RemeshingRule
     object for an adaptivity iteration.
@@ -40,6 +41,7 @@ class RuleResult:
     #: Remeshing Rule.
     satisfiedVars: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,

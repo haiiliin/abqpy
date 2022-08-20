@@ -1,7 +1,9 @@
 from ..PlotOptions.OdbDisplayOptions import OdbDisplayOptions
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DisplayGroupInstance:
     """A :py:class:`~abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance` object stores the IDs of the entities displayed in a viewport.
     The DisplayGroupInstance object has no constructor. When you set a display group to be
@@ -39,6 +41,7 @@ class DisplayGroupInstance:
     #: member of the OdbDisplay object.
     odbDisplayOptions: OdbDisplayOptions = OdbDisplayOptions()
 
+    @abaqus_method_doc
     def nodes(self):
         """This method is used to obtain the list of nodes present in the DisplayGroupInstance
         object. It returns a Dictionary object keyed by part instance names, the value of which
@@ -54,6 +57,7 @@ class DisplayGroupInstance:
         """
         ...
 
+    @abaqus_method_doc
     def elements(self):
         """This method returns the list of elements present in the DisplayGroupInstance object. The
         elements method returns a Dictionary object that uses part instance names for the keys.
@@ -69,6 +73,7 @@ class DisplayGroupInstance:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, lockOptions: Boolean = OFF):
         """This method modifies the DisplayGroupInstance object. The setValues method is available
         only for DisplayGroupInstance objects that are members of the DisplayGroupInstance

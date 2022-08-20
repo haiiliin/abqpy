@@ -1,6 +1,8 @@
 from .ContactProperty import ContactProperty
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ActuatorSensorProp(ContactProperty):
     """The ActuatorSensorProp object is an interaction property that defines the properties
     referred to by an ActuatorSensor object.
@@ -30,6 +32,7 @@ class ActuatorSensorProp(ContactProperty):
     #: value is an empty sequence.
     integerProperties: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self, name: str, realProperties: tuple = (), integerProperties: tuple = ()
     ):
@@ -60,6 +63,7 @@ class ActuatorSensorProp(ContactProperty):
         """
         super().__init__(name)
 
+    @abaqus_method_doc
     def setValues(self, realProperties: tuple = (), integerProperties: tuple = ()):
         """This method modifies the ActuatorSensorProp object.
 

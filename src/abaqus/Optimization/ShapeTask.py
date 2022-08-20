@@ -7,8 +7,10 @@ from .OptimizationConstraint import OptimizationConstraint
 from .OptimizationTask import OptimizationTask
 from .StopCondition import StopCondition
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ShapeTask(OptimizationTask):
     """The ShapeTask object defines a shape task.
     The ShapeTask object is derived from the OptimizationTask object.
@@ -220,6 +222,7 @@ class ShapeTask(OptimizationTask):
     #: default value is EVERY_CYCLE.
     updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -425,6 +428,7 @@ class ShapeTask(OptimizationTask):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         absoluteStepSizeControl: SymbolicConstant = MINIMUM,

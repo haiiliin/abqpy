@@ -15,8 +15,10 @@ from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class HeatTransferStep(AnalysisStep):
     """The HeatTransferStep object is used to control uncoupled heat transfer for either
     transient or steady-state response.
@@ -199,6 +201,7 @@ class HeatTransferStep(AnalysisStep):
     #: A repository of PredefinedFieldState objects.
     predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -309,6 +312,7 @@ class HeatTransferStep(AnalysisStep):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         description: str = "",

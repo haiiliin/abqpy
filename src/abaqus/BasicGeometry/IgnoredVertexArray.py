@@ -2,8 +2,10 @@ import typing
 
 from .IgnoredVertex import IgnoredVertex
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class IgnoredVertexArray(typing.List[IgnoredVertex]):
     """The IgnoredVertexArray is a sequence of IgnoredVertex objects. If the part is modified,
     then IgnoredVertexArray must be updated for that part.
@@ -20,6 +22,7 @@ class IgnoredVertexArray(typing.List[IgnoredVertex]):
             mdb.models[name].rootAssembly.instances[name].ignoredVertices
     """
 
+    @abaqus_method_doc
     def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[IgnoredVertex, typing.List[IgnoredVertex]]:
         """This method returns the object or objects in the IgnoredVertexArray located at the given
         coordinates.
@@ -58,6 +61,7 @@ class IgnoredVertexArray(typing.List[IgnoredVertex]):
         """
         return IgnoredVertex()
 
+    @abaqus_method_doc
     def getSequenceFromMask(self, mask: str):
         """This method returns the object or objects in the IgnoredVertexArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
@@ -77,6 +81,7 @@ class IgnoredVertexArray(typing.List[IgnoredVertex]):
         """
         ...
 
+    @abaqus_method_doc
     def getMask(self):
         """This method returns a string specifying the object or objects.
 
@@ -88,6 +93,7 @@ class IgnoredVertexArray(typing.List[IgnoredVertex]):
         """
         ...
 
+    @abaqus_method_doc
     def getClosest(self, coordinates: tuple, searchTolerance: str = ""):
         """This method returns a object or objects in the IgnoredVertexArray closest to the given
         set of points, where the given points need not lie on the vertices in the

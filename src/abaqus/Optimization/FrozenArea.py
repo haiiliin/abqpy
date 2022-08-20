@@ -1,7 +1,9 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FrozenArea(GeometricRestriction):
     """The FrozenArea object defines a frozen area geometric restriction.
     The FrozenArea object is derived from the GeometricRestriction object.
@@ -23,6 +25,7 @@ class FrozenArea(GeometricRestriction):
     #: the default value is MODEL.
     region: Region = Region()
 
+    @abaqus_method_doc
     def __init__(self, name: str, region: Region = Region()):
         """This method creates a FrozenArea object.
 
@@ -49,6 +52,7 @@ class FrozenArea(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, region: Region = Region()):
         """This method modifies the FrozenArea object.
 

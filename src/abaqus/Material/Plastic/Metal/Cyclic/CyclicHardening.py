@@ -1,6 +1,8 @@
 from .....UtilityAndView.abaqusConstants import *
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CyclicHardening:
     r"""The CyclicHardening object defines the evolution of the elastic domain for the nonlinear
     isotropic/kinematic hardening model.
@@ -30,6 +32,7 @@ class CyclicHardening:
         - CYCLIC HARDENING
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -66,6 +69,7 @@ class CyclicHardening:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the CyclicHardening object."""
         ...

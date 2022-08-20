@@ -1,7 +1,9 @@
 from .LoadState import LoadState
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class LineLoadState(LoadState):
     """The LineLoadState object stores the propagating data of a line load in a step. One
     instance of this object is created internally by the LineLoad object for each step. The

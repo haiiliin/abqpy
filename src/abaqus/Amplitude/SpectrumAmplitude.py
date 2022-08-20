@@ -1,7 +1,9 @@
 from .Amplitude import Amplitude
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SpectrumAmplitude(Amplitude):
     """The SpectrumAmplitude object defines the spectrum of responses for displacement,
     velocity, or acceleration to be used in a response spectrum analysis.
@@ -71,6 +73,7 @@ class SpectrumAmplitude(Amplitude):
     #: calculate the spectrum. The default value is an empty string.
     amplitude: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -148,6 +151,7 @@ class SpectrumAmplitude(Amplitude):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         specificationUnits: SymbolicConstant = ACCELERATION,

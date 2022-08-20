@@ -1,8 +1,10 @@
 import typing
 
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ViewCut:
     """The ViewCut object is used to store values and attributes associate with ViewCut type
     objects. ViewCut objects can be created using the methods described below. The methods
@@ -116,6 +118,7 @@ class ViewCut:
     #: ON.
     crossSectionalArea: float = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -191,6 +194,7 @@ class ViewCut:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         angle: float = None,
@@ -281,6 +285,7 @@ class ViewCut:
         """
         ...
 
+    @abaqus_method_doc
     def updateVariable(self):
         """This method updates the field associated with an isosurface cut to be consistent with
         the current primary variable.

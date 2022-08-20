@@ -15,8 +15,10 @@ from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class InitialStep(AnalysisStep):
     """The InitialStep object is a placeholder that you cannot create, delete, or modify. The
     InitialStep object exists in every model by default and is used to allow the preexisting

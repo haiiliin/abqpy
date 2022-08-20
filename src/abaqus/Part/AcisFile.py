@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AcisFile:
     """The AcisFile object is a file object used to open ACIS-, STEP-, and IGES-format files.
 
@@ -15,6 +17,7 @@ class AcisFile:
     #: An Int specifying the number of parts in the object.
     numberOfParts: int = None
 
+    @abaqus_method_doc
     def openAcis(self, fileName: str, scaleFromFile: Boolean = OFF):
         """This method creates an AcisFile object from a file containing ACIS-format geometry. This
         object is subsequently used by the PartFromGeometryFile method.
@@ -48,6 +51,7 @@ class AcisFile:
         """
         ...
 
+    @abaqus_method_doc
     def openCatia(
         self,
         fileName: str,
@@ -90,6 +94,7 @@ class AcisFile:
         """
         ...
 
+    @abaqus_method_doc
     def openEnf(
         self,
         fileName: str,
@@ -134,6 +139,7 @@ class AcisFile:
         """
         ...
 
+    @abaqus_method_doc
     def openIges(
         self,
         fileName: str,
@@ -199,6 +205,7 @@ class AcisFile:
         """
         ...
 
+    @abaqus_method_doc
     def openParasolid(self, fileName: str, topology: SymbolicConstant = SOLID):
         """This method creates an AcisFile object from a file containing Parasolid-format geometry.
         This object is subsequently used by the PartFromGeometryFile method.
@@ -228,6 +235,7 @@ class AcisFile:
         """
         ...
 
+    @abaqus_method_doc
     def openStep(self, fileName: str, scale: float = 1):
         """This method creates an AcisFile object from a file containing STEP-format geometry. This
         object is subsequently used by the PartFromGeometryFile method.
@@ -259,6 +267,7 @@ class AcisFile:
         """
         ...
 
+    @abaqus_method_doc
     def openVda(self, fileName: str):
         """This method creates an AcisFile object from a file containing VDA-FS-format geometry.
         This object is subsequently used by the PartFromGeometryFile method.
@@ -284,20 +293,5 @@ class AcisFile:
         ------
         Texterror: Failed to read VDA file
             The data in the VDA-FS file are corrupted.
-        """
-        ...
-
-    def writeAcisFile(self, fileName: str, version: float = None):
-        """This method exports the assembly to a named file in ACIS format.
-
-        Parameters
-        ----------
-        fileName
-            A String specifying the name of the file to which to write. The file name's extension is
-            used to determine whether a part or assembly is written. Use the file extension .asat
-            for the assembly format.
-        version
-            A Float specifying the ACIS version. For example, the Float 12.0 corresponds to ACIS
-            Version 12.0. The default value is the current version of ACIS.
         """
         ...

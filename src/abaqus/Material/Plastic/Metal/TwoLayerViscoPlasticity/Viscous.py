@@ -1,7 +1,9 @@
 from ...Potential import Potential
 from .....UtilityAndView.abaqusConstants import *
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Viscous:
     r"""The Viscous object specifies the viscous properties for a two-layer viscoplastic
     material model.
@@ -92,6 +94,7 @@ class Viscous:
     #: A :py:class:`~abaqus.Material.Plastic.Potential.Potential` object.
     potential: Potential = Potential(((),))
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -133,6 +136,7 @@ class Viscous:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Viscous object."""
         ...

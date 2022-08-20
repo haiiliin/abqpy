@@ -1,7 +1,9 @@
 from .DerivedComponent import DerivedComponent
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConnectorPotential:
     """The ConnectorPotential object is used to define a restricted set of mathematical
     functions to represent yield or limiting surfaces in the space spanned by connector
@@ -67,6 +69,7 @@ class ConnectorPotential:
     #: also 1.0 (i.e., the potential operator of the invoking behavior option must be SUM).
     hFunction: SymbolicConstant = ABS
 
+    @abaqus_method_doc
     def __init__(
         self,
         componentStyle: SymbolicConstant = COMPONENT_NUMBER,
@@ -128,6 +131,7 @@ class ConnectorPotential:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorPotential object.
 
@@ -137,6 +141,7 @@ class ConnectorPotential:
         """
         ...
 
+    @abaqus_method_doc
     def DerivedComponent(self) -> DerivedComponent:
         """This method creates a DerivedComponent object.
 

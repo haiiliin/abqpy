@@ -13,8 +13,10 @@ from .SectionCategory import SectionCategory
 from ..Property.MaterialOrientationArray import MaterialOrientationArray
 from ..Property.SectionAssignmentArray import SectionAssignmentArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbPartBase:
     """The OdbPart object is similar to the kernel Part object and contains nodes and elements,
     but not geometry.
@@ -61,6 +63,7 @@ class OdbPartBase:
     #: An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying analytic Surface defined on the instance.
     analyticSurface: AnalyticSurface = AnalyticSurface()
 
+    @abaqus_method_doc
     def __init__(
         self, name: str, embeddedSpace: SymbolicConstant, type: SymbolicConstant
     ):
@@ -93,6 +96,7 @@ class OdbPartBase:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def addElements(
         self,
         labels: tuple,
@@ -122,6 +126,7 @@ class OdbPartBase:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def addElements(
         self,
         elementData: tuple,
@@ -148,6 +153,7 @@ class OdbPartBase:
         """
         ...
 
+    @abaqus_method_doc
     def addElements(self, *args, **kwargs):
         ...
 
@@ -169,6 +175,7 @@ class OdbPartBase:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def addNodes(self, nodeData: tuple, nodeSetName: str = None):
         """This method adds nodes to an OdbPart object using a sequence of node labels and
         coordinates.
@@ -185,6 +192,7 @@ class OdbPartBase:
         """
         ...
 
+    @abaqus_method_doc
     def addNodes(self, *args, **kwargs):
         ...
 
@@ -206,6 +214,7 @@ class OdbPartBase:
         """
         ...
 
+    @abaqus_method_doc
     def assignMaterialOrientation(
         self,
         region: str,
@@ -237,6 +246,7 @@ class OdbPartBase:
         """
         ...
 
+    @abaqus_method_doc
     def assignRebarOrientation(
         self,
         region: str,
@@ -263,6 +273,7 @@ class OdbPartBase:
         """
         ...
 
+    @abaqus_method_doc
     def getElementFromLabel(self, label: int):
         """This method is used to retrieved an element with a specific label from a part object.
 
@@ -283,6 +294,7 @@ class OdbPartBase:
         """
         ...
 
+    @abaqus_method_doc
     def getNodeFromLabel(self, label: int):
         """This method is used to retrieved a node with a specific label from a part object.
 
@@ -303,6 +315,7 @@ class OdbPartBase:
         """
         ...
 
+    @abaqus_method_doc
     def AnalyticRigidSurf2DPlanar(
         self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
     ):
@@ -328,6 +341,7 @@ class OdbPartBase:
         """
         ...
 
+    @abaqus_method_doc
     def AnalyticRigidSurfExtrude(
         self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
     ):
@@ -353,6 +367,7 @@ class OdbPartBase:
         """
         ...
 
+    @abaqus_method_doc
     def AnalyticRigidSurfRevolve(
         self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
     ):

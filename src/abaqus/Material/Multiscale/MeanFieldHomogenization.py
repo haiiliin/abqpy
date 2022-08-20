@@ -2,8 +2,10 @@ from .MeanFieldInclusion import MeanFieldInclusion
 from .MeanFieldMatrix import MeanFieldMatrix
 from .MeanFieldVoid import MeanFieldVoid
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MeanFieldHomogenization:
     """The MeanFieldHomogenization object specifies the multiscale material definition.
 
@@ -23,6 +25,7 @@ class MeanFieldHomogenization:
 
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         angleSubdivision: int = None,
@@ -65,6 +68,7 @@ class MeanFieldHomogenization:
         """
         ...
 
+    @abaqus_method_doc
     def MeanFieldInclusion(
         self,
         name: str,
@@ -155,6 +159,7 @@ class MeanFieldHomogenization:
             temperatureGradientConcentrationTensor,
         )
 
+    @abaqus_method_doc
     def MeanFieldMatrix(
         self, name: str, material: str = "", isotropizationCoefficient: float = None
     ):
@@ -188,6 +193,7 @@ class MeanFieldHomogenization:
         """
         return MeanFieldMatrix(name, material, isotropizationCoefficient)
 
+    @abaqus_method_doc
     def MeanFieldVoid(
         self,
         name: str,
@@ -278,6 +284,7 @@ class MeanFieldHomogenization:
             temperatureGradientConcentrationTensor,
         )
 
+    @abaqus_method_doc
     def setValues(self):
         """This method modifies the MeanFieldHomogenization object.
 

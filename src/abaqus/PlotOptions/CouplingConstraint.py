@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class CouplingConstraint:
     """The CouplingConstraint object.
 
@@ -18,6 +21,7 @@ class CouplingConstraint:
     #: A String specifying the type of coupling. This attribute is read-only.
     type: str = ""
 
+    @abaqus_method_doc
     def constraintData(self):
         """This method returns node numbers of the surface being controlled by the control point.
 

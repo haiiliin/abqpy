@@ -1,8 +1,10 @@
 import typing
 
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CaeKerPrefs:
     """The CaeKerPrefs object contains the details of the sessionOptions.
 
@@ -19,6 +21,7 @@ class CaeKerPrefs:
     #: represents.
     fileName: str = ""
 
+    @abaqus_method_doc
     def save(self, backupFile: Boolean = OFF):
         """This method saves the sessionOptions in the current **fileName**.
 
@@ -31,6 +34,7 @@ class CaeKerPrefs:
         # TODO: Implement this method
         ...
     
+    @abaqus_method_doc
     def saveAs(self, fileName: str = '', directory: typing.Literal["CURRENT", "HOME"] = HOME):
         """This method saves the sessionOptions to the specified location.
 

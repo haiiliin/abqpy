@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ShapeDemoldControl(GeometricRestriction):
     """The ShapeDemoldControl object defines a shape demold control geometric restriction.
     The ShapeDemoldControl object is derived from the GeometricRestriction object.
@@ -65,6 +67,7 @@ class ShapeDemoldControl(GeometricRestriction):
     #: A Float specifying the undercut tolerance. The default value is 0.0.
     undercutTolerance: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -136,6 +139,7 @@ class ShapeDemoldControl(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         collisionCheckRegion: SymbolicConstant = DEMOLD_REGION,

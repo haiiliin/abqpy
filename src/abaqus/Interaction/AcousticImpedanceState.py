@@ -1,7 +1,9 @@
 from .InteractionState import InteractionState
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class AcousticImpedanceState(InteractionState):
     """The AcousticImpedanceState object stores the propagating data of an AcousticImpedance
     object in a step. One instance of this object is created internally by the

@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SlidingTransitionAssignment:
     """The SlidingTransitionAssignment object stores the sliding transition assignment
     definition for surfaces in ContactStd objects. The SlidingTransitionAssignment object
@@ -19,6 +21,7 @@ class SlidingTransitionAssignment:
         - CONTACT FORMULATION
     """
 
+    @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: SymbolicConstant):
         """This method allows you to modify sliding transition assignments already defined on
         surface pairs in a given step.
@@ -38,6 +41,7 @@ class SlidingTransitionAssignment:
         """
         ...
 
+    @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: SymbolicConstant):
         """This method allows you to add sliding transition assignments to new surface pairs in a
         given step.
@@ -56,6 +60,7 @@ class SlidingTransitionAssignment:
         """
         ...
 
+    @abaqus_method_doc
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing sliding transition assignments.
 

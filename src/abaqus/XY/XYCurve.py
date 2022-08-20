@@ -2,8 +2,10 @@ from .LineStyle import LineStyle
 from .SymbolStyle import SymbolStyle
 from .XYData import XYData
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class XYCurve:
     """The XYCurve object is used to plot **X - Y** data and to store its display attributes.
 
@@ -59,6 +61,7 @@ class XYCurve:
     #: Possible values are LINE and SYMBOL. The default value is (LINE).
     displayTypes: SymbolicConstant = None
 
+    @abaqus_method_doc
     def Curve(self, name: str, data: XYData):
         """This method creates an XYCurve object from an XYData object.
 
@@ -83,6 +86,7 @@ class XYCurve:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         displayTypes: SymbolicConstant = None,

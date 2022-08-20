@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Queue:
     """A :py:class:`~abaqus.Job.Queue.Queue` object tells the job where and how to submit a job remotely. A :py:class:`~abaqus.Job.Queue.Queue` object can
     be used as the **queue** argument to the Job method.
@@ -51,6 +53,7 @@ class Queue:
     #: A String specifying a description of the queue. The default value is an empty string.
     description: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,

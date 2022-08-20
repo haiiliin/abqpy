@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class Amplitude:
     """The Amplitude object is the abstract base type for other Amplitude objects. The
     Amplitude object has no explicit constructor. The methods and members of the Amplitude

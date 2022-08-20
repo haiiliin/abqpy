@@ -1,8 +1,10 @@
 from .RayleighDampingByFrequencyComponentArray import (
     RayleighDampingByFrequencyComponentArray,
 )
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class RayleighDampingByFrequency:
     """A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object contains Rayleigh Damping parameters.
 

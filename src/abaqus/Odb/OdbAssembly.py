@@ -9,9 +9,12 @@ from .OdbPart import OdbPart
 from .OdbRigidBody import OdbRigidBody
 from .OdbSet import OdbSet
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbAssembly(OdbAssemblyBase):
+    @abaqus_method_doc
     def DatumCsysByThreePoints(
         self,
         name: str,
@@ -53,6 +56,7 @@ class OdbAssembly(OdbAssemblyBase):
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
 
+    @abaqus_method_doc
     def DatumCsysByThreeNodes(
         self,
         name: str,
@@ -97,6 +101,7 @@ class OdbAssembly(OdbAssemblyBase):
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
 
+    @abaqus_method_doc
     def DatumCsysByThreeCircNodes(
         self,
         name: str,
@@ -141,6 +146,7 @@ class OdbAssembly(OdbAssemblyBase):
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
 
+    @abaqus_method_doc
     def DatumCsysBy6dofNode(
         self, name: str, coordSysType: SymbolicConstant, origin: OdbMeshNode
     ):
@@ -176,6 +182,7 @@ class OdbAssembly(OdbAssemblyBase):
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
 
+    @abaqus_method_doc
     def DatumCsys(self, name: str, datumCsys: OdbDatumCsys):
         """This method copies oneOdbDatumCsys object to a new OdbDatumCsys object.
 
@@ -201,6 +208,7 @@ class OdbAssembly(OdbAssemblyBase):
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
 
+    @abaqus_method_doc
     def Instance(
         self, name: str, object: OdbPart, localCoordSystem: tuple = ()
     ) -> OdbInstance:
@@ -240,6 +248,7 @@ class OdbAssembly(OdbAssemblyBase):
         self.instances[name] = odbInstance = OdbInstance(name, object, localCoordSystem)
         return odbInstance
 
+    @abaqus_method_doc
     def RigidBody(
         self,
         referenceNode: OdbSet,
@@ -299,6 +308,7 @@ class OdbAssembly(OdbAssemblyBase):
         self.rigidBodies.append(odbRigidBody)
         return odbRigidBody
 
+    @abaqus_method_doc
     def NodeSet(self, name: str, nodes: typing.Tuple[OdbMeshNode, ...]) -> OdbSet:
         """This method creates a node set from an array of OdbMeshNode objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for

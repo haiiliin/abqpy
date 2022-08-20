@@ -1,8 +1,10 @@
 import typing
 
 from .MeshEdge import MeshEdge
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MeshEdgeArray(typing.List[MeshEdge]):
     """The MeshEdgeArray is a sequence of MeshEdge objects.
 
@@ -18,6 +20,7 @@ class MeshEdgeArray(typing.List[MeshEdge]):
             mdb.models[name].rootAssembly.instances[name].elementEdges
     """
 
+    @abaqus_method_doc
     def __init__(self, edges: typing.List[MeshEdge]):
         """This method creates a MeshEdgeArray object.
 
@@ -40,6 +43,7 @@ class MeshEdgeArray(typing.List[MeshEdge]):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def getSequenceFromMask(self, mask: str):
         """This method returns the objects in the MeshEdgeArray identified using the specified
         **mask**. When large number of objects are involved, this method is highly efficient.
@@ -61,6 +65,7 @@ class MeshEdgeArray(typing.List[MeshEdge]):
         """
         ...
 
+    @abaqus_method_doc
     def getMask(self):
         """This method returns a string specifying the object or objects.
 

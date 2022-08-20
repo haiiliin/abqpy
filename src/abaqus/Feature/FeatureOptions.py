@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FeatureOptions:
     """The FeatureOptions object stores the options that control the behavior of feature
     regeneration for all features in a model.
@@ -14,6 +16,7 @@ class FeatureOptions:
             mdb.models[name].featureOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         checkSelfIntersection: Boolean = ON,

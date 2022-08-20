@@ -1,7 +1,9 @@
 from ..PlotOptions.DGSuperimposeOptions import DGSuperimposeOptions
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SuperimposeOptions(DGSuperimposeOptions):
     """The SuperimposeOptions object stores values and attributes associated with the
     undeformed shape when the display contains both the deformed shape and the undeformed
@@ -181,6 +183,7 @@ class SuperimposeOptions(DGSuperimposeOptions):
     #: coordinate directions when **coordinateScale** = ON. The default value is (1, 1, 1).
     coordinateScaleFactors: float = None
 
+    @abaqus_method_doc
     def setValues(
         self,
         options: "SuperimposeOptions" = None,

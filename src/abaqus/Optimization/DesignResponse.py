@@ -1,3 +1,7 @@
+from .._decorators import abaqus_class_doc
+
+
+@abaqus_class_doc
 class DesignResponse:
     """The DesignResponse object is the abstract base type for other DesignResponse objects.
     The DesponseResponse object has no explicit constructor. The methods and members of the

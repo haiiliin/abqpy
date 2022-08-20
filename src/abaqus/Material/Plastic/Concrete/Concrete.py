@@ -2,8 +2,10 @@ from .FailureRatios import FailureRatios
 from .ShearRetention import ShearRetention
 from .TensionStiffening import TensionStiffening
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Concrete:
     """The Concrete object defines concrete properties beyond the elastic range.
 
@@ -40,6 +42,7 @@ class Concrete:
     #: A :py:class:`~abaqus.Material.Plastic.Concrete.TensionStiffening.TensionStiffening` object.
     tensionStiffening: TensionStiffening = TensionStiffening(((),))
 
+    @abaqus_method_doc
     def __init__(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ):
@@ -73,6 +76,7 @@ class Concrete:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Concrete object.
 

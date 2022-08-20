@@ -1,7 +1,9 @@
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AnimationOptions(_OptionsBase):
     """The AnimationOptions object is used to store values and attributes associated with an
     AnimationController object.
@@ -120,6 +122,7 @@ class AnimationOptions(_OptionsBase):
     #: the color associated to each curve. The default value is "Default".
     xySymbolColor: str = ""
 
+    @abaqus_method_doc
     def setValues(
         self,
         mode: SymbolicConstant = LOOP,

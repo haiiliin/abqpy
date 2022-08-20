@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class OdbAuxiliaryData:
     """The OdbAuxiliaryData object stores auxiliary data related to the steps in the analysis.
 
