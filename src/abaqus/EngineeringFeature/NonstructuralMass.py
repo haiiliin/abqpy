@@ -1,8 +1,10 @@
 from .Inertia import Inertia
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class NonstructuralMass(Inertia):
     """The NonstructuralMass object defines the mass contribution from nonstructural features
     into the model.
@@ -44,6 +46,7 @@ class NonstructuralMass(Inertia):
     #: MASS_PROPORTIONAL.The **distribution** argument applies only when **units** = TOTAL_MASS.
     distribution: SymbolicConstant = MASS_PROPORTIONAL
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -85,6 +88,7 @@ class NonstructuralMass(Inertia):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, distribution: SymbolicConstant = MASS_PROPORTIONAL):
         """This method modifies the NonstructuralMass object.
 

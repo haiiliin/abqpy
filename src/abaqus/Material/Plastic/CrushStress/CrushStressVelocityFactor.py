@@ -1,5 +1,9 @@
 import typing
 
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
+
+
+@abaqus_class_doc
 class CrushStressVelocityFactor:
     """The CrushStressVelocityFactor object defines how the approach velocity at a crushing interface
     influences a material's resistance to crushing.
@@ -27,6 +31,7 @@ class CrushStressVelocityFactor:
     #: A sequence of sequences of Floats specifying the items described below.
     crushStressVelocityFactorTable: typing.Tuple[typing.Tuple[float, ...]]
 
+    @abaqus_method_doc
     def __init__(self, crushStressVelocityFactorTable: typing.Tuple[typing.Tuple[float, ...]]):
         """This method creates a CrushStressVelocityFactor object.
 
@@ -37,6 +42,7 @@ class CrushStressVelocityFactor:
         """
         self.crushStressVelocityFactorTable = crushStressVelocityFactorTable
 
+    @abaqus_method_doc
     def setValues(self, crushStressVelocityFactorTable: typing.Tuple[typing.Tuple[float, ...]] = ()):
         """This method creates a CrushStressVelocityFactor object.
 

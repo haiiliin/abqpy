@@ -1,6 +1,8 @@
 from ..Region.Region import Region
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AdaptiveMeshDomain:
     """The AdaptiveMeshDomain object defines the region and controls that govern an Arbitrary
     Lagrangian Eularian (ALE) style adaptive smoothing mesh domain.
@@ -32,6 +34,7 @@ class AdaptiveMeshDomain:
     #: increment. The default value is 1.
     meshSweeps: int = 1
 
+    @abaqus_method_doc
     def __init__(
         self,
         region: Region,
@@ -76,6 +79,7 @@ class AdaptiveMeshDomain:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the AdaptiveMeshDomain object.
 

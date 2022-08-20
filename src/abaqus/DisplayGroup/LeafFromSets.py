@@ -3,8 +3,10 @@ import typing
 from .Leaf import Leaf
 from ..Region.Set import Set
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LeafFromSets(Leaf):
     """The LeafFromSets object can be used whenever a Leaf object is expected as an argument.
     Leaf objects are used to specify the items in a display group. Leaf objects are
@@ -24,6 +26,7 @@ class LeafFromSets(Leaf):
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant = None
 
+    @abaqus_method_doc
     def __init__(self, sets: typing.Tuple[Set, ...]):
         """This method creates a Leaf object from a sequence of Set objects.
 

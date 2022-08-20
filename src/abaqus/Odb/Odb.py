@@ -6,8 +6,10 @@ from ..BeamSectionProfile.BeamSectionProfileOdb import BeamSectionProfileOdb
 from ..Filter.FilterOdb import FilterOdb
 from ..Material.MaterialOdb import MaterialOdb
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
@@ -20,6 +22,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
             session.odbs[name]
     """
 
+    @abaqus_method_doc
     def Part(
         self, name: str, embeddedSpace: SymbolicConstant, type: SymbolicConstant
     ) -> OdbPart:
@@ -52,6 +55,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
         self.parts[name] = odbPart = OdbPart(name, embeddedSpace, type)
         return odbPart
 
+    @abaqus_method_doc
     def Step(
         self,
         name: str,
@@ -166,6 +170,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
         )
         return odbStep
 
+    @abaqus_method_doc
     def SectionCategory(self, name: str, description: str) -> SectionCategory:
         """This method creates a SectionCategory object.
 

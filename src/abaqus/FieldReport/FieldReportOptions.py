@@ -1,7 +1,9 @@
 from ..Session.NumberFormat import NumberFormat
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FieldReportOptions:
     """The FieldReportOptions object stores settings used by the writeFieldReport method when
     you write a FieldOutput object to an ASCII file. The FieldReportOptions object has no
@@ -21,6 +23,7 @@ class FieldReportOptions:
     #: Format of the number
     numberFormat: NumberFormat = NumberFormat()
 
+    @abaqus_method_doc
     def setValues(
         self,
         numColumns: int,
@@ -73,6 +76,7 @@ class FieldReportOptions:
         """
         ...
 
+    @abaqus_method_doc
     def NumberFormat(
         self,
         blankPad: Boolean = ON,

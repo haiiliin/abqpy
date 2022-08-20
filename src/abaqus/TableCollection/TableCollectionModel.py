@@ -2,8 +2,10 @@ from .EventSeries import EventSeries
 from .EventSeriesType import EventSeriesType
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TableCollectionModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
@@ -15,6 +17,7 @@ class TableCollectionModel(ModelBase):
             mdb.models[name]
     """
 
+    @abaqus_method_doc
     def EventSeries(
         self,
         name: str,
@@ -77,6 +80,7 @@ class TableCollectionModel(ModelBase):
         )
         return eventSeries
 
+    @abaqus_method_doc
     def EventSeriesType(
         self, name: str, createStepName: str, fields: str = ""
     ) -> EventSeriesType:

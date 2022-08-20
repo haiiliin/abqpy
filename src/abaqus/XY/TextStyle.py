@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TextStyle:
     """The TextStyle object is used to store the text properties to be used for drawing XY-plot
     text objects.
@@ -54,6 +56,7 @@ class TextStyle:
     #: is 0.0.
     rotationAngle: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         color: str = "",
@@ -97,6 +100,7 @@ class TextStyle:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         color: str = "",

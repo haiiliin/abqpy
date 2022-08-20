@@ -1,7 +1,9 @@
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FreeBodyOptions(_OptionsBase):
     """The FreeBodyOptions object stores values and attributes associated with a free body
     plot. The FreeBodyOptions object has no constructor command. Abaqus creates a
@@ -26,6 +28,7 @@ class FreeBodyOptions(_OptionsBase):
             session.viewports[name].odbDisplay.freeBodyOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         *,

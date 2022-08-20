@@ -3,8 +3,10 @@ import typing
 from .Constraint import Constraint
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Coupling(Constraint):
     """The Coupling object defines a constraint between a group of coupling nodes located on a
     region and a reference point.
@@ -93,6 +95,7 @@ class Coupling(Constraint):
     #: The alpha argument applies only when couplingType=KINEMATIC.
     alpha: float = 0.0
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -181,6 +184,7 @@ class Coupling(Constraint):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         adjust: Boolean = OFF,

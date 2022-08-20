@@ -1,7 +1,9 @@
 from .ContactControl import ContactControl
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ExpContactControl(ContactControl):
     """The ExpContactControl object is used in Abaqus/Explicit analyses to specify optional
     solution controls for problems involving contact between bodies.
@@ -50,6 +52,7 @@ class ExpContactControl(ContactControl):
     #: considered to be highly warped. The default value is 20.0.
     warpCutoff: float = 20
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -106,6 +109,7 @@ class ExpContactControl(ContactControl):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         globTrkChoice: SymbolicConstant = DEFAULT,

@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class MassScaling:
     """A :py:class:`~abaqus.StepMiscellaneous.MassScaling.MassScaling` object defines the region and controls that govern mass scaling.
 

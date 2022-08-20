@@ -1,7 +1,9 @@
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CompositePly:
     """The CompositePly object defines the material layers in a composite layup.
 
@@ -80,6 +82,7 @@ class CompositePly:
     #: default value is an empty string.
     additionalRotationField: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         thickness: float,

@@ -1,7 +1,9 @@
 from .Behavior import Behavior
 from .DataSet import DataSet
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Calibration:
     """A :py:class:`~abaqus.BoundaryCondition.Calibration.Calibration` object is the object used to specify a material calibration. The
     Calibration object stores the data that is used for specifying materials from test data.
@@ -24,6 +26,7 @@ class Calibration:
     #: A String specifying the name of the new calibration.
     name: str
 
+    @abaqus_method_doc
     def __init__(self, name: str):
         """This method creates a Calibration object.
 
@@ -46,6 +49,7 @@ class Calibration:
         """
         ...
 
+    @abaqus_method_doc
     def Behavior(self, name: str, typeName: str) -> Behavior:
         """This method creates a Behavior object.
 
@@ -72,6 +76,7 @@ class Calibration:
         self.behaviors = behavior = Behavior(name, typeName)
         return behavior
 
+    @abaqus_method_doc
     def DataSet(
         self, name: str, data: tuple = (), type: str = "", form: str = ""
     ) -> DataSet:

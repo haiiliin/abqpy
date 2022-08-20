@@ -3,8 +3,10 @@ import typing
 from .OdbContactDiagnostics import OdbContactDiagnostics
 from .OdbDiagnosticIncrement import OdbDiagnosticIncrement
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbDiagnosticStep:
     """The OdbDiagnosticStep object stores step data.
 
@@ -110,6 +112,7 @@ class OdbDiagnosticStep:
     #: A float specifying the duration for the step. This attribute is read-only.
     timePeriod: str = ""
 
+    @abaqus_method_doc
     def extractData(self, incrementStatistics: str):
         """This method creates a temporary XYData object, with increments on the x-axis and
         requested output on the y-axis.

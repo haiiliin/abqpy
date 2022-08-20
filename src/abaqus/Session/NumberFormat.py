@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class NumberFormat:
     """The NumberFormat object is a formatting template used to define formatting options for
     certain numeric output.This page
@@ -37,6 +39,7 @@ class NumberFormat:
     #: value is 0.
     precision: int = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         blankPad: Boolean = ON,

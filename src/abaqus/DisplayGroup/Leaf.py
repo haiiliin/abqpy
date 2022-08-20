@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Leaf:
     """Leaf objects are used to specify the items in a display group. Leaf objects are
     constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -22,6 +24,7 @@ class Leaf:
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant
 
+    @abaqus_method_doc
     def __init__(self, leafType: SymbolicConstant):
         """This method creates a Leaf object.
 

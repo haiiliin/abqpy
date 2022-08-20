@@ -4,9 +4,12 @@ from .ExpressionField import ExpressionField
 from .MappedField import MappedField
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FieldModel(ModelBase):
+    @abaqus_method_doc
     def DiscreteField(
         self,
         name: str,
@@ -76,6 +79,7 @@ class FieldModel(ModelBase):
         )
         return discreteField
 
+    @abaqus_method_doc
     def ExpressionField(
         self, name: str, expression: str, localCsys: str = None, description: str = ""
     ) -> ExpressionField:
@@ -116,6 +120,7 @@ class FieldModel(ModelBase):
         )
         return expressionField
 
+    @abaqus_method_doc
     def MappedField(
         self,
         name: str,

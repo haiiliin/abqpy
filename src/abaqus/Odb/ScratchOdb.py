@@ -1,6 +1,8 @@
 from .Odb import Odb
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ScratchOdb:
     """A scratch output database is associated with an open output database and is used to
     store session-related, non-persistent objects, such as Step, Frame and FieldOutput
@@ -17,6 +19,7 @@ class ScratchOdb:
             session.scratchOdbs[name]
     """
 
+    @abaqus_method_doc
     def __init__(self, odb: Odb):
         """This method creates a new ScratchOdb object.
 

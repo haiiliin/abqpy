@@ -1,8 +1,10 @@
 from .Constraint import Constraint
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class RigidBody(Constraint):
     """The RigidBody object constrains all the degrees of freedom on the specified regions to
     the degree of freedom of its associated reference point.
@@ -55,6 +57,7 @@ class RigidBody(Constraint):
     #: The default value is OFF.
     isothermal: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -107,6 +110,7 @@ class RigidBody(Constraint):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         bodyRegion: str = None,

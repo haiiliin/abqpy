@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ContactPropertyAssignment:
     """The ContactPropertyAssignment object stores the contact property assignment definition
     for domain pairs in ContactExp and ContactStd objects. The ContactPropertyAssignment
@@ -19,6 +21,7 @@ class ContactPropertyAssignment:
         - CONTACT PROPERTY ASSIGNMENT
     """
 
+    @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: str):
         """This method allows modification of contact property assignments to domain pairs already
         defined in a given step.
@@ -37,6 +40,7 @@ class ContactPropertyAssignment:
         """
         ...
 
+    @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: SymbolicConstant):
         """This method allows addition of contact property assignments to new domain pairs in a
         given step.
@@ -59,6 +63,7 @@ class ContactPropertyAssignment:
         """
         ...
 
+    @abaqus_method_doc
     def delete(self, indices: tuple, surfPair: SymbolicConstant):
         """The delete method allows you to delete existing contact property assignments.
 

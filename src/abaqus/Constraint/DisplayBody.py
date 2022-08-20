@@ -2,8 +2,10 @@ from .Constraint import Constraint
 from ..Assembly.PartInstance import PartInstance
 from ..BasicGeometry.ModelDotArray import ModelDotArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DisplayBody(Constraint):
     """The DisplayBody object defines a constraint such that the specified instance is used for
     display only and does not take part in the analysis. However it will still be visible
@@ -41,6 +43,7 @@ class DisplayBody(Constraint):
     #: three objects.
     controlPoints: ModelDotArray
 
+    @abaqus_method_doc
     def __init__(self, name: str, instance: PartInstance, controlPoints: ModelDotArray):
         """This method creates a DisplayBody object.
 
@@ -71,6 +74,7 @@ class DisplayBody(Constraint):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DisplayBody object."""
         ...

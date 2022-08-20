@@ -3,13 +3,14 @@ import typing
 from .QuantityType import QuantityType
 from ..PathAndProbe.Path import Path
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
-# prevent circular imports
 class Odb:
     ...
 
 
+@abaqus_class_doc
 class XYData(tuple):
     """The XYData object is used to store values and attributes associated with XYData type
     objects.
@@ -94,6 +95,7 @@ class XYData(tuple):
     axis2QuantityType: QuantityType = None
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(
         self,
         data: tuple = (),
@@ -159,6 +161,7 @@ class XYData(tuple):
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(self, objectToCopy: "XYData"):
         """This method creates an XYData object by copying an existing XYData object.
 
@@ -182,6 +185,7 @@ class XYData(tuple):
         """
         ...
 
+    @abaqus_method_doc
     def __init__(self, *args, **kwargs):
         ...
 
@@ -265,6 +269,7 @@ class XYData(tuple):
         """
         ...
 
+    @abaqus_method_doc
     def XYDataFromHistory(
         self,
         odb: Odb,
@@ -342,6 +347,7 @@ class XYData(tuple):
         """
         ...
 
+    @abaqus_method_doc
     def xyDataListFromField(
         self,
         odb: Odb,
@@ -446,6 +452,7 @@ class XYData(tuple):
         """
         ...
 
+    @abaqus_method_doc
     def XYDataFromFreeBody(
         self,
         odb: Odb,
@@ -504,6 +511,7 @@ class XYData(tuple):
         """
         ...
 
+    @abaqus_method_doc
     def XYDataFromShellThickness(
         self,
         odb: Odb,
@@ -594,6 +602,7 @@ class XYData(tuple):
         """
         ...
 
+    @abaqus_method_doc
     def XYDataFromPath(
         self,
         path: Path,
@@ -727,12 +736,14 @@ class XYData(tuple):
         """
         ...
 
+    @abaqus_method_doc
     def save(self):
         """This method saves a temporary XYData. The name of the XYData is changed to "XYData-#".
         If the XYData is already saved, nothing is done.
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         sourceDescription: str = "",

@@ -3,8 +3,10 @@ from .DruckerPragerHardening import DruckerPragerHardening
 from .TriaxialTestData import TriaxialTestData
 from ...Metal.RateDependent.RateDependent import RateDependent
 from .....UtilityAndView.abaqusConstants import *
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DruckerPrager:
     r"""The DruckerPrager object specifies the extended Drucker-Prager plasticity model.
 
@@ -68,6 +70,7 @@ class DruckerPrager:
     #: A :py:class:`~abaqus.Material.Plastic.DruckerPrager.Extended.TriaxialTestData.TriaxialTestData` object.
     triaxialTestData: TriaxialTestData = TriaxialTestData(((),))
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -121,6 +124,7 @@ class DruckerPrager:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DruckerPrager object.
 

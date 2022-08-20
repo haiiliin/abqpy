@@ -1,8 +1,10 @@
 import typing
 
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class FieldOutputRequestState:
     """The FieldOutputRequestState object stores the propagating data of a field output request
     current in a step. One instance of this object is created internally by the

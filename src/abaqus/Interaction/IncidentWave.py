@@ -1,8 +1,10 @@
 from .Interaction import Interaction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class IncidentWave(Interaction):
     """The IncidentWave object defines incident wave interactions for acoustic and coupled
     acoustic-structural analyses.
@@ -82,6 +84,7 @@ class IncidentWave(Interaction):
     #: valid only when **definition** = CONWEP.
     magnitudeFactor: float = 1
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -165,6 +168,7 @@ class IncidentWave(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         definition: SymbolicConstant = PRESSURE,

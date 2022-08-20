@@ -1,7 +1,9 @@
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ImageAnimationOptions(_OptionsBase):
     """The ImageAnimationOptions object is used to store values and attributes associated with
     saving viewport animations. The ImageAnimationOptions object has no constructor. Abaqus
@@ -29,6 +31,7 @@ class ImageAnimationOptions(_OptionsBase):
     #: A Boolean specifying whether to capture the view compass. The default value is OFF.
     compass: Boolean = OFF
 
+    @abaqus_method_doc
     def setValues(
         self,
         frameRate: int = None,

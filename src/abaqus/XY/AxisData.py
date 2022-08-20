@@ -1,8 +1,10 @@
 from .QuantityType import QuantityType
 from .XYCurveArray import XYCurveArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AxisData:
     """The AxisData object is used to store the data attributes of axes. An :py:class:`~abaqus.XY.AxisData.AxisData` object is
     automatically created when creating an Axis object.
@@ -136,6 +138,7 @@ class AxisData:
     #: **systemTitle**.
     title: str = ""
 
+    @abaqus_method_doc
     def setValues(
         self,
         axisData: "AxisData" = None,

@@ -1,7 +1,9 @@
 from ..PlotOptions.DGContourOptions import DGContourOptions
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ContourOptions(DGContourOptions):
     """The ContourOptions object stores values and attributes associated with a contour plot.
     The ContourOptions object has no constructor command. Abaqus creates a
@@ -196,6 +198,7 @@ class ContourOptions(DGContourOptions):
     #: spectrum when *legendHideOutsideLimits*=ON.The default value is OFF.
     legendHideOutsideLimits: Boolean = OFF
 
+    @abaqus_method_doc
     def setValues(
         self,
         options: "ContourOptions" = None,

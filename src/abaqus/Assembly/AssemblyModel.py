@@ -2,9 +2,7 @@ import typing
 
 from .PartInstance import PartInstance
 from ..UtilityAndView.abaqusConstants import *
-
-
-# from ..Model.ModelBase import ModelBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 # Prevent circular import
@@ -12,6 +10,7 @@ class ModelBase:
     ...
 
 
+@abaqus_class_doc
 class AssemblyModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
@@ -23,6 +22,7 @@ class AssemblyModel(ModelBase):
             mdb.models[name]
     """
 
+    @abaqus_method_doc
     def Instance(self, name: str, objectToCopy: PartInstance):
         """This method copies a PartInstance object from the specified model and creates a new
         PartInstance object.
@@ -48,6 +48,7 @@ class AssemblyModel(ModelBase):
         """
         return self
 
+    @abaqus_method_doc
     def convertAllSketches(
         self, regenerate: Boolean = True, convertReversedSketches: Boolean = True
     ):
@@ -72,6 +73,7 @@ class AssemblyModel(ModelBase):
         """
         ...
 
+    @abaqus_method_doc
     def linkInstances(self, instancesMap: tuple):
         """This method links the selected PartInstance objects to the corresponding PartInstance
         objects from the specified models. If all instances of a Part are selected for linking,

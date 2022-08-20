@@ -3,8 +3,10 @@ from ..Datum.DatumCsys import DatumCsys
 from ..Region.Set import Set
 from ..Region.Surface import Surface
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MaterialOrientation:
     """The MaterialOrientation object represents the orientation of the material properties and
     composite layups.
@@ -116,6 +118,7 @@ class MaterialOrientation:
     #: axis of the discrete orientation.
     primaryAxisVector: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self,
         region: Set,
@@ -222,6 +225,7 @@ class MaterialOrientation:
         """
         ...
 
+    @abaqus_method_doc
     def ReferenceOrientation(
         self,
         localCsys: DatumCsys = None, 
@@ -334,6 +338,7 @@ class MaterialOrientation:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the MaterialOrientation object."""
         ...

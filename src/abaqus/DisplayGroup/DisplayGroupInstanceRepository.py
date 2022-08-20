@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DisplayGroupInstanceRepository:
     """The DisplayGroupInstanceRepository object stores DisplayGroupInstance objects. In
     addition to all the standard Python repository methods, the DisplayGroupInstance
@@ -16,6 +18,7 @@ class DisplayGroupInstanceRepository:
             session.viewports[name].odbDisplay.displayGroupInstances
     """
 
+    @abaqus_method_doc
     def syncOptions(self, name: str, updateInstances: Boolean = ON):
         """This method synchronizes the display options stored on the OdbDisplay object with the
         display options stored on the DisplayGroupInstance object.

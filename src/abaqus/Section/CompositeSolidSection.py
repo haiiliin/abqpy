@@ -1,8 +1,10 @@
 from .Section import Section
 from .SectionLayerArray import SectionLayerArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CompositeSolidSection(Section):
     """The CompositeSolidSection object defines the properties of a composite solid section.
     The CompositeSolidSection object is derived from the Section object.
@@ -36,6 +38,7 @@ class CompositeSolidSection(Section):
     #: string.
     layupName: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -73,6 +76,7 @@ class CompositeSolidSection(Section):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, symmetric: Boolean = OFF, layupName: str = ""):
         """This method modifies the CompositeSolidSection object.
 

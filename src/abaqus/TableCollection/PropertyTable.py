@@ -2,8 +2,10 @@ import typing
 
 from .PropertyTableData import PropertyTableData
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PropertyTable:
     """A PropertyTable is an object that is used to define the container that encapsulates the
     PropertyTableData object.
@@ -38,6 +40,7 @@ class PropertyTable:
     #: array.
     variables: str = ""
 
+    @abaqus_method_doc
     def __init__(self, name: str, properties: str, variables: str = ""):
         """This method creates a PropertyTable object.
 
@@ -69,6 +72,7 @@ class PropertyTable:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, variables: str = ""):
         """This method modifies the PropertyTable object.
 
@@ -87,6 +91,7 @@ class PropertyTable:
         """
         ...
 
+    @abaqus_method_doc
     def PropertyTableData(
         self,
         label: str = "",

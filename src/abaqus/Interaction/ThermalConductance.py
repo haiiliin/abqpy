@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ThermalConductance:
     """The ThermalConductance object specifies thermal conductance for a contact interaction
     property.
@@ -81,6 +83,7 @@ class ThermalConductance:
     #: table data are described below.
     pressureDepTable: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self,
         definition: SymbolicConstant = TABULAR,
@@ -145,6 +148,7 @@ class ThermalConductance:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ThermalConductance object."""
         ...

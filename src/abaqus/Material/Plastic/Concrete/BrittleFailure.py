@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BrittleFailure:
     """The BrittleFailure object specifies the brittle failure of the material.
 
@@ -36,6 +38,7 @@ class BrittleFailure:
         - BRITTLE FAILURE
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -76,6 +79,7 @@ class BrittleFailure:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the BrittleFailure object.
 

@@ -1,7 +1,9 @@
 from .IMAField import IMAField
 from ..Region.Region import Region
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PredefinedField:
     """The PredefinedField object is the base object for the objects in the predefined field
     repository. The methods and members of the PredefinedField object are common to all
@@ -31,6 +33,7 @@ class PredefinedField:
     #: An IMAField for MaterialAssignment predefined field。
     fieldList: IMAField = IMAField()
 
+    @abaqus_method_doc
     def move(self, fromStepName: str, toStepName: str):
         """This method moves a specific PredefinedFieldState object from one step to a different
         step.
@@ -50,14 +53,17 @@ class PredefinedField:
         """
         ...
 
+    @abaqus_method_doc
     def resume(self):
         """This method resumes the predefined field that was previously suppressed."""
         ...
 
+    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the predefined field."""
         ...
 
+    @abaqus_method_doc
     def delete(self, indices: tuple):
         """This method allows you to delete existing fields.
 
