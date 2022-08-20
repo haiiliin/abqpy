@@ -40,7 +40,7 @@ class AbaqusDoc:
     @classmethod
     def _class_or_module_link(
         cls,
-        type: typing.Literal['class', 'module'],
+        type: str,
         class_or_module_name: str,
         prefix='',
     ) -> typing.Tuple[str, str]:
@@ -70,7 +70,7 @@ class AbaqusDoc:
     @classmethod
     def _method_or_function_link(
         cls,
-        type: typing.Literal['method', 'function'],
+        type: str,
         class_or_module_name: str,
         method_or_function_name: str,
         prefix='',
@@ -114,7 +114,7 @@ class AbaqusDoc:
     @classmethod
     def _add_link_in_class_or_module_docstring(
         cls,
-        type: typing.Literal['class', 'module'],
+        type: str,
         class_or_module_name: str,
         docstring: str,
         prefix='',
@@ -145,7 +145,7 @@ class AbaqusDoc:
     @classmethod
     def _add_link_in_method_or_function_docstring(
         cls,
-        type: typing.Literal['method', 'function'],
+        type: str,
         class_or_module_name: str,
         method_or_function_name: str,
         docstring: str,
