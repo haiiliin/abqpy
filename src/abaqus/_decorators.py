@@ -17,6 +17,7 @@ class AbaqusDoc:
         cls,
         type: typing.Literal['class', 'module'],
         class_or_module_name: str,
+        prefix='',
     ) -> tuple[str, str]:
         """Generate a link to the Abaqus class documentation.
 
@@ -26,6 +27,8 @@ class AbaqusDoc:
             Type of the object, class or module.
         class_or_module_name : str
             The name of the class or module.
+        prefix : str
+            The prefix to the class or module name.
 
         Returns
         -------
@@ -34,9 +37,9 @@ class AbaqusDoc:
         str
             The link with label.
         """
-        name = f"{type if type == 'module' else ''}{class_or_module_name.lower()}"
+        module_name = f"{type if type == 'module' else ''}{class_or_module_name.lower()}"
         link = (f"https://help.3ds.com/{version}/English/DSSIMULIA_Established/SIMACAEKERRefMap/"
-                f"simaker-c-{name}pyc.htm?contextscope=all")
+                f"simaker-c-{prefix}{module_name}pyc.htm?contextscope=all")
         return link, f"Check `{class_or_module_name} on help.3ds.com/{version} <{link}>`_."
 
     @classmethod
@@ -45,17 +48,20 @@ class AbaqusDoc:
         type: typing.Literal['method', 'function'],
         class_or_module_name: str,
         method_or_function_name: str,
+        prefix='',
     ) -> tuple[str, str]:
         """Generate a link to the Abaqus function documentation.
 
         Parameters
         ----------
-        type : 'class' or 'module'
+        type : 'method' or 'function'
             Type of the object, class or module.
         class_or_module_name : str
             The name of the module.
         method_or_function_name : str
             The name of the function.
+        prefix : str
+            The prefix to the class or module name.
 
         Returns
         -------
@@ -64,12 +70,16 @@ class AbaqusDoc:
         str
             The link with label.
         """
-        name = f"{type if type == 'function' else ''}{class_or_module_name.lower()}"
+        # For methods that start with a capital letter, the link is to the corresponding class documentation.
+        if method_or_function_name.istitle():
+            return cls._class_or_module_link('class', method_or_function_name, prefix)
+        class_name = f"{type if type == 'function' else ''}{class_or_module_name.lower()}"
+        function_prefix = prefix if type == 'function' else ''
         if type == 'class' and method_or_function_name == '__init__':
             method_or_function_name = class_or_module_name
         link = (f"https://help.3ds.com/{version}/English/DSSIMULIA_Established/SIMACAEKERRefMap/"
-                f"simaker-c-{name}pyc.htm?contextscope=all"
-                f"#simaker-{name}{method_or_function_name.lower()}pyc")
+                f"simaker-c-{prefix}{class_name}pyc.htm?contextscope=all"
+                f"#simaker-{function_prefix}{class_name}{method_or_function_name.lower()}pyc")
         if method_or_function_name == class_or_module_name and type == 'class':
             signature = f"{class_or_module_name}()"
         else:
@@ -82,6 +92,7 @@ class AbaqusDoc:
         type: typing.Literal['class', 'module'],
         class_or_module_name: str,
         docstring: str,
+        prefix='',
     ) -> str:
         """Add a link to the Abaqus documentation to the docstring for classes or modules.
 
@@ -93,13 +104,15 @@ class AbaqusDoc:
             The name of the class or module.
         docstring : str
             The docstring.
+        prefix : str
+            The prefix to the class or module name.
 
         Returns
         -------
         str
             The docstring with the link to the Abaqus documentation.
         """
-        link, link_with_label = cls._class_or_module_link(type, class_or_module_name)
+        link, link_with_label = cls._class_or_module_link(type, class_or_module_name, prefix)
         return docstring.rstrip() + '\n\n' + ' ' * (0 if type == 'module' else 4) + link_with_label
 
     @classmethod
@@ -109,6 +122,7 @@ class AbaqusDoc:
         class_or_module_name: str,
         method_or_function_name: str,
         docstring: str,
+        prefix='',
     ) -> str:
         """Add a link to the Abaqus documentation to the docstring for methods or functions.
 
@@ -122,6 +136,8 @@ class AbaqusDoc:
             The name of the function.
         docstring : str
             The docstring.
+        prefix : str
+            The prefix to the class or module name.
 
         Returns
         -------
@@ -129,7 +145,7 @@ class AbaqusDoc:
             The docstring with the link to the Abaqus documentation.
         """
         link, link_with_label = cls._method_or_function_link(type, class_or_module_name,
-                                                             method_or_function_name)
+                                                             method_or_function_name, prefix)
         return re.sub(r'(\n\s+?)(Parameters\n\s+----------)', r'\1' + link_with_label + r'\1\2', docstring)
 
     @classmethod
@@ -137,6 +153,7 @@ class AbaqusDoc:
         cls,
         class_name: str,
         docstring: str,
+        prefix='',
     ) -> str:
         """Add a link to the Abaqus documentation to the docstring for classes.
 
@@ -146,6 +163,8 @@ class AbaqusDoc:
             The name of the class.
         docstring : str
             The docstring.
+        prefix : str
+            The prefix to the class or module name.
 
         Returns
         -------
@@ -153,7 +172,7 @@ class AbaqusDoc:
             The docstring with the link to the Abaqus documentation.
         """
         return cls._add_link_in_class_or_module_docstring(
-            'class', class_name, docstring
+            'class', class_name, docstring, prefix
         )
 
     @classmethod
@@ -161,6 +180,7 @@ class AbaqusDoc:
         cls,
         module_name: str,
         docstring: str,
+        prefix='',
     ) -> str:
         """Add a link to the Abaqus documentation to the docstring for modules.
 
@@ -170,6 +190,8 @@ class AbaqusDoc:
             The name of the module.
         docstring : str
             The docstring.
+        prefix : str
+            The prefix to the class or module name.
 
         Returns
         -------
@@ -177,7 +199,7 @@ class AbaqusDoc:
             The docstring with the link to the Abaqus documentation.
         """
         return cls._add_link_in_class_or_module_docstring(
-            'module', module_name, docstring
+            'module', module_name, docstring, prefix
         )
 
     @classmethod
@@ -186,6 +208,7 @@ class AbaqusDoc:
         module_name: str,
         function_name: str,
         docstring: str,
+        prefix='',
     ) -> str:
         """Add a link to the Abaqus documentation to the docstring for functions.
 
@@ -197,6 +220,8 @@ class AbaqusDoc:
             The name of the function.
         docstring : str
             The docstring.
+        prefix : str
+            The prefix to the class or module name.
 
         Returns
         -------
@@ -204,7 +229,7 @@ class AbaqusDoc:
             The docstring with the link to the Abaqus documentation.
         """
         return cls._add_link_in_method_or_function_docstring(
-            'function', module_name, function_name, docstring
+            'function', module_name, function_name, docstring, prefix
         )
 
     @classmethod
@@ -213,6 +238,7 @@ class AbaqusDoc:
         class_name: str,
         method_name: str,
         docstring: str,
+        prefix='',
     ) -> str:
         """Add a link to the Abaqus documentation to the docstring for methods.
 
@@ -224,6 +250,8 @@ class AbaqusDoc:
             The name of the method.
         docstring : str
             The docstring.
+        prefix : str
+            The prefix to the class or module name.
 
         Returns
         -------
@@ -231,7 +259,7 @@ class AbaqusDoc:
             The docstring with the link to the Abaqus documentation.
         """
         return cls._add_link_in_method_or_function_docstring(
-            'method', class_name, method_name, docstring
+            'method', class_name, method_name, docstring, prefix
         )
 
 
@@ -241,11 +269,12 @@ doc = AbaqusDoc
 def abaqus_function_doc(func):
     """Add a link to the Abaqus documentation to the docstring of the function.
     """
-
+    module_name = func.__module__.split('.')[-1]
     func.__doc__ = doc.add_link_in_function_docstring(
-        module_name=func.__module__.split('.')[-1],
+        module_name=module_name,
         function_name=func.__name__,
         docstring=func.__doc__,
+        prefix='gpr' if module_name.lower().startswith('cae') else '',
     )
     return func
 
@@ -253,11 +282,12 @@ def abaqus_function_doc(func):
 def abaqus_method_doc(method):
     """Add a link to the Abaqus documentation to the docstring of the function.
     """
-
+    class_name = method.__qualname__.split('.')[0]
     method.__doc__ = doc.add_link_in_method_docstring(
-        class_name=method.__qualname__.split('.')[0],
+        class_name=class_name,
         method_name=method.__name__,
         docstring=method.__doc__,
+        prefix='gpr' if class_name.lower().startswith('cae') else '',
     )
     return method
 
@@ -265,10 +295,11 @@ def abaqus_method_doc(method):
 def abaqus_class_doc(cls):
     """Add a link to the Abaqus documentation to the docstring of the class.
     """
-
+    class_name = cls.__name__
     cls.__doc__ = doc.add_link_in_class_docstring(
-        class_name=cls.__name__,
+        class_name=class_name,
         docstring=cls.__doc__,
+        prefix='gpr' if class_name.lower().startswith('cae') else '',
     )
     return cls
 
