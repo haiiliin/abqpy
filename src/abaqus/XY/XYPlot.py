@@ -14,8 +14,8 @@ from .._decorators import abaqus_class_doc, abaqus_method_doc
 @abaqus_class_doc
 class XYPlot(XYPlotBase):
     
-    @abaqus_method_doc
     @staticmethod
+    @abaqus_method_doc
     def AreaStyle(
         color: str = "", fill: Boolean = ON, style: SymbolicConstant = SOLID
     ) -> AreaStyle:
@@ -53,8 +53,8 @@ class XYPlot(XYPlotBase):
         areaStyle = AreaStyle(color, fill, style)
         return areaStyle
 
-    @abaqus_method_doc
     @staticmethod
+    @abaqus_method_doc
     def LineStyle(
         color: str = "",
         show: Boolean = ON,
@@ -99,8 +99,8 @@ class XYPlot(XYPlotBase):
         lineStyle = LineStyle(color, show, style, thickness)
         return lineStyle
 
-    @abaqus_method_doc
     @staticmethod
+    @abaqus_method_doc
     def QuantityType(label: str = "", type: SymbolicConstant = None) -> QuantityType:
         """This method creates a QuantityType object.
 
@@ -202,8 +202,8 @@ class XYPlot(XYPlotBase):
         quantityType = QuantityType(label, type)
         return quantityType
 
-    @abaqus_method_doc
     @staticmethod
+    @abaqus_method_doc
     def SymbolStyle(
         color: str = "",
         show: Boolean = ON,
@@ -261,8 +261,8 @@ class XYPlot(XYPlotBase):
         symbolStyle = SymbolStyle(color, show, marker, size)
         return symbolStyle
 
-    @abaqus_method_doc
     @staticmethod
+    @abaqus_method_doc
     def TextStyle(
         color: str = "", show: Boolean = ON, font: str = "", rotationAngle: float = 0
     ) -> TextStyle:
