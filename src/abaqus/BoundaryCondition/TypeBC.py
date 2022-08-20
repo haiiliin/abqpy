@@ -87,8 +87,8 @@ class TypeBC(BoundaryCondition):
         self.region = region
         self.localCsys = localCsys
 
-    @abaqus_method_doc
     @staticmethod
+    @abaqus_method_doc
     def EncastreBC(
         name: str,
         createStepName: str,
@@ -129,8 +129,8 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
-    @abaqus_method_doc
     @staticmethod
+    @abaqus_method_doc
     def PinnedBC(
         name: str,
         createStepName: str,
@@ -171,8 +171,8 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
-    @abaqus_method_doc
     @staticmethod
+    @abaqus_method_doc
     def XsymmBC(
         name: str,
         createStepName: str,
@@ -213,8 +213,8 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
-    @abaqus_method_doc
     @staticmethod
+    @abaqus_method_doc
     def YsymmBC(
         name: str,
         createStepName: str,
@@ -255,8 +255,8 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
-    @abaqus_method_doc
     @staticmethod
+    @abaqus_method_doc
     def ZsymmBC(
         name: str,
         createStepName: str,
@@ -297,8 +297,8 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
-    @abaqus_method_doc
     @staticmethod
+    @abaqus_method_doc
     def XasymmBC(
         name: str,
         createStepName: str,
@@ -339,8 +339,8 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
-    @abaqus_method_doc
     @staticmethod
+    @abaqus_method_doc
     def YasymmBC(
         name: str,
         createStepName: str,
@@ -381,8 +381,8 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
-    @abaqus_method_doc
     @staticmethod
+    @abaqus_method_doc
     def ZasymmBC(
         name: str,
         createStepName: str,
