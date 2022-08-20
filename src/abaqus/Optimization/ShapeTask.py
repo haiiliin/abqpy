@@ -226,15 +226,7 @@ class ShapeTask(OptimizationTask):
     #: default value is EVERY_CYCLE.
     updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE
 
-<<<<<<< HEAD
-=======
-    #: A Boolean specifying whether the group in the design response will be evaluated using
-    #: the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-    #: value of False means that the existing algorithm will be used.
-    groupOperator: Boolean = OFF
-
     @abaqus_method_doc
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def __init__(
         self,
         name: str,
