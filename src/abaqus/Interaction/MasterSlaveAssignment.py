@@ -2,16 +2,10 @@ from ..UtilityAndView.abaqusConstants import *
 from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
-<<<<<<< HEAD:src/abaqus/Interaction/MasterSlaveAssignment.py
+@abaqus_class_doc
 class MasterSlaveAssignment:
     """The MasterSlaveAssignment object stores the master-slave assignment definition for
     surfaces in ContactExp and ContactStd objects. The MasterSlaveAssignment object has no
-=======
-@abaqus_class_doc
-class MainSecondaryAssignment:
-    """The MainSecondaryAssignment object stores the main-secondary assignment definition for
-    surfaces in ContactExp and ContactStd objects. The MainSecondaryAssignment object has no
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages):src/abaqus/Interaction/MainSecondaryAssignment.py
     constructor or members.
 
     .. note:: 

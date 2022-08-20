@@ -230,43 +230,4 @@ class OdbDatumCsys:
             An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         ...
-<<<<<<< HEAD
-=======
 
-    @abaqus_method_doc
-    def globalToLocal(
-        self, coordinates: typing.Tuple[float, float, float]
-    ) -> typing.Tuple[float, float, float]:
-        """This method transforms specified coordinates in the global coordinate system into this
-        local coordinate system.
-
-        Parameters
-        ----------
-        coordinates
-            A tuple of three Floats representing the coordinates in the global coordinate system.
-
-        Returns
-        -------
-        typing.Tuple[float, float, float]
-            A tuple of three Floats representing the coordinates in this local coordinate system.
-        """
-        ...
-
-    @abaqus_method_doc
-    def localToGlobal(
-        self, coordinates: typing.Tuple[float, float, float]
-    ) -> typing.Tuple[float, float, float]:
-        """This method transforms specified coordinates in this local coordinate system into the global coordinate system.
-
-        Parameters
-        ----------
-        coordinates
-            A tuple of three Floats representing the coordinates in the local coordinate system.
-
-        Returns
-        -------
-        typing.Tuple[float, float, float]
-            A tuple of three Floats representing the coordinates in this global coordinate system.
-        """
-        ...
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)

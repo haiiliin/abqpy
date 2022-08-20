@@ -459,12 +459,8 @@ class AssemblyBase(Feature):
         """
         ...
 
-<<<<<<< HEAD
-    def getDistance(self, entity1: str, entity2: str, printResults: Boolean = OFF):
-=======
     @abaqus_method_doc
-    def getDistance(self, entity1: str, entity2: str, printResults: Boolean = OFF, csys: DatumCsys = DatumCsys()):
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
+    def getDistance(self, entity1: str, entity2: str, printResults: Boolean = OFF):
         """Depending on the arguments provided, this method returns one of the following:
         
         - The distance between two points.
