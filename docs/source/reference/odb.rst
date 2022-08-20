@@ -128,6 +128,14 @@ FieldValue
 
     .. autoclasstoc::
 
+FieldValue
+~~~~~~~~~~
+
+.. autoclass:: abaqus.Odb.FieldValueArray.FieldValueArray
+    :members:
+
+    .. autoclasstoc::
+
 HistoryOutput
 ~~~~~~~~~~~~~
 
