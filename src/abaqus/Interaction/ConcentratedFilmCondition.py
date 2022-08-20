@@ -1,8 +1,10 @@
 from .Interaction import Interaction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConcentratedFilmCondition(Interaction):
     """The ConcentratedFilmCondition object defines concentrated film coefficients and
     associated sink temperatures.
@@ -86,6 +88,7 @@ class ConcentratedFilmCondition(Interaction):
     #: are UNIFORM, ANALYTICAL_FIELD, and DISCRETE_FIELD. The default value is UNIFORM.
     sinkDistributionType: SymbolicConstant = UNIFORM
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -177,6 +180,7 @@ class ConcentratedFilmCondition(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         nodalArea: float = 1,
@@ -242,6 +246,7 @@ class ConcentratedFilmCondition(Interaction):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(self, stepName: str):
         """This method modifies the propagating data of an existing ConcentratedFilmCondition
         object in the specified step.

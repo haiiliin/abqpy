@@ -1,6 +1,8 @@
 from .Profile import Profile
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class RectangularProfile(Profile):
     """The RectangularProfile object defines the properties of a solid rectangular profile.
     The RectangularProfile object is derived from the Profile object.
@@ -31,6 +33,7 @@ class RectangularProfile(Profile):
     #: A positive Float specifying the **b** dimension of the rectangular profile.
     b: float
 
+    @abaqus_method_doc
     def __init__(self, name: str, a: float, b: float):
         """This method creates a RectangularProfile object.
 
@@ -65,6 +68,7 @@ class RectangularProfile(Profile):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the RectangularProfile object.
 

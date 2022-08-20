@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class LayerProperties:
     """The LayerProperties object defines the properties of a layer of reinforcement for
     membrane, shell, and surface sections.
@@ -56,6 +59,7 @@ class LayerProperties:
     #: default value is 0.0.
     radius: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         barArea: float,

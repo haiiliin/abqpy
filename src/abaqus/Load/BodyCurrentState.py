@@ -1,7 +1,9 @@
 from .LoadState import LoadState
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class BodyCurrentState(LoadState):
     """The BodyCurrentState object stores the propagating data of a body current in a step. One
     instance of this object is created internally by the BodyCurrent object for each step.

@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PenetrationCheck(GeometricRestriction):
     """The PenetrationCheck object defines a penetration check geometric restriction.
     The PenetrationCheck object is derived from the GeometricRestriction object.
@@ -32,6 +34,7 @@ class PenetrationCheck(GeometricRestriction):
     #: cycle. The default value is ON.
     presumeFeasibleRegionAtStart: Boolean = ON
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -69,6 +72,7 @@ class PenetrationCheck(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, presumeFeasibleRegionAtStart: Boolean = ON):
         """This method modifies the PenetrationCheck object.
 

@@ -1,7 +1,9 @@
 from .LoadState import LoadState
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class SurfaceCurrentState(LoadState):
     """The SurfaceCurrentState object stores the propagating data of a surface current in a
     step. One instance of this object is created internally by the SurfaceCurrent object for

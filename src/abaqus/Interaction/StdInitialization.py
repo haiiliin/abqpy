@@ -1,7 +1,9 @@
 from .ContactInitialization import ContactInitialization
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class StdInitialization(ContactInitialization):
     """The StdInitialization object is used in conjunction with ContactStd in Abaqus/Standard
     analyses to specify contact initialization data.
@@ -46,6 +48,7 @@ class StdInitialization(ContactInitialization):
     #: undergo strain-free adjustments.. The default value is None.
     overclosureTolerance: float = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -98,6 +101,7 @@ class StdInitialization(ContactInitialization):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         overclosureType: SymbolicConstant = ADJUST,

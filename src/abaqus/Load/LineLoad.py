@@ -3,8 +3,10 @@ import typing
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LineLoad(Load):
     """The LineLoad object stores the data of an applied line load.
     The LineLoad object is derived from the Load object.
@@ -37,6 +39,7 @@ class LineLoad(Load):
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -98,6 +101,7 @@ class LineLoad(Load):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         distributionType: SymbolicConstant = UNIFORM,
@@ -139,6 +143,7 @@ class LineLoad(Load):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

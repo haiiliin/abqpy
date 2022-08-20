@@ -1,8 +1,10 @@
 from .PredefinedField import PredefinedField
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class KinematicHardening(PredefinedField):
     """The KinematicHardening object stores the data for initial equivalent Plastic strains
     and, if relevant, the initial backstress tensor.
@@ -59,6 +61,7 @@ class KinematicHardening(PredefinedField):
     #: and ANALYTICAL_FIELD. The default value is MAGNITUDE.
     distributionType: SymbolicConstant = MAGNITUDE
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -114,6 +117,7 @@ class KinematicHardening(PredefinedField):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         numBackStress: int = 1,

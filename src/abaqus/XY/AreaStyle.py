@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AreaStyle:
     """The AreaStyle object is used to define how areas are to be filled when drawing XY-plot
     objects.
@@ -43,6 +45,7 @@ class AreaStyle:
     #: using this AreaStyle. The default value is SOLID.
     style: SymbolicConstant = SOLID
 
+    @abaqus_method_doc
     def __init__(
         self, color: str = "", fill: Boolean = ON, style: SymbolicConstant = SOLID
     ):
@@ -79,6 +82,7 @@ class AreaStyle:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self, color: str = "", fill: Boolean = ON, style: SymbolicConstant = SOLID
     ):

@@ -3,8 +3,10 @@ import typing
 from .Amplitude import Amplitude
 from .BaselineCorrection import BaselineCorrection
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class EquallySpacedAmplitude(Amplitude):
     """The EquallySpacedAmplitude object defines a list of amplitude values at fixed time
     intervals beginning at a specified value of time.
@@ -52,6 +54,7 @@ class EquallySpacedAmplitude(Amplitude):
     #: and TOTAL. The default value is STEP.
     timeSpan: SymbolicConstant = STEP
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -104,6 +107,7 @@ class EquallySpacedAmplitude(Amplitude):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         begin: float = 0,

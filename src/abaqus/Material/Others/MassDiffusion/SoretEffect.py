@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SoretEffect:
     r"""The SoretEffect object defines temperature gradient driven mass diffusion.
 
@@ -28,6 +30,7 @@ class SoretEffect:
         - KAPPA
     """
 
+    @abaqus_method_doc
     def __init__(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ):
@@ -61,6 +64,7 @@ class SoretEffect:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the SoretEffect object.
 

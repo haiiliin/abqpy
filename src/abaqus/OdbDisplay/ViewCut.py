@@ -1,8 +1,10 @@
 import typing
 
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ViewCut:
     """The ViewCut object is used to store values and attributes associate with ViewCut type
     objects. ViewCut objects can be created using the methods described below. The methods
@@ -112,6 +114,14 @@ class ViewCut:
     #: default value is FIRST_FRAME.
     referenceFrame: SymbolicConstant = FIRST_FRAME
 
+<<<<<<< HEAD
+=======
+    #: A Float returning the cross-sectional area of the cut when *showFreeBodyCut* is set to
+    #: ON.
+    crossSectionalArea: float = None
+
+    @abaqus_method_doc
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def __init__(
         self,
         name: str,
@@ -187,6 +197,7 @@ class ViewCut:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         angle: float = None,
@@ -277,6 +288,7 @@ class ViewCut:
         """
         ...
 
+    @abaqus_method_doc
     def updateVariable(self):
         """This method updates the field associated with an isosurface cut to be consistent with
         the current primary variable.

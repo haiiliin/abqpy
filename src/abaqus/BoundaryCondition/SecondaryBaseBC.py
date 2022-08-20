@@ -2,8 +2,10 @@ from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SecondaryBaseBC(BoundaryCondition):
     """The SecondaryBaseBC object stores the data for a slave base boundary condition.
     The SecondaryBaseBC object is derived from the BoundaryCondition object.
@@ -39,6 +41,7 @@ class SecondaryBaseBC(BoundaryCondition):
     #: in the global coordinate system. The default value is None.
     localCsys: str = None
 
+    @abaqus_method_doc
     def __init__(
         self, name: str, createStepName: str, regions: RegionArray, dofs: tuple
     ):
@@ -70,12 +73,14 @@ class SecondaryBaseBC(BoundaryCondition):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the data for an existing SecondaryBaseBC object in the step where
         it is created.
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(self, stepName: str):
         """This method modifies the propagating data for an existing SecondaryBaseBC object in the
         specified step.

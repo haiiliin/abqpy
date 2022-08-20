@@ -1,8 +1,10 @@
 from .DisplayGroupArray import DisplayGroupArray
 from .Leaf import Leaf
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LeafFromDisplayGroup(Leaf):
     """The LeafFromDisplayGroup object can be used whenever a Leaf object is expected as an
     argument. Leaf objects are used to specify the items in a display group. Leaf objects
@@ -25,6 +27,7 @@ class LeafFromDisplayGroup(Leaf):
     #: A :py:class:`~abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray` object.
     displayGroup: DisplayGroupArray
 
+    @abaqus_method_doc
     def __init__(self, displayGroup: DisplayGroupArray):
         """This method creates a Leaf object from a sequence of Display Group objects.
 

@@ -15,8 +15,10 @@ from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SoilsStep(AnalysisStep):
     """The SoilsStep object is used to specify transient (consolidation) or steady-state
     response analysis of partially or fully saturated fluid-filled porous media.
@@ -227,6 +229,7 @@ class SoilsStep(AnalysisStep):
     #: A repository of PredefinedFieldState objects.
     predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -363,6 +366,7 @@ class SoilsStep(AnalysisStep):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         description: str = "",

@@ -1,8 +1,10 @@
 from .Interaction import Interaction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SelfContactStd(Interaction):
     """The SelfContactStd object defines self-contact during an Abaqus/Standard analysis.
     The SelfContactStd object is derived from the Interaction object.
@@ -59,6 +61,7 @@ class SelfContactStd(Interaction):
     #: The default value is an empty string.
     contactControls: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -112,6 +115,7 @@ class SelfContactStd(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         enforcement: SymbolicConstant = SURFACE_TO_SURFACE,
@@ -141,6 +145,7 @@ class SelfContactStd(Interaction):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self, stepName: str, interactionProperty: str = "", contactControls: str = ""
     ):

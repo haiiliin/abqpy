@@ -1,7 +1,9 @@
 from ..Part.PartBase import PartBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class RegionPartBase(PartBase):
     """The following commands operate on Part objects. For more information about the Part
     object, see Part object.
@@ -14,6 +16,7 @@ class RegionPartBase(PartBase):
             import regionToolset
     """
 
+    @abaqus_method_doc
     def clashSets(self, arg1: str, arg2: str):
         """This command prints a message describing the relationship between the contents of two
         sets. Possible outcomes are:
@@ -34,6 +37,7 @@ class RegionPartBase(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def markSetInternal(self, setName: str, internalSet: Boolean):
         """This command marks the given Set as internal or external.
 
@@ -46,6 +50,7 @@ class RegionPartBase(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def markSurfaceInternal(self, setName: str, internalSurface: Boolean):
         """This command marks the given Surface as internal or external.
 
@@ -58,6 +63,7 @@ class RegionPartBase(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def isSetInternal(self, setName: str):
         """This command returns a flag indicating whether the Set is Internal.
 
@@ -68,6 +74,7 @@ class RegionPartBase(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def isSurfaceInternal(self, surfaceName: str):
         """This command returns a flag indicating whether the Surface is Internal.
 
@@ -78,6 +85,7 @@ class RegionPartBase(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def deleteSets(self, setNames: tuple):
         """This command deletes the given sets from the part.
 
@@ -88,6 +96,7 @@ class RegionPartBase(PartBase):
         """
         ...
 
+    @abaqus_method_doc
     def deleteSurfaces(self, surfaceNames: tuple):
         """This command deletes the given surfaces from the part.
 

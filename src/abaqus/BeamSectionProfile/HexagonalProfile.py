@@ -1,6 +1,8 @@
 from .Profile import Profile
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class HexagonalProfile(Profile):
     """The HexagonalProfile object defines the properties of a hexagonal profile.
     The HexagonalProfile object is derived from the Profile object.
@@ -32,6 +34,7 @@ class HexagonalProfile(Profile):
     #: *t < (sqrt(3)/2)r*.
     t: float
 
+    @abaqus_method_doc
     def __init__(self, name: str, r: float, t: float):
         """This method creates a HexagonalProfile object.
 
@@ -67,6 +70,7 @@ class HexagonalProfile(Profile):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the HexagonalProfile object.
 

@@ -21,8 +21,10 @@ from .TrussSection import TrussSection
 from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SectionModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
@@ -34,6 +36,7 @@ class SectionModel(ModelBase):
             mdb.models[name]
     """
 
+    @abaqus_method_doc
     def AcousticInfiniteSection(
         self, name: str, material: str, thickness: float = 1, order: int = 10
     ) -> AcousticInfiniteSection:
@@ -76,6 +79,7 @@ class SectionModel(ModelBase):
         )
         return section
 
+    @abaqus_method_doc
     def AcousticInterfaceSection(
         self, name: str, thickness: float = 1
     ) -> AcousticInterfaceSection:
@@ -110,6 +114,7 @@ class SectionModel(ModelBase):
         self.sections[name] = section = AcousticInterfaceSection(name, thickness)
         return section
 
+    @abaqus_method_doc
     def BeamSection(
         self,
         name: str,
@@ -278,6 +283,7 @@ class SectionModel(ModelBase):
         )
         return section
 
+    @abaqus_method_doc
     def CohesiveSection(
         self,
         name: str,
@@ -339,6 +345,7 @@ class SectionModel(ModelBase):
         )
         return section
 
+    @abaqus_method_doc
     def CompositeShellSection(
         self,
         name: str,
@@ -461,6 +468,7 @@ class SectionModel(ModelBase):
         )
         return section
 
+    @abaqus_method_doc
     def CompositeSolidSection(
         self,
         name: str,
@@ -501,6 +509,7 @@ class SectionModel(ModelBase):
         )
         return section
 
+    @abaqus_method_doc
     def ConnectorSection(
         self,
         name: str,
@@ -646,6 +655,7 @@ class SectionModel(ModelBase):
         )
         return section
 
+    @abaqus_method_doc
     def EulerianSection(self, name: str, data: str) -> EulerianSection:
         """This method creates a EulerianSection object.
 
@@ -673,6 +683,7 @@ class SectionModel(ModelBase):
         self.sections[name] = section = EulerianSection(name, data)
         return section
 
+    @abaqus_method_doc
     def GasketSection(
         self,
         name: str,
@@ -734,6 +745,7 @@ class SectionModel(ModelBase):
         )
         return section
 
+    @abaqus_method_doc
     def GeneralStiffnessSection(
         self,
         name: str,
@@ -821,6 +833,7 @@ class SectionModel(ModelBase):
         )
         return section
 
+    @abaqus_method_doc
     def HomogeneousShellSection(
         self,
         name: str,
@@ -945,6 +958,7 @@ class SectionModel(ModelBase):
         )
         return section
 
+    @abaqus_method_doc
     def HomogeneousSolidSection(
         self, name: str, material: str, thickness: float = None
     ) -> HomogeneousSolidSection:
@@ -983,6 +997,7 @@ class SectionModel(ModelBase):
         )
         return section
 
+    @abaqus_method_doc
     def MembraneSection(
         self,
         name: str,
@@ -1052,6 +1067,7 @@ class SectionModel(ModelBase):
         )
         return section
 
+    @abaqus_method_doc
     def MPCSection(
         self,
         name: str,
@@ -1097,6 +1113,7 @@ class SectionModel(ModelBase):
         self.sections[name] = section = MPCSection(name, mpcType, userMode, userType)
         return section
 
+    @abaqus_method_doc
     def PEGSection(
         self,
         name: str,
@@ -1146,6 +1163,7 @@ class SectionModel(ModelBase):
         )
         return section
 
+    @abaqus_method_doc
     def SurfaceSection(
         self, name: str, useDensity: Boolean = OFF, density: float = 0
     ) -> SurfaceSection:
@@ -1182,6 +1200,7 @@ class SectionModel(ModelBase):
         self.sections[name] = section = SurfaceSection(name, useDensity, density)
         return section
 
+    @abaqus_method_doc
     def TrussSection(self, name: str, material: str, area: float = 1) -> TrussSection:
         """This method creates a TrussSection object.
 

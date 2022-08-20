@@ -7,8 +7,10 @@ from .VelocityAdaptiveMeshConstraintState import VelocityAdaptiveMeshConstraintS
 from ..Region.Region import Region
 from ..Step.StepBase import StepBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AdaptivityStep(StepBase):
     """The Step object stores the parameters that determine the context of the step. The Step
     object is the abstract base type for other Step objects. The Step object has no explicit
@@ -24,6 +26,7 @@ class AdaptivityStep(StepBase):
             mdb.models[name].steps[name]
     """
 
+    @abaqus_method_doc
     def AdaptiveMeshConstraintState(
         self,
         amplitudeState: SymbolicConstant = None,
@@ -80,6 +83,7 @@ class AdaptivityStep(StepBase):
         )
         return adaptiveMeshConstraintState
 
+    @abaqus_method_doc
     def DisplacementAdaptiveMeshConstraintState(
         self,
         u1: float = None,
@@ -190,6 +194,7 @@ class AdaptivityStep(StepBase):
         )
         return adaptiveMeshConstraintState
 
+    @abaqus_method_doc
     def VelocityAdaptiveMeshConstraintState(
         self,
         v1: float = None,
@@ -301,6 +306,7 @@ class AdaptivityStep(StepBase):
         )
         return adaptiveMeshConstraintState
 
+    @abaqus_method_doc
     def AdaptiveMeshDomain(
         self,
         region: Region,

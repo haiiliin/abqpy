@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ShearRetention:
     r"""The ShearRetention object defines the reduction of the shear modulus associated with
     crack surfaces in a Concrete model as a function of the tensile strain across the crack.
@@ -33,6 +35,7 @@ class ShearRetention:
         - SHEAR RETENTION
     """
 
+    @abaqus_method_doc
     def __init__(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ):
@@ -66,6 +69,7 @@ class ShearRetention:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ShearRetention object.
 

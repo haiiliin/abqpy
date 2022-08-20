@@ -1,8 +1,10 @@
 import typing
 
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TransverseShearBeam:
     """The TransverseShearBeam object defines the transverse shear stiffness properties of a beam section.
 
@@ -37,6 +39,7 @@ class TransverseShearBeam:
     #: of the section. The default value is 0.25.
     slendernessCompensation: typing.Union[SymbolicConstant, float] = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         scfDefinition: SymbolicConstant,
@@ -76,6 +79,7 @@ class TransverseShearBeam:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the TransverseShearBeam object."""
         ...

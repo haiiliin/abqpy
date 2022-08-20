@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class RemeshingRule:
     """The RemeshingRule object controls the adaptive remeshing resizing and the error
     indicators written to the output database for a specified region of the model.
@@ -101,6 +103,7 @@ class RemeshingRule:
     #: value is None.
     elementCountLimit: int = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -210,16 +213,19 @@ class RemeshingRule:
         """
         ...
 
+    @abaqus_method_doc
     def resume(self):
         """This method resumes the remeshing rule that was previously suppressed."""
         ...
 
+    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the remeshing rule. Abaqus will not remesh regions where the
         rules are suppressed.
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         description: str = "",

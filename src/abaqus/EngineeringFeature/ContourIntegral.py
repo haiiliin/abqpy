@@ -1,8 +1,10 @@
 from .Crack import Crack
 from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ContourIntegral(Crack):
     """The ContourIntegral object defines contour integral objects on an region. Currently only
     assembly regions are supported.
@@ -83,6 +85,7 @@ class ContourIntegral(Crack):
     #: SINGLE_NODE, and DUPLICATE_NODES. The default value is NONE.
     collapsedElementAtTip: SymbolicConstant = NONE
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -165,6 +168,7 @@ class ContourIntegral(Crack):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         symmetric: Boolean = OFF,

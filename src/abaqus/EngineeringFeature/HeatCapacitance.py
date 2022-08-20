@@ -1,8 +1,10 @@
 from .Inertia import Inertia
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class HeatCapacitance(Inertia):
     """The HeatCapacitance object defines point heat capacitance on a part or an assembly
     region.
@@ -50,6 +52,7 @@ class HeatCapacitance(Inertia):
     #: An Int specifying the number of field variable dependencies. The default value is 0.
     dependencies: int = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -89,6 +92,7 @@ class HeatCapacitance(Inertia):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method modifies the HeatCapacitance object.
 

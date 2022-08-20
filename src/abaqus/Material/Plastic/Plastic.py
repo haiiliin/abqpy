@@ -5,8 +5,10 @@ from .Metal.ORNL.Ornl import Ornl
 from .Metal.RateDependent.RateDependent import RateDependent
 from .Potential import Potential
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Plastic:
     r"""The Plastic object specifies a metal plasticity model.
 
@@ -92,6 +94,13 @@ class Plastic:
     #: An :py:class:`~abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature` object.
     annealTemperature: AnnealTemperature = AnnealTemperature(((),))
 
+<<<<<<< HEAD
+=======
+    #: A :py:class:`~abaqus.Material.Plastic.TensileFailure.TensileFailure` object.
+    tensileFailure: TensileFailure = TensileFailure()
+
+    @abaqus_method_doc
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def __init__(
         self,
         table: tuple,
@@ -148,6 +157,7 @@ class Plastic:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Plastic object.
 

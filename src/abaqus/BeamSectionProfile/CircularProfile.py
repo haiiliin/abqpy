@@ -1,6 +1,8 @@
 from .Profile import Profile
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CircularProfile(Profile):
     """The CircularProfile object defines the properties of a solid circular profile.
     The CircularProfile object is derived from the Profile object.
@@ -28,6 +30,7 @@ class CircularProfile(Profile):
     #: library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all).
     r: float
 
+    @abaqus_method_doc
     def __init__(self, name: str, r: float):
         """This method creates a CircularProfile object.
 
@@ -60,6 +63,7 @@ class CircularProfile(Profile):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the CircularProfile object.
 

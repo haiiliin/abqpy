@@ -14,8 +14,10 @@ from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class StepBase:
     """The Step object stores the parameters that determine the context of the step. The Step
     object is the abstract base type for other Step objects. The Step object has no explicit
@@ -119,10 +121,18 @@ class StepBase:
     #: A repository of PredefinedFieldState objects.
     predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
 
+<<<<<<< HEAD
+=======
+    #: A repository of ActivateElements objects.
+    activateElements: typing.Dict[str, ActivateElements] = {}
+
+    @abaqus_method_doc
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def resume(self):
         """This method resumes the step that was previously suppressed."""
         ...
 
+    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the step."""
         ...

@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class XYReportOptions:
     """The XYReportOptions object stores settings used by the writeXYReport method when you
     write an XYData object to an ASCII file. The XYReportOptions object has no constructor.
@@ -16,6 +18,7 @@ class XYReportOptions:
             session.xyReportOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         pageWidth: int = 80,

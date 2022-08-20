@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LoadDisplayOptions:
     """The LoadDisplayOptions object stores settings that specify how assemblies are to be
     displayed in a particular viewport when
@@ -17,6 +19,7 @@ class LoadDisplayOptions:
             session.viewports[name].layers[name].assemblyDisplay.loadOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         concentratedForce: str = ON,

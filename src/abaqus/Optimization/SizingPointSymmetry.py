@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SizingPointSymmetry(GeometricRestriction):
     """The SizingPointSymmetry object defines a sizing point symmetry geometric restriction.
     The SizingPointSymmetry object is derived from the GeometricRestriction object.
@@ -30,6 +32,7 @@ class SizingPointSymmetry(GeometricRestriction):
     #: A Boolean specifying whether to ignore frozen areas. The default value is OFF.
     ignoreFrozenArea: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -66,6 +69,7 @@ class SizingPointSymmetry(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, csys: int = None, ignoreFrozenArea: Boolean = OFF):
         """This method modifies the SizingPointSymmetry object.
 

@@ -6,8 +6,10 @@ from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshNode import MeshNode
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MeshEditAssembly(AssemblyBase):
     """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
@@ -22,6 +24,7 @@ class MeshEditAssembly(AssemblyBase):
             mdb.models[name].rootAssembly
     """
 
+    @abaqus_method_doc
     def collapseMeshEdge(self, edge: str, collapseMethod: SymbolicConstant):
         """This method collapses an edge of a quadrilateral or triangular element of a part
         instance.
@@ -36,6 +39,7 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
+    @abaqus_method_doc
     def combineElement(self, elements: tuple):
         """This method combines two triangular elements of a part instance.
 
@@ -46,6 +50,7 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
+    @abaqus_method_doc
     def deleteElement(
         self, elements: typing.Tuple[MeshElement, ...], deleteUnreferencedNodes: Boolean = OFF
     ):
@@ -62,6 +67,7 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
+    @abaqus_method_doc
     def projectNode(self, nodes: typing.Tuple[MeshNode, ...], projectionReference: str):
         """This method projects the given nodes of a part instance onto a mesh entity, geometric
         entity, or a datum object.
@@ -77,6 +83,7 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
+    @abaqus_method_doc
     def editNode(
         self,
         nodes: typing.Tuple[MeshNode, ...],
@@ -135,6 +142,7 @@ class MeshEditAssembly(AssemblyBase):
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def mergeNodes(
         self,
         nodes: typing.Tuple[MeshNode, ...],
@@ -159,6 +167,7 @@ class MeshEditAssembly(AssemblyBase):
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def mergeNodes(
         self, node1: MeshNode, node2: MeshNode, removeDuplicateElements: Boolean = True
     ):
@@ -177,6 +186,7 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
+    @abaqus_method_doc
     def mergeNodes(self, *args, **kwargs):
         ...
 
@@ -191,6 +201,7 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
+    @abaqus_method_doc
     def splitMeshEdge(self, edge: str, parameter: float = 0):
         """This method splits an edge of a quadrilateral or triangular element of a part instance.
 
@@ -204,6 +215,7 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
+    @abaqus_method_doc
     def swapMeshEdge(self, edge: str):
         """This method swaps the diagonal of two adjacent triangular elements of a part instance.
 
@@ -214,6 +226,7 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
+    @abaqus_method_doc
     def generateMeshByOffset(
         self,
         region: Region,
@@ -267,6 +280,7 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
+    @abaqus_method_doc
     def redoMeshEdit(self):
         """This method executes the edit mesh or the bottom-up meshing operation most recently
         undone by the undoMeshEdit method on an assembly. A redo action must be currently
@@ -277,6 +291,7 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
+    @abaqus_method_doc
     def undoMeshEdit(self):
         """This method undoes the most recent edit mesh or the bottom-up meshing operation on an
         assembly and restores the mesh on the affected part instance to its previous state. An

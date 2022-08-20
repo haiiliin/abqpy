@@ -1,8 +1,10 @@
 import typing
 
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FractureCriterion:
     """The FractureCriterion object specifies fractureCriterion options for a contact
     interaction property.
@@ -108,6 +110,7 @@ class FractureCriterion:
     #: value is DEFAULT.
     unstableTolerance: typing.Union[SymbolicConstant, float] = DEFAULT
 
+    @abaqus_method_doc
     def __init__(
         self,
         initTable: tuple,
@@ -162,6 +165,7 @@ class FractureCriterion:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the FractureCriterion object."""
         ...

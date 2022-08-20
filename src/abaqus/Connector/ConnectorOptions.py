@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConnectorOptions:
     """The ConnectorOptions object is used to define various options for connector behaviors.
     It can be used only in conjunction with CDCTerm, ConnectorDamage, ConnectorDamping,
@@ -99,6 +101,7 @@ class ConnectorOptions:
     #: default value is CONSTANT.
     extrapolation: SymbolicConstant = CONSTANT
 
+    @abaqus_method_doc
     def __init__(
         self,
         useBehRegSettings: Boolean = ON,
@@ -187,6 +190,7 @@ class ConnectorOptions:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorOptions object.
 

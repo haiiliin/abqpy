@@ -16,8 +16,10 @@ from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNode import MeshNode
 from ..Mesh.MeshNodeArray import MeshNodeArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Set(Region):
     """If a set spans more than one part instance, the members **vertices**, **edges**, **faces**,
     **cells**, **elements**, or **nodes** return a sequence of all the queried
@@ -85,6 +87,7 @@ class Set(Region):
     referencePoints: ReferencePointArray = []
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -161,6 +164,7 @@ class Set(Region):
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(self, name: str, objectToCopy: "Set"):
         """This method copies a set from an existing set.
 
@@ -186,6 +190,7 @@ class Set(Region):
         """
         ...
 
+    @abaqus_method_doc
     def __init__(self, *args, **kwargs):
         ...
 
@@ -221,6 +226,7 @@ class Set(Region):
         """
         ...
 
+    @abaqus_method_doc
     def SetFromColor(self, name: str, color: tuple):
         """This method creates a set containing faces of the part marked with a specified color
         attribute. Third-party applications can assign color attributes to faces, and the color
@@ -252,6 +258,7 @@ class Set(Region):
         """
         ...
 
+    @abaqus_method_doc
     def SetFromElementLabels(self, name: str, elementLabels: tuple):
         """This method creates a set from a sequence of element labels in a model database.
 
@@ -279,7 +286,12 @@ class Set(Region):
         """
         ...
 
+<<<<<<< HEAD
     def SetFromNodeLabels(self, name: str, nodeLabels: tuple):
+=======
+    @abaqus_method_doc
+    def SetFromNodeLabels(self, name: str, nodeLabels: tuple, unsorted: Boolean = False):
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
         """This method creates a set from a sequence of node labels in a model database.
 
         .. note:: 
@@ -306,6 +318,7 @@ class Set(Region):
         """
         ...
 
+    @abaqus_method_doc
     def MapSetsFromOdb(
         self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE
     ):

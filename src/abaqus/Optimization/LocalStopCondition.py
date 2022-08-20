@@ -1,7 +1,9 @@
 from .StopCondition import StopCondition
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LocalStopCondition(StopCondition):
     """The LocalStopCondition object defines a local stop condition.
     The LocalStopCondition object is derived from the StopCondition object.
@@ -61,6 +63,7 @@ class LocalStopCondition(StopCondition):
     #: condition is applied. The default value is MODEL.
     region: SymbolicConstant = MODEL
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -128,6 +131,7 @@ class LocalStopCondition(StopCondition):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         comparisonOperation: SymbolicConstant = LESS_THAN,

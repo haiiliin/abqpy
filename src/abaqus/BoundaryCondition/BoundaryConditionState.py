@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class BoundaryConditionState:
     """The BoundaryConditionState object is the abstract base type for other
     BoundaryConditionState objects. The BoundaryConditionState object has no explicit

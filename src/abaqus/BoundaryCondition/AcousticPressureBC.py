@@ -3,8 +3,10 @@ import typing
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AcousticPressureBC(BoundaryCondition):
     """The AcousticPressureBC object stores the data for an acoustic pressure boundary
     condition.
@@ -43,6 +45,7 @@ class AcousticPressureBC(BoundaryCondition):
     #: in the global coordinate system. The default value is None.
     localCsys: str = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -97,6 +100,7 @@ class AcousticPressureBC(BoundaryCondition):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         fieldName: str = "",
@@ -131,6 +135,7 @@ class AcousticPressureBC(BoundaryCondition):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

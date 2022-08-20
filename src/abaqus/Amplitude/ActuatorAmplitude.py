@@ -1,7 +1,9 @@
 from .Amplitude import Amplitude
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ActuatorAmplitude(Amplitude):
     """The ActuatorAmplitude object defines an actuator amplitude curve.
     The ActuatorAmplitude object is derived from the Amplitude object.
@@ -28,6 +30,7 @@ class ActuatorAmplitude(Amplitude):
     #: and TOTAL. The default value is STEP.
     timeSpan: SymbolicConstant = STEP
 
+    @abaqus_method_doc
     def __init__(self, name: str, timeSpan: SymbolicConstant = STEP):
         """This method creates a ActuatorAmplitude object.
 
@@ -59,6 +62,7 @@ class ActuatorAmplitude(Amplitude):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, timeSpan: SymbolicConstant = STEP):
         """This method modifies the ActuatorAmplitude object.
 

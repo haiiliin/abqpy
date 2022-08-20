@@ -2,8 +2,10 @@ from .BoundaryCondition import BoundaryCondition
 from ..Amplitude.Correlation import Correlation
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DisplacementBaseMotionBC(BoundaryCondition):
     """The DisplacementBaseMotionBC object stores the data for a displacement base motion
     boundary condition.
@@ -51,6 +53,7 @@ class DisplacementBaseMotionBC(BoundaryCondition):
     #: in the global coordinate system. The default value is None.
     localCsys: str = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -107,6 +110,7 @@ class DisplacementBaseMotionBC(BoundaryCondition):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         amplitudeScaleFactor: float = 1,
@@ -142,6 +146,7 @@ class DisplacementBaseMotionBC(BoundaryCondition):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(self, stepName: str, amplitude: str = ""):
         """This method modifies the propagating data for an existing DisplacementBaseMotionBC
         object in the specified step.

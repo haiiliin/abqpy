@@ -33,9 +33,11 @@ from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch
 from ..UtilityAndView.abaqusConstants import *
-
-
 # prevent circular imports
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+
+@abaqus_class_doc
 class PartInstance:
     ...
 
@@ -166,6 +168,7 @@ class PartBase(Feature):
     elementEdges: MeshEdgeArray = MeshEdgeArray([])
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -205,6 +208,7 @@ class PartBase(Feature):
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -254,6 +258,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def __init__(self, *args, **kwargs):
         ...
 
@@ -287,6 +292,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def PartFromBooleanMerge(
         self,
         name: str,
@@ -340,6 +346,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def PartFromExtrude2DMesh(
         self, name: str, part: "PartBase", depth: float, elementSize: float
     ):
@@ -377,6 +384,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def PartFromGeometryFile(
         self,
         name: str,
@@ -469,6 +477,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def PartFromInstanceMesh(
         self,
         name: str,
@@ -516,6 +525,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def PartFromMesh(self, name: str, copySets: Boolean = False):
         """This method creates a Part object containing the mesh found in the part and places the
         new Part object in the parts repository.
@@ -544,6 +554,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def PartFromMeshMirror(
         self, name: str, part: "PartBase", point1: tuple, point2: tuple
     ):
@@ -589,6 +600,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def PartFromNodesAndElements(
         self,
         name: str,
@@ -639,6 +651,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def PartFromOdb(
         self,
         name: str,
@@ -716,6 +729,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def PartFromSection3DMeshByPlane(
         self, name: str, part: "PartBase", point1: float, point2: float, point3: tuple
     ):
@@ -765,6 +779,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def PartFromSubstructure(self, name: str, substructureFile: str, odbFile: str):
         """This method creates a substructure Part object by reading a substructure sim file and
         places it in the parts repository.
@@ -800,6 +815,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def Part2DGeomFrom2DMesh(
         self,
         name: str,
@@ -853,6 +869,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Part object.
 
@@ -862,6 +879,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def addGeomToSketch(self, sketch: ConstrainedSketch):
         """This method converts a part into a sketch by projecting all of the edges of the part
         onto the X-Y plane of the sketch. You can use addGeomToSketch with a part of any
@@ -874,6 +892,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def assignThickness(
         self,
         faces: typing.Tuple[Face, ...],
@@ -908,12 +927,14 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def backup(self):
         """This method makes a backup copy of the features in the part. Use the restore method to
         retrieve the part's features from the backup.
         """
         ...
 
+    @abaqus_method_doc
     def checkGeometry(
         self,
         detailed: Boolean = OFF,
@@ -939,16 +960,19 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def clearGeometryCache(self):
         """This method clears the geometry cache. Clearing the geometry cache reduces the amount of
         memory being used to cache part features.
         """
         ...
 
+    @abaqus_method_doc
     def deleteAllFeatures(self):
         """This method deletes all the features in the part."""
         ...
 
+    @abaqus_method_doc
     def deleteFeatures(self, featureNames: tuple):
         """This method deletes the given features.
 
@@ -959,6 +983,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def getAngle(
         self, plane1: str, plane2: str, line1: str, line2: str, commonVertex: str = ""
     ):
@@ -994,6 +1019,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def getArea(self, faces: typing.Tuple[Face, ...], relativeAccuracy: float = 0):
         """This method returns the total surface area of a given face or group of faces.
 
@@ -1012,6 +1038,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def getAssociatedCADPaths(self):
         """This method returns the paths to the associated CAD part and root file. These are only
         available if the part was imported from one of the supported CAD softwares using the
@@ -1025,6 +1052,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def getCADParameters(self):
         """This method returns the names and values of the CAD parameters associated with the part.
         These are only available if the part was imported from one of the supported CAD
@@ -1039,6 +1067,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def getCentroid(
         self, faces: typing.Tuple[Face, ...], cells: typing.Tuple[Face, ...], relativeAccuracy: float = 0
     ):
@@ -1067,7 +1096,12 @@ class PartBase(Feature):
         """
         ...
 
+<<<<<<< HEAD
     def getCoordinates(self, entity: str):
+=======
+    @abaqus_method_doc
+    def getCoordinates(self, entity: str, csys: DatumCsys):
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
         """This method returns the coordinates of specified point.
 
         Parameters
@@ -1082,6 +1116,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def getCurvature(self, edges: typing.Tuple[Edge, ...], samplePoints: int = 100):
         """This method returns the maximum curvature of a given edge or group of edges. For an arc,
         the curvature is constant over the entire edge, and equal to the inverse of the radius.
@@ -1104,6 +1139,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def getDistance(self, entity1: str, entity2: str):
         """Depending on the arguments provided, this method returns one of the following:
         
@@ -1127,6 +1163,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def getLength(self, edges: typing.Tuple[Edge, ...]):
         """This method returns the length of a given edge or group of edges.
 
@@ -1142,6 +1179,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def getPerimeter(self, faces: typing.Tuple[Face, ...]):
         """This method returns the total perimeter of a given face or group of faces. All faces
         need to be on the same part. If the specified faces have shared edges, these edges are
@@ -1160,6 +1198,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def getVolume(self, cells: typing.Tuple[Cell, ...], relativeAccuracy: float = 0):
         """This method returns the volume area of a given cell or group of cells.
 
@@ -1178,6 +1217,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def getMassProperties(
         self,
         regions: str = "",
@@ -1296,6 +1336,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def getFeatureFaces(self, name: str):
         """This method returns a sequence of Face objects that are created by the given feature.
 
@@ -1316,6 +1357,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def getFeatureEdges(self, name: str):
         """This method returns a sequence of Edge objects that are created by the given feature.
 
@@ -1336,6 +1378,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def getFeatureCells(self, name: str):
         """This method returns a sequence of Cell objects that are created by the given feature.
 
@@ -1356,6 +1399,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def getFeatureVertices(self, name: str):
         """This method returns a sequence of ConstrainedSketchVertex objects that are created by the given feature.
 
@@ -1376,6 +1420,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def isAlignedWithSketch(self):
         """This method checks if the normal of an analytical rigid surface part is aligned with
         that of its sketch.
@@ -1393,12 +1438,14 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def printAssignedSections(self):
         """This method prints information on each section that has been assigned to a region of the
         part.
         """
         ...
 
+    @abaqus_method_doc
     def projectEdgesOntoSketch(
         self, sketch: str, edges: tuple, constrainToBackground: Boolean = True
     ):
@@ -1422,6 +1469,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def projectReferencesOntoSketch(
         self,
         sketch: str,
@@ -1457,6 +1505,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def queryAttributes(self, printResults: Boolean = OFF):
         """This method prints the following information about a part:
             - the name, modeling space, and analysis type; and
@@ -1479,12 +1528,14 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def queryCachedStates(self):
         """This method displays the position of geometric states relative to the sequence of
         features in the part cache. The output is displayed in the message area.
         """
         ...
 
+    @abaqus_method_doc
     def queryGeometry(self, relativeAccuracy: float = 0, printResults: Boolean = True):
         """This method prints the following information about a part:
             - the name, modeling space, and analysis type;
@@ -1512,6 +1563,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def queryRegionsMissingSections(self):
         """This method returns all regions in the part that do not have a section assignment but
         require one for analysis.
@@ -1523,12 +1575,14 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def queryDisjointPlyRegions(self):
         """This method provides a list of all composite plys in the current part which have
         disjoint regions.
         """
         ...
 
+    @abaqus_method_doc
     def regenerate(self):
         """This method regenerates a part. When you modify features, it may be convenient to
         postpone regeneration until you make all your changes, since regeneration can be time
@@ -1536,10 +1590,12 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def regenerationWarnings(self):
         """This method prints any regeneration warnings associated with the features."""
         ...
 
+    @abaqus_method_doc
     def removeInvalidGeometry(self):
         """Removes all invalid entities from the part, leaving a valid part. This is not recorded
         as a feature in the feature list, therefore it should be used on parts that have a
@@ -1549,6 +1605,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def restore(self):
         """This method restores the parameters of all features in the assembly to the value they
         had before a failed regeneration. Use the restore method after a failed regeneration,
@@ -1556,10 +1613,12 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def resumeAllFeatures(self):
         """This method resumes all the suppressed features in the part."""
         ...
 
+    @abaqus_method_doc
     def resumeFeatures(self, featureNames: tuple):
         """This method resumes the specified suppressed features in the part.
 
@@ -1570,16 +1629,19 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def resumeLastSetFeatures(self):
         """This method resumes the last set of features to be suppressed in the part."""
         ...
 
+    @abaqus_method_doc
     def saveGeometryCache(self):
         """This method caches the current geometry. Caching the current geometry improves
         regeneration performance.
         """
         ...
 
+    @abaqus_method_doc
     def setAssociatedCADPaths(self, partFile: str = "", rootFile: str = ""):
         """This method sets the paths to the associated CAD part and root file. This method is only
         available if the part was imported from one of the supported CAD softwares using the
@@ -1597,6 +1659,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def suppressFeatures(self, featureNames: tuple):
         """This method suppresses the given features.
 
@@ -1607,6 +1670,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def writeAcisFile(self, fileName: str, version: float = None):
         """This method exports the geometry of the part to a named file in ACIS format.
 
@@ -1625,6 +1689,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def writeCADParameters(
         self, paramFile: str, modifiedParams: tuple = (), updatePaths: str = ""
     ):
@@ -1645,6 +1710,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def writeIgesFile(self, fileName: str, flavor: SymbolicConstant):
         """This method exports the geometry of the part to a named file in IGES format.
 
@@ -1663,6 +1729,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def writeStepFile(self, fileName: str):
         """This method exports the geometry of the part to a named file in STEP format.
 
@@ -1678,6 +1745,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def writeVdaFile(self, fileName: str):
         """This method exports the geometry of the part to a named file in VDA-FS format.
 
@@ -1693,6 +1761,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def copyMeshPattern(
         self,
         elements: typing.Tuple[MeshElement, ...],
@@ -1730,6 +1799,7 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def smoothNodes(self, nodes: typing.Tuple[MeshNode, ...]):
         """This method smooths the given nodes of a native mesh, moving them locally to a more
         optimal location that improves the quality of the mesh
@@ -1741,18 +1811,21 @@ class PartBase(Feature):
         """
         ...
 
+    @abaqus_method_doc
     def Lock(self):
         """This method locks the part. Locking the part prevents any further changes to the part
         that can trigger regeneration of the part.
         """
         ...
 
+    @abaqus_method_doc
     def Unlock(self):
         """This method unlocks the part. Unlocking the part allows it to be regenerated after any
         modifications to the part.
         """
         ...
 
+    @abaqus_method_doc
     def LockForUpgrade(self):
         """This method locks the part for upgrade. Locking the part prevents any further changes to
         the part that can trigger regeneration of the part. When the part is unlocked, all the
