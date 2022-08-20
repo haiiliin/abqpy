@@ -1,4 +1,3 @@
-import functools
 import re
 import typing
 
@@ -243,49 +242,35 @@ def abaqus_function_doc(func):
     """Add a link to the Abaqus documentation to the docstring of the function.
     """
 
-    @functools.wraps(func)
-    def wrapper(*args, **kwargs):
-        return func(*args, **kwargs)
-
-    wrapper.__doc__ = doc.add_link_in_function_docstring(
+    func.__doc__ = doc.add_link_in_function_docstring(
         module_name=func.__module__.split('.')[-1],
         function_name=func.__name__,
-        docstring=wrapper.__doc__,
+        docstring=func.__doc__,
     )
+    return func
 
-    return wrapper
 
-
-def abaqus_method_doc(func):
+def abaqus_method_doc(method):
     """Add a link to the Abaqus documentation to the docstring of the function.
     """
 
-    @functools.wraps(func)
-    def wrapper(*args, **kwargs):
-        return func(*args, **kwargs)
-
-    wrapper.__doc__ = doc.add_link_in_method_docstring(
-        class_name=func.__qualname__.split('.')[0],
-        method_name=func.__name__,
-        docstring=wrapper.__doc__,
+    method.__doc__ = doc.add_link_in_method_docstring(
+        class_name=method.__qualname__.split('.')[0],
+        method_name=method.__name__,
+        docstring=method.__doc__,
     )
-
-    return wrapper
+    return method
 
 
 def abaqus_class_doc(cls):
     """Add a link to the Abaqus documentation to the docstring of the class.
     """
 
-    @functools.wraps(cls)
-    def wrapper(*args, **kwargs):
-        return cls(*args, **kwargs)
-
-    wrapper.__doc__ = doc.add_link_in_class_docstring(
+    cls.__doc__ = doc.add_link_in_class_docstring(
         class_name=cls.__name__,
-        docstring=wrapper.__doc__,
+        docstring=cls.__doc__,
     )
-    return wrapper
+    return cls
 
 
 @abaqus_function_doc
