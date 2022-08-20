@@ -134,12 +134,8 @@ class QuantityType:
     #: The default value is NONE
     type: SymbolicConstant = None
 
-<<<<<<< HEAD
-    def __init__(self, type: SymbolicConstant, label: str = ""):
-=======
     @abaqus_method_doc
-    def __init__(self, label: str = "", type: SymbolicConstant = None):
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
+    def __init__(self, type: SymbolicConstant, label: str = ""):
         """This method creates a QuantityType object.
 
         .. note:: 

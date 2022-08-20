@@ -286,12 +286,8 @@ class Set(Region):
         """
         ...
 
-<<<<<<< HEAD
-    def SetFromNodeLabels(self, name: str, nodeLabels: tuple):
-=======
     @abaqus_method_doc
-    def SetFromNodeLabels(self, name: str, nodeLabels: tuple, unsorted: Boolean = False):
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
+    def SetFromNodeLabels(self, name: str, nodeLabels: tuple):
         """This method creates a set from a sequence of node labels in a model database.
 
         .. note:: 

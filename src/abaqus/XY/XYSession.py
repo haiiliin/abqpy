@@ -105,12 +105,8 @@ class XYSession(XYSessionBase):
         return lineStyle
 
     @staticmethod
-<<<<<<< HEAD
-    def QuantityType(type: SymbolicConstant, label: str = "") -> QuantityType:
-=======
     @abaqus_method_doc
-    def QuantityType(label: str = "", type: SymbolicConstant = None) -> QuantityType:
->>>>>>> 7abdaad (Fix errors in static methods)
+    def QuantityType(type: SymbolicConstant, label: str = "") -> QuantityType:
         """This method creates a QuantityType object.
 
         .. note:: 

@@ -96,23 +96,7 @@ class CellArray(typing.List[Cell]):
         """
         return Cell()
 
-<<<<<<< HEAD
-=======
     @abaqus_method_doc
-    def getExteriorFaces(self):
-        """This method returns the cell faces on the exterior of the CellArray. That is, it returns
-        the faces that are referenced by exactly one of the cells in the sequence.
-
-        Returns
-        -------
-        FaceArray
-            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object representing the faces on the exterior of the cells.
-
-        """
-        ...
-
-    @abaqus_method_doc
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def getSequenceFromMask(self, mask: str):
         """This method returns the object or objects in the CellArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to

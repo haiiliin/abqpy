@@ -137,19 +137,3 @@ class Cell:
 
         """
         ...
-<<<<<<< HEAD
-=======
-
-    @abaqus_method_doc
-    def getCADAttributes(self):
-        """This method returns an array of CAD attribute strings associated with the cell when the
-        part was created from CAD data.
-
-        Returns
-        -------
-        typing.List[str]
-            An array of String.
-
-        """
-        ...
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
