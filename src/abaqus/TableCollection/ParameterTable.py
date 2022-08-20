@@ -1,8 +1,10 @@
 from ..TableCollection.ParameterColumn import ParameterColumn
 from ..TableCollection.ParameterColumnArray import ParameterColumnArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ParameterTable:
     """A ParameterTable is an object that is used to define the containers that encapsulate
     ParameterColumn and DataTable objects. The data of DataTable is dependent on the
@@ -28,6 +30,7 @@ class ParameterTable:
     #: A DataTableArray specifying all the dataTables in the ParameterTable.
     dataTables: str = ""
 
+    @abaqus_method_doc
     def __init__(self, name: str):
         """This method creates a ParameterTable object and places it in the parameterTables
         repository.
@@ -51,6 +54,7 @@ class ParameterTable:
         """
         ...
 
+    @abaqus_method_doc
     def Column(
         self,
         type: SymbolicConstant,

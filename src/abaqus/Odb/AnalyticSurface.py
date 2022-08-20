@@ -1,7 +1,9 @@
 from .OdbSequenceAnalyticSurfaceSegment import OdbSequenceAnalyticSurfaceSegment
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class AnalyticSurface:
     """The AnalyticSurface object is a geometric surface that can be described with straight
     and/or curved line segments.

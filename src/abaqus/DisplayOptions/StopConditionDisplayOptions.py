@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class StopConditionDisplayOptions:
     """The StopConditionDisplayOptions object stores settings that specify how assemblies are
     to be displayed in a particular viewport when
@@ -17,6 +19,7 @@ class StopConditionDisplayOptions:
             session.viewports[name].layers[name].assemblyDisplay.stopConditionOptions
     """
 
+    @abaqus_method_doc
     def setValues(self, localStopCondition: Boolean = ON):
         """This method modifies the StopConditionDisplayOptions object.
 

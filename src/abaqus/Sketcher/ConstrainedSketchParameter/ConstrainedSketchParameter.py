@@ -1,3 +1,6 @@
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class ConstrainedSketchParameter:
     """The ConstrainedSketchParameter object stores the definition of a parameter in the
     sketch.
@@ -26,6 +29,7 @@ class ConstrainedSketchParameter:
     #: one in the ordered list.
     previousParameter: str = ""
 
+    @abaqus_method_doc
     def Parameter(
         self,
         name: str,

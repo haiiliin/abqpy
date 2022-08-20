@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TensionCutOff:
     """The TensionCutOff object specifies tension cutoff for different material models for
     example the Mohr-Coulomb plasticity model.
@@ -30,6 +32,7 @@ class TensionCutOff:
         - TENSION CUTOFF
     """
 
+    @abaqus_method_doc
     def __init__(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ):
@@ -63,6 +66,7 @@ class TensionCutOff:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the TensionCutOff object.
 

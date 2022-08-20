@@ -58,15 +58,20 @@ from .Plastic.Swelling.Swelling import Swelling
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Material(MaterialBase):
     """A :py:class:`~abaqus.Material.Material.Material` object is the object used to specify a material. The Material object stores
     the various settings that determine how a material behaves.
     A material is created by combining one or more individual material options and sub
     options. A particular material option is associated with the Material object through a
     member. For example: the **acousticMedium** member may contain an AcousticMedium object.
-    The alternative of having a MaterialOption abstract base class and a container of
+    The alternative of having a MaterialOption abstract base from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
+class and a container of
     MaterialOptions was rejected because it would make it more difficult to enforce the fact
     that one Material object cannot contain two AcousticMedium objects, for example.
 
@@ -85,6 +90,7 @@ class Material(MaterialBase):
         - MATERIAL
     """
 
+    @abaqus_method_doc
     def AcousticMedium(
         self,
         acousticVolumetricDrag: Boolean = OFF,
@@ -163,6 +169,7 @@ class Material(MaterialBase):
         )
         return self.acousticMedium
 
+    @abaqus_method_doc
     def BrittleCracking(
         self,
         table: tuple,
@@ -202,6 +209,7 @@ class Material(MaterialBase):
         )
         return self.brittleCracking
 
+    @abaqus_method_doc
     def CapPlasticity(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ) -> CapPlasticity:
@@ -236,6 +244,7 @@ class Material(MaterialBase):
         self.capPlasticity = CapPlasticity(table, temperatureDependency, dependencies)
         return self.capPlasticity
 
+    @abaqus_method_doc
     def CastIronPlasticity(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ) -> CastIronPlasticity:
@@ -272,6 +281,7 @@ class Material(MaterialBase):
         )
         return self.castIronPlasticity
 
+    @abaqus_method_doc
     def ClayPlasticity(
         self,
         table: tuple,
@@ -320,6 +330,7 @@ class Material(MaterialBase):
         )
         return self.clayPlasticity
 
+    @abaqus_method_doc
     def Concrete(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ) -> Concrete:
@@ -354,6 +365,7 @@ class Material(MaterialBase):
         self.concrete = Concrete(table, temperatureDependency, dependencies)
         return self.concrete
 
+    @abaqus_method_doc
     def ConcreteDamagedPlasticity(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ) -> ConcreteDamagedPlasticity:
@@ -390,6 +402,7 @@ class Material(MaterialBase):
         )
         return self.concreteDamagedPlasticity
 
+    @abaqus_method_doc
     def Conductivity(
         self,
         table: tuple,
@@ -433,6 +446,7 @@ class Material(MaterialBase):
         )
         return self.conductivity
 
+    @abaqus_method_doc
     def Creep(
         self,
         table: tuple,
@@ -479,6 +493,7 @@ class Material(MaterialBase):
         self.creep = Creep(table, law, temperatureDependency, dependencies, time)
         return self.creep
 
+    @abaqus_method_doc
     def CrushableFoam(
         self,
         table: tuple,
@@ -522,6 +537,45 @@ class Material(MaterialBase):
         )
         return self.crushableFoam
 
+<<<<<<< HEAD
+=======
+    @abaqus_method_doc
+    def CrushStress(
+        self,
+        crushStressTable: typing.Tuple[typing.Tuple[float, ...]],
+        temperatureDependency: Boolean = OFF,
+        dependencies: int = 0,
+    ):
+        """This method creates a CrushStress object.
+
+        .. note::
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].materials[name].CrushStress
+                session.odbs[name].materials[name].CrushStress
+
+        Parameters
+        ----------
+        crushStressTable
+            A sequence of sequences of Floats specifying the items described below.
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+
+        Returns
+        -------
+            A CrushStress object.
+        """
+        self.crushStress = CrushStress(
+            crushStressTable, temperatureDependency, dependencies
+        )
+        return self.crushStress
+
+    @abaqus_method_doc
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def Damping(
         self,
         alpha: float = 0,
@@ -567,6 +621,7 @@ class Material(MaterialBase):
         self.damping = Damping(alpha, beta, composite, structural)
         return self.damping
 
+    @abaqus_method_doc
     def DeformationPlasticity(
         self, table: tuple, temperatureDependency: Boolean = OFF
     ) -> DeformationPlasticity:
@@ -599,6 +654,7 @@ class Material(MaterialBase):
         self.deformationPlasticity = DeformationPlasticity(table, temperatureDependency)
         return self.deformationPlasticity
 
+    @abaqus_method_doc
     def Density(
         self,
         table: tuple,
@@ -648,6 +704,7 @@ class Material(MaterialBase):
         )
         return self.density
 
+    @abaqus_method_doc
     def Depvar(self, deleteVar: int = 0, n: int = 0) -> Depvar:
         """This method creates a Depvar object.
 
@@ -680,6 +737,7 @@ class Material(MaterialBase):
         self.depvar = Depvar(deleteVar, n)
         return self.depvar
 
+    @abaqus_method_doc
     def Dielectric(
         self,
         table: tuple,
@@ -722,6 +780,7 @@ class Material(MaterialBase):
         )
         return self.dielectric
 
+    @abaqus_method_doc
     def Diffusivity(
         self,
         table: tuple,
@@ -769,6 +828,7 @@ class Material(MaterialBase):
         )
         return self.diffusivity
 
+    @abaqus_method_doc
     def DruckerPrager(
         self,
         table: tuple,
@@ -830,6 +890,7 @@ class Material(MaterialBase):
         )
         return self.druckerPrager
 
+    @abaqus_method_doc
     def Elastic(
         self,
         table: tuple,
@@ -901,6 +962,7 @@ class Material(MaterialBase):
         )
         return self.elastic
 
+    @abaqus_method_doc
     def ElectricalConductivity(
         self,
         table: tuple,
@@ -947,6 +1009,7 @@ class Material(MaterialBase):
         )
         return self.electricalConductivity
 
+    @abaqus_method_doc
     def Eos(
         self,
         type: SymbolicConstant = IDEALGAS,
@@ -1054,6 +1117,7 @@ class Material(MaterialBase):
         )
         return self.eos
 
+    @abaqus_method_doc
     def Expansion(
         self,
         type: SymbolicConstant = ISOTROPIC,
@@ -1106,6 +1170,7 @@ class Material(MaterialBase):
         )
         return self.expansion
 
+    @abaqus_method_doc
     def FluidLeakoff(
         self,
         temperatureDependency: Boolean = OFF,
@@ -1146,6 +1211,7 @@ class Material(MaterialBase):
         )
         return self.fluidLeakoff
 
+    @abaqus_method_doc
     def GapFlow(
         self,
         table: tuple,
@@ -1188,6 +1254,7 @@ class Material(MaterialBase):
         self.gapFlow = GapFlow(table, kmax, temperatureDependency, dependencies, type)
         return self.gapFlow
 
+    @abaqus_method_doc
     def GasketMembraneElastic(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ) -> GasketMembraneElastic:
@@ -1224,6 +1291,7 @@ class Material(MaterialBase):
         )
         return self.gasketMembraneElastic
 
+    @abaqus_method_doc
     def GasketThicknessBehavior(
         self,
         table: tuple,
@@ -1313,6 +1381,7 @@ class Material(MaterialBase):
         )
         return self.gasketThicknessBehavior
 
+    @abaqus_method_doc
     def GasketTransverseShearElastic(
         self,
         table: tuple,
@@ -1356,6 +1425,7 @@ class Material(MaterialBase):
         )
         return self.gasketTransverseShearElastic
 
+    @abaqus_method_doc
     def Gel(self, table: tuple) -> Gel:
         """This method creates a Gel object.
 
@@ -1380,6 +1450,7 @@ class Material(MaterialBase):
         self.gel = Gel(table)
         return self.gel
 
+    @abaqus_method_doc
     def Hyperelastic(
         self,
         table: tuple,
@@ -1505,6 +1576,7 @@ class Material(MaterialBase):
         )
         return self.hyperelastic
 
+    @abaqus_method_doc
     def Hyperfoam(
         self,
         testData: Boolean = OFF,
@@ -1557,6 +1629,7 @@ class Material(MaterialBase):
         )
         return self.hyperfoam
 
+    @abaqus_method_doc
     def Hypoelastic(self, table: tuple, user: Boolean = OFF) -> Hypoelastic:
         """This method creates a Hypoelastic object.
 
@@ -1584,6 +1657,7 @@ class Material(MaterialBase):
         self.hypoelastic = Hypoelastic(table, user)
         return self.hypoelastic
 
+    @abaqus_method_doc
     def InelasticHeatFraction(self, fraction: float = 0) -> InelasticHeatFraction:
         """This method creates an InelasticHeatFraction object.
 
@@ -1614,6 +1688,7 @@ class Material(MaterialBase):
         self.inelasticHeatFraction = InelasticHeatFraction(fraction)
         return self.inelasticHeatFraction
 
+    @abaqus_method_doc
     def JouleHeatFraction(self, fraction: float = 1) -> JouleHeatFraction:
         """This method creates a JouleHeatFraction object.
 
@@ -1643,6 +1718,7 @@ class Material(MaterialBase):
         self.jouleHeatFraction = JouleHeatFraction(fraction)
         return self.jouleHeatFraction
 
+    @abaqus_method_doc
     def LatentHeat(self, table: tuple) -> LatentHeat:
         """This method creates a LatentHeat object.
 
@@ -1671,6 +1747,7 @@ class Material(MaterialBase):
         self.latentHeat = LatentHeat(table)
         return self.latentHeat
 
+    @abaqus_method_doc
     def LowDensityFoam(
         self,
         elementRemoval: Boolean = OFF,
@@ -1733,6 +1810,7 @@ class Material(MaterialBase):
         )
         return self.lowDensityFoam
 
+    @abaqus_method_doc
     def MagneticPermeability(
         self,
         table: tuple,
@@ -1802,6 +1880,7 @@ class Material(MaterialBase):
         )
         return self.magneticPermeability
 
+    @abaqus_method_doc
     def MohrCoulombPlasticity(
         self,
         table: tuple,
@@ -1859,6 +1938,7 @@ class Material(MaterialBase):
         )
         return self.mohrCoulombPlasticity
 
+    @abaqus_method_doc
     def MoistureSwelling(self, table: tuple) -> MoistureSwelling:
         """This method creates a MoistureSwelling object.
 
@@ -1883,6 +1963,7 @@ class Material(MaterialBase):
         self.moistureSwelling = MoistureSwelling(table)
         return self.moistureSwelling
 
+    @abaqus_method_doc
     def Permeability(
         self,
         specificWeight: float,
@@ -1937,6 +2018,7 @@ class Material(MaterialBase):
         )
         return self.permeability
 
+    @abaqus_method_doc
     def Piezoelectric(
         self,
         table: tuple,
@@ -1976,6 +2058,7 @@ class Material(MaterialBase):
         )
         return self.piezoelectric
 
+    @abaqus_method_doc
     def Plastic(
         self,
         table: tuple,
@@ -2042,6 +2125,7 @@ class Material(MaterialBase):
         )
         return self.plastic
 
+    @abaqus_method_doc
     def PoreFluidExpansion(
         self,
         table: tuple,
@@ -2084,6 +2168,7 @@ class Material(MaterialBase):
         )
         return self.poreFluidExpansion
 
+    @abaqus_method_doc
     def PorousBulkModuli(
         self, table: tuple, temperatureDependency: Boolean = OFF
     ) -> PorousBulkModuli:
@@ -2112,6 +2197,7 @@ class Material(MaterialBase):
         self.porousBulkModuli = PorousBulkModuli(table, temperatureDependency)
         return self.porousBulkModuli
 
+    @abaqus_method_doc
     def PorousElastic(
         self,
         table: tuple,
@@ -2155,6 +2241,7 @@ class Material(MaterialBase):
         )
         return self.porousElastic
 
+    @abaqus_method_doc
     def PorousMetalPlasticity(
         self,
         table: tuple,
@@ -2198,6 +2285,7 @@ class Material(MaterialBase):
         )
         return self.porousMetalPlasticity
 
+    @abaqus_method_doc
     def Regularization(
         self, rtol: float = 0, strainRateRegularization: SymbolicConstant = LOGARITHMIC
     ) -> Regularization:
@@ -2233,6 +2321,7 @@ class Material(MaterialBase):
         self.regularization = Regularization(rtol, strainRateRegularization)
         return self.regularization
 
+    @abaqus_method_doc
     def Solubility(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ) -> Solubility:
@@ -2267,6 +2356,7 @@ class Material(MaterialBase):
         self.solubility = Solubility(table, temperatureDependency, dependencies)
         return self.solubility
 
+    @abaqus_method_doc
     def Sorption(
         self,
         absorptionTable: tuple,
@@ -2325,6 +2415,7 @@ class Material(MaterialBase):
         )
         return self.sorption
 
+    @abaqus_method_doc
     def SpecificHeat(
         self,
         table: tuple,
@@ -2368,6 +2459,7 @@ class Material(MaterialBase):
         )
         return self.specificHeat
 
+    @abaqus_method_doc
     def Swelling(
         self,
         table: tuple,
@@ -2410,6 +2502,7 @@ class Material(MaterialBase):
         self.swelling = Swelling(table, law, temperatureDependency, dependencies)
         return self.swelling
 
+    @abaqus_method_doc
     def UserMaterial(
         self,
         type: SymbolicConstant = MECHANICAL,
@@ -2475,6 +2568,7 @@ class Material(MaterialBase):
         )
         return self.userMaterial
 
+    @abaqus_method_doc
     def UserOutputVariables(self, n: int = 0) -> UserOutputVariables:
         """This method creates a UserOutputVariables object.
 
@@ -2504,6 +2598,7 @@ class Material(MaterialBase):
         self.userOutputVariables = UserOutputVariables(n)
         return self.userOutputVariables
 
+    @abaqus_method_doc
     def Viscoelastic(
         self,
         domain: SymbolicConstant,
@@ -2579,6 +2674,7 @@ class Material(MaterialBase):
         )
         return self.viscoelastic
 
+    @abaqus_method_doc
     def Viscosity(
         self,
         table: tuple,
@@ -2619,6 +2715,7 @@ class Material(MaterialBase):
         self.viscosity = Viscosity(table, type, temperatureDependency, dependencies)
         return self.viscosity
 
+    @abaqus_method_doc
     def Viscous(
         self,
         table: tuple,
@@ -2661,6 +2758,7 @@ class Material(MaterialBase):
         self.viscous = Viscous(table, law, temperatureDependency, dependencies, time)
         return self.viscous
 
+    @abaqus_method_doc
     def DuctileDamageInitiation(
         self,
         table: tuple,
@@ -2743,6 +2841,7 @@ class Material(MaterialBase):
         """
         return DamageInitiation()
 
+    @abaqus_method_doc
     def FldDamageInitiation(
         self,
         table: tuple,
@@ -2825,6 +2924,7 @@ class Material(MaterialBase):
         """
         return DamageInitiation()
 
+    @abaqus_method_doc
     def FlsdDamageInitiation(
         self,
         table: tuple,
@@ -2907,6 +3007,7 @@ class Material(MaterialBase):
         """
         return DamageInitiation()
 
+    @abaqus_method_doc
     def JohnsonCookDamageInitiation(
         self,
         table: tuple,
@@ -2989,6 +3090,7 @@ class Material(MaterialBase):
         """
         return DamageInitiation()
 
+    @abaqus_method_doc
     def MaxeDamageInitiation(
         self,
         table: tuple,
@@ -3075,6 +3177,7 @@ class Material(MaterialBase):
         """
         return DamageInitiation()
 
+    @abaqus_method_doc
     def MaxsDamageInitiation(
         self,
         table: tuple,
@@ -3161,6 +3264,7 @@ class Material(MaterialBase):
         """
         return DamageInitiation()
 
+    @abaqus_method_doc
     def MkDamageInitiation(
         self,
         table: tuple,
@@ -3243,6 +3347,7 @@ class Material(MaterialBase):
         """
         return DamageInitiation()
 
+    @abaqus_method_doc
     def MsfldDamageInitiation(
         self,
         table: tuple,
@@ -3325,6 +3430,7 @@ class Material(MaterialBase):
         """
         return DamageInitiation()
 
+    @abaqus_method_doc
     def QuadeDamageInitiation(
         self,
         table: tuple,
@@ -3411,6 +3517,7 @@ class Material(MaterialBase):
         """
         return DamageInitiation()
 
+    @abaqus_method_doc
     def QuadsDamageInitiation(
         self,
         table: tuple,
@@ -3497,6 +3604,7 @@ class Material(MaterialBase):
         """
         return DamageInitiation()
 
+    @abaqus_method_doc
     def MaxpeDamageInitiation(
         self,
         table: tuple,
@@ -3583,6 +3691,7 @@ class Material(MaterialBase):
         """
         return DamageInitiation()
 
+    @abaqus_method_doc
     def MaxpsDamageInitiation(
         self,
         table: tuple,
@@ -3669,6 +3778,7 @@ class Material(MaterialBase):
         """
         return DamageInitiation()
 
+    @abaqus_method_doc
     def ShearDamageInitiation(
         self,
         table: tuple,
@@ -3751,6 +3861,7 @@ class Material(MaterialBase):
         """
         return DamageInitiation()
 
+    @abaqus_method_doc
     def HashinDamageInitiation(
         self,
         table: tuple,
@@ -3833,6 +3944,7 @@ class Material(MaterialBase):
         """
         return DamageInitiation()
 
+    @abaqus_method_doc
     def MeanFieldHomogenization(
         self,
         angleSubdivision: int = None,

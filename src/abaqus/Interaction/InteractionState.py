@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class InteractionState:
     """The InteractionState object is the abstract base type for other InteractionState
     objects. The InteractionState object has no explicit constructor. The members of the

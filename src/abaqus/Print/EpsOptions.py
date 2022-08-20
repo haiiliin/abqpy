@@ -2,8 +2,10 @@ import typing
 
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class EpsOptions(_OptionsBase):
     """The EpsOptions object stores the settings that Abaqus uses when printing using
     Encapsulated PostScript format. The EpsOptions object has no constructor. Abaqus creates
@@ -46,6 +48,7 @@ class EpsOptions(_OptionsBase):
     #: value is MEDIUM.
     shadingQuality: SymbolicConstant = MEDIUM
 
+    @abaqus_method_doc
     def setValues(
         self,
         *,

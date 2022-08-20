@@ -1,7 +1,9 @@
 from .OdbDataFrameArray import OdbDataFrameArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbDataStep:
     """The OdbDataStep object.
 
@@ -17,6 +19,7 @@ class OdbDataStep:
     #: An :py:class:`~abaqus.PlotOptions.OdbDataFrameArray.OdbDataFrameArray` object specifying the list of frames. The list is read-only.
     frames: OdbDataFrameArray = []
 
+    @abaqus_method_doc
     def setValues(self, activateFrames: Boolean, update: Boolean = OFF):
         """This method modifies the OdbDataStep object.
 

@@ -1,6 +1,8 @@
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PlanarTestData:
     r"""The PlanarTestData object specifies planar test (or pure shear) data (compression and/or
     tension).
@@ -36,6 +38,7 @@ class PlanarTestData:
         - PLANAR TEST DATA
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -80,6 +83,7 @@ class PlanarTestData:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the PlanarTestData object."""
         ...

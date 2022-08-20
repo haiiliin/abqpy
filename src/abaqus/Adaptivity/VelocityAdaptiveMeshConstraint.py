@@ -3,8 +3,10 @@ import typing
 from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     """The VelocityAdaptiveMeshConstraint object stores the data for an Arbitrary Lagrangian
     Eularian (ALE) style velocity adaptive mesh constraint.
@@ -35,6 +37,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     #: in the global coordinate system. The default value is None.
     localCsys: str = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -112,6 +115,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         """
         super().__init__(name=name, category=MECHANICAL, region=region)
 
+    @abaqus_method_doc
     def setValues(
         self,
         v1: typing.Union[SymbolicConstant, float] = UNSET,
@@ -168,6 +172,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

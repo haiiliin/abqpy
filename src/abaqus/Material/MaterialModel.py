@@ -1,7 +1,9 @@
 from ..Material.Material import Material
 from ..Model.ModelBase import ModelBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MaterialModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
@@ -13,6 +15,7 @@ class MaterialModel(ModelBase):
             mdb.models[name]
     """
 
+    @abaqus_method_doc
     def Material(self, name: str, description: str = "", materialIdentifier: str = ""):
         """This method creates a Material object.
 

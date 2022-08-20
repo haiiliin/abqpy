@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Sorption:
     r"""The Sorption object defines absorption and exsorption behaviors of a partially saturated
     porous medium in the analysis of coupled wetting liquid flow and porous medium stress.
@@ -34,6 +36,7 @@ class Sorption:
         - SORPTION
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         absorptionTable: tuple,
@@ -84,6 +87,7 @@ class Sorption:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Sorption object.
 

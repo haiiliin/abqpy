@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class MeshFace:
     """The MeshFace object refers to an element face. It has no constructor or members. A
     MeshFace object can be accessed via a MeshFaceArray or a repository on a part or part
@@ -24,6 +27,7 @@ class MeshFace:
     #: An Int specifying a symbolic constant specifying the side of the element.
     face: int = None
 
+    @abaqus_method_doc
     def getElemEdges(self):
         """This method returns a tuple of unique element edges on the element face.
 
@@ -34,6 +38,7 @@ class MeshFace:
         """
         ...
 
+    @abaqus_method_doc
     def getElements(self):
         """This method returns a tuple of elements that share the element face.
 
@@ -44,6 +49,7 @@ class MeshFace:
         """
         ...
 
+    @abaqus_method_doc
     def getNodes(self):
         """This method returns a tuple of nodes on the element face.
 
@@ -54,6 +60,7 @@ class MeshFace:
         """
         ...
 
+    @abaqus_method_doc
     def getNodesByFaceAngle(self, angle: str):
         """This method returns an array of mesh node objects that are obtained by recursively
         finding adjacent element faces that are at an angle of less than or equal to the
@@ -71,6 +78,7 @@ class MeshFace:
         """
         ...
 
+    @abaqus_method_doc
     def getNormal(self):
         """This method returns the normal direction for the element face.
 
@@ -82,6 +90,7 @@ class MeshFace:
         """
         ...
 
+    @abaqus_method_doc
     def getElemFacesByFaceAngle(self, angle: str):
         """This method returns an array of element face objects that are obtained by recursively
         finding adjacent element faces that are at an angle of less than or equal to the
@@ -99,6 +108,7 @@ class MeshFace:
         """
         ...
 
+    @abaqus_method_doc
     def getElemEdgesByFaceAngle(self, angle: str):
         """This method returns an array of element edge objects that are obtained by recursively
         finding adjacent element edges that are at an angle of less than or equal to the
@@ -116,6 +126,7 @@ class MeshFace:
         """
         ...
 
+    @abaqus_method_doc
     def getElementsByFaceAngle(self, angle: str):
         """This method returns an array of mesh Element objects that are obtained by recursively
         finding adjacent element faces that are at an angle of less than or equal to the
@@ -133,6 +144,7 @@ class MeshFace:
         """
         ...
 
+    @abaqus_method_doc
     def getElemFacesByLimitingAngle(self, angle: str):
         """This method returns an array of element edge objects that are obtained by recursively
         finding adjacent element faces that are at an angle of less than or equal to the
@@ -150,6 +162,7 @@ class MeshFace:
         """
         ...
 
+    @abaqus_method_doc
     def getElementsViaTopology(self):
         """This method returns an array of mesh Element objects that are obtained by recursively
         finding adjacent elements via topology.
@@ -161,6 +174,7 @@ class MeshFace:
         """
         ...
 
+    @abaqus_method_doc
     def getElemFacesByLayer(self, numLayers: str):
         """This method returns an array of element face objects, obtained by traversing shell
         elements or the exterior of a solid mesh, and recursively finding adjacent element faces

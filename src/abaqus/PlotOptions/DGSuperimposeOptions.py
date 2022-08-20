@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class DGSuperimposeOptions:
     """The DGSuperimposeOptions object stores values and attributes associated with the
     undeformed shape when the display contains both the deformed shape and the undeformed

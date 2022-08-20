@@ -1,6 +1,8 @@
 from .Profile import Profile
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PipeProfile(Profile):
     """The PipeProfile object defines the properties of a circular pipe profile.
     The PipeProfile object is derived from the Profile object.
@@ -31,6 +33,7 @@ class PipeProfile(Profile):
     #: A Float specifying the wall thickness of the pipe.
     t: float
 
+    @abaqus_method_doc
     def __init__(self, name: str, r: float, t: float):
         """This method creates a PipeProfile object.
 
@@ -65,6 +68,7 @@ class PipeProfile(Profile):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the PipeProfile object.
 

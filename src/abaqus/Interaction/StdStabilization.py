@@ -1,7 +1,9 @@
 from .ContactStabilization import ContactStabilization
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class StdStabilization(ContactStabilization):
     """The StdStabilization object is used in conjunction with ContactStd in Abaqus/Standard
     analyses to specify contact stabilization.
@@ -48,6 +50,7 @@ class StdStabilization(ContactStabilization):
     #: default value is OFF.
     reset: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -102,6 +105,7 @@ class StdStabilization(ContactStabilization):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         zeroDistance: float = None,

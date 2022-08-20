@@ -11,8 +11,10 @@ from ..BasicGeometry.ReferencePoint import ReferencePoint
 from ..BasicGeometry.Vertex import Vertex
 from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshNode import MeshNode
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class RegionAssembly(RegionAssemblyBase):
     """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
@@ -27,6 +29,7 @@ class RegionAssembly(RegionAssemblyBase):
             mdb.models[name].rootAssembly
     """
 
+    @abaqus_method_doc
     def Surface(
         self,
         side1Faces: typing.Tuple[Face, ...] = None,
@@ -185,6 +188,7 @@ class RegionAssembly(RegionAssemblyBase):
         return surface
 
     @typing.overload
+    @abaqus_method_doc
     def Set(
         self,
         name: str,
@@ -261,6 +265,7 @@ class RegionAssembly(RegionAssemblyBase):
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def Set(self, name: str, objectToCopy: Set) -> Set:
         """This method copies a set from an existing set.
 

@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PropertyTableData:
     """A PropertyTableData is an object that is used to specify the property table of the
     respective property table type.
@@ -43,6 +45,7 @@ class PropertyTableData:
     #: PropertyTable, and the field variables mentioned in PropertyTableData.
     data: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         label: str = "",
@@ -92,6 +95,7 @@ class PropertyTableData:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the PropertyTableData object.
 

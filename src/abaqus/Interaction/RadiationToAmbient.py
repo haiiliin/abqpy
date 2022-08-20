@@ -1,8 +1,10 @@
 from .Interaction import Interaction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class RadiationToAmbient(Interaction):
     """The RadiationToAmbient object defines radiant heat transfer between a surface and its
     environment.
@@ -57,6 +59,7 @@ class RadiationToAmbient(Interaction):
     #: only when **radiationType** = AMBIENT.
     ambientTemperatureAmp: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -119,6 +122,7 @@ class RadiationToAmbient(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         field: str = "",
@@ -157,6 +161,7 @@ class RadiationToAmbient(Interaction):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(self, stepName: str):
         """This method modifies the propagating data of an existing RadiationToAmbient object in
         the specified step.

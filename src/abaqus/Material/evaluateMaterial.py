@@ -1,5 +1,6 @@
 from .Material import Material
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_function_doc
 
 """ This command evaluates the behavior of a hyperelastic material under standard test 
 conditions. 
@@ -11,6 +12,7 @@ Notes
 """
 
 
+@abaqus_function_doc
 def evaluateMaterial(
     material: Material,
     simulationName: str,

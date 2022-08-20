@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class Color:
     """The Color object contains the RGB definition of a system color.
 
@@ -16,6 +19,7 @@ class Color:
     #: between 0.0 and 1.0.
     rgb: float = None
 
+    @abaqus_method_doc
     def setByRGB(self, rgb: tuple):
         """This method changes the RGB value of a user-defined color. However, users cannot define
         colors, and this method does not modify system-defined colors.

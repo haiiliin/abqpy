@@ -1,6 +1,8 @@
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConstrainedSketcherOptions:
     """The ConstrainedSketcherOptions object is used to store values and attributes which will
     be applied to all sketches used in the current session. The ConstrainedSketcherOptions
@@ -15,6 +17,7 @@ class ConstrainedSketcherOptions:
             session.sketcherOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         constructionGeometry: Boolean = ON,

@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class GapHeatGeneration:
     """The GapHeatGeneration object specifies heat generation for a contact interaction
     property.
@@ -23,7 +26,12 @@ class GapHeatGeneration:
     #: The default value is 0.5.
     slaveFraction: float = 0
 
+<<<<<<< HEAD
     def __init__(self, conversionFraction: float = 1, slaveFraction: float = 0):
+=======
+    @abaqus_method_doc
+    def __init__(self, conversionFraction: float = 1, secondaryFraction: float = 0):
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
         """This method creates a GapHeatGeneration object.
 
         .. note:: 
@@ -49,6 +57,7 @@ class GapHeatGeneration:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the GapHeatGeneration object."""
         ...

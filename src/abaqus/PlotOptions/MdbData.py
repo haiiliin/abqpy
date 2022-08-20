@@ -2,8 +2,10 @@ import typing
 
 from .MdbDataInstance import MdbDataInstance
 from .MdbDataStep import MdbDataStep
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class MdbData:
     """The MdbData object has no constructor. Abaqus creates an MdbData object when a cae file
     is opened or a new model is created. There is one MdbData for each model in session.

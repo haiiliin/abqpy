@@ -4,8 +4,10 @@ from ....TestData.SimpleShearTestData import SimpleShearTestData
 from ....TestData.UniaxialTestData import UniaxialTestData
 from ....TestData.VolumetricTestData import VolumetricTestData
 from .....UtilityAndView.abaqusConstants import *
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Hyperfoam:
     r"""The Hyperfoam object specifies elastic properties for a hyperelastic foam.
 
@@ -47,6 +49,7 @@ class Hyperfoam:
     #: A :py:class:`~abaqus.Material.TestData.UniaxialTestData.UniaxialTestData` object.
     uniaxialTestData: UniaxialTestData = UniaxialTestData(((),))
 
+    @abaqus_method_doc
     def __init__(
         self,
         testData: Boolean = OFF,
@@ -96,6 +99,7 @@ class Hyperfoam:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Hyperfoam object.
 

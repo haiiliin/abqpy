@@ -1,11 +1,13 @@
 from ..Odb.Odb import Odb
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_function_doc
 
 """This command writes a free body output report to a file. 
 
 """
 
 
+@abaqus_function_doc
 def writeFreeBodyReport(
     fileName: str,
     append: Boolean,

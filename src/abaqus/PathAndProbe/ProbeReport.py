@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ProbeReport:
     """The ProbeReport object is used to store settings associated with tabular reports of
     probe data. The ProbeReport object has no constructor. Abaqus creates the
@@ -18,6 +20,7 @@ class ProbeReport:
             session.probeReport
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         options: str = None,

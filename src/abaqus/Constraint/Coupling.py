@@ -3,8 +3,10 @@ import typing
 from .Constraint import Constraint
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Coupling(Constraint):
     """The Coupling object defines a constraint between a group of coupling nodes located on a
     region and a reference point.
@@ -89,6 +91,14 @@ class Coupling(Constraint):
     #: **couplingType** = DISTRIBUTING.
     weightingMethod: SymbolicConstant = UNIFORM
 
+<<<<<<< HEAD
+=======
+    #: A Float specifying the value of the thermal expansion coefficient. The default value is 0.0.
+    #: The alpha argument applies only when couplingType=KINEMATIC.
+    alpha: float = 0.0
+
+    @abaqus_method_doc
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def __init__(
         self,
         name: str,
@@ -173,6 +183,7 @@ class Coupling(Constraint):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         adjust: Boolean = OFF,

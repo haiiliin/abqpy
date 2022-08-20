@@ -6,8 +6,10 @@ from .OdbPart import OdbPart
 from .OdbSet import OdbSet
 from .SectionPoint import SectionPoint
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class HistoryPoint:
     """The HistoryPoint object specifies the point at which history data will be collected. The
     HistoryPoint object is a temporary object used as an argument to the HistoryRegion
@@ -84,6 +86,7 @@ class HistoryPoint:
     #: An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object specifying the node for which the data are to be collected.
     node: OdbMeshNode
 
+    @abaqus_method_doc
     def __init__(self, node: OdbMeshNode):
         """This method creates a HistoryPoint object for a node.
 
@@ -106,6 +109,7 @@ class HistoryPoint:
         """
         ...
 
+    @abaqus_method_doc
     def __init__(
         self,
         element: OdbMeshElement,
@@ -162,6 +166,7 @@ class HistoryPoint:
         """
         ...
 
+    @abaqus_method_doc
     def __init__(self, region: OdbSet):
         """This method creates a HistoryPoint object for a region.
 
@@ -184,6 +189,7 @@ class HistoryPoint:
         """
         ...
 
+    @abaqus_method_doc
     def __init__(self, assembly: OdbAssembly):
         """This method creates a HistoryPoint object for the OdbAssembly object.
 
@@ -206,6 +212,7 @@ class HistoryPoint:
         """
         ...
 
+    @abaqus_method_doc
     def __init__(self, instance: OdbInstance):
         """This method creates a HistoryPoint object for the OdbInstance object.
 

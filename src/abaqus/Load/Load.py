@@ -1,6 +1,8 @@
 from ..Region.Region import Region
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Load:
     """The Load object is the abstract base type for other Load objects. The Load object has no
     explicit constructor. The methods and members of the Load object are common to all
@@ -21,6 +23,7 @@ class Load:
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
+    @abaqus_method_doc
     def deactivate(self, stepName: str):
         """This method deactivates the load in the specified step and all its subsequent steps.
 
@@ -31,6 +34,7 @@ class Load:
         """
         ...
 
+    @abaqus_method_doc
     def move(self, fromStepName: str, toStepName: str):
         """This method moves the load state object from one step to a different step.
 
@@ -43,6 +47,7 @@ class Load:
         """
         ...
 
+    @abaqus_method_doc
     def reset(self, stepName: str):
         """This method resets the load state of the specified step to the state of the previous
         general analysis step.
@@ -54,14 +59,17 @@ class Load:
         """
         ...
 
+    @abaqus_method_doc
     def resume(self):
         """This method resumes the load that was previously suppressed."""
         ...
 
+    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the load."""
         ...
 
+    @abaqus_method_doc
     def delete(self, indices: tuple):
         """This method allows you to delete existing loads.
 

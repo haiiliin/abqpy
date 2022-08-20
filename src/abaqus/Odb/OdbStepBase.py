@@ -6,8 +6,10 @@ from .HistoryRegion import HistoryRegion
 from .OdbFrameArray import OdbFrameArray
 from .OdbLoadCase import OdbLoadCase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbStepBase:
     """An output database contains the same steps of the model database that originated it.
 
@@ -61,6 +63,7 @@ class OdbStepBase:
     #: media.
     acousticMassCenter: float = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -168,6 +171,7 @@ class OdbStepBase:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getFrame(self, frameValue: str, match: SymbolicConstant = CLOSEST):
         """This method retrieves an OdbFrame object associated with a given frame value.
 
@@ -197,6 +201,7 @@ class OdbStepBase:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getFrame(self, loadCase: OdbLoadCase):
         """This method retrieves an OdbFrame object associated with a given load case.
 
@@ -218,6 +223,7 @@ class OdbStepBase:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getFrame(
         self, loadCase: OdbLoadCase, frameValue: str, match: SymbolicConstant = CLOSEST
     ):
@@ -251,6 +257,7 @@ class OdbStepBase:
         """
         ...
 
+    @abaqus_method_doc
     def getFrame(self, *args, **kwargs):
         ...
 
@@ -279,6 +286,7 @@ class OdbStepBase:
         """
         ...
 
+    @abaqus_method_doc
     def setDefaultDeformedField(self, field: FieldOutput):
         """This method sets the default deformed field variable in a step.
 
@@ -289,6 +297,7 @@ class OdbStepBase:
         """
         ...
 
+    @abaqus_method_doc
     def setDefaultField(self, field: FieldOutput):
         """This method sets the default field variable in a step.
 

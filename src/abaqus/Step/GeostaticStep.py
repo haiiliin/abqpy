@@ -15,8 +15,10 @@ from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class GeostaticStep(AnalysisStep):
     """The GeostaticStep object is used to verify that the geostatic stress field is in
     equilibrium with the applied loads and boundary conditions on the model and to iterate,
@@ -187,6 +189,7 @@ class GeostaticStep(AnalysisStep):
     #: A repository of PredefinedFieldState objects.
     predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -282,6 +285,7 @@ class GeostaticStep(AnalysisStep):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         description: str = "",

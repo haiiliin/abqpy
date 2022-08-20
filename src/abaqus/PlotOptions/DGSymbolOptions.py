@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class DGSymbolOptions:
     """The DGSymbolOptions object stores values and attributes associated with a symbol plot.
     The DGSymbolOptions object has no constructor command. Abaqus creates an

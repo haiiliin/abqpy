@@ -1,8 +1,10 @@
 from .Interaction import Interaction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ModelChange(Interaction):
     """The ModelChange object defines model change interactions for element removal and
     reactivation.
@@ -50,6 +52,7 @@ class ModelChange(Interaction):
     #: default value is OFF.
     includeStrain: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -101,6 +104,7 @@ class ModelChange(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         isRestart: Boolean = OFF,
@@ -135,6 +139,7 @@ class ModelChange(Interaction):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self, stepName: str, activeInStep: Boolean = OFF, includeStrain: Boolean = OFF
     ):

@@ -1,6 +1,8 @@
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MeanFieldInclusion:
     """The MeanFieldInclusion object specifies the inclusion type multiscale material property.
 
@@ -28,6 +30,7 @@ class MeanFieldInclusion:
 
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -103,6 +106,7 @@ class MeanFieldInclusion:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self):
         """This method modifies the MeanFieldInclusion object.
 

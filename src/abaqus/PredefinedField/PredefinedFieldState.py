@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class PredefinedFieldState:
     """The PredefinedFieldState object is the base object for the objects in the
     predefinedFieldState repository of the Step object. The members of the

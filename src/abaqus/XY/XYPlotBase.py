@@ -5,8 +5,10 @@ from .Chart import Chart
 from .Title import Title
 from .XYCurve import XYCurve
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class XYPlotBase:
     """The XYPlot object is used to display Chart objects.
 
@@ -36,6 +38,7 @@ class XYPlotBase:
     #: of the active Chart object of this XYPlot.
     transform: float = None
 
+    @abaqus_method_doc
     def __init__(self, name: str):
         """This method creates an empty XYPlot object.
 
@@ -58,6 +61,7 @@ class XYPlotBase:
         """
         ...
 
+    @abaqus_method_doc
     def autoColor(self, lines: Boolean = OFF, symbols: Boolean = OFF):
         """This method distributes the colors on all curves displayed in the XYPlot using the color
         palette defined by the xyColors AutoColors object.
@@ -71,16 +75,19 @@ class XYPlotBase:
         """
         ...
 
+    @abaqus_method_doc
     def autoSymbol(self):
         """This method distributes the symbols on all curves displayed in the XYPlot."""
         ...
 
+    @abaqus_method_doc
     def fitCurves(self):
         """This method resets the transform of all the charts of the XYPlot object. It cancels any
         zoom or pan action.
         """
         ...
 
+    @abaqus_method_doc
     def next(self, drawImmediately: Boolean = False):
         """This method restores the **transform** member of the active Chart object to the next
         setting in the transform list. (There is a list of eight transforms stored for each
@@ -95,6 +102,7 @@ class XYPlotBase:
         """
         ...
 
+    @abaqus_method_doc
     def previous(self, drawImmediately: Boolean = False):
         """This method restores the **transform** member of the active Chart object to the previous
         setting in the transform list. (There is a list of eight transforms stored for each
@@ -109,6 +117,7 @@ class XYPlotBase:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, title: Title, transform: tuple):
         """This method modifies the XYPlot object.
 

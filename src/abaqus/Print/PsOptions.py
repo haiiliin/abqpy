@@ -1,7 +1,9 @@
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PsOptions(_OptionsBase):
     """The PsOptions object stores the settings that Abaqus uses when printing using PostScript
     format. The PsOptions object has no constructor. Abaqus creates the **psOptions** member
@@ -64,6 +66,7 @@ class PsOptions(_OptionsBase):
 
     shadingQuality: SymbolicConstant = MEDIUM
 
+    @abaqus_method_doc
     def setValues(
         self,
         *,

@@ -1,8 +1,10 @@
 from .Interaction import Interaction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SelfContactExp(Interaction):
     """The SelfContactExp object defines self-contact during an Abaqus/Explicit analysis.
     The SelfContactExp object is derived from the Interaction object.
@@ -38,6 +40,7 @@ class SelfContactExp(Interaction):
     #: The default value is an empty string.
     contactControls: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -82,6 +85,7 @@ class SelfContactExp(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         mechanicalConstraint: SymbolicConstant = KINEMATIC,
@@ -102,6 +106,7 @@ class SelfContactExp(Interaction):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self, stepName: str, interactionProperty: str = "", contactControls: str = ""
     ):

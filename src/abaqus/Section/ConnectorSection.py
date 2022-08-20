@@ -1,8 +1,10 @@
 from .Section import Section
 from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConnectorSection(Section):
     """A :py:class:`~abaqus.Connector.ConnectorSection.ConnectorSection` object describes the connection type and the behavior of a connector.
     The ConnectorSection object is derived from the Section object.
@@ -120,6 +122,7 @@ class ConnectorSection(Section):
     #: A :py:class:`~abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray` object.
     behaviorOptions: ConnectorBehaviorOptionArray = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -244,6 +247,7 @@ class ConnectorSection(Section):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         assembledType: SymbolicConstant = NONE,

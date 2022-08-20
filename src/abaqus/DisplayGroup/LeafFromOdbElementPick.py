@@ -1,7 +1,9 @@
 from .Leaf import Leaf
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LeafFromOdbElementPick(Leaf):
     """The LeafFromOdbElementPick object can be used whenever a Leaf object is expected as an
     argument. Leaf objects are used to specify the items in a display group. Leaf objects
@@ -21,6 +23,7 @@ class LeafFromOdbElementPick(Leaf):
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant = None
 
+    @abaqus_method_doc
     def __init__(self, elementPick: tuple):
         """This method creates a Leaf object from a tuple containing machine readable, compact
         strings defining the elements picked for each part instance. Leaf objects specify the

@@ -1,8 +1,10 @@
 from .PredefinedField import PredefinedField
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Stress(PredefinedField):
     """The Stress object stores the data for an initial stress predefined field.
     The Stress object is derived from the PredefinedField object.
@@ -21,6 +23,7 @@ class Stress(PredefinedField):
 
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -71,6 +74,7 @@ class Stress(PredefinedField):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         distributionType: SymbolicConstant = UNIFORM,

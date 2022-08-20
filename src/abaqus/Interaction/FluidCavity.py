@@ -1,8 +1,10 @@
 from .Interaction import Interaction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FluidCavity(Interaction):
     """The FluidCavity object defines a surface-based cavity.
     The FluidCavity object is derived from the Interaction object.
@@ -51,6 +53,7 @@ class FluidCavity(Interaction):
     #: normals. The default value is ON.
     checkNormals: Boolean = ON
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -104,6 +107,7 @@ class FluidCavity(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         ambientPressure: float = 0,
