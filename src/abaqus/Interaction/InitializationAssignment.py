@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class InitializationAssignment:
     """The InitializationAssignment object stores the contact initialization assignment
     definition for domain pairs in a ContactStd or ContactExp object. The
@@ -19,6 +21,7 @@ class InitializationAssignment:
         - CONTACT INITIALIZATION ASSIGNMENT
     """
 
+    @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: str):
         """This method allows modification of contact initialization assignments to domain pairs
         already defined in a given step.
@@ -37,6 +40,7 @@ class InitializationAssignment:
         """
         ...
 
+    @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: SymbolicConstant):
         """This method allows addition of contact initialization assignments to new domain pairs in
         a given step.
@@ -56,6 +60,7 @@ class InitializationAssignment:
         """
         ...
 
+    @abaqus_method_doc
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing contact initialization assignments from
         a ContactStd or ContactExp object.

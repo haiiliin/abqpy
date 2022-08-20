@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ElectricalConductivity:
     r"""The ElectricalConductivity object specifies electrical conductivity.
 
@@ -53,6 +55,7 @@ class ElectricalConductivity:
         - ELECTRICAL CONDUCTIVITY
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -96,6 +99,7 @@ class ElectricalConductivity:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ElectricalConductivity object.
 

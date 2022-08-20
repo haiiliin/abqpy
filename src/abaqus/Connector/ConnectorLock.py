@@ -1,7 +1,9 @@
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConnectorLock(ConnectorBehaviorOption):
     """The ConnectorLock object defines locking criteria for one or more available components
     of a connector's relative motion.
@@ -51,6 +53,7 @@ class ConnectorLock(ConnectorBehaviorOption):
     #: specified. The default value is an empty sequence.
     components: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self,
         lockingComponent: SymbolicConstant = ALL,
@@ -109,6 +112,7 @@ class ConnectorLock(ConnectorBehaviorOption):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorLock object.
 

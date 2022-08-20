@@ -8,8 +8,10 @@ from ..Section.GeometryShellSection import GeometryShellSection
 from ..Section.HomogeneousShellSection import HomogeneousShellSection
 from ..Section.SectionLayerArray import SectionLayerArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CompositeLayup:
     """The CompositeLayup object is used to specify a composite layup on a part.
 
@@ -65,6 +67,7 @@ class CompositeLayup:
     #: The default value is OFF.
     symmetric: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -119,18 +122,22 @@ class CompositeLayup:
         """
         ...
 
+    @abaqus_method_doc
     def suppress(self):
         """This method suppresses a composite layup."""
         ...
 
+    @abaqus_method_doc
     def resume(self):
         """This method resumes a composite layup that was previously suppressed."""
         ...
 
+    @abaqus_method_doc
     def deletePlies(self):
         """This method deletes all of the plies from a composite layup."""
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         description: str = "",
@@ -166,6 +173,7 @@ class CompositeLayup:
         """
         ...
 
+    @abaqus_method_doc
     def CompositePly(
         self,
         thickness: float,
@@ -277,6 +285,7 @@ class CompositeLayup:
         self.plies.append(compositePly)
         return compositePly
 
+    @abaqus_method_doc
     def CompositeShellSection(
         self,
         name: str,
@@ -397,6 +406,7 @@ class CompositeLayup:
         )
         return compositeShellSection
 
+    @abaqus_method_doc
     def GeometryShellSection(
         self,
         nodalThicknessField: str = "",
@@ -492,6 +502,7 @@ class CompositeLayup:
         )
         return geometryShellSection
 
+    @abaqus_method_doc
     def HomogeneousShellSection(
         self,
         name: str,

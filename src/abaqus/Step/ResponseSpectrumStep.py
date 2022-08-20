@@ -27,8 +27,10 @@ from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ResponseSpectrumStep(AnalysisStep):
     """The ResponseSpectrumStep object is used to calculate estimates of peak values of
     displacements and stresses based on user-supplied response spectra and on the natural
@@ -182,6 +184,7 @@ class ResponseSpectrumStep(AnalysisStep):
     #: A repository of PredefinedFieldState objects.
     predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -250,6 +253,7 @@ class ResponseSpectrumStep(AnalysisStep):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         description: str = "",

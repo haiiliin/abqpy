@@ -3,8 +3,10 @@ from .ModelJob import ModelJob
 from .OptimizationProcess import OptimizationProcess
 from ..Mdb.MdbBase import MdbBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class JobMdb(MdbBase):
     """The Mdb object is the high-level Abaqus model database. A model database stores models
     and analysis controls.
@@ -17,6 +19,7 @@ class JobMdb(MdbBase):
             mdb
     """
 
+    @abaqus_method_doc
     def Job(
         self,
         name: str,
@@ -182,6 +185,7 @@ class JobMdb(MdbBase):
         )
         return job
 
+    @abaqus_method_doc
     def JobFromInputFile(
         self,
         name: str,
@@ -311,6 +315,7 @@ class JobMdb(MdbBase):
         )
         return jobFromInputFile
 
+    @abaqus_method_doc
     def OptimizationProcess(
         self,
         name: str,

@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class Spectrum:
     """The Spectrum object defines a color spectrum for the contour display.
 
@@ -10,6 +13,7 @@ class Spectrum:
             session.spectrums[name]
     """
 
+    @abaqus_method_doc
     def __init__(self, name: str, colors: tuple):
         """This method creates a Spectrum object and places it in the spectrums repository.
 

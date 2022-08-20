@@ -1,7 +1,9 @@
 from ...Ratios import Ratios
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Swelling:
     """The Swelling object specifies time-dependent volumetric swelling for a material.
 
@@ -31,6 +33,7 @@ class Swelling:
     #: A :py:class:`~abaqus.Material.Ratios.Ratios` object.
     ratios: Ratios = Ratios(((),))
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -72,6 +75,7 @@ class Swelling:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Swelling object.
 

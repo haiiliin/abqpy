@@ -1,3 +1,6 @@
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class Depvar:
     """The Depvar object specifies solution-dependent state variables.
 
@@ -16,6 +19,7 @@ class Depvar:
         - DEPVAR
     """
 
+    @abaqus_method_doc
     def __init__(self, deleteVar: int = 0, n: int = 0):
         """This method creates a Depvar object.
 
@@ -47,6 +51,7 @@ class Depvar:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Depvar object.
 

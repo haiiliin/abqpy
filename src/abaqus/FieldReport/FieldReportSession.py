@@ -2,9 +2,12 @@ from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..Odb.Odb import Odb
 from ..Session.SessionBase import SessionBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FieldReportSession(SessionBase):
+    @abaqus_method_doc
     def writeFieldReport(
         self,
         filename: str,
@@ -89,6 +92,7 @@ class FieldReportSession(SessionBase):
         """
         ...
 
+    @abaqus_method_doc
     def writeFreeBodyReport(
         self,
         fileName: str,

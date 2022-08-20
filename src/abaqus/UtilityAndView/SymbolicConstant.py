@@ -3,8 +3,10 @@ from __future__ import annotations
 from typing import Any, Union
 
 from .AbaqusBoolean import AbaqusBoolean
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SymbolicConstant:
     """The SymbolicConstant object represents a string in a way that can be stored in a replay
     file and used as an argument to Abaqus Scripting Interface methods and functions. By
@@ -28,6 +30,7 @@ class SymbolicConstant:
             from ..UtilityAndView.abaqusConstants import *
     """
 
+    @abaqus_method_doc
     def __init__(self, text: str) -> None:
         """The SymbolicConstant method creates a SymbolicConstant object.
 
@@ -53,6 +56,7 @@ class SymbolicConstant:
             raise ValueError(f'SymbolicConstant name {text} may only contain upper case, digit or underscore')
         self.text = text
 
+    @abaqus_method_doc
     def __copy__(self) -> SymbolicConstant:
         ...
     
@@ -66,6 +70,7 @@ class SymbolicConstant:
         """Sorting method; True if self is < other"""
         return self < other
     
+    @abaqus_method_doc
     def __reduce__(self) -> tuple:  # known return case of __reduce__
         ...
     

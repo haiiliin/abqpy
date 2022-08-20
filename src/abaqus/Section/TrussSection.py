@@ -1,6 +1,8 @@
 from .Section import Section
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TrussSection(Section):
     """The TrussSection object defines the properties of a truss section.
     The TrussSection object is derived from the Section object.
@@ -30,6 +32,7 @@ class TrussSection(Section):
     #: >> 0. The default value is 1.0.
     area: float = 1
 
+    @abaqus_method_doc
     def __init__(self, name: str, material: str, area: float = 1):
         """This method creates a TrussSection object.
 
@@ -62,6 +65,7 @@ class TrussSection(Section):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, area: float = 1):
         """This method modifies the TrussSection object.
 

@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class SectionPoint:
     """The SectionPoint object describes the location of a section point within a section
     category. 
@@ -37,6 +40,7 @@ class SectionPoint:
     #: A String specifying the description of the section point.
     description: str
 
+    @abaqus_method_doc
     def __init__(self, number: int, description: str):
         """This method creates a SectionPoint object.
 

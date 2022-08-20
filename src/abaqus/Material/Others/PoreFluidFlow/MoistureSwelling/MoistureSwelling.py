@@ -1,6 +1,8 @@
 from ....Ratios import Ratios
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MoistureSwelling:
     r"""The MoistureSwelling object defines moisture-driven swelling.
 
@@ -27,6 +29,7 @@ class MoistureSwelling:
     #: A :py:class:`~abaqus.Material.Ratios.Ratios` object.
     ratios: Ratios = Ratios(((),))
 
+    @abaqus_method_doc
     def __init__(self, table: tuple):
         """This method creates a MoistureSwelling object.
 
@@ -50,6 +53,7 @@ class MoistureSwelling:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the MoistureSwelling object."""
         ...

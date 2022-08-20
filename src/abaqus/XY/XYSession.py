@@ -9,16 +9,18 @@ from .XYData import XYData
 from .XYSessionBase import XYSessionBase
 from ..PathAndProbe.Path import Path
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
-# prevent circular imports
 class Odb:
     ...
 
 
+@abaqus_class_doc
 class XYSession(XYSessionBase):
     
     @staticmethod
+    @abaqus_method_doc
     def AreaStyle(
         color: str = "", fill: Boolean = ON, style: SymbolicConstant = SOLID
     ) -> AreaStyle:
@@ -57,6 +59,7 @@ class XYSession(XYSessionBase):
         return areaStyle
 
     @staticmethod
+    @abaqus_method_doc
     def LineStyle(
         color: str = "",
         show: Boolean = ON,
@@ -102,6 +105,7 @@ class XYSession(XYSessionBase):
         return lineStyle
 
     @staticmethod
+    @abaqus_method_doc
     def QuantityType(type: SymbolicConstant, label: str = "") -> QuantityType:
         """This method creates a QuantityType object.
 
@@ -202,6 +206,7 @@ class XYSession(XYSessionBase):
         return quantityType
 
     @staticmethod
+    @abaqus_method_doc
     def SymbolStyle(
         color: str = "",
         show: Boolean = ON,
@@ -260,6 +265,7 @@ class XYSession(XYSessionBase):
         return symbolStyle
 
     @staticmethod
+    @abaqus_method_doc
     def TextStyle(
         color: str = "", show: Boolean = ON, font: str = "", rotationAngle: float = 0
     ) -> TextStyle:
@@ -302,6 +308,7 @@ class XYSession(XYSessionBase):
 
     @staticmethod
     @typing.overload
+    @abaqus_method_doc
     def XYData(
         data: tuple,
         name: str = "",
@@ -367,6 +374,7 @@ class XYSession(XYSessionBase):
 
     @staticmethod
     @typing.overload
+    @abaqus_method_doc
     def XYData(objectToCopy: XYData) -> XYData:
         """This method creates an XYData object by copying an existing XYData object.
 
@@ -392,6 +400,7 @@ class XYSession(XYSessionBase):
         ...
 
     @staticmethod
+    @abaqus_method_doc
     def XYData(*args, **kwargs) -> XYData:
         return XYData(())
 
@@ -471,6 +480,7 @@ class XYSession(XYSessionBase):
         self.xyDataObjects[name] = xyData = XYData(())
         return xyData
 
+    @abaqus_method_doc
     def XYDataFromHistory(
         self,
         odb: Odb,
@@ -544,6 +554,7 @@ class XYSession(XYSessionBase):
         self.xyDataObjects[name] = xyData = XYData(())
         return xyData
 
+    @abaqus_method_doc
     def xyDataListFromField(
         self,
         odb: Odb,
@@ -641,6 +652,7 @@ class XYSession(XYSessionBase):
         self.xyDataObjects["name"] = xyData = XYData(())
         return [xyData]
 
+    @abaqus_method_doc
     def XYDataFromFreeBody(
         self,
         odb: Odb,
@@ -695,6 +707,7 @@ class XYSession(XYSessionBase):
         self.xyDataObjects["name"] = xyData = XYData(())
         return [xyData]
 
+    @abaqus_method_doc
     def XYDataFromPath(
         self,
         path: Path,

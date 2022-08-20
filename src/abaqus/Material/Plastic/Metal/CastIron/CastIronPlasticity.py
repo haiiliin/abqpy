@@ -1,8 +1,10 @@
 from .CastIronCompressionHardening import CastIronCompressionHardening
 from .CastIronTensionHardening import CastIronTensionHardening
 from .....UtilityAndView.abaqusConstants import *
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CastIronPlasticity:
     r"""The CastIronPlasticity object specifies the Cast Iron plasticity model.
 
@@ -37,6 +39,7 @@ class CastIronPlasticity:
         CastIronCompressionHardening(((),))
     )
 
+    @abaqus_method_doc
     def __init__(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ):
@@ -70,6 +73,7 @@ class CastIronPlasticity:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the CastIronPlasticity object.
 

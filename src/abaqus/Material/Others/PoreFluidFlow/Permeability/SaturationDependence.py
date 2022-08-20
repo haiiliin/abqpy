@@ -1,3 +1,6 @@
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class SaturationDependence:
     r"""The SaturationDependence object specifies the dependence of the permeability of a
     material on the saturation of the wetting liquid.
@@ -22,6 +25,7 @@ class SaturationDependence:
         - PERMEABILITY
     """
 
+    @abaqus_method_doc
     def __init__(self, table: tuple):
         """This method creates a SaturationDependence object.
 
@@ -49,6 +53,7 @@ class SaturationDependence:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the SaturationDependence object.
 

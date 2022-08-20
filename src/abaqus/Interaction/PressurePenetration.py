@@ -1,8 +1,10 @@
 from .Interaction import Interaction
 from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PressurePenetration(Interaction):
     """The PressurePenetration object defines pressure penetration loading simulated with
     surface-to-surface contact.
@@ -39,6 +41,7 @@ class PressurePenetration(Interaction):
     #: the fluid.
     slavePoints: RegionArray = []
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -97,6 +100,7 @@ class PressurePenetration(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, amplitude: str = UNSET, penetrationTime: float = 0):
         """This method modifies the data for an existing PressurePenetration object in the step
         where it is created.
@@ -114,6 +118,7 @@ class PressurePenetration(Interaction):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

@@ -1,8 +1,10 @@
 from .PressureEffect import PressureEffect
 from .SoretEffect import SoretEffect
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Diffusivity:
     r"""The Diffusivity object specifies mass diffusivity.
 
@@ -61,6 +63,7 @@ class Diffusivity:
     #: A :py:class:`~abaqus.Material.Others.MassDiffusion.SoretEffect.SoretEffect` object.
     soretEffect: SoretEffect = SoretEffect(((),))
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -105,6 +108,7 @@ class Diffusivity:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Diffusivity object.
 

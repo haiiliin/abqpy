@@ -2,8 +2,10 @@ from ..Job.JobMdb import JobMdb
 from ..Model.Model import Model
 from ..Part.AcisMdb import AcisMdb
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Mdb(AcisMdb, JobMdb):
     """The Mdb object is the high-level Abaqus model database. A model database stores models
     and analysis controls.
@@ -16,6 +18,7 @@ class Mdb(AcisMdb, JobMdb):
             mdb
     """
 
+    @abaqus_method_doc
     def Model(
         self,
         name: str,

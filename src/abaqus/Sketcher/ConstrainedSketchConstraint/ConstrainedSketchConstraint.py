@@ -1,3 +1,7 @@
+from ..._decorators import abaqus_class_doc
+
+
+@abaqus_class_doc
 class ConstrainedSketchConstraint:
     """The ConstrainedSketchConstraint object stores the constraints associated with a sketch.
 

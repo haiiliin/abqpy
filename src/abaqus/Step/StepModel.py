@@ -67,8 +67,10 @@ from ..StepMiscellaneous.SubstructureGenerateModesArray import (
     SubstructureGenerateModesArray,
 )
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class StepModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
@@ -80,6 +82,7 @@ class StepModel(ModelBase):
             mdb.models[name]
     """
 
+    @abaqus_method_doc
     def AnnealStep(
         self,
         name: str,
@@ -123,6 +126,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def BuckleStep(
         self,
         name: str,
@@ -209,6 +213,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def ComplexFrequencyStep(
         self,
         name: str,
@@ -290,6 +295,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def CoupledTempDisplacementStep(
         self,
         name: str,
@@ -437,6 +443,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def CoupledThermalElectricalStructuralStep(
         self,
         name: str,
@@ -579,6 +586,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def CoupledThermalElectricStep(
         self,
         name: str,
@@ -696,6 +704,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def DirectCyclicStep(
         self,
         name: str,
@@ -850,6 +859,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def EmagTimeHarmonicStep(
         self,
         name: str,
@@ -893,6 +903,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def ExplicitDynamicsStep(
         self,
         name: str,
@@ -986,6 +997,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def FrequencyStep(
         self,
         name: str,
@@ -1164,6 +1176,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def GeostaticStep(
         self,
         name: str,
@@ -1274,6 +1287,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def HeatTransferStep(
         self,
         name: str,
@@ -1403,6 +1417,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def ImplicitDynamicsStep(
         self,
         name: str,
@@ -1561,6 +1576,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def MassDiffusionStep(
         self,
         name: str,
@@ -1663,6 +1679,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def ModalDynamicsStep(
         self,
         name: str,
@@ -1743,6 +1760,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def RandomResponseStep(
         self,
         name: str,
@@ -1822,6 +1840,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def ResponseSpectrumStep(
         self,
         name: str,
@@ -1900,6 +1919,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def SoilsStep(
         self,
         name: str,
@@ -2061,6 +2081,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def StaticLinearPerturbationStep(
         self,
         name: str,
@@ -2108,6 +2129,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def StaticRiksStep(
         self,
         name: str,
@@ -2251,6 +2273,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def StaticStep(
         self,
         name: str,
@@ -2409,6 +2432,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def SteadyStateDirectStep(
         self,
         name: str,
@@ -2481,6 +2505,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def SteadyStateModalStep(
         self,
         name: str,
@@ -2565,6 +2590,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def SteadyStateSubspaceStep(
         self,
         name: str,
@@ -2653,6 +2679,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def SubspaceDynamicsStep(
         self,
         name: str,
@@ -2723,6 +2750,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def SubstructureGenerateStep(
         self,
         name: str,
@@ -2849,6 +2877,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def TempDisplacementDynamicsStep(
         self,
         name: str,
@@ -2935,6 +2964,7 @@ class StepModel(ModelBase):
         )
         return step
 
+    @abaqus_method_doc
     def ViscoStep(
         self,
         name: str,

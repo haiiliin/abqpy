@@ -1,8 +1,10 @@
 from .Constraint import Constraint
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ShellSolidCoupling(Constraint):
     """The ShellSolidCoupling object defines two surfaces to be tied together for the duration
     of a simulation.
@@ -52,6 +54,7 @@ class ShellSolidCoupling(Constraint):
     #: when **influenceDistanceMethod** = SPECIFIED. The default value is 0.0.
     influenceDistance: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -101,6 +104,7 @@ class ShellSolidCoupling(Constraint):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         positionToleranceMethod: SymbolicConstant = COMPUTED,

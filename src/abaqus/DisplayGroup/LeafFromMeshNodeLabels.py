@@ -3,8 +3,10 @@ import typing
 from .Leaf import Leaf
 from ..Mesh.MeshNode import MeshNode
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LeafFromMeshNodeLabels(Leaf):
     """The LeafFromMeshNodeLabels object can be used whenever a Leaf object is expected as an
     argument. Leaf objects are used to specify the items in a display group. Leaf objects
@@ -24,6 +26,7 @@ class LeafFromMeshNodeLabels(Leaf):
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant = None
 
+    @abaqus_method_doc
     def __init__(self, nodeSeq: typing.Tuple[MeshNode, ...]):
         """This method creates a Leaf object from a sequence of mesh node objects. Leaf objects
         specify the items in a display group.

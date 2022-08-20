@@ -1,7 +1,9 @@
 from .Amplitude import Amplitude
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SolutionDependentAmplitude(Amplitude):
     """The SolutionDependentAmplitude object defines a solution-dependent amplitude for
     superplastic forming analysis.
@@ -41,6 +43,7 @@ class SolutionDependentAmplitude(Amplitude):
     #: and TOTAL. The default value is STEP.
     timeSpan: SymbolicConstant = STEP
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -88,6 +91,7 @@ class SolutionDependentAmplitude(Amplitude):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         initial: float = 1,

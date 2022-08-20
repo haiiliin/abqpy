@@ -1,7 +1,9 @@
 from .Material import Material
 from ..Odb.OdbBase import OdbBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MaterialOdb(OdbBase):
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
@@ -14,6 +16,7 @@ class MaterialOdb(OdbBase):
             session.odbs[name]
     """
 
+    @abaqus_method_doc
     def Material(self, name: str, description: str = "", materialIdentifier: str = ""):
         """This method creates a Material object.
 

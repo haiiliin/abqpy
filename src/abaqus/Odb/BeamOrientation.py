@@ -1,7 +1,9 @@
 from .OdbSet import OdbSet
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class BeamOrientation:
     """The BeamOrientation object represents the direction of the first beam section axis n1n1.
     Specifying the beam orientation using an additional node in the element connectivity

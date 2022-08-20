@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class DataSet:
     """The DataSetobject specifies material test data.
 
@@ -26,6 +29,7 @@ class DataSet:
     #: default value is "NOMINAl".
     form: str = ""
 
+    @abaqus_method_doc
     def __init__(self, name: str, data: tuple = (), type: str = "", form: str = ""):
         """This method creates a DataSet object.
 
@@ -58,6 +62,7 @@ class DataSet:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, data: tuple = ()):
         """This method modifies the data for an existing DataSet object.
 

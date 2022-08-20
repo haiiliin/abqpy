@@ -1,7 +1,9 @@
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PlyStackPlotOptions(_OptionsBase):
     """The PlyStackPlotOptions object stores values and attributes associated with aViewport
     object. The PlyStackPlotOptions object has no constructor command. Abaqus creates the
@@ -153,6 +155,7 @@ class PlyStackPlotOptions(_OptionsBase):
     #: A Float specifying the size of the ply in the Z-direction. The default value is 0.8.
     sizeZ: float = 0.8
 
+    @abaqus_method_doc
     def setValues(
         self,
         *,

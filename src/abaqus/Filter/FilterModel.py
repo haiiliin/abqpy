@@ -4,8 +4,10 @@ from .Chebyshev2Filter import Chebyshev2Filter
 from .OperatorFilter import OperatorFilter
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FilterModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
@@ -17,6 +19,7 @@ class FilterModel(ModelBase):
             mdb.models[name]
     """
 
+    @abaqus_method_doc
     def ButterworthFilter(
         self,
         name: str,
@@ -78,6 +81,7 @@ class FilterModel(ModelBase):
         )
         return butterworthFilter
 
+    @abaqus_method_doc
     def Chebyshev1Filter(
         self,
         name: str,
@@ -150,6 +154,7 @@ class FilterModel(ModelBase):
         )
         return chebyshev1Filter
 
+    @abaqus_method_doc
     def Chebyshev2Filter(
         self,
         name: str,
@@ -222,6 +227,7 @@ class FilterModel(ModelBase):
         )
         return chebyshev2Filter
 
+    @abaqus_method_doc
     def OperatorFilter(
         self,
         name: str,

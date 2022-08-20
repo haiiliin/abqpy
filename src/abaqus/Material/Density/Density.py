@@ -1,6 +1,8 @@
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Density:
     """The Density object specifies the material density.
 
@@ -27,6 +29,7 @@ class Density:
         - DENSITY
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -73,6 +76,7 @@ class Density:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Density object.
 
