@@ -1,6 +1,8 @@
 from .Section import Section
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class SolidSection(Section):
     """The ShellSection object defines the properties of a shell section. The ShellSection
     object is derived from the Section object. The ShellSection object has no explicit

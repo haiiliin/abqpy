@@ -2,8 +2,10 @@ from .Load import Load
 from ..Datum.DatumAxis import DatumAxis
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BoltLoad(Load):
     """The BoltLoad object defines a bolt load.
     The BoltLoad object is derived from the Load object.
@@ -34,6 +36,7 @@ class BoltLoad(Load):
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -87,6 +90,7 @@ class BoltLoad(Load):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         boltMethod: SymbolicConstant = APPLY_FORCE,
@@ -112,6 +116,7 @@ class BoltLoad(Load):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

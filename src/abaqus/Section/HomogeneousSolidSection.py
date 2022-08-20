@@ -1,6 +1,8 @@
 from .SolidSection import SolidSection
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class HomogeneousSolidSection(SolidSection):
     """The HomogeneousSolidSection object defines the properties of a solid section.
     The HomogeneousSolidSection object is derived from the SolidSection object.
@@ -30,6 +32,7 @@ class HomogeneousSolidSection(SolidSection):
     #: are None or a floating point value such that thickness >  0.0. The default value is None.
     thickness: float = None
 
+    @abaqus_method_doc
     def __init__(self, name: str, material: str, thickness: float = None):
         """This method creates a HomogeneousSolidSection object.
 
@@ -63,6 +66,7 @@ class HomogeneousSolidSection(SolidSection):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, thickness: float = 1):
         """This method modifies the HomogeneousSolidSection object.
 

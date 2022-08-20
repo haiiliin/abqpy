@@ -1,7 +1,9 @@
 from .SectionPoint import SectionPoint
 from .SectionPointArray import SectionPointArray
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SectionCategory:
     """The SectionCategory object is used to group regions of the model with like sections.
     Section definitions that contain the same number of section points or integration points
@@ -45,6 +47,7 @@ class SectionCategory:
     #: A String specifying the description of the category.
     description: str
 
+    @abaqus_method_doc
     def __init__(self, name: str, description: str):
         """This method creates a SectionCategory object.
 
@@ -69,6 +72,7 @@ class SectionCategory:
         """
         ...
 
+    @abaqus_method_doc
     def SectionPoint(self, number: int, description: str) -> SectionPoint:
         """This method creates a SectionPoint object.
 

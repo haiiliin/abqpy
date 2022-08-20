@@ -1,6 +1,8 @@
 from ..Datum.DatumCsys import DatumCsys
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MeshNode:
     """The MeshNode object refers to a node of a native mesh or an orphan mesh. A MeshNode
     object can be accessed via a part or part instance using an index that refers to the
@@ -48,6 +50,7 @@ class MeshNode:
     #: A tuple of three Floats specifying the coordinates of the new node.
     coordinates: float = None
 
+    @abaqus_method_doc
     def __init__(
         self, coordinates: tuple, localCsys: DatumCsys = None,  label: int = None
     ):
@@ -77,6 +80,7 @@ class MeshNode:
         """
         ...
 
+    @abaqus_method_doc
     def getElemEdges(self):
         """This method returns a tuple of element edge objects that share the node.
 
@@ -87,6 +91,7 @@ class MeshNode:
         """
         ...
 
+    @abaqus_method_doc
     def getElemFaces(self):
         """This method returns a tuple of element face objects that share the node.
 
@@ -97,6 +102,7 @@ class MeshNode:
         """
         ...
 
+    @abaqus_method_doc
     def getElements(self):
         """This method returns a tuple of element objects that share the node.
 
@@ -107,6 +113,7 @@ class MeshNode:
         """
         ...
 
+    @abaqus_method_doc
     def getNodesByFeatureEdge(self, angle: str):
         """This method returns an array of mesh node objects that are obtained by recursively
         finding adjacent nodes along a feature edge that are at an angle of less than or equal
@@ -124,6 +131,7 @@ class MeshNode:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, label: int = None):
         """This method modifies the MeshNode object.
 

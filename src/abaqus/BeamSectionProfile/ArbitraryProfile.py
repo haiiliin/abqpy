@@ -1,6 +1,8 @@
 from .Profile import Profile
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ArbitraryProfile(Profile):
     """The ArbitraryProfile object defines the properties of an arbitrary profile.
     The ArbitraryProfile object is derived from the Profile object.
@@ -38,6 +40,7 @@ class ArbitraryProfile(Profile):
     #: A sequence of sequences of Floats specifying the items described below.
     table: tuple
 
+    @abaqus_method_doc
     def __init__(self, name: str, table: tuple):
         """This method creates a ArbitraryProfile object.
 
@@ -68,6 +71,7 @@ class ArbitraryProfile(Profile):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ArbitraryProfile object.
 

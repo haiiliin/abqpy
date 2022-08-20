@@ -1,3 +1,6 @@
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class Hysteresis:
     """The Hysteresis object specifies the creep part of the material model for the hysteretic
     behavior of elastomers.
@@ -24,6 +27,7 @@ class Hysteresis:
         - HYSTERESIS
     """
 
+    @abaqus_method_doc
     def __init__(self, table: tuple):
         """This method creates a Hysteresis object.
 
@@ -51,6 +55,7 @@ class Hysteresis:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Hysteresis object.
 

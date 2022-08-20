@@ -1,4 +1,5 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_function_doc
 
 """The upgradeScript module allows you to upgrade scripts from one release of Abaqus to a 
 later release. The upgradeScript module allows you to upgrade over several releases at 
@@ -15,6 +16,7 @@ both.
 """
 
 
+@abaqus_function_doc
 def upgradeScript(
     fileNames: str,
     searchSubdirectories: Boolean = True,

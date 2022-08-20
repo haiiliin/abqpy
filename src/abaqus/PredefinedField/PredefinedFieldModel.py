@@ -9,8 +9,10 @@ from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PredefinedFieldModel(
     ModelBase,
     FluidCavityPressure,
@@ -30,6 +32,7 @@ class PredefinedFieldModel(
             mdb.models[name]
     """
 
+    @abaqus_method_doc
     def FluidCavityPressure(
         self, name: str, fluidCavity: str, fluidPressure: float
     ) -> FluidCavityPressure:
@@ -61,6 +64,7 @@ class PredefinedFieldModel(
         )
         return predefinedField
 
+    @abaqus_method_doc
     def InitialState(
         self,
         name: str,
@@ -115,6 +119,7 @@ class PredefinedFieldModel(
         )
         return predefinedField
 
+    @abaqus_method_doc
     def KinematicHardening(
         self,
         name: str,
@@ -181,6 +186,7 @@ class PredefinedFieldModel(
         )
         return predefinedField
 
+    @abaqus_method_doc
     def MaterialAssignment(
         self,
         name: str,
@@ -236,6 +242,7 @@ class PredefinedFieldModel(
         )
         return predefinedField
 
+    @abaqus_method_doc
     def Temperature(
         self,
         name: str,
@@ -374,6 +381,7 @@ class PredefinedFieldModel(
         )
         return predefinedField
 
+    @abaqus_method_doc
     def Velocity(
         self,
         name: str,
@@ -443,6 +451,7 @@ class PredefinedFieldModel(
         )
         return predefinedField
 
+    @abaqus_method_doc
     def Stress(
         self,
         name: str,

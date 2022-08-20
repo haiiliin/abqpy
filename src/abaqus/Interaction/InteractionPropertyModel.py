@@ -8,9 +8,12 @@ from .FluidExchangeProperty import FluidExchangeProperty
 from .IncidentWaveProperty import IncidentWaveProperty
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class InteractionPropertyModel(ModelBase):
+    @abaqus_method_doc
     def AcousticImpedanceProp(
         self,
         name: str,
@@ -55,6 +58,7 @@ class InteractionPropertyModel(ModelBase):
         )
         return interactionProperty
 
+    @abaqus_method_doc
     def ActuatorSensorProp(
         self, name: str, realProperties: tuple = (), integerProperties: tuple = ()
     ) -> ActuatorSensorProp:
@@ -88,6 +92,7 @@ class InteractionPropertyModel(ModelBase):
         )
         return interactionProperty
 
+    @abaqus_method_doc
     def CavityRadiationProp(
         self,
         name: str,
@@ -127,6 +132,7 @@ class InteractionPropertyModel(ModelBase):
         )
         return interactionProperty
 
+    @abaqus_method_doc
     def ContactProperty(self, name: str) -> ContactProperty:
         """This method creates a ContactProperty object.
 
@@ -150,6 +156,7 @@ class InteractionPropertyModel(ModelBase):
         self.interactionProperties[name] = interactionProperty = ContactProperty(name)
         return interactionProperty
 
+    @abaqus_method_doc
     def FilmConditionProp(
         self,
         name: str,
@@ -193,6 +200,7 @@ class InteractionPropertyModel(ModelBase):
         )
         return interactionProperty
 
+    @abaqus_method_doc
     def FluidCavityProperty(
         self,
         name: str,
@@ -348,6 +356,7 @@ class InteractionPropertyModel(ModelBase):
         )
         return interactionProperty
 
+    @abaqus_method_doc
     def FluidExchangeProperty(
         self,
         name: str,
@@ -453,6 +462,7 @@ class InteractionPropertyModel(ModelBase):
         )
         return interactionProperty
 
+    @abaqus_method_doc
     def IncidentWaveProperty(
         self,
         name: str,

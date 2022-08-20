@@ -1,7 +1,9 @@
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SvgOptions(_OptionsBase):
     """The SvgOptions object stores the settings that Abaqus uses when printing in SVG format.
     The SvgOptions object has no constructor. Abaqus creates the **svgOptions** member when a
@@ -24,6 +26,7 @@ class SvgOptions(_OptionsBase):
     #: be at least as large as the screen dimensions.
     imageSize: SymbolicConstant = SIZE_ON_SCREEN
 
+    @abaqus_method_doc
     def setValues(self, *, imageSize: SymbolicConstant = SIZE_ON_SCREEN):
         """This method modifies the SvgOptions object.
 

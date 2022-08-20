@@ -3,6 +3,10 @@
 """
 import typing
 
+from .._decorators import abaqus_function_doc
+
+
+@abaqus_function_doc
 @typing.overload
 def getInput(prompt: str, default: str = ""):
     """This method is used to obtain a single input from a user from a dialog box. The method
@@ -38,6 +42,7 @@ def getInput(prompt: str, default: str = ""):
     ...
 
 
+@abaqus_function_doc
 @typing.overload
 def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
     """This method is used to obtain multiple inputs from a user from a dialog box. The method
@@ -80,10 +85,12 @@ def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
     ...
 
 
+@abaqus_function_doc
 def getInput(*args, **kwargs):
     ...
 
 
+@abaqus_function_doc
 def getWarningReply(message: str, buttons: str):
     """This method is used to obtain a reply from a user from a warning dialog box. The method
     displays a modal warning dialog box with a message and standard buttons. The user clicks

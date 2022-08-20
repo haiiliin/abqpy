@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FailStress:
     r"""The FailStress object defines parameters for stress-based failure measures.
 
@@ -34,6 +36,7 @@ class FailStress:
         - FAIL STRESS
     """
 
+    @abaqus_method_doc
     def __init__(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ):
@@ -67,6 +70,7 @@ class FailStress:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the FailStress object.
 

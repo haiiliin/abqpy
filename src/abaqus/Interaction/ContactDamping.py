@@ -1,8 +1,10 @@
 import typing
 
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ContactDamping:
     """The ContactDamping object specifies damping for a contact interaction property.
 
@@ -53,6 +55,7 @@ class ContactDamping:
     #: data are described below.
     table: float = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         definition: SymbolicConstant = DAMPING_COEFFICIENT,
@@ -93,6 +96,7 @@ class ContactDamping:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ContactDamping object."""
         ...

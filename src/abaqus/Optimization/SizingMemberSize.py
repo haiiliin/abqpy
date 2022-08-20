@@ -1,7 +1,9 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SizingMemberSize(GeometricRestriction):
     """The SizingMemberSize object defines a sizing member size geometric restriction.
     The SizingMemberSize object is derived from the GeometricRestriction object.
@@ -24,6 +26,7 @@ class SizingMemberSize(GeometricRestriction):
     #: A Float specifying the min width.
     minWidth: float
 
+    @abaqus_method_doc
     def __init__(self, name: str, region: Region, minWidth: float):
         """This method creates a SizingMemberSize object.
 
@@ -51,6 +54,7 @@ class SizingMemberSize(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the sizingMemberSize object."""
         ...

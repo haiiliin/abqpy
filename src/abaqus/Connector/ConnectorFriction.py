@@ -4,8 +4,10 @@ from .ConnectorPotentialArray import ConnectorPotentialArray
 from .DerivedComponent import DerivedComponent
 from .TangentialBehavior import TangentialBehavior
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConnectorFriction(ConnectorBehaviorOption):
     """The ConnectorFriction object defines Coulomb-like or hysteretic friction behavior for
     one or more components of a connector's relative motion.
@@ -141,6 +143,7 @@ class ConnectorFriction(ConnectorBehaviorOption):
     #: value is an empty sequence.
     independentComponents: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self,
         frictionModel: SymbolicConstant = PREDEFINED,
@@ -274,6 +277,7 @@ class ConnectorFriction(ConnectorBehaviorOption):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorFriction object.
 

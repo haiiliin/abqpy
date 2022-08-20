@@ -1,8 +1,10 @@
 from .Crack import Crack
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class XFEMCrack(Crack):
     """The XFEMCrack object defines the parameters needed to model crack initiation or crack
     growth using XFEM technology. Currently only assembly regions are supported.
@@ -77,6 +79,7 @@ class XFEMCrack(Crack):
     #: the crack domain is shrunk.
     autoDetectValue: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -148,6 +151,7 @@ class XFEMCrack(Crack):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         allowCrackGrowth: Boolean = ON,

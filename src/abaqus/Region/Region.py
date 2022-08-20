@@ -7,8 +7,10 @@ from ..BasicGeometry.ReferencePoint import ReferencePoint
 from ..BasicGeometry.Vertex import Vertex
 from ..Mesh.MeshElement import MeshElement as Element
 from ..Mesh.MeshNode import MeshNode as Node
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Region:
     """The purpose of the Region object is to provide a link between an attribute and the
     geometric or discrete entities to which the attribute is applied. An attribute (Load,
@@ -56,6 +58,7 @@ class Region:
     """
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(
         self,
         elements: typing.Tuple[Element, ...] = None,
@@ -134,6 +137,7 @@ class Region:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(
         self,
         side1Faces: typing.Tuple[Face, ...] = None,

@@ -1,6 +1,8 @@
 from .Section import Section
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class EulerianSection(Section):
     """The EulerianSection object defines the properties of a Eulerian section.
     The EulerianSection object is derived from the Section object.
@@ -27,6 +29,7 @@ class EulerianSection(Section):
     #: Material names. Internally the specified mapping gets sorted on Material instance name.
     data: str
 
+    @abaqus_method_doc
     def __init__(self, name: str, data: str):
         """This method creates a EulerianSection object.
 
@@ -53,6 +56,7 @@ class EulerianSection(Section):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the EulerianSection object."""
         ...

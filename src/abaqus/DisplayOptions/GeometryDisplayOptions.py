@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class GeometryDisplayOptions:
     """The GeometryDisplayOptions object stores settings that specify how assemblies are to be
     displayed in a particular viewport. The GeometryDisplayOptions object has no
@@ -18,6 +20,7 @@ class GeometryDisplayOptions:
             session.viewports[name].partDisplay.geometryOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         geometryEdgesInShaded: Boolean = ON,

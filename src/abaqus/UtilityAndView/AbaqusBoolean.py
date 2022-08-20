@@ -1,5 +1,9 @@
 from __future__ import annotations
 
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+
+@abaqus_class_doc
 class AbaqusBoolean(int):
     """The AbaqusBoolean object is used in a similar way to the SymbolicConstant object. If you
     pass an AbaqusBoolean object to the Python repr() function, the function returns the
@@ -24,6 +28,7 @@ class AbaqusBoolean(int):
             from ..UtilityAndView.abaqusConstants import *
     """
 
+    @abaqus_method_doc
     def __init__(self, value: int) -> None:
         """The AbaqusBoolean method creates an AbaqusBoolean object.
 
@@ -49,6 +54,7 @@ class AbaqusBoolean(int):
         if value not in (0, 1):
             raise ValueError(f'AbaqusBoolean must have value argument 0 or 1.  {value} supplied')
     
+    @abaqus_method_doc
     def getId(self) -> int:
         ...
     

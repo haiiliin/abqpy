@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class QuantityType:
     """The QuantityType object is used to store attributes defining the physical dimension and
     label of the quantity type to be associated with an XYData or an AxisData object.
@@ -132,6 +134,7 @@ class QuantityType:
     #: The default value is NONE
     type: SymbolicConstant = None
 
+    @abaqus_method_doc
     def __init__(self, type: SymbolicConstant, label: str = ""):
         """This method creates a QuantityType object.
 
@@ -230,6 +233,7 @@ class QuantityType:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the QuantityType object."""
         ...

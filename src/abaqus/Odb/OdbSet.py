@@ -5,8 +5,10 @@ from .OdbMeshElementArray import OdbMeshElementArray
 from .OdbMeshNode import OdbMeshNode
 from .OdbMeshNodeArray import OdbMeshNodeArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbSet:
     """The set objects are used to identify regions of a model.
 
@@ -49,6 +51,7 @@ class OdbSet:
     #: part instance, this member is a sequence of sequences for each part instance.
     faces: SymbolicConstant = None
 
+    @abaqus_method_doc
     def __init__(self, name: str, nodes: typing.Tuple[OdbMeshNode, ...]):
         """This method creates a node set from an array of OdbMeshNode objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
@@ -78,6 +81,7 @@ class OdbSet:
         """
         ...
 
+    @abaqus_method_doc
     def NodeSetFromNodeLabels(self, name: str, nodeLabels: tuple):
         """This method creates a node set from a sequence of node labels.
 
@@ -106,6 +110,7 @@ class OdbSet:
         """
         ...
 
+    @abaqus_method_doc
     def ElementSet(self, name: str, elements: typing.Tuple[OdbMeshElement, ...]):
         """This method creates an element set from an array of OdbMeshElement objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshElement objects (for
@@ -136,6 +141,7 @@ class OdbSet:
         """
         ...
 
+    @abaqus_method_doc
     def ElementSetFromElementLabels(self, name: str, elementLabels: tuple):
         """This method creates an element set from a sequence of element labels.
 
@@ -164,6 +170,7 @@ class OdbSet:
         """
         ...
 
+    @abaqus_method_doc
     def MeshSurface(self, name: str, meshSurfaces: tuple):
         """This method creates a surface from the element and side identifiers for the assembly.
 
@@ -206,6 +213,7 @@ class OdbSet:
         """
         ...
 
+    @abaqus_method_doc
     def MeshSurfaceFromElsets(self, name: str, elementSetSeq: tuple):
         """This method creates a mesh surface from a sequence of element sets.
 
@@ -235,6 +243,7 @@ class OdbSet:
         """
         ...
 
+    @abaqus_method_doc
     def MeshSurfaceFromLabels(self, name: str, surfaceLabels: tuple):
         """This method creates a mesh surface from a sequence of surface labels.
 

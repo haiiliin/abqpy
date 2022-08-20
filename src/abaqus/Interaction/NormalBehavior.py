@@ -1,8 +1,10 @@
 import typing
 
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class NormalBehavior:
     """The NormalBehavior object specifies normal behavior for a contact interaction property.
 
@@ -102,6 +104,7 @@ class NormalBehavior:
     #: default value is 0.33333.
     lowerQuadraticRatio: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         contactStiffness: typing.Union[SymbolicConstant, float] = DEFAULT,
@@ -196,6 +199,7 @@ class NormalBehavior:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the NormalBehavior object."""
         ...

@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BeadRotationalSymmetry(GeometricRestriction):
     """The BeadRotationalSymmetry object defines a bead rotational symmetry geometric
     restriction.
@@ -35,6 +37,7 @@ class BeadRotationalSymmetry(GeometricRestriction):
     #: default value is None.
     csys: int = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -75,6 +78,7 @@ class BeadRotationalSymmetry(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, axis: SymbolicConstant = AXIS_1, csys: int = None):
         """This method modifies the BeadRotationalSymmetry object.
 

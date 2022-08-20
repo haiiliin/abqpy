@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MesherOptions:
     """The MesherOptions object controls the default settings that Abaqus uses for all meshing
     methods. The MesherOptions object has no constructor. Abaqus creates the **MesherOptions**
@@ -16,6 +18,7 @@ class MesherOptions:
             session.defaultMesherOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         elemShape2D: SymbolicConstant = QUAD_DOMINATED,

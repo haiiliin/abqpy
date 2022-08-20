@@ -1,8 +1,13 @@
 from .CommandRegister import CommandRegister
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class RegisteredTuple(CommandRegister, tuple):
-    """This class allows you to create a tuple that can be queried from the GUI and is capable
+    """This from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
+class allows you to create a tuple that can be queried from the GUI and is capable
     of notifying the GUI when the contents of any of the tuple's members change.
     The RegisteredTuple object is derived from the CommandRegister object.
 
@@ -14,6 +19,7 @@ class RegisteredTuple(CommandRegister, tuple):
             import customKernel
     """
 
+    @abaqus_method_doc
     def __init__(self, tuple: tuple):
         """This method creates a RegisteredTuple object.
 
@@ -36,6 +42,7 @@ class RegisteredTuple(CommandRegister, tuple):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def Methods(self):
         """The RegisteredTuple object supports the same methods as a standard Python list object."""
         # TODO: Implement this method

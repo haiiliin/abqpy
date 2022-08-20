@@ -12,8 +12,10 @@ from .SpectrumAmplitude import SpectrumAmplitude
 from .TabularAmplitude import TabularAmplitude
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AmplitudeModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
@@ -25,6 +27,7 @@ class AmplitudeModel(ModelBase):
             mdb.models[name]
     """
 
+    @abaqus_method_doc
     def ActuatorAmplitude(
         self, name: str, timeSpan: SymbolicConstant = STEP
     ) -> ActuatorAmplitude:
@@ -59,6 +62,7 @@ class AmplitudeModel(ModelBase):
         self.amplitudes[name] = amplitude = ActuatorAmplitude(name, timeSpan)
         return amplitude
 
+    @abaqus_method_doc
     def DecayAmplitude(
         self,
         name: str,
@@ -109,6 +113,7 @@ class AmplitudeModel(ModelBase):
         )
         return amplitude
 
+    @abaqus_method_doc
     def EquallySpacedAmplitude(
         self,
         name: str,
@@ -164,6 +169,7 @@ class AmplitudeModel(ModelBase):
         )
         return amplitude
 
+    @abaqus_method_doc
     def ModulatedAmplitude(
         self,
         name: str,
@@ -219,6 +225,7 @@ class AmplitudeModel(ModelBase):
         )
         return amplitude
 
+    @abaqus_method_doc
     def PeriodicAmplitude(
         self,
         name: str,
@@ -269,6 +276,7 @@ class AmplitudeModel(ModelBase):
         )
         return amplitude
 
+    @abaqus_method_doc
     def PsdDefinition(
         self,
         name: str,
@@ -342,6 +350,7 @@ class AmplitudeModel(ModelBase):
         )
         return amplitude
 
+    @abaqus_method_doc
     def SmoothStepAmplitude(
         self, name: str, data: tuple, timeSpan: SymbolicConstant = STEP
     ) -> SmoothStepAmplitude:
@@ -379,6 +388,7 @@ class AmplitudeModel(ModelBase):
         self.amplitudes[name] = amplitude = SmoothStepAmplitude(name, data, timeSpan)
         return amplitude
 
+    @abaqus_method_doc
     def SolutionDependentAmplitude(
         self,
         name: str,
@@ -429,6 +439,7 @@ class AmplitudeModel(ModelBase):
         )
         return amplitude
 
+    @abaqus_method_doc
     def SpectrumAmplitude(
         self,
         name: str,
@@ -519,6 +530,7 @@ class AmplitudeModel(ModelBase):
         )
         return amplitude
 
+    @abaqus_method_doc
     def TabularAmplitude(
         self,
         name: str,

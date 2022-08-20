@@ -1,7 +1,9 @@
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BoundaryCondition:
     """The BoundaryCondition object is the abstract base type for other BoundaryCondition
     objects. The BoundaryCondition object has no explicit constructor. The methods and
@@ -32,6 +34,7 @@ class BoundaryCondition:
     #: in the global coordinate system. The default value is None.
     localCsys: str = None
 
+    @abaqus_method_doc
     def deactivate(self, stepName: str):
         """This method deactivates the boundary condition in the specified step and all subsequent
         steps.
@@ -43,6 +46,7 @@ class BoundaryCondition:
         """
         ...
 
+    @abaqus_method_doc
     def move(self, fromStepName: str, toStepName: str):
         """This method moves the boundary condition state from one step to a different step.
 
@@ -56,6 +60,7 @@ class BoundaryCondition:
         """
         ...
 
+    @abaqus_method_doc
     def reset(self, stepName: str):
         """This method resets the boundary condition state of the specified step to the state of
         the previous analysis step.
@@ -67,14 +72,17 @@ class BoundaryCondition:
         """
         ...
 
+    @abaqus_method_doc
     def resume(self):
         """This method resumes the boundary condition that was previously suppressed."""
         ...
 
+    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the boundary condition."""
         ...
 
+    @abaqus_method_doc
     def delete(self, indices: tuple):
         """This method allows you to delete existing boundary conditions.
 

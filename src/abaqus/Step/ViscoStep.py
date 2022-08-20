@@ -15,8 +15,10 @@ from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ViscoStep(AnalysisStep):
     """The ViscoStep object is used to obtain a transient static response in an analysis with
     time-dependent material behavior (creep, swelling, and viscoelasticity).
@@ -216,6 +218,7 @@ class ViscoStep(AnalysisStep):
     #: A repository of PredefinedFieldState objects.
     predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -341,6 +344,7 @@ class ViscoStep(AnalysisStep):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         description: str = "",

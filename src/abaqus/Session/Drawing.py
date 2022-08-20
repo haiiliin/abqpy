@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Drawing:
     """A drawing is the container for a geometric object. The Drawing object stores the vertex
     data and various settings that determine how the drawing will be displayed.
@@ -84,6 +86,7 @@ class Drawing:
     #: A String specifying the repository key.
     name: str
 
+    @abaqus_method_doc
     def __init__(self, name: str):
         """This method creates an empty Drawing object.
 
@@ -112,6 +115,7 @@ class Drawing:
         """
         ...
 
+    @abaqus_method_doc
     def setVertices(self, vertexDimension: float, vertexData: tuple):
         """This method accepts the vertex data that defines the Drawing object. It defines in an
         array of vertices with a length equal to the length of the **vertexData** sequence divided
@@ -144,6 +148,7 @@ class Drawing:
         """
         ...
 
+    @abaqus_method_doc
     def setNormals(self, normalData: tuple):
         """This method accepts the normal data for each vertex. It defines in an array of normal
         vectors with a length equal to the length of the **normalData** sequence divided by 3.
@@ -170,6 +175,7 @@ class Drawing:
         """
         ...
 
+    @abaqus_method_doc
     def setColors(self, colorDimension: float, colorData: tuple):
         """This method accepts the color data for each vertex. It defines in an array of colors
         with a length equal to the length of the **colorData** sequence divided by
@@ -205,6 +211,7 @@ class Drawing:
         """
         ...
 
+    @abaqus_method_doc
     def setEdgeColor(self, edgeColor: tuple):
         """This method allows a separate, single color to be used when rendering the edges of the
         drawing. Once called, edges will be rendered using the specified color but facets will
@@ -226,6 +233,7 @@ class Drawing:
         """
         ...
 
+    @abaqus_method_doc
     def setPointColor(self, pointColor: tuple):
         """This method allows a separate, single color to be used when rendering the points of the
         drawing. Once called, points will be rendered using the specified color but facets will
@@ -247,6 +255,7 @@ class Drawing:
         """
         ...
 
+    @abaqus_method_doc
     def addArrayDraw(
         self,
         type: SymbolicConstant,
@@ -293,6 +302,7 @@ class Drawing:
         """
         ...
 
+    @abaqus_method_doc
     def addIndexDraw(
         self,
         type: SymbolicConstant,
@@ -338,6 +348,7 @@ class Drawing:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         show: Boolean = OFF,

@@ -2,8 +2,10 @@ import typing
 
 from .Edge import Edge
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class EdgeArray(typing.List[Edge]):
     """The EdgeArray is a sequence of Edge objects. If the part is modified, then EdgeArray
     must be updated for that part.
@@ -40,6 +42,7 @@ class EdgeArray(typing.List[Edge]):
             mdb.models[name].rootAssembly.surfaces[name].edges
     """
 
+    @abaqus_method_doc
     def __init__(self, edges: typing.List[Edge]):
         """This method creates an EdgeArray object.
 
@@ -63,6 +66,7 @@ class EdgeArray(typing.List[Edge]):
         """
         ...
 
+    @abaqus_method_doc
     def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[Edge, typing.List[Edge]]:
         """This method returns the object or objects in the EdgeArray located at the given
         coordinates.
@@ -103,6 +107,7 @@ class EdgeArray(typing.List[Edge]):
         """
         return Edge() 
 
+    @abaqus_method_doc
     def getClosest(self, coordinates: tuple, searchTolerance: str = ""):
         """This method returns an object or objects in the EdgeArray closest to the given set of
         points, where the given points need not lie on the edges in the EdgeArray.
@@ -137,6 +142,7 @@ class EdgeArray(typing.List[Edge]):
         """
         ...
 
+    @abaqus_method_doc
     def getSequenceFromMask(self, mask: str):
         """This method returns the object or objects in the EdgeArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
@@ -160,6 +166,7 @@ class EdgeArray(typing.List[Edge]):
         """
         ...
 
+    @abaqus_method_doc
     def getMask(self):
         """This method returns a string specifying the object or objects.
 
@@ -171,6 +178,7 @@ class EdgeArray(typing.List[Edge]):
         """
         ...
 
+    @abaqus_method_doc
     def getByBoundingBox(
         self,
         xMin: str = "",
@@ -205,6 +213,7 @@ class EdgeArray(typing.List[Edge]):
         """
         ...
 
+    @abaqus_method_doc
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
         """This method returns an array of edge objects that lie within the specified bounding
         cylinder.
@@ -228,6 +237,7 @@ class EdgeArray(typing.List[Edge]):
         """
         ...
 
+    @abaqus_method_doc
     def getByBoundingSphere(self, center: tuple, radius: str):
         """This method returns an array of edge objects that lie within the specified bounding
         sphere.
@@ -247,6 +257,7 @@ class EdgeArray(typing.List[Edge]):
         """
         ...
 
+    @abaqus_method_doc
     def getBoundingBox(self):
         """This method returns a dictionary of two tuples representing minimum and maximum boundary
         values of the bounding box of the minimum size containing the edge sequence.

@@ -1,6 +1,8 @@
 from .Section import Section
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AcousticInterfaceSection(Section):
     """The AcousticInterfaceSection object defines the properties of an acoustic section.
     The AcousticInterfaceSection object is derived from the Section object.
@@ -27,6 +29,7 @@ class AcousticInterfaceSection(Section):
     #: The default value is 1.0.
     thickness: float = 1
 
+    @abaqus_method_doc
     def __init__(self, name: str, thickness: float = 1):
         """This method creates an AcousticInterfaceSection object.
 
@@ -58,6 +61,7 @@ class AcousticInterfaceSection(Section):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, thickness: float = 1):
         """This method modifies the AcousticInterfaceSection object.
 

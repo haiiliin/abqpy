@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TopologyPointSymmetry(GeometricRestriction):
     """The TopologyPointSymmetry object defines a topology point symmetry geometric
     restriction.
@@ -33,6 +35,7 @@ class TopologyPointSymmetry(GeometricRestriction):
     #: A Boolean specifying whether to ignore frozen areas. The default value is OFF.
     ignoreFrozenArea: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -71,6 +74,7 @@ class TopologyPointSymmetry(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, csys: int = None, ignoreFrozenArea: Boolean = OFF):
         """This method modifies the TopologyPointSymmetry object.
 
