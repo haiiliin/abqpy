@@ -2,8 +2,10 @@ from .CapCreepCohesion import CapCreepCohesion
 from .CapCreepConsolidation import CapCreepConsolidation
 from .CapHardening import CapHardening
 from .....UtilityAndView.abaqusConstants import *
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CapPlasticity:
     r"""The CapPlasticity object specifies the modified Drucker-Prager/Cap plasticity model.
 
@@ -47,6 +49,7 @@ class CapPlasticity:
     #: A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapHardening.CapHardening` object.
     capHardening: CapHardening = CapHardening(((),))
 
+    @abaqus_method_doc
     def __init__(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ):
@@ -80,6 +83,7 @@ class CapPlasticity:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the CapPlasticity object.
 

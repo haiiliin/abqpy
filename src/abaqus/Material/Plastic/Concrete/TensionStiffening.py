@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TensionStiffening:
     """The TensionStiffening object defines the retained tensile stress normal to a crack in a
     Concrete model.
@@ -38,6 +40,7 @@ class TensionStiffening:
         - TENSION STIFFENING
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -78,6 +81,7 @@ class TensionStiffening:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the TensionStiffening object.
 

@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LineStyle:
     """The LineStyle object is used to define the line style to be used for drawing XY-Plot
     objects.
@@ -80,6 +82,7 @@ class LineStyle:
     #: LineStyle. The default value is 0.2.
     thickness: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         color: str = "",
@@ -124,6 +127,7 @@ class LineStyle:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         color: str = "",

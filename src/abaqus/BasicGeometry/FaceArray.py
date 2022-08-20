@@ -2,8 +2,10 @@ import typing
 
 from .Face import Face
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FaceArray(typing.List[Face]):
     """The FaceArray is a sequence of Face objects. If the part is modified, then FaceArray
     must be updated for that part.
@@ -38,6 +40,7 @@ class FaceArray(typing.List[Face]):
             mdb.models[name].rootAssembly.surfaces[name].faces
     """
 
+    @abaqus_method_doc
     def __init__(self, faces: typing.List[Face]):
         """This method creates a FaceArray object.
 
@@ -61,6 +64,7 @@ class FaceArray(typing.List[Face]):
         """
         ...
 
+    @abaqus_method_doc
     def findAt(
         self, coordinates: tuple, normal: tuple = (), printWarning: Boolean = True
     ):
@@ -103,6 +107,7 @@ class FaceArray(typing.List[Face]):
         """
         ...
 
+    @abaqus_method_doc
     def getExteriorEdges(self):
         """This method returns the edges on the exterior of the faces in the FaceArray. That is, it
         returns the edges that are referenced by exactly one of the faces in the sequence.
@@ -115,6 +120,7 @@ class FaceArray(typing.List[Face]):
         """
         ...
 
+    @abaqus_method_doc
     def getSequenceFromMask(self, mask: str):
         """This method returns the object or objects in the FaceArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
@@ -134,6 +140,7 @@ class FaceArray(typing.List[Face]):
         """
         ...
 
+    @abaqus_method_doc
     def getMask(self):
         """This method returns a string specifying the object or objects.
 
@@ -145,6 +152,7 @@ class FaceArray(typing.List[Face]):
         """
         ...
 
+    @abaqus_method_doc
     def getByBoundingBox(
         self,
         xMin: str = "",
@@ -179,6 +187,7 @@ class FaceArray(typing.List[Face]):
         """
         ...
 
+    @abaqus_method_doc
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
         """This method returns an array of face objects that lie within the specified bounding
         cylinder.
@@ -202,6 +211,7 @@ class FaceArray(typing.List[Face]):
         """
         ...
 
+    @abaqus_method_doc
     def getByBoundingSphere(self, center: tuple, radius: str):
         """This method returns an array of face objects that lie within the specified bounding
         sphere.
@@ -221,6 +231,7 @@ class FaceArray(typing.List[Face]):
         """
         ...
 
+    @abaqus_method_doc
     def getBoundingBox(self):
         """This method returns a dictionary of two tuples representing minimum and maximum boundary
         values of the bounding box of the minimum size containing the face sequence.
@@ -237,6 +248,7 @@ class FaceArray(typing.List[Face]):
         """
         ...
 
+    @abaqus_method_doc
     def getClosest(self, coordinates: tuple, searchTolerance: str = ""):
         """This method returns an object or objects in the FaceArray closest to the given set of
         points, where the given points need not lie on the faces in the FaceArray.

@@ -1,7 +1,9 @@
 from .Filter import Filter
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OperatorFilter(Filter):
     """The OperatorFilter object defines an operator filter.
     The OperatorFilter object is derived from the Filter object.
@@ -51,6 +53,7 @@ class OperatorFilter(Filter):
     #: values are NONE, FIRST, and SECOND. The default value is NONE.
     invariant: SymbolicConstant = NONE
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -109,6 +112,7 @@ class OperatorFilter(Filter):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         order: int = 2,

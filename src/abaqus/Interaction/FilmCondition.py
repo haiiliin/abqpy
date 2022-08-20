@@ -1,8 +1,10 @@
 from .Interaction import Interaction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FilmCondition(Interaction):
     """The FilmCondition object defines film coefficients and associated sink temperatures for
     coupled temperature-displacement analyses.
@@ -75,6 +77,7 @@ class FilmCondition(Interaction):
     #: are UNIFORM, ANALYTICAL_FIELD, and DISCRETE_FIELD. The default value is UNIFORM.
     sinkDistributionType: SymbolicConstant = UNIFORM
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -155,6 +158,7 @@ class FilmCondition(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         interactionProperty: str = "",
@@ -210,6 +214,7 @@ class FilmCondition(Interaction):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(self, stepName: str):
         """This method modifies the propagating data of an existing FilmCondition object in the
         specified step.

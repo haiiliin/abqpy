@@ -2,8 +2,10 @@ import typing
 
 from .Section import Section
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class GasketSection(Section):
     """The GasketSection object defines the properties of a gasket section.
     The GasketSection object is derived from the Section object.
@@ -52,6 +54,7 @@ class GasketSection(Section):
     #: thickness direction. The default value is DEFAULT.
     stabilizationStiffness: typing.Union[SymbolicConstant, float] = DEFAULT
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -104,6 +107,7 @@ class GasketSection(Section):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         crossSection: float = 1,

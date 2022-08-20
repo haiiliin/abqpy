@@ -2,8 +2,10 @@ from .BiaxialTestDataArray import BiaxialTestDataArray
 from .PlanarTestDataArray import PlanarTestDataArray
 from .UniaxialTestDataArray import UniaxialTestDataArray
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class MullinsEffect:
     """The MullinsEffect specifies properties for mullins data.
 

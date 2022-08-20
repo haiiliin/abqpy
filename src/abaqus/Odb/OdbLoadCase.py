@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class OdbLoadCase:
     """The OdbLoadCase object describes a load case.
 
@@ -15,6 +18,7 @@ class OdbLoadCase:
     #: A String specifying the name of the OdbLoadCase object.
     name: str
 
+    @abaqus_method_doc
     def __init__(self, name: str):
         """This method creates an OdbLoadCase object.
 

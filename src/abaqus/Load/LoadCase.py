@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LoadCase:
     """The LoadCase object is used to define the loads and constraints comprising a particular
     loading condition and the linear response of a structure subjected to that loading
@@ -19,6 +21,7 @@ class LoadCase:
     #: OFF.
     suppressed: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -56,14 +59,17 @@ class LoadCase:
         """
         ...
 
+    @abaqus_method_doc
     def resume(self):
         """This method resumes the load case that was previously suppressed."""
         ...
 
+    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the load case."""
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         boundaryConditions: tuple = (),

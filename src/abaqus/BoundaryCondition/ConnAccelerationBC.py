@@ -3,8 +3,10 @@ import typing
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConnAccelerationBC(BoundaryCondition):
     """The ConnAccelerationBC object stores the data for a connector acceleration boundary
     condition.
@@ -50,6 +52,7 @@ class ConnAccelerationBC(BoundaryCondition):
     #: in the global coordinate system. The default value is None.
     localCsys: str = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -137,6 +140,7 @@ class ConnAccelerationBC(BoundaryCondition):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         region: str = "",
@@ -205,6 +209,7 @@ class ConnAccelerationBC(BoundaryCondition):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

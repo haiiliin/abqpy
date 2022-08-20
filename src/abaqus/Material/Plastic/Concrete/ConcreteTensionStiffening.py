@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConcreteTensionStiffening:
     r"""The ConcreteTensionStiffening object specifies hardening for the concrete damaged
     plasticity model.
@@ -50,6 +52,7 @@ class ConcreteTensionStiffening:
         - CONCRETE TENSION STIFFENING
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -98,6 +101,7 @@ class ConcreteTensionStiffening:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConcreteTensionStiffening object.
 

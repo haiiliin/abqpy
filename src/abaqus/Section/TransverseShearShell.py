@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class TransverseShearShell:
     """The TransverseShearShell object defines the transverse shear stiffness properties of a
     shell section.
@@ -26,6 +29,7 @@ class TransverseShearShell:
     #: A Float specifying the coupling term in the shear stiffness of the section.
     k12: float
 
+    @abaqus_method_doc
     def __init__(self, k11: float, k22: float, k12: float):
         """This method creates a TransverseShearShell object.
 
@@ -53,6 +57,7 @@ class TransverseShearShell:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the TransverseShearShell object."""
         ...

@@ -1,6 +1,8 @@
 from ..Region.Region import Region
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class IMARegion:
     """A IMARegion is an object used to define material instance name volume fractions for the
     MaterialAssignment predefined field.

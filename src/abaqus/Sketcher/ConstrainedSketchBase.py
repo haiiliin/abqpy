@@ -19,8 +19,10 @@ from .ConstrainedSketchParameter.ConstrainedSketchParameter import (
 from .ConstrainedSketchVertex.ConstrainedSketchVertexArray import (
     ConstrainedSketchVertexArray,
 )
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class ConstrainedSketchBase:
     """A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object contains the entities that are used to create a sketch. The
     objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,

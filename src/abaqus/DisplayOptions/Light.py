@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Light:
     """The Light object stores settings that control how objects are lit when the **renderStyle**
     is set to SHADED.
@@ -16,6 +18,7 @@ class Light:
             session.viewports[name].lightOptions.lights[i]
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         enabled: Boolean = OFF,

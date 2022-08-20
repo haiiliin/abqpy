@@ -1,7 +1,9 @@
 from .Amplitude import Amplitude
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class Correlation(Amplitude):
     """A Correlation is an object used to define the cross-correlation as part of the
     definition of random loading.

@@ -3,8 +3,10 @@ import typing
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FluidCavityPressureBC(BoundaryCondition):
     """The FluidCavityPressureBC object stores the data for a fluid cavity pressure boundary
     condition.
@@ -37,6 +39,7 @@ class FluidCavityPressureBC(BoundaryCondition):
     #: in the global coordinate system. The default value is None.
     localCsys: str = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -81,6 +84,7 @@ class FluidCavityPressureBC(BoundaryCondition):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self, magnitude: float = 0, amplitude: str = UNSET, fixed: Boolean = OFF
     ):
@@ -102,6 +106,7 @@ class FluidCavityPressureBC(BoundaryCondition):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

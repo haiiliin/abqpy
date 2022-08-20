@@ -3,8 +3,10 @@ import typing
 from .Fastener import Fastener
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DiscreteFastener(Fastener):
     """The DiscreteFastener object defines a discrete fastener.
     The DiscreteFastener object is derived from the Fastener object.
@@ -68,6 +70,7 @@ class DiscreteFastener(Fastener):
     #: member is queried, it returns an Int. The default value is None.
     localCsys: int = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -133,6 +136,7 @@ class DiscreteFastener(Fastener):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         ur1: Boolean = ON,

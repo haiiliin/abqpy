@@ -4,8 +4,10 @@ from .Datum import Datum
 from .DatumAxis import DatumAxis
 from .DatumPoint import DatumPoint
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DatumCsys(Datum):
     """The DatumCsys object has no direct constructor; it is created when a Feature object is
     created. For example, the DatumCsysByOffset method creates a Feature object that creates
@@ -45,3 +47,43 @@ class DatumCsys(Datum):
 
     #: A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the 3-direction of the coordinate system.
     axis3: DatumAxis = DatumAxis()
+<<<<<<< HEAD
+=======
+
+    @abaqus_method_doc
+    def globalToLocal(
+        self, coordinates: typing.Tuple[float, float, float]
+    ) -> typing.Tuple[float, float, float]:
+        """This method transforms specified coordinates in the global coordinate system into this
+        local coordinate system.
+
+        Parameters
+        ----------
+        coordinates
+            A tuple of three Floats representing the coordinates in the global coordinate system.
+
+        Returns
+        -------
+        typing.Tuple[float, float, float]
+            A tuple of three Floats representing the coordinates in this local coordinate system.
+        """
+        ...
+
+    @abaqus_method_doc
+    def localToGlobal(
+        self, coordinates: typing.Tuple[float, float, float]
+    ) -> typing.Tuple[float, float, float]:
+        """This method transforms specified coordinates in this local coordinate system into the global coordinate system.
+
+        Parameters
+        ----------
+        coordinates
+            A tuple of three Floats representing the coordinates in the local coordinate system.
+
+        Returns
+        -------
+        typing.Tuple[float, float, float]
+            A tuple of three Floats representing the coordinates in this global coordinate system.
+        """
+        ...
+>>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)

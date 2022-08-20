@@ -5,8 +5,10 @@ from .Legend import Legend
 from .LineStyle import LineStyle
 from .TextStyle import TextStyle
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DefaultChartOptions:
     """The DefaultChartOptions object is used to hold on default chart and axis attributes. The
     DefaultChartOptions object attributes are used whenever Chart or Axis are created. A
@@ -23,6 +25,7 @@ class DefaultChartOptions:
 
     areaStyle: AreaStyle = AreaStyle()
 
+    @abaqus_method_doc
     def setValues(
         self,
         areaStyle: AreaStyle,

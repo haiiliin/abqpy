@@ -1,8 +1,10 @@
 from .Inertia import Inertia
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PointMassInertia(Inertia):
     """The PointMassInertia object defines point masses and point rotary inertia on a part or
     an assembly region.
@@ -83,6 +85,7 @@ class PointMassInertia(Inertia):
     #: argument applies only to Abaqus/Standard analyses.
     composite: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -163,6 +166,7 @@ class PointMassInertia(Inertia):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         mass: float = 0,

@@ -1,7 +1,9 @@
 from .Amplitude import Amplitude
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ModulatedAmplitude(Amplitude):
     """The ModulatedAmplitude object defines a modulated amplitude curve.
     The ModulatedAmplitude object is derived from the Amplitude object.
@@ -45,6 +47,7 @@ class ModulatedAmplitude(Amplitude):
     #: and TOTAL. The default value is STEP.
     timeSpan: SymbolicConstant = STEP
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -97,6 +100,7 @@ class ModulatedAmplitude(Amplitude):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, timeSpan: SymbolicConstant = STEP):
         """This method modifies the ModulatedAmplitude object.
 

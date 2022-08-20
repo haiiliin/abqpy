@@ -1,7 +1,9 @@
 from .BoundaryConditionState import BoundaryConditionState
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class VelocityBCState(BoundaryConditionState):
     """The VelocityBCState object stores the propagating data for a velocity boundary condition
     in a step. One instance of this object is created internally by the VelocityBC object

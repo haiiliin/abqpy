@@ -3,8 +3,10 @@ import typing
 from .Annotation import Annotation
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Text(Annotation, _OptionsBase):
     """The Text object stores the text settings and location of a text annotation.
     The Text object is derived from the Annotation object.
@@ -101,6 +103,7 @@ class Text(Annotation, _OptionsBase):
     #: JUSTIFY_LEFT.
     justification: SymbolicConstant = JUSTIFY_LEFT
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -212,6 +215,7 @@ class Text(Annotation, _OptionsBase):
         self.box = box
         self.justification = justification
 
+    @abaqus_method_doc
     def setValues(
         self,
         text: str = "",

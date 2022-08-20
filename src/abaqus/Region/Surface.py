@@ -7,8 +7,10 @@ from ..BasicGeometry.FaceArray import FaceArray
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNodeArray import MeshNodeArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Surface(Region):
     """The Surface object stores surfaces selected from the assembly. A surface is comprised of
     geometric or discrete entities but not both. An instance of a Surface object is
@@ -52,6 +54,7 @@ class Surface(Region):
     instances: int = None
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(
         self,
         side1Faces: typing.Tuple[Face, ...] = None,
@@ -186,6 +189,7 @@ class Surface(Region):
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(self, name: str, objectToCopy: "Surface"):
         """This method copies a surface from an existing surface.
 
@@ -211,6 +215,7 @@ class Surface(Region):
         """
         ...
 
+    @abaqus_method_doc
     def __init__(self, *args, **kwargs):
         ...
 
@@ -247,6 +252,7 @@ class Surface(Region):
         """
         ...
 
+    @abaqus_method_doc
     def SurfaceFromElsets(self, name: str, elementSetSeq: tuple):
         """This method creates a surface from a sequence of element sets in a model database.
 

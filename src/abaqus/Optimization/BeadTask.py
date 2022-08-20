@@ -6,8 +6,10 @@ from .ObjectiveFunction import ObjectiveFunction
 from .OptimizationConstraint import OptimizationConstraint
 from .OptimizationTask import OptimizationTask
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BeadTask(OptimizationTask):
     """The BeadTask object defines a bead task.
     The BeadTask object is derived from the OptimizationTask object.
@@ -122,6 +124,7 @@ class BeadTask(OptimizationTask):
     #: value of False means that the existing algorithm will be used.
     groupOperator: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -228,6 +231,7 @@ class BeadTask(OptimizationTask):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         abaqusSensitivities: Boolean = True,

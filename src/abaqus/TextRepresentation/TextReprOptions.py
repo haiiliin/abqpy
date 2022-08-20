@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TextReprOptions:
     """The TextReprOptions object is used to configure the output of the Python `str()` command
     within Abaqus/CAE. (The `str()` command is used by the Python print function.) The
@@ -19,6 +21,7 @@ class TextReprOptions:
             session.textReprOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         style: SymbolicConstant = None,

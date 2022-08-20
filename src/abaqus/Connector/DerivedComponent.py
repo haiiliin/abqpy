@@ -1,8 +1,10 @@
 from .CDCTerm import CDCTerm
 from .CDCTermArray import CDCTermArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DerivedComponent:
     """A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object describes user-customized components for use in defining
     ConnectorFriction and Potential objects.
@@ -31,6 +33,7 @@ class DerivedComponent:
     #: A :py:class:`~abaqus.Connector.CDCTermArray.CDCTermArray` object.
     cdcTerms: CDCTermArray = []
 
+    @abaqus_method_doc
     def __init__(self):
         """This method creates a DerivedComponent object.
 
@@ -59,6 +62,7 @@ class DerivedComponent:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DerivedComponent object.
 
@@ -68,6 +72,7 @@ class DerivedComponent:
         """
         ...
 
+    @abaqus_method_doc
     def CDCTerm(
         self,
         intrinsicComponents: tuple,

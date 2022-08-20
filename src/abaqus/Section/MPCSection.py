@@ -1,7 +1,9 @@
 from .Section import Section
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MPCSection(Section):
     """The MPCSection object defines the properties of a multi-point constraint section.
     The MPCSection object is derived from the Section object.
@@ -38,6 +40,7 @@ class MPCSection(Section):
     #: **mpcType** = USER_DEFINED.
     userType: int = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,

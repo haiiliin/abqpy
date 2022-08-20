@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ViewerOptions:
     """The ViewerOptions object specifies options to set the result caching parameters. The
     ViewerOptions object has no constructor. Abaqus creates the **viewerOptions** member when
@@ -15,6 +17,7 @@ class ViewerOptions:
             session.viewerOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         primaryVariableCaching: Boolean = ON,

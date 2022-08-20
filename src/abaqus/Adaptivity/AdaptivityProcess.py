@@ -3,8 +3,10 @@ import typing
 from .AdaptivityIteration import AdaptivityIteration
 from ..Job.ModelJob import ModelJob
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AdaptivityProcess:
     """The AdaptivityProcess object defines a series of jobs that will be submitted for
     analysis. Abaqus performs adaptive remeshing between each job.
@@ -43,6 +45,7 @@ class AdaptivityProcess:
     #: default value is an empty string.
     jobPrefix: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self, name: str, job: ModelJob, maxIterations: int = 3, jobPrefix: str = ""
     ):
@@ -82,6 +85,7 @@ class AdaptivityProcess:
         """
         ...
 
+    @abaqus_method_doc
     def submit(
         self,
         waitForCompletion: Boolean = OFF,
@@ -104,6 +108,7 @@ class AdaptivityProcess:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, maxIterations: int = 3, jobPrefix: str = ""):
         """This method modifies the AdaptivityProcess object.
 
@@ -120,6 +125,7 @@ class AdaptivityProcess:
         """
         ...
 
+    @abaqus_method_doc
     def AdaptivityIteration(
         self,
         iteration: int,

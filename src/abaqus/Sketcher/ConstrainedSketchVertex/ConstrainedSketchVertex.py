@@ -1,5 +1,9 @@
 import typing
 
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
+
+
+@abaqus_class_doc
 class ConstrainedSketchVertex:
     """The ConstrainedSketchVertex object stores the vertex position.
 
@@ -16,6 +20,7 @@ class ConstrainedSketchVertex:
     #: A tuple of Floats specifying the*X*-, **Y**-, and **Z**-coordinates of the sketch vertex.
     coords: float = None
 
+    @abaqus_method_doc
     def Spot(self, point: typing.Tuple[float, ...]):
         """This method creates a spot (construction point) located at the specified coordinates.
 

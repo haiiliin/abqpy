@@ -1,7 +1,9 @@
 from .ContactProperty import ContactProperty
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FluidCavityProperty(ContactProperty):
     """The FluidCavityProperty object is an interaction property that defines the fluid
     behavior for a surface-based fluid cavity.
@@ -137,6 +139,7 @@ class FluidCavityProperty(ContactProperty):
     #: - Etc.
     capacityTable: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -272,6 +275,7 @@ class FluidCavityProperty(ContactProperty):
         """
         super().__init__(name)
 
+    @abaqus_method_doc
     def setValues(
         self,
         definition: SymbolicConstant = HYDRAULIC,
