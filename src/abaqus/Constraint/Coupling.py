@@ -91,14 +91,7 @@ class Coupling(Constraint):
     #: **couplingType** = DISTRIBUTING.
     weightingMethod: SymbolicConstant = UNIFORM
 
-<<<<<<< HEAD
-=======
-    #: A Float specifying the value of the thermal expansion coefficient. The default value is 0.0.
-    #: The alpha argument applies only when couplingType=KINEMATIC.
-    alpha: float = 0.0
-
     @abaqus_method_doc
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def __init__(
         self,
         name: str,

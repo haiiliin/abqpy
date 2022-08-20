@@ -94,13 +94,7 @@ class Plastic:
     #: An :py:class:`~abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature` object.
     annealTemperature: AnnealTemperature = AnnealTemperature(((),))
 
-<<<<<<< HEAD
-=======
-    #: A :py:class:`~abaqus.Material.Plastic.TensileFailure.TensileFailure` object.
-    tensileFailure: TensileFailure = TensileFailure()
-
     @abaqus_method_doc
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def __init__(
         self,
         table: tuple,

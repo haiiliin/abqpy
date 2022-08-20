@@ -213,19 +213,7 @@ class ModelBase:
     #: A repository of OptimizationTask objects.
     optimizationTasks: typing.Dict[str, OptimizationTask] = {}
 
-<<<<<<< HEAD
-=======
-    #: A repository of TableCollection objects.
-    tableCollections: typing.Dict[str, TableCollection] = {}
-
-    #: A repository of EventSeriesType objects.
-    eventSeriesTypes: typing.Dict[str, EventSeriesType] = {}
-
-    #: A repository of EventSeriesData objects.
-    eventSeriesDatas: typing.Dict[str, EventSeriesData] = {}
-
     @abaqus_method_doc
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def __init__(
         self,
         name: str,
