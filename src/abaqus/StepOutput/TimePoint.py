@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class TimePoint:
     """The TimePoint object defines time points at which data are written to the output
     database or restart files.
@@ -22,6 +25,7 @@ class TimePoint:
     #: the output database or restart files.
     points: tuple
 
+    @abaqus_method_doc
     def __init__(self, name: str, points: tuple):
         """This method creates a TimePoint object.
 
@@ -52,6 +56,7 @@ class TimePoint:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the TimePoint object.
 

@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Hypoelastic:
     r"""The Hypoelastic object specifies hypoelastic material properties.
 
@@ -27,6 +29,7 @@ class Hypoelastic:
         - HYPOELASTIC
     """
 
+    @abaqus_method_doc
     def __init__(self, table: tuple, user: Boolean = OFF):
         """This method creates a Hypoelastic object.
 
@@ -53,6 +56,7 @@ class Hypoelastic:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Hypoelastic object."""
         ...

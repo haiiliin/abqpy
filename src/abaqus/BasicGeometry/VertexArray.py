@@ -2,8 +2,10 @@ import typing
 
 from .Vertex import Vertex
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class VertexArray(typing.List[Vertex]):
     """The VertexArray is a sequence of ConstrainedSketchVertex objects. If the part is modified, then
     VertexArray must be updated for that part.
@@ -31,6 +33,7 @@ class VertexArray(typing.List[Vertex]):
             mdb.models[name].rootAssembly.vertices
     """
 
+    @abaqus_method_doc
     def __init__(self, vertices: typing.List[Vertex]):
         """This method creates a VertexArray object.
 
@@ -54,6 +57,7 @@ class VertexArray(typing.List[Vertex]):
         """
         ...
 
+    @abaqus_method_doc
     def findAt(self, coordinates: tuple, printWarning: Boolean = True):
         """This method returns the object or objects in the VertexArray located at the given
         coordinates.
@@ -87,6 +91,7 @@ class VertexArray(typing.List[Vertex]):
         """
         ...
 
+    @abaqus_method_doc
     def getSequenceFromMask(self, mask: str):
         """This method returns the object or objects in the VertexArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
@@ -106,6 +111,7 @@ class VertexArray(typing.List[Vertex]):
         """
         ...
 
+    @abaqus_method_doc
     def getMask(self):
         """This method returns a string specifying the object or objects.
 
@@ -117,6 +123,7 @@ class VertexArray(typing.List[Vertex]):
         """
         ...
 
+    @abaqus_method_doc
     def getByBoundingBox(
         self,
         xMin: str = "",
@@ -152,6 +159,7 @@ class VertexArray(typing.List[Vertex]):
         """
         ...
 
+    @abaqus_method_doc
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
         """This method returns an array of vertex objects that lie within the specified bounding
         cylinder.
@@ -175,6 +183,7 @@ class VertexArray(typing.List[Vertex]):
         """
         ...
 
+    @abaqus_method_doc
     def getByBoundingSphere(self, center: tuple, radius: str):
         """This method returns an array of vertex objects that lie within the specified bounding
         sphere.
@@ -194,6 +203,7 @@ class VertexArray(typing.List[Vertex]):
         """
         ...
 
+    @abaqus_method_doc
     def getBoundingBox(self):
         """This method returns a dictionary of two tuples representing minimum and maximum boundary
         values of the bounding box of the minimum size containing the vertex sequence.
@@ -211,6 +221,7 @@ class VertexArray(typing.List[Vertex]):
         """
         ...
 
+    @abaqus_method_doc
     def getClosest(self, coordinates: tuple, searchTolerance: str = ""):
         """This method returns a object or objects in the VertexArray closest to the given set of
         points, where the given points need not lie on ConstrainedSketchVertex objects in the VertexArray.

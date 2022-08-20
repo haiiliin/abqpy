@@ -1,3 +1,7 @@
+from .._decorators import abaqus_class_doc
+
+
+@abaqus_class_doc
 class AbaqusNDarray:
     """The AbaqusNDarray object is a sequence object derived from numpy.ndarray and is used to
     store numeric keyword data from an Abaqus input file. This object is similar to the

@@ -1,7 +1,9 @@
 from ..Region.Set import Set
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SectionAssignment:
     """The SectionAssignment object is used to specify a section assignment on an assembly or
     part. Section assignments on the assembly are limited to connector elements only.
@@ -49,6 +51,7 @@ class SectionAssignment:
     #: "".
     offsetField: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         region: Set,
@@ -95,14 +98,17 @@ class SectionAssignment:
         """
         ...
 
+    @abaqus_method_doc
     def resume(self):
         """This method resumes the section assignment that was previously suppressed."""
         ...
 
+    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the section assignment."""
         ...
 
+    @abaqus_method_doc
     def getVertices(self):
         """This method is only valid for connector section assignments. This method returns a
         sequence consisting of tuples of coordinates of the connector's endpoints.
@@ -120,6 +126,7 @@ class SectionAssignment:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the SectionAssignment object."""
         ...

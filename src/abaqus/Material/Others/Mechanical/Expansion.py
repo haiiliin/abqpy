@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Expansion:
     r"""The Expansion object specifies thermal expansion.
 
@@ -51,6 +53,7 @@ class Expansion:
         - EXPANSION
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         type: SymbolicConstant = ISOTROPIC,
@@ -100,6 +103,7 @@ class Expansion:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Expansion object.
 

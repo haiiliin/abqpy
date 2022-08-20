@@ -2,8 +2,10 @@ from ...Plastic.SuperElastic.SuperElasticHardening import SuperElasticHardening
 from ...Plastic.SuperElastic.SuperElasticHardeningModifications import (
     SuperElasticHardeningModifications,
 )
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SuperElasticity:
     """The SuperElasticity object specifies a superelastic material model.
 
@@ -46,6 +48,7 @@ class SuperElasticity:
         SuperElasticHardeningModifications(((),))
     )
 
+    @abaqus_method_doc
     def __init__(self, table: tuple, nonassociated: float = None):
         """This method creates a SuperElasticity object.
 
@@ -77,6 +80,7 @@ class SuperElasticity:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the SuperElasticity object.
 

@@ -3,8 +3,10 @@ import typing
 from .Amplitude import Amplitude
 from .BaselineCorrection import BaselineCorrection
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TabularAmplitude(Amplitude):
     """The TabularAmplitude object defines an amplitude curve as a table of values at
     convenient points on the time scale.
@@ -45,6 +47,7 @@ class TabularAmplitude(Amplitude):
     #: and TOTAL. The default value is STEP.
     timeSpan: SymbolicConstant = STEP
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -90,6 +93,7 @@ class TabularAmplitude(Amplitude):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         smooth: typing.Union[SymbolicConstant, float] = SOLVER_DEFAULT,

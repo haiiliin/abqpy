@@ -1,7 +1,9 @@
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _CopyOptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ViewCutOptions(_CopyOptionsBase):
     """The ViewCutOptions object stores values and attributes associated with a view cut plot.
     The ViewCutOptions object has no constructor command. Abaqus creates a
@@ -106,6 +108,7 @@ class ViewCutOptions(_CopyOptionsBase):
     #: default value is (0, 1, 0).
     yAxis: float = None
 
+    @abaqus_method_doc
     def setValues(
         self,
         options: "ViewCutOptions" = None,

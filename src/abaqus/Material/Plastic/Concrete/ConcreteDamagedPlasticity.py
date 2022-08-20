@@ -3,8 +3,10 @@ from .ConcreteCompressionHardening import ConcreteCompressionHardening
 from .ConcreteTensionDamage import ConcreteTensionDamage
 from .ConcreteTensionStiffening import ConcreteTensionStiffening
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConcreteDamagedPlasticity:
     r"""The ConcreteDamagedPlasticity object specifies the concrete damaged plasticity model.
 
@@ -59,6 +61,7 @@ class ConcreteDamagedPlasticity:
     #: A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteTensionDamage.ConcreteTensionDamage` object.
     concreteTensionDamage: ConcreteTensionDamage = ConcreteTensionDamage(((),))
 
+    @abaqus_method_doc
     def __init__(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ):
@@ -92,6 +95,7 @@ class ConcreteDamagedPlasticity:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConcreteDamagedPlasticity object.
 

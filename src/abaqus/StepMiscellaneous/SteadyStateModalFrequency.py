@@ -1,3 +1,7 @@
+from .._decorators import abaqus_class_doc
+
+
+@abaqus_class_doc
 class SteadyStateModalFrequency:
     """A SteadyStateModalFrequency is an object used to define frequency over a range of modes.
 

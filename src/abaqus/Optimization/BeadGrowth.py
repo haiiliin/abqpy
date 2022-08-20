@@ -1,7 +1,9 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BeadGrowth(GeometricRestriction):
     """The BeadGrowth object defines a growth geometric restriction.
     The BeadGrowth object is derived from the GeometricRestriction object.
@@ -29,6 +31,7 @@ class BeadGrowth(GeometricRestriction):
     #: **beadGrowth** or **shrink** or both must be specified The default value is 0.0.
     shrink: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self, name: str, region: Region, beadGrowth: float = 0, shrink: float = 0
     ):
@@ -61,6 +64,7 @@ class BeadGrowth(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, beadGrowth: float = 0, shrink: float = 0):
         """This method modifies the BeadGrowth object.
 

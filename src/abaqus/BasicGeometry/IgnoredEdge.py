@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class IgnoredEdge:
     """An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object is a one-dimensional region of geometry that has been abstracted
     away by a virtual topology feature.
@@ -21,6 +24,7 @@ class IgnoredEdge:
     #: the edge.
     pointOn: float = None
 
+    @abaqus_method_doc
     def getSize(self, printResults: str = True):
         """This method returns a Float indicating the length of the edge.
 
@@ -37,6 +41,7 @@ class IgnoredEdge:
         """
         ...
 
+    @abaqus_method_doc
     def getRadius(self):
         """This method returns the radius of a circular IgnoredEdge object.
 
@@ -51,6 +56,7 @@ class IgnoredEdge:
         """
         ...
 
+    @abaqus_method_doc
     def getCurvature(self, parameter: float, point: tuple):
         """This method returns curvature information at a location on the IgnoredEdge object.
 

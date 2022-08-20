@@ -37,8 +37,10 @@ from ..Datum.DatumAxis import DatumAxis
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LoadModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
@@ -50,6 +52,7 @@ class LoadModel(ModelBase):
             mdb.models[name]
     """
 
+    @abaqus_method_doc
     def BodyCharge(
         self,
         name: str,
@@ -102,6 +105,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def BodyConcentrationFlux(
         self,
         name: str,
@@ -154,6 +158,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def BodyCurrent(
         self,
         name: str,
@@ -206,6 +211,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def BodyCurrentDensity(
         self,
         name: str,
@@ -266,6 +272,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def BodyForce(
         self,
         name: str,
@@ -333,6 +340,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def BodyHeatFlux(
         self,
         name: str,
@@ -385,6 +393,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def BoltLoad(
         self,
         name: str,
@@ -447,6 +456,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def ConcCharge(
         self,
         name: str,
@@ -499,6 +509,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def ConcConcFlux(
         self,
         name: str,
@@ -551,6 +562,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def ConcCurrent(
         self,
         name: str,
@@ -603,6 +615,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def ConcentratedForce(
         self,
         name: str,
@@ -683,6 +696,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def ConcentratedHeatFlux(
         self,
         name: str,
@@ -746,6 +760,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def ConcPoreFluid(
         self,
         name: str,
@@ -798,6 +813,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def ConnectorForce(
         self,
         name: str,
@@ -871,6 +887,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def ConnectorMoment(
         self,
         name: str,
@@ -943,6 +960,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def CoriolisForce(
         self,
         name: str,
@@ -1009,6 +1027,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def Gravity(
         self,
         name: str,
@@ -1076,6 +1095,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def InertiaRelief(
         self,
         name: str,
@@ -1149,6 +1169,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def InwardVolAccel(
         self,
         name: str,
@@ -1201,6 +1222,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def LineLoad(
         self,
         name: str,
@@ -1274,6 +1296,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def Moment(
         self,
         name: str,
@@ -1354,6 +1377,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def PEGLoad(
         self,
         name: str,
@@ -1421,6 +1445,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def PipePressure(
         self,
         name: str,
@@ -1498,6 +1523,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def Pressure(
         self,
         name: str,
@@ -1572,6 +1598,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def RotationalBodyForce(
         self,
         name: str,
@@ -1650,6 +1677,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def ShellEdgeLoad(
         self,
         name: str,
@@ -1759,6 +1787,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def SubmodelSB(
         self,
         name: str,
@@ -1826,6 +1855,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def SubstructureLoad(
         self,
         name: str,
@@ -1871,6 +1901,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def SurfaceCharge(
         self,
         name: str,
@@ -1923,6 +1954,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def SurfaceConcentrationFlux(
         self,
         name: str,
@@ -1976,6 +2008,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def SurfaceCurrent(
         self,
         name: str,
@@ -2028,6 +2061,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def SurfaceCurrentDensity(
         self,
         name: str,
@@ -2088,6 +2122,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def SurfaceHeatFlux(
         self,
         name: str,
@@ -2140,6 +2175,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def SurfacePoreFluid(
         self,
         name: str,
@@ -2192,6 +2228,7 @@ class LoadModel(ModelBase):
         )
         return load
 
+    @abaqus_method_doc
     def SurfaceTraction(
         self,
         name: str,

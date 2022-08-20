@@ -1,4 +1,5 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_function_doc
 
 """The Python module textRepr contains functions to print an Abaqus object and to convert 
 the output from the str() function into a formatted string, indented for each object in 
@@ -15,6 +16,7 @@ the recursive listing of a Python object.
 """
 
 
+@abaqus_function_doc
 def getIndentedRepr(
     object,
     maxRecursionDepth: SymbolicConstant = None,
@@ -52,6 +54,7 @@ def getIndentedRepr(
     ...
 
 
+@abaqus_function_doc
 def getPaths(
     object,
     maxRecursionDepth: SymbolicConstant = None,
@@ -90,6 +93,7 @@ def getPaths(
     ...
 
 
+@abaqus_function_doc
 def getTypes(
     object,
     maxRecursionDepth: SymbolicConstant = None,
@@ -126,6 +130,7 @@ def getTypes(
     ...
 
 
+@abaqus_function_doc
 def prettyPrint(
     object,
     maxRecursionDepth: SymbolicConstant = None,
@@ -158,6 +163,7 @@ def prettyPrint(
     ...
 
 
+@abaqus_function_doc
 def printPaths(
     object,
     maxRecursionDepth: SymbolicConstant = None,
@@ -191,6 +197,7 @@ def printPaths(
     ...
 
 
+@abaqus_function_doc
 def printTypes(
     object,
     maxRecursionDepth: SymbolicConstant = None,

@@ -4,8 +4,10 @@ from .Chebyshev2Filter import Chebyshev2Filter
 from .OperatorFilter import OperatorFilter
 from ..Odb.OdbBase import OdbBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FilterOdb(OdbBase):
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
@@ -18,6 +20,7 @@ class FilterOdb(OdbBase):
             session.odbs[name]
     """
 
+    @abaqus_method_doc
     def ButterworthFilter(
         self,
         name: str,
@@ -79,6 +82,7 @@ class FilterOdb(OdbBase):
         )
         return butterworthFilter
 
+    @abaqus_method_doc
     def Chebyshev1Filter(
         self,
         name: str,
@@ -151,6 +155,7 @@ class FilterOdb(OdbBase):
         )
         return chebyshev1Filter
 
+    @abaqus_method_doc
     def Chebyshev2Filter(
         self,
         name: str,
@@ -223,6 +228,7 @@ class FilterOdb(OdbBase):
         )
         return chebyshev2Filter
 
+    @abaqus_method_doc
     def OperatorFilter(
         self,
         name: str,

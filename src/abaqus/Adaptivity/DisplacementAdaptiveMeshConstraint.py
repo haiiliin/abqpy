@@ -3,8 +3,10 @@ import typing
 from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     """The AdaptivityProcess object defines a series of jobs that will be submitted for
     analysis. Abaqus performs adaptive remeshing between each job.
@@ -33,6 +35,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     #: in the global coordinate system. The default value is None.
     localCsys: str = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -110,6 +113,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         """
         super().__init__(name, region=region, category=MECHANICAL, localCsys=localCsys)
 
+    @abaqus_method_doc
     def setValues(
         self,
         u1: typing.Union[SymbolicConstant, float] = UNSET,
@@ -166,6 +170,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

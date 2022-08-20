@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class StopCondition:
     """The StopCondition object is the abstract base type for other StopCondition objects. The
     StopCondition object has no explicit constructor. The methods and members of the

@@ -1,7 +1,9 @@
 from .Leaf import Leaf
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LeafFromNodeSets(Leaf):
     """The LeafFromNodeSets object can be used whenever a Leaf object is expected as an
     argument. Leaf objects are used to specify the items in a display group. Leaf objects
@@ -24,6 +26,7 @@ class LeafFromNodeSets(Leaf):
     #: A sequence of Strings specifying node sets or a String specifying a single node set.
     nodeSets: tuple
 
+    @abaqus_method_doc
     def __init__(self, nodeSets: tuple):
         """This method creates a Leaf object from a sequence of node sets.
 

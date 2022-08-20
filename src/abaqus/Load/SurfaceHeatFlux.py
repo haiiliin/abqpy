@@ -1,8 +1,10 @@
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SurfaceHeatFlux(Load):
     """The SurfaceHeatFlux object defines surface heat flux from a region or into a region.
     The SurfaceHeatFlux object is derived from the Load object.
@@ -31,6 +33,7 @@ class SurfaceHeatFlux(Load):
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -80,6 +83,7 @@ class SurfaceHeatFlux(Load):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         field: str = "",
@@ -105,6 +109,7 @@ class SurfaceHeatFlux(Load):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self, stepName: str, magnitude: float = None, amplitude: str = ""
     ):

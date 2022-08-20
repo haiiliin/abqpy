@@ -1,3 +1,6 @@
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class SuperElasticHardening:
     """The SuperElasticHardening object specifies the dependence of the yield stress on the
     total strain to define the piecewise linear hardening of a martensite material model.
@@ -22,6 +25,7 @@ class SuperElasticHardening:
         - SUPERELASTIC HARDENING
     """
 
+    @abaqus_method_doc
     def __init__(self, table: tuple):
         """This method creates a SuperElasticHardening object.
 
@@ -49,6 +53,7 @@ class SuperElasticHardening:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the SuperElasticHardening object.
 

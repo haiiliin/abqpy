@@ -1,8 +1,10 @@
 import typing
 
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Control:
     """The Control object is used to provide additional optional general solution controls.
 
@@ -15,6 +17,7 @@ class Control:
             mdb.models[name].steps[name].control
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         allowPropagation: Boolean = ON,

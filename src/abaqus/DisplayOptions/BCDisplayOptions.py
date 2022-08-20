@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BCDisplayOptions:
     """The BCDisplayOptions object stores settings that specify how assemblies are to be
     displayed in a particular viewport when
@@ -17,6 +19,7 @@ class BCDisplayOptions:
             session.viewports[name].layers[name].assemblyDisplay.bcOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         displacement: Boolean = ON,

@@ -7,8 +7,10 @@ from .OptimizationConstraint import OptimizationConstraint
 from .OptimizationTask import OptimizationTask
 from .StopCondition import StopCondition
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SizingTask(OptimizationTask):
     """The SizingTask object defines a Sizing task.
     The SizingTask object is derived from the OptimizationTask object.
@@ -83,6 +85,7 @@ class SizingTask(OptimizationTask):
     #: The default value is NORMAL.
     thicknessUpdateStrategy: SymbolicConstant = NORMAL
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -151,6 +154,7 @@ class SizingTask(OptimizationTask):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         abaqusSensitivities: Boolean = True,

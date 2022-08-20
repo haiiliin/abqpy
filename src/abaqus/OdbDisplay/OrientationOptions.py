@@ -1,7 +1,9 @@
 from ..PlotOptions.DGOrientationOptions import DGOrientationOptions
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OrientationOptions(DGOrientationOptions):
     """The OrientationOptions object stores values and attributes associated with a material
     orientation plot. The OrientationOptions object has no constructor command. Abaqus
@@ -78,6 +80,7 @@ class OrientationOptions(DGOrientationOptions):
     #: value is "Red".
     axis3Color: str = ""
 
+    @abaqus_method_doc
     def setValues(
         self,
         options: "OrientationOptions" = None,

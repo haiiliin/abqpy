@@ -15,8 +15,10 @@ from ..Mesh.MeshEdge import MeshEdge
 from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class RegionPart(RegionPartBase):
     """The following commands operate on Part objects. For more information about the Part
     object, see Part object.
@@ -29,6 +31,7 @@ class RegionPart(RegionPartBase):
             import regionToolset
     """
 
+    @abaqus_method_doc
     def Surface(
         self,
         side1Faces: typing.Tuple[Face, ...] = None,
@@ -190,6 +193,7 @@ class RegionPart(RegionPartBase):
         return surface
 
     @typing.overload
+    @abaqus_method_doc
     def Set(
         self,
         name: str,
@@ -266,6 +270,7 @@ class RegionPart(RegionPartBase):
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def Set(self, name: str, objectToCopy: Set) -> Set:
         """This method copies a set from an existing set.
 
@@ -291,6 +296,7 @@ class RegionPart(RegionPartBase):
         """
         ...
 
+    @abaqus_method_doc
     def Set(self, name, *args, **kwargs) -> Set:
         """This method creates a set from a sequence of objects in a model database.
 
@@ -314,6 +320,7 @@ class RegionPart(RegionPartBase):
         self.sets[name] = aSet = Set(name, *args, **kwargs)
         return aSet
 
+    @abaqus_method_doc
     def Skin(
         self,
         name: str,
@@ -357,6 +364,7 @@ class RegionPart(RegionPartBase):
         self.skins[name] = skin = Skin(name, faces, edges, elementFaces, elementEdges)
         return skin
 
+    @abaqus_method_doc
     def EditSkin(
         self,
         name: str = "",
@@ -400,6 +408,7 @@ class RegionPart(RegionPartBase):
         self.skins[name] = skin = Skin(name, faces, edges, elementFaces, elementEdges)
         return skin
 
+    @abaqus_method_doc
     def Stringer(
         self, name: str, edges: typing.Tuple[Edge, ...] = (), elementEdges: typing.Tuple[MeshEdge, ...] = ()
     ) -> Stringer:

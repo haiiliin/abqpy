@@ -1,7 +1,9 @@
 from .PredefinedFieldState import PredefinedFieldState
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class FieldState(PredefinedFieldState):
     """The FieldState object stores the propagating data of a field in a step. One instance of
     this object is created internally by the Field object for each step.

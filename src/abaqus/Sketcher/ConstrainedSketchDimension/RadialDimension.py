@@ -5,9 +5,12 @@ from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
     ConstrainedSketchGeometry,
 )
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class RadialDimension(ConstrainedSketchDimension):
+    @abaqus_method_doc
     def __init__(
         self,
         curve: ConstrainedSketchGeometry,

@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConstraintDisplayOptions:
     """The ConstraintDisplayOptions object stores settings that specify how assemblies are to
     be displayed in a particular viewport when
@@ -17,6 +19,7 @@ class ConstraintDisplayOptions:
             session.viewports[name].layers[name].assemblyDisplay.constraintOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         constraintEquation: Boolean = ON,

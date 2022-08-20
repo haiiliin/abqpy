@@ -7,8 +7,10 @@ from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..DisplayGroup.DisplayGroupInstance import DisplayGroupInstance
 from ..DisplayGroup.Leaf import Leaf
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PartDisplayOptions:
     """The PartDisplayOptions object stores settings that specify how parts are to be displayed
     in a particular viewport. The PartDisplayOptions object has no constructor. When you
@@ -59,6 +61,7 @@ class PartDisplayOptions:
     #: A :py:class:`~abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions` object.
     meshOptions: MeshDisplayOptions = MeshDisplayOptions()
 
+    @abaqus_method_doc
     def setValues(
         self,
         renderStyle: SymbolicConstant = WIREFRAME,

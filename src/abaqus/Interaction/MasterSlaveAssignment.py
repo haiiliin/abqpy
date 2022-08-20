@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MasterSlaveAssignment:
     """The MasterSlaveAssignment object stores the master-slave assignment definition for
     surfaces in ContactExp and ContactStd objects. The MasterSlaveAssignment object has no
@@ -19,6 +21,7 @@ class MasterSlaveAssignment:
         - CONTACT FORMULATION
     """
 
+    @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: SymbolicConstant):
         """This method allows modification of master-slave assignments already defined on surface
         pairs in a given step.
@@ -38,6 +41,7 @@ class MasterSlaveAssignment:
         """
         ...
 
+    @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: SymbolicConstant):
         """This method allows addition of master-slave assignments to new surface pairs in a
         given step.
@@ -59,6 +63,7 @@ class MasterSlaveAssignment:
         """
         ...
 
+    @abaqus_method_doc
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing master-slave assignments.
 

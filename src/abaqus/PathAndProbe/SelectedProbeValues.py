@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class SelectedProbeValues:
     """The SelectedProbeValues object has no constructor. The SelectedProbeValues object is
     created when you import the Visualization module.

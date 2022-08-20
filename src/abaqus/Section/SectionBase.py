@@ -4,8 +4,10 @@ from .TransverseShearBeam import TransverseShearBeam
 from .TransverseShearShell import TransverseShearShell
 from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SectionBase:
     """The Section object defines the properties of a section. The Section object is the
     abstract base type for other Section objects. The Section object has no explicit
@@ -35,6 +37,7 @@ class SectionBase:
     #: A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object.
     transverseShear: TransverseShearShell = TransverseShearShell(0, 0, 0)
 
+    @abaqus_method_doc
     def sectionsFromOdb(self, fileName: str):
         """This method creates Section objects by reading an output database. The new sections are
         placed in the sections repository.

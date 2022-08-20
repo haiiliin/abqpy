@@ -20,8 +20,10 @@ from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PartInstance:
     """A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object is an instance of a Part object.
 
@@ -136,6 +138,7 @@ class PartInstance:
     #: A String specifying the name of the part from which the instance was created.
     partName: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self, name: str, part: Part, autoOffset: Boolean = OFF, dependent: Boolean = OFF
     ):
@@ -184,6 +187,7 @@ class PartInstance:
         self.elemEdges = part.elemEdges
         self.elementEdges = part.elementEdges
 
+    @abaqus_method_doc
     def InstanceFromBooleanCut(
         self,
         name: str,
@@ -222,6 +226,7 @@ class PartInstance:
         """
         ...
 
+    @abaqus_method_doc
     def InstanceFromBooleanMerge(
         self,
         name: str,
@@ -281,6 +286,7 @@ class PartInstance:
         """
         ...
 
+    @abaqus_method_doc
     def LinearInstancePattern(
         self,
         instanceList: tuple,
@@ -331,6 +337,7 @@ class PartInstance:
         """
         ...
 
+    @abaqus_method_doc
     def RadialInstancePattern(
         self,
         instanceList: tuple,
@@ -376,6 +383,7 @@ class PartInstance:
         """
         ...
 
+    @abaqus_method_doc
     def checkGeometry(self, detailed: Boolean = OFF, level: int = None):
         """This method checks the validity of the geometry of the part instance and prints a count
         of all topological entities on the part instance (faces, edges, vertices, etc.).
@@ -400,6 +408,7 @@ class PartInstance:
         """
         ...
 
+    @abaqus_method_doc
     def Contact(
         self,
         movableList: tuple,
@@ -434,6 +443,7 @@ class PartInstance:
         """
         ...
 
+    @abaqus_method_doc
     def ConvertConstraints(self):
         """This method converts the position constraints of an instance to absolute positions. The
         method deletes the constraint features on the instance but preserves the position in
@@ -441,12 +451,14 @@ class PartInstance:
         """
         ...
 
+    @abaqus_method_doc
     def getPosition(self):
         """This method prints the sum of the translations and rotations applied to the PartInstance
         object.
         """
         ...
 
+    @abaqus_method_doc
     def getRotation(self):
         """This method returns a tuple including the point of rotation, axis of rotation, and
         rotation angle (in degrees).
@@ -459,6 +471,7 @@ class PartInstance:
         """
         ...
 
+    @abaqus_method_doc
     def getTranslation(self):
         """This method returns a tuple of three Floats representing translation in the **X**-, **Y**-,
         and **Z**-directions.
@@ -470,6 +483,7 @@ class PartInstance:
         """
         ...
 
+    @abaqus_method_doc
     def replace(self, instanceOf: Part, applyConstraints: Boolean = True):
         """This method replaces one instance with an instance of another part.
 
@@ -485,6 +499,7 @@ class PartInstance:
         """
         ...
 
+    @abaqus_method_doc
     def rotateAboutAxis(self, axisPoint: tuple, axisDirection: tuple, angle: float):
         """This method translates an instance by the specified amount.
 
@@ -501,6 +516,7 @@ class PartInstance:
         """
         ...
 
+    @abaqus_method_doc
     def translate(self, vector: tuple):
         """This method translates an instance by the specified amount.
 
@@ -511,6 +527,7 @@ class PartInstance:
         """
         ...
 
+    @abaqus_method_doc
     def translateTo(
         self,
         movableList: tuple,

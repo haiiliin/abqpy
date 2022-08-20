@@ -5,8 +5,10 @@ from ..Job.JobSession import JobSession
 from ..Odb.OdbSession import OdbSession
 from ..PathAndProbe.PathSession import PathSession
 from ..XY.XYSession import XYSession
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class Session(
     AnimationSession,
     DisplayGroupSession,

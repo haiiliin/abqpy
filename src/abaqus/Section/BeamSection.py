@@ -3,8 +3,10 @@ import typing
 from .Section import Section
 from .TransverseShearBeam import TransverseShearBeam
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BeamSection(Section):
     """The BeamSection object defines the properties of a beam section.
     The BeamSection object is derived from the Section object.
@@ -160,6 +162,7 @@ class BeamSection(Section):
     #: model database but not for the ODB API.
     profileEnd: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -298,6 +301,7 @@ class BeamSection(Section):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         poissonRatio: float = 0,

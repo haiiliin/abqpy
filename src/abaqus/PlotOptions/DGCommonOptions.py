@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class DGCommonOptions:
     """The DGCommonOptions object stores values and attributes that are common to all plot
     states. The DGCommonOptions object has no constructor command. Abaqus creates an

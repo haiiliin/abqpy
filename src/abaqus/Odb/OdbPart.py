@@ -4,9 +4,12 @@ from .OdbMeshNode import OdbMeshNode
 from .OdbPartBase import OdbPartBase
 from .OdbSet import OdbSet
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbPart(OdbPartBase):
+    @abaqus_method_doc
     def RigidBody(
         self,
         referenceNode: str,
@@ -49,6 +52,7 @@ class OdbPart(OdbPartBase):
         """
         ...
 
+    @abaqus_method_doc
     def NodeSet(self, name: str, nodes: typing.Tuple[OdbMeshNode, ...]) -> OdbSet:
         """This method creates a node set from an array of OdbMeshNode objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for

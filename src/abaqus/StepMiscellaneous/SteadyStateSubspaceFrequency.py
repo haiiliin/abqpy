@@ -1,3 +1,7 @@
+from .._decorators import abaqus_class_doc
+
+
+@abaqus_class_doc
 class SteadyStateSubspaceFrequency:
     """A SteadyStateSubspaceFrequency is an object used to define frequency over range of
     modes.

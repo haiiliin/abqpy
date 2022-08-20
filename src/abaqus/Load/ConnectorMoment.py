@@ -3,8 +3,10 @@ import typing
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConnectorMoment(Load):
     """The ConnectorMoment object stores the data for a connector moment.
     The ConnectorMoment object is derived from the Load object.
@@ -35,6 +37,7 @@ class ConnectorMoment(Load):
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -96,6 +99,7 @@ class ConnectorMoment(Load):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         region: str = "",
@@ -139,6 +143,7 @@ class ConnectorMoment(Load):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,
