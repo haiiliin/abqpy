@@ -124,16 +124,7 @@ class JobFromInputFile(Job):
     #: values are DEFAULT, THREADS, and MPI. The default value is DEFAULT.
     multiprocessingMode: SymbolicConstant = DEFAULT
 
-<<<<<<< HEAD
-=======
-    #: A SymbolicConstant specifying the type of license type being used in the case of the
-    #: DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
-    #: value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
-    #: available.
-    licenseType: SymbolicConstant = DEFAULT
-
     @abaqus_method_doc
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def __init__(
         self,
         name: str,

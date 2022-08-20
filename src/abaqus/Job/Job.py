@@ -172,11 +172,3 @@ class Job:
         immediately.
         """
         ...
-<<<<<<< HEAD
-=======
-
-    @abaqus_method_doc
-    def clearMessage(self):
-        """This method clears **messages** and sets the **status** to NONE."""
-        ...
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)

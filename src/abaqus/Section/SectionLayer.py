@@ -72,13 +72,7 @@ class SectionLayer:
     #: default value is "".
     additionalRotationField: str = ""
 
-<<<<<<< HEAD
-    #: A String specifying the name of the field specifying the thickness The default value is "".
-    thicknessField: str = ""
-
-=======
     @abaqus_method_doc
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def __init__(
         self,
         thickness: float,

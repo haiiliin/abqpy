@@ -310,13 +310,7 @@ class and a container of
     #: A :py:class:`~abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous` object.
     viscous: Viscous = Viscous(((),))
 
-<<<<<<< HEAD
-=======
-    #: A :py:class:`~abaqus.Material.MultiScale.MeanFieldHomogenization.MeanFieldHomogenization` object.
-    meanFieldHomogenization: MeanFieldHomogenization = MeanFieldHomogenization()
-
     @abaqus_method_doc
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def __init__(self, name: str, description: str = "", materialIdentifier: str = ""):
         """This method creates a Material object.
 

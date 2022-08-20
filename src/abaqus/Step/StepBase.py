@@ -121,13 +121,7 @@ class StepBase:
     #: A repository of PredefinedFieldState objects.
     predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
 
-<<<<<<< HEAD
-=======
-    #: A repository of ActivateElements objects.
-    activateElements: typing.Dict[str, ActivateElements] = {}
-
     @abaqus_method_doc
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def resume(self):
         """This method resumes the step that was previously suppressed."""
         ...
