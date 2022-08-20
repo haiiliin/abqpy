@@ -43,7 +43,7 @@ class AbaqusDoc:
         type: typing.Literal['class', 'module'],
         class_or_module_name: str,
         prefix='',
-    ) -> tuple[str, str]:
+    ) -> typing.Tuple[str, str]:
         """Generate a link to the Abaqus class documentation.
 
         Parameters
@@ -74,7 +74,7 @@ class AbaqusDoc:
         class_or_module_name: str,
         method_or_function_name: str,
         prefix='',
-    ) -> tuple[str, str]:
+    ) -> typing.Tuple[str, str]:
         """Generate a link to the Abaqus function documentation.
 
         Parameters
