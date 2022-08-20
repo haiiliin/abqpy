@@ -140,7 +140,8 @@ class AbaqusDoc:
         if not docstring:
             return docstring
         link, link_with_label = cls._class_or_module_link(type, class_or_module_name, prefix)
-        return docstring.rstrip() + '\n\n' + ' ' * (0 if type == 'module' else 4) + link_with_label
+        return (docstring.rstrip() + '\n\n' + ' ' * (0 if type == 'module' else 4) +
+                '.. note::\n' + ' ' * (4 if type == 'module' else 8) + link_with_label)
 
     @classmethod
     def _add_link_in_method_or_function_docstring(
@@ -175,7 +176,9 @@ class AbaqusDoc:
             return docstring
         link, link_with_label = cls._method_or_function_link(type, class_or_module_name,
                                                              method_or_function_name, prefix)
-        return re.sub(r'(\n\s+?)(Parameters\n\s+----------)', r'\1' + link_with_label + r'\1\2', docstring)
+        return re.sub(r'(\n\s+?)(Parameters\n\s+----------)',
+                      r'\1' + '.. note::\n' + ' ' * (8 if type == 'function' else 12) + link_with_label + r'\1\2',
+                      docstring)
 
     @classmethod
     def add_link_in_class_docstring(
