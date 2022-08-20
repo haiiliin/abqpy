@@ -1,11 +1,9 @@
 from .._decorators import abaqus_class_doc, abaqus_method_doc
 
-@abaqus_class_doc
-class CommandRegister:
-    """This from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
-class allows you to derive a general class that can be queried from the GUI and is
+class CommandRegister:
+    """This class allows you to derive a general class that can be queried from the GUI and is
     capable of notifying the GUI when the contents of the class change.
 
     .. note:: 
@@ -18,10 +16,7 @@ class allows you to derive a general class that can be queried from the GUI and 
 
     @abaqus_method_doc
     def __init__(self):
-        """This from .._decorators import abaqus_class_doc, abaqus_method_doc
-
-@abaqus_class_doc
-class allows you to derive a general class that can be queried from the GUI and is
+        """This class allows you to derive a general class that can be queried from the GUI and is
         capable of notifying the GUI when the contents of the class change.
 
         .. note:: 
