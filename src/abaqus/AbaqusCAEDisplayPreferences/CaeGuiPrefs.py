@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CaeGuiPrefs:
     """The CaeGuiPrefs object contains the details of the graphical preferences in a
     guiPreferences section of the abaqus_2021.gpr file.
@@ -17,6 +19,7 @@ class CaeGuiPrefs:
     #: A String specifying the path to the preferences file.
     fileName:str = ""
 
+    @abaqus_method_doc
     def save(self, backupFile: Boolean = True):
         """This method saves the guiPreferences section specified in the current **fileName**.
 
@@ -29,6 +32,7 @@ class CaeGuiPrefs:
         # TODO: Implement this method
         ...
 
+    @abaqus_method_doc
     def saveAs(self, fileName: str):
         """This method saves the guiPreferences settings to the specified location.
 
