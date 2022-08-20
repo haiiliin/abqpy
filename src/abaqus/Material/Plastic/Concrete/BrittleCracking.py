@@ -1,8 +1,10 @@
 from .BrittleFailure import BrittleFailure
 from .BrittleShear import BrittleShear
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BrittleCracking:
     """The BrittleCracking object specifies cracking and postcracking properties for the
     brittle cracking material model.
@@ -55,6 +57,7 @@ class BrittleCracking:
     #: A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleFailure.BrittleFailure` object.
     brittleFailure: BrittleFailure = BrittleFailure(((),))
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -91,6 +94,7 @@ class BrittleCracking:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the BrittleCracking object."""
         ...

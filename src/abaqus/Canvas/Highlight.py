@@ -2,8 +2,10 @@
 remove the highlighting. 
 
 """
+from .._decorators import abaqus_function_doc
 
 
+@abaqus_function_doc
 def highlight(object):
     """This method highlights an object in the current viewport.
 
@@ -53,6 +55,7 @@ def highlight(object):
     ...
 
 
+@abaqus_function_doc
 def unhighlight(object):
     """This method removes highlighting from an object in the current viewport.
 

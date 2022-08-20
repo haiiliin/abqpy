@@ -1,7 +1,9 @@
 from .ConnectorOptions import ConnectorOptions
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CDCTerm:
     """The CDCTerm object is used to create contributing terms for a DerivedComponent object.
 
@@ -74,6 +76,7 @@ class CDCTerm:
     #: An Int specifying the number of field variable dependencies. The default value is 0.
     fieldDependencies: int = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         intrinsicComponents: tuple,
@@ -154,6 +157,7 @@ class CDCTerm:
         ValueError and TextError        """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the CDCTerm object.
 
@@ -163,6 +167,7 @@ class CDCTerm:
         """
         ...
 
+    @abaqus_method_doc
     def ConnectorOptions(
         self,
         useBehRegSettings: Boolean = ON,

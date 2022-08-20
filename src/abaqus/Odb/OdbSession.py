@@ -1,9 +1,12 @@
 from .Odb import Odb
 from .ScratchOdb import ScratchOdb
 from ..Session.SessionBase import SessionBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbSession(SessionBase):
+    @abaqus_method_doc
     def ScratchOdb(self, odb: Odb) -> ScratchOdb:
         """This method creates a new ScratchOdb object.
 

@@ -1,6 +1,8 @@
 from .GeometricRestriction import GeometricRestriction
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SizingClusterAreas(GeometricRestriction):
     """The SizingClusterAreas object defines a sizing cluster areas geometric restriction.
     The SizingClusterAreas object is derived from the GeometricRestriction object.
@@ -21,6 +23,7 @@ class SizingClusterAreas(GeometricRestriction):
     #: applied.
     regions: tuple
 
+    @abaqus_method_doc
     def __init__(self, name: str, regions: tuple):
         """This method creates a SizingClusterAreas object.
 
@@ -46,6 +49,7 @@ class SizingClusterAreas(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the SizingClusterAreas object."""
         ...

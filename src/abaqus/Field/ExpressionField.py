@@ -1,6 +1,8 @@
 from .AnalyticalField import AnalyticalField
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ExpressionField(AnalyticalField):
     """The ExpressionField object defines a spatially varying field whose value is calculated
     from a user-supplied mathematical expression.
@@ -30,6 +32,7 @@ class ExpressionField(AnalyticalField):
     #: A String specifying the description of the field. The default value is an empty string.
     description: str = ""
 
+    @abaqus_method_doc
     def __init__(
         self, name: str, expression: str, localCsys: str = None, description: str = ""
     ):
@@ -67,6 +70,7 @@ class ExpressionField(AnalyticalField):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, localCsys: str = None, description: str = ""):
         """This method modifies the ExpressionField object.
 

@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Edge:
     """Edges are one-dimensional regions of geometry.
 
@@ -54,6 +56,7 @@ class Edge:
     #: applicable).
     instanceName: float = None
 
+    @abaqus_method_doc
     def isTangentFlipped(self):
         """This method determines whether the tangent to the edge is flipped from its default
         direction by the use of the flipTangent method on a Part object.
@@ -66,6 +69,7 @@ class Edge:
         """
         ...
 
+    @abaqus_method_doc
     def getCurvature(self, parameter: float, point: tuple):
         """This method returns curvature information at a location on the edge.
 
@@ -93,6 +97,7 @@ class Edge:
         """
         ...
 
+    @abaqus_method_doc
     def getFaces(self):
         """This method returns a sequence consisting of the face ids of the faces which share this
         edge.
@@ -105,6 +110,7 @@ class Edge:
         """
         ...
 
+    @abaqus_method_doc
     def getAdjacentEdges(self):
         """This method returns an array of Edge objects that share at least one vertex of the edge.
 
@@ -116,6 +122,7 @@ class Edge:
         """
         ...
 
+    @abaqus_method_doc
     def getEdgesByEdgeAngle(self, angle: str):
         """This method returns an array of Edge objects that are obtained by recursively finding
         adjacent edges that are at an angle of less than or equal to the specified face angle.
@@ -133,6 +140,7 @@ class Edge:
         """
         ...
 
+    @abaqus_method_doc
     def getNodes(self):
         """This method returns an array of node objects that are associated with the edge.
 
@@ -144,6 +152,7 @@ class Edge:
         """
         ...
 
+    @abaqus_method_doc
     def getElements(self):
         """This method returns an array of element objects that are associated with the edge.
 
@@ -155,6 +164,7 @@ class Edge:
         """
         ...
 
+    @abaqus_method_doc
     def getRadius(self):
         """This method returns the radius of circular edges.
 
@@ -169,6 +179,7 @@ class Edge:
         """
         ...
 
+    @abaqus_method_doc
     def getSize(self, printResults: str = True):
         """This method returns a Float indicating the length of the edge.
 
@@ -185,6 +196,7 @@ class Edge:
         """
         ...
 
+    @abaqus_method_doc
     def getVertices(self):
         """This method returns a sequence of indices of the vertices that bound this edge. The
         first index refers to the vertex where the normalized curve parameter = 0.0, and the

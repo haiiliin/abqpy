@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MeshDisplayOptions:
     """The MeshDisplayOptions object stores settings that specify how the assembly is displayed
     in a particular viewport when
@@ -19,6 +21,7 @@ class MeshDisplayOptions:
             session.viewports[name].partDisplay.meshOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         nodeLabels: Boolean = OFF,

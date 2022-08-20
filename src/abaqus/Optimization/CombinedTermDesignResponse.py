@@ -1,7 +1,9 @@
 from .DesignResponse import DesignResponse
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class CombinedTermDesignResponse(DesignResponse):
     """The CombinedTermDesignResponse object defines a combined-term design response.
     The CombinedTermDesignResponse object is derived from the DesignResponse object.
@@ -84,6 +86,7 @@ class CombinedTermDesignResponse(DesignResponse):
     #: used when **method** is WEIGHTED_ADD. The default value is an empty sequence.
     weights: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -174,6 +177,7 @@ class CombinedTermDesignResponse(DesignResponse):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         filterMaxRadius: str = None,

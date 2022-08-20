@@ -1,3 +1,7 @@
+from .._decorators import abaqus_class_doc
+
+
+@abaqus_class_doc
 class GraphicsInfo:
     """The GraphicsInfo object stores information about the graphics adapter installed in your
     system. The GraphicsInfo object has no constructor or methods; Abaqus creates the

@@ -42,8 +42,10 @@ from ..Interaction.XFEMCrackGrowth import XFEMCrackGrowth
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class InteractionModel(
     InteractionContactControlModel,
     InteractionContactInitializationModel,
@@ -60,6 +62,7 @@ class InteractionModel(
             mdb.models[name]
     """
 
+    @abaqus_method_doc
     def contactDetection(
         self,
         name: str = "",
@@ -173,6 +176,7 @@ class InteractionModel(
         """
         ...
 
+    @abaqus_method_doc
     def getSurfaceSeparation(self):
         """This method returns a list of all possible contacts that can be created using the
         ContactDetection method.
@@ -191,6 +195,7 @@ class InteractionModel(
         """
         ...
 
+    @abaqus_method_doc
     def AcousticImpedance(
         self,
         name: str,
@@ -275,6 +280,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def ActuatorSensor(
         self,
         name: str,
@@ -342,6 +348,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def CavityRadiation(
         self,
         name: str,
@@ -595,6 +602,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def ConcentratedFilmCondition(
         self,
         name: str,
@@ -702,6 +710,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def ConcentratedRadiationToAmbient(
         self,
         name: str,
@@ -779,6 +788,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def ContactExp(
         self,
         name: str,
@@ -860,6 +870,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def ContactStd(
         self,
         name: str,
@@ -955,6 +966,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def CyclicSymmetry(
         self,
         name: str,
@@ -1055,6 +1067,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def ElasticFoundation(
         self, name: str, createStepName: str, surface: Region, stiffness: float
     ) -> ElasticFoundation:
@@ -1089,6 +1102,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def FilmCondition(
         self,
         name: str,
@@ -1183,6 +1197,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def FluidCavity(
         self,
         name: str,
@@ -1247,6 +1262,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def FluidExchange(
         self,
         name: str,
@@ -1302,6 +1318,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def FluidInflator(
         self,
         name: str,
@@ -1351,6 +1368,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def IncidentWave(
         self,
         name: str,
@@ -1450,6 +1468,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def ModelChange(
         self,
         name: str,
@@ -1510,6 +1529,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def PressurePenetration(
         self,
         name: str,
@@ -1579,6 +1599,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def RadiationToAmbient(
         self,
         name: str,
@@ -1652,6 +1673,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def SelfContactExp(
         self,
         name: str,
@@ -1704,6 +1726,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def SelfContactStd(
         self,
         name: str,
@@ -1767,6 +1790,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def StdXplCosimulation(
         self,
         name: str,
@@ -1818,6 +1842,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def SurfaceToSurfaceContactExp(
         self,
         name: str,
@@ -1929,6 +1954,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def SurfaceToSurfaceContactStd(
         self,
         name: str,
@@ -2132,6 +2158,7 @@ class InteractionModel(
         )
         return interaction
 
+    @abaqus_method_doc
     def XFEMCrackGrowth(
         self, name: str, createStepName: str, crackName: str, allowGrowth: Boolean = ON
     ) -> XFEMCrackGrowth:

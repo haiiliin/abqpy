@@ -1,6 +1,8 @@
 from .....UtilityAndView.abaqusConstants import *
+from ....._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class VoidNucleation:
     r"""The VoidNucleation object defines the nucleation of voids in a porous material.
 
@@ -29,6 +31,7 @@ class VoidNucleation:
         - VOID NUCLEATION
     """
 
+    @abaqus_method_doc
     def __init__(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ):
@@ -62,6 +65,7 @@ class VoidNucleation:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the VoidNucleation object.
 

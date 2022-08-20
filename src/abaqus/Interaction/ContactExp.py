@@ -9,8 +9,10 @@ from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
 from .SurfaceOffsetAssignment import SurfaceOffsetAssignment
 from .SurfaceThicknessAssignment import SurfaceThicknessAssignment
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ContactExp(Interaction):
     """The ContactExp object defines the contact domain and associated properties during
     contact in an Abaqus/Explicit analysis.
@@ -69,6 +71,7 @@ class ContactExp(Interaction):
     masterSlaveAssignments: MasterSlaveAssignment = MasterSlaveAssignment()
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -137,6 +140,7 @@ class ContactExp(Interaction):
         super().__init__()
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,

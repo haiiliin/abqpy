@@ -2,8 +2,10 @@ import typing
 
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PageSetupOptions(_OptionsBase):
     """The PageSetupOptions object stores the settings that Abaqus uses when printing using a
     Windows printer. The PageSetupOptions object has no constructor. Abaqus creates the
@@ -56,6 +58,7 @@ class PageSetupOptions(_OptionsBase):
     #: A Boolean specifying whether the output includes the date. The default value is ON.
     date: Boolean = ON
 
+    @abaqus_method_doc
     def setValues(
         self,
         *,

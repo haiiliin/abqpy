@@ -3,8 +3,10 @@ from .Monitor import Monitor
 from .Restart import Restart
 from ..Step.StepBase import StepBase
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OutputStep(StepBase):
     """The Step object stores the parameters that determine the context of the step. The Step
     object is the abstract base type for other Step objects. The Step object has no explicit
@@ -20,6 +22,7 @@ class OutputStep(StepBase):
             mdb.models[name].steps[name]
     """
 
+    @abaqus_method_doc
     def DiagnosticPrint(
         self,
         allke: Boolean = ON,
@@ -108,6 +111,7 @@ class OutputStep(StepBase):
         )
         return diagnosticPrint
 
+    @abaqus_method_doc
     def Monitor(self, node: str, dof: SymbolicConstant, frequency: int) -> Monitor:
         """This method creates a request for a degree of freedom to be monitored in a general or
         modal procedure.
@@ -155,6 +159,7 @@ class OutputStep(StepBase):
         self.monitor = monitor = Monitor(node, dof, frequency)
         return monitor
 
+    @abaqus_method_doc
     def Restart(
         self,
         numberIntervals: int = 0,

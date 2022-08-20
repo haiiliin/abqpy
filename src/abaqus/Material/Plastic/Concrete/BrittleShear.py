@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BrittleShear:
     """The BrittleShear object specifies the postcracking shear behavior of a material used in
     a brittle cracking model.
@@ -39,6 +41,7 @@ class BrittleShear:
         - BRITTLE SHEAR
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -79,6 +82,7 @@ class BrittleShear:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the BrittleShear object.
 

@@ -1,7 +1,9 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class BeadPointSymmetry(GeometricRestriction):
     """The BeadPointSymmetry object defines a point symmetry geometric restriction.
     The BeadPointSymmetry object is derived from the GeometricRestriction object.
@@ -26,6 +28,7 @@ class BeadPointSymmetry(GeometricRestriction):
     #: used. When this member is queried, it returns an Int. The default value is None.
     csys: int = None
 
+    @abaqus_method_doc
     def __init__(self, name: str, region: Region, csys: int = None):
         """This method creates a BeadPointSymmetry object.
 
@@ -54,6 +57,7 @@ class BeadPointSymmetry(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, csys: int = None):
         """This method modifies the BeadPointSymmetry object.
 

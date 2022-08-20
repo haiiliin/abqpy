@@ -1,8 +1,10 @@
 from .Constraint import Constraint
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AdjustPoints(Constraint):
     """The AdjustPoints constraint object is used to adjust points (nodes) to a surface.
     The AdjustPoints object is derived from the ConstrainedSketchConstraint object.
@@ -33,6 +35,7 @@ class AdjustPoints(Constraint):
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control points.
     controlPoints: Region
 
+    @abaqus_method_doc
     def __init__(self, name: str, surface: Region, controlPoints: Region):
         """This method creates an AdjustPoints object.
 
@@ -59,6 +62,7 @@ class AdjustPoints(Constraint):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the AdjustPoints object."""
         ...

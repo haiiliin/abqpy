@@ -1,6 +1,8 @@
 from ....UtilityAndView.abaqusConstants import *
+from ...._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class PorousElastic:
     r"""The PorousElastic object specifies elastic material properties for porous materials.
 
@@ -42,6 +44,7 @@ class PorousElastic:
         - POROUS ELASTIC
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -82,6 +85,7 @@ class PorousElastic:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the PorousElastic object.
 

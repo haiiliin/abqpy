@@ -4,8 +4,10 @@ from .Datum import Datum
 from .DatumAxis import DatumAxis
 from .DatumPoint import DatumPoint
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DatumCsys(Datum):
     """The DatumCsys object has no direct constructor; it is created when a Feature object is
     created. For example, the DatumCsysByOffset method creates a Feature object that creates

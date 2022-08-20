@@ -1,6 +1,8 @@
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class GasketTransverseShearElastic:
     """The GasketTransverseShearElastic object defines the elastic parameters for the
     transverse shear behavior of a gasket.
@@ -28,6 +30,7 @@ class GasketTransverseShearElastic:
         - GASKET ELASTICITY
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -68,6 +71,7 @@ class GasketTransverseShearElastic:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the GasketTransverseShearElastic object.
 

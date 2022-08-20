@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Regularization:
     """The Regularization object defines the tolerance to be used for regularizing material
     data.
@@ -29,6 +31,7 @@ class Regularization:
     #: LOGARITHMIC.
     strainRateRegularization: SymbolicConstant = LOGARITHMIC
 
+    @abaqus_method_doc
     def __init__(
         self, rtol: float = 0, strainRateRegularization: SymbolicConstant = LOGARITHMIC
     ):
@@ -63,6 +66,7 @@ class Regularization:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Regularization object.
 

@@ -12,8 +12,10 @@ from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
 from .SurfaceOffsetAssignment import SurfaceOffsetAssignment
 from .SurfaceThicknessAssignment import SurfaceThicknessAssignment
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ContactStd(Interaction):
     """The ContactStd object defines the contact domain and associated properties during
     contact in an Abaqus/Standard analysis.
@@ -93,6 +95,7 @@ class ContactStd(Interaction):
     edgeToEdgeFormulation: str = NO
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -172,6 +175,7 @@ class ContactStd(Interaction):
         super().__init__()
 
     @typing.overload
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,

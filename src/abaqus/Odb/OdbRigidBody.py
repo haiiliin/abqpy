@@ -1,8 +1,10 @@
 from .AnalyticSurface import AnalyticSurface
 from .OdbSet import OdbSet
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbRigidBody:
     """The Rigid body object is used to bind a set of elements and/or a set of nodes and/or an
     analytical surface with a reference node.
@@ -48,6 +50,7 @@ class OdbRigidBody:
     #: the motion of rigid body reference node.
     analyticSurface: AnalyticSurface = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         referenceNode: OdbSet,

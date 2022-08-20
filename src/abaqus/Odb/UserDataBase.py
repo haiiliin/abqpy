@@ -3,8 +3,10 @@ import typing
 from ..Annotation.Annotation import Annotation
 from ..XY.QuantityType import QuantityType
 from ..XY.XYData import XYData
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class UserDataBase:
     """The UserData object contains user-defined XY data. The UserData object has no
     constructor; it is created automatically when an Odb object is created.
@@ -62,6 +64,7 @@ class UserDataBase:
     #: A tuple of pairs of Floats specifying the **X - Y** data pairs.
     data: float = None
 
+    @abaqus_method_doc
     def XYData(
         self,
         name: str,

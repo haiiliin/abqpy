@@ -1,7 +1,9 @@
 from .SpringDashpot import SpringDashpot
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TwoPointSpringDashpot(SpringDashpot):
     """The TwoPointSpringDashpot object defines springs and/or dashpots between two points on a
     part or an assembly.
@@ -74,6 +76,7 @@ class TwoPointSpringDashpot(SpringDashpot):
     #: is 0.0.
     dashpotCoefficient: float = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -143,6 +146,7 @@ class TwoPointSpringDashpot(SpringDashpot):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         dof1: int = 0,

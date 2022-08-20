@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Ratios:
     """The Ratios object specifies ratios that define anisotropic swelling.
 
@@ -39,6 +41,7 @@ class Ratios:
     #: An Int specifying the number of field variable dependencies. The default value is 0.
     dependencies: int = 0
 
+    @abaqus_method_doc
     def __init__(
         self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
     ):
@@ -74,6 +77,7 @@ class Ratios:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Ratios object.
 

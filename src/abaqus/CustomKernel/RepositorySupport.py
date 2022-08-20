@@ -1,10 +1,15 @@
 import typing
 
 from .CommandRegister import CommandRegister
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class RepositorySupport(CommandRegister):
-    """The RepositorySupport is a base class from which you can derive your own classes that
+    """The RepositorySupport is a base from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
+class from which you can derive your own classes that
     are designed to contain custom repositories. Instances of this class can be queried from
     the GUI and are capable of notifying the GUI when the contents of the instance change.
     The RepositorySupport object is derived from the CommandRegister object.
@@ -20,6 +25,7 @@ class RepositorySupport(CommandRegister):
             session.odbs[name].customData
     """
 
+    @abaqus_method_doc
     def __init__(self):
         """This method creates a RepositorySupport object.
 
@@ -37,6 +43,7 @@ class RepositorySupport(CommandRegister):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def Repository(self, name: str, constructors: typing.Union[typing.Callable, typing.List[typing.Callable]]) -> None:
         """This method installs a repository on the class. The repository is an instance of a
         RegisteredDictionary class. Refer to RegisteredDictionary for details on its methods.

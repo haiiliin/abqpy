@@ -3,8 +3,10 @@ import typing
 from .HistoryOutput import HistoryOutput
 from .HistoryPoint import HistoryPoint
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class HistoryRegion:
     """The HistoryRegion object contains history data for a single location in the model.
 
@@ -37,6 +39,7 @@ class HistoryRegion:
     #: object. The default value is None.
     loadCase: str = None
 
+    @abaqus_method_doc
     def __init__(
         self, name: str, description: str, point: HistoryPoint, loadCase: str = None
     ):
@@ -69,6 +72,7 @@ class HistoryRegion:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getSubset(self, variableName: str):
         """This method returns a subset of the data in the HistoryRegion object.
 
@@ -85,6 +89,7 @@ class HistoryRegion:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getSubset(self, start: float):
         """This method returns a subset of the data in the HistoryRegion object.
 
@@ -102,6 +107,7 @@ class HistoryRegion:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def getSubset(self, start: float, end: float):
         """This method returns a subset of the data in the HistoryRegion object.
 
@@ -120,6 +126,7 @@ class HistoryRegion:
         """
         ...
 
+    @abaqus_method_doc
     def getSubset(self, *args, **kwargs):
         ...
 
