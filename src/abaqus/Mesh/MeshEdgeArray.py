@@ -20,12 +20,8 @@ class MeshEdgeArray(typing.List[MeshEdge]):
             mdb.models[name].rootAssembly.instances[name].elementEdges
     """
 
-<<<<<<< HEAD
-    def __init__(self, edges: typing.List[MeshEdge]):
-=======
     @abaqus_method_doc
-    def __init__(self, elemEdges: typing.List[MeshEdge]):
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
+    def __init__(self, edges: typing.List[MeshEdge]):
         """This method creates a MeshEdgeArray object.
 
         .. note:: 

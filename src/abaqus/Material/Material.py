@@ -537,45 +537,6 @@ class and a container of
         )
         return self.crushableFoam
 
-<<<<<<< HEAD
-=======
-    @abaqus_method_doc
-    def CrushStress(
-        self,
-        crushStressTable: typing.Tuple[typing.Tuple[float, ...]],
-        temperatureDependency: Boolean = OFF,
-        dependencies: int = 0,
-    ):
-        """This method creates a CrushStress object.
-
-        .. note::
-            This function can be accessed by:
-
-            .. code-block:: python
-
-                mdb.models[name].materials[name].CrushStress
-                session.odbs[name].materials[name].CrushStress
-
-        Parameters
-        ----------
-        crushStressTable
-            A sequence of sequences of Floats specifying the items described below.
-        temperatureDependency
-            A Boolean specifying whether the data depend on temperature. The default value is OFF.
-        dependencies
-            An Int specifying the number of field variable dependencies. The default value is 0.
-
-        Returns
-        -------
-            A CrushStress object.
-        """
-        self.crushStress = CrushStress(
-            crushStressTable, temperatureDependency, dependencies
-        )
-        return self.crushStress
-
-    @abaqus_method_doc
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
     def Damping(
         self,
         alpha: float = 0,

@@ -1096,12 +1096,8 @@ class PartBase(Feature):
         """
         ...
 
-<<<<<<< HEAD
-    def getCoordinates(self, entity: str):
-=======
     @abaqus_method_doc
-    def getCoordinates(self, entity: str, csys: DatumCsys):
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
+    def getCoordinates(self, entity: str):
         """This method returns the coordinates of specified point.
 
         Parameters

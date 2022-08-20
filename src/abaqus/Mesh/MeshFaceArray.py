@@ -20,12 +20,8 @@ class MeshFaceArray(typing.List[MeshFace]):
             mdb.models[name].rootAssembly.instances[name].elementFaces
     """
 
-<<<<<<< HEAD
-    def __init__(self, faces: typing.List[MeshFace]):
-=======
     @abaqus_method_doc
-    def __init__(self, elemFaces: typing.List[MeshFace]):
->>>>>>> 67a994a (Add abaqus_class_doc, abaqus_method_doc, and abaqus_function_doc usages)
+    def __init__(self, faces: typing.List[MeshFace]):
         """This method creates a MeshFaceArray object.
 
         .. note:: 
