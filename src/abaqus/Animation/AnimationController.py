@@ -1,7 +1,9 @@
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AnimationController(_OptionsBase):
     """The AnimationController object controls all object-based animation to be displayed in
     the viewports. The AnimationController object has no constructor. Abaqus creates the
@@ -24,6 +26,7 @@ class AnimationController(_OptionsBase):
     #: STOP and PLAY. The default value is STOP.
     state: SymbolicConstant = STOP
 
+    @abaqus_method_doc
     def play(self, duration: SymbolicConstant = UNLIMITED):
         """This method begins the animation.
 
@@ -41,21 +44,25 @@ class AnimationController(_OptionsBase):
         # TODO: implement this method
         ...
 
+    @abaqus_method_doc
     def stop(self):
         """This method stops the animation."""
         # TODO: implement this method
         ...
 
+    @abaqus_method_doc
     def incrementFrame(self):
         """This method increments the animation frame."""
         # TODO: implement this method
         ...
 
+    @abaqus_method_doc
     def decrementFrame(self):
         """This method decrements the animation frame."""
         # TODO: implement this method
         ...
 
+    @abaqus_method_doc
     def showFrame(self, frame: int = None, value: float = None):
         """This method renders the specified frame of the animation.
 
@@ -72,16 +79,19 @@ class AnimationController(_OptionsBase):
         # TODO: implement this method
         ...
 
+    @abaqus_method_doc
     def showFirstFrame(self):
         """This method renders the first frame of the animation."""
         # TODO: implement this method
         ...
 
+    @abaqus_method_doc
     def showLastFrame(self):
         """This method renders the last frame of the animation."""
         # TODO: implement this method
         ...
 
+    @abaqus_method_doc
     def setValues(self, animationType: SymbolicConstant = NONE):
         """This method modifies the AnimationController object.
 

@@ -1,7 +1,9 @@
 from .ContactControl import ContactControl
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class StdContactControl(ContactControl):
     """The StdContactControl object is used in Abaqus/Standard analyses to specify optional
     solution controls for problems involving contact between bodies.
@@ -120,6 +122,7 @@ class StdContactControl(ContactControl):
     #: default value is DEFAULT.
     enforceWithLagrangeMultipliers: SymbolicConstant = DEFAULT
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -245,6 +248,7 @@ class StdContactControl(ContactControl):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         stiffnessScaleFactor: float = 1,

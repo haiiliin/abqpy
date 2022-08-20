@@ -1,3 +1,7 @@
+from .._decorators import abaqus_class_doc
+
+
+@abaqus_class_doc
 class OdbDataSurfaceSet:
     """The OdbDataSurfaceSet object stores surface set data.
 

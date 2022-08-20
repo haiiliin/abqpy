@@ -61,8 +61,10 @@ from ..XY.XYCurve import XYCurve
 from ..XY.XYData import XYData
 from ..XY.XYPlot import XYPlot
 from ..XY.XYReportOptions import XYReportOptions
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class SessionBase:
     """The Session object has no constructor. Abaqus creates the **session** member when a
     session is started.
@@ -293,6 +295,7 @@ class SessionBase:
     #: A repository of Drawing objects.
     drawings: typing.Dict[str, Drawing] = {}
 
+    @abaqus_method_doc
     def setValues(self, kernelMemoryLimit: float = None):
         """This method modifies the Session object.
 
@@ -313,6 +316,7 @@ class SessionBase:
         """
         ...
 
+    @abaqus_method_doc
     def enableCADConnection(self, CADName: str, portNum: int = None):
         """This method enables the Abaqus/CAE listening port for the specified **CAD** system.
 
@@ -334,6 +338,7 @@ class SessionBase:
         """
         ...
 
+    @abaqus_method_doc
     def isCADConnectionEnabled(self):
         """This method checks the status of CAD Connection.
 
@@ -345,6 +350,7 @@ class SessionBase:
         """
         ...
 
+    @abaqus_method_doc
     def disableCADConnection(self, CADName: str):
         """This method disables an associative import CAD connection that was enabled.
 
@@ -356,6 +362,7 @@ class SessionBase:
         """
         ...
 
+    @abaqus_method_doc
     def enableParameterUpdate(self, CADName: str, CADVersion: str, CADPort: int = None):
         """This method enables parameter updates for ProE and NX by establishing a connection with
         the listening port previously setup by the CAD application.
@@ -377,6 +384,7 @@ class SessionBase:
         """
         ...
 
+    @abaqus_method_doc
     def setCADPortNumber(self, CADName: str, Port: str):
         """This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a
         connection with the listening port previously setup by the CAD application. This port
@@ -393,6 +401,7 @@ class SessionBase:
         """
         ...
 
+    @abaqus_method_doc
     def updateCADParameters(
         self,
         modelName: str,
@@ -429,6 +438,7 @@ class SessionBase:
         """
         ...
 
+    @abaqus_method_doc
     def disableParameterUpdate(self, CADName: str):
         """This method disables an associative CAD connection using parameters.
 
@@ -440,6 +450,7 @@ class SessionBase:
         """
         ...
 
+    @abaqus_method_doc
     def printToFile(
         self,
         fileName: str,
@@ -468,6 +479,7 @@ class SessionBase:
         """
         ...
 
+    @abaqus_method_doc
     def printToPrinter(
         self,
         printCommand: str = "",
@@ -512,6 +524,7 @@ class SessionBase:
         """
         ...
 
+    @abaqus_method_doc
     def saveOptions(self, directory: SymbolicConstant):
         """This method saves your customized display settings.
 
@@ -524,6 +537,7 @@ class SessionBase:
         """
         ...
 
+    @abaqus_method_doc
     def writeVrmlFile(
         self, fileName: str, format: Boolean = OFF, canvasObjects: typing.Tuple[Canvas, ...] = ()
     ):
@@ -542,6 +556,7 @@ class SessionBase:
         """
         ...
 
+    @abaqus_method_doc
     def write3DXMLFile(
         self, fileName: str, format: Boolean = OFF, canvasObjects: typing.Tuple[Canvas, ...] = ()
     ):
@@ -560,6 +575,7 @@ class SessionBase:
         """
         ...
 
+    @abaqus_method_doc
     def writeOBJFile(self, fileName: str, canvasObjects: typing.Tuple[Canvas, ...] = ()):
         """This method exports the current viewport objects to a file.
 
@@ -574,6 +590,7 @@ class SessionBase:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def openOdb(
         self, path: str, readOnly: Boolean = OFF, readInternalSets: Boolean = OFF
     ) -> Odb:
@@ -613,6 +630,7 @@ class SessionBase:
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def openOdb(self, name: str, path: str = "", readOnly: Boolean = OFF) -> Odb:
         """This method opens an existing output database (.odb) file and creates a new Odb object.
         This method is accessed only via the session object inside Abaqus/CAE and adds the new
@@ -654,6 +672,7 @@ class SessionBase:
         """
         ...
 
+    @abaqus_method_doc
     def openOdb(self, name: str, *args, **kwargs) -> Odb:
         """This method opens an existing output database (.odb) file and creates a new Odb object.
         You typically execute this method outside Abaqus/CAE when, in most cases, only one

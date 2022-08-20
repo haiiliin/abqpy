@@ -1,7 +1,9 @@
 from .Interaction import Interaction
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FluidExchange(Interaction):
     """The FluidExchange object is used to define fluid exchange between two fluid cavities or
     between a fluid cavity and its environment.
@@ -44,6 +46,7 @@ class FluidExchange(Interaction):
     #: A Float specifying the effective exchange area. The default value is 1.0.
     exchangeArea: float = 1
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -90,6 +93,7 @@ class FluidExchange(Interaction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         definition: SymbolicConstant = TO_ENVIRONMENT,

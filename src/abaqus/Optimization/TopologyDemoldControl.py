@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TopologyDemoldControl(GeometricRestriction):
     """The TopologyDemoldControl object defines a topology demold control geometric
     restriction.
@@ -51,6 +53,7 @@ class TopologyDemoldControl(GeometricRestriction):
     #: AUTO_TIGHT, POINT, SURFACE, and STAMP. The default value is AUTO.
     technique: SymbolicConstant = AUTO
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -107,6 +110,7 @@ class TopologyDemoldControl(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         csys: int = None,

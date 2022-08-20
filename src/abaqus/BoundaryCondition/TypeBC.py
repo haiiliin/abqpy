@@ -1,8 +1,10 @@
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TypeBC(BoundaryCondition):
     """The TypeBC object stores the data for several types of predefined boundary conditions
     that are commonly used in stress/displacement analyses.
@@ -37,6 +39,7 @@ class TypeBC(BoundaryCondition):
     #: in the global coordinate system. The default value is None.
     localCsys: str = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -84,6 +87,7 @@ class TypeBC(BoundaryCondition):
         self.region = region
         self.localCsys = localCsys
 
+    @abaqus_method_doc
     @staticmethod
     def EncastreBC(
         name: str,
@@ -125,6 +129,7 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
+    @abaqus_method_doc
     @staticmethod
     def PinnedBC(
         name: str,
@@ -166,6 +171,7 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
+    @abaqus_method_doc
     @staticmethod
     def XsymmBC(
         name: str,
@@ -207,6 +213,7 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
+    @abaqus_method_doc
     @staticmethod
     def YsymmBC(
         name: str,
@@ -248,6 +255,7 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
+    @abaqus_method_doc
     @staticmethod
     def ZsymmBC(
         name: str,
@@ -289,6 +297,7 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
+    @abaqus_method_doc
     @staticmethod
     def XasymmBC(
         name: str,
@@ -330,6 +339,7 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
+    @abaqus_method_doc
     @staticmethod
     def YasymmBC(
         name: str,
@@ -371,6 +381,7 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
+    @abaqus_method_doc
     @staticmethod
     def ZasymmBC(
         name: str,
@@ -412,6 +423,7 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
+    @abaqus_method_doc
     def setValues(
         self,
         region: Region,
@@ -440,6 +452,7 @@ class TypeBC(BoundaryCondition):
         """
         ...
 
+    @abaqus_method_doc
     def setValuesInStep(self, stepName: str, typeName: SymbolicConstant = None):
         """This method always returns a value error for a TypeBC; it is inherited from the
         BoundaryCondition object.

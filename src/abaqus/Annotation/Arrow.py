@@ -3,8 +3,10 @@ import typing
 from .Annotation import Annotation
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Arrow(Annotation, _OptionsBase):
     """The Arrow object stores the visual settings and location of an arrow annotation.
     The Arrow object is derived from the Annotation object.
@@ -119,6 +121,7 @@ class Arrow(Annotation, _OptionsBase):
     #: VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.
     lineThickness: SymbolicConstant = VERY_THIN
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -254,6 +257,7 @@ class Arrow(Annotation, _OptionsBase):
         self.lineStyle = lineStyle
         self.lineThickness = lineThickness
 
+    @abaqus_method_doc
     def translateStartPoint(self, x: float = None, y: float = None):
         """This method translates the start point of the Arrow object on the viewport plane.
 
@@ -268,6 +272,7 @@ class Arrow(Annotation, _OptionsBase):
         # TODO: implement this method
         ...
 
+    @abaqus_method_doc
     def translateEndPoint(self, x: float = None, y: float = None):
         """This method translates the end point of the Arrow object on the viewport plane.
 
@@ -282,6 +287,7 @@ class Arrow(Annotation, _OptionsBase):
         # TODO: implement this method
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         startPoint: typing.Tuple[float, ...] = (0.0, 0.0),

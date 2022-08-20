@@ -1,7 +1,9 @@
 from .InteractionState import InteractionState
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class FluidExchangeState(InteractionState):
     """The FluidExchangeState object stores the propagating data for an FluidExchange object.
     One instance of this object is created internally by the FluidExchange object for each

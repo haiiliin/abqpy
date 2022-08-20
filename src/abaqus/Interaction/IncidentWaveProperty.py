@@ -1,7 +1,9 @@
 from .ContactProperty import ContactProperty
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class IncidentWaveProperty(ContactProperty):
     """The IncidentWaveProperty object is an interaction property that defines the properties
     referred to by an IncidentWave object.
@@ -171,6 +173,7 @@ class IncidentWaveProperty(ContactProperty):
     #: **definition** = AIR_BLAST or **definition** = SURFACE_BLAST.
     pressureFactor: float = 1
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -342,6 +345,7 @@ class IncidentWaveProperty(ContactProperty):
         """
         super().__init__(name)
 
+    @abaqus_method_doc
     def setValues(
         self,
         definition: SymbolicConstant = PLANAR,

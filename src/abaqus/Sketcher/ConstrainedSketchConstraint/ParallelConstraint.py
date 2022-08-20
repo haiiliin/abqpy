@@ -2,9 +2,12 @@ from .ConstrainedSketchConstraint import ConstrainedSketchConstraint
 from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
     ConstrainedSketchGeometry,
 )
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ParallelConstraint(ConstrainedSketchConstraint):
+    @abaqus_method_doc
     def __init__(
         self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry
     ):

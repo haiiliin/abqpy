@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TopologyMillingControl(GeometricRestriction):
     """The TopologyMillingControl object defines a topology milling control geometric
     restriction.
@@ -43,6 +45,7 @@ class TopologyMillingControl(GeometricRestriction):
     #: for the milling criteria.
     radius: float = None
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -91,6 +94,7 @@ class TopologyMillingControl(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         csys: int = None,

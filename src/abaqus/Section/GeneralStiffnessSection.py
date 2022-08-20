@@ -2,8 +2,10 @@ from .RebarLayers import RebarLayers
 from .ShellSection import ShellSection
 from .TransverseShearShell import TransverseShearShell
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class GeneralStiffnessSection(ShellSection):
     """The GeneralStiffnessSection object defines the properties of a shell section via the
     stiffness matrix.
@@ -80,6 +82,7 @@ class GeneralStiffnessSection(ShellSection):
     #: is an empty sequence.
     scalingData: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -153,6 +156,7 @@ class GeneralStiffnessSection(ShellSection):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         referenceTemperature: float = None,

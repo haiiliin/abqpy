@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class Repository(dict):
     """Repositories are containers that store a particular type of object; for example, the
     steps repository contains all the steps defined in the model. An Abaqus Scripting
@@ -19,6 +22,7 @@ class Repository(dict):
     [changeKey(...)](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-utlrepositorypyc.htm?ContextScope=all#simaker-utlrepositorychangekeypyc)
     """
 
+    @abaqus_method_doc
     def changeKey(self, fromName: str, toName: str):
         """This method changes the name of a key in a repository and the **name** member of the value
         object.

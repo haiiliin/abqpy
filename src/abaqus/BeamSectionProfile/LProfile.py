@@ -1,6 +1,8 @@
 from .Profile import Profile
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class LProfile(Profile):
     """The LProfile object defines the properties of a L profile.
     The LProfile object is derived from the Profile object.
@@ -39,6 +41,7 @@ class LProfile(Profile):
     #: a*).
     t2: float
 
+    @abaqus_method_doc
     def __init__(self, name: str, a: float, b: float, t1: float, t2: float):
         """This method creates a LProfile object.
 
@@ -79,6 +82,7 @@ class LProfile(Profile):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the LProfile object.
 

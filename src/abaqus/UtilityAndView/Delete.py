@@ -1,4 +1,5 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_function_doc
 
 """The deleteObjectCallback module provides methods that allow you to register a callback 
 that will be invoked when specified Abaqus Scripting Interface objects are about to be 
@@ -9,6 +10,7 @@ object is about to be deleted:
 .. code-block:: python
 
     import deleteObjectCallback 
+    @abaqus_method_doc
     def myCallback(path, userData): 
         print 'About to delete', path 
     deleteObjectCallback.addCallback(path='mdb.jobs[*]') 
@@ -23,6 +25,7 @@ object is about to be deleted:
 """
 
 
+@abaqus_function_doc
 def deleteObjectCallback(
     callback: str, path: str, userData: str = None, includeChildren: Boolean = False
 ):

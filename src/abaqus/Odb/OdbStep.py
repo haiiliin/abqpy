@@ -5,9 +5,12 @@ from .HistoryRegion import HistoryRegion
 from .OdbFrame import OdbFrame
 from .OdbLoadCase import OdbLoadCase
 from .OdbStepBase import OdbStepBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class OdbStep(OdbStepBase):
+    @abaqus_method_doc
     def HistoryRegion(
         self, name: str, description: str, point: HistoryPoint, loadCase: str = None
     ) -> HistoryRegion:
@@ -43,6 +46,7 @@ class OdbStep(OdbStepBase):
         return historyRegion
 
     @typing.overload
+    @abaqus_method_doc
     def Frame(
         self, incrementNumber: int, frameValue: float, description: str = ""
     ) -> OdbFrame:
@@ -76,6 +80,7 @@ class OdbStep(OdbStepBase):
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def Frame(self, mode: int, frequency: float, description: str = "") -> OdbFrame:
         """This constructor creates an OdbFrame object in the frequency domain and appends it to
         the frame sequence. The arguments to the constructor are valid only when
@@ -106,6 +111,7 @@ class OdbStep(OdbStepBase):
         ...
 
     @typing.overload
+    @abaqus_method_doc
     def Frame(
         self, loadCase: OdbLoadCase, description: str = "", frequency: float = 0
     ) -> OdbFrame:
@@ -136,6 +142,7 @@ class OdbStep(OdbStepBase):
         """
         ...
 
+    @abaqus_method_doc
     def Frame(self, *args, **kwargs) -> OdbFrame:
         frame = OdbFrame(*args, **kwargs)
         self.frames.append(frame)

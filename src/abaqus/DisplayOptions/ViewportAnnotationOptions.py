@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ViewportAnnotationOptions:
     """The ViewportAnnotationOptions object stores settings that control how annotations are
     rendered in a particular viewport. ViewportAnnotationOptions objects are accessed in one
@@ -22,6 +24,7 @@ class ViewportAnnotationOptions:
             session.viewports[name].viewportAnnotationOptions
     """
 
+    @abaqus_method_doc
     def setValues(
         self,
         triad: Boolean = ON,

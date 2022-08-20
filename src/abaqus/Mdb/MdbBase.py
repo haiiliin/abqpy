@@ -8,8 +8,10 @@ from ..Job.Coexecution import Coexecution
 from ..Job.Job import Job
 from ..Job.OptimizationProcess import OptimizationProcess
 from ..Model.Model import Model
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class MdbBase:
     """The Mdb object is the high-level Abaqus model database. A model database stores models
     and analysis controls.
@@ -54,6 +56,7 @@ class MdbBase:
     #: A repository of Annotation objects.
     annotations: typing.Dict[str, Annotation] = {}
 
+    @abaqus_method_doc
     def __init__(self, pathName: str = ""):
         """This constructor creates an empty Mdb object.
 
@@ -80,6 +83,7 @@ class MdbBase:
         self.models["Model-1"] = Model("Model-1")
         self.models["Model-1"].FieldOutputRequest("F-Output-1", "Initial")
 
+    @abaqus_method_doc
     def importDxf(self, fileName: str):
         """This method creates a ConstrainedSketch object from a file containing dxf-format
         (AutoCAD) geometry. Only a limited number of entities are supported. This format should
@@ -104,6 +108,7 @@ class MdbBase:
         """
         ...
 
+    @abaqus_method_doc
     def openMdb(self, pathName: str):
         """This method opens an existing model database file.
 
@@ -143,12 +148,14 @@ class MdbBase:
         """
         ...
 
+    @abaqus_method_doc
     def close(self):
         """This method closes an open Mdb object but does not save the Mdb object to disk. After
         closing the Mdb object, this method creates a new unnamed empty Mdb object.
         """
         ...
 
+    @abaqus_method_doc
     def save(self):
         """This method saves an Mdb object to disk at the location specified by **pathName**
         (*pathName* is a member of the Mdb object).
@@ -170,6 +177,7 @@ class MdbBase:
         """
         ...
 
+    @abaqus_method_doc
     def saveAs(self, pathName: str):
         """This method saves an Mdb object to disk at the specified location.
 
@@ -190,6 +198,7 @@ class MdbBase:
         """
         ...
 
+    @abaqus_method_doc
     def openAuxMdb(self, pathName: str):
         """This method opens an auxiliary Mdb object on the disk at the specified location. This
         enables models from the auxiliary Mdb object to be copied into the current Mdb.
@@ -215,6 +224,7 @@ class MdbBase:
         """
         ...
 
+    @abaqus_method_doc
     def closeAuxMdb(self):
         """This method closes the auxiliary Mdb which had been opened earlier using the openAuxMdb
         command.
@@ -230,6 +240,7 @@ class MdbBase:
         """
         ...
 
+    @abaqus_method_doc
     def getAuxMdbModelNames(self):
         """This method returns a list of model names present in the auxiliary Mdb which had been
         opened earlier using the openAuxMdb command.
@@ -247,6 +258,7 @@ class MdbBase:
         """
         ...
 
+    @abaqus_method_doc
     def copyAuxMdbModel(self, fromName: str, toName: str = ""):
         """This method copies a specified model from the auxiliary Mdb which had been opened
         earlier using the openAuxMdb command.

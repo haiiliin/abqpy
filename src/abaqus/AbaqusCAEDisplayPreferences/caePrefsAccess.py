@@ -3,6 +3,7 @@ import typing
 from .CaeGuiPrefs import CaeGuiPrefs
 from .CaeKerPrefs import CaeKerPrefs
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_function_doc
 
 """The Python module caePrefsAccess contains functions that enable you to edit the 
 Abaqus/CAE preferences file, abaqus_2021.gpr. 
@@ -17,6 +18,7 @@ Abaqus/CAE preferences file, abaqus_2021.gpr.
 """
 
 
+@abaqus_function_doc
 def getGuiPrefsFileName() -> str:
     """This function enables you to retrieve the location of your abaqus_2021.gpr file.
 
@@ -36,6 +38,7 @@ def getGuiPrefsFileName() -> str:
     ...
 
 
+@abaqus_function_doc
 def getDisplayNamesInGuiPreferences(fileName: str) -> typing.List[str]:
     """The abaqus_2021.gpr file stores a separate guiPreferences record for each display that
     you use. This function returns a list of every displayName recorded in the preferences
@@ -62,6 +65,7 @@ def getDisplayNamesInGuiPreferences(fileName: str) -> typing.List[str]:
     ...
 
 
+@abaqus_function_doc
 def printValuesList(
     object: str,
     maxRecursionDepth: typing.Union[int, typing.Literal["UNLIMITED"]] = None,
@@ -100,6 +104,7 @@ def printValuesList(
     ...
 
 
+@abaqus_function_doc
 def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
     """This function enables you to examine and change many default behaviors in the Abaqus/CAE
     graphical user interface. Abaqus stores preferences for each display you use in a
@@ -132,6 +137,7 @@ def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
     return CaeGuiPrefs()
 
 
+@abaqus_function_doc
 def openSessionOptions(
     fileName: str = "", directory: typing.Literal["CURRENT", "HOME"] = HOME
 ) -> CaeKerPrefs:

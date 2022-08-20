@@ -1,6 +1,8 @@
 from ...UtilityAndView.abaqusConstants import *
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Eos:
     r"""The Eos object specifies an equation of state model.
 
@@ -45,6 +47,7 @@ class Eos:
             - :math:`\varepsilon_{v o l}^{c}`. (Dimensionless.)
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         type: SymbolicConstant = IDEALGAS,

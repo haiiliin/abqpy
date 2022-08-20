@@ -1,7 +1,9 @@
 from .LoadState import LoadState
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class SurfacePoreFluidState(LoadState):
     """The SurfacePoreFluidState object stores the propagating data for a SurfacePoreFluid
     object in a step. One instance of this object is created internally by the

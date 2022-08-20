@@ -1,7 +1,9 @@
 from .Filter import Filter
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ButterworthFilter(Filter):
     """The ButterworthFilter object defines a Butterworth type filter.
     The ButterworthFilter object is derived from the Filter object.
@@ -51,6 +53,7 @@ class ButterworthFilter(Filter):
     #: values are NONE, FIRST, and SECOND. The default value is NONE.
     invariant: SymbolicConstant = NONE
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -109,6 +112,7 @@ class ButterworthFilter(Filter):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         order: int = 2,

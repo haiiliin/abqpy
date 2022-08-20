@@ -1,8 +1,10 @@
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
 from .ConnectorOptions import ConnectorOptions
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConnectorElasticity(ConnectorBehaviorOption):
     """The ConnectorElasticity object defines elastic behavior for one or more components of a
     connector's relative motion.
@@ -105,6 +107,7 @@ class ConnectorElasticity(ConnectorBehaviorOption):
     #: specified. The default value is an empty sequence.
     components: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self,
         behavior: SymbolicConstant = LINEAR,
@@ -177,6 +180,7 @@ class ConnectorElasticity(ConnectorBehaviorOption):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorElasticity object.
 

@@ -1,6 +1,8 @@
 from .ContactProperty import ContactProperty
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FluidInflatorProperty(ContactProperty):
     """The FluidInflatorProperty object is an interaction property that defines a fluid
     inflator property to model the deployment of an airbag. The inflator property defines
@@ -48,6 +50,7 @@ class FluidInflatorProperty(ContactProperty):
 
     """
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -111,6 +114,7 @@ class FluidInflatorProperty(ContactProperty):
         """
         super().__init__(name)
 
+    @abaqus_method_doc
     def setValues(
         self,
         dischargeCoefficient: float = None,

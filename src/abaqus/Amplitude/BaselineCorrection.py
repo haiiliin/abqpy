@@ -1,3 +1,6 @@
+from .._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class BaselineCorrection:
     """The BaselineCorrection object modifies an acceleration history to minimize the overall
     drift of the displacement obtained from the time integration of the given acceleration.
@@ -22,6 +25,7 @@ class BaselineCorrection:
     #: sequence.
     intervals: tuple = ()
 
+    @abaqus_method_doc
     def __init__(self, intervals: tuple = ()):
         """This method creates a BaselineCorrection object.
 
@@ -51,6 +55,7 @@ class BaselineCorrection:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the BaselineCorrection object.
 

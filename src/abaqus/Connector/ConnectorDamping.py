@@ -1,8 +1,10 @@
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
 from .ConnectorOptions import ConnectorOptions
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ConnectorDamping(ConnectorBehaviorOption):
     """The ConnectorDamping object defines damping behavior for one or more components of a
     connector's relative motion.
@@ -116,6 +118,7 @@ class ConnectorDamping(ConnectorBehaviorOption):
     #: specified. The default value is an empty sequence.
     components: tuple = ()
 
+    @abaqus_method_doc
     def __init__(
         self,
         type: SymbolicConstant = VISCOUS,
@@ -188,6 +191,7 @@ class ConnectorDamping(ConnectorBehaviorOption):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorDamping object.
 

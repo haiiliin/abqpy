@@ -2,8 +2,10 @@ import typing
 
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _CopyOptionsBase
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class ImageOptions(_CopyOptionsBase):
     """The ImageOptions object stores settings that control how an image is rendered in a
     particular viewport. ImageOptions objects are accessed from the image options associated
@@ -91,6 +93,7 @@ class ImageOptions(_CopyOptionsBase):
     #: The default value is 1.0.
     translucency: float = 1.0
 
+    @abaqus_method_doc
     def setValues(
         self,
         imageName: str = "",

@@ -3,9 +3,12 @@ from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
     ConstrainedSketchGeometry,
 )
 from ...BasicGeometry.Vertex import Vertex
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class EqualDistanceConstraint(ConstrainedSketchConstraint):
+    @abaqus_method_doc
     def __init__(
         self, entity1: str, entity2: ConstrainedSketchGeometry, midpoint: Vertex
     ):

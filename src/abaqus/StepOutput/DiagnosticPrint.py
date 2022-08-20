@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DiagnosticPrint:
     """The DiagnosticPrint object is used to request detailed diagnostic output or to disable
     specific diagnostic checks
@@ -71,6 +73,7 @@ class DiagnosticPrint:
     #: default value is OFF.
     mass: Boolean = OFF
 
+    @abaqus_method_doc
     def __init__(
         self,
         allke: Boolean = ON,
@@ -146,6 +149,7 @@ class DiagnosticPrint:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DiagnosticPrint object."""
         ...

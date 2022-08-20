@@ -10,8 +10,10 @@ from ..Model.ModelBase import ModelBase
 from ..Odb.Odb import Odb
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class AdaptivityModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
@@ -23,6 +25,7 @@ class AdaptivityModel(ModelBase):
             mdb.models[name]
     """
 
+    @abaqus_method_doc
     def adaptiveRemesh(self, odb: Odb):
         """This method remeshes the model using the active remesh rules in the model and the error
         indicator results from a previous analysis.
@@ -39,6 +42,7 @@ class AdaptivityModel(ModelBase):
         """
         ...
 
+    @abaqus_method_doc
     def AdaptiveMeshConstraint(
         self,
         name: str,
@@ -85,6 +89,7 @@ class AdaptivityModel(ModelBase):
         )
         return adaptiveMeshConstraint
 
+    @abaqus_method_doc
     def AdaptiveMeshControl(
         self,
         name: str,
@@ -185,6 +190,7 @@ class AdaptivityModel(ModelBase):
         )
         return adaptiveMeshControl
 
+    @abaqus_method_doc
     def DisplacementAdaptiveMeshConstraint(
         self,
         name: str,
@@ -278,6 +284,7 @@ class AdaptivityModel(ModelBase):
         )
         return adaptiveMeshConstraint
 
+    @abaqus_method_doc
     def RemeshingRule(
         self,
         name: str,
@@ -403,6 +410,7 @@ class AdaptivityModel(ModelBase):
         )
         return remeshingRule
 
+    @abaqus_method_doc
     def VelocityAdaptiveMeshConstraint(
         self,
         name: str,

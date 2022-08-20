@@ -1,7 +1,9 @@
 from .ContactProperty import ContactProperty
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class FluidExchangeProperty(ContactProperty):
     """The FluidExchangeProperty object is an interaction property that defines the fluid
     exchange property for a flow between two fluid cavities or between a fluid cavity and
@@ -95,6 +97,7 @@ class FluidExchangeProperty(ContactProperty):
     #: **definition** = MASS_RATE_LEAK, or when **definition** = VOL_RATE_LEAK. The default value is 0.
     fieldDependencies: int = 0
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -191,6 +194,7 @@ class FluidExchangeProperty(ContactProperty):
         """
         super().__init__(name)
 
+    @abaqus_method_doc
     def setValues(
         self,
         definition: SymbolicConstant = BULK_VISCOSITY,

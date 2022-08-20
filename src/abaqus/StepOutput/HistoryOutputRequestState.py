@@ -1,8 +1,10 @@
 import typing
 
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class HistoryOutputRequestState:
     """The HistoryOutputRequestState object stores the propagating data of a History output
     request current in a step. One instance of this object is created internally by the

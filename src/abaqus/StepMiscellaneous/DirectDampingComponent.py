@@ -1,3 +1,7 @@
+from .._decorators import abaqus_class_doc
+
+
+@abaqus_class_doc
 class DirectDampingComponent:
     """A :py:class:`~abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent` object is used to define direct damping over a range of modes.
 

@@ -1,8 +1,10 @@
 from .Constraint import Constraint
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class Tie(Constraint):
     """The Tie object defines two surfaces to be tied together for the duration of a
     simulation.
@@ -68,6 +70,7 @@ class Tie(Constraint):
     #: ON.
     thickness: Boolean = ON
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -133,12 +136,14 @@ class Tie(Constraint):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def swapSurfaces(self):
         """This method switches the main and secondary surfaces of a tied constraint. This command
         is valid only during the step in which the interaction is created.
         """
         ...
 
+    @abaqus_method_doc
     def setValues(
         self,
         adjust: Boolean = ON,

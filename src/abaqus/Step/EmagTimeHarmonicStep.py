@@ -18,8 +18,10 @@ from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class EmagTimeHarmonicStep(AnalysisStep):
     """The EmagTimeHarmonicStep object is used to calculate the electromagnetic response of the
     system to harmonic excitation of the model.
@@ -150,6 +152,7 @@ class EmagTimeHarmonicStep(AnalysisStep):
     #: COMPLEX. The default value is COMPLEX.
     factorization: SymbolicConstant = COMPLEX
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -194,6 +197,7 @@ class EmagTimeHarmonicStep(AnalysisStep):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self, description: str = "", factorization: SymbolicConstant = COMPLEX
     ):

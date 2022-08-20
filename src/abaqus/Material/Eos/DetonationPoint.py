@@ -1,3 +1,6 @@
+from ..._decorators import abaqus_class_doc, abaqus_method_doc
+
+@abaqus_class_doc
 class DetonationPoint:
     """A :py:class:`~abaqus.Material.Eos.DetonationPoint.DetonationPoint` object specifies a suboption of the Eos object. The DetonationPoint
     object defines either isotropic linear elastic shear or linear viscous shear behavior
@@ -25,6 +28,7 @@ class DetonationPoint:
         - DETONATION POINT
     """
 
+    @abaqus_method_doc
     def __init__(self, table: tuple):
         """This method creates a DetonationPoint object.
 
@@ -48,6 +52,7 @@ class DetonationPoint:
         """
         ...
 
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DetonationPoint object."""
         ...

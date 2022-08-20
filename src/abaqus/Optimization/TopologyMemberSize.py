@@ -1,8 +1,10 @@
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class TopologyMemberSize(GeometricRestriction):
     """The TopologyMemberSize object defines a topology member size geometric restriction.
     The TopologyMemberSize object is derived from the GeometricRestriction object.
@@ -38,6 +40,7 @@ class TopologyMemberSize(GeometricRestriction):
     #: is MINIMUM.
     sizeRestriction: SymbolicConstant = MINIMUM
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -82,6 +85,7 @@ class TopologyMemberSize(GeometricRestriction):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         maxThickness: float = 0,

@@ -1,8 +1,10 @@
 from ..Adaptivity.AdaptivityStep import AdaptivityStep
 from ..StepOutput.OutputStep import OutputStep
 from ..TableCollection.TableCollectionStep import TableCollectionStep
+from .._decorators import abaqus_class_doc
 
 
+@abaqus_class_doc
 class Step(AdaptivityStep, OutputStep, TableCollectionStep):
     """The Step object stores the parameters that determine the context of the step. The Step
     object is the abstract base type for other Step objects. The Step object has no explicit

@@ -1,6 +1,8 @@
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class KeywordBlock:
     """The KeywordBlock object contains a representation of its model in the Abaqus input file
     format. You may edit the contents of the KeywordBlock to add solver functionality that
@@ -36,6 +38,7 @@ class KeywordBlock:
     #: lines.
     sieBlocks: tuple = ()
 
+    @abaqus_method_doc
     def setValues(self, edited: Boolean = OFF):
         """This method modifies the KeywordBlock object.
 
@@ -48,6 +51,7 @@ class KeywordBlock:
         """
         ...
 
+    @abaqus_method_doc
     def insert(self, position: int, text: str):
         """This method inserts a String at a specified position in the **sieBlocks** member.
 
@@ -66,6 +70,7 @@ class KeywordBlock:
         """
         ...
 
+    @abaqus_method_doc
     def replace(self, position: int, text: str):
         """This method replaces a String at a specified position in the **sieBlocks** member.
 
@@ -83,6 +88,7 @@ class KeywordBlock:
         """
         ...
 
+    @abaqus_method_doc
     def synchVersions(self, storeNodesAndElements: Boolean):
         """This method synchronizes, or merges, the edits made in this object with those made in
         the model using other scripting commands or the user interface. The synchVersions method

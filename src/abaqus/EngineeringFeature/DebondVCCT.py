@@ -1,7 +1,9 @@
 from .Crack import Crack
 from ..UtilityAndView.abaqusConstants import *
+from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
+@abaqus_class_doc
 class DebondVCCT(Crack):
     """The DebondVCCT object defines the parameters needed to activate crack propagation using
     VCCT.
@@ -44,6 +46,7 @@ class DebondVCCT(Crack):
     #: value is 1.
     printToDATFrequency: int = 1
 
+    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -88,6 +91,7 @@ class DebondVCCT(Crack):
         """
         super().__init__()
 
+    @abaqus_method_doc
     def setValues(
         self,
         debondingForceAmplitude: SymbolicConstant = STEP,
