@@ -128,8 +128,8 @@ FieldValue
 
     .. autoclasstoc::
 
-FieldValue
-~~~~~~~~~~
+FieldValueArray
+~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Odb.FieldValueArray.FieldValueArray
     :members:
