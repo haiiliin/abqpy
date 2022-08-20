@@ -1,9 +1,35 @@
 import re
 import typing
+from pathlib import Path
 
-from . import __version__
+try:
+    from ._version import version as default_version
+except ImportError:
+    default_version = '0.0+UNKNOWN'
 
-version = __version__[:4]
+
+def _get_version():
+    """Return the version string used for __version__."""
+    # Only shell out to a git subprocess if really needed, and not on a
+    # shallow clone, such as those used by CI, as the latter would trigger
+    # a warning from setuptools_scm.
+    root = Path(__file__).resolve().parents[2]
+    if (root / ".git").exists() and not (root / ".git/shallow").exists():
+        import setuptools_scm
+        try:
+            return setuptools_scm.get_version(
+                root=root,
+                version_scheme="release-branch-semver",
+                local_scheme="node-and-date",
+                fallback_version=default_version,
+            )
+        except ValueError:
+            return default_version
+    else:  # Get the version from the _version.py setuptools_scm file.
+        return default_version
+
+
+version = _get_version()[:4]
 
 if not version.startswith('20'):
     version = '2022'
@@ -111,6 +137,8 @@ class AbaqusDoc:
         str
             The docstring with the link to the Abaqus documentation.
         """
+        if not docstring:
+            return docstring
         link, link_with_label = cls._class_or_module_link(type, class_or_module_name, prefix)
         return docstring.rstrip() + '\n\n' + ' ' * (0 if type == 'module' else 4) + link_with_label
 
@@ -143,6 +171,8 @@ class AbaqusDoc:
         str
             The docstring with the link to the Abaqus documentation.
         """
+        if not docstring:
+            return docstring
         link, link_with_label = cls._method_or_function_link(type, class_or_module_name,
                                                              method_or_function_name, prefix)
         return re.sub(r'(\n\s+?)(Parameters\n\s+----------)', r'\1' + link_with_label + r'\1\2', docstring)
@@ -279,7 +309,7 @@ def abaqus_function_doc(func):
 
 
 def abaqus_method_doc(method):
-    """Add a link to the Abaqus documentation to the docstring of the function.
+    """Add a link to the Abaqus documentation to the docstring of the method.
     """
     class_name = method.__qualname__.split('.')[0]
     method.__doc__ = doc.add_link_in_method_docstring(
