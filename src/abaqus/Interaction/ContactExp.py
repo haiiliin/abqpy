@@ -72,7 +72,7 @@ class ContactExp(Interaction):
     #: A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
     #: contact domain.
     #:
-    #: ..versionchanged:: 2022
+    #: .. versionchanged:: 2022
     #:     The attribute `masterSlaveAssignments` was renamed to `mainSecondaryAssignments`.
     mainSecondaryAssignments: MainSecondaryAssignment = MainSecondaryAssignment()
 

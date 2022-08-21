@@ -36,14 +36,14 @@ class PressurePenetration(Interaction):
     #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the main surface that are exposed to the
     #: fluid.
     #:
-    #: ..versionchanged:: 2022
+    #: .. versionchanged:: 2022
     #:     The attribute `masterPoints` was renamed to `mainPoints`.
     mainPoints: RegionArray = []
 
     #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the secondary surface that are exposed to
     #: the fluid.
     #:
-    #: ..versionchanged:: 2022
+    #: .. versionchanged:: 2022
     #:     The attribute `slavePoints` was renamed to `secondaryPoints`.
     secondaryPoints: RegionArray = []
 

@@ -19,13 +19,13 @@ class Radiation:
 
     #: A Float specifying the emissivity of the main surface.
     #:
-    #: ..versionchanged:: 2022
+    #: .. versionchanged:: 2022
     #:     The attribute `masterEmissivity` was renamed to `mainEmissivity`.
     mainEmissivity: float
 
     #: A Float specifying the emissivity of the secondary surface.
     #:
-    #: ..versionchanged:: 2022
+    #: .. versionchanged:: 2022
     #:     The attribute `slaveEmissivity` was renamed to `secondaryEmissivity`.
     secondaryEmissivity: float
 
