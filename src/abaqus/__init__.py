@@ -11,7 +11,7 @@ from .UtilityAndView.BackwardCompatibility import BackwardCompatibility
 try:
     from ._version import version
 except ImportError:
-    version = '0.0+UNKNOWN'
+    version = '2022.0.0-unknown'
 
 
 def _get_version():

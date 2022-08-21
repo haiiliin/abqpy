@@ -5,7 +5,7 @@ from pathlib import Path
 try:
     from ._version import version as default_version
 except ImportError:
-    default_version = '0.0+UNKNOWN'
+    default_version = '2022.0.0-unknown'
 
 
 def _get_version():
@@ -30,9 +30,6 @@ def _get_version():
 
 
 version = _get_version()[:4]
-
-if not version.startswith('20'):
-    version = '2022'
 
 
 class AbaqusDoc:
