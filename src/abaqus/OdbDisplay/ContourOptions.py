@@ -200,7 +200,7 @@ class ContourOptions(DGContourOptions):
     #: contour legend. This setting hides the *autoMinValue* and *autoMaxValue* from the
     #: spectrum when *legendHideOutsideLimits*=ON.The default value is OFF.
     #:
-    #: ..versionadded:: 2019
+    #: .. versionadded:: 2019
     #:     The `legendHideOutsideLimits` attribute was added.
     legendHideOutsideLimits: Boolean = OFF
 
