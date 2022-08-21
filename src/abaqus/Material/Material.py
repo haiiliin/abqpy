@@ -3923,6 +3923,9 @@ class and a container of
                 mdb.models[name].materials[name].MeanFieldHomogenization
                 session.odbs[name].materials[name].MeanFieldHomogenization
 
+        .. versionadded:: 2018
+            The `MeanFieldHomogenization` method was added.
+
         Parameters
         ----------
         angleSubdivision

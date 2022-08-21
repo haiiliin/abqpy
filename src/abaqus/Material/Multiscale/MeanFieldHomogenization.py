@@ -23,6 +23,8 @@ class MeanFieldHomogenization:
 
         - MEAN FIELD HOMOGENIZATION
 
+    .. versionadded:: 2018
+        The `MeanFieldHomogenization` class was added.
     """
 
     @abaqus_method_doc
