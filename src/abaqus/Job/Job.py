@@ -71,8 +71,8 @@ class Job:
     nodalOutputPrecision: SymbolicConstant = SINGLE
 
     #: A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.
-    #: Possible values are LOOP and DOMAIN. The default value is DOMAIN.
-    parallelizationMethodExplicit: SymbolicConstant = DOMAIN
+    #: Possible values are LOOP and DOMAIN. The default value is LOOP.
+    parallelizationMethodExplicit: SymbolicConstant = LOOP
 
     #: An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
     #: **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
