@@ -19,6 +19,9 @@ class DataTable:
         The corresponding analysis keywords are:
 
         - *PARAMETER TABLE
+
+    .. versionadded:: 2020
+        The `DataTable` class was added.
     """
 
     #: A String specifying the label of the data table.

@@ -15,6 +15,9 @@ class TableCollectionModel(ModelBase):
         .. code-block:: python
 
             mdb.models[name]
+
+    .. versionadded:: 2020
+        The `TableCollectionModel` class was added.
     """
 
     @abaqus_method_doc
