@@ -217,12 +217,21 @@ class ModelBase:
     optimizationTasks: typing.Dict[str, OptimizationTask] = {}
 
     #: A repository of TableCollection objects.
+    #:
+    #: .. versionadded:: 2020
+    #:     The `tableCollections` attribute was added.
     tableCollections: typing.Dict[str, TableCollection] = {}
 
     #: A repository of EventSeriesType objects.
+    #:
+    #: .. versionadded:: 2020
+    #:     The `eventSeriesTypes` attribute was added.
     eventSeriesTypes: typing.Dict[str, EventSeriesType] = {}
 
     #: A repository of EventSeriesData objects.
+    #:
+    #: .. versionadded:: 2020
+    #:     The `eventSeriesDatas` attribute was added.
     eventSeriesDatas: typing.Dict[str, EventSeriesData] = {}
 
     @abaqus_method_doc
