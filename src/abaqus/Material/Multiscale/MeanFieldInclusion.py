@@ -28,6 +28,8 @@ class MeanFieldInclusion:
 
         - CONSTITUENT
 
+    .. versionadded:: 2018
+        The `MeanFieldInclusion` class was added.
     """
 
     @abaqus_method_doc
