@@ -18,6 +18,8 @@ class FieldState(PredefinedFieldState):
             import load
             mdb.models[name].steps[name].predefinedFieldStates[name]
 
+    .. versionadded:: 2018
+        The `FieldState` class was added.
     """
 
     #: A String specifying the scalar nodal output variable that will be read from an output

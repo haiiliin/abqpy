@@ -309,6 +309,9 @@ class Set(Region):
         unsorted
             A Boolean specifying whether the created set is unsorted. The default value is False.
 
+            .. versionadded:: 2018
+                The `unsorted` argument was added.
+
         Returns
         -------
         Set

@@ -112,6 +112,9 @@ class ContourOptions(DGContourOptions):
     #: A Boolean specifying whether the contour legend should show the lowest value at the top
     #: and the highest value at the bottom (**reversedContourLegendRange=ON**) or vice versa. The
     #: default value is OFF.
+    #:
+    #: ..versionadded:: 2018
+    #:     The `reversedContourLegendRange` attribute was added.
     reversedContourLegendRange: Boolean = OFF
 
     #: A tuple of Floats specifying the interval values when **intervalType** = USER_DEFINED.
@@ -296,6 +299,9 @@ class ContourOptions(DGContourOptions):
             A Boolean specifying whether the contour legend should show the lowest value at the top
             and the highest value at the bottom (*reversedContourLegendRange*=ON) or vice versa. The
             default value is OFF.
+
+            .. versionadded:: 2018
+                The `reversedContourLegendRange` argument was added.
         outsideLimitsMode
             A SymbolicConstant specifying the color of contour values that exceed the limits of the
             plot. Possible values are SPECTRUM and SPECIFY.When **outsideLimitsMode** = SPECTRUM, the
