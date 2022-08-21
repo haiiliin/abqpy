@@ -38,6 +38,9 @@ class ArcByCenterEnds(ConstrainedSketchGeometry):
             A SymbolicConstant specifying the direction of the arc. Possible values are CLOCKWISE
             and COUNTERCLOCKWISE.
 
+            .. versionadded:: 2017
+                The `direction` argument was added.
+
         Returns
         -------
         ConstrainedSketchGeometry

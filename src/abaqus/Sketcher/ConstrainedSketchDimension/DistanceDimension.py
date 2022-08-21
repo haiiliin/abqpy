@@ -34,6 +34,9 @@ class DistanceDimension(ConstrainedSketchDimension):
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or ConstrainedSketchGeometry object.
         entity2
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or ConstrainedSketchGeometry object.
+
+            .. versionchanged:: 2017
+                The `vertex2` argument was renamed to `entity2`.
         textPoint
             A pair of Floats specifying the location of the dimension text.
         value
