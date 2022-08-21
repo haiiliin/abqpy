@@ -64,6 +64,9 @@ class OdbMeshElement:
     ):
         """This method returns the normal direction for the element face.
 
+        .. versionadded:: 2017
+            The getNormal method was added.
+
         Parameters
         ----------
         faceIndex
