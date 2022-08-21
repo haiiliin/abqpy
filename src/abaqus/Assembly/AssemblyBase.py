@@ -968,5 +968,8 @@ class AssemblyBase(Feature):
         ----------
         nodes
             A sequence of MeshNode objects or a Set object containing nodes.
+
+            .. versionchanged:: 2020
+                The `coordinates` arguments was removed, the `nodes` now replaces it.
         """
         ...

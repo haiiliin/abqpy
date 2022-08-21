@@ -25,6 +25,9 @@ class InteractionContactInitializationModel(ModelBase):
 
                 mdb.models[name].StdInitialization
 
+        .. versionadded:: 2020
+            The `ExpInitialization` method was added.
+
         Parameters
         ----------
         name

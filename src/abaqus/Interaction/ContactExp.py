@@ -74,6 +74,9 @@ class ContactExp(Interaction):
     mainSecondaryAssignments: MainSecondaryAssignment = MainSecondaryAssignment()
 
     #: A PolarityAssignments object specifying the polarity assignments in the contact domain.
+    #:
+    #: .. versionadded:: 2020
+    #:     The `polarityAssignments` attribute was added.
     polarityAssignments: PolarityAssignments = PolarityAssignments()
 
     @typing.overload
@@ -148,6 +151,9 @@ class ContactExp(Interaction):
             contact domain.
         polarityAssignments
             A PolarityAssignments object specifying the polarity assignments in the contact domain.
+
+            .. versionadded:: 2020
+                The `polarityAssignments` argument was added.
 
         Returns
         -------
@@ -263,11 +269,15 @@ class ContactExp(Interaction):
         polarityAssignments
             A sequence of tuples specifying polarity assignments in the contact domain. Each tuple
             contains three entries:
+
             - A region object or the SymbolicConstant GLOBAL specifying the first surface that
-            defines the polarity assignment.
+              defines the polarity assignment.
             - A region object specifying the second surface in the polarity assignment definition.
             - A SymbolicConstant specifying the polarity of the second surface. Possible values are
-            SPOS, SNEG, and TWO_SIDED.
+              SPOS, SNEG, and TWO_SIDED.
+
+              .. versionadded:: 2020
+                    The `polarityAssignments` argument was added.
 
         Returns
         -------

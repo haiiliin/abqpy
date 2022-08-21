@@ -18,6 +18,9 @@ class ElementProgressiveActivation:
         The corresponding analysis keywords are:
 
         - *ELEMENT PROGRESSIVE ACTIVATION
+
+    .. versionadded:: 2020
+        The `ElementProgressiveActivation` class was added.
     """
 
     #: A String specifying the key of the repository.

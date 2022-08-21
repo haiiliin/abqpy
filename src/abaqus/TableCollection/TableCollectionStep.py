@@ -17,6 +17,9 @@ class TableCollectionStep(StepBase):
 
             import step
             mdb.models[name].steps[name]
+
+    .. versionadded:: 2020
+        The `TableCollectionStep` class was added.
     """
 
     @abaqus_method_doc
