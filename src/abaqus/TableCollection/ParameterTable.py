@@ -20,8 +20,11 @@ class ParameterTable:
 
         The corresponding analysis keywords are:
 
-        - *PARAMETER TABLE TYPE
-                - *PARAMETER TABLE
+        - PARAMETER TABLE TYPE
+        - PARAMETER TABLE
+
+    .. versionadded:: 2020
+        The `ParameterTable` class was added.
     """
 
     #: A ParameterColumnArray specifying all the columns in the ParameterTable.

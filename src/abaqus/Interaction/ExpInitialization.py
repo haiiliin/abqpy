@@ -20,6 +20,9 @@ class ExpInitialization(ContactInitialization):
         The corresponding analysis keywords are:
 
         - CONTACT INITIALIZATION DATA
+
+    .. versionadded:: 2020
+        The `ExpInitialization` class was added.
     """
 
     #: A String specifying the contact initialization repository key.
