@@ -62,5 +62,8 @@ class MesherOptions:
             also consulted when populating the element type dialog; preferred types are selected by
             default for a region not previously assigned any element types. The default value is an
             empty list.
+
+            .. versionadded:: 2018
+                The `guiPreferredElements` argument was added.
         """
         ...

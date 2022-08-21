@@ -116,6 +116,9 @@ class ViewCut:
 
     #: A Float returning the cross-sectional area of the cut when *showFreeBodyCut* is set to
     #: ON.
+    #:
+    #: ..versionadded:: 2018
+    #:     The `crossSectionalArea` attribute was added.
     crossSectionalArea: float = None
 
     @abaqus_method_doc
