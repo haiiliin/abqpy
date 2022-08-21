@@ -981,6 +981,9 @@ class StepModel(ModelBase):
             formulations (shell, membrane, and two-dimensional plane stress elements). The default
             value is ON.
 
+            .. versionadded:: 2018
+                The *improvedDtMethod* argument was added.
+
         Returns
         -------
         step: ExplicitDynamicsStep
@@ -2959,6 +2962,9 @@ class StepModel(ModelBase):
             increment for three-dimensional continuum elements and elements with plane stress
             formulations (shell, membrane, and two-dimensional plane stress elements). The default
             value is ON.
+
+            .. versionadded:: 2018
+                The *improvedDtMethod* argument was added.
 
         Returns
         -------
