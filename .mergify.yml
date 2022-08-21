@@ -1,4 +1,19 @@
 pull_request_rules:
+  - name: Backport to main
+    conditions:
+      - or:
+        - label=backport-to-all
+        - label=backport-to-main
+    actions:
+      backport:
+        title: "Backport '{{ title }}' into {{ destination_branch }} (backport #{{ number }})"
+        branches:
+          - main
+        assignees:
+          - "{{ author }}"
+        labels:
+          - backport
+
   - name: Backport to V2022
     conditions:
       - or:
