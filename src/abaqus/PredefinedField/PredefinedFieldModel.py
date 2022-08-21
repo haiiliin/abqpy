@@ -473,6 +473,9 @@ class PredefinedFieldModel(
 
                 mdb.models[name].Stress
 
+        .. versionadded:: 2017
+            The `Stress` method was added.
+
         Parameters
         ----------
         name
