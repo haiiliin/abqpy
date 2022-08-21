@@ -160,7 +160,7 @@ exclude_patterns = []
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'furo'
+html_theme = 'pydata_sphinx_theme'
 
 # Logo
 # html_logo = "_static/3ds-dark.svg"
