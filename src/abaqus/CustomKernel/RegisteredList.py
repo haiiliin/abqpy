@@ -4,10 +4,7 @@ from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class RegisteredList(CommandRegister, list):
-    """This from .._decorators import abaqus_class_doc, abaqus_method_doc
-
-@abaqus_class_doc
-class allows you to create a list that can be queried from the GUI and is capable
+    """This class allows you to create a list that can be queried from the GUI and is capable
     of notifying the GUI when the contents of the list change.
     The RegisteredList object is derived from the CommandRegister object.
 
