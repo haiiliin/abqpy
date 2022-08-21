@@ -34,7 +34,7 @@ class ShapePointSymmetry(GeometricRestriction):
     #: A SymbolicConstant specifying the rule for determining the main node. Possible values
     #: are MAXIMUM and MINIMUM. The default value is MAXIMUM.
     #:
-    #: ..versionchanged:: 2022
+    #: .. versionchanged:: 2022
     #:    The attribute `masterPointDetermination` was renamed to `mainPointDetermination`.
     mainPointDetermination: SymbolicConstant = MAXIMUM
 
