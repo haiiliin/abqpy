@@ -71,10 +71,7 @@ class Material(MaterialBase):
     A material is created by combining one or more individual material options and sub
     options. A particular material option is associated with the Material object through a
     member. For example: the **acousticMedium** member may contain an AcousticMedium object.
-    The alternative of having a MaterialOption abstract base from .._decorators import abaqus_class_doc, abaqus_method_doc
-
-@abaqus_class_doc
-class and a container of
+    The alternative of having a MaterialOption abstract base class and a container of
     MaterialOptions was rejected because it would make it more difficult to enforce the fact
     that one Material object cannot contain two AcousticMedium objects, for example.
 
