@@ -20,6 +20,9 @@ class TableCollectionAssembly(AssemblyBase):
 
             import assembly
             mdb.models[name].rootAssembly
+
+    .. versionadded:: 2020
+        The `TableCollectionAssembly` class was added.
     """
 
     elementProgressiveActivations: typing.Dict[str, ElementProgressiveActivation] = {}

@@ -20,6 +20,9 @@ class EventSeries:
 
         - EVENT SERIES TYPE
         - EVENT SERIES
+
+    .. versionadded:: 2020
+        The `EventSeries` class was added.
     """
 
     #: A String specifying the repository key.
