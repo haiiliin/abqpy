@@ -35,6 +35,9 @@ class Coexecution:
 
     #: A SymbolicConstant specifying the analysis product type of the main model for the
     #: co-execution. The default value is ABAQUS.
+    #:
+    #: ..versionchanged:: 2022
+    #:     The `masterAnalysisProduct` attribute was changed 'mainAnalysisProduct'.
     mainAnalysisProduct: SymbolicConstant = ABAQUS
 
     #: An Int specifying the number of hours to wait before submitting the co-execution. This
@@ -71,19 +74,31 @@ class Coexecution:
     jobs: typing.Dict[str, Job] = {}
 
     #: A tuple of Strings specifying the names of the secondary models for the co-execution.
+    #:
+    #: ..versionchanged:: 2022
+    #:     The `slaveModels` attribute was changed 'secondaryModels'.
     secondaryModels: tuple = ()
 
     #: A tuple of SymbolicConstants specifying the analysis product types of the secondary
     #: models for the co-execution. The default value is an empty sequence.
+    #:
+    #: ..versionchanged:: 2022
+    #:     The `slaveAnalysisProducts` attribute was changed 'secondaryAnalysisProducts'.
     secondaryAnalysisProducts: SymbolicConstant = None
 
     #: A String specifying the name of the main model for the co-execution.
+    #:
+    #: ..versionchanged:: 2022
+    #:     The `masterModel` attribute was changed 'mainModel'.
     mainModel: str = ""
 
     #: A SymbolicConstant specifying the type of license type being used in case of DSLS
     #: SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default value
     #: is DEFAULT.If the license model is not DSLS SimUnit then the licenseType is not
     #: available.
+    #:
+    #: .. versionadded:: 2022
+    #:     The `licenseType` attribute was added.
     licenseType: SymbolicConstant = DEFAULT
 
     @abaqus_method_doc

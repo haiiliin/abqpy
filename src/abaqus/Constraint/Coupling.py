@@ -93,6 +93,9 @@ class Coupling(Constraint):
 
     #: A Float specifying the value of the thermal expansion coefficient. The default value is 0.0.
     #: The alpha argument applies only when couplingType=KINEMATIC.
+    #:
+    #: .. versionadded:: 2022
+    #:     The `alpha` attribute was added.
     alpha: float = 0.0
 
     @abaqus_method_doc
@@ -176,6 +179,9 @@ class Coupling(Constraint):
         alpha
             A Float specifying the value of the thermal expansion coefficient. The default value is 0.0.
             The alpha argument applies only when couplingType=KINEMATIC.
+
+            .. versionadded:: 2022
+                The `alpha` argument was added.
 
         Returns
         -------

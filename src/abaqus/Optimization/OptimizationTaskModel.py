@@ -129,6 +129,9 @@ class OptimizationTaskModel(ModelBase):
             the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
             value of False means that the existing algorithm will be used.
 
+            .. versionadded:: 2022
+                The `groupOperator` argument was added.
+
         Returns
         -------
         BeadTask
@@ -371,6 +374,9 @@ class OptimizationTaskModel(ModelBase):
             the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
             value of False means that the existing algorithm will be used.
 
+            .. versionadded:: 2022
+                The `groupOperator` argument was added.
+
         Returns
         -------
         ShapeTask
@@ -494,6 +500,9 @@ class OptimizationTaskModel(ModelBase):
             A Boolean specifying whether the group in the design response will be evaluated using
             the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
             value of False means that the existing algorithm will be used.
+
+            .. versionadded:: 2022
+                The `groupOperator` argument was added.
 
         Returns
         -------
@@ -683,6 +692,9 @@ class OptimizationTaskModel(ModelBase):
             A Boolean specifying whether the group in the design response will be evaluated using
             the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
             value of False means that the existing algorithm will be used.
+
+            .. versionadded:: 2022
+                The `groupOperator` argument was added.
 
         Returns
         -------

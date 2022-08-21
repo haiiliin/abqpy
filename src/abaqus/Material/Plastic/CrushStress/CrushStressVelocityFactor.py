@@ -26,6 +26,9 @@ class CrushStressVelocityFactor:
         The corresponding analysis keywords are:
 
         - CRUSH STRESS VELOCITY FACTOR
+
+    .. versionadded:: 2022
+        The `CrushStressVelocityFactor` class was added.
     """
 
     #: A sequence of sequences of Floats specifying the items described below.

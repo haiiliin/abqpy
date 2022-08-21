@@ -367,6 +367,9 @@ class SurfaceToSurfaceContactStd(Interaction):
     def swapSurfaces(self):
         """This method switches the main and secondary surfaces of a surface-to-surface contact
         pair. This command is valid only for the step in which the interaction is created.
+
+        .. versionchanged:: 2022
+            Master and slave were changed to main and secondary.
         """
         ...
 

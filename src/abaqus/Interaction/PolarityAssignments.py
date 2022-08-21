@@ -30,6 +30,9 @@ class PolarityAssignments:
         stepName
             A String specifying the name of the step in which the main-secondary assignments are to
             be modified.
+
+            .. versionchanged:: 2022
+                Master-slave was changed to main-secondary.
         index
             An Int specifying the position of the polarity assignment whose value is to be modified.
         value

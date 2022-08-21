@@ -66,6 +66,9 @@ class ContactStd(Interaction):
 
     #: A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
     #: contact domain.
+    #:
+    #: ..versionchanged:: 2022
+    #:     The attribute `masterSlaveAssignments` was renamed to `mainSecondaryAssignments`.
     mainSecondaryAssignments: MainSecondaryAssignment = MainSecondaryAssignment()
 
     #: An :py:class:`~abaqus.Interaction.InitializationAssignment.InitializationAssignment` object specifying the contact initialization assignments in
@@ -183,6 +186,9 @@ class ContactStd(Interaction):
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
+
+            .. versionchanged:: 2022
+                The argument `masterSlaveAssignments` was renamed to `mainSecondaryAssignments`.
         initializationAssignments
             An :py:class:`~abaqus.Interaction.InitializationAssignment.InitializationAssignment` object specifying the contact initialization assignments in
             the contact domain.
@@ -319,6 +325,9 @@ class ContactStd(Interaction):
               definition.
             - A SymbolicConstant specifying the status of the first surface. Possible values are
               MAIN, SECONDARY, and BALANCED.
+
+            .. versionchanged:: 2022
+                The argument `masterSlaveAssignments` was renamed to `mainSecondaryAssignments`.
         initializationAssignments
             A sequence of tuples specifying the contact initialization data assigned to each surface
             pair. Each tuple contains three entries:

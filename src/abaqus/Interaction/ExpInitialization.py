@@ -61,6 +61,9 @@ class ExpInitialization(ContactInitialization):
     #: included in the initial clearance specification. This argument is not valid when
     #: **overclosureType** = INTERFERENCE and if **openingTolerance** or **overclosureTolerance** is
     #: specified. The default value is None.
+    #:
+    #: ..versionchanged:: 2022
+    #:     The attribute `slaveNodesetName` was renamed to `secondaryNodesetName`.
     secondaryNodesetName: str = None
 
     #: A Float specifying the fraction of the step time (between 0.0 and 1.0) in which the
@@ -122,6 +125,9 @@ class ExpInitialization(ContactInitialization):
             included in the initial clearance specification. This argument is not valid when
             **overclosureType** = INTERFERENCE and if **openingTolerance** or **overclosureTolerance** is
             specified. The default value is None.
+
+            .. versionchanged:: 2022
+                The argument `slaveNodesetName` was renamed to `secondaryNodesetName`.
         stepFraction
             A Float specifying the fraction of the step time (between 0.0 and 1.0) in which the
             interference fit has to be solved. The default value is 1.0. This argument is valid only
@@ -182,6 +188,9 @@ class ExpInitialization(ContactInitialization):
             included in the initial clearance specification. This argument is not valid when
             **overclosureType** = INTERFERENCE and if **openingTolerance** or **overclosureTolerance** is
             specified. The default value is None.
+
+            .. versionchanged:: 2022
+                The argument `slaveNodesetName` was renamed to `secondaryNodesetName`.
         stepFraction
             A Float specifying the fraction of the step time (between 0.0 and 1.0) in which the
             interference fit has to be solved. The default value is 1.0. This argument is valid only

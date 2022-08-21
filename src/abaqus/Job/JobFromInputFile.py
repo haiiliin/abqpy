@@ -131,6 +131,9 @@ class JobFromInputFile(Job):
     #: DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
     #: value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
     #: available.
+    #:
+    #: .. versionadded:: 2022
+    #:     The `licenseType` attribute was added.
     licenseType: SymbolicConstant = DEFAULT
 
     @abaqus_method_doc
@@ -241,6 +244,9 @@ class JobFromInputFile(Job):
             DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
             value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
             available.
+
+            .. versionchanged:: 2022
+                The `licenseType` argument was added.
 
         Returns
         -------

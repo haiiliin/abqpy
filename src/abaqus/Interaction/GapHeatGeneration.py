@@ -24,6 +24,9 @@ class GapHeatGeneration:
 
     #: A Float specifying the fraction of converted heat distributed to the secondary surface.
     #: The default value is 0.5.
+    #:
+    #: ..versionchanged:: 2022
+    #:     The attribute `slaveFraction` was renamed to `secondaryFraction`.
     secondaryFraction: float = 0
 
     @abaqus_method_doc
@@ -45,6 +48,9 @@ class GapHeatGeneration:
         secondaryFraction
             A Float specifying the fraction of converted heat distributed to the secondary surface.
             The default value is 0.5.
+
+            .. versionchanged:: 2022
+                The argument `slaveFraction` was renamed to `secondaryFraction`.
 
         Returns
         -------
