@@ -60,6 +60,9 @@ class ContactPropertyAssignment:
               surface.
             - A String specifying a ContactProperty object associated with this pair of
               regions.
+
+            .. versionchanged:: 2021
+                Update descriptions of the three entries in the tuple.
         """
         ...
 
@@ -82,5 +85,8 @@ class ContactPropertyAssignment:
               Eulerian material surface.
 
             *surfPair* and *indices* arguments are mutually exclusive.
+
+            .. versionchanged:: 2021
+                Update descriptions of the two entries in the tuple.
         """
         ...
