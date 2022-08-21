@@ -6,10 +6,7 @@ from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class RepositorySupport(CommandRegister):
-    """The RepositorySupport is a base from .._decorators import abaqus_class_doc, abaqus_method_doc
-
-@abaqus_class_doc
-class from which you can derive your own classes that
+    """The class from which you can derive your own classes that
     are designed to contain custom repositories. Instances of this class can be queried from
     the GUI and are capable of notifying the GUI when the contents of the instance change.
     The RepositorySupport object is derived from the CommandRegister object.
