@@ -19,6 +19,8 @@ class LeafFromConstraintNames(Leaf):
 
             import displayGroupOdbToolset
 
+    .. versionadded:: 2019
+        The `LeafFromConstraintNames` class was added.
     """
 
     #: A SymbolicConstant specifying the leaf type. Possible values are TIE,
