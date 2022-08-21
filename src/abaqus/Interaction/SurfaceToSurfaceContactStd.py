@@ -175,11 +175,17 @@ class SurfaceToSurfaceContactStd(Interaction):
 
     #: A SymbolicConstant specifying the bolt handedness formulation. Possible values are RIGHT
     #: and LEFT. The default value is RIGHT.
+    #:
+    #: .. versionadded:: 2019
+    #:     The `handedness` attribute was added.
     handedness: SymbolicConstant = RIGHT
 
     #: A SymbolicConstant specifying the bolt normal adjustment formulation for all slave
     #: nodes. Possible values are UNIFORM AXIAL COMPONENT and LOCATION DEPENDENT. The default
     #: value is UNIFORM AXIAL COMPONENT.
+    #:
+    #: .. versionadded:: 2019
+    #:     The `normalAdjustment` attribute was added.
     normalAdjustment: SymbolicConstant = NONE
 
     @abaqus_method_doc
@@ -339,10 +345,16 @@ class SurfaceToSurfaceContactStd(Interaction):
         handedness
             A SymbolicConstant specifying the bolt handedness formulation. Possible values are RIGHT
             and LEFT. The default value is RIGHT.
+
+            .. versionadded:: 2019
+                The `normalAdjustment` argument was added.
         normalAdjustment
             A SymbolicConstant specifying the bolt normal adjustment formulation for all slave
             nodes. Possible values are UNIFORM AXIAL COMPONENT and LOCATION DEPENDENT. The default
             value is UNIFORM AXIAL COMPONENT.
+
+            .. versionadded:: 2019
+                The `normalAdjustment` argument was added.
 
         Returns
         -------
@@ -488,10 +500,16 @@ class SurfaceToSurfaceContactStd(Interaction):
         handedness
             A SymbolicConstant specifying the bolt handedness formulation. Possible values are RIGHT
             and LEFT. The default value is RIGHT.
+
+            .. versionadded:: 2019
+                The `normalAdjustment` argument was added.
         normalAdjustment
             A SymbolicConstant specifying the bolt normal adjustment formulation for all slave
             nodes. Possible values are UNIFORM AXIAL COMPONENT and LOCATION DEPENDENT. The default
             value is UNIFORM AXIAL COMPONENT.
+
+            .. versionadded:: 2019
+                The `normalAdjustment` argument was added.
         """
         ...
 
