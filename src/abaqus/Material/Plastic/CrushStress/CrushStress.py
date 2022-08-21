@@ -28,6 +28,9 @@ class CrushStress:
         The corresponding analysis keywords are:
 
         - CRUSH STRESS
+
+    .. versionadded:: 2022
+        The `CrushStress` class was added.
     """
 
     #: A sequence of sequences of Floats specifying the items described below.

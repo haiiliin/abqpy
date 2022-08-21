@@ -54,6 +54,9 @@ class SelfContactStd(Interaction):
     #: A Float specifying the degree of smoothing used for deformable or rigid main surfaces
     #: involved when **enforcement** = NODE_TO_SURFACE. The value given must lie between 0.0 and
     #: 0.5. The default value is 0.2.
+    #:
+    #: ..versionchanged:: 2022
+    #:     Rigid master surfaces was changed to rigid main surfaces.
     smooth: float = 0
 
     #: A String specifying the name of the ContactControl object associated with this
@@ -103,6 +106,9 @@ class SelfContactStd(Interaction):
             A Float specifying the degree of smoothing used for deformable or rigid main surfaces
             involved when **enforcement** = NODE_TO_SURFACE. The value given must lie between 0.0 and
             0.5. The default value is 0.2.
+
+            ..versionchanged:: 2022
+                Rigid master surfaces was changed to rigid main surfaces.
         contactControls
             A String specifying the name of the ContactControl object associated with this
             interaction. An empty string indicates that the default contact controls will be used.

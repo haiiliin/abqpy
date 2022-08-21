@@ -476,6 +476,9 @@ class SessionBase:
         compression
             A Boolean specifying the format for an SVG file. It is valid to use this argument
             only when **format** is SVG. Possible values are False (Uncompressed) and True (Compressed).
+
+            .. versionchanged:: 2022
+                It is "only" valid to use this argument ...
         """
         ...
 

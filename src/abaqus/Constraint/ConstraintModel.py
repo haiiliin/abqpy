@@ -141,6 +141,9 @@ class ConstraintModel(ModelBase):
             A Float specifying the value of the thermal expansion coefficient. The default value is 0.0.
             The alpha argument applies only when couplingType=KINEMATIC.
 
+            .. versionadded:: 2022
+                The `alpha` argument was added.
+
         Returns
         -------
         Coupling
@@ -500,8 +503,14 @@ class ConstraintModel(ModelBase):
         ----------
         name
             A String specifying the constraint repository key.
+
+            .. versionchanged:: 2022
+                The `master` argument was renamed to `main`.
         main
             A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the main surface.
+
+            .. versionchanged:: 2022
+                The `slave` argument was renamed to `secondary`.
         secondary
             A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the secondary surface.
         adjust

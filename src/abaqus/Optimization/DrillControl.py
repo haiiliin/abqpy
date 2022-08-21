@@ -41,10 +41,16 @@ class DrillControl(GeometricRestriction):
 
     #: None or a Region object specifying the main point used when **mainPointDetermination** is
     #: SPECIFY. The default value is None.
+    #:
+    #: ..versionchanged:: 2022
+    #:    The attribute `masterPoint` was renamed to `mainPoint`.
     mainPoint: str = None
 
     #: A SymbolicConstant specifying the rule for assigning point priority. Possible values are
     #: MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
+    #:
+    #: ..versionchanged:: 2022
+    #:    The attribute `masterPointDetermination` was renamed to `mainPointDetermination`.
     mainPointDetermination: SymbolicConstant = MAXIMUM
 
     #: A Boolean specifying whether to ignore the geometric restriction in the first design
@@ -112,9 +118,15 @@ class DrillControl(GeometricRestriction):
         mainPoint
             None or a Region object specifying the main point used when **mainPointDetermination** is
             SPECIFY. The default value is None.
+
+            .. versionchanged:: 2022
+                The argument `masterPoint` was renamed to `mainPoint`.
         mainPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
+
+            .. versionchanged:: 2022
+                The argument `masterPointDetermination` was renamed to `mainPointDetermination`.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
@@ -163,9 +175,15 @@ class DrillControl(GeometricRestriction):
         mainPoint
             None or a Region object specifying the main point used when **mainPointDetermination** is
             SPECIFY. The default value is None.
+
+            .. versionchanged:: 2022
+                The argument `masterPoint` was renamed to `mainPoint`.
         mainPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
+
+            .. versionchanged:: 2022
+                The argument `masterPointDetermination` was renamed to `mainPointDetermination`.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.

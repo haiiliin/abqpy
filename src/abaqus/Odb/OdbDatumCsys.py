@@ -238,6 +238,9 @@ class OdbDatumCsys:
         """This method transforms specified coordinates in the global coordinate system into this
         local coordinate system.
 
+        .. versionadded:: 2022
+            The `globalToLocal` method was added.
+
         Parameters
         ----------
         coordinates
@@ -255,6 +258,9 @@ class OdbDatumCsys:
         self, coordinates: typing.Tuple[float, float, float]
     ) -> typing.Tuple[float, float, float]:
         """This method transforms specified coordinates in this local coordinate system into the global coordinate system.
+
+        .. versionadded:: 2022
+            The `localToGlobal` method was added.
 
         Parameters
         ----------

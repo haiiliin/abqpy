@@ -146,6 +146,9 @@ class JobMdb(MdbBase):
             value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
             available.
 
+            .. versionchanged:: 2022
+                The `licenseType` argument was added.
+
         Returns
         -------
         ModelJob

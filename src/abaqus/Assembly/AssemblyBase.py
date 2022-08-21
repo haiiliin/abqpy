@@ -482,6 +482,9 @@ class AssemblyBase(Feature):
             A DatumCsys object specifying the desired coordinate system of the returned coordinates.
             By default, coordinates are given in the global coordinate system.
 
+            .. versionadded:: 2022
+                The `csys` argument was added.
+
         Returns
         -------
         float

@@ -77,6 +77,9 @@ class ConnectorDamping(ConnectorBehaviorOption):
 
     #: A SymbolicConstant specifying if the damping type is viscous or structural. Possible values are
     #: VISCOUS and STRUCTURAL. The default value is VISCOUS.
+    #:
+    #: .. versionadded:: 2022
+    #:     The `type` attribute was added.
     type: SymbolicConstant = VISCOUS
 
     #: A SymbolicConstant specifying if the damping behavior is linear or nonlinear. Possible
@@ -148,6 +151,9 @@ class ConnectorDamping(ConnectorBehaviorOption):
         type
             A SymbolicConstant specifying if the damping type is viscous or structural. Possible values are
             VISCOUS and STRUCTURAL. The default value is VISCOUS.
+
+            .. versionadded:: 2022
+                The `type` argument was added.
         behavior
             A SymbolicConstant specifying if the damping behavior is linear or nonlinear. Possible
             values are LINEAR and NONLINEAR. The default value is LINEAR.

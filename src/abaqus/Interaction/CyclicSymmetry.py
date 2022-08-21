@@ -34,9 +34,15 @@ class CyclicSymmetry(Interaction):
     createStepName: str
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
+    #:
+    #: ..versionchanged:: 2022
+    #:     The attribute `master` was renamed to `main`.
     main: Region
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+    #:
+    #: ..versionchanged:: 2022
+    #:     The attribute `slave` was renamed to `secondary`.
     secondary: Region
 
     #: An Int specifying the total number of sectors in the cyclic symmetric model.
@@ -124,8 +130,14 @@ class CyclicSymmetry(Interaction):
             be created.
         main
             A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
+
+            .. versionchanged:: 2022
+                The argument `master` was renamed to `main`.
         secondary
             A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+
+            .. versionchanged:: 2022
+                The argument `slave` was renamed to `secondary`.
         repetitiveSectors
             An Int specifying the total number of sectors in the cyclic symmetric model.
         axisPoint1
