@@ -36,7 +36,7 @@ class Coexecution:
     #: A SymbolicConstant specifying the analysis product type of the main model for the
     #: co-execution. The default value is ABAQUS.
     #:
-    #: ..versionchanged:: 2022
+    #: .. versionchanged:: 2022
     #:     The `masterAnalysisProduct` attribute was changed 'mainAnalysisProduct'.
     mainAnalysisProduct: SymbolicConstant = ABAQUS
 
@@ -75,20 +75,20 @@ class Coexecution:
 
     #: A tuple of Strings specifying the names of the secondary models for the co-execution.
     #:
-    #: ..versionchanged:: 2022
+    #: .. versionchanged:: 2022
     #:     The `slaveModels` attribute was changed 'secondaryModels'.
     secondaryModels: tuple = ()
 
     #: A tuple of SymbolicConstants specifying the analysis product types of the secondary
     #: models for the co-execution. The default value is an empty sequence.
     #:
-    #: ..versionchanged:: 2022
+    #: .. versionchanged:: 2022
     #:     The `slaveAnalysisProducts` attribute was changed 'secondaryAnalysisProducts'.
     secondaryAnalysisProducts: SymbolicConstant = None
 
     #: A String specifying the name of the main model for the co-execution.
     #:
-    #: ..versionchanged:: 2022
+    #: .. versionchanged:: 2022
     #:     The `masterModel` attribute was changed 'mainModel'.
     mainModel: str = ""
 

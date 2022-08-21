@@ -82,7 +82,7 @@ class StdContactControl(ContactControl):
     #: considered to be open. The default value is 0.0.The **uerrmx** argument must be specified
     #: in conjunction with the **maxchp** argument.
     #:
-    #: ..versionchanged:: 2022
+    #: .. versionchanged:: 2022
     #:     Slave node was changed to secondary node.
     uerrmx: float = 0
 

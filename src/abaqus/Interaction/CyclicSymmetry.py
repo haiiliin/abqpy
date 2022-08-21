@@ -35,13 +35,13 @@ class CyclicSymmetry(Interaction):
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
     #:
-    #: ..versionchanged:: 2022
+    #: .. versionchanged:: 2022
     #:     The attribute `master` was renamed to `main`.
     main: Region
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
     #:
-    #: ..versionchanged:: 2022
+    #: .. versionchanged:: 2022
     #:     The attribute `slave` was renamed to `secondary`.
     secondary: Region
 

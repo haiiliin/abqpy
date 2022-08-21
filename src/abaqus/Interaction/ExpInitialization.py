@@ -62,7 +62,7 @@ class ExpInitialization(ContactInitialization):
     #: **overclosureType** = INTERFERENCE and if **openingTolerance** or **overclosureTolerance** is
     #: specified. The default value is None.
     #:
-    #: ..versionchanged:: 2022
+    #: .. versionchanged:: 2022
     #:     The attribute `slaveNodesetName` was renamed to `secondaryNodesetName`.
     secondaryNodesetName: str = None
 
