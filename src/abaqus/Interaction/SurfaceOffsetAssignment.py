@@ -1,5 +1,7 @@
 import typing
 
+from ..Material.Material import Material
+from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
 from .._decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -49,7 +51,8 @@ class SurfaceOffsetAssignment:
 
     @abaqus_method_doc
     def appendInStep(
-        self, stepName: str, assignments: typing.Union[SymbolicConstant, float]
+        self, stepName: str,
+        assignments: typing.Tuple[typing.Tuple[typing.Union[Region, Material, SymbolicConstant], float], ...],
     ):
         """This method allows addition of surface offset fraction assignments to new surfaces in a
         given step.
@@ -67,6 +70,9 @@ class SurfaceOffsetAssignment:
               which the offset fraction is assigned.
             - A Float or a SymbolicConstant specifying the surface offset fraction value to be used
               for the surface. Possible values of the SymbolicConstant are ORIGINAL, SPOS, and SNEG.
+
+            .. versionchanged:: 2021
+                The first entry in the tuple can be a material object now.
         """
         ...
 
