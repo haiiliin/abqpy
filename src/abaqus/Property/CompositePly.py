@@ -40,6 +40,9 @@ class CompositePly:
     #: thicknessType=SPECIFY_THICKNESS, the thickness argument is required.
     #: Possible values are SPECIFY_THICKNESS and FIELD_THICKNESS. The default
     #: value is SPECIFY_THICKNESS.
+    #:
+    #: ..versionchanged:: 2021
+    #:     Add possible value ANALYTICAL_FIELD_THICKNESS.
     thicknessType: SymbolicConstant
 
     #: A Float specifying the relative orientation of the section layer. The default value is
@@ -50,6 +53,9 @@ class CompositePly:
     #: define the thickness of the shell elements. The thicknessField argument applies only
     #: when thicknessType=ANALYTICAL_FIELD or thicknessType=DISCRETE_FIELD. The default
     #: value is an empty string.
+    #:
+    #: ..versionchanged:: 2021
+    #:     Update docs for ANALYTICAL_FIELD_THICKNESS
     thicknessField: str = ""
 
     #: An Int specifying the number of integration points to be used through the section layer.
@@ -131,21 +137,22 @@ class CompositePly:
             **thicknessType** = SPECIFY_THICKNESS, the **thickness** argument is required. Possible values
             are SPECIFY_THICKNESS, FIELD_THICKNESS, and ANALYTICAL_FIELD_THICKNESS. The default
             value is SPECIFY_THICKNESS.
+
+            .. versionchanged:: 2021
+                Add possible value ANALYTICAL_FIELD_THICKNESS.
         orientationValue
             A Float specifying the relative orientation of the section layer. The default value is
             0.0.
         thicknessField
-            A String specifying the name of the AnalyticalField or DiscreteField object used to
-            define the thickness of the shell elements. The thicknessField argument applies only
-            when thicknessType=ANALYTICAL_FIELD or thicknessType=DISCRETE_FIELD. The default
-            value is an empty string.
-
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements and composite ply. The **thicknessField**
             argument applies when **thicknessType** = ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD
             for shell elements and **thicknessType** = FIELD_THICKNESS or
             **thicknessType** = ANALYTICAL_FIELD_THICKNESS for composite ply. The default value is an
             empty string.
+
+            .. versionchanged:: 2021
+                Update docs for ANALYTICAL_FIELD_THICKNESS
         numIntPts
             An Int specifying the number of integration points to be used through the section layer.
             This argument is valid only if **preIntegrate** = OFF. The default value is 3.

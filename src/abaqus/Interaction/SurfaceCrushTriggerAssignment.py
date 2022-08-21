@@ -22,6 +22,8 @@ class SurfaceCrushTriggerAssignment:
 
         - SURFACE PROPERTY ASSIGNMENT
 
+    .. versionadded:: 2021
+        The `SurfaceCrushTriggerAssignment` class was added.
     """
 
     @abaqus_method_doc

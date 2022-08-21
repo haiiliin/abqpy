@@ -9,7 +9,10 @@ from .Elastic.Linear.Elastic import Elastic
 from .Elastic.LowDensityFoam.LowDensityFoam import LowDensityFoam
 from .Elastic.Porous.PorousElastic import PorousElastic
 from .Eos.Eos import Eos
+from .Gap.GapConductance import GapConductance
+from .Gap.GapConvection import GapConvection
 from .Gap.GapFlow import GapFlow
+from .Gap.GapRadiation import GapRadiation
 from .Gasket.GasketMembraneElastic import GasketMembraneElastic
 from .Gasket.GasketThicknessBehavior import GasketThicknessBehavior
 from .Gasket.GasketTransverseShearElastic import GasketTransverseShearElastic
@@ -3950,3 +3953,112 @@ class and a container of
         RangeError
         """
         return MeanFieldHomogenization()
+
+    @abaqus_method_doc
+    def GapConductance(
+        self,
+        pressureDependency: Boolean = OFF,
+        dependencies: int = 0,
+        table: tuple = (),
+    ) -> GapConductance:
+        """This method creates a GapConductance object.
+
+        .. note::
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].materials[name].GapConductance
+                session.odbs[name].materials[name].GapConductance
+
+        .. versionadded:: 2021
+            The `GapConductance` method was added.
+
+        Parameters
+        ----------
+        pressureDependency
+            A Boolean specifying whether the data depend on pressure. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+        table
+            A sequence of sequences of Floats specifying the items described below.
+
+        Returns
+        -------
+            A GapConductance object.
+        """
+        return GapConductance(pressureDependency, dependencies, table)
+
+    @abaqus_method_doc
+    def GapConvection(
+        self,
+        type: str,
+        table: tuple = (),
+        temperatureDependency: Boolean = OFF,
+        dependencies: int = 0,
+    ) -> GapConvection:
+        """This method creates a GapConvection object.
+
+        .. note::
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].materials[name].GapConvection
+                session.odbs[name].materials[name].GapConvection
+
+        .. versionadded:: 2021
+            The `GapConvection` method was added.
+
+        Parameters
+        ----------
+        type
+            An odb_String specifying the type of gap convection. Possible values are FLUX,
+            TEMPERATURE, and TABULAR. The default value is FLUX.
+        table
+            A sequence of sequences of Floats specifying the items described below.
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+
+        Returns
+        -------
+            A GapConvection object.
+        """
+        return GapConvection(type, table, temperatureDependency, dependencies)
+
+    @abaqus_method_doc
+    def GapRadiation(
+        self,
+        masterSurfaceEmissivity: float,
+        slaveSurfaceEmissivity: float,
+        table: tuple,
+    ) -> GapRadiation:
+        """This method creates a GapRadiation object.
+
+        .. note::
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].materials[name].Gapradiation
+                session.odbs[name].materials[name].Gapradiation
+
+        .. versionadded:: 2021
+            The `GapRadiation` method was added.
+
+        Parameters
+        ----------
+        masterSurfaceEmissivity
+            A Float specifying the Emissivity of master surface.ϵA
+        slaveSurfaceEmissivity
+            A Float specifying the Emissivity of the slave surfaceϵB.
+        table
+            A sequence of sequences of Floats specifying the items described below.
+
+        Returns
+        -------
+            A Gapradiation object.
+        """
+        return GapRadiation(masterSurfaceEmissivity, slaveSurfaceEmissivity, table)

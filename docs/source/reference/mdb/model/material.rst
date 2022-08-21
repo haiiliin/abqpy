@@ -219,13 +219,34 @@ evaluateMaterial
 Gap
 ~~~
 
+GapConductance
+**************
 
+.. autoclass:: abaqus.Material.Gap.GapConductance.GapConductance
+    :members:
 
+    .. autoclasstoc::
+
+GapConvection
+*************
+
+.. autoclass:: abaqus.Material.Gap.GapConvection.GapConvection
+    :members:
+
+    .. autoclasstoc::
 
 GapFlow
 *******
 
 .. autoclass:: abaqus.Material.Gap.GapFlow.GapFlow
+    :members:
+
+    .. autoclasstoc::
+
+GapRadiation
+************
+
+.. autoclass:: abaqus.Material.Gap.GapRadiation.GapRadiation
     :members:
 
     .. autoclasstoc::

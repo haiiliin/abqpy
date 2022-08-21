@@ -1591,6 +1591,9 @@ class BoundaryConditionModel(ModelBase):
             elements of the global model after accounting for the exterior search tolerance. The
             default value is OFF.
 
+            .. versionadded:: 2021
+                The `intersectionOnly` argument was added.
+
         Returns
         -------
         bc: SubmodelBC
