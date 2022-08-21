@@ -20,7 +20,10 @@ class TableCollection:
 
         The corresponding analysis keywords are:
 
-        - *TABLE COLLECTION
+        - TABLE COLLECTION
+
+    .. versionadded:: 2020
+        The `TableCollection` class was added.
     """
 
     #: A repository of the PropertyTable object.

@@ -313,6 +313,9 @@ class AcisMdb(MdbBase):
 
                 openSolidworks
 
+        .. versionadded:: 2020
+            The `openSolidworks` method was added.
+
         Parameters
         ----------
         fileName
