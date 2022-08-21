@@ -149,16 +149,11 @@ class ContactExp(Interaction):
         surfaceFrictionAssignments
             A :py:class:`~abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment` object specifying the surface friction assignments in the
             contact domain.
-<<<<<<< HEAD
-        mainSecondaryAssignments
-            A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
-=======
 
             .. versionadded:: 2021
                 The `surfaceFrictionAssignments` argument was added.
-        masterSlaveAssignments
-            A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
->>>>>>> 3a57193 (Add V2021 change notes)
+        mainSecondaryAssignments
+            A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
         polarityAssignments
             A PolarityAssignments object specifying the polarity assignments in the contact domain.

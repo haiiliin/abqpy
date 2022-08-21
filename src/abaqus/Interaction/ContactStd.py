@@ -177,16 +177,11 @@ class ContactStd(Interaction):
               sliding formulation attribute is assigned.
             - A SymbolicConstant specifying the overriding the smoothness value to be used for the
               first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
-<<<<<<< HEAD
-        mainSecondaryAssignments
-            A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
-=======
 
             .. versionadded:: 2021
                 The `slidingFormulationAssignments` argument was added.
-        masterSlaveAssignments
-            A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
->>>>>>> 3a57193 (Add V2021 change notes)
+        mainSecondaryAssignments
+            A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
         initializationAssignments
             An :py:class:`~abaqus.Interaction.InitializationAssignment.InitializationAssignment` object specifying the contact initialization assignments in
