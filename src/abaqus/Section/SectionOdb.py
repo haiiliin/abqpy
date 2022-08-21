@@ -972,6 +972,9 @@ class SectionOdb(OdbBase):
             A Float specifying the thickness of the section. Possible values are None or greater
             than zero. The default value is 1.0.
 
+            .. versionchanged:: 2018
+                The default value is now 1.0 instead of None.
+
         Returns
         -------
         HomogeneousSolidSection

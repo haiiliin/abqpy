@@ -1,5 +1,6 @@
 from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class MeanFieldMatrix:
     """The MeanFieldMatrix object specifies the matrix property.
@@ -18,6 +19,8 @@ class MeanFieldMatrix:
 
         - CONSTITUENT
 
+    .. versionadded:: 2018
+        The `MeanFieldMatrix` class was added.
     """
 
     @abaqus_method_doc

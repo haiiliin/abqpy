@@ -82,6 +82,9 @@ class TempDisplacementDynamicsStep(AnalysisStep):
     #: increment for three-dimensional continuum elements and elements with plane stress
     #: formulations (shell, membrane, and two-dimensional plane stress elements). The default
     #: value is ON.
+    #:
+    #: .. versionadded:: 2018
+    #:     The `improvedDtMethod` attribute was added.
     improvedDtMethod: Boolean = ON
 
     #: A String specifying the name of the previous step. The new step appears after this step
@@ -252,6 +255,9 @@ class TempDisplacementDynamicsStep(AnalysisStep):
             formulations (shell, membrane, and two-dimensional plane stress elements). The default
             value is ON.
 
+            .. versionadded:: 2018
+                The *improvedDtMethod* argument was added.
+
         Returns
         -------
         TempDisplacementDynamicsStep
@@ -316,6 +322,9 @@ class TempDisplacementDynamicsStep(AnalysisStep):
             increment for three-dimensional continuum elements and elements with plane stress
             formulations (shell, membrane, and two-dimensional plane stress elements). The default
             value is ON.
+
+            .. versionadded:: 2018
+                The *improvedDtMethod* argument was added.
 
         Raises
         ------
