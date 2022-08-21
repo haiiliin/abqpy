@@ -221,10 +221,10 @@ class JobFromInputFile(Job):
             database. Possible values are SINGLE and FULL. The default value is SINGLE.
         parallelizationMethodExplicit
             A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.
+            Possible values are LOOP and DOMAIN. The default value is DOMAIN.
 
             .. versionchanged:: 2017
                 The default value for parallelizationMethodExplicit is now `DOMAIN`
-            Possible values are LOOP and DOMAIN. The default value is DOMAIN.
         numDomains
             An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
             **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
