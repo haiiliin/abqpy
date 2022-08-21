@@ -546,6 +546,9 @@ class PredefinedFieldModel(
 
             mdb.models[name].Field
 
+        .. versionadded:: 2018
+            The `Field` method was added.
+
         Parameters
         ----------
         name
