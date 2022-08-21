@@ -14,6 +14,9 @@ class OdbMeshRegionData:
 
             import field
             mdb.models[name].analyticalFields[name].odbMeshRegionData
+
+    .. versionchanged:: 2017
+        The `transformationType` attribute was moved.
     """
 
     #: An Int specifying the step index. Possible values are 0 ≤≤ **stepIndex** ≤≤ (*numSteps* −
@@ -124,11 +127,6 @@ class OdbMeshRegionData:
     #: A String specifying the field output variable.
     variableLabel: str = ""
 
-    #: A SymbolicConstant specifying the type of the transformation to apply to the output.
-    #: Possible values are DEFAULT, NODAL, ANGULAR, and LAYUP_ORIENTATION.
-    #: The default is Default(Respect element orientations but supress nodal transformations)
-    transformationType: SymbolicConstant = DEFAULT
-
     #: A SymbolicConstant specifying the position where the output is displayed in the
     #: viewport. Possible values are:
     #:
@@ -180,6 +178,9 @@ class OdbMeshRegionData:
             .. code-block:: python
 
                 mdb.models[name].analyticalFields[name].OdbMeshRegionData
+
+        .. versionchanged:: 2017
+            The `transformationType` argument was moved.
 
         Parameters
         ----------
