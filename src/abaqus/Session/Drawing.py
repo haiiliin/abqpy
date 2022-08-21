@@ -410,6 +410,9 @@ class Drawing:
             default value is ON.When OFF, the object will not be hidden by other objects in front of
             it.
 
+            .. versionadded:: 2018
+                The `depthTest` argument was added.
+
         Raises
         ------
         RangeError
