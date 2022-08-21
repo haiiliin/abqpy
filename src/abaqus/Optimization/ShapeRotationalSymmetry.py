@@ -51,14 +51,14 @@ class ShapeRotationalSymmetry(GeometricRestriction):
     #: None or a Region object specifying the main point used when **mainPointDetermination** is
     #: SPECIFY. The default value is None.
     #:
-    #: ..versionchanged:: 2022
+    #: .. versionchanged:: 2022
     #:    The attribute `masterPoint` was renamed to `mainPoint`.
     mainPoint: str = None
 
     #: A SymbolicConstant specifying the rule for determining the main node. Possible values
     #: are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
     #:
-    #: ..versionchanged:: 2022
+    #: .. versionchanged:: 2022
     #:    The attribute `masterPointDetermination` was renamed to `mainPointDetermination`.
     mainPointDetermination: SymbolicConstant = MAXIMUM
 
