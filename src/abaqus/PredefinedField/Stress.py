@@ -21,6 +21,9 @@ class Stress(PredefinedField):
 
         - INITIAL CONDITIONS
 
+    .. versionadded:: 2017
+        The `Stress` class was added.
+
     """
 
     @abaqus_method_doc
