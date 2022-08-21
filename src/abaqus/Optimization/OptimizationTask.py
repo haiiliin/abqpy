@@ -481,9 +481,15 @@ class OptimizationTask(OptimizationTaskBase):
         mainPoint
             None or a Region object specifying the main point used when **mainPointDetermination** is
             SPECIFY. The default value is None.
+
+            .. versionchanged:: 2022
+                The argument `masterPoint` was renamed to `mainPoint`.
         mainPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
+
+            .. versionchanged:: 2022
+                The argument `masterPointDetermination` was renamed to `mainPointDetermination`.
         movementRestriction
             A SymbolicConstant specifying whether movement in the region should follow only the
             direction of the **mainPoint**, only the magnitude, or both the magnitude of the
@@ -570,9 +576,15 @@ class OptimizationTask(OptimizationTaskBase):
         mainPoint
             None or a Region object specifying the main point used when **mainPointDetermination** is
             SPECIFY. The default value is None.
+
+            .. versionchanged:: 2022
+                The argument `masterPoint` was renamed to `mainPoint`.
         mainPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
+
+            .. versionchanged:: 2022
+                The argument `masterPointDetermination` was renamed to `mainPointDetermination`.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
@@ -831,6 +843,9 @@ class OptimizationTask(OptimizationTaskBase):
         mainPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM and MINIMUM. The default value is MAXIMUM.
+
+            .. versionchanged:: 2022
+                The argument `masterPointDetermination` was renamed to `mainPointDetermination`.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
@@ -904,8 +919,14 @@ class OptimizationTask(OptimizationTaskBase):
             Possible values are MAXIMUM and MINIMUM. The default value is MINIMUM.
         assignNodeGroupRegion
             A bool specifying whether to use the node group region. The default value is OFF.
+
+            .. versionadded:: 2022
+                The `assignNodeGroupRegion` argument was added.
         nodeGroupRegion
             A Node Region object specifying the check node group.
+
+            .. versionadded:: 2022
+                The `nodeGroupRegion` argument was added.
 
         Returns
         -------
@@ -971,6 +992,9 @@ class OptimizationTask(OptimizationTaskBase):
         mainPointDetermination
             A SymbolicConstant specifying the rule for determining the main node. Possible values
             are MAXIMUM and MINIMUM. The default value is MAXIMUM.
+
+            .. versionchanged:: 2022
+                The argument `masterPointDetermination` was renamed to `mainPointDetermination`.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
@@ -1039,6 +1063,9 @@ class OptimizationTask(OptimizationTaskBase):
         mainPointDetermination
             A SymbolicConstant specifying the rule for determining the main node. Possible values
             are MAXIMUM and MINIMUM. The default value is MAXIMUM.
+
+            .. versionchanged:: 2022
+                The argument `masterPointDetermination` was renamed to `mainPointDetermination`.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
@@ -1123,9 +1150,15 @@ class OptimizationTask(OptimizationTaskBase):
         mainPoint
             None or a Region object specifying the main point used when **mainPointDetermination** is
             SPECIFY. The default value is None.
+
+            .. versionchanged:: 2022
+                The argument `masterPoint` was renamed to `mainPoint`.
         mainPointDetermination
             A SymbolicConstant specifying the rule for determining the main node. Possible values
             are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
+
+            .. versionchanged:: 2022
+                The argument `masterPointDetermination` was renamed to `mainPointDetermination`.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
@@ -1566,9 +1599,15 @@ class OptimizationTask(OptimizationTaskBase):
         mainPoint
             None or a Region object specifying the main point used when **mainPointDetermination** is
             SPECIFY. The default value is None.
+
+            .. versionchanged:: 2022
+                The argument `masterPoint` was renamed to `mainPoint`.
         mainPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
+
+            .. versionchanged:: 2022
+                The argument `masterPointDetermination` was renamed to `mainPointDetermination`.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
@@ -1790,6 +1829,9 @@ class OptimizationTask(OptimizationTaskBase):
             .. code-block:: python
 
                 mdb.models[name].optimizationTasks[name].TopologyMillingControl
+
+        .. versionadded:: 2022
+            The `TopologyMillingControl` method was added.
 
         Parameters
         ----------
@@ -2084,9 +2126,15 @@ class OptimizationTask(OptimizationTaskBase):
         mainPoint
             None or a Region object specifying the main point used when **mainPointDetermination** is
             SPECIFY. The default value is None.
+
+            .. versionchanged:: 2022
+                The argument `masterPoint` was renamed to `mainPoint`.
         mainPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
+
+            .. versionchanged:: 2022
+                The argument `masterPointDetermination` was renamed to `mainPointDetermination`.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.

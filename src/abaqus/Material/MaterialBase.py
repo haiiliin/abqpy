@@ -126,6 +126,9 @@ class and a container of
     crushableFoam: CrushableFoam = CrushableFoam(((),))
 
     #: A :py:class:`~abaqus.Material.Plastic.CrushStress.CrushStress.CrushStress` object
+    #:
+    #: .. versionadded:: 2022
+    #:     The `crushStress` attribute was added.
     crushStress: CrushStress = CrushStress(((),))
 
     #: A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.

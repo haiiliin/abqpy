@@ -157,6 +157,9 @@ class InteractionContactControlModel(ModelBase):
             A Float specifying the maximum overclosure distance allowed at a secondary node that is
             considered to be open. The default value is 0.0.The **uerrmx** argument must be specified
             in conjunction with the **maxchp** argument.
+
+            .. versionchanged:: 2022
+                Slave node was changed to secondary node.
         stabilizeChoice
             A SymbolicConstant specifying whether or not viscous damping will be specified, and if
             so, how it will be specified. Possible values are NONE, AUTOMATIC, and COEFFICIENT. The

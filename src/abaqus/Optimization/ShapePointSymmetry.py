@@ -33,6 +33,9 @@ class ShapePointSymmetry(GeometricRestriction):
 
     #: A SymbolicConstant specifying the rule for determining the main node. Possible values
     #: are MAXIMUM and MINIMUM. The default value is MAXIMUM.
+    #:
+    #: ..versionchanged:: 2022
+    #:    The attribute `masterPointDetermination` was renamed to `mainPointDetermination`.
     mainPointDetermination: SymbolicConstant = MAXIMUM
 
     #: A Boolean specifying whether to ignore the geometric restriction in the first design
@@ -87,6 +90,9 @@ class ShapePointSymmetry(GeometricRestriction):
         mainPointDetermination
             A SymbolicConstant specifying the rule for determining the main node. Possible values
             are MAXIMUM and MINIMUM. The default value is MAXIMUM.
+
+            .. versionchanged:: 2022
+                The argument `masterPointDetermination` was renamed to `mainPointDetermination`.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
@@ -128,6 +134,9 @@ class ShapePointSymmetry(GeometricRestriction):
         mainPointDetermination
             A SymbolicConstant specifying the rule for determining the main node. Possible values
             are MAXIMUM and MINIMUM. The default value is MAXIMUM.
+
+            .. versionchanged:: 2022
+                The argument `masterPointDetermination` was renamed to `mainPointDetermination`.
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.

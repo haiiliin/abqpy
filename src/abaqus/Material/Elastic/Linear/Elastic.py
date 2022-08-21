@@ -186,6 +186,9 @@ class Elastic:
             - BILAMINA
             
             The default value is ISOTROPIC.
+
+            .. versionchanged:: 2022
+                Add available value: BILAMINA.
         noCompression
             A Boolean specifying whether compressive stress is allowed. The default value is OFF.
         noTension

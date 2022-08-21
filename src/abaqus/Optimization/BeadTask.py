@@ -125,6 +125,9 @@ class BeadTask(OptimizationTask):
     #: A Boolean specifying whether the group in the design response will be evaluated using
     #: the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
     #: value of False means that the existing algorithm will be used.
+    #:
+    #: .. versionadded:: 2022
+    #:     The `groupSensitivities` attribute was added.
     groupOperator: Boolean = OFF
 
     @abaqus_method_doc
@@ -235,6 +238,9 @@ class BeadTask(OptimizationTask):
             the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
             value of False means that the existing algorithm will be used.
 
+            .. versionadded:: 2022
+                The `groupOperator` argument was added.
+
         Returns
         -------
         BeadTask
@@ -339,5 +345,8 @@ class BeadTask(OptimizationTask):
             A Boolean specifying whether the group in the design response will be evaluated using
             the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
             value of False means that the existing algorithm will be used.
+
+            .. versionadded:: 2022
+                The `groupOperator` argument was added.
         """
         ...
