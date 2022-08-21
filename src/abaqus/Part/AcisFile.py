@@ -299,22 +299,16 @@ class AcisFile:
     @abaqus_method_doc
     def writeAcisFile(self, fileName: str, version: float = None):
         """This method exports the assembly to a named file in ACIS format.
-<<<<<<< HEAD
-
-=======
->>>>>>> 81bd70b (Add V2018 change notes)
+        
         Parameters
         ----------
         fileName
             A String specifying the name of the file to which to write. The file name's extension is
             used to determine whether a part or assembly is written. Use the file extension .asat
             for the assembly format.
-<<<<<<< HEAD
-=======
 
             .. versionchanged:: 2018
                 Add description for thr file name's extension.
->>>>>>> 81bd70b (Add V2018 change notes)
         version
             A Float specifying the ACIS version. For example, the Float 12.0 corresponds to ACIS
             Version 12.0. The default value is the current version of ACIS.
