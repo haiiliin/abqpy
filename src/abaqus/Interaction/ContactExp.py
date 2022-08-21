@@ -143,9 +143,15 @@ class ContactExp(Interaction):
         surfaceCrushTriggerAssignments
             A :py:class:`~abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment` object specifying the surface crush trigger assignments
             in the contact domain.
+
+            .. versionadded:: 2021
+                The `surfaceCrushTriggerAssignments` argument was added.
         surfaceFrictionAssignments
             A :py:class:`~abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment` object specifying the surface friction assignments in the
             contact domain.
+
+            .. versionadded:: 2021
+                The `surfaceFrictionAssignments` argument was added.
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
@@ -203,9 +209,15 @@ class ContactExp(Interaction):
         surfaceCrushTriggerAssignments
             A :py:class:`~abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment` object specifying the surface crush trigger assignments
             in the contact domain.
+
+            .. versionadded:: 2021
+                The `surfaceCrushTriggerAssignments` argument was added.
         surfaceFrictionAssignments
             A :py:class:`~abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment` object specifying the surface friction assignments in the
             contact domain.
+
+            .. versionadded:: 2021
+                The `surfaceFrictionAssignments` argument was added.
         useAllstar
             A Boolean specifying whether the contacting surface pair consists of all exterior faces,
             shell edges, beam segments, analytical rigid surfaces, and, when applicable, Eulerian

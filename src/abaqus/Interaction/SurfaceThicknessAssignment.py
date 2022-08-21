@@ -1,5 +1,7 @@
 import typing
 
+from ..Material.Material import Material
+from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
 from .._decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -53,7 +55,9 @@ class SurfaceThicknessAssignment:
 
     @abaqus_method_doc
     def appendInStep(
-        self, stepName: str, assignments: typing.Union[SymbolicConstant, float]
+        self, stepName: str,
+        assignments: typing.Tuple[typing.Tuple[typing.Union[Region, Material, SymbolicConstant],
+                                               typing.Union[SymbolicConstant, float], float], ...],
     ):
         """This method allows addition of surface thickness assignments to new surfaces in a given
         step.
@@ -75,6 +79,9 @@ class SurfaceThicknessAssignment:
               analysis.
             - A Float specifying a scale factor that multiplies the thickness value specified in the
               second entry.
+
+            .. versionchanged:: 2021
+                The first entry in the tuple can be a material object now.
         """
         ...
 

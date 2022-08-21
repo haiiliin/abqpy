@@ -20,6 +20,8 @@ class SlidingFormulationAssignment:
 
         - CONTACT FORMULATION
 
+    .. versionadded:: 2021
+        The `SlidingFormulationAssignment` class was added.
     """
 
     @abaqus_method_doc
