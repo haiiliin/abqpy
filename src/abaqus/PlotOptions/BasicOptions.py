@@ -174,6 +174,9 @@ class BasicOptions(_CopyOptionsBase):
     #: complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
     #: COMPLEX_MAG_AT_ANGLE, COMPLEX_ENVELOPE_MAX_ABS, COMPLEX_ENVELOPE_MAX, and
     #: COMPLEX_ENVELOPE_MIN. The default value is REAL.
+    #:
+    #: .. versionchanged:: 2019
+    #:    Add possible values: COMPLEX_ENVELOPE_MAX_ABS, COMPLEX_ENVELOPE_MAX, and COMPLEX_ENVELOPE_MIN.
     numericForm: SymbolicConstant = REAL
 
     #: A Float specifying the angle (in degrees) at which to display results that contain
@@ -602,6 +605,9 @@ class BasicOptions(_CopyOptionsBase):
             complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
             COMPLEX_MAG_AT_ANGLE, COMPLEX_ENVELOPE_MAX_ABS, COMPLEX_ENVELOPE_MAX, and
             COMPLEX_ENVELOPE_MIN. The default value is REAL.
+
+            .. versionchanged:: 2019
+                Add possible values: COMPLEX_ENVELOPE_MAX_ABS, COMPLEX_ENVELOPE_MAX, and COMPLEX_ENVELOPE_MIN.
         complexAngle
             A Float specifying the angle (in degrees) at which to display results that contain
             complex numbers when **numericForm** = COMPLEX_MAG_AT_ANGLE. The default value is 0.0.
