@@ -1256,6 +1256,9 @@ class StepModel(ModelBase):
             are FIXED and AUTOMATIC. The default value is AUTOMATIC.
         maxNumInc
             An Int specifying the maximum number of increments in a step. The default value is 100.
+
+            .. versionadded:: 2017
+                The `maxNumInc` attribute was added to the GeostaticStep class.
         initialInc
             A Float specifying the initial time increment. The default value is the total time
             period for the step.Note:This parameter is ignored unless
