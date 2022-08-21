@@ -316,7 +316,7 @@ def abaqus_method_doc(method):
     """
     class_name = method.__qualname__.split('.')[0]
     method.__doc__ = doc.add_link_in_method_docstring(
-        class_name=class_name,
+        class_name=_process_class_name(class_name),
         method_name=method.__name__,
         docstring=method.__doc__,
         prefix='gpr' if class_name.lower().startswith('cae') else '',
@@ -329,7 +329,7 @@ def abaqus_class_doc(cls):
     """
     class_name = cls.__name__
     cls.__doc__ = doc.add_link_in_class_docstring(
-        class_name=class_name,
+        class_name=_process_class_name(class_name),
         docstring=cls.__doc__,
         prefix='gpr' if class_name.lower().startswith('cae') else '',
     )
