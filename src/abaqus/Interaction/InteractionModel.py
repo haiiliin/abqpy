@@ -866,6 +866,9 @@ class InteractionModel(
         polarityAssignments
             A PolarityAssignments object specifying the polarity assignments in the contact domain.
 
+            .. versionadded:: 2020
+                The `polarityAssignments` argument was added.
+
         Returns
         -------
         ContactExp

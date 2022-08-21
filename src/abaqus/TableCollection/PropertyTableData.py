@@ -20,6 +20,9 @@ class PropertyTableData:
 
         - PROPERTY TABLE TYPE
         - PROPERTY TABLE
+
+    .. versionadded:: 2020
+        The `PropertyTableData` class was added.
     """
 
     #: A String specifying a unique label name for the current PropertyTable object.
