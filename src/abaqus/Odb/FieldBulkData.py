@@ -7,10 +7,7 @@ from .._decorators import abaqus_class_doc
 
 @abaqus_class_doc
 class FieldBulkData:
-    """The FieldBulkData object represents the entire field data for a from .._decorators import abaqus_class_doc, abaqus_method_doc
-
-@abaqus_class_doc
-class of elements or
+    """The FieldBulkData object represents the entire field data for a class of elements or
     nodes. All elements in a class correspond to the same element type and material.
 
     .. note:: 
