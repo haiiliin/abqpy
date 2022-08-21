@@ -442,6 +442,9 @@ class LoadModel(ModelBase):
             the selected region belongs to a dependent part instance. A pre-tension section cannot
             be defined at the part level for independent and model instances.
 
+            .. versionadded:: 2018
+                The `preTenSecPartLevel` argument was added.
+
         Returns
         -------
         BoltLoad
