@@ -106,6 +106,9 @@ class ModelInstance:
     def replace(self, instanceOf: Model, applyConstraints: Boolean = True):
         """This method replaces one instance with an instance of another model.
 
+        .. versionadded:: 2019
+            The `replace` method was added.
+
         Parameters
         ----------
         instanceOf
