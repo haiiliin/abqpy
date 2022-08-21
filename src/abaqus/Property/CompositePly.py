@@ -41,7 +41,7 @@ class CompositePly:
     #: Possible values are SPECIFY_THICKNESS and FIELD_THICKNESS. The default
     #: value is SPECIFY_THICKNESS.
     #:
-    #: ..versionchanged:: 2021
+    #: .. versionchanged:: 2021
     #:     Add possible value ANALYTICAL_FIELD_THICKNESS.
     thicknessType: SymbolicConstant
 
@@ -54,7 +54,7 @@ class CompositePly:
     #: when thicknessType=ANALYTICAL_FIELD or thicknessType=DISCRETE_FIELD. The default
     #: value is an empty string.
     #:
-    #: ..versionchanged:: 2021
+    #: .. versionchanged:: 2021
     #:     Update docs for ANALYTICAL_FIELD_THICKNESS
     thicknessField: str = ""
 
