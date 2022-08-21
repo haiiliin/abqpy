@@ -312,6 +312,9 @@ class and a container of
     viscous: Viscous = Viscous(((),))
 
     #: A :py:class:`~abaqus.Material.MultiScale.MeanFieldHomogenization.MeanFieldHomogenization` object.
+    #:
+    #: .. versionadded:: 2018
+    #:     The `meanFieldHomogenization` attribute was added.
     meanFieldHomogenization: MeanFieldHomogenization = MeanFieldHomogenization()
 
     @abaqus_method_doc
