@@ -160,9 +160,15 @@ class ContactStd(Interaction):
         surfaceBeamSmoothingAssignments
             A :py:class:`~abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment` object specifying the surface beam smoothing
             assignments in the contact domain.
+
+            .. versionadded:: 2021
+                The `surfaceBeamSmoothingAssignments` argument was added.
         surfaceVertexCriteriaAssignments
             A :py:class:`~abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment` object specifying the surface vertex criteria
             assignments in the contact domain.
+
+            .. versionadded:: 2021
+                The `surfaceVertexCriteriaAssignments` argument was added.
         slidingFormulationAssignments
             A sequence of tuples of :py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment` specifying the sliding formulation assignments. Each tuple contains
             two entries:
@@ -171,6 +177,9 @@ class ContactStd(Interaction):
               sliding formulation attribute is assigned.
             - A SymbolicConstant specifying the overriding the smoothness value to be used for the
               first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
+
+            .. versionadded:: 2021
+                The `slidingFormulationAssignments` argument was added.
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
@@ -238,9 +247,15 @@ class ContactStd(Interaction):
         surfaceBeamSmoothingAssignments
             A :py:class:`~abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment` object specifying the surface beam smoothing
             assignments in the contact domain.
+
+            .. versionadded:: 2021
+                The `surfaceBeamSmoothingAssignments` argument was added.
         surfaceVertexCriteriaAssignments
             A :py:class:`~abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment` object specifying the surface vertex criteria
             assignments in the contact domain.
+
+            .. versionadded:: 2021
+                The `surfaceVertexCriteriaAssignments` argument was added.
         slidingFormulationAssignments
             A sequence of tuples of :py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment` specifying the sliding formulation assignments. Each tuple contains
             two entries:
@@ -249,6 +264,9 @@ class ContactStd(Interaction):
               sliding formulation attribute is assigned.
             - A SymbolicConstant specifying the overriding the smoothness value to be used for the
               first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
+
+            .. versionadded:: 2021
+                The `slidingFormulationAssignments` argument was added.
         useAllstar
             A Boolean specifying whether the contacting surface pairs consist of all exterior faces
             in the model.
