@@ -113,7 +113,7 @@ class ContourOptions(DGContourOptions):
     #: and the highest value at the bottom (**reversedContourLegendRange=ON**) or vice versa. The
     #: default value is OFF.
     #:
-    #: ..versionadded:: 2018
+    #: .. versionadded:: 2018
     #:     The `reversedContourLegendRange` attribute was added.
     reversedContourLegendRange: Boolean = OFF
 
