@@ -152,10 +152,16 @@ class ElemType:
 
     #: A Float specifying the linear kinematic conversion value.This argument is applicable
     #: only to some Abaqus/Explicit elements.
+    #:
+    #: .. versionadded:: 2022
+    #:     The `linearKinematicCtrl` attribute was added.
     linearKinematicCtrl: float = None
 
     #: A Float specifying the initial gap opening.This parameter is applicable only to some
     #: Abaqus/Standard elements.
+    #:
+    #: .. versionadded:: 2022
+    #:     The `initialGapOpening` attribute was added.
     initialGapOpening: float = None
 
     @abaqus_method_doc
@@ -315,13 +321,13 @@ class ElemType:
             only to some Abaqus/Explicit elements.
 
             .. versionadded:: 2022
-                The `nodeOffset` argument was added.
+                The `linearKinematicCtrl` argument was added.
         initialGapOpening
             A Float specifying the initial gap opening.This parameter is applicable only to some
             Abaqus/Standard elements.
 
             .. versionadded:: 2022
-                The `nodeOffset` argument was added.
+                The `initialGapOpening` argument was added.
 
         Returns
         -------
