@@ -150,6 +150,14 @@ class ElemType:
     #:     The `nodeOffset` attribute was added.
     nodeOffset: int = None
 
+    #: A Float specifying the linear kinematic conversion value.This argument is applicable
+    #: only to some Abaqus/Explicit elements.
+    linearKinematicCtrl: float = None
+
+    #: A Float specifying the initial gap opening.This parameter is applicable only to some
+    #: Abaqus/Standard elements.
+    initialGapOpening: float = None
+
     @abaqus_method_doc
     def __init__(
         self,
@@ -299,14 +307,20 @@ class ElemType:
             An Int specifying the positive offset number for specifying the additional nodes needed
             in the connectivity.This argument is applicable only for axisymmetric elements with
             nonlinear asymmetric deformation.
+
+            .. versionadded:: 2019
+                The `nodeOffset` argument was added.
         linearKinematicCtrl
             A Float specifying the linear kinematic conversion value.This argument is applicable
             only to some Abaqus/Explicit elements.
+
+            .. versionadded:: 2022
+                The `nodeOffset` argument was added.
         initialGapOpening
             A Float specifying the initial gap opening.This parameter is applicable only to some
             Abaqus/Standard elements.
 
-            .. versionadded:: 2019
+            .. versionadded:: 2022
                 The `nodeOffset` argument was added.
 
         Returns
