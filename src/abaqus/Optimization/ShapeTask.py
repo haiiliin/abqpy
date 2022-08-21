@@ -44,6 +44,9 @@ class ShapeTask(OptimizationTask):
 
     #: A Boolean specifying whether to use Abaqus to compute the design responses and their
     #: sensitivities. The default value is False.
+    #:
+    #: .. versionadded:: 2019
+    #:     The `abaqusSensitivities` attribute was added.
     abaqusSensitivities: Boolean = False
 
     #: A SymbolicConstant specifying whether to control the permitted absolute step size by the
@@ -290,6 +293,9 @@ class ShapeTask(OptimizationTask):
         abaqusSensitivities
             A Boolean specifying whether to use Abaqus to compute the design responses and their
             sensitivities. The default value is True.
+
+            .. versionadded:: 2019
+                The `abaqusSensitivities` argument was added.
         absoluteStepSizeControl
             A SymbolicConstant specifying whether to control the permitted absolute step size by the
             average optimization displacement or minimum optimization displacement. Possible values
@@ -491,6 +497,9 @@ class ShapeTask(OptimizationTask):
         abaqusSensitivities
             A Boolean specifying whether to use Abaqus to compute the design responses and their
             sensitivities. The default value is True.
+
+            .. versionadded:: 2019
+                The `abaqusSensitivities` argument was added.
         absoluteStepSizeControl
             A SymbolicConstant specifying whether to control the permitted absolute step size by the
             average optimization displacement or minimum optimization displacement. Possible values

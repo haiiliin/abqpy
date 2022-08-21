@@ -18,6 +18,8 @@ class TopologyOverhangControl(GeometricRestriction):
             import optimization
             mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
 
+    .. versionadded:: 2019
+        The `TopologyOverhangControl` class was added.
     """
 
     @abaqus_method_doc
