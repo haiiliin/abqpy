@@ -29,6 +29,9 @@ class TensileFailure:
         The corresponding analysis keywords are:
 
         - TENSILE FAILURE
+
+    .. versionadded:: 2020
+        The `TensileFailure` class was added.
     """
 
     @abaqus_method_doc

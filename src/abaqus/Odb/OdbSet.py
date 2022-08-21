@@ -52,9 +52,15 @@ class OdbSet:
     faces: SymbolicConstant = None
 
     #: A repository of an OdbInstance object.
+    #:
+    #: .. versionadded:: 2020
+    #:     The `instances` attribute was added.
     instances: str = ""
 
     #: A Boolean specifying whether the set is internal.
+    #:
+    #: .. versionadded:: 2020
+    #:     The `isInternal` attribute was added.
     isInternal: Boolean = OFF
 
     @abaqus_method_doc
