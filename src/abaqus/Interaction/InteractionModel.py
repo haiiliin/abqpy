@@ -139,12 +139,21 @@ class InteractionModel(
         createUnionOfMainSurfaces
             A Boolean specifying whether to create a surface that is the union of all main surfaces
             found. The default value is OFF.
+
+            .. versionchanged:: 2022
+                The argument `createUnionOfMasterSurfaces` was renamed to `createUnionOfMainSurfaces`.
         createUnionOfSecondarySurfaces
             A Boolean specifying whether to create a surface that is the union of all secondary
             surfaces found. The default value is OFF.
+
+            .. versionchanged:: 2022
+                The argument `createUnionOfSlaveSurfaces` was renamed to `createUnionOfSecondarySurfaces`.
         createUnionOfMainSecondarySurfaces
             A Boolean specifying whether to create a surface that is the union of all main and
             secondary surfaces found. The default value is OFF.
+
+            .. versionchanged:: 2022
+                The argument `createUnionOfMasterSlaveSurfaces` was renamed to `createUnionOfMainSecondarySurfaces`.
         includePlanar
             A Boolean specifying whether to include planar geometry. The default value is ON.
         includeCylindricalSphericalToric
@@ -869,6 +878,9 @@ class InteractionModel(
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
+
+            .. versionchanged:: 2022
+                The argument `masterSlaveAssignments` was renamed to `mainSecondaryAssignments`.
         polarityAssignments
             A PolarityAssignments object specifying the polarity assignments in the contact domain.
 
@@ -984,6 +996,9 @@ class InteractionModel(
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
+
+            .. versionchanged:: 2022
+                The argument `masterSlaveAssignments` was renamed to `mainSecondaryAssignments`.
         initializationAssignments
             An :py:class:`~abaqus.Interaction.InitializationAssignment.InitializationAssignment` object specifying the contact initialization assignments in
             the contact domain.
@@ -1060,8 +1075,14 @@ class InteractionModel(
             be created.
         main
             A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
+
+            .. versionchanged:: 2022
+                The argument `master` was renamed to `main`.
         secondary
             A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+
+            .. versionchanged:: 2022
+                The argument `slave` was renamed to `secondary`.
         repetitiveSectors
             An Int specifying the total number of sectors in the cyclic symmetric model.
         axisPoint1
@@ -1624,9 +1645,15 @@ class InteractionModel(
         mainPoints
             A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the main surface that are exposed to the
             fluid.
+
+            .. versionchanged:: 2022
+                The argument `masterPoints` was renamed to `mainPoints`.
         secondaryPoints
             A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the secondary surface that are exposed to
             the fluid.
+
+            .. versionchanged:: 2022
+                The argument `slavePoints` was renamed to `secondaryPoints`.
         penetrationPressure
             A tuple of Floats specifying the fluid pressure magnitude. For steady state dynamic
             analyses, a tuple of Complexes specifying the fluid pressure magnitude.
@@ -1829,6 +1856,9 @@ class InteractionModel(
             A Float specifying the degree of smoothing used for deformable or rigid main surfaces
             involved when **enforcement** = NODE_TO_SURFACE. The value given must lie between 0.0 and
             0.5. The default value is 0.2.
+
+            ..versionchanged:: 2022
+                Rigid master surfaces was changed to rigid main surfaces.
         contactControls
             A String specifying the name of the ContactControl object associated with this
             interaction. An empty string indicates that the default contact controls will be used.
@@ -1943,8 +1973,14 @@ class InteractionModel(
             is created.
         main
             A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
+
+            .. versionchanged:: 2022
+                The argument `master` was renamed to `main`.
         secondary
             A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+
+            .. versionchanged:: 2022
+                The argument `slave` was renamed to `secondary`.
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
             SMALL.

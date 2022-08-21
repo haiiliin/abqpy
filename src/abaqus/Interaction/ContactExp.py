@@ -71,6 +71,9 @@ class ContactExp(Interaction):
 
     #: A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
     #: contact domain.
+    #:
+    #: ..versionchanged:: 2022
+    #:     The attribute `masterSlaveAssignments` was renamed to `mainSecondaryAssignments`.
     mainSecondaryAssignments: MainSecondaryAssignment = MainSecondaryAssignment()
 
     #: A PolarityAssignments object specifying the polarity assignments in the contact domain.
@@ -155,6 +158,9 @@ class ContactExp(Interaction):
         mainSecondaryAssignments
             A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
+
+            .. versionchanged:: 2022
+                The argument `masterSlaveAssignments` was renamed to `mainSecondaryAssignments`.
         polarityAssignments
             A PolarityAssignments object specifying the polarity assignments in the contact domain.
 
@@ -278,6 +284,9 @@ class ContactExp(Interaction):
               definition.
             - A SymbolicConstant specifying the status of the first surface. Possible values are
               MAIN and SECONDARY.
+
+            .. versionchanged:: 2022
+                The argument `masterSlaveAssignments` was renamed to `mainSecondaryAssignments`.
         polarityAssignments
             A sequence of tuples specifying polarity assignments in the contact domain. Each tuple
             contains three entries:

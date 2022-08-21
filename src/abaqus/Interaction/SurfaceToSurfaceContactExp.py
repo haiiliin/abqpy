@@ -30,9 +30,15 @@ class SurfaceToSurfaceContactExp(Interaction):
     createStepName: str
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
+    #:
+    #: ..versionchanged:: 2022
+    #:     The attribute `master` was renamed to `main`.
     main: Region
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+    #:
+    #: ..versionchanged:: 2022
+    #:     The attribute `slave` was renamed to `secondary`.
     secondary: Region
 
     #: A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
@@ -131,8 +137,14 @@ class SurfaceToSurfaceContactExp(Interaction):
             is created.
         main
             A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
+
+            .. versionchanged:: 2022
+                The argument `master` was renamed to `main`.
         secondary
             A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+
+            .. versionchanged:: 2022
+                The argument `slave` was renamed to `secondary`.
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
             SMALL.
@@ -187,6 +199,9 @@ class SurfaceToSurfaceContactExp(Interaction):
     def swapSurfaces(self):
         """This method switches the main and secondary surfaces of a surface-to-surface contact
         pair. This command is valid only during the step in which the interaction is created.
+
+        .. versionchanged:: 2022
+            Master and slave were changed to main and secondary.
         """
         ...
 

@@ -69,6 +69,9 @@ class FieldReportOptions:
             A Boolean specifying whether to include the local coordinate system values in the
             tabular report. The default value is OFF.
 
+            .. versionadded:: 2022
+                The `printLocalCSYS` argument was added.
+
         Returns
         -------
         FieldReportOptions

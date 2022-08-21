@@ -555,6 +555,9 @@ class Material(MaterialBase):
                 mdb.models[name].materials[name].CrushStress
                 session.odbs[name].materials[name].CrushStress
 
+        .. versionadded:: 2022
+            The `CrushStress` method was added.
+
         Parameters
         ----------
         crushStressTable

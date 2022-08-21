@@ -36,6 +36,9 @@ class MeshEdgeArray(typing.List[MeshEdge]):
         elemEdges
             A list of MeshEdge objects.
 
+            .. versionchanged:: 2022
+                The argument `edges` was renamed to `elemEdges`.
+
         Returns
         -------
         MeshEdgeArray

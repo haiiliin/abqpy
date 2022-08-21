@@ -18,9 +18,15 @@ class Radiation:
     """
 
     #: A Float specifying the emissivity of the main surface.
+    #:
+    #: ..versionchanged:: 2022
+    #:     The attribute `masterEmissivity` was renamed to `mainEmissivity`.
     mainEmissivity: float
 
     #: A Float specifying the emissivity of the secondary surface.
+    #:
+    #: ..versionchanged:: 2022
+    #:     The attribute `slaveEmissivity` was renamed to `secondaryEmissivity`.
     secondaryEmissivity: float
 
     #: A sequence of sequences of Floats specifying the following:Effective viewfactor, FF.Gap
@@ -42,8 +48,14 @@ class Radiation:
         ----------
         mainEmissivity
             A Float specifying the emissivity of the main surface.
+
+            .. versionchanged:: 2022
+                The argument `masterEmissivity` was renamed to `mainEmissivity`.
         secondaryEmissivity
             A Float specifying the emissivity of the secondary surface.
+
+            .. versionchanged:: 2022
+                The argument `slaveEmissivity` was renamed to `secondaryEmissivity`.
         table
             A sequence of sequences of Floats specifying the following:Effective viewfactor, FF.Gap
             clearance, dd.

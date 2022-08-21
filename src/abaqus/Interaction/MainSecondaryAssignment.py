@@ -19,6 +19,9 @@ class MainSecondaryAssignment:
         The corresponding analysis keywords are:
 
         - CONTACT FORMULATION
+
+    .. versionchanged:: 2022
+        The MasterSlaveAssignment class was renamed to MainSecondaryAssignment.
     """
 
     @abaqus_method_doc
