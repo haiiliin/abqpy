@@ -89,7 +89,7 @@ class ExplicitDynamicsStep(AnalysisStep):
     #: formulations (shell, membrane, and two-dimensional plane stress elements). The default
     #: value is ON.
     #:
-    #: ..versionadded:: 2018
+    #: .. versionadded:: 2018
     #:     The `improvedDtMethod` attribute was added.
     improvedDtMethod: Boolean = ON
 
