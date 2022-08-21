@@ -43,6 +43,9 @@ class ShapeRotationalSymmetry(GeometricRestriction):
 
     #: A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
     #: restriction. The default value is TRUE.
+    #:
+    #: .. versionadded:: 2021
+    #:     The `allowNonSymmetricMesh` attribute was added.
     allowNonSymmetricMesh: Boolean = TRUE
 
     #: None or a Region object specifying the master point used when **masterPointDetermination** is
@@ -114,6 +117,9 @@ class ShapeRotationalSymmetry(GeometricRestriction):
         allowNonSymmetricMesh
             A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
             restriction. The default value is TRUE.
+
+            .. versionadded:: 2021
+                The `alloowNonSymmetricMesh` argument was added.
         angle
             A Float specifying the segment size of the repeating pattern in degrees. If the **angle**
             value is 0, no repeating pattern is created. The default value is 0.0.

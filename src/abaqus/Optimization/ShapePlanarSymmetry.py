@@ -38,6 +38,9 @@ class ShapePlanarSymmetry(GeometricRestriction):
 
     #: A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
     #: restriction. The default value is TRUE.
+    #:
+    #: .. versionadded:: 2021
+    #:     The `allowNonSymmetricMesh` attribute was added.
     allowNonSymmetricMesh: Boolean = TRUE
 
     #: A SymbolicConstant specifying the rule for determining the master node. Possible values
@@ -98,6 +101,9 @@ class ShapePlanarSymmetry(GeometricRestriction):
         allowNonSymmetricMesh
             A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
             restriction. The default value is TRUE.
+
+            .. versionadded:: 2021
+                The `alloowNonSymmetricMesh` argument was added.
         csys
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The

@@ -952,6 +952,9 @@ class OptimizationTask(OptimizationTaskBase):
         allowNonSymmetricMesh
             A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
             restriction. The default value is TRUE.
+
+            .. versionadded:: 2021
+                The `alloowNonSymmetricMesh` argument was added.
         csys
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
@@ -1098,6 +1101,9 @@ class OptimizationTask(OptimizationTaskBase):
         allowNonSymmetricMesh
             A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
             restriction. The default value is TRUE.
+
+            .. versionadded:: 2021
+                The `alloowNonSymmetricMesh` argument was added.
         angle
             A Float specifying the segment size of the repeating pattern in degrees. If the **angle**
             value is 0, no repeating pattern is created. The default value is 0.0.
