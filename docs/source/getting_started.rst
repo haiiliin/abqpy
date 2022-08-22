@@ -81,7 +81,7 @@ The secret is hided in the :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method:
         abaqus = 'abaqus'
         if 'ABAQUS_BAT_PATH' in os.environ.keys():
             abaqus = os.environ['ABAQUS_BAT_PATH']
-        os.system('{} cae -noGUI {}'.format(abaqus, os.path.abspath(sys.argv[0])))
+        os.system(f'{abaqus} cae -noGUI {os.path.abspath(sys.argv[0])}')
 
 In this package, the :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method is reimplemented, if you call this method in your
 script (i.e., `mdb.saveAs('model.cae')`), the Python interpreter (not Abaqus Python interpreter) will use the
@@ -97,7 +97,7 @@ method :py:meth:`~abaqus.Session.Session.Session.openOdb` is also reimplemented:
         abaqus = 'abaqus'
         if 'ABAQUS_BAT_PATH' in os.environ.keys():
             abaqus = os.environ['ABAQUS_BAT_PATH']
-        os.system('{} cae database={} script={}'.format(abaqus, os.path.abspath(name), os.path.abspath(sys.argv[0])))
+        os.system(f'{abaqus} cae database={os.path.abspath(name)} script={os.path.abspath(sys.argv[0])})
 
 Therefore, if you want to run your Python script in Abaqus Python environment, please make sure to use these methods.
 
@@ -149,15 +149,6 @@ A better way is to use * to match specific version:
 .. code-block:: sh
 
     pip install abqpy==2017.*.*
-
-Dependencies
-------------
-
-Required dependencies:
-    * ipynbname, used to get the file name of the jupyter notebook
-
-Once you have installed `abqpy` and `PyQt5`, you can start to build your Abaqus model right 
-now.
 
 
 Abaqus command
