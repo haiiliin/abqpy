@@ -26,6 +26,7 @@ Other links for this project
 ----------------------------
 
 * GitHub repository: `github.com/haiiliin/abqpy <https://github.com/haiiliin/abqpy>`_
+* GitHub repository for translations: `github.com/haiiliin/abqpy-translations <https://github.com/haiiliin/abqpy-translations>`_
 * PyPI: `pypi.org/project/abqpy <https://pypi.org/project/abqpy/>`_
 * Anaconda: `anaconda.org/haiiliin/abqpy <https://anaconda.org/haiiliin/abqpy>`_
 * Read the Docs: `readthedocs.org/projects/abqpy <https://readthedocs.org/projects/abqpy>`_
