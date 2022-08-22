@@ -9,7 +9,7 @@ Create jobs
 -----------
 
 .. automethod:: abaqus.Job.JobMdb.JobMdb.Job
-    
+
 
 Create queues in Session
 ------------------------
