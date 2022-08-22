@@ -33,7 +33,7 @@ author = 'WANG Hailin'
 release = metadata.version('abqpy')[:4]
 
 # For multiple languages
-locale_dirs = ['../../../locale/']   # path is example but recommended.
+locale_dirs = ['../../../locales/']   # path is example but recommended.
 gettext_compact = False     # optional.
 
 # -- General configuration ---------------------------------------------------
