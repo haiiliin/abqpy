@@ -32,6 +32,10 @@ author = 'WANG Hailin'
 # The full version, including alpha/beta/rc tags
 release = metadata.version('abqpy')[:4]
 
+# For multiple languages
+locale_dirs = ['locale/']   # path is example but recommended.
+gettext_compact = False     # optional.
+
 # -- General configuration ---------------------------------------------------
 
 # Add source code
