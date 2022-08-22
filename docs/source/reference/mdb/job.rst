@@ -8,8 +8,8 @@ The Job object is the abstract base type for other Job objects. The Job object h
 Create jobs
 -----------
 
-.. automethod:: abaqus.Job.JobMdb.JobMdb.Job
-    :members:
+.. automethod:: abaqus.Job.JobMdb.JobMdb.job
+    
 
 Create queues in Session
 ------------------------
