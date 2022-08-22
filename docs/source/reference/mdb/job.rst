@@ -9,11 +9,6 @@ Create jobs
 -----------
 
 .. automethod:: abaqus.Job.JobMdb.JobMdb.Job
-<<<<<<< HEAD
-    :members:
-=======
-    
->>>>>>> 479ef39 (Fix Job method name error in docs)
 
 Create queues in Session
 ------------------------
