@@ -1,0 +1,265 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../reference/mdb/model/part_assembly/datum.rst:3
+#: ../../reference/mdb/model/part_assembly/datum.rst:14
+msgid "Datum"
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/datum.rst:5
+msgid "Datum commands return Feature objects and inherit the methods of Feature objects. For more details, see Feature commands. Datums can be created using methods on a Part or Assembly object."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/datum.rst:7
+msgid "Each command also creates a Datum object in the corresponding datum repository. The Datum object is used as an argument to other commands, such as Part and Partition commands."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/datum.rst:11
+msgid "Object features"
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/Datum.py:docstring of abaqus.Datum.Datum.Datum:2
+msgid "The Datum object is the abstract base type for other Datum objects. The Datum object has no explicit constructor. The methods and members of the Datum object are common to all objects derived from the Datum."
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/Datum.py:docstring of abaqus.Datum.Datum.Datum:7
+#: ../../../../src/abaqus/Datum/DatumAxis.py:docstring of abaqus.Datum.DatumAxis.DatumAxis:8
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys:8
+#: ../../../../src/abaqus/Datum/DatumPlane.py:docstring of abaqus.Datum.DatumPlane.DatumPlane:8
+#: ../../../../src/abaqus/Datum/DatumPoint.py:docstring of abaqus.Datum.DatumPoint.DatumPoint:8
+msgid "This object can be accessed by:"
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/Datum.py:docstring of abaqus.Datum.Datum.Datum:20
+msgid "Check `Datum on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/datum.rst:22
+msgid "DatumAxis"
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumAxis.py:docstring of abaqus.Datum.DatumAxis.DatumAxis:2
+msgid "The DatumAxis object has no direct constructor; it is created when a Feature object is created. For example, the DatumAxisByCylFace method creates a Feature object that creates a DatumAxis object. The DatumAxis object is derived from the Datum object."
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumAxis.py:docstring of abaqus.Datum.DatumAxis.DatumAxis:20
+msgid "Check `DatumAxis on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxispyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumAxis.py:docstring of abaqus.Datum.DatumAxis.DatumAxis:0
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys:0
+#: ../../../../src/abaqus/Datum/DatumPlane.py:docstring of abaqus.Datum.DatumPlane.DatumPlane:0
+#: ../../../../src/abaqus/Datum/DatumPoint.py:docstring of abaqus.Datum.DatumPoint.DatumPoint:0
+msgid "Public Data Attributes:"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`pointOn <abaqus.Datum.DatumAxis.DatumAxis.pointOn>`\\"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+#: ../../docstring of abaqus.Datum.DatumAxis.DatumAxis.pointOn:2
+#: ../../docstring of abaqus.Datum.DatumPlane.DatumPlane.pointOn:2
+#: ../../docstring of abaqus.Datum.DatumPoint.DatumPoint.pointOn:2
+msgid "A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on the datum."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`direction <abaqus.Datum.DatumAxis.DatumAxis.direction>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: ../../docstring of abaqus.Datum.DatumAxis.DatumAxis.direction:2
+msgid "A tuple of Floats specifying a sequence of three Floats specifying the direction of the axis."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/datum.rst:30
+msgid "DatumCsys"
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys:2
+msgid "The DatumCsys object has no direct constructor; it is created when a Feature object is created. For example, the DatumCsysByOffset method creates a Feature object that creates a DatumCsys object. The DatumCsys object is derived from the Datum object."
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys:25
+msgid "Check `DatumCsys on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsyspyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`coordSysType <abaqus.Datum.DatumCsys.DatumCsys.coordSysType>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "A SymbolicConstant specifying the type of the coordinate system."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`origin <abaqus.Datum.DatumCsys.DatumCsys.origin>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+#: ../../docstring of abaqus.Datum.DatumCsys.DatumCsys.origin:2
+msgid "A :py:class:`~abaqus.Datum.DatumPoint.DatumPoint` object specifying the origin of the coordinate system."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`axis1 <abaqus.Datum.DatumCsys.DatumCsys.axis1>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+#: ../../docstring of abaqus.Datum.DatumCsys.DatumCsys.axis1:2
+msgid "A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the 1-direction of the coordinate system."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`axis2 <abaqus.Datum.DatumCsys.DatumCsys.axis2>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+#: ../../docstring of abaqus.Datum.DatumCsys.DatumCsys.axis2:2
+msgid "A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the 2-direction of the coordinate system."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`axis3 <abaqus.Datum.DatumCsys.DatumCsys.axis3>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+#: ../../docstring of abaqus.Datum.DatumCsys.DatumCsys.axis3:2
+msgid "A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the 3-direction of the coordinate system."
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys:0
+msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`globalToLocal <abaqus.Datum.DatumCsys.DatumCsys.globalToLocal>`\\ \\(coordinates\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.globalToLocal:2
+#: ../../None:4:<autosummary>:1
+msgid "This method transforms specified coordinates in the global coordinate system into this local coordinate system."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`localToGlobal <abaqus.Datum.DatumCsys.DatumCsys.localToGlobal>`\\ \\(coordinates\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.localToGlobal:2
+#: ../../None:4:<autosummary>:1
+msgid "This method transforms specified coordinates in this local coordinate system into the global coordinate system."
+msgstr ""
+
+#: ../../docstring of abaqus.Datum.DatumCsys.DatumCsys.coordSysType:2
+msgid "A SymbolicConstant specifying the type of the coordinate system. Possible values are CARTESIAN, CYLINDRICAL, and SPHERICAL."
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.globalToLocal:5
+msgid "The `globalToLocal` method was added."
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.globalToLocal:9
+msgid "Check `DatumCsys.globalToLocal() on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsyspyc.htm?contextscope=all#simaker-datumcsysglobaltolocalpyc>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.globalToLocal:0
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.localToGlobal:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.globalToLocal:14
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.localToGlobal:13
+msgid "**coordinates**"
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.globalToLocal:14
+msgid "A tuple of three Floats representing the coordinates in the global coordinate system."
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.globalToLocal:0
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.localToGlobal:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.globalToLocal:31
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.localToGlobal:30
+msgid ":obj:`typing.Tuple`\\[:class:`python:float`, :class:`python:float`, :class:`python:float`]"
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.globalToLocal:19
+msgid "A tuple of three Floats representing the coordinates in this local coordinate system."
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.localToGlobal:4
+msgid "The `localToGlobal` method was added."
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.localToGlobal:8
+msgid "Check `DatumCsys.localToGlobal() on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsyspyc.htm?contextscope=all#simaker-datumcsyslocaltoglobalpyc>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.localToGlobal:13
+msgid "A tuple of three Floats representing the coordinates in the local coordinate system."
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys.localToGlobal:18
+msgid "A tuple of three Floats representing the coordinates in this global coordinate system."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/datum.rst:38
+msgid "DatumPlane"
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumPlane.py:docstring of abaqus.Datum.DatumPlane.DatumPlane:2
+msgid "The DatumPlane object has no direct constructor; it is created when a Feature object is created. For example, the DatumPlaneByPrincipalPlane method creates a Feature object that creates a DatumPlane object. The DatumPlane object is derived from the Datum object."
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumPlane.py:docstring of abaqus.Datum.DatumPlane.DatumPlane:20
+msgid "Check `DatumPlane on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`pointOn <abaqus.Datum.DatumPlane.DatumPlane.pointOn>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`normal <abaqus.Datum.DatumPlane.DatumPlane.normal>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: ../../docstring of abaqus.Datum.DatumPlane.DatumPlane.normal:2
+msgid "A tuple of Floats specifying a sequence of three Floats specifying the normal."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/datum.rst:46
+msgid "DatumPoint"
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumPoint.py:docstring of abaqus.Datum.DatumPoint.DatumPoint:2
+msgid "The DatumPoint object has no direct constructor; it is created when a Feature object is created. For example, the DatumPointByCoordinate method creates a Feature object that creates a DatumPoint object. The DatumPoint object is derived from the Datum object."
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumPoint.py:docstring of abaqus.Datum.DatumPoint.DatumPoint:20
+msgid "Check `DatumPoint on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`pointOn <abaqus.Datum.DatumPoint.DatumPoint.pointOn>`\\"
+msgstr ""
