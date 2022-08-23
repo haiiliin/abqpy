@@ -7,6 +7,7 @@
 [![Pages-zh-cn](https://github.com/haiiliin/abqpy/actions/workflows/pages-zh-cn.yaml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pages-zh-cn.yaml)
 [![Upload Python Package to PyPI](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-pypi.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-pypi.yml)
 [![Build and Upload Conda Package](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-conda.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-conda.yml)
+[![Crowdin](https://badges.crowdin.net/abqpy/localized.svg)](https://crowdin.com/project/abqpy)
 
 [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://github.com/haiiliin/abqpy/blob/main/LICENSE)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/abqpy.svg)](https://www.python.org/)
