@@ -1,0 +1,2915 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:3
+msgid "Engineering Feature"
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:5
+msgid "A specific type of engineering feature object is designed for each type of engineering feature."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:9
+msgid "Create engineering features"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:2
+msgid "This method creates an AssembledFastener object. Although the constructor is available both for parts and for the assembly, AssembledFastener objects are currently supported only under the assembly."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:7
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:7
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:7
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:7
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:5
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:5
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:7
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:5
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:5
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:5
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:7
+msgid "This function can be accessed by:"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/AssembledFastener.py:docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener:16
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:15
+msgid "Check `AssembledFastener on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assembledfastenerpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/AssembledFastener.py:docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues:0
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:0
+#: ../../../../src/abaqus/EngineeringFeature/DebondVCCT.py:docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues:0
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeatureBase.py:docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeatureBase.py:docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam:0
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues:0
+#: ../../../../src/abaqus/EngineeringFeature/NonstructuralMass.py:docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues:0
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:0
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:0
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:0
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:0
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:20
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:20
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:20
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:20
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:18
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:18
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:20
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:18
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:18
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:18
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:20
+msgid "**name**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:20
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:20
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:20
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:20
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:18
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:18
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:20
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:18
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:18
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:18
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:20
+#: ../../None:4:<autosummary>:1
+#: ../../docstring of abaqus.EngineeringFeature.Crack.Crack.name:2
+#: ../../docstring of abaqus.EngineeringFeature.Fastener.Fastener.name:2
+#: ../../docstring of abaqus.EngineeringFeature.Inertia.Inertia.name:2
+#: ../../docstring of abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.name:2
+msgid "A String specifying the repository key."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:24
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:23
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:21
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:21
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:23
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:21
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:21
+msgid "**region**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:23
+#: ../../docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.region:2
+msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region of attachment points to which assembled fasteners are applied."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:27
+msgid "**templateModel**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:27
+#: ../../docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.templateModel:2
+msgid "A String specifying the name of the template model."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:31
+msgid "**controlSet**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:30
+#: ../../docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.controlSet:2
+msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the template model control point set. The set must contain a single node or vertex."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:35
+msgid "**templateSurfaces**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:34
+#: ../../docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.templateSurfaces:2
+msgid "A sequence of Strings specifying the names of the template model surfaces that are referenced by tie or coupling constraints."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:39
+msgid "**assignedSurfaces**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:38
+#: ../../docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.assignedSurfaces:2
+msgid "A sequence of Strings specifying the names of the master model surfaces that will be substituted for the template model constraint surfaces."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:44
+msgid "**propertyPrefix**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:42
+#: ../../docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.propertyPrefix:2
+msgid "A String specifying the name of the property prefix string. This string will be prepended to every property name as it is copied to the master model from the template model."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/AssembledFastener.py:docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues:12
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:49
+msgid "**orientMethod**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/AssembledFastener.py:docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues:10
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:47
+#: ../../docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.orientMethod:2
+msgid "A SymbolicConstant specifying the method used to orient the virtual instances of the template model at each attachment point. Possible values are NORMALS and CSYS. The default value is NORMALS."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/AssembledFastener.py:docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues:17
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:51
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:54
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:57
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:95
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:64
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:76
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:50
+msgid "**localCsys**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/AssembledFastener.py:docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues:15
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:52
+#: ../../docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.localCsys:2
+msgid "None or a DatumCsys object specifying the local coordinate system. If **localCsys** = None, the global coordinate system is used. When this member is queried, it returns an Int. The default value is None.This argument applies only when **orientMethod** = CSYS."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/AssembledFastener.py:docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues:34
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:58
+msgid "**scriptName**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/AssembledFastener.py:docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues:20
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:57
+#: ../../docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.scriptName:2
+msgid "A String specifying the name of the property generation script. The default value is an empty string."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:75
+msgid ":obj:`AssembledFastener`"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:63
+msgid "An :py:class:`~abaqus.EngineeringFeature.AssembledFastener.AssembledFastener` object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:2
+msgid "This method creates a ContourIntegral object. Although the constructor is available both for parts and for the assembly, ContourIntegral objects are currently supported only under the assembly."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral:21
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:15
+msgid "Check `ContourIntegral on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contourintegralpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:25
+msgid "**crackFront**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:23
+#: ../../docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackFront:2
+msgid "A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the crack-front region to which the contour integral is applied. If the crack-front consists of a single region, a Region object may be specified instead of a sequence with a single item in it."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:30
+msgid "**crackTip**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:28
+#: ../../docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackTip:2
+msgid "A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the crack-tip region to which the contour integral is applied. If the crack-tip consists of a single region, a Region object may be specified instead of a sequence with a single item in it."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:34
+msgid "**extensionDirectionMethod**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:33
+#: ../../docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.extensionDirectionMethod:2
+msgid "A SymbolicConstant specifying how the virtual crack extension direction vectors are defined. Possible values are CRACK_NORMAL and Q_VECTORS."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:11
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:38
+msgid "**symmetric**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:10
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:37
+#: ../../docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.symmetric:2
+msgid "A Boolean specifying whether the crack is defined on a half model (about a symmetry plane) or whether it is defined on the whole model. The default value is OFF."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:15
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:42
+msgid "**listOfRegions**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:14
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:41
+#: ../../docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.listOfRegions:2
+msgid "A Boolean specifying whether the regions specified by **crackFront** and **crackTip** are specified using a single region or tuples of region objects. The default value is OFF."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:20
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:47
+msgid "**crackFrontName**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:18
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:45
+#: ../../None:11:<autosummary>:1
+#: ../../docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackFrontName:2
+msgid "A String specifying the name of the crack-front region generated from the tuple of regions specifying the crack-front region. This argument is valid only when **listOfRegions** is ON. The default value is **name**+Front."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:25
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:52
+msgid "**crackTipName**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:23
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:50
+#: ../../None:11:<autosummary>:1
+#: ../../docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackTipName:2
+msgid "A String specifying the name of the crack-tip region generated from the tuple of regions specifying the crack-tip region. This parameter is valid only when **listOfRegions** = ON. The default value is **name**+Tip."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:31
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:58
+msgid "**crackNormal**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:28
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:55
+#: ../../docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackNormal:2
+msgid "A sequence of sequences of Floats specifying the two points of the vector that describes the crack normal direction. Each point is defined by a tuple of two or three coordinates indicating its position. This argument is required only when **extensionDirectionMethod** = CRACK_NORMAL. The default value is an empty sequence."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:38
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:65
+msgid "**qVectors**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:34
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:61
+#: ../../docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.qVectors:2
+msgid "A sequence of sequences of sequences of Floats specifying the vectors that indicate the set of crack extension directions. Each vector is described by a tuple of two points, and each point is described by a tuple of two or three coordinates indicating its position. This argument is required only when **extensionDirectionMethod** = Q_VECTORS. The default value is an empty sequence."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:43
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:70
+msgid "**midNodePosition**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:41
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:68
+#: ../../docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.midNodePosition:2
+msgid "A Float specifying the position of the midside node along the edges of the second-order elements that radiate from the crack tip. Possible values are 0.0 << **midNodeParameter** << 1.0. The default value is 0.5."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:60
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:74
+msgid "**collapsedElementAtTip**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:46
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:73
+#: ../../docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.collapsedElementAtTip:2
+msgid "A SymbolicConstant specifying the crack-tip singularity. Possible values are NONE, SINGLE_NODE, and DUPLICATE_NODES. The default value is NONE."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:91
+msgid ":obj:`ContourIntegral`"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:79
+msgid "A :py:class:`~abaqus.EngineeringFeature.ContourIntegral.ContourIntegral` object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:2
+msgid "This method creates a DebondVCCT object. Although the constructor is available both for parts and for the assembly, DebondVCCT objects are currently supported only under the assembly."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DebondVCCT.py:docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT:21
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:15
+msgid "Check `DebondVCCT on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-debondvcctpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:23
+msgid "**initiationStep**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:23
+#: ../../docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.initiationStep:2
+msgid "A String specifying the name of the step in which the DebondVCCT object is created."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:27
+msgid "**surfToSurfInteraction**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:26
+#: ../../docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.surfToSurfInteraction:2
+msgid "A String specifying the name of the SurfaceToSurfaceContactStd object that defines the surface to surface interaction for the crack surfaces."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DebondVCCT.py:docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues:12
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:32
+msgid "**debondingForceAmplitude**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DebondVCCT.py:docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues:10
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:30
+#: ../../docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.debondingForceAmplitude:2
+msgid "A SymbolicConstant specifying whether the debond force between the two surfaces at the crack tip is to be released immediately or gradually during the following increment after debonding. Possible values are STEP and RAMP. The default value is STEP."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DebondVCCT.py:docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues:29
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:36
+msgid "**printToDATFrequency**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DebondVCCT.py:docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues:15
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:35
+#: ../../docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.printToDATFrequency:2
+msgid "An Int specifying the frequency at which output will be printed to DAT file. The default value is 1."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:53
+msgid ":obj:`DebondVCCT`"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:41
+msgid "A :py:class:`~abaqus.EngineeringFeature.DebondVCCT.DebondVCCT` object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:2
+msgid "This method creates a DiscreteFastener object. Although the constructor is available both for parts and for the assembly, DiscreteFastener objects are currently supported only under the assembly."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener:20
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:15
+msgid "Check `DiscreteFastener on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefastenerpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:23
+#: ../../docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.region:2
+msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the fastener is applied."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:26
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:58
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:39
+msgid "**influenceRadius**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:26
+#: ../../docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.influenceRadius:2
+msgid "The SymbolicConstant WHOLE_SURFACE or a Float specifying the coupling influence radius."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:11
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:30
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:38
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:19
+msgid "**ur1**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:10
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:29
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:37
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:18
+#: ../../docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.ur1:2
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.ur1:2
+msgid "A Boolean specifying whether to constrain rotational displacement component about the 1-direction. The default value is ON."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:15
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:34
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:42
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:23
+msgid "**ur2**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:14
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:33
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:41
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:22
+#: ../../docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.ur2:2
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.ur2:2
+msgid "A Boolean specifying whether to constrain rotational displacement component about the 2-direction. The default value is ON."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:19
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:38
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:46
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:27
+msgid "**ur3**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:18
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:37
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:45
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:26
+#: ../../docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.ur3:2
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.ur3:2
+msgid "A Boolean specifying whether to constrain rotational displacement component about the 3-direction. The default value is ON."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:25
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:44
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:73
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:54
+msgid "**coupling**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:22
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:41
+#: ../../docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.coupling:2
+msgid "A SymbolicConstant specifying the coupling method used to couple the displacement and rotation of each attachment point to the average motion of the surface nodes within the radius of influence from the fastening point. Possible values are CONTINUUM and STRUCTURAL. The default value is CONTINUUM."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:33
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:52
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:81
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:62
+msgid "**weightingMethod**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:28
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:47
+#: ../../docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.weightingMethod:2
+msgid "A SymbolicConstant specifying the weighting scheme to be used to weight the contribution of the displacements of the surface nodes within the radius of influence to the motion of the fastening point. UNIFORM, LINEAR, QUADRATIC, and CUBIC indicate uniform, linear decreasing, quadratic polynomial decreasing, and cubic polynomial monotonic decreasing weight distributions. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC. The default value is UNIFORM."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:36
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:55
+#: ../../docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.localCsys:2
+msgid "None or a DatumCsys object specifying the local coordinate system of fastener couplings. If **localCsys** = None, couplings are defined in the global coordinate system. When this member is queried, it returns an Int. The default value is None."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:74
+msgid ":obj:`DiscreteFastener`"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:62
+msgid "A :py:class:`~abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener` object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:2
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a HeatCapacitance object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:13
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:29
+msgid "Check `HeatCapacitance on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-heatcapacitancepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:21
+#: ../../docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.region:2
+msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the heat capacitance is applied."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:25
+msgid "**table**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:24
+#: ../../docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.table:2
+msgid "A sequence of sequences of Floats specifying heat capacitance properties. The items in the table data are described below."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:28
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues:10
+msgid "**temperatureDependency**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:28
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues:10
+#: ../../docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.temperatureDependency:2
+msgid "A Boolean specifying whether the data depend on temperature. The default value is OFF."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:31
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues:26
+msgid "**dependencies**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:31
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues:13
+#: ../../docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.dependencies:2
+msgid "An Int specifying the number of field variable dependencies. The default value is 0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:48
+msgid ":obj:`HeatCapacitance`"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:36
+msgid "A :py:class:`~abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance` object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:2
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a NonstructuralMass object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:13
+#: ../../../../src/abaqus/EngineeringFeature/NonstructuralMass.py:docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass:21
+msgid "Check `NonstructuralMass on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-nonstructuralmasspyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:21
+#: ../../docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.region:2
+msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the mass is applied."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:25
+msgid "**units**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:24
+#: ../../docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.units:2
+msgid "A SymbolicConstant specifying the units used to specify the nonstructural mass. Possible values are TOTAL_MASS, MASS_PER_VOLUME, MASS_PER_AREA, and MASS_PER_LENGTH."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:28
+msgid "**magnitude**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:28
+#: ../../docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.magnitude:2
+msgid "A Float specifying the mass magnitude."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:33
+#: ../../../../src/abaqus/EngineeringFeature/NonstructuralMass.py:docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues:25
+msgid "**distribution**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:31
+#: ../../../../src/abaqus/EngineeringFeature/NonstructuralMass.py:docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues:10
+#: ../../docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.distribution:2
+msgid "A SymbolicConstant specifying the distribution of the nonstructural mass. Possible values are MASS_PROPORTIONAL and VOLUME_PROPORTIONAL. The default value is MASS_PROPORTIONAL.The **distribution** argument applies only when **units** = TOTAL_MASS."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:50
+msgid ":obj:`NonstructuralMass`"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:38
+msgid "A :py:class:`~abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass` object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:2
+msgid "This method creates a PointFastener object. Although the constructor is available both for parts and for the assembly, PointFastener objects are currently supported only under the assembly."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:15
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener:20
+msgid "Check `PointFastener on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pointfastenerpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:23
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.region:2
+msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which fasteners are applied."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:26
+msgid "**physicalRadius**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:26
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.physicalRadius:2
+msgid "A Float specifying the physical fastener radius."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:31
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:12
+msgid "**directionVector**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:29
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:10
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.directionVector:2
+msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of projection. Instead of through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. The default value is None."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:34
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:15
+msgid "**targetSurfaces**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:34
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:15
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.targetSurfaces:2
+msgid "A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying surfaces to be fastened. The default value is MODEL."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:51
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:32
+msgid "**attachmentMethod**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:49
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:30
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.attachmentMethod:2
+msgid "A SymbolicConstant specifying the method used to locate points for attaching fasteners. Possible values are FACETOFACE, EDGETOFACE, FACETOEDGE, and EDGETOEDGE. The default value is FACETOFACE."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:54
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:35
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.influenceRadius:2
+msgid "The SymbolicConstant DEFAULT or a Float specifying the maximum distance from the projection point on a connected surface within which the nodes on that surface must lie to contribute to the motion of the projection point. If the value is DEFAULT, a radius is computed from the fastener diameter and the surface facet lengths. The default value is DEFAULT."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:62
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:43
+msgid "**searchRadius**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:61
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:42
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.searchRadius:2
+msgid "The SymbolicConstant DEFAULT or a Float specifying the distance from the positioning points within which the connected points must lie. The default value is DEFAULT."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:67
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:48
+msgid "**maximumLayers**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:65
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:46
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.maximumLayers:2
+msgid "The SymbolicConstant ALL or an Int specifying the maximum number of layers for each fastener. If the value is ALL, the maximum possible number of layers within the searchRadius will be used for each fastener. The default value is ALL."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:70
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:51
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.coupling:2
+msgid "A SymbolicConstant specifying the coupling method used to couple the displacement and rotation of each attachment point to the average motion of the surface nodes within the radius of influence from the fastener projection point. Possible values are CONTINUUM and STRUCTURAL. The default value is CONTINUUM."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:76
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:57
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.weightingMethod:2
+msgid "A SymbolicConstant specifying the weighting scheme to be used to weight the contribution of the displacements of the surface nodes within the radius of influence to the motion of the fastener projection point. UNIFORM, LINEAR, QUADRATIC, and CUBIC indicate uniform, linear decreasing, quadratic polynomial decreasing, and cubic polynomial monotonic decreasing weight distributions. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC. The default value is UNIFORM."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:85
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:66
+msgid "**additionalMass**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:84
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:65
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.additionalMass:2
+msgid "A Float specifying the mass that will be distributed to fastener attachment points. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:90
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:71
+msgid "**adjustOrientation**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:88
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:69
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.adjustOrientation:2
+msgid "A Boolean specifying whether to adjust localCsys such that the local z-axis for each fastener is normal to the surface that is closest to the reference node for that fastener. The default value is ON."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:93
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:74
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.localCsys:2
+msgid "None or a DatumCsys object specifying the local coordinate system. If **localCsys** = None, the global coordinate system is used. When this member is queried, it returns an Int. The default value is None."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:99
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:80
+msgid "**connectionType**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:98
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:79
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.connectionType:2
+msgid "A SymbolicConstant specifying the fastener connection type. Possible values are CONNECTOR and BEAM_MPC. The default value is CONNECTOR."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:103
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:84
+msgid "**sectionName**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:102
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:83
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.sectionName:2
+msgid "A String specifying the connector section assigned to generated connectors. The default value is an empty string."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:109
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:90
+msgid "**connectorOrientationLocalCsys1**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:106
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:87
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.connectorOrientationLocalCsys1:2
+msgid "None or a DatumCsys object specifying the local coordinate system of the first connector point in generated connectors. If **connectorOrientationLocalCsys1** = None, the degrees of freedom are defined in the global coordinate system. When this member is queried, it returns an Int. The default value is None."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:114
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:95
+msgid "**axis1**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:112
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:93
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.axis1:2
+msgid "A SymbolicConstant specifying the axis of a datum coordinate system about which an additional rotation is applied for the first point in generated connectors. Possible values are AXIS_1, AXIS_2, and AXIS_3. The default value is AXIS_1."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:118
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:99
+msgid "**angle1**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:117
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:98
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.angle1:2
+msgid "A Float specifying the angle of the additional rotation for the first point in generated connectors. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:123
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:104
+msgid "**orient2SameAs1**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:121
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:102
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.orient2SameAs1:2
+msgid "A Boolean specifying whether or not the second connector point in generated connectors is to use the same local coordinate system, axis, and angle as the first point. The default value is ON."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:129
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:110
+msgid "**connectorOrientationLocalCsys2**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:126
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:107
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.connectorOrientationLocalCsys2:2
+msgid "None or a DatumCsys object specifying the local coordinate system of the second connector point in generated connectors. If **connectorOrientationLocalCsys2** = None, the degrees of freedom are defined in the global coordinate system. When this member is queried, it returns an Int. The default value is None."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:134
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:115
+msgid "**axis2**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:132
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:113
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.axis2:2
+msgid "A SymbolicConstant specifying the axis of a datum coordinate system about which an additional rotation is applied for the second point in generated connectors. Possible values are AXIS_1, AXIS_2, and AXIS_3. The default value is AXIS_1."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:138
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:119
+msgid "**angle2**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:137
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:118
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.angle2:2
+msgid "A Float specifying the angle of the additional rotation for the second point in generated connectors. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:143
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:137
+msgid "**unsorted**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:141
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:122
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.unsorted:2
+msgid "A Boolean specifying whether the analysis product should leave targetSurfaces in the given unsorted order, or sort them by proximity to determine the connectivity of fastening points. The default value is OFF."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:160
+msgid ":obj:`PointFastener`"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:148
+msgid "A :py:class:`~abaqus.EngineeringFeature.PointFastener.PointFastener` object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:2
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a PointMassInertia object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:13
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia:21
+msgid "Check `PointMassInertia on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pointmassinertiapyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:21
+#: ../../docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.region:2
+msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the mass or rotary inertia is applied."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:25
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:11
+msgid "**mass**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:24
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:10
+#: ../../docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass:2
+msgid "A Float specifying the mass magnitude for isotropic mass. This parameter cannot be specified when anisotropic mass terms are specified. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:29
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:15
+msgid "**mass1**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:28
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:14
+#: ../../docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass1:2
+msgid "A Float specifying the mass in the 1-direction for anisotropic mass. This parameter cannot be specified when isotropic mass is also specified. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:33
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:19
+msgid "**mass2**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:32
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:18
+#: ../../docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass2:2
+msgid "A Float specifying the mass in the 2-direction for anisotropic mass. This parameter cannot be specified when isotropic mass is also specified. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:37
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:23
+msgid "**mass3**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:36
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:22
+#: ../../docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass3:2
+msgid "A Float specifying the mass in the 3-direction for anisotropic mass. This parameter cannot be specified when isotropic mass is also specified. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:41
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:27
+msgid "**i11**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:40
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:26
+#: ../../docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i11:2
+msgid "A Float specifying the rotary inertia about the local 1-axis, I11I11. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:45
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:31
+msgid "**i22**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:44
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:30
+#: ../../docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i22:2
+msgid "A Float specifying the rotary inertia about the local 2-axis, I22I22. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:49
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:35
+msgid "**i33**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:48
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:34
+#: ../../docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i33:2
+msgid "A Float specifying the rotary inertia about the local 3-axis, I33I33. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:52
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:38
+msgid "**i12**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:52
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:38
+#: ../../docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i12:2
+msgid "A Float specifying the product of inertia, I12I12. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:55
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:41
+msgid "**i13**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:55
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:41
+#: ../../docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i13:2
+msgid "A Float specifying the product of inertia, I13I13. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:58
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:44
+msgid "**i23**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:58
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:44
+#: ../../docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i23:2
+msgid "A Float specifying the product of inertia, I23I23. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:61
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:47
+#: ../../docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.localCsys:2
+msgid "None or a DatumCsys object specifying the local coordinate system for the anisotropic mass terms (when specified), and the rotary inertia (when specified). If **localCsys** = None, the anisotropic mass and rotary inertia data are defined in the global coordinate system. The default value is None."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:68
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:54
+msgid "**alpha**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:67
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:53
+#: ../../docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.alpha:2
+msgid "A Float specifying the alpha damping magnitude. The default value is 0.0.This argument applies only to Abaqus/Standard analyses."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:72
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:71
+msgid "**composite**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:71
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:57
+#: ../../docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.composite:2
+msgid "A Float specifying the composite damping magnitude. The default value is 0.0.This argument applies only to Abaqus/Standard analyses."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:89
+msgid ":obj:`PointMassInertia`"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:77
+msgid "A :py:class:`~abaqus.EngineeringFeature.PointMassInertia.PointMassInertia` object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:2
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a SpringDashpotToGround object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:13
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround:23
+msgid "Check `SpringDashpotToGround on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-springdashpottogroundpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:21
+#: ../../docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.region:2
+msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the springs and/or dashpots are applied."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:25
+msgid "**dof**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:24
+#: ../../docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.dof:2
+msgid "An Int specifying the degree of freedom associated with the spring and dashpot behaviors."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:30
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:43
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:12
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:23
+msgid "**orientation**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:28
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:10
+#: ../../docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.orientation:2
+msgid "None or a DatumCsys object specifying the local directions for the spring and/or dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global coordinate system. The default value is None."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:35
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:48
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:17
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:28
+msgid "**springBehavior**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:33
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:15
+#: ../../docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.springBehavior:2
+msgid "A Boolean specifying whether to apply spring behavior to the selected points. The default value is OFF.At least one of the arguments **springBehavior** = ON or **dashpotBehavior** = ON must be specified."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:40
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:53
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:22
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:33
+msgid "**dashpotBehavior**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:38
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:20
+#: ../../docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.dashpotBehavior:2
+msgid "A Boolean specifying whether to apply dashpot behavior to the selected points. The default value is OFF.At least one of the arguments **springBehavior** = ON or **dashpotBehavior** = ON must be specified."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:44
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:57
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:26
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:37
+msgid "**springStiffness**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:43
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:25
+#: ../../docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.springStiffness:2
+msgid "A Float specifying the force per relative displacement for the spring. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:48
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:61
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:43
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:54
+msgid "**dashpotCoefficient**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:47
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:29
+#: ../../docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.dashpotCoefficient:2
+msgid "A Float specifying the force per relative velocity for the dashpot. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:65
+msgid ":obj:`SpringDashpotToGround`"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:53
+msgid "A :py:class:`~abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround` object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:2
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a TwoPointSpringDashpot object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:13
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot:23
+msgid "Check `TwoPointSpringDashpot on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-twopointspringdashpotpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:22
+msgid "**regionPairs**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:21
+#: ../../docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.regionPairs:2
+msgid "A sequence of pairs of Region objects specifying the points between which the springs and/or dashpots are applied."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:27
+msgid "**axis**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:25
+#: ../../docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.axis:2
+msgid "A SymbolicConstant specifying whether the axis of the springs and/or dashpots follows the rotation of the nodes or is in a specified direction. Possible values are NODAL_LINE and FIXED_DOF."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:32
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:12
+msgid "**dof1**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:30
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:10
+#: ../../docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dof1:2
+msgid "An Int specifying the degree of freedom with which the springs and/or dashpots are associated at their first points. The **dof1** argument applies only when **axis** = FIXED_DOFS. The default value is 0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:37
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:17
+msgid "**dof2**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:35
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:15
+#: ../../docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dof2:2
+msgid "An Int specifying the degree of freedom with which the springs and/or dashpots are associated at their second points. The **dof2** argument applies only when **axis** = FIXED_DOFS. The default value is 0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:40
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:20
+#: ../../docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.orientation:2
+msgid "None or a DatumCsys object specifying the local directions for the spring and/or dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global coordinate system. The default value is None.The **orientation** argument applies only when **axis** = FIXED_DOFS."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:46
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:26
+#: ../../docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.springBehavior:2
+msgid "A Boolean specifying whether to apply spring behavior to the selected point pairs. The default value is OFF.At least one of the arguments **springBehavior** = ON or **dashpotBehavior** = ON must be specified."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:51
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:31
+#: ../../docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dashpotBehavior:2
+msgid "A Boolean specifying whether to apply dashpot behavior to the selected point pairs. The default value is OFF.At least one of the arguments **springBehavior** = ON or **dashpotBehavior** = ON must be specified."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:56
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:36
+#: ../../docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.springStiffness:2
+msgid "A Float specifying the force per relative displacement for the springs. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:60
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:40
+#: ../../docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dashpotCoefficient:2
+msgid "A Float specifying the force per relative velocity for the dashpots. The default value is 0.0."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:78
+msgid ":obj:`TwoPointSpringDashpot`"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:66
+msgid "A :py:class:`~abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot` object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:2
+msgid "This method creates a XFEMCrack object. Although the constructor is available both for parts and for the assembly, XFEMCrack objects are currently supported only under the assembly."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:15
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack:22
+msgid "Check `XFEMCrack on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xfemcrackpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:24
+msgid "**crackDomain**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:23
+#: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackDomain:2
+msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region that contains the crack or is likely to contain the crack."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:28
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:11
+msgid "**allowCrackGrowth**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:27
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:10
+#: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.allowCrackGrowth:2
+msgid "A Boolean specifying whether the crack is allowed to propagate (grow). The default value is ON."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:32
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:15
+msgid "**crackLocation**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:31
+msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the initial crack location. This parameter is required when **allowCrackGrowth** = OFF."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:37
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:20
+msgid "**singularityCalcRadius**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:35
+msgid "None or a Float specifying the radius from the crack tips within which the elements are used for crack singularity calculations. This argument applies only when **allowCrackGrowth** = OFF. The default value is None."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:41
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:24
+msgid "**interactionProperty**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:40
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:23
+#: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.interactionProperty:2
+msgid "A String specifying the name of the ContactProperty object that defines the contact properties for the crack surfaces. The default value is an empty string."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:45
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:28
+msgid "**elemId**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:44
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:27
+#: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.elemId:2
+msgid "A sequence of Ints specifying the labels of the elements that are intersected by the initial crack location. This argument is used only by the input file reader."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:49
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:32
+msgid "**nodeId**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:48
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:31
+#: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.nodeId:2
+msgid "A sequence of Ints specifying the position of a node in the corresponding element connectivity. This argument is used only by the input file reader."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:55
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:38
+msgid "**hasCrackFront**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:52
+msgid "A sequence of Ints specifying the values indicating the inclusion/exclusion of the **crackFrontDist** values. A zero value indicates that **crackFrontDist** is not specified for the ith pair **elemId** and **nodeId**. This argument is used only by the input file reader."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:59
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:42
+msgid "**crackPlaneDist**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:58
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:41
+#: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackPlaneDist:2
+msgid "A sequence of Floats specifying the values of the first signed distance function. This argument is used by the input file reader."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:63
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:46
+msgid "**crackFrontDist**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:62
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:45
+#: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackFrontDist:2
+msgid "A sequence of Floats specifying the values of the second signed distance function. This argument is used only by the input file reader."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:67
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:63
+msgid "**autoDetectValue**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:66
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:49
+#: ../../None:13:<autosummary>:1
+#: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.autoDetectValue:2
+msgid "An integer specifying the number of element layers around the crack location, to which the crack domain is shrunk."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:84
+msgid ":obj:`XFEMCrack`"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:72
+msgid "A :py:class:`~abaqus.EngineeringFeature.XFEMCrack.XFEMCrack` object."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:15
+msgid "Object features"
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:18
+msgid "Crack"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/Crack.py:docstring of abaqus.EngineeringFeature.Crack.Crack:2
+msgid "The Crack object is the abstract base type for ContourIntegral and future crack objects."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/AssembledFastener.py:docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener:6
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral:7
+#: ../../../../src/abaqus/EngineeringFeature/Crack.py:docstring of abaqus.EngineeringFeature.Crack.Crack:5
+#: ../../../../src/abaqus/EngineeringFeature/DebondVCCT.py:docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT:7
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener:6
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeatureBase.py:docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase:6
+#: ../../../../src/abaqus/EngineeringFeature/Fastener.py:docstring of abaqus.EngineeringFeature.Fastener.Fastener:6
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:7
+#: ../../../../src/abaqus/EngineeringFeature/Inertia.py:docstring of abaqus.EngineeringFeature.Inertia.Inertia:6
+#: ../../../../src/abaqus/EngineeringFeature/NonstructuralMass.py:docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass:7
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener:6
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia:7
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpot.py:docstring of abaqus.EngineeringFeature.SpringDashpot.SpringDashpot:6
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround:7
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot:7
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack:7
+msgid "This object can be accessed by:"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/Crack.py:docstring of abaqus.EngineeringFeature.Crack.Crack:15
+msgid "Check `Crack on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-crackpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/AssembledFastener.py:docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener:0
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral:0
+#: ../../../../src/abaqus/EngineeringFeature/Crack.py:docstring of abaqus.EngineeringFeature.Crack.Crack:0
+#: ../../../../src/abaqus/EngineeringFeature/DebondVCCT.py:docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT:0
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeatureBase.py:docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase:0
+#: ../../../../src/abaqus/EngineeringFeature/Fastener.py:docstring of abaqus.EngineeringFeature.Fastener.Fastener:0
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:0
+#: ../../../../src/abaqus/EngineeringFeature/Inertia.py:docstring of abaqus.EngineeringFeature.Inertia.Inertia:0
+#: ../../../../src/abaqus/EngineeringFeature/NonstructuralMass.py:docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass:0
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener:0
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia:0
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpot.py:docstring of abaqus.EngineeringFeature.SpringDashpot.SpringDashpot:0
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround:0
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot:0
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack:0
+msgid "Public Data Attributes:"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.EngineeringFeature.Crack.Crack.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.EngineeringFeature.Crack.Crack.suppressed>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+#: ../../None:13:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+#: ../../None:5:<autosummary>:1
+msgid "A Boolean specifying whether the crack is suppressed or not."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/AssembledFastener.py:docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener:0
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral:0
+#: ../../../../src/abaqus/EngineeringFeature/Crack.py:docstring of abaqus.EngineeringFeature.Crack.Crack:0
+#: ../../../../src/abaqus/EngineeringFeature/DebondVCCT.py:docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT:0
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener:0
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeatureBase.py:docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase:0
+#: ../../../../src/abaqus/EngineeringFeature/Fastener.py:docstring of abaqus.EngineeringFeature.Fastener.Fastener:0
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:0
+#: ../../../../src/abaqus/EngineeringFeature/Inertia.py:docstring of abaqus.EngineeringFeature.Inertia.Inertia:0
+#: ../../../../src/abaqus/EngineeringFeature/NonstructuralMass.py:docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass:0
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener:0
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia:0
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpot.py:docstring of abaqus.EngineeringFeature.SpringDashpot.SpringDashpot:0
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround:0
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot:0
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack:0
+msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.EngineeringFeature.Crack.Crack.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/Crack.py:docstring of abaqus.EngineeringFeature.Crack.Crack.resume:2
+#: ../../None:4:<autosummary>:1
+msgid "This method resumes the crack that was previously suppressed."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.EngineeringFeature.Crack.Crack.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/Crack.py:docstring of abaqus.EngineeringFeature.Crack.Crack.suppress:2
+#: ../../None:4:<autosummary>:1
+msgid "This method suppresses the crack."
+msgstr ""
+
+#: ../../docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.suppressed:2
+#: ../../docstring of abaqus.EngineeringFeature.Crack.Crack.suppressed:2
+#: ../../docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.suppressed:2
+#: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.suppressed:2
+msgid "A Boolean specifying whether the crack is suppressed or not. The default value is OFF."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:26
+msgid "Fastener"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/Fastener.py:docstring of abaqus.EngineeringFeature.Fastener.Fastener:2
+msgid "The Fastener object is the abstract base type for PointFastener, DiscreteFastener, and AssembledFastener."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/Fastener.py:docstring of abaqus.EngineeringFeature.Fastener.Fastener:16
+msgid "Check `Fastener on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fastenerpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.EngineeringFeature.Fastener.Fastener.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.EngineeringFeature.Fastener.Fastener.suppressed>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+#: ../../None:9:<autosummary>:1
+msgid "A Boolean specifying whether the fastener is suppressed or not."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.EngineeringFeature.Fastener.Fastener.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/Fastener.py:docstring of abaqus.EngineeringFeature.Fastener.Fastener.resume:2
+#: ../../None:4:<autosummary>:1
+msgid "This method resumes the fastener that was previously suppressed."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.EngineeringFeature.Fastener.Fastener.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/Fastener.py:docstring of abaqus.EngineeringFeature.Fastener.Fastener.suppress:2
+#: ../../None:4:<autosummary>:1
+msgid "This method suppresses the fastener."
+msgstr ""
+
+#: ../../docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.suppressed:2
+#: ../../docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.suppressed:2
+#: ../../docstring of abaqus.EngineeringFeature.Fastener.Fastener.suppressed:2
+#: ../../docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.suppressed:2
+msgid "A Boolean specifying whether the fastener is suppressed or not. The default value is OFF."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:34
+msgid "Inertia"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/Inertia.py:docstring of abaqus.EngineeringFeature.Inertia.Inertia:2
+msgid "The Inertia object is the abstract base type for HeatCapacitance, NonstructuralMass, and PointMassInertia."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/Inertia.py:docstring of abaqus.EngineeringFeature.Inertia.Inertia:16
+msgid "Check `Inertia on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inertiapyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.EngineeringFeature.Inertia.Inertia.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.EngineeringFeature.Inertia.Inertia.suppressed>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+#: ../../None:5:<autosummary>:1
+msgid "A Boolean specifying whether the inertia is suppressed or not."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.EngineeringFeature.Inertia.Inertia.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/Inertia.py:docstring of abaqus.EngineeringFeature.Inertia.Inertia.resume:2
+#: ../../None:4:<autosummary>:1
+msgid "This method resumes the inertia that was previously suppressed."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.EngineeringFeature.Inertia.Inertia.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/Inertia.py:docstring of abaqus.EngineeringFeature.Inertia.Inertia.suppress:2
+#: ../../None:4:<autosummary>:1
+msgid "This method suppresses the inertia."
+msgstr ""
+
+#: ../../docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.suppressed:2
+#: ../../docstring of abaqus.EngineeringFeature.Inertia.Inertia.suppressed:2
+#: ../../docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.suppressed:2
+#: ../../docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.suppressed:2
+msgid "A Boolean specifying whether the inertia is suppressed or not. The default value is OFF."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:42
+msgid "SpringDashpot"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpot.py:docstring of abaqus.EngineeringFeature.SpringDashpot.SpringDashpot:2
+msgid "The SpringDashpot object is the abstract base type for the SpringDashpotToGround and TwoPointSpringDashpot objects."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpot.py:docstring of abaqus.EngineeringFeature.SpringDashpot.SpringDashpot:16
+msgid "Check `SpringDashpot on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-springdashpotpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.suppressed>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+#: ../../None:8:<autosummary>:1
+msgid "A Boolean specifying whether the spring/dashpot is suppressed or not."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpot.py:docstring of abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.resume:2
+#: ../../None:4:<autosummary>:1
+msgid "This method resumes the spring/dashpot that was previously suppressed."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpot.py:docstring of abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.suppress:2
+#: ../../None:4:<autosummary>:1
+msgid "This method suppresses the spring/dashpot."
+msgstr ""
+
+#: ../../docstring of abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.suppressed:2
+#: ../../docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.suppressed:2
+#: ../../docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.suppressed:2
+msgid "A Boolean specifying whether the spring/dashpot is suppressed or not. The default value is OFF."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:50
+msgid "AssembledFastener"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/AssembledFastener.py:docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener:2
+msgid "The AssembledFastener object defines an assembled fastener. The AssembledFastener object is derived from the Fastener object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.suppressed>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`orientMethod <abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.orientMethod>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "A SymbolicConstant specifying the method used to orient the virtual instances of the template model at each attachment point."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`localCsys <abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.localCsys>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+msgid "None or a DatumCsys object specifying the local coordinate system."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`scriptName <abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.scriptName>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "A String specifying the name of the property generation script."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__>`\\ \\(name\\, region\\, templateModel\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method creates an AssembledFastener object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues>`\\ \\(\\[orientMethod\\, localCsys\\, scriptName\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/AssembledFastener.py:docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues:2
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the AssembledFastener object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/AssembledFastener.py:docstring of abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues:5
+msgid "Check `AssembledFastener.setValues() on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assembledfastenerpyc.htm?contextscope=all#simaker-assembledfastenersetvaluespyc>`_."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:58
+msgid "ContourIntegral"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral:2
+msgid "The ContourIntegral object defines contour integral objects on an region. Currently only assembly regions are supported. The ContourIntegral object is derived from the Crack object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral:16
+#: ../../../../src/abaqus/EngineeringFeature/DebondVCCT.py:docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT:16
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener:15
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:24
+#: ../../../../src/abaqus/EngineeringFeature/NonstructuralMass.py:docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass:16
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener:15
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia:16
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround:16
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot:16
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack:16
+msgid "The corresponding analysis keywords are:"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral:18
+msgid "CONTOUR INTEGRAL"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.suppressed>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`symmetric <abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.symmetric>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A Boolean specifying whether the crack is defined on a half model (about a symmetry plane) or whether it is defined on the whole model."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`listOfRegions <abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.listOfRegions>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A Boolean specifying whether the regions specified by **crackFront** and **crackTip** are specified using a single region or tuples of region objects."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`crackFrontName <abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackFrontName>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`crackTipName <abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackTipName>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`crackNormal <abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackNormal>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A sequence of sequences of Floats specifying the two points of the vector that describes the crack normal direction."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`qVectors <abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.qVectors>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A sequence of sequences of sequences of Floats specifying the vectors that indicate the set of crack extension directions."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`midNodePosition <abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.midNodePosition>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A Float specifying the position of the midside node along the edges of the second-order elements that radiate from the crack tip."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`collapsedElementAtTip <abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.collapsedElementAtTip>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A SymbolicConstant specifying the crack-tip singularity."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__>`\\ \\(name\\, crackFront\\, crackTip\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a ContourIntegral object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues>`\\ \\(\\[symmetric\\, listOfRegions\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:2
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the ContourIntegral object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/ContourIntegral.py:docstring of abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:5
+msgid "Check `ContourIntegral.setValues() on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contourintegralpyc.htm?contextscope=all#simaker-contourintegralsetvaluespyc>`_."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:66
+msgid "DebondVCCT"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DebondVCCT.py:docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT:2
+msgid "The DebondVCCT object defines the parameters needed to activate crack propagation using VCCT. The DebondVCCT object is derived from the Crack object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DebondVCCT.py:docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT:18
+msgid "DEBOND"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.suppressed>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`debondingForceAmplitude <abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.debondingForceAmplitude>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "A SymbolicConstant specifying whether the debond force between the two surfaces at the crack tip is to be released immediately or gradually during the following increment after debonding."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`printToDATFrequency <abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.printToDATFrequency>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "An Int specifying the frequency at which output will be printed to DAT file."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__>`\\ \\(name\\, initiationStep\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a DebondVCCT object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues>`\\ \\(\\[debondingForceAmplitude\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DebondVCCT.py:docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues:2
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the DebondVCCT object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DebondVCCT.py:docstring of abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues:5
+msgid "Check `DebondVCCT.setValues() on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-debondvcctpyc.htm?contextscope=all#simaker-debondvcctsetvaluespyc>`_."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:74
+msgid "DiscreteFastener"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener:2
+msgid "The DiscreteFastener object defines a discrete fastener. The DiscreteFastener object is derived from the Fastener object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener:17
+msgid "COUPLING"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: ../../None:9:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.suppressed>`\\"
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid ":py:obj:`ur1 <abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.ur1>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+#: ../../None:9:<autosummary>:1
+msgid "A Boolean specifying whether to constrain rotational displacement component about the 1-direction."
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid ":py:obj:`ur2 <abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.ur2>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+#: ../../None:9:<autosummary>:1
+msgid "A Boolean specifying whether to constrain rotational displacement component about the 2-direction."
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid ":py:obj:`ur3 <abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.ur3>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+#: ../../None:9:<autosummary>:1
+msgid "A Boolean specifying whether to constrain rotational displacement component about the 3-direction."
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid ":py:obj:`coupling <abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.coupling>`\\"
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid "A SymbolicConstant specifying the coupling method used to couple the displacement and rotation of each attachment point to the average motion of the surface nodes within the radius of influence from the fastening point."
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid ":py:obj:`weightingMethod <abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.weightingMethod>`\\"
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid "A SymbolicConstant specifying the weighting scheme to be used to weight the contribution of the displacements of the surface nodes within the radius of influence to the motion of the fastening point."
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid ":py:obj:`localCsys <abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.localCsys>`\\"
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid "None or a DatumCsys object specifying the local coordinate system of fastener couplings."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__>`\\ \\(name\\, region\\, influenceRadius\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a DiscreteFastener object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues>`\\ \\(\\[ur1\\, ur2\\, ur3\\, coupling\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:2
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the DiscreteFastener object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/DiscreteFastener.py:docstring of abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:5
+msgid "Check `DiscreteFastener.setValues() on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefastenerpyc.htm?contextscope=all#simaker-discretefastenersetvaluespyc>`_."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:82
+msgid "EngineeringFeatureBase"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeatureBase.py:docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase:2
+msgid "The EngineeringFeature object is a container for various specific engineering feature repositories. The EngineeringFeature object has no explicit constructor or methods."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeatureBase.py:docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase:16
+msgid "Check `EngineeringFeature on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-engineeringfeaturepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`inertias <abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.inertias>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+#: ../../docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.inertias:2
+msgid "A repository of Inertia objects."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`cracks <abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.cracks>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+#: ../../docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.cracks:2
+msgid "A repository of Crack objects."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`fasteners <abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.fasteners>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+#: ../../docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.fasteners:2
+msgid "A repository of Fastener objects."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`springDashpots <abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.springDashpots>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+#: ../../docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.springDashpots:2
+msgid "A repository of SpringDashpot objects."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`assignSeam <abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam>`\\ \\(regions\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeatureBase.py:docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam:2
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a seam crack along an edge or a face."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`deleteSeam <abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam>`\\ \\(regions\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeatureBase.py:docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam:2
+#: ../../None:4:<autosummary>:1
+msgid "This method deletes a seam crack."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeatureBase.py:docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam:5
+msgid "Check `EngineeringFeature.assignSeam() on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-engineeringfeaturepyc.htm?contextscope=all#simaker-engineeringfeatureassignseampyc>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeatureBase.py:docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam:24
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeatureBase.py:docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam:24
+msgid "**regions**"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeatureBase.py:docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam:10
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeatureBase.py:docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam:10
+msgid "A sequence of Region objects specifying the domain of the seam crack. The Region objects must be faces or edges."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/EngineeringFeatureBase.py:docstring of abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam:5
+msgid "Check `EngineeringFeature.deleteSeam() on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-engineeringfeaturepyc.htm?contextscope=all#simaker-engineeringfeaturedeleteseampyc>`_."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:90
+msgid "HeatCapacitance"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:2
+msgid "The HeatCapacitance object defines point heat capacitance on a part or an assembly region. The HeatCapacitance object is derived from the Inertia object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:16
+msgid "The table data specify the following:"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:18
+msgid "Heat capacitance magnitude, ρcVρ⁢c⁢V (density × specific heat × volume)."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:19
+msgid "Temperature, if the data depend on temperature."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:20
+msgid "Value of the first field variable, if the data depend on field variables."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:21
+msgid "Value of the second field variable."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:22
+msgid "Etc."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:26
+msgid "HEATCAP"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.suppressed>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`temperatureDependency <abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.temperatureDependency>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "A Boolean specifying whether the data depend on temperature."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`dependencies <abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.dependencies>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "An Int specifying the number of field variable dependencies."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__>`\\ \\(name\\, region\\, table\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues>`\\ \\(\\[temperatureDependency\\, dependencies\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues:2
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the HeatCapacitance object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/HeatCapacitance.py:docstring of abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues:5
+msgid "Check `HeatCapacitance.setValues() on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-heatcapacitancepyc.htm?contextscope=all#simaker-heatcapacitancesetvaluespyc>`_."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:98
+msgid "NonstructuralMass"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/NonstructuralMass.py:docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass:2
+msgid "The NonstructuralMass object defines the mass contribution from nonstructural features into the model. The NonstructuralMass object is derived from the Inertia object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/NonstructuralMass.py:docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass:18
+msgid "NONSTRUCTURAL MASS"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.suppressed>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`distribution <abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.distribution>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "A SymbolicConstant specifying the distribution of the nonstructural mass."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__>`\\ \\(name\\, region\\, units\\, magnitude\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues>`\\ \\(\\[distribution\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/NonstructuralMass.py:docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues:2
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the NonstructuralMass object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/NonstructuralMass.py:docstring of abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues:5
+msgid "Check `NonstructuralMass.setValues() on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-nonstructuralmasspyc.htm?contextscope=all#simaker-nonstructuralmasssetvaluespyc>`_."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:106
+msgid "PointFastener"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener:2
+msgid "The PointFastener object defines a point fastener. The PointFastener object is derived from the Fastener object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener:17
+msgid "FASTENER"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.EngineeringFeature.PointFastener.PointFastener.suppressed>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`directionVector <abaqus.EngineeringFeature.PointFastener.PointFastener.directionVector>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of projection."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`targetSurfaces <abaqus.EngineeringFeature.PointFastener.PointFastener.targetSurfaces>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying surfaces to be fastened."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`ur1 <abaqus.EngineeringFeature.PointFastener.PointFastener.ur1>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`ur2 <abaqus.EngineeringFeature.PointFastener.PointFastener.ur2>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`ur3 <abaqus.EngineeringFeature.PointFastener.PointFastener.ur3>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`attachmentMethod <abaqus.EngineeringFeature.PointFastener.PointFastener.attachmentMethod>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "A SymbolicConstant specifying the method used to locate points for attaching fasteners."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`influenceRadius <abaqus.EngineeringFeature.PointFastener.PointFastener.influenceRadius>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "The SymbolicConstant DEFAULT or a Float specifying the maximum distance from the projection point on a connected surface within which the nodes on that surface must lie to contribute to the motion of the projection point."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`searchRadius <abaqus.EngineeringFeature.PointFastener.PointFastener.searchRadius>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "The SymbolicConstant DEFAULT or a Float specifying the distance from the positioning points within which the connected points must lie."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`maximumLayers <abaqus.EngineeringFeature.PointFastener.PointFastener.maximumLayers>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "The SymbolicConstant ALL or an Int specifying the maximum number of layers for each fastener."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`coupling <abaqus.EngineeringFeature.PointFastener.PointFastener.coupling>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "A SymbolicConstant specifying the coupling method used to couple the displacement and rotation of each attachment point to the average motion of the surface nodes within the radius of influence from the fastener projection point."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`weightingMethod <abaqus.EngineeringFeature.PointFastener.PointFastener.weightingMethod>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "A SymbolicConstant specifying the weighting scheme to be used to weight the contribution of the displacements of the surface nodes within the radius of influence to the motion of the fastener projection point."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`additionalMass <abaqus.EngineeringFeature.PointFastener.PointFastener.additionalMass>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "A Float specifying the mass that will be distributed to fastener attachment points."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`adjustOrientation <abaqus.EngineeringFeature.PointFastener.PointFastener.adjustOrientation>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "A Boolean specifying whether to adjust localCsys such that the local z-axis for each fastener is normal to the surface that is closest to the reference node for that fastener."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`localCsys <abaqus.EngineeringFeature.PointFastener.PointFastener.localCsys>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`connectionType <abaqus.EngineeringFeature.PointFastener.PointFastener.connectionType>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "A SymbolicConstant specifying the fastener connection type."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`sectionName <abaqus.EngineeringFeature.PointFastener.PointFastener.sectionName>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "A String specifying the connector section assigned to generated connectors."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`connectorOrientationLocalCsys1 <abaqus.EngineeringFeature.PointFastener.PointFastener.connectorOrientationLocalCsys1>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "None or a DatumCsys object specifying the local coordinate system of the first connector point in generated connectors."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`axis1 <abaqus.EngineeringFeature.PointFastener.PointFastener.axis1>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "A SymbolicConstant specifying the axis of a datum coordinate system about which an additional rotation is applied for the first point in generated connectors."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`angle1 <abaqus.EngineeringFeature.PointFastener.PointFastener.angle1>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "A Float specifying the angle of the additional rotation for the first point in generated connectors."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`orient2SameAs1 <abaqus.EngineeringFeature.PointFastener.PointFastener.orient2SameAs1>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "A Boolean specifying whether or not the second connector point in generated connectors is to use the same local coordinate system, axis, and angle as the first point."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`connectorOrientationLocalCsys2 <abaqus.EngineeringFeature.PointFastener.PointFastener.connectorOrientationLocalCsys2>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "None or a DatumCsys object specifying the local coordinate system of the second connector point in generated connectors."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`axis2 <abaqus.EngineeringFeature.PointFastener.PointFastener.axis2>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "A SymbolicConstant specifying the axis of a datum coordinate system about which an additional rotation is applied for the second point in generated connectors."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`angle2 <abaqus.EngineeringFeature.PointFastener.PointFastener.angle2>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "A Float specifying the angle of the additional rotation for the second point in generated connectors."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`unsorted <abaqus.EngineeringFeature.PointFastener.PointFastener.unsorted>`\\"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "A Boolean specifying whether the analysis product should leave targetSurfaces in the given unsorted order, or sort them by proximity to determine the connectivity of fastening points."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.EngineeringFeature.PointFastener.PointFastener.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.EngineeringFeature.PointFastener.PointFastener.__init__>`\\ \\(name\\, region\\, physicalRadius\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a PointFastener object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.EngineeringFeature.PointFastener.PointFastener.setValues>`\\ \\(\\[directionVector\\, targetSurfaces\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:2
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the PointFastener object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.EngineeringFeature.PointFastener.PointFastener.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.EngineeringFeature.PointFastener.PointFastener.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/PointFastener.py:docstring of abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:5
+msgid "Check `PointFastener.setValues() on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pointfastenerpyc.htm?contextscope=all#simaker-pointfastenersetvaluespyc>`_."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:114
+msgid "PointMassInertia"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia:2
+msgid "The PointMassInertia object defines point masses and point rotary inertia on a part or an assembly region. The PointMassInertia object is derived from the Inertia object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia:18
+msgid "MASS"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.suppressed>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`mass <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A Float specifying the mass magnitude for isotropic mass."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`mass1 <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass1>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A Float specifying the mass in the 1-direction for anisotropic mass."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`mass2 <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass2>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A Float specifying the mass in the 2-direction for anisotropic mass."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`mass3 <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass3>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A Float specifying the mass in the 3-direction for anisotropic mass."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`i11 <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i11>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A Float specifying the rotary inertia about the local 1-axis, I11I11."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`i22 <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i22>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A Float specifying the rotary inertia about the local 2-axis, I22I22."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`i33 <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i33>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A Float specifying the rotary inertia about the local 3-axis, I33I33."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`i12 <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i12>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A Float specifying the product of inertia, I12I12."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`i13 <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i13>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A Float specifying the product of inertia, I13I13."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`i23 <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i23>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A Float specifying the product of inertia, I23I23."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`localCsys <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.localCsys>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "None or a DatumCsys object specifying the local coordinate system for the anisotropic mass terms (when specified), and the rotary inertia (when specified)."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`alpha <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.alpha>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A Float specifying the alpha damping magnitude."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`composite <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.composite>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A Float specifying the composite damping magnitude."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__>`\\ \\(name\\, region\\[\\, mass\\, mass1\\, mass2\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues>`\\ \\(\\[mass\\, mass1\\, mass2\\, mass3\\, i11\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:2
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the PointMassInertia object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/PointMassInertia.py:docstring of abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:5
+msgid "Check `PointMassInertia.setValues() on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pointmassinertiapyc.htm?contextscope=all#simaker-pointmassinertiasetvaluespyc>`_."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:122
+msgid "SpringDashpotToGround"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround:2
+msgid "The SpringDashpotToGround object defines springs and/or dashpots between points and ground on a part or an assembly region. The SpringDashpotToGround object is derived from the SpringDashpot object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround:18
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot:18
+msgid "ELEMENT"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround:19
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot:19
+msgid "SPRING"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround:20
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot:20
+msgid "DASHPOT"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.suppressed>`\\"
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`orientation <abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.orientation>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+#: ../../None:8:<autosummary>:1
+msgid "None or a DatumCsys object specifying the local directions for the spring and/or dashpot."
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`springBehavior <abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.springBehavior>`\\"
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid "A Boolean specifying whether to apply spring behavior to the selected points."
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`dashpotBehavior <abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.dashpotBehavior>`\\"
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid "A Boolean specifying whether to apply dashpot behavior to the selected points."
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`springStiffness <abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.springStiffness>`\\"
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid "A Float specifying the force per relative displacement for the spring."
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`dashpotCoefficient <abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.dashpotCoefficient>`\\"
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid "A Float specifying the force per relative velocity for the dashpot."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__>`\\ \\(name\\, region\\, dof\\[\\, orientation\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues>`\\ \\(\\[orientation\\, springBehavior\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:2
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the SpringDashpotToGround object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/SpringDashpotToGround.py:docstring of abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:5
+msgid "Check `SpringDashpotToGround.setValues() on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-springdashpottogroundpyc.htm?contextscope=all#simaker-springdashpottogroundsetvaluespyc>`_."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:130
+msgid "TwoPointSpringDashpot"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot:2
+msgid "The TwoPointSpringDashpot object defines springs and/or dashpots between two points on a part or an assembly. The TwoPointSpringDashpot object is derived from the SpringDashpot object."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.suppressed>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`dof1 <abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dof1>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "An Int specifying the degree of freedom with which the springs and/or dashpots are associated at their first points."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`dof2 <abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dof2>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "An Int specifying the degree of freedom with which the springs and/or dashpots are associated at their second points."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`orientation <abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.orientation>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`springBehavior <abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.springBehavior>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "A Boolean specifying whether to apply spring behavior to the selected point pairs."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`dashpotBehavior <abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dashpotBehavior>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "A Boolean specifying whether to apply dashpot behavior to the selected point pairs."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`springStiffness <abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.springStiffness>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "A Float specifying the force per relative displacement for the springs."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`dashpotCoefficient <abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dashpotCoefficient>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "A Float specifying the force per relative velocity for the dashpots."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__>`\\ \\(name\\, regionPairs\\, axis\\[\\, dof1\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues>`\\ \\(\\[dof1\\, dof2\\, orientation\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:2
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the TwoPointSpringDashpot object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/TwoPointSpringDashpot.py:docstring of abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:5
+msgid "Check `TwoPointSpringDashpot.setValues() on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-twopointspringdashpotpyc.htm?contextscope=all#simaker-twopointspringdashpotsetvaluespyc>`_."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/engineering.rst:138
+msgid "XFEMCrack"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack:2
+msgid "The XFEMCrack object defines the parameters needed to model crack initiation or crack growth using XFEM technology. Currently only assembly regions are supported. The XFEMCrack object is derived from the Crack object."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack:18
+msgid "ENRICHMENT"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack:19
+msgid "INITIAL CONDITIONS"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.suppressed>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`allowCrackGrowth <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.allowCrackGrowth>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "A Boolean specifying whether the crack is allowed to propagate (grow)."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`crackLocation <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackLocation>`\\"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:14
+#: ../../None:13:<autosummary>:1
+#: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackLocation:2
+msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the initial crack location. This parameter is required when *allowCrackGrowth*=OFF."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`singularityCalcRadius <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.singularityCalcRadius>`\\"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:18
+#: ../../None:13:<autosummary>:1
+#: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.singularityCalcRadius:2
+msgid "None or a Float specifying the radius from the crack tips within which the elements are used for crack singularity calculations. This argument applies only when *allowCrackGrowth*=OFF. The default value is None."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`interactionProperty <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.interactionProperty>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "A String specifying the name of the ContactProperty object that defines the contact properties for the crack surfaces."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`elemId <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.elemId>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "A sequence of Ints specifying the labels of the elements that are intersected by the initial crack location."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`nodeId <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.nodeId>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "A sequence of Ints specifying the position of a node in the corresponding element connectivity."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`hasCrackFront <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.hasCrackFront>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "A sequence of Ints specifying the values indicating the inclusion/exclusion of the *crackFrontDist* values."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`crackPlaneDist <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackPlaneDist>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "A sequence of Floats specifying the values of the first signed distance function."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`crackFrontDist <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackFrontDist>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "A sequence of Floats specifying the values of the second signed distance function."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`autoDetectValue <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.autoDetectValue>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__>`\\ \\(name\\, crackDomain\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a XFEMCrack object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues>`\\ \\(\\[allowCrackGrowth\\, crackLocation\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:2
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the XFEMCrack object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:35
+#: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.hasCrackFront:2
+msgid "A sequence of Ints specifying the values indicating the inclusion/exclusion of the *crackFrontDist* values. A zero value indicates that *crackFrontDist* is not specified for the ith pair *elemId* and *nodeId*. This argument is used only by the input file reader."
+msgstr ""
+
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:5
+msgid "Check `XFEMCrack.setValues() on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xfemcrackpyc.htm?contextscope=all#simaker-xfemcracksetvaluespyc>`_."
+msgstr ""
