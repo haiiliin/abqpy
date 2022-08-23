@@ -32,6 +32,7 @@ Python script, even without opening the Abaqus/CAE.
 - Anaconda: [anaconda.org/haiiliin/abqpy](https://anaconda.org/haiiliin/abqpy)
 - Read the Docs: [readthedocs.org/projects/abqpy](https://readthedocs.org/projects/abqpy/)
 - Documentation: [abqpy.haiiliin.com](https://abqpy.haiiliin.com/en/latest/)
+- Join Crowdin for documentation translation: [https://crowdin.com/project/abqpy](https://crowdin.com/project/abqpy)
 
 ## Pull Requests are Welcome
 
