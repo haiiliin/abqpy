@@ -1,30 +1,28 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022, WANG Hailin
-# This file is distributed under the same license as the abqpy package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy \n"
+"Project-Id-Version: abqpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:36+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"PO-Revision-Date: 2022-08-23 10:43\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: abqpy\n"
+"X-Crowdin-Project-ID: 533812\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /main/docs/source/locales/pot/user/output/cpp/computations.pot\n"
+"X-Crowdin-File-ID: 444\n"
+"Language: zh_CN\n"
 
 #: ../../user/output/cpp/computations.rst:3
 msgid "Computations with Abaqus results"
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:5
-msgid ""
-"This section discusses computations with Abaqus results in the Abaqus "
-"Scripting Interface."
+msgid "This section discusses computations with Abaqus results in the Abaqus Scripting Interface."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:8
@@ -32,11 +30,7 @@ msgid "Rules for the mathematical operations"
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:10
-msgid ""
-"Mathematical operations are supported for FieldOutput, FieldValue, and "
-"HistoryOutput objects. These operators allow you to perform linear "
-"superposition of Abaqus results or to create more complex derived results"
-" from Abaqus results."
+msgid "Mathematical operations are supported for FieldOutput, FieldValue, and HistoryOutput objects. These operators allow you to perform linear superposition of Abaqus results or to create more complex derived results from Abaqus results."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:12
@@ -48,22 +42,15 @@ msgid "The operations are performed on the components of a tensor or vector."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:15
-msgid ""
-"The invariants are computed from the component values. For example, "
-"taking the absolute value of a tensor can result in negative values of "
-"the pressure invariant."
+msgid "The invariants are computed from the component values. For example, taking the absolute value of a tensor can result in negative values of the pressure invariant."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:16
-msgid ""
-"Operations between FieldOutput, FieldValue, and HistoryOutput objects are"
-" not supported."
+msgid "Operations between FieldOutput, FieldValue, and HistoryOutput objects are not supported."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:17
-msgid ""
-"Multiplication and division are not supported between two vector objects "
-"nor between two tensor objects."
+msgid "Multiplication and division are not supported between two vector objects nor between two tensor objects."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:18
@@ -75,9 +62,7 @@ msgid "A vector cannot be added to a tensor."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:21
-msgid ""
-"A three-dimensional surface tensor cannot be added to a three-dimensional"
-" planar tensor."
+msgid "A three-dimensional surface tensor cannot be added to a three-dimensional planar tensor."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:22
@@ -85,10 +70,7 @@ msgid "INTEGRATION_POINT data cannot be added to ELEMENT_NODAL data."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:23
-msgid ""
-"If the fields in the expression were obtained using the getSubset method,"
-" the same getSubset operations must have been applied in the same order "
-"to obtain each field."
+msgid "If the fields in the expression were obtained using the getSubset method, the same getSubset operations must have been applied in the same order to obtain each field."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:24
@@ -96,31 +78,15 @@ msgid "Arguments to the trigonometric functions must be in radians."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:25
-msgid ""
-"Operations on tensors are performed in the local coordinate system, if it"
-" is available. Otherwise the global system is used. Abaqus assumes that "
-"the local coordinate systems are consistent for operations involving more"
-" than one tensor."
+msgid "Operations on tensors are performed in the local coordinate system, if it is available. Otherwise the global system is used. Abaqus assumes that the local coordinate systems are consistent for operations involving more than one tensor."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:26
-msgid ""
-"Operations between FieldValue objects associated with different locations"
-" in the model are allowed only if the data types are the same. If the "
-"locations in the model differ, the FieldValue computed will not be "
-"associated with a location. If the local coordinate systems of the "
-"FieldValue objects are not the same, the local coordinate systems of both"
-" fieldValues will be disregarded and the fieldValue computed will have no"
-" local coordinate system."
+msgid "Operations between FieldValue objects associated with different locations in the model are allowed only if the data types are the same. If the locations in the model differ, the FieldValue computed will not be associated with a location. If the local coordinate systems of the FieldValue objects are not the same, the local coordinate systems of both fieldValues will be disregarded and the fieldValue computed will have no local coordinate system."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:28
-msgid ""
-"The FieldOutput operations are significantly more efficient than the "
-"FieldValue operators. You can save the computed FieldOutput objects with "
-"the following procedure (see the example, "
-":doc:`user/output/python/examples:computations with FieldOutput "
-"objects`):"
+msgid "The FieldOutput operations are significantly more efficient than the FieldValue operators. You can save the computed FieldOutput objects with the following procedure (see the example, :doc:`user/output/python/examples:computations with FieldOutput objects`):"
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:30
@@ -128,9 +94,7 @@ msgid "Create a new FieldOutput object in the output database."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:31
-msgid ""
-"Use the `addData` method to add the new computed field objects to the new"
-" FieldOutput object."
+msgid "Use the `addData` method to add the new computed field objects to the new FieldOutput object."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:62
@@ -138,9 +102,7 @@ msgid "Valid mathematical operations"
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:64
-msgid ""
-"Table 1 describes the abbreviations that are used in mathematical "
-"operations."
+msgid "Table 1 describes the abbreviations that are used in mathematical operations."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:66
@@ -180,9 +142,7 @@ msgid "all"
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:71
-msgid ""
-"FieldOutput objects, FieldValue objects, HistoryVariable objects, or "
-"floating point numbers"
+msgid "FieldOutput objects, FieldValue objects, HistoryVariable objects, or floating point numbers"
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:74
@@ -488,16 +448,11 @@ msgid "Envelope calculations"
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:162
-msgid ""
-"You use envelope calculations to retrieve the extreme value for an output"
-" variable over a number of fields. Envelope calculations are especially "
-"useful for retrieving the extreme values over a number of load cases."
+msgid "You use envelope calculations to retrieve the extreme value for an output variable over a number of fields. Envelope calculations are especially useful for retrieving the extreme values over a number of load cases."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:164
-msgid ""
-"The following operators consider a list of fields and perform the "
-"envelope calculation:"
+msgid "The following operators consider a list of fields and perform the envelope calculation:"
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:187
@@ -509,18 +464,11 @@ msgid "The first object contains the requested extreme values."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:190
-msgid ""
-"The second object contains the indices of the fields for which the "
-"extreme values were found. The indices derive from the order in which you"
-" supplied the fields to the command."
+msgid "The second object contains the indices of the fields for which the extreme values were found. The indices derive from the order in which you supplied the fields to the command."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:192
-msgid ""
-"The optional **invariant** argument is a Symbolic Constant specifying the"
-" invariant to be used when comparing vectors or tensors. The optional "
-"**componentLabel** argument is a odb_String specifying the component of "
-"the vector or tensor to be used for selecting the extreme value."
+msgid "The optional **invariant** argument is a Symbolic Constant specifying the invariant to be used when comparing vectors or tensors. The optional **componentLabel** argument is a odb_String specifying the component of the vector or tensor to be used for selecting the extreme value."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:194
@@ -528,12 +476,7 @@ msgid "The following rules apply to envelope calculations:"
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:196
-msgid ""
-"Abaqus compares the values using scalar data. If you are looking for the "
-"extreme value of a vector or a tensor, you must supply an invariant or a "
-"component label for the selection of the extreme value. For example, for "
-"vectors you can supply the MAGNITUDE invariant and for tensors you can "
-"supply the MISES invariant."
+msgid "Abaqus compares the values using scalar data. If you are looking for the extreme value of a vector or a tensor, you must supply an invariant or a component label for the selection of the extreme value. For example, for vectors you can supply the MAGNITUDE invariant and for tensors you can supply the MISES invariant."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:197
@@ -545,9 +488,7 @@ msgid "VECTOR and TENSOR_3D_FULL fields cannot appear in the same list."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:200
-msgid ""
-"The output region of all the fields must be the same. All the fields must"
-" apply to the whole model, or all the fields must apply to the same set."
+msgid "The output region of all the fields must be the same. All the fields must apply to the whole model, or all the fields must apply to the same set."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:203
@@ -555,21 +496,11 @@ msgid "Transformation of results"
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:205
-msgid ""
-"Transformations of vector and tensor fields are supported for "
-"rectangular, cylindrical, and spherical coordinate systems. The "
-"coordinate systems can be fixed or model based. Model-based coordinate "
-"systems refer to nodes for position and orientation. Abaqus uses the "
-"coordinates of the deformed state to determine a systems origin and "
-"orientation for model-based coordinate systems. Transformations that use "
-"a model-based coordinate system can account for large displacements of "
-"both the coordinate system and the structure."
+msgid "Transformations of vector and tensor fields are supported for rectangular, cylindrical, and spherical coordinate systems. The coordinate systems can be fixed or model based. Model-based coordinate systems refer to nodes for position and orientation. Abaqus uses the coordinates of the deformed state to determine a systems origin and orientation for model-based coordinate systems. Transformations that use a model-based coordinate system can account for large displacements of both the coordinate system and the structure."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:207
-msgid ""
-"The steps required to transform results are (see also the example "
-":doc:`user/output/python/examples:transformation of field results`):"
+msgid "The steps required to transform results are (see also the example :doc:`user/output/python/examples:transformation of field results`):"
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:209
@@ -581,17 +512,11 @@ msgid "Retrieve the field from the database."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:211
-msgid ""
-"Use the `fieldOutput.getTransformedField` method to obtain a new field "
-"with the results in the specified coordinate system."
+msgid "Use the `fieldOutput.getTransformedField` method to obtain a new field with the results in the specified coordinate system."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:212
-msgid ""
-"For large displacement of the structure and coordinate system, you must "
-"also retrieve the displacement field at the frame. You must compute this "
-"displacement field for the whole model to ensure that the required "
-"displacement information is available."
+msgid "For large displacement of the structure and coordinate system, you must also retrieve the displacement field at the frame. You must compute this displacement field for the whole model to ensure that the required displacement information is available."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:214
@@ -599,34 +524,19 @@ msgid "The following rules apply to the transformation of results:"
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:216
-msgid ""
-"Beams, truss, and axisymmetric shell element results will not be "
-"transformed."
+msgid "Beams, truss, and axisymmetric shell element results will not be transformed."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:218
-msgid ""
-"The component directions 1, 2, and 3 of the transformed results will "
-"correspond to the system directions **X**, **Y**, and **Z** for "
-"rectangular coordinate systems; :math:`R`, :math:`\\theta`, and **Z** for"
-" cylindrical coordinate systems; and :math:`R`, :math:`\\theta`, and "
-":math:`\\phi` for spherical coordinate systems."
+msgid "The component directions 1, 2, and 3 of the transformed results will correspond to the system directions **X**, **Y**, and **Z** for rectangular coordinate systems; :math:`R`, :math:`\\theta`, and **Z** for cylindrical coordinate systems; and :math:`R`, :math:`\\theta`, and :math:`\\phi` for spherical coordinate systems."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:221
-msgid ""
-"Stress results for three-dimensional continuum elements transformed into "
-"a cylindrical system would have the hoop stress in S22, which is "
-"consistent with the coordinate system axis but inconsistent with the "
-"stress state for a three-dimensional axisymmetric elements having hoop "
-"stress in S33."
+msgid "Stress results for three-dimensional continuum elements transformed into a cylindrical system would have the hoop stress in S22, which is consistent with the coordinate system axis but inconsistent with the stress state for a three-dimensional axisymmetric elements having hoop stress in S33."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:223
-msgid ""
-"When you are transforming a tensor, the location or integration point "
-"always takes into account the deformation. The location of the coordinate"
-" system depends on the model, as follows:"
+msgid "When you are transforming a tensor, the location or integration point always takes into account the deformation. The location of the coordinate system depends on the model, as follows:"
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:225
@@ -634,24 +544,11 @@ msgid "If the system is fixed, the coordinate system is fixed."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:226
-msgid ""
-"If the system is model based, you must supply a displacement field that "
-"determines the instantaneous location and orientation of the coordinate "
-"system."
+msgid "If the system is model based, you must supply a displacement field that determines the instantaneous location and orientation of the coordinate system."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:228
-msgid ""
-"Abaqus will perform transformations of tensor results for shells, "
-"membranes, and planar elements as rotations of results about the element "
-"normal at the element result location. The element normal is the normal "
-"computed for the frame associated with the field by Abaqus, and you "
-"cannot redefine the normal. Abaqus defines the location of the results "
-"location from the nodal locations. You specify optional arguments if you "
-"want to use the deformed nodal locations to transform results. For "
-"rectangular, cylindrical, and spherical coordinate systems the second "
-"component direction for the transformed results will be determined by one"
-" of the following:"
+msgid "Abaqus will perform transformations of tensor results for shells, membranes, and planar elements as rotations of results about the element normal at the element result location. The element normal is the normal computed for the frame associated with the field by Abaqus, and you cannot redefine the normal. Abaqus defines the location of the results location from the nodal locations. You specify optional arguments if you want to use the deformed nodal locations to transform results. For rectangular, cylindrical, and spherical coordinate systems the second component direction for the transformed results will be determined by one of the following:"
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:230
@@ -671,9 +568,6 @@ msgid "A user-specified datum axis projected onto the element plane."
 msgstr ""
 
 #: ../../user/output/cpp/computations.rst:235
-msgid ""
-"If the coordinate system used for projection and the element normal have "
-"an angle less than the specified tolerance (the default is 30°), Abaqus "
-"will use the next axis and generate a warning."
+msgid "If the coordinate system used for projection and the element normal have an angle less than the specified tolerance (the default is 30°), Abaqus will use the next axis and generate a warning."
 msgstr ""
 
