@@ -19,15 +19,15 @@ msgstr ""
 
 #: ../../index.rst:125
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../index.rst:7
 msgid "abqpy documentation"
-msgstr ""
+msgstr "abqpy 文档"
 
 #: ../../index.rst:9
 msgid "Type hints for Abaqus/Python scripting."
-msgstr ""
+msgstr "Abaqus/Python 脚本的类型提示。"
 
 #: ../../index.rst:11
 msgid ""
@@ -38,6 +38,9 @@ msgid ""
 "build the model, submit the job and extract the output data in just one "
 "Python script, even without opening the Abaqus/CAE."
 msgstr ""
+"`abqpy` 是一个 Python 包，提供了一些类型提示，用于快速编写你的 Abaqus/Python 脚本，即便不打开 "
+"Abaqus/CAE。它还提供了一些简单的 API用于调用 Abaqus 命令执行你的 Python 脚本，以便使用 Python 脚本快速构建 "
+"Abaqus 模型，并提交作业给 Abaqus 进行计算，并从计算结果中提取数据。"
 
 #: ../../index.rst:18
 msgid ""
@@ -45,22 +48,28 @@ msgid ""
 "Python 2, so you must write codes that are compatiable with Python 2 and "
 "Python 3."
 msgstr ""
+"abqpy 基于 Python 3 进行开发，但 Abaqus 的 Python 解释器是 Python 2，所以你必须编写 Python 2 和"
+" Python 3 相互兼容的代码。"
 
 #: ../../index.rst:26
 msgid "Other links for this project"
-msgstr ""
+msgstr "本项目的其他链接"
 
 #: ../../index.rst:28
 msgid ""
 "GitHub repository: `github.com/haiiliin/abqpy "
 "<https://github.com/haiiliin/abqpy>`_"
 msgstr ""
+"GitHub 仓库: `github.com/haiiliin/abqpy "
+"<https://github.com/haiiliin/abqpy>`_"
 
 #: ../../index.rst:29
 msgid ""
 "GitHub repository for translations: `github.com/haiiliin/abqpy-"
 "translations <https://github.com/haiiliin/abqpy-translations>`_"
 msgstr ""
+"GitHub 仓库: `github.com/haiiliin/abqpy "
+"<https://github.com/haiiliin/abqpy>`_"
 
 #: ../../index.rst:30
 msgid "PyPI: `pypi.org/project/abqpy <https://pypi.org/project/abqpy/>`_"
@@ -80,11 +89,11 @@ msgstr ""
 
 #: ../../index.rst:35
 msgid "Quick Start"
-msgstr ""
+msgstr "快速开始"
 
 #: ../../index.rst:38
 msgid "Installation"
-msgstr ""
+msgstr "安装"
 
 #: ../../index.rst:40
 msgid ""
@@ -92,12 +101,14 @@ msgid ""
 "3.6 or an earlier version, please upgrade to Python 3.7 or a later "
 "version."
 msgstr ""
+"`abqpy` 支持 Python 3.7 或更高版本。如果你使用的是 Python 3.6 或更早的版本，请升级到 Python 3.7 "
+"或更高版本。"
 
 #: ../../index.rst:43
 msgid ""
 "`abqpy` is uploaded to `PyPI <https://pypi.org/project/abqpy>`_, you can "
 "simply install it using pip:"
-msgstr ""
+msgstr "`abqpy` 已经上传到 `PyPI <https://pypi.org/project/abqpy>`_，你可以使用 pip 来安装:"
 
 #: ../../index.rst:50
 msgid ""
@@ -106,6 +117,9 @@ msgid ""
 "it, since abqpy (from V1.0.15) depends on `ipynbname` and it is not "
 "distributed to anaconda, you have to use `pip` to install it manually:"
 msgstr ""
+"`abqpy` 已经上传到 `anaconda <https://anaconda.org/haiiliin/abqpy>`_，你可以使用 "
+"`conda` 来安装，因为 abqpy (V1.0.15 以后的版本) 依赖于 `ipynbname`，所以不能在 anaconda "
+"上发布，你需要使用 `pip` 来安装："
 
 #: ../../index.rst:59
 msgid ""
@@ -113,10 +127,12 @@ msgid ""
 "repository <https://github.com/haiiliin/abqpy>`_ and use `python` to "
 "install from the local directory:"
 msgstr ""
+"你可以通过下载 `GitHub 仓库 <https://github.com/haiiliin/abqpy>`_ 到本地，并使用 `python`"
+" 来安装："
 
 #: ../../index.rst:71
 msgid "Write your Abaqus/Python script"
-msgstr ""
+msgstr "编写你的 Abaqus/Python 脚本"
 
 #: ../../index.rst:73
 msgid ""
@@ -127,10 +143,13 @@ msgid ""
 "of the script, for more detailed documentation, please check `abqpy "
 "documentation <https://haiiliin.com/abqpy/>`_."
 msgstr ""
+"安装完成后，你可以开始编写你的 Abaqus/Python 脚本来创建你的模型。你可以参考 `案例 "
+"<https://github.com/haiiliin/abqpy/tree/main/examples>`_ "
+"查看一些示例脚本，更详细的文档请参考 `abqpy 文档 <https://haiiliin.com/abqpy/>`_ "
 
 #: ../../index.rst:80
 msgid "Setup your Abaqus Environment"
-msgstr ""
+msgstr "配置 Abaqus 环境"
 
 #: ../../index.rst:82
 msgid ""
@@ -138,6 +157,8 @@ msgid ""
 "the job, you need to tell `abqpy` where the Abaqus command is located. "
 "Usually, Abaqus command locates in a directory like this:"
 msgstr ""
+"为了使用 Abaqus 命令来执行 Python 脚本并提交作业，你需要告诉 `abqpy` Abaqus 命令所在的目录。通常，Abaqus "
+"命令都在这样的目录中："
 
 #: ../../index.rst:89
 msgid ""
@@ -146,28 +167,30 @@ msgid ""
 "`ABAQUS_BAT_PATH`, and set the value to the file path of the Abaqus "
 "command, i.e., `C:/SIMULIA/Commands/abaqus.bat`."
 msgstr ""
+"你可以把 `C:/SIMULIA/Commands` 目录添加到系统环境变量 `Path` 中，或者你也可以创建一个 新的系统变量名为 "
+"`ABAQUS_BAT_PATH`，并设置为 Abaqus 命令的文件路径，即`C:/SIMULIA/Commands/abaqus.bat`。"
 
 #: ../../index.rst:94
 msgid "Run your Abaqus/Python script"
-msgstr ""
+msgstr "运行你的 Abaqus/Python 脚本"
 
 #: ../../index.rst:96
 msgid ""
 "Now you can just run your Abaqus/Python script using your own Python "
 "interpreter that `abqpy` is installed."
-msgstr ""
+msgstr "现在你可以使用你自己的 Python 解释器来运行你的 Abaqus/Python 脚本。"
 
 #: ../../index.rst:-1 ../../index.rst:98
 msgid "Create an Abaqus Model"
-msgstr ""
+msgstr "创建一个 Abaqus 模型"
 
 #: ../../index.rst:-1 ../../index.rst:105
 msgid "Extract Output Data"
-msgstr ""
+msgstr "提取输出数据"
 
 #: ../../index.rst:113
 msgid "What next?"
-msgstr ""
+msgstr "接下来怎么做？"
 
 #: ../../index.rst:115
 msgid ""
@@ -178,14 +201,17 @@ msgid ""
 "descriptions of objects and methods of Abaqus models, check "
 ":doc:`references` for more detailed API references."
 msgstr ""
+"你可能会感到很困惑，这个包怎么工作，你可以到 :doc:`getting_started` 查看更详细的介绍，到 :doc:`tutorials`"
+" 查看一个简单的教程。有关 Abaqus/Python 脚本的文档，到 :doc:`summary` 查看 Abaqus "
+"模型的对象和方法的描述，到 :doc:`references` 查看更详细的 API 接口。"
 
 #: ../../index.rst:123
 msgid "Documentation"
-msgstr ""
+msgstr "文档"
 
 #: ../../index.rst:136
 msgid "Indices and tables"
-msgstr ""
+msgstr "索引和表格"
 
 #: ../../index.rst:138
 msgid ":ref:`genindex`"
