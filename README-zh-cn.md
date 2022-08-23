@@ -31,7 +31,7 @@ Abaqus/Python 脚本的类型提示
 - Anaconda: [anaconda.org/haiiliin/abqpy](https://anaconda.org/haiiliin/abqpy)
 - Read the Docs: [readthedocs.org/projects/abqpy](https://readthedocs.org/projects/abqpy/)
 - 中文文档: [abqpy.haiiliin.com/zh_CN/latest](https://abqpy.haiiliin.com/zh_CN/latest/)
-- 加入 Crowdin 进行文档翻译: [https://crowdin.com/project/abqpy](https://crowdin.com/project/abqpy)
+- 加入 Crowdin 进行文档翻译: [crowdin.com/project/abqpy](https://crowdin.com/project/abqpy)
 
 ## 欢迎拉取合并请求
 
