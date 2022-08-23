@@ -1,0 +1,324 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../reference/kernel/input.rst:3
+msgid "Input File Parser"
+msgstr ""
+
+#: ../../reference/kernel/input.rst:5
+msgid ""
+"The inpParser module provides functions that allow you to parse an Abaqus"
+" input file."
+msgstr ""
+
+#: ../../reference/kernel/input.rst:8
+msgid "Create input files"
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile:2 of
+msgid ""
+"The InputFile object is used to store the definitions in an Abaqus input "
+"file. InputFile objects can be created using the methods described in "
+"this section."
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile:6
+#: abaqus.InputFileParser.Keyword.Keyword:6 of
+msgid "This object can be accessed by:"
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile:13 of
+msgid ""
+"Check `InputFile on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../reference/kernel/input.rst:13
+msgid "Object features"
+msgstr ""
+
+#: ../../reference/kernel/input.rst:16
+msgid "AbaqusNDarray"
+msgstr ""
+
+#: abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:2 of
+msgid ""
+"The AbaqusNDarray object is a sequence object derived from numpy.ndarray "
+"and is used to store numeric keyword data from an Abaqus input file. This"
+" object is similar to the numpy.ndarray object, but the numeric elements "
+"are returned as standard Python objects, not numpy numeric types. The "
+"numeric elements can be:"
+msgstr ""
+
+#: abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:8 of
+msgid "All ints."
+msgstr ""
+
+#: abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:9 of
+msgid "All floats."
+msgstr ""
+
+#: abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:10 of
+msgid "First column int, all other columns floats."
+msgstr ""
+
+#: abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:12 of
+msgid ""
+"In the last of these cases, the member **colZeroIsInt** will be True; in "
+"the other two cases, it will be False."
+msgstr ""
+
+#: abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:16 of
+msgid ""
+"Check `AbaqusNDarray on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-abaqusndarraypyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../reference/kernel/input.rst:24
+msgid "InputFile"
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile
+#: abaqus.InputFileParser.Keyword.Keyword of
+msgid "Public Data Attributes:"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`file <abaqus.InputFileParser.InputFile.InputFile.file>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1 ../../docstring
+#: abaqus.InputFileParser.InputFile.InputFile.file:2 of
+msgid "A String specifying the source file name of the Abaqus input file."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ""
+":py:obj:`directory "
+"<abaqus.InputFileParser.InputFile.InputFile.directory>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1 ../../docstring
+#: abaqus.InputFileParser.InputFile.InputFile.directory:2 of
+msgid "A String specifying the directory where the input file is located."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`includes <abaqus.InputFileParser.InputFile.InputFile.includes>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1 ../../docstring
+#: abaqus.InputFileParser.InputFile.InputFile.includes:2 of
+msgid ""
+"A sequence of Strings specifying any additional input files included in "
+"the specified input file."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ""
+":py:obj:`missingIncludes "
+"<abaqus.InputFileParser.InputFile.InputFile.missingIncludes>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1 ../../docstring
+#: abaqus.InputFileParser.InputFile.InputFile.missingIncludes:2 of
+msgid ""
+"A sequence of Strings for input files included in the specified input "
+"file that could not be located."
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile of
+msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`__init__ "
+"<abaqus.InputFileParser.InputFile.InputFile.__init__>`\\ \\(file\\[\\, "
+"directory\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method creates an InputFile object by reading an Abaqus input file."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`parse <abaqus.InputFileParser.InputFile.InputFile.parse>`\\ "
+"\\(\\[organize\\, verbose\\, bulk\\, usePyArray\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: abaqus.InputFileParser.InputFile.InputFile.parse:2 of
+msgid "This method parses the input file associated with the InputFile object."
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.parse:5 of
+msgid ""
+"Check `InputFile.parse() on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all"
+"#simaker-inputfileparsepyc>`_."
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.parse of
+msgid "Parameters"
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.parse:11 of
+msgid "**organize**"
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.parse:10 of
+msgid ""
+"A Boolean specifying whether keywords should be organized into "
+"suboptions. The default is False."
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.parse:16 of
+msgid "**verbose**"
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.parse:14 of
+msgid ""
+"A Boolean specifying whether verbose output is to be printed. If "
+"**verbose** is True, information about fatal errors is printed. If no "
+"fatal errors occur, there is no output. The default is False."
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.parse:20 of
+msgid "**bulk**"
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.parse:19 of
+msgid ""
+"A Boolean specifying whether the input file includes bulk data that "
+"should be parsed. The default is True."
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.parse:26 of
+msgid "**usePyArray**"
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.parse:23 of
+msgid ""
+"A Boolean specifying that parse method can return an AbaqusNDarray object"
+" for a keyword data value. In cases where large amounts of numerical data"
+" (i.e., large node arrays) are expected, it is recommended that you use "
+"the option usePyArray=True. The default is False."
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.parse of
+msgid "Returns"
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.parse:34 of
+msgid ":obj:`KeywordSequence`"
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.parse:31 of
+msgid "A KeywordSequence object."
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.parse of
+msgid "Raises"
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.parse:48 of
+msgid ":obj:`ValueError`"
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.parse:39 of
+msgid ""
+"If you parse an input file more than once, a ValueError is raised for "
+"each subsequent parsing."
+msgstr ""
+
+#: ../../reference/kernel/input.rst:32
+msgid "Keyword"
+msgstr ""
+
+#: abaqus.InputFileParser.Keyword.Keyword:2 of
+msgid ""
+"The Keyword object is used to store a keyword definition from an Abaqus "
+"input file. Keyword objects are returned via the InputFile.parse() "
+"method."
+msgstr ""
+
+#: abaqus.InputFileParser.Keyword.Keyword:13 of
+msgid ""
+"Check `Keyword on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`name <abaqus.InputFileParser.Keyword.Keyword.name>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1 ../../docstring
+#: abaqus.InputFileParser.Keyword.Keyword.name:2 of
+msgid "A String specifying the name of the keyword."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`parameter <abaqus.InputFileParser.Keyword.Keyword.parameter>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1 ../../docstring
+#: abaqus.InputFileParser.Keyword.Keyword.parameter:2 of
+msgid "A Dictionary of Strings specifying the keyword parameters."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`data <abaqus.InputFileParser.Keyword.Keyword.data>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ""
+"A sequence of sequences or an AbaqusNDarray object specifying the keyword"
+" data."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`suboptions <abaqus.InputFileParser.Keyword.Keyword.suboptions>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1 ../../docstring
+#: abaqus.InputFileParser.Keyword.Keyword.suboptions:2 of
+msgid "A KeywordSequence specifying the suboptions of the keyword."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`comments <abaqus.InputFileParser.Keyword.Keyword.comments>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1 ../../docstring
+#: abaqus.InputFileParser.Keyword.Keyword.comments:2 of
+msgid "A sequence of Strings specifying the comments."
+msgstr ""
+
+#: ../../docstring abaqus.InputFileParser.Keyword.Keyword.data:2 of
+msgid ""
+"A sequence of sequences or an AbaqusNDarray object specifying the keyword"
+" data. The type of the leaf objects depends on the keyword. The "
+"AbaqusNDarray object is returned only if the data is suitable and if the "
+"InputFile.parse() method was called with the option usePyArray=True. In "
+"cases where large amounts of numerical data (i.e., large node arrays) are"
+" expected, it is recommended that you use the option usePyArray=True."
+msgstr ""
+
