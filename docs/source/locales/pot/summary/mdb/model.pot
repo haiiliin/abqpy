@@ -1,0 +1,2641 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../summary/mdb/model.rst:8
+msgid "Objects in model"
+msgstr ""
+
+#: ../../summary/mdb/model.rst:3
+msgid "Abaqus Model"
+msgstr ""
+
+#: ../../summary/mdb/model.rst:5
+msgid "Model commands are used to create Abaqus/CAE models. A finished model contains all the data that Abaqus/CAE needs to create and submit an analysis to Abaqus/Standard or Abaqus/Explicit. Models are stored in a model database."
+msgstr ""
+
+#: ../../summary/mdb/model.rst:34
+msgid "Create models"
+msgstr ""
+
+#: ../../../../src/abaqus/Mdb/Mdb.py:docstring of abaqus.Mdb.Mdb.Mdb:2
+msgid "The Mdb object is the high-level Abaqus model database. A model database stores models and analysis controls."
+msgstr ""
+
+#: ../../../../src/abaqus/Mdb/Mdb.py:docstring of abaqus.Mdb.Mdb.Mdb:6
+#: ../../../../src/abaqus/Model/Model.py:docstring of abaqus.Model.Model.Model:5
+msgid "This object can be accessed by:"
+msgstr ""
+
+#: ../../../../src/abaqus/Mdb/Mdb.py:docstring of abaqus.Mdb.Mdb.Mdb:13
+msgid "Check `Mdb on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/Mdb/Mdb.py:docstring of abaqus.Mdb.Mdb.Mdb:0
+#: ../../../../src/abaqus/Model/Model.py:docstring of abaqus.Model.Model.Model:0
+msgid "Public Data Attributes:"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`version <abaqus.Mdb.Mdb.Mdb.version>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "An Int specifying the release number of the Mdb object in memory."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`lastChangedCount <abaqus.Mdb.Mdb.Mdb.lastChangedCount>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A Float specifying the value of a counter associated with the Mdb object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`jobs <abaqus.Mdb.Mdb.Mdb.jobs>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A repository of Job objects."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`adaptivityProcesses <abaqus.Mdb.Mdb.Mdb.adaptivityProcesses>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A repository of AdaptivityProcess objects."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`optimizationProcesses <abaqus.Mdb.Mdb.Mdb.optimizationProcesses>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A repository of OptimizationProcess objects."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`meshEditOptions <abaqus.Mdb.Mdb.Mdb.meshEditOptions>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A :py:class:`~abaqus.EditMesh.MeshEditOptions.MeshEditOptions` object specifying the undo/redo behavior when editing meshes on parts or part instances."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`models <abaqus.Mdb.Mdb.Mdb.models>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A repository of Model objects."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Mdb.Mdb.Mdb.customData>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`annotations <abaqus.Mdb.Mdb.Mdb.annotations>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A repository of Annotation objects."
+msgstr ""
+
+#: ../../../../src/abaqus/Mdb/Mdb.py:docstring of abaqus.Mdb.Mdb.Mdb:0
+#: ../../../../src/abaqus/Model/Model.py:docstring of abaqus.Model.Model.Model:0
+msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`Model <abaqus.Mdb.Mdb.Mdb.Model>`\\ \\(name\\[\\, description\\, stefanBoltzmann\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a Model object."
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid ":py:obj:`openAcis <abaqus.Mdb.Mdb.Mdb.openAcis>`\\ \\(fileName\\[\\, scaleFromFile\\]\\)"
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid "This method creates an AcisFile object from a file containing ACIS-format geometry."
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid ":py:obj:`openCatia <abaqus.Mdb.Mdb.Mdb.openCatia>`\\ \\(fileName\\[\\, topology\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid "This method creates an AcisFile object from a file containing V5-format geometry."
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid ":py:obj:`openEnf <abaqus.Mdb.Mdb.Mdb.openEnf>`\\ \\(fileName\\, fileType\\[\\, topology\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid "This method creates an AcisFile object from a file containing Elysium Neutral File-format geometry that was created by CATIA V5, I-DEAS, or Pro/ENGINEER."
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid ":py:obj:`openIges <abaqus.Mdb.Mdb.Mdb.openIges>`\\ \\(fileName\\[\\, trimCurve\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid "This method creates an AcisFile object from a file containing IGES-format geometry."
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid ":py:obj:`openParasolid <abaqus.Mdb.Mdb.Mdb.openParasolid>`\\ \\(fileName\\[\\, topology\\]\\)"
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid "This method creates an AcisFile object from a file containing Parasolid-format geometry."
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid ":py:obj:`openStep <abaqus.Mdb.Mdb.Mdb.openStep>`\\ \\(fileName\\[\\, scale\\]\\)"
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid "This method creates an AcisFile object from a file containing STEP-format geometry."
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid ":py:obj:`openVda <abaqus.Mdb.Mdb.Mdb.openVda>`\\ \\(fileName\\)"
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid "This method creates an AcisFile object from a file containing VDA-FS-format geometry."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`Job <abaqus.Mdb.Mdb.Mdb.Job>`\\ \\(name\\, model\\[\\, description\\, type\\, queue\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method creates an analysis job using a model on a model database (MDB) for the model definition."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`JobFromInputFile <abaqus.Mdb.Mdb.Mdb.JobFromInputFile>`\\ \\(name\\, inputFileName\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method creates an analysis job using an input file for the model definition."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`OptimizationProcess <abaqus.Mdb.Mdb.Mdb.OptimizationProcess>`\\ \\(name\\, model\\, task\\, ...\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method creates an OptimizationProcess object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.Mdb.Mdb.Mdb.__init__>`\\ \\(\\[pathName\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This constructor creates an empty Mdb object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`importDxf <abaqus.Mdb.Mdb.Mdb.importDxf>`\\ \\(fileName\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a ConstrainedSketch object from a file containing dxf-format (AutoCAD) geometry."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`openMdb <abaqus.Mdb.Mdb.Mdb.openMdb>`\\ \\(pathName\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method opens an existing model database file."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`close <abaqus.Mdb.Mdb.Mdb.close>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method closes an open Mdb object but does not save the Mdb object to disk."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`save <abaqus.Mdb.Mdb.Mdb.save>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method saves an Mdb object to disk at the location specified by **pathName** (*pathName* is a member of the Mdb object)."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`saveAs <abaqus.Mdb.Mdb.Mdb.saveAs>`\\ \\(pathName\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method saves an Mdb object to disk at the specified location."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`openAuxMdb <abaqus.Mdb.Mdb.Mdb.openAuxMdb>`\\ \\(pathName\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method opens an auxiliary Mdb object on the disk at the specified location."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`closeAuxMdb <abaqus.Mdb.Mdb.Mdb.closeAuxMdb>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method closes the auxiliary Mdb which had been opened earlier using the openAuxMdb command."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`getAuxMdbModelNames <abaqus.Mdb.Mdb.Mdb.getAuxMdbModelNames>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method returns a list of model names present in the auxiliary Mdb which had been opened earlier using the openAuxMdb command."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`copyAuxMdbModel <abaqus.Mdb.Mdb.Mdb.copyAuxMdbModel>`\\ \\(fromName\\[\\, toName\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method copies a specified model from the auxiliary Mdb which had been opened earlier using the openAuxMdb command."
+msgstr ""
+
+#: ../../summary/mdb/model.rst:42
+msgid "Model"
+msgstr ""
+
+#: ../../../../src/abaqus/Model/Model.py:docstring of abaqus.Model.Model.Model:2
+msgid "Abaqus creates a Model object named `Model-1` when a session is started."
+msgstr ""
+
+#: ../../../../src/abaqus/Model/Model.py:docstring of abaqus.Model.Model.Model:11
+msgid "The corresponding analysis keywords are:"
+msgstr ""
+
+#: ../../../../src/abaqus/Model/Model.py:docstring of abaqus.Model.Model.Model:13
+msgid "PHYSICAL CONSTANTS"
+msgstr ""
+
+#: ../../../../src/abaqus/Model/Model.py:docstring of abaqus.Model.Model.Model:16
+msgid "Check `Model on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+#: ../../None:5:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Model.Model.Model.name>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+#: ../../None:5:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+msgid "A String specifying the repository key."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`stefanBoltzmann <abaqus.Model.Model.Model.stefanBoltzmann>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "None or a Float specifying the Stefan-Boltzmann constant."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`absoluteZero <abaqus.Model.Model.Model.absoluteZero>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "None or a Float specifying the absolute zero constant."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`waveFormulation <abaqus.Model.Model.Model.waveFormulation>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`universalGas <abaqus.Model.Model.Model.universalGas>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "None or a Float specifying the universal gas constant."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`noPartsInputFile <abaqus.Model.Model.Model.noPartsInputFile>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A Boolean specifying whether an input file should be written without parts and assemblies."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`restartIncrement <abaqus.Model.Model.Model.restartIncrement>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "An Int specifying the increment, interval, iteration or cycle where the restart analysis will start."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`endRestartStep <abaqus.Model.Model.Model.endRestartStep>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A Boolean specifying that the step specified by **restartStep** should be terminated at the increment specified by **restartIncrement**."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`shellToSolid <abaqus.Model.Model.Model.shellToSolid>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A Boolean specifying that a shell global model drives a solid submodel."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`lastChangedCount <abaqus.Model.Model.Model.lastChangedCount>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A Float specifying the time stamp that indicates when the model was last changed."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`description <abaqus.Model.Model.Model.description>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A String specifying the purpose and contents of the Model object."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`restartJob <abaqus.Model.Model.Model.restartJob>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A String specifying the name of the job that generated the restart data."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`restartStep <abaqus.Model.Model.Model.restartStep>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A String specifying the name of the step where the restart analysis will start."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`globalJob <abaqus.Model.Model.Model.globalJob>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A String specifying the name of the job that generated the results for the global model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`copyConstraints <abaqus.Model.Model.Model.copyConstraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A boolean specifying the status of constraints created in a model, in the model which instances this model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`copyConnectors <abaqus.Model.Model.Model.copyConnectors>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A boolean specifying the status of connectors created in a model, in the model which instances this model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`copyInteractions <abaqus.Model.Model.Model.copyInteractions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A boolean specifying the status of interactions created in a model, in the model which instances this model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`keywordBlock <abaqus.Model.Model.Model.keywordBlock>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`rootAssembly <abaqus.Model.Model.Model.rootAssembly>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`amplitudes <abaqus.Model.Model.Model.amplitudes>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Amplitude objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`profiles <abaqus.Model.Model.Model.profiles>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Profile objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`boundaryConditions <abaqus.Model.Model.Model.boundaryConditions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of BoundaryCondition objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`constraints <abaqus.Model.Model.Model.constraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ConstrainedSketchConstraint objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`analyticalFields <abaqus.Model.Model.Model.analyticalFields>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of AnalyticalField objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`discreteFields <abaqus.Model.Model.Model.discreteFields>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of DiscreteField objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`predefinedFields <abaqus.Model.Model.Model.predefinedFields>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of PredefinedField objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`interactions <abaqus.Model.Model.Model.interactions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Interaction objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`interactionProperties <abaqus.Model.Model.Model.interactionProperties>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of InteractionProperty objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`contactControls <abaqus.Model.Model.Model.contactControls>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ContactControl objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`contactInitializations <abaqus.Model.Model.Model.contactInitializations>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ContactInitialization objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`contactStabilizations <abaqus.Model.Model.Model.contactStabilizations>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ContactStabilization objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`linkedInstances <abaqus.Model.Model.Model.linkedInstances>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`linkedParts <abaqus.Model.Model.Model.linkedParts>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`loads <abaqus.Model.Model.Model.loads>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Load objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`materials <abaqus.Model.Model.Model.materials>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Material objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`calibrations <abaqus.Model.Model.Model.calibrations>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Calibration objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`sections <abaqus.Model.Model.Model.sections>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Section objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`remeshingRules <abaqus.Model.Model.Model.remeshingRules>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of RemeshingRule objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`sketches <abaqus.Model.Model.Model.sketches>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ConstrainedSketch objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`parts <abaqus.Model.Model.Model.parts>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Part objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`steps <abaqus.Model.Model.Model.steps>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Step objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`featureOptions <abaqus.Model.Model.Model.featureOptions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`adaptiveMeshConstraints <abaqus.Model.Model.Model.adaptiveMeshConstraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of AdaptiveMeshConstraint objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`adaptiveMeshControls <abaqus.Model.Model.Model.adaptiveMeshControls>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of AdaptiveMeshControl objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`timePoints <abaqus.Model.Model.Model.timePoints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of TimePoint objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`filters <abaqus.Model.Model.Model.filters>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Filter objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`integratedOutputSections <abaqus.Model.Model.Model.integratedOutputSections>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of IntegratedOutputSection objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`fieldOutputRequests <abaqus.Model.Model.Model.fieldOutputRequests>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of FieldOutputRequest objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`historyOutputRequests <abaqus.Model.Model.Model.historyOutputRequests>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of HistoryOutputRequest objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`optimizationTasks <abaqus.Model.Model.Model.optimizationTasks>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of OptimizationTask objects."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+#: ../../None:5:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`region <abaqus.Model.Model.Model.region>`\\"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+#: ../../None:5:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
+msgid "A :py:class:`~abaqus.Region.Region.Region` object on which the **fluidCavity** interaction is specified."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`endStep <abaqus.Model.Model.Model.endStep>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "The SymbolicConstant LAST_STEP or an Int specifying the step from which the initial state values are to be read or the SymbolicConstant LAST_STEP."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`endIncrement <abaqus.Model.Model.Model.endIncrement>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "The SymbolicConstant STEP_END or an Int specifying the increment, interval or iteration of the step set in **endStep** or the SymbolicConstant STEP_END."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`updateReferenceConfiguration <abaqus.Model.Model.Model.updateReferenceConfiguration>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "A Boolean specifying whether to update the reference configuration based on the import data."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`field <abaqus.Model.Model.Model.field>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+msgid "A String specifying the name of the AnalyticalField object associated with this predefined field."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`numBackStress <abaqus.Model.Model.Model.numBackStress>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "An Int specifying the number of backstresses."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`equivPlasticStrain <abaqus.Model.Model.Model.equivPlasticStrain>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "A sequence of Floats specifying the initial equivalent Plastic strain."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`backStress <abaqus.Model.Model.Model.backStress>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "A sequence of sequences of Floats specifying the initial backstress tensor for kinematic hardening models."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`sectPtNum <abaqus.Model.Model.Model.sectPtNum>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "A sequence of Ints specifying section point numbers."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`definition <abaqus.Model.Model.Model.definition>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "A SymbolicConstant specifying different types of kinematic hardening."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`rebarLayerNames <abaqus.Model.Model.Model.rebarLayerNames>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "A sequence of Strings specifying rebar layer names."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`distributionType <abaqus.Model.Model.Model.distributionType>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+msgid "A SymbolicConstant specifying whether the load is uniform."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`useFields <abaqus.Model.Model.Model.useFields>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "A Boolean specifying whether the volume fraction data will be uniform or defined by discrete fields."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`assignmentList <abaqus.Model.Model.Model.assignmentList>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "A sequence of tuples specifying the uniform volume fractions to be assigned."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`fieldList <abaqus.Model.Model.Model.fieldList>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+#: ../../None:7:<autosummary>:1
+msgid "A sequence of tuples specifying the discrete volume fractions to be assigned."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`colorList <abaqus.Model.Model.Model.colorList>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "A sequence of three Ints specifying colors used to display the material instance assignments."
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`adaptiveRemesh <abaqus.Model.Model.Model.adaptiveRemesh>`\\ \\(odb\\)"
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid "This method remeshes the model using the active remesh rules in the model and the error indicator results from a previous analysis."
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`AdaptiveMeshConstraint <abaqus.Model.Model.Model.AdaptiveMeshConstraint>`\\ \\(name\\, category\\, region\\)"
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid "The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary Lagrangian Eularian (ALE) style AdaptiveMeshConstraint objects."
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`AdaptiveMeshControl <abaqus.Model.Model.Model.AdaptiveMeshControl>`\\ \\(name\\[\\, remapping\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid "This method creates an AdaptiveMeshControl object."
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`DisplacementAdaptiveMeshConstraint <abaqus.Model.Model.Model.DisplacementAdaptiveMeshConstraint>`\\ \\(name\\, ...\\)"
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid "This method creates a DisplacementAdaptiveMeshConstraint object."
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`RemeshingRule <abaqus.Model.Model.Model.RemeshingRule>`\\ \\(name\\, stepName\\, variables\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid "This method creates a RemeshingRule object."
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`VelocityAdaptiveMeshConstraint <abaqus.Model.Model.Model.VelocityAdaptiveMeshConstraint>`\\ \\(name\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid "This method creates a VelocityAdaptiveMeshConstraint object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`ActuatorAmplitude <abaqus.Model.Model.Model.ActuatorAmplitude>`\\ \\(name\\[\\, timeSpan\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a ActuatorAmplitude object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`DecayAmplitude <abaqus.Model.Model.Model.DecayAmplitude>`\\ \\(name\\, initial\\, maximum\\, ...\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a DecayAmplitude object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`EquallySpacedAmplitude <abaqus.Model.Model.Model.EquallySpacedAmplitude>`\\ \\(name\\, fixedInterval\\, data\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates an EquallySpacedAmplitude object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`ModulatedAmplitude <abaqus.Model.Model.Model.ModulatedAmplitude>`\\ \\(name\\, initial\\, magnitude\\, ...\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a ModulatedAmplitude object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`PeriodicAmplitude <abaqus.Model.Model.Model.PeriodicAmplitude>`\\ \\(name\\, frequency\\, start\\, ...\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a PeriodicAmplitude object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`PsdDefinition <abaqus.Model.Model.Model.PsdDefinition>`\\ \\(name\\, data\\[\\, unitType\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a PsdDefinition object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`SmoothStepAmplitude <abaqus.Model.Model.Model.SmoothStepAmplitude>`\\ \\(name\\, data\\[\\, timeSpan\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a SmoothStepAmplitude object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`SolutionDependentAmplitude <abaqus.Model.Model.Model.SolutionDependentAmplitude>`\\ \\(name\\[\\, initial\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a SolutionDependentAmplitude object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`SpectrumAmplitude <abaqus.Model.Model.Model.SpectrumAmplitude>`\\ \\(name\\, method\\, data\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a SpectrumAmplitude object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`TabularAmplitude <abaqus.Model.Model.Model.TabularAmplitude>`\\ \\(name\\, data\\[\\, smooth\\, timeSpan\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a TabularAmplitude object."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`Instance <abaqus.Model.Model.Model.Instance>`\\ \\(name\\, objectToCopy\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method copies a PartInstance object from the specified model and creates a new PartInstance object."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`convertAllSketches <abaqus.Model.Model.Model.convertAllSketches>`\\ \\(\\[regenerate\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method converts all sketches from Abaqus 6.5 or earlier to the equivalent ConstrainedSketch objects."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`linkInstances <abaqus.Model.Model.Model.linkInstances>`\\ \\(instancesMap\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method links the selected PartInstance objects to the corresponding PartInstance objects from the specified models."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`AccelerationBaseMotionBC <abaqus.Model.Model.Model.AccelerationBaseMotionBC>`\\ \\(name\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a AccelerationBaseMotionBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`AccelerationBC <abaqus.Model.Model.Model.AccelerationBC>`\\ \\(name\\, createStepName\\, region\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates an AccelerationBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`AcousticPressureBC <abaqus.Model.Model.Model.AcousticPressureBC>`\\ \\(name\\, createStepName\\, region\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a AcousticPressureBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`ConcentrationBC <abaqus.Model.Model.Model.ConcentrationBC>`\\ \\(name\\, createStepName\\, region\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a ConcentrationBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`ConnAccelerationBC <abaqus.Model.Model.Model.ConnAccelerationBC>`\\ \\(name\\, createStepName\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates an ConnAccelerationBC object on a wire region."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`ConnDisplacementBC <abaqus.Model.Model.Model.ConnDisplacementBC>`\\ \\(name\\, createStepName\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a ConnDisplacementBC object on a wire region."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`ConnVelocityBC <abaqus.Model.Model.Model.ConnVelocityBC>`\\ \\(name\\, createStepName\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a ConnVelocityBC object on a wire region."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`DisplacementBaseMotionBC <abaqus.Model.Model.Model.DisplacementBaseMotionBC>`\\ \\(name\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a DisplacementBaseMotionBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`DisplacementBC <abaqus.Model.Model.Model.DisplacementBC>`\\ \\(name\\, createStepName\\, region\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a DisplacementBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`ElectricPotentialBC <abaqus.Model.Model.Model.ElectricPotentialBC>`\\ \\(name\\, createStepName\\, region\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates an ElectricPotentialBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`EulerianBC <abaqus.Model.Model.Model.EulerianBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a EulerianBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`EulerianMotionBC <abaqus.Model.Model.Model.EulerianMotionBC>`\\ \\(name\\, createStepName\\, ...\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates an EulerianMotionBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`FluidCavityPressureBC <abaqus.Model.Model.Model.FluidCavityPressureBC>`\\ \\(name\\, createStepName\\, ...\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a FluidCavityPressureBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`MagneticVectorPotentialBC <abaqus.Model.Model.Model.MagneticVectorPotentialBC>`\\ \\(name\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a MagneticVectorPotentialBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`MaterialFlowBC <abaqus.Model.Model.Model.MaterialFlowBC>`\\ \\(name\\, createStepName\\, region\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a MaterialFlowBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`PorePressureBC <abaqus.Model.Model.Model.PorePressureBC>`\\ \\(name\\, createStepName\\, region\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a PorePressureBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`RetainedNodalDofsBC <abaqus.Model.Model.Model.RetainedNodalDofsBC>`\\ \\(name\\, createStepName\\, region\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a RetainedNodalDofsBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`SecondaryBaseBC <abaqus.Model.Model.Model.SecondaryBaseBC>`\\ \\(name\\, createStepName\\, ...\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a SecondaryBaseBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`SubmodelBC <abaqus.Model.Model.Model.SubmodelBC>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a SubmodelBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`TemperatureBC <abaqus.Model.Model.Model.TemperatureBC>`\\ \\(name\\, createStepName\\, region\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a TemperatureBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`VelocityBaseMotionBC <abaqus.Model.Model.Model.VelocityBaseMotionBC>`\\ \\(name\\, createStepName\\, dof\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a VelocityBaseMotionBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`VelocityBC <abaqus.Model.Model.Model.VelocityBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a VelocityBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`EncastreBC <abaqus.Model.Model.Model.EncastreBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates an encastre TypeBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`PinnedBC <abaqus.Model.Model.Model.PinnedBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a pinned TypeBC object."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`XsymmBC <abaqus.Model.Model.Model.XsymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a TypeBC object that specifies symmetry about the **X**-axis."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`YsymmBC <abaqus.Model.Model.Model.YsymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a TypeBC object that specifies symmetry about the **Y**-axis."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`ZsymmBC <abaqus.Model.Model.Model.ZsymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a TypeBC object that specifies symmetry about the **Z**-axis."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`XasymmBC <abaqus.Model.Model.Model.XasymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a TypeBC object that specifies antisymmetry about the **X**-axis."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`YasymmBC <abaqus.Model.Model.Model.YasymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a TypeBC object that specifies antisymmetry about the **Y**-axis."
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`ZasymmBC <abaqus.Model.Model.Model.ZasymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid "This method creates a TypeBC object that specifies antisymmetry about the **Z**-axis."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`Calibration <abaqus.Model.Model.Model.Calibration>`\\ \\(name\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid "This method creates a Calibration object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`AdjustPoints <abaqus.Model.Model.Model.AdjustPoints>`\\ \\(name\\, surface\\, controlPoints\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates an AdjustPoints object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`Coupling <abaqus.Model.Model.Model.Coupling>`\\ \\(name\\, surface\\, controlPoint\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates a Coupling object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`DisplayBody <abaqus.Model.Model.Model.DisplayBody>`\\ \\(name\\, instance\\, controlPoints\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates a DisplayBody object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`EmbeddedRegion <abaqus.Model.Model.Model.EmbeddedRegion>`\\ \\(name\\, embeddedRegion\\, hostRegion\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates a EmbeddedRegion object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`Equation <abaqus.Model.Model.Model.Equation>`\\ \\(name\\, terms\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates an Equation object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`MultipointConstraint <abaqus.Model.Model.Model.MultipointConstraint>`\\ \\(name\\, surface\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates a MultipointConstraint object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`RigidBody <abaqus.Model.Model.Model.RigidBody>`\\ \\(name\\, refPointRegion\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates a RigidBody object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`ShellSolidCoupling <abaqus.Model.Model.Model.ShellSolidCoupling>`\\ \\(name\\, shellEdge\\, solidFace\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates a ShellSolidCoupling object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`Tie <abaqus.Model.Model.Model.Tie>`\\ \\(name\\, master\\, slave\\[\\, adjust\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates a Tie object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`ButterworthFilter <abaqus.Model.Model.Model.ButterworthFilter>`\\ \\(name\\, cutoffFrequency\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method creates a ButterworthFilter object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`Chebyshev1Filter <abaqus.Model.Model.Model.Chebyshev1Filter>`\\ \\(name\\, cutoffFrequency\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method creates a Chebyshev1Filter object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`Chebyshev2Filter <abaqus.Model.Model.Model.Chebyshev2Filter>`\\ \\(name\\, cutoffFrequency\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method creates a Chebyshev2Filter object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`OperatorFilter <abaqus.Model.Model.Model.OperatorFilter>`\\ \\(name\\, cutoffFrequency\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method creates an OperatorFilter object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`contactDetection <abaqus.Model.Model.Model.contactDetection>`\\ \\(\\[name\\, createStepName\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method uses contact detection to create SurfaceToSurfaceContactStd, SurfaceToSurfaceContactExp, and Tie objects."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`getSurfaceSeparation <abaqus.Model.Model.Model.getSurfaceSeparation>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method returns a list of all possible contacts that can be created using the ContactDetection method."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`AcousticImpedance <abaqus.Model.Model.Model.AcousticImpedance>`\\ \\(name\\, createStepName\\, surface\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates an AcousticImpedance object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`ActuatorSensor <abaqus.Model.Model.Model.ActuatorSensor>`\\ \\(name\\, createStepName\\, point\\, ...\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates an ActuatorSensor object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`CavityRadiation <abaqus.Model.Model.Model.CavityRadiation>`\\ \\(name\\, createStepName\\, surfaces\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates a CavityRadiation object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`ConcentratedFilmCondition <abaqus.Model.Model.Model.ConcentratedFilmCondition>`\\ \\(name\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates a ConcentratedFilmCondition object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`ConcentratedRadiationToAmbient <abaqus.Model.Model.Model.ConcentratedRadiationToAmbient>`\\ \\(name\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates a ConcentratedRadiationToAmbient object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`ContactExp <abaqus.Model.Model.Model.ContactExp>`\\ \\(name\\, createStepName\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates a ContactExp object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`ContactStd <abaqus.Model.Model.Model.ContactStd>`\\ \\(name\\, createStepName\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates a ContactStd object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`CyclicSymmetry <abaqus.Model.Model.Model.CyclicSymmetry>`\\ \\(name\\, createStepName\\, master\\, ...\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates a CyclicSymmetry object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`ElasticFoundation <abaqus.Model.Model.Model.ElasticFoundation>`\\ \\(name\\, createStepName\\, ...\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates an ElasticFoundation object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`FilmCondition <abaqus.Model.Model.Model.FilmCondition>`\\ \\(name\\, createStepName\\, surface\\, ...\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates a FilmCondition object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`FluidCavity <abaqus.Model.Model.Model.FluidCavity>`\\ \\(name\\, createStepName\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates an FluidCavity object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`FluidExchange <abaqus.Model.Model.Model.FluidExchange>`\\ \\(name\\, createStepName\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates an FluidExchange object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`FluidInflator <abaqus.Model.Model.Model.FluidInflator>`\\ \\(name\\, createStepName\\, cavity\\, ...\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates a FluidInflator object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`IncidentWave <abaqus.Model.Model.Model.IncidentWave>`\\ \\(name\\, createStepName\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates an IncidentWave object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`ModelChange <abaqus.Model.Model.Model.ModelChange>`\\ \\(name\\, createStepName\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates a ModelChange object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`PressurePenetration <abaqus.Model.Model.Model.PressurePenetration>`\\ \\(name\\, createStepName\\, ...\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates a PressurePenetration object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`RadiationToAmbient <abaqus.Model.Model.Model.RadiationToAmbient>`\\ \\(name\\, createStepName\\, ...\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates a RadiationToAmbient object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`SelfContactExp <abaqus.Model.Model.Model.SelfContactExp>`\\ \\(name\\, createStepName\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates a SelfContactExp object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`SelfContactStd <abaqus.Model.Model.Model.SelfContactStd>`\\ \\(name\\, createStepName\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates a SelfContactStd object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`StdXplCosimulation <abaqus.Model.Model.Model.StdXplCosimulation>`\\ \\(name\\, createStepName\\, region\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates a StdXplCosimulation object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`SurfaceToSurfaceContactExp <abaqus.Model.Model.Model.SurfaceToSurfaceContactExp>`\\ \\(name\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates a SurfaceToSurfaceContactExp object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`SurfaceToSurfaceContactStd <abaqus.Model.Model.Model.SurfaceToSurfaceContactStd>`\\ \\(name\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates a SurfaceToSurfaceContactStd object."
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid ":py:obj:`XFEMCrackGrowth <abaqus.Model.Model.Model.XFEMCrackGrowth>`\\ \\(name\\, createStepName\\, crackName\\)"
+msgstr ""
+
+#: ../../None:27:<autosummary>:1
+msgid "This method creates an XFEMCrackGrowth object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`ExpContactControl <abaqus.Model.Model.Model.ExpContactControl>`\\ \\(name\\[\\, globTrkChoice\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method creates an ExpContactControl object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`StdContactControl <abaqus.Model.Model.Model.StdContactControl>`\\ \\(name\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method creates an StdContactControl object."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`StdInitialization <abaqus.Model.Model.Model.StdInitialization>`\\ \\(name\\[\\, overclosureType\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid "This method creates a StdInitialization object."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`StdStabilization <abaqus.Model.Model.Model.StdStabilization>`\\ \\(name\\[\\, zeroDistance\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid "This method creates a StdStabilization object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`AcousticImpedanceProp <abaqus.Model.Model.Model.AcousticImpedanceProp>`\\ \\(name\\, tableType\\, table\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates an AcousticImpedanceProp object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`ActuatorSensorProp <abaqus.Model.Model.Model.ActuatorSensorProp>`\\ \\(name\\[\\, realProperties\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates an ActuatorSensorProp object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`CavityRadiationProp <abaqus.Model.Model.Model.CavityRadiationProp>`\\ \\(name\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates a CavityRadiationProp object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`ContactProperty <abaqus.Model.Model.Model.ContactProperty>`\\ \\(name\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates a ContactProperty object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`FilmConditionProp <abaqus.Model.Model.Model.FilmConditionProp>`\\ \\(name\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates a FilmConditionProp object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`FluidCavityProperty <abaqus.Model.Model.Model.FluidCavityProperty>`\\ \\(name\\[\\, definition\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates a FluidCavityProperty object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`FluidExchangeProperty <abaqus.Model.Model.Model.FluidExchangeProperty>`\\ \\(name\\, dataTable\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates a FluidExchangeProperty object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`FluidInflatorProperty <abaqus.Model.Model.Model.FluidInflatorProperty>`\\ \\(name\\, definition\\, ...\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates a FluidInflatorProperty object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`IncidentWaveProperty <abaqus.Model.Model.Model.IncidentWaveProperty>`\\ \\(name\\[\\, definition\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "This method creates an IncidentWaveProperty object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`BodyCharge <abaqus.Model.Model.Model.BodyCharge>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a BodyCharge object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`BodyConcentrationFlux <abaqus.Model.Model.Model.BodyConcentrationFlux>`\\ \\(name\\, createStepName\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a BodyConcentrationFlux object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`BodyCurrent <abaqus.Model.Model.Model.BodyCurrent>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a BodyCurrent object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`BodyCurrentDensity <abaqus.Model.Model.Model.BodyCurrentDensity>`\\ \\(name\\, createStepName\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a BodyCurrentDensity object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`BodyForce <abaqus.Model.Model.Model.BodyForce>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a BodyForce object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`BodyHeatFlux <abaqus.Model.Model.Model.BodyHeatFlux>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a BodyHeatFlux object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`BoltLoad <abaqus.Model.Model.Model.BoltLoad>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a BoltLoad object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`ConcCharge <abaqus.Model.Model.Model.ConcCharge>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a ConcCharge object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`ConcConcFlux <abaqus.Model.Model.Model.ConcConcFlux>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a ConcConcFlux object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`ConcCurrent <abaqus.Model.Model.Model.ConcCurrent>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a ConcCurrent object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`ConcentratedForce <abaqus.Model.Model.Model.ConcentratedForce>`\\ \\(name\\, createStepName\\, region\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a ConcentratedForce object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`ConcentratedHeatFlux <abaqus.Model.Model.Model.ConcentratedHeatFlux>`\\ \\(name\\, createStepName\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a ConcentratedHeatFlux object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`ConcPoreFluid <abaqus.Model.Model.Model.ConcPoreFluid>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a ConcPoreFluid object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`ConnectorForce <abaqus.Model.Model.Model.ConnectorForce>`\\ \\(name\\, createStepName\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a ConnectorForce object on a wire region."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`ConnectorMoment <abaqus.Model.Model.Model.ConnectorMoment>`\\ \\(name\\, createStepName\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a ConnectorMoment object on a wire region."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`CoriolisForce <abaqus.Model.Model.Model.CoriolisForce>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a CoriolisForce object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`Gravity <abaqus.Model.Model.Model.Gravity>`\\ \\(name\\, createStepName\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a Gravity object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`InertiaRelief <abaqus.Model.Model.Model.InertiaRelief>`\\ \\(name\\, createStepName\\[\\, u1\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates an InertiaRelief object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`InwardVolAccel <abaqus.Model.Model.Model.InwardVolAccel>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a InwardVolAccel object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`LineLoad <abaqus.Model.Model.Model.LineLoad>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a LineLoad object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`Moment <abaqus.Model.Model.Model.Moment>`\\ \\(name\\, createStepName\\, region\\[\\, cm1\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a Moment object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`PEGLoad <abaqus.Model.Model.Model.PEGLoad>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a PEGLoad object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`PipePressure <abaqus.Model.Model.Model.PipePressure>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a Pressure object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`Pressure <abaqus.Model.Model.Model.Pressure>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`RotationalBodyForce <abaqus.Model.Model.Model.RotationalBodyForce>`\\ \\(name\\, createStepName\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a RotationalBodyForce object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`ShellEdgeLoad <abaqus.Model.Model.Model.ShellEdgeLoad>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a ShellEdgeLoad object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`SubmodelSB <abaqus.Model.Model.Model.SubmodelSB>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a SubmodelSB object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`SubstructureLoad <abaqus.Model.Model.Model.SubstructureLoad>`\\ \\(name\\, createStepName\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a SubstructureLoad object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`SurfaceCharge <abaqus.Model.Model.Model.SurfaceCharge>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a SurfaceCharge object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`SurfaceConcentrationFlux <abaqus.Model.Model.Model.SurfaceConcentrationFlux>`\\ \\(name\\, ...\\[\\, field\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a SurfaceConcentrationFlux object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`SurfaceCurrent <abaqus.Model.Model.Model.SurfaceCurrent>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a SurfaceCurrent object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`SurfaceCurrentDensity <abaqus.Model.Model.Model.SurfaceCurrentDensity>`\\ \\(name\\, createStepName\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a SurfaceCurrentDensity object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`SurfaceHeatFlux <abaqus.Model.Model.Model.SurfaceHeatFlux>`\\ \\(name\\, createStepName\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a SurfaceHeatFlux object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`SurfacePoreFluid <abaqus.Model.Model.Model.SurfacePoreFluid>`\\ \\(name\\, createStepName\\, ...\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a SurfacePoreFluid object."
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`SurfaceTraction <abaqus.Model.Model.Model.SurfaceTraction>`\\ \\(name\\, createStepName\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid "This method creates a SurfaceTraction object."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`Material <abaqus.Model.Model.Model.Material>`\\ \\(name\\[\\, description\\, materialIdentifier\\]\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid "This method creates a Material object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`BeadTask <abaqus.Model.Model.Model.BeadTask>`\\ \\(name\\[\\, abaqusSensitivities\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method creates a BeadTask object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`ShapeTask <abaqus.Model.Model.Model.ShapeTask>`\\ \\(name\\[\\, abaqusSensitivities\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method creates a ShapeTask object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`SizingTask <abaqus.Model.Model.Model.SizingTask>`\\ \\(name\\[\\, abaqusSensitivities\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method creates a SizingTask object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`TopologyTask <abaqus.Model.Model.Model.TopologyTask>`\\ \\(name\\[\\, abaqusSensitivities\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method creates a TopologyTask object."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`Part <abaqus.Model.Model.Model.Part>`\\ \\(name\\, dimensionality\\, type\\[\\, twist\\]\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid "This method creates a Part object and places it in the parts repository."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`FluidCavityPressure <abaqus.Model.Model.Model.FluidCavityPressure>`\\ \\(name\\, fluidCavity\\, ...\\)"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "This method creates a FluidCavityPressure object."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`InitialState <abaqus.Model.Model.Model.InitialState>`\\ \\(name\\, instances\\, fileName\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "This method creates an InitialState predefined field object."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`KinematicHardening <abaqus.Model.Model.Model.KinematicHardening>`\\ \\(name\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "This method creates a KinematicHardening object."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`MaterialAssignment <abaqus.Model.Model.Model.MaterialAssignment>`\\ \\(name\\, instanceList\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "This method creates a MaterialAssignment predefined field object."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`Temperature <abaqus.Model.Model.Model.Temperature>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "This method creates a Temperature object."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`Velocity <abaqus.Model.Model.Model.Velocity>`\\ \\(name\\, region\\, velocity1\\, velocity2\\, ...\\)"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "This method creates a Velocity predefined field object."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`Stress <abaqus.Model.Model.Model.Stress>`\\ \\(name\\, region\\[\\, distributionType\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "This method creates a Stress predefined field object."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`Field <abaqus.Model.Model.Model.Field>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "This method creates a Field object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`beamProfilesFromOdb <abaqus.Model.Model.Model.beamProfilesFromOdb>`\\ \\(fileName\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates Profile objects by reading an output database."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`ArbitraryProfile <abaqus.Model.Model.Model.ArbitraryProfile>`\\ \\(name\\, table\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a ArbitraryProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`BoxProfile <abaqus.Model.Model.Model.BoxProfile>`\\ \\(name\\, a\\, b\\, uniformThickness\\, t1\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a BoxProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`CircularProfile <abaqus.Model.Model.Model.CircularProfile>`\\ \\(name\\, r\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a CircularProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`GeneralizedProfile <abaqus.Model.Model.Model.GeneralizedProfile>`\\ \\(name\\, area\\, i11\\, i12\\, ...\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a GeneralizedProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`HexagonalProfile <abaqus.Model.Model.Model.HexagonalProfile>`\\ \\(name\\, r\\, t\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a HexagonalProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`IProfile <abaqus.Model.Model.Model.IProfile>`\\ \\(name\\, l\\, h\\, b1\\, b2\\, t1\\, t2\\, t3\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates an IProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`LProfile <abaqus.Model.Model.Model.LProfile>`\\ \\(name\\, a\\, b\\, t1\\, t2\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a LProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`PipeProfile <abaqus.Model.Model.Model.PipeProfile>`\\ \\(name\\, r\\, t\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a PipeProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`RectangularProfile <abaqus.Model.Model.Model.RectangularProfile>`\\ \\(name\\, a\\, b\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a RectangularProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`TProfile <abaqus.Model.Model.Model.TProfile>`\\ \\(name\\, b\\, h\\, l\\, tf\\, tw\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a TProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`TrapezoidalProfile <abaqus.Model.Model.Model.TrapezoidalProfile>`\\ \\(name\\, a\\, b\\, c\\, d\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a TrapezoidalProfile object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`FieldOutputRequest <abaqus.Model.Model.Model.FieldOutputRequest>`\\ \\(name\\, createStepName\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method creates a FieldOutputRequest object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`HistoryOutputRequest <abaqus.Model.Model.Model.HistoryOutputRequest>`\\ \\(name\\, createStepName\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method creates a HistoryOutputRequest object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`IntegratedOutputSection <abaqus.Model.Model.Model.IntegratedOutputSection>`\\ \\(name\\, surface\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method creates an IntegratedOutputSection object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`TimePoint <abaqus.Model.Model.Model.TimePoint>`\\ \\(name\\, points\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method creates a TimePoint object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`AcousticInfiniteSection <abaqus.Model.Model.Model.AcousticInfiniteSection>`\\ \\(name\\, material\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates an AcousticInfiniteSection object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`AcousticInterfaceSection <abaqus.Model.Model.Model.AcousticInterfaceSection>`\\ \\(name\\[\\, thickness\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates an AcousticInterfaceSection object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`BeamSection <abaqus.Model.Model.Model.BeamSection>`\\ \\(name\\, integration\\, profile\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates a BeamSection object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`CohesiveSection <abaqus.Model.Model.Model.CohesiveSection>`\\ \\(name\\, response\\, material\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates a CohesiveSection object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`CompositeShellSection <abaqus.Model.Model.Model.CompositeShellSection>`\\ \\(name\\, layup\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates a CompositeShellSection object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`CompositeSolidSection <abaqus.Model.Model.Model.CompositeSolidSection>`\\ \\(name\\, layup\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates a CompositeSolidSection object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`ConnectorSection <abaqus.Model.Model.Model.ConnectorSection>`\\ \\(name\\[\\, assembledType\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates a ConnectorSection object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`EulerianSection <abaqus.Model.Model.Model.EulerianSection>`\\ \\(name\\, data\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates a EulerianSection object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`GasketSection <abaqus.Model.Model.Model.GasketSection>`\\ \\(name\\, material\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates a GasketSection object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`GeneralStiffnessSection <abaqus.Model.Model.Model.GeneralStiffnessSection>`\\ \\(name\\, stiffnessMatrix\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates a GeneralStiffnessSection object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`HomogeneousShellSection <abaqus.Model.Model.Model.HomogeneousShellSection>`\\ \\(name\\, material\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates a HomogeneousShellSection object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`HomogeneousSolidSection <abaqus.Model.Model.Model.HomogeneousSolidSection>`\\ \\(name\\, material\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates a HomogeneousSolidSection object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`MembraneSection <abaqus.Model.Model.Model.MembraneSection>`\\ \\(name\\, material\\[\\, thickness\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates a MembraneSection object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`MPCSection <abaqus.Model.Model.Model.MPCSection>`\\ \\(name\\, mpcType\\[\\, userMode\\, userType\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates a MPCSection object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`PEGSection <abaqus.Model.Model.Model.PEGSection>`\\ \\(name\\, material\\[\\, thickness\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates a PEGSection object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`SurfaceSection <abaqus.Model.Model.Model.SurfaceSection>`\\ \\(name\\[\\, useDensity\\, density\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates a SurfaceSection object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ":py:obj:`TrussSection <abaqus.Model.Model.Model.TrussSection>`\\ \\(name\\, material\\[\\, area\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid "This method creates a TrussSection object."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`ConstrainedSketch <abaqus.Model.Model.Model.ConstrainedSketch>`\\ \\(name\\, sheetSize\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid "This method creates a ConstrainedSketch object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`AnnealStep <abaqus.Model.Model.Model.AnnealStep>`\\ \\(name\\, previous\\[\\, description\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates an AnnealStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`BuckleStep <abaqus.Model.Model.Model.BuckleStep>`\\ \\(name\\, previous\\, numEigen\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a BuckleStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`ComplexFrequencyStep <abaqus.Model.Model.Model.ComplexFrequencyStep>`\\ \\(name\\, previous\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a ComplexFrequencyStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`CoupledTempDisplacementStep <abaqus.Model.Model.Model.CoupledTempDisplacementStep>`\\ \\(name\\, previous\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a CoupledTempDisplacementStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`CoupledThermalElectricalStructuralStep <abaqus.Model.Model.Model.CoupledThermalElectricalStructuralStep>`\\ \\(name\\, ...\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a CoupledThermalElectricalStructuralStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`CoupledThermalElectricStep <abaqus.Model.Model.Model.CoupledThermalElectricStep>`\\ \\(name\\, previous\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a CoupledThermalElectricStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`DirectCyclicStep <abaqus.Model.Model.Model.DirectCyclicStep>`\\ \\(name\\, previous\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a DirectCyclicStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`EmagTimeHarmonicStep <abaqus.Model.Model.Model.EmagTimeHarmonicStep>`\\ \\(name\\, previous\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a EmagTimeHarmonicStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`ExplicitDynamicsStep <abaqus.Model.Model.Model.ExplicitDynamicsStep>`\\ \\(name\\, previous\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates an ExplicitDynamicsStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`FrequencyStep <abaqus.Model.Model.Model.FrequencyStep>`\\ \\(name\\, previous\\, eigensolver\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a FrequencyStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`GeostaticStep <abaqus.Model.Model.Model.GeostaticStep>`\\ \\(name\\, previous\\[\\, description\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a GeostaticStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`HeatTransferStep <abaqus.Model.Model.Model.HeatTransferStep>`\\ \\(name\\, previous\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a HeatTransferStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`ImplicitDynamicsStep <abaqus.Model.Model.Model.ImplicitDynamicsStep>`\\ \\(name\\, previous\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates an ImplicitDynamicsStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`MassDiffusionStep <abaqus.Model.Model.Model.MassDiffusionStep>`\\ \\(name\\, previous\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a MassDiffusionStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`ModalDynamicsStep <abaqus.Model.Model.Model.ModalDynamicsStep>`\\ \\(name\\, previous\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a ModalDynamicsStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`RandomResponseStep <abaqus.Model.Model.Model.RandomResponseStep>`\\ \\(name\\, previous\\, freq\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a RandomResponseStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`ResponseSpectrumStep <abaqus.Model.Model.Model.ResponseSpectrumStep>`\\ \\(name\\, previous\\, components\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a ResponseSpectrumStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`SoilsStep <abaqus.Model.Model.Model.SoilsStep>`\\ \\(name\\, previous\\[\\, description\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a SoilsStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`StaticLinearPerturbationStep <abaqus.Model.Model.Model.StaticLinearPerturbationStep>`\\ \\(name\\, previous\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a StaticLinearPerturbationStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`StaticRiksStep <abaqus.Model.Model.Model.StaticRiksStep>`\\ \\(name\\, previous\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a StaticRiksStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`StaticStep <abaqus.Model.Model.Model.StaticStep>`\\ \\(name\\, previous\\[\\, description\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a StaticStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`SteadyStateDirectStep <abaqus.Model.Model.Model.SteadyStateDirectStep>`\\ \\(name\\, previous\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a SteadyStateDirectStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`SteadyStateModalStep <abaqus.Model.Model.Model.SteadyStateModalStep>`\\ \\(name\\, previous\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a SteadyStateModalStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`SteadyStateSubspaceStep <abaqus.Model.Model.Model.SteadyStateSubspaceStep>`\\ \\(name\\, previous\\, ...\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a SteadyStateSubspaceStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`SubspaceDynamicsStep <abaqus.Model.Model.Model.SubspaceDynamicsStep>`\\ \\(name\\, previous\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a SubspaceDynamicsStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`SubstructureGenerateStep <abaqus.Model.Model.Model.SubstructureGenerateStep>`\\ \\(name\\, previous\\, ...\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a SubstructureGenerateStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`TempDisplacementDynamicsStep <abaqus.Model.Model.Model.TempDisplacementDynamicsStep>`\\ \\(name\\, previous\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a TempDisplacementDynamicsStep object."
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid ":py:obj:`ViscoStep <abaqus.Model.Model.Model.ViscoStep>`\\ \\(name\\, previous\\[\\, description\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:30:<autosummary>:1
+msgid "This method creates a ViscoStep object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.Model.Model.Model.__init__>`\\ \\(name\\[\\, description\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`ModelFromInputFile <abaqus.Model.Model.Model.ModelFromInputFile>`\\ \\(name\\, inputFileName\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a Model object by reading the keywords in an input file and creating the corresponding Abaqus/CAE objects."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`ModelFromOdbFile <abaqus.Model.Model.Model.ModelFromOdbFile>`\\ \\(name\\, odbFileName\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a Model object by reading an output database and creating any corresponding Abaqus/CAE objects."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`ModelFromNastranFile <abaqus.Model.Model.Model.ModelFromNastranFile>`\\ \\(modelName\\, inputFileName\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.Model.Model.Model.setValues>`\\ \\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
+msgid "This method modifies the Model object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`move <abaqus.Model.Model.Model.move>`\\ \\(fromStepName\\, toStepName\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method moves the TemperatureState object from one step to a different step."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`setValuesInStep <abaqus.Model.Model.Model.setValuesInStep>`\\ \\(stepName\\[\\, field\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method modifies the propagating data for an existing Temperature object in the specified step."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.Model.Model.Model.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method resumes the predefined field that was previously suppressed."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.Model.Model.Model.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method suppresses the predefined field."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`delete <abaqus.Model.Model.Model.delete>`\\ \\(indices\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method allows you to delete existing fields."
+msgstr ""
