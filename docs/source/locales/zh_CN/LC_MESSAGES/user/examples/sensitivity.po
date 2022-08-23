@@ -1,0 +1,412 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../user/examples/sensitivity.rst:3
+msgid "Investigating the skew sensitivity of shell elements"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:5
+msgid ""
+"In this example you will use Abaqus/CAE to create the model and store the"
+" model in a model database. The script opens the model database and "
+"performs a parametric study on the model. The example illustrates how you"
+" can use a combination of Abaqus/CAE and the Abaqus Scripting Interface "
+"to analyze a problem."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:9
+msgid "Creating the model to analyze"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:11
+msgid ""
+"This example uses Abaqus Scripting Interface commands to evaluate the "
+"sensitivity of the shell elements in Abaqus to skew distortion when they "
+"are used as thin plates. Further details can be found in `Skew "
+"sensitivity of shell elements "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEBMKRefMap/simabmk-c-skewshell.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:13
+msgid ""
+"The problem investigates the effects on the accuracy of the bending "
+"moment computed at the center of a shell using:"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:15
+msgid "different shell formulations and"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:16
+msgid "at different angles."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:18
+msgid ""
+":numref:`cmd-skew-dim` illustrates the basic geometry of the simply "
+"supported skew plate with a uniform distributed load."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:24
+msgid "A 4 × 4 quadrilateral mesh of the plate."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:26
+msgid ""
+"The plate is loaded by a uniform pressure of :math:`1\\times10^{-6}` MPa "
+"applied over the entire surface. The edges of the plate are all simply "
+"supported. The analysis is performed for five different values of the "
+"skew angle, :math:`\\delta`: 90°, 80°, 60°, 40°, and 30°. The analysis is"
+" performed for two different quadrilateral elements: S4 and S8R."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:28
+msgid ""
+"The example is divided into two scripts. The controlling script, "
+"`skewExample.py`, imports `skewExampleUtils.py`. Use the **fetch** "
+"utility to retrieve the scripts:"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:35
+msgid ""
+"You should use Abaqus/CAE to create your model and to save the resulting "
+"model database. You will then use scripting to parameterize your model, "
+"submit an analysis job, and operate on the results generated."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:37
+msgid ""
+"Start Abaqus/CAE, and create a model database from the **Start Session** "
+"dialog box. By default, you are operating on a model named `Model-1.` The"
+" model should include the following:"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:39
+msgid "**Part**"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:41
+msgid ""
+"Create a three-dimensional planar shell part, and name it `Plate`. Use an"
+" approximate size of 5.0. Sketch a square where all sides are 1.0 m long,"
+" with the lower-left vertex at (0, 0, 0). Delete all perpendicular and "
+"vertical constraints, and apply the following:fixed constraints to the "
+"lower-left and lower-right vertices,horizontal constraints to the top and"
+" bottom edges (if they are not already defined),parallel constraints to "
+"the left and right edges, andan angle dimension to the lower-left vertex "
+"(90°)."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:43
+msgid "**Material**"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:45
+msgid ""
+"Create a material, and name it Steel. The Young's modulus is 30 MPa, and "
+"the Poisson's ratio is 0.3."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:47
+msgid "**Section**"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:49
+msgid ""
+"Create a homogeneous shell section that refers to the material called "
+"`Steel`. Name the section `Shell`. The plate thickness is 0.01 m. The "
+"length/thickness ratio is, thus, 100/1 so that the plate is thin in the "
+"sense that transverse shear deformation should not be significant. Assign"
+" the section to the plate."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:51
+msgid "**Assembly**"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:53
+msgid ""
+"Create the assembly using a single, independent part instance of `Plate`."
+" Abaqus/CAE names the part instance `Plate-1`. Creating an independent "
+"part instance means that the mesh is based at the assembly level."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:55
+msgid "**Step**"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:57
+msgid ""
+"Create a static step and name it `Step-1`. Enter `Apply pressure` for the"
+" step **Description**. Accept the default time period of 1.0 and the "
+"default initial increment of 1.0."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:59
+msgid "**Output database requests**"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:61
+msgid ""
+"Edit the default output database request for field output and select only"
+" **U, Translations and rotations**. Create a second field output request "
+"for SF, Section forces and moments, and specify Nodes as the element "
+"output position. Both field output requests should be for the whole model"
+" after every increment. Delete all requests for history output."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:63
+msgid "**Boundary condition**"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:65
+msgid ""
+"Create a displacement boundary condition, and name it `Pinned`. The "
+"boundary condition pins the exterior edges of the plate."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:67
+msgid "**Load**"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:69
+msgid ""
+"Create a pressure load, and name it `Pressure`. Apply the load to the "
+"face of the plate. Accept the default side of the plate and use a "
+"magnitude of 1.0. This positive pressure will result in a negative "
+"displacement in the 3-direction."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:71
+msgid "**Set**"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:73
+msgid ""
+"Partition the plate into quarters by sketching lines between the "
+"midpoints of the four edges. Create a set that contains the vertex at the"
+" center of the plate, and name the set `CENTER`."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:75
+msgid "**Mesh**"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:77
+msgid "Create a 4 × 4 mesh of quadrilateral elements on the plate."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:79
+msgid "**Job**"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:81
+msgid ""
+"Create a job, and name it `skew`. The job must refer to the model "
+"`Model-1`."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:83
+msgid ""
+"If you want, you can complete the above steps for creating the model "
+"using a function in `skewExampleUtils.py`. In the command line interface "
+"area of Abaqus/CAE, type the following commands:"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:90
+msgid ""
+"When you execute the function, a new database is created, so you should "
+"save your work first."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:92
+msgid "Finally, save the database as `skew.cae`."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:95
+msgid "Changing the skew angle"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:97
+#: ../../user/examples/sensitivity.rst:99
+msgid ""
+"The parameterized script changes the skew angle of the plate and computes"
+" the maximum bending moment at the center for two different element "
+"types. The script changes the skew angle by modifying an angular "
+"dimension and selecting the vertices to move. You need to add the angular"
+" dimension and determine the indices of the dimension to modify and the "
+"vertices to move."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:102
+msgid "Add the angular dimension"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:104
+msgid "Return to the Part module."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:106
+msgid ""
+"From the main menu bar, select **Feature -> Edit** and select the plate "
+"to edit."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:108
+msgid "From the **Edit Feature** dialog box, select **Edit Section Sketch**."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:110
+msgid ""
+"From the Sketcher toolbox, select the dimension tool and dimension the "
+"angle at the lower left corner of the plate as shown in :numref:`cmd-"
+"skew-dim`"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:117
+msgid "Dimension the angle at the lower left corner of the plate."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:120
+msgid "Determine the indices of the dimension to modify and the vertices to move"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:122
+msgid "From the Sketcher toolbox, select the edit dimension tool."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:123
+msgid "Select the lower left angular dimension."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:124
+msgid "Enter a dimension of `60`, and click **OK**."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:125
+msgid "Exit the Sketcher tools, and exit the Sketcher."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:126
+msgid "From the **Edit Feature** dialog box, select **OK**."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:127
+msgid ""
+"Examine the replay file, `abaqus.rpy`. The last few lines of the replay "
+"file will contain the statements that modified the angular dimension. The"
+" statement will look similar to the following:"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:133
+msgid ""
+"The example script, `skewExample.py`, contains a similar statement that "
+"modifies the angular dimension of the plate. The index of the angular "
+"dimension in your model must be the same as the index in the example "
+"script. If the indices are not the same, you must edit the example script"
+" and enter the correct indices."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:139
+msgid ""
+"Save the model database, and name it `skew`. Abaqus/CAE saves the model "
+"database in a file called `skew.cae`. The example script opens this model"
+" database and parameterizes the model it contains."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:142
+msgid "Using a script to perform a parametric study"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:144
+msgid ""
+"he following shows the contents of the script skewExample.py. The "
+"parametric study does the following:"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:146
+msgid ""
+"Opens the model database and creates variables that refer to the part, "
+"the assembly, and the part instance stored in `Model-1`."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:148
+msgid ""
+"Creates variables that refer to the four faces and the nine vertices in "
+"the instance of the planar shell part."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:150
+msgid ""
+"Skews the plate by modifying the angular dimension in the sketch of the "
+"base feature."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:152
+msgid ""
+"Defines the logical corners of the four faces, and generates a structured"
+" mesh."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:154
+msgid ""
+"Runs the analysis for a range of angles using two element types for each "
+"angle."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:156
+msgid "Calculates the maximum moment and displacement at the center of the shell."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:158
+msgid "Displays **X - Y** plots in separate viewports of the following:"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:160
+msgid "Displacement versus skew angle"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:161
+msgid "Maximum bending moment versus skew angle"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:162
+msgid "Minimum bending moment versus skew angle"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:164
+msgid "The theoretical results are also plotted."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:293
+msgid ""
+"The script imports two functions from `skewExampleUtils`. The functions "
+"do the following:"
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:295
+msgid ""
+"Retrieve the displacement and calculate the maximum bending moment at the"
+" center of the plate."
+msgstr ""
+
+#: ../../user/examples/sensitivity.rst:296
+msgid "Display curves of theoretical and computed results in a new viewport."
+msgstr ""
+
