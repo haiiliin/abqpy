@@ -1,64 +1,52 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022, WANG Hailin
-# This file is distributed under the same license as the abqpy package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy \n"
+"Project-Id-Version: abqpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:36+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"PO-Revision-Date: 2022-08-23 10:43\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: abqpy\n"
+"X-Crowdin-Project-ID: 533812\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /main/docs/source/locales/pot/summary/mdb/model/bc.pot\n"
+"X-Crowdin-File-ID: 358\n"
+"Language: zh_CN\n"
 
 #: ../../summary/mdb/model/bc.rst:3
 msgid "Boundary Condition"
 msgstr ""
 
 #: ../../summary/mdb/model/bc.rst:5
-msgid ""
-"A specific type of boundary condition object and a specific type of "
-"boundary condition state object are designed for each type of boundary "
-"condition. A BoundaryCondition object stores the non-propagating data of "
-"a boundary condition as well as a number of instances of the "
-"corresponding BoundaryConditionState object, each of which stores the "
-"propagating data of the boundary condition in a single step. Instances of"
-" the BoundaryConditionState object are created and deleted internally by "
-"its corresponding BoundaryCondition object."
+msgid "A specific type of boundary condition object and a specific type of boundary condition state object are designed for each type of boundary condition. A BoundaryCondition object stores the non-propagating data of a boundary condition as well as a number of instances of the corresponding BoundaryConditionState object, each of which stores the propagating data of the boundary condition in a single step. Instances of the BoundaryConditionState object are created and deleted internally by its corresponding BoundaryCondition object."
 msgstr ""
 
 #: ../../summary/mdb/model/bc.rst:9
 msgid "Create boundary conditions"
 msgstr ""
 
-#: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:2 of
+#: ../../../../src/abaqus/BoundaryCondition/BoundaryConditionModel.py:docstring of abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:2
 msgid "Abaqus creates a Model object named `Model-1` when a session is started."
 msgstr ""
 
-#: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:5 of
+#: ../../../../src/abaqus/BoundaryCondition/BoundaryConditionModel.py:docstring of abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:5
 msgid "This object can be accessed by:"
 msgstr ""
 
-#: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:12 of
-msgid ""
-"Check `Model on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+#: ../../../../src/abaqus/BoundaryCondition/BoundaryConditionModel.py:docstring of abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:12
+msgid "Check `Model on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
-#: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel of
+#: ../../../../src/abaqus/BoundaryCondition/BoundaryConditionModel.py:docstring of abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:0
 msgid "Public Data Attributes:"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`name "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.name>`\\"
+msgid ":py:obj:`name <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.name>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -66,9 +54,7 @@ msgid "A String specifying the repository key."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`stefanBoltzmann "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.stefanBoltzmann>`\\"
+msgid ":py:obj:`stefanBoltzmann <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.stefanBoltzmann>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -76,9 +62,7 @@ msgid "None or a Float specifying the Stefan-Boltzmann constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`absoluteZero "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.absoluteZero>`\\"
+msgid ":py:obj:`absoluteZero <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.absoluteZero>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -86,21 +70,15 @@ msgid "None or a Float specifying the absolute zero constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`waveFormulation "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.waveFormulation>`\\"
+msgid ":py:obj:`waveFormulation <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.waveFormulation>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A SymbolicConstant specifying the type of incident wave formulation to be"
-" used in acoustic problems."
+msgid "A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`universalGas "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.universalGas>`\\"
+msgid ":py:obj:`universalGas <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.universalGas>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -108,45 +86,31 @@ msgid "None or a Float specifying the universal gas constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`noPartsInputFile "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.noPartsInputFile>`\\"
+msgid ":py:obj:`noPartsInputFile <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.noPartsInputFile>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A Boolean specifying whether an input file should be written without "
-"parts and assemblies."
+msgid "A Boolean specifying whether an input file should be written without parts and assemblies."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`restartIncrement "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.restartIncrement>`\\"
+msgid ":py:obj:`restartIncrement <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.restartIncrement>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"An Int specifying the increment, interval, iteration or cycle where the "
-"restart analysis will start."
+msgid "An Int specifying the increment, interval, iteration or cycle where the restart analysis will start."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`endRestartStep "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.endRestartStep>`\\"
+msgid ":py:obj:`endRestartStep <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.endRestartStep>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A Boolean specifying that the step specified by **restartStep** should be"
-" terminated at the increment specified by **restartIncrement**."
+msgid "A Boolean specifying that the step specified by **restartStep** should be terminated at the increment specified by **restartIncrement**."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`shellToSolid "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.shellToSolid>`\\"
+msgid ":py:obj:`shellToSolid <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.shellToSolid>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -154,21 +118,15 @@ msgid "A Boolean specifying that a shell global model drives a solid submodel."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`lastChangedCount "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.lastChangedCount>`\\"
+msgid ":py:obj:`lastChangedCount <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.lastChangedCount>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A Float specifying the time stamp that indicates when the model was last "
-"changed."
+msgid "A Float specifying the time stamp that indicates when the model was last changed."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`description "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.description>`\\"
+msgid ":py:obj:`description <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.description>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -176,9 +134,7 @@ msgid "A String specifying the purpose and contents of the Model object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`restartJob "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.restartJob>`\\"
+msgid ":py:obj:`restartJob <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.restartJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -186,69 +142,47 @@ msgid "A String specifying the name of the job that generated the restart data."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`restartStep "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.restartStep>`\\"
+msgid ":py:obj:`restartStep <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.restartStep>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A String specifying the name of the step where the restart analysis will "
-"start."
+msgid "A String specifying the name of the step where the restart analysis will start."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`globalJob "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.globalJob>`\\"
+msgid ":py:obj:`globalJob <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.globalJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A String specifying the name of the job that generated the results for "
-"the global model."
+msgid "A String specifying the name of the job that generated the results for the global model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`copyConstraints "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.copyConstraints>`\\"
+msgid ":py:obj:`copyConstraints <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.copyConstraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A boolean specifying the status of constraints created in a model, in the"
-" model which instances this model."
+msgid "A boolean specifying the status of constraints created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`copyConnectors "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.copyConnectors>`\\"
+msgid ":py:obj:`copyConnectors <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.copyConnectors>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A boolean specifying the status of connectors created in a model, in the "
-"model which instances this model."
+msgid "A boolean specifying the status of connectors created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`copyInteractions "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.copyInteractions>`\\"
+msgid ":py:obj:`copyInteractions <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.copyInteractions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A boolean specifying the status of interactions created in a model, in "
-"the model which instances this model."
+msgid "A boolean specifying the status of interactions created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`keywordBlock "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.keywordBlock>`\\"
+msgid ":py:obj:`keywordBlock <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -256,9 +190,7 @@ msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`rootAssembly "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.rootAssembly>`\\"
+msgid ":py:obj:`rootAssembly <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -266,9 +198,7 @@ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`amplitudes "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.amplitudes>`\\"
+msgid ":py:obj:`amplitudes <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.amplitudes>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -276,9 +206,7 @@ msgid "A repository of Amplitude objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`profiles "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.profiles>`\\"
+msgid ":py:obj:`profiles <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.profiles>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -286,9 +214,7 @@ msgid "A repository of Profile objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`boundaryConditions "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.boundaryConditions>`\\"
+msgid ":py:obj:`boundaryConditions <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.boundaryConditions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -296,9 +222,7 @@ msgid "A repository of BoundaryCondition objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`constraints "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.constraints>`\\"
+msgid ":py:obj:`constraints <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.constraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -306,9 +230,7 @@ msgid "A repository of ConstrainedSketchConstraint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`analyticalFields "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.analyticalFields>`\\"
+msgid ":py:obj:`analyticalFields <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.analyticalFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -316,9 +238,7 @@ msgid "A repository of AnalyticalField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`discreteFields "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.discreteFields>`\\"
+msgid ":py:obj:`discreteFields <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.discreteFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -326,9 +246,7 @@ msgid "A repository of DiscreteField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`predefinedFields "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.predefinedFields>`\\"
+msgid ":py:obj:`predefinedFields <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.predefinedFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -336,9 +254,7 @@ msgid "A repository of PredefinedField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`interactions "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.interactions>`\\"
+msgid ":py:obj:`interactions <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.interactions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -346,9 +262,7 @@ msgid "A repository of Interaction objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`interactionProperties "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.interactionProperties>`\\"
+msgid ":py:obj:`interactionProperties <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.interactionProperties>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -356,9 +270,7 @@ msgid "A repository of InteractionProperty objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`contactControls "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.contactControls>`\\"
+msgid ":py:obj:`contactControls <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.contactControls>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -366,9 +278,7 @@ msgid "A repository of ContactControl objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`contactInitializations "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.contactInitializations>`\\"
+msgid ":py:obj:`contactInitializations <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.contactInitializations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -376,9 +286,7 @@ msgid "A repository of ContactInitialization objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`contactStabilizations "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.contactStabilizations>`\\"
+msgid ":py:obj:`contactStabilizations <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.contactStabilizations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -386,35 +294,23 @@ msgid "A repository of ContactStabilization objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`linkedInstances "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.linkedInstances>`\\"
+msgid ":py:obj:`linkedInstances <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.linkedInstances>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A tuple of tuples of Strings specifying the linked child PartInstance "
-"name in the current model to the corresponding parent PartInstance name "
-"in a different model."
+msgid "A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`linkedParts "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.linkedParts>`\\"
+msgid ":py:obj:`linkedParts <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.linkedParts>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A tuple of tuples of Strings specifying the linked child Part name in the"
-" current model to the corresponding parent Part name in a different "
-"model."
+msgid "A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`loads "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.loads>`\\"
+msgid ":py:obj:`loads <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.loads>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -422,9 +318,7 @@ msgid "A repository of Load objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`materials "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.materials>`\\"
+msgid ":py:obj:`materials <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.materials>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -432,9 +326,7 @@ msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`calibrations "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.calibrations>`\\"
+msgid ":py:obj:`calibrations <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.calibrations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -442,9 +334,7 @@ msgid "A repository of Calibration objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`sections "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.sections>`\\"
+msgid ":py:obj:`sections <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.sections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -452,9 +342,7 @@ msgid "A repository of Section objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`remeshingRules "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.remeshingRules>`\\"
+msgid ":py:obj:`remeshingRules <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.remeshingRules>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -462,9 +350,7 @@ msgid "A repository of RemeshingRule objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`sketches "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.sketches>`\\"
+msgid ":py:obj:`sketches <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.sketches>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -472,9 +358,7 @@ msgid "A repository of ConstrainedSketch objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`parts "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.parts>`\\"
+msgid ":py:obj:`parts <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.parts>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -482,9 +366,7 @@ msgid "A repository of Part objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`steps "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.steps>`\\"
+msgid ":py:obj:`steps <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.steps>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -492,9 +374,7 @@ msgid "A repository of Step objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`featureOptions "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.featureOptions>`\\"
+msgid ":py:obj:`featureOptions <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.featureOptions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -502,9 +382,7 @@ msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`adaptiveMeshConstraints "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.adaptiveMeshConstraints>`\\"
+msgid ":py:obj:`adaptiveMeshConstraints <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.adaptiveMeshConstraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -512,9 +390,7 @@ msgid "A repository of AdaptiveMeshConstraint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`adaptiveMeshControls "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.adaptiveMeshControls>`\\"
+msgid ":py:obj:`adaptiveMeshControls <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.adaptiveMeshControls>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -522,9 +398,7 @@ msgid "A repository of AdaptiveMeshControl objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`timePoints "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.timePoints>`\\"
+msgid ":py:obj:`timePoints <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.timePoints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -532,9 +406,7 @@ msgid "A repository of TimePoint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`filters "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.filters>`\\"
+msgid ":py:obj:`filters <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.filters>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -542,9 +414,7 @@ msgid "A repository of Filter objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`integratedOutputSections "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.integratedOutputSections>`\\"
+msgid ":py:obj:`integratedOutputSections <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.integratedOutputSections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -552,9 +422,7 @@ msgid "A repository of IntegratedOutputSection objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`fieldOutputRequests "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.fieldOutputRequests>`\\"
+msgid ":py:obj:`fieldOutputRequests <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.fieldOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -562,9 +430,7 @@ msgid "A repository of FieldOutputRequest objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`historyOutputRequests "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.historyOutputRequests>`\\"
+msgid ":py:obj:`historyOutputRequests <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.historyOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -572,9 +438,7 @@ msgid "A repository of HistoryOutputRequest objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`optimizationTasks "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.optimizationTasks>`\\"
+msgid ":py:obj:`optimizationTasks <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.optimizationTasks>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -582,9 +446,7 @@ msgid "A repository of OptimizationTask objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`tableCollections "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.tableCollections>`\\"
+msgid ":py:obj:`tableCollections <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.tableCollections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -592,9 +454,7 @@ msgid "A repository of TableCollection objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`eventSeriesTypes "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.eventSeriesTypes>`\\"
+msgid ":py:obj:`eventSeriesTypes <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.eventSeriesTypes>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -602,24 +462,19 @@ msgid "A repository of EventSeriesType objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`eventSeriesDatas "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.eventSeriesDatas>`\\"
+msgid ":py:obj:`eventSeriesDatas <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.eventSeriesDatas>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
 msgid "A repository of EventSeriesData objects."
 msgstr ""
 
-#: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel of
+#: ../../../../src/abaqus/BoundaryCondition/BoundaryConditionModel.py:docstring of abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:0
 msgid "Public Methods:"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`AccelerationBaseMotionBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AccelerationBaseMotionBC>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
+msgid ":py:obj:`AccelerationBaseMotionBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AccelerationBaseMotionBC>`\\ \\(name\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -627,10 +482,7 @@ msgid "This method creates a AccelerationBaseMotionBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`AccelerationBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AccelerationBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+msgid ":py:obj:`AccelerationBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AccelerationBC>`\\ \\(name\\, createStepName\\, region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -638,10 +490,7 @@ msgid "This method creates an AccelerationBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`AcousticPressureBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AcousticPressureBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+msgid ":py:obj:`AcousticPressureBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AcousticPressureBC>`\\ \\(name\\, createStepName\\, region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -649,10 +498,7 @@ msgid "This method creates a AcousticPressureBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`ConcentrationBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConcentrationBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+msgid ":py:obj:`ConcentrationBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConcentrationBC>`\\ \\(name\\, createStepName\\, region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -660,10 +506,7 @@ msgid "This method creates a ConcentrationBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`ConnAccelerationBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnAccelerationBC>`\\"
-" \\(name\\, createStepName\\[\\, ...\\]\\)"
+msgid ":py:obj:`ConnAccelerationBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnAccelerationBC>`\\ \\(name\\, createStepName\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -671,10 +514,7 @@ msgid "This method creates an ConnAccelerationBC object on a wire region."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`ConnDisplacementBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnDisplacementBC>`\\"
-" \\(name\\, createStepName\\[\\, ...\\]\\)"
+msgid ":py:obj:`ConnDisplacementBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnDisplacementBC>`\\ \\(name\\, createStepName\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -682,10 +522,7 @@ msgid "This method creates a ConnDisplacementBC object on a wire region."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`ConnVelocityBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnVelocityBC>`\\"
-" \\(name\\, createStepName\\[\\, ...\\]\\)"
+msgid ":py:obj:`ConnVelocityBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnVelocityBC>`\\ \\(name\\, createStepName\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -693,10 +530,7 @@ msgid "This method creates a ConnVelocityBC object on a wire region."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`DisplacementBaseMotionBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBaseMotionBC>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
+msgid ":py:obj:`DisplacementBaseMotionBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBaseMotionBC>`\\ \\(name\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -704,10 +538,7 @@ msgid "This method creates a DisplacementBaseMotionBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`DisplacementBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+msgid ":py:obj:`DisplacementBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC>`\\ \\(name\\, createStepName\\, region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -715,10 +546,7 @@ msgid "This method creates a DisplacementBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`ElectricPotentialBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ElectricPotentialBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+msgid ":py:obj:`ElectricPotentialBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ElectricPotentialBC>`\\ \\(name\\, createStepName\\, region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -726,10 +554,7 @@ msgid "This method creates an ElectricPotentialBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`EulerianBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EulerianBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgid ":py:obj:`EulerianBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EulerianBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -737,10 +562,7 @@ msgid "This method creates a EulerianBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`EulerianMotionBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EulerianMotionBC>`\\"
-" \\(name\\, createStepName\\, ...\\)"
+msgid ":py:obj:`EulerianMotionBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EulerianMotionBC>`\\ \\(name\\, createStepName\\, ...\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -748,10 +570,7 @@ msgid "This method creates an EulerianMotionBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`FluidCavityPressureBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.FluidCavityPressureBC>`\\"
-" \\(name\\, createStepName\\, ...\\)"
+msgid ":py:obj:`FluidCavityPressureBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.FluidCavityPressureBC>`\\ \\(name\\, createStepName\\, ...\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -759,10 +578,7 @@ msgid "This method creates a FluidCavityPressureBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`MagneticVectorPotentialBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MagneticVectorPotentialBC>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
+msgid ":py:obj:`MagneticVectorPotentialBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MagneticVectorPotentialBC>`\\ \\(name\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -770,10 +586,7 @@ msgid "This method creates a MagneticVectorPotentialBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`MaterialFlowBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MaterialFlowBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+msgid ":py:obj:`MaterialFlowBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MaterialFlowBC>`\\ \\(name\\, createStepName\\, region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -781,10 +594,7 @@ msgid "This method creates a MaterialFlowBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`PorePressureBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.PorePressureBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+msgid ":py:obj:`PorePressureBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.PorePressureBC>`\\ \\(name\\, createStepName\\, region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -792,10 +602,7 @@ msgid "This method creates a PorePressureBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`RetainedNodalDofsBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.RetainedNodalDofsBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+msgid ":py:obj:`RetainedNodalDofsBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.RetainedNodalDofsBC>`\\ \\(name\\, createStepName\\, region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -803,10 +610,7 @@ msgid "This method creates a RetainedNodalDofsBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`SecondaryBaseBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SecondaryBaseBC>`\\"
-" \\(name\\, createStepName\\, ...\\)"
+msgid ":py:obj:`SecondaryBaseBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SecondaryBaseBC>`\\ \\(name\\, createStepName\\, ...\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -814,10 +618,7 @@ msgid "This method creates a SecondaryBaseBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`SubmodelBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SubmodelBC>`\\"
-" \\(name\\, createStepName\\, region\\, ...\\)"
+msgid ":py:obj:`SubmodelBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SubmodelBC>`\\ \\(name\\, createStepName\\, region\\, ...\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -825,10 +626,7 @@ msgid "This method creates a SubmodelBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`TemperatureBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.TemperatureBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+msgid ":py:obj:`TemperatureBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.TemperatureBC>`\\ \\(name\\, createStepName\\, region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -836,10 +634,7 @@ msgid "This method creates a TemperatureBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`VelocityBaseMotionBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBaseMotionBC>`\\"
-" \\(name\\, createStepName\\, dof\\)"
+msgid ":py:obj:`VelocityBaseMotionBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBaseMotionBC>`\\ \\(name\\, createStepName\\, dof\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -847,10 +642,7 @@ msgid "This method creates a VelocityBaseMotionBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`VelocityBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgid ":py:obj:`VelocityBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -858,10 +650,7 @@ msgid "This method creates a VelocityBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`EncastreBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EncastreBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgid ":py:obj:`EncastreBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EncastreBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -869,10 +658,7 @@ msgid "This method creates an encastre TypeBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`PinnedBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.PinnedBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgid ":py:obj:`PinnedBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.PinnedBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -880,88 +666,55 @@ msgid "This method creates a pinned TypeBC object."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`XsymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.XsymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgid ":py:obj:`XsymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.XsymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-"This method creates a TypeBC object that specifies symmetry about the "
-"**X**-axis."
+msgid "This method creates a TypeBC object that specifies symmetry about the **X**-axis."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`YsymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.YsymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgid ":py:obj:`YsymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.YsymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-"This method creates a TypeBC object that specifies symmetry about the "
-"**Y**-axis."
+msgid "This method creates a TypeBC object that specifies symmetry about the **Y**-axis."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`ZsymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ZsymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgid ":py:obj:`ZsymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ZsymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-"This method creates a TypeBC object that specifies symmetry about the "
-"**Z**-axis."
+msgid "This method creates a TypeBC object that specifies symmetry about the **Z**-axis."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`XasymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.XasymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgid ":py:obj:`XasymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.XasymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-"This method creates a TypeBC object that specifies antisymmetry about the"
-" **X**-axis."
+msgid "This method creates a TypeBC object that specifies antisymmetry about the **X**-axis."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`YasymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.YasymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgid ":py:obj:`YasymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.YasymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-"This method creates a TypeBC object that specifies antisymmetry about the"
-" **Y**-axis."
+msgid "This method creates a TypeBC object that specifies antisymmetry about the **Y**-axis."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-":py:obj:`ZasymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ZasymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgid ":py:obj:`ZasymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ZasymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
-msgid ""
-"This method creates a TypeBC object that specifies antisymmetry about the"
-" **Z**-axis."
+msgid "This method creates a TypeBC object that specifies antisymmetry about the **Z**-axis."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`__init__ "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.__init__>`\\"
-" \\(name\\[\\, description\\, ...\\]\\)"
+msgid ":py:obj:`__init__ <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.__init__>`\\ \\(name\\[\\, description\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -969,50 +722,31 @@ msgid "This method creates a Model object."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`ModelFromInputFile "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ModelFromInputFile>`\\"
-" \\(name\\, inputFileName\\)"
+msgid ":py:obj:`ModelFromInputFile <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ModelFromInputFile>`\\ \\(name\\, inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"This method creates a Model object by reading the keywords in an input "
-"file and creating the corresponding Abaqus/CAE objects."
+msgid "This method creates a Model object by reading the keywords in an input file and creating the corresponding Abaqus/CAE objects."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`ModelFromOdbFile "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ModelFromOdbFile>`\\"
-" \\(name\\, odbFileName\\)"
+msgid ":py:obj:`ModelFromOdbFile <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ModelFromOdbFile>`\\ \\(name\\, odbFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"This method creates a Model object by reading an output database and "
-"creating any corresponding Abaqus/CAE objects."
+msgid "This method creates a Model object by reading an output database and creating any corresponding Abaqus/CAE objects."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`ModelFromNastranFile "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ModelFromNastranFile>`\\"
-" \\(modelName\\, inputFileName\\)"
+msgid ":py:obj:`ModelFromNastranFile <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ModelFromNastranFile>`\\ \\(modelName\\, inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"This method creates a Model object by reading the keywords in a Nastran "
-"bulk data file or Nastran input file and creating any corresponding "
-"Abaqus/CAE objects."
+msgid "This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`setValues "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.setValues>`\\"
-" \\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
+msgid ":py:obj:`setValues <abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.setValues>`\\ \\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
