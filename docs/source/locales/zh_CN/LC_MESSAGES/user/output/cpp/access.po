@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../user/output/cpp/access.rst:3
+msgid "Accessing the C++ interface from an existing application"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:5
+msgid ""
+"This section provides information that may be helpful to users who need "
+"to access results in an output database from an existing application. "
+"Most users should find that the **abaqus make** utility is sufficient for"
+" their postprocessing needs. Since linking and executing with dynamically"
+" linked runtime libraries is highly system dependent, the information in "
+"this section is intended for users who have an advanced working knowledge"
+" of compilation and linking with runtime libraries."
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:7
+msgid ""
+"It is important to ensure that the compiler used to compile and link the "
+"existing application is consistent with the compilers used to generate "
+"the Abaqus release. The “System Requirements” document lists the name and"
+" version of the compiler used for the Abaqus release on each supported "
+"platform. You can access this document through the **System Information**"
+" section of the **Support** page at https:www.3ds.com/simulia. You can "
+"also find information on compiling and linking with the C++ interface to "
+"an output database in the Dassault Systèmes Knowledge Base at "
+"https://support.3ds.com/knowledge-base/."
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:10
+msgid "Initializing the C++ interface"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:12
+msgid ""
+"Before any calls are made to the C++ interface, the following call must "
+"be made to initialize the interface:"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:18
+msgid ""
+"This call is generated automatically when the **abaqus make** utility is "
+"run but must be included in any application that is not compiled and "
+"linked using the **abaqus make** utility. After all calls to the C++ "
+"interface have been completed, the interface may be deactivated by "
+"including a call to"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:24
+msgid ""
+"If the finalization call is not made explicitly, the finalize routine "
+"will be called automatically when the application exits."
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:27
+msgid "Link library location"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:29
+msgid ""
+"The libraries necessary to link applications that access the C++ "
+"interface are located in the following directories:"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:31 ../../user/output/cpp/access.rst:48
+#: ../../user/output/cpp/access.rst:65
+msgid "**Linux**"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:33
+msgid "*abaqus_dir/code/lib*"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:35 ../../user/output/cpp/access.rst:52
+#: ../../user/output/cpp/access.rst:69
+msgid "**Windows**"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:37
+msgid "*abaqus_dir\\code\\lib*"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:39 ../../user/output/cpp/access.rst:56
+#: ../../user/output/cpp/access.rst:73
+msgid ""
+"where **abaqus_dir** is the name of the directory in which Abaqus is "
+"installed. To determine the location of **abaqus_dir** at your site, type"
+" `abaqus whereami` at an operating system prompt."
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:41
+msgid ""
+"During linking, the `ABQodb` library and several other libraries shipped "
+"with the Abaqus release are used to resolve all the functions available "
+"in the interface to the output database. The command used by Abaqus to "
+"link runtime libraries (for example, for user subroutines) is available "
+"through the Abaqus environment variable **link_sl**. Additional "
+"information about linking with the Abaqus libraries, including the names "
+"of all libraries which must be specified as part of the link command, may"
+" be obtained by running the **abaqus make** utility in verbose mode with "
+"a verbosity level of 3."
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:44
+msgid "Runtime library location"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:46
+msgid ""
+"The runtime libraries required to execute a program that accesses the C++"
+" interface are located in the following directories:"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:50
+msgid "*abaqus_dir/code/bin*"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:54
+msgid "*abaqus_dir\\code\\bin*"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:58
+msgid ""
+"The correct path to the Abaqus runtime libraries must be specified prior "
+"to starting the user application. The runtime library path is typically "
+"set using the system environment variable `LD_LIBRARY_PATH`, but the "
+"method used to set the path may vary depending on your operating system "
+"configuration. The `ABQodb` library and several utility libraries resolve"
+" all the functions available in the interface to the output database, as "
+"described in `Link library location "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-odbintrocpplinklibrary.htm?contextscope=all>`_."
+" At runtime these libraries depend on many of the underlying Abaqus "
+"libraries. As a result, if you do not define the correct runtime library "
+"path, your application will not run."
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:61
+msgid "Header file location"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:63
+msgid ""
+"he header files required to compile a program that accesses the C++ "
+"interface are located in the following directories:"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:67
+msgid "*abaqus_dir/code/include*"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:71
+msgid "*abaqus_dir\\code\\include*"
+msgstr ""
+
+#: ../../user/output/cpp/access.rst:75
+msgid ""
+"Only `odb_API.h` must be included to access the C++ interface, but the "
+"path to the header files must be provided during compilation."
+msgstr ""
+

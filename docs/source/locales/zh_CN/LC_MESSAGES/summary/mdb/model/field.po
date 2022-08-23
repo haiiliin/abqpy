@@ -1,0 +1,646 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../summary/mdb/model/field.rst:3
+msgid "Field"
+msgstr ""
+
+#: ../../summary/mdb/model/field.rst:5
+msgid ""
+"A Field object stores the non-propagating data of a field as well as a "
+"number of instances of the corresponding FieldState object. The "
+"FieldState object stores the propagating data of the field in a single "
+"step. A specific type of Field object and a specific type of FieldState "
+"object are designed for each type of predefined field. Instances of the "
+"FieldState object are created and deleted internally by its corresponding"
+" Field object."
+msgstr ""
+
+#: ../../summary/mdb/model/field.rst:9
+msgid "Create fields"
+msgstr ""
+
+#: abaqus.Field.FieldModel.FieldModel of
+msgid "Public Data Attributes:"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Field.FieldModel.FieldModel.name>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A String specifying the repository key."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`stefanBoltzmann "
+"<abaqus.Field.FieldModel.FieldModel.stefanBoltzmann>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "None or a Float specifying the Stefan-Boltzmann constant."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`absoluteZero <abaqus.Field.FieldModel.FieldModel.absoluteZero>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "None or a Float specifying the absolute zero constant."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`waveFormulation "
+"<abaqus.Field.FieldModel.FieldModel.waveFormulation>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+"A SymbolicConstant specifying the type of incident wave formulation to be"
+" used in acoustic problems."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`universalGas <abaqus.Field.FieldModel.FieldModel.universalGas>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "None or a Float specifying the universal gas constant."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`noPartsInputFile "
+"<abaqus.Field.FieldModel.FieldModel.noPartsInputFile>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+"A Boolean specifying whether an input file should be written without "
+"parts and assemblies."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`restartIncrement "
+"<abaqus.Field.FieldModel.FieldModel.restartIncrement>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+"An Int specifying the increment, interval, iteration or cycle where the "
+"restart analysis will start."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`endRestartStep "
+"<abaqus.Field.FieldModel.FieldModel.endRestartStep>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+"A Boolean specifying that the step specified by **restartStep** should be"
+" terminated at the increment specified by **restartIncrement**."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`shellToSolid <abaqus.Field.FieldModel.FieldModel.shellToSolid>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A Boolean specifying that a shell global model drives a solid submodel."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`lastChangedCount "
+"<abaqus.Field.FieldModel.FieldModel.lastChangedCount>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+"A Float specifying the time stamp that indicates when the model was last "
+"changed."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`description <abaqus.Field.FieldModel.FieldModel.description>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A String specifying the purpose and contents of the Model object."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`restartJob <abaqus.Field.FieldModel.FieldModel.restartJob>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A String specifying the name of the job that generated the restart data."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`restartStep <abaqus.Field.FieldModel.FieldModel.restartStep>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+"A String specifying the name of the step where the restart analysis will "
+"start."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`globalJob <abaqus.Field.FieldModel.FieldModel.globalJob>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+"A String specifying the name of the job that generated the results for "
+"the global model."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`copyConstraints "
+"<abaqus.Field.FieldModel.FieldModel.copyConstraints>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+"A boolean specifying the status of constraints created in a model, in the"
+" model which instances this model."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`copyConnectors "
+"<abaqus.Field.FieldModel.FieldModel.copyConnectors>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+"A boolean specifying the status of connectors created in a model, in the "
+"model which instances this model."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`copyInteractions "
+"<abaqus.Field.FieldModel.FieldModel.copyInteractions>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+"A boolean specifying the status of interactions created in a model, in "
+"the model which instances this model."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`keywordBlock <abaqus.Field.FieldModel.FieldModel.keywordBlock>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`rootAssembly <abaqus.Field.FieldModel.FieldModel.rootAssembly>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`amplitudes <abaqus.Field.FieldModel.FieldModel.amplitudes>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Amplitude objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`profiles <abaqus.Field.FieldModel.FieldModel.profiles>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Profile objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`boundaryConditions "
+"<abaqus.Field.FieldModel.FieldModel.boundaryConditions>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of BoundaryCondition objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`constraints <abaqus.Field.FieldModel.FieldModel.constraints>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of ConstrainedSketchConstraint objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`analyticalFields "
+"<abaqus.Field.FieldModel.FieldModel.analyticalFields>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of AnalyticalField objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`discreteFields "
+"<abaqus.Field.FieldModel.FieldModel.discreteFields>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of DiscreteField objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`predefinedFields "
+"<abaqus.Field.FieldModel.FieldModel.predefinedFields>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of PredefinedField objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`interactions <abaqus.Field.FieldModel.FieldModel.interactions>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Interaction objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`interactionProperties "
+"<abaqus.Field.FieldModel.FieldModel.interactionProperties>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of InteractionProperty objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`contactControls "
+"<abaqus.Field.FieldModel.FieldModel.contactControls>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of ContactControl objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`contactInitializations "
+"<abaqus.Field.FieldModel.FieldModel.contactInitializations>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of ContactInitialization objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`contactStabilizations "
+"<abaqus.Field.FieldModel.FieldModel.contactStabilizations>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of ContactStabilization objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`linkedInstances "
+"<abaqus.Field.FieldModel.FieldModel.linkedInstances>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+"A tuple of tuples of Strings specifying the linked child PartInstance "
+"name in the current model to the corresponding parent PartInstance name "
+"in a different model."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`linkedParts <abaqus.Field.FieldModel.FieldModel.linkedParts>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+"A tuple of tuples of Strings specifying the linked child Part name in the"
+" current model to the corresponding parent Part name in a different "
+"model."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`loads <abaqus.Field.FieldModel.FieldModel.loads>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Load objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`materials <abaqus.Field.FieldModel.FieldModel.materials>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Material objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`calibrations <abaqus.Field.FieldModel.FieldModel.calibrations>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Calibration objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`sections <abaqus.Field.FieldModel.FieldModel.sections>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Section objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`remeshingRules "
+"<abaqus.Field.FieldModel.FieldModel.remeshingRules>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of RemeshingRule objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`sketches <abaqus.Field.FieldModel.FieldModel.sketches>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of ConstrainedSketch objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`parts <abaqus.Field.FieldModel.FieldModel.parts>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Part objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`steps <abaqus.Field.FieldModel.FieldModel.steps>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Step objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`featureOptions "
+"<abaqus.Field.FieldModel.FieldModel.featureOptions>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`adaptiveMeshConstraints "
+"<abaqus.Field.FieldModel.FieldModel.adaptiveMeshConstraints>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of AdaptiveMeshConstraint objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`adaptiveMeshControls "
+"<abaqus.Field.FieldModel.FieldModel.adaptiveMeshControls>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of AdaptiveMeshControl objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`timePoints <abaqus.Field.FieldModel.FieldModel.timePoints>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of TimePoint objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`filters <abaqus.Field.FieldModel.FieldModel.filters>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Filter objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`integratedOutputSections "
+"<abaqus.Field.FieldModel.FieldModel.integratedOutputSections>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of IntegratedOutputSection objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`fieldOutputRequests "
+"<abaqus.Field.FieldModel.FieldModel.fieldOutputRequests>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of FieldOutputRequest objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`historyOutputRequests "
+"<abaqus.Field.FieldModel.FieldModel.historyOutputRequests>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of HistoryOutputRequest objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`optimizationTasks "
+"<abaqus.Field.FieldModel.FieldModel.optimizationTasks>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of OptimizationTask objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`tableCollections "
+"<abaqus.Field.FieldModel.FieldModel.tableCollections>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of TableCollection objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`eventSeriesTypes "
+"<abaqus.Field.FieldModel.FieldModel.eventSeriesTypes>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of EventSeriesType objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ""
+":py:obj:`eventSeriesDatas "
+"<abaqus.Field.FieldModel.FieldModel.eventSeriesDatas>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of EventSeriesData objects."
+msgstr ""
+
+#: abaqus.Field.FieldModel.FieldModel of
+msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`DiscreteField "
+"<abaqus.Field.FieldModel.FieldModel.DiscreteField>`\\ \\(name\\, "
+"defaultValues\\, fieldType\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method creates a DiscreteField object."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`ExpressionField "
+"<abaqus.Field.FieldModel.FieldModel.ExpressionField>`\\ \\(name\\, "
+"expression\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method creates an ExpressionField object."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`MappedField <abaqus.Field.FieldModel.FieldModel.MappedField>`\\ "
+"\\(name\\[\\, regionType\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method creates an MappedField object."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ""
+":py:obj:`__init__ <abaqus.Field.FieldModel.FieldModel.__init__>`\\ "
+"\\(name\\[\\, description\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a Model object."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ""
+":py:obj:`ModelFromInputFile "
+"<abaqus.Field.FieldModel.FieldModel.ModelFromInputFile>`\\ \\(name\\, "
+"inputFileName\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ""
+"This method creates a Model object by reading the keywords in an input "
+"file and creating the corresponding Abaqus/CAE objects."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ""
+":py:obj:`ModelFromOdbFile "
+"<abaqus.Field.FieldModel.FieldModel.ModelFromOdbFile>`\\ \\(name\\, "
+"odbFileName\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ""
+"This method creates a Model object by reading an output database and "
+"creating any corresponding Abaqus/CAE objects."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ""
+":py:obj:`ModelFromNastranFile "
+"<abaqus.Field.FieldModel.FieldModel.ModelFromNastranFile>`\\ "
+"\\(modelName\\, inputFileName\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ""
+"This method creates a Model object by reading the keywords in a Nastran "
+"bulk data file or Nastran input file and creating any corresponding "
+"Abaqus/CAE objects."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ""
+":py:obj:`setValues <abaqus.Field.FieldModel.FieldModel.setValues>`\\ "
+"\\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method modifies the Model object."
+msgstr ""
+

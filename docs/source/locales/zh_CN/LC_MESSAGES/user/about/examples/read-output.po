@@ -1,0 +1,224 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../user/about/examples/read-output.rst:3
+msgid "Reading from an output database"
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:5
+msgid ""
+"This section includes an example that shows how you can use the Abaqus "
+"Scripting Interface to read an output database, manipulate the data, and "
+"display the results using the Visualization module in Abaqus/CAE."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:8
+msgid "The example script"
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:10
+msgid ""
+"This example shows how you can use the Abaqus Scripting Interface to read"
+" an output database, manipulate the data, and display the results using "
+"the Visualization module in Abaqus/CAE. The Abaqus Scripting Interface "
+"allows you to display the data even though you have not written it back "
+"to an output database."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:12
+msgid "The script does the following:"
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:14
+msgid "Opens the tutorial output database."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:15
+msgid ""
+"Creates variables that refer to the first and second steps in the output "
+"database."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:16
+msgid ""
+"Creates variables that refer to the last frame of the first and second "
+"steps."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:17
+msgid ""
+"Creates variables that refer to the displacement field output in the last"
+" frame of the first and second steps."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:18
+msgid ""
+"Creates variables that refer to the stress field output in the last frame"
+" of the first and second steps."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:19
+msgid ""
+"Subtracts the displacement field output from the two steps and puts the "
+"result in a variable called deltaDisplacement."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:20
+msgid ""
+"Subtracts the stress field output from the two steps and puts the result "
+"in a variable called deltaStress."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:21
+msgid "Selects deltaDisplacement as the default deformed variable."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:22
+msgid ""
+"Selects the von Mises invariant of deltaStress as the default field "
+"output variable."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:23
+msgid "Plots a contour plot of the result."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:25
+msgid "The resulting contour plot is shown in :numref:`cmd-super`."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:32
+msgid "The resulting contour plot."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:35
+msgid ""
+"Use the following commands to retrieve the script and the output database"
+" that is read by the script:"
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:42
+msgid "The example follows:"
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:105
+msgid "How does the script work?"
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:107
+msgid "This section explains each portion of the example script."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:114
+msgid ""
+"These statements make the basic Abaqus objects accessible to the script "
+"as well as all the Symbolic Constants defined in the Abaqus Scripting "
+"Interface."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:120
+msgid ""
+"This statement provides access to the commands that replicate the "
+"functionality of the Visualization module in Abaqus/CAE (Abaqus/Viewer)."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:126
+msgid ""
+"This statement creates a new viewport named Superposition example in the "
+"session. The new viewport is assigned to the variable myViewport. The "
+"origin and the size of the viewport assume the default values."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:132
+msgid "This statement creates a path to the tutorial output database."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:138
+msgid ""
+"This statement uses the path variable odbPath to open the output database"
+" and to assign it to the variable myOdb."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:144
+msgid ""
+"This statement displays the default plot of the output database in the "
+"viewport."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:150
+msgid ""
+"These statements assign the first and second steps in the output database"
+" to the variables firstStep and secondStep."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:157
+msgid ""
+"These statements assign the last frame of the first and second steps to "
+"the variables frame1 and frame2. In Python an index of 0 refers to the "
+"first item in a sequence. An index of −1 refers to the last item in a "
+"sequence."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:164
+msgid ""
+"These statements assign the displacement field output in the last frame "
+"of the first and second steps to the variables displacement1 and "
+"displacement2."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:171
+msgid ""
+"Similarly, these statements assign the stress field output in the last "
+"frame of the first and second steps to the variables stress1 and stress2."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:177
+msgid ""
+"This statement subtracts the displacement field output from the last "
+"frame of the two steps and puts the resulting field output into a new "
+"variable deltaDisplacement."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:183
+msgid ""
+"Similarly, this statement subtracts the stress field output and puts the "
+"result in the variable deltaStress."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:189
+msgid ""
+"This statement uses deltaDisplacement, the displacement field output "
+"variable that we created earlier, to set the deformed variable. This is "
+"the variable that Abaqus will use to display the shape of the deformed "
+"model."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:197
+msgid ""
+"This statement uses deltaStress, our stress field output variable, to set"
+" the primary variable. This is the variable that Abaqus will display in a"
+" contour or symbol plot."
+msgstr ""
+
+#: ../../user/about/examples/read-output.rst:203
+msgid ""
+"The final statement sets the plot state to display a contour plot on the "
+"deformed model shape."
+msgstr ""
+
