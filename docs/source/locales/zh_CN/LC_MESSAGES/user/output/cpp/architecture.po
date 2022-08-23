@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../user/output/cpp/architecture.rst:3
+msgid "The Abaqus C++ API architecture"
+msgstr ""
+
+#: ../../user/output/cpp/architecture.rst:5
+msgid ""
+"This section describes the architecture of the Abaqus C++ interface to an"
+" output database. The output database is an object-oriented database, "
+"which means that the data are held by “objects” (C++ classes) that have "
+"certain behavior (C++ methods). The methods of an object in the database "
+"allow access to and manipulation of the data held by the object. The data"
+" members of an object can be either primitives (integer, floating point, "
+"string) or other objects."
+msgstr ""
+
+#: ../../user/output/cpp/architecture.rst:8
+msgid "Class naming convention"
+msgstr ""
+
+#: ../../user/output/cpp/architecture.rst:10
+msgid ""
+"All class names start with `odb_` to avoid possible name clashes. For "
+"example, the string class is named `odb_String`."
+msgstr ""
+
+#: ../../user/output/cpp/architecture.rst:13
+msgid "Constructors"
+msgstr ""
+
+#: ../../user/output/cpp/architecture.rst:15
+msgid ""
+"A constructor is a method that creates an object. The Abaqus C++ API uses"
+" the following three types of constructors:"
+msgstr ""
+
+#: ../../user/output/cpp/architecture.rst:17
+msgid "**Constructors for nonpersistent objects**"
+msgstr ""
+
+#: ../../user/output/cpp/architecture.rst:19
+msgid ""
+"Constructors for nonpersistent objects are the standard C++ constructors."
+" For example,"
+msgstr ""
+
+#: ../../user/output/cpp/architecture.rst:25
+msgid "**Constructors for persistent objects**"
+msgstr ""
+
+#: ../../user/output/cpp/architecture.rst:27
+msgid ""
+"You create a persistent object by calling a method on an existing Abaqus "
+"C++ API object. In Abaqus the convention is that the constructor method "
+"name corresponds to the name of the object created and that the first "
+"letter of the constructor name is capitalized. The object can be accessed"
+" using the return value of the constructor call or using a lowercase "
+"version of the method name. For example, a Frame object can be created "
+"using the following:"
+msgstr ""
+
+#: ../../user/output/cpp/architecture.rst:34
+msgid "The Frame object can be retrieved with the following:"
+msgstr ""
+
+#: ../../user/output/cpp/architecture.rst:40
+msgid "**Constructors for objects created in large quantities**"
+msgstr ""
+
+#: ../../user/output/cpp/architecture.rst:42
+msgid ""
+"For efficiency the constructors for objects that you create in large "
+"quantities, such as elements, nodes, and field values, do not follow the "
+"capitalized constructor name rule used for persistent objects. Nodes, "
+"elements, and field values are created using the `addNodes`, "
+"`addElements`, and `addData` methods, respectively. For example, you use "
+"the addNodes method to create and retrieve nodes:"
+msgstr ""
+
+#: ../../user/output/cpp/architecture.rst:52
+msgid "Header files"
+msgstr ""
+
+#: ../../user/output/cpp/architecture.rst:54
+msgid ""
+"To use a class in a C++ program, the relevant header files must be "
+"included. The naming convention followed is that the file name is the "
+"same as the name of the class declared in the header file. For example, "
+"the `odb_FieldValue` object is declared in the file `odb_FieldValue.h`. "
+"The file `odb_API.h` includes all the header files required to use the "
+"API. Other header files must be included to use some classes:"
+msgstr ""
+
+#: ../../user/output/cpp/architecture.rst:56
+msgid ""
+"To access material objects you must include the file "
+"`odb_MaterialTypes.h`."
+msgstr ""
+
+#: ../../user/output/cpp/architecture.rst:57
+msgid "To access section objects you must include the file `odb_SectionTypes.h`."
+msgstr ""
+
