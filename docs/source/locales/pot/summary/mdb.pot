@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../summary/mdb.rst:5
+msgid "Objects in mdb"
+msgstr ""
+
+#: ../../summary/mdb.rst:3
+msgid "Abaqus Model Database"
+msgstr ""
+
+#: ../../../../src/abaqus/Mdb/Mdb.py:docstring of abaqus.Mdb.Mdb.Mdb:2
+msgid "The Mdb object is the high-level Abaqus model database. A model database stores models and analysis controls."
+msgstr ""
+
+#: ../../../../src/abaqus/Mdb/Mdb.py:docstring of abaqus.Mdb.Mdb.Mdb:6
+msgid "This object can be accessed by:"
+msgstr ""
+
+#: ../../../../src/abaqus/Mdb/Mdb.py:docstring of abaqus.Mdb.Mdb.Mdb:13
+msgid "Check `Mdb on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/Mdb/Mdb.py:docstring of abaqus.Mdb.Mdb.Mdb:0
+msgid "Public Data Attributes:"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`version <abaqus.Mdb.Mdb.Mdb.version>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "An Int specifying the release number of the Mdb object in memory."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`lastChangedCount <abaqus.Mdb.Mdb.Mdb.lastChangedCount>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A Float specifying the value of a counter associated with the Mdb object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`jobs <abaqus.Mdb.Mdb.Mdb.jobs>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A repository of Job objects."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`adaptivityProcesses <abaqus.Mdb.Mdb.Mdb.adaptivityProcesses>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A repository of AdaptivityProcess objects."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`optimizationProcesses <abaqus.Mdb.Mdb.Mdb.optimizationProcesses>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A repository of OptimizationProcess objects."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`meshEditOptions <abaqus.Mdb.Mdb.Mdb.meshEditOptions>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A :py:class:`~abaqus.EditMesh.MeshEditOptions.MeshEditOptions` object specifying the undo/redo behavior when editing meshes on parts or part instances."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`models <abaqus.Mdb.Mdb.Mdb.models>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A repository of Model objects."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Mdb.Mdb.Mdb.customData>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`annotations <abaqus.Mdb.Mdb.Mdb.annotations>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid "A repository of Annotation objects."
+msgstr ""
+
+#: ../../../../src/abaqus/Mdb/Mdb.py:docstring of abaqus.Mdb.Mdb.Mdb:0
+msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`Model <abaqus.Mdb.Mdb.Mdb.Model>`\\ \\(name\\[\\, description\\, stefanBoltzmann\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid "This method creates a Model object."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`openAcis <abaqus.Mdb.Mdb.Mdb.openAcis>`\\ \\(fileName\\[\\, scaleFromFile\\]\\)"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "This method creates an AcisFile object from a file containing ACIS-format geometry."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`openCatia <abaqus.Mdb.Mdb.Mdb.openCatia>`\\ \\(fileName\\[\\, topology\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "This method creates an AcisFile object from a file containing V5-format geometry."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`openEnf <abaqus.Mdb.Mdb.Mdb.openEnf>`\\ \\(fileName\\, fileType\\[\\, topology\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "This method creates an AcisFile object from a file containing Elysium Neutral File-format geometry that was created by CATIA V5, I-DEAS, or Pro/ENGINEER."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`openIges <abaqus.Mdb.Mdb.Mdb.openIges>`\\ \\(fileName\\[\\, trimCurve\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "This method creates an AcisFile object from a file containing IGES-format geometry."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`openParasolid <abaqus.Mdb.Mdb.Mdb.openParasolid>`\\ \\(fileName\\[\\, topology\\]\\)"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "This method creates an AcisFile object from a file containing Parasolid-format geometry."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`openStep <abaqus.Mdb.Mdb.Mdb.openStep>`\\ \\(fileName\\[\\, scale\\]\\)"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "This method creates an AcisFile object from a file containing STEP-format geometry."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`openVda <abaqus.Mdb.Mdb.Mdb.openVda>`\\ \\(fileName\\)"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "This method creates an AcisFile object from a file containing VDA-FS-format geometry."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`openSolidworks <abaqus.Mdb.Mdb.Mdb.openSolidworks>`\\ \\(fileName\\[\\, topology\\]\\)"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "This method creates an AcisFile object from a file containing Solidworks format geometry."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`Job <abaqus.Mdb.Mdb.Mdb.Job>`\\ \\(name\\, model\\[\\, description\\, type\\, queue\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method creates an analysis job using a model on a model database (MDB) for the model definition."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`JobFromInputFile <abaqus.Mdb.Mdb.Mdb.JobFromInputFile>`\\ \\(name\\, inputFileName\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method creates an analysis job using an input file for the model definition."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`OptimizationProcess <abaqus.Mdb.Mdb.Mdb.OptimizationProcess>`\\ \\(name\\, model\\, task\\, ...\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method creates an OptimizationProcess object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.Mdb.Mdb.Mdb.__init__>`\\ \\(\\[pathName\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This constructor creates an empty Mdb object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`importDxf <abaqus.Mdb.Mdb.Mdb.importDxf>`\\ \\(fileName\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a ConstrainedSketch object from a file containing dxf-format (AutoCAD) geometry."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`openMdb <abaqus.Mdb.Mdb.Mdb.openMdb>`\\ \\(pathName\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method opens an existing model database file."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`close <abaqus.Mdb.Mdb.Mdb.close>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method closes an open Mdb object but does not save the Mdb object to disk."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`save <abaqus.Mdb.Mdb.Mdb.save>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method saves an Mdb object to disk at the location specified by **pathName** (*pathName* is a member of the Mdb object)."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`saveAs <abaqus.Mdb.Mdb.Mdb.saveAs>`\\ \\(pathName\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method saves an Mdb object to disk at the specified location."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`openAuxMdb <abaqus.Mdb.Mdb.Mdb.openAuxMdb>`\\ \\(pathName\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method opens an auxiliary Mdb object on the disk at the specified location."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`closeAuxMdb <abaqus.Mdb.Mdb.Mdb.closeAuxMdb>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method closes the auxiliary Mdb which had been opened earlier using the openAuxMdb command."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`getAuxMdbModelNames <abaqus.Mdb.Mdb.Mdb.getAuxMdbModelNames>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method returns a list of model names present in the auxiliary Mdb which had been opened earlier using the openAuxMdb command."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`copyAuxMdbModel <abaqus.Mdb.Mdb.Mdb.copyAuxMdbModel>`\\ \\(fromName\\[\\, toName\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method copies a specified model from the auxiliary Mdb which had been opened earlier using the openAuxMdb command."
+msgstr ""

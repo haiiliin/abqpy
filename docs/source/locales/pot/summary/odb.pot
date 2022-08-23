@@ -1,0 +1,425 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../summary/odb.rst:3
+msgid "Abaqus Output Database"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb:2
+msgid "The Odb object is the in-memory representation of an output database (ODB) file."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb:5
+msgid "This object can be accessed by:"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb:13
+msgid "Check `Odb on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb:0
+msgid "Public Data Attributes:"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`isReadOnly <abaqus.Odb.Odb.Odb.isReadOnly>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A Boolean specifying whether the output database was opened with read-only access."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`amplitudes <abaqus.Odb.Odb.Odb.amplitudes>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A repository of Amplitude objects."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`filters <abaqus.Odb.Odb.Odb.filters>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A repository of Filter objects."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`rootAssembly <abaqus.Odb.Odb.Odb.rootAssembly>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "An :py:class:`~abaqus.Odb.OdbAssembly.OdbAssembly` object."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`jobData <abaqus.Odb.Odb.Odb.jobData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A :py:class:`~abaqus.Odb.JobData.JobData` object."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`parts <abaqus.Odb.Odb.Odb.parts>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A repository of OdbPart objects."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`materials <abaqus.Odb.Odb.Odb.materials>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A repository of Material objects."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`steps <abaqus.Odb.Odb.Odb.steps>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A repository of OdbStep objects."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sections <abaqus.Odb.Odb.Odb.sections>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A repository of Section objects."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sectionCategories <abaqus.Odb.Odb.Odb.sectionCategories>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A repository of SectionCategory objects."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sectorDefinition <abaqus.Odb.Odb.Odb.sectorDefinition>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A :py:class:`~abaqus.Odb.SectorDefinition.SectorDefinition` object."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`userData <abaqus.Odb.Odb.Odb.userData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A :py:class:`~abaqus.Odb.UserData.UserData` object."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Odb.Odb.Odb.customData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`profiles <abaqus.Odb.Odb.Odb.profiles>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid "A repository of Profile objects."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb:0
+msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`Part <abaqus.Odb.Odb.Odb.Part>`\\ \\(name\\, embeddedSpace\\, type\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method creates an OdbPart object."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`Step <abaqus.Odb.Odb.Odb.Step>`\\ \\(name\\, description\\, domain\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method creates an OdbStep object."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`SectionCategory <abaqus.Odb.Odb.Odb.SectionCategory>`\\ \\(name\\, description\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method creates a SectionCategory object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`ActuatorAmplitude <abaqus.Odb.Odb.Odb.ActuatorAmplitude>`\\ \\(name\\[\\, timeSpan\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a ActuatorAmplitude object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`DecayAmplitude <abaqus.Odb.Odb.Odb.DecayAmplitude>`\\ \\(name\\, initial\\, maximum\\, ...\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a DecayAmplitude object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`EquallySpacedAmplitude <abaqus.Odb.Odb.Odb.EquallySpacedAmplitude>`\\ \\(name\\, fixedInterval\\, data\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates an EquallySpacedAmplitude object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`ModulatedAmplitude <abaqus.Odb.Odb.Odb.ModulatedAmplitude>`\\ \\(name\\, initial\\, magnitude\\, ...\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a ModulatedAmplitude object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`PeriodicAmplitude <abaqus.Odb.Odb.Odb.PeriodicAmplitude>`\\ \\(name\\, frequency\\, start\\, ...\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a PeriodicAmplitude object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`PsdDefinition <abaqus.Odb.Odb.Odb.PsdDefinition>`\\ \\(name\\, data\\[\\, unitType\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a PsdDefinition object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`SmoothStepAmplitude <abaqus.Odb.Odb.Odb.SmoothStepAmplitude>`\\ \\(name\\, data\\[\\, timeSpan\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a SmoothStepAmplitude object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`SolutionDependentAmplitude <abaqus.Odb.Odb.Odb.SolutionDependentAmplitude>`\\ \\(name\\[\\, initial\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a SolutionDependentAmplitude object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`SpectrumAmplitude <abaqus.Odb.Odb.Odb.SpectrumAmplitude>`\\ \\(name\\, method\\, data\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a SpectrumAmplitude object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`TabularAmplitude <abaqus.Odb.Odb.Odb.TabularAmplitude>`\\ \\(name\\, data\\[\\, smooth\\, timeSpan\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a TabularAmplitude object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`ButterworthFilter <abaqus.Odb.Odb.Odb.ButterworthFilter>`\\ \\(name\\, cutoffFrequency\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method creates a ButterworthFilter object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`Chebyshev1Filter <abaqus.Odb.Odb.Odb.Chebyshev1Filter>`\\ \\(name\\, cutoffFrequency\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method creates a Chebyshev1Filter object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`Chebyshev2Filter <abaqus.Odb.Odb.Odb.Chebyshev2Filter>`\\ \\(name\\, cutoffFrequency\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method creates a Chebyshev2Filter object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`OperatorFilter <abaqus.Odb.Odb.Odb.OperatorFilter>`\\ \\(name\\, cutoffFrequency\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid "This method creates an OperatorFilter object."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`Material <abaqus.Odb.Odb.Odb.Material>`\\ \\(name\\[\\, description\\, materialIdentifier\\]\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid "This method creates a Material object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`ArbitraryProfile <abaqus.Odb.Odb.Odb.ArbitraryProfile>`\\ \\(name\\, table\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "This method creates a ArbitraryProfile object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`BoxProfile <abaqus.Odb.Odb.Odb.BoxProfile>`\\ \\(name\\, a\\, b\\, uniformThickness\\, t1\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "This method creates a BoxProfile object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`CircularProfile <abaqus.Odb.Odb.Odb.CircularProfile>`\\ \\(name\\, r\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "This method creates a CircularProfile object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`GeneralizedProfile <abaqus.Odb.Odb.Odb.GeneralizedProfile>`\\ \\(name\\, area\\, i11\\, i12\\, ...\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "This method creates a GeneralizedProfile object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`HexagonalProfile <abaqus.Odb.Odb.Odb.HexagonalProfile>`\\ \\(name\\, r\\, t\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "This method creates a HexagonalProfile object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`IProfile <abaqus.Odb.Odb.Odb.IProfile>`\\ \\(name\\, l\\, h\\, b1\\, b2\\, t1\\, t2\\, t3\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "This method creates an IProfile object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`LProfile <abaqus.Odb.Odb.Odb.LProfile>`\\ \\(name\\, a\\, b\\, t1\\, t2\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "This method creates a LProfile object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`PipeProfile <abaqus.Odb.Odb.Odb.PipeProfile>`\\ \\(name\\, r\\, t\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "This method creates a PipeProfile object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`RectangularProfile <abaqus.Odb.Odb.Odb.RectangularProfile>`\\ \\(name\\, a\\, b\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "This method creates a RectangularProfile object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`TProfile <abaqus.Odb.Odb.Odb.TProfile>`\\ \\(name\\, b\\, h\\, l\\, tf\\, tw\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "This method creates a TProfile object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`TrapezoidalProfile <abaqus.Odb.Odb.Odb.TrapezoidalProfile>`\\ \\(name\\, a\\, b\\, c\\, d\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid "This method creates a TrapezoidalProfile object."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.Odb.Odb.Odb.__init__>`\\ \\(name\\[\\, analysisTitle\\, description\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a new Odb object."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`close <abaqus.Odb.Odb.Odb.close>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method closes an output database."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`getFrame <abaqus.Odb.Odb.Odb.getFrame>`\\ \\(frameValue\\[\\, match\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method returns the frame at the specified time, frequency, or mode."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`save <abaqus.Odb.Odb.Odb.save>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method saves output to an output database (.odb ) file."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`update <abaqus.Odb.Odb.Odb.update>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method is used to update an Odb object in memory while an Abaqus analysis writes data to the associated output database."
+msgstr ""
