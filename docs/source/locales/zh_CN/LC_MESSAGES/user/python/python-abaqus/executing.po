@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../user/python/python-abaqus/executing.rst:3
+msgid "Executing scripts"
+msgstr ""
+
+#: ../../user/python/python-abaqus/executing.rst:5
+msgid ""
+"You have seen how to execute Python statements from the stand-alone "
+"Python interpreter. If your script does not access the functionality of "
+"Abaqus/CAE, you can run the script by typing `abaqus python "
+"scriptname.py` at the system prompt. Abaqus will run the script through "
+"the Python interpreter and return you to the system prompt."
+msgstr ""
+
+#: ../../user/python/python-abaqus/executing.rst:7
+msgid ""
+"If your script accesses the functionality of any of the Abaqus/CAE "
+"modules, the statements must be interpreted by the Abaqus/CAE kernel; you"
+" cannot run the script from the Python interpreter invoked from the "
+"system prompt. You must execute the script in Abaqus/CAE by selecting "
+"**File -> Run Script** from the main menu bar and selecting the file to "
+"execute. In addition, the script must contain the following statements:"
+msgstr ""
+
+#: ../../user/python/python-abaqus/executing.rst:14
+msgid ""
+"If your script accesses and manipulates data in an output database, you "
+"can execute the script using either of the methods already described:"
+msgstr ""
+
+#: ../../user/python/python-abaqus/executing.rst:16
+msgid ""
+"Type `abaqus python scriptname.py` at the system prompt. The script must "
+"contain the following statement:"
+msgstr ""
+
+#: ../../user/python/python-abaqus/executing.rst:22
+msgid ""
+"Select FileRun Script from the Abaqus/CAE main menu bar, and select the "
+"file to execute. The script must contain the following statement:"
+msgstr ""
+
+#: ../../user/python/python-abaqus/executing.rst:28
+msgid ""
+"When you run a script in Abaqus/CAE from the CLI, as part of a macro, or "
+"from the **File -> Run Script** menu option, Abaqus/CAE displays a stop "
+"button that you can use to stop a script that has been running for a "
+"predefined duration. If you want to display this button for scripts run "
+"using other methods, execute the `showStopButtonInGui` command from the "
+"`abaqus` module before you run the script. The command is not issued "
+"automatically when a script is run from the user interface; for example, "
+"as part of a plug-in."
+msgstr ""
+

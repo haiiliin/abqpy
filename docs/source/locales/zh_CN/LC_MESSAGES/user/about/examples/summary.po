@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../user/about/examples/summary.rst:3
+msgid "Summary"
+msgstr ""
+
+#: ../../user/about/examples/summary.rst:5
+msgid ""
+"The examples illustrate how a script can operate on a model in a model "
+"database or on the data stored in an output database. The details of the "
+"commands in the examples are described in later sections; however, you "
+"should note the following:"
+msgstr ""
+
+#: ../../user/about/examples/summary.rst:7
+msgid ""
+"You can run a script from the Abaqus/CAE startup screen when you start a "
+"session. After a session has started, you can run a script from the "
+"FileRun Script menu or from the command line interface."
+msgstr ""
+
+#: ../../user/about/examples/summary.rst:9
+msgid ""
+"A script is a sequence of commands stored in ASCII format and can be "
+"edited with a standard text editor."
+msgstr ""
+
+#: ../../user/about/examples/summary.rst:11
+msgid ""
+"A set of example scripts are provided with Abaqus. Use the abaqus fetch "
+"command to retrieve a script and any associated files."
+msgstr ""
+
+#: ../../user/about/examples/summary.rst:13
+msgid ""
+"You must use the import statement to make the required set of Abaqus "
+"Scripting Interface commands available. For example, the statement import"
+" part provides the commands that create and operate on parts."
+msgstr ""
+
+#: ../../user/about/examples/summary.rst:15
+msgid ""
+"A command that creates something (an \"object\" in object-oriented "
+"programming terms) is called a constructor and starts with an uppercase "
+"character. For example, the following statement uses the Model "
+"constructor to create a model object."
+msgstr ""
+
+#: ../../user/about/examples/summary.rst:21
+msgid "The model object created is"
+msgstr ""
+
+#: ../../user/about/examples/summary.rst:27
+msgid ""
+"You can use a variable to refer to an object. Variables make your scripts"
+" easier to read and understand. myModel refers to a model object in the "
+"previous example."
+msgstr ""
+
+#: ../../user/about/examples/summary.rst:29
+msgid ""
+"A Python script can include a loop. The start and end of a loop is "
+"controlled by indentation in the script."
+msgstr ""
+
+#: ../../user/about/examples/summary.rst:31
+msgid ""
+"Python includes a set of built-in functions. For example, the len() "
+"function returns the length of a sequence."
+msgstr ""
+
+#: ../../user/about/examples/summary.rst:33
+msgid ""
+"You can use commands to replicate any operation that can be performed "
+"interactively when you are working with Abaqus/CAE; for example, creating"
+" a viewport, displaying a contour plot, and setting the step and the "
+"frame to display."
+msgstr ""
+

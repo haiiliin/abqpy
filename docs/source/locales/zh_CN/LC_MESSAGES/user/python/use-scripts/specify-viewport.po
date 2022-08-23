@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../user/python/use-scripts/specify-viewport.rst:3
+msgid "Specifying what is displayed in the viewport"
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-viewport.rst:5
+msgid ""
+"While a script is running and moving between models, modules, parts, and "
+"assemblies, you can control the contents of specified viewports. The "
+"contents can be one of the following:"
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-viewport.rst:7
+msgid "A part"
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-viewport.rst:8
+msgid "The assembly"
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-viewport.rst:9
+msgid "A sketch"
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-viewport.rst:10
+msgid "Data from an output database"
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-viewport.rst:11
+msgid "An X–Y plot"
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-viewport.rst:12
+msgid "Empty"
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-viewport.rst:14
+msgid ""
+"n some cases you will want to update the contents of the viewport as the "
+"model changes; for example, to illustrate how the assembly was "
+"partitioned prior to meshing. However, frequent updates to a viewport "
+"will slow down your script, and you may want to leave the viewport empty "
+"until the script has completed. Alternatively, you can display an object "
+"that the script is not operating on; for example, you can display a part "
+"while the script operates on the assembly."
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-viewport.rst:16
+msgid ""
+"You use the following command to change the contents of a specified "
+"viewport:"
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-viewport.rst:22
+msgid ""
+"The displayedObject argument can be a Part, Assembly, Sketch, Odb, or "
+"XYPlot object or `None`. If displayedObject=None, Abaqus/CAE displays an "
+"empty viewport. For more information, see `setValues(...)`."
+msgstr ""
+
