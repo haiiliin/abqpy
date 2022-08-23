@@ -7,6 +7,7 @@
 [![Pages-zh-cn](https://github.com/haiiliin/abqpy/actions/workflows/pages-zh-cn.yaml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pages-zh-cn.yaml)
 [![Upload Python Package to PyPI](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-pypi.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-pypi.yml)
 [![Build and Upload Conda Package](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-conda.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-conda.yml)
+[![Crowdin](https://badges.crowdin.net/abqpy/localized.svg)](https://crowdin.com/project/abqpy)
 
 [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://github.com/haiiliin/abqpy/blob/main/LICENSE)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/abqpy.svg)](https://www.python.org/)
@@ -32,6 +33,7 @@ Python script, even without opening the Abaqus/CAE.
 - Anaconda: [anaconda.org/haiiliin/abqpy](https://anaconda.org/haiiliin/abqpy)
 - Read the Docs: [readthedocs.org/projects/abqpy](https://readthedocs.org/projects/abqpy/)
 - Documentation: [abqpy.haiiliin.com](https://abqpy.haiiliin.com/en/latest/)
+- Join Crowdin for documentation translation: [https://crowdin.com/project/abqpy](https://crowdin.com/project/abqpy)
 
 ## Pull Requests are Welcome
 
