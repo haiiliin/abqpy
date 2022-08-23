@@ -1,0 +1,272 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../user/about/examples/create-part.rst:3
+msgid "Creating a part"
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:5
+msgid ""
+"This section includes an example that shows how you can use an Abaqus/CAE"
+" script to replicate the functionality of Abaqus/CAE."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:8
+msgid "The example script"
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:10
+msgid ""
+"This example shows how you can use an Abaqus/CAE script to replicate the "
+"functionality of Abaqus/CAE."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:12
+msgid "The script does the following:"
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:14
+msgid "Creates a new model in the model database."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:15
+msgid "Creates a two-dimensional sketch."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:16
+msgid "Creates a three-dimensional, deformable part."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:17
+msgid ""
+"Extrudes the two-dimensional sketch to create the first geometric feature"
+" of the part."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:18
+msgid "Creates a new viewport."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:19
+msgid "Displays a shaded image of the new part in the new viewport."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:22
+msgid ""
+"The new viewport and the shaded part are shown in "
+":numref:`cmd_int_aexample_nls`."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:29
+msgid "The example creates a new viewport and a part."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:32
+msgid ""
+"The example scripts from this guide can be copied to the user's working "
+"directory by using the Abaqus fetch utility:"
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:38
+msgid ""
+"where scriptName.py is the name of the script (see `Fetching sample input"
+" files "
+"<https://help.3ds.com/2021/english/dssimulia_established/SIMACAEEXCRefMap/simaexc-c-fetchproc.htm?contextscope=all?>`_)."
+" Use the following command to retrieve the script for this example:"
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:47
+msgid ""
+"Abaqus does not install the sample scripts by default during the "
+"installation procedure. As a result, if the Abaqus fetch utility fails to"
+" find the sample script, the script may be missing from your Abaqus "
+"installation. You must rerun the installation procedure and request "
+"Abaqus sample problems from the list of items to install."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:49
+msgid "To run the program, do the following:"
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:51
+msgid "Start Abaqus/CAE by typing abaqus cae."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:52
+msgid "From the startup screen, select Run Script."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:53
+msgid "From the Run Script dialog box that appears, select modelAExample.py."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:54
+msgid "Click OK to run the script."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:59
+msgid ""
+"If Abaqus/CAE is already running, you can run the script by selecting "
+"from the main menu bar."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:61
+msgid "The example follows:"
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:110
+msgid "How does the script work?"
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:112
+msgid "This section explains each portion of the example script."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:118
+msgid ""
+"This statement makes the basic Abaqus objects accessible to the script. "
+"It also provides access to a default model database using the variable "
+"named mdb. The statement, `from abaqusConstants import *`, makes the "
+"Symbolic Constants defined by the Abaqus Scripting Interface available to"
+" the script."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:125
+msgid ""
+"These statements provide access to the objects related to sketches and "
+"parts. sketch and part are called Python modules."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:127
+msgid ""
+"The next statement in the script is shown in :numref:`cmd-righttoleft-"
+"nls`. You can read this statement from right to left as follows:"
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:129
+msgid "Create a new model named Model A."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:130
+msgid "Store the new model in the model database mdb."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:131
+msgid "Assign the new model to a variable called myModel."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:139
+msgid "Creating a new model."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:146
+msgid ""
+"This statement creates a new sketch object named Sketch A in myModel. The"
+" variable mySketch is assigned to the new sketch. The sketch will be "
+"placed on a sheet 200 units square. Note the following:"
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:148
+msgid ""
+"A command that creates something (an \"object\" in object-oriented "
+"programming terms) is called a constructor and starts with an uppercase "
+"character. You have seen the Model and Sketch commands that create Model "
+"objects and Sketch objects, respectively."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:150
+msgid ""
+"The command uses the variable myModel that we created in the previous "
+"statement. Using variables with meaningful names in a script makes the "
+"script easier to read and understand."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:162
+msgid ""
+"These two statements define the X- and Y-coordinates of the vertices that"
+" form the inner and outer profile of the letter A. The variable "
+"xyCoordsInner refers to the vertices of the inner profile, and the "
+"variable xyCoordsOuter refers to the vertices of the outer profile."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:170
+msgid ""
+"This loop creates the inner profile of the letter A in mySketch. Four "
+"lines are created using the X- and Y-coordinates of the vertices in "
+"xyCoordsInner to define the beginning point and the end point of each "
+"line. Note the following:"
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:172
+msgid ""
+"Python uses only indentation to signify the start and the end of a loop. "
+"Python does not use the brackets {} of C and C++."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:173
+msgid ""
+"The `len()` function returns the number of coordinate pairs in "
+"xyCoordsInner—five in our example."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:174
+msgid ""
+"The `range()` function returns a sequence of integers. In Python, as in C"
+" and C++, the index of an array starts at zero. In our example range(4) "
+"returns 0,1,2,3. For each iteration of the loop in the example the "
+"variable i is assigned to the next value in the sequence of integers."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:177
+msgid "Similarly, a second loop creates the outer profile of the A character."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:184
+msgid ""
+"This statement creates a three-dimensional, deformable part named Part A "
+"in myModel. The new part is assigned to the variable myPart."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:190
+msgid ""
+"This statement creates a base solid extrude feature in myPart by "
+"extruding mySketch through a depth of 20.0."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:197
+msgid ""
+"This statement creates a new viewport named Viewport for Model A in "
+"session. The new viewport is assigned to the variable myViewport. The "
+"origin of the viewport is at (20, 20), and it has a width of 150 and a "
+"height of 100."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:203
+msgid ""
+"This statement tells Abaqus to display the new part, myPart, in the new "
+"viewport, myViewport."
+msgstr ""
+
+#: ../../user/about/examples/create-part.rst:209
+msgid ""
+"This statement sets the render style of the part display options in "
+"myViewport to shaded. As a result, myPart appears in the shaded render "
+"style."
+msgstr ""
+

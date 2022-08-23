@@ -1,0 +1,552 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../user/output/cpp/examples.rst:3
+msgid "Example programs that access data from an output database"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:5
+msgid ""
+"The following examples illustrate how you use the output database "
+"commands to access data from an output database."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:8
+msgid "Finding the maximum value of von Mises stress"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:10
+msgid ""
+"This example illustrates how you can iterate through an output database "
+"and search for the maximum value of von Mises stress. The program opens "
+"the output database specified by the first argument on the command line "
+"and iterates through the following:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:12
+msgid "Each step."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:13
+msgid "Each frame in each step."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:14
+msgid "Each value of von Mises stress in each frame."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:16
+msgid ""
+"In addition, you can supply an optional assembly element set argument "
+"from the command line, in which case the program searches only the "
+"element set for the maximum value of von Mises stress."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:18
+msgid ""
+"The following illustrates how you can run the example program from the "
+"system prompt. The program will search the element set ALL ELEMENTS in "
+"the viewer tutorial output database for the maximum value of von Mises "
+"stress:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:26
+msgid ""
+"If a command line argument is a String that contains spaces, some systems"
+" will interpret the String correctly only if it is enclosed in double "
+"quotation marks. For example, \"ALL ELEMENTS\"."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:28 ../../user/output/cpp/examples.rst:722
+msgid ""
+"You can also run the example with only the **-help** parameter for a "
+"summary of the usage."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:30
+msgid ""
+"Use the following commands to retrieve the example program and the viewer"
+" tutorial output database:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:246
+msgid "Creating an output database"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:248
+msgid ""
+"The following example illustrates how you can use the Abaqus C++ API "
+"commands to do the following:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:250
+msgid "Create a new output database."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:251
+msgid "Add model data."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:252
+msgid "Add field data."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:253
+msgid "Add history data."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:254
+msgid "Read history data."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:255
+msgid "Save the output database."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:257
+#: ../../user/output/cpp/examples.rst:685
+#: ../../user/output/cpp/examples.rst:793
+msgid "Use the following command to retrieve the example program:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:660
+msgid "Reading data from an output database"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:662
+msgid ""
+"This example illustrates how you can print the content of an output "
+"database. The example opens the output database specified on the command "
+"line and calls functions that print the following:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:664
+msgid "Parts"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:665
+msgid "Part instances"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:666
+msgid "The root assembly"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:667
+msgid "Connectors"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:668
+msgid "Connector properties"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:669
+msgid "Datum coordinate systems"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:670
+msgid "Nodes"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:671
+msgid "Elements"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:672
+msgid "Sets"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:673
+msgid "Faces"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:674
+msgid "Sections"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:675
+msgid "Steps"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:676
+msgid "Frames"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:677
+msgid "Fields"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:678
+msgid "Field values"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:679
+msgid "Field bulk data"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:680
+msgid "Field locations"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:681
+msgid "History regions"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:682
+msgid "History output"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:683
+msgid "History points"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:692
+msgid ""
+"Decreasing the amount of data in an output database by retaining data at "
+"specific frames"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:694
+msgid ""
+"This example illustrates how you can decrease the size of an output "
+"database. In most cases a large output database results from excessive "
+"field output being generated over a large number of frames. The Abaqus "
+"C++ API does not support the deletion of data from an output database; "
+"however, you can use this example program to copy data from select frames"
+" into a second output database created by a **datacheck** analysis that "
+"has identical model data. The original analysis and the **datacheck** "
+"analysis must be run using the same number of processors because the "
+"internal organization of data may differ based on the number of "
+"processors. The program uses addData to copy data at specified frames "
+"from the large output database into the new output database. The addData "
+"method works only when the model data in the two output databases are "
+"identical. For more information, see "
+":py:meth:`~abaqus.Odb.FieldOutput.FieldOutput.addData`."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:696
+msgid ""
+"When you run the program, the following command line parameters are "
+"required:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:698
+msgid "**-smallOdb odbName**"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:700
+msgid ""
+"The name of the output database created with a **datacheck** analysis of "
+"the original problem. For more information, see `Abaqus/Standard and "
+"Abaqus/Explicit execution "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-analysisproc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:702
+msgid "**-largeOdb odbName**"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:704
+msgid ""
+"The name of the large output database generated by the original problem. "
+"The program copies selected frames from this output database."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:706
+msgid "The following parameters are optional:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:708
+msgid "**-history**"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:710
+msgid ""
+"Copy all history output from all available steps in the large output "
+"database. By default, history output is not copied."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:713
+msgid ""
+"Copying large amounts of history data can result in the program creating "
+"a very large output database."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:715
+msgid "**-debug**"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:717
+msgid ""
+"Print a detailed report of all the operations performed during the "
+"running of the program. By default, no debug information is generated."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:720
+msgid ""
+"If you are extracting data from a large output database, the debug option"
+" can generate large amounts of information."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:724
+msgid ""
+"The following is an example of how you can use this program in "
+"conjunction with the output database generated by the problem described "
+"in `Free ring under initial velocity: comparison of rate-independent and "
+"rate-dependent plasticity "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEBMKRefMap/simabmk-c-freering.htm?contextscope=all>`_."
+" Use the following commands to retrieve the example program and the "
+"benchmark input file:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:731
+msgid "Run an analysis using the benchmark input file:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:737
+msgid ""
+"This creates an output database called `ringshell.odb` that contains 100 "
+"frames of data."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:739
+msgid ""
+"Run a **datacheck** analysis to obtain a new output database called "
+"`ringshell_datacheck.odb` that contains the same model data as "
+"`ringshell.odb`:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:745
+msgid "Create the executable program:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:751
+msgid ""
+"The program displays the number of frames available in each step. For "
+"each step you must specify the number of increments between frames, which"
+" is the frequency at which the data will be copied to the new output "
+"database. Data for the first and last increment in each step are always "
+"copied. For example, if a step has 100 frames, and you enter a frame "
+"interval of 37, the program will copy data for frames 0, 37, 74, and 100."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:753
+msgid ""
+"The following statement will run the executable program and read data "
+"from the small output database containing only model data and the large "
+"output database created by the benchmark example:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:759
+msgid "The program prompts you for the increment between frames:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:772
+msgid ""
+"Enter 37 to define the increment between frames. The program then reads "
+"the data and displays the frames being processed:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:783
+msgid "Stress range for multiple load cases"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:785
+msgid ""
+"This example illustrates how you can use the envelope operations to "
+"compute the stress range over a number of load cases. The example program"
+" does the following:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:787
+msgid ""
+"For each load case during a specified step, the program collects the S11 "
+"components of the stress tensor fields into a list of scalar fields."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:788
+msgid ""
+"Computes the maximum and minimum of the S11 stress component using the "
+"envelope calculations."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:789
+msgid ""
+"Computes the stress range using the maximum and minimum values of the "
+"stress component."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:790
+msgid "Creates a new frame in the step."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:791
+msgid ""
+"Writes the computed stress range into a new FieldOutput object in the new"
+" frame."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:799
+msgid ""
+"The fetch command also retrieves an input file that you can use to "
+"generate an output database that can be read by the example program."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:873
+msgid "A C++ version of FELBOW"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:875
+msgid ""
+"This example illustrates the use of a C++ program to read selected "
+"element integration point records from an output database and to "
+"postprocess the elbow element results. The program creates **X - Y** data"
+" that can be plotted with the *X–Y* plotting capability in Abaqus/CAE. "
+"The program performs the same function as the Fortran program described "
+"in `Creation of a data file to facilitate the postprocessing of elbow "
+"element results: FELBOW "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXARefMap/simaexa-c-felbow.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:877
+msgid ""
+"The program reads integration point data for elbow elements from an "
+"output database to visualize one of the following:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:879
+msgid ""
+"Variation of an output variable around the circumference of a given elbow"
+" element, or"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:880
+msgid "Ovalization of a given elbow element."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:882
+msgid ""
+"The program creates either an ASCII file containing *X–Y* data or a new "
+"output database file that can be viewed using Abaqus/CAE."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:884
+msgid ""
+"To use option 2, you must ensure that the integration point coordinates "
+"(COORD) are written to the output database. For option 1 the *X*-data are"
+" data for the distance around the circumference of the elbow element, "
+"measured along the middle surface, and the *Y*-data are data for the "
+"output variable. For option 2 the *X–Y* data are the current coordinates "
+"of the middle-surface integration points around the circumference of the "
+"elbow element, projected to a local coordinate system in the plane of the"
+" deformed cross-section. The origin of the local system coincides with "
+"the center of the cross-section; the plane of the deformed cross-section "
+"is defined as the plane that contains the center of the cross-section."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:886
+msgid ""
+"You should specify the name of the output database during program "
+"execution. The program prompts for more information, depending on the "
+"option that was chosen; this information includes the following:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:888
+msgid "Your choice for storing results (ASCII file or a new output database)"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:889
+msgid "File name based on the above choice"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:890
+msgid "The postprocessing option (1 or 2)"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:891
+msgid "The part name"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:892
+msgid "The step name"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:893
+msgid "The frame number"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:894
+msgid "The element output variable (option 1 only)"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:895
+msgid "The component of the variable (option 1 only)"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:896
+msgid "The section point number (option 1 only)"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:897
+msgid "The element number or element set name"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:899
+msgid ""
+"Before program execution, compile and link the C++ program using the "
+"**abaqus make** utility:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:905
+msgid ""
+"After successful compilation, the program's object code is linked "
+"automatically with the Abaqus object codes stored in the shared program "
+"library and interface library to build the executable program. Refer to "
+"`Customizing the Abaqus environment "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEILGRefMap/simailg-m"
+"-Environment-sb.htm?contextscope=all>`_ to see which compile and link "
+"commands are used for a particular computer."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:907
+msgid ""
+"Before executing the program, run an analysis that creates an output "
+"database file containing the appropriate output. This analysis includes, "
+"for example, output for the elements and the integration point "
+"coordinates of the elements. Execute the program using the following "
+"command:"
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:913
+msgid ""
+"The program prompts for other information, such as the desired "
+"postprocessing option, part name, etc. The program processes the data and"
+" produces a text file or a new output database file that contains the "
+"information required to visualize the elbow element results."
+msgstr ""
+
+#: ../../user/output/cpp/examples.rst:915
+msgid ""
+"`Elastic-plastic collapse of a thin-walled elbow under in-plane bending "
+"and internal pressure "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXARefMap/simaexa-c-elbowcollapse.htm?contextscope=all>`_"
+" contains several figures that can be created with the aid of this "
+"program."
+msgstr ""
+
