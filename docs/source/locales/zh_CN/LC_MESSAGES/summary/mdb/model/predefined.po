@@ -1,76 +1,64 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022, WANG Hailin
-# This file is distributed under the same license as the abqpy package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy \n"
+"Project-Id-Version: abqpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:36+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"PO-Revision-Date: 2022-08-23 10:43\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: abqpy\n"
+"X-Crowdin-Project-ID: 533812\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /main/docs/source/locales/pot/summary/mdb/model/predefined.pot\n"
+"X-Crowdin-File-ID: 380\n"
+"Language: zh_CN\n"
 
 #: ../../summary/mdb/model/predefined.rst:3
 msgid "Predefined Field"
 msgstr ""
 
 #: ../../summary/mdb/model/predefined.rst:5
-msgid ""
-"A PredefinedField object stores the non-propagating data of a predefined "
-"field as well as a number of instances of the corresponding "
-"PredefinedFieldState object. The PredefinedFieldState object stores the "
-"propagating data of the predefined field in a single step. A specific "
-"type of PredefinedField object and a specific type of "
-"PredefinedFieldState object are designed for each type of predefined "
-"field. Instances of the PredefinedFieldState object are created and "
-"deleted internally by its corresponding PredefinedField object."
+msgid "A PredefinedField object stores the non-propagating data of a predefined field as well as a number of instances of the corresponding PredefinedFieldState object. The PredefinedFieldState object stores the propagating data of the predefined field in a single step. A specific type of PredefinedField object and a specific type of PredefinedFieldState object are designed for each type of predefined field. Instances of the PredefinedFieldState object are created and deleted internally by its corresponding PredefinedField object."
 msgstr ""
 
 #: ../../summary/mdb/model/predefined.rst:9
 msgid "Create predefined fields"
 msgstr ""
 
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:2 of
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:2
 msgid "Abaqus creates a Model object named `Model-1` when a session is started."
 msgstr ""
 
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:5 of
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:5
 msgid "This object can be accessed by:"
 msgstr ""
 
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:12 of
-msgid ""
-"Check `Model on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:12
+msgid "Check `Model on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel of
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:0
 msgid "Public Data Attributes:"
 msgstr ""
 
-#: ../../None:55:<autosummary>:1 ../../None:5:<autosummary>:1
+#: ../../None:55:<autosummary>:1
+#: ../../None:5:<autosummary>:1
 #: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`name "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.name>`\\"
+msgid ":py:obj:`name <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.name>`\\"
 msgstr ""
 
-#: ../../None:55:<autosummary>:1 ../../None:5:<autosummary>:1
+#: ../../None:55:<autosummary>:1
+#: ../../None:5:<autosummary>:1
 #: ../../None:6:<autosummary>:1
 msgid "A String specifying the repository key."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`stefanBoltzmann "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.stefanBoltzmann>`\\"
+msgid ":py:obj:`stefanBoltzmann <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.stefanBoltzmann>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -78,9 +66,7 @@ msgid "None or a Float specifying the Stefan-Boltzmann constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`absoluteZero "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.absoluteZero>`\\"
+msgid ":py:obj:`absoluteZero <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.absoluteZero>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -88,21 +74,15 @@ msgid "None or a Float specifying the absolute zero constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`waveFormulation "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.waveFormulation>`\\"
+msgid ":py:obj:`waveFormulation <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.waveFormulation>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A SymbolicConstant specifying the type of incident wave formulation to be"
-" used in acoustic problems."
+msgid "A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`universalGas "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.universalGas>`\\"
+msgid ":py:obj:`universalGas <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.universalGas>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -110,45 +90,31 @@ msgid "None or a Float specifying the universal gas constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`noPartsInputFile "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.noPartsInputFile>`\\"
+msgid ":py:obj:`noPartsInputFile <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.noPartsInputFile>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A Boolean specifying whether an input file should be written without "
-"parts and assemblies."
+msgid "A Boolean specifying whether an input file should be written without parts and assemblies."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`restartIncrement "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.restartIncrement>`\\"
+msgid ":py:obj:`restartIncrement <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.restartIncrement>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"An Int specifying the increment, interval, iteration or cycle where the "
-"restart analysis will start."
+msgid "An Int specifying the increment, interval, iteration or cycle where the restart analysis will start."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`endRestartStep "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.endRestartStep>`\\"
+msgid ":py:obj:`endRestartStep <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.endRestartStep>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A Boolean specifying that the step specified by **restartStep** should be"
-" terminated at the increment specified by **restartIncrement**."
+msgid "A Boolean specifying that the step specified by **restartStep** should be terminated at the increment specified by **restartIncrement**."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`shellToSolid "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.shellToSolid>`\\"
+msgid ":py:obj:`shellToSolid <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.shellToSolid>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -156,21 +122,15 @@ msgid "A Boolean specifying that a shell global model drives a solid submodel."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`lastChangedCount "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.lastChangedCount>`\\"
+msgid ":py:obj:`lastChangedCount <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.lastChangedCount>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A Float specifying the time stamp that indicates when the model was last "
-"changed."
+msgid "A Float specifying the time stamp that indicates when the model was last changed."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`description "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.description>`\\"
+msgid ":py:obj:`description <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.description>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -178,9 +138,7 @@ msgid "A String specifying the purpose and contents of the Model object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`restartJob "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.restartJob>`\\"
+msgid ":py:obj:`restartJob <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.restartJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -188,69 +146,47 @@ msgid "A String specifying the name of the job that generated the restart data."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`restartStep "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.restartStep>`\\"
+msgid ":py:obj:`restartStep <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.restartStep>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A String specifying the name of the step where the restart analysis will "
-"start."
+msgid "A String specifying the name of the step where the restart analysis will start."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`globalJob "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.globalJob>`\\"
+msgid ":py:obj:`globalJob <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.globalJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A String specifying the name of the job that generated the results for "
-"the global model."
+msgid "A String specifying the name of the job that generated the results for the global model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`copyConstraints "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.copyConstraints>`\\"
+msgid ":py:obj:`copyConstraints <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.copyConstraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A boolean specifying the status of constraints created in a model, in the"
-" model which instances this model."
+msgid "A boolean specifying the status of constraints created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`copyConnectors "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.copyConnectors>`\\"
+msgid ":py:obj:`copyConnectors <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.copyConnectors>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A boolean specifying the status of connectors created in a model, in the "
-"model which instances this model."
+msgid "A boolean specifying the status of connectors created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`copyInteractions "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.copyInteractions>`\\"
+msgid ":py:obj:`copyInteractions <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.copyInteractions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A boolean specifying the status of interactions created in a model, in "
-"the model which instances this model."
+msgid "A boolean specifying the status of interactions created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`keywordBlock "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.keywordBlock>`\\"
+msgid ":py:obj:`keywordBlock <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -258,9 +194,7 @@ msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`rootAssembly "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.rootAssembly>`\\"
+msgid ":py:obj:`rootAssembly <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -268,9 +202,7 @@ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`amplitudes "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.amplitudes>`\\"
+msgid ":py:obj:`amplitudes <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.amplitudes>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -278,9 +210,7 @@ msgid "A repository of Amplitude objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`profiles "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.profiles>`\\"
+msgid ":py:obj:`profiles <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.profiles>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -288,9 +218,7 @@ msgid "A repository of Profile objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`boundaryConditions "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.boundaryConditions>`\\"
+msgid ":py:obj:`boundaryConditions <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.boundaryConditions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -298,9 +226,7 @@ msgid "A repository of BoundaryCondition objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`constraints "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.constraints>`\\"
+msgid ":py:obj:`constraints <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.constraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -308,9 +234,7 @@ msgid "A repository of ConstrainedSketchConstraint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`analyticalFields "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.analyticalFields>`\\"
+msgid ":py:obj:`analyticalFields <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.analyticalFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -318,9 +242,7 @@ msgid "A repository of AnalyticalField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`discreteFields "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.discreteFields>`\\"
+msgid ":py:obj:`discreteFields <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.discreteFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -328,9 +250,7 @@ msgid "A repository of DiscreteField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`predefinedFields "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.predefinedFields>`\\"
+msgid ":py:obj:`predefinedFields <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.predefinedFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -338,9 +258,7 @@ msgid "A repository of PredefinedField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`interactions "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.interactions>`\\"
+msgid ":py:obj:`interactions <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.interactions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -348,9 +266,7 @@ msgid "A repository of Interaction objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`interactionProperties "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.interactionProperties>`\\"
+msgid ":py:obj:`interactionProperties <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.interactionProperties>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -358,9 +274,7 @@ msgid "A repository of InteractionProperty objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`contactControls "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.contactControls>`\\"
+msgid ":py:obj:`contactControls <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.contactControls>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -368,9 +282,7 @@ msgid "A repository of ContactControl objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`contactInitializations "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.contactInitializations>`\\"
+msgid ":py:obj:`contactInitializations <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.contactInitializations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -378,9 +290,7 @@ msgid "A repository of ContactInitialization objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`contactStabilizations "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.contactStabilizations>`\\"
+msgid ":py:obj:`contactStabilizations <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.contactStabilizations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -388,35 +298,23 @@ msgid "A repository of ContactStabilization objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`linkedInstances "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.linkedInstances>`\\"
+msgid ":py:obj:`linkedInstances <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.linkedInstances>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A tuple of tuples of Strings specifying the linked child PartInstance "
-"name in the current model to the corresponding parent PartInstance name "
-"in a different model."
+msgid "A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`linkedParts "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.linkedParts>`\\"
+msgid ":py:obj:`linkedParts <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.linkedParts>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A tuple of tuples of Strings specifying the linked child Part name in the"
-" current model to the corresponding parent Part name in a different "
-"model."
+msgid "A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`loads "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.loads>`\\"
+msgid ":py:obj:`loads <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.loads>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -424,9 +322,7 @@ msgid "A repository of Load objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`materials "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.materials>`\\"
+msgid ":py:obj:`materials <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.materials>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -434,9 +330,7 @@ msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`calibrations "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.calibrations>`\\"
+msgid ":py:obj:`calibrations <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.calibrations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -444,9 +338,7 @@ msgid "A repository of Calibration objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`sections "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.sections>`\\"
+msgid ":py:obj:`sections <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.sections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -454,9 +346,7 @@ msgid "A repository of Section objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`remeshingRules "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.remeshingRules>`\\"
+msgid ":py:obj:`remeshingRules <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.remeshingRules>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -464,9 +354,7 @@ msgid "A repository of RemeshingRule objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`sketches "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.sketches>`\\"
+msgid ":py:obj:`sketches <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.sketches>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -474,9 +362,7 @@ msgid "A repository of ConstrainedSketch objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`parts "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.parts>`\\"
+msgid ":py:obj:`parts <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.parts>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -484,9 +370,7 @@ msgid "A repository of Part objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`steps "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.steps>`\\"
+msgid ":py:obj:`steps <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.steps>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -494,9 +378,7 @@ msgid "A repository of Step objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`featureOptions "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.featureOptions>`\\"
+msgid ":py:obj:`featureOptions <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.featureOptions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -504,9 +386,7 @@ msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`adaptiveMeshConstraints "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.adaptiveMeshConstraints>`\\"
+msgid ":py:obj:`adaptiveMeshConstraints <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.adaptiveMeshConstraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -514,9 +394,7 @@ msgid "A repository of AdaptiveMeshConstraint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`adaptiveMeshControls "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.adaptiveMeshControls>`\\"
+msgid ":py:obj:`adaptiveMeshControls <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.adaptiveMeshControls>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -524,9 +402,7 @@ msgid "A repository of AdaptiveMeshControl objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`timePoints "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.timePoints>`\\"
+msgid ":py:obj:`timePoints <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.timePoints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -534,9 +410,7 @@ msgid "A repository of TimePoint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`filters "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.filters>`\\"
+msgid ":py:obj:`filters <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.filters>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -544,9 +418,7 @@ msgid "A repository of Filter objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`integratedOutputSections "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.integratedOutputSections>`\\"
+msgid ":py:obj:`integratedOutputSections <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.integratedOutputSections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -554,9 +426,7 @@ msgid "A repository of IntegratedOutputSection objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`fieldOutputRequests "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.fieldOutputRequests>`\\"
+msgid ":py:obj:`fieldOutputRequests <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.fieldOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -564,9 +434,7 @@ msgid "A repository of FieldOutputRequest objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`historyOutputRequests "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.historyOutputRequests>`\\"
+msgid ":py:obj:`historyOutputRequests <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.historyOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -574,9 +442,7 @@ msgid "A repository of HistoryOutputRequest objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`optimizationTasks "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.optimizationTasks>`\\"
+msgid ":py:obj:`optimizationTasks <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.optimizationTasks>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -584,9 +450,7 @@ msgid "A repository of OptimizationTask objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`tableCollections "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.tableCollections>`\\"
+msgid ":py:obj:`tableCollections <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.tableCollections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -594,9 +458,7 @@ msgid "A repository of TableCollection objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`eventSeriesTypes "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.eventSeriesTypes>`\\"
+msgid ":py:obj:`eventSeriesTypes <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.eventSeriesTypes>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -604,85 +466,65 @@ msgid "A repository of EventSeriesType objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`eventSeriesDatas "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.eventSeriesDatas>`\\"
+msgid ":py:obj:`eventSeriesDatas <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.eventSeriesDatas>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
 msgid "A repository of EventSeriesData objects."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:5:<autosummary>:1
-#: ../../None:6:<autosummary>:1 ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`region "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.region>`\\"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1 ../../None:5:<autosummary>:1
-#: ../../None:6:<autosummary>:1 ../../None:7:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object on which the "
-"**fluidCavity** interaction is specified."
-msgstr ""
-
+#: ../../None:3:<autosummary>:1
 #: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`endStep "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.endStep>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-"The SymbolicConstant LAST_STEP or an Int specifying the step from which "
-"the initial state values are to be read or the SymbolicConstant "
-"LAST_STEP."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`endIncrement "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.endIncrement>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-"The SymbolicConstant STEP_END or an Int specifying the increment, "
-"interval or iteration of the step set in **endStep** or the "
-"SymbolicConstant STEP_END."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`updateReferenceConfiguration "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.updateReferenceConfiguration>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-"A Boolean specifying whether to update the reference configuration based "
-"on the import data."
-msgstr ""
-
-#: ../../None:10:<autosummary>:1 ../../None:4:<autosummary>:1
 #: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`field "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.field>`\\"
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`region <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.region>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
+#: ../../None:5:<autosummary>:1
 #: ../../None:6:<autosummary>:1
-msgid ""
-"A String specifying the name of the AnalyticalField object associated "
-"with this predefined field."
+#: ../../None:7:<autosummary>:1
+msgid "A :py:class:`~abaqus.Region.Region.Region` object on which the **fluidCavity** interaction is specified."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`endStep <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.endStep>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "The SymbolicConstant LAST_STEP or an Int specifying the step from which the initial state values are to be read or the SymbolicConstant LAST_STEP."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`endIncrement <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.endIncrement>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "The SymbolicConstant STEP_END or an Int specifying the increment, interval or iteration of the step set in **endStep** or the SymbolicConstant STEP_END."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`updateReferenceConfiguration <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.updateReferenceConfiguration>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "A Boolean specifying whether to update the reference configuration based on the import data."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`numBackStress "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.numBackStress>`\\"
+#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`field <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.field>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+msgid "A String specifying the name of the AnalyticalField object associated with this predefined field."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`numBackStress <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.numBackStress>`\\"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -690,9 +532,7 @@ msgid "An Int specifying the number of backstresses."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`equivPlasticStrain "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.equivPlasticStrain>`\\"
+msgid ":py:obj:`equivPlasticStrain <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.equivPlasticStrain>`\\"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -700,21 +540,15 @@ msgid "A sequence of Floats specifying the initial equivalent Plastic strain."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`backStress "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.backStress>`\\"
+msgid ":py:obj:`backStress <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.backStress>`\\"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ""
-"A sequence of sequences of Floats specifying the initial backstress "
-"tensor for kinematic hardening models."
+msgid "A sequence of sequences of Floats specifying the initial backstress tensor for kinematic hardening models."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`sectPtNum "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.sectPtNum>`\\"
+msgid ":py:obj:`sectPtNum <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.sectPtNum>`\\"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -722,9 +556,7 @@ msgid "A sequence of Ints specifying section point numbers."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`definition "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.definition>`\\"
+msgid ":py:obj:`definition <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.definition>`\\"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -732,84 +564,65 @@ msgid "A SymbolicConstant specifying different types of kinematic hardening."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`rebarLayerNames "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.rebarLayerNames>`\\"
+msgid ":py:obj:`rebarLayerNames <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.rebarLayerNames>`\\"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid "A sequence of Strings specifying rebar layer names."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:10:<autosummary>:1
+#: ../../None:4:<autosummary>:1
 #: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`distributionType "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.distributionType>`\\"
+msgid ":py:obj:`distributionType <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.distributionType>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:10:<autosummary>:1
+#: ../../None:4:<autosummary>:1
 #: ../../None:6:<autosummary>:1
 msgid "A SymbolicConstant specifying whether the load is uniform."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`useFields "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.useFields>`\\"
+msgid ":py:obj:`useFields <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.useFields>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"A Boolean specifying whether the volume fraction data will be uniform or "
-"defined by discrete fields."
+msgid "A Boolean specifying whether the volume fraction data will be uniform or defined by discrete fields."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`assignmentList "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.assignmentList>`\\"
+msgid ":py:obj:`assignmentList <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.assignmentList>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"A sequence of tuples specifying the uniform volume fractions to be "
-"assigned."
+msgid "A sequence of tuples specifying the uniform volume fractions to be assigned."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1 ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`fieldList "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.fieldList>`\\"
+#: ../../None:5:<autosummary>:1
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`fieldList <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.fieldList>`\\"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1 ../../None:7:<autosummary>:1
-msgid ""
-"A sequence of tuples specifying the discrete volume fractions to be "
-"assigned."
+#: ../../None:5:<autosummary>:1
+#: ../../None:7:<autosummary>:1
+msgid "A sequence of tuples specifying the discrete volume fractions to be assigned."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`colorList "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.colorList>`\\"
+msgid ":py:obj:`colorList <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.colorList>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"A sequence of three Ints specifying colors used to display the material "
-"instance assignments."
+msgid "A sequence of three Ints specifying colors used to display the material instance assignments."
 msgstr ""
 
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel of
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:0
 msgid "Public Methods:"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`FluidCavityPressure "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure>`\\"
-" \\(name\\, fluidCavity\\, ...\\)"
+msgid ":py:obj:`FluidCavityPressure <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure>`\\ \\(name\\, fluidCavity\\, ...\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -817,10 +630,7 @@ msgid "This method creates a FluidCavityPressure object."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`InitialState "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState>`\\"
-" \\(name\\, instances\\, fileName\\[\\, ...\\]\\)"
+msgid ":py:obj:`InitialState <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState>`\\ \\(name\\, instances\\, fileName\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -828,10 +638,7 @@ msgid "This method creates an InitialState predefined field object."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`KinematicHardening "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening>`\\"
-" \\(name\\, region\\[\\, ...\\]\\)"
+msgid ":py:obj:`KinematicHardening <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening>`\\ \\(name\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -839,10 +646,7 @@ msgid "This method creates a KinematicHardening object."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`MaterialAssignment "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment>`\\"
-" \\(name\\, instanceList\\[\\, ...\\]\\)"
+msgid ":py:obj:`MaterialAssignment <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment>`\\ \\(name\\, instanceList\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -850,10 +654,7 @@ msgid "This method creates a MaterialAssignment predefined field object."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`Temperature "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgid ":py:obj:`Temperature <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -861,10 +662,7 @@ msgid "This method creates a Temperature object."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`Velocity "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity>`\\"
-" \\(name\\, region\\, velocity1\\, velocity2\\, ...\\)"
+msgid ":py:obj:`Velocity <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity>`\\ \\(name\\, region\\, velocity1\\, velocity2\\, ...\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -872,10 +670,7 @@ msgid "This method creates a Velocity predefined field object."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`Stress "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress>`\\"
-" \\(name\\, region\\[\\, distributionType\\, ...\\]\\)"
+msgid ":py:obj:`Stress <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress>`\\ \\(name\\, region\\[\\, distributionType\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -883,113 +678,79 @@ msgid "This method creates a Stress predefined field object."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`Field "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgid ":py:obj:`Field <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid "This method creates a Field object."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../None:6:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`__init__ "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.__init__>`\\"
-" \\(name\\[\\, description\\, ...\\]\\)"
+msgid ":py:obj:`__init__ <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.__init__>`\\ \\(name\\[\\, description\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../None:6:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 #: ../../None:7:<autosummary>:1
 msgid "This method creates a Model object."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`ModelFromInputFile "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.ModelFromInputFile>`\\"
-" \\(name\\, inputFileName\\)"
+msgid ":py:obj:`ModelFromInputFile <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.ModelFromInputFile>`\\ \\(name\\, inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"This method creates a Model object by reading the keywords in an input "
-"file and creating the corresponding Abaqus/CAE objects."
+msgid "This method creates a Model object by reading the keywords in an input file and creating the corresponding Abaqus/CAE objects."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`ModelFromOdbFile "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.ModelFromOdbFile>`\\"
-" \\(name\\, odbFileName\\)"
+msgid ":py:obj:`ModelFromOdbFile <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.ModelFromOdbFile>`\\ \\(name\\, odbFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"This method creates a Model object by reading an output database and "
-"creating any corresponding Abaqus/CAE objects."
+msgid "This method creates a Model object by reading an output database and creating any corresponding Abaqus/CAE objects."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`ModelFromNastranFile "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.ModelFromNastranFile>`\\"
-" \\(modelName\\, inputFileName\\)"
+msgid ":py:obj:`ModelFromNastranFile <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.ModelFromNastranFile>`\\ \\(modelName\\, inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"This method creates a Model object by reading the keywords in a Nastran "
-"bulk data file or Nastran input file and creating any corresponding "
-"Abaqus/CAE objects."
+msgid "This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../None:6:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`setValues "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.setValues>`\\"
-" \\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
+msgid ":py:obj:`setValues <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.setValues>`\\ \\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../None:6:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 #: ../../None:7:<autosummary>:1
 msgid "This method modifies the Model object."
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`move "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.move>`\\"
-" \\(fromStepName\\, toStepName\\)"
+msgid ":py:obj:`move <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.move>`\\ \\(fromStepName\\, toStepName\\)"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
-msgid ""
-"This method moves the TemperatureState object from one step to a "
-"different step."
+msgid "This method moves the TemperatureState object from one step to a different step."
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`setValuesInStep "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.setValuesInStep>`\\"
-" \\(stepName\\[\\, field\\, ...\\]\\)"
+msgid ":py:obj:`setValuesInStep <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.setValuesInStep>`\\ \\(stepName\\[\\, field\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
-msgid ""
-"This method modifies the propagating data for an existing Temperature "
-"object in the specified step."
+msgid "This method modifies the propagating data for an existing Temperature object in the specified step."
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`resume "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.resume>`\\"
-" \\(\\)"
+msgid ":py:obj:`resume <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.resume>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -997,10 +758,7 @@ msgid "This method resumes the predefined field that was previously suppressed."
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.suppress>`\\"
-" \\(\\)"
+msgid ":py:obj:`suppress <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.suppress>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -1008,10 +766,7 @@ msgid "This method suppresses the predefined field."
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`delete "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.delete>`\\"
-" \\(indices\\)"
+msgid ":py:obj:`delete <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.delete>`\\ \\(indices\\)"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
