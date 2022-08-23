@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../user/python/use-scripts/specify-region.rst:3
+msgid "Specifying a region"
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-region.rst:5
+msgid ""
+"Many of the commands used by the Abaqus Scripting Interface require a "
+"region argument. For example,"
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-region.rst:7
+msgid ""
+"Load commands use the region argument to specify where the load is "
+"applied. You apply a concentrated force to vertices; you apply pressure "
+"to a face or an edge."
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-region.rst:9
+msgid ""
+"Mesh commands, such as setting the element type and creating the mesh, "
+"use the region argument to specify where the operation should be applied."
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-region.rst:11
+msgid ""
+"Set commands use the region argument to specify the region that comprises"
+" the set."
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-region.rst:13
+msgid ""
+"A region can be either a predefined Set or Surface object or a temporary "
+"Region object. For more information, see Region commands."
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-region.rst:15
+msgid ""
+"You should not rely on the integer id to identify a vertex, edge, face, "
+"or cell in a region command; for example, "
+"myFace=myModel.parts['Door'].faces[3]. The id can change if you add or "
+"delete features to your model; in addition, the id can change with a new "
+"release of Abaqus."
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-region.rst:17
+msgid ""
+"Rather than using the integer `id`, you should use the `findAt` method to"
+" identify a vertex, edge, face, or cell. The arguments to `findAt` are an"
+" arbitrary point on an edge, face, or cell or the X-, Y-, and "
+"Z-coordinates of a vertex. `findAt` returns an object that contains the "
+"`id` of the vertex or the `id` of the edge, face, or cell that includes "
+"the arbitrary point."
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-region.rst:19
+msgid ""
+"`findAt` initially uses the ACIS tolerance of 1E-6. As a result, `findAt`"
+" returns any entity that is at the arbitrary point specified or at a "
+"distance of less than 1E-6 from the arbitrary point. If nothing is found,"
+" `findAt` uses the tolerance for imprecise geometry (applicable only for "
+"imprecise geometric entities). If necessary, it can open the tolerance "
+"further to find a suitable object. The arbitrary point must not be shared"
+" by a second edge, face, or cell. If two entities intersect or coincide "
+"at the arbitrary point, `findAt` chooses the first entity that it "
+"encounters, and you should not rely on the return value being consistent."
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-region.rst:21
+msgid ""
+"Alternatively, if you are working with an existing model that contains "
+"named regions, you can specify a region by referring to its name. For "
+"example, in the example described in Investigating the skew sensitivity "
+"of shell elements, you create a model using Abaqus/CAE. While you define "
+"the model, you must create a set that includes the vertex at the center "
+"of a planar part and you must name the set `CENTER`. You subsequently run"
+" a script that parameterizes the model and performs a series of analyses."
+" The script uses the named region to retrieve the displacement and the "
+"bending moment at the center of the plate. The following statement refers"
+" to the set that you created and named using Abaqus/CAE:"
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-region.rst:27
+msgid ""
+"The following script illustrates how you can create a region. Regions are"
+" created from each of the following:"
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-region.rst:29
+msgid ""
+"A sequence of tuples indicating the vertices, edges, faces, or cells in "
+"the region. The sequence can include multiple tuples of the same type."
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-region.rst:31
+msgid ""
+"A sequence of tuples indicating a combination of the vertices, edges, "
+"faces, and cells in the region. The tuples can appear in any order in the"
+" sequence. In addition, you can include multiple tuples of the same type,"
+" and you can omit any type from the sequence."
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-region.rst:33
+msgid "A Surface object specifying an entity and the side of the entity."
+msgstr ""
+
+#: ../../user/python/use-scripts/specify-region.rst:35
+msgid "Use the following command to retrieve the script:"
+msgstr ""
+

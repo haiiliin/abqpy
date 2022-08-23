@@ -1,0 +1,239 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../reference/mdb/model/part_assembly/datum.rst:3
+#: ../../reference/mdb/model/part_assembly/datum.rst:14
+msgid "Datum"
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/datum.rst:5
+msgid ""
+"Datum commands return Feature objects and inherit the methods of Feature "
+"objects. For more details, see Feature commands. Datums can be created "
+"using methods on a Part or Assembly object."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/datum.rst:7
+msgid ""
+"Each command also creates a Datum object in the corresponding datum "
+"repository. The Datum object is used as an argument to other commands, "
+"such as Part and Partition commands."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/datum.rst:11
+msgid "Object features"
+msgstr ""
+
+#: abaqus.Datum.Datum.Datum:2 of
+msgid ""
+"The Datum object is the abstract base type for other Datum objects. The "
+"Datum object has no explicit constructor. The methods and members of the "
+"Datum object are common to all objects derived from the Datum."
+msgstr ""
+
+#: abaqus.Datum.Datum.Datum:7 abaqus.Datum.DatumAxis.DatumAxis:8
+#: abaqus.Datum.DatumCsys.DatumCsys:8 abaqus.Datum.DatumPlane.DatumPlane:8
+#: abaqus.Datum.DatumPoint.DatumPoint:8 of
+msgid "This object can be accessed by:"
+msgstr ""
+
+#: abaqus.Datum.Datum.Datum:20 of
+msgid ""
+"Check `Datum on help.3ds.com/2016 "
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/datum.rst:22
+msgid "DatumAxis"
+msgstr ""
+
+#: abaqus.Datum.DatumAxis.DatumAxis:2 of
+msgid ""
+"The DatumAxis object has no direct constructor; it is created when a "
+"Feature object is created. For example, the DatumAxisByCylFace method "
+"creates a Feature object that creates a DatumAxis object. The DatumAxis "
+"object is derived from the Datum object."
+msgstr ""
+
+#: abaqus.Datum.DatumAxis.DatumAxis:20 of
+msgid ""
+"Check `DatumAxis on help.3ds.com/2016 "
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxispyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Datum.DatumAxis.DatumAxis abaqus.Datum.DatumCsys.DatumCsys
+#: abaqus.Datum.DatumPlane.DatumPlane abaqus.Datum.DatumPoint.DatumPoint of
+msgid "Public Data Attributes:"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`pointOn <abaqus.Datum.DatumAxis.DatumAxis.pointOn>`\\"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1 ../../docstring
+#: abaqus.Datum.DatumAxis.DatumAxis.pointOn:2
+#: abaqus.Datum.DatumPlane.DatumPlane.pointOn:2
+#: abaqus.Datum.DatumPoint.DatumPoint.pointOn:2 of
+msgid ""
+"A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of"
+" a point located on the datum."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`direction <abaqus.Datum.DatumAxis.DatumAxis.direction>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1 ../../docstring
+#: abaqus.Datum.DatumAxis.DatumAxis.direction:2 of
+msgid ""
+"A tuple of Floats specifying a sequence of three Floats specifying the "
+"direction of the axis."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/datum.rst:30
+msgid "DatumCsys"
+msgstr ""
+
+#: abaqus.Datum.DatumCsys.DatumCsys:2 of
+msgid ""
+"The DatumCsys object has no direct constructor; it is created when a "
+"Feature object is created. For example, the DatumCsysByOffset method "
+"creates a Feature object that creates a DatumCsys object. The DatumCsys "
+"object is derived from the Datum object."
+msgstr ""
+
+#: abaqus.Datum.DatumCsys.DatumCsys:25 of
+msgid ""
+"Check `DatumCsys on help.3ds.com/2016 "
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsyspyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`coordSysType <abaqus.Datum.DatumCsys.DatumCsys.coordSysType>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "A SymbolicConstant specifying the type of the coordinate system."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`origin <abaqus.Datum.DatumCsys.DatumCsys.origin>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1 ../../docstring
+#: abaqus.Datum.DatumCsys.DatumCsys.origin:2 of
+msgid ""
+"A :py:class:`~abaqus.Datum.DatumPoint.DatumPoint` object specifying the "
+"origin of the coordinate system."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`axis1 <abaqus.Datum.DatumCsys.DatumCsys.axis1>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1 ../../docstring
+#: abaqus.Datum.DatumCsys.DatumCsys.axis1:2 of
+msgid ""
+"A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the "
+"1-direction of the coordinate system."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`axis2 <abaqus.Datum.DatumCsys.DatumCsys.axis2>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1 ../../docstring
+#: abaqus.Datum.DatumCsys.DatumCsys.axis2:2 of
+msgid ""
+"A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the "
+"2-direction of the coordinate system."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`axis3 <abaqus.Datum.DatumCsys.DatumCsys.axis3>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1 ../../docstring
+#: abaqus.Datum.DatumCsys.DatumCsys.axis3:2 of
+msgid ""
+"A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the "
+"3-direction of the coordinate system."
+msgstr ""
+
+#: ../../docstring abaqus.Datum.DatumCsys.DatumCsys.coordSysType:2 of
+msgid ""
+"A SymbolicConstant specifying the type of the coordinate system. Possible"
+" values are CARTESIAN, CYLINDRICAL, and SPHERICAL."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/datum.rst:38
+msgid "DatumPlane"
+msgstr ""
+
+#: abaqus.Datum.DatumPlane.DatumPlane:2 of
+msgid ""
+"The DatumPlane object has no direct constructor; it is created when a "
+"Feature object is created. For example, the DatumPlaneByPrincipalPlane "
+"method creates a Feature object that creates a DatumPlane object. The "
+"DatumPlane object is derived from the Datum object."
+msgstr ""
+
+#: abaqus.Datum.DatumPlane.DatumPlane:20 of
+msgid ""
+"Check `DatumPlane on help.3ds.com/2016 "
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`pointOn <abaqus.Datum.DatumPlane.DatumPlane.pointOn>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`normal <abaqus.Datum.DatumPlane.DatumPlane.normal>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1 ../../docstring
+#: abaqus.Datum.DatumPlane.DatumPlane.normal:2 of
+msgid ""
+"A tuple of Floats specifying a sequence of three Floats specifying the "
+"normal."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/datum.rst:46
+msgid "DatumPoint"
+msgstr ""
+
+#: abaqus.Datum.DatumPoint.DatumPoint:2 of
+msgid ""
+"The DatumPoint object has no direct constructor; it is created when a "
+"Feature object is created. For example, the DatumPointByCoordinate method"
+" creates a Feature object that creates a DatumPoint object. The "
+"DatumPoint object is derived from the Datum object."
+msgstr ""
+
+#: abaqus.Datum.DatumPoint.DatumPoint:20 of
+msgid ""
+"Check `DatumPoint on help.3ds.com/2016 "
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`pointOn <abaqus.Datum.DatumPoint.DatumPoint.pointOn>`\\"
+msgstr ""
+
