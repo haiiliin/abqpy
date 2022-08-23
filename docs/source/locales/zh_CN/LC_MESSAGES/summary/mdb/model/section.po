@@ -1,21 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022, WANG Hailin
-# This file is distributed under the same license as the abqpy package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy \n"
+"Project-Id-Version: abqpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:36+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"PO-Revision-Date: 2022-08-23 10:43\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: abqpy\n"
+"X-Crowdin-Project-ID: 533812\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /main/docs/source/locales/pot/summary/mdb/model/section.pot\n"
+"X-Crowdin-File-ID: 386\n"
+"Language: zh_CN\n"
 
 #: ../../summary/mdb/model/section.rst:7
 msgid "Objects in Section"
@@ -26,12 +26,7 @@ msgid "Section"
 msgstr ""
 
 #: ../../summary/mdb/model/section.rst:5
-msgid ""
-"The Section commands are used to create sections and profiles with their "
-"associated properties and behavior. The various section objects are all "
-"derived from the Section object. The various profile objects are all "
-"derived from the Profile object. See Property commands for the property "
-"assignment commands."
+msgid "The Section commands are used to create sections and profiles with their associated properties and behavior. The various section objects are all derived from the Section object. The various profile objects are all derived from the Profile object. See Property commands for the property assignment commands."
 msgstr ""
 
 #: ../../summary/mdb/model/section.rst:15
@@ -42,22 +37,20 @@ msgstr ""
 msgid "In Mdb"
 msgstr ""
 
-#: abaqus.Section.SectionModel.SectionModel:2 of
+#: ../../../../src/abaqus/Section/SectionModel.py:docstring of abaqus.Section.SectionModel.SectionModel:2
 msgid "Abaqus creates a Model object named `Model-1` when a session is started."
 msgstr ""
 
-#: abaqus.Section.SectionModel.SectionModel:5 of
+#: ../../../../src/abaqus/Section/SectionModel.py:docstring of abaqus.Section.SectionModel.SectionModel:5
 msgid "This object can be accessed by:"
 msgstr ""
 
-#: abaqus.Section.SectionModel.SectionModel:12 of
-msgid ""
-"Check `Model on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+#: ../../../../src/abaqus/Section/SectionModel.py:docstring of abaqus.Section.SectionModel.SectionModel:12
+msgid "Check `Model on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
-#: abaqus.Section.SectionModel.SectionModel
-#: abaqus.Section.SectionOdb.SectionOdb of
+#: ../../../../src/abaqus/Section/SectionModel.py:docstring of abaqus.Section.SectionModel.SectionModel:0
+#: ../../../../src/abaqus/Section/SectionOdb.py:docstring of abaqus.Section.SectionOdb.SectionOdb:0
 msgid "Public Data Attributes:"
 msgstr ""
 
@@ -70,9 +63,7 @@ msgid "A String specifying the repository key."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`stefanBoltzmann "
-"<abaqus.Section.SectionModel.SectionModel.stefanBoltzmann>`\\"
+msgid ":py:obj:`stefanBoltzmann <abaqus.Section.SectionModel.SectionModel.stefanBoltzmann>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -80,9 +71,7 @@ msgid "None or a Float specifying the Stefan-Boltzmann constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`absoluteZero "
-"<abaqus.Section.SectionModel.SectionModel.absoluteZero>`\\"
+msgid ":py:obj:`absoluteZero <abaqus.Section.SectionModel.SectionModel.absoluteZero>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -90,21 +79,15 @@ msgid "None or a Float specifying the absolute zero constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`waveFormulation "
-"<abaqus.Section.SectionModel.SectionModel.waveFormulation>`\\"
+msgid ":py:obj:`waveFormulation <abaqus.Section.SectionModel.SectionModel.waveFormulation>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A SymbolicConstant specifying the type of incident wave formulation to be"
-" used in acoustic problems."
+msgid "A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`universalGas "
-"<abaqus.Section.SectionModel.SectionModel.universalGas>`\\"
+msgid ":py:obj:`universalGas <abaqus.Section.SectionModel.SectionModel.universalGas>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -112,45 +95,31 @@ msgid "None or a Float specifying the universal gas constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`noPartsInputFile "
-"<abaqus.Section.SectionModel.SectionModel.noPartsInputFile>`\\"
+msgid ":py:obj:`noPartsInputFile <abaqus.Section.SectionModel.SectionModel.noPartsInputFile>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A Boolean specifying whether an input file should be written without "
-"parts and assemblies."
+msgid "A Boolean specifying whether an input file should be written without parts and assemblies."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`restartIncrement "
-"<abaqus.Section.SectionModel.SectionModel.restartIncrement>`\\"
+msgid ":py:obj:`restartIncrement <abaqus.Section.SectionModel.SectionModel.restartIncrement>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"An Int specifying the increment, interval, iteration or cycle where the "
-"restart analysis will start."
+msgid "An Int specifying the increment, interval, iteration or cycle where the restart analysis will start."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`endRestartStep "
-"<abaqus.Section.SectionModel.SectionModel.endRestartStep>`\\"
+msgid ":py:obj:`endRestartStep <abaqus.Section.SectionModel.SectionModel.endRestartStep>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A Boolean specifying that the step specified by **restartStep** should be"
-" terminated at the increment specified by **restartIncrement**."
+msgid "A Boolean specifying that the step specified by **restartStep** should be terminated at the increment specified by **restartIncrement**."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`shellToSolid "
-"<abaqus.Section.SectionModel.SectionModel.shellToSolid>`\\"
+msgid ":py:obj:`shellToSolid <abaqus.Section.SectionModel.SectionModel.shellToSolid>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -158,21 +127,15 @@ msgid "A Boolean specifying that a shell global model drives a solid submodel."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`lastChangedCount "
-"<abaqus.Section.SectionModel.SectionModel.lastChangedCount>`\\"
+msgid ":py:obj:`lastChangedCount <abaqus.Section.SectionModel.SectionModel.lastChangedCount>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A Float specifying the time stamp that indicates when the model was last "
-"changed."
+msgid "A Float specifying the time stamp that indicates when the model was last changed."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`description "
-"<abaqus.Section.SectionModel.SectionModel.description>`\\"
+msgid ":py:obj:`description <abaqus.Section.SectionModel.SectionModel.description>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -180,9 +143,7 @@ msgid "A String specifying the purpose and contents of the Model object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`restartJob "
-"<abaqus.Section.SectionModel.SectionModel.restartJob>`\\"
+msgid ":py:obj:`restartJob <abaqus.Section.SectionModel.SectionModel.restartJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -190,15 +151,11 @@ msgid "A String specifying the name of the job that generated the restart data."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`restartStep "
-"<abaqus.Section.SectionModel.SectionModel.restartStep>`\\"
+msgid ":py:obj:`restartStep <abaqus.Section.SectionModel.SectionModel.restartStep>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A String specifying the name of the step where the restart analysis will "
-"start."
+msgid "A String specifying the name of the step where the restart analysis will start."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -206,51 +163,35 @@ msgid ":py:obj:`globalJob <abaqus.Section.SectionModel.SectionModel.globalJob>`\
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A String specifying the name of the job that generated the results for "
-"the global model."
+msgid "A String specifying the name of the job that generated the results for the global model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`copyConstraints "
-"<abaqus.Section.SectionModel.SectionModel.copyConstraints>`\\"
+msgid ":py:obj:`copyConstraints <abaqus.Section.SectionModel.SectionModel.copyConstraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A boolean specifying the status of constraints created in a model, in the"
-" model which instances this model."
+msgid "A boolean specifying the status of constraints created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`copyConnectors "
-"<abaqus.Section.SectionModel.SectionModel.copyConnectors>`\\"
+msgid ":py:obj:`copyConnectors <abaqus.Section.SectionModel.SectionModel.copyConnectors>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A boolean specifying the status of connectors created in a model, in the "
-"model which instances this model."
+msgid "A boolean specifying the status of connectors created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`copyInteractions "
-"<abaqus.Section.SectionModel.SectionModel.copyInteractions>`\\"
+msgid ":py:obj:`copyInteractions <abaqus.Section.SectionModel.SectionModel.copyInteractions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A boolean specifying the status of interactions created in a model, in "
-"the model which instances this model."
+msgid "A boolean specifying the status of interactions created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`keywordBlock "
-"<abaqus.Section.SectionModel.SectionModel.keywordBlock>`\\"
+msgid ":py:obj:`keywordBlock <abaqus.Section.SectionModel.SectionModel.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -258,9 +199,7 @@ msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`rootAssembly "
-"<abaqus.Section.SectionModel.SectionModel.rootAssembly>`\\"
+msgid ":py:obj:`rootAssembly <abaqus.Section.SectionModel.SectionModel.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -268,12 +207,11 @@ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`amplitudes "
-"<abaqus.Section.SectionModel.SectionModel.amplitudes>`\\"
+msgid ":py:obj:`amplitudes <abaqus.Section.SectionModel.SectionModel.amplitudes>`\\"
 msgstr ""
 
-#: ../../None:16:<autosummary>:1 ../../None:55:<autosummary>:1
+#: ../../None:16:<autosummary>:1
+#: ../../None:55:<autosummary>:1
 msgid "A repository of Amplitude objects."
 msgstr ""
 
@@ -281,14 +219,13 @@ msgstr ""
 msgid ":py:obj:`profiles <abaqus.Section.SectionModel.SectionModel.profiles>`\\"
 msgstr ""
 
-#: ../../None:16:<autosummary>:1 ../../None:55:<autosummary>:1
+#: ../../None:16:<autosummary>:1
+#: ../../None:55:<autosummary>:1
 msgid "A repository of Profile objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`boundaryConditions "
-"<abaqus.Section.SectionModel.SectionModel.boundaryConditions>`\\"
+msgid ":py:obj:`boundaryConditions <abaqus.Section.SectionModel.SectionModel.boundaryConditions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -296,9 +233,7 @@ msgid "A repository of BoundaryCondition objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`constraints "
-"<abaqus.Section.SectionModel.SectionModel.constraints>`\\"
+msgid ":py:obj:`constraints <abaqus.Section.SectionModel.SectionModel.constraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -306,9 +241,7 @@ msgid "A repository of ConstrainedSketchConstraint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`analyticalFields "
-"<abaqus.Section.SectionModel.SectionModel.analyticalFields>`\\"
+msgid ":py:obj:`analyticalFields <abaqus.Section.SectionModel.SectionModel.analyticalFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -316,9 +249,7 @@ msgid "A repository of AnalyticalField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`discreteFields "
-"<abaqus.Section.SectionModel.SectionModel.discreteFields>`\\"
+msgid ":py:obj:`discreteFields <abaqus.Section.SectionModel.SectionModel.discreteFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -326,9 +257,7 @@ msgid "A repository of DiscreteField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`predefinedFields "
-"<abaqus.Section.SectionModel.SectionModel.predefinedFields>`\\"
+msgid ":py:obj:`predefinedFields <abaqus.Section.SectionModel.SectionModel.predefinedFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -336,9 +265,7 @@ msgid "A repository of PredefinedField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`interactions "
-"<abaqus.Section.SectionModel.SectionModel.interactions>`\\"
+msgid ":py:obj:`interactions <abaqus.Section.SectionModel.SectionModel.interactions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -346,9 +273,7 @@ msgid "A repository of Interaction objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`interactionProperties "
-"<abaqus.Section.SectionModel.SectionModel.interactionProperties>`\\"
+msgid ":py:obj:`interactionProperties <abaqus.Section.SectionModel.SectionModel.interactionProperties>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -356,9 +281,7 @@ msgid "A repository of InteractionProperty objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`contactControls "
-"<abaqus.Section.SectionModel.SectionModel.contactControls>`\\"
+msgid ":py:obj:`contactControls <abaqus.Section.SectionModel.SectionModel.contactControls>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -366,9 +289,7 @@ msgid "A repository of ContactControl objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`contactInitializations "
-"<abaqus.Section.SectionModel.SectionModel.contactInitializations>`\\"
+msgid ":py:obj:`contactInitializations <abaqus.Section.SectionModel.SectionModel.contactInitializations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -376,9 +297,7 @@ msgid "A repository of ContactInitialization objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`contactStabilizations "
-"<abaqus.Section.SectionModel.SectionModel.contactStabilizations>`\\"
+msgid ":py:obj:`contactStabilizations <abaqus.Section.SectionModel.SectionModel.contactStabilizations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -386,29 +305,19 @@ msgid "A repository of ContactStabilization objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`linkedInstances "
-"<abaqus.Section.SectionModel.SectionModel.linkedInstances>`\\"
+msgid ":py:obj:`linkedInstances <abaqus.Section.SectionModel.SectionModel.linkedInstances>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A tuple of tuples of Strings specifying the linked child PartInstance "
-"name in the current model to the corresponding parent PartInstance name "
-"in a different model."
+msgid "A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`linkedParts "
-"<abaqus.Section.SectionModel.SectionModel.linkedParts>`\\"
+msgid ":py:obj:`linkedParts <abaqus.Section.SectionModel.SectionModel.linkedParts>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A tuple of tuples of Strings specifying the linked child Part name in the"
-" current model to the corresponding parent Part name in a different "
-"model."
+msgid "A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -423,14 +332,13 @@ msgstr ""
 msgid ":py:obj:`materials <abaqus.Section.SectionModel.SectionModel.materials>`\\"
 msgstr ""
 
-#: ../../None:16:<autosummary>:1 ../../None:55:<autosummary>:1
+#: ../../None:16:<autosummary>:1
+#: ../../None:55:<autosummary>:1
 msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`calibrations "
-"<abaqus.Section.SectionModel.SectionModel.calibrations>`\\"
+msgid ":py:obj:`calibrations <abaqus.Section.SectionModel.SectionModel.calibrations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -441,14 +349,13 @@ msgstr ""
 msgid ":py:obj:`sections <abaqus.Section.SectionModel.SectionModel.sections>`\\"
 msgstr ""
 
-#: ../../None:16:<autosummary>:1 ../../None:55:<autosummary>:1
+#: ../../None:16:<autosummary>:1
+#: ../../None:55:<autosummary>:1
 msgid "A repository of Section objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`remeshingRules "
-"<abaqus.Section.SectionModel.SectionModel.remeshingRules>`\\"
+msgid ":py:obj:`remeshingRules <abaqus.Section.SectionModel.SectionModel.remeshingRules>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -480,9 +387,7 @@ msgid "A repository of Step objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`featureOptions "
-"<abaqus.Section.SectionModel.SectionModel.featureOptions>`\\"
+msgid ":py:obj:`featureOptions <abaqus.Section.SectionModel.SectionModel.featureOptions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -490,9 +395,7 @@ msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`adaptiveMeshConstraints "
-"<abaqus.Section.SectionModel.SectionModel.adaptiveMeshConstraints>`\\"
+msgid ":py:obj:`adaptiveMeshConstraints <abaqus.Section.SectionModel.SectionModel.adaptiveMeshConstraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -500,9 +403,7 @@ msgid "A repository of AdaptiveMeshConstraint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`adaptiveMeshControls "
-"<abaqus.Section.SectionModel.SectionModel.adaptiveMeshControls>`\\"
+msgid ":py:obj:`adaptiveMeshControls <abaqus.Section.SectionModel.SectionModel.adaptiveMeshControls>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -510,9 +411,7 @@ msgid "A repository of AdaptiveMeshControl objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`timePoints "
-"<abaqus.Section.SectionModel.SectionModel.timePoints>`\\"
+msgid ":py:obj:`timePoints <abaqus.Section.SectionModel.SectionModel.timePoints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -523,14 +422,13 @@ msgstr ""
 msgid ":py:obj:`filters <abaqus.Section.SectionModel.SectionModel.filters>`\\"
 msgstr ""
 
-#: ../../None:16:<autosummary>:1 ../../None:55:<autosummary>:1
+#: ../../None:16:<autosummary>:1
+#: ../../None:55:<autosummary>:1
 msgid "A repository of Filter objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`integratedOutputSections "
-"<abaqus.Section.SectionModel.SectionModel.integratedOutputSections>`\\"
+msgid ":py:obj:`integratedOutputSections <abaqus.Section.SectionModel.SectionModel.integratedOutputSections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -538,9 +436,7 @@ msgid "A repository of IntegratedOutputSection objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`fieldOutputRequests "
-"<abaqus.Section.SectionModel.SectionModel.fieldOutputRequests>`\\"
+msgid ":py:obj:`fieldOutputRequests <abaqus.Section.SectionModel.SectionModel.fieldOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -548,9 +444,7 @@ msgid "A repository of FieldOutputRequest objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`historyOutputRequests "
-"<abaqus.Section.SectionModel.SectionModel.historyOutputRequests>`\\"
+msgid ":py:obj:`historyOutputRequests <abaqus.Section.SectionModel.SectionModel.historyOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -558,9 +452,7 @@ msgid "A repository of HistoryOutputRequest objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`optimizationTasks "
-"<abaqus.Section.SectionModel.SectionModel.optimizationTasks>`\\"
+msgid ":py:obj:`optimizationTasks <abaqus.Section.SectionModel.SectionModel.optimizationTasks>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -568,9 +460,7 @@ msgid "A repository of OptimizationTask objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`tableCollections "
-"<abaqus.Section.SectionModel.SectionModel.tableCollections>`\\"
+msgid ":py:obj:`tableCollections <abaqus.Section.SectionModel.SectionModel.tableCollections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -578,9 +468,7 @@ msgid "A repository of TableCollection objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`eventSeriesTypes "
-"<abaqus.Section.SectionModel.SectionModel.eventSeriesTypes>`\\"
+msgid ":py:obj:`eventSeriesTypes <abaqus.Section.SectionModel.SectionModel.eventSeriesTypes>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -588,25 +476,20 @@ msgid "A repository of EventSeriesType objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`eventSeriesDatas "
-"<abaqus.Section.SectionModel.SectionModel.eventSeriesDatas>`\\"
+msgid ":py:obj:`eventSeriesDatas <abaqus.Section.SectionModel.SectionModel.eventSeriesDatas>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
 msgid "A repository of EventSeriesData objects."
 msgstr ""
 
-#: abaqus.Section.SectionModel.SectionModel
-#: abaqus.Section.SectionOdb.SectionOdb of
+#: ../../../../src/abaqus/Section/SectionModel.py:docstring of abaqus.Section.SectionModel.SectionModel:0
+#: ../../../../src/abaqus/Section/SectionOdb.py:docstring of abaqus.Section.SectionOdb.SectionOdb:0
 msgid "Public Methods:"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`AcousticInfiniteSection "
-"<abaqus.Section.SectionModel.SectionModel.AcousticInfiniteSection>`\\ "
-"\\(name\\, material\\[\\, ...\\]\\)"
+msgid ":py:obj:`AcousticInfiniteSection <abaqus.Section.SectionModel.SectionModel.AcousticInfiniteSection>`\\ \\(name\\, material\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -614,10 +497,7 @@ msgid "This method creates an AcousticInfiniteSection object."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`AcousticInterfaceSection "
-"<abaqus.Section.SectionModel.SectionModel.AcousticInterfaceSection>`\\ "
-"\\(name\\[\\, thickness\\]\\)"
+msgid ":py:obj:`AcousticInterfaceSection <abaqus.Section.SectionModel.SectionModel.AcousticInterfaceSection>`\\ \\(name\\[\\, thickness\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -625,10 +505,7 @@ msgid "This method creates an AcousticInterfaceSection object."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`BeamSection "
-"<abaqus.Section.SectionModel.SectionModel.BeamSection>`\\ \\(name\\, "
-"integration\\, profile\\[\\, ...\\]\\)"
+msgid ":py:obj:`BeamSection <abaqus.Section.SectionModel.SectionModel.BeamSection>`\\ \\(name\\, integration\\, profile\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -636,10 +513,7 @@ msgid "This method creates a BeamSection object."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`CohesiveSection "
-"<abaqus.Section.SectionModel.SectionModel.CohesiveSection>`\\ \\(name\\, "
-"response\\, material\\[\\, ...\\]\\)"
+msgid ":py:obj:`CohesiveSection <abaqus.Section.SectionModel.SectionModel.CohesiveSection>`\\ \\(name\\, response\\, material\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -647,10 +521,7 @@ msgid "This method creates a CohesiveSection object."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`CompositeShellSection "
-"<abaqus.Section.SectionModel.SectionModel.CompositeShellSection>`\\ "
-"\\(name\\, layup\\[\\, ...\\]\\)"
+msgid ":py:obj:`CompositeShellSection <abaqus.Section.SectionModel.SectionModel.CompositeShellSection>`\\ \\(name\\, layup\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -658,10 +529,7 @@ msgid "This method creates a CompositeShellSection object."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`CompositeSolidSection "
-"<abaqus.Section.SectionModel.SectionModel.CompositeSolidSection>`\\ "
-"\\(name\\, layup\\[\\, ...\\]\\)"
+msgid ":py:obj:`CompositeSolidSection <abaqus.Section.SectionModel.SectionModel.CompositeSolidSection>`\\ \\(name\\, layup\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -669,10 +537,7 @@ msgid "This method creates a CompositeSolidSection object."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`ConnectorSection "
-"<abaqus.Section.SectionModel.SectionModel.ConnectorSection>`\\ "
-"\\(name\\[\\, assembledType\\, ...\\]\\)"
+msgid ":py:obj:`ConnectorSection <abaqus.Section.SectionModel.SectionModel.ConnectorSection>`\\ \\(name\\[\\, assembledType\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -680,10 +545,7 @@ msgid "This method creates a ConnectorSection object."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`EulerianSection "
-"<abaqus.Section.SectionModel.SectionModel.EulerianSection>`\\ \\(name\\, "
-"data\\)"
+msgid ":py:obj:`EulerianSection <abaqus.Section.SectionModel.SectionModel.EulerianSection>`\\ \\(name\\, data\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -691,10 +553,7 @@ msgid "This method creates a EulerianSection object."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`GasketSection "
-"<abaqus.Section.SectionModel.SectionModel.GasketSection>`\\ \\(name\\, "
-"material\\[\\, ...\\]\\)"
+msgid ":py:obj:`GasketSection <abaqus.Section.SectionModel.SectionModel.GasketSection>`\\ \\(name\\, material\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -702,10 +561,7 @@ msgid "This method creates a GasketSection object."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`GeneralStiffnessSection "
-"<abaqus.Section.SectionModel.SectionModel.GeneralStiffnessSection>`\\ "
-"\\(name\\, stiffnessMatrix\\)"
+msgid ":py:obj:`GeneralStiffnessSection <abaqus.Section.SectionModel.SectionModel.GeneralStiffnessSection>`\\ \\(name\\, stiffnessMatrix\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -713,10 +569,7 @@ msgid "This method creates a GeneralStiffnessSection object."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`HomogeneousShellSection "
-"<abaqus.Section.SectionModel.SectionModel.HomogeneousShellSection>`\\ "
-"\\(name\\, material\\[\\, ...\\]\\)"
+msgid ":py:obj:`HomogeneousShellSection <abaqus.Section.SectionModel.SectionModel.HomogeneousShellSection>`\\ \\(name\\, material\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -724,10 +577,7 @@ msgid "This method creates a HomogeneousShellSection object."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`HomogeneousSolidSection "
-"<abaqus.Section.SectionModel.SectionModel.HomogeneousSolidSection>`\\ "
-"\\(name\\, material\\[\\, ...\\]\\)"
+msgid ":py:obj:`HomogeneousSolidSection <abaqus.Section.SectionModel.SectionModel.HomogeneousSolidSection>`\\ \\(name\\, material\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -735,10 +585,7 @@ msgid "This method creates a HomogeneousSolidSection object."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`MembraneSection "
-"<abaqus.Section.SectionModel.SectionModel.MembraneSection>`\\ \\(name\\, "
-"material\\[\\, thickness\\, ...\\]\\)"
+msgid ":py:obj:`MembraneSection <abaqus.Section.SectionModel.SectionModel.MembraneSection>`\\ \\(name\\, material\\[\\, thickness\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -746,10 +593,7 @@ msgid "This method creates a MembraneSection object."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`MPCSection "
-"<abaqus.Section.SectionModel.SectionModel.MPCSection>`\\ \\(name\\, "
-"mpcType\\[\\, userMode\\, userType\\]\\)"
+msgid ":py:obj:`MPCSection <abaqus.Section.SectionModel.SectionModel.MPCSection>`\\ \\(name\\, mpcType\\[\\, userMode\\, userType\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -757,10 +601,7 @@ msgid "This method creates a MPCSection object."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`PEGSection "
-"<abaqus.Section.SectionModel.SectionModel.PEGSection>`\\ \\(name\\, "
-"material\\[\\, thickness\\, ...\\]\\)"
+msgid ":py:obj:`PEGSection <abaqus.Section.SectionModel.SectionModel.PEGSection>`\\ \\(name\\, material\\[\\, thickness\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -768,10 +609,7 @@ msgid "This method creates a PEGSection object."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`SurfaceSection "
-"<abaqus.Section.SectionModel.SectionModel.SurfaceSection>`\\ "
-"\\(name\\[\\, useDensity\\, density\\]\\)"
+msgid ":py:obj:`SurfaceSection <abaqus.Section.SectionModel.SectionModel.SurfaceSection>`\\ \\(name\\[\\, useDensity\\, density\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -779,10 +617,7 @@ msgid "This method creates a SurfaceSection object."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`TrussSection "
-"<abaqus.Section.SectionModel.SectionModel.TrussSection>`\\ \\(name\\, "
-"material\\[\\, area\\]\\)"
+msgid ":py:obj:`TrussSection <abaqus.Section.SectionModel.SectionModel.TrussSection>`\\ \\(name\\, material\\[\\, area\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -790,9 +625,7 @@ msgid "This method creates a TrussSection object."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`__init__ <abaqus.Section.SectionModel.SectionModel.__init__>`\\ "
-"\\(name\\[\\, description\\, ...\\]\\)"
+msgid ":py:obj:`__init__ <abaqus.Section.SectionModel.SectionModel.__init__>`\\ \\(name\\[\\, description\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -800,50 +633,31 @@ msgid "This method creates a Model object."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`ModelFromInputFile "
-"<abaqus.Section.SectionModel.SectionModel.ModelFromInputFile>`\\ "
-"\\(name\\, inputFileName\\)"
+msgid ":py:obj:`ModelFromInputFile <abaqus.Section.SectionModel.SectionModel.ModelFromInputFile>`\\ \\(name\\, inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"This method creates a Model object by reading the keywords in an input "
-"file and creating the corresponding Abaqus/CAE objects."
+msgid "This method creates a Model object by reading the keywords in an input file and creating the corresponding Abaqus/CAE objects."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`ModelFromOdbFile "
-"<abaqus.Section.SectionModel.SectionModel.ModelFromOdbFile>`\\ \\(name\\,"
-" odbFileName\\)"
+msgid ":py:obj:`ModelFromOdbFile <abaqus.Section.SectionModel.SectionModel.ModelFromOdbFile>`\\ \\(name\\, odbFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"This method creates a Model object by reading an output database and "
-"creating any corresponding Abaqus/CAE objects."
+msgid "This method creates a Model object by reading an output database and creating any corresponding Abaqus/CAE objects."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`ModelFromNastranFile "
-"<abaqus.Section.SectionModel.SectionModel.ModelFromNastranFile>`\\ "
-"\\(modelName\\, inputFileName\\)"
+msgid ":py:obj:`ModelFromNastranFile <abaqus.Section.SectionModel.SectionModel.ModelFromNastranFile>`\\ \\(modelName\\, inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"This method creates a Model object by reading the keywords in a Nastran "
-"bulk data file or Nastran input file and creating any corresponding "
-"Abaqus/CAE objects."
+msgid "This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`setValues "
-"<abaqus.Section.SectionModel.SectionModel.setValues>`\\ "
-"\\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
+msgid ":py:obj:`setValues <abaqus.Section.SectionModel.SectionModel.setValues>`\\ \\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -859,9 +673,7 @@ msgid ":py:obj:`isReadOnly <abaqus.Section.SectionOdb.SectionOdb.isReadOnly>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ""
-"A Boolean specifying whether the output database was opened with read-"
-"only access."
+msgid "A Boolean specifying whether the output database was opened with read-only access."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -873,9 +685,7 @@ msgid ":py:obj:`filters <abaqus.Section.SectionOdb.SectionOdb.filters>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ""
-":py:obj:`rootAssembly "
-"<abaqus.Section.SectionOdb.SectionOdb.rootAssembly>`\\"
+msgid ":py:obj:`rootAssembly <abaqus.Section.SectionOdb.SectionOdb.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -915,9 +725,7 @@ msgid ":py:obj:`sections <abaqus.Section.SectionOdb.SectionOdb.sections>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ""
-":py:obj:`sectionCategories "
-"<abaqus.Section.SectionOdb.SectionOdb.sectionCategories>`\\"
+msgid ":py:obj:`sectionCategories <abaqus.Section.SectionOdb.SectionOdb.sectionCategories>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -925,9 +733,7 @@ msgid "A repository of SectionCategory objects."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ""
-":py:obj:`sectorDefinition "
-"<abaqus.Section.SectionOdb.SectionOdb.sectorDefinition>`\\"
+msgid ":py:obj:`sectorDefinition <abaqus.Section.SectionOdb.SectionOdb.sectorDefinition>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -947,9 +753,7 @@ msgid ":py:obj:`customData <abaqus.Section.SectionOdb.SectionOdb.customData>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` "
-"object."
+msgid "A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -957,126 +761,75 @@ msgid ":py:obj:`profiles <abaqus.Section.SectionOdb.SectionOdb.profiles>`\\"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`AcousticInfiniteSection "
-"<abaqus.Section.SectionOdb.SectionOdb.AcousticInfiniteSection>`\\ "
-"\\(name\\, material\\[\\, ...\\]\\)"
+msgid ":py:obj:`AcousticInfiniteSection <abaqus.Section.SectionOdb.SectionOdb.AcousticInfiniteSection>`\\ \\(name\\, material\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`AcousticInterfaceSection "
-"<abaqus.Section.SectionOdb.SectionOdb.AcousticInterfaceSection>`\\ "
-"\\(name\\[\\, thickness\\]\\)"
+msgid ":py:obj:`AcousticInterfaceSection <abaqus.Section.SectionOdb.SectionOdb.AcousticInterfaceSection>`\\ \\(name\\[\\, thickness\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`BeamSection "
-"<abaqus.Section.SectionOdb.SectionOdb.BeamSection>`\\ \\(name\\, "
-"integration\\, profile\\[\\, ...\\]\\)"
+msgid ":py:obj:`BeamSection <abaqus.Section.SectionOdb.SectionOdb.BeamSection>`\\ \\(name\\, integration\\, profile\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`CohesiveSection "
-"<abaqus.Section.SectionOdb.SectionOdb.CohesiveSection>`\\ \\(name\\, "
-"response\\, material\\[\\, ...\\]\\)"
+msgid ":py:obj:`CohesiveSection <abaqus.Section.SectionOdb.SectionOdb.CohesiveSection>`\\ \\(name\\, response\\, material\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`CompositeShellSection "
-"<abaqus.Section.SectionOdb.SectionOdb.CompositeShellSection>`\\ "
-"\\(name\\, layup\\[\\, ...\\]\\)"
+msgid ":py:obj:`CompositeShellSection <abaqus.Section.SectionOdb.SectionOdb.CompositeShellSection>`\\ \\(name\\, layup\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`CompositeSolidSection "
-"<abaqus.Section.SectionOdb.SectionOdb.CompositeSolidSection>`\\ "
-"\\(name\\, layup\\[\\, ...\\]\\)"
+msgid ":py:obj:`CompositeSolidSection <abaqus.Section.SectionOdb.SectionOdb.CompositeSolidSection>`\\ \\(name\\, layup\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`ConnectorSection "
-"<abaqus.Section.SectionOdb.SectionOdb.ConnectorSection>`\\ \\(name\\[\\, "
-"assembledType\\, ...\\]\\)"
+msgid ":py:obj:`ConnectorSection <abaqus.Section.SectionOdb.SectionOdb.ConnectorSection>`\\ \\(name\\[\\, assembledType\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`EulerianSection "
-"<abaqus.Section.SectionOdb.SectionOdb.EulerianSection>`\\ \\(name\\, "
-"data\\)"
+msgid ":py:obj:`EulerianSection <abaqus.Section.SectionOdb.SectionOdb.EulerianSection>`\\ \\(name\\, data\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`GasketSection "
-"<abaqus.Section.SectionOdb.SectionOdb.GasketSection>`\\ \\(name\\, "
-"material\\[\\, ...\\]\\)"
+msgid ":py:obj:`GasketSection <abaqus.Section.SectionOdb.SectionOdb.GasketSection>`\\ \\(name\\, material\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`GeneralStiffnessSection "
-"<abaqus.Section.SectionOdb.SectionOdb.GeneralStiffnessSection>`\\ "
-"\\(name\\, stiffnessMatrix\\)"
+msgid ":py:obj:`GeneralStiffnessSection <abaqus.Section.SectionOdb.SectionOdb.GeneralStiffnessSection>`\\ \\(name\\, stiffnessMatrix\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`HomogeneousShellSection "
-"<abaqus.Section.SectionOdb.SectionOdb.HomogeneousShellSection>`\\ "
-"\\(name\\, material\\[\\, ...\\]\\)"
+msgid ":py:obj:`HomogeneousShellSection <abaqus.Section.SectionOdb.SectionOdb.HomogeneousShellSection>`\\ \\(name\\, material\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`HomogeneousSolidSection "
-"<abaqus.Section.SectionOdb.SectionOdb.HomogeneousSolidSection>`\\ "
-"\\(name\\, material\\[\\, ...\\]\\)"
+msgid ":py:obj:`HomogeneousSolidSection <abaqus.Section.SectionOdb.SectionOdb.HomogeneousSolidSection>`\\ \\(name\\, material\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`MembraneSection "
-"<abaqus.Section.SectionOdb.SectionOdb.MembraneSection>`\\ \\(name\\, "
-"material\\[\\, thickness\\, ...\\]\\)"
+msgid ":py:obj:`MembraneSection <abaqus.Section.SectionOdb.SectionOdb.MembraneSection>`\\ \\(name\\, material\\[\\, thickness\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`MPCSection <abaqus.Section.SectionOdb.SectionOdb.MPCSection>`\\ "
-"\\(name\\, mpcType\\[\\, userMode\\, userType\\]\\)"
+msgid ":py:obj:`MPCSection <abaqus.Section.SectionOdb.SectionOdb.MPCSection>`\\ \\(name\\, mpcType\\[\\, userMode\\, userType\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`PEGSection <abaqus.Section.SectionOdb.SectionOdb.PEGSection>`\\ "
-"\\(name\\, material\\[\\, thickness\\, ...\\]\\)"
+msgid ":py:obj:`PEGSection <abaqus.Section.SectionOdb.SectionOdb.PEGSection>`\\ \\(name\\, material\\[\\, thickness\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`SurfaceSection "
-"<abaqus.Section.SectionOdb.SectionOdb.SurfaceSection>`\\ \\(name\\[\\, "
-"useDensity\\, density\\]\\)"
+msgid ":py:obj:`SurfaceSection <abaqus.Section.SectionOdb.SectionOdb.SurfaceSection>`\\ \\(name\\[\\, useDensity\\, density\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-msgid ""
-":py:obj:`TrussSection "
-"<abaqus.Section.SectionOdb.SectionOdb.TrussSection>`\\ \\(name\\, "
-"material\\[\\, area\\]\\)"
+msgid ":py:obj:`TrussSection <abaqus.Section.SectionOdb.SectionOdb.TrussSection>`\\ \\(name\\, material\\[\\, area\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`__init__ <abaqus.Section.SectionOdb.SectionOdb.__init__>`\\ "
-"\\(name\\[\\, analysisTitle\\, description\\, ...\\]\\)"
+msgid ":py:obj:`__init__ <abaqus.Section.SectionOdb.SectionOdb.__init__>`\\ \\(name\\[\\, analysisTitle\\, description\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -1092,9 +845,7 @@ msgid "This method closes an output database."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`getFrame <abaqus.Section.SectionOdb.SectionOdb.getFrame>`\\ "
-"\\(frameValue\\[\\, match\\]\\)"
+msgid ":py:obj:`getFrame <abaqus.Section.SectionOdb.SectionOdb.getFrame>`\\ \\(frameValue\\[\\, match\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -1114,8 +865,6 @@ msgid ":py:obj:`update <abaqus.Section.SectionOdb.SectionOdb.update>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"This method is used to update an Odb object in memory while an Abaqus "
-"analysis writes data to the associated output database."
+msgid "This method is used to update an Odb object in memory while an Abaqus analysis writes data to the associated output database."
 msgstr ""
 
