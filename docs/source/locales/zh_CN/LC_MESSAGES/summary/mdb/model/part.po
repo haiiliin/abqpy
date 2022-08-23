@@ -1,55 +1,49 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022, WANG Hailin
-# This file is distributed under the same license as the abqpy package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy \n"
+"Project-Id-Version: abqpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:36+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"PO-Revision-Date: 2022-08-23 10:43\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: abqpy\n"
+"X-Crowdin-Project-ID: 533812\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /main/docs/source/locales/pot/summary/mdb/model/part.pot\n"
+"X-Crowdin-File-ID: 378\n"
+"Language: zh_CN\n"
 
 #: ../../summary/mdb/model/part.rst:3
 msgid "Part"
 msgstr ""
 
 #: ../../summary/mdb/model/part.rst:5
-msgid ""
-"Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly "
-"operations. Part commands create Feature objects on only the Part object."
-" The commands that create Feature objects on only the rootAssembly object"
-" are described in Assembly commands. The commands that create Feature "
-"objects on both the Part and the rootAssembly objects are described in "
-"Feature commands."
+msgid "Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operations. Part commands create Feature objects on only the Part object. The commands that create Feature objects on only the rootAssembly object are described in Assembly commands. The commands that create Feature objects on both the Part and the rootAssembly objects are described in Feature commands."
 msgstr ""
 
 #: ../../summary/mdb/model/part.rst:8
 msgid "Create parts"
 msgstr ""
 
-#: abaqus.Part.PartModel.PartModel:2 of
+#: ../../../../src/abaqus/Part/PartModel.py:docstring of abaqus.Part.PartModel.PartModel:2
 msgid "Abaqus creates a Model object named `Model-1` when a session is started."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase:6 abaqus.Part.PartModel.PartModel:5 of
+#: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase:6
+#: ../../../../src/abaqus/Part/PartModel.py:docstring of abaqus.Part.PartModel.PartModel:5
 msgid "This object can be accessed by:"
 msgstr ""
 
-#: abaqus.Part.PartModel.PartModel:12 of
-msgid ""
-"Check `Model on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+#: ../../../../src/abaqus/Part/PartModel.py:docstring of abaqus.Part.PartModel.PartModel:12
+msgid "Check `Model on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase abaqus.Part.PartModel.PartModel of
+#: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase:0
+#: ../../../../src/abaqus/Part/PartModel.py:docstring of abaqus.Part.PartModel.PartModel:0
 msgid "Public Data Attributes:"
 msgstr ""
 
@@ -57,14 +51,13 @@ msgstr ""
 msgid ":py:obj:`name <abaqus.Part.PartModel.PartModel.name>`\\"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../None:55:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+#: ../../None:55:<autosummary>:1
 msgid "A String specifying the repository key."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`stefanBoltzmann "
-"<abaqus.Part.PartModel.PartModel.stefanBoltzmann>`\\"
+msgid ":py:obj:`stefanBoltzmann <abaqus.Part.PartModel.PartModel.stefanBoltzmann>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -80,15 +73,11 @@ msgid "None or a Float specifying the absolute zero constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`waveFormulation "
-"<abaqus.Part.PartModel.PartModel.waveFormulation>`\\"
+msgid ":py:obj:`waveFormulation <abaqus.Part.PartModel.PartModel.waveFormulation>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A SymbolicConstant specifying the type of incident wave formulation to be"
-" used in acoustic problems."
+msgid "A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -100,39 +89,27 @@ msgid "None or a Float specifying the universal gas constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`noPartsInputFile "
-"<abaqus.Part.PartModel.PartModel.noPartsInputFile>`\\"
+msgid ":py:obj:`noPartsInputFile <abaqus.Part.PartModel.PartModel.noPartsInputFile>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A Boolean specifying whether an input file should be written without "
-"parts and assemblies."
+msgid "A Boolean specifying whether an input file should be written without parts and assemblies."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`restartIncrement "
-"<abaqus.Part.PartModel.PartModel.restartIncrement>`\\"
+msgid ":py:obj:`restartIncrement <abaqus.Part.PartModel.PartModel.restartIncrement>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"An Int specifying the increment, interval, iteration or cycle where the "
-"restart analysis will start."
+msgid "An Int specifying the increment, interval, iteration or cycle where the restart analysis will start."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`endRestartStep "
-"<abaqus.Part.PartModel.PartModel.endRestartStep>`\\"
+msgid ":py:obj:`endRestartStep <abaqus.Part.PartModel.PartModel.endRestartStep>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A Boolean specifying that the step specified by **restartStep** should be"
-" terminated at the increment specified by **restartIncrement**."
+msgid "A Boolean specifying that the step specified by **restartStep** should be terminated at the increment specified by **restartIncrement**."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -144,15 +121,11 @@ msgid "A Boolean specifying that a shell global model drives a solid submodel."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`lastChangedCount "
-"<abaqus.Part.PartModel.PartModel.lastChangedCount>`\\"
+msgid ":py:obj:`lastChangedCount <abaqus.Part.PartModel.PartModel.lastChangedCount>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A Float specifying the time stamp that indicates when the model was last "
-"changed."
+msgid "A Float specifying the time stamp that indicates when the model was last changed."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -176,9 +149,7 @@ msgid ":py:obj:`restartStep <abaqus.Part.PartModel.PartModel.restartStep>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A String specifying the name of the step where the restart analysis will "
-"start."
+msgid "A String specifying the name of the step where the restart analysis will start."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -186,45 +157,31 @@ msgid ":py:obj:`globalJob <abaqus.Part.PartModel.PartModel.globalJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A String specifying the name of the job that generated the results for "
-"the global model."
+msgid "A String specifying the name of the job that generated the results for the global model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`copyConstraints "
-"<abaqus.Part.PartModel.PartModel.copyConstraints>`\\"
+msgid ":py:obj:`copyConstraints <abaqus.Part.PartModel.PartModel.copyConstraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A boolean specifying the status of constraints created in a model, in the"
-" model which instances this model."
+msgid "A boolean specifying the status of constraints created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`copyConnectors "
-"<abaqus.Part.PartModel.PartModel.copyConnectors>`\\"
+msgid ":py:obj:`copyConnectors <abaqus.Part.PartModel.PartModel.copyConnectors>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A boolean specifying the status of connectors created in a model, in the "
-"model which instances this model."
+msgid "A boolean specifying the status of connectors created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`copyInteractions "
-"<abaqus.Part.PartModel.PartModel.copyInteractions>`\\"
+msgid ":py:obj:`copyInteractions <abaqus.Part.PartModel.PartModel.copyInteractions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A boolean specifying the status of interactions created in a model, in "
-"the model which instances this model."
+msgid "A boolean specifying the status of interactions created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -260,9 +217,7 @@ msgid "A repository of Profile objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`boundaryConditions "
-"<abaqus.Part.PartModel.PartModel.boundaryConditions>`\\"
+msgid ":py:obj:`boundaryConditions <abaqus.Part.PartModel.PartModel.boundaryConditions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -278,9 +233,7 @@ msgid "A repository of ConstrainedSketchConstraint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`analyticalFields "
-"<abaqus.Part.PartModel.PartModel.analyticalFields>`\\"
+msgid ":py:obj:`analyticalFields <abaqus.Part.PartModel.PartModel.analyticalFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -288,9 +241,7 @@ msgid "A repository of AnalyticalField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`discreteFields "
-"<abaqus.Part.PartModel.PartModel.discreteFields>`\\"
+msgid ":py:obj:`discreteFields <abaqus.Part.PartModel.PartModel.discreteFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -298,9 +249,7 @@ msgid "A repository of DiscreteField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`predefinedFields "
-"<abaqus.Part.PartModel.PartModel.predefinedFields>`\\"
+msgid ":py:obj:`predefinedFields <abaqus.Part.PartModel.PartModel.predefinedFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -316,9 +265,7 @@ msgid "A repository of Interaction objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`interactionProperties "
-"<abaqus.Part.PartModel.PartModel.interactionProperties>`\\"
+msgid ":py:obj:`interactionProperties <abaqus.Part.PartModel.PartModel.interactionProperties>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -326,9 +273,7 @@ msgid "A repository of InteractionProperty objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`contactControls "
-"<abaqus.Part.PartModel.PartModel.contactControls>`\\"
+msgid ":py:obj:`contactControls <abaqus.Part.PartModel.PartModel.contactControls>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -336,9 +281,7 @@ msgid "A repository of ContactControl objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`contactInitializations "
-"<abaqus.Part.PartModel.PartModel.contactInitializations>`\\"
+msgid ":py:obj:`contactInitializations <abaqus.Part.PartModel.PartModel.contactInitializations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -346,9 +289,7 @@ msgid "A repository of ContactInitialization objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`contactStabilizations "
-"<abaqus.Part.PartModel.PartModel.contactStabilizations>`\\"
+msgid ":py:obj:`contactStabilizations <abaqus.Part.PartModel.PartModel.contactStabilizations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -356,16 +297,11 @@ msgid "A repository of ContactStabilization objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`linkedInstances "
-"<abaqus.Part.PartModel.PartModel.linkedInstances>`\\"
+msgid ":py:obj:`linkedInstances <abaqus.Part.PartModel.PartModel.linkedInstances>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A tuple of tuples of Strings specifying the linked child PartInstance "
-"name in the current model to the corresponding parent PartInstance name "
-"in a different model."
+msgid "A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -373,10 +309,7 @@ msgid ":py:obj:`linkedParts <abaqus.Part.PartModel.PartModel.linkedParts>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-"A tuple of tuples of Strings specifying the linked child Part name in the"
-" current model to the corresponding parent Part name in a different "
-"model."
+msgid "A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -412,9 +345,7 @@ msgid "A repository of Section objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`remeshingRules "
-"<abaqus.Part.PartModel.PartModel.remeshingRules>`\\"
+msgid ":py:obj:`remeshingRules <abaqus.Part.PartModel.PartModel.remeshingRules>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -446,9 +377,7 @@ msgid "A repository of Step objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`featureOptions "
-"<abaqus.Part.PartModel.PartModel.featureOptions>`\\"
+msgid ":py:obj:`featureOptions <abaqus.Part.PartModel.PartModel.featureOptions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -456,9 +385,7 @@ msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`adaptiveMeshConstraints "
-"<abaqus.Part.PartModel.PartModel.adaptiveMeshConstraints>`\\"
+msgid ":py:obj:`adaptiveMeshConstraints <abaqus.Part.PartModel.PartModel.adaptiveMeshConstraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -466,9 +393,7 @@ msgid "A repository of AdaptiveMeshConstraint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`adaptiveMeshControls "
-"<abaqus.Part.PartModel.PartModel.adaptiveMeshControls>`\\"
+msgid ":py:obj:`adaptiveMeshControls <abaqus.Part.PartModel.PartModel.adaptiveMeshControls>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -492,9 +417,7 @@ msgid "A repository of Filter objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`integratedOutputSections "
-"<abaqus.Part.PartModel.PartModel.integratedOutputSections>`\\"
+msgid ":py:obj:`integratedOutputSections <abaqus.Part.PartModel.PartModel.integratedOutputSections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -502,9 +425,7 @@ msgid "A repository of IntegratedOutputSection objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`fieldOutputRequests "
-"<abaqus.Part.PartModel.PartModel.fieldOutputRequests>`\\"
+msgid ":py:obj:`fieldOutputRequests <abaqus.Part.PartModel.PartModel.fieldOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -512,9 +433,7 @@ msgid "A repository of FieldOutputRequest objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`historyOutputRequests "
-"<abaqus.Part.PartModel.PartModel.historyOutputRequests>`\\"
+msgid ":py:obj:`historyOutputRequests <abaqus.Part.PartModel.PartModel.historyOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -522,9 +441,7 @@ msgid "A repository of HistoryOutputRequest objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`optimizationTasks "
-"<abaqus.Part.PartModel.PartModel.optimizationTasks>`\\"
+msgid ":py:obj:`optimizationTasks <abaqus.Part.PartModel.PartModel.optimizationTasks>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -532,9 +449,7 @@ msgid "A repository of OptimizationTask objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`tableCollections "
-"<abaqus.Part.PartModel.PartModel.tableCollections>`\\"
+msgid ":py:obj:`tableCollections <abaqus.Part.PartModel.PartModel.tableCollections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -542,9 +457,7 @@ msgid "A repository of TableCollection objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`eventSeriesTypes "
-"<abaqus.Part.PartModel.PartModel.eventSeriesTypes>`\\"
+msgid ":py:obj:`eventSeriesTypes <abaqus.Part.PartModel.PartModel.eventSeriesTypes>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -552,33 +465,29 @@ msgid "A repository of EventSeriesType objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`eventSeriesDatas "
-"<abaqus.Part.PartModel.PartModel.eventSeriesDatas>`\\"
+msgid ":py:obj:`eventSeriesDatas <abaqus.Part.PartModel.PartModel.eventSeriesDatas>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
 msgid "A repository of EventSeriesData objects."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase abaqus.Part.PartModel.PartModel of
+#: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase:0
+#: ../../../../src/abaqus/Part/PartModel.py:docstring of abaqus.Part.PartModel.PartModel:0
 msgid "Public Methods:"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-msgid ""
-":py:obj:`Part <abaqus.Part.PartModel.PartModel.Part>`\\ \\(name\\, "
-"dimensionality\\, type\\[\\, twist\\]\\)"
+msgid ":py:obj:`Part <abaqus.Part.PartModel.PartModel.Part>`\\ \\(name\\, dimensionality\\, type\\[\\, twist\\]\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:68:<autosummary>:1
+#: ../../None:3:<autosummary>:1
+#: ../../None:68:<autosummary>:1
 msgid "This method creates a Part object and places it in the parts repository."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`__init__ <abaqus.Part.PartModel.PartModel.__init__>`\\ "
-"\\(name\\[\\, description\\, ...\\]\\)"
+msgid ":py:obj:`__init__ <abaqus.Part.PartModel.PartModel.__init__>`\\ \\(name\\[\\, description\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -586,65 +495,43 @@ msgid "This method creates a Model object."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`ModelFromInputFile "
-"<abaqus.Part.PartModel.PartModel.ModelFromInputFile>`\\ \\(name\\, "
-"inputFileName\\)"
+msgid ":py:obj:`ModelFromInputFile <abaqus.Part.PartModel.PartModel.ModelFromInputFile>`\\ \\(name\\, inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"This method creates a Model object by reading the keywords in an input "
-"file and creating the corresponding Abaqus/CAE objects."
+msgid "This method creates a Model object by reading the keywords in an input file and creating the corresponding Abaqus/CAE objects."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`ModelFromOdbFile "
-"<abaqus.Part.PartModel.PartModel.ModelFromOdbFile>`\\ \\(name\\, "
-"odbFileName\\)"
+msgid ":py:obj:`ModelFromOdbFile <abaqus.Part.PartModel.PartModel.ModelFromOdbFile>`\\ \\(name\\, odbFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"This method creates a Model object by reading an output database and "
-"creating any corresponding Abaqus/CAE objects."
+msgid "This method creates a Model object by reading an output database and creating any corresponding Abaqus/CAE objects."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`ModelFromNastranFile "
-"<abaqus.Part.PartModel.PartModel.ModelFromNastranFile>`\\ \\(modelName\\,"
-" inputFileName\\)"
+msgid ":py:obj:`ModelFromNastranFile <abaqus.Part.PartModel.PartModel.ModelFromNastranFile>`\\ \\(modelName\\, inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"This method creates a Model object by reading the keywords in a Nastran "
-"bulk data file or Nastran input file and creating any corresponding "
-"Abaqus/CAE objects."
+msgid "This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-":py:obj:`setValues <abaqus.Part.PartModel.PartModel.setValues>`\\ "
-"\\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
+msgid ":py:obj:`setValues <abaqus.Part.PartModel.PartModel.setValues>`\\ \\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid "This method modifies the Model object."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase:2 of
-msgid ""
-"The Part object defines the physical attributes of a structure. Parts are"
-" instanced into the assembly and positioned before an analysis."
+#: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase:2
+msgid "The Part object defines the physical attributes of a structure. Parts are instanced into the assembly and positioned before an analysis."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`geometryValidity "
-"<abaqus.Part.PartBase.PartBase.geometryValidity>`\\"
+msgid ":py:obj:`geometryValidity <abaqus.Part.PartBase.PartBase.geometryValidity>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -656,9 +543,7 @@ msgid ":py:obj:`isOutOfDate <abaqus.Part.PartBase.PartBase.isOutOfDate>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"An Int specifying that feature parameters have been modified but that the"
-" part has not been regenerated."
+msgid "An Int specifying that feature parameters have been modified but that the part has not been regenerated."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -674,22 +559,15 @@ msgid ":py:obj:`vertices <abaqus.Part.PartBase.PartBase.vertices>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object "
-"specifying all the vertices in the part."
+msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object specifying all the vertices in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`ignoredVertices "
-"<abaqus.Part.PartBase.PartBase.ignoredVertices>`\\"
+msgid ":py:obj:`ignoredVertices <abaqus.Part.PartBase.PartBase.ignoredVertices>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"An "
-":py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray` "
-"object specifying all the ignored vertices in the part."
+msgid "An :py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray` object specifying all the ignored vertices in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -697,9 +575,7 @@ msgid ":py:obj:`edges <abaqus.Part.PartBase.PartBase.edges>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object "
-"specifying all the edges in the part."
+msgid "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying all the edges in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -707,9 +583,7 @@ msgid ":py:obj:`ignoredEdges <abaqus.Part.PartBase.PartBase.ignoredEdges>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"An :py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray` "
-"object specifying all the ignored edges in the part."
+msgid "An :py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray` object specifying all the ignored edges in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -717,9 +591,7 @@ msgid ":py:obj:`faces <abaqus.Part.PartBase.PartBase.faces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object specifying"
-" all the faces in the part."
+msgid "A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object specifying all the faces in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -727,9 +599,7 @@ msgid ":py:obj:`cells <abaqus.Part.PartBase.PartBase.cells>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object specifying"
-" all the cells in the part."
+msgid "A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object specifying all the cells in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -745,9 +615,7 @@ msgid ":py:obj:`featuresById <abaqus.Part.PartBase.PartBase.featuresById>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A repository of Feature objects specifying all Feature objects in the "
-"part."
+msgid "A repository of Feature objects specifying all Feature objects in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -763,9 +631,7 @@ msgid ":py:obj:`elements <abaqus.Part.PartBase.PartBase.elements>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object "
-"specifying all the elements in the part."
+msgid "A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying all the elements in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -773,9 +639,7 @@ msgid ":py:obj:`elemFaces <abaqus.Part.PartBase.PartBase.elemFaces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A repository of MeshFace objects specifying all the element faces in the "
-"part."
+msgid "A repository of MeshFace objects specifying all the element faces in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -783,9 +647,7 @@ msgid ":py:obj:`elementFaces <abaqus.Part.PartBase.PartBase.elementFaces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object specifying "
-"all the unique element faces in the part."
+msgid "A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object specifying all the unique element faces in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -793,9 +655,7 @@ msgid ":py:obj:`nodes <abaqus.Part.PartBase.PartBase.nodes>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying "
-"all the nodes in the part."
+msgid "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying all the nodes in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -803,9 +663,7 @@ msgid ":py:obj:`retainedNodes <abaqus.Part.PartBase.PartBase.retainedNodes>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying "
-"all the retained nodes in the substructure part."
+msgid "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying all the retained nodes in the substructure part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -821,15 +679,11 @@ msgid ":py:obj:`allSets <abaqus.Part.PartBase.PartBase.allSets>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A repository of Set objects specifying the contents of the **allSets** "
-"repository is the same as the contents of the **sets** repository."
+msgid "A repository of Set objects specifying the contents of the **allSets** repository is the same as the contents of the **sets** repository."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`allInternalSets "
-"<abaqus.Part.PartBase.PartBase.allInternalSets>`\\"
+msgid ":py:obj:`allInternalSets <abaqus.Part.PartBase.PartBase.allInternalSets>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -841,9 +695,7 @@ msgid ":py:obj:`surfaces <abaqus.Part.PartBase.PartBase.surfaces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A repository of Surface objects specifying for more information, see "
-"Surface."
+msgid "A repository of Surface objects specifying for more information, see Surface."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -851,16 +703,11 @@ msgid ":py:obj:`allSurfaces <abaqus.Part.PartBase.PartBase.allSurfaces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A repository of Surface objects specifying the contents of the "
-"**allSurfaces** repository is the same as the contents of the "
-"**surfaces** repository."
+msgid "A repository of Surface objects specifying the contents of the **allSurfaces** repository is the same as the contents of the **surfaces** repository."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`allInternalSurfaces "
-"<abaqus.Part.PartBase.PartBase.allInternalSurfaces>`\\"
+msgid ":py:obj:`allInternalSurfaces <abaqus.Part.PartBase.PartBase.allInternalSurfaces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -880,15 +727,11 @@ msgid ":py:obj:`stringers <abaqus.Part.PartBase.PartBase.stringers>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A repository of Stringer objects specifying the stringers created on the "
-"part."
+msgid "A repository of Stringer objects specifying the stringers created on the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`referencePoints "
-"<abaqus.Part.PartBase.PartBase.referencePoints>`\\"
+msgid ":py:obj:`referencePoints <abaqus.Part.PartBase.PartBase.referencePoints>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -896,48 +739,31 @@ msgid "A repository of ReferencePoint objects."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`engineeringFeatures "
-"<abaqus.Part.PartBase.PartBase.engineeringFeatures>`\\"
+msgid ":py:obj:`engineeringFeatures <abaqus.Part.PartBase.PartBase.engineeringFeatures>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"An "
-":py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature`"
-" object."
+msgid "An :py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature` object."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`sectionAssignments "
-"<abaqus.Part.PartBase.PartBase.sectionAssignments>`\\"
+msgid ":py:obj:`sectionAssignments <abaqus.Part.PartBase.PartBase.sectionAssignments>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A "
-":py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray`"
-" object."
+msgid "A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`materialOrientations "
-"<abaqus.Part.PartBase.PartBase.materialOrientations>`\\"
+msgid ":py:obj:`materialOrientations <abaqus.Part.PartBase.PartBase.materialOrientations>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A "
-":py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray`"
-" object."
+msgid "A :py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray` object."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`compositeLayups "
-"<abaqus.Part.PartBase.PartBase.compositeLayups>`\\"
+msgid ":py:obj:`compositeLayups <abaqus.Part.PartBase.PartBase.compositeLayups>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -949,9 +775,7 @@ msgid ":py:obj:`elemEdges <abaqus.Part.PartBase.PartBase.elemEdges>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A repository of MeshEdge objects specifying all the element edges in the "
-"part."
+msgid "A repository of MeshEdge objects specifying all the element edges in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -959,9 +783,7 @@ msgid ":py:obj:`elementEdges <abaqus.Part.PartBase.PartBase.elementEdges>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object specifying "
-"all the unique element edges in the part."
+msgid "A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object specifying all the unique element edges in the part."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -981,186 +803,117 @@ msgid ":py:obj:`__init__ <abaqus.Part.PartBase.PartBase.__init__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`PartFromBooleanCut "
-"<abaqus.Part.PartBase.PartBase.PartFromBooleanCut>`\\ \\(name\\, "
-"instanceToBeCut\\, ...\\)"
+msgid ":py:obj:`PartFromBooleanCut <abaqus.Part.PartBase.PartBase.PartFromBooleanCut>`\\ \\(name\\, instanceToBeCut\\, ...\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method creates a Part in the parts repository after subtracting or "
-"cutting the geometries of a group of part instances from that of a base "
-"part instance."
+msgid "This method creates a Part in the parts repository after subtracting or cutting the geometries of a group of part instances from that of a base part instance."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`PartFromBooleanMerge "
-"<abaqus.Part.PartBase.PartBase.PartFromBooleanMerge>`\\ \\(name\\, "
-"instances\\[\\, ...\\]\\)"
+msgid ":py:obj:`PartFromBooleanMerge <abaqus.Part.PartBase.PartBase.PartFromBooleanMerge>`\\ \\(name\\, instances\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method creates a Part in the parts repository after merging two or "
-"more part instances."
+msgid "This method creates a Part in the parts repository after merging two or more part instances."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`PartFromExtrude2DMesh "
-"<abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh>`\\ \\(name\\, "
-"part\\, depth\\, ...\\)"
+msgid ":py:obj:`PartFromExtrude2DMesh <abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh>`\\ \\(name\\, part\\, depth\\, ...\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method creates a Part object by extruding an existing two-"
-"dimensional orphan mesh Part object in the positive **Z**-direction and "
-"places it in the parts repository."
+msgid "This method creates a Part object by extruding an existing two-dimensional orphan mesh Part object in the positive **Z**-direction and places it in the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`PartFromGeometryFile "
-"<abaqus.Part.PartBase.PartBase.PartFromGeometryFile>`\\ \\(name\\, "
-"geometryFile\\, ...\\)"
+msgid ":py:obj:`PartFromGeometryFile <abaqus.Part.PartBase.PartBase.PartFromGeometryFile>`\\ \\(name\\, geometryFile\\, ...\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`PartFromInstanceMesh "
-"<abaqus.Part.PartBase.PartBase.PartFromInstanceMesh>`\\ \\(name\\[\\, "
-"partInstances\\, ...\\]\\)"
+msgid ":py:obj:`PartFromInstanceMesh <abaqus.Part.PartBase.PartBase.PartFromInstanceMesh>`\\ \\(name\\[\\, partInstances\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method creates a Part object containing the mesh found in the "
-"supplied PartInstance objects and places the new Part object in the parts"
-" repository."
+msgid "This method creates a Part object containing the mesh found in the supplied PartInstance objects and places the new Part object in the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`PartFromMesh <abaqus.Part.PartBase.PartBase.PartFromMesh>`\\ "
-"\\(name\\[\\, copySets\\]\\)"
+msgid ":py:obj:`PartFromMesh <abaqus.Part.PartBase.PartBase.PartFromMesh>`\\ \\(name\\[\\, copySets\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method creates a Part object containing the mesh found in the part "
-"and places the new Part object in the parts repository."
+msgid "This method creates a Part object containing the mesh found in the part and places the new Part object in the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`PartFromMeshMirror "
-"<abaqus.Part.PartBase.PartBase.PartFromMeshMirror>`\\ \\(name\\, part\\, "
-"point1\\, point2\\)"
+msgid ":py:obj:`PartFromMeshMirror <abaqus.Part.PartBase.PartBase.PartFromMeshMirror>`\\ \\(name\\, part\\, point1\\, point2\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method creates a Part object by mirroring an existing orphan mesh "
-"Part object about a specified plane and places it in the parts "
-"repository."
+msgid "This method creates a Part object by mirroring an existing orphan mesh Part object about a specified plane and places it in the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`PartFromNodesAndElements "
-"<abaqus.Part.PartBase.PartBase.PartFromNodesAndElements>`\\ \\(name\\, "
-"...\\[\\, twist\\]\\)"
+msgid ":py:obj:`PartFromNodesAndElements <abaqus.Part.PartBase.PartBase.PartFromNodesAndElements>`\\ \\(name\\, ...\\[\\, twist\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method creates a Part object from nodes and elements and places it "
-"in the parts repository."
+msgid "This method creates a Part object from nodes and elements and places it in the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`PartFromOdb <abaqus.Part.PartBase.PartBase.PartFromOdb>`\\ "
-"\\(name\\, odb\\[\\, fileName\\, instance\\, ...\\]\\)"
+msgid ":py:obj:`PartFromOdb <abaqus.Part.PartBase.PartBase.PartFromOdb>`\\ \\(name\\, odb\\[\\, fileName\\, instance\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method creates an orphan mesh Part object by reading an output "
-"database."
+msgid "This method creates an orphan mesh Part object by reading an output database."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`PartFromSection3DMeshByPlane "
-"<abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane>`\\ "
-"\\(name\\, part\\, ...\\)"
+msgid ":py:obj:`PartFromSection3DMeshByPlane <abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane>`\\ \\(name\\, part\\, ...\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method creates a Part object by cutting an existing three-"
-"dimensional orphan mesh Part object by a plane and places it in the parts"
-" repository."
+msgid "This method creates a Part object by cutting an existing three-dimensional orphan mesh Part object by a plane and places it in the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`PartFromSubstructure "
-"<abaqus.Part.PartBase.PartBase.PartFromSubstructure>`\\ \\(name\\, "
-"substructureFile\\, ...\\)"
+msgid ":py:obj:`PartFromSubstructure <abaqus.Part.PartBase.PartBase.PartFromSubstructure>`\\ \\(name\\, substructureFile\\, ...\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method creates a substructure Part object by reading a substructure "
-"sim file and places it in the parts repository."
+msgid "This method creates a substructure Part object by reading a substructure sim file and places it in the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`Part2DGeomFrom2DMesh "
-"<abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh>`\\ \\(name\\, "
-"part\\, featureAngle\\)"
+msgid ":py:obj:`Part2DGeomFrom2DMesh <abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh>`\\ \\(name\\, part\\, featureAngle\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method creates a geometric Part object from the outline of an "
-"existing two-dimensional orphan mesh Part object and places it in the "
-"parts repository."
+msgid "This method creates a geometric Part object from the outline of an existing two-dimensional orphan mesh Part object and places it in the parts repository."
 msgstr ""
 
-#: ../../None:65:<autosummary>:1 ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`setValues <abaqus.Part.PartBase.PartBase.setValues>`\\ "
-"\\(\\*args\\, \\*\\*kwargs\\)"
+#: ../../None:65:<autosummary>:1
+#: ../../None:68:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.Part.PartBase.PartBase.setValues>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../None:65:<autosummary>:1 ../../None:68:<autosummary>:1
+#: ../../None:65:<autosummary>:1
+#: ../../None:68:<autosummary>:1
 msgid "This method modifies the Part object."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`addGeomToSketch "
-"<abaqus.Part.PartBase.PartBase.addGeomToSketch>`\\ \\(sketch\\)"
+msgid ":py:obj:`addGeomToSketch <abaqus.Part.PartBase.PartBase.addGeomToSketch>`\\ \\(sketch\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method converts a part into a sketch by projecting all of the edges "
-"of the part onto the X-Y plane of the sketch."
+msgid "This method converts a part into a sketch by projecting all of the edges of the part onto the X-Y plane of the sketch."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`assignThickness "
-"<abaqus.Part.PartBase.PartBase.assignThickness>`\\ \\(faces\\[\\, "
-"thickness\\, ...\\]\\)"
+msgid ":py:obj:`assignThickness <abaqus.Part.PartBase.PartBase.assignThickness>`\\ \\(faces\\[\\, thickness\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1176,22 +929,15 @@ msgid "This method makes a backup copy of the features in the part."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`checkGeometry <abaqus.Part.PartBase.PartBase.checkGeometry>`\\ "
-"\\(\\[detailed\\, reportFacetErrors\\, ...\\]\\)"
+msgid ":py:obj:`checkGeometry <abaqus.Part.PartBase.PartBase.checkGeometry>`\\ \\(\\[detailed\\, reportFacetErrors\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method checks the validity of the geometry of the part and prints a "
-"count of all topological entities on the part (faces, edges, vertices, "
-"etc.)."
+msgid "This method checks the validity of the geometry of the part and prints a count of all topological entities on the part (faces, edges, vertices, etc.)."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`clearGeometryCache "
-"<abaqus.Part.PartBase.PartBase.clearGeometryCache>`\\ \\(\\)"
+msgid ":py:obj:`clearGeometryCache <abaqus.Part.PartBase.PartBase.clearGeometryCache>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1199,9 +945,7 @@ msgid "This method clears the geometry cache."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`deleteAllFeatures "
-"<abaqus.Part.PartBase.PartBase.deleteAllFeatures>`\\ \\(\\)"
+msgid ":py:obj:`deleteAllFeatures <abaqus.Part.PartBase.PartBase.deleteAllFeatures>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1209,9 +953,7 @@ msgid "This method deletes all the features in the part."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`deleteFeatures <abaqus.Part.PartBase.PartBase.deleteFeatures>`\\"
-" \\(featureNames\\)"
+msgid ":py:obj:`deleteFeatures <abaqus.Part.PartBase.PartBase.deleteFeatures>`\\ \\(featureNames\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1219,9 +961,7 @@ msgid "This method deletes the given features."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`getAngle <abaqus.Part.PartBase.PartBase.getAngle>`\\ "
-"\\(plane1\\, plane2\\, line1\\, line2\\[\\, ...\\]\\)"
+msgid ":py:obj:`getAngle <abaqus.Part.PartBase.PartBase.getAngle>`\\ \\(plane1\\, plane2\\, line1\\, line2\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1229,21 +969,15 @@ msgid "This method returns the angle between the specified entities."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`getArea <abaqus.Part.PartBase.PartBase.getArea>`\\ "
-"\\(faces\\[\\, relativeAccuracy\\]\\)"
+msgid ":py:obj:`getArea <abaqus.Part.PartBase.PartBase.getArea>`\\ \\(faces\\[\\, relativeAccuracy\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method returns the total surface area of a given face or group of "
-"faces."
+msgid "This method returns the total surface area of a given face or group of faces."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`getAssociatedCADPaths "
-"<abaqus.Part.PartBase.PartBase.getAssociatedCADPaths>`\\ \\(\\)"
+msgid ":py:obj:`getAssociatedCADPaths <abaqus.Part.PartBase.PartBase.getAssociatedCADPaths>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1251,21 +985,15 @@ msgid "This method returns the paths to the associated CAD part and root file."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`getCADParameters "
-"<abaqus.Part.PartBase.PartBase.getCADParameters>`\\ \\(\\)"
+msgid ":py:obj:`getCADParameters <abaqus.Part.PartBase.PartBase.getCADParameters>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method returns the names and values of the CAD parameters associated"
-" with the part."
+msgid "This method returns the names and values of the CAD parameters associated with the part."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`getCentroid <abaqus.Part.PartBase.PartBase.getCentroid>`\\ "
-"\\(faces\\, cells\\[\\, relativeAccuracy\\]\\)"
+msgid ":py:obj:`getCentroid <abaqus.Part.PartBase.PartBase.getCentroid>`\\ \\(faces\\, cells\\[\\, relativeAccuracy\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1273,9 +1001,7 @@ msgid "Location of the centroid of a given face/cell or group of faces/cells"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`getCoordinates <abaqus.Part.PartBase.PartBase.getCoordinates>`\\"
-" \\(entity\\, csys\\)"
+msgid ":py:obj:`getCoordinates <abaqus.Part.PartBase.PartBase.getCoordinates>`\\ \\(entity\\, csys\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1283,33 +1009,23 @@ msgid "This method returns the coordinates of specified point."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`getCurvature <abaqus.Part.PartBase.PartBase.getCurvature>`\\ "
-"\\(edges\\[\\, samplePoints\\]\\)"
+msgid ":py:obj:`getCurvature <abaqus.Part.PartBase.PartBase.getCurvature>`\\ \\(edges\\[\\, samplePoints\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method returns the maximum curvature of a given edge or group of "
-"edges."
+msgid "This method returns the maximum curvature of a given edge or group of edges."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`getDistance <abaqus.Part.PartBase.PartBase.getDistance>`\\ "
-"\\(entity1\\, entity2\\)"
+msgid ":py:obj:`getDistance <abaqus.Part.PartBase.PartBase.getDistance>`\\ \\(entity1\\, entity2\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"Depending on the arguments provided, this method returns one of the "
-"following:"
+msgid "Depending on the arguments provided, this method returns one of the following:"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`getLength <abaqus.Part.PartBase.PartBase.getLength>`\\ "
-"\\(edges\\)"
+msgid ":py:obj:`getLength <abaqus.Part.PartBase.PartBase.getLength>`\\ \\(edges\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1317,9 +1033,7 @@ msgid "This method returns the length of a given edge or group of edges."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`getPerimeter <abaqus.Part.PartBase.PartBase.getPerimeter>`\\ "
-"\\(faces\\)"
+msgid ":py:obj:`getPerimeter <abaqus.Part.PartBase.PartBase.getPerimeter>`\\ \\(faces\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1327,9 +1041,7 @@ msgid "This method returns the total perimeter of a given face or group of faces
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`getVolume <abaqus.Part.PartBase.PartBase.getVolume>`\\ "
-"\\(cells\\[\\, relativeAccuracy\\]\\)"
+msgid ":py:obj:`getVolume <abaqus.Part.PartBase.PartBase.getVolume>`\\ \\(cells\\[\\, relativeAccuracy\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1337,10 +1049,7 @@ msgid "This method returns the volume area of a given cell or group of cells."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`getMassProperties "
-"<abaqus.Part.PartBase.PartBase.getMassProperties>`\\ \\(\\[regions\\, "
-"...\\]\\)"
+msgid ":py:obj:`getMassProperties <abaqus.Part.PartBase.PartBase.getMassProperties>`\\ \\(\\[regions\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1348,108 +1057,71 @@ msgid "This method returns the mass properties of a part or region."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`getFeatureFaces "
-"<abaqus.Part.PartBase.PartBase.getFeatureFaces>`\\ \\(name\\)"
+msgid ":py:obj:`getFeatureFaces <abaqus.Part.PartBase.PartBase.getFeatureFaces>`\\ \\(name\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method returns a sequence of Face objects that are created by the "
-"given feature."
+msgid "This method returns a sequence of Face objects that are created by the given feature."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`getFeatureEdges "
-"<abaqus.Part.PartBase.PartBase.getFeatureEdges>`\\ \\(name\\)"
+msgid ":py:obj:`getFeatureEdges <abaqus.Part.PartBase.PartBase.getFeatureEdges>`\\ \\(name\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method returns a sequence of Edge objects that are created by the "
-"given feature."
+msgid "This method returns a sequence of Edge objects that are created by the given feature."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`getFeatureCells "
-"<abaqus.Part.PartBase.PartBase.getFeatureCells>`\\ \\(name\\)"
+msgid ":py:obj:`getFeatureCells <abaqus.Part.PartBase.PartBase.getFeatureCells>`\\ \\(name\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method returns a sequence of Cell objects that are created by the "
-"given feature."
+msgid "This method returns a sequence of Cell objects that are created by the given feature."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`getFeatureVertices "
-"<abaqus.Part.PartBase.PartBase.getFeatureVertices>`\\ \\(name\\)"
+msgid ":py:obj:`getFeatureVertices <abaqus.Part.PartBase.PartBase.getFeatureVertices>`\\ \\(name\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method returns a sequence of ConstrainedSketchVertex objects that "
-"are created by the given feature."
+msgid "This method returns a sequence of ConstrainedSketchVertex objects that are created by the given feature."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`isAlignedWithSketch "
-"<abaqus.Part.PartBase.PartBase.isAlignedWithSketch>`\\ \\(\\)"
+msgid ":py:obj:`isAlignedWithSketch <abaqus.Part.PartBase.PartBase.isAlignedWithSketch>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method checks if the normal of an analytical rigid surface part is "
-"aligned with that of its sketch."
+msgid "This method checks if the normal of an analytical rigid surface part is aligned with that of its sketch."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`printAssignedSections "
-"<abaqus.Part.PartBase.PartBase.printAssignedSections>`\\ \\(\\)"
+msgid ":py:obj:`printAssignedSections <abaqus.Part.PartBase.PartBase.printAssignedSections>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method prints information on each section that has been assigned to "
-"a region of the part."
+msgid "This method prints information on each section that has been assigned to a region of the part."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`projectEdgesOntoSketch "
-"<abaqus.Part.PartBase.PartBase.projectEdgesOntoSketch>`\\ \\(sketch\\, "
-"edges\\[\\, ...\\]\\)"
+msgid ":py:obj:`projectEdgesOntoSketch <abaqus.Part.PartBase.PartBase.projectEdgesOntoSketch>`\\ \\(sketch\\, edges\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method projects the selected edges of a part onto the specified "
-"ConstrainedSketch object."
+msgid "This method projects the selected edges of a part onto the specified ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`projectReferencesOntoSketch "
-"<abaqus.Part.PartBase.PartBase.projectReferencesOntoSketch>`\\ "
-"\\(sketch\\[\\, ...\\]\\)"
+msgid ":py:obj:`projectReferencesOntoSketch <abaqus.Part.PartBase.PartBase.projectReferencesOntoSketch>`\\ \\(sketch\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method projects the vertices of specified edges, and datum points "
-"from the part onto the specified ConstrainedSketch object."
+msgid "This method projects the vertices of specified edges, and datum points from the part onto the specified ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`queryAttributes "
-"<abaqus.Part.PartBase.PartBase.queryAttributes>`\\ "
-"\\(\\[printResults\\]\\)"
+msgid ":py:obj:`queryAttributes <abaqus.Part.PartBase.PartBase.queryAttributes>`\\ \\(\\[printResults\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1457,45 +1129,31 @@ msgid "This method prints the following information about a part:"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`queryCachedStates "
-"<abaqus.Part.PartBase.PartBase.queryCachedStates>`\\ \\(\\)"
+msgid ":py:obj:`queryCachedStates <abaqus.Part.PartBase.PartBase.queryCachedStates>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method displays the position of geometric states relative to the "
-"sequence of features in the part cache."
+msgid "This method displays the position of geometric states relative to the sequence of features in the part cache."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`queryGeometry <abaqus.Part.PartBase.PartBase.queryGeometry>`\\ "
-"\\(\\[relativeAccuracy\\, printResults\\]\\)"
+msgid ":py:obj:`queryGeometry <abaqus.Part.PartBase.PartBase.queryGeometry>`\\ \\(\\[relativeAccuracy\\, printResults\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`queryRegionsMissingSections "
-"<abaqus.Part.PartBase.PartBase.queryRegionsMissingSections>`\\ \\(\\)"
+msgid ":py:obj:`queryRegionsMissingSections <abaqus.Part.PartBase.PartBase.queryRegionsMissingSections>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method returns all regions in the part that do not have a section "
-"assignment but require one for analysis."
+msgid "This method returns all regions in the part that do not have a section assignment but require one for analysis."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`queryDisjointPlyRegions "
-"<abaqus.Part.PartBase.PartBase.queryDisjointPlyRegions>`\\ \\(\\)"
+msgid ":py:obj:`queryDisjointPlyRegions <abaqus.Part.PartBase.PartBase.queryDisjointPlyRegions>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method provides a list of all composite plys in the current part "
-"which have disjoint regions."
+msgid "This method provides a list of all composite plys in the current part which have disjoint regions."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1507,9 +1165,7 @@ msgid "This method regenerates a part."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`regenerationWarnings "
-"<abaqus.Part.PartBase.PartBase.regenerationWarnings>`\\ \\(\\)"
+msgid ":py:obj:`regenerationWarnings <abaqus.Part.PartBase.PartBase.regenerationWarnings>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1517,29 +1173,25 @@ msgid "This method prints any regeneration warnings associated with the features
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`removeInvalidGeometry "
-"<abaqus.Part.PartBase.PartBase.removeInvalidGeometry>`\\ \\(\\)"
+msgid ":py:obj:`removeInvalidGeometry <abaqus.Part.PartBase.PartBase.removeInvalidGeometry>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid "Removes all invalid entities from the part, leaving a valid part."
 msgstr ""
 
-#: ../../None:65:<autosummary>:1 ../../None:68:<autosummary>:1
+#: ../../None:65:<autosummary>:1
+#: ../../None:68:<autosummary>:1
 msgid ":py:obj:`restore <abaqus.Part.PartBase.PartBase.restore>`\\ \\(\\)"
 msgstr ""
 
-#: ../../None:65:<autosummary>:1 ../../None:68:<autosummary>:1
-msgid ""
-"This method restores the parameters of all features in the assembly to "
-"the value they had before a failed regeneration."
+#: ../../None:65:<autosummary>:1
+#: ../../None:68:<autosummary>:1
+msgid "This method restores the parameters of all features in the assembly to the value they had before a failed regeneration."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`resumeAllFeatures "
-"<abaqus.Part.PartBase.PartBase.resumeAllFeatures>`\\ \\(\\)"
+msgid ":py:obj:`resumeAllFeatures <abaqus.Part.PartBase.PartBase.resumeAllFeatures>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1547,9 +1199,7 @@ msgid "This method resumes all the suppressed features in the part."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`resumeFeatures <abaqus.Part.PartBase.PartBase.resumeFeatures>`\\"
-" \\(featureNames\\)"
+msgid ":py:obj:`resumeFeatures <abaqus.Part.PartBase.PartBase.resumeFeatures>`\\ \\(featureNames\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1557,9 +1207,7 @@ msgid "This method resumes the specified suppressed features in the part."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`resumeLastSetFeatures "
-"<abaqus.Part.PartBase.PartBase.resumeLastSetFeatures>`\\ \\(\\)"
+msgid ":py:obj:`resumeLastSetFeatures <abaqus.Part.PartBase.PartBase.resumeLastSetFeatures>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1567,9 +1215,7 @@ msgid "This method resumes the last set of features to be suppressed in the part
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`saveGeometryCache "
-"<abaqus.Part.PartBase.PartBase.saveGeometryCache>`\\ \\(\\)"
+msgid ":py:obj:`saveGeometryCache <abaqus.Part.PartBase.PartBase.saveGeometryCache>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1577,10 +1223,7 @@ msgid "This method caches the current geometry."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`setAssociatedCADPaths "
-"<abaqus.Part.PartBase.PartBase.setAssociatedCADPaths>`\\ "
-"\\(\\[partFile\\, rootFile\\]\\)"
+msgid ":py:obj:`setAssociatedCADPaths <abaqus.Part.PartBase.PartBase.setAssociatedCADPaths>`\\ \\(\\[partFile\\, rootFile\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1588,9 +1231,7 @@ msgid "This method sets the paths to the associated CAD part and root file."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`suppressFeatures "
-"<abaqus.Part.PartBase.PartBase.suppressFeatures>`\\ \\(featureNames\\)"
+msgid ":py:obj:`suppressFeatures <abaqus.Part.PartBase.PartBase.suppressFeatures>`\\ \\(featureNames\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1598,90 +1239,59 @@ msgid "This method suppresses the given features."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`writeAcisFile <abaqus.Part.PartBase.PartBase.writeAcisFile>`\\ "
-"\\(fileName\\[\\, version\\]\\)"
+msgid ":py:obj:`writeAcisFile <abaqus.Part.PartBase.PartBase.writeAcisFile>`\\ \\(fileName\\[\\, version\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method exports the geometry of the part to a named file in ACIS "
-"format."
+msgid "This method exports the geometry of the part to a named file in ACIS format."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`writeCADParameters "
-"<abaqus.Part.PartBase.PartBase.writeCADParameters>`\\ \\(paramFile\\[\\, "
-"...\\]\\)"
+msgid ":py:obj:`writeCADParameters <abaqus.Part.PartBase.PartBase.writeCADParameters>`\\ \\(paramFile\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method writes the parameters that were imported from the CAD system "
-"to a parameter file."
+msgid "This method writes the parameters that were imported from the CAD system to a parameter file."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`writeIgesFile <abaqus.Part.PartBase.PartBase.writeIgesFile>`\\ "
-"\\(fileName\\, flavor\\)"
+msgid ":py:obj:`writeIgesFile <abaqus.Part.PartBase.PartBase.writeIgesFile>`\\ \\(fileName\\, flavor\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method exports the geometry of the part to a named file in IGES "
-"format."
+msgid "This method exports the geometry of the part to a named file in IGES format."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`writeStepFile <abaqus.Part.PartBase.PartBase.writeStepFile>`\\ "
-"\\(fileName\\)"
+msgid ":py:obj:`writeStepFile <abaqus.Part.PartBase.PartBase.writeStepFile>`\\ \\(fileName\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method exports the geometry of the part to a named file in STEP "
-"format."
+msgid "This method exports the geometry of the part to a named file in STEP format."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`writeVdaFile <abaqus.Part.PartBase.PartBase.writeVdaFile>`\\ "
-"\\(fileName\\)"
+msgid ":py:obj:`writeVdaFile <abaqus.Part.PartBase.PartBase.writeVdaFile>`\\ \\(fileName\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method exports the geometry of the part to a named file in VDA-FS "
-"format."
+msgid "This method exports the geometry of the part to a named file in VDA-FS format."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`copyMeshPattern "
-"<abaqus.Part.PartBase.PartBase.copyMeshPattern>`\\ \\(elements\\, "
-"faces\\, elemFaces\\, ...\\)"
+msgid ":py:obj:`copyMeshPattern <abaqus.Part.PartBase.PartBase.copyMeshPattern>`\\ \\(elements\\, faces\\, elemFaces\\, ...\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method copies a mesh pattern from a source region consisting of a "
-"set of shell elements or element faces onto a target face, mapping nodes "
-"and elements in a one-one correspondence between source and target."
+msgid "This method copies a mesh pattern from a source region consisting of a set of shell elements or element faces onto a target face, mapping nodes and elements in a one-one correspondence between source and target."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`smoothNodes <abaqus.Part.PartBase.PartBase.smoothNodes>`\\ "
-"\\(nodes\\)"
+msgid ":py:obj:`smoothNodes <abaqus.Part.PartBase.PartBase.smoothNodes>`\\ \\(nodes\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-"This method smooths the given nodes of a native mesh, moving them locally"
-" to a more optimal location that improves the quality of the mesh"
+msgid "This method smooths the given nodes of a native mesh, moving them locally to a more optimal location that improves the quality of the mesh"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1701,9 +1311,7 @@ msgid "This method unlocks the part."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`LockForUpgrade <abaqus.Part.PartBase.PartBase.LockForUpgrade>`\\"
-" \\(\\)"
+msgid ":py:obj:`LockForUpgrade <abaqus.Part.PartBase.PartBase.LockForUpgrade>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1715,15 +1323,11 @@ msgid ":py:obj:`AutoRepair <abaqus.Part.PartBase.PartBase.AutoRepair>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method carries out a sequence of geometry repair operations if it "
-"contains invalid entities."
+msgid "This method carries out a sequence of geometry repair operations if it contains invalid entities."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`AddCells <abaqus.Part.PartBase.PartBase.AddCells>`\\ "
-"\\(faceList\\[\\, flipped\\]\\)"
+msgid ":py:obj:`AddCells <abaqus.Part.PartBase.PartBase.AddCells>`\\ \\(faceList\\[\\, flipped\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1731,49 +1335,31 @@ msgid "This method tries to convert a shell entity to a solid entity."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`AnalyticRigidSurf2DPlanar "
-"<abaqus.Part.PartBase.PartBase.AnalyticRigidSurf2DPlanar>`\\ \\(sketch\\)"
+msgid ":py:obj:`AnalyticRigidSurf2DPlanar <abaqus.Part.PartBase.PartBase.AnalyticRigidSurf2DPlanar>`\\ \\(sketch\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates a first Feature object for an analytical rigid "
-"surface by creating a planar wire from the given ConstrainedSketch "
-"object."
+msgid "This method creates a first Feature object for an analytical rigid surface by creating a planar wire from the given ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`AnalyticRigidSurfExtrude "
-"<abaqus.Part.PartBase.PartBase.AnalyticRigidSurfExtrude>`\\ "
-"\\(sketch\\[\\, depth\\]\\)"
+msgid ":py:obj:`AnalyticRigidSurfExtrude <abaqus.Part.PartBase.PartBase.AnalyticRigidSurfExtrude>`\\ \\(sketch\\[\\, depth\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates a first Feature object for an analytical rigid "
-"surface by extruding the given ConstrainedSketch object by the given "
-"depth, creating a surface."
+msgid "This method creates a first Feature object for an analytical rigid surface by extruding the given ConstrainedSketch object by the given depth, creating a surface."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`AnalyticRigidSurfRevolve "
-"<abaqus.Part.PartBase.PartBase.AnalyticRigidSurfRevolve>`\\ \\(sketch\\)"
+msgid ":py:obj:`AnalyticRigidSurfRevolve <abaqus.Part.PartBase.PartBase.AnalyticRigidSurfRevolve>`\\ \\(sketch\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates a first Feature object for an analytical rigid "
-"surface by revolving the given ConstrainedSketch object by 360° about the"
-" **Y**-axis."
+msgid "This method creates a first Feature object for an analytical rigid surface by revolving the given ConstrainedSketch object by 360° about the **Y**-axis."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`AssignMidsurfaceRegion "
-"<abaqus.Part.PartBase.PartBase.AssignMidsurfaceRegion>`\\ \\(cellList\\)"
+msgid ":py:obj:`AssignMidsurfaceRegion <abaqus.Part.PartBase.PartBase.AssignMidsurfaceRegion>`\\ \\(cellList\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1781,93 +1367,59 @@ msgid "This method assign a mid-surface property to sequence of Cell objects."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`BaseSolidExtrude "
-"<abaqus.Part.PartBase.PartBase.BaseSolidExtrude>`\\ \\(sketch\\, "
-"depth\\[\\, ...\\]\\)"
+msgid ":py:obj:`BaseSolidExtrude <abaqus.Part.PartBase.PartBase.BaseSolidExtrude>`\\ \\(sketch\\, depth\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates a first Feature object by extruding the given "
-"ConstrainedSketch object by the given depth, creating a solid."
+msgid "This method creates a first Feature object by extruding the given ConstrainedSketch object by the given depth, creating a solid."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`BaseSolidRevolve "
-"<abaqus.Part.PartBase.PartBase.BaseSolidRevolve>`\\ \\(sketch\\, "
-"angle\\[\\, pitch\\, ...\\]\\)"
+msgid ":py:obj:`BaseSolidRevolve <abaqus.Part.PartBase.PartBase.BaseSolidRevolve>`\\ \\(sketch\\, angle\\[\\, pitch\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates a first Feature object by revolving the given "
-"ConstrainedSketch object by the given angle, creating a solid."
+msgid "This method creates a first Feature object by revolving the given ConstrainedSketch object by the given angle, creating a solid."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`BaseSolidSweep <abaqus.Part.PartBase.PartBase.BaseSolidSweep>`\\"
-" \\(sketch\\, path\\)"
+msgid ":py:obj:`BaseSolidSweep <abaqus.Part.PartBase.PartBase.BaseSolidSweep>`\\ \\(sketch\\, path\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates a first Feature object by sweeping the given profile "
-"ConstrainedSketch object along the path defined by the path "
-"ConstrainedSketch object, creating a solid."
+msgid "This method creates a first Feature object by sweeping the given profile ConstrainedSketch object along the path defined by the path ConstrainedSketch object, creating a solid."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`BaseShell <abaqus.Part.PartBase.PartBase.BaseShell>`\\ "
-"\\(sketch\\)"
+msgid ":py:obj:`BaseShell <abaqus.Part.PartBase.PartBase.BaseShell>`\\ \\(sketch\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates a first Feature object by creating a planar shell "
-"from the given ConstrainedSketch object."
+msgid "This method creates a first Feature object by creating a planar shell from the given ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`BaseShellExtrude "
-"<abaqus.Part.PartBase.PartBase.BaseShellExtrude>`\\ \\(sketch\\, "
-"depth\\[\\, ...\\]\\)"
+msgid ":py:obj:`BaseShellExtrude <abaqus.Part.PartBase.PartBase.BaseShellExtrude>`\\ \\(sketch\\, depth\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates a first Feature object by extruding the given "
-"ConstrainedSketch object by the given depth, creating a shell."
+msgid "This method creates a first Feature object by extruding the given ConstrainedSketch object by the given depth, creating a shell."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`BaseShellRevolve "
-"<abaqus.Part.PartBase.PartBase.BaseShellRevolve>`\\ \\(sketch\\, "
-"angle\\[\\, pitch\\, ...\\]\\)"
+msgid ":py:obj:`BaseShellRevolve <abaqus.Part.PartBase.PartBase.BaseShellRevolve>`\\ \\(sketch\\, angle\\[\\, pitch\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates a first Feature object by revolving the given "
-"ConstrainedSketch object by the given angle, creating a shell."
+msgid "This method creates a first Feature object by revolving the given ConstrainedSketch object by the given angle, creating a shell."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`BaseShellSweep <abaqus.Part.PartBase.PartBase.BaseShellSweep>`\\"
-" \\(sketch\\, path\\)"
+msgid ":py:obj:`BaseShellSweep <abaqus.Part.PartBase.PartBase.BaseShellSweep>`\\ \\(sketch\\, path\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates a first Feature object by sweeping the given section "
-"ConstrainedSketch object along the path defined by the path "
-"ConstrainedSketch object, creating a shell."
+msgid "This method creates a first Feature object by sweeping the given section ConstrainedSketch object along the path defined by the path ConstrainedSketch object, creating a shell."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1875,229 +1427,147 @@ msgid ":py:obj:`BaseWire <abaqus.Part.PartBase.PartBase.BaseWire>`\\ \\(sketch\\
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates a first Feature object by creating a planar wire from"
-" the given ConstrainedSketch object."
+msgid "This method creates a first Feature object by creating a planar wire from the given ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`BlendFaces <abaqus.Part.PartBase.PartBase.BlendFaces>`\\ "
-"\\(side1\\, side2\\[\\, method\\, path\\]\\)"
+msgid ":py:obj:`BlendFaces <abaqus.Part.PartBase.PartBase.BlendFaces>`\\ \\(side1\\, side2\\[\\, method\\, path\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates a Feature object by creating new faces that blends "
-"two sets of faces."
+msgid "This method creates a Feature object by creating new faces that blends two sets of faces."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`Chamfer <abaqus.Part.PartBase.PartBase.Chamfer>`\\ \\(length\\, "
-"edgeList\\)"
+msgid ":py:obj:`Chamfer <abaqus.Part.PartBase.PartBase.Chamfer>`\\ \\(length\\, edgeList\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by chamfering the given "
-"list of edges with a given length."
+msgid "This method creates an additional Feature object by chamfering the given list of edges with a given length."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`Mirror <abaqus.Part.PartBase.PartBase.Mirror>`\\ "
-"\\(mirrorPlane\\, keepOriginal\\[\\, ...\\]\\)"
+msgid ":py:obj:`Mirror <abaqus.Part.PartBase.PartBase.Mirror>`\\ \\(mirrorPlane\\, keepOriginal\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method mirrors existing part geometry across a plane to create new "
-"geometry."
+msgid "This method mirrors existing part geometry across a plane to create new geometry."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`ConvertToAnalytical "
-"<abaqus.Part.PartBase.PartBase.ConvertToAnalytical>`\\ \\(\\)"
+msgid ":py:obj:`ConvertToAnalytical <abaqus.Part.PartBase.PartBase.ConvertToAnalytical>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method attempts to change entities into a simpler form that will "
-"speed up processing and make entities available during feature "
-"operations."
+msgid "This method attempts to change entities into a simpler form that will speed up processing and make entities available during feature operations."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`ConvertToPrecise "
-"<abaqus.Part.PartBase.PartBase.ConvertToPrecise>`\\ \\(\\[method\\]\\)"
+msgid ":py:obj:`ConvertToPrecise <abaqus.Part.PartBase.PartBase.ConvertToPrecise>`\\ \\(\\[method\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method attempts to change imprecise entities so that the geometry "
-"becomes precise."
+msgid "This method attempts to change imprecise entities so that the geometry becomes precise."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`CoverEdges <abaqus.Part.PartBase.PartBase.CoverEdges>`\\ "
-"\\(edgeList\\[\\, tryAnalytical\\]\\)"
+msgid ":py:obj:`CoverEdges <abaqus.Part.PartBase.PartBase.CoverEdges>`\\ \\(edgeList\\[\\, tryAnalytical\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method generates a face using the given edges as the face's "
-"boundaries."
+msgid "This method generates a face using the given edges as the face's boundaries."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`Cut <abaqus.Part.PartBase.PartBase.Cut>`\\ \\(sketchPlane\\, "
-"sketchPlaneSide\\, ...\\[\\, ...\\]\\)"
+msgid ":py:obj:`Cut <abaqus.Part.PartBase.PartBase.Cut>`\\ \\(sketchPlane\\, sketchPlaneSide\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by cutting a hole using "
-"the given ConstrainedSketch object."
+msgid "This method creates an additional Feature object by cutting a hole using the given ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`CutExtrude <abaqus.Part.PartBase.PartBase.CutExtrude>`\\ "
-"\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+msgid ":py:obj:`CutExtrude <abaqus.Part.PartBase.PartBase.CutExtrude>`\\ \\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by extruding the given "
-"ConstrainedSketch object by the given depth and cutting away material in "
-"the solid and shell regions of the part."
+msgid "This method creates an additional Feature object by extruding the given ConstrainedSketch object by the given depth and cutting away material in the solid and shell regions of the part."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`CutLoft <abaqus.Part.PartBase.PartBase.CutLoft>`\\ "
-"\\(loftsections\\[\\, startCondition\\, ...\\]\\)"
+msgid ":py:obj:`CutLoft <abaqus.Part.PartBase.PartBase.CutLoft>`\\ \\(loftsections\\[\\, startCondition\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by lofting between the "
-"given sections and cutting away material from the part."
+msgid "This method creates an additional Feature object by lofting between the given sections and cutting away material from the part."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`CutRevolve <abaqus.Part.PartBase.PartBase.CutRevolve>`\\ "
-"\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+msgid ":py:obj:`CutRevolve <abaqus.Part.PartBase.PartBase.CutRevolve>`\\ \\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by revolving the given "
-"ConstrainedSketch object by the given angle and cutting away material "
-"from the part."
+msgid "This method creates an additional Feature object by revolving the given ConstrainedSketch object by the given angle and cutting away material from the part."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`CutSweep <abaqus.Part.PartBase.PartBase.CutSweep>`\\ \\(path\\, "
-"profile\\[\\, pathPlane\\, ...\\]\\)"
+msgid ":py:obj:`CutSweep <abaqus.Part.PartBase.PartBase.CutSweep>`\\ \\(path\\, profile\\[\\, pathPlane\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by sweeping the given "
-"ConstrainedSketch object along a path which may be a ConstrainedSketch or"
-" a sequence of Edge objects and cutting away material from the part."
+msgid "This method creates an additional Feature object by sweeping the given ConstrainedSketch object along a path which may be a ConstrainedSketch or a sequence of Edge objects and cutting away material from the part."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`ExtendFaces <abaqus.Part.PartBase.PartBase.ExtendFaces>`\\ "
-"\\(\\[faces\\, extendAlong\\, distance\\, ...\\]\\)"
+msgid ":py:obj:`ExtendFaces <abaqus.Part.PartBase.PartBase.ExtendFaces>`\\ \\(\\[faces\\, extendAlong\\, distance\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method extends faces along its free edges by offsetting the external"
-" edges along the surfaces."
+msgid "This method extends faces along its free edges by offsetting the external edges along the surfaces."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`FaceFromElementFaces "
-"<abaqus.Part.PartBase.PartBase.FaceFromElementFaces>`\\ "
-"\\(elementFaces\\[\\, stitch\\, ...\\]\\)"
+msgid ":py:obj:`FaceFromElementFaces <abaqus.Part.PartBase.PartBase.FaceFromElementFaces>`\\ \\(elementFaces\\[\\, stitch\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates a geometry face from a collection of orphan element "
-"faces."
+msgid "This method creates a geometry face from a collection of orphan element faces."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`HoleBlindFromEdges "
-"<abaqus.Part.PartBase.PartBase.HoleBlindFromEdges>`\\ \\(plane\\, "
-"planeSide\\, ...\\)"
+msgid ":py:obj:`HoleBlindFromEdges <abaqus.Part.PartBase.PartBase.HoleBlindFromEdges>`\\ \\(plane\\, planeSide\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by creating a circular "
-"blind hole of the given diameter and depth and cutting away material in "
-"the solid and shell regions of the part."
+msgid "This method creates an additional Feature object by creating a circular blind hole of the given diameter and depth and cutting away material in the solid and shell regions of the part."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`HoleFromEdges <abaqus.Part.PartBase.PartBase.HoleFromEdges>`\\ "
-"\\(diameter\\, edge1\\, distance1\\, ...\\)"
+msgid ":py:obj:`HoleFromEdges <abaqus.Part.PartBase.PartBase.HoleFromEdges>`\\ \\(diameter\\, edge1\\, distance1\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by creating a circular "
-"hole of the given diameter in a 2D planar part and cutting away material "
-"in the shell and wire regions of the part."
+msgid "This method creates an additional Feature object by creating a circular hole of the given diameter in a 2D planar part and cutting away material in the shell and wire regions of the part."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`HoleThruAllFromEdges "
-"<abaqus.Part.PartBase.PartBase.HoleThruAllFromEdges>`\\ \\(plane\\, "
-"planeSide\\, ...\\)"
+msgid ":py:obj:`HoleThruAllFromEdges <abaqus.Part.PartBase.PartBase.HoleThruAllFromEdges>`\\ \\(plane\\, planeSide\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by creating a circular "
-"through hole of the given diameter and cutting away material in the solid"
-" and shell regions of the part."
+msgid "This method creates an additional Feature object by creating a circular through hole of the given diameter and cutting away material in the solid and shell regions of the part."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`MergeEdges <abaqus.Part.PartBase.PartBase.MergeEdges>`\\ "
-"\\(\\[edgeList\\, extendSelection\\]\\)"
+msgid ":py:obj:`MergeEdges <abaqus.Part.PartBase.PartBase.MergeEdges>`\\ \\(\\[edgeList\\, extendSelection\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method merges edges either by extending the user selection or using "
-"only the selected edges."
+msgid "This method merges edges either by extending the user selection or using only the selected edges."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`OffsetFaces <abaqus.Part.PartBase.PartBase.OffsetFaces>`\\ "
-"\\(faceList\\[\\, distance\\, ...\\]\\)"
+msgid ":py:obj:`OffsetFaces <abaqus.Part.PartBase.PartBase.OffsetFaces>`\\ \\(faceList\\[\\, distance\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -2105,9 +1575,7 @@ msgid "This method creates new faces by offsetting existing faces."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`RemoveCells <abaqus.Part.PartBase.PartBase.RemoveCells>`\\ "
-"\\(cellList\\)"
+msgid ":py:obj:`RemoveCells <abaqus.Part.PartBase.PartBase.RemoveCells>`\\ \\(cellList\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -2115,9 +1583,7 @@ msgid "This method converts a solid entity to a shell entity."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`RemoveFaces <abaqus.Part.PartBase.PartBase.RemoveFaces>`\\ "
-"\\(faceList\\[\\, deleteCells\\]\\)"
+msgid ":py:obj:`RemoveFaces <abaqus.Part.PartBase.PartBase.RemoveFaces>`\\ \\(faceList\\[\\, deleteCells\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -2125,34 +1591,23 @@ msgid "This method removes faces from a solid entity or from a shell entity."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`RemoveFacesAndStitch "
-"<abaqus.Part.PartBase.PartBase.RemoveFacesAndStitch>`\\ \\(faceList\\)"
+msgid ":py:obj:`RemoveFacesAndStitch <abaqus.Part.PartBase.PartBase.RemoveFacesAndStitch>`\\ \\(faceList\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method removes faces from a solid entity and attempts to close the "
-"resulting gap by extending the neighboring faces of the solid."
+msgid "This method removes faces from a solid entity and attempts to close the resulting gap by extending the neighboring faces of the solid."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`RemoveRedundantEntities "
-"<abaqus.Part.PartBase.PartBase.RemoveRedundantEntities>`\\ "
-"\\(\\[vertexList\\, ...\\]\\)"
+msgid ":py:obj:`RemoveRedundantEntities <abaqus.Part.PartBase.PartBase.RemoveRedundantEntities>`\\ \\(\\[vertexList\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method removes redundant edges and vertices from a solid or a shell "
-"entity."
+msgid "This method removes redundant edges and vertices from a solid or a shell entity."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`RepairFaceNormals "
-"<abaqus.Part.PartBase.PartBase.RepairFaceNormals>`\\ \\(\\[faceList\\]\\)"
+msgid ":py:obj:`RepairFaceNormals <abaqus.Part.PartBase.PartBase.RepairFaceNormals>`\\ \\(\\[faceList\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -2160,9 +1615,7 @@ msgid "This method works on the entire part or a sequence of shell faces."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`RepairInvalidEdges "
-"<abaqus.Part.PartBase.PartBase.RepairInvalidEdges>`\\ \\(edgeList\\)"
+msgid ":py:obj:`RepairInvalidEdges <abaqus.Part.PartBase.PartBase.RepairInvalidEdges>`\\ \\(edgeList\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -2170,9 +1623,7 @@ msgid "This method repairs invalid edges."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`RepairSliver <abaqus.Part.PartBase.PartBase.RepairSliver>`\\ "
-"\\(face\\, point1\\, point2\\[\\, ...\\]\\)"
+msgid ":py:obj:`RepairSliver <abaqus.Part.PartBase.PartBase.RepairSliver>`\\ \\(face\\, point1\\, point2\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -2180,10 +1631,7 @@ msgid "This method repairs the selected sliver from the selected face."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`RepairSmallEdges "
-"<abaqus.Part.PartBase.PartBase.RepairSmallEdges>`\\ \\(edgeList\\[\\, "
-"toleranceChecks\\]\\)"
+msgid ":py:obj:`RepairSmallEdges <abaqus.Part.PartBase.PartBase.RepairSmallEdges>`\\ \\(edgeList\\[\\, toleranceChecks\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -2191,10 +1639,7 @@ msgid "This method repairs small edges."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`RepairSmallFaces "
-"<abaqus.Part.PartBase.PartBase.RepairSmallFaces>`\\ \\(faceList\\[\\, "
-"toleranceChecks\\]\\)"
+msgid ":py:obj:`RepairSmallFaces <abaqus.Part.PartBase.PartBase.RepairSmallFaces>`\\ \\(faceList\\[\\, toleranceChecks\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -2202,9 +1647,7 @@ msgid "This method repairs small faces."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`ReplaceFaces <abaqus.Part.PartBase.PartBase.ReplaceFaces>`\\ "
-"\\(faceList\\[\\, stitch\\]\\)"
+msgid ":py:obj:`ReplaceFaces <abaqus.Part.PartBase.PartBase.ReplaceFaces>`\\ \\(faceList\\[\\, stitch\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -2212,194 +1655,129 @@ msgid "This method replaces the selected faces with a single face."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`Round <abaqus.Part.PartBase.PartBase.Round>`\\ \\(radius\\, "
-"edgeList\\, vertexList\\)"
+msgid ":py:obj:`Round <abaqus.Part.PartBase.PartBase.Round>`\\ \\(radius\\, edgeList\\, vertexList\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by rounding (filleting) "
-"the given list of entities with the given radius."
+msgid "This method creates an additional Feature object by rounding (filleting) the given list of entities with the given radius."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`Shell <abaqus.Part.PartBase.PartBase.Shell>`\\ \\(sketchPlane\\,"
-" sketchPlaneSide\\, ...\\[\\, ...\\]\\)"
+msgid ":py:obj:`Shell <abaqus.Part.PartBase.PartBase.Shell>`\\ \\(sketchPlane\\, sketchPlaneSide\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by creating a planar "
-"shell from the given ConstrainedSketch object."
+msgid "This method creates an additional Feature object by creating a planar shell from the given ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`ShellExtrude <abaqus.Part.PartBase.PartBase.ShellExtrude>`\\ "
-"\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+msgid ":py:obj:`ShellExtrude <abaqus.Part.PartBase.PartBase.ShellExtrude>`\\ \\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by extruding the given "
-"ConstrainedSketch object by the given depth, creating a shell protrusion."
+msgid "This method creates an additional Feature object by extruding the given ConstrainedSketch object by the given depth, creating a shell protrusion."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`ShellLoft <abaqus.Part.PartBase.PartBase.ShellLoft>`\\ "
-"\\(loftsections\\[\\, startCondition\\, ...\\]\\)"
+msgid ":py:obj:`ShellLoft <abaqus.Part.PartBase.PartBase.ShellLoft>`\\ \\(loftsections\\[\\, startCondition\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by lofting between the "
-"given sections and adding shell faces to the part."
+msgid "This method creates an additional Feature object by lofting between the given sections and adding shell faces to the part."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`ShellRevolve <abaqus.Part.PartBase.PartBase.ShellRevolve>`\\ "
-"\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+msgid ":py:obj:`ShellRevolve <abaqus.Part.PartBase.PartBase.ShellRevolve>`\\ \\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by revolving the given "
-"ConstrainedSketch object by the given angle, creating a shell protrusion."
+msgid "This method creates an additional Feature object by revolving the given ConstrainedSketch object by the given angle, creating a shell protrusion."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`ShellSweep <abaqus.Part.PartBase.PartBase.ShellSweep>`\\ "
-"\\(path\\, profile\\[\\, pathPlane\\, ...\\]\\)"
+msgid ":py:obj:`ShellSweep <abaqus.Part.PartBase.PartBase.ShellSweep>`\\ \\(path\\, profile\\[\\, pathPlane\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by sweeping the given "
-"ConstrainedSketch object or a sequence of Edge objects along a path which"
-" may be a ConstrainedSketch or a sequence of Edge objects, creating a "
-"shell swept protrusion."
+msgid "This method creates an additional Feature object by sweeping the given ConstrainedSketch object or a sequence of Edge objects along a path which may be a ConstrainedSketch or a sequence of Edge objects, creating a shell swept protrusion."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`SolidExtrude <abaqus.Part.PartBase.PartBase.SolidExtrude>`\\ "
-"\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+msgid ":py:obj:`SolidExtrude <abaqus.Part.PartBase.PartBase.SolidExtrude>`\\ \\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by extruding the given "
-"ConstrainedSketch object by the given depth, creating a solid protrusion."
+msgid "This method creates an additional Feature object by extruding the given ConstrainedSketch object by the given depth, creating a solid protrusion."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`SolidLoft <abaqus.Part.PartBase.PartBase.SolidLoft>`\\ "
-"\\(loftsections\\[\\, startCondition\\, ...\\]\\)"
+msgid ":py:obj:`SolidLoft <abaqus.Part.PartBase.PartBase.SolidLoft>`\\ \\(loftsections\\[\\, startCondition\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by lofting between the "
-"given sections and adding material to the part."
+msgid "This method creates an additional Feature object by lofting between the given sections and adding material to the part."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`SolidRevolve <abaqus.Part.PartBase.PartBase.SolidRevolve>`\\ "
-"\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+msgid ":py:obj:`SolidRevolve <abaqus.Part.PartBase.PartBase.SolidRevolve>`\\ \\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by revolving the given "
-"ConstrainedSketch object by the given angle, creating a solid protrusion."
+msgid "This method creates an additional Feature object by revolving the given ConstrainedSketch object by the given angle, creating a solid protrusion."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`SolidSweep <abaqus.Part.PartBase.PartBase.SolidSweep>`\\ "
-"\\(path\\, profile\\[\\, pathPlane\\, ...\\]\\)"
+msgid ":py:obj:`SolidSweep <abaqus.Part.PartBase.PartBase.SolidSweep>`\\ \\(path\\, profile\\[\\, pathPlane\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by sweeping the given "
-"ConstrainedSketch object or a Face object along a path which may be a "
-"ConstrainedSketch or a sequence of Edge objects, creating a solid swept "
-"protrusion."
+msgid "This method creates an additional Feature object by sweeping the given ConstrainedSketch object or a Face object along a path which may be a ConstrainedSketch or a sequence of Edge objects, creating a solid swept protrusion."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`Stitch <abaqus.Part.PartBase.PartBase.Stitch>`\\ "
-"\\(\\[edgeList\\, stitchTolerance\\]\\)"
+msgid ":py:obj:`Stitch <abaqus.Part.PartBase.PartBase.Stitch>`\\ \\(\\[edgeList\\, stitchTolerance\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method attempts to create a valid part by binding together free and "
-"imprecise edges of all the faces of a part."
+msgid "This method attempts to create a valid part by binding together free and imprecise edges of all the faces of a part."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`Wire <abaqus.Part.PartBase.PartBase.Wire>`\\ \\(sketchPlane\\, "
-"sketchPlaneSide\\, ...\\[\\, ...\\]\\)"
+msgid ":py:obj:`Wire <abaqus.Part.PartBase.PartBase.Wire>`\\ \\(sketchPlane\\, sketchPlaneSide\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by creating a planar "
-"wire from the given ConstrainedSketch object."
+msgid "This method creates an additional Feature object by creating a planar wire from the given ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`WireSpline <abaqus.Part.PartBase.PartBase.WireSpline>`\\ "
-"\\(points\\[\\, mergeType\\, ...\\]\\)"
+msgid ":py:obj:`WireSpline <abaqus.Part.PartBase.PartBase.WireSpline>`\\ \\(points\\[\\, mergeType\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by creating a spline "
-"wire that passes through a sequence of given points."
-msgstr ""
-
-#: ../../None:59:<autosummary>:1 ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`WirePolyLine <abaqus.Part.PartBase.PartBase.WirePolyLine>`\\ "
-"\\(points\\[\\, mergeType\\, meshable\\]\\)"
-msgstr ""
-
-#: ../../None:59:<autosummary>:1 ../../None:65:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by creating a polyline "
-"wire that passes through a sequence of given points."
+msgid "This method creates an additional Feature object by creating a spline wire that passes through a sequence of given points."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-":py:obj:`WireFromEdge <abaqus.Part.PartBase.PartBase.WireFromEdge>`\\ "
-"\\(edgeList\\)"
+#: ../../None:65:<autosummary>:1
+msgid ":py:obj:`WirePolyLine <abaqus.Part.PartBase.PartBase.WirePolyLine>`\\ \\(points\\[\\, mergeType\\, meshable\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by creating a Wire by "
-"selecting one or more Edge objects of a Solid or Shell part."
+#: ../../None:65:<autosummary>:1
+msgid "This method creates an additional Feature object by creating a polyline wire that passes through a sequence of given points."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ":py:obj:`WireFromEdge <abaqus.Part.PartBase.PartBase.WireFromEdge>`\\ \\(edgeList\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid "This method creates an additional Feature object by creating a Wire by selecting one or more Edge objects of a Solid or Shell part."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`AttachmentPoints "
-"<abaqus.Part.PartBase.PartBase.AttachmentPoints>`\\ \\(name\\, "
-"points\\[\\, ...\\]\\)"
+msgid ":py:obj:`AttachmentPoints <abaqus.Part.PartBase.PartBase.AttachmentPoints>`\\ \\(name\\, points\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2407,373 +1785,231 @@ msgid "This method creates an attachment points Feature."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`AttachmentPointsAlongDirection "
-"<abaqus.Part.PartBase.PartBase.AttachmentPointsAlongDirection>`\\ "
-"\\(name\\, ...\\[\\, ...\\]\\)"
+msgid ":py:obj:`AttachmentPointsAlongDirection <abaqus.Part.PartBase.PartBase.AttachmentPointsAlongDirection>`\\ \\(name\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object by creating attachment points along "
-"a direction or between two points."
+msgid "This method creates a Feature object by creating attachment points along a direction or between two points."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`AttachmentPointsOffsetFromEdges "
-"<abaqus.Part.PartBase.PartBase.AttachmentPointsOffsetFromEdges>`\\ "
-"\\(name\\, edges\\)"
+msgid ":py:obj:`AttachmentPointsOffsetFromEdges <abaqus.Part.PartBase.PartBase.AttachmentPointsOffsetFromEdges>`\\ \\(name\\, edges\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object by creating attachment points along "
-"or offset from one or more connected edges."
+msgid "This method creates a Feature object by creating attachment points along or offset from one or more connected edges."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByCylFace "
-"<abaqus.Part.PartBase.PartBase.DatumAxisByCylFace>`\\ \\(face\\)"
+msgid ":py:obj:`DatumAxisByCylFace <abaqus.Part.PartBase.PartBase.DatumAxisByCylFace>`\\ \\(face\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumAxis object along the "
-"axis of a cylinder or cone."
+msgid "This method creates a Feature object and a DatumAxis object along the axis of a cylinder or cone."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByNormalToPlane "
-"<abaqus.Part.PartBase.PartBase.DatumAxisByNormalToPlane>`\\ \\(plane\\, "
-"point\\)"
+msgid ":py:obj:`DatumAxisByNormalToPlane <abaqus.Part.PartBase.PartBase.DatumAxisByNormalToPlane>`\\ \\(plane\\, point\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumAxis object normal to the"
-" specified plane and passing through the specified point."
+msgid "This method creates a Feature object and a DatumAxis object normal to the specified plane and passing through the specified point."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByParToEdge "
-"<abaqus.Part.PartBase.PartBase.DatumAxisByParToEdge>`\\ \\(edge\\, "
-"point\\)"
+msgid ":py:obj:`DatumAxisByParToEdge <abaqus.Part.PartBase.PartBase.DatumAxisByParToEdge>`\\ \\(edge\\, point\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumAxis object parallel to "
-"the specified edge and passing through the specified point."
+msgid "This method creates a Feature object and a DatumAxis object parallel to the specified edge and passing through the specified point."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByPrincipalAxis "
-"<abaqus.Part.PartBase.PartBase.DatumAxisByPrincipalAxis>`\\ "
-"\\(principalAxis\\)"
+msgid ":py:obj:`DatumAxisByPrincipalAxis <abaqus.Part.PartBase.PartBase.DatumAxisByPrincipalAxis>`\\ \\(principalAxis\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumAxis object along one of "
-"the three principal axes."
+msgid "This method creates a Feature object and a DatumAxis object along one of the three principal axes."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByRotation "
-"<abaqus.Part.PartBase.PartBase.DatumAxisByRotation>`\\ \\(\\*args\\, "
-"\\*\\*kwargs\\)"
+msgid ":py:obj:`DatumAxisByRotation <abaqus.Part.PartBase.PartBase.DatumAxisByRotation>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByThreePoint "
-"<abaqus.Part.PartBase.PartBase.DatumAxisByThreePoint>`\\ \\(point1\\, "
-"point2\\, point3\\)"
+msgid ":py:obj:`DatumAxisByThreePoint <abaqus.Part.PartBase.PartBase.DatumAxisByThreePoint>`\\ \\(point1\\, point2\\, point3\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumAxis object normal to the"
-" circle described by three points and through its center."
+msgid "This method creates a Feature object and a DatumAxis object normal to the circle described by three points and through its center."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByThruEdge "
-"<abaqus.Part.PartBase.PartBase.DatumAxisByThruEdge>`\\ \\(edge\\)"
+msgid ":py:obj:`DatumAxisByThruEdge <abaqus.Part.PartBase.PartBase.DatumAxisByThruEdge>`\\ \\(edge\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumAxis object along the "
-"specified edge."
+msgid "This method creates a Feature object and a DatumAxis object along the specified edge."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByTwoPlane "
-"<abaqus.Part.PartBase.PartBase.DatumAxisByTwoPlane>`\\ \\(plane1\\, "
-"plane2\\)"
+msgid ":py:obj:`DatumAxisByTwoPlane <abaqus.Part.PartBase.PartBase.DatumAxisByTwoPlane>`\\ \\(plane1\\, plane2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumAxis object at the "
-"intersection of two planes."
+msgid "This method creates a Feature object and a DatumAxis object at the intersection of two planes."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByTwoPoint "
-"<abaqus.Part.PartBase.PartBase.DatumAxisByTwoPoint>`\\ \\(point1\\, "
-"point2\\)"
+msgid ":py:obj:`DatumAxisByTwoPoint <abaqus.Part.PartBase.PartBase.DatumAxisByTwoPoint>`\\ \\(point1\\, point2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumAxis object along the "
-"line joining two points."
+msgid "This method creates a Feature object and a DatumAxis object along the line joining two points."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumCsysByDefault "
-"<abaqus.Part.PartBase.PartBase.DatumCsysByDefault>`\\ "
-"\\(coordSysType\\[\\, name\\]\\)"
+msgid ":py:obj:`DatumCsysByDefault <abaqus.Part.PartBase.PartBase.DatumCsysByDefault>`\\ \\(coordSysType\\[\\, name\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumCsys object from the "
-"specified default coordinate system at the origin."
+msgid "This method creates a Feature object and a DatumCsys object from the specified default coordinate system at the origin."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumCsysByOffset "
-"<abaqus.Part.PartBase.PartBase.DatumCsysByOffset>`\\ \\(coordSysType\\, "
-"...\\[\\, name\\]\\)"
+msgid ":py:obj:`DatumCsysByOffset <abaqus.Part.PartBase.PartBase.DatumCsysByOffset>`\\ \\(coordSysType\\, ...\\[\\, name\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumCsys object by offsetting"
-" the origin of an existing datum coordinate system to a specified point."
+msgid "This method creates a Feature object and a DatumCsys object by offsetting the origin of an existing datum coordinate system to a specified point."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumCsysByThreePoints "
-"<abaqus.Part.PartBase.PartBase.DatumCsysByThreePoints>`\\ "
-"\\(coordSysType\\, origin\\, ...\\)"
+msgid ":py:obj:`DatumCsysByThreePoints <abaqus.Part.PartBase.PartBase.DatumCsysByThreePoints>`\\ \\(coordSysType\\, origin\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumCsys object from three "
-"points."
+msgid "This method creates a Feature object and a DatumCsys object from three points."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumCsysByTwoLines "
-"<abaqus.Part.PartBase.PartBase.DatumCsysByTwoLines>`\\ \\(coordSysType\\,"
-" line1\\, line2\\)"
+msgid ":py:obj:`DatumCsysByTwoLines <abaqus.Part.PartBase.PartBase.DatumCsysByTwoLines>`\\ \\(coordSysType\\, line1\\, line2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumCsys object from two "
-"orthogonal lines."
+msgid "This method creates a Feature object and a DatumCsys object from two orthogonal lines."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByPrincipalPlane "
-"<abaqus.Part.PartBase.PartBase.DatumPlaneByPrincipalPlane>`\\ "
-"\\(principalPlane\\, ...\\)"
+msgid ":py:obj:`DatumPlaneByPrincipalPlane <abaqus.Part.PartBase.PartBase.DatumPlaneByPrincipalPlane>`\\ \\(principalPlane\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPlane object through the "
-"origin along one of the three principal planes."
+msgid "This method creates a Feature object and a DatumPlane object through the origin along one of the three principal planes."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByOffset "
-"<abaqus.Part.PartBase.PartBase.DatumPlaneByOffset>`\\ \\(\\*args\\, "
-"\\*\\*kwargs\\)"
+msgid ":py:obj:`DatumPlaneByOffset <abaqus.Part.PartBase.PartBase.DatumPlaneByOffset>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByRotation "
-"<abaqus.Part.PartBase.PartBase.DatumPlaneByRotation>`\\ \\(plane\\, "
-"axis\\, angle\\)"
+msgid ":py:obj:`DatumPlaneByRotation <abaqus.Part.PartBase.PartBase.DatumPlaneByRotation>`\\ \\(plane\\, axis\\, angle\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPlane object by rotating "
-"a plane about the specified axis through the specified angle."
+msgid "This method creates a Feature object and a DatumPlane object by rotating a plane about the specified axis through the specified angle."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByThreePoints "
-"<abaqus.Part.PartBase.PartBase.DatumPlaneByThreePoints>`\\ \\(point1\\, "
-"point2\\, point3\\)"
+msgid ":py:obj:`DatumPlaneByThreePoints <abaqus.Part.PartBase.PartBase.DatumPlaneByThreePoints>`\\ \\(point1\\, point2\\, point3\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPlane object defined by "
-"passing through three points."
+msgid "This method creates a Feature object and a DatumPlane object defined by passing through three points."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByLinePoint "
-"<abaqus.Part.PartBase.PartBase.DatumPlaneByLinePoint>`\\ \\(line\\, "
-"point\\)"
+msgid ":py:obj:`DatumPlaneByLinePoint <abaqus.Part.PartBase.PartBase.DatumPlaneByLinePoint>`\\ \\(line\\, point\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPlane object that pass "
-"through the specified line and through the specified point that does not "
-"lie on the line."
+msgid "This method creates a Feature object and a DatumPlane object that pass through the specified line and through the specified point that does not lie on the line."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByPointNormal "
-"<abaqus.Part.PartBase.PartBase.DatumPlaneByPointNormal>`\\ \\(point\\, "
-"normal\\)"
+msgid ":py:obj:`DatumPlaneByPointNormal <abaqus.Part.PartBase.PartBase.DatumPlaneByPointNormal>`\\ \\(point\\, normal\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPlane object normal to "
-"the specified line and running through the specified point."
+msgid "This method creates a Feature object and a DatumPlane object normal to the specified line and running through the specified point."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByTwoPoint "
-"<abaqus.Part.PartBase.PartBase.DatumPlaneByTwoPoint>`\\ \\(point1\\, "
-"point2\\)"
+msgid ":py:obj:`DatumPlaneByTwoPoint <abaqus.Part.PartBase.PartBase.DatumPlaneByTwoPoint>`\\ \\(point1\\, point2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPlane object midway "
-"between two points and normal to the line connecting the points."
+msgid "This method creates a Feature object and a DatumPlane object midway between two points and normal to the line connecting the points."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByCoordinate "
-"<abaqus.Part.PartBase.PartBase.DatumPointByCoordinate>`\\ \\(coords\\)"
+msgid ":py:obj:`DatumPointByCoordinate <abaqus.Part.PartBase.PartBase.DatumPointByCoordinate>`\\ \\(coords\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPoint object at the point"
-" defined by the specified coordinates."
+msgid "This method creates a Feature object and a DatumPoint object at the point defined by the specified coordinates."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByOffset "
-"<abaqus.Part.PartBase.PartBase.DatumPointByOffset>`\\ \\(point\\, "
-"vector\\)"
+msgid ":py:obj:`DatumPointByOffset <abaqus.Part.PartBase.PartBase.DatumPointByOffset>`\\ \\(point\\, vector\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPoint object offset from "
-"an existing point by a vector."
+msgid "This method creates a Feature object and a DatumPoint object offset from an existing point by a vector."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByMidPoint "
-"<abaqus.Part.PartBase.PartBase.DatumPointByMidPoint>`\\ \\(point1\\, "
-"point2\\)"
+msgid ":py:obj:`DatumPointByMidPoint <abaqus.Part.PartBase.PartBase.DatumPointByMidPoint>`\\ \\(point1\\, point2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPoint object midway "
-"between two points."
+msgid "This method creates a Feature object and a DatumPoint object midway between two points."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByOnFace "
-"<abaqus.Part.PartBase.PartBase.DatumPointByOnFace>`\\ \\(face\\, edge1\\,"
-" offset1\\, ...\\)"
+msgid ":py:obj:`DatumPointByOnFace <abaqus.Part.PartBase.PartBase.DatumPointByOnFace>`\\ \\(face\\, edge1\\, offset1\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPoint object on the "
-"specified face, offset from two edges."
+msgid "This method creates a Feature object and a DatumPoint object on the specified face, offset from two edges."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByEdgeParam "
-"<abaqus.Part.PartBase.PartBase.DatumPointByEdgeParam>`\\ \\(edge\\, "
-"parameter\\)"
+msgid ":py:obj:`DatumPointByEdgeParam <abaqus.Part.PartBase.PartBase.DatumPointByEdgeParam>`\\ \\(edge\\, parameter\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPoint object along an "
-"edge at a selected distance from one end of the edge."
+msgid "This method creates a Feature object and a DatumPoint object along an edge at a selected distance from one end of the edge."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByProjOnEdge "
-"<abaqus.Part.PartBase.PartBase.DatumPointByProjOnEdge>`\\ \\(point\\, "
-"edge\\)"
+msgid ":py:obj:`DatumPointByProjOnEdge <abaqus.Part.PartBase.PartBase.DatumPointByProjOnEdge>`\\ \\(point\\, edge\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPoint object along an "
-"edge by projecting an existing point along the normal to the edge."
+msgid "This method creates a Feature object and a DatumPoint object along an edge by projecting an existing point along the normal to the edge."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByProjOnFace "
-"<abaqus.Part.PartBase.PartBase.DatumPointByProjOnFace>`\\ \\(point\\, "
-"face\\)"
+msgid ":py:obj:`DatumPointByProjOnFace <abaqus.Part.PartBase.PartBase.DatumPointByProjOnFace>`\\ \\(point\\, face\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPoint object on a "
-"specified face by projecting an existing point onto the face."
+msgid "This method creates a Feature object and a DatumPoint object on a specified face by projecting an existing point onto the face."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`MakeSketchTransform "
-"<abaqus.Part.PartBase.PartBase.MakeSketchTransform>`\\ "
-"\\(sketchPlane\\[\\, origin\\, ...\\]\\)"
+msgid ":py:obj:`MakeSketchTransform <abaqus.Part.PartBase.PartBase.MakeSketchTransform>`\\ \\(sketchPlane\\[\\, origin\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2781,10 +2017,7 @@ msgid "This method creates a Transform object."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByDatumPlane "
-"<abaqus.Part.PartBase.PartBase.PartitionCellByDatumPlane>`\\ \\(cells\\, "
-"datumPlane\\)"
+msgid ":py:obj:`PartitionCellByDatumPlane <abaqus.Part.PartBase.PartBase.PartitionCellByDatumPlane>`\\ \\(cells\\, datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2792,114 +2025,71 @@ msgid "This method partitions one or more cells using the given datum plane."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByExtendFace "
-"<abaqus.Part.PartBase.PartBase.PartitionCellByExtendFace>`\\ \\(cells\\, "
-"extendFace\\)"
+msgid ":py:obj:`PartitionCellByExtendFace <abaqus.Part.PartBase.PartBase.PartitionCellByExtendFace>`\\ \\(cells\\, extendFace\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more cells by extending the underlying "
-"geometry of a given face to partition the target cells."
+msgid "This method partitions one or more cells by extending the underlying geometry of a given face to partition the target cells."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByExtrudeEdge "
-"<abaqus.Part.PartBase.PartBase.PartitionCellByExtrudeEdge>`\\ \\(cells\\,"
-" edges\\, ...\\)"
+msgid ":py:obj:`PartitionCellByExtrudeEdge <abaqus.Part.PartBase.PartBase.PartitionCellByExtrudeEdge>`\\ \\(cells\\, edges\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more cells by extruding selected edges in "
-"the given direction."
+msgid "This method partitions one or more cells by extruding selected edges in the given direction."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByPatchNCorners "
-"<abaqus.Part.PartBase.PartBase.PartitionCellByPatchNCorners>`\\ "
-"\\(cell\\, cornerPoints\\)"
+msgid ":py:obj:`PartitionCellByPatchNCorners <abaqus.Part.PartBase.PartBase.PartitionCellByPatchNCorners>`\\ \\(cell\\, cornerPoints\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions a cell using an N-sided cutting patch defined by "
-"the given corner points."
+msgid "This method partitions a cell using an N-sided cutting patch defined by the given corner points."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByPatchNEdges "
-"<abaqus.Part.PartBase.PartBase.PartitionCellByPatchNEdges>`\\ \\(cell\\, "
-"edges\\)"
+msgid ":py:obj:`PartitionCellByPatchNEdges <abaqus.Part.PartBase.PartBase.PartitionCellByPatchNEdges>`\\ \\(cell\\, edges\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions a cell using an N-sided cutting patch defined by "
-"the given edges."
+msgid "This method partitions a cell using an N-sided cutting patch defined by the given edges."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByPlaneNormalToEdge "
-"<abaqus.Part.PartBase.PartBase.PartitionCellByPlaneNormalToEdge>`\\ "
-"\\(cells\\, ...\\)"
+msgid ":py:obj:`PartitionCellByPlaneNormalToEdge <abaqus.Part.PartBase.PartBase.PartitionCellByPlaneNormalToEdge>`\\ \\(cells\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more cells using a plane normal to an edge "
-"at the given edge point."
+msgid "This method partitions one or more cells using a plane normal to an edge at the given edge point."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByPlanePointNormal "
-"<abaqus.Part.PartBase.PartBase.PartitionCellByPlanePointNormal>`\\ "
-"\\(cells\\, ...\\)"
+msgid ":py:obj:`PartitionCellByPlanePointNormal <abaqus.Part.PartBase.PartBase.PartitionCellByPlanePointNormal>`\\ \\(cells\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more cells using a plane defined by a point"
-" and a normal direction."
+msgid "This method partitions one or more cells using a plane defined by a point and a normal direction."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByPlaneThreePoints "
-"<abaqus.Part.PartBase.PartBase.PartitionCellByPlaneThreePoints>`\\ "
-"\\(cells\\, ...\\)"
+msgid ":py:obj:`PartitionCellByPlaneThreePoints <abaqus.Part.PartBase.PartBase.PartitionCellByPlaneThreePoints>`\\ \\(cells\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more cells using a plane defined by three "
-"points."
+msgid "This method partitions one or more cells using a plane defined by three points."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellBySweepEdge "
-"<abaqus.Part.PartBase.PartBase.PartitionCellBySweepEdge>`\\ \\(cells\\, "
-"edges\\, sweepPath\\)"
+msgid ":py:obj:`PartitionCellBySweepEdge <abaqus.Part.PartBase.PartBase.PartitionCellBySweepEdge>`\\ \\(cells\\, edges\\, sweepPath\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more cells by sweeping selected edges along"
-" the given sweep path."
+msgid "This method partitions one or more cells by sweeping selected edges along the given sweep path."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionEdgeByDatumPlane "
-"<abaqus.Part.PartBase.PartBase.PartitionEdgeByDatumPlane>`\\ \\(edges\\, "
-"datumPlane\\)"
+msgid ":py:obj:`PartitionEdgeByDatumPlane <abaqus.Part.PartBase.PartBase.PartitionEdgeByDatumPlane>`\\ \\(edges\\, datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2907,23 +2097,15 @@ msgid "This method partitions an edge where it intersects with a datum plane."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionEdgeByParam "
-"<abaqus.Part.PartBase.PartBase.PartitionEdgeByParam>`\\ \\(edges\\, "
-"parameter\\)"
+msgid ":py:obj:`PartitionEdgeByParam <abaqus.Part.PartBase.PartBase.PartitionEdgeByParam>`\\ \\(edges\\, parameter\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more edges at the given normalized edge "
-"parameter."
+msgid "This method partitions one or more edges at the given normalized edge parameter."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionEdgeByPoint "
-"<abaqus.Part.PartBase.PartBase.PartitionEdgeByPoint>`\\ \\(edge\\, "
-"point\\)"
+msgid ":py:obj:`PartitionEdgeByPoint <abaqus.Part.PartBase.PartBase.PartitionEdgeByPoint>`\\ \\(edge\\, point\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2931,49 +2113,31 @@ msgid "This method partitions an edge at the given point."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByAuto "
-"<abaqus.Part.PartBase.PartBase.PartitionFaceByAuto>`\\ \\(face\\)"
+msgid ":py:obj:`PartitionFaceByAuto <abaqus.Part.PartBase.PartBase.PartitionFaceByAuto>`\\ \\(face\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method automatically partitions a target face into simple regions "
-"that can be meshed using a structured meshing technique."
+msgid "This method automatically partitions a target face into simple regions that can be meshed using a structured meshing technique."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByCurvedPathEdgeParams "
-"<abaqus.Part.PartBase.PartBase.PartitionFaceByCurvedPathEdgeParams>`\\ "
-"\\(face\\, ...\\)"
+msgid ":py:obj:`PartitionFaceByCurvedPathEdgeParams <abaqus.Part.PartBase.PartBase.PartitionFaceByCurvedPathEdgeParams>`\\ \\(face\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions a face normal to two edges, using a curved path "
-"between the two given edge points defined by the normalized edge "
-"parameters."
+msgid "This method partitions a face normal to two edges, using a curved path between the two given edge points defined by the normalized edge parameters."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByCurvedPathEdgePoints "
-"<abaqus.Part.PartBase.PartBase.PartitionFaceByCurvedPathEdgePoints>`\\ "
-"\\(face\\, ...\\)"
+msgid ":py:obj:`PartitionFaceByCurvedPathEdgePoints <abaqus.Part.PartBase.PartBase.PartitionFaceByCurvedPathEdgePoints>`\\ \\(face\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions a face normal to two edges, using a curved path "
-"between the two given edge points."
+msgid "This method partitions a face normal to two edges, using a curved path between the two given edge points."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByDatumPlane "
-"<abaqus.Part.PartBase.PartBase.PartitionFaceByDatumPlane>`\\ \\(faces\\, "
-"datumPlane\\)"
+msgid ":py:obj:`PartitionFaceByDatumPlane <abaqus.Part.PartBase.PartBase.PartitionFaceByDatumPlane>`\\ \\(faces\\, datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2981,62 +2145,39 @@ msgid "This method partitions one or more faces using the given datum plane."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByExtendFace "
-"<abaqus.Part.PartBase.PartBase.PartitionFaceByExtendFace>`\\ \\(faces\\, "
-"extendFace\\)"
+msgid ":py:obj:`PartitionFaceByExtendFace <abaqus.Part.PartBase.PartBase.PartitionFaceByExtendFace>`\\ \\(faces\\, extendFace\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more faces by extending the underlying "
-"geometry of another given face to partition the target faces."
+msgid "This method partitions one or more faces by extending the underlying geometry of another given face to partition the target faces."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByIntersectFace "
-"<abaqus.Part.PartBase.PartBase.PartitionFaceByIntersectFace>`\\ "
-"\\(faces\\, cuttingFaces\\)"
+msgid ":py:obj:`PartitionFaceByIntersectFace <abaqus.Part.PartBase.PartBase.PartitionFaceByIntersectFace>`\\ \\(faces\\, cuttingFaces\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more faces using the given cutting faces to"
-" partition the target faces."
+msgid "This method partitions one or more faces using the given cutting faces to partition the target faces."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByProjectingEdges "
-"<abaqus.Part.PartBase.PartBase.PartitionFaceByProjectingEdges>`\\ "
-"\\(faces\\, edges\\)"
+msgid ":py:obj:`PartitionFaceByProjectingEdges <abaqus.Part.PartBase.PartBase.PartitionFaceByProjectingEdges>`\\ \\(faces\\, edges\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more faces by projecting the given edges on"
-" the target faces."
+msgid "This method partitions one or more faces by projecting the given edges on the target faces."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByShortestPath "
-"<abaqus.Part.PartBase.PartBase.PartitionFaceByShortestPath>`\\ "
-"\\(faces\\, point1\\, ...\\)"
+msgid ":py:obj:`PartitionFaceByShortestPath <abaqus.Part.PartBase.PartBase.PartitionFaceByShortestPath>`\\ \\(faces\\, point1\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more faces using a minimum distance path "
-"between the two given points."
+msgid "This method partitions one or more faces using a minimum distance path between the two given points."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceBySketch "
-"<abaqus.Part.PartBase.PartBase.PartitionFaceBySketch>`\\ \\(faces\\, "
-"sketch\\[\\, ...\\]\\)"
+msgid ":py:obj:`PartitionFaceBySketch <abaqus.Part.PartBase.PartBase.PartitionFaceBySketch>`\\ \\(faces\\, sketch\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -3044,62 +2185,39 @@ msgid "This method partitions one or more planar faces by sketching on them."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceBySketchDistance "
-"<abaqus.Part.PartBase.PartBase.PartitionFaceBySketchDistance>`\\ "
-"\\(faces\\, ...\\[\\, ...\\]\\)"
+msgid ":py:obj:`PartitionFaceBySketchDistance <abaqus.Part.PartBase.PartBase.PartitionFaceBySketchDistance>`\\ \\(faces\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more faces by sketching on a sketch plane "
-"and then projecting the sketch toward the target faces through the given "
-"distance."
+msgid "This method partitions one or more faces by sketching on a sketch plane and then projecting the sketch toward the target faces through the given distance."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceBySketchRefPoint "
-"<abaqus.Part.PartBase.PartBase.PartitionFaceBySketchRefPoint>`\\ "
-"\\(faces\\, ...\\[\\, ...\\]\\)"
+msgid ":py:obj:`PartitionFaceBySketchRefPoint <abaqus.Part.PartBase.PartBase.PartitionFaceBySketchRefPoint>`\\ \\(faces\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more faces by sketching on a sketch plane "
-"and then projecting the sketch toward the target faces through a distance"
-" governed by the reference point."
+msgid "This method partitions one or more faces by sketching on a sketch plane and then projecting the sketch toward the target faces through a distance governed by the reference point."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceBySketchThruAll "
-"<abaqus.Part.PartBase.PartBase.PartitionFaceBySketchThruAll>`\\ "
-"\\(faces\\, ...\\[\\, ...\\]\\)"
+msgid ":py:obj:`PartitionFaceBySketchThruAll <abaqus.Part.PartBase.PartBase.PartitionFaceBySketchThruAll>`\\ \\(faces\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more faces by sketching on a sketch plane "
-"and then projecting toward the target faces through an infinite distance."
+msgid "This method partitions one or more faces by sketching on a sketch plane and then projecting toward the target faces through an infinite distance."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`ReferencePoint <abaqus.Part.PartBase.PartBase.ReferencePoint>`\\"
-" \\(point\\[\\, instanceName\\]\\)"
+msgid ":py:obj:`ReferencePoint <abaqus.Part.PartBase.PartBase.ReferencePoint>`\\ \\(point\\[\\, instanceName\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a ReferencePoint object at the "
-"specified location."
+msgid "This method creates a Feature object and a ReferencePoint object at the specified location."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`RemoveWireEdges "
-"<abaqus.Part.PartBase.PartBase.RemoveWireEdges>`\\ \\(wireEdgeList\\)"
+msgid ":py:obj:`RemoveWireEdges <abaqus.Part.PartBase.PartBase.RemoveWireEdges>`\\ \\(wireEdgeList\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -3107,9 +2225,7 @@ msgid "This method removes wire edges."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`isSuppressed <abaqus.Part.PartBase.PartBase.isSuppressed>`\\ "
-"\\(\\)"
+msgid ":py:obj:`isSuppressed <abaqus.Part.PartBase.PartBase.isSuppressed>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -3132,16 +2248,11 @@ msgstr ""
 msgid "This method suppresses features."
 msgstr ""
 
-#: ../../summary/mdb/model/part.rst
+#: ../../summary/mdb/model/part.rst:0
 msgid "members"
 msgstr ""
 
 #: ../../summary/mdb/model/part.rst:19
-msgid ""
-"PartFromBooleanCut, PartFromBooleanMerge, PartFromExtrude2DMesh, "
-"PartFromGeometryFile, PartFromInstanceMesh, PartFromMesh, "
-"PartFromMeshMirror, PartFromNodesAndElements, PartFromOdb, "
-"PartFromSection3DMeshByPlane, PartFromSubstructure, Part2DGeomFrom2DMesh,"
-" PartFromSubstructure"
+msgid "PartFromBooleanCut, PartFromBooleanMerge, PartFromExtrude2DMesh, PartFromGeometryFile, PartFromInstanceMesh, PartFromMesh, PartFromMeshMirror, PartFromNodesAndElements, PartFromOdb, PartFromSection3DMeshByPlane, PartFromSubstructure, Part2DGeomFrom2DMesh, PartFromSubstructure"
 msgstr ""
 
