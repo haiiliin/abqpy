@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../user/python/use-scripts/user-input.rst:3
+msgid "Prompting the user for input"
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:5
+msgid ""
+"You may want to request input from a user while an Abaqus Scripting "
+"Interface script is executing. There are many reasons for requesting "
+"input; for example, to specify design parameters, to enable a macro to "
+"take action based on the input received, or to force parts of the script "
+"to be repeated. The Abaqus Scripting Interface provides three functions "
+"that request input from the user and return the data entered by the user:"
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:7
+msgid ""
+"The `getInput` function requests a single input from the user from a text"
+" field in a dialog box."
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:9
+msgid ""
+"The `getInputs` function requests multiple inputs from the user from text"
+" fields in a dialog box."
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:11
+msgid ""
+"The `getWarningReply` function requests a reply to a warning message from"
+" the user from a warning dialog box."
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:15
+msgid ""
+"Note: You cannot use a script that contains getInput, getInputs or "
+"getWarningReply if you are running the script from the command line and "
+"passing the script name to the command line options -start,-replay or "
+"-noGUI."
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:18
+msgid "Requesting a single input from the user"
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:20
+msgid ""
+"The `getInput` function displays a dialog box in the center of the main "
+"window, and the user enters the requested value in the text field in the "
+"dialog box. The value is returned to the executing script as a String "
+"after the user presses the **[Enter]** key or clicks **[OK]**. "
+"Optionally, you can specify a default value to be displayed in the text "
+"field. The `getInput` function does not provide any error checking; it is"
+" the script author's responsibility to verify the user input. For more "
+"information, see :func:`~abaqus.UtilityAndView.User.getInput`."
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:22
+msgid ""
+"The following examples illustrate the use of the `getInput` function. The"
+" first example shows a script that uses the `getInput` function to obtain"
+" a number from the user. The script then prints the square root of that "
+"number."
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:31
+msgid ""
+"The `float` function on the third line converts the string returned by "
+"`getInput` into a floating point number. The following figure shows the "
+"dialog box that appears when this script is executed:"
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:38
+msgid ""
+"The next example shows how to modify a macro recorded by the **Macro "
+"Manager** in Abaqus/CAE to use the getInput function. The following text "
+"shows a macro named `createViewport` that was recorded by Abaqus/CAE "
+"while the user created a viewport. Macros are stored in the file "
+"`abaqusMacros.py` in your local or home directory."
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:49
+msgid ""
+"The following shows how you can modify the macro to accept input from the"
+" user. Default values for the viewport width and height have been added "
+"to the input request."
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:62
+msgid ""
+"The `eval` function in the third line of the macro converts the string "
+"returned by the `getInput` function into two integers. When you supply "
+"the default values shown in this example to the `getInput` function, the "
+"prompt and the text field in the dialog box that appears are shown in the"
+" following figure. If the user clicks **[OK]** or presses **[Enter]**, "
+"the default values are accepted and returned to the `getInput` function. "
+"If the user clicks **[Cancel]**, None is returned."
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:70
+msgid "Requesting multiple inputs from the user"
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:72
+msgid ""
+"The `getInputs` function displays a dialog box in the center of the main "
+"window, and the user enters the requested values in text fields in the "
+"dialog box. The values are returned to the executing script as a sequence"
+" of Strings after the user clicks the **[OK]** button or presses "
+"**[Enter]**. Optionally, you can specify default values to be displayed "
+"in the text fields. For more information, see "
+":func:`~abaqus.UtilityAndView.User.getInputs`."
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:74
+msgid ""
+"The following examples illustrate the use of the `getInputs` function to "
+"obtain a sequence of numbers from the user:"
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:85
+msgid "The following figure shows the dialog box that these statements create:"
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:92
+msgid ""
+"The `fields` argument to the `getInputs` method is a sequence of "
+"sequences of Strings. The inner sequence is a pair of Strings that "
+"specifies the description of the text field and the default value of the "
+"field. If the text field does not have a default value, you must specify "
+"an empty string; for example,"
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:100
+msgid ""
+"The `label` argument to the `getInputs` method is an optional label that "
+"appears across the top of the dialog box. The dialogTitle argument is an "
+"optional string that appears in the title bar of the dialog box."
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:102
+msgid ""
+"If the user clicks **[Cancel]**, the `getInputs` method returns a "
+"sequence of `None` objects. You can check the first value in the sequence"
+" to determine if the user clicked **[Cancel]**; for example:"
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:112
+msgid "Requesting a warning reply from the user"
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:114
+msgid ""
+"The `getWarningReply` function displays a warning dialog box in the "
+"center of the main window, and the user clicks on one of the standard "
+"reply buttons in the dialog box. The clicked button value is returned to "
+"the executing script. For more information, see "
+":func:`~abaqus.UtilityAndView.User.getWarningReply`."
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:116
+msgid ""
+"The following example illustrates the use of the `getWarningReply` "
+"function:"
+msgstr ""
+
+#: ../../user/python/use-scripts/user-input.rst:128
+msgid ""
+"The following figure shows the dialog box that appears when this script "
+"is executed:"
+msgstr ""
+

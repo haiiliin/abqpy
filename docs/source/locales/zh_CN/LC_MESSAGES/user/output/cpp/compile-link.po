@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../user/output/cpp/compile-link.rst:3
+msgid "Compiling and linking your C++ source code"
+msgstr ""
+
+#: ../../user/output/cpp/compile-link.rst:5
+msgid ""
+"Sample postprocessing programs to perform commonly exercised tasks are "
+"presented in separate sections in this chapter. These and other C++ "
+"postprocessing programs must be compiled and linked using the make "
+"parameter when running the Abaqus execution procedure (see `Making user-"
+"defined executables and subroutines "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-makeproc.htm?contextscope=all>`_)."
+" To link properly, the programs cannot contain a C++ main routine. "
+"Instead, the programs must begin with a C++ function called ABQmain."
+msgstr ""
+
+#: ../../user/output/cpp/compile-link.rst:17
+msgid ""
+"The arguments passed into the program upon execution will be passed into "
+"`ABQmain` as though it were the standard C++ main function. The compile "
+"and link commands used by the **abaqus make** utility are determined by "
+"the settings of the **compile_cpp** and **link** parameters in the Abaqus"
+" environment file."
+msgstr ""
+

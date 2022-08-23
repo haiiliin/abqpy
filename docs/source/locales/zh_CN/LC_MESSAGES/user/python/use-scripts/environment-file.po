@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../user/python/use-scripts/environment-file.rst:3
+msgid "Using Abaqus Scripting Interface commands in your environment file"
+msgstr ""
+
+#: ../../user/python/use-scripts/environment-file.rst:5
+msgid ""
+"The Abaqus environment file is read by Abaqus/CAE when you start a "
+"session. The environment file can contain Abaqus Scripting Interface "
+"commands. The following is an example environment file:"
+msgstr ""
+
+#: ../../user/python/use-scripts/environment-file.rst:47
+msgid ""
+"The `addImportCallback` statement instructs Abaqus to call a function "
+"when the user first imports a module. In this example Abaqus calls the "
+"`setJobPreferences` function when the user first enters the Job module, "
+"and Abaqus calls the `setVisPreferences` function when the user first "
+"enters the Visualization module. The `setJobPreferences` function creates"
+" a queue on a remote host. The `setVisPreferences` function sets default "
+"options for contour plots."
+msgstr ""
+
+#: ../../user/python/use-scripts/environment-file.rst:49
+msgid ""
+"The example environment file uses the `onCaeStartup()` function to "
+"control a set of Python statements that are executed when Abaqus/CAE "
+"first starts. The environment file can also contain the following:"
+msgstr ""
+
+#: ../../user/python/use-scripts/environment-file.rst:51
+msgid ""
+"The `onJobStartup()` function controls a set of statements that execute "
+"when an analysis job starts. For example,"
+msgstr ""
+
+#: ../../user/python/use-scripts/environment-file.rst:61
+msgid ""
+"The onJobCompletion() function controls a set of statements that execute "
+"when an analysis job completes. For example,"
+msgstr ""
+
+#: ../../user/python/use-scripts/environment-file.rst:77
+msgid ""
+"The following variables are available to the `onJobStartup()` and "
+"`onJobCompletion()` functions:"
+msgstr ""
+
+#: ../../user/python/use-scripts/environment-file.rst:79
+msgid "**id**"
+msgstr ""
+
+#: ../../user/python/use-scripts/environment-file.rst:81
+msgid ""
+"The job identifier that was specified as the value of the job option from"
+" the command line."
+msgstr ""
+
+#: ../../user/python/use-scripts/environment-file.rst:83
+msgid "**savedir**"
+msgstr ""
+
+#: ../../user/python/use-scripts/environment-file.rst:85
+msgid "The path to the directory from which the job was submitted."
+msgstr ""
+
+#: ../../user/python/use-scripts/environment-file.rst:87
+msgid "**scrdir**"
+msgstr ""
+
+#: ../../user/python/use-scripts/environment-file.rst:89
+msgid "The path to the scratch directory."
+msgstr ""
+
+#: ../../user/python/use-scripts/environment-file.rst:91
+msgid "**analysisType**"
+msgstr ""
+
+#: ../../user/python/use-scripts/environment-file.rst:93
+msgid ""
+"The type of analysis to be executed. Possible values are STANDARD and "
+"EXPLICIT."
+msgstr ""
+
+#: ../../user/python/use-scripts/environment-file.rst:95
+msgid ""
+"For a list of the variables that are available outside of the "
+"`onJobStartup()` and `onJobCompletion()` functions, see Job variables."
+msgstr ""
+
+#: ../../user/python/use-scripts/environment-file.rst:97
+msgid ""
+"For more information on the environment file, see `Environment File "
+"Settings "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-envfile.htm?contextscope=all>`_"
+" and `Customizing the Abaqus environment "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEILGRefMap/simailg-m"
+"-Environment-sb.htm?contextscope=all>`_."
+msgstr ""
+

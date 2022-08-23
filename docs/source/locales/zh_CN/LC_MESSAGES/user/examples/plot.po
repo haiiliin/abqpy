@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../user/examples/plot.rst:3
+msgid "Generating a customized plot"
+msgstr ""
+
+#: ../../user/examples/plot.rst:5
+msgid ""
+"The following section provides examples of Abaqus Scripting Interface "
+"scripts that open an output database and generate a customized plot. In "
+"effect, these scripts reproduce the functionality of the Visualization "
+"module in Abaqus/CAE."
+msgstr ""
+
+#: ../../user/examples/plot.rst:8
+msgid "Opening the tutorial output database"
+msgstr ""
+
+#: ../../user/examples/plot.rst:10
+msgid ""
+"Each of the following example scripts opens the output database used by "
+"the Visualization module tutorial in Getting Started with Abaqus/CAE. Use"
+" the following command to retrieve the output database that is read by "
+"the scripts:"
+msgstr ""
+
+#: ../../user/examples/plot.rst:17
+msgid "Opening an output database and displaying a contour plot"
+msgstr ""
+
+#: ../../user/examples/plot.rst:19
+msgid ""
+"The following example of a script containing Abaqus Scripting Interface "
+"commands uses the output database used by `Viewing the Output from Your "
+"Analysis "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEGSARefMap/simagsa-m"
+"-Caevismod-sb.htm?contextscope=all#simagsa-m-Caevismod-sb>`_."
+msgstr ""
+
+#: ../../user/examples/plot.rst:21 ../../user/examples/plot.rst:96
+msgid "Use the following command to retrieve the example script:"
+msgstr ""
+
+#: ../../user/examples/plot.rst:27 ../../user/examples/plot.rst:102
+msgid "The script does the following:"
+msgstr ""
+
+#: ../../user/examples/plot.rst:29
+msgid "Creates a viewport, and makes it the current viewport."
+msgstr ""
+
+#: ../../user/examples/plot.rst:30
+msgid "Opens an output database."
+msgstr ""
+
+#: ../../user/examples/plot.rst:31
+msgid "Displays a contour plot."
+msgstr ""
+
+#: ../../user/examples/plot.rst:32
+msgid "Displays the model in the first frame of the third step."
+msgstr ""
+
+#: ../../user/examples/plot.rst:33
+msgid "Sets the number of contour intervals and the contour limits."
+msgstr ""
+
+#: ../../user/examples/plot.rst:34
+msgid "Prints a color image of the viewport to a .png file."
+msgstr ""
+
+#: ../../user/examples/plot.rst:92
+msgid "Printing a contour plot at the end of each step"
+msgstr ""
+
+#: ../../user/examples/plot.rst:94
+msgid ""
+"The following example script demonstrates how to produce and print a "
+"contour plot at the last frame of every step within an output database "
+"file. The example sets the appropriate contour limits so that all plots "
+"can be viewed within a fixed range."
+msgstr ""
+
+#: ../../user/examples/plot.rst:104
+msgid "Defines the contour limits function."
+msgstr ""
+
+#: ../../user/examples/plot.rst:105
+msgid "Determines the final frame of every step within an output database file."
+msgstr ""
+
+#: ../../user/examples/plot.rst:106
+msgid "Produces a contour plot at the final frame of every step."
+msgstr ""
+
+#: ../../user/examples/plot.rst:107
+msgid "Prints the contour plot to a file."
+msgstr ""
+

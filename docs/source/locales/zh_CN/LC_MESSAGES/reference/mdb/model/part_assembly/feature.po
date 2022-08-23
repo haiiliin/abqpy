@@ -1,0 +1,3145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../reference/mdb/model/part_assembly/feature.rst:3
+#: ../../reference/mdb/model/part_assembly/feature.rst:12
+msgid "Feature"
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/feature.rst:5
+msgid ""
+"Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly "
+"operations. The commands that create Feature objects on only the Part "
+"object are described in Part commands. The commands that create Feature "
+"objects in only the rootAssembly object are described in Assembly "
+"commands. The commands that create Feature objects on both the Part and "
+"the rootAssembly objects are described here."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/feature.rst:9
+msgid "Object features"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature:2 of
+msgid ""
+"Abaqus/CAE is a feature-based modeling system, and features are stored in"
+" the Feature object. The user defines the parameters of the feature, and "
+"Abaqus/CAE modifies the model based on the value of the parameters. This "
+"evaluation of the parameters is called regeneration of the feature. "
+"Feature objects contain both the parameters and the resulting model "
+"modification."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature:9
+#: abaqus.Feature.FeatureOptions.FeatureOptions:6 of
+msgid "This object can be accessed by:"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature:21 of
+msgid ""
+"Check `Feature on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-featurepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature of
+msgid "Public Data Attributes:"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Feature.Feature.Feature.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1 ../../docstring
+#: abaqus.Feature.Feature.Feature.name:2 of
+msgid "A String specifying the repository key."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`id <abaqus.Feature.Feature.Feature.id>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1 ../../docstring
+#: abaqus.Feature.Feature.Feature.id:2 of
+msgid "An Int specifying the ID of the feature."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature abaqus.Feature.FeatureOptions.FeatureOptions
+#: of
+msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`AttachmentPoints "
+"<abaqus.Feature.Feature.Feature.AttachmentPoints>`\\ \\(name\\, "
+"points\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method creates an attachment points Feature."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`AttachmentPointsAlongDirection "
+"<abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection>`\\ "
+"\\(name\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object by creating attachment points along "
+"a direction or between two points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`AttachmentPointsOffsetFromEdges "
+"<abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges>`\\ "
+"\\(name\\, edges\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:2 of
+msgid ""
+"This method creates a Feature object by creating attachment points along "
+"or offset from one or more connected edges."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByCylFace "
+"<abaqus.Feature.Feature.Feature.DatumAxisByCylFace>`\\ \\(face\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumAxisByCylFace:2 of
+msgid ""
+"This method creates a Feature object and a DatumAxis object along the "
+"axis of a cylinder or cone."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByNormalToPlane "
+"<abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane>`\\ \\(plane\\, "
+"point\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane:2 of
+msgid ""
+"This method creates a Feature object and a DatumAxis object normal to the"
+" specified plane and passing through the specified point."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByParToEdge "
+"<abaqus.Feature.Feature.Feature.DatumAxisByParToEdge>`\\ \\(edge\\, "
+"point\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumAxisByParToEdge:2 of
+msgid ""
+"This method creates a Feature object and a DatumAxis object parallel to "
+"the specified edge and passing through the specified point."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByPrincipalAxis "
+"<abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis>`\\ "
+"\\(principalAxis\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis:2 of
+msgid ""
+"This method creates a Feature object and a DatumAxis object along one of "
+"the three principal axes."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByRotation "
+"<abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByThreePoint "
+"<abaqus.Feature.Feature.Feature.DatumAxisByThreePoint>`\\ \\(point1\\, "
+"point2\\, point3\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumAxisByThreePoint:2 of
+msgid ""
+"This method creates a Feature object and a DatumAxis object normal to the"
+" circle described by three points and through its center."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByThruEdge "
+"<abaqus.Feature.Feature.Feature.DatumAxisByThruEdge>`\\ \\(edge\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumAxisByThruEdge:2 of
+msgid ""
+"This method creates a Feature object and a DatumAxis object along the "
+"specified edge."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByTwoPlane "
+"<abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane>`\\ \\(plane1\\, "
+"plane2\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane:2 of
+msgid ""
+"This method creates a Feature object and a DatumAxis object at the "
+"intersection of two planes."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByTwoPoint "
+"<abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint>`\\ \\(point1\\, "
+"point2\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint:2 of
+msgid ""
+"This method creates a Feature object and a DatumAxis object along the "
+"line joining two points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumCsysByDefault "
+"<abaqus.Feature.Feature.Feature.DatumCsysByDefault>`\\ "
+"\\(coordSysType\\[\\, name\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumCsysByDefault:2 of
+msgid ""
+"This method creates a Feature object and a DatumCsys object from the "
+"specified default coordinate system at the origin."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumCsysByOffset "
+"<abaqus.Feature.Feature.Feature.DatumCsysByOffset>`\\ \\(coordSysType\\, "
+"...\\[\\, name\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset:2 of
+msgid ""
+"This method creates a Feature object and a DatumCsys object by offsetting"
+" the origin of an existing datum coordinate system to a specified point."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumCsysByThreePoints "
+"<abaqus.Feature.Feature.Feature.DatumCsysByThreePoints>`\\ "
+"\\(coordSysType\\, origin\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:2 of
+msgid ""
+"This method creates a Feature object and a DatumCsys object from three "
+"points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumCsysByTwoLines "
+"<abaqus.Feature.Feature.Feature.DatumCsysByTwoLines>`\\ "
+"\\(coordSysType\\, line1\\, line2\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumCsys object from two "
+"orthogonal lines."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPlaneByPrincipalPlane "
+"<abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane>`\\ "
+"\\(principalPlane\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane:2 of
+msgid ""
+"This method creates a Feature object and a DatumPlane object through the "
+"origin along one of the three principal planes."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPlaneByOffset "
+"<abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPlaneByRotation "
+"<abaqus.Feature.Feature.Feature.DatumPlaneByRotation>`\\ \\(plane\\, "
+"axis\\, angle\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumPlaneByRotation:2 of
+msgid ""
+"This method creates a Feature object and a DatumPlane object by rotating "
+"a plane about the specified axis through the specified angle."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPlaneByThreePoints "
+"<abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints>`\\ \\(point1\\, "
+"point2\\, point3\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints:2 of
+msgid ""
+"This method creates a Feature object and a DatumPlane object defined by "
+"passing through three points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPlaneByLinePoint "
+"<abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint>`\\ \\(line\\, "
+"point\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint:2 of
+msgid ""
+"This method creates a Feature object and a DatumPlane object that pass "
+"through the specified line and through the specified point that does not "
+"lie on the line."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPlaneByPointNormal "
+"<abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal>`\\ \\(point\\, "
+"normal\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal:2 of
+msgid ""
+"This method creates a Feature object and a DatumPlane object normal to "
+"the specified line and running through the specified point."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPlaneByTwoPoint "
+"<abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint>`\\ \\(point1\\, "
+"point2\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint:2 of
+msgid ""
+"This method creates a Feature object and a DatumPlane object midway "
+"between two points and normal to the line connecting the points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPointByCoordinate "
+"<abaqus.Feature.Feature.Feature.DatumPointByCoordinate>`\\ \\(coords\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumPointByCoordinate:2 of
+msgid ""
+"This method creates a Feature object and a DatumPoint object at the point"
+" defined by the specified coordinates."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPointByOffset "
+"<abaqus.Feature.Feature.Feature.DatumPointByOffset>`\\ \\(point\\, "
+"vector\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumPointByOffset:2 of
+msgid ""
+"This method creates a Feature object and a DatumPoint object offset from "
+"an existing point by a vector."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPointByMidPoint "
+"<abaqus.Feature.Feature.Feature.DatumPointByMidPoint>`\\ \\(point1\\, "
+"point2\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumPointByMidPoint:2 of
+msgid ""
+"This method creates a Feature object and a DatumPoint object midway "
+"between two points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPointByOnFace "
+"<abaqus.Feature.Feature.Feature.DatumPointByOnFace>`\\ \\(face\\, "
+"edge1\\, offset1\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace:2 of
+msgid ""
+"This method creates a Feature object and a DatumPoint object on the "
+"specified face, offset from two edges."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPointByEdgeParam "
+"<abaqus.Feature.Feature.Feature.DatumPointByEdgeParam>`\\ \\(edge\\, "
+"parameter\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:2 of
+msgid ""
+"This method creates a Feature object and a DatumPoint object along an "
+"edge at a selected distance from one end of the edge."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPointByProjOnEdge "
+"<abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge>`\\ \\(point\\, "
+"edge\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge:2 of
+msgid ""
+"This method creates a Feature object and a DatumPoint object along an "
+"edge by projecting an existing point along the normal to the edge."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPointByProjOnFace "
+"<abaqus.Feature.Feature.Feature.DatumPointByProjOnFace>`\\ \\(point\\, "
+"face\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:2 of
+msgid ""
+"This method creates a Feature object and a DatumPoint object on a "
+"specified face by projecting an existing point onto the face."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`MakeSketchTransform "
+"<abaqus.Feature.Feature.Feature.MakeSketchTransform>`\\ "
+"\\(sketchPlane\\[\\, origin\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method creates a Transform object."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellByDatumPlane "
+"<abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane>`\\ \\(cells\\,"
+" datumPlane\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane:2 of
+msgid "This method partitions one or more cells using the given datum plane."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellByExtendFace "
+"<abaqus.Feature.Feature.Feature.PartitionCellByExtendFace>`\\ \\(cells\\,"
+" extendFace\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtendFace:2 of
+msgid ""
+"This method partitions one or more cells by extending the underlying "
+"geometry of a given face to partition the target cells."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellByExtrudeEdge "
+"<abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge>`\\ "
+"\\(cells\\, edges\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:2 of
+msgid ""
+"This method partitions one or more cells by extruding selected edges in "
+"the given direction."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellByPatchNCorners "
+"<abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners>`\\ "
+"\\(cell\\, cornerPoints\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners:2 of
+msgid ""
+"This method partitions a cell using an N-sided cutting patch defined by "
+"the given corner points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellByPatchNEdges "
+"<abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges>`\\ \\(cell\\,"
+" edges\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges:2 of
+msgid ""
+"This method partitions a cell using an N-sided cutting patch defined by "
+"the given edges."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellByPlaneNormalToEdge "
+"<abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge>`\\ "
+"\\(cells\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge:2 of
+msgid ""
+"This method partitions one or more cells using a plane normal to an edge "
+"at the given edge point."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellByPlanePointNormal "
+"<abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal>`\\ "
+"\\(cells\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal:2 of
+msgid ""
+"This method partitions one or more cells using a plane defined by a point"
+" and a normal direction."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellByPlaneThreePoints "
+"<abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints>`\\ "
+"\\(cells\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:2 of
+msgid ""
+"This method partitions one or more cells using a plane defined by three "
+"points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellBySweepEdge "
+"<abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge>`\\ \\(cells\\, "
+"edges\\, sweepPath\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:2 of
+msgid ""
+"This method partitions one or more cells by sweeping selected edges along"
+" the given sweep path."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionEdgeByDatumPlane "
+"<abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane>`\\ \\(edges\\,"
+" datumPlane\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane:2 of
+msgid "This method partitions an edge where it intersects with a datum plane."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionEdgeByParam "
+"<abaqus.Feature.Feature.Feature.PartitionEdgeByParam>`\\ \\(edges\\, "
+"parameter\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByParam:2 of
+msgid ""
+"This method partitions one or more edges at the given normalized edge "
+"parameter."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionEdgeByPoint "
+"<abaqus.Feature.Feature.Feature.PartitionEdgeByPoint>`\\ \\(edge\\, "
+"point\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByPoint:2 of
+msgid "This method partitions an edge at the given point."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceByAuto "
+"<abaqus.Feature.Feature.Feature.PartitionFaceByAuto>`\\ \\(face\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionFaceByAuto:2 of
+msgid ""
+"This method automatically partitions a target face into simple regions "
+"that can be meshed using a structured meshing technique."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceByCurvedPathEdgeParams "
+"<abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams>`\\ "
+"\\(face\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:2 of
+msgid ""
+"This method partitions a face normal to two edges, using a curved path "
+"between the two given edge points defined by the normalized edge "
+"parameters."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceByCurvedPathEdgePoints "
+"<abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints>`\\ "
+"\\(face\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:2 of
+msgid ""
+"This method partitions a face normal to two edges, using a curved path "
+"between the two given edge points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceByDatumPlane "
+"<abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane>`\\ \\(faces\\,"
+" datumPlane\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane:2 of
+msgid "This method partitions one or more faces using the given datum plane."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceByExtendFace "
+"<abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace>`\\ \\(faces\\,"
+" extendFace\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace:2 of
+msgid ""
+"This method partitions one or more faces by extending the underlying "
+"geometry of another given face to partition the target faces."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceByIntersectFace "
+"<abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace>`\\ "
+"\\(faces\\, cuttingFaces\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace:2 of
+msgid ""
+"This method partitions one or more faces using the given cutting faces to"
+" partition the target faces."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceByProjectingEdges "
+"<abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges>`\\ "
+"\\(faces\\, edges\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges:2 of
+msgid ""
+"This method partitions one or more faces by projecting the given edges on"
+" the target faces."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceByShortestPath "
+"<abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath>`\\ "
+"\\(faces\\, point1\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath:2 of
+msgid ""
+"This method partitions one or more faces using a minimum distance path "
+"between the two given points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceBySketch "
+"<abaqus.Feature.Feature.Feature.PartitionFaceBySketch>`\\ \\(faces\\, "
+"sketch\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch:2 of
+msgid "This method partitions one or more planar faces by sketching on them."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceBySketchDistance "
+"<abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance>`\\ "
+"\\(faces\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:2 of
+msgid ""
+"This method partitions one or more faces by sketching on a sketch plane "
+"and then projecting the sketch toward the target faces through the given "
+"distance."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceBySketchRefPoint "
+"<abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint>`\\ "
+"\\(faces\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:2 of
+msgid ""
+"This method partitions one or more faces by sketching on a sketch plane "
+"and then projecting the sketch toward the target faces through a distance"
+" governed by the reference point."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceBySketchThruAll "
+"<abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll>`\\ "
+"\\(faces\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:2 of
+msgid ""
+"This method partitions one or more faces by sketching on a sketch plane "
+"and then projecting toward the target faces through an infinite distance."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`ReferencePoint "
+"<abaqus.Feature.Feature.Feature.ReferencePoint>`\\ \\(point\\[\\, "
+"instanceName\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.ReferencePoint:2 of
+msgid ""
+"This method creates a Feature object and a ReferencePoint object at the "
+"specified location."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`RemoveWireEdges "
+"<abaqus.Feature.Feature.Feature.RemoveWireEdges>`\\ \\(wireEdgeList\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+#: abaqus.Feature.Feature.Feature.RemoveWireEdges:2 of
+msgid "This method removes wire edges."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`WirePolyLine <abaqus.Feature.Feature.Feature.WirePolyLine>`\\ "
+"\\(points\\[\\, mergeType\\, meshable\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by creating a series of "
+"wires joining points in pairs."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`isSuppressed <abaqus.Feature.Feature.Feature.isSuppressed>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1 abaqus.Feature.Feature.Feature.isSuppressed:2
+#: of
+msgid "This method queries the suppressed state of the feature."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ":py:obj:`restore <abaqus.Feature.Feature.Feature.restore>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method restores the parameters of a feature to the value they had "
+"when the backup method was invoked on the part or assembly."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.Feature.Feature.Feature.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method resumes suppressed features."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`setValues <abaqus.Feature.Feature.Feature.setValues>`\\ "
+"\\(\\[parameter\\, parameter1\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1 abaqus.Feature.Feature.Feature.setValues:2 of
+msgid "This method modifies the Feature object."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.Feature.Feature.Feature.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method suppresses features."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:2 of
+msgid ""
+"This method creates an attachment points Feature. Attachment points may "
+"be created using datum points, vertices, reference points, attachment "
+"points, interesting points, orphan mesh nodes or coordinates. Optionally,"
+" the attachment points can be projected on geometric faces or element "
+"faces."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:8
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:8
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:6
+#: abaqus.Feature.Feature.Feature.DatumAxisByCylFace:6
+#: abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane:6
+#: abaqus.Feature.Feature.Feature.DatumAxisByParToEdge:6
+#: abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis:6
+#: abaqus.Feature.Feature.Feature.DatumAxisByThreePoint:6
+#: abaqus.Feature.Feature.Feature.DatumAxisByThruEdge:5
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane:6
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint:6
+#: abaqus.Feature.Feature.Feature.DatumCsysByDefault:6
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset:6
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:5
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:7
+#: abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint:6
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal:6
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane:6
+#: abaqus.Feature.Feature.Feature.DatumPlaneByRotation:6
+#: abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints:6
+#: abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint:6
+#: abaqus.Feature.Feature.Feature.DatumPointByCoordinate:6
+#: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:6
+#: abaqus.Feature.Feature.Feature.DatumPointByMidPoint:5
+#: abaqus.Feature.Feature.Feature.DatumPointByOffset:6
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace:6
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge:6
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:6
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:6
+#: abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane:5
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtendFace:6
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:6
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners:6
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges:5
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge:6
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal:6
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:5
+#: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:6
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane:5
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByParam:5
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByPoint:5
+#: abaqus.Feature.Feature.Feature.PartitionFaceByAuto:6
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:6
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:6
+#: abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane:5
+#: abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace:6
+#: abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace:6
+#: abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges:6
+#: abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath:6
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch:5
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:6
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:7
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:6
+#: abaqus.Feature.Feature.Feature.ReferencePoint:6
+#: abaqus.Feature.Feature.Feature.RemoveWireEdges:5
+#: abaqus.Feature.Feature.Feature.WirePolyLine:9 of
+msgid "This function can be accessed by:"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:16 of
+msgid ""
+"Check `AttachmentPoints on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attachmentpointspyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges
+#: abaqus.Feature.Feature.Feature.DatumAxisByCylFace
+#: abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane
+#: abaqus.Feature.Feature.Feature.DatumAxisByParToEdge
+#: abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis
+#: abaqus.Feature.Feature.Feature.DatumAxisByThreePoint
+#: abaqus.Feature.Feature.Feature.DatumAxisByThruEdge
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint
+#: abaqus.Feature.Feature.Feature.DatumCsysByDefault
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines
+#: abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane
+#: abaqus.Feature.Feature.Feature.DatumPlaneByRotation
+#: abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints
+#: abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint
+#: abaqus.Feature.Feature.Feature.DatumPointByCoordinate
+#: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam
+#: abaqus.Feature.Feature.Feature.DatumPointByMidPoint
+#: abaqus.Feature.Feature.Feature.DatumPointByOffset
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnFace
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform
+#: abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtendFace
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints
+#: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByParam
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByPoint
+#: abaqus.Feature.Feature.Feature.PartitionFaceByAuto
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints
+#: abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane
+#: abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace
+#: abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace
+#: abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges
+#: abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll
+#: abaqus.Feature.Feature.Feature.ReferencePoint
+#: abaqus.Feature.Feature.Feature.RemoveWireEdges
+#: abaqus.Feature.Feature.Feature.WirePolyLine
+#: abaqus.Feature.Feature.Feature.setValues
+#: abaqus.Feature.FeatureOptions.FeatureOptions.setValues of
+msgid "Parameters"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:21
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:21
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:19
+#: abaqus.Feature.Feature.Feature.DatumCsysByDefault:23
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset:37
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:46
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:32 of
+msgid "**name**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:21
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:21
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:19 of
+msgid "A String specifying a unique Feature name."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:26
+#: abaqus.Feature.Feature.Feature.WirePolyLine:30 of
+msgid "**points**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:24 of
+msgid ""
+"A tuple of points. Each point can be a ConstrainedSketchVertex, Datum "
+"point, Reference point, Attachment point, orphan mesh Node, Interesting "
+"point object, or a tuple of Floats representing the coordinates of a "
+"point."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:31
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:61
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:96 of
+msgid "**projectionMethod**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:29
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:59
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:94 of
+msgid ""
+"A SymbolicConstant specifying the projection method. Possible values are "
+"PROJECT_BY_PROXIMITY and PROJECT_BY_DIRECTION. The default value is "
+"PROJECT_BY_PROXIMITY."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:35
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:65
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:100 of
+msgid "**projectOnFaces**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:34
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:64
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:99 of
+msgid ""
+"A sequence of Face objects specifying the geometry faces onto which the "
+"points are to be projected."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:39
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:69
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:104 of
+msgid "**projectOnElementFaces**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:38
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:68
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:103 of
+msgid ""
+"A sequence of MeshFace objects specifying the orphan mesh element faces "
+"onto which the points are to be projected."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:44
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:74
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:109 of
+msgid "**projectionDirStartPt**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:42
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:72
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:107 of
+msgid ""
+"A point specifying the start point of the projection direction. The point"
+" can be a ConstrainedSketchVertex, Datum point, Reference point, "
+"Attachment point, orphan mesh Node, Interesting point object, or a tuple "
+"of Floats representing the coordinates of a point."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:49
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:79
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:114 of
+msgid "**projectionDirEndPt**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:47
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:77
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:112 of
+msgid ""
+"A point specifying the end point of the projection direction. The point "
+"can be a ConstrainedSketchVertex, Datum point, Reference point, "
+"Attachment point, orphan mesh Node, Interesting point object, or a tuple "
+"of Floats representing the coordinates of a point."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:52
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:87
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:117 of
+msgid "**setName**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:52
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:87
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:117 of
+msgid "A String specifying a unique set name."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges
+#: abaqus.Feature.Feature.Feature.DatumAxisByCylFace
+#: abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane
+#: abaqus.Feature.Feature.Feature.DatumAxisByParToEdge
+#: abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis
+#: abaqus.Feature.Feature.Feature.DatumAxisByThreePoint
+#: abaqus.Feature.Feature.Feature.DatumAxisByThruEdge
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint
+#: abaqus.Feature.Feature.Feature.DatumCsysByDefault
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines
+#: abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane
+#: abaqus.Feature.Feature.Feature.DatumPlaneByRotation
+#: abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints
+#: abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint
+#: abaqus.Feature.Feature.Feature.DatumPointByCoordinate
+#: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam
+#: abaqus.Feature.Feature.Feature.DatumPointByMidPoint
+#: abaqus.Feature.Feature.Feature.DatumPointByOffset
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnFace
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform
+#: abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtendFace
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints
+#: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByParam
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByPoint
+#: abaqus.Feature.Feature.Feature.PartitionFaceByAuto
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints
+#: abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane
+#: abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace
+#: abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace
+#: abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges
+#: abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll
+#: abaqus.Feature.Feature.Feature.ReferencePoint
+#: abaqus.Feature.Feature.Feature.RemoveWireEdges
+#: abaqus.Feature.Feature.Feature.WirePolyLine
+#: abaqus.Feature.Feature.Feature.isSuppressed of
+msgid "Returns"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:69
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:104
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:134
+#: abaqus.Feature.Feature.Feature.DatumPointByCoordinate:37
+#: abaqus.Feature.Feature.Feature.DatumPointByMidPoint:38
+#: abaqus.Feature.Feature.Feature.DatumPointByOffset:39
+#: abaqus.Feature.Feature.Feature.PartitionFaceByAuto:36
+#: abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane:38
+#: abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace:40
+#: abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace:39
+#: abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges:44
+#: abaqus.Feature.Feature.Feature.ReferencePoint:41
+#: abaqus.Feature.Feature.Feature.RemoveWireEdges:36
+#: abaqus.Feature.Feature.Feature.WirePolyLine:60 of
+msgid "feature: :obj:`Feature`"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPoints:57
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:92
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:122
+#: abaqus.Feature.Feature.Feature.DatumPointByCoordinate:25
+#: abaqus.Feature.Feature.Feature.DatumPointByMidPoint:26
+#: abaqus.Feature.Feature.Feature.DatumPointByOffset:27
+#: abaqus.Feature.Feature.Feature.PartitionFaceByAuto:24
+#: abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane:26
+#: abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace:28
+#: abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace:27
+#: abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges:32
+#: abaqus.Feature.Feature.Feature.ReferencePoint:29
+#: abaqus.Feature.Feature.Feature.RemoveWireEdges:24
+#: abaqus.Feature.Feature.Feature.WirePolyLine:48 of
+msgid "A :py:class:`~abaqus.Assembly.Feature.Feature` object"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:2 of
+msgid ""
+"This method creates a Feature object by creating attachment points along "
+"a direction or between two points. A Datum point, a "
+"ConstrainedSketchVertex, a Reference point, an Attachment point, an "
+"Interesting point, or an orphan mesh Node can be specified as the start "
+"or end point. The direction can be specified using a straight edge or a "
+"datum axis."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:16 of
+msgid ""
+"Check `AttachmentPointsAlongDirection on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attachmentpointsalongdirectionpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:26
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:29 of
+msgid "**startPoint**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:24 of
+msgid ""
+"A point specifying the start point of the direction along which to create"
+" points. The point can be a ConstrainedSketchVertex, Datum point, "
+"Reference point, Attachment point, orphan mesh Node, Interesting point "
+"object, or a tuple of Floats representing the coordinates of a point."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:30
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:37 of
+msgid "**pointCreationMethod**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:29 of
+msgid ""
+"A SymbolicConstant specifying the point creation method. Possible values "
+"are AUTO_FIT, NUM_PTS_ALONG_DIR, and NUM_PTS_BETWEEN_PTS."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:35 of
+msgid "**endPoint**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:33 of
+msgid ""
+"A point specifying the end point if creating points between two points. "
+"The point can be a ConstrainedSketchVertex, Datum point, Reference point,"
+" Attachment point, orphan mesh Node, Interesting point object, or a tuple"
+" of Floats representing the coordinates of a point."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:38 of
+msgid "**direction**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:38 of
+msgid "The direction can be specified by a straight edge or a datum axis."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:41 of
+msgid "**spacing**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:41 of
+msgid "A float specifying the spacing to be used between two points."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:44 of
+msgid "**numPtsAlongDir**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:44 of
+msgid ""
+"An integer specifying the number of points to be created along the "
+"specified direction."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:48 of
+msgid "**numPtsBetweenPts**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:47 of
+msgid ""
+"An integer specifying the number of points to be created between the "
+"start and end points."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:52 of
+msgid "**createPtAtStartPt**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:51 of
+msgid ""
+"A Boolean specifying whether to create an attachment point at the start "
+"point. The default value is True."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:56 of
+msgid "**createPtAtEndPt**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:55 of
+msgid ""
+"A Boolean specifying whether to create an attachment point at the end "
+"point. The default value is True."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:84
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:33 of
+msgid "**flipDirection**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:82 of
+msgid ""
+"A Boolean specifying if the direction along which the attachment points "
+"are created should be reversed. This argument is valid only when "
+"**pointCreationMethod** = NUM_PTS_ALONG_DIR."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:14 of
+msgid ""
+"Check `AttachmentPointsOffsetFromEdges on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attachmentpointsoffsetfromedgespyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:23
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:24
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges:22
+#: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:24
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane:18
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByParam:18
+#: abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges:23 of
+msgid "**edges**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:22 of
+msgid ""
+"A sequence of connected Edge objects specifying the geometry edges from "
+"which to offset the points."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:26 of
+msgid ""
+"A ConstrainedSketchVertex of the selected edges that specifies the point "
+"from which to create points. This point can be one of the two end "
+"vertices of the connected edges. In case of edges forming a closed loop "
+"and having multiple vertices, this point can be any one of the vertices "
+"on the edges."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:32 of
+msgid ""
+"This parameter is required to indicate the direction in which to create "
+"the points. This parameter is required only in case of edges forming a "
+"closed loop."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:36 of
+msgid ""
+"A SymbolicConstant specifying the point creation method. Possible values "
+"are BY_NUMBER or BY_SPACING."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:40 of
+msgid "**numberOfPoints**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:40 of
+msgid ""
+"An integer specifying the number of points to be created along the "
+"selected edges."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:44 of
+msgid "**spacingBetweenPoints**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:43 of
+msgid ""
+"A float specifying the spacing to be used between two points while "
+"creating the points between the start and end points of the edges."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:48 of
+msgid "**offsetFromStartPoint**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:47 of
+msgid ""
+"A float specifying the distance by which to offset the first point from "
+"the start vertex of the edge chain. The default value is 0.0."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:53 of
+msgid "**offsetFromEndPoint**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:51 of
+msgid ""
+"A float specifying the distance by which to offset the last point from "
+"the end vertex of the edge chain. This parameter should be specified only"
+" if the point creation method is BY_NUMBER. The default value is 0.0."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:57 of
+msgid "**spacingMethod**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:56 of
+msgid ""
+"A SymbolicConstant specifying the spacing method. Possible values are "
+"AUTO_FIT_PTS or SPECIFY_NUM_PTS. The default value is AUTO_FIT_PTS."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:61 of
+msgid "**patterningMethod**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:60 of
+msgid ""
+"A SymbolicConstant specifying the method to pattern of points. Possible "
+"values are PATTERN_ORTHOGONALLY or PATTERN_ALONG_DIRECTION."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:67 of
+msgid "**referenceFace**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:64 of
+msgid ""
+"A geometry Face object adjacent to one of the edges from which to offset "
+"the points to create a pattern of points when the PATTERN_ORTHOGONALLY "
+"method is chosen for patterning. The face is used to identify the "
+"patterning direction. If the number of rows is one and the initial offset"
+" is zero, the reference face may not be specified."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:73 of
+msgid "**startPointForPatternDirection**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:70 of
+msgid ""
+"A point specifying the start point of the direction along which to create"
+" a pattern of points when the PATTERN_ALONG_DIRECTION method is chosen "
+"for patterning. The point can be a ConstrainedSketchVertex, Datum point, "
+"Reference point, Attachment point, orphan mesh Node, Interesting point "
+"object, or a tuple of Floats representing the coordinates of a point."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:79 of
+msgid "**endPointForPatternDirection**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:76 of
+msgid ""
+"A point specifying the end point of the direction along which to create a"
+" pattern of points when the PATTERN_ALONG_DIRECTION method is chosen for "
+"patterning. The point can be a ConstrainedSketchVertex, Datum point, "
+"Reference point, Attachment point, orphan mesh Node, Interesting point "
+"object, or a tuple of Floats representing the coordinates of a point."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:83 of
+msgid "**offsetFromEdges**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:82 of
+msgid ""
+"A float specifying the distance by which to offset the first row of "
+"points from the edges."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:87 of
+msgid "**numberOfRows**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:86 of
+msgid ""
+"An integer specifying the number of rows of points to be created for the "
+"pattern. The default value is 1."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:91 of
+msgid "**spacingBetweenRows**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:90 of
+msgid ""
+"A float specifying the spacing to be used between two rows while creating"
+" a pattern of points."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByCylFace:14 of
+msgid ""
+"Check `DatumAxisByCylFace on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbycylfacepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByCylFace:19
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace:19
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:23
+#: abaqus.Feature.Feature.Feature.PartitionFaceByAuto:19
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:19
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:19 of
+msgid "**face**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByCylFace:19 of
+msgid "A cylindrical or conical Face object."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByCylFace:27
+#: abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane:30
+#: abaqus.Feature.Feature.Feature.DatumAxisByParToEdge:30
+#: abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis:28
+#: abaqus.Feature.Feature.Feature.DatumAxisByThreePoint:33
+#: abaqus.Feature.Feature.Feature.DatumAxisByThruEdge:26
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane:30
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint:30
+#: abaqus.Feature.Feature.Feature.DatumCsysByDefault:31
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset:45
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:54
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:40
+#: abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint:30
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal:30
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane:31
+#: abaqus.Feature.Feature.Feature.DatumPlaneByRotation:30
+#: abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints:33
+#: abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint:30
+#: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:31
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace:39
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge:30
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:31
+#: abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane:29
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtendFace:30
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:40
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners:31
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges:30
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge:33
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal:33
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:36
+#: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:36
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane:29
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByParam:30
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByPoint:29
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:41
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:39
+#: abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath:35
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch:38
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:48
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:46
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:45 of
+msgid ":obj:`Feature`"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByCylFace:24
+#: abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane:27
+#: abaqus.Feature.Feature.Feature.DatumAxisByParToEdge:27
+#: abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis:25
+#: abaqus.Feature.Feature.Feature.DatumAxisByThreePoint:30
+#: abaqus.Feature.Feature.Feature.DatumAxisByThruEdge:23
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane:27
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint:27
+#: abaqus.Feature.Feature.Feature.DatumCsysByDefault:28
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset:42
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:51
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:37
+#: abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint:27
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal:27
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane:28
+#: abaqus.Feature.Feature.Feature.DatumPlaneByRotation:27
+#: abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints:30
+#: abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint:27
+#: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:28
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace:36
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge:27
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:28
+#: abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane:26
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtendFace:27
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:37
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners:28
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges:27
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge:30
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal:30
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:33
+#: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:33
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane:26
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByParam:27
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByPoint:26
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:38
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:36
+#: abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath:32
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch:35
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:45
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:43
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:42 of
+msgid "A :py:class:`~abaqus.Assembly.Feature.Feature` object."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByCylFace
+#: abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane
+#: abaqus.Feature.Feature.Feature.DatumAxisByParToEdge
+#: abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis
+#: abaqus.Feature.Feature.Feature.DatumAxisByThreePoint
+#: abaqus.Feature.Feature.Feature.DatumAxisByThruEdge
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint
+#: abaqus.Feature.Feature.Feature.DatumCsysByDefault
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines
+#: abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane
+#: abaqus.Feature.Feature.Feature.DatumPlaneByRotation
+#: abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints
+#: abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint
+#: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnFace
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform
+#: abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtendFace
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints
+#: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByParam
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByPoint
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints
+#: abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll
+#: abaqus.Feature.Feature.Feature.setValues of
+msgid "Raises"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByCylFace:40
+#: abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane:43
+#: abaqus.Feature.Feature.Feature.DatumAxisByParToEdge:43
+#: abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis:41
+#: abaqus.Feature.Feature.Feature.DatumAxisByThreePoint:46
+#: abaqus.Feature.Feature.Feature.DatumAxisByThruEdge:39
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane:43
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint:43
+#: abaqus.Feature.Feature.Feature.DatumCsysByDefault:44
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset:58
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:67
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:53
+#: abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint:43
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal:43
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane:44
+#: abaqus.Feature.Feature.Feature.DatumPlaneByRotation:43
+#: abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints:46
+#: abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint:43
+#: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:36
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace:52
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge:43
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:44
+#: abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane:42
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtendFace:43
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:53
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners:44
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges:43
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge:46
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal:46
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:49
+#: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:49
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane:42
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByParam:43
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByPoint:42
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:54
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:52
+#: abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath:48
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch:51
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:61
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:59
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:58
+#: abaqus.Feature.Feature.Feature.setValues:49 of
+msgid ":obj:`AbaqusException`"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane:14 of
+msgid ""
+"Check `DatumAxisByNormalToPlane on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbynormaltoplanepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane:19
+#: abaqus.Feature.Feature.Feature.DatumPlaneByRotation:16 of
+msgid "**plane**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane:19
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane:19
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane:22
+#: abaqus.Feature.Feature.Feature.DatumPlaneByRotation:16 of
+msgid ""
+"A planar Face, an ElementFace, or a Datum object representing a datum "
+"plane."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane:22
+#: abaqus.Feature.Feature.Feature.DatumAxisByParToEdge:22
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset:34
+#: abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint:22
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal:19
+#: abaqus.Feature.Feature.Feature.DatumPointByOffset:19
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge:19
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:19
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge:25
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal:22
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByPoint:21
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:34
+#: abaqus.Feature.Feature.Feature.ReferencePoint:21 of
+msgid "**point**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane:22
+#: abaqus.Feature.Feature.Feature.DatumAxisByParToEdge:22
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint:19
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint:22
+#: abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint:22
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal:19
+#: abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints:19
+#: abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints:22
+#: abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints:25
+#: abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint:19
+#: abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint:22
+#: abaqus.Feature.Feature.Feature.DatumPointByMidPoint:18
+#: abaqus.Feature.Feature.Feature.DatumPointByMidPoint:21
+#: abaqus.Feature.Feature.Feature.DatumPointByOffset:19
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge:19
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:19 of
+msgid ""
+"A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum "
+"object representing a datum point."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByParToEdge:14 of
+msgid ""
+"Check `DatumAxisByParToEdge on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbypartoedgepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByParToEdge:19
+#: abaqus.Feature.Feature.Feature.DatumAxisByThruEdge:18
+#: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:19
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge:22
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge:22
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByPoint:18 of
+msgid "**edge**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByParToEdge:19
+#: abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint:19
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal:22
+#: abaqus.Feature.Feature.Feature.DatumPlaneByRotation:19 of
+msgid ""
+"A straight Edge, an ElementEdge, or a Datum object representing a datum "
+"axis."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis:14 of
+msgid ""
+"Check `DatumAxisByPrincipalAxis on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbyprincipalaxispyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis:20 of
+msgid "**principalAxis**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis:19 of
+msgid ""
+"A SymbolicConstant specifying the principal axis. Possible values are "
+"XAXIS, YAXIS, and ZAXIS."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByThreePoint:17
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint:19
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:28
+#: abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints:19
+#: abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint:19
+#: abaqus.Feature.Feature.Feature.DatumPointByMidPoint:18
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:21
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:25
+#: abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath:22 of
+msgid "**point1**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByThreePoint:16 of
+msgid ""
+"A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum "
+"object representing a datum point specifying the first point on the "
+"circle."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByThreePoint:21
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint:22
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:33
+#: abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints:22
+#: abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint:22
+#: abaqus.Feature.Feature.Feature.DatumPointByMidPoint:21
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:24
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:31
+#: abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath:27 of
+msgid "**point2**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByThreePoint:20 of
+msgid ""
+"A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum "
+"object representing a datum point specifying the second point on the "
+"circle."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByThreePoint:25
+#: abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints:25
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:28 of
+msgid "**point3**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByThreePoint:24 of
+msgid ""
+"A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum "
+"object representing a datum point specifying the third point on the "
+"circle."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByThruEdge:13 of
+msgid ""
+"Check `DatumAxisByThruEdge on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbythruedgepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByThruEdge:18 of
+msgid "A straight Edge or an ElementEdge object."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane:14 of
+msgid ""
+"Check `DatumAxisByTwoPlane on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbytwoplanepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane:19 of
+msgid "**plane1**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane:22 of
+msgid "**plane2**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint:14 of
+msgid ""
+"Check `DatumAxisByTwoPoint on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbytwopointpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByDefault:14 of
+msgid ""
+"Check `DatumCsysByDefault on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsysbydefaultpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByDefault:20
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset:20
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:19
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:21 of
+msgid "**coordSysType**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByDefault:19 of
+msgid ""
+"A SymbolicConstant specifying the default coordinate system to be used. "
+"Possible values are CARTESIAN, CYLINDRICAL, and SPHERICAL."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByDefault:23
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset:37
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:46
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:32 of
+msgid "A String specifying the name of the DatumCsys."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset:14 of
+msgid ""
+"Check `DatumCsysByOffset on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsysbyoffsetpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset:19
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:18
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:20 of
+msgid ""
+"A SymbolicConstant specifying the type of coordinate system. Possible "
+"values are CARTESIAN, CYLINDRICAL, and SPHERICAL."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset:23 of
+msgid "**datumCoordSys**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset:23 of
+msgid ""
+"A :py:class:`~abaqus.Datum.Datum.Datum` object representing a datum "
+"coordinate system from which to offset."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset:28
+#: abaqus.Feature.Feature.Feature.DatumPointByOffset:22 of
+msgid "**vector**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset:26 of
+msgid ""
+"A sequence of three Floats specifying the **X**-, **Y**-, and "
+"**Z**-offsets from **datumCoordSys**. The arguments **vector** and "
+"**point** are mutually exclusive, and one of them must be specified."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByOffset:31 of
+msgid ""
+"A ConstrainedSketchVertex, InterestingPoint, DatumPoint object or a "
+"sequence of three Floats specifying the **X**-, **Y**-, and "
+"**Z**-coordinates of a point in space. The point represents the origin of"
+" the new datum coordinate system. The arguments **vector** and **point** "
+"are mutually exclusive, and one of them must be specified."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:13 of
+msgid ""
+"Check `DatumCsysByThreePoints on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsysbythreepointspyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:23
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:23 of
+msgid "**origin**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:22 of
+msgid ""
+"A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum "
+"object representing a datum point specifying the origin of the coordinate"
+" system."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:26 of
+msgid ""
+"A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum "
+"object representing a datum point specifying a point on the **X**-axis or"
+" the rr-axis. The **point1** and **line1** arguments are mutually "
+"exclusive. One of them must be specified."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:31 of
+msgid ""
+"A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum "
+"object representing a datum point specifying a point in the **X - Y** "
+"plane or the rr-θθ plane. The **point2** and **line2** arguments are "
+"mutually exclusive. One of them must be specified."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:38
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:25 of
+msgid "**line1**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:36 of
+msgid ""
+"An Edge, an Element Edge, or a Datum object representing a datum axis "
+"specifying the **X**-axis or the rr-axis. The **point1** and **line1** "
+"arguments are mutually exclusive. One of them must be specified."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:43
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:29 of
+msgid "**line2**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:41 of
+msgid ""
+"An Edge, an Element Edge, or a Datum object representing a datum axis "
+"specifying a vector in the **X - Y** plane or the rr-θθ plane. The "
+"**point2** and **line2** arguments are mutually exclusive. One of them "
+"must be specified."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:2 of
+msgid ""
+"This method creates a Feature object and a DatumCsys object from two "
+"orthogonal lines. The origin of the new datum coordinate system is placed"
+" at the intersection of the two lines."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:15 of
+msgid ""
+"Check `DatumCsysByTwoLines on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsysbytwolinespyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:24 of
+msgid ""
+"A straight Edge, an ElementEdge, or a Datum object representing a datum "
+"axis specifying the **X**-axis or the rr-axis."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:28 of
+msgid ""
+"A straight Edge, an ElementEdge, or a Datum object representing a datum "
+"axis specifying a line in the **X - Y** plane or in the rr-θθ plane."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint:14 of
+msgid ""
+"Check `DatumPlaneByLinePoint on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanebylinepointpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint:19
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:28 of
+msgid "**line**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal:14 of
+msgid ""
+"Check `DatumPlaneByPointNormal on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanebypointnormalpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal:22
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal:25 of
+msgid "**normal**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane:14 of
+msgid ""
+"Check `DatumPlaneByPrincipalPlane on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanebyprincipalplanepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane:20 of
+msgid "**principalPlane**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane:19 of
+msgid ""
+"A SymbolicConstant specifying the principal plane. Possible values are "
+"XYPLANE, YZPLANE, and XZPLANE."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane:23 of
+msgid "**offset**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane:23 of
+msgid "A Float specifying the offset from the plane."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPlaneByRotation:19 of
+msgid "**axis**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPlaneByRotation:22 of
+msgid "**angle**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPlaneByRotation:22 of
+msgid "A Float specifying the angle in degrees to rotate the plane."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints:14 of
+msgid ""
+"Check `DatumPlaneByThreePoints on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanebythreepointspyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint:14 of
+msgid ""
+"Check `DatumPlaneByTwoPoint on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanebytwopointpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByCoordinate:14 of
+msgid ""
+"Check `DatumPointByCoordinate on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbycoordinatepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByCoordinate:20 of
+msgid "**coords**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByCoordinate:19 of
+msgid ""
+"A sequence of three Floats specifying the **X**-, **Y**-, and "
+"**Z**-coordinates of the datum point."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:14 of
+msgid ""
+"Check `DatumPointByEdgeParam on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbyedgeparampyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:19 of
+msgid "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:23
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByParam:22
+#: abaqus.Feature.Feature.Feature.setValues:12 of
+msgid "**parameter**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:22 of
+msgid ""
+"A Float specifying the distance along **edge** to the DatumPoint object. "
+"Possible values are 0 << **parameter** << 1."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:47 of
+msgid ":obj:`RangeError`"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByMidPoint:13 of
+msgid ""
+"Check `DatumPointByMidPoint on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbymidpointpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByOffset:14 of
+msgid ""
+"Check `DatumPointByOffset on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbyoffsetpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByOffset:22 of
+msgid ""
+"A sequence of three Floats specifying the **X**-, **Y**-, and "
+"**Z**-offsets from **point**."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace:14 of
+msgid ""
+"Check `DatumPointByOnFace on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbyonfacepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace:19 of
+msgid "A planar Face or a Datum object representing a datum plane."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace:22
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:22
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:22 of
+msgid "**edge1**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace:22
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace:28 of
+msgid "A straight Edge or a Datum object representing a datum axis."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace:25 of
+msgid "**offset1**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace:25 of
+msgid "A Float specifying the offset from **edge1**."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace:28
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:29
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:28 of
+msgid "**edge2**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace:31 of
+msgid "**offset2**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByOnFace:31 of
+msgid "A Float specifying the offset from **edge2**."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge:14 of
+msgid ""
+"Check `DatumPointByProjOnEdge on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbyprojonedgepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge:22 of
+msgid "An Edge, an ElementEdge or a Datum object representing a datum axis."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:14 of
+msgid ""
+"Check `DatumPointByProjOnFace on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbyprojonfacepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:22 of
+msgid ""
+"A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a Datum object "
+"representing a datum plane.Note:Any other types of planes are not "
+"supported."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:2 of
+msgid ""
+"This method creates a Transform object. A "
+":py:class:`~abaqus.BasicGeometry.Transform.Transform` object is a 4x3 "
+"matrix of Floats that represents the transformation from sketch "
+"coordinates to part coordinates."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:14 of
+msgid ""
+"Check `MakeSketchTransform on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-makesketchtransformpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:19
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:22
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:23
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:22 of
+msgid "**sketchPlane**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:19 of
+msgid "A Datum plane object or a planar Face object specifying the sketch plane."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:22 of
+msgid ""
+"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
+" that will be used as the origin of the sketch. The default value is "
+"computed as the centroid of the face."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:27
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch:30
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:40
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:38
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:37 of
+msgid "**sketchOrientation**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:26
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch:29
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:39
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:37
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:36 of
+msgid ""
+"A SymbolicConstant specifying the orientation of **sketchUpEdge** on the "
+"sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM. The default "
+"value is RIGHT."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:31
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:26
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:26 of
+msgid "**sketchPlaneSide**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:30 of
+msgid ""
+"A SymbolicConstant specifying on which side of the **sketchPlane** the "
+"sketch is positioned. Possible values are SIDE1 and SIDE2. The default "
+"value is SIDE1."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:35
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch:26
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:30
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:27
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:30 of
+msgid "**sketchUpEdge**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:34 of
+msgid ""
+"An Edge or DatumAxis object specifying the orientation of the sketch. If "
+"unspecified, the sketch is assumed to be oriented with the "
+"**Y**-direction pointing up."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:40 of
+msgid ":obj:`Transform`"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:40 of
+msgid ""
+"A :py:class:`~abaqus.BasicGeometry.Transform.Transform` object. A "
+"Transform is an object with one method that returns the transform"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:46 of
+msgid "matrix."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:59 of
+msgid ""
+":obj:`Up` :obj:`direction` :obj:`is` :obj:`parallel` :obj:`to` "
+":obj:`plane` :obj:`normal`"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.MakeSketchTransform:51 of
+msgid "If the sketchUpEdge is parallel to the sketchPlane."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane:13 of
+msgid ""
+"Check `PartitionCellByDatumPlane on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbydatumplanepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane:18
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtendFace:19
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:19
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge:19
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal:19
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:18
+#: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:19 of
+msgid "**cells**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane:18
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtendFace:19
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:19
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge:19
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal:19
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:18
+#: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:19 of
+msgid "A sequence of Cell objects specifying the cells to partition."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane:21
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane:21
+#: abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane:21 of
+msgid "**datumPlane**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane:21 of
+msgid "A :py:class:`~abaqus.Datum.DatumPlane.DatumPlane` object."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtendFace:14 of
+msgid ""
+"Check `PartitionCellByExtendFace on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbyextendfacepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtendFace:22
+#: abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace:23 of
+msgid "**extendFace**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtendFace:22 of
+msgid "A planar, cylindrical, conical, or spherical Face object."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:14 of
+msgid ""
+"Check `PartitionCellByExtrudeEdge on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbyextrudeedgepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:22 of
+msgid ""
+"The Edge objects to be extruded. The edges must be in the same plane. The"
+" edges must form a continuous chain, without branches. The edges must "
+"belong to the same PartInstance object."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:27 of
+msgid ""
+"A straight Edge or DatumAxis object specifying the extrude direction. "
+"**line** must be perpendicular to the plane formed by **edges**."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:32 of
+msgid "**sense**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:31 of
+msgid ""
+"A SymbolicConstant specifying the direction of the extrusion. Possible "
+"values are FORWARD and REVERSE. If **sense** = FORWARD, the extrusion is "
+"in the direction of **line**."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners:14 of
+msgid ""
+"Check `PartitionCellByPatchNCorners on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbypatchncornerspyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners:19
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges:18 of
+msgid "**cell**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners:19 of
+msgid ""
+"A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object specifying the cell "
+"to partition."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners:23 of
+msgid "**cornerPoints**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners:22 of
+msgid ""
+"A sequence of ConstrainedSketchVertex, InterestingPoint, or DatumPoint "
+"objects. 3 ≤≤ len(*cornerPoints*) ≤≤ 5. The corner points must not "
+"coincide."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges:13 of
+msgid ""
+"Check `PartitionCellByPatchNEdges on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbypatchnedgespyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges:18 of
+msgid "A Cell specifying the cell to partition."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges:21 of
+msgid ""
+"A sequence of Edge objects bounding the patch. The edges must form a "
+"closed loop. The Edge objects must belong to the same PartInstance object"
+" as **cell**."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge:14 of
+msgid ""
+"Check `PartitionCellByPlaneNormalToEdge on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbyplanenormaltoedgepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge:22 of
+msgid ""
+"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the "
+"normal to the plane."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge:25 of
+msgid ""
+"A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object "
+"specifying a point on **edge**."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal:14 of
+msgid ""
+"Check `PartitionCellByPlanePointNormal on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbyplanepointnormalpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal:22
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:21
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:24 of
+msgid ""
+"A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object "
+"specifying a point on the plane."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal:25 of
+msgid "A straight Edge or DatumAxis object specifying the normal to the plane."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:13 of
+msgid ""
+"Check `PartitionCellByPlaneThreePoints on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbyplanethreepointspyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:27 of
+msgid ""
+"A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object "
+"specifying a point on the plane.Note:*point1*, **point2**, and **point3**"
+" must not be colinear and must not coincide."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:14 of
+msgid ""
+"Check `PartitionCellBySweepEdge on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbysweepedgepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:22 of
+msgid ""
+"A sequence of Edge objects to be swept. The edges must be in the same "
+"plane. The edges must form a continuous chain without branches. The Edge "
+"objects must all belong to the same PartInstance object."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:28 of
+msgid "**sweepPath**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:27 of
+msgid ""
+"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the "
+"sweep path. The start of **sweepPath** must be in the plane and "
+"perpendicular to the plane formed by **edges**. The sweep path must be "
+"planar."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane:13 of
+msgid ""
+"Check `PartitionEdgeByDatumPlane on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionedgebydatumplanepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane:18
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByParam:18 of
+msgid "A sequence of Edge objects specifying the edges to partition."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane:21
+#: abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane:21 of
+msgid ""
+"A :py:class:`~abaqus.Datum.DatumPlane.DatumPlane` object specifying the "
+"location of the partition."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByParam:13 of
+msgid ""
+"Check `PartitionEdgeByParam on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionedgebyparampyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByParam:21 of
+msgid ""
+"A Float specifying the normalized distance along **edge** at which to "
+"partition. Possible values are 0.0 << **parameter** << 1.0."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByPoint:13 of
+msgid ""
+"Check `PartitionEdgeByPoint on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionedgebypointpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByPoint:18 of
+msgid ""
+"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge"
+" to partition."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionEdgeByPoint:21 of
+msgid "An InterestingPoint or DatumPoint object specifying a point on **edge**."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByAuto:14 of
+msgid ""
+"Check `PartitionFaceByAuto on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebyautopyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByAuto:19
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:19
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:19 of
+msgid ""
+"A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face "
+"to partition."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:14 of
+msgid ""
+"Check `PartitionFaceByCurvedPathEdgeParams on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebycurvedpathedgeparamspyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:22
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:22 of
+msgid ""
+"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the "
+"start of the partition. The edge must belong to **face**."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:26
+#: abaqus.Feature.Feature.Feature.setValues:17 of
+msgid "**parameter1**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:25 of
+msgid ""
+"A Float specifying the distance along **edge1** at which to partition. "
+"Possible values are 0.0 ≤≤ **distance1** ≤≤ 1.0."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:29
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:28 of
+msgid ""
+"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the end "
+"of the partition. The edge must belong to **face**."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:33
+#: abaqus.Feature.Feature.Feature.setValues:22 of
+msgid "**parameter2**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:32 of
+msgid ""
+"A Float specifying the distance along **edge2** at which to partition. "
+"Possible values are 0.0 ≤≤ **distance2** ≤≤ 1.0."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:14 of
+msgid ""
+"Check `PartitionFaceByCurvedPathEdgePoints on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebycurvedpathedgepointspyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:25 of
+msgid ""
+"A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object "
+"specifying a point on **edge1**."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:31 of
+msgid ""
+"A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object "
+"specifying a point on **edge2**."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane:13 of
+msgid ""
+"Check `PartitionFaceByDatumPlane on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebydatumplanepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane:18
+#: abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace:19
+#: abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace:19
+#: abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges:19
+#: abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath:19
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch:18
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:19
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:20
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:19 of
+msgid "**faces**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane:18
+#: abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace:19
+#: abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace:19
+#: abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges:19
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch:18
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:19
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:20
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:19 of
+msgid "A sequence of Face objects specifying the faces to partition."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace:14 of
+msgid ""
+"Check `PartitionFaceByExtendFace on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebyextendfacepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace:22 of
+msgid ""
+"A :py:class:`~abaqus.BasicGeometry.Face.Face` object that is to be "
+"extended to create the partition. The face to extend can be a planar, "
+"cylindrical, conical, or spherical face."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace:14 of
+msgid ""
+"Check `PartitionFaceByIntersectFace on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebyintersectfacepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace:22 of
+msgid "**cuttingFaces**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace:22 of
+msgid "A sequence of Face objects that specify the cutting faces."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges:14 of
+msgid ""
+"Check `PartitionFaceByProjectingEdges on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebyprojectingedgespyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges:22 of
+msgid ""
+"A sequence of Edge objects specifying the edges that will be projected "
+"onto the target faces."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges:27 of
+msgid "**extendEdges**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges:26 of
+msgid ""
+"A boolean specifying whether to extend the given edges at their free ends"
+" in the tangent direction before partitioning the target faces. The "
+"default value is False."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath:14 of
+msgid ""
+"Check `PartitionFaceByShortestPath on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebyshortestpathpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath:19 of
+msgid "A sequence of Face objects specifying the face to partition."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath:22 of
+msgid "A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath:25 of
+msgid ""
+"A ConstrainedSketchVertex, InterestingPoint, or DatumPoint "
+"object.Note:*point1* and **point2** must not coincide, and they must both"
+" lie on the underlying surface geometry of at least one of the target "
+"faces."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch:13 of
+msgid ""
+"Check `PartitionFaceBySketch on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebysketchpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch:21
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:33
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:30
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:33
+#: abaqus.Feature.Feature.Feature.setValues:27 of
+msgid "**sketch**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch:21
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:33
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:30
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:33 of
+msgid ""
+"A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
+" specifying the partition."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketch:24 of
+msgid ""
+"An Edge or DatumAxis object specifying the orientation of **sketch**. "
+"This edge or datum axis must not be orthogonal to the plane defined by "
+"**faces**. If unspecified, **sketch** is assumed to be oriented in with "
+"the **Y** direction pointing up."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:14 of
+msgid ""
+"Check `PartitionFaceBySketchDistance on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebysketchdistancepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:22
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:23
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:22 of
+msgid "A planar Face or DatumPlane object."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:25 of
+msgid ""
+"A SymbolicConstant specifying the side of the plane to be used for "
+"sketching. Possible values are SIDE1 and SIDE2."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:29 of
+msgid ""
+"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the "
+"orientation of **sketch**. This edge must not be orthogonal to "
+"**sketchPlane**."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:36
+#: abaqus.Feature.Feature.Feature.setValues:36 of
+msgid "**distance**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:36 of
+msgid ""
+"A Float specifying the projection distance. Possible values are "
+"**distance** >> 0.0."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:15 of
+msgid ""
+"Check `PartitionFaceBySketchRefPoint on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebysketchrefpointpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:26 of
+msgid ""
+"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a DatumAxis "
+"object specifying the orientation of **sketch**. This edge or datum axis "
+"must not be orthogonal to **sketchPlane**."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:33 of
+msgid ""
+"A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object "
+"specifying the distance to project **sketch**. The point must not lie on "
+"**sketchPlane**."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:14 of
+msgid ""
+"Check `PartitionFaceBySketchThruAll on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebysketchthruallpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:25 of
+msgid ""
+"A SymbolicConstant specifying the extrude direction of the sketch. "
+"Possible values are SIDE1 and SIDE2."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:29 of
+msgid ""
+"An Edge or a DatumAxis object specifying the orientation of **sketch**. "
+"This edge or datum axis must not be orthogonal to **sketchPlane**."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.ReferencePoint:14 of
+msgid ""
+"Check `ReferencePoint on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-referencepointpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.ReferencePoint:19 of
+msgid ""
+"A ConstrainedSketchVertex, InterestingPoint, a MeshNode, or a Datum "
+"object specifying a reference point. **point** can also be a sequence of "
+"three Floats representing the **X**-, **Y**-, and **Z**-coordinates of "
+"the point."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.ReferencePoint:24 of
+msgid "**instanceName**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.ReferencePoint:24 of
+msgid "Used internally by the input file writer."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.RemoveWireEdges:13 of
+msgid ""
+"Check `RemoveWireEdges on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-removewireedgespyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.RemoveWireEdges:19 of
+msgid "**wireEdgeList**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.RemoveWireEdges:18 of
+msgid ""
+"A sequence of Edge objects specifying the edges to remove. Any specified "
+"edge that is not a wire edge will not be removed."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.WirePolyLine:2 of
+msgid ""
+"This method creates an additional Feature object by creating a series of "
+"wires joining points in pairs. When such a feature is created at the Part"
+" level, then each point can be either a datum point, a vertex, a "
+"reference point, an interesting point, an orphan mesh node, or the "
+"coordinates of a point. When such a feature is created at the Assembly "
+"level, then each point can only be a vertex, a reference point, or an "
+"orphan mesh node."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.WirePolyLine:17 of
+msgid ""
+"Check `WirePolyLine on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-wirepolylinepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.WirePolyLine:22 of
+msgid ""
+"A tuple of point pairs, each pair being itself represented by a tuple. "
+"For part level features each point can be a ConstrainedSketchVertex, "
+"Datum point, Reference point, orphan mesh Node, or InterestingPoint "
+"object specifying the points through which the polyline wire will pass. "
+"Each point can also be a tuple of Floats representing the coordinates of "
+"a point. For assembly level features each point can only be a "
+"ConstrainedSketchVertex, Reference point, or orphan mesh Node specifying "
+"the points through which the polyline wire will pass (coordinates cannot "
+"be specified). In any of the pairs, the first or second point can be "
+"NONE. In that case, the point pair will create a zero-length wire, which "
+"is required for certain types of connectors. You must specify at least "
+"one pair."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.WirePolyLine:38 of
+msgid "**mergeType**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.WirePolyLine:33 of
+msgid ""
+"A SymbolicConstant specifying the merge behavior of the wire with "
+"existing geometry. If **mergeType** is MERGE, Abaqus merges the wire into"
+" solid regions of the part if the wire passes through them. If "
+"**mergeType** is IMPRINT, Abaqus imprints the wire on existing geometry "
+"as edges. If **mergeType** is SEPARATE, Abaqus neither merges nor "
+"imprints the spline wire with existing geometry. It creates the wire "
+"separately. The default value is IMPRINT."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.WirePolyLine:43 of
+msgid "**meshable**"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.WirePolyLine:41 of
+msgid ""
+"A Boolean specifying whether the wire should be available for selection "
+"for meshing operations. If **meshable** = OFF, the wire can be used for "
+"connector section assignment. The default value is ON."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.isSuppressed:21 of
+msgid ":obj:`Boolean`"
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.isSuppressed:9 of
+msgid ""
+"A Boolean value of True if the feature is suppressed and False if it is "
+"not suppressed."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.restore:2 of
+msgid ""
+"This method restores the parameters of a feature to the value they had "
+"when the backup method was invoked on the part or assembly. Use the "
+"restore method after the backup method."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.resume:2 of
+msgid ""
+"This method resumes suppressed features. Resuming a feature fully "
+"restores it to the part or assembly. You can resume the last feature you "
+"suppressed, all suppressed features, or just selected features. When you "
+"resume a child feature, Abaqus/CAE also resumes the parent features "
+"automatically."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.setValues:5 of
+msgid ""
+"Check `Feature.setValues() on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-featurepyc.htm?contextscope=all"
+"#simaker-featuresetvaluespyc>`_."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.setValues:10 of
+msgid ""
+"A Float specifying the normalized distance along **edge** at which to "
+"partition. Possible values are 0.0 << **parameter** << 1.0. You use this "
+"argument to modify a partition created with the created with the "
+"PartitionEdgeByParam method."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.setValues:15 of
+msgid ""
+"A Float specifying the distance along **edge1** at which to partition. "
+"Possible values are 0.0 ≤≤ **parameter1** ≤≤ 1.0. You use this argument "
+"to modify a partition object created with the "
+"PartitionFaceByCurvedPathEdgeParam method."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.setValues:20 of
+msgid ""
+"A Float specifying the distance along **edge2** at which to partition. "
+"Possible values are 0.0 ≤≤ **parameter2** ≤≤ 1.0. You use this argument "
+"to modify a partition object created with the "
+"PartitionFaceByCurvedPathEdgeParam method."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.setValues:25 of
+msgid ""
+"A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
+" specifying the partition. You use this argument to modify a partition "
+"object created with a sketch; for example, using the "
+"PartitionFaceBySketch method."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.setValues:30 of
+msgid ""
+"A Float specifying the projection **distance**. Possible values are "
+"**distance** >> 0.0. You use this argument to modify a partition object "
+"created with the PartitionFaceBySketchDistance method."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature.suppress:2 of
+msgid ""
+"This method suppresses features. Suppressing a feature is equivalent to "
+"temporarily removing the feature from the part or assembly. Suppressed "
+"features remain suppressed when you regenerate a part or assembly. You "
+"cannot suppress the base feature. In addition, if you suppress a parent "
+"feature, all of its child features are also suppressed automatically. "
+"Suppressed features can be restored with the resume command."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/feature.rst:20
+msgid "FeatureOptions"
+msgstr ""
+
+#: abaqus.Feature.FeatureOptions.FeatureOptions:2 of
+msgid ""
+"The FeatureOptions object stores the options that control the behavior of"
+" feature regeneration for all features in a model."
+msgstr ""
+
+#: abaqus.Feature.FeatureOptions.FeatureOptions:14 of
+msgid ""
+"Check `FeatureOptions on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-featureoptionspyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ""
+":py:obj:`setValues "
+"<abaqus.Feature.FeatureOptions.FeatureOptions.setValues>`\\ "
+"\\(\\[checkSelfIntersection\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+#: abaqus.Feature.FeatureOptions.FeatureOptions.setValues:2 of
+msgid "This method modifies the FeatureOptions object for the specified model."
+msgstr ""
+
+#: abaqus.Feature.FeatureOptions.FeatureOptions.setValues:5 of
+msgid ""
+"Check `FeatureOptions.setValues() on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-featureoptionspyc.htm?contextscope=all"
+"#simaker-featureoptionssetvaluespyc>`_."
+msgstr ""
+
+#: abaqus.Feature.FeatureOptions.FeatureOptions.setValues:11 of
+msgid "**checkSelfIntersection**"
+msgstr ""
+
+#: abaqus.Feature.FeatureOptions.FeatureOptions.setValues:10 of
+msgid ""
+"A Boolean specifying whether Abaqus/CAE should perform self-intersection "
+"checks while regenerating features. The default value is ON."
+msgstr ""
+
+#: abaqus.Feature.FeatureOptions.FeatureOptions.setValues:15 of
+msgid "**autoCaching**"
+msgstr ""
+
+#: abaqus.Feature.FeatureOptions.FeatureOptions.setValues:14 of
+msgid ""
+"A Boolean specifying whether geometric states should be automatically "
+"cached. The default value is ON."
+msgstr ""
+
+#: abaqus.Feature.FeatureOptions.FeatureOptions.setValues:32 of
+msgid "**maxCachedStates**"
+msgstr ""
+
+#: abaqus.Feature.FeatureOptions.FeatureOptions.setValues:18 of
+msgid ""
+"An Int specifying the maximum number of caches to be stored with each "
+"part or with the assembly. The default value is 5."
+msgstr ""
+
