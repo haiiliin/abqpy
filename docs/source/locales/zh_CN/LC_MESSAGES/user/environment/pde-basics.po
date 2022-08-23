@@ -1,21 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022, WANG Hailin
-# This file is distributed under the same license as the abqpy package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy \n"
+"Project-Id-Version: abqpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:36+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"PO-Revision-Date: 2022-08-23 10:42\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: abqpy\n"
+"X-Crowdin-Project-ID: 533812\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /main/docs/source/locales/pot/user/environment/pde-basics.pot\n"
+"X-Crowdin-File-ID: 420\n"
+"Language: zh_CN\n"
 
 #: ../../user/environment/pde-basics.rst:3
 msgid "Abaqus PDE basics"
@@ -30,21 +30,11 @@ msgid "Starting the Abaqus Python development environment"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:10
-msgid ""
-"You can choose from several methods to start the Abaqus Python "
-"development environment. If you plan to work on scripts that use the "
-"Abaqus/CAE GUI, you should start the Abaqus PDE from within an Abaqus/CAE"
-" session or start it from the command prompt when you start Abaqus/CAE. "
-"These startup methods link the Abaqus PDE to the corresponding Abaqus/CAE"
-" session. Alternatively, you can start the Abaqus PDE independently to "
-"save system memory or avoid using an Abaqus license."
+msgid "You can choose from several methods to start the Abaqus Python development environment. If you plan to work on scripts that use the Abaqus/CAE GUI, you should start the Abaqus PDE from within an Abaqus/CAE session or start it from the command prompt when you start Abaqus/CAE. These startup methods link the Abaqus PDE to the corresponding Abaqus/CAE session. Alternatively, you can start the Abaqus PDE independently to save system memory or avoid using an Abaqus license."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:12
-msgid ""
-"Use one of the following methods to start the Abaqus PDE. The first two "
-"methods start the Abaqus PDE with a link to an Abaqus/CAE session. The "
-"last method starts the Abaqus PDE independently from Abaqus/CAE:"
+msgid "Use one of the following methods to start the Abaqus PDE. The first two methods start the Abaqus PDE with a link to an Abaqus/CAE session. The last method starts the Abaqus PDE independently from Abaqus/CAE:"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:14
@@ -66,48 +56,27 @@ msgid "Note:"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:26
-msgid ""
-"Using this method starts Abaqus/CAE without any local user preference "
-"settings. Ignoring user preferences allows you to record and run .guiLog "
-"tests using the consistent default startup settings."
+msgid "Using this method starts Abaqus/CAE without any local user preference settings. Ignoring user preferences allows you to record and run .guiLog tests using the consistent default startup settings."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:34
-msgid ""
-"where *abaqus* is the command used to start Abaqus, and *filenames* are "
-"the names, including the directory paths, of scripts to be opened at "
-"startup."
+msgid "where *abaqus* is the command used to start Abaqus, and *filenames* are the names, including the directory paths, of scripts to be opened at startup."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:36
-msgid ""
-"The `-script` option allows you to enter the name, including the "
-"directory path, of a main file to be opened at startup. The Abaqus PDE "
-"will create a new blank script if the named file does not exist in the "
-"specified directory. If the directory does not exist, the Abaqus PDE "
-"generates an error message."
+msgid "The `-script` option allows you to enter the name, including the directory path, of a main file to be opened at startup. The Abaqus PDE will create a new blank script if the named file does not exist in the specified directory. If the directory does not exist, the Abaqus PDE generates an error message."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:40
-msgid ""
-"File names and paths specified without the `-script` option are opened "
-"for editing—not as the main file."
+msgid "File names and paths specified without the `-script` option are opened for editing—not as the main file."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:42
-msgid ""
-"The -pde option is used to specify options for use with Abaqus/CAE if you"
-" run a script in the Abaqus PDE that requires the Abaqus/CAE kernel or "
-"user interface. You can also add command line options for Abaqus/CAE "
-"using the Settings menu. For more information, see `Selecting the "
-"settings for use with a file "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdesettings.htm?contextscope=all>`_."
+msgid "The -pde option is used to specify options for use with Abaqus/CAE if you run a script in the Abaqus PDE that requires the Abaqus/CAE kernel or user interface. You can also add command line options for Abaqus/CAE using the Settings menu. For more information, see `Selecting the settings for use with a file <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdesettings.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:44
-msgid ""
-"The sections that follow describe how to use the menus and tools within "
-"the Abaqus PDE."
+msgid "The sections that follow describe how to use the menus and tools within the Abaqus PDE."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:47
@@ -115,46 +84,23 @@ msgid "Managing files in the Abaqus PDE"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:49
-msgid ""
-"You can use the File menu and tools to manage files in the Abaqus PDE. "
-"You can work with multiple scripts, but you can test only one script at a"
-" time. The file to be tested is called the Main File. The path and file "
-"name of the main file are displayed near the upper left corner of the "
-"Abaqus PDE window. You can open the main file by using the Select Main "
-"File or Recent Main Files items in the File menu. You can also create a "
-"new main file or select an open file to be the main file."
+msgid "You can use the File menu and tools to manage files in the Abaqus PDE. You can work with multiple scripts, but you can test only one script at a time. The file to be tested is called the Main File. The path and file name of the main file are displayed near the upper left corner of the Abaqus PDE window. You can open the main file by using the Select Main File or Recent Main Files items in the File menu. You can also create a new main file or select an open file to be the main file."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:53
-msgid ""
-"When the Set Last Main File on Startup setting is toggled on, the Abaqus "
-"PDE automatically reopens the main file that was open when you closed "
-"your last session."
+msgid "When the Set Last Main File on Startup setting is toggled on, the Abaqus PDE automatically reopens the main file that was open when you closed your last session."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:55
-msgid ""
-"The default file extensions for use with the Abaqus PDE are .py and "
-".guiLog. A .py file typically designates a standard Python or Abaqus "
-"Scripting Interface script, and a .guiLog file is a specialized Python "
-"script that records actions in the Abaqus/CAE GUI."
+msgid "The default file extensions for use with the Abaqus PDE are .py and .guiLog. A .py file typically designates a standard Python or Abaqus Scripting Interface script, and a .guiLog file is a specialized Python script that records actions in the Abaqus/CAE GUI."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:57
-msgid ""
-"As you play a main file script, the Abaqus PDE automatically opens any "
-"files that contain functions called by the script, if the files are "
-"available in the current path (sys.path). These files are added to the "
-"recently used files list in the File menu. The Abaqus PDE also saves a "
-"list of recently used files and other files (dependent files) called when"
-" you run a main file. This list is saved in the current directory as "
-"abaqus_pde.deps."
+msgid "As you play a main file script, the Abaqus PDE automatically opens any files that contain functions called by the script, if the files are available in the current path (sys.path). These files are added to the recently used files list in the File menu. The Abaqus PDE also saves a list of recently used files and other files (dependent files) called when you run a main file. This list is saved in the current directory as abaqus_pde.deps."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:59
-msgid ""
-":numref:`cmd-pde-filemenu-nls` shows the items in the Abaqus PDE File "
-"menu."
+msgid ":numref:`cmd-pde-filemenu-nls` shows the items in the Abaqus PDE File menu."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:66
@@ -170,13 +116,7 @@ msgid "**New**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:72
-msgid ""
-"Create a new file. The Abaqus PDE creates a new main file and displays it"
-" in the main window. The file is created using the default naming "
-"convention `_abaqus*#*_.guiLog`, where # starts at 1 and is incremented "
-"as you create more files in the current directory. You can also click the"
-" New guiLog  icon to create a new file.Abaqus automatically designates "
-"the new script as the main file."
+msgid "Create a new file. The Abaqus PDE creates a new main file and displays it in the main window. The file is created using the default naming convention `_abaqus*#*_.guiLog`, where # starts at 1 and is incremented as you create more files in the current directory. You can also click the New guiLog  icon to create a new file.Abaqus automatically designates the new script as the main file."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:74
@@ -184,15 +124,7 @@ msgid "**Open**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:76
-msgid ""
-"Open a script. You can also click the Open file  icon to open a script.If"
-" you have not yet opened or created another script, Abaqus automatically "
-"makes the first opened file the main file for testing. Otherwise, the "
-"file opened becomes the current file viewed in the main window, but it is"
-" not the main file used for testing.**Tip:** You can drag and drop script"
-" files from the desktop or from Windows Explorer into the Abaqus PDE for "
-"editing.You can navigate to the file you want to open by entering its "
-"full path, or you can specify a path using environment variables."
+msgid "Open a script. You can also click the Open file  icon to open a script.If you have not yet opened or created another script, Abaqus automatically makes the first opened file the main file for testing. Otherwise, the file opened becomes the current file viewed in the main window, but it is not the main file used for testing.**Tip:** You can drag and drop script files from the desktop or from Windows Explorer into the Abaqus PDE for editing.You can navigate to the file you want to open by entering its full path, or you can specify a path using environment variables."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:78
@@ -200,9 +132,7 @@ msgid "**Select Main File**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:80
-msgid ""
-"Open a script as the main file for testing. You can also click the Open "
-"main file  icon to open a script as the main file."
+msgid "Open a script as the main file for testing. You can also click the Open main file  icon to open a script as the main file."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:82
@@ -210,9 +140,7 @@ msgid "**Make Current Main**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:84
-msgid ""
-"Designate the current script in the main window as the main file for "
-"testing."
+msgid "Designate the current script in the main window as the main file for testing."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:86
@@ -220,9 +148,7 @@ msgid "**Save**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:88
-msgid ""
-"Save changes to the current file. You can also click Save  to save the "
-"current file."
+msgid "Save changes to the current file. You can also click Save  to save the current file."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:90
@@ -238,13 +164,7 @@ msgid "**Reload Modules**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:96
-msgid ""
-"Reload user interface modules to capture any changes that you made since "
-"they were first loaded. You can also click Reload Modules  to reload the "
-"user interface modules. The Abaqus PDE reloads user interface modules in "
-"the Abaqus/CAE GUI and Abaqus/CAE kernel processes unless the current "
-"setting for the Run Script In option is local, in which case any changed "
-"modules are reloaded in the local PDE process."
+msgid "Reload user interface modules to capture any changes that you made since they were first loaded. You can also click Reload Modules  to reload the user interface modules. The Abaqus PDE reloads user interface modules in the Abaqus/CAE GUI and Abaqus/CAE kernel processes unless the current setting for the Run Script In option is local, in which case any changed modules are reloaded in the local PDE process."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:98
@@ -260,11 +180,7 @@ msgid "**Filename.py**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:104
-msgid ""
-"The name and file extension of the current main file, if one is "
-"selected.Clicking here shows a list of dependent files that were found "
-"when the main file was run. If the current main file has not been run in "
-"the Abaqus PDE, this list will be empty."
+msgid "The name and file extension of the current main file, if one is selected.Clicking here shows a list of dependent files that were found when the main file was run. If the current main file has not been run in the Abaqus PDE, this list will be empty."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:106
@@ -272,10 +188,7 @@ msgid "**Recent Main Files**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:108
-msgid ""
-"A list of the files that you have opened as the main file for testing. "
-"Recent Files from previous sessions will be read from the abaqus_pde.deps"
-" file, if it exists in the current directory."
+msgid "A list of the files that you have opened as the main file for testing. Recent Files from previous sessions will be read from the abaqus_pde.deps file, if it exists in the current directory."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:110
@@ -283,11 +196,7 @@ msgid "**Recent Traced Files**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:112
-msgid ""
-"A list of files that were opened by the Abaqus PDE to trace a function "
-"called by one of the main files that you tested. Recent Files from "
-"previous sessions will be read from the abaqus_pde.deps file, if it "
-"exists in the current directory."
+msgid "A list of files that were opened by the Abaqus PDE to trace a function called by one of the main files that you tested. Recent Files from previous sessions will be read from the abaqus_pde.deps file, if it exists in the current directory."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:114
@@ -295,21 +204,11 @@ msgid "**Recent Files**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:116
-msgid ""
-"A list of all files that you have opened, regardless of whether you "
-"opened them to view and edit them or opened them as the main file for "
-"testing. Recent Files from previous sessions will be read from the "
-"`abaqus_pde.deps` file, if it exists in the current directory."
+msgid "A list of all files that you have opened, regardless of whether you opened them to view and edit them or opened them as the main file for testing. Recent Files from previous sessions will be read from the `abaqus_pde.deps` file, if it exists in the current directory."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:118
-msgid ""
-"The recently used files lists are stored in the `abaqus_pde.deps` file in"
-" the directory from which you start the current Abaqus PDE session. If "
-"you start an Abaqus PDE session from another location, the lists contain "
-"only the files that you used the last time you opened a session in that "
-"directory. If you have not previously used the Abaqus PDE in the current "
-"directory, a new set of recently used files is recorded as you work."
+msgid "The recently used files lists are stored in the `abaqus_pde.deps` file in the directory from which you start the current Abaqus PDE session. If you start an Abaqus PDE session from another location, the lists contain only the files that you used the last time you opened a session in that directory. If you have not previously used the Abaqus PDE in the current directory, a new set of recently used files is recorded as you work."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:121
@@ -317,11 +216,7 @@ msgid "Editing files in the Abaqus PDE"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:123
-msgid ""
-"You can use the **Edit** menu to edit scripts in the Abaqus PDE. The "
-"**Edit** menu contains common editing tools, including **Undo**, "
-"**Redo**, **Copy**, **Cut**, **Paste**, **Find**, and **Replace**. It "
-"also contains the following tools for editing scripts:"
+msgid "You can use the **Edit** menu to edit scripts in the Abaqus PDE. The **Edit** menu contains common editing tools, including **Undo**, **Redo**, **Copy**, **Cut**, **Paste**, **Find**, and **Replace**. It also contains the following tools for editing scripts:"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:125
@@ -341,10 +236,7 @@ msgid "**Uncomment Region**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:130
-msgid ""
-"To use these tools, highlight one or more lines of code in the main "
-"window and select the desired option from the **Edit** menu. The **Edit**"
-" menu also contains a keyboard shortcut for each of the editing tools."
+msgid "To use these tools, highlight one or more lines of code in the main window and select the desired option from the **Edit** menu. The **Edit** menu also contains a keyboard shortcut for each of the editing tools."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:133
@@ -352,15 +244,11 @@ msgid "Selecting the settings for use with a file"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:135
-msgid ""
-"Use the **Settings** menu and tools to change some of the options in the "
-"Abaqus PDE."
+msgid "Use the **Settings** menu and tools to change some of the options in the Abaqus PDE."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:137
-msgid ""
-":numref:`cmd-pde-settingsmenu-nls` shows the items and default selections"
-" in the Abaqus PDE **Settings** menu."
+msgid ":numref:`cmd-pde-settingsmenu-nls` shows the items and default selections in the Abaqus PDE **Settings** menu."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:144
@@ -376,10 +264,7 @@ msgid "**Recording Options**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:150
-msgid ""
-"Set the display of the triad, state block, and title block and whether "
-"the legend background matches the viewport. These options affect the "
-"commands recorded for an output database."
+msgid "Set the display of the triad, state block, and title block and whether the legend background matches the viewport. These options affect the commands recorded for an output database."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:152
@@ -387,9 +272,7 @@ msgid "**Allow Editing of Files**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:154
-msgid ""
-"Toggle between edit and read-only modes for all files. Editing is allowed"
-" by default."
+msgid "Toggle between edit and read-only modes for all files. Editing is allowed by default."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:156
@@ -397,9 +280,7 @@ msgid "**Show File Line Numbers**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:158
-msgid ""
-"Display line numbers for any open files on the left side of the main "
-"window. Line numbers are displayed by default."
+msgid "Display line numbers for any open files on the left side of the main window. Line numbers are displayed by default."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:160
@@ -407,11 +288,7 @@ msgid "**Ignore Breakpoints During Play**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:162
-msgid ""
-"Run the main file continuously, skipping any breakpoints, until it "
-"completes or stops for an error. Breaks are not skipped by default. You "
-"can also skip breakpoints by toggling on Ignore breaks, located in the "
-"toolbar above the main window."
+msgid "Run the main file continuously, skipping any breakpoints, until it completes or stops for an error. Breaks are not skipped by default. You can also skip breakpoints by toggling on Ignore breaks, located in the toolbar above the main window."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:164
@@ -419,11 +296,7 @@ msgid "**Allow Pause in Play**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:166
-msgid ""
-"Pause a running file by clicking the **Pause** button. Pause is allowed "
-"by default. Allowing pause also causes the main file to run in the "
-"debugger. (For more information, see `Using the debugger "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdedebug.htm?contextscope=all>`_.)"
+msgid "Pause a running file by clicking the **Pause** button. Pause is allowed by default. Allowing pause also causes the main file to run in the debugger. (For more information, see `Using the debugger <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdedebug.htm?contextscope=all>`_.)"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:168
@@ -431,9 +304,7 @@ msgid "**Set Last Main File on Startup**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:170
-msgid ""
-"Upon startup, automatically reopen the main file that was open when you "
-"last closed the Abaqus PDE."
+msgid "Upon startup, automatically reopen the main file that was open when you last closed the Abaqus PDE."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:172
@@ -441,14 +312,7 @@ msgid "**Run Script In**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:174
-msgid ""
-"Select whether the main file is run in the Abaqus/CAE GUI, the Abaqus/CAE"
-" kernel, or run locally. By default, `.guiLog` files are run in the GUI, "
-"and `.py` and other file types are run in the kernel. You can also set "
-"this option using the GUI, Kernel, and Local radio buttons located above "
-"the main window.If the Abaqus PDE was opened without Abaqus/CAE and you "
-"run a script with the **GUI** or **Kernel** process, the Abaqus PDE will "
-"start Abaqus/CAE to run the script."
+msgid "Select whether the main file is run in the Abaqus/CAE GUI, the Abaqus/CAE kernel, or run locally. By default, `.guiLog` files are run in the GUI, and `.py` and other file types are run in the kernel. You can also set this option using the GUI, Kernel, and Local radio buttons located above the main window.If the Abaqus PDE was opened without Abaqus/CAE and you run a script with the **GUI** or **Kernel** process, the Abaqus PDE will start Abaqus/CAE to run the script."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:176
@@ -456,11 +320,7 @@ msgid "**.py Default to Kernel**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:178
-msgid ""
-"Set `.py` files to run in the Abaqus/CAE kernel. This option is selected "
-"by default. If `.py` Default to Kernel is not selected, `.py` files are "
-"run locally. Select the **GUI** or **Local** radio button to run a Python"
-" script in one of these modes without changing the default behavior."
+msgid "Set `.py` files to run in the Abaqus/CAE kernel. This option is selected by default. If `.py` Default to Kernel is not selected, `.py` files are run locally. Select the **GUI** or **Local** radio button to run a Python script in one of these modes without changing the default behavior."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:180
@@ -468,9 +328,7 @@ msgid "**Line Animation**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:182
-msgid ""
-"Highlight the line currently being executed in the main window. The "
-"following animation settings are available:"
+msgid "Highlight the line currently being executed in the main window. The following animation settings are available:"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:184
@@ -478,22 +336,15 @@ msgid "No animation."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:185
-msgid ""
-"Animate main file (default). Highlights only the statements in the main "
-"function or method. Functions called from the main script are not "
-"highlighted."
+msgid "Animate main file (default). Highlights only the statements in the main function or method. Functions called from the main script are not highlighted."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:186
-msgid ""
-"Animate main file functions. Highlights the main script statements and "
-"the statements in functions that are defined within the main file."
+msgid "Animate main file functions. Highlights the main script statements and the statements in functions that are defined within the main file."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:187
-msgid ""
-"Animate all files. Highlights the main script statements and statements "
-"within all functions for which the source code is available."
+msgid "Animate all files. Highlights the main script statements and statements within all functions for which the source code is available."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:189
@@ -501,9 +352,7 @@ msgid "**Python Code**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:191
-msgid ""
-"Control the appearance and editing behavior of Python scripts in the "
-"Abaqus PDE main window."
+msgid "Control the appearance and editing behavior of Python scripts in the Abaqus PDE main window."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:193
@@ -511,10 +360,7 @@ msgid "**Syntax Coloring**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:195
-msgid ""
-"Display the code using various font colors according to its purpose. This"
-" option is selected by default.You can view or change the color "
-"selections with the Choose Syntax Colors option."
+msgid "Display the code using various font colors according to its purpose. This option is selected by default.You can view or change the color selections with the Choose Syntax Colors option."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:197
@@ -522,9 +368,7 @@ msgid "**Python Editing**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:199
-msgid ""
-"Edit scripts with Python formatting, such as indentation, included "
-"automatically. This option is selected by default."
+msgid "Edit scripts with Python formatting, such as indentation, included automatically. This option is selected by default."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:201
@@ -532,10 +376,7 @@ msgid "**Choose Syntax Colors**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:203
-msgid ""
-"Opens the **PDE Syntax Colors** dialog box in which you can view or "
-"change the color selections for editing scripts. Click **Reset Defaults**"
-" to restore the default colors."
+msgid "Opens the **PDE Syntax Colors** dialog box in which you can view or change the color selections for editing scripts. Click **Reset Defaults** to restore the default colors."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:205
@@ -543,9 +384,7 @@ msgid "**CAE Command Line Extra Args...**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:207
-msgid ""
-"Enter extra arguments for use when Abaqus/CAE is launched from the Abaqus"
-" PDE."
+msgid "Enter extra arguments for use when Abaqus/CAE is launched from the Abaqus PDE."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:209
@@ -553,11 +392,7 @@ msgid "**Auto Trace in CAE**"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:211
-msgid ""
-"Automatically trace code in GUI and kernel processes of Abaqus/CAE. The "
-"script will be traced until it returns from the frame in which the trace "
-"started. The trace will therefore stop when the function returns or the "
-"end of the script is reached. This option is selected by default."
+msgid "Automatically trace code in GUI and kernel processes of Abaqus/CAE. The script will be traced until it returns from the frame in which the trace started. The trace will therefore stop when the function returns or the end of the script is reached. This option is selected by default."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:214
@@ -565,31 +400,11 @@ msgid "The message area and GUI command line interface"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:216
-msgid ""
-"The message area and the GUI command line interface share the space at "
-"the bottom of the Abaqus PDE, similar to the kernel command line "
-"interface in Abaqus/CAE. (For more information, see `Components of the "
-"main window "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECAERefMap/simacae-c-topmainabqwindow.htm?contextscope=all>`_.)"
-" The message area is displayed by default. It displays messages and "
-"warnings as you run scripts in the Abaqus PDE."
+msgid "The message area and the GUI command line interface share the space at the bottom of the Abaqus PDE, similar to the kernel command line interface in Abaqus/CAE. (For more information, see `Components of the main window <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECAERefMap/simacae-c-topmainabqwindow.htm?contextscope=all>`_.) The message area is displayed by default. It displays messages and warnings as you run scripts in the Abaqus PDE."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:218
-msgid ""
-"The GUI command line interface is hidden by default, but it uses the same"
-" space occupied by the message area. Click |ico_guiCli| in the bottom "
-"left corner of the Abaqus PDE main window to switch from the message area"
-" to the GUI command line interface. The GUI and kernel processes in "
-"Abaqus/CAE run separately, each using its own Python interpreter. You can"
-" use the GUI command line interface to type Python commands and to "
-"evaluate mathematical expressions using the Python interpreter that is "
-"built into the Abaqus/CAE GUI. You can use the kernel command line "
-"interface in Abaqus/CAE for similar tasks. Each command line interface "
-"includes primary (>>>) and secondary (...) prompts to indicate when you "
-"must indent commands to comply with Python syntax. After you use the GUI "
-"command line interface, click |afxI_messageArea| to display the message "
-"area."
+msgid "The GUI command line interface is hidden by default, but it uses the same space occupied by the message area. Click |ico_guiCli| in the bottom left corner of the Abaqus PDE main window to switch from the message area to the GUI command line interface. The GUI and kernel processes in Abaqus/CAE run separately, each using its own Python interpreter. You can use the GUI command line interface to type Python commands and to evaluate mathematical expressions using the Python interpreter that is built into the Abaqus/CAE GUI. You can use the kernel command line interface in Abaqus/CAE for similar tasks. Each command line interface includes primary (>>>) and secondary (...) prompts to indicate when you must indent commands to comply with Python syntax. After you use the GUI command line interface, click |afxI_messageArea| to display the message area."
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:220
@@ -601,10 +416,6 @@ msgid "afxI_messageArea"
 msgstr ""
 
 #: ../../user/environment/pde-basics.rst:226
-msgid ""
-"If new messages are generated in the message area while the GUI command "
-"line interface is active, the background around the message area icon "
-"turns red. The background reverts to its normal color when you display "
-"the message area."
+msgid "If new messages are generated in the message area while the GUI command line interface is active, the background around the message area icon turns red. The background reverts to its normal color when you display the message area."
 msgstr ""
 
