@@ -4,7 +4,6 @@
 [![Documentation Status](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://abqpy.haiiliin.com/en/latest/?badge=latest)
 [![Documentation Status](https://readthedocs.org/projects/abqpy-zh-cn/badge/?version=latest)](https://abqpy.haiiliin.com/zh_CN/latest/?badge=latest)
 [![Pages](https://github.com/haiiliin/abqpy/actions/workflows/pages.yaml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pages.yaml)
-[![Pages-zh-cn](https://github.com/haiiliin/abqpy/actions/workflows/pages-zh-cn.yaml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pages-zh-cn.yaml)
 [![Upload Python Package to PyPI](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-pypi.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-pypi.yml)
 [![Build and Upload Conda Package](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-conda.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-conda.yml)
 [![Crowdin](https://badges.crowdin.net/abqpy/localized.svg)](https://crowdin.com/project/abqpy)
