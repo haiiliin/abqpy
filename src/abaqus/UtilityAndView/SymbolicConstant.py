@@ -27,7 +27,7 @@ class SymbolicConstant:
         .. code-block:: python
 
             from symbolicConstants import *
-            from ..UtilityAndView.abaqusConstants import *
+            from abaqusConstants import *
     """
 
     @abaqus_method_doc
