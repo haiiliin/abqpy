@@ -13,6 +13,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        language: ['en', 'zh_CN']
     steps:
     - uses: actions/setup-python@v2
     - uses: actions/checkout@master
@@ -26,4 +29,4 @@ jobs:
     - name: Build the documentation
       shell: bash -l {0}
       run: |
-        sphinx-build -b html docs/source docs/_build/html/en
+        sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/_build/html/${{ matrix.language }}
