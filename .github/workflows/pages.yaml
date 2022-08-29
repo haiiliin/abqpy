@@ -13,7 +13,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    concurrency: ci-${{ github.ref }}
     steps:
     - uses: actions/setup-python@v2
     - uses: actions/checkout@master
