@@ -36,7 +36,7 @@ msgid ""
 "script, even without opening the Abaqus/CAE."
 msgstr ""
 "`abqpy` 是一个 Python 包，提供了一些类型提示，用于快速编写你的 Abaqus/Python "
-"脚本，即便不打开Abaqus/CAE。它还提供了一些简单的API用于调用 Abaqus 命令执行你"
+"脚本，即便不打开 Abaqus/CAE。它还提供了一些简单的API用于调用 Abaqus 命令执行你"
 "的 Python 脚本，以便使用 Python 脚本快速构建 Abaqus 模型，并提交作业给 Abaqus "
 "进行计算，并从计算结果中提取数据。"
 
@@ -75,9 +75,9 @@ msgid ""
 "script. Abaqus has already installed a Python interpreter so that Abaqus/CAE "
 "can use it to interact with the Abaqus kernel."
 msgstr ""
-"总之，Abaqus使用Python语言与Abaqus内核进行交互，所有可以在Abaqus/CAE中完成的事"
-"情，也可以使用Python脚本完成。Abaqus已经安装了一个Python解释器，以便Abaqus / "
-"CAE可以使用它与Abaqus内核进行交互。"
+"总之，Abaqus 使用 Python 语言与 Abaqus 内核进行交互，所有可以在 Abaqus/CAE 中 完成的事"
+"情，也可以使用 Python 脚本完成。Abaqus  已经安装了一个 Python 解释器，以便Abaqus/"
+"CAE可以使用它与 Abaqus 内核进行交互。"
 
 #: ../../getting_started.rst:34
 msgid ""
@@ -93,7 +93,7 @@ msgid ""
 "Usually, we can use the noGUI-file or script-file to execute our Python "
 "script in Abaqus."
 msgstr ""
-"通常，我们可以使用noGUI-file 或 script-file选项在Abaqus中执行我们的Python脚"
+"通常，我们可以使用 noGUI-file 或 script-file 选项在 Abaqu 中执行我们的 Python 脚"
 "本。"
 
 #: ../../getting_started.rst:58
@@ -104,7 +104,7 @@ msgid ""
 "scripting for Abaqus, enabling us to write a Abaqus Python script quickly."
 msgstr ""
 "另一个 Python 解释器是我们自己安装的 Python 解释器，其中安装了 `abqpy`。"
-"`abqpy` 提供了一个将我们的P ython 脚本连接到 Abaqus Python 解释器的桥梁，它为 "
+"`abqpy` 提供了一个将我们的 Python 脚本连接到 Abaqus Python 解释器的桥梁，它为 "
 "Abaqus 的 Python 脚本提供了类型提示，使我们能够快速编写 Abaqus Python 脚本。"
 
 #: ../../getting_started.rst:65
@@ -128,7 +128,7 @@ msgstr ""
 
 #: ../../getting_started.rst:76
 msgid "The secret is hided in the :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method:"
-msgstr "这个秘密隐藏在:py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs`方法中："
+msgstr "这个秘密隐藏在 :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` 方法中："
 
 #: ../../getting_started.rst:86
 msgid ""
@@ -140,11 +140,11 @@ msgid ""
 "normal method to save the model because `abqpy` is not installed in Abaqus "
 "Python interpreter."
 msgstr ""
-"在此包中，:py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs`方法被重新实现，如果你在脚本中"
+"在此包中，:py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` 方法被重新实现，如果你在脚本中"
 "调用此方法（即 `mdb.saveAs('model.cae')`），Python 解释器（而非 Abaqus Python "
-"解释器）将使用 **abaqus**命 令将此脚本提交给 Abaqus，当它被提交给 Abaqus 时，:"
+"解释器）将使用 **abaqus** 命令将此脚本提交给 Abaqus，当它被提交给 Abaqus 时，:"
 "py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` 只是保存模型的一个正常方法，因为 `abqpy` "
-"并没有被安装在Abaqus Python 解释器中。"
+"并没有被安装在 Abaqus Python 解释器中。"
 
 #: ../../getting_started.rst:91
 msgid ""
@@ -183,7 +183,7 @@ msgid ""
 "install it manually:"
 msgstr ""
 "`abqpy` 被上传到 `PyPI <https://pypi.org/project/abqpy>`_，你可以简单地使用 "
-"pip 安装它，因为 abqpy（从 V1.0.15 开始）依赖于 `ipynbname`，而 `ipynbname` 并"
+"pip 安装它，因为 `abqpy` 依赖于 `ipynbname` （从 V1.0.15 开始），而 `ipynbname` 并"
 "没有被上传到 Anaconda，因此你必须使用 `pip` 手动安装它："
 
 #: ../../getting_started.rst:118
@@ -200,7 +200,7 @@ msgid ""
 "repository <https://github.com/haiiliin/abqpy>`_ and use `python` to install "
 "from the local directory:"
 msgstr ""
-"您可以通过克隆 `GitHub仓库<https://github.com/haiiliin/abqpy>`_来安装最新的开"
+"您可以通过克隆 `GitHub仓库 <https://github.com/haiiliin/abqpy>`_ 来安装最新的开"
 "发版本，并使用 `python` 从本地目录进行安装："
 
 #: ../../getting_started.rst:138
@@ -209,7 +209,7 @@ msgstr "安装特定版本"
 
 #: ../../getting_started.rst:140
 msgid "You can specify the version number when installing `abqpy`, for example:"
-msgstr "您可以在安装`abqpy`时指定版本号，例如："
+msgstr "您可以在安装 `abqpy` 时指定版本号，例如："
 
 #: ../../getting_started.rst:147
 msgid "A better way is to use * to match specific version:"
