@@ -26,5 +26,4 @@ jobs:
     - name: Build the documentation
       shell: bash -l {0}
       run: |
-        cd docs
-        sphinx-build -b html source build/html
+        sphinx-build -b html docs/source docs/_build/html/en
