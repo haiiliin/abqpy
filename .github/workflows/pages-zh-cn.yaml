@@ -14,8 +14,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     concurrency: ci-${{ github.ref }}
-    env:
-      SPHINXOPTS: "-D language=zh_CN"
     steps:
     - uses: actions/setup-python@v2
     - uses: actions/checkout@master
@@ -25,9 +23,10 @@ jobs:
       shell: bash -l {0}
       run: |
         python setup.py install
-    - name: Build and Commit
-      uses: sphinx-notes/pages@v2
-      with:
-        documentation_path: docs/source
-        requirements_path: docs/requirements.txt
+        pip install -r docs/requirements.txt
+    - name: Build the documentation
+      shell: bash -l {0}
+      run: |
+        cd docs
+        sphinx-build -b html -D language=zh_CN source build/html/zh_CN
 
