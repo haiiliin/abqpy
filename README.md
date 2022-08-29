@@ -1,8 +1,7 @@
 # abqpy 2019
 
-[![OSCS Status](https://www.oscs1024.com/platform/badge/haiiliin/abqpy.svg?size=small)](https://www.oscs1024.com/project/haiiliin/abqpy?ref=badge_small)
-[![Documentation Status](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://abqpy.haiiliin.com/en/latest/?badge=latest)
-[![Documentation Status](https://readthedocs.org/projects/abqpy-zh-cn/badge/?version=latest)](https://abqpy.haiiliin.com/zh_CN/latest/?badge=latest)
+[![Documentation Status](https://img.shields.io/readthedocs/abqpy?label=docs)](https://readthedocs.org/projects/abqpy/)
+[![Documentation Status](https://img.shields.io/readthedocs/abqpy-zh-cn?label=docs-zh-cn)](https://readthedocs.org/projects/abqpy-zh-cn/)
 [![Pages](https://github.com/haiiliin/abqpy/actions/workflows/pages.yaml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pages.yaml)
 [![Upload Python Package to PyPI](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-pypi.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-pypi.yml)
 [![Build and Upload Conda Package](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-conda.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-conda.yml)
@@ -10,8 +9,8 @@
 
 [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://github.com/haiiliin/abqpy/blob/main/LICENSE)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/abqpy.svg)](https://www.python.org/)
-[![Anaconda platforms](https://anaconda.org/haiiliin/abqpy/badges/platforms.svg)](https://anaconda.org/haiiliin/abqpy)
-[![GitHub release](https://img.shields.io/github/release/haiiliin/abqpy.svg)](https://GitHub.com/haiiliin/abqpy/releases/)
+[![PyPI](https://img.shields.io/pypi/v/abqpy)](https://pypi.org/project/abqpy/)
+[![Anaconda-Server Badge](https://anaconda.org/haiiliin/abqpy/badges/version.svg)](https://anaconda.org/haiiliin/abqpy)
 [![PyPI download month](https://img.shields.io/pypi/dm/abqpy.svg)](https://pypi.python.org/pypi/abqpy/)
 
 Read this in other languages: [English](README.md), [简体中文](README-zh-cn.md).
