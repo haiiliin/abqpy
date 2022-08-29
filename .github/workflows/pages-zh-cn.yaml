@@ -26,5 +26,4 @@ jobs:
     - name: Build the documentation
       shell: bash -l {0}
       run: |
-        cd docs
-        sphinx-build -b html -D language=zh_CN source build/html/zh_CN
+        sphinx-build -b html -D language=zh_CN docs/source docs/_build/html/zh_CN
