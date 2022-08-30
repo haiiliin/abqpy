@@ -44,6 +44,7 @@ Header of the script
 
 Usually, when we use Python script to build the model, we need to import the following modules:
 
+.. autolink-concat:: section
 .. code-block:: Python
 
     from abaqus import *
