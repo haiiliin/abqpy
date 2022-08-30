@@ -54,7 +54,17 @@ extensions = [
     'sphinx.ext.linkcode',
     'sphinx.ext.githubpages',
     'sphinx_copybutton',
+    'sphinx.ext.intersphinx',
 ]
+
+intersphinx_mapping = {
+    'numpy': ('https://numpy.org/doc/stable/', None),
+    'pandas': ('https://pandas.pydata.org/pandas-docs/stable/', None),
+    'pytest': ('https://pytest.org/en/stable/', None),
+    'python': ('https://docs.python.org/3/', None),
+    'scipy': ('https://docs.scipy.org/doc/scipy/', None),
+    'matplotlib': ('https://matplotlib.org/stable/', None),
+}
 
 
 # linkcode source
