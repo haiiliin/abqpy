@@ -20,8 +20,8 @@ class MeanFieldVoid:
 
         - Volume fraction.
         - Aspect ratio.
-        - Components of the direction vector defined in the local coordinate system when *direction*=FIXED.
-          Components of the second-order orientation tensor in the local coordinate system when *direction*=ORIENTATION_TENSOR.
+        - Components of the direction vector defined in the local coordinate system when **direction** = FIXED.
+          Components of the second-order orientation tensor in the local coordinate system when **direction** = ORIENTATION_TENSOR.
         - Etc.
 
         The corresponding analysis keywords are:

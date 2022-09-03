@@ -5,7 +5,7 @@ from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class Calibration:
-    """A :py:class:`~abaqus.BoundaryCondition.Calibration.Calibration` object is the object used to specify a material calibration. The
+    """A :py:class:`~abaqus.Material.Calibration.Calibration` object is the object used to specify a material calibration. The
     Calibration object stores the data that is used for specifying materials from test data.
 
     .. note:: 
@@ -45,7 +45,7 @@ class Calibration:
         Returns
         -------
         Calibration
-            A :py:class:`~abaqus.BoundaryCondition.Calibration.Calibration` object.
+            A :py:class:`~abaqus.Material.Calibration.Calibration` object.
         """
         ...
 

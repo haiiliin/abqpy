@@ -33,7 +33,7 @@ The script does the following:
 - Sets the number of contour intervals and the contour limits.
 - Prints a color image of the viewport to a .png file.
 
-.. code-block:: python
+.. code-block:: python2
 
     """
     viewerOpenOdbAndContour.py
@@ -106,7 +106,7 @@ The script does the following:
 - Produces a contour plot at the final frame of every step.
 - Prints the contour plot to a file.
 
-.. code-block:: python
+.. code-block:: python2
 
     """
     viewerPrintContours.py

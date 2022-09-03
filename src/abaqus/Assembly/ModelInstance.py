@@ -19,7 +19,7 @@ class Model:
 
 @abaqus_class_doc
 class ModelInstance:
-    """A :py:class:`~abaqus.Model.Model.ModelInstance` object is an instance of a Model.
+    """A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object is an instance of a Model.
 
     .. note:: 
         This object can be accessed by:
@@ -83,7 +83,7 @@ class ModelInstance:
         Returns
         -------
         ModelInstance
-            A :py:class:`~abaqus.Model.Model.ModelInstance` object.
+            A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object.
         """
         ...
 

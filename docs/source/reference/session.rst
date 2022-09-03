@@ -44,6 +44,7 @@ AnimationSession
 
 .. autoclass:: abaqus.Animation.AnimationSession.AnimationSession
     :members:
+    :noindex:
 
     .. autoclasstoc::
 
@@ -52,6 +53,7 @@ DisplayGroupSession
 
 .. autoclass:: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession
     :members:
+    :noindex:
 
     .. autoclasstoc::
 
@@ -60,6 +62,7 @@ FieldReportSession
 
 .. autoclass:: abaqus.FieldReport.FieldReportSession.FieldReportSession
     :members:
+    :noindex:
 
     .. autoclasstoc::
 
@@ -68,6 +71,7 @@ JobSession
 
 .. autoclass:: abaqus.Job.JobSession.JobSession
     :members:
+    :noindex:
 
     .. autoclasstoc::
 
@@ -76,6 +80,7 @@ OdbSession
 
 .. autoclass:: abaqus.Odb.OdbSession.OdbSession
     :members:
+    :noindex:
 
     .. autoclasstoc::
 
@@ -84,6 +89,7 @@ PathSession
 
 .. autoclass:: abaqus.PathAndProbe.PathSession.PathSession
     :members:
+    :noindex:
 
     .. autoclasstoc::
 
@@ -92,6 +98,7 @@ XYSession
 
 .. autoclass:: abaqus.XY.XYSession.XYSession
     :members:
+    :noindex:
 
     .. autoclasstoc::
 

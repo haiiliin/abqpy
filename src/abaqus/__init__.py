@@ -7,11 +7,13 @@ from .Mdb.Mdb import Mdb as AbaqusMdb
 from .Odb.Odb import Odb
 from .Session.Session import Session as AbaqusSession
 from .UtilityAndView.BackwardCompatibility import BackwardCompatibility
+from .UtilityAndView.User import *
+from .UtilityAndView.SymbolicConstant import SymbolicConstant
 
 try:
-    from ._version import version
+    from ._version import _default_version
 except ImportError:
-    version = '2022.0.0-unknown'
+    _default_version = '2022.0.0-unknown'
 
 
 def _get_version():
@@ -27,12 +29,12 @@ def _get_version():
                 root=root,
                 version_scheme="release-branch-semver",
                 local_scheme="node-and-date",
-                fallback_version=version,
+                fallback_version=_default_version,
             )
         except ValueError:
-            return version
+            return _default_version
     else:  # Get the version from the _version.py setuptools_scm file.
-        return version
+        return _default_version
 
 
 __version__ = _get_version()
@@ -102,3 +104,6 @@ session = Session()
 mdb = Mdb()
 
 backwardCompatibility = BackwardCompatibility()
+
+YES = SymbolicConstant('YES')
+NO = SymbolicConstant('NO')
