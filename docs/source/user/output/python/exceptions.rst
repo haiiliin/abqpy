@@ -6,7 +6,7 @@ Python exception handling in the output database is identical to that in the mod
 
 The exceptions thrown are of type OdbError; for example, the following script catches exceptions thrown when the python interface in not successful in opening an output database:
 
-.. code-block:: python
+.. code-block:: python2
     
     invalidOdbName = "invalid.odb"
     try:
