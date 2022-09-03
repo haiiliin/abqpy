@@ -21,17 +21,15 @@ class BeamSection(Section):
             import odbSection
             session.odbs[name].sections[name]
 
-            The table data for this object are:
-            
-            The table data specify the following:
-            
-                - E, the Young's modulus of the section.
-                - G, the torsional shear modulus of the section.
-                - Thermal expansion coefficient, if using thermal expansion.
-                - Temperature, if the data depend on temperature.
-                - Value of the first field variable, if the data depend on field variables.
-                - Value of the second field variable.
-                - Etc.
+        The table data for this object are:
+        
+        - E, the Young's modulus of the section.
+        - G, the torsional shear modulus of the section.
+        - Thermal expansion coefficient, if using thermal expansion.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
         The corresponding analysis keywords are:
 
