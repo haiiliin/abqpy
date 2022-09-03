@@ -142,9 +142,9 @@ class ConnectorDamping(ConnectorBehaviorOption):
             .. code-block:: python
 
                 import connectorBehavior
-                          connectorBehavior.ConnectorDamping
-                          import odbConnectorBehavior
-                          odbConnectorBehavior.ConnectorDamping
+                connectorBehavior.ConnectorDamping
+                import odbConnectorBehavior
+                odbConnectorBehavior.ConnectorDamping
 
         Parameters
         ----------
