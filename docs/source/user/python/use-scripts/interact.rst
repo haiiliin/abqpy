@@ -77,7 +77,7 @@ The arguments to the callback function are:
     - HEALER_PHASE
   
   - **processId**: An Int specifying the process ID of the analysis program.
-  - **threadId**: An Int specifying the thread ID of the analysis program. Threads are used for parallel or multiprocessing; in most cases **threadId**is set to zero.
+  - **threadId**: An Int specifying the thread ID of the analysis program. Threads are used for parallel or multiprocessing; in most cases **threadId** is set to zero.
   - **timeStamp**: An Int specifying the time the message was sent in seconds since 00:00:00 UTC, January 1, 1970.
 - **userData**: Any Python object or `None`. This object is passed as the **userData** argument to `addMessageCallback`.
 
