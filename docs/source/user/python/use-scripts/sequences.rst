@@ -23,7 +23,7 @@ The equivalent Abaqus Scripting Interface command is
         (220.0E9, 0.3, 250.0), 
         (225.0E9, 0.3, 500.0)))
 
-The `table` argument is described in the :doc:`references` as a sequence of sequences of Floats.
+The `table` argument is described in the :doc:`/references` as a sequence of sequences of Floats.
 
 Lists, tuples, strings, and arrays are described in Sequences. In addition, the Abaqus Scripting Interface defines some of its own sequences that contain objects of the same type.
 
