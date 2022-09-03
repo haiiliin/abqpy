@@ -73,9 +73,9 @@ Abaqus does not write all the model data to the output database; for example, yo
 
   Interaction properties define the physical behavior of surfaces involved in an interaction. Only tangential friction behavior is written to the output database.
 
-:numref:`odb-model-nls` shows the model data object model.
+:numref:`odb-model-nls-cpp` shows the model data object model.
 
-.. _odb-model-nls:
+.. _odb-model-nls-cpp:
 .. figure:: /images/odb-model-nls.png
     :width: 100%
     :align: center
