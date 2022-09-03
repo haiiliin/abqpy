@@ -13,6 +13,7 @@ Creating a new output database
 
 You use the Odb constructor to create a new, empty Odb object.
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     odb = Odb(name='myData',
@@ -24,6 +25,7 @@ For a full description of the Odb command, see :py:class:`~abaqus.Odb.Odb.Odb` o
 
 You use the `save` method to `save` the output database.
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     odb.save()
@@ -194,6 +196,7 @@ Writing field output data
 
 A FieldOutput object contains a cloud of data values (e.g., stress tensors at each integration point for all elements). Each data value has a location, type, and value. You add field output data to a Frame object by first creating a FieldOutput object using the FieldOutput constructor and then adding data to the FieldOutput object using the `addData` method. For example,
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     # Create the part and the instance.
@@ -238,6 +241,7 @@ Default display properties
 
 The previous examples show how you can use commands to set the default field variable and deformed field variable. Abaqus/CAE uses the default field variable setting to determine the variable to display in a contour plot; for example, stress. Similarly, the default deformed field variable determines the variable that distinguishes a deformed plot from an undeformed plot. Typically, you will use displacement for the default deformed field variable; you cannot specify an invariant or a component. The default variable settings apply for each frame in the step. For example, the following statements use the deformation 'U' as the default setting for both field variable and deformed field variable settings during a particular step:
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     field=odb.steps['impact'].frames[1].fieldOutputs['U']
@@ -246,6 +250,7 @@ The previous examples show how you can use commands to set the default field var
 
 You can set a different default field variable and deformed field variable for different steps. You will need to use a loop to set the defaults for each step. For example,
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     for step in odb.steps.values():
@@ -265,6 +270,7 @@ History output is output defined for a single point or for values calculated for
 
 The output from all history requests that relate to a specified point is collected in one HistoryRegion object. You use the HistoryPoint constructor to create the point. For example,
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     point1 = HistoryPoint(element=instance1.elements[0])
@@ -273,6 +279,7 @@ For a full description of the HistoryPoint command, see :py:class:`~abaqus.Odb.H
 
 You then use the HistoryRegion constructor to create a HistoryRegion object:
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     step1 = odb.Step(name='step-1',  
@@ -284,6 +291,7 @@ For a full description of the HistoryRegion command, see :py:class:`~abaqus.Odb.
 
 You use the HistoryOutput constructor to add variables to the HistoryRegion object.
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     h1_u1 = h1.HistoryOutput(name='U1',
@@ -308,6 +316,7 @@ Each HistoryOutput object contains a sequence of (**frameValue**, **value**) seq
 You add the data values as time and data tuples. The number of data items must correspond to the number of time items. For example,
 
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     timeData = (0.0, 0.1, 0.3, 1.0)

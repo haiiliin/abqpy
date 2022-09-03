@@ -582,7 +582,7 @@ class PredefinedFieldModel(
             The default value is CONSTANT_THROUGH_THICKNESS.
         field
             A String specifying the name of the AnalyticalField or DiscreteField object associated
-            with this predefined field. The **field**argument applies only when
+            with this predefined field. The **field** argument applies only when
             **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. The default value is an
             empty string.
         amplitude
@@ -591,8 +591,7 @@ class PredefinedFieldModel(
             value is UNSET. 
             
             .. note::
-                **amplitude**should be given only if it is valid for the specified
-            step.
+                **amplitude** should be given only if it is valid for the specified step.
         fileName
             A String specifying the name of the file from which the Field values are to be read when
             **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED.
@@ -612,7 +611,7 @@ class PredefinedFieldModel(
             **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         endIncrement
-            An Int specifying the last increment of the step set in **endStep**or the
+            An Int specifying the last increment of the step set in **endStep** or the
             SymbolicConstants STEP_START and STEP_END. This argument is valid only when
             **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
@@ -622,17 +621,17 @@ class PredefinedFieldModel(
             value is OFF.
         magnitudes
             A Sequence of Doubles specifying the Field values when **distributionType** = UNIFORM or
-            FIELD. The value of the **magnitudes**argument is a function of the
-            **crossSectionDistribution**argument, as shown in the following list:
+            FIELD. The value of the **magnitudes** argument is a function of the
+            **crossSectionDistribution** argument, as shown in the following list:
             
-            - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS, **magnitudes**is a Double
+            - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS, **magnitudes** is a Double
               specifying the Field.
-            - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS, **magnitudes**is a sequence
+            - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS, **magnitudes** is a sequence
               of Doubles specifying the mean value and the gradient in the thickness direction.
-            - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS, **magnitudes**is a sequence of
+            - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS, **magnitudes** is a sequence of
               Doubles specifying the mean value, the gradient in the N1 direction, and the gradient in
               the N2 direction.
-            - If **crossSectionDistribution** = POINTS_THROUGH_SECTION, **magnitudes**is a sequence of
+            - If **crossSectionDistribution** = POINTS_THROUGH_SECTION, **magnitudes** is a sequence of
               Doubles specifying the Field at each point.
 
         Returns

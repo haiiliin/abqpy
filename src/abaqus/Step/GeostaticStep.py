@@ -30,8 +30,8 @@ class GeostaticStep(AnalysisStep):
 
         .. code-block:: python
 
-            import
-            step mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
         The corresponding analysis keywords are:
 

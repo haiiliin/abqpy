@@ -82,14 +82,6 @@ AcousticPressureBCState
 
     .. autoclasstoc::
 
-Calibration
-~~~~~~~~~~~
-
-.. autoclass:: abaqus.Calibration.Calibration.Calibration
-    :members:
-
-    .. autoclasstoc::
-
 ConcentrationBC
 ~~~~~~~~~~~~~~~
 

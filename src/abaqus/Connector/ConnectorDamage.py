@@ -245,9 +245,9 @@ class ConnectorDamage(ConnectorBehaviorOption):
             .. code-block:: python
 
                 import connectorBehavior
-                          connectorBehavior.ConnectorDamage
-                          import odbConnectorBehavior
-                          odbConnectorBehavior.ConnectorDamage
+                connectorBehavior.ConnectorDamage
+                import odbConnectorBehavior
+                odbConnectorBehavior.ConnectorDamage
 
         Parameters
         ----------

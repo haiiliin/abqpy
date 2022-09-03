@@ -162,7 +162,7 @@ class AnalyticalField(Field):
             IMAGINARY, and COMPLEX_MAG_AT_ANGLE. The default value is REAL.
         complexAngle
             A Float specifying the angle (in degrees) at which to display results that contain
-            complex numbers when **numericForm=COMPLEX_MAG_AT_ANGLE** = COMPLEX_MAG_AT_ANGLE. The
+            complex numbers when **numericForm = COMPLEX_MAG_AT_ANGLE = COMPLEX_MAG_AT_ANGLE**. The
             default value is 0.0.
         sectionPoint
             A Dictionary with String keys and String values. Each key specifies a region in the
