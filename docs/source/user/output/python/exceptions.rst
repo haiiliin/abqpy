@@ -2,7 +2,7 @@
 Exception handling in an output database
 ========================================
 
-Python exception handling in the output database is identical to that in the model database. Python exception handling is described in :doc:`user/python/python-abaqus/errors:exceptions handling`.
+Python exception handling in the output database is identical to that in the model database. Python exception handling is described in :doc:`/user/python/python-abaqus/errors:exceptions handling`.
 
 The exceptions thrown are of type OdbError; for example, the following script catches exceptions thrown when the python interface in not successful in opening an output database:
 

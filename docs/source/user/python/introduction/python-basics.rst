@@ -158,7 +158,7 @@ Remember, functions of a type are called methods; data of a type are called memb
 Sequences
 ~~~~~~~~~
 
-Sequences include strings, lists, tuples, and arrays. Sequences are described in :doc:`sequences` and :doc:`sequence-operations`.
+Sequences include strings, lists, tuples, and arrays. Sequences are described in :doc:`/sequences` and :doc:`/sequence-operations`.
 
 Determining the type of a variable
 ----------------------------------
@@ -545,7 +545,7 @@ Python defines a special object called the None object or Python None that repre
 Continuation lines and comments
 -------------------------------
 
-You can continue a statement on the following line if you break the statement between a set of (), {}, or [] delimiters. For example, look at the tuple that was used in :doc:`user/about/examples/creat-part` to assign the coordinates of the vertices to a variable:
+You can continue a statement on the following line if you break the statement between a set of (), {}, or [] delimiters. For example, look at the tuple that was used in :doc:`/user/about/examples/creat-part` to assign the coordinates of the vertices to a variable:
 
 .. autolink-concat:: off
 .. code-block:: python2
