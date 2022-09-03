@@ -39,7 +39,7 @@ The standard Python statement `object.__methods__` lists all the methods of an o
     
     session.viewports['myViewport'].__methods__ 
 
-See the :doc:`references` for a description of each method of the Abaqus Scripting Interface objects.
+See the :doc:`/references` for a description of each method of the Abaqus Scripting Interface objects.
 
 The Abaqus Scripting Interface and members
 ------------------------------------------
@@ -116,7 +116,7 @@ The following statements illustrate the use of constructors, methods, and member
     mySection.name = solidSteel  
     mySection.thickness = 1.0
 
-You use the `Access` description provided with each object in the :doc:`references` to determine how you access the object. You append a method or member to this description when you are writing a script. Similarly, you use the `Path` description provided with each constructor in the :doc:`references` to determine the path to the constructor.
+You use the `Access` description provided with each object in the :doc:`/references` to determine how you access the object. You append a method or member to this description when you are writing a script. Similarly, you use the `Path` description provided with each constructor in the :doc:`/references` to determine the path to the constructor.
 
 Object-oriented programming and the Abaqus Scripting Interface - a summary
 --------------------------------------------------------------------------
@@ -137,9 +137,9 @@ The following list summarizes some of the concepts behind object-oriented progra
 
 - After you create an object, you then use methods of the object to enter or to modify the data associated with the object. For example, if you are creating an output database, you first create an Odb object. You then use the `addNodes` and `addElements` methods of the Part object to add nodes and elements, respectively. Similarly, you use the `addData` method of the `FieldOutput` object to add field output data to the output database.
 
-- You use the `Access` description provided with each object in the :doc:`references` to determine how you access the object. You append a method or a member to this description when you are writing a script.
+- You use the `Access` description provided with each object in the :doc:`/references` to determine how you access the object. You append a method or a member to this description when you are writing a script.
 
-- You use the `Path` description provided with each constructor in the :doc:`references` to determine the path to the constructor.
+- You use the `Path` description provided with each constructor in the :doc:`/references` to determine the path to the constructor.
 
 - You use the `setValues()` method to modify the members of an Abaqus Scripting Interface object.
 
