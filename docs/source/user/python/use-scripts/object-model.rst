@@ -9,7 +9,7 @@ About the Abaqus object model
 
 The object model is an important concept in object-oriented programming. The object model consists of the following:
 
-- A definition of each Abaqus Scripting Interface object including its methods and data members. The object definitions are found in the :doc:`references`.
+- A definition of each Abaqus Scripting Interface object including its methods and data members. The object definitions are found in the :doc:`/references`.
 
 - Definitions of the relationships between the objects. These relationships form the structure or the hierarchy of the object model. The relationships between the objects are summarized in the following list:
 
@@ -219,7 +219,7 @@ In general, you should use the following approach to importing Abaqus modules:
 
     import modulename
 
-The description of an object in the :doc:`references` includes an `Access` section that describes which module Abaqus/CAE imported to make the object available and how you can access the object from a command. After Abaqus/CAE imports a module, all the objects associated with the module become available to you. In addition, all the methods and members associated with each object are also available.
+The description of an object in the :doc:`/references` includes an `Access` section that describes which module Abaqus/CAE imported to make the object available and how you can access the object from a command. After Abaqus/CAE imports a module, all the objects associated with the module become available to you. In addition, all the methods and members associated with each object are also available.
 
 The following table describes the relationship between some of the modules in the Abaqus Scripting Interface and the functionality of the modules and toolsets found in Abaqus/CAE:
 

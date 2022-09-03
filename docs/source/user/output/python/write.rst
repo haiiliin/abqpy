@@ -6,7 +6,7 @@ You can write your own data to an output database, and you can use Abaqus/CAE to
 
 After you create an object, you use methods of the objects to enter or modify the data associated with the object. For example, if you are creating an output database, you first create an Odb object. You then use the Part constructor to create a part. After creating the part, you use the addNodes and addElements methods of the Part object to add nodes and elements, respectively. Similarly, you use the addData method of the FieldOutput object to add field output data to the output database. After creating an output database, you should use the save method on the Odb object to save the output database.
 
-The example script in :doc:`user/output/python/examples:creating an output database` also illustrates how you can write to an output database.
+The example script in :doc:`/user/output/python/examples:creating an output database` also illustrates how you can write to an output database.
 
 Creating a new output database
 ------------------------------
@@ -117,7 +117,7 @@ To define the geometry of your model, you first create the parts that are used b
       nodeSet = assembly.NodeSetFromNodeLabels(
           name='nodesetRA',((instanceName,nodeLabels),))
   
-  The region commands are described in :doc:`reference/mdb/model/part_assembly/region.
+  The region commands are described in :doc:`/reference/mdb/model/part_assembly/region.
 
 - **Materials**
 
@@ -129,7 +129,7 @@ To define the geometry of your model, you first create the parts that are used b
       material_1 = odb.Material(name=materialName)
       material_1.Elastic(type=ISOTROPIC,table=((12000,0.3),))
   
-  For more information, see :doc:`reference/mdb/material`.
+  For more information, see :doc:`/reference/mdb/material`.
 
 - **Sections**
 

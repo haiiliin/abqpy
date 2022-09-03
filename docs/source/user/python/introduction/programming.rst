@@ -394,7 +394,7 @@ You can raise your own exceptions by providing the error type and the error mess
     except ValueError, error:
         print error
 
-Exception handling is discussed in more detail in Error handling in the :doc:`references`.
+Exception handling is discussed in more detail in Error handling in the :doc:`/references`.
 
 Functions and modules
 ---------------------
