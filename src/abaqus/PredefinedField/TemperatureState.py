@@ -121,6 +121,7 @@ class TemperatureState(PredefinedFieldState):
     #: - BUILT_INTO_BASE_STATE
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
+    #: 
     #: This member exists in all PredefinedFieldState objects, but different predefined fields
     #: use different subsets of the entire list of possible values depending on propagation
     #: rules.

@@ -198,7 +198,7 @@ class ContourOptions(DGContourOptions):
 
     #: A Boolean specifying whether to hide the values outside the specified min/max in the
     #: contour legend. This setting hides the *autoMinValue* and *autoMaxValue* from the
-    #: spectrum when *legendHideOutsideLimits*=ON.The default value is OFF.
+    #: spectrum when *legendHideOutsideLimits* = ON.The default value is OFF.
     #:
     #: ..versionadded:: 2019
     #:     The `legendHideOutsideLimits` attribute was added.
@@ -300,7 +300,7 @@ class ContourOptions(DGContourOptions):
             default value is "Rainbow".
         reversedContourLegendRange
             A Boolean specifying whether the contour legend should show the lowest value at the top
-            and the highest value at the bottom (*reversedContourLegendRange*=ON) or vice versa. The
+            and the highest value at the bottom (*reversedContourLegendRange* = ON) or vice versa. The
             default value is OFF.
 
             .. versionadded:: 2018
@@ -365,7 +365,7 @@ class ContourOptions(DGContourOptions):
             OFF.
         legendHideOutsideLimits
             A Boolean specifying whether to hide the values outside the specified minimum/maximum
-            for the contour interval when *legendHideOutsideLimits*=ON. The default value is OFF.
+            for the contour interval when *legendHideOutsideLimits* = ON. The default value is OFF.
 
             .. versionadded:: 2019
                 The `legendHideOutsideLimits` argument was added.

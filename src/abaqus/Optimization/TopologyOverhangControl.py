@@ -55,7 +55,7 @@ class TopologyOverhangControl(GeometricRestriction):
             A Region object specifying the region to which the geometric restriction is applied.
         csys
             None or a DatumCsys object specifying the local coordinate system of the
-            *pullDirection*. If *csys*=None, the global coordinate system is used. When this member
+            *pullDirection*. If *csys* = None, the global coordinate system is used. When this member
             is queried, it returns an Int indicating the identifier of the DatumCsys. The default
             value is None.
         draftAngle
@@ -97,7 +97,7 @@ class TopologyOverhangControl(GeometricRestriction):
         ----------
         csys
             None or a DatumCsys object specifying the local coordinate system of the
-            *pullDirection*. If *csys*=None, the global coordinate system is used. When this member
+            *pullDirection*. If *csys* = None, the global coordinate system is used. When this member
             is queried, it returns an Int indicating the identifier of the DatumCsys. The default
             value is None.
         draftAngle
