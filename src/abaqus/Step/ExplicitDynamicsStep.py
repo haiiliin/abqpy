@@ -268,7 +268,7 @@ class ExplicitDynamicsStep(AnalysisStep):
             value is ON.
 
             .. versionadded:: 2018
-                The *improvedDtMethod* argument was added.
+                The **improvedDtMethod**argument was added.
 
         Returns
         -------
@@ -342,7 +342,7 @@ class ExplicitDynamicsStep(AnalysisStep):
             value is ON.
 
             .. versionadded:: 2018
-                The *improvedDtMethod* argument was added.
+                The **improvedDtMethod**argument was added.
 
         Raises
         ------
