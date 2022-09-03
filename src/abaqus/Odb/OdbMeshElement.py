@@ -80,9 +80,9 @@ class OdbMeshElement:
         match
             A SymbolicConstant specifying which frame to return if there is no frame at the exact
             frame value. Possible values are CLOSEST, BEFORE, AFTER, and EXACT. The default value is
-            CLOSEST.When *match*=CLOSEST, Abaqus returns the closest frame. If the frame value
+            CLOSEST.When *match* = CLOSEST, Abaqus returns the closest frame. If the frame value
             requested is exactly halfway between two frames, Abaqus returns the frame after the
-            value.When *match*=EXACT, Abaqus raises an exception if the exact frame value does not
+            value.When *match* = EXACT, Abaqus raises an exception if the exact frame value does not
             exist.
 
         Returns
