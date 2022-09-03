@@ -35,7 +35,7 @@ AmplitudeOdb
 FilterOdb
 ~~~~~~~~~
 
-.. autoclass:: abaqus.FilterFilterOdb.FilterOdb
+.. autoclass:: abaqus.Filter.FilterOdb.FilterOdb
     :members:
 
     .. autoclasstoc::
@@ -188,10 +188,8 @@ OdbAssemblyBase
 OdbCommands
 ~~~~~~~~~~~
 
-.. autoclass:: abaqus.Odb.OdbCommands.OdbCommands
+.. automodule:: abaqus.Odb.OdbCommands
     :members:
-
-    .. autoclasstoc::
 
 OdbDatumCsys
 ~~~~~~~~~~~~

@@ -31,7 +31,7 @@ Part
 PartBase
 ~~~~~~~~
 
-.. autoclass:: abaqus.Part.Partbase.PartBase
+.. autoclass:: abaqus.Part.PartBase.PartBase
     :members:
 
     .. autoclasstoc::
