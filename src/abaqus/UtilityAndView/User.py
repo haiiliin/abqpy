@@ -98,10 +98,10 @@ def getWarningReply(message: str, buttons: str):
     value and closes the dialog box. You can use a separator in the message argument to
     provide a multi-line message in the warning dialog box; for example
     
+    .. autolink-concat:: off
     .. code-block:: python
 
         from abaqus import *
-        from abaqusConstants import *
         getWarningReply('Out of disk space!\nOkay to continue', (YES, NO))
     
     .. note:: 
