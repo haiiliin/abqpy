@@ -564,9 +564,9 @@ class MeshAssembly(AssemblyBase):
             - MIN_TRANSITION
 
             The return value is dependent on the **attribute** argument.
+            
             - If **attribute** = ELEM_SHAPE, the return value is a SymbolicConstant specifying the
               element shape used during meshing. Possible values are: LINE, QUAD, TRI,  QUAD_DOMINATED, HEX, TET, WEDGE, HEX_DOMINATED
-
             - If **attribute** = TECHNIQUE, the return value is a SymbolicConstant specifying the
               meshing technique to be used during meshing. Possible values are: FREE, STRUCTURED, SWEEP, UNMESHABLE, Where UNMESHABLE indicates that no meshing technique is applicable with the currently assigned element shape.
             - If **attribute** = ALGORITHM, the return value is a SymbolicConstant specifying the
