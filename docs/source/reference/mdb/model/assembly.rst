@@ -62,7 +62,7 @@ Feature
 ModelInstance
 ~~~~~~~~~~~~~
 
-.. autoclass:: abaqus.Model.Model.ModelInstance
+.. autoclass:: abaqus.Assembly.ModelInstance.ModelInstance
     :members:
 
     .. autoclasstoc::
