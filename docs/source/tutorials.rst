@@ -45,6 +45,7 @@ Header of the script
 
 Usually, when we use Python script to build the model, we need to import the following modules:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     from abaqus import *
@@ -53,6 +54,7 @@ Usually, when we use Python script to build the model, we need to import the fol
 
 Module `abaqus` contains two most important variable `mdb` and `session` which control the model. Module `abaqusConstants` contains constant strings used in modelling, i.e., when we defines a part using the following code:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     mdb.models['Model-1'].Part(name='part', dimensionality=THREE_D, type=DEFORMABLE_BODY)
@@ -61,6 +63,7 @@ Module `abaqus` contains two most important variable `mdb` and `session` which c
 
 Module `driverUtils` contains an important function `executeOnCaeStartup`, this function will be execute each time we open the Abaqus, so we need to call this function in our Python script. Now, the header of our Python script would be like:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     from abaqus import *
@@ -75,6 +78,7 @@ Create parts
 
 First we need to create a sketch that will be used to create the part, we need to use :py:meth:`~abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch` to create a sketch:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     model = mdb.models['Model-1']
@@ -83,6 +87,7 @@ First we need to create a sketch that will be used to create the part, we need t
 
 In this code, we draw a sketch with a square. Now we can create a part using this sketch:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     part = model.Part(name='part', dimensionality=THREE_D, type=DEFORMABLE_BODY)
@@ -98,6 +103,7 @@ Unlike building a model in Abaqus/CAE, we can just click the nodes/faces to crea
 
 We can use :py:meth:`~abaqus.Region.RegionPart.RegionPart.Set` and :py:meth:`~abaqus.Region.RegionPart.RegionPart.Surface` to create sets and surfaces:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     part.Set(name='set-all', cells=part.cells.findAt(coordinates=((0.5, 0.5, 0.5), )))
@@ -111,6 +117,7 @@ Merge parts to assembly
 
 We can use :py:meth:`~abaqus.Assembly.AssemblyBase.AssemblyBase.Instance` to create instances：
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     model.rootAssembly.DatumCsysByDefault(CARTESIAN)
@@ -121,12 +128,14 @@ Create materials and sections, and assign materials to sections
 
 First we create a Material object using :py:meth:`~abaqus.Material.MaterialModel.MaterialModel.Material`:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     material = model.Material(name='material')
 
 Then we assign some properties to the Material object, i.e., :py:meth:`~abaqus.Material.Material.Material.Elastic` and :py:meth:`~abaqus.Material.Material.Material.Density`:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     material.Elastic(table=((1000, 0.2), ))
@@ -134,6 +143,7 @@ Then we assign some properties to the Material object, i.e., :py:meth:`~abaqus.M
 
 Then we create a :py:meth:`~abaqus.Section.SectionModel.SectionModel.HomogeneousSolidSection` and assign the material to the section (:py:meth:`~abaqus.Property.PropertyPart.PropertyPart.SectionAssignment`):
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     model.HomogeneousSolidSection(name='section', material='material', thickness=None)
@@ -145,6 +155,7 @@ Create steps
 
 It is easy to create a :py:meth:`~abaqus.Step.StepModel.StepModel.StaticStep`:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     step = model.StaticStep(name='Step-1', previous='Initial', description='', 
@@ -157,6 +168,7 @@ Specify output requests
 
 We can use the :py:meth:`~abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest` and :py:meth:`~abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest` to specify field output and history output information.
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     field = model.FieldOutputRequest('F-Output-1', createStepName='Step-1', 
@@ -168,6 +180,7 @@ Create boundary conditions
 
 We can use :py:meth:`~abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC` to create a displacement boundary condition:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     bottom_instance = model.rootAssembly.instances['instance'].sets['set-bottom']
@@ -181,6 +194,7 @@ Create loads
 
 We can use :py:meth:`~abaqus.Load.LoadModel.LoadModel.Pressure` ro create a pressure:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     top_instance = model.rootAssembly.instances['instance'].surfaces['surface-top']
@@ -193,6 +207,7 @@ Mesh
 
 To mesh the model, we have to set the :py:class:`~abaqus.Mesh.ElemType.ElemType`, which is defined in the `mesh` module, so we need to import `mesh` module:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     import mesh
@@ -210,18 +225,21 @@ Create jobs
 
 We can use :py:meth:`~abaqus.Job.JobMdb.JobMdb.Job` to create a job:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     job = mdb.Job(name='Job-1', model='Model-1')
 
 Then we can write the model to an input file (`.inp`):
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     job.writeInput()
 
 Then we can submit the job:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     job.submit()
@@ -233,18 +251,21 @@ Save the Abaqus model to a `.cae` file
 
 We can use :py:class:`~abaqus.Mdb.MdbBase.MdbBase.saveAs` to save the Abaqus model to a `.cae` file:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     mdb.saveAs('compression.cae')
 
 It should be noted that we have to use this function to save the model when we use `abqpy` to build an Abaqus model. It is because that when we execute all the above codes, the Python script has not been sent to Abaqus kernel. All the functions mentioned above are included in `abqpy`, however, nothing has been done inside this functions, they are just provided for type hints. Therefore, if we want to send the Python script to the Abaqus kernel, we have to use the Abaqus command like this:
 
+.. autolink-concat:: on
 .. code-block:: sh
 
     abaqus cae -noGUI script.py
 
 In order to make it simple, this has been done in the :py:meth:`~abaqus.Mdb.MdbBase.MdbBase.saveAs` function:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     def saveAs(self, pathName: str):
@@ -259,6 +280,7 @@ The whole script
 
 The whole script of this example is showed as follows:
 
+.. autolink-concat:: on
 .. code-block:: Python
     :caption: compression.py
 
@@ -347,6 +369,7 @@ Header of the output script
 
 Similarly, we have to import some modules:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     from abaqus import *
@@ -361,6 +384,7 @@ Open the output database
 
 We can use :py:meth:`~abaqus.Session.SessionBase.SessionBase.openOdb` to open the output database:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     odb = session.openOdb('Job-1.odb')
@@ -371,6 +395,7 @@ Extract the data
 
 We can use the :py:meth:`~abaqus.XY.XYSession.XYSession.xyDataListFromField` to extract the output data:
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     dataList = session.xyDataListFromField(odb=odb, outputPosition=NODAL, 
@@ -379,6 +404,7 @@ We can use the :py:meth:`~abaqus.XY.XYSession.XYSession.xyDataListFromField` to 
 
 `dataList` is a list of `XYData` objects. `XYData` is a data type defined in Abaqus, the data is stored in tuples of tuples, so we can simply save it to a file, i.e., using the `numpy` (`numpy` is installed in Python interpreter of Abaqus already):
 
+.. autolink-concat:: on
 .. code-block:: Python
 
     import numpy as np
@@ -411,6 +437,7 @@ The whole output script
 
 The whole output script of this example is showed as follows:
 
+.. autolink-concat:: on
 .. code-block:: Python
     :caption: compression-output.py
 
