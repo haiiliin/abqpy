@@ -58,6 +58,9 @@ extensions = [
     'sphinx_codeautolink',
 ]
 
+# Default behavior for code block concatenation for sphinx_codeautolink
+codeautolink_concat_default = True
+
 intersphinx_mapping = {
     'numpy': ('https://numpy.org/doc/stable/', None),
     'pandas': ('https://pandas.pydata.org/pandas-docs/stable/', None),
