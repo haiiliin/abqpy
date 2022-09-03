@@ -65,5 +65,5 @@ class ReferencePoint:
         Returns
         -------
         Feature
-            A :py:class:`~abaqus.Assembly.Feature.Feature` object.
+            A :py:class:`~abaqus.Feature.Feature.Feature` object.
         """
