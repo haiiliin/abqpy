@@ -5,9 +5,13 @@ from .._decorators import abaqus_function_doc
 """ This command evaluates the behavior of a hyperelastic material under standard test 
 conditions. 
 
-Notes
------
-    - from material import evaluateMaterial
+
+.. note::
+    This object can be accessed by:
+    
+    .. code-block:: python
+    
+        from material import evaluateMaterial
 
 """
 
