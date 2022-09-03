@@ -6,16 +6,15 @@ class GapRadiation:
     """The GapRadiation object specifies radiative heat transfer between closely adjacent
     surfaces.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note::
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].gapRadiation
-        import odbMaterial
-        session.odbs[name].materials[name].gapRadiation
+            import material
+            mdb.models[name].materials[name].gapRadiation
+            import odbMaterial
+            session.odbs[name].materials[name].gapRadiation
 
         The table data for this object are:
 
