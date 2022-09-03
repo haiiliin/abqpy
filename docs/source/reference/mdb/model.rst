@@ -190,7 +190,7 @@ BeamSectionProfileModel
 OutputModel
 ~~~~~~~~~~~
 
-.. autoclass:: StepOutput.StepOutput.OutputModel.OutputModel
+.. autoclass:: abaqus.StepOutput.OutputModel.OutputModel
     :members:
     :inherited-members:
 
@@ -208,7 +208,7 @@ SectionModel
 SketchModel
 ~~~~~~~~~~~
 
-.. autoclass:: abaqus.Sketch.SketchModel.SketchModel
+.. autoclass:: abaqus.Sketcher.SketchModel.SketchModel
     :members:
     :inherited-members:
 
