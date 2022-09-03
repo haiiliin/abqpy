@@ -7,6 +7,8 @@ from .Mdb.Mdb import Mdb as AbaqusMdb
 from .Odb.Odb import Odb
 from .Session.Session import Session as AbaqusSession
 from .UtilityAndView.BackwardCompatibility import BackwardCompatibility
+from .UtilityAndView.User import *
+from .UtilityAndView.SymbolicConstant import SymbolicConstant
 
 try:
     from ._version import _default_version
@@ -102,3 +104,6 @@ session = Session()
 mdb = Mdb()
 
 backwardCompatibility = BackwardCompatibility()
+
+YES = SymbolicConstant('YES')
+NO = SymbolicConstant('NO')
