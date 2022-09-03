@@ -70,9 +70,9 @@ class ConnectorFailure(ConnectorBehaviorOption):
             .. code-block:: python
 
                 import connectorBehavior
-                          connectorBehavior.ConnectorFailure
-                          import odbConnectorBehavior
-                          odbConnectorBehavior.ConnectorFailure
+                connectorBehavior.ConnectorFailure
+                import odbConnectorBehavior
+                odbConnectorBehavior.ConnectorFailure
 
         Parameters
         ----------

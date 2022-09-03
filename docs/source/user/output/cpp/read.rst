@@ -327,7 +327,7 @@ The following list describes the objects in model data and the commands you use 
         }
     }
   
-  :doc:`reference/mdb/model/material` describes the Material object commands in more detail; the odb_Union object is defined in `Union object <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-infunioncpp.htm?contextscope=all>`_.
+  :doc:`/reference/mdb/model/material` describes the Material object commands in more detail; the odb_Union object is defined in `Union object <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-infunioncpp.htm?contextscope=all>`_.
 
 - **Sections**
 

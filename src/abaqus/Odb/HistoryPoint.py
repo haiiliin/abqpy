@@ -45,6 +45,7 @@ class HistoryPoint:
     #: - END1, specifying this value indicates that element end 1 has been specified.
     #: - END2, specifying this value indicates that element end 2 has been specified.
     #: - END3, specifying this value indicates that element end 3 has been specified.
+    #: 
     #: The default value is FACE_UNKNOWN.
     face: SymbolicConstant = FACE_UNKNOWN
 
@@ -53,13 +54,13 @@ class HistoryPoint:
     #: 
     #: - NODAL, specifying the values calculated at the nodes.
     #: - ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at
-    #: the integration points.
+    #:   the integration points.
     #: - INTEGRATION_POINT, specifying the values calculated at the integration points.
     #: - ELEMENT_FACE, specifying the results obtained for surface variables such as cavity
-    #: radiation that are defined for the surface facets of an element.
+    #:   radiation that are defined for the surface facets of an element.
     #: - ELEMENT_FACE_INTEGRATION_POINT, specifying the results obtained for surface variables
-    #: such as cavity radiation that are defined for the surface facets of an element when the
-    #: surface facets have integration points.
+    #:   such as cavity radiation that are defined for the surface facets of an element when the
+    #:   surface facets have integration points.
     #: - WHOLE_ELEMENT, specifying the results obtained for whole element variables.
     #: - WHOLE_REGION, specifying the results for an entire region of the model.
     #: - WHOLE_PART_INSTANCE, specifying the results for an entire part instance of the model.

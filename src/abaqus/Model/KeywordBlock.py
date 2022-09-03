@@ -108,7 +108,7 @@ class KeywordBlock:
             Abaqus/CAE database, this will result in a larger database. It will also result in a
             slower execution of the synchVersions command. If **storeNodesAndElements** is False, the
             data lines are not stored in **sieBlocks**. Consequently, only set
-            **storeNodesAndElements** = True if you wish to make changes to the *NODE or *ELEMENT data
+            **storeNodesAndElements** = True if you wish to make changes to the **NODE** or **ELEMENT** data
             lines themselves. If your task is limited to reading nodal coordinates and element
             connectivities (i.e. not editing this information) then it is generally better to access
             this information from other parts of the Mdb.

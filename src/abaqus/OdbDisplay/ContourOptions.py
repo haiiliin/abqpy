@@ -291,7 +291,7 @@ class ContourOptions(DGContourOptions):
             default value is "Rainbow".
         reversedContourLegendRange
             A Boolean specifying whether the contour legend should show the lowest value at the top
-            and the highest value at the bottom (*reversedContourLegendRange*=ON) or vice versa. The
+            and the highest value at the bottom (*reversedContourLegendRange* = ON) or vice versa. The
             default value is OFF.
 
             .. versionadded:: 2018

@@ -148,9 +148,9 @@ class GraphicsOptions:
     #: graphics driver uses a software implementation of OpenGL that is included with the
     #: operating system. This results in slower drawing on most systems; however, you may have
     #: to use the software implementation of OpenGL if the hardware graphics driver is
-    #: incompatible with Abaqus/CAE.*hardwareAcceleration* is used only when you first start
+    #: incompatible with Abaqus/CAE. **hardwareAcceleration** is used only when you first start
     #: Abaqus/CAE on a Windows platform; you cannot configure **hardwareAcceleration** during a
-    #: session.*hardwareAcceleration* is not used when you start Abaqus/CAE on an X-Windows
+    #: session. **hardwareAcceleration** is not used when you start Abaqus/CAE on an X-Windows
     #: platform and display to a Windows platform running Exceed or any other X-Windows server.
     hardwareAcceleration: Boolean = ON
 
@@ -160,7 +160,7 @@ class GraphicsOptions:
     #: and the HARDWARE_OVERLAY highlight method will not be available. If viewports display a
     #: solid color and will not display the model, it will be necessary to inhibit hardware
     #: overlay completely by setting the ABAQUS_EMULATE_OVERLAYS environment variable (to any
-    #: value) before starting Abaqus/CAE.*hardwareOverlay* is used only when you first start
+    #: value) before starting Abaqus/CAE. **hardwareOverlay** is used only when you first start
     #: Abaqus/CAE; you cannot configure **hardwareOverlay** during a session.
     hardwareOverlay: Boolean = OFF
 
@@ -412,9 +412,9 @@ class GraphicsOptions:
             graphics driver uses a software implementation of OpenGL that is included with the
             operating system. This results in slower drawing on most systems; however, you may have
             to use the software implementation of OpenGL if the hardware graphics driver is
-            incompatible with Abaqus/CAE.*hardwareAcceleration* is used only when you first start
+            incompatible with Abaqus/CAE. **hardwareAcceleration** is used only when you first start
             Abaqus/CAE on a Windows platform; you cannot configure **hardwareAcceleration** during a
-            session.*hardwareAcceleration* is not used when you start Abaqus/CAE on an X-Windows
+            session. **hardwareAcceleration** is not used when you start Abaqus/CAE on an X-Windows
             platform and display to a Windows platform running Exceed or any other X-Windows server.
         hardwareOverlay
             A Boolean specifying whether hardware overlay planes will be used if available. The
@@ -423,7 +423,7 @@ class GraphicsOptions:
             and the HARDWARE_OVERLAY highlight method will not be available. If viewports display a
             solid color and will not display the model, it will be necessary to inhibit hardware
             overlay completely by setting the ABAQUS_EMULATE_OVERLAYS environment variable (to any
-            value) before starting Abaqus/CAE.*hardwareOverlay* is used only when you first start
+            value) before starting Abaqus/CAE. **hardwareOverlay** is used only when you first start
             Abaqus/CAE; you cannot configure **hardwareOverlay** during a session.
         textureMapping
             A Boolean specifying whether textures will be used to display contour plots. The default
