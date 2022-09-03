@@ -1500,7 +1500,7 @@ class PartBase(Feature):
             ALL_EDGES and COPLANAR_EDGES. If **filter** = COPLANAR_EDGES, edges that are coplanar to the
             sketching plane are the only candidates for projection. The default value is ALL_EDGES.
         upToFeature
-            A :py:class:`~abaqus.Assembly.Feature.Feature` object specifying a marker in the feature-based history of the part.
+            A :py:class:`~abaqus.Feature.Feature.Feature` object specifying a marker in the feature-based history of the part.
             Abaqus/CAE projects onto the sketch only the part entities that were created before the
             feature specified by this marker. By default, part entities in features created before
             the sketch you are editing are candidates for projection.
