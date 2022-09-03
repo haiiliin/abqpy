@@ -28,7 +28,7 @@ class FieldState(PredefinedFieldState):
     #: **distributionType** = FROM_FILE_AND_USER_DEFINED.
     outputVariable: str = ""
 
-    #: A SymbolicConstant specifying the propagation state of the **fileName**member. Possible
+    #: A SymbolicConstant specifying the propagation state of the **fileName** member. Possible
     #: values are UNSET, SET, and UNCHANGED.
     fileNameState: SymbolicConstant = None
 
@@ -38,17 +38,17 @@ class FieldState(PredefinedFieldState):
     #: and NONE. The default value is NONE.
     beginStep: SymbolicConstant = NONE
 
-    #: A SymbolicConstant specifying the propagation state of the **beginStep**member. Possible
+    #: A SymbolicConstant specifying the propagation state of the **beginStep** member. Possible
     #: values are UNSET, SET, and UNCHANGED.
     beginStepState: SymbolicConstant = None
 
-    #: None or an Int specifying the first increment of the step set in **beginStep**or the
+    #: None or an Int specifying the first increment of the step set in **beginStep** or the
     #: SymbolicConstants STEP_START or STEP_END. This argument is valid only when
     #: **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
     #: default value is None.
     beginIncrement: SymbolicConstant = None
 
-    #: A SymbolicConstant specifying the propagation state of the **beginIncrement**member.
+    #: A SymbolicConstant specifying the propagation state of the **beginIncrement** member.
     #: Possible values are UNSET, SET, and UNCHANGED.
     beginIncrementState: SymbolicConstant = None
 
@@ -58,21 +58,21 @@ class FieldState(PredefinedFieldState):
     #: default value is None.
     endStep: SymbolicConstant = None
 
-    #: A SymbolicConstant specifying the propagation state of the **endStep**member. Possible
+    #: A SymbolicConstant specifying the propagation state of the **endStep** member. Possible
     #: values are UNSET, SET, and UNCHANGED.
     endStepState: SymbolicConstant = None
 
-    #: None or an Int specifying the last increment of the step set in **endStep**or the
+    #: None or an Int specifying the last increment of the step set in **endStep** or the
     #: SymbolicConstants STEP_START and STEP_END. This argument is valid only when
     #: **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
     #: default value is None.
     endIncrement: SymbolicConstant = None
 
-    #: A SymbolicConstant specifying the propagation state of the **endIncrement**member.
+    #: A SymbolicConstant specifying the propagation state of the **endIncrement** member.
     #: Possible values are UNSET, SET, and UNCHANGED.
     endIncrementState: SymbolicConstant = None
 
-    #: A SymbolicConstant specifying the propagation state of the **amplitudeState**member.
+    #: A SymbolicConstant specifying the propagation state of the **amplitudeState** member.
     #: Possible values are UNSET, SET, and UNCHANGED.
     amplitudeState: SymbolicConstant = None
 
@@ -82,25 +82,25 @@ class FieldState(PredefinedFieldState):
 
     #: The SymbolicConstant UNSET or a String specifying the name of the amplitude reference.
     #: The SymbolicConstant UNSET should be used if the predefined field has no amplitude
-    #: reference. The default value is UNSET.Note: **amplitude**should be given only if it is
+    #: reference. The default value is UNSET.Note: **amplitude** should be given only if it is
     #: valid for the specified step.
     amplitude: SymbolicConstant = UNSET
 
     #: A tuple of SymbolicConstants specifying the propagation state of each item of the
-    #: **magnitudes**member. Possible values are UNSET, SET, and UNCHANGED.
+    #: **magnitudes** member. Possible values are UNSET, SET, and UNCHANGED.
     magnitudesState: SymbolicConstant = None
 
     #: A tuple of Floats specifying the field values when **distributionType** = UNIFORM or
-    #: **distributionType** = FIELD. The value of the **magnitudes**argument is a function of the
-    #: **crossSectionDistribution**argument, as shown in the following list:
-    #: - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS, **magnitudes**is a Double
+    #: **distributionType** = FIELD. The value of the **magnitudes** argument is a function of the
+    #: **crossSectionDistribution** argument, as shown in the following list:
+    #: - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS, **magnitudes** is a Double
     #:   specifying the field.
-    #: - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS, **magnitudes**is a sequence
+    #: - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS, **magnitudes** is a sequence
     #:   of Doubles specifying the mean value and the gradient in the thickness direction.
-    #: - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS, **magnitudes**is a sequence of
+    #: - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS, **magnitudes** is a sequence of
     #:   Doubles specifying the mean value, the gradient in the N1 direction, and the gradient in
     #:   the N2 direction.
-    #: - If **crossSectionDistribution** = POINTS_THROUGH_SECTION, **magnitudes**is a sequence of
+    #: - If **crossSectionDistribution** = POINTS_THROUGH_SECTION, **magnitudes** is a sequence of
     #:   Doubles specifying the field at each point.
     magnitudes: tuple = ()
 
