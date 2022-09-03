@@ -158,7 +158,7 @@ Remember, functions of a type are called methods; data of a type are called memb
 Sequences
 ~~~~~~~~~
 
-Sequences include strings, lists, tuples, and arrays. Sequences are described in :doc:`/sequences` and :doc:`/sequence-operations`.
+Sequences include strings, lists, tuples, and arrays. Sequences are described in :doc:`python:basics:sequences` and :doc:`python:basics:sequence operations`.
 
 Determining the type of a variable
 ----------------------------------
