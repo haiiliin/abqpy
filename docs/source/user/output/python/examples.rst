@@ -4,7 +4,7 @@ Example scripts that access data from an output database
 
 The following examples illustrate how you use the output database commands to access data from an output database.
 
-In addition, the Abaqus Scripting Interface examples, :doc:`/user/about/examples/read_output` and :doc:`/user/examples` illustrate how to read data from an output database.
+In addition, the Abaqus Scripting Interface examples, :doc:`/user/about/examples/read-output` and :doc:`/user/examples` illustrate how to read data from an output database.
 
 Finding the maximum value of von Mises stress
 ---------------------------------------------

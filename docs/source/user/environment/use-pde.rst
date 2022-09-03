@@ -65,7 +65,7 @@ The debugger consists of a call stack area, action buttons, and the debugger com
 
     The Abaqus PDE debugger.
 
-The debugger uses a custom Python module named atxPdb, based on the Python pdb module. You can enter Pdb commands in the debugger CLI; you can also enter any Python statements in the debugger CLI. Python statements are executed in the same process—GUI, kernel, or local—that is running the current script (for more information, see :doc:`/user/environment/use-pde:running a script`).
+The debugger uses a custom Python module named atxPdb, based on the Python pdb module. You can enter Pdb commands in the debugger CLI; you can also enter any Python statements in the debugger CLI. Python statements are executed in the same process—GUI, kernel, or local—that is running the current script (for more information, see :doc:`use-pde:running a script`).
 
 .. note::
 
@@ -109,7 +109,7 @@ After you save the changes to your plug-in, you can trace its execution.
 
 1. Open the file that you want to debug.
 
-2. Position the cursor where you want to add a breakpoint. Click mouse button 3, and select **Add Breakpoint**. (For more information, see :doc:`/user/environment/use-pde:using breakpoints`.)
+2. Position the cursor where you want to add a breakpoint. Click mouse button 3, and select **Add Breakpoint**. (For more information, see :doc:`use-pde:using breakpoints`.)
 
 3. Start the plug-in from within Abaqus/CAE.
 
@@ -138,7 +138,7 @@ If the application contains both kernel and GUI functions, you must trace them s
 
 2. Open the file that you want to debug.
 
-3. Position the cursor where you want to add a breakpoint. Click mouse button 3, and select **Add Breakpoint**. (For more information, see :doc:`/user/environment/use-pde:using breakpoints`.)
+3. Position the cursor where you want to add a breakpoint. Click mouse button 3, and select **Add Breakpoint**. (For more information, see :doc:`use-pde:using breakpoints`.)
 
 4. Click **Start CAE** at the top right of the Abaqus PDE to start Abaqus/CAE with the custom startup commands.
 
