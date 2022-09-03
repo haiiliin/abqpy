@@ -25,10 +25,10 @@ class FieldBulkData:
     #: - NODAL, specifying the values calculated at the nodes.
     #: - INTEGRATION_POINT, specifying the values calculated at the integration points.
     #: - ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at
-    #: the integration points.
+    #:   the integration points.
     #: - ELEMENT_FACE.
     #: - CENTROID, specifying the value at the centroid obtained by extrapolating results
-    #: calculated at the integration points.
+    #:   calculated at the integration points.
     position: SymbolicConstant = None
 
     #: A SymbolicConstant specifying the output type. Possible values are SCALAR, VECTOR,
