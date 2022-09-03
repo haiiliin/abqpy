@@ -68,6 +68,7 @@ class DGSuperimposeOptions:
     #: - HOLLOW_TRI
     #: - CROSS
     #: - XMARKER
+    #: 
     #: The default value is HOLLOW_CIRCLE.
     nodeSymbolType: SymbolicConstant = HOLLOW_CIRCLE
 

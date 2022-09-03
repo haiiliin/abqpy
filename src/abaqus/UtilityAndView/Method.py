@@ -9,11 +9,11 @@ For example, in the following script the myCallback function is executed when th
 writeInput method of an object whose type is JobType (in other words, any Job object) is 
 about to be called: 
 
-.. code-block:: python
+.. code-block:: python2
 
     import methodCallback 
     from job import JobType 
-    @abaqus_method_doc
+    
     def myCallback(callingObject, arguments, keywordArguments, userData): 
         print 'An input file  is about to be written.' 
     methodCallback.addCallback(JobType, 'writeInput', myCallback) 
@@ -56,11 +56,11 @@ def addCallback(
         function to be invoked or the Symbolic Constant ALL_METHODS.
     callback
         A Python function to be called when a command matching the specified caller and method
-        name is about to be executed. The interface definition of the callback function is:`def
-        functionName(callingMethod, args, keywordArgs, userData)`where:*callingMethod* is the
-        method that called this function.*args* is the sequence of non-keyword arguments that
-        was passed to the calling method.*keywordArgs* is the dictionary of keyword arguments
-        that was passed to the calling method.*userData* is the object passed as the **userData**
+        name is about to be executed. The interface definition of the callback function is `def
+        functionName(callingMethod, args, keywordArgs, userData)` where *callingMethod* is the
+        method that called this function. *args* is the sequence of non-keyword arguments that
+        was passed to the calling method. *keywordArgs* is the dictionary of keyword arguments
+        that was passed to the calling method. *userData* is the object passed as the **userData**
         argument to the addCallback method.
     userData
         Any type of data. This data will be passed to the callback function. The default value
@@ -68,9 +68,9 @@ def addCallback(
     callAfter
         A Boolean specifying that the callback should be called after the method has executed
         (instead of before the method is called). The default value is False, which indicates
-        that the callback should be called before the method has executed.If **callAfter** = True,
+        that the callback should be called before the method has executed. If **callAfter** = True,
         you can also access the return value of the command from within the callback by
-        including the following statement:`returnValue = getMethodReturnValue()`The
+        including the following statement `returnValue = getMethodReturnValue()` The
         getMethodReturnValue function is in the global namespace of the callback function.
     """
     ...
@@ -98,11 +98,11 @@ def removeCallback(caller: str, methodName: str, callback: str, userData: str = 
         function to be invoked or the Symbolic Constant ALL_METHODS.
     callback
         A Python function to be called when a command matching the specified caller and method
-        name is about to be executed. The interface definition of the callback function is:`def
-        functionName(callingMethod, args, keywordArgs, userData)`where:*callingMethod* is the
-        method that called this function.*args* is the sequence of nonkeyword arguments that was
-        passed to the calling method.*keywordArgs* is the dictionary of keyword arguments that
-        was passed to the calling method.*userData* is the object passed as the **userData**
+        name is about to be executed. The interface definition of the callback function is `def
+        functionName(callingMethod, args, keywordArgs, userData)` where *callingMethod* is the
+        method that called this function. *args* is the sequence of nonkeyword arguments that was
+        passed to the calling method. *keywordArgs* is the dictionary of keyword arguments that
+        was passed to the calling method. *userData* is the object passed as the **userData**
         argument to the removeCallback method.
     userData
         Any type of data. This data will be passed to the callback function. The default value

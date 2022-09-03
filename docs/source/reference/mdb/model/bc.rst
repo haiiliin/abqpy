@@ -85,7 +85,7 @@ AcousticPressureBCState
 Calibration
 ~~~~~~~~~~~
 
-.. autoclass:: abaqus.Material.Calibration.Calibration
+.. autoclass:: abaqus.Calibration.Calibration.Calibration
     :members:
 
     .. autoclasstoc::
