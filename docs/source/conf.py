@@ -62,7 +62,7 @@ extensions = [
 ]
 
 # Default behavior for code block concatenation for sphinx_codeautolink
-codeautolink_concat_default = True
+codeautolink_concat_default = False
 
 intersphinx_mapping = {
     'numpy': ('https://numpy.org/doc/stable/', None),
