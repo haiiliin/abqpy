@@ -51,7 +51,7 @@ class Stress(PredefinedField):
             A String specifying the repository key.
         region
             A Region object specifying the region to which the predefined field is applied. Region
-            is ignored if the predefined field has **distributionType**= FROM_FILE.
+            is ignored if the predefined field has **distributionType** = FROM_FILE.
         distributionType
             A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM
             and FROM_FILE. The default value is UNIFORM.
