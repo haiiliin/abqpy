@@ -613,6 +613,7 @@ Create load cases
 
 .. autoclass:: abaqus.Load.LoadStep.LoadStep
     :members:
+    :noindex:
 
     .. autoclasstoc::
 

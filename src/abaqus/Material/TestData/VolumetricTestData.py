@@ -26,12 +26,15 @@ class VolumetricTestData:
         
             - Pressure, :math:`p`.
             - Volume ratio, :math:`J` (current volume/original volume).
+            
         - For a viscoelastic material model, the values depend on the value of the **time** member of the 
           :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic` object.
+            
             - If **time** = RELAXATION_TEST_DATA, the table data specify the following:
             
                 - Normalized volumetric (bulk) modulus :math:`k_{R}(t), \quad\left(0 \leq k_{R}(t) \leq 1\right)`
                 - Time :math:`t (t>0)`.
+                
             - If **time** = CREEP_TEST_DATA, the table data specify the following:
             
                 - Normalized volumetric (bulk) compliance :math:`j_{K}(t), \quad\left(j_{K}(t) \geq 1\right)`.

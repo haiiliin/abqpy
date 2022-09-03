@@ -173,7 +173,7 @@ class MeshPart(PartBase):
         Returns
         -------
         feature: Feature
-            A :py:class:`~abaqus.Assembly.Feature.Feature` object
+            A :py:class:`~abaqus.Feature.Feature.Feature` object
         """
         ...
 
@@ -191,7 +191,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def deleteMesh(self, regions: typing.Tuple["Part"]):
+    def deleteMesh(self, regions: typing.Tuple["MeshPart"]):
         """This method deletes a subset of the mesh that contains the native elements from the
         given parts or regions.
 
@@ -231,7 +231,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def deleteSeeds(self, regions: typing.Tuple["Part"]):
+    def deleteSeeds(self, regions: typing.Tuple["MeshPart"]):
         """This method deletes the global edge seeds from the given parts or deletes the local edge
         seeds from the given edges.
 
@@ -246,7 +246,7 @@ class MeshPart(PartBase):
     @abaqus_method_doc
     def generateMesh(
         self,
-        regions: typing.Tuple["Part"] = (),
+        regions: typing.Tuple["MeshPart"] = (),
         seedConstraintOverride: Boolean = OFF,
         meshTechniqueOverride: Boolean = OFF,
         boundaryPreview: Boolean = OFF,
@@ -466,38 +466,38 @@ class MeshPart(PartBase):
             The return value is dependent on the **attribute** argument.
 
             - If **attribute** = EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying
-            the edge seeding method used to create the seeds along the edge. Possible values are: UNIFORM_BY_NUMBER, UNIFORM_BY_SIZE, CURVATURE_BASED_BY_SIZE, BIASED, NONE
+              the edge seeding method used to create the seeds along the edge. Possible values are: UNIFORM_BY_NUMBER, UNIFORM_BY_SIZE, CURVATURE_BASED_BY_SIZE, BIASED, NONE
 
             - If **attribute** = BIAS_METHOD, the return value is a SymbolicConstant specifying the bias
-            type used to create the seeds along the edge. Possible values are: SINGLE, DOUBLE, NONE
+              type used to create the seeds along the edge. Possible values are: SINGLE, DOUBLE, NONE
 
             - If **attribute** = NUMBER, the return value is an Int specifying the number of element
-            seeds along the edge.
+              seeds along the edge.
             - If **attribute** = AVERAGE_SIZE, the return value is a Float specifying the average
-            element size along the edge.
+              element size along the edge.
             - If **attribute** = DEVIATION_FACTOR, the return value is a Float specifying the deviation
-            factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If edge
-            seeds are not defined, the return value is zero.
+              factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If edge
+              seeds are not defined, the return value is zero.
             - If **attribute** = MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
-            smallest allowable element as a fraction of the specified global element size. If edge
-            seeds are not defined, the return value is zero.
+              smallest allowable element as a fraction of the specified global element size. If edge
+              seeds are not defined, the return value is zero.
             - If **attribute** = BIAS_RATIO, the return value is a Float specifying the length ratio of
-            the largest element to the smallest element.
+              the largest element to the smallest element.
             - If **attribute** = BIAS_MIN_SIZE, the return value is a Float specifying the length of the
-            largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
-            specified by minimum and maximum sizes.
+              largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
+              specified by minimum and maximum sizes.
             - If **attribute** = BIAS_MAX_SIZE, the return value is a Float specifying the length of the
-            largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
-            specified by minimum and maximum sizes.
+              largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
+              specified by minimum and maximum sizes.
             - If **attribute** = VERTEX_ADJ_TO_SMALLEST_ELEM, the return value is an Int specifying the
-            ID of the vertex next to the smallest element; only applicable if the
-            EDGE_SEEDING_METHOD is BIASED.
+              ID of the vertex next to the smallest element; only applicable if the
+              EDGE_SEEDING_METHOD is BIASED.
             - If **attribute** = SMALLEST_ELEM_LOCATION, the return value is a SymbolicConstant
-            specifying the location of smallest elements for double bias seeds; only applicable if
-            the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are: SMALLEST_ELEM_AT_CENTER, SMALLEST_ELEM_AT_ENDS, NONE
+              specifying the location of smallest elements for double bias seeds; only applicable if
+              the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are: SMALLEST_ELEM_AT_CENTER, SMALLEST_ELEM_AT_ENDS, NONE
 
             - If **attribute** = CONSTRAINT, the return value is a SymbolicConstant specifying how close
-            the seeds must be matched by the mesh. Possible values are: FREE, FINER, FIXED, NONE
+              the seeds must be matched by the mesh. Possible values are: FREE, FINER, FIXED, NONE
 
             A value of NONE indicates that the edge is not seeded.
         """
@@ -570,6 +570,7 @@ class MeshPart(PartBase):
             - MIN_TRANSITION
 
             The return value is dependent on the **attribute** argument.
+            
             - If **attribute** = ELEM_SHAPE, the return value is a SymbolicConstant specifying the
               element shape used during meshing. Possible values are: LINE, QUAD, TRI,  QUAD_DOMINATED, HEX, TET, WEDGE, HEX_DOMINATED
 
@@ -677,7 +678,7 @@ class MeshPart(PartBase):
         Returns
         -------
         feature: Feature
-            A :py:class:`~abaqus.Assembly.Feature.Feature` object
+            A :py:class:`~abaqus.Feature.Feature.Feature` object
         """
         ...
 
@@ -695,7 +696,7 @@ class MeshPart(PartBase):
         Returns
         -------
         feature: Feature
-            A :py:class:`~abaqus.Assembly.Feature.Feature` object
+            A :py:class:`~abaqus.Feature.Feature.Feature` object
         """
         ...
 

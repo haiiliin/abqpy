@@ -31,13 +31,13 @@ class PorousFailureCriteria:
 
                 mdb.models[name].materials[name].porousMetalPlasticity.PorousFailureCriteria.PorousFailureCriteriaaterials[name].porousMetalPlasticity.PorousFailureCriteria
             
-            Parameters
-            ----------
-            fraction
-                A Float specifying the void volume fraction at total failure, fF>0. The default value is 
-                1.0. 
-            criticalFraction
-                A Float specifying the critical void volume fraction, fc≥0. The default value is 1.0. 
+        Parameters
+        ----------
+        fraction
+            A Float specifying the void volume fraction at total failure, fF>0. The default value is 
+            1.0. 
+        criticalFraction
+            A Float specifying the critical void volume fraction, fc≥0. The default value is 1.0. 
 
         Returns
         -------

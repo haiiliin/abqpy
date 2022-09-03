@@ -17,26 +17,27 @@ class BackwardCompatibility:
     script containing deprecated commands with no indication that you should update the
     script. You can do either of the following to change the value of the
     **includeDeprecated** member and to determine which commands have been deprecated:
+    
     - From the command line interface in Abaqus/CAE or from an Abaqus Scripting Interface
-    script that is run from within Abaqus/CAE, use the following command:
+      script that is run from within Abaqus/CAE, use the following command:
 
-    .. code-block:: python
+      .. code-block:: python
 
-        backwardCompatibility.setValues(includeDeprecated=OFF)
+          backwardCompatibility.setValues(includeDeprecated=OFF)
 
     - From an Abaqus Scripting Interface script that is run using `abaqus python` at the
-    system prompt, use the following two commands:
+      system prompt, use the following two commands:
 
-    .. code-block:: python
+      .. code-block:: python
 
-        from odbAccess import *
-        backwardCompatibility.setValues(includeDeprecated=OFF)
+          from odbAccess import *
+          backwardCompatibility.setValues(includeDeprecated=OFF)
 
     In addition, the BackwardCompatibility object provides tools to assist you in
     determining the deprecated commands that have been used. For example, to determine the
     deprecated commands used in the script createLug.py, use the following commands:
     
-    .. code-block:: python
+    .. code-block:: python2
 
         backwardCompatibility.resetDeprecatedMethodsUsed()
         backwardCompatibility.resetDeprecatedMembersUsed()
