@@ -106,6 +106,7 @@ class AnimationOptions(_OptionsBase):
     #: - CROSS
     #: - XMARKER
     #: - DEFAULT
+    #: 
     #: The default value is DEFAULT.
     xySymbolMarker: SymbolicConstant = DEFAULT
 

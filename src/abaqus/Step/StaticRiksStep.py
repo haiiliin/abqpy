@@ -132,7 +132,7 @@ class StaticRiksStep(AnalysisStep):
     region: Region = Region()
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
-    #: (*procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
+    #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
     explicit: SymbolicConstant = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
