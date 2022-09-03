@@ -57,6 +57,7 @@ class MainSecondaryAssignment:
         assignments
             A sequence of tuples specifying the main-secondary assignments. Each tuple contains two
             entries:
+            
             - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
               main-secondary attribute is assigned.
             - A SymbolicConstant specifying the overriding main-secondary value to be used for the
