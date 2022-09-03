@@ -1,7 +1,7 @@
 import typing
 
 from .AcisFile import AcisFile
-from .Feature import Feature
+from .PartFeature import PartFeature
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.CellArray import CellArray
 from ..BasicGeometry.Edge import Edge
@@ -41,7 +41,7 @@ class PartInstance:
     ...
 
 
-class PartBase(Feature):
+class PartBase(PartFeature):
     """The Part object defines the physical attributes of a structure. Parts are instanced into
     the assembly and positioned before an analysis.
 
@@ -85,14 +85,14 @@ class PartBase(Feature):
     cells: CellArray = CellArray([])
 
     #: A repository of Feature objects specifying all the features in the part.
-    features: typing.Dict[str, Feature] = {}
+    features: typing.Dict[str, PartFeature] = {}
 
     #: A repository of Feature objects specifying all Feature objects in the part. The Feature
     #: objects in the featuresById repository are the same as the Feature objects in the
     #: features' repository. However, the key to the objects in the featuresById repository is
     #: an integer specifying the **ID**, whereas the key to the objects in the features
     #: repository is a string specifying the **name**.
-    featuresById: typing.Dict[str, Feature] = {}
+    featuresById: typing.Dict[str, PartFeature] = {}
 
     #: A repository of Datum objects specifying all the datums in the part.
     datums: typing.List[Datum] = []
@@ -1482,7 +1482,7 @@ class PartBase(Feature):
         self,
         sketch: str,
         filter: SymbolicConstant = ALL_EDGES,
-        upToFeature: Feature = None, 
+        upToFeature: PartFeature = None,
         edges: tuple = (),
         vertices: tuple = (),
     ):
