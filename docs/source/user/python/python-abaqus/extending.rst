@@ -13,7 +13,6 @@ If you extend the kernel functionality by writing your own classes and functions
 
 For example,
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     import customKernel 
@@ -25,7 +24,6 @@ For example,
 
 If you start a new session and open the model database, `custom-test.cae`, you can refer to the variables that you saved. For example,
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     >>> import customKernel
@@ -46,7 +44,6 @@ In addition to providing a persistence mechanism, the `customKernel` module cont
 
 Querying custom kernel data values from the GUI. From a GUI script you can access some attribute of your custom kernel object, just as you would from the kernel. For example,
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     print mdb.customData.myObject.name
@@ -60,7 +57,6 @@ CommandRegister class
 
 You can use the CommandRegister class to derive a general class that can be queried from the GUI. In addition, the class can notify the GUI when its contents change. For example,
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     class Block(CommandRegister): 
@@ -92,7 +88,6 @@ The first argument to the constructor must be name.
 
 For example, the Part constructor creates a part object and stores it in the parts repository. You can access the part object from the repository using the same name argument that you passed in with the Part constructor. In some cases, more than one constructor can create instances that are stored in the same repository. For example, the HomogeneousSolidSection and the HomogeneousShellSection constructors both create section objects that are stored in the sections repository. For more information, see Abstract base type. For example, the following script creates a blocks repository, and the Block constructor creates a block object in the blocks repository:
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     from customKernel import CommandRegister
@@ -118,7 +113,6 @@ Repositories have several useful methods for querying their contents, as shown i
 
 The following script illustrates some of these methods:
 
-.. autolink-concat:: off
 .. code-block:: python2
         
     from customKernel
@@ -144,7 +138,6 @@ The following script illustrates some of these methods:
 
 The resulting output is
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     The original repository keys are ['Block-1', 'Block-2'] 
@@ -161,7 +154,6 @@ You can use the `RepositorySupport` class to derive a class that can contain one
 
 Using the `RepositorySupport` class allows you to create a hierarchy of repositories; for example, in the Abaqus Scripting Interface the parts repository is a child of the models repository. The first argument passed into your constructor is stored as `name`; it is created automatically by the infrastructure. To create a hierarchy of repositories, derive your class from `RepositorySupport` and use its `Repository` method to create child repositories as shown below. The  method is described in :doc:`/extending:repositories`.
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     from abaqus import * 
@@ -188,7 +180,6 @@ Registered dictionaries
 
 You use the `RegisteredDictionary` class to create a dictionary that can be queried from the GUI. In addition, the infrastructure can notify the GUI when the contents of the dictionary change. The key of a registered dictionary must be either a String or an Int. The values associated with a key must all be of the same type—all integers or all strings, for example—to prevent errors when accessing them from the GUI. The `RegisteredDictionary` class has the same methods as a Python dictionary. In addition, the `RegisteredDictionary` class has a changeKey method that you use to rename a key in the dictionary. For example,
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     from customKernel import RegisteredDictionary
@@ -201,7 +192,6 @@ Registered lists
 
 You use the `RegisteredList` class to create a list that can be queried from the GUI. In addition, the infrastructure can notify the GUI when the contents of the list change. The values in the list must all be of the same type—all integers or all strings, for example—to prevent errors when accessing them from the GUI. The values must all be of the same type; for example, all integers or all strings. The `RegisteredList` has the same methods as a Python list. For example, appending `Item-1` to the list in the following statements causes the infrastructure to notify the GUI that the contents of the list have changed:
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     from customKernel import RegisteredList 
@@ -213,7 +203,6 @@ Registered tuples
 
 You use the `RegisteredTuple` class to create a tuple that can be queried from the GUI. In addition, the infrastructure can notify the GUI when the contents of any of the members of the tuple change. The members in the tuple must derive from the `CommandRegister` class, and the values in the tuple must all be of the same type; for example, all integers or all strings. For example,
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     from abaqus import *
@@ -243,7 +232,6 @@ f you have custom kernel scripts that store data in a model database, you may wa
 
 You use the appData object to store custom application-related data in the model database. The appData object is an instance of an AbaqusAppData class. You can add any attributes to the appData object that are necessary to track information about your custom application. The following example illustrates how you can store the version number of your application on the appData object:
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     import customKernel
@@ -254,7 +242,6 @@ You use the appData object to store custom application-related data in the model
 
 You use the setAppData method to install an appData object as session.customData.appData and to associate it with your application name. For example:
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     myAppName = 'My App'
@@ -283,7 +270,6 @@ Kernel initialization scripts specified by the **startup** command line option a
 
 The following example shows how you can use the `verifyMdb`, `intializeMdb`, and `processInitialMdb` methods. You should execute the example using the startup command line option when you start Abaqus/CAE. For more information, see Abaqus/CAE execution.
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     from abaqus import mdb, session 

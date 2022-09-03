@@ -4,7 +4,6 @@ Using Abaqus Scripting Interface commands in your environment file
 
 The Abaqus environment file is read by Abaqus/CAE when you start a session. The environment file can contain Abaqus Scripting Interface commands. The following is an example environment file:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     scratch = 'c:/temp'
