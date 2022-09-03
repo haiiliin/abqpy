@@ -69,9 +69,23 @@ class ContactPropertyAssignment:
             The **indices** and **surfPair** arguments are mutually exclusive.
         surfPair
             A sequence of tuples specifying the surface pair of each contact property assignment to
+<<<<<<< HEAD
             delete. Each tuple contains two entries: A region object or the SymbolicConstant GLOBAL.
             A region object or the SymbolicConstant SELF. When used with a ContactExp object, this
             parameter can also be a string that references an Eulerian material surface. **surfPair**
             and **indices** arguments are mutually exclusive.
+=======
+            delete. Each tuple contains two entries:
+
+            - A region or a material object or the SymbolicConstant GLOBAL.
+            - A region or a material object or the SymbolicConstant SELF. When
+              used with a ContactExp object, this parameter can also be a string that references an
+              Eulerian material surface.
+
+            **surfPair**and **indices**arguments are mutually exclusive.
+
+            .. versionchanged:: 2021
+                Update descriptions of the two entries in the tuple.
+>>>>>>> 293ecd5 (Use double * instead of single *)
         """
         ...

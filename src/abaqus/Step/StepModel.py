@@ -2966,8 +2966,12 @@ class StepModel(ModelBase):
             value is ON.
 
             .. versionadded:: 2018
+<<<<<<< HEAD
                 The *improvedDtMethod* argument was added.
 >>>>>>> abf1154 (Fix wrong formats)
+=======
+                The **improvedDtMethod**argument was added.
+>>>>>>> 293ecd5 (Use double * instead of single *)
 
         Returns
         -------
