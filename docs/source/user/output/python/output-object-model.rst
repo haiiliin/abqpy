@@ -83,7 +83,6 @@ Abaqus does not write all the model data to the output database; for example, yo
 
 The objects stored as model data in an output database are similar to the objects stored in an Abaqus/CAE model database. However, the output database does not require a model name because an analysis job always refers to a single model and the resulting output database can contain only one model. For example, the following Abaqus Scripting Interface statements refer to an Instance object in the model database:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     mdb = openMdb(pathName='/users/smith/mdb/hybridVehicle')
@@ -93,7 +92,6 @@ The objects stored as model data in an output database are similar to the object
 Similar statements refer to an Instance object in the output database.
 
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     odb = openOdb(path='/users/smith/odb/transmission.odb')
@@ -102,7 +100,6 @@ Similar statements refer to an Instance object in the output database.
 You can use the `prettyPrint` method to display a text representation of an output database and to view the structure of the model data in the object model. For example, the following shows the output from `prettyPrint` applied to the output database created by the Abaqus/CAE cantilever beam tutorial:
 
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     from odbAccess import *

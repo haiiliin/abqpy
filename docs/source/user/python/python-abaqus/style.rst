@@ -35,7 +35,6 @@ Access
 
 The description of each object in the :doc:`/references` begins with a section that describes how you access an instance of the object. The import statements are provided for completeness. Abaqus/CAE imports all modules when you start a session, and you do not need to include the `import module name` statement in your scripts. However, you must import the Abaqus Scripting Interface Symbolic Constants with the following statement:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     from abaqusConstants import *
@@ -44,7 +43,6 @@ These should be the first statement in all your Abaqus Scripting Interface scrip
 
 The following is the access description for the Material object:
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     import material
@@ -54,7 +52,6 @@ The first line of the access description indicates the module that Abaqus/CAE im
 
 The access description also specifies where instances of the object are located in the data model. In the previous example the second line indicates how your script can access Material objects from a particular model. You must qualify a material object, command, or member with the variable mdb, as described in Functions and modules. For example,
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     mdb.models[crash].Material[steel]
@@ -64,7 +61,6 @@ The access description also specifies where instances of the object are located 
 
 Similarly, if you are reading from an output database, the following is the access description for the HistoryRegion object:
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     import odbAccess
@@ -74,14 +70,12 @@ The first line indicates that Abaqus/CAE imported the odbAccess module to make t
 
 The Access description for the FieldOutput object is
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     session.odbs[name].steps[name].frames[i].fieldOutputs[name]
 
 The following statements show how you use the object described by this Access description:
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     sideLoadStep = session.odbs['Forming loads'].steps['Side load']
@@ -99,14 +93,12 @@ Path
 
 A method that creates an object is called a constructor. The Abaqus Scripting Interface uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the :doc:`/references` includes a path to the command. For example, the following describes the path to the Viewport constructor:
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     session.Viewport
 
 Some constructors include more than one path. For example, you can create a datum that is associated with either a Part object or the RootAssembly object, and each path is listed.
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     mdb.models[name].parts[name].DatumAxisByCylFace
@@ -118,14 +110,12 @@ If you are using the Abaqus Scripting Interface to read data from an output data
 
 For example, the Path description for the FieldOutput constructor is
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     session.odbs[name].steps[name].frames[i].FieldOutput
 
 The following statement creates a FieldOutput object:
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     myFieldOutput = session.odbs[name].steps['Side load'].frames[-1].\
@@ -137,14 +127,12 @@ Arguments
 
 The ellipsis `(...)` in the command description indicates that the command takes one or more arguments. For example, the Viewport constructor takes arguments.
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     Viewport(...)
 
 In contrast, the `makeCurrent` method takes no arguments.
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     makeCurrent()
@@ -157,7 +145,6 @@ Some objects have no constructors; Abaqus creates the objects for you. For such 
 
 You can use the `setValues` method to modify the value of a member; for example, to modify the value of the triad member of the defaultViewportAnnotationsOptions object. When you call session.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     defaultViewportAnnotationOptions.setValues(triad=OFF)
@@ -166,7 +153,6 @@ the value of the triad member is set to off. The other member values remain unch
 
 Keyword and positional arguments are described in Creating functions. We recommend that you use keyword arguments since they can be supplied in any order and they make your scripts easier to read and debug; for example,
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     newViewport = session.Viewport(name='myViewport', 
@@ -174,7 +160,6 @@ Keyword and positional arguments are described in Creating functions. We recomme
 
 If you choose not to use keywords, the arguments must be provided in the order in which they are documented.
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     newViewport = session.Viewport('myViewport', 
@@ -182,7 +167,6 @@ If you choose not to use keywords, the arguments must be provided in the order i
 
 You can use a combination of keyword and positional arguments. Keyword arguments can be supplied after positional arguments; however, positional arguments cannot be entered after keyword arguments. For example, you can use the following statement:
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     newViewport = session.Viewport('myViewport', 
@@ -190,7 +174,6 @@ You can use a combination of keyword and positional arguments. Keyword arguments
 
 However, you cannot use the following statement:
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     newViewport = session.Viewport(name='myViewport', 
@@ -203,7 +186,6 @@ Return value
 
 All commands return a value. Many commands return the None object described in :doc:`/user/python/introduction/python-basics/none`. Constructors (methods that create an object) always return the object being created. The return value of a command can be assigned to a Python variable. For example, in the following statement the Viewport constructor returns a Viewport object, and the variable `newViewport` refers to this new object.
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     newViewport = session.Viewport(name='myViewport', 
@@ -211,7 +193,6 @@ All commands return a value. Many commands return the None object described in :
 
 You can use the object returned by a command in subsequent statements. For example, the `titlebar` member of a Viewport object is a Boolean specifying whether the viewport title bar is displayed and can have a value of either ON or OFF. The following statement tests the titlebar member of the new viewport created by the previous statement:
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     if newViewport.titleBar:
