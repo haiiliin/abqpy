@@ -52,6 +52,7 @@ class Area:
     #: - TOP_LEFT
     #: - TOP_CENTER
     #: - TOP_RIGHT
+    #: 
     #: The default value is BOTTOM_LEFT.
     alignment: SymbolicConstant = BOTTOM_LEFT
 

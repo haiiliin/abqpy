@@ -186,11 +186,19 @@ class InteractionModel(
             Tuple of tuples, where each tuple holds information, to be used in contact creation as
             follows:
             
+<<<<<<< HEAD
             - A string specifying the name of the master surface used in contact.
             - A string specifying the name of the slave surface used in contact.
             - A float specifying the separation distance between the master surface and the slave
             surface.
             - A boolean specifying whether or not contact surfaces are overclosed..
+=======
+            - A string specifying the name of the main surface used in contact.
+            - A string specifying the name of the secondary surface used in contact.
+            - A float specifying the separation distance between the main surface and the secondary
+              surface.
+            - A boolean specifying whether or not contact surfaces are overclosed.
+>>>>>>> abf1154 (Fix wrong formats)
         """
         ...
 
