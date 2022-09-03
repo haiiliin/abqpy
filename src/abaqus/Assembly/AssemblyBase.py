@@ -122,7 +122,7 @@ class AssemblyBase(Feature):
     #: A repository of ModelInstance objects.
     modelInstances: typing.Dict[str, ModelInstance] = {}
 
-    #: A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Model.Model.ModelInstance` object specifying
+    #: A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object specifying
     #: the ModelInstances.
     allInstances: typing.Dict[str, typing.Union[PartInstance, ModelInstance]] = {}
 
@@ -201,7 +201,7 @@ class AssemblyBase(Feature):
         Returns
         -------
         ModelInstance
-            A :py:class:`~abaqus.Model.Model.ModelInstance` object.
+            A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object.
         """
         ...
 
@@ -499,18 +499,17 @@ class AssemblyBase(Feature):
         Returns
         -------
         typing.Tuple[dict, ...]
-            A tuple of dictionary objects. Each dictionary contains five items with the following
-            keys:
+            A tuple of dictionary objects. Each dictionary contains five items with the following keys:
         
             - **edge**: An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the attachment line.
-            - **startFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with one end of the attachment
-            line.
-            - **endFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with the other end of the
-            attachment line.
-            - **startVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the vertex associated with one end of the
-            attachment line. This end is also associated with the startFace.
-            - **endVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the vertex associated with the other end of the
-            attachment line. This end is also associated with the endFace.
+            - **startFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with one end of the 
+              attachment line.
+            - **endFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with the other end of 
+              the attachment line.
+            - **startVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` 
+              object specifying the vertex associated with one end of the attachment line. This end is also associated with the startFace.
+            - **endVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` 
+              object specifying the vertex associated with the other end of the attachment line. This end is also associated with the endFace.
         """
         ...
 

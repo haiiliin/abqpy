@@ -55,6 +55,7 @@ class SmoothingAssignment:
         assignments
             A sequence of tuples specifying the surface smoothing assignments. Each tuple contains
             two entries:
+            
             - A region object specifying the surface to which the smoothing is assigned.
             - A SymbolicConstant specifying the surface smoothing value to be used for the surface.
               Possible values of the SymbolicConstant are NONE, REVOLUTION, SPHERICAL, and TOROIDAL.
