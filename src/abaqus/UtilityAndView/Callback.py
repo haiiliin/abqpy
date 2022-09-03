@@ -23,7 +23,7 @@ def addImportCallback(moduleName: str, callback: str, userData: str = ""):
         A String specifying the name of a specified Abaqus/CAE module.
     callback
         A Python function to be called. The interface definition of the callback function is
-        `def functionName(moduleName, userData)`. *moduleName* is a String. *userData* is the
+        `def functionName(moduleName, userData)`. **moduleName**is a String. **userData**is the
         object passed as the **userData** argument to the addImportCallback method.
     userData
         Any Python object or None. This object is passed to the callback function.

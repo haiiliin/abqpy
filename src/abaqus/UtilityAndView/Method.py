@@ -57,10 +57,10 @@ def addCallback(
     callback
         A Python function to be called when a command matching the specified caller and method
         name is about to be executed. The interface definition of the callback function is `def
-        functionName(callingMethod, args, keywordArgs, userData)` where *callingMethod* is the
-        method that called this function. *args* is the sequence of non-keyword arguments that
-        was passed to the calling method. *keywordArgs* is the dictionary of keyword arguments
-        that was passed to the calling method. *userData* is the object passed as the **userData**
+        functionName(callingMethod, args, keywordArgs, userData)` where **callingMethod**is the
+        method that called this function. **args**is the sequence of non-keyword arguments that
+        was passed to the calling method. **keywordArgs**is the dictionary of keyword arguments
+        that was passed to the calling method. **userData**is the object passed as the **userData**
         argument to the addCallback method.
     userData
         Any type of data. This data will be passed to the callback function. The default value
@@ -99,10 +99,10 @@ def removeCallback(caller: str, methodName: str, callback: str, userData: str = 
     callback
         A Python function to be called when a command matching the specified caller and method
         name is about to be executed. The interface definition of the callback function is `def
-        functionName(callingMethod, args, keywordArgs, userData)` where *callingMethod* is the
-        method that called this function. *args* is the sequence of nonkeyword arguments that was
-        passed to the calling method. *keywordArgs* is the dictionary of keyword arguments that
-        was passed to the calling method. *userData* is the object passed as the **userData**
+        functionName(callingMethod, args, keywordArgs, userData)` where **callingMethod**is the
+        method that called this function. **args**is the sequence of nonkeyword arguments that was
+        passed to the calling method. **keywordArgs**is the dictionary of keyword arguments that
+        was passed to the calling method. **userData**is the object passed as the **userData**
         argument to the removeCallback method.
     userData
         Any type of data. This data will be passed to the callback function. The default value
