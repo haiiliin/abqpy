@@ -12,7 +12,7 @@ from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc
-class Feature(BaseFeature):
+class PartFeature(BaseFeature):
     """The following commands operate on Feature objects. For more information about the
     Feature object, see Feature object.
 
