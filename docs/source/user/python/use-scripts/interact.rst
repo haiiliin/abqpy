@@ -20,7 +20,6 @@ These arguments allow you to associate the callback function with both a particu
 
 The interface definition of the callback function is
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     def functionName(jobName, messageType, data, userData)
@@ -96,7 +95,6 @@ To execute the script, do the following:
 - To stop printing the messages, type `printMessages(OFF)` from the Abaqus/CAE command line interface.
 
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     """
@@ -150,7 +148,6 @@ You can use the Job object's `waitForCompletion` method to synchronize your scri
 
 In the following example, the script submits myJob1 and waits for it to complete before submitting myJob2.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     myJob1 = mdb.Job(name='Job-1')
@@ -162,7 +159,6 @@ In the following example, the script submits myJob1 and waits for it to complete
 
 If you submit more than one job and then issue a `waitForCompletion` statement, Abaqus waits until the job associated with the `waitForCompletion` statement is complete before checking the status of the second job. If the second job has already completed, the `waitForCompletion` method returns immediately. In the following example the script will not check the status of `myJob2` until `myJob1` has completed.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     myJob1 = mdb.Job(name='Job-1')
@@ -179,7 +175,6 @@ The following section describes how you can use a callback function as an altern
 
 he example uses a callback function that responds to all messages from Abaqus/Standard and Abaqus/Explicit. The function decides what action to take based on the messages received from a job called Deform. If the message indicates that the analysis job is complete, the function opens the output database created by the job and displays a default contour plot.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -203,7 +198,6 @@ he example uses a callback function that responds to all messages from Abaqus/St
 
 The following statements show how the example script can be modified to use the callback function. After the first statement is executed, the callback function responds to all messages from the job named `Deform`. The final two statements create the job and submit it for analysis; the example script has now finished executing. When the job is complete, the callback function opens the resulting output database and displays a contour plot.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     ...

@@ -135,7 +135,6 @@ You use envelope calculations to retrieve the extreme value for an output variab
 
 The following operators consider a list of fields and perform the envelope calculation:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     (env, lcIndex) = maxEnvelope([field1, field2, ...])
