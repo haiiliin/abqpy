@@ -118,7 +118,6 @@ class EdgeArray(typing.List[Edge]):
             A sequence of a sequence of floats, where each sequence of floats describes the **X**-,
             **Y**-, and **Z**-coordinates of a point.
             
-            .. autolink-concat:: off
             .. code-block:: python
             
                 >>> r=e.getClosest(coordinates=((20.0, 20.0, 10.0), (-1.0, -15.0, 15), ))
