@@ -197,7 +197,7 @@ class ContourOptions(DGContourOptions):
     intervalLineAttributes: SymbolicConstant = None
 
     #: A Boolean specifying whether to hide the values outside the specified min/max in the
-    #: contour legend. This setting hides the **autoMinValue**and **autoMaxValue**from the
+    #: contour legend. This setting hides the **autoMinValue** and **autoMaxValue** from the
     #: spectrum when **legendHideOutsideLimits** = ON.The default value is OFF.
     #:
     #: .. versionadded:: 2019

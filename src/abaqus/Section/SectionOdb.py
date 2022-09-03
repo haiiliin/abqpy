@@ -308,7 +308,7 @@ class SectionOdb(OdbBase):
             values are:SOLVER_DEFAULT, specifying that Abaqus will use the analysis product
             defaultGEOMETRY, specifying that Abaqus will compute the thickness from the nodal
             coordinates of the elements.SPECIFY, specifying that Abaqus will use the value given for
-            **initialThickness**The default value is SOLVER_DEFAULT.
+            **initialThickness** The default value is SOLVER_DEFAULT.
         initialThickness
             A Float specifying the initial thickness for the section. The **initialThickness**
             argument applies only when **initialThicknessType** = SPECIFY. The default value is 1.0.

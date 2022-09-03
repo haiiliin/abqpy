@@ -66,9 +66,9 @@ class MonitorMgr:
             
         callback
             A Python function to be called. The interface definition of the callback function is
-            `def onMessage(jobName, messageType, data, userData)` **jobName**is a
-            String. **messageType**is a SymbolicConstant with possible values as listed previously for
-            the addMessageCallback method. **data**is a DataObject object. **userData**is the object
+            `def onMessage(jobName, messageType, data, userData)` **jobName** is a
+            String. **messageType** is a SymbolicConstant with possible values as listed previously for
+            the addMessageCallback method. **data** is a DataObject object. **userData** is the object
             passed as the **userData** argument to the addMessageCallback method.
         userData
             Any Python object or None. This object is passed to the callback function.

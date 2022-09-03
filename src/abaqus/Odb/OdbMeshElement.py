@@ -70,12 +70,12 @@ class OdbMeshElement:
         Parameters
         ----------
         faceIndex
-            The value of **faceIndex**is 0 for a shell element and can range from 0 to 5 for a solid
+            The value of **faceIndex** is 0 for a shell element and can range from 0 to 5 for a solid
             element.
         stepName
             Name of the step.
         frameValue
-            A Double specifying the value at which the frame is required. **frameValue**can be the
+            A Double specifying the value at which the frame is required. **frameValue** can be the
             total fime or frequency.
         match
             A SymbolicConstant specifying which frame to return if there is no frame at the exact
@@ -96,7 +96,7 @@ class OdbMeshElement:
             If the exact frame is not found.
         OdbError: Step is not present in the ODB
             If the step name is not found.
-        OdbError: **stepName**should be specified with *frameValue*
-            If **frameValue**is not provided and **stepName**is empty.
+        OdbError: **stepName** should be specified with *frameValue*
+            If **frameValue** is not provided and **stepName** is empty.
         """
         ...
