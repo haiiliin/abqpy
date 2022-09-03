@@ -9,9 +9,10 @@ For more examples, check `abqpy/examples at main · haiiliin/abqpy <https://gith
 
 
 Usually in Abaqus, we have several things to do:
-    * Build the model
-    * Submit and monitor the job
-    * Get the output data and visualize it
+
+* Build the model
+* Submit and monitor the job
+* Get the output data and visualize it
 
 
 Build an Abaqus model
