@@ -9,7 +9,6 @@ Variable names and assignment
 
 The expression
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> myName = 'Einstein'
@@ -18,7 +17,6 @@ creates a variable called `myName` that refers to a String object.
 
 To see the value of a variable or expression, simply type the variable name or the expression at the Python prompt, and press **Enter**. For example,
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> myName = 'Einstein'
@@ -32,7 +30,6 @@ To see the value of a variable or expression, simply type the variable name or t
 
 Python creates a variable when you assign a value to it. Python provides several forms of the assignment statement; for example,
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> myName = 'Einstein'
@@ -51,7 +48,6 @@ When you assign a variable in a Python program, the variable refers to a Python 
 
 The first example script in :doc:`/user/about/examples/create-part` created a model using the following statement:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     myModel = mdb.Model(name='Model A')
@@ -70,7 +66,6 @@ Integer
 
 To create variables called i and j that refer to integer objects, type the following at the Python prompt:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> i = 20
@@ -78,7 +73,6 @@ To create variables called i and j that refer to integer objects, type the follo
 
 An integer is based on a C long and can be compared to a Fortran integer\*4 or \*8. For extremely large integer values, you should declare a long integer. The size of a long integer is essentially unlimited. The L at the end of the number indicates that it is a long integer.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> nodes = 2000000L
@@ -86,7 +80,6 @@ An integer is based on a C long and can be compared to a Fortran integer\*4 or \
 
 Use int(*n*) to convert a variable to an integer; use long(*n*) to convert a variable to a long integer.
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     >>> load  = 279.86
@@ -109,7 +102,6 @@ Float
 
 Floats represent floating-point numbers or real numbers. You can use exponential notation for floats.
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     >>> pi   = 22.0/7.0
@@ -125,7 +117,6 @@ Complex
 
 Complex numbers use the j notation to indicate the imaginary part of the number. Python provides methods to manipulate complex numbers. The conjugate method calculates the conjugate of a complex number.
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     >>> a = 2 + 4j
@@ -134,7 +125,6 @@ Complex numbers use the j notation to indicate the imaginary part of the number.
 
 A complex number has two members, the real member and the imaginary member.
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     >>> a = 2 + 4j
@@ -145,7 +135,6 @@ A complex number has two members, the real member and the imaginary member.
 
 Python provides complex math functions to operate on complex variables. You need to import the cmath module to use the complex square root function.
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     >>> import cmath
@@ -165,7 +154,6 @@ Determining the type of a variable
 
 You use the `type()` function to return the type of the object to which a variable refers.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> a = 2.375
@@ -193,7 +181,6 @@ List
 
 Lists are mutable heterogeneous sequences (anything that can be modified is called mutable). A list can be a sequence of strings, integers, floats, or any combination of these. In fact, a list can contain any type of object; for example,
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> myIntegerList = [7,6,5,4]
@@ -201,7 +188,6 @@ Lists are mutable heterogeneous sequences (anything that can be modified is call
 
 You can refer to individual items from a sequence using the index of the item. Indices start at zero. Negative indices count backward from the end of a sequence.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> myList = [1,2,3]
@@ -218,14 +204,12 @@ You can refer to individual items from a sequence using the index of the item. I
 
 Lists are heterogeneous, which means they can contain objects of different type.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> myList=[1,2.5,'steel']
 
 A list can contain other lists.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> myList=[[0,1,2],[3,4,5],[6,7,8]] 
@@ -236,7 +220,6 @@ A list can contain other lists.
 
 `myList[1][2]` refers to the third item in the second list. Remember, indices start at zero.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> myList[1][2]
@@ -244,7 +227,6 @@ A list can contain other lists.
 
 Python has built-in methods that allow you to operate on the items in a sequence.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> myList
@@ -315,21 +297,18 @@ Tuple
 
 Tuples are very similar to lists; however, they are immutable heterogeneous sequences, which means that you cannot change them after you create them. You can think of a tuple as a list that cannot be modified. Tuples have no methods; you cannot append items to a tuple, and you cannot modify or delete the items in a tuple. The following statement creates an empty tuple:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     myTuple = ()
 
 The following statement creates a tuple with one element:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     myTuple = (5.675,)
 
 You can use the `tuple()` function to convert a list or a string to a tuple.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> myList = [1, 2, "stress", 4.67]
@@ -343,7 +322,6 @@ You can use the `tuple()` function to convert a list or a string to a tuple.
 
 The following statements create a tuple and then try to change the value of an item in the tuple. An `AttributeError` error message is generated because a tuple is immutable.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> myTuple = (1,2,3,4,5)
@@ -359,7 +337,6 @@ String
 
 Strings are immutable sequences of characters. Strings are defined by single or double quotation marks. You can use the + operator to concatenate two strings and create a third string; for example,
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> odbString = "Symbol plot from "
@@ -375,7 +352,6 @@ Strings are immutable sequences of characters. Strings are defined by single or 
 
 Python provides a set of functions that operate on strings.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> annotationString
@@ -387,7 +363,6 @@ Python provides a set of functions that operate on strings.
     
 As with all sequences, you use negative indices to index backward from the end of a string.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> axis_label = 'maxstrain'
@@ -396,7 +371,6 @@ As with all sequences, you use negative indices to index backward from the end o
 
 Use the built-in str function to convert an object to a string.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> myList = [8, 9, 10]
@@ -410,7 +384,6 @@ Array
 
 Arrays are mutable homogeneous sequences. The numpy module allows you to create and operate on multidimensional arrays. Python determines the type of elements in the array; you do not have to declare the type when you create the array. For more information about the numpy module, see https://numpy.org.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> from numpy import array
@@ -439,7 +412,6 @@ Slicing
 
 Sequences can be divided into smaller sequences. This operation is called slicing. The expression sequence[m:n] returns a copy of sequence from m to n−1. The default value for m is zero; the default value for n is the length of the sequence.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> myList = [0,1,2,3,4]
@@ -454,7 +426,6 @@ Sequences can be divided into smaller sequences. This operation is called slicin
 Repeat a sequence
 ~~~~~~~~~~~~~~~~~
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> x=(1,2)
@@ -468,7 +439,6 @@ Determine the length of a sequence
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> myString ='linear load'
@@ -481,7 +451,6 @@ Determine the length of a sequence
 Concatenate sequences
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> a = [0,1]
@@ -498,7 +467,6 @@ Range
 
 The `range()` function generates a list containing a sequence of integers. You can use the `range()` function to control iterative loops. The arguments to range are start (the starting value), end (the ending value plus one), and step (the step between each value). The start and step arguments are optional; the default start argument is 0, and the default step argument is 1. The arguments must be integers.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> range(2,8)
@@ -513,7 +481,6 @@ Convert a sequence type
 
 Convert a sequence to a list or a tuple.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> myString='noise'
@@ -531,7 +498,6 @@ Python None
 Python defines a special object called the None object or Python None that represents an empty value. The None object is returned by functions and methods that do not have a return value. The None object has no value and prints as None. For example
 
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> a = [1, 3, 7, 5] 
@@ -547,7 +513,6 @@ Continuation lines and comments
 
 You can continue a statement on the following line if you break the statement between a set of (), {}, or [] delimiters. For example, look at the tuple that was used in :doc:`/user/about/examples/creat-part` to assign the coordinates of the vertices to a variable:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     xyCoordsOuter = ((-10, 30), (10, 30), (40, -30), 
@@ -556,7 +521,6 @@ You can continue a statement on the following line if you break the statement be
 
 If a statement breaks at any other place, you must include a \\ character at the end of the line to indicate that it is continued on the next line. For example,
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     distance = mdb.models['Model-1'].parts['housing'].\
@@ -565,7 +529,6 @@ If a statement breaks at any other place, you must include a \\ character at the
 When you are running Python from a local Linux or Windows window, the prompt changes to the . . . characters to indicate that you are on a continuation line.
 Comments in a Python script begin with the # character and continue to the end of the line.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> # Define material constants
@@ -576,7 +539,6 @@ Printing variables using formatted output
 
 Python provides a print function that displays the value of a variable. For example,
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> freq = 22.0/7.0
@@ -588,7 +550,6 @@ Python provides a print function that displays the value of a variable. For exam
 
 The string modulus operator % allows you to format your output. The %s operator in the following example converts the variables to strings.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> print 'Vibration frequency = %s Displacement = %s' % (freq, x)
@@ -596,7 +557,6 @@ The string modulus operator % allows you to format your output. The %s operator 
 
 The `%f` operator specifies floating point notation and indicates the total number of characters to print and the number of decimal places.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> print 'Vibration frequency = %6.2f Displacement = %6.2f' % (freq, x)
@@ -604,7 +564,6 @@ The `%f` operator specifies floating point notation and indicates the total numb
 
 The `%E` operator specifies scientific notation and indicates the number of decimal places.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> print 'Vibration frequency = %.6E Displacement = %.2E' % (freq, x)
@@ -619,7 +578,6 @@ The `\\t` escape sequence inserts a tab character.
 
 For example,
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> print 'Vibration frequency = %+.6E\nDisplacement = %+.2E' % (freq, x)
@@ -632,7 +590,6 @@ Control blocks
 Python does not use a special character, such as }, to signify the end of a control block such as an if statement. Instead, Python uses indentation to indicate the end of a control block. You define the indentation that governs a block. When your script returns to the original indentation, the block ends. For example,
 
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     max = 5
@@ -649,7 +606,6 @@ When you are using the Python interpreter from the Abaqus/CAE command line inter
 if, elif, and else
 ~~~~~~~~~~~~~~~~~~
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> load = 10
@@ -663,7 +619,6 @@ if, elif, and else
 while
 ~~~~~
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> load   = 10
@@ -682,7 +637,6 @@ while
 
 Use `continue` to skip the rest of the loop and to go to the next iteration.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> load   = 10
@@ -698,7 +652,6 @@ for
 
 Use a sequence to control the start and the end of for loops. The `range()` function is an easy way to create a sequence.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> for i in range(5):

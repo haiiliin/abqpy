@@ -8,7 +8,6 @@ To improve the efficiency of scripts that access an output database, you should 
 
 The following example examines the von Mises stress in each element during a particular frame of field output. If the stress is greater than a certain maximum value, the script prints the strain components for the element.
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     stressField = frame.fieldOutputs['MISES']
@@ -31,7 +30,6 @@ In this example every time the script accesses a strain component from **strainF
 A slight change in the script greatly improves its performance, as shown in the following example:
 
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     stressField = frame.fieldOutputs['MISES']
@@ -54,7 +52,6 @@ The second script replaces the statement strainField = frame.fieldOutputs['LE'] 
 Similarly, if you expect to retrieve more than one frame from an output database, you should create a temporary variable that holds the entire frame repository. You can then provide the logic to retrieve the desired frames from the repository and avoid recreating the repository each time. For example, executing the following statements could be very slow:
 
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     for i in range(len(odb.steps[name].frames)-1):
@@ -63,7 +60,6 @@ Similarly, if you expect to retrieve more than one frame from an output database
 Creating a temporary variable to hold the frame repository provides the same functionality and speeds up the process:
 
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     frameRepository = odb.steps[name].frames

@@ -74,7 +74,6 @@ Exception handling
 
 The Python exception handling techniques described in Error handling apply to the Abaqus Scripting Interface. You should use the command description in the :doc:`/references` to decide for which exception types you need to account. For example, the following Abaqus Scripting Interface script attempts to create a viewport and prints a message if the width or height are too small:
 
-.. autolink-concat:: off
 .. code-block:: python2
     
    try: 
@@ -85,7 +84,6 @@ The Python exception handling techniques described in Error handling apply to th
 
 The resulting output is
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     Viewport too small: width must be a Float >= 30 
