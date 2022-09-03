@@ -2,7 +2,7 @@
 Editing display preferences and GUI settings
 ============================================
 
-You can use the Abaqus Scripting Interface to edit the abaqus_2021.gpr file, which includes settings that control many default display preferences and GUI settings in the Abaqus/CAE user interface. To enable editing of this file, you must import the caePrefsAccess module. This section describes the structure of the abaqus_2021.gpr file and provides an overview of customizing its settings; for more detailed information about the functions available in the caePrefsAccess module, see :doc:`reference/kernel/cae_display_preferences`.
+You can use the Abaqus Scripting Interface to edit the abaqus_2021.gpr file, which includes settings that control many default display preferences and GUI settings in the Abaqus/CAE user interface. To enable editing of this file, you must import the caePrefsAccess module. This section describes the structure of the abaqus_2021.gpr file and provides an overview of customizing its settings; for more detailed information about the functions available in the caePrefsAccess module, see :doc:`/reference/kernel/cae_display_preferences`.
 
 .. warning::
     Editing the `abaqus_2021.gpr` file is for experienced users only. Do not use the functions in the `caePrefsAccess` module unless you are comfortable with the Abaqus Scripting Interface and understand the structure of the `abaqus_2021.gpr` file. In addition, you should not have Abaqus/CAE running when you make changes to the graphical preferences file.
