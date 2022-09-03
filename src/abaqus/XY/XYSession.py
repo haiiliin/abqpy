@@ -606,8 +606,10 @@ class XYSession(XYSessionBase):
             .. code-block:: python
             
                 variable=('S',INTEGRATION_POINT, ((COMPONENT, 'S22' ), ), )
-                variable=(('S',INTEGRATION_POINT, ((COMPONENT, 'S11' ), ), ), ('U',NODAL,((COMPONENT, 'U1'),)),)
-                variable=(('S', INTEGRATION_POINT, ((INVARIANT, 'Mises' ), ),{'shell < STEEL > < 3 section points >':'SNEG, (fraction = -1.0)', }), )                                   (fraction = -1.0)', }), )
+                variable=(('S',INTEGRATION_POINT, ((COMPONENT, 'S11' ), ), ), 
+                          ('U',NODAL,((COMPONENT, 'U1'),)),)
+                variable=(('S', INTEGRATION_POINT, ((INVARIANT, 'Mises' ), ), 
+                          {'shell < STEEL > < 3 section points >':'SNEG, (fraction = -1.0)', }), )  
         elementSets
             A sequence of Strings specifying element sets or a String specifying a single element
             set.
