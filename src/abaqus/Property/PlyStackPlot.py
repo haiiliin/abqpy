@@ -44,7 +44,7 @@ def MdbPlyStackPlot(part: Part, region: Region) -> PlyStackPlot:
         A :py:class:`~abaqus.Property.PlyStackPlot.PlyStackPlot` object.
 
     Raises
-    -------
+    ------
         None.
     """
     return PlyStackPlot()
@@ -76,7 +76,7 @@ def OdbPlyStackPlot(odb: Odb, sectionName: str, offset: float = 0):
        A :py:class:`~abaqus.Property.PlyStackPlot.PlyStackPlot` object.
 
     Raises
-    -------
+    ------
         None.
     """
     return PlyStackPlot()
