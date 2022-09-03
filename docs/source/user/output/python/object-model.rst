@@ -16,14 +16,14 @@ For example, consider the object model for field output data shown in :numref:`o
 
 The object model translates directly to the structure of an Abaqus Scripting Interface command. For example, the following command refers to a Frame object in the sequence of frames contained in an OdbStep object:
 
-.. code-block:: python
+.. code-block:: python2
 
     odb.steps['10 hz vibration'].frames[3] 
 
 Similarly, the following command refers to the sequence of field data contained in a FieldOutput object.
 
 
-.. code-block:: python
+.. code-block:: python2
 
     odb.steps['10 hz vibration'].frames[3].\
         fieldOutputs['U'].values[47]

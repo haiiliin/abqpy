@@ -14,13 +14,13 @@ The examples illustrate how a script can operate on a model in a model database 
 
 - A command that creates something (an "object" in object-oriented programming terms) is called a constructor and starts with an uppercase character. For example, the following statement uses the Model constructor to create a model object.
 
-  .. code-block:: python
+  .. code-block:: python2
 
       myModel = mdb.Model(name='Model A')
 
   The model object created is
 
-  .. code-block:: python
+  .. code-block:: python2
 
       mdb.models['Model A']
 
