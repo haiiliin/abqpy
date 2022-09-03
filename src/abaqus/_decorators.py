@@ -416,11 +416,7 @@ def abaqus_class_doc(cls):
     """Add a link to the Abaqus documentation to the docstring of the class.
     """
     class_name = cls.__name__
-<<<<<<< HEAD
-    class_name = _process_class_name(class_name)
-=======
     processed_class_name = _process_class_name(class_name)
->>>>>>> e4a85b6 (Fix wrong references)
     cls.__doc__ = doc.add_link_in_class_docstring(
         class_name=processed_class_name,
         docstring=cls.__doc__,
