@@ -19,22 +19,23 @@ class ThermalConductance:
         
         The **clearanceDepTable** data specify the following:
         
-            - Conductivity.
-            - Clearance.
-            - Temperature, if the data depend on temperature.
-            - Mass flow rate, if the data depend on mass flow rate.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Conductivity.
+        - Clearance.
+        - Temperature, if the data depend on temperature.
+        - Mass flow rate, if the data depend on mass flow rate.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+            
         The **pressureDepTable** data specify the following:
         
-            - Conductivity.
-            - Pressure.
-            - Temperature, if the data depend on temperature.
-            - Mass flow rate, if the data depend on mass flow rate.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Conductivity.
+        - Pressure.
+        - Temperature, if the data depend on temperature.
+        - Mass flow rate, if the data depend on mass flow rate.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
         The corresponding analysis keywords are:
 

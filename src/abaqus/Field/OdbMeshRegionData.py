@@ -43,6 +43,7 @@ class OdbMeshRegionData:
     #: - WHOLE_PART_INSTANCE
     #: - WHOLE_MODEL
     #: - GENERAL_PARTICLE
+    #: 
     #: The default value is UNDEFINED_POSITION.
     outputPosition: SymbolicConstant = UNDEFINED_POSITION
 
@@ -62,6 +63,7 @@ class OdbMeshRegionData:
     #: - TENSOR_3D_SURFACE
     #: - TENSOR_2D_PLANAR
     #: - TENSOR_2D_SURFACE
+    #: 
     #: The default value is SCALAR.
     dataType: SymbolicConstant = SCALAR
 
@@ -115,7 +117,7 @@ class OdbMeshRegionData:
     numericForm: SymbolicConstant = REAL
 
     #: A Float specifying the angle (in degrees) at which to display results that contain
-    #: complex numbers when *numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The
+    #: complex numbers when *numericForm=COMPLEX_MAG_AT_ANGLE* = COMPLEX_MAG_AT_ANGLE. The
     #: default value is 0.0.
     complexAngle: float = 0
 
@@ -141,6 +143,7 @@ class OdbMeshRegionData:
     #: - WHOLE_PART_INSTANCE
     #: - WHOLE_MODEL
     #: - GENERAL_PARTICLE
+    #: 
     #: The default value is UNDEFINED_POSITION.
     displayOutputPosition: SymbolicConstant = UNDEFINED_POSITION
 
@@ -280,9 +283,13 @@ class OdbMeshRegionData:
             A Dictionary with String keys and String values. Each key specifies a region in the
             model; the corresponding value specifies a section point within that region. For
             example:
-            sectionPoint={'shell < MAT > < 7 section points >':'SPOS
-            (fraction = 1.0)', 'shell < MAT > < 5 section points >':
-            'SPOS, (fraction = 1.0)', }
+            
+            .. code-block:: python
+            
+                sectionPoint = {
+                    'shell < MAT > < 7 section points >': 'SPOS, (fraction = 1.0)', 
+                    'shell < MAT > < 5 section points >': 'SPOS, (fraction = 1.0)', 
+                }
         refinementType
             A SymbolicConstant specifying the type of the FieldOutput object. Possible values for
             the SymbolicConstant are NO_REFINEMENT, INVARIANT and COMPONENT. Default argument is

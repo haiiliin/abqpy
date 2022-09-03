@@ -6,7 +6,7 @@ You have seen how to execute Python statements from the stand-alone Python inter
 
 If your script accesses the functionality of any of the Abaqus/CAE modules, the statements must be interpreted by the Abaqus/CAE kernel; you cannot run the script from the Python interpreter invoked from the system prompt. You must execute the script in Abaqus/CAE by selecting **File -> Run Script** from the main menu bar and selecting the file to execute. In addition, the script must contain the following statements:
 
-.. code-block:: python
+.. code-block:: python2
 
     from abaqus import * 
     from abaqusConstants import *
@@ -15,13 +15,13 @@ If your script accesses and manipulates data in an output database, you can exec
 
 Type `abaqus python scriptname.py` at the system prompt. The script must contain the following statement:
 
-.. code-block:: python
+.. code-block:: python2
 
     from odbAccess import *
 
 Select FileRun Script from the Abaqus/CAE main menu bar, and select the file to execute. The script must contain the following statement:
 
-.. code-block:: python
+.. code-block:: python2
 
     from visualization import *
 

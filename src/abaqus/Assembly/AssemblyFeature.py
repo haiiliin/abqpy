@@ -8,7 +8,7 @@ from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc
-class Feature(FeatureBase):
+class AssemblyFeature(FeatureBase):
     """The following commands operate on Feature objects. For more information about the
     Feature object, see Feature object.
 
@@ -37,7 +37,7 @@ class Feature(FeatureBase):
         projectionDistance: str = "",
         flipSourceToTargetDirection: Boolean = OFF,
         setName: str = "",
-    ) -> "Feature":
+    ) -> "AssemblyFeature":
         """This method creates a Feature object by creating attachment lines between the given set
         of source and target faces. The given points are first projected onto the source faces
         using the specified projection method. The points are then projected normal to the
@@ -104,14 +104,14 @@ class Feature(FeatureBase):
 
         Returns
         -------
-        Feature
-            A :py:class:`~abaqus.Assembly.Feature.Feature` object.
+        AssemblyFeature
+            A :py:class:`~abaqus.Feature.Feature.Feature` object.
         """
-        return Feature()
+        return AssemblyFeature()
 
     @staticmethod
     @abaqus_method_doc
-    def Coaxial(movableAxis: str, fixedAxis: str, flip: Boolean) -> "Feature":
+    def Coaxial(movableAxis: str, fixedAxis: str, flip: Boolean) -> "AssemblyFeature":
         """This method moves an instance so that its selected face is coaxial with the selected
         face of a fixed instance.
 
@@ -133,18 +133,18 @@ class Feature(FeatureBase):
 
         Returns
         -------
-        Feature
-            A :py:class:`~abaqus.Assembly.Feature.Feature` object.
+        AssemblyFeature
+            A :py:class:`~abaqus.Feature.Feature.Feature` object.
 
         Raises
         ------
         AbaqusException
         """
-        return Feature()
+        return AssemblyFeature()
 
     @staticmethod
     @abaqus_method_doc
-    def CoincidentPoint(movablePoint: str, fixedPoint: str) -> "Feature":
+    def CoincidentPoint(movablePoint: str, fixedPoint: str) -> "AssemblyFeature":
         """This method moves an instance so that a specified point is coincident with a specified
         point of a fixed instance.
 
@@ -166,16 +166,16 @@ class Feature(FeatureBase):
 
         Returns
         -------
-        feature: Feature
-            A :py:class:`~abaqus.Assembly.Feature.Feature` object
+        feature: AssemblyFeature
+            A :py:class:`~abaqus.Feature.Feature.Feature` object
         """
-        return Feature()
+        return AssemblyFeature()
 
     @staticmethod
     @abaqus_method_doc
     def EdgeToEdge(
         movableAxis: str, fixedAxis: str, flip: Boolean, clearance: float
-    ) -> "Feature":
+    ) -> "AssemblyFeature":
         """This method moves an instance so that its edge is parallel to an edge of a fixed
         instance.
 
@@ -203,20 +203,20 @@ class Feature(FeatureBase):
 
         Returns
         -------
-        Feature
+        AssemblyFeature
             A Feature Object.
 
         Raises
         ------
         AbaqusException
         """
-        return Feature()
+        return AssemblyFeature()
 
     @staticmethod
     @abaqus_method_doc
     def FaceToFace(
         movablePlane: str, fixedPlane: str, flip: Boolean, clearance: float
-    ) -> "Feature":
+    ) -> "AssemblyFeature":
         """This method moves an instance so that its face is coincident with a face of a fixed
         instance.
 
@@ -243,18 +243,18 @@ class Feature(FeatureBase):
 
         Returns
         -------
-        Feature
+        AssemblyFeature
             A Feature Object.
 
         Raises
         ------
         AbaqusException
         """
-        return Feature()
+        return AssemblyFeature()
 
     @staticmethod
     @abaqus_method_doc
-    def ParallelCsys(movableCsys: str, fixedCsys: str) -> "Feature":
+    def ParallelCsys(movableCsys: str, fixedCsys: str) -> "AssemblyFeature":
         """This method moves an instance so that its Datum coordinate system is parallel to a Datum
         coordinate system of a fixed instance.
 
@@ -274,18 +274,18 @@ class Feature(FeatureBase):
 
         Returns
         -------
-        Feature
-            A :py:class:`~abaqus.Assembly.Feature.Feature` object.
+        AssemblyFeature
+            A :py:class:`~abaqus.Feature.Feature.Feature` object.
 
         Raises
         ------
         AbaqusException
         """
-        return Feature()
+        return AssemblyFeature()
 
     @staticmethod
     @abaqus_method_doc
-    def ParallelEdge(movableAxis: str, fixedAxis: str, flip: Boolean) -> "Feature":
+    def ParallelEdge(movableAxis: str, fixedAxis: str, flip: Boolean) -> "AssemblyFeature":
         """This method moves an instance so that its edge is parallel to an edge of a fixed
         instance.
 
@@ -310,18 +310,18 @@ class Feature(FeatureBase):
 
         Returns
         -------
-        Feature
-            A :py:class:`~abaqus.Assembly.Feature.Feature` object.
+        AssemblyFeature
+            A :py:class:`~abaqus.Feature.Feature.Feature` object.
 
         Raises
         ------
         AbaqusException
         """
-        return Feature()
+        return AssemblyFeature()
 
     @staticmethod
     @abaqus_method_doc
-    def ParallelFace(movablePlane: str, fixedPlane: str, flip: Boolean) -> "Feature":
+    def ParallelFace(movablePlane: str, fixedPlane: str, flip: Boolean) -> "AssemblyFeature":
         """This method moves an instance so that its face is parallel to a face of a fixed
         instance.
 
@@ -346,11 +346,11 @@ class Feature(FeatureBase):
 
         Returns
         -------
-        Feature
-            A :py:class:`~abaqus.Assembly.Feature.Feature` object.
+        AssemblyFeature
+            A :py:class:`~abaqus.Feature.Feature.Feature` object.
 
         Raises
         ------
         AbaqusException
         """
-        return Feature()
+        return AssemblyFeature()

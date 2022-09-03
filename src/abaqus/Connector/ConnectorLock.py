@@ -71,9 +71,9 @@ class ConnectorLock(ConnectorBehaviorOption):
             .. code-block:: python
 
                 import connectorBehavior
-                          connectorBehavior.ConnectorLock
-                          import odbConnectorBehavior
-                          odbConnectorBehavior.ConnectorLock
+                connectorBehavior.ConnectorLock
+                import odbConnectorBehavior
+                odbConnectorBehavior.ConnectorLock
 
         Parameters
         ----------

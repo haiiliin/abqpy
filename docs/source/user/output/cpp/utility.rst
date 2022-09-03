@@ -18,7 +18,7 @@ The following interface classes are provided:
 
   Repositories are provided to store objects retrieved by name. Both the repositories and the content of the repositories are created by the API; the user can only retrieve objects from repositories. Iterators are provided to navigate the repositories.The following Abaqus repositories are provided:odb_PartRepositoryodb_FieldOutputRepositoryodb_SectionCategoryRepositoryodb_HistoryRegionRepositoryodb_SetRepositoryodb_HistoryOutputRepositoryodb_StepRepositoryodb_InstanceRepository
 
-More detail on these interface utility objects can be found in :doc:`reference/odb`.
+More detail on these interface utility objects can be found in :doc:`/reference/odb`.
 
 Utility interface examples
 --------------------------
