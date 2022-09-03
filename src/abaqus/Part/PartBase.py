@@ -1,13 +1,7 @@
 import typing
 
 from .AcisFile import AcisFile
-<<<<<<< HEAD
-from .Feature import Feature
-
-# from ..Assembly.PartInstance import PartInstance
-=======
 from .PartFeature import PartFeature
->>>>>>> 0e64ce3 (Update PartFeature)
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.CellArray import CellArray
 from ..BasicGeometry.Edge import Edge
