@@ -27,6 +27,7 @@ Making the Odb commands available
 
 To make the Odb commands available to your script, you first need to import the odbAccess module using the following statements:
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     from odbAccess import *
@@ -34,6 +35,7 @@ To make the Odb commands available to your script, you first need to import the 
 
 To make the material and section Odb commands available to your script, you also need to import the relevant module using the following statements:
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     from odbMaterial import *
@@ -44,6 +46,7 @@ Opening an output database
 
 You use the `openOdb` method to open an existing output database. For example, the following statement opens the output database used by the Abaqus/CAE Visualization module tutorial:
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     odb = openOdb(path='viewer_tutorial.odb')
@@ -301,6 +304,7 @@ Reading field output data
 
 Field output data are stored in the fieldOutputs repository under the OdbFrame object. The key to the repository is the name of the variable. The following statements list all the variables found in the last frame of the first step (the statements use the variable `lastFrame` that we defined previously):
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     for fieldName in lastFrame.fieldOutputs.keys():
@@ -320,6 +324,7 @@ Different variables can be written to the output database at different frequenci
 
 You can use the following to view all the available field data in a frame:
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     # For each field output value in the last frame,
@@ -337,6 +342,7 @@ You can use the following to view all the available field data in a frame:
 
 The resulting print output lists all the field output variables in a particular frame, along with their type and position.
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     COPEN    TARGET/IMPACTOR : Contact opening
@@ -382,6 +388,7 @@ The resulting print output lists all the field output variables in a particular 
 In turn, a FieldOutput object has a member **values** that is a sequence of FieldValue objects that contain data. Each data value in the sequence has a particular location in the model. You can query the FieldValue object to determine the location of a data value; for example,
 
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     displacement=lastFrame.fieldOutputs['U']
@@ -396,6 +403,7 @@ In turn, a FieldOutput object has a member **values** that is a sequence of Fiel
 
 The resulting output is
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     Node = 1 U[x] = 0.0000, U[y] = -76.4580
@@ -407,12 +415,14 @@ The resulting output is
 
 The data in the FieldValue object depend on the field output variable, which is displacement in the above example. The following command lists all the members of a particular FieldValue object:
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     fieldValues[0].__members__
 
 The resulting output is
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     ['instance', 'elementLabel', 'nodeLabel', 'position',
@@ -429,6 +439,7 @@ Using regions to read a subset of field output data
 
 After you have created an OdbSet object using model data, you can use the getSubset method to read only the data corresponding to that region. Typically, you will be reading data from a region that refers to a node set or an element set. For example, the following statements create a variable called center that refers to the node set PUNCH at the center of the hemispherical punch. In a previous section you created the displacement variable that refers to the displacement of the entire model in the final frame of the first step. Now you use the getSubset command to get the displacement for only the center region.
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     center = odb.rootAssembly.instances['PART-1-1'].nodeSets['PUNCH']
@@ -439,12 +450,14 @@ After you have created an OdbSet object using model data, you can use the getSub
 
 The resulting output is
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     1000 array([0.0000, -76.4555], 'd')
 
 The arguments to getSubset are a region, an element type, a position, or section point data. The following is a second example that uses an element set to define the region and generates formatted output. For more information on tuples, the `len()` function, and the `range() `function, see :doc:`user/python/introduction/sequences` and :doc:`user/python/introduction/sequence operations`.
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     opCenter = \
@@ -480,6 +493,7 @@ The arguments to getSubset are a region, an element type, a position, or section
 The resulting output is
 
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     Element label =  1 Integration Point =  1
@@ -559,6 +573,7 @@ The history output data can be retrieved from the HistoryRegion objects in the o
 
 The following statements read the tutorial output database and write the U2 history data from the second step to an ASCII file that can be plotted by Abaqus/CAE:
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     from odbAccess import *
@@ -727,6 +742,7 @@ The following script combines many of the commands you have already seen and ill
 
 The resulting output is
 
+.. autolink-concat:: off
 .. code-block:: python2
     
     Position =  NODAL Type =  VECTOR
