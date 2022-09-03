@@ -342,10 +342,10 @@ class PredefinedFieldModel(
               specifying the temperature.
             - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a
               sequence of Doubles specifying the mean value and the gradient in the thickness
-            direction.
+              direction.
             - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a
               sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the
-            gradient in the N2 direction.
+              gradient in the N2 direction.
             - If **crossSectionDistribution** = POINTS_THROUGH_SECTION then **magnitudes** is a sequence
               of Doubles specifying the temperature at each point.
         absoluteExteriorTolerance
@@ -540,11 +540,11 @@ class PredefinedFieldModel(
         """This method creates a Field object.
 
         .. note::
-        This function can be accessed by:
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Field
+                mdb.models[name].Field
 
         .. versionadded:: 2018
             The `Field` method was added.
@@ -573,10 +573,12 @@ class PredefinedFieldModel(
         crossSectionDistribution
             A SymbolicConstant specifying how the predefined field is distributed over the
             cross-section of the region. Possible values are
+            
             - CONSTANT_THROUGH_THICKNESS
             - GRADIENTS_THROUGH_SHELL_CS
             - GRADIENTS_THROUGH_BEAM_CS
             - POINTS_THROUGH_SECTION
+            
             The default value is CONSTANT_THROUGH_THICKNESS.
         field
             A String specifying the name of the AnalyticalField or DiscreteField object associated
