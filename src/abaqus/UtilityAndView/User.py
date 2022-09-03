@@ -99,8 +99,10 @@ def getWarningReply(message: str, buttons: str):
     provide a multi-line message in the warning dialog box; for example
     
     .. code-block:: python
-    
-        getWarningReply('Out of disk space!\nOkay to continue', (YES,NO))
+
+        from abaqus import *
+        from abaqusConstants import *
+        getWarningReply('Out of disk space!\nOkay to continue', (YES, NO))
     
     .. note:: 
         You cannot use a script that contains getWarningReply if you are running the script
