@@ -46,8 +46,8 @@ class SurfaceThicknessAssignment:
             
             - A Float or a SymbolicConstant specifying the overriding thickness value to be used in
               the contact definition. Possible values of the SymbolicConstant are ORIGINAL and
-            THINNING. The SymbolicConstant THINNING can be specified only in an Abaqus/Explicit
-            analysis.
+              THINNING. The SymbolicConstant THINNING can be specified only in an Abaqus/Explicit
+              analysis.
             - A Float specifying a scale factor that multiplies the thickness value specified in the
               second entry.
         """
