@@ -1783,19 +1783,19 @@ class OptimizationTask(OptimizationTaskBase):
             A Region object specifying the region to which the geometric restriction is applied.
         csys
             None or a DatumCsys object specifying the local coordinate system of the
-            *pullDirection*. If *csys* = None, the global coordinate system is used. When this member
+            *pullDirection*. If **csys**= None, the global coordinate system is used. When this member
             is queried, it returns an Int indicating the identifier of the DatumCsys. The default
             value is None.
         draftAngle
             A Float specifying the overhang angle. The default value is 45.0.
         overhangCheckRegion
             The SymbolicConstant OVERHANG_REGION or a Region object specifying the overhang check
-            region. If the value is OVERHANG_REGION, the value of *region* is used as both the
+            region. If the value is OVERHANG_REGION, the value of **region**is used as both the
             overhang control region and the overhang check region. The default value is
             OVERHANG_REGION.
         pointRegion
             A Region object specifying the point on a plane perpendicular to the *pullDirection*
-            that is used to specify the base plane when *technique* is POINT.
+            that is used to specify the base plane when **technique**is POINT.
         radius
             A Float specifying the radius to define the size of the cones that are used in the
             internal check for the overhang criteria.
