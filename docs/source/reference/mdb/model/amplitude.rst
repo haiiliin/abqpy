@@ -94,14 +94,6 @@ PeriodicAmplitude
 
     .. autoclasstoc::
 
-Property
-~~~~~~~~
-
-.. autoclass:: abaqus.Amplitude.Property.Property
-    :members:
-
-    .. autoclasstoc::
-
 PsdDefinition
 ~~~~~~~~~~~~~
 
