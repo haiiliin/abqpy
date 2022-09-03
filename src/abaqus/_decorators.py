@@ -3,9 +3,9 @@ import typing
 from pathlib import Path
 
 try:
-    from ._version import version as default_version
+    from ._version import version as _default_version
 except ImportError:
-    default_version = '2022.0.0-unknown'
+    _default_version = '2022.0.0-unknown'
 
 
 def _get_version():
@@ -21,12 +21,12 @@ def _get_version():
                 root=root,
                 version_scheme="release-branch-semver",
                 local_scheme="node-and-date",
-                fallback_version=default_version,
+                fallback_version=_default_version,
             )
         except ValueError:
-            return default_version
+            return _default_version
     else:  # Get the version from the _version.py setuptools_scm file.
-        return default_version
+        return _default_version
 
 
 version = _get_version()[:4]
