@@ -82,7 +82,6 @@ Start Abaqus/CAE, and create a model database from the **Start Session** dialog 
 
 If you want, you can complete the above steps for creating the model using a function in `skewExampleUtils.py`. In the command line interface area of Abaqus/CAE, type the following commands:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     import skewExampleUtils
@@ -164,7 +163,6 @@ he following shows the contents of the script skewExample.py. The parametric stu
 
   The theoretical results are also plotted.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     """
@@ -297,7 +295,6 @@ The script imports two functions from `skewExampleUtils`. The functions do the f
 - Retrieve the displacement and calculate the maximum bending moment at the center of the plate.
 - Display curves of theoretical and computed results in a new viewport.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     """

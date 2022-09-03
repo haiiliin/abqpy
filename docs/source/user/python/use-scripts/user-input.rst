@@ -21,7 +21,6 @@ The `getInput` function displays a dialog box in the center of the main window, 
 
 The following examples illustrate the use of the `getInput` function. The first example shows a script that uses the `getInput` function to obtain a number from the user. The script then prints the square root of that number.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     from abaqus import getInput
@@ -38,7 +37,6 @@ The `float` function on the third line converts the string returned by `getInput
 
 The next example shows how to modify a macro recorded by the **Macro Manager** in Abaqus/CAE to use the getInput function. The following text shows a macro named `createViewport` that was recorded by Abaqus/CAE while the user created a viewport. Macros are stored in the file `abaqusMacros.py` in your local or home directory.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     from abaqus import *
@@ -50,7 +48,6 @@ The next example shows how to modify a macro recorded by the **Macro Manager** i
 
 The following shows how you can modify the macro to accept input from the user. Default values for the viewport width and height have been added to the input request.
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     from abaqus import *
@@ -76,7 +73,6 @@ The `getInputs` function displays a dialog box in the center of the main window,
 
 The following examples illustrate the use of the `getInputs` function to obtain a sequence of numbers from the user:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     from abaqus import getInputs
@@ -95,7 +91,6 @@ The following figure shows the dialog box that these statements create:
 
 The `fields` argument to the `getInputs` method is a sequence of sequences of Strings. The inner sequence is a pair of Strings that specifies the description of the text field and the default value of the field. If the text field does not have a default value, you must specify an empty string; for example,
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     fields = (('Width',''), ('Length', ''), ('Height', ''))
@@ -106,7 +101,6 @@ The `label` argument to the `getInputs` method is an optional label that appears
 
 If the user clicks **[Cancel]**, the `getInputs` method returns a sequence of `None` objects. You can check the first value in the sequence to determine if the user clicked **[Cancel]**; for example:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     fields = (('Density',''), ('Youngs modulus', ''))
@@ -121,7 +115,6 @@ The `getWarningReply` function displays a warning dialog box in the center of th
 
 The following example illustrates the use of the `getWarningReply` function:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     from abaqus import getWarningReply, YES, NO

@@ -9,7 +9,6 @@ If your script accesses and manipulates data in an output database, you can use 
 
 Your script must contain the following statement:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     from odbAccess import *
@@ -17,7 +16,6 @@ Your script must contain the following statement:
 In addition, if your script refers to any of the Symbolic Constants defined in the Abaqus Scripting Interface, your script must contain the following statement:
 
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     from abaqusConstants import *
@@ -25,7 +23,6 @@ In addition, if your script refers to any of the Symbolic Constants defined in t
 If your script accesses or creates material objects, or if it accesses or creates section or beam profile objects, it must contain the following statements, respectively:
 
 
-.. autolink-concat:: off
 .. code-block:: python2
     
     from odbMaterial import *

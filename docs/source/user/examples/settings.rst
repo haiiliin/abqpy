@@ -97,14 +97,12 @@ You can retrieve the location of your `abaqus_2021.gpr` file using the `getGuiPr
 
 You can change the geometry of the Abaqus/CAE main window by issuing a command like the following:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> guiPrefs['Abaqus/CAE']['Geometry']['AFXMainWindow'] = '193,67,800,600'
 
 You can save the GUI preferences you change to the original file by issuing the following command:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     >>> guiPrefs.save()
