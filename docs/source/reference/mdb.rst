@@ -40,6 +40,7 @@ AcisMdb
 
 .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
    :members:
+   :noindex:
 
    .. autoclasstoc::
 
@@ -48,5 +49,6 @@ JobMdb
 
 .. autoclass:: abaqus.Job.JobMdb.JobMdb
    :members:
+   :noindex:
 
    .. autoclasstoc::
