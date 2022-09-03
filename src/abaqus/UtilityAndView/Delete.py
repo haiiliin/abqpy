@@ -7,10 +7,10 @@ deleted. This callback allows you to examine an object before it is deleted.
 For example, in the following script the myCallback function is executed when any Job 
 object is about to be deleted: 
 
-.. code-block:: python
+.. code-block:: python2
 
-    import deleteObjectCallback 
-    @abaqus_method_doc
+    import deleteObjectCallback
+    
     def myCallback(path, userData): 
         print 'About to delete', path 
     deleteObjectCallback.addCallback(path='mdb.jobs[*]') 
@@ -46,15 +46,15 @@ def deleteObjectCallback(
     ----------
     callback
         A Python function to be called when an object matching the specified path is about to be
-        deleted. The interface definition of the callback function is:`def
-        functionName(objectPath, userData)`where:*objectPath* is the path to the object about to
-        be deleted.*userData* is the object passed as the **userData** argument to the addCallback
+        deleted. The interface definition of the callback function is `def
+        functionName(objectPath, userData)` where *objectPath* is the path to the object about to
+        be deleted. *userData* is the object passed as the **userData** argument to the addCallback
         method.
     path
         A String specifying the path to an object or the SymbolicConstant ANY. You can include
         wildcards in the path to specify a pattern to be matched. Examples of valid paths
-        are:`path='mdb.models[*]' path=”mdb.models['Axle*'].parts[*]”
-        path='mdb.models[*].materials[*]' `
+        are  `path='mdb.models[*]' path="mdb.models['Axle*'].parts[*]"`, and
+        `path='mdb.models[*].materials[*]'`
     userData
         Any type of data. This data will be passed to the callback function. The default value
         is None.

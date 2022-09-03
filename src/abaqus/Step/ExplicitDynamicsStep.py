@@ -83,6 +83,19 @@ class ExplicitDynamicsStep(AnalysisStep):
     #: only when **timeIncrementationMethod** = FIXED_USER_DEFINED_INC. The default value is None.
     userDefinedInc: float = None
 
+<<<<<<< HEAD
+=======
+    #: A Boolean specifying whether to use the "improved" (*improvedDtMethod* = ON) or
+    #: "conservative" (*improvedDtMethod* = OFF) method to estimate the element stable time
+    #: increment for three-dimensional continuum elements and elements with plane stress
+    #: formulations (shell, membrane, and two-dimensional plane stress elements). The default
+    #: value is ON.
+    #:
+    #: ..versionadded:: 2018
+    #:     The `improvedDtMethod` attribute was added.
+    improvedDtMethod: Boolean = ON
+
+>>>>>>> abf1154 (Fix wrong formats)
     #: A String specifying the name of the previous step. The new step appears after this step
     #: in the list of analysis steps.
     previous: str = ""
@@ -95,7 +108,7 @@ class ExplicitDynamicsStep(AnalysisStep):
     massScaling: MassScalingArray = PREVIOUS_STEP
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
-    #: (*procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
+    #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
     explicit: SymbolicConstant = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
@@ -249,6 +262,18 @@ class ExplicitDynamicsStep(AnalysisStep):
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
             name. The default value is False.
+<<<<<<< HEAD
+=======
+        improvedDtMethod
+            A Boolean specifying whether to use the "improved" (*improvedDtMethod* = ON) or
+            "conservative" (*improvedDtMethod* = OFF) method to estimate the element stable time
+            increment for three-dimensional continuum elements and elements with plane stress
+            formulations (shell, membrane, and two-dimensional plane stress elements). The default
+            value is ON.
+
+            .. versionadded:: 2018
+                The *improvedDtMethod* argument was added.
+>>>>>>> abf1154 (Fix wrong formats)
 
         Returns
         -------
@@ -313,6 +338,18 @@ class ExplicitDynamicsStep(AnalysisStep):
         userDefinedInc
             None or a Float specifying the user-defined time increment. This argument is required
             only when **timeIncrementationMethod** = FIXED_USER_DEFINED_INC. The default value is None.
+<<<<<<< HEAD
+=======
+        improvedDtMethod
+            A Boolean specifying whether to use the "improved" (*improvedDtMethod* = ON) or
+            "conservative" (*improvedDtMethod* = OFF) method to estimate the element stable time
+            increment for three-dimensional continuum elements and elements with plane stress
+            formulations (shell, membrane, and two-dimensional plane stress elements). The default
+            value is ON.
+
+            .. versionadded:: 2018
+                The *improvedDtMethod* argument was added.
+>>>>>>> abf1154 (Fix wrong formats)
 
         Raises
         ------

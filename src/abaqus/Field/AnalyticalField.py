@@ -172,9 +172,13 @@ class AnalyticalField(Field):
             A Dictionary with String keys and String values. Each key specifies a region in the
             model; the corresponding value specifies a section point within that region. For
             example:
-            sectionPoint={'shell < MAT > < 7 section points >':'SPOS
-            (fraction = 1.0)', 'shell < MAT > < 5 section points >':
-            'SPOS, (fraction = 1.0)', }
+            
+            .. code-block:: python
+            
+                sectionPoint = {
+                    'shell < MAT > < 7 section points >': 'SPOS, (fraction = 1.0)', 
+                    'shell < MAT > < 5 section points >': 'SPOS, (fraction = 1.0)', 
+                }
         refinementType
             A SymbolicConstant specifying the type of the FieldOutput object. Possible values for
             the SymbolicConstant are NO_REFINEMENT, INVARIANT and COMPONENT. Default argument is
