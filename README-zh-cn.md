@@ -3,6 +3,7 @@
 [![Documentation Status](https://img.shields.io/readthedocs/abqpy?label=docs)](https://readthedocs.org/projects/abqpy/)
 [![Documentation Status](https://img.shields.io/readthedocs/abqpy-zh-cn?label=docs-zh-cn)](https://readthedocs.org/projects/abqpy-zh-cn/)
 [![Pages](https://github.com/haiiliin/abqpy/actions/workflows/pages.yaml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pages.yaml)
+[![pytest](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yaml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yaml)
 [![Upload Python Package to PyPI](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-pypi.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-pypi.yml)
 [![Build and Upload Conda Package](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-conda.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-conda.yml)
 [![Crowdin](https://badges.crowdin.net/abqpy/localized.svg)](https://crowdin.com/project/abqpy)
