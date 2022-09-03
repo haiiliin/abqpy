@@ -6,7 +6,7 @@ This section describes the style that is used to describe a command in the :doc:
 
 The following list describes the order in which commands are documented in the :doc:`/references`:
 
-- Chapters are grouped alphabetically by functionality. In general, the functionality corresponds to the modules and toolsets that are found in Abaqus/CAE; for example, :doc:`/reference/session/animation`, and :doc:`/reference/mdb/model/part_assembly/assembly`.
+- Chapters are grouped alphabetically by functionality. In general, the functionality corresponds to the modules and toolsets that are found in Abaqus/CAE; for example, :doc:`/reference/session/animation`, and :doc:`/reference/mdb/model/assembly`.
 - Within each chapter the primary objects appear first and are followed by other objects in alphabetical order. For example, in :doc:`/reference/mdb/model/mesh` the objects are listed in the following order:
   
   - Assembly
