@@ -9,7 +9,7 @@ SymbolicConstants
 
 Some arguments require that you provide a SymbolicConstant. SymbolicConstants are defined by the Abaqus Scripting Interface and are written in all capital letters. If your script uses a SymbolicConstant defined by the Abaqus Scripting Interface, you must import the SymbolicConstant with the following statement before you refer to it:
 
-.. code-block:: python
+.. code-block:: python2
     
     from abaqusConstants import *
 
@@ -24,7 +24,7 @@ Booleans
 
 Python defines two Boolean values, True and False. The type of a Python Boolean is <type 'bool'>.
 
-.. code-block:: python
+.. code-block:: python2
     
     myPythonBoolean = True  
     type(myPythonBoolean)
@@ -36,7 +36,7 @@ Abaqus recommends that you use the Python Boolean in your scripts and that you c
 
 The value of a Boolean argument can appear to be ambiguous; for example,
 
-.. code-block:: python
+.. code-block:: python2
     
     newModel = mdb.ModelFromInputFile(name='beamTutorial',
         inputFileName='Deform')  
@@ -46,7 +46,7 @@ The value of a Boolean argument can appear to be ambiguous; for example,
 
 Because of this ambiguity, you should test a Boolean for a positive or negative value, as opposed to comparing it to a specific value like 0, OFF, or False. For example, the following statements show how you should test the value of a Boolean member:
 
-.. code-block:: python
+.. code-block:: python2
     
     if (newModel.noPartsInputFile):
         print 'Input file will be written without parts and assemblies. '
@@ -58,32 +58,32 @@ Repositories
 
 Repositories are containers that store a particular type of object; for example, the steps repository contains all the steps defined in the model. A repository maps to a set of information and is similar to a Python dictionary; for more information, see :doc:`/user/python/introduction/python-basics/dictionaries`. However, only a constructor can add an object to a repository. In addition, all the objects in a repository are of the same type. For example, the following repository contains all the models in the model database:
 
-.. code-block:: python
+.. code-block:: python2
     
     mdb.models
     
 In turn, the following repository contains all the parts in the model `Model-1`:
 
-.. code-block:: python
+.. code-block:: python2
     
     mdb.models['Model-1'].parts
 
 As with dictionaries, you can refer to an object in a repository using its key. The key is typically the name you provided in the constructor command when the object was created. For example, the Viewport constructor creates a new Viewport object in the viewports repository.
 
-.. code-block:: python
+.. code-block:: python2
     
     session.Viewport(name='Side view',
         origin = (10,10), width=50, height=50)
 
 The key to this new Viewport object in the viewports repository is Side view. You use this key to access this particular Viewport object. For example,
 
-.. code-block:: python
+.. code-block:: python2
     
     session.viewports['Side view'].viewportAnnotationOptions.setValues(legend=OFF, title=OFF)
 
 You can make your scripts more readable by assigning a variable to an object in a repository. For example, you could rewrite the previous statement after assigning the Viewport object to the variable myViewport:
 
-.. code-block:: python
+.. code-block:: python2
     
     myViewport = session.viewports['Side view'] 
     myViewport.viewportAnnotationOptions.setValues(
@@ -93,7 +93,7 @@ In general, if the user can create the object, its repository key is a string. I
 
 As with dictionaries, you can use the keys() method to access the repository keys.
 
-.. code-block:: python
+.. code-block:: python2
     
     >>> session.Viewport(name='Side view') 
     >>> session.Viewport(name='Top view') 
@@ -109,7 +109,7 @@ You can use the `keys()[i]` method to access an individual key; however, most re
 
 You can use the `changeKey()` method to change the name of a key in a repository. For example,
 
-.. code-block:: python
+.. code-block:: python2
     
     myPart = mdb.models['Model-1'].Part(name='housing',
         dimensionality=THREE_D, type=DEFORMABLE_BODY) 

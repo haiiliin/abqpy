@@ -43,7 +43,7 @@ The first line of the script, `from abaqus import *`, imports the Mdb and Sessio
 
 The script then imports the `Part` module. Most of the sections in this example begin with importing the appropriate module, which illustrates how a script can import a module at any time to extend or augment the object model. However, the Abaqus Scripting Interface has a convention that all the required modules are imported at the start of a script; and that convention is followed in other example scripts in this guide.
 
-.. code-block:: python
+.. code-block:: python2
 
     """
     beamExample.py
