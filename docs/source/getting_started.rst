@@ -91,7 +91,6 @@ will be just a normal method to save the model because `abqpy` is not installed 
 In the output script, we might not have to use the :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method, then another similar
 method :py:meth:`~abaqus.Session.Session.Session.openOdb` is also reimplemented:
 
-.. autolink-concat:: off
 .. code-block:: python
 
     def openOdb(self, name: str, *args, **kwargs):

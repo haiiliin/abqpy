@@ -13,7 +13,6 @@ For example, consider the case where the user is creating an elastic material an
 
 The equivalent Abaqus Scripting Interface command is
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     mdb.models['Model-1'].materials['steel'].Elastic(

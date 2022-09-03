@@ -103,7 +103,6 @@ You can use tab completion from the command line interface to speed up your typi
 
 Tab completion also searches the file system when it detects an incomplete string. For example,
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     from part import THR[Tab]
@@ -121,7 +120,6 @@ Tab completion also searches the file system when it detects an incomplete strin
 
 You can use tab completion when you are accessing an output database. For example,
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     p=myOdb.parts[[Tab]
@@ -129,7 +127,6 @@ You can use tab completion when you are accessing an output database. For exampl
 
 You can also use tab completion when you are accessing an output database from the Abaqus Python prompt. For example,
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     abaqus python
@@ -170,7 +167,6 @@ Using the object model
 
 - The relationships between objects are described in the `Path` and `Access` descriptions in the command reference. For example, the following statement uses the path to a Cell object:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     cell4 = mdb.models['block'].parts['crankcase'].cells[4] 
@@ -206,7 +202,6 @@ To access the objects referred to by the Model object, such as Part and Section 
 
 However, in some cases, your script may need to import a module; for example, to access a module constant, type, or function. In addition, it is useful for you to know which module Abaqus/CAE imported to augment the object model with a particular object. You have already seen the syntax to import a module:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     import part
@@ -214,7 +209,6 @@ However, in some cases, your script may need to import a module; for example, to
 
 In general, you should use the following approach to importing Abaqus modules:
 
-.. autolink-concat:: off
 .. code-block:: python2
 
     import modulename
