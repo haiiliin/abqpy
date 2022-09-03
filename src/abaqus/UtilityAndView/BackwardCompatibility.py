@@ -37,6 +37,7 @@ class BackwardCompatibility:
     determining the deprecated commands that have been used. For example, to determine the
     deprecated commands used in the script createLug.py, use the following commands:
     
+    .. autolink-concat:: off
     .. code-block:: python2
 
         backwardCompatibility.resetDeprecatedMethodsUsed()

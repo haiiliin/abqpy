@@ -17,8 +17,7 @@ class SectionCategory:
 
         .. code-block:: python
 
-            import
-            odbAccess
+            import odbAccess
             session.odbs[name].parts[name].elements[i].sectionCategory
             session.odbs[name].parts[name].elementSets[name].elements[i].sectionCategory
             session.odbs[name].parts[name].nodeSets[name].elements[i].sectionCategory

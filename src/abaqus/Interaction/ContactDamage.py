@@ -20,22 +20,24 @@ class ContactDamage:
         
         If **criterion** = MAX_STRESS or QUAD_TRACTION, the table data specify the following:
         
-            - Maximum nominal stress in the normal-only mode.
-            - Maximum nominal stress in the first shear direction (for a mode that involves separation only in this direction).
-            - Maximum nominal stress in the second shear direction (for a mode that involves separation only in this direction).
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Maximum nominal stress in the normal-only mode.
+        - Maximum nominal stress in the first shear direction (for a mode that involves separation only in this direction).
+        - Maximum nominal stress in the second shear direction (for a mode that involves separation only in this direction).
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+            
         If **criterion** = MAX_SEPARATION or QUAD_SEPARATION, the table data specify the following:
         
-            - Separation at damage initiation in a normal-only mode.
-            - Separation at damage initiation in a shear-only mode that involves separation only along the first shear direction.
-            - Separation at damage initiation in a shear-only mode that involves separation only along the second shear direction.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+        - Separation at damage initiation in a normal-only mode.
+        - Separation at damage initiation in a shear-only mode that involves separation only along the first shear direction.
+        - Separation at damage initiation in a shear-only mode that involves separation only along the second shear direction.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+            
         Table data for **evolTable**:
         
         If **evolutionType** = DISPLACEMENT, **softening** = LINEAR, and **useMixedMode** = OFF, the table data specify the following:
