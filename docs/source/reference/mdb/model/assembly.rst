@@ -51,10 +51,10 @@ ConnectorOrientationArray
 
     .. autoclasstoc::
 
-Feature
-~~~~~~~
+AssemblyFeature
+~~~~~~~~~~~~~~~
 
-.. autoclass:: abaqus.Feature.Feature.Feature
+.. autoclass:: abaqus.Assembly.AssemblyFeature.AssemblyFeature
     :members:
 
     .. autoclasstoc::
