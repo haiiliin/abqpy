@@ -29,14 +29,16 @@ AmplitudeOdb
 
 .. autoclass:: abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb
     :members:
+    :noindex:
 
     .. autoclasstoc::
 
 FilterOdb
 ~~~~~~~~~
 
-.. autoclass:: abaqus.FilterFilterOdb.FilterOdb
+.. autoclass:: abaqus.Filter.FilterOdb.FilterOdb
     :members:
+    :noindex:
 
     .. autoclasstoc::
 
@@ -45,6 +47,7 @@ MaterialOdb
 
 .. autoclass:: abaqus.Material.MaterialOdb.MaterialOdb
     :members:
+    :noindex:
 
     .. autoclasstoc::
 
@@ -53,6 +56,7 @@ BeamSectionProfileOdb
 
 .. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb
     :members:
+    :noindex:
 
     .. autoclasstoc::
 
@@ -188,10 +192,8 @@ OdbAssemblyBase
 OdbCommands
 ~~~~~~~~~~~
 
-.. autoclass:: abaqus.Odb.OdbCommands.OdbCommands
+.. automodule:: abaqus.Odb.OdbCommands
     :members:
-
-    .. autoclasstoc::
 
 OdbDatumCsys
 ~~~~~~~~~~~~

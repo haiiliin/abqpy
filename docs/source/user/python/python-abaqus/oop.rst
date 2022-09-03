@@ -9,7 +9,7 @@ The Abaqus Scripting Interface and methods
 
 Most Abaqus Scripting Interface commands are methods. For example,
 
-.. code-block:: python
+.. code-block:: python2
     
     session.viewports['Viewport-1'].setValues(width=50)
 
@@ -17,39 +17,39 @@ In this example `setValues()` is a method of the Viewport object.
 
 A constructor is a method that creates an object. By convention, all constructor names and all objects start with an uppercase character in the Abaqus Scripting Interface. The name of a constructor is usually the same as the name of the type of object it creates. In the following example `Viewport` is a constructor that creates a Viewport object called `myViewport`:
 
-.. code-block:: python
+.. code-block:: python2
     
     myViewport = session.Viewport(name='newViewport',
         width=100,height=100)
 
 Some objects do not have a constructor. The object is created as a member of another object when the first object is created. For example, Abaqus creates the vertices of a part when you create a part's geometry, and the coordinates of the vertices are stored as Vertex objects. The Vertex objects are members of the Part object. The following statement prints the coordinates of the first vertex of a part:
 
-.. code-block:: python
+.. code-block:: python2
     
     print
     mdb.models['Model-1'].parts['Part-1'].vertices[0].pointOn
 
 The standard Python statement `object.__methods__` lists all the methods of an object. For example, the following statement lists all the methods of a Viewport object:
 
-.. code-block:: python
+.. code-block:: python2
     
     session.viewports['myViewport'].__methods__ 
 
-See the :doc:`references` for a description of each method of the Abaqus Scripting Interface objects.
+See the :doc:`/references` for a description of each method of the Abaqus Scripting Interface objects.
 
 The Abaqus Scripting Interface and members
 ------------------------------------------
 
 An object has members as well as methods. A member can be thought of as a property of an object. For example, `width` is a member of the Viewport object. The following statements show how you access a member of an object:
 
-.. code-block:: python
+.. code-block:: python2
     
     >>> myWidth = session.viewports['myViewport'].width
     >>> print 'Viewport width =', myWidth Viewport width = 100.0
 
 The standard Python statement `object.__members__` lists all the members of an object. For example, the following statement lists all the members of a Viewport object:
 
-.. code-block:: python
+.. code-block:: python2
     
     session.viewports['myViewport'].__members__
 
@@ -57,7 +57,7 @@ The values of members are specific to each instance of the object. For example, 
 
 Members of an Abaqus object are read-only; consequently, you cannot change their value with a simple assignment statement. You use the `setValues()` method to change the value of a member. For example, the `setValues()` statement in the following script changes the thickness of a shell section:
 
-.. code-block:: python
+.. code-block:: python2
     
     >>> import section 
     >>> shellSection = mdb.models['Model-1'].HomogeneousShellSection(
@@ -72,14 +72,14 @@ Members of an Abaqus object are read-only; consequently, you cannot change their
 
 You cannot use assignment to change the value of the Shell object.
 
-.. code-block:: python
+.. code-block:: python2
     
     >>> myShell.thickness = 2.0  
     TypeError: readonly Attribute 
 
 The following statements illustrate the use of constructors, methods, and members:
 
-.. code-block:: python
+.. code-block:: python2
     
     >>> # Create a Section object 
     >>> mySection = mdb.models['Model-1'].HomogeneousSolidSection(
@@ -107,7 +107,7 @@ The following statements illustrate the use of constructors, methods, and member
     mySection.name = solidSteel  
     mySection.thickness = 1.0
 
-You use the `Access` description provided with each object in the :doc:`references` to determine how you access the object. You append a method or member to this description when you are writing a script. Similarly, you use the `Path` description provided with each constructor in the :doc:`references` to determine the path to the constructor.
+You use the `Access` description provided with each object in the :doc:`/references` to determine how you access the object. You append a method or member to this description when you are writing a script. Similarly, you use the `Path` description provided with each constructor in the :doc:`/references` to determine the path to the constructor.
 
 Object-oriented programming and the Abaqus Scripting Interface - a summary
 --------------------------------------------------------------------------
@@ -128,12 +128,12 @@ The following list summarizes some of the concepts behind object-oriented progra
 
 - After you create an object, you then use methods of the object to enter or to modify the data associated with the object. For example, if you are creating an output database, you first create an Odb object. You then use the `addNodes` and `addElements` methods of the Part object to add nodes and elements, respectively. Similarly, you use the `addData` method of the `FieldOutput` object to add field output data to the output database.
 
-- You use the `Access` description provided with each object in the :doc:`references` to determine how you access the object. You append a method or a member to this description when you are writing a script.
+- You use the `Access` description provided with each object in the :doc:`/references` to determine how you access the object. You append a method or a member to this description when you are writing a script.
 
-- You use the `Path` description provided with each constructor in the :doc:`references` to determine the path to the constructor.
+- You use the `Path` description provided with each constructor in the :doc:`/references` to determine the path to the constructor.
 
 - You use the `setValues()` method to modify the members of an Abaqus Scripting Interface object.
 
-.. code-block:: python
+.. code-block:: python2
     
     session.viewports['Side view'].setValues(origin=(20,20))

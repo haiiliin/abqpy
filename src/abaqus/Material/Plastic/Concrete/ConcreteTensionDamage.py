@@ -59,23 +59,23 @@ class ConcreteTensionDamage:
 
                 mdb.models[name].materials[name].concreteDamagedPlasticity.ConcreteTensionDamage.ConcreteTensionDamageaterials[name].concreteDamagedPlasticity.ConcreteTensionDamage
             
-            Parameters
-            ----------
-            table
-                A sequence of sequences of Floats specifying the items described below. 
-            compressionRecovery
-                A Float specifying the value of the stiffness recovery factor, :math:`w_c`, that determines the 
-                amount of compression stiffness that is recovered as loading changes from tension to 
-                compression. The default value is 1.0. 
-            type
-                A SymbolicConstant specifying the type of tensile damage data. Set **type** = STRAIN to 
-                specify the tensile damage variable as a function of cracking strain. Set 
-                **type** = DISPLACEMENT to specify the tensile damage variable as a function of cracking 
-                displacement. Possible values are STRAIN and DISPLACEMENT. The default value is STRAIN. 
-            temperatureDependency
-                A Boolean specifying whether the data depend on temperature. The default value is OFF. 
-            dependencies
-                An Int specifying the number of field variable dependencies. The default value is 0. 
+        Parameters
+        ----------
+        table
+            A sequence of sequences of Floats specifying the items described below. 
+        compressionRecovery
+            A Float specifying the value of the stiffness recovery factor, :math:`w_c`, that determines the 
+            amount of compression stiffness that is recovered as loading changes from tension to 
+            compression. The default value is 1.0. 
+        type
+            A SymbolicConstant specifying the type of tensile damage data. Set **type** = STRAIN to 
+            specify the tensile damage variable as a function of cracking strain. Set 
+            **type** = DISPLACEMENT to specify the tensile damage variable as a function of cracking 
+            displacement. Possible values are STRAIN and DISPLACEMENT. The default value is STRAIN. 
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF. 
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0. 
 
         Returns
         -------

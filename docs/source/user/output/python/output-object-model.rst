@@ -13,14 +13,14 @@ An output database generated from an Abaqus analysis contains both model and res
   Results data describe the results of your analysis; for example, stresses, strains, and displacements. You use output requests to configure the contents of the results data. Results data can be either field output data or history output data.
 
 .. note::
-    For a description of object models, see :doc:`user/python/use-scripts/object-model`.
+    For a description of object models, see :doc:`/user/python/use-scripts/object-model`.
 
 You can find more information on the format of the output database in `Output to the Output Database <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEOUTRefMap/simaout-m-dboutput-sb.htm?contextscope=all#simaout-m-dboutput-sb>`_.
 
 Model data
 ----------
 
-Model data define the model used in the analysis; for example, the parts, materials, initial and boundary conditions, and physical constants. More information about model data can be found in The :doc:`user/python/use-scripts/object-model` and `Assembly definition <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEMODRefMap/simamod-c-partassy.htm?contextscope=all>`_.
+Model data define the model used in the analysis; for example, the parts, materials, initial and boundary conditions, and physical constants. More information about model data can be found in The :doc:`/user/python/use-scripts/object-model` and `Assembly definition <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEMODRefMap/simamod-c-partassy.htm?contextscope=all>`_.
 
 Abaqus does not write all the model data to the output database; for example, you cannot access loads, and only certain interactions are available. Model data that are stored in the output database include parts, the root assembly, part instances, regions, materials, sections, section assignments, and section categories, each of which is stored as an Abaqus Scripting Interface object. These components of model data are described below.
 
@@ -83,7 +83,7 @@ Abaqus does not write all the model data to the output database; for example, yo
 
 The objects stored as model data in an output database are similar to the objects stored in an Abaqus/CAE model database. However, the output database does not require a model name because an analysis job always refers to a single model and the resulting output database can contain only one model. For example, the following Abaqus Scripting Interface statements refer to an Instance object in the model database:
 
-.. code-block:: python
+.. code-block:: python2
 
     mdb = openMdb(pathName='/users/smith/mdb/hybridVehicle')
     myModel = mdb.models['Transmission']
@@ -92,7 +92,7 @@ The objects stored as model data in an output database are similar to the object
 Similar statements refer to an Instance object in the output database.
 
 
-.. code-block:: python
+.. code-block:: python2
     
     odb = openOdb(path='/users/smith/odb/transmission.odb')
     myPart = odb.rootAssembly.instances['housing']
@@ -100,7 +100,7 @@ Similar statements refer to an Instance object in the output database.
 You can use the `prettyPrint` method to display a text representation of an output database and to view the structure of the model data in the object model. For example, the following shows the output from `prettyPrint` applied to the output database created by the Abaqus/CAE cantilever beam tutorial:
 
 
-.. code-block:: python
+.. code-block:: python2
     
     from odbAccess import *
     from textRepr import *

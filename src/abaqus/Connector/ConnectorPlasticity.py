@@ -184,9 +184,9 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
             .. code-block:: python
 
                 import connectorBehavior
-                          connectorBehavior.ConnectorPlasticity
-                          import odbConnectorBehavior
-                          odbConnectorBehavior.ConnectorPlasticity
+                connectorBehavior.ConnectorPlasticity
+                import odbConnectorBehavior
+                odbConnectorBehavior.ConnectorPlasticity
 
         Parameters
         ----------

@@ -175,55 +175,55 @@ class DamageEvolution:
             .. code-block:: python
 
                 mdb.models[name].materials[name].ductileDamageInitiation.DamageEvolution
-                    mdb.models[name].materials[name].fldDamageInitiation.DamageEvolution
-                    mdb.models[name].materials[name].flsdDamageInitiation.DamageEvolution
-                    mdb.models[name].materials[name].hashinDamageInitiation.DamageEvolution.DamageEvolutione].materials[name].johnsonCookDamageInitiation.DamageEvolution
-                    mdb.models[name].materials[name].maxeDamageInitiation.DamageEvolution
-                    mdb.models[name].materials[name].maxpeDamageInitiation.DamageEvolution
-                    mdb.models[name].materials[name].maxpsDamageInitiation.DamageEvolution
-                    mdb.models[name].materials[name].maxsDamageInitiation.DamageEvolution
-                    mdb.models[name].materials[name].mkDamageInitiation.DamageEvolution
-                    mdb.models[name].materials[name].msfldDamageInitiation.DamageEvolution
-                    mdb.models[name].materials[name].quadeDamageInitiation.DamageEvolution
-                    mdb.models[name].materials[name].quadsDamageInitiation.DamageEvolution
-                    mdb.models[name].materials[name].shearDamageInitiation.DamageEvolution
-                    session.odbs[name].materials[name].ductileDamageInitiation.DamageEvolution
-                    session.odbs[name].materials[name].fldDamageInitiation.DamageEvolution
-                    session.odbs[name].materials[name].flsdDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].hashinDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].johnsonCookDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].maxeDamageInitiation.DamageEvolution
-                    session.odbs[name].materials[name].maxpeDamageInitiation.DamageEvolution
-                    session.odbs[name].materials[name].maxpsDamageInitiation.DamageEvolution
-                    session.odbs[name].materials[name].maxsDamageInitiation.DamageEvolution
-                    session.odbs[name].materials[name].mkDamageInitiation.DamageEvolution
-                    session.odbs[name].materials[name].msfldDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].quadeDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].quadsDamageInitiation.DamageEvolution
-                    session.odbs[name].materials[name].shearDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].fldDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].flsdDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].hashinDamageInitiation.DamageEvolution.DamageEvolutione].materials[name].johnsonCookDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].maxeDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].maxpeDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].maxpsDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].maxsDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].mkDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].msfldDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].quadeDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].quadsDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].shearDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].ductileDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].fldDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].flsdDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].hashinDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].johnsonCookDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].maxeDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].maxpeDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].maxpsDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].maxsDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].mkDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].msfldDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].quadeDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].quadsDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].shearDamageInitiation.DamageEvolution
             
-            Parameters
-            ----------
-            type
-                A SymbolicConstant specifying the type of damage evolution. Possible values are 
-                DISPLACEMENT and ENERGY. 
-            table
-                A sequence of sequences of Floats specifying the items described below. 
-            degradation
-                A SymbolicConstant specifying the degradation. Possible values are MAXIMUM and 
-                MULTIPLICATIVE. The default value is MAXIMUM. 
-            temperatureDependency
-                A Boolean specifying whether the data depend on temperature. The default value is OFF. 
-            dependencies
-                An Int specifying the number of field variable dependencies. The default value is 0. 
-            mixedModeBehavior
-                A SymbolicConstant specifying the mixed mode behavior. Possible values are 
-                MODE_INDEPENDENT, TABULAR, POWER_LAW, and BK. The default value is MODE_INDEPENDENT. 
-            modeMixRatio
-                A SymbolicConstant specifying the mode mix ratio. Possible values are ENERGY and 
-                TRACTION. The default value is ENERGY. 
-            power
-                None or a Float specifying the exponent in the power law or the Benzeggagh-Kenane 
-                criterion that defines the variation of fracture energy with mode mix for cohesive 
-                elements. The default value is None. 
-            softening
-                A SymbolicConstant specifying the softening. Possible values are LINEAR, EXPONENTIAL, 
-                and TABULAR. The default value is LINEAR. 
+        Parameters
+        ----------
+        type
+            A SymbolicConstant specifying the type of damage evolution. Possible values are 
+            DISPLACEMENT and ENERGY. 
+        table
+            A sequence of sequences of Floats specifying the items described below. 
+        degradation
+            A SymbolicConstant specifying the degradation. Possible values are MAXIMUM and 
+            MULTIPLICATIVE. The default value is MAXIMUM. 
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF. 
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0. 
+        mixedModeBehavior
+            A SymbolicConstant specifying the mixed mode behavior. Possible values are 
+            MODE_INDEPENDENT, TABULAR, POWER_LAW, and BK. The default value is MODE_INDEPENDENT. 
+        modeMixRatio
+            A SymbolicConstant specifying the mode mix ratio. Possible values are ENERGY and 
+            TRACTION. The default value is ENERGY. 
+        power
+            None or a Float specifying the exponent in the power law or the Benzeggagh-Kenane 
+            criterion that defines the variation of fracture energy with mode mix for cohesive 
+            elements. The default value is None. 
+        softening
+            A SymbolicConstant specifying the softening. Possible values are LINEAR, EXPONENTIAL, 
+            and TABULAR. The default value is LINEAR. 
 
         Returns
         -------
