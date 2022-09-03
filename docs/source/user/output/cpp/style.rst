@@ -2,12 +2,12 @@
 Abaqus Scripting Interface documentation style
 ==============================================
 
-This section describes the style that is used to describe a command in the :doc:`references`. You may want to refer to the :doc:`references` while you read this section and compare the style of a documented command with the descriptions provided here.
+This section describes the style that is used to describe a command in the :doc:`/references`. You may want to refer to the :doc:`/references` while you read this section and compare the style of a documented command with the descriptions provided here.
 
-The following list describes the order in which commands are documented in the :doc:`references`:
+The following list describes the order in which commands are documented in the :doc:`/references`:
 
-- Chapters are grouped alphabetically by functionality. In general, the functionality corresponds to the modules and toolsets that are found in Abaqus/CAE; for example, :doc:`reference/session/animation`, and :doc:`reference/mdb/model/part_assembly/assembly`.
-- Within each chapter the primary objects appear first and are followed by other objects in alphabetical order. For example, in :doc:`reference/mdb/model/mesh` the objects are listed in the following order:
+- Chapters are grouped alphabetically by functionality. In general, the functionality corresponds to the modules and toolsets that are found in Abaqus/CAE; for example, :doc:`/reference/session/animation`, and :doc:`/reference/mdb/model/assembly`.
+- Within each chapter the primary objects appear first and are followed by other objects in alphabetical order. For example, in :doc:`/reference/mdb/model/mesh` the objects are listed in the following order:
   
   - Assembly
   - Part
@@ -21,12 +21,12 @@ The following list describes the order in which commands are documented in the :
   - Constructors (in alphabetical order)
   - Methods (in alphabetical order)
   - Members
-- Some methods are not associated with an object and appear at the end of a chapter; for example, the :py:meth:`~abaqus.Material.evaluateMaterial` method appears at the end of :doc:`reference/mdb/model/material`.
+- Some methods are not associated with an object and appear at the end of a chapter; for example, the :py:meth:`~abaqus.Material.evaluateMaterial` method appears at the end of :doc:`/reference/mdb/model/material`.
 
 Access
 ------
 
-The description of each object in the :doc:`references` begins with a section that describes how you access an instance of the object.
+The description of each object in the :doc:`/references` begins with a section that describes how you access an instance of the object.
 
 The following is the access description for the Part object:
 
@@ -69,7 +69,7 @@ The following statements show how you use the object described by this `Access` 
 Path
 ----
 
-A method that creates an object is called a constructor. The Abaqus C++ API uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the :doc:`references` includes a path to the command. For example, the following describes the path to the Part constructor:
+A method that creates an object is called a constructor. The Abaqus C++ API uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the :doc:`/references` includes a path to the command. For example, the following describes the path to the Part constructor:
 
 .. code-block:: cpp
     
@@ -106,7 +106,7 @@ The following statement creates a FieldOutput object:
 Prototype
 ---------
 
-:doc:`reference/odb` contains a prototype section for each C++ command. The prototype provides the type returned by the command, the name of the command, and a list of all its arguments along with the type of each argument. Required arguments appear first in the list followed by default arguments along with their default value. For example, the Frame constructor is given as
+:doc:`/reference/odb` contains a prototype section for each C++ command. The prototype provides the type returned by the command, the name of the command, and a list of all its arguments along with the type of each argument. Required arguments appear first in the list followed by default arguments along with their default value. For example, the Frame constructor is given as
 
 .. code-block:: cpp
     

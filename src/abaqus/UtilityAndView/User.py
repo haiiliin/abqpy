@@ -95,12 +95,18 @@ def getWarningReply(message: str, buttons: str):
     """This method is used to obtain a reply from a user from a warning dialog box. The method
     displays a modal warning dialog box with a message and standard buttons. The user clicks
     the one of the standard buttons, the getWarningReply returns the corresponding button
-    value and closes the dialog box. You can use a \n separator in the message argument to
+    value and closes the dialog box. You can use a separator in the message argument to
     provide a multi-line message in the warning dialog box; for example
-    getWarningReply('Out of disk space!\nOkay to continue', (YES,NO))
-    Note:You cannot use a script that contains getWarningReply if you are running the script
-    from the command line and passing the script name to the command line options
-    **-start**, **-script**, **-replay**, or **-noGUI**.
+    
+    .. code-block:: python
+
+        from abaqus import *
+        getWarningReply('Out of disk space!\nOkay to continue', (YES, NO))
+    
+    .. note:: 
+        You cannot use a script that contains getWarningReply if you are running the script
+        from the command line and passing the script name to the command line options
+        **-start**, **-script**, **-replay**, or **-noGUI**.
 
     .. note:: 
         This function can be accessed by:

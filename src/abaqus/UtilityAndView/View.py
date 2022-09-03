@@ -39,9 +39,9 @@ class View:
     layerTransform: float = None
 
     #: A String specifying the name of the view (also used as the repository key). Possible
-    #: values are 'Front', 'Back', 'Top', 'Bottom', 'Left', `Right', 'Iso', 'User-1', 'User-2',
+    #: values are 'Front', 'Back', 'Top', 'Bottom', 'Left', 'Right', 'Iso', 'User-1', 'User-2',
     #: 'User-3', and 'User-4'. The object member associated with this argument is a
-    #: SymbolicConstant. Possible values of the **name** member are:FRONT, BACK, TOP, BOTTOM,
+    #: SymbolicConstant. Possible values of the **name** member are: FRONT, BACK, TOP, BOTTOM,
     #: LEFT, RIGHT, ISO, USER1, USER2, USER3, and USER4.
     name: str
 

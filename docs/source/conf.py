@@ -30,7 +30,10 @@ copyright = '2022, WANG Hailin'
 author = 'WANG Hailin'
 
 # The full version, including alpha/beta/rc tags
-release = metadata.version('abqpy')[:4]
+try:
+    release = metadata.version('abqpy')[:4]
+except metadata.PackageNotFoundError:
+    release = '2022'
 
 # For multiple languages
 locale_dirs = ['locales/']   # path is example but recommended.
@@ -55,7 +58,11 @@ extensions = [
     'sphinx.ext.githubpages',
     'sphinx_copybutton',
     'sphinx.ext.intersphinx',
+    'sphinx_codeautolink',
 ]
+
+# Default behavior for code block concatenation for sphinx_codeautolink
+codeautolink_concat_default = False
 
 intersphinx_mapping = {
     'numpy': ('https://numpy.org/doc/stable/', None),

@@ -17,7 +17,7 @@ class ElementProgressiveActivation:
 
         The corresponding analysis keywords are:
 
-        - *ELEMENT PROGRESSIVE ACTIVATION
+        - ELEMENT PROGRESSIVE ACTIVATION
 
     .. versionadded:: 2020
         The `ElementProgressiveActivation` class was added.

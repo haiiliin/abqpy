@@ -18,7 +18,7 @@ class DataTable:
 
         The corresponding analysis keywords are:
 
-        - *PARAMETER TABLE
+        - PARAMETER TABLE
 
     .. versionadded:: 2020
         The `DataTable` class was added.

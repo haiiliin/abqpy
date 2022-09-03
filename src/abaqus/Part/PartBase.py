@@ -1,9 +1,7 @@
 import typing
 
 from .AcisFile import AcisFile
-from .Feature import Feature
-
-# from ..Assembly.PartInstance import PartInstance
+from .PartFeature import PartFeature
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.CellArray import CellArray
 from ..BasicGeometry.Edge import Edge
@@ -42,7 +40,7 @@ class PartInstance:
     ...
 
 
-class PartBase(Feature):
+class PartBase(PartFeature):
     """The Part object defines the physical attributes of a structure. Parts are instanced into
     the assembly and positioned before an analysis.
 
@@ -86,14 +84,14 @@ class PartBase(Feature):
     cells: CellArray = CellArray([])
 
     #: A repository of Feature objects specifying all the features in the part.
-    features: typing.Dict[str, Feature] = {}
+    features: typing.Dict[str, PartFeature] = {}
 
     #: A repository of Feature objects specifying all Feature objects in the part. The Feature
     #: objects in the featuresById repository are the same as the Feature objects in the
     #: features' repository. However, the key to the objects in the featuresById repository is
     #: an integer specifying the **ID**, whereas the key to the objects in the features
     #: repository is a string specifying the **name**.
-    featuresById: typing.Dict[str, Feature] = {}
+    featuresById: typing.Dict[str, PartFeature] = {}
 
     #: A repository of Datum objects specifying all the datums in the part.
     datums: typing.List[Datum] = []
@@ -375,6 +373,7 @@ class PartBase(Feature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
+            
             - If the specified part is not an orphan mesh part:
               Cannot extrude a geometric part.
             - If the specified part is not two-dimensional:
@@ -468,6 +467,7 @@ class PartBase(Feature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
+            
             - If the ACIS file is corrupt:
               PartError: the file is corrupt
             - If the dimensionality does not correspond to what is found in the ACIS file:
@@ -549,6 +549,7 @@ class PartBase(Feature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
+            
             - If the part does not contain a mesh:
               The current part does not contain a mesh for a mesh part.
         """
@@ -588,6 +589,7 @@ class PartBase(Feature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
+            
             - If the specified part is not an orphan mesh part:
               Cannot mirror a geometric part.
             - If the specified part is a rigid body:
@@ -595,7 +597,7 @@ class PartBase(Feature):
             - If **point1** and **point2** are coincident:
               Mirror plane director has zero length.
             - If the specified part is two-dimensional and the plane is not parallel to the
-            **Z**-axis:
+              **Z**-axis:
               Mirror plane must be parallel to Z axis for 2D parts
         """
         ...
@@ -711,9 +713,10 @@ class PartBase(Feature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
+            
             - If the output database contains elements of more than one dimensionality or type:
               File contains both axisymmetric and nonaxisymmetric elements.File contains both 2D and
-            3D elements.File contains both rigid and deformable elements.
+              3D elements.File contains both rigid and deformable elements.
             - If more than one part is found on the output database:
               PartError: importing of more than one part is not currently supported
             - If the output database does not contain any valid results for the specified step:
@@ -764,6 +767,7 @@ class PartBase(Feature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
+            
             - If the specified part is not an orphan mesh part:
               Cannot reduce dimension of a geometric part.
             - If the specified part is not three-dimensional:
@@ -804,14 +808,15 @@ class PartBase(Feature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
+            
             - If the specified part is not a substructure:
               File specified does not contain a substructure.
             - If the specified part already exists:
               A part with the same name already exists.
             - If the substructure cannot be imported:
               The output database is missing nodes and elements.Nested substructures are not
-            supported.The substructure sim file was generated using a version that is different from
-            the current version.
+              supported.The substructure sim file was generated using a version that is different from
+              the current version.
         """
         ...
 
@@ -858,13 +863,14 @@ class PartBase(Feature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
-            If the specified part is not an orphan mesh part:
+            
+            - If the specified part is not an orphan mesh part:
               Specified part must be an orphan mesh.
-            If the Part2DGeomFrom2DMesh method cannot create a valid two-dimensional shell section from the two-dimensional mesh:
+            - If the Part2DGeomFrom2DMesh method cannot create a valid two-dimensional shell section from the two-dimensional mesh:
               Planar shell feature failed
-            If the specified part is not two-dimensional:
+            - If the specified part is not two-dimensional:
               Cannot create a geometry from a 3D part.
-            If the specified part is a rigid body:
+            - If the specified part is a rigid body:
               Cannot create a geometry from a rigid body.
         """
         ...
@@ -1470,7 +1476,7 @@ class PartBase(Feature):
         self,
         sketch: str,
         filter: SymbolicConstant = ALL_EDGES,
-        upToFeature: Feature = None, 
+        upToFeature: PartFeature = None,
         edges: tuple = (),
         vertices: tuple = (),
     ):
@@ -1488,7 +1494,7 @@ class PartBase(Feature):
             ALL_EDGES and COPLANAR_EDGES. If **filter** = COPLANAR_EDGES, edges that are coplanar to the
             sketching plane are the only candidates for projection. The default value is ALL_EDGES.
         upToFeature
-            A :py:class:`~abaqus.Assembly.Feature.Feature` object specifying a marker in the feature-based history of the part.
+            A :py:class:`~abaqus.Feature.Feature.Feature` object specifying a marker in the feature-based history of the part.
             Abaqus/CAE projects onto the sketch only the part entities that were created before the
             feature specified by this marker. By default, part entities in features created before
             the sketch you are editing are candidates for projection.
