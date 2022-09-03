@@ -27,11 +27,11 @@ class FieldValue:
     #: - NODAL, specifying the values calculated at the nodes.
     #: - INTEGRATION_POINT, specifying the values calculated at the integration points.
     #: - ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at
-    #: the integration points.
+    #:   the integration points.
     #: - ELEMENT_FACE, specifying the results obtained for surface variables such as cavity
-    #: radiation that are defined for the surface facets of an element.
+    #:   radiation that are defined for the surface facets of an element.
     #: - CENTROID, specifying the value at the centroid obtained by extrapolating results
-    #: calculated at the integration points.
+    #:   calculated at the integration points.
     position: SymbolicConstant = None
 
     #: A SymbolicConstant specifying the precision of the output in the element. Possible
