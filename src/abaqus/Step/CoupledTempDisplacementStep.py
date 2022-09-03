@@ -58,7 +58,7 @@ class CoupledTempDisplacementStep(AnalysisStep):
     stabilizationMethod: SymbolicConstant = NONE
 
     #: A Float specifying the damping intensity of the automatic damping algorithm if the
-    #: problem is expected to be unstable and **stabilizationMethod**≠NONE. The default value is
+    #: problem is expected to be unstable and **stabilizationMethod** ≠ NONE. The default value is
     #: 2×10-4.
     stabilizationMagnitude: float = None
 
@@ -135,7 +135,7 @@ class CoupledTempDisplacementStep(AnalysisStep):
     description: str = ""
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
-    #: (*procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
+    #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
     explicit: SymbolicConstant = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
@@ -278,7 +278,7 @@ class CoupledTempDisplacementStep(AnalysisStep):
             DISSIPATED_ENERGY_FRACTION, and DAMPING_FACTOR. The default value is NONE.
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
-            problem is expected to be unstable and **stabilizationMethod**≠NONE. The default value is
+            problem is expected to be unstable and **stabilizationMethod** ≠ NONE. The default value is
             2×10-4.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
@@ -389,7 +389,7 @@ class CoupledTempDisplacementStep(AnalysisStep):
             DISSIPATED_ENERGY_FRACTION, and DAMPING_FACTOR. The default value is NONE.
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
-            problem is expected to be unstable and **stabilizationMethod**≠NONE. The default value is
+            problem is expected to be unstable and **stabilizationMethod** ≠ NONE. The default value is
             2×10-4.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values

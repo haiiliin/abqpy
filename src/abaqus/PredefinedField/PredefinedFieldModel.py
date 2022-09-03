@@ -341,10 +341,10 @@ class PredefinedFieldModel(
               specifying the temperature.
             - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a
               sequence of Doubles specifying the mean value and the gradient in the thickness
-            direction.
+              direction.
             - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a
               sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the
-            gradient in the N2 direction.
+              gradient in the N2 direction.
             - If **crossSectionDistribution** = POINTS_THROUGH_SECTION then **magnitudes** is a sequence
               of Doubles specifying the temperature at each point.
         absoluteExteriorTolerance
@@ -479,7 +479,7 @@ class PredefinedFieldModel(
             A String specifying the repository key.
         region
             A Region object specifying the region to which the predefined field is applied. Region
-            is ignored if the predefined field has *distributionType*=FROM_FILE.
+            is ignored if the predefined field has **distributionType** = FROM_FILE.
         distributionType
             A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM
             and FROM_FILE. The default value is UNIFORM.

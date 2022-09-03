@@ -31,7 +31,7 @@ Part
 PartBase
 ~~~~~~~~
 
-.. autoclass:: abaqus.Part.Partbase.PartBase
+.. autoclass:: abaqus.Part.PartBase.PartBase
     :members:
 
     .. autoclasstoc::
@@ -41,6 +41,7 @@ MeshEditPart
 
 .. autoclass:: abaqus.EditMesh.MeshEditPart.MeshEditPart
     :members:
+    :noindex:
 
     .. autoclasstoc::
 
@@ -49,6 +50,7 @@ MeshPart
 
 .. autoclass:: abaqus.Mesh.MeshPart.MeshPart
     :members:
+    :noindex:
 
     .. autoclasstoc::
 
@@ -57,6 +59,7 @@ PropertyPart
 
 .. autoclass:: abaqus.Property.PropertyPart.PropertyPart
     :members:
+    :noindex:
 
     .. autoclasstoc::
 
@@ -65,6 +68,7 @@ RegionPart
 
 .. autoclass:: abaqus.Region.RegionPart.RegionPart
     :members:
+    :noindex:
 
     .. autoclasstoc::
 
@@ -81,13 +85,14 @@ AcisMdb
 
 .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
     :members:
+    :noindex:
 
     .. autoclasstoc::
 
-Feature
-~~~~~~~
+PartFeature
+~~~~~~~~~~~
 
-.. autoclass:: abaqus.Part.Feature.Feature
+.. autoclass:: abaqus.Part.PartFeature.PartFeature
     :members:
 
     .. autoclasstoc::

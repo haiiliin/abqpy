@@ -59,6 +59,7 @@ ConnectorSection
 
 .. autoclass:: abaqus.Connector.ConnectorSection.ConnectorSection
     :members:
+    :noindex:
 
     .. autoclasstoc::
 

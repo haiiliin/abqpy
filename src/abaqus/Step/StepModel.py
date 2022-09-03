@@ -354,7 +354,7 @@ class StepModel(ModelBase):
             DISSIPATED_ENERGY_FRACTION, and DAMPING_FACTOR. The default value is NONE.
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
-            problem is expected to be unstable and **stabilizationMethod**≠NONE. The default value is
+            problem is expected to be unstable and **stabilizationMethod** ≠ NONE. The default value is
             2×10-4.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
@@ -501,7 +501,7 @@ class StepModel(ModelBase):
             DISSIPATED_ENERGY_FRACTION, and DAMPING_FACTOR. The default value is NONE.
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
-            problem is expected to be unstable and **stabilizationMethod**≠NONE. The default value is
+            problem is expected to be unstable and **stabilizationMethod** ≠ NONE. The default value is
             2×10-4.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
@@ -960,8 +960,8 @@ class StepModel(ModelBase):
             required only when **timeIncrementationMethod** = AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
             FIXED_EBE. The default value is 1.0.
         massScaling
-            A :py:class:`~abaqus.StepMiscellaneous.MassScalingArray.MassScalingArray` object specifying mass scaling controls. The default value is
-            PREVIOUS_STEP.
+            A :py:class:`~abaqus.StepMiscellaneous.MassScalingArray.MassScalingArray` object specifying 
+            mass scaling controls. The default value is PREVIOUS_STEP.
         linearBulkViscosity
             A Float specifying the linear bulk viscosity parameter, b1b1. The default value is 0.06.
         quadBulkViscosity

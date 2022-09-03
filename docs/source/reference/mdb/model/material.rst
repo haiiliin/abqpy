@@ -214,8 +214,6 @@ evaluateMaterial
 .. automodule:: abaqus.Material.evaluateMaterial
     :members:
 
-    .. autoclasstoc::
-
 Gap
 ~~~
 

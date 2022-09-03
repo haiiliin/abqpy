@@ -163,7 +163,7 @@ class AnalyticalField(Field):
             IMAGINARY, and COMPLEX_MAG_AT_ANGLE. The default value is REAL.
         complexAngle
             A Float specifying the angle (in degrees) at which to display results that contain
-            complex numbers when **numericForm=COMPLEX_MAG_AT_ANGLE** = COMPLEX_MAG_AT_ANGLE. The
+            complex numbers when **numericForm = COMPLEX_MAG_AT_ANGLE = COMPLEX_MAG_AT_ANGLE**. The
             default value is 0.0.
         transformationType
             A SymbolicConstant specifying the type of the transformation to apply to the output.
@@ -172,9 +172,13 @@ class AnalyticalField(Field):
             A Dictionary with String keys and String values. Each key specifies a region in the
             model; the corresponding value specifies a section point within that region. For
             example:
-            sectionPoint={'shell < MAT > < 7 section points >':'SPOS
-            (fraction = 1.0)', 'shell < MAT > < 5 section points >':
-            'SPOS, (fraction = 1.0)', }
+            
+            .. code-block:: python
+            
+                sectionPoint = {
+                    'shell < MAT > < 7 section points >': 'SPOS, (fraction = 1.0)', 
+                    'shell < MAT > < 5 section points >': 'SPOS, (fraction = 1.0)', 
+                }
         refinementType
             A SymbolicConstant specifying the type of the FieldOutput object. Possible values for
             the SymbolicConstant are NO_REFINEMENT, INVARIANT and COMPONENT. Default argument is

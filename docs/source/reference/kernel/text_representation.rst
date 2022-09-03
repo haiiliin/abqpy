@@ -10,18 +10,14 @@ Object features
 redentABQ
 ~~~~~~~~~
 
-.. autoclass:: abaqus.TextRepresentation.redentABQ.redentABQ
+.. automodule:: abaqus.TextRepresentation.redentABQ
     :members:
-
-    .. autoclasstoc::
 
 textRepr
 ~~~~~~~~
 
-.. autoclass:: abaqus.TextRepresentation.textRepr.textRepr
+.. automodule:: abaqus.TextRepresentation.textRepr
     :members:
-
-    .. autoclasstoc::
 
 TextReprOptions
 ~~~~~~~~~~~~~~~

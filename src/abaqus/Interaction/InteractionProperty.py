@@ -14,8 +14,6 @@ class InteractionProperty:
 
             import interaction
             mdb.models[name].interactionProperties[name]
-
-            The corresponding analysis keywords are:
     """
 
     ...
