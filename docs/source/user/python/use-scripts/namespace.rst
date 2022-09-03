@@ -17,7 +17,7 @@ Abaqus Scripting Interface commands are issued to the Python interpreter from ei
 
   Abaqus Scripting Interface commands issued from scripts and from the command line interface are executed in the script namespace. Commands issued from **File -> Run Script** are also executed in the script namespace. For example, if you enter the following statement from the command line interface to create a viewport:
 
-  .. code-block:: python
+  .. code-block:: python2
 
       myViewport = session.Viewport(name='newViewport', 
           width=100, height=100)
@@ -28,7 +28,7 @@ Abaqus Scripting Interface commands are issued to the Python interpreter from ei
 
   Abaqus Scripting Interface commands issued by the GUI are executed in the journal namespace. For example, if you use the GUI to partition an edge, Abaqus/CAE writes the following statements to the replay file, abaqus.rpy:
 
-  .. code-block:: python
+  .. code-block:: python2
 
       p1 = mdb.models['Model A'].parts['Part 3D A']
       e = p1.edges
@@ -37,7 +37,7 @@ Abaqus Scripting Interface commands are issued to the Python interpreter from ei
   
   The variables defined in the replay file (p1, e, and edges, in the above example) exist only in the journal namespace. Abaqus/CAE issues an exception if you attempt to refer to one of these variables from the script namespace. For example, the following statement was issued from the command line interface and tries to partition the same edge:
 
-  .. code-block:: python
+  .. code-block:: python2
 
       p1.PartitionEdgeByParam(edges=edges, parameter=0.75)
       NameError: p1
@@ -48,13 +48,13 @@ The statement `from abaqus import *` described in Executing scripts imports the 
 
 For example, although the variable `p1` in the above statement cannot be accessed from the script namespace, you can still use the command line interface to access the part to which `p1` referred.
 
-.. code-block:: python
+.. code-block:: python2
 
     myPart = mdb.models['Model A'].parts['Part 3D A']
 
 The model and part repositories are available in both the journal and script namespaces. You can also create your own variable `p1` from the command line interface or from a script.
 
-.. code-block:: python
+.. code-block:: python2
 
     p1 = myPart
 

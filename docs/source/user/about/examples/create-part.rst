@@ -60,7 +60,7 @@ To run the program, do the following:
 
 The example follows:
 
-.. code-block:: python
+.. code-block:: python2
 
     """
     modelAExample.py
@@ -111,13 +111,13 @@ How does the script work?
 
 This section explains each portion of the example script.
 
-.. code-block:: python
+.. code-block:: python2
 
     from abaqus import *
 
 This statement makes the basic Abaqus objects accessible to the script. It also provides access to a default model database using the variable named mdb. The statement, `from abaqusConstants import *`, makes the Symbolic Constants defined by the Abaqus Scripting Interface available to the script.
 
-.. code-block:: python
+.. code-block:: python2
 
     import sketch
     import part
@@ -138,7 +138,7 @@ The next statement in the script is shown in :numref:`cmd-righttoleft-nls`. You 
 
     Creating a new model. 
 
-.. code-block:: python
+.. code-block:: python2
 
     mySketch = myModel.ConstrainedSketch(name='Sketch A', sheetSize=200.0)
 
@@ -150,7 +150,7 @@ This statement creates a new sketch object named Sketch A in myModel. The variab
 - The command uses the variable myModel that we created in the previous statement. Using variables with meaningful names in a script makes the script easier to read and understand.
     
 
-.. code-block:: python
+.. code-block:: python2
 
     xyCoordsInner = ((-5 , 20), (5, 20), (15, 0),
         (-15, 0), (-5, 20))
@@ -161,7 +161,7 @@ This statement creates a new sketch object named Sketch A in myModel. The variab
 
 These two statements define the X- and Y-coordinates of the vertices that form the inner and outer profile of the letter A. The variable xyCoordsInner refers to the vertices of the inner profile, and the variable xyCoordsOuter refers to the vertices of the outer profile.
 
-.. code-block:: python
+.. code-block:: python2
     
     for i in range(len(xyCoordsInner)-1):
         mySketch.Line(point1=xyCoordsInner[i], 
@@ -176,33 +176,33 @@ This loop creates the inner profile of the letter A in mySketch. Four lines are 
 
 Similarly, a second loop creates the outer profile of the A character.
 
-.. code-block:: python
+.. code-block:: python2
 
     myPart = myModel.Part(name='Part A', 
         dimensionality=THREE_D, type=DEFORMABLE_BODY)
 
 This statement creates a three-dimensional, deformable part named Part A in myModel. The new part is assigned to the variable myPart.
 
-.. code-block:: python
+.. code-block:: python2
 
     myPart.BaseSolidExtrude(sketch=mySketch, depth=20.0)
 
 This statement creates a base solid extrude feature in myPart by extruding mySketch through a depth of 20.0.
 
-.. code-block:: python
+.. code-block:: python2
 
     myViewport = session.Viewport(name='Viewport for Model A', 
         origin=(20,20), width=150, height=100)
 
 This statement creates a new viewport named Viewport for Model A in session. The new viewport is assigned to the variable myViewport. The origin of the viewport is at (20, 20), and it has a width of 150 and a height of 100.
 
-.. code-block:: python
+.. code-block:: python2
 
     myViewport.setValues(displayedObject=myPart)
 
 This statement tells Abaqus to display the new part, myPart, in the new viewport, myViewport.
 
-.. code-block:: python
+.. code-block:: python2
 
     myViewport.partDisplayOptions.setValues(renderStyle=SHADED)
 
