@@ -496,17 +496,17 @@ class InteractionPropertyModel(ModelBase):
             A String specifying the interaction property repository key.
         definition
             A Symbolic constant specifying the method used for modeling the flow characteristics of
-            inflators. The default value is **definition**= DUAL PRESSURE. The possible values are DUAL
+            inflators. The default value is **definition** = DUAL PRESSURE. The possible values are DUAL
             PRESSURE, PRESSURE AND MASS, TANK TEST, and TEMPERATURE AND MASS.
         effectiveArea
             A Float specifying the total inflator orifice area. This argument is applicable only if
-            **definition**= DUAL PRESSURE or **definition**= PRESSURE AND MASS.
+            **definition** = DUAL PRESSURE or **definition** = PRESSURE AND MASS.
         tankVolume
             A Float specifying the tank volume. This argument is applicable only if
-            **definition**= DUAL PRESSURE or **definition**= TANK TEST.
+            **definition** = DUAL PRESSURE or **definition** = TANK TEST.
         dischargeCoefficient
             A Float specifying the discharge coefficient. This argument is applicable only if
-            **definition**= DUAL PRESSURE or **definition**= PRESSURE AND MASS.
+            **definition** = DUAL PRESSURE or **definition** = PRESSURE AND MASS.
         dataTable
             A sequence of sequences of Floats specifying the items described in the "Table data"
             section below.
