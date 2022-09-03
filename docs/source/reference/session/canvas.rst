@@ -63,10 +63,8 @@ DrawingArea
 Highlight
 ~~~~~~~~~
 
-.. autoclass:: abaqus.Canvas.Highlight.Highlight
+.. automodule:: abaqus.Canvas.Highlight
     :members:
-
-    .. autoclasstoc::
 
 ImageOptions
 ~~~~~~~~~~~~
