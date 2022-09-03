@@ -41,12 +41,12 @@ class XFEMCrack(Crack):
     allowCrackGrowth: Boolean = ON
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the initial crack location. This parameter is required when
-    #: *allowCrackGrowth* = OFF.
+    #: **allowCrackGrowth**= OFF.
     crackLocation: Region = None
 
     #: None or a Float specifying the radius from the crack tips within which the elements are
     #: used for crack singularity calculations. This argument applies only when
-    #: *allowCrackGrowth* = OFF. The default value is None.
+    #: **allowCrackGrowth**= OFF. The default value is None.
     singularityCalcRadius: float = None
 
     #: A String specifying the name of the ContactProperty object that defines the contact
@@ -62,8 +62,8 @@ class XFEMCrack(Crack):
     nodeId: tuple = ()
 
     #: A sequence of Ints specifying the values indicating the inclusion/exclusion of the
-    #: *crackFrontDist* values. A zero value indicates that *crackFrontDist* is not specified
-    #: for the ith pair *elemId* and *nodeId*. This argument is used only by the input file
+    #: **crackFrontDist**values. A zero value indicates that **crackFrontDist**is not specified
+    #: for the ith pair **elemId**and *nodeId*. This argument is used only by the input file
     #: reader.
     hasCrackFront: tuple = ()
 
@@ -119,11 +119,11 @@ class XFEMCrack(Crack):
             is ON.
         crackLocation
             A :py:class:`~abaqus.Region.Region.Region` object specifying the initial crack location. This parameter is required when
-            *allowCrackGrowth* = OFF.
+            **allowCrackGrowth**= OFF.
         singularityCalcRadius
             None or a Float specifying the radius from the crack tips within which the elements are
             used for crack singularity calculations. This argument applies only when
-            *allowCrackGrowth* = OFF. The default value is None.
+            **allowCrackGrowth**= OFF. The default value is None.
         interactionProperty
             A String specifying the name of the ContactProperty object that defines the contact
             properties for the crack surfaces. The default value is an empty string.
@@ -135,8 +135,8 @@ class XFEMCrack(Crack):
             connectivity. This argument is used only by the input file reader.
         hasCrackFront
             A sequence of Ints specifying the values indicating the inclusion/exclusion of the
-            *crackFrontDist* values. A zero value indicates that *crackFrontDist* is not specified
-            for the ith pair *elemId* and *nodeId*. This argument is used only by the input file
+            **crackFrontDist**values. A zero value indicates that **crackFrontDist**is not specified
+            for the ith pair **elemId**and *nodeId*. This argument is used only by the input file
             reader.
         crackPlaneDist
             A sequence of Floats specifying the values of the first signed distance function. This
@@ -178,11 +178,11 @@ class XFEMCrack(Crack):
             is ON.
         crackLocation
             A :py:class:`~abaqus.Region.Region.Region` object specifying the initial crack location. This parameter is required when
-            *allowCrackGrowth* = OFF.
+            **allowCrackGrowth**= OFF.
         singularityCalcRadius
             None or a Float specifying the radius from the crack tips within which the elements are
             used for crack singularity calculations. This argument applies only when
-            *allowCrackGrowth* = OFF. The default value is None.
+            **allowCrackGrowth**= OFF. The default value is None.
         interactionProperty
             A String specifying the name of the ContactProperty object that defines the contact
             properties for the crack surfaces. The default value is an empty string.
@@ -194,8 +194,8 @@ class XFEMCrack(Crack):
             connectivity. This argument is used only by the input file reader.
         hasCrackFront
             A sequence of Ints specifying the values indicating the inclusion/exclusion of the
-            *crackFrontDist* values. A zero value indicates that *crackFrontDist* is not specified
-            for the ith pair *elemId* and *nodeId*. This argument is used only by the input file
+            **crackFrontDist**values. A zero value indicates that **crackFrontDist**is not specified
+            for the ith pair **elemId**and *nodeId*. This argument is used only by the input file
             reader.
         crackPlaneDist
             A sequence of Floats specifying the values of the first signed distance function. This
