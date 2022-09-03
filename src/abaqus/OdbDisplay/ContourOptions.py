@@ -188,17 +188,6 @@ class ContourOptions(DGContourOptions):
     #: default is ((SOLID, VERY_THIN), ).
     intervalLineAttributes: SymbolicConstant = None
 
-<<<<<<< HEAD
-=======
-    #: A Boolean specifying whether to hide the values outside the specified min/max in the
-    #: contour legend. This setting hides the **autoMinValue** and **autoMaxValue** from the
-    #: spectrum when **legendHideOutsideLimits** = ON.The default value is OFF.
-    #:
-    #: ..versionadded:: 2019
-    #:     The `legendHideOutsideLimits` attribute was added.
-    legendHideOutsideLimits: Boolean = OFF
-
->>>>>>> abf1154 (Fix wrong formats)
     @abaqus_method_doc
     def setValues(
         self,
@@ -359,15 +348,6 @@ class ContourOptions(DGContourOptions):
         showMinLocation
             A Boolean specifying whether to display location of minimum value. The default value is
             OFF.
-<<<<<<< HEAD
-=======
-        legendHideOutsideLimits
-            A Boolean specifying whether to hide the values outside the specified minimum/maximum
-            for the contour interval when **legendHideOutsideLimits** = ON. The default value is OFF.
-
-            .. versionadded:: 2019
-                The `legendHideOutsideLimits` argument was added.
->>>>>>> abf1154 (Fix wrong formats)
 
         Raises
         ------
