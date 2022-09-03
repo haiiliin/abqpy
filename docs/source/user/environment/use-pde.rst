@@ -19,7 +19,7 @@ To record actions from Abaqus/CAE, the Abaqus PDE session must be associated wit
 
    Abaqus writes the following two lines to begin the file:
 
-   .. code-block:: Python
+   .. code-block:: python2
 
        from abaqusTester import *
        import abaqusGui
