@@ -173,7 +173,7 @@ class MeshPart(PartBase):
         Returns
         -------
         feature: Feature
-            A :py:class:`~abaqus.Assembly.Feature.Feature` object
+            A :py:class:`~abaqus.Feature.Feature.Feature` object
         """
         ...
 
@@ -678,7 +678,7 @@ class MeshPart(PartBase):
         Returns
         -------
         feature: Feature
-            A :py:class:`~abaqus.Assembly.Feature.Feature` object
+            A :py:class:`~abaqus.Feature.Feature.Feature` object
         """
         ...
 
@@ -696,7 +696,7 @@ class MeshPart(PartBase):
         Returns
         -------
         feature: Feature
-            A :py:class:`~abaqus.Assembly.Feature.Feature` object
+            A :py:class:`~abaqus.Feature.Feature.Feature` object
         """
         ...
 
