@@ -16,7 +16,7 @@ The arguments to `addMessageCallback` are:
 - The name of the callback function.
 - An object to pass to the callback function.
 
-These arguments allow you to associate the callback function with both a particular job and a particular message. Alternatively, you can associate the callback function with all jobs and all messages. The commands are described in :doc:`reference/kernel/messaging`.
+These arguments allow you to associate the callback function with both a particular job and a particular message. Alternatively, you can associate the callback function with all jobs and all messages. The commands are described in :doc:`/reference/kernel/messaging`.
 
 The interface definition of the callback function is
 
