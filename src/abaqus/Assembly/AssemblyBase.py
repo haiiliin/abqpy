@@ -3,7 +3,7 @@ import typing
 from abaqus.Datum.DatumCsys import DatumCsys
 from .AssemblyModel import AssemblyModel
 from .ConnectorOrientationArray import ConnectorOrientationArray
-from .Feature import Feature
+from .AssemblyFeature import AssemblyFeature
 from .ModelInstance import ModelInstance
 from .PartInstance import PartInstance
 from ..BasicGeometry.EdgeArray import EdgeArray
@@ -28,7 +28,7 @@ from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc
-class AssemblyBase(Feature):
+class AssemblyBase(AssemblyFeature):
     """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
@@ -81,14 +81,14 @@ class AssemblyBase(Feature):
     datums: typing.List[Datum] = []
 
     #: A repository of Feature objects specifying all Feature objects in the assembly.
-    features: typing.Dict[str, Feature] = {}
+    features: typing.Dict[str, AssemblyFeature] = {}
 
     #: A repository of Feature objects specifying all Feature objects in the assembly.The
     #: Feature objects in the featuresById repository are the same as the Feature objects in
     #: the features repository. However, the key to the objects in the featuresById repository
     #: is an integer specifying the **ID**, whereas the key to the objects in the features
     #: repository is a string specifying the **name**.
-    featuresById: typing.Dict[str, Feature] = {}
+    featuresById: typing.Dict[str, AssemblyFeature] = {}
 
     #: A repository of Surface objects specifying for more information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
@@ -681,7 +681,7 @@ class AssemblyBase(Feature):
         self,
         sketch: str,
         filter: SymbolicConstant = ALL_EDGES,
-        upToFeature: Feature = None,
+        upToFeature: AssemblyFeature = None,
         edges: tuple = (),
         vertices: tuple = (),
     ):
@@ -699,7 +699,7 @@ class AssemblyBase(Feature):
             ALL_EDGES and COPLANAR_EDGES. If **filter** = COPLANAR_EDGES, edges that are coplanar to the
             sketching plane are the only candidates for projection. The default value is ALL_EDGES.
         upToFeature
-            A :py:class:`~abaqus.Assembly.Feature.Feature` object specifying a marker in the feature-based history of the part.
+            A :py:class:`~abaqus.Feature.Feature.Feature` object specifying a marker in the feature-based history of the part.
             Abaqus/CAE projects onto the sketch only the part entities that were created before the
             feature specified by this marker. By default, all part entities are candidates for
             projection.
