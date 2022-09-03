@@ -6,14 +6,14 @@ from ..UtilityAndView.abaqusConstants import *
 from .._decorators import abaqus_function_doc
 
 """The Odb commands do the following: 
+
 - Determine if an output database (.odb) file needs to be upgraded to the current 
-release. 
+  release. 
 - Determine the extreme value for an output variable over a number of fields; for 
-example, over a number of load cases. 
+  example, over a number of load cases. 
 - Open an existing output database file and create a new Odb object. 
 - Upgrade an output database file to the current release and write the upgraded output 
-database to a new file. 
-
+  database to a new file. 
 """
 
 
