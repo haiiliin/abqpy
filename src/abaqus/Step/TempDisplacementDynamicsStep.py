@@ -77,19 +77,6 @@ class TempDisplacementDynamicsStep(AnalysisStep):
     #: 1.2.
     quadBulkViscosity: float = 1
 
-<<<<<<< HEAD
-=======
-    #: A Boolean specifying whether to use the "improved" (*improvedDtMethod* = ON) or
-    #: "conservative" (*improvedDtMethod* = OFF) method to estimate the element stable time
-    #: increment for three-dimensional continuum elements and elements with plane stress
-    #: formulations (shell, membrane, and two-dimensional plane stress elements). The default
-    #: value is ON.
-    #:
-    #: .. versionadded:: 2018
-    #:     The `improvedDtMethod` attribute was added.
-    improvedDtMethod: Boolean = ON
-
->>>>>>> abf1154 (Fix wrong formats)
     #: A String specifying the name of the previous step. The new step appears after this step
     #: in the list of analysis steps.
     previous: str = ""
@@ -250,26 +237,6 @@ class TempDisplacementDynamicsStep(AnalysisStep):
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
             name. The default value is False.
-<<<<<<< HEAD
-=======
-        improvedDtMethod
-            A Boolean specifying whether to use the "improved" (*improvedDtMethod* = ON) or
-            "conservative" (*improvedDtMethod* = OFF) method to estimate the element stable time
-            increment for three-dimensional continuum elements and elements with plane stress
-            formulations (shell, membrane, and two-dimensional plane stress elements). The default
-            value is ON.
-
-            .. versionadded:: 2018
-<<<<<<< HEAD
-<<<<<<< HEAD
-                The *improvedDtMethod* argument was added.
->>>>>>> abf1154 (Fix wrong formats)
-=======
-                The **improvedDtMethod**argument was added.
->>>>>>> 293ecd5 (Use double * instead of single *)
-=======
-                The **improvedDtMethod** argument was added.
->>>>>>> 9f5c114 (Fix wrong formats)
 
         Returns
         -------
@@ -328,26 +295,6 @@ class TempDisplacementDynamicsStep(AnalysisStep):
         quadBulkViscosity
             A Float specifying the quadratic bulk viscosity parameter, b2b2. The default value is
             1.2.
-<<<<<<< HEAD
-=======
-        improvedDtMethod
-            A Boolean specifying whether to use the "improved" (*improvedDtMethod* = ON) or
-            "conservative" (*improvedDtMethod* = OFF) method to estimate the element stable time
-            increment for three-dimensional continuum elements and elements with plane stress
-            formulations (shell, membrane, and two-dimensional plane stress elements). The default
-            value is ON.
-
-            .. versionadded:: 2018
-<<<<<<< HEAD
-<<<<<<< HEAD
-                The *improvedDtMethod* argument was added.
->>>>>>> abf1154 (Fix wrong formats)
-=======
-                The **improvedDtMethod**argument was added.
->>>>>>> 293ecd5 (Use double * instead of single *)
-=======
-                The **improvedDtMethod** argument was added.
->>>>>>> 9f5c114 (Fix wrong formats)
 
         Raises
         ------

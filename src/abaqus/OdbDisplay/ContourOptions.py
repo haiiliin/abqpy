@@ -280,16 +280,6 @@ class ContourOptions(DGContourOptions):
         spectrum
             A String specifying the name of the color spectrum to be used in the contour plot. The
             default value is "Rainbow".
-<<<<<<< HEAD
-=======
-        reversedContourLegendRange
-            A Boolean specifying whether the contour legend should show the lowest value at the top
-            and the highest value at the bottom (*reversedContourLegendRange* = ON) or vice versa. The
-            default value is OFF.
-
-            .. versionadded:: 2018
-                The `reversedContourLegendRange` argument was added.
->>>>>>> abf1154 (Fix wrong formats)
         outsideLimitsMode
             A SymbolicConstant specifying the color of contour values that exceed the limits of the
             plot. Possible values are SPECTRUM and SPECIFY.When **outsideLimitsMode** = SPECTRUM, the
