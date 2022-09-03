@@ -42,15 +42,11 @@ Callback
 .. automodule:: abaqus.UtilityAndView.Callback
     :members:
 
-    .. autoclasstoc::
-
 Customization
 ~~~~~~~~~~~~~
 
 .. automodule:: abaqus.UtilityAndView.Customization
     :members:
-
-    .. autoclasstoc::
 
 Delete
 ~~~~~~
@@ -58,15 +54,11 @@ Delete
 .. automodule:: abaqus.UtilityAndView.Delete
     :members:
 
-    .. autoclasstoc::
-
 Method
 ~~~~~~
 
 .. automodule:: abaqus.UtilityAndView.Method
     :members:
-
-    .. autoclasstoc::
 
 Repository
 ~~~~~~~~~~
@@ -79,10 +71,8 @@ Repository
 Status
 ~~~~~~
 
-.. autoclass:: abaqus.UtilityAndView.Status.Status
+.. automodule:: abaqus.UtilityAndView.Status
     :members:
-
-    .. autoclasstoc::
 
 SymbolicConstant
 ~~~~~~~~~~~~~~~~
@@ -95,18 +85,14 @@ SymbolicConstant
 Upgrade
 ~~~~~~~
 
-.. autoclass:: abaqus.UtilityAndView.Upgrade.Upgrade
+.. automodule:: abaqus.UtilityAndView.Upgrade
     :members:
-
-    .. autoclasstoc::
 
 User
 ~~~~
 
-.. autoclass:: abaqus.UtilityAndView.User.User
+.. automodule:: abaqus.UtilityAndView.User
     :members:
-
-    .. autoclasstoc::
 
 View
 ~~~~
