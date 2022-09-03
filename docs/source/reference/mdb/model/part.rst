@@ -87,7 +87,7 @@ AcisMdb
 Feature
 ~~~~~~~
 
-.. autoclass:: abaqus.Part.Feature.Feature
+.. autoclass:: abaqus.Feature.Feature.Feature
     :members:
 
     .. autoclasstoc::
