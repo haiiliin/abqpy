@@ -130,7 +130,7 @@ If the application contains both kernel and GUI functions, you must trace them s
    
        abaqus pde -pde [args]
 
-   where *abaqus* is the command you use to start Abaqus and *args* are the arguments required to start the custom application. For example, if you enter `abaqus cae -custom xxx.py` to start Abaqus/CAE and your application, enter `abaqus pde -pde -custom xxx.py`.
+   where **abaqus**is the command you use to start Abaqus and **args**are the arguments required to start the custom application. For example, if you enter `abaqus cae -custom xxx.py` to start Abaqus/CAE and your application, enter `abaqus pde -pde -custom xxx.py`.
 
    Note:
 
