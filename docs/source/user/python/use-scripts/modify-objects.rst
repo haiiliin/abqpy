@@ -10,13 +10,13 @@ Creating a copy of an object
 
 Most Abaqus objects have a method that creates a copy of the object. The same command provides the name of the new object. Methods that create a copy of an object are called copy constructors. Although copy constructors exist for most objects, in most cases they are not documented in the Abaqus Scripting Reference Guide. The format of a copy constructor is
 
-.. code-block:: python
+.. code-block:: python2
 
     ObjectName(name='name', objectToCopy=objectToBeCopied) 
 
 A copy constructor returns an object of the type of objectToBeCopied with the given name. For example, the following statements show you can create a Part object and then use a copy constructor to create a second Part object that is a copy of the first:
 
-.. code-block:: python
+.. code-block:: python2
     
     firstBolt = mdb.models['Metric'].Part( 
         name='boltPattern', dimensionality=THREE_D,
@@ -26,7 +26,7 @@ A copy constructor returns an object of the type of objectToBeCopied with the gi
 
 You can also use the copy constructor to create a new object in a different model.
 
-.. code-block:: python
+.. code-block:: python2
     
     firstBolt = mdb.models['Metric'].Part(
         name='boltPattern', dimensionality=THREE_D, 
@@ -39,7 +39,7 @@ More on copying objects
 
 To create a copy of an object, some objects use the base type described in Abstract base type. For example, to copy a HomogeneousSolidSection object, you use the abstract base type Section constructor.
 
-.. code-block:: python
+.. code-block:: python2
     
     import material
     import section
@@ -62,26 +62,26 @@ Deleting objects
 
 In general, if you can create an object, you can delete the object. For example, the following statements create a Material object in the material repository:
 
-.. code-block:: python
+.. code-block:: python2
     
     myMaterial = mdb.models['Model-1'].Material(name='aluminum')
 
 You can use the Python del statement to delete an object, but you must provide the full path to the object.
 
-.. code-block:: python
+.. code-block:: python2
     
     del mdb.models['Model-1'].materials['aluminum']
 
 The variable myMaterial that referred to the object still exists; however, the variable no longer refers to the object. You can use the del statement to delete the variable.
 
-.. code-block:: python
+.. code-block:: python2
     
     del myMaterial
 
 Conversely, if you create the object as before but delete the variable that referred to the object, only the variable is deleted; the object still exists. You can assign a new variable to the object.
 
 
-.. code-block:: python
+.. code-block:: python2
     
     myMaterial = mdb.models['Model-1'].Material(name='aluminum')
     del myMaterial

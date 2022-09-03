@@ -34,14 +34,14 @@ The resulting contour plot is shown in :numref:`cmd-super`.
 
 Use the following commands to retrieve the script and the output database that is read by the script:
 
-.. code-block:: python
+.. code-block:: python2
 
     abaqus fetch job=odbExample
     abaqus fetch job=viewer_tutorial
 
 The example follows:
 
-.. code-block:: python
+.. code-block:: python2
 
     """
     odbExample.py
@@ -106,89 +106,89 @@ How does the script work?
 
 This section explains each portion of the example script.
 
-.. code-block:: python
+.. code-block:: python2
 
     from abaqus import *
     from abaqusConstants import *
 
 These statements make the basic Abaqus objects accessible to the script as well as all the Symbolic Constants defined in the Abaqus Scripting Interface.
 
-.. code-block:: python
+.. code-block:: python2
 
     import visualization
 
 This statement provides access to the commands that replicate the functionality of the Visualization module in Abaqus/CAE (Abaqus/Viewer).
 
-.. code-block:: python
+.. code-block:: python2
 
     myViewport = session.Viewport(name='Superposition example')
 
 This statement creates a new viewport named Superposition example in the session. The new viewport is assigned to the variable myViewport. The origin and the size of the viewport assume the default values.
 
-.. code-block:: python
+.. code-block:: python2
 
     odbPath = 'viewer_tutorial.odb'
 
 This statement creates a path to the tutorial output database.
 
-.. code-block:: python
+.. code-block:: python2
 
     myOdb = session.openOdb(path=odbPath)
 
 This statement uses the path variable odbPath to open the output database and to assign it to the variable myOdb.
 
-.. code-block:: python
+.. code-block:: python2
 
     myViewport.setValues(displayedObject=myOdb) 
 
 This statement displays the default plot of the output database in the viewport.
 
-.. code-block:: python
+.. code-block:: python2
 
     firstStep = myOdb.steps['Step-1']
 
 These statements assign the first and second steps in the output database to the variables firstStep and secondStep.
 
-.. code-block:: python
+.. code-block:: python2
 
     frame1 = firstStep.frames[-1]
     frame2 = secondStep.frames[-1]
 
 These statements assign the last frame of the first and second steps to the variables frame1 and frame2. In Python an index of 0 refers to the first item in a sequence. An index of −1 refers to the last item in a sequence.
 
-.. code-block:: python
+.. code-block:: python2
 
     displacement1 = frame1.fieldOutputs['U']
     displacement2 = frame2.fieldOutputs['U']
 
 These statements assign the displacement field output in the last frame of the first and second steps to the variables displacement1 and displacement2.
 
-.. code-block:: python
+.. code-block:: python2
 
     stress1 = frame1.fieldOutputs['S']
     stress2 = frame2.fieldOutputs['S']
 
 Similarly, these statements assign the stress field output in the last frame of the first and second steps to the variables stress1 and stress2.
 
-.. code-block:: python
+.. code-block:: python2
 
     deltaDisplacement = displacement2 - displacement1
 
 This statement subtracts the displacement field output from the last frame of the two steps and puts the resulting field output into a new variable deltaDisplacement.
 
-.. code-block:: python
+.. code-block:: python2
 
     deltaStress = stress2 - stress1
 
 Similarly, this statement subtracts the stress field output and puts the result in the variable deltaStress.
 
-.. code-block:: python
+.. code-block:: python2
 
     myViewport.odbDisplay.setDeformedVariable(deltaDisplacement)
 
 This statement uses deltaDisplacement, the displacement field output variable that we created earlier, to set the deformed variable. This is the variable that Abaqus will use to display the shape of the deformed model.
 
-.. code-block:: python
+.. code-block:: python2
 
     myViewport.odbDisplay.setPrimaryVariable(field=deltaStress,
         outputPosition=INTEGRATION_POINT,
@@ -196,7 +196,7 @@ This statement uses deltaDisplacement, the displacement field output variable th
 
 This statement uses deltaStress, our stress field output variable, to set the primary variable. This is the variable that Abaqus will display in a contour or symbol plot.
 
-.. code-block:: python
+.. code-block:: python2
 
     myViewport.odbDisplay.display.setValues(plotState=(CONTOURS_ON_DEF,))
 

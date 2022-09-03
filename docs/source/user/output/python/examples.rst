@@ -31,7 +31,7 @@ You can also run the example with only the **-help** parameter for a summary of 
 
 Use the following commands to retrieve the example script and the viewer tutorial output database:
 
-.. code-block:: python
+.. code-block:: python2
     
     # abaqus fetch job=odbMaxMises.py
     # abaqus fetch job=viewer_tutorial
@@ -161,7 +161,7 @@ The following example illustrates how you can use the Abaqus Scripting Interface
 
 Use the following command to retrieve the example script:
 
-.. code-block:: python
+.. code-block:: python2
 
     abaqus fetch job=odbWrite
     """odbWrite.py
@@ -432,7 +432,7 @@ The command line arguments provide the following:
 
 Use the following command to retrieve the example script:
 
-.. code-block:: python
+.. code-block:: python2
 
     # abaqus fetch job=odbPert
 
@@ -514,13 +514,13 @@ Retrieves two specified fields from the output database.
 - Uses the `addData` method to add the computed field to the new FieldOutput object.
 - Use the following command to retrieve the example script:
 
-.. code-block:: python
+.. code-block:: python2
 
     abaqus fetch job=fieldOperation
 
 The fetch command also retrieves an input file that you can use to generate the output database that is read by the example script.
 
-.. code-block:: python
+.. code-block:: python2
 
     # FieldOutput operators example problem
     #
@@ -569,7 +569,7 @@ Use the following command to retrieve the example script:
 The fetch command also retrieves an input file that you can use to generate the output database that is read by the example script.
 
 
-.. code-block:: python
+.. code-block:: python2
 
     #
     # fieldValue operators example problem:
@@ -628,7 +628,7 @@ Use the following command to retrieve the example script:
 
 The fetch command also retrieves an input file that you can use to generate the output database that is read by the example script.
 
-.. code-block:: python
+.. code-block:: python2
 
     # HistoryOutput operators example problem.
     #
@@ -695,7 +695,7 @@ Use the following command to retrieve the example script:
 The fetch command also retrieves an input file that you can use to generate an output database that can be read by the example script.
 
 
-.. code-block:: python
+.. code-block:: python2
 
     import types
     from odbAccess import *
@@ -754,7 +754,7 @@ Use the following command to retrieve the example script:
 
 The fetch command also retrieves an input file that you can use to generate an output database that can be read by the example script.
 
-.. code-block:: python
+.. code-block:: python2
 
     from odbAccess import *
 
@@ -800,7 +800,7 @@ This example illustrates how field results can be transformed to a different coo
 
 Use the following commands to retrieve the example script and an input file to create a sample output database:
 
-.. code-block:: python
+.. code-block:: python2
 
     # abaqus fetch job=transformExa
     # abaqus fetch job=esf4sxdg
@@ -1043,7 +1043,7 @@ You should specify the name of the output database during program execution. The
 
 Before executing the script, run an analysis that creates an output database file containing the appropriate output. This analysis includes, for example, output for the elements and the integration point coordinates of the elements. Execute the script using the following command:
 
-.. code-block:: python
+.. code-block:: python2
 
     abaqus python felbow.py <filename.odb>
 
