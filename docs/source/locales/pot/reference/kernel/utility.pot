@@ -844,7 +844,7 @@ msgid "**callback**"
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:22
-msgid "A Python function to be called. The interface definition of the callback function is :`def functionName(moduleName, userData)`*moduleName* is a String. *userData* is the object passed as the **userData** argument to the addImportCallback method."
+msgid "A Python function to be called. The interface definition of the callback function is :`def functionName(moduleName, userData)`*moduleName* is a String.*userData* is the object passed as the **userData** argument to the addImportCallback method."
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:40
@@ -954,7 +954,7 @@ msgid "Check `Delete.deleteObjectCallback() on help.3ds.com/2016 <https://help.3
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:21
-msgid "A Python function to be called when an object matching the specified path is about to be deleted. The interface definition of the callback function is:`def functionName(objectPath, userData)`where:*objectPath* is the path to the object about to be deleted. *userData* is the object passed as the **userData** argument to the addCallback method."
+msgid "A Python function to be called when an object matching the specified path is about to be deleted. The interface definition of the callback function is:`def functionName(objectPath, userData)`where:*objectPath* is the path to the object about to be deleted.*userData* is the object passed as the **userData** argument to the addCallback method."
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:31
@@ -1007,7 +1007,7 @@ msgid "A String specifying the name of the method on the caller that will trigge
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:26
-msgid "A Python function to be called when a command matching the specified caller and method name is about to be executed. The interface definition of the callback function is:`def functionName(callingMethod, args, keywordArgs, userData)`where:*callingMethod* is the method that called this function. *args* is the sequence of non-keyword arguments that was passed to the calling method. *keywordArgs* is the dictionary of keyword arguments that was passed to the calling method. *userData* is the object passed as the **userData** argument to the addCallback method."
+msgid "A Python function to be called when a command matching the specified caller and method name is about to be executed. The interface definition of the callback function is:`def functionName(callingMethod, args, keywordArgs, userData)`where:*callingMethod* is the method that called this function.*args* is the sequence of non-keyword arguments that was passed to the calling method.*keywordArgs* is the dictionary of keyword arguments that was passed to the calling method.*userData* is the object passed as the **userData** argument to the addCallback method."
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:57
@@ -1027,7 +1027,7 @@ msgid "Check `Method.removeCallback() on help.3ds.com/2016 <https://help.3ds.com
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:26
-msgid "A Python function to be called when a command matching the specified caller and method name is about to be executed. The interface definition of the callback function is:`def functionName(callingMethod, args, keywordArgs, userData)`where:*callingMethod* is the method that called this function. *args* is the sequence of nonkeyword arguments that was passed to the calling method. *keywordArgs* is the dictionary of keyword arguments that was passed to the calling method. *userData* is the object passed as the **userData** argument to the removeCallback method."
+msgid "A Python function to be called when a command matching the specified caller and method name is about to be executed. The interface definition of the callback function is:`def functionName(callingMethod, args, keywordArgs, userData)`where:*callingMethod* is the method that called this function.*args* is the sequence of nonkeyword arguments that was passed to the calling method.*keywordArgs* is the dictionary of keyword arguments that was passed to the calling method.*userData* is the object passed as the **userData** argument to the removeCallback method."
 msgstr ""
 
 #: ../../reference/kernel/utility.rst:72
