@@ -319,8 +319,8 @@ class AcisFile:
             A String specifying the path to the Solidworks file to open.
         topology
             A SymbolicConstant specifying the topology of the data to be read from the file and of
-            the part to be created. Possible values are SOLID, SHELL, and WIRE. If **topology**= SOLID,
-            Abaqus/CAE attempts to attach cells to create a solid entity. If **topology**= SHELL,
+            the part to be created. Possible values are SOLID, SHELL, and WIRE. If **topology** = SOLID,
+            Abaqus/CAE attempts to attach cells to create a solid entity. If **topology** = SHELL,
             Abaqus/CAE builds the body as a shell entity, not as a solid entity. The default value
             is SOLID.
 
