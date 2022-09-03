@@ -132,9 +132,9 @@ class ConnectorElasticity(ConnectorBehaviorOption):
             .. code-block:: python
 
                 import connectorBehavior
-                          connectorBehavior.ConnectorElasticity
-                          import odbConnectorBehavior
-                          odbConnectorBehavior.ConnectorElasticity
+                connectorBehavior.ConnectorElasticity
+                import odbConnectorBehavior
+                odbConnectorBehavior.ConnectorElasticity
 
         Parameters
         ----------

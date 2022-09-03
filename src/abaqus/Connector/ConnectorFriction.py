@@ -173,9 +173,9 @@ class ConnectorFriction(ConnectorBehaviorOption):
             .. code-block:: python
 
                 import connectorBehavior
-                          connectorBehavior.ConnectorFriction
-                          import odbConnectorBehavior
-                          odbConnectorBehavior.ConnectorFriction
+                connectorBehavior.ConnectorFriction
+                import odbConnectorBehavior
+                odbConnectorBehavior.ConnectorFriction
 
         Parameters
         ----------
