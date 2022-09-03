@@ -82,7 +82,7 @@ Start Abaqus/CAE, and create a model database from the **Start Session** dialog 
 
 If you want, you can complete the above steps for creating the model using a function in `skewExampleUtils.py`. In the command line interface area of Abaqus/CAE, type the following commands:
 
-.. code-block:: python
+.. code-block:: python2
 
     import skewExampleUtils
     skewExampleUtils.createModel()
@@ -126,13 +126,13 @@ Determine the indices of the dimension to modify and the vertices to move
 5. From the **Edit Feature** dialog box, select **OK**.
 6. Examine the replay file, `abaqus.rpy`. The last few lines of the replay file will contain the statements that modified the angular dimension. The statement will look similar to the following:
 
-  .. code-block:: python
+  .. code-block:: python2
 
       d[0].setValues(value=60.0, )
 
 7. The example script, `skewExample.py`, contains a similar statement that modifies the angular dimension of the plate. The index of the angular dimension in your model must be the same as the index in the example script. If the indices are not the same, you must edit the example script and enter the correct indices.
 
-  .. code-block:: python
+  .. code-block:: python2
    
       d[0].setValues(value=angle, )
 
@@ -163,7 +163,7 @@ he following shows the contents of the script skewExample.py. The parametric stu
 
   The theoretical results are also plotted.
 
-.. code-block:: python
+.. code-block:: python2
 
     """
     skewExample.py
@@ -295,7 +295,7 @@ The script imports two functions from `skewExampleUtils`. The functions do the f
 - Retrieve the displacement and calculate the maximum bending moment at the center of the plate.
 - Display curves of theoretical and computed results in a new viewport.
 
-.. code-block:: python
+.. code-block:: python2
 
     """
     skewExampleUtils.py

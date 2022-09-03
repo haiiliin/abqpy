@@ -13,7 +13,7 @@ For example, consider the case where the user is creating an elastic material an
 
 The equivalent Abaqus Scripting Interface command is
 
-.. code-block:: python
+.. code-block:: python2
 
     mdb.models['Model-1'].materials['steel'].Elastic(
         temperatureDependency=True, table=(
@@ -22,7 +22,7 @@ The equivalent Abaqus Scripting Interface command is
         (220.0E9, 0.3, 250.0), 
         (225.0E9, 0.3, 500.0)))
 
-The `table` argument is described in the :doc:`references` as a sequence of sequences of Floats.
+The `table` argument is described in the :doc:`/references` as a sequence of sequences of Floats.
 
 Lists, tuples, strings, and arrays are described in Sequences. In addition, the Abaqus Scripting Interface defines some of its own sequences that contain objects of the same type.
 
@@ -32,7 +32,7 @@ Lists, tuples, strings, and arrays are described in Sequences. In addition, the 
 
   For example, the following creates a three-dimensional part by extruding a 70 × 70 square through a distance of 20. The members of the resulting Part object are listed along with some information about the sequence of Edge objects.
   
-  .. code-block:: python
+  .. code-block:: python2
 
       mdb.Model('Body')
       mySketch = mdb.models['Body'].ConstrainedSketch(
@@ -45,7 +45,7 @@ Lists, tuples, strings, and arrays are described in Sequences. In addition, the 
 
   The following statement displays the members of the resulting three-dimensional part:
 
-  .. code-block:: python
+  .. code-block:: python2
 
       >>> print mdb.models['Body'].parts['Switch'].__members__
       ['allInternalSets', 'allInternalSurfaces', 'allSets', 
@@ -64,7 +64,7 @@ Lists, tuples, strings, and arrays are described in Sequences. In addition, the 
 
   The following statements display some information about the edges sequence:
 
-  .. code-block:: python
+  .. code-block:: python2
 
       >>> print 'Single edge type = ', type(switch.edges[0])
       Single edge type = <type 'Edge'>

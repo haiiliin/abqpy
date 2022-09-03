@@ -50,9 +50,9 @@ class ConnectorSection(SectionBase):
             .. code-block:: python
 
                 import connectorBehavior
-                          connectorBehavior.ConnectorDamage
-                          import odbConnectorBehavior
-                          odbConnectorBehavior.ConnectorDamage
+                connectorBehavior.ConnectorDamage
+                import odbConnectorBehavior
+                odbConnectorBehavior.ConnectorDamage
 
         Parameters
         ----------
@@ -174,9 +174,9 @@ class ConnectorSection(SectionBase):
             .. code-block:: python
 
                 import connectorBehavior
-                          connectorBehavior.ConnectorDamping
-                          import odbConnectorBehavior
-                          odbConnectorBehavior.ConnectorDamping
+                connectorBehavior.ConnectorDamping
+                import odbConnectorBehavior
+                odbConnectorBehavior.ConnectorDamping
 
         Parameters
         ----------
@@ -252,9 +252,9 @@ class ConnectorSection(SectionBase):
             .. code-block:: python
 
                 import connectorBehavior
-                          connectorBehavior.ConnectorElasticity
-                          import odbConnectorBehavior
-                          odbConnectorBehavior.ConnectorElasticity
+                connectorBehavior.ConnectorElasticity
+                import odbConnectorBehavior
+                odbConnectorBehavior.ConnectorElasticity
 
         Parameters
         ----------
@@ -324,9 +324,9 @@ class ConnectorSection(SectionBase):
             .. code-block:: python
 
                 import connectorBehavior
-                          connectorBehavior.ConnectorFailure
-                          import odbConnectorBehavior
-                          odbConnectorBehavior.ConnectorFailure
+                connectorBehavior.ConnectorFailure
+                import odbConnectorBehavior
+                odbConnectorBehavior.ConnectorFailure
 
         Parameters
         ----------
@@ -396,9 +396,9 @@ class ConnectorSection(SectionBase):
             .. code-block:: python
 
                 import connectorBehavior
-                          connectorBehavior.ConnectorFriction
-                          import odbConnectorBehavior
-                          odbConnectorBehavior.ConnectorFriction
+                connectorBehavior.ConnectorFriction
+                import odbConnectorBehavior
+                odbConnectorBehavior.ConnectorFriction
 
         Parameters
         ----------
@@ -520,9 +520,9 @@ class ConnectorSection(SectionBase):
             .. code-block:: python
 
                 import connectorBehavior
-                          connectorBehavior.ConnectorLock
-                          import odbConnectorBehavior
-                          odbConnectorBehavior.ConnectorLock
+                connectorBehavior.ConnectorLock
+                import odbConnectorBehavior
+                odbConnectorBehavior.ConnectorLock
 
         Parameters
         ----------
@@ -591,9 +591,9 @@ class ConnectorSection(SectionBase):
             .. code-block:: python
 
                 import connectorBehavior
-                          connectorBehavior.ConnectorPlasticity
-                          import odbConnectorBehavior
-                          odbConnectorBehavior.ConnectorPlasticity
+                connectorBehavior.ConnectorPlasticity
+                import odbConnectorBehavior
+                odbConnectorBehavior.ConnectorPlasticity
 
         Parameters
         ----------

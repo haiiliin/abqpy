@@ -205,8 +205,8 @@ class InteractionModel(
             - A string specifying the name of the main surface used in contact.
             - A string specifying the name of the secondary surface used in contact.
             - A float specifying the separation distance between the main surface and the secondary
-            surface.
-            - A boolean specifying whether or not contact surfaces are overclosed..
+              surface.
+            - A boolean specifying whether or not contact surfaces are overclosed.
         """
         ...
 

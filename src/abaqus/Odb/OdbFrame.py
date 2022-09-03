@@ -38,7 +38,7 @@ class OdbFrame:
     #: this cyclic symmetry mode.
     associatedFrame: "OdbFrame" = None
 
-    #: A repository of FieldOutput objects specifying the key to the **fieldOutputs**repository
+    #: A repository of FieldOutput objects specifying the key to the **fieldOutputs** repository
     #: is a String representing an output variable.
     fieldOutputs: typing.Dict[str, FieldOutput] = {}
 

@@ -9,7 +9,9 @@ class GapConductance:
 
     .. note::
         This object can be accessed by:
+        
         .. code-block:: python
+        
             import material
             mdb.models[name].materials[name].gapConductance
             import odbMaterial

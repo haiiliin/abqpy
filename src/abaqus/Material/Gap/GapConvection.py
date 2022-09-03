@@ -19,7 +19,7 @@ class GapConvection:
             session.odbs[name].materials[name].gapConvection
 
         The table data for this object are:
-        For *type*=TABULAR the table data specify the following:
+        For **type** = TABULAR the table data specify the following:
 
         - Nusselt number (Nu)
         - Temperature, if the data depend on temperature.

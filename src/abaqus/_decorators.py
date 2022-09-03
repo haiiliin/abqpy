@@ -3,9 +3,9 @@ import typing
 from pathlib import Path
 
 try:
-    from ._version import version as default_version
+    from ._version import version as _default_version
 except ImportError:
-    default_version = '2022.0.0-unknown'
+    _default_version = '2022.0.0-unknown'
 
 
 def _get_version():
@@ -18,15 +18,15 @@ def _get_version():
         import setuptools_scm
         try:
             return setuptools_scm.get_version(
-                root=root,
+                root=root.__str__(),
                 version_scheme="release-branch-semver",
                 local_scheme="node-and-date",
-                fallback_version=default_version,
+                fallback_version=_default_version,
             )
         except ValueError:
-            return default_version
+            return _default_version
     else:  # Get the version from the _version.py setuptools_scm file.
-        return default_version
+        return _default_version
 
 
 version = _get_version()[:4]
@@ -41,6 +41,7 @@ class AbaqusDoc:
         class_or_module_name: str,
         prefix='',
         suffix='',
+        label=None,
     ) -> typing.Tuple[str, str]:
         """Generate a link to the Abaqus class documentation.
 
@@ -54,6 +55,8 @@ class AbaqusDoc:
             The prefix to the class or module name.
         suffix : str
             The suffix to the class name.
+        label : str
+            The label to use for the link.
 
         Returns
         -------
@@ -62,10 +65,12 @@ class AbaqusDoc:
         str
             The link with label.
         """
+        if label is None:
+            label = class_or_module_name
         module_name = f"{type if type == 'module' else ''}{class_or_module_name.lower()}"
         link = (f"https://help.3ds.com/{version}/English/DSSIMULIA_Established/SIMACAEKERRefMap/"
                 f"simaker-c-{prefix}{module_name}{suffix}pyc.htm?contextscope=all")
-        return link, f"Check `{class_or_module_name} on help.3ds.com/{version} <{link}>`_."
+        return link, f"Check `{label} on help.3ds.com/{version} <{link}>`_."
 
     @classmethod
     def _method_or_function_link(
@@ -75,6 +80,7 @@ class AbaqusDoc:
         method_or_function_name: str,
         prefix='',
         suffix='',
+        label=None,
     ) -> typing.Tuple[str, str]:
         """Generate a link to the Abaqus function documentation.
 
@@ -90,6 +96,8 @@ class AbaqusDoc:
             The prefix to the class or module name.
         suffix : str
             The suffix to the class name.
+        label : str
+            The label to use for the link.
 
         Returns
         -------
@@ -112,7 +120,9 @@ class AbaqusDoc:
             signature = f"{class_or_module_name}()"
         else:
             signature = f"{class_or_module_name}.{method_or_function_name}()"
-        return link, f"Check `{signature} on help.3ds.com/{version} <{link}>`_."
+        if label is None:
+            label = signature
+        return link, f"Check `{label} on help.3ds.com/{version} <{link}>`_."
 
     @classmethod
     def _add_link_in_class_or_module_docstring(
@@ -122,6 +132,7 @@ class AbaqusDoc:
         docstring: str,
         prefix='',
         suffix='',
+        label=None,
     ) -> str:
         """Add a link to the Abaqus documentation to the docstring for classes or modules.
 
@@ -137,6 +148,8 @@ class AbaqusDoc:
             The prefix to the class or module name.
         suffix : str
             The suffix to the class name.
+        label : str
+            The label to use for the link.
 
         Returns
         -------
@@ -145,7 +158,7 @@ class AbaqusDoc:
         """
         if not docstring:
             return docstring
-        link, link_with_label = cls._class_or_module_link(type, class_or_module_name, prefix, suffix)
+        link, link_with_label = cls._class_or_module_link(type, class_or_module_name, prefix, suffix, label)
         return (docstring.rstrip() + '\n\n' + ' ' * (0 if type == 'module' else 4) +
                 '.. note::\n' + ' ' * (4 if type == 'module' else 8) + link_with_label)
 
@@ -158,6 +171,7 @@ class AbaqusDoc:
         docstring: str,
         prefix='',
         suffix='',
+        label=None,
     ) -> str:
         """Add a link to the Abaqus documentation to the docstring for methods or functions.
 
@@ -175,6 +189,8 @@ class AbaqusDoc:
             The prefix to the class or module name.
         suffix : str
             The suffix to the class name.
+        label : str
+            The label to use for the link.
 
         Returns
         -------
@@ -184,7 +200,7 @@ class AbaqusDoc:
         if not docstring:
             return docstring
         link, link_with_label = cls._method_or_function_link(type, class_or_module_name,
-                                                             method_or_function_name, prefix, suffix)
+                                                             method_or_function_name, prefix, suffix, label)
         return re.sub(r'(\n\s+?)(Parameters\n\s+----------)',
                       r'\1' + '.. note::\n' + ' ' * (8 if type == 'function' else 12) + link_with_label + r'\1\2',
                       docstring)
@@ -196,6 +212,7 @@ class AbaqusDoc:
         docstring: str,
         prefix='',
         suffix='',
+        label=None,
     ) -> str:
         """Add a link to the Abaqus documentation to the docstring for classes.
 
@@ -209,6 +226,8 @@ class AbaqusDoc:
             The prefix to the class or module name.
         suffix : str
             The suffix to the class name.
+        label : str
+            The label to use for the link.
 
         Returns
         -------
@@ -216,7 +235,7 @@ class AbaqusDoc:
             The docstring with the link to the Abaqus documentation.
         """
         return cls._add_link_in_class_or_module_docstring(
-            'class', class_name, docstring, prefix, suffix
+            'class', class_name, docstring, prefix, suffix, label
         )
 
     @classmethod
@@ -226,6 +245,7 @@ class AbaqusDoc:
         docstring: str,
         prefix='',
         suffix='',
+        label=None,
     ) -> str:
         """Add a link to the Abaqus documentation to the docstring for modules.
 
@@ -239,6 +259,8 @@ class AbaqusDoc:
             The prefix to the class or module name.
         suffix : str
             The suffix to the class name.
+        label : str
+            The label to use for the link.
 
         Returns
         -------
@@ -246,7 +268,7 @@ class AbaqusDoc:
             The docstring with the link to the Abaqus documentation.
         """
         return cls._add_link_in_class_or_module_docstring(
-            'module', module_name, docstring, prefix, suffix
+            'module', module_name, docstring, prefix, suffix, label
         )
 
     @classmethod
@@ -257,6 +279,7 @@ class AbaqusDoc:
         docstring: str,
         prefix='',
         suffix='',
+        label=None,
     ) -> str:
         """Add a link to the Abaqus documentation to the docstring for functions.
 
@@ -272,6 +295,8 @@ class AbaqusDoc:
             The prefix to the class or module name.
         suffix : str
             The suffix to the class name.
+        label : str
+            The label to use for the link.
 
         Returns
         -------
@@ -279,7 +304,7 @@ class AbaqusDoc:
             The docstring with the link to the Abaqus documentation.
         """
         return cls._add_link_in_method_or_function_docstring(
-            'function', module_name, function_name, docstring, prefix, suffix
+            'function', module_name, function_name, docstring, prefix, suffix, label
         )
 
     @classmethod
@@ -290,6 +315,7 @@ class AbaqusDoc:
         docstring: str,
         prefix='',
         suffix='',
+        label=None,
     ) -> str:
         """Add a link to the Abaqus documentation to the docstring for methods.
 
@@ -305,6 +331,8 @@ class AbaqusDoc:
             The prefix to the class or module name.
         suffix : str
             The suffix to the class name.
+        label : str
+            The label to use for the link.
 
         Returns
         -------
@@ -312,7 +340,7 @@ class AbaqusDoc:
             The docstring with the link to the Abaqus documentation.
         """
         return cls._add_link_in_method_or_function_docstring(
-            'method', class_name, method_name, docstring, prefix, suffix
+            'method', class_name, method_name, docstring, prefix, suffix, label
         )
 
 
@@ -387,11 +415,13 @@ def abaqus_class_doc(cls):
     """Add a link to the Abaqus documentation to the docstring of the class.
     """
     class_name = cls.__name__
+    processed_class_name = _process_class_name(class_name)
     cls.__doc__ = doc.add_link_in_class_docstring(
-        class_name=_process_class_name(class_name),
+        class_name=processed_class_name,
         docstring=cls.__doc__,
         prefix='gpr' if class_name.lower().startswith('cae') else '',
-        suffix=class_suffix.get(class_name, '')
+        suffix=class_suffix.get(class_name, ''),
+        label=class_name if processed_class_name in ['Mdb', 'Model', 'Step', 'Assembly', 'Odb', 'Part'] else None,
     )
     return cls
 

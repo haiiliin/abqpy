@@ -19,8 +19,7 @@ class FieldOutput:
 
         .. code-block:: python
 
-            import
-            odbAccess
+            import odbAccess
             session.odbs[name].steps[name].frames[i].fieldOutputs[name]
     """
 

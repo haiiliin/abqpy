@@ -18,11 +18,11 @@ class ConcentratedHeatFluxState(LoadState):
         .. code-block:: python
 
             import load
-                mdb.models[name].steps[name].loadStates[name]
+            mdb.models[name].steps[name].loadStates[name]
 
-            The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-            - CFLUX
+        - CFLUX
     """
 
     #: A Float specifying the load magnitude.
