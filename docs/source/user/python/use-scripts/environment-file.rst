@@ -4,7 +4,7 @@ Using Abaqus Scripting Interface commands in your environment file
 
 The Abaqus environment file is read by Abaqus/CAE when you start a session. The environment file can contain Abaqus Scripting Interface commands. The following is an example environment file:
 
-.. code-block:: python
+.. code-block:: python2
 
     scratch = 'c:/temp'
     memory = 256mb
@@ -50,7 +50,7 @@ The example environment file uses the `onCaeStartup()` function to control a set
 
 - The `onJobStartup()` function controls a set of statements that execute when an analysis job starts. For example,
 
-  .. code-block:: python
+  .. code-block:: python2
 
       def onJobStartup():
           import os, shutil
@@ -60,7 +60,7 @@ The example environment file uses the `onCaeStartup()` function to control a set
 
 - The onJobCompletion() function controls a set of statements that execute when an analysis job completes. For example,
 
-  .. code-block:: python
+  .. code-block:: python2
 
       def onJobCompletion():
           import os

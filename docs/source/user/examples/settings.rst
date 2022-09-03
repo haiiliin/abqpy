@@ -15,7 +15,7 @@ You can retrieve the location of your `abaqus_2021.gpr` file using the `getGuiPr
   
   You can display and edit session options using the `openSessionOptions` function.
 
-  .. code-block:: python
+  .. code-block:: python2
 
       > abaqus Python
       ...
@@ -34,14 +34,14 @@ You can retrieve the location of your `abaqus_2021.gpr` file using the `getGuiPr
 
   The following statement changes the frame rate to 50. You should confirm that the data type you specify matches the type of the existing value.
 
-  .. code-block:: python
+  .. code-block:: python2
 
       >>> sessionOptions['session.animationOptions']\
              ['frameRate'] = 50
 
   You can save the options you change to the original file by issuing the following command:
 
-  .. code-block:: python
+  .. code-block:: python2
 
       >>> sessionOptions.save()
 
@@ -62,7 +62,7 @@ You can retrieve the location of your `abaqus_2021.gpr` file using the `getGuiPr
 
   The sample statements follow:
 
-  .. code-block:: python
+  .. code-block:: python2
 
       > abaqus Python
       ...
@@ -94,13 +94,13 @@ You can retrieve the location of your `abaqus_2021.gpr` file using the `getGuiPr
 
 You can change the geometry of the Abaqus/CAE main window by issuing a command like the following:
 
-.. code-block:: python
+.. code-block:: python2
 
     >>> guiPrefs['Abaqus/CAE']['Geometry']['AFXMainWindow'] = '193,67,800,600'
 
 You can save the GUI preferences you change to the original file by issuing the following command:
 
-.. code-block:: python
+.. code-block:: python2
 
     >>> guiPrefs.save()
 
