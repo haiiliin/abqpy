@@ -273,11 +273,15 @@ class ExplicitDynamicsStep(AnalysisStep):
 
             .. versionadded:: 2018
 <<<<<<< HEAD
+<<<<<<< HEAD
                 The *improvedDtMethod* argument was added.
 >>>>>>> abf1154 (Fix wrong formats)
 =======
                 The **improvedDtMethod**argument was added.
 >>>>>>> 293ecd5 (Use double * instead of single *)
+=======
+                The **improvedDtMethod** argument was added.
+>>>>>>> 9f5c114 (Fix wrong formats)
 
         Returns
         -------
@@ -353,11 +357,15 @@ class ExplicitDynamicsStep(AnalysisStep):
 
             .. versionadded:: 2018
 <<<<<<< HEAD
+<<<<<<< HEAD
                 The *improvedDtMethod* argument was added.
 >>>>>>> abf1154 (Fix wrong formats)
 =======
                 The **improvedDtMethod**argument was added.
 >>>>>>> 293ecd5 (Use double * instead of single *)
+=======
+                The **improvedDtMethod** argument was added.
+>>>>>>> 9f5c114 (Fix wrong formats)
 
         Raises
         ------

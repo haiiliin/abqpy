@@ -555,7 +555,7 @@ class PredefinedFieldModel(
             A String specifying the name of the step in which the predefined field is created.
         region
             A Region object specifying the region to which the predefined field is applied. *Region*
-            is ignored if the predefined field has a **distributionType**member available, and
+            is ignored if the predefined field has a **distributionType** member available, and
             **distributionType** = FROM_FILE.
         outputVariable
             A String specifying the scalar nodal output variable that will be read from an output
@@ -599,7 +599,7 @@ class PredefinedFieldModel(
             **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         beginIncrement
-            An Int specifying the first increment of the step set in **beginStep**or the
+            An Int specifying the first increment of the step set in **beginStep** or the
             SymbolicConstants STEP_START or STEP_END. This argument is valid only when
             **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.

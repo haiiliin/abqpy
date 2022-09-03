@@ -62,8 +62,8 @@ class XFEMCrack(Crack):
     nodeId: tuple = ()
 
     #: A sequence of Ints specifying the values indicating the inclusion/exclusion of the
-    #: **crackFrontDist**values. A zero value indicates that **crackFrontDist**is not specified
-    #: for the ith pair **elemId**and *nodeId*. This argument is used only by the input file
+    #: **crackFrontDist** values. A zero value indicates that **crackFrontDist** is not specified
+    #: for the ith pair **elemId** and *nodeId*. This argument is used only by the input file
     #: reader.
     hasCrackFront: tuple = ()
 
@@ -134,8 +134,8 @@ class XFEMCrack(Crack):
             connectivity. This argument is used only by the input file reader.
         hasCrackFront
             A sequence of Ints specifying the values indicating the inclusion/exclusion of the
-            **crackFrontDist**values. A zero value indicates that **crackFrontDist**is not specified
-            for the ith pair **elemId**and *nodeId*. This argument is used only by the input file
+            **crackFrontDist** values. A zero value indicates that **crackFrontDist** is not specified
+            for the ith pair **elemId** and *nodeId*. This argument is used only by the input file
             reader.
         crackPlaneDist
             A sequence of Floats specifying the values of the first signed distance function. This
@@ -190,8 +190,8 @@ class XFEMCrack(Crack):
             connectivity. This argument is used only by the input file reader.
         hasCrackFront
             A sequence of Ints specifying the values indicating the inclusion/exclusion of the
-            **crackFrontDist**values. A zero value indicates that **crackFrontDist**is not specified
-            for the ith pair **elemId**and *nodeId*. This argument is used only by the input file
+            **crackFrontDist** values. A zero value indicates that **crackFrontDist** is not specified
+            for the ith pair **elemId** and *nodeId*. This argument is used only by the input file
             reader.
         crackPlaneDist
             A sequence of Floats specifying the values of the first signed distance function. This

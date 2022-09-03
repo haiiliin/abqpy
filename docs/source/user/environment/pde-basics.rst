@@ -19,7 +19,7 @@ Use one of the following methods to start the Abaqus PDE. The first two methods 
 
       abaqus cae -pde
 
-  where **abaqus**is the command used to start Abaqus.
+  where **abaqus** is the command used to start Abaqus.
 
   Note:
 
@@ -31,7 +31,7 @@ Use one of the following methods to start the Abaqus PDE. The first two methods 
       
       abaqus pde [filenames] [-script filename] [-pde Abaqus/CAE command line arguments]
 
-  where **abaqus**is the command used to start Abaqus, and **filenames**are the names, including the directory paths, of scripts to be opened at startup.
+  where **abaqus** is the command used to start Abaqus, and **filenames** are the names, including the directory paths, of scripts to be opened at startup.
 
   The `-script` option allows you to enter the name, including the directory path, of a main file to be opened at startup. The Abaqus PDE will create a new blank script if the named file does not exist in the specified directory. If the directory does not exist, the Abaqus PDE generates an error message.
 

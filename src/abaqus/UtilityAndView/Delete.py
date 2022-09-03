@@ -47,8 +47,8 @@ def deleteObjectCallback(
     callback
         A Python function to be called when an object matching the specified path is about to be
         deleted. The interface definition of the callback function is `def
-        functionName(objectPath, userData)` where **objectPath**is the path to the object about to
-        be deleted. **userData**is the object passed as the **userData** argument to the addCallback
+        functionName(objectPath, userData)` where **objectPath** is the path to the object about to
+        be deleted. **userData** is the object passed as the **userData** argument to the addCallback
         method.
     path
         A String specifying the path to an object or the SymbolicConstant ANY. You can include

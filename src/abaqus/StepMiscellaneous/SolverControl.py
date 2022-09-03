@@ -36,7 +36,7 @@ class SolverControl:
             OFF. The default value is ON.
         resetDefaultValues
             A Boolean specifying whether to use all default solver control values. Setting this
-            argument to ON automatically sets **allowPropagation**to OFF. The default value is OFF.
+            argument to ON automatically sets **allowPropagation** to OFF. The default value is OFF.
         relativeTolerance
             The SymbolicConstant DEFAULT or a Float specifying the relative tolerance for
             convergence of the domain decomposition iterative solver. The default value is DEFAULT.
