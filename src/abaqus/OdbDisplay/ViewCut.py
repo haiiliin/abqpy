@@ -115,8 +115,12 @@ class ViewCut:
     referenceFrame: SymbolicConstant = FIRST_FRAME
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     #: A Float returning the cross-sectional area of the cut when **showFreeBodyCut**is set to
+=======
+    #: A Float returning the cross-sectional area of the cut when **showFreeBodyCut** is set to
+>>>>>>> 9f5c114 (Fix wrong formats)
     #: ON.
     #:
     #: ..versionadded:: 2018
