@@ -2952,19 +2952,23 @@ class StepModel(ModelBase):
 <<<<<<< HEAD
 =======
         improvedDtMethod
-            A Boolean specifying whether to use the "improved" (*improvedDtMethod* = ON) or
-            "conservative" (*improvedDtMethod* = OFF) method to estimate the element stable time
+            A Boolean specifying whether to use the "improved" (**improvedDtMethod** = ON) or
+            "conservative" (**improvedDtMethod** = OFF) method to estimate the element stable time
             increment for three-dimensional continuum elements and elements with plane stress
             formulations (shell, membrane, and two-dimensional plane stress elements). The default
             value is ON.
 
             .. versionadded:: 2018
 <<<<<<< HEAD
+<<<<<<< HEAD
                 The *improvedDtMethod* argument was added.
 >>>>>>> abf1154 (Fix wrong formats)
 =======
                 The **improvedDtMethod**argument was added.
 >>>>>>> 293ecd5 (Use double * instead of single *)
+=======
+                The **improvedDtMethod** argument was added.
+>>>>>>> 6137625 (Use autolink-concat for code-blocks and fix format errors)
 
         Returns
         -------

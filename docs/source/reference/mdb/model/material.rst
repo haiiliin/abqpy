@@ -214,8 +214,6 @@ evaluateMaterial
 .. automodule:: abaqus.Material.evaluateMaterial
     :members:
 
-    .. autoclasstoc::
-
 Gap
 ~~~
 
@@ -1153,3 +1151,29 @@ VolumetricTestData
     :members:
 
     .. autoclasstoc::
+<<<<<<< HEAD
+=======
+
+MultiScale
+~~~~~~~~~~
+
+.. autoclass:: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization
+    :members:
+
+    .. autoclasstoc::
+
+.. autoclass:: abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion
+    :members:
+
+    .. autoclasstoc::
+
+.. autoclass:: abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix
+    :members:
+
+    .. autoclasstoc::
+
+.. autoclass:: abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid
+    :members:
+
+    .. autoclasstoc::
+>>>>>>> 6137625 (Use autolink-concat for code-blocks and fix format errors)

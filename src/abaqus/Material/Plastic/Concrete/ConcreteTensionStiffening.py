@@ -70,25 +70,25 @@ class ConcreteTensionStiffening:
 
                 mdb.models[name].materials[name].concreteDamagedPlasticity.ConcreteTensionStiffening.ConcreteTensionStiffeningials[name].concreteDamagedPlasticity.ConcreteTensionStiffening
             
-            Parameters
-            ----------
-            table
-                A sequence of sequences of Floats specifying the items described below. 
-            rate
-                A Boolean specifying whether the data depend on rate. The default value is OFF. 
-            type
-                A SymbolicConstant specifying the type of postcracking behavior data. Possible values 
-                are: 
-                
-                - STRAIN, specifying postfailure stress as a function of cracking strain. 
-                - DISPLACEMENT, specifying postfailure stress as a function of cracking displacement. 
-                - GFI, specifying failure stress as a function of the fracture energy. 
-                
-                The default value is STRAIN. 
-            temperatureDependency
-                A Boolean specifying whether the data depend on temperature. The default value is OFF. 
-            dependencies
-                An Int specifying the number of field variable dependencies. The default value is 0. 
+        Parameters
+        ----------
+        table
+            A sequence of sequences of Floats specifying the items described below. 
+        rate
+            A Boolean specifying whether the data depend on rate. The default value is OFF. 
+        type
+            A SymbolicConstant specifying the type of postcracking behavior data. Possible values 
+            are: 
+            
+            - STRAIN, specifying postfailure stress as a function of cracking strain. 
+            - DISPLACEMENT, specifying postfailure stress as a function of cracking displacement. 
+            - GFI, specifying failure stress as a function of the fracture energy. 
+            
+            The default value is STRAIN. 
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF. 
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0. 
 
         Returns
         -------
