@@ -20,6 +20,7 @@ Rather than using the integer `id`, you should use the `findAt` method to identi
 
 Alternatively, if you are working with an existing model that contains named regions, you can specify a region by referring to its name. For example, in the example described in Investigating the skew sensitivity of shell elements, you create a model using Abaqus/CAE. While you define the model, you must create a set that includes the vertex at the center of a planar part and you must name the set `CENTER`. You subsequently run a script that parameterizes the model and performs a series of analyses. The script uses the named region to retrieve the displacement and the bending moment at the center of the plate. The following statement refers to the set that you created and named using Abaqus/CAE:
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     centerNSet = odb.rootAssembly.nodeSets['CENTER']
@@ -34,6 +35,7 @@ The following script illustrates how you can create a region. Regions are create
 
 Use the following command to retrieve the script:
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     # abaqus fetch job=createRegions

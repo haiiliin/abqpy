@@ -84,7 +84,7 @@ class ContactPropertyAssignment:
               used with a ContactExp object, this parameter can also be a string that references an
               Eulerian material surface.
 
-            **surfPair**and **indices**arguments are mutually exclusive.
+            **surfPair** and **indices** arguments are mutually exclusive.
 
             .. versionchanged:: 2021
                 Update descriptions of the two entries in the tuple.

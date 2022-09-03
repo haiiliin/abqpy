@@ -33,6 +33,7 @@ The script does the following:
 - Sets the number of contour intervals and the contour limits.
 - Prints a color image of the viewport to a .png file.
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     """
@@ -106,6 +107,7 @@ The script does the following:
 - Produces a contour plot at the final frame of every step.
 - Prints the contour plot to a file.
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     """

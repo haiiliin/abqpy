@@ -48,12 +48,14 @@ The statement `from abaqus import *` described in Executing scripts imports the 
 
 For example, although the variable `p1` in the above statement cannot be accessed from the script namespace, you can still use the command line interface to access the part to which `p1` referred.
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     myPart = mdb.models['Model A'].parts['Part 3D A']
 
 The model and part repositories are available in both the journal and script namespaces. You can also create your own variable `p1` from the command line interface or from a script.
 
+.. autolink-concat:: off
 .. code-block:: python2
 
     p1 = myPart
