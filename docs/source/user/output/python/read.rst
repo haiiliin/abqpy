@@ -27,14 +27,14 @@ Making the Odb commands available
 
 To make the Odb commands available to your script, you first need to import the odbAccess module using the following statements:
 
-.. code-block:: python
+.. code-block:: python2
 
     from odbAccess import *
     from abaqusConstants import *
 
 To make the material and section Odb commands available to your script, you also need to import the relevant module using the following statements:
 
-.. code-block:: python
+.. code-block:: python2
 
     from odbMaterial import *
     from odbSection import *
@@ -44,7 +44,7 @@ Opening an output database
 
 You use the `openOdb` method to open an existing output database. For example, the following statement opens the output database used by the Abaqus/CAE Visualization module tutorial:
 
-.. code-block:: python
+.. code-block:: python2
 
     odb = openOdb(path='viewer_tutorial.odb')
 
@@ -59,7 +59,7 @@ The following list describes the objects in model data and the commands you use 
 
   An output database contains only one root assembly. You access the root assembly through the OdbAssembly object.
 
-  .. code-block:: python
+  .. code-block:: python2
 
       myAssembly = odb.rootAssembly
 
@@ -68,7 +68,7 @@ The following list describes the objects in model data and the commands you use 
   Part instances are stored in the instances repository under the OdbAssembly object. The following statements display the repository keys of the part instances in the tutorial output database:
 
   
-  .. code-block:: python
+  .. code-block:: python2
     
       for instanceName in odb.rootAssembly.instances.keys():
           print instanceName
@@ -76,7 +76,7 @@ The following list describes the objects in model data and the commands you use 
   The output database contains only one part instance, and the resulting output is
 
   
-  .. code-block:: python
+  .. code-block:: python2
     
       PART-1-1
 
@@ -91,19 +91,19 @@ The following list describes the objects in model data and the commands you use 
   For example, the following statement displays the node sets in the OdbAssembly object:
 
   
-  .. code-block:: python
+  .. code-block:: python2
     
       print 'Node sets = ',odb.rootAssembly.nodeSets.keys()
 
   The resulting output is
 
-  .. code-block:: python
+  .. code-block:: python2
     
     Node sets = ['ALL NODES']
 
   The following statements display the node sets and the element sets in the PART-1-1 part instance:
 
-  .. code-block:: python
+  .. code-block:: python2
     
       print 'Node sets = ',odb.rootAssembly.instances[
           'PART-1-1'].nodeSets.keys()
@@ -112,7 +112,7 @@ The following list describes the objects in model data and the commands you use 
 
   The resulting output is
 
-  .. code-block:: python
+  .. code-block:: python2
     
       Node sets =  ['ALLN', 'BOT', 'CENTER', 'N1', 'N19', 'N481',
                       'N499', 'PUNCH', 'TOP']
@@ -121,7 +121,7 @@ The following list describes the objects in model data and the commands you use 
   The following statement assigns a variable (topNodeSet) to the 'TOP' node set in the PART-1-1 part instance:
 
   
-  .. code-block:: python
+  .. code-block:: python2
     
       topNodeSet = odb.rootAssembly.instances[
           'PART-1-1'].nodeSets['TOP']
@@ -136,7 +136,7 @@ The following list describes the objects in model data and the commands you use 
 
   Access the materials repository using the command:
 
-  .. code-block:: python
+  .. code-block:: python2
     
       allMaterials = odb.materials
       for materialName in allMaterials.keys():
@@ -144,7 +144,7 @@ The following list describes the objects in model data and the commands you use 
 
   To print isotropic elastic material properties in a material object:
 
-  .. code-block:: python
+  .. code-block:: python2
 
       for material in allMaterials.values():      
           if hasattr(material,'elastic'):
@@ -166,7 +166,7 @@ The following list describes the objects in model data and the commands you use 
 
   Some Material definitions have suboptions. For example, to access the smoothing type used for biaxial test data specified for a hyperelastic material:
 
-  .. code-block:: python
+  .. code-block:: python2
 
       if hasattr(material,'hyperelastic'):
           hyperelastic = material.hyperelastic
@@ -186,7 +186,7 @@ The following list describes the objects in model data and the commands you use 
 
   The following statements display the repository keys of the sections in an output database:
 
-  .. code-block:: python
+  .. code-block:: python2
 
       allSections = odb.sections
       for sectionName in allSections.keys():
@@ -195,7 +195,7 @@ The following list describes the objects in model data and the commands you use 
   The Section object can be one of the various section types. The type command provides information on the section type. For example, to determine whether a section is of type homogeneous solid section and to print its thickness and associated material name:
 
 
-  .. code-block:: python
+  .. code-block:: python2
 
       for mySection in allSections.values(): 
           if type(mySection) == HomogeneousSolidSectionType:
@@ -204,7 +204,7 @@ The following list describes the objects in model data and the commands you use 
 
   Similarily, to access the beam profile repository:
 
-  .. code-block:: python
+  .. code-block:: python2
 
       allProfiles = odb.profiles.values()
       numProfiles = len(allProfiles)
@@ -213,7 +213,7 @@ The following list describes the objects in model data and the commands you use 
 
 The Profile object can be one of the various profile types. The type command provides information on the profile type. For example, to output the radius of all circular profiles in the odb:
 
-  .. code-block:: python
+  .. code-block:: python2
 
       for myProfile in allProfiles:  
           if type(myProfile) == CircularProfileType:
@@ -226,7 +226,7 @@ The Profile object can be one of the various profile types. The type command pro
 
   All elements in an Abaqus analysis need to be associated with section and material properties. Section assignments provide the relationship between elements in a part instance and their section properties. The section properties include the associated material name. To access the sectionAssignments repository from the PartInstance object:
 
-  .. code-block:: python
+  .. code-block:: python2
 
       instances = odb.rootAssembly.instances
       for instance in instances.values():
@@ -261,14 +261,14 @@ The following list describes the objects in results data and the commands you us
 
   Steps are stored in the steps repository under the Odb object. The key to the steps repository is the name of the step. The following statements print out the keys of each step in the repository:
 
-  .. code-block:: python
+  .. code-block:: python2
 
       for stepName in odb.steps.keys():
           print stepName
 
   The resulting output is
 
-  .. code-block:: python
+  .. code-block:: python2
 
       Step-1
       Step-2
@@ -277,14 +277,14 @@ The following list describes the objects in results data and the commands you us
   .. note::
       An index of 0 in a sequence refers to the first value in the sequence, and an index of −1 refers to the last value. You can use the following syntax to refer to an individual item in a repository:
 
-      .. code-block:: python
+      .. code-block:: python2
 
         step1 = odb.steps.values()[0]
         print step1.name
 
       The resulting output is
 
-      .. code-block:: python
+      .. code-block:: python2
 
           Step-1
 
@@ -292,7 +292,7 @@ The following list describes the objects in results data and the commands you us
 
   Each step contains a sequence of frames, where each increment of the analysis (or each mode in an eigenvalue analysis) that resulted in output to the output database is called a frame. The following statement assigns a variable to the last frame in the first step:
 
-  .. code-block:: python
+  .. code-block:: python2
 
       lastFrame = odb.steps['Step-1'].frames[-1]
 
@@ -301,7 +301,7 @@ Reading field output data
 
 Field output data are stored in the fieldOutputs repository under the OdbFrame object. The key to the repository is the name of the variable. The following statements list all the variables found in the last frame of the first step (the statements use the variable `lastFrame` that we defined previously):
 
-.. code-block:: python
+.. code-block:: python2
 
     for fieldName in lastFrame.fieldOutputs.keys():
         print fieldName
@@ -320,7 +320,7 @@ Different variables can be written to the output database at different frequenci
 
 You can use the following to view all the available field data in a frame:
 
-.. code-block:: python
+.. code-block:: python2
 
     # For each field output value in the last frame,
     # print the name, description, and type members.
@@ -337,7 +337,7 @@ You can use the following to view all the available field data in a frame:
 
 The resulting print output lists all the field output variables in a particular frame, along with their type and position.
 
-.. code-block:: python
+.. code-block:: python2
 
     COPEN    TARGET/IMPACTOR : Contact opening
     Type:  SCALAR
@@ -382,7 +382,7 @@ The resulting print output lists all the field output variables in a particular 
 In turn, a FieldOutput object has a member **values** that is a sequence of FieldValue objects that contain data. Each data value in the sequence has a particular location in the model. You can query the FieldValue object to determine the location of a data value; for example,
 
 
-.. code-block:: python
+.. code-block:: python2
 
     displacement=lastFrame.fieldOutputs['U']
     fieldValues=displacement.values
@@ -396,7 +396,7 @@ In turn, a FieldOutput object has a member **values** that is a sequence of Fiel
 
 The resulting output is
 
-.. code-block:: python
+.. code-block:: python2
 
     Node = 1 U[x] = 0.0000, U[y] = -76.4580
     Node = 3 U[x] = -0.0000, U[y] = -64.6314
@@ -407,13 +407,13 @@ The resulting output is
 
 The data in the FieldValue object depend on the field output variable, which is displacement in the above example. The following command lists all the members of a particular FieldValue object:
 
-.. code-block:: python
+.. code-block:: python2
 
     fieldValues[0].__members__
 
 The resulting output is
 
-.. code-block:: python
+.. code-block:: python2
 
     ['instance', 'elementLabel', 'nodeLabel', 'position',
     'face', 'integrationPoint', 'sectionPoint', 
@@ -429,7 +429,7 @@ Using regions to read a subset of field output data
 
 After you have created an OdbSet object using model data, you can use the getSubset method to read only the data corresponding to that region. Typically, you will be reading data from a region that refers to a node set or an element set. For example, the following statements create a variable called center that refers to the node set PUNCH at the center of the hemispherical punch. In a previous section you created the displacement variable that refers to the displacement of the entire model in the final frame of the first step. Now you use the getSubset command to get the displacement for only the center region.
 
-.. code-block:: python
+.. code-block:: python2
 
     center = odb.rootAssembly.instances['PART-1-1'].nodeSets['PUNCH']
     centerDisplacement = displacement.getSubset(region=center)
@@ -439,13 +439,13 @@ After you have created an OdbSet object using model data, you can use the getSub
 
 The resulting output is
 
-.. code-block:: python
+.. code-block:: python2
 
     1000 array([0.0000, -76.4555], 'd')
 
 The arguments to getSubset are a region, an element type, a position, or section point data. The following is a second example that uses an element set to define the region and generates formatted output. For more information on tuples, the `len()` function, and the `range() `function, see :doc:`user/python/introduction/sequences` and :doc:`user/python/introduction/sequence operations`.
 
-.. code-block:: python
+.. code-block:: python2
 
     opCenter = \
         odb.rootAssembly.instances['PART-1-1'].elementSets['CENT']
@@ -480,7 +480,7 @@ The arguments to getSubset are a region, an element type, a position, or section
 The resulting output is
 
 
-.. code-block:: python
+.. code-block:: python2
 
     Element label =  1 Integration Point =  1
     S : 0.01230    -0.05658   0.00892    -0.00015  
@@ -559,7 +559,7 @@ The history output data can be retrieved from the HistoryRegion objects in the o
 
 The following statements read the tutorial output database and write the U2 history data from the second step to an ASCII file that can be plotted by Abaqus/CAE:
 
-.. code-block:: python
+.. code-block:: python2
 
     from odbAccess import *
 
@@ -584,7 +584,7 @@ The following script illustrates how you can open the output database used by th
     abaqus fetch job=odbElementConnectivity 
     abaqus fetch job=viewer_tutorial
     
-.. code-block:: python
+.. code-block:: python2
 
     # odbElementConnectivity.py
     # Script to extract node and element information.
@@ -680,7 +680,7 @@ The following script combines many of the commands you have already seen and ill
     abaqus fetch job=odbRead
     abaqus fetch job=viewer_tutorial
     
-.. code-block:: python
+.. code-block:: python2
 
     # odbRead.py
     # A script to read the Abaqus/CAE Visualization module tutorial
@@ -727,7 +727,7 @@ The following script combines many of the commands you have already seen and ill
 
 The resulting output is
 
-.. code-block:: python
+.. code-block:: python2
     
     Position =  NODAL Type =  VECTOR
     Node label =  1000
