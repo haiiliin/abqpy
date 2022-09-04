@@ -336,7 +336,7 @@ Python provides exception handling through the try and except commands. For exam
 If the file does not exist, the statement fails, and Python displays the following error message:
 
 .. autolink-skip:: section
-.. code-block:: python2
+.. code-block::
 
     >>> outputFile = open('foam.txt')
     Traceback (innermost last):
@@ -345,7 +345,7 @@ If the file does not exist, the statement fails, and Python displays the followi
 
 If you use exception handling, you can catch the error, display a helpful message, and take the appropriate action. For example, a revised version of the code attempts to open the same file within a try statement. If an IOError error is encountered, the except statement catches the IOError exception and assigns the exception's value to the variable error.
 
-.. code-block:: python2
+.. code-block::
 
     >>> try:
     ...     outputFile = open('foam.txt')   
