@@ -45,7 +45,7 @@ class EquallySpacedAmplitude(Amplitude):
     begin: float = 0
 
     #: The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
-    #: Possible float values are 0 ≤≤ **smoothing** ≤≤ 0.5. If **smooth** = SOLVER_DEFAULT, the
+    #: Possible float values are 0 ≤ **smoothing** ≤ 0.5. If **smooth** = SOLVER_DEFAULT, the
     #: default degree of smoothing will be determined by the solver. The default value is
     #: SOLVER_DEFAULT.
     smooth: typing.Union[SymbolicConstant, float] = SOLVER_DEFAULT
@@ -88,7 +88,7 @@ class EquallySpacedAmplitude(Amplitude):
             are non-negative numbers. The default value is 0.0.
         smooth
             The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
-            Possible float values are 0 ≤≤ **smoothing** ≤≤ 0.5. If **smooth** = SOLVER_DEFAULT, the
+            Possible float values are 0 ≤ **smoothing** ≤ 0.5. If **smooth** = SOLVER_DEFAULT, the
             default degree of smoothing will be determined by the solver. The default value is
             SOLVER_DEFAULT.
         timeSpan
@@ -123,7 +123,7 @@ class EquallySpacedAmplitude(Amplitude):
             are non-negative numbers. The default value is 0.0.
         smooth
             The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
-            Possible float values are 0 ≤≤ **smoothing** ≤≤ 0.5. If **smooth** = SOLVER_DEFAULT, the
+            Possible float values are 0 ≤ **smoothing** ≤ 0.5. If **smooth** = SOLVER_DEFAULT, the
             default degree of smoothing will be determined by the solver. The default value is
             SOLVER_DEFAULT.
         timeSpan

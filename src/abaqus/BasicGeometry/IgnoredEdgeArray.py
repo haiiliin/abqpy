@@ -40,7 +40,7 @@ class IgnoredEdgeArray(typing.List[IgnoredEdge]):
         Parameters
         ----------
         coordinates
-            A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to
+            A sequence of Floats specifying the **X**-, **Y**-, and **Z**- coordinates of the object to
             find.findAt returns either an IgnoredEdge object or a sequence of IgnoredEdge objects
             based on the type of input.If **coordinates** is a sequence of Floats, findAt returns the
             IgnoredEdge object at that point.If you omit the **coordinates** keyword argument, findAt
@@ -48,9 +48,10 @@ class IgnoredEdgeArray(typing.List[IgnoredEdge]):
             format:
             
             .. code-block:: python
-            ignoredEdges = e.findAt(((20.19686, -169.513997, 27.798593), ),
-                                    ((19.657627, -167.295749, 27.056402), ),
-                                    ((18.274129, -157.144741, 25.15218), ))
+            
+                ignoredEdges = e.findAt(((20.19686, -169.513997, 27.798593), ),
+                                        ((19.657627, -167.295749, 27.056402), ),
+                                        ((18.274129, -157.144741, 25.15218), ))
         printWarning
             A Boolean specifying whether a message is to be printed to the CLI if no entity is found
             at the specified location. The default value is True.
@@ -106,6 +107,7 @@ class IgnoredEdgeArray(typing.List[IgnoredEdge]):
             A sequence of a sequence of floats, where each sequence of floats describes the **X**-,
             **Y**-, and **Z**-coordinates of a point
             
+            .. autolink-skip:: section
             .. code-block:: python
             
                 >>> r=e.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, -15.0, 15), ))
@@ -125,7 +127,7 @@ class IgnoredEdgeArray(typing.List[IgnoredEdge]):
             index 0. If a closest IgnoredEdge could be found then the value is a sequence consisting
             of two objects. The first object in the sequence is an IgnoredEdge that is close to the
             input point referred to by the key. The second object in the sequence, is a sequence of
-            floats which specify the **X**-, **Y**-, and **Z**-location of the closest point on the
+            floats which specify the **X**-, **Y**-, and **Z**- location of the closest point on the
             IgnoredEdge to the given point. See program listing above.
 
         Raises
