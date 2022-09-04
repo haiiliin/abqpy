@@ -15,7 +15,6 @@ Create steps
 ------------
 
 .. autoclass:: abaqus.Step.StepModel.StepModel
-    :noindex:
     :members:
 
 Object features
@@ -44,6 +43,7 @@ AdaptivityStep
 .. autoclass:: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep
     :members:
     :inherited-members:
+    :noindex:
 
     .. autoclasstoc::
 
@@ -53,6 +53,7 @@ OutputStep
 .. autoclass:: abaqus.StepOutput.OutputStep.OutputStep
     :members:
     :inherited-members:
+    :noindex:
 
     .. autoclasstoc::
 
