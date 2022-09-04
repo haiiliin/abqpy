@@ -8,7 +8,7 @@ from .._decorators import abaqus_class_doc, abaqus_method_doc
 class Field(PredefinedField):
     """The Field object stores the data for field predefined fields.
     The Field object is derived from the PredefinedField object.
-        **distributionType=FROM_FILE** or FROM_FILE_AND_USER_DEFINED.
+    **distributionType=FROM_FILE** or FROM_FILE_AND_USER_DEFINED.
 
     .. note::
         This object can be accessed by:

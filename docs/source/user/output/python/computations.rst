@@ -25,7 +25,7 @@ The following rules apply:
 - Operations on tensors are performed in the local coordinate system, if it is available. Otherwise the global system is used. Abaqus assumes that the local coordinate systems are consistent for operations involving more than one tensor.
 - Operations between FieldValue objects associated with different locations in the model are allowed only if the data types are the same. If the locations in the model differ, the FieldValue computed will not be associated with a location. If the local coordinate systems of the FieldValue objects are not the same, the local coordinate systems of both fieldValues will be disregarded and the fieldValue computed will have no local coordinate system.
 
-The FieldOutput operations are significantly more efficient than the FieldValue operators. You can save the computed FieldOutput objects with the following procedure (see the example, :doc:`examples:computations with FieldOutput objects`):
+The FieldOutput operations are significantly more efficient than the FieldValue operators. You can save the computed FieldOutput objects with the following procedure (see the example, :ref:`examples:computations with FieldOutput objects`):
 
 - Create a new FieldOutput object in the output database.
 - Use the addData method to add the new computed field objects to the new FieldOutput object.
@@ -170,7 +170,7 @@ Transformation of results
 
 Transformations of vector and tensor fields are supported for rectangular, cylindrical, and spherical coordinate systems. The coordinate systems can be fixed or model based. Model-based coordinate systems refer to nodes for position and orientation. Abaqus uses the coordinates of the deformed state to determine a systems origin and orientation for model-based coordinate systems. Transformations that use a model-based coordinate system can account for large displacements of both the coordinate system and the structure.
 
-The steps required to transform results are (see also the example :doc:`examples:transformation of field results`):
+The steps required to transform results are (see also the example :ref:`examples:transformation of field results`):
 
 - Create the coordinate system.
 - Retrieve the field from the database.

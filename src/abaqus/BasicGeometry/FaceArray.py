@@ -259,6 +259,7 @@ class FaceArray(typing.List[Face]):
             A sequence of a sequence of floats, where each sequence of floats describes the **X**-,
             **Y**-, and **Z**-coordinates of a point.
             
+            .. autolink-skip:: section
             .. code-block:: python
             
                 >>> r=f.getClosest(coordinates=((20.0, 20.0, 10.0), (-1.0, -15.0, 15), ))
@@ -278,7 +279,7 @@ class FaceArray(typing.List[Face]):
             index 0. If a closest face could be found then the value is a sequence consisting of two
             objects. The first object in the sequence is a Face that is close to the input point
             referred to by the key. The second object in the sequence is a sequence of floats that
-            specifies the **X**-, **Y**-, and **Z**-location of the closest point on the Face to the given
+            specifies the **X**-, **Y**-, and **Z**- location of the closest point on the Face to the given
             point. See program listing above.
 
         Raises
