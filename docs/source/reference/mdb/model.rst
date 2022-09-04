@@ -34,8 +34,10 @@ Model commands are used to create Abaqus/CAE models. A finished model contains a
 Create models
 --------------
 
-.. automethod:: abaqus.Mdb.Mdb.Mdb.Model
+.. autoclass:: abaqus.Mdb.Mdb.Mdb
     :noindex:
+
+    .. autoclasstoc::
 
 
 Object features
