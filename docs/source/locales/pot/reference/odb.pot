@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 10:43+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb:2
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb:2
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb:2
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb:2
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb:2
 #: ../../../../src/abaqus/Odb/OdbBase.py:docstring of abaqus.Odb.OdbBase.OdbBase:2
@@ -42,6 +43,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb:5
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb:5
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb:5
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb:5
 #: ../../../../src/abaqus/Odb/AnalyticSurface.py:docstring of abaqus.Odb.AnalyticSurface.AnalyticSurface:6
 #: ../../../../src/abaqus/Odb/AnalyticSurfaceSegment.py:docstring of abaqus.Odb.AnalyticSurfaceSegment.AnalyticSurfaceSegment:5
@@ -78,17 +80,13 @@ msgstr ""
 msgid "This object can be accessed by:"
 msgstr ""
 
-#: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb:13
-#: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb:13
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb:13
-#: ../../../../src/abaqus/Odb/OdbBase.py:docstring of abaqus.Odb.OdbBase.OdbBase:13
-#: ../../../../src/abaqus/Odb/ScratchOdb.py:docstring of abaqus.Odb.ScratchOdb.ScratchOdb:17
 msgid "Check `Odb on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb:0
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb:0
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb:0
 #: ../../../../src/abaqus/Odb/AnalyticSurface.py:docstring of abaqus.Odb.AnalyticSurface.AnalyticSurface:0
 #: ../../../../src/abaqus/Odb/BeamOrientation.py:docstring of abaqus.Odb.BeamOrientation.BeamOrientation:0
@@ -269,6 +267,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb:0
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb:0
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb:0
 #: ../../../../src/abaqus/Odb/AnalyticSurfaceSegment.py:docstring of abaqus.Odb.AnalyticSurfaceSegment.AnalyticSurfaceSegment:0
 #: ../../../../src/abaqus/Odb/FieldOutput.py:docstring of abaqus.Odb.FieldOutput.FieldOutput:0
@@ -434,6 +433,7 @@ msgstr ""
 msgid ":py:obj:`ButterworthFilter <abaqus.Odb.Odb.Odb.ButterworthFilter>`\\ \\(name\\, cutoffFrequency\\[\\, ...\\]\\)"
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:2
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:2
 #: ../../None:6:<autosummary>:1
 msgid "This method creates a ButterworthFilter object."
@@ -443,6 +443,7 @@ msgstr ""
 msgid ":py:obj:`Chebyshev1Filter <abaqus.Odb.Odb.Odb.Chebyshev1Filter>`\\ \\(name\\, cutoffFrequency\\[\\, ...\\]\\)"
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:2
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:2
 #: ../../None:6:<autosummary>:1
 msgid "This method creates a Chebyshev1Filter object."
@@ -452,6 +453,7 @@ msgstr ""
 msgid ":py:obj:`Chebyshev2Filter <abaqus.Odb.Odb.Odb.Chebyshev2Filter>`\\ \\(name\\, cutoffFrequency\\[\\, ...\\]\\)"
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:2
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:2
 #: ../../None:6:<autosummary>:1
 msgid "This method creates a Chebyshev2Filter object."
@@ -461,6 +463,7 @@ msgstr ""
 msgid ":py:obj:`OperatorFilter <abaqus.Odb.Odb.Odb.OperatorFilter>`\\ \\(name\\, cutoffFrequency\\[\\, ...\\]\\)"
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:2
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:2
 #: ../../None:6:<autosummary>:1
 msgid "This method creates an OperatorFilter object."
@@ -651,6 +654,10 @@ msgstr ""
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:5
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:5
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:5
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:5
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:5
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:5
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:5
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb.Material:5
 #: ../../../../src/abaqus/Odb/HistoryRegion.py:docstring of abaqus.Odb.HistoryRegion.HistoryRegion.HistoryOutput:5
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ActuatorAmplitude:5
@@ -740,6 +747,10 @@ msgstr ""
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:0
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:0
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:0
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:0
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:0
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb.Material:0
 #: ../../../../src/abaqus/Odb/FieldOutput.py:docstring of abaqus.Odb.FieldOutput.FieldOutput.getConnectorFieldXformedToNodeA:0
 #: ../../../../src/abaqus/Odb/FieldOutput.py:docstring of abaqus.Odb.FieldOutput.FieldOutput.setComponentLabels:0
@@ -794,6 +805,10 @@ msgstr ""
 #: ../../../../src/abaqus/Odb/OdbAssemblyBase.py:docstring of abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:0
 #: ../../../../src/abaqus/Odb/OdbAssemblyBase.py:docstring of abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addNodes:0
 #: ../../../../src/abaqus/Odb/OdbBase.py:docstring of abaqus.Odb.OdbBase.OdbBase.getFrame:0
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:0
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.maxEnvelop:0
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.minEnvelop:0
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.upgradeOdb:0
 #: ../../../../src/abaqus/Odb/OdbDatumCsys.py:docstring of abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsys:0
 #: ../../../../src/abaqus/Odb/OdbDatumCsys.py:docstring of abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:0
 #: ../../../../src/abaqus/Odb/OdbDatumCsys.py:docstring of abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:0
@@ -887,6 +902,10 @@ msgstr ""
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:18
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:18
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:18
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:19
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:19
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:19
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:19
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb.Material:17
 #: ../../../../src/abaqus/Odb/HistoryRegion.py:docstring of abaqus.Odb.HistoryRegion.HistoryRegion.HistoryOutput:14
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ActuatorAmplitude:18
@@ -1089,6 +1108,10 @@ msgstr ""
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:0
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:0
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:0
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:0
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:0
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb.Material:0
 #: ../../../../src/abaqus/Odb/FieldOutput.py:docstring of abaqus.Odb.FieldOutput.FieldOutput.getConnectorFieldXformedToNodeA:0
 #: ../../../../src/abaqus/Odb/HistoryRegion.py:docstring of abaqus.Odb.HistoryRegion.HistoryRegion.HistoryOutput:0
@@ -1133,6 +1156,9 @@ msgstr ""
 #: ../../../../src/abaqus/Odb/OdbAssembly.py:docstring of abaqus.Odb.OdbAssembly.OdbAssembly.RigidBody:0
 #: ../../../../src/abaqus/Odb/OdbBase.py:docstring of abaqus.Odb.OdbBase.OdbBase.getFrame:0
 #: ../../../../src/abaqus/Odb/OdbBase.py:docstring of abaqus.Odb.OdbBase.OdbBase.update:0
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:0
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.maxEnvelop:0
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.minEnvelop:0
 #: ../../../../src/abaqus/Odb/OdbDatumCsys.py:docstring of abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsys:0
 #: ../../../../src/abaqus/Odb/OdbDatumCsys.py:docstring of abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:0
 #: ../../../../src/abaqus/Odb/OdbDatumCsys.py:docstring of abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:0
@@ -1200,6 +1226,10 @@ msgstr ""
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:0
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:0
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:0
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:0
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:0
 #: ../../../../src/abaqus/Odb/FieldOutput.py:docstring of abaqus.Odb.FieldOutput.FieldOutput.getConnectorFieldXformedToNodeA:0
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ActuatorAmplitude:0
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.DecayAmplitude:0
@@ -1240,6 +1270,9 @@ msgstr ""
 #: ../../../../src/abaqus/Odb/OdbAssemblyBase.py:docstring of abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addNodes:0
 #: ../../../../src/abaqus/Odb/OdbBase.py:docstring of abaqus.Odb.OdbBase.OdbBase.getFrame:0
 #: ../../../../src/abaqus/Odb/OdbBase.py:docstring of abaqus.Odb.OdbBase.OdbBase.save:0
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.maxEnvelop:0
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.minEnvelop:0
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.upgradeOdb:0
 #: ../../../../src/abaqus/Odb/OdbInstance.py:docstring of abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurf2DPlanar:0
 #: ../../../../src/abaqus/Odb/OdbInstance.py:docstring of abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfExtrude:0
 #: ../../../../src/abaqus/Odb/OdbInstance.py:docstring of abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfRevolve:0
@@ -1281,6 +1314,10 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude:47
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:77
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude:45
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:58
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:62
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:62
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:58
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ActuatorAmplitude:35
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.DecayAmplitude:47
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.EquallySpacedAmplitude:52
@@ -1319,6 +1356,10 @@ msgstr ""
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:47
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:59
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:53
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:69
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:73
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:73
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:69
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ActuatorAmplitude:46
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.DecayAmplitude:58
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.EquallySpacedAmplitude:63
@@ -1481,10 +1522,15 @@ msgstr ""
 msgid "A :py:class:`~abaqus.BeamSectionProfile.BoxProfile.BoxProfile` object."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:13
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:13
 msgid "Check `ButterworthFilter on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-butterworthfilterpyc.htm?contextscope=all>`_."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:18
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:18
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:18
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:18
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:18
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:18
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:18
@@ -1492,6 +1538,10 @@ msgstr ""
 msgid "A String specifying the repository key. This name ANTIALIASING is reserved for filters generated internally by the program."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:23
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:23
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:23
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:23
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:23
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:23
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:23
@@ -1499,6 +1549,10 @@ msgstr ""
 msgid "**cutoffFrequency**"
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:22
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:22
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:22
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:22
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:22
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:22
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:22
@@ -1506,6 +1560,10 @@ msgstr ""
 msgid "A Float specifying the attenuation point of the filter. Possible values are non-negative numbers. Order is not available for OperatorFilter."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:28
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:32
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:32
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:28
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:28
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:32
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:32
@@ -1513,6 +1571,10 @@ msgstr ""
 msgid "**order**"
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:26
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:30
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:30
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:26
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:26
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:30
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:30
@@ -1520,6 +1582,10 @@ msgstr ""
 msgid "An Int specifying the highest power of the filter transfer function. Possible values are non-negative numbers less than or equal to 20. Order is not available for OperatorFilter. The default value is 2."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:32
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:36
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:36
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:32
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:32
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:36
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:36
@@ -1527,6 +1593,10 @@ msgstr ""
 msgid "**operation**"
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:31
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:35
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:35
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:31
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:31
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:35
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:35
@@ -1534,6 +1604,10 @@ msgstr ""
 msgid "A SymbolicConstant specifying the filter operator. Possible values are NONE, MIN, MAX, and ABS. The default value is NONE."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:36
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:40
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:40
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:36
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:36
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:40
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:40
@@ -1541,6 +1615,10 @@ msgstr ""
 msgid "**halt**"
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:35
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:39
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:39
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:35
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:35
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:39
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:39
@@ -1548,6 +1626,10 @@ msgstr ""
 msgid "A Boolean specifying whether to stop the analysis if the specified limit is reached. The default value is OFF."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:41
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:45
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:45
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:41
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:41
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:45
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:45
@@ -1555,6 +1637,10 @@ msgstr ""
 msgid "**limit**"
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:39
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:43
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:43
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:39
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:39
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:43
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:43
@@ -1562,6 +1648,10 @@ msgstr ""
 msgid "None or a Float specifying the threshold limit, an upper or lower bound for output values depending on the operation, or a bound for stopping the analysis when Halt is used. The default value is None."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:45
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:49
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:49
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:45
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:45
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:49
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:49
@@ -1569,6 +1659,10 @@ msgstr ""
 msgid "**invariant**"
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:44
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:48
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:48
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:44
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:44
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:48
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:48
@@ -1576,47 +1670,59 @@ msgstr ""
 msgid "A SymbolicConstant specifying the invariant to which filtering is applied. Possible values are NONE, FIRST, and SECOND. The default value is NONE."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:53
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:53
 msgid ":obj:`ButterworthFilter`"
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:50
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:50
 msgid "A :py:class:`~abaqus.Filter.ButterworthFilter.ButterworthFilter` object."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:13
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:13
 msgid "Check `Chebyshev1Filter on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-chebyshev1filterpyc.htm?contextscope=all>`_."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:27
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:27
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:27
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:27
 msgid "**rippleFactor**"
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:26
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:26
 msgid "A Float specifying the amount of allowable ripple in the filter. Possible values are non-negative numbers. The default value is 0.225."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:57
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:57
 msgid ":obj:`Chebyshev1Filter`"
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:54
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:54
 msgid "A :py:class:`~abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter` object."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:13
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:13
 msgid "Check `Chebyshev2Filter on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-chebyshev2filterpyc.htm?contextscope=all>`_."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:26
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:26
 msgid "A Float specifying the amount of allowable ripple in the filter. Possible values are non-negative numbers less than 1. The default value is 0.025."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:57
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:57
 msgid ":obj:`Chebyshev2Filter`"
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:54
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:54
 msgid "A :py:class:`~abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter` object."
 msgstr ""
@@ -2103,14 +2209,17 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude` object."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:13
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:13
 msgid "Check `OperatorFilter on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-operatorfilterpyc.htm?contextscope=all>`_."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:53
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:53
 msgid ":obj:`OperatorFilter`"
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:50
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:50
 msgid "An :py:class:`~abaqus.Filter.OperatorFilter.OperatorFilter` object."
 msgstr ""
@@ -2120,7 +2229,6 @@ msgid "This method creates an OdbPart object. Nodes and elements are added to th
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Part:13
-#: ../../../../src/abaqus/Odb/OdbPartBase.py:docstring of abaqus.Odb.OdbPartBase.OdbPartBase:14
 msgid "Check `Part on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -2320,7 +2428,7 @@ msgid "A :py:class:`~abaqus.BeamSectionProfile.RectangularProfile.RectangularPro
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.SectionCategory:12
-#: ../../../../src/abaqus/Odb/SectionCategory.py:docstring of abaqus.Odb.SectionCategory.SectionCategory:35
+#: ../../../../src/abaqus/Odb/SectionCategory.py:docstring of abaqus.Odb.SectionCategory.SectionCategory:34
 msgid "Check `SectionCategory on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sectioncategorypyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -2499,7 +2607,6 @@ msgid "A :py:class:`~abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude` objec
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:12
-#: ../../../../src/abaqus/Odb/OdbStepBase.py:docstring of abaqus.Odb.OdbStepBase.OdbStepBase:13
 msgid "Check `Step on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -2707,6 +2814,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.OdbBase.OdbBase.getFrame:17
 #: ../../../../src/abaqus/Odb/OdbBase.py:docstring of abaqus.Odb.OdbBase.OdbBase.getFrame:17
+#: ../../../../src/abaqus/Odb/OdbMeshElement.py:docstring of abaqus.Odb.OdbMeshElement.OdbMeshElement.getNormal:24
 msgid "A SymbolicConstant specifying which frame to return if there is no frame at the exact frame value. Possible values are CLOSEST, BEFORE, AFTER, and EXACT. The default value is CLOSEST.When **match** = CLOSEST, Abaqus returns the closest frame. If the frame value requested is exactly halfway between two frames, Abaqus returns the frame after the value.When **match** = EXACT, Abaqus raises an exception if the exact frame value does not exist."
 msgstr ""
 
@@ -2734,6 +2842,8 @@ msgstr ""
 
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.OdbBase.OdbBase.save:22
 #: ../../../../src/abaqus/Odb/OdbBase.py:docstring of abaqus.Odb.OdbBase.OdbBase.save:22
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.maxEnvelop:26
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.minEnvelop:26
 msgid ":obj:`OdbError`"
 msgstr ""
 
@@ -2749,6 +2859,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.OdbBase.OdbBase.update:24
 #: ../../../../src/abaqus/Odb/OdbBase.py:docstring of abaqus.Odb.OdbBase.OdbBase.update:24
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:46
 msgid ":obj:`Boolean`"
 msgstr ""
 
@@ -2759,6 +2870,10 @@ msgstr ""
 
 #: ../../reference/odb.rst:20
 msgid "OdbBase"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbBase.py:docstring of abaqus.Odb.OdbBase.OdbBase:13
+msgid "Check `OdbBase on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -2839,6 +2954,10 @@ msgstr ""
 
 #: ../../reference/odb.rst:28
 msgid "AmplitudeOdb"
+msgstr ""
+
+#: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb:13
+msgid "Check `AmplitudeOdb on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -2957,12 +3076,112 @@ msgstr ""
 msgid ":py:obj:`update <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.update>`\\ \\(\\)"
 msgstr ""
 
-#: ../../reference/odb.rst:36
+#: ../../reference/odb.rst:37
 msgid "FilterOdb"
 msgstr ""
 
-#: ../../reference/odb.rst:44
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb:13
+msgid "Check `FilterOdb on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`isReadOnly <abaqus.Filter.FilterOdb.FilterOdb.isReadOnly>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`amplitudes <abaqus.Filter.FilterOdb.FilterOdb.amplitudes>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`filters <abaqus.Filter.FilterOdb.FilterOdb.filters>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`rootAssembly <abaqus.Filter.FilterOdb.FilterOdb.rootAssembly>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`jobData <abaqus.Filter.FilterOdb.FilterOdb.jobData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`parts <abaqus.Filter.FilterOdb.FilterOdb.parts>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`materials <abaqus.Filter.FilterOdb.FilterOdb.materials>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`steps <abaqus.Filter.FilterOdb.FilterOdb.steps>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sections <abaqus.Filter.FilterOdb.FilterOdb.sections>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sectionCategories <abaqus.Filter.FilterOdb.FilterOdb.sectionCategories>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sectorDefinition <abaqus.Filter.FilterOdb.FilterOdb.sectorDefinition>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`userData <abaqus.Filter.FilterOdb.FilterOdb.userData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Filter.FilterOdb.FilterOdb.customData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`profiles <abaqus.Filter.FilterOdb.FilterOdb.profiles>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`ButterworthFilter <abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter>`\\ \\(name\\, cutoffFrequency\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`Chebyshev1Filter <abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter>`\\ \\(name\\, cutoffFrequency\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`Chebyshev2Filter <abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter>`\\ \\(name\\, cutoffFrequency\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`OperatorFilter <abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter>`\\ \\(name\\, cutoffFrequency\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.Filter.FilterOdb.FilterOdb.__init__>`\\ \\(name\\[\\, analysisTitle\\, description\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`close <abaqus.Filter.FilterOdb.FilterOdb.close>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`getFrame <abaqus.Filter.FilterOdb.FilterOdb.getFrame>`\\ \\(frameValue\\[\\, match\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`save <abaqus.Filter.FilterOdb.FilterOdb.save>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`update <abaqus.Filter.FilterOdb.FilterOdb.update>`\\ \\(\\)"
+msgstr ""
+
+#: ../../reference/odb.rst:46
 msgid "MaterialOdb"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb:13
+msgid "Check `MaterialOdb on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -3045,8 +3264,12 @@ msgstr ""
 msgid ":py:obj:`update <abaqus.Material.MaterialOdb.MaterialOdb.update>`\\ \\(\\)"
 msgstr ""
 
-#: ../../reference/odb.rst:52
+#: ../../reference/odb.rst:55
 msgid "BeamSectionProfileOdb"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb:13
+msgid "Check `BeamSectionProfileOdb on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -3169,7 +3392,7 @@ msgstr ""
 msgid ":py:obj:`update <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.update>`\\ \\(\\)"
 msgstr ""
 
-#: ../../reference/odb.rst:60
+#: ../../reference/odb.rst:64
 msgid "AnalyticSurface"
 msgstr ""
 
@@ -3232,7 +3455,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the type of AnalyticSurface object. Possible values are SEGMENTS, CYLINDER, and REVOLUTION."
 msgstr ""
 
-#: ../../reference/odb.rst:68
+#: ../../reference/odb.rst:72
 msgid "AnalyticSurfaceSegment"
 msgstr ""
 
@@ -3260,7 +3483,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the type of AnalyticSurfaceSegment. Possible values are START, LINE, CIRCLE, and PARABOLA."
 msgstr ""
 
-#: ../../reference/odb.rst:76
+#: ../../reference/odb.rst:80
 msgid "BeamOrientation"
 msgstr ""
 
@@ -3302,11 +3525,11 @@ msgstr ""
 msgid "A SymbolicConstant specifying the orientation assignment method. Possible values are N1_COSINES, CSYS, and VECT."
 msgstr ""
 
-#: ../../reference/odb.rst:84
+#: ../../reference/odb.rst:88
 msgid "BeamOrientationArray"
 msgstr ""
 
-#: ../../reference/odb.rst:92
+#: ../../reference/odb.rst:96
 msgid "FieldBulkData"
 msgstr ""
 
@@ -3460,17 +3683,23 @@ msgstr ""
 
 #: ../../docstring of abaqus.Odb.FieldBulkData.FieldBulkData.position:6
 #: ../../docstring of abaqus.Odb.FieldValue.FieldValue.position:6
+#: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.position:8
 msgid "INTEGRATION_POINT, specifying the values calculated at the integration points."
 msgstr ""
 
 #: ../../docstring of abaqus.Odb.FieldBulkData.FieldBulkData.position:7
 #: ../../docstring of abaqus.Odb.FieldValue.FieldValue.position:7
 #: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.position:6
-msgid "ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at"
+msgid "ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at the integration points."
 msgstr ""
 
-#: ../../docstring of abaqus.Odb.FieldBulkData.FieldBulkData.position:8
-msgid "the integration points. - ELEMENT_FACE. - CENTROID, specifying the value at the centroid obtained by extrapolating results calculated at the integration points."
+#: ../../docstring of abaqus.Odb.FieldBulkData.FieldBulkData.position:9
+msgid "ELEMENT_FACE."
+msgstr ""
+
+#: ../../docstring of abaqus.Odb.FieldBulkData.FieldBulkData.position:10
+#: ../../docstring of abaqus.Odb.FieldValue.FieldValue.position:11
+msgid "CENTROID, specifying the value at the centroid obtained by extrapolating results calculated at the integration points."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/FieldOutput.py:docstring of abaqus.Odb.FieldOutput.FieldOutput.setDataType:10
@@ -3480,7 +3709,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the output type. Possible values are SCALAR, VECTOR, TENSOR_3D_FULL, TENSOR_3D_PLANAR, TENSOR_3D_SURFACE, TENSOR_2D_PLANAR, and TENSOR_2D_SURFACE."
 msgstr ""
 
-#: ../../reference/odb.rst:100
+#: ../../reference/odb.rst:104
 msgid "FieldLocation"
 msgstr ""
 
@@ -3511,11 +3740,11 @@ msgstr ""
 msgid "A SymbolicConstant specifying the position of the output in the element. Possible values are:NODAL, specifying the values calculated at the nodes.INTEGRATION_POINT, specifying the values calculated at the integration points.ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at the integration points.ELEMENT_FACE.CENTROID, specifying the value at the centroid obtained by extrapolating results calculated at the integration points."
 msgstr ""
 
-#: ../../reference/odb.rst:108
+#: ../../reference/odb.rst:112
 msgid "FieldLocationArray"
 msgstr ""
 
-#: ../../reference/odb.rst:116
+#: ../../reference/odb.rst:120
 msgid "FieldOutput"
 msgstr ""
 
@@ -3523,7 +3752,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object contains field data for a specific output variable."
 msgstr ""
 
-#: ../../../../src/abaqus/Odb/FieldOutput.py:docstring of abaqus.Odb.FieldOutput.FieldOutput:14
+#: ../../../../src/abaqus/Odb/FieldOutput.py:docstring of abaqus.Odb.FieldOutput.FieldOutput:13
 msgid "Check `FieldOutput on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldoutputpyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -3776,7 +4005,7 @@ msgstr ""
 msgid "A sequence of SymbolicConstants specifying which invariants should be calculated for this field. An empty sequence indicates that no invariants are valid for this field. Possible values are:MAGNITUDEMISESTRESCAPRESSINV3MAX_PRINCIPALMID_PRINCIPALMIN_PRINCIPALMAX_INPLANE_PRINCIPALMIN_INPLANE_PRINCIPALOUTOFPLANE_PRINCIPALThe default value is an empty sequence."
 msgstr ""
 
-#: ../../reference/odb.rst:124
+#: ../../reference/odb.rst:128
 msgid "FieldValue"
 msgstr ""
 
@@ -4048,8 +4277,9 @@ msgstr ""
 msgid "A Float specifying the calculated principal out-of-plane stress. The value is valid only when the **validInvariants** member includes OUTOFPLANE_PRINCIPAL; otherwise, the value is indeterminate. Conjugate data will be ignored in invariant calculation."
 msgstr ""
 
-#: ../../docstring of abaqus.Odb.FieldValue.FieldValue.position:8
-msgid "the integration points. - ELEMENT_FACE, specifying the results obtained for surface variables such as cavity radiation that are defined for the surface facets of an element. - CENTROID, specifying the value at the centroid obtained by extrapolating results calculated at the integration points."
+#: ../../docstring of abaqus.Odb.FieldValue.FieldValue.position:9
+#: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.position:9
+msgid "ELEMENT_FACE, specifying the results obtained for surface variables such as cavity radiation that are defined for the surface facets of an element."
 msgstr ""
 
 #: ../../docstring of abaqus.Odb.FieldValue.FieldValue.precision:2
@@ -4072,11 +4302,11 @@ msgstr ""
 msgid "A Float specifying the calculated Tresca stress. The value is valid only when the **validInvariants** member includes TRESCA; otherwise, the value is indeterminate. Conjugate data will be ignored in invariant calculation."
 msgstr ""
 
-#: ../../reference/odb.rst:132
+#: ../../reference/odb.rst:136
 msgid "FieldValueArray"
 msgstr ""
 
-#: ../../reference/odb.rst:140
+#: ../../reference/odb.rst:144
 msgid "HistoryOutput"
 msgstr ""
 
@@ -4145,7 +4375,7 @@ msgstr ""
 msgid "A sequence of SymbolicConstants specifying which invariants should be calculated for this field. Possible values are MAGNITUDE, MISES, TRESCA, PRESS, INV3, MAX_PRINCIPAL, MID_PRINCIPAL, and MIN_PRINCIPAL. The default value is an empty sequence."
 msgstr ""
 
-#: ../../reference/odb.rst:148
+#: ../../reference/odb.rst:152
 msgid "HistoryPoint"
 msgstr ""
 
@@ -4277,7 +4507,7 @@ msgstr ""
 msgid "END3, specifying this value indicates that element end 3 has been specified."
 msgstr ""
 
-#: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.face:18
+#: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.face:19
 msgid "The default value is FACE_UNKNOWN."
 msgstr ""
 
@@ -4293,11 +4523,27 @@ msgstr ""
 msgid "A SymbolicConstant specifying the result position of the history point. Possible values are:"
 msgstr ""
 
-#: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.position:7
-msgid "the integration points. - INTEGRATION_POINT, specifying the values calculated at the integration points. - ELEMENT_FACE, specifying the results obtained for surface variables such as cavity radiation that are defined for the surface facets of an element. - ELEMENT_FACE_INTEGRATION_POINT, specifying the results obtained for surface variables such as cavity radiation that are defined for the surface facets of an element when the surface facets have integration points. - WHOLE_ELEMENT, specifying the results obtained for whole element variables. - WHOLE_REGION, specifying the results for an entire region of the model. - WHOLE_PART_INSTANCE, specifying the results for an entire part instance of the model. - WHOLE_MODEL, specifying the results for the entire model."
+#: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.position:11
+msgid "ELEMENT_FACE_INTEGRATION_POINT, specifying the results obtained for surface variables such as cavity radiation that are defined for the surface facets of an element when the surface facets have integration points."
 msgstr ""
 
-#: ../../reference/odb.rst:156
+#: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.position:14
+msgid "WHOLE_ELEMENT, specifying the results obtained for whole element variables."
+msgstr ""
+
+#: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.position:15
+msgid "WHOLE_REGION, specifying the results for an entire region of the model."
+msgstr ""
+
+#: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.position:16
+msgid "WHOLE_PART_INSTANCE, specifying the results for an entire part instance of the model."
+msgstr ""
+
+#: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.position:17
+msgid "WHOLE_MODEL, specifying the results for the entire model."
+msgstr ""
+
+#: ../../reference/odb.rst:160
 msgid "HistoryRegion"
 msgstr ""
 
@@ -4384,7 +4630,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the position of the history output. Possible values are NODAL, INTEGRATION_POINT, WHOLE_ELEMENT, WHOLE_REGION, and WHOLE_MODEL."
 msgstr ""
 
-#: ../../reference/odb.rst:164
+#: ../../reference/odb.rst:168
 msgid "JobData"
 msgstr ""
 
@@ -4477,7 +4723,7 @@ msgstr ""
 msgid "A String specifying an odb_Sequence of productAddOns. Possible values are AQUA, DESIGN, BIORID, CEL, SOLITER, and CAVPARALLEL."
 msgstr ""
 
-#: ../../reference/odb.rst:172
+#: ../../reference/odb.rst:176
 msgid "OdbAssembly"
 msgstr ""
 
@@ -5405,7 +5651,7 @@ msgstr ""
 msgid "If width of coordinate array does not match assembly dimension."
 msgstr ""
 
-#: ../../reference/odb.rst:181
+#: ../../reference/odb.rst:185
 msgid "OdbAssemblyBase"
 msgstr ""
 
@@ -5414,7 +5660,7 @@ msgid "The OdbAssembly object has no constructor; it is created automatically wh
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbAssemblyBase.py:docstring of abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase:15
-msgid "Check `Assembly on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
+msgid "Check `OdbAssemblyBase on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -5541,11 +5787,114 @@ msgstr ""
 msgid "If **referenceNode** is not a node set"
 msgstr ""
 
-#: ../../reference/odb.rst:189
+#: ../../reference/odb.rst:193
 msgid "OdbCommands"
 msgstr ""
 
-#: ../../reference/odb.rst:197
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:2
+msgid "This method determines if an output database file needs to be upgraded to the current release. You can access this method using either of the following techniques:"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:6
+msgid "From a script running outside Abaqus/CAE. For example"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:14
+msgid "From the Visualization module in Abaqus/CAE. For example"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:22
+msgid "Check `OdbCommands.isUpgradeRequiredForOdb() on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionodbcommandspyc.htm?contextscope=all#simaker-functionodbcommandsisupgraderequiredforodbpyc>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:28
+msgid "**upgradeRequiredOdbPath**"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:27
+msgid "An String specifying the path to an output database file to test. The test determines if the output database needs to be upgraded to the current release."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:33
+msgid "A Boolean indicating the result of the test. A value of True indicates that the output database needs to be upgraded to the current release."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.maxEnvelop:2
+msgid "Retrieve the maximum value of an output variable over a number of fields."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.maxEnvelop:5
+msgid "Check `OdbCommands.maxEnvelop() on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionodbcommandspyc.htm?contextscope=all#simaker-functionodbcommandsmaxenveloppyc>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.maxEnvelop:21
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.minEnvelop:21
+msgid ":obj:`typing.Tuple`\\[:obj:`FieldOutput`, :obj:`FieldOutput`]"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.maxEnvelop:15
+msgid "A sequence of two fieldOutput objects. The first fieldOutput object contains the maximum value. The second fieldOutput object contains the index of the field containing the maximum value. The index follows the order in which fields are positioned in the list of fieldOutput objects provided as the argument to the function."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.maxEnvelop:37
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.minEnvelop:37
+msgid ":obj:`TypeError`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.maxEnvelop:29
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.minEnvelop:29
+msgid "This function takes no keyword arguments."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.minEnvelop:2
+msgid "Retrieve the minimum value of an output variable over a number of fields."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.minEnvelop:5
+msgid "Check `OdbCommands.minEnvelop() on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionodbcommandspyc.htm?contextscope=all#simaker-functionodbcommandsminenveloppyc>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.minEnvelop:15
+msgid "A sequence of two fieldOutput objects. The first fieldOutput object contains the minimum value. The second fieldOutput object contains the index of the field containing the minimum value. The index follows the order in which fields are positioned in the list of fieldOutput objects provided as the argument to the function."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.upgradeOdb:2
+msgid "This method upgrades an existing Odb object to the current release and writes the upgraded version of the Odb object to a file. In addition, Abaqus/CAE writes information about the status of the upgrade to a log (*.log) file. You can access this method using either of the following techniques: - From a script running outside Abaqus/CAE. For example"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.upgradeOdb:13
+msgid "From the session object in Abaqus/CAE. For example"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.upgradeOdb:21
+msgid "Check `OdbCommands.upgradeOdb() on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionodbcommandspyc.htm?contextscope=all#simaker-functionodbcommandsupgradeodbpyc>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.upgradeOdb:26
+msgid "**existingOdbPath**"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.upgradeOdb:26
+msgid "An String specifying the path to the file containing the output database to be upgraded."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.upgradeOdb:34
+msgid "**upgradedOdbPath**"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.upgradeOdb:29
+msgid "An String specifying the path to the file that will contain the upgraded output database."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.upgradeOdb:47
+msgid "OdbError: :obj:`cannot` :obj:`convert` :obj:`database`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.upgradeOdb:39
+msgid "If the output database upgrade fails."
+msgstr ""
+
+#: ../../reference/odb.rst:199
 msgid "OdbDatumCsys"
 msgstr ""
 
@@ -5625,7 +5974,7 @@ msgstr ""
 msgid ":py:obj:`DatumCsys <abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsys>`\\ \\(name\\, datumCsys\\)"
 msgstr ""
 
-#: ../../reference/odb.rst:205
+#: ../../reference/odb.rst:207
 msgid "OdbFrame"
 msgstr ""
 
@@ -5684,7 +6033,7 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 #: ../../docstring of abaqus.Odb.OdbFrame.OdbFrame.fieldOutputs:2
-msgid "A repository of FieldOutput objects specifying the key to the **fieldOutputs**repository is a String representing an output variable."
+msgid "A repository of FieldOutput objects specifying the key to the **fieldOutputs** repository is a String representing an output variable."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -5748,11 +6097,11 @@ msgstr ""
 msgid "An Int specifying the eigenmode. This member is valid only if **domain** = MODAL."
 msgstr ""
 
-#: ../../reference/odb.rst:213
+#: ../../reference/odb.rst:215
 msgid "OdbFrameArray"
 msgstr ""
 
-#: ../../reference/odb.rst:221
+#: ../../reference/odb.rst:223
 msgid "OdbInstance"
 msgstr ""
 
@@ -6403,7 +6752,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the type of the Part object. Only a value of DEFORMABLE_BODY is currently supported."
 msgstr ""
 
-#: ../../reference/odb.rst:230
+#: ../../reference/odb.rst:232
 msgid "OdbInstanceBase"
 msgstr ""
 
@@ -6519,7 +6868,7 @@ msgstr ""
 msgid ":py:obj:`RigidBody <abaqus.Odb.OdbInstanceBase.OdbInstanceBase.RigidBody>`\\ \\(referenceNode\\[\\, position\\, ...\\]\\)"
 msgstr ""
 
-#: ../../reference/odb.rst:238
+#: ../../reference/odb.rst:240
 msgid "OdbLoadCase"
 msgstr ""
 
@@ -6546,7 +6895,7 @@ msgstr ""
 msgid "A String specifying the name of the OdbLoadCase object."
 msgstr ""
 
-#: ../../reference/odb.rst:246
+#: ../../reference/odb.rst:248
 msgid "OdbMeshElement"
 msgstr ""
 
@@ -6622,7 +6971,7 @@ msgid "**faceIndex**"
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbMeshElement.py:docstring of abaqus.Odb.OdbMeshElement.OdbMeshElement.getNormal:13
-msgid "The value of *faceIndex* is 0 for a shell element and can range from 0 to 5 for a solid element."
+msgid "The value of **faceIndex** is 0 for a shell element and can range from 0 to 5 for a solid element."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbMeshElement.py:docstring of abaqus.Odb.OdbMeshElement.OdbMeshElement.getNormal:17
@@ -6634,11 +6983,7 @@ msgid "Name of the step."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbMeshElement.py:docstring of abaqus.Odb.OdbMeshElement.OdbMeshElement.getNormal:20
-msgid "A Double specifying the value at which the frame is required. *frameValue* can be the total fime or frequency."
-msgstr ""
-
-#: ../../../../src/abaqus/Odb/OdbMeshElement.py:docstring of abaqus.Odb.OdbMeshElement.OdbMeshElement.getNormal:24
-msgid "A SymbolicConstant specifying which frame to return if there is no frame at the exact frame value. Possible values are CLOSEST, BEFORE, AFTER, and EXACT. The default value is CLOSEST.When *match*=CLOSEST, Abaqus returns the closest frame. If the frame value requested is exactly halfway between two frames, Abaqus returns the frame after the value.When *match*=EXACT, Abaqus raises an exception if the exact frame value does not exist."
+msgid "A Double specifying the value at which the frame is required. **frameValue** can be the total fime or frequency."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbMeshElement.py:docstring of abaqus.Odb.OdbMeshElement.OdbMeshElement.getNormal:34
@@ -6658,18 +7003,18 @@ msgid "If the step name is not found."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbMeshElement.py:docstring of abaqus.Odb.OdbMeshElement.OdbMeshElement.getNormal:59
-msgid "OdbError: *stepName* :obj:`should` :obj:`be` :obj:`specified` :obj:`with` *frameValue*"
+msgid "OdbError: **stepName** :obj:`should` :obj:`be` :obj:`specified` :obj:`with` *frameValue*"
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbMeshElement.py:docstring of abaqus.Odb.OdbMeshElement.OdbMeshElement.getNormal:51
-msgid "If *frameValue* is not provided and *stepName* is empty."
+msgid "If **frameValue** is not provided and **stepName** is empty."
 msgstr ""
 
-#: ../../reference/odb.rst:254
+#: ../../reference/odb.rst:256
 msgid "OdbMeshElementArray"
 msgstr ""
 
-#: ../../reference/odb.rst:262
+#: ../../reference/odb.rst:264
 msgid "OdbMeshNode"
 msgstr ""
 
@@ -6694,11 +7039,11 @@ msgstr ""
 msgid "A tuple of Floats specifying the nodal coordinates in the global Cartesian coordinate system."
 msgstr ""
 
-#: ../../reference/odb.rst:270
+#: ../../reference/odb.rst:272
 msgid "OdbMeshNodeArray"
 msgstr ""
 
-#: ../../reference/odb.rst:278
+#: ../../reference/odb.rst:280
 msgid "OdbPart"
 msgstr ""
 
@@ -6904,12 +7249,16 @@ msgstr ""
 msgid "An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object."
 msgstr ""
 
-#: ../../reference/odb.rst:287
+#: ../../reference/odb.rst:289
 msgid "OdbPartBase"
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbPartBase.py:docstring of abaqus.Odb.OdbPartBase.OdbPartBase:2
 msgid "The OdbPart object is similar to the kernel Part object and contains nodes and elements, but not geometry."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbPartBase.py:docstring of abaqus.Odb.OdbPartBase.OdbPartBase:14
+msgid "Check `OdbPartBase on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -7000,7 +7349,7 @@ msgstr ""
 msgid ":py:obj:`AnalyticRigidSurfRevolve <abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfRevolve>`\\ \\(name\\, profile\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../reference/odb.rst:295
+#: ../../reference/odb.rst:297
 msgid "OdbPretensionSection"
 msgstr ""
 
@@ -7048,11 +7397,11 @@ msgstr ""
 msgid "A tuple of Floats specifying the components of the normal to the pretension section."
 msgstr ""
 
-#: ../../reference/odb.rst:303
+#: ../../reference/odb.rst:305
 msgid "OdbPretensionSectionArray"
 msgstr ""
 
-#: ../../reference/odb.rst:311
+#: ../../reference/odb.rst:313
 msgid "OdbRigidBody"
 msgstr ""
 
@@ -7105,11 +7454,11 @@ msgstr ""
 msgid ":py:obj:`__init__ <abaqus.Odb.OdbRigidBody.OdbRigidBody.__init__>`\\ \\(referenceNode\\[\\, position\\, ...\\]\\)"
 msgstr ""
 
-#: ../../reference/odb.rst:319
+#: ../../reference/odb.rst:321
 msgid "OdbRigidBodyArray"
 msgstr ""
 
-#: ../../reference/odb.rst:327
+#: ../../reference/odb.rst:329
 msgid "OdbSequenceAnalyticSurfaceSegment"
 msgstr ""
 
@@ -7220,7 +7569,7 @@ msgstr ""
 msgid "A sequence of Floats specifying the coordinates of start point."
 msgstr ""
 
-#: ../../reference/odb.rst:335
+#: ../../reference/odb.rst:337
 msgid "OdbSession"
 msgstr ""
 
@@ -7904,7 +8253,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Odb.ScratchOdb.ScratchOdb` object."
 msgstr ""
 
-#: ../../reference/odb.rst:343
+#: ../../reference/odb.rst:345
 msgid "OdbSet"
 msgstr ""
 
@@ -8091,7 +8440,7 @@ msgstr ""
 msgid "An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object specifying the nodes of an OdbSet. If a set spans more than one part instance, this member is a sequence of sequences for each part instance."
 msgstr ""
 
-#: ../../reference/odb.rst:351
+#: ../../reference/odb.rst:353
 msgid "OdbStep"
 msgstr ""
 
@@ -8343,12 +8692,16 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object specifying the default field variable for visualization."
 msgstr ""
 
-#: ../../reference/odb.rst:360
+#: ../../reference/odb.rst:362
 msgid "OdbStepBase"
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbStepBase.py:docstring of abaqus.Odb.OdbStepBase.OdbStepBase:2
 msgid "An output database contains the same steps of the model database that originated it."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbStepBase.py:docstring of abaqus.Odb.OdbStepBase.OdbStepBase:13
+msgid "Check `OdbStepBase on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -8415,7 +8768,7 @@ msgstr ""
 msgid ":py:obj:`setDefaultField <abaqus.Odb.OdbStepBase.OdbStepBase.setDefaultField>`\\ \\(field\\)"
 msgstr ""
 
-#: ../../reference/odb.rst:368
+#: ../../reference/odb.rst:370
 msgid "RebarOrientation"
 msgstr ""
 
@@ -8466,11 +8819,11 @@ msgstr ""
 msgid "A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate system about which an additional rotation is applied. Possible values are AXIS_1, AXIS_2, and AXIS_3."
 msgstr ""
 
-#: ../../reference/odb.rst:376
+#: ../../reference/odb.rst:378
 msgid "RebarOrientationArray"
 msgstr ""
 
-#: ../../reference/odb.rst:384
+#: ../../reference/odb.rst:386
 msgid "ScratchOdb"
 msgstr ""
 
@@ -8478,11 +8831,15 @@ msgstr ""
 msgid "A scratch output database is associated with an open output database and is used to store session-related, non-persistent objects, such as Step, Frame and FieldOutput objects. Abaqus creates a scratch output database when needed for these non-persistent objects during an Abaqus/CAE session. Abaqus deletes the scratch output database when the associated output database is closed."
 msgstr ""
 
+#: ../../../../src/abaqus/Odb/ScratchOdb.py:docstring of abaqus.Odb.ScratchOdb.ScratchOdb:17
+msgid "Check `ScratchOdb on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Odb.ScratchOdb.ScratchOdb.__init__>`\\ \\(odb\\)"
 msgstr ""
 
-#: ../../reference/odb.rst:392
+#: ../../reference/odb.rst:394
 msgid "SectionCategory"
 msgstr ""
 
@@ -8509,7 +8866,7 @@ msgid "This method creates a SectionPoint object."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/SectionCategory.py:docstring of abaqus.Odb.SectionCategory.SectionCategory.SectionPoint:12
-#: ../../../../src/abaqus/Odb/SectionPoint.py:docstring of abaqus.Odb.SectionPoint.SectionPoint:33
+#: ../../../../src/abaqus/Odb/SectionPoint.py:docstring of abaqus.Odb.SectionPoint.SectionPoint:32
 msgid "Check `SectionPoint on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sectionpointpyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -8531,7 +8888,7 @@ msgstr ""
 msgid ":obj:`SectionPoint`"
 msgstr ""
 
-#: ../../reference/odb.rst:400
+#: ../../reference/odb.rst:402
 msgid "SectionPoint"
 msgstr ""
 
@@ -8543,11 +8900,11 @@ msgstr ""
 msgid ":py:obj:`__init__ <abaqus.Odb.SectionPoint.SectionPoint.__init__>`\\ \\(number\\, description\\)"
 msgstr ""
 
-#: ../../reference/odb.rst:408
+#: ../../reference/odb.rst:410
 msgid "SectionPointArray"
 msgstr ""
 
-#: ../../reference/odb.rst:416
+#: ../../reference/odb.rst:418
 msgid "SectorDefinition"
 msgstr ""
 
@@ -8577,7 +8934,7 @@ msgstr ""
 msgid "A tuple of tuples of Floats specifying the coordinates of two points on the axis of symmetry."
 msgstr ""
 
-#: ../../reference/odb.rst:424
+#: ../../reference/odb.rst:426
 msgid "UserData"
 msgstr ""
 
@@ -9135,7 +9492,7 @@ msgstr ""
 msgid "An :py:class:`~abaqus.XY.XYData.XYData` object."
 msgstr ""
 
-#: ../../reference/odb.rst:433
+#: ../../reference/odb.rst:435
 msgid "UserDataBase"
 msgstr ""
 

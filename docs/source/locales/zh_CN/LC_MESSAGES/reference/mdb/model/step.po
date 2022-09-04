@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel:12 of
 msgid ""
-"Check `Model on help.3ds.com/2017 "
+"Check `StepModel on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -1221,7 +1221,7 @@ msgstr ""
 msgid "**stabilizationMagnitude**"
 msgstr ""
 
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1 ../../docstring
+#: ../../docstring
 #: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.setValues:28
 #: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.stabilizationMagnitude:2
 #: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep.setValues:28
@@ -1231,7 +1231,7 @@ msgstr ""
 msgid ""
 "A Float specifying the damping intensity of the automatic damping "
 "algorithm if the problem is expected to be unstable and "
-"**stabilizationMethod**≠NONE. The default value is 2×10-4."
+"**stabilizationMethod** ≠ NONE. The default value is 2×10-4."
 msgstr ""
 
 #: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.setValues:34
@@ -2370,17 +2370,10 @@ msgstr ""
 msgid "**massScaling**"
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep.massScaling:2
-#: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep.setValues:39
-#: abaqus.Step.StepModel.StepModel.ExplicitDynamicsStep:53
-#: abaqus.Step.StepModel.StepModel.TempDisplacementDynamicsStep:51
-#: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.massScaling:2
-#: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.setValues:37
-#: of
+#: abaqus.Step.StepModel.StepModel.ExplicitDynamicsStep:53 of
 msgid ""
 "A :py:class:`~abaqus.StepMiscellaneous.MassScalingArray.MassScalingArray`"
-" object specifying mass scaling controls. The default value is "
+" object specifying  mass scaling controls. The default value is "
 "PREVIOUS_STEP."
 msgstr ""
 
@@ -4457,6 +4450,19 @@ msgid ""
 "value is None."
 msgstr ""
 
+#: ../../docstring
+#: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep.massScaling:2
+#: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep.setValues:39
+#: abaqus.Step.StepModel.StepModel.TempDisplacementDynamicsStep:51
+#: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.massScaling:2
+#: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.setValues:37
+#: of
+msgid ""
+"A :py:class:`~abaqus.StepMiscellaneous.MassScalingArray.MassScalingArray`"
+" object specifying mass scaling controls. The default value is "
+"PREVIOUS_STEP."
+msgstr ""
+
 #: abaqus.Step.StepModel.StepModel.TempDisplacementDynamicsStep:80 of
 msgid "step: :obj:`TempDisplacementDynamicsStep`"
 msgstr ""
@@ -4521,38 +4527,7 @@ msgid ""
 "the Step object are common to all objects derived from the Step."
 msgstr ""
 
-#: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep:16
-#: abaqus.Step.AnalysisStep.AnalysisStep:16
-#: abaqus.Step.AnnealStep.AnnealStep:20 abaqus.Step.BuckleStep.BuckleStep:19
-#: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep:20
-#: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep:21
-#: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep:21
-#: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep:23
-#: abaqus.Step.DirectCyclicStep.DirectCyclicStep:22
-#: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep:20
-#: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep:24
-#: abaqus.Step.FrequencyStep.FrequencyStep:20
-#: abaqus.Step.GeostaticStep.GeostaticStep:21
-#: abaqus.Step.HeatTransferStep.HeatTransferStep:20
-#: abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep:21
-#: abaqus.Step.InitialStep.InitialStep:16
-#: abaqus.Step.MassDiffusionStep.MassDiffusionStep:20
-#: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep:22
-#: abaqus.Step.RandomResponseStep.RandomResponseStep:22
-#: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep:21
-#: abaqus.Step.SoilsStep.SoilsStep:20
-#: abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep:20
-#: abaqus.Step.StaticRiksStep.StaticRiksStep:20
-#: abaqus.Step.StaticStep.StaticStep:20
-#: abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep:21
-#: abaqus.Step.SteadyStateModalStep.SteadyStateModalStep:22
-#: abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep:21
-#: abaqus.Step.Step.Step:16 abaqus.Step.StepBase.StepBase:16
-#: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep:21
-#: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep:19
-#: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep:24
-#: abaqus.Step.ViscoStep.ViscoStep:20
-#: abaqus.StepOutput.OutputStep.OutputStep:16 of
+#: abaqus.Step.Step.Step:16 of
 msgid ""
 "Check `Step on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
@@ -4642,7 +4617,7 @@ msgstr ""
 #: abaqus.StepOutput.OutputStep.OutputStep.explicit:2 of
 msgid ""
 "A SymbolicConstant specifying whether the step has an explicit procedure "
-"type (*procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or "
+"type (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or "
 "DYNAMIC_TEMP_DISPLACEMENT)."
 msgstr ""
 
@@ -7599,6 +7574,12 @@ msgstr ""
 msgid "StepBase"
 msgstr ""
 
+#: abaqus.Step.StepBase.StepBase:16 of
+msgid ""
+"Check `StepBase on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:22:<autosummary>:1
 msgid ":py:obj:`name <abaqus.Step.StepBase.StepBase.name>`\\"
 msgstr ""
@@ -7705,6 +7686,12 @@ msgstr ""
 
 #: ../../reference/mdb/model/step.rst:42
 msgid "AdaptivityStep"
+msgstr ""
+
+#: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep:16 of
+msgid ""
+"Check `AdaptivityStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -7869,6 +7856,12 @@ msgstr ""
 msgid "OutputStep"
 msgstr ""
 
+#: abaqus.StepOutput.OutputStep.OutputStep:16 of
+msgid ""
+"Check `OutputStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:22:<autosummary>:1
 msgid ":py:obj:`name <abaqus.StepOutput.OutputStep.OutputStep.name>`\\"
 msgstr ""
@@ -8016,6 +8009,12 @@ msgid ""
 " except the InitialStep object. It has no explicit constructor, no "
 "methods, and has only inherited members. The AnalysisStep object is "
 "derived from the Step object."
+msgstr ""
+
+#: abaqus.Step.AnalysisStep.AnalysisStep:16 of
+msgid ""
+"Check `AnalysisStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -8246,6 +8245,12 @@ msgstr ""
 #: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep:16
 #: abaqus.Step.ViscoStep.ViscoStep:17 of
 msgid "STEP"
+msgstr ""
+
+#: abaqus.Step.AnnealStep.AnnealStep:20 of
+msgid ""
+"Check `AnnealStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
@@ -8502,6 +8507,12 @@ msgstr ""
 msgid ""
 "The BuckleStep object controls eigenvalue buckling estimation. The "
 "BuckleStep object is derived from the AnalysisStep object."
+msgstr ""
+
+#: abaqus.Step.BuckleStep.BuckleStep:19 of
+msgid ""
+"Check `BuckleStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:33:<autosummary>:1
@@ -8782,6 +8793,12 @@ msgstr ""
 
 #: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep:16 of
 msgid "COMPLEX FREQUENCY"
+msgstr ""
+
+#: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep:20 of
+msgid ""
+"Check `ComplexFrequencyStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:31:<autosummary>:1
@@ -9100,6 +9117,12 @@ msgstr ""
 msgid "SOLUTION TECHNIQUE"
 msgstr ""
 
+#: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep:21 of
+msgid ""
+"Check `CoupledTempDisplacementStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:22:<autosummary>:1 ../../None:44:<autosummary>:1
 msgid ""
 ":py:obj:`name "
@@ -9159,6 +9182,13 @@ msgstr ""
 msgid ""
 ":py:obj:`stabilizationMagnitude "
 "<abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.stabilizationMagnitude>`\\"
+msgstr ""
+
+#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
+msgid ""
+"A Float specifying the damping intensity of the automatic damping "
+"algorithm if the problem is expected to be unstable and "
+"**stabilizationMethod** ≠ NONE."
 msgstr ""
 
 #: ../../None:44:<autosummary>:1
@@ -9578,6 +9608,13 @@ msgid ""
 "AnalysisStep object."
 msgstr ""
 
+#: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep:23
+#: of
+msgid ""
+"Check `CoupledThermalElectricalStructuralStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:22:<autosummary>:1 ../../None:43:<autosummary>:1
 msgid ""
 ":py:obj:`name "
@@ -9923,6 +9960,12 @@ msgstr ""
 msgid "COUPLED THERMAL-ELECTRICAL"
 msgstr ""
 
+#: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep:21 of
+msgid ""
+"Check `CoupledThermalElectricStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:22:<autosummary>:1 ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`name "
@@ -10257,6 +10300,12 @@ msgstr ""
 
 #: abaqus.Step.DirectCyclicStep.DirectCyclicStep:18 of
 msgid "DIRECT CYCLIC"
+msgstr ""
+
+#: abaqus.Step.DirectCyclicStep.DirectCyclicStep:22 of
+msgid ""
+"Check `DirectCyclicStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:46:<autosummary>:1
@@ -10674,6 +10723,12 @@ msgstr ""
 msgid "ELECTROMAGNETIC TIME HARMONIC"
 msgstr ""
 
+#: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep:20 of
+msgid ""
+"Check `EmagTimeHarmonicStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`matrixStorage "
@@ -10949,6 +11004,12 @@ msgstr ""
 #: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep:21
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep:21 of
 msgid "VARIABLE MASS SCALING"
+msgstr ""
+
+#: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep:24 of
+msgid ""
+"Check `ExplicitDynamicsStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:34:<autosummary>:1
@@ -11263,6 +11324,12 @@ msgid ""
 "The FrequencyStep object is used to perform eigenvalue extraction to "
 "calculate the natural frequencies and corresponding mode shapes of a "
 "system. The FrequencyStep object is derived from the AnalysisStep object."
+msgstr ""
+
+#: abaqus.Step.FrequencyStep.FrequencyStep:20 of
+msgid ""
+"Check `FrequencyStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:48:<autosummary>:1
@@ -11707,6 +11774,12 @@ msgid ""
 "GeostaticStep object is derived from the AnalysisStep object."
 msgstr ""
 
+#: abaqus.Step.GeostaticStep.GeostaticStep:21 of
+msgid ""
+"Check `GeostaticStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:22:<autosummary>:1 ../../None:36:<autosummary>:1
 msgid ":py:obj:`name <abaqus.Step.GeostaticStep.GeostaticStep.name>`\\"
 msgstr ""
@@ -12010,6 +12083,12 @@ msgstr ""
 
 #: abaqus.Step.HeatTransferStep.HeatTransferStep:16 of
 msgid "HEAT TRANSFER"
+msgstr ""
+
+#: abaqus.Step.HeatTransferStep.HeatTransferStep:20 of
+msgid ""
+"Check `HeatTransferStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:41:<autosummary>:1
@@ -12336,6 +12415,12 @@ msgid ""
 "a dynamic stress/displacement response in Abaqus/Standard analyses and is"
 " generally used for nonlinear cases. The ImplicitDynamicsStep object is "
 "derived from the AnalysisStep object."
+msgstr ""
+
+#: abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep:21 of
+msgid ""
+"Check `ImplicitDynamicsStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:46:<autosummary>:1
@@ -12754,6 +12839,12 @@ msgid ""
 "AnalysisStep object."
 msgstr ""
 
+#: abaqus.Step.InitialStep.InitialStep:16 of
+msgid ""
+"Check `InitialStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:22:<autosummary>:1
 msgid ":py:obj:`name <abaqus.Step.InitialStep.InitialStep.name>`\\"
 msgstr ""
@@ -12926,6 +13017,12 @@ msgstr ""
 
 #: abaqus.Step.MassDiffusionStep.MassDiffusionStep:16 of
 msgid "MASS DIFFUSION"
+msgstr ""
+
+#: abaqus.Step.MassDiffusionStep.MassDiffusionStep:20 of
+msgid ""
+"Check `MassDiffusionStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:36:<autosummary>:1
@@ -13239,6 +13336,12 @@ msgstr ""
 msgid "MODAL DYNAMIC"
 msgstr ""
 
+#: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep:22 of
+msgid ""
+"Check `ModalDynamicsStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:22:<autosummary>:1 ../../None:33:<autosummary>:1
 msgid ":py:obj:`name <abaqus.Step.ModalDynamicsStep.ModalDynamicsStep.name>`\\"
 msgstr ""
@@ -13526,6 +13629,12 @@ msgstr ""
 msgid "RANDOM RESPONSE"
 msgstr ""
 
+#: abaqus.Step.RandomResponseStep.RandomResponseStep:22 of
+msgid ""
+"Check `RandomResponseStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:22:<autosummary>:1 ../../None:33:<autosummary>:1
 msgid ":py:obj:`name <abaqus.Step.RandomResponseStep.RandomResponseStep.name>`\\"
 msgstr ""
@@ -13806,6 +13915,12 @@ msgstr ""
 
 #: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep:17 of
 msgid "RESPONSE SPECTRUM"
+msgstr ""
+
+#: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep:21 of
+msgid ""
+"Check `ResponseSpectrumStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:34:<autosummary>:1
@@ -14101,6 +14216,12 @@ msgid ""
 "steady-state response analysis of partially or fully saturated fluid-"
 "filled porous media. The SoilsStep object is derived from the "
 "AnalysisStep object."
+msgstr ""
+
+#: abaqus.Step.SoilsStep.SoilsStep:20 of
+msgid ""
+"Check `SoilsStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:47:<autosummary>:1
@@ -14425,6 +14546,12 @@ msgstr ""
 msgid "STATIC"
 msgstr ""
 
+#: abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep:20 of
+msgid ""
+"Check `StaticLinearPerturbationStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:22:<autosummary>:1 ../../None:26:<autosummary>:1
 msgid ""
 ":py:obj:`name "
@@ -14662,6 +14789,12 @@ msgid ""
 "analyzed as a static load step using the modified Riks method for "
 "proportional loading cases. The StaticRiksStep object is derived from the"
 " AnalysisStep object."
+msgstr ""
+
+#: abaqus.Step.StaticRiksStep.StaticRiksStep:20 of
+msgid ""
+"Check `StaticRiksStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:43:<autosummary>:1
@@ -15043,6 +15176,12 @@ msgid ""
 " AnalysisStep object."
 msgstr ""
 
+#: abaqus.Step.StaticStep.StaticStep:20 of
+msgid ""
+"Check `StaticStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:22:<autosummary>:1 ../../None:46:<autosummary>:1
 msgid ":py:obj:`name <abaqus.Step.StaticStep.StaticStep.name>`\\"
 msgstr ""
@@ -15360,6 +15499,12 @@ msgstr ""
 msgid "STEADY STATE DYNAMICS"
 msgstr ""
 
+#: abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep:21 of
+msgid ""
+"Check `SteadyStateDirectStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:22:<autosummary>:1 ../../None:30:<autosummary>:1
 msgid ""
 ":py:obj:`name "
@@ -15626,6 +15771,12 @@ msgid ""
 "he SteadyStateModalStep object is used to calculate the linearized "
 "steady-state response of the system to harmonic excitation. The "
 "SteadyStateModalStep object is derived from the AnalysisStep object."
+msgstr ""
+
+#: abaqus.Step.SteadyStateModalStep.SteadyStateModalStep:22 of
+msgid ""
+"Check `SteadyStateModalStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:34:<autosummary>:1
@@ -15911,6 +16062,12 @@ msgid ""
 "steady-state response of the system to harmonic excitation on the basis "
 "of the subspace projection method. The SteadyStateSubspaceStep object is "
 "derived from the AnalysisStep object."
+msgstr ""
+
+#: abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep:21 of
+msgid ""
+"Check `SteadyStateSubspaceStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:33:<autosummary>:1
@@ -16211,6 +16368,12 @@ msgid ""
 "derived from the AnalysisStep object."
 msgstr ""
 
+#: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep:21 of
+msgid ""
+"Check `SubspaceDynamicsStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:22:<autosummary>:1 ../../None:30:<autosummary>:1
 msgid ""
 ":py:obj:`name "
@@ -16483,6 +16646,12 @@ msgstr ""
 
 #: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep:15 of
 msgid "SUBSTRUCTURE GENERATE"
+msgstr ""
+
+#: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep:19 of
+msgid ""
+"Check `SubstructureGenerateStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:37:<autosummary>:1
@@ -16857,6 +17026,12 @@ msgid ""
 "object."
 msgstr ""
 
+#: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep:24 of
+msgid ""
+"Check `TempDisplacementDynamicsStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:22:<autosummary>:1 ../../None:33:<autosummary>:1
 msgid ""
 ":py:obj:`name "
@@ -17146,6 +17321,12 @@ msgid ""
 "object."
 msgstr ""
 
+#: abaqus.Step.ViscoStep.ViscoStep:20 of
+msgid ""
+"Check `ViscoStep on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:22:<autosummary>:1 ../../None:44:<autosummary>:1
 msgid ":py:obj:`name <abaqus.Step.ViscoStep.ViscoStep.name>`\\"
 msgstr ""
@@ -17418,4 +17599,24 @@ msgstr ""
 #: ../../None:4:<autosummary>:1
 msgid ":py:obj:`suppress <abaqus.Step.ViscoStep.ViscoStep.suppress>`\\ \\(\\)"
 msgstr ""
+
+#~ msgid ""
+#~ "Check `Model on help.3ds.com/2017 "
+#~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the damping intensity"
+#~ " of the automatic damping algorithm "
+#~ "if the problem is expected to be"
+#~ " unstable and **stabilizationMethod**≠NONE. The"
+#~ " default value is 2×10-4."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying whether the "
+#~ "step has an explicit procedure type "
+#~ "(*procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or "
+#~ "DYNAMIC_TEMP_DISPLACEMENT)."
+#~ msgstr ""
 

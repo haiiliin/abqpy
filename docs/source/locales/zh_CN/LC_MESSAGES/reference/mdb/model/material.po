@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -157,7 +157,7 @@ msgstr ""
 
 #: abaqus.Material.MaterialModel.MaterialModel:12 of
 msgid ""
-"Check `Model on help.3ds.com/2017 "
+"Check `MaterialModel on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -496,7 +496,7 @@ msgstr ""
 
 #: abaqus.Material.MaterialOdb.MaterialOdb:13 of
 msgid ""
-"Check `Odb on help.3ds.com/2017 "
+"Check `MaterialOdb on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -846,7 +846,7 @@ msgstr ""
 #: abaqus.Material.Density.Density.Density:22
 #: abaqus.Material.Elastic.HyperElastic.HyperFoam.Hyperfoam.Hyperfoam:22
 #: abaqus.Material.Elastic.HyperElastic.Hyperelastic.Hyperelastic:82
-#: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:28
+#: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:29
 #: abaqus.Material.Elastic.HyperElastic.ViscoElastic.Hysteresis.Hysteresis:22
 #: abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic:75
 #: abaqus.Material.Elastic.HypoElastic.Hypoelastic.Hypoelastic:22
@@ -946,14 +946,14 @@ msgstr ""
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:160
 #: abaqus.Material.ProgressiveDamageFailure.DamageStabilization.DamageStabilization:41
 #: abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive:41
-#: abaqus.Material.Ratios.Ratios:25
+#: abaqus.Material.Ratios.Ratios:26
 #: abaqus.Material.Regularization.Regularization:15
 #: abaqus.Material.TestData.BiaxialTestData.BiaxialTestData:18
 #: abaqus.Material.TestData.PlanarTestData.PlanarTestData:31
 #: abaqus.Material.TestData.ShearTestData.ShearTestData:27
 #: abaqus.Material.TestData.SimpleShearTestData.SimpleShearTestData:20
 #: abaqus.Material.TestData.UniaxialTestData.UniaxialTestData:39
-#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:35 of
+#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:38 of
 msgid "The corresponding analysis keywords are:"
 msgstr ""
 
@@ -2767,7 +2767,7 @@ msgstr ""
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:134
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:143
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:155
-#: of
+#: abaqus.Material.Ratios.Ratios:21 of
 msgid "Temperature, if the data depend on temperature."
 msgstr ""
 
@@ -2915,7 +2915,7 @@ msgstr ""
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:135
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:144
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:156
-#: of
+#: abaqus.Material.Ratios.Ratios:22 of
 msgid "Value of the first field variable, if the data depend on field variables."
 msgstr ""
 
@@ -3063,7 +3063,7 @@ msgstr ""
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:136
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:145
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:157
-#: of
+#: abaqus.Material.Ratios.Ratios:23 of
 msgid "Value of the second field variable."
 msgstr ""
 
@@ -3213,7 +3213,7 @@ msgstr ""
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:137
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:146
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:158
-#: of
+#: abaqus.Material.Ratios.Ratios:24 of
 msgid "Etc."
 msgstr ""
 
@@ -7024,6 +7024,7 @@ msgstr ""
 #: abaqus.Material.Plastic.Swelling.Swelling.Swelling:14
 #: abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution:41
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:41
+#: abaqus.Material.Ratios.Ratios:16
 #: abaqus.Material.TestData.PlanarTestData.PlanarTestData:19
 #: abaqus.Material.TestData.ShearTestData.ShearTestData:15
 #: abaqus.Material.TestData.SimpleShearTestData.SimpleShearTestData:14
@@ -7445,7 +7446,7 @@ msgstr ""
 
 #: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:17
 #: abaqus.Material.TestData.ShearTestData.ShearTestData:17
-#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:26 of
+#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:28 of
 msgid "If **time** = RELAXATION_TEST_DATA, the table data specify the following:"
 msgstr ""
 
@@ -7462,35 +7463,35 @@ msgid ""
 msgstr ""
 
 #: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:21
-#: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:26
+#: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:27
 #: of
 msgid "Time :math:`t` (:math:`t>0`)."
 msgstr ""
 
-#: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:22
+#: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:23
 #: abaqus.Material.TestData.ShearTestData.ShearTestData:22
-#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:30 of
+#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:33 of
 msgid "If **time** = CREEP_TEST_DATA, the table data specify the following:"
 msgstr ""
 
-#: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:24
+#: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:25
 #: of
 msgid "Normalized shear compliance, :math:`j_S(t)` (:math:`j_S(t)\\ge 1`)."
 msgstr ""
 
-#: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:25
+#: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:26
 #: of
 msgid ""
 "Normalized volumetric (bulk) compliance, :math:`j_K(t)` "
 "(:math:`j_K(t)\\ge 1`)."
 msgstr ""
 
-#: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:30
+#: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:31
 #: of
 msgid "COMBINED TEST DATA"
 msgstr ""
 
-#: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:33
+#: abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:34
 #: of
 msgid ""
 "Check `CombinedTestData on help.3ds.com/2017 "
@@ -8437,7 +8438,7 @@ msgid "This method modifies the LowDensityFoam object."
 msgstr ""
 
 #: ../../reference/mdb/model/material.rst:160
-#: ../../reference/mdb/model/material.rst:894
+#: ../../reference/mdb/model/material.rst:892
 msgid "Porous"
 msgstr ""
 
@@ -8495,7 +8496,7 @@ msgid "This method modifies the PorousElastic object."
 msgstr ""
 
 #: ../../reference/mdb/model/material.rst:172
-#: ../../reference/mdb/model/material.rst:990
+#: ../../reference/mdb/model/material.rst:988
 msgid "SuperElastic"
 msgstr ""
 
@@ -9149,11 +9150,11 @@ msgstr ""
 msgid "If the material type of the material to be evaluated is not hyperelastic."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:220
+#: ../../reference/mdb/model/material.rst:218
 msgid "Gap"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:226
+#: ../../reference/mdb/model/material.rst:224
 msgid "GapFlow"
 msgstr ""
 
@@ -9226,11 +9227,11 @@ msgstr ""
 msgid "This method modifies the GapFlow object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:234
+#: ../../reference/mdb/model/material.rst:232
 msgid "Gasket"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:238
+#: ../../reference/mdb/model/material.rst:236
 msgid "ContactArea"
 msgstr ""
 
@@ -9290,7 +9291,7 @@ msgstr ""
 msgid "This method modifies the ContactArea object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:246
+#: ../../reference/mdb/model/material.rst:244
 msgid "GasketMembraneElastic"
 msgstr ""
 
@@ -9338,7 +9339,7 @@ msgstr ""
 msgid "This method modifies the GasketMembraneElastic object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:254
+#: ../../reference/mdb/model/material.rst:252
 msgid "GasketThicknessBehavior"
 msgstr ""
 
@@ -9444,7 +9445,7 @@ msgstr ""
 msgid "This method modifies the GasketThicknessBehavior object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:262
+#: ../../reference/mdb/model/material.rst:260
 msgid "GasketTransverseShearElastic"
 msgstr ""
 
@@ -9480,15 +9481,15 @@ msgstr ""
 msgid "This method modifies the GasketTransverseShearElastic object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:270
+#: ../../reference/mdb/model/material.rst:268
 msgid "Others"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:274
+#: ../../reference/mdb/model/material.rst:272
 msgid "Acoustic"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:278
+#: ../../reference/mdb/model/material.rst:276
 msgid "AcousticMedium"
 msgstr ""
 
@@ -9519,11 +9520,11 @@ msgstr ""
 msgid "This method modifies the AcousticMedium object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:286
+#: ../../reference/mdb/model/material.rst:284
 msgid "Electromagnetic"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:290
+#: ../../reference/mdb/model/material.rst:288
 msgid "Dielectric"
 msgstr ""
 
@@ -9601,7 +9602,7 @@ msgstr ""
 msgid "This method modifies the Dielectric object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:298
+#: ../../reference/mdb/model/material.rst:296
 msgid "ElectricalConductivity"
 msgstr ""
 
@@ -9673,7 +9674,7 @@ msgstr ""
 msgid "This method modifies the ElectricalConductivity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:306
+#: ../../reference/mdb/model/material.rst:304
 msgid "MagneticPermeability"
 msgstr ""
 
@@ -9779,7 +9780,7 @@ msgstr ""
 msgid "This method modifies the MagneticPermeability object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:314
+#: ../../reference/mdb/model/material.rst:312
 msgid "Piezoelectric"
 msgstr ""
 
@@ -9962,11 +9963,11 @@ msgstr ""
 msgid "This method modifies the Piezoelectric object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:322
+#: ../../reference/mdb/model/material.rst:320
 msgid "HeatTransfer"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:326
+#: ../../reference/mdb/model/material.rst:324
 msgid "Conductivity"
 msgstr ""
 
@@ -10046,7 +10047,7 @@ msgstr ""
 msgid "This method modifies the Conductivity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:334
+#: ../../reference/mdb/model/material.rst:332
 msgid "HeatGeneration"
 msgstr ""
 
@@ -10077,7 +10078,7 @@ msgstr ""
 msgid "This method creates a HeatGeneration object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:342
+#: ../../reference/mdb/model/material.rst:340
 msgid "InelasticHeatFraction"
 msgstr ""
 
@@ -10113,7 +10114,7 @@ msgstr ""
 msgid "This method modifies the InelasticHeatFraction object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:350
+#: ../../reference/mdb/model/material.rst:348
 msgid "JouleHeatFraction"
 msgstr ""
 
@@ -10148,7 +10149,7 @@ msgstr ""
 msgid "This method modifies the JouleHeatFraction object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:358
+#: ../../reference/mdb/model/material.rst:356
 msgid "LatentHeat"
 msgstr ""
 
@@ -10191,7 +10192,7 @@ msgstr ""
 msgid "This method modifies the LatentHeat object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:366
+#: ../../reference/mdb/model/material.rst:364
 msgid "SpecificHeat"
 msgstr ""
 
@@ -10226,15 +10227,15 @@ msgstr ""
 msgid "This method modifies the SpecificHeat object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:374
+#: ../../reference/mdb/model/material.rst:372
 msgid "Hydrodynamic"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:378
+#: ../../reference/mdb/model/material.rst:376
 msgid "MassDiffusion"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:382
+#: ../../reference/mdb/model/material.rst:380
 msgid "Diffusivity"
 msgstr ""
 
@@ -10332,7 +10333,7 @@ msgstr ""
 msgid "This method modifies the Diffusivity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:390
+#: ../../reference/mdb/model/material.rst:388
 msgid "PressureEffect"
 msgstr ""
 
@@ -10386,7 +10387,7 @@ msgstr ""
 msgid "This method modifies the PressureEffect object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:398
+#: ../../reference/mdb/model/material.rst:396
 msgid "Solubility"
 msgstr ""
 
@@ -10421,7 +10422,7 @@ msgstr ""
 msgid "This method modifies the Solubility object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:406
+#: ../../reference/mdb/model/material.rst:404
 msgid "SoretEffect"
 msgstr ""
 
@@ -10462,11 +10463,11 @@ msgstr ""
 msgid "This method modifies the SoretEffect object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:414
+#: ../../reference/mdb/model/material.rst:412
 msgid "Mechanical"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:418
+#: ../../reference/mdb/model/material.rst:416
 msgid "Damping"
 msgstr ""
 
@@ -10503,7 +10504,7 @@ msgstr ""
 msgid "This method modifies the Damping object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:426
+#: ../../reference/mdb/model/material.rst:424
 msgid "Expansion"
 msgstr ""
 
@@ -10570,7 +10571,7 @@ msgstr ""
 msgid "This method modifies the Expansion object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:434
+#: ../../reference/mdb/model/material.rst:432
 msgid "PoreFluidExpansion"
 msgstr ""
 
@@ -10605,12 +10606,12 @@ msgstr ""
 msgid "This method modifies the PoreFluidExpansion object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:442
-#: ../../reference/mdb/model/material.rst:454
+#: ../../reference/mdb/model/material.rst:440
+#: ../../reference/mdb/model/material.rst:452
 msgid "Viscosity"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:446
+#: ../../reference/mdb/model/material.rst:444
 msgid "Trs"
 msgstr ""
 
@@ -10707,11 +10708,11 @@ msgstr ""
 msgid "This method modifies the Viscosity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:462
+#: ../../reference/mdb/model/material.rst:460
 msgid "PoreFluidFlow"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:466
+#: ../../reference/mdb/model/material.rst:464
 msgid "FluidLeakoff"
 msgstr ""
 
@@ -10757,7 +10758,7 @@ msgstr ""
 msgid "This method modifies the FluidLeakoff object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:474
+#: ../../reference/mdb/model/material.rst:472
 msgid "Gel"
 msgstr ""
 
@@ -10807,8 +10808,8 @@ msgstr ""
 msgid "This method modifies the Gel object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:482
-#: ../../reference/mdb/model/material.rst:486
+#: ../../reference/mdb/model/material.rst:480
+#: ../../reference/mdb/model/material.rst:484
 msgid "MoistureSwelling"
 msgstr ""
 
@@ -10866,8 +10867,8 @@ msgstr ""
 msgid "This method modifies the MoistureSwelling object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:494
-#: ../../reference/mdb/model/material.rst:498
+#: ../../reference/mdb/model/material.rst:492
+#: ../../reference/mdb/model/material.rst:496
 msgid "Permeability"
 msgstr ""
 
@@ -10948,7 +10949,7 @@ msgstr ""
 msgid "This method modifies the Permeability object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:506
+#: ../../reference/mdb/model/material.rst:504
 msgid "SaturationDependence"
 msgstr ""
 
@@ -11000,7 +11001,7 @@ msgstr ""
 msgid "This method modifies the SaturationDependence object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:514
+#: ../../reference/mdb/model/material.rst:512
 msgid "VelocityDependence"
 msgstr ""
 
@@ -11047,7 +11048,7 @@ msgstr ""
 msgid "This method modifies the VelocityDependence object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:522
+#: ../../reference/mdb/model/material.rst:520
 msgid "PorousBulkModuli"
 msgstr ""
 
@@ -11087,7 +11088,7 @@ msgstr ""
 msgid "This method modifies the PorousBulkModuli object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:530
+#: ../../reference/mdb/model/material.rst:528
 msgid "Sorption"
 msgstr ""
 
@@ -11151,11 +11152,11 @@ msgstr ""
 msgid "This method modifies the Sorption object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:538
+#: ../../reference/mdb/model/material.rst:536
 msgid "User"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:542
+#: ../../reference/mdb/model/material.rst:540
 msgid "Depvar"
 msgstr ""
 
@@ -11185,7 +11186,7 @@ msgstr ""
 msgid "This method modifies the Depvar object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:550
+#: ../../reference/mdb/model/material.rst:548
 msgid "UserDefinedField"
 msgstr ""
 
@@ -11214,7 +11215,7 @@ msgstr ""
 msgid "This method defines a UserDefinedField object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:558
+#: ../../reference/mdb/model/material.rst:556
 msgid "UserMaterial"
 msgstr ""
 
@@ -11247,7 +11248,7 @@ msgstr ""
 msgid "This method modifies the UserMaterial object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:566
+#: ../../reference/mdb/model/material.rst:564
 msgid "UserOutputVariables"
 msgstr ""
 
@@ -11281,17 +11282,17 @@ msgstr ""
 msgid "This method modifies the UserOutputVariables object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:574
-#: ../../reference/mdb/model/material.rst:974
+#: ../../reference/mdb/model/material.rst:572
+#: ../../reference/mdb/model/material.rst:972
 msgid "Plastic"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:578
-#: ../../reference/mdb/model/material.rst:606
+#: ../../reference/mdb/model/material.rst:576
+#: ../../reference/mdb/model/material.rst:604
 msgid "Concrete"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:582
+#: ../../reference/mdb/model/material.rst:580
 msgid "BrittleCracking"
 msgstr ""
 
@@ -11387,7 +11388,7 @@ msgstr ""
 msgid "This method modifies the BrittleCracking object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:590
+#: ../../reference/mdb/model/material.rst:588
 msgid "BrittleFailure"
 msgstr ""
 
@@ -11452,7 +11453,7 @@ msgstr ""
 msgid "This method modifies the BrittleFailure object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:598
+#: ../../reference/mdb/model/material.rst:596
 msgid "BrittleShear"
 msgstr ""
 
@@ -11592,7 +11593,7 @@ msgstr ""
 msgid "This method modifies the Concrete object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:614
+#: ../../reference/mdb/model/material.rst:612
 msgid "ConcreteCompressionDamage"
 msgstr ""
 
@@ -11650,7 +11651,7 @@ msgstr ""
 msgid "This method modifies the ConcreteCompressionDamage object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:622
+#: ../../reference/mdb/model/material.rst:620
 msgid "ConcreteCompressionHardening"
 msgstr ""
 
@@ -11707,7 +11708,7 @@ msgstr ""
 msgid "This method modifies the ConcreteCompressionHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:630
+#: ../../reference/mdb/model/material.rst:628
 msgid "ConcreteDamagedPlasticity"
 msgstr ""
 
@@ -11840,7 +11841,7 @@ msgstr ""
 msgid "This method modifies the ConcreteDamagedPlasticity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:638
+#: ../../reference/mdb/model/material.rst:636
 msgid "ConcreteTensionDamage"
 msgstr ""
 
@@ -11915,7 +11916,7 @@ msgstr ""
 msgid "This method modifies the ConcreteTensionDamage object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:646
+#: ../../reference/mdb/model/material.rst:644
 msgid "ConcreteTensionStiffening"
 msgstr ""
 
@@ -11994,7 +11995,7 @@ msgstr ""
 msgid "This method modifies the ConcreteTensionStiffening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:654
+#: ../../reference/mdb/model/material.rst:652
 msgid "FailureRatios"
 msgstr ""
 
@@ -12064,7 +12065,7 @@ msgstr ""
 msgid "This method modifies the FailureRatios object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:662
+#: ../../reference/mdb/model/material.rst:660
 msgid "ShearRetention"
 msgstr ""
 
@@ -12133,7 +12134,7 @@ msgstr ""
 msgid "This method modifies the ShearRetention object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:670
+#: ../../reference/mdb/model/material.rst:668
 msgid "TensionStiffening"
 msgstr ""
 
@@ -12191,8 +12192,8 @@ msgstr ""
 msgid "This method modifies the TensionStiffening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:678
-#: ../../reference/mdb/model/material.rst:682
+#: ../../reference/mdb/model/material.rst:676
+#: ../../reference/mdb/model/material.rst:680
 msgid "Creep"
 msgstr ""
 
@@ -12436,11 +12437,11 @@ msgstr ""
 msgid "This method modifies the Creep object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:690
+#: ../../reference/mdb/model/material.rst:688
 msgid "CriticalStateClay"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:694
+#: ../../reference/mdb/model/material.rst:692
 msgid "ClayHardening"
 msgstr ""
 
@@ -12492,7 +12493,7 @@ msgstr ""
 msgid "This method modifies the ClayHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:702
+#: ../../reference/mdb/model/material.rst:700
 msgid "ClayPlasticity"
 msgstr ""
 
@@ -12605,8 +12606,8 @@ msgstr ""
 msgid "This method modifies the ClayPlasticity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:710
-#: ../../reference/mdb/model/material.rst:714
+#: ../../reference/mdb/model/material.rst:708
+#: ../../reference/mdb/model/material.rst:712
 msgid "CrushableFoam"
 msgstr ""
 
@@ -12703,7 +12704,7 @@ msgstr ""
 msgid "This method modifies the CrushableFoam object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:722
+#: ../../reference/mdb/model/material.rst:720
 msgid "CrushableFoamHardening"
 msgstr ""
 
@@ -12762,12 +12763,12 @@ msgstr ""
 msgid "This method modifies the CrushableFoamHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:730
-#: ../../reference/mdb/model/material.rst:738
+#: ../../reference/mdb/model/material.rst:728
+#: ../../reference/mdb/model/material.rst:736
 msgid "DruckerPrager"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:734
+#: ../../reference/mdb/model/material.rst:732
 msgid "Extended"
 msgstr ""
 
@@ -12920,7 +12921,7 @@ msgstr ""
 msgid "This method modifies the DruckerPrager object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:746
+#: ../../reference/mdb/model/material.rst:744
 msgid "DruckerPragerCreep"
 msgstr ""
 
@@ -13003,7 +13004,7 @@ msgstr ""
 msgid "This method modifies the DruckerPragerCreep object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:754
+#: ../../reference/mdb/model/material.rst:752
 msgid "DruckerPragerHardening"
 msgstr ""
 
@@ -13064,7 +13065,7 @@ msgstr ""
 msgid "This method modifies the DruckerPragerHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:762
+#: ../../reference/mdb/model/material.rst:760
 msgid "TriaxialTestData"
 msgstr ""
 
@@ -13119,11 +13120,11 @@ msgstr ""
 msgid "This method modifies the TriaxialTestData object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:770
+#: ../../reference/mdb/model/material.rst:768
 msgid "ModifiedCap"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:774
+#: ../../reference/mdb/model/material.rst:772
 msgid "CapCreepCohesion"
 msgstr ""
 
@@ -13189,7 +13190,7 @@ msgstr ""
 msgid "This method modifies the CapCreepCohesion object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:782
+#: ../../reference/mdb/model/material.rst:780
 msgid "CapCreepConsolidation"
 msgstr ""
 
@@ -13231,7 +13232,7 @@ msgstr ""
 msgid "This method modifies the CapCreepConsolidation object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:790
+#: ../../reference/mdb/model/material.rst:788
 msgid "CapHardening"
 msgstr ""
 
@@ -13286,7 +13287,7 @@ msgstr ""
 msgid "This method modifies the CapHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:798
+#: ../../reference/mdb/model/material.rst:796
 msgid "CapPlasticity"
 msgstr ""
 
@@ -13404,15 +13405,15 @@ msgstr ""
 msgid "This method modifies the CapPlasticity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:806
+#: ../../reference/mdb/model/material.rst:804
 msgid "Metal"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:810
+#: ../../reference/mdb/model/material.rst:808
 msgid "Annealing"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:814
+#: ../../reference/mdb/model/material.rst:812
 msgid "AnnealTemperature"
 msgstr ""
 
@@ -13462,11 +13463,11 @@ msgstr ""
 msgid "This method modifies the AnnealTemperature object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:822
+#: ../../reference/mdb/model/material.rst:820
 msgid "CastIron"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:826
+#: ../../reference/mdb/model/material.rst:824
 msgid "CastIronCompressionHardening"
 msgstr ""
 
@@ -13527,7 +13528,7 @@ msgstr ""
 msgid "This method modifies the CastIronCompressionHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:834
+#: ../../reference/mdb/model/material.rst:832
 msgid "CastIronPlasticity"
 msgstr ""
 
@@ -13596,7 +13597,7 @@ msgstr ""
 msgid "This method modifies the CastIronPlasticity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:842
+#: ../../reference/mdb/model/material.rst:840
 msgid "CastIronTensionHardening"
 msgstr ""
 
@@ -13648,11 +13649,11 @@ msgstr ""
 msgid "This method modifies the CastIronTensionHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:850
+#: ../../reference/mdb/model/material.rst:848
 msgid "Cyclic"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:854
+#: ../../reference/mdb/model/material.rst:852
 msgid "CycledPlastic"
 msgstr ""
 
@@ -13703,7 +13704,7 @@ msgstr ""
 msgid "This method modifies the CycledPlastic object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:862
+#: ../../reference/mdb/model/material.rst:860
 msgid "CyclicHardening"
 msgstr ""
 
@@ -13718,7 +13719,7 @@ msgid "Equivalent stress."
 msgstr ""
 
 #: abaqus.Material.Plastic.Metal.Cyclic.CyclicHardening.CyclicHardening:18 of
-msgid ":math:`Q_{\\infty}`(only if **parameters** = ON)."
+msgid ":math:`Q_{\\infty}` (only if **parameters** = ON)."
 msgstr ""
 
 #: abaqus.Material.Plastic.Metal.Cyclic.CyclicHardening.CyclicHardening:19 of
@@ -13759,11 +13760,11 @@ msgstr ""
 msgid "This method modifies the CyclicHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:870
+#: ../../reference/mdb/model/material.rst:868
 msgid "Deformation"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:874
+#: ../../reference/mdb/model/material.rst:872
 msgid "DeformationPlasticity"
 msgstr ""
 
@@ -13814,12 +13815,12 @@ msgstr ""
 msgid "This method modifies the DeformationPlasticity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:882
+#: ../../reference/mdb/model/material.rst:880
 #: abaqus.Material.Plastic.Metal.ORNL.Ornl.Ornl:19 of
 msgid "ORNL"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:886
+#: ../../reference/mdb/model/material.rst:884
 msgid "Ornl"
 msgstr ""
 
@@ -13858,7 +13859,7 @@ msgstr ""
 msgid "This method modifies the Ornl object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:898
+#: ../../reference/mdb/model/material.rst:896
 msgid "PorousFailureCriteria"
 msgstr ""
 
@@ -13905,7 +13906,7 @@ msgstr ""
 msgid "This method modifies the PorousFailureCriteria object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:906
+#: ../../reference/mdb/model/material.rst:904
 msgid "PorousMetalPlasticity"
 msgstr ""
 
@@ -13986,7 +13987,7 @@ msgstr ""
 msgid "This method modifies the PorousMetalPlasticity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:914
+#: ../../reference/mdb/model/material.rst:912
 msgid "VoidNucleation"
 msgstr ""
 
@@ -14046,8 +14047,8 @@ msgstr ""
 msgid "This method modifies the VoidNucleation object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:922
-#: ../../reference/mdb/model/material.rst:926
+#: ../../reference/mdb/model/material.rst:920
+#: ../../reference/mdb/model/material.rst:924
 msgid "RateDependent"
 msgstr ""
 
@@ -14126,11 +14127,11 @@ msgstr ""
 msgid "This method modifies the RateDependent object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:934
+#: ../../reference/mdb/model/material.rst:932
 msgid "TwoLayerViscoPlasticity"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:938
+#: ../../reference/mdb/model/material.rst:936
 msgid "Viscous"
 msgstr ""
 
@@ -14195,11 +14196,11 @@ msgstr ""
 msgid "This method modifies the Viscous object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:946
+#: ../../reference/mdb/model/material.rst:944
 msgid "MohrCoulomb"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:950
+#: ../../reference/mdb/model/material.rst:948
 msgid "MohrCoulombHardening"
 msgstr ""
 
@@ -14251,7 +14252,7 @@ msgstr ""
 msgid "This method modifies the MohrCoulombHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:958
+#: ../../reference/mdb/model/material.rst:956
 msgid "MohrCoulombPlasticity"
 msgstr ""
 
@@ -14331,7 +14332,7 @@ msgstr ""
 msgid "This method modifies the MohrCoulombPlasticity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:966
+#: ../../reference/mdb/model/material.rst:964
 msgid "TensionCutOff"
 msgstr ""
 
@@ -14550,7 +14551,7 @@ msgstr ""
 msgid "This method modifies the Plastic object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:982
+#: ../../reference/mdb/model/material.rst:980
 msgid "Potential"
 msgstr ""
 
@@ -14615,7 +14616,7 @@ msgstr ""
 msgid "This method modifies the Potential object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:994
+#: ../../reference/mdb/model/material.rst:992
 msgid "SuperElasticHardening"
 msgstr ""
 
@@ -14673,7 +14674,7 @@ msgstr ""
 msgid "This method modifies the SuperElasticHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1002
+#: ../../reference/mdb/model/material.rst:1000
 msgid "SuperElasticHardeningModifications"
 msgstr ""
 
@@ -14725,8 +14726,8 @@ msgstr ""
 msgid "This method modifies the SuperElasticHardeningModifications object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1010
-#: ../../reference/mdb/model/material.rst:1014
+#: ../../reference/mdb/model/material.rst:1008
+#: ../../reference/mdb/model/material.rst:1012
 msgid "Swelling"
 msgstr ""
 
@@ -14769,11 +14770,11 @@ msgstr ""
 msgid "This method modifies the Swelling object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1022
+#: ../../reference/mdb/model/material.rst:1020
 msgid "ProgressiveDamageFailure"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1026
+#: ../../reference/mdb/model/material.rst:1024
 msgid "DamageEvolution"
 msgstr ""
 
@@ -15010,7 +15011,7 @@ msgstr ""
 msgid "This method modifies the DamageEvolution object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1034
+#: ../../reference/mdb/model/material.rst:1032
 msgid "DamageInitiation"
 msgstr ""
 
@@ -15609,7 +15610,7 @@ msgstr ""
 msgid "This method modifies the DamageInitiation object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1042
+#: ../../reference/mdb/model/material.rst:1040
 msgid "DamageStabilization"
 msgstr ""
 
@@ -15657,7 +15658,7 @@ msgstr ""
 msgid "This method modifies the DamageStabilization object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1050
+#: ../../reference/mdb/model/material.rst:1048
 msgid "DamageStabilizationCohesive"
 msgstr ""
 
@@ -15700,7 +15701,7 @@ msgstr ""
 msgid "This method modifies the DamageStabilizationCohesive object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1058
+#: ../../reference/mdb/model/material.rst:1056
 msgid "Ratios"
 msgstr ""
 
@@ -15708,11 +15709,23 @@ msgstr ""
 msgid "The Ratios object specifies ratios that define anisotropic swelling."
 msgstr ""
 
-#: abaqus.Material.Ratios.Ratios:27 of
+#: abaqus.Material.Ratios.Ratios:18 of
+msgid "r11."
+msgstr ""
+
+#: abaqus.Material.Ratios.Ratios:19 of
+msgid "r22."
+msgstr ""
+
+#: abaqus.Material.Ratios.Ratios:20 of
+msgid "r33."
+msgstr ""
+
+#: abaqus.Material.Ratios.Ratios:28 of
 msgid "RATIOS"
 msgstr ""
 
-#: abaqus.Material.Ratios.Ratios:30 of
+#: abaqus.Material.Ratios.Ratios:31 of
 msgid ""
 "Check `Ratios on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ratiospyc.htm?contextscope=all>`_."
@@ -15748,7 +15761,7 @@ msgstr ""
 msgid "This method modifies the Ratios object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1066
+#: ../../reference/mdb/model/material.rst:1064
 msgid "Regularization"
 msgstr ""
 
@@ -15803,11 +15816,11 @@ msgstr ""
 msgid "This method modifies the Regularization object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1074
+#: ../../reference/mdb/model/material.rst:1072
 msgid "TestData"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1078
+#: ../../reference/mdb/model/material.rst:1076
 msgid "BiaxialTestData"
 msgstr ""
 
@@ -15850,11 +15863,11 @@ msgstr ""
 msgid "This method modifies the BiaxialTestData object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1086
+#: ../../reference/mdb/model/material.rst:1084
 msgid "BiaxialTestDataArray"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1094
+#: ../../reference/mdb/model/material.rst:1092
 msgid "MullinsEffect"
 msgstr ""
 
@@ -15969,7 +15982,7 @@ msgid ""
 "default value is an empty sequence."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1102
+#: ../../reference/mdb/model/material.rst:1100
 msgid "PlanarTestData"
 msgstr ""
 
@@ -16043,11 +16056,11 @@ msgstr ""
 msgid "This method modifies the PlanarTestData object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1110
+#: ../../reference/mdb/model/material.rst:1108
 msgid "PlanarTestDataArray"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1118
+#: ../../reference/mdb/model/material.rst:1116
 msgid "ShearTestData"
 msgstr ""
 
@@ -16065,7 +16078,7 @@ msgstr ""
 
 #: abaqus.Material.TestData.ShearTestData.ShearTestData:20
 #: abaqus.Material.TestData.ShearTestData.ShearTestData:25
-#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:29 of
+#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:31 of
 msgid "Time :math:`t (t>0)`."
 msgstr ""
 
@@ -16108,7 +16121,7 @@ msgstr ""
 msgid "This method modifies the ShearTestData object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1126
+#: ../../reference/mdb/model/material.rst:1124
 msgid "SimpleShearTestData"
 msgstr ""
 
@@ -16164,7 +16177,7 @@ msgstr ""
 msgid "This method modifies the SimpleShearTestData object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1134
+#: ../../reference/mdb/model/material.rst:1132
 msgid "UniaxialTestData"
 msgstr ""
 
@@ -16234,11 +16247,11 @@ msgstr ""
 msgid "This method modifies the UniaxialTestData object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1142
+#: ../../reference/mdb/model/material.rst:1140
 msgid "UniaxialTestDataArray"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1150
+#: ../../reference/mdb/model/material.rst:1148
 msgid "VolumetricTestData"
 msgstr ""
 
@@ -16260,7 +16273,7 @@ msgstr ""
 msgid "Volume ratio, :math:`J` (current volume/original volume)."
 msgstr ""
 
-#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:24 of
+#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:25 of
 msgid ""
 "For a viscoelastic material model, the values depend on the value of the "
 "**time** member of the  "
@@ -16268,27 +16281,27 @@ msgid ""
 " object."
 msgstr ""
 
-#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:28 of
+#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:30 of
 msgid ""
 "Normalized volumetric (bulk) modulus :math:`k_{R}(t), \\quad\\left(0 "
 "\\leq k_{R}(t) \\leq 1\\right)`"
 msgstr ""
 
-#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:32 of
+#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:35 of
 msgid ""
 "Normalized volumetric (bulk) compliance :math:`j_{K}(t), "
 "\\quad\\left(j_{K}(t) \\geq 1\\right)`."
 msgstr ""
 
-#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:33 of
+#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:36 of
 msgid "Time :math:`t(t>0)`"
 msgstr ""
 
-#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:37 of
+#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:40 of
 msgid "VOLUMETRIC TEST DATA"
 msgstr ""
 
-#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:40 of
+#: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:43 of
 msgid ""
 "Check `VolumetricTestData on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-volumetrictestdatapyc.htm?contextscope=all>`_."
@@ -16317,4 +16330,17 @@ msgstr ""
 #: of
 msgid "This method modifies the VolumetricTestData object."
 msgstr ""
+
+#~ msgid ""
+#~ "Check `Model on help.3ds.com/2017 "
+#~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Odb on help.3ds.com/2017 "
+#~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ":math:`Q_{\\infty}`(only if **parameters** = ON)."
+#~ msgstr ""
 

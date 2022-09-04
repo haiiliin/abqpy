@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 10:43+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,7 +83,7 @@ msgid "This object can be accessed by:"
 msgstr ""
 
 #: ../../../../src/abaqus/BoundaryCondition/BoundaryConditionModel.py:docstring of abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:12
-msgid "Check `Model on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+msgid "Check `BoundaryConditionModel on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../../../src/abaqus/BoundaryCondition/AccelerationBC.py:docstring of abaqus.BoundaryCondition.AccelerationBC.AccelerationBC:0
@@ -4356,10 +4356,6 @@ msgid "A SymbolicConstant specifying the propagation state of the acoustic press
 msgstr ""
 
 #: ../../reference/mdb/model/bc.rst:86
-msgid "Calibration"
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:94
 msgid "ConcentrationBC"
 msgstr ""
 
@@ -4457,7 +4453,7 @@ msgstr ""
 msgid "A Float or the SymbolicConstant FREED specifying the concentration magnitude."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:102
+#: ../../reference/mdb/model/bc.rst:94
 msgid "ConcentrationBCState"
 msgstr ""
 
@@ -4509,7 +4505,7 @@ msgstr ""
 msgid "NOT_YET_ACTIVE CREATED PROPAGATED MODIFIED DEACTIVATED NO_LONGER_ACTIVE TYPE_NOT_APPLICABLE INSTANCE_NOT_APPLICABLE PROPAGATED_FROM_BASE_STATE MODIFIED_FROM_BASE_STATE DEACTIVATED_FROM_BASE_STATE BUILT_INTO_MODES"
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:110
+#: ../../reference/mdb/model/bc.rst:102
 msgid "ConnAccelerationBC"
 msgstr ""
 
@@ -4641,7 +4637,7 @@ msgstr ""
 msgid "A Float or a SymbolicConstant specifying the connector acceleration component in the connector's local 6-direction. Possible values for the SymbolicConstant are SET, UNCHANGED, and FREED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:118
+#: ../../reference/mdb/model/bc.rst:110
 msgid "ConnAccelerationBCState"
 msgstr ""
 
@@ -4800,7 +4796,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the propagation state of the connector acceleration component in the connector's local 6-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:126
+#: ../../reference/mdb/model/bc.rst:118
 msgid "ConnDisplacementBC"
 msgstr ""
 
@@ -4941,7 +4937,7 @@ msgstr ""
 msgid "A Float, a Complex, or a SymbolicConstant specifying the rotational component in the connector's local 6-direction. Possible values for the SymbolicConstant are SET, UNCHANGED, and FREED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:134
+#: ../../reference/mdb/model/bc.rst:126
 msgid "ConnDisplacementBCState"
 msgstr ""
 
@@ -5094,7 +5090,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the propagation state of the rotational component in the connector's local 6-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:142
+#: ../../reference/mdb/model/bc.rst:134
 msgid "ConnVelocityBC"
 msgstr ""
 
@@ -5216,7 +5212,7 @@ msgstr ""
 msgid "A Float or a SymbolicConstant specifying the rotational velocity component in the connector's local 6-direction. Possible values for the SymbolicConstant are SET and FREED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:150
+#: ../../reference/mdb/model/bc.rst:142
 msgid "ConnVelocityBCState"
 msgstr ""
 
@@ -5369,7 +5365,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the propagation state of the rotational velocity component in the connector's local 6-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:158
+#: ../../reference/mdb/model/bc.rst:150
 msgid "DisplacementBaseMotionBC"
 msgstr ""
 
@@ -5475,7 +5471,7 @@ msgstr ""
 msgid "Check `DisplacementBaseMotionBC.setValuesInStep() on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displacementbasemotionbcpyc.htm?contextscope=all#simaker-displacementbasemotionbcsetvaluesinsteppyc>`_."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:166
+#: ../../reference/mdb/model/bc.rst:158
 msgid "DisplacementBaseMotionBCState"
 msgstr ""
 
@@ -5499,7 +5495,7 @@ msgstr ""
 msgid ":py:obj:`amplitude <abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState.amplitude>`\\"
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:174
+#: ../../reference/mdb/model/bc.rst:166
 msgid "DisplacementBC"
 msgstr ""
 
@@ -5629,7 +5625,7 @@ msgstr ""
 msgid "A Float, a Complex, or a SymbolicConstant specifying the rotational displacement component about the 3-direction. Possible values for the SymbolicConstant are SET, UNCHANGED, and FREED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:182
+#: ../../reference/mdb/model/bc.rst:174
 msgid "DisplacementBCState"
 msgstr ""
 
@@ -5782,7 +5778,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the propagation state of the rotational displacement component about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:190
+#: ../../reference/mdb/model/bc.rst:182
 msgid "ElectricPotentialBC"
 msgstr ""
 
@@ -5880,7 +5876,7 @@ msgstr ""
 msgid "A Float or the SymbolicConstant FREED specifying the electrical potential magnitude."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:198
+#: ../../reference/mdb/model/bc.rst:190
 msgid "ElectricPotentialBCState"
 msgstr ""
 
@@ -5928,7 +5924,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the propagation state of the electrical potential magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:206
+#: ../../reference/mdb/model/bc.rst:198
 msgid "EulerianBC"
 msgstr ""
 
@@ -6049,7 +6045,7 @@ msgstr ""
 msgid "Check `EulerianBC.setValuesInStep() on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-eulerianbcpyc.htm?contextscope=all#simaker-eulerianbcsetvaluesinsteppyc>`_."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:214
+#: ../../reference/mdb/model/bc.rst:206
 msgid "EulerianBCState"
 msgstr ""
 
@@ -6126,7 +6122,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the material flow conditions to be defined. Possible values are ZERO_PRESSURE, FREE, NON_REFLECTING, and EQUILIBRIUM. The default value is ZERO_PRESSURE."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:222
+#: ../../reference/mdb/model/bc.rst:214
 msgid "EulerianMotionBC"
 msgstr ""
 
@@ -6412,7 +6408,7 @@ msgstr ""
 msgid "Check `EulerianMotionBC.setValuesInStep() on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-eulerianmotionbcpyc.htm?contextscope=all#simaker-eulerianmotionbcsetvaluesinsteppyc>`_."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:230
+#: ../../reference/mdb/model/bc.rst:222
 msgid "EulerianMotionBCState"
 msgstr ""
 
@@ -6523,7 +6519,7 @@ msgstr ""
 msgid ":py:obj:`amplitude <abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.amplitude>`\\"
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:238
+#: ../../reference/mdb/model/bc.rst:230
 msgid "FluidCavityPressureBC"
 msgstr ""
 
@@ -6617,7 +6613,7 @@ msgstr ""
 msgid "A Float or the SymbolicConstant FREED specifying the fluid cavity pressure magnitude."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:246
+#: ../../reference/mdb/model/bc.rst:238
 msgid "FluidCavityPressureBCState"
 msgstr ""
 
@@ -6665,7 +6661,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the propagation state of the fluid cavity pressure magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:254
+#: ../../reference/mdb/model/bc.rst:246
 msgid "MagneticVectorPotentialBC"
 msgstr ""
 
@@ -6767,7 +6763,7 @@ msgstr ""
 msgid "A Complex, or a SymbolicConstant specifying the magnetic vector potential component in the 3-direction. Possible values for the SymbolicConstant areSET and UNCHANGED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:262
+#: ../../reference/mdb/model/bc.rst:254
 msgid "MaterialFlowBC"
 msgstr ""
 
@@ -6865,7 +6861,7 @@ msgstr ""
 msgid "A Float or the SymbolicConstant FREED specifying the material flow magnitude."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:270
+#: ../../reference/mdb/model/bc.rst:262
 msgid "MaterialFlowBCState"
 msgstr ""
 
@@ -6913,7 +6909,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the propagation state of the material flow magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:278
+#: ../../reference/mdb/model/bc.rst:270
 msgid "PorePressureBC"
 msgstr ""
 
@@ -7011,7 +7007,7 @@ msgstr ""
 msgid "A Float or the SymbolicConstant FREED specifying the pore pressure magnitude."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:286
+#: ../../reference/mdb/model/bc.rst:278
 msgid "PorePressureBCState"
 msgstr ""
 
@@ -7059,7 +7055,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the propagation state of the pore pressure magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:294
+#: ../../reference/mdb/model/bc.rst:286
 msgid "RetainedNodalDofsBC"
 msgstr ""
 
@@ -7165,7 +7161,7 @@ msgstr ""
 msgid "A Boolean specifying whether to retain the rotational degree of freedom about the 3-direction."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:302
+#: ../../reference/mdb/model/bc.rst:294
 msgid "SecondaryBaseBC"
 msgstr ""
 
@@ -7264,7 +7260,7 @@ msgstr ""
 msgid "Check `SecondaryBaseBC.setValuesInStep() on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-secondarybasebcpyc.htm?contextscope=all#simaker-secondarybasebcsetvaluesinsteppyc>`_."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:310
+#: ../../reference/mdb/model/bc.rst:302
 msgid "SecondaryBaseBCState"
 msgstr ""
 
@@ -7288,7 +7284,7 @@ msgstr ""
 msgid ":py:obj:`amplitude <abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState.amplitude>`\\"
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:318
+#: ../../reference/mdb/model/bc.rst:310
 msgid "SubmodelBC"
 msgstr ""
 
@@ -7426,7 +7422,7 @@ msgstr ""
 msgid "A Float specifying the thickness of the center zone size around the shell midsurface. The default value is None.The **centerZoneSize** argument is applicable only if **fixed** = OFF."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:326
+#: ../../reference/mdb/model/bc.rst:318
 msgid "SubmodelBCState"
 msgstr ""
 
@@ -7574,7 +7570,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the propagation state of the **scale** member. Possible values are SET and UNCHANGED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:334
+#: ../../reference/mdb/model/bc.rst:326
 msgid "TemperatureBC"
 msgstr ""
 
@@ -7672,7 +7668,7 @@ msgstr ""
 msgid "A Float or the SymbolicConstant FREED specifying the temperature magnitude."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:342
+#: ../../reference/mdb/model/bc.rst:334
 msgid "TemperatureBCState"
 msgstr ""
 
@@ -7728,7 +7724,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the propagation state of the temperature magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:350
+#: ../../reference/mdb/model/bc.rst:342
 msgid "TypeBC"
 msgstr ""
 
@@ -7881,7 +7877,7 @@ msgstr ""
 msgid "A Symmetry/Antisymmetry/Encastre BC cannot be edited in a propagated step."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:358
+#: ../../reference/mdb/model/bc.rst:350
 msgid "TypeBCState"
 msgstr ""
 
@@ -7928,7 +7924,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the propagation state of the predefined boundary condition type. The only possible value is UNCHANGED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:366
+#: ../../reference/mdb/model/bc.rst:358
 msgid "VelocityBaseMotionBC"
 msgstr ""
 
@@ -8034,7 +8030,7 @@ msgstr ""
 msgid "Check `VelocityBaseMotionBC.setValuesInStep() on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitybasemotionbcpyc.htm?contextscope=all#simaker-velocitybasemotionbcsetvaluesinsteppyc>`_."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:374
+#: ../../reference/mdb/model/bc.rst:366
 msgid "VelocityBaseMotionBCState"
 msgstr ""
 
@@ -8058,7 +8054,7 @@ msgstr ""
 msgid ":py:obj:`amplitude <abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState.amplitude>`\\"
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:382
+#: ../../reference/mdb/model/bc.rst:374
 msgid "VelocityBC"
 msgstr ""
 
@@ -8176,7 +8172,7 @@ msgstr ""
 msgid "A Float or a SymbolicConstant specifying the rotational velocity component about the 3-direction. Possible values for the SymbolicConstant are SET and FREED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:390
+#: ../../reference/mdb/model/bc.rst:382
 msgid "VelocityBCState"
 msgstr ""
 
