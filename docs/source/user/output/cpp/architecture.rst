@@ -18,10 +18,9 @@ A constructor is a method that creates an object. The Abaqus C++ API uses the fo
 
   Constructors for nonpersistent objects are the standard C++ constructors. For example,
   
-  .. autolink-skip:: section
   .. code-block:: cpp
 
-      odb_String partName("New_Part");  `
+      odb_String partName("New_Part");
 
 - **Constructors for persistent objects**
 
