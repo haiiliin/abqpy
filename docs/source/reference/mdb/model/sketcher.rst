@@ -9,7 +9,6 @@ Create constrained sketches
 ---------------------------
 
 .. autoclass:: abaqus.Sketcher.SketchModel.SketchModel
-    :noindex:
     :members:
 
     .. autoclasstoc::

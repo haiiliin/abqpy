@@ -9,7 +9,6 @@ Create instances
 ----------------
 
 .. autoclass:: abaqus.Assembly.AssemblyModel.AssemblyModel
-    :noindex:
     :members:
 
     .. autoclasstoc::
