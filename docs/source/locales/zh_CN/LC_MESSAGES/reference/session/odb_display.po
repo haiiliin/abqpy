@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -869,7 +869,7 @@ msgid "XMARKER"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:14
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:15
 #: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:102 of
 msgid "The default value is HOLLOW_CIRCLE."
 msgstr ""
@@ -1701,13 +1701,10 @@ msgid ""
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.legendHideOutsideLimits>`\\"
 msgstr ""
 
-#: ../../None:39:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.legendHideOutsideLimits:2 of
+#: ../../None:39:<autosummary>:1
 msgid ""
 "A Boolean specifying whether to hide the values outside the specified "
-"min/max in the contour legend. This setting hides the *autoMinValue* and "
-"*autoMaxValue* from the spectrum when *legendHideOutsideLimits*=ON.The "
-"default value is OFF."
+"min/max in the contour legend."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -1869,6 +1866,15 @@ msgid ""
 "A SymbolicConstant specifying the interval type of the contour plot. "
 "Possible values are UNIFORM, LOG, and USER_DEFINED. The default value is "
 "UNIFORM."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.legendHideOutsideLimits:2 of
+msgid ""
+"A Boolean specifying whether to hide the values outside the specified "
+"min/max in the contour legend. This setting hides the **autoMinValue** "
+"and **autoMaxValue** from the spectrum when **legendHideOutsideLimits** ="
+" ON.The default value is OFF."
 msgstr ""
 
 #: ../../docstring
@@ -2086,7 +2092,7 @@ msgstr ""
 msgid ""
 "A Boolean specifying whether the contour legend should show the lowest "
 "value at the top and the highest value at the bottom "
-"(*reversedContourLegendRange*=ON) or vice versa. The default value is "
+"(*reversedContourLegendRange* = ON) or vice versa. The default value is "
 "OFF."
 msgstr ""
 
@@ -2226,8 +2232,8 @@ msgstr ""
 #: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:160 of
 msgid ""
 "A Boolean specifying whether to hide the values outside the specified "
-"minimum/maximum for the contour interval when "
-"*legendHideOutsideLimits*=ON. The default value is OFF."
+"minimum/maximum for the contour interval when **legendHideOutsideLimits**"
+" = ON. The default value is OFF."
 msgstr ""
 
 #: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:163 of
@@ -5600,7 +5606,7 @@ msgstr ""
 #: abaqus.OdbDisplay.ViewCut.ViewCut.crossSectionalArea:2 of
 msgid ""
 "A Float returning the cross-sectional area of the cut when "
-"*showFreeBodyCut* is set to ON."
+"**showFreeBodyCut** is set to ON."
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -5817,4 +5823,37 @@ msgid ""
 "An Int specifying the minimum time between status checks (in seconds). "
 "The default value is 0."
 msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying whether to hide "
+#~ "the values outside the specified min/max"
+#~ " in the contour legend. This setting"
+#~ " hides the *autoMinValue* and "
+#~ "*autoMaxValue* from the spectrum when "
+#~ "*legendHideOutsideLimits*=ON.The default value is"
+#~ " OFF."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying whether the contour"
+#~ " legend should show the lowest value"
+#~ " at the top and the highest "
+#~ "value at the bottom "
+#~ "(*reversedContourLegendRange*=ON) or vice versa. "
+#~ "The default value is OFF."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying whether to hide "
+#~ "the values outside the specified "
+#~ "minimum/maximum for the contour interval "
+#~ "when *legendHideOutsideLimits*=ON. The default "
+#~ "value is OFF."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float returning the cross-sectional"
+#~ " area of the cut when "
+#~ "*showFreeBodyCut* is set to ON."
+#~ msgstr ""
 

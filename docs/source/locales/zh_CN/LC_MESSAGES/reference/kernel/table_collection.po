@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,7 +60,7 @@ msgstr ""
 
 #: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly:18 of
 msgid ""
-"Check `Assembly on help.3ds.com/2020 "
+"Check `TableCollectionAssembly on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -342,8 +342,8 @@ msgstr ""
 msgid ""
 "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object "
 "specifying the PartInstances and A "
-":py:class:`~abaqus.Model.Model.ModelInstance` object specifying the "
-"ModelInstances."
+":py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object "
+"specifying the ModelInstances."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -2023,7 +2023,7 @@ msgstr ""
 
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel:15 of
 msgid ""
-"Check `Model on help.3ds.com/2020 "
+"Check `TableCollectionModel on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -2952,8 +2952,10 @@ msgid ""
 " current ParameterTable."
 msgstr ""
 
-#: abaqus.TableCollection.DataTable.DataTable:18 of
-msgid "*PARAMETER TABLE"
+#: abaqus.TableCollection.DataTable.DataTable:18
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn:16
+#: abaqus.TableCollection.ParameterTable.ParameterTable:17 of
+msgid "PARAMETER TABLE"
 msgstr ""
 
 #: abaqus.TableCollection.DataTable.DataTable:20 of
@@ -3011,7 +3013,7 @@ msgstr ""
 
 #: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation:14
 #: of
-msgid "*ELEMENT PROGRESSIVE ACTIVATION"
+msgid "ELEMENT PROGRESSIVE ACTIVATION"
 msgstr ""
 
 #: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation:16
@@ -3217,11 +3219,6 @@ msgstr ""
 #: abaqus.TableCollection.ParameterColumn.ParameterColumn:15
 #: abaqus.TableCollection.ParameterTable.ParameterTable:16 of
 msgid "PARAMETER TABLE TYPE"
-msgstr ""
-
-#: abaqus.TableCollection.ParameterColumn.ParameterColumn:16
-#: abaqus.TableCollection.ParameterTable.ParameterTable:17 of
-msgid "PARAMETER TABLE"
 msgstr ""
 
 #: abaqus.TableCollection.ParameterColumn.ParameterColumn:18 of
@@ -3844,4 +3841,27 @@ msgstr ""
 #: abaqus.TableCollection.TableCollection.TableCollection.PropertyTable:29 of
 msgid "A :py:class:`~abaqus.TableCollection.PropertyTable.PropertyTable` object."
 msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly on help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` "
+#~ "object specifying the PartInstances and "
+#~ "A :py:class:`~abaqus.Model.Model.ModelInstance` object "
+#~ "specifying the ModelInstances."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Model on help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid "*PARAMETER TABLE"
+#~ msgstr ""
+
+#~ msgid "*ELEMENT PROGRESSIVE ACTIVATION"
+#~ msgstr ""
 

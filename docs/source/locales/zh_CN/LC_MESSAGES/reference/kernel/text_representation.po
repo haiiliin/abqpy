@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,11 +35,315 @@ msgstr ""
 msgid "redentABQ"
 msgstr ""
 
-#: ../../reference/kernel/text_representation.rst:19
+#: abaqus.TextRepresentation.redentABQ.indentFile:2 of
+msgid ""
+"This method outputs the indented file to the terminal window or backs up "
+"the specified file and replaces it."
+msgstr ""
+
+#: abaqus.TextRepresentation.redentABQ.indentFile:6 of
+msgid ""
+"Check `redentABQ.indentFile() on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionredentabqpyc.htm?contextscope=all"
+"#simaker-functionredentabqindentfilepyc>`_."
+msgstr ""
+
+#: abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues
+#: abaqus.TextRepresentation.redentABQ.indentFile
+#: abaqus.TextRepresentation.textRepr.getIndentedRepr
+#: abaqus.TextRepresentation.textRepr.getPaths
+#: abaqus.TextRepresentation.textRepr.getTypes
+#: abaqus.TextRepresentation.textRepr.prettyPrint
+#: abaqus.TextRepresentation.textRepr.printPaths
+#: abaqus.TextRepresentation.textRepr.printTypes of
+msgid "Parameters"
+msgstr ""
+
+#: abaqus.TextRepresentation.redentABQ.indentFile:11 of
+msgid "**path**"
+msgstr ""
+
+#: abaqus.TextRepresentation.redentABQ.indentFile:11 of
+msgid "A String specifying the file to be processed."
+msgstr ""
+
+#: abaqus.TextRepresentation.redentABQ.indentFile:16 of
+msgid "**indent**"
+msgstr ""
+
+#: abaqus.TextRepresentation.redentABQ.indentFile:14 of
+msgid ""
+"A String specifying the amount of indentation to be used. The default "
+"value is four spaces of indentation. Custom indentation strings must be "
+"flanked by quotation marks (\" \")."
+msgstr ""
+
+#: abaqus.TextRepresentation.redentABQ.indentFile:20 of
+msgid "**backup**"
+msgstr ""
+
+#: abaqus.TextRepresentation.redentABQ.indentFile:19 of
+msgid ""
+"A Boolean specifying whether to back up the file specified in the "
+"**path** argument if changes are made. The default value is False."
+msgstr ""
+
+#: abaqus.TextRepresentation.redentABQ.indentFile:24 of
+msgid "**runTest**"
+msgstr ""
+
+#: abaqus.TextRepresentation.redentABQ.indentFile:23 of
+msgid ""
+"A Boolean specifying whether to test the newly indented file to ensure "
+"that it is semantically the same after any changes. The default value is "
+"False."
+msgstr ""
+
+#: abaqus.TextRepresentation.redentABQ.indentFile
+#: abaqus.TextRepresentation.textRepr.getIndentedRepr
+#: abaqus.TextRepresentation.textRepr.getPaths
+#: abaqus.TextRepresentation.textRepr.getTypes of
+msgid "Returns"
+msgstr ""
+
+#: abaqus.TextRepresentation.redentABQ.indentFile:41 of
+msgid ":obj:`Boolean`"
+msgstr ""
+
+#: abaqus.TextRepresentation.redentABQ.indentFile:29 of
+msgid "A Boolean. True, if the indentation is successful; otherwise, False."
+msgstr ""
+
+#: ../../reference/kernel/text_representation.rst:17
 msgid "textRepr"
 msgstr ""
 
-#: ../../reference/kernel/text_representation.rst:27
+#: abaqus.TextRepresentation.textRepr.getIndentedRepr:2 of
+msgid "This method returns a String with each level of parentheses indented."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getIndentedRepr:5 of
+msgid ""
+"Check `textRepr.getIndentedRepr() on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all"
+"#simaker-functiontextreprgetindentedreprpyc>`_."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getIndentedRepr:12
+#: abaqus.TextRepresentation.textRepr.getPaths:12
+#: abaqus.TextRepresentation.textRepr.getTypes:11
+#: abaqus.TextRepresentation.textRepr.prettyPrint:13
+#: abaqus.TextRepresentation.textRepr.printPaths:13
+#: abaqus.TextRepresentation.textRepr.printTypes:11 of
+msgid "**object**"
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getIndentedRepr:10 of
+msgid ""
+"A Python object to be processed. (The Python object can be an Abaqus "
+"object.) This argument can also be a String representation of a Python "
+"object obtained from str(*object*)."
+msgstr ""
+
+#: abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues:20
+#: abaqus.TextRepresentation.textRepr.getIndentedRepr:20
+#: abaqus.TextRepresentation.textRepr.getPaths:20
+#: abaqus.TextRepresentation.textRepr.getTypes:18
+#: abaqus.TextRepresentation.textRepr.prettyPrint:20
+#: abaqus.TextRepresentation.textRepr.printPaths:20
+#: abaqus.TextRepresentation.textRepr.printTypes:18 of
+msgid "**maxRecursionDepth**"
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getIndentedRepr:15
+#: abaqus.TextRepresentation.textRepr.getPaths:15 of
+msgid ""
+"An Int specifying the maximum depth to which the object will be printed, "
+"the SymbolicConstant UNLIMITED, or None. A value of None implies that the"
+" current setting in the TextReprOptions object will be used. If "
+"**object** is not an Abaqus object, **maxRecursionDepth** has no effect. "
+"The default value is None.You should take care when setting "
+"**maxRecursionDepth** = UNLIMITED because the resulting output can be "
+"very large. To limit the output, you should set **maxElementsInSequence**"
+" to a small number."
+msgstr ""
+
+#: abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues:44
+#: abaqus.TextRepresentation.textRepr.getIndentedRepr:25
+#: abaqus.TextRepresentation.textRepr.getPaths:25
+#: abaqus.TextRepresentation.textRepr.getTypes:23
+#: abaqus.TextRepresentation.textRepr.prettyPrint:25
+#: abaqus.TextRepresentation.textRepr.printPaths:25
+#: abaqus.TextRepresentation.textRepr.printTypes:23 of
+msgid "**maxElementsInSequence**"
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getIndentedRepr:23
+#: abaqus.TextRepresentation.textRepr.getPaths:23
+#: abaqus.TextRepresentation.textRepr.getTypes:21
+#: abaqus.TextRepresentation.textRepr.prettyPrint:23
+#: abaqus.TextRepresentation.textRepr.printPaths:23
+#: abaqus.TextRepresentation.textRepr.printTypes:21 of
+msgid ""
+"An Int specifying the maximum number of elements of a sequence to return "
+"or the SymbolicConstant UNLIMITED. The initial value is 100. After the "
+"maximum number of elements have been printed, the remainder are indicated"
+" by the string '...'."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getIndentedRepr:29
+#: abaqus.TextRepresentation.textRepr.prettyPrint:42 of
+msgid "**significantDigits**"
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getIndentedRepr:28
+#: abaqus.TextRepresentation.textRepr.prettyPrint:28 of
+msgid ""
+"An Int specifying the number of significant digits for Floats in the "
+"output. Possible values are 0 << **significantDigits** ≤≤ 15. The default"
+" value is 6."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getIndentedRepr:46
+#: abaqus.TextRepresentation.textRepr.getPaths:47
+#: abaqus.TextRepresentation.textRepr.getTypes:45 of
+msgid ":class:`python:str`"
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getIndentedRepr:34
+#: abaqus.TextRepresentation.textRepr.getPaths:35
+#: abaqus.TextRepresentation.textRepr.getTypes:33 of
+msgid "A String."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getPaths:2 of
+msgid ""
+"This method processes the argument and interprets its structure. It then "
+"returns a String containing the object paths of all the child objects "
+"found."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getPaths:6 of
+msgid ""
+"Check `textRepr.getPaths() on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all"
+"#simaker-functiontextreprgetpathspyc>`_."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getPaths:11 of
+msgid ""
+"A Python object to be processed. (The Python object can be an Abaqus "
+"object.) This argument can also be a String representation of a Python "
+"object."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getPaths:30
+#: abaqus.TextRepresentation.textRepr.getTypes:28
+#: abaqus.TextRepresentation.textRepr.printPaths:43
+#: abaqus.TextRepresentation.textRepr.printTypes:41 of
+msgid "**pathRoot**"
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getPaths:28
+#: abaqus.TextRepresentation.textRepr.getTypes:26 of
+msgid ""
+"A String specifying the root of the paths. This String is prepended to "
+"each path found. The default value is None, implying that the path to "
+"**object** will be used unless **object** is a String."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getTypes:2 of
+msgid ""
+"This method processes the argument, interprets its structure, and returns"
+" a String containing all the object types within the object in the form "
+"'*TypeName* **Path**'."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getTypes:6 of
+msgid ""
+"Check `textRepr.getTypes() on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all"
+"#simaker-functiontextreprgettypespyc>`_."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getTypes:11
+#: abaqus.TextRepresentation.textRepr.prettyPrint:13
+#: abaqus.TextRepresentation.textRepr.printTypes:11 of
+msgid "An Abaqus object."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.getTypes:14
+#: abaqus.TextRepresentation.textRepr.prettyPrint:16
+#: abaqus.TextRepresentation.textRepr.printPaths:16
+#: abaqus.TextRepresentation.textRepr.printTypes:14 of
+msgid ""
+"An Int specifying the maximum depth to which the object will be printed, "
+"the SymbolicConstant UNLIMITED, or None. A value of None implies that the"
+" current setting in the TextReprOptions object will be used. The default "
+"value is None.You should take care when setting **maxRecursionDepth** = "
+"UNLIMITED because the resulting output can be very large. To limit the "
+"output, you should set **maxElementsInSequence** to a small number."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.prettyPrint:2 of
+msgid ""
+"This method prints a formatted version of the object. The prettyPrint "
+"function uses getIndentedRepr to format the String representation, but "
+"does not save the full text output of getIndentedRepr. Therefore this "
+"function can be used in cases where getIndentedRepr would run out of "
+"memory."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.prettyPrint:8 of
+msgid ""
+"Check `textRepr.prettyPrint() on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all"
+"#simaker-functiontextreprprettyprintpyc>`_."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.printPaths:2 of
+msgid ""
+"This method prints the object path of the **object** argument and its "
+"members, depending on the **maxRecursionDepth** argument. The printPaths "
+"function uses getPaths to print a list of paths to each of the child "
+"objects in **object**."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.printPaths:7 of
+msgid ""
+"Check `textRepr.printPaths() on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all"
+"#simaker-functiontextreprprintpathspyc>`_."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.printPaths:12 of
+msgid ""
+"An Abaqus object. This argument can also be a String representation of an"
+" Abaqus object obtained from str(*object*)."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.printPaths:28
+#: abaqus.TextRepresentation.textRepr.printTypes:26 of
+msgid ""
+"A String specifying the root of the paths to be printed. This String is "
+"prepended to each path found. The default value is None, implying that "
+"the path to **object** will be used."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.printTypes:2 of
+msgid ""
+"This method prints the object type. The printTypes function uses getTypes"
+" to print a list of all the object types in **object**."
+msgstr ""
+
+#: abaqus.TextRepresentation.textRepr.printTypes:6 of
+msgid ""
+"Check `textRepr.printTypes() on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all"
+"#simaker-functiontextreprprinttypespyc>`_."
+msgstr ""
+
+#: ../../reference/kernel/text_representation.rst:23
 msgid "TextReprOptions"
 msgstr ""
 
@@ -86,10 +390,6 @@ msgid ""
 "#simaker-textreproptionssetvaluespyc>`_."
 msgstr ""
 
-#: abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues of
-msgid "Parameters"
-msgstr ""
-
 #: abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues:13 of
 msgid "**style**"
 msgstr ""
@@ -101,10 +401,6 @@ msgid ""
 "object.SIMPLE: return a String representing the object as either "
 "'interface object', 'dictionary object', or 'sequence object'.The initial"
 " value is RECURSIVE."
-msgstr ""
-
-#: abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues:20 of
-msgid "**maxRecursionDepth**"
 msgstr ""
 
 #: abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues:16 of
@@ -128,10 +424,6 @@ msgid ""
 "recursion is reached. The string can include a format specifier (%s), "
 "which will be substituted by the object type. The initial value is '%s "
 "object'."
-msgstr ""
-
-#: abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues:44 of
-msgid "**maxElementsInSequence**"
 msgstr ""
 
 #: abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues:28 of

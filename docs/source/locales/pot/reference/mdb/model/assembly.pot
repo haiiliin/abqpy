@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,22 +35,24 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly:7
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase:7
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature:6
 #: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel:5
 #: ../../../../src/abaqus/Assembly/ConnectorOrientation.py:docstring of abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:6
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature:6
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance:5
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance:5
 msgid "This object can be accessed by:"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel:12
-msgid "Check `Model on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+msgid "Check `AssemblyModel on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelasmpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly:0
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature:0
 #: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel:0
 #: ../../../../src/abaqus/Assembly/ConnectorOrientation.py:docstring of abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature:0
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance:0
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance:0
 msgid "Public Methods:"
 msgstr ""
@@ -83,14 +85,14 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:5
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.Instance:5
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:11
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:6
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:6
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:6
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:6
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:6
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:6
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:6
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:11
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:6
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:6
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:6
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:6
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:6
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:6
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:6
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:8
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:8
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:6
@@ -150,15 +152,15 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment:5
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:8
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.Instance:5
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:11
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:6
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:6
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:6
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:6
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:6
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:6
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:6
 #: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel.Instance:6
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:11
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:6
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:6
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:6
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:6
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:6
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:6
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:6
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut:6
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:6
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:6
@@ -202,14 +204,14 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.unlinkInstances:0
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.writeAcisFile:0
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.writeCADParameters:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:0
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:0
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.combineElement:0
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.deleteElement:0
@@ -342,17 +344,19 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.unlinkInstances:0
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.writeAcisFile:0
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.writeCADParameters:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:0
 #: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel.Instance:0
 #: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches:0
 #: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:0
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.replace:0
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.translate:0
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.Contact:0
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut:0
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:0
@@ -367,7 +371,7 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.Instance:17
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:23
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:23
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:21
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:21
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:19
@@ -377,8 +381,8 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:32
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:21
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.Instance:17
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:23
 #: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel.Instance:18
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:23
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut:18
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:18
 msgid "**name**"
@@ -407,14 +411,14 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:0
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:0
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:0
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:0
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:0
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:0
@@ -492,17 +496,17 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:0
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:0
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:0
 #: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel.Instance:0
 #: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches:0
 #: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:0
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.Contact:0
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut:0
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:0
@@ -578,14 +582,14 @@ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container f
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly:15
-#: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase:15
 msgid "Check `Assembly on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly:0
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature:0
 #: ../../../../src/abaqus/Assembly/ConnectorOrientation.py:docstring of abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature:0
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance:0
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance:0
 msgid "Public Data Attributes:"
 msgstr ""
@@ -774,10 +778,12 @@ msgstr ""
 msgid ":py:obj:`referencePoints <abaqus.Assembly.Assembly.Assembly.referencePoints>`\\"
 msgstr ""
 
+#: ../../None:10:<autosummary>:1
 #: ../../None:28:<autosummary>:1
 #: ../../None:29:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.Assembly.Assembly.referencePoints:2
 #: ../../docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.referencePoints:2
+#: ../../docstring of abaqus.Assembly.ModelInstance.ModelInstance.referencePoints:2
 #: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.referencePoints:2
 msgid "A repository of ReferencePoint objects."
 msgstr ""
@@ -799,7 +805,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.Assembly.Assembly.allInstances:2
 #: ../../docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.allInstances:2
-msgid "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Model.Model.ModelInstance` object specifying the ModelInstances."
+msgid "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object specifying the ModelInstances."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1266,7 +1272,7 @@ msgid ":py:obj:`clashSets <abaqus.Assembly.Assembly.Assembly.clashSets>`\\ \\(ar
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
-msgid "This command prints a message describing the relationship between the contents of two sets. Possible outcomes are:     - Both sets are the same. - Set 2 is a subset of set 1. - Set 2 is a superset of set 1. - Set 2 intersects set 1. - Set 2 touches set 1 (their boundaries intersect). - Set 2 and set 1 are disjoint. This command accepts only positional arguments and has no keywords."
+msgid "This command prints a message describing the relationship between the contents of two sets."
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
@@ -1756,8 +1762,8 @@ msgstr ""
 msgid ":py:obj:`Coaxial <abaqus.Assembly.Assembly.Assembly.Coaxial>`\\ \\(movableAxis\\, fixedAxis\\, flip\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:2
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:2
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:2
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:2
 #: ../../None:10:<autosummary>:1
 msgid "This method moves an instance so that its selected face is coaxial with the selected face of a fixed instance."
 msgstr ""
@@ -1766,8 +1772,8 @@ msgstr ""
 msgid ":py:obj:`CoincidentPoint <abaqus.Assembly.Assembly.Assembly.CoincidentPoint>`\\ \\(movablePoint\\, fixedPoint\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:2
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:2
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:2
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:2
 #: ../../None:10:<autosummary>:1
 msgid "This method moves an instance so that a specified point is coincident with a specified point of a fixed instance."
 msgstr ""
@@ -1776,10 +1782,10 @@ msgstr ""
 msgid ":py:obj:`EdgeToEdge <abaqus.Assembly.Assembly.Assembly.EdgeToEdge>`\\ \\(movableAxis\\, fixedAxis\\, flip\\, ...\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:2
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:2
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:2
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:2
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:2
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:2
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:2
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:2
 #: ../../None:10:<autosummary>:1
 msgid "This method moves an instance so that its edge is parallel to an edge of a fixed instance."
 msgstr ""
@@ -1788,8 +1794,8 @@ msgstr ""
 msgid ":py:obj:`FaceToFace <abaqus.Assembly.Assembly.Assembly.FaceToFace>`\\ \\(movablePlane\\, fixedPlane\\, flip\\, ...\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:2
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:2
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:2
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:2
 #: ../../None:10:<autosummary>:1
 msgid "This method moves an instance so that its face is coincident with a face of a fixed instance."
 msgstr ""
@@ -1798,8 +1804,8 @@ msgstr ""
 msgid ":py:obj:`ParallelCsys <abaqus.Assembly.Assembly.Assembly.ParallelCsys>`\\ \\(movableCsys\\, fixedCsys\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:2
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:2
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:2
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:2
 #: ../../None:10:<autosummary>:1
 msgid "This method moves an instance so that its Datum coordinate system is parallel to a Datum coordinate system of a fixed instance."
 msgstr ""
@@ -1812,8 +1818,8 @@ msgstr ""
 msgid ":py:obj:`ParallelFace <abaqus.Assembly.Assembly.Assembly.ParallelFace>`\\ \\(movablePlane\\, fixedPlane\\, flip\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:2
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:2
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:2
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:2
 #: ../../None:10:<autosummary>:1
 msgid "This method moves an instance so that its face is parallel to a face of a fixed instance."
 msgstr ""
@@ -2350,162 +2356,162 @@ msgstr ""
 msgid "This method suppresses features."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:2
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:2
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:2
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:2
 msgid "This method creates a Feature object by creating attachment lines between the given set of source and target faces. The given points are first projected onto the source faces using the specified projection method. The points are then projected normal to the source faces onto the target faces. The user can specify the number of projections or the length of projection vector for projection onto the target faces. The lines are then created between the source face and the closest target face. Subsequent lines are created between the target faces."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:18
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:18
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:18
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:18
 msgid "Check `AttachmentLines on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attachmentlinespyc.htm?contextscope=all>`_."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:23
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:23
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:21
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:21
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:19
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:23
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:23
 msgid "A String specifying a unique Feature name."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:27
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:27
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:26
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.WirePolyLine:30
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:27
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:27
 msgid "**points**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:26
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:26
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:26
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:26
 msgid "A tuple of points. Each point can be a ConstrainedSketchVertex, Datum point, Reference point, an Attachment point, orphan mesh Node, or an Interesting point object."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:31
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:31
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:31
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:31
 msgid "**sourceFaces**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:30
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:30
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:34
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:64
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:99
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:30
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:30
 msgid "A sequence of Face objects specifying the geometry faces onto which the points are to be projected."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:35
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:35
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:35
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:35
 msgid "**sourceElementFaces**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:34
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:34
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:38
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:68
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:103
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:34
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:34
 msgid "A sequence of MeshFace objects specifying the orphan mesh element faces onto which the points are to be projected."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:39
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:39
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:39
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:39
 msgid "**targetFaces**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:38
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:38
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:38
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:38
 msgid "A sequence of Face objects specifying the geometry faces on which the attachment lines will terminate."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:43
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:43
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:43
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:43
 msgid "**targetElementFaces**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:42
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:42
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:42
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:42
 msgid "A sequence of MeshFace objects specifying the orphan mesh element faces on which the attachment lines will terminate."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:48
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:48
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:31
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:61
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:96
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:48
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:48
 msgid "**projectionMethod**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:46
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:46
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:46
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:46
 msgid "A SymbolicConstant specifying the method to be used to project onto source faces. Possible values are PROJECT_BY_PROXIMITY and PROJECT_BY_DIRECTION. The default value is PROJECT_BY_PROXIMITY."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:54
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:54
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:44
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:74
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:109
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:54
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:54
 msgid "**projectionDirStartPt**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:51
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:51
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:51
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:51
 msgid "A point specifying the start point of the projection direction to project onto source faces. The point can be a ConstrainedSketchVertex, Datum point, Reference point, Attachment point, orphan mesh Node, Interesting Point object, or a tuple of Floats representing the coordinates of a point."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:60
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:60
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:49
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:79
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:114
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:60
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:60
 msgid "**projectionDirEndPt**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:57
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:57
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:57
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:57
 msgid "A point specifying the end point of the projection direction to project onto source faces. The point can be a ConstrainedSketchVertex, Datum point, Reference point, Attachment point, orphan mesh Node, Interesting point object, or a tuple of Floats representing the coordinates of a point."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:65
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:65
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:65
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:65
 msgid "**sourceToTargetProjMethod**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:63
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:63
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:63
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:63
 msgid "A SymbolicConstant specifying the method to be used to project onto target faces. Possible values are PROJECT_BY_NUMBER and PROJECT_BY_DISTANCE. The default value is PROJECT_BY_NUMBER."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:69
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:69
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:69
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:69
 msgid "**numProjections**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:68
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:68
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:68
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:68
 msgid "An integer specifying the maximum number of layers each point should be projected onto when the source to target projection method is PROJECT_BY_NUMBER."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:73
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:73
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:73
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:73
 msgid "**projectionDistance**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:72
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:72
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:72
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:72
 msgid "A float specifying the maximum distance of the projection vector when the source to target projection method is PROJECT_BY_DISTANCE."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:77
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:77
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:77
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:77
 msgid "**flipSourceToTargetDirection**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:76
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:76
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:76
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:76
 msgid "A Boolean specifying whether the computed projection direction from the source to the target faces should be flipped."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:80
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:80
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:52
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:87
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:117
@@ -2513,81 +2519,40 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSetInternal:23
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSetInternal:10
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSurfaceInternal:10
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:80
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:80
 msgid "**setName**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:80
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:80
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:52
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:87
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:117
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:80
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:80
 msgid "A String specifying a unique set name."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:97
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:32
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:39
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:38
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:29
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:35
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:35
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByCylFace:27
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane:30
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByParToEdge:30
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis:28
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByThreePoint:33
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByThruEdge:26
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane:30
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint:30
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByDefault:31
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByOffset:45
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:54
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:40
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint:30
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal:30
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane:31
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPlaneByRotation:30
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints:33
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint:30
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:31
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByOnFace:39
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge:30
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:31
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane:29
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByExtendFace:30
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:40
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners:31
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges:30
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge:33
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal:33
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:36
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:36
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane:29
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionEdgeByParam:30
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionEdgeByPoint:29
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:41
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:39
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath:35
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketch:38
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:48
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:46
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:45
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:97
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:32
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:39
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:38
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:29
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:35
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:35
-msgid ":obj:`Feature`"
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:97
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:32
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:39
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:38
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:29
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:35
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:35
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:97
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:32
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:39
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:38
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:29
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:35
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:35
+msgid ":obj:`AssemblyFeature`"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:85
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:29
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:26
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:32
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:32
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:85
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:29
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:26
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:32
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:32
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByCylFace:24
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane:27
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByParToEdge:27
@@ -2629,12 +2594,12 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:45
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:43
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:42
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.AttachmentLines:85
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:29
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:26
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:32
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:32
-msgid "A :py:class:`~abaqus.Assembly.Feature.Feature` object."
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:85
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:29
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:26
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:32
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:32
+msgid "A :py:class:`~abaqus.Feature.Feature.Feature` object."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:2
@@ -2679,7 +2644,6 @@ msgstr ""
 msgid "A point specifying the end point of the projection direction. The point can be a ConstrainedSketchVertex, Datum point, Reference point, Attachment point, orphan mesh Node, Interesting point object, or a tuple of Floats representing the coordinates of a point."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:40
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:69
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:104
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:134
@@ -2697,13 +2661,12 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.createVirtualTopology:107
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity:30
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity:29
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:40
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.Contact:43
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.translateTo:42
 msgid "feature: :obj:`Feature`"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:28
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:28
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:57
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:92
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:122
@@ -2721,10 +2684,10 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.createVirtualTopology:95
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity:18
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity:17
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:28
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:28
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.Contact:31
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.translateTo:30
-msgid "A :py:class:`~abaqus.Assembly.Feature.Feature` object"
+msgid "A :py:class:`~abaqus.Feature.Feature.Feature` object"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:2
@@ -2952,64 +2915,64 @@ msgstr ""
 msgid "A float specifying the spacing to be used between two rows while creating a pattern of points."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:13
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:13
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:13
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:13
 msgid "Check `Coaxial on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-coaxialpyc.htm?contextscope=all>`_."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:18
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:19
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:19
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:18
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:19
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:19
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:18
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:19
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:19
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:18
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:19
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:19
 msgid "**movableAxis**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:18
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:18
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:18
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:18
 msgid "A cylindrical or conical Face on the part instance to be moved."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:21
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:23
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:23
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:21
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:23
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:23
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:21
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:23
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:23
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:21
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:23
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:23
 msgid "**fixedAxis**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:21
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:21
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:21
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:21
 msgid "A cylindrical or conical Face on the part instance that remains fixed."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:24
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:27
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:27
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:27
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:27
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:24
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:27
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:27
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:27
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:27
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:24
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:27
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:27
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:27
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:27
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:24
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:27
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:27
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:27
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:27
 msgid "**flip**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:24
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:24
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:24
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:24
 msgid "A Boolean specifying whether the axes are forward aligned (OFF) or reverse aligned (ON)."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.setValues:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:0
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:0
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:0
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:0
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByCylFace:0
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane:0
@@ -3058,22 +3021,22 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getPartSeeds:0
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.setElementType:0
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.setValues:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:0
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:0
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:0
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.checkGeometry:0
 msgid "Raises"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:45
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:52
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:51
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:42
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:48
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:48
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:45
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:52
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:51
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:42
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:48
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:48
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByCylFace:40
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane:43
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByParToEdge:43
@@ -3115,38 +3078,43 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:61
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:59
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:58
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.Coaxial:45
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:52
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:51
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:42
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:48
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:48
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:45
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:52
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:51
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:42
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:48
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:48
 msgid ":obj:`AbaqusException`"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:13
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:13
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:13
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:13
 msgid "Check `CoincidentPoint on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-coincidentpointpyc.htm?contextscope=all>`_."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:19
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:19
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:19
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:19
 msgid "**movablePoint**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:18
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:18
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:18
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:18
 msgid "A ConstrainedSketchVertex, a Datum point, or a ReferencePoint or a mesh node from an orphan mesh on the part instance to be moved."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:23
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:23
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:23
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:23
 msgid "**fixedPoint**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:22
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.CoincidentPoint:22
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:22
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:22
 msgid "A ConstrainedSketchVertex, a Datum point, or a ReferencePoint or a mesh node from an orphan mesh on the part instance to remain fixed."
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:40
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:40
+msgid "feature: :obj:`AssemblyFeature`"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:13
@@ -3250,6 +3218,50 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByCylFace:19
 msgid "A cylindrical or conical Face object."
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByCylFace:27
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane:30
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByParToEdge:30
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis:28
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByThreePoint:33
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByThruEdge:26
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane:30
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint:30
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByDefault:31
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByOffset:45
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:54
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:40
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint:30
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal:30
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane:31
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPlaneByRotation:30
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints:33
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint:30
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:31
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByOnFace:39
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge:30
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:31
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane:29
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByExtendFace:30
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:40
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners:31
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges:30
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge:33
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal:33
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:36
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:36
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane:29
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionEdgeByParam:30
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionEdgeByPoint:29
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:41
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:39
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath:35
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketch:38
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:48
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:46
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:45
+msgid ":obj:`Feature`"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane:14
@@ -3455,6 +3467,7 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByOffset:28
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByOffset:22
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.translate:26
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.translate:23
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.translate:23
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.translateTo:25
 msgid "**vector**"
@@ -3695,95 +3708,95 @@ msgstr ""
 msgid "A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a Datum object representing a datum plane.Note:Any other types of planes are not supported."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:13
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:13
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:13
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:13
 msgid "Check `EdgeToEdge on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgetoedgepyc.htm?contextscope=all>`_."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:18
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:18
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:18
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:18
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:18
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:18
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:18
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:18
 msgid "A straight Edge, a Datum axis, or an element edge from an orphan mesh on the part instance to be moved."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:22
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:22
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:22
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:22
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:22
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:22
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:22
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:22
 msgid "A straight Edge, a Datum axis, or an element edge from an orphan mesh on the part instance to remain fixed."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:26
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:26
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:26
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:26
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:26
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:26
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:26
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:26
 msgid "A Boolean specifying whether the edges are forward aligned (OFF) or reverse aligned (ON)."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:31
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:30
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:31
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:30
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:31
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:30
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:31
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:30
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.Contact:20
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.translateTo:20
 msgid "**clearance**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:30
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:30
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:30
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:30
 msgid "A Float specifying the distance between the two edges (for two-dimensional and axisymmetric instances only)."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:36
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:35
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.EdgeToEdge:36
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:35
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:36
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:35
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:36
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:35
 msgid "A Feature Object."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:13
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:13
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:13
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:13
 msgid "Check `FaceToFace on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facetofacepyc.htm?contextscope=all>`_."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:19
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:19
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:19
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:19
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:19
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:19
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:19
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:19
 msgid "**movablePlane**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:18
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:18
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:18
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:18
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:18
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:18
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:18
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:18
 msgid "A planar face, a Datum plane, or a face from an orphan mesh on the part instance to be moved."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:23
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:23
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:23
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:23
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:23
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:23
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:23
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:23
 msgid "**fixedPlane**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:22
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:22
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:22
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:22
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:22
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:22
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:22
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:22
 msgid "A planar face, a Datum plane, or a face from an orphan mesh on the part instance to remain fixed."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:26
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:26
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:26
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:26
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:26
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:26
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:26
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:26
 msgid "A Boolean specifying whether the normals to the faces are forward aligned (OFF) or reverse aligned (ON)."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:30
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.FaceToFace:30
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:30
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:30
 msgid "A Float specifying the distance between the two faces."
 msgstr ""
 
@@ -3901,38 +3914,38 @@ msgstr ""
 msgid "If the sketchUpEdge is parallel to the sketchPlane."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:13
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:13
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:13
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:13
 msgid "Check `ParallelCsys on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-parallelcsyspyc.htm?contextscope=all>`_."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:18
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:18
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:18
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:18
 msgid "**movableCsys**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:18
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:18
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:18
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:18
 msgid "A Datum coordinate system on the part instance to be moved."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:21
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:21
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:21
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:21
 msgid "**fixedCsys**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:21
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelCsys:21
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:21
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:21
 msgid "A Datum coordinate system on the part instance to remain fixed."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:13
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelEdge:13
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:13
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:13
 msgid "Check `ParallelEdge on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-paralleledgepyc.htm?contextscope=all>`_."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:13
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature.ParallelFace:13
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:13
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:13
 msgid "Check `ParallelFace on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-parallelfacepyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -4743,51 +4756,51 @@ msgstr ""
 msgid "This command prints a message describing the relationship between the contents of two sets. Possible outcomes are:"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:4
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:5
 msgid "Both sets are the same."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:5
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:6
 msgid "Set 2 is a subset of set 1."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:6
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:7
 msgid "Set 2 is a superset of set 1."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:7
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:8
 msgid "Set 2 intersects set 1."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:8
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:9
 msgid "Set 2 touches set 1 (their boundaries intersect)."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:9
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:10
 msgid "Set 2 and set 1 are disjoint."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:10
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:12
 msgid "This command accepts only positional arguments and has no keywords."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:13
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:15
 msgid "Check `Assembly.clashSets() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all#simaker-assemblyclashsetspyc>`_."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:18
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:20
 msgid "**arg1**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:18
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:20
 msgid "A Set or Surface object specifying set 1."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:34
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:36
 msgid "**arg2**"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:21
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:23
 msgid "A Set or Surface object specifying set 2."
 msgstr ""
 
@@ -5762,7 +5775,7 @@ msgstr ""
 msgid "CONSTRAINT"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:83
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:82
 msgid ":obj:`typing.Union`\\[:class:`python:float`, :class:`python:int`, :obj:`SymbolicConstant`]"
 msgstr ""
 
@@ -5771,42 +5784,59 @@ msgid "The return value is a Float, an Int, or a SymbolicConstant depending on t
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:35
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:20
 msgid "The return value is dependent on the **attribute** argument."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:37
-msgid "If **attribute** = EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying"
-msgstr ""
-
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:38
-msgid "the edge seeding method used to create the seeds along the edge. Possible values are: UNIFORM_BY_NUMBER, UNIFORM_BY_SIZE, CURVATURE_BASED_BY_SIZE, BIASED, NONE"
+msgid "If **attribute** = EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying the edge seeding method used to create the seeds along the edge. Possible values are:  UNIFORM_BY_NUMBER, UNIFORM_BY_SIZE, CURVATURE_BASED_BY_SIZE, BIASED, NONE"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:40
-msgid "If **attribute** = BIAS_METHOD, the return value is a SymbolicConstant specifying the bias"
+msgid "If **attribute** = BIAS_METHOD, the return value is a SymbolicConstant specifying the bias type used to create the seeds along the edge. Possible values are: SINGLE, DOUBLE, NONE"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:41
-msgid "type used to create the seeds along the edge. Possible values are: SINGLE, DOUBLE, NONE"
-msgstr ""
-
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:43
-msgid "If **attribute** = NUMBER, the return value is an Int specifying the number of element"
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:42
+msgid "If **attribute** = NUMBER, the return value is an Int specifying the number of element seeds along the edge."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:44
-msgid "seeds along the edge. - If **attribute** = AVERAGE_SIZE, the return value is a Float specifying the average element size along the edge. - If **attribute** = DEVIATION_FACTOR, the return value is a Float specifying the deviation factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If edge seeds are not defined, the return value is zero. - If **attribute** = MIN_SIZE_FACTOR, the return value is a Float specifying the size of the smallest allowable element as a fraction of the specified global element size. If edge seeds are not defined, the return value is zero. - If **attribute** = BIAS_RATIO, the return value is a Float specifying the length ratio of the largest element to the smallest element. - If **attribute** = BIAS_MIN_SIZE, the return value is a Float specifying the length of the largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were specified by minimum and maximum sizes. - If **attribute** = BIAS_MAX_SIZE, the return value is a Float specifying the length of the largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were specified by minimum and maximum sizes. - If **attribute** = VERTEX_ADJ_TO_SMALLEST_ELEM, the return value is an Int specifying the ID of the vertex next to the smallest element; only applicable if the EDGE_SEEDING_METHOD is BIASED. - If **attribute** = SMALLEST_ELEM_LOCATION, the return value is a SymbolicConstant specifying the location of smallest elements for double bias seeds; only applicable if the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are: SMALLEST_ELEM_AT_CENTER, SMALLEST_ELEM_AT_ENDS, NONE"
+msgid "If **attribute** = AVERAGE_SIZE, the return value is a Float specifying the average element size along the edge."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:68
-msgid "If **attribute** = CONSTRAINT, the return value is a SymbolicConstant specifying how close"
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:46
+msgid "If **attribute** = DEVIATION_FACTOR, the return value is a Float specifying the deviation factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If edge seeds are not defined, the return value is zero."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:69
-msgid "the seeds must be matched by the mesh. Possible values are: FREE, FINER, FIXED, NONE"
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:49
+msgid "If **attribute** = MIN_SIZE_FACTOR, the return value is a Float specifying the size of the smallest allowable element as a fraction of the specified global element size. If edge seeds are not defined, the return value is zero."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:71
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:52
+msgid "If **attribute** = BIAS_RATIO, the return value is a Float specifying the length ratio of the largest element to the smallest element."
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:54
+msgid "If **attribute** = BIAS_MIN_SIZE, the return value is a Float specifying the length of the largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were specified by minimum and maximum sizes."
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:57
+msgid "If **attribute** = BIAS_MAX_SIZE, the return value is a Float specifying the length of the largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were specified by minimum and maximum sizes."
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:60
+msgid "If **attribute** = VERTEX_ADJ_TO_SMALLEST_ELEM, the return value is an Int specifying the ID of the vertex next to the smallest element; only applicable if the EDGE_SEEDING_METHOD is BIASED."
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:63
+msgid "If **attribute** = SMALLEST_ELEM_LOCATION, the return value is a SymbolicConstant specifying the location of smallest elements for double bias seeds; only applicable if the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are:  SMALLEST_ELEM_AT_CENTER, SMALLEST_ELEM_AT_ENDS, NONE"
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:67
+msgid "If **attribute** = CONSTRAINT, the return value is a SymbolicConstant specifying how close the seeds must be matched by the mesh. Possible values are: FREE, FINER, FIXED, NONE"
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:70
 msgid "A value of NONE indicates that the edge is not seeded."
 msgstr ""
 
@@ -5861,8 +5891,8 @@ msgstr ""
 msgid "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object which is a sequence of Edge objects."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:40
-#: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:40
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:39
+#: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:39
 msgid ":obj:`typing.Tuple`\\[:class:`python:dict`, ...]"
 msgstr ""
 
@@ -5871,19 +5901,29 @@ msgstr ""
 msgid "A tuple of dictionary objects. Each dictionary contains five items with the following keys:"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:20
-#: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:20
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:19
+#: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:19
 msgid "**edge**: An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the attachment line."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:21
-#: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:21
-msgid "**startFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with one end of the attachment"
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:20
+#: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:20
+msgid "**startFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with one end of the  attachment line."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:22
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:22
-msgid "line. - **endFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with the other end of the attachment line. - **startVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the vertex associated with one end of the attachment line. This end is also associated with the startFace. - **endVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the vertex associated with the other end of the attachment line. This end is also associated with the endFace."
+msgid "**endFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with the other end of  the attachment line."
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:24
+#: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:24
+msgid "**startVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex`  object specifying the vertex associated with one end of the attachment line. This end is also associated with the startFace."
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:26
+#: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:26
+msgid "**endVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex`  object specifying the vertex associated with the other end of the attachment line. This end is also associated with the endFace."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:6
@@ -6031,12 +6071,8 @@ msgstr ""
 msgid "MIN_TRANSITION"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:20
-msgid "The return value is dependent on the **attribute** argument. - If **attribute** = ELEM_SHAPE, the return value is a SymbolicConstant specifying the"
-msgstr ""
-
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:22
-msgid "element shape used during meshing. Possible values are: LINE, QUAD, TRI,  QUAD_DOMINATED, HEX, TET, WEDGE, HEX_DOMINATED"
+msgid "If **attribute** = ELEM_SHAPE, the return value is a SymbolicConstant specifying the element shape used during meshing. Possible values are: LINE, QUAD, TRI,  QUAD_DOMINATED, HEX, TET, WEDGE, HEX_DOMINATED"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:24
@@ -6425,7 +6461,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch:21
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch:21
-msgid "A :py:class:`~abaqus.Assembly.Feature.Feature` object specifying a marker in the feature-based history of the part. Abaqus/CAE projects onto the sketch only the part entities that were created before the feature specified by this marker. By default, all part entities are candidates for projection."
+msgid "A :py:class:`~abaqus.Feature.Feature.Feature` object specifying a marker in the feature-based history of the part. Abaqus/CAE projects onto the sketch only the part entities that were created before the feature specified by this marker. By default, all part entities are candidates for projection."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch:27
@@ -7038,6 +7074,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.translate:13
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.translate:13
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.translate:10
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.translate:10
 msgid "A sequence of three Floats specifying a translation vector."
 msgstr ""
@@ -7213,6 +7250,10 @@ msgstr ""
 
 #: ../../reference/mdb/model/assembly.rst:31
 msgid "AssemblyBase"
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase:15
+msgid "Check `AssemblyBase on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -7859,295 +7900,295 @@ msgid "ConnectorOrientationArray"
 msgstr ""
 
 #: ../../reference/mdb/model/assembly.rst:55
-msgid "Feature"
+msgid "AssemblyFeature"
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature:2
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature:2
 msgid "The following commands operate on Feature objects. For more information about the Feature object, see Feature object."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/Feature.py:docstring of abaqus.Assembly.Feature.Feature:13
-msgid "Check `Feature on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-featurepyc.htm?contextscope=all>`_."
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature:13
+msgid "Check `AssemblyFeature on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblyfeaturepyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Assembly.Feature.Feature.name>`\\"
+msgid ":py:obj:`name <abaqus.Assembly.AssemblyFeature.AssemblyFeature.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid ":py:obj:`id <abaqus.Assembly.Feature.Feature.id>`\\"
+msgid ":py:obj:`id <abaqus.Assembly.AssemblyFeature.AssemblyFeature.id>`\\"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ":py:obj:`AttachmentLines <abaqus.Assembly.Feature.Feature.AttachmentLines>`\\ \\(name\\, points\\, sourceFaces\\, ...\\)"
+msgid ":py:obj:`AttachmentLines <abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines>`\\ \\(name\\, points\\, sourceFaces\\, ...\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ":py:obj:`Coaxial <abaqus.Assembly.Feature.Feature.Coaxial>`\\ \\(movableAxis\\, fixedAxis\\, flip\\)"
+msgid ":py:obj:`Coaxial <abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial>`\\ \\(movableAxis\\, fixedAxis\\, flip\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ":py:obj:`CoincidentPoint <abaqus.Assembly.Feature.Feature.CoincidentPoint>`\\ \\(movablePoint\\, fixedPoint\\)"
+msgid ":py:obj:`CoincidentPoint <abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint>`\\ \\(movablePoint\\, fixedPoint\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ":py:obj:`EdgeToEdge <abaqus.Assembly.Feature.Feature.EdgeToEdge>`\\ \\(movableAxis\\, fixedAxis\\, flip\\, ...\\)"
+msgid ":py:obj:`EdgeToEdge <abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge>`\\ \\(movableAxis\\, fixedAxis\\, flip\\, ...\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ":py:obj:`FaceToFace <abaqus.Assembly.Feature.Feature.FaceToFace>`\\ \\(movablePlane\\, fixedPlane\\, flip\\, ...\\)"
+msgid ":py:obj:`FaceToFace <abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace>`\\ \\(movablePlane\\, fixedPlane\\, flip\\, ...\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ":py:obj:`ParallelCsys <abaqus.Assembly.Feature.Feature.ParallelCsys>`\\ \\(movableCsys\\, fixedCsys\\)"
+msgid ":py:obj:`ParallelCsys <abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys>`\\ \\(movableCsys\\, fixedCsys\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ":py:obj:`ParallelEdge <abaqus.Assembly.Feature.Feature.ParallelEdge>`\\ \\(movableAxis\\, fixedAxis\\, flip\\)"
+msgid ":py:obj:`ParallelEdge <abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge>`\\ \\(movableAxis\\, fixedAxis\\, flip\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ":py:obj:`ParallelFace <abaqus.Assembly.Feature.Feature.ParallelFace>`\\ \\(movablePlane\\, fixedPlane\\, flip\\)"
+msgid ":py:obj:`ParallelFace <abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace>`\\ \\(movablePlane\\, fixedPlane\\, flip\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`AttachmentPoints <abaqus.Assembly.Feature.Feature.AttachmentPoints>`\\ \\(name\\, points\\[\\, ...\\]\\)"
+msgid ":py:obj:`AttachmentPoints <abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentPoints>`\\ \\(name\\, points\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`AttachmentPointsAlongDirection <abaqus.Assembly.Feature.Feature.AttachmentPointsAlongDirection>`\\ \\(name\\, ...\\[\\, ...\\]\\)"
+msgid ":py:obj:`AttachmentPointsAlongDirection <abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentPointsAlongDirection>`\\ \\(name\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`AttachmentPointsOffsetFromEdges <abaqus.Assembly.Feature.Feature.AttachmentPointsOffsetFromEdges>`\\ \\(name\\, edges\\)"
+msgid ":py:obj:`AttachmentPointsOffsetFromEdges <abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentPointsOffsetFromEdges>`\\ \\(name\\, edges\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumAxisByCylFace <abaqus.Assembly.Feature.Feature.DatumAxisByCylFace>`\\ \\(face\\)"
+msgid ":py:obj:`DatumAxisByCylFace <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumAxisByCylFace>`\\ \\(face\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumAxisByNormalToPlane <abaqus.Assembly.Feature.Feature.DatumAxisByNormalToPlane>`\\ \\(plane\\, point\\)"
+msgid ":py:obj:`DatumAxisByNormalToPlane <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumAxisByNormalToPlane>`\\ \\(plane\\, point\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumAxisByParToEdge <abaqus.Assembly.Feature.Feature.DatumAxisByParToEdge>`\\ \\(edge\\, point\\)"
+msgid ":py:obj:`DatumAxisByParToEdge <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumAxisByParToEdge>`\\ \\(edge\\, point\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumAxisByPrincipalAxis <abaqus.Assembly.Feature.Feature.DatumAxisByPrincipalAxis>`\\ \\(principalAxis\\)"
+msgid ":py:obj:`DatumAxisByPrincipalAxis <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumAxisByPrincipalAxis>`\\ \\(principalAxis\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumAxisByRotation <abaqus.Assembly.Feature.Feature.DatumAxisByRotation>`\\ \\(\\)"
+msgid ":py:obj:`DatumAxisByRotation <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumAxisByRotation>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumAxisByThreePoint <abaqus.Assembly.Feature.Feature.DatumAxisByThreePoint>`\\ \\(point1\\, point2\\, point3\\)"
+msgid ":py:obj:`DatumAxisByThreePoint <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumAxisByThreePoint>`\\ \\(point1\\, point2\\, point3\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumAxisByThruEdge <abaqus.Assembly.Feature.Feature.DatumAxisByThruEdge>`\\ \\(edge\\)"
+msgid ":py:obj:`DatumAxisByThruEdge <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumAxisByThruEdge>`\\ \\(edge\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumAxisByTwoPlane <abaqus.Assembly.Feature.Feature.DatumAxisByTwoPlane>`\\ \\(plane1\\, plane2\\)"
+msgid ":py:obj:`DatumAxisByTwoPlane <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumAxisByTwoPlane>`\\ \\(plane1\\, plane2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumAxisByTwoPoint <abaqus.Assembly.Feature.Feature.DatumAxisByTwoPoint>`\\ \\(point1\\, point2\\)"
+msgid ":py:obj:`DatumAxisByTwoPoint <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumAxisByTwoPoint>`\\ \\(point1\\, point2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumCsysByDefault <abaqus.Assembly.Feature.Feature.DatumCsysByDefault>`\\ \\(coordSysType\\[\\, name\\]\\)"
+msgid ":py:obj:`DatumCsysByDefault <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumCsysByDefault>`\\ \\(coordSysType\\[\\, name\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumCsysByOffset <abaqus.Assembly.Feature.Feature.DatumCsysByOffset>`\\ \\(coordSysType\\, ...\\[\\, name\\]\\)"
+msgid ":py:obj:`DatumCsysByOffset <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumCsysByOffset>`\\ \\(coordSysType\\, ...\\[\\, name\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumCsysByThreePoints <abaqus.Assembly.Feature.Feature.DatumCsysByThreePoints>`\\ \\(coordSysType\\, origin\\, ...\\)"
+msgid ":py:obj:`DatumCsysByThreePoints <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumCsysByThreePoints>`\\ \\(coordSysType\\, origin\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumCsysByTwoLines <abaqus.Assembly.Feature.Feature.DatumCsysByTwoLines>`\\ \\(coordSysType\\, line1\\, line2\\)"
+msgid ":py:obj:`DatumCsysByTwoLines <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumCsysByTwoLines>`\\ \\(coordSysType\\, line1\\, line2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumPlaneByPrincipalPlane <abaqus.Assembly.Feature.Feature.DatumPlaneByPrincipalPlane>`\\ \\(principalPlane\\, ...\\)"
+msgid ":py:obj:`DatumPlaneByPrincipalPlane <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumPlaneByPrincipalPlane>`\\ \\(principalPlane\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumPlaneByOffset <abaqus.Assembly.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\)"
+msgid ":py:obj:`DatumPlaneByOffset <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumPlaneByOffset>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumPlaneByRotation <abaqus.Assembly.Feature.Feature.DatumPlaneByRotation>`\\ \\(plane\\, axis\\, angle\\)"
+msgid ":py:obj:`DatumPlaneByRotation <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumPlaneByRotation>`\\ \\(plane\\, axis\\, angle\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumPlaneByThreePoints <abaqus.Assembly.Feature.Feature.DatumPlaneByThreePoints>`\\ \\(point1\\, point2\\, point3\\)"
+msgid ":py:obj:`DatumPlaneByThreePoints <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumPlaneByThreePoints>`\\ \\(point1\\, point2\\, point3\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumPlaneByLinePoint <abaqus.Assembly.Feature.Feature.DatumPlaneByLinePoint>`\\ \\(line\\, point\\)"
+msgid ":py:obj:`DatumPlaneByLinePoint <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumPlaneByLinePoint>`\\ \\(line\\, point\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumPlaneByPointNormal <abaqus.Assembly.Feature.Feature.DatumPlaneByPointNormal>`\\ \\(point\\, normal\\)"
+msgid ":py:obj:`DatumPlaneByPointNormal <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumPlaneByPointNormal>`\\ \\(point\\, normal\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumPlaneByTwoPoint <abaqus.Assembly.Feature.Feature.DatumPlaneByTwoPoint>`\\ \\(point1\\, point2\\)"
+msgid ":py:obj:`DatumPlaneByTwoPoint <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumPlaneByTwoPoint>`\\ \\(point1\\, point2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumPointByCoordinate <abaqus.Assembly.Feature.Feature.DatumPointByCoordinate>`\\ \\(coords\\)"
+msgid ":py:obj:`DatumPointByCoordinate <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumPointByCoordinate>`\\ \\(coords\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumPointByOffset <abaqus.Assembly.Feature.Feature.DatumPointByOffset>`\\ \\(point\\, vector\\)"
+msgid ":py:obj:`DatumPointByOffset <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumPointByOffset>`\\ \\(point\\, vector\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumPointByMidPoint <abaqus.Assembly.Feature.Feature.DatumPointByMidPoint>`\\ \\(point1\\, point2\\)"
+msgid ":py:obj:`DatumPointByMidPoint <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumPointByMidPoint>`\\ \\(point1\\, point2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumPointByOnFace <abaqus.Assembly.Feature.Feature.DatumPointByOnFace>`\\ \\(face\\, edge1\\, offset1\\, ...\\)"
+msgid ":py:obj:`DatumPointByOnFace <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumPointByOnFace>`\\ \\(face\\, edge1\\, offset1\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumPointByEdgeParam <abaqus.Assembly.Feature.Feature.DatumPointByEdgeParam>`\\ \\(edge\\, parameter\\)"
+msgid ":py:obj:`DatumPointByEdgeParam <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumPointByEdgeParam>`\\ \\(edge\\, parameter\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumPointByProjOnEdge <abaqus.Assembly.Feature.Feature.DatumPointByProjOnEdge>`\\ \\(point\\, edge\\)"
+msgid ":py:obj:`DatumPointByProjOnEdge <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumPointByProjOnEdge>`\\ \\(point\\, edge\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumPointByProjOnFace <abaqus.Assembly.Feature.Feature.DatumPointByProjOnFace>`\\ \\(point\\, face\\)"
+msgid ":py:obj:`DatumPointByProjOnFace <abaqus.Assembly.AssemblyFeature.AssemblyFeature.DatumPointByProjOnFace>`\\ \\(point\\, face\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`MakeSketchTransform <abaqus.Assembly.Feature.Feature.MakeSketchTransform>`\\ \\(sketchPlane\\[\\, origin\\, ...\\]\\)"
+msgid ":py:obj:`MakeSketchTransform <abaqus.Assembly.AssemblyFeature.AssemblyFeature.MakeSketchTransform>`\\ \\(sketchPlane\\[\\, origin\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionCellByDatumPlane <abaqus.Assembly.Feature.Feature.PartitionCellByDatumPlane>`\\ \\(cells\\, datumPlane\\)"
+msgid ":py:obj:`PartitionCellByDatumPlane <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionCellByDatumPlane>`\\ \\(cells\\, datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionCellByExtendFace <abaqus.Assembly.Feature.Feature.PartitionCellByExtendFace>`\\ \\(cells\\, extendFace\\)"
+msgid ":py:obj:`PartitionCellByExtendFace <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionCellByExtendFace>`\\ \\(cells\\, extendFace\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionCellByExtrudeEdge <abaqus.Assembly.Feature.Feature.PartitionCellByExtrudeEdge>`\\ \\(cells\\, edges\\, ...\\)"
+msgid ":py:obj:`PartitionCellByExtrudeEdge <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionCellByExtrudeEdge>`\\ \\(cells\\, edges\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionCellByPatchNCorners <abaqus.Assembly.Feature.Feature.PartitionCellByPatchNCorners>`\\ \\(cell\\, cornerPoints\\)"
+msgid ":py:obj:`PartitionCellByPatchNCorners <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionCellByPatchNCorners>`\\ \\(cell\\, cornerPoints\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionCellByPatchNEdges <abaqus.Assembly.Feature.Feature.PartitionCellByPatchNEdges>`\\ \\(cell\\, edges\\)"
+msgid ":py:obj:`PartitionCellByPatchNEdges <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionCellByPatchNEdges>`\\ \\(cell\\, edges\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionCellByPlaneNormalToEdge <abaqus.Assembly.Feature.Feature.PartitionCellByPlaneNormalToEdge>`\\ \\(cells\\, ...\\)"
+msgid ":py:obj:`PartitionCellByPlaneNormalToEdge <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionCellByPlaneNormalToEdge>`\\ \\(cells\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionCellByPlanePointNormal <abaqus.Assembly.Feature.Feature.PartitionCellByPlanePointNormal>`\\ \\(cells\\, ...\\)"
+msgid ":py:obj:`PartitionCellByPlanePointNormal <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionCellByPlanePointNormal>`\\ \\(cells\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionCellByPlaneThreePoints <abaqus.Assembly.Feature.Feature.PartitionCellByPlaneThreePoints>`\\ \\(cells\\, ...\\)"
+msgid ":py:obj:`PartitionCellByPlaneThreePoints <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionCellByPlaneThreePoints>`\\ \\(cells\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionCellBySweepEdge <abaqus.Assembly.Feature.Feature.PartitionCellBySweepEdge>`\\ \\(cells\\, edges\\, sweepPath\\)"
+msgid ":py:obj:`PartitionCellBySweepEdge <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionCellBySweepEdge>`\\ \\(cells\\, edges\\, sweepPath\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionEdgeByDatumPlane <abaqus.Assembly.Feature.Feature.PartitionEdgeByDatumPlane>`\\ \\(edges\\, datumPlane\\)"
+msgid ":py:obj:`PartitionEdgeByDatumPlane <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionEdgeByDatumPlane>`\\ \\(edges\\, datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionEdgeByParam <abaqus.Assembly.Feature.Feature.PartitionEdgeByParam>`\\ \\(edges\\, parameter\\)"
+msgid ":py:obj:`PartitionEdgeByParam <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionEdgeByParam>`\\ \\(edges\\, parameter\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionEdgeByPoint <abaqus.Assembly.Feature.Feature.PartitionEdgeByPoint>`\\ \\(edge\\, point\\)"
+msgid ":py:obj:`PartitionEdgeByPoint <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionEdgeByPoint>`\\ \\(edge\\, point\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionFaceByAuto <abaqus.Assembly.Feature.Feature.PartitionFaceByAuto>`\\ \\(face\\)"
+msgid ":py:obj:`PartitionFaceByAuto <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionFaceByAuto>`\\ \\(face\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionFaceByCurvedPathEdgeParams <abaqus.Assembly.Feature.Feature.PartitionFaceByCurvedPathEdgeParams>`\\ \\(face\\, ...\\)"
+msgid ":py:obj:`PartitionFaceByCurvedPathEdgeParams <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionFaceByCurvedPathEdgeParams>`\\ \\(face\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionFaceByCurvedPathEdgePoints <abaqus.Assembly.Feature.Feature.PartitionFaceByCurvedPathEdgePoints>`\\ \\(face\\, ...\\)"
+msgid ":py:obj:`PartitionFaceByCurvedPathEdgePoints <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionFaceByCurvedPathEdgePoints>`\\ \\(face\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionFaceByDatumPlane <abaqus.Assembly.Feature.Feature.PartitionFaceByDatumPlane>`\\ \\(faces\\, datumPlane\\)"
+msgid ":py:obj:`PartitionFaceByDatumPlane <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionFaceByDatumPlane>`\\ \\(faces\\, datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionFaceByExtendFace <abaqus.Assembly.Feature.Feature.PartitionFaceByExtendFace>`\\ \\(faces\\, extendFace\\)"
+msgid ":py:obj:`PartitionFaceByExtendFace <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionFaceByExtendFace>`\\ \\(faces\\, extendFace\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionFaceByIntersectFace <abaqus.Assembly.Feature.Feature.PartitionFaceByIntersectFace>`\\ \\(faces\\, cuttingFaces\\)"
+msgid ":py:obj:`PartitionFaceByIntersectFace <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionFaceByIntersectFace>`\\ \\(faces\\, cuttingFaces\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionFaceByProjectingEdges <abaqus.Assembly.Feature.Feature.PartitionFaceByProjectingEdges>`\\ \\(faces\\, edges\\)"
+msgid ":py:obj:`PartitionFaceByProjectingEdges <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionFaceByProjectingEdges>`\\ \\(faces\\, edges\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionFaceByShortestPath <abaqus.Assembly.Feature.Feature.PartitionFaceByShortestPath>`\\ \\(faces\\, point1\\, ...\\)"
+msgid ":py:obj:`PartitionFaceByShortestPath <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionFaceByShortestPath>`\\ \\(faces\\, point1\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionFaceBySketch <abaqus.Assembly.Feature.Feature.PartitionFaceBySketch>`\\ \\(faces\\, sketch\\[\\, ...\\]\\)"
+msgid ":py:obj:`PartitionFaceBySketch <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionFaceBySketch>`\\ \\(faces\\, sketch\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionFaceBySketchDistance <abaqus.Assembly.Feature.Feature.PartitionFaceBySketchDistance>`\\ \\(faces\\, ...\\[\\, ...\\]\\)"
+msgid ":py:obj:`PartitionFaceBySketchDistance <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionFaceBySketchDistance>`\\ \\(faces\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionFaceBySketchRefPoint <abaqus.Assembly.Feature.Feature.PartitionFaceBySketchRefPoint>`\\ \\(faces\\, ...\\[\\, ...\\]\\)"
+msgid ":py:obj:`PartitionFaceBySketchRefPoint <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionFaceBySketchRefPoint>`\\ \\(faces\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`PartitionFaceBySketchThruAll <abaqus.Assembly.Feature.Feature.PartitionFaceBySketchThruAll>`\\ \\(faces\\, ...\\[\\, ...\\]\\)"
+msgid ":py:obj:`PartitionFaceBySketchThruAll <abaqus.Assembly.AssemblyFeature.AssemblyFeature.PartitionFaceBySketchThruAll>`\\ \\(faces\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`ReferencePoint <abaqus.Assembly.Feature.Feature.ReferencePoint>`\\ \\(point\\[\\, instanceName\\]\\)"
+msgid ":py:obj:`ReferencePoint <abaqus.Assembly.AssemblyFeature.AssemblyFeature.ReferencePoint>`\\ \\(point\\[\\, instanceName\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`RemoveWireEdges <abaqus.Assembly.Feature.Feature.RemoveWireEdges>`\\ \\(wireEdgeList\\)"
+msgid ":py:obj:`RemoveWireEdges <abaqus.Assembly.AssemblyFeature.AssemblyFeature.RemoveWireEdges>`\\ \\(wireEdgeList\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`WirePolyLine <abaqus.Assembly.Feature.Feature.WirePolyLine>`\\ \\(points\\[\\, mergeType\\, meshable\\]\\)"
+msgid ":py:obj:`WirePolyLine <abaqus.Assembly.AssemblyFeature.AssemblyFeature.WirePolyLine>`\\ \\(points\\[\\, mergeType\\, meshable\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`isSuppressed <abaqus.Assembly.Feature.Feature.isSuppressed>`\\ \\(\\)"
+msgid ":py:obj:`isSuppressed <abaqus.Assembly.AssemblyFeature.AssemblyFeature.isSuppressed>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`restore <abaqus.Assembly.Feature.Feature.restore>`\\ \\(\\)"
+msgid ":py:obj:`restore <abaqus.Assembly.AssemblyFeature.AssemblyFeature.restore>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -8155,11 +8196,11 @@ msgid "This method restores the parameters of a feature to the value they had wh
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`resume <abaqus.Assembly.Feature.Feature.resume>`\\ \\(\\)"
+msgid ":py:obj:`resume <abaqus.Assembly.AssemblyFeature.AssemblyFeature.resume>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`setValues <abaqus.Assembly.Feature.Feature.setValues>`\\ \\(\\[parameter\\, parameter1\\, ...\\]\\)"
+msgid ":py:obj:`setValues <abaqus.Assembly.AssemblyFeature.AssemblyFeature.setValues>`\\ \\(\\[parameter\\, parameter1\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -8167,11 +8208,185 @@ msgid "This method modifies the Feature object."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`suppress <abaqus.Assembly.Feature.Feature.suppress>`\\ \\(\\)"
+msgid ":py:obj:`suppress <abaqus.Assembly.AssemblyFeature.AssemblyFeature.suppress>`\\ \\(\\)"
 msgstr ""
 
 #: ../../reference/mdb/model/assembly.rst:63
 msgid "ModelInstance"
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance:2
+msgid "A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object is an instance of a Model."
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance:13
+msgid "Check `ModelInstance on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelinstancepyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`sets <abaqus.Assembly.ModelInstance.ModelInstance.sets>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "A repository of Set objects specifying the sets created on the assembly."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`surfaces <abaqus.Assembly.ModelInstance.ModelInstance.surfaces>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid "A repository of Surface objects specifying the surfaces created on the assembly."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`vertices <abaqus.Assembly.ModelInstance.ModelInstance.vertices>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+#: ../../None:28:<autosummary>:1
+#: ../../docstring of abaqus.Assembly.ModelInstance.ModelInstance.vertices:2
+#: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.vertices:2
+msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`edges <abaqus.Assembly.ModelInstance.ModelInstance.edges>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+#: ../../None:28:<autosummary>:1
+#: ../../docstring of abaqus.Assembly.ModelInstance.ModelInstance.edges:2
+#: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.edges:2
+msgid "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`elements <abaqus.Assembly.ModelInstance.ModelInstance.elements>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+#: ../../None:28:<autosummary>:1
+#: ../../docstring of abaqus.Assembly.ModelInstance.ModelInstance.elements:2
+#: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.elements:2
+msgid "A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`nodes <abaqus.Assembly.ModelInstance.ModelInstance.nodes>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+#: ../../None:28:<autosummary>:1
+#: ../../docstring of abaqus.Assembly.ModelInstance.ModelInstance.nodes:2
+#: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.nodes:2
+msgid "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`datums <abaqus.Assembly.ModelInstance.ModelInstance.datums>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+#: ../../None:28:<autosummary>:1
+#: ../../docstring of abaqus.Assembly.ModelInstance.ModelInstance.datums:2
+#: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.datums:2
+msgid "A repository of Datum objects."
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`referencePoints <abaqus.Assembly.ModelInstance.ModelInstance.referencePoints>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.Assembly.ModelInstance.ModelInstance.__init__>`\\ \\(name\\, model\\[\\, autoOffset\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a ModelInstance object and puts it into the instances repository."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`ConvertConstraints <abaqus.Assembly.ModelInstance.ModelInstance.ConvertConstraints>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+#: ../../None:7:<autosummary>:1
+msgid "This method converts the position constraints of an instance to absolute positions."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`getPosition <abaqus.Assembly.ModelInstance.ModelInstance.getPosition>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.getPosition:2
+#: ../../None:7:<autosummary>:1
+msgid "This method prints the sum of the translations and rotations applied to the ModelInstance object."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`replace <abaqus.Assembly.ModelInstance.ModelInstance.replace>`\\ \\(instanceOf\\[\\, applyConstraints\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.replace:2
+#: ../../None:7:<autosummary>:1
+msgid "This method replaces one instance with an instance of another model."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`translate <abaqus.Assembly.ModelInstance.ModelInstance.translate>`\\ \\(vector\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.translate:2
+#: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis:2
+#: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.translate:2
+#: ../../None:17:<autosummary>:1
+#: ../../None:7:<autosummary>:1
+msgid "This method translates an instance by the specified amount."
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.ConvertConstraints:2
+#: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.ConvertConstraints:2
+msgid "This method converts the position constraints of an instance to absolute positions. The method deletes the constraint features on the instance but preserves the position in space."
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.replace:4
+msgid "The `replace` method was added."
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.replace:8
+msgid "Check `ModelInstance.replace() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelinstancepyc.htm?contextscope=all#simaker-modelinstancereplacepyc>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.replace:14
+#: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.replace:10
+msgid "**instanceOf**"
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.replace:13
+msgid "A Model object to be instanced. If the model does not exist, no ModelInstance object is created."
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.replace:33
+#: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.replace:29
+msgid "**applyConstraints**"
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.replace:17
+#: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.replace:13
+msgid "A Boolean specifying whether to apply existing constraints on the new instance or to position the new instance in the same place as the original instance. The default value is True. A value of False indicates that constraints applies to the instance are deleted will be deleted from the feature list."
+msgstr ""
+
+#: ../../docstring of abaqus.Assembly.ModelInstance.ModelInstance.sets:2
+msgid "A repository of Set objects specifying the sets created on the assembly. For more information, see [Region commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all)."
+msgstr ""
+
+#: ../../docstring of abaqus.Assembly.ModelInstance.ModelInstance.surfaces:2
+msgid "A repository of Surface objects specifying the surfaces created on the assembly. For more information, see [Region commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all)."
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.translate:5
+msgid "Check `ModelInstance.translate() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelinstancepyc.htm?contextscope=all#simaker-modelinstancetranslatepyc>`_."
 msgstr ""
 
 #: ../../reference/mdb/model/assembly.rst:71
@@ -8276,11 +8491,6 @@ msgid ":py:obj:`vertices <abaqus.Assembly.PartInstance.PartInstance.vertices>`\\
 msgstr ""
 
 #: ../../None:28:<autosummary>:1
-#: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.vertices:2
-msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object."
-msgstr ""
-
-#: ../../None:28:<autosummary>:1
 msgid ":py:obj:`ignoredVertices <abaqus.Assembly.PartInstance.PartInstance.ignoredVertices>`\\"
 msgstr ""
 
@@ -8291,11 +8501,6 @@ msgstr ""
 
 #: ../../None:28:<autosummary>:1
 msgid ":py:obj:`edges <abaqus.Assembly.PartInstance.PartInstance.edges>`\\"
-msgstr ""
-
-#: ../../None:28:<autosummary>:1
-#: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.edges:2
-msgid "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object."
 msgstr ""
 
 #: ../../None:28:<autosummary>:1
@@ -8330,26 +8535,11 @@ msgid ":py:obj:`datums <abaqus.Assembly.PartInstance.PartInstance.datums>`\\"
 msgstr ""
 
 #: ../../None:28:<autosummary>:1
-#: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.datums:2
-msgid "A repository of Datum objects."
-msgstr ""
-
-#: ../../None:28:<autosummary>:1
 msgid ":py:obj:`elements <abaqus.Assembly.PartInstance.PartInstance.elements>`\\"
 msgstr ""
 
 #: ../../None:28:<autosummary>:1
-#: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.elements:2
-msgid "A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object."
-msgstr ""
-
-#: ../../None:28:<autosummary>:1
 msgid ":py:obj:`nodes <abaqus.Assembly.PartInstance.PartInstance.nodes>`\\"
-msgstr ""
-
-#: ../../None:28:<autosummary>:1
-#: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.nodes:2
-msgid "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object."
 msgstr ""
 
 #: ../../None:28:<autosummary>:1
@@ -8463,10 +8653,6 @@ msgid ":py:obj:`ConvertConstraints <abaqus.Assembly.PartInstance.PartInstance.Co
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid "This method converts the position constraints of an instance to absolute positions."
-msgstr ""
-
-#: ../../None:17:<autosummary>:1
 msgid ":py:obj:`getPosition <abaqus.Assembly.PartInstance.PartInstance.getPosition>`\\ \\(\\)"
 msgstr ""
 
@@ -8504,12 +8690,6 @@ msgstr ""
 
 #: ../../None:17:<autosummary>:1
 msgid ":py:obj:`rotateAboutAxis <abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis>`\\ \\(axisPoint\\, axisDirection\\, angle\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis:2
-#: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.translate:2
-#: ../../None:17:<autosummary>:1
-msgid "This method translates an instance by the specified amount."
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
@@ -8559,10 +8739,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.Contact:23
 msgid "A Boolean specifying how Abaqus calculates the contact. If **isFaceEdges** is OFF, contact is computed from the movable face to the fixed face. If **isFaceEdges** is ON, contact is computed using only the edges of the movable face and not its interior. The default value is OFF."
-msgstr ""
-
-#: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.ConvertConstraints:2
-msgid "This method converts the position constraints of an instance to absolute positions. The method deletes the constraint features on the instance but preserves the position in space."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut:13
@@ -8822,19 +8998,7 @@ msgid "Check `PartInstance.replace() on help.3ds.com/2020 <https://help.3ds.com/
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.replace:10
-msgid "**instanceOf**"
-msgstr ""
-
-#: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.replace:10
 msgid "A :py:class:`~abaqus.Part.Part.Part` object specifying which Part will be instanced in place of the original Part."
-msgstr ""
-
-#: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.replace:29
-msgid "**applyConstraints**"
-msgstr ""
-
-#: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.replace:13
-msgid "A Boolean specifying whether to apply existing constraints on the new instance or to position the new instance in the same place as the original instance. The default value is True. A value of False indicates that constraints applies to the instance are deleted will be deleted from the feature list."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis:5

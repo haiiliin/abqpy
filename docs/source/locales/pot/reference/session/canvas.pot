@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -602,6 +602,8 @@ msgstr ""
 msgid "Returns a list of the user attributes of the class."
 msgstr ""
 
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:5
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.unhighlight:5
 #: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:5
 msgid "This function can be accessed by:"
 msgstr ""
@@ -614,6 +616,8 @@ msgstr ""
 #: ../../../../src/abaqus/Annotation/AnnotationViewport.py:docstring of abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:0
 #: ../../../../src/abaqus/Canvas/AttributeColorMap.py:docstring of abaqus.Canvas.AttributeColorMap.AttributeColorMap.setValues:0
 #: ../../../../src/abaqus/Canvas/AttributeColorMap.py:docstring of abaqus.Canvas.AttributeColorMap.AttributeColorMap.updateOverrides:0
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:0
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.unhighlight:0
 #: ../../../../src/abaqus/Canvas/ImageOptions.py:docstring of abaqus.Canvas.ImageOptions.ImageOptions.setValues:0
 #: ../../../../src/abaqus/Canvas/Layer.py:docstring of abaqus.Canvas.Layer.Layer.moveAfter:0
 #: ../../../../src/abaqus/Canvas/Layer.py:docstring of abaqus.Canvas.Layer.Layer.moveBefore:0
@@ -653,6 +657,8 @@ msgstr ""
 msgid "A String specifying the name of the layer to copy."
 msgstr ""
 
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:0
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.unhighlight:0
 #: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:0
 #: ../../../../src/abaqus/Canvas/ViewportBase.py:docstring of abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:0
 #: ../../../../src/abaqus/Canvas/ViewportBase.py:docstring of abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:0
@@ -1127,7 +1133,119 @@ msgstr ""
 msgid "Highlight"
 msgstr ""
 
-#: ../../reference/session/canvas.rst:72
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight:1
+msgid "The Highlight commands are used to highlight objects in the current viewport and to remove the highlighting."
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:2
+msgid "This method highlights an object in the current viewport."
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:12
+msgid "Check `Highlight.highlight() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionhighlightpyc.htm?contextscope=all#simaker-functionhighlighthighlightpyc>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:44
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.unhighlight:19
+msgid "**object**"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:17
+msgid "An object specifying the object in the current viewport to be highlighted. You can specify only a single object. Abaqus/CAE highlights only the edges of a face when highlighting a surface and a face together. The following objects are supported:"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:21
+msgid "**For the MDB**"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:23
+msgid "ConstrainedSketchVertex"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:24
+msgid "Edge"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:25
+msgid "Face"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:26
+msgid "Surface"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:27
+msgid "Cell"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:28
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:42
+msgid "Node"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:29
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:43
+msgid "Element"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:30
+msgid "Element face"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:31
+msgid "Element edge"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:32
+msgid "Feature"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:33
+msgid "Datum"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:34
+msgid "Instance"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:35
+msgid "Set"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:36
+msgid "Load"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:37
+msgid "Boundary condition"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:38
+msgid "Predefined field"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:39
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:44
+msgid "Display group"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:40
+msgid "**For the ODB**"
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.unhighlight:2
+msgid "This method removes highlighting from an object in the current viewport."
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.unhighlight:12
+msgid "Check `Highlight.unhighlight() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionhighlightpyc.htm?contextscope=all#simaker-functionhighlightunhighlightpyc>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.unhighlight:17
+msgid "An object specifying the object in the current viewport from which the highlighting will be removed. You can specify only a single object. See highlight for a list of supported objects."
+msgstr ""
+
+#: ../../reference/session/canvas.rst:70
 msgid "ImageOptions"
 msgstr ""
 
@@ -1480,7 +1598,7 @@ msgstr ""
 msgid ":obj:`RangeError`"
 msgstr ""
 
-#: ../../reference/session/canvas.rst:80
+#: ../../reference/session/canvas.rst:78
 msgid "Layer"
 msgstr ""
 
@@ -1556,7 +1674,7 @@ msgstr ""
 msgid "Check `Layer.moveBefore() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-layerpyc.htm?contextscope=all#simaker-layermovebeforepyc>`_."
 msgstr ""
 
-#: ../../reference/session/canvas.rst:88
+#: ../../reference/session/canvas.rst:86
 msgid "MovieOptions"
 msgstr ""
 
@@ -1669,7 +1787,7 @@ msgstr ""
 msgid "None or a MovieOptions object specifying the object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in the **options** member. The default value is None."
 msgstr ""
 
-#: ../../reference/session/canvas.rst:96
+#: ../../reference/session/canvas.rst:94
 msgid "ViewportBase"
 msgstr ""
 
