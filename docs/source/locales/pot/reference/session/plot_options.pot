@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2899,7 +2899,7 @@ msgstr ""
 msgid "XMARKER"
 msgstr ""
 
-#: ../../docstring of abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.nodeSymbolType:14
+#: ../../docstring of abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.nodeSymbolType:15
 msgid "The default value is HOLLOW_CIRCLE."
 msgstr ""
 
@@ -3680,7 +3680,7 @@ msgid "A String specifying the history request label. This String is read-only."
 msgstr ""
 
 #: ../../docstring of abaqus.PlotOptions.HistoryVariable.HistoryVariable.steps:2
-msgid "A tuple of (String, Int, SymbolicConstant) tuples specifying the steps. This sequence is read-only. Each inner sequence contains the following elements:*stepLabel*: A String specifying the step label.*stepNumber*: An Int specifying the step number.*procedureDomain*: A SymbolicConstant specifying the analysis type of the step, which can have these values: “TIME,” “FREQUENCY,” or “MODAL.”"
+msgid "A tuple of (String, Int, SymbolicConstant) tuples specifying the steps. This sequence is read-only. Each inner sequence contains the following elements:*stepLabel*: A String specifying the step label. *stepNumber*: An Int specifying the step number. *procedureDomain*: A SymbolicConstant specifying the analysis type of the step, which can have these values: “TIME,” “FREQUENCY,” or “MODAL.”"
 msgstr ""
 
 #: ../../reference/session/plot_options.rst:107
@@ -3779,9 +3779,7 @@ msgid "The MdbDataStep object.It corresponds to same named step in the cae model
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/MdbDataStep.py:docstring of abaqus.PlotOptions.MdbDataStep.MdbDataStep:13
-#: ../../../../src/abaqus/PlotOptions/OdbDataStep.py:docstring of abaqus.PlotOptions.OdbDataStep.OdbDataStep:13
-#: ../../../../src/abaqus/PlotOptions/OdbDiagnosticStep.py:docstring of abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep:13
-msgid "Check `Step on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgid "Check `MdbDataStep on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -4673,6 +4671,10 @@ msgstr ""
 msgid "The OdbDataStep object."
 msgstr ""
 
+#: ../../../../src/abaqus/PlotOptions/OdbDataStep.py:docstring of abaqus.PlotOptions.OdbDataStep.OdbDataStep:13
+msgid "Check `OdbDataStep on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`frames <abaqus.PlotOptions.OdbDataStep.OdbDataStep.frames>`\\"
 msgstr ""
@@ -5071,6 +5073,10 @@ msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OdbDiagnosticStep.py:docstring of abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep:2
 msgid "The OdbDiagnosticStep object stores step data."
+msgstr ""
+
+#: ../../../../src/abaqus/PlotOptions/OdbDiagnosticStep.py:docstring of abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep:13
+msgid "Check `OdbDiagnosticStep on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:28:<autosummary>:1

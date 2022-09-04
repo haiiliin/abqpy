@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,7 +43,7 @@ msgid "This object can be accessed by:"
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:15
-msgid "Check `Assembly on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
+msgid "Check `MeshEditAssembly on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:0
@@ -231,7 +231,7 @@ msgid ":py:obj:`allInstances <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Model.Model.ModelInstance` object specifying the ModelInstances."
+msgid "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object specifying the ModelInstances."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -3694,7 +3694,7 @@ msgstr ""
 msgid "A Float specifying the radius of the cylinder about which the part is to be wrapped. The wrapping procedure will relocate a node at point (xx, yy) on the planar mesh to (x,θ,zx,θ,z), where rr is the specified radius, θθ = xrxr, and zz=yy."
 msgstr ""
 
-#: ../../reference/mdb/edit_mesh.rst:28
+#: ../../reference/mdb/edit_mesh.rst:29
 msgid "MeshEditOptions"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../reference/mdb/job.rst:3
-#: ../../reference/mdb/job.rst:32
+#: ../../reference/mdb/job.rst:33
 msgid "Job"
 msgstr ""
 
@@ -364,7 +364,7 @@ msgstr ""
 msgid ":obj:`AbaqusException`"
 msgstr ""
 
-#: ../../reference/mdb/job.rst:15
+#: ../../reference/mdb/job.rst:16
 msgid "Create queues in Session"
 msgstr ""
 
@@ -483,11 +483,11 @@ msgstr ""
 msgid "If **fileCopy** = ON and **directory** is empty."
 msgstr ""
 
-#: ../../reference/mdb/job.rst:21
+#: ../../reference/mdb/job.rst:22
 msgid "Features of the job"
 msgstr ""
 
-#: ../../reference/mdb/job.rst:24
+#: ../../reference/mdb/job.rst:25
 msgid "Coexecution"
 msgstr ""
 
@@ -1113,7 +1113,7 @@ msgstr ""
 msgid "This method interrupts the execution of the script until the end of the analysis. If you call the waitForCompletion method and the **status** member is neither SUBMITTED nor RUNNING, Abaqus assumes the analysis has either completed or aborted and returns immediately."
 msgstr ""
 
-#: ../../reference/mdb/job.rst:40
+#: ../../reference/mdb/job.rst:41
 msgid "JobFromInputFile"
 msgstr ""
 
@@ -1299,7 +1299,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the type of job. Possible values are ANALYSIS, SYNTAXCHECK, and RECOVER. The default value is ANALYSIS.For theJobFromInputFile object, **type** = RESTART is not currently supported."
 msgstr ""
 
-#: ../../reference/mdb/job.rst:48
+#: ../../reference/mdb/job.rst:49
 msgid "Message"
 msgstr ""
 
@@ -1423,11 +1423,11 @@ msgstr ""
 msgid "WARNING"
 msgstr ""
 
-#: ../../reference/mdb/job.rst:56
+#: ../../reference/mdb/job.rst:57
 msgid "MessageArray"
 msgstr ""
 
-#: ../../reference/mdb/job.rst:64
+#: ../../reference/mdb/job.rst:65
 msgid "ModelJob"
 msgstr ""
 
@@ -1643,7 +1643,7 @@ msgstr ""
 msgid "A Boolean specifying whether to perform consistency checking for the job. The default value is ON.It is not recommended to turn the consistency checking off unless you are absolutely sure the model is consistent."
 msgstr ""
 
-#: ../../reference/mdb/job.rst:72
+#: ../../reference/mdb/job.rst:73
 msgid "OptimizationProcess"
 msgstr ""
 
@@ -1931,7 +1931,7 @@ msgstr ""
 msgid "A String specifying name of the optimization task to be used for the optimization process."
 msgstr ""
 
-#: ../../reference/mdb/job.rst:80
+#: ../../reference/mdb/job.rst:81
 msgid "Queue"
 msgstr ""
 
