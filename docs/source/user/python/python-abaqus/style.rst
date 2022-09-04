@@ -184,7 +184,7 @@ You will find it easier to use keyword arguments so that you do not have to conc
 Return value
 ------------
 
-All commands return a value. Many commands return the None object described in :doc:`../introduction/python-basics:python none`. Constructors (methods that create an object) always return the object being created. The return value of a command can be assigned to a Python variable. For example, in the following statement the Viewport constructor returns a Viewport object, and the variable `newViewport` refers to this new object.
+All commands return a value. Many commands return the None object described in :ref:`python-none`. Constructors (methods that create an object) always return the object being created. The return value of a command can be assigned to a Python variable. For example, in the following statement the Viewport constructor returns a Viewport object, and the variable `newViewport` refers to this new object.
 
 .. code-block:: python2
     

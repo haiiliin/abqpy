@@ -2,7 +2,7 @@
 Error handling in the Abaqus Scripting Interface
 ================================================
 
-The basics of Python's exception handling apply to the Abaqus Scripting Interface. Python's exception handling is described in :doc:`../introduction/programming:error handling`. If certain circumstances arise while a script is running, Python allows you to take the necessary action and still allows the script to continue. Alternatively, when Abaqus/CAE issues (or "throws") an exception and the exception is not handled by the script, Abaqus/CAE displays the exception message in the message area and the script stops executing.
+The basics of Python's exception handling apply to the Abaqus Scripting Interface. Python's exception handling is described in :ref:`error-handling`. If certain circumstances arise while a script is running, Python allows you to take the necessary action and still allows the script to continue. Alternatively, when Abaqus/CAE issues (or "throws") an exception and the exception is not handled by the script, Abaqus/CAE displays the exception message in the message area and the script stops executing.
 
 Standard Python exceptions
 --------------------------
@@ -68,6 +68,8 @@ For example, :numref:`cmd-int-exception-nls` shows the layout of a typical excep
     The layout of a typical exception description in the online documentation.
 
 You use the exception type in your error handling routines.
+
+.. _exception-handling:
 
 Exception handling
 ------------------
