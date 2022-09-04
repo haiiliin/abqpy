@@ -2,7 +2,7 @@
 Extending the Abaqus Scripting Interface
 ========================================
 
-You can extend the functionality of the Abaqus Scripting Interface by writing your own modules that contain classes and functions to accomplish tasks that are not directly available in Abaqus. For example, you can write a function to print the names of all materials that have a density specified, or you can write a function that creates a contour plot using a custom set of contour plot options. Creating functions and modules in Python is described in :doc:`../introduction/programming:creating functions` and :doc:`../introduction/programming:functions and modules`.
+You can extend the functionality of the Abaqus Scripting Interface by writing your own modules that contain classes and functions to accomplish tasks that are not directly available in Abaqus. For example, you can write a function to print the names of all materials that have a density specified, or you can write a function that creates a contour plot using a custom set of contour plot options. Creating functions and modules in Python is described in :ref:`creating-functions` and :ref:`functions-and-modules`.
 
 This section describes how you can extend the functionality of the Abaqus Scripting Interface.
 
