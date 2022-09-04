@@ -110,7 +110,7 @@ class CommonOptions(DGCommonOptions):
     elementShrink: Boolean = OFF
 
     #: An Int specifying the percentage to shrink the elements when **elementShrink** = ON.
-    #: Possible values are 0≤≤ **elementShrinkPercentage** ≤≤ 90. The default value is 5.
+    #: Possible values are 0≤ **elementShrinkPercentage** ≤ 90. The default value is 5.
     elementShrinkFactor: int = 5
 
     #: A Boolean specifying whether to scale coordinates. The default value is OFF.
@@ -140,7 +140,7 @@ class CommonOptions(DGCommonOptions):
     translucency: Boolean = OFF
 
     #: A Float specifying the translucency factor when **translucency** = ON. Possible values are
-    #: 0.0≤≤ **translucencyFactor** ≤≤ 1.0. The default value is 0.3.
+    #: 0.0≤ **translucencyFactor** ≤ 1.0. The default value is 0.3.
     translucencyFactor: float = 0
 
     #: A String specifying the color to be used to plot the edges of the model when
@@ -326,7 +326,7 @@ class CommonOptions(DGCommonOptions):
             value is OFF.
         elementShrinkFactor
             An Int specifying the percentage to shrink the elements when **elementShrink** = ON.
-            Possible values are 0≤≤ **elementShrinkPercentage** ≤≤ 90. The default value is 5.
+            Possible values are 0≤ **elementShrinkPercentage** ≤ 90. The default value is 5.
         coordinateScale
             A Boolean specifying whether to scale coordinates. The default value is OFF.
         coordinateScaleFactors
@@ -363,7 +363,7 @@ class CommonOptions(DGCommonOptions):
             A Boolean specifying whether to set translucency. The default value is OFF.
         translucencyFactor
             A Float specifying the translucency factor when **translucency** = ON. Possible values are
-            0.0≤≤ **translucencyFactor** ≤≤ 1.0. The default value is 0.3.
+            0.0≤ **translucencyFactor** ≤ 1.0. The default value is 0.3.
 
         Raises
         ------

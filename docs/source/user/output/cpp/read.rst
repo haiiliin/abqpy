@@ -551,7 +551,7 @@ The resulting output is
 The data in the FieldValue object depend on the field output variable, which is displacement in the above example. In the example above the field output for displacements was of type NODAL and there is a FieldValue object for the output at each node. In this case the data method returns a pointer to an array containing the displacements at the node. For INTEGRATION_POINT data each integration point in an element will correspond to a different FieldValue object, and the data method will return a pointer to an array containing the element results data at that particular integration point.
 
 .. note::
-    Access to field data using the FieldValue object will be deprecated in future releases of the C++ version of the Abaqus Scripting Interface because of the improved performance of the bulk data access method. For more information, see :py:class:`~abaqus.Odb.FieldBulkData.FieldBulkData` object and :doc:`read:using bulk data access to an output database`.
+    Access to field data using the FieldValue object will be deprecated in future releases of the C++ version of the Abaqus Scripting Interface because of the improved performance of the bulk data access method. For more information, see :py:class:`~abaqus.Odb.FieldBulkData.FieldBulkData` object and :`using bulk data access to an output database`_.
 
 Using bulk data access to an output database
 --------------------------------------------
@@ -624,7 +624,7 @@ The `numberOfElements` method returns the number of elements in a block. When yo
 
 For more information, see :py:class:`~abaqus.Odb.FieldBulkData.FieldBulkData` object.
 
-The bulkDataBlocks method is an alternative to the values method of a FieldOutput object, described in :doc:`read:reading field output data`. The `values` method of a FieldOutput object returns a reference to a sequence of FieldValue objects that contain data. Each FieldValue object in the sequence provides data for a unique location in the model.
+The bulkDataBlocks method is an alternative to the values method of a FieldOutput object, described in `reading field output data`_. The `values` method of a FieldOutput object returns a reference to a sequence of FieldValue objects that contain data. Each FieldValue object in the sequence provides data for a unique location in the model.
 
 Performance can be increased with the bulk data interface because the field data stored in a bulk data block are made available in a single array of floating point numbers. If you access the same data in nonbulk form, you must loop over a sequence of FieldValue objects and then access the data for each location separately. Traversing an array can prove to be significantly faster than traversing a sequence of objects and extracting data stored within the objects. As a result, accessing the data in an output database using the bulk data interface can be significantly faster than the nonbulk form.
 
@@ -725,9 +725,9 @@ History output is output defined for a single point or for values calculated for
 .. note::
     History data from an analysis cannot contain multiple points.
 
-The history data object model is shown in :numref:`odb-history-nls`
+The history data object model is shown in :numref:`odb-history-nls-3`.
 
-.. _odb-history-nls:
+.. _odb-history-nls-3:
 .. figure:: /images/odb-history-nls.png
     :width: 100%
     :align: center

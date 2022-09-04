@@ -137,7 +137,7 @@ class AnalyticalField(Field):
             A Boolean specifying whether to use region boundaries when averaging. The default
             value is OFF.
         regionBoundaries
-             A SymbolicConstant specifying the type of averaging region boundaries. Currently only
+            A SymbolicConstant specifying the type of averaging region boundaries. Currently only
             NONE and ODB_REGIONS are supported. Possible values are NONE, ODB_REGIONS, ELEMENT_SET,
             and DISPLAY_GROUPS. The default value is NONE.
         includeFeatureBoundaries
@@ -179,6 +179,7 @@ class AnalyticalField(Field):
                     'shell < MAT > < 7 section points >': 'SPOS, (fraction = 1.0)', 
                     'shell < MAT > < 5 section points >': 'SPOS, (fraction = 1.0)', 
                 }
+            
         refinementType
             A SymbolicConstant specifying the type of the FieldOutput object. Possible values for
             the SymbolicConstant are NO_REFINEMENT, INVARIANT and COMPONENT. Default argument is

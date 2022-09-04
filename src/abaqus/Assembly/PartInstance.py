@@ -368,7 +368,7 @@ class PartInstance:
             pattern. A positive angle corresponds to a counter-clockwise direction. The values 360°
             and -360° represent a special case where the pattern makes a full circle. In this case,
             because the copy would overlay the original, the copy is not placed at the last
-            position. Possible values are -360.0 ≤≤ **totalAngle** ≤≤ 360.0.
+            position. Possible values are -360.0 ≤ **totalAngle** ≤ 360.0.
         point
             A sequence of three Floats specifying the center of the radial pattern. The default
             value is (0.0, 0.0, 0.0).

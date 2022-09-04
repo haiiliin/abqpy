@@ -44,10 +44,10 @@ class FieldReportSession(SessionBase):
             An :py:class:`~abaqus.Odb.Odb.Odb` object from which to obtain field output values.
         step
             An Int (or stepIndex) specifying the step from which to obtain field output values.
-            Possible values are 0 ≤≤ **step** ≤≤ (*numSteps* − 1).
+            Possible values are 0 ≤ **step** ≤ (*numSteps* − 1).
         frame
             An Int (or frameIndex) specifying the frame from which to obtain field output values.
-            Possible values are 0 ≤≤ **frame** ≤≤ (*numFramesInStep* − 1).
+            Possible values are 0 ≤ **frame** ≤ (*numFramesInStep* − 1).
         outputPosition
             A SymbolicConstant specifying the position from which to obtain data. Possible values
             are NODAL, INTEGRATION_POINT, ELEMENT_FACE, ELEMENT_NODAL, ELEMENT_CENTROID,
