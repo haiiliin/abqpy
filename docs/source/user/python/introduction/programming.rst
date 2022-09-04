@@ -335,6 +335,7 @@ Python provides exception handling through the try and except commands. For exam
 
 If the file does not exist, the statement fails, and Python displays the following error message:
 
+.. autolink-skip:: section
 .. code-block:: python2
 
     >>> outputFile = open('foam.txt')
