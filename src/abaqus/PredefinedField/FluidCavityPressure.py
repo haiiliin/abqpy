@@ -6,7 +6,7 @@ from .._decorators import abaqus_class_doc, abaqus_method_doc
 @abaqus_class_doc
 class FluidCavityPressure(PredefinedField):
     """The FluidCavityPressure object stores the data for initial fluid cavity pressures. The
-    base class*region* argument can not be specifed with this object.
+    base class *region* argument can not be specifed with this object.
     The FluidCavityPressure object is derived from the PredefinedField object.
 
     .. note:: 
