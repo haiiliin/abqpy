@@ -8,7 +8,6 @@ Create interactions
 -------------------
 
 .. autoclass:: abaqus.Interaction.InteractionModel.InteractionModel
-    :noindex:
     :members:
 
     .. autoclasstoc::

@@ -16,7 +16,6 @@ Create loads
 ~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Load.LoadModel.LoadModel
-    :noindex:
     :members:
 
     .. autoclasstoc::
@@ -361,14 +360,6 @@ LineLoadState
 
     .. autoclasstoc::
 
-LoadStep
-********
-
-.. autoclass:: abaqus.Load.LoadStep.LoadStep
-    :members:
-
-    .. autoclasstoc::
-
 Moment
 ******
 
@@ -613,7 +604,6 @@ Create load cases
 
 .. autoclass:: abaqus.Load.LoadStep.LoadStep
     :members:
-    :noindex:
 
     .. autoclasstoc::
 

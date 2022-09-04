@@ -11,7 +11,6 @@ In Mdb
 ~~~~~~
 
 .. autoclass:: abaqus.Amplitude.AmplitudeModel.AmplitudeModel
-    :noindex:
     :members:
 
     .. autoclasstoc::
@@ -21,7 +20,6 @@ In Odb
 ~~~~~~
 
 .. autoclass:: abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb
-    :noindex:
     :members:
 
     .. autoclasstoc::

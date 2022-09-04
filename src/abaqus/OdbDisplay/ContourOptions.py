@@ -40,7 +40,7 @@ class ContourOptions(DGContourOptions):
     contourType: SymbolicConstant = BANDED
 
     #: An Int specifying the number of intervals when **contourStyle** = UNIFORM. Possible values
-    #: are 2 ≤≤ **numIntervals** ≤≤ 24. The default value is 12.
+    #: are 2 ≤ **numIntervals** ≤ 24. The default value is 12.
     numIntervals: int = 12
 
     #: A SymbolicConstant specifying the interval type of the contour plot. Possible values are
@@ -164,7 +164,7 @@ class ContourOptions(DGContourOptions):
     tickmarkAxisLength: SymbolicConstant = MEDIUM
 
     #: A Float specifying the base contour value defining the tick mark axis contour value that
-    #: intersects the elements. Possible values are **autoMinValue** ≤≤ **tickmarkBaseValue** ≤≤
+    #: intersects the elements. Possible values are **autoMinValue** ≤ **tickmarkBaseValue** ≤
     #: **autoMaxValue**. The default value is 0.0.
     tickmarkBaseValue: float = 0
 
@@ -256,7 +256,7 @@ class ContourOptions(DGContourOptions):
             are CONTINUOUS and UNIFORM. The default value is UNIFORM.
         numIntervals
             An Int specifying the number of intervals when **contourStyle** = UNIFORM. Possible values
-            are 2 ≤≤ **numIntervals** ≤≤ 24. The default value is 12.
+            are 2 ≤ **numIntervals** ≤ 24. The default value is 12.
         intervalType
             A SymbolicConstant specifying the interval type of the contour plot. Possible values are
             UNIFORM, LOG, and USER_DEFINED. The default value is UNIFORM.
@@ -334,7 +334,7 @@ class ContourOptions(DGContourOptions):
             SHORT, MEDIUM, and LONG. The default value is MEDIUM.
         tickmarkBaseValue
             A Float specifying the base contour value defining the tick mark axis contour value that
-            intersects the elements. Possible values are **autoMinValue** ≤≤ **tickmarkBaseValue** ≤≤
+            intersects the elements. Possible values are **autoMinValue** ≤ **tickmarkBaseValue** ≤
             **autoMaxValue**. The default value is 0.0.
         tickmarkOrientation
             A SymbolicConstant specifying the orientation of the tick mark plots. Possible values
