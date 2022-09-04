@@ -105,7 +105,7 @@ class DerivedComponent:
         ----------
         intrinsicComponents
             A sequence of Ints specifying the components of relative motion for which the
-            contributing term is defined. Possible values are 1 ≤≤ **intrinsicComponents** ≤≤ 6. Only
+            contributing term is defined. Possible values are 1 ≤ **intrinsicComponents** ≤ 6. Only
             available components can be specified if the DerivedComponent object is being referenced
             by a Potential object. This is not the case if the DerivedComponent object is referenced
             by a ConnectorFriction object directly. The default value is an empty sequence.
@@ -134,7 +134,7 @@ class DerivedComponent:
             **localDependency** = ON.
         indepComponents
             A sequence of Ints specifying the independent components included in the derived
-            component definition. Possible values are 1 ≤≤ **indepComponents** ≤≤ 6. Only available
+            component definition. Possible values are 1 ≤ **indepComponents** ≤ 6. Only available
             components can be specified. The **indepComponents** argument applies only if
             **localDependency** = ON. The default value is an empty sequence.
         tempDependency

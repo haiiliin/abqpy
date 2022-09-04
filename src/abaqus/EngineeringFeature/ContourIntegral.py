@@ -55,12 +55,12 @@ class ContourIntegral(Crack):
 
     #: A String specifying the name of the crack-front region generated from the tuple of
     #: regions specifying the crack-front region. This argument is valid only when
-    #: **listOfRegions** is ON. The default value is **name**+Front.
+    #: **listOfRegions** is ON. The default value is **name** + Front.
     crackFrontName: str = ""
 
     #: A String specifying the name of the crack-tip region generated from the tuple of regions
     #: specifying the crack-tip region. This parameter is valid only when **listOfRegions** = ON.
-    #: The default value is **name**+Tip.
+    #: The default value is **name** + Tip.
     crackTipName: str = ""
 
     #: A sequence of sequences of Floats specifying the two points of the vector that describes
@@ -137,11 +137,11 @@ class ContourIntegral(Crack):
         crackFrontName
             A String specifying the name of the crack-front region generated from the tuple of
             regions specifying the crack-front region. This argument is valid only when
-            **listOfRegions** is ON. The default value is **name**+Front.
+            **listOfRegions** is ON. The default value is **name** + Front.
         crackTipName
             A String specifying the name of the crack-tip region generated from the tuple of regions
             specifying the crack-tip region. This parameter is valid only when **listOfRegions** = ON.
-            The default value is **name**+Tip.
+            The default value is **name** + Tip.
         crackNormal
             A sequence of sequences of Floats specifying the two points of the vector that describes
             the crack normal direction. Each point is defined by a tuple of two or three coordinates
@@ -155,8 +155,8 @@ class ContourIntegral(Crack):
             default value is an empty sequence.
         midNodePosition
             A Float specifying the position of the midside node along the edges of the second-order
-            elements that radiate from the crack tip. Possible values are 0.0 << **midNodeParameter**
-            << 1.0. The default value is 0.5.
+            elements that radiate from the crack tip. Possible values are 0.0 < **midNodeParameter**
+            < 1.0. The default value is 0.5.
         collapsedElementAtTip
             A SymbolicConstant specifying the crack-tip singularity. Possible values are NONE,
             SINGLE_NODE, and DUPLICATE_NODES. The default value is NONE.
@@ -193,11 +193,11 @@ class ContourIntegral(Crack):
         crackFrontName
             A String specifying the name of the crack-front region generated from the tuple of
             regions specifying the crack-front region. This argument is valid only when
-            **listOfRegions** is ON. The default value is **name**+Front.
+            **listOfRegions** is ON. The default value is **name** + Front.
         crackTipName
             A String specifying the name of the crack-tip region generated from the tuple of regions
             specifying the crack-tip region. This parameter is valid only when **listOfRegions** = ON.
-            The default value is **name**+Tip.
+            The default value is **name** + Tip.
         crackNormal
             A sequence of sequences of Floats specifying the two points of the vector that describes
             the crack normal direction. Each point is defined by a tuple of two or three coordinates
