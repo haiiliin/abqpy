@@ -82,6 +82,7 @@ intersphinx_mapping = {
 # linkcode source
 def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]]):
     """Resolve linkcode source
+    
     Parameters
     ----------
     domain : str
