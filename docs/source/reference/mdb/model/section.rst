@@ -18,7 +18,6 @@ In Mdb
 ~~~~~~
 
 .. autoclass:: abaqus.Section.SectionModel.SectionModel
-    :noindex:
     :members:
 
     .. autoclasstoc::
@@ -28,7 +27,6 @@ In Odb
 ~~~~~~
 
 .. autoclass:: abaqus.Section.SectionOdb.SectionOdb
-    :noindex:
     :members:
 
     .. autoclasstoc::
@@ -51,15 +49,6 @@ SectionBase
 
 .. autoclass:: abaqus.Section.SectionBase.SectionBase
     :members:
-
-    .. autoclasstoc::
-
-ConnectorSection
-~~~~~~~~~~~~~~~~
-
-.. autoclass:: abaqus.Connector.ConnectorSection.ConnectorSection
-    :members:
-    :noindex:
 
     .. autoclasstoc::
 
@@ -227,11 +216,6 @@ SectionLayerArray
 ~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Section.SectionLayerArray.SectionLayerArray
-    :members:
-
-    .. autoclasstoc::
-
-.. autoclass:: abaqus.Section.SectionOdb.SectionOdb
     :members:
 
     .. autoclasstoc::
