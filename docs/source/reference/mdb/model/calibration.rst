@@ -9,7 +9,6 @@ Create material calibrations
 ----------------------------
 
 .. autoclass:: abaqus.Calibration.CalibrationModel.CalibrationModel
-    :noindex:
     :members:
 
     .. autoclasstoc::
