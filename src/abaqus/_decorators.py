@@ -70,7 +70,7 @@ class AbaqusDoc:
         module_name = f"{type if type == 'module' else ''}{class_or_module_name.lower()}"
         link = (f"https://help.3ds.com/{version}/English/DSSIMULIA_Established/SIMACAEKERRefMap/"
                 f"simaker-c-{prefix}{module_name}{suffix}pyc.htm?contextscope=all")
-        return link, f"Check `{label} on help.3ds.com/{version} <{link}>`_."
+        return link, f"Check `{label} on help.3ds.com/{version} <{link}>`__."
 
     @classmethod
     def _method_or_function_link(
@@ -108,7 +108,7 @@ class AbaqusDoc:
         """
         # For methods that start with a capital letter, the link is to the corresponding class documentation.
         if method_or_function_name[0].isupper():
-            return cls._class_or_module_link('class', method_or_function_name, prefix)
+            return cls._class_or_module_link('class', method_or_function_name, prefix, suffix, method_or_function_name)
         class_name = f"{type if type == 'function' else ''}{class_or_module_name.lower()}"
         function_prefix = prefix if type == 'function' else ''
         if type == 'class' and method_or_function_name == '__init__':
@@ -122,7 +122,7 @@ class AbaqusDoc:
             signature = f"{class_or_module_name}.{method_or_function_name}()"
         if label is None:
             label = signature
-        return link, f"Check `{label} on help.3ds.com/{version} <{link}>`_."
+        return link, f"Check `{label} on help.3ds.com/{version} <{link}>`__."
 
     @classmethod
     def _add_link_in_class_or_module_docstring(
@@ -356,6 +356,7 @@ def abaqus_function_doc(func):
         function_name=func.__name__,
         docstring=func.__doc__,
         prefix='gpr' if module_name.lower().startswith('cae') else '',
+        label=f'{module_name}.{func.__name__}',
     )
     return func
 
@@ -406,7 +407,8 @@ def abaqus_method_doc(method):
         method_name=method.__name__,
         docstring=method.__doc__,
         prefix='gpr' if class_name.lower().startswith('cae') else '',
-        suffix=class_suffix.get(class_name, '')
+        suffix=class_suffix.get(class_name, ''),
+        label=f'{class_name}.{method.__name__}',
     )
     return method
 
@@ -421,7 +423,7 @@ def abaqus_class_doc(cls):
         docstring=cls.__doc__,
         prefix='gpr' if class_name.lower().startswith('cae') else '',
         suffix=class_suffix.get(class_name, ''),
-        label=class_name if processed_class_name in ['Mdb', 'Model', 'Step', 'Assembly', 'Odb', 'Part'] else None,
+        label=class_name,
     )
     return cls
 

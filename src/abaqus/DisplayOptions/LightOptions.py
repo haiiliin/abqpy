@@ -51,7 +51,7 @@ class LightOptions:
 
     #: A Float specifying the degree to which specular reflection is focused. The higher the
     #: **materialShininess** argument, the more focused the specular highlight. Possible values
-    #: are 0.0 ≤≤ **polygonOffsetConstant** ≤≤ 128.0. The default value is 105.0.
+    #: are 0.0 ≤ **polygonOffsetConstant** ≤ 128.0. The default value is 105.0.
     materialShininess: float = 105
 
     #: A :py:class:`~abaqus.DisplayOptions.LightArray.LightArray` object of length 8.
@@ -105,7 +105,7 @@ class LightOptions:
         materialShininess
             A Float specifying the degree to which specular reflection is focused. The higher the
             **materialShininess** argument, the more focused the specular highlight. Possible values
-            are 0.0 ≤≤ **polygonOffsetConstant** ≤≤ 128.0. The default value is 105.0.
+            are 0.0 ≤ **polygonOffsetConstant** ≤ 128.0. The default value is 105.0.
 
         Raises
         ------

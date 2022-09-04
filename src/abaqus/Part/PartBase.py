@@ -425,7 +425,7 @@ class PartBase(PartFeature):
             EULERIAN, DISCRETE_RIGID_SURFACE, and ANALYTIC_RIGID_SURFACE.
         bodyNum
             An Int specifying the desired body to be selected from an ACIS object containing a list
-            of **N** ACIS bodies. Possible values are 1 ≤≤ **bodyNum** ≤≤ **N**. The default value is 1.
+            of **N** ACIS bodies. Possible values are 1 ≤ **bodyNum** ≤ **N**. The default value is 1.
         combine
             A Boolean specifying weather to create a single part by combining all the bodies in the
             ACIS object. This argument is ignored if **bodyNum** is specified. The default value is

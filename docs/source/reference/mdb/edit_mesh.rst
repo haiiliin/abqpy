@@ -21,7 +21,6 @@ Edit mesh features of Part
 
 .. autoclass:: abaqus.EditMesh.MeshEditPart.MeshEditPart
     :members:
-    :noindex:
 
     .. autoclasstoc::
 

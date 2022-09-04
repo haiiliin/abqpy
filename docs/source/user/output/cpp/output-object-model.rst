@@ -97,9 +97,9 @@ Results data describe the results of your analysis. Abaqus organizes the analysi
 
 - **Field output**
 
-  Field output is intended for infrequent requests for a large portion of the model and can be used to generate contour plots, animations, symbol plots, and displaced shape plots in the Visualization module of Abaqus/CAE. You can also use field output to generate an **X - Y** data plot. Only complete sets of basic variables (for example, all the stress or strain components) can be requested as field output. Field output is composed of a cloud of data values (e.g., stress tensors at each integration point for all elements). Each data value has a location, type, and value. You use the regions defined in the model data, such as an element set, to access subsets of the field output data. :numref:`odb-field-nls` shows the field output data object model within an output database.
+  Field output is intended for infrequent requests for a large portion of the model and can be used to generate contour plots, animations, symbol plots, and displaced shape plots in the Visualization module of Abaqus/CAE. You can also use field output to generate an **X - Y** data plot. Only complete sets of basic variables (for example, all the stress or strain components) can be requested as field output. Field output is composed of a cloud of data values (e.g., stress tensors at each integration point for all elements). Each data value has a location, type, and value. You use the regions defined in the model data, such as an element set, to access subsets of the field output data. :numref:`odb-field-nls-1` shows the field output data object model within an output database.
   
-  .. _odb-field-nls:
+  .. _odb-field-nls-1:
   .. figure:: /images/odb-field-nls.png
       :width: 100%
       :align: center
@@ -117,9 +117,9 @@ Results data describe the results of your analysis. Abaqus organizes the analysi
   - a region
   - the whole model
   
-  The output from all history requests that relate to a particular point or region is then collected in one HistoryRegion object. :numref:`odb-history-nls` shows the history output data object model within an output database.
+  The output from all history requests that relate to a particular point or region is then collected in one HistoryRegion object. :numref:`odb-history-nls-2` shows the history output data object model within an output database.
   
-  .. _odb-history-nls:
+  .. _odb-history-nls-2:
   .. figure:: /images/odb-history-nls.png
       :width: 100%
       :align: center

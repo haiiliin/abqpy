@@ -1500,7 +1500,7 @@ class Material(MaterialBase):
         n
             An Int specifying the order of the strain energy potential. The default value is 1.If
             **testData** = ON and **type** = POLYNOMIAL, **n** can take only the values 1 or 2.If
-            **testData** = ON and **type** = OGDEN or if **testData** = OFF for either type, 1 ≤n≤≤n≤ 6.If
+            **testData** = ON and **type** = OGDEN or if **testData** = OFF for either type, 1 ≤n≤n≤ 6.If
             **type** = USER, this argument cannot be used.
         beta
             The SymbolicConstant FITTED_VALUE or a Float specifying the invariant mixture parameter.
@@ -1605,7 +1605,7 @@ class Material(MaterialBase):
             None or a Float specifying the effective Poisson's ratio, νν, of the material. This
             argument is valid only when **testData** = ON. The default value is None.
         n
-            An Int specifying the order of the strain energy potential. Possible values are 1 ≤n≤≤n≤
+            An Int specifying the order of the strain energy potential. Possible values are 1 ≤n≤n≤
             6. The default value is 1.
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
@@ -1675,7 +1675,7 @@ class Material(MaterialBase):
         fraction
             A Float specifying the fraction of inelastic dissipation rate that appears as a heat
             flux per unit volume. The fraction may include a unit conversion factor if required.
-            Possible values are 0.0 ≤≤ **fraction** ≤≤ 1.0. The default value is 0.9.
+            Possible values are 0.0 ≤ **fraction** ≤ 1.0. The default value is 0.9.
 
         Returns
         -------
@@ -2373,7 +2373,7 @@ class Material(MaterialBase):
         scanning: float = 0,
         exsorptionTable: tuple = (),
     ) -> Sorption:
-        """This method creates a Sorption object.
+        r"""This method creates a Sorption object.
 
         .. note:: 
             This function can be accessed by:
@@ -2396,8 +2396,8 @@ class Material(MaterialBase):
             A SymbolicConstant specifying exsorption behavior. Possible values are LOG and TABULAR.
             The default value is TABULAR.
         scanning
-            A Float specifying the slope of the scanning line, :math:`\left.\left(d u_{w} / d s\right)\right|_{s}`. This slope must be
-            positive and larger than the slope of the absorption or exsorption behaviors. The
+            A Float specifying the slope of the scanning line, :math:`\left.\left(d u_{w} / d s\right)\right|_{s}`. 
+            This slope must be positive and larger than the slope of the absorption or exsorption behaviors. The
             default value is 0.0.
         exsorptionTable
             A sequence of sequences of Floats specifying the items described below. The default

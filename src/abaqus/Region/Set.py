@@ -26,6 +26,7 @@ class Set(Region):
     vertices/edges/faces/cells/elements/nodes respectively for each part instance contained
     in the set. For example:
 
+    .. autolink-skip:: section
     .. code-block:: python
 
         assembly=mdb.models['Transmission'].rootAssembly

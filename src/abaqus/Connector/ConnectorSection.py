@@ -131,12 +131,12 @@ class ConnectorSection(SectionBase):
             argument is only applicable if **evolution** = ON.
         affectedComponents
             A sequence of Ints specifying the components of relative motion that will be damaged.
-            Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be specified.
+            Possible values are 1 ≤ **components** ≤ 6. Only available components can be specified.
             This argument is applicable only if **evolution** = ON and **useAffected** = ON. The default
             value is an empty sequence.
         components
             A sequence of Ints specifying the components of relative motion for which the behavior
-            is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+            is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
             specified. This argument can be specified only if **coupling** = UNCOUPLED. The default
             value is an empty sequence.
 
@@ -215,7 +215,7 @@ class ConnectorSection(SectionBase):
             can be specified. The default value is an empty sequence.
         components
             A sequence of Ints specifying the components of relative motion for which the behavior
-            is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+            is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
             specified. The default value is an empty sequence.
 
         Returns
@@ -290,7 +290,7 @@ class ConnectorSection(SectionBase):
             specified. The default value is an empty sequence.
         components
             A sequence of Ints specifying the components of relative motion for which the behavior
-            is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+            is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
             specified. The default value is an empty sequence.
 
         Returns
@@ -350,7 +350,7 @@ class ConnectorSection(SectionBase):
             is None.
         components
             A sequence of Ints specifying the components of relative motion for which the behavior
-            is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+            is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
             specified. The default value is an empty sequence.
 
         Returns
@@ -412,7 +412,7 @@ class ConnectorSection(SectionBase):
             **frictionModel** = USER_CUSTOMIZED.
         tangentDirection
             None or an Int specifying the direction for which the frictional behavior is specified.
-            Possible values are 1 ≤≤ **tangentDirection** ≤≤ 6, indicating an available component of
+            Possible values are 1 ≤ **tangentDirection** ≤ 6, indicating an available component of
             relative motion. This argument applies only if **frictionModel** = USER_CUSTOMIZED and if
             **slipStyle** = SPECIFY. The default value is None.
         stickStiffness
@@ -483,8 +483,8 @@ class ConnectorSection(SectionBase):
             the data depend on temperature.Value of the first field variable, if the data depend on
             field variables.Value of the second field variable.Etc.
         independentComponents
-            A sequence of Ints specifying the independent components. Possible values are 1 ≤≤
-            **independentComponents** ≤≤ 6. In addition, each independent component value must be
+            A sequence of Ints specifying the independent components. Possible values are 1 ≤
+            **independentComponents** ≤ 6. In addition, each independent component value must be
             unique. The **independentComponents** argument applies only if
             **frictionModel** = USER_CUSTOMIZED. Only available components can be specified. The default
             value is an empty sequence.
@@ -547,7 +547,7 @@ class ConnectorSection(SectionBase):
             is None.
         components
             A sequence of Ints specifying the components of relative motion for which the behavior
-            is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+            is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
             specified. The default value is an empty sequence.
 
         Returns
@@ -647,7 +647,7 @@ class ConnectorSection(SectionBase):
             **kinematic** = ON. The default value is an empty sequence.
         components
             A sequence of Ints specifying the components of relative motion for which the behavior
-            is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+            is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
             specified. This argument can be specified only if **coupling** = UNCOUPLED. The default
             value is an empty sequence.
 
@@ -694,8 +694,8 @@ class ConnectorSection(SectionBase):
             COMPONENT_NUMBER and DERIVED_COMPONENT. The default value is COMPONENT_NUMBER.
         componentNumber
             An Int specifying the component number used in the contribution. This argument is
-            applicable only if **componentStyle** = COMPONENT_NUMBER. Possible values are 1 ≤≤
-            **componentNumber** ≤≤ 6. Only available components can be specified. The default value is
+            applicable only if **componentStyle** = COMPONENT_NUMBER. Possible values are 1 ≤
+            **componentNumber** ≤ 6. Only available components can be specified. The default value is
             0.
         sign
             A SymbolicConstant specifying the sign of the contribution. Possible values are POSITIVE
@@ -753,7 +753,7 @@ class ConnectorSection(SectionBase):
             specified components, or no upper bound. The default value is None.
         components
             A sequence of Ints specifying the components of relative motion for which the behavior
-            is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+            is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
             specified. The default value is an empty sequence.
 
         Returns
