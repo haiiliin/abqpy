@@ -423,7 +423,7 @@ class View:
         Parameters
         ----------
         zoomFactor
-            A Float specifying the amount to zoom. Possible values are 0.000001 ≤≤ **zoomFactor** ≤≤
+            A Float specifying the amount to zoom. Possible values are 0.000001 ≤ **zoomFactor** ≤
             1000000. A **zoomFactor** less than one reduces the image. A **zoomFactor** greater than one
             enlarges the image.
         mode

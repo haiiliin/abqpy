@@ -371,29 +371,29 @@ class ConstrainedSketch(
         ----------
         number1
             An Integer specifying the total number of copies, including the original objects, that
-            appear along the first direction in the pattern. Possible values are 1 ≤≤ **number1** ≤≤
+            appear along the first direction in the pattern. Possible values are 1 ≤ **number1** ≤
             1000.
         spacing1
             A Float specifying the spacing between copies along the first direction in the pattern.
-            Possible values are 0.0 ≤≤ **spacing1** .
+            Possible values are 0.0 ≤ **spacing1** .
         angle1
             A Float specifying the angle in degrees of the first direction in the pattern. Possible
-            values are -360.0 ≤≤ **angle1** ≤≤ 360.0.
+            values are -360.0 ≤ **angle1** ≤ 360.0.
         vertexList
             A sequence of ConstrainedSketchVertex objects to copy.
         geomList
             A sequence of ConstrainedSketchGeometry objects to copy.
         number2
             An integer specifying the total number of copies, including the original objects, that
-            appear along the second direction in the pattern. Possible values are 1 ≤≤ **number2** ≤≤
+            appear along the second direction in the pattern. Possible values are 1 ≤ **number2** ≤
             1000. The default value is 1. The value of either **number1** or **number2** must be greater
             than one.
         spacing2
             A Float specifying the spacing between copies along the first direction in the pattern.
-            Possible values are 0.0 ≤≤ **spacing2**. The default value is **spacing1**.
+            Possible values are 0.0 ≤ **spacing2**. The default value is **spacing1**.
         angle2
             A Float specifying the angle in degrees of the first direction in the pattern. Possible
-            values are -360.0 ≤≤ **angle2** ≤≤ 360.0. The default value is 90° beyond the value of
+            values are -360.0 ≤ **angle2** ≤ 360.0. The default value is 90° beyond the value of
             **angle1**.
 
         Returns
@@ -480,13 +480,13 @@ class ConstrainedSketch(
         ----------
         number
             An Int specifying the total number of copies, including the original objects, that
-            appear in the radial pattern. Possible values are 2 ≤≤ **number2** ≤≤ 1000.
+            appear in the radial pattern. Possible values are 2 ≤ **number2** ≤ 1000.
         totalAngle
             A Float specifying the total angle in degrees between the first and last instance in the
             pattern. A positive angle corresponds to a counter-clockwise direction. The values 360°
             and -360° represent a special case where the pattern makes a full circle. In this case,
             because the copy would overlay the original, the copy is not placed at the last
-            position. Possible values are -360.0 ≤≤ **totalAngle** ≤≤ 360.0.
+            position. Possible values are -360.0 ≤ **totalAngle** ≤ 360.0.
         centerPoint
             A pair of Floats specifying the center of the radial pattern.
         vertexList

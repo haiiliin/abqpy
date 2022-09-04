@@ -13,15 +13,7 @@ from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc
-class PredefinedFieldModel(
-    ModelBase,
-    FluidCavityPressure,
-    InitialState,
-    KinematicHardening,
-    MaterialAssignment,
-    Temperature,
-    Velocity,
-):
+class PredefinedFieldModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
     .. note:: 

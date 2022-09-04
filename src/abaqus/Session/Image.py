@@ -81,15 +81,13 @@ class Image:
 
         Raises
         ------
-        ValueError
-            TypeError.
-            - If **movieName** does not exist:
-              ValueError: There is no movie object with this name: 'movieName'
-            - If **frame** references an non existing frame:
-              ValueError: Could not load frame n from movie: 'movieName'
-            - If **time** references an non existing frame:
-              ValueError: Could not load frame at time 't' from movie: 'movieName'
-            - If **time** and **frame** are given in the same command:
-              TypeError: keyword error on time
+        ValueError: There is no movie object with this name: 'movieName'
+            If **movieName** does not exist.
+        ValueError: Could not load frame n from movie: 'movieName'
+            If **frame** references an non existing frame.
+        ValueError: Could not load frame at time 't' from movie: 'movieName'
+            If **time** references an non existing frame.
+        TypeError: keyword error on time
+            If **time** and **frame** are given in the same command.
         """
         ...

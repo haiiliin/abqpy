@@ -53,7 +53,7 @@ After you open the output database, you can access its contents using the method
 Reading model data
 ------------------
 
-The following list describes the objects in model data and the commands you use to read model data. Many of the objects are repositories, and you will find the keys() method useful for determining the names of the objects in the repository. For more information, see :doc:`/user/python/introduction/programming:using dictionaries` and :doc:`/user/python/python-abaqus/types:repositories`.
+The following list describes the objects in model data and the commands you use to read model data. Many of the objects are repositories, and you will find the keys() method useful for determining the names of the objects in the repository. For more information, see :ref:`using-dictionaries` and :ref:`repositories`.
 
 - **The root assembly**
 
@@ -126,7 +126,7 @@ The following list describes the objects in model data and the commands you use 
       topNodeSet = odb.rootAssembly.instances[
           'PART-1-1'].nodeSets['TOP']
 
-  The type of the object to which topNodeSet refers is OdbSet. After you create a variable that refers to a region, you can use the variable to refer to a subset of field output data, as described in :doc:`read:using regions to read a subset of field output data`.
+  The type of the object to which topNodeSet refers is OdbSet. After you create a variable that refers to a region, you can use the variable to refer to a subset of field output data, as described in `using regions to read a subset of field output data`_.
 
 - **Materials**
 
@@ -443,7 +443,7 @@ The resulting output is
 
     1000 array([0.0000, -76.4555], 'd')
 
-The arguments to getSubset are a region, an element type, a position, or section point data. The following is a second example that uses an element set to define the region and generates formatted output. For more information on tuples, the `len()` function, and the `range() `function, see :doc:`/user/python/introduction/python-basics:sequences` and :doc:`/user/python/introduction/python-basics:sequence operations`.
+The arguments to getSubset are a region, an element type, a position, or section point data. The following is a second example that uses an element set to define the region and generates formatted output. For more information on tuples, the `len()` function, and the `range() `function, see :doc:`/user/python/introduction/python-basics:sequences` and :ref:`sequence-operations`.
 
 .. code-block:: python2
 
