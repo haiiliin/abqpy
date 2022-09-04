@@ -9,11 +9,9 @@ Create parts
 ------------
 
 .. autoclass:: abaqus.Part.PartModel.PartModel
-    :noindex:
     :members:
 
 .. autoclass:: abaqus.Part.PartBase.PartBase
-    :noindex:
     :members:
 
 Object features
@@ -28,10 +26,10 @@ Part
 
     .. autoclasstoc::
 
-PartBase
-~~~~~~~~
+PartFeature
+~~~~~~~~~~~
 
-.. autoclass:: abaqus.Part.PartBase.PartBase
+.. autoclass:: abaqus.Part.PartFeature.PartFeature
     :members:
 
     .. autoclasstoc::
@@ -89,10 +87,4 @@ AcisMdb
 
     .. autoclasstoc::
 
-PartFeature
-~~~~~~~~~~~
-
-.. autoclass:: abaqus.Part.PartFeature.PartFeature
-    :members:
-
-    .. autoclasstoc::
+.. This is a comment ro supress the warning "(ERROR/3) Document may not end with a transition."

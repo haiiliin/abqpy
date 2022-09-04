@@ -173,7 +173,7 @@ class Hyperelastic:
         n
             An Int specifying the order of the strain energy potential. The default value is 1.If
             **testData** = ON and **type** = POLYNOMIAL, **n** can take only the values 1 or 2.If
-            **testData** = ON and **type** = OGDEN or if **testData** = OFF for either type, 1 ≤n≤≤n≤ 6.If
+            **testData** = ON and **type** = OGDEN or if **testData** = OFF for either type, 1 ≤n≤n≤ 6.If
             **type** = USER, this argument cannot be used.
         beta
             The SymbolicConstant FITTED_VALUE or a Float specifying the invariant mixture parameter.

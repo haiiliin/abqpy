@@ -20,7 +20,7 @@ A constructor is a method that creates an object. The Abaqus C++ API uses the fo
   
   .. code-block:: cpp
 
-      odb_String partName("New_Part");  `
+      odb_String partName("New_Part");
 
 - **Constructors for persistent objects**
 

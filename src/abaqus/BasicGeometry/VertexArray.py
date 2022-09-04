@@ -76,9 +76,14 @@ class VertexArray(typing.List[Vertex]):
             find.findAt returns either a ConstrainedSketchVertex object or a sequence of ConstrainedSketchVertex objects based on the
             type of input.If **coordinates** is a sequence of Floats, findAt returns the ConstrainedSketchVertex object
             at that point.If you omit the **coordinates** keyword argument, findAt accepts as
-            arguments a sequence of sequence of floats in the following format:`verts =
-            v.findAt(((20.19686, -169.513997, 27.798593), ),                 ((19.657627,
-            -167.295749, 27.056402), ),                 ((18.274129, -157.144741, 25.15218), ))`
+            arguments a sequence of sequence of floats in the following format:
+            
+            .. autolink-skip:: section
+            .. code-block:: python
+            
+                verts = v.findAt(((20.19686, -169.513997, 27.798593), ),
+                                ((19.657627, -167.295749, 27.056402), ),
+                                ((18.274129, -157.144741, 25.15218), ))
         printWarning
             A Boolean specifying whether a message is to be printed to the CLI if no entity is found
             at the specified location. The default value is True.
@@ -232,6 +237,7 @@ class VertexArray(typing.List[Vertex]):
             A sequence of a sequence of floats, where each sequence of floats describes the **X**-,
             **Y**-, and **Z**-coordinates of a point.
             
+            .. autolink-skip:: section
             .. code-block:: python
             
                 >>> r=v.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, -15.0, 15), ))
@@ -251,7 +257,7 @@ class VertexArray(typing.List[Vertex]):
             index 0. If a closest vertex could be found then the value is a sequence consisting of
             two objects. The first object in the sequence is a ConstrainedSketchVertex that is close to the input
             point referred to by the key. The second object in the sequence is a sequence of floats
-            that specifies the **X**-, **Y**-, and **Z**-location of the ConstrainedSketchVertex. See program listing
+            that specifies the **X**-, **Y**-, and **Z**- location of the ConstrainedSketchVertex. See program listing
             above.
 
         Raises
