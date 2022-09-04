@@ -24,8 +24,6 @@ setuptools.setup(
     project_urls={
         'GitHub': 'https://github.com/haiiliin/abqpy',
         'Bug Tracker': 'https://github.com/haiiliin/abqpy/issues',
-        'Pull Requests': 'https://github.com/haiiliin/abqpy/pulls',
-        'Discussions': 'https://github.com/haiiliin/abqpy/discussions',
         'Documentation': 'https://abqpy.haiiliin.com',
         'Anaconda': 'https://anaconda.org/haiiliin/abqpy',
         'Read the Docs': 'https://readthedocs.org/projects/abqpy',

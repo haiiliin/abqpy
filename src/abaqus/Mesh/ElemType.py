@@ -59,7 +59,7 @@ class ElemType:
     distortionControl: Boolean = OFF
 
     #: A Float specifying the length ratio for distortion control in crushable materials.
-    #: Possible values are 0.0 ≤≤ **lengthRatio** ≤≤ 1.0. The default value is
+    #: Possible values are 0.0 ≤ **lengthRatio** ≤ 1.0. The default value is
     #: **lengthRatio** = 0.10.1This argument is applicable only when **distortionControl** is ON.
     lengthRatio: float = ON
 
@@ -218,7 +218,7 @@ class ElemType:
             only to some Abaqus/Explicit elements.
         lengthRatio
             A Float specifying the length ratio for distortion control in crushable materials.
-            Possible values are 0.0 ≤≤ **lengthRatio** ≤≤ 1.0. The default value is
+            Possible values are 0.0 ≤ **lengthRatio** ≤ 1.0. The default value is
             **lengthRatio** = 0.10.1This argument is applicable only when **distortionControl** is ON.
         secondOrderAccuracy
             A Boolean specifying the second-order accuracy option. The default value is OFF.This

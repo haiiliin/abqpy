@@ -137,14 +137,12 @@ class Drawing:
 
         Raises
         ------
-        RangeError
-            ValueError.
-            - If an invalid **vertexDimension** is specified:
-              RangeError: **vertexDimension** must be in the range 2 <= value <= 4
-            - If **vertexData** is an empty sequence:
-              ValueError: **vertexData** cannot be empty.
-            - If setVertices has already been called and this call is sending fewer vertices:
-              ValueError: **vertexData** cannot be reduced
+        RangeError: **vertexDimension** must be in the range 2 <= value <= 4
+            If an invalid **vertexDimension** is specified.
+        ValueError: **vertexData** cannot be empty
+            If **vertexData** is an empty sequence.
+        ValueError: **vertexData** cannot be reduced
+            If setVertices has already been called and this call is sending fewer vertices.
         """
         ...
 

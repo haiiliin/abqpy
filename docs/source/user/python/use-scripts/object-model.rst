@@ -50,7 +50,7 @@ An object in the object model can be one of the following:
 
   Session objects are objects that are not saved between Abaqus/CAE sessions; for example, the objects that define viewports, remote queues, and user-defined views, as shown in :numref:`cmd-int-model-session-nls`
 
-    .. _cmd-int-model-session-nls:
+  .. _cmd-int-model-session-nls:
   .. figure:: /images/cmd-int-model-session-nls.png
       :width: 50%
       :align: center
@@ -81,7 +81,7 @@ An object in the object model can be one of the following:
 
   Odb objects are saved in an output database and contain both model and results data, as shown in :numref:`cmd-int-model-odb-nls`.
 
-  .. cmd-int-model-odb-nls:
+  .. _cmd-int-model-odb-nls:
   .. figure:: /images/cmd-int-model-odb-nls.png
       :width: 100%
       :align: center
@@ -138,7 +138,7 @@ You can also use tab completion when you are accessing an output database from t
 The Model object model
 ----------------------
 
-The Model object contains many objects. :numref:`cmd-int-model-overview-nls-2` and :numref:`cmd-int-model-assembly-nls-2` show the most commonly used objects that are contained in the Part and RootAssembly.
+The Model object contains many objects. :numref:`cmd-int-model-overview-nls-2` and :numref:`cmd-int-model-assembly-nls` show the most commonly used objects that are contained in the Part and RootAssembly.
 
 .. _cmd-int-model-overview-nls-2:
 .. figure:: /images/cmd-int-model-overview-nls.png

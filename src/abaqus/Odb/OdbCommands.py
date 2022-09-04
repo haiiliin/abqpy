@@ -57,9 +57,6 @@ def isUpgradeRequiredForOdb(upgradeRequiredOdbPath: str):
 def maxEnvelop() -> typing.Tuple[FieldOutput, FieldOutput]:
     """Retrieve the maximum value of an output variable over a number of fields.
 
-    Parameters
-    ----------
-
     Returns
     -------
     typing.Tuple[FieldOutput, FieldOutput]
@@ -80,10 +77,7 @@ def maxEnvelop() -> typing.Tuple[FieldOutput, FieldOutput]:
 @abaqus_function_doc
 def minEnvelop() -> typing.Tuple[FieldOutput, FieldOutput]:
     """Retrieve the minimum value of an output variable over a number of fields.
-
-    Parameters
-    ----------
-
+    
     Returns
     -------
     typing.Tuple[FieldOutput, FieldOutput]
@@ -195,8 +189,9 @@ def openOdb(name: str, *args, **kwargs):
 def upgradeOdb(existingOdbPath: str, upgradedOdbPath: str):
     """This method upgrades an existing Odb object to the current release and writes the
     upgraded version of the Odb object to a file. In addition, Abaqus/CAE writes information
-    about the status of the upgrade to a log (*.log) file.
+    about the status of the upgrade to a log (.log) file.
     You can access this method using either of the following techniques:
+    
     - From a script running outside Abaqus/CAE. For example
       
       .. code-block:: python

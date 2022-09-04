@@ -2,7 +2,7 @@
 Error handling in the Abaqus Scripting Interface
 ================================================
 
-The basics of Python's exception handling apply to the Abaqus Scripting Interface. Python's exception handling is described in :doc:`/user/python/introduction/python-basics/errors`. If certain circumstances arise while a script is running, Python allows you to take the necessary action and still allows the script to continue. Alternatively, when Abaqus/CAE issues (or "throws") an exception and the exception is not handled by the script, Abaqus/CAE displays the exception message in the message area and the script stops executing.
+The basics of Python's exception handling apply to the Abaqus Scripting Interface. Python's exception handling is described in :ref:`error-handling`. If certain circumstances arise while a script is running, Python allows you to take the necessary action and still allows the script to continue. Alternatively, when Abaqus/CAE issues (or "throws") an exception and the exception is not handled by the script, Abaqus/CAE displays the exception message in the message area and the script stops executing.
 
 Standard Python exceptions
 --------------------------
@@ -27,7 +27,7 @@ The standard Abaqus Scripting Interface exception types are listed below:
     
     .. warning::
         
-        While Python allows most punctuation marks and special characters, some of the strings you provide will be used in an Abaqus input file; therefore, you cannot use the following characters: $&*~!()[]{}|;'`",.?/\ when you are naming an object, such as a part, a model or a job.
+        While Python allows most punctuation marks and special characters, some of the strings you provide will be used in an Abaqus input file; therefore, you cannot use the following characters: `\$\&\*\~\!\(\)\[\]\{\}\|\;\'\`\"\,\.\?\/\\` when you are naming an object, such as a part, a model or a job.
 
   - The name must not begin with a number.
   - The name must not begin or end with an underscore or a space.
@@ -68,6 +68,8 @@ For example, :numref:`cmd-int-exception-nls` shows the layout of a typical excep
     The layout of a typical exception description in the online documentation.
 
 You use the exception type in your error handling routines.
+
+.. _exception-handling:
 
 Exception handling
 ------------------

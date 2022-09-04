@@ -4,6 +4,8 @@ Generating a customized plot
 
 The following section provides examples of Abaqus Scripting Interface scripts that open an output database and generate a customized plot. In effect, these scripts reproduce the functionality of the Visualization module in Abaqus/CAE.
 
+.. _opening-the-tutorial-output-database:
+
 Opening the tutorial output database
 ------------------------------------
 
@@ -12,6 +14,8 @@ Each of the following example scripts opens the output database used by the Visu
 .. code-block:: sh
 
     abaqus fetch job=viewer_tutorial
+
+.. _opening-an-output-database-and-displaying-a-contour-plot:
 
 Opening an output database and displaying a contour plot
 --------------------------------------------------------
@@ -87,6 +91,8 @@ The script does the following:
 
     session.printToFile(fileName='contourPlot', format=PNG,
         canvasObjects=(myViewport,))
+
+.. _printing-a-contour-plot-at-the-end-of-each-step:
 
 Printing a contour plot at the end of each step
 -----------------------------------------------

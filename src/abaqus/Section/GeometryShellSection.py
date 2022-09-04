@@ -45,7 +45,7 @@ class GeometryShellSection(ShellSection):
     #: is the value provided in **poisson**.The default value is DEFAULT.
     poissonDefinition: SymbolicConstant = DEFAULT
 
-    #: A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
+    #: A Float specifying the Poisson's ratio. Possible values are −1.0 ≤ **poisson** ≤ 0.5.
     #: This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
     poisson: float = 0
 
@@ -151,7 +151,7 @@ class GeometryShellSection(ShellSection):
             Abaqus/Explicit analysis.VALUE, specifying that the Poisson's ratio used in the analysis
             is the value provided in **poisson**.The default value is DEFAULT.
         poisson
-            A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
+            A Float specifying the Poisson's ratio. Possible values are −1.0 ≤ **poisson** ≤ 0.5.
             This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
         integrationRule
             A SymbolicConstant specifying the shell section integration rule. Possible values are

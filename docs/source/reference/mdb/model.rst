@@ -36,7 +36,6 @@ Create models
 
 .. autoclass:: abaqus.Mdb.Mdb.Mdb
     :noindex:
-    :members:
 
     .. autoclasstoc::
 

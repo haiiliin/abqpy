@@ -11,14 +11,12 @@ In Mdb
 ~~~~~~
 
 .. autoclass:: abaqus.Material.MaterialModel.MaterialModel
-    :noindex:
     :members:
 
 In Odb
 ~~~~~~
 
 .. autoclass:: abaqus.Material.MaterialOdb.MaterialOdb
-    :noindex:
     :members:
 
     .. autoclasstoc::
