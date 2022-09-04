@@ -40,7 +40,7 @@ class XYReportOptions:
             **pageWidthLimited** = ON. Possible values are **pageWidth** >> 0. The default value is 80.
         numDigits
             An Int specifying the number of significant digits to be included for each data value in
-            the report file. Possible values are 0 ≤≤ **numDigits** ≤≤ 9. The default value is 6.
+            the report file. Possible values are 0 ≤ **numDigits** ≤ 9. The default value is 6.
         interpolation
             A Boolean specifying whether to perform linear interpolation for missing data values.
             The default value is OFF.

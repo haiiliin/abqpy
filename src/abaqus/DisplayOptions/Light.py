@@ -44,10 +44,10 @@ class Light:
             vertex is calculated. However, overall performance is decreased.
         latitude
             A Float specifying the altitude of the light above or below the camera. Possible values
-            are -90.0 ≤≤ **latitude** ≤≤ 90.0. The default value is 0.0.
+            are -90.0 ≤ **latitude** ≤ 90.0. The default value is 0.0.
         longitude
             A Float specifying the east/west position of the light to the left or right of the
-            camera. Possible values are -90.0 ≤≤ **longitude** ≤≤ 90.0. The default value is 0.0.
+            camera. Possible values are -90.0 ≤ **longitude** ≤ 90.0. The default value is 0.0.
         diffuseColor
             A String specifying the color of the light added to the scene by this light source. The
             initial value is 70% gray. A list of valid color strings is in the **colors** map in the

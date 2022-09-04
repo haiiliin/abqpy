@@ -72,7 +72,7 @@ class AxisData:
     minShownValue: float = None
 
     #: An Int specifying the number the number of minor tick marks between major ticks.
-    #: Possible values are 0 ≤≤ **minorTickCount** ≤≤ 20. When the **scale** is set to LOG, the
+    #: Possible values are 0 ≤ **minorTickCount** ≤ 20. When the **scale** is set to LOG, the
     #: minorTickCount is interpreted as the number of ticks per decade and limited to 0, 1, 4,
     #: 8, and 17. The default value is 1.
     minorTickCount: int = 1
@@ -92,7 +92,7 @@ class AxisData:
     tickMode: SymbolicConstant = AUTOCOMPUTE
 
     #: An Int specifying the number of major tick marks on the axis when **tickMode**
-    #: =TOTAL_NUMBER. Possible values are 0 ≤≤ **tickCount** ≤≤ 30. The default value is computed
+    #: =TOTAL_NUMBER. Possible values are 0 ≤ **tickCount** ≤ 30. The default value is computed
     #: based on the range of the axis. When the **scale** is set to LOG, the tickCount is
     #: interpreted as the number of ticks per decade and acceptable values are 1, 4, 8, and 17.
     tickCount: int = None
@@ -204,12 +204,12 @@ class AxisData:
             0.05 and 1.
         tickCount
             An Int specifying the number of major tick marks on the axis when **tickMode**
-            =TOTAL_NUMBER. Possible values are 0 ≤≤ **tickCount** ≤≤ 30. The default value is computed
+            =TOTAL_NUMBER. Possible values are 0 ≤ **tickCount** ≤ 30. The default value is computed
             based on the range of the axis. When the **scale** is set to LOG, the tickCount is
             interpreted as the number of ticks per decade and acceptable values are 1, 4, 8, and 17.
         minorTickCount
             An Int specifying the number the number of minor tick marks between major ticks.
-            Possible values are 0 ≤≤ **minorTickCount** ≤≤ 20. When the **scale** is set to LOG, the
+            Possible values are 0 ≤ **minorTickCount** ≤ 20. When the **scale** is set to LOG, the
             minorTickCount is interpreted as the number of ticks per decade and limited to 0, 1, 4,
             8, and 17. The default value is 1.
         title

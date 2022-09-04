@@ -69,8 +69,8 @@ class Sorption:
             A SymbolicConstant specifying exsorption behavior. Possible values are LOG and TABULAR.
             The default value is TABULAR.
         scanning
-            A Float specifying the slope of the scanning line, :math:`\left.\left(d u_{w} / d s\right)\right|_{s}`. This slope must be
-            positive and larger than the slope of the absorption or exsorption behaviors. The
+            A Float specifying the slope of the scanning line, :math:`\left.\left(d u_{w} / d s\right)\right|_{s}`. 
+            This slope must be positive and larger than the slope of the absorption or exsorption behaviors. The
             default value is 0.0.
         exsorptionTable
             A sequence of sequences of Floats specifying the items described below. The default

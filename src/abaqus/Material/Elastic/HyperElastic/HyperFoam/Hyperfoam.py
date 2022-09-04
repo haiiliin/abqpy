@@ -77,7 +77,7 @@ class Hyperfoam:
             None or a Float specifying the effective Poisson's ratio, νν, of the material. This
             argument is valid only when **testData** = ON. The default value is None.
         n
-            An Int specifying the order of the strain energy potential. Possible values are 1 ≤n≤≤n≤
+            An Int specifying the order of the strain energy potential. Possible values are 1 ≤n≤n≤
             6. The default value is 1.
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
