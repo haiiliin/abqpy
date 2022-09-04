@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,8 +57,8 @@ msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly:15 of
 msgid ""
-"Check `Assembly on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
+"Check `MeshAssembly on help.3ds.com/2019 "
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblymgnpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: abaqus.Mesh.ElemType.ElemType abaqus.Mesh.MeshAssembly.MeshAssembly
@@ -297,8 +297,8 @@ msgstr ""
 msgid ""
 "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object "
 "specifying the PartInstances and A "
-":py:class:`~abaqus.Model.Model.ModelInstance` object specifying the "
-"ModelInstances."
+":py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object "
+"specifying the ModelInstances."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -2696,7 +2696,7 @@ msgstr ""
 #: abaqus.Mesh.MeshPart.MeshPart.createVirtualTopology:96
 #: abaqus.Mesh.MeshPart.MeshPart.ignoreEntity:18
 #: abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity:17 of
-msgid "A :py:class:`~abaqus.Assembly.Feature.Feature` object"
+msgid "A :py:class:`~abaqus.Feature.Feature.Feature` object"
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.deleteBoundaryLayerControls:6 of
@@ -3173,7 +3173,7 @@ msgstr ""
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:30
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getPartSeeds:32
 #: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:27
-#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:30
+#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:31
 #: abaqus.Mesh.MeshPart.MeshPart.getPartSeeds:29 of
 msgid "**attribute**"
 msgstr ""
@@ -3249,7 +3249,7 @@ msgstr ""
 msgid "CONSTRAINT"
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:83
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:82
 #: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:83 of
 msgid ""
 ":obj:`typing.Union`\\[:class:`python:float`, :class:`python:int`, "
@@ -3264,90 +3264,111 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:35
-#: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:35 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:20
+#: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:35
+#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:20 of
 msgid "The return value is dependent on the **attribute** argument."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:37
-#: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:37 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:37 of
 msgid ""
 "If **attribute** = EDGE_SEEDING_METHOD, the return value is a "
-"SymbolicConstant specifying"
-msgstr ""
-
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:38
-#: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:38 of
-msgid ""
-"the edge seeding method used to create the seeds along the edge. Possible"
-" values are: UNIFORM_BY_NUMBER, UNIFORM_BY_SIZE, CURVATURE_BASED_BY_SIZE,"
-" BIASED, NONE"
+"SymbolicConstant specifying the edge seeding method used to create the "
+"seeds along the edge. Possible values are:  UNIFORM_BY_NUMBER, "
+"UNIFORM_BY_SIZE, CURVATURE_BASED_BY_SIZE, BIASED, NONE"
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:40
 #: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:40 of
 msgid ""
 "If **attribute** = BIAS_METHOD, the return value is a SymbolicConstant "
-"specifying the bias"
+"specifying the bias type used to create the seeds along the edge. "
+"Possible values are: SINGLE, DOUBLE, NONE"
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:41
-#: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:41 of
-msgid ""
-"type used to create the seeds along the edge. Possible values are: "
-"SINGLE, DOUBLE, NONE"
-msgstr ""
-
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:43
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:42
 #: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:43 of
 msgid ""
 "If **attribute** = NUMBER, the return value is an Int specifying the "
-"number of element"
+"number of element seeds along the edge."
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:44
-#: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:44 of
+#: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:45 of
 msgid ""
-"seeds along the edge. - If **attribute** = AVERAGE_SIZE, the return value"
-" is a Float specifying the average element size along the edge. - If "
-"**attribute** = DEVIATION_FACTOR, the return value is a Float specifying "
-"the deviation factor h/Lh/L, where hh is the chordal deviation and LL is "
-"the element length. If edge seeds are not defined, the return value is "
-"zero. - If **attribute** = MIN_SIZE_FACTOR, the return value is a Float "
+"If **attribute** = AVERAGE_SIZE, the return value is a Float specifying "
+"the average element size along the edge."
+msgstr ""
+
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:46
+#: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:47 of
+msgid ""
+"If **attribute** = DEVIATION_FACTOR, the return value is a Float "
+"specifying the deviation factor h/Lh/L, where hh is the chordal deviation"
+" and LL is the element length. If edge seeds are not defined, the return "
+"value is zero."
+msgstr ""
+
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:49
+#: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:50 of
+msgid ""
+"If **attribute** = MIN_SIZE_FACTOR, the return value is a Float "
 "specifying the size of the smallest allowable element as a fraction of "
 "the specified global element size. If edge seeds are not defined, the "
-"return value is zero. - If **attribute** = BIAS_RATIO, the return value "
-"is a Float specifying the length ratio of the largest element to the "
-"smallest element. - If **attribute** = BIAS_MIN_SIZE, the return value is"
-" a Float specifying the length of the largest element; only applicable if"
-" the EDGE_SEEDING_METHOD is BIASED and seeds were specified by minimum "
-"and maximum sizes. - If **attribute** = BIAS_MAX_SIZE, the return value "
-"is a Float specifying the length of the largest element; only applicable "
-"if the EDGE_SEEDING_METHOD is BIASED and seeds were specified by minimum "
-"and maximum sizes. - If **attribute** = VERTEX_ADJ_TO_SMALLEST_ELEM, the "
-"return value is an Int specifying the ID of the vertex next to the "
-"smallest element; only applicable if the EDGE_SEEDING_METHOD is BIASED. -"
-" If **attribute** = SMALLEST_ELEM_LOCATION, the return value is a "
+"return value is zero."
+msgstr ""
+
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:52
+#: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:53 of
+msgid ""
+"If **attribute** = BIAS_RATIO, the return value is a Float specifying the"
+" length ratio of the largest element to the smallest element."
+msgstr ""
+
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:54
+#: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:55 of
+msgid ""
+"If **attribute** = BIAS_MIN_SIZE, the return value is a Float specifying "
+"the length of the largest element; only applicable if the "
+"EDGE_SEEDING_METHOD is BIASED and seeds were specified by minimum and "
+"maximum sizes."
+msgstr ""
+
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:57
+#: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:58 of
+msgid ""
+"If **attribute** = BIAS_MAX_SIZE, the return value is a Float specifying "
+"the length of the largest element; only applicable if the "
+"EDGE_SEEDING_METHOD is BIASED and seeds were specified by minimum and "
+"maximum sizes."
+msgstr ""
+
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:60
+#: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:61 of
+msgid ""
+"If **attribute** = VERTEX_ADJ_TO_SMALLEST_ELEM, the return value is an "
+"Int specifying the ID of the vertex next to the smallest element; only "
+"applicable if the EDGE_SEEDING_METHOD is BIASED."
+msgstr ""
+
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:63 of
+msgid ""
+"If **attribute** = SMALLEST_ELEM_LOCATION, the return value is a "
 "SymbolicConstant specifying the location of smallest elements for double "
 "bias seeds; only applicable if the EDGE_SEEDING_METHOD is BIASED and "
-"BIAS_METHOD is DOUBLE. Possible values are: SMALLEST_ELEM_AT_CENTER, "
+"BIAS_METHOD is DOUBLE. Possible values are:  SMALLEST_ELEM_AT_CENTER, "
 "SMALLEST_ELEM_AT_ENDS, NONE"
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:68
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:67
 #: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:68 of
 msgid ""
 "If **attribute** = CONSTRAINT, the return value is a SymbolicConstant "
-"specifying how close"
+"specifying how close the seeds must be matched by the mesh. Possible "
+"values are: FREE, FINER, FIXED, NONE"
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:69
-#: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:69 of
-msgid ""
-"the seeds must be matched by the mesh. Possible values are: FREE, FINER, "
-"FIXED, NONE"
-msgstr ""
-
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:71
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:70
 #: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:71 of
 msgid "A value of NONE indicates that the edge is not seeded."
 msgstr ""
@@ -3423,7 +3444,7 @@ msgstr ""
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getElementType:37
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:52
 #: abaqus.Mesh.MeshPart.MeshPart.getElementType:44
-#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:52 of
+#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:53 of
 msgid ":obj:`TypeError`"
 msgstr ""
 
@@ -3490,23 +3511,16 @@ msgstr ""
 msgid "MIN_TRANSITION"
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:20
-#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:20 of
-msgid ""
-"The return value is dependent on the **attribute** argument. - If "
-"**attribute** = ELEM_SHAPE, the return value is a SymbolicConstant "
-"specifying the"
-msgstr ""
-
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:22
 #: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:22 of
 msgid ""
-"element shape used during meshing. Possible values are: LINE, QUAD, TRI,"
-"  QUAD_DOMINATED, HEX, TET, WEDGE, HEX_DOMINATED"
+"If **attribute** = ELEM_SHAPE, the return value is a SymbolicConstant "
+"specifying the element shape used during meshing. Possible values are: "
+"LINE, QUAD, TRI,  QUAD_DOMINATED, HEX, TET, WEDGE, HEX_DOMINATED"
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:24
-#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:24 of
+#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:25 of
 msgid ""
 "If **attribute** = TECHNIQUE, the return value is a SymbolicConstant "
 "specifying the meshing technique to be used during meshing. Possible "
@@ -3516,7 +3530,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:26
-#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:26 of
+#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:27 of
 msgid ""
 "If **attribute** = ALGORITHM, the return value is a SymbolicConstant "
 "specifying the meshing algorithm to be used during meshing. Possible "
@@ -3525,7 +3539,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:28
-#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:28 of
+#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:29 of
 msgid ""
 "If **attribute** = MIN_TRANSITION, the return value is a Boolean "
 "indicating whether minimum transition will be used during meshing. This "
@@ -3535,21 +3549,21 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:39
-#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:39 of
+#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:40 of
 msgid ""
 ":obj:`typing.Union`\\[:ref:`bool <python:bltin-boolean-values>`, "
 ":obj:`SymbolicConstant`]"
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:35
-#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:35 of
+#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:36 of
 msgid ""
 "The return value is a SymbolicConstant or a Boolean depending on the "
 "value of the **attribute** argument."
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:44
-#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:44 of
+#: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:45 of
 msgid "The region cannot carry mesh controls."
 msgstr ""
 
@@ -4875,15 +4889,25 @@ msgstr ""
 #: ../../docstring abaqus.Mesh.ElemType.ElemType.elemCode:8 of
 msgid ""
 "UNKNOWN_QUAD, specifying an unknown element type associated with a "
-"quadrilateral"
+"quadrilateral shape."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType.elemCode:9 of
+#: ../../docstring abaqus.Mesh.ElemType.ElemType.elemCode:10 of
 msgid ""
-"shape. - UNKNOWN_HEX, specifying an unknown element type associated with "
-"a hexahedral shape. - UNKNOWN_WEDGE, specifying an unknown element type "
-"associated with a wedge shape. - UNKNOWN_TET, specifying an unknown "
-"element type associated with a tetrahedral shape."
+"UNKNOWN_HEX, specifying an unknown element type associated with a "
+"hexahedral shape."
+msgstr ""
+
+#: ../../docstring abaqus.Mesh.ElemType.ElemType.elemCode:11 of
+msgid ""
+"UNKNOWN_WEDGE, specifying an unknown element type associated with a wedge"
+" shape."
+msgstr ""
+
+#: ../../docstring abaqus.Mesh.ElemType.ElemType.elemCode:12 of
+msgid ""
+"UNKNOWN_TET, specifying an unknown element type associated with a "
+"tetrahedral shape."
 msgstr ""
 
 #: ../../docstring abaqus.Mesh.ElemType.ElemType.elemDeletion:2 of
@@ -7854,8 +7878,8 @@ msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart:13 of
 msgid ""
-"Check `Part on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all>`_."
+"Check `MeshPart on help.3ds.com/2019 "
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partmgnpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -10547,6 +10571,23 @@ msgid ""
 "#simaker-partgetedgeseedspyc>`_."
 msgstr ""
 
+#: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:37 of
+msgid ""
+"If **attribute** = EDGE_SEEDING_METHOD, the return value is a "
+"SymbolicConstant specifying the edge seeding method used to create the "
+"seeds along the edge. Possible values are: UNIFORM_BY_NUMBER, "
+"UNIFORM_BY_SIZE, CURVATURE_BASED_BY_SIZE, BIASED, NONE"
+msgstr ""
+
+#: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:64 of
+msgid ""
+"If **attribute** = SMALLEST_ELEM_LOCATION, the return value is a "
+"SymbolicConstant specifying the location of smallest elements for double "
+"bias seeds; only applicable if the EDGE_SEEDING_METHOD is BIASED and "
+"BIAS_METHOD is DOUBLE. Possible values are: SMALLEST_ELEM_AT_CENTER, "
+"SMALLEST_ELEM_AT_ENDS, NONE"
+msgstr ""
+
 #: abaqus.Mesh.MeshPart.MeshPart.getElementType:6 of
 msgid ""
 "Check `Part.getElementType() on help.3ds.com/2019 "
@@ -10886,4 +10927,149 @@ msgstr ""
 #: abaqus.Mesh.MeshStats.MeshStats.numMeshedRegions:2 of
 msgid "An Int specifying the number of regions that contain a mesh."
 msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` "
+#~ "object specifying the PartInstances and "
+#~ "A :py:class:`~abaqus.Model.Model.ModelInstance` object "
+#~ "specifying the ModelInstances."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Assembly.Feature.Feature` object"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If **attribute** = EDGE_SEEDING_METHOD, the"
+#~ " return value is a SymbolicConstant "
+#~ "specifying"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "the edge seeding method used to "
+#~ "create the seeds along the edge. "
+#~ "Possible values are: UNIFORM_BY_NUMBER, "
+#~ "UNIFORM_BY_SIZE, CURVATURE_BASED_BY_SIZE, BIASED, "
+#~ "NONE"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If **attribute** = BIAS_METHOD, the "
+#~ "return value is a SymbolicConstant "
+#~ "specifying the bias"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "type used to create the seeds "
+#~ "along the edge. Possible values are: "
+#~ "SINGLE, DOUBLE, NONE"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If **attribute** = NUMBER, the return"
+#~ " value is an Int specifying the "
+#~ "number of element"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "seeds along the edge. - If "
+#~ "**attribute** = AVERAGE_SIZE, the return "
+#~ "value is a Float specifying the "
+#~ "average element size along the edge. "
+#~ "- If **attribute** = DEVIATION_FACTOR, "
+#~ "the return value is a Float "
+#~ "specifying the deviation factor h/Lh/L, "
+#~ "where hh is the chordal deviation "
+#~ "and LL is the element length. If"
+#~ " edge seeds are not defined, the "
+#~ "return value is zero. - If "
+#~ "**attribute** = MIN_SIZE_FACTOR, the return"
+#~ " value is a Float specifying the "
+#~ "size of the smallest allowable element"
+#~ " as a fraction of the specified "
+#~ "global element size. If edge seeds "
+#~ "are not defined, the return value "
+#~ "is zero. - If **attribute** = "
+#~ "BIAS_RATIO, the return value is a "
+#~ "Float specifying the length ratio of "
+#~ "the largest element to the smallest "
+#~ "element. - If **attribute** = "
+#~ "BIAS_MIN_SIZE, the return value is a "
+#~ "Float specifying the length of the "
+#~ "largest element; only applicable if the"
+#~ " EDGE_SEEDING_METHOD is BIASED and seeds"
+#~ " were specified by minimum and "
+#~ "maximum sizes. - If **attribute** = "
+#~ "BIAS_MAX_SIZE, the return value is a "
+#~ "Float specifying the length of the "
+#~ "largest element; only applicable if the"
+#~ " EDGE_SEEDING_METHOD is BIASED and seeds"
+#~ " were specified by minimum and "
+#~ "maximum sizes. - If **attribute** = "
+#~ "VERTEX_ADJ_TO_SMALLEST_ELEM, the return value "
+#~ "is an Int specifying the ID of "
+#~ "the vertex next to the smallest "
+#~ "element; only applicable if the "
+#~ "EDGE_SEEDING_METHOD is BIASED. - If "
+#~ "**attribute** = SMALLEST_ELEM_LOCATION, the "
+#~ "return value is a SymbolicConstant "
+#~ "specifying the location of smallest "
+#~ "elements for double bias seeds; only "
+#~ "applicable if the EDGE_SEEDING_METHOD is "
+#~ "BIASED and BIAS_METHOD is DOUBLE. "
+#~ "Possible values are: SMALLEST_ELEM_AT_CENTER, "
+#~ "SMALLEST_ELEM_AT_ENDS, NONE"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If **attribute** = CONSTRAINT, the "
+#~ "return value is a SymbolicConstant "
+#~ "specifying how close"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "the seeds must be matched by the"
+#~ " mesh. Possible values are: FREE, "
+#~ "FINER, FIXED, NONE"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The return value is dependent on "
+#~ "the **attribute** argument. - If "
+#~ "**attribute** = ELEM_SHAPE, the return "
+#~ "value is a SymbolicConstant specifying "
+#~ "the"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "element shape used during meshing. "
+#~ "Possible values are: LINE, QUAD, TRI,"
+#~ "  QUAD_DOMINATED, HEX, TET, WEDGE, "
+#~ "HEX_DOMINATED"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "UNKNOWN_QUAD, specifying an unknown element"
+#~ " type associated with a quadrilateral"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "shape. - UNKNOWN_HEX, specifying an "
+#~ "unknown element type associated with a"
+#~ " hexahedral shape. - UNKNOWN_WEDGE, "
+#~ "specifying an unknown element type "
+#~ "associated with a wedge shape. - "
+#~ "UNKNOWN_TET, specifying an unknown element "
+#~ "type associated with a tetrahedral "
+#~ "shape."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Part on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all>`_."
+#~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgid "Reading model data"
 msgstr ""
 
 #: ../../user/output/python/read.rst:56
-msgid "The following list describes the objects in model data and the commands you use to read model data. Many of the objects are repositories, and you will find the keys() method useful for determining the names of the objects in the repository. For more information, see :doc:`user/python/introduction/programming:using dictionaries` and :doc:`user/python/python-abaqus/types:repositories`."
+msgid "The following list describes the objects in model data and the commands you use to read model data. Many of the objects are repositories, and you will find the keys() method useful for determining the names of the objects in the repository. For more information, see :doc:`/user/python/introduction/programming:using dictionaries` and :doc:`/user/python/python-abaqus/types:repositories`."
 msgstr ""
 
 #: ../../user/output/python/read.rst:58
@@ -137,7 +137,7 @@ msgid "The following statement assigns a variable (topNodeSet) to the 'TOP' node
 msgstr ""
 
 #: ../../user/output/python/read.rst:129
-msgid "The type of the object to which topNodeSet refers is OdbSet. After you create a variable that refers to a region, you can use the variable to refer to a subset of field output data, as described in :doc:`user/output/python/read:using regions to read a subset of field output data`."
+msgid "The type of the object to which topNodeSet refers is OdbSet. After you create a variable that refers to a region, you can use the variable to refer to a subset of field output data, as described in :doc:`read:using regions to read a subset of field output data`."
 msgstr ""
 
 #: ../../user/output/python/read.rst:131
@@ -165,7 +165,7 @@ msgid "Some Material definitions have suboptions. For example, to access the smo
 msgstr ""
 
 #: ../../user/output/python/read.rst:179
-msgid ":doc:`reference/mdb/model/material` describes the Material object commands in more detail."
+msgid ":doc:`/reference/mdb/model/material` describes the Material object commands in more detail."
 msgstr ""
 
 #: ../../user/output/python/read.rst:181
@@ -301,7 +301,7 @@ msgid "After you have created an OdbSet object using model data, you can use the
 msgstr ""
 
 #: ../../user/output/python/read.rst:446
-msgid "The arguments to getSubset are a region, an element type, a position, or section point data. The following is a second example that uses an element set to define the region and generates formatted output. For more information on tuples, the `len()` function, and the `range() `function, see :doc:`user/python/introduction/sequences` and :doc:`user/python/introduction/sequence operations`."
+msgid "The arguments to getSubset are a region, an element type, a position, or section point data. The following is a second example that uses an element set to define the region and generates formatted output. For more information on tuples, the `len()` function, and the `range() `function, see :doc:`/user/python/introduction/python-basics:sequences` and :doc:`/user/python/introduction/python-basics:sequence operations`."
 msgstr ""
 
 #: ../../user/output/python/read.rst:499

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-30 00:16+0000\n"
+"POT-Creation-Date: 2022-09-04 00:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,7 +102,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean:17
-#: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:43
+#: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:44
 #: abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant:16
 #: abaqus.UtilityAndView.View.View:11 of
 msgid "This object can be accessed by:"
@@ -845,23 +845,23 @@ msgid ""
 " member is ON, and Abaqus will execute a script containing deprecated "
 "commands with no indication that you should update the script. You can do"
 " either of the following to change the value of the **includeDeprecated**"
-" member and to determine which commands have been deprecated: - From the "
-"command line interface in Abaqus/CAE or from an Abaqus Scripting "
-"Interface script that is run from within Abaqus/CAE, use the following "
+" member and to determine which commands have been deprecated:"
+msgstr ""
+
+#: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:14 of
+msgid ""
+"From the command line interface in Abaqus/CAE or from an Abaqus Scripting"
+" Interface script that is run from within Abaqus/CAE, use the following "
 "command:"
 msgstr ""
 
-#: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:20 of
+#: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:21 of
 msgid ""
 "From an Abaqus Scripting Interface script that is run using `abaqus "
-"python` at the"
+"python` at the system prompt, use the following two commands:"
 msgstr ""
 
-#: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:21 of
-msgid "system prompt, use the following two commands:"
-msgstr ""
-
-#: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:28 of
+#: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:29 of
 msgid ""
 "In addition, the BackwardCompatibility object provides tools to assist "
 "you in determining the deprecated commands that have been used. For "
@@ -869,7 +869,7 @@ msgid ""
 "createLug.py, use the following commands:"
 msgstr ""
 
-#: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:50 of
+#: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:51 of
 msgid ""
 "Check `BackwardCompatibility on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-backwardcompatibilitypyc.htm?contextscope=all>`_."
@@ -982,7 +982,8 @@ msgstr ""
 
 #: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedArgsUsed
 #: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedMethodsUsed
-#: of
+#: abaqus.UtilityAndView.Upgrade.upgradeScript
+#: abaqus.UtilityAndView.User.getWarningReply of
 msgid "Returns"
 msgstr ""
 
@@ -1032,6 +1033,8 @@ msgstr ""
 #: abaqus.UtilityAndView.Method.addCallback
 #: abaqus.UtilityAndView.Method.removeCallback
 #: abaqus.UtilityAndView.Repository.Repository.changeKey
+#: abaqus.UtilityAndView.Upgrade.upgradeScript
+#: abaqus.UtilityAndView.User.getWarningReply
 #: abaqus.UtilityAndView.View.View.fitView abaqus.UtilityAndView.View.View.next
 #: abaqus.UtilityAndView.View.View.pan abaqus.UtilityAndView.View.View.previous
 #: abaqus.UtilityAndView.View.View.rotate
@@ -1094,10 +1097,12 @@ msgstr ""
 
 #: abaqus.UtilityAndView.Callback.addImportCallback:7
 #: abaqus.UtilityAndView.Callback.removeImportCallback:5
-#: abaqus.UtilityAndView.Customization.journalMethodCall:18
+#: abaqus.UtilityAndView.Customization.journalMethodCall:21
 #: abaqus.UtilityAndView.Delete.deleteObjectCallback:9
 #: abaqus.UtilityAndView.Method.addCallback:6
-#: abaqus.UtilityAndView.Method.removeCallback:6 of
+#: abaqus.UtilityAndView.Method.removeCallback:6
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:10
+#: abaqus.UtilityAndView.User.getWarningReply:20 of
 msgid "This function can be accessed by:"
 msgstr ""
 
@@ -1127,9 +1132,9 @@ msgstr ""
 #: abaqus.UtilityAndView.Callback.addImportCallback:22 of
 msgid ""
 "A Python function to be called. The interface definition of the callback "
-"function is :`def functionName(moduleName, userData)`*moduleName* is a "
-"String.*userData* is the object passed as the **userData** argument to "
-"the addImportCallback method."
+"function is `def functionName(moduleName, userData)`. **moduleName** is a"
+" String. **userData** is the object passed as the **userData** argument "
+"to the addImportCallback method."
 msgstr ""
 
 #: abaqus.UtilityAndView.Callback.addImportCallback:40
@@ -1167,7 +1172,7 @@ msgid ""
 "argument specified in the original call to addImportCallback."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:48
+#: ../../reference/kernel/utility.rst:46
 msgid "Customization"
 msgstr ""
 
@@ -1180,81 +1185,64 @@ msgstr ""
 #: abaqus.UtilityAndView.Customization.journalMethodCall:2 of
 msgid ""
 "This function may be used by a user-defined command to record itself in "
-"the Abaqus journal file. For example @abaqus_method_doc def setValues( "
-"self, **kargs ):"
+"the Abaqus journal file. For example"
 msgstr ""
 
-#: abaqus.UtilityAndView.Customization.journalMethodCall:7 of
-msgid "for arg,value in kargs.items():"
-msgstr ""
-
-#: abaqus.UtilityAndView.Customization.journalMethodCall:8 of
-msgid "setattr(arg, value)"
-msgstr ""
-
-#: abaqus.UtilityAndView.Customization.journalMethodCall:9 of
-#, python-format
+#: abaqus.UtilityAndView.Customization.journalMethodCall:15 of
 msgid ""
-"from abaqus import journalMethodCall objPath = '%s[%r]' % "
-"(self.reposPath, self.name) journalMethodCall(objPath, 'setValues', (), "
-"kargs)"
-msgstr ""
-
-#: abaqus.UtilityAndView.Customization.journalMethodCall:12 of
-msgid ""
-"Note:Your command should not call journalMethodCall if the command "
-"changes the mdb using built-in Abaqus Scripting Interface commands, "
-"because built-in commands are journaled by default. A command that "
-"changes the mdb customData is one example of a command that should call "
+"Your command should not call journalMethodCall if the command changes the"
+" mdb using built-in Abaqus Scripting Interface commands, because built-in"
+" commands are journaled by default. A command that changes the mdb "
+"customData is one example of a command that should call "
 "journalMethodCall."
 msgstr ""
 
-#: abaqus.UtilityAndView.Customization.journalMethodCall:25 of
+#: abaqus.UtilityAndView.Customization.journalMethodCall:28 of
 msgid ""
 "Check `Customization.journalMethodCall() on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functioncustomizationpyc.htm?contextscope=all"
 "#simaker-functioncustomizationjournalmethodcallpyc>`_."
 msgstr ""
 
-#: abaqus.UtilityAndView.Customization.journalMethodCall:30 of
+#: abaqus.UtilityAndView.Customization.journalMethodCall:33 of
 msgid "**objectPath**"
 msgstr ""
 
-#: abaqus.UtilityAndView.Customization.journalMethodCall:30 of
+#: abaqus.UtilityAndView.Customization.journalMethodCall:33 of
 msgid "A String specifying the path to the object."
 msgstr ""
 
-#: abaqus.UtilityAndView.Customization.journalMethodCall:33
+#: abaqus.UtilityAndView.Customization.journalMethodCall:36
 #: abaqus.UtilityAndView.Method.addCallback:23
 #: abaqus.UtilityAndView.Method.removeCallback:23 of
 msgid "**methodName**"
 msgstr ""
 
-#: abaqus.UtilityAndView.Customization.journalMethodCall:33 of
+#: abaqus.UtilityAndView.Customization.journalMethodCall:36 of
 msgid "A String specifying the name of the method."
 msgstr ""
 
-#: abaqus.UtilityAndView.Customization.journalMethodCall:36 of
+#: abaqus.UtilityAndView.Customization.journalMethodCall:39 of
 msgid "**args**"
 msgstr ""
 
-#: abaqus.UtilityAndView.Customization.journalMethodCall:36 of
+#: abaqus.UtilityAndView.Customization.journalMethodCall:39 of
 msgid ""
 "A sequence specifying the positional arguments to be written to the "
 "journal file."
 msgstr ""
 
-#: abaqus.UtilityAndView.Customization.journalMethodCall:52 of
+#: abaqus.UtilityAndView.Customization.journalMethodCall:55 of
 msgid "**kargs**"
 msgstr ""
 
-#: abaqus.UtilityAndView.Customization.journalMethodCall:39 of
+#: abaqus.UtilityAndView.Customization.journalMethodCall:42 of
 msgid ""
 "A Python dict object specifying the keyword arguments to be written to "
 "the journal file."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:56
+#: ../../reference/kernel/utility.rst:52
 msgid "Delete"
 msgstr ""
 
@@ -1279,9 +1267,9 @@ msgstr ""
 msgid ""
 "A Python function to be called when an object matching the specified path"
 " is about to be deleted. The interface definition of the callback "
-"function is:`def functionName(objectPath, userData)`where:*objectPath* is"
-" the path to the object about to be deleted.*userData* is the object "
-"passed as the **userData** argument to the addCallback method."
+"function is `def functionName(objectPath, userData)` where **objectPath**"
+" is the path to the object about to be deleted. **userData** is the "
+"object passed as the **userData** argument to the addCallback method."
 msgstr ""
 
 #: abaqus.UtilityAndView.Delete.deleteObjectCallback:31 of
@@ -1292,8 +1280,9 @@ msgstr ""
 msgid ""
 "A String specifying the path to an object or the SymbolicConstant ANY. "
 "You can include wildcards in the path to specify a pattern to be matched."
-" Examples of valid paths are:`path='mdb.models[*]' "
-"path=”mdb.models['Axle*'].parts[*]” path='mdb.models[*].materials[*]' `"
+" Examples of valid paths are  `path='mdb.models[*]' "
+"path=\"mdb.models['Axle*'].parts[*]\"`, and "
+"`path='mdb.models[*].materials[*]'`"
 msgstr ""
 
 #: abaqus.UtilityAndView.Delete.deleteObjectCallback:34
@@ -1315,7 +1304,7 @@ msgid ""
 "deleted. The default value is False."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:64
+#: ../../reference/kernel/utility.rst:58
 msgid "Method"
 msgstr ""
 
@@ -1356,12 +1345,12 @@ msgstr ""
 msgid ""
 "A Python function to be called when a command matching the specified "
 "caller and method name is about to be executed. The interface definition "
-"of the callback function is:`def functionName(callingMethod, args, "
-"keywordArgs, userData)`where:*callingMethod* is the method that called "
-"this function.*args* is the sequence of non-keyword arguments that was "
-"passed to the calling method.*keywordArgs* is the dictionary of keyword "
-"arguments that was passed to the calling method.*userData* is the object "
-"passed as the **userData** argument to the addCallback method."
+"of the callback function is `def functionName(callingMethod, args, "
+"keywordArgs, userData)` where **callingMethod** is the method that called"
+" this function. **args** is the sequence of non-keyword arguments that "
+"was passed to the calling method. **keywordArgs** is the dictionary of "
+"keyword arguments that was passed to the calling method. **userData** is "
+"the object passed as the **userData** argument to the addCallback method."
 msgstr ""
 
 #: abaqus.UtilityAndView.Method.addCallback:57 of
@@ -1373,9 +1362,9 @@ msgid ""
 "A Boolean specifying that the callback should be called after the method "
 "has executed (instead of before the method is called). The default value "
 "is False, which indicates that the callback should be called before the "
-"method has executed.If **callAfter** = True, you can also access the "
+"method has executed. If **callAfter** = True, you can also access the "
 "return value of the command from within the callback by including the "
-"following statement:`returnValue = getMethodReturnValue()`The "
+"following statement `returnValue = getMethodReturnValue()` The "
 "getMethodReturnValue function is in the global namespace of the callback "
 "function."
 msgstr ""
@@ -1398,15 +1387,16 @@ msgstr ""
 msgid ""
 "A Python function to be called when a command matching the specified "
 "caller and method name is about to be executed. The interface definition "
-"of the callback function is:`def functionName(callingMethod, args, "
-"keywordArgs, userData)`where:*callingMethod* is the method that called "
-"this function.*args* is the sequence of nonkeyword arguments that was "
-"passed to the calling method.*keywordArgs* is the dictionary of keyword "
-"arguments that was passed to the calling method.*userData* is the object "
-"passed as the **userData** argument to the removeCallback method."
+"of the callback function is `def functionName(callingMethod, args, "
+"keywordArgs, userData)` where **callingMethod** is the method that called"
+" this function. **args** is the sequence of nonkeyword arguments that was"
+" passed to the calling method. **keywordArgs** is the dictionary of "
+"keyword arguments that was passed to the calling method. **userData** is "
+"the object passed as the **userData** argument to the removeCallback "
+"method."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:72
+#: ../../reference/kernel/utility.rst:64
 msgid "Repository"
 msgstr ""
 
@@ -1732,11 +1722,11 @@ msgstr ""
 msgid "A String specifying the new name of the repository key."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:80
+#: ../../reference/kernel/utility.rst:72
 msgid "Status"
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:88
+#: ../../reference/kernel/utility.rst:78
 msgid "SymbolicConstant"
 msgstr ""
 
@@ -2524,15 +2514,207 @@ msgstr ""
 msgid "Helper method for __new__ Also used by AbaqusBoolean.__new__"
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:96
+#: ../../reference/kernel/utility.rst:86
 msgid "Upgrade"
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:104
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:2 of
+msgid ""
+"This function can be used to upgrade a directory, a file, or a list of "
+"both directories and files. You can preview the changes before you choose"
+" to upgrade the file. A user interface to this function is available via "
+"the Plug-ins menu. For more information, see Upgrading a script. You can "
+"also use a simpler interface from the command line to upgrade scripts. "
+"For more information, see the summary of changed commands at the end of "
+"this guide."
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:17 of
+msgid ""
+"Check `Upgrade.upgradeScript() on help.3ds.com/2019 "
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionupgradepyc.htm?contextscope=all"
+"#simaker-functionupgradeupgradescriptpyc>`_."
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:25 of
+msgid "**fileNames**"
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:22 of
+msgid ""
+"A String or sequence of Strings specifying the files or directories to "
+"upgrade. If a directory path is found, it will be searched for files with"
+" the suffix .py or .guiLog. If **searchSubdirectories** is True, any "
+"directories found within a directory will also be searched."
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:31 of
+msgid "**searchSubdirectories**"
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:28 of
+msgid ""
+"A Boolean specifying whether to search any subdirectories (if the file "
+"name is a directory). If **searchSubdirectories** is True, the command "
+"will search the subdirectories of any directory in **fileNames**. If "
+"**searchSubdirectories** is False, the command will search the directory "
+"but not the subdirectories. The default value is True."
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:35 of
+msgid "**backup**"
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:34 of
+msgid ""
+"A Boolean specifying whether to make backups of the files. The default "
+"value is True. This argument is ignored if **preview** is set."
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:41 of
+msgid "**preview**"
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:38 of
+msgid ""
+"A Boolean specifying whether to preview the changes to the file instead "
+"of changing the file. If **preview** is True, display a preview of the "
+"file changes. The default value is True.By default, the preview is "
+"displayed in a web browser. The **diffExecutable** argument allows you to"
+" specify a different application in which to preview the changes."
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:47 of
+msgid "**diffExecutable**"
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:44 of
+msgid ""
+"A String specifying the application used to display the differences "
+"between the script and the upgraded script. The default value is an empty"
+" string, and the differences are displayed by a web browser. Examples of "
+"values for **diffExecutable** are winmerge and diff. This argument is "
+"ignored if **preview** is False."
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:51 of
+msgid "**logFileName**"
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:50 of
+msgid ""
+"A String specifying the name of the log file where any warnings and "
+"changes found during the upgrade are written. The default value is "
+"asiUpgrade.log."
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:55 of
+msgid "**fromVersion**"
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:54 of
+msgid ""
+"A String specifying the Abaqus release from which to upgrade. The default"
+" value is EARLIEST."
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:58 of
+msgid "**toVersion**"
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:58 of
+msgid ""
+"A String specifying the Abaqus release to which to upgrade. The default "
+"value is LATEST."
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:64 of
+msgid "**scriptType**"
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:61 of
+msgid ""
+"A SymbolicConstant specifying the type of scripting commands to be "
+"upgraded. Possible values are KERNEL, GUI, or BOTH. If **scriptType** is "
+"KERNEL only Abaqus Scripting Interface commands will be upgraded; if "
+"**scriptType** is GUI only Abaqus GUI Toolkit commands will be upgraded. "
+"The default value is BOTH."
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:82 of
+msgid ":class:`python:int`"
+msgstr ""
+
+#: abaqus.UtilityAndView.Upgrade.upgradeScript:69 of
+msgid ""
+"The number of changes made or, if **preview** was used, the number of "
+"changes that would have been made."
+msgstr ""
+
+#: ../../reference/kernel/utility.rst:92
 msgid "User"
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:112
+#: abaqus.UtilityAndView.User:1 of
+msgid "The following commands are used to request data entry from a user."
+msgstr ""
+
+#: abaqus.UtilityAndView.User.getWarningReply:10 of
+msgid ""
+"This method is used to obtain a reply from a user from a warning dialog "
+"box. The method"
+msgstr ""
+
+#: abaqus.UtilityAndView.User.getWarningReply:3 of
+msgid ""
+"displays a modal warning dialog box with a message and standard buttons. "
+"The user clicks the one of the standard buttons, the getWarningReply "
+"returns the corresponding button value and closes the dialog box. You can"
+" use a separator in the message argument to provide a multi-line message "
+"in the warning dialog box; for example"
+msgstr ""
+
+#: abaqus.UtilityAndView.User.getWarningReply:12 of
+msgid "Okay to continue', (YES, NO))"
+msgstr ""
+
+#: abaqus.UtilityAndView.User.getWarningReply:15 of
+msgid ""
+"You cannot use a script that contains getWarningReply if you are running "
+"the script from the command line and passing the script name to the "
+"command line options **-start**, **-script**, **-replay**, or **-noGUI**."
+msgstr ""
+
+#: abaqus.UtilityAndView.User.getWarningReply:27 of
+msgid ""
+"Check `User.getWarningReply() on help.3ds.com/2019 "
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionuserpyc.htm?contextscope=all"
+"#simaker-functionusergetwarningreplypyc>`_."
+msgstr ""
+
+#: abaqus.UtilityAndView.User.getWarningReply:32 of
+msgid "**message**"
+msgstr ""
+
+#: abaqus.UtilityAndView.User.getWarningReply:32 of
+msgid "A String specifying the message in the warning dialog box."
+msgstr ""
+
+#: abaqus.UtilityAndView.User.getWarningReply:36 of
+msgid "**buttons**"
+msgstr ""
+
+#: abaqus.UtilityAndView.User.getWarningReply:35 of
+msgid ""
+"A Sequence of standard buttons to be displayed in the warning dialog box."
+" Permissible values are YES, NO, YES_TO_ALL and CANCEL."
+msgstr ""
+
+#: abaqus.UtilityAndView.User.getWarningReply:53 of
+msgid ":obj:`The` :obj:`button` :obj:`that` :obj:`the` :obj:`user` clicks."
+msgstr ""
+
+#: ../../reference/kernel/utility.rst:98
 msgid "View"
 msgstr ""
 
@@ -2835,10 +3017,10 @@ msgstr ""
 msgid ""
 "A String specifying the name of the view (also used as the repository "
 "key). Possible values are 'Front', 'Back', 'Top', 'Bottom', 'Left', "
-"`Right', 'Iso', 'User-1', 'User-2', 'User-3', and 'User-4'. The object "
+"'Right', 'Iso', 'User-1', 'User-2', 'User-3', and 'User-4'. The object "
 "member associated with this argument is a SymbolicConstant. Possible "
-"values of the **name** member are:FRONT, BACK, TOP, BOTTOM, LEFT, RIGHT, "
-"ISO, USER1, USER2, USER3, and USER4."
+"values of the **name** member are: FRONT, BACK, TOP, BOTTOM, LEFT, RIGHT,"
+" ISO, USER1, USER2, USER3, and USER4."
 msgstr ""
 
 #: ../../docstring abaqus.UtilityAndView.View.View.nearPlane:2 of
@@ -3226,4 +3408,177 @@ msgid ""
 "A pair of Floats specifying the*X*- and **Y**-coordinates of the other "
 "corner of the rectangle in fractions of the viewport width and height."
 msgstr ""
+
+#~ msgid ""
+#~ "The BackwardCompatibility object enables the"
+#~ " user to control access to deprecated"
+#~ " commands in the Abaqus Scripting "
+#~ "Interface and to collect data on "
+#~ "which deprecated commands have been "
+#~ "used. This enables the user to "
+#~ "check that no deprecated methods, "
+#~ "members, or arguments have been used."
+#~ " Data are recorded on any deprecated"
+#~ " members, methods, or arguments that "
+#~ "are used. The BackwardCompatibility object "
+#~ "has no constructor. The abaqus module"
+#~ " and the odbAccess module each have"
+#~ " a member named backwardCompatibility. By"
+#~ " default, the value of the "
+#~ "**includeDeprecated** member is ON, and "
+#~ "Abaqus will execute a script containing"
+#~ " deprecated commands with no indication "
+#~ "that you should update the script. "
+#~ "You can do either of the following"
+#~ " to change the value of the "
+#~ "**includeDeprecated** member and to determine"
+#~ " which commands have been deprecated: "
+#~ "- From the command line interface "
+#~ "in Abaqus/CAE or from an Abaqus "
+#~ "Scripting Interface script that is run"
+#~ " from within Abaqus/CAE, use the "
+#~ "following command:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "From an Abaqus Scripting Interface "
+#~ "script that is run using `abaqus "
+#~ "python` at the"
+#~ msgstr ""
+
+#~ msgid "system prompt, use the following two commands:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Python function to be called. "
+#~ "The interface definition of the callback"
+#~ " function is :`def functionName(moduleName, "
+#~ "userData)`*moduleName* is a String.*userData* "
+#~ "is the object passed as the "
+#~ "**userData** argument to the addImportCallback"
+#~ " method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function may be used by a "
+#~ "user-defined command to record itself"
+#~ " in the Abaqus journal file. For "
+#~ "example @abaqus_method_doc def setValues( "
+#~ "self, **kargs ):"
+#~ msgstr ""
+
+#~ msgid "for arg,value in kargs.items():"
+#~ msgstr ""
+
+#~ msgid "setattr(arg, value)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "from abaqus import journalMethodCall objPath"
+#~ " = '%s[%r]' % (self.reposPath, self.name)"
+#~ " journalMethodCall(objPath, 'setValues', (), "
+#~ "kargs)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note:Your command should not call "
+#~ "journalMethodCall if the command changes "
+#~ "the mdb using built-in Abaqus "
+#~ "Scripting Interface commands, because "
+#~ "built-in commands are journaled by "
+#~ "default. A command that changes the "
+#~ "mdb customData is one example of a"
+#~ " command that should call "
+#~ "journalMethodCall."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Python function to be called "
+#~ "when an object matching the specified"
+#~ " path is about to be deleted. "
+#~ "The interface definition of the callback"
+#~ " function is:`def functionName(objectPath, "
+#~ "userData)`where:*objectPath* is the path to"
+#~ " the object about to be "
+#~ "deleted.*userData* is the object passed "
+#~ "as the **userData** argument to the "
+#~ "addCallback method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the path to an"
+#~ " object or the SymbolicConstant ANY. "
+#~ "You can include wildcards in the "
+#~ "path to specify a pattern to be"
+#~ " matched. Examples of valid paths "
+#~ "are:`path='mdb.models[*]' path=”mdb.models['Axle*'].parts[*]”"
+#~ " path='mdb.models[*].materials[*]' `"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Python function to be called "
+#~ "when a command matching the specified"
+#~ " caller and method name is about "
+#~ "to be executed. The interface definition"
+#~ " of the callback function is:`def "
+#~ "functionName(callingMethod, args, keywordArgs, "
+#~ "userData)`where:*callingMethod* is the method "
+#~ "that called this function.*args* is the"
+#~ " sequence of non-keyword arguments "
+#~ "that was passed to the calling "
+#~ "method.*keywordArgs* is the dictionary of "
+#~ "keyword arguments that was passed to "
+#~ "the calling method.*userData* is the "
+#~ "object passed as the **userData** "
+#~ "argument to the addCallback method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying that the callback"
+#~ " should be called after the method"
+#~ " has executed (instead of before the"
+#~ " method is called). The default value"
+#~ " is False, which indicates that the"
+#~ " callback should be called before the"
+#~ " method has executed.If **callAfter** = "
+#~ "True, you can also access the "
+#~ "return value of the command from "
+#~ "within the callback by including the "
+#~ "following statement:`returnValue = "
+#~ "getMethodReturnValue()`The getMethodReturnValue function"
+#~ " is in the global namespace of "
+#~ "the callback function."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Python function to be called "
+#~ "when a command matching the specified"
+#~ " caller and method name is about "
+#~ "to be executed. The interface definition"
+#~ " of the callback function is:`def "
+#~ "functionName(callingMethod, args, keywordArgs, "
+#~ "userData)`where:*callingMethod* is the method "
+#~ "that called this function.*args* is the"
+#~ " sequence of nonkeyword arguments that "
+#~ "was passed to the calling "
+#~ "method.*keywordArgs* is the dictionary of "
+#~ "keyword arguments that was passed to "
+#~ "the calling method.*userData* is the "
+#~ "object passed as the **userData** "
+#~ "argument to the removeCallback method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the view (also used as the "
+#~ "repository key). Possible values are "
+#~ "'Front', 'Back', 'Top', 'Bottom', 'Left', "
+#~ "`Right', 'Iso', 'User-1', 'User-2', 'User-3',"
+#~ " and 'User-4'. The object member "
+#~ "associated with this argument is a "
+#~ "SymbolicConstant. Possible values of the "
+#~ "**name** member are:FRONT, BACK, TOP, "
+#~ "BOTTOM, LEFT, RIGHT, ISO, USER1, USER2,"
+#~ " USER3, and USER4."
+#~ msgstr ""
 

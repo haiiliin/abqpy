@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,7 +89,7 @@ msgstr ""
 
 #: abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel:12 of
 msgid ""
-"Check `Model on help.3ds.com/2019 "
+"Check `OptimizationTaskModel on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -3727,6 +3727,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl:34
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:25
+#: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:30
 #: abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.csys:2
 #: abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.setValues:15
 #: abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.csys:2
@@ -4632,15 +4633,6 @@ msgid ""
 "is applied."
 msgstr ""
 
-#: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:30
-#: of
-msgid ""
-"None or a DatumCsys object specifying the local coordinate system of the "
-"*pullDirection*. If *csys*=None, the global coordinate system is used. "
-"When this member is queried, it returns an Int indicating the identifier "
-"of the DatumCsys. The default value is None."
-msgstr ""
-
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:36
 #: of
 msgid "A Float specifying the overhang angle. The default value is 45.0."
@@ -4656,7 +4648,7 @@ msgstr ""
 msgid ""
 "The SymbolicConstant OVERHANG_REGION or a Region object specifying the "
 "overhang check region. If the value is OVERHANG_REGION, the value of "
-"*region* is used as both the overhang control region and the overhang "
+"**region** is used as both the overhang control region and the overhang "
 "check region. The default value is OVERHANG_REGION."
 msgstr ""
 
@@ -4664,8 +4656,8 @@ msgstr ""
 #: of
 msgid ""
 "A Region object specifying the point on a plane perpendicular to the "
-"*pullDirection* that is used to specify the base plane when *technique* "
-"is POINT."
+"**pullDirection** that is used to specify the base plane when "
+"**technique** is POINT."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:50
@@ -10997,4 +10989,39 @@ msgid ""
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-turncontrolpyc.htm?contextscope=all"
 "#simaker-turncontrolsetvaluespyc>`_."
 msgstr ""
+
+#~ msgid ""
+#~ "Check `Model on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "None or a DatumCsys object specifying"
+#~ " the local coordinate system of the"
+#~ " *pullDirection*. If *csys*=None, the "
+#~ "global coordinate system is used. When"
+#~ " this member is queried, it returns"
+#~ " an Int indicating the identifier of"
+#~ " the DatumCsys. The default value is"
+#~ " None."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SymbolicConstant OVERHANG_REGION or a "
+#~ "Region object specifying the overhang "
+#~ "check region. If the value is "
+#~ "OVERHANG_REGION, the value of *region* "
+#~ "is used as both the overhang "
+#~ "control region and the overhang check"
+#~ " region. The default value is "
+#~ "OVERHANG_REGION."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Region object specifying the point "
+#~ "on a plane perpendicular to the "
+#~ "*pullDirection* that is used to specify"
+#~ " the base plane when *technique* is"
+#~ " POINT."
+#~ msgstr ""
 

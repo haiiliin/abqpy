@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -613,7 +613,7 @@ msgid ""
 "ConnectorSection object."
 msgstr ""
 
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:57
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:64
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity:16 of
 msgid ""
 "Check `ConnectorElasticity on help.3ds.com/2019 "
@@ -2227,9 +2227,262 @@ msgid ""
 "is derived from the ConnectorBehaviorOption object."
 msgstr ""
 
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:16
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:16
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:16
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:16
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:15 of
+msgid "The table data for this object are:"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:18 of
+msgid "Table data for **initiationTable**:"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:20 of
+msgid ""
+"If **criterion** = FORCE, then each sequence of the table data specifies "
+"the following:"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:22 of
+msgid ""
+"Lower (compression) limiting force or moment. Use -1.0E+36 to indicate an"
+" unspecified lower limit."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:23 of
+msgid ""
+"Upper (tension) limiting force or moment. Use 1.0E+36 to indicate an "
+"unspecified upper limit. At least one"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:24 of
+msgid "limit, lower or upper, must be specified."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:25
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:36
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:45
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:57
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:67
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:77
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:85
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:22
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:30
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:39
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:57
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:22
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:31
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:41
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:54
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:25
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:34
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:45
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:54
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:63
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:22 of
+msgid "Temperature, if the data depend on temperature."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:26
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:37
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:46
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:58
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:68
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:78
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:86
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:23
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:31
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:40
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:58
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:23
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:32
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:42
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:55
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:26
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:35
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:46
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:55
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:64
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:23 of
+msgid "Value of the first field variable, if the data depend on field variables."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:27
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:38
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:47
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:59
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:69
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:79
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:87
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:24
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:32
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:41
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:59
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:24
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:33
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:43
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:56
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:27
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:36
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:47
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:56
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:65
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:24 of
+msgid "Value of the second field variable."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:28
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:39
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:48
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:60
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:70
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:80
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:88
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:25
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:33
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:42
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:60
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:25
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:34
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:44
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:57
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:28
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:37
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:48
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:57
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:66
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:25 of
+msgid "Etc."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:30 of
+msgid ""
+"If **criterion** = MOTION, then each sequence of the table data specifies"
+" the following:"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:32 of
+msgid ""
+"Lower (compression) limiting connector constitutive relative displacement"
+" or rotation. Use -1.0E+36 to"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:33 of
+msgid "indicate an unspecified lower limit."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:34 of
+msgid ""
+"Upper (tension) limiting connector constitutive relative displacement or "
+"rotation. Use 1.0E+36 to indicate an"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:35 of
+msgid ""
+"unspecified upper limit. At least one limit, lower or upper, must be "
+"specified."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:40 of
+msgid ""
+"If **criterion** = PLASTIC_MOTION, then each sequence of the table data "
+"specifies the following:"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:42 of
+msgid ""
+"Relative equivalent Plastic displacement/rotation at which damage will be"
+" initiated."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:43 of
+msgid "Mode-mix ratio (only if **coupling** = COUPLED)."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:44 of
+msgid "Relative equivalent Plastic displacement/rotation rate."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:50 of
+msgid "Table data for **evolutionTable**:"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:52 of
+msgid ""
+"If **evolutionType** = MOTION and **softening** = LINEAR, then each "
+"sequence of the table data specifies the following:"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:54
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:63 of
+msgid ""
+"Post-initiation equivalent relative Plastic motion at ultimate failure if"
+" **criterion** = PLASTIC_MOTION."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:55
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:64 of
+msgid ""
+"Otherwise, post-initiation constitutive relative motion "
+"(displacement/rotation) at ultimate failure."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:56
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:66
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:76
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:84 of
+msgid ""
+"Mode-mix ratio (only if **coupling** = COUPLED and **criterion** = "
+"PLASTIC_MOTION)."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:61 of
+msgid ""
+"If **evolutionType** = MOTION and **softening** = EXPONENTIAL, then each "
+"sequence of the table data specifies the following:"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:65 of
+msgid "Exponential law parameter."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:71 of
+msgid ""
+"If **evolutionType** = MOTION and **softening** = TABULAR, then each "
+"sequence of the table data specifies the following:"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:73 of
+msgid "Damage variable (cannot be less than 0 or greater than 1)."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:74 of
+msgid ""
+"Post-initiation equivalent relative Plastic motion if **criterion** = "
+"PLASTIC_MOTION."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:75 of
+msgid ""
+"Otherwise, post-initiation constitutive relative motion "
+"(displacement/rotation)."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:81 of
+msgid ""
+"If **evolutionType** = ENERGY, then each sequence of the table data "
+"specifies the following:"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:83 of
+msgid "Total energy dissipated by damage at ultimate failure."
+msgstr ""
+
 #: abaqus.Connector.ConnectorDamage.ConnectorDamage:90
 #: abaqus.Connector.ConnectorDamping.ConnectorDamping:62
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:52
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:59
 #: abaqus.Connector.ConnectorFailure.ConnectorFailure:16
 #: abaqus.Connector.ConnectorFriction.ConnectorFriction:16
 #: abaqus.Connector.ConnectorLock.ConnectorLock:16
@@ -2604,6 +2857,112 @@ msgid ""
 "is derived from the ConnectorBehaviorOption object."
 msgstr ""
 
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:18
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:18 of
+msgid ""
+"If **behavior** = LINEAR and **coupling** = UNCOUPLED, then each sequence"
+" of the table data specifies the following:"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:20 of
+msgid "Damping coefficient (force or moment per relative velocity)."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:21
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:21 of
+msgid "Frequency (cycles/time), if the data depend on frequency."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:26
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:27 of
+msgid ""
+"If **behavior** = NONLINEAR and **coupling** = UNCOUPLED, then each "
+"sequence of the table data specifies the following:"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:28
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:29 of
+msgid "Force or moment."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:29
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:30 of
+msgid "Relative displacement or rotation."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:41 of
+msgid ""
+"If **behavior** = LINEAR and **coupling** = COUPLED, the table data "
+"specify the symmetric portion"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:35 of
+msgid ""
+"of the damping matrix for the specified components followed by any "
+"temperature data and then any field data. For example, if components 2, "
+"3, and 5 are specified, the table portion of the command is as follows: "
+"table=( (C22C22, C23C23, C25C25, C33C33, C35C35, C55C55,), ) The "
+"following items should then be specified as comma-separated data:"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:60 of
+msgid ""
+"If **behavior** = NONLINEAR and **coupling** = COUPLED_POSITION or "
+"COUPLED_MOTION, each sequence"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:44 of
+msgid "of the table data specifies the following:"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:46
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:48 of
+msgid "Force or moment for the directions in the **components** list."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:47 of
+msgid "Relative velocity for the directions in the **components** list."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:48 of
+msgid ""
+"Relative position or angle for the first **independentComponents** "
+"direction if"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:49
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:53 of
+msgid "**coupling** = COUPLED_POSITION."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:50 of
+msgid ""
+"Relative displacement or rotation for the first **independentComponents**"
+" direction if"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:51
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:55 of
+msgid "**coupling** = COUPLED_MOTION."
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:52 of
+msgid ""
+"Relative position or angle for the second **independentComponents** "
+"direction if"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:54 of
+msgid ""
+"Relative displacement or rotation for the second "
+"**independentComponents** direction if"
+msgstr ""
+
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:56
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:53 of
+msgid "Etc. up to the Nth **independentComponents** direction."
+msgstr ""
+
 #: abaqus.Connector.ConnectorDamping.ConnectorDamping:64
 #: abaqus.Connector.ConnectorOptions.ConnectorOptions:44 of
 msgid "CONNECTOR DAMPING"
@@ -2792,7 +3151,44 @@ msgid ""
 "object is derived from the ConnectorBehaviorOption object."
 msgstr ""
 
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:54
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:20 of
+msgid "Elastic stiffness (per each specified force/moment component)."
+msgstr ""
+
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:36 of
+msgid ""
+"If **behavior** = LINEAR and **coupling** = COUPLED, the table data "
+"specify the symmetric portion of the elastic stiffness matrix for  the "
+"specified components followed by any temperature data and then any field "
+"data. For example, if components 2, 3, and 5 are specified,  the table "
+"portion of the command is as follows: `table=( (D22D22, D23D23, D25D25, "
+"D33D33, D35D35, D55D55,), )` The following items should then be specified"
+" as comma-separated data:"
+msgstr ""
+
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:46 of
+msgid ""
+"If **behavior** = NONLINEAR and **coupling** = COUPLED_POSITION or "
+"COUPLED_MOTION, each sequence of the table data specifies the following:"
+msgstr ""
+
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:49 of
+msgid ""
+"Relative position or angle for the first **independentComponents** "
+"direction if **coupling** = COUPLED_POSITION. Relative  displacement or "
+"rotation for the first **independentComponents** direction if "
+"**coupling** = COUPLED_MOTION."
+msgstr ""
+
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:51 of
+msgid ""
+"Relative position or angle for the second **independentComponents** "
+"direction if **coupling** = COUPLED_POSITION. Relative  displacement or "
+"rotation for the second **independentComponents** direction if "
+"**coupling** = COUPLED_MOTION."
+msgstr ""
+
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:61
 #: abaqus.Connector.ConnectorOptions.ConnectorOptions:46 of
 msgid "CONNECTOR ELASTICITY"
 msgstr ""
@@ -3753,11 +4149,6 @@ msgid ""
 "object is derived from the ConnectorBehaviorOption object."
 msgstr ""
 
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:16
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior:15 of
-msgid "The table data for this object are:"
-msgstr ""
-
 #: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:18 of
 msgid "Table data for **isotropicTable**:"
 msgstr ""
@@ -3778,42 +4169,6 @@ msgstr ""
 
 #: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:24 of
 msgid "Equivalent relative Plastic motion rate."
-msgstr ""
-
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:25
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:34
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:45
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:54
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:63
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior:22 of
-msgid "Temperature, if the data depend on temperature."
-msgstr ""
-
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:26
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:35
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:46
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:55
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:64
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior:23 of
-msgid "Value of the first field variable, if the data depend on field variables."
-msgstr ""
-
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:27
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:36
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:47
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:56
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:65
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior:24 of
-msgid "Value of the second field variable."
-msgstr ""
-
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:28
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:37
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:48
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:57
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:66
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior:25 of
-msgid "Etc."
 msgstr ""
 
 #: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:29 of
