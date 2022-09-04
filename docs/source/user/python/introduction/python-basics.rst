@@ -328,7 +328,7 @@ You can use the `tuple()` function to convert a list or a string to a tuple.
 The following statements create a tuple and then try to change the value of an item in the tuple. An `AttributeError` error message is generated because a tuple is immutable.
 
 .. autolink-skip:: section
-.. code-block:: python2
+.. code-block::
 
     >>> myTuple = (1,2,3,4,5)
     >>> type(myTuple)
