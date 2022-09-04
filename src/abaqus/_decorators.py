@@ -70,7 +70,7 @@ class AbaqusDoc:
         module_name = f"{type if type == 'module' else ''}{class_or_module_name.lower()}"
         link = (f"https://help.3ds.com/{version}/English/DSSIMULIA_Established/SIMACAEKERRefMap/"
                 f"simaker-c-{prefix}{module_name}{suffix}pyc.htm?contextscope=all")
-        return link, f"Check `{label} on help.3ds.com/{version} <{link}>`_."
+        return link, f"Check `{label} on help.3ds.com/{version} <{link}>`__."
 
     @classmethod
     def _method_or_function_link(
@@ -122,7 +122,7 @@ class AbaqusDoc:
             signature = f"{class_or_module_name}.{method_or_function_name}()"
         if label is None:
             label = signature
-        return link, f"Check `{label} on help.3ds.com/{version} <{link}>`_."
+        return link, f"Check `{label} on help.3ds.com/{version} <{link}>`__."
 
     @classmethod
     def _add_link_in_class_or_module_docstring(
