@@ -19,11 +19,11 @@ class OdbMeshRegionData:
         The `transformationType` attribute was moved.
     """
 
-    #: An Int specifying the step index. Possible values are 0 ≤≤ **stepIndex** ≤≤ (*numSteps* −
+    #: An Int specifying the step index. Possible values are 0 ≤ **stepIndex** ≤ (*numSteps* −
     #: 1). The default value is 0.
     stepIndex: int = 0
 
-    #: An Int specifying the frame in the specified step. Valid values are 0 ≤≤ **frameIndex** ≤≤
+    #: An Int specifying the frame in the specified step. Valid values are 0 ≤ **frameIndex** ≤
     #: (*numFramesInStep* − 1). The default value is 0.
     frameIndex: int = 0
 
@@ -101,8 +101,8 @@ class OdbMeshRegionData:
     #: value is OFF.
     averageOnlyDisplayed: Boolean = OFF
 
-    #: A Float specifying the nodal averaging threshold percentage. 0 ≤≤ **averagingThreshold**
-    #: ≤≤100. The default value is 75.0.
+    #: A Float specifying the nodal averaging threshold percentage. 0 ≤ **averagingThreshold**
+    #: ≤100. The default value is 75.0.
     averagingThreshold: float = 75
 
     #: A SymbolicConstant specifying the order or the computations to be performed on the
@@ -194,10 +194,10 @@ class OdbMeshRegionData:
         variableLabel
             A String specifying the field output variable.
         stepIndex
-            An Int specifying the step index. Possible values are 0 ≤≤ **stepIndex** ≤≤ (*numSteps* −
+            An Int specifying the step index. Possible values are 0 ≤ **stepIndex** ≤ (*numSteps* −
             1). The default value is 0.
         frameIndex
-            An Int specifying the frame in the specified step. Valid values are 0 ≤≤ **frameIndex** ≤≤
+            An Int specifying the frame in the specified step. Valid values are 0 ≤ **frameIndex** ≤
             (**numFramesInStep** − 1). The default value is 0.
         outputPosition
             A SymbolicConstant specifying the position where the data is written in the output

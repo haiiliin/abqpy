@@ -58,6 +58,7 @@ class StdContactControl(ContactControl):
     #: 
     #: - IMMEDIATE, specifying the friction is included in the increment when contact occurs.
     #: - DELAYED, specifying the application of friction is delayed until the increment after
+    #: 
     #: contact occurs.
     frictionOnset: SymbolicConstant = None
 

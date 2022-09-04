@@ -643,7 +643,7 @@ class XYData(tuple):
         numIntervals
             An Int specifying the number of uniform-spacing intervals. The default value is 10.
         labelType
-            A SymbolicConstant specifying the **X**-label type to use. Possible values are
+            A SymbolicConstant specifying the **X** label type to use. Possible values are
             NORM_DISTANCE, SEQ_ID, TRUE_DISTANCE, TRUE_DISTANCE_X, TRUE_DISTANCE_Y, TRUE_DISTANCE_Z,
             X_COORDINATE, Y_COORDINATE and Z_COORDINATE.
         viewport
@@ -682,14 +682,20 @@ class XYData(tuple):
             the component; for example, 'Mises' or 'S22'.Location: An optional Dictionary specifying
             the location. The dictionary contains pairs of the following:A String specifying the
             category selection label.A String specifying the section point label.For
-            example,`variable= ('S',INTEGRATION_POINT, ( (COMPONENT, 'S22' ), ), ) variable=
-            (('S',INTEGRATION_POINT, ((COMPONENT, 'S11' ), ), ),            ('U',NODAL,((COMPONENT,
-            'U1'),)),) variable= (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises' ), ),
-            {'shell < STEEL > < 3 section points >':'SNEG,
-            (fraction = -1.0)', }), )`
+            example,
+            
+            .. autolink-skip:: section
+            .. code-block:: python
+            
+                variable = ('S',INTEGRATION_POINT, ((COMPONENT, 'S22' ), ), ) 
+                variable = (('S',INTEGRATION_POINT, ((COMPONENT, 'S11' ), ), ),
+                            ('U',NODAL,((COMPONENT, 'U1'),)),) 
+                variable = (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises' ), ),
+                            {'shell < STEEL > < 3 section points >':'SNEG,
+                            (fraction = -1.0)', }), )
         deformedMag
             A tuple of three Floats specifying the deformation magnitude in the *X-*, *Y-*, and
-            *Z-*planes. The default value is (1, 1, 1).
+            *Z-* planes. The default value is (1, 1, 1).
         numericForm
             A SymbolicConstant specifying the numeric form in which to display results that contain
             complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,

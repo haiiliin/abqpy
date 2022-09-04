@@ -1475,8 +1475,8 @@ class Feature:
         cell
             A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object specifying the cell to partition.
         cornerPoints
-            A sequence of ConstrainedSketchVertex, InterestingPoint, or DatumPoint objects. 3 ≤≤ len(*cornerPoints*)
-            ≤≤ 5. The corner points must not coincide.
+            A sequence of ConstrainedSketchVertex, InterestingPoint, or DatumPoint objects. 3 ≤ len(*cornerPoints*)
+            ≤ 5. The corner points must not coincide.
 
         Returns
         -------
@@ -1804,12 +1804,12 @@ class Feature:
             An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the start of the partition. The edge must belong to **face**.
         parameter1
             A Float specifying the distance along **edge1** at which to partition. Possible values are
-            0.0 ≤≤ **distance1** ≤≤ 1.0.
+            0.0 ≤ **distance1** ≤ 1.0.
         edge2
             An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the end of the partition. The edge must belong to **face**.
         parameter2
             A Float specifying the distance along **edge2** at which to partition. Possible values are
-            0.0 ≤≤ **distance2** ≤≤ 1.0.
+            0.0 ≤ **distance2** ≤ 1.0.
 
         Returns
         -------
@@ -2366,11 +2366,11 @@ class Feature:
             created with the created with the PartitionEdgeByParam method.
         parameter1
             A Float specifying the distance along **edge1** at which to partition. Possible values are
-            0.0 ≤≤ **parameter1** ≤≤ 1.0. You use this argument to modify a partition object created
+            0.0 ≤ **parameter1** ≤ 1.0. You use this argument to modify a partition object created
             with the PartitionFaceByCurvedPathEdgeParam method.
         parameter2
             A Float specifying the distance along **edge2** at which to partition. Possible values are
-            0.0 ≤≤ **parameter2** ≤≤ 1.0. You use this argument to modify a partition object created
+            0.0 ≤ **parameter2** ≤ 1.0. You use this argument to modify a partition object created
             with the PartitionFaceByCurvedPathEdgeParam method.
         sketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the partition. You use this argument to modify a
