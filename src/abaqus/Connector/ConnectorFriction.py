@@ -52,7 +52,7 @@ class ConnectorFriction(ConnectorBehaviorOption):
     slipStyle: SymbolicConstant = SPECIFY
 
     #: None or an Int specifying the direction for which the frictional behavior is specified.
-    #: Possible values are 1 ≤≤ **tangentDirection** ≤≤ 6, indicating an available component of
+    #: Possible values are 1 ≤ **tangentDirection** ≤ 6, indicating an available component of
     #: relative motion. This argument applies only if **frictionModel** = USER_CUSTOMIZED and if
     #: **slipStyle** = SPECIFY. The default value is None.
     tangentDirection: int = None
@@ -136,8 +136,8 @@ class ConnectorFriction(ConnectorBehaviorOption):
     #: field variables.Value of the second field variable.Etc.
     table: tuple = ()
 
-    #: A sequence of Ints specifying the independent components. Possible values are 1 ≤≤
-    #: **independentComponents** ≤≤ 6. In addition, each independent component value must be
+    #: A sequence of Ints specifying the independent components. Possible values are 1 ≤
+    #: **independentComponents** ≤ 6. In addition, each independent component value must be
     #: unique. The **independentComponents** argument applies only if
     #: **frictionModel** = USER_CUSTOMIZED. Only available components can be specified. The default
     #: value is an empty sequence.
@@ -189,7 +189,7 @@ class ConnectorFriction(ConnectorBehaviorOption):
             **frictionModel** = USER_CUSTOMIZED.
         tangentDirection
             None or an Int specifying the direction for which the frictional behavior is specified.
-            Possible values are 1 ≤≤ **tangentDirection** ≤≤ 6, indicating an available component of
+            Possible values are 1 ≤ **tangentDirection** ≤ 6, indicating an available component of
             relative motion. This argument applies only if **frictionModel** = USER_CUSTOMIZED and if
             **slipStyle** = SPECIFY. The default value is None.
         stickStiffness
@@ -260,8 +260,8 @@ class ConnectorFriction(ConnectorBehaviorOption):
             the data depend on temperature.Value of the first field variable, if the data depend on
             field variables.Value of the second field variable.Etc.
         independentComponents
-            A sequence of Ints specifying the independent components. Possible values are 1 ≤≤
-            **independentComponents** ≤≤ 6. In addition, each independent component value must be
+            A sequence of Ints specifying the independent components. Possible values are 1 ≤
+            **independentComponents** ≤ 6. In addition, each independent component value must be
             unique. The **independentComponents** argument applies only if
             **frictionModel** = USER_CUSTOMIZED. Only available components can be specified. The default
             value is an empty sequence.

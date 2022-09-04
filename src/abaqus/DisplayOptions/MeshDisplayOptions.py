@@ -52,7 +52,7 @@ class MeshDisplayOptions:
             The default value is EXTERIOR.
         featureAngle
             A Float specifying the angle in degrees to be used in calculating a feature edge plot.
-            Possible values are 0 ≤≤ **featureAngle** ≤≤ 90. The default value is 20.0.
+            Possible values are 0 ≤ **featureAngle** ≤ 90. The default value is 20.0.
         meshEdgesInShaded
             A Boolean specifying whether mesh edges are displayed in shaded mode. The default value
             is ON.

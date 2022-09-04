@@ -28,7 +28,7 @@ Within each object description, the commands are listed in the following order:
 - Methods (in alphabetical order)
 - Members
 
-Some methods are not associated with an object and appear at the end of a chapter; for example, the `evaluateMaterial()` method appears at the end of :doc:`/references/mdb/model/material` commands.
+Some methods are not associated with an object and appear at the end of a chapter; for example, the `evaluateMaterial()` method appears at the end of :doc:`/reference/mdb/model/material` commands.
 
 Access
 ------
@@ -184,7 +184,7 @@ You will find it easier to use keyword arguments so that you do not have to conc
 Return value
 ------------
 
-All commands return a value. Many commands return the None object described in :doc:`/user/python/introduction/python-basics/none`. Constructors (methods that create an object) always return the object being created. The return value of a command can be assigned to a Python variable. For example, in the following statement the Viewport constructor returns a Viewport object, and the variable `newViewport` refers to this new object.
+All commands return a value. Many commands return the None object described in :doc:`../introduction/python-basics:python none`. Constructors (methods that create an object) always return the object being created. The return value of a command can be assigned to a Python variable. For example, in the following statement the Viewport constructor returns a Viewport object, and the variable `newViewport` refers to this new object.
 
 .. code-block:: python2
     

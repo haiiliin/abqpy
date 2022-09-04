@@ -137,7 +137,7 @@ To define the geometry of your model, you first create the parts that are used b
     const odb_Set& nSetRA = rootAssy.NodeSet("nodeSetRA",
                         namesRA, nodeLabelsRA);  
   
-  The region commands are described in :doc:`/reference/mdb/model/part_assembly/region.
+  The region commands are described in :doc:`/reference/mdb/model/part_assembly/region`.
 
 - **Materials**
 

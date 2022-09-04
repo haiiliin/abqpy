@@ -40,7 +40,7 @@ class MeshEditPart(PartBase):
             will be biased.
         parameter
             A Float specifying the normalized distance along the edge of the midside nodes. Possible
-            values are 0.0 ≤≤ **parameter** ≤≤ 1.0, where 0.0 specifies the position of the corner
+            values are 0.0 ≤ **parameter** ≤ 1.0, where 0.0 specifies the position of the corner
             node. The default value is 0.5.
         """
         ...
@@ -244,7 +244,7 @@ class MeshEditPart(PartBase):
             A SymbolicConstant specifying the element shape to be used for meshing. Possible values
             are:TRIRefine a planar triangular mesh and replace it with a new one. If no element
             sizes are attached, the new mesh will be governed by the sizes of the boundary edges in
-            the old mesh.TETCreate a tetrahedral mesh from a closed shell of triangular elements.
+            the old mesh. TETCreate a tetrahedral mesh from a closed shell of triangular elements.
         """
         ...
 

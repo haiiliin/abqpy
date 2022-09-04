@@ -44,11 +44,12 @@ class IgnoredVertexArray(typing.List[IgnoredVertex]):
             findAt accepts as arguments a sequence of sequence of floats in the following
             format:
             
+            .. autolink-skip:: section
             .. code-block:: python
             
-            verts = v.findAt(((20.19686, -169.513997, 27.798593), ),
-                             ((19.657627, -167.295749, 27.056402), ),
-                             ((18.274129, -157.144741, 25.15218), ))
+                verts = v.findAt(((20.19686, -169.513997, 27.798593), ),
+                                ((19.657627, -167.295749, 27.056402), ),
+                                ((18.274129, -157.144741, 25.15218), ))
         printWarning
             A Boolean specifying whether a message is to be printed to the CLI if no entity is found
             at the specified location. The default value is True.
@@ -124,7 +125,7 @@ class IgnoredVertexArray(typing.List[IgnoredVertex]):
             index 0. If a closest IgnoredVertex could be found then the value is a sequence
             consisting of two objects. The first object in the sequence is a IgnoredVertex that is
             close to the input point referred to by the key. The second object in the sequence, is a
-            sequence of floats which specify the **X**-, **Y**-, and **Z**-location of the IgnoredVertex.
+            sequence of floats which specify the **X**-, **Y**-, and **Z**- location of the IgnoredVertex.
             See program listing above.
 
         Raises

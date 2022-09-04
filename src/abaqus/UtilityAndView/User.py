@@ -9,16 +9,21 @@ from .._decorators import abaqus_function_doc
 @abaqus_function_doc
 @typing.overload
 def getInput(prompt: str, default: str = ""):
-    """This method is used to obtain a single input from a user from a dialog box. The method
+    r"""This method is used to obtain a single input from a user from a dialog box. The method
     displays a modal dialog box with a text field prefaced by the specified label. The user
     enters data in the text field or accepts the optional default value that is displayed in
     the text field. When the user clicks the OK button, the getInput method reads the data
     from the dialog box and closes the dialog box. You can use a \t separator in the label
     argument to provide a tooltip from the dialog box; for example
-    getInput('Enter a number:\tEnter the number of nodes to delete')
-    Note:You cannot use a script that contains getInput if you are running the script from
-    the command line and passing the script name to the command line options **-start**,
-    **-script**, **-replay**, or **-noGUI**.
+    
+    .. code-block:: python
+    
+        getInput('Enter a number:\tEnter the number of nodes to delete')
+    
+    .. note::
+        You cannot use a script that contains getInput if you are running the script from
+        the command line and passing the script name to the command line options **-start**,
+        **-script**, **-replay**, or **-noGUI**.
 
     .. note:: 
         This function can be accessed by:
@@ -92,7 +97,7 @@ def getInput(*args, **kwargs):
 
 @abaqus_function_doc
 def getWarningReply(message: str, buttons: str):
-    """This method is used to obtain a reply from a user from a warning dialog box. The method
+    r"""This method is used to obtain a reply from a user from a warning dialog box. The method
     displays a modal warning dialog box with a message and standard buttons. The user clicks
     the one of the standard buttons, the getWarningReply returns the corresponding button
     value and closes the dialog box. You can use a separator in the message argument to
