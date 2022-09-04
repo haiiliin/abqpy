@@ -56,6 +56,8 @@ The constructor `mdb.Model(name='Model A')` creates an instance of a model, and 
 
 An object always has a type. In our example the type of `mdb.models['Model A']` is Model. An object's type cannot be changed. The type defines the data encapsulated by an object—its members—and the functions that can manipulate those data—its methods. Unlike most programming languages, you do not need to declare the type of a variable before you use it. Python determines the type when the assignment statement is executed. The Abaqus Scripting Interface uses the term object to refer to a specific Abaqus type as well as to an instance of that type; for example, a Model object refers to a Model type and to an instance of a Model type.
 
+.. _python-data-types:
+
 Python data types
 -----------------
 
@@ -405,6 +407,8 @@ Arrays are mutable homogeneous sequences. The numpy module allows you to create 
            [  4.,   9.],
            [  9.,  16.]])
 
+.. _sequence-operations:
+
 Sequence operations
 -------------------
 
@@ -494,6 +498,8 @@ Convert a sequence to a list or a tuple.
     >>> myTuple = tuple(myString) #Convert a string to a tuple.
     >>> print myTuple
     ('n', 'o', 'i', 's', 'e')
+
+.. _python-none:
 
 Python None
 -----------
