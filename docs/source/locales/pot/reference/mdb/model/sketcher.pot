@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,13 +49,8 @@ msgstr ""
 msgid "This object can be accessed by:"
 msgstr ""
 
-#: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel:16
-#: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel:16
-#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryModel.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel:16
-#: ../../../../src/abaqus/Sketcher/ConstrainedSketchParameter/ConstrainedSketchParameterModel.py:docstring of abaqus.Sketcher.ConstrainedSketchParameter.ConstrainedSketchParameterModel.ConstrainedSketchParameterModel:16
-#: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertexModel.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexModel.ConstrainedSketchVertexModel:16
 #: ../../../../src/abaqus/Sketcher/SketchModel.py:docstring of abaqus.Sketcher.SketchModel.SketchModel:12
-msgid "Check `Model on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+msgid "Check `SketchModel on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch:0
@@ -3203,6 +3198,10 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object contains the entities that are used to create a sketch. The objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository, such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are contained in their respective repositories."
 msgstr ""
 
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel:16
+msgid "Check `ConstrainedSketchConstraintModel on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:9:<autosummary>:1
 msgid ":py:obj:`constraints <abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.constraints>`\\"
 msgstr ""
@@ -3279,6 +3278,10 @@ msgstr ""
 msgid "ConstrainedSketchDimensionModel"
 msgstr ""
 
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel:16
+msgid "Check `ConstrainedSketchDimensionModel on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:9:<autosummary>:1
 msgid ":py:obj:`constraints <abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel.constraints>`\\"
 msgstr ""
@@ -3333,6 +3336,10 @@ msgstr ""
 
 #: ../../reference/mdb/model/sketcher.rst:47
 msgid "ConstrainedSketchGeometryModel"
+msgstr ""
+
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryModel.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel:16
+msgid "Check `ConstrainedSketchGeometryModel on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
@@ -3423,6 +3430,10 @@ msgstr ""
 msgid "ConstrainedSketchParameterModel"
 msgstr ""
 
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchParameter/ConstrainedSketchParameterModel.py:docstring of abaqus.Sketcher.ConstrainedSketchParameter.ConstrainedSketchParameterModel.ConstrainedSketchParameterModel:16
+msgid "Check `ConstrainedSketchParameterModel on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:9:<autosummary>:1
 msgid ":py:obj:`constraints <abaqus.Sketcher.ConstrainedSketchParameter.ConstrainedSketchParameterModel.ConstrainedSketchParameterModel.constraints>`\\"
 msgstr ""
@@ -3457,6 +3468,10 @@ msgstr ""
 
 #: ../../reference/mdb/model/sketcher.rst:63
 msgid "ConstrainedSketchVertexModel"
+msgstr ""
+
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertexModel.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexModel.ConstrainedSketchVertexModel:16
+msgid "Check `ConstrainedSketchVertexModel on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:9:<autosummary>:1

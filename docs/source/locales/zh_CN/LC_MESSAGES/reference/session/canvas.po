@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -735,6 +735,7 @@ msgstr ""
 msgid "Returns a list of the user attributes of the class."
 msgstr ""
 
+#: abaqus.Canvas.Highlight.highlight:5 abaqus.Canvas.Highlight.unhighlight:5
 #: abaqus.Canvas.Viewport.Viewport.Layer:5 of
 msgid "This function can be accessed by:"
 msgstr ""
@@ -748,6 +749,7 @@ msgstr ""
 #: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation
 #: abaqus.Canvas.AttributeColorMap.AttributeColorMap.setValues
 #: abaqus.Canvas.AttributeColorMap.AttributeColorMap.updateOverrides
+#: abaqus.Canvas.Highlight.highlight abaqus.Canvas.Highlight.unhighlight
 #: abaqus.Canvas.ImageOptions.ImageOptions.setValues
 #: abaqus.Canvas.Layer.Layer.moveAfter abaqus.Canvas.Layer.Layer.moveBefore
 #: abaqus.Canvas.MovieOptions.MovieOptions.setValues
@@ -786,6 +788,7 @@ msgstr ""
 msgid "A String specifying the name of the layer to copy."
 msgstr ""
 
+#: abaqus.Canvas.Highlight.highlight abaqus.Canvas.Highlight.unhighlight
 #: abaqus.Canvas.Viewport.Viewport.Layer
 #: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels
 #: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels
@@ -1481,7 +1484,131 @@ msgstr ""
 msgid "Highlight"
 msgstr ""
 
-#: ../../reference/session/canvas.rst:72
+#: abaqus.Canvas.Highlight:1 of
+msgid ""
+"The Highlight commands are used to highlight objects in the current "
+"viewport and to remove the highlighting."
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:2 of
+msgid "This method highlights an object in the current viewport."
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:12 of
+msgid ""
+"Check `Highlight.highlight() on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionhighlightpyc.htm?contextscope=all"
+"#simaker-functionhighlighthighlightpyc>`_."
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:44 abaqus.Canvas.Highlight.unhighlight:19
+#: of
+msgid "**object**"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:17 of
+msgid ""
+"An object specifying the object in the current viewport to be "
+"highlighted. You can specify only a single object. Abaqus/CAE highlights "
+"only the edges of a face when highlighting a surface and a face together."
+" The following objects are supported:"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:21 of
+msgid "**For the MDB**"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:23 of
+msgid "ConstrainedSketchVertex"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:24 of
+msgid "Edge"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:25 of
+msgid "Face"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:26 of
+msgid "Surface"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:27 of
+msgid "Cell"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:28 abaqus.Canvas.Highlight.highlight:42 of
+msgid "Node"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:29 abaqus.Canvas.Highlight.highlight:43 of
+msgid "Element"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:30 of
+msgid "Element face"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:31 of
+msgid "Element edge"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:32 of
+msgid "Feature"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:33 of
+msgid "Datum"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:34 of
+msgid "Instance"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:35 of
+msgid "Set"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:36 of
+msgid "Load"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:37 of
+msgid "Boundary condition"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:38 of
+msgid "Predefined field"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:39 abaqus.Canvas.Highlight.highlight:44 of
+msgid "Display group"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.highlight:40 of
+msgid "**For the ODB**"
+msgstr ""
+
+#: abaqus.Canvas.Highlight.unhighlight:2 of
+msgid "This method removes highlighting from an object in the current viewport."
+msgstr ""
+
+#: abaqus.Canvas.Highlight.unhighlight:12 of
+msgid ""
+"Check `Highlight.unhighlight() on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionhighlightpyc.htm?contextscope=all"
+"#simaker-functionhighlightunhighlightpyc>`_."
+msgstr ""
+
+#: abaqus.Canvas.Highlight.unhighlight:17 of
+msgid ""
+"An object specifying the object in the current viewport from which the "
+"highlighting will be removed. You can specify only a single object. See "
+"highlight for a list of supported objects."
+msgstr ""
+
+#: ../../reference/session/canvas.rst:70
 msgid "ImageOptions"
 msgstr ""
 
@@ -1909,7 +2036,7 @@ msgstr ""
 msgid ":obj:`RangeError`"
 msgstr ""
 
-#: ../../reference/session/canvas.rst:80
+#: ../../reference/session/canvas.rst:78
 msgid "Layer"
 msgstr ""
 
@@ -2003,7 +2130,7 @@ msgid ""
 "#simaker-layermovebeforepyc>`_."
 msgstr ""
 
-#: ../../reference/session/canvas.rst:88
+#: ../../reference/session/canvas.rst:86
 msgid "MovieOptions"
 msgstr ""
 
@@ -2158,7 +2285,7 @@ msgid ""
 "None."
 msgstr ""
 
-#: ../../reference/session/canvas.rst:96
+#: ../../reference/session/canvas.rst:94
 msgid "ViewportBase"
 msgstr ""
 

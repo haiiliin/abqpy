@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:12 of
 msgid ""
-"Check `Model on help.3ds.com/2018 "
+"Check `PredefinedFieldModel on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -171,7 +171,8 @@ msgstr ""
 msgid ""
 "A Region object specifying the region to which the predefined field is "
 "applied. *Region* is ignored if the predefined field has a "
-"*distributionType* member available, and *distributionType*=FROM_FILE."
+"**distributionType** member available, and **distributionType** = "
+"FROM_FILE."
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:14
@@ -180,17 +181,15 @@ msgstr ""
 msgid "**outputVariable**"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1 ../../docstring
-#: abaqus.PredefinedField.Field.Field.setValues:11
+#: ../../docstring abaqus.PredefinedField.Field.Field.setValues:11
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:14
 #: abaqus.PredefinedField.FieldState.FieldState.outputVariable:2
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:31 of
 msgid ""
 "A String specifying the scalar nodal output variable that will be read "
 "from an output database and used to initialize a specified predefined "
-"field. This argument is a required argument if "
-"*distributionType*=FROM_FILE or "
-"*distributionType*=FROM_FILE_AND_USER_DEFINED."
+"field. This argument is a required argument if **distributionType** = "
+"FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED."
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:17
@@ -231,25 +230,51 @@ msgid ""
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:31
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:51
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:53
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:41
 #: abaqus.PredefinedField.Temperature.Temperature.setValues:24 of
 msgid "**crossSectionDistribution**"
 msgstr ""
 
-#: abaqus.PredefinedField.Field.Field.setValues:25
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:45 of
 msgid ""
 "A SymbolicConstant specifying how the predefined field is distributed "
-"over the cross-section of the region. Possible values are - "
-"CONSTANT_THROUGH_THICKNESS - GRADIENTS_THROUGH_SHELL_CS - "
-"GRADIENTS_THROUGH_BEAM_CS - POINTS_THROUGH_SECTION The default value is "
-"CONSTANT_THROUGH_THICKNESS."
+"over the cross-section of the region. Possible values are"
+msgstr ""
+
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:48
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:36
+#: abaqus.PredefinedField.Temperature.Temperature.setValues:19 of
+msgid "CONSTANT_THROUGH_THICKNESS"
+msgstr ""
+
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:49
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:37
+#: abaqus.PredefinedField.Temperature.Temperature.setValues:20 of
+msgid "GRADIENTS_THROUGH_SHELL_CS"
+msgstr ""
+
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:50
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:38
+#: abaqus.PredefinedField.Temperature.Temperature.setValues:21 of
+msgid "GRADIENTS_THROUGH_BEAM_CS"
+msgstr ""
+
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:51
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:39
+#: abaqus.PredefinedField.Temperature.Temperature.setValues:22 of
+msgid "POINTS_THROUGH_SECTION"
+msgstr ""
+
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:53
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:41
+#: abaqus.PredefinedField.Temperature.Temperature.setValues:24 of
+msgid "The default value is CONSTANT_THROUGH_THICKNESS."
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:37
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:26
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:57
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:59
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:47
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:45
 #: abaqus.PredefinedField.Temperature.Temperature.setValues:30
@@ -258,43 +283,44 @@ msgstr ""
 msgid "**field**"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.PredefinedField.Field.Field.field:2
+#: ../../docstring abaqus.PredefinedField.Field.Field.field:2
 #: abaqus.PredefinedField.Field.Field.setValues:34
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:23
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:54 of
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:56
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:44
+#: abaqus.PredefinedField.Temperature.Temperature.field:2
+#: abaqus.PredefinedField.Temperature.Temperature.setValues:27
+#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:14 of
 msgid ""
 "A String specifying the name of the AnalyticalField or DiscreteField "
-"object associated with this predefined field. The *field* argument "
-"applies only when *distributionType*=FIELD or "
-"*distributionType*=DISCRETE_FIELD. The default value is an empty string."
+"object associated with this predefined field. The **field** argument "
+"applies only when **distributionType** = FIELD or **distributionType** = "
+"DISCRETE_FIELD. The default value is an empty string."
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:43
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:32
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:63
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:67
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:53
 #: abaqus.PredefinedField.Temperature.Temperature.setValues:36
 #: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:23 of
 msgid "**amplitude**"
 msgstr ""
 
-#: abaqus.PredefinedField.Field.Field.setValues:40
-#: abaqus.PredefinedField.Field.Field.setValuesInStep:29
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:60
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:50
-#: abaqus.PredefinedField.Temperature.Temperature.setValues:33
-#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:20 of
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:62 of
 msgid ""
 "A String or the SymbolicConstant UNSET specifying the name of the "
 "amplitude reference. UNSET should be used if the predefined field has no "
-"amplitude reference. The default value is UNSET.Note:*amplitude* should "
-"be given only if it is valid for the specified step."
+"amplitude reference. The default value is UNSET."
+msgstr ""
+
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:67 of
+msgid "**amplitude** should be given only if it is valid for the specified step."
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:47
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:36
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:67
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:71
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:24
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:57
 #: abaqus.PredefinedField.Temperature.Temperature.setValues:40
@@ -304,16 +330,16 @@ msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:46
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:35
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:66 of
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:70 of
 msgid ""
 "A String specifying the name of the file from which the Field values are "
-"to be read when *distributionType*=FROM_FILE or "
-"*distributionType*=FROM_FILE_AND_USER_DEFINED."
+"to be read when **distributionType** = FROM_FILE or **distributionType** "
+"= FROM_FILE_AND_USER_DEFINED."
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:53
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:42
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:73
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:77
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:63
 #: abaqus.PredefinedField.Temperature.Temperature.setValues:46
 #: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:33 of
@@ -322,17 +348,17 @@ msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:50
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:39
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:70 of
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:74 of
 msgid ""
 "An Int specifying the first step from which Field values are to be read "
 "or the SymbolicConstant FIRST_STEP or LAST_STEP. This argument is valid "
-"only when *distributionType*=FROM_FILE or "
-"*distributionType*=FROM_FILE_AND_USER_DEFINED. The default value is None."
+"only when **distributionType** = FROM_FILE or **distributionType** = "
+"FROM_FILE_AND_USER_DEFINED. The default value is None."
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:59
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:48
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:79
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:83
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:69
 #: abaqus.PredefinedField.Temperature.Temperature.setValues:52
 #: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:39 of
@@ -341,18 +367,21 @@ msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:56
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:45
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:76 of
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:80
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:66
+#: abaqus.PredefinedField.Temperature.Temperature.setValues:49
+#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:36 of
 msgid ""
-"An Int specifying the first increment of the step set in *beginStep* or "
-"the SymbolicConstants STEP_START or STEP_END. This argument is valid only"
-" when *distributionType*=FROM_FILE or "
-"*distributionType*=FROM_FILE_AND_USER_DEFINED. The default value is None."
+"An Int specifying the first increment of the step set in **beginStep** or"
+" the SymbolicConstants STEP_START or STEP_END. This argument is valid "
+"only when **distributionType** = FROM_FILE or **distributionType** = "
+"FROM_FILE_AND_USER_DEFINED. The default value is None."
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:65
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:54
 #: abaqus.PredefinedField.InitialState.InitialState.setValues:12
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:85
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:89
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:29
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:75
 #: abaqus.PredefinedField.Temperature.Temperature.setValues:58
@@ -362,18 +391,18 @@ msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:62
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:51
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:82 of
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:86 of
 msgid ""
 "An Int specifying the last step from which Field values are to be read or"
 " the SymbolicConstants FIRST_STEP and LAST_STEP. This argument is valid "
-"only when *distributionType*=FROM_FILE or "
-"*distributionType*=FROM_FILE_AND_USER_DEFINED. The default value is None."
+"only when **distributionType** = FROM_FILE or **distributionType** = "
+"FROM_FILE_AND_USER_DEFINED. The default value is None."
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:71
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:60
 #: abaqus.PredefinedField.InitialState.InitialState.setValues:17
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:91
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:95
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:34
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:81
 #: abaqus.PredefinedField.Temperature.Temperature.setValues:64
@@ -383,17 +412,20 @@ msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:68
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:57
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:88 of
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:92
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:78
+#: abaqus.PredefinedField.Temperature.Temperature.setValues:61
+#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:48 of
 msgid ""
-"An Int specifying the last increment of the step set in *endStep* or the "
-"SymbolicConstants STEP_START and STEP_END. This argument is valid only "
-"when *distributionType*=FROM_FILE or "
-"*distributionType*=FROM_FILE_AND_USER_DEFINED. The default value is None."
+"An Int specifying the last increment of the step set in **endStep** or "
+"the SymbolicConstants STEP_START and STEP_END. This argument is valid "
+"only when **distributionType** = FROM_FILE or **distributionType** = "
+"FROM_FILE_AND_USER_DEFINED. The default value is None."
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:76
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:65
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:96
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:100
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:86
 #: abaqus.PredefinedField.Temperature.Temperature.setValues:69
 #: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:56 of
@@ -402,7 +434,7 @@ msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:74
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:63
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:94 of
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:98 of
 msgid ""
 "A SymbolicConstant specifying whether to interpolate a field read from an"
 " output database or results file. Possible values are OFF, ON, or "
@@ -411,31 +443,52 @@ msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:103
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:92
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:110
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:115
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:102
 #: abaqus.PredefinedField.Temperature.Temperature.setValues:85
 #: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:72 of
 msgid "**magnitudes**"
 msgstr ""
 
-#: abaqus.PredefinedField.Field.Field.setValues:79
-#: abaqus.PredefinedField.Field.Field.setValuesInStep:68
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:99 of
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:103
+#: of
 msgid ""
 "A Sequence of Doubles specifying the Field values when "
-"*distributionType*=UNIFORM or FIELD. The value of the *magnitudes* "
-"argument is a function of the *crossSectionDistribution* argument, as "
-"shown in the following list: - If "
-"*crossSectionDistribution*=CONSTANT_THROUGH_THICKNESS, *magnitudes* is a "
-"Double specifying the Field. - If "
-"*crossSectionDistribution*=GRADIENTS_THROUGH_SHELL_CS, *magnitudes* is a "
-"sequence of Doubles specifying the mean value and the gradient in the "
-"thickness direction. - If "
-"*crossSectionDistribution*=GRADIENTS_THROUGH_BEAM_CS, *magnitudes* is a "
-"sequence of Doubles specifying the mean value, the gradient in the N1 "
-"direction, and the gradient in the N2 direction. - If "
-"*crossSectionDistribution*=POINTS_THROUGH_SECTION, *magnitudes* is a "
-"sequence of Doubles specifying the Field at each point."
+"**distributionType** = UNIFORM or FIELD. The value of the **magnitudes** "
+"argument is a function of the **crossSectionDistribution** argument, as "
+"shown in the following list:"
+msgstr ""
+
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:107
+#: of
+msgid ""
+"If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS, "
+"**magnitudes** is a Double specifying the Field."
+msgstr ""
+
+#: ../../docstring abaqus.PredefinedField.FieldState.FieldState.magnitudes:7
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:109
+#: of
+msgid ""
+"If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS, "
+"**magnitudes** is a sequence of Doubles specifying the mean value and the"
+" gradient in the thickness direction."
+msgstr ""
+
+#: ../../docstring abaqus.PredefinedField.FieldState.FieldState.magnitudes:9
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:111
+#: of
+msgid ""
+"If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS, "
+"**magnitudes** is a sequence of Doubles specifying the mean value, the "
+"gradient in the N1 direction, and the gradient in the N2 direction."
+msgstr ""
+
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:114
+#: of
+msgid ""
+"If **crossSectionDistribution** = POINTS_THROUGH_SECTION, **magnitudes** "
+"is a sequence of Doubles specifying the Field at each point."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field
@@ -449,7 +502,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:127
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:132
 #: of
 msgid ":obj:`A` :obj:`Field` object."
 msgstr ""
@@ -872,7 +925,7 @@ msgstr ""
 msgid ""
 "A Region object specifying the region to which the predefined field is "
 "applied. Region is ignored if the predefined field has "
-"*distributionType*=FROM_FILE."
+"**distributionType** = FROM_FILE."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:27
@@ -976,41 +1029,16 @@ msgid ""
 "over the cross section of the region. Possible values are"
 msgstr ""
 
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:36
-#: abaqus.PredefinedField.Temperature.Temperature.setValues:19 of
-msgid "CONSTANT_THROUGH_THICKNESS"
-msgstr ""
-
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:37
-#: abaqus.PredefinedField.Temperature.Temperature.setValues:20 of
-msgid "GRADIENTS_THROUGH_SHELL_CS"
-msgstr ""
-
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:38
-#: abaqus.PredefinedField.Temperature.Temperature.setValues:21 of
-msgid "GRADIENTS_THROUGH_BEAM_CS"
-msgstr ""
-
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:39
-#: abaqus.PredefinedField.Temperature.Temperature.setValues:22 of
-msgid "POINTS_THROUGH_SECTION"
-msgstr ""
-
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:41
-#: abaqus.PredefinedField.Temperature.Temperature.setValues:24 of
-msgid "The default value is CONSTANT_THROUGH_THICKNESS."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:44
-#: abaqus.PredefinedField.Temperature.Temperature.field:2
-#: abaqus.PredefinedField.Temperature.Temperature.setValues:27
-#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:14 of
+#: abaqus.PredefinedField.Field.Field.setValues:40
+#: abaqus.PredefinedField.Field.Field.setValuesInStep:29
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:50
+#: abaqus.PredefinedField.Temperature.Temperature.setValues:33
+#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:20 of
 msgid ""
-"A String specifying the name of the AnalyticalField or DiscreteField "
-"object associated with this predefined field. The **field** argument "
-"applies only when **distributionType** = FIELD or **distributionType** = "
-"DISCRETE_FIELD. The default value is an empty string."
+"A String or the SymbolicConstant UNSET specifying the name of the "
+"amplitude reference. UNSET should be used if the predefined field has no "
+"amplitude reference. The default value is UNSET.Note:*amplitude* should "
+"be given only if it is valid for the specified step."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1 ../../docstring
@@ -1034,16 +1062,6 @@ msgid ""
 "= FROM_FILE_AND_USER_DEFINED. The default value is None."
 msgstr ""
 
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:66
-#: abaqus.PredefinedField.Temperature.Temperature.setValues:49
-#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:36 of
-msgid ""
-"An Int specifying the first increment of the step set in **beginStep** or"
-" the SymbolicConstants STEP_START or STEP_END. This argument is valid "
-"only when **distributionType** = FROM_FILE or **distributionType** = "
-"FROM_FILE_AND_USER_DEFINED. The default value is None."
-msgstr ""
-
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:72
 #: abaqus.PredefinedField.Temperature.Temperature.setValues:55
 #: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:42 of
@@ -1052,16 +1070,6 @@ msgid ""
 "read or the SymbolicConstants FIRST_STEP and LAST_STEP. This argument is "
 "valid only when **distributionType** = FROM_FILE or **distributionType** "
 "= FROM_FILE_AND_USER_DEFINED. The default value is None."
-msgstr ""
-
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:78
-#: abaqus.PredefinedField.Temperature.Temperature.setValues:61
-#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:48 of
-msgid ""
-"An Int specifying the last increment of the step set in **endStep** or "
-"the SymbolicConstants STEP_START and STEP_END. This argument is valid "
-"only when **distributionType** = FROM_FILE or **distributionType** = "
-"FROM_FILE_AND_USER_DEFINED. The default value is None."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:84
@@ -1092,37 +1100,30 @@ msgid ""
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:95
-#: of
+#: abaqus.PredefinedField.Temperature.Temperature.setValues:78
+#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:65 of
 msgid ""
 "If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then "
 "**magnitudes** is a sequence of Doubles specifying the mean value and the"
-" gradient in the thickness"
+" gradient in the thickness direction."
 msgstr ""
 
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:97
-#: of
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:98
+#: abaqus.PredefinedField.Temperature.Temperature.setValues:81
+#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:68 of
 msgid ""
-"direction. - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS "
-"then **magnitudes** is a"
+"If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then "
+"**magnitudes** is a sequence of Doubles specifying the mean value, the "
+"gradient in the N1 direction, and the gradient in the N2 direction."
 msgstr ""
 
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:99
-#: of
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:101
+#: abaqus.PredefinedField.Temperature.Temperature.setValues:84
+#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:71 of
 msgid ""
-"sequence of Doubles specifying the mean value, the gradient in the N1 "
-"direction, and the"
-msgstr ""
-
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:100
-#: of
-msgid ""
-"gradient in the N2 direction. - If **crossSectionDistribution** = "
-"POINTS_THROUGH_SECTION then **magnitudes** is a sequence"
-msgstr ""
-
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:102
-#: of
-msgid "of Doubles specifying the temperature at each point."
+"If **crossSectionDistribution** = POINTS_THROUGH_SECTION then "
+"**magnitudes** is a sequence of Doubles specifying the temperature at "
+"each point."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:107
@@ -1365,18 +1366,20 @@ msgstr ""
 msgid ":py:obj:`field <abaqus.PredefinedField.Field.Field.field>`\\"
 msgstr ""
 
+#: ../../None:6:<autosummary>:1
+msgid ""
+"A String specifying the name of the AnalyticalField or DiscreteField "
+"object associated with this predefined field."
+msgstr ""
+
 #: ../../None:5:<autosummary>:1 ../../None:6:<autosummary>:1
 msgid ":py:obj:`region <abaqus.PredefinedField.Field.Field.region>`\\"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1 ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.PredefinedField.Field.Field.region:2 of
+#: ../../None:5:<autosummary>:1 ../../None:6:<autosummary>:1
 msgid ""
 "A Region object specifying the region to which the predefined field is "
-"applied. *Region* is ignored if the predefined field has an *instances* "
-"member available. *Region* is also ignored if the predefined field has a "
-"*distributionType* member available, and *distributionType*=FROM_FILE or "
-"FROM_FILE_AND_USER_DEFINED."
+"applied."
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -1516,11 +1519,47 @@ msgstr ""
 msgid "TextError."
 msgstr ""
 
+#: ../../docstring abaqus.PredefinedField.Field.Field.region:2 of
+msgid ""
+"A Region object specifying the region to which the predefined field is "
+"applied. *Region* is ignored if the predefined field has an **instances**"
+" member available. **Region** is also ignored if the predefined field has"
+" a **distributionType** member available, and **distributionType** = "
+"FROM_FILE or FROM_FILE_AND_USER_DEFINED."
+msgstr ""
+
 #: abaqus.PredefinedField.Field.Field.setValues:6 of
 msgid ""
 "Check `Field.setValues() on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldpyc.htm?contextscope=all"
 "#simaker-fieldsetvaluespyc>`_."
+msgstr ""
+
+#: abaqus.PredefinedField.Field.Field.setValues:25 of
+msgid ""
+"A SymbolicConstant specifying how the predefined field is distributed "
+"over the cross-section of the region. Possible values are - "
+"CONSTANT_THROUGH_THICKNESS - GRADIENTS_THROUGH_SHELL_CS - "
+"GRADIENTS_THROUGH_BEAM_CS - POINTS_THROUGH_SECTION The default value is "
+"CONSTANT_THROUGH_THICKNESS."
+msgstr ""
+
+#: abaqus.PredefinedField.Field.Field.setValues:79
+#: abaqus.PredefinedField.Field.Field.setValuesInStep:68 of
+msgid ""
+"A Sequence of Doubles specifying the Field values when "
+"**distributionType** = UNIFORM or FIELD. The value of the **magnitudes** "
+"argument is a function of the **crossSectionDistribution** argument, as "
+"shown in the following list: - If **crossSectionDistribution** = "
+"CONSTANT_THROUGH_THICKNESS, **magnitudes** is a Double specifying the "
+"Field. - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS, "
+"**magnitudes** is a sequence of Doubles specifying the mean value and the"
+" gradient in the thickness direction. - If **crossSectionDistribution** ="
+" GRADIENTS_THROUGH_BEAM_CS, **magnitudes** is a sequence of Doubles "
+"specifying the mean value, the gradient in the N1 direction, and the "
+"gradient in the N2 direction. - If **crossSectionDistribution** = "
+"POINTS_THROUGH_SECTION, **magnitudes** is a sequence of Doubles "
+"specifying the Field at each point."
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:6 of
@@ -1572,13 +1611,20 @@ msgstr ""
 
 #: ../../None:18:<autosummary>:1
 msgid ""
-":py:obj:`fileNameState "
-"<abaqus.PredefinedField.FieldState.FieldState.fileNameState>`\\"
+"A String specifying the scalar nodal output variable that will be read "
+"from an output database and used to initialize a specified predefined "
+"field."
 msgstr ""
 
 #: ../../None:18:<autosummary>:1
 msgid ""
-"A SymbolicConstant specifying the propagation state of the *fileName* "
+":py:obj:`fileNameState "
+"<abaqus.PredefinedField.FieldState.FieldState.fileNameState>`\\"
+msgstr ""
+
+#: ../../None:18:<autosummary>:1 ../../None:19:<autosummary>:1
+msgid ""
+"A SymbolicConstant specifying the propagation state of the **fileName** "
 "member."
 msgstr ""
 
@@ -1588,14 +1634,10 @@ msgid ""
 "<abaqus.PredefinedField.FieldState.FieldState.beginStep>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1 ../../docstring
-#: abaqus.PredefinedField.FieldState.FieldState.beginStep:2 of
+#: ../../None:18:<autosummary>:1
 msgid ""
 "A SymbolicConstant or an Int specifying the first step from which field "
-"values are to be read. This argument is valid only when "
-"*distribution*=FROM_FILE or *distribution*=FROM_FILE_AND_USER_DEFINED. "
-"Possible values are FIRST_STEP, LAST_STEP, and NONE. The default value is"
-" NONE."
+"values are to be read."
 msgstr ""
 
 #: ../../None:18:<autosummary>:1
@@ -1604,9 +1646,9 @@ msgid ""
 "<abaqus.PredefinedField.FieldState.FieldState.beginStepState>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:18:<autosummary>:1 ../../None:19:<autosummary>:1
 msgid ""
-"A SymbolicConstant specifying the propagation state of the *beginStep* "
+"A SymbolicConstant specifying the propagation state of the **beginStep** "
 "member."
 msgstr ""
 
@@ -1616,13 +1658,10 @@ msgid ""
 "<abaqus.PredefinedField.FieldState.FieldState.beginIncrement>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1 ../../docstring
-#: abaqus.PredefinedField.FieldState.FieldState.beginIncrement:2 of
+#: ../../None:18:<autosummary>:1 ../../None:19:<autosummary>:1
 msgid ""
 "None or an Int specifying the first increment of the step set in "
-"*beginStep* or the SymbolicConstants STEP_START or STEP_END. This "
-"argument is valid only when *distributionType*=FROM_FILE or "
-"*distributionType*=FROM_FILE_AND_USER_DEFINED. The default value is None."
+"**beginStep** or the SymbolicConstants STEP_START or STEP_END."
 msgstr ""
 
 #: ../../None:18:<autosummary>:1
@@ -1631,23 +1670,20 @@ msgid ""
 "<abaqus.PredefinedField.FieldState.FieldState.beginIncrementState>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:18:<autosummary>:1 ../../None:19:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying the propagation state of the "
-"*beginIncrement* member."
+"**beginIncrement** member."
 msgstr ""
 
 #: ../../None:18:<autosummary>:1
 msgid ":py:obj:`endStep <abaqus.PredefinedField.FieldState.FieldState.endStep>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1 ../../docstring
-#: abaqus.PredefinedField.FieldState.FieldState.endStep:2 of
+#: ../../None:18:<autosummary>:1
 msgid ""
 "None or an Int specifying the last step from which field values are to be"
-" read or the SymbolicConstants FIRST_STEP and LAST_STEP. This argument is"
-" valid only when *distributionType*=FROM_FILE or "
-"*distributionType*=FROM_FILE_AND_USER_DEFINED. The default value is None."
+" read or the SymbolicConstants FIRST_STEP and LAST_STEP."
 msgstr ""
 
 #: ../../None:18:<autosummary>:1
@@ -1656,9 +1692,9 @@ msgid ""
 "<abaqus.PredefinedField.FieldState.FieldState.endStepState>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:18:<autosummary>:1 ../../None:19:<autosummary>:1
 msgid ""
-"A SymbolicConstant specifying the propagation state of the *endStep* "
+"A SymbolicConstant specifying the propagation state of the **endStep** "
 "member."
 msgstr ""
 
@@ -1668,13 +1704,10 @@ msgid ""
 "<abaqus.PredefinedField.FieldState.FieldState.endIncrement>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1 ../../docstring
-#: abaqus.PredefinedField.FieldState.FieldState.endIncrement:2 of
+#: ../../None:18:<autosummary>:1 ../../None:19:<autosummary>:1
 msgid ""
-"None or an Int specifying the last increment of the step set in *endStep*"
-" or the SymbolicConstants STEP_START and STEP_END. This argument is valid"
-" only when *distributionType*=FROM_FILE or "
-"*distributionType*=FROM_FILE_AND_USER_DEFINED. The default value is None."
+"None or an Int specifying the last increment of the step set in "
+"**endStep** or the SymbolicConstants STEP_START and STEP_END."
 msgstr ""
 
 #: ../../None:18:<autosummary>:1
@@ -1683,10 +1716,10 @@ msgid ""
 "<abaqus.PredefinedField.FieldState.FieldState.endIncrementState>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:18:<autosummary>:1 ../../None:19:<autosummary>:1
 msgid ""
-"A SymbolicConstant specifying the propagation state of the *endIncrement*"
-" member."
+"A SymbolicConstant specifying the propagation state of the "
+"**endIncrement** member."
 msgstr ""
 
 #: ../../None:18:<autosummary>:1
@@ -1695,10 +1728,10 @@ msgid ""
 "<abaqus.PredefinedField.FieldState.FieldState.amplitudeState>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:18:<autosummary>:1 ../../None:19:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying the propagation state of the "
-"*amplitudeState* member."
+"**amplitudeState** member."
 msgstr ""
 
 #: ../../None:18:<autosummary>:1
@@ -1711,8 +1744,8 @@ msgstr ""
 #: abaqus.PredefinedField.FieldState.FieldState.fileName:2 of
 msgid ""
 "A String specifying the name of the file from which the field values are "
-"to be read when *distributionType*=FROM_FILE or "
-"*distributionType*=FROM_FILE_AND_USER_DEFINED."
+"to be read when **distributionType** = FROM_FILE or **distributionType** "
+"= FROM_FILE_AND_USER_DEFINED."
 msgstr ""
 
 #: ../../None:18:<autosummary>:1
@@ -1733,10 +1766,10 @@ msgid ""
 "<abaqus.PredefinedField.FieldState.FieldState.magnitudesState>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:18:<autosummary>:1 ../../None:19:<autosummary>:1
 msgid ""
 "A tuple of SymbolicConstants specifying the propagation state of each "
-"item of the *magnitudes* member."
+"item of the **magnitudes** member."
 msgstr ""
 
 #: ../../None:18:<autosummary>:1
@@ -1747,20 +1780,19 @@ msgstr ""
 
 #: ../../None:18:<autosummary>:1
 msgid ""
-"A tuple of Floats specifying the field values when "
-"*distributionType*=UNIFORM or *distributionType*=FIELD. The value of the "
-"*magnitudes* argument is a function of the *crossSectionDistribution* "
-"argument, as shown in the following list: - If "
-"*crossSectionDistribution*=CONSTANT_THROUGH_THICKNESS, *magnitudes* is a "
-"Double   specifying the field. - If "
-"*crossSectionDistribution*=GRADIENTS_THROUGH_SHELL_CS, *magnitudes* is a "
-"sequence   of Doubles specifying the mean value and the gradient in the "
-"thickness direction. - If "
-"*crossSectionDistribution*=GRADIENTS_THROUGH_BEAM_CS, *magnitudes* is a "
-"sequence of   Doubles specifying the mean value, the gradient in the N1 "
-"direction, and the gradient in   the N2 direction. - If "
-"*crossSectionDistribution*=POINTS_THROUGH_SECTION, *magnitudes* is a "
-"sequence of   Doubles specifying the field at each point."
+"A tuple of Floats specifying the field values when **distributionType** ="
+" UNIFORM or **distributionType** = FIELD. The value of the **magnitudes**"
+" argument is a function of the **crossSectionDistribution** argument, as "
+"shown in the following list: - If **crossSectionDistribution** = "
+"CONSTANT_THROUGH_THICKNESS, **magnitudes** is a Double   specifying the "
+"field. - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS, "
+"**magnitudes** is a sequence   of Doubles specifying the mean value and "
+"the gradient in the thickness direction. - If "
+"**crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS, **magnitudes** "
+"is a sequence of   Doubles specifying the mean value, the gradient in the"
+" N1 direction, and the gradient in   the N2 direction. - If "
+"**crossSectionDistribution** = POINTS_THROUGH_SECTION, **magnitudes** is "
+"a sequence of   Doubles specifying the field at each point."
 msgstr ""
 
 #: ../../None:18:<autosummary>:1 ../../None:3:<autosummary>:1
@@ -1779,92 +1811,122 @@ msgid ""
 "The SymbolicConstant UNSET or a String specifying the name of the "
 "amplitude reference. The SymbolicConstant UNSET should be used if the "
 "predefined field has no amplitude reference. The default value is "
-"UNSET.Note: *amplitude* should be given only if it is valid for the "
+"UNSET.Note: **amplitude** should be given only if it is valid for the "
 "specified step."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.PredefinedField.FieldState.FieldState.amplitudeState:2 of
+#: abaqus.PredefinedField.FieldState.FieldState.amplitudeState:2
+#: abaqus.PredefinedField.TemperatureState.TemperatureState.amplitudeState:2 of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the "
-"*amplitudeState* member. Possible values are UNSET, SET, and UNCHANGED."
+"**amplitudeState** member. Possible values are UNSET, SET, and UNCHANGED."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.PredefinedField.FieldState.FieldState.beginIncrementState:2 of
+#: abaqus.PredefinedField.FieldState.FieldState.beginIncrement:2
+#: abaqus.PredefinedField.TemperatureState.TemperatureState.beginIncrement:2 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the "
-"*beginIncrement* member. Possible values are UNSET, SET, and UNCHANGED."
+"None or an Int specifying the first increment of the step set in "
+"**beginStep** or the SymbolicConstants STEP_START or STEP_END. This "
+"argument is valid only when **distributionType** = FROM_FILE or "
+"**distributionType** = FROM_FILE_AND_USER_DEFINED. The default value is "
+"None."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.PredefinedField.FieldState.FieldState.beginStepState:2 of
+#: abaqus.PredefinedField.FieldState.FieldState.beginIncrementState:2
+#: abaqus.PredefinedField.TemperatureState.TemperatureState.beginIncrementState:2
+#: of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the *beginStep* "
+"A SymbolicConstant specifying the propagation state of the "
+"**beginIncrement** member. Possible values are UNSET, SET, and UNCHANGED."
+msgstr ""
+
+#: ../../docstring abaqus.PredefinedField.FieldState.FieldState.beginStep:2 of
+msgid ""
+"A SymbolicConstant or an Int specifying the first step from which field "
+"values are to be read. This argument is valid only when **distribution** "
+"= FROM_FILE or **distribution** = FROM_FILE_AND_USER_DEFINED. Possible "
+"values are FIRST_STEP, LAST_STEP, and NONE. The default value is NONE."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.PredefinedField.FieldState.FieldState.beginStepState:2
+#: abaqus.PredefinedField.TemperatureState.TemperatureState.beginStepState:2 of
+msgid ""
+"A SymbolicConstant specifying the propagation state of the **beginStep** "
 "member. Possible values are UNSET, SET, and UNCHANGED."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.PredefinedField.FieldState.FieldState.endIncrementState:2 of
+#: ../../docstring abaqus.PredefinedField.FieldState.FieldState.endIncrement:2
+#: abaqus.PredefinedField.TemperatureState.TemperatureState.endIncrement:2 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the *endIncrement*"
-" member. Possible values are UNSET, SET, and UNCHANGED."
+"None or an Int specifying the last increment of the step set in "
+"**endStep** or the SymbolicConstants STEP_START and STEP_END. This "
+"argument is valid only when **distributionType** = FROM_FILE or "
+"**distributionType** = FROM_FILE_AND_USER_DEFINED. The default value is "
+"None."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.PredefinedField.FieldState.FieldState.endIncrementState:2
+#: abaqus.PredefinedField.TemperatureState.TemperatureState.endIncrementState:2
+#: of
+msgid ""
+"A SymbolicConstant specifying the propagation state of the "
+"**endIncrement** member. Possible values are UNSET, SET, and UNCHANGED."
+msgstr ""
+
+#: ../../docstring abaqus.PredefinedField.FieldState.FieldState.endStep:2 of
+msgid ""
+"None or an Int specifying the last step from which field values are to be"
+" read or the SymbolicConstants FIRST_STEP and LAST_STEP. This argument is"
+" valid only when **distributionType** = FROM_FILE or **distributionType**"
+" = FROM_FILE_AND_USER_DEFINED. The default value is None."
 msgstr ""
 
 #: ../../docstring abaqus.PredefinedField.FieldState.FieldState.endStepState:2
-#: of
+#: abaqus.PredefinedField.TemperatureState.TemperatureState.endStepState:2 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the *endStep* "
+"A SymbolicConstant specifying the propagation state of the **endStep** "
 "member. Possible values are UNSET, SET, and UNCHANGED."
 msgstr ""
 
 #: ../../docstring abaqus.PredefinedField.FieldState.FieldState.fileNameState:2
-#: of
+#: abaqus.PredefinedField.TemperatureState.TemperatureState.fileNameState:2 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the *fileName* "
+"A SymbolicConstant specifying the propagation state of the **fileName** "
 "member. Possible values are UNSET, SET, and UNCHANGED."
 msgstr ""
 
 #: ../../docstring abaqus.PredefinedField.FieldState.FieldState.magnitudes:2 of
 msgid ""
-"A tuple of Floats specifying the field values when "
-"*distributionType*=UNIFORM or *distributionType*=FIELD. The value of the "
-"*magnitudes* argument is a function of the *crossSectionDistribution* "
-"argument, as shown in the following list: - If "
-"*crossSectionDistribution*=CONSTANT_THROUGH_THICKNESS, *magnitudes* is a "
-"Double"
+"A tuple of Floats specifying the field values when **distributionType** ="
+" UNIFORM or **distributionType** = FIELD. The value of the **magnitudes**"
+" argument is a function of the **crossSectionDistribution** argument, as "
+"shown in the following list: - If **crossSectionDistribution** = "
+"CONSTANT_THROUGH_THICKNESS, **magnitudes** is a Double"
 msgstr ""
 
 #: ../../docstring abaqus.PredefinedField.FieldState.FieldState.magnitudes:6 of
 msgid "specifying the field."
 msgstr ""
 
-#: ../../docstring abaqus.PredefinedField.FieldState.FieldState.magnitudes:7 of
-msgid ""
-"If *crossSectionDistribution*=GRADIENTS_THROUGH_SHELL_CS, *magnitudes* is"
-" a sequence of Doubles specifying the mean value and the gradient in the "
-"thickness direction."
-msgstr ""
-
-#: ../../docstring abaqus.PredefinedField.FieldState.FieldState.magnitudes:9 of
-msgid ""
-"If *crossSectionDistribution*=GRADIENTS_THROUGH_BEAM_CS, *magnitudes* is "
-"a sequence of Doubles specifying the mean value, the gradient in the N1 "
-"direction, and the gradient in the N2 direction."
-msgstr ""
-
 #: ../../docstring abaqus.PredefinedField.FieldState.FieldState.magnitudes:12
 #: of
 msgid ""
-"If *crossSectionDistribution*=POINTS_THROUGH_SECTION, *magnitudes* is a "
-"sequence of Doubles specifying the field at each point."
+"If **crossSectionDistribution** = POINTS_THROUGH_SECTION, **magnitudes** "
+"is a sequence of Doubles specifying the field at each point."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.PredefinedField.FieldState.FieldState.magnitudesState:2 of
+#: abaqus.PredefinedField.FieldState.FieldState.magnitudesState:2
+#: abaqus.PredefinedField.TemperatureState.TemperatureState.magnitudesState:2
+#: of
 msgid ""
 "A tuple of SymbolicConstants specifying the propagation state of each "
-"item of the *magnitudes* member. Possible values are UNSET, SET, and "
+"item of the **magnitudes** member. Possible values are UNSET, SET, and "
 "UNCHANGED."
 msgstr ""
 
@@ -1954,9 +2016,9 @@ msgstr ""
 msgid "INSTANCE_NOT_APPLICABLE"
 msgstr ""
 
-#: ../../docstring abaqus.PredefinedField.FieldState.FieldState.status:18
-#: abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState.status:18
-#: abaqus.PredefinedField.TemperatureState.TemperatureState.status:18 of
+#: ../../docstring abaqus.PredefinedField.FieldState.FieldState.status:19
+#: abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState.status:19
+#: abaqus.PredefinedField.TemperatureState.TemperatureState.status:19 of
 msgid ""
 "This member exists in all PredefinedFieldState objects, but different "
 "predefined fields use different subsets of the entire list of possible "
@@ -2730,12 +2792,6 @@ msgstr ""
 msgid ":py:obj:`field <abaqus.PredefinedField.Temperature.Temperature.field>`\\"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ""
-"A String specifying the name of the AnalyticalField or DiscreteField "
-"object associated with this predefined field."
-msgstr ""
-
 #: ../../None:5:<autosummary>:1 ../../None:6:<autosummary>:1
 msgid ":py:obj:`region <abaqus.PredefinedField.Temperature.Temperature.region>`\\"
 msgstr ""
@@ -2826,30 +2882,6 @@ msgid ""
 "#simaker-temperaturesetvaluespyc>`_."
 msgstr ""
 
-#: abaqus.PredefinedField.Temperature.Temperature.setValues:78
-#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:65 of
-msgid ""
-"If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then "
-"**magnitudes** is a sequence of Doubles specifying the mean value and the"
-" gradient in the thickness direction."
-msgstr ""
-
-#: abaqus.PredefinedField.Temperature.Temperature.setValues:81
-#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:68 of
-msgid ""
-"If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then "
-"**magnitudes** is a sequence of Doubles specifying the mean value, the "
-"gradient in the N1 direction, and the gradient in the N2 direction."
-msgstr ""
-
-#: abaqus.PredefinedField.Temperature.Temperature.setValues:84
-#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:71 of
-msgid ""
-"If **crossSectionDistribution** = POINTS_THROUGH_SECTION then "
-"**magnitudes** is a sequence of Doubles specifying the temperature at "
-"each point."
-msgstr ""
-
 #: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:6 of
 msgid ""
 "Check `Temperature.setValuesInStep() on help.3ds.com/2018 "
@@ -2884,12 +2916,6 @@ msgstr ""
 
 #: ../../None:19:<autosummary>:1
 msgid ""
-"A SymbolicConstant specifying the propagation state of the **fileName** "
-"member."
-msgstr ""
-
-#: ../../None:19:<autosummary>:1
-msgid ""
 ":py:obj:`beginStep "
 "<abaqus.PredefinedField.TemperatureState.TemperatureState.beginStep>`\\"
 msgstr ""
@@ -2908,32 +2934,14 @@ msgstr ""
 
 #: ../../None:19:<autosummary>:1
 msgid ""
-"A SymbolicConstant specifying the propagation state of the **beginStep** "
-"member."
-msgstr ""
-
-#: ../../None:19:<autosummary>:1
-msgid ""
 ":py:obj:`beginIncrement "
 "<abaqus.PredefinedField.TemperatureState.TemperatureState.beginIncrement>`\\"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
 msgid ""
-"None or an Int specifying the first increment of the step set in "
-"**beginStep** or the SymbolicConstants STEP_START or STEP_END."
-msgstr ""
-
-#: ../../None:19:<autosummary>:1
-msgid ""
 ":py:obj:`beginIncrementState "
 "<abaqus.PredefinedField.TemperatureState.TemperatureState.beginIncrementState>`\\"
-msgstr ""
-
-#: ../../None:19:<autosummary>:1
-msgid ""
-"A SymbolicConstant specifying the propagation state of the "
-"**beginIncrement** member."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -2956,32 +2964,14 @@ msgstr ""
 
 #: ../../None:19:<autosummary>:1
 msgid ""
-"A SymbolicConstant specifying the propagation state of the **endStep** "
-"member."
-msgstr ""
-
-#: ../../None:19:<autosummary>:1
-msgid ""
 ":py:obj:`endIncrement "
 "<abaqus.PredefinedField.TemperatureState.TemperatureState.endIncrement>`\\"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
 msgid ""
-"None or an Int specifying the last increment of the step set in "
-"**endStep** or the SymbolicConstants STEP_START and STEP_END."
-msgstr ""
-
-#: ../../None:19:<autosummary>:1
-msgid ""
 ":py:obj:`endIncrementState "
 "<abaqus.PredefinedField.TemperatureState.TemperatureState.endIncrementState>`\\"
-msgstr ""
-
-#: ../../None:19:<autosummary>:1
-msgid ""
-"A SymbolicConstant specifying the propagation state of the "
-"**endIncrement** member."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -3016,12 +3006,6 @@ msgstr ""
 
 #: ../../None:19:<autosummary>:1
 msgid ""
-"A SymbolicConstant specifying the propagation state of the "
-"**amplitudeState** member."
-msgstr ""
-
-#: ../../None:19:<autosummary>:1
-msgid ""
 ":py:obj:`fileName "
 "<abaqus.PredefinedField.TemperatureState.TemperatureState.fileName>`\\"
 msgstr ""
@@ -3036,12 +3020,6 @@ msgstr ""
 msgid ""
 ":py:obj:`magnitudesState "
 "<abaqus.PredefinedField.TemperatureState.TemperatureState.magnitudesState>`\\"
-msgstr ""
-
-#: ../../None:19:<autosummary>:1
-msgid ""
-"A tuple of SymbolicConstants specifying the propagation state of each "
-"item of the **magnitudes** member."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -3073,31 +3051,6 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.PredefinedField.TemperatureState.TemperatureState.amplitudeState:2 of
-msgid ""
-"A SymbolicConstant specifying the propagation state of the "
-"**amplitudeState** member. Possible values are UNSET, SET, and UNCHANGED."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.PredefinedField.TemperatureState.TemperatureState.beginIncrement:2 of
-msgid ""
-"None or an Int specifying the first increment of the step set in "
-"**beginStep** or the SymbolicConstants STEP_START or STEP_END. This "
-"argument is valid only when **distributionType** = FROM_FILE or "
-"**distributionType** = FROM_FILE_AND_USER_DEFINED. The default value is "
-"None."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.PredefinedField.TemperatureState.TemperatureState.beginIncrementState:2
-#: of
-msgid ""
-"A SymbolicConstant specifying the propagation state of the "
-"**beginIncrement** member. Possible values are UNSET, SET, and UNCHANGED."
-msgstr ""
-
-#: ../../docstring
 #: abaqus.PredefinedField.TemperatureState.TemperatureState.beginStep:2 of
 msgid ""
 "A SymbolicConstant or an Int specifying the first step from which "
@@ -3108,31 +3061,6 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.PredefinedField.TemperatureState.TemperatureState.beginStepState:2 of
-msgid ""
-"A SymbolicConstant specifying the propagation state of the **beginStep** "
-"member. Possible values are UNSET, SET, and UNCHANGED."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.PredefinedField.TemperatureState.TemperatureState.endIncrement:2 of
-msgid ""
-"None or an Int specifying the last increment of the step set in "
-"**endStep** or the SymbolicConstants STEP_START and STEP_END. This "
-"argument is valid only when **distributionType** = FROM_FILE or "
-"**distributionType** = FROM_FILE_AND_USER_DEFINED. The default value is "
-"None."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.PredefinedField.TemperatureState.TemperatureState.endIncrementState:2
-#: of
-msgid ""
-"A SymbolicConstant specifying the propagation state of the "
-"**endIncrement** member. Possible values are UNSET, SET, and UNCHANGED."
-msgstr ""
-
-#: ../../docstring
 #: abaqus.PredefinedField.TemperatureState.TemperatureState.endStep:2 of
 msgid ""
 "None or an Int specifying the last step from which temperature values are"
@@ -3140,20 +3068,6 @@ msgid ""
 "argument is valid only when **distributionType** = FROM_FILE or "
 "**distributionType** = FROM_FILE_AND_USER_DEFINED. The default value is "
 "None."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.PredefinedField.TemperatureState.TemperatureState.endStepState:2 of
-msgid ""
-"A SymbolicConstant specifying the propagation state of the **endStep** "
-"member. Possible values are UNSET, SET, and UNCHANGED."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.PredefinedField.TemperatureState.TemperatureState.fileNameState:2 of
-msgid ""
-"A SymbolicConstant specifying the propagation state of the **fileName** "
-"member. Possible values are UNSET, SET, and UNCHANGED."
 msgstr ""
 
 #: ../../docstring
@@ -3173,15 +3087,6 @@ msgid ""
 "gradient in the N2 direction. - If **crossSectionDistribution** = "
 "POINTS_THROUGH_SECTION then **magnitudes** is a sequence of Doubles "
 "specifying the temperature at each point."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.PredefinedField.TemperatureState.TemperatureState.magnitudesState:2
-#: of
-msgid ""
-"A tuple of SymbolicConstants specifying the propagation state of each "
-"item of the **magnitudes** member. Possible values are UNSET, SET, and "
-"UNCHANGED."
 msgstr ""
 
 #: ../../docstring
@@ -3362,4 +3267,361 @@ msgid ""
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitypyc.htm?contextscope=all"
 "#simaker-velocitysetvaluespyc>`_."
 msgstr ""
+
+#~ msgid ""
+#~ "Check `Model on help.3ds.com/2018 "
+#~ "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Region object specifying the region"
+#~ " to which the predefined field is "
+#~ "applied. *Region* is ignored if the "
+#~ "predefined field has a *distributionType* "
+#~ "member available, and *distributionType*=FROM_FILE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the scalar nodal "
+#~ "output variable that will be read "
+#~ "from an output database and used "
+#~ "to initialize a specified predefined "
+#~ "field. This argument is a required "
+#~ "argument if *distributionType*=FROM_FILE or "
+#~ "*distributionType*=FROM_FILE_AND_USER_DEFINED."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the AnalyticalField or DiscreteField object"
+#~ " associated with this predefined field. "
+#~ "The *field* argument applies only when"
+#~ " *distributionType*=FIELD or "
+#~ "*distributionType*=DISCRETE_FIELD. The default value"
+#~ " is an empty string."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the file from which the Field "
+#~ "values are to be read when "
+#~ "*distributionType*=FROM_FILE or "
+#~ "*distributionType*=FROM_FILE_AND_USER_DEFINED."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the first step "
+#~ "from which Field values are to be"
+#~ " read or the SymbolicConstant FIRST_STEP"
+#~ " or LAST_STEP. This argument is valid"
+#~ " only when *distributionType*=FROM_FILE or "
+#~ "*distributionType*=FROM_FILE_AND_USER_DEFINED. The default"
+#~ " value is None."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the first increment"
+#~ " of the step set in *beginStep* "
+#~ "or the SymbolicConstants STEP_START or "
+#~ "STEP_END. This argument is valid only"
+#~ " when *distributionType*=FROM_FILE or "
+#~ "*distributionType*=FROM_FILE_AND_USER_DEFINED. The default"
+#~ " value is None."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the last step "
+#~ "from which Field values are to be"
+#~ " read or the SymbolicConstants FIRST_STEP"
+#~ " and LAST_STEP. This argument is "
+#~ "valid only when *distributionType*=FROM_FILE "
+#~ "or *distributionType*=FROM_FILE_AND_USER_DEFINED. The "
+#~ "default value is None."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the last increment "
+#~ "of the step set in *endStep* or"
+#~ " the SymbolicConstants STEP_START and "
+#~ "STEP_END. This argument is valid only"
+#~ " when *distributionType*=FROM_FILE or "
+#~ "*distributionType*=FROM_FILE_AND_USER_DEFINED. The default"
+#~ " value is None."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Sequence of Doubles specifying the "
+#~ "Field values when *distributionType*=UNIFORM "
+#~ "or FIELD. The value of the "
+#~ "*magnitudes* argument is a function of"
+#~ " the *crossSectionDistribution* argument, as "
+#~ "shown in the following list: - If"
+#~ " *crossSectionDistribution*=CONSTANT_THROUGH_THICKNESS, "
+#~ "*magnitudes* is a Double specifying the"
+#~ " Field. - If "
+#~ "*crossSectionDistribution*=GRADIENTS_THROUGH_SHELL_CS, "
+#~ "*magnitudes* is a sequence of Doubles"
+#~ " specifying the mean value and the"
+#~ " gradient in the thickness direction. "
+#~ "- If *crossSectionDistribution*=GRADIENTS_THROUGH_BEAM_CS,"
+#~ " *magnitudes* is a sequence of "
+#~ "Doubles specifying the mean value, the"
+#~ " gradient in the N1 direction, and"
+#~ " the gradient in the N2 direction."
+#~ " - If "
+#~ "*crossSectionDistribution*=POINTS_THROUGH_SECTION, *magnitudes*"
+#~ " is a sequence of Doubles specifying"
+#~ " the Field at each point."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Region object specifying the region"
+#~ " to which the predefined field is "
+#~ "applied. Region is ignored if the "
+#~ "predefined field has *distributionType*=FROM_FILE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If **crossSectionDistribution** = "
+#~ "GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is"
+#~ " a sequence of Doubles specifying the"
+#~ " mean value and the gradient in "
+#~ "the thickness"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "direction. - If **crossSectionDistribution** ="
+#~ " GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is"
+#~ " a"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "sequence of Doubles specifying the mean"
+#~ " value, the gradient in the N1 "
+#~ "direction, and the"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "gradient in the N2 direction. - If"
+#~ " **crossSectionDistribution** = POINTS_THROUGH_SECTION"
+#~ " then **magnitudes** is a sequence"
+#~ msgstr ""
+
+#~ msgid "of Doubles specifying the temperature at each point."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Region object specifying the region"
+#~ " to which the predefined field is "
+#~ "applied. *Region* is ignored if the "
+#~ "predefined field has an *instances* "
+#~ "member available. *Region* is also "
+#~ "ignored if the predefined field has "
+#~ "a *distributionType* member available, and "
+#~ "*distributionType*=FROM_FILE or "
+#~ "FROM_FILE_AND_USER_DEFINED."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the propagation"
+#~ " state of the *fileName* member."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant or an Int specifying"
+#~ " the first step from which field "
+#~ "values are to be read. This "
+#~ "argument is valid only when "
+#~ "*distribution*=FROM_FILE or "
+#~ "*distribution*=FROM_FILE_AND_USER_DEFINED. Possible values"
+#~ " are FIRST_STEP, LAST_STEP, and NONE. "
+#~ "The default value is NONE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the propagation"
+#~ " state of the *beginStep* member."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "None or an Int specifying the "
+#~ "first increment of the step set in"
+#~ " *beginStep* or the SymbolicConstants "
+#~ "STEP_START or STEP_END. This argument is"
+#~ " valid only when *distributionType*=FROM_FILE "
+#~ "or *distributionType*=FROM_FILE_AND_USER_DEFINED. The "
+#~ "default value is None."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the propagation"
+#~ " state of the *beginIncrement* member."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "None or an Int specifying the last"
+#~ " step from which field values are "
+#~ "to be read or the SymbolicConstants "
+#~ "FIRST_STEP and LAST_STEP. This argument "
+#~ "is valid only when "
+#~ "*distributionType*=FROM_FILE or "
+#~ "*distributionType*=FROM_FILE_AND_USER_DEFINED. The default"
+#~ " value is None."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the propagation"
+#~ " state of the *endStep* member."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "None or an Int specifying the last"
+#~ " increment of the step set in "
+#~ "*endStep* or the SymbolicConstants STEP_START"
+#~ " and STEP_END. This argument is valid"
+#~ " only when *distributionType*=FROM_FILE or "
+#~ "*distributionType*=FROM_FILE_AND_USER_DEFINED. The default"
+#~ " value is None."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the propagation"
+#~ " state of the *endIncrement* member."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the propagation"
+#~ " state of the *amplitudeState* member."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the file from which the field "
+#~ "values are to be read when "
+#~ "*distributionType*=FROM_FILE or "
+#~ "*distributionType*=FROM_FILE_AND_USER_DEFINED."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of SymbolicConstants specifying "
+#~ "the propagation state of each item "
+#~ "of the *magnitudes* member."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of Floats specifying the "
+#~ "field values when *distributionType*=UNIFORM "
+#~ "or *distributionType*=FIELD. The value of "
+#~ "the *magnitudes* argument is a function"
+#~ " of the *crossSectionDistribution* argument, "
+#~ "as shown in the following list: -"
+#~ " If *crossSectionDistribution*=CONSTANT_THROUGH_THICKNESS,"
+#~ " *magnitudes* is a Double   specifying "
+#~ "the field. - If "
+#~ "*crossSectionDistribution*=GRADIENTS_THROUGH_SHELL_CS, "
+#~ "*magnitudes* is a sequence   of Doubles"
+#~ " specifying the mean value and the"
+#~ " gradient in the thickness direction. "
+#~ "- If *crossSectionDistribution*=GRADIENTS_THROUGH_BEAM_CS,"
+#~ " *magnitudes* is a sequence of   "
+#~ "Doubles specifying the mean value, the"
+#~ " gradient in the N1 direction, and"
+#~ " the gradient in   the N2 direction."
+#~ " - If "
+#~ "*crossSectionDistribution*=POINTS_THROUGH_SECTION, *magnitudes*"
+#~ " is a sequence of   Doubles "
+#~ "specifying the field at each point."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SymbolicConstant UNSET or a String"
+#~ " specifying the name of the amplitude"
+#~ " reference. The SymbolicConstant UNSET "
+#~ "should be used if the predefined "
+#~ "field has no amplitude reference. The"
+#~ " default value is UNSET.Note: *amplitude*"
+#~ " should be given only if it is"
+#~ " valid for the specified step."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the propagation"
+#~ " state of the *amplitudeState* member. "
+#~ "Possible values are UNSET, SET, and "
+#~ "UNCHANGED."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the propagation"
+#~ " state of the *beginIncrement* member. "
+#~ "Possible values are UNSET, SET, and "
+#~ "UNCHANGED."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the propagation"
+#~ " state of the *beginStep* member. "
+#~ "Possible values are UNSET, SET, and "
+#~ "UNCHANGED."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the propagation"
+#~ " state of the *endIncrement* member. "
+#~ "Possible values are UNSET, SET, and "
+#~ "UNCHANGED."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the propagation"
+#~ " state of the *endStep* member. "
+#~ "Possible values are UNSET, SET, and "
+#~ "UNCHANGED."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the propagation"
+#~ " state of the *fileName* member. "
+#~ "Possible values are UNSET, SET, and "
+#~ "UNCHANGED."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of Floats specifying the "
+#~ "field values when *distributionType*=UNIFORM "
+#~ "or *distributionType*=FIELD. The value of "
+#~ "the *magnitudes* argument is a function"
+#~ " of the *crossSectionDistribution* argument, "
+#~ "as shown in the following list: -"
+#~ " If *crossSectionDistribution*=CONSTANT_THROUGH_THICKNESS,"
+#~ " *magnitudes* is a Double"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If *crossSectionDistribution*=GRADIENTS_THROUGH_SHELL_CS, "
+#~ "*magnitudes* is a sequence of Doubles"
+#~ " specifying the mean value and the"
+#~ " gradient in the thickness direction."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If *crossSectionDistribution*=GRADIENTS_THROUGH_BEAM_CS, "
+#~ "*magnitudes* is a sequence of Doubles"
+#~ " specifying the mean value, the "
+#~ "gradient in the N1 direction, and "
+#~ "the gradient in the N2 direction."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If *crossSectionDistribution*=POINTS_THROUGH_SECTION, "
+#~ "*magnitudes* is a sequence of Doubles"
+#~ " specifying the field at each point."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of SymbolicConstants specifying "
+#~ "the propagation state of each item "
+#~ "of the *magnitudes* member. Possible "
+#~ "values are UNSET, SET, and UNCHANGED."
+#~ msgstr ""
 

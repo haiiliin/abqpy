@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "How the object model for the output database relates to commands"
 msgstr ""
 
 #: ../../user/output/python/object-model.rst:5
-msgid "You need to understand the object model for the output database both to read data from it and to write data to it. An object model describes the relationship between objects. The object model for the Abaqus/CAE model is described in :doc:`user/python/use-scripts/object-model`."
+msgid "You need to understand the object model for the output database both to read data from it and to write data to it. An object model describes the relationship between objects. The object model for the Abaqus/CAE model is described in :doc:`/user/python/use-scripts/object-model`."
 msgstr ""
 
 #: ../../user/output/python/object-model.rst:7
@@ -41,5 +41,5 @@ msgid "Similarly, the following command refers to the sequence of field data con
 msgstr ""
 
 #: ../../user/output/python/object-model.rst:31
-msgid "You use commands to access objects by stepping through the hierarchy of objects in the object model. The `Access` and `Path` descriptions in :doc:`reference/odb` describe the interface definition of the command. The interface definition of the command reflects the hierarchy of objects in the object model. If you are unsure of the structure of the output database, you can issue the `objectname.__members__` command from the command line interface to view the members of an object."
+msgid "You use commands to access objects by stepping through the hierarchy of objects in the object model. The `Access` and `Path` descriptions in :doc:`/reference/odb` describe the interface definition of the command. The interface definition of the command reflects the hierarchy of objects in the object model. If you are unsure of the structure of the output database, you can issue the `objectname.__members__` command from the command line interface to view the members of an object."
 msgstr ""

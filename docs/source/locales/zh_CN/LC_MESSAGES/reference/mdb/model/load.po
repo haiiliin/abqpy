@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,7 +122,7 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel:12 of
 msgid ""
-"Check `Model on help.3ds.com/2018 "
+"Check `LoadModel on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -4867,6 +4867,7 @@ msgstr ""
 #: abaqus.Load.ConcentratedChargeState.ConcentratedChargeState:16
 #: abaqus.Load.ConcentratedConcentrationFluxState.ConcentratedConcentrationFluxState:17
 #: abaqus.Load.ConcentratedForceState.ConcentratedForceState:17
+#: abaqus.Load.ConcentratedHeatFluxState.ConcentratedHeatFluxState:17
 #: abaqus.Load.ConcentratedPoreFluidState.ConcentratedPoreFluidState:17
 #: abaqus.Load.ConnectorForceState.ConnectorForceState:16
 #: abaqus.Load.ConnectorMomentState.ConnectorMomentState:16
@@ -5133,7 +5134,7 @@ msgstr ""
 
 #: abaqus.Load.BodyConcentrationFluxState.BodyConcentrationFluxState:19
 #: abaqus.Load.ConcentratedConcentrationFluxState.ConcentratedConcentrationFluxState:19
-#: of
+#: abaqus.Load.ConcentratedHeatFluxState.ConcentratedHeatFluxState:19 of
 msgid "CFLUX"
 msgstr ""
 
@@ -9137,7 +9138,7 @@ msgstr ""
 #: ../../None:22:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying whether the step has an explicit procedure "
-"type (*procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or "
+"type (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or "
 "DYNAMIC_TEMP_DISPLACEMENT)."
 msgstr ""
 
@@ -12489,7 +12490,7 @@ msgstr ""
 msgid "Create load cases"
 msgstr ""
 
-#: ../../reference/mdb/model/load.rst:621
+#: ../../reference/mdb/model/load.rst:622
 msgid "Object features of load cases"
 msgstr ""
 
@@ -12545,4 +12546,16 @@ msgid ""
 "A Boolean specifying whether the load case is suppressed or not. The "
 "default value is OFF."
 msgstr ""
+
+#~ msgid ""
+#~ "Check `Model on help.3ds.com/2018 "
+#~ "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying whether the "
+#~ "step has an explicit procedure type "
+#~ "(*procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or "
+#~ "DYNAMIC_TEMP_DISPLACEMENT)."
+#~ msgstr ""
 

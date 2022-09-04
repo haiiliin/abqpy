@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -871,7 +871,7 @@ msgstr ""
 msgid "An :py:class:`~abaqus.Field.ExpressionField.ExpressionField` object."
 msgstr ""
 
-#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:168
+#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:172
 #: abaqus.Field.FieldModel.FieldModel.ExpressionField:50 of
 msgid ":obj:`TextException`"
 msgstr ""
@@ -1188,7 +1188,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:152
+#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:156
 #: abaqus.Field.AnalyticalField.AnalyticalField.odbMeshRegionData:2 of
 msgid "An :py:class:`~abaqus.Field.OdbMeshRegionData.OdbMeshRegionData` object."
 msgstr ""
@@ -1347,8 +1347,8 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:50
-#: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition:16
-#: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition:18 of
+#: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition:17
+#: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition:19 of
 msgid "The default value is UNDEFINED_POSITION."
 msgstr ""
 
@@ -1445,7 +1445,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:70
-#: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:18 of
+#: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:19 of
 msgid "The default value is SCALAR."
 msgstr ""
 
@@ -1598,11 +1598,11 @@ msgstr ""
 #: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:122 of
 msgid ""
 "A Float specifying the angle (in degrees) at which to display results "
-"that contain complex numbers when **numericForm=COMPLEX_MAG_AT_ANGLE** = "
-"COMPLEX_MAG_AT_ANGLE. The default value is 0.0."
+"that contain complex numbers when **numericForm = COMPLEX_MAG_AT_ANGLE = "
+"COMPLEX_MAG_AT_ANGLE**. The default value is 0.0."
 msgstr ""
 
-#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:132 of
+#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:136 of
 msgid "**sectionPoint**"
 msgstr ""
 
@@ -1610,16 +1610,14 @@ msgstr ""
 msgid ""
 "A Dictionary with String keys and String values. Each key specifies a "
 "region in the model; the corresponding value specifies a section point "
-"within that region. For example: sectionPoint={'shell < MAT > < 7 section"
-" points >':'SPOS (fraction = 1.0)', 'shell < MAT > < 5 section points >':"
-" 'SPOS, (fraction = 1.0)', }"
+"within that region. For example:"
 msgstr ""
 
-#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:138 of
+#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:142 of
 msgid "**refinementType**"
 msgstr ""
 
-#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:135 of
+#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:139 of
 msgid ""
 "A SymbolicConstant specifying the type of the FieldOutput object. "
 "Possible values for the SymbolicConstant are NO_REFINEMENT, INVARIANT and"
@@ -1627,21 +1625,21 @@ msgid ""
 "mandetory if **variableLabel** has an INVARIANT or a COMPONENT."
 msgstr ""
 
-#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:142 of
+#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:146 of
 msgid "**refinementLabel**"
 msgstr ""
 
-#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:141 of
+#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:145 of
 msgid ""
 "A String specifying the Label of FieldOutput object. This is required "
 "only if the **refinementType** is INVARIANT or COMPONENT."
 msgstr ""
 
-#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:147 of
+#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:151 of
 msgid "**displayOutputPosition**"
 msgstr ""
 
-#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:145 of
+#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:149 of
 msgid ""
 "A SymbolicConstant specifying the position from which to obtain the data."
 " Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE, "
@@ -1649,7 +1647,7 @@ msgid ""
 "WHOLE_PART_INSTANCE, WHOLE_MODEL, and GENERAL_PARTICLE."
 msgstr ""
 
-#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:155 of
+#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:159 of
 msgid ":obj:`OdbMeshRegionData`"
 msgstr ""
 
@@ -2447,13 +2445,11 @@ msgid ""
 "<abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.complexAngle>`\\"
 msgstr ""
 
-#: ../../None:21:<autosummary>:1 ../../docstring
-#: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.complexAngle:2 of
+#: ../../None:21:<autosummary>:1
 msgid ""
 "A Float specifying the angle (in degrees) at which to display results "
-"that contain complex numbers when "
-"*numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The default "
-"value is 0.0."
+"that contain complex numbers when *numericForm=COMPLEX_MAG_AT_ANGLE* = "
+"COMPLEX_MAG_AT_ANGLE."
 msgstr ""
 
 #: ../../None:21:<autosummary>:1
@@ -2513,6 +2509,14 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.complexAngle:2 of
+msgid ""
+"A Float specifying the angle (in degrees) at which to display results "
+"that contain complex numbers when *numericForm=COMPLEX_MAG_AT_ANGLE* = "
+"COMPLEX_MAG_AT_ANGLE. The default value is 0.0."
+msgstr ""
+
+#: ../../docstring
 #: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition:2 of
 msgid ""
 "A SymbolicConstant specifying the position where the output is displayed "
@@ -2550,4 +2554,34 @@ msgid ""
 "An Int specifying the step index. Possible values are 0 ≤≤ **stepIndex** "
 "≤≤ (*numSteps* − 1). The default value is 0."
 msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the angle (in "
+#~ "degrees) at which to display results "
+#~ "that contain complex numbers when "
+#~ "**numericForm=COMPLEX_MAG_AT_ANGLE** = "
+#~ "COMPLEX_MAG_AT_ANGLE. The default value is "
+#~ "0.0."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Dictionary with String keys and "
+#~ "String values. Each key specifies a "
+#~ "region in the model; the corresponding"
+#~ " value specifies a section point "
+#~ "within that region. For example: "
+#~ "sectionPoint={'shell < MAT > < 7 "
+#~ "section points >':'SPOS (fraction = "
+#~ "1.0)', 'shell < MAT > < 5 "
+#~ "section points >': 'SPOS, (fraction ="
+#~ " 1.0)', }"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the angle (in "
+#~ "degrees) at which to display results "
+#~ "that contain complex numbers when "
+#~ "*numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The "
+#~ "default value is 0.0."
+#~ msgstr ""
 
