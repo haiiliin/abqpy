@@ -62,7 +62,7 @@ class SectionModel(ModelBase):
         order
             An Int specifying the number of ninth-order polynomials that will be used to resolve the
             variation of the acoustic field in the infinite direction. Possible values are 0 <<
-            **order** ≤≤ 10. The default value is 10.
+            **order** ≤ 10. The default value is 10.
 
         Returns
         -------
@@ -401,7 +401,7 @@ class SectionModel(ModelBase):
             Abaqus/Explicit analysis.VALUE, specifying that the Poisson's ratio used in the analysis
             is the value provided in **poisson**.The default value is DEFAULT.
         poisson
-            A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
+            A Float specifying the Poisson's ratio. Possible values are −1.0 ≤ **poisson** ≤ 0.5.
             This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
         integrationRule
             A SymbolicConstant specifying the shell section integration rule. Possible values are
@@ -795,7 +795,7 @@ class SectionModel(ModelBase):
             Abaqus/Explicit analysis.VALUE, specifying that the Poisson's ratio used in the analysis
             is the value provided in **poisson**.The default value is DEFAULT.
         poisson
-            A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
+            A Float specifying the Poisson's ratio. Possible values are −1.0 ≤ **poisson** ≤ 0.5.
             This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
         useDensity
             A Boolean specifying whether or not to use the value of **density**. The default value is
@@ -894,7 +894,7 @@ class SectionModel(ModelBase):
             Abaqus/Explicit analysis.VALUE, specifying that the Poisson's ratio used in the analysis
             is the value provided in **poisson**.The default value is DEFAULT.
         poisson
-            A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
+            A Float specifying the Poisson's ratio. Possible values are −1.0 ≤ **poisson** ≤ 0.5.
             This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
         integrationRule
             A SymbolicConstant specifying the shell section integration rule. Possible values are
@@ -1041,7 +1041,7 @@ class SectionModel(ModelBase):
             Abaqus/Explicit analysis.VALUE, specifying that the Poisson's ratio used in the analysis
             is the value provided in **poisson**.The default value is DEFAULT.
         poisson
-            A Float specifying the section Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤
+            A Float specifying the section Poisson's ratio. Possible values are −1.0 ≤ **poisson** ≤
             0.5. This argument is valid only when **poissonDefinition** = VALUE. The default value is
             0.5.
         thicknessField

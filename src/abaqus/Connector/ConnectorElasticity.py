@@ -110,7 +110,7 @@ class ConnectorElasticity(ConnectorBehaviorOption):
     independentComponents: tuple = ()
 
     #: A sequence of Ints specifying the components of relative motion for which the behavior
-    #: is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+    #: is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
     #: specified. The default value is an empty sequence.
     components: tuple = ()
 
@@ -173,7 +173,7 @@ class ConnectorElasticity(ConnectorBehaviorOption):
             specified. The default value is an empty sequence.
         components
             A sequence of Ints specifying the components of relative motion for which the behavior
-            is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+            is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
             specified. The default value is an empty sequence.
 
         Returns
