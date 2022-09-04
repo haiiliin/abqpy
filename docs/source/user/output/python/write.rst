@@ -6,7 +6,7 @@ You can write your own data to an output database, and you can use Abaqus/CAE to
 
 After you create an object, you use methods of the objects to enter or modify the data associated with the object. For example, if you are creating an output database, you first create an Odb object. You then use the Part constructor to create a part. After creating the part, you use the addNodes and addElements methods of the Part object to add nodes and elements, respectively. Similarly, you use the addData method of the FieldOutput object to add field output data to the output database. After creating an output database, you should use the save method on the Odb object to save the output database.
 
-The example script in :ref:`examples:creating an output database` also illustrates how you can write to an output database.
+The example script in :ref:`creating-an-output-database` also illustrates how you can write to an output database.
 
 Creating a new output database
 ------------------------------
