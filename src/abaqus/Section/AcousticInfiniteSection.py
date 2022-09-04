@@ -34,7 +34,7 @@ class AcousticInfiniteSection(Section):
 
     #: An Int specifying the number of ninth-order polynomials that will be used to resolve the
     #: variation of the acoustic field in the infinite direction. Possible values are 0 <<
-    #: **order** ≤≤ 10. The default value is 10.
+    #: **order** ≤ 10. The default value is 10.
     order: int = 10
 
     @abaqus_method_doc
@@ -61,7 +61,7 @@ class AcousticInfiniteSection(Section):
         order
             An Int specifying the number of ninth-order polynomials that will be used to resolve the
             variation of the acoustic field in the infinite direction. Possible values are 0 <<
-            **order** ≤≤ 10. The default value is 10.
+            **order** ≤ 10. The default value is 10.
 
         Returns
         -------
@@ -87,7 +87,7 @@ class AcousticInfiniteSection(Section):
         order
             An Int specifying the number of ninth-order polynomials that will be used to resolve the
             variation of the acoustic field in the infinite direction. Possible values are 0 <<
-            **order** ≤≤ 10. The default value is 10.
+            **order** ≤ 10. The default value is 10.
 
         Raises
         ------

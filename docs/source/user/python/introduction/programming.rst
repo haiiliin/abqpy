@@ -4,6 +4,8 @@ Programming techniques
 
 The following sections introduce you to some of the techniques you will need to program with Python.
 
+.. _creating-functions:
+
 Creating functions
 ------------------
 
@@ -168,6 +170,8 @@ Abaqus executes the script and prints the result.
 
     Distance to origin =  50.0
 
+.. _using-dictionaries:
+
 Using dictionaries
 ------------------
 
@@ -316,6 +320,8 @@ The following example reads each line of a text file and changes the line to upp
 
 The first line opens the input file; you do not need the `'r'` because read-only is the default access mode. The next line opens a new file to which you will write. You read the lines in the input file into a list. Finally, you enter a loop that converts each line to uppercase characters and writes the result to the output file. The final two lines close the files.
 
+.. _error-handling:
+
 Error handling
 --------------
 
@@ -329,7 +335,8 @@ Python provides exception handling through the try and except commands. For exam
 
 If the file does not exist, the statement fails, and Python displays the following error message:
 
-.. code-block:: python2
+.. autolink-skip:: section
+.. code-block::
 
     >>> outputFile = open('foam.txt')
     Traceback (innermost last):
@@ -338,7 +345,7 @@ If the file does not exist, the statement fails, and Python displays the followi
 
 If you use exception handling, you can catch the error, display a helpful message, and take the appropriate action. For example, a revised version of the code attempts to open the same file within a try statement. If an IOError error is encountered, the except statement catches the IOError exception and assigns the exception's value to the variable error.
 
-.. code-block:: python2
+.. code-block::
 
     >>> try:
     ...     outputFile = open('foam.txt')   
@@ -364,6 +371,8 @@ You can raise your own exceptions by providing the error type and the error mess
         print error
 
 Exception handling is discussed in more detail in Error handling in the :doc:`/references`.
+
+.. _functions-and-modules:
 
 Functions and modules
 ---------------------

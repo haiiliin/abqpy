@@ -31,13 +31,18 @@ class Region:
     Another way of correcting this problem is to re-apply the attribute.
     Wherever a particular Load, BC, IC, etc. command accepts a named set or a named surface,
     that command will also accept a Region object. For example
-    myRegion = regionToolset.Region(edges=edges1)
-    mdb.models['Model-1'].DisplacementBC(name='BC-1'
-        createStepName='Initial', region=myRegion, u1=SET
-        u2=SET)
-    myRegion = regionToolset.Region(elements=e[1:100])
-    p = mdb.models['mirror'].parts['COLLAR_MIRROR-1']
-    p.SectionAssignment(region=myRegion, sectionName='Section-1')
+    
+    .. autolink-skip:: section
+    .. code-block:: python
+    
+        myRegion = regionToolset.Region(edges=edges1)
+        mdb.models['Model-1'].DisplacementBC(name='BC-1'
+            createStepName='Initial', region=myRegion, u1=SET
+            u2=SET)
+        myRegion = regionToolset.Region(elements=e[1:100])
+        p = mdb.models['mirror'].parts['COLLAR_MIRROR-1']
+        p.SectionAssignment(region=myRegion, sectionName='Section-1')
+    
     Abaqus does not provide a regions repository; as an alternative, you should assign a
     variable to a Region object and refer to the variable. The lifecycle of a Region object
     is similar to the lifecycle of a Leaf object used by display groups; as a result, you

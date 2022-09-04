@@ -200,10 +200,10 @@ class PartFeature(BaseFeature):
         sketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the plane shape to be extruded.
         depth
-            A Float specifying the extrusion depth. Possible values are 10-5 ≤≤ **depth** ≤≤ 105.
+            A Float specifying the extrusion depth. Possible values are 10-5 ≤ **depth** ≤ 105.
         draftAngle
-            A Float specifying the draft angle in degrees. Possible values are -90.0 ≤≤ **draftAngle**
-            ≤≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
+            A Float specifying the draft angle in degrees. Possible values are -90.0 ≤ **draftAngle**
+            ≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
             an inner loop will draft inward. The opposite is true for a negative draft angle. The
             default value, 0, implies a normal extrude. The arguments **draftAngle** and **pitch** are
             mutually exclusive.
@@ -212,7 +212,7 @@ class PartFeature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are -105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
 
         Returns
@@ -249,12 +249,12 @@ class PartFeature(BaseFeature):
         sketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the shape to be revolved.
         angle
-            A Float specifying the revolve angle in degrees. Possible values are 10-4 ≤≤ **angle** ≤≤
+            A Float specifying the revolve angle in degrees. Possible values are 10-4 ≤ **angle** ≤
             360.Note:If **pitch** >>0, there is no upper limit for **angle**.
         pitch
             A Float specifying the pitch. The pitch is the distance traveled along the axial
             direction, measured between corresponding points on the sketch when it has completed one
-            full revolution about the axis of revolution. Possible values are 0 ≤≤ **pitch** ≤≤ 105.
+            full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 105.
             The default value, 0, implies a normal revolve.
         flipRevolveDirection
             A Boolean specifying whether to override the direction of feature creation. If
@@ -362,8 +362,8 @@ class PartFeature(BaseFeature):
         depth
             A Float specifying the extrusion depth. Possible values are Floats > 0.
         draftAngle
-            A Float specifying the draft angle in degrees. Possible values are -90.0 ≤≤ **draftAngle**
-            ≤≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
+            A Float specifying the draft angle in degrees. Possible values are -90.0 ≤ **draftAngle**
+            ≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
             an inner loop will draft inward. The opposite is true for a negative draft angle. The
             default value, 0, implies a normal extrude. The arguments **draftAngle** and **pitch** are
             mutually exclusive.
@@ -372,7 +372,7 @@ class PartFeature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are -105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
 
         Returns
@@ -413,12 +413,12 @@ class PartFeature(BaseFeature):
         sketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the shape to be revolved.
         angle
-            A Float specifying the revolve angle in degrees. Possible values are 0 ≤≤ **angle** ≤≤
+            A Float specifying the revolve angle in degrees. Possible values are 0 ≤ **angle** ≤
             360.Note:If **pitch** >> 0, there is no upper limit for **angle**.
         pitch
             A Float specifying the pitch. The pitch is the distance traveled along the axial
             direction, measured between corresponding points on the sketch when it has completed one
-            full revolution about the axis of revolution. Possible values are 0 ≤≤ **pitch** ≤≤ 105.
+            full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 105.
             The default value, 0, implies a normal revolve.
         flipRevolveDirection
             A Boolean specifying whether to override the direction of feature creation. If
@@ -772,8 +772,8 @@ class PartFeature(BaseFeature):
             be an up-to-face cut. The default is to not specify a face.Note:If neither **depth** nor
             **upToFace** is specified, the cut will be a through-all cut.
         draftAngle
-            A Float specifying the draft angle in degrees. Possible values are -90.0 ≤≤ **draftAngle**
-            ≤≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
+            A Float specifying the draft angle in degrees. Possible values are -90.0 ≤ **draftAngle**
+            ≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
             an inner loop will draft inward. The opposite is true for a negative draft angle. The
             default value, 0, implies a normal extrude. The arguments **draftAngle** and **pitch** are
             mutually exclusive.
@@ -782,7 +782,7 @@ class PartFeature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are -105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         flipExtrudeDirection
             A Boolean specifying whether to override the direction of feature creation. If the value
@@ -843,7 +843,7 @@ class PartFeature(BaseFeature):
         startTangent
             A Float specifying the angle in degrees of the tangent with respect to the plane in
             which the start section lies. You must specify the **startTangent** argument if
-            **startCondition** = SPECIFIED. Possible values are 0.0 ≤≤ **startTangent** ≤≤ 180.0.
+            **startCondition** = SPECIFIED. Possible values are 0.0 ≤ **startTangent** ≤ 180.0.
         startMagnitude
             A Float specifying the magnitude of the **startTangent**. You must specify the
             **startMagnitude** argument if **startCondition** = SPECIFIED. Possible values are 0.0 <<
@@ -851,7 +851,7 @@ class PartFeature(BaseFeature):
         endTangent
             A Float specifying the angle in degrees of the tangent with respect to the plane in
             which the end section lies. You must specify the **endTangent** argument if
-            **startCondition** = SPECIFIED. Possible values are 0.0 ≤≤ **endTangent** ≤≤ 180.0.
+            **startCondition** = SPECIFIED. Possible values are 0.0 ≤ **endTangent** ≤ 180.0.
         endMagnitude
             A Float specifying the magnitude of the **endTangent**. This argument is to be used when
             the **endCondition** argument has the value SPECIFIED. Possible values are 0.0 <<
@@ -916,7 +916,7 @@ class PartFeature(BaseFeature):
         pitch
             A Float specifying the pitch. The pitch is the distance traveled along the axial
             direction, measured between corresponding points on the sketch when it has completed one
-            full revolution about the axis of revolution. Possible values are 0 ≤≤ **pitch** ≤≤ 105.
+            full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 105.
             The default value, 0, implies a normal revolve.
         flipRevolveDirection
             A Boolean specifying whether to override the direction of feature creation. If
@@ -1002,8 +1002,8 @@ class PartFeature(BaseFeature):
             values are RIGHT, LEFT, TOP, and BOTTOM. Default value is RIGHT. Only required when
             profile is a ConstrainedSketch object.
         draftAngle
-            A Float specifying the draft angle in degrees. Possible values are -90.0 ≤≤ **draftAngle**
-            ≤≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
+            A Float specifying the draft angle in degrees. Possible values are -90.0 ≤ **draftAngle**
+            ≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
             an inner loop will draft inward. The opposite is true for a negative draft angle. The
             default value, 0, implies a normal extrude. The arguments **draftAngle** and **pitch** are
             mutually exclusive.
@@ -1012,7 +1012,7 @@ class PartFeature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are -105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         profileNormal
             A Boolean specifying whether to keep the profile normal same as original or varying
@@ -1760,8 +1760,8 @@ class PartFeature(BaseFeature):
             A SymbolicConstant specifying the orientation of **sketchUpEdge** on the sketch. Possible
             values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.
         draftAngle
-            A Float specifying the draft angle in degrees. Possible values are -90.0 ≤≤ **draftAngle**
-            ≤≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
+            A Float specifying the draft angle in degrees. Possible values are -90.0 ≤ **draftAngle**
+            ≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
             an inner loop will draft inward. The opposite is true for a negative draft angle. The
             default value, 0, implies a normal extrude. The arguments **draftAngle** and **pitch** are
             mutually exclusive.
@@ -1770,7 +1770,7 @@ class PartFeature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are -105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         flipExtrudeDirection
             A Boolean specifying whether to override the direction of feature creation. If the value
@@ -1836,7 +1836,7 @@ class PartFeature(BaseFeature):
         startTangent
             A Float specifying the angle in degrees of the tangent with respect to the plane in
             which the start section lies. You must specify the **startTangent** argument if
-            **startCondition** = SPECIFIED. Possible values are 0.0 ≤≤ **startTangent** ≤≤ 180.0.
+            **startCondition** = SPECIFIED. Possible values are 0.0 ≤ **startTangent** ≤ 180.0.
         startMagnitude
             A Float specifying the magnitude of the **startTangent**. You must specify the
             **startMagnitude** argument if **startCondition** = SPECIFIED. Possible values are 0.0 <<
@@ -1844,7 +1844,7 @@ class PartFeature(BaseFeature):
         endTangent
             A Float specifying the angle in degrees of the tangent with respect to the plane in
             which the end section lies. You must specify the **endTangent** argument if
-            **startCondition** = SPECIFIED. Possible values are 0.0 ≤≤ **endTangent** ≤≤ 180.0.
+            **startCondition** = SPECIFIED. Possible values are 0.0 ≤ **endTangent** ≤ 180.0.
         endMagnitude
             A Float specifying the magnitude of the **endTangent**. This argument is to be used when
             the **endCondition** argument has the value SPECIFIED. Possible values are 0.0 <<
@@ -1924,7 +1924,7 @@ class PartFeature(BaseFeature):
         pitch
             A Float specifying the pitch. The pitch is the distance traveled along the axial
             direction, measured between corresponding points on the sketch when it has completed one
-            full revolution about the axis of revolution. Possible values are 0 ≤≤ **pitch** ≤≤ 105.
+            full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 105.
             The default value, 0, implies a normal revolve.
         flipRevolveDirection
             A Boolean specifying whether to override the direction of feature creation. If
@@ -2014,8 +2014,8 @@ class PartFeature(BaseFeature):
             values are RIGHT, LEFT, TOP, and BOTTOM. Default value is RIGHT. Only required when
             profile is a ConstrainedSketch object.
         draftAngle
-            A Float specifying the draft angle in degrees. Possible values are -90.0 ≤≤ **draftAngle**
-            ≤≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
+            A Float specifying the draft angle in degrees. Possible values are -90.0 ≤ **draftAngle**
+            ≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
             an inner loop will draft inward. The opposite is true for a negative draft angle. The
             default value, 0, implies a normal extrude. The arguments **draftAngle** and **pitch** are
             mutually exclusive.
@@ -2024,7 +2024,7 @@ class PartFeature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are -105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         profileNormal
             A Boolean specifying whether to keep the profile normal same as original or varying
@@ -2096,8 +2096,8 @@ class PartFeature(BaseFeature):
             A SymbolicConstant specifying the orientation of **sketchUpEdge** on the sketch. Possible
             values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.
         draftAngle
-            A Float specifying the draft angle in degrees. Possible values are -90.0 ≤≤ **draftAngle**
-            ≤≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
+            A Float specifying the draft angle in degrees. Possible values are -90.0 ≤ **draftAngle**
+            ≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
             an inner loop will draft inward. The opposite is true for a negative draft angle. The
             default value, 0, implies a normal extrude. The arguments **draftAngle** and **pitch** are
             mutually exclusive.
@@ -2106,7 +2106,7 @@ class PartFeature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are -105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         flipExtrudeDirection
             A Boolean specifying whether to override the direction of feature creation. If the value
@@ -2171,7 +2171,7 @@ class PartFeature(BaseFeature):
         startTangent
             A Float specifying the angle in degrees of the tangent with respect to the plane in
             which the start section lies. You must specify the **startTangent** argument if
-            **startCondition** = SPECIFIED. Possible values are 0.0 ≤≤ **startTangent** ≤≤ 180.0.
+            **startCondition** = SPECIFIED. Possible values are 0.0 ≤ **startTangent** ≤ 180.0.
         startMagnitude
             A Float specifying the magnitude of the **startTangent**. You must specify the
             **startMagnitude** argument if **startCondition** = SPECIFIED. Possible values are 0.0 <<
@@ -2179,7 +2179,7 @@ class PartFeature(BaseFeature):
         endTangent
             A Float specifying the angle in degrees of the tangent with respect to the plane in
             which the end section lies. You must specify the **endTangent** argument if
-            **startCondition** = SPECIFIED. Possible values are 0.0 ≤≤ **endTangent** ≤≤ 180.0.
+            **startCondition** = SPECIFIED. Possible values are 0.0 ≤ **endTangent** ≤ 180.0.
         endMagnitude
             A Float specifying the magnitude of the **endTangent**. This argument is to be used when
             the **endCondition** argument has the value SPECIFIED. Possible values are 0.0 <<
@@ -2258,7 +2258,7 @@ class PartFeature(BaseFeature):
         pitch
             A Float specifying the pitch. The pitch is the distance traveled along the axial
             direction, measured between corresponding points on the sketch when it has completed one
-            full revolution about the axis of revolution. Possible values are 0 ≤≤ **pitch** ≤≤ 105.
+            full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 105.
             The default value, 0, implies a normal revolve.
         flipRevolveDirection
             A Boolean specifying whether to override the direction of feature creation. If
@@ -2348,8 +2348,8 @@ class PartFeature(BaseFeature):
             values are RIGHT, LEFT, TOP, and BOTTOM. Default value is RIGHT. Only required when
             profile is a ConstrainedSketch object.
         draftAngle
-            A Float specifying the draft angle in degrees. Possible values are -90.0 ≤≤ **draftAngle**
-            ≤≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
+            A Float specifying the draft angle in degrees. Possible values are -90.0 ≤ **draftAngle**
+            ≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
             an inner loop will draft inward. The opposite is true for a negative draft angle. The
             default value, 0, implies a normal extrude. The arguments **draftAngle** and **pitch** are
             mutually exclusive.
@@ -2358,7 +2358,7 @@ class PartFeature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are -105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         profileNormal
             A Boolean specifying whether to keep the profile normal same as original or varying

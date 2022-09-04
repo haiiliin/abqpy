@@ -69,7 +69,7 @@ class ViewportAnnotationOptions:
             ON.
         triadPosition
             A pair of Ints specifying the position of the view orientation triad as a percentage of
-            the viewport size. Possible values are (0, 0) ≤≤ **triadPosition** ≤≤ (100, 100). The
+            the viewport size. Possible values are (0, 0) ≤ **triadPosition** ≤ (100, 100). The
             default value is (6, 12).
         triadColor
             A String specifying the color of the view orientation triad. Possible values are any
@@ -83,7 +83,7 @@ class ViewportAnnotationOptions:
             any valid font. The default value is "-*-verdana-bold-r-normal--120-*".
         triadSize
             An Int specifying the length of each triad axis as a percentage of the viewport size.
-            Possible values are 1 ≤≤ **legendDecimalPlaces** ≤≤ 50. The default value is 4.
+            Possible values are 1 ≤ **legendDecimalPlaces** ≤ 50. The default value is 4.
         legend
             A Boolean specifying whether the legend is shown. The default value is ON.
         legendMinMax
@@ -94,10 +94,10 @@ class ViewportAnnotationOptions:
             ON.
         legendDecimalPlaces
             An Int specifying the number of decimal places to display in the legend. Possible values
-            are 0 ≤≤ **legendDecimalPlaces** ≤≤ 9. The default value is 3.
+            are 0 ≤ **legendDecimalPlaces** ≤ 9. The default value is 3.
         legendPosition
             A pair of Ints specifying the position of the legend as a percentage of the viewport
-            size. Possible values are (0, 0)≤≤ **legendPosition** ≤≤ (100, 100). The default value is
+            size. Possible values are (0, 0)≤ **legendPosition** ≤ (100, 100). The default value is
             (2, 98).
         legendFont
             A String specifying the font of the legend labels. Possible values are any valid font.
@@ -119,7 +119,7 @@ class ViewportAnnotationOptions:
             is OFF.
         titlePosition
             A pair of Ints specifying the position of the title block as a percentage of the
-            viewport size. Possible values are (0, 0) ≤≤ **titlePosition** ≤≤ (100, 100). The default
+            viewport size. Possible values are (0, 0) ≤ **titlePosition** ≤ (100, 100). The default
             value is (13, 20).
         titleFont
             A String specifying the font of the title. Possible values are any valid font. The
@@ -141,7 +141,7 @@ class ViewportAnnotationOptions:
             is OFF.
         statePosition
             A pair of Ints specifying the position of the state block as a percentage of the
-            viewport size. Possible values are (0, 0) ≤≤ **statePosition** ≤≤ (100, 100). The default
+            viewport size. Possible values are (0, 0) ≤ **statePosition** ≤ (100, 100). The default
             value is (13, 12).
         stateFont
             A String specifying the font of the state label. Possible values are any valid font. The
@@ -160,7 +160,7 @@ class ViewportAnnotationOptions:
             A Boolean specifying whether the 3D Compass is shown. The default value is ON.
         compassScale
             A Float specifying the relative size of the 3D Compass in the viewport. Possible values
-            are 0.5 ≤≤ **compassScale** ≤≤ 2.0. The default value is 0.8.
+            are 0.5 ≤ **compassScale** ≤ 2.0. The default value is 0.8.
         compassPrivilegedPlane
             A SymbolicConstant specifying the plane that will be used for the base of the 3D
             Compass. Possible values are XYPLANE, XZPLANE, and YZPLANE. The default value is

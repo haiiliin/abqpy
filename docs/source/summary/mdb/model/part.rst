@@ -14,6 +14,14 @@ Create parts
 
 .. autoclass:: abaqus.Part.PartBase.PartBase
     :noindex:
+    :members: PartFromBooleanCut, PartFromBooleanMerge, PartFromExtrude2DMesh, PartFromGeometryFile, PartFromInstanceMesh, PartFromMesh, PartFromMeshMirror, PartFromNodesAndElements, PartFromOdb, PartFromSection3DMeshByPlane, PartFromSubstructure, Part2DGeomFrom2DMesh, PartFromSubstructure
 
     .. autoclasstoc::
-    :members: PartFromBooleanCut, PartFromBooleanMerge, PartFromExtrude2DMesh, PartFromGeometryFile, PartFromInstanceMesh, PartFromMesh, PartFromMeshMirror, PartFromNodesAndElements, PartFromOdb, PartFromSection3DMeshByPlane, PartFromSubstructure, Part2DGeomFrom2DMesh, PartFromSubstructure
+
+.. autoclass:: abaqus.Part.PartFeature.PartFeature
+    :members:
+    :noindex:
+
+    .. autoclasstoc::
+
+.. This is a comment ro supress the warning "(ERROR/3) Document may not end with a transition."

@@ -2,7 +2,7 @@
 Abaqus Scripting Interface data types
 =====================================
 
-This section describe the most common Abaqus Scripting Interface data type The standard :doc:`/user/python/introduction/python-basics/types` described in Python data types include integers, floats, strings, and sequences. The Abaqus Scripting Interface adds over 500 additional data types.
+This section describe the most common Abaqus Scripting Interface data type The standard :ref:`python-data-types` described in Python data types include integers, floats, strings, and sequences. The Abaqus Scripting Interface adds over 500 additional data types.
 
 SymbolicConstants
 -----------------
@@ -53,10 +53,12 @@ Because of this ambiguity, you should test a Boolean for a positive or negative 
     else:
         print 'Input file will be written with parts and assemblies.' 
 
+.. _repositories:
+
 Repositories
 ------------
 
-Repositories are containers that store a particular type of object; for example, the steps repository contains all the steps defined in the model. A repository maps to a set of information and is similar to a Python dictionary; for more information, see :doc:`/user/python/introduction/python-basics/dictionaries`. However, only a constructor can add an object to a repository. In addition, all the objects in a repository are of the same type. For example, the following repository contains all the models in the model database:
+Repositories are containers that store a particular type of object; for example, the steps repository contains all the steps defined in the model. A repository maps to a set of information and is similar to a Python dictionary; for more information, see :ref:`using-dictionaries`. However, only a constructor can add an object to a repository. In addition, all the objects in a repository are of the same type. For example, the following repository contains all the models in the model database:
 
 .. code-block:: python2
     

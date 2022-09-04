@@ -201,13 +201,13 @@ class ConnectorDamage(ConnectorBehaviorOption):
     evolutionTable: tuple = ()
 
     #: A sequence of Ints specifying the components of relative motion that will be damaged.
-    #: Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be specified.
+    #: Possible values are 1 ≤ **components** ≤ 6. Only available components can be specified.
     #: This argument is applicable only if **evolution** = ON and **useAffected** = ON. The default
     #: value is an empty sequence.
     affectedComponents: tuple = ()
 
     #: A sequence of Ints specifying the components of relative motion for which the behavior
-    #: is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+    #: is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
     #: specified. This argument can be specified only if **coupling** = UNCOUPLED. The default
     #: value is an empty sequence.
     components: tuple = ()
@@ -326,12 +326,12 @@ class ConnectorDamage(ConnectorBehaviorOption):
             argument is only applicable if **evolution** = ON.
         affectedComponents
             A sequence of Ints specifying the components of relative motion that will be damaged.
-            Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be specified.
+            Possible values are 1 ≤ **components** ≤ 6. Only available components can be specified.
             This argument is applicable only if **evolution** = ON and **useAffected** = ON. The default
             value is an empty sequence.
         components
             A sequence of Ints specifying the components of relative motion for which the behavior
-            is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+            is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
             specified. This argument can be specified only if **coupling** = UNCOUPLED. The default
             value is an empty sequence.
 
