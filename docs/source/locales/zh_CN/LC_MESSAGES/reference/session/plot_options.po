@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4070,7 +4070,7 @@ msgid "XMARKER"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.nodeSymbolType:14
+#: abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.nodeSymbolType:15
 #: of
 msgid "The default value is HOLLOW_CIRCLE."
 msgstr ""
@@ -5136,8 +5136,8 @@ msgstr ""
 msgid ""
 "A tuple of (String, Int, SymbolicConstant) tuples specifying the steps. "
 "This sequence is read-only. Each inner sequence contains the following "
-"elements:*stepLabel*: A String specifying the step label.*stepNumber*: An"
-" Int specifying the step number.*procedureDomain*: A SymbolicConstant "
+"elements:*stepLabel*: A String specifying the step label. *stepNumber*: "
+"An Int specifying the step number. *procedureDomain*: A SymbolicConstant "
 "specifying the analysis type of the step, which can have these values: "
 "“TIME,” “FREQUENCY,” or “MODAL.”"
 msgstr ""
@@ -5256,11 +5256,9 @@ msgstr ""
 msgid "The MdbDataStep object.It corresponds to same named step in the cae model."
 msgstr ""
 
-#: abaqus.PlotOptions.MdbDataStep.MdbDataStep:13
-#: abaqus.PlotOptions.OdbDataStep.OdbDataStep:13
-#: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep:13 of
+#: abaqus.PlotOptions.MdbDataStep.MdbDataStep:13 of
 msgid ""
-"Check `Step on help.3ds.com/2016 "
+"Check `MdbDataStep on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -6440,6 +6438,12 @@ msgstr ""
 msgid "The OdbDataStep object."
 msgstr ""
 
+#: abaqus.PlotOptions.OdbDataStep.OdbDataStep:13 of
+msgid ""
+"Check `OdbDataStep on help.3ds.com/2016 "
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`frames <abaqus.PlotOptions.OdbDataStep.OdbDataStep.frames>`\\"
 msgstr ""
@@ -7001,6 +7005,12 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep:2 of
 msgid "The OdbDiagnosticStep object stores step data."
+msgstr ""
+
+#: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep:13 of
+msgid ""
+"Check `OdbDiagnosticStep on help.3ds.com/2016 "
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:28:<autosummary>:1
@@ -9509,4 +9519,23 @@ msgid ""
 "A tuple of three Floats specifying the Y axis for free body component "
 "resolution. The default value is (0, 1, 0)."
 msgstr ""
+
+#~ msgid ""
+#~ "A tuple of (String, Int, "
+#~ "SymbolicConstant) tuples specifying the steps."
+#~ " This sequence is read-only. Each "
+#~ "inner sequence contains the following "
+#~ "elements:*stepLabel*: A String specifying the"
+#~ " step label.*stepNumber*: An Int specifying"
+#~ " the step number.*procedureDomain*: A "
+#~ "SymbolicConstant specifying the analysis type"
+#~ " of the step, which can have "
+#~ "these values: “TIME,” “FREQUENCY,” or "
+#~ "“MODAL.”"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Step on help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`_."
+#~ msgstr ""
 

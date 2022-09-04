@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -411,7 +411,7 @@ msgid ""
 "SymbolicConstant ANY_JOB."
 msgstr ""
 
-#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:17
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:43
 #: abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:41 of
 msgid "**messageType**"
 msgstr ""
@@ -419,31 +419,134 @@ msgstr ""
 #: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:15 of
 msgid ""
 "A SymbolicConstant specifying which message type will call this callback."
-" Possible values "
-"are:ABORTEDANY_JOBANY_MESSAGE_TYPECOMPLETEDEND_STEPERRORHEADINGHEALER_JOBHEALER_TYPEINTERRUPTEDITERATIONJOB_ABORTEDJOB_COMPLETEDJOB_INTERRUPTEDJOB_SUBMITTEDMONITOR_DATAODB_FILEODB_FRAMESIMULATION_ABORTEDSIMULATION_COMPLETEDSIMULATION_INTERRUPTEDSIMULATION_SUBMITTEDSTARTEDSTATUSSTEPWARNING"
+" Possible values are:"
 msgstr ""
 
-#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:24
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:18 of
+msgid "ABORTED"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:19 of
+msgid "ANY_JOB"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:20 of
+msgid "ANY_MESSAGE_TYPE"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:21 of
+msgid "COMPLETED"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:22 of
+msgid "END_STEP"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:23 of
+msgid "ERROR"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:24 of
+msgid "HEADING"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:25 of
+msgid "HEALER_JOB"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:26 of
+msgid "HEALER_TYPE"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:27 of
+msgid "INTERRUPTED"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:28 of
+msgid "ITERATION"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:29 of
+msgid "JOB_ABORTED"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:30 of
+msgid "JOB_COMPLETED"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:31 of
+msgid "JOB_INTERRUPTED"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:32 of
+msgid "JOB_SUBMITTED"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:33 of
+msgid "MONITOR_DATA"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:34 of
+msgid "ODB_FILE"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:35 of
+msgid "ODB_FRAME"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:36 of
+msgid "SIMULATION_ABORTED"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:37 of
+msgid "SIMULATION_COMPLETED"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:38 of
+msgid "SIMULATION_INTERRUPTED"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:39 of
+msgid "SIMULATION_SUBMITTED"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:40 of
+msgid "STARTED"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:41 of
+msgid "STATUS"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:42 of
+msgid "STEP"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:43 of
+msgid "WARNING"
+msgstr ""
+
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:50
 #: abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:45 of
 msgid "**callback**"
 msgstr ""
 
-#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:20 of
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:46 of
 msgid ""
 "A Python function to be called. The interface definition of the callback "
-"function is :`def onMessage(jobName, messageType, data, "
-"userData)`*jobName* is a String.*messageType* is a SymbolicConstant with "
-"possible values as listed previously for the addMessageCallback "
-"method.*data* is a DataObject object.*userData* is the object passed as "
-"the **userData** argument to the addMessageCallback method."
+"function is `def onMessage(jobName, messageType, data, userData)` "
+"**jobName** is a String. **messageType** is a SymbolicConstant with "
+"possible values as listed previously for the addMessageCallback method. "
+"**data** is a DataObject object. **userData** is the object passed as the"
+" **userData** argument to the addMessageCallback method."
 msgstr ""
 
-#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:40
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:66
 #: abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:62 of
 msgid "**userData**"
 msgstr ""
 
-#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:27 of
+#: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:53 of
 msgid "Any Python object or None. This object is passed to the callback function."
 msgstr ""
 
@@ -494,4 +597,25 @@ msgid ""
 "Any Python object or None; it must be the same as the **userData** "
 "argument specified in the original call to addMessageCallback."
 msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying which message"
+#~ " type will call this callback. "
+#~ "Possible values "
+#~ "are:ABORTEDANY_JOBANY_MESSAGE_TYPECOMPLETEDEND_STEPERRORHEADINGHEALER_JOBHEALER_TYPEINTERRUPTEDITERATIONJOB_ABORTEDJOB_COMPLETEDJOB_INTERRUPTEDJOB_SUBMITTEDMONITOR_DATAODB_FILEODB_FRAMESIMULATION_ABORTEDSIMULATION_COMPLETEDSIMULATION_INTERRUPTEDSIMULATION_SUBMITTEDSTARTEDSTATUSSTEPWARNING"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Python function to be called. "
+#~ "The interface definition of the callback"
+#~ " function is :`def onMessage(jobName, "
+#~ "messageType, data, userData)`*jobName* is a"
+#~ " String.*messageType* is a SymbolicConstant "
+#~ "with possible values as listed "
+#~ "previously for the addMessageCallback "
+#~ "method.*data* is a DataObject "
+#~ "object.*userData* is the object passed "
+#~ "as the **userData** argument to the "
+#~ "addMessageCallback method."
+#~ msgstr ""
 

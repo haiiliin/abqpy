@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,7 +59,7 @@ msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:12 of
 msgid ""
-"Check `Model on help.3ds.com/2016 "
+"Check `PredefinedFieldModel on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -582,7 +582,7 @@ msgstr ""
 msgid ""
 "A Region object specifying the region to which the predefined field is "
 "applied. Region is ignored if the predefined field has "
-"*distributionType*=FROM_FILE."
+"**distributionType** = FROM_FILE."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:24
@@ -878,37 +878,30 @@ msgid ""
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:95
-#: of
+#: abaqus.PredefinedField.Temperature.Temperature.setValues:78
+#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:65 of
 msgid ""
 "If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then "
 "**magnitudes** is a sequence of Doubles specifying the mean value and the"
-" gradient in the thickness"
+" gradient in the thickness direction."
 msgstr ""
 
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:97
-#: of
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:98
+#: abaqus.PredefinedField.Temperature.Temperature.setValues:81
+#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:68 of
 msgid ""
-"direction. - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS "
-"then **magnitudes** is a"
+"If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then "
+"**magnitudes** is a sequence of Doubles specifying the mean value, the "
+"gradient in the N1 direction, and the gradient in the N2 direction."
 msgstr ""
 
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:99
-#: of
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:101
+#: abaqus.PredefinedField.Temperature.Temperature.setValues:84
+#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:71 of
 msgid ""
-"sequence of Doubles specifying the mean value, the gradient in the N1 "
-"direction, and the"
-msgstr ""
-
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:100
-#: of
-msgid ""
-"gradient in the N2 direction. - If **crossSectionDistribution** = "
-"POINTS_THROUGH_SECTION then **magnitudes** is a sequence"
-msgstr ""
-
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:102
-#: of
-msgid "of Doubles specifying the temperature at each point."
+"If **crossSectionDistribution** = POINTS_THROUGH_SECTION then "
+"**magnitudes** is a sequence of Doubles specifying the temperature at "
+"each point."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:107
@@ -1387,8 +1380,8 @@ msgid "INSTANCE_NOT_APPLICABLE"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState.status:18
-#: abaqus.PredefinedField.TemperatureState.TemperatureState.status:18 of
+#: abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState.status:19
+#: abaqus.PredefinedField.TemperatureState.TemperatureState.status:19 of
 msgid ""
 "This member exists in all PredefinedFieldState objects, but different "
 "predefined fields use different subsets of the entire list of possible "
@@ -2142,30 +2135,6 @@ msgid ""
 "#simaker-temperaturesetvaluespyc>`_."
 msgstr ""
 
-#: abaqus.PredefinedField.Temperature.Temperature.setValues:78
-#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:65 of
-msgid ""
-"If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then "
-"**magnitudes** is a sequence of Doubles specifying the mean value and the"
-" gradient in the thickness direction."
-msgstr ""
-
-#: abaqus.PredefinedField.Temperature.Temperature.setValues:81
-#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:68 of
-msgid ""
-"If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then "
-"**magnitudes** is a sequence of Doubles specifying the mean value, the "
-"gradient in the N1 direction, and the gradient in the N2 direction."
-msgstr ""
-
-#: abaqus.PredefinedField.Temperature.Temperature.setValues:84
-#: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:71 of
-msgid ""
-"If **crossSectionDistribution** = POINTS_THROUGH_SECTION then "
-"**magnitudes** is a sequence of Doubles specifying the temperature at "
-"each point."
-msgstr ""
-
 #: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:6 of
 msgid ""
 "Check `Temperature.setValuesInStep() on help.3ds.com/2016 "
@@ -2694,4 +2663,45 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitypyc.htm?contextscope=all"
 "#simaker-velocitysetvaluespyc>`_."
 msgstr ""
+
+#~ msgid ""
+#~ "Check `Model on help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Region object specifying the region"
+#~ " to which the predefined field is "
+#~ "applied. Region is ignored if the "
+#~ "predefined field has *distributionType*=FROM_FILE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If **crossSectionDistribution** = "
+#~ "GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is"
+#~ " a sequence of Doubles specifying the"
+#~ " mean value and the gradient in "
+#~ "the thickness"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "direction. - If **crossSectionDistribution** ="
+#~ " GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is"
+#~ " a"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "sequence of Doubles specifying the mean"
+#~ " value, the gradient in the N1 "
+#~ "direction, and the"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "gradient in the N2 direction. - If"
+#~ " **crossSectionDistribution** = POINTS_THROUGH_SECTION"
+#~ " then **magnitudes** is a sequence"
+#~ msgstr ""
+
+#~ msgid "of Doubles specifying the temperature at each point."
+#~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1265,6 +1265,8 @@ msgid "**crackLocation**"
 msgstr ""
 
 #: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:31
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:14
+#: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackLocation:2
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the initial crack location. This parameter is required when **allowCrackGrowth** = OFF."
 msgstr ""
 
@@ -1274,6 +1276,8 @@ msgid "**singularityCalcRadius**"
 msgstr ""
 
 #: ../../../../src/abaqus/EngineeringFeature/EngineeringFeature.py:docstring of abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:35
+#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:18
+#: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.singularityCalcRadius:2
 msgid "None or a Float specifying the radius from the crack tips within which the elements are used for crack singularity calculations. This argument applies only when **allowCrackGrowth** = OFF. The default value is None."
 msgstr ""
 
@@ -2796,20 +2800,16 @@ msgstr ""
 msgid ":py:obj:`crackLocation <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackLocation>`\\"
 msgstr ""
 
-#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:14
 #: ../../None:13:<autosummary>:1
-#: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackLocation:2
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the initial crack location. This parameter is required when *allowCrackGrowth*=OFF."
+msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the initial crack location."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
 msgid ":py:obj:`singularityCalcRadius <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.singularityCalcRadius>`\\"
 msgstr ""
 
-#: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:18
 #: ../../None:13:<autosummary>:1
-#: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.singularityCalcRadius:2
-msgid "None or a Float specifying the radius from the crack tips within which the elements are used for crack singularity calculations. This argument applies only when *allowCrackGrowth*=OFF. The default value is None."
+msgid "None or a Float specifying the radius from the crack tips within which the elements are used for crack singularity calculations."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -2841,7 +2841,7 @@ msgid ":py:obj:`hasCrackFront <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.has
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid "A sequence of Ints specifying the values indicating the inclusion/exclusion of the *crackFrontDist* values."
+msgid "A sequence of Ints specifying the values indicating the inclusion/exclusion of the **crackFrontDist** values."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -2901,7 +2901,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:35
 #: ../../docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.hasCrackFront:2
-msgid "A sequence of Ints specifying the values indicating the inclusion/exclusion of the *crackFrontDist* values. A zero value indicates that *crackFrontDist* is not specified for the ith pair *elemId* and *nodeId*. This argument is used only by the input file reader."
+msgid "A sequence of Ints specifying the values indicating the inclusion/exclusion of the **crackFrontDist** values. A zero value indicates that **crackFrontDist** is not specified for the ith pair **elemId** and *nodeId*. This argument is used only by the input file reader."
 msgstr ""
 
 #: ../../../../src/abaqus/EngineeringFeature/XFEMCrack.py:docstring of abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:5

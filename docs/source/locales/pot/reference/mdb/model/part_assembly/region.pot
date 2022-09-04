@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,8 +109,7 @@ msgid "This object can be accessed by:"
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart:13
-#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase:13
-msgid "Check `Part on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all>`_."
+msgid "Check `RegionPart on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partregpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:2
@@ -611,8 +610,7 @@ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container f
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly:15
-#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:13
-msgid "Check `Assembly on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
+msgid "Check `RegionAssembly on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblyregpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:2
@@ -637,6 +635,10 @@ msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/region.rst:50
 msgid "Region features for Part"
+msgstr ""
+
+#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase:13
+msgid "Check `RegionPartBase on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:0
@@ -946,7 +948,7 @@ msgid ":py:obj:`clashSets <abaqus.Region.RegionPartBase.RegionPartBase.clashSets
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
-msgid "This command prints a message describing the relationship between the contents of two sets. Possible outcomes are:     - Both sets are the same. - Set 2 is a subset of set 1. - Set 2 is a superset of set 1. - Set 2 intersects set 1. - Set 2 touches set 1 (their boundaries intersect). - Set 2 and set 1 are disjoint. This command accepts only positional arguments and has no keywords."
+msgid "This command prints a message describing the relationship between the contents of two sets."
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
@@ -2473,62 +2475,62 @@ msgstr ""
 msgid "This command prints a message describing the relationship between the contents of two sets. Possible outcomes are:"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:4
-#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:4
-msgid "Both sets are the same."
-msgstr ""
-
 #: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:5
 #: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:5
-msgid "Set 2 is a subset of set 1."
+msgid "Both sets are the same."
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:6
 #: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:6
-msgid "Set 2 is a superset of set 1."
+msgid "Set 2 is a subset of set 1."
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:7
 #: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:7
-msgid "Set 2 intersects set 1."
+msgid "Set 2 is a superset of set 1."
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:8
 #: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:8
-msgid "Set 2 touches set 1 (their boundaries intersect)."
+msgid "Set 2 intersects set 1."
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:9
 #: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:9
-msgid "Set 2 and set 1 are disjoint."
+msgid "Set 2 touches set 1 (their boundaries intersect)."
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:10
 #: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:10
+msgid "Set 2 and set 1 are disjoint."
+msgstr ""
+
+#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:12
+#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:12
 msgid "This command accepts only positional arguments and has no keywords."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:13
+#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:15
 msgid "Check `Part.clashSets() on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partclashsetspyc>`_."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:18
-#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:18
+#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:20
+#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:20
 msgid "**arg1**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:18
-#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:18
+#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:20
+#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:20
 msgid "A Set or Surface object specifying set 1."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:34
-#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:34
+#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:36
+#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:36
 msgid "**arg2**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:21
-#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:21
+#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:23
+#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase.clashSets:23
 msgid "A Set or Surface object specifying set 2."
 msgstr ""
 
@@ -2628,6 +2630,10 @@ msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:2
 msgid "The following commands operate on Assembly objects. For more information about the Assembly object, see Assembly object."
+msgstr ""
+
+#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:13
+msgid "Check `RegionAssemblyBase on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -2795,7 +2801,7 @@ msgid ":py:obj:`allInstances <abaqus.Region.RegionAssemblyBase.RegionAssemblyBas
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Model.Model.ModelInstance` object specifying the ModelInstances."
+msgid "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object specifying the ModelInstances."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -3503,7 +3509,7 @@ msgstr ""
 msgid ":py:obj:`suppress <abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.suppress>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:13
+#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:15
 msgid "Check `Assembly.clashSets() on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all#simaker-assemblyclashsetspyc>`_."
 msgstr ""
 

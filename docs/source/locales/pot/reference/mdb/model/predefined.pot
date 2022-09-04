@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgid "This object can be accessed by:"
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:12
-msgid "Check `Model on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+msgid "Check `PredefinedFieldModel on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:2
@@ -432,7 +432,7 @@ msgid "Check `Stress on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSS
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:20
-msgid "A Region object specifying the region to which the predefined field is applied. Region is ignored if the predefined field has *distributionType*=FROM_FILE."
+msgid "A Region object specifying the region to which the predefined field is applied. Region is ignored if the predefined field has **distributionType** = FROM_FILE."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:24
@@ -656,23 +656,21 @@ msgid "If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS then **magni
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:95
-msgid "If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a sequence of Doubles specifying the mean value and the gradient in the thickness"
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:78
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:65
+msgid "If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a sequence of Doubles specifying the mean value and the gradient in the thickness direction."
 msgstr ""
 
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:97
-msgid "direction. - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a"
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:98
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:81
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:68
+msgid "If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the gradient in the N2 direction."
 msgstr ""
 
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:99
-msgid "sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the"
-msgstr ""
-
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:100
-msgid "gradient in the N2 direction. - If **crossSectionDistribution** = POINTS_THROUGH_SECTION then **magnitudes** is a sequence"
-msgstr ""
-
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:102
-msgid "of Doubles specifying the temperature at each point."
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:101
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:84
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:71
+msgid "If **crossSectionDistribution** = POINTS_THROUGH_SECTION then **magnitudes** is a sequence of Doubles specifying the temperature at each point."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:107
@@ -1040,8 +1038,8 @@ msgstr ""
 msgid "INSTANCE_NOT_APPLICABLE"
 msgstr ""
 
-#: ../../docstring of abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState.status:18
-#: ../../docstring of abaqus.PredefinedField.TemperatureState.TemperatureState.status:18
+#: ../../docstring of abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState.status:19
+#: ../../docstring of abaqus.PredefinedField.TemperatureState.TemperatureState.status:19
 msgid "This member exists in all PredefinedFieldState objects, but different predefined fields use different subsets of the entire list of possible values depending on propagation rules."
 msgstr ""
 
@@ -1563,21 +1561,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:6
 msgid "Check `Temperature.setValues() on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturepyc.htm?contextscope=all#simaker-temperaturesetvaluespyc>`_."
-msgstr ""
-
-#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:78
-#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:65
-msgid "If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a sequence of Doubles specifying the mean value and the gradient in the thickness direction."
-msgstr ""
-
-#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:81
-#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:68
-msgid "If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the gradient in the N2 direction."
-msgstr ""
-
-#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:84
-#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:71
-msgid "If **crossSectionDistribution** = POINTS_THROUGH_SECTION then **magnitudes** is a sequence of Doubles specifying the temperature at each point."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:6
