@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,7 +72,7 @@ msgid "This object can be accessed by:"
 msgstr ""
 
 #: ../../../../src/abaqus/Section/SectionModel.py:docstring of abaqus.Section.SectionModel.SectionModel:12
-msgid "Check `Model on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+msgid "Check `SectionModel on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../../../src/abaqus/Connector/ConnectorSection.py:docstring of abaqus.Connector.ConnectorSection.ConnectorSection:0
@@ -1290,7 +1290,7 @@ msgstr ""
 msgid "An :py:class:`~abaqus.Section.AcousticInterfaceSection.AcousticInterfaceSection` object."
 msgstr ""
 
-#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:38
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:36
 #: ../../../../src/abaqus/Section/SectionModel.py:docstring of abaqus.Section.SectionModel.SectionModel.BeamSection:13
 #: ../../../../src/abaqus/Section/SectionOdb.py:docstring of abaqus.Section.SectionOdb.SectionOdb.BeamSection:13
 msgid "Check `BeamSection on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-beamsectionpyc.htm?contextscope=all>`_."
@@ -1732,9 +1732,8 @@ msgstr ""
 #: ../../../../src/abaqus/Section/CohesiveSection.py:docstring of abaqus.Section.CohesiveSection.CohesiveSection.setValues:10
 #: ../../../../src/abaqus/Section/SectionModel.py:docstring of abaqus.Section.SectionModel.SectionModel.CohesiveSection:29
 #: ../../../../src/abaqus/Section/SectionOdb.py:docstring of abaqus.Section.SectionOdb.SectionOdb.CohesiveSection:29
-#: ../../None:5:<autosummary>:1
 #: ../../docstring of abaqus.Section.CohesiveSection.CohesiveSection.initialThicknessType:2
-msgid "A SymbolicConstant specifying the method used to compute the initial thickness. Possible values are:SOLVER_DEFAULT, specifying that Abaqus will use the analysis product defaultGEOMETRY, specifying that Abaqus will compute the thickness from the nodal coordinates of the elements.SPECIFY, specifying that Abaqus will use the value given for **initialThickness**The default value is SOLVER_DEFAULT."
+msgid "A SymbolicConstant specifying the method used to compute the initial thickness. Possible values are:SOLVER_DEFAULT, specifying that Abaqus will use the analysis product defaultGEOMETRY, specifying that Abaqus will compute the thickness from the nodal coordinates of the elements.SPECIFY, specifying that Abaqus will use the value given for **initialThickness** The default value is SOLVER_DEFAULT."
 msgstr ""
 
 #: ../../../../src/abaqus/Section/CohesiveSection.py:docstring of abaqus.Section.CohesiveSection.CohesiveSection.setValues:18
@@ -4427,7 +4426,7 @@ msgid ":py:obj:`sectionsFromOdb <abaqus.Section.SectionBase.SectionBase.sections
 msgstr ""
 
 #: ../../reference/mdb/model/section.rst:58
-#: ../../reference/mdb/model/section.rst:114
+#: ../../reference/mdb/model/section.rst:115
 msgid "ConnectorSection"
 msgstr ""
 
@@ -4495,7 +4494,7 @@ msgstr ""
 msgid ":py:obj:`sectionsFromOdb <abaqus.Connector.ConnectorSection.ConnectorSection.sectionsFromOdb>`\\ \\(fileName\\)"
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:66
+#: ../../reference/mdb/model/section.rst:67
 msgid "AcousticInfiniteSection"
 msgstr ""
 
@@ -4505,7 +4504,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Section/AcousticInfiniteSection.py:docstring of abaqus.Section.AcousticInfiniteSection.AcousticInfiniteSection:15
 #: ../../../../src/abaqus/Section/AcousticInterfaceSection.py:docstring of abaqus.Section.AcousticInterfaceSection.AcousticInterfaceSection:15
-#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:27
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:25
 #: ../../../../src/abaqus/Section/CohesiveSection.py:docstring of abaqus.Section.CohesiveSection.CohesiveSection:15
 #: ../../../../src/abaqus/Section/CompositeShellSection.py:docstring of abaqus.Section.CompositeShellSection.CompositeShellSection:16
 #: ../../../../src/abaqus/Section/CompositeSolidSection.py:docstring of abaqus.Section.CompositeSolidSection.CompositeSolidSection:15
@@ -4644,7 +4643,7 @@ msgstr ""
 msgid "Check `AcousticInfiniteSection.setValues() on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-acousticinfinitesectionpyc.htm?contextscope=all#simaker-acousticinfinitesectionsetvaluespyc>`_."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:74
+#: ../../reference/mdb/model/section.rst:75
 msgid "AcousticInterfaceSection"
 msgstr ""
 
@@ -4749,7 +4748,7 @@ msgstr ""
 msgid "Check `AcousticInterfaceSection.setValues() on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-acousticinterfacesectionpyc.htm?contextscope=all#simaker-acousticinterfacesectionsetvaluespyc>`_."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:82
+#: ../../reference/mdb/model/section.rst:83
 msgid "BeamSection"
 msgstr ""
 
@@ -4757,31 +4756,63 @@ msgstr ""
 msgid "The BeamSection object defines the properties of a beam section. The BeamSection object is derived from the Section object."
 msgstr ""
 
-#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:29
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:15
+msgid "The table data for this object are:"
+msgstr ""
+
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:17
+msgid "E, the Young's modulus of the section."
+msgstr ""
+
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:18
+msgid "G, the torsional shear modulus of the section."
+msgstr ""
+
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:19
+msgid "Thermal expansion coefficient, if using thermal expansion."
+msgstr ""
+
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:20
+msgid "Temperature, if the data depend on temperature."
+msgstr ""
+
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:21
+msgid "Value of the first field variable, if the data depend on field variables."
+msgstr ""
+
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:22
+msgid "Value of the second field variable."
+msgstr ""
+
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:23
+msgid "Etc."
+msgstr ""
+
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:27
 msgid "BEAM GENERAL SECTION"
 msgstr ""
 
-#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:30
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:28
 msgid "BEAM SECTION"
 msgstr ""
 
-#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:31
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:29
 msgid "BEAM FLUID INERTIA"
 msgstr ""
 
-#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:32
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:30
 msgid "CENTROID"
 msgstr ""
 
-#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:33
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:31
 msgid "DAMPING"
 msgstr ""
 
-#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:34
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:32
 msgid "SHEAR CENTER"
 msgstr ""
 
-#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:35
+#: ../../../../src/abaqus/Section/BeamSection.py:docstring of abaqus.Section.BeamSection.BeamSection:33
 msgid "SECTION POINTS"
 msgstr ""
 
@@ -5079,7 +5110,7 @@ msgstr ""
 msgid "Check `BeamSection.setValues() on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-beamsectionpyc.htm?contextscope=all#simaker-beamsectionsetvaluespyc>`_."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:90
+#: ../../reference/mdb/model/section.rst:91
 msgid "CohesiveSection"
 msgstr ""
 
@@ -5093,6 +5124,10 @@ msgstr ""
 
 #: ../../None:5:<autosummary>:1
 msgid ":py:obj:`initialThicknessType <abaqus.Section.CohesiveSection.CohesiveSection.initialThicknessType>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "A SymbolicConstant specifying the method used to compute the initial thickness."
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -5200,7 +5235,7 @@ msgstr ""
 msgid "Check `CohesiveSection.setValues() on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cohesivesectionpyc.htm?contextscope=all#simaker-cohesivesectionsetvaluespyc>`_."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:98
+#: ../../reference/mdb/model/section.rst:99
 msgid "CompositeShellSection"
 msgstr ""
 
@@ -5513,7 +5548,7 @@ msgstr ""
 msgid "Check `CompositeShellSection.setValues() on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-compositeshellsectionpyc.htm?contextscope=all#simaker-compositeshellsectionsetvaluespyc>`_."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:106
+#: ../../reference/mdb/model/section.rst:107
 msgid "CompositeSolidSection"
 msgstr ""
 
@@ -5860,7 +5895,7 @@ msgstr ""
 msgid "Check `ConnectorSection.setValues() on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorsectionpyc.htm?contextscope=all#simaker-connectorsectionsetvaluespyc>`_."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:122
+#: ../../reference/mdb/model/section.rst:123
 msgid "EulerianSection"
 msgstr ""
 
@@ -5957,7 +5992,7 @@ msgstr ""
 msgid ":py:obj:`sectionsFromOdb <abaqus.Section.EulerianSection.EulerianSection.sectionsFromOdb>`\\ \\(fileName\\)"
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:130
+#: ../../reference/mdb/model/section.rst:131
 msgid "GasketSection"
 msgstr ""
 
@@ -6102,7 +6137,7 @@ msgstr ""
 msgid ":obj:`ValueError`"
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:138
+#: ../../reference/mdb/model/section.rst:139
 msgid "GeneralStiffnessSection"
 msgstr ""
 
@@ -6262,7 +6297,7 @@ msgstr ""
 msgid "Check `GeneralStiffnessSection.setValues() on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-generalstiffnesssectionpyc.htm?contextscope=all#simaker-generalstiffnesssectionsetvaluespyc>`_."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:146
+#: ../../reference/mdb/model/section.rst:147
 msgid "GeometryShellSection"
 msgstr ""
 
@@ -6449,7 +6484,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:154
+#: ../../reference/mdb/model/section.rst:155
 msgid "HomogeneousShellSection"
 msgstr ""
 
@@ -6638,7 +6673,7 @@ msgstr ""
 msgid "Check `HomogeneousShellSection.setValues() on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-homogeneousshellsectionpyc.htm?contextscope=all#simaker-homogeneousshellsectionsetvaluespyc>`_."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:162
+#: ../../reference/mdb/model/section.rst:163
 msgid "HomogeneousSolidSection"
 msgstr ""
 
@@ -6740,7 +6775,7 @@ msgstr ""
 msgid "Check `HomogeneousSolidSection.setValues() on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-homogeneoussolidsectionpyc.htm?contextscope=all#simaker-homogeneoussolidsectionsetvaluespyc>`_."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:170
+#: ../../reference/mdb/model/section.rst:171
 msgid "LayerProperties"
 msgstr ""
 
@@ -6841,11 +6876,11 @@ msgstr ""
 msgid "A Float specifying the spacing angle of the rebar. This argument is only valid if the **rebarSpacing** argument on the parent RebarLayers object is set to ANGULAR. The default value is 0.0."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:178
+#: ../../reference/mdb/model/section.rst:179
 msgid "LayerPropertiesArray"
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:186
+#: ../../reference/mdb/model/section.rst:187
 msgid "MembraneSection"
 msgstr ""
 
@@ -6978,7 +7013,7 @@ msgstr ""
 msgid "Check `MembraneSection.setValues() on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-membranesectionpyc.htm?contextscope=all#simaker-membranesectionsetvaluespyc>`_."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:194
+#: ../../reference/mdb/model/section.rst:195
 msgid "MPCSection"
 msgstr ""
 
@@ -7082,7 +7117,7 @@ msgstr ""
 msgid ":py:obj:`sectionsFromOdb <abaqus.Section.MPCSection.MPCSection.sectionsFromOdb>`\\ \\(fileName\\)"
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:202
+#: ../../reference/mdb/model/section.rst:203
 msgid "PEGSection"
 msgstr ""
 
@@ -7199,7 +7234,7 @@ msgstr ""
 msgid "Check `PEGSection.setValues() on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pegsectionpyc.htm?contextscope=all#simaker-pegsectionsetvaluespyc>`_."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:210
+#: ../../reference/mdb/model/section.rst:211
 msgid "RebarLayers"
 msgstr ""
 
@@ -7220,7 +7255,7 @@ msgstr ""
 msgid "This method modifies the RebarLayers object."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:218
+#: ../../reference/mdb/model/section.rst:219
 msgid "SectionLayer"
 msgstr ""
 
@@ -7344,11 +7379,11 @@ msgstr ""
 msgid "A Float specifying the thickness of the section layer."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:226
+#: ../../reference/mdb/model/section.rst:227
 msgid "SectionLayerArray"
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:239
+#: ../../reference/mdb/model/section.rst:240
 msgid "ShellSection"
 msgstr ""
 
@@ -7435,7 +7470,7 @@ msgstr ""
 msgid ":py:obj:`sectionsFromOdb <abaqus.Section.ShellSection.ShellSection.sectionsFromOdb>`\\ \\(fileName\\)"
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:247
+#: ../../reference/mdb/model/section.rst:248
 msgid "SolidSection"
 msgstr ""
 
@@ -7516,7 +7551,7 @@ msgstr ""
 msgid ":py:obj:`sectionsFromOdb <abaqus.Section.SolidSection.SolidSection.sectionsFromOdb>`\\ \\(fileName\\)"
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:255
+#: ../../reference/mdb/model/section.rst:256
 msgid "SurfaceSection"
 msgstr ""
 
@@ -7616,7 +7651,7 @@ msgstr ""
 msgid ":py:obj:`sectionsFromOdb <abaqus.Section.SurfaceSection.SurfaceSection.sectionsFromOdb>`\\ \\(fileName\\)"
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:263
+#: ../../reference/mdb/model/section.rst:264
 msgid "TransverseShearBeam"
 msgstr ""
 
@@ -7666,7 +7701,7 @@ msgstr ""
 msgid "This method modifies the TransverseShearBeam object."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:271
+#: ../../reference/mdb/model/section.rst:272
 msgid "TransverseShearShell"
 msgstr ""
 
@@ -7687,7 +7722,7 @@ msgstr ""
 msgid "This method modifies the TransverseShearShell object."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:279
+#: ../../reference/mdb/model/section.rst:280
 msgid "TrussSection"
 msgstr ""
 

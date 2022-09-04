@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,7 +120,7 @@ msgid "This object can be accessed by:"
 msgstr ""
 
 #: ../../../../src/abaqus/Load/LoadModel.py:docstring of abaqus.Load.LoadModel.LoadModel:12
-msgid "Check `Model on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+msgid "Check `LoadModel on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../../../src/abaqus/Load/BodyCharge.py:docstring of abaqus.Load.BodyCharge.BodyCharge:0
@@ -4332,6 +4332,7 @@ msgstr ""
 #: ../../../../src/abaqus/Load/ConcentratedChargeState.py:docstring of abaqus.Load.ConcentratedChargeState.ConcentratedChargeState:16
 #: ../../../../src/abaqus/Load/ConcentratedConcentrationFluxState.py:docstring of abaqus.Load.ConcentratedConcentrationFluxState.ConcentratedConcentrationFluxState:17
 #: ../../../../src/abaqus/Load/ConcentratedForceState.py:docstring of abaqus.Load.ConcentratedForceState.ConcentratedForceState:17
+#: ../../../../src/abaqus/Load/ConcentratedHeatFluxState.py:docstring of abaqus.Load.ConcentratedHeatFluxState.ConcentratedHeatFluxState:17
 #: ../../../../src/abaqus/Load/ConcentratedPoreFluidState.py:docstring of abaqus.Load.ConcentratedPoreFluidState.ConcentratedPoreFluidState:17
 #: ../../../../src/abaqus/Load/ConnectorForceState.py:docstring of abaqus.Load.ConnectorForceState.ConnectorForceState:16
 #: ../../../../src/abaqus/Load/ConnectorMomentState.py:docstring of abaqus.Load.ConnectorMomentState.ConnectorMomentState:16
@@ -4526,6 +4527,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Load/BodyConcentrationFluxState.py:docstring of abaqus.Load.BodyConcentrationFluxState.BodyConcentrationFluxState:19
 #: ../../../../src/abaqus/Load/ConcentratedConcentrationFluxState.py:docstring of abaqus.Load.ConcentratedConcentrationFluxState.ConcentratedConcentrationFluxState:19
+#: ../../../../src/abaqus/Load/ConcentratedHeatFluxState.py:docstring of abaqus.Load.ConcentratedHeatFluxState.ConcentratedHeatFluxState:19
 msgid "CFLUX"
 msgstr ""
 
@@ -7389,7 +7391,7 @@ msgid ":py:obj:`explicit <abaqus.Load.LoadStep.LoadStep.explicit>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
-msgid "A SymbolicConstant specifying whether the step has an explicit procedure type (*procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT)."
+msgid "A SymbolicConstant specifying whether the step has an explicit procedure type (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT)."
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -9844,7 +9846,7 @@ msgstr ""
 msgid "Create load cases"
 msgstr ""
 
-#: ../../reference/mdb/model/load.rst:621
+#: ../../reference/mdb/model/load.rst:622
 msgid "Object features of load cases"
 msgstr ""
 

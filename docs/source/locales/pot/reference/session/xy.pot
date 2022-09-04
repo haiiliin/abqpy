@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2131,13 +2131,13 @@ msgstr ""
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:85
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:98
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:62
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:105
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:107
 #: ../../../../src/abaqus/XY/XYSessionBase.py:docstring of abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:108
 msgid ":obj:`typing.List`\\[:obj:`XYData`]"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:50
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:93
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:95
 msgid "A list of XYData objects"
 msgstr ""
 
@@ -2197,7 +2197,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:76
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromHistory:57
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:92
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:74
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:76
 msgid "**numericForm**"
 msgstr ""
 
@@ -2207,7 +2207,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:74
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromHistory:55
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:90
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:72
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:74
 msgid "A SymbolicConstant specifying the numeric form in which to display results that contain complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, and COMPLEX_VAL_AT_ANGLE. The default value is REAL."
 msgstr ""
 
@@ -2217,7 +2217,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:80
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromHistory:61
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:96
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:78
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:80
 msgid "**complexAngle**"
 msgstr ""
 
@@ -2227,7 +2227,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:79
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromHistory:60
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:95
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:77
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:79
 msgid "A Float specifying the angle (in degrees) at which to display results that contain complex numbers when **numericForm** = COMPLEX_VAL_AT_ANGLE. The default value is 0."
 msgstr ""
 
@@ -2366,7 +2366,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:43
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:46
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:83
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:44
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:46
 msgid "**variable**"
 msgstr ""
 
@@ -2527,59 +2527,59 @@ msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:47
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:50
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:48
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:50
 msgid "**elementSets**"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:46
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:49
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:47
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:49
 msgid "A sequence of Strings specifying element sets or a String specifying a single element set."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:56
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:59
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:57
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:59
 msgid "**elementLabels**"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:50
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:53
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:51
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:53
 msgid "A sequence of expressions specifying element labels per part instance in the model. Each part instance element expression is a sequence of a String specifying the part instance name and a sequence of element expressions; for example, `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The element expressions can be any of the following:An Int specifying a single element label; for example, `1`.A String specifying a single element label; for example, `'7'`.A String specifying a sequence of element labels; for example, `'3:5'` and `'3:15:3'`."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:59
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:62
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:60
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:62
 msgid "**nodeSets**"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:59
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:62
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:60
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:62
 msgid "A sequence of Strings specifying node sets or a String specifying a single node set."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:68
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:71
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:69
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:71
 msgid "**nodeLabels**"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:62
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:65
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:63
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:65
 msgid "A sequence of expressions specifying node labels per part instance in the model. Each part instance node expression is a sequence of a String specifying the part instance name and a sequence of node expressions; for example, `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The node expressions can be any of the following:An Int specifying a single node label; for example, `1`.A String specifying a single node label; for example, `'7'`.A String specifying a sequence of node labels; for example, `'3:5'` and `'3:15:3'`."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:90
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:88
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:90
 msgid "**operator**"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:83
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:81
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:83
 msgid "A SymbolicConstant specifying the mathematical, trigonometric, logarithmic, exponential, or other operations. Possible values are ADD, SUBTRACT, MULTIPLY, DIVIDE, POWER, MINIMUM, MAXIMUM, AVERAGE, RANGE, SRSS, ABSOLUTE, UNARY_NEGATIVE, COSINE, HYPERBOLIC_COSINE, INVERSE_COSINE, SINE, HYPERBOLIC_SINE, INVERSE_SINE, TANGENT, HYPERBOLIC_TANGENT, INVERSE_TANGENT, EXPONENTIAL, NATURAL_LOG, LOG, SQUARE_ROOT, NORMALIZE, DEG2RAD, RAD2DEG, SMOOTH, SWAP, AVERAGE_ALL, MAXIMUM_ENVELOPE, MINIMUM_ENVELOPE, and RANGE_ALL. If no value is defined, no operation will be performed on the data, and the data will be saved as is."
 msgstr ""
 
@@ -3411,7 +3411,7 @@ msgid "TOP_RIGHT"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Area.py:docstring of abaqus.XY.Area.Area.setValues:36
-#: ../../docstring of abaqus.XY.Area.Area.alignment:14
+#: ../../docstring of abaqus.XY.Area.Area.alignment:15
 msgid "The default value is BOTTOM_LEFT."
 msgstr ""
 

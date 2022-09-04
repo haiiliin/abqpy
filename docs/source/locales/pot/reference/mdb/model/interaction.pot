@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,7 +121,7 @@ msgid "This object can be accessed by:"
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel:12
-msgid "Check `Model on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelitnpyc.htm?contextscope=all>`_."
+msgid "Check `InteractionModel on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelitnpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/AcousticImpedance.py:docstring of abaqus.Interaction.AcousticImpedance.AcousticImpedance:0
@@ -4315,11 +4315,11 @@ msgid "A string specifying the name of the secondary surface used in contact."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.getSurfaceSeparation:15
-msgid "A float specifying the separation distance between the main surface and the secondary"
+msgid "A float specifying the separation distance between the main surface and the secondary surface."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.getSurfaceSeparation:16
-msgid "surface. - A boolean specifying whether or not contact surfaces are overclosed.."
+#: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.getSurfaceSeparation:17
+msgid "A boolean specifying whether or not contact surfaces are overclosed."
 msgstr ""
 
 #: ../../reference/mdb/model/interaction.rst:18
@@ -4382,16 +4382,16 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/CohesiveBehavior.py:docstring of abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:19
 #: ../../../../src/abaqus/Interaction/CohesiveBehavior.py:docstring of abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:31
 #: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:21
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:30
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:39
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:47
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:58
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:69
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:78
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:90
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:99
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:111
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:122
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:31
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:41
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:49
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:60
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:71
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:80
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:92
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:101
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:113
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:124
 #: ../../../../src/abaqus/Interaction/ContactTangentialBehavior.py:docstring of abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior:21
 #: ../../../../src/abaqus/Interaction/FilmConditionProp.py:docstring of abaqus.Interaction.FilmConditionProp.FilmConditionProp.setValues:19
 #: ../../../../src/abaqus/Interaction/FluidCavityProperty.py:docstring of abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.setValues:48
@@ -4402,7 +4402,7 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/GapElectricalConductance.py:docstring of abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:19
 #: ../../../../src/abaqus/Interaction/GapElectricalConductance.py:docstring of abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:28
 #: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:19
-#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:28
+#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:29
 #: ../../docstring of abaqus.Interaction.FilmConditionProp.FilmConditionProp.property:5
 #: ../../docstring of abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.bulkModulusTable:7
 #: ../../docstring of abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.capacityTable:18
@@ -4413,16 +4413,16 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/CohesiveBehavior.py:docstring of abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:20
 #: ../../../../src/abaqus/Interaction/CohesiveBehavior.py:docstring of abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:32
 #: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:22
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:31
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:40
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:48
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:59
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:70
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:79
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:91
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:100
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:112
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:123
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:32
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:42
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:50
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:61
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:72
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:81
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:93
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:102
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:114
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:125
 #: ../../../../src/abaqus/Interaction/ContactTangentialBehavior.py:docstring of abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior:22
 #: ../../../../src/abaqus/Interaction/FilmConditionProp.py:docstring of abaqus.Interaction.FilmConditionProp.FilmConditionProp.setValues:20
 #: ../../../../src/abaqus/Interaction/FluidCavityProperty.py:docstring of abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.setValues:49
@@ -4435,7 +4435,7 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/GapElectricalConductance.py:docstring of abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:20
 #: ../../../../src/abaqus/Interaction/GapElectricalConductance.py:docstring of abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:29
 #: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:21
-#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:30
+#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:31
 #: ../../docstring of abaqus.Interaction.FilmConditionProp.FilmConditionProp.property:6
 #: ../../docstring of abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.bulkModulusTable:8
 #: ../../docstring of abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.capacityTable:19
@@ -4446,16 +4446,16 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/CohesiveBehavior.py:docstring of abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:21
 #: ../../../../src/abaqus/Interaction/CohesiveBehavior.py:docstring of abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:33
 #: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:23
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:32
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:41
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:49
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:60
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:71
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:80
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:92
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:101
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:113
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:124
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:33
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:43
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:51
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:62
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:73
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:82
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:94
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:103
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:115
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:126
 #: ../../../../src/abaqus/Interaction/ContactTangentialBehavior.py:docstring of abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior:23
 #: ../../../../src/abaqus/Interaction/FilmConditionProp.py:docstring of abaqus.Interaction.FilmConditionProp.FilmConditionProp.setValues:21
 #: ../../../../src/abaqus/Interaction/FluidCavityProperty.py:docstring of abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.setValues:50
@@ -4468,7 +4468,7 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/GapElectricalConductance.py:docstring of abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:21
 #: ../../../../src/abaqus/Interaction/GapElectricalConductance.py:docstring of abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:30
 #: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:22
-#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:31
+#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:32
 #: ../../docstring of abaqus.Interaction.FilmConditionProp.FilmConditionProp.property:7
 #: ../../docstring of abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.bulkModulusTable:9
 #: ../../docstring of abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.capacityTable:20
@@ -4479,16 +4479,16 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/CohesiveBehavior.py:docstring of abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:22
 #: ../../../../src/abaqus/Interaction/CohesiveBehavior.py:docstring of abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:34
 #: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:24
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:33
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:42
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:50
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:61
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:72
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:81
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:93
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:102
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:114
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:125
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:34
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:44
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:52
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:63
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:74
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:83
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:95
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:104
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:116
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:127
 #: ../../../../src/abaqus/Interaction/ContactTangentialBehavior.py:docstring of abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior:24
 #: ../../../../src/abaqus/Interaction/FilmConditionProp.py:docstring of abaqus.Interaction.FilmConditionProp.FilmConditionProp.setValues:22
 #: ../../../../src/abaqus/Interaction/FluidCavityProperty.py:docstring of abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.setValues:51
@@ -4501,7 +4501,7 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/GapElectricalConductance.py:docstring of abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:22
 #: ../../../../src/abaqus/Interaction/GapElectricalConductance.py:docstring of abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:31
 #: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:23
-#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:32
+#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:33
 #: ../../docstring of abaqus.Interaction.FilmConditionProp.FilmConditionProp.property:8
 #: ../../docstring of abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.bulkModulusTable:10
 #: ../../docstring of abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.capacityTable:21
@@ -4512,115 +4512,115 @@ msgstr ""
 msgid "Etc."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:25
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:26
 msgid "If **criterion** = MAX_SEPARATION or QUAD_SEPARATION, the table data specify the following:"
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:27
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:28
 msgid "Separation at damage initiation in a normal-only mode."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:28
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:29
 msgid "Separation at damage initiation in a shear-only mode that involves separation only along the first shear direction."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:29
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:30
 msgid "Separation at damage initiation in a shear-only mode that involves separation only along the second shear direction."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:34
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:36
 msgid "Table data for **evolTable**:"
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:36
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:38
 msgid "If **evolutionType** = DISPLACEMENT, **softening** = LINEAR, and **useMixedMode** = OFF, the table data specify the following:"
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:38
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:76
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:98
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:40
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:78
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:100
 msgid "Effective total or Plastic displacement at failure, measured from the time of damage initiation."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:44
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:46
 msgid "If **evolutionType** = ENERGY, **softening** = LINEAR or EXPONENTIAL, and **useMixedMode** = OFF, the table data specify the following:"
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:46
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:66
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:48
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:68
 msgid "Fracture energy."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:52
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:54
 msgid "If **evolutionType** = DISPLACEMENT, **softening** = LINEAR, **useMixedMode** = ON, **mixedModeType** = TABULAR, and **modeMixRatio** = ENERGY or TRACTION, the table data specify the following:"
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:55
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:86
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:57
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:88
 msgid "Total displacement at failure, measured from the time of damage initiation."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:56
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:67
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:88
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:109
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:58
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:69
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:90
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:111
 msgid "Appropriate mode mix ratio."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:57
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:68
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:89
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:110
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:59
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:70
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:91
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:112
 msgid "Appropriate mode mix ratio (if relevant, for three dimensional problems with anisotropic shear behavior)."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:63
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:65
 msgid "If **evolutionType** = ENERGY, **softening** = LINEAR or EXPONENTIAL, **useMixedMode** = ON, **mixedModeType** = TABULAR, and **modeMixRatio** = ENERGY or TRACTION, the table data specify the following:"
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:74
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:76
 msgid "If **evolutionType** = DISPLACEMENT, **softening** = EXPONENTIAL, and **useMixedMode** = OFF, the table data specify the following:"
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:77
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:87
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:79
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:89
 msgid "Exponential law parameter."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:83
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:85
 msgid "If **evolutionType** = DISPLACEMENT, **softening** = EXPONENTIAL, **useMixedMode** = ON, **mixedModeType** = TABULAR, and **modeMixRatio** = ENERGY or TRACTION, the table data specify the following:"
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:95
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:97
 msgid "If **evolutionType** = DISPLACEMENT, **softening** = TABULAR, and **useMixedMode** = OFF, the table data specify the following:"
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:97
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:107
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:99
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:109
 msgid "Damage variable."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:104
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:106
 msgid "If **evolutionType** = DISPLACEMENT, **softening** = TABULAR, **useMixedMode** = ON, **mixedModeType** = TABULAR, and **modeMixRatio** = ENERGY or TRACTION, the table data specify the following:"
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:108
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:110
 msgid "Effective total displacement, measured from the time of damage initiation."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:116
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:118
 msgid "If **evolutionType** = ENERGY, **softening** = LINEAR or EXPONENTIAL, **useMixedMode** = ON, **mixedModeType** = POWER_LAW or BK, and **modeMixRatio** = ENERGY, the table data specify the following:"
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:119
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:121
 msgid "Normal mode fracture energy."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:120
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:122
 msgid "Shear mode fracture energy for failure in the first shear direction."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:121
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:123
 msgid "Shear mode fracture energy for failure in the second shear direction."
 msgstr ""
 
@@ -4635,7 +4635,7 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/CohesiveBehavior.py:docstring of abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:36
 #: ../../../../src/abaqus/Interaction/ConcentratedFilmConditionState.py:docstring of abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState:17
 #: ../../../../src/abaqus/Interaction/ConcentratedRadiationToAmbientState.py:docstring of abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState:18
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:127
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:129
 #: ../../../../src/abaqus/Interaction/ContactDamping.py:docstring of abaqus.Interaction.ContactDamping.ContactDamping:28
 #: ../../../../src/abaqus/Interaction/ContactExp.py:docstring of abaqus.Interaction.ContactExp.ContactExp:14
 #: ../../../../src/abaqus/Interaction/ContactProperty.py:docstring of abaqus.Interaction.ContactProperty.ContactProperty:13
@@ -4684,25 +4684,25 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/SurfaceThicknessAssignment.py:docstring of abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment:14
 #: ../../../../src/abaqus/Interaction/SurfaceToSurfaceExpState.py:docstring of abaqus.Interaction.SurfaceToSurfaceExpState.SurfaceToSurfaceExpState:17
 #: ../../../../src/abaqus/Interaction/SurfaceToSurfaceStdState.py:docstring of abaqus.Interaction.SurfaceToSurfaceStdState.SurfaceToSurfaceStdState:17
-#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:34
+#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:35
 #: ../../../../src/abaqus/Interaction/XFEMCrackGrowth.py:docstring of abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth:13
 #: ../../../../src/abaqus/Interaction/XFEMCrackGrowthState.py:docstring of abaqus.Interaction.XFEMCrackGrowthState.XFEMCrackGrowthState:17
 msgid "The corresponding analysis keywords are:"
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:129
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:131
 msgid "DAMAGE INITIATION"
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:130
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:132
 msgid "DAMAGE EVOLUTION"
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:131
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:133
 msgid "DAMAGE STABILIZATION"
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:134
+#: ../../../../src/abaqus/Interaction/ContactDamage.py:docstring of abaqus.Interaction.ContactDamage.ContactDamage:136
 msgid "Check `ContactDamage on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contactdamagepyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -6069,7 +6069,7 @@ msgid ":obj:`ContactTangentialBehavior`"
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/ContactProperty.py:docstring of abaqus.Interaction.ContactProperty.ContactProperty.ThermalConductance:12
-#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:39
+#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:40
 msgid "Check `ThermalConductance on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-thermalconductancepyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -6192,9 +6192,9 @@ msgstr ""
 
 #: ../../../../src/abaqus/Interaction/ContactPropertyAssignment.py:docstring of abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment.appendInStep:39
 #: ../../../../src/abaqus/Interaction/InitializationAssignment.py:docstring of abaqus.Interaction.InitializationAssignment.InitializationAssignment.appendInStep:33
-#: ../../../../src/abaqus/Interaction/MainSecondaryAssignment.py:docstring of abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment.appendInStep:35
+#: ../../../../src/abaqus/Interaction/MainSecondaryAssignment.py:docstring of abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment.appendInStep:36
 #: ../../../../src/abaqus/Interaction/SlidingTransitionAssignment.py:docstring of abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment.appendInStep:32
-#: ../../../../src/abaqus/Interaction/SmoothingAssignment.py:docstring of abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.appendInStep:32
+#: ../../../../src/abaqus/Interaction/SmoothingAssignment.py:docstring of abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.appendInStep:33
 #: ../../../../src/abaqus/Interaction/StabilizationAssignment.py:docstring of abaqus.Interaction.StabilizationAssignment.StabilizationAssignment.appendInStep:32
 #: ../../../../src/abaqus/Interaction/SurfaceFeatureAssignment.py:docstring of abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:42
 #: ../../../../src/abaqus/Interaction/SurfaceOffsetAssignment.py:docstring of abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment.appendInStep:37
@@ -6294,7 +6294,7 @@ msgid "A sequence of tuples specifying the surface pair of each contact property
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/ContactPropertyAssignment.py:docstring of abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment.delete:22
-msgid "*surfPair* and *indices* arguments are mutually exclusive."
+msgid "**surfPair** and **indices** arguments are mutually exclusive."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/ContactPropertyAssignment.py:docstring of abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment.delete:24
@@ -6513,7 +6513,7 @@ msgstr ""
 msgid "The InteractionProperty object is the abstract base type for other InteractionProperty objects. The InteractionProperty object has no explicit constructor, members, or methods."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/InteractionProperty.py:docstring of abaqus.Interaction.InteractionProperty.InteractionProperty:17
+#: ../../../../src/abaqus/Interaction/InteractionProperty.py:docstring of abaqus.Interaction.InteractionProperty.InteractionProperty:15
 msgid "Check `InteractionProperty on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-interactionpropertypyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -10809,7 +10809,7 @@ msgid "The FluidInflatorProperty object is an interaction property that defines 
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/FluidInflatorProperty.py:docstring of abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:18
-msgid "If *definition*=DUAL PRESSURE, the table data specify the following:"
+msgid "If **definition** = DUAL PRESSURE, the table data specify the following:"
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/FluidInflatorProperty.py:docstring of abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:20
@@ -10830,7 +10830,7 @@ msgid "Tank pressure."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/FluidInflatorProperty.py:docstring of abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:24
-msgid "If *definition*=PRESSURE AND MASS, the table data specify the following:"
+msgid "If **definition** = PRESSURE AND MASS, the table data specify the following:"
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/FluidInflatorProperty.py:docstring of abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:28
@@ -10839,7 +10839,7 @@ msgid "Inflator mass flow rate."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/FluidInflatorProperty.py:docstring of abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:30
-msgid "If *definition*=TANK TEST, the table data specify the following:"
+msgid "If **definition** = TANK TEST, the table data specify the following:"
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/FluidInflatorProperty.py:docstring of abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:33
@@ -10848,7 +10848,7 @@ msgid "Inflator gas temperature."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/FluidInflatorProperty.py:docstring of abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:36
-msgid "If *definition*=TEMPERATURE AND MASS, the table data specify the following:"
+msgid "If **definition** = TEMPERATURE AND MASS, the table data specify the following:"
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/FluidInflatorProperty.py:docstring of abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:44
@@ -10974,7 +10974,7 @@ msgid "**dischargeCoefficient**"
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/FluidInflatorProperty.py:docstring of abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty.setValues:10
-msgid "A Float specifying the discharge coefficient. This argument is applicable only if *definition*=DUAL PRESSURE or *definition*=PRESSURE AND MASS."
+msgid "A Float specifying the discharge coefficient. This argument is applicable only if **definition** = DUAL PRESSURE or **definition** = PRESSURE AND MASS."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/FluidInflatorProperty.py:docstring of abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty.setValues:15
@@ -11046,11 +11046,11 @@ msgid ":py:obj:`status <abaqus.Interaction.FluidInflatorState.FluidInflatorState
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-msgid "A *SymbolicConstant* specifying the propagation state of the InteractionState object."
+msgid "A **SymbolicConstant** specifying the propagation state of the InteractionState object."
 msgstr ""
 
 #: ../../docstring of abaqus.Interaction.FluidInflatorState.FluidInflatorState.status:2
-msgid "A *SymbolicConstant* specifying the propagation state of the InteractionState object. Possible values are:"
+msgid "A **SymbolicConstant** specifying the propagation state of the InteractionState object. Possible values are:"
 msgstr ""
 
 #: ../../reference/mdb/model/interaction.rst:381
@@ -11234,18 +11234,18 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/GapElectricalConductance.py:docstring of abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:17
 #: ../../../../src/abaqus/Interaction/GapElectricalConductance.py:docstring of abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:26
 #: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:17
-#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:26
+#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:27
 msgid "Conductivity."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/GapElectricalConductance.py:docstring of abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:24
-#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:24
+#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:25
 msgid "The **pressureDepTable** data specify the following:"
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/GapElectricalConductance.py:docstring of abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:27
 #: ../../../../src/abaqus/Interaction/NormalBehavior.py:docstring of abaqus.Interaction.NormalBehavior.NormalBehavior:20
-#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:27
+#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:28
 msgid "Pressure."
 msgstr ""
 
@@ -12291,14 +12291,14 @@ msgid "A String specifying the name of the step in which the main-secondary assi
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/MainSecondaryAssignment.py:docstring of abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment.appendInStep:15
-msgid "A sequence of tuples specifying the main-secondary assignments. Each tuple contains two entries: - A region object or the SymbolicConstant GLOBAL specifying the surface to which the"
+msgid "A sequence of tuples specifying the main-secondary assignments. Each tuple contains two entries:"
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/MainSecondaryAssignment.py:docstring of abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment.appendInStep:18
-msgid "main-secondary attribute is assigned."
+msgid "A region object or the SymbolicConstant GLOBAL specifying the surface to which the main-secondary attribute is assigned."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/MainSecondaryAssignment.py:docstring of abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment.appendInStep:19
+#: ../../../../src/abaqus/Interaction/MainSecondaryAssignment.py:docstring of abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment.appendInStep:20
 msgid "A SymbolicConstant specifying the overriding main-secondary value to be used for the first surface. Possible values of the SymbolicConstant are MAIN, SECONDARY, and BALANCED. The SymbolicConstant BALANCED can be specified only in an Abaqus/Standard analysis."
 msgstr ""
 
@@ -13473,11 +13473,15 @@ msgid "A String specifying the name of the step in which new surface smoothing a
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/SmoothingAssignment.py:docstring of abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.appendInStep:15
-msgid "A sequence of tuples specifying the surface smoothing assignments. Each tuple contains two entries: - A region object specifying the surface to which the smoothing is assigned. - A SymbolicConstant specifying the surface smoothing value to be used for the surface."
+msgid "A sequence of tuples specifying the surface smoothing assignments. Each tuple contains two entries:"
+msgstr ""
+
+#: ../../../../src/abaqus/Interaction/SmoothingAssignment.py:docstring of abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.appendInStep:18
+msgid "A region object specifying the surface to which the smoothing is assigned."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/SmoothingAssignment.py:docstring of abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.appendInStep:19
-msgid "Possible values of the SymbolicConstant are NONE, REVOLUTION, SPHERICAL, and TOROIDAL."
+msgid "A SymbolicConstant specifying the surface smoothing value to be used for the surface. Possible values of the SymbolicConstant are NONE, REVOLUTION, SPHERICAL, and TOROIDAL."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/SmoothingAssignment.py:docstring of abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.changeValuesInStep:6
@@ -14524,10 +14528,12 @@ msgid "A region or a material object or the SymbolicConstant GLOBAL specifying t
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/SurfaceThicknessAssignment.py:docstring of abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.appendInStep:20
+#: ../../../../src/abaqus/Interaction/SurfaceThicknessAssignment.py:docstring of abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.changeValuesInStep:22
 msgid "A Float or a SymbolicConstant specifying the overriding thickness value to be used in the contact definition. Possible values of the SymbolicConstant are ORIGINAL and THINNING. The SymbolicConstant THINNING can be specified only in an Abaqus/Explicit analysis."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/SurfaceThicknessAssignment.py:docstring of abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.appendInStep:24
+#: ../../../../src/abaqus/Interaction/SurfaceThicknessAssignment.py:docstring of abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.changeValuesInStep:26
 msgid "A Float specifying a scale factor that multiplies the thickness value specified in the second entry."
 msgstr ""
 
@@ -14545,18 +14551,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Interaction/SurfaceThicknessAssignment.py:docstring of abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.changeValuesInStep:19
 msgid "A tuple specifying the value of the surface thickness assignments for the surface whose index is referenced. Each tuple contains two entries:"
-msgstr ""
-
-#: ../../../../src/abaqus/Interaction/SurfaceThicknessAssignment.py:docstring of abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.changeValuesInStep:22
-msgid "A Float or a SymbolicConstant specifying the overriding thickness value to be used in the contact definition. Possible values of the SymbolicConstant are ORIGINAL and"
-msgstr ""
-
-#: ../../../../src/abaqus/Interaction/SurfaceThicknessAssignment.py:docstring of abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.changeValuesInStep:24
-msgid "THINNING. The SymbolicConstant THINNING can be specified only in an Abaqus/Explicit analysis. - A Float specifying a scale factor that multiplies the thickness value specified in the"
-msgstr ""
-
-#: ../../../../src/abaqus/Interaction/SurfaceThicknessAssignment.py:docstring of abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.changeValuesInStep:27
-msgid "second entry."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/SurfaceThicknessAssignment.py:docstring of abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.delete:5
@@ -15175,11 +15169,11 @@ msgid "The ThermalConductance object specifies thermal conductance for a contact
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:20
-#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:29
+#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:30
 msgid "Mass flow rate, if the data depend on mass flow rate."
 msgstr ""
 
-#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:36
+#: ../../../../src/abaqus/Interaction/ThermalConductance.py:docstring of abaqus.Interaction.ThermalConductance.ThermalConductance:37
 msgid "GAP CONDUCTANCE"
 msgstr ""
 

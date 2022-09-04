@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:36+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1817,8 +1817,10 @@ msgstr ""
 msgid "**crackLocation**"
 msgstr ""
 
+#: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:31
-#: of
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackLocation:2
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:14 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the initial "
 "crack location. This parameter is required when **allowCrackGrowth** = "
@@ -1830,8 +1832,10 @@ msgstr ""
 msgid "**singularityCalcRadius**"
 msgstr ""
 
+#: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:35
-#: of
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:18
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.singularityCalcRadius:2 of
 msgid ""
 "None or a Float specifying the radius from the crack tips within which "
 "the elements are used for crack singularity calculations. This argument "
@@ -3932,12 +3936,10 @@ msgid ""
 "<abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackLocation>`\\"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../docstring
-#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackLocation:2
-#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:14 of
+#: ../../None:13:<autosummary>:1
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the initial "
-"crack location. This parameter is required when *allowCrackGrowth*=OFF."
+"crack location."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -3946,13 +3948,10 @@ msgid ""
 "<abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.singularityCalcRadius>`\\"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../docstring
-#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:18
-#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.singularityCalcRadius:2 of
+#: ../../None:13:<autosummary>:1
 msgid ""
 "None or a Float specifying the radius from the crack tips within which "
-"the elements are used for crack singularity calculations. This argument "
-"applies only when *allowCrackGrowth*=OFF. The default value is None."
+"the elements are used for crack singularity calculations."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -3996,7 +3995,7 @@ msgstr ""
 #: ../../None:13:<autosummary>:1
 msgid ""
 "A sequence of Ints specifying the values indicating the "
-"inclusion/exclusion of the *crackFrontDist* values."
+"inclusion/exclusion of the **crackFrontDist** values."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -4073,9 +4072,9 @@ msgstr ""
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:35 of
 msgid ""
 "A sequence of Ints specifying the values indicating the "
-"inclusion/exclusion of the *crackFrontDist* values. A zero value "
-"indicates that *crackFrontDist* is not specified for the ith pair "
-"*elemId* and *nodeId*. This argument is used only by the input file "
+"inclusion/exclusion of the **crackFrontDist** values. A zero value "
+"indicates that **crackFrontDist** is not specified for the ith pair "
+"**elemId** and *nodeId*. This argument is used only by the input file "
 "reader."
 msgstr ""
 
@@ -4085,4 +4084,37 @@ msgid ""
 "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xfemcrackpyc.htm?contextscope=all"
 "#simaker-xfemcracksetvaluespyc>`_."
 msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the initial crack location. "
+#~ "This parameter is required when "
+#~ "*allowCrackGrowth*=OFF."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "None or a Float specifying the "
+#~ "radius from the crack tips within "
+#~ "which the elements are used for "
+#~ "crack singularity calculations. This argument"
+#~ " applies only when *allowCrackGrowth*=OFF. "
+#~ "The default value is None."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Ints specifying the "
+#~ "values indicating the inclusion/exclusion of"
+#~ " the *crackFrontDist* values."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Ints specifying the "
+#~ "values indicating the inclusion/exclusion of"
+#~ " the *crackFrontDist* values. A zero "
+#~ "value indicates that *crackFrontDist* is "
+#~ "not specified for the ith pair "
+#~ "*elemId* and *nodeId*. This argument is"
+#~ " used only by the input file "
+#~ "reader."
+#~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:36+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgid ""
 "section describes the structure of the abaqus_2021.gpr file and provides "
 "an overview of customizing its settings; for more detailed information "
 "about the functions available in the caePrefsAccess module, see "
-":doc:`reference/kernel/cae_display_preferences`."
+":doc:`/reference/kernel/cae_display_preferences`."
 msgstr ""
 
 #: ../../user/examples/settings.rst:8
@@ -75,17 +75,17 @@ msgid ""
 "that the data type you specify matches the type of the existing value."
 msgstr ""
 
-#: ../../user/examples/settings.rst:42
+#: ../../user/examples/settings.rst:41
 msgid ""
 "You can save the options you change to the original file by issuing the "
 "following command:"
 msgstr ""
 
-#: ../../user/examples/settings.rst:48
+#: ../../user/examples/settings.rst:47
 msgid "**guiPreferences**"
 msgstr ""
 
-#: ../../user/examples/settings.rst:50
+#: ../../user/examples/settings.rst:49
 msgid ""
 "The GUI preferences control many default behaviors in the Abaqus/CAE "
 "graphical interface, including size and location of the main window, size"
@@ -94,7 +94,7 @@ msgid ""
 "**File** menu."
 msgstr ""
 
-#: ../../user/examples/settings.rst:52
+#: ../../user/examples/settings.rst:51
 msgid ""
 "Abaqus/CAE saves `guiPreferences` settings to your home directory when "
 "you exit the application. A separate `guiPreferences` record is stored in"
@@ -106,50 +106,67 @@ msgid ""
 "specifying the **displayName** of the settings that you want to modify."
 msgstr ""
 
-#: ../../user/examples/settings.rst:54
+#: ../../user/examples/settings.rst:53
 msgid ""
 "In the following example, the `openGuiPreferences` function is used to "
 "examine the **X** - and **Y** -location and the height and width of the "
 "following components of Abaqus/CAE:"
 msgstr ""
 
-#: ../../user/examples/settings.rst:56
+#: ../../user/examples/settings.rst:55
 msgid "**Select Font** dialog box"
 msgstr ""
 
-#: ../../user/examples/settings.rst:57
+#: ../../user/examples/settings.rst:56
 msgid "Abaqus/CAE main window"
 msgstr ""
 
-#: ../../user/examples/settings.rst:58
+#: ../../user/examples/settings.rst:57
 msgid "**Adaptivity Plotter** plug-in"
 msgstr ""
 
-#: ../../user/examples/settings.rst:59
+#: ../../user/examples/settings.rst:58
 msgid "**Amplitude Plotter** plug-in"
 msgstr ""
 
-#: ../../user/examples/settings.rst:60
+#: ../../user/examples/settings.rst:59
 msgid "**Create Weld** dialog box"
 msgstr ""
 
-#: ../../user/examples/settings.rst:61
+#: ../../user/examples/settings.rst:60
 msgid "**Copy Annotation** dialog box"
 msgstr ""
 
-#: ../../user/examples/settings.rst:63
+#: ../../user/examples/settings.rst:62
 msgid "The sample statements follow:"
 msgstr ""
 
-#: ../../user/examples/settings.rst:95
+#: ../../user/examples/settings.rst:94
 msgid ""
 "You can change the geometry of the Abaqus/CAE main window by issuing a "
 "command like the following:"
 msgstr ""
 
-#: ../../user/examples/settings.rst:101
+#: ../../user/examples/settings.rst:100
 msgid ""
 "You can save the GUI preferences you change to the original file by "
 "issuing the following command:"
 msgstr ""
+
+#~ msgid ""
+#~ "You can use the Abaqus Scripting "
+#~ "Interface to edit the abaqus_2021.gpr "
+#~ "file, which includes settings that "
+#~ "control many default display preferences "
+#~ "and GUI settings in the Abaqus/CAE "
+#~ "user interface. To enable editing of "
+#~ "this file, you must import the "
+#~ "caePrefsAccess module. This section describes"
+#~ " the structure of the abaqus_2021.gpr "
+#~ "file and provides an overview of "
+#~ "customizing its settings; for more "
+#~ "detailed information about the functions "
+#~ "available in the caePrefsAccess module, "
+#~ "see :doc:`reference/kernel/cae_display_preferences`."
+#~ msgstr ""
 

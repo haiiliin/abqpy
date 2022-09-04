@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgid "The `TableCollectionAssembly` class was added."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/TableCollectionAssembly.py:docstring of abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly:18
-msgid "Check `Assembly on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
+msgid "Check `TableCollectionAssembly on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements:0
@@ -251,7 +251,7 @@ msgid ":py:obj:`allInstances <abaqus.TableCollection.TableCollectionAssembly.Tab
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Model.Model.ModelInstance` object specifying the ModelInstances."
+msgid "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object specifying the ModelInstances."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1364,7 +1364,7 @@ msgid "The `TableCollectionModel` class was added."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/TableCollectionModel.py:docstring of abaqus.TableCollection.TableCollectionModel.TableCollectionModel:15
-msgid "Check `Model on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+msgid "Check `TableCollectionModel on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2065,7 +2065,9 @@ msgid "The DataTable object is used to specify the parameter table of the respec
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/DataTable.py:docstring of abaqus.TableCollection.DataTable.DataTable:18
-msgid "*PARAMETER TABLE"
+#: ../../../../src/abaqus/TableCollection/ParameterColumn.py:docstring of abaqus.TableCollection.ParameterColumn.ParameterColumn:16
+#: ../../../../src/abaqus/TableCollection/ParameterTable.py:docstring of abaqus.TableCollection.ParameterTable.ParameterTable:17
+msgid "PARAMETER TABLE"
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/DataTable.py:docstring of abaqus.TableCollection.DataTable.DataTable:20
@@ -2114,7 +2116,7 @@ msgid "The ElementProgressiveActivation object is used to specify elements that 
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ElementProgressiveActivation.py:docstring of abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation:14
-msgid "*ELEMENT PROGRESSIVE ACTIVATION"
+msgid "ELEMENT PROGRESSIVE ACTIVATION"
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ElementProgressiveActivation.py:docstring of abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation:16
@@ -2269,11 +2271,6 @@ msgstr ""
 #: ../../../../src/abaqus/TableCollection/ParameterColumn.py:docstring of abaqus.TableCollection.ParameterColumn.ParameterColumn:15
 #: ../../../../src/abaqus/TableCollection/ParameterTable.py:docstring of abaqus.TableCollection.ParameterTable.ParameterTable:16
 msgid "PARAMETER TABLE TYPE"
-msgstr ""
-
-#: ../../../../src/abaqus/TableCollection/ParameterColumn.py:docstring of abaqus.TableCollection.ParameterColumn.ParameterColumn:16
-#: ../../../../src/abaqus/TableCollection/ParameterTable.py:docstring of abaqus.TableCollection.ParameterTable.ParameterTable:17
-msgid "PARAMETER TABLE"
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ParameterColumn.py:docstring of abaqus.TableCollection.ParameterColumn.ParameterColumn:18
