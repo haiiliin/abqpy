@@ -56,6 +56,8 @@ The constructor `mdb.Model(name='Model A')` creates an instance of a model, and 
 
 An object always has a type. In our example the type of `mdb.models['Model A']` is Model. An object's type cannot be changed. The type defines the data encapsulated by an object—its members—and the functions that can manipulate those data—its methods. Unlike most programming languages, you do not need to declare the type of a variable before you use it. Python determines the type when the assignment statement is executed. The Abaqus Scripting Interface uses the term object to refer to a specific Abaqus type as well as to an instance of that type; for example, a Model object refers to a Model type and to an instance of a Model type.
 
+.. _python-data-types:
+
 Python data types
 -----------------
 
@@ -147,7 +149,7 @@ Remember, functions of a type are called methods; data of a type are called memb
 Sequences
 ~~~~~~~~~
 
-Sequences include strings, lists, tuples, and arrays. Sequences are described in :doc:`python:basics:sequences` and :doc:`python:basics:sequence operations`.
+Sequences include strings, lists, tuples, and arrays. Sequences are described in `sequences`_ and `sequence operations`_.
 
 Determining the type of a variable
 ----------------------------------
@@ -165,6 +167,9 @@ You use the `type()` function to return the type of the object to which a variab
     >>> a = 'chamfer'
     >>> type(a)
     <type 'string'>
+
+
+.. _sequences:
 
 Sequences
 ---------
@@ -322,7 +327,8 @@ You can use the `tuple()` function to convert a list or a string to a tuple.
 
 The following statements create a tuple and then try to change the value of an item in the tuple. An `AttributeError` error message is generated because a tuple is immutable.
 
-.. code-block:: python2
+.. autolink-skip:: section
+.. code-block::
 
     >>> myTuple = (1,2,3,4,5)
     >>> type(myTuple)
@@ -401,6 +407,8 @@ Arrays are mutable homogeneous sequences. The numpy module allows you to create 
     array([[  1.,   4.],
            [  4.,   9.],
            [  9.,  16.]])
+
+.. _sequence-operations:
 
 Sequence operations
 -------------------
@@ -492,6 +500,8 @@ Convert a sequence to a list or a tuple.
     >>> print myTuple
     ('n', 'o', 'i', 's', 'e')
 
+.. _python-none:
+
 Python None
 -----------
 
@@ -511,7 +521,7 @@ Python defines a special object called the None object or Python None that repre
 Continuation lines and comments
 -------------------------------
 
-You can continue a statement on the following line if you break the statement between a set of (), {}, or [] delimiters. For example, look at the tuple that was used in :doc:`/user/about/examples/creat-part` to assign the coordinates of the vertices to a variable:
+You can continue a statement on the following line if you break the statement between a set of (), {}, or [] delimiters. For example, look at the tuple that was used in :doc:`/user/about/examples/create-part` to assign the coordinates of the vertices to a variable:
 
 .. code-block:: python2
 

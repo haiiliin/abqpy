@@ -147,6 +147,8 @@ Use the following commands to retrieve the example script and the viewer tutoria
             exit(1)
         getMaxMises(odbName,elsetName)
 
+.. _creating-an-output-database:
+
 Creating an output database
 ---------------------------
 
@@ -500,6 +502,8 @@ Use the following command to retrieve the example script:
     outFile.write('** End of perturbed mesh node input file.')
     outFile.close()
 
+.. _computations-with-fieldoutput-objects:
+
 Computations with FieldOutput objects
 -------------------------------------
 
@@ -786,6 +790,8 @@ The fetch command also retrieves an input file that you can use to generate an o
 
     odb.save()
     odb.close()
+
+.. _transformation-of-field-results:
 
 Transformation of field results
 -------------------------------

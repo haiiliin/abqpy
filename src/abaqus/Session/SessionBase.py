@@ -306,11 +306,14 @@ class SessionBase:
             megabytes. If the limit is exceeded, Abaqus/CAE displays an error message.The default
             memory limit value for Windows 32-bit systems if not set is 1800 MB. Increasing the
             memory limit is not recommended unless you are using a Windows 32-bit system with the
-            boot option /3GB /userva=SizeInMBytes to extend the amount of memory available for
+            boot option `/3GB /userva = SizeInMBytes` to extend the amount of memory available for
             Abaqus/CAE. In this case the limit can be changed to 2800 MB.If the kernel memory size
             reaches the **abq_ker_memory** value or the virtual memory limit of the machine, the
-            following message will be displayed:`Operation did not complete due to a memory
-            allocation failure. For optimal performance, the memory limit should be set to a value
+            following message will be displayed: 
+            
+            `Operation did not complete due to a memory allocation failure.` 
+            
+            For optimal performance, the memory limit should be set to a value
             less than the physical amount of memory on the machine.The minimum setting allowed is
             256 MB.
         """
@@ -328,7 +331,7 @@ class SessionBase:
         portNum
             An Integer specifying the port number to be used by the CAD system to communicate with
             Abaqus/CAE. If unspecified, attempts will be made to identify an open port. The default
-            ports used are as follow:Pro/E : 49178CATIA V5 : 49179SolidWorks : 49180NX : 49181CATIA
+            ports used are as follow: Pro/E : 49178CATIA V5 : 49179SolidWorks : 49180NX : 49181CATIA
             V6 : 49182
 
         Returns
@@ -422,7 +425,7 @@ class SessionBase:
             available options are 'Pro/ENGINEER', 'CATIA V5' and 'CATIA V6'.
         parameterFile
             A parameter file containing the parameters that were exposed in the CAD system using the
-            'ABQ_' prefix.
+            `ABQ_` prefix.
         CADPartFile
             A file name specifying the CAD part file for which parameter update is triggered.For
             **CADName** = 'CATIA V5' or 'CATIA V6', you can specify either products or parts using this
@@ -502,13 +505,20 @@ class SessionBase:
             method. If you create a script to print directly to a Windows printer, the
             **printCommand** must take the following
             form:
-            `session.printToPrinter.setValues(printCommand='PRINTER[number of characters in name]:printername PROPERTIES[number of characters in properties]:document properties')`
+            
+            .. autolink-skip:: section
+            .. code-block:: python
+            
+                session.printToPrinter.setValues(
+                    printCommand='PRINTER[number of characters in name]:printername PROPERTIES[number of characters in properties]:document properties'
+                )
+                
             The `PROPERTIES` is a list of characters that represents the
             printing preferences for the selected Windows printer. The properties are not required
             in a script; the printed output will use the current settings for the selected printer.
             You can use `'PRINTER[7]: DEFAULT'` to specify the default Windows printer.
         numCopies
-            An Int specifying the number of copies to print. Possible values are 1 ≤≤ **numCopies** ≤≤
+            An Int specifying the number of copies to print. Possible values are 1 ≤ **numCopies** ≤
             100. The default value is 1.
         canvasObjects
             A sequence of canvas objects (viewports, text strings, or arrows) to print. The default

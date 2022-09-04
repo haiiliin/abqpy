@@ -11,7 +11,6 @@ Mesh features for Assembly
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Mesh.MeshAssembly.MeshAssembly
-    :noindex:
     :members:
 
     .. autoclasstoc::

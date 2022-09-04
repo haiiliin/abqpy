@@ -174,7 +174,7 @@ class MovieOptions(_CopyOptionsBase):
             =MANUAL. The default value is (0, 0).
         translucency
             A Float specifying the translucency factor to use when displaying the movie frame.
-            Possible values are 0.0 ≤≤ **translucency** ≤≤ 1.0 with 0.0 being invisible and 1.0 being
+            Possible values are 0.0 ≤ **translucency** ≤ 1.0 with 0.0 being invisible and 1.0 being
             opaque. The default value is 1.0.
         options
             None or a MovieOptions object specifying the object from which values are to be copied.

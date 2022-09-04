@@ -171,7 +171,7 @@ If you submit more than one job and then issue a `waitForCompletion` statement, 
 An example of a callback function
 ---------------------------------
 
-The following section describes how you can use a callback function as an alternative to the `waitForCompletion` method described in :doc:`/user/python/use-scripts/interact:waiting for a job to complete`. The example uses messaging commands to synchronize a script with an Abaqus/Standard or Abaqus/Explicit analysis. Messaging commands set up a callback function that monitors messages from Abaqus/Standard and Abaqus/Explicit. When the desired message is received, the callback function executes.
+The following section describes how you can use a callback function as an alternative to the `waitForCompletion` method described in `waiting for a job to complete`_. The example uses messaging commands to synchronize a script with an Abaqus/Standard or Abaqus/Explicit analysis. Messaging commands set up a callback function that monitors messages from Abaqus/Standard and Abaqus/Explicit. When the desired message is received, the callback function executes.
 
 he example uses a callback function that responds to all messages from Abaqus/Standard and Abaqus/Explicit. The function decides what action to take based on the messages received from a job called Deform. If the message indicates that the analysis job is complete, the function opens the output database created by the job and displays a default contour plot.
 
