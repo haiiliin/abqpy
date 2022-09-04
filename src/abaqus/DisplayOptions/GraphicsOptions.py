@@ -83,13 +83,13 @@ class GraphicsOptions:
 
     #: A Float specifying the offset added when drawing the faces of a polygon. The
     #: **polygonOffsetConstant** argument affects the behavior of only the OpenGL driver.
-    #: Possible values are 0.0 ≤≤ **polygonOffsetConstant** ≤≤ 100.0. The default value is
+    #: Possible values are 0.0 ≤ **polygonOffsetConstant** ≤ 100.0. The default value is
     #: platform dependent and is typically between 0.0 and 2.0.
     polygonOffsetConstant: float = None
 
     #: A Float specifying the factor that multiplies the slope of each line before the line is
     #: added to the vertexes of a polygon face. The **polygonOffsetSlope** argument affects the
-    #: behavior of only the OpenGL driver. Possible values are 0.0 ≤≤ **polygonOffsetSlope** ≤≤
+    #: behavior of only the OpenGL driver. Possible values are 0.0 ≤ **polygonOffsetSlope** ≤
     #: 100.0. The default value is platform dependent and is typically between 0.0 and 2.0.
     polygonOffsetSlope: float = None
 
@@ -131,8 +131,8 @@ class GraphicsOptions:
     #: graphics performance during the view manipulation. If set high with a large model, the
     #: delay can be many seconds. In excessive cases, graphics memory can be exceeded and the
     #: result may be an empty display list (no visible model) for the view manipulation. This
-    #: setting is treated as 0 if **displayLists** = OFF. Possible values are 0 ≤≤
-    #: **viewManipDisplayListThreshold** ≤≤ 20000. The default value is 40.
+    #: setting is treated as 0 if **displayLists** = OFF. Possible values are 0 ≤
+    #: **viewManipDisplayListThreshold** ≤ 20000. The default value is 40.
     viewManipDisplayListThreshold: int = 40
 
     #: A Boolean specifying how Abaqus renders X11 graphics operations. When
@@ -216,8 +216,8 @@ class GraphicsOptions:
     #: An Int specifying whether speed or accuracy is more important when drawing translucent
     #: objects. Lower values optimize for speed while higher values optimize for accuracy. The
     #: actual meaning of each setting will depend on the setting of **shadersAvailable** and the
-    #: capabilities of the graphics hardware and driver. Possible values are 1 ≤≤
-    #: **translucencyMode** ≤≤ 6. The default value is 4.
+    #: capabilities of the graphics hardware and driver. Possible values are 1 ≤
+    #: **translucencyMode** ≤ 6. The default value is 4.
     translucencyMode: int = 4
 
     #: A Float specifying a tolerance used when computing the appropriate scale for
@@ -355,12 +355,12 @@ class GraphicsOptions:
         polygonOffsetConstant
             A Float specifying the offset added when drawing the faces of a polygon. The
             **polygonOffsetConstant** argument affects the behavior of only the OpenGL driver.
-            Possible values are 0.0 ≤≤ **polygonOffsetConstant** ≤≤ 100.0. The default value is
+            Possible values are 0.0 ≤ **polygonOffsetConstant** ≤ 100.0. The default value is
             platform dependent and is typically between 0.0 and 2.0.
         polygonOffsetSlope
             A Float specifying the factor that multiplies the slope of each line before the line is
             added to the vertexes of a polygon face. The **polygonOffsetSlope** argument affects the
-            behavior of only the OpenGL driver. Possible values are 0.0 ≤≤ **polygonOffsetSlope** ≤≤
+            behavior of only the OpenGL driver. Possible values are 0.0 ≤ **polygonOffsetSlope** ≤
             100.0. The default value is platform dependent and is typically between 0.0 and 2.0.
         printPolygonOffsetConstant
             A Float specifying the offset added when drawing the faces of a polygon.
@@ -397,8 +397,8 @@ class GraphicsOptions:
             graphics performance during the view manipulation. If set high with a large model, the
             delay can be many seconds. In excessive cases, graphics memory can be exceeded and the
             result may be an empty display list (no visible model) for the view manipulation. This
-            setting is treated as 0 if **displayLists** = OFF. Possible values are 0 ≤≤
-            **viewManipDisplayListThreshold** ≤≤ 20000. The default value is 40.
+            setting is treated as 0 if **displayLists** = OFF. Possible values are 0 ≤
+            **viewManipDisplayListThreshold** ≤ 20000. The default value is 40.
         directRendering
             A Boolean specifying how Abaqus renders X11 graphics operations. When
             **directRendering** = OFF, the graphics are rendered through the X Server. When
@@ -484,8 +484,8 @@ class GraphicsOptions:
             An Int specifying whether speed or accuracy is more important when drawing translucent
             objects. Lower values optimize for speed while higher values optimize for accuracy. The
             actual meaning of each setting will depend on the setting of **shadersAvailable** and the
-            capabilities of the graphics hardware and driver. Possible values are 1 ≤≤
-            **translucencyMode** ≤≤ 6. The default value is 4.
+            capabilities of the graphics hardware and driver. Possible values are 1 ≤
+            **translucencyMode** ≤ 6. The default value is 4.
         options
             None or a GraphicsOptions object specifying the object from which values are to be
             copied. If other arguments are also supplied to setValues, they will override the values

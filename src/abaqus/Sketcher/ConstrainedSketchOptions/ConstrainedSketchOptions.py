@@ -60,7 +60,7 @@ class ConstrainedSketchOptions:
             Floats >> 0. The default value is 12.0.
         decimalPlaces
             An Int specifying how many decimal places are shown in dimensions. Possible values are 0
-            ≤≤ **decimalPlaces** ≤≤ 6. The initial value depends on the value of **sheetSize**.
+            ≤ **decimalPlaces** ≤ 6. The initial value depends on the value of **sheetSize**.
         constructionGeometry
             A Boolean specifying whether construction geometry is shown. The default value is ON.
         gridSnap

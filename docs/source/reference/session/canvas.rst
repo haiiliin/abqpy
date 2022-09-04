@@ -25,6 +25,7 @@ Annotation features of Viewport
 
 .. autoclass:: abaqus.Annotation.AnnotationViewport.AnnotationViewport
     :members:
+    :noindex:
 
     .. autoclasstoc::
 

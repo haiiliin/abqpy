@@ -126,7 +126,7 @@ The following list describes the objects in model data and the commands you use 
       topNodeSet = odb.rootAssembly.instances[
           'PART-1-1'].nodeSets['TOP']
 
-  The type of the object to which topNodeSet refers is OdbSet. After you create a variable that refers to a region, you can use the variable to refer to a subset of field output data, as described in :doc:`read:using regions to read a subset of field output data`.
+  The type of the object to which topNodeSet refers is OdbSet. After you create a variable that refers to a region, you can use the variable to refer to a subset of field output data, as described in `using regions to read a subset of field output data`_.
 
 - **Materials**
 

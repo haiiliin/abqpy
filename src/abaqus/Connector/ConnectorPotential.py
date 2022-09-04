@@ -42,8 +42,8 @@ class ConnectorPotential:
     componentStyle: SymbolicConstant = COMPONENT_NUMBER
 
     #: An Int specifying the component number used in the contribution. This argument is
-    #: applicable only if **componentStyle** = COMPONENT_NUMBER. Possible values are 1 ≤≤
-    #: **componentNumber** ≤≤ 6. Only available components can be specified. The default value is
+    #: applicable only if **componentStyle** = COMPONENT_NUMBER. Possible values are 1 ≤
+    #: **componentNumber** ≤ 6. Only available components can be specified. The default value is
     #: 0.
     componentNumber: int = 0
 
@@ -99,8 +99,8 @@ class ConnectorPotential:
             COMPONENT_NUMBER and DERIVED_COMPONENT. The default value is COMPONENT_NUMBER. 
         componentNumber
             An Int specifying the component number used in the contribution. This argument is 
-            applicable only if **componentStyle** = COMPONENT_NUMBER. Possible values are 1 ≤≤ 
-            **componentNumber** ≤≤ 6. Only available components can be specified. The default value is 
+            applicable only if **componentStyle** = COMPONENT_NUMBER. Possible values are 1 ≤ 
+            **componentNumber** ≤ 6. Only available components can be specified. The default value is 
             0. 
         sign
             A SymbolicConstant specifying the sign of the contribution. Possible values are POSITIVE 
