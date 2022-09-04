@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,9 +52,10 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Eos/DetonationPoint.py:docstring of abaqus.Material.Eos.DetonationPoint.DetonationPoint:7
 #: ../../../../src/abaqus/Material/Eos/Eos.py:docstring of abaqus.Material.Eos.Eos.Eos:5
 #: ../../../../src/abaqus/Material/Eos/EosCompaction.py:docstring of abaqus.Material.Eos.EosCompaction.EosCompaction:5
+#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:6
 #: ../../../../src/abaqus/Material/Gap/GapConvection.py:docstring of abaqus.Material.Gap.GapConvection.GapConvection:7
 #: ../../../../src/abaqus/Material/Gap/GapFlow.py:docstring of abaqus.Material.Gap.GapFlow.GapFlow:6
-#: ../../../../src/abaqus/Material/Gap/GapRadiation.py:docstring of abaqus.Material.Gap.GapRadiation.GapRadiation:17
+#: ../../../../src/abaqus/Material/Gap/GapRadiation.py:docstring of abaqus.Material.Gap.GapRadiation.GapRadiation:6
 #: ../../../../src/abaqus/Material/Gasket/ContactArea.py:docstring of abaqus.Material.Gasket.ContactArea.ContactArea:8
 #: ../../../../src/abaqus/Material/Gasket/GasketMembraneElastic.py:docstring of abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic:6
 #: ../../../../src/abaqus/Material/Gasket/GasketThicknessBehavior.py:docstring of abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior:6
@@ -62,6 +63,10 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material:12
 #: ../../../../src/abaqus/Material/MaterialModel.py:docstring of abaqus.Material.MaterialModel.MaterialModel:5
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb:5
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization:5
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion:5
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldMatrix.py:docstring of abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix:5
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid:5
 #: ../../../../src/abaqus/Material/Others/Acoustic/AcousticMedium.py:docstring of abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium:5
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/Dielectric.py:docstring of abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric:5
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/ElectricalConductivity.py:docstring of abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity:5
@@ -158,7 +163,7 @@ msgid "This object can be accessed by:"
 msgstr ""
 
 #: ../../../../src/abaqus/Material/MaterialModel.py:docstring of abaqus.Material.MaterialModel.MaterialModel:12
-msgid "Check `Model on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+msgid "Check `MaterialModel on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../../../src/abaqus/Material/MaterialModel.py:docstring of abaqus.Material.MaterialModel.MaterialModel.Material:2
@@ -242,6 +247,9 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.Viscous:5
 #: ../../../../src/abaqus/Material/MaterialModel.py:docstring of abaqus.Material.MaterialModel.MaterialModel.Material:5
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb.Material:5
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:5
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:5
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:5
 #: ../../../../src/abaqus/Material/Plastic/TensileFailure.py:docstring of abaqus.Material.Plastic.TensileFailure.TensileFailure.tensileFailure:5
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DuctileDamageInitiation:5
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FldDamageInitiation:5
@@ -341,6 +349,9 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.Viscous:0
 #: ../../../../src/abaqus/Material/MaterialModel.py:docstring of abaqus.Material.MaterialModel.MaterialModel.Material:0
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb.Material:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:0
 #: ../../../../src/abaqus/Material/Plastic/TensileFailure.py:docstring of abaqus.Material.Plastic.TensileFailure.TensileFailure.tensileFailure:0
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DuctileDamageInitiation:0
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FldDamageInitiation:0
@@ -362,6 +373,9 @@ msgstr ""
 
 #: ../../../../src/abaqus/Material/MaterialModel.py:docstring of abaqus.Material.MaterialModel.MaterialModel.Material:17
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb.Material:17
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:18
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:18
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:18
 msgid "**name**"
 msgstr ""
 
@@ -464,6 +478,9 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.Viscous:0
 #: ../../../../src/abaqus/Material/MaterialModel.py:docstring of abaqus.Material.MaterialModel.MaterialModel.Material:0
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb.Material:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:0
 #: ../../../../src/abaqus/Material/Plastic/TensileFailure.py:docstring of abaqus.Material.Plastic.TensileFailure.TensileFailure.tensileFailure:0
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DuctileDamageInitiation:0
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FldDamageInitiation:0
@@ -502,7 +519,7 @@ msgid "The Odb object is the in-memory representation of an output database (ODB
 msgstr ""
 
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb:13
-msgid "Check `Odb on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`_."
+msgid "Check `MaterialOdb on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../../../src/abaqus/Material/Elastic/HyperElastic/HyperFoam/Hyperfoam.py:docstring of abaqus.Material.Elastic.HyperElastic.HyperFoam.Hyperfoam.Hyperfoam:0
@@ -677,6 +694,10 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Gasket/GasketTransverseShearElastic.py:docstring of abaqus.Material.Gasket.GasketTransverseShearElastic.GasketTransverseShearElastic:0
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material:0
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldMatrix.py:docstring of abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid:0
 #: ../../../../src/abaqus/Material/Others/Acoustic/AcousticMedium.py:docstring of abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium:0
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/Dielectric.py:docstring of abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric:0
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/ElectricalConductivity.py:docstring of abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity:0
@@ -826,7 +847,7 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Density/Density.py:docstring of abaqus.Material.Density.Density.Density:22
 #: ../../../../src/abaqus/Material/Elastic/HyperElastic/HyperFoam/Hyperfoam.py:docstring of abaqus.Material.Elastic.HyperElastic.HyperFoam.Hyperfoam.Hyperfoam:22
 #: ../../../../src/abaqus/Material/Elastic/HyperElastic/Hyperelastic.py:docstring of abaqus.Material.Elastic.HyperElastic.Hyperelastic.Hyperelastic:82
-#: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/CombinedTestData.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:28
+#: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/CombinedTestData.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:29
 #: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/Hysteresis.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.Hysteresis.Hysteresis:22
 #: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/Viscoelastic.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic:75
 #: ../../../../src/abaqus/Material/Elastic/HypoElastic/Hypoelastic.py:docstring of abaqus.Material.Elastic.HypoElastic.Hypoelastic.Hypoelastic:22
@@ -838,14 +859,19 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Elastic/SuperElastic/SuperElasticity.py:docstring of abaqus.Material.Elastic.SuperElastic.SuperElasticity.SuperElasticity:28
 #: ../../../../src/abaqus/Material/Eos/DetonationPoint.py:docstring of abaqus.Material.Eos.DetonationPoint.DetonationPoint:23
 #: ../../../../src/abaqus/Material/Eos/EosCompaction.py:docstring of abaqus.Material.Eos.EosCompaction.EosCompaction:14
-#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:24
+#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:26
 #: ../../../../src/abaqus/Material/Gap/GapConvection.py:docstring of abaqus.Material.Gap.GapConvection.GapConvection:25
 #: ../../../../src/abaqus/Material/Gap/GapFlow.py:docstring of abaqus.Material.Gap.GapFlow.GapFlow:50
+#: ../../../../src/abaqus/Material/Gap/GapRadiation.py:docstring of abaqus.Material.Gap.GapRadiation.GapRadiation:21
 #: ../../../../src/abaqus/Material/Gasket/ContactArea.py:docstring of abaqus.Material.Gasket.ContactArea.ContactArea:26
 #: ../../../../src/abaqus/Material/Gasket/GasketMembraneElastic.py:docstring of abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic:24
 #: ../../../../src/abaqus/Material/Gasket/GasketThicknessBehavior.py:docstring of abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior:70
 #: ../../../../src/abaqus/Material/Gasket/GasketTransverseShearElastic.py:docstring of abaqus.Material.Gasket.GasketTransverseShearElastic.GasketTransverseShearElastic:23
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material:21
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization:14
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion:22
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldMatrix.py:docstring of abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix:14
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid:22
 #: ../../../../src/abaqus/Material/Others/Acoustic/AcousticMedium.py:docstring of abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium:14
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/Dielectric.py:docstring of abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric:48
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/ElectricalConductivity.py:docstring of abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity:48
@@ -929,14 +955,14 @@ msgstr ""
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:160
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageStabilization.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageStabilization.DamageStabilization:41
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageStabilizationCohesive.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive:41
-#: ../../../../src/abaqus/Material/Ratios.py:docstring of abaqus.Material.Ratios.Ratios:25
+#: ../../../../src/abaqus/Material/Ratios.py:docstring of abaqus.Material.Ratios.Ratios:26
 #: ../../../../src/abaqus/Material/Regularization.py:docstring of abaqus.Material.Regularization.Regularization:15
 #: ../../../../src/abaqus/Material/TestData/BiaxialTestData.py:docstring of abaqus.Material.TestData.BiaxialTestData.BiaxialTestData:18
 #: ../../../../src/abaqus/Material/TestData/PlanarTestData.py:docstring of abaqus.Material.TestData.PlanarTestData.PlanarTestData:31
 #: ../../../../src/abaqus/Material/TestData/ShearTestData.py:docstring of abaqus.Material.TestData.ShearTestData.ShearTestData:27
 #: ../../../../src/abaqus/Material/TestData/SimpleShearTestData.py:docstring of abaqus.Material.TestData.SimpleShearTestData.SimpleShearTestData:20
 #: ../../../../src/abaqus/Material/TestData/UniaxialTestData.py:docstring of abaqus.Material.TestData.UniaxialTestData.UniaxialTestData:39
-#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:35
+#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:38
 msgid "The corresponding analysis keywords are:"
 msgstr ""
 
@@ -2184,6 +2210,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MeanFieldHomogenization:2
 #: ../../None:74:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 msgid "This method creates a MeanFieldHomogenization object."
 msgstr ""
 
@@ -2447,6 +2474,7 @@ msgstr ""
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:134
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:143
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:155
+#: ../../../../src/abaqus/Material/Ratios.py:docstring of abaqus.Material.Ratios.Ratios:21
 msgid "Temperature, if the data depend on temperature."
 msgstr ""
 
@@ -2595,6 +2623,7 @@ msgstr ""
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:135
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:144
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:156
+#: ../../../../src/abaqus/Material/Ratios.py:docstring of abaqus.Material.Ratios.Ratios:22
 msgid "Value of the first field variable, if the data depend on field variables."
 msgstr ""
 
@@ -2611,7 +2640,7 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Elastic/Linear/FailStress.py:docstring of abaqus.Material.Elastic.Linear.FailStress.FailStress:26
 #: ../../../../src/abaqus/Material/Elastic/Porous/PorousElastic.py:docstring of abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic:24
 #: ../../../../src/abaqus/Material/Elastic/Porous/PorousElastic.py:docstring of abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic:34
-#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:21
+#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:23
 #: ../../../../src/abaqus/Material/Gap/GapConvection.py:docstring of abaqus.Material.Gap.GapConvection.GapConvection:22
 #: ../../../../src/abaqus/Material/Gap/GapFlow.py:docstring of abaqus.Material.Gap.GapFlow.GapFlow:22
 #: ../../../../src/abaqus/Material/Gap/GapFlow.py:docstring of abaqus.Material.Gap.GapFlow.GapFlow:30
@@ -2745,6 +2774,7 @@ msgstr ""
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:136
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:145
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:157
+#: ../../../../src/abaqus/Material/Ratios.py:docstring of abaqus.Material.Ratios.Ratios:23
 msgid "Value of the second field variable."
 msgstr ""
 
@@ -2761,7 +2791,7 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Elastic/Linear/FailStress.py:docstring of abaqus.Material.Elastic.Linear.FailStress.FailStress:27
 #: ../../../../src/abaqus/Material/Elastic/Porous/PorousElastic.py:docstring of abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic:25
 #: ../../../../src/abaqus/Material/Elastic/Porous/PorousElastic.py:docstring of abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic:35
-#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:22
+#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:24
 #: ../../../../src/abaqus/Material/Gap/GapConvection.py:docstring of abaqus.Material.Gap.GapConvection.GapConvection:23
 #: ../../../../src/abaqus/Material/Gap/GapFlow.py:docstring of abaqus.Material.Gap.GapFlow.GapFlow:23
 #: ../../../../src/abaqus/Material/Gap/GapFlow.py:docstring of abaqus.Material.Gap.GapFlow.GapFlow:31
@@ -2779,6 +2809,8 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.AcousticMedium:44
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.AcousticMedium:54
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.Eos:81
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion:20
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid:20
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/Dielectric.py:docstring of abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric:23
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/Dielectric.py:docstring of abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric:33
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/Dielectric.py:docstring of abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric:46
@@ -2897,6 +2929,7 @@ msgstr ""
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:137
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:146
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:158
+#: ../../../../src/abaqus/Material/Ratios.py:docstring of abaqus.Material.Ratios.Ratios:24
 msgid "Etc."
 msgstr ""
 
@@ -3003,6 +3036,13 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.UserOutputVariables:0
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.Viscoelastic:0
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.Viscosity:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.setValues:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion.setValues:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldMatrix.py:docstring of abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix.setValues:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid.setValues:0
 #: ../../../../src/abaqus/Material/Others/Acoustic/AcousticMedium.py:docstring of abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium.setValues:0
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/ElectricalConductivity.py:docstring of abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity.setValues:0
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/MagneticPermeability.py:docstring of abaqus.Material.Others.Electromagnetic.MagneticPermeability.MagneticPermeability.setValues:0
@@ -3164,6 +3204,13 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.UserOutputVariables:40
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.Viscoelastic:81
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.Viscosity:48
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:85
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:46
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:85
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.setValues:21
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion.setValues:21
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldMatrix.py:docstring of abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix.setValues:21
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid.setValues:21
 #: ../../../../src/abaqus/Material/Others/Acoustic/AcousticMedium.py:docstring of abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium.setValues:21
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/ElectricalConductivity.py:docstring of abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity.setValues:21
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/MagneticPermeability.py:docstring of abaqus.Material.Others.Electromagnetic.MagneticPermeability.MagneticPermeability.setValues:21
@@ -3317,6 +3364,8 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.Viscoelastic:23
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.Viscosity:18
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.Viscous:18
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:21
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:21
 #: ../../../../src/abaqus/Material/Plastic/TensileFailure.py:docstring of abaqus.Material.Plastic.TensileFailure.TensileFailure.tensileFailure:20
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DuctileDamageInitiation:19
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FldDamageInitiation:19
@@ -3375,6 +3424,8 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.Viscoelastic:23
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.Viscosity:18
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.Viscous:18
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:21
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:21
 #: ../../../../src/abaqus/Material/Plastic/TensileFailure.py:docstring of abaqus.Material.Plastic.TensileFailure.TensileFailure.tensileFailure:20
 #: ../../docstring of abaqus.Material.Ratios.Ratios.table:2
 msgid "A sequence of sequences of Floats specifying the items described below."
@@ -4670,6 +4721,8 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.QuadeDamageInitiation:70
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.QuadsDamageInitiation:70
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.ShearDamageInitiation:70
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:57
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:57
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DuctileDamageInitiation:70
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FldDamageInitiation:70
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FlsdDamageInitiation:70
@@ -5066,7 +5119,7 @@ msgstr ""
 msgid "The `GapConductance` method was added."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:32
+#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:34
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.GapConductance:16
 msgid "Check `GapConductance on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gapconductancepyc.htm?contextscope=all>`_."
 msgstr ""
@@ -5125,7 +5178,7 @@ msgstr ""
 msgid "The `GapRadiation` method was added."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Gap/GapRadiation.py:docstring of abaqus.Material.Gap.GapRadiation.GapRadiation:40
+#: ../../../../src/abaqus/Material/Gap/GapRadiation.py:docstring of abaqus.Material.Gap.GapRadiation.GapRadiation:29
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.GapRadiation:16
 msgid "Check `GapRadiation on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gapradiationpyc.htm?contextscope=all>`_."
 msgstr ""
@@ -5647,6 +5700,7 @@ msgid "The `MeanFieldHomogenization` method was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MeanFieldHomogenization:16
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization:22
 msgid "Check `MeanFieldHomogenization on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meanfieldhomogenizationpyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -6191,12 +6245,15 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Elastic/SuperElastic/SuperElasticity.py:docstring of abaqus.Material.Elastic.SuperElastic.SuperElasticity.SuperElasticity:14
 #: ../../../../src/abaqus/Material/Eos/DetonationPoint.py:docstring of abaqus.Material.Eos.DetonationPoint.DetonationPoint:16
 #: ../../../../src/abaqus/Material/Eos/Eos.py:docstring of abaqus.Material.Eos.Eos.Eos:14
-#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:13
+#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:15
 #: ../../../../src/abaqus/Material/Gap/GapFlow.py:docstring of abaqus.Material.Gap.GapFlow.GapFlow:15
+#: ../../../../src/abaqus/Material/Gap/GapRadiation.py:docstring of abaqus.Material.Gap.GapRadiation.GapRadiation:15
 #: ../../../../src/abaqus/Material/Gasket/ContactArea.py:docstring of abaqus.Material.Gasket.ContactArea.ContactArea:17
 #: ../../../../src/abaqus/Material/Gasket/GasketMembraneElastic.py:docstring of abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic:15
 #: ../../../../src/abaqus/Material/Gasket/GasketThicknessBehavior.py:docstring of abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior:15
 #: ../../../../src/abaqus/Material/Gasket/GasketTransverseShearElastic.py:docstring of abaqus.Material.Gasket.GasketTransverseShearElastic.GasketTransverseShearElastic:15
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion:14
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid:14
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/Dielectric.py:docstring of abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric:14
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/ElectricalConductivity.py:docstring of abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity:14
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/MagneticPermeability.py:docstring of abaqus.Material.Others.Electromagnetic.MagneticPermeability.MagneticPermeability:14
@@ -6267,6 +6324,7 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Plastic/TensileFailure.py:docstring of abaqus.Material.Plastic.TensileFailure.TensileFailure:16
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageEvolution.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution:41
 #: ../../../../src/abaqus/Material/ProgressiveDamageFailure/DamageInitiation.py:docstring of abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation:41
+#: ../../../../src/abaqus/Material/Ratios.py:docstring of abaqus.Material.Ratios.Ratios:16
 #: ../../../../src/abaqus/Material/TestData/PlanarTestData.py:docstring of abaqus.Material.TestData.PlanarTestData.PlanarTestData:19
 #: ../../../../src/abaqus/Material/TestData/ShearTestData.py:docstring of abaqus.Material.TestData.ShearTestData.ShearTestData:15
 #: ../../../../src/abaqus/Material/TestData/SimpleShearTestData.py:docstring of abaqus.Material.TestData.SimpleShearTestData.SimpleShearTestData:14
@@ -6599,7 +6657,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/CombinedTestData.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:17
 #: ../../../../src/abaqus/Material/TestData/ShearTestData.py:docstring of abaqus.Material.TestData.ShearTestData.ShearTestData:17
-#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:26
+#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:28
 msgid "If **time** = RELAXATION_TEST_DATA, the table data specify the following:"
 msgstr ""
 
@@ -6612,29 +6670,29 @@ msgid "Normalized volumetric (bulk) modulus, :math:`k_R(t)` (:math:`0\\le k_R(t)
 msgstr ""
 
 #: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/CombinedTestData.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:21
-#: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/CombinedTestData.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:26
+#: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/CombinedTestData.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:27
 msgid "Time :math:`t` (:math:`t>0`)."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/CombinedTestData.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:22
+#: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/CombinedTestData.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:23
 #: ../../../../src/abaqus/Material/TestData/ShearTestData.py:docstring of abaqus.Material.TestData.ShearTestData.ShearTestData:22
-#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:30
+#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:33
 msgid "If **time** = CREEP_TEST_DATA, the table data specify the following:"
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/CombinedTestData.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:24
+#: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/CombinedTestData.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:25
 msgid "Normalized shear compliance, :math:`j_S(t)` (:math:`j_S(t)\\ge 1`)."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/CombinedTestData.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:25
+#: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/CombinedTestData.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:26
 msgid "Normalized volumetric (bulk) compliance, :math:`j_K(t)` (:math:`j_K(t)\\ge 1`)."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/CombinedTestData.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:30
+#: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/CombinedTestData.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:31
 msgid "COMBINED TEST DATA"
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/CombinedTestData.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:33
+#: ../../../../src/abaqus/Material/Elastic/HyperElastic/ViscoElastic/CombinedTestData.py:docstring of abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData:34
 msgid "Check `CombinedTestData on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-combinedtestdatapyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -7395,7 +7453,7 @@ msgid "This method modifies the LowDensityFoam object."
 msgstr ""
 
 #: ../../reference/mdb/model/material.rst:160
-#: ../../reference/mdb/model/material.rst:915
+#: ../../reference/mdb/model/material.rst:913
 msgid "Porous"
 msgstr ""
 
@@ -7443,7 +7501,7 @@ msgid "This method modifies the PorousElastic object."
 msgstr ""
 
 #: ../../reference/mdb/model/material.rst:172
-#: ../../reference/mdb/model/material.rst:1011
+#: ../../reference/mdb/model/material.rst:1009
 msgid "SuperElastic"
 msgstr ""
 
@@ -7749,6 +7807,9 @@ msgstr ""
 msgid "Check `evaluateMaterial.evaluateMaterial() on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionevaluatematerialpyc.htm?contextscope=all#simaker-functionevaluatematerialevaluatematerialpyc>`_."
 msgstr ""
 
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:24
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:21
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:24
 #: ../../../../src/abaqus/Material/evaluateMaterial.py:docstring of abaqus.Material.evaluateMaterial.evaluateMaterial:18
 msgid "**material**"
 msgstr ""
@@ -7993,11 +8054,11 @@ msgstr ""
 msgid "If the material type of the material to be evaluated is not hyperelastic."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:220
+#: ../../reference/mdb/model/material.rst:218
 msgid "Gap"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:223
+#: ../../reference/mdb/model/material.rst:221
 msgid "GapConductance"
 msgstr ""
 
@@ -8005,40 +8066,32 @@ msgstr ""
 msgid "The GapConductance object specifies conductive heat transfer between closely adjacent (or contacting) surfaces."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:6
-msgid "This object can be accessed by: .. code-block:: python"
-msgstr ""
-
-#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:8
-msgid "import material mdb.models[name].materials[name].gapConductance import odbMaterial session.odbs[name].materials[name].gapConductance"
-msgstr ""
-
-#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:15
+#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:17
 msgid "Gap Conductance or Cohesive Separation."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:16
+#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:18
 msgid "Gap Clearance, Gap Pressure (if optional parameter pressureDependency is used), or Closure, :math:`c` (for coupled temperature-displacement gasket elements)."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:18
+#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:20
 msgid "Average Temperature if the data depend on temperature."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:19
+#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:21
 msgid "Mass Flow Rate per unit area if the data depend on the average mass flow rate."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:20
+#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:22
 #: ../../../../src/abaqus/Material/Plastic/TensileFailure.py:docstring of abaqus.Material.Plastic.TensileFailure.TensileFailure:20
 msgid "Value of the first field variable if the data depend on field variables."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:26
+#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:28
 msgid "GAP CONDUCTANCE"
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:28
+#: ../../../../src/abaqus/Material/Gap/GapConductance.py:docstring of abaqus.Material.Gap.GapConductance.GapConductance:30
 msgid "The `GapConductance` class was added."
 msgstr ""
 
@@ -8055,7 +8108,7 @@ msgstr ""
 msgid "This method modifies the GapConductance object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:231
+#: ../../reference/mdb/model/material.rst:229
 msgid "GapConvection"
 msgstr ""
 
@@ -8064,7 +8117,7 @@ msgid "The GapConvection object specifies the Nusselt number (Nu) to calculate t
 msgstr ""
 
 #: ../../../../src/abaqus/Material/Gap/GapConvection.py:docstring of abaqus.Material.Gap.GapConvection.GapConvection:16
-msgid "The table data for this object are: For *type*=TABULAR the table data specify the following:"
+msgid "The table data for this object are: For **type** = TABULAR the table data specify the following:"
 msgstr ""
 
 #: ../../../../src/abaqus/Material/Gap/GapConvection.py:docstring of abaqus.Material.Gap.GapConvection.GapConvection:19
@@ -8092,7 +8145,7 @@ msgstr ""
 msgid "This method modifies the GapConvection object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:239
+#: ../../reference/mdb/model/material.rst:237
 msgid "GapFlow"
 msgstr ""
 
@@ -8159,7 +8212,7 @@ msgstr ""
 msgid "This method modifies the GapFlow object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:247
+#: ../../reference/mdb/model/material.rst:245
 msgid "GapRadiation"
 msgstr ""
 
@@ -8167,11 +8220,23 @@ msgstr ""
 msgid "The GapRadiation object specifies radiative heat transfer between closely adjacent surfaces."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Gap/GapRadiation.py:docstring of abaqus.Material.Gap.GapRadiation.GapRadiation:16
-msgid "Notes"
+#: ../../../../src/abaqus/Material/Gap/GapRadiation.py:docstring of abaqus.Material.Gap.GapRadiation.GapRadiation:17
+msgid "Effective view factor."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Gap/GapRadiation.py:docstring of abaqus.Material.Gap.GapRadiation.GapRadiation:36
+#: ../../../../src/abaqus/Material/Gap/GapRadiation.py:docstring of abaqus.Material.Gap.GapRadiation.GapRadiation:18
+msgid "Gap clearance."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Gap/GapRadiation.py:docstring of abaqus.Material.Gap.GapRadiation.GapRadiation:19
+msgid "Repeat this data line as often as necessary to define the dependence of the view factor on gap clearance."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Gap/GapRadiation.py:docstring of abaqus.Material.Gap.GapRadiation.GapRadiation:23
+msgid "GAP RADIATION"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Gap/GapRadiation.py:docstring of abaqus.Material.Gap.GapRadiation.GapRadiation:25
 msgid "The `GapRadiation` class was added."
 msgstr ""
 
@@ -8188,11 +8253,11 @@ msgstr ""
 msgid "This method modifies the GapRadiation object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:255
+#: ../../reference/mdb/model/material.rst:253
 msgid "Gasket"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:259
+#: ../../reference/mdb/model/material.rst:257
 msgid "ContactArea"
 msgstr ""
 
@@ -8239,7 +8304,7 @@ msgstr ""
 msgid "This method modifies the ContactArea object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:267
+#: ../../reference/mdb/model/material.rst:265
 msgid "GasketMembraneElastic"
 msgstr ""
 
@@ -8275,7 +8340,7 @@ msgstr ""
 msgid "This method modifies the GasketMembraneElastic object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:275
+#: ../../reference/mdb/model/material.rst:273
 msgid "GasketThicknessBehavior"
 msgstr ""
 
@@ -8355,7 +8420,7 @@ msgstr ""
 msgid "This method modifies the GasketThicknessBehavior object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:283
+#: ../../reference/mdb/model/material.rst:281
 msgid "GasketTransverseShearElastic"
 msgstr ""
 
@@ -8380,15 +8445,15 @@ msgstr ""
 msgid "This method modifies the GasketTransverseShearElastic object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:291
+#: ../../reference/mdb/model/material.rst:289
 msgid "Others"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:295
+#: ../../reference/mdb/model/material.rst:293
 msgid "Acoustic"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:299
+#: ../../reference/mdb/model/material.rst:297
 msgid "AcousticMedium"
 msgstr ""
 
@@ -8413,11 +8478,11 @@ msgstr ""
 msgid "This method modifies the AcousticMedium object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:307
+#: ../../reference/mdb/model/material.rst:305
 msgid "Electromagnetic"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:311
+#: ../../reference/mdb/model/material.rst:309
 msgid "Dielectric"
 msgstr ""
 
@@ -8488,7 +8553,7 @@ msgstr ""
 msgid "This method modifies the Dielectric object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:319
+#: ../../reference/mdb/model/material.rst:317
 msgid "ElectricalConductivity"
 msgstr ""
 
@@ -8544,7 +8609,7 @@ msgstr ""
 msgid "This method modifies the ElectricalConductivity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:327
+#: ../../reference/mdb/model/material.rst:325
 msgid "MagneticPermeability"
 msgstr ""
 
@@ -8624,7 +8689,7 @@ msgstr ""
 msgid "This method modifies the MagneticPermeability object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:335
+#: ../../reference/mdb/model/material.rst:333
 msgid "Piezoelectric"
 msgstr ""
 
@@ -8800,11 +8865,11 @@ msgstr ""
 msgid "This method modifies the Piezoelectric object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:343
+#: ../../reference/mdb/model/material.rst:341
 msgid "HeatTransfer"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:347
+#: ../../reference/mdb/model/material.rst:345
 msgid "Conductivity"
 msgstr ""
 
@@ -8872,7 +8937,7 @@ msgstr ""
 msgid "This method modifies the Conductivity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:355
+#: ../../reference/mdb/model/material.rst:353
 msgid "HeatGeneration"
 msgstr ""
 
@@ -8896,7 +8961,7 @@ msgstr ""
 msgid "This method creates a HeatGeneration object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:363
+#: ../../reference/mdb/model/material.rst:361
 msgid "InelasticHeatFraction"
 msgstr ""
 
@@ -8921,7 +8986,7 @@ msgstr ""
 msgid "This method modifies the InelasticHeatFraction object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:371
+#: ../../reference/mdb/model/material.rst:369
 msgid "JouleHeatFraction"
 msgstr ""
 
@@ -8946,7 +9011,7 @@ msgstr ""
 msgid "This method modifies the JouleHeatFraction object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:379
+#: ../../reference/mdb/model/material.rst:377
 msgid "LatentHeat"
 msgstr ""
 
@@ -8983,7 +9048,7 @@ msgstr ""
 msgid "This method modifies the LatentHeat object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:387
+#: ../../reference/mdb/model/material.rst:385
 msgid "SpecificHeat"
 msgstr ""
 
@@ -9012,15 +9077,15 @@ msgstr ""
 msgid "This method modifies the SpecificHeat object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:395
+#: ../../reference/mdb/model/material.rst:393
 msgid "Hydrodynamic"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:399
+#: ../../reference/mdb/model/material.rst:397
 msgid "MassDiffusion"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:403
+#: ../../reference/mdb/model/material.rst:401
 msgid "Diffusivity"
 msgstr ""
 
@@ -9100,7 +9165,7 @@ msgstr ""
 msgid "This method modifies the Diffusivity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:411
+#: ../../reference/mdb/model/material.rst:409
 msgid "PressureEffect"
 msgstr ""
 
@@ -9143,7 +9208,7 @@ msgstr ""
 msgid "This method modifies the PressureEffect object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:419
+#: ../../reference/mdb/model/material.rst:417
 msgid "Solubility"
 msgstr ""
 
@@ -9172,7 +9237,7 @@ msgstr ""
 msgid "This method modifies the Solubility object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:427
+#: ../../reference/mdb/model/material.rst:425
 msgid "SoretEffect"
 msgstr ""
 
@@ -9205,11 +9270,11 @@ msgstr ""
 msgid "This method modifies the SoretEffect object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:435
+#: ../../reference/mdb/model/material.rst:433
 msgid "Mechanical"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:439
+#: ../../reference/mdb/model/material.rst:437
 msgid "Damping"
 msgstr ""
 
@@ -9238,7 +9303,7 @@ msgstr ""
 msgid "This method modifies the Damping object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:447
+#: ../../reference/mdb/model/material.rst:445
 msgid "Expansion"
 msgstr ""
 
@@ -9298,7 +9363,7 @@ msgstr ""
 msgid "This method modifies the Expansion object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:455
+#: ../../reference/mdb/model/material.rst:453
 msgid "PoreFluidExpansion"
 msgstr ""
 
@@ -9323,12 +9388,12 @@ msgstr ""
 msgid "This method modifies the PoreFluidExpansion object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:463
-#: ../../reference/mdb/model/material.rst:475
+#: ../../reference/mdb/model/material.rst:461
+#: ../../reference/mdb/model/material.rst:473
 msgid "Viscosity"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:467
+#: ../../reference/mdb/model/material.rst:465
 msgid "Trs"
 msgstr ""
 
@@ -9406,11 +9471,11 @@ msgstr ""
 msgid "This method modifies the Viscosity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:483
+#: ../../reference/mdb/model/material.rst:481
 msgid "PoreFluidFlow"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:487
+#: ../../reference/mdb/model/material.rst:485
 msgid "FluidLeakoff"
 msgstr ""
 
@@ -9447,7 +9512,7 @@ msgstr ""
 msgid "This method modifies the FluidLeakoff object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:495
+#: ../../reference/mdb/model/material.rst:493
 msgid "Gel"
 msgstr ""
 
@@ -9488,8 +9553,8 @@ msgstr ""
 msgid "This method modifies the Gel object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:503
-#: ../../reference/mdb/model/material.rst:507
+#: ../../reference/mdb/model/material.rst:501
+#: ../../reference/mdb/model/material.rst:505
 msgid "MoistureSwelling"
 msgstr ""
 
@@ -9532,8 +9597,8 @@ msgstr ""
 msgid "This method modifies the MoistureSwelling object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:515
-#: ../../reference/mdb/model/material.rst:519
+#: ../../reference/mdb/model/material.rst:513
+#: ../../reference/mdb/model/material.rst:517
 msgid "Permeability"
 msgstr ""
 
@@ -9589,7 +9654,7 @@ msgstr ""
 msgid "This method modifies the Permeability object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:527
+#: ../../reference/mdb/model/material.rst:525
 msgid "SaturationDependence"
 msgstr ""
 
@@ -9626,7 +9691,7 @@ msgstr ""
 msgid "This method modifies the SaturationDependence object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:535
+#: ../../reference/mdb/model/material.rst:533
 msgid "VelocityDependence"
 msgstr ""
 
@@ -9659,7 +9724,7 @@ msgstr ""
 msgid "This method modifies the VelocityDependence object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:543
+#: ../../reference/mdb/model/material.rst:541
 msgid "PorousBulkModuli"
 msgstr ""
 
@@ -9692,7 +9757,7 @@ msgstr ""
 msgid "This method modifies the PorousBulkModuli object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:551
+#: ../../reference/mdb/model/material.rst:549
 msgid "Sorption"
 msgstr ""
 
@@ -9741,11 +9806,11 @@ msgstr ""
 msgid "This method modifies the Sorption object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:559
+#: ../../reference/mdb/model/material.rst:557
 msgid "User"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:563
+#: ../../reference/mdb/model/material.rst:561
 msgid "Depvar"
 msgstr ""
 
@@ -9770,7 +9835,7 @@ msgstr ""
 msgid "This method modifies the Depvar object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:571
+#: ../../reference/mdb/model/material.rst:569
 msgid "UserDefinedField"
 msgstr ""
 
@@ -9794,7 +9859,7 @@ msgstr ""
 msgid "This method defines a UserDefinedField object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:579
+#: ../../reference/mdb/model/material.rst:577
 msgid "UserMaterial"
 msgstr ""
 
@@ -9819,7 +9884,7 @@ msgstr ""
 msgid "This method modifies the UserMaterial object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:587
+#: ../../reference/mdb/model/material.rst:585
 msgid "UserOutputVariables"
 msgstr ""
 
@@ -9844,17 +9909,17 @@ msgstr ""
 msgid "This method modifies the UserOutputVariables object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:595
-#: ../../reference/mdb/model/material.rst:995
+#: ../../reference/mdb/model/material.rst:593
+#: ../../reference/mdb/model/material.rst:993
 msgid "Plastic"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:599
-#: ../../reference/mdb/model/material.rst:627
+#: ../../reference/mdb/model/material.rst:597
+#: ../../reference/mdb/model/material.rst:625
 msgid "Concrete"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:603
+#: ../../reference/mdb/model/material.rst:601
 msgid "BrittleCracking"
 msgstr ""
 
@@ -9930,7 +9995,7 @@ msgstr ""
 msgid "This method modifies the BrittleCracking object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:611
+#: ../../reference/mdb/model/material.rst:609
 msgid "BrittleFailure"
 msgstr ""
 
@@ -9979,7 +10044,7 @@ msgstr ""
 msgid "This method modifies the BrittleFailure object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:619
+#: ../../reference/mdb/model/material.rst:617
 msgid "BrittleShear"
 msgstr ""
 
@@ -10088,7 +10153,7 @@ msgstr ""
 msgid "This method modifies the Concrete object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:635
+#: ../../reference/mdb/model/material.rst:633
 msgid "ConcreteCompressionDamage"
 msgstr ""
 
@@ -10130,7 +10195,7 @@ msgstr ""
 msgid "This method modifies the ConcreteCompressionDamage object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:643
+#: ../../reference/mdb/model/material.rst:641
 msgid "ConcreteCompressionHardening"
 msgstr ""
 
@@ -10171,7 +10236,7 @@ msgstr ""
 msgid "This method modifies the ConcreteCompressionHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:651
+#: ../../reference/mdb/model/material.rst:649
 msgid "ConcreteDamagedPlasticity"
 msgstr ""
 
@@ -10252,7 +10317,7 @@ msgstr ""
 msgid "This method modifies the ConcreteDamagedPlasticity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:659
+#: ../../reference/mdb/model/material.rst:657
 msgid "ConcreteTensionDamage"
 msgstr ""
 
@@ -10309,7 +10374,7 @@ msgstr ""
 msgid "This method modifies the ConcreteTensionDamage object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:667
+#: ../../reference/mdb/model/material.rst:665
 msgid "ConcreteTensionStiffening"
 msgstr ""
 
@@ -10368,7 +10433,7 @@ msgstr ""
 msgid "This method modifies the ConcreteTensionStiffening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:675
+#: ../../reference/mdb/model/material.rst:673
 msgid "FailureRatios"
 msgstr ""
 
@@ -10417,7 +10482,7 @@ msgstr ""
 msgid "This method modifies the FailureRatios object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:683
+#: ../../reference/mdb/model/material.rst:681
 msgid "ShearRetention"
 msgstr ""
 
@@ -10466,7 +10531,7 @@ msgstr ""
 msgid "This method modifies the ShearRetention object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:691
+#: ../../reference/mdb/model/material.rst:689
 msgid "TensionStiffening"
 msgstr ""
 
@@ -10511,8 +10576,8 @@ msgstr ""
 msgid "This method modifies the TensionStiffening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:699
-#: ../../reference/mdb/model/material.rst:703
+#: ../../reference/mdb/model/material.rst:697
+#: ../../reference/mdb/model/material.rst:701
 msgid "Creep"
 msgstr ""
 
@@ -10747,11 +10812,11 @@ msgstr ""
 msgid "This method modifies the Creep object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:711
+#: ../../reference/mdb/model/material.rst:709
 msgid "CriticalStateClay"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:715
+#: ../../reference/mdb/model/material.rst:713
 msgid "ClayHardening"
 msgstr ""
 
@@ -10792,7 +10857,7 @@ msgstr ""
 msgid "This method modifies the ClayHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:723
+#: ../../reference/mdb/model/material.rst:721
 msgid "ClayPlasticity"
 msgstr ""
 
@@ -10867,8 +10932,8 @@ msgstr ""
 msgid "This method modifies the ClayPlasticity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:731
-#: ../../reference/mdb/model/material.rst:735
+#: ../../reference/mdb/model/material.rst:729
+#: ../../reference/mdb/model/material.rst:733
 msgid "CrushableFoam"
 msgstr ""
 
@@ -10939,7 +11004,7 @@ msgstr ""
 msgid "This method modifies the CrushableFoam object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:743
+#: ../../reference/mdb/model/material.rst:741
 msgid "CrushableFoamHardening"
 msgstr ""
 
@@ -10980,12 +11045,12 @@ msgstr ""
 msgid "This method modifies the CrushableFoamHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:751
-#: ../../reference/mdb/model/material.rst:759
+#: ../../reference/mdb/model/material.rst:749
+#: ../../reference/mdb/model/material.rst:757
 msgid "DruckerPrager"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:755
+#: ../../reference/mdb/model/material.rst:753
 msgid "Extended"
 msgstr ""
 
@@ -11081,7 +11146,7 @@ msgstr ""
 msgid "This method modifies the DruckerPrager object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:767
+#: ../../reference/mdb/model/material.rst:765
 msgid "DruckerPragerCreep"
 msgstr ""
 
@@ -11140,7 +11205,7 @@ msgstr ""
 msgid "This method modifies the DruckerPragerCreep object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:775
+#: ../../reference/mdb/model/material.rst:773
 msgid "DruckerPragerHardening"
 msgstr ""
 
@@ -11181,7 +11246,7 @@ msgstr ""
 msgid "This method modifies the DruckerPragerHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:783
+#: ../../reference/mdb/model/material.rst:781
 msgid "TriaxialTestData"
 msgstr ""
 
@@ -11222,11 +11287,11 @@ msgstr ""
 msgid "This method modifies the TriaxialTestData object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:791
+#: ../../reference/mdb/model/material.rst:789
 msgid "ModifiedCap"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:795
+#: ../../reference/mdb/model/material.rst:793
 msgid "CapCreepCohesion"
 msgstr ""
 
@@ -11275,7 +11340,7 @@ msgstr ""
 msgid "This method modifies the CapCreepCohesion object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:803
+#: ../../reference/mdb/model/material.rst:801
 msgid "CapCreepConsolidation"
 msgstr ""
 
@@ -11304,7 +11369,7 @@ msgstr ""
 msgid "This method modifies the CapCreepConsolidation object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:811
+#: ../../reference/mdb/model/material.rst:809
 msgid "CapHardening"
 msgstr ""
 
@@ -11345,7 +11410,7 @@ msgstr ""
 msgid "This method modifies the CapHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:819
+#: ../../reference/mdb/model/material.rst:817
 msgid "CapPlasticity"
 msgstr ""
 
@@ -11417,15 +11482,15 @@ msgstr ""
 msgid "This method modifies the CapPlasticity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:827
+#: ../../reference/mdb/model/material.rst:825
 msgid "Metal"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:831
+#: ../../reference/mdb/model/material.rst:829
 msgid "Annealing"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:835
+#: ../../reference/mdb/model/material.rst:833
 msgid "AnnealTemperature"
 msgstr ""
 
@@ -11462,11 +11527,11 @@ msgstr ""
 msgid "This method modifies the AnnealTemperature object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:843
+#: ../../reference/mdb/model/material.rst:841
 msgid "CastIron"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:847
+#: ../../reference/mdb/model/material.rst:845
 msgid "CastIronCompressionHardening"
 msgstr ""
 
@@ -11509,7 +11574,7 @@ msgstr ""
 msgid "This method modifies the CastIronCompressionHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:855
+#: ../../reference/mdb/model/material.rst:853
 msgid "CastIronPlasticity"
 msgstr ""
 
@@ -11556,7 +11621,7 @@ msgstr ""
 msgid "This method modifies the CastIronPlasticity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:863
+#: ../../reference/mdb/model/material.rst:861
 msgid "CastIronTensionHardening"
 msgstr ""
 
@@ -11593,11 +11658,11 @@ msgstr ""
 msgid "This method modifies the CastIronTensionHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:871
+#: ../../reference/mdb/model/material.rst:869
 msgid "Cyclic"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:875
+#: ../../reference/mdb/model/material.rst:873
 msgid "CycledPlastic"
 msgstr ""
 
@@ -11637,7 +11702,7 @@ msgstr ""
 msgid "This method modifies the CycledPlastic object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:883
+#: ../../reference/mdb/model/material.rst:881
 msgid "CyclicHardening"
 msgstr ""
 
@@ -11650,7 +11715,7 @@ msgid "Equivalent stress."
 msgstr ""
 
 #: ../../../../src/abaqus/Material/Plastic/Metal/Cyclic/CyclicHardening.py:docstring of abaqus.Material.Plastic.Metal.Cyclic.CyclicHardening.CyclicHardening:18
-msgid ":math:`Q_{\\infty}`(only if **parameters** = ON)."
+msgid ":math:`Q_{\\infty}` (only if **parameters** = ON)."
 msgstr ""
 
 #: ../../../../src/abaqus/Material/Plastic/Metal/Cyclic/CyclicHardening.py:docstring of abaqus.Material.Plastic.Metal.Cyclic.CyclicHardening.CyclicHardening:19
@@ -11682,11 +11747,11 @@ msgstr ""
 msgid "This method modifies the CyclicHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:891
+#: ../../reference/mdb/model/material.rst:889
 msgid "Deformation"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:895
+#: ../../reference/mdb/model/material.rst:893
 msgid "DeformationPlasticity"
 msgstr ""
 
@@ -11723,12 +11788,12 @@ msgstr ""
 msgid "This method modifies the DeformationPlasticity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:903
+#: ../../reference/mdb/model/material.rst:901
 #: ../../../../src/abaqus/Material/Plastic/Metal/ORNL/Ornl.py:docstring of abaqus.Material.Plastic.Metal.ORNL.Ornl.Ornl:19
 msgid "ORNL"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:907
+#: ../../reference/mdb/model/material.rst:905
 msgid "Ornl"
 msgstr ""
 
@@ -11757,7 +11822,7 @@ msgstr ""
 msgid "This method modifies the Ornl object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:919
+#: ../../reference/mdb/model/material.rst:917
 msgid "PorousFailureCriteria"
 msgstr ""
 
@@ -11790,7 +11855,7 @@ msgstr ""
 msgid "This method modifies the PorousFailureCriteria object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:927
+#: ../../reference/mdb/model/material.rst:925
 msgid "PorousMetalPlasticity"
 msgstr ""
 
@@ -11845,7 +11910,7 @@ msgstr ""
 msgid "This method modifies the PorousMetalPlasticity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:935
+#: ../../reference/mdb/model/material.rst:933
 msgid "VoidNucleation"
 msgstr ""
 
@@ -11890,8 +11955,8 @@ msgstr ""
 msgid "This method modifies the VoidNucleation object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:943
-#: ../../reference/mdb/model/material.rst:947
+#: ../../reference/mdb/model/material.rst:941
+#: ../../reference/mdb/model/material.rst:945
 msgid "RateDependent"
 msgstr ""
 
@@ -11952,11 +12017,11 @@ msgstr ""
 msgid "This method modifies the RateDependent object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:955
+#: ../../reference/mdb/model/material.rst:953
 msgid "TwoLayerViscoPlasticity"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:959
+#: ../../reference/mdb/model/material.rst:957
 msgid "Viscous"
 msgstr ""
 
@@ -12010,11 +12075,11 @@ msgstr ""
 msgid "This method modifies the Viscous object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:967
+#: ../../reference/mdb/model/material.rst:965
 msgid "MohrCoulomb"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:971
+#: ../../reference/mdb/model/material.rst:969
 msgid "MohrCoulombHardening"
 msgstr ""
 
@@ -12051,7 +12116,7 @@ msgstr ""
 msgid "This method modifies the MohrCoulombHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:979
+#: ../../reference/mdb/model/material.rst:977
 msgid "MohrCoulombPlasticity"
 msgstr ""
 
@@ -12102,7 +12167,7 @@ msgstr ""
 msgid "This method modifies the MohrCoulombPlasticity object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:987
+#: ../../reference/mdb/model/material.rst:985
 msgid "TensionCutOff"
 msgstr ""
 
@@ -12286,7 +12351,7 @@ msgstr ""
 msgid "This method modifies the Plastic object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1003
+#: ../../reference/mdb/model/material.rst:1001
 msgid "Potential"
 msgstr ""
 
@@ -12343,7 +12408,7 @@ msgstr ""
 msgid "This method modifies the Potential object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1015
+#: ../../reference/mdb/model/material.rst:1013
 msgid "SuperElasticHardening"
 msgstr ""
 
@@ -12384,7 +12449,7 @@ msgstr ""
 msgid "This method modifies the SuperElasticHardening object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1023
+#: ../../reference/mdb/model/material.rst:1021
 msgid "SuperElasticHardeningModifications"
 msgstr ""
 
@@ -12421,8 +12486,8 @@ msgstr ""
 msgid "This method modifies the SuperElasticHardeningModifications object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1031
-#: ../../reference/mdb/model/material.rst:1035
+#: ../../reference/mdb/model/material.rst:1029
+#: ../../reference/mdb/model/material.rst:1033
 msgid "Swelling"
 msgstr ""
 
@@ -12455,7 +12520,7 @@ msgstr ""
 msgid "This method modifies the Swelling object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1043
+#: ../../reference/mdb/model/material.rst:1041
 msgid "TensileFailure"
 msgstr ""
 
@@ -12533,11 +12598,11 @@ msgstr ""
 msgid "An :py:class:`~abaqus.Material.Plastic.TensileFailure.TensileFailure` object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1051
+#: ../../reference/mdb/model/material.rst:1049
 msgid "ProgressiveDamageFailure"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1055
+#: ../../reference/mdb/model/material.rst:1053
 msgid "DamageEvolution"
 msgstr ""
 
@@ -12694,7 +12759,7 @@ msgstr ""
 msgid "This method modifies the DamageEvolution object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1063
+#: ../../reference/mdb/model/material.rst:1061
 msgid "DamageInitiation"
 msgstr ""
 
@@ -13104,7 +13169,7 @@ msgstr ""
 msgid "This method modifies the DamageInitiation object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1071
+#: ../../reference/mdb/model/material.rst:1069
 msgid "DamageStabilization"
 msgstr ""
 
@@ -13138,7 +13203,7 @@ msgstr ""
 msgid "This method modifies the DamageStabilization object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1079
+#: ../../reference/mdb/model/material.rst:1077
 msgid "DamageStabilizationCohesive"
 msgstr ""
 
@@ -13167,7 +13232,7 @@ msgstr ""
 msgid "This method modifies the DamageStabilizationCohesive object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1087
+#: ../../reference/mdb/model/material.rst:1085
 msgid "Ratios"
 msgstr ""
 
@@ -13175,11 +13240,23 @@ msgstr ""
 msgid "The Ratios object specifies ratios that define anisotropic swelling."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Ratios.py:docstring of abaqus.Material.Ratios.Ratios:27
+#: ../../../../src/abaqus/Material/Ratios.py:docstring of abaqus.Material.Ratios.Ratios:18
+msgid "r11."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Ratios.py:docstring of abaqus.Material.Ratios.Ratios:19
+msgid "r22."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Ratios.py:docstring of abaqus.Material.Ratios.Ratios:20
+msgid "r33."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Ratios.py:docstring of abaqus.Material.Ratios.Ratios:28
 msgid "RATIOS"
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Ratios.py:docstring of abaqus.Material.Ratios.Ratios:30
+#: ../../../../src/abaqus/Material/Ratios.py:docstring of abaqus.Material.Ratios.Ratios:31
 msgid "Check `Ratios on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ratiospyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -13208,7 +13285,7 @@ msgstr ""
 msgid "This method modifies the Ratios object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1095
+#: ../../reference/mdb/model/material.rst:1093
 msgid "Regularization"
 msgstr ""
 
@@ -13249,11 +13326,11 @@ msgstr ""
 msgid "This method modifies the Regularization object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1103
+#: ../../reference/mdb/model/material.rst:1101
 msgid "TestData"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1107
+#: ../../reference/mdb/model/material.rst:1105
 msgid "BiaxialTestData"
 msgstr ""
 
@@ -13286,11 +13363,11 @@ msgstr ""
 msgid "This method modifies the BiaxialTestData object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1115
+#: ../../reference/mdb/model/material.rst:1113
 msgid "BiaxialTestDataArray"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1123
+#: ../../reference/mdb/model/material.rst:1121
 msgid "MullinsEffect"
 msgstr ""
 
@@ -13369,7 +13446,7 @@ msgstr ""
 msgid "A tuple of tuples of Floats specifying the items described below. The default value is an empty sequence."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1131
+#: ../../reference/mdb/model/material.rst:1129
 msgid "PlanarTestData"
 msgstr ""
 
@@ -13433,11 +13510,11 @@ msgstr ""
 msgid "This method modifies the PlanarTestData object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1139
+#: ../../reference/mdb/model/material.rst:1137
 msgid "PlanarTestDataArray"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1147
+#: ../../reference/mdb/model/material.rst:1145
 msgid "ShearTestData"
 msgstr ""
 
@@ -13451,7 +13528,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Material/TestData/ShearTestData.py:docstring of abaqus.Material.TestData.ShearTestData.ShearTestData:20
 #: ../../../../src/abaqus/Material/TestData/ShearTestData.py:docstring of abaqus.Material.TestData.ShearTestData.ShearTestData:25
-#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:29
+#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:31
 msgid "Time :math:`t (t>0)`."
 msgstr ""
 
@@ -13484,7 +13561,7 @@ msgstr ""
 msgid "This method modifies the ShearTestData object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1155
+#: ../../reference/mdb/model/material.rst:1153
 msgid "SimpleShearTestData"
 msgstr ""
 
@@ -13529,7 +13606,7 @@ msgstr ""
 msgid "This method modifies the SimpleShearTestData object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1163
+#: ../../reference/mdb/model/material.rst:1161
 msgid "UniaxialTestData"
 msgstr ""
 
@@ -13585,11 +13662,11 @@ msgstr ""
 msgid "This method modifies the UniaxialTestData object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1171
+#: ../../reference/mdb/model/material.rst:1169
 msgid "UniaxialTestDataArray"
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1179
+#: ../../reference/mdb/model/material.rst:1177
 msgid "VolumetricTestData"
 msgstr ""
 
@@ -13609,27 +13686,27 @@ msgstr ""
 msgid "Volume ratio, :math:`J` (current volume/original volume)."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:24
+#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:25
 msgid "For a viscoelastic material model, the values depend on the value of the **time** member of the  :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic` object."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:28
+#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:30
 msgid "Normalized volumetric (bulk) modulus :math:`k_{R}(t), \\quad\\left(0 \\leq k_{R}(t) \\leq 1\\right)`"
 msgstr ""
 
-#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:32
+#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:35
 msgid "Normalized volumetric (bulk) compliance :math:`j_{K}(t), \\quad\\left(j_{K}(t) \\geq 1\\right)`."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:33
+#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:36
 msgid "Time :math:`t(t>0)`"
 msgstr ""
 
-#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:37
+#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:40
 msgid "VOLUMETRIC TEST DATA"
 msgstr ""
 
-#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:40
+#: ../../../../src/abaqus/Material/TestData/VolumetricTestData.py:docstring of abaqus.Material.TestData.VolumetricTestData.VolumetricTestData:43
 msgid "Check `VolumetricTestData on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-volumetrictestdatapyc.htm?contextscope=all>`_."
 msgstr ""
 
@@ -13650,6 +13727,282 @@ msgstr ""
 msgid "This method modifies the VolumetricTestData object."
 msgstr ""
 
-#: ../../reference/mdb/model/material.rst:1187
+#: ../../reference/mdb/model/material.rst:1185
 msgid "MultiScale"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization:2
+msgid "The MeanFieldHomogenization object specifies the multiscale material definition."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization:16
+msgid "MEAN FIELD HOMOGENIZATION"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization:18
+msgid "The `MeanFieldHomogenization` class was added."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.__init__>`\\ \\(\\[angleSubdivision\\, formulation\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`MeanFieldInclusion <abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion>`\\ \\(name\\, table\\[\\, material\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:2
+#: ../../None:4:<autosummary>:1
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a MeanFieldInclusion object."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`MeanFieldMatrix <abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix>`\\ \\(name\\[\\, material\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:2
+#: ../../None:4:<autosummary>:1
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a MeanFieldMatrix object."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`MeanFieldVoid <abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid>`\\ \\(name\\, table\\[\\, material\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:2
+#: ../../None:4:<autosummary>:1
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a MeanFieldVoid object."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.setValues>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.setValues:2
+#: ../../None:7:<autosummary>:1
+msgid "This method modifies the MeanFieldHomogenization object."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:13
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion:30
+msgid "Check `MeanFieldInclusion on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meanfieldinclusionpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:18
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:18
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:18
+msgid "A String specifying the constituent repository key."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:24
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:21
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:24
+msgid "A String specifying the name of the material."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:28
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:25
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:28
+msgid "**isotropizationCoefficient**"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:27
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:24
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:27
+msgid "A Float specifying the factor used for scaling the Plastic strain of the constituent when calculating the isotropic part of the tangent."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:32
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:32
+msgid "**volumeFractionType**"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:31
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:31
+msgid "A SymbolicConstant specifying the type of volume fraction. Possible values are UNIFORM, ANALYTICAL_FIELD, and DISCRETE_FIELD. The default value is UNIFORM."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:35
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:35
+msgid "**volumeFractionFieldName**"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:35
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:42
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:49
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:35
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:42
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:49
+msgid "A String specifying the name of the AnalyticalField object or DiscreteField object."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:39
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:39
+msgid "**aspectRatioType**"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:38
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:38
+msgid "A SymbolicConstant specifying the type of aspect ratio. Possible values are UNIFORM, ANALYTICAL_FIELD, and DISCRETE_FIELD. The default value is UNIFORM."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:42
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:42
+msgid "**aspectRatioFieldName**"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:46
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:46
+msgid "**orientationTensorType**"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:45
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:45
+msgid "A SymbolicConstant specifying the type of orientation tensor. Possible values are UNIFORM, ANALYTICAL_FIELD, and DISCRETE_FIELD. The default value is UNIFORM."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:49
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:49
+msgid "**orientationTensorFieldName**"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:53
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:53
+msgid "**shape**"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:52
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:52
+msgid "A SymbolicConstant specifying the type of inclusion shapes. Possible values are SPHERE, PROLATE, OBLATE, CYLINDER, PENNY, and ELLIPTIC_CYLINDER. The default value is SPHERE."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:56
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:56
+msgid "A SymbolicConstant specifying the type of inclusion direction. Possible values are FIXED, RANDOM3D, and ORIENTATION_TENSOR."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:60
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:60
+msgid "**strainConcentrationTensor**"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:60
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:60
+msgid "A sequence of Floats defining the 36 components of the strain concentration tensor."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:64
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:64
+msgid "**temperatureGradientConcentrationTensor**"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:63
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:63
+msgid "A sequence of Floats defining the 9 components of the temperature gradient concentration tensor."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:72
+msgid ":obj:`A` :obj:`MeanFieldInclusion` object."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:13
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldMatrix.py:docstring of abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix:22
+msgid "Check `MeanFieldMatrix on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meanfieldmatrixpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:33
+msgid ":obj:`A` :obj:`MeanFieldMatrix` object."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:13
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid:30
+msgid "Check `MeanFieldVoid on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meanfieldvoidpyc.htm?contextscope=all>`_."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:72
+msgid ":obj:`A` :obj:`MeanFieldVoid` object."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion:2
+msgid "The MeanFieldInclusion object specifies the inclusion type multiscale material property."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion:16
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid:16
+msgid "Volume fraction."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion:17
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid:17
+msgid "Aspect ratio."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion:18
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid:18
+msgid "Components of the direction vector defined in the local coordinate system when **direction** = FIXED. Components of the second-order orientation tensor in the local coordinate system when **direction** = ORIENTATION_TENSOR."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion:24
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldMatrix.py:docstring of abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix:16
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid:24
+msgid "CONSTITUENT"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion:26
+msgid "The `MeanFieldInclusion` class was added."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion.__init__>`\\ \\(name\\, table\\[\\, material\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion.setValues>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion.setValues:2
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the MeanFieldInclusion object."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldMatrix.py:docstring of abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix:2
+msgid "The MeanFieldMatrix object specifies the matrix property."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldMatrix.py:docstring of abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix:18
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid:26
+msgid "The `MeanFieldMatrix` class was added."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix.__init__>`\\ \\(name\\[\\, material\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix.setValues>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldMatrix.py:docstring of abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix.setValues:2
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the MeanFieldMatrix object."
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid:2
+msgid "The MeanFieldVoid object specifies the void inclusion property."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid.__init__>`\\ \\(name\\, table\\[\\, material\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid.setValues>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid.setValues:2
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the MeanFieldVoid object."
 msgstr ""

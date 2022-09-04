@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,8 +51,7 @@ msgstr ""
 msgid "This object can be accessed by:"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb:13 abaqus.Mdb.Mdb.Mdb:13
-#: abaqus.Mdb.MdbBase.MdbBase:13 abaqus.Part.AcisMdb.AcisMdb:13 of
+#: abaqus.Mdb.Mdb.Mdb:13 of
 msgid ""
 "Check `Mdb on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`_."
@@ -1548,9 +1547,10 @@ msgstr ""
 msgid ""
 "A SymbolicConstant specifying the topology of the data to be read from "
 "the file and of the part to be created. Possible values are SOLID, SHELL,"
-" and WIRE. If *topology*=SOLID, Abaqus/CAE attempts to attach cells to "
-"create a solid entity. If *topology*=SHELL, Abaqus/CAE builds the body as"
-" a shell entity, not as a solid entity. The default value is SOLID."
+" and WIRE. If **topology** = SOLID, Abaqus/CAE attempts to attach cells "
+"to create a solid entity. If **topology** = SHELL, Abaqus/CAE builds the "
+"body as a shell entity, not as a solid entity. The default value is "
+"SOLID."
 msgstr ""
 
 #: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:36 of
@@ -1668,6 +1668,12 @@ msgstr ""
 msgid "MdbBase"
 msgstr ""
 
+#: abaqus.Mdb.MdbBase.MdbBase:13 of
+msgid ""
+"Check `MdbBase on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`_."
+msgstr ""
+
 #: ../../None:11:<autosummary>:1
 msgid ":py:obj:`version <abaqus.Mdb.MdbBase.MdbBase.version>`\\"
 msgstr ""
@@ -1760,6 +1766,12 @@ msgstr ""
 
 #: ../../reference/mdb.rst:39
 msgid "AcisMdb"
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb:13 of
+msgid ""
+"Check `AcisMdb on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -1900,8 +1912,14 @@ msgid ""
 " \\(fromName\\[\\, toName\\]\\)"
 msgstr ""
 
-#: ../../reference/mdb.rst:47
+#: ../../reference/mdb.rst:48
 msgid "JobMdb"
+msgstr ""
+
+#: abaqus.Job.JobMdb.JobMdb:13 of
+msgid ""
+"Check `JobMdb on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -2010,4 +2028,18 @@ msgid ""
 ":py:obj:`copyAuxMdbModel <abaqus.Job.JobMdb.JobMdb.copyAuxMdbModel>`\\ "
 "\\(fromName\\[\\, toName\\]\\)"
 msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the topology "
+#~ "of the data to be read from "
+#~ "the file and of the part to "
+#~ "be created. Possible values are SOLID,"
+#~ " SHELL, and WIRE. If *topology*=SOLID, "
+#~ "Abaqus/CAE attempts to attach cells to"
+#~ " create a solid entity. If "
+#~ "*topology*=SHELL, Abaqus/CAE builds the body"
+#~ " as a shell entity, not as a"
+#~ " solid entity. The default value is"
+#~ " SOLID."
+#~ msgstr ""
 

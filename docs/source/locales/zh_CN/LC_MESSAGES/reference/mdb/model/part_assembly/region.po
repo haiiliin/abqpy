@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,11 +127,10 @@ msgstr ""
 msgid "This object can be accessed by:"
 msgstr ""
 
-#: abaqus.Region.RegionPart.RegionPart:13
-#: abaqus.Region.RegionPartBase.RegionPartBase:13 of
+#: abaqus.Region.RegionPart.RegionPart:13 of
 msgid ""
-"Check `Part on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all>`_."
+"Check `RegionPart on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partregpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.EditSkin:2
@@ -719,11 +718,10 @@ msgid ""
 "created."
 msgstr ""
 
-#: abaqus.Region.RegionAssembly.RegionAssembly:15
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:13 of
+#: abaqus.Region.RegionAssembly.RegionAssembly:15 of
 msgid ""
-"Check `Assembly on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
+"Check `RegionAssembly on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblyregpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:2 of
@@ -753,6 +751,12 @@ msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/region.rst:50
 msgid "Region features for Part"
+msgstr ""
+
+#: abaqus.Region.RegionPartBase.RegionPartBase:13 of
+msgid ""
+"Check `RegionPartBase on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase
@@ -1154,11 +1158,7 @@ msgstr ""
 #: ../../None:9:<autosummary>:1
 msgid ""
 "This command prints a message describing the relationship between the "
-"contents of two sets. Possible outcomes are:     - Both sets are the "
-"same. - Set 2 is a subset of set 1. - Set 2 is a superset of set 1. - Set"
-" 2 intersects set 1. - Set 2 touches set 1 (their boundaries intersect). "
-"- Set 2 and set 1 are disjoint. This command accepts only positional "
-"arguments and has no keywords."
+"contents of two sets."
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
@@ -3497,65 +3497,65 @@ msgid ""
 "contents of two sets. Possible outcomes are:"
 msgstr ""
 
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:4
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:4 of
-msgid "Both sets are the same."
-msgstr ""
-
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:5
 #: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:5 of
-msgid "Set 2 is a subset of set 1."
+msgid "Both sets are the same."
 msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:6
 #: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:6 of
-msgid "Set 2 is a superset of set 1."
+msgid "Set 2 is a subset of set 1."
 msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:7
 #: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:7 of
-msgid "Set 2 intersects set 1."
+msgid "Set 2 is a superset of set 1."
 msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:8
 #: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:8 of
-msgid "Set 2 touches set 1 (their boundaries intersect)."
+msgid "Set 2 intersects set 1."
 msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:9
 #: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:9 of
-msgid "Set 2 and set 1 are disjoint."
+msgid "Set 2 touches set 1 (their boundaries intersect)."
 msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:10
 #: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:10 of
+msgid "Set 2 and set 1 are disjoint."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:12
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:12 of
 msgid "This command accepts only positional arguments and has no keywords."
 msgstr ""
 
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:13 of
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:15 of
 msgid ""
 "Check `Part.clashSets() on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
 "#simaker-partclashsetspyc>`_."
 msgstr ""
 
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:18
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:18 of
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:20
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:20 of
 msgid "**arg1**"
 msgstr ""
 
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:18
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:18 of
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:20
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:20 of
 msgid "A Set or Surface object specifying set 1."
 msgstr ""
 
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:34
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:34 of
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:36
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:36 of
 msgid "**arg2**"
 msgstr ""
 
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:21
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:21 of
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:23
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:23 of
 msgid "A Set or Surface object specifying set 2."
 msgstr ""
 
@@ -3679,6 +3679,12 @@ msgstr ""
 msgid ""
 "The following commands operate on Assembly objects. For more information "
 "about the Assembly object, see Assembly object."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:13 of
+msgid ""
+"Check `RegionAssemblyBase on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -3926,8 +3932,8 @@ msgstr ""
 msgid ""
 "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object "
 "specifying the PartInstances and A "
-":py:class:`~abaqus.Model.Model.ModelInstance` object specifying the "
-"ModelInstances."
+":py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object "
+"specifying the ModelInstances."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -5056,7 +5062,7 @@ msgid ""
 "<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.suppress>`\\ \\(\\)"
 msgstr ""
 
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:13 of
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:15 of
 msgid ""
 "Check `Assembly.clashSets() on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
@@ -5758,4 +5764,36 @@ msgid ""
 "A tuple of Ints specifying the instances. This member is not applicable "
 "for a Surface object on an output database."
 msgstr ""
+
+#~ msgid ""
+#~ "Check `Part on help.3ds.com/2021 "
+#~ "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly on help.3ds.com/2021 "
+#~ "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This command prints a message describing"
+#~ " the relationship between the contents "
+#~ "of two sets. Possible outcomes are:"
+#~ "     - Both sets are the same. "
+#~ "- Set 2 is a subset of set"
+#~ " 1. - Set 2 is a superset "
+#~ "of set 1. - Set 2 intersects "
+#~ "set 1. - Set 2 touches set 1"
+#~ " (their boundaries intersect). - Set "
+#~ "2 and set 1 are disjoint. This "
+#~ "command accepts only positional arguments "
+#~ "and has no keywords."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` "
+#~ "object specifying the PartInstances and "
+#~ "A :py:class:`~abaqus.Model.Model.ModelInstance` object "
+#~ "specifying the ModelInstances."
+#~ msgstr ""
 

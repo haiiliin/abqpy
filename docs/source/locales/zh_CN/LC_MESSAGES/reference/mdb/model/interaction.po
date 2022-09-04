@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-04 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,8 +129,8 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel:12 of
 msgid ""
-"Check `Model on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+"Check `InteractionModel on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelitnpyc.htm?contextscope=all>`_."
 msgstr ""
 
 #: abaqus.Interaction.AcousticImpedance.AcousticImpedance
@@ -5576,14 +5576,12 @@ msgstr ""
 #: of
 msgid ""
 "A float specifying the separation distance between the master surface and"
-" the slave"
+" the slave surface."
 msgstr ""
 
-#: abaqus.Interaction.InteractionModel.InteractionModel.getSurfaceSeparation:16
+#: abaqus.Interaction.InteractionModel.InteractionModel.getSurfaceSeparation:17
 #: of
-msgid ""
-"surface. - A boolean specifying whether or not contact surfaces are "
-"overclosed.."
+msgid "A boolean specifying whether or not contact surfaces are overclosed."
 msgstr ""
 
 #: ../../reference/mdb/model/interaction.rst:18
@@ -5659,16 +5657,16 @@ msgstr ""
 #: ../../docstring abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:19
 #: abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:31
 #: abaqus.Interaction.ContactDamage.ContactDamage:21
-#: abaqus.Interaction.ContactDamage.ContactDamage:30
-#: abaqus.Interaction.ContactDamage.ContactDamage:39
-#: abaqus.Interaction.ContactDamage.ContactDamage:47
-#: abaqus.Interaction.ContactDamage.ContactDamage:58
-#: abaqus.Interaction.ContactDamage.ContactDamage:69
-#: abaqus.Interaction.ContactDamage.ContactDamage:78
-#: abaqus.Interaction.ContactDamage.ContactDamage:90
-#: abaqus.Interaction.ContactDamage.ContactDamage:99
-#: abaqus.Interaction.ContactDamage.ContactDamage:111
-#: abaqus.Interaction.ContactDamage.ContactDamage:122
+#: abaqus.Interaction.ContactDamage.ContactDamage:31
+#: abaqus.Interaction.ContactDamage.ContactDamage:41
+#: abaqus.Interaction.ContactDamage.ContactDamage:49
+#: abaqus.Interaction.ContactDamage.ContactDamage:60
+#: abaqus.Interaction.ContactDamage.ContactDamage:71
+#: abaqus.Interaction.ContactDamage.ContactDamage:80
+#: abaqus.Interaction.ContactDamage.ContactDamage:92
+#: abaqus.Interaction.ContactDamage.ContactDamage:101
+#: abaqus.Interaction.ContactDamage.ContactDamage:113
+#: abaqus.Interaction.ContactDamage.ContactDamage:124
 #: abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior:21
 #: abaqus.Interaction.FilmConditionProp.FilmConditionProp.property:5
 #: abaqus.Interaction.FilmConditionProp.FilmConditionProp.setValues:19
@@ -5683,23 +5681,23 @@ msgstr ""
 #: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:19
 #: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:28
 #: abaqus.Interaction.ThermalConductance.ThermalConductance:19
-#: abaqus.Interaction.ThermalConductance.ThermalConductance:28 of
+#: abaqus.Interaction.ThermalConductance.ThermalConductance:29 of
 msgid "Temperature, if the data depend on temperature."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:20
 #: abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:32
 #: abaqus.Interaction.ContactDamage.ContactDamage:22
-#: abaqus.Interaction.ContactDamage.ContactDamage:31
-#: abaqus.Interaction.ContactDamage.ContactDamage:40
-#: abaqus.Interaction.ContactDamage.ContactDamage:48
-#: abaqus.Interaction.ContactDamage.ContactDamage:59
-#: abaqus.Interaction.ContactDamage.ContactDamage:70
-#: abaqus.Interaction.ContactDamage.ContactDamage:79
-#: abaqus.Interaction.ContactDamage.ContactDamage:91
-#: abaqus.Interaction.ContactDamage.ContactDamage:100
-#: abaqus.Interaction.ContactDamage.ContactDamage:112
-#: abaqus.Interaction.ContactDamage.ContactDamage:123
+#: abaqus.Interaction.ContactDamage.ContactDamage:32
+#: abaqus.Interaction.ContactDamage.ContactDamage:42
+#: abaqus.Interaction.ContactDamage.ContactDamage:50
+#: abaqus.Interaction.ContactDamage.ContactDamage:61
+#: abaqus.Interaction.ContactDamage.ContactDamage:72
+#: abaqus.Interaction.ContactDamage.ContactDamage:81
+#: abaqus.Interaction.ContactDamage.ContactDamage:93
+#: abaqus.Interaction.ContactDamage.ContactDamage:102
+#: abaqus.Interaction.ContactDamage.ContactDamage:114
+#: abaqus.Interaction.ContactDamage.ContactDamage:125
 #: abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior:22
 #: abaqus.Interaction.FilmConditionProp.FilmConditionProp.property:6
 #: abaqus.Interaction.FilmConditionProp.FilmConditionProp.setValues:20
@@ -5716,23 +5714,23 @@ msgstr ""
 #: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:20
 #: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:29
 #: abaqus.Interaction.ThermalConductance.ThermalConductance:21
-#: abaqus.Interaction.ThermalConductance.ThermalConductance:30 of
+#: abaqus.Interaction.ThermalConductance.ThermalConductance:31 of
 msgid "Value of the first field variable, if the data depend on field variables."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:21
 #: abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:33
 #: abaqus.Interaction.ContactDamage.ContactDamage:23
-#: abaqus.Interaction.ContactDamage.ContactDamage:32
-#: abaqus.Interaction.ContactDamage.ContactDamage:41
-#: abaqus.Interaction.ContactDamage.ContactDamage:49
-#: abaqus.Interaction.ContactDamage.ContactDamage:60
-#: abaqus.Interaction.ContactDamage.ContactDamage:71
-#: abaqus.Interaction.ContactDamage.ContactDamage:80
-#: abaqus.Interaction.ContactDamage.ContactDamage:92
-#: abaqus.Interaction.ContactDamage.ContactDamage:101
-#: abaqus.Interaction.ContactDamage.ContactDamage:113
-#: abaqus.Interaction.ContactDamage.ContactDamage:124
+#: abaqus.Interaction.ContactDamage.ContactDamage:33
+#: abaqus.Interaction.ContactDamage.ContactDamage:43
+#: abaqus.Interaction.ContactDamage.ContactDamage:51
+#: abaqus.Interaction.ContactDamage.ContactDamage:62
+#: abaqus.Interaction.ContactDamage.ContactDamage:73
+#: abaqus.Interaction.ContactDamage.ContactDamage:82
+#: abaqus.Interaction.ContactDamage.ContactDamage:94
+#: abaqus.Interaction.ContactDamage.ContactDamage:103
+#: abaqus.Interaction.ContactDamage.ContactDamage:115
+#: abaqus.Interaction.ContactDamage.ContactDamage:126
 #: abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior:23
 #: abaqus.Interaction.FilmConditionProp.FilmConditionProp.property:7
 #: abaqus.Interaction.FilmConditionProp.FilmConditionProp.setValues:21
@@ -5749,23 +5747,23 @@ msgstr ""
 #: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:21
 #: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:30
 #: abaqus.Interaction.ThermalConductance.ThermalConductance:22
-#: abaqus.Interaction.ThermalConductance.ThermalConductance:31 of
+#: abaqus.Interaction.ThermalConductance.ThermalConductance:32 of
 msgid "Value of the second field variable."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:22
 #: abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:34
 #: abaqus.Interaction.ContactDamage.ContactDamage:24
-#: abaqus.Interaction.ContactDamage.ContactDamage:33
-#: abaqus.Interaction.ContactDamage.ContactDamage:42
-#: abaqus.Interaction.ContactDamage.ContactDamage:50
-#: abaqus.Interaction.ContactDamage.ContactDamage:61
-#: abaqus.Interaction.ContactDamage.ContactDamage:72
-#: abaqus.Interaction.ContactDamage.ContactDamage:81
-#: abaqus.Interaction.ContactDamage.ContactDamage:93
-#: abaqus.Interaction.ContactDamage.ContactDamage:102
-#: abaqus.Interaction.ContactDamage.ContactDamage:114
-#: abaqus.Interaction.ContactDamage.ContactDamage:125
+#: abaqus.Interaction.ContactDamage.ContactDamage:34
+#: abaqus.Interaction.ContactDamage.ContactDamage:44
+#: abaqus.Interaction.ContactDamage.ContactDamage:52
+#: abaqus.Interaction.ContactDamage.ContactDamage:63
+#: abaqus.Interaction.ContactDamage.ContactDamage:74
+#: abaqus.Interaction.ContactDamage.ContactDamage:83
+#: abaqus.Interaction.ContactDamage.ContactDamage:95
+#: abaqus.Interaction.ContactDamage.ContactDamage:104
+#: abaqus.Interaction.ContactDamage.ContactDamage:116
+#: abaqus.Interaction.ContactDamage.ContactDamage:127
 #: abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior:24
 #: abaqus.Interaction.FilmConditionProp.FilmConditionProp.property:8
 #: abaqus.Interaction.FilmConditionProp.FilmConditionProp.setValues:22
@@ -5785,154 +5783,154 @@ msgstr ""
 #: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:22
 #: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:31
 #: abaqus.Interaction.ThermalConductance.ThermalConductance:23
-#: abaqus.Interaction.ThermalConductance.ThermalConductance:32 of
+#: abaqus.Interaction.ThermalConductance.ThermalConductance:33 of
 msgid "Etc."
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:25 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:26 of
 msgid ""
 "If **criterion** = MAX_SEPARATION or QUAD_SEPARATION, the table data "
 "specify the following:"
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:27 of
-msgid "Separation at damage initiation in a normal-only mode."
-msgstr ""
-
 #: abaqus.Interaction.ContactDamage.ContactDamage:28 of
-msgid ""
-"Separation at damage initiation in a shear-only mode that involves "
-"separation only along the first shear direction."
+msgid "Separation at damage initiation in a normal-only mode."
 msgstr ""
 
 #: abaqus.Interaction.ContactDamage.ContactDamage:29 of
 msgid ""
 "Separation at damage initiation in a shear-only mode that involves "
+"separation only along the first shear direction."
+msgstr ""
+
+#: abaqus.Interaction.ContactDamage.ContactDamage:30 of
+msgid ""
+"Separation at damage initiation in a shear-only mode that involves "
 "separation only along the second shear direction."
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:34 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:36 of
 msgid "Table data for **evolTable**:"
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:36 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:38 of
 msgid ""
 "If **evolutionType** = DISPLACEMENT, **softening** = LINEAR, and "
 "**useMixedMode** = OFF, the table data specify the following:"
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:38
-#: abaqus.Interaction.ContactDamage.ContactDamage:76
-#: abaqus.Interaction.ContactDamage.ContactDamage:98 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:40
+#: abaqus.Interaction.ContactDamage.ContactDamage:78
+#: abaqus.Interaction.ContactDamage.ContactDamage:100 of
 msgid ""
 "Effective total or Plastic displacement at failure, measured from the "
 "time of damage initiation."
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:44 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:46 of
 msgid ""
 "If **evolutionType** = ENERGY, **softening** = LINEAR or EXPONENTIAL, and"
 " **useMixedMode** = OFF, the table data specify the following:"
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:46
-#: abaqus.Interaction.ContactDamage.ContactDamage:66 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:48
+#: abaqus.Interaction.ContactDamage.ContactDamage:68 of
 msgid "Fracture energy."
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:52 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:54 of
 msgid ""
 "If **evolutionType** = DISPLACEMENT, **softening** = LINEAR, "
 "**useMixedMode** = ON, **mixedModeType** = TABULAR, and **modeMixRatio** "
 "= ENERGY or TRACTION, the table data specify the following:"
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:55
-#: abaqus.Interaction.ContactDamage.ContactDamage:86 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:57
+#: abaqus.Interaction.ContactDamage.ContactDamage:88 of
 msgid ""
 "Total displacement at failure, measured from the time of damage "
 "initiation."
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:56
-#: abaqus.Interaction.ContactDamage.ContactDamage:67
-#: abaqus.Interaction.ContactDamage.ContactDamage:88
-#: abaqus.Interaction.ContactDamage.ContactDamage:109 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:58
+#: abaqus.Interaction.ContactDamage.ContactDamage:69
+#: abaqus.Interaction.ContactDamage.ContactDamage:90
+#: abaqus.Interaction.ContactDamage.ContactDamage:111 of
 msgid "Appropriate mode mix ratio."
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:57
-#: abaqus.Interaction.ContactDamage.ContactDamage:68
-#: abaqus.Interaction.ContactDamage.ContactDamage:89
-#: abaqus.Interaction.ContactDamage.ContactDamage:110 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:59
+#: abaqus.Interaction.ContactDamage.ContactDamage:70
+#: abaqus.Interaction.ContactDamage.ContactDamage:91
+#: abaqus.Interaction.ContactDamage.ContactDamage:112 of
 msgid ""
 "Appropriate mode mix ratio (if relevant, for three dimensional problems "
 "with anisotropic shear behavior)."
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:63 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:65 of
 msgid ""
 "If **evolutionType** = ENERGY, **softening** = LINEAR or EXPONENTIAL, "
 "**useMixedMode** = ON, **mixedModeType** = TABULAR, and **modeMixRatio** "
 "= ENERGY or TRACTION, the table data specify the following:"
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:74 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:76 of
 msgid ""
 "If **evolutionType** = DISPLACEMENT, **softening** = EXPONENTIAL, and "
 "**useMixedMode** = OFF, the table data specify the following:"
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:77
-#: abaqus.Interaction.ContactDamage.ContactDamage:87 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:79
+#: abaqus.Interaction.ContactDamage.ContactDamage:89 of
 msgid "Exponential law parameter."
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:83 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:85 of
 msgid ""
 "If **evolutionType** = DISPLACEMENT, **softening** = EXPONENTIAL, "
 "**useMixedMode** = ON, **mixedModeType** = TABULAR, and **modeMixRatio** "
 "= ENERGY or TRACTION, the table data specify the following:"
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:95 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:97 of
 msgid ""
 "If **evolutionType** = DISPLACEMENT, **softening** = TABULAR, and "
 "**useMixedMode** = OFF, the table data specify the following:"
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:97
-#: abaqus.Interaction.ContactDamage.ContactDamage:107 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:99
+#: abaqus.Interaction.ContactDamage.ContactDamage:109 of
 msgid "Damage variable."
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:104 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:106 of
 msgid ""
 "If **evolutionType** = DISPLACEMENT, **softening** = TABULAR, "
 "**useMixedMode** = ON, **mixedModeType** = TABULAR, and **modeMixRatio** "
 "= ENERGY or TRACTION, the table data specify the following:"
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:108 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:110 of
 msgid "Effective total displacement, measured from the time of damage initiation."
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:116 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:118 of
 msgid ""
 "If **evolutionType** = ENERGY, **softening** = LINEAR or EXPONENTIAL, "
 "**useMixedMode** = ON, **mixedModeType** = POWER_LAW or BK, and "
 "**modeMixRatio** = ENERGY, the table data specify the following:"
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:119 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:121 of
 msgid "Normal mode fracture energy."
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:120 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:122 of
 msgid "Shear mode fracture energy for failure in the first shear direction."
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:121 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:123 of
 msgid "Shear mode fracture energy for failure in the second shear direction."
 msgstr ""
 
@@ -5947,7 +5945,7 @@ msgstr ""
 #: abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:36
 #: abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState:17
 #: abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState:18
-#: abaqus.Interaction.ContactDamage.ContactDamage:127
+#: abaqus.Interaction.ContactDamage.ContactDamage:129
 #: abaqus.Interaction.ContactDamping.ContactDamping:28
 #: abaqus.Interaction.ContactExp.ContactExp:14
 #: abaqus.Interaction.ContactProperty.ContactProperty:13
@@ -5995,25 +5993,25 @@ msgstr ""
 #: abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment:14
 #: abaqus.Interaction.SurfaceToSurfaceExpState.SurfaceToSurfaceExpState:17
 #: abaqus.Interaction.SurfaceToSurfaceStdState.SurfaceToSurfaceStdState:17
-#: abaqus.Interaction.ThermalConductance.ThermalConductance:34
+#: abaqus.Interaction.ThermalConductance.ThermalConductance:35
 #: abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth:13
 #: abaqus.Interaction.XFEMCrackGrowthState.XFEMCrackGrowthState:17 of
 msgid "The corresponding analysis keywords are:"
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:129 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:131 of
 msgid "DAMAGE INITIATION"
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:130 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:132 of
 msgid "DAMAGE EVOLUTION"
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:131 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:133 of
 msgid "DAMAGE STABILIZATION"
 msgstr ""
 
-#: abaqus.Interaction.ContactDamage.ContactDamage:134 of
+#: abaqus.Interaction.ContactDamage.ContactDamage:136 of
 msgid ""
 "Check `ContactDamage on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contactdamagepyc.htm?contextscope=all>`_."
@@ -7891,7 +7889,7 @@ msgid ":obj:`ContactTangentialBehavior`"
 msgstr ""
 
 #: abaqus.Interaction.ContactProperty.ContactProperty.ThermalConductance:12
-#: abaqus.Interaction.ThermalConductance.ThermalConductance:39 of
+#: abaqus.Interaction.ThermalConductance.ThermalConductance:40 of
 msgid ""
 "Check `ThermalConductance on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-thermalconductancepyc.htm?contextscope=all>`_."
@@ -8058,7 +8056,7 @@ msgstr ""
 #: abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment.appendInStep:39
 #: abaqus.Interaction.InitializationAssignment.InitializationAssignment.appendInStep:33
 #: abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment.appendInStep:32
-#: abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.appendInStep:32
+#: abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.appendInStep:33
 #: abaqus.Interaction.StabilizationAssignment.StabilizationAssignment.appendInStep:32
 #: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:42
 #: abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment.appendInStep:37
@@ -8198,7 +8196,7 @@ msgstr ""
 
 #: abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment.delete:22
 #: of
-msgid "*surfPair* and *indices* arguments are mutually exclusive."
+msgid "**surfPair** and **indices** arguments are mutually exclusive."
 msgstr ""
 
 #: abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment.delete:24
@@ -8529,7 +8527,7 @@ msgid ""
 "explicit constructor, members, or methods."
 msgstr ""
 
-#: abaqus.Interaction.InteractionProperty.InteractionProperty:17 of
+#: abaqus.Interaction.InteractionProperty.InteractionProperty:15 of
 msgid ""
 "Check `InteractionProperty on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-interactionpropertypyc.htm?contextscope=all>`_."
@@ -14770,7 +14768,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:18 of
-msgid "If *definition*=DUAL PRESSURE, the table data specify the following:"
+msgid "If **definition** = DUAL PRESSURE, the table data specify the following:"
 msgstr ""
 
 #: abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:20
@@ -14791,7 +14789,9 @@ msgid "Tank pressure."
 msgstr ""
 
 #: abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:24 of
-msgid "If *definition*=PRESSURE AND MASS, the table data specify the following:"
+msgid ""
+"If **definition** = PRESSURE AND MASS, the table data specify the "
+"following:"
 msgstr ""
 
 #: abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:28
@@ -14800,7 +14800,7 @@ msgid "Inflator mass flow rate."
 msgstr ""
 
 #: abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:30 of
-msgid "If *definition*=TANK TEST, the table data specify the following:"
+msgid "If **definition** = TANK TEST, the table data specify the following:"
 msgstr ""
 
 #: abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:33
@@ -14810,7 +14810,7 @@ msgstr ""
 
 #: abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:36 of
 msgid ""
-"If *definition*=TEMPERATURE AND MASS, the table data specify the "
+"If **definition** = TEMPERATURE AND MASS, the table data specify the "
 "following:"
 msgstr ""
 
@@ -15008,7 +15008,8 @@ msgstr ""
 #: of
 msgid ""
 "A Float specifying the discharge coefficient. This argument is applicable"
-" only if *definition*=DUAL PRESSURE or *definition*=PRESSURE AND MASS."
+" only if **definition** = DUAL PRESSURE or **definition** = PRESSURE AND "
+"MASS."
 msgstr ""
 
 #: abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty.setValues:15
@@ -15110,14 +15111,14 @@ msgstr ""
 
 #: ../../None:3:<autosummary>:1
 msgid ""
-"A *SymbolicConstant* specifying the propagation state of the "
+"A **SymbolicConstant** specifying the propagation state of the "
 "InteractionState object."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Interaction.FluidInflatorState.FluidInflatorState.status:2 of
 msgid ""
-"A *SymbolicConstant* specifying the propagation state of the "
+"A **SymbolicConstant** specifying the propagation state of the "
 "InteractionState object. Possible values are:"
 msgstr ""
 
@@ -15352,18 +15353,18 @@ msgstr ""
 #: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:17
 #: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:26
 #: abaqus.Interaction.ThermalConductance.ThermalConductance:17
-#: abaqus.Interaction.ThermalConductance.ThermalConductance:26 of
+#: abaqus.Interaction.ThermalConductance.ThermalConductance:27 of
 msgid "Conductivity."
 msgstr ""
 
 #: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:24
-#: abaqus.Interaction.ThermalConductance.ThermalConductance:24 of
+#: abaqus.Interaction.ThermalConductance.ThermalConductance:25 of
 msgid "The **pressureDepTable** data specify the following:"
 msgstr ""
 
 #: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:27
 #: abaqus.Interaction.NormalBehavior.NormalBehavior:20
-#: abaqus.Interaction.ThermalConductance.ThermalConductance:27 of
+#: abaqus.Interaction.ThermalConductance.ThermalConductance:28 of
 msgid "Pressure."
 msgstr ""
 
@@ -18509,16 +18510,20 @@ msgstr ""
 #: of
 msgid ""
 "A sequence of tuples specifying the surface smoothing assignments. Each "
-"tuple contains two entries: - A region object specifying the surface to "
-"which the smoothing is assigned. - A SymbolicConstant specifying the "
-"surface smoothing value to be used for the surface."
+"tuple contains two entries:"
+msgstr ""
+
+#: abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.appendInStep:18
+#: of
+msgid "A region object specifying the surface to which the smoothing is assigned."
 msgstr ""
 
 #: abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.appendInStep:19
 #: of
 msgid ""
-"Possible values of the SymbolicConstant are NONE, REVOLUTION, SPHERICAL, "
-"and TOROIDAL."
+"A SymbolicConstant specifying the surface smoothing value to be used for "
+"the surface. Possible values of the SymbolicConstant are NONE, "
+"REVOLUTION, SPHERICAL, and TOROIDAL."
 msgstr ""
 
 #: abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.changeValuesInStep:6
@@ -20145,6 +20150,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.appendInStep:20
+#: abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.changeValuesInStep:22
 #: of
 msgid ""
 "A Float or a SymbolicConstant specifying the overriding thickness value "
@@ -20154,6 +20160,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.appendInStep:24
+#: abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.changeValuesInStep:26
 #: of
 msgid ""
 "A Float specifying a scale factor that multiplies the thickness value "
@@ -20188,27 +20195,6 @@ msgstr ""
 msgid ""
 "A tuple specifying the value of the surface thickness assignments for the"
 " surface whose index is referenced. Each tuple contains two entries:"
-msgstr ""
-
-#: abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.changeValuesInStep:22
-#: of
-msgid ""
-"A Float or a SymbolicConstant specifying the overriding thickness value "
-"to be used in the contact definition. Possible values of the "
-"SymbolicConstant are ORIGINAL and"
-msgstr ""
-
-#: abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.changeValuesInStep:24
-#: of
-msgid ""
-"THINNING. The SymbolicConstant THINNING can be specified only in an "
-"Abaqus/Explicit analysis. - A Float specifying a scale factor that "
-"multiplies the thickness value specified in the"
-msgstr ""
-
-#: abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.changeValuesInStep:27
-#: of
-msgid "second entry."
 msgstr ""
 
 #: abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.delete:5
@@ -21169,11 +21155,11 @@ msgid ""
 msgstr ""
 
 #: abaqus.Interaction.ThermalConductance.ThermalConductance:20
-#: abaqus.Interaction.ThermalConductance.ThermalConductance:29 of
+#: abaqus.Interaction.ThermalConductance.ThermalConductance:30 of
 msgid "Mass flow rate, if the data depend on mass flow rate."
 msgstr ""
 
-#: abaqus.Interaction.ThermalConductance.ThermalConductance:36 of
+#: abaqus.Interaction.ThermalConductance.ThermalConductance:37 of
 msgid "GAP CONDUCTANCE"
 msgstr ""
 
@@ -21451,4 +21437,96 @@ msgid ""
 "**allowGrowth** member. Possible values are UNSET, SET, UNCHANGED, and "
 "FREED."
 msgstr ""
+
+#~ msgid ""
+#~ "Check `Model on help.3ds.com/2021 "
+#~ "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A float specifying the separation "
+#~ "distance between the master surface and"
+#~ " the slave"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "surface. - A boolean specifying whether"
+#~ " or not contact surfaces are "
+#~ "overclosed.."
+#~ msgstr ""
+
+#~ msgid "*surfPair* and *indices* arguments are mutually exclusive."
+#~ msgstr ""
+
+#~ msgid "If *definition*=DUAL PRESSURE, the table data specify the following:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If *definition*=PRESSURE AND MASS, the "
+#~ "table data specify the following:"
+#~ msgstr ""
+
+#~ msgid "If *definition*=TANK TEST, the table data specify the following:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If *definition*=TEMPERATURE AND MASS, the "
+#~ "table data specify the following:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the discharge "
+#~ "coefficient. This argument is applicable "
+#~ "only if *definition*=DUAL PRESSURE or "
+#~ "*definition*=PRESSURE AND MASS."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A *SymbolicConstant* specifying the "
+#~ "propagation state of the InteractionState "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A *SymbolicConstant* specifying the "
+#~ "propagation state of the InteractionState "
+#~ "object. Possible values are:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of tuples specifying the "
+#~ "surface smoothing assignments. Each tuple "
+#~ "contains two entries: - A region "
+#~ "object specifying the surface to which"
+#~ " the smoothing is assigned. - A "
+#~ "SymbolicConstant specifying the surface "
+#~ "smoothing value to be used for the"
+#~ " surface."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Possible values of the SymbolicConstant "
+#~ "are NONE, REVOLUTION, SPHERICAL, and "
+#~ "TOROIDAL."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float or a SymbolicConstant specifying"
+#~ " the overriding thickness value to be"
+#~ " used in the contact definition. "
+#~ "Possible values of the SymbolicConstant "
+#~ "are ORIGINAL and"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "THINNING. The SymbolicConstant THINNING can"
+#~ " be specified only in an "
+#~ "Abaqus/Explicit analysis. - A Float "
+#~ "specifying a scale factor that "
+#~ "multiplies the thickness value specified "
+#~ "in the"
+#~ msgstr ""
+
+#~ msgid "second entry."
+#~ msgstr ""
 
