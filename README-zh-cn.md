@@ -2,16 +2,9 @@
 
 [![Documentation Status](https://img.shields.io/readthedocs/abqpy?label=docs)](https://readthedocs.org/projects/abqpy/)
 [![Documentation Status](https://img.shields.io/readthedocs/abqpy-zh-cn?label=docs-zh-cn)](https://readthedocs.org/projects/abqpy-zh-cn/)
-[![Pages](https://github.com/haiiliin/abqpy/actions/workflows/pages.yaml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pages.yaml)
-[![pytest](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yaml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yaml)
-[![Upload Python Package to PyPI](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-pypi.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-pypi.yml)
-[![Build and Upload Conda Package](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-conda.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/python-publish-conda.yml)
-[![Crowdin](https://badges.crowdin.net/abqpy/localized.svg)](https://crowdin.com/project/abqpy)
-
-[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://github.com/haiiliin/abqpy/blob/main/LICENSE)
+[![Tests](https://github.com/haiiliin/abqpy/actions/workflows/tests.yaml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/tests.yaml)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/abqpy.svg)](https://www.python.org/)
-[![PyPI](https://img.shields.io/pypi/v/abqpy)](https://pypi.org/project/abqpy/)
-[![Anaconda-Server Badge](https://anaconda.org/haiiliin/abqpy/badges/version.svg)](https://anaconda.org/haiiliin/abqpy)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/haiiliin/abqpy)
 [![PyPI download month](https://img.shields.io/pypi/dm/abqpy.svg)](https://pypi.python.org/pypi/abqpy/)
 
 其它语言版本: [English](README.md), [简体中文](README-zh-cn.md).
