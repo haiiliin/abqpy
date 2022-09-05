@@ -76,10 +76,9 @@ class FieldReportSession(SessionBase):
               the model; the corresponding value specifies a section point within that region. For
               example:
               
-              ```
-              {'shell < MAT > < 7 section points >':'SPOS
-              (fraction = 1.0)'}
-              ```
+              .. code-block:: python
+              
+                  {'shell < MAT > < 7 section points >': 'SPOS (fraction = 1.0)'}
               
               If this element is omitted, data are written for all section points (if applicable).
               If this element is omitted, data are written for all section points (if applicable).
