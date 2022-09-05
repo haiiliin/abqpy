@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-05 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgstr ""
 #: abaqus.OdbDisplay.CommonOptions.CommonOptions:32 of
 msgid ""
 "Check `CommonOptions on help.3ds.com/2016 "
-"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-commonoptionspyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-commonoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.OdbDisplay.CommonOptions.CommonOptions
@@ -709,11 +709,14 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.OdbDisplay.CommonOptions.CommonOptions.elementShrinkFactor:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:117 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:117
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.elementShrinkFactor:2
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elementShrinkFactor:2
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:93 of
 msgid ""
 "An Int specifying the percentage to shrink the elements when "
-"**elementShrink** = ON. Possible values are 0≤≤ "
-"**elementShrinkPercentage** ≤≤ 90. The default value is 5."
+"**elementShrink** = ON. Possible values are 0≤ "
+"**elementShrinkPercentage** ≤ 90. The default value is 5."
 msgstr ""
 
 #: ../../docstring
@@ -869,7 +872,7 @@ msgid "XMARKER"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:14
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:15
 #: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:102 of
 msgid "The default value is HOLLOW_CIRCLE."
 msgstr ""
@@ -951,9 +954,9 @@ msgstr ""
 
 #: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:5 of
 msgid ""
-"Check `CommonOptions.setValues() on help.3ds.com/2016 "
+"Check `CommonOptions.setValues on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-commonoptionspyc.htm?contextscope=all"
-"#simaker-commonoptionssetvaluespyc>`_."
+"#simaker-commonoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues
@@ -1234,11 +1237,16 @@ msgid "**translucencyFactor**"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:167
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.translucencyFactor:2 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.translucencyFactor:2
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:62
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.translucencyFactor:2
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:143
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.translucencyFactor:2
+#: of
 msgid ""
 "A Float specifying the translucency factor when **translucency** = ON. "
-"Possible values are 0.0≤≤ **translucencyFactor** ≤≤ 1.0. The default "
-"value is 0.3."
+"Possible values are 0.0≤ **translucencyFactor** ≤ 1.0. The default value "
+"is 0.3."
 msgstr ""
 
 #: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues
@@ -1289,7 +1297,7 @@ msgstr ""
 #: abaqus.OdbDisplay.ContourOptions.ContourOptions:32 of
 msgid ""
 "Check `ContourOptions on help.3ds.com/2016 "
-"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contouroptionspyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contouroptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -1885,8 +1893,8 @@ msgstr ""
 #: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:32 of
 msgid ""
 "An Int specifying the number of intervals when **contourStyle** = "
-"UNIFORM. Possible values are 2 ≤≤ **numIntervals** ≤≤ 24. The default "
-"value is 12."
+"UNIFORM. Possible values are 2 ≤ **numIntervals** ≤ 24. The default value"
+" is 12."
 msgstr ""
 
 #: ../../docstring
@@ -1922,9 +1930,9 @@ msgstr ""
 
 #: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:5 of
 msgid ""
-"Check `ContourOptions.setValues() on help.3ds.com/2016 "
+"Check `ContourOptions.setValues on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contouroptionspyc.htm?contextscope=all"
-"#simaker-contouroptionssetvaluespyc>`_."
+"#simaker-contouroptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:10 of
@@ -2082,8 +2090,8 @@ msgstr ""
 msgid ""
 "A Float specifying the base contour value defining the tick mark axis "
 "contour value that intersects the elements. Possible values are "
-"**autoMinValue** ≤≤ **tickmarkBaseValue** ≤≤ **autoMaxValue**. The "
-"default value is 0.0."
+"**autoMinValue** ≤ **tickmarkBaseValue** ≤ **autoMaxValue**. The default "
+"value is 0.0."
 msgstr ""
 
 #: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:129 of
@@ -2155,7 +2163,7 @@ msgstr ""
 #: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay:14 of
 msgid ""
 "Check `DefaultOdbDisplay on help.3ds.com/2016 "
-"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-defaultodbdisplaypyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-defaultodbdisplaypyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -2309,7 +2317,7 @@ msgstr ""
 #: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions:33 of
 msgid ""
 "Check `DisplayBodyOptions on help.3ds.com/2016 "
-"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displaybodyoptionspyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displaybodyoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:15:<autosummary>:1
@@ -2402,21 +2410,11 @@ msgstr ""
 msgid "This method modifies the DisplayBodyOptions object."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.elementShrinkFactor:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elementShrinkFactor:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:93 of
-msgid ""
-"An Int specifying the percentage to shrink the elements when "
-"**elementShrink** = ON. Possible values are 0≤ "
-"**elementShrinkPercentage** ≤ 90. The default value is 5."
-msgstr ""
-
 #: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:5 of
 msgid ""
-"Check `DisplayBodyOptions.setValues() on help.3ds.com/2016 "
+"Check `DisplayBodyOptions.setValues on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displaybodyoptionspyc.htm?contextscope=all"
-"#simaker-displaybodyoptionssetvaluespyc>`_."
+"#simaker-displaybodyoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:10 of
@@ -2432,18 +2430,6 @@ msgid ""
 "An Int specifying the percentage to shrink the elements when "
 "**elementShrink** = ON. Possible values are 0≤elementShrinkPercentage* ≤ "
 "90. The default value is 5."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:62
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.translucencyFactor:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:143
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.translucencyFactor:2
-#: of
-msgid ""
-"A Float specifying the translucency factor when **translucency** = ON. "
-"Possible values are 0.0≤ **translucencyFactor** ≤ 1.0. The default value "
-"is 0.3."
 msgstr ""
 
 #: ../../reference/session/odb_display.rst:43
@@ -2470,7 +2456,7 @@ msgstr ""
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay:24 of
 msgid ""
 "Check `OdbDisplay on help.3ds.com/2016 "
-"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -2932,7 +2918,7 @@ msgstr ""
 #: abaqus.OdbDisplay.ViewCut.ViewCut:17 of
 msgid ""
 "Check `ViewCut on help.3ds.com/2016 "
-"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewcutpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewcutpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:18 of
@@ -3109,49 +3095,80 @@ msgstr ""
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:2 of
 msgid ""
 "A tuple of Strings specifying field steps. Each item in the sequence "
-"consists of a tuple that contains the following step information: - "
-"**element0**: A String specifying the step name. - **element1**: A String"
-" specifying the step description. - **element2**: A Float specifying the "
-"time value at the start of the step. - **element3**: A Float specifying "
-"the time period of the step. - **element4**: A Float specifying the user "
-"modified time period of the step. - **element5**: An Int specifying the "
-"domain type of the step. Possible values are:"
+"consists of a tuple that contains the following step information:"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:12 of
-msgid "0: Time domain"
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:6 of
+msgid "**element0**: A String specifying the step name."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:7 of
+msgid "**element1**: A String specifying the step description."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:8 of
+msgid "**element2**: A Float specifying the time value at the start of the step."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:9 of
+msgid "**element3**: A Float specifying the time period of the step."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:10 of
+msgid ""
+"**element4**: A Float specifying the user modified time period of the "
+"step."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:11 of
+msgid ""
+"**element5**: An Int specifying the domain type of the step. Possible "
+"values are:"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:13 of
-msgid "1: Frequency domain"
+msgid "0: Time domain"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:14 of
-msgid "2: Modal domain"
+msgid "1: Frequency domain"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:15 of
-msgid "3: Arc Length (Riks) domain"
+msgid "2: Modal domain"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:16 of
-msgid "**element6**: A String specifying the default frame label."
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:17 of
-msgid ""
-"**element7**: A sequence of strings specifying the frame labels for all "
-"available frames"
+msgid "3: Arc Length (Riks) domain"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:18 of
+msgid "**element6**: A String specifying the default frame label."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:19 of
 msgid ""
-"in the step. - **element8**: A sequence of floats specifying the frame "
-"values for all available frames in the step. - **element9**: A Int "
-"specifying whether the step is user defined. Possible values are 0 "
-"indicating the step is defined in the analysis and 1 indicating the step "
-"is user defined. - **element10**: A sequence of machine readable strings "
-"encoding the currently active frame numbers."
+"**element7**: A sequence of strings specifying the frame labels for all "
+"available frames in the step."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:21 of
+msgid ""
+"**element8**: A sequence of floats specifying the frame values for all "
+"available frames in the step."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:23 of
+msgid ""
+"**element9**: A Int specifying whether the step is user defined. Possible"
+" values are 0 indicating the step is defined in the analysis and 1 "
+"indicating the step is user defined."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:26 of
+msgid ""
+"**element10**: A sequence of machine readable strings encoding the "
+"currently active frame numbers."
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.firstFrame:2 of
@@ -3189,218 +3206,280 @@ msgstr ""
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:2 of
 msgid ""
 "A tuple specifying variables. Each item in the sequence consists of a "
-"tuple containing the following elements: - Element 0: A String specifying"
-" the variable label. - Element 1: An Int specifying the output position. "
-"Possible integer values are:"
+"tuple containing the following elements:"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:7 of
-msgid "0: UNDEFINED_POSITION"
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:5 of
+msgid "Element 0: A String specifying the variable label."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:6 of
+msgid ""
+"Element 1: An Int specifying the output position. Possible integer values"
+" are:"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:8 of
-msgid "1: NODAL"
+msgid "0: UNDEFINED_POSITION"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:9 of
-msgid "2: INTEGRATION_POINT"
+msgid "1: NODAL"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:10
 #: of
-msgid "3: ELEMENT_FACE"
+msgid "2: INTEGRATION_POINT"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:11
 #: of
-msgid "4: ELEMENT_NODAL"
+msgid "3: ELEMENT_FACE"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:12
 #: of
-msgid "5: WHOLE_ELEMENT"
+msgid "4: ELEMENT_NODAL"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:13
 #: of
-msgid "6: ELEMENT_CENTROID"
+msgid "5: WHOLE_ELEMENT"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:14
 #: of
-msgid "7: WHOLE_REGION"
+msgid "6: ELEMENT_CENTROID"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:15
 #: of
-msgid "8: WHOLE_PART_INSTANCE"
+msgid "7: WHOLE_REGION"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:16
 #: of
-msgid "9: WHOLE_MODEL"
+msgid "8: WHOLE_PART_INSTANCE"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:17
 #: of
-msgid "10: GENERAL_PARTICLE"
+msgid "9: WHOLE_MODEL"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:18
 #: of
-msgid "Element 2: An Int specifying the data type. Possible values are:"
+msgid "10: GENERAL_PARTICLE"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:20
 #: of
-msgid "0: ENUMERATION"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:21
-#: of
-msgid "1: BOOLEAN"
+msgid "Element 2: An Int specifying the data type. Possible values are:"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:22
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:37 of
-msgid "2: INTEGER"
+#: of
+msgid "0: ENUMERATION"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:23
 #: of
-msgid "3: SCALAR"
+msgid "1: BOOLEAN"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:24
-#: of
-msgid "4: VECTOR"
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:40 of
+msgid "2: INTEGER"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:25
 #: of
-msgid "5: QUATERNION_2D"
+msgid "3: SCALAR"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:26
 #: of
-msgid "6: QUATERNION_3D"
+msgid "4: VECTOR"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:27
 #: of
-msgid "7: TENSOR"
+msgid "5: QUATERNION_2D"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:28
 #: of
-msgid "8: TENSOR_3D_FULL"
+msgid "6: QUATERNION_3D"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:29
 #: of
-msgid "9: TENSOR_3D_PLANAR"
+msgid "7: TENSOR"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:30
 #: of
-msgid "10: TENSOR_3D_SURFACE"
+msgid "8: TENSOR_3D_FULL"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:31
 #: of
-msgid "11: TENSOR_2D_PLANAR"
+msgid "9: TENSOR_3D_PLANAR"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:32
 #: of
-msgid "12: TENSOR_2D_SURFACE"
+msgid "10: TENSOR_3D_SURFACE"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:33
 #: of
-msgid "Element 3: An Int specifying the storage type. Possible values are:"
+msgid "11: TENSOR_2D_PLANAR"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:35
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:34
 #: of
-msgid "0: FLOAT"
+msgid "12: TENSOR_2D_SURFACE"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:36
 #: of
-msgid "1: DOUBLE"
+msgid "Element 3: An Int specifying the storage type. Possible values are:"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:38
 #: of
-msgid "3: BOOLEAN"
+msgid "0: FLOAT"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:39
 #: of
-msgid "Element 4: An Int specifying the refinement type. Possible values are:"
+msgid "1: DOUBLE"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:41
 #: of
-msgid "0: NO_REFINEMENT"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:42
-#: of
-msgid "1: INVARIANT"
+msgid "3: BOOLEAN"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:43
 #: of
-msgid "2: COMPONENT"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:44
-#: of
-msgid "Element 5: A String specifying the refinement label."
+msgid "Element 4: An Int specifying the refinement type. Possible values are:"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:45
 #: of
-msgid "Element 6: An Int specifying the refinement index."
+msgid "0: NO_REFINEMENT"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:46
 #: of
-msgid ""
-"Element 7: An Int specifying whether section point information is "
-"available. Possible"
+msgid "1: INVARIANT"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:47
 #: of
+msgid "2: COMPONENT"
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:49
+#: of
+msgid "Element 5: A String specifying the refinement label."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:50
+#: of
+msgid "Element 6: An Int specifying the refinement index."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:51
+#: of
 msgid ""
-"values are 1 when section point information is available; 0, when this "
-"information is unavailable. - Element 8: A sequence of a String "
-"specifying the name of the ply and category selection tuples (see below) "
-"specifying the section point information. A category selection tuple "
-"consists of the following elements: - Element 0: A String specifying the "
-"category label. - Element 1: An Int specifying whether to use both top "
-"and bottom section points to obtain results. Possible values are 1 to use"
-" both section points and 0 to use only the top section point. - Element "
-"2: An Int specifying the top section point index. - Element 3: A String "
-"specifying the top section label. - Element 4: An Int specifying the "
-"bottom section point index. - Element 5: A String specifying the bottom "
-"section label. - Element 6: An Int specifying the category id. - Element "
-"9: An Int specifying whether the data are complex. Possible values are 1 "
-"when the data are complex; 0, when the data is not complex. - Element 10:"
-" A Float specifying the minimum possible value for the data. - Element "
-"11: A Float specifying the maximum possible value for the data. - Element"
-" 12: An Int specifying whether the data is derived. Possible values are 1"
-" when the data is derived; 0, when the data is not derived."
+"Element 7: An Int specifying whether section point information is "
+"available. Possible values are 1 when section point information is "
+"available; 0, when this information is unavailable."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:54
+#: of
+msgid ""
+"Element 8: A sequence of a String specifying the name of the ply and "
+"category selection tuples (see below) specifying the section point "
+"information."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:57
+#: of
+msgid "A category selection tuple consists of the following elements:"
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:59
+#: of
+msgid "Element 0: A String specifying the category label."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:60
+#: of
+msgid ""
+"Element 1: An Int specifying whether to use both top and bottom section "
+"points to obtain results. Possible values are 1 to use both section "
+"points and 0 to use only the top section point."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:63
+#: of
+msgid "Element 2: An Int specifying the top section point index."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:64
+#: of
+msgid "Element 3: A String specifying the top section label."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:65
+#: of
+msgid "Element 4: An Int specifying the bottom section point index."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:66
+#: of
+msgid "Element 5: A String specifying the bottom section label."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:67
+#: of
+msgid "Element 6: An Int specifying the category id."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:68
+#: of
+msgid ""
+"Element 9: An Int specifying whether the data are complex. Possible "
+"values are 1 when the data are complex; 0, when the data is not complex."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:70
+#: of
+msgid "Element 10: A Float specifying the minimum possible value for the data."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:71
+#: of
+msgid "Element 11: A Float specifying the maximum possible value for the data."
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:72
+#: of
+msgid ""
+"Element 12: An Int specifying whether the data is derived. Possible "
+"values are 1 when the data is derived; 0, when the data is not derived."
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable:6 of
 msgid ""
-"Check `OdbDisplay.setDeformedVariable() on help.3ds.com/2016 "
+"Check `OdbDisplay.setDeformedVariable on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
-"#simaker-odbdisplaysetdeformedvariablepyc>`_."
+"#simaker-odbdisplaysetdeformedvariablepyc>`__."
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable:11
@@ -3440,20 +3519,19 @@ msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:6 of
 msgid ""
-"Check `OdbDisplay.setPrimarySectionPoint() on help.3ds.com/2016 "
+"Check `OdbDisplay.setPrimarySectionPoint on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
-"#simaker-odbdisplaysetprimarysectionpointpyc>`_."
+"#simaker-odbdisplaysetprimarysectionpointpyc>`__."
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:14
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:36
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:42
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:35
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:37 of
 msgid "**sectionPoint**"
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:11
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:29
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:32
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:34 of
 msgid ""
@@ -3473,7 +3551,6 @@ msgid "A String specifying the active ply name."
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:35
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:50
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:72
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable:29
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:63 of
@@ -3483,7 +3560,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:26
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:41
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:47
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:63
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable:20
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:54 of
@@ -3543,11 +3620,24 @@ msgid ""
 "specified **variableLabel**."
 msgstr ""
 
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:29 of
+msgid ""
+"A Dictionary with String keys and String values. Each key specifies a "
+"region in the model; the corresponding value specifies a section point "
+"within that region. For example:"
+msgstr ""
+
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:56 of
+msgid ""
+":obj:`If` :obj:`the` :obj:`viewport` :obj:`is` :obj:`not` "
+":obj:`associated` :obj:`with` :obj:`any` :obj:`Odb` :obj:`object`"
+msgstr ""
+
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:6 of
 msgid ""
-"Check `OdbDisplay.setStatusVariable() on help.3ds.com/2016 "
+"Check `OdbDisplay.setStatusVariable on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
-"#simaker-odbdisplaysetstatusvariablepyc>`_."
+"#simaker-odbdisplaysetstatusvariablepyc>`__."
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:38 of
@@ -3610,9 +3700,9 @@ msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable:6 of
 msgid ""
-"Check `OdbDisplay.setStreamVariable() on help.3ds.com/2016 "
+"Check `OdbDisplay.setStreamVariable on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
-"#simaker-odbdisplaysetstreamvariablepyc>`_."
+"#simaker-odbdisplaysetstreamvariablepyc>`__."
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:2 of
@@ -3625,9 +3715,9 @@ msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:8 of
 msgid ""
-"Check `OdbDisplay.setSymbolVariable() on help.3ds.com/2016 "
+"Check `OdbDisplay.setSymbolVariable on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
-"#simaker-odbdisplaysetsymbolvariablepyc>`_."
+"#simaker-odbdisplaysetsymbolvariablepyc>`__."
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:41
@@ -3654,9 +3744,9 @@ msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues:5 of
 msgid ""
-"Check `OdbDisplay.setValues() on help.3ds.com/2016 "
+"Check `OdbDisplay.setValues on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
-"#simaker-odbdisplaysetvaluespyc>`_."
+"#simaker-odbdisplaysetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues:10 of
@@ -3717,7 +3807,7 @@ msgstr ""
 #: abaqus.OdbDisplay.OrientationOptions.OrientationOptions:33 of
 msgid ""
 "Check `OrientationOptions on help.3ds.com/2016 "
-"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-orientationoptionspyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-orientationoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -3915,9 +4005,9 @@ msgstr ""
 
 #: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:5 of
 msgid ""
-"Check `OrientationOptions.setValues() on help.3ds.com/2016 "
+"Check `OrientationOptions.setValues on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-orientationoptionspyc.htm?contextscope=all"
-"#simaker-orientationoptionssetvaluespyc>`_."
+"#simaker-orientationoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:10 of
@@ -4030,7 +4120,7 @@ msgstr ""
 #: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions:34 of
 msgid ""
 "Check `SuperimposeOptions on help.3ds.com/2016 "
-"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-superimposeoptionspyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-superimposeoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -4356,9 +4446,9 @@ msgstr ""
 
 #: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:5 of
 msgid ""
-"Check `SuperimposeOptions.setValues() on help.3ds.com/2016 "
+"Check `SuperimposeOptions.setValues on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-superimposeoptionspyc.htm?contextscope=all"
-"#simaker-superimposeoptionssetvaluespyc>`_."
+"#simaker-superimposeoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:10 of
@@ -4429,7 +4519,7 @@ msgstr ""
 #: abaqus.OdbDisplay.SymbolOptions.SymbolOptions:32 of
 msgid ""
 "Check `SymbolOptions on help.3ds.com/2016 "
-"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-symboloptionspyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-symboloptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:45:<autosummary>:1
@@ -4995,9 +5085,9 @@ msgstr ""
 
 #: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:5 of
 msgid ""
-"Check `SymbolOptions.setValues() on help.3ds.com/2016 "
+"Check `SymbolOptions.setValues on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-symboloptionspyc.htm?contextscope=all"
-"#simaker-symboloptionssetvaluespyc>`_."
+"#simaker-symboloptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:10 of
@@ -5546,9 +5636,9 @@ msgstr ""
 
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:5 of
 msgid ""
-"Check `ViewCut.setValues() on help.3ds.com/2016 "
+"Check `ViewCut.setValues on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewcutpyc.htm?contextscope=all"
-"#simaker-viewcutsetvaluespyc>`_."
+"#simaker-viewcutsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:10 of
@@ -5633,7 +5723,7 @@ msgstr ""
 #: abaqus.OdbDisplay.ViewerOptions.ViewerOptions:15 of
 msgid ""
 "Check `ViewerOptions on help.3ds.com/2016 "
-"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vieweroptionspyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vieweroptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -5650,9 +5740,9 @@ msgstr ""
 
 #: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:5 of
 msgid ""
-"Check `ViewerOptions.setValues() on help.3ds.com/2016 "
+"Check `ViewerOptions.setValues on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vieweroptionspyc.htm?contextscope=all"
-"#simaker-vieweroptionssetvaluespyc>`_."
+"#simaker-vieweroptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:11 of
@@ -5708,4 +5798,281 @@ msgid ""
 "An Int specifying the minimum time between status checks (in seconds). "
 "The default value is 0."
 msgstr ""
+
+#~ msgid ""
+#~ "Check `CommonOptions on help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-commonoptionspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the percentage to "
+#~ "shrink the elements when **elementShrink** "
+#~ "= ON. Possible values are 0≤≤ "
+#~ "**elementShrinkPercentage** ≤≤ 90. The default"
+#~ " value is 5."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `CommonOptions.setValues() on "
+#~ "help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-commonoptionspyc.htm?contextscope=all"
+#~ "#simaker-commonoptionssetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the translucency "
+#~ "factor when **translucency** = ON. "
+#~ "Possible values are 0.0≤≤ "
+#~ "**translucencyFactor** ≤≤ 1.0. The default "
+#~ "value is 0.3."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ContourOptions on help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contouroptionspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the number of "
+#~ "intervals when **contourStyle** = UNIFORM. "
+#~ "Possible values are 2 ≤≤ "
+#~ "**numIntervals** ≤≤ 24. The default "
+#~ "value is 12."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ContourOptions.setValues() on "
+#~ "help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contouroptionspyc.htm?contextscope=all"
+#~ "#simaker-contouroptionssetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the base contour "
+#~ "value defining the tick mark axis "
+#~ "contour value that intersects the "
+#~ "elements. Possible values are **autoMinValue**"
+#~ " ≤≤ **tickmarkBaseValue** ≤≤ **autoMaxValue**."
+#~ " The default value is 0.0."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `DefaultOdbDisplay on help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-defaultodbdisplaypyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `DisplayBodyOptions on help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displaybodyoptionspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `DisplayBodyOptions.setValues() on "
+#~ "help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displaybodyoptionspyc.htm?contextscope=all"
+#~ "#simaker-displaybodyoptionssetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `OdbDisplay on help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ViewCut on help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewcutpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of Strings specifying field "
+#~ "steps. Each item in the sequence "
+#~ "consists of a tuple that contains "
+#~ "the following step information: - "
+#~ "**element0**: A String specifying the "
+#~ "step name. - **element1**: A String "
+#~ "specifying the step description. - "
+#~ "**element2**: A Float specifying the "
+#~ "time value at the start of the "
+#~ "step. - **element3**: A Float specifying"
+#~ " the time period of the step. -"
+#~ " **element4**: A Float specifying the "
+#~ "user modified time period of the "
+#~ "step. - **element5**: An Int specifying"
+#~ " the domain type of the step. "
+#~ "Possible values are:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**element7**: A sequence of strings "
+#~ "specifying the frame labels for all "
+#~ "available frames"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "in the step. - **element8**: A "
+#~ "sequence of floats specifying the frame"
+#~ " values for all available frames in"
+#~ " the step. - **element9**: A Int "
+#~ "specifying whether the step is user "
+#~ "defined. Possible values are 0 "
+#~ "indicating the step is defined in "
+#~ "the analysis and 1 indicating the "
+#~ "step is user defined. - **element10**:"
+#~ " A sequence of machine readable "
+#~ "strings encoding the currently active "
+#~ "frame numbers."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple specifying variables. Each item"
+#~ " in the sequence consists of a "
+#~ "tuple containing the following elements: "
+#~ "- Element 0: A String specifying "
+#~ "the variable label. - Element 1: "
+#~ "An Int specifying the output position."
+#~ " Possible integer values are:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Element 7: An Int specifying whether "
+#~ "section point information is available. "
+#~ "Possible"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "values are 1 when section point "
+#~ "information is available; 0, when this"
+#~ " information is unavailable. - Element "
+#~ "8: A sequence of a String "
+#~ "specifying the name of the ply and"
+#~ " category selection tuples (see below) "
+#~ "specifying the section point information. "
+#~ "A category selection tuple consists of"
+#~ " the following elements: - Element 0:"
+#~ " A String specifying the category "
+#~ "label. - Element 1: An Int "
+#~ "specifying whether to use both top "
+#~ "and bottom section points to obtain "
+#~ "results. Possible values are 1 to "
+#~ "use both section points and 0 to"
+#~ " use only the top section point. "
+#~ "- Element 2: An Int specifying the"
+#~ " top section point index. - Element"
+#~ " 3: A String specifying the top "
+#~ "section label. - Element 4: An Int"
+#~ " specifying the bottom section point "
+#~ "index. - Element 5: A String "
+#~ "specifying the bottom section label. -"
+#~ " Element 6: An Int specifying the "
+#~ "category id. - Element 9: An Int"
+#~ " specifying whether the data are "
+#~ "complex. Possible values are 1 when "
+#~ "the data are complex; 0, when the"
+#~ " data is not complex. - Element "
+#~ "10: A Float specifying the minimum "
+#~ "possible value for the data. - "
+#~ "Element 11: A Float specifying the "
+#~ "maximum possible value for the data. "
+#~ "- Element 12: An Int specifying "
+#~ "whether the data is derived. Possible"
+#~ " values are 1 when the data is"
+#~ " derived; 0, when the data is "
+#~ "not derived."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `OdbDisplay.setDeformedVariable() on "
+#~ "help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
+#~ "#simaker-odbdisplaysetdeformedvariablepyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `OdbDisplay.setPrimarySectionPoint() on "
+#~ "help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
+#~ "#simaker-odbdisplaysetprimarysectionpointpyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `OdbDisplay.setStatusVariable() on "
+#~ "help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
+#~ "#simaker-odbdisplaysetstatusvariablepyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `OdbDisplay.setStreamVariable() on "
+#~ "help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
+#~ "#simaker-odbdisplaysetstreamvariablepyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `OdbDisplay.setSymbolVariable() on "
+#~ "help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
+#~ "#simaker-odbdisplaysetsymbolvariablepyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `OdbDisplay.setValues() on help.3ds.com/2016"
+#~ " "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
+#~ "#simaker-odbdisplaysetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `OrientationOptions on help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-orientationoptionspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `OrientationOptions.setValues() on "
+#~ "help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-orientationoptionspyc.htm?contextscope=all"
+#~ "#simaker-orientationoptionssetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `SuperimposeOptions on help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-superimposeoptionspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `SuperimposeOptions.setValues() on "
+#~ "help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-superimposeoptionspyc.htm?contextscope=all"
+#~ "#simaker-superimposeoptionssetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `SymbolOptions on help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-symboloptionspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `SymbolOptions.setValues() on "
+#~ "help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-symboloptionspyc.htm?contextscope=all"
+#~ "#simaker-symboloptionssetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ViewCut.setValues() on help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewcutpyc.htm?contextscope=all"
+#~ "#simaker-viewcutsetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ViewerOptions on help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vieweroptionspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ViewerOptions.setValues() on "
+#~ "help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vieweroptionspyc.htm?contextscope=all"
+#~ "#simaker-vieweroptionssetvaluespyc>`_."
+#~ msgstr ""
 
