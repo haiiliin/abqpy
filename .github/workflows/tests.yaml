@@ -1,4 +1,4 @@
-name: pytest
+name: Tests
 
 on:
   push:
@@ -16,13 +16,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-
+  build-pytest:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         python-version: ["3.7", "3.8", "3.9", "3.10", "3.11.0-rc.1"]
-
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
@@ -44,3 +42,22 @@ jobs:
       - name: Test with pytest
         run: |
           pytest
+  build-pages:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        language: ['en', 'zh_CN']
+    steps:
+    - uses: actions/setup-python@v2
+    - uses: actions/checkout@master
+      with:
+        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+    - name: Installing the library
+      shell: bash -l {0}
+      run: |
+        python setup.py install
+        pip install -r docs/requirements.txt
+    - name: Build the documentation
+      shell: bash -l {0}
+      run: |
+        sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/_build/html/${{ matrix.language }}
