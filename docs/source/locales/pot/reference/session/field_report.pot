@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 00:16+0000\n"
+"POT-Creation-Date: 2022-09-05 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,7 +142,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the subset of the model for which to obtain data."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:72
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:71
 #: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:71
 msgid "**variable**"
 msgstr ""
@@ -172,31 +172,27 @@ msgstr ""
 msgid "**element3 (if applicable)**: A Dictionary with a String key and a String value specifying a single section point at which to report data. The key specifies a region in the model; the corresponding value specifies a section point within that region. For example:"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:66
-msgid "``` {'shell < MAT > < 7 section points >':'SPOS (fraction = 1.0)'} ```"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:71
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:70
 #: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:70
 msgid "If this element is omitted, data are written for all section points (if applicable). If this element is omitted, data are written for all section points (if applicable)."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:77
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:76
 #: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:76
 msgid "**numericForm**"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:75
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:74
 #: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:74
 msgid "A SymbolicConstant specifying the numeric form in which to display results that contain complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, and COMPLEX_MAG_AT_ANGLE. The initial value is COMPLEX_MAGNITUDE."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:94
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:93
 #: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:93
 msgid "**complexAngle**"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:80
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:79
 #: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:79
 msgid "A Float specifying the angle (in degrees) at which to display results that contain complex numbers when **numericForm** = COMPLEX_MAG_AT_ANGLE. The initial value is 0."
 msgstr ""

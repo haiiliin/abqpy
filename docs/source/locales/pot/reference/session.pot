@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 00:16+0000\n"
+"POT-Creation-Date: 2022-09-05 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2951,8 +2951,8 @@ msgstr ""
 msgid "An Int specifying how often data frames will be skipped. If **skipFrequency** = 1, Abaqus will skip every other frame. The first frame is always read. Possible values are **skipFrequency** ≥≥ 0. The default value is 0 (data are read from every frame)."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:77
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:77
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:76
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:76
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromHistory:57
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:98
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:76
@@ -2971,8 +2971,8 @@ msgstr ""
 msgid "A SymbolicConstant specifying the numeric form in which to display results that contain complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, and COMPLEX_VAL_AT_ANGLE. The default value is REAL."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:94
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:94
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:93
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:93
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromHistory:61
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:102
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:80
@@ -3129,8 +3129,8 @@ msgstr ""
 msgid "An Int identifying the frame from which to obtain values. The default value is the current frame."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:72
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:72
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:71
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:71
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:89
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:46
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:89
@@ -4021,23 +4021,18 @@ msgstr ""
 msgid "**element3 (if applicable)**: A Dictionary with a String key and a String value specifying a single section point at which to report data. The key specifies a region in the model; the corresponding value specifies a section point within that region. For example:"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:66
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:66
-msgid "``` {'shell < MAT > < 7 section points >':'SPOS (fraction = 1.0)'} ```"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:71
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:71
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:70
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:70
 msgid "If this element is omitted, data are written for all section points (if applicable). If this element is omitted, data are written for all section points (if applicable)."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:75
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:75
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:74
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:74
 msgid "A SymbolicConstant specifying the numeric form in which to display results that contain complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, and COMPLEX_MAG_AT_ANGLE. The initial value is COMPLEX_MAGNITUDE."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:80
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:80
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:79
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:79
 msgid "A Float specifying the angle (in degrees) at which to display results that contain complex numbers when **numericForm** = COMPLEX_MAG_AT_ANGLE. The initial value is 0."
 msgstr ""
 

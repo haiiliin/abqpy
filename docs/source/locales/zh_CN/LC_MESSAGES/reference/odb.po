@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 00:16+0000\n"
+"POT-Creation-Date: 2022-09-05 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2412,55 +2412,219 @@ msgid ""
 "before any other existing steps. The default value is an empty string."
 msgstr ""
 
-#: abaqus.Odb.Odb.Odb.Step:88 of
+#: abaqus.Odb.Odb.Odb.Step:87 of
 msgid "**procedure**"
 msgstr ""
 
 #: abaqus.Odb.Odb.Odb.Step:40 of
 msgid ""
 "A String specifying the step procedure. The default value is an empty "
-"string. The following is the list of valid procedures: ``` *ANNEAL "
-"*BUCKLE *COMPLEX FREQUENCY *COUPLED TEMPERATURE-DISPLACEMENT *COUPLED "
-"TEMPERATURE-DISPLACEMENT, CETOL *COUPLED TEMPERATURE-DISPLACEMENT, STEADY"
-" STATE *COUPLED THERMAL-ELECTRICAL, STEADY STATE *COUPLED THERMAL-"
-"ELECTRICAL *COUPLED THERMAL-ELECTRICAL, DELTMX *DYNAMIC *DYNAMIC, DIRECT "
-"*DYNAMIC, EXPLICIT *DYNAMIC, SUBSPACE *DYNAMIC TEMPERATURE-DISPLACEMENT, "
-"EXPLICT *ELECTROMAGNETIC, HIGH FREQUENCY, TIME HARMONIC *ELECTROMAGNETIC,"
-" LOW FREQUENCY, TIME DOMAIN *ELECTROMAGNETIC, LOW FREQUENCY, TIME DOMAIN,"
-" DIRECT *ELECTROMAGNETIC, LOW FREQUENCY, TIME HARMONIC *FREQUENCY "
-"*GEOSTATIC *HEAT TRANSFER *HEAT TRANSFER, DELTAMX=__ *HEAT TRANSFER, "
-"STEADY STATE *MAGNETOSTATIC *MAGNETOSTATIC, DIRECT *MASS DIFFUSION *MASS "
-"DIFFUSION, DCMAX= *MASS DIFFUSION, STEADY STATE *MODAL DYNAMIC *RANDOM "
-"RESPONSE *RESPONSE SPECTRUM *SOILS *SOILS, CETOL/UTOL *SOILS, "
-"CONSOLIDATION *SOILS, CONSOLIDATION, CETOL/UTOL *STATIC *STATIC, DIRECT "
-"*STATIC, RIKS *STEADY STATE DYNAMICS *STEADY STATE TRANSPORT *STEADY "
-"STATE TRANSPORT, DIRECT *STEP PERTURBATION, *STATIC *SUBSTRUCTURE "
-"GENERATE *USA ADDDED MASS GENERATION *VISCO ```"
+"string. The following is the list of valid procedures:"
 msgstr ""
 
-#: abaqus.Odb.Odb.Odb.Step:92 of
-msgid "**totalTime**"
+#: abaqus.Odb.Odb.Odb.Step:43 of
+msgid "`*ANNEAL`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:44 of
+msgid "`*BUCKLE`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:45 of
+msgid "`*COMPLEX FREQUENCY`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:46 of
+msgid "`*COUPLED TEMPERATURE-DISPLACEMENT`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:47 of
+msgid "`*COUPLED TEMPERATURE-DISPLACEMENT, CETOL`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:48 of
+msgid "`*COUPLED TEMPERATURE-DISPLACEMENT, STEADY STATE`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:49 of
+msgid "`*COUPLED THERMAL-ELECTRICAL, STEADY STATE`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:50 of
+msgid "`*COUPLED THERMAL-ELECTRICAL`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:51 of
+msgid "`*COUPLED THERMAL-ELECTRICAL, DELTMX`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:52 of
+msgid "`*DYNAMIC`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:53 of
+msgid "`*DYNAMIC, DIRECT`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:54 of
+msgid "`*DYNAMIC, EXPLICIT`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:55 of
+msgid "`*DYNAMIC, SUBSPACE`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:56 of
+msgid "`*DYNAMIC TEMPERATURE-DISPLACEMENT, EXPLICT`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:57 of
+msgid "`*ELECTROMAGNETIC, HIGH FREQUENCY, TIME HARMONIC`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:58 of
+msgid "`*ELECTROMAGNETIC, LOW FREQUENCY, TIME DOMAIN`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:59 of
+msgid "`*ELECTROMAGNETIC, LOW FREQUENCY, TIME DOMAIN, DIRECT`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:60 of
+msgid "`*ELECTROMAGNETIC, LOW FREQUENCY, TIME HARMONIC`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:61 of
+msgid "`*FREQUENCY`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:62 of
+msgid "`*GEOSTATIC`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:63 of
+msgid "`*HEAT TRANSFER`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:64 of
+msgid "`*HEAT TRANSFER, DELTAMX=__`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:65 of
+msgid "`*HEAT TRANSFER, STEADY STATE`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:66 of
+msgid "`*MAGNETOSTATIC`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:67 of
+msgid "`*MAGNETOSTATIC, DIRECT`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:68 of
+msgid "`*MASS DIFFUSION`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:69 of
+msgid "`*MASS DIFFUSION, DCMAX=`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:70 of
+msgid "`*MASS DIFFUSION, STEADY STATE`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:71 of
+msgid "`*MODAL DYNAMIC`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:72 of
+msgid "`*RANDOM RESPONSE`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:73 of
+msgid "`*RESPONSE SPECTRUM`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:74 of
+msgid "`*SOILS`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:75 of
+msgid "`*SOILS, CETOL/UTOL`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:76 of
+msgid "`*SOILS, CONSOLIDATION`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:77 of
+msgid "`*SOILS, CONSOLIDATION, CETOL/UTOL`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:78 of
+msgid "`*STATIC`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:79 of
+msgid "`*STATIC, DIRECT`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:80 of
+msgid "`*STATIC, RIKS`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:81 of
+msgid "`*STEADY STATE DYNAMICS`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:82 of
+msgid "`*STEADY STATE TRANSPORT`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:83 of
+msgid "`*STEADY STATE TRANSPORT, DIRECT`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:84 of
+msgid "`*STEP PERTURBATION, *STATIC`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:85 of
+msgid "`*SUBSTRUCTURE GENERATE`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:86 of
+msgid "`*USA ADDDED MASS GENERATION`"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:87 of
+msgid "`*VISCO`"
 msgstr ""
 
 #: abaqus.Odb.Odb.Odb.Step:91 of
+msgid "**totalTime**"
+msgstr ""
+
+#: abaqus.Odb.Odb.Odb.Step:90 of
 msgid ""
 "A Float specifying the analysis time spend in all the steps previous to "
 "this step. The default value is −1.0."
 msgstr ""
 
-#: abaqus.Odb.Odb.Odb.Step:100 of
+#: abaqus.Odb.Odb.Odb.Step:99 of
 msgid ":obj:`OdbStep`"
 msgstr ""
 
-#: abaqus.Odb.Odb.Odb.Step:97 of
+#: abaqus.Odb.Odb.Odb.Step:96 of
 msgid "An :py:class:`~abaqus.Odb.OdbStep.OdbStep` object."
 msgstr ""
 
-#: abaqus.Odb.Odb.Odb.Step:113 of
+#: abaqus.Odb.Odb.Odb.Step:112 of
 msgid "ValueError: :obj:`previousStepName` :obj:`is` :obj:`invalid`"
 msgstr ""
 
-#: abaqus.Odb.Odb.Odb.Step:105 of
+#: abaqus.Odb.Odb.Odb.Step:104 of
 msgid "If **previousStepName** is invalid."
 msgstr ""
 
@@ -5933,7 +6097,7 @@ msgstr ""
 #: abaqus.Odb.OdbInstance.OdbInstance.NodeSet:42
 #: abaqus.Odb.OdbPart.OdbPart.NodeSet:42 abaqus.Odb.OdbSet.OdbSet.ElementSet:43
 #: abaqus.Odb.OdbSet.OdbSet.ElementSetFromElementLabels:41
-#: abaqus.Odb.OdbSet.OdbSet.MeshSurface:55
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurface:59
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:42
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:41
 #: abaqus.Odb.OdbSet.OdbSet.NodeSetFromNodeLabels:41 of
@@ -5944,7 +6108,7 @@ msgstr ""
 #: abaqus.Odb.OdbInstance.OdbInstance.NodeSet:30
 #: abaqus.Odb.OdbPart.OdbPart.NodeSet:30 abaqus.Odb.OdbSet.OdbSet.ElementSet:31
 #: abaqus.Odb.OdbSet.OdbSet.ElementSetFromElementLabels:29
-#: abaqus.Odb.OdbSet.OdbSet.MeshSurface:43
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurface:47
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:30
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:29
 #: abaqus.Odb.OdbSet.OdbSet.NodeSetFromNodeLabels:29 of
@@ -9509,7 +9673,7 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshsurfacepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Odb.OdbSet.OdbSet.MeshSurface:38 of
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurface:42 of
 msgid "**meshSurfaces**"
 msgstr ""
 
@@ -9517,19 +9681,47 @@ msgstr ""
 msgid ""
 "A sequence of sequences. Each sequence consists of an element sequence "
 "and a side identifier. The possible side identifiers depend on the type "
-"of element, as described in the following table: | Sequence of elements"
-"             | Side identifiers                         | | "
+"of element, as described in the following table:"
+msgstr ""
+
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurface of
+msgid ""
+"Sequence of elements             | Side identifiers"
+"                         |"
+msgstr ""
+
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurface of
+msgid ""
 "-------------------------------- | "
-"---------------------------------------- | | Solid elements"
-"                   | FACE1, FACE2, FACE3, FACE4, FACE5, FACE6 | | Three-"
-"dimensional shell elements | SIDE1, SIDE2                             | |"
-" Two-dimensional elements         | FACE1, FACE2, FACE3, FACE4"
-"               | | Wire elements                    | END, END2"
-"                                | For example: ``` "
-"side1Elements=instance1.elements[217:218] "
-"side2Elements=instance2.elements[100:105] "
-"assembly.MeshSurface(name='Surf-1' meshSurfaces=((side1Elems,SIDE1) "
-"(side2Elems,SIDE2))) ```"
+"---------------------------------------- |"
+msgstr ""
+
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurface of
+msgid ""
+"Solid elements                   | FACE1, FACE2, FACE3, FACE4, FACE5, "
+"FACE6 |"
+msgstr ""
+
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurface of
+msgid ""
+"Three-dimensional shell elements | SIDE1, SIDE2"
+"                             |"
+msgstr ""
+
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurface of
+msgid ""
+"Two-dimensional elements         | FACE1, FACE2, FACE3, FACE4"
+"               |"
+msgstr ""
+
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurface of
+msgid ""
+"Wire elements                    | END, END2"
+"                                |"
+msgstr ""
+
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurface:33 of
+msgid "For example:"
 msgstr ""
 
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:14 of
@@ -11654,5 +11846,64 @@ msgstr ""
 #~ msgid ""
 #~ "Check `UserData on help.3ds.com/2016 "
 #~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-userdatapyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the step procedure."
+#~ " The default value is an empty "
+#~ "string. The following is the list "
+#~ "of valid procedures: ``` *ANNEAL *BUCKLE"
+#~ " *COMPLEX FREQUENCY *COUPLED TEMPERATURE-"
+#~ "DISPLACEMENT *COUPLED TEMPERATURE-DISPLACEMENT, "
+#~ "CETOL *COUPLED TEMPERATURE-DISPLACEMENT, "
+#~ "STEADY STATE *COUPLED THERMAL-ELECTRICAL, "
+#~ "STEADY STATE *COUPLED THERMAL-ELECTRICAL "
+#~ "*COUPLED THERMAL-ELECTRICAL, DELTMX *DYNAMIC"
+#~ " *DYNAMIC, DIRECT *DYNAMIC, EXPLICIT "
+#~ "*DYNAMIC, SUBSPACE *DYNAMIC TEMPERATURE-"
+#~ "DISPLACEMENT, EXPLICT *ELECTROMAGNETIC, HIGH "
+#~ "FREQUENCY, TIME HARMONIC *ELECTROMAGNETIC, LOW"
+#~ " FREQUENCY, TIME DOMAIN *ELECTROMAGNETIC, "
+#~ "LOW FREQUENCY, TIME DOMAIN, DIRECT "
+#~ "*ELECTROMAGNETIC, LOW FREQUENCY, TIME HARMONIC"
+#~ " *FREQUENCY *GEOSTATIC *HEAT TRANSFER *HEAT"
+#~ " TRANSFER, DELTAMX=__ *HEAT TRANSFER, "
+#~ "STEADY STATE *MAGNETOSTATIC *MAGNETOSTATIC, "
+#~ "DIRECT *MASS DIFFUSION *MASS DIFFUSION, "
+#~ "DCMAX= *MASS DIFFUSION, STEADY STATE "
+#~ "*MODAL DYNAMIC *RANDOM RESPONSE *RESPONSE "
+#~ "SPECTRUM *SOILS *SOILS, CETOL/UTOL *SOILS, "
+#~ "CONSOLIDATION *SOILS, CONSOLIDATION, CETOL/UTOL "
+#~ "*STATIC *STATIC, DIRECT *STATIC, RIKS "
+#~ "*STEADY STATE DYNAMICS *STEADY STATE "
+#~ "TRANSPORT *STEADY STATE TRANSPORT, DIRECT "
+#~ "*STEP PERTURBATION, *STATIC *SUBSTRUCTURE "
+#~ "GENERATE *USA ADDDED MASS GENERATION "
+#~ "*VISCO ```"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of sequences. Each sequence"
+#~ " consists of an element sequence and"
+#~ " a side identifier. The possible side"
+#~ " identifiers depend on the type of"
+#~ " element, as described in the "
+#~ "following table: | Sequence of elements"
+#~ "             | Side identifiers"
+#~ "                         | | "
+#~ "-------------------------------- | "
+#~ "---------------------------------------- | | Solid"
+#~ " elements                   | FACE1, FACE2, "
+#~ "FACE3, FACE4, FACE5, FACE6 | | "
+#~ "Three-dimensional shell elements | SIDE1,"
+#~ " SIDE2                             | | Two-"
+#~ "dimensional elements         | FACE1, FACE2,"
+#~ " FACE3, FACE4               | | Wire "
+#~ "elements                    | END, END2"
+#~ "                                | For example: "
+#~ "``` side1Elements=instance1.elements[217:218] "
+#~ "side2Elements=instance2.elements[100:105] "
+#~ "assembly.MeshSurface(name='Surf-1' "
+#~ "meshSurfaces=((side1Elems,SIDE1) (side2Elems,SIDE2))) ```"
 #~ msgstr ""
 

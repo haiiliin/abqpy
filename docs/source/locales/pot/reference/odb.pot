@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 00:16+0000\n"
+"POT-Creation-Date: 2022-09-05 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2632,35 +2632,215 @@ msgstr ""
 msgid "A String specifying the preceding step. If **previousStepName** is the empty string, the last step in the repository is used. If **previousStepName** is not the last step, this will result in a change to the **previousStepName** member of the step that was in that position. A special value 'Initial' refers to the internal initial model step and may be used exclusively for inserting a new step at the first position before any other existing steps. The default value is an empty string."
 msgstr ""
 
-#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:88
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:87
 msgid "**procedure**"
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:40
-msgid "A String specifying the step procedure. The default value is an empty string. The following is the list of valid procedures: ``` *ANNEAL *BUCKLE *COMPLEX FREQUENCY *COUPLED TEMPERATURE-DISPLACEMENT *COUPLED TEMPERATURE-DISPLACEMENT, CETOL *COUPLED TEMPERATURE-DISPLACEMENT, STEADY STATE *COUPLED THERMAL-ELECTRICAL, STEADY STATE *COUPLED THERMAL-ELECTRICAL *COUPLED THERMAL-ELECTRICAL, DELTMX *DYNAMIC *DYNAMIC, DIRECT *DYNAMIC, EXPLICIT *DYNAMIC, SUBSPACE *DYNAMIC TEMPERATURE-DISPLACEMENT, EXPLICT *ELECTROMAGNETIC, HIGH FREQUENCY, TIME HARMONIC *ELECTROMAGNETIC, LOW FREQUENCY, TIME DOMAIN *ELECTROMAGNETIC, LOW FREQUENCY, TIME DOMAIN, DIRECT *ELECTROMAGNETIC, LOW FREQUENCY, TIME HARMONIC *FREQUENCY *GEOSTATIC *HEAT TRANSFER *HEAT TRANSFER, DELTAMX=__ *HEAT TRANSFER, STEADY STATE *MAGNETOSTATIC *MAGNETOSTATIC, DIRECT *MASS DIFFUSION *MASS DIFFUSION, DCMAX= *MASS DIFFUSION, STEADY STATE *MODAL DYNAMIC *RANDOM RESPONSE *RESPONSE SPECTRUM *SOILS *SOILS, CETOL/UTOL *SOILS, CONSOLIDATION *SOILS, CONSOLIDATION, CETOL/UTOL *STATIC *STATIC, DIRECT *STATIC, RIKS *STEADY STATE DYNAMICS *STEADY STATE TRANSPORT *STEADY STATE TRANSPORT, DIRECT *STEP PERTURBATION, *STATIC *SUBSTRUCTURE GENERATE *USA ADDDED MASS GENERATION *VISCO ```"
+msgid "A String specifying the step procedure. The default value is an empty string. The following is the list of valid procedures:"
 msgstr ""
 
-#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:92
-msgid "**totalTime**"
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:43
+msgid "`*ANNEAL`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:44
+msgid "`*BUCKLE`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:45
+msgid "`*COMPLEX FREQUENCY`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:46
+msgid "`*COUPLED TEMPERATURE-DISPLACEMENT`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:47
+msgid "`*COUPLED TEMPERATURE-DISPLACEMENT, CETOL`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:48
+msgid "`*COUPLED TEMPERATURE-DISPLACEMENT, STEADY STATE`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:49
+msgid "`*COUPLED THERMAL-ELECTRICAL, STEADY STATE`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:50
+msgid "`*COUPLED THERMAL-ELECTRICAL`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:51
+msgid "`*COUPLED THERMAL-ELECTRICAL, DELTMX`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:52
+msgid "`*DYNAMIC`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:53
+msgid "`*DYNAMIC, DIRECT`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:54
+msgid "`*DYNAMIC, EXPLICIT`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:55
+msgid "`*DYNAMIC, SUBSPACE`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:56
+msgid "`*DYNAMIC TEMPERATURE-DISPLACEMENT, EXPLICT`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:57
+msgid "`*ELECTROMAGNETIC, HIGH FREQUENCY, TIME HARMONIC`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:58
+msgid "`*ELECTROMAGNETIC, LOW FREQUENCY, TIME DOMAIN`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:59
+msgid "`*ELECTROMAGNETIC, LOW FREQUENCY, TIME DOMAIN, DIRECT`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:60
+msgid "`*ELECTROMAGNETIC, LOW FREQUENCY, TIME HARMONIC`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:61
+msgid "`*FREQUENCY`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:62
+msgid "`*GEOSTATIC`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:63
+msgid "`*HEAT TRANSFER`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:64
+msgid "`*HEAT TRANSFER, DELTAMX=__`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:65
+msgid "`*HEAT TRANSFER, STEADY STATE`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:66
+msgid "`*MAGNETOSTATIC`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:67
+msgid "`*MAGNETOSTATIC, DIRECT`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:68
+msgid "`*MASS DIFFUSION`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:69
+msgid "`*MASS DIFFUSION, DCMAX=`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:70
+msgid "`*MASS DIFFUSION, STEADY STATE`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:71
+msgid "`*MODAL DYNAMIC`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:72
+msgid "`*RANDOM RESPONSE`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:73
+msgid "`*RESPONSE SPECTRUM`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:74
+msgid "`*SOILS`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:75
+msgid "`*SOILS, CETOL/UTOL`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:76
+msgid "`*SOILS, CONSOLIDATION`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:77
+msgid "`*SOILS, CONSOLIDATION, CETOL/UTOL`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:78
+msgid "`*STATIC`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:79
+msgid "`*STATIC, DIRECT`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:80
+msgid "`*STATIC, RIKS`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:81
+msgid "`*STEADY STATE DYNAMICS`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:82
+msgid "`*STEADY STATE TRANSPORT`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:83
+msgid "`*STEADY STATE TRANSPORT, DIRECT`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:84
+msgid "`*STEP PERTURBATION, *STATIC`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:85
+msgid "`*SUBSTRUCTURE GENERATE`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:86
+msgid "`*USA ADDDED MASS GENERATION`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:87
+msgid "`*VISCO`"
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:91
+msgid "**totalTime**"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:90
 msgid "A Float specifying the analysis time spend in all the steps previous to this step. The default value is −1.0."
 msgstr ""
 
-#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:100
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:99
 msgid ":obj:`OdbStep`"
 msgstr ""
 
-#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:97
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:96
 msgid "An :py:class:`~abaqus.Odb.OdbStep.OdbStep` object."
 msgstr ""
 
-#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:113
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:112
 msgid "ValueError: :obj:`previousStepName` :obj:`is` :obj:`invalid`"
 msgstr ""
 
-#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:105
+#: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.Step:104
 msgid "If **previousStepName** is invalid."
 msgstr ""
 
@@ -5352,7 +5532,7 @@ msgstr ""
 #: ../../../../src/abaqus/Odb/OdbPart.py:docstring of abaqus.Odb.OdbPart.OdbPart.NodeSet:42
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.ElementSet:43
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.ElementSetFromElementLabels:41
-#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurface:55
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurface:59
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:42
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:41
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.NodeSetFromNodeLabels:41
@@ -5364,7 +5544,7 @@ msgstr ""
 #: ../../../../src/abaqus/Odb/OdbPart.py:docstring of abaqus.Odb.OdbPart.OdbPart.NodeSet:30
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.ElementSet:31
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.ElementSetFromElementLabels:29
-#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurface:43
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurface:47
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:30
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:29
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.NodeSetFromNodeLabels:29
@@ -8305,12 +8485,40 @@ msgstr ""
 msgid "Check `MeshSurface on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshsurfacepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurface:38
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurface:42
 msgid "**meshSurfaces**"
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurface:22
-msgid "A sequence of sequences. Each sequence consists of an element sequence and a side identifier. The possible side identifiers depend on the type of element, as described in the following table: | Sequence of elements             | Side identifiers                         | | -------------------------------- | ---------------------------------------- | | Solid elements                   | FACE1, FACE2, FACE3, FACE4, FACE5, FACE6 | | Three-dimensional shell elements | SIDE1, SIDE2                             | | Two-dimensional elements         | FACE1, FACE2, FACE3, FACE4               | | Wire elements                    | END, END2                                | For example: ``` side1Elements=instance1.elements[217:218] side2Elements=instance2.elements[100:105] assembly.MeshSurface(name='Surf-1' meshSurfaces=((side1Elems,SIDE1) (side2Elems,SIDE2))) ```"
+msgid "A sequence of sequences. Each sequence consists of an element sequence and a side identifier. The possible side identifiers depend on the type of element, as described in the following table:"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurface:0
+msgid "Sequence of elements             | Side identifiers                         |"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurface:0
+msgid "-------------------------------- | ---------------------------------------- |"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurface:0
+msgid "Solid elements                   | FACE1, FACE2, FACE3, FACE4, FACE5, FACE6 |"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurface:0
+msgid "Three-dimensional shell elements | SIDE1, SIDE2                             |"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurface:0
+msgid "Two-dimensional elements         | FACE1, FACE2, FACE3, FACE4               |"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurface:0
+msgid "Wire elements                    | END, END2                                |"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurface:33
+msgid "For example:"
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:14
