@@ -98,53 +98,52 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
         procedure
             A String specifying the step procedure. The default value is an empty string. The
             following is the list of valid procedures:
-            ```
-            *ANNEAL
-            *BUCKLE
-            *COMPLEX FREQUENCY
-            *COUPLED TEMPERATURE-DISPLACEMENT
-            *COUPLED TEMPERATURE-DISPLACEMENT, CETOL
-            *COUPLED TEMPERATURE-DISPLACEMENT, STEADY STATE
-            *COUPLED THERMAL-ELECTRICAL, STEADY STATE
-            *COUPLED THERMAL-ELECTRICAL
-            *COUPLED THERMAL-ELECTRICAL, DELTMX
-            *DYNAMIC
-            *DYNAMIC, DIRECT
-            *DYNAMIC, EXPLICIT
-            *DYNAMIC, SUBSPACE
-            *DYNAMIC TEMPERATURE-DISPLACEMENT, EXPLICT
-            *ELECTROMAGNETIC, HIGH FREQUENCY, TIME HARMONIC
-            *ELECTROMAGNETIC, LOW FREQUENCY, TIME DOMAIN
-            *ELECTROMAGNETIC, LOW FREQUENCY, TIME DOMAIN, DIRECT
-            *ELECTROMAGNETIC, LOW FREQUENCY, TIME HARMONIC
-            *FREQUENCY
-            *GEOSTATIC
-            *HEAT TRANSFER
-            *HEAT TRANSFER, DELTAMX=__
-            *HEAT TRANSFER, STEADY STATE
-            *MAGNETOSTATIC
-            *MAGNETOSTATIC, DIRECT
-            *MASS DIFFUSION
-            *MASS DIFFUSION, DCMAX=
-            *MASS DIFFUSION, STEADY STATE
-            *MODAL DYNAMIC
-            *RANDOM RESPONSE
-            *RESPONSE SPECTRUM
-            *SOILS
-            *SOILS, CETOL/UTOL
-            *SOILS, CONSOLIDATION
-            *SOILS, CONSOLIDATION, CETOL/UTOL
-            *STATIC
-            *STATIC, DIRECT
-            *STATIC, RIKS
-            *STEADY STATE DYNAMICS
-            *STEADY STATE TRANSPORT
-            *STEADY STATE TRANSPORT, DIRECT
-            *STEP PERTURBATION, *STATIC
-            *SUBSTRUCTURE GENERATE
-            *USA ADDDED MASS GENERATION
-            *VISCO
-            ```
+            
+            - `*ANNEAL`
+            - `*BUCKLE`
+            - `*COMPLEX FREQUENCY`
+            - `*COUPLED TEMPERATURE-DISPLACEMENT`
+            - `*COUPLED TEMPERATURE-DISPLACEMENT, CETOL`
+            - `*COUPLED TEMPERATURE-DISPLACEMENT, STEADY STATE`
+            - `*COUPLED THERMAL-ELECTRICAL, STEADY STATE`
+            - `*COUPLED THERMAL-ELECTRICAL`
+            - `*COUPLED THERMAL-ELECTRICAL, DELTMX`
+            - `*DYNAMIC`
+            - `*DYNAMIC, DIRECT`
+            - `*DYNAMIC, EXPLICIT`
+            - `*DYNAMIC, SUBSPACE`
+            - `*DYNAMIC TEMPERATURE-DISPLACEMENT, EXPLICT`
+            - `*ELECTROMAGNETIC, HIGH FREQUENCY, TIME HARMONIC`
+            - `*ELECTROMAGNETIC, LOW FREQUENCY, TIME DOMAIN`
+            - `*ELECTROMAGNETIC, LOW FREQUENCY, TIME DOMAIN, DIRECT`
+            - `*ELECTROMAGNETIC, LOW FREQUENCY, TIME HARMONIC`
+            - `*FREQUENCY`
+            - `*GEOSTATIC`
+            - `*HEAT TRANSFER`
+            - `*HEAT TRANSFER, DELTAMX=__`
+            - `*HEAT TRANSFER, STEADY STATE`
+            - `*MAGNETOSTATIC`
+            - `*MAGNETOSTATIC, DIRECT`
+            - `*MASS DIFFUSION`
+            - `*MASS DIFFUSION, DCMAX=`
+            - `*MASS DIFFUSION, STEADY STATE`
+            - `*MODAL DYNAMIC`
+            - `*RANDOM RESPONSE`
+            - `*RESPONSE SPECTRUM`
+            - `*SOILS`
+            - `*SOILS, CETOL/UTOL`
+            - `*SOILS, CONSOLIDATION`
+            - `*SOILS, CONSOLIDATION, CETOL/UTOL`
+            - `*STATIC`
+            - `*STATIC, DIRECT`
+            - `*STATIC, RIKS`
+            - `*STEADY STATE DYNAMICS`
+            - `*STEADY STATE TRANSPORT`
+            - `*STEADY STATE TRANSPORT, DIRECT`
+            - `*STEP PERTURBATION, *STATIC`
+            - `*SUBSTRUCTURE GENERATE`
+            - `*USA ADDDED MASS GENERATION`
+            - `*VISCO`
         totalTime
             A Float specifying the analysis time spend in all the steps previous to this step. The
             default value is −1.0.
