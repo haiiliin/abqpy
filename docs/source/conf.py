@@ -107,7 +107,10 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
     fullname = info['fullname']
 
     filename = modname.replace('.', '/')
-    branch_name = git.repo.Repo('../../').active_branch.name
+    try:
+        branch_name = git.repo.Repo('../../').active_branch.name
+    except Exception:
+        branch_name = 'main'
     baseurl = f'https://github.com/haiiliin/abqpy/blob/{branch_name}/src/{filename}.py'
 
     submod = sys.modules.get(modname)
