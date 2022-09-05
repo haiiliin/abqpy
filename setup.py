@@ -22,7 +22,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     project_urls={
-        'GitHub': 'https://github.com/haiiliin/abqpy',
         'Bug Tracker': 'https://github.com/haiiliin/abqpy/issues',
         'Documentation': 'https://abqpy.haiiliin.com',
         'Anaconda': 'https://anaconda.org/haiiliin/abqpy',
