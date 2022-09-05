@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-04 00:14+0000\n"
+"POT-Creation-Date: 2022-09-05 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/mdb/model/field.rst:3 ../../reference/mdb/model/field.rst:22
+#: ../../reference/mdb/model/field.rst:3 ../../reference/mdb/model/field.rst:21
 msgid "Field"
 msgstr ""
 
@@ -647,7 +647,7 @@ msgstr ""
 #: abaqus.Field.FieldModel.FieldModel.DiscreteField:12 of
 msgid ""
 "Check `DiscreteField on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefieldpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefieldpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData
@@ -828,7 +828,7 @@ msgstr ""
 #: abaqus.Field.FieldModel.FieldModel.ExpressionField:12 of
 msgid ""
 "Check `ExpressionField on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-expressionfieldpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-expressionfieldpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Field.FieldModel.FieldModel.ExpressionField:21 of
@@ -880,7 +880,7 @@ msgstr ""
 #: abaqus.Field.MappedField.MappedField:15 of
 msgid ""
 "Check `MappedField on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mappedfieldpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mappedfieldpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Field.FieldModel.FieldModel.MappedField:21
@@ -1100,7 +1100,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Field.MappedField.MappedField` object."
 msgstr ""
 
-#: ../../reference/mdb/model/field.rst:19
+#: ../../reference/mdb/model/field.rst:18
 msgid "Object features"
 msgstr ""
 
@@ -1123,7 +1123,7 @@ msgstr ""
 #: abaqus.Field.Field.Field:14 of
 msgid ""
 "Check `Field on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1139,7 +1139,7 @@ msgstr ""
 msgid "A String specifying the description of the field."
 msgstr ""
 
-#: ../../reference/mdb/model/field.rst:30
+#: ../../reference/mdb/model/field.rst:29
 msgid "AnalyticalField"
 msgstr ""
 
@@ -1155,7 +1155,7 @@ msgstr ""
 #: abaqus.Field.AnalyticalField.AnalyticalField:16 of
 msgid ""
 "Check `AnalyticalField on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-analyticalfieldpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-analyticalfieldpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1 ../../None:6:<autosummary>:1
@@ -1209,7 +1209,7 @@ msgstr ""
 #: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:17 of
 msgid ""
 "Check `OdbMeshRegionData on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbmeshregiondatapyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbmeshregiondatapyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:19 of
@@ -1503,16 +1503,14 @@ msgstr ""
 msgid "**regionBoundaries**"
 msgstr ""
 
-#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:90 of
+#: ../../docstring
+#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:90
+#: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.regionBoundaries:2 of
 msgid ""
 "A SymbolicConstant specifying the type of averaging region boundaries. "
-"Currently only"
-msgstr ""
-
-#: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:91 of
-msgid ""
-"NONE and ODB_REGIONS are supported. Possible values are NONE, "
-"ODB_REGIONS, ELEMENT_SET, and DISPLAY_GROUPS. The default value is NONE."
+"Currently only NONE and ODB_REGIONS are supported. Possible values are "
+"NONE, ODB_REGIONS, ELEMENT_SET, and DISPLAY_GROUPS. The default value is "
+"NONE."
 msgstr ""
 
 #: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:96 of
@@ -1651,7 +1649,7 @@ msgstr ""
 msgid ":obj:`OdbMeshRegionData`"
 msgstr ""
 
-#: ../../reference/mdb/model/field.rst:38
+#: ../../reference/mdb/model/field.rst:37
 msgid "DataTable"
 msgstr ""
 
@@ -1664,7 +1662,7 @@ msgstr ""
 #: abaqus.Field.DataTable.DataTable:13 of
 msgid ""
 "Check `DataTable on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datatablepyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datatablepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -1719,11 +1717,11 @@ msgid ""
 "corresponding to scalar data, orientations and 4D tensors."
 msgstr ""
 
-#: ../../reference/mdb/model/field.rst:46
+#: ../../reference/mdb/model/field.rst:45
 msgid "DataTableArray"
 msgstr ""
 
-#: ../../reference/mdb/model/field.rst:54
+#: ../../reference/mdb/model/field.rst:53
 msgid "DiscreteField"
 msgstr ""
 
@@ -1836,7 +1834,7 @@ msgstr ""
 #: abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:13 of
 msgid ""
 "Check `DiscreteFieldByVolumeFraction on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefieldbyvolumefractionpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefieldbyvolumefractionpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:22 of
@@ -1896,7 +1894,7 @@ msgstr ""
 #: abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:12 of
 msgid ""
 "Check `DiscreteFieldFromAnalytic on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefieldfromanalyticpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefieldfromanalyticpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:24 of
@@ -1919,12 +1917,12 @@ msgstr ""
 
 #: abaqus.Field.DiscreteField.DiscreteField.setValues:5 of
 msgid ""
-"Check `DiscreteField.setValues() on help.3ds.com/2017 "
+"Check `DiscreteField.setValues on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefieldpyc.htm?contextscope=all"
-"#simaker-discretefieldsetvaluespyc>`_."
+"#simaker-discretefieldsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/field.rst:62
+#: ../../reference/mdb/model/field.rst:61
 msgid "ExpressionField"
 msgstr ""
 
@@ -1985,12 +1983,12 @@ msgstr ""
 
 #: abaqus.Field.ExpressionField.ExpressionField.setValues:5 of
 msgid ""
-"Check `ExpressionField.setValues() on help.3ds.com/2017 "
+"Check `ExpressionField.setValues on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-expressionfieldpyc.htm?contextscope=all"
-"#simaker-expressionfieldsetvaluespyc>`_."
+"#simaker-expressionfieldsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/field.rst:70
+#: ../../reference/mdb/model/field.rst:69
 msgid "MappedField"
 msgstr ""
 
@@ -2251,9 +2249,9 @@ msgstr ""
 
 #: abaqus.Field.MappedField.MappedField.setValues:5 of
 msgid ""
-"Check `MappedField.setValues() on help.3ds.com/2017 "
+"Check `MappedField.setValues on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mappedfieldpyc.htm?contextscope=all"
-"#simaker-mappedfieldsetvaluespyc>`_."
+"#simaker-mappedfieldsetvaluespyc>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Field.MappedField.MappedField.xyzPointData:2 of
@@ -2263,7 +2261,7 @@ msgid ""
 "its field value. The default value is an empty sequence."
 msgstr ""
 
-#: ../../reference/mdb/model/field.rst:78
+#: ../../reference/mdb/model/field.rst:77
 msgid "OdbMeshRegionData"
 msgstr ""
 
@@ -2504,8 +2502,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averagingThreshold:2 of
 msgid ""
-"A Float specifying the nodal averaging threshold percentage. 0 ≤≤ "
-"**averagingThreshold** ≤≤100. The default value is 75.0."
+"A Float specifying the nodal averaging threshold percentage. 0 ≤ "
+"**averagingThreshold** ≤100. The default value is 75.0."
 msgstr ""
 
 #: ../../docstring
@@ -2526,8 +2524,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.frameIndex:2 of
 msgid ""
-"An Int specifying the frame in the specified step. Valid values are 0 ≤≤ "
-"**frameIndex** ≤≤ (*numFramesInStep* − 1). The default value is 0."
+"An Int specifying the frame in the specified step. Valid values are 0 ≤ "
+"**frameIndex** ≤ (*numFramesInStep* − 1). The default value is 0."
 msgstr ""
 
 #: ../../docstring
@@ -2539,20 +2537,11 @@ msgid ""
 " with the field output variable. Possible values are:"
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.regionBoundaries:2 of
-msgid ""
-"A SymbolicConstant specifying the type of averaging region boundaries. "
-"Currently only NONE and ODB_REGIONS are supported. Possible values are "
-"NONE, ODB_REGIONS, ELEMENT_SET, and DISPLAY_GROUPS. The default value is "
-"NONE."
-msgstr ""
-
 #: ../../docstring abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.stepIndex:2
 #: of
 msgid ""
-"An Int specifying the step index. Possible values are 0 ≤≤ **stepIndex** "
-"≤≤ (*numSteps* − 1). The default value is 0."
+"An Int specifying the step index. Possible values are 0 ≤ **stepIndex** ≤"
+" (*numSteps* − 1). The default value is 0."
 msgstr ""
 
 #~ msgid ""
@@ -2583,5 +2572,107 @@ msgstr ""
 #~ "that contain complex numbers when "
 #~ "*numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The "
 #~ "default value is 0.0."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `DiscreteField on help.3ds.com/2017 "
+#~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefieldpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ExpressionField on help.3ds.com/2017 "
+#~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-expressionfieldpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `MappedField on help.3ds.com/2017 "
+#~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mappedfieldpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Field on help.3ds.com/2017 "
+#~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `AnalyticalField on help.3ds.com/2017 "
+#~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-analyticalfieldpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `OdbMeshRegionData on help.3ds.com/2017 "
+#~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbmeshregiondatapyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the type "
+#~ "of averaging region boundaries. Currently "
+#~ "only"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NONE and ODB_REGIONS are supported. "
+#~ "Possible values are NONE, ODB_REGIONS, "
+#~ "ELEMENT_SET, and DISPLAY_GROUPS. The default"
+#~ " value is NONE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `DataTable on help.3ds.com/2017 "
+#~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datatablepyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `DiscreteFieldByVolumeFraction on "
+#~ "help.3ds.com/2017 "
+#~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefieldbyvolumefractionpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `DiscreteFieldFromAnalytic on "
+#~ "help.3ds.com/2017 "
+#~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefieldfromanalyticpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `DiscreteField.setValues() on "
+#~ "help.3ds.com/2017 "
+#~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefieldpyc.htm?contextscope=all"
+#~ "#simaker-discretefieldsetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ExpressionField.setValues() on "
+#~ "help.3ds.com/2017 "
+#~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-expressionfieldpyc.htm?contextscope=all"
+#~ "#simaker-expressionfieldsetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `MappedField.setValues() on help.3ds.com/2017"
+#~ " "
+#~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mappedfieldpyc.htm?contextscope=all"
+#~ "#simaker-mappedfieldsetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the nodal averaging"
+#~ " threshold percentage. 0 ≤≤ "
+#~ "**averagingThreshold** ≤≤100. The default "
+#~ "value is 75.0."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the frame in the"
+#~ " specified step. Valid values are 0"
+#~ " ≤≤ **frameIndex** ≤≤ (*numFramesInStep* −"
+#~ " 1). The default value is 0."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the step index. "
+#~ "Possible values are 0 ≤≤ **stepIndex**"
+#~ " ≤≤ (*numSteps* − 1). The default "
+#~ "value is 0."
 #~ msgstr ""
 
