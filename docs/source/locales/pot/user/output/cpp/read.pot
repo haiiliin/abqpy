@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-04 00:14+0000\n"
+"POT-Creation-Date: 2022-09-05 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -270,7 +270,7 @@ msgid "The data in the FieldValue object depend on the field output variable, wh
 msgstr ""
 
 #: ../../user/output/cpp/read.rst:554
-msgid "Access to field data using the FieldValue object will be deprecated in future releases of the C++ version of the Abaqus Scripting Interface because of the improved performance of the bulk data access method. For more information, see :py:class:`~abaqus.Odb.FieldBulkData.FieldBulkData` object and :doc:`read:using bulk data access to an output database`."
+msgid "Access to field data using the FieldValue object will be deprecated in future releases of the C++ version of the Abaqus Scripting Interface because of the improved performance of the bulk data access method. For more information, see :py:class:`~abaqus.Odb.FieldBulkData.FieldBulkData` object and :`using bulk data access to an output database`_."
 msgstr ""
 
 #: ../../user/output/cpp/read.rst:557
@@ -294,7 +294,7 @@ msgid "For more information, see :py:class:`~abaqus.Odb.FieldBulkData.FieldBulkD
 msgstr ""
 
 #: ../../user/output/cpp/read.rst:627
-msgid "The bulkDataBlocks method is an alternative to the values method of a FieldOutput object, described in :doc:`read:reading field output data`. The `values` method of a FieldOutput object returns a reference to a sequence of FieldValue objects that contain data. Each FieldValue object in the sequence provides data for a unique location in the model."
+msgid "The bulkDataBlocks method is an alternative to the values method of a FieldOutput object, described in `reading field output data`_. The `values` method of a FieldOutput object returns a reference to a sequence of FieldValue objects that contain data. Each FieldValue object in the sequence provides data for a unique location in the model."
 msgstr ""
 
 #: ../../user/output/cpp/read.rst:629
@@ -370,7 +370,7 @@ msgid "History data from an analysis cannot contain multiple points."
 msgstr ""
 
 #: ../../user/output/cpp/read.rst:728
-msgid "The history data object model is shown in :numref:`odb-history-nls`"
+msgid "The history data object model is shown in :numref:`odb-history-nls-3`."
 msgstr ""
 
 #: ../../user/output/cpp/read.rst:735
