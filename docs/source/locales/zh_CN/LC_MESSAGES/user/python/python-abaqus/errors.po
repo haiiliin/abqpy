@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-04 00:15+0000\n"
+"POT-Creation-Date: 2022-09-05 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,13 +24,13 @@ msgstr ""
 #: ../../user/python/python-abaqus/errors.rst:5
 msgid ""
 "The basics of Python's exception handling apply to the Abaqus Scripting "
-"Interface. Python's exception handling is described in "
-":doc:`/user/python/introduction/python-basics/errors`. If certain "
-"circumstances arise while a script is running, Python allows you to take "
-"the necessary action and still allows the script to continue. "
-"Alternatively, when Abaqus/CAE issues (or \"throws\") an exception and "
-"the exception is not handled by the script, Abaqus/CAE displays the "
-"exception message in the message area and the script stops executing."
+"Interface. Python's exception handling is described in :ref:`error-"
+"handling`. If certain circumstances arise while a script is running, "
+"Python allows you to take the necessary action and still allows the "
+"script to continue. Alternatively, when Abaqus/CAE issues (or \"throws\")"
+" an exception and the exception is not handled by the script, Abaqus/CAE "
+"displays the exception message in the message area and the script stops "
+"executing."
 msgstr ""
 
 #: ../../user/python/python-abaqus/errors.rst:8
@@ -103,8 +103,8 @@ msgid ""
 "While Python allows most punctuation marks and special characters, some "
 "of the strings you provide will be used in an Abaqus input file; "
 "therefore, you cannot use the following characters: "
-"$&*~!()[]{}|;'`\",.?/\\ when you are naming an object, such as a part, a "
-"model or a job."
+"`\\$\\&\\*\\~\\!\\(\\)\\[\\]\\{\\}\\|\\;\\'\\`\\\"\\,\\.\\?\\/\\\\` when "
+"you are naming an object, such as a part, a model or a job."
 msgstr ""
 
 #: ../../user/python/python-abaqus/errors.rst:32
@@ -185,11 +185,11 @@ msgstr ""
 msgid "You use the exception type in your error handling routines."
 msgstr ""
 
-#: ../../user/python/python-abaqus/errors.rst:73
+#: ../../user/python/python-abaqus/errors.rst:75
 msgid "Exception handling"
 msgstr ""
 
-#: ../../user/python/python-abaqus/errors.rst:75
+#: ../../user/python/python-abaqus/errors.rst:77
 msgid ""
 "The Python exception handling techniques described in Error handling "
 "apply to the Abaqus Scripting Interface. You should use the command "
@@ -199,11 +199,11 @@ msgid ""
 "the width or height are too small:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/errors.rst:85
+#: ../../user/python/python-abaqus/errors.rst:87
 msgid "The resulting output is"
 msgstr ""
 
-#: ../../user/python/python-abaqus/errors.rst:92
+#: ../../user/python/python-abaqus/errors.rst:94
 msgid "The exception has been handled, and the script continues."
 msgstr ""
 
@@ -261,5 +261,34 @@ msgstr ""
 #~ "to create a viewport and prints a"
 #~ " message if the width or height "
 #~ "are too small:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The basics of Python's exception "
+#~ "handling apply to the Abaqus Scripting"
+#~ " Interface. Python's exception handling is"
+#~ " described in :doc:`/user/python/introduction"
+#~ "/python-basics/errors`. If certain circumstances"
+#~ " arise while a script is running, "
+#~ "Python allows you to take the "
+#~ "necessary action and still allows the"
+#~ " script to continue. Alternatively, when"
+#~ " Abaqus/CAE issues (or \"throws\") an "
+#~ "exception and the exception is not "
+#~ "handled by the script, Abaqus/CAE "
+#~ "displays the exception message in the"
+#~ " message area and the script stops"
+#~ " executing."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "While Python allows most punctuation "
+#~ "marks and special characters, some of"
+#~ " the strings you provide will be "
+#~ "used in an Abaqus input file; "
+#~ "therefore, you cannot use the following"
+#~ " characters: $&*~!()[]{}|;'`\",.?/\\ when you "
+#~ "are naming an object, such as a"
+#~ " part, a model or a job."
 #~ msgstr ""
 

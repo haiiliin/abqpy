@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-04 00:15+0000\n"
+"POT-Creation-Date: 2022-09-05 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,25 +118,25 @@ msgid ""
 "instance of a Model type."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:60
+#: ../../user/python/introduction/python-basics.rst:62
 msgid "Python data types"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:62
+#: ../../user/python/introduction/python-basics.rst:64
 msgid "Python includes the following built-in data types:"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:65
+#: ../../user/python/introduction/python-basics.rst:67
 msgid "Integer"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:67
+#: ../../user/python/introduction/python-basics.rst:69
 msgid ""
 "To create variables called i and j that refer to integer objects, type "
 "the following at the Python prompt:"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:74
+#: ../../user/python/introduction/python-basics.rst:76
 msgid ""
 "An integer is based on a C long and can be compared to a Fortran "
 "integer\\*4 or \\*8. For extremely large integer values, you should "
@@ -145,13 +145,13 @@ msgid ""
 "integer."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:81
+#: ../../user/python/introduction/python-basics.rst:83
 msgid ""
 "Use int(*n*) to convert a variable to an integer; use long(*n*) to "
 "convert a variable to a long integer."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:98
+#: ../../user/python/introduction/python-basics.rst:100
 msgid ""
 "All Abaqus Scripting Interface object types begin with an uppercase "
 "character; for example, a Part or a Viewport. An integer is another kind "
@@ -160,76 +160,75 @@ msgid ""
 "Interface refers to a floating-point object as a Float."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:101
+#: ../../user/python/introduction/python-basics.rst:103
 msgid "Float"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:103
+#: ../../user/python/introduction/python-basics.rst:105
 msgid ""
 "Floats represent floating-point numbers or real numbers. You can use "
 "exponential notation for floats."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:113
+#: ../../user/python/introduction/python-basics.rst:115
 msgid ""
 "A float is based on a C double and can be compared to a Fortran real\\*8."
 " Use float(**n**) to convert a variable to a float."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:116
+#: ../../user/python/introduction/python-basics.rst:118
 msgid "Complex"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:118
+#: ../../user/python/introduction/python-basics.rst:120
 msgid ""
 "Complex numbers use the j notation to indicate the imaginary part of the "
 "number. Python provides methods to manipulate complex numbers. The "
 "conjugate method calculates the conjugate of a complex number."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:126
+#: ../../user/python/introduction/python-basics.rst:128
 msgid ""
 "A complex number has two members, the real member and the imaginary "
 "member."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:136
+#: ../../user/python/introduction/python-basics.rst:138
 msgid ""
 "Python provides complex math functions to operate on complex variables. "
 "You need to import the cmath module to use the complex square root "
 "function."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:145
+#: ../../user/python/introduction/python-basics.rst:147
 msgid ""
 "Remember, functions of a type are called methods; data of a type are "
 "called members. In our example conjugate is a method of a complex type; "
 "a.real refers to the real member of a complex type."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:148
-#: ../../user/python/introduction/python-basics.rst:170
+#: ../../user/python/introduction/python-basics.rst:150
+#: ../../user/python/introduction/python-basics.rst:175
 msgid "Sequences"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:150
+#: ../../user/python/introduction/python-basics.rst:152
 msgid ""
 "Sequences include strings, lists, tuples, and arrays. Sequences are "
-"described in :doc:`python:basics:sequences` and "
-":doc:`python:basics:sequence operations`."
-msgstr ""
-
-#: ../../user/python/introduction/python-basics.rst:153
-msgid "Determining the type of a variable"
+"described in `sequences`_ and `sequence operations`_."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.rst:155
+msgid "Determining the type of a variable"
+msgstr ""
+
+#: ../../user/python/introduction/python-basics.rst:157
 msgid ""
 "You use the `type()` function to return the type of the object to which a"
 " variable refers."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:172
+#: ../../user/python/introduction/python-basics.rst:177
 msgid ""
 "Sequences are important and powerful data types in Python. A sequence is "
 "an object containing a series of objects. There are three types of built-"
@@ -239,29 +238,29 @@ msgid ""
 "sequences."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:174
+#: ../../user/python/introduction/python-basics.rst:179
 msgid "Mutable: Elements can be added, changed, and removed."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:175
+#: ../../user/python/introduction/python-basics.rst:180
 msgid "Homogeneous: Elements must be of the same type."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:176
+#: ../../user/python/introduction/python-basics.rst:181
 msgid ""
 "Methods: The type has methods that can be used to manipulate the "
 "sequence; for example, `sort()`, `reverse()`."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:177
+#: ../../user/python/introduction/python-basics.rst:182
 msgid "Syntax: The syntax used to create the sequence."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:180
+#: ../../user/python/introduction/python-basics.rst:185
 msgid "List"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:182
+#: ../../user/python/introduction/python-basics.rst:187
 msgid ""
 "Lists are mutable heterogeneous sequences (anything that can be modified "
 "is called mutable). A list can be a sequence of strings, integers, "
@@ -269,84 +268,84 @@ msgid ""
 " of object; for example,"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:189
+#: ../../user/python/introduction/python-basics.rst:194
 msgid ""
 "You can refer to individual items from a sequence using the index of the "
 "item. Indices start at zero. Negative indices count backward from the end"
 " of a sequence."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:205
+#: ../../user/python/introduction/python-basics.rst:210
 msgid ""
 "Lists are heterogeneous, which means they can contain objects of "
 "different type."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:211
+#: ../../user/python/introduction/python-basics.rst:216
 msgid "A list can contain other lists."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:221
+#: ../../user/python/introduction/python-basics.rst:226
 msgid ""
 "`myList[1][2]` refers to the third item in the second list. Remember, "
 "indices start at zero."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:228
+#: ../../user/python/introduction/python-basics.rst:233
 msgid ""
 "Python has built-in methods that allow you to operate on the items in a "
 "sequence."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:241
+#: ../../user/python/introduction/python-basics.rst:246
 msgid "The following are some additional built-in methods that operate on lists:"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:243
+#: ../../user/python/introduction/python-basics.rst:248
 msgid "`count()`"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:245
+#: ../../user/python/introduction/python-basics.rst:250
 msgid "Return the number of times a value appears in the list."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:253
+#: ../../user/python/introduction/python-basics.rst:258
 msgid "`index()`"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:255
+#: ../../user/python/introduction/python-basics.rst:260
 msgid "Return the index indicating the first time an item appears in the list."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:264
+#: ../../user/python/introduction/python-basics.rst:269
 msgid "`insert()`"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:266
+#: ../../user/python/introduction/python-basics.rst:271
 msgid "Insert a new element into a list at a specified location."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:274
+#: ../../user/python/introduction/python-basics.rst:279
 msgid "`reverse()`"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:276
+#: ../../user/python/introduction/python-basics.rst:281
 msgid "Reverse the elements in a list."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:285
+#: ../../user/python/introduction/python-basics.rst:290
 msgid "`sort()`"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:287
+#: ../../user/python/introduction/python-basics.rst:292
 msgid "Sort the elements in a list."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:296
+#: ../../user/python/introduction/python-basics.rst:301
 msgid "Tuple"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:298
+#: ../../user/python/introduction/python-basics.rst:303
 msgid ""
 "Tuples are very similar to lists; however, they are immutable "
 "heterogeneous sequences, which means that you cannot change them after "
@@ -356,53 +355,53 @@ msgid ""
 "statement creates an empty tuple:"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:304
+#: ../../user/python/introduction/python-basics.rst:309
 msgid "The following statement creates a tuple with one element:"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:310
+#: ../../user/python/introduction/python-basics.rst:315
 msgid ""
 "You can use the `tuple()` function to convert a list or a string to a "
 "tuple."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:323
+#: ../../user/python/introduction/python-basics.rst:328
 msgid ""
 "The following statements create a tuple and then try to change the value "
 "of an item in the tuple. An `AttributeError` error message is generated "
 "because a tuple is immutable."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:336
+#: ../../user/python/introduction/python-basics.rst:342
 msgid "String"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:338
+#: ../../user/python/introduction/python-basics.rst:344
 msgid ""
 "Strings are immutable sequences of characters. Strings are defined by "
 "single or double quotation marks. You can use the + operator to "
 "concatenate two strings and create a third string; for example,"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:351
+#: ../../user/python/introduction/python-basics.rst:357
 msgid "You can also use the + operator to concatenate tuples and lists."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:353
+#: ../../user/python/introduction/python-basics.rst:359
 msgid "Python provides a set of functions that operate on strings."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:364
+#: ../../user/python/introduction/python-basics.rst:370
 msgid ""
 "As with all sequences, you use negative indices to index backward from "
 "the end of a string."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:372
+#: ../../user/python/introduction/python-basics.rst:378
 msgid "Use the built-in str function to convert an object to a string."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:380
+#: ../../user/python/introduction/python-basics.rst:386
 msgid ""
 "Look at the standard Python documentation on the official Python website "
 "(https://www.python.org) for a list of common string operations. String "
@@ -410,11 +409,11 @@ msgid ""
 "Library Reference."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:383
+#: ../../user/python/introduction/python-basics.rst:389
 msgid "Array"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:385
+#: ../../user/python/introduction/python-basics.rst:391
 msgid ""
 "Arrays are mutable homogeneous sequences. The numpy module allows you to "
 "create and operate on multidimensional arrays. Python determines the type"
@@ -423,19 +422,19 @@ msgid ""
 "https://numpy.org."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:406
+#: ../../user/python/introduction/python-basics.rst:414
 msgid "Sequence operations"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:408
+#: ../../user/python/introduction/python-basics.rst:416
 msgid "Python provides a set of tools that allow you to operate on a sequence."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:411
+#: ../../user/python/introduction/python-basics.rst:419
 msgid "Slicing"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:413
+#: ../../user/python/introduction/python-basics.rst:421
 msgid ""
 "Sequences can be divided into smaller sequences. This operation is called"
 " slicing. The expression sequence[m:n] returns a copy of sequence from m "
@@ -443,23 +442,23 @@ msgid ""
 "length of the sequence."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:427
+#: ../../user/python/introduction/python-basics.rst:435
 msgid "Repeat a sequence"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:439
+#: ../../user/python/introduction/python-basics.rst:447
 msgid "Determine the length of a sequence"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:452
+#: ../../user/python/introduction/python-basics.rst:460
 msgid "Concatenate sequences"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:466
+#: ../../user/python/introduction/python-basics.rst:474
 msgid "Range"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:468
+#: ../../user/python/introduction/python-basics.rst:476
 msgid ""
 "The `range()` function generates a list containing a sequence of "
 "integers. You can use the `range()` function to control iterative loops. "
@@ -469,19 +468,19 @@ msgid ""
 "default step argument is 1. The arguments must be integers."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:480
+#: ../../user/python/introduction/python-basics.rst:488
 msgid "Convert a sequence type"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:482
+#: ../../user/python/introduction/python-basics.rst:490
 msgid "Convert a sequence to a list or a tuple."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:496
+#: ../../user/python/introduction/python-basics.rst:506
 msgid "Python None"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:498
+#: ../../user/python/introduction/python-basics.rst:508
 msgid ""
 "Python defines a special object called the None object or Python None "
 "that represents an empty value. The None object is returned by functions "
@@ -489,26 +488,26 @@ msgid ""
 " and prints as None. For example"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:512
+#: ../../user/python/introduction/python-basics.rst:522
 msgid "Continuation lines and comments"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:514
+#: ../../user/python/introduction/python-basics.rst:524
 msgid ""
 "You can continue a statement on the following line if you break the "
 "statement between a set of (), {}, or [] delimiters. For example, look at"
-" the tuple that was used in :doc:`/user/about/examples/creat-part` to "
+" the tuple that was used in :doc:`/user/about/examples/create-part` to "
 "assign the coordinates of the vertices to a variable:"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:522
+#: ../../user/python/introduction/python-basics.rst:532
 msgid ""
 "If a statement breaks at any other place, you must include a \\\\ "
 "character at the end of the line to indicate that it is continued on the "
 "next line. For example,"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:529
+#: ../../user/python/introduction/python-basics.rst:539
 msgid ""
 "When you are running Python from a local Linux or Windows window, the "
 "prompt changes to the . . . characters to indicate that you are on a "
@@ -516,60 +515,60 @@ msgid ""
 " and continue to the end of the line."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:538
+#: ../../user/python/introduction/python-basics.rst:548
 msgid "Printing variables using formatted output"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:540
+#: ../../user/python/introduction/python-basics.rst:550
 msgid ""
 "Python provides a print function that displays the value of a variable. "
 "For example,"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:551
+#: ../../user/python/introduction/python-basics.rst:561
 #, python-format
 msgid ""
 "The string modulus operator % allows you to format your output. The %s "
 "operator in the following example converts the variables to strings."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:558
+#: ../../user/python/introduction/python-basics.rst:568
 #, python-format
 msgid ""
 "The `%f` operator specifies floating point notation and indicates the "
 "total number of characters to print and the number of decimal places."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:565
+#: ../../user/python/introduction/python-basics.rst:575
 #, python-format
 msgid ""
 "The `%E` operator specifies scientific notation and indicates the number "
 "of decimal places."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:572
+#: ../../user/python/introduction/python-basics.rst:582
 msgid ""
 "The following list includes some additional useful printing operators. "
 "The `+` flag indicates that a number should include a sign."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:575
+#: ../../user/python/introduction/python-basics.rst:585
 msgid "The `\\\\n` escape sequence inserts a new line."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:577
+#: ../../user/python/introduction/python-basics.rst:587
 msgid "The `\\\\t` escape sequence inserts a tab character."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:579
+#: ../../user/python/introduction/python-basics.rst:589
 msgid "For example,"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:588
+#: ../../user/python/introduction/python-basics.rst:598
 msgid "Control blocks"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:590
+#: ../../user/python/introduction/python-basics.rst:600
 msgid ""
 "Python does not use a special character, such as }, to signify the end of"
 " a control block such as an if statement. Instead, Python uses "
@@ -578,7 +577,7 @@ msgid ""
 "original indentation, the block ends. For example,"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:604
+#: ../../user/python/introduction/python-basics.rst:614
 msgid ""
 "When you are using the Python interpreter from the Abaqus/CAE command "
 "line interface or if you are running Python from a local Linux or Windows"
@@ -586,25 +585,25 @@ msgid ""
 "you are in a block controlled by indentation."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:607
+#: ../../user/python/introduction/python-basics.rst:617
 msgid "if, elif, and else"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:620
+#: ../../user/python/introduction/python-basics.rst:630
 msgid "while"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:638
+#: ../../user/python/introduction/python-basics.rst:648
 msgid ""
 "Use `continue` to skip the rest of the loop and to go to the next "
 "iteration."
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:651
+#: ../../user/python/introduction/python-basics.rst:661
 msgid "for"
 msgstr ""
 
-#: ../../user/python/introduction/python-basics.rst:653
+#: ../../user/python/introduction/python-basics.rst:663
 msgid ""
 "Use a sequence to control the start and the end of for loops. The "
 "`range()` function is an easy way to create a sequence."
@@ -623,6 +622,24 @@ msgstr ""
 #~ " {}, or [] delimiters. For example,"
 #~ " look at the tuple that was "
 #~ "used in :doc:`user/about/examples/creat-part` "
+#~ "to assign the coordinates of the "
+#~ "vertices to a variable:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Sequences include strings, lists, tuples, "
+#~ "and arrays. Sequences are described in"
+#~ " :doc:`python:basics:sequences` and "
+#~ ":doc:`python:basics:sequence operations`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can continue a statement on "
+#~ "the following line if you break "
+#~ "the statement between a set of (),"
+#~ " {}, or [] delimiters. For example,"
+#~ " look at the tuple that was "
+#~ "used in :doc:`/user/about/examples/creat-part` "
 #~ "to assign the coordinates of the "
 #~ "vertices to a variable:"
 #~ msgstr ""

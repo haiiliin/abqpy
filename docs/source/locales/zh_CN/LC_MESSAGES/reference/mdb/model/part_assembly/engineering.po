@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-04 00:15+0000\n"
+"POT-Creation-Date: 2022-09-05 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,7 +59,7 @@ msgstr ""
 #: of
 msgid ""
 "Check `AssembledFastener on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assembledfastenerpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assembledfastenerpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues
@@ -308,7 +308,7 @@ msgstr ""
 #: of
 msgid ""
 "Check `ContourIntegral on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contourintegralpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contourintegralpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:25
@@ -397,7 +397,7 @@ msgstr ""
 msgid "**crackFrontName**"
 msgstr ""
 
-#: ../../None:11:<autosummary>:1 ../../docstring
+#: ../../docstring
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackFrontName:2
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:18
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:45
@@ -405,8 +405,8 @@ msgstr ""
 msgid ""
 "A String specifying the name of the crack-front region generated from the"
 " tuple of regions specifying the crack-front region. This argument is "
-"valid only when **listOfRegions** is ON. The default value is "
-"**name**+Front."
+"valid only when **listOfRegions** is ON. The default value is **name** + "
+"Front."
 msgstr ""
 
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:25
@@ -415,7 +415,7 @@ msgstr ""
 msgid "**crackTipName**"
 msgstr ""
 
-#: ../../None:11:<autosummary>:1 ../../docstring
+#: ../../docstring
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackTipName:2
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:23
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:50
@@ -423,7 +423,7 @@ msgstr ""
 msgid ""
 "A String specifying the name of the crack-tip region generated from the "
 "tuple of regions specifying the crack-tip region. This parameter is valid"
-" only when **listOfRegions** = ON. The default value is **name**+Tip."
+" only when **listOfRegions** = ON. The default value is **name** + Tip."
 msgstr ""
 
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:31
@@ -471,15 +471,12 @@ msgstr ""
 msgid "**midNodePosition**"
 msgstr ""
 
-#: ../../docstring
-#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.midNodePosition:2
-#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:41
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:68
 #: of
 msgid ""
 "A Float specifying the position of the midside node along the edges of "
 "the second-order elements that radiate from the crack tip. Possible "
-"values are 0.0 << **midNodeParameter** << 1.0. The default value is 0.5."
+"values are 0.0 < **midNodeParameter** < 1.0. The default value is 0.5."
 msgstr ""
 
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:60
@@ -523,7 +520,7 @@ msgstr ""
 #: of
 msgid ""
 "Check `DebondVCCT on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-debondvcctpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-debondvcctpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:23
@@ -611,7 +608,7 @@ msgstr ""
 #: of
 msgid ""
 "Check `DiscreteFastener on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefastenerpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefastenerpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -772,7 +769,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:29 of
 msgid ""
 "Check `HeatCapacitance on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-heatcapacitancepyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-heatcapacitancepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -847,7 +844,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass:21 of
 msgid ""
 "Check `NonstructuralMass on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-nonstructuralmasspyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-nonstructuralmasspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -926,7 +923,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.PointFastener.PointFastener:20 of
 msgid ""
 "Check `PointFastener on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pointfastenerpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pointfastenerpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -1275,7 +1272,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia:21 of
 msgid ""
 "Check `PointMassInertia on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pointmassinertiapyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pointmassinertiapyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -1493,7 +1490,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround:23 of
 msgid ""
 "Check `SpringDashpotToGround on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-springdashpottogroundpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-springdashpottogroundpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -1636,7 +1633,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot:23 of
 msgid ""
 "Check `TwoPointSpringDashpot on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-twopointspringdashpotpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-twopointspringdashpotpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:22
@@ -1782,7 +1779,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack:22 of
 msgid ""
 "Check `XFEMCrack on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xfemcrackpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xfemcrackpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:24
@@ -1990,7 +1987,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.Crack.Crack:15 of
 msgid ""
 "Check `Crack on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-crackpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-crackpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener
@@ -2087,7 +2084,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.Fastener.Fastener:16 of
 msgid ""
 "Check `Fastener on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fastenerpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fastenerpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2150,7 +2147,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.Inertia.Inertia:16 of
 msgid ""
 "Check `Inertia on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inertiapyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inertiapyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2213,7 +2210,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.SpringDashpot.SpringDashpot:16 of
 msgid ""
 "Check `SpringDashpot on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-springdashpotpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-springdashpotpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2359,9 +2356,9 @@ msgstr ""
 
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues:5 of
 msgid ""
-"Check `AssembledFastener.setValues() on help.3ds.com/2019 "
+"Check `AssembledFastener.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assembledfastenerpyc.htm?contextscope=all"
-"#simaker-assembledfastenersetvaluespyc>`_."
+"#simaker-assembledfastenersetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/engineering.rst:58
@@ -2431,8 +2428,20 @@ msgstr ""
 
 #: ../../None:11:<autosummary>:1
 msgid ""
+"A String specifying the name of the crack-front region generated from the"
+" tuple of regions specifying the crack-front region."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ""
 ":py:obj:`crackTipName "
 "<abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackTipName>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ""
+"A String specifying the name of the crack-tip region generated from the "
+"tuple of regions specifying the crack-tip region."
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -2524,11 +2533,20 @@ msgid ""
 "\\(\\)"
 msgstr ""
 
+#: ../../docstring
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.midNodePosition:2
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:41 of
+msgid ""
+"A Float specifying the position of the midside node along the edges of "
+"the second-order elements that radiate from the crack tip. Possible "
+"values are 0.0 << **midNodeParameter** << 1.0. The default value is 0.5."
+msgstr ""
+
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:5 of
 msgid ""
-"Check `ContourIntegral.setValues() on help.3ds.com/2019 "
+"Check `ContourIntegral.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contourintegralpyc.htm?contextscope=all"
-"#simaker-contourintegralsetvaluespyc>`_."
+"#simaker-contourintegralsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/engineering.rst:66
@@ -2618,9 +2636,9 @@ msgstr ""
 
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues:5 of
 msgid ""
-"Check `DebondVCCT.setValues() on help.3ds.com/2019 "
+"Check `DebondVCCT.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-debondvcctpyc.htm?contextscope=all"
-"#simaker-debondvcctsetvaluespyc>`_."
+"#simaker-debondvcctsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/engineering.rst:74
@@ -2763,9 +2781,9 @@ msgstr ""
 
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:5 of
 msgid ""
-"Check `DiscreteFastener.setValues() on help.3ds.com/2019 "
+"Check `DiscreteFastener.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefastenerpyc.htm?contextscope=all"
-"#simaker-discretefastenersetvaluespyc>`_."
+"#simaker-discretefastenersetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/engineering.rst:82
@@ -2782,8 +2800,8 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase:16
 #: of
 msgid ""
-"Check `EngineeringFeature on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-engineeringfeaturepyc.htm?contextscope=all>`_."
+"Check `EngineeringFeatureBase on help.3ds.com/2019 "
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-engineeringfeaturepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -2863,9 +2881,9 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam:5
 #: of
 msgid ""
-"Check `EngineeringFeature.assignSeam() on help.3ds.com/2019 "
+"Check `EngineeringFeature.assignSeam on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-engineeringfeaturepyc.htm?contextscope=all"
-"#simaker-engineeringfeatureassignseampyc>`_."
+"#simaker-engineeringfeatureassignseampyc>`__."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam:24
@@ -2885,9 +2903,9 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam:5
 #: of
 msgid ""
-"Check `EngineeringFeature.deleteSeam() on help.3ds.com/2019 "
+"Check `EngineeringFeature.deleteSeam on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-engineeringfeaturepyc.htm?contextscope=all"
-"#simaker-engineeringfeaturedeleteseampyc>`_."
+"#simaker-engineeringfeaturedeleteseampyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/engineering.rst:90
@@ -2996,9 +3014,9 @@ msgstr ""
 
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues:5 of
 msgid ""
-"Check `HeatCapacitance.setValues() on help.3ds.com/2019 "
+"Check `HeatCapacitance.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-heatcapacitancepyc.htm?contextscope=all"
-"#simaker-heatcapacitancesetvaluespyc>`_."
+"#simaker-heatcapacitancesetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/engineering.rst:98
@@ -3073,9 +3091,9 @@ msgstr ""
 
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues:5 of
 msgid ""
-"Check `NonstructuralMass.setValues() on help.3ds.com/2019 "
+"Check `NonstructuralMass.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-nonstructuralmasspyc.htm?contextscope=all"
-"#simaker-nonstructuralmasssetvaluespyc>`_."
+"#simaker-nonstructuralmasssetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/engineering.rst:106
@@ -3414,9 +3432,9 @@ msgstr ""
 
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:5 of
 msgid ""
-"Check `PointFastener.setValues() on help.3ds.com/2019 "
+"Check `PointFastener.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pointfastenerpyc.htm?contextscope=all"
-"#simaker-pointfastenersetvaluespyc>`_."
+"#simaker-pointfastenersetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/engineering.rst:114
@@ -3614,9 +3632,9 @@ msgstr ""
 
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:5 of
 msgid ""
-"Check `PointMassInertia.setValues() on help.3ds.com/2019 "
+"Check `PointMassInertia.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pointmassinertiapyc.htm?contextscope=all"
-"#simaker-pointmassinertiasetvaluespyc>`_."
+"#simaker-pointmassinertiasetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/engineering.rst:122
@@ -3750,9 +3768,9 @@ msgstr ""
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:5
 #: of
 msgid ""
-"Check `SpringDashpotToGround.setValues() on help.3ds.com/2019 "
+"Check `SpringDashpotToGround.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-springdashpottogroundpyc.htm?contextscope=all"
-"#simaker-springdashpottogroundsetvaluespyc>`_."
+"#simaker-springdashpottogroundsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/engineering.rst:130
@@ -3889,9 +3907,9 @@ msgstr ""
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:5
 #: of
 msgid ""
-"Check `TwoPointSpringDashpot.setValues() on help.3ds.com/2019 "
+"Check `TwoPointSpringDashpot.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-twopointspringdashpotpyc.htm?contextscope=all"
-"#simaker-twopointspringdashpotsetvaluespyc>`_."
+"#simaker-twopointspringdashpotsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/engineering.rst:138
@@ -4080,9 +4098,9 @@ msgstr ""
 
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:5 of
 msgid ""
-"Check `XFEMCrack.setValues() on help.3ds.com/2019 "
+"Check `XFEMCrack.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xfemcrackpyc.htm?contextscope=all"
-"#simaker-xfemcracksetvaluespyc>`_."
+"#simaker-xfemcracksetvaluespyc>`__."
 msgstr ""
 
 #~ msgid ""
@@ -4116,5 +4134,196 @@ msgstr ""
 #~ "*elemId* and *nodeId*. This argument is"
 #~ " used only by the input file "
 #~ "reader."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `AssembledFastener on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assembledfastenerpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ContourIntegral on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contourintegralpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the crack-front region generated from"
+#~ " the tuple of regions specifying the"
+#~ " crack-front region. This argument is"
+#~ " valid only when **listOfRegions** is "
+#~ "ON. The default value is **name**+Front."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the crack-tip region generated from "
+#~ "the tuple of regions specifying the "
+#~ "crack-tip region. This parameter is "
+#~ "valid only when **listOfRegions** = ON."
+#~ " The default value is **name**+Tip."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `DebondVCCT on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-debondvcctpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `DiscreteFastener on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefastenerpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `HeatCapacitance on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-heatcapacitancepyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `NonstructuralMass on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-nonstructuralmasspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PointFastener on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pointfastenerpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PointMassInertia on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pointmassinertiapyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `SpringDashpotToGround on help.3ds.com/2019"
+#~ " "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-springdashpottogroundpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `TwoPointSpringDashpot on help.3ds.com/2019"
+#~ " "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-twopointspringdashpotpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `XFEMCrack on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xfemcrackpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Crack on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-crackpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Fastener on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fastenerpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Inertia on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inertiapyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `SpringDashpot on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-springdashpotpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `AssembledFastener.setValues() on "
+#~ "help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assembledfastenerpyc.htm?contextscope=all"
+#~ "#simaker-assembledfastenersetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ContourIntegral.setValues() on "
+#~ "help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contourintegralpyc.htm?contextscope=all"
+#~ "#simaker-contourintegralsetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `DebondVCCT.setValues() on help.3ds.com/2019"
+#~ " "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-debondvcctpyc.htm?contextscope=all"
+#~ "#simaker-debondvcctsetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `DiscreteFastener.setValues() on "
+#~ "help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefastenerpyc.htm?contextscope=all"
+#~ "#simaker-discretefastenersetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `EngineeringFeature on help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-engineeringfeaturepyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `EngineeringFeature.assignSeam() on "
+#~ "help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-engineeringfeaturepyc.htm?contextscope=all"
+#~ "#simaker-engineeringfeatureassignseampyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `EngineeringFeature.deleteSeam() on "
+#~ "help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-engineeringfeaturepyc.htm?contextscope=all"
+#~ "#simaker-engineeringfeaturedeleteseampyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `HeatCapacitance.setValues() on "
+#~ "help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-heatcapacitancepyc.htm?contextscope=all"
+#~ "#simaker-heatcapacitancesetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `NonstructuralMass.setValues() on "
+#~ "help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-nonstructuralmasspyc.htm?contextscope=all"
+#~ "#simaker-nonstructuralmasssetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PointFastener.setValues() on "
+#~ "help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pointfastenerpyc.htm?contextscope=all"
+#~ "#simaker-pointfastenersetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PointMassInertia.setValues() on "
+#~ "help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pointmassinertiapyc.htm?contextscope=all"
+#~ "#simaker-pointmassinertiasetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `SpringDashpotToGround.setValues() on "
+#~ "help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-springdashpottogroundpyc.htm?contextscope=all"
+#~ "#simaker-springdashpottogroundsetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `TwoPointSpringDashpot.setValues() on "
+#~ "help.3ds.com/2019 "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-twopointspringdashpotpyc.htm?contextscope=all"
+#~ "#simaker-twopointspringdashpotsetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `XFEMCrack.setValues() on help.3ds.com/2019"
+#~ " "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xfemcrackpyc.htm?contextscope=all"
+#~ "#simaker-xfemcracksetvaluespyc>`_."
 #~ msgstr ""
 
