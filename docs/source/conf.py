@@ -17,6 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
+import git
 import inspect
 import os
 import re
@@ -32,6 +33,8 @@ author = 'WANG Hailin'
 # The full version, including alpha/beta/rc tags
 try:
     release = metadata.version('abqpy')[:4]
+    if not release.startswith('20'):
+        release = '2022'
 except metadata.PackageNotFoundError:
     release = '2022'
 
@@ -106,8 +109,11 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
     fullname = info['fullname']
 
     filename = modname.replace('.', '/')
-    main_release = release.split(".")[0][:4]
-    baseurl = f'https://github.com/haiiliin/abqpy/blob/V{main_release}/src/{filename}.py'
+    try:
+        branch_name = git.repo.Repo('../../').active_branch.name
+    except Exception:
+        branch_name = 'main'
+    baseurl = f'https://github.com/haiiliin/abqpy/blob/{branch_name}/src/{filename}.py'
 
     submod = sys.modules.get(modname)
     if submod is None:
