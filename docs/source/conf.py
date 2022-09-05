@@ -24,16 +24,15 @@ import re
 import sys
 import typing
 
-from importlib import metadata
-
 project = 'abqpy'
 copyright = '2022, WANG Hailin'
 author = 'WANG Hailin'
 
 # The full version, including alpha/beta/rc tags
 try:
-    release = metadata.version('abqpy')[:4]
-except metadata.PackageNotFoundError:
+    tag = git.repo.Repo('../../').tags[-1].name
+    release = tag[1:] if tag.startswith('v') else tag
+except Exception:
     release = '2022'
 
 # For multiple languages
