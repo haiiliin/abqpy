@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 00:16+0000\n"
+"POT-Creation-Date: 2022-09-05 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3006,14 +3006,27 @@ msgstr ""
 msgid "This method creates an StdContactControl object."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`ExpInitialization "
+"<abaqus.Model.Model.Model.ExpInitialization>`\\ \\(name\\[\\, "
+"overclosureType\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:2
+#: of
+msgid "This method creates an ExpInitialization object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`StdInitialization "
 "<abaqus.Model.Model.Model.StdInitialization>`\\ \\(name\\[\\, "
 "overclosureType\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: ../../None:4:<autosummary>:1
 #: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:2
 #: of
 msgid "This method creates a StdInitialization object."
@@ -4541,6 +4554,7 @@ msgstr ""
 #: abaqus.Filter.FilterModel.FilterModel.OperatorFilter:5
 #: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.ExpContactControl:5
 #: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.StdContactControl:5
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:5
 #: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:5
 #: abaqus.Interaction.InteractionContactStabilizationModel.InteractionContactStabilizationModel.StdStabilization:5
 #: abaqus.Interaction.InteractionModel.InteractionModel.AcousticImpedance:5
@@ -4764,6 +4778,7 @@ msgstr ""
 #: abaqus.Filter.FilterModel.FilterModel.OperatorFilter
 #: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.ExpContactControl
 #: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.StdContactControl
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization
 #: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization
 #: abaqus.Interaction.InteractionContactStabilizationModel.InteractionContactStabilizationModel.StdStabilization
 #: abaqus.Interaction.InteractionModel.InteractionModel.AcousticImpedance
@@ -4982,6 +4997,7 @@ msgstr ""
 #: abaqus.Filter.FilterModel.FilterModel.OperatorFilter:19
 #: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.ExpContactControl:17
 #: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.StdContactControl:17
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:17
 #: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:20
 #: abaqus.Interaction.InteractionContactStabilizationModel.InteractionContactStabilizationModel.StdStabilization:17
 #: abaqus.Interaction.InteractionModel.InteractionModel.AcousticImpedance:17
@@ -5801,6 +5817,7 @@ msgstr ""
 #: abaqus.Filter.FilterModel.FilterModel.OperatorFilter
 #: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.ExpContactControl
 #: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.StdContactControl
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization
 #: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization
 #: abaqus.Interaction.InteractionContactStabilizationModel.InteractionContactStabilizationModel.StdStabilization
 #: abaqus.Interaction.InteractionModel.InteractionModel.AcousticImpedance
@@ -6413,6 +6430,7 @@ msgstr ""
 #: abaqus.Filter.FilterModel.FilterModel.OperatorFilter
 #: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.ExpContactControl
 #: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.StdContactControl
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization
 #: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization
 #: abaqus.Interaction.InteractionContactStabilizationModel.InteractionContactStabilizationModel.StdStabilization
 #: abaqus.Load.LoadModel.LoadModel.BoltLoad
@@ -6483,6 +6501,7 @@ msgstr ""
 #: abaqus.Filter.FilterModel.FilterModel.OperatorFilter:69
 #: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.ExpContactControl:65
 #: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.StdContactControl:138
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:81
 #: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:64
 #: abaqus.Interaction.InteractionContactStabilizationModel.InteractionContactStabilizationModel.StdStabilization:63
 #: abaqus.Section.SectionModel.SectionModel.AcousticInfiniteSection:54
@@ -13596,6 +13615,152 @@ msgstr ""
 #: of
 msgid ""
 "An :py:class:`~abaqus.Interaction.ExpContactControl.ExpContactControl` "
+"object."
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:12
+#: of
+msgid ""
+"Check `ExpInitialization on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-expinitializationpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:17
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:20
+#: of
+msgid "A String specifying the contact initialization repository key."
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:21
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:24
+#: of
+msgid "**overclosureType**"
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:20
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:23
+#: of
+msgid ""
+"A SymbolicConstant specifying the type of overclosure to be defined. "
+"Possible values are ADJUST, INTERFERENCE, and CLEARANCE. The default "
+"value is ADJUST."
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:25
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:28
+#: of
+msgid "**interferenceDistance**"
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:24
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:27
+#: of
+msgid ""
+"None or a Float specifying the interference distance. This argument is "
+"valid only when **overclosureType** = INTERFERENCE. The default value is "
+"None."
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:30
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:33
+#: of
+msgid "**clearanceDistance**"
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:28
+#: of
+msgid ""
+"None or a Float specifying the initial clearance distance. This argument "
+"is valid only when **overclosureType** = CLEARANCE and must be specified "
+"in that case. The default value is None."
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:36
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:39
+#: of
+msgid "**openingTolerance**"
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:33
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:36
+#: of
+msgid ""
+"None or a Float specifying the distance tolerance within which initial "
+"openings will undergo strain-free adjustments. This argument is not valid"
+" when **overclosureType** = INTERFERENCE unless a value has been "
+"specified for **interferenceDistance**. The default value is None."
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:40
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:43
+#: of
+msgid "**overclosureTolerance**"
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:39
+#: of
+msgid ""
+"None or a Float specifying the distance tolerance within which initial "
+"overclosures will undergo strain-free adjustments. The default value is "
+"None."
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:46
+#: of
+msgid "**adjustNodalCoords**"
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:43
+#: of
+msgid ""
+"A Boolean specifying whether to resolve clearances/overclosures by "
+"adjusting the nodal coordinates without creating strain in the model. "
+"**adjustNodalCoords** = True can be used only for clearances/overclosures"
+" defined in the first step of an analysis. The default value is True."
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:55
+#: of
+msgid "**secondaryNodesetName**"
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:49
+#: of
+msgid ""
+"A String specifying the name of the node set containing the secondary "
+"nodes to be included in the initial clearance specification. This "
+"argument is not valid when **overclosureType** = INTERFERENCE and if "
+"**openingTolerance** or **overclosureTolerance** is specified. The "
+"default value is None."
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:54
+#: of
+msgid "The argument `slaveNodesetName` was renamed to `secondaryNodesetName`."
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:60
+#: of
+msgid "**stepFraction**"
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:58
+#: of
+msgid ""
+"A Float specifying the fraction of the step time (between 0.0 and 1.0) in"
+" which the interference fit has to be solved. The default value is 1.0. "
+"This argument is valid only when **overclosureType** = INTERFERENCE."
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:68
+#: of
+msgid ":obj:`ExpInitialization`"
+msgstr ""
+
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:65
+#: of
+msgid ""
+"An :py:class:`~abaqus.Interaction.ExpInitialization.ExpInitialization` "
 "object."
 msgstr ""
 
@@ -21084,67 +21249,12 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-stdinitializationpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:20
-#: of
-msgid "A String specifying the contact initialization repository key."
-msgstr ""
-
-#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:24
-#: of
-msgid "**overclosureType**"
-msgstr ""
-
-#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:23
-#: of
-msgid ""
-"A SymbolicConstant specifying the type of overclosure to be defined. "
-"Possible values are ADJUST, INTERFERENCE, and CLEARANCE. The default "
-"value is ADJUST."
-msgstr ""
-
-#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:28
-#: of
-msgid "**interferenceDistance**"
-msgstr ""
-
-#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:27
-#: of
-msgid ""
-"None or a Float specifying the interference distance. This argument is "
-"valid only when **overclosureType** = INTERFERENCE. The default value is "
-"None."
-msgstr ""
-
-#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:33
-#: of
-msgid "**clearanceDistance**"
-msgstr ""
-
 #: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:31
 #: of
 msgid ""
 "None or a Float specifying the initial clearance distance. This argument "
 "is valid only when **overclosureType** = CLEARANCE, and must be specified"
 " in that case. The default value is None."
-msgstr ""
-
-#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:39
-#: of
-msgid "**openingTolerance**"
-msgstr ""
-
-#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:36
-#: of
-msgid ""
-"None or a Float specifying the distance tolerance within which initial "
-"openings will undergo strain-free adjustments. This argument is not valid"
-" when **overclosureType** = INTERFERENCE unless a value has been "
-"specified for **interferenceDistance**. The default value is None."
-msgstr ""
-
-#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:43
-#: of
-msgid "**overclosureTolerance**"
 msgstr ""
 
 #: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:42
@@ -27937,7 +28047,14 @@ msgid ""
 " \\(name\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`ExpInitialization "
+"<abaqus.Interaction.InteractionModel.InteractionModel.ExpInitialization>`\\"
+" \\(name\\[\\, overclosureType\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`StdInitialization "
 "<abaqus.Interaction.InteractionModel.InteractionModel.StdInitialization>`\\"
