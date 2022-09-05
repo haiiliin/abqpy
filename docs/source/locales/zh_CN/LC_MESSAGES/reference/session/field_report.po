@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 00:16+0000\n"
+"POT-Creation-Date: 2022-09-05 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -167,7 +167,7 @@ msgid ""
 "specifying the subset of the model for which to obtain data."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:72
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:71
 #: abaqus.FieldReport.writeFieldReport.writeFieldReport:71 of
 msgid "**variable**"
 msgstr ""
@@ -214,12 +214,7 @@ msgid ""
 "section point within that region. For example:"
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:66
-#: of
-msgid "``` {'shell < MAT > < 7 section points >':'SPOS (fraction = 1.0)'} ```"
-msgstr ""
-
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:71
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:70
 #: abaqus.FieldReport.writeFieldReport.writeFieldReport:70 of
 msgid ""
 "If this element is omitted, data are written for all section points (if "
@@ -227,12 +222,12 @@ msgid ""
 " points (if applicable)."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:77
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:76
 #: abaqus.FieldReport.writeFieldReport.writeFieldReport:76 of
 msgid "**numericForm**"
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:75
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:74
 #: abaqus.FieldReport.writeFieldReport.writeFieldReport:74 of
 msgid ""
 "A SymbolicConstant specifying the numeric form in which to display "
@@ -241,12 +236,12 @@ msgid ""
 "COMPLEX_MAG_AT_ANGLE. The initial value is COMPLEX_MAGNITUDE."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:81
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:80
 #: abaqus.FieldReport.writeFieldReport.writeFieldReport:80 of
 msgid "**complexAngle**"
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:80
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:79
 #: abaqus.FieldReport.writeFieldReport.writeFieldReport:79 of
 msgid ""
 "A Float specifying the angle (in degrees) at which to display results "
@@ -254,14 +249,14 @@ msgid ""
 " The initial value is 0."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:99
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:98
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:34
 #: abaqus.FieldReport.writeFieldReport.writeFieldReport:98
 #: abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:34 of
 msgid "**stepFrame**"
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:84
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:83
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:32
 #: abaqus.FieldReport.writeFieldReport.writeFieldReport:83
 #: abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:32 of
@@ -1211,5 +1206,8 @@ msgstr ""
 #~ "help.3ds.com/2018 "
 #~ "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionwritefreebodyreportpyc.htm?contextscope=all"
 #~ "#simaker-functionwritefreebodyreportwritefreebodyreportpyc>`_."
+#~ msgstr ""
+
+#~ msgid "``` {'shell < MAT > < 7 section points >':'SPOS (fraction = 1.0)'} ```"
 #~ msgstr ""
 
