@@ -1,4 +1,3 @@
-from .ExpInitialization import ExpInitialization
 from .StdInitialization import StdInitialization
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import *
