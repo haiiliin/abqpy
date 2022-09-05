@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-04 00:14+0000\n"
+"POT-Creation-Date: 2022-09-05 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../reference/mdb/model/amplitude.rst:3
-#: ../../reference/mdb/model/amplitude.rst:34
+#: ../../reference/mdb/model/amplitude.rst:32
 msgid "Amplitude"
 msgstr ""
 
@@ -56,7 +56,7 @@ msgid "This object can be accessed by:"
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel:12
-msgid "Check `AmplitudeModel on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+msgid "Check `AmplitudeModel on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude:0
@@ -722,7 +722,7 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude:20
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ActuatorAmplitude:13
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ActuatorAmplitude:13
-msgid "Check `ActuatorAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-actuatoramplitudepyc.htm?contextscope=all>`_."
+msgid "Check `ActuatorAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-actuatoramplitudepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.setValues:0
@@ -986,7 +986,7 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.DecayAmplitude:13
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.DecayAmplitude:13
 #: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude:20
-msgid "Check `DecayAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-decayamplitudepyc.htm?contextscope=all>`_."
+msgid "Check `DecayAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-decayamplitudepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.DecayAmplitude:21
@@ -1070,7 +1070,7 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude:13
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.EquallySpacedAmplitude:13
 #: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude:21
-msgid "Check `EquallySpacedAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-equallyspacedamplitudepyc.htm?contextscope=all>`_."
+msgid "Check `EquallySpacedAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-equallyspacedamplitudepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude:22
@@ -1131,7 +1131,7 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.EquallySpacedAmplitude:32
 #: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.setValues:14
 #: ../../docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.smooth:2
-msgid "The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing. Possible float values are 0 ≤≤ **smoothing** ≤≤ 0.5. If **smooth** = SOLVER_DEFAULT, the default degree of smoothing will be determined by the solver. The default value is SOLVER_DEFAULT."
+msgid "The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing. Possible float values are 0 ≤ **smoothing** ≤ 0.5. If **smooth** = SOLVER_DEFAULT, the default degree of smoothing will be determined by the solver. The default value is SOLVER_DEFAULT."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude:47
@@ -1147,7 +1147,7 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ModulatedAmplitude:13
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ModulatedAmplitude:13
 #: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude:20
-msgid "Check `ModulatedAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modulatedamplitudepyc.htm?contextscope=all>`_."
+msgid "Check `ModulatedAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modulatedamplitudepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ModulatedAmplitude:24
@@ -1190,7 +1190,7 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PeriodicAmplitude:13
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PeriodicAmplitude:13
 #: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude:20
-msgid "Check `PeriodicAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-periodicamplitudepyc.htm?contextscope=all>`_."
+msgid "Check `PeriodicAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-periodicamplitudepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PeriodicAmplitude:21
@@ -1234,7 +1234,7 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PsdDefinition:13
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PsdDefinition:13
 #: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition:21
-msgid "Check `PsdDefinition on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psddefinitionpyc.htm?contextscope=all>`_."
+msgid "Check `PsdDefinition on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psddefinitionpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PsdDefinition:21
@@ -1324,7 +1324,7 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SmoothStepAmplitude:13
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SmoothStepAmplitude:13
 #: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude:21
-msgid "Check `SmoothStepAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-smoothstepamplitudepyc.htm?contextscope=all>`_."
+msgid "Check `SmoothStepAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-smoothstepamplitudepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SmoothStepAmplitude:21
@@ -1349,7 +1349,7 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SolutionDependentAmplitude:13
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude:13
 #: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude:21
-msgid "Check `SolutionDependentAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-solutiondependentamplitudepyc.htm?contextscope=all>`_."
+msgid "Check `SolutionDependentAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-solutiondependentamplitudepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SolutionDependentAmplitude:21
@@ -1392,7 +1392,7 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude:13
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:13
 #: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude:21
-msgid "Check `SpectrumAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-spectrumamplitudepyc.htm?contextscope=all>`_."
+msgid "Check `SpectrumAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-spectrumamplitudepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude:22
@@ -1510,7 +1510,7 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.TabularAmplitude:13
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude:13
 #: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude:21
-msgid "Check `TabularAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tabularamplitudepyc.htm?contextscope=all>`_."
+msgid "Check `TabularAmplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tabularamplitudepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.TabularAmplitude:25
@@ -1530,7 +1530,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Amplitude.TabularAmplitude.TabularAmplitude` object."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:21
+#: ../../reference/mdb/model/amplitude.rst:20
 msgid "In Odb"
 msgstr ""
 
@@ -1539,7 +1539,7 @@ msgid "The Odb object is the in-memory representation of an output database (ODB
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb:13
-msgid "Check `AmplitudeOdb on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`_."
+msgid "Check `AmplitudeOdb on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -1714,7 +1714,7 @@ msgstr ""
 msgid "This method is used to update an Odb object in memory while an Abaqus analysis writes data to the associated output database."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:31
+#: ../../reference/mdb/model/amplitude.rst:29
 msgid "Object features"
 msgstr ""
 
@@ -1723,7 +1723,7 @@ msgid "The Amplitude object is the abstract base type for other Amplitude object
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/Amplitude.py:docstring of abaqus.Amplitude.Amplitude.Amplitude:17
-msgid "Check `Amplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-amplitudepyc.htm?contextscope=all>`_."
+msgid "Check `Amplitude on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-amplitudepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1743,7 +1743,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the time span of the amplitude."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:42
+#: ../../reference/mdb/model/amplitude.rst:40
 msgid "ActuatorAmplitude"
 msgstr ""
 
@@ -1799,10 +1799,10 @@ msgid "This method modifies the ActuatorAmplitude object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.setValues:5
-msgid "Check `ActuatorAmplitude.setValues() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-actuatoramplitudepyc.htm?contextscope=all#simaker-actuatoramplitudesetvaluespyc>`_."
+msgid "Check `ActuatorAmplitude.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-actuatoramplitudepyc.htm?contextscope=all#simaker-actuatoramplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:50
+#: ../../reference/mdb/model/amplitude.rst:48
 msgid "BaselineCorrection"
 msgstr ""
 
@@ -1815,7 +1815,7 @@ msgid "BASELINE CORRECTION"
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/BaselineCorrection.py:docstring of abaqus.Amplitude.BaselineCorrection.BaselineCorrection:20
-msgid "Check `BaselineCorrection on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-baselinecorrectionpyc.htm?contextscope=all>`_."
+msgid "Check `BaselineCorrection on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-baselinecorrectionpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -1847,7 +1847,7 @@ msgstr ""
 msgid "A sequence of Floats specifying the correction time interval end points. Possible values are positive and monotonically increasing Floats. The default value is an empty sequence."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:58
+#: ../../reference/mdb/model/amplitude.rst:56
 msgid "Correlation"
 msgstr ""
 
@@ -1856,7 +1856,7 @@ msgid "A Correlation is an object used to define the cross-correlation as part o
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/Correlation.py:docstring of abaqus.Amplitude.Correlation.Correlation:15
-msgid "Check `Correlation on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-correlationpyc.htm?contextscope=all>`_."
+msgid "Check `Correlation on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-correlationpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1893,7 +1893,7 @@ msgstr ""
 msgid "A tuple of tuples of Floats specifying the real and imaginary part of the scaling factor. If **approach** = MOVING_NOISE, then **data** represents the noise velocity components 1, 2, and 3."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:66
+#: ../../reference/mdb/model/amplitude.rst:64
 msgid "DecayAmplitude"
 msgstr ""
 
@@ -1924,10 +1924,10 @@ msgid "This method modifies the DecayAmplitude object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.setValues:5
-msgid "Check `DecayAmplitude.setValues() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-decayamplitudepyc.htm?contextscope=all#simaker-decayamplitudesetvaluespyc>`_."
+msgid "Check `DecayAmplitude.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-decayamplitudepyc.htm?contextscope=all#simaker-decayamplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:74
+#: ../../reference/mdb/model/amplitude.rst:72
 msgid "EquallySpacedAmplitude"
 msgstr ""
 
@@ -1986,10 +1986,10 @@ msgid "This method modifies the EquallySpacedAmplitude object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.setValues:5
-msgid "Check `EquallySpacedAmplitude.setValues() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-equallyspacedamplitudepyc.htm?contextscope=all#simaker-equallyspacedamplitudesetvaluespyc>`_."
+msgid "Check `EquallySpacedAmplitude.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-equallyspacedamplitudepyc.htm?contextscope=all#simaker-equallyspacedamplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:82
+#: ../../reference/mdb/model/amplitude.rst:80
 msgid "ModulatedAmplitude"
 msgstr ""
 
@@ -2020,10 +2020,10 @@ msgid "This method modifies the ModulatedAmplitude object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.setValues:5
-msgid "Check `ModulatedAmplitude.setValues() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modulatedamplitudepyc.htm?contextscope=all#simaker-modulatedamplitudesetvaluespyc>`_."
+msgid "Check `ModulatedAmplitude.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modulatedamplitudepyc.htm?contextscope=all#simaker-modulatedamplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:90
+#: ../../reference/mdb/model/amplitude.rst:88
 msgid "PeriodicAmplitude"
 msgstr ""
 
@@ -2054,10 +2054,10 @@ msgid "This method modifies the PeriodicAmplitude object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.setValues:5
-msgid "Check `PeriodicAmplitude.setValues() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-periodicamplitudepyc.htm?contextscope=all#simaker-periodicamplitudesetvaluespyc>`_."
+msgid "Check `PeriodicAmplitude.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-periodicamplitudepyc.htm?contextscope=all#simaker-periodicamplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:98
+#: ../../reference/mdb/model/amplitude.rst:96
 msgid "PsdDefinition"
 msgstr ""
 
@@ -2132,10 +2132,10 @@ msgid "This method modifies the PsdDefinition object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues:5
-msgid "Check `PsdDefinition.setValues() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psddefinitionpyc.htm?contextscope=all#simaker-psddefinitionsetvaluespyc>`_."
+msgid "Check `PsdDefinition.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psddefinitionpyc.htm?contextscope=all#simaker-psddefinitionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:106
+#: ../../reference/mdb/model/amplitude.rst:104
 msgid "SmoothStepAmplitude"
 msgstr ""
 
@@ -2166,10 +2166,10 @@ msgid "This method modifies the SmoothStepAmplitude object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.setValues:5
-msgid "Check `SmoothStepAmplitude.setValues() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-smoothstepamplitudepyc.htm?contextscope=all#simaker-smoothstepamplitudesetvaluespyc>`_."
+msgid "Check `SmoothStepAmplitude.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-smoothstepamplitudepyc.htm?contextscope=all#simaker-smoothstepamplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:114
+#: ../../reference/mdb/model/amplitude.rst:112
 msgid "SolutionDependentAmplitude"
 msgstr ""
 
@@ -2224,10 +2224,10 @@ msgid "This method modifies the SolutionDependentAmplitude object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.setValues:5
-msgid "Check `SolutionDependentAmplitude.setValues() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-solutiondependentamplitudepyc.htm?contextscope=all#simaker-solutiondependentamplitudesetvaluespyc>`_."
+msgid "Check `SolutionDependentAmplitude.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-solutiondependentamplitudepyc.htm?contextscope=all#simaker-solutiondependentamplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:122
+#: ../../reference/mdb/model/amplitude.rst:120
 msgid "SpectrumAmplitude"
 msgstr ""
 
@@ -2318,10 +2318,10 @@ msgid "This method modifies the SpectrumAmplitude object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues:5
-msgid "Check `SpectrumAmplitude.setValues() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-spectrumamplitudepyc.htm?contextscope=all#simaker-spectrumamplitudesetvaluespyc>`_."
+msgid "Check `SpectrumAmplitude.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-spectrumamplitudepyc.htm?contextscope=all#simaker-spectrumamplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:130
+#: ../../reference/mdb/model/amplitude.rst:128
 msgid "TabularAmplitude"
 msgstr ""
 
@@ -2360,5 +2360,5 @@ msgid "This method modifies the TabularAmplitude object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.setValues:5
-msgid "Check `TabularAmplitude.setValues() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tabularamplitudepyc.htm?contextscope=all#simaker-tabularamplitudesetvaluespyc>`_."
+msgid "Check `TabularAmplitude.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tabularamplitudepyc.htm?contextscope=all#simaker-tabularamplitudesetvaluespyc>`__."
 msgstr ""

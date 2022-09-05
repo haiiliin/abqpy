@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 08:05+0000\n"
+"POT-Creation-Date: 2022-09-05 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgid "This object can be accessed by:"
 msgstr ""
 
 #: ../../../../src/abaqus/Print/EpsOptions.py:docstring of abaqus.Print.EpsOptions.EpsOptions:14
-msgid "Check `EpsOptions on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-epsoptionspyc.htm?contextscope=all>`_."
+msgid "Check `EpsOptions on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-epsoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Print/EpsOptions.py:docstring of abaqus.Print.EpsOptions.EpsOptions:0
@@ -158,7 +158,7 @@ msgid "A SymbolicConstant specifying the resolution of the image in dots per inc
 msgstr ""
 
 #: ../../../../src/abaqus/Print/EpsOptions.py:docstring of abaqus.Print.EpsOptions.EpsOptions.setValues:5
-msgid "Check `EpsOptions.setValues() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-epsoptionspyc.htm?contextscope=all#simaker-epsoptionssetvaluespyc>`_."
+msgid "Check `EpsOptions.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-epsoptionspyc.htm?contextscope=all#simaker-epsoptionssetvaluespyc>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Print/EpsOptions.py:docstring of abaqus.Print.EpsOptions.EpsOptions.setValues:0
@@ -238,7 +238,7 @@ msgid "The PageSetupOptions object stores the settings that Abaqus uses when pri
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PageSetupOptions.py:docstring of abaqus.Print.PageSetupOptions.PageSetupOptions:14
-msgid "Check `PageSetupOptions on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pagesetupoptionspyc.htm?contextscope=all>`_."
+msgid "Check `PageSetupOptions on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pagesetupoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -381,7 +381,7 @@ msgid "A Float specifying the right margin of the paper in the currently selecte
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PageSetupOptions.py:docstring of abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:5
-msgid "Check `PageSetupOptions.setValues() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pagesetupoptionspyc.htm?contextscope=all#simaker-pagesetupoptionssetvaluespyc>`_."
+msgid "Check `PageSetupOptions.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pagesetupoptionspyc.htm?contextscope=all#simaker-pagesetupoptionssetvaluespyc>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PageSetupOptions.py:docstring of abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:10
@@ -476,7 +476,7 @@ msgid "The PngOptions object stores the settings that Abaqus uses when printing 
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PngOptions.py:docstring of abaqus.Print.PngOptions.PngOptions:7
-msgid "Check `PngOptions on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pngoptionspyc.htm?contextscope=all>`_."
+msgid "Check `PngOptions on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pngoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -484,7 +484,7 @@ msgid ":py:obj:`imageSize <abaqus.Print.PngOptions.PngOptions.imageSize>`\\"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of the image in pixels. Possible values are (*minWidth*, **minHeight**) ≤ **imageSize** ≤ (*maxWidth* and **maxHeight**). The default value is SIZE_ON_SCREEN. Note: The minimum value of width and height (*minWidth* and **minHeight** ) is the number of pixels that occupy 10 mm at the current screen resolution. The value is typically  around 50pixels and may be different for width and height. The maximum value of width and height (*maxWidth* and **maxHeight** ) is the largest number of pixels supported by the system graphics and will be at least as large as the screen dimensions."
+msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of the image in pixels."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -503,23 +503,15 @@ msgid ":py:obj:`get_user_attributes <abaqus.Print.PngOptions.PngOptions.get_user
 msgstr ""
 
 #: ../../docstring of abaqus.Print.PngOptions.PngOptions.imageSize:2
-msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of the image in pixels. Possible values are (*minWidth*, **minHeight**) ≤ **imageSize** ≤ (*maxWidth* and **maxHeight**). The default value is SIZE_ON_SCREEN. Note: The minimum value of width and height (*minWidth* and **minHeight** ) is the number of pixels that occupy 10 mm at the current screen resolution. The value is typically"
-msgstr ""
-
-#: ../../docstring of abaqus.Print.PngOptions.PngOptions.imageSize:7
-msgid "around 50pixels and may be different for width and height."
-msgstr ""
-
-#: ../../docstring of abaqus.Print.PngOptions.PngOptions.imageSize:8
-msgid "The maximum value of width and height (*maxWidth* and **maxHeight** ) is the largest number of pixels supported by the system graphics and will be at least as large as the screen dimensions."
+msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of the image in pixels. Possible values are (**minWidth**, **minHeight**) ≤ **imageSize** ≤ (**maxWidth** and **maxHeight**). The default value is SIZE_ON_SCREEN. Note: The minimum value of width and height (**minWidth** and **minHeight**) is the number of pixels that occupy 10 mm at the current screen resolution. The value is typically around 50pixels and may be different for width and height. The maximum value of width and height (**maxWidth** and **maxHeight**) is the largest number of pixels supported by the system graphics and will be at least as large as the screen dimensions."
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PngOptions.py:docstring of abaqus.Print.PngOptions.PngOptions.setValues:5
-msgid "Check `PngOptions.setValues() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pngoptionspyc.htm?contextscope=all#simaker-pngoptionssetvaluespyc>`_."
+msgid "Check `PngOptions.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pngoptionspyc.htm?contextscope=all#simaker-pngoptionssetvaluespyc>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PngOptions.py:docstring of abaqus.Print.PngOptions.PngOptions.setValues:10
-msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of the image in pixels. Possible values are (*minWidth*, **minHeight**) ≤ **imageSize** ≤ (*maxWidth* and **maxHeight**). The default value is SIZE_ON_SCREEN. Note: The minimum value of width and height (*minWidth* and **minHeight** ) is the number of pixels that occupy 10 mm at the current screen resolution. The value is typically around 50 pixels and may be different for width and height. The maximum value of width and height (*maxWidth* and **maxHeight** ) is the largest number of pixels supported by the system graphics and will be at least as large as the screen dimensions."
+msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of the image in pixels. Possible values are (**minWidth**, **minHeight**) ≤ **imageSize** ≤ (**maxWidth** and **maxHeight**). The default value is SIZE_ON_SCREEN. Note: The minimum value of width and height (**minWidth** and **minHeight**) is the number of pixels that occupy 10 mm at the current screen resolution. The value is typically around 50 pixels and may be different for width and height. The maximum value of width and height (**maxWidth** and **maxHeight**) is the largest number of pixels supported by the system graphics and will be at least as large as the screen dimensions."
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PngOptions.py:docstring of abaqus.Print.PngOptions.PngOptions.setValues:27
@@ -546,7 +538,7 @@ msgid "The PrintOptions object stores the common settings that Abaqus uses for a
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PrintOptions.py:docstring of abaqus.Print.PrintOptions.PrintOptions:14
-msgid "Check `PrintOptions on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-printoptionspyc.htm?contextscope=all>`_."
+msgid "Check `PrintOptions on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-printoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
@@ -645,7 +637,7 @@ msgid "A SymbolicConstant specifying how the image is rendered. Possible values 
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PrintOptions.py:docstring of abaqus.Print.PrintOptions.PrintOptions.setValues:5
-msgid "Check `PrintOptions.setValues() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-printoptionspyc.htm?contextscope=all#simaker-printoptionssetvaluespyc>`_."
+msgid "Check `PrintOptions.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-printoptionspyc.htm?contextscope=all#simaker-printoptionssetvaluespyc>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PrintOptions.py:docstring of abaqus.Print.PrintOptions.PrintOptions.setValues:11
@@ -699,7 +691,7 @@ msgid "The PsOptions object stores the settings that Abaqus uses when printing u
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PsOptions.py:docstring of abaqus.Print.PsOptions.PsOptions:14
-msgid "Check `PsOptions on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psoptionspyc.htm?contextscope=all>`_."
+msgid "Check `PsOptions on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -856,7 +848,7 @@ msgid "A Float specifying the right margin of the paper in inches. Possible valu
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PsOptions.py:docstring of abaqus.Print.PsOptions.PsOptions.setValues:5
-msgid "Check `PsOptions.setValues() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psoptionspyc.htm?contextscope=all#simaker-psoptionssetvaluespyc>`_."
+msgid "Check `PsOptions.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psoptionspyc.htm?contextscope=all#simaker-psoptionssetvaluespyc>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PsOptions.py:docstring of abaqus.Print.PsOptions.PsOptions.setValues:22
@@ -877,15 +869,11 @@ msgid "The SvgOptions object stores the settings that Abaqus uses when printing 
 msgstr ""
 
 #: ../../../../src/abaqus/Print/SvgOptions.py:docstring of abaqus.Print.SvgOptions.SvgOptions:14
-msgid "Check `SvgOptions on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all>`_."
+msgid "Check `SvgOptions on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`imageSize <abaqus.Print.SvgOptions.SvgOptions.imageSize>`\\"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of the image in pixels."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -909,5 +897,5 @@ msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the widt
 msgstr ""
 
 #: ../../../../src/abaqus/Print/SvgOptions.py:docstring of abaqus.Print.SvgOptions.SvgOptions.setValues:5
-msgid "Check `SvgOptions.setValues() on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all#simaker-svgoptionssetvaluespyc>`_."
+msgid "Check `SvgOptions.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all#simaker-svgoptionssetvaluespyc>`__."
 msgstr ""

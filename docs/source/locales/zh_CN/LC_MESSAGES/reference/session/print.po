@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-09-05 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgstr ""
 #: abaqus.Print.EpsOptions.EpsOptions:14 of
 msgid ""
 "Check `EpsOptions on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-epsoptionspyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-epsoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Print.EpsOptions.EpsOptions
@@ -193,9 +193,9 @@ msgstr ""
 
 #: abaqus.Print.EpsOptions.EpsOptions.setValues:5 of
 msgid ""
-"Check `EpsOptions.setValues() on help.3ds.com/2020 "
+"Check `EpsOptions.setValues on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-epsoptionspyc.htm?contextscope=all"
-"#simaker-epsoptionssetvaluespyc>`_."
+"#simaker-epsoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Print.EpsOptions.EpsOptions.setValues
@@ -290,7 +290,7 @@ msgstr ""
 #: abaqus.Print.PageSetupOptions.PageSetupOptions:14 of
 msgid ""
 "Check `PageSetupOptions on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pagesetupoptionspyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pagesetupoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -484,9 +484,9 @@ msgstr ""
 
 #: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:5 of
 msgid ""
-"Check `PageSetupOptions.setValues() on help.3ds.com/2020 "
+"Check `PageSetupOptions.setValues on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pagesetupoptionspyc.htm?contextscope=all"
-"#simaker-pagesetupoptionssetvaluespyc>`_."
+"#simaker-pagesetupoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:10 of
@@ -602,7 +602,7 @@ msgstr ""
 #: abaqus.Print.PngOptions.PngOptions:7 of
 msgid ""
 "Check `PngOptions on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pngoptionspyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pngoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -612,15 +612,7 @@ msgstr ""
 #: ../../None:3:<autosummary>:1
 msgid ""
 "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the "
-"width and height of the image in pixels. Possible values are (*minWidth*,"
-" **minHeight**) ≤ **imageSize** ≤ (*maxWidth* and **maxHeight**). The "
-"default value is SIZE_ON_SCREEN. Note: The minimum value of width and "
-"height (*minWidth* and **minHeight** ) is the number of pixels that "
-"occupy 10 mm at the current screen resolution. The value is typically  "
-"around 50pixels and may be different for width and height. The maximum "
-"value of width and height (*maxWidth* and **maxHeight** ) is the largest "
-"number of pixels supported by the system graphics and will be at least as"
-" large as the screen dimensions."
+"width and height of the image in pixels."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
@@ -643,43 +635,36 @@ msgstr ""
 #: ../../docstring abaqus.Print.PngOptions.PngOptions.imageSize:2 of
 msgid ""
 "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the "
-"width and height of the image in pixels. Possible values are (*minWidth*,"
-" **minHeight**) ≤ **imageSize** ≤ (*maxWidth* and **maxHeight**). The "
-"default value is SIZE_ON_SCREEN. Note: The minimum value of width and "
-"height (*minWidth* and **minHeight** ) is the number of pixels that "
-"occupy 10 mm at the current screen resolution. The value is typically"
-msgstr ""
-
-#: ../../docstring abaqus.Print.PngOptions.PngOptions.imageSize:7 of
-msgid "around 50pixels and may be different for width and height."
-msgstr ""
-
-#: ../../docstring abaqus.Print.PngOptions.PngOptions.imageSize:8 of
-msgid ""
-"The maximum value of width and height (*maxWidth* and **maxHeight** ) is "
-"the largest number of pixels supported by the system graphics and will be"
-" at least as large as the screen dimensions."
+"width and height of the image in pixels. Possible values are "
+"(**minWidth**, **minHeight**) ≤ **imageSize** ≤ (**maxWidth** and "
+"**maxHeight**). The default value is SIZE_ON_SCREEN. Note: The minimum "
+"value of width and height (**minWidth** and **minHeight**) is the number "
+"of pixels that occupy 10 mm at the current screen resolution. The value "
+"is typically around 50pixels and may be different for width and height. "
+"The maximum value of width and height (**maxWidth** and **maxHeight**) is"
+" the largest number of pixels supported by the system graphics and will "
+"be at least as large as the screen dimensions."
 msgstr ""
 
 #: abaqus.Print.PngOptions.PngOptions.setValues:5 of
 msgid ""
-"Check `PngOptions.setValues() on help.3ds.com/2020 "
+"Check `PngOptions.setValues on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pngoptionspyc.htm?contextscope=all"
-"#simaker-pngoptionssetvaluespyc>`_."
+"#simaker-pngoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Print.PngOptions.PngOptions.setValues:10 of
 msgid ""
 "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the "
-"width and height of the image in pixels. Possible values are (*minWidth*,"
-" **minHeight**) ≤ **imageSize** ≤ (*maxWidth* and **maxHeight**). The "
-"default value is SIZE_ON_SCREEN. Note: The minimum value of width and "
-"height (*minWidth* and **minHeight** ) is the number of pixels that "
-"occupy 10 mm at the current screen resolution. The value is typically "
-"around 50 pixels and may be different for width and height. The maximum "
-"value of width and height (*maxWidth* and **maxHeight** ) is the largest "
-"number of pixels supported by the system graphics and will be at least as"
-" large as the screen dimensions."
+"width and height of the image in pixels. Possible values are "
+"(**minWidth**, **minHeight**) ≤ **imageSize** ≤ (**maxWidth** and "
+"**maxHeight**). The default value is SIZE_ON_SCREEN. Note: The minimum "
+"value of width and height (**minWidth** and **minHeight**) is the number "
+"of pixels that occupy 10 mm at the current screen resolution. The value "
+"is typically around 50 pixels and may be different for width and height. "
+"The maximum value of width and height (**maxWidth** and **maxHeight**) is"
+" the largest number of pixels supported by the system graphics and will "
+"be at least as large as the screen dimensions."
 msgstr ""
 
 #: abaqus.Print.PngOptions.PngOptions.setValues:27
@@ -721,7 +706,7 @@ msgstr ""
 #: abaqus.Print.PrintOptions.PrintOptions:14 of
 msgid ""
 "Check `PrintOptions on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-printoptionspyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-printoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
@@ -856,9 +841,9 @@ msgstr ""
 
 #: abaqus.Print.PrintOptions.PrintOptions.setValues:5 of
 msgid ""
-"Check `PrintOptions.setValues() on help.3ds.com/2020 "
+"Check `PrintOptions.setValues on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-printoptionspyc.htm?contextscope=all"
-"#simaker-printoptionssetvaluespyc>`_."
+"#simaker-printoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Print.PrintOptions.PrintOptions.setValues:11 of
@@ -923,7 +908,7 @@ msgstr ""
 #: abaqus.Print.PsOptions.PsOptions:14 of
 msgid ""
 "Check `PsOptions on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psoptionspyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -1091,9 +1076,9 @@ msgstr ""
 
 #: abaqus.Print.PsOptions.PsOptions.setValues:5 of
 msgid ""
-"Check `PsOptions.setValues() on help.3ds.com/2020 "
+"Check `PsOptions.setValues on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psoptionspyc.htm?contextscope=all"
-"#simaker-psoptionssetvaluespyc>`_."
+"#simaker-psoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Print.PsOptions.PsOptions.setValues:22 of
@@ -1121,17 +1106,11 @@ msgstr ""
 #: abaqus.Print.SvgOptions.SvgOptions:14 of
 msgid ""
 "Check `SvgOptions on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`imageSize <abaqus.Print.SvgOptions.SvgOptions.imageSize>`\\"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ""
-"The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the "
-"width and height of the image in pixels."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
@@ -1168,8 +1147,151 @@ msgstr ""
 
 #: abaqus.Print.SvgOptions.SvgOptions.setValues:5 of
 msgid ""
-"Check `SvgOptions.setValues() on help.3ds.com/2020 "
+"Check `SvgOptions.setValues on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all"
-"#simaker-svgoptionssetvaluespyc>`_."
+"#simaker-svgoptionssetvaluespyc>`__."
 msgstr ""
+
+#~ msgid ""
+#~ "Check `EpsOptions on help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-epsoptionspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `EpsOptions.setValues() on help.3ds.com/2020"
+#~ " "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-epsoptionspyc.htm?contextscope=all"
+#~ "#simaker-epsoptionssetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PageSetupOptions on help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pagesetupoptionspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PageSetupOptions.setValues() on "
+#~ "help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pagesetupoptionspyc.htm?contextscope=all"
+#~ "#simaker-pagesetupoptionssetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PngOptions on help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pngoptionspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SymbolicConstant SIZE_ON_SCREEN or a "
+#~ "pair of Ints specifying the width "
+#~ "and height of the image in pixels."
+#~ " Possible values are (*minWidth*, "
+#~ "**minHeight**) ≤ **imageSize** ≤ (*maxWidth*"
+#~ " and **maxHeight**). The default value "
+#~ "is SIZE_ON_SCREEN. Note: The minimum "
+#~ "value of width and height (*minWidth*"
+#~ " and **minHeight** ) is the number"
+#~ " of pixels that occupy 10 mm at"
+#~ " the current screen resolution. The "
+#~ "value is typically  around 50pixels and"
+#~ " may be different for width and "
+#~ "height. The maximum value of width "
+#~ "and height (*maxWidth* and **maxHeight** "
+#~ ") is the largest number of pixels"
+#~ " supported by the system graphics and"
+#~ " will be at least as large as"
+#~ " the screen dimensions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SymbolicConstant SIZE_ON_SCREEN or a "
+#~ "pair of Ints specifying the width "
+#~ "and height of the image in pixels."
+#~ " Possible values are (*minWidth*, "
+#~ "**minHeight**) ≤ **imageSize** ≤ (*maxWidth*"
+#~ " and **maxHeight**). The default value "
+#~ "is SIZE_ON_SCREEN. Note: The minimum "
+#~ "value of width and height (*minWidth*"
+#~ " and **minHeight** ) is the number"
+#~ " of pixels that occupy 10 mm at"
+#~ " the current screen resolution. The "
+#~ "value is typically"
+#~ msgstr ""
+
+#~ msgid "around 50pixels and may be different for width and height."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The maximum value of width and "
+#~ "height (*maxWidth* and **maxHeight** ) "
+#~ "is the largest number of pixels "
+#~ "supported by the system graphics and "
+#~ "will be at least as large as "
+#~ "the screen dimensions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PngOptions.setValues() on help.3ds.com/2020"
+#~ " "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pngoptionspyc.htm?contextscope=all"
+#~ "#simaker-pngoptionssetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SymbolicConstant SIZE_ON_SCREEN or a "
+#~ "pair of Ints specifying the width "
+#~ "and height of the image in pixels."
+#~ " Possible values are (*minWidth*, "
+#~ "**minHeight**) ≤ **imageSize** ≤ (*maxWidth*"
+#~ " and **maxHeight**). The default value "
+#~ "is SIZE_ON_SCREEN. Note: The minimum "
+#~ "value of width and height (*minWidth*"
+#~ " and **minHeight** ) is the number"
+#~ " of pixels that occupy 10 mm at"
+#~ " the current screen resolution. The "
+#~ "value is typically around 50 pixels "
+#~ "and may be different for width and"
+#~ " height. The maximum value of width"
+#~ " and height (*maxWidth* and **maxHeight**"
+#~ " ) is the largest number of "
+#~ "pixels supported by the system graphics"
+#~ " and will be at least as large"
+#~ " as the screen dimensions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PrintOptions on help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-printoptionspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PrintOptions.setValues() on help.3ds.com/2020"
+#~ " "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-printoptionspyc.htm?contextscope=all"
+#~ "#simaker-printoptionssetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PsOptions on help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psoptionspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PsOptions.setValues() on help.3ds.com/2020"
+#~ " "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psoptionspyc.htm?contextscope=all"
+#~ "#simaker-psoptionssetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `SvgOptions on help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `SvgOptions.setValues() on help.3ds.com/2020"
+#~ " "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all"
+#~ "#simaker-svgoptionssetvaluespyc>`_."
+#~ msgstr ""
 
