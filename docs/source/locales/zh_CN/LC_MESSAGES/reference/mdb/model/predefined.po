@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-04 00:14+0000\n"
+"POT-Creation-Date: 2022-09-05 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,7 +62,7 @@ msgstr ""
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:12 of
 msgid ""
 "Check `PredefinedFieldModel on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -90,7 +90,7 @@ msgstr ""
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:15 of
 msgid ""
 "Check `Field on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.move
@@ -466,7 +466,7 @@ msgid ""
 "**magnitudes** is a Double specifying the Field."
 msgstr ""
 
-#: ../../docstring abaqus.PredefinedField.FieldState.FieldState.magnitudes:7
+#: ../../docstring abaqus.PredefinedField.FieldState.FieldState.magnitudes:8
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:109
 #: of
 msgid ""
@@ -475,7 +475,7 @@ msgid ""
 " gradient in the thickness direction."
 msgstr ""
 
-#: ../../docstring abaqus.PredefinedField.FieldState.FieldState.magnitudes:9
+#: ../../docstring abaqus.PredefinedField.FieldState.FieldState.magnitudes:10
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:111
 #: of
 msgid ""
@@ -518,7 +518,7 @@ msgstr ""
 #: of
 msgid ""
 "Check `FluidCavityPressure on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fluidcavitypressurepyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fluidcavitypressurepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:20
@@ -529,7 +529,6 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.fluidCavity:2
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:20
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.fluidCavity:2
 #: of
 msgid "A String specifying the name of a Fluid Cavity Interaction."
 msgstr ""
@@ -542,7 +541,6 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.fluidPressure:2
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:23
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.fluidPressure:2
 #: of
 msgid "A Float specifying the initial fluid pressure."
 msgstr ""
@@ -571,7 +569,7 @@ msgstr ""
 #: of
 msgid ""
 "Check `InitialState on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-initialstatepyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-initialstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:21
@@ -581,7 +579,6 @@ msgstr ""
 
 #: ../../docstring abaqus.PredefinedField.InitialState.InitialState.instances:2
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:20
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.instances:2
 #: of
 msgid ""
 "A :py:class:`~abaqus.Assembly.PartInstanceArray.PartInstanceArray` object"
@@ -590,7 +587,6 @@ msgstr ""
 
 #: ../../docstring abaqus.PredefinedField.InitialState.InitialState.fileName:2
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:24
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.fileName:2
 #: of
 msgid ""
 "A String specifying the name of the job that generated the initial state "
@@ -655,7 +651,7 @@ msgstr ""
 #: of
 msgid ""
 "Check `KinematicHardening on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-kinematichardeningpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-kinematichardeningpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:5:<autosummary>:1 ../../None:6:<autosummary>:1
@@ -798,7 +794,7 @@ msgstr ""
 #: of
 msgid ""
 "Check `MaterialAssignment on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialassignmentpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialassignmentpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:21
@@ -809,7 +805,6 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.instanceList:2
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:20
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.instanceList:2
 #: of
 msgid ""
 "A :py:class:`~abaqus.Assembly.PartInstanceArray.PartInstanceArray` object"
@@ -917,7 +912,7 @@ msgstr ""
 #: of
 msgid ""
 "Check `Stress on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-stresspyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-stresspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:23
@@ -1010,7 +1005,7 @@ msgstr ""
 #: abaqus.PredefinedField.Temperature.Temperature:19 of
 msgid ""
 "Check `Temperature on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturepyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:23
@@ -1177,7 +1172,7 @@ msgstr ""
 #: abaqus.PredefinedField.Velocity.Velocity:18 of
 msgid ""
 "Check `Velocity on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitypyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitypyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:23
@@ -1187,7 +1182,6 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:23
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.velocity1:2
 #: abaqus.PredefinedField.Velocity.Velocity.velocity1:2 of
 msgid "A Float specifying the first component of the velocity."
 msgstr ""
@@ -1199,7 +1193,6 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:26
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.velocity2:2
 #: abaqus.PredefinedField.Velocity.Velocity.velocity2:2 of
 msgid "A Float specifying the second component of the velocity."
 msgstr ""
@@ -1211,7 +1204,6 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:29
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.velocity3:2
 #: abaqus.PredefinedField.Velocity.Velocity.velocity3:2 of
 msgid "A Float specifying the third component of the velocity."
 msgstr ""
@@ -1223,7 +1215,6 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:32
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.omega:2
 #: abaqus.PredefinedField.Velocity.Velocity.omega:2 of
 msgid "A Float specifying the angular velocity."
 msgstr ""
@@ -1235,7 +1226,6 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:35
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.axisBegin:2
 #: abaqus.PredefinedField.Velocity.Velocity.axisBegin:2 of
 msgid ""
 "A sequence of Floats specifying the *X-*, *Y-*, and **Z**- coordinates of"
@@ -1249,7 +1239,6 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:39
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.axisEnd:2
 #: abaqus.PredefinedField.Velocity.Velocity.axisEnd:2 of
 msgid ""
 "A sequence of Floats specifying the *X-*, *Y-*, and **Z**- coordinates of"
@@ -1287,22 +1276,19 @@ msgstr ""
 msgid "A :py:class:`~abaqus.PredefinedField.Velocity.Velocity` object."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:16
+#: ../../reference/mdb/model/predefined.rst:15
 msgid "Object features"
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:19
+#: ../../reference/mdb/model/predefined.rst:18
 msgid "Field"
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field:2 of
 msgid ""
 "The Field object stores the data for field predefined fields. The Field "
-"object is derived from the PredefinedField object."
-msgstr ""
-
-#: abaqus.PredefinedField.Field.Field:4 of
-msgid "**distributionType=FROM_FILE** or FROM_FILE_AND_USER_DEFINED."
+"object is derived from the PredefinedField object. "
+"**distributionType=FROM_FILE** or FROM_FILE_AND_USER_DEFINED."
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field:14
@@ -1477,9 +1463,9 @@ msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.move:5 of
 msgid ""
-"Check `Field.move() on help.3ds.com/0.1. "
+"Check `Field.move on help.3ds.com/0.1. "
 "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldpyc.htm?contextscope=all"
-"#simaker-fieldmovepyc>`_."
+"#simaker-fieldmovepyc>`__."
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.move:10
@@ -1530,9 +1516,9 @@ msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:6 of
 msgid ""
-"Check `Field.setValues() on help.3ds.com/0.1. "
+"Check `Field.setValues on help.3ds.com/0.1. "
 "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldpyc.htm?contextscope=all"
-"#simaker-fieldsetvaluespyc>`_."
+"#simaker-fieldsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValues:25 of
@@ -1564,9 +1550,9 @@ msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:6 of
 msgid ""
-"Check `Field.setValuesInStep() on help.3ds.com/0.1. "
+"Check `Field.setValuesInStep on help.3ds.com/0.1. "
 "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldpyc.htm?contextscope=all"
-"#simaker-fieldsetvaluesinsteppyc>`_."
+"#simaker-fieldsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.setValuesInStep:11
@@ -1581,7 +1567,7 @@ msgid ""
 " modified."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:27
+#: ../../reference/mdb/model/predefined.rst:26
 msgid "FieldState"
 msgstr ""
 
@@ -1600,7 +1586,7 @@ msgstr ""
 #: abaqus.PredefinedField.FieldState.FieldState:19 of
 msgid ""
 "Check `FieldState on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldstatepyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:18:<autosummary>:1
@@ -1781,18 +1767,7 @@ msgstr ""
 #: ../../None:18:<autosummary>:1
 msgid ""
 "A tuple of Floats specifying the field values when **distributionType** ="
-" UNIFORM or **distributionType** = FIELD. The value of the **magnitudes**"
-" argument is a function of the **crossSectionDistribution** argument, as "
-"shown in the following list: - If **crossSectionDistribution** = "
-"CONSTANT_THROUGH_THICKNESS, **magnitudes** is a Double   specifying the "
-"field. - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS, "
-"**magnitudes** is a sequence   of Doubles specifying the mean value and "
-"the gradient in the thickness direction. - If "
-"**crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS, **magnitudes** "
-"is a sequence of   Doubles specifying the mean value, the gradient in the"
-" N1 direction, and the gradient in   the N2 direction. - If "
-"**crossSectionDistribution** = POINTS_THROUGH_SECTION, **magnitudes** is "
-"a sequence of   Doubles specifying the field at each point."
+" UNIFORM or **distributionType** = FIELD."
 msgstr ""
 
 #: ../../None:18:<autosummary>:1 ../../None:3:<autosummary>:1
@@ -1905,15 +1880,16 @@ msgid ""
 "A tuple of Floats specifying the field values when **distributionType** ="
 " UNIFORM or **distributionType** = FIELD. The value of the **magnitudes**"
 " argument is a function of the **crossSectionDistribution** argument, as "
-"shown in the following list: - If **crossSectionDistribution** = "
-"CONSTANT_THROUGH_THICKNESS, **magnitudes** is a Double"
+"shown in the following list:"
 msgstr ""
 
 #: ../../docstring abaqus.PredefinedField.FieldState.FieldState.magnitudes:6 of
-msgid "specifying the field."
+msgid ""
+"If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS, "
+"**magnitudes** is a Double specifying the field."
 msgstr ""
 
-#: ../../docstring abaqus.PredefinedField.FieldState.FieldState.magnitudes:12
+#: ../../docstring abaqus.PredefinedField.FieldState.FieldState.magnitudes:13
 #: of
 msgid ""
 "If **crossSectionDistribution** = POINTS_THROUGH_SECTION, **magnitudes** "
@@ -2025,7 +2001,7 @@ msgid ""
 "values depending on propagation rules."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:35
+#: ../../reference/mdb/model/predefined.rst:34
 msgid "PredefinedField"
 msgstr ""
 
@@ -2043,7 +2019,7 @@ msgstr ""
 #: abaqus.PredefinedField.PredefinedField.PredefinedField:18 of
 msgid ""
 "Check `PredefinedField on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-predefinedfieldpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-predefinedfieldpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -2100,9 +2076,9 @@ msgstr ""
 
 #: abaqus.PredefinedField.PredefinedField.PredefinedField.delete:5 of
 msgid ""
-"Check `PredefinedField.delete() on help.3ds.com/0.1. "
+"Check `PredefinedField.delete on help.3ds.com/0.1. "
 "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-predefinedfieldpyc.htm?contextscope=all"
-"#simaker-predefinedfielddeletepyc>`_."
+"#simaker-predefinedfielddeletepyc>`__."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedField.PredefinedField.delete:23 of
@@ -2115,9 +2091,9 @@ msgstr ""
 
 #: abaqus.PredefinedField.PredefinedField.PredefinedField.move:6 of
 msgid ""
-"Check `PredefinedField.move() on help.3ds.com/0.1. "
+"Check `PredefinedField.move on help.3ds.com/0.1. "
 "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-predefinedfieldpyc.htm?contextscope=all"
-"#simaker-predefinedfieldmovepyc>`_."
+"#simaker-predefinedfieldmovepyc>`__."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedField.PredefinedField.move:11 of
@@ -2149,7 +2125,7 @@ msgid ""
 "FROM_FILE_AND_USER_DEFINED."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:43
+#: ../../reference/mdb/model/predefined.rst:42
 msgid "PredefinedFieldState"
 msgstr ""
 
@@ -2165,7 +2141,7 @@ msgstr ""
 #: abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState:16 of
 msgid ""
 "Check `PredefinedFieldState on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-predefinedfieldstatepyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-predefinedfieldstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -2174,15 +2150,15 @@ msgid ""
 "<abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState.status>`\\"
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:51
+#: ../../reference/mdb/model/predefined.rst:50
 msgid "FluidCavityPressure"
 msgstr ""
 
 #: abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure:2 of
 msgid ""
 "The FluidCavityPressure object stores the data for initial fluid cavity "
-"pressures. The base class*region* argument can not be specifed with this "
-"object. The FluidCavityPressure object is derived from the "
+"pressures. The base class *region* argument can not be specifed with this"
+" object. The FluidCavityPressure object is derived from the "
 "PredefinedField object."
 msgstr ""
 
@@ -2259,7 +2235,7 @@ msgid ""
 " \\(indices\\)"
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:59
+#: ../../reference/mdb/model/predefined.rst:58
 msgid "IMAField"
 msgstr ""
 
@@ -2272,7 +2248,7 @@ msgstr ""
 #: abaqus.PredefinedField.IMAField.IMAField:14 of
 msgid ""
 "Check `IMAField on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imafieldpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imafieldpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2308,7 +2284,7 @@ msgid ""
 "Eulerian section."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:67
+#: ../../reference/mdb/model/predefined.rst:66
 msgid "IMARegion"
 msgstr ""
 
@@ -2321,7 +2297,7 @@ msgstr ""
 #: abaqus.PredefinedField.IMARegion.IMARegion:14 of
 msgid ""
 "Check `IMARegion on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imaregionpyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imaregionpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2347,7 +2323,7 @@ msgid ""
 "instance names, as established by the assigned Eulerian section."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:75
+#: ../../reference/mdb/model/predefined.rst:74
 msgid "InitialState"
 msgstr ""
 
@@ -2462,12 +2438,12 @@ msgstr ""
 
 #: abaqus.PredefinedField.InitialState.InitialState.setValues:5 of
 msgid ""
-"Check `InitialState.setValues() on help.3ds.com/0.1. "
+"Check `InitialState.setValues on help.3ds.com/0.1. "
 "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-initialstatepyc.htm?contextscope=all"
-"#simaker-initialstatesetvaluespyc>`_."
+"#simaker-initialstatesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:83
+#: ../../reference/mdb/model/predefined.rst:82
 msgid "KinematicHardening"
 msgstr ""
 
@@ -2634,12 +2610,12 @@ msgstr ""
 
 #: abaqus.PredefinedField.KinematicHardening.KinematicHardening.setValues:5 of
 msgid ""
-"Check `KinematicHardening.setValues() on help.3ds.com/0.1. "
+"Check `KinematicHardening.setValues on help.3ds.com/0.1. "
 "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-kinematichardeningpyc.htm?contextscope=all"
-"#simaker-kinematichardeningsetvaluespyc>`_."
+"#simaker-kinematichardeningsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:91
+#: ../../reference/mdb/model/predefined.rst:90
 msgid "MaterialAssignment"
 msgstr ""
 
@@ -2759,12 +2735,12 @@ msgstr ""
 
 #: abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.setValues:5 of
 msgid ""
-"Check `MaterialAssignment.setValues() on help.3ds.com/0.1. "
+"Check `MaterialAssignment.setValues on help.3ds.com/0.1. "
 "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialassignmentpyc.htm?contextscope=all"
-"#simaker-materialassignmentsetvaluespyc>`_."
+"#simaker-materialassignmentsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:99
+#: ../../reference/mdb/model/predefined.rst:98
 msgid "Temperature"
 msgstr ""
 
@@ -2870,26 +2846,26 @@ msgstr ""
 
 #: abaqus.PredefinedField.Temperature.Temperature.move:5 of
 msgid ""
-"Check `Temperature.move() on help.3ds.com/0.1. "
+"Check `Temperature.move on help.3ds.com/0.1. "
 "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturepyc.htm?contextscope=all"
-"#simaker-temperaturemovepyc>`_."
+"#simaker-temperaturemovepyc>`__."
 msgstr ""
 
 #: abaqus.PredefinedField.Temperature.Temperature.setValues:6 of
 msgid ""
-"Check `Temperature.setValues() on help.3ds.com/0.1. "
+"Check `Temperature.setValues on help.3ds.com/0.1. "
 "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturepyc.htm?contextscope=all"
-"#simaker-temperaturesetvaluespyc>`_."
+"#simaker-temperaturesetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:6 of
 msgid ""
-"Check `Temperature.setValuesInStep() on help.3ds.com/0.1. "
+"Check `Temperature.setValuesInStep on help.3ds.com/0.1. "
 "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturepyc.htm?contextscope=all"
-"#simaker-temperaturesetvaluesinsteppyc>`_."
+"#simaker-temperaturesetvaluesinsteppyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:107
+#: ../../reference/mdb/model/predefined.rst:106
 msgid "TemperatureState"
 msgstr ""
 
@@ -2905,7 +2881,7 @@ msgstr ""
 #: abaqus.PredefinedField.TemperatureState.TemperatureState:16 of
 msgid ""
 "Check `TemperatureState on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturestatepyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturestatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -3105,7 +3081,7 @@ msgid ""
 "member. Possible values are UNSET, SET, and UNCHANGED."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:115
+#: ../../reference/mdb/model/predefined.rst:114
 msgid "TiffOptions"
 msgstr ""
 
@@ -3119,7 +3095,7 @@ msgstr ""
 #: abaqus.PredefinedField.TiffOptions.TiffOptions:14 of
 msgid ""
 "Check `TiffOptions on help.3ds.com/0.1. "
-"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tiffoptionspyc.htm?contextscope=all>`_."
+"<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tiffoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3136,9 +3112,9 @@ msgstr ""
 
 #: abaqus.PredefinedField.TiffOptions.TiffOptions.setValues:5 of
 msgid ""
-"Check `TiffOptions.setValues() on help.3ds.com/0.1. "
+"Check `TiffOptions.setValues on help.3ds.com/0.1. "
 "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tiffoptionspyc.htm?contextscope=all"
-"#simaker-tiffoptionssetvaluespyc>`_."
+"#simaker-tiffoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.PredefinedField.TiffOptions.TiffOptions.setValues:22 of
@@ -3148,46 +3124,42 @@ msgstr ""
 #: abaqus.PredefinedField.TiffOptions.TiffOptions.setValues:10 of
 msgid ""
 "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the "
-"width and height of the image in pixels. Possible values are (*minWidth*,"
-" **minHeight**) ≤≤ **imageSize** ≤≤ (*maxWidth* and **maxHeight**). The "
-"default value is SIZE_ON_SCREEN. Note:The minimum value of width and "
-"height (*minWidth* and **minHeight** ) is the number of pixels that "
-"occupy 10 mm at the current screen resolution. The value is typically "
-"around 50 pixels and may be different for width and height. The maximum "
-"value of width and height (*maxWidth* and **maxHeight** ) is the largest "
-"number of pixels supported by the system graphics and will be at least as"
-" large as the screen dimensions."
+"width and height of the image in pixels. Possible values are "
+"(**minWidth**, **minHeight**) ≤ **imageSize** ≤ (**maxWidth** and "
+"**maxHeight**). The default value is SIZE_ON_SCREEN. Note:The minimum "
+"value of width and height (**minWidth** and **minHeight** ) is the number"
+" of pixels that occupy 10 mm at the current screen resolution. The value "
+"is typically around 50 pixels and may be different for width and height. "
+"The maximum value of width and height (**maxWidth** and **maxHeight** ) "
+"is the largest number of pixels supported by the system graphics and will"
+" be at least as large as the screen dimensions."
 msgstr ""
 
-#: abaqus.PredefinedField.TiffOptions.TiffOptions.setValues:40 of
+#: abaqus.PredefinedField.TiffOptions.TiffOptions.setValues:30 of
 msgid ":obj:`RangeError`"
 msgstr ""
 
 #: abaqus.PredefinedField.TiffOptions.TiffOptions.setValues:27 of
 msgid ""
 "If either the width or height arguments of **imageSize** are out of range"
-" (where"
+" (where **minWidth** and **minHeight** are the number of pixels "
+"corresponding to approximately 10 mm for a given display and **maxWidth**"
+" and **maxHeight** are the largest allowable number of pixels supported "
+"by the system graphics)."
 msgstr ""
 
-#: abaqus.PredefinedField.TiffOptions.TiffOptions.setValues:28 of
+#: abaqus.PredefinedField.TiffOptions.TiffOptions.setValues:41 of
 msgid ""
-"**minWidth** and **minHeight** are the number of pixels corresponding to "
-"approximately 10 mm for a given display and **maxWidth** and "
-"**maxHeight** are the largest allowable number of pixels supported by the"
-" system graphics):"
+"RangeError: :obj:`imageSize` :obj:`must` :obj:`be` :obj:`SIZE_ON_SCREEN` "
+"or :obj:`a` :term:`python:sequence` :obj:`of` 2 :obj:`Ints` :obj:`in` "
+":obj:`the` :obj:`range`"
 msgstr ""
 
-#: abaqus.PredefinedField.TiffOptions.TiffOptions.setValues:31 of
-msgid ""
-"RangeError: imageSize must be SIZE_ON_SCREEN or a sequence of 2 Ints in "
-"the range"
-msgstr ""
-
-#: abaqus.PredefinedField.TiffOptions.TiffOptions.setValues:32 of
+#: abaqus.PredefinedField.TiffOptions.TiffOptions.setValues:33 of
 msgid "(minWidth, minHeight) <= (width, height) <= (maxWidth, maxHeight)."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:123
+#: ../../reference/mdb/model/predefined.rst:122
 msgid "Velocity"
 msgstr ""
 
@@ -3263,9 +3235,9 @@ msgstr ""
 
 #: abaqus.PredefinedField.Velocity.Velocity.setValues:5 of
 msgid ""
-"Check `Velocity.setValues() on help.3ds.com/0.1. "
+"Check `Velocity.setValues on help.3ds.com/0.1. "
 "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitypyc.htm?contextscope=all"
-"#simaker-velocitysetvaluespyc>`_."
+"#simaker-velocitysetvaluespyc>`__."
 msgstr ""
 
 #~ msgid ""
@@ -3623,5 +3595,277 @@ msgstr ""
 #~ "the propagation state of each item "
 #~ "of the *magnitudes* member. Possible "
 #~ "values are UNSET, SET, and UNCHANGED."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PredefinedFieldModel on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Field on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `FluidCavityPressure on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fluidcavitypressurepyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `InitialState on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-initialstatepyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `KinematicHardening on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-kinematichardeningpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `MaterialAssignment on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialassignmentpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Stress on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-stresspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Temperature on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturepyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Velocity on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitypyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The Field object stores the data "
+#~ "for field predefined fields. The Field"
+#~ " object is derived from the "
+#~ "PredefinedField object."
+#~ msgstr ""
+
+#~ msgid "**distributionType=FROM_FILE** or FROM_FILE_AND_USER_DEFINED."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Field.move() on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldpyc.htm?contextscope=all"
+#~ "#simaker-fieldmovepyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Field.setValues() on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldpyc.htm?contextscope=all"
+#~ "#simaker-fieldsetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Field.setValuesInStep() on help.3ds.com/0.1."
+#~ " "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldpyc.htm?contextscope=all"
+#~ "#simaker-fieldsetvaluesinsteppyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `FieldState on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldstatepyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of Floats specifying the "
+#~ "field values when **distributionType** = "
+#~ "UNIFORM or **distributionType** = FIELD. "
+#~ "The value of the **magnitudes** argument"
+#~ " is a function of the "
+#~ "**crossSectionDistribution** argument, as shown "
+#~ "in the following list: - If "
+#~ "**crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS,"
+#~ " **magnitudes** is a Double   specifying"
+#~ " the field. - If "
+#~ "**crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS,"
+#~ " **magnitudes** is a sequence   of "
+#~ "Doubles specifying the mean value and"
+#~ " the gradient in the thickness "
+#~ "direction. - If **crossSectionDistribution** ="
+#~ " GRADIENTS_THROUGH_BEAM_CS, **magnitudes** is a"
+#~ " sequence of   Doubles specifying the "
+#~ "mean value, the gradient in the N1"
+#~ " direction, and the gradient in   the"
+#~ " N2 direction. - If "
+#~ "**crossSectionDistribution** = POINTS_THROUGH_SECTION, "
+#~ "**magnitudes** is a sequence of   "
+#~ "Doubles specifying the field at each "
+#~ "point."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of Floats specifying the "
+#~ "field values when **distributionType** = "
+#~ "UNIFORM or **distributionType** = FIELD. "
+#~ "The value of the **magnitudes** argument"
+#~ " is a function of the "
+#~ "**crossSectionDistribution** argument, as shown "
+#~ "in the following list: - If "
+#~ "**crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS,"
+#~ " **magnitudes** is a Double"
+#~ msgstr ""
+
+#~ msgid "specifying the field."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PredefinedField on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-predefinedfieldpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PredefinedField.delete() on help.3ds.com/0.1."
+#~ " "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-predefinedfieldpyc.htm?contextscope=all"
+#~ "#simaker-predefinedfielddeletepyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PredefinedField.move() on help.3ds.com/0.1."
+#~ " "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-predefinedfieldpyc.htm?contextscope=all"
+#~ "#simaker-predefinedfieldmovepyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `PredefinedFieldState on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-predefinedfieldstatepyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The FluidCavityPressure object stores the "
+#~ "data for initial fluid cavity pressures."
+#~ " The base class*region* argument can "
+#~ "not be specifed with this object. "
+#~ "The FluidCavityPressure object is derived "
+#~ "from the PredefinedField object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `IMAField on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imafieldpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `IMARegion on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imaregionpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `InitialState.setValues() on help.3ds.com/0.1."
+#~ " "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-initialstatepyc.htm?contextscope=all"
+#~ "#simaker-initialstatesetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `KinematicHardening.setValues() on "
+#~ "help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-kinematichardeningpyc.htm?contextscope=all"
+#~ "#simaker-kinematichardeningsetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `MaterialAssignment.setValues() on "
+#~ "help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialassignmentpyc.htm?contextscope=all"
+#~ "#simaker-materialassignmentsetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Temperature.move() on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturepyc.htm?contextscope=all"
+#~ "#simaker-temperaturemovepyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Temperature.setValues() on help.3ds.com/0.1."
+#~ " "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturepyc.htm?contextscope=all"
+#~ "#simaker-temperaturesetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Temperature.setValuesInStep() on "
+#~ "help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturepyc.htm?contextscope=all"
+#~ "#simaker-temperaturesetvaluesinsteppyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `TemperatureState on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturestatepyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `TiffOptions on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tiffoptionspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `TiffOptions.setValues() on help.3ds.com/0.1."
+#~ " "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tiffoptionspyc.htm?contextscope=all"
+#~ "#simaker-tiffoptionssetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SymbolicConstant SIZE_ON_SCREEN or a "
+#~ "pair of Ints specifying the width "
+#~ "and height of the image in pixels."
+#~ " Possible values are (*minWidth*, "
+#~ "**minHeight**) ≤≤ **imageSize** ≤≤ (*maxWidth*"
+#~ " and **maxHeight**). The default value "
+#~ "is SIZE_ON_SCREEN. Note:The minimum value "
+#~ "of width and height (*minWidth* and "
+#~ "**minHeight** ) is the number of "
+#~ "pixels that occupy 10 mm at the"
+#~ " current screen resolution. The value "
+#~ "is typically around 50 pixels and "
+#~ "may be different for width and "
+#~ "height. The maximum value of width "
+#~ "and height (*maxWidth* and **maxHeight** "
+#~ ") is the largest number of pixels"
+#~ " supported by the system graphics and"
+#~ " will be at least as large as"
+#~ " the screen dimensions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If either the width or height "
+#~ "arguments of **imageSize** are out of"
+#~ " range (where"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**minWidth** and **minHeight** are the "
+#~ "number of pixels corresponding to "
+#~ "approximately 10 mm for a given "
+#~ "display and **maxWidth** and **maxHeight** "
+#~ "are the largest allowable number of "
+#~ "pixels supported by the system "
+#~ "graphics):"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "RangeError: imageSize must be SIZE_ON_SCREEN"
+#~ " or a sequence of 2 Ints in "
+#~ "the range"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Velocity.setValues() on help.3ds.com/0.1. "
+#~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitypyc.htm?contextscope=all"
+#~ "#simaker-velocitysetvaluespyc>`_."
 #~ msgstr ""
 

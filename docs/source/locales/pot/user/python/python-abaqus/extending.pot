@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-04 00:14+0000\n"
+"POT-Creation-Date: 2022-09-05 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Extending the Abaqus Scripting Interface"
 msgstr ""
 
 #: ../../user/python/python-abaqus/extending.rst:5
-msgid "You can extend the functionality of the Abaqus Scripting Interface by writing your own modules that contain classes and functions to accomplish tasks that are not directly available in Abaqus. For example, you can write a function to print the names of all materials that have a density specified, or you can write a function that creates a contour plot using a custom set of contour plot options. Creating functions and modules in Python is described in :doc:`/user/python/introduction/python-basics/functions` and :doc:`/user/python/introduction/python-basics/modules`."
+msgid "You can extend the functionality of the Abaqus Scripting Interface by writing your own modules that contain classes and functions to accomplish tasks that are not directly available in Abaqus. For example, you can write a function to print the names of all materials that have a density specified, or you can write a function that creates a contour plot using a custom set of contour plot options. Creating functions and modules in Python is described in :ref:`creating-functions` and :ref:`functions-and-modules`."
 msgstr ""
 
 #: ../../user/python/python-abaqus/extending.rst:7
@@ -173,7 +173,7 @@ msgid "You can use the `RepositorySupport` class to derive a class that can cont
 msgstr ""
 
 #: ../../user/python/python-abaqus/extending.rst:155
-msgid "Using the `RepositorySupport` class allows you to create a hierarchy of repositories; for example, in the Abaqus Scripting Interface the parts repository is a child of the models repository. The first argument passed into your constructor is stored as `name`; it is created automatically by the infrastructure. To create a hierarchy of repositories, derive your class from `RepositorySupport` and use its `Repository` method to create child repositories as shown below. The  method is described in :doc:`/extending:repositories`."
+msgid "Using the `RepositorySupport` class allows you to create a hierarchy of repositories; for example, in the Abaqus Scripting Interface the parts repository is a child of the models repository. The first argument passed into your constructor is stored as `name`; it is created automatically by the infrastructure. To create a hierarchy of repositories, derive your class from `RepositorySupport` and use its `Repository` method to create child repositories as shown below. The  method is described in `repositories`_."
 msgstr ""
 
 #: ../../user/python/python-abaqus/extending.rst:176
