@@ -12,6 +12,26 @@ Create interactions
 
     .. autoclasstoc::
 
+.. autoclass:: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel
+    :members:
+
+    .. autoclasstoc::
+
+.. autoclass:: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel
+    :members:
+
+    .. autoclasstoc::
+
+.. autoclass:: abaqus.Interaction.InteractionContactStabilizationModel.InteractionContactStabilizationModel
+    :members:
+
+    .. autoclasstoc::
+
+.. autoclass:: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel
+    :members:
+
+    .. autoclasstoc::
+
 
 Object features
 ---------------
