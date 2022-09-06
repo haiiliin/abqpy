@@ -3,6 +3,8 @@
 [![Documentation Status](https://img.shields.io/readthedocs/abqpy?label=docs)](https://readthedocs.org/projects/abqpy/)
 [![Documentation Status](https://img.shields.io/readthedocs/abqpy-zh-cn?label=docs-zh-cn)](https://readthedocs.org/projects/abqpy-zh-cn/)
 [![Tests](https://github.com/haiiliin/abqpy/actions/workflows/tests.yaml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/tests.yaml)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/haiiliin/abqpy.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/haiiliin/abqpy/alerts/)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/haiiliin/abqpy.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/haiiliin/abqpy/context:python)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/abqpy.svg)](https://www.python.org/)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/haiiliin/abqpy)](https://github.com/haiiliin/abqpy/releases/latest)
 [![PyPI download month](https://img.shields.io/pypi/dm/abqpy.svg)](https://pypi.python.org/pypi/abqpy/)
