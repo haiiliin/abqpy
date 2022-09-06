@@ -17,26 +17,28 @@
 
 # -- Project information -----------------------------------------------------
 
-import git
 import inspect
 import os
 import re
 import sys
 import typing
 
-from importlib import metadata
+import git
+import pkg_resources
 
 project = 'abqpy'
 copyright = '2022, WANG Hailin'
 author = 'WANG Hailin'
 
 # The full version, including alpha/beta/rc tags
+_default_version = '2022.0.0'
 try:
-    release = metadata.version('abqpy')[:4]
-    if not release.startswith('20'):
-        release = '2022'
-except metadata.PackageNotFoundError:
-    release = '2022'
+    version = pkg_resources.get_distribution('abqpy').version
+    if not version.startswith('20') or len(version.split('.')) < 3:
+        version = _default_version
+except pkg_resources.DistributionNotFound:
+    version = _default_version
+release = '.'.join(version.split('.')[:3])
 
 # For multiple languages
 locale_dirs = ['locales/']   # path is example but recommended.
