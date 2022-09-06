@@ -2,7 +2,7 @@ import os
 import sys
 from abaqus.Odb.OdbCommands import *
 from abaqus.UtilityAndView.BackwardCompatibility import BackwardCompatibility
-
+from abaqus.Odb.OdbSequenceAnalyticSurfaceSegment import OdbSequenceAnalyticSurfaceSegment
 
 def openOdb(name: str, *args, **kwargs) -> Odb:
     abaqus = 'abaqus'
@@ -26,5 +26,14 @@ def openOdb(name: str, *args, **kwargs) -> Odb:
     sys.exit()
     return Odb(name)
 
+def AnalyticSurfaceProfile() -> OdbSequenceAnalyticSurfaceSegment:
+    """This method creates a OdbSequenceAnalyticSurfaceSegment object.
+    
+    Returns
+    -------
+    OdbSequenceAnalyticSurfaceSegment
+        An :py:class:`~abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment` object.
+    """
+    return OdbSequenceAnalyticSurfaceSegment()
 
 backwardCompatibility = BackwardCompatibility()
