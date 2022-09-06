@@ -212,8 +212,8 @@ class XYData(tuple):
 
             .. code-block:: python
 
-                session.XYData
-                xyPlot.XYData
+                session.XYDataFromFile
+                xyPlot.XYDataFromFile
 
         Parameters
         ----------
@@ -292,8 +292,8 @@ class XYData(tuple):
 
             .. code-block:: python
 
-                session.XYData
-                xyPlot.XYData
+                session.XYDataFromHistory
+                xyPlot.XYDataFromHistory
 
         Parameters
         ----------
@@ -367,8 +367,8 @@ class XYData(tuple):
 
             .. code-block:: python
 
-                session.XYData
-                xyPlot.XYData
+                session.xyDataListFromField
+                xyPlot.xyDataListFromField
 
         Parameters
         ----------
@@ -462,8 +462,8 @@ class XYData(tuple):
 
             .. code-block:: python
 
-                session.XYData
-                xyPlot.XYData
+                session.XYDataFromFreeBody
+                xyPlot.XYDataFromFreeBody
 
         Parameters
         ----------
@@ -522,8 +522,8 @@ class XYData(tuple):
 
             .. code-block:: python
 
-                session.XYData
-                xyPlot.XYData
+                session.XYDataFromShellThickness
+                xyPlot.XYDataFromShellThickness
 
         Parameters
         ----------
@@ -621,8 +621,8 @@ class XYData(tuple):
 
             .. code-block:: python
 
-                session.XYData
-                xyPlot.XYData
+                session.XYDataFromPath
+                xyPlot.XYDataFromPath
 
         Parameters
         ----------
