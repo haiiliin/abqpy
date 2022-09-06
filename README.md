@@ -7,7 +7,7 @@
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/haiiliin/abqpy.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/haiiliin/abqpy/context:python)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/abqpy.svg)](https://www.python.org/)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/haiiliin/abqpy)](https://github.com/haiiliin/abqpy/releases/latest)
-[![PyPI download month](https://img.shields.io/pypi/dm/abqpy.svg)](https://pypi.python.org/pypi/abqpy/)
+[![PyPI download month](https://img.shields.io/pypi/dm/abqpy.svg?color=blue)](https://pypi.python.org/pypi/abqpy/)
 
 Read this in other languages: [English](README.md), [简体中文](README-zh-cn.md).
 
