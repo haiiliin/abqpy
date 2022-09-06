@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 00:16+0000\n"
+"POT-Creation-Date: 2022-09-06 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4597,8 +4597,28 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState.status:2
+#: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState.status:2
+#: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState.status:2
 #: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState.status:2
 #: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState.status:2
+#: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.status:2
+#: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState.status:2
+#: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState.status:2
+#: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState.status:2
+#: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState.status:2
+#: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState.status:2
+#: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.status:2
+#: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.status:2
+#: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState.status:2
+#: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState.status:2
+#: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState.status:2
+#: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState.status:2
+#: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState.status:2
+#: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState.status:2
+#: abaqus.BoundaryCondition.TypeBCState.TypeBCState.status:2
+#: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.status:2
+#: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState.status:2
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the "
@@ -4606,73 +4626,325 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState.status:4
+#: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState.status:4
+#: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState.status:4
 #: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState.status:4
+#: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState.status:4
+#: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.status:4
+#: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState.status:4
+#: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState.status:4
+#: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState.status:4
+#: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState.status:4
+#: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState.status:4
+#: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.status:4
+#: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.status:4
+#: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState.status:4
+#: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState.status:4
+#: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState.status:4
+#: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState.status:4
+#: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState.status:4
+#: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState.status:4
+#: abaqus.BoundaryCondition.TypeBCState.TypeBCState.status:4
+#: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.status:4
+#: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState.status:4
 #: of
 msgid "NOT_YET_ACTIVE"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState.status:5
+#: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState.status:5
+#: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState.status:5
 #: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState.status:5
+#: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState.status:5
+#: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.status:5
+#: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState.status:5
+#: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState.status:5
+#: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState.status:5
+#: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState.status:5
+#: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState.status:5
+#: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.status:5
+#: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.status:5
+#: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState.status:5
+#: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState.status:5
+#: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState.status:5
+#: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState.status:5
+#: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState.status:5
+#: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState.status:5
+#: abaqus.BoundaryCondition.TypeBCState.TypeBCState.status:5
+#: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.status:5
+#: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState.status:5
 #: of
 msgid "CREATED"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState.status:6
+#: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState.status:6
+#: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState.status:6
 #: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState.status:6
+#: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState.status:6
+#: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.status:6
+#: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState.status:6
+#: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState.status:6
+#: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState.status:6
+#: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState.status:6
+#: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState.status:6
+#: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.status:6
+#: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.status:6
+#: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState.status:6
+#: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState.status:6
+#: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState.status:6
+#: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState.status:6
+#: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState.status:6
+#: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState.status:6
+#: abaqus.BoundaryCondition.TypeBCState.TypeBCState.status:6
+#: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.status:6
+#: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState.status:6
 #: of
 msgid "PROPAGATED"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState.status:7
+#: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState.status:7
+#: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState.status:7
 #: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState.status:7
+#: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState.status:7
+#: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.status:7
+#: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState.status:7
+#: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState.status:7
+#: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState.status:7
+#: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState.status:7
+#: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState.status:7
+#: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.status:7
+#: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.status:7
+#: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState.status:7
+#: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState.status:7
+#: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState.status:7
+#: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState.status:7
+#: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState.status:7
+#: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState.status:7
+#: abaqus.BoundaryCondition.TypeBCState.TypeBCState.status:7
+#: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.status:7
+#: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState.status:7
 #: of
 msgid "MODIFIED"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState.status:8
+#: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState.status:8
+#: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState.status:8
 #: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState.status:8
+#: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState.status:8
+#: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.status:8
+#: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState.status:8
+#: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState.status:8
+#: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState.status:8
+#: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState.status:8
+#: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState.status:8
+#: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.status:8
+#: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.status:8
+#: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState.status:8
+#: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState.status:8
+#: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState.status:8
+#: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState.status:8
+#: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState.status:8
+#: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState.status:8
+#: abaqus.BoundaryCondition.TypeBCState.TypeBCState.status:8
+#: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.status:8
+#: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState.status:8
 #: of
 msgid "DEACTIVATED"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState.status:9
+#: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState.status:9
+#: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState.status:9
 #: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState.status:9
+#: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState.status:9
+#: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.status:9
+#: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState.status:9
+#: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState.status:9
+#: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState.status:9
+#: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState.status:9
+#: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState.status:9
+#: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.status:9
+#: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.status:9
+#: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState.status:9
+#: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState.status:9
+#: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState.status:9
+#: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState.status:9
+#: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState.status:9
+#: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState.status:9
+#: abaqus.BoundaryCondition.TypeBCState.TypeBCState.status:9
+#: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.status:9
+#: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState.status:9
 #: of
 msgid "NO_LONGER_ACTIVE"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState.status:10
+#: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState.status:10
+#: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState.status:10
 #: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState.status:10
+#: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState.status:10
+#: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.status:10
+#: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState.status:10
+#: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState.status:10
+#: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState.status:10
+#: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState.status:10
+#: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState.status:10
+#: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.status:10
+#: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.status:10
+#: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState.status:10
+#: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState.status:10
+#: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState.status:10
+#: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState.status:10
+#: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState.status:10
+#: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState.status:10
+#: abaqus.BoundaryCondition.TypeBCState.TypeBCState.status:10
+#: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.status:10
+#: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState.status:10
 #: of
 msgid "TYPE_NOT_APPLICABLE"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState.status:11
+#: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState.status:11
+#: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState.status:11
 #: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState.status:11
+#: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState.status:11
+#: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.status:11
+#: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState.status:11
+#: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState.status:11
+#: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState.status:11
+#: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState.status:11
+#: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState.status:11
+#: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.status:11
+#: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.status:11
+#: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState.status:11
+#: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState.status:11
+#: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState.status:11
+#: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState.status:11
+#: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState.status:11
+#: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState.status:11
+#: abaqus.BoundaryCondition.TypeBCState.TypeBCState.status:11
+#: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.status:11
+#: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState.status:11
 #: of
 msgid "INSTANCE_NOT_APPLICABLE"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState.status:12
+#: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState.status:12
+#: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState.status:12
 #: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState.status:12
+#: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState.status:12
+#: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.status:12
+#: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState.status:12
+#: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState.status:12
+#: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState.status:12
+#: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState.status:12
+#: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState.status:12
+#: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.status:12
+#: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.status:12
+#: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState.status:12
+#: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState.status:12
+#: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState.status:12
+#: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState.status:12
+#: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState.status:12
+#: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState.status:12
+#: abaqus.BoundaryCondition.TypeBCState.TypeBCState.status:12
+#: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.status:12
+#: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState.status:12
 #: of
 msgid "PROPAGATED_FROM_BASE_STATE"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState.status:13
+#: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState.status:13
+#: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState.status:13
 #: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState.status:13
+#: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState.status:13
+#: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.status:13
+#: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState.status:13
+#: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState.status:13
+#: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState.status:13
+#: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState.status:13
+#: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState.status:13
+#: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.status:13
+#: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.status:13
+#: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState.status:13
+#: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState.status:13
+#: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState.status:13
+#: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState.status:13
+#: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState.status:13
+#: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState.status:13
+#: abaqus.BoundaryCondition.TypeBCState.TypeBCState.status:13
+#: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.status:13
+#: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState.status:13
 #: of
 msgid "MODIFIED_FROM_BASE_STATE"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState.status:14
+#: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState.status:14
+#: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState.status:14
 #: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState.status:14
+#: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState.status:14
+#: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.status:14
+#: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState.status:14
+#: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState.status:14
+#: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState.status:14
+#: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState.status:14
+#: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState.status:14
+#: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.status:14
+#: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.status:14
+#: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState.status:14
+#: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState.status:14
+#: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState.status:14
+#: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState.status:14
+#: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState.status:14
+#: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState.status:14
+#: abaqus.BoundaryCondition.TypeBCState.TypeBCState.status:14
+#: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.status:14
+#: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState.status:14
 #: of
 msgid "DEACTIVATED_FROM_BASE_STATE"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState.status:15
+#: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState.status:15
+#: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState.status:15
 #: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState.status:15
+#: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState.status:15
+#: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.status:15
+#: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState.status:15
+#: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState.status:15
+#: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState.status:15
+#: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState.status:15
+#: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState.status:15
+#: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.status:15
+#: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.status:15
+#: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState.status:15
+#: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState.status:15
+#: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState.status:15
+#: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState.status:15
+#: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState.status:15
+#: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState.status:15
+#: abaqus.BoundaryCondition.TypeBCState.TypeBCState.status:15
+#: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.status:15
+#: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState.status:15
 #: of
 msgid "BUILT_INTO_MODES"
 msgstr ""
@@ -4987,36 +5259,6 @@ msgstr ""
 msgid ""
 ":py:obj:`amplitude "
 "<abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState.amplitude>`\\"
-msgstr ""
-
-#: ../../docstring
-#: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState.status:2
-#: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState.status:2
-#: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState.status:2
-#: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.status:2
-#: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState.status:2
-#: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState.status:2
-#: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState.status:2
-#: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState.status:2
-#: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState.status:2
-#: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.status:2
-#: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.status:2
-#: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState.status:2
-#: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState.status:2
-#: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState.status:2
-#: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState.status:2
-#: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState.status:2
-#: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState.status:2
-#: abaqus.BoundaryCondition.TypeBCState.TypeBCState.status:2
-#: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.status:2
-#: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState.status:2
-#: of
-msgid ""
-"A SymbolicConstant specifying the propagation state of the "
-"BoundaryConditionState object. Possible values are: NOT_YET_ACTIVE "
-"CREATED PROPAGATED MODIFIED DEACTIVATED NO_LONGER_ACTIVE "
-"TYPE_NOT_APPLICABLE INSTANCE_NOT_APPLICABLE PROPAGATED_FROM_BASE_STATE "
-"MODIFIED_FROM_BASE_STATE DEACTIVATED_FROM_BASE_STATE BUILT_INTO_MODES"
 msgstr ""
 
 #: ../../reference/mdb/model/bc.rst:53
@@ -5905,15 +6147,6 @@ msgid ""
 "A SymbolicConstant specifying the propagation state of the concentration "
 "magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and "
 "MODIFIED."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState.status:4
-#: of
-msgid ""
-"NOT_YET_ACTIVE CREATED PROPAGATED MODIFIED DEACTIVATED NO_LONGER_ACTIVE "
-"TYPE_NOT_APPLICABLE INSTANCE_NOT_APPLICABLE PROPAGATED_FROM_BASE_STATE "
-"MODIFIED_FROM_BASE_STATE DEACTIVATED_FROM_BASE_STATE BUILT_INTO_MODES"
 msgstr ""
 
 #: ../../reference/mdb/model/bc.rst:101
@@ -12297,5 +12530,24 @@ msgstr ""
 #~ msgid ""
 #~ "Check `VelocityBCState on help.3ds.com/2017 "
 #~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitybcstatepyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the propagation"
+#~ " state of the BoundaryConditionState "
+#~ "object. Possible values are: NOT_YET_ACTIVE"
+#~ " CREATED PROPAGATED MODIFIED DEACTIVATED "
+#~ "NO_LONGER_ACTIVE TYPE_NOT_APPLICABLE "
+#~ "INSTANCE_NOT_APPLICABLE PROPAGATED_FROM_BASE_STATE "
+#~ "MODIFIED_FROM_BASE_STATE DEACTIVATED_FROM_BASE_STATE "
+#~ "BUILT_INTO_MODES"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NOT_YET_ACTIVE CREATED PROPAGATED MODIFIED "
+#~ "DEACTIVATED NO_LONGER_ACTIVE TYPE_NOT_APPLICABLE "
+#~ "INSTANCE_NOT_APPLICABLE PROPAGATED_FROM_BASE_STATE "
+#~ "MODIFIED_FROM_BASE_STATE DEACTIVATED_FROM_BASE_STATE "
+#~ "BUILT_INTO_MODES"
 #~ msgstr ""
 
