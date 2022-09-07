@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 00:16+0000\n"
+"POT-Creation-Date: 2022-09-07 03:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -171,7 +171,8 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Print.EpsOptions.EpsOptions.imageSize:2
-#: abaqus.Print.EpsOptions.EpsOptions.setValues:10 of
+#: abaqus.Print.EpsOptions.EpsOptions.setValues:10
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.imageSize:2 of
 msgid ""
 "The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the "
 "width and height of the image in the units specified by **units**. "
@@ -428,17 +429,6 @@ msgstr ""
 msgid ""
 "A Boolean specifying whether the output includes the date. The default "
 "value is ON."
-msgstr ""
-
-#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.imageSize:2
-#: of
-msgid ""
-"The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the "
-"width and height of the image in the units specified by **units**. "
-"Possible numeric values are **imageSize** ≥≥ (*minWidth*, **minHeight**)."
-" The default value is SIZE_ON_SCREEN.Note:The minimum value of width and "
-"height (*minWidth* and **minHeight**) is 10 mm (approximately 0.4 "
-"inches)."
 msgstr ""
 
 #: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.leftMargin:2
@@ -1293,5 +1283,18 @@ msgstr ""
 #~ " "
 #~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all"
 #~ "#simaker-svgoptionssetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SymbolicConstant SIZE_ON_SCREEN or a "
+#~ "pair of Floats specifying the width "
+#~ "and height of the image in the "
+#~ "units specified by **units**. Possible "
+#~ "numeric values are **imageSize** ≥≥ "
+#~ "(*minWidth*, **minHeight**). The default value"
+#~ " is SIZE_ON_SCREEN.Note:The minimum value "
+#~ "of width and height (*minWidth* and "
+#~ "**minHeight**) is 10 mm (approximately "
+#~ "0.4 inches)."
 #~ msgstr ""
 
