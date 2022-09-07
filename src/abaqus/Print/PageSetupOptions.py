@@ -20,7 +20,7 @@ class PageSetupOptions(_OptionsBase):
     """
     #: The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the width and height
     #: of the image in the units specified by **units**. Possible numeric values are **imageSize**
-    #: ≥≥ (*minWidth*, **minHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value
+    #: ≥ (*minWidth*, **minHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value
     #: of width and height (*minWidth* and **minHeight**) is 10 mm (approximately 0.4 inches).
     imageSize: typing.Union[SymbolicConstant, float] = FIT_TO_PAGE
 

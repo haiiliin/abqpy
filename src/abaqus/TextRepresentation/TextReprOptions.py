@@ -40,7 +40,7 @@ class TextReprOptions:
             object'.The initial value is RECURSIVE.
         maxRecursionDepth
             An Int, SymbolicConstant, or None specifying the maximum depth to which the object will
-            be printed. Possible values for the depth are Ints ≥≥ 0, the SymbolicConstant UNLIMITED,
+            be printed. Possible values for the depth are Ints ≥ 0, the SymbolicConstant UNLIMITED,
             or None. A value of None implies that the current setting in the TextReprOptions object
             will be used. If **object** is not an Abaqus object, **maxRecursionDepth** has no effect.
             The default value is None.
