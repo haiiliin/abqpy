@@ -30,7 +30,6 @@ Other links for this project
 * PyPI: `pypi.org/project/abqpy <https://pypi.org/project/abqpy/>`_
 * Anaconda: `anaconda.org/haiiliin/abqpy <https://anaconda.org/haiiliin/abqpy>`_
 * Read the Docs: `readthedocs.org/projects/abqpy <https://readthedocs.org/projects/abqpy>`_
-* Join Crowdin for documentation translation: `crowdin.com/project/abqpy <https://crowdin.com/project/abqpy>`_
 
 Quick Start
 -----------
