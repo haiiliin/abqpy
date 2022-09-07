@@ -303,7 +303,7 @@ class OdbDisplay:
             An Int specifying the step index. Possible values are 0 ≤ **step** ≤ (*numSteps* − 1).
         frame
             An Int specifying the frame in the specified step. Valid values are 0 ≤ **frame** ≤
-            (*numFramesInStep* − 1). If **frame** ≥≥ (*numFramesInStep* − 1) the last frame will be
+            (*numFramesInStep* − 1). If **frame** ≥ (*numFramesInStep* − 1) the last frame will be
             displayed.
 
         Raises
