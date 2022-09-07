@@ -1,3 +1,4 @@
+from __future__ import annotations
 import typing
 
 from .AreaStyle import AreaStyle
@@ -106,7 +107,11 @@ class XYSession(XYSessionBase):
 
     @staticmethod
     @abaqus_method_doc
+<<<<<<< HEAD
     def QuantityType(type: SymbolicConstant, label: str = "") -> QuantityType:
+=======
+    def QuantityType(label: str = "", type: typing.Optional[SymbolicConstant] = None) -> QuantityType:
+>>>>>>> 9d44ade (Correct type annotations on module `XYSession.py`)
         """This method creates a QuantityType object.
 
         .. note:: 
@@ -318,8 +323,8 @@ class XYSession(XYSessionBase):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: QuantityType = None,
-        axis2QuantityType: QuantityType = None,
+        axis1QuantityType: typing.Optional[QuantityType] = None,
+        axis2QuantityType: typing.Optional[QuantityType] = None,
     ) -> XYData:
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
@@ -414,12 +419,12 @@ class XYSession(XYSessionBase):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: QuantityType = None,
-        axis2QuantityType: QuantityType = None,
+        axis1QuantityType: typing.Optional[QuantityType] = None,
+        axis2QuantityType: typing.Optional[QuantityType] = None,
         xField: int = 1,
         yField: int = 2,
-        skipFrequency: int = None,
-    ):
+        skipFrequency: typing.Optional[int] = None,
+    ) -> XYData:
         """This method creates an XYData object from data in an ASCII file.
 
         .. note:: 
@@ -469,7 +474,7 @@ class XYSession(XYSessionBase):
             by spaces, tabs, or commas. The default value is 2.
         skipFrequency
             An Int specifying how often data rows will be skipped. A **skipFrequency** of 1 means skip
-            every other row. The first row is always read. Possible values are **skipFrequency** ≥ 0.
+            every other row. The first row is always read. Possible values are **skipFrequency** ≥≥ 0.
             The default value is 0 (data are read from every row).
 
         Returns
@@ -491,11 +496,11 @@ class XYSession(XYSessionBase):
         contentDescription: str = "",
         positionDescription: str = "",
         legendLabel: str = "",
-        skipFrequency: int = None,
+        skipFrequency: typing.Optional[int] = None,
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
-        stepTuple: int = None,
-    ):
+        stepTuple: typing.Optional[int] = None,
+    ) -> XYData:
         """This method creates an XYData object by reading history data from an Odb object.
 
         .. note:: 
@@ -535,7 +540,7 @@ class XYSession(XYSessionBase):
         skipFrequency
             An Int specifying how often data frames will be skipped. If **skipFrequency** = 1, Abaqus
             will skip every other frame. The first frame is always read. Possible values are
-            **skipFrequency** ≥ 0. The default value is 0 (data are read from every frame).
+            **skipFrequency** ≥≥ 0. The default value is 0 (data are read from every frame).
         numericForm
             A SymbolicConstant specifying the numeric form in which to display results that contain
             complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
@@ -566,7 +571,7 @@ class XYSession(XYSessionBase):
         nodeLabels: tuple = (),
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
-        operator: SymbolicConstant = None,
+        operator: typing.Optional[SymbolicConstant] = None,
     ) -> typing.List["XYData"]:
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
@@ -665,7 +670,7 @@ class XYSession(XYSessionBase):
         comp1: Boolean = OFF,
         comp2: Boolean = OFF,
         comp3: Boolean = OFF,
-    ):
+    ) -> typing.List[XYData]:
         """This method creates a list of XYData objects by computing free body data from an Odb
         object.
 
@@ -722,15 +727,15 @@ class XYSession(XYSessionBase):
         viewport: str = "",
         removeDuplicateXYPairs: Boolean = True,
         includeAllElements: Boolean = False,
-        step: int = None,
-        frame: int = None,
-        variable: SymbolicConstant = None,
-        deformedMag: float = None,
+        step: typing.Optional[int] = None,
+        frame: typing.Optional[int] = None,
+        variable: typing.Optional[SymbolicConstant] = None,
+        deformedMag: typing.Optional[float] = None,
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
         projectOntoMesh: Boolean = False,
         projectionTolerance: float = 0,
-    ):
+    ) -> XYData:
         """This method creates an XYData object from path information.
 
         .. note:: 
