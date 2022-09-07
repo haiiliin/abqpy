@@ -469,7 +469,7 @@ class XYSession(XYSessionBase):
             by spaces, tabs, or commas. The default value is 2.
         skipFrequency
             An Int specifying how often data rows will be skipped. A **skipFrequency** of 1 means skip
-            every other row. The first row is always read. Possible values are **skipFrequency** ≥≥ 0.
+            every other row. The first row is always read. Possible values are **skipFrequency** ≥ 0.
             The default value is 0 (data are read from every row).
 
         Returns
@@ -535,7 +535,7 @@ class XYSession(XYSessionBase):
         skipFrequency
             An Int specifying how often data frames will be skipped. If **skipFrequency** = 1, Abaqus
             will skip every other frame. The first frame is always read. Possible values are
-            **skipFrequency** ≥≥ 0. The default value is 0 (data are read from every frame).
+            **skipFrequency** ≥ 0. The default value is 0 (data are read from every frame).
         numericForm
             A SymbolicConstant specifying the numeric form in which to display results that contain
             complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
