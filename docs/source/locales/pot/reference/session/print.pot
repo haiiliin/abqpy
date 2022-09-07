@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2019.2.7.dev11+g933ec31d\n"
+"Project-Id-Version: abqpy 2019.2.7.dev17+g79748ecd\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-07 00:14+0000\n"
+"POT-Creation-Date: 2022-09-07 03:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,6 +148,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Print/EpsOptions.py:docstring of abaqus.Print.EpsOptions.EpsOptions.setValues:10
 #: ../../docstring of abaqus.Print.EpsOptions.EpsOptions.imageSize:2
+#: ../../docstring of abaqus.Print.PageSetupOptions.PageSetupOptions.imageSize:2
 msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the width and height of the image in the units specified by **units**. Possible numeric values are **imageSize** ≥ (*minWidth*, **minHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value of width and height (*minWidth* and **minHeight**) is 10 mm (approximately 0.4 inches)."
 msgstr ""
 
@@ -345,10 +346,6 @@ msgstr ""
 #: ../../docstring of abaqus.Print.PageSetupOptions.PageSetupOptions.date:2
 #: ../../docstring of abaqus.Print.PsOptions.PsOptions.date:2
 msgid "A Boolean specifying whether the output includes the date. The default value is ON."
-msgstr ""
-
-#: ../../docstring of abaqus.Print.PageSetupOptions.PageSetupOptions.imageSize:2
-msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the width and height of the image in the units specified by **units**. Possible numeric values are **imageSize** ≥≥ (*minWidth*, **minHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value of width and height (*minWidth* and **minHeight**) is 10 mm (approximately 0.4 inches)."
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PageSetupOptions.py:docstring of abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:33
