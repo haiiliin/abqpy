@@ -15,6 +15,7 @@ jobs:
 
     steps:
       - name: Create release draft
+        if: ${{ matrix.branch }} != "main"
         id: create_release
         uses: release-drafter/release-drafter@v5
         with:
