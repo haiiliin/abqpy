@@ -17,7 +17,9 @@ for file in ['README.md', 'README-zh-cn.md', 'docs/source/getting_started.rst']:
     with open(file, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    content = re.sub('20\d\d\.\d+?\.\d+?', current_version, content)
+    pattern = r'abqpy(=+?)20\d\d\.\d+?\.\d+?'
+    repl = f'abqpy\g<1>{current_version}'
+    content = re.sub(pattern, repl, content)
     
     with open(file, 'w', encoding='utf-8') as f:
         f.write(content)
