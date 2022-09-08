@@ -10,7 +10,6 @@ def openOdb(name: str, *args, **kwargs) -> Odb:
         abaqus = os.environ['ABAQUS_BAT_PATH']
 
     filePath = os.path.abspath(sys.argv[0])
-    odbPath = os.path.abspath(name)
 
     try:  # If it is a jupyter notebook
         import ipynbname
@@ -20,7 +19,7 @@ def openOdb(name: str, *args, **kwargs) -> Odb:
         filePath = filePath.replace(".ipynb", ".py")
     except:
         pass
-    os.system(f'{abaqus} cae database={odbPath} script={filePath}')
+    os.system(f'{abaqus} python {filePath}')
     sys.exit()
     return Odb(name)
 
