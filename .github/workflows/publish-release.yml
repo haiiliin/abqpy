@@ -7,6 +7,7 @@ jobs:
   publish-release:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         branch: ["main", "2016", "2017", "2018", "2019", "2020", "2021", "2022"]
     permissions:
@@ -21,12 +22,20 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: '3.10'
-      - name: Create release draft
+      - name: Create release draft for 'V20**'
         if: ${{ matrix.branch != 'main' }}
         id: create_release
         uses: release-drafter/release-drafter@v5
         with:
           config-name: release-drafter-v${{ matrix.branch }}.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create release draft for 'main'
+        if: ${{ matrix.branch == 'main' }}
+        id: create_release_main
+        uses: release-drafter/release-drafter@v5
+        with:
+          config-name: release-drafter-v2022.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Update suggested version and create commit for 'V20**'
@@ -52,7 +61,7 @@ jobs:
           git checkout ${{ matrix.branch }}  # attach this repo
           git config --global user.email "abqpy-auto-update"
           git config --global user.name "abqpy-auto-update"
-          python ".github/update-suggested-version.py" "${{ steps.create_release.outputs.tag_name }}"
+          python ".github/update-suggested-version.py" "${{ steps.create_release_main.outputs.tag_name }}"
           git add .
           git commit -m "[skip ci] by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
       - name: Push to the protected branch 'main'
