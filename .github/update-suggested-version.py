@@ -21,4 +21,3 @@ for file in ['README.md', 'README-zh-cn.md', 'docs/source/getting_started.rst']:
     
     with open(file, 'w', encoding='utf-8') as f:
         f.write(content)
-    
