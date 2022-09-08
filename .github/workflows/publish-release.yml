@@ -33,11 +33,18 @@ jobs:
           git config --global user.name "abqpy-auto-update"
           git add .
           git commit -m "[skip ci] by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-      - name: Pushing to the protected branch 'protected'
+      - name: Push to the protected branch 'V20**'
+        if: ${{ matrix.branch }} != "main"
         uses: CasperWA/push-protected@v2
         with:
           token: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
           branch: V${{ matrix.branch }}
+      - name: Push to the protected branch 'main'
+        if: ${{ matrix.branch }} == "main"
+        uses: CasperWA/push-protected@v2
+        with:
+          token: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
+          branch: ${{ matrix.branch }}
       - name: Publish release
         if: ${{ matrix.branch }} != "main"
         uses: eregon/publish-release@v1
