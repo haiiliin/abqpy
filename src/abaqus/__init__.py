@@ -75,20 +75,17 @@ class Session(AbaqusSession):
             abaqus = os.environ["ABAQUS_BAT_PATH"]
 
         filePath = os.path.abspath(sys.argv[0])
-        fileDir = os.path.dirname(filePath)
-        fileName = os.path.basename(filePath)
-        odbName = os.path.basename(os.path.abspath(name))
+        odbPath = os.path.abspath(name)
 
-        os.system(f"cd {fileDir}")
         try:  # If it is a jupyter notebook
             import ipynbname
 
-            fileName = os.path.basename(ipynbname.path())
-            os.system(f"jupyter nbconvert --to python {fileName}")
-            fileName = fileName.replace(".ipynb", ".py")
+            filePath = ipynbname.path()
+            os.system(f"jupyter nbconvert --to python {filePath}")
+            filePath = filePath.replace(".ipynb", ".py")
         except:
             pass
-        os.system(f"{abaqus} cae database={odbName} script={fileName}")
+        os.system(f"{abaqus} cae database={odbPath} script={filePath}")
 
         self.exit()
         return odb
