@@ -35,7 +35,7 @@ jobs:
           git config --global user.name "abqpy-auto-update"
           python ".github/update-suggested-version.py" "${{ steps.create_release_drafter.outputs.tag_name }}"
           git add .
-          git commit -m "[skip ci] by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          git commit -m "Update release version by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
       - name: Push to the protected branch 'V20**'
         if: ${{ matrix.branch != 'main' }}
         uses: CasperWA/push-protected@v2
