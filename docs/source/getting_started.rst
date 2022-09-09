@@ -110,8 +110,7 @@ Installation
 or a later version.
 
 `abqpy` is uploaded to `PyPI <https://pypi.org/project/abqpy>`_, you can simply install 
-it using pip, since abqpy (from V1.0.15) depends on `ipynbname` and it is not distributed to
-anaconda, you have to use `pip` to install it manually:
+it using pip:
 
 .. code-block:: sh
     
@@ -122,7 +121,6 @@ anaconda, you have to use `pip` to install it manually:
 
 .. code-block:: sh
 
-    pip install ipynbname
     conda install -c haiiliin abqpy
 
 You may install the latest development version by cloning the 
@@ -131,10 +129,19 @@ the local directory:
 
 .. code-block:: sh
 
-    pip install ipynbname
     git clone https://github.com/haiiliin/abqpy.git
     cd abqpy
     python setup.py install
+
+Optional Requirements
+~~~~~~~~~~~~~~~~~~~~~
+
+If you want to use the Jupyter notebook to write your Abaqus/Python scripts, you need to install
+`ipynbname`:
+
+.. code-block:: sh
+
+    pip install ipynbname
 
 Install A Specific Version
 --------------------------
