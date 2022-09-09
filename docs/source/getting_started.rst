@@ -150,7 +150,11 @@ A better way is to use * to match specific version:
 
 .. code-block:: sh
 
+<<<<<<< HEAD
     pip install abqpy==2017.*.*
+=======
+    pip install abqpy==2022.*
+>>>>>>> ecc10f2 (Fix error in using * to match a specific version in the documentation)
 
 
 Abaqus command
