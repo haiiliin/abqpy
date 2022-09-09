@@ -2,6 +2,11 @@ name: Update suggested version
 
 on:
   workflow_dispatch:
+    inputs:
+      publish:
+        description: 'Publish the release'
+        required: true
+        type: boolean
 
 jobs:
   update-release:
@@ -24,6 +29,7 @@ jobs:
         uses: release-drafter/release-drafter@v5
         with:
           config-name: release-drafter-v${{ matrix.version }}.yml
+          publish: ${{ github.event.inputs.publish }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Update suggested version and create commit for 'V20**'
