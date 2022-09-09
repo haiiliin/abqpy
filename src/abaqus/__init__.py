@@ -75,7 +75,6 @@ class Session(AbaqusSession):
             abaqus = os.environ["ABAQUS_BAT_PATH"]
 
         filePath = os.path.abspath(sys.argv[0])
-        odbPath = os.path.abspath(name)
 
         try:  # If it is a jupyter notebook
             import ipynbname
