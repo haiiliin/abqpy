@@ -13,6 +13,8 @@ def test_odb():
     with pytest.raises(SystemExit):
         # Open output database
         odb = session.openOdb('Job-1.odb')
+        
+        # Show the output database in viewport
         session.viewports['Viewport: 1'].setValues(displayedObject=odb)
     
         # Extract output data
