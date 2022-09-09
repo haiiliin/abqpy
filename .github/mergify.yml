@@ -116,3 +116,12 @@ pull_request_rules:
           - "{{ author }}"
         labels:
           - backport
+  - name: Auto merge backport pull request
+    conditions:
+      - and:
+        - label=backport
+        - label!=conflicts
+        - title~=Backport [\w\W]+?\(backport \#\d+\)
+    actions:
+      merge:
+        method: merge
