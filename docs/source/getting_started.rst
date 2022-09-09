@@ -99,7 +99,7 @@ method :py:meth:`~abaqus.Session.Session.Session.openOdb` is also reimplemented:
         abaqus = 'abaqus'
         if 'ABAQUS_BAT_PATH' in os.environ.keys():
             abaqus = os.environ['ABAQUS_BAT_PATH']
-        os.system(f'{abaqus} cae database={os.path.abspath(name)} script={os.path.abspath(sys.argv[0])})
+        os.system(f'{abaqus} cae script={os.path.abspath(sys.argv[0])}')
 
 Therefore, if you want to run your Python script in Abaqus Python environment, please make sure to use these methods.
 
