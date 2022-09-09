@@ -10,9 +10,10 @@ import pytest
 def test_odb():
     executeOnCaeStartup()
 
-    # Open output database
     with pytest.raises(SystemExit):
+        # Open output database
         odb = session.openOdb('Job-1.odb')
+        session.viewports['Viewport: 1'].setValues(displayedObject=odb)
     
         # Extract output data
         dataList = session.xyDataListFromField(odb=odb, outputPosition=NODAL,
