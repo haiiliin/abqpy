@@ -51,8 +51,8 @@ conda install -c haiiliin abqpy
 
 您可以在安装 `abqpy` 时指定版本号，例如：
 ```shell
-pip install abqpy==2021.2.7
-conda install -c haiiliin abqpy=2021.2.7
+pip install abqpy==2021.2.8
+conda install -c haiiliin abqpy=2021.2.8
 ```
 更好的方法是使用 * 来匹配特定版本：
 ```shell
