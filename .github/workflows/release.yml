@@ -28,7 +28,6 @@ jobs:
         uses: release-drafter/release-drafter@v5
         with:
           config-name: release-drafter-v${{ matrix.version }}.yml
-          publish: ${{ github.event.inputs.publish }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Update suggested version and create commit for 'V20**'
@@ -47,6 +46,12 @@ jobs:
         with:
           token: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
           branch: V${{ matrix.version }}
+      - uses: eregon/publish-release@v1
+        if: ${{ github.event.inputs.publish }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          release_id: ${{ steps.create_release_drafter.outputs.id }}
   
   update-version-on-main:
     runs-on: ubuntu-latest
