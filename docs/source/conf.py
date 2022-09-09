@@ -39,6 +39,8 @@ try:
 except pkg_resources.DistributionNotFound:
     version = _default_version
 release = '.'.join(version.split('.')[:3])
+if 'dev' in version:
+    release += ' (dev)'
 
 # For multiple languages
 locale_dirs = ['locales/']   # path is example but recommended.
