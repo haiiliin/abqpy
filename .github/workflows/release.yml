@@ -2,11 +2,6 @@ name: Update suggested version
 
 on:
   workflow_dispatch:
-    inputs:
-      publish:
-        description: 'Publish the release'
-        required: true
-        type: boolean
 
 jobs:
   update-release:
@@ -40,19 +35,13 @@ jobs:
           git config --global user.name "abqpy-auto-update"
           python ".github/update-suggested-version.py" "${{ steps.create_release_drafter.outputs.tag_name }}"
           git add .
-          git commit -m "[skip ci] by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          git commit -m "Update version by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
       - name: Push to the protected branch 'V20**'
         if: ${{ matrix.branch != 'main' }}
         uses: CasperWA/push-protected@v2
         with:
           token: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
           branch: V${{ matrix.version }}
-      - uses: eregon/publish-release@v1
-        if: ${{ github.event.inputs.publish }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          release_id: ${{ steps.create_release_drafter.outputs.id }}
   
   update-version-on-main:
     runs-on: ubuntu-latest
@@ -80,7 +69,7 @@ jobs:
           git config --global user.name "abqpy-auto-update"
           python ".github/update-suggested-version.py" "${{ steps.create_release_drafter.outputs.tag_name }}"
           git add .
-          git commit -m "[skip ci] by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          git commit -m "Update version by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
       - name: Push to the protected branch 'main'
         uses: CasperWA/push-protected@v2
         with:
