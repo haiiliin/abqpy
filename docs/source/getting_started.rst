@@ -150,7 +150,7 @@ A better way is to use * to match specific version:
 
 .. code-block:: sh
 
-    pip install abqpy==2018.*.*
+    pip install abqpy==2018.*
 
 
 Abaqus command
