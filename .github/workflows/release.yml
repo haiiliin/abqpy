@@ -2,18 +2,9 @@ name: Update suggested version
 
 on:
   workflow_dispatch:
-    inputs:
-      minor:
-        description: 'Minor Version'
-        required: true 
-        type: string
-      patch:
-        description: 'Patch Version'
-        required: true 
-        type: string
 
 jobs:
-  update-version:
+  update-release:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -28,15 +19,23 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: '3.10'
+      - name: Update release drafter
+        id: create_release_drafter
+        uses: release-drafter/release-drafter@v5
+        with:
+          config-name: release-drafter-v${{ matrix.version }}.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Update suggested version and create commit for 'V20**'
         run: |
+          echo "tag = ${{ steps.create_release_drafter.outputs.tag_name }}"
           git branch -a
           git checkout V${{ matrix.version }}  # attach this repo
           git config --global user.email "abqpy-auto-update"
           git config --global user.name "abqpy-auto-update"
-          python ".github/update-suggested-version.py" "${{ matrix.version }}.${{ inputs.minor }}.${{ inputs.patch }}"
+          python ".github/update-suggested-version.py" "${{ steps.create_release_drafter.outputs.tag_name }}"
           git add .
-          git commit -m "[skip ci] by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          git commit -m "Update release version by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
       - name: Push to the protected branch 'V20**'
         if: ${{ matrix.branch != 'main' }}
         uses: CasperWA/push-protected@v2
