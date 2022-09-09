@@ -736,6 +736,98 @@ class XYSession(XYSessionBase):
         return [xyData]
 
     @abaqus_method_doc
+    def XYDataFromShellThickness(
+        self,
+        odb: Odb,
+        outputPosition: SymbolicConstant,
+        variable: SymbolicConstant,
+        elementSets: tuple = (),
+        elementLabels: tuple = (),
+        nodeSets: tuple = (),
+        nodeLabels: tuple = (),
+        numericForm: SymbolicConstant = REAL,
+        complexAngle: float = 0,
+    ) -> typing.List[XYData]:
+        """This method creates a list of XYData objects by reading through the thickness field data
+        from an Odb object.
+
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                session.XYDataFromShellThickness
+                xyPlot.XYDataFromShellThickness
+
+        Parameters
+        ----------
+        odb
+            An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read.
+        outputPosition
+            A SymbolicConstant specifying the position from which output will be read. Possible
+            values are ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, and NODAL.
+        variable
+            A tuple of tuples containing the descriptions of variables for which to extract data
+            from the field. Each tuple specifies the following:Variable label: A String specifying
+            the variable; for example, 'U'.Variable output position: A SymbolicConstant specifying
+            the output position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL,
+            GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL,
+            WHOLE_PART_INSTANCE, and WHOLE_REGION.Refinement: A tuple specifying the refinement. If
+            the refinement tuple is omitted, data are written for all components and invariants (if
+            applicable). This element is required if the location dictionary (the following element
+            in the tuple) is included. The refinement tuple contains the following:Type: A
+            SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and
+            COMPONENT.Label: A String specifying the invariant or the component; for example,
+            'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The
+            dictionary contains pairs of the following:A String specifying the category selection
+            label.A String specifying the section point label.For example,`variable=
+            ('S',INTEGRATION_POINT, ( (COMPONENT, 'S22' ), ), ) variable= (('S',INTEGRATION_POINT,
+            ((COMPONENT, 'S11' ), ), ),            ('U',NODAL,((COMPONENT, 'U1'),)),) variable=
+            (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises' ), ),            {'shell < STEEL > < 3
+            section points >':'SNEG,                                    (fraction = -1.0)', }), )`
+        elementSets
+            A sequence of Strings specifying element sets or a String specifying a single element
+            set.
+        elementLabels
+            A sequence of expressions specifying element labels per part instance in the model. Each
+            part instance element expression is a sequence of a String specifying the part instance
+            name and a sequence of element expressions; for example,
+            `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The element
+            expressions can be any of the following:An Int specifying a single element label; for
+            example, `1`.A String specifying a single element label; for example, `'7'`.A String
+            specifying a sequence of element labels; for example, `'3:5'` and `'3:15:3'`.
+        nodeSets
+            A sequence of Strings specifying node sets or a String specifying a single node set.
+        nodeLabels
+            A sequence of expressions specifying node labels per part instance in the model. Each
+            part instance node expression is a sequence of a String specifying the part instance
+            name and a sequence of node expressions; for example,
+            `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The node expressions
+            can be any of the following:An Int specifying a single node label; for example, `1`.A
+            String specifying a single node label; for example, `'7'`.A String specifying a sequence
+            of node labels; for example, `'3:5'` and `'3:15:3'`.
+        numericForm
+            A SymbolicConstant specifying the numeric form in which to display results that contain
+            complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
+            and COMPLEX_VAL_AT_ANGLE. The default value is REAL.
+        complexAngle
+            A Float specifying the angle (in degrees) at which to display results that contain
+            complex numbers when **numericForm** = COMPLEX_VAL_AT_ANGLE. The default value is 0.
+
+        Returns
+        -------
+        typing.List[XYData]
+            A list of XYData objects.
+
+        Raises
+        ------
+        InvalidNameError
+        RangeError
+        """
+        self.xyDataObjects["name"] = xyData = XYData(())
+        return [xyData]
+
+    @abaqus_method_doc
     def XYDataFromPath(
         self,
         path: Path,
