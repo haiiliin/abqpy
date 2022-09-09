@@ -85,7 +85,7 @@ class Session(AbaqusSession):
             filePath = filePath.replace(".ipynb", ".py")
         except:
             pass
-        os.system(f"{abaqus} cae database={odbPath} script={filePath}")
+        os.system(f"{abaqus} cae script={filePath}")
 
         self.exit()
         return odb
