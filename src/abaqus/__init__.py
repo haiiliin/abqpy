@@ -11,7 +11,7 @@ from .UtilityAndView.User import *
 from .UtilityAndView.SymbolicConstant import SymbolicConstant
 
 try:
-    from ._version import _default_version
+    from ._version import version as _default_version
 except ImportError:
     _default_version = '2022.0.0-unknown'
 
