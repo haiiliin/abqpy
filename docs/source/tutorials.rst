@@ -450,6 +450,7 @@ The whole output script of this example is showed as follows:
 
     # Open output database
     odb = session.openOdb('Job-1.odb')
+    session.viewports['Viewport: 1'].setValues(displayedObject=odb)
 
     # Extract output data
     dataList = session.xyDataListFromField(odb=odb, outputPosition=NODAL, 
