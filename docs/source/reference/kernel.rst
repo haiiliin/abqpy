@@ -11,6 +11,5 @@ Kernel
    kernel/input
    kernel/kernel
    kernel/messaging
-   kernel/table_collection
    kernel/text_representation
    kernel/utility

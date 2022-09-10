@@ -57,14 +57,6 @@ Leaf
 
     .. autoclasstoc::
 
-LeafFromConstraintNames
-~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: abaqus.DisplayGroup.LeafFromConstraintNames.LeafFromConstraintNames
-    :members:
-
-    .. autoclasstoc::
-
 LeafFromDatums
 ~~~~~~~~~~~~~~
 
