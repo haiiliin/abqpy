@@ -428,10 +428,10 @@ IncidentWaveState
 
     .. autoclasstoc::
 
-MainSecondaryAssignment
-~~~~~~~~~~~~~~~~~~~~~~~
+MasterSlaveAssignment
+~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment
+.. autoclass:: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment
     :members:
 
     .. autoclasstoc::
