@@ -453,7 +453,7 @@ IncidentWaveState
     .. autoclasstoc::
 
 MasterSlaveAssignment
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment
     :members:
