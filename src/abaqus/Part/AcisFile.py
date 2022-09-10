@@ -299,6 +299,7 @@ class AcisFile:
     @abaqus_method_doc
     def writeAcisFile(self, fileName: str, version: float = None):
         """This method exports the assembly to a named file in ACIS format.
+        
         Parameters
         ----------
         fileName
