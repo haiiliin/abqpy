@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-07 00:13+0000\n"
+"POT-Creation-Date: 2022-09-10 00:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,37 +89,45 @@ msgid "`abqpy` supports Python 3.7 or a later version. If you are using Python 3
 msgstr ""
 
 #: ../../getting_started.rst:112
-msgid "`abqpy` is uploaded to `PyPI <https://pypi.org/project/abqpy>`_, you can simply install it using pip, since abqpy (from V1.0.15) depends on `ipynbname` and it is not distributed to anaconda, you have to use `pip` to install it manually:"
+msgid "`abqpy` is uploaded to `PyPI <https://pypi.org/project/abqpy>`_, you can simply install it using pip:"
 msgstr ""
 
-#: ../../getting_started.rst:120
+#: ../../getting_started.rst:119
 msgid "`abqpy` is also uploaded to `anaconda <https://anaconda.org/haiiliin/abqpy>`_, you can use `conda` to install it:"
 msgstr ""
 
-#: ../../getting_started.rst:128
+#: ../../getting_started.rst:126
 msgid "You may install the latest development version by cloning the `GitHub repository <https://github.com/haiiliin/abqpy>`_ and use `python` to install from the local directory:"
 msgstr ""
 
-#: ../../getting_started.rst:140
+#: ../../getting_started.rst:137
+msgid "Optional Requirements"
+msgstr ""
+
+#: ../../getting_started.rst:139
+msgid "If you want to use the Jupyter notebook to write your Abaqus/Python scripts, you need to install `ipynbname`:"
+msgstr ""
+
+#: ../../getting_started.rst:147
 msgid "Install A Specific Version"
 msgstr ""
 
-#: ../../getting_started.rst:142
+#: ../../getting_started.rst:149
 msgid "You can specify the version number when installing `abqpy`, for example:"
 msgstr ""
 
-#: ../../getting_started.rst:149
+#: ../../getting_started.rst:156
 msgid "A better way is to use * to match specific version:"
 msgstr ""
 
-#: ../../getting_started.rst:157
+#: ../../getting_started.rst:164
 msgid "Abaqus command"
 msgstr ""
 
-#: ../../getting_started.rst:159
+#: ../../getting_started.rst:166
 msgid "In order to use Abaqus command to execute the Python script and submit the job, you need to tell `abqpy` where the Abaqus command located. Usually, Abaqus command locates in a directory like this:"
 msgstr ""
 
-#: ../../getting_started.rst:166
+#: ../../getting_started.rst:173
 msgid "You can add the directory `C:/SIMULIA/Commands` to the system environment variable `Path`, or you can create a new system variable named `ABAQUS_BAT_PATH`, and set the value to the file path of the Abaqus command, i.e., `C:/SIMULIA/Commands/abaqus.bat`."
 msgstr ""
