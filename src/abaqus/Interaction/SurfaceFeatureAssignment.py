@@ -71,6 +71,7 @@ class SurfaceFeatureAssignment:
         assignments
             A sequence of tuples specifying the surface feature angle assignments. Each tuple
             contains three entries for Abaqus/Standard and four entries for Abaqus/Explicit:
+            
             - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
               feature angle is assigned.
             - A Float or a SymbolicConstant specifying the overriding surface primary feature angle
