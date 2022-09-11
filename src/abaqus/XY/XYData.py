@@ -1,3 +1,4 @@
+from __future__ import annotations
 import typing
 
 from .QuantityType import QuantityType
@@ -199,12 +200,12 @@ class XYData(tuple):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: QuantityType = None, 
-        axis2QuantityType: QuantityType = None, 
+        axis1QuantityType: typing.Optional[QuantityType] = None,
+        axis2QuantityType: typing.Optional[QuantityType] = None,
         xField: int = 1,
         yField: int = 2,
-        skipFrequency: int = None,
-    ):
+        skipFrequency: typing.Optional[int] = None,
+    ) -> XYData:
         """This method creates an XYData object from data in an ASCII file.
 
         .. note:: 
@@ -280,11 +281,11 @@ class XYData(tuple):
         contentDescription: str = "",
         positionDescription: str = "",
         legendLabel: str = "",
-        skipFrequency: int = None,
+        skipFrequency: typing.Optional[int] = None,
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
-        stepTuple: int = None,
-    ):
+        stepTuple: typing.Optional[int] = None,
+    ) -> XYData:
         """This method creates an XYData object by reading history data from an Odb object.
 
         .. note:: 
@@ -352,15 +353,15 @@ class XYData(tuple):
         self,
         odb: Odb,
         outputPosition: SymbolicConstant,
-        variable: typing.Tuple[tuple, ...],
+        variable: typing.Tuple[typing.Tuple[str, SymbolicConstant, typing.Tuple[SymbolicConstant, str]]],
         elementSets: tuple = (),
         elementLabels: tuple = (),
         nodeSets: tuple = (),
         nodeLabels: tuple = (),
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
-        operator: SymbolicConstant = None,
-    ) -> typing.List["XYData"]:
+        operator: typing.Optional[SymbolicConstant] = None,
+    ) -> typing.List[XYData]:
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
         .. note:: 
@@ -463,7 +464,7 @@ class XYData(tuple):
         comp1: Boolean = OFF,
         comp2: Boolean = OFF,
         comp3: Boolean = OFF,
-    ):
+    ) -> typing.List[XYData]:
         """This method creates a list of XYData objects by computing free body data from an Odb
         object.
 
@@ -523,7 +524,7 @@ class XYData(tuple):
         nodeLabels: tuple = (),
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
-    ):
+    ) -> typing.List[XYData]:
         """This method creates a list of XYData objects by reading through the thickness field data
         from an Odb object.
 
@@ -615,15 +616,15 @@ class XYData(tuple):
         viewport: str = "",
         removeDuplicateXYPairs: Boolean = True,
         includeAllElements: Boolean = False,
-        step: int = None,
-        frame: int = None,
-        variable: SymbolicConstant = None,
-        deformedMag: float = None,
+        step: typing.Optional[int] = None,
+        frame: typing.Optional[int] = None,
+        variable: typing.Optional[SymbolicConstant] = None,
+        deformedMag: typing.Optional[float] = None,
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
         projectOntoMesh: Boolean = False,
         projectionTolerance: float = 0,
-    ):
+    ) -> XYData:
         """This method creates an XYData object from path information.
 
         .. note:: 
