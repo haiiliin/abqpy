@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 00:16+0000\n"
+"POT-Creation-Date: 2022-09-11 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -332,6 +332,7 @@ msgstr ""
 #: abaqus.Part.AcisFile.AcisFile.openEnf abaqus.Part.AcisFile.AcisFile.openIges
 #: abaqus.Part.AcisFile.AcisFile.openParasolid
 #: abaqus.Part.AcisFile.AcisFile.openStep abaqus.Part.AcisFile.AcisFile.openVda
+#: abaqus.Part.AcisFile.AcisFile.writeAcisFile
 #: abaqus.Part.AcisMdb.AcisMdb.openAcis abaqus.Part.AcisMdb.AcisMdb.openCatia
 #: abaqus.Part.AcisMdb.AcisMdb.openEnf abaqus.Part.AcisMdb.AcisMdb.openIges
 #: abaqus.Part.AcisMdb.AcisMdb.openParasolid
@@ -1440,6 +1441,7 @@ msgstr ""
 #: abaqus.Part.AcisFile.AcisFile.openParasolid:18
 #: abaqus.Part.AcisFile.AcisFile.openStep:18
 #: abaqus.Part.AcisFile.AcisFile.openVda:18
+#: abaqus.Part.AcisFile.AcisFile.writeAcisFile:15
 #: abaqus.Part.AcisMdb.AcisMdb.openAcis:18
 #: abaqus.Part.AcisMdb.AcisMdb.openCatia:18
 #: abaqus.Part.AcisMdb.AcisMdb.openEnf:20
@@ -3466,7 +3468,7 @@ msgid ""
 "#simaker-partwriteacisfilepyc>`__."
 msgstr ""
 
-#: abaqus.Part.AcisFile.AcisFile.writeAcisFile:8
+#: abaqus.Part.AcisFile.AcisFile.writeAcisFile:10
 #: abaqus.Part.PartBase.PartBase.writeAcisFile:10 of
 msgid ""
 "A String specifying the name of the file to which to write. The file "
@@ -3474,16 +3476,17 @@ msgid ""
 "written. Use the file extension .asat for the assembly format."
 msgstr ""
 
-#: abaqus.Part.AcisFile.AcisFile.writeAcisFile:12
+#: abaqus.Part.AcisFile.AcisFile.writeAcisFile:14
 #: abaqus.Part.PartBase.PartBase.writeAcisFile:14 of
 msgid "Add description for thr file name's extension."
 msgstr ""
 
+#: abaqus.Part.AcisFile.AcisFile.writeAcisFile:32
 #: abaqus.Part.PartBase.PartBase.writeAcisFile:23 of
 msgid "**version**"
 msgstr ""
 
-#: abaqus.Part.AcisFile.AcisFile.writeAcisFile:15
+#: abaqus.Part.AcisFile.AcisFile.writeAcisFile:18
 #: abaqus.Part.PartBase.PartBase.writeAcisFile:18 of
 msgid ""
 "A Float specifying the ACIS version. For example, the Float 12.0 "
@@ -21394,15 +21397,9 @@ msgid ""
 "\\(fileName\\[\\, version\\]\\)"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
-msgid ""
-"This method exports the assembly to a named file in ACIS format. .. "
-"note::     Check `AcisFile.writeAcisFile on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-acisfilepyc.htm?contextscope=all"
-"#simaker-acisfilewriteacisfilepyc>`__. Parameters ---------- fileName"
-"     A String specifying the name of the file to which to write. The file"
-" name's extension is     used to determine whether a part or assembly is "
-"written. Use the file extension .asat     for the assembly format."
+#: ../../None:10:<autosummary>:1 abaqus.Part.AcisFile.AcisFile.writeAcisFile:2
+#: of
+msgid "This method exports the assembly to a named file in ACIS format."
 msgstr ""
 
 #: abaqus.Part.AcisFile.AcisFile.openAcis:2
@@ -21797,16 +21794,11 @@ msgstr ""
 msgid "The data in the VDA-FS file are corrupted."
 msgstr ""
 
-#: abaqus.Part.AcisFile.AcisFile.writeAcisFile:2 of
-msgid "This method exports the assembly to a named file in ACIS format. .. note::"
-msgstr ""
-
-#: abaqus.Part.AcisFile.AcisFile.writeAcisFile:12 of
-msgid "fileName"
-msgstr ""
-
-#: abaqus.Part.AcisFile.AcisFile.writeAcisFile:30 of
-msgid "version"
+#: abaqus.Part.AcisFile.AcisFile.writeAcisFile:5 of
+msgid ""
+"Check `AcisFile.writeAcisFile on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-acisfilepyc.htm?contextscope=all"
+"#simaker-acisfilewriteacisfilepyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/part.rst:82
@@ -25818,5 +25810,33 @@ msgstr ""
 #~ msgid ""
 #~ "Check `PartFeature on help.3ds.com/2018 "
 #~ "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partfeaturepyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method exports the assembly to "
+#~ "a named file in ACIS format. .."
+#~ " note::     Check `AcisFile.writeAcisFile on "
+#~ "help.3ds.com/2018 "
+#~ "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-acisfilepyc.htm?contextscope=all"
+#~ "#simaker-acisfilewriteacisfilepyc>`__. Parameters "
+#~ "---------- fileName     A String specifying"
+#~ " the name of the file to which"
+#~ " to write. The file name's extension"
+#~ " is     used to determine whether a"
+#~ " part or assembly is written. Use "
+#~ "the file extension .asat     for the "
+#~ "assembly format."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method exports the assembly to "
+#~ "a named file in ACIS format. .."
+#~ " note::"
+#~ msgstr ""
+
+#~ msgid "fileName"
+#~ msgstr ""
+
+#~ msgid "version"
 #~ msgstr ""
 

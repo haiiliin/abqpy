@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2018.3.0\n"
+"Project-Id-Version: abqpy 2018.3.1.dev8+g91931b97\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-10 00:15+0000\n"
+"POT-Creation-Date: 2022-09-11 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -363,6 +363,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openParasolid:0
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openStep:0
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openVda:0
+#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.writeAcisFile:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openAcis:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openCatia:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openEnf:0
@@ -1837,6 +1838,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openParasolid:18
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openStep:18
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openVda:18
+#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.writeAcisFile:15
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openAcis:18
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openCatia:18
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openEnf:20
@@ -3730,24 +3732,25 @@ msgstr ""
 msgid "Check `Part.writeAcisFile on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partwriteacisfilepyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.writeAcisFile:8
+#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.writeAcisFile:10
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.PartBase.PartBase.writeAcisFile:10
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.writeAcisFile:10
 msgid "A String specifying the name of the file to which to write. The file name's extension is used to determine whether a part or assembly is written. Use the file extension .asat for the assembly format."
 msgstr ""
 
-#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.writeAcisFile:12
+#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.writeAcisFile:14
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.PartBase.PartBase.writeAcisFile:14
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.writeAcisFile:14
 msgid "Add description for thr file name's extension."
 msgstr ""
 
+#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.writeAcisFile:32
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.PartBase.PartBase.writeAcisFile:23
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.writeAcisFile:23
 msgid "**version**"
 msgstr ""
 
-#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.writeAcisFile:15
+#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.writeAcisFile:18
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.PartBase.PartBase.writeAcisFile:18
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.writeAcisFile:18
 msgid "A Float specifying the ACIS version. For example, the Float 12.0 corresponds to ACIS Version 12.0. The default value is the current version of ACIS."
@@ -17624,8 +17627,9 @@ msgstr ""
 msgid ":py:obj:`writeAcisFile <abaqus.Part.AcisFile.AcisFile.writeAcisFile>`\\ \\(fileName\\[\\, version\\]\\)"
 msgstr ""
 
+#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.writeAcisFile:2
 #: ../../None:10:<autosummary>:1
-msgid "This method exports the assembly to a named file in ACIS format. .. note::     Check `AcisFile.writeAcisFile on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-acisfilepyc.htm?contextscope=all#simaker-acisfilewriteacisfilepyc>`__. Parameters ---------- fileName     A String specifying the name of the file to which to write. The file name's extension is     used to determine whether a part or assembly is written. Use the file extension .asat     for the assembly format."
+msgid "This method exports the assembly to a named file in ACIS format."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openAcis:2
@@ -17929,16 +17933,8 @@ msgstr ""
 msgid "The data in the VDA-FS file are corrupted."
 msgstr ""
 
-#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.writeAcisFile:2
-msgid "This method exports the assembly to a named file in ACIS format. .. note::"
-msgstr ""
-
-#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.writeAcisFile:12
-msgid "fileName"
-msgstr ""
-
-#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.writeAcisFile:30
-msgid "version"
+#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.writeAcisFile:5
+msgid "Check `AcisFile.writeAcisFile on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-acisfilepyc.htm?contextscope=all#simaker-acisfilewriteacisfilepyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/part.rst:82

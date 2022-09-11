@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2018.3.0\n"
+"Project-Id-Version: abqpy 2018.3.1.dev8+g91931b97\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-10 00:15+0000\n"
+"POT-Creation-Date: 2022-09-11 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -605,7 +605,6 @@ msgstr ""
 #: ../../../../src/abaqus/DisplayGroup/DisplayGroupInstance.py:docstring of abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance:0
 #: ../../../../src/abaqus/DisplayGroup/DisplayGroupInstanceRepository.py:docstring of abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository:0
 #: ../../../../src/abaqus/DisplayGroup/DisplayGroupSession.py:docstring of abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession:0
-#: ../../../../src/abaqus/DisplayGroup/Leaf.py:docstring of abaqus.DisplayGroup.Leaf.Leaf:0
 #: ../../../../src/abaqus/DisplayGroup/LeafFromDatums.py:docstring of abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums:0
 #: ../../../../src/abaqus/DisplayGroup/LeafFromDisplayGroup.py:docstring of abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup:0
 #: ../../../../src/abaqus/DisplayGroup/LeafFromElementLabels.py:docstring of abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels:0
@@ -1178,14 +1177,6 @@ msgstr ""
 msgid "Check `Leaf on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leafpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.DisplayGroup.Leaf.Leaf.__init__>`\\ \\(leafType\\)"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid "This method creates a Leaf object."
-msgstr ""
-
 #: ../../docstring of abaqus.DisplayGroup.Leaf.Leaf.leafType:2
 #: ../../docstring of abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums.leafType:2
 #: ../../docstring of abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup.leafType:2
@@ -1223,10 +1214,6 @@ msgid "A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LE
 msgstr ""
 
 #: ../../reference/session/display.rst:61
-msgid "LeafFromConstraintNames"
-msgstr ""
-
-#: ../../reference/session/display.rst:69
 msgid "LeafFromDatums"
 msgstr ""
 
@@ -1255,7 +1242,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of datum objects."
 msgstr ""
 
-#: ../../reference/session/display.rst:77
+#: ../../reference/session/display.rst:69
 msgid "LeafFromDisplayGroup"
 msgstr ""
 
@@ -1283,7 +1270,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray` object."
 msgstr ""
 
-#: ../../reference/session/display.rst:85
+#: ../../reference/session/display.rst:77
 msgid "LeafFromElementLabels"
 msgstr ""
 
@@ -1315,7 +1302,7 @@ msgstr ""
 msgid "A String specifying the name of the part instance to which **elementLabels** refers."
 msgstr ""
 
-#: ../../reference/session/display.rst:93
+#: ../../reference/session/display.rst:85
 msgid "LeafFromElementSets"
 msgstr ""
 
@@ -1343,7 +1330,7 @@ msgstr ""
 msgid "A sequence of Strings specifying element sets or a String specifying a single element set."
 msgstr ""
 
-#: ../../reference/session/display.rst:101
+#: ../../reference/session/display.rst:93
 msgid "LeafFromElementVarRange"
 msgstr ""
 
@@ -1409,7 +1396,7 @@ msgstr ""
 msgid "A Float specifying the minimum value for the variable range. The default value is −3.40282346639E38."
 msgstr ""
 
-#: ../../reference/session/display.rst:109
+#: ../../reference/session/display.rst:101
 msgid "LeafFromGeometry"
 msgstr ""
 
@@ -1433,7 +1420,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of edge, face and cell geometry objects."
 msgstr ""
 
-#: ../../reference/session/display.rst:117
+#: ../../reference/session/display.rst:109
 msgid "LeafFromInstance"
 msgstr ""
 
@@ -1457,7 +1444,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of part instance objects."
 msgstr ""
 
-#: ../../reference/session/display.rst:125
+#: ../../reference/session/display.rst:117
 msgid "LeafFromInstanceElementLabels"
 msgstr ""
 
@@ -1481,7 +1468,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of Strings specifying the element labels."
 msgstr ""
 
-#: ../../reference/session/display.rst:133
+#: ../../reference/session/display.rst:125
 msgid "LeafFromInstanceNodeLabels"
 msgstr ""
 
@@ -1505,7 +1492,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of Strings specifying the node labels."
 msgstr ""
 
-#: ../../reference/session/display.rst:141
+#: ../../reference/session/display.rst:133
 msgid "LeafFromMeshElementLabels"
 msgstr ""
 
@@ -1529,7 +1516,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of mesh element objects."
 msgstr ""
 
-#: ../../reference/session/display.rst:149
+#: ../../reference/session/display.rst:141
 msgid "LeafFromMeshNodeLabels"
 msgstr ""
 
@@ -1553,7 +1540,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of mesh node objects."
 msgstr ""
 
-#: ../../reference/session/display.rst:157
+#: ../../reference/session/display.rst:149
 msgid "LeafFromMeshSurfaceSets"
 msgstr ""
 
@@ -1577,7 +1564,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of surface sets."
 msgstr ""
 
-#: ../../reference/session/display.rst:165
+#: ../../reference/session/display.rst:157
 msgid "LeafFromModelElemLabels"
 msgstr ""
 
@@ -1605,7 +1592,7 @@ msgstr ""
 msgid "A sequence of Strings specifying expressions that denote element labels per part instance in the model. Each part instance element expression is a sequence of a String specifying the part instance name and a sequence of element expressions; for example, `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The element expressions can be any of the following:An Int specifying a single element label; for example, `1`.A String specifying a single element label; for example, `'7'`.A String specifying a sequence of element labels; for example, `'3:5'` and `'3:15:3'`."
 msgstr ""
 
-#: ../../reference/session/display.rst:173
+#: ../../reference/session/display.rst:165
 msgid "LeafFromModelNodeLabels"
 msgstr ""
 
@@ -1633,7 +1620,7 @@ msgstr ""
 msgid "A sequence of Strings specifying expressions that denote node labels per part instance in the model. Each part instance node expression is a sequence of a String specifying the part instance name and a sequence of node expressions; for example, `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The node expressions can be any of the following:An Int specifying a single node label; for example, `1`.A String specifying a single node label; for example, `'7'`.A String specifying a sequence of node labels; for example, `'3:5'` and `'3:15:3'`."
 msgstr ""
 
-#: ../../reference/session/display.rst:181
+#: ../../reference/session/display.rst:173
 msgid "LeafFromNodeLabels"
 msgstr ""
 
@@ -1665,7 +1652,7 @@ msgstr ""
 msgid "A String specifying the name of the part instance to which **nodeLabels** refers."
 msgstr ""
 
-#: ../../reference/session/display.rst:189
+#: ../../reference/session/display.rst:181
 msgid "LeafFromNodeSets"
 msgstr ""
 
@@ -1693,7 +1680,7 @@ msgstr ""
 msgid "A sequence of Strings specifying node sets or a String specifying a single node set."
 msgstr ""
 
-#: ../../reference/session/display.rst:197
+#: ../../reference/session/display.rst:189
 msgid "LeafFromNodeVarRange"
 msgstr ""
 
@@ -1729,7 +1716,7 @@ msgstr ""
 msgid "This method creates a Leaf object from nodes with values lying in a variable range."
 msgstr ""
 
-#: ../../reference/session/display.rst:205
+#: ../../reference/session/display.rst:197
 msgid "LeafFromOdbEdgePick"
 msgstr ""
 
@@ -1753,7 +1740,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a tuple containing machine readable, compact strings defining the edges picked for each part instance."
 msgstr ""
 
-#: ../../reference/session/display.rst:213
+#: ../../reference/session/display.rst:205
 msgid "LeafFromOdbElementLayups"
 msgstr ""
 
@@ -1777,7 +1764,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of Strings specifying layup names."
 msgstr ""
 
-#: ../../reference/session/display.rst:221
+#: ../../reference/session/display.rst:213
 msgid "LeafFromOdbElementMaterials"
 msgstr ""
 
@@ -1801,7 +1788,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of Strings specifying material names."
 msgstr ""
 
-#: ../../reference/session/display.rst:229
+#: ../../reference/session/display.rst:221
 msgid "LeafFromOdbElementPick"
 msgstr ""
 
@@ -1825,7 +1812,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a tuple containing machine readable, compact strings defining the elements picked for each part instance."
 msgstr ""
 
-#: ../../reference/session/display.rst:237
+#: ../../reference/session/display.rst:229
 msgid "LeafFromOdbElementPlies"
 msgstr ""
 
@@ -1849,7 +1836,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of Strings specifying ply names."
 msgstr ""
 
-#: ../../reference/session/display.rst:245
+#: ../../reference/session/display.rst:237
 msgid "LeafFromOdbElementSections"
 msgstr ""
 
@@ -1873,7 +1860,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of Strings specifying section names."
 msgstr ""
 
-#: ../../reference/session/display.rst:253
+#: ../../reference/session/display.rst:245
 msgid "LeafFromOdbElementTypes"
 msgstr ""
 
@@ -1897,7 +1884,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of Strings specifying element names."
 msgstr ""
 
-#: ../../reference/session/display.rst:261
+#: ../../reference/session/display.rst:253
 msgid "LeafFromOdbNodePick"
 msgstr ""
 
@@ -1921,7 +1908,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a tuple containing machine readable, compact strings defining the nodes picked for each part instance."
 msgstr ""
 
-#: ../../reference/session/display.rst:269
+#: ../../reference/session/display.rst:261
 msgid "LeafFromPartElementLabels"
 msgstr ""
 
@@ -1945,7 +1932,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of Strings specifying element labels."
 msgstr ""
 
-#: ../../reference/session/display.rst:277
+#: ../../reference/session/display.rst:269
 msgid "LeafFromPartInstance"
 msgstr ""
 
@@ -1973,7 +1960,7 @@ msgstr ""
 msgid "A sequence of Strings specifying the names of the part instances."
 msgstr ""
 
-#: ../../reference/session/display.rst:285
+#: ../../reference/session/display.rst:277
 msgid "LeafFromPartNodeLabels"
 msgstr ""
 
@@ -1997,7 +1984,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of Strings specifying node labels."
 msgstr ""
 
-#: ../../reference/session/display.rst:293
+#: ../../reference/session/display.rst:285
 msgid "LeafFromReferencePoint"
 msgstr ""
 
@@ -2021,7 +2008,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of ReferencePoint objects."
 msgstr ""
 
-#: ../../reference/session/display.rst:301
+#: ../../reference/session/display.rst:293
 msgid "LeafFromSets"
 msgstr ""
 
@@ -2045,7 +2032,7 @@ msgstr ""
 msgid "This method creates a Leaf object from a sequence of Set objects."
 msgstr ""
 
-#: ../../reference/session/display.rst:309
+#: ../../reference/session/display.rst:301
 msgid "LeafFromSurfaceSets"
 msgstr ""
 
@@ -2069,7 +2056,7 @@ msgstr ""
 msgid "A sequence of Strings specifying surface sets, or a String specifying a single surface set."
 msgstr ""
 
-#: ../../reference/session/display.rst:317
+#: ../../reference/session/display.rst:309
 msgid "LeafFromSurfaceVarRange"
 msgstr ""
 
