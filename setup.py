@@ -28,7 +28,7 @@ setuptools.setup(
         'Anaconda': 'https://anaconda.org/haiiliin/abqpy',
         'Read the Docs': 'https://readthedocs.org/projects/abqpy',
     },
-    use_scm_version = {
+    use_scm_version={
         "root": ".",
         "relative_to": __file__,
         "local_scheme": "node-and-date",
@@ -46,4 +46,5 @@ setuptools.setup(
                 'mesh', 'meshEdit', 'methodCallback', 'monitorManager', 'odbAccess', 'odbConnectorBehavior',
                 'odbMaterial', 'odbSection', 'part', 'redentABQ', 'section', 'symbolicConstants', 'textRepr',
                 'upgradeScript', 'visualization'],
+    scripts=['bin/abqpy'],
 )
