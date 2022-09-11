@@ -1,3 +1,4 @@
+from __future__ import annotations
 import typing
 
 from .AreaStyle import AreaStyle
@@ -106,7 +107,7 @@ class XYSession(XYSessionBase):
 
     @staticmethod
     @abaqus_method_doc
-    def QuantityType(label: str = "", type: SymbolicConstant = None) -> QuantityType:
+    def QuantityType(label: str = "", type: typing.Optional[SymbolicConstant] = None) -> QuantityType:
         """This method creates a QuantityType object.
 
         .. note:: 
@@ -320,8 +321,8 @@ class XYSession(XYSessionBase):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: QuantityType = None,
-        axis2QuantityType: QuantityType = None,
+        axis1QuantityType: typing.Optional[QuantityType] = None,
+        axis2QuantityType: typing.Optional[QuantityType] = None,
     ) -> XYData:
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
@@ -416,12 +417,12 @@ class XYSession(XYSessionBase):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: QuantityType = None,
-        axis2QuantityType: QuantityType = None,
+        axis1QuantityType: typing.Optional[QuantityType] = None,
+        axis2QuantityType: typing.Optional[QuantityType] = None,
         xField: int = 1,
         yField: int = 2,
-        skipFrequency: int = None,
-    ):
+        skipFrequency: typing.Optional[int] = None,
+    ) -> XYData:
         """This method creates an XYData object from data in an ASCII file.
 
         .. note:: 
@@ -458,11 +459,11 @@ class XYSession(XYSessionBase):
             A String specifying the label for the Y-values. This value may be overridden if the
             **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         axis1QuantityType
-            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
-            values.
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+            the X -axis1- values.
         axis2QuantityType
-            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
-            values.
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+            the Y -axis2- values.
         xField
             An Int specifying the field from which the **X**-data will be read. Fields are delimited
             by spaces, tabs, or commas. The default value is 1.
@@ -477,7 +478,12 @@ class XYSession(XYSessionBase):
         Returns
         -------
         XYData
-            An :py:class:`~abaqus.XY.XYData.XYData` object
+            An :py:class:`~abaqus.XY.XYData.XYData` object.
+
+        Raises
+        ------
+        InvalidNameError
+        RangeError
         """
         self.xyDataObjects[name] = xyData = XYData(())
         return xyData
@@ -493,11 +499,11 @@ class XYSession(XYSessionBase):
         contentDescription: str = "",
         positionDescription: str = "",
         legendLabel: str = "",
-        skipFrequency: int = None,
+        skipFrequency: typing.Optional[int] = None,
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
-        stepTuple: int = None,
-    ):
+        stepTuple: typing.Optional[int] = None,
+    ) -> XYData:
         """This method creates an XYData object by reading history data from an Odb object.
 
         .. note:: 
@@ -551,7 +557,12 @@ class XYSession(XYSessionBase):
         Returns
         -------
         XYData
-            An :py:class:`~abaqus.XY.XYData.XYData` object
+            An :py:class:`~abaqus.XY.XYData.XYData` object.
+
+        Raises
+        ------
+        InvalidNameError
+        RangeError
         """
         self.xyDataObjects[name] = xyData = XYData(())
         return xyData
@@ -568,7 +579,7 @@ class XYSession(XYSessionBase):
         nodeLabels: tuple = (),
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
-        operator: SymbolicConstant = None,
+        operator: typing.Optional[SymbolicConstant] = None,
     ) -> typing.List["XYData"]:
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
@@ -589,7 +600,7 @@ class XYSession(XYSessionBase):
             values are ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, and NODAL.
         variable
             A tuple of tuples containing the descriptions of variables for which to extract data
-            from the field. Each tuple specifies the following:Variable label: A String specifying
+            from the field. Each tuple specifies the following: Variable label: A String specifying
             the variable; for example, 'U'.Variable output position: A SymbolicConstant specifying
             the output position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL,
             GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL,
@@ -602,14 +613,15 @@ class XYSession(XYSessionBase):
             'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The
             dictionary contains pairs of the following:A String specifying the category selection
             label.A String specifying the section point label. For example,
-            
+
             .. code-block:: python
-            
-                variable=('S',INTEGRATION_POINT, ((COMPONENT, 'S22' ), ), )
-                variable=(('S',INTEGRATION_POINT, ((COMPONENT, 'S11' ), ), ), 
-                          ('U',NODAL,((COMPONENT, 'U1'),)),)
-                variable=(('S', INTEGRATION_POINT, ((INVARIANT, 'Mises' ), ), 
-                          {'shell < STEEL > < 3 section points >':'SNEG, (fraction = -1.0)', }), )  
+
+                variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
+                variable = (('S', INTEGRATION_POINT, ((COMPONENT, 'S11'), ), ),
+                            ('U', NODAL,((COMPONENT, 'U1'), )), )
+                variable = (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises'), ),
+                             {'shell < STEEL > < 3 section points >': 'SNEG, (fraction = -1.0)', }), )
+
         elementSets
             A sequence of Strings specifying element sets or a String specifying a single element
             set.
@@ -651,7 +663,12 @@ class XYSession(XYSessionBase):
         Returns
         -------
         typing.List[XYData]
-            A list of XYData objects
+            A list of XYData objects.
+
+        Raises
+        ------
+        InvalidNameError
+        RangeError
         """
         self.xyDataObjects["name"] = xyData = XYData(())
         return [xyData]
@@ -667,7 +684,7 @@ class XYSession(XYSessionBase):
         comp1: Boolean = OFF,
         comp2: Boolean = OFF,
         comp3: Boolean = OFF,
-    ):
+    ) -> typing.List[XYData]:
         """This method creates a list of XYData objects by computing free body data from an Odb
         object.
 
@@ -706,7 +723,108 @@ class XYSession(XYSessionBase):
         Returns
         -------
         typing.List[XYData]
-            A list of XYData objects
+            A list of XYData objects.
+
+        Raises
+        ------
+        InvalidNameError
+        RangeError
+        """
+        self.xyDataObjects["name"] = xyData = XYData(())
+        return [xyData]
+
+    @abaqus_method_doc
+    def XYDataFromShellThickness(
+        self,
+        odb: Odb,
+        outputPosition: SymbolicConstant,
+        variable: SymbolicConstant,
+        elementSets: tuple = (),
+        elementLabels: tuple = (),
+        nodeSets: tuple = (),
+        nodeLabels: tuple = (),
+        numericForm: SymbolicConstant = REAL,
+        complexAngle: float = 0,
+    ) -> typing.List[XYData]:
+        """This method creates a list of XYData objects by reading through the thickness field data
+        from an Odb object.
+
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                session.XYDataFromShellThickness
+                xyPlot.XYDataFromShellThickness
+
+        Parameters
+        ----------
+        odb
+            An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read.
+        outputPosition
+            A SymbolicConstant specifying the position from which output will be read. Possible
+            values are ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, and NODAL.
+        variable
+            A tuple of tuples containing the descriptions of variables for which to extract data
+            from the field. Each tuple specifies the following:Variable label: A String specifying
+            the variable; for example, 'U'.Variable output position: A SymbolicConstant specifying
+            the output position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL,
+            GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL,
+            WHOLE_PART_INSTANCE, and WHOLE_REGION.Refinement: A tuple specifying the refinement. If
+            the refinement tuple is omitted, data are written for all components and invariants (if
+            applicable). This element is required if the location dictionary (the following element
+            in the tuple) is included. The refinement tuple contains the following:Type: A
+            SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and
+            COMPONENT.Label: A String specifying the invariant or the component; for example,
+            'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The
+            dictionary contains pairs of the following:A String specifying the category selection
+            label.A String specifying the section point label. For example,
+
+            .. code-block:: python
+
+                variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
+                variable = (('S', INTEGRATION_POINT, ((COMPONENT, 'S11'), ), ),
+                            ('U', NODAL,((COMPONENT, 'U1'), )), )
+                variable = (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises'), ),
+                             {'shell < STEEL > < 3 section points >': 'SNEG, (fraction = -1.0)', }), )
+        elementSets
+            A sequence of Strings specifying element sets or a String specifying a single element
+            set.
+        elementLabels
+            A sequence of expressions specifying element labels per part instance in the model. Each
+            part instance element expression is a sequence of a String specifying the part instance
+            name and a sequence of element expressions; for example,
+            `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The element
+            expressions can be any of the following:An Int specifying a single element label; for
+            example, `1`.A String specifying a single element label; for example, `'7'`.A String
+            specifying a sequence of element labels; for example, `'3:5'` and `'3:15:3'`.
+        nodeSets
+            A sequence of Strings specifying node sets or a String specifying a single node set.
+        nodeLabels
+            A sequence of expressions specifying node labels per part instance in the model. Each
+            part instance node expression is a sequence of a String specifying the part instance
+            name and a sequence of node expressions; for example,
+            `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The node expressions
+            can be any of the following:An Int specifying a single node label; for example, `1`.A
+            String specifying a single node label; for example, `'7'`.A String specifying a sequence
+            of node labels; for example, `'3:5'` and `'3:15:3'`.
+        numericForm
+            A SymbolicConstant specifying the numeric form in which to display results that contain
+            complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
+            and COMPLEX_VAL_AT_ANGLE. The default value is REAL.
+        complexAngle
+            A Float specifying the angle (in degrees) at which to display results that contain
+            complex numbers when **numericForm** = COMPLEX_VAL_AT_ANGLE. The default value is 0.
+
+        Returns
+        -------
+        typing.List[XYData]
+            A list of XYData objects.
+
+        Raises
+        ------
+        InvalidNameError
+        RangeError
         """
         self.xyDataObjects["name"] = xyData = XYData(())
         return [xyData]
@@ -724,15 +842,15 @@ class XYSession(XYSessionBase):
         viewport: str = "",
         removeDuplicateXYPairs: Boolean = True,
         includeAllElements: Boolean = False,
-        step: int = None,
-        frame: int = None,
-        variable: SymbolicConstant = None,
-        deformedMag: float = None,
+        step: typing.Optional[int] = None,
+        frame: typing.Optional[int] = None,
+        variable: typing.Optional[SymbolicConstant] = None,
+        deformedMag: typing.Optional[float] = None,
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
         projectOntoMesh: Boolean = False,
         projectionTolerance: float = 0,
-    ):
+    ) -> XYData:
         """This method creates an XYData object from path information.
 
         .. note:: 
@@ -771,9 +889,15 @@ class XYSession(XYSessionBase):
         removeDuplicateXYPairs
             A Boolean specifying whether to remove duplicate XY values from the final result. The
             default value is True.
+
+            .. versionadded:: 2018
+                The `removeDuplicateXYPairs` argument was added.
         includeAllElements
             A Boolean specifying whether to include elements which do not lie in the direction of
             the path. The default value is False.
+            
+            .. versionadded:: 2018
+                The `includeAllElements` argument was added.
         step
             An Int identifying the step from which to obtain values. The default value is the
             current step.
@@ -796,16 +920,14 @@ class XYSession(XYSessionBase):
             the location. The dictionary contains pairs of the following:A String specifying the
             category selection label.A String specifying the section point label.For
             example,
-            
-            .. autolink-skip:: section
+
             .. code-block:: python
-            
-                variable = ('S',INTEGRATION_POINT, ((COMPONENT, 'S22' ), ), ) 
-                variable = (('S',INTEGRATION_POINT, ((COMPONENT, 'S11' ), ), ),
-                            ('U',NODAL,((COMPONENT, 'U1'),)),) 
-                variable = (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises' ), ),
-                            {'shell < STEEL > < 3 section points >':'SNEG,
-                            (fraction = -1.0)', }), )
+
+                variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
+                variable = (('S', INTEGRATION_POINT, ((COMPONENT, 'S11'), ), ),
+                            ('U', NODAL,((COMPONENT, 'U1'), )), )
+                variable = (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises'), ),
+                             {'shell < STEEL > < 3 section points >': 'SNEG, (fraction = -1.0)', }), )
         deformedMag
             A tuple of three Floats specifying the deformation magnitude in the *X-*, *Y-*, and
             *Z-* planes. The default value is (1, 1, 1).
