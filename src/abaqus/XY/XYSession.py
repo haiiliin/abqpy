@@ -107,11 +107,7 @@ class XYSession(XYSessionBase):
 
     @staticmethod
     @abaqus_method_doc
-<<<<<<< HEAD
     def QuantityType(type: SymbolicConstant, label: str = "") -> QuantityType:
-=======
-    def QuantityType(label: str = "", type: typing.Optional[SymbolicConstant] = None) -> QuantityType:
->>>>>>> 9d44ade (Correct type annotations on module `XYSession.py`)
         """This method creates a QuantityType object.
 
         .. note:: 
