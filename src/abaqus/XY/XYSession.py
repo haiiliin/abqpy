@@ -474,7 +474,7 @@ class XYSession(XYSessionBase):
             by spaces, tabs, or commas. The default value is 2.
         skipFrequency
             An Int specifying how often data rows will be skipped. A **skipFrequency** of 1 means skip
-            every other row. The first row is always read. Possible values are **skipFrequency** ≥≥ 0.
+            every other row. The first row is always read. Possible values are **skipFrequency** ≥ 0.
             The default value is 0 (data are read from every row).
 
         Returns
@@ -545,7 +545,7 @@ class XYSession(XYSessionBase):
         skipFrequency
             An Int specifying how often data frames will be skipped. If **skipFrequency** = 1, Abaqus
             will skip every other frame. The first frame is always read. Possible values are
-            **skipFrequency** ≥≥ 0. The default value is 0 (data are read from every frame).
+            **skipFrequency** ≥ 0. The default value is 0 (data are read from every frame).
         numericForm
             A SymbolicConstant specifying the numeric form in which to display results that contain
             complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
@@ -602,14 +602,14 @@ class XYSession(XYSessionBase):
             values are ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, and NODAL.
         variable
             A tuple of tuples containing the descriptions of variables for which to extract data
-            from the field. Each tuple specifies the following:Variable label: A String specifying
+            from the field. Each tuple specifies the following: Variable label: A String specifying
             the variable; for example, 'U'.Variable output position: A SymbolicConstant specifying
             the output position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL,
             GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL,
             WHOLE_PART_INSTANCE, and WHOLE_REGION.Refinement: A tuple specifying the refinement. If
             the refinement tuple is omitted, data are written for all components and invariants (if
             applicable). This element is required if the location dictionary (the following element
-            in the tuple) is included. The refinement tuple contains the following:Type: A
+            in the tuple) is included. The refinement tuple contains the following Type: A
             SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and
             COMPONENT.Label: A String specifying the invariant or the component; for example,
             'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The
@@ -780,11 +780,15 @@ class XYSession(XYSessionBase):
             COMPONENT.Label: A String specifying the invariant or the component; for example,
             'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The
             dictionary contains pairs of the following:A String specifying the category selection
-            label.A String specifying the section point label.For example,`variable=
-            ('S',INTEGRATION_POINT, ( (COMPONENT, 'S22' ), ), ) variable= (('S',INTEGRATION_POINT,
-            ((COMPONENT, 'S11' ), ), ),            ('U',NODAL,((COMPONENT, 'U1'),)),) variable=
-            (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises' ), ),            {'shell < STEEL > < 3
-            section points >':'SNEG,                                    (fraction = -1.0)', }), )`
+            label.A String specifying the section point label. For example,
+
+            .. code-block:: python
+
+                variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
+                variable = (('S', INTEGRATION_POINT, ((COMPONENT, 'S11'), ), ),
+                            ('U', NODAL,((COMPONENT, 'U1'), )), )
+                variable = (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises'), ),
+                             {'shell < STEEL > < 3 section points >': 'SNEG, (fraction = -1.0)', }), )
         elementSets
             A sequence of Strings specifying element sets or a String specifying a single element
             set.
@@ -893,6 +897,7 @@ class XYSession(XYSessionBase):
         includeAllElements
             A Boolean specifying whether to include elements which do not lie in the direction of
             the path. The default value is False.
+            
             .. versionadded:: 2018
                 The `includeAllElements` argument was added.
         step
@@ -917,16 +922,14 @@ class XYSession(XYSessionBase):
             the location. The dictionary contains pairs of the following:A String specifying the
             category selection label.A String specifying the section point label.For
             example,
-            
-            .. autolink-skip:: section
+
             .. code-block:: python
-            
-                variable = ('S',INTEGRATION_POINT, ((COMPONENT, 'S22' ), ), ) 
-                variable = (('S',INTEGRATION_POINT, ((COMPONENT, 'S11' ), ), ),
-                            ('U',NODAL,((COMPONENT, 'U1'),)),) 
-                variable = (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises' ), ),
-                            {'shell < STEEL > < 3 section points >':'SNEG,
-                            (fraction = -1.0)', }), )
+
+                variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
+                variable = (('S', INTEGRATION_POINT, ((COMPONENT, 'S11'), ), ),
+                            ('U', NODAL,((COMPONENT, 'U1'), )), )
+                variable = (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises'), ),
+                             {'shell < STEEL > < 3 section points >': 'SNEG, (fraction = -1.0)', }), )
         deformedMag
             A tuple of three Floats specifying the deformation magnitude in the *X-*, *Y-*, and
             *Z-* planes. The default value is (1, 1, 1).
