@@ -360,12 +360,7 @@ class XYData(tuple):
         nodeLabels: tuple = (),
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
-<<<<<<< HEAD
-    ) -> typing.List["XYData"]:
-=======
-        operator: typing.Optional[SymbolicConstant] = None,
     ) -> typing.List[XYData]:
->>>>>>> 5181fc3 (Correct type annotations on module `XYData.py`)
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
         .. note:: 
