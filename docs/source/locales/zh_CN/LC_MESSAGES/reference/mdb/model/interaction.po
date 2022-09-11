@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 10:09+0000\n"
+"POT-Creation-Date: 2022-09-11 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,6 +94,7 @@ msgstr ""
 #: abaqus.Interaction.InteractionModel.InteractionModel:5
 #: abaqus.Interaction.InteractionProperty.InteractionProperty:7
 #: abaqus.Interaction.InteractionState.InteractionState:7
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment:7
 #: abaqus.Interaction.ModelChange.ModelChange:7
 #: abaqus.Interaction.NormalBehavior.NormalBehavior:5
 #: abaqus.Interaction.PressurePenetration.PressurePenetration:7
@@ -805,6 +806,7 @@ msgstr ""
 #: abaqus.Interaction.InteractionContactStabilizationModel.InteractionContactStabilizationModel
 #: abaqus.Interaction.InteractionModel.InteractionModel
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment
 #: abaqus.Interaction.ModelChange.ModelChange
 #: abaqus.Interaction.NormalBehavior.NormalBehavior
 #: abaqus.Interaction.PressurePenetration.PressurePenetration
@@ -1521,6 +1523,9 @@ msgstr ""
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidExchangeProperty
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidInflatorProperty
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.IncidentWaveProperty
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.appendInStep
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.changeValuesInStep
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.delete
 #: abaqus.Interaction.ModelChange.ModelChange.setValues
 #: abaqus.Interaction.ModelChange.ModelChange.setValuesInStep
 #: abaqus.Interaction.PressurePenetration.PressurePenetration.setValues
@@ -9658,6 +9663,7 @@ msgstr ""
 #: abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty:14
 #: abaqus.Interaction.IncidentWaveState.IncidentWaveState:16
 #: abaqus.Interaction.InitializationAssignment.InitializationAssignment:14
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment:14
 #: abaqus.Interaction.ModelChange.ModelChange:14
 #: abaqus.Interaction.NormalBehavior.NormalBehavior:23
 #: abaqus.Interaction.PressurePenetration.PressurePenetration:14
@@ -11655,6 +11661,8 @@ msgstr ""
 #: abaqus.Interaction.InitializationAssignment.InitializationAssignment.changeValuesInStep:12
 #: abaqus.Interaction.Interaction.Interaction.deactivate:24
 #: abaqus.Interaction.Interaction.Interaction.reset:24
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.appendInStep:12
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.changeValuesInStep:12
 #: abaqus.Interaction.ModelChange.ModelChange.setValuesInStep:11
 #: abaqus.Interaction.PressurePenetration.PressurePenetration.setValuesInStep:11
 #: abaqus.Interaction.RadiationToAmbient.RadiationToAmbient.setValuesInStep:24
@@ -11688,10 +11696,11 @@ msgstr ""
 
 #: abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment.appendInStep:31
 #: abaqus.Interaction.InitializationAssignment.InitializationAssignment.appendInStep:33
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.appendInStep:36
 #: abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment.appendInStep:32
 #: abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.appendInStep:33
 #: abaqus.Interaction.StabilizationAssignment.StabilizationAssignment.appendInStep:32
-#: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:41
+#: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:42
 #: abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment.appendInStep:34
 #: abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.appendInStep:38
 #: of
@@ -11725,6 +11734,7 @@ msgstr ""
 
 #: abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment.changeValuesInStep:16
 #: abaqus.Interaction.InitializationAssignment.InitializationAssignment.changeValuesInStep:16
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.changeValuesInStep:16
 #: abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment.changeValuesInStep:16
 #: abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.changeValuesInStep:16
 #: abaqus.Interaction.StabilizationAssignment.StabilizationAssignment.changeValuesInStep:16
@@ -11744,6 +11754,7 @@ msgstr ""
 
 #: abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment.changeValuesInStep:33
 #: abaqus.Interaction.InitializationAssignment.InitializationAssignment.changeValuesInStep:33
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.changeValuesInStep:34
 #: abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment.changeValuesInStep:34
 #: abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.changeValuesInStep:35
 #: abaqus.Interaction.StabilizationAssignment.StabilizationAssignment.changeValuesInStep:33
@@ -11772,6 +11783,7 @@ msgstr ""
 #: abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment.delete:11
 #: abaqus.Interaction.InitializationAssignment.InitializationAssignment.delete:25
 #: abaqus.Interaction.Interaction.Interaction.delete:23
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.delete:23
 #: abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment.delete:23
 #: abaqus.Interaction.SmoothingAssignment.SmoothingAssignment.delete:24
 #: abaqus.Interaction.StabilizationAssignment.StabilizationAssignment.delete:25
@@ -19143,7 +19155,150 @@ msgid ""
 msgstr ""
 
 #: ../../reference/mdb/model/interaction.rst:456
-msgid "MainSecondaryAssignment"
+msgid "MasterSlaveAssignment"
+msgstr ""
+
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment:2 of
+msgid ""
+"The MasterSlaveAssignment object stores the master-slave assignment "
+"definition for surfaces in ContactExp and ContactStd objects. The "
+"MasterSlaveAssignment object has no constructor or members."
+msgstr ""
+
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment:16
+#: abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment:16
+#: of
+msgid "CONTACT FORMULATION"
+msgstr ""
+
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment:19 of
+msgid ""
+"Check `MasterSlaveAssignment on help.3ds.com/2019 "
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-masterslaveassignmentpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`changeValuesInStep "
+"<abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.changeValuesInStep>`\\"
+" \\(stepName\\, index\\, value\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.changeValuesInStep:2
+#: of
+msgid ""
+"This method allows modification of master-slave assignments already "
+"defined on surface pairs in a given step."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`appendInStep "
+"<abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.appendInStep>`\\"
+" \\(stepName\\, assignments\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.appendInStep:2
+#: of
+msgid ""
+"This method allows addition of master-slave assignments to new surface "
+"pairs in a given step."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`delete "
+"<abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.delete>`\\"
+" \\(indices\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.delete:2 of
+msgid "The delete method allows you to delete existing master-slave assignments."
+msgstr ""
+
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.appendInStep:6
+#: of
+msgid ""
+"Check `MasterSlaveAssignment.appendInStep on help.3ds.com/2019 "
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-masterslaveassignmentpyc.htm?contextscope=all"
+"#simaker-masterslaveassignmentappendinsteppyc>`__."
+msgstr ""
+
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.appendInStep:11
+#: of
+msgid ""
+"A String specifying the name of the step in which the master-slave "
+"assignments are to be defined."
+msgstr ""
+
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.appendInStep:15
+#: of
+msgid ""
+"A sequence of tuples specifying the master-slave assignments. Each tuple "
+"contains two entries:"
+msgstr ""
+
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.appendInStep:18
+#: of
+msgid ""
+"A region object or the SymbolicConstant GLOBAL specifying the surface to "
+"which the master-slave attribute is assigned."
+msgstr ""
+
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.appendInStep:20
+#: of
+msgid ""
+"A SymbolicConstant specifying the overriding master-slave value to be "
+"used for the first surface. Possible values of the SymbolicConstant are "
+"MAIN, SECONDARY, and BALANCED. The SymbolicConstant BALANCED can be "
+"specified only in an Abaqus/Standard analysis."
+msgstr ""
+
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.changeValuesInStep:6
+#: of
+msgid ""
+"Check `MasterSlaveAssignment.changeValuesInStep on help.3ds.com/2019 "
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-masterslaveassignmentpyc.htm?contextscope=all"
+"#simaker-masterslaveassignmentchangevaluesinsteppyc>`__."
+msgstr ""
+
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.changeValuesInStep:11
+#: of
+msgid ""
+"A String specifying the name of the step in which the master-slave "
+"assignments are to be modified."
+msgstr ""
+
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.changeValuesInStep:15
+#: of
+msgid ""
+"An Int specifying the position of the master-slave assignment whose value"
+" is to be modified."
+msgstr ""
+
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.changeValuesInStep:19
+#: of
+msgid ""
+"A SymbolicConstant specifying the value of the master-slave role to be "
+"assigned to the surface whose index is referenced. Possible values are "
+"MAIN, SECONDARY, and BALANCED. The SymbolicConstant BALANCED can be "
+"specified only in an Abaqus/Standard analysis."
+msgstr ""
+
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.delete:5 of
+msgid ""
+"Check `MasterSlaveAssignment.delete on help.3ds.com/2019 "
+"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-masterslaveassignmentpyc.htm?contextscope=all"
+"#simaker-masterslaveassignmentdeletepyc>`__."
+msgstr ""
+
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment.delete:10 of
+msgid ""
+"A sequence of Ints specifying the index of each master-slave assignment "
+"to delete."
 msgstr ""
 
 #: ../../reference/mdb/model/interaction.rst:464
@@ -20656,11 +20811,6 @@ msgid ""
 "SlidingTransitionAssignment object has no constructor or members."
 msgstr ""
 
-#: abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment:16
-#: of
-msgid "CONTACT FORMULATION"
-msgstr ""
-
 #: abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment:19
 #: of
 msgid ""
@@ -21767,16 +21917,17 @@ msgstr ""
 msgid ""
 "A sequence of tuples specifying the surface feature angle assignments. "
 "Each tuple contains three entries for Abaqus/Standard and four entries "
-"for Abaqus/Explicit: - A region object or the SymbolicConstant GLOBAL "
-"specifying the surface to which the"
+"for Abaqus/Explicit:"
 msgstr ""
 
 #: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:18
 #: of
-msgid "feature angle is assigned."
+msgid ""
+"A region object or the SymbolicConstant GLOBAL specifying the surface to "
+"which the feature angle is assigned."
 msgstr ""
 
-#: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:19
+#: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:20
 #: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep:23
 #: of
 msgid ""
@@ -21787,7 +21938,7 @@ msgid ""
 "used only in the Abaqus/Explicit version of general contact."
 msgstr ""
 
-#: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:23
+#: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:24
 #: of
 msgid ""
 "A Float or a SymbolicConstant specifying the overriding surface secondary"
@@ -21797,7 +21948,7 @@ msgid ""
 "used only in the Abaqus/Explicit version of general contact."
 msgstr ""
 
-#: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:28
+#: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:29
 #: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep:32
 #: of
 msgid "A SymbolicConstant ORIGINAL or CURRENT specifying the configuration."
@@ -24490,5 +24641,21 @@ msgstr ""
 #~ msgid ""
 #~ "Check `XFEMCrackGrowthState on help.3ds.com/2019 "
 #~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xfemcrackgrowthstatepyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid "MainSecondaryAssignment"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of tuples specifying the "
+#~ "surface feature angle assignments. Each "
+#~ "tuple contains three entries for "
+#~ "Abaqus/Standard and four entries for "
+#~ "Abaqus/Explicit: - A region object or"
+#~ " the SymbolicConstant GLOBAL specifying the"
+#~ " surface to which the"
+#~ msgstr ""
+
+#~ msgid "feature angle is assigned."
 #~ msgstr ""
 
