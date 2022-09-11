@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2017.3.0\n"
+"Project-Id-Version: abqpy 2017.3.1.dev8+gfa4a68d0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-10 00:15+0000\n"
+"POT-Creation-Date: 2022-09-11 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -793,14 +793,6 @@ msgid "Object features"
 msgstr ""
 
 #: ../../reference/mdb/model/predefined.rst:18
-msgid "Field"
-msgstr ""
-
-#: ../../reference/mdb/model/predefined.rst:26
-msgid "FieldState"
-msgstr ""
-
-#: ../../reference/mdb/model/predefined.rst:34
 msgid "PredefinedField"
 msgstr ""
 
@@ -940,7 +932,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied. **Region** is ignored if the predefined field has an **instances** member available. **Region** is also ignored if the predefined field has a **distributionType** member available, and **distributionType** = FROM_FILE or FROM_FILE_AND_USER_DEFINED."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:42
+#: ../../reference/mdb/model/predefined.rst:26
 msgid "PredefinedFieldState"
 msgstr ""
 
@@ -1036,7 +1028,7 @@ msgstr ""
 msgid "This member exists in all PredefinedFieldState objects, but different predefined fields use different subsets of the entire list of possible values depending on propagation rules."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:50
+#: ../../reference/mdb/model/predefined.rst:34
 msgid "FluidCavityPressure"
 msgstr ""
 
@@ -1109,7 +1101,7 @@ msgstr ""
 msgid ":py:obj:`delete <abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.delete>`\\ \\(indices\\)"
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:58
+#: ../../reference/mdb/model/predefined.rst:42
 msgid "IMAField"
 msgstr ""
 
@@ -1143,7 +1135,7 @@ msgstr ""
 msgid "A tuple of Strings specifying the name of the discrete fields that contain the volume fraction data. The length of the tuple corresponds to the number of material instance names, as established by the assigned Eulerian section."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:66
+#: ../../reference/mdb/model/predefined.rst:50
 msgid "IMARegion"
 msgstr ""
 
@@ -1171,7 +1163,7 @@ msgstr ""
 msgid "A tuple of Floats specifying the volume fractions, per material instance name. The length of the tuple corresponds to the number of material instance names, as established by the assigned Eulerian section."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:74
+#: ../../reference/mdb/model/predefined.rst:58
 msgid "InitialState"
 msgstr ""
 
@@ -1252,7 +1244,7 @@ msgstr ""
 msgid "Check `InitialState.setValues on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-initialstatepyc.htm?contextscope=all#simaker-initialstatesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:82
+#: ../../reference/mdb/model/predefined.rst:66
 msgid "KinematicHardening"
 msgstr ""
 
@@ -1371,7 +1363,7 @@ msgstr ""
 msgid "Check `KinematicHardening.setValues on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-kinematichardeningpyc.htm?contextscope=all#simaker-kinematichardeningsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:90
+#: ../../reference/mdb/model/predefined.rst:74
 msgid "MaterialAssignment"
 msgstr ""
 
@@ -1455,7 +1447,7 @@ msgstr ""
 msgid "Check `MaterialAssignment.setValues on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialassignmentpyc.htm?contextscope=all#simaker-materialassignmentsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:98
+#: ../../reference/mdb/model/predefined.rst:82
 msgid "Temperature"
 msgstr ""
 
@@ -1568,7 +1560,7 @@ msgstr ""
 msgid "A String specifying the name of the step in which the predefined field is modified."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:106
+#: ../../reference/mdb/model/predefined.rst:90
 msgid "TemperatureState"
 msgstr ""
 
@@ -1769,7 +1761,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the propagation state of the **midside** member. Possible values are UNSET, SET, and UNCHANGED."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:114
+#: ../../reference/mdb/model/predefined.rst:98
 msgid "TiffOptions"
 msgstr ""
 
@@ -1818,7 +1810,7 @@ msgstr ""
 msgid "(minWidth, minHeight) <= (width, height) <= (maxWidth, maxHeight)."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:122
+#: ../../reference/mdb/model/predefined.rst:106
 msgid "Velocity"
 msgstr ""
 
