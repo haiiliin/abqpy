@@ -71,7 +71,7 @@ own Python interpreter without opening Abaqus**, which is achieved via the **aba
 
 .. code-block:: sh
 
-    abaqus cae -noGUI script.py
+    abaqus cae noGUI=script.py
 
 The secret is hided in the :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method:
 
@@ -82,7 +82,11 @@ The secret is hided in the :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method:
         abaqus = 'abaqus'
         if 'ABAQUS_BAT_PATH' in os.environ.keys():
             abaqus = os.environ['ABAQUS_BAT_PATH']
-        os.system(f'{abaqus} cae -noGUI {os.path.abspath(sys.argv[0])}')
+
+        filePath = os.path.abspath(sys.argv[0])
+        args = " ".join(sys.argv[1:])
+
+        os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
 
 In this package, the :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method is reimplemented, if you call this method in your
 script (i.e., `mdb.saveAs('model.cae')`), the Python interpreter (not Abaqus Python interpreter) will use the
@@ -99,7 +103,11 @@ method :py:meth:`~abaqus.Session.Session.Session.openOdb` is also reimplemented:
         abaqus = 'abaqus'
         if 'ABAQUS_BAT_PATH' in os.environ.keys():
             abaqus = os.environ['ABAQUS_BAT_PATH']
-        os.system(f'{abaqus} cae script={os.path.abspath(sys.argv[0])}')
+
+        filePath = os.path.abspath(sys.argv[0])
+        args = " ".join(sys.argv[1:])
+
+        os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
 
 Therefore, if you want to run your Python script in Abaqus Python environment, please make sure to use these methods.
 
