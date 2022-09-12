@@ -62,7 +62,7 @@ class Mdb(AbaqusMdb):
             filePath = filePath.replace(".ipynb", ".py")
         except:
             pass
-        os.system(f"{abaqus} cae -noGUI {filePath}")
+        os.system(f"{abaqus} cae noGUI={filePath}")
 
 
 class Session(AbaqusSession):
@@ -84,7 +84,7 @@ class Session(AbaqusSession):
             filePath = filePath.replace(".ipynb", ".py")
         except:
             pass
-        os.system(f"{abaqus} cae script={filePath}")
+        os.system(f"{abaqus} cae noGUI={filePath}")
 
         self.exit()
         return odb
