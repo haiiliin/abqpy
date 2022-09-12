@@ -54,6 +54,7 @@ class Mdb(AbaqusMdb):
             abaqus = os.environ["ABAQUS_BAT_PATH"]
 
         filePath = os.path.abspath(sys.argv[0])
+        args = " ".join(sys.argv[1:])
 
         try:  # If it is a jupyter notebook
             import ipynbname
@@ -62,7 +63,7 @@ class Mdb(AbaqusMdb):
             filePath = filePath.replace(".ipynb", ".py")
         except:
             pass
-        os.system(f"{abaqus} cae noGUI={filePath}")
+        os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
 
 
 class Session(AbaqusSession):
@@ -75,6 +76,7 @@ class Session(AbaqusSession):
             abaqus = os.environ["ABAQUS_BAT_PATH"]
 
         filePath = os.path.abspath(sys.argv[0])
+        args = " ".join(sys.argv[1:])
 
         try:  # If it is a jupyter notebook
             import ipynbname
@@ -84,7 +86,7 @@ class Session(AbaqusSession):
             filePath = filePath.replace(".ipynb", ".py")
         except:
             pass
-        os.system(f"{abaqus} cae noGUI={filePath}")
+        os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
 
         self.exit()
         return odb
