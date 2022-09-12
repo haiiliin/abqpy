@@ -261,7 +261,7 @@ It should be noted that we have to use this function to save the model when we u
 .. autolink-concat:: on
 .. code-block:: sh
 
-    abaqus cae -noGUI script.py
+    abaqus cae noGUI=script.py
 
 In order to make it simple, this has been done in the :py:meth:`~abaqus.Mdb.MdbBase.MdbBase.saveAs` function:
 
@@ -272,7 +272,11 @@ In order to make it simple, this has been done in the :py:meth:`~abaqus.Mdb.MdbB
         abaqus = 'abaqus'
         if 'ABAQUS_BAT_PATH' in os.environ.keys():
             abaqus = os.environ['ABAQUS_BAT_PATH']
-        os.system('{} cae -noGUI {}'.format(abaqus, os.path.abspath(sys.argv[0])))
+        
+        filePath = os.path.abspath(sys.argv[0])
+        args = " ".join(sys.argv[1:])
+
+        os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
 
 
 The whole script
