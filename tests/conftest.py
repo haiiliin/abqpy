@@ -14,7 +14,7 @@ def pytest_configure(config: pytest.Config) -> None:
     After that, the hook is called for other conftest files as they are imported.
 
     Args:
-        config ([type]): The pytest config object.
+        config (pytest.Config): The pytest config object.
     """
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     sys.path.insert(0, os.path.abspath('../src'))
