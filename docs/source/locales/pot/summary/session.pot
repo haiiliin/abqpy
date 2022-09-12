@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2018.3.1.dev8+g91931b97\n"
+"Project-Id-Version: abqpy 2018.3.1.dev16+gf1399e9a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-11 00:14+0000\n"
+"POT-Creation-Date: 2022-09-12 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -656,87 +656,95 @@ msgstr ""
 msgid "This method creates aStream object and places it in the streams repository."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid ":py:obj:`AreaStyle <abaqus.Session.Session.Session.AreaStyle>`\\ \\(\\[color\\, fill\\, style\\]\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid "This method creates an AreaStyle."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid ":py:obj:`LineStyle <abaqus.Session.Session.Session.LineStyle>`\\ \\(\\[color\\, show\\, style\\, thickness\\]\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid "This method creates a LineStyle."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid ":py:obj:`QuantityType <abaqus.Session.Session.Session.QuantityType>`\\ \\(\\[label\\, type\\]\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid "This method creates a QuantityType object."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid ":py:obj:`SymbolStyle <abaqus.Session.Session.Session.SymbolStyle>`\\ \\(\\[color\\, show\\, marker\\, size\\]\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid "This method creates a SymbolStyle object."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid ":py:obj:`TextStyle <abaqus.Session.Session.Session.TextStyle>`\\ \\(\\[color\\, show\\, font\\, rotationAngle\\]\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid "This method creates a TextStyle."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid ":py:obj:`XYData <abaqus.Session.Session.Session.XYData>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid ":py:obj:`XYDataFromFile <abaqus.Session.Session.Session.XYDataFromFile>`\\ \\(fileName\\[\\, name\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid "This method creates an XYData object from data in an ASCII file."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid ":py:obj:`XYDataFromHistory <abaqus.Session.Session.Session.XYDataFromHistory>`\\ \\(odb\\, outputVariableName\\, steps\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid "This method creates an XYData object by reading history data from an Odb object."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid ":py:obj:`xyDataListFromField <abaqus.Session.Session.Session.xyDataListFromField>`\\ \\(odb\\, outputPosition\\, ...\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid "This method creates a list of XYData objects by reading field data from an Odb object."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid ":py:obj:`XYDataFromFreeBody <abaqus.Session.Session.Session.XYDataFromFreeBody>`\\ \\(odb\\[\\, force\\, moment\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid "This method creates a list of XYData objects by computing free body data from an Odb object."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`XYDataFromShellThickness <abaqus.Session.Session.Session.XYDataFromShellThickness>`\\ \\(odb\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a list of XYData objects by reading through the thickness field data from an Odb object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
 msgid ":py:obj:`XYDataFromPath <abaqus.Session.Session.Session.XYDataFromPath>`\\ \\(path\\, name\\, ...\\[\\, viewport\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 msgid "This method creates an XYData object from path information."
 msgstr ""
 
