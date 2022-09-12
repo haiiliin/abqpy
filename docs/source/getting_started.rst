@@ -158,8 +158,8 @@ You can specify the version number when installing `abqpy`, for example:
 
 .. code-block:: sh
 
-    pip install abqpy==2022.3.0
-    conda install -c haiiliin abqpy=2022.3.0
+    pip install abqpy==2022.3.1
+    conda install -c haiiliin abqpy=2022.3.1
 
 A better way is to use * to match specific version:
 
