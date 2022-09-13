@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2018.3.1.dev16+gf1399e9a\n"
+"Project-Id-Version: abqpy 2018.3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-12 00:14+0000\n"
+"POT-Creation-Date: 2022-09-13 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -212,74 +212,74 @@ msgstr ""
 msgid "In order to make it simple, this has been done in the :py:meth:`~abaqus.Mdb.MdbBase.MdbBase.saveAs` function:"
 msgstr ""
 
-#: ../../tutorials.rst:279
+#: ../../tutorials.rst:283
 msgid "The whole script"
 msgstr ""
 
-#: ../../tutorials.rst:281
+#: ../../tutorials.rst:285
 msgid "The whole script of this example is showed as follows:"
 msgstr ""
 
-#: ../../tutorials.rst:284
+#: ../../tutorials.rst:288
 msgid "compression.py"
 msgstr ""
 
-#: ../../tutorials.rst:363
+#: ../../tutorials.rst:367
 msgid "Extract output data"
 msgstr ""
 
-#: ../../tutorials.rst:365
+#: ../../tutorials.rst:369
 msgid "If we want to extract the output data, we have to write an output script."
 msgstr ""
 
-#: ../../tutorials.rst:368
+#: ../../tutorials.rst:372
 msgid "Header of the output script"
 msgstr ""
 
-#: ../../tutorials.rst:370
+#: ../../tutorials.rst:374
 msgid "Similarly, we have to import some modules:"
 msgstr ""
 
-#: ../../tutorials.rst:383
+#: ../../tutorials.rst:387
 msgid "Open the output database"
 msgstr ""
 
-#: ../../tutorials.rst:385
+#: ../../tutorials.rst:389
 msgid "We can use :py:meth:`~abaqus.Session.SessionBase.SessionBase.openOdb` to open the output database:"
 msgstr ""
 
-#: ../../tutorials.rst:394
+#: ../../tutorials.rst:398
 msgid "Extract the data"
 msgstr ""
 
-#: ../../tutorials.rst:396
+#: ../../tutorials.rst:400
 msgid "We can use the :py:meth:`~abaqus.XY.XYSession.XYSession.xyDataListFromField` to extract the output data:"
 msgstr ""
 
-#: ../../tutorials.rst:405
+#: ../../tutorials.rst:409
 msgid "`dataList` is a list of `XYData` objects. `XYData` is a data type defined in Abaqus, the data is stored in tuples of tuples, so we can simply save it to a file, i.e., using the `numpy` (`numpy` is installed in Python interpreter of Abaqus already):"
 msgstr ""
 
-#: ../../tutorials.rst:417
+#: ../../tutorials.rst:421
 msgid "Results of above example"
 msgstr ""
 
-#: ../../tutorials.rst:419
+#: ../../tutorials.rst:423
 msgid "The distribution of `U3` of above model is showed as follows:"
 msgstr ""
 
-#: ../../tutorials.rst:427
+#: ../../tutorials.rst:431
 msgid "The distribution of the vertical displacement of a point in the top surface is showed as follows:"
 msgstr ""
 
-#: ../../tutorials.rst:436
+#: ../../tutorials.rst:440
 msgid "The whole output script"
 msgstr ""
 
-#: ../../tutorials.rst:438
+#: ../../tutorials.rst:442
 msgid "The whole output script of this example is showed as follows:"
 msgstr ""
 
-#: ../../tutorials.rst:441
+#: ../../tutorials.rst:445
 msgid "compression-output.py"
 msgstr ""
