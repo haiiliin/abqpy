@@ -1,6 +1,6 @@
-import sys
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AutoColors import AutoColors
 from .Color import Color
 from .Drawing import Drawing
@@ -61,7 +61,6 @@ from ..XY.XYCurve import XYCurve
 from ..XY.XYData import XYData
 from ..XY.XYPlot import XYPlot
 from ..XY.XYReportOptions import XYReportOptions
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc
@@ -717,7 +716,3 @@ class SessionBase:
         """
         self.odbs[name] = odb = Odb(name, *args, **kwargs)
         return odb
-
-    @staticmethod
-    def exit():
-        sys.exit()

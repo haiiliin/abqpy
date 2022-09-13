@@ -1,3 +1,4 @@
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConnectorOrientation import ConnectorOrientation
 from ..Datum.DatumCsys import DatumCsys
 from ..EditMesh.MeshEditAssembly import MeshEditAssembly
@@ -6,7 +7,6 @@ from ..Property.PropertyAssembly import PropertyAssembly
 from ..Region.RegionAssembly import RegionAssembly
 from ..Region.Set import Set
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc
