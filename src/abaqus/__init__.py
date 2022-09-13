@@ -14,10 +14,10 @@ class Mdb(AbaqusMdb):
         super().__init__(pathName)
 
     def save(self):
-        abqpy.abaqus.run()
+        abqpy.abaqus.run(exit_after=True)
 
     def saveAs(self, pathName: str):
-        abqpy.abaqus.run()
+        abqpy.abaqus.run(exit_after=True)
 
 
 class Session(AbaqusSession):
