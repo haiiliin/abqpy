@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2016.3.1.dev17+g3642637b\n"
+"Project-Id-Version: abqpy 2016.3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-12 00:14+0000\n"
+"POT-Creation-Date: 2022-09-13 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,66 +68,66 @@ msgstr ""
 msgid "The secret is hided in the :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method:"
 msgstr ""
 
-#: ../../getting_started.rst:87
+#: ../../getting_started.rst:91
 msgid "In this package, the :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method is reimplemented, if you call this method in your script (i.e., `mdb.saveAs('model.cae')`), the Python interpreter (not Abaqus Python interpreter) will use the **abaqus** command to submit this script to Abaqus, when it is submited to Abaqus, :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` will be just a normal method to save the model because `abqpy` is not installed in Abaqus Python interpreter."
 msgstr ""
 
-#: ../../getting_started.rst:92
+#: ../../getting_started.rst:96
 msgid "In the output script, we might not have to use the :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method, then another similar method :py:meth:`~abaqus.Session.Session.Session.openOdb` is also reimplemented:"
 msgstr ""
 
-#: ../../getting_started.rst:104
+#: ../../getting_started.rst:112
 msgid "Therefore, if you want to run your Python script in Abaqus Python environment, please make sure to use these methods."
 msgstr ""
 
-#: ../../getting_started.rst:107
+#: ../../getting_started.rst:115
 msgid "Installation"
 msgstr ""
 
-#: ../../getting_started.rst:109
+#: ../../getting_started.rst:117
 msgid "`abqpy` supports Python 3.7 or a later version. If you are using Python 3.6 or an earlier version, please upgrade to Python 3.7 or a later version."
 msgstr ""
 
-#: ../../getting_started.rst:112
+#: ../../getting_started.rst:120
 msgid "`abqpy` is uploaded to `PyPI <https://pypi.org/project/abqpy>`_, you can simply install it using pip:"
 msgstr ""
 
-#: ../../getting_started.rst:119
+#: ../../getting_started.rst:127
 msgid "`abqpy` is also uploaded to `anaconda <https://anaconda.org/haiiliin/abqpy>`_, you can use `conda` to install it:"
 msgstr ""
 
-#: ../../getting_started.rst:126
+#: ../../getting_started.rst:134
 msgid "You may install the latest development version by cloning the `GitHub repository <https://github.com/haiiliin/abqpy>`_ and use `python` to install from the local directory:"
 msgstr ""
 
-#: ../../getting_started.rst:137
+#: ../../getting_started.rst:145
 msgid "Optional Requirements"
 msgstr ""
 
-#: ../../getting_started.rst:139
+#: ../../getting_started.rst:147
 msgid "If you want to use the Jupyter notebook to write your Abaqus/Python scripts, you need to install `ipynbname`:"
 msgstr ""
 
-#: ../../getting_started.rst:147
+#: ../../getting_started.rst:155
 msgid "Install A Specific Version"
 msgstr ""
 
-#: ../../getting_started.rst:149
+#: ../../getting_started.rst:157
 msgid "You can specify the version number when installing `abqpy`, for example:"
 msgstr ""
 
-#: ../../getting_started.rst:156
+#: ../../getting_started.rst:164
 msgid "A better way is to use * to match specific version:"
 msgstr ""
 
-#: ../../getting_started.rst:164
+#: ../../getting_started.rst:172
 msgid "Abaqus command"
 msgstr ""
 
-#: ../../getting_started.rst:166
+#: ../../getting_started.rst:174
 msgid "In order to use Abaqus command to execute the Python script and submit the job, you need to tell `abqpy` where the Abaqus command located. Usually, Abaqus command locates in a directory like this:"
 msgstr ""
 
-#: ../../getting_started.rst:173
+#: ../../getting_started.rst:181
 msgid "You can add the directory `C:/SIMULIA/Commands` to the system environment variable `Path`, or you can create a new system variable named `ABAQUS_BAT_PATH`, and set the value to the file path of the Abaqus command, i.e., `C:/SIMULIA/Commands/abaqus.bat`."
 msgstr ""
