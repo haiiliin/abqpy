@@ -1,9 +1,9 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AreaStyle import AreaStyle
 from .LineStyle import LineStyle
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc
