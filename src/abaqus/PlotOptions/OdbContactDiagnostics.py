@@ -1,7 +1,7 @@
 import typing
 
-from .OdbAuxiliaryData import OdbAuxiliaryData
 from abqpy.decorators import abaqus_class_doc
+from .OdbAuxiliaryData import OdbAuxiliaryData
 
 
 @abaqus_class_doc

@@ -1,6 +1,6 @@
+from abqpy.decorators import abaqus_function_doc
 from .Material import Material
 from ..UtilityAndView.abaqusConstants import *
-from abqpy.decorators import abaqus_function_doc
 
 """ This command evaluates the behavior of a hyperelastic material under standard test 
 conditions. 

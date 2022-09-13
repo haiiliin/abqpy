@@ -1,8 +1,8 @@
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Job.JobMdb import JobMdb
 from ..Model.Model import Model
 from ..Part.AcisMdb import AcisMdb
 from ..UtilityAndView.abaqusConstants import *
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

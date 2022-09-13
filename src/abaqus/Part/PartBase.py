@@ -1,5 +1,7 @@
 import typing
 
+# prevent circular imports
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AcisFile import AcisFile
 from .PartFeature import PartFeature
 from ..BasicGeometry.Cell import Cell
@@ -32,8 +34,6 @@ from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch
 from ..UtilityAndView.abaqusConstants import *
-# prevent circular imports
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

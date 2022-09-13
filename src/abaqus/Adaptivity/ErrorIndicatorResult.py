@@ -1,5 +1,5 @@
-from .RuleResult import RuleResult
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from .RuleResult import RuleResult
 
 
 @abaqus_class_doc

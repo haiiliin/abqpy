@@ -1,8 +1,8 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc
 from .MdbDataInstance import MdbDataInstance
 from .MdbDataStep import MdbDataStep
-from abqpy.decorators import abaqus_class_doc
 
 
 @abaqus_class_doc

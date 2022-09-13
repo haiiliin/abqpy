@@ -1,5 +1,6 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .CouplingConstraint import CouplingConstraint
 from .HistoryVariable import HistoryVariable
 from .MpcConstraint import MpcConstraint
@@ -16,7 +17,6 @@ from .RigidBodyConstraint import RigidBodyConstraint
 from .TieConstraint import TieConstraint
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

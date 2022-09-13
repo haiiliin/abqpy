@@ -1,5 +1,5 @@
-from .DirectDampingComponentArray import DirectDampingComponentArray
 from abqpy.decorators import abaqus_class_doc
+from .DirectDampingComponentArray import DirectDampingComponentArray
 
 
 @abaqus_class_doc

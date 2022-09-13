@@ -1,5 +1,6 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .CommonOptions import CommonOptions
 from .ContourOptions import ContourOptions
 from .DisplayBodyOptions import DisplayBodyOptions
@@ -20,7 +21,6 @@ from ..PlotOptions.FreeBodyOptions import FreeBodyOptions
 from ..PlotOptions.StreamOptions import StreamOptions
 from ..PlotOptions.ViewCutOptions import ViewCutOptions
 from ..UtilityAndView.abaqusConstants import *
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

@@ -1,5 +1,6 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.ReferencePoint import ReferencePoint
 from ..BasicGeometry.VertexArray import VertexArray
@@ -9,7 +10,6 @@ from ..Mesh.MeshNodeArray import MeshNodeArray
 from ..Region.Set import Set
 from ..Region.Surface import Surface
 from ..UtilityAndView.abaqusConstants import *
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 # prevent circular imports

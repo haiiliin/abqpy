@@ -1,5 +1,5 @@
-from .StructuralDampingComponentArray import StructuralDampingComponentArray
 from abqpy.decorators import abaqus_class_doc
+from .StructuralDampingComponentArray import StructuralDampingComponentArray
 
 
 @abaqus_class_doc

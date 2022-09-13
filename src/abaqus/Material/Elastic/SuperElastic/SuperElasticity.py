@@ -1,8 +1,8 @@
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ...Plastic.SuperElastic.SuperElasticHardening import SuperElasticHardening
 from ...Plastic.SuperElastic.SuperElasticHardeningModifications import (
     SuperElasticHardeningModifications,
 )
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

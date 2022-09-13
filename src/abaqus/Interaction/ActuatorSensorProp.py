@@ -1,5 +1,5 @@
-from .ContactProperty import ContactProperty
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from .ContactProperty import ContactProperty
 
 
 @abaqus_class_doc

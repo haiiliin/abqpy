@@ -1,7 +1,7 @@
 import typing
 
-from .Annotation import Annotation
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from .Annotation import Annotation
 
 
 @abaqus_class_doc

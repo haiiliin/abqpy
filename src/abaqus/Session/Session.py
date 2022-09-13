@@ -1,3 +1,4 @@
+from abqpy.decorators import abaqus_class_doc
 from ..Animation.AnimationSession import AnimationSession
 from ..DisplayGroup.DisplayGroupSession import DisplayGroupSession
 from ..FieldReport.FieldReportSession import FieldReportSession
@@ -5,7 +6,6 @@ from ..Job.JobSession import JobSession
 from ..Odb.OdbSession import OdbSession
 from ..PathAndProbe.PathSession import PathSession
 from ..XY.XYSession import XYSession
-from abqpy.decorators import abaqus_class_doc
 
 
 @abaqus_class_doc

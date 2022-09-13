@@ -1,5 +1,5 @@
-from .RayleighDampingComponentArray import RayleighDampingComponentArray
 from abqpy.decorators import abaqus_class_doc
+from .RayleighDampingComponentArray import RayleighDampingComponentArray
 
 
 @abaqus_class_doc

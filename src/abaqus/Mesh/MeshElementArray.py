@@ -1,7 +1,7 @@
 import typing
 
-from .MeshElement import MeshElement
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from .MeshElement import MeshElement
 
 
 @abaqus_class_doc

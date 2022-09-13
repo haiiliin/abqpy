@@ -1,12 +1,12 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc
 from .OdbAnalysisError import OdbAnalysisError
 from .OdbAnalysisWarning import OdbAnalysisWarning
 from .OdbDiagnosticStep import OdbDiagnosticStep
 from .OdbJobTime import OdbJobTime
 from .OdbNumericalProblemSummary import OdbNumericalProblemSummary
 from ..UtilityAndView.abaqusConstants import *
-from abqpy.decorators import abaqus_class_doc
 
 
 @abaqus_class_doc

@@ -1,5 +1,5 @@
-from .SolidSection import SolidSection
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from .SolidSection import SolidSection
 
 
 @abaqus_class_doc

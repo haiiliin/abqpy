@@ -1,5 +1,5 @@
-from .PlyStackPlotOptions import PlyStackPlotOptions
 from abqpy.decorators import abaqus_class_doc
+from .PlyStackPlotOptions import PlyStackPlotOptions
 
 
 @abaqus_class_doc

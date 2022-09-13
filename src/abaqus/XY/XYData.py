@@ -1,10 +1,11 @@
 from __future__ import annotations
+
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .QuantityType import QuantityType
 from ..PathAndProbe.Path import Path
 from ..UtilityAndView.abaqusConstants import *
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 class Odb:

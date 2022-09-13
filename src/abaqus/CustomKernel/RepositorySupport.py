@@ -1,7 +1,7 @@
 import typing
 
-from .CommandRegister import CommandRegister
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from .CommandRegister import CommandRegister
 
 
 @abaqus_class_doc

@@ -1,7 +1,7 @@
 import typing
 
-from .MeshNode import MeshNode
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from .MeshNode import MeshNode
 
 
 @abaqus_class_doc

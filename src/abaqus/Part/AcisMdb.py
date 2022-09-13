@@ -1,7 +1,7 @@
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AcisFile import AcisFile
 from ..Mdb.MdbBase import MdbBase
 from ..UtilityAndView.abaqusConstants import *
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

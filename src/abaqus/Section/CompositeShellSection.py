@@ -1,9 +1,9 @@
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .GeometryShellSection import GeometryShellSection
 from .RebarLayers import RebarLayers
 from .SectionLayerArray import SectionLayerArray
 from .TransverseShearShell import TransverseShearShell
 from ..UtilityAndView.abaqusConstants import *
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

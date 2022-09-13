@@ -1,12 +1,12 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc
 from .DesignResponse import DesignResponse
 from .GeometricRestriction import GeometricRestriction
 from .ObjectiveFunction import ObjectiveFunction
 from .OptimizationConstraint import OptimizationConstraint
 from .StopCondition import StopCondition
 from ..UtilityAndView.abaqusConstants import *
-from abqpy.decorators import abaqus_class_doc
 
 
 @abaqus_class_doc

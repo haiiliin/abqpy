@@ -1,8 +1,8 @@
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..Odb.Odb import Odb
 from ..Session.SessionBase import SessionBase
 from ..UtilityAndView.abaqusConstants import *
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

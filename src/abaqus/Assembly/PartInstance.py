@@ -1,5 +1,6 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..BasicGeometry.CellArray import CellArray
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.FaceArray import FaceArray
@@ -20,7 +21,6 @@ from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
 from ..UtilityAndView.abaqusConstants import *
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

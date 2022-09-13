@@ -1,5 +1,5 @@
-from .Odb import Odb
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from .Odb import Odb
 
 
 @abaqus_class_doc

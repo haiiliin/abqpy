@@ -1,5 +1,5 @@
-from .Datum import Datum
 from abqpy.decorators import abaqus_class_doc
+from .Datum import Datum
 
 
 @abaqus_class_doc

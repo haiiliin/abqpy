@@ -1,5 +1,5 @@
-from .MdbDataFrameArray import MdbDataFrameArray
 from abqpy.decorators import abaqus_class_doc
+from .MdbDataFrameArray import MdbDataFrameArray
 
 
 @abaqus_class_doc

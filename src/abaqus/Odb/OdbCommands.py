@@ -1,10 +1,10 @@
-import abqpy.abaqus
 import typing
 
+import abqpy.abaqus
+from abqpy.decorators import abaqus_function_doc
 from .FieldOutput import FieldOutput
 from .Odb import Odb
 from ..UtilityAndView.abaqusConstants import *
-from abqpy.decorators import abaqus_function_doc
 
 """The Odb commands do the following: 
 

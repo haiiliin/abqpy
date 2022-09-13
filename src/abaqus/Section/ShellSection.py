@@ -1,6 +1,6 @@
+from abqpy.decorators import abaqus_class_doc
 from .Section import Section
 from .TransverseShearShell import TransverseShearShell
-from abqpy.decorators import abaqus_class_doc
 
 
 @abaqus_class_doc
