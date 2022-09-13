@@ -1,3 +1,4 @@
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AcousticImpedanceProp import AcousticImpedanceProp
 from .ActuatorSensorProp import ActuatorSensorProp
 from .CavityRadiationProp import CavityRadiationProp
@@ -8,7 +9,6 @@ from .FluidExchangeProperty import FluidExchangeProperty
 from .IncidentWaveProperty import IncidentWaveProperty
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

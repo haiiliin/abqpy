@@ -1,11 +1,11 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .HistoryPoint import HistoryPoint
 from .HistoryRegion import HistoryRegion
 from .OdbFrame import OdbFrame
 from .OdbLoadCase import OdbLoadCase
 from .OdbStepBase import OdbStepBase
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc
