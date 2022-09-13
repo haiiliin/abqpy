@@ -1,10 +1,10 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Datum import Datum
 from .DatumAxis import DatumAxis
 from .DatumPoint import DatumPoint
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

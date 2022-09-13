@@ -1,7 +1,7 @@
+from abqpy.decorators import abaqus_class_doc
 from ..Adaptivity.AdaptivityStep import AdaptivityStep
 from ..StepOutput.OutputStep import OutputStep
 from ..TableCollection.TableCollectionStep import TableCollectionStep
-from .._decorators import abaqus_class_doc
 
 
 @abaqus_class_doc
