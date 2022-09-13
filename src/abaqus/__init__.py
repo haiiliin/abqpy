@@ -14,7 +14,7 @@ class Mdb(AbaqusMdb):
         super().__init__(pathName)
 
     def save(self):
-        super().save()
+        abqpy.abaqus.run()
 
     def saveAs(self, pathName: str):
         abqpy.abaqus.run()
