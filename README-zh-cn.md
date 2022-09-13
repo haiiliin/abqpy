@@ -21,7 +21,6 @@ Abaqus/Python 脚本的类型提示
 ## 该项目的其他链接
 
 - GitHub 仓库: [github.com/haiiliin/abqpy](https://github.com/haiiliin/abqpy)
-- 翻译文档的 GitHub 仓库: [github.com/haiiliin/abqpy-translations](https://github.com/haiiliin/abqpy-translations)
 - PyPI: [pypi.org/project/abqpy](https://pypi.org/project/abqpy/)
 - Anaconda: [anaconda.org/haiiliin/abqpy](https://anaconda.org/haiiliin/abqpy)
 - Read the Docs: [readthedocs.org/projects/abqpy](https://readthedocs.org/projects/abqpy/)
