@@ -5,7 +5,7 @@ from abaqus.Odb.OdbSequenceAnalyticSurfaceSegment import OdbSequenceAnalyticSurf
 
 
 def openOdb(name: str, *args, **kwargs) -> Odb:
-    abqpy.abaqus.run(exit_after=True)
+    abqpy.abaqus.run()
     return Odb(name)
 
 
