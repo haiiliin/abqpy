@@ -3,7 +3,7 @@ import typing
 from pathlib import Path
 
 try:
-    from abaqus._version import version as _default_version
+    from ._version import version as _default_version
 except ImportError:
     _default_version = '2022.0.0-unknown'
 
