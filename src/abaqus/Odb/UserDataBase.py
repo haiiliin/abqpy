@@ -1,11 +1,7 @@
 import typing
 
-<<<<<<< HEAD
 from abaqusConstants import *
-
-=======
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
->>>>>>> cf417e3 (Use an independent package `abqpy` to store `non-abaqus-related` utils (#1241))
 from ..Annotation.Annotation import Annotation
 from ..XY.QuantityType import QuantityType
 from ..XY.XYData import XYData
