@@ -1,9 +1,10 @@
 import typing
 
+import abqpy.abaqus
+from abqpy.decorators import abaqus_function_doc
 from .FieldOutput import FieldOutput
 from .Odb import Odb
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_function_doc
 
 """The Odb commands do the following: 
 
@@ -182,7 +183,7 @@ def openOdb(name: str, path: str = "", readOnly: Boolean = OFF) -> Odb:
 
 @abaqus_function_doc
 def openOdb(name: str, *args, **kwargs):
-    ...
+    abqpy.abaqus.run(exit_after=True)
 
 
 @abaqus_function_doc

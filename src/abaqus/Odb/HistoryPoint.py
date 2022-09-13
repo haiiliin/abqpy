@@ -1,3 +1,4 @@
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .OdbAssembly import OdbAssembly
 from .OdbInstance import OdbInstance
 from .OdbMeshElement import OdbMeshElement
@@ -6,7 +7,6 @@ from .OdbPart import OdbPart
 from .OdbSet import OdbSet
 from .SectionPoint import SectionPoint
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc
