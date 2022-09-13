@@ -4,7 +4,7 @@ pull_request_rules:
       - label=backport-to-main
     actions:
       backport:
-        title: "Backport '{{ title }}' into {{ destination_branch }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }} to {{ destination_branch }})"
         branches:
           - main
         assignees:
@@ -19,7 +19,7 @@ pull_request_rules:
         - label=backport-to-v2022
     actions:
       backport:
-        title: "Backport '{{ title }}' into {{ destination_branch }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }} to {{ destination_branch }})"
         branches:
           - V2022
         assignees:
@@ -34,7 +34,7 @@ pull_request_rules:
         - label=backport-to-v2021
     actions:
       backport:
-        title: "Backport '{{ title }}' into {{ destination_branch }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }} to {{ destination_branch }})"
         branches:
           - V2021
         assignees:
@@ -49,7 +49,7 @@ pull_request_rules:
         - label=backport-to-v2020
     actions:
       backport:
-        title: "Backport '{{ title }}' into {{ destination_branch }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }} to {{ destination_branch }})"
         branches:
           - V2020
         assignees:
@@ -64,7 +64,7 @@ pull_request_rules:
         - label=backport-to-v2019
     actions:
       backport:
-        title: "Backport '{{ title }}' into {{ destination_branch }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }} to {{ destination_branch }})"
         branches:
           - V2019
         assignees:
@@ -79,7 +79,7 @@ pull_request_rules:
         - label=backport-to-v2018
     actions:
       backport:
-        title: "Backport '{{ title }}' into {{ destination_branch }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }} to {{ destination_branch }})"
         branches:
           - V2018
         assignees:
@@ -94,7 +94,7 @@ pull_request_rules:
         - label=backport-to-v2017
     actions:
       backport:
-        title: "Backport '{{ title }}' into {{ destination_branch }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }} to {{ destination_branch }})"
         branches:
           - V2017
         assignees:
@@ -109,7 +109,7 @@ pull_request_rules:
         - label=backport-to-v2016
     actions:
       backport:
-        title: "Backport '{{ title }}' into {{ destination_branch }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }} to {{ destination_branch }})"
         branches:
           - V2016
         assignees:
@@ -121,7 +121,7 @@ pull_request_rules:
       - and:
         - label=backport
         - label!=conflicts
-        - title~=Backport [\w\W]+?\(backport \#\d+\)
+        - title~=[\w\W]+?\(backport \#\d+? to V\d+?\)
     actions:
       merge:
         method: merge
