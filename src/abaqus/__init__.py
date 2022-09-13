@@ -1,4 +1,4 @@
-from abqpy import abaqus
+import abqpy.abaqus
 from .Canvas.Highlight import *
 from .Mdb.Mdb import Mdb as AbaqusMdb
 from .Odb.Odb import Odb
@@ -17,14 +17,14 @@ class Mdb(AbaqusMdb):
         super().save()
 
     def saveAs(self, pathName: str):
-        abaqus.run()
+        abqpy.abaqus.run()
 
 
 class Session(AbaqusSession):
 
     def openOdb(self, name: str, *args, **kwargs) -> Odb:
         self.odbs[name] = odb = Odb(name, *args, **kwargs)
-        abaqus.run(exit_after=True)
+        abqpy.abaqus.run(exit_after=True)
         return odb
 
 
