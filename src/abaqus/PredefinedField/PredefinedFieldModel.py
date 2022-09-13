@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from .Field import Field
+>>>>>>> cf417e3 (Use an independent package `abqpy` to store `non-abaqus-related` utils (#1241))
 from .FluidCavityPressure import FluidCavityPressure
 from .InitialState import InitialState
 from .KinematicHardening import KinematicHardening
@@ -9,7 +14,6 @@ from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

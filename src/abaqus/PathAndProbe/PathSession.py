@@ -1,11 +1,11 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Path import Path
 from .Spectrum import Spectrum
 from .Stream import Stream
 from ..Session.SessionBase import SessionBase
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc
