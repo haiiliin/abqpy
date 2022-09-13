@@ -1,5 +1,6 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.Face import Face
@@ -7,7 +8,6 @@ from ..BasicGeometry.ReferencePoint import ReferencePoint
 from ..BasicGeometry.Vertex import Vertex
 from ..Mesh.MeshElement import MeshElement as Element
 from ..Mesh.MeshNode import MeshNode as Node
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

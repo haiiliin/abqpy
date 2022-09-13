@@ -1,5 +1,6 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ActuatorAmplitude import ActuatorAmplitude
 from .DecayAmplitude import DecayAmplitude
 from .EquallySpacedAmplitude import EquallySpacedAmplitude
@@ -12,7 +13,6 @@ from .SpectrumAmplitude import SpectrumAmplitude
 from .TabularAmplitude import TabularAmplitude
 from ..Odb.OdbBase import OdbBase
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

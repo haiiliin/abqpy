@@ -1,5 +1,6 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc
 from .ConstrainedSketchConstraint.ConstrainedSketchConstraint import (
     ConstrainedSketchConstraint,
 )
@@ -19,7 +20,6 @@ from .ConstrainedSketchParameter.ConstrainedSketchParameter import (
 from .ConstrainedSketchVertex.ConstrainedSketchVertexArray import (
     ConstrainedSketchVertexArray,
 )
-from .._decorators import abaqus_class_doc
 
 
 @abaqus_class_doc
