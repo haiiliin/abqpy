@@ -1,8 +1,9 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from .AssemblyFeature import AssemblyFeature
 from .AssemblyModel import AssemblyModel
 from .ConnectorOrientationArray import ConnectorOrientationArray
-from .AssemblyFeature import AssemblyFeature
 from .ModelInstance import ModelInstance
 from .PartInstance import PartInstance
 from ..BasicGeometry.EdgeArray import EdgeArray
@@ -23,7 +24,6 @@ from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

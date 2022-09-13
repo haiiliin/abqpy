@@ -1,5 +1,6 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AreaStyle import AreaStyle
 from .LineStyle import LineStyle
 from .QuantityType import QuantityType
@@ -8,7 +9,6 @@ from .TextStyle import TextStyle
 from .XYData import XYData
 from .XYPlotBase import XYPlotBase
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

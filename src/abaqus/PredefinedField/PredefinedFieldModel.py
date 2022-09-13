@@ -1,3 +1,4 @@
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .FluidCavityPressure import FluidCavityPressure
 from .InitialState import InitialState
 from .KinematicHardening import KinematicHardening
@@ -9,7 +10,6 @@ from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

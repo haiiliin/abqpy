@@ -1,11 +1,10 @@
 import typing
 
 from abaqusConstants import *
-
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Annotation.Annotation import Annotation
 from ..XY.QuantityType import QuantityType
 from ..XY.XYData import XYData
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc
