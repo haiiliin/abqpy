@@ -2,6 +2,8 @@ import re
 import typing
 from . import __version__ as version
 
+version = version[:4]
+
 
 class AbaqusDoc:
 
