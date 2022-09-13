@@ -4,7 +4,7 @@ import sys
 
 def run(exit_after=False):
     abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
-    filePath = os.path.abspath(sys.argv[0])
+    filePath = os.path.abspath(sys.modules['__main__'].__file__)
     args = " ".join(sys.argv[1:])
 
     try:  # If it is a jupyter notebook
