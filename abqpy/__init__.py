@@ -1,5 +1,5 @@
 from pathlib import Path
-from .abaqus import run_abaqus
+from .abaqus import run
 
 
 try:

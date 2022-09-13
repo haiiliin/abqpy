@@ -17,14 +17,14 @@ class Mdb(AbaqusMdb):
         super().save()
 
     def saveAs(self, pathName: str):
-        abaqus.run_abaqus()
+        abaqus.run()
 
 
 class Session(AbaqusSession):
 
     def openOdb(self, name: str, *args, **kwargs) -> Odb:
         self.odbs[name] = odb = Odb(name, *args, **kwargs)
-        abaqus.run_abaqus(exit_after=True)
+        abaqus.run(exit_after=True)
         return odb
 
 

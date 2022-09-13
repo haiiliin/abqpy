@@ -2,7 +2,7 @@ import os
 import sys
 
 
-def run_abaqus(exit_after=False):
+def run(exit_after=False):
     abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
     filePath = os.path.abspath(sys.argv[0])
     args = " ".join(sys.argv[1:])

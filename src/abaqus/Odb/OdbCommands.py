@@ -183,7 +183,7 @@ def openOdb(name: str, path: str = "", readOnly: Boolean = OFF) -> Odb:
 
 @abaqus_function_doc
 def openOdb(name: str, *args, **kwargs):
-    abqpy.abaqus.run_abaqus(exit_after=True)
+    abqpy.abaqus.run(exit_after=True)
 
 
 @abaqus_function_doc
