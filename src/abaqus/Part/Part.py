@@ -2,7 +2,7 @@ from ..EditMesh.MeshEditPart import MeshEditPart
 from ..Mesh.MeshPart import MeshPart
 from ..Property.PropertyPart import PropertyPart
 from ..Region.RegionPart import RegionPart
-from .._decorators import abaqus_class_doc
+from abqpy.decorators import abaqus_class_doc
 
 
 @abaqus_class_doc

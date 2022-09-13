@@ -1,7 +1,7 @@
 from ..Datum.Datum import Datum
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_function_doc
+from abqpy.decorators import abaqus_function_doc
 
 """The Property assignment commands are used to assign and unassign properties to parts. 
 The part and section modules must be imported to give access to the Property assignment 

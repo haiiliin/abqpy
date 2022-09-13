@@ -4,7 +4,7 @@ from ....TestData.SimpleShearTestData import SimpleShearTestData
 from ....TestData.UniaxialTestData import UniaxialTestData
 from ....TestData.VolumetricTestData import VolumetricTestData
 from .....UtilityAndView.abaqusConstants import *
-from ....._decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

@@ -2,7 +2,7 @@ from .DamageEvolution import DamageEvolution
 from .DamageStabilization import DamageStabilization
 from .DamageStabilizationCohesive import DamageStabilizationCohesive
 from ...UtilityAndView.abaqusConstants import *
-from ..._decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

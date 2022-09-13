@@ -10,7 +10,7 @@ from .XYData import XYData
 from .XYSessionBase import XYSessionBase
 from ..PathAndProbe.Path import Path
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 class Odb:

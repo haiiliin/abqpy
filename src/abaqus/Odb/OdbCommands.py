@@ -4,7 +4,7 @@ import typing
 from .FieldOutput import FieldOutput
 from .Odb import Odb
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_function_doc
+from abqpy.decorators import abaqus_function_doc
 
 """The Odb commands do the following: 
 

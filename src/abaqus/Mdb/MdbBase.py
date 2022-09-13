@@ -8,7 +8,7 @@ from ..Job.Coexecution import Coexecution
 from ..Job.Job import Job
 from ..Job.OptimizationProcess import OptimizationProcess
 from ..Model.Model import Model
-from .._decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

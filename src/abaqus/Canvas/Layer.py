@@ -3,7 +3,7 @@ from ..DisplayOptions.AssemblyDisplayOptions import AssemblyDisplayOptions
 from ..DisplayOptions.PartDisplayOptions import PartDisplayOptions
 from ..OdbDisplay.OdbDisplay import OdbDisplay
 from ..UtilityAndView.View import View
-from .._decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

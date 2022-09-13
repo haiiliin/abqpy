@@ -8,7 +8,7 @@ from ..Section.GeometryShellSection import GeometryShellSection
 from ..Section.HomogeneousShellSection import HomogeneousShellSection
 from ..Section.SectionLayerArray import SectionLayerArray
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

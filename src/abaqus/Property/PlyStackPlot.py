@@ -1,7 +1,7 @@
 from ..Odb.Odb import Odb
 from ..Part.Part import Part
 from ..Region.Region import Region
-from .._decorators import abaqus_class_doc, abaqus_function_doc
+from abqpy.decorators import abaqus_class_doc, abaqus_function_doc
 
 
 @abaqus_class_doc

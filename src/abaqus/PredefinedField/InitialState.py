@@ -1,7 +1,7 @@
 from .PredefinedField import PredefinedField
 from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

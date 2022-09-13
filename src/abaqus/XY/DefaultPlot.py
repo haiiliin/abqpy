@@ -1,6 +1,6 @@
 from .Area import Area
 from .Title import Title
-from .._decorators import abaqus_class_doc
+from abqpy.decorators import abaqus_class_doc
 
 
 @abaqus_class_doc

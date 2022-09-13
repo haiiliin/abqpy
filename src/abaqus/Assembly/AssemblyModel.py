@@ -2,7 +2,7 @@ import typing
 
 from .PartInstance import PartInstance
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 # Prevent circular import

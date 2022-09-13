@@ -9,7 +9,7 @@ from ..Mesh.MeshNodeArray import MeshNodeArray
 from ..Region.Set import Set
 from ..Region.Surface import Surface
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 # prevent circular imports
