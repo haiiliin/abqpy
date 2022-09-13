@@ -1,5 +1,6 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Adaptivity.AdaptivityProcess import AdaptivityProcess
 from ..Annotation.Annotation import Annotation
 from ..CustomKernel.RepositorySupport import RepositorySupport
@@ -7,7 +8,6 @@ from ..EditMesh.MeshEditOptions import MeshEditOptions
 from ..Job.Job import Job
 from ..Job.OptimizationProcess import OptimizationProcess
 from ..Model.Model import Model
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

@@ -28,11 +28,11 @@ setuptools.setup(
         'Anaconda': 'https://anaconda.org/haiiliin/abqpy',
         'Read the Docs': 'https://readthedocs.org/projects/abqpy',
     },
-    use_scm_version = {
+    use_scm_version={
         "root": ".",
         "relative_to": __file__,
         "local_scheme": "node-and-date",
-        "write_to": "src/abaqus/_version.py",
+        "write_to": "src/abqpy/_version.py",
         "fallback_version": "2022.0.0-unknown",
     },
     setup_requires=['setuptools_scm'],
