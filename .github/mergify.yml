@@ -124,4 +124,4 @@ pull_request_rules:
         - title~=[\w\W]+?\(backport \#\d+? to V\d+?\)
     actions:
       merge:
-        method: merge
+        method: squash
