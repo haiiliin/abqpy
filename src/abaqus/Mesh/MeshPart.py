@@ -1,5 +1,6 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ElemType import ElemType
 from .MeshEdge import MeshEdge
 from .MeshElement import MeshElement
@@ -12,7 +13,6 @@ from ..BasicGeometry.IgnoredVertex import IgnoredVertex
 from ..Datum.DatumCsys import DatumCsys
 from ..Part.PartBase import PartBase
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

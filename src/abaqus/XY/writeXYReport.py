@@ -1,8 +1,8 @@
 import typing
 
+from abqpy.decorators import abaqus_function_doc
 from .XYData import XYData
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_function_doc
 
 """This method writes an XYData object to a user-defined ASCII file. 
 

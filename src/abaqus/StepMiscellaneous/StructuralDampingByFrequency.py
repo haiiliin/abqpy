@@ -1,7 +1,7 @@
+from abqpy.decorators import abaqus_class_doc
 from .StructuralDampingByFrequencyComponentArray import (
     StructuralDampingByFrequencyComponentArray,
 )
-from .._decorators import abaqus_class_doc
 
 
 @abaqus_class_doc

@@ -1,3 +1,4 @@
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .BeadFixedRegion import BeadFixedRegion
 from .BeadGrowth import BeadGrowth
 from .BeadPenetrationCheck import BeadPenetrationCheck
@@ -40,7 +41,6 @@ from .TopologyRotationalSymmetry import TopologyRotationalSymmetry
 from .TurnControl import TurnControl
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

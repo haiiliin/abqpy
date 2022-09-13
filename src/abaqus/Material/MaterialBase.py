@@ -1,5 +1,6 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Density.Density import Density
 from .Elastic.HyperElastic.HyperFoam.Hyperfoam import Hyperfoam
 from .Elastic.HyperElastic.Hyperelastic import Hyperelastic
@@ -60,7 +61,6 @@ from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
 from .TestData.MullinsEffect import MullinsEffect
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc
