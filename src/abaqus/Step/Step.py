@@ -1,6 +1,11 @@
+from abqpy.decorators import abaqus_class_doc
 from ..Adaptivity.AdaptivityStep import AdaptivityStep
 from ..StepOutput.OutputStep import OutputStep
+<<<<<<< HEAD
 from .._decorators import abaqus_class_doc
+=======
+from ..TableCollection.TableCollectionStep import TableCollectionStep
+>>>>>>> cf417e3 (Use an independent package `abqpy` to store `non-abaqus-related` utils (#1241))
 
 
 @abaqus_class_doc

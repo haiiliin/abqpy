@@ -1,7 +1,12 @@
 import typing
 
+<<<<<<< HEAD
+=======
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from ..Material.Material import Material
+from ..Region.Region import Region
+>>>>>>> cf417e3 (Use an independent package `abqpy` to store `non-abaqus-related` utils (#1241))
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

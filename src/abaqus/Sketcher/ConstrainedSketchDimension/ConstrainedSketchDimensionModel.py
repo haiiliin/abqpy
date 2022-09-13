@@ -1,12 +1,12 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..ConstrainedSketchBase import ConstrainedSketchBase
 from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
     ConstrainedSketchGeometry,
 )
 from ..ConstrainedSketchVertex.ConstrainedSketchVertex import ConstrainedSketchVertex
 from ...UtilityAndView.abaqusConstants import *
-from ..._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc

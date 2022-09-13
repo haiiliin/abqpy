@@ -3,7 +3,7 @@
 """
 import typing
 
-from .._decorators import abaqus_function_doc
+from abqpy.decorators import abaqus_function_doc
 
 
 @abaqus_function_doc
