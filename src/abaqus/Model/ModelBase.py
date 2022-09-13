@@ -1,5 +1,6 @@
 import typing
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .KeywordBlock import KeywordBlock
 from ..Adaptivity.AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from ..Adaptivity.AdaptiveMeshControl import AdaptiveMeshControl
@@ -33,7 +34,6 @@ from ..StepOutput.HistoryOutputRequest import HistoryOutputRequest
 from ..StepOutput.IntegratedOutputSection import IntegratedOutputSection
 from ..StepOutput.TimePoint import TimePoint
 from ..UtilityAndView.abaqusConstants import *
-from .._decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc
