@@ -17,9 +17,7 @@ class PartDisplayOptions:
     create a new viewport, the settings are copied from the current viewport.
 
     .. note::
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.viewports[name].layers[name].partDisplay
             import part

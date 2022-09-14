@@ -12,9 +12,7 @@ class LeafFromSurfaceSets(Leaf):
     The LeafFromSurfaceSets object is derived from the Leaf object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import displayGroupOdbToolset
     """
@@ -32,9 +30,7 @@ class LeafFromSurfaceSets(Leaf):
         """This method creates a Leaf object from a sequence of surface sets.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 LeafFromSurfaceSets
 

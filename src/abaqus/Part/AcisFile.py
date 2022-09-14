@@ -7,9 +7,7 @@ class AcisFile:
     """The AcisFile object is a file object used to open ACIS-, STEP-, and IGES-format files.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
     """
@@ -23,9 +21,7 @@ class AcisFile:
         object is subsequently used by the PartFromGeometryFile method.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.openAcis
 
@@ -63,9 +59,7 @@ class AcisFile:
         object is subsequently used by the PartFromGeometryFile method.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.openAcis
 
@@ -107,9 +101,7 @@ class AcisFile:
         is subsequently used by the PartFromGeometryFile method.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.openAcis
 
@@ -154,9 +146,7 @@ class AcisFile:
         object is subsequently used by the PartFromGeometryFile method.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.openAcis
 
@@ -211,9 +201,7 @@ class AcisFile:
         This object is subsequently used by the PartFromGeometryFile method.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.openAcis
 
@@ -241,9 +229,7 @@ class AcisFile:
         object is subsequently used by the PartFromGeometryFile method.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.openAcis
 
@@ -273,9 +259,7 @@ class AcisFile:
         This object is subsequently used by the PartFromGeometryFile method.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.openAcis
 

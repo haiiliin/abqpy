@@ -12,9 +12,7 @@ class CompositeShellSection(GeometryShellSection):
     The CompositeShellSection object is derived from the GeometryShellSection object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].parts[name].compositeLayups[i].section
@@ -137,9 +135,7 @@ class CompositeShellSection(GeometryShellSection):
         """This method creates a CompositeShellSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].compositeLayups[i].CompositeShellSection
                 mdb.models[name].CompositeShellSection

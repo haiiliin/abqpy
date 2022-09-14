@@ -9,9 +9,7 @@ class RegisteredList(CommandRegister, list):
     The RegisteredList object is derived from the CommandRegister object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import customKernel
     """
@@ -21,9 +19,7 @@ class RegisteredList(CommandRegister, list):
         """This method creates a RegisteredList object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 customKernel.RegisteredList
 

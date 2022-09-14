@@ -11,9 +11,7 @@ class Mdb(AcisMdb, JobMdb):
     and analysis controls.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb
     """
@@ -35,9 +33,7 @@ class Mdb(AcisMdb, JobMdb):
         """This method creates a Model object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.Model
 

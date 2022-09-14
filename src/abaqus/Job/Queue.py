@@ -8,9 +8,7 @@ class Queue:
     be used as the **queue** argument to the Job method.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import job
             session.queues[name]
@@ -71,9 +69,7 @@ class Queue:
         Note:Remote queues are available only on Linux platforms.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.Queue
 

@@ -8,9 +8,7 @@ class NetworkDatabaseConnector:
     system.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.networkDatabaseConnectors[name]
     """
@@ -76,9 +74,7 @@ class NetworkDatabaseConnector:
         You can access only a remote output database; you cannot access a remote model database.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.NetworkDatabaseConnector
 

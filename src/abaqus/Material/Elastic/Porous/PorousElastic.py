@@ -7,9 +7,7 @@ class PorousElastic:
     r"""The PorousElastic object specifies elastic material properties for porous materials.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].porousElastic
@@ -55,9 +53,7 @@ class PorousElastic:
         """This method creates a PorousElastic object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].PorousElastic
                 session.odbs[name].materials[name].PorousElastic

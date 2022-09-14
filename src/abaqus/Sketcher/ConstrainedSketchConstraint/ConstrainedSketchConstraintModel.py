@@ -14,9 +14,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
     contained in their respective repositories.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import sketch
             mdb.models[name].sketches[name]
@@ -31,9 +29,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         objects of the same type and constrains them to be coincident.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].CoincidentConstraint
 
@@ -61,9 +57,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         coincide.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].ConcentricConstraint
 
@@ -91,9 +85,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         constrains them such that their lengths are equal.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].EqualLengthConstraint
 
@@ -117,9 +109,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         arcs and constrains them such that their radii are equal.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].EqualRadiusConstraint
 
@@ -144,9 +134,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         space. Both the location and the shape of the sketch geometry is fixed.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].FixedConstraint
 
@@ -169,9 +157,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         constrains it to be horizontal.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].HorizontalConstraint
 
@@ -193,9 +179,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         constrains it to be vertical.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].VerticalConstraint
 
@@ -219,9 +203,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         constrains them to be parallel.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].ParallelConstraint
 
@@ -248,9 +230,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         each other.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].PerpendicularConstraint
 
@@ -280,9 +260,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         vertices or lines.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].EqualDistanceConstraint
 
@@ -311,9 +289,7 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         ConstrainedSketchGeometry objects and constrains them to remain tangential.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].TangentConstraint
 

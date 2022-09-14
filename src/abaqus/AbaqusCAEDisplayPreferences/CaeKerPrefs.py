@@ -9,9 +9,7 @@ class CaeKerPrefs:
     """The CaeKerPrefs object contains the details of the sessionOptions.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import caePrefsAccess
             caePrefsAccess.openSessionOptions(...)

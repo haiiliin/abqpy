@@ -10,9 +10,7 @@ class ConstrainedSketchVertexArray(typing.List[ConstrainedSketchVertex]):
     """The ConstrainedSketchVertexArray is a sequence of ConstrainedSketchVertex objects.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import sketch
             mdb.models[name].sketches[name].vertices[i]

@@ -6,9 +6,7 @@ class MeanFieldMatrix:
     """The MeanFieldMatrix object specifies the matrix property.
 
     .. note::
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].constituents[name]
@@ -30,9 +28,7 @@ class MeanFieldMatrix:
         """This method creates a MeanFieldMatrix object.
 
         .. note::
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].meanFieldHomogenization.MeanFieldMatrix
                 session.odbs[name].materials[name].meanFieldHomogenization.MeanFieldMatrix

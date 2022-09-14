@@ -6,9 +6,7 @@ class Depvar:
     """The Depvar object specifies solution-dependent state variables.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].depvar
@@ -25,9 +23,7 @@ class Depvar:
         """This method creates a Depvar object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Depvar
                 session.odbs[name].materials[name].Depvar

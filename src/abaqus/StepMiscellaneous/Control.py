@@ -9,9 +9,7 @@ class Control:
     """The Control object is used to provide additional optional general solution controls.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].steps[name].control

@@ -27,9 +27,7 @@ class OdbAssembly(OdbAssemblyBase):
         created with this method results in a fixed system.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysByThreePoints
 
@@ -73,9 +71,7 @@ class OdbAssembly(OdbAssemblyBase):
         object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysByThreeNodes
 
@@ -118,9 +114,7 @@ class OdbAssembly(OdbAssemblyBase):
         line from the origin to the first node defines the rr-axis.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysByThreeCircNodes
 
@@ -158,9 +152,7 @@ class OdbAssembly(OdbAssemblyBase):
         The last argument is given in the form of an OdbMeshNode object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysBy6dofNode
 
@@ -187,9 +179,7 @@ class OdbAssembly(OdbAssemblyBase):
         """This method copies oneOdbDatumCsys object to a new OdbDatumCsys object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsys
 
@@ -215,9 +205,7 @@ class OdbAssembly(OdbAssemblyBase):
         """This method creates an OdbInstance object from an OdbPart object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].rootAssembly.Instance
 
@@ -262,9 +250,7 @@ class OdbAssembly(OdbAssemblyBase):
         """This method creates a OdbRigidBody object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].rootAssembly.instances[name].RigidBody
                 session.odbs[name].rootAssembly.RigidBody
@@ -315,9 +301,7 @@ class OdbAssembly(OdbAssemblyBase):
         assembly-level sets).
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet
                 session.odbs[name].rootAssembly.instances[name].NodeSet

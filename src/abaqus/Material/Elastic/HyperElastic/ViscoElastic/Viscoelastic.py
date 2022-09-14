@@ -11,9 +11,7 @@ class Viscoelastic:
     r"""The Viscoelastic object specifies dissipative behavior for use with elasticity.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].viscoelastic
@@ -114,9 +112,7 @@ class Viscoelastic:
         """This method creates a Viscoelastic object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Viscoelastic
                 session.odbs[name].materials[name].Viscoelastic

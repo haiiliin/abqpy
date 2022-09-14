@@ -12,9 +12,7 @@ class PropertyAssembly(AssemblyBase):
     created.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import assembly
             mdb.models[name].rootAssembly
@@ -33,9 +31,7 @@ class PropertyAssembly(AssemblyBase):
         """This method creates a SectionAssignment object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].SectionAssignment
                 mdb.models[name].rootAssembly.SectionAssignment

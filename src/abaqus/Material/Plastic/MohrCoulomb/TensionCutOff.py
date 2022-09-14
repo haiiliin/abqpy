@@ -8,9 +8,7 @@ class TensionCutOff:
     example the Mohr-Coulomb plasticity model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].mohrCoulombPlasticity.tensionCutOff
@@ -39,9 +37,7 @@ class TensionCutOff:
         """This method creates a TensionCutOff object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].mohrCoulombPlasticity.TensionCutOff
                 session.odbs[name].materials[name].mohrCoulombPlasticity.TensionCutOff

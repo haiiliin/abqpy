@@ -7,9 +7,7 @@ class SteadyStateSubspaceFrequency:
     modes.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].steps[name].frequencyRange[i]

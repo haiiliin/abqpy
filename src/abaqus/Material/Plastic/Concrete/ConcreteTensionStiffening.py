@@ -8,9 +8,7 @@ class ConcreteTensionStiffening:
     plasticity model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].concreteDamagedPlasticity.concreteTensionStiffening
@@ -64,9 +62,7 @@ class ConcreteTensionStiffening:
         """This method creates a ConcreteTensionStiffening object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].concreteDamagedPlasticity.ConcreteTensionStiffening.ConcreteTensionStiffeningials[name].concreteDamagedPlasticity.ConcreteTensionStiffening
             

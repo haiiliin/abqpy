@@ -8,9 +8,7 @@ class RemeshingRule:
     indicators written to the output database for a specified region of the model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import mesh
             mdb.models[name].remeshingRules[name]
@@ -128,9 +126,7 @@ class RemeshingRule:
         """This method creates a RemeshingRule object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].RemeshingRule
 

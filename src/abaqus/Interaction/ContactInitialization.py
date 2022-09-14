@@ -8,9 +8,7 @@ class ContactInitialization:
     constructor, members, or methods.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].contactInitializations[name]

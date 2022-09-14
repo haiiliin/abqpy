@@ -10,9 +10,7 @@ class AssembledFastener(Fastener):
     The AssembledFastener object is derived from the Fastener object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].engineeringFeatures.fasteners[name]
@@ -84,9 +82,7 @@ class AssembledFastener(Fastener):
         only under the assembly.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.AssembledFastener
                 mdb.models[name].rootAssembly.engineeringFeatures.AssembledFastener

@@ -22,9 +22,7 @@ class SymbolicConstant(str):
     symbolicConstants module.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             from symbolicConstants import *
             from abaqusConstants import *
@@ -35,9 +33,7 @@ class SymbolicConstant(str):
         """The SymbolicConstant method creates a SymbolicConstant object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 SymbolicConstant
 

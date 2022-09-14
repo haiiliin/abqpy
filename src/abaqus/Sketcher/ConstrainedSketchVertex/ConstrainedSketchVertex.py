@@ -8,9 +8,7 @@ class ConstrainedSketchVertex:
     """The ConstrainedSketchVertex object stores the vertex position.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import sketch
             mdb.models[name].sketches[name].vertices[i]
@@ -25,9 +23,7 @@ class ConstrainedSketchVertex:
         """This method creates a spot (construction point) located at the specified coordinates.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].Spot
 
