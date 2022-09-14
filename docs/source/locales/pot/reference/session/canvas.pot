@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-07 00:13+0000\n"
+"POT-Creation-Date: 2022-09-14 09:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -605,11 +605,11 @@ msgstr ""
 #: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:5
 #: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.unhighlight:5
 #: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:5
-msgid "This function can be accessed by:"
+msgid "This function can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Layer.py:docstring of abaqus.Canvas.Layer.Layer:12
-#: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:12
+#: ../../../../src/abaqus/Canvas/Layer.py:docstring of abaqus.Canvas.Layer.Layer:10
+#: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:10
 msgid "Check `Layer on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-layerpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -635,11 +635,11 @@ msgstr ""
 
 #: ../../../../src/abaqus/Canvas/Layer.py:docstring of abaqus.Canvas.Layer.Layer.moveAfter:23
 #: ../../../../src/abaqus/Canvas/Layer.py:docstring of abaqus.Canvas.Layer.Layer.moveBefore:23
-#: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:17
+#: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:15
 msgid "**name**"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:17
+#: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:15
 #: ../../docstring of abaqus.Annotation.AnnotationViewport.AnnotationViewport.name:2
 #: ../../docstring of abaqus.Canvas.Layer.Layer.name:2
 #: ../../docstring of abaqus.Canvas.Viewport.Viewport.name:2
@@ -647,11 +647,11 @@ msgstr ""
 msgid "A String specifying the repository key."
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:20
+#: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:18
 msgid "**copyViewName**"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:20
+#: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:18
 #: ../../None:8:<autosummary>:1
 #: ../../docstring of abaqus.Canvas.Layer.Layer.copyViewName:2
 msgid "A String specifying the name of the layer to copy."
@@ -666,11 +666,11 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:37
+#: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:35
 msgid ":obj:`Layer`"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:25
+#: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport.Layer:23
 msgid "A :py:class:`~abaqus.Canvas.Layer.Layer` object."
 msgstr ""
 
@@ -693,10 +693,10 @@ msgstr ""
 #: ../../../../src/abaqus/Canvas/Layer.py:docstring of abaqus.Canvas.Layer.Layer:5
 #: ../../../../src/abaqus/Canvas/MovieOptions.py:docstring of abaqus.Canvas.MovieOptions.MovieOptions:10
 #: ../../../../src/abaqus/Canvas/ViewportBase.py:docstring of abaqus.Canvas.ViewportBase.ViewportBase:7
-msgid "This object can be accessed by:"
+msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/Annotation/AnnotationViewport.py:docstring of abaqus.Annotation.AnnotationViewport.AnnotationViewport:13
+#: ../../../../src/abaqus/Annotation/AnnotationViewport.py:docstring of abaqus.Annotation.AnnotationViewport.AnnotationViewport:11
 msgid "Check `AnnotationViewport on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationviewportpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -981,7 +981,7 @@ msgstr ""
 msgid "The AttributeColorMap object is used to store values and attributes associated with AttributeColorMap type objects. AttributeColorMap objects can be modified using the methods described below. The methods accessed via the Viewport object cause the AttributeColorMap object to be updated in the session.viewports[name].colorMappings repository."
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/AttributeColorMap.py:docstring of abaqus.Canvas.AttributeColorMap.AttributeColorMap:16
+#: ../../../../src/abaqus/Canvas/AttributeColorMap.py:docstring of abaqus.Canvas.AttributeColorMap.AttributeColorMap:14
 msgid "Check `AttributeColorMap on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attributecolormappyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1098,7 +1098,7 @@ msgstr ""
 msgid "The DrawingArea object specifies the location and size of the drawing area used for placement of viewports."
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/DrawingArea.py:docstring of abaqus.Canvas.DrawingArea.DrawingArea:13
+#: ../../../../src/abaqus/Canvas/DrawingArea.py:docstring of abaqus.Canvas.DrawingArea.DrawingArea:11
 msgid "Check `DrawingArea on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-drawingareapyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1141,95 +1141,95 @@ msgstr ""
 msgid "This method highlights an object in the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:12
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:10
 msgid "Check `Highlight.highlight on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionhighlightpyc.htm?contextscope=all#simaker-functionhighlighthighlightpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:44
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.unhighlight:19
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:42
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.unhighlight:17
 msgid "**object**"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:17
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:15
 msgid "An object specifying the object in the current viewport to be highlighted. You can specify only a single object. Abaqus/CAE highlights only the edges of a face when highlighting a surface and a face together. The following objects are supported:"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:21
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:19
 msgid "**For the MDB**"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:23
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:21
 msgid "ConstrainedSketchVertex"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:24
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:22
 msgid "Edge"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:25
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:23
 msgid "Face"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:26
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:24
 msgid "Surface"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:27
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:25
 msgid "Cell"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:28
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:42
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:26
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:40
 msgid "Node"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:29
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:43
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:27
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:41
 msgid "Element"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:30
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:28
 msgid "Element face"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:31
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:29
 msgid "Element edge"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:32
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:30
 msgid "Feature"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:33
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:31
 msgid "Datum"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:34
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:32
 msgid "Instance"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:35
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:33
 msgid "Set"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:36
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:34
 msgid "Load"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:37
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:35
 msgid "Boundary condition"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:38
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:36
 msgid "Predefined field"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:39
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:44
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:37
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:42
 msgid "Display group"
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:40
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:38
 msgid "**For the ODB**"
 msgstr ""
 
@@ -1237,11 +1237,11 @@ msgstr ""
 msgid "This method removes highlighting from an object in the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.unhighlight:12
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.unhighlight:10
 msgid "Check `Highlight.unhighlight on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionhighlightpyc.htm?contextscope=all#simaker-functionhighlightunhighlightpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.unhighlight:17
+#: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.unhighlight:15
 msgid "An object specifying the object in the current viewport from which the highlighting will be removed. You can specify only a single object. See highlight for a list of supported objects."
 msgstr ""
 
@@ -1253,7 +1253,7 @@ msgstr ""
 msgid "The ImageOptions object stores settings that control how an image is rendered in a particular viewport. ImageOptions objects are accessed from the image options associated with a particular viewport. The ImageOptions object has no constructor; Abaqus creates the **imageOptions** member for a viewport when the viewport is created using the values in the **imageOptions** member of the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/ImageOptions.py:docstring of abaqus.Canvas.ImageOptions.ImageOptions:17
+#: ../../../../src/abaqus/Canvas/ImageOptions.py:docstring of abaqus.Canvas.ImageOptions.ImageOptions:15
 msgid "Check `ImageOptions on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imageoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1682,7 +1682,7 @@ msgstr ""
 msgid "The MovieOptions object stores settings that control how the movie background for an animation is rendered in a particular viewport. MovieOptions objects are accessed from the movie options associated with a particular viewport. The MovieOptions object has no constructor; Abaqus creates the **movieOptions** member for a viewport when the viewport is created using the values in the **movieOptions** member of the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/MovieOptions.py:docstring of abaqus.Canvas.MovieOptions.MovieOptions:17
+#: ../../../../src/abaqus/Canvas/MovieOptions.py:docstring of abaqus.Canvas.MovieOptions.MovieOptions:15
 msgid "Check `MovieOptions on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-movieoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1795,7 +1795,7 @@ msgstr ""
 msgid "A viewport is the container for the graphics generated by the application. TheViewport object stores the various settings that determine how objects are displayed within that viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/Canvas/ViewportBase.py:docstring of abaqus.Canvas.ViewportBase.ViewportBase:14
+#: ../../../../src/abaqus/Canvas/ViewportBase.py:docstring of abaqus.Canvas.ViewportBase.ViewportBase:12
 msgid "Check `ViewportBase on help.3ds.com/0.1. <https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all>`__."
 msgstr ""
 
