@@ -17,9 +17,7 @@ class Surface(Region):
     available from the **surface** member of the Assembly object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].allInternalSurfaces[name]
@@ -86,9 +84,7 @@ class Surface(Region):
         name='Surf-1')
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Surface
                 mdb.models[name].rootAssembly.Surface
@@ -194,9 +190,7 @@ class Surface(Region):
         """This method copies a surface from an existing surface.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Surface
                 mdb.models[name].rootAssembly.Surface
@@ -226,9 +220,7 @@ class Surface(Region):
         surfaces.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Surface
                 mdb.models[name].rootAssembly.Surface
@@ -257,9 +249,7 @@ class Surface(Region):
         """This method creates a surface from a sequence of element sets in a model database.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Surface
                 mdb.models[name].rootAssembly.Surface

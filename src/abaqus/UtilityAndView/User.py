@@ -14,9 +14,7 @@ def getInput(prompt: str, default: str = ""):
     enters data in the text field or accepts the optional default value that is displayed in
     the text field. When the user clicks the OK button, the getInput method reads the data
     from the dialog box and closes the dialog box. You can use a \t separator in the label
-    argument to provide a tooltip from the dialog box; for example
-    
-    .. code-block:: python
+    argument to provide a tooltip from the dialog box; for example::
     
         getInput('Enter a number:\tEnter the number of nodes to delete')
     
@@ -26,9 +24,7 @@ def getInput(prompt: str, default: str = ""):
         **-script**, **-replay**, or **-noGUI**.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             getInput
 
@@ -60,9 +56,7 @@ def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
     **-script**, **-replay**, or **-noGUI**.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             getInputs
 
@@ -101,9 +95,7 @@ def getWarningReply(message: str, buttons: str):
     displays a modal warning dialog box with a message and standard buttons. The user clicks
     the one of the standard buttons, the getWarningReply returns the corresponding button
     value and closes the dialog box. You can use a separator in the message argument to
-    provide a multi-line message in the warning dialog box; for example
-    
-    .. code-block:: python
+    provide a multi-line message in the warning dialog box; for example::
 
         from abaqus import *
         getWarningReply('Out of disk space!\nOkay to continue', (YES, NO))
@@ -114,9 +106,7 @@ def getWarningReply(message: str, buttons: str):
         **-start**, **-script**, **-replay**, or **-noGUI**.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             getWarningReply
 

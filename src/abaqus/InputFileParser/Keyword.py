@@ -7,9 +7,7 @@ class Keyword:
     Keyword objects are returned via the InputFile.parse() method.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import inpParser
     """

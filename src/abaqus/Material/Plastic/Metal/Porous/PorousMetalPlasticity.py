@@ -9,9 +9,7 @@ class PorousMetalPlasticity:
     """The PorousMetalPlasticity object specifies a porous metal plasticity model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].porousMetalPlasticity
@@ -50,9 +48,7 @@ class PorousMetalPlasticity:
         """This method creates a PorousMetalPlasticity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].PorousMetalPlasticity
                 session.odbs[name].materials[name].PorousMetalPlasticity

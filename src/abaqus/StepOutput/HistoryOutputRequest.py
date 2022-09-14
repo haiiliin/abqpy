@@ -9,9 +9,7 @@ class HistoryOutputRequest:
     """The HistoryOutputRequest object defines a history output request.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].historyOutputRequests[name]
@@ -82,9 +80,7 @@ class HistoryOutputRequest:
         """This method creates a HistoryOutputRequest object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].HistoryOutputRequest
 

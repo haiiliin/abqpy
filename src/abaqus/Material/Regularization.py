@@ -8,9 +8,7 @@ class Regularization:
     data.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].regularization
@@ -38,9 +36,7 @@ class Regularization:
         """This method creates a Regularization object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Regularization
                 session.odbs[name].materials[name].Regularization

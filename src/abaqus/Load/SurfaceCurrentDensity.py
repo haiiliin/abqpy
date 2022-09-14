@@ -10,9 +10,7 @@ class SurfaceCurrentDensity(Load):
     The SurfaceCurrentDensity object is derived from the Load object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].loads[name]
@@ -43,9 +41,7 @@ class SurfaceCurrentDensity(Load):
         """This method creates a SurfaceCurrentDensity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SurfaceCurrentDensity
 

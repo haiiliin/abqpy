@@ -6,9 +6,7 @@ class ActivateElements:
     definition.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name].steps[name].activateElements[key]
 
@@ -46,9 +44,7 @@ class ActivateElements:
         """This method creates an ActivateElements object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ActivateElements
 

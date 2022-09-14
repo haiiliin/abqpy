@@ -9,9 +9,7 @@ class PartModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name]
     """
@@ -27,9 +25,7 @@ class PartModel(ModelBase):
         """This method creates a Part object and places it in the parts repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Part
 

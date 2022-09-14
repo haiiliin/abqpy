@@ -12,9 +12,7 @@ class FieldLocation:
     addData method of a FieldOutput object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].steps[name].frames[i].fieldOutputs[name].locations[i]

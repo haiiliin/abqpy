@@ -8,9 +8,7 @@ class OptimizationConstraint:
     topology of the model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import optimization
             mdb.models[name].optimizationTasks[name].optimizationConstraints[name]
@@ -42,9 +40,7 @@ class OptimizationConstraint:
         """This method creates an OptimizationConstraint object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].OptimizationConstraint
 

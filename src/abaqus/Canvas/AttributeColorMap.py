@@ -12,9 +12,7 @@ class AttributeColorMap(_OptionsBase):
     repository.
 
     .. note::
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.viewports[name].colorMappings[name]
     """

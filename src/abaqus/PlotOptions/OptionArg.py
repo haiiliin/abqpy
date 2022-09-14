@@ -9,9 +9,7 @@ class OptionArg:
     command.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.defaultOdbDisplay.viewCutOptions.aboveOptions
@@ -82,9 +80,7 @@ class OptionArg:
         """This method creates an OptionArg object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 visualization.OptionArg
 

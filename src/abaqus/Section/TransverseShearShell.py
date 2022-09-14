@@ -6,9 +6,7 @@ class TransverseShearShell:
     shell section.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].sections[name].transverseShear
@@ -34,9 +32,7 @@ class TransverseShearShell:
         """This method creates a TransverseShearShell object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sections[name].TransverseShearShell
                 session.odbs[name].sections[name].TransverseShearShell

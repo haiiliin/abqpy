@@ -13,9 +13,7 @@ class PredefinedField:
     obtained through the predefined field repository of the Step object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].predefinedFields[name]

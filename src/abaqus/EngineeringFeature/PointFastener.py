@@ -13,9 +13,7 @@ class PointFastener(Fastener):
     The PointFastener object is derived from the Fastener object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].engineeringFeatures.fasteners[name]
@@ -193,9 +191,7 @@ class PointFastener(Fastener):
         the assembly.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.PointFastener
                 mdb.models[name].rootAssembly.engineeringFeatures.PointFastener

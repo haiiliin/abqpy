@@ -28,9 +28,7 @@ class AnimationUserData(UserDataBase):
         """This method creates an Arrow object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.Arrow
                 session.odbs[name].userData.Arrow
@@ -165,9 +163,7 @@ class AnimationUserData(UserDataBase):
         """This method creates a Text object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.Text
                 session.odbs[name].userData.Text

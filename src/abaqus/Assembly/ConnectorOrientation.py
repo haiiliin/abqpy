@@ -10,9 +10,7 @@ class ConnectorOrientation:
     connector.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import assembly
             mdb.models[name].rootAssembly.connectorOrientations[i]
@@ -75,9 +73,7 @@ class ConnectorOrientation:
         """This method creates a ConnectorOrientation object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.ConnectorOrientation
                 session.odbs[name].rootAssembly.ConnectorOrientation

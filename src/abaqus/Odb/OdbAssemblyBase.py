@@ -22,9 +22,7 @@ class OdbAssemblyBase:
     created.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].rootAssembly

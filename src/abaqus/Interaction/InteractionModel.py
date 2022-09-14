@@ -61,9 +61,7 @@ class InteractionModel(
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name]
     """
@@ -219,9 +217,7 @@ class InteractionModel(
         """This method creates an AcousticImpedance object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].AcousticImpedance
 
@@ -303,9 +299,7 @@ class InteractionModel(
         """This method creates an ActuatorSensor object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ActuatorSensor
 
@@ -400,9 +394,7 @@ class InteractionModel(
         """This method creates a CavityRadiation object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].CavityRadiation
 
@@ -629,9 +621,7 @@ class InteractionModel(
         """This method creates a ConcentratedFilmCondition object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ConcentratedFilmCondition
 
@@ -733,9 +723,7 @@ class InteractionModel(
         """This method creates a ConcentratedRadiationToAmbient object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ConcentratedRadiationToAmbient
 
@@ -816,9 +804,7 @@ class InteractionModel(
         """This method creates a ContactExp object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactExp
 
@@ -924,9 +910,7 @@ class InteractionModel(
         """This method creates a ContactStd object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactStd
 
@@ -1045,9 +1029,7 @@ class InteractionModel(
         """This method creates a CyclicSymmetry object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].CyclicSymmetry
 
@@ -1132,9 +1114,7 @@ class InteractionModel(
         """This method creates an ElasticFoundation object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ElasticFoundation
 
@@ -1179,9 +1159,7 @@ class InteractionModel(
         """This method creates a FilmCondition object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].FilmCondition
 
@@ -1271,9 +1249,7 @@ class InteractionModel(
         """This method creates an FluidCavity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].FluidCavity
 
@@ -1334,9 +1310,7 @@ class InteractionModel(
         """This method creates an FluidExchange object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].FluidExchange
 
@@ -1389,9 +1363,7 @@ class InteractionModel(
         """This method creates a FluidInflator object.
 
         .. note::
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].FluidInflator
 
@@ -1450,9 +1422,7 @@ class InteractionModel(
         """This method creates an IncidentWave object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].IncidentWave
 
@@ -1543,9 +1513,7 @@ class InteractionModel(
         """This method creates a ModelChange object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ModelChange
 
@@ -1606,9 +1574,7 @@ class InteractionModel(
         """This method creates a PressurePenetration object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].PressurePenetration
 
@@ -1676,9 +1642,7 @@ class InteractionModel(
         """This method creates a RadiationToAmbient object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].RadiationToAmbient
 
@@ -1747,9 +1711,7 @@ class InteractionModel(
         """This method creates a SelfContactExp object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SelfContactExp
 
@@ -1802,9 +1764,7 @@ class InteractionModel(
         """This method creates a SelfContactStd object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SelfContactStd
 
@@ -1864,9 +1824,7 @@ class InteractionModel(
         """This method creates a StdXplCosimulation object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].StdXplCosimulation
 
@@ -1928,9 +1886,7 @@ class InteractionModel(
         """This method creates a SurfaceToSurfaceContactExp object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SurfaceToSurfaceContactExp
 
@@ -2055,9 +2011,7 @@ class InteractionModel(
         """This method creates a SurfaceToSurfaceContactStd object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SurfaceToSurfaceContactStd
 
@@ -2232,9 +2186,7 @@ class InteractionModel(
         """This method creates an XFEMCrackGrowth object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].XFEMCrackGrowth
 

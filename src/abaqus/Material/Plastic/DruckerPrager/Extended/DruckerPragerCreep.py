@@ -7,9 +7,7 @@ class DruckerPragerCreep:
     r"""The DruckerPragerCreep object specifies creep for Drucker-Prager plasticity models.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].druckerPrager.druckerPragerCreep
@@ -54,9 +52,7 @@ class DruckerPragerCreep:
         """This method creates a DruckerPragerCreep object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].druckerPrager.DruckerPragerCreep
                 session.odbs[name].materials[name].druckerPrager.DruckerPragerCreep

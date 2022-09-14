@@ -7,9 +7,7 @@ class Expansion:
     r"""The Expansion object specifies thermal expansion.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].expansion
@@ -66,9 +64,7 @@ class Expansion:
         r"""This method creates an Expansion object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Expansion
                 session.odbs[name].materials[name].Expansion

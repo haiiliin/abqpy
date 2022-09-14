@@ -24,9 +24,7 @@ class JobSession(SessionBase):
         Note:Remote queues are available only on Linux platforms.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.Queue
 
