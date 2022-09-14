@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2016.3.2.dev14+gb4dac576\n"
+"Project-Id-Version: abqpy 2016.3.2.dev22+g8731c316\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 00:16+0000\n"
+"POT-Creation-Date: 2022-09-14 09:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,10 +46,10 @@ msgstr ""
 #: ../../../../src/abaqus/OdbDisplay/SymbolOptions.py:docstring of abaqus.OdbDisplay.SymbolOptions.SymbolOptions:16
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut:8
 #: ../../../../src/abaqus/OdbDisplay/ViewerOptions.py:docstring of abaqus.OdbDisplay.ViewerOptions.ViewerOptions:7
-msgid "This object can be accessed by:"
+msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/CommonOptions.py:docstring of abaqus.OdbDisplay.CommonOptions.CommonOptions:32
+#: ../../../../src/abaqus/OdbDisplay/CommonOptions.py:docstring of abaqus.OdbDisplay.CommonOptions.CommonOptions:30
 msgid "Check `CommonOptions on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-commonoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1098,7 +1098,7 @@ msgstr ""
 msgid "The ContourOptions object stores values and attributes associated with a contour plot. The ContourOptions object has no constructor command. Abaqus creates a *defaultOdbDisplay.contourOptions* member when you import the Visualization module. Abaqus creates a **contourOptions** member when it creates the OdbDisplay object, using the values from *defaultOdbDisplay.contourOptions*. Abaqus creates the **odbDisplay** member when a viewport is created, using the values from **defaultOdbDisplay**. ContourOptions objects are accessed in one of two ways: - The default contour options. These settings are used as defaults when other **contourOptions** members are created. These settings can be set to customize user preferences. - The contour options associated with a particular viewport. The ContourOptions object is derived from the DGContourOptions object."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/ContourOptions.py:docstring of abaqus.OdbDisplay.ContourOptions.ContourOptions:32
+#: ../../../../src/abaqus/OdbDisplay/ContourOptions.py:docstring of abaqus.OdbDisplay.ContourOptions.ContourOptions:30
 msgid "Check `ContourOptions on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contouroptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1735,7 +1735,7 @@ msgstr ""
 msgid "The DefaultOdbDisplay object is a limited-functionality version of the OdbDisplay object."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/DefaultOdbDisplay.py:docstring of abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay:14
+#: ../../../../src/abaqus/OdbDisplay/DefaultOdbDisplay.py:docstring of abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay:12
 msgid "Check `DefaultOdbDisplay on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-defaultodbdisplaypyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1857,7 +1857,7 @@ msgstr ""
 msgid "The DisplayBodyOptions object stores values and attributes that are common to all plot states. The DisplayBodyOptions object has no constructor command. Abaqus creates a *defaultOdbDisplay.displayBodyOptions* member when you import the Visualization module. Abaqus creates a **displayBodyOptions** member when it creates the OdbDisplay object, using the values from *defaultOdbDisplay.displayBodyOptions*. Abaqus creates the **odbDisplay** member when a viewport is created, using the values from **defaultOdbDisplay**. DisplayBodyOptions objects are accessed in one of two ways: - The default display body options. These settings are used as defaults when other **displayBodyOptions** members are created. These settings can be set to customize user preferences. - The display body options associated with a particular viewport. The DisplayBodyOptions object is derived from the DGDisplayBodyOptions object."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/DisplayBodyOptions.py:docstring of abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions:33
+#: ../../../../src/abaqus/OdbDisplay/DisplayBodyOptions.py:docstring of abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions:31
 msgid "Check `DisplayBodyOptions on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displaybodyoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1942,7 +1942,7 @@ msgstr ""
 msgid "The OdbDisplay object stores the context of an output database for a viewport. The OdbDisplay object has no constructor. Abaqus creates the **defaultOdbDisplay** member when you import the Visualization module. Abaqus creates the **odbDisplay** member when a viewport is created, using the attributes from the previous active viewport. The previous active viewport contains the attributes from the **defaultOdbDisplay** object for the session. The attributes from the **defaultOdbDisplay** object are copied from the previous active viewport to create the new viewport. OdbDisplay objects are accessed in one of two ways: - The default output database display options. These settings are used as defaults when other **odbDisplay** members are created and can be set to customize user preferences. - The output database display options associated with a particular viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay:24
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay:22
 msgid "Check `OdbDisplay on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -2272,115 +2272,115 @@ msgid "This method creates a ViewCut object."
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:5
-msgid "This function can be accessed by:"
+msgid "This function can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:13
-#: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut:17
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:11
+#: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut:15
 msgid "Check `ViewCut on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewcutpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:18
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:16
 msgid "**name**"
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:18
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:16
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.name:2
 msgid "A String specifying the repository key."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:22
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:20
 msgid "**shape**"
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:21
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:19
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.shape:2
 msgid "A SymbolicConstant specifying the shape of the ViewCut object. Possible values are PLANE, CYLINDER, SPHERE, and ISOSURFACE."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:27
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:25
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:52
 msgid "**origin**"
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:25
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:23
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:50
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.origin:2
 msgid "A sequence of three Floats specifying the X-, Y-, and Z-coordinates of the origin of the plane, cylinder or sphere cut. This origin is not required if the cut shape is ISOSURFACE or if the cut is defined by the **csysName** argument."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:34
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:32
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:59
 msgid "**normal**"
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:30
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:28
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:55
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.normal:2
 msgid "A sequence of Floats specifying the X-, Y-, and Z-coordinates of the normal axis to the plane defining the cut, when the plane is defined using the **origin** argument or a SymbolicConstant defining this normal axis, when the cut is defined by the **csysName** argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is not required if the cut **shape** is CYLINDER, SPHERE or ISOSURFACE."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:41
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:39
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:66
 msgid "**axis2**"
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:37
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:35
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:62
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.axis2:2
 msgid "A sequence of three Floats specifying the X-, Y-, and Z-coordinates of the second axis of the plane defining the cut, when the plane is defined using the **origin** argument or a SymbolicConstant defining this second axis, when the cut is defined by the **csysName** argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is used to rotate the plane cut. It is not required if the cut **shape** is CYLINDER, SPHERE or ISOSURFACE."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:46
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:44
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:47
 msgid "**csysName**"
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:44
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:42
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:45
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.csysName:2
 msgid "A String specifying the name of the DatumCsys object to be used to define the cut. This name is not required if the cut **shape** is ISOSURFACE or if the cut is defined by the **origin** argument."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:53
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:51
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:73
 msgid "**cylinderAxis**"
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:49
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:47
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:69
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.cylinderAxis:2
 msgid "A sequence of Floats specifying the X-, Y-, and Z-coordinates of the cylinder axis defining the cut, when the cut is defined using the **origin** argument or a SymbolicConstant defining this cylinder axis, when the cut is defined by the **csysName** argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is not required if the cut **shape** is PLANE, SPHERE, or ISOSURFACE."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:57
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:55
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:77
 msgid "**followDeformation**"
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:56
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:54
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:76
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.followDeformation:2
 msgid "A Boolean specifying whether the cut will follow the deformation or be static. The default value is OFF."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:62
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:60
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:82
 msgid "**overrideAveraging**"
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:60
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:58
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:80
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.overrideAveraging:2
 msgid "A Boolean specifying averaging for element based fields associated with isosurface cuts will be set to compute-average with a threshold of 100% when true. The current field options will be used when false. The default value is ON."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:67
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:65
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:100
 msgid "**referenceFrame**"
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:65
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:63
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:85
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.referenceFrame:2
 msgid "A SymbolicConstant specifying which reference frame will be used when the cut follows the deformation. Possible values are FIRST_FRAME, LAST_FRAME, and CURRENT_FRAME. The default value is FIRST_FRAME."
@@ -2390,11 +2390,11 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:84
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:82
 msgid ":obj:`ViewCut`"
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:72
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:70
 msgid "A :py:class:`~abaqus.OdbDisplay.ViewCut.ViewCut` object."
 msgstr ""
 
@@ -2742,7 +2742,7 @@ msgid "Check `OdbDisplay.setPrimarySectionPoint on help.3ds.com/2016 <https://he
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:14
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:42
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:40
 #: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:35
 #: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:37
 msgid "**sectionPoint**"
@@ -2770,7 +2770,7 @@ msgid ":obj:`If` :obj:`the` :obj:`viewport` :obj:`is` :obj:`not` :obj:`associate
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:26
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:47
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:45
 #: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:63
 #: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable:20
 #: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:54
@@ -2814,10 +2814,10 @@ msgid "A sequence of a SymbolicConstant and a String. Possible values for the Sy
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:29
-msgid "A Dictionary with String keys and String values. Each key specifies a region in the model; the corresponding value specifies a section point within that region. For example:"
+msgid "A Dictionary with String keys and String values. Each key specifies a region in the model; the corresponding value specifies a section point within that region. For example::"
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:56
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:54
 msgid ":obj:`If` :obj:`the` :obj:`viewport` :obj:`is` :obj:`not` :obj:`associated` :obj:`with` :obj:`any` :obj:`Odb` :obj:`object`"
 msgstr ""
 
@@ -2939,7 +2939,7 @@ msgstr ""
 msgid "The OrientationOptions object stores values and attributes associated with a material orientation plot. The OrientationOptions object has no constructor command. Abaqus creates a *defaultOdbDisplay.materialOrientationOptions* member when you import the Visualization module. Abaqus creates a **materialOrientationOptions** member when it creates the OdbDisplay object, using the values from *defaultOdbDisplay.materialOrientationOptions*. Abaqus creates the **odbDisplay** member when a viewport is created, using the values from **defaultOdbDisplay**. OrientationOptions objects are accessed in one of two ways: - The default material orientation options. These settings are used as defaults when other **materialOrientationOptions** members are created. These settings can be set to customize user preferences. - The material orientation options associated with a particular viewport. The OrientationOptions object is derived from the DGOrientationOptions object."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/OrientationOptions.py:docstring of abaqus.OdbDisplay.OrientationOptions.OrientationOptions:33
+#: ../../../../src/abaqus/OdbDisplay/OrientationOptions.py:docstring of abaqus.OdbDisplay.OrientationOptions.OrientationOptions:31
 msgid "Check `OrientationOptions on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-orientationoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -3155,7 +3155,7 @@ msgstr ""
 msgid "The SuperimposeOptions object stores values and attributes associated with the undeformed shape when the display contains both the deformed shape and the undeformed shape. The SuperimposeOptions object has no constructor command. Abaqus creates a *defaultOdbDisplay.superimposeOptions* member when you import the Visualization module. Abaqus creates a **superimposeOptions** member when it creates the OdbDisplay object, using the values from *defaultOdbDisplay.superimposeOptions*. Abaqus creates the **odbDisplay** member when a viewport is created, using the values from **defaultOdbDisplay**. SuperimposeOptions objects are accessed in one of two ways: - The default superimpose options. These settings are used as defaults when other **superimposeOptions** members are created. These settings can be set to customize user preferences. - The superimpose options associated with a particular viewport. The SuperimposeOptions object is derived from the DGSuperimposeOptions object."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/SuperimposeOptions.py:docstring of abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions:34
+#: ../../../../src/abaqus/OdbDisplay/SuperimposeOptions.py:docstring of abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions:32
 msgid "Check `SuperimposeOptions on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-superimposeoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -3443,7 +3443,7 @@ msgstr ""
 msgid "The SymbolOptions object stores values and attributes associated with a symbol plot. The SymbolOptions object has no constructor command. Abaqus creates a *defaultOdbDisplay.symbolOptions* member when you import the Visualization module. Abaqus creates a **symbolOptions** member when it creates the OdbDisplay object, using the values from *defaultOdbDisplay.symbolOptions*. Abaqus creates the **odbDisplay** member when a viewport is created, using the values from **defaultOdbDisplay**. SymbolOptions objects are accessed in one of two ways: - The default symbol options. These settings are used as defaults when other **symbolOptions** members are created. These settings can be set to customize user preferences. - The symbol options associated with a particular viewport. The SymbolOptions object is derived from the DGSymbolOptions object."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/SymbolOptions.py:docstring of abaqus.OdbDisplay.SymbolOptions.SymbolOptions:32
+#: ../../../../src/abaqus/OdbDisplay/SymbolOptions.py:docstring of abaqus.OdbDisplay.SymbolOptions.SymbolOptions:30
 msgid "Check `SymbolOptions on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-symboloptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -4412,7 +4412,7 @@ msgstr ""
 msgid "The ViewerOptions object specifies options to set the result caching parameters. The ViewerOptions object has no constructor. Abaqus creates the **viewerOptions** member when a session is started."
 msgstr ""
 
-#: ../../../../src/abaqus/OdbDisplay/ViewerOptions.py:docstring of abaqus.OdbDisplay.ViewerOptions.ViewerOptions:15
+#: ../../../../src/abaqus/OdbDisplay/ViewerOptions.py:docstring of abaqus.OdbDisplay.ViewerOptions.ViewerOptions:13
 msgid "Check `ViewerOptions on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vieweroptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
