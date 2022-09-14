@@ -3,13 +3,14 @@
 name: Read the Docs Pull Request Preview
 on:
   pull_request_target:
-    types: [opened, reopened, synchronize]
+    types: [labeled]
 
 permissions:
   pull-requests: write
 
 jobs:
   rtd-preview:
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'rtd-preview') }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
