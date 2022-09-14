@@ -1,0 +1,22 @@
+# .github/workflows/rtd-preview.yml
+
+name: Read the Docs Pull Request Preview
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  rtd-preview:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project-slug: ["abqpy", "abqpy-zh-cn"]
+    steps:
+      - name: Pull Request Preview For Read the Docs (${{ matrix.project-slug }})
+        uses: readthedocs/actions/preview@v1
+        with:
+          project-slug: ${{ matrix.project-slug }}
