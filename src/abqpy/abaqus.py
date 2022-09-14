@@ -2,7 +2,7 @@ import os
 import sys
 
 
-def run(exit_after=True):
+def run(cae=True, exit_after=True):
     abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
     filePath = os.path.abspath(sys.modules['__main__'].__file__)
     args = " ".join(sys.argv[1:])
@@ -14,6 +14,9 @@ def run(exit_after=True):
         filePath = str(filePath).replace(".ipynb", ".py")
     except (FileNotFoundError, ImportError, Exception):
         pass
-    os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
+    if cae:
+        os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
+    else:
+        os.system(f"{abaqus} python {filePath} {args}")
     if exit_after:
         sys.exit(0)
