@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2019.3.2.dev14+g222dc76c\n"
+"Project-Id-Version: abqpy 2019.3.2.dev22+g214caa65\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 00:16+0000\n"
+"POT-Creation-Date: 2022-09-14 09:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,13 +77,13 @@ msgid "The AbaqusBoolean object is used in a similar way to the SymbolicConstant
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/AbaqusBoolean.py:docstring of abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean:17
-#: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:44
+#: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:38
 #: ../../../../src/abaqus/UtilityAndView/SymbolicConstant.py:docstring of abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant:16
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View:11
-msgid "This object can be accessed by:"
+msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/AbaqusBoolean.py:docstring of abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean:25
+#: ../../../../src/abaqus/UtilityAndView/AbaqusBoolean.py:docstring of abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean:23
 msgid "Check `AbaqusBoolean on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-abaqusbooleanpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -646,18 +646,22 @@ msgid "The BackwardCompatibility object enables the user to control access to de
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:14
-msgid "From the command line interface in Abaqus/CAE or from an Abaqus Scripting Interface script that is run from within Abaqus/CAE, use the following command:"
+msgid "From the command line interface in Abaqus/CAE or from an Abaqus Scripting Interface script that is run from within Abaqus/CAE, use the following command::"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:21
-msgid "From an Abaqus Scripting Interface script that is run using `abaqus python` at the system prompt, use the following two commands:"
+#: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:19
+msgid "From an Abaqus Scripting Interface script that is run using `abaqus python` at the system prompt, use the following two commands::"
+msgstr ""
+
+#: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:25
+msgid "In addition, the BackwardCompatibility object provides tools to assist you in determining the deprecated commands that have been used. For example, to determine the deprecated commands used in the script createLug.py, use the following commands::2"
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:29
-msgid "In addition, the BackwardCompatibility object provides tools to assist you in determining the deprecated commands that have been used. For example, to determine the deprecated commands used in the script createLug.py, use the following commands:"
+msgid "backwardCompatibility.resetDeprecatedMethodsUsed() backwardCompatibility.resetDeprecatedMembersUsed() backwardCompatibility.resetDeprecatedArgsUsed() execfile('createLug.py') print backwardCompatibility.getDeprecatedMethodsUsed() print backwardCompatibility.getDeprecatedMembersUsed() print backwardCompatibility.getDeprecatedArgsUsed()"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:51
+#: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:43
 msgid "Check `BackwardCompatibility on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-backwardcompatibilitypyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -820,48 +824,48 @@ msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:7
 #: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.removeImportCallback:5
-#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:21
+#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:19
 #: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:9
 #: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:6
 #: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:6
 #: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:10
-#: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:19
-msgid "This function can be accessed by:"
+#: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:17
+msgid "This function can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:14
+#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:12
 msgid "Check `Callback.addImportCallback on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functioncallbackpyc.htm?contextscope=all#simaker-functioncallbackaddimportcallbackpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:19
+#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:17
 msgid "**moduleName**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:19
+#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:17
 msgid "A String specifying the name of a specified Abaqus/CAE module."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:24
-#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.removeImportCallback:18
-#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:25
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:32
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:32
+#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:22
+#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.removeImportCallback:16
+#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:23
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:30
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:30
 msgid "**callback**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:22
+#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:20
 msgid "A Python function to be called. The interface definition of the callback function is `def functionName(moduleName, userData)`. **moduleName** is a String. **userData** is the object passed as the **userData** argument to the addImportCallback method."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:40
-#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.removeImportCallback:35
-#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:35
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:36
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:49
+#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:38
+#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.removeImportCallback:33
+#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:33
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:34
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:47
 msgid "**userData**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:27
+#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:25
 msgid "Any Python object or None. This object is passed to the callback function."
 msgstr ""
 
@@ -869,15 +873,15 @@ msgstr ""
 msgid "This function removes a callback added in addImportCallback."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.removeImportCallback:12
+#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.removeImportCallback:10
 msgid "Check `Callback.removeImportCallback on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functioncallbackpyc.htm?contextscope=all#simaker-functioncallbackremoveimportcallbackpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.removeImportCallback:17
+#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.removeImportCallback:15
 msgid "A Python function to be called; it must be the same as the **callback** argument specified in the original call to addImportCallback."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.removeImportCallback:21
+#: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.removeImportCallback:19
 msgid "Any Python object or None; it must be the same as the **userData** argument specified in the original call to addImportCallback."
 msgstr ""
 
@@ -890,48 +894,48 @@ msgid "The following command is used to record a user-defined command in the Aba
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:2
-msgid "This function may be used by a user-defined command to record itself in the Abaqus journal file. For example"
+msgid "This function may be used by a user-defined command to record itself in the Abaqus journal file. For example::"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:15
+#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:13
 msgid "Your command should not call journalMethodCall if the command changes the mdb using built-in Abaqus Scripting Interface commands, because built-in commands are journaled by default. A command that changes the mdb customData is one example of a command that should call journalMethodCall."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:28
+#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:24
 msgid "Check `Customization.journalMethodCall on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functioncustomizationpyc.htm?contextscope=all#simaker-functioncustomizationjournalmethodcallpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:33
+#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:29
 msgid "**objectPath**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:33
+#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:29
 msgid "A String specifying the path to the object."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:36
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:23
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:23
+#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:32
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:21
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:21
 msgid "**methodName**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:36
+#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:32
 msgid "A String specifying the name of the method."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:39
+#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:35
 msgid "**args**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:39
+#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:35
 msgid "A sequence specifying the positional arguments to be written to the journal file."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:55
+#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:51
 msgid "**kargs**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:42
+#: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization.journalMethodCall:38
 msgid "A Python dict object specifying the keyword arguments to be written to the journal file."
 msgstr ""
 
@@ -943,33 +947,33 @@ msgstr ""
 msgid "This method adds a callback function that will be invoked when the specified Abaqus Scripting Interface objects are about to be deleted. The callback is invoked only when the object is deleted using the Python statement del object. The callback is not invoked when the object is deleted using an Abaqus Scripting Interface command such as mdb.models[name].parts[name].deleteFeature()."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:16
+#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:14
 msgid "Check `Delete.deleteObjectCallback on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiondeletepyc.htm?contextscope=all#simaker-functiondeletedeleteobjectcallbackpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:21
+#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:19
 msgid "A Python function to be called when an object matching the specified path is about to be deleted. The interface definition of the callback function is `def functionName(objectPath, userData)` where **objectPath** is the path to the object about to be deleted. **userData** is the object passed as the **userData** argument to the addCallback method."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:31
+#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:29
 msgid "**path**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:28
+#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:26
 msgid "A String specifying the path to an object or the SymbolicConstant ANY. You can include wildcards in the path to specify a pattern to be matched. Examples of valid paths are  `path='mdb.models[*]' path=\"mdb.models['Axle*'].parts[*]\"`, and `path='mdb.models[*].materials[*]'`"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:34
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:35
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:35
+#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:32
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:33
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:33
 msgid "Any type of data. This data will be passed to the callback function. The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:52
+#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:50
 msgid "**includeChildren**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:38
+#: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:36
 msgid "A Boolean specifying that the callback should be called if an object owned by the object specified by the **path** argument is about to be deleted. The default value is False."
 msgstr ""
 
@@ -981,34 +985,34 @@ msgstr ""
 msgid "This method adds a callback function that will be invoked when certain Abaqus/CAE commands are about to be executed."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:13
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:11
 msgid "Check `Method.addCallback on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionmethodpyc.htm?contextscope=all#simaker-functionmethodaddcallbackpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:19
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:19
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:17
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:17
 msgid "**caller**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:18
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:18
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:16
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:16
 msgid "An object or type object specifying which object will trigger the callback function to be invoked or the Symbolic Constant ALL_TYPES."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:22
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:22
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:20
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:20
 msgid "A String specifying the name of the method on the caller that will trigger the callback function to be invoked or the Symbolic Constant ALL_METHODS."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:26
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:24
 msgid "A Python function to be called when a command matching the specified caller and method name is about to be executed. The interface definition of the callback function is `def functionName(callingMethod, args, keywordArgs, userData)` where **callingMethod** is the method that called this function. **args** is the sequence of non-keyword arguments that was passed to the calling method. **keywordArgs** is the dictionary of keyword arguments that was passed to the calling method. **userData** is the object passed as the **userData** argument to the addCallback method."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:57
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:55
 msgid "**callAfter**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:39
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:37
 msgid "A Boolean specifying that the callback should be called after the method has executed (instead of before the method is called). The default value is False, which indicates that the callback should be called before the method has executed. If **callAfter** = True, you can also access the return value of the command from within the callback by including the following statement `returnValue = getMethodReturnValue()` The getMethodReturnValue function is in the global namespace of the callback function."
 msgstr ""
 
@@ -1016,11 +1020,11 @@ msgstr ""
 msgid "This method removes a callback added by the addCallback method. To successfully remove a callback, all arguments must exactly match those used when the callback was added."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:13
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:11
 msgid "Check `Method.removeCallback on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionmethodpyc.htm?contextscope=all#simaker-functionmethodremovecallbackpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:26
+#: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:24
 msgid "A Python function to be called when a command matching the specified caller and method name is about to be executed. The interface definition of the callback function is `def functionName(callingMethod, args, keywordArgs, userData)` where **callingMethod** is the method that called this function. **args** is the sequence of nonkeyword arguments that was passed to the calling method. **keywordArgs** is the dictionary of keyword arguments that was passed to the calling method. **userData** is the object passed as the **userData** argument to the removeCallback method."
 msgstr ""
 
@@ -1267,7 +1271,7 @@ msgstr ""
 msgid "The SymbolicConstant object represents a string in a way that can be stored in a replay file and used as an argument to Abaqus Scripting Interface methods and functions. By convention the string representation of the SymbolicConstant object is the same as its variable name. If you pass a SymbolicConstant object to the Python repr() function, the function returns the text without quotes. In effect, the text is the variable that, by convention, refers to the SymbolicConstant object. Two SymbolicConstant objects with the same text are the same Python object, although you can assign them to different variables. All of the SymbolicConstant objects that are required in Abaqus Scripting Interface methods are defined in the abaqusConstants module. Some SymbolicConstant objects and the SymbolicConstant constructor are defined in the abaqus module. The SymbolicConstant constructor is also defined in the symbolicConstants module."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/SymbolicConstant.py:docstring of abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant:24
+#: ../../../../src/abaqus/UtilityAndView/SymbolicConstant.py:docstring of abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant:22
 msgid "Check `SymbolicConstant on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-symbolicconstantpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1800,87 +1804,87 @@ msgstr ""
 msgid "This function can be used to upgrade a directory, a file, or a list of both directories and files. You can preview the changes before you choose to upgrade the file. A user interface to this function is available via the Plug-ins menu. For more information, see Upgrading a script. You can also use a simpler interface from the command line to upgrade scripts. For more information, see the summary of changed commands at the end of this guide."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:17
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:15
 msgid "Check `Upgrade.upgradeScript on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionupgradepyc.htm?contextscope=all#simaker-functionupgradeupgradescriptpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:25
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:23
 msgid "**fileNames**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:22
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:20
 msgid "A String or sequence of Strings specifying the files or directories to upgrade. If a directory path is found, it will be searched for files with the suffix .py or .guiLog. If **searchSubdirectories** is True, any directories found within a directory will also be searched."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:31
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:29
 msgid "**searchSubdirectories**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:28
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:26
 msgid "A Boolean specifying whether to search any subdirectories (if the file name is a directory). If **searchSubdirectories** is True, the command will search the subdirectories of any directory in **fileNames**. If **searchSubdirectories** is False, the command will search the directory but not the subdirectories. The default value is True."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:35
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:33
 msgid "**backup**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:34
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:32
 msgid "A Boolean specifying whether to make backups of the files. The default value is True. This argument is ignored if **preview** is set."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:41
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:39
 msgid "**preview**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:38
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:36
 msgid "A Boolean specifying whether to preview the changes to the file instead of changing the file. If **preview** is True, display a preview of the file changes. The default value is True.By default, the preview is displayed in a web browser. The **diffExecutable** argument allows you to specify a different application in which to preview the changes."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:47
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:45
 msgid "**diffExecutable**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:44
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:42
 msgid "A String specifying the application used to display the differences between the script and the upgraded script. The default value is an empty string, and the differences are displayed by a web browser. Examples of values for **diffExecutable** are winmerge and diff. This argument is ignored if **preview** is False."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:51
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:49
 msgid "**logFileName**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:50
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:48
 msgid "A String specifying the name of the log file where any warnings and changes found during the upgrade are written. The default value is asiUpgrade.log."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:55
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:53
 msgid "**fromVersion**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:54
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:52
 msgid "A String specifying the Abaqus release from which to upgrade. The default value is EARLIEST."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:58
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:56
 msgid "**toVersion**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:58
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:56
 msgid "A String specifying the Abaqus release to which to upgrade. The default value is LATEST."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:64
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:62
 msgid "**scriptType**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:61
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:59
 msgid "A SymbolicConstant specifying the type of scripting commands to be upgraded. Possible values are KERNEL, GUI, or BOTH. If **scriptType** is KERNEL only Abaqus Scripting Interface commands will be upgraded; if **scriptType** is GUI only Abaqus GUI Toolkit commands will be upgraded. The default value is BOTH."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:82
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:80
 msgid ":class:`python:int`"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:69
+#: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:67
 msgid "The number of changes made or, if **preview** was used, the number of changes that would have been made."
 msgstr ""
 
@@ -1893,34 +1897,34 @@ msgid "The following commands are used to request data entry from a user."
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:2
-msgid "This method is used to obtain a reply from a user from a warning dialog box. The method displays a modal warning dialog box with a message and standard buttons. The user clicks the one of the standard buttons, the getWarningReply returns the corresponding button value and closes the dialog box. You can use a separator in the message argument to provide a multi-line message in the warning dialog box; for example"
+msgid "This method is used to obtain a reply from a user from a warning dialog box. The method displays a modal warning dialog box with a message and standard buttons. The user clicks the one of the standard buttons, the getWarningReply returns the corresponding button value and closes the dialog box. You can use a separator in the message argument to provide a multi-line message in the warning dialog box; for example::"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:14
+#: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:12
 msgid "You cannot use a script that contains getWarningReply if you are running the script from the command line and passing the script name to the command line options **-start**, **-script**, **-replay**, or **-noGUI**."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:26
+#: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:22
 msgid "Check `User.getWarningReply on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionuserpyc.htm?contextscope=all#simaker-functionusergetwarningreplypyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:31
+#: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:27
 msgid "**message**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:31
+#: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:27
 msgid "A String specifying the message in the warning dialog box."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:35
+#: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:31
 msgid "**buttons**"
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:34
+#: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:30
 msgid "A Sequence of standard buttons to be displayed in the warning dialog box. Permissible values are YES, NO, YES_TO_ALL and CANCEL."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:52
+#: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:48
 msgid ":obj:`The` :obj:`button` :obj:`that` :obj:`the` :obj:`user` clicks."
 msgstr ""
 
@@ -1932,7 +1936,7 @@ msgstr ""
 msgid "The Session and Viewport View objects store view settings for custom (both predefined and user-defined) views. The paradigm used to define a view is based on a camera analogy. Similar to taking a photograph with a camera, features such as camera position, view direction, orientation, depth of field, and projection are specified to transform three-dimensional views to the screen. The Layer View objects store a transformation matrix used to position the contents of the Layer within a viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View:20
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View:18
 msgid "Check `View on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewpyc.htm?contextscope=all>`__."
 msgstr ""
 
