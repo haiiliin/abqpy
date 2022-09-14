@@ -11,9 +11,7 @@ class ConstructionLine(ConstrainedSketchGeometry):
         """This method creates an oblique construction line that runs between two given points.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].ConstructionLine
 

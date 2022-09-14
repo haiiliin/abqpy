@@ -9,9 +9,7 @@ class CrushableFoam:
     r"""The CrushableFoam object specifies the crushable foam plasticity model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].crushableFoam
@@ -62,9 +60,7 @@ class CrushableFoam:
         """This method creates a CrushableFoam object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].CrushableFoam
                 session.odbs[name].materials[name].CrushableFoam

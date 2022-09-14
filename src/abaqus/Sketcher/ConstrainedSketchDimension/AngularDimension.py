@@ -23,9 +23,7 @@ class AngularDimension(ConstrainedSketchDimension):
         ConstrainedSketchGeometry objects, with the given angle between them.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].AngularDimension
 

@@ -14,9 +14,7 @@ class ConnectorPotential:
     that behavior—IniPotential and EvoPotential.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i]
@@ -84,9 +82,7 @@ class ConnectorPotential:
         allowable connector behavior option.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].ConnectorPotential
                 session.odbs[name].sections[name].behaviorOptions[i].ConnectorPotential
@@ -146,9 +142,7 @@ class ConnectorPotential:
         """This method creates a DerivedComponent object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].ConnectorPotential
                 session.odbs[name].sections[name].behaviorOptions[i].ConnectorPotential

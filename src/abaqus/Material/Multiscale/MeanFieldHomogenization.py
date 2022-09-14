@@ -10,9 +10,7 @@ class MeanFieldHomogenization:
     """The MeanFieldHomogenization object specifies the multiscale material definition.
 
     .. note::
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].meanFieldHomogenization
@@ -38,9 +36,7 @@ class MeanFieldHomogenization:
         """This method creates a MeanFieldHomogenization object.
 
         .. note::
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MeanFieldHomogenization
                 session.odbs[name].materials[name].MeanFieldHomogenization
@@ -91,9 +87,7 @@ class MeanFieldHomogenization:
         """This method creates a MeanFieldInclusion object.
 
         .. note::
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].meanFieldHomogenization.MeanFieldInclusion
                 session.odbs[name].materials[name].meanFieldHomogenization.MeanFieldInclusion
@@ -168,9 +162,7 @@ class MeanFieldHomogenization:
         """This method creates a MeanFieldMatrix object.
 
         .. note::
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].meanFieldHomogenization.MeanFieldMatrix
                 session.odbs[name].materials[name].meanFieldHomogenization.MeanFieldMatrix
@@ -216,9 +208,7 @@ class MeanFieldHomogenization:
         """This method creates a MeanFieldVoid object.
 
         .. note::
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].meanFieldHomogenization.MeanFieldVoid
                 session.odbs[name].materials[name].meanFieldHomogenization.MeanFieldVoid

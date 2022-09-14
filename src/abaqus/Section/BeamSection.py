@@ -12,9 +12,7 @@ class BeamSection(Section):
     The BeamSection object is derived from the Section object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].sections[name]
@@ -195,9 +193,7 @@ class BeamSection(Section):
         """This method creates a BeamSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].BeamSection
                 session.odbs[name].BeamSection

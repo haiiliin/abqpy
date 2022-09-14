@@ -8,9 +8,7 @@ class TProfile(Profile):
     The TProfile object is derived from the Profile object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].profiles[name]
@@ -50,9 +48,7 @@ class TProfile(Profile):
         """This method creates a TProfile object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].TProfile
                 session.odbs[name].TProfile

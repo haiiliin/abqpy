@@ -10,9 +10,7 @@ class TextStyle:
     methods described below.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.charts[name].axes1[i].labelStyle
@@ -67,9 +65,7 @@ class TextStyle:
         """This method creates a TextStyle.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.TextStyle
                 xyPlot.TextStyle

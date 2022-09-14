@@ -29,9 +29,7 @@ class XYSession(XYSessionBase):
         """This method creates an AreaStyle.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.AreaStyle
                 xyPlot.AreaStyle
@@ -71,9 +69,7 @@ class XYSession(XYSessionBase):
         """This method creates a LineStyle.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.LineStyle
                 xyPlot.LineStyle
@@ -112,9 +108,7 @@ class XYSession(XYSessionBase):
         """This method creates a QuantityType object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.QuantityType
                 xyPlot.QuantityType
@@ -220,9 +214,7 @@ class XYSession(XYSessionBase):
         """This method creates a SymbolStyle object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.SymbolStyle
                 xyPlot.SymbolStyle
@@ -276,9 +268,7 @@ class XYSession(XYSessionBase):
         """This method creates a TextStyle.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.TextStyle
                 xyPlot.TextStyle
@@ -328,9 +318,7 @@ class XYSession(XYSessionBase):
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.XYData
                 xyPlot.XYData
@@ -383,9 +371,7 @@ class XYSession(XYSessionBase):
         """This method creates an XYData object by copying an existing XYData object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].userData.XYData
                 session.XYData
@@ -427,9 +413,7 @@ class XYSession(XYSessionBase):
         """This method creates an XYData object from data in an ASCII file.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.XYDataFromFile
                 xyPlot.XYDataFromFile
@@ -508,9 +492,7 @@ class XYSession(XYSessionBase):
         """This method creates an XYData object by reading history data from an Odb object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.XYDataFromHistory
                 xyPlot.XYDataFromHistory
@@ -585,9 +567,7 @@ class XYSession(XYSessionBase):
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.xyDataListFromField
                 xyPlot.xyDataListFromField
@@ -613,9 +593,7 @@ class XYSession(XYSessionBase):
             COMPONENT.Label: A String specifying the invariant or the component; for example,
             'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The
             dictionary contains pairs of the following:A String specifying the category selection
-            label.A String specifying the section point label. For example,
-
-            .. code-block:: python
+            label.A String specifying the section point label. For example::
 
                 variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
                 variable = (('S', INTEGRATION_POINT, ((COMPONENT, 'S11'), ), ),
@@ -690,9 +668,7 @@ class XYSession(XYSessionBase):
         object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.XYDataFromFreeBody
                 xyPlot.XYDataFromFreeBody
@@ -751,9 +727,7 @@ class XYSession(XYSessionBase):
         from an Odb object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.XYDataFromShellThickness
                 xyPlot.XYDataFromShellThickness
@@ -779,9 +753,7 @@ class XYSession(XYSessionBase):
             COMPONENT.Label: A String specifying the invariant or the component; for example,
             'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The
             dictionary contains pairs of the following:A String specifying the category selection
-            label.A String specifying the section point label. For example,
-
-            .. code-block:: python
+            label.A String specifying the section point label. For example::
 
                 variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
                 variable = (('S', INTEGRATION_POINT, ((COMPONENT, 'S11'), ), ),
@@ -855,9 +827,7 @@ class XYSession(XYSessionBase):
         """This method creates an XYData object from path information.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.XYDataFromPath
                 xyPlot.XYDataFromPath
@@ -920,9 +890,7 @@ class XYSession(XYSessionBase):
             the component; for example, 'Mises' or 'S22'.Location: An optional Dictionary specifying
             the location. The dictionary contains pairs of the following:A String specifying the
             category selection label.A String specifying the section point label.For
-            example,
-
-            .. code-block:: python
+            example::
 
                 variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
                 variable = (('S', INTEGRATION_POINT, ((COMPONENT, 'S11'), ), ),

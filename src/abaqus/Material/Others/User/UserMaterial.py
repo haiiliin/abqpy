@@ -8,9 +8,7 @@ class UserMaterial:
     or VUMAT.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].userMaterial
@@ -35,9 +33,7 @@ class UserMaterial:
         """This method creates a UserMaterial object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].UserMaterial
                 session.odbs[name].materials[name].UserMaterial

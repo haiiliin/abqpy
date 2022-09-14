@@ -22,9 +22,7 @@ class ContactExp(Interaction):
     The ContactExp object is derived from the Interaction object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].interactions[name]
@@ -102,9 +100,7 @@ class ContactExp(Interaction):
         """This method creates a ContactExp object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactExp
 
@@ -191,9 +187,7 @@ class ContactExp(Interaction):
         """This method creates a ContactExp object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactExp
 

@@ -28,9 +28,7 @@ class PartInstance:
     """A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object is an instance of a Part object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import assembly
             mdb.models[name].rootAssembly.allInstances[name]
@@ -145,9 +143,7 @@ class PartInstance:
         """This method creates a PartInstance object and puts it into the instances repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
 
@@ -199,9 +195,7 @@ class PartInstance:
         cutting the geometries of a group of part instances from that of a base part instance.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
 
@@ -242,9 +236,7 @@ class PartInstance:
         part instances.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
 
@@ -301,9 +293,7 @@ class PartInstance:
         the instances repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
 
@@ -350,9 +340,7 @@ class PartInstance:
         the instances repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
 

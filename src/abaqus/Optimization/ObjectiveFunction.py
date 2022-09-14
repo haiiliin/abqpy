@@ -8,9 +8,7 @@ class ObjectiveFunction:
     """The ObjectiveFunction object defines the objective of the optimization.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import optimization
             mdb.models[name].optimizationTasks[name].objectiveFunctions[name]
@@ -39,9 +37,7 @@ class ObjectiveFunction:
         """This method creates an ObjectiveFunction object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ObjectiveFunction
 

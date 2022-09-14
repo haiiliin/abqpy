@@ -9,9 +9,7 @@ class GapConvection:
     of a coupled temperature-pore pressure cohesive element.
 
     .. note::
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].gapConvection
@@ -46,9 +44,7 @@ class GapConvection:
         """This method creates a GapConvection object.
 
         .. note::
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].GapConvection
                 session.odbs[name].materials[name].GapConvection

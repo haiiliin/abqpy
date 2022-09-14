@@ -9,9 +9,7 @@ from ..UtilityAndView.abaqusConstants import *
 Abaqus/CAE preferences file, abaqus_2021.gpr. 
 
 .. note:: 
-    This object can be accessed by:
-
-    .. code-block:: python
+    This object can be accessed by::
 
         import caePrefsAccess
 
@@ -23,9 +21,7 @@ def getGuiPrefsFileName() -> str:
     """This function enables you to retrieve the location of your abaqus_2021.gpr file.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             caePrefsAccess.getGuiPrefsFileName
 
@@ -45,9 +41,7 @@ def getDisplayNamesInGuiPreferences(fileName: str) -> typing.List[str]:
     file.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             caePrefsAccess.getDisplayNamesInGuiPreferences
 
@@ -75,9 +69,7 @@ def printValuesList(
     guiPreferences or sessionOptions settings derived from the abaqus_2021.gpr file.
 
     .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 caePrefsAccess.printValuesList
 
@@ -111,9 +103,7 @@ def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
     separate guiPreferences section of the abaqus_2021.gpr file.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             caePrefsAccess.openGuiPreferences
 
@@ -147,9 +137,7 @@ def openSessionOptions(
     sessionOptions section of the abaqus_2021.gpr file.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             caePrefsAccess.openSessionOptions
 

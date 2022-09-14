@@ -11,9 +11,7 @@ class ContourIntegral(Crack):
     The ContourIntegral object is derived from the Crack object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].engineeringFeatures.cracks[name]
@@ -106,9 +104,7 @@ class ContourIntegral(Crack):
         under the assembly.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.ContourIntegral
                 mdb.models[name].rootAssembly.engineeringFeatures.ContourIntegral

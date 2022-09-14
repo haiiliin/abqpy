@@ -29,9 +29,7 @@ class PathSession(SessionBase):
         """This method creates a Path object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.Path
 
@@ -126,9 +124,7 @@ class PathSession(SessionBase):
         """This method creates a Spectrum object and places it in the spectrums repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.Spectrum
 
@@ -159,9 +155,7 @@ class PathSession(SessionBase):
         """This method creates aStream object and places it in the streams repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.Stream
 

@@ -19,9 +19,7 @@ class ContourOptions(DGContourOptions):
     The ContourOptions object is derived from the DGContourOptions object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.defaultOdbDisplay.contourOptions

@@ -30,10 +30,7 @@ class Region:
     possible with user-provided names) the Region object will re-establish the connection.
     Another way of correcting this problem is to re-apply the attribute.
     Wherever a particular Load, BC, IC, etc. command accepts a named set or a named surface,
-    that command will also accept a Region object. For example
-    
-    .. autolink-skip:: section
-    .. code-block:: python
+    that command will also accept a Region object. For example::
     
         myRegion = regionToolset.Region(edges=edges1)
         mdb.models['Model-1'].DisplacementBC(name='BC-1'
@@ -55,9 +52,7 @@ class Region:
     internal set.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import regionToolset
     """
@@ -93,9 +88,7 @@ class Region:
         region = regionToolset.Region(faces=f[3:4], xEdges=e[1:3])
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 Region
 
@@ -172,9 +165,7 @@ class Region:
         argument.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 Region
 

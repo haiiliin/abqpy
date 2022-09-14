@@ -8,9 +8,7 @@ class AcousticInfiniteSection(Section):
     The AcousticInfiniteSection object is derived from the Section object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].sections[name]
@@ -42,9 +40,7 @@ class AcousticInfiniteSection(Section):
         """This method creates an AcousticInfiniteSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].AcousticInfiniteSection
                 session.odbs[name].AcousticInfiniteSection

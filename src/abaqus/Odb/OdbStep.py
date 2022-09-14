@@ -17,9 +17,7 @@ class OdbStep(OdbStepBase):
         """This method creates a HistoryRegion object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].steps[name].HistoryRegion
 
@@ -53,9 +51,7 @@ class OdbStep(OdbStepBase):
         """This method creates an OdbFrame object and appends it to the frame sequence.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].steps[name].Frame
 
@@ -87,9 +83,7 @@ class OdbStep(OdbStepBase):
         **domain** = FREQUENCY or **domain** = MODAL.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].steps[name].Frame
 
@@ -119,9 +113,7 @@ class OdbStep(OdbStepBase):
         the frame sequence.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].steps[name].Frame
 
@@ -152,9 +144,7 @@ class OdbStep(OdbStepBase):
         """This method creates an OdbLoadCase object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].steps[name].LoadCase
 

@@ -9,9 +9,7 @@ class MohrCoulombPlasticity:
     r"""The MohrCoulombPlasticity object specifies the extended Mohr-Coulomb plasticity model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].mohrCoulombPlasticity
@@ -52,9 +50,7 @@ class MohrCoulombPlasticity:
         r"""This method creates a MohrCoulombPlasticity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MohrCoulombPlasticity
                 session.odbs[name].materials[name].MohrCoulombPlasticity

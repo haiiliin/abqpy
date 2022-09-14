@@ -22,9 +22,7 @@ class OdbPartBase:
     but not geometry.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].parts[name]
@@ -71,9 +69,7 @@ class OdbPartBase:
         later stage.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].Part
 

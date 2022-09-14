@@ -13,9 +13,7 @@ class PressurePenetrationState(InteractionState):
     The PressurePenetrationState object is derived from the InteractionState object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].steps[name].interactionStates[name]

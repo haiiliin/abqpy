@@ -7,9 +7,7 @@ class ClayHardening:
     """The ClayHardening object specifies hardening for the clay plasticity model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].clayPlasticity.clayHardening
@@ -37,9 +35,7 @@ class ClayHardening:
         """This method creates a ClayHardening object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].clayPlasticity.ClayHardening
                 session.odbs[name].materials[name].clayPlasticity.ClayHardening

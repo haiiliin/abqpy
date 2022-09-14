@@ -25,9 +25,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates an AcousticImpedanceProp object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].AcousticImpedanceProp
 
@@ -66,9 +64,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates an ActuatorSensorProp object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ActuatorSensorProp
 
@@ -104,9 +100,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates a CavityRadiationProp object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].CavityRadiationProp
 
@@ -138,9 +132,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates a ContactProperty object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactProperty
 
@@ -168,9 +160,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates a FilmConditionProp object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].FilmConditionProp
 
@@ -226,9 +216,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates a FluidCavityProperty object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].FluidCavityProperty
 
@@ -370,9 +358,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates a FluidExchangeProperty object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].FluidExchangeProperty
 
@@ -481,9 +467,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates a FluidInflatorProperty object.
 
         .. note::
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].FluidInflatorProperty
 
@@ -582,9 +566,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates an IncidentWaveProperty object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].IncidentWaveProperty
 

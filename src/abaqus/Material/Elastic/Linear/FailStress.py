@@ -7,9 +7,7 @@ class FailStress:
     r"""The FailStress object defines parameters for stress-based failure measures.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].elastic.failStress
@@ -43,9 +41,7 @@ class FailStress:
         """This method creates a FailStress object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].elastic.FailStress
                 session.odbs[name].materials[name].elastic.FailStress

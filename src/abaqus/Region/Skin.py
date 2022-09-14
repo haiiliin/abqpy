@@ -15,9 +15,7 @@ class Skin:
     """The Skin object stores information on skin reinforcements created on entities.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].skins[name]
@@ -49,9 +47,7 @@ class Skin:
         of the optional arguments needs to be specified.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Skin
 
@@ -92,9 +88,7 @@ class Skin:
         optional arguments needs to be specified.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Skin
 

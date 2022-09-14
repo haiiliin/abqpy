@@ -5,9 +5,7 @@ class EosCompaction:
     """The EosCompaction object specifies material eos compaction.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].eos.eosCompaction
@@ -30,9 +28,7 @@ class EosCompaction:
         """This method creates an EosCompaction object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].eos.EosCompaction
                 session.odbs[name].materials[name].eos.EosCompaction

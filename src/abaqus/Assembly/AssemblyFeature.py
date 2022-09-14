@@ -13,9 +13,7 @@ class AssemblyFeature(FeatureBase):
     Feature object, see Feature object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import assembly
     """
@@ -47,9 +45,7 @@ class AssemblyFeature(FeatureBase):
         created between the target faces.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.AttachmentLines
 
@@ -116,9 +112,7 @@ class AssemblyFeature(FeatureBase):
         face of a fixed instance.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.AttachmentLines
 
@@ -149,9 +143,7 @@ class AssemblyFeature(FeatureBase):
         point of a fixed instance.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.AttachmentLines
 
@@ -180,9 +172,7 @@ class AssemblyFeature(FeatureBase):
         instance.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.AttachmentLines
 
@@ -221,9 +211,7 @@ class AssemblyFeature(FeatureBase):
         instance.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.AttachmentLines
 
@@ -259,9 +247,7 @@ class AssemblyFeature(FeatureBase):
         coordinate system of a fixed instance.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.AttachmentLines
 
@@ -290,9 +276,7 @@ class AssemblyFeature(FeatureBase):
         instance.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.AttachmentLines
 
@@ -326,9 +310,7 @@ class AssemblyFeature(FeatureBase):
         instance.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.AttachmentLines
 

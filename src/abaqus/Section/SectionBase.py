@@ -15,9 +15,7 @@ class SectionBase:
     derived from the Section.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].sections[name]
@@ -43,9 +41,7 @@ class SectionBase:
         placed in the sections repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sectionsFromOdb
 

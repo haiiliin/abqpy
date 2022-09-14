@@ -10,9 +10,7 @@ class SurfaceCurrent(Load):
     The SurfaceCurrent object is derived from the Load object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].loads[name]
@@ -47,9 +45,7 @@ class SurfaceCurrent(Load):
         """This method creates a SurfaceCurrent object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SurfaceCurrent
 

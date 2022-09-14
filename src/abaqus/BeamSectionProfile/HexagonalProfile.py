@@ -8,9 +8,7 @@ class HexagonalProfile(Profile):
     The HexagonalProfile object is derived from the Profile object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].profiles[name]
@@ -39,9 +37,7 @@ class HexagonalProfile(Profile):
         """This method creates a HexagonalProfile object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].HexagonalProfile
                 session.odbs[name].HexagonalProfile

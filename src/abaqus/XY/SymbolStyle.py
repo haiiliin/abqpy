@@ -9,9 +9,7 @@ class SymbolStyle:
     SymbolStyle objects can be created using the methods described below.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.charts[name].axes1[i].axisData.curves[i].symbolStyle
@@ -68,9 +66,7 @@ class SymbolStyle:
         """This method creates a SymbolStyle object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.SymbolStyle
                 xyPlot.SymbolStyle
