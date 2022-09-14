@@ -10,9 +10,7 @@ class ExpContactControl(ContactControl):
     The ExpContactControl object is derived from the ContactControl object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].contactControls[name]
@@ -66,9 +64,7 @@ class ExpContactControl(ContactControl):
         """This method creates an ExpContactControl object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ExpContactControl
 

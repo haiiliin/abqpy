@@ -22,9 +22,7 @@ class ContactProperty(InteractionProperty):
     The ContactProperty object is derived from the InteractionProperty object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].interactionProperties[name]
@@ -72,9 +70,7 @@ class ContactProperty(InteractionProperty):
         """This method creates a ContactProperty object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactProperty
 
@@ -112,9 +108,7 @@ class ContactProperty(InteractionProperty):
         """This method creates a ContactTangentialBehavior object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactProperty
 
@@ -207,9 +201,7 @@ class ContactProperty(InteractionProperty):
         """This method creates a NormalBehavior object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactProperty
 
@@ -308,9 +300,7 @@ class ContactProperty(InteractionProperty):
         """This method creates a ContactDamping object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactProperty
 
@@ -364,9 +354,7 @@ class ContactProperty(InteractionProperty):
         """This method creates a ContactDamage object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactProperty
 
@@ -469,9 +457,7 @@ class ContactProperty(InteractionProperty):
         """This method creates a FractureCriterion object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactProperty
 
@@ -533,9 +519,7 @@ class ContactProperty(InteractionProperty):
         """This method creates a CohesiveBehavior object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactProperty
 
@@ -599,9 +583,7 @@ class ContactProperty(InteractionProperty):
         """This method creates a ThermalConductance object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactProperty
 
@@ -666,9 +648,7 @@ class ContactProperty(InteractionProperty):
         """This method creates a GapHeatGeneration object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactProperty
 
@@ -699,9 +679,7 @@ class ContactProperty(InteractionProperty):
         """This method creates a Radiation object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactProperty
 
@@ -743,9 +721,7 @@ class ContactProperty(InteractionProperty):
         """This method creates a GeometricProperties object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactProperty
 
@@ -810,9 +786,7 @@ class ContactProperty(InteractionProperty):
         """This method creates a GapElectricalConductance object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactProperty
 

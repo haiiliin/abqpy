@@ -7,9 +7,7 @@ class OdbModelFieldVarList:
     the current OdbDisplay object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.viewports[name].layers[name].odbDisplay.modelVariableList

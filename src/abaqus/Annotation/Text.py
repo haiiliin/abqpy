@@ -12,9 +12,7 @@ class Text(Annotation, _OptionsBase):
     The Text object is derived from the Annotation object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import annotationToolset
             mdb.annotations[name]
@@ -122,9 +120,7 @@ class Text(Annotation, _OptionsBase):
         """This method creates a Text object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.Text
                 session.odbs[name].userData.Text

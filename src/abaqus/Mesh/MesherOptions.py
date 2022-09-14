@@ -11,9 +11,7 @@ class MesherOptions:
     abaqus_v6.env file only; they should not be used during an Abaqus/CAE session.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.defaultMesherOptions
     """

@@ -10,9 +10,7 @@ class DGContourOptions:
     using values from *odbDisplay.contourOptions*.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
             session.viewports[name].layers[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions

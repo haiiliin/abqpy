@@ -7,9 +7,7 @@ class TensileFailure:
     """The TensileFailure object specifies the material tensile failure.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].Plastic.tensileFailure
@@ -47,9 +45,7 @@ class TensileFailure:
         """This method creates a tensileFailure object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Plastic.TensileFailure
                 mdb.models[name].materials[name].eos.TensileFailure

@@ -5,9 +5,7 @@ class OdbLoadCase:
     """The OdbLoadCase object describes a load case.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].steps[name].frames[i].loadCase
@@ -23,9 +21,7 @@ class OdbLoadCase:
         """This method creates an OdbLoadCase object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].steps[name].LoadCase
 

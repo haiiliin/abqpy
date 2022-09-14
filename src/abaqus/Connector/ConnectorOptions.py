@@ -16,9 +16,7 @@ class ConnectorOptions:
     kinematicOptions.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.cdcTerms[i].options
@@ -118,9 +116,7 @@ class ConnectorOptions:
         allowable connector behavior option, derived component term, or connector section.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.cdcTerms[i].ConnectorOptions
                 mdb.models[name].sections[name].behaviorOptions[i].derivedComponent.cdcTerms[i].ConnectorOptions

@@ -8,9 +8,7 @@ class DesignResponse:
     DesignResponse object are common to all objects derived from DesignResponse.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import optimization
             mdb.models[name].optimizationTasks[name].designResponses[name]

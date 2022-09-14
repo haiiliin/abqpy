@@ -5,9 +5,7 @@ class UserOutputVariables:
     """The UserOutputVariables object specifies the number of user-defined output variables.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].userOutputVariables
@@ -24,9 +22,7 @@ class UserOutputVariables:
         """This method creates a UserOutputVariables object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].UserOutputVariables
                 session.odbs[name].materials[name].UserOutputVariables

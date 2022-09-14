@@ -8,9 +8,7 @@ class InputFile:
     objects can be created using the methods described in this section.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import inpParser
     """
@@ -34,9 +32,7 @@ class InputFile:
         """This method creates an InputFile object by reading an Abaqus input file.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 inpParser.InputFile
 

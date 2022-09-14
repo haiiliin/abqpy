@@ -10,9 +10,7 @@ class InitialState(PredefinedField):
     The InitialState object is derived from the PredefinedField object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].predefinedFields[name]
@@ -59,9 +57,7 @@ class InitialState(PredefinedField):
         """This method creates an InitialState predefined field object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].InitialState
 

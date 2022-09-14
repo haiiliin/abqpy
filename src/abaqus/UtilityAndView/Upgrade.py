@@ -7,9 +7,7 @@ one time. It also allows you to upgrade only kernel commands, only GUI commands,
 both. 
 
 .. note:: 
-    This object can be accessed by:
-
-    .. code-block:: python
+    This object can be accessed by::
 
         import upgradeScript
 
@@ -36,9 +34,7 @@ def upgradeScript(
     this guide.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             upgradeScript.upgradeScript
 

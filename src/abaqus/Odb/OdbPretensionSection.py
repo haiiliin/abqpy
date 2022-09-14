@@ -8,9 +8,7 @@ class OdbPretensionSection:
     pretension node with a pretension section.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].rootAssembly.pretensionSections[i]

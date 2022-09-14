@@ -8,9 +8,7 @@ class LowDensityFoam:
     """The LowDensityFoam object specifies properties for low-density foam.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].lowDensityFoam
@@ -42,9 +40,7 @@ class LowDensityFoam:
         """This method creates a LowDensityFoam object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].LowDensityFoam
                 session.odbs[name].materials[name].LowDensityFoam

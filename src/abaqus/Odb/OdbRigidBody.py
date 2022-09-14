@@ -10,9 +10,7 @@ class OdbRigidBody:
     analytical surface with a reference node.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].parts[name].rigidBodies[i]
@@ -64,9 +62,7 @@ class OdbRigidBody:
         """This method creates a OdbRigidBody object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].rootAssembly.instances[name].RigidBody
                 session.odbs[name].rootAssembly.RigidBody

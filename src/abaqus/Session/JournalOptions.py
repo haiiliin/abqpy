@@ -12,9 +12,7 @@ class JournalOptions:
     **journalOptions** member when a session is started.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.journalOptions
     """
@@ -66,9 +64,7 @@ class JournalOptions:
         """This method creates a NumberFormat object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.defaultFieldReportOptions.NumberFormat
                 session.fieldReportOptions.NumberFormat

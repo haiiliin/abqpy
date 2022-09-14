@@ -28,9 +28,7 @@ class Session(AbaqusSession):
         This method is accessed only via the session object inside Abaqus/CAE and adds the new
         Odb object to the session.odbs repository. This method allows you to open multiple
         output databases at the same time and to use the repository key to specify a particular
-        output database. For example,
-        
-        .. code-block:: python
+        output database. For example::
         
             import visualization
             session.openOdb(name='myOdb', path='stress.odb', readOnly=True)

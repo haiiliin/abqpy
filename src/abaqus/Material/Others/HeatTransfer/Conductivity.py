@@ -7,9 +7,7 @@ class Conductivity:
     r"""The Conductivity object specifies thermal conductivity.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].conductivity
@@ -63,9 +61,7 @@ class Conductivity:
         """This method creates a Conductivity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Conductivity
                 session.odbs[name].materials[name].Conductivity

@@ -12,9 +12,7 @@ class UserDataBase:
     constructor; it is created automatically when an Odb object is created.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].userData
@@ -81,9 +79,7 @@ class UserDataBase:
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].userData.XYData
 

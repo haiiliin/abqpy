@@ -7,9 +7,7 @@ class SectorDefinition:
     symmetry for a cyclic symmetry model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].sectorDefinition

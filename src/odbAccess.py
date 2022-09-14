@@ -7,9 +7,7 @@ from abaqus.Odb.OdbSequenceAnalyticSurfaceSegment import OdbSequenceAnalyticSurf
 def openOdb(path: str, readOnly: Boolean = OFF, readInternalSets: Boolean = OFF) -> Odb:
     """This method opens an existing output database (`.odb`) file and creates a new Odb object.
     You typically execute this method outside of Abaqus/CAE when, in most cases, only one
-    output database is open at any time. For example:
-    
-    .. code-block:: python
+    output database is open at any time. For example::
     
         import odbAccess
         shockLoadOdb = odbAccess.openOdb(path='myOdb.odb')

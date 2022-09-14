@@ -9,9 +9,7 @@ class DisplayGroup:
     viewport.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.displayGroups[name]
             import assembly
@@ -51,9 +49,7 @@ class DisplayGroup:
         """This method creates a DisplayGroup object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.DisplayGroup
 

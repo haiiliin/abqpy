@@ -20,9 +20,7 @@ class ArcByCenterEnds(ConstrainedSketchGeometry):
         a clockwise fashion from **point1** to **point2**.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].ArcByCenterEnds
 

@@ -12,9 +12,7 @@ class JobMdb(MdbBase):
     and analysis controls.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb
     """
@@ -53,9 +51,7 @@ class JobMdb(MdbBase):
         model definition.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.Job
 
@@ -214,9 +210,7 @@ class JobMdb(MdbBase):
         """This method creates an analysis job using an input file for the model definition.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.JobFromInputFile
 
@@ -336,9 +330,7 @@ class JobMdb(MdbBase):
         """This method creates an OptimizationProcess object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.OptimizationProcess
 

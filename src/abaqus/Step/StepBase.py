@@ -26,9 +26,7 @@ class StepBase:
     derived from the Step.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].steps[name]

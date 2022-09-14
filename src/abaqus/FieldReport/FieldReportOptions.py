@@ -11,9 +11,7 @@ class FieldReportOptions:
     Visualization module.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.defaultFieldReportOptions
@@ -90,9 +88,7 @@ class FieldReportOptions:
         """This method creates a NumberFormat object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.defaultFieldReportOptions.NumberFormat
                 session.fieldReportOptions.NumberFormat

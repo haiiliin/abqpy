@@ -5,9 +5,7 @@ class Stream:
     """TheStream object defines a set of streamlines in fluid mechanics.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.streams[name]
@@ -25,9 +23,7 @@ class Stream:
         """This method creates aStream object and places it in the streams repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.Stream
 

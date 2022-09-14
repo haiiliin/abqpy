@@ -46,9 +46,7 @@ class PartBase(PartFeature):
     the assembly and positioned before an analysis.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name]
@@ -178,9 +176,7 @@ class PartBase(PartFeature):
         """This method creates a Part object and places it in the parts repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Part
 
@@ -220,9 +216,7 @@ class PartBase(PartFeature):
         """This method copies a Part object and places the copy in the parts repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Part
 
@@ -268,9 +262,7 @@ class PartBase(PartFeature):
         geometries of a group of part instances from that of a base part instance.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Part
 
@@ -307,9 +299,7 @@ class PartBase(PartFeature):
         but they cannot be a combination of both.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Part
 
@@ -353,9 +343,7 @@ class PartBase(PartFeature):
         Part object in the positive **Z**-direction and places it in the parts repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Part
 
@@ -405,9 +393,7 @@ class PartBase(PartFeature):
         """This method creates a Part object and places it in the parts repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Part
 
@@ -490,9 +476,7 @@ class PartBase(PartFeature):
         objects and places the new Part object in the parts repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Part
 
@@ -532,9 +516,7 @@ class PartBase(PartFeature):
         new Part object in the parts repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Part
 
@@ -567,9 +549,7 @@ class PartBase(PartFeature):
         only the second half of the part but does not unite the two halves.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Part
 
@@ -617,9 +597,7 @@ class PartBase(PartFeature):
         repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Part
 
@@ -671,9 +649,7 @@ class PartBase(PartFeature):
         part is placed in the parts repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Part
 
@@ -742,9 +718,7 @@ class PartBase(PartFeature):
         for orphan mesh parts composed of 8-node brick elements.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Part
 
@@ -790,9 +764,7 @@ class PartBase(PartFeature):
         places it in the parts repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Part
 
@@ -837,9 +809,7 @@ class PartBase(PartFeature):
         base shell feature.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Part
 

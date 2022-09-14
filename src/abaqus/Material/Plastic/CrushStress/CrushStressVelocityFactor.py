@@ -9,9 +9,7 @@ class CrushStressVelocityFactor:
     influences a material's resistance to crushing.
 
     .. note::
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].crushStress.crushStressVelocityFactor

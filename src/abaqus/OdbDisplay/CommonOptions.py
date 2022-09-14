@@ -19,9 +19,7 @@ class CommonOptions(DGCommonOptions):
     The CommonOptions object is derived from the DGCommonOptions object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.defaultOdbDisplay.commonOptions
