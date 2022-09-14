@@ -5,9 +5,7 @@ class Spectrum:
     """The Spectrum object defines a color spectrum for the contour display.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.spectrums[name]
@@ -18,9 +16,7 @@ class Spectrum:
         """This method creates a Spectrum object and places it in the spectrums repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.Spectrum
 

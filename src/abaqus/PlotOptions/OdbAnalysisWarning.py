@@ -7,9 +7,7 @@ class OdbAnalysisWarning:
     during the analysis.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.odbData[name].diagnosticData.analysisWarnings[i]

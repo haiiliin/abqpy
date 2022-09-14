@@ -8,9 +8,7 @@ class RebarLayers:
     """The RebarLayers object defines the rebar properties of a section.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].parts[name].compositeLayups[i].section.rebarLayers
@@ -37,9 +35,7 @@ class RebarLayers:
         """This method creates a RebarLayers object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].compositeLayups[i].section.RebarLayers
                 mdb.models[name].sections[name].RebarLayers

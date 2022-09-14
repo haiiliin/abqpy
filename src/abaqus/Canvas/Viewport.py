@@ -11,9 +11,7 @@ class Viewport(AnnotationViewport):
         """This method creates a Layer object in the Layer repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.viewports[name].Layer
 

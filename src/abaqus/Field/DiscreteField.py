@@ -13,9 +13,7 @@ class DiscreteField(Field):
     The DiscreteField object is derived from the Field object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import fields
             mdb.models[name].discreteFields[name]
@@ -69,9 +67,7 @@ class DiscreteField(Field):
         """This method creates a DiscreteField object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].DiscreteField
 
@@ -127,9 +123,7 @@ class DiscreteField(Field):
         element of an Eulerian Instance that is occupied by a reference instance.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].DiscreteField
 
@@ -177,9 +171,7 @@ class DiscreteField(Field):
         """This method creates a DiscreteField object from a AnalyticalField object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].DiscreteField
 

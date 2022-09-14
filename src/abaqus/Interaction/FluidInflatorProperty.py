@@ -11,9 +11,7 @@ class FluidInflatorProperty(ContactProperty):
     The FluidInflatorProperty object is derived from the InteractionProperty object.
 
     .. note::
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].interactionProperties[name]
@@ -70,9 +68,7 @@ class FluidInflatorProperty(ContactProperty):
         """This method creates a FluidInflatorProperty object.
 
         .. note::
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].FluidInflatorProperty
 

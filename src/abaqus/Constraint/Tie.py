@@ -11,9 +11,7 @@ class Tie(Constraint):
     The Tie object is derived from the ConstrainedSketchConstraint object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].constraints[name]
@@ -88,9 +86,7 @@ class Tie(Constraint):
         """This method creates a Tie object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Tie
 

@@ -8,9 +8,7 @@ class PolarityAssignments:
     ContactExp objects. The PolarityAssignments object has no constructor or members.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].interactions[name].polarityAssignments

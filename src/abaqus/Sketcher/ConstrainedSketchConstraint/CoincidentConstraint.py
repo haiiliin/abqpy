@@ -16,9 +16,7 @@ class CoincidentConstraint(ConstrainedSketchConstraint):
         objects of the same type and constrains them to be coincident.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].CoincidentConstraint
 

@@ -13,9 +13,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
     contained in their respective repositories.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import sketch
             mdb.models[name].sketches[name]
@@ -29,9 +27,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         the arc.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].Arc3Points
 
@@ -64,9 +60,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         a clockwise fashion from **point1** to **point2**.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].ArcByCenterEnds
 
@@ -101,9 +95,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         geometry repository of the ConstrainedSketch object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].ArcByStartEndTangent
 
@@ -129,9 +121,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         circle is added to the geometry repository of the ConstrainedSketch object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].CircleByCenterPerimeter
 
@@ -158,9 +148,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].ConstructionCircleByCenterPerimeter
 
@@ -187,9 +175,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].EllipseByCenterPerimeter
 
@@ -222,9 +208,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         added to the geometry repository of the ConstrainedSketch object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].FilletByRadius
 
@@ -262,9 +246,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """This method creates a line between two given points.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].Line
 
@@ -287,9 +269,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """This method creates an oblique construction line that runs between two given points.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].ConstructionLine
 
@@ -312,9 +292,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """This method creates a spline curve running through a sequence of points.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].Spline
 
@@ -340,9 +318,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         spot is added to the vertex repository of the ConstrainedSketch object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].Spot
 

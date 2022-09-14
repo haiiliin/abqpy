@@ -12,9 +12,7 @@ class LeafFromInstanceNodeLabels(Leaf):
     The LeafFromInstanceNodeLabels object is derived from the Leaf object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import displayGroupMdbToolset
     """
@@ -29,9 +27,7 @@ class LeafFromInstanceNodeLabels(Leaf):
         Leaf objects specify the items in a display group.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 LeafFromInstanceNodeLabels
 

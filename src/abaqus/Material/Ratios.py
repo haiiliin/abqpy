@@ -7,9 +7,7 @@ class Ratios:
     """The Ratios object specifies ratios that define anisotropic swelling.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].moistureSwelling.ratios
@@ -49,9 +47,7 @@ class Ratios:
         """This method creates a Ratios object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].moistureSwelling.Ratios
                 mdb.models[name].materials[name].swelling.Ratios

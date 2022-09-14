@@ -10,9 +10,7 @@ class BeamOrientation:
     list is not supported.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].parts[name].beamOrientations[i]

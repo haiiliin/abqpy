@@ -7,9 +7,7 @@ class Restart:
     """The Restart object defines a restart request.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].steps[name].restart
@@ -48,9 +46,7 @@ class Restart:
         """This method creates a restart request.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].steps[name].Restart
 

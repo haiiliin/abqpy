@@ -10,9 +10,7 @@ class Title:
     object is automatically created when creating a XYPlot object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.defaultPlot.title

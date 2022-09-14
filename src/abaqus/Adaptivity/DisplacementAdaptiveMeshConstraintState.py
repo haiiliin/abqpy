@@ -15,9 +15,7 @@ class DisplacementAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
     AdaptiveMeshConstraintState object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].steps[name].adaptiveMeshConstraintStates[name]
@@ -112,9 +110,7 @@ class DisplacementAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
         """
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].steps[name].DisplacementAdaptiveMeshConstraintState
 

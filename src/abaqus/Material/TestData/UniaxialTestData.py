@@ -7,9 +7,7 @@ class UniaxialTestData:
     r"""The UniaxialTestData object provides uniaxial test data (compression and/or tension).
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].hyperelastic.uniaxialTestData
@@ -58,9 +56,7 @@ class UniaxialTestData:
         """This method creates a UniaxialTestData object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].hyperelastic.UniaxialTestData
                 mdb.models[name].materials[name].hyperfoam.UniaxialTestData

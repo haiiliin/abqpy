@@ -14,9 +14,7 @@ class OptimizationTaskModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name]
     """
@@ -49,9 +47,7 @@ class OptimizationTaskModel(ModelBase):
         """This method creates a BeadTask object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].BeadTask
 
@@ -205,9 +201,7 @@ class OptimizationTaskModel(ModelBase):
         """This method creates a ShapeTask object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ShapeTask
 
@@ -432,9 +426,7 @@ class OptimizationTaskModel(ModelBase):
         """This method creates a SizingTask object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SizingTask
 
@@ -541,9 +533,7 @@ class OptimizationTaskModel(ModelBase):
         """This method creates a TopologyTask object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].TopologyTask
 

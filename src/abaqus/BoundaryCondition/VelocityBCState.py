@@ -12,9 +12,7 @@ class VelocityBCState(BoundaryConditionState):
     The VelocityBCState object is derived from the BoundaryConditionState object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].steps[name].boundaryConditionStates[name]

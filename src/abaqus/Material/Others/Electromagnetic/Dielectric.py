@@ -7,9 +7,7 @@ class Dielectric:
     r"""The Dielectric object specifies dielectric material properties.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].dielectric
@@ -67,9 +65,7 @@ class Dielectric:
         """This method creates a Dielectric object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Dielectric
                 session.odbs[name].materials[name].Dielectric

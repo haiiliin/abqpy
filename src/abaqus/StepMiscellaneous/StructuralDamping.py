@@ -7,9 +7,7 @@ class StructuralDamping:
     """A :py:class:`~abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping` object contains structural damping parameters.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].steps[name].structuralDamping

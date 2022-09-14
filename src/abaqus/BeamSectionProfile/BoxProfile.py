@@ -9,9 +9,7 @@ class BoxProfile(Profile):
     The BoxProfile object is derived from the Profile object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].profiles[name]
@@ -68,9 +66,7 @@ class BoxProfile(Profile):
         """This method creates a BoxProfile object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].BoxProfile
                 session.odbs[name].BoxProfile
