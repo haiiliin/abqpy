@@ -23,11 +23,6 @@ class Mdb(AbaqusMdb):
 
 class Session(AbaqusSession):
 
-<<<<<<< HEAD
-    def openOdb(self, name: str, *args, **kwargs) -> Odb:
-        self.odbs[name] = odb = Odb(name, *args, **kwargs)
-        abqpy.abaqus.run(exit_after=True)
-=======
     def openOdb(self, name: str, path: str = "", readOnly: Boolean = OFF) -> Odb:
         """This method opens an existing output database (`.odb`) file and creates a new Odb object.
         This method is accessed only via the session object inside Abaqus/CAE and adds the new
@@ -72,7 +67,6 @@ class Session(AbaqusSession):
         """
         self.odbs[name] = odb = Odb(name)
         abqpy.abaqus.run()
->>>>>>> 3c75c5a (Correct `run()` function always running `abaqus cae`, regardless of the called method (#1303))
         return odb
 
 
