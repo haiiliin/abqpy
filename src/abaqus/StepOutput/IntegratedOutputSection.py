@@ -8,9 +8,7 @@ class IntegratedOutputSection:
     """The IntegratedOutputSection object specifies parameters used for integrated output.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].integratedOutputSections[name]
@@ -66,9 +64,7 @@ class IntegratedOutputSection:
         """This method creates an IntegratedOutputSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].IntegratedOutputSection
 

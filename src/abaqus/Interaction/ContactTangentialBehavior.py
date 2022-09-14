@@ -8,9 +8,7 @@ class ContactTangentialBehavior:
     interaction property.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].interactionProperties[name].tangentialBehavior
@@ -123,9 +121,7 @@ class ContactTangentialBehavior:
         """This method creates a ContactTangentialBehavior object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].interactionProperties[name].TangentialBehavior
 

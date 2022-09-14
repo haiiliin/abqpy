@@ -5,9 +5,7 @@ class OdbSequenceAnalyticSurfaceSegment:
     """A sequence of AnalyticSurfaceSegment describing an analytic surface profile.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].parts[name].analyticSurface.segments
@@ -20,9 +18,7 @@ class OdbSequenceAnalyticSurfaceSegment:
         """This method creates a OdbSequenceAnalyticSurfaceSegment object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 odbAccess.AnalyticSurfaceProfile
 

@@ -8,9 +8,7 @@ class Viscosity:
     """The Viscosity object specifies mechanical viscosity.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].viscosity
@@ -46,9 +44,7 @@ class Viscosity:
         """This method creates a Viscosity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Viscosity
                 session.odbs[name].materials[name].Viscosity

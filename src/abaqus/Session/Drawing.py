@@ -8,9 +8,7 @@ class Drawing:
     data and various settings that determine how the drawing will be displayed.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.drawings[name]
     """
@@ -91,9 +89,7 @@ class Drawing:
         """This method creates an empty Drawing object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.Drawing
 

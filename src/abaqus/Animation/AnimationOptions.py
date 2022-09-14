@@ -11,9 +11,7 @@ class AnimationOptions(_OptionsBase):
     **animationOptions** member when it creates the AnimationController object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import animation
             session.animationOptions

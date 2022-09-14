@@ -10,9 +10,7 @@ class ConcentratedHeatFlux(Load):
     The ConcentratedHeatFlux object is derived from the Load object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].loads[name]
@@ -52,9 +50,7 @@ class ConcentratedHeatFlux(Load):
         """This method creates a ConcentratedHeatFlux object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ConcentratedHeatFlux
 

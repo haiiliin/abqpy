@@ -14,9 +14,7 @@ class OdbStepBase:
     """An output database contains the same steps of the model database that originated it.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].steps[name]
@@ -77,9 +75,7 @@ class OdbStepBase:
         """This method creates an OdbStep object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].Step
 

@@ -10,9 +10,7 @@ class AnimationController(_OptionsBase):
     **animationController** member when it creates the Session object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import animation
             session.viewports[name].animationController

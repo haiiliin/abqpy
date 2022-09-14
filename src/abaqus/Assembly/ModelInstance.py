@@ -22,9 +22,7 @@ class ModelInstance:
     """A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object is an instance of a Model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import assembly
             mdb.models[name].rootAssembly.modelInstances[i]
@@ -63,9 +61,7 @@ class ModelInstance:
         """This method creates a ModelInstance object and puts it into the instances repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
 

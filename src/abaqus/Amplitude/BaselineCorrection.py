@@ -6,9 +6,7 @@ class BaselineCorrection:
     drift of the displacement obtained from the time integration of the given acceleration.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import amplitude
             mdb.models[name].amplitudes[name].baselineCorrection
@@ -30,9 +28,7 @@ class BaselineCorrection:
         """This method creates a BaselineCorrection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].amplitudes[name].BaselineCorrection
                 session.odbs[name].amplitudes[name].BaselineCorrection

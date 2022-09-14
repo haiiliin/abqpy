@@ -12,9 +12,7 @@ class PEGLoad(Load):
     The PEGLoad object is derived from the Load object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].loads[name]
@@ -51,9 +49,7 @@ class PEGLoad(Load):
         """This method creates a PEGLoad object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].PEGLoad
 

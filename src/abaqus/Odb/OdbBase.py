@@ -22,9 +22,7 @@ class OdbBase:
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name]
@@ -79,9 +77,7 @@ class OdbBase:
         """This method creates a new Odb object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.Odb
 

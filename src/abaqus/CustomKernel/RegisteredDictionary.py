@@ -10,9 +10,7 @@ class RegisteredDictionary(CommandRegister, dict):
     The RegisteredDictionary object is derived from the CommandRegister object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import customKernel
     """
@@ -22,9 +20,7 @@ class RegisteredDictionary(CommandRegister, dict):
         """This method creates a RegisteredDictionary object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 customKernel.RegisteredDictionary
 

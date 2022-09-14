@@ -7,9 +7,7 @@ class ImageAnimation:
     """The ImageAnimation object is used to build frame by frame animation.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import animation
             session.imageAnimation
@@ -23,9 +21,7 @@ class ImageAnimation:
         """This method creates an ImageAnimation object from the specified filename and format.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.ImageAnimation
 

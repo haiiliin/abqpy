@@ -12,9 +12,7 @@ class AdaptivityProcess:
     analysis. Abaqus performs adaptive remeshing between each job.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import job
             mdb.adaptivityProcesses[name]
@@ -52,9 +50,7 @@ class AdaptivityProcess:
         """This method creates an AdaptivityProcess object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.AdaptivityProcess
 
@@ -137,9 +133,7 @@ class AdaptivityProcess:
         """This method creates an AdaptivityIteration object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.AdaptivityProcess
 

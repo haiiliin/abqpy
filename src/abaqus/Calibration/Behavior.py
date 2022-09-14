@@ -8,9 +8,7 @@ class Behavior:
     """The Behavior object specifies the method used for calibrating a material.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import calibration
             mdb.models[name].calibrations[name].behaviors[name]
@@ -42,9 +40,7 @@ class Behavior:
         """This method creates a Behavior object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].calibrations[name].Behavior
 

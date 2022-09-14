@@ -76,9 +76,7 @@ class MaterialBase:
     that one Material object cannot contain two AcousticMedium objects, for example.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name]
@@ -326,9 +324,7 @@ class MaterialBase:
         """This method creates a Material object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Material
                 session.odbs[name].Material
@@ -361,9 +357,7 @@ class MaterialBase:
         are placed in the materials repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Material
                 session.odbs[name].Material

@@ -45,9 +45,7 @@ class LoadModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name]
     """
@@ -66,9 +64,7 @@ class LoadModel(ModelBase):
         """This method creates a BodyCharge object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].BodyCharge
 
@@ -119,9 +115,7 @@ class LoadModel(ModelBase):
         """This method creates a BodyConcentrationFlux object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].BodyConcentrationFlux
 
@@ -172,9 +166,7 @@ class LoadModel(ModelBase):
         """This method creates a BodyCurrent object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].BodyCurrent
 
@@ -226,9 +218,7 @@ class LoadModel(ModelBase):
         """This method creates a BodyCurrentDensity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].BodyCurrentDensity
 
@@ -288,9 +278,7 @@ class LoadModel(ModelBase):
         """This method creates a BodyForce object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].BodyForce
 
@@ -354,9 +342,7 @@ class LoadModel(ModelBase):
         """This method creates a BodyHeatFlux object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].BodyHeatFlux
 
@@ -408,9 +394,7 @@ class LoadModel(ModelBase):
         """This method creates a BoltLoad object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].BoltLoad
 
@@ -473,9 +457,7 @@ class LoadModel(ModelBase):
         """This method creates a ConcCharge object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ConcCharge
 
@@ -526,9 +508,7 @@ class LoadModel(ModelBase):
         """This method creates a ConcConcFlux object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ConcConcFlux
 
@@ -579,9 +559,7 @@ class LoadModel(ModelBase):
         """This method creates a ConcCurrent object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ConcCurrent
 
@@ -636,9 +614,7 @@ class LoadModel(ModelBase):
         """This method creates a ConcentratedForce object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ConcentratedForce
 
@@ -714,9 +690,7 @@ class LoadModel(ModelBase):
         """This method creates a ConcentratedHeatFlux object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ConcentratedHeatFlux
 
@@ -777,9 +751,7 @@ class LoadModel(ModelBase):
         """This method creates a ConcPoreFluid object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ConcPoreFluid
 
@@ -833,9 +805,7 @@ class LoadModel(ModelBase):
         may also be applied to a wire set referenced from an assembled fastener template model.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ConnectorForce
 
@@ -907,9 +877,7 @@ class LoadModel(ModelBase):
         may also be applied to a wire set referenced from an assembled fastener template model.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ConnectorMoment
 
@@ -979,9 +947,7 @@ class LoadModel(ModelBase):
         """This method creates a CoriolisForce object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].CoriolisForce
 
@@ -1046,9 +1012,7 @@ class LoadModel(ModelBase):
         """This method creates a Gravity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Gravity
 
@@ -1115,9 +1079,7 @@ class LoadModel(ModelBase):
         """This method creates an InertiaRelief object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].InertiaRelief
 
@@ -1186,9 +1148,7 @@ class LoadModel(ModelBase):
         """This method creates a InwardVolAccel object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].InwardVolAccel
 
@@ -1242,9 +1202,7 @@ class LoadModel(ModelBase):
         """This method creates a LineLoad object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].LineLoad
 
@@ -1317,9 +1275,7 @@ class LoadModel(ModelBase):
         """This method creates a Moment object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Moment
 
@@ -1396,9 +1352,7 @@ class LoadModel(ModelBase):
         """This method creates a PEGLoad object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].PEGLoad
 
@@ -1466,9 +1420,7 @@ class LoadModel(ModelBase):
         """This method creates a Pressure object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].PipePressure
 
@@ -1543,9 +1495,7 @@ class LoadModel(ModelBase):
         """This method creates a Pressure object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Pressure
 
@@ -1619,9 +1569,7 @@ class LoadModel(ModelBase):
         """This method creates a RotationalBodyForce object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].RotationalBodyForce
 
@@ -1702,9 +1650,7 @@ class LoadModel(ModelBase):
         """This method creates a ShellEdgeLoad object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ShellEdgeLoad
 
@@ -1805,9 +1751,7 @@ class LoadModel(ModelBase):
         """This method creates a SubmodelSB object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SubmodelSB
 
@@ -1871,9 +1815,7 @@ class LoadModel(ModelBase):
         """This method creates a SubstructureLoad object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SubstructureLoad
 
@@ -1918,9 +1860,7 @@ class LoadModel(ModelBase):
         """This method creates a SurfaceCharge object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SurfaceCharge
 
@@ -1971,9 +1911,7 @@ class LoadModel(ModelBase):
         """This method creates a SurfaceConcentrationFlux object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SurfaceConcentrationFlux
 
@@ -2025,9 +1963,7 @@ class LoadModel(ModelBase):
         """This method creates a SurfaceCurrent object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SurfaceCurrent
 
@@ -2079,9 +2015,7 @@ class LoadModel(ModelBase):
         """This method creates a SurfaceCurrentDensity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SurfaceCurrentDensity
 
@@ -2139,9 +2073,7 @@ class LoadModel(ModelBase):
         """This method creates a SurfaceHeatFlux object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SurfaceHeatFlux
 
@@ -2192,9 +2124,7 @@ class LoadModel(ModelBase):
         """This method creates a SurfacePoreFluid object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SurfacePoreFluid
 
@@ -2253,9 +2183,7 @@ class LoadModel(ModelBase):
         """This method creates a SurfaceTraction object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SurfaceTraction
 

@@ -10,9 +10,7 @@ class ContactArea:
     pressure through variable CS11.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].gasketThicknessBehavior.contactArea
@@ -40,9 +38,7 @@ class ContactArea:
         """This method creates a ContactArea object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].gasketThicknessBehavior.ContactArea
                 session.odbs[name].materials[name].gasketThicknessBehavior.ContactArea

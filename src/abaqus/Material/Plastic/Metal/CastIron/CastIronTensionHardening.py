@@ -8,9 +8,7 @@ class CastIronTensionHardening:
     model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].castIronPlasticity.castIronTensionHardening
@@ -38,9 +36,7 @@ class CastIronTensionHardening:
         """This method creates a CastIronTensionHardening object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].castIronPlasticity.CastIronTensionHardening.CastIronTensionHardeningrials[name].castIronPlasticity.CastIronTensionHardening
             

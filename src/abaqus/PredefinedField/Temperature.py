@@ -10,9 +10,7 @@ class Temperature(PredefinedField):
     The Temperature object is derived from the PredefinedField object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].predefinedFields[name]
@@ -66,9 +64,7 @@ class Temperature(PredefinedField):
         """This method creates a Temperature object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Temperature
 

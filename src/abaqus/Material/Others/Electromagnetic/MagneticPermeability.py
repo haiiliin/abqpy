@@ -7,9 +7,7 @@ class MagneticPermeability:
     r"""The MagneticPermeability object specifies magnetic permeability.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].magneticPermeability
@@ -86,9 +84,7 @@ class MagneticPermeability:
         """This method creates a MagneticPermeability object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MagneticPermeability
                 session.odbs[name].materials[name].MagneticPermeability

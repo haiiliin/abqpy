@@ -5,9 +5,7 @@ from ..UtilityAndView.abaqusConstants import *
 that will be invoked when specified Abaqus Scripting Interface objects are about to be 
 deleted. This callback allows you to examine an object before it is deleted. 
 For example, in the following script the myCallback function is executed when any Job 
-object is about to be deleted: 
-
-.. code-block:: python2
+object is about to be deleted::
 
     import deleteObjectCallback
     
@@ -16,9 +14,7 @@ object is about to be deleted:
     deleteObjectCallback.addCallback(path='mdb.jobs[*]') 
 
 .. note:: 
-    This object can be accessed by:
-
-    .. code-block:: python
+    This object can be accessed by::
 
         import deleteObjectCallback
 
@@ -36,9 +32,7 @@ def deleteObjectCallback(
     mdb.models[name].parts[name].deleteFeature().
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             deleteObjectCallback.addCallback
 

@@ -11,9 +11,7 @@ class ScratchOdb:
     the associated output database is closed.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.scratchOdbs[name]
@@ -24,9 +22,7 @@ class ScratchOdb:
         """This method creates a new ScratchOdb object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.ScratchOdb
 

@@ -12,9 +12,7 @@ class ConnectorForce(Load):
     The ConnectorForce object is derived from the Load object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].loads[name]
@@ -54,9 +52,7 @@ class ConnectorForce(Load):
         may also be applied to a wire set referenced from an assembled fastener template model.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ConnectorForce
 

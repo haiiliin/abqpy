@@ -10,9 +10,7 @@ class SpectrumAmplitude(Amplitude):
     The SpectrumAmplitude object is derived from the Amplitude object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import amplitude
             mdb.models[name].amplitudes[name]
@@ -91,9 +89,7 @@ class SpectrumAmplitude(Amplitude):
         """This method creates a SpectrumAmplitude object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SpectrumAmplitude
                 session.odbs[name].SpectrumAmplitude

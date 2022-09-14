@@ -17,9 +17,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
     contained in their respective repositories.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import sketch
             mdb.models[name].sketches[name]
@@ -38,9 +36,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         ConstrainedSketchGeometry objects, with the given angle between them.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].AngularDimension
 
@@ -79,9 +75,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         vertices.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].HorizontalDimension
 
@@ -119,9 +113,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         oblique dimension indicates the distance between two vertices.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].ObliqueDimension
 
@@ -161,9 +153,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         radius of an ellipse.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].RadialDimension
 
@@ -205,9 +195,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         dimension controls the vertical distance along the **Y**-axis between two vertices.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].VerticalDimension
 
@@ -246,9 +234,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         object. A distance dimension specifies the shortest distance between two entities.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].DistanceDimension
 
