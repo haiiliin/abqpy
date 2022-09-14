@@ -1292,60 +1292,6 @@ class InteractionModel(
         return interaction
 
     @abaqus_method_doc
-<<<<<<< HEAD
-=======
-    def FluidInflator(
-        self,
-        name: str,
-        createStepName: str,
-        cavity: str,
-        interactionProperty: str,
-        inflationTimeAmplitude: str = "",
-        massFlowAmplitude: str = "",
-    ) -> FluidInflator:
-        """This method creates a FluidInflator object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].FluidInflator
-
-        .. versionadded:: 2019
-            The `FluidInflator` method was added.
-
-        Parameters
-        ----------
-        name
-            A String specifying the repository key.
-        createStepName
-            A String specifying the name of the step in which the FluidInflator object is created.
-        cavity
-            A String specifying the first FluidCavity object associated with this interaction.
-        interactionProperty
-            A String specifying the FluidInflatorProperty object associated with this interaction.
-        inflationTimeAmplitude
-            A string specifying the name of the amplitude curve defining a mapping between the
-            inflation time and the actual time.
-        massFlowAmplitude
-            A string specifying the name of the amplitude curve by which to modify the mass flow
-            rate.
-
-        Returns
-        -------
-            A FluidInflator object.
-        """
-        self.interactions[name] = interaction = FluidInflator(
-            name,
-            createStepName,
-            cavity,
-            interactionProperty,
-            inflationTimeAmplitude,
-            massFlowAmplitude,
-        )
-        return interaction
-
-    @abaqus_method_doc
->>>>>>> 7d9a49b (Use `::` instead of `code-block` directive for code blocks (#1351))
     def IncidentWave(
         self,
         name: str,
