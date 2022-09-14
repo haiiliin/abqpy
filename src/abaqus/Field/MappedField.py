@@ -11,9 +11,7 @@ class MappedField(AnalyticalField):
     The MappedField object is derived from the AnalyticalField object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import fields
             mdb.models[name].analyticalFields[name]
@@ -131,9 +129,7 @@ class MappedField(AnalyticalField):
         """This method creates an MappedField object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].MappedField
 

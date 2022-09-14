@@ -20,9 +20,7 @@ class AbaqusBoolean(int):
     Python bool (True, False), or a Python int (1, 0).
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             from symbolicConstants import *
             from abaqusConstants import *
@@ -33,9 +31,7 @@ class AbaqusBoolean(int):
         """The AbaqusBoolean method creates an AbaqusBoolean object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 AbaqusBoolean
 

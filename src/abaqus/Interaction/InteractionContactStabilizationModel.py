@@ -21,9 +21,7 @@ class InteractionContactStabilizationModel(ModelBase):
         """This method creates a StdStabilization object.
 
         .. note::
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].StdStabilization
 

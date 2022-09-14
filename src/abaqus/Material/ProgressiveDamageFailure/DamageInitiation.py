@@ -11,9 +11,7 @@ class DamageInitiation:
     damage.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].ductileDamageInitiation
@@ -256,9 +254,7 @@ class DamageInitiation:
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].DuctileDamageInitiation
                 session.odbs[name].materials[name].DuctileDamageInitiation
@@ -339,9 +335,7 @@ class DamageInitiation:
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].FldDamageInitiation
                 session.odbs[name].materials[name].FldDamageInitiation
@@ -422,9 +416,7 @@ class DamageInitiation:
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].FlsdDamageInitiation
                 session.odbs[name].materials[name].FlsdDamageInitiation
@@ -505,9 +497,7 @@ class DamageInitiation:
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].JohnsonCookDamageInitiation
                 session.odbs[name].materials[name].JohnsonCookDamageInitiation
@@ -589,9 +579,7 @@ class DamageInitiation:
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MaxeDamageInitiation
                 session.odbs[name].materials[name].MaxeDamageInitiation
@@ -676,9 +664,7 @@ class DamageInitiation:
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MaxsDamageInitiation
                 session.odbs[name].materials[name].MaxsDamageInitiation
@@ -762,9 +748,7 @@ class DamageInitiation:
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MkDamageInitiation
                 session.odbs[name].materials[name].MkDamageInitiation
@@ -845,9 +829,7 @@ class DamageInitiation:
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MsfldDamageInitiation
                 session.odbs[name].materials[name].MsfldDamageInitiation
@@ -929,9 +911,7 @@ class DamageInitiation:
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].QuadeDamageInitiation
                 session.odbs[name].materials[name].QuadeDamageInitiation
@@ -1016,9 +996,7 @@ class DamageInitiation:
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].QuadsDamageInitiation
                 session.odbs[name].materials[name].QuadsDamageInitiation
@@ -1103,9 +1081,7 @@ class DamageInitiation:
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MaxpeDamageInitiation
                 session.odbs[name].materials[name].MaxpeDamageInitiation
@@ -1190,9 +1166,7 @@ class DamageInitiation:
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MaxpsDamageInitiation
                 session.odbs[name].materials[name].MaxpsDamageInitiation
@@ -1276,9 +1250,7 @@ class DamageInitiation:
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].ShearDamageInitiation
                 session.odbs[name].materials[name].ShearDamageInitiation
@@ -1359,9 +1331,7 @@ class DamageInitiation:
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].HashinDamageInitiation
                 session.odbs[name].materials[name].HashinDamageInitiation

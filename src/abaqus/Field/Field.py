@@ -8,9 +8,7 @@ class Field:
     objects derived from the Field.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import fields
     """

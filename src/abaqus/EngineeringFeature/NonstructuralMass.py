@@ -11,9 +11,7 @@ class NonstructuralMass(Inertia):
     The NonstructuralMass object is derived from the Inertia object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].engineeringFeatures.inertias[name]
@@ -58,9 +56,7 @@ class NonstructuralMass(Inertia):
         """This method creates a NonstructuralMass object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.NonstructuralMass
                 mdb.models[name].rootAssembly.engineeringFeatures.NonstructuralMass

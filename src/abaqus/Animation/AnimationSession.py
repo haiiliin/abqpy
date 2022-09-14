@@ -12,9 +12,7 @@ class AnimationSession(SessionBase):
     Session object, see Session object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import animation
     """
@@ -56,9 +54,7 @@ class AnimationSession(SessionBase):
         """This method creates a Movie object from the contents of the specified file.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.Movie
 

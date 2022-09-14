@@ -15,9 +15,7 @@ class MovieOptions(_CopyOptionsBase):
     the current viewport.
 
     .. note::
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.viewports[name].movieOptions
     """

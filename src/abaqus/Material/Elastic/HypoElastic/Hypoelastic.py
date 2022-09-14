@@ -7,9 +7,7 @@ class Hypoelastic:
     r"""The Hypoelastic object specifies hypoelastic material properties.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].hypoelastic
@@ -34,9 +32,7 @@ class Hypoelastic:
         """This method creates a Hypoelastic object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Hypoelastic
                 session.odbs[name].materials[name].Hypoelastic

@@ -21,9 +21,7 @@ class InteractionContactControlModel(ModelBase):
         """This method creates an ExpContactControl object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ExpContactControl
 
@@ -98,9 +96,7 @@ class InteractionContactControlModel(ModelBase):
         """This method creates an StdContactControl object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].StdContactControl
 

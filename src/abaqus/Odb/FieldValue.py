@@ -13,9 +13,7 @@ class FieldValue:
     access to an output database.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i]

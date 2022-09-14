@@ -6,9 +6,7 @@ class ShearTestData:
     modulus as a function of time.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].viscoelastic.shearTestData
@@ -37,9 +35,7 @@ class ShearTestData:
         r"""This method creates a ShearTestData object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].viscoelastic.ShearTestData
                 session.odbs[name].materials[name].viscoelastic.ShearTestData

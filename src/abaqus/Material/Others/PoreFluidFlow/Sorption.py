@@ -8,9 +8,7 @@ class Sorption:
     porous medium in the analysis of coupled wetting liquid flow and porous medium stress.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].sorption
@@ -49,9 +47,7 @@ class Sorption:
         r"""This method creates a Sorption object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Sorption
                 session.odbs[name].materials[name].Sorption

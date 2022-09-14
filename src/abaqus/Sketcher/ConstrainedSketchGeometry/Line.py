@@ -11,9 +11,7 @@ class Line(ConstrainedSketchGeometry):
         """This method creates a line between two given points.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].Line
 

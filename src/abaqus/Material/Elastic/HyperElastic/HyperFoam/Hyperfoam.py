@@ -12,9 +12,7 @@ class Hyperfoam:
     r"""The Hyperfoam object specifies elastic properties for a hyperelastic foam.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].hyperfoam
@@ -62,9 +60,7 @@ class Hyperfoam:
         """This method creates a Hyperfoam object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Hyperfoam
                 session.odbs[name].materials[name].Hyperfoam

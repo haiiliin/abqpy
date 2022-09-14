@@ -45,9 +45,7 @@ class ConnectorSection(SectionBase):
         """This method creates a connector damage behavior option for a ConnectorSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 import connectorBehavior
                 connectorBehavior.ConnectorDamage
@@ -168,9 +166,7 @@ class ConnectorSection(SectionBase):
         """This method creates a connector damping behavior option for a ConnectorSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 import connectorBehavior
                 connectorBehavior.ConnectorDamping
@@ -240,9 +236,7 @@ class ConnectorSection(SectionBase):
         object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 import connectorBehavior
                 connectorBehavior.ConnectorElasticity
@@ -312,9 +306,7 @@ class ConnectorSection(SectionBase):
         """This method creates a connector failure behavior option for a ConnectorSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 import connectorBehavior
                 connectorBehavior.ConnectorFailure
@@ -384,9 +376,7 @@ class ConnectorSection(SectionBase):
         hysteretic in nature.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 import connectorBehavior
                 connectorBehavior.ConnectorFriction
@@ -508,9 +498,7 @@ class ConnectorSection(SectionBase):
         """This method creates a connector lock behavior option for a ConnectorSection.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 import connectorBehavior
                 connectorBehavior.ConnectorLock
@@ -579,9 +567,7 @@ class ConnectorSection(SectionBase):
         object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 import connectorBehavior
                 connectorBehavior.ConnectorPlasticity
@@ -672,9 +658,7 @@ class ConnectorSection(SectionBase):
         allowable connector behavior option.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].ConnectorPotential
                 session.odbs[name].sections[name].behaviorOptions[i].ConnectorPotential
@@ -727,9 +711,7 @@ class ConnectorSection(SectionBase):
         """This method creates a connector stop behavior option for a ConnectorSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 import connectorBehavior
                 connectorBehavior.ConnectorStop
@@ -767,9 +749,7 @@ class ConnectorSection(SectionBase):
         """This method creates a DerivedComponent object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].DerivedComponent
                 mdb.models[name].sections[name].behaviorOptions[i].DerivedComponent
@@ -811,9 +791,7 @@ class ConnectorSection(SectionBase):
         """This method creates a TangentialBehavior object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
                 session.odbs[name].sections[name].behaviorOptions[i].TangentialBehavior

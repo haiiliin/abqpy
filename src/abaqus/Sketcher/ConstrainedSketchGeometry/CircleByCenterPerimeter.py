@@ -12,9 +12,7 @@ class CircleByCenterPerimeter(ConstrainedSketchGeometry):
         circle is added to the geometry repository of the ConstrainedSketch object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].CircleByCenterPerimeter
 

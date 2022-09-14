@@ -8,9 +8,7 @@ class ArbitraryProfile(Profile):
     The ArbitraryProfile object is derived from the Profile object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].profiles[name]
@@ -45,9 +43,7 @@ class ArbitraryProfile(Profile):
         """This method creates a ArbitraryProfile object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ArbitraryProfile
                 session.odbs[name].ArbitraryProfile

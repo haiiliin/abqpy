@@ -8,9 +8,7 @@ class ClayPlasticity:
     r"""The ClayPlasticity object specifies the extended Cam-clay plasticity model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].clayPlasticity
@@ -65,9 +63,7 @@ class ClayPlasticity:
         """This method creates a ClayPlasticity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].ClayPlasticity
                 session.odbs[name].materials[name].ClayPlasticity

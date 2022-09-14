@@ -15,9 +15,7 @@ class EqualLengthConstraint(ConstrainedSketchConstraint):
         constrains them such that their lengths are equal.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].EqualLengthConstraint
 

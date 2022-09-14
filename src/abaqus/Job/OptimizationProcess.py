@@ -8,9 +8,7 @@ class OptimizationProcess:
     defined using an optimization task.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import job
             mdb.optimizationProcesses[name]
@@ -81,9 +79,7 @@ class OptimizationProcess:
         """This method creates an OptimizationProcess object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.OptimizationProcess
 

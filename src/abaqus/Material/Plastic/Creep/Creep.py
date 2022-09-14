@@ -9,9 +9,7 @@ class Creep:
     r"""The Creep object defines a creep law.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].creep
@@ -107,9 +105,7 @@ class Creep:
         """This method creates a Creep object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Creep
                 session.odbs[name].materials[name].Creep

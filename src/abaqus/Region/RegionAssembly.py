@@ -21,9 +21,7 @@ class RegionAssembly(RegionAssemblyBase):
     created.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import assembly
             mdb.models[name].rootAssembly
@@ -60,9 +58,7 @@ class RegionAssembly(RegionAssemblyBase):
         name='Surf-1')
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Surface
                 mdb.models[name].rootAssembly.Surface
@@ -210,9 +206,7 @@ class RegionAssembly(RegionAssemblyBase):
         """This method creates a set from a sequence of objects in a model database.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
                 mdb.models[name].rootAssembly.Set
@@ -270,9 +264,7 @@ class RegionAssembly(RegionAssemblyBase):
         """This method copies a set from an existing set.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
                 mdb.models[name].rootAssembly.Set

@@ -6,9 +6,7 @@ class OdbDataInstance:
     """The OdbDataInstance object instance data.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.odbData[name].instances[i]

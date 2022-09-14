@@ -26,9 +26,7 @@ class ViewportBase(_OptionsBase):
     viewport.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.viewports[name]
     """
@@ -299,9 +297,7 @@ class ViewportBase(_OptionsBase):
         """This method creates a Viewport object with the specified origin and dimensions.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.Viewport
 

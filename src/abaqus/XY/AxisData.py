@@ -10,9 +10,7 @@ class AxisData:
     automatically created when creating an Axis object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.charts[name].axes1[i].axisData
