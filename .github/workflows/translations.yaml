@@ -52,8 +52,8 @@ jobs:
       run: |
         git branch -a
         git checkout ${{ matrix.branch }}  # attach this repo
-        git config --global user.email "abqpy-auto-update"
-        git config --global user.name "abqpy-auto-update"
+        git config --global user.email "hailin.wang@connect.polyu.hk"
+        git config --global user.name "abqpy-bot"
         git add .
         git commit -m "Update translations by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
     - name: Pushing to the protected branch 'protected'
