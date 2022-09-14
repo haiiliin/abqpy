@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 00:16+0000\n"
+"POT-Creation-Date: 2022-09-14 09:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,10 +62,10 @@ msgstr ""
 #: abaqus.OdbDisplay.SymbolOptions.SymbolOptions:16
 #: abaqus.OdbDisplay.ViewCut.ViewCut:8
 #: abaqus.OdbDisplay.ViewerOptions.ViewerOptions:7 of
-msgid "This object can be accessed by:"
+msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions:32 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions:30 of
 msgid ""
 "Check `CommonOptions on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-commonoptionspyc.htm?contextscope=all>`__."
@@ -1294,7 +1294,7 @@ msgid ""
 "DGContourOptions object."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions:32 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions:30 of
 msgid ""
 "Check `ContourOptions on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contouroptionspyc.htm?contextscope=all>`__."
@@ -2160,7 +2160,7 @@ msgid ""
 "OdbDisplay object."
 msgstr ""
 
-#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay:14 of
+#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay:12 of
 msgid ""
 "Check `DefaultOdbDisplay on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-defaultodbdisplaypyc.htm?contextscope=all>`__."
@@ -2314,7 +2314,7 @@ msgid ""
 "object is derived from the DGDisplayBodyOptions object."
 msgstr ""
 
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions:33 of
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions:31 of
 msgid ""
 "Check `DisplayBodyOptions on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displaybodyoptionspyc.htm?contextscope=all>`__."
@@ -2453,7 +2453,7 @@ msgid ""
 "associated with a particular viewport."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay:24 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay:22 of
 msgid ""
 "Check `OdbDisplay on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all>`__."
@@ -2911,42 +2911,42 @@ msgid "This method creates a ViewCut object."
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:5 of
-msgid "This function can be accessed by:"
+msgid "This function can be accessed by::"
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:13
-#: abaqus.OdbDisplay.ViewCut.ViewCut:17 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:11
+#: abaqus.OdbDisplay.ViewCut.ViewCut:15 of
 msgid ""
 "Check `ViewCut on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewcutpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:18 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:16 of
 msgid "**name**"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:18
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:16
 #: abaqus.OdbDisplay.ViewCut.ViewCut.name:2 of
 msgid "A String specifying the repository key."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:22 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:20 of
 msgid "**shape**"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:21
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:19
 #: abaqus.OdbDisplay.ViewCut.ViewCut.shape:2 of
 msgid ""
 "A SymbolicConstant specifying the shape of the ViewCut object. Possible "
 "values are PLANE, CYLINDER, SPHERE, and ISOSURFACE."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:27
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:25
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:52 of
 msgid "**origin**"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:25
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:23
 #: abaqus.OdbDisplay.ViewCut.ViewCut.origin:2
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:50 of
 msgid ""
@@ -2956,12 +2956,12 @@ msgid ""
 "**csysName** argument."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:34
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:32
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:59 of
 msgid "**normal**"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:30
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:28
 #: abaqus.OdbDisplay.ViewCut.ViewCut.normal:2
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:55 of
 msgid ""
@@ -2973,12 +2973,12 @@ msgid ""
 "**shape** is CYLINDER, SPHERE or ISOSURFACE."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:41
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:39
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:66 of
 msgid "**axis2**"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:37
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:35
 #: abaqus.OdbDisplay.ViewCut.ViewCut.axis2:2
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:62 of
 msgid ""
@@ -2991,12 +2991,12 @@ msgid ""
 "ISOSURFACE."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:46
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:44
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:47 of
 msgid "**csysName**"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:44
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:42
 #: abaqus.OdbDisplay.ViewCut.ViewCut.csysName:2
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:45 of
 msgid ""
@@ -3005,12 +3005,12 @@ msgid ""
 " if the cut is defined by the **origin** argument."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:53
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:51
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:73 of
 msgid "**cylinderAxis**"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:49
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:47
 #: abaqus.OdbDisplay.ViewCut.ViewCut.cylinderAxis:2
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:69 of
 msgid ""
@@ -3022,12 +3022,12 @@ msgid ""
 "is PLANE, SPHERE, or ISOSURFACE."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:57
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:55
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:77 of
 msgid "**followDeformation**"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:56
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:54
 #: abaqus.OdbDisplay.ViewCut.ViewCut.followDeformation:2
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:76 of
 msgid ""
@@ -3035,12 +3035,12 @@ msgid ""
 "static. The default value is OFF."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:62
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:60
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:82 of
 msgid "**overrideAveraging**"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:60
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:58
 #: abaqus.OdbDisplay.ViewCut.ViewCut.overrideAveraging:2
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:80 of
 msgid ""
@@ -3050,12 +3050,12 @@ msgid ""
 " value is ON."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:67
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:65
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:100 of
 msgid "**referenceFrame**"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:65
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:63
 #: abaqus.OdbDisplay.ViewCut.ViewCut.referenceFrame:2
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:85 of
 msgid ""
@@ -3068,11 +3068,11 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:84 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:82 of
 msgid ":obj:`ViewCut`"
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:72 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:70 of
 msgid "A :py:class:`~abaqus.OdbDisplay.ViewCut.ViewCut` object."
 msgstr ""
 
@@ -3525,7 +3525,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:14
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:42
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:40
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:35
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:37 of
 msgid "**sectionPoint**"
@@ -3560,7 +3560,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:26
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:47
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:45
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:63
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable:20
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:54 of
@@ -3624,10 +3624,10 @@ msgstr ""
 msgid ""
 "A Dictionary with String keys and String values. Each key specifies a "
 "region in the model; the corresponding value specifies a section point "
-"within that region. For example:"
+"within that region. For example::"
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:56 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:54 of
 msgid ""
 ":obj:`If` :obj:`the` :obj:`viewport` :obj:`is` :obj:`not` "
 ":obj:`associated` :obj:`with` :obj:`any` :obj:`Odb` :obj:`object`"
@@ -3804,7 +3804,7 @@ msgid ""
 "object."
 msgstr ""
 
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions:33 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions:31 of
 msgid ""
 "Check `OrientationOptions on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-orientationoptionspyc.htm?contextscope=all>`__."
@@ -4117,7 +4117,7 @@ msgid ""
 "object is derived from the DGSuperimposeOptions object."
 msgstr ""
 
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions:34 of
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions:32 of
 msgid ""
 "Check `SuperimposeOptions on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-superimposeoptionspyc.htm?contextscope=all>`__."
@@ -4516,7 +4516,7 @@ msgid ""
 "DGSymbolOptions object."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions:32 of
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions:30 of
 msgid ""
 "Check `SymbolOptions on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-symboloptionspyc.htm?contextscope=all>`__."
@@ -5720,7 +5720,7 @@ msgid ""
 "the **viewerOptions** member when a session is started."
 msgstr ""
 
-#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions:15 of
+#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions:13 of
 msgid ""
 "Check `ViewerOptions on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vieweroptionspyc.htm?contextscope=all>`__."
@@ -6074,5 +6074,19 @@ msgstr ""
 #~ "help.3ds.com/2017 "
 #~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vieweroptionspyc.htm?contextscope=all"
 #~ "#simaker-vieweroptionssetvaluespyc>`_."
+#~ msgstr ""
+
+#~ msgid "This object can be accessed by:"
+#~ msgstr ""
+
+#~ msgid "This function can be accessed by:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Dictionary with String keys and "
+#~ "String values. Each key specifies a "
+#~ "region in the model; the corresponding"
+#~ " value specifies a section point "
+#~ "within that region. For example:"
 #~ msgstr ""
 
