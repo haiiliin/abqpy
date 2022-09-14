@@ -13,9 +13,7 @@ class SectionCategory:
     Section commands.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].parts[name].elements[i].sectionCategory
@@ -51,9 +49,7 @@ class SectionCategory:
         """This method creates a SectionCategory object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].SectionCategory
 
@@ -76,9 +72,7 @@ class SectionCategory:
         """This method creates a SectionPoint object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].SectionCategory
 

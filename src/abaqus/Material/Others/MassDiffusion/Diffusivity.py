@@ -9,9 +9,7 @@ class Diffusivity:
     r"""The Diffusivity object specifies mass diffusivity.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].diffusivity
@@ -75,9 +73,7 @@ class Diffusivity:
         """This method creates a Diffusivity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Diffusivity
                 session.odbs[name].materials[name].Diffusivity

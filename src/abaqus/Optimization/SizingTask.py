@@ -16,9 +16,7 @@ class SizingTask(OptimizationTask):
     The SizingTask object is derived from the OptimizationTask object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import optimization
             mdb.models[name].optimizationTasks[name]
@@ -107,9 +105,7 @@ class SizingTask(OptimizationTask):
         """This method creates a SizingTask object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SizingTask
 

@@ -8,9 +8,7 @@ class MohrCoulombHardening:
     model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].mohrCoulombPlasticity.mohrCoulombHardening
@@ -38,9 +36,7 @@ class MohrCoulombHardening:
         """This method creates a MohrCoulombHardening object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].mohrCoulombPlasticity.MohrCoulombHardening.MohrCoulombHardeningmaterials[name].mohrCoulombPlasticity.MohrCoulombHardening
             

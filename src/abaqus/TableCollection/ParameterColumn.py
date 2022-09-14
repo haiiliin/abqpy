@@ -9,9 +9,7 @@ class ParameterColumn:
     noneditable.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name].tableCollections[name].parameterTables[name].columns[i]
 
@@ -55,9 +53,7 @@ class ParameterColumn:
         column member.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].tableCollections[name].parameterTables[name].Column
 

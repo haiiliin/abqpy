@@ -6,9 +6,7 @@ class TimePoint:
     database or restart files.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].timePoints[name]
@@ -30,9 +28,7 @@ class TimePoint:
         """This method creates a TimePoint object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].TimePoint
 

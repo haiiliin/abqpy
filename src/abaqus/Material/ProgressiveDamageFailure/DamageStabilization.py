@@ -6,9 +6,7 @@ class DamageStabilization:
     for fiber-reinforced materials.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].ductileDamageInitiation.damageStabilization
@@ -57,9 +55,7 @@ class DamageStabilization:
         """This method creates a DamageStabilization object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].ductileDamageInitiation.DamageStabilization
                 mdb.models[name].materials[name].fldDamageInitiation.DamageStabilization

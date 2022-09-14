@@ -23,9 +23,7 @@ class Feature:
     resulting model modification.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].features[name]
@@ -59,9 +57,7 @@ class Feature:
         geometric faces or element faces.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -129,9 +125,7 @@ class Feature:
         The direction can be specified using a straight edge or a datum axis.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -229,9 +223,7 @@ class Feature:
         one or more connected edges.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -330,9 +322,7 @@ class Feature:
         or cone.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -359,9 +349,7 @@ class Feature:
         plane and passing through the specified point.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -390,9 +378,7 @@ class Feature:
         edge and passing through the specified point.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -421,9 +407,7 @@ class Feature:
         principal axes.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -452,9 +436,7 @@ class Feature:
         by rotating a line about the specified axis through the specified angle.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -488,9 +470,7 @@ class Feature:
         by rotating a line about the specified point through the specified angle.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -526,9 +506,7 @@ class Feature:
         described by three points and through its center.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -561,9 +539,7 @@ class Feature:
         """This method creates a Feature object and a DatumAxis object along the specified edge.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -590,9 +566,7 @@ class Feature:
         planes.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -621,9 +595,7 @@ class Feature:
         points.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -652,9 +624,7 @@ class Feature:
         coordinate system at the origin.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -691,9 +661,7 @@ class Feature:
         an existing datum coordinate system to a specified point.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -742,9 +710,7 @@ class Feature:
         """This method creates a Feature object and a DatumCsys object from three points.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -796,9 +762,7 @@ class Feature:
         lines.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -836,9 +800,7 @@ class Feature:
         one of the three principal planes.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -869,9 +831,7 @@ class Feature:
         distance from an existing plane.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -904,9 +864,7 @@ class Feature:
         plane and passing through the specified point.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -938,9 +896,7 @@ class Feature:
         the specified axis through the specified angle.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -971,9 +927,7 @@ class Feature:
         three points.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1004,9 +958,7 @@ class Feature:
         specified line and through the specified point that does not lie on the line.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1035,9 +987,7 @@ class Feature:
         line and running through the specified point.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1066,9 +1016,7 @@ class Feature:
         and normal to the line connecting the points.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1097,9 +1045,7 @@ class Feature:
         specified coordinates.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1123,9 +1069,7 @@ class Feature:
         point by a vector.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1149,9 +1093,7 @@ class Feature:
         """This method creates a Feature object and a DatumPoint object midway between two points.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1178,9 +1120,7 @@ class Feature:
         offset from two edges.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1215,9 +1155,7 @@ class Feature:
         distance from one end of the edge.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1248,9 +1186,7 @@ class Feature:
         an existing point along the normal to the edge.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1279,9 +1215,7 @@ class Feature:
         projecting an existing point onto the face.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1318,9 +1252,7 @@ class Feature:
         that represents the transformation from sketch coordinates to part coordinates.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1360,9 +1292,7 @@ class Feature:
         """This method partitions one or more cells using the given datum plane.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1391,9 +1321,7 @@ class Feature:
         face to partition the target cells.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1424,9 +1352,7 @@ class Feature:
         direction.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1463,9 +1389,7 @@ class Feature:
         points.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1494,9 +1418,7 @@ class Feature:
         """This method partitions a cell using an N-sided cutting patch defined by the given edges.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1528,9 +1450,7 @@ class Feature:
         edge point.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1563,9 +1483,7 @@ class Feature:
         direction.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1597,9 +1515,7 @@ class Feature:
         """This method partitions one or more cells using a plane defined by three points.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1635,9 +1551,7 @@ class Feature:
         sweep path.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1670,9 +1584,7 @@ class Feature:
         """This method partitions an edge where it intersects with a datum plane.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1700,9 +1612,7 @@ class Feature:
         """This method partitions one or more edges at the given normalized edge parameter.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1731,9 +1641,7 @@ class Feature:
         """This method partitions an edge at the given point.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1762,9 +1670,7 @@ class Feature:
         meshed using a structured meshing technique.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1789,9 +1695,7 @@ class Feature:
         given edge points defined by the normalized edge parameters.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1830,9 +1734,7 @@ class Feature:
         given edge points.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1866,9 +1768,7 @@ class Feature:
         """This method partitions one or more faces using the given datum plane.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1893,9 +1793,7 @@ class Feature:
         given face to partition the target faces.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1923,9 +1821,7 @@ class Feature:
         target faces.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1952,9 +1848,7 @@ class Feature:
         faces.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -1983,9 +1877,7 @@ class Feature:
         given points.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -2023,9 +1915,7 @@ class Feature:
         """This method partitions one or more planar faces by sketching on them.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -2070,9 +1960,7 @@ class Feature:
         projecting the sketch toward the target faces through the given distance.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -2123,9 +2011,7 @@ class Feature:
         reference point.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -2173,9 +2059,7 @@ class Feature:
         projecting toward the target faces through an infinite distance.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -2219,9 +2103,7 @@ class Feature:
         location.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -2247,9 +2129,7 @@ class Feature:
         """This method removes wire edges.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints
@@ -2281,9 +2161,7 @@ class Feature:
         level, then each point can only be a vertex, a reference point, or an orphan mesh node.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
                 mdb.models[name].rootAssembly.AttachmentPoints

@@ -30,9 +30,7 @@ class ConstrainedSketchBase:
     contained in their respective repositories.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import sketch
             mdb.models[name].sketches[name]

@@ -8,9 +8,7 @@ class GapFlow:
     cohesive elements.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].gapFlow
@@ -69,9 +67,7 @@ class GapFlow:
         """This method creates a GapFlow object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].GapFlow
                 session.odbs[name].materials[name].GapFlow

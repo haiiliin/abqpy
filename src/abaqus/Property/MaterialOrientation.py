@@ -12,9 +12,7 @@ class MaterialOrientation:
     composite layups.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].parts[name].compositeLayups[i].orientation
@@ -144,9 +142,7 @@ class MaterialOrientation:
         """This method creates a MaterialOrientation object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].MaterialOrientation
 
@@ -252,9 +248,7 @@ class MaterialOrientation:
         """This method creates a MaterialOrientation object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].MaterialOrientation
 

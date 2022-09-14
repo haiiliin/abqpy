@@ -9,9 +9,7 @@ class LoadState:
     object are common to all objects derived from LoadState.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].steps[name].loadStates[name]

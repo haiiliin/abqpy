@@ -15,9 +15,7 @@ class PropertyTable:
     corruption.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name].tableCollections[name].propertyTables[name]
 
@@ -48,9 +46,7 @@ class PropertyTable:
         """This method creates a PropertyTable object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].tableCollections[name].PropertyTable
 
@@ -108,9 +104,7 @@ class PropertyTable:
         """This method creates a PropertyTableData object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].tableCollections[name].PropertyTable
 

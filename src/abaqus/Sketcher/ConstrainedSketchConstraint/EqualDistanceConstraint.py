@@ -19,9 +19,7 @@ class EqualDistanceConstraint(ConstrainedSketchConstraint):
         vertices or lines.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].EqualDistanceConstraint
 

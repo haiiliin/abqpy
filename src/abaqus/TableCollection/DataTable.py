@@ -10,9 +10,7 @@ class DataTable:
     current ParameterTable.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name].tableCollections[name].parameterTables[name].dataTables[i]
 
@@ -35,9 +33,7 @@ class DataTable:
         """This method creates a DataTable object and places it in the dataTables array.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].tableCollections[name].parameterTables[name].DataTable
 

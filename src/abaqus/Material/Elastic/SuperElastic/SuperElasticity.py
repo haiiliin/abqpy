@@ -10,9 +10,7 @@ class SuperElasticity:
     """The SuperElasticity object specifies a superelastic material model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].superElasticity
@@ -53,9 +51,7 @@ class SuperElasticity:
         """This method creates a SuperElasticity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].SuperElasticity
                 session.odbs[name].materials[name].SuperElasticity

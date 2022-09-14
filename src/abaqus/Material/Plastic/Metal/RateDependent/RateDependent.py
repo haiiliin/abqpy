@@ -7,9 +7,7 @@ class RateDependent:
     r"""The RateDependent object defines a rate-dependent viscoplastic model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].crushableFoam.rateDependent
@@ -59,9 +57,7 @@ class RateDependent:
         """This method creates a RateDependent object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].crushableFoam.RateDependent
                 mdb.models[name].materials[name].druckerPrager.RateDependent
