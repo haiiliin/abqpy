@@ -11,9 +11,7 @@ class Field(PredefinedField):
     **distributionType=FROM_FILE** or FROM_FILE_AND_USER_DEFINED.
 
     .. note::
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].predefinedFields[name]
@@ -70,9 +68,7 @@ class Field(PredefinedField):
         """This method creates a Field object.
 
         .. note::
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Field
 

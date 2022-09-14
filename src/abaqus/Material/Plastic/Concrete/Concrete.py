@@ -10,9 +10,7 @@ class Concrete:
     """The Concrete object defines concrete properties beyond the elastic range.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].concrete
@@ -49,9 +47,7 @@ class Concrete:
         """This method creates a Concrete object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Concrete
                 session.odbs[name].materials[name].Concrete

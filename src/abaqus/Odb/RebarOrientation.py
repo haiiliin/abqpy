@@ -9,9 +9,7 @@ class RebarOrientation:
     """The RebarOrientation object represents the orientation of the rebar reference.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].parts[name].rebarOrientations[i]

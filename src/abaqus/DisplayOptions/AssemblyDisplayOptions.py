@@ -27,9 +27,7 @@ class AssemblyDisplayOptions:
     viewport.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import assembly
             session.viewports[name].assemblyDisplay

@@ -9,9 +9,7 @@ class Cell:
     """Cells are volumetric regions of geometry.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].allInternalSets[name].cells[i]

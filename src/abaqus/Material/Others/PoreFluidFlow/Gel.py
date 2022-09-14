@@ -5,9 +5,7 @@ class Gel:
     r"""The Gel object defines a swelling gel.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].gel
@@ -31,9 +29,7 @@ class Gel:
         """This method creates a Gel object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Gel
                 session.odbs[name].materials[name].Gel

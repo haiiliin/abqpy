@@ -5,9 +5,7 @@ class DataSet:
     """The DataSetobject specifies material test data.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import calibration
             mdb.models[name].calibrations[name].dataSets[name]
@@ -34,9 +32,7 @@ class DataSet:
         """This method creates a DataSet object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].calibrations[name].DataSet
 

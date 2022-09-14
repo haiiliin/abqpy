@@ -5,9 +5,7 @@ class EventSeriesType:
     """The EventSeriesType object is used to define a type of event in a process.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name].eventSeriesTypes[name]
 
@@ -34,9 +32,7 @@ class EventSeriesType:
         """This method creates an EventSeriesType object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].EventSeriesType
 

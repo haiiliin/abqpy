@@ -10,9 +10,7 @@ class TableCollectionModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name]
 
@@ -35,9 +33,7 @@ class TableCollectionModel(ModelBase):
         """This method creates an EventSeries object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].EventSeriesData
 
@@ -90,9 +86,7 @@ class TableCollectionModel(ModelBase):
         """This method creates an EventSeriesType object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].EventSeriesType
 

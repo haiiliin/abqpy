@@ -6,9 +6,7 @@ class OdbDataMaterial:
     """The OdbDataMaterial object stores material data.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.odbData[name].materials[i]

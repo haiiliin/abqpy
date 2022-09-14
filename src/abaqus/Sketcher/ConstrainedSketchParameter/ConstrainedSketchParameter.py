@@ -6,9 +6,7 @@ class ConstrainedSketchParameter:
     sketch.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import sketch
             mdb.models[name].sketches[name].parameters[i]
@@ -41,9 +39,7 @@ class ConstrainedSketchParameter:
         parameter.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].ConstrainedSketchParameter
 

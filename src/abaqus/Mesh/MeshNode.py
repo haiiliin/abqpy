@@ -9,9 +9,7 @@ class MeshNode:
     internal numbering of the node repository. The index does not refer to the node label.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].allInternalSets[name].nodes[i]
@@ -57,9 +55,7 @@ class MeshNode:
         """This method creates a node on an orphan mesh part.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Node
 

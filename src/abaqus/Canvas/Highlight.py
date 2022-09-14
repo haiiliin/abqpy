@@ -10,9 +10,7 @@ def highlight(object):
     """This method highlights an object in the current viewport.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             highlight
 
@@ -60,9 +58,7 @@ def unhighlight(object):
     """This method removes highlighting from an object in the current viewport.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             unhighlight
 

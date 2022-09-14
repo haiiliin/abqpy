@@ -9,9 +9,7 @@ class NumberFormat:
     discusses:Access[NumberFormat(...)](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-numberformatpyc.htm?ContextScope=all#simaker-numberformatnumberformatpyc)Members
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.defaultFieldReportOptions.numberFormat
@@ -50,9 +48,7 @@ class NumberFormat:
         """This method creates a NumberFormat object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.defaultFieldReportOptions.NumberFormat
                 session.fieldReportOptions.NumberFormat

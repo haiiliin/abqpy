@@ -9,9 +9,7 @@ class StopCondition:
     StopCondition object are common to all objects derived from StopCondition.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import optimization
             mdb.models[name].optimizationTasks[name].stopConditions[name]

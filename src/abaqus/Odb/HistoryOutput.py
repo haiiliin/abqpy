@@ -10,9 +10,7 @@ class HistoryOutput:
     variable.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].steps[name].historyRegions[name].historyOutputs[name]
@@ -53,9 +51,7 @@ class HistoryOutput:
         """This method creates a HistoryOutput object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].steps[name].historyRegions[name].HistoryOutput
 

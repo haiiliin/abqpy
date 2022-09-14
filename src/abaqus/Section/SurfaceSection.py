@@ -10,9 +10,7 @@ class SurfaceSection(Section):
     The SurfaceSection object is derived from the Section object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].sections[name]
@@ -43,9 +41,7 @@ class SurfaceSection(Section):
         """This method creates a SurfaceSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SurfaceSection
                 session.odbs[name].SurfaceSection

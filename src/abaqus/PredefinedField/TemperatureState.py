@@ -11,9 +11,7 @@ class TemperatureState(PredefinedFieldState):
     The TemperatureState object is derived from the PredefinedFieldState object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].steps[name].predefinedFieldStates[name]

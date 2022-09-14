@@ -5,9 +5,7 @@ class Color:
     """The Color object contains the RGB definition of a system color.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.colors[name]
     """

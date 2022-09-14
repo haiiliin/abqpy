@@ -12,9 +12,7 @@ class GeneralStiffnessSection(ShellSection):
     The GeneralStiffnessSection object is derived from the ShellSection object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].sections[name]
@@ -101,9 +99,7 @@ class GeneralStiffnessSection(ShellSection):
         """This method creates a GeneralStiffnessSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].GeneralStiffnessSection
                 session.odbs[name].GeneralStiffnessSection

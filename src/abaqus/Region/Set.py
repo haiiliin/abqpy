@@ -24,10 +24,7 @@ class Set(Region):
     """If a set spans more than one part instance, the members **vertices**, **edges**, **faces**,
     **cells**, **elements**, or **nodes** return a sequence of all the queried
     vertices/edges/faces/cells/elements/nodes respectively for each part instance contained
-    in the set. For example:
-
-    .. autolink-skip:: section
-    .. code-block:: python
+    in the set. For example::
 
         assembly=mdb.models['Transmission'].rootAssembly
         clutchElements=assembly.instances['Clutch'].elements
@@ -40,9 +37,7 @@ class Set(Region):
         transmissionSet.elements[6]=mdb.models['Transmission'].rootAssembly.instances['housing-'].elements[47]
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].allInternalSets[name]
@@ -110,9 +105,7 @@ class Set(Region):
         """This method creates a set from a sequence of objects in a model database.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
                 mdb.models[name].rootAssembly.Set
@@ -170,9 +163,7 @@ class Set(Region):
         """This method copies a set from an existing set.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
                 mdb.models[name].rootAssembly.Set
@@ -201,9 +192,7 @@ class Set(Region):
         """This method creates a set by performing a boolean operation on two or more input sets.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
                 mdb.models[name].rootAssembly.Set
@@ -236,9 +225,7 @@ class Set(Region):
         in the assembly.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
                 mdb.models[name].rootAssembly.Set
@@ -264,9 +251,7 @@ class Set(Region):
         """This method creates a set from a sequence of element labels in a model database.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
                 mdb.models[name].rootAssembly.Set
@@ -292,9 +277,7 @@ class Set(Region):
         """This method creates a set from a sequence of node labels in a model database.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
                 mdb.models[name].rootAssembly.Set
@@ -328,9 +311,7 @@ class Set(Region):
         Odb.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
                 mdb.models[name].rootAssembly.Set

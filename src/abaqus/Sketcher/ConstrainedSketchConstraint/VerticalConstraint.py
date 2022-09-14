@@ -13,9 +13,7 @@ class VerticalConstraint(ConstrainedSketchConstraint):
         constrains it to be vertical.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].VerticalConstraint
 

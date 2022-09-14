@@ -8,9 +8,7 @@ class CDCTerm:
     """The CDCTerm object is used to create contributing terms for a DerivedComponent object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.cdcTerms[i]
@@ -92,9 +90,7 @@ class CDCTerm:
         """This method creates a CDCTerm object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.CDCTerm
                 mdb.models[name].sections[name].behaviorOptions[i].derivedComponent.CDCTerm
@@ -184,9 +180,7 @@ class CDCTerm:
         allowable connector behavior option, derived component term, or connector section.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.CDCTerm
                 mdb.models[name].sections[name].behaviorOptions[i].derivedComponent.CDCTerm

@@ -13,9 +13,7 @@ class XYPlotBase:
     """The XYPlot object is used to display Chart objects.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.xyPlots[name]
@@ -43,9 +41,7 @@ class XYPlotBase:
         """This method creates an empty XYPlot object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.XYPlot
 

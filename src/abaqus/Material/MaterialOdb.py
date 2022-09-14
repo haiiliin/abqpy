@@ -8,9 +8,7 @@ class MaterialOdb(OdbBase):
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name]
@@ -21,9 +19,7 @@ class MaterialOdb(OdbBase):
         """This method creates a Material object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].Material
 
