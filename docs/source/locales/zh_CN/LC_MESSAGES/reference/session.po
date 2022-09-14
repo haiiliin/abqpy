@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-13 16:08+0000\n"
+"POT-Creation-Date: 2022-09-14 09:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,10 +55,10 @@ msgstr ""
 #: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:6
 #: abaqus.Session.NumberFormat.NumberFormat:7 abaqus.Session.Session.Session:6
 #: abaqus.Session.SessionBase.SessionBase:6 of
-msgid "This object can be accessed by:"
+msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.Session.Session.Session:13 of
+#: abaqus.Session.Session.Session:11 of
 msgid ""
 "Check `Session on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all>`__."
@@ -1393,10 +1393,10 @@ msgstr ""
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:5
 #: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:6
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:5 of
-msgid "This function can be accessed by:"
+msgid "This function can be accessed by::"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.AreaStyle:13 of
+#: abaqus.XY.XYSession.XYSession.AreaStyle:11 of
 msgid ""
 "Check `AreaStyle on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-areastylepyc.htm?contextscope=all>`__."
@@ -1459,35 +1459,35 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.AreaStyle:19
-#: abaqus.XY.XYSession.XYSession.LineStyle:19
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:19
-#: abaqus.XY.XYSession.XYSession.TextStyle:19 of
+#: abaqus.XY.XYSession.XYSession.AreaStyle:17
+#: abaqus.XY.XYSession.XYSession.LineStyle:17
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:17
+#: abaqus.XY.XYSession.XYSession.TextStyle:17 of
 msgid "**color**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.AreaStyle:18 of
+#: abaqus.XY.XYSession.XYSession.AreaStyle:16 of
 msgid ""
 "A String specifying the color to be used when filling an area with this "
 "AreaStyle object. The default value is \"White\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.AreaStyle:23 of
+#: abaqus.XY.XYSession.XYSession.AreaStyle:21 of
 msgid "**fill**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.AreaStyle:22 of
+#: abaqus.XY.XYSession.XYSession.AreaStyle:20 of
 msgid ""
 "A Boolean specifying whether to fill the area when using this AreaStyle. "
 "The default value is ON."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.AreaStyle:27
-#: abaqus.XY.XYSession.XYSession.LineStyle:28 of
+#: abaqus.XY.XYSession.XYSession.AreaStyle:25
+#: abaqus.XY.XYSession.XYSession.LineStyle:26 of
 msgid "**style**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.AreaStyle:26 of
+#: abaqus.XY.XYSession.XYSession.AreaStyle:24 of
 msgid ""
 "A SymbolicConstant specifying the area pattern style to be used when "
 "filling an area using this AreaStyle. The default value is SOLID."
@@ -1530,11 +1530,11 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.AreaStyle:35 of
+#: abaqus.XY.XYSession.XYSession.AreaStyle:33 of
 msgid ":obj:`AreaStyle`"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.AreaStyle:32 of
+#: abaqus.XY.XYSession.XYSession.AreaStyle:30 of
 msgid "An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object."
 msgstr ""
 
@@ -1567,180 +1567,180 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.AreaStyle:48
-#: abaqus.XY.XYSession.XYSession.LineStyle:53
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:66
-#: abaqus.XY.XYSession.XYSession.TextStyle:52 of
+#: abaqus.XY.XYSession.XYSession.AreaStyle:46
+#: abaqus.XY.XYSession.XYSession.LineStyle:51
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:64
+#: abaqus.XY.XYSession.XYSession.TextStyle:50 of
 msgid ":obj:`ColorError`"
 msgstr ""
 
-#: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:12
+#: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:10
 #: of
 msgid ""
 "Check `DisplayGroup on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displaygrouppyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:17
-#: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:17
-#: abaqus.Job.JobSession.JobSession.Queue:18
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:17
-#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:17
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:17
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:15
+#: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:15
+#: abaqus.Job.JobSession.JobSession.Queue:16
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:15
+#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:15
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:15
 #: abaqus.Session.Image.Image.ImageFromMovie:10
 #: abaqus.Session.SessionBase.SessionBase.openOdb:17
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:19
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:30
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:22
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:17
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:28
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:20
 #: abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:10 of
 msgid "**name**"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:17
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:17
+#: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:15
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:15
 #: abaqus.Session.Drawing.Drawing.name:2
 #: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.name:2 of
 msgid "A String specifying the repository key."
 msgstr ""
 
-#: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:20
+#: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:18
 #: of
 msgid "**leaf**"
 msgstr ""
 
-#: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:20
+#: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:18
 #: of
 msgid ""
 "A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object specifying the items "
 "in the display group."
 msgstr ""
 
-#: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:37
+#: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:35
 #: of
 msgid ":obj:`DisplayGroup`"
 msgstr ""
 
-#: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:25
+#: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:23
 #: of
 msgid "A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.LineStyle:13 of
+#: abaqus.XY.XYSession.XYSession.LineStyle:11 of
 msgid ""
 "Check `LineStyle on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-linestylepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.LineStyle:18 of
+#: abaqus.XY.XYSession.XYSession.LineStyle:16 of
 msgid ""
 "A String specifying the color to be used when drawing a line with this "
 "LineStyle object. The default value is \"White\"."
 msgstr ""
 
 #: abaqus.Session.Drawing.Drawing.setValues:11
-#: abaqus.XY.XYSession.XYSession.LineStyle:23
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:23
-#: abaqus.XY.XYSession.XYSession.TextStyle:23 of
+#: abaqus.XY.XYSession.XYSession.LineStyle:21
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:21
+#: abaqus.XY.XYSession.XYSession.TextStyle:21 of
 msgid "**show**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.LineStyle:22 of
+#: abaqus.XY.XYSession.XYSession.LineStyle:20 of
 msgid ""
 "A Boolean specifying whether to draw the line when using this LineStyle. "
 "The default value is ON."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.LineStyle:26 of
+#: abaqus.XY.XYSession.XYSession.LineStyle:24 of
 msgid ""
 "A SymbolicConstant specifying the line style to be used when drawing "
 "lines using this LineStyle. Possible values are SOLID, DASHED, DOTTED, "
 "and DOT_DASH. The default value is SOLID."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.LineStyle:32 of
+#: abaqus.XY.XYSession.XYSession.LineStyle:30 of
 msgid "**thickness**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.LineStyle:31 of
+#: abaqus.XY.XYSession.XYSession.LineStyle:29 of
 msgid ""
 "A Float specifying the line thickness in mm to be used when drawing lines"
 " using this LineStyle. The default value is 0.2."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.LineStyle:40 of
+#: abaqus.XY.XYSession.XYSession.LineStyle:38 of
 msgid ":obj:`LineStyle`"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.LineStyle:37 of
+#: abaqus.XY.XYSession.XYSession.LineStyle:35 of
 msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:12 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:10 of
 msgid ""
 "Check `Movie on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-moviepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:17 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:15 of
 msgid "A String specifying the repository name for the movie."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:21
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:19
 #: abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation:12
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:17
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:15
 #: abaqus.Session.SessionBase.SessionBase.printToFile:13
 #: abaqus.Session.SessionBase.SessionBase.write3DXMLFile:11
 #: abaqus.Session.SessionBase.SessionBase.writeOBJFile:11
 #: abaqus.Session.SessionBase.SessionBase.writeVrmlFile:11
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:15 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:13 of
 msgid "**fileName**"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:20 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:18 of
 msgid ""
 "A String specifying the file from which the movie is to be read. The file"
 " extension must be specified and indicates the movie format (.avi, .mov, "
 ".mpeg, or .wmv)."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:25 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:23 of
 msgid "**startFrame**"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:24 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:22 of
 msgid ""
 "An Int specifying the first frame to be displayed from this movie. The "
 "default value is 0."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:29 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:27 of
 msgid "**endFrame**"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:28 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:26 of
 msgid ""
 "An Int specifying the last frame to be displayed from this movie. A "
 "negative number will indicate reverse numbering: -1 is the last frame of "
 "the movie. The default value is −1."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:34 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:32 of
 msgid "**timelineStartFrame**"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:32 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:30 of
 msgid ""
 "An Int specifying the global timeline frame number that corresponds to "
 "**startFrame**. A value of 0 will indicate the first frame to be "
 "displayed in the viewport. The default value is 0."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:39 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:37 of
 msgid "**timelineEndFrame**"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:37 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:35 of
 msgid ""
 "An Int specifying the global timeline frame number that corresponds to "
 "**endFrame**. A negative number will indicate reverse numbering: -1 "
@@ -1748,21 +1748,21 @@ msgid ""
 "value is −1."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:43 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:41 of
 msgid "**timelineStartTime**"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:42 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:40 of
 msgid ""
 "A Float specifying the global timeline time that corresponds to the time "
 "of **startFrame**. The default value is 0.0."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:48 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:46 of
 msgid "**timelineEndTime**"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:46 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:44 of
 msgid ""
 "The SymbolicConstant END_FRAME_TIME or a Float specifying the global "
 "timeline time that corresponds to the time of **endFrame**. The "
@@ -1770,68 +1770,68 @@ msgid ""
 "corresponding to **endFrame**. The default value is END_FRAME_TIME."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:56 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:54 of
 msgid ":obj:`Movie`"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:53 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:51 of
 msgid "A :py:class:`~abaqus.Animation.Movie.Movie` object."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:61 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:59 of
 msgid "ValueError: :obj:`Unable` :obj:`to` :obj:`open` :obj:`movie` :obj:`file`"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:61 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:59 of
 msgid "If **fileName** does not exist or can not be read."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:64 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:62 of
 msgid "ValueError: :obj:`Unsupported` :obj:`movie` format."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:64 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:62 of
 msgid "If **fileName** references an unsupported movie file format"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:75 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:73 of
 msgid "ValueError: :obj:`Unable` :obj:`to` :obj:`decode` :obj:`movie` :obj:`file`"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:67 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:65 of
 msgid "If the contents of **fileName** are corrupt or can not be decoded."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:12 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:10 of
 msgid ""
 "Check `Path on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pathpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:21
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:19
 #: abaqus.Session.Drawing.Drawing.addArrayDraw:16
 #: abaqus.Session.Drawing.Drawing.addIndexDraw:16
-#: abaqus.XY.XYSession.XYSession.QuantityType:96 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:94 of
 msgid "**type**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:20 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:18 of
 msgid ""
 "A SymbolicConstant specifying the type of path being created. Possible "
 "values are NODE_LIST, POINT_LIST, EDGE_LIST, CIRCUMFERENTIAL, and RADIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:44 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:42 of
 msgid "**expression**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:24 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:22 of
 msgid ""
 "A sequence specifying the nodes or points that make up the path. The "
 "definition of the path expression depends on the **type** argument."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:27 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:25 of
 msgid ""
 "If **type** = NODE_LIST, **expression** must be a sequence of sequences. "
 "Each inner sequence contains two items, the first item is a String "
@@ -1840,13 +1840,13 @@ msgid ""
 "Ints."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:31 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:29 of
 msgid ""
 "If **type** = POINT_LIST, **expression** must be a sequence of tuples of "
 "three Floats, specifying the coordinates of each point."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:33 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:31 of
 msgid ""
 "If **type** = EDGE_LIST, **expression** must be a sequence of sequences. "
 "Each inner sequence contains two items, the first item is a String "
@@ -1859,18 +1859,18 @@ msgid ""
 "opposite."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:42 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:40 of
 msgid ""
 "When **type** = CIRCUMFERENTIAL or RADIAL, **expression** must be a "
 "sequence of three tuples of three Floats, specifying the coordinates of "
 "the points used to define a coordinate system."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:52 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:50 of
 msgid "**circleDefinition**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:47 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:45 of
 msgid ""
 "A SymbolicConstant specifying the method in which the circle is being "
 "defined. This argument is valid only when **type** = CIRCUMFERENTIAL or "
@@ -1881,99 +1881,99 @@ msgid ""
 "arc of the circle."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:56 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:54 of
 msgid "**numSegments**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:55 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:53 of
 msgid ""
 "An Int specifying the number of equal segments in the path. This argument"
 " is valid only when **type** = CIRCUMFERENTIAL or RADIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:60 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:58 of
 msgid "**startAngle**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:59 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:57 of
 msgid ""
 "A Float specifying the start angle of the circumferential path. This "
 "argument is valid only when **type** = CIRCUMFERENTIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:64 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:62 of
 msgid "**endAngle**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:63 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:61 of
 msgid ""
 "A Float specifying the end angle of the circumferential path. This "
 "argument is valid only when **type** = CIRCUMFERENTIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:68 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:66 of
 msgid "**radius**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:67 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:65 of
 msgid ""
 "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the radius of "
 "the circumferential path. This argument is valid only when **type** = "
 "CIRCUMFERENTIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:72 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:70 of
 msgid "**radialAngle**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:71 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:69 of
 msgid ""
 "A Float specifying the angle between the radial path and the **X**-axis "
 "of the specified coordinate system. This argument is valid only when "
 "**type** = RADIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:76 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:74 of
 msgid "**startRadius**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:75 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:73 of
 msgid ""
 "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the start radius"
 " of the radial path. This argument is valid only when **type** = RADIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:80 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:78 of
 msgid "**endRadius**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:79 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:77 of
 msgid ""
 "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the end radius "
 "of the radial path. This argument is valid only when **type** = RADIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:88 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:86 of
 msgid ":obj:`Path`"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:85 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:83 of
 msgid "A :py:class:`~abaqus.PathAndProbe.Path.Path` object."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:93 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:91 of
 msgid ""
 ":obj:`ModelError`, :obj:`ErrorUnsupportedNodeData`, "
 ":obj:`ErrorUnsupportedPointData`, ErrorIncorrectPathData,"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:96 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:94 of
 msgid ""
 ":obj:`KeyError`, :obj:`ErrorEmptyPathName`, :obj:`ErrorPathNotFound`, "
 ":obj:`and` ErrorNoOdbPathDisplay."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:108
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:106
 #: abaqus.Session.Drawing.Drawing.addArrayDraw:39
 #: abaqus.Session.Drawing.Drawing.addIndexDraw:38
 #: abaqus.Session.Drawing.Drawing.setEdgeColor:33
@@ -1981,333 +1981,333 @@ msgstr ""
 msgid ":obj:`ValueError`"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:99 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:97 of
 msgid ""
 "When **type** = CIRCUMFERENTIAL or RADIAL, the three points specified in "
 "**expression** are collinear."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:13 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:11 of
 msgid ""
 "Check `QuantityType on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-quantitytypepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:18 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:16 of
 msgid "**label**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:18 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:16 of
 msgid "A String specifying the label for this quantity type."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:21 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:19 of
 msgid ""
 "A SymbolicConstant specifying the physical dimension of the axis. "
 "Possible values are:"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:23 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:21 of
 msgid "NONE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:24 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:22 of
 msgid "ACCELERATION."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:25 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:23 of
 msgid "ACOUSTIC_INTENSITY."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:26 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:24 of
 msgid "ANGLE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:27 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:25 of
 msgid "ANGULAR_MOMENTUM."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:28 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:26 of
 msgid "ARC_LENGTH."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:29 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:27 of
 msgid "AREA."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:30 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:28 of
 msgid "AREA_VELOCITY_SQUARED, specifying \"Velocity squared per area\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:31 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:29 of
 msgid "BIMOMENT."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:32 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:30 of
 msgid "CURVATURE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:33 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:31 of
 msgid "CORIOLIS_LOAD."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:34 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:32 of
 msgid "DAMAGE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:35 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:33 of
 msgid "DAMAGE_CRITERION."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:36 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:34 of
 msgid "DENSITY."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:37 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:35 of
 msgid ""
 "DENSITY_ROTATIONAL_ACCELERATION, specifying \"Density * Angular "
 "acceleration\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:38 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:36 of
 msgid "DISPLACEMENT."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:39 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:37 of
 msgid ""
 "ECURRENT_AREA_TIME, specifying \"Time integrated electric current per "
 "area\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:40 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:38 of
 msgid "ELECTRIC_CHARGE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:41 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:39 of
 msgid "ELECTRIC_CURRENT."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:42 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:40 of
 msgid "ELECTRIC_CURRENT_AREA, specifying \"Electric current per unit area\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:43 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:41 of
 msgid "ELECTRIC_POTENTIAL."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:44 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:42 of
 msgid "ENERGY."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:45 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:43 of
 msgid "ENERGY_DENSITY."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:46 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:44 of
 msgid "ENERGY_RELEASE_RATE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:47 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:45 of
 msgid "EPOTENTIAL_GRADIENT, specifying \"Electric potential gradient\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:48 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:46 of
 msgid "FREQUENCY."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:49 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:47 of
 msgid "FORCE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:50 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:48 of
 msgid "FORCE_VOLUME, specifying \"Force per volume\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:51 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:49 of
 msgid "HEAT_FLUX."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:52 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:50 of
 msgid "HEAT_FLUX_AREA, specifying \"Heat flux per area\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:53 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:51 of
 msgid "HEAT_FLUX_RATE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:54 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:52 of
 msgid "HEAT_FLUX_VOLUME, specifying \"Heat flux per volume\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:55 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:53 of
 msgid "LENGTH."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:56 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:54 of
 msgid "LINEAR_PRESSURE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:57 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:55 of
 msgid "LUMIN, specifying \"Luminous intensity\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:58 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:56 of
 msgid "MASS."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:59 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:57 of
 msgid "MASS_FLOW_AREA, specifying \"Mass flow per area\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:60 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:58 of
 msgid "MASS_FLOW_AREA_RATE, specifying \"Mass flow rate per area\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:61 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:59 of
 msgid "MASS_FLOW_RATE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:62 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:60 of
 msgid "MODE_NUMBER."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:63 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:61 of
 msgid "MOMENT."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:64 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:62 of
 msgid "NUMBER."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:65 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:63 of
 msgid "PATH."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:66 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:64 of
 msgid "PHASE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:67 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:65 of
 msgid "POSITION."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:68 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:66 of
 msgid "PRESSURE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:69 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:67 of
 msgid "PRESSURE_GRADIENT."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:70 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:68 of
 msgid "RATE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:71 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:69 of
 msgid "ROTARY_INERTIA."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:72 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:70 of
 msgid "ROTATIONAL_ACCELERATION."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:73 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:71 of
 msgid "ROTATIONAL_VELOCITY."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:74 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:72 of
 msgid "STATUS."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:75 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:73 of
 msgid "STRAIN."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:76 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:74 of
 msgid "STRAIN_RATE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:77 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:75 of
 msgid "STRESS."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:78 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:76 of
 msgid "STRESS_INTENS_FACTOR, specifying \"Stress intensity factor\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:79 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:77 of
 msgid "SUBSTANCE, specifying \"Amount of substance\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:80 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:78 of
 msgid "TEMPERATURE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:81 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:79 of
 msgid "THICKNESS."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:82 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:80 of
 msgid "TIME."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:83 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:81 of
 msgid "TIME_INCREMENT."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:84 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:82 of
 msgid "TIME_HEAT_FLUX, specifying \"Time integrated heat flux\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:85 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:83 of
 msgid "TIME_HEAT_FLUX_AREA, specifying \"Time integrated heat flux per area\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:86 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:84 of
 msgid "TIME_VOLUME, specifying \"Time integrated volume\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:87 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:85 of
 msgid "TIME_VOLUME_FLUX, specifying \"Time integrated volume flux per area\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:88 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:86 of
 msgid "TWIST."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:89 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:87 of
 msgid "VELOCITY."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:90 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:88 of
 msgid "VELOCITY_SQUARED."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:91 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:89 of
 msgid "VOLUME."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:92 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:90 of
 msgid "VOLUME_FLUX."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:93 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:91 of
 msgid "VOLUME_FLUX_AREA, specifying \"Volume flux per area\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:94 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:92 of
 msgid "VOLUME_FRACTION."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:96 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:94 of
 msgid "The default value is NONE"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:113 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:111 of
 msgid ":obj:`QuantityType`"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.QuantityType:101 of
+#: abaqus.XY.XYSession.XYSession.QuantityType:99 of
 msgid "A :py:class:`~abaqus.XY.QuantityType.QuantityType` object."
 msgstr ""
 
@@ -2317,80 +2317,80 @@ msgid ""
 " on Linux platforms."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:13 of
+#: abaqus.Job.JobSession.JobSession.Queue:11 of
 msgid ""
 "Check `Queue on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-queuepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:18 of
+#: abaqus.Job.JobSession.JobSession.Queue:16 of
 msgid "A String specifying the name of the new Queue object."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:21 of
+#: abaqus.Job.JobSession.JobSession.Queue:19 of
 msgid "**queueName**"
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:21 of
+#: abaqus.Job.JobSession.JobSession.Queue:19 of
 msgid "A String specifying the name of the remote analysis queue."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:24 of
+#: abaqus.Job.JobSession.JobSession.Queue:22 of
 msgid "**hostName**"
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:24 of
+#: abaqus.Job.JobSession.JobSession.Queue:22 of
 msgid ""
 "A String specifying the name of the remote host. The default value is an "
 "empty string."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:28 of
+#: abaqus.Job.JobSession.JobSession.Queue:26 of
 msgid "**fileCopy**"
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:27 of
+#: abaqus.Job.JobSession.JobSession.Queue:25 of
 msgid ""
 "A Boolean specifying if the results files are to be copied from the "
 "remote machine to the local machine. The default value is ON."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:32
+#: abaqus.Job.JobSession.JobSession.Queue:30
 #: abaqus.Session.SessionBase.SessionBase.saveOptions:25 of
 msgid "**directory**"
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:31 of
+#: abaqus.Job.JobSession.JobSession.Queue:29 of
 msgid ""
 "A String specifying the remote location for the execution of the "
 "simulation. The default value is an empty string."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:35 of
+#: abaqus.Job.JobSession.JobSession.Queue:33 of
 msgid "**driver**"
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:35 of
+#: abaqus.Job.JobSession.JobSession.Queue:33 of
 msgid ""
 "A String specifying the designation of the remote driver. The default "
 "value is \"abaqus\"."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:39 of
+#: abaqus.Job.JobSession.JobSession.Queue:37 of
 msgid "**remotePlatform**"
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:38 of
+#: abaqus.Job.JobSession.JobSession.Queue:36 of
 msgid ""
 "A SymbolicConstant specifying the type of operating system on the remote "
 "machine. The default value is Linux."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:45 of
+#: abaqus.Job.JobSession.JobSession.Queue:43 of
 msgid "**filesToCopy**"
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:42 of
+#: abaqus.Job.JobSession.JobSession.Queue:40 of
 msgid ""
 "A list of Strings specifying the files to be copied from the remote "
 "location to the local machine, or ALL. Strings specified in a list are "
@@ -2398,436 +2398,436 @@ msgid ""
 "'dat', 'msg', 'sta', 'odb'). The default value is ALL."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:49 of
+#: abaqus.Job.JobSession.JobSession.Queue:47 of
 msgid "**deleteAfterCopy**"
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:48 of
+#: abaqus.Job.JobSession.JobSession.Queue:46 of
 msgid ""
 "A Boolean specifying whether remote files are to be deleted after they "
 "are copied to the local machine. The default value is OFF."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:52 of
+#: abaqus.Job.JobSession.JobSession.Queue:50 of
 msgid "**description**"
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:52 of
+#: abaqus.Job.JobSession.JobSession.Queue:50 of
 msgid ""
 "A String specifying a description of the queue. The default value is an "
 "empty string."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:60 of
+#: abaqus.Job.JobSession.JobSession.Queue:58 of
 msgid ":obj:`Queue`"
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:57 of
+#: abaqus.Job.JobSession.JobSession.Queue:55 of
 msgid "A :py:class:`~abaqus.Job.Queue.Queue` object."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:65 of
+#: abaqus.Job.JobSession.JobSession.Queue:63 of
 msgid ""
 ":obj:`Remote` :obj:`queue` :obj:`host` :obj:`name` :obj:`is` :obj:`not` "
 ":obj:`set`"
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:65 of
+#: abaqus.Job.JobSession.JobSession.Queue:63 of
 msgid "If **fileCopy** = ON and **hostName** is empty."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:76 of
+#: abaqus.Job.JobSession.JobSession.Queue:74 of
 msgid ""
 ":obj:`Directory` :obj:`in` :obj:`which` :obj:`to` :obj:`run` :obj:`the` "
 ":obj:`job` :obj:`on` :obj:`the` :obj:`remote` :obj:`computer` :obj:`is` "
 ":obj:`not` :obj:`set`"
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:68 of
+#: abaqus.Job.JobSession.JobSession.Queue:66 of
 msgid "If **fileCopy** = ON and **directory** is empty."
 msgstr ""
 
-#: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:12 of
+#: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:10 of
 msgid ""
 "Check `ScratchOdb on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-scratchodbpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:27
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:37
-#: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:17
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:19
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:18
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:19
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:18 of
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:25
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:35
+#: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:15
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:17
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:16
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:17
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:16 of
 msgid "**odb**"
 msgstr ""
 
-#: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:17 of
+#: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:15 of
 msgid ""
 "An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database "
 "with which to associate."
 msgstr ""
 
-#: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:34 of
+#: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:32 of
 msgid ":obj:`ScratchOdb`"
 msgstr ""
 
-#: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:22 of
+#: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:20 of
 msgid "A :py:class:`~abaqus.Odb.ScratchOdb.ScratchOdb` object."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:12 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:10 of
 msgid ""
 "Check `Spectrum on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-spectrumpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:17 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:15 of
 msgid "A string name for the spectrum."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:20
+#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:18
 #: abaqus.Session.AutoColors.AutoColors.setValues:25 of
 msgid "**colors**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:20 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:18 of
 msgid "A sequence of strings indicating the colors of the spectrum."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:37 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:35 of
 msgid ":obj:`Spectrum`"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:25 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:23 of
 msgid "A :py:class:`~abaqus.PathAndProbe.Spectrum.Spectrum` object."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:12 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:10 of
 msgid ""
 "Check `Stream on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-streampyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:17 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:15 of
 msgid "A string name for the stream."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:20 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:18 of
 msgid "**numPointsOnRake**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:20 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:18 of
 msgid "An integer specifying the number of points along the rake."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:24 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:22 of
 msgid "**pointA**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:23 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:21 of
 msgid ""
 "A tuple of 3 floats specifying the starting point of the rake. "
 "Alternatively, a string representation of the node selected in the "
 "viewport."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:28 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:26 of
 msgid "**pointB**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:27 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:25 of
 msgid ""
 "A tuple of 3 floats specifying the end point of the rake. Alternatively, "
 "a string representation of the node selected in the viewport."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:31
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:18
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:29
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:16
 #: abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:14 of
 msgid "**path**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:31 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:29 of
 msgid "APath object that specifies the rake."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:48 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:46 of
 msgid ":obj:`Stream`"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:36 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:34 of
 msgid "A :py:class:`~abaqus.PathAndProbe.Stream.Stream` object."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:13 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:11 of
 msgid ""
 "Check `SymbolStyle on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-symbolstylepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:18 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:16 of
 msgid ""
 "A String specifying the color to be used when drawing a marker with this "
 "SymbolStyle object. The default value is \"White\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:22 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:20 of
 msgid ""
 "A Boolean specifying whether to draw the marker when using this "
 "SymbolStyle object. The default value is ON."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:41 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:39 of
 msgid "**marker**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:26 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:24 of
 msgid ""
 "A SymbolicConstant specifying the marker type be used when drawing "
 "symbols using this SymbolStyle object. Possible values are:"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:29 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:27 of
 msgid "FILLED_CIRCLE"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:30 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:28 of
 msgid "FILLED_SQUARE"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:31 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:29 of
 msgid "FILLED_DIAMOND"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:32 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:30 of
 msgid "FILLED_TRI"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:33 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:31 of
 msgid "HOLLOW_CIRCLE"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:34 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:32 of
 msgid "HOLLOW_SQUARE"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:35 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:33 of
 msgid "HOLLOW_DIAMOND"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:36 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:34 of
 msgid "HOLLOW_TRI"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:37 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:35 of
 msgid "CROSS"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:38 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:36 of
 msgid "XMARKER"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:39 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:37 of
 msgid "POINT"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:41 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:39 of
 msgid "The default value is FILLED_CIRCLE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:45 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:43 of
 msgid "**size**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:44 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:42 of
 msgid ""
 "A Float specifying the marker size to be used when drawing markers using "
 "this SymbolStyle object. The default value is 2.0."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:53 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:51 of
 msgid ":obj:`SymbolStyle`"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.SymbolStyle:50 of
+#: abaqus.XY.XYSession.XYSession.SymbolStyle:48 of
 msgid "A :py:class:`~abaqus.XY.SymbolStyle.SymbolStyle` object."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.TextStyle:13 of
+#: abaqus.XY.XYSession.XYSession.TextStyle:11 of
 msgid ""
 "Check `TextStyle on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-textstylepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.TextStyle:18 of
+#: abaqus.XY.XYSession.XYSession.TextStyle:16 of
 msgid ""
 "A String specifying the color to be used when drawing text with this "
 "TextStyle object. The default value is \"White\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.TextStyle:22 of
+#: abaqus.XY.XYSession.XYSession.TextStyle:20 of
 msgid ""
 "A Boolean specifying whether to draw the text when using this TextStyle "
 "object. The default value is ON."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.TextStyle:27 of
+#: abaqus.XY.XYSession.XYSession.TextStyle:25 of
 msgid "**font**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.TextStyle:26 of
+#: abaqus.XY.XYSession.XYSession.TextStyle:24 of
 msgid ""
 "A String specifying the name of the font to be used when drawing text "
 "with this TextStyle object. The default value is \"-*-verdana-"
 "medium-r-normal-*-*-120-*-*-p-*-*-*\"."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.TextStyle:31 of
+#: abaqus.XY.XYSession.XYSession.TextStyle:29 of
 msgid "**rotationAngle**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.TextStyle:30 of
+#: abaqus.XY.XYSession.XYSession.TextStyle:28 of
 msgid ""
 "A Float specifying the angle in degrees used for displaying the text. The"
 " default value is 0.0."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.TextStyle:39 of
+#: abaqus.XY.XYSession.XYSession.TextStyle:37 of
 msgid ":obj:`TextStyle`"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.TextStyle:36 of
+#: abaqus.XY.XYSession.XYSession.TextStyle:34 of
 msgid "A :py:class:`~abaqus.XY.TextStyle.TextStyle` object."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:15 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:13 of
 msgid ""
 "A String specifying the name of the file from which the **X - Y** data "
 "will be read."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:18 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:16 of
 msgid ""
 "The repository key. If the name is not supplied, a default name in the "
 "form _temp#_ is generated and the XYData object is temporary."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:23
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:35 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:21
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:33 of
 msgid "**sourceDescription**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:22 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:20 of
 msgid ""
 "A String specifying the source of the **X - Y** data (e.g., “Entered from"
 " keyboard”, “Taken from ASCII file”, “Read from an ODB”, etc.). The "
 "default value is an empty string."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:27
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:39 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:25
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:37 of
 msgid "**contentDescription**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:26 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:24 of
 msgid ""
 "A String specifying the content of the **X - Y** data (e.g., “field 1 vs."
 " field 2”). The default value is an empty string."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:31
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:43 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:29
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:41 of
 msgid "**positionDescription**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:30 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:28 of
 msgid ""
 "A String specifying additional information about the **X - Y** data "
 "(e.g., “for whole model”). The default value is an empty string."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:35
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:47 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:33
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:45 of
 msgid "**legendLabel**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:34
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:46 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:32
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:44 of
 msgid ""
 "A String specifying the label to be used in the legend. The default value"
 " is the name of the XYData object."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:39 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:37 of
 msgid "**xValuesLabel**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:38 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:36 of
 msgid ""
 "A String specifying the label for the X-values. This value may be "
 "overridden if the **X - Y** data are combined with other **X - Y** data. "
 "The default value is an empty string."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:43 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:41 of
 msgid "**yValuesLabel**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:42 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:40 of
 msgid ""
 "A String specifying the label for the Y-values. This value may be "
 "overridden if the **X - Y** data are combined with other **X - Y** data. "
 "The default value is an empty string."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:47 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:45 of
 msgid "**axis1QuantityType**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:46 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:44 of
 msgid ""
 "A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the "
 "QuantityType object associated to the X -axis1- values."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:51 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:49 of
 msgid "**axis2QuantityType**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:50 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:48 of
 msgid ""
 "A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the "
 "QuantityType object associated to the Y -axis2- values."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:55 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:53 of
 msgid "**xField**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:54 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:52 of
 msgid ""
 "An Int specifying the field from which the **X**-data will be read. "
 "Fields are delimited by spaces, tabs, or commas. The default value is 1."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:59 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:57 of
 msgid "**yField**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:58 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:56 of
 msgid ""
 "An Int specifying the field from which the **Y**-data will be read. "
 "Fields are delimited by spaces, tabs, or commas. The default value is 2."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:64
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:52 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:62
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:50 of
 msgid "**skipFrequency**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:62 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:60 of
 msgid ""
 "An Int specifying how often data rows will be skipped. A "
 "**skipFrequency** of 1 means skip every other row. The first row is "
@@ -2835,183 +2835,183 @@ msgid ""
 " is 0 (data are read from every row)."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:72
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:72 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:70
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:70 of
 msgid ":obj:`XYData`"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:69
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:69 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:67
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:67 of
 msgid "An :py:class:`~abaqus.XY.XYData.XYData` object."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:77
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:58
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:77
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:94
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:103 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:75
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:56
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:75
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:90
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:99 of
 msgid ":obj:`InvalidNameError`"
 msgstr ""
 
 #: abaqus.Session.Drawing.Drawing.setNormals:26
 #: abaqus.Session.Drawing.Drawing.setValues:85
-#: abaqus.XY.XYSession.XYSession.XYDataFromFile:88
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:69
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:88
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:105
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:114 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFile:86
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:67
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:86
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:101
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:110 of
 msgid ":obj:`RangeError`"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:14 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:12 of
 msgid ""
 "Check `XYDataFromFreeBody on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xydatafromfreebodypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:37
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:19
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:18
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:19
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:18 of
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:35
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:17
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:16
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:17
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:16 of
 msgid ""
 "An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database "
 "from which data will be read."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:22 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:20 of
 msgid "**force**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:22 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:20 of
 msgid "A boolean indicating whether to compute the force. The default is ON."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:25 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:23 of
 msgid "**moment**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:25 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:23 of
 msgid "A boolean indicating whether to compute the moment. The default is OFF."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:29 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:27 of
 msgid "**heatFlowRate**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:28 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:26 of
 msgid ""
 "A boolean indicating whether to compute the heat flow rate resultant "
 "magnitude. It is extracted only for viewcut based freebodies. The default"
 " is OFF."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:33 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:31 of
 msgid "**resultant**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:32 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:30 of
 msgid ""
 "A boolean indicating whether to compute the resultant. It applies only to"
 " **force** and **moment**. The default is ON."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:37 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:35 of
 msgid "**comp1**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:36 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:34 of
 msgid ""
 "A boolean indicating whether to compute the first component. It applies "
 "only to **force** and **moment**. The default is OFF."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:41 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:39 of
 msgid "**comp2**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:40 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:38 of
 msgid ""
 "A boolean indicating whether to compute the second component. It applies "
 "only to **force** and **moment**. The default is OFF."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:45 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:43 of
 msgid "**comp3**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:44 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:42 of
 msgid ""
 "A boolean indicating whether to compute the third component. It applies "
 "only to **force** and **moment**. The default is OFF."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:53
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:89
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:98
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:51
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:85
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:94
 #: abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:108 of
 msgid ":obj:`typing.List`\\[:obj:`XYData`]"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:50
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:86
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:95 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:48
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:82
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:91 of
 msgid "A list of XYData objects."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:13 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:11 of
 msgid ""
 "Check `XYDataFromHistory on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xydatafromhistorypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:21 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:19 of
 msgid "**outputVariableName**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:21 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:19 of
 msgid ""
 "A String specifying the output variable from which the **X - Y** data "
 "will be read."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:25 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:23 of
 msgid "**steps**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:24 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:22 of
 msgid ""
 "A sequence of Strings specifying the names of the steps from which data "
 "will be extracted."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:28 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:26 of
 msgid ""
 "The repository key. If the name is not supplied, a default name in the "
 "form _temp#_ is generated and the XYData object is temporary (this "
 "argument is required if the method is accessed from the session object)."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:33 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:31 of
 msgid ""
 "A String specifying the source of the **X - Y** data (for example, "
 "“Entered from keyboard”, “Taken from ASCII file”, “Read from an ODB”, "
 "etc.). The default value is an empty string."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:38 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:36 of
 msgid ""
 "A String specifying the content of the **X - Y** data (for example, "
 "“field 1 vs. field 2”). The default value is an empty string."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:42 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:40 of
 msgid ""
 "A String specifying additional information about the **X - Y** data (for "
 "example, “for whole model”). The default value is an empty string."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:50 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:48 of
 msgid ""
 "An Int specifying how often data frames will be skipped. If "
 "**skipFrequency** = 1, Abaqus will skip every other frame. The first "
@@ -3019,18 +3019,18 @@ msgid ""
 "default value is 0 (data are read from every frame)."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:76
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:57
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:102
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:77
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:76 of
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:72
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:55
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:98
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:73
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:72 of
 msgid "**numericForm**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:55
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:100
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:75
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:74 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:53
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:96
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:71
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:70 of
 msgid ""
 "A SymbolicConstant specifying the numeric form in which to display "
 "results that contain complex numbers. Possible values are "
@@ -3038,96 +3038,96 @@ msgid ""
 "COMPLEX_VAL_AT_ANGLE. The default value is REAL."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:80
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:61
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:106
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:81
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:80 of
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:76
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:59
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:102
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:77
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:76 of
 msgid "**complexAngle**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:60
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:105
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:80
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:79 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:58
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:101
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:76
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:75 of
 msgid ""
 "A Float specifying the angle (in degrees) at which to display results "
 "that contain complex numbers when **numericForm** = COMPLEX_VAL_AT_ANGLE."
 " The default value is 0."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:64 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:62 of
 msgid "**stepTuple**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:64 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromHistory:62 of
 msgid "A tuple of Integers specifying the steps to include when extracting data."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:13 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:11 of
 msgid ""
 "Check `XYDataFromPath on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xydatafrompathpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:18 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:16 of
 msgid ""
 "A :py:class:`~abaqus.PathAndProbe.Path.Path` object to use in **X - Y** "
 "data generation."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:21 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:19 of
 msgid ""
 "A String specifying the repository key:for **session** 'name' is required"
 " argument and for **xyPlot** 'name' is optional argument."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:26 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:24 of
 msgid "**includeIntersections**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:25 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:23 of
 msgid ""
 "A Boolean specifying whether to include **X - Y** data for the "
 "intersections between the path and element faces or edges. The default "
 "value is False."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:30 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:28 of
 msgid "**shape**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:29 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:27 of
 msgid ""
 "A SymbolicConstant specifying the model shape to use. Possible values are"
 " UNDEFORMED and DEFORMED."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:34 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:32 of
 msgid "**pathStyle**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:33 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:31 of
 msgid ""
 "A SymbolicConstant specifying the path style. Possible values are "
 "PATH_POINTS and UNIFORM_SPACING."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:37 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:35 of
 msgid "**numIntervals**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:37 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:35 of
 msgid ""
 "An Int specifying the number of uniform-spacing intervals. The default "
 "value is 10."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:42 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:40 of
 msgid "**labelType**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:40 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:38 of
 msgid ""
 "A SymbolicConstant specifying the **X** label type to use. Possible "
 "values are NORM_DISTANCE, SEQ_ID, TRUE_DISTANCE, TRUE_DISTANCE_X, "
@@ -3135,79 +3135,79 @@ msgid ""
 "Z_COORDINATE."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:46 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:44 of
 msgid "**viewport**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:45 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:43 of
 msgid ""
 "A String specifying the viewport name or an Int specifying the viewport "
 "id from which to obtain values. The default is the current viewport."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:53 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:51 of
 msgid "**removeDuplicateXYPairs**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:49 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:47 of
 msgid ""
 "A Boolean specifying whether to remove duplicate XY values from the final"
 " result. The default value is True."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:52 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:50 of
 msgid "The `removeDuplicateXYPairs` argument was added."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:60 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:58 of
 msgid "**includeAllElements**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:56 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:54 of
 msgid ""
 "A Boolean specifying whether to include elements which do not lie in the "
 "direction of the path. The default value is False."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:59 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:57 of
 msgid "The `includeAllElements` argument was added."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:31
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:25
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:64 of
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:29
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:23
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:62 of
 msgid "**step**"
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:24
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:63 of
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:22
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:61 of
 msgid ""
 "An Int identifying the step from which to obtain values. The default "
 "value is the current step."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:35
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:29
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:33
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:27
 #: abaqus.Session.Image.Image.ImageFromMovie:17
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:68 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:66 of
 msgid "**frame**"
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:28
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:67 of
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:26
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:65 of
 msgid ""
 "An Int identifying the frame from which to obtain values. The default "
 "value is the current frame."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:71
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:93
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:47
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:46 of
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:67
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:89
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:43
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:42 of
 msgid "**variable**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:71 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:69 of
 msgid ""
 "A tuple of tuples containing the descriptions of variables for which to "
 "extract data along the path. The default value is the current variable. "
@@ -3226,169 +3226,169 @@ msgid ""
 "example, 'Mises' or 'S22'.Location: An optional Dictionary specifying the"
 " location. The dictionary contains pairs of the following:A String "
 "specifying the category selection label.A String specifying the section "
-"point label.For example,"
+"point label.For example::"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:97 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:93 of
 msgid "**deformedMag**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:96 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:92 of
 msgid ""
 "A tuple of three Floats specifying the deformation magnitude in the *X-*,"
 " *Y-*, and *Z-* planes. The default value is (1, 1, 1)."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:110 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:106 of
 msgid "**projectOntoMesh**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:109 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:105 of
 msgid ""
 "A Boolean to specify whether to consider the data points that do not lie "
 "on or inside the mesh. The default value is False."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:114 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:110 of
 msgid "**projectionTolerance**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:113 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:109 of
 msgid ""
 "A Float specifying the tolerance value for the projected distance "
 "considered for the data extraction when **projectOntoMesh** =  True. The "
 "default value is 0."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:119 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:115 of
 msgid ""
 ":obj:`If` **variable** :obj:`specified` :obj:`has` :obj:`one` "
 "fieldoutput: :obj:`Returns` :obj:`an` :obj:`XYData` object."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:125 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:121 of
 msgid ""
 ":obj:`If` **variable** :obj:`specified` :obj:`has` :obj:`more` "
 ":obj:`than` :obj:`one` fieldoutputs: :obj:`Returns` :class:`python:list` "
 ":obj:`of` :obj:`XYData` objects."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:130 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:126 of
 msgid "ErrorPathNotFound: :obj:`Path` :obj:`not` :obj:`found`"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:130 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:126 of
 msgid "If **path** is invalid."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:133 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:129 of
 msgid ""
 "ErrorCurrentVPNotFound: :obj:`Current` :obj:`viewport` :obj:`not` "
 ":obj:`found`"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:133 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:129 of
 msgid "If **viewport** is invalid."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:136 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:132 of
 msgid ""
 "ErrorInvalidUserStepAndFrame: :obj:`The` :obj:`user` :obj:`step` "
 ":obj:`and` :obj:`frame` :obj:`specified` :obj:`have` :obj:`not` "
 ":obj:`been` :obj:`defined`"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:136 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:132 of
 msgid "If **step** and/or **frame** are invalid."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:139 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:135 of
 msgid ""
 "ErrorNoVarInPathExtract: :obj:`No` :obj:`variable` :obj:`selection` "
 ":obj:`for` :obj:`XY` :obj:`data` :obj:`extraction` :obj:`from` "
 ":obj:`path`"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:139 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:135 of
 msgid "If the **variable** argument is empty."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:142 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:138 of
 msgid ""
 "ErrorUnavailableSelectedVariable: :obj:`The` :obj:`selected` "
 ":obj:`variable` :obj:`is` :obj:`not` :obj:`available` :obj:`for` "
 ":obj:`the` :obj:`current` :obj:`frame`"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:142 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:138 of
 msgid "If the specified output variable is not available in the output database."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:145 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:141 of
 msgid ""
 "ErrorUnusableVarInPathExtract: :obj:`Specified` :obj:`variable` "
 ":obj:`cannot` :obj:`be` :obj:`used` :obj:`in` :obj:`XY` :obj:`data` "
 ":obj:`extraction`"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:145 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:141 of
 msgid ""
 "If the specified output variable cannot be used to obtain **X - Y** data "
 "from path."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:148 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:144 of
 msgid ""
 "ErrorUnsupportedRefinementType: :obj:`Unsupported` :obj:`refinement` "
 ":obj:`type`"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:148 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:144 of
 msgid "If the SymbolicConstant specifying the refinement type is invalid."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:151 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:147 of
 msgid ""
 "ErrorInvalidRefinementSpecification: :obj:`Invalid` :obj:`refinement` "
 ":obj:`specification`"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:151 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:147 of
 msgid "If the label specifying the refinement invariant or component is invalid."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:162 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:158 of
 msgid ""
 "ErrorDeformedMagTupleInPathExtract: :obj:`Deformed` :obj:`magnification` "
 ":class:`python:tuple` :obj:`must` :obj:`contain` :obj:`X`, :obj:`Y` "
 ":obj:`and` :obj:`Z` :obj:`values`"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:154 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:150 of
 msgid "If **deformedMag** does not contain three Floats."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:14 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:12 of
 msgid ""
 "Check `XYDataFromShellThickness on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xydatafromshellthicknesspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:40
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:23
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:22 of
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:38
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:21
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:20 of
 msgid "**outputPosition**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:22
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:21 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:20
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:19 of
 msgid ""
 "A SymbolicConstant specifying the position from which output will be "
 "read. Possible values are ELEMENT_CENTROID, ELEMENT_NODAL, "
 "INTEGRATION_POINT, and NODAL."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:26 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:24 of
 msgid ""
 "A tuple of tuples containing the descriptions of variables for which to "
 "extract data from the field. Each tuple specifies the following:Variable "
@@ -3406,28 +3406,28 @@ msgid ""
 "example, 'Mises' or 'S22'.Location: An optional Dictionary specifying the"
 " location. The dictionary contains pairs of the following:A String "
 "specifying the category selection label.A String specifying the section "
-"point label. For example,"
+"point label. For example::"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:51
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:50 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:47
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:46 of
 msgid "**elementSets**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:50
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:49 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:46
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:45 of
 msgid ""
 "A sequence of Strings specifying element sets or a String specifying a "
 "single element set."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:60
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:59 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:56
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:55 of
 msgid "**elementLabels**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:54
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:53 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:50
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:49 of
 msgid ""
 "A sequence of expressions specifying element labels per part instance in "
 "the model. Each part instance element expression is a sequence of a "
@@ -3440,25 +3440,25 @@ msgid ""
 "`'3:15:3'`."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:63
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:62 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:59
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:58 of
 msgid "**nodeSets**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:63
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:62 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:59
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:58 of
 msgid ""
 "A sequence of Strings specifying node sets or a String specifying a "
 "single node set."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:72
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:71 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:68
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:67 of
 msgid "**nodeLabels**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:66
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:65 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:62
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:61 of
 msgid ""
 "A sequence of expressions specifying node labels per part instance in the"
 " model. Each part instance node expression is a sequence of a String "
@@ -3929,7 +3929,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation:16
-#: abaqus.Session.JournalOptions.JournalOptions.NumberFormat:25
+#: abaqus.Session.JournalOptions.JournalOptions.NumberFormat:23
 #: abaqus.Session.SessionBase.SessionBase.printToFile:17
 #: abaqus.Session.SessionBase.SessionBase.write3DXMLFile:15
 #: abaqus.Session.SessionBase.SessionBase.writeVrmlFile:15 of
@@ -3944,7 +3944,7 @@ msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation:33
 #: abaqus.Session.SessionBase.SessionBase.printToFile:21
-#: abaqus.Session.SessionBase.SessionBase.printToPrinter:41
+#: abaqus.Session.SessionBase.SessionBase.printToPrinter:38
 #: abaqus.Session.SessionBase.SessionBase.write3DXMLFile:31
 #: abaqus.Session.SessionBase.SessionBase.writeOBJFile:27
 #: abaqus.Session.SessionBase.SessionBase.writeVrmlFile:31 of
@@ -3952,7 +3952,7 @@ msgid "**canvasObjects**"
 msgstr ""
 
 #: abaqus.Session.SessionBase.SessionBase.printToFile:20
-#: abaqus.Session.SessionBase.SessionBase.printToPrinter:36 of
+#: abaqus.Session.SessionBase.SessionBase.printToPrinter:33 of
 msgid ""
 "A sequence of canvas objects (viewports, text strings, or arrows) to "
 "print. The default is to print all canvas objects."
@@ -3989,7 +3989,7 @@ msgid ""
 "#simaker-sessionprinttoprinterpyc>`__."
 msgstr ""
 
-#: abaqus.Session.SessionBase.SessionBase.printToPrinter:29 of
+#: abaqus.Session.SessionBase.SessionBase.printToPrinter:26 of
 msgid "**printCommand**"
 msgstr ""
 
@@ -3999,10 +3999,10 @@ msgid ""
 " for printing to the printer. The default value is “lpr” or the value "
 "specified by the printOptions method. If you create a script to print "
 "directly to a Windows printer, the **printCommand** must take the "
-"following form:"
+"following form::"
 msgstr ""
 
-#: abaqus.Session.SessionBase.SessionBase.printToPrinter:26 of
+#: abaqus.Session.SessionBase.SessionBase.printToPrinter:23 of
 msgid ""
 "The `PROPERTIES` is a list of characters that represents the printing "
 "preferences for the selected Windows printer. The properties are not "
@@ -4011,47 +4011,47 @@ msgid ""
 "the default Windows printer."
 msgstr ""
 
-#: abaqus.Session.SessionBase.SessionBase.printToPrinter:33 of
+#: abaqus.Session.SessionBase.SessionBase.printToPrinter:30 of
 msgid "**numCopies**"
 msgstr ""
 
-#: abaqus.Session.SessionBase.SessionBase.printToPrinter:32 of
+#: abaqus.Session.SessionBase.SessionBase.printToPrinter:29 of
 msgid ""
 "An Int specifying the number of copies to print. Possible values are 1 ≤ "
 "**numCopies** ≤ 100. The default value is 1."
 msgstr ""
 
-#: abaqus.Session.SessionBase.SessionBase.printToPrinter:46 of
+#: abaqus.Session.SessionBase.SessionBase.printToPrinter:43 of
 msgid "SystemError: :obj:`invalid` :obj:`print` :obj:`command`"
 msgstr ""
 
-#: abaqus.Session.SessionBase.SessionBase.printToPrinter:46 of
+#: abaqus.Session.SessionBase.SessionBase.printToPrinter:43 of
 msgid "If **printCommand** is invalid."
 msgstr ""
 
-#: abaqus.Session.SessionBase.SessionBase.printToPrinter:49 of
+#: abaqus.Session.SessionBase.SessionBase.printToPrinter:46 of
 msgid "SystemError: :obj:`print` :obj:`command` :obj:`failed`"
 msgstr ""
 
-#: abaqus.Session.SessionBase.SessionBase.printToPrinter:49 of
+#: abaqus.Session.SessionBase.SessionBase.printToPrinter:46 of
 msgid "If the print command fails."
 msgstr ""
 
-#: abaqus.Session.SessionBase.SessionBase.printToPrinter:52 of
+#: abaqus.Session.SessionBase.SessionBase.printToPrinter:49 of
 msgid ""
 "RangeError: :obj:`numCopies` :obj:`must` :obj:`be` :obj:`in` :obj:`the` "
 ":obj:`range` 1 <= :obj:`value` <= 100"
 msgstr ""
 
-#: abaqus.Session.SessionBase.SessionBase.printToPrinter:52 of
+#: abaqus.Session.SessionBase.SessionBase.printToPrinter:49 of
 msgid "If **numCopies** is out of range."
 msgstr ""
 
-#: abaqus.Session.SessionBase.SessionBase.printToPrinter:63 of
+#: abaqus.Session.SessionBase.SessionBase.printToPrinter:60 of
 msgid "TypeError: :obj:`keyword` :obj:`error` :obj:`on` :obj:`compression`"
 msgstr ""
 
-#: abaqus.Session.SessionBase.SessionBase.printToPrinter:55 of
+#: abaqus.Session.SessionBase.SessionBase.printToPrinter:52 of
 msgid "If **compression** is specified when **format** is not SVG."
 msgstr ""
 
@@ -4274,7 +4274,7 @@ msgstr ""
 msgid "A sequence of canvas objects to export."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:12
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:10
 #: of
 msgid ""
 "Check `FieldReportSession.writeFieldReport on help.3ds.com/2022 "
@@ -4282,56 +4282,56 @@ msgid ""
 "#simaker-fieldreportsessionwritefieldreportpyc>`__."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:17
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:15
 #: of
 msgid "**filename**"
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:17
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:15
 #: of
 msgid ""
 "A String specifying the name of the file to which field output will be "
 "written."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:21
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:21
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:19
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:19
 #: of
 msgid "**append**"
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:20
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:18
 #: of
 msgid ""
 "A Boolean specifying whether to append the field output to an existing "
 "file. The default value is ON."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:24
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:22
 #: of
 msgid "**sortItem**"
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:24
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:22
 #: of
 msgid "A String specifying the item by which to sort the tabular values."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:27
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:25
 #: of
 msgid ""
 "An :py:class:`~abaqus.Odb.Odb.Odb` object from which to obtain field "
 "output values."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:30
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:28
 #: of
 msgid ""
 "An Int (or stepIndex) specifying the step from which to obtain field "
 "output values. Possible values are 0 ≤ **step** ≤ (*numSteps* − 1)."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:34
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:32
 #: of
 msgid ""
 "An Int (or frameIndex) specifying the frame from which to obtain field "
@@ -4339,7 +4339,7 @@ msgid ""
 "1)."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:38
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:36
 #: of
 msgid ""
 "A SymbolicConstant specifying the position from which to obtain data. "
@@ -4348,19 +4348,19 @@ msgid ""
 "WHOLE_PART_INSTANCE, WHOLE_MODEL, and GENERAL_PARTICLE."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:43
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:41
 #: of
 msgid "**displayGroup**"
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:43
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:41
 #: of
 msgid ""
 "A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object "
 "specifying the subset of the model for which to obtain data."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:46
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:44
 #: of
 msgid ""
 "A sequence of variable description sequences specifying one or more field"
@@ -4368,12 +4368,12 @@ msgid ""
 "sequence contains the following elements:"
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:50
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:48
 #: of
 msgid "**element0**: A String specifying the name of the variable."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:51
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:49
 #: of
 msgid ""
 "**element1**: A SymbolicConstant specifying the output position at which "
@@ -4382,7 +4382,7 @@ msgid ""
 " WHOLE_MODEL, WHOLE_PART_INSTANCE, and WHOLE_REGION."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:55
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:53
 #: of
 msgid ""
 "**element2**: A Sequence of tuples each consisting of a SymbolicConstant "
@@ -4393,16 +4393,16 @@ msgid ""
 "(the following element in the tuple) is included."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:61
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:59
 #: of
 msgid ""
 "**element3 (if applicable)**: A Dictionary with a String key and a String"
 " value specifying a single section point at which to report data. The key"
 " specifies a region in the model; the corresponding value specifies a "
-"section point within that region. For example:"
+"section point within that region. For example::"
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:70
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:66
 #: of
 msgid ""
 "If this element is omitted, data are written for all section points (if "
@@ -4410,7 +4410,7 @@ msgid ""
 " points (if applicable)."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:74
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:70
 #: of
 msgid ""
 "A SymbolicConstant specifying the numeric form in which to display "
@@ -4419,7 +4419,7 @@ msgid ""
 "COMPLEX_MAG_AT_ANGLE. The initial value is COMPLEX_MAGNITUDE."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:79
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:75
 #: of
 msgid ""
 "A Float specifying the angle (in degrees) at which to display results "
@@ -4427,14 +4427,14 @@ msgid ""
 " The initial value is 0."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:98
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:34
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:94
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:32
 #: of
 msgid "**stepFrame**"
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:83
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:32
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:79
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:30
 #: of
 msgid ""
 "A SymbolicConstant indicating whether to obtain the values from the "
@@ -4442,7 +4442,7 @@ msgid ""
 "and ALL. The default value is SPECIFY."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:12
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:10
 #: of
 msgid ""
 "Check `FieldReportSession.writeFreeBodyReport on help.3ds.com/2022 "
@@ -4450,14 +4450,14 @@ msgid ""
 "#simaker-fieldreportsessionwritefreebodyreportpyc>`__."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:17
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:15
 #: of
 msgid ""
 "A String specifying the name of the file to which the free body output "
 "will be written."
 msgstr ""
 
-#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:20
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:18
 #: of
 msgid ""
 "A Boolean specifying whether to append the free body output to an "
@@ -4527,14 +4527,14 @@ msgid ""
 "export."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:13 of
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:11 of
 msgid ""
 "Check `XYSession.xyDataListFromField on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xysessionpyc.htm?contextscope=all"
 "#simaker-xysessionxydatalistfromfieldpyc>`__."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:25 of
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:23 of
 msgid ""
 "A tuple of tuples containing the descriptions of variables for which to "
 "extract data from the field. Each tuple specifies the following: Variable"
@@ -4552,14 +4552,14 @@ msgid ""
 "example, 'Mises' or 'S22'.Location: An optional Dictionary specifying the"
 " location. The dictionary contains pairs of the following:A String "
 "specifying the category selection label.A String specifying the section "
-"point label. For example,"
+"point label. For example::"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:90 of
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:86 of
 msgid "**operator**"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:83 of
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:79 of
 msgid ""
 "A SymbolicConstant specifying the mathematical, trigonometric, "
 "logarithmic, exponential, or other operations. Possible values are ADD, "
@@ -4577,7 +4577,7 @@ msgstr ""
 msgid "SessionBase"
 msgstr ""
 
-#: abaqus.Session.SessionBase.SessionBase:13 of
+#: abaqus.Session.SessionBase.SessionBase:11 of
 msgid ""
 "Check `SessionBase on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all>`__."
@@ -5062,7 +5062,7 @@ msgid ""
 "about the Session object, see Session object."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession:13 of
+#: abaqus.Animation.AnimationSession.AnimationSession:11 of
 msgid ""
 "Check `AnimationSession on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationsessionpyc.htm?contextscope=all>`__."
@@ -8654,7 +8654,7 @@ msgstr ""
 msgid "The AutoColors object defines a color palette."
 msgstr ""
 
-#: abaqus.Session.AutoColors.AutoColors:12 of
+#: abaqus.Session.AutoColors.AutoColors:10 of
 msgid ""
 "Check `AutoColors on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-autocolorspyc.htm?contextscope=all>`__."
@@ -8694,7 +8694,7 @@ msgstr ""
 msgid "The Color object contains the RGB definition of a system color."
 msgstr ""
 
-#: abaqus.Session.Color.Color:12 of
+#: abaqus.Session.Color.Color:10 of
 msgid ""
 "Check `Color on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-colorpyc.htm?contextscope=all>`__."
@@ -8766,7 +8766,7 @@ msgid ""
 "drawing will be displayed."
 msgstr ""
 
-#: abaqus.Session.Drawing.Drawing:13 of
+#: abaqus.Session.Drawing.Drawing:11 of
 msgid ""
 "Check `Drawing on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-drawingpyc.htm?contextscope=all>`__."
@@ -9567,7 +9567,7 @@ msgid ""
 "session.images repository."
 msgstr ""
 
-#: abaqus.Session.Image.Image:13 of
+#: abaqus.Session.Image.Image:11 of
 msgid ""
 "Check `Image on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imagepyc.htm?contextscope=all>`__."
@@ -9702,7 +9702,7 @@ msgid ""
 "is started."
 msgstr ""
 
-#: abaqus.Session.JournalOptions.JournalOptions:16 of
+#: abaqus.Session.JournalOptions.JournalOptions:14 of
 msgid ""
 "Check `JournalOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-journaloptionspyc.htm?contextscope=all>`__."
@@ -9743,18 +9743,18 @@ msgstr ""
 msgid "This method creates a NumberFormat object."
 msgstr ""
 
-#: abaqus.Session.JournalOptions.JournalOptions.NumberFormat:14
-#: abaqus.Session.NumberFormat.NumberFormat:19 of
+#: abaqus.Session.JournalOptions.JournalOptions.NumberFormat:12
+#: abaqus.Session.NumberFormat.NumberFormat:17 of
 msgid ""
 "Check `NumberFormat on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-numberformatpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Session.JournalOptions.JournalOptions.NumberFormat:21 of
+#: abaqus.Session.JournalOptions.JournalOptions.NumberFormat:19 of
 msgid "**blankPad**"
 msgstr ""
 
-#: ../../docstring abaqus.Session.JournalOptions.JournalOptions.NumberFormat:19
+#: ../../docstring abaqus.Session.JournalOptions.JournalOptions.NumberFormat:17
 #: abaqus.Session.NumberFormat.NumberFormat.blankPad:2 of
 msgid ""
 "A Boolean specifying whether the printed digits should be padded with "
@@ -9763,29 +9763,29 @@ msgid ""
 " ON."
 msgstr ""
 
-#: ../../docstring abaqus.Session.JournalOptions.JournalOptions.NumberFormat:24
+#: ../../docstring abaqus.Session.JournalOptions.JournalOptions.NumberFormat:22
 #: abaqus.Session.NumberFormat.NumberFormat.format:2 of
 msgid ""
 "A SymbolicConstant specifying the formatting type. Possible values are "
 "ENGINEERING, SCIENTIFIC, and AUTOMATIC. The default value is ENGINEERING."
 msgstr ""
 
-#: abaqus.Session.JournalOptions.JournalOptions.NumberFormat:29 of
+#: abaqus.Session.JournalOptions.JournalOptions.NumberFormat:27 of
 msgid "**numDigits**"
 msgstr ""
 
-#: ../../docstring abaqus.Session.JournalOptions.JournalOptions.NumberFormat:28
+#: ../../docstring abaqus.Session.JournalOptions.JournalOptions.NumberFormat:26
 #: abaqus.Session.NumberFormat.NumberFormat.numDigits:2 of
 msgid ""
 "An Int specifying the number of digits to be displayed in the result. "
 "**numDigits** >0>0. The default value is 6."
 msgstr ""
 
-#: abaqus.Session.JournalOptions.JournalOptions.NumberFormat:34 of
+#: abaqus.Session.JournalOptions.JournalOptions.NumberFormat:32 of
 msgid "**precision**"
 msgstr ""
 
-#: ../../docstring abaqus.Session.JournalOptions.JournalOptions.NumberFormat:32
+#: ../../docstring abaqus.Session.JournalOptions.JournalOptions.NumberFormat:30
 #: abaqus.Session.NumberFormat.NumberFormat.precision:2 of
 msgid ""
 "An Int specifying the number of decimal places to which the number is to "
@@ -9793,11 +9793,11 @@ msgid ""
 "truncation is applied. The default value is 0."
 msgstr ""
 
-#: abaqus.Session.JournalOptions.JournalOptions.NumberFormat:51 of
+#: abaqus.Session.JournalOptions.JournalOptions.NumberFormat:49 of
 msgid ":obj:`NumberFormat`"
 msgstr ""
 
-#: abaqus.Session.JournalOptions.JournalOptions.NumberFormat:39 of
+#: abaqus.Session.JournalOptions.JournalOptions.NumberFormat:37 of
 msgid "A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object."
 msgstr ""
 
@@ -9875,7 +9875,7 @@ msgid ""
 "**MemoryReductionOptions** member when a session is started."
 msgstr ""
 
-#: abaqus.Session.MemoryReductionOptions.MemoryReductionOptions:14 of
+#: abaqus.Session.MemoryReductionOptions.MemoryReductionOptions:12 of
 msgid ""
 "Check `MemoryReductionOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-memoryreductionoptionspyc.htm?contextscope=all>`__."
@@ -9930,7 +9930,7 @@ msgid ""
 "database on a remote system."
 msgstr ""
 
-#: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:13 of
+#: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:11 of
 msgid ""
 "Check `NetworkDatabaseConnector on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-networkdatabaseconnectorpyc.htm?contextscope=all>`__."
@@ -10918,5 +10918,134 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ":py:obj:`exit <abaqus.XY.XYSession.XYSession.exit>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "This object can be accessed by:"
+#~ msgstr ""
+
+#~ msgid "This function can be accessed by:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of tuples containing the "
+#~ "descriptions of variables for which to"
+#~ " extract data along the path. The "
+#~ "default value is the current variable."
+#~ " Each tuple specifies the "
+#~ "following:Variable label: A String specifying"
+#~ " the variable; for example, 'U'.Variable"
+#~ " output position: A SymbolicConstant "
+#~ "specifying the output position. Possible "
+#~ "values are ELEMENT_CENTROID, ELEMENT_FACE, "
+#~ "ELEMENT_NODAL, GENERAL_PARTICLE, INTEGRATION_POINT, "
+#~ "NODAL, WHOLE_ELEMENT, WHOLE_MODEL, "
+#~ "WHOLE_PART_INSTANCE, and WHOLE_REGION.Refinement: A"
+#~ " tuple specifying the refinement. If "
+#~ "the refinement tuple is omitted, data"
+#~ " are written for all components and"
+#~ " invariants (if applicable). This element"
+#~ " is required if the location "
+#~ "dictionary (the following element in the"
+#~ " tuple) is included. The refinement "
+#~ "tuple contains the following:Type: A "
+#~ "SymbolicConstant specifying the type of "
+#~ "refinement. Possible values are INVARIANT "
+#~ "and COMPONENT.Label: A String specifying "
+#~ "the invariant or the component; for "
+#~ "example, 'Mises' or 'S22'.Location: An "
+#~ "optional Dictionary specifying the location."
+#~ " The dictionary contains pairs of the"
+#~ " following:A String specifying the category"
+#~ " selection label.A String specifying the"
+#~ " section point label.For example,"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of tuples containing the "
+#~ "descriptions of variables for which to"
+#~ " extract data from the field. Each"
+#~ " tuple specifies the following:Variable "
+#~ "label: A String specifying the variable;"
+#~ " for example, 'U'.Variable output position:"
+#~ " A SymbolicConstant specifying the output"
+#~ " position. Possible values are "
+#~ "ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, "
+#~ "GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, "
+#~ "WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and"
+#~ " WHOLE_REGION.Refinement: A tuple specifying "
+#~ "the refinement. If the refinement tuple"
+#~ " is omitted, data are written for "
+#~ "all components and invariants (if "
+#~ "applicable). This element is required if"
+#~ " the location dictionary (the following "
+#~ "element in the tuple) is included. "
+#~ "The refinement tuple contains the "
+#~ "following:Type: A SymbolicConstant specifying "
+#~ "the type of refinement. Possible values"
+#~ " are INVARIANT and COMPONENT.Label: A "
+#~ "String specifying the invariant or the"
+#~ " component; for example, 'Mises' or "
+#~ "'S22'.Location: An optional Dictionary "
+#~ "specifying the location. The dictionary "
+#~ "contains pairs of the following:A String"
+#~ " specifying the category selection label.A"
+#~ " String specifying the section point "
+#~ "label. For example,"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the operating system"
+#~ " command or printer name to issue "
+#~ "for printing to the printer. The "
+#~ "default value is “lpr” or the "
+#~ "value specified by the printOptions "
+#~ "method. If you create a script to"
+#~ " print directly to a Windows printer,"
+#~ " the **printCommand** must take the "
+#~ "following form:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**element3 (if applicable)**: A Dictionary "
+#~ "with a String key and a String "
+#~ "value specifying a single section point"
+#~ " at which to report data. The "
+#~ "key specifies a region in the "
+#~ "model; the corresponding value specifies "
+#~ "a section point within that region. "
+#~ "For example:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of tuples containing the "
+#~ "descriptions of variables for which to"
+#~ " extract data from the field. Each"
+#~ " tuple specifies the following: Variable"
+#~ " label: A String specifying the "
+#~ "variable; for example, 'U'.Variable output "
+#~ "position: A SymbolicConstant specifying the"
+#~ " output position. Possible values are "
+#~ "ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, "
+#~ "GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, "
+#~ "WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and"
+#~ " WHOLE_REGION.Refinement: A tuple specifying "
+#~ "the refinement. If the refinement tuple"
+#~ " is omitted, data are written for "
+#~ "all components and invariants (if "
+#~ "applicable). This element is required if"
+#~ " the location dictionary (the following "
+#~ "element in the tuple) is included. "
+#~ "The refinement tuple contains the "
+#~ "following Type: A SymbolicConstant specifying"
+#~ " the type of refinement. Possible "
+#~ "values are INVARIANT and COMPONENT.Label: "
+#~ "A String specifying the invariant or "
+#~ "the component; for example, 'Mises' or"
+#~ " 'S22'.Location: An optional Dictionary "
+#~ "specifying the location. The dictionary "
+#~ "contains pairs of the following:A String"
+#~ " specifying the category selection label.A"
+#~ " String specifying the section point "
+#~ "label. For example,"
 #~ msgstr ""
 

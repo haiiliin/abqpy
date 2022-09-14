@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 00:16+0000\n"
+"POT-Creation-Date: 2022-09-14 09:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,10 +41,10 @@ msgstr ""
 
 #: abaqus.Part.PartBase.PartBase:6 abaqus.Part.PartFeature.PartFeature:6
 #: abaqus.Part.PartModel.PartModel:5 of
-msgid "This object can be accessed by:"
+msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.Part.PartModel.PartModel:12 of
+#: abaqus.Part.PartModel.PartModel:10 of
 msgid ""
 "Check `PartModel on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
@@ -60,18 +60,18 @@ msgid ":py:obj:`name <abaqus.Part.PartModel.PartModel.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1 ../../None:55:<autosummary>:1
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:21
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanCut:15
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:19
-#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:18
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:17
-#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:18
-#: abaqus.Part.PartBase.PartBase.PartFromMesh:18
-#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:21
-#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:18
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:18
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:19
-#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:18 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:19
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanCut:13
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:17
+#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:16
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:15
+#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:16
+#: abaqus.Part.PartBase.PartBase.PartFromMesh:16
+#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:19
+#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:16
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:16
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:17
+#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:16 of
 msgid "A String specifying the repository key."
 msgstr ""
 
@@ -3249,10 +3249,10 @@ msgstr ""
 #: abaqus.Part.PartFeature.PartFeature.WireFromEdge:6
 #: abaqus.Part.PartFeature.PartFeature.WirePolyLine:7
 #: abaqus.Part.PartFeature.PartFeature.WireSpline:7 of
-msgid "This function can be accessed by:"
+msgid "This function can be accessed by::"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:16 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:14 of
 msgid ""
 "Check `Part2DGeomFrom2DMesh on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-part2dgeomfrom2dmeshpyc.htm?contextscope=all>`__."
@@ -3328,65 +3328,65 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:21
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanCut:15
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:19
-#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:18
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:17
-#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:18
-#: abaqus.Part.PartBase.PartBase.PartFromMesh:18
-#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:21
-#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:18
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:18
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:19
-#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:18 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:19
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanCut:13
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:17
+#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:16
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:15
+#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:16
+#: abaqus.Part.PartBase.PartBase.PartFromMesh:16
+#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:19
+#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:16
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:16
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:17
+#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:16 of
 msgid "**name**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:24
-#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:21
-#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:24
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:22 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:22
+#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:19
+#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:22
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:20 of
 msgid "**part**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:24
-#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:21 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:22
+#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:19 of
 msgid ""
 "A :py:class:`~abaqus.Part.Part.Part` object specifying an existing two-"
 "dimensional orphan mesh Part object."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:28 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:26 of
 msgid "**featureAngle**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:27 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:25 of
 msgid ""
 "A Float specifying the angle (in degrees) between line segments that "
 "triggers a break in the geometry."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:32 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:30 of
 msgid "**splineCurvatureLimit**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:31 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:29 of
 msgid ""
 "A Float specifying the traversal angle in degrees of the spline that "
 "triggers a break in the geometry. The default value is 90."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:37
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:63
-#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:42
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:54 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:35
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:61
+#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:40
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:52 of
 msgid "**twist**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:35
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:61
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:52 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:33
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:59
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:50 of
 msgid ""
 "A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the "
 "part (only available when **dimensionality** = AXISYMMETRIC and **type** "
@@ -3465,75 +3465,75 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:63
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanCut:39
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:62
-#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:51
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:102
-#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:56
-#: abaqus.Part.PartBase.PartBase.PartFromMesh:42
-#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:59
-#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:59
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:87
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:64
-#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:50 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:61
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanCut:37
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:60
+#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:49
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:100
+#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:54
+#: abaqus.Part.PartBase.PartBase.PartFromMesh:40
+#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:57
+#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:57
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:85
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:62
+#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:48 of
 msgid "part: :obj:`Part`"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:42
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanCut:27
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:50
-#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:32
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:83
-#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:36
-#: abaqus.Part.PartBase.PartBase.PartFromMesh:27
-#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:37
-#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:47
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:59
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:39
-#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:29 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:40
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanCut:25
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:48
+#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:30
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:81
+#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:34
+#: abaqus.Part.PartBase.PartBase.PartFromMesh:25
+#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:35
+#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:45
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:57
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:37
+#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:27 of
 msgid "A :py:class:`~abaqus.Part.Part.Part` object"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:44 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:42 of
 msgid ""
 "If the specified part is not an orphan mesh part: Specified part must be "
 "an orphan mesh."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:46 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:44 of
 msgid ""
 "If the Part2DGeomFrom2DMesh method cannot create a valid two-dimensional "
 "shell section from the two-dimensional mesh: Planar shell feature failed"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:48 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:46 of
 msgid ""
 "If the specified part is not two-dimensional: Cannot create a geometry "
 "from a 3D part."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:50 of
+#: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:48 of
 msgid ""
 "If the specified part is a rigid body: Cannot create a geometry from a "
 "rigid body."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanCut:18 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanCut:16 of
 msgid "**instanceToBeCut**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanCut:18 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanCut:16 of
 msgid ""
 "A PartInstance specifying the base instance from which to cut other "
 "instances."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanCut:22 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanCut:20 of
 msgid "**cuttingInstances**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanCut:21 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanCut:19 of
 msgid ""
 "A sequence of PartInstance objects specifying the instances with which to"
 " cut the base instance."
@@ -3546,47 +3546,47 @@ msgid ""
 " or orphan mesh parts, but they cannot be a combination of both."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:14 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:12 of
 msgid ""
 "Check `PartFromBooleanMerge on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partfrombooleanmergepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:22 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:20 of
 msgid "**instances**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:22 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:20 of
 msgid "A sequence of PartInstance objects specifying the part instances to merge."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:26 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:24 of
 msgid "**keepIntersections**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:25 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:23 of
 msgid ""
 "A Boolean specifying whether the boundary intersections of Abaqus native "
 "part instances should be retained after the merge operation. The default "
 "value is False."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:31 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:29 of
 msgid "**mergeNodes**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:29 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:27 of
 msgid ""
 "A SymbolicConstant specifying whether the nodes of orphan mesh part "
 "instances should be retained after the merge operation. Possible values "
 "are BOUNDARY_ONLY, ALL, or NONE. The default value is BOUNDARY_ONLY."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:36 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:34 of
 msgid "**nodeMergingTolerance**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:34 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:32 of
 msgid ""
 "A Float specifying the maximum distance between nodes of orphan mesh part"
 " instances that will be merged and replaced with a single new node. The "
@@ -3594,163 +3594,163 @@ msgid ""
 "The default value is 10-6."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:40 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:38 of
 msgid "**removeDuplicateElements**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:39 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:37 of
 msgid ""
 "A Boolean specifying whether elements with the same connectivity after "
 "the merge will merged into a single element. The default value is ON."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:45 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:43 of
 msgid "**domain**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:43 of
+#: abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:41 of
 msgid ""
 "A SymbolicConstant specifying whether the part instances being merged are"
 " geometric instances or mesh instances. Possible values are GEOMETRY, "
 "MESH or BOTH. The default value is GEOMETRY."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:13 of
+#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:11 of
 msgid ""
 "Check `PartFromExtrude2DMesh on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partfromextrude2dmeshpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:24
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude:21
-#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:22
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:22
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:40
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:42
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:34
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:34 of
+#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:22
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude:19
+#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:20
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:20
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:38
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:40
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:32
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:32 of
 msgid "**depth**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:24 of
+#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:22 of
 msgid "A Float specifying the total extrusion distance."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:27 of
+#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:25 of
 msgid "**elementSize**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:27 of
+#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:25 of
 msgid ""
 "A Float specifying an approximate element length in the extruded "
 "direction."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:34 of
+#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:32 of
 msgid ""
 "If the specified part is not an orphan mesh part: Cannot extrude a "
 "geometric part."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:36 of
+#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:34 of
 msgid "If the specified part is not two-dimensional: Cannot extrude a 3D part."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:38
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:45 of
+#: abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:36
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:43 of
 msgid ""
 "If the specified part is a rigid body: Cannot change dimension of a rigid"
 " body."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:12 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:10 of
 msgid ""
 "Check `PartFromGeometryFile on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partfromgeometryfilepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:20 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:18 of
 msgid "**geometryFile**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:20 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:18 of
 msgid ""
 "An :py:class:`~abaqus.Part.AcisFile.AcisFile` object specifying a file "
 "containing geometry."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:24
-#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:22 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:22
+#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:20 of
 msgid "**dimensionality**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:23
-#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:21 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:21
+#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:19 of
 msgid ""
 "A SymbolicConstant specifying the dimensionality of the part. Possible "
 "values are THREE_D, TWO_D_PLANAR, and AXISYMMETRIC."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:28
-#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:26 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:26
+#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:24 of
 msgid "**type**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:27
-#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:25 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:25
+#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:23 of
 msgid ""
 "A SymbolicConstant specifying the type of the part. Possible values are "
 "DEFORMABLE_BODY, EULERIAN, DISCRETE_RIGID_SURFACE, and "
 "ANALYTIC_RIGID_SURFACE."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:32 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:30 of
 msgid "**bodyNum**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:31 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:29 of
 msgid ""
 "An Int specifying the desired body to be selected from an ACIS object "
 "containing a list of **N** ACIS bodies. Possible values are 1 ≤ "
 "**bodyNum** ≤ **N**. The default value is 1."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:37 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:35 of
 msgid "**combine**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:35 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:33 of
 msgid ""
 "A Boolean specifying weather to create a single part by combining all the"
 " bodies in the ACIS object. This argument is ignored if **bodyNum** is "
 "specified. The default value is False."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:41 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:39 of
 msgid "**booleanSolids**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:40 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:38 of
 msgid ""
 "A Boolean specifying whether the solids should be boolean while combining"
 " all the bodies.The default value is FALSE."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:45 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:43 of
 msgid "**retainBoundary**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:44 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:42 of
 msgid ""
 "A Boolean specifying whether the intersecting boundaries should be "
 "retained while boolean the solids.The default value is FALSE."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:52 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:50 of
 msgid "**usePartNameFromFile**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:48 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:46 of
 msgid ""
 "A Boolean specifying whether the part names specified in a STEP file "
 "should be used as the names in the Abaqus model database. If this option "
@@ -3761,13 +3761,13 @@ msgid ""
 "should be FALSE."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:58
-#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:28
-#: abaqus.Part.PartFeature.PartFeature.Stitch:25 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:56
+#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:26
+#: abaqus.Part.PartFeature.PartFeature.Stitch:23 of
 msgid "**stitchTolerance**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:55 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:53 of
 msgid ""
 "A Float indicating the maximum gap to be stitched. The value should be "
 "smaller than the minimum feature size and bigger than the maximum gap "
@@ -3776,21 +3776,21 @@ msgid ""
 "value is 1.0"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:67 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:65 of
 msgid "**scale**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:66 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:64 of
 msgid ""
 "A Float specifying the scaling factor to apply to the imported geometric "
 "entities. The default value is 1.0."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:73 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:71 of
 msgid "**convertToAnalytical**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:70 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:68 of
 msgid ""
 "An Int specifying whether to convert to analytical entities. Possible "
 "values are 0 or 1. The default value is 0. If **convertToAnalytical** = "
@@ -3799,11 +3799,11 @@ msgid ""
 "the command."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:78 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:76 of
 msgid "**convertToPrecise**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:76 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:74 of
 msgid ""
 "An Int specifying whether to convert to precise geometry. Possible value "
 "are 0 or 1. The default value is 0. If **convertToPrecise** = 1, the "
@@ -3811,97 +3811,97 @@ msgid ""
 "precise."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:85 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:83 of
 msgid "If the ACIS file is corrupt: PartError: the file is corrupt"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:87 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:85 of
 msgid ""
 "If the dimensionality does not correspond to what is found in the ACIS "
 "file: PartError: dimensionality does not match the contents of the file"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:89 of
+#: abaqus.Part.PartBase.PartBase.PartFromGeometryFile:87 of
 msgid ""
 "If the type does not correspond to what is found in the ACIS file: "
 "PartError: type does not match the contents of the file"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:13 of
+#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:11 of
 msgid ""
 "Check `PartFromInstanceMesh on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partfrominstancemeshpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:23 of
+#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:21 of
 msgid "**partInstances**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:21 of
+#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:19 of
 msgid ""
 "A sequence of PartInstance objects to be used in the creation of the new "
 "mesh part. If the **partInstances** argument is omitted, the new Part "
 "object contains the mesh of all the part instances in the assembly."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:27 of
+#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:25 of
 msgid "**copyPartSets**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:26 of
+#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:24 of
 msgid ""
 "A Boolean specifying whether to copy sets, surfaces, and attributes from "
 "the base part or parts of the specified part instances to the new part. "
 "The default is False."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:31 of
+#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:29 of
 msgid "**copyAssemblySets**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:30 of
+#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:28 of
 msgid ""
 "A Boolean specifying whether to copy assembly-level sets that reference "
 "entities of the specified part instances to the new part. The default is "
 "False."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:38 of
+#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:36 of
 msgid ""
 "If the analysis type (deformable or rigid) is not consistent among the "
 "supplied part instances: The selected part instances do not have a "
 "consistent analysis type."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:41 of
+#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:39 of
 msgid ""
 "If the assembly does not contain a mesh: The current assembly does not "
 "contain a mesh for a mesh part."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:43 of
+#: abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:41 of
 msgid ""
 "If the specified part instances do not contain a mesh: The selected part "
 "instances do not have a mesh for a mesh part."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromMesh:13 of
+#: abaqus.Part.PartBase.PartBase.PartFromMesh:11 of
 msgid ""
 "Check `PartFromMesh on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partfrommeshpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromMesh:22 of
+#: abaqus.Part.PartBase.PartBase.PartFromMesh:20 of
 msgid "**copySets**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromMesh:21 of
+#: abaqus.Part.PartBase.PartBase.PartFromMesh:19 of
 msgid ""
 "A Boolean specifying whether to copy sets, surfaces, and attributes to "
 "the new part. The default is False."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromMesh:29 of
+#: abaqus.Part.PartBase.PartBase.PartFromMesh:27 of
 msgid ""
 "If the part does not contain a mesh: The current part does not contain a "
 "mesh for a mesh part."
@@ -3917,76 +3917,76 @@ msgid ""
 "the second half of the part but does not unite the two halves."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:16 of
+#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:14 of
 msgid ""
 "Check `PartFromMeshMirror on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partfrommeshmirrorpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:24 of
+#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:22 of
 msgid ""
 "A :py:class:`~abaqus.Part.Part.Part` object specifying an existing orphan"
 " mesh part."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:28
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:26
-#: abaqus.Part.PartFeature.PartFeature.RepairSliver:23 of
+#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:26
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:24
+#: abaqus.Part.PartFeature.PartFeature.RepairSliver:21 of
 msgid "**point1**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:27 of
+#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:25 of
 msgid ""
 "A sequence of three Floats specifying a point on the mirror plane. This "
 "point is the local origin in the local system of the plane."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:32
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:30
-#: abaqus.Part.PartFeature.PartFeature.RepairSliver:27 of
+#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:30
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:28
+#: abaqus.Part.PartFeature.PartFeature.RepairSliver:25 of
 msgid "**point2**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:31 of
+#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:29 of
 msgid ""
 "A sequence of three Floats specifying a point in the direction of the "
 "normal to the mirror plane. This point must not be coincident with "
 "**point1**."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:39 of
+#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:37 of
 msgid ""
 "If the specified part is not an orphan mesh part: Cannot mirror a "
 "geometric part."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:41 of
+#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:39 of
 msgid "If the specified part is a rigid body: Cannot mirror a rigid body."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:43 of
+#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:41 of
 msgid ""
 "If **point1** and **point2** are coincident: Mirror plane director has "
 "zero length."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:45 of
+#: abaqus.Part.PartBase.PartBase.PartFromMeshMirror:43 of
 msgid ""
 "If the specified part is two-dimensional and the plane is not parallel to"
 " the **Z**-axis: Mirror plane must be parallel to Z axis for 2D parts"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:13 of
+#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:11 of
 msgid ""
 "Check `PartFromNodesAndElements on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partfromnodesandelementspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:31 of
+#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:29 of
 msgid "**nodes**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:29 of
+#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:27 of
 msgid ""
 "A sequence of (*nodeLabels*, **nodeCoords**) specifying the nodes of the "
 "mesh. **nodeLabels** is a sequence of Ints specifying the node labels, "
@@ -3994,11 +3994,11 @@ msgid ""
 "the nodal coordinates."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:37 of
+#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:35 of
 msgid "**elements**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:34 of
+#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:32 of
 msgid ""
 "A sequence of sequences of(*meshType*, **elementLabels**, "
 "**elementConns**) specifying the elements of the mesh. **meshType** is a "
@@ -4007,7 +4007,7 @@ msgid ""
 "sequences of node labels specifying the element connectivity."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:40 of
+#: abaqus.Part.PartBase.PartBase.PartFromNodesAndElements:38 of
 msgid ""
 "A boolean specifying whether the part is defined with twist. This option "
 "has meaning only when **dimensionality** = AXISYMMETRIC. Possible values "
@@ -4020,67 +4020,67 @@ msgid ""
 "database. The new part is placed in the parts repository."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:13 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:11 of
 msgid ""
 "Check `PartFromOdb on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partfromodbpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:21 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:19 of
 msgid "**odb**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:21 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:19 of
 msgid "An output database object."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:25 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:23 of
 msgid "**fileName**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:24 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:22 of
 msgid ""
 "A String specifying the name of the output database file from which to "
 "create the part. The default value is an empty string."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:30 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:28 of
 msgid "**instance**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:28 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:26 of
 msgid ""
 "A String specifying the part instance in the output database from which "
 "to create the part. If no instance name is specified, Abaqus creates an "
 "orphan mesh part from the first part instance in the output database."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:34 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:32 of
 msgid "**elementSet**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:33 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:31 of
 msgid ""
 "A String specifying an element set defined on the output database. Only "
 "elements from this set will be imported. The default is to import all "
 "element sets."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:38 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:36 of
 msgid "**shape**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:37 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:35 of
 msgid ""
 "A SymbolicConstant specifying the configuration state. Possible values "
 "are UNDEFORMED and DEFORMED. The default value is UNDEFORMED."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:43 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:41 of
 msgid "**step**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:41 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:39 of
 msgid ""
 "An Int specifying the step number for reading deformed coordinates. "
 "0≤step≤N−10≤step≤N-1 where NN is the number of available steps. The "
@@ -4088,11 +4088,11 @@ msgid ""
 " argument only when **shape** = DEFORMED."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:49 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:47 of
 msgid "**frame**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:46 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:44 of
 msgid ""
 "An Int specifying the frame number for reading deformed coordinates. "
 "0≤frame≤N−10≤frame≤N-1 where NN is the number of available frames. The "
@@ -4100,7 +4100,7 @@ msgid ""
 "**frame** argument only when **shape** = DEFORMED."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:61 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:59 of
 msgid ""
 "If the output database contains elements of more than one dimensionality "
 "or type: File contains both axisymmetric and nonaxisymmetric "
@@ -4108,37 +4108,37 @@ msgid ""
 "and deformable elements."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:64 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:62 of
 msgid ""
 "If more than one part is found on the output database: PartError: "
 "importing of more than one part is not currently supported"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:66 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:64 of
 msgid ""
 "If the output database does not contain any valid results for the "
 "specified step: Error. File does not contain any valid frames."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:68 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:66 of
 msgid ""
 "If the specified step and frame do not contain any displacements: Error. "
 "Specified frame does not contain nodal displacements."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:70 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:68 of
 msgid ""
 "If the specified element set is not found on the output database: Error. "
 "Specified element set is not defined in the ODB."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:72 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:70 of
 msgid ""
 "If the step number is invalid: OdiError: Invalid step index: i. Available"
 " step indices: 0 - j."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromOdb:74 of
+#: abaqus.Part.PartBase.PartBase.PartFromOdb:72 of
 msgid ""
 "If the frame number is invalid: OdiError: Invalid frame index: i. "
 "Available frame indices: 0 - j."
@@ -4152,107 +4152,107 @@ msgid ""
 "8-node brick elements."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:14 of
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:12 of
 msgid ""
 "Check `PartFromSection3DMeshByPlane on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partfromsection3dmeshbyplanepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:22 of
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:20 of
 msgid ""
 "A :py:class:`~abaqus.Part.Part.Part` object specifying an existing three-"
 "dimensional orphan mesh part."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:25 of
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:23 of
 msgid ""
 "A Sequence of three Floats specifying a point on the cutting plane. This "
 "point is the local origin in the local system of the plane."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:29 of
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:27 of
 msgid ""
 "A Sequence of three Floats specifying a point in the direction of the "
 "normal to the cutting plane. This point must not be coincident with "
 "**point1**."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:34 of
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:32 of
 msgid "**point3**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:33 of
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:31 of
 msgid ""
 "A sequence of three Floats specifying the direction of the local 1-axis "
 "in the local system of the plane. This point must not project onto "
 "**point1**."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:41 of
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:39 of
 msgid ""
 "If the specified part is not an orphan mesh part: Cannot reduce dimension"
 " of a geometric part."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:43 of
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:41 of
 msgid ""
 "If the specified part is not three-dimensional: Cannot reduce dimension "
 "of a 2D part."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:47 of
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:45 of
 msgid ""
 "If **point1** and **point2** are coincident: Cutting plane director has "
 "zero length."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:49 of
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:47 of
 msgid ""
 "If **point3** projects onto **point1**: Local axis point projects to "
 "origin."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:51 of
+#: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:49 of
 msgid ""
 "If no elements are cut by the specified plane: Cannot reduce part "
 "dimension."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:13 of
+#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:11 of
 msgid ""
 "Check `PartFromSubstructure on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partfromsubstructurepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:21 of
+#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:19 of
 msgid "**substructureFile**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:21 of
+#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:19 of
 msgid "A substructure sim file."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:24 of
+#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:22 of
 msgid "**odbFile**"
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:24 of
+#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:22 of
 msgid "The output database file corresponding to the substructure sim file."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:31 of
+#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:29 of
 msgid ""
 "If the specified part is not a substructure: File specified does not "
 "contain a substructure."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:33 of
+#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:31 of
 msgid ""
 "If the specified part already exists: A part with the same name already "
 "exists."
 msgstr ""
 
-#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:35 of
+#: abaqus.Part.PartBase.PartBase.PartFromSubstructure:33 of
 msgid ""
 "If the substructure cannot be imported: The output database is missing "
 "nodes and elements.Nested substructures are not supported.The "
@@ -4266,7 +4266,7 @@ msgid ""
 "about the Feature object, see Feature object."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature:13 of
+#: abaqus.Part.PartFeature.PartFeature:11 of
 msgid ""
 "Check `PartFeature on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partfeaturepyc.htm?contextscope=all>`__."
@@ -5086,31 +5086,31 @@ msgid ""
 "conversion is not always successful."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AddCells:13 of
+#: abaqus.Part.PartFeature.PartFeature.AddCells:11 of
 msgid ""
 "Check `AddCells on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-addcellspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AddCells:18
-#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:18
-#: abaqus.Part.PartFeature.PartFeature.RemoveFaces:17
-#: abaqus.Part.PartFeature.PartFeature.RemoveFacesAndStitch:18
-#: abaqus.Part.PartFeature.PartFeature.RepairFaceNormals:20
-#: abaqus.Part.PartFeature.PartFeature.RepairSmallFaces:19
-#: abaqus.Part.PartFeature.PartFeature.ReplaceFaces:18 of
+#: abaqus.Part.PartFeature.PartFeature.AddCells:16
+#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:16
+#: abaqus.Part.PartFeature.PartFeature.RemoveFaces:15
+#: abaqus.Part.PartFeature.PartFeature.RemoveFacesAndStitch:16
+#: abaqus.Part.PartFeature.PartFeature.RepairFaceNormals:18
+#: abaqus.Part.PartFeature.PartFeature.RepairSmallFaces:17
+#: abaqus.Part.PartFeature.PartFeature.ReplaceFaces:16 of
 msgid "**faceList**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AddCells:18 of
+#: abaqus.Part.PartFeature.PartFeature.AddCells:16 of
 msgid "A sequence of Face objects specifying the faces bounding the cell to add."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AddCells:24 of
+#: abaqus.Part.PartFeature.PartFeature.AddCells:22 of
 msgid "**flipped**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AddCells:21 of
+#: abaqus.Part.PartFeature.PartFeature.AddCells:19 of
 msgid ""
 "A Boolean specifying the direction of feature creation. The possible "
 "values are True and False. The default is True indicating that the "
@@ -5119,168 +5119,168 @@ msgid ""
 "faces and ignores the **flipped** argument."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AddCells:41
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurf2DPlanar:35
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude:38
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfRevolve:35
-#: abaqus.Part.PartFeature.PartFeature.AssignMidsurfaceRegion:38
-#: abaqus.Part.PartFeature.PartFeature.AutoRepair:31
-#: abaqus.Part.PartFeature.PartFeature.BaseShell:35
-#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:65
-#: abaqus.Part.PartFeature.PartFeature.BaseShellSweep:41
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:41
-#: abaqus.Part.PartFeature.PartFeature.BaseWire:35
-#: abaqus.Part.PartFeature.PartFeature.BlendFaces:52
-#: abaqus.Part.PartFeature.PartFeature.Chamfer:38
-#: abaqus.Part.PartFeature.PartFeature.ConvertToAnalytical:28
-#: abaqus.Part.PartFeature.PartFeature.ConvertToPrecise:36
-#: abaqus.Part.PartFeature.PartFeature.Cut:50
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:83
-#: abaqus.Part.PartFeature.PartFeature.CutLoft:82
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:78
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:99
-#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:59
-#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:53
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:59
-#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:49
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:56
-#: abaqus.Part.PartFeature.PartFeature.MergeEdges:40
-#: abaqus.Part.PartFeature.PartFeature.Mirror:41
-#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:61
-#: abaqus.Part.PartFeature.PartFeature.RemoveFaces:38
-#: abaqus.Part.PartFeature.PartFeature.RemoveFacesAndStitch:35
-#: abaqus.Part.PartFeature.PartFeature.RepairFaceNormals:37
-#: abaqus.Part.PartFeature.PartFeature.RepairInvalidEdges:36
-#: abaqus.Part.PartFeature.PartFeature.RepairSliver:48
-#: abaqus.Part.PartFeature.PartFeature.RepairSmallEdges:40
-#: abaqus.Part.PartFeature.PartFeature.RepairSmallFaces:40
-#: abaqus.Part.PartFeature.PartFeature.ReplaceFaces:39
-#: abaqus.Part.PartFeature.PartFeature.Round:45
-#: abaqus.Part.PartFeature.PartFeature.Shell:51
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:85
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:96
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:84
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:103
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:85
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:95
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:83
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:103
-#: abaqus.Part.PartFeature.PartFeature.Stitch:42
-#: abaqus.Part.PartFeature.PartFeature.Wire:51
-#: abaqus.Part.PartFeature.PartFeature.WireFromEdge:35
-#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:51
-#: abaqus.Part.PartFeature.PartFeature.WireSpline:53 of
+#: abaqus.Part.PartFeature.PartFeature.AddCells:39
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurf2DPlanar:33
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude:36
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfRevolve:33
+#: abaqus.Part.PartFeature.PartFeature.AssignMidsurfaceRegion:36
+#: abaqus.Part.PartFeature.PartFeature.AutoRepair:29
+#: abaqus.Part.PartFeature.PartFeature.BaseShell:33
+#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:63
+#: abaqus.Part.PartFeature.PartFeature.BaseShellSweep:39
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:39
+#: abaqus.Part.PartFeature.PartFeature.BaseWire:33
+#: abaqus.Part.PartFeature.PartFeature.BlendFaces:50
+#: abaqus.Part.PartFeature.PartFeature.Chamfer:36
+#: abaqus.Part.PartFeature.PartFeature.ConvertToAnalytical:26
+#: abaqus.Part.PartFeature.PartFeature.ConvertToPrecise:34
+#: abaqus.Part.PartFeature.PartFeature.Cut:48
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:81
+#: abaqus.Part.PartFeature.PartFeature.CutLoft:80
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:76
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:97
+#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:57
+#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:51
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:57
+#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:47
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:54
+#: abaqus.Part.PartFeature.PartFeature.MergeEdges:38
+#: abaqus.Part.PartFeature.PartFeature.Mirror:39
+#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:59
+#: abaqus.Part.PartFeature.PartFeature.RemoveFaces:36
+#: abaqus.Part.PartFeature.PartFeature.RemoveFacesAndStitch:33
+#: abaqus.Part.PartFeature.PartFeature.RepairFaceNormals:35
+#: abaqus.Part.PartFeature.PartFeature.RepairInvalidEdges:34
+#: abaqus.Part.PartFeature.PartFeature.RepairSliver:46
+#: abaqus.Part.PartFeature.PartFeature.RepairSmallEdges:38
+#: abaqus.Part.PartFeature.PartFeature.RepairSmallFaces:38
+#: abaqus.Part.PartFeature.PartFeature.ReplaceFaces:37
+#: abaqus.Part.PartFeature.PartFeature.Round:43
+#: abaqus.Part.PartFeature.PartFeature.Shell:49
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:83
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:94
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:82
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:101
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:83
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:93
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:81
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:101
+#: abaqus.Part.PartFeature.PartFeature.Stitch:40
+#: abaqus.Part.PartFeature.PartFeature.Wire:49
+#: abaqus.Part.PartFeature.PartFeature.WireFromEdge:33
+#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:49
+#: abaqus.Part.PartFeature.PartFeature.WireSpline:51 of
 msgid "feature: :obj:`Feature`"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AddCells:29
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurf2DPlanar:23
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude:26
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfRevolve:23
-#: abaqus.Part.PartFeature.PartFeature.AssignMidsurfaceRegion:26
-#: abaqus.Part.PartFeature.PartFeature.AutoRepair:19
-#: abaqus.Part.PartFeature.PartFeature.BaseShell:23
-#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:53
-#: abaqus.Part.PartFeature.PartFeature.BaseShellSweep:29
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:29
-#: abaqus.Part.PartFeature.PartFeature.BaseWire:23
-#: abaqus.Part.PartFeature.PartFeature.BlendFaces:40
-#: abaqus.Part.PartFeature.PartFeature.Chamfer:26
-#: abaqus.Part.PartFeature.PartFeature.ConvertToAnalytical:16
-#: abaqus.Part.PartFeature.PartFeature.ConvertToPrecise:24
-#: abaqus.Part.PartFeature.PartFeature.Cut:38
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:71
-#: abaqus.Part.PartFeature.PartFeature.CutLoft:70
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:66
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:87
-#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:47
-#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:41
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:47
-#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:37
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:44
-#: abaqus.Part.PartFeature.PartFeature.MergeEdges:28
-#: abaqus.Part.PartFeature.PartFeature.Mirror:29
-#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:49
-#: abaqus.Part.PartFeature.PartFeature.RemoveFaces:26
-#: abaqus.Part.PartFeature.PartFeature.RemoveFacesAndStitch:23
-#: abaqus.Part.PartFeature.PartFeature.RepairFaceNormals:25
-#: abaqus.Part.PartFeature.PartFeature.RepairInvalidEdges:24
-#: abaqus.Part.PartFeature.PartFeature.RepairSliver:36
-#: abaqus.Part.PartFeature.PartFeature.RepairSmallEdges:28
-#: abaqus.Part.PartFeature.PartFeature.RepairSmallFaces:28
-#: abaqus.Part.PartFeature.PartFeature.ReplaceFaces:27
-#: abaqus.Part.PartFeature.PartFeature.Round:33
-#: abaqus.Part.PartFeature.PartFeature.Shell:39
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:73
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:84
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:72
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:91
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:73
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:83
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:71
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:91
-#: abaqus.Part.PartFeature.PartFeature.Stitch:30
-#: abaqus.Part.PartFeature.PartFeature.Wire:39
-#: abaqus.Part.PartFeature.PartFeature.WireFromEdge:23
-#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:39
-#: abaqus.Part.PartFeature.PartFeature.WireSpline:41 of
+#: abaqus.Part.PartFeature.PartFeature.AddCells:27
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurf2DPlanar:21
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude:24
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfRevolve:21
+#: abaqus.Part.PartFeature.PartFeature.AssignMidsurfaceRegion:24
+#: abaqus.Part.PartFeature.PartFeature.AutoRepair:17
+#: abaqus.Part.PartFeature.PartFeature.BaseShell:21
+#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:51
+#: abaqus.Part.PartFeature.PartFeature.BaseShellSweep:27
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:27
+#: abaqus.Part.PartFeature.PartFeature.BaseWire:21
+#: abaqus.Part.PartFeature.PartFeature.BlendFaces:38
+#: abaqus.Part.PartFeature.PartFeature.Chamfer:24
+#: abaqus.Part.PartFeature.PartFeature.ConvertToAnalytical:14
+#: abaqus.Part.PartFeature.PartFeature.ConvertToPrecise:22
+#: abaqus.Part.PartFeature.PartFeature.Cut:36
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:69
+#: abaqus.Part.PartFeature.PartFeature.CutLoft:68
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:64
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:85
+#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:45
+#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:39
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:45
+#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:35
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:42
+#: abaqus.Part.PartFeature.PartFeature.MergeEdges:26
+#: abaqus.Part.PartFeature.PartFeature.Mirror:27
+#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:47
+#: abaqus.Part.PartFeature.PartFeature.RemoveFaces:24
+#: abaqus.Part.PartFeature.PartFeature.RemoveFacesAndStitch:21
+#: abaqus.Part.PartFeature.PartFeature.RepairFaceNormals:23
+#: abaqus.Part.PartFeature.PartFeature.RepairInvalidEdges:22
+#: abaqus.Part.PartFeature.PartFeature.RepairSliver:34
+#: abaqus.Part.PartFeature.PartFeature.RepairSmallEdges:26
+#: abaqus.Part.PartFeature.PartFeature.RepairSmallFaces:26
+#: abaqus.Part.PartFeature.PartFeature.ReplaceFaces:25
+#: abaqus.Part.PartFeature.PartFeature.Round:31
+#: abaqus.Part.PartFeature.PartFeature.Shell:37
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:71
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:82
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:70
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:89
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:71
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:81
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:69
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:89
+#: abaqus.Part.PartFeature.PartFeature.Stitch:28
+#: abaqus.Part.PartFeature.PartFeature.Wire:37
+#: abaqus.Part.PartFeature.PartFeature.WireFromEdge:21
+#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:37
+#: abaqus.Part.PartFeature.PartFeature.WireSpline:39 of
 msgid "A :py:class:`~abaqus.Feature.Feature.Feature` object"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurf2DPlanar:13 of
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurf2DPlanar:11 of
 msgid ""
 "Check `AnalyticRigidSurf2DPlanar on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-analyticrigidsurf2dplanarpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurf2DPlanar:18
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude:18
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfRevolve:18
-#: abaqus.Part.PartFeature.PartFeature.BaseShell:18
-#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:19
-#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:20
-#: abaqus.Part.PartFeature.PartFeature.BaseShellSweep:21
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:19
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:20
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:21
-#: abaqus.Part.PartFeature.PartFeature.BaseWire:18
-#: abaqus.Part.PartFeature.PartFeature.Cut:29
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:36
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:34
-#: abaqus.Part.PartFeature.PartFeature.Shell:30
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:30
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:32
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:30
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:31
-#: abaqus.Part.PartFeature.PartFeature.Wire:30 of
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurf2DPlanar:16
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude:16
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfRevolve:16
+#: abaqus.Part.PartFeature.PartFeature.BaseShell:16
+#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:17
+#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:18
+#: abaqus.Part.PartFeature.PartFeature.BaseShellSweep:19
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:17
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:18
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:19
+#: abaqus.Part.PartFeature.PartFeature.BaseWire:16
+#: abaqus.Part.PartFeature.PartFeature.Cut:27
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:34
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:32
+#: abaqus.Part.PartFeature.PartFeature.Shell:28
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:28
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:30
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:28
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:29
+#: abaqus.Part.PartFeature.PartFeature.Wire:28 of
 msgid "**sketch**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurf2DPlanar:18
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude:18
-#: abaqus.Part.PartFeature.PartFeature.BaseWire:18 of
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurf2DPlanar:16
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude:16
+#: abaqus.Part.PartFeature.PartFeature.BaseWire:16 of
 msgid ""
 "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
 " specifying the planar wire."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude:13 of
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude:11 of
 msgid ""
 "Check `AnalyticRigidSurfExtrude on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-analyticrigidsurfextrudepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude:21 of
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude:19 of
 msgid "A Float specifying the extrusion depth. The default value is 1.0."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfRevolve:13 of
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfRevolve:11 of
 msgid ""
 "Check `AnalyticRigidSurfRevolve on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-analyticrigidsurfrevolvepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfRevolve:18 of
+#: abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfRevolve:16 of
 msgid ""
 "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
 " specifying the surface to be revolved."
@@ -5294,18 +5294,18 @@ msgid ""
 "the **cells** from the active representation of the part."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AssignMidsurfaceRegion:15 of
+#: abaqus.Part.PartFeature.PartFeature.AssignMidsurfaceRegion:13 of
 msgid ""
 "Check `AssignMidsurfaceRegion on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assignmidsurfaceregionpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AssignMidsurfaceRegion:21
-#: abaqus.Part.PartFeature.PartFeature.RemoveCells:17 of
+#: abaqus.Part.PartFeature.PartFeature.AssignMidsurfaceRegion:19
+#: abaqus.Part.PartFeature.PartFeature.RemoveCells:15 of
 msgid "**cellList**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.AssignMidsurfaceRegion:20 of
+#: abaqus.Part.PartFeature.PartFeature.AssignMidsurfaceRegion:18 of
 msgid ""
 "A sequence of Cell objects specifying the regions that will be used for "
 "mid-surface construction. These regions will be copied to the reference "
@@ -5329,14 +5329,14 @@ msgid ""
 "must define a closed profile."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShell:13 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShell:11 of
 msgid ""
 "Check `BaseShell on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-baseshellpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShell:18
-#: abaqus.Part.PartFeature.PartFeature.Shell:30 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShell:16
+#: abaqus.Part.PartFeature.PartFeature.Shell:28 of
 msgid ""
 "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
 " specifying the planar shell."
@@ -5349,41 +5349,41 @@ msgid ""
 "ConstrainedSketch object can define either an open or closed profile."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:14 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:12 of
 msgid ""
 "Check `BaseShellExtrude on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-baseshellextrudepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:19 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:17 of
 msgid ""
 "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
 " specifying the shape to be extruded."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:22 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:20 of
 msgid "A Float specifying the extrusion depth. Possible values are Floats > 0."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:29
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:29
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:52
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:62
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:50
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:62
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:50
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:62 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:27
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:27
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:50
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:60
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:48
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:60
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:48
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:60 of
 msgid "**draftAngle**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:25
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:25
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:48
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:58
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:46
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:58
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:46
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:58 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:23
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:23
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:46
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:56
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:44
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:56
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:44
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:56 of
 msgid ""
 "A Float specifying the draft angle in degrees. Possible values are -90.0 "
 "≤ **draftAngle** ≤ 90.0. By convention, for a positive draft angle an "
@@ -5393,30 +5393,30 @@ msgid ""
 "mutually exclusive."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:37
-#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:30
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:37
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:30
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:60
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:43
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:70
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:58
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:45
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:70
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:58
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:44
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:70 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:35
+#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:28
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:35
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:28
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:58
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:41
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:68
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:56
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:43
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:68
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:56
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:42
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:68 of
 msgid "**pitch**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:32
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:32
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:55
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:65
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:53
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:65
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:53
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:65 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:30
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:30
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:53
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:63
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:51
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:63
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:51
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:63 of
 msgid ""
 "A Float specifying the pitch. The pitch is the distance traveled along "
 "the axial direction by the sketch when the sketch has completed one full "
@@ -5427,19 +5427,19 @@ msgid ""
 "and **pitch** are mutually exclusive."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:45
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:54
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:56
-#: abaqus.Part.PartFeature.PartFeature.CoverEdges:31
-#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:33 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:43
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:52
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:54
+#: abaqus.Part.PartFeature.PartFeature.CoverEdges:29
+#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:31 of
 msgid ":obj:`Feature`"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:42
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:42
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:53
-#: abaqus.Part.PartFeature.PartFeature.CoverEdges:28
-#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:30 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:40
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:40
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:51
+#: abaqus.Part.PartFeature.PartFeature.CoverEdges:26
+#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:28 of
 msgid "A :py:class:`~abaqus.Feature.Feature.Feature` object."
 msgstr ""
 
@@ -5451,8 +5451,8 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:58
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:69 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:56
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:67 of
 msgid ":obj:`RangeError`"
 msgstr ""
 
@@ -5464,39 +5464,39 @@ msgid ""
 "an axis of revolution. The axis is defined by a single construction line."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:15 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:13 of
 msgid ""
 "Check `BaseShellRevolve on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-baseshellrevolvepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:20
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:20 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:18
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:18 of
 msgid ""
 "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
 " specifying the shape to be revolved."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:24
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:24
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:37
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:35
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:34 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:22
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:22
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:35
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:33
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:32 of
 msgid "**angle**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:23 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:21 of
 msgid ""
 "A Float specifying the revolve angle in degrees. Possible values are 0 ≤ "
 "**angle** ≤ 360.Note:If **pitch** >> 0, there is no upper limit for "
 "**angle**."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:27
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:27
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:40
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:42
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:41 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:25
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:25
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:38
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:40
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:39 of
 msgid ""
 "A Float specifying the pitch. The pitch is the distance traveled along "
 "the axial direction, measured between corresponding points on the sketch "
@@ -5505,19 +5505,19 @@ msgid ""
 "normal revolve."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:35
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:35
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:48
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:50
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:49 of
-msgid "**flipRevolveDirection**"
-msgstr ""
-
 #: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:33
 #: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:33
 #: abaqus.Part.PartFeature.PartFeature.CutRevolve:46
 #: abaqus.Part.PartFeature.PartFeature.ShellRevolve:48
 #: abaqus.Part.PartFeature.PartFeature.SolidRevolve:47 of
+msgid "**flipRevolveDirection**"
+msgstr ""
+
+#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:31
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:31
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:44
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:46
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:45 of
 msgid ""
 "A Boolean specifying whether to override the direction of feature "
 "creation. If **flipRevolveDirection** = OFF, the default direction of "
@@ -5525,19 +5525,19 @@ msgid ""
 "direction is reversed. The default value is OFF."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:41
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:41
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:54
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:56
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:55 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:39
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:39
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:52
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:54
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:53 of
 msgid "**flipPitchDirection**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:38
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:38
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:51
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:53
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:52 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:36
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:36
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:49
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:51
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:50 of
 msgid ""
 "A Boolean specifying whether to override the direction of translation. If"
 " **flipPitchDirection** = OFF, the direction of translation is given by "
@@ -5545,19 +5545,19 @@ msgid ""
 "translation direction is reversed. The default value is OFF."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:48
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:48
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:61
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:63
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:62 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:46
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:46
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:59
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:61
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:60 of
 msgid "**moveSketchNormalToPath**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:44
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:44
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:57
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:59
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:58 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:42
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:42
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:55
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:57
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:56 of
 msgid ""
 "A Boolean specifying whether to rotate the sketch so that it is normal to"
 " the path of revolution when using the **pitch** option. If "
@@ -5577,29 +5577,29 @@ msgid ""
 "perpendicular to the path. No checks are made for self-intersection."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellSweep:16 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellSweep:14 of
 msgid ""
 "Check `BaseShellSweep on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-baseshellsweeppyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellSweep:21 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellSweep:19 of
 msgid ""
 "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
 " specifying the section to be swept."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellSweep:24
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:24
-#: abaqus.Part.PartFeature.PartFeature.BlendFaces:35
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:23
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:23
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:23 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellSweep:22
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:22
+#: abaqus.Part.PartFeature.PartFeature.BlendFaces:33
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:21
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:21
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:21 of
 msgid "**path**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseShellSweep:24
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:24 of
+#: abaqus.Part.PartFeature.PartFeature.BaseShellSweep:22
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:22 of
 msgid ""
 "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
 " specifying the path of the sweep."
@@ -5612,19 +5612,19 @@ msgid ""
 "ConstrainedSketch object must define a closed profile."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:14 of
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:12 of
 msgid ""
 "Check `BaseSolidExtrude on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-basesolidextrudepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:19 of
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:17 of
 msgid ""
 "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
 " specifying the plane shape to be extruded."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:22 of
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:20 of
 msgid ""
 "A Float specifying the extrusion depth. Possible values are 10-5 ≤ "
 "**depth** ≤ 105."
@@ -5638,13 +5638,13 @@ msgid ""
 "revolution. The axis is defined by a single construction line."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:15 of
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:13 of
 msgid ""
 "Check `BaseSolidRevolve on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-basesolidrevolvepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:23 of
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:21 of
 msgid ""
 "A Float specifying the revolve angle in degrees. Possible values are 10-4"
 " ≤ **angle** ≤ 360.Note:If **pitch** >>0, there is no upper limit for "
@@ -5661,57 +5661,57 @@ msgid ""
 " path. No checks are made for self-intersection."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:16 of
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:14 of
 msgid ""
 "Check `BaseSolidSweep on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-basesolidsweeppyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:21 of
+#: abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:19 of
 msgid ""
 "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
 " specifying the profile to be swept."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BaseWire:13 of
+#: abaqus.Part.PartFeature.PartFeature.BaseWire:11 of
 msgid ""
 "Check `BaseWire on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-basewirepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BlendFaces:13 of
+#: abaqus.Part.PartFeature.PartFeature.BlendFaces:11 of
 msgid ""
 "Check `BlendFaces on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-blendfacespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BlendFaces:19 of
+#: abaqus.Part.PartFeature.PartFeature.BlendFaces:17 of
 msgid "**side1**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BlendFaces:18 of
+#: abaqus.Part.PartFeature.PartFeature.BlendFaces:16 of
 msgid ""
 "A sequence of Edge objects specifying one side of the blend. The edges "
 "must form a continuous chain without branches."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BlendFaces:23 of
+#: abaqus.Part.PartFeature.PartFeature.BlendFaces:21 of
 msgid "**side2**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BlendFaces:22 of
+#: abaqus.Part.PartFeature.PartFeature.BlendFaces:20 of
 msgid ""
 "A sequence of Edge or Face objects specifying the second side of the "
 "blend. If **side2** contains Edge objects then they must form a "
 "continuous chain without branches."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BlendFaces:31
-#: abaqus.Part.PartFeature.PartFeature.ConvertToPrecise:19 of
+#: abaqus.Part.PartFeature.PartFeature.BlendFaces:29
+#: abaqus.Part.PartFeature.PartFeature.ConvertToPrecise:17 of
 msgid "**method**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BlendFaces:26 of
+#: abaqus.Part.PartFeature.PartFeature.BlendFaces:24 of
 msgid ""
 "A SymbolicConstant indicating a method for creating blends. This argument"
 " is a required argument if **side2** contains Edge object and it is "
@@ -5722,7 +5722,7 @@ msgid ""
 "two sides along a specified path."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.BlendFaces:34 of
+#: abaqus.Part.PartFeature.PartFeature.BlendFaces:32 of
 msgid ""
 "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object that connects "
 "**side1** to **side2** and specifies the path for creating the blend. "
@@ -5730,43 +5730,43 @@ msgid ""
 "ignored."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Chamfer:13 of
+#: abaqus.Part.PartFeature.PartFeature.Chamfer:11 of
 msgid ""
 "Check `Chamfer on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-chamferpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Chamfer:18 of
+#: abaqus.Part.PartFeature.PartFeature.Chamfer:16 of
 msgid "**length**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Chamfer:18 of
+#: abaqus.Part.PartFeature.PartFeature.Chamfer:16 of
 msgid "A Float specifying the length of the chamfer."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Chamfer:21
-#: abaqus.Part.PartFeature.PartFeature.CoverEdges:19
-#: abaqus.Part.PartFeature.PartFeature.MergeEdges:18
-#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:21
-#: abaqus.Part.PartFeature.PartFeature.RepairInvalidEdges:19
-#: abaqus.Part.PartFeature.PartFeature.RepairSmallEdges:19
-#: abaqus.Part.PartFeature.PartFeature.Round:23
-#: abaqus.Part.PartFeature.PartFeature.Stitch:19
-#: abaqus.Part.PartFeature.PartFeature.WireFromEdge:18 of
+#: abaqus.Part.PartFeature.PartFeature.Chamfer:19
+#: abaqus.Part.PartFeature.PartFeature.CoverEdges:17
+#: abaqus.Part.PartFeature.PartFeature.MergeEdges:16
+#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:19
+#: abaqus.Part.PartFeature.PartFeature.RepairInvalidEdges:17
+#: abaqus.Part.PartFeature.PartFeature.RepairSmallEdges:17
+#: abaqus.Part.PartFeature.PartFeature.Round:21
+#: abaqus.Part.PartFeature.PartFeature.Stitch:17
+#: abaqus.Part.PartFeature.PartFeature.WireFromEdge:16 of
 msgid "**edgeList**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Chamfer:21 of
+#: abaqus.Part.PartFeature.PartFeature.Chamfer:19 of
 msgid "A sequence of Edge objects specifying the edges to chamfer."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ConvertToPrecise:12 of
+#: abaqus.Part.PartFeature.PartFeature.ConvertToPrecise:10 of
 msgid ""
 "Check `ConvertToPrecise on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-converttoprecisepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ConvertToPrecise:17 of
+#: abaqus.Part.PartFeature.PartFeature.ConvertToPrecise:15 of
 msgid ""
 "A SymbolicConstant specifying the method to be used to convert the part "
 "to precise. Possible values are RECOMPUTE_GEOMETRY and TIGHTEN_GAPS. The "
@@ -5781,163 +5781,163 @@ msgid ""
 "vertices."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CoverEdges:14 of
+#: abaqus.Part.PartFeature.PartFeature.CoverEdges:12 of
 msgid ""
 "Check `CoverEdges on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-coveredgespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CoverEdges:19 of
+#: abaqus.Part.PartFeature.PartFeature.CoverEdges:17 of
 msgid "A sequence of Edge objects specifying the edges that bound the new face."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CoverEdges:23 of
+#: abaqus.Part.PartFeature.PartFeature.CoverEdges:21 of
 msgid "**tryAnalytical**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CoverEdges:22 of
+#: abaqus.Part.PartFeature.PartFeature.CoverEdges:20 of
 msgid ""
 "A Boolean specifying whether the newly created face should be analytical "
 "or not. The default is False."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CoverEdges:36
-#: abaqus.Part.PartFeature.PartFeature.CoverEdges:39 of
+#: abaqus.Part.PartFeature.PartFeature.CoverEdges:34
+#: abaqus.Part.PartFeature.PartFeature.CoverEdges:37 of
 msgid "Parterror: :obj:`Cannot` :obj:`find` :obj:`a` :obj:`closed` :obj:`loop`"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CoverEdges:36 of
+#: abaqus.Part.PartFeature.PartFeature.CoverEdges:34 of
 msgid "If the given boundary is not a closed loop."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CoverEdges:39 of
+#: abaqus.Part.PartFeature.PartFeature.CoverEdges:37 of
 msgid "If the given boundary contains a zero length component."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CoverEdges:50 of
+#: abaqus.Part.PartFeature.PartFeature.CoverEdges:48 of
 msgid "Parterror: :obj:`Cannot` :obj:`construct` :obj:`face` :obj:`geometry`"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CoverEdges:42 of
+#: abaqus.Part.PartFeature.PartFeature.CoverEdges:40 of
 msgid "If the underlying surface is too difficult to fit."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Cut:13 of
+#: abaqus.Part.PartFeature.PartFeature.Cut:11 of
 msgid ""
 "Check `Cut on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cutpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Cut:18
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:21
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:19
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:46
-#: abaqus.Part.PartFeature.PartFeature.Shell:19
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:19
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:21
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:46
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:19
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:20
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:46
-#: abaqus.Part.PartFeature.PartFeature.Wire:19 of
+#: abaqus.Part.PartFeature.PartFeature.Cut:16
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:19
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:17
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:44
+#: abaqus.Part.PartFeature.PartFeature.Shell:17
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:17
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:19
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:44
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:17
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:18
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:44
+#: abaqus.Part.PartFeature.PartFeature.Wire:17 of
 msgid "**sketchPlane**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Cut:18
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:21
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:19
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:20
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:20
-#: abaqus.Part.PartFeature.PartFeature.Mirror:17
-#: abaqus.Part.PartFeature.PartFeature.Shell:19
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:19
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:21
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:19
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:20 of
+#: abaqus.Part.PartFeature.PartFeature.Cut:16
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:19
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:17
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:18
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:18
+#: abaqus.Part.PartFeature.PartFeature.Mirror:15
+#: abaqus.Part.PartFeature.PartFeature.Shell:17
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:17
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:19
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:17
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:18 of
 msgid "A Datum plane object or a planar Face object."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Cut:22
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:25
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:23
-#: abaqus.Part.PartFeature.PartFeature.Shell:23
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:23
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:25
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:23
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:24
-#: abaqus.Part.PartFeature.PartFeature.Wire:23 of
+#: abaqus.Part.PartFeature.PartFeature.Cut:20
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:23
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:21
+#: abaqus.Part.PartFeature.PartFeature.Shell:21
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:21
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:23
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:21
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:22
+#: abaqus.Part.PartFeature.PartFeature.Wire:21 of
 msgid "**sketchPlaneSide**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Cut:21
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:24
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:22
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:23
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:23
-#: abaqus.Part.PartFeature.PartFeature.Shell:22
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:22
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:24
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:22
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:23
-#: abaqus.Part.PartFeature.PartFeature.Wire:22 of
+#: abaqus.Part.PartFeature.PartFeature.Cut:19
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:22
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:20
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:21
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:21
+#: abaqus.Part.PartFeature.PartFeature.Shell:20
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:20
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:22
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:20
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:21
+#: abaqus.Part.PartFeature.PartFeature.Wire:20 of
 msgid ""
 "A SymbolicConstant specifying the direction of feature creation. Possible"
 " values are SIDE1 and SIDE2."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Cut:26
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:29
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:27
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:50
-#: abaqus.Part.PartFeature.PartFeature.Shell:27
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:27
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:29
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:50
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:27
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:28
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:50
-#: abaqus.Part.PartFeature.PartFeature.Wire:27 of
+#: abaqus.Part.PartFeature.PartFeature.Cut:24
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:27
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:25
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:48
+#: abaqus.Part.PartFeature.PartFeature.Shell:25
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:25
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:27
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:48
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:25
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:26
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:48
+#: abaqus.Part.PartFeature.PartFeature.Wire:25 of
 msgid "**sketchUpEdge**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Cut:25
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:28
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:26
-#: abaqus.Part.PartFeature.PartFeature.Shell:26
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:26
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:28
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:26
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:27
-#: abaqus.Part.PartFeature.PartFeature.Wire:26 of
+#: abaqus.Part.PartFeature.PartFeature.Cut:23
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:26
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:24
+#: abaqus.Part.PartFeature.PartFeature.Shell:24
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:24
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:26
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:24
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:25
+#: abaqus.Part.PartFeature.PartFeature.Wire:24 of
 msgid ""
 "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis "
 "object specifying the vertical (*Y*) direction of the sketch."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Cut:29 of
+#: abaqus.Part.PartFeature.PartFeature.Cut:27 of
 msgid ""
 "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
 " specifying the planar cut."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Cut:33
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:33
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:31
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:55
-#: abaqus.Part.PartFeature.PartFeature.Shell:34
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:43
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:39
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:55
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:43
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:38
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:55
-#: abaqus.Part.PartFeature.PartFeature.Wire:34 of
+#: abaqus.Part.PartFeature.PartFeature.Cut:31
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:31
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:29
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:53
+#: abaqus.Part.PartFeature.PartFeature.Shell:32
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:41
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:37
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:53
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:41
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:36
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:53
+#: abaqus.Part.PartFeature.PartFeature.Wire:32 of
 msgid "**sketchOrientation**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Cut:32
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:32
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:30 of
+#: abaqus.Part.PartFeature.PartFeature.Cut:30
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:30
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:28 of
 msgid ""
 "A SymbolicConstant specifying the orientation of **sketchUpEdge** on the "
 "sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM."
@@ -5953,33 +5953,33 @@ msgid ""
 "all cut (if **depth** and **upToFace** are not specified)."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:16 of
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:14 of
 msgid ""
 "Check `CutExtrude on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cutextrudepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:36
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:30
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:30 of
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:34
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:28
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:28 of
 msgid ""
 "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
 " specifying the planar sketch to be extruded."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:39 of
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:37 of
 msgid ""
 "A Float specifying the extrusion depth. If **depth** is specified, the "
 "cut will be a blind cut. The default is to not specify a depth."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:45
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:39
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:39 of
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:43
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:37
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:37 of
 msgid "**upToFace**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:43 of
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:41 of
 msgid ""
 "A Face specifying the face up to which to cut. If **upToFace** is "
 "specified, the cut will be an up-to-face cut. The default is to not "
@@ -5987,15 +5987,15 @@ msgid ""
 "the cut will be a through-all cut."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:66
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:64
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:64 of
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:64
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:62
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:62 of
 msgid "**flipExtrudeDirection**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutExtrude:63
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:61
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:61 of
+#: abaqus.Part.PartFeature.PartFeature.CutExtrude:61
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:59
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:59 of
 msgid ""
 "A Boolean specifying whether to override the direction of feature "
 "creation. If the value is OFF, it means use the direction defined by the "
@@ -6011,20 +6011,20 @@ msgid ""
 "sections using a sequence of edges from the part or an EdgeArray."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutLoft:14 of
+#: abaqus.Part.PartFeature.PartFeature.CutLoft:12 of
 msgid ""
 "Check `CutLoft on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cutloftpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutLoft:23
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:23
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:22 of
+#: abaqus.Part.PartFeature.PartFeature.CutLoft:21
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:21
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:20 of
 msgid "**loftsections**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutLoft:19
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:19 of
+#: abaqus.Part.PartFeature.PartFeature.CutLoft:17
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:17 of
 msgid ""
 "A sequence of sequences of edges specifying the cross-sections to be "
 "lofted. Each outer sequence specifies a section through which the method "
@@ -6033,13 +6033,13 @@ msgid ""
 " form a simple closed profile and must not contain multiple loops."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutLoft:30
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:30
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:29 of
+#: abaqus.Part.PartFeature.PartFeature.CutLoft:28
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:28
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:27 of
 msgid "**startCondition**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutLoft:26 of
+#: abaqus.Part.PartFeature.PartFeature.CutLoft:24 of
 msgid ""
 "A SymbolicConstant specifying the tangent direction at the start section "
 "of the loft feature. Possible values are NONE, NORMAL, RADIAL, and "
@@ -6049,13 +6049,13 @@ msgid ""
 "conjunction with the **endCondition** argument."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutLoft:37
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:37
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:36 of
+#: abaqus.Part.PartFeature.PartFeature.CutLoft:35
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:35
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:34 of
 msgid "**endCondition**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutLoft:33 of
+#: abaqus.Part.PartFeature.PartFeature.CutLoft:31 of
 msgid ""
 "A SymbolicConstant specifying the tangent direction at the end section of"
 " the loft feature. Possible values are NONE, NORMAL, RADIAL, and "
@@ -6065,15 +6065,15 @@ msgid ""
 "conjunction with the **startCondition** argument."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutLoft:42
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:42
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:41 of
-msgid "**startTangent**"
-msgstr ""
-
 #: abaqus.Part.PartFeature.PartFeature.CutLoft:40
 #: abaqus.Part.PartFeature.PartFeature.ShellLoft:40
 #: abaqus.Part.PartFeature.PartFeature.SolidLoft:39 of
+msgid "**startTangent**"
+msgstr ""
+
+#: abaqus.Part.PartFeature.PartFeature.CutLoft:38
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:38
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:37 of
 msgid ""
 "A Float specifying the angle in degrees of the tangent with respect to "
 "the plane in which the start section lies. You must specify the "
@@ -6081,30 +6081,30 @@ msgid ""
 "values are 0.0 ≤ **startTangent** ≤ 180.0."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutLoft:47
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:47
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:46 of
-msgid "**startMagnitude**"
-msgstr ""
-
 #: abaqus.Part.PartFeature.PartFeature.CutLoft:45
 #: abaqus.Part.PartFeature.PartFeature.ShellLoft:45
 #: abaqus.Part.PartFeature.PartFeature.SolidLoft:44 of
+msgid "**startMagnitude**"
+msgstr ""
+
+#: abaqus.Part.PartFeature.PartFeature.CutLoft:43
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:43
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:42 of
 msgid ""
 "A Float specifying the magnitude of the **startTangent**. You must "
 "specify the **startMagnitude** argument if **startCondition** = "
 "SPECIFIED. Possible values are 0.0 << **startMagnitude** << 100.0."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutLoft:52
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:52
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:51 of
-msgid "**endTangent**"
-msgstr ""
-
 #: abaqus.Part.PartFeature.PartFeature.CutLoft:50
 #: abaqus.Part.PartFeature.PartFeature.ShellLoft:50
 #: abaqus.Part.PartFeature.PartFeature.SolidLoft:49 of
+msgid "**endTangent**"
+msgstr ""
+
+#: abaqus.Part.PartFeature.PartFeature.CutLoft:48
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:48
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:47 of
 msgid ""
 "A Float specifying the angle in degrees of the tangent with respect to "
 "the plane in which the end section lies. You must specify the "
@@ -6112,28 +6112,28 @@ msgid ""
 "values are 0.0 ≤ **endTangent** ≤ 180.0."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutLoft:57
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:57
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:56 of
-msgid "**endMagnitude**"
-msgstr ""
-
 #: abaqus.Part.PartFeature.PartFeature.CutLoft:55
 #: abaqus.Part.PartFeature.PartFeature.ShellLoft:55
 #: abaqus.Part.PartFeature.PartFeature.SolidLoft:54 of
+msgid "**endMagnitude**"
+msgstr ""
+
+#: abaqus.Part.PartFeature.PartFeature.CutLoft:53
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:53
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:52 of
 msgid ""
 "A Float specifying the magnitude of the **endTangent**. This argument is "
 "to be used when the **endCondition** argument has the value SPECIFIED. "
 "Possible values are 0.0 << **endMagnitude** << 100.0."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutLoft:65
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:75
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:74 of
+#: abaqus.Part.PartFeature.PartFeature.CutLoft:63
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:73
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:72 of
 msgid "**globalSmoothing**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutLoft:60 of
+#: abaqus.Part.PartFeature.PartFeature.CutLoft:58 of
 msgid ""
 "A Boolean specifying whether each path defined in the **paths** argument "
 "is applied locally or globally.If the path is applied locally, its effect"
@@ -6152,24 +6152,24 @@ msgid ""
 "and an axis of revolution."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:14 of
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:12 of
 msgid ""
 "Check `CutRevolve on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cutrevolvepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:34
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:32
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:31
-#: abaqus.Part.PartFeature.PartFeature.Wire:30 of
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:32
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:30
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:29
+#: abaqus.Part.PartFeature.PartFeature.Wire:28 of
 msgid ""
 "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
 " specifying the planar sketch to be revolved."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutRevolve:37
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:35
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:34 of
+#: abaqus.Part.PartFeature.PartFeature.CutRevolve:35
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:33
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:32 of
 msgid "A Float specifying the angle in degrees to be revolved."
 msgstr ""
 
@@ -6184,78 +6184,78 @@ msgid ""
 "planar Face. No checks are made for self-intersection."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:17 of
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:15 of
 msgid ""
 "Check `CutSweep on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cutsweeppyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:22
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:22
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:22 of
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:20
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:20
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:20 of
 msgid ""
 "Path may either be a ConstrainedSketch object or a sequence of Edge "
 "objects specifying the path of the sweep."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:27
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:27
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:27 of
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:25
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:25
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:25 of
 msgid "**profile**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:26
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:26 of
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:24
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:24 of
 msgid ""
 "Profile may either be a ConstrainedSketch object or a Face object "
 "specifying the section to be swept."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:31
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:31
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:31 of
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:29
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:29
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:29 of
 msgid "**pathPlane**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:30
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:30
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:30 of
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:28
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:28
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:28 of
 msgid ""
 "A Datum plane object or a planar Face object. Only required when path is "
 "a ConstrainedSketch object."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:35
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:35
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:35 of
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:33
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:33
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:33 of
 msgid "**pathUpEdge**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:34
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:34
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:34 of
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:32
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:32
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:32 of
 msgid ""
 "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis "
 "object specifying the vertical (*Y*) direction of the path sketch. Only "
 "required when path is a ConstrainedSketch object."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:40
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:40
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:40 of
-msgid "**pathOrientation**"
-msgstr ""
-
 #: abaqus.Part.PartFeature.PartFeature.CutSweep:38
 #: abaqus.Part.PartFeature.PartFeature.ShellSweep:38
 #: abaqus.Part.PartFeature.PartFeature.SolidSweep:38 of
+msgid "**pathOrientation**"
+msgstr ""
+
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:36
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:36
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:36 of
 msgid ""
 "A SymbolicConstant specifying the orientation of **pathUpEdge** on the "
 "sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM. Default value "
 "is RIGHT. Only required when path is a ConstrainedSketch object."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:43 of
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:41 of
 msgid ""
 "A Datum plane object or a planar Face object specifying the plane on "
 "which to sketch the profile. Not required when profile is a Face object. "
@@ -6264,33 +6264,33 @@ msgid ""
 "plane at the start of the path will be the sketchPlane."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:49
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:49
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:49 of
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:47
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:47
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:47 of
 msgid ""
 "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis "
 "object specifying the vertical (*Y*) direction of the profile sketch. "
 "Only required when profile is a ConstrainedSketch object."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:53
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:53
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:53 of
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:51
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:51
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:51 of
 msgid ""
 "A SymbolicConstant specifying the orientation of **sketchUpEdge** on the "
 "sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM. Default value "
 "is RIGHT. Only required when profile is a ConstrainedSketch object."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:76
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:76
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:76 of
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:74
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:74
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:74 of
 msgid "**profileNormal**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:73
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:73
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:73 of
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:71
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:71
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:71 of
 msgid ""
 "A Boolean specifying whether to keep the profile normal same as original "
 "or varying through out the sweep path. When **profileNormal** = OFF, the "
@@ -6299,15 +6299,15 @@ msgid ""
 "through out the sweep path. The default value is OFF."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:82
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:82
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:82 of
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:80
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:80
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:80 of
 msgid "**flipSweepDirection**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.CutSweep:79
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:79
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:79 of
+#: abaqus.Part.PartFeature.PartFeature.CutSweep:77
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:77
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:77 of
 msgid ""
 "A Boolean specifying whether to flip the direction in which sweep "
 "operation will be performed. When **flipSweepDirection** = OFF, sweep "
@@ -6324,17 +6324,17 @@ msgid ""
 "extended."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:14 of
+#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:12 of
 msgid ""
 "Check `ExtendFaces on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-extendfacespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:21 of
+#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:19 of
 msgid "**faces**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:19 of
+#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:17 of
 msgid ""
 "A sequence of Face objects specifying the faces to be extended. The faces"
 " cannot belong to the reference representation. The **faces** and "
@@ -6342,11 +6342,11 @@ msgid ""
 "specified."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:26 of
+#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:24 of
 msgid "**extendAlong**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:24 of
+#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:22 of
 msgid ""
 "A sequence of Edge objects specifying the edges where to extend the "
 "faces. Only free edges are considered. The interior edges will be "
@@ -6354,78 +6354,78 @@ msgid ""
 "exclusive. One of them must be specified."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:30
-#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:22 of
+#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:28
+#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:20 of
 msgid "**distance**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:29 of
+#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:27 of
 msgid ""
 "A Float indicating the distance to extend the faces along the edges. "
 "Either **distance**, **upToReferenceRep**, or **upToFaces** must be "
 "specified."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:34 of
+#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:32 of
 msgid "**upToFaces**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:33 of
+#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:31 of
 msgid ""
 "A sequence of Face objects specifying the faces that the selected faces "
 "should be extended up to."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:38 of
+#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:36 of
 msgid "**trimToExtendedTargetSurfaces**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:37 of
+#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:35 of
 msgid ""
 "A Boolean indicating that the surfaces of up to target faces should be "
 "extended before extending and trimming the selected faces. The default "
 "value is True."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:42 of
+#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:40 of
 msgid "**upToReferenceRep**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:41 of
+#: abaqus.Part.PartFeature.PartFeature.ExtendFaces:39 of
 msgid ""
 "A Boolean indicating that the selected faces should be extended along the"
 " selected edges and be trimmed along their intersection with the "
 "reference representation."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:12 of
+#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:10 of
 msgid ""
 "Check `FaceFromElementFaces on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facefromelementfacespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:17 of
+#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:15 of
 msgid "**elementFaces**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:17 of
+#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:15 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the "
 "collection of orphan element faces."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:21
-#: abaqus.Part.PartFeature.PartFeature.ReplaceFaces:22 of
+#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:19
+#: abaqus.Part.PartFeature.PartFeature.ReplaceFaces:20 of
 msgid "**stitch**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:20 of
+#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:18 of
 msgid ""
 "A Boolean specifying whether the created geometry face should be stitched"
 " with existing geometry faces. Default value is TRUE."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:24 of
+#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:22 of
 msgid ""
 "A Float indicating the maximum gap to be stitched. The value should be "
 "smaller than the minimum feature size and bigger than the maximum gap "
@@ -6435,22 +6435,22 @@ msgid ""
 "stitching."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:32 of
+#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:30 of
 msgid "**analyticFitTolerance**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:31 of
+#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:29 of
 msgid ""
 "A Float indicating the analytical surface fitting tolerance. If "
 "analytical tolerance is not provided then default value of 0.015 will be "
 "used for analytical surface fitting."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:36 of
+#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:34 of
 msgid "**associateFace**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:35 of
+#: abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:33 of
 msgid ""
 "A Boolean specifying whether the created geometry face should be "
 "associated with the mesh. Default value is TRUE."
@@ -6464,87 +6464,87 @@ msgid ""
 " from two non-parallel straight edges by the given distances."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:15 of
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:13 of
 msgid ""
 "Check `HoleBlindFromEdges on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-holeblindfromedgespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:20
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:20 of
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:18
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:18 of
 msgid "**plane**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:24
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:24 of
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:22
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:22 of
 msgid "**planeSide**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:27
-#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:20
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:27 of
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:25
+#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:18
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:25 of
 msgid "**diameter**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:27
-#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:20
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:27 of
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:25
+#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:18
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:25 of
 msgid "A Float specifying the diameter of the hole."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:30
-#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:23
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:30 of
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:28
+#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:21
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:28 of
 msgid "**edge1**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:30
-#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:23
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:30 of
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:28
+#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:21
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:28 of
 msgid ""
 "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge"
 " from which **distance1** is measured."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:33
-#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:26
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:33 of
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:31
+#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:24
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:31 of
 msgid "**distance1**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:33
-#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:26
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:33 of
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:31
+#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:24
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:31 of
 msgid "A Float specifying the offset from **edge1**."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:36
-#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:29
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:36 of
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:34
+#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:27
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:34 of
 msgid "**edge2**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:36
-#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:29
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:36 of
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:34
+#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:27
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:34 of
 msgid ""
 "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge"
 " from which **distance2** is measured."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:39
-#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:32
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:39 of
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:37
+#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:30
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:37 of
 msgid "**distance2**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:39
-#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:32
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:39 of
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:37
+#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:30
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:37 of
 msgid "A Float specifying the offset from **edge2**."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:42 of
+#: abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:40 of
 msgid "A Float specifying the depth of the hole."
 msgstr ""
 
@@ -6556,7 +6556,7 @@ msgid ""
 "offset from two non-parallel straight edges by the given distances."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:15 of
+#: abaqus.Part.PartFeature.PartFeature.HoleFromEdges:13 of
 msgid ""
 "Check `HoleFromEdges on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-holefromedgespyc.htm?contextscope=all>`__."
@@ -6570,114 +6570,114 @@ msgid ""
 " non-parallel straight edges by the given distances."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:15 of
+#: abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:13 of
 msgid ""
 "Check `HoleThruAllFromEdges on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-holethruallfromedgespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.MergeEdges:13 of
+#: abaqus.Part.PartFeature.PartFeature.MergeEdges:11 of
 msgid ""
 "Check `MergeEdges on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mergeedgespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.MergeEdges:18 of
+#: abaqus.Part.PartFeature.PartFeature.MergeEdges:16 of
 msgid "A sequence of Edge objects specifying the edges to be merged."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.MergeEdges:23 of
+#: abaqus.Part.PartFeature.PartFeature.MergeEdges:21 of
 msgid "**extendSelection**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.MergeEdges:21 of
+#: abaqus.Part.PartFeature.PartFeature.MergeEdges:19 of
 msgid ""
 "A Boolean specifying whether the user selection needs to be extended to "
 "include edges till branching occurs. Branching is said to occur when the "
 "vertex of an edge is shared by more than two edges."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Mirror:12 of
+#: abaqus.Part.PartFeature.PartFeature.Mirror:10 of
 msgid ""
 "Check `Mirror on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mirrorpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Mirror:17 of
+#: abaqus.Part.PartFeature.PartFeature.Mirror:15 of
 msgid "**mirrorPlane**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Mirror:20 of
+#: abaqus.Part.PartFeature.PartFeature.Mirror:18 of
 msgid "**keepOriginal**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Mirror:20 of
+#: abaqus.Part.PartFeature.PartFeature.Mirror:18 of
 msgid ""
 "A boolean specifying whether or not the original part geometry should be "
 "retained."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Mirror:24
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:68
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:79
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:67
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:86
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:68
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:78
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:66
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:86 of
+#: abaqus.Part.PartFeature.PartFeature.Mirror:22
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:66
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:77
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:65
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:84
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:66
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:76
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:64
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:84 of
 msgid "**keepInternalBoundaries**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Mirror:23
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:67
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:78
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:66
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:85
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:67
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:77
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:65
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:85 of
+#: abaqus.Part.PartFeature.PartFeature.Mirror:21
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:65
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:76
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:64
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:83
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:65
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:75
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:63
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:83 of
 msgid ""
 "A Boolean specifying whether internal boundaries will be retained. The "
 "default value is OFF."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:12 of
+#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:10 of
 msgid ""
 "Check `OffsetFaces on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-offsetfacespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:17 of
+#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:15 of
 msgid ""
 "A sequence of Face objects specifying the faces that will be offset. The "
 "faces may belong to the part or to the reference representation "
 "associated with the part."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:21 of
+#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:19 of
 msgid ""
 "A Float indicating the distance to offset the faces. Either **distance** "
 "or **targetFaces** must be specified."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:27 of
+#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:25 of
 msgid "**targetFaces**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:25 of
+#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:23 of
 msgid ""
 "A sequence of Face objects whose distance to the faces argument together "
 "with the **targetFacesMethod** determines the distance to offset the "
 "faces. Either **distance** or **targetFaces** must be specified."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:36 of
+#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:34 of
 msgid "**targetFacesMethod**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:30 of
+#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:28 of
 msgid ""
 "A SymbolicConstant indicating how to calculate the distance to offset. It"
 " can have one of the following values:HALF_OF_AVERAGE: Offset the faces "
@@ -6689,79 +6689,79 @@ msgid ""
 "farthest point on the selected target faces."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:40 of
+#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:38 of
 msgid "**fractionDistance**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:39 of
+#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:37 of
 msgid ""
 "A Float indicating the fraction of the distance to the closest or the "
 "farthest point on the target faces. Its default value is 0.5."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:44 of
+#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:42 of
 msgid "**trimToReferenceRep**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:43 of
+#: abaqus.Part.PartFeature.PartFeature.OffsetFaces:41 of
 msgid ""
 "A Boolean indicating whether to extend the offset faces and trim them "
 "along their intersection with the reference representation."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveCells:12 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveCells:10 of
 msgid ""
 "Check `RemoveCells on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-removecellspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveCells:17 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveCells:15 of
 msgid "A sequence of Cell objects specifying the cells to remove."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveCells:25 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveCells:23 of
 msgid ":obj:`Boolean`"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveCells:22 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveCells:20 of
 msgid "A Boolean value."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveCells:38 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveCells:36 of
 msgid ""
 "Parterror: :obj:`ConstrainedSketchGeometry` :obj:`that` :obj:`is` "
 ":obj:`not` 3-dimensional :obj:`does` :obj:`not` :obj:`contain` "
 ":obj:`cells`"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveCells:30 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveCells:28 of
 msgid ""
 "If the intended volume to be turned into a shell entity is not three-"
 "dimensional."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveFaces:12 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveFaces:10 of
 msgid ""
 "Check `RemoveFaces on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-removefacespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveFaces:17
-#: abaqus.Part.PartFeature.PartFeature.RemoveFacesAndStitch:18 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveFaces:15
+#: abaqus.Part.PartFeature.PartFeature.RemoveFacesAndStitch:16 of
 msgid "A sequence of Face objects specifying the faces to remove."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveFaces:21 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveFaces:19 of
 msgid "**deleteCells**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveFaces:20 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveFaces:18 of
 msgid ""
 "A Boolean specifying whether all cells are to be deleted when the faces "
 "are removed. The default value is False."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveFacesAndStitch:13 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveFacesAndStitch:11 of
 msgid ""
 "Check `RemoveFacesAndStitch on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-removefacesandstitchpyc.htm?contextscope=all>`__."
@@ -6773,44 +6773,44 @@ msgid ""
 "entity. One of the two arguments is required."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:13 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:11 of
 msgid ""
 "Check `RemoveRedundantEntities on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-removeredundantentitiespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:18
-#: abaqus.Part.PartFeature.PartFeature.Round:28 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:16
+#: abaqus.Part.PartFeature.PartFeature.Round:26 of
 msgid "**vertexList**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:18 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:16 of
 msgid ""
 "A sequence of ConstrainedSketchVertex objects specifying the vertices to "
 "be removed."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:21 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:19 of
 msgid "A sequence of Edge objects specifying the edges to be removed."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:25 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:23 of
 msgid "**removeEdgeVertices**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:24 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:22 of
 msgid ""
 "A Boolean specifying whether the vertices of the redundant edges need to "
 "be removed. The default is True."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:46 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:44 of
 msgid ""
 "Parterror: :data:`python:None` :obj:`of` :obj:`the` :obj:`selected` "
 ":obj:`entities` :obj:`are` :obj:`redundant`"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:38 of
+#: abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:36 of
 msgid "If the selected entity is not a redundant entity."
 msgstr ""
 
@@ -6823,14 +6823,14 @@ msgid ""
 "of the selected faces."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RepairFaceNormals:15 of
+#: abaqus.Part.PartFeature.PartFeature.RepairFaceNormals:13 of
 msgid ""
 "Check `RepairFaceNormals on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repairfacenormalspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RepairFaceNormals:20
-#: abaqus.Part.PartFeature.PartFeature.RepairSmallFaces:19 of
+#: abaqus.Part.PartFeature.PartFeature.RepairFaceNormals:18
+#: abaqus.Part.PartFeature.PartFeature.RepairSmallFaces:17 of
 msgid "A sequence of Face objects."
 msgstr ""
 
@@ -6841,14 +6841,14 @@ msgid ""
 "behind invalid edges that could not be repaired."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RepairInvalidEdges:14 of
+#: abaqus.Part.PartFeature.PartFeature.RepairInvalidEdges:12 of
 msgid ""
 "Check `RepairInvalidEdges on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repairinvalidedgespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RepairInvalidEdges:19
-#: abaqus.Part.PartFeature.PartFeature.RepairSmallEdges:19 of
+#: abaqus.Part.PartFeature.PartFeature.RepairInvalidEdges:17
+#: abaqus.Part.PartFeature.PartFeature.RepairSmallEdges:17 of
 msgid "A sequence of Edge objects."
 msgstr ""
 
@@ -6859,37 +6859,37 @@ msgid ""
 "out at the specified points and the smaller of the two faces is removed."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RepairSliver:14 of
+#: abaqus.Part.PartFeature.PartFeature.RepairSliver:12 of
 msgid ""
 "Check `RepairSliver on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repairsliverpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RepairSliver:19 of
+#: abaqus.Part.PartFeature.PartFeature.RepairSliver:17 of
 msgid "**face**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RepairSliver:19 of
+#: abaqus.Part.PartFeature.PartFeature.RepairSliver:17 of
 msgid ""
 "A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face "
 "on which the sliver is located."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RepairSliver:22
-#: abaqus.Part.PartFeature.PartFeature.RepairSliver:26 of
+#: abaqus.Part.PartFeature.PartFeature.RepairSliver:20
+#: abaqus.Part.PartFeature.PartFeature.RepairSliver:24 of
 msgid ""
 "A point specifying the location for partition creation. It can be a "
 "ConstrainedSketchVertex object, an Interesting Point or three coordinates"
 " specifying the point on an edge of the **face**."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RepairSliver:31
-#: abaqus.Part.PartFeature.PartFeature.RepairSmallEdges:23
-#: abaqus.Part.PartFeature.PartFeature.RepairSmallFaces:23 of
+#: abaqus.Part.PartFeature.PartFeature.RepairSliver:29
+#: abaqus.Part.PartFeature.PartFeature.RepairSmallEdges:21
+#: abaqus.Part.PartFeature.PartFeature.RepairSmallFaces:21 of
 msgid "**toleranceChecks**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RepairSliver:30 of
+#: abaqus.Part.PartFeature.PartFeature.RepairSliver:28 of
 msgid ""
 "A Boolean specifying whether to use internal tolerance checks to restrict"
 " the size of the sliver face being removed. The default is True."
@@ -6903,13 +6903,13 @@ msgid ""
 "removed."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RepairSmallEdges:14 of
+#: abaqus.Part.PartFeature.PartFeature.RepairSmallEdges:12 of
 msgid ""
 "Check `RepairSmallEdges on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repairsmalledgespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RepairSmallEdges:22 of
+#: abaqus.Part.PartFeature.PartFeature.RepairSmallEdges:20 of
 msgid ""
 "A Boolean specifying whether to use internal tolerance checks to restrict"
 " the size of the edges being removed. The default is True."
@@ -6922,13 +6922,13 @@ msgid ""
 "method might leave behind some small faces that cannot be removed."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RepairSmallFaces:14 of
+#: abaqus.Part.PartFeature.PartFeature.RepairSmallFaces:12 of
 msgid ""
 "Check `RepairSmallFaces on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repairsmallfacespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.RepairSmallFaces:22 of
+#: abaqus.Part.PartFeature.PartFeature.RepairSmallFaces:20 of
 msgid ""
 "A Boolean specifying whether to use internal tolerance checks to restrict"
 " the size of the faces being removed. The default is True."
@@ -6940,37 +6940,37 @@ msgid ""
 " face is selected, that alone is replaced with a new face."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ReplaceFaces:13 of
+#: abaqus.Part.PartFeature.PartFeature.ReplaceFaces:11 of
 msgid ""
 "Check `ReplaceFaces on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-replacefacespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ReplaceFaces:18 of
+#: abaqus.Part.PartFeature.PartFeature.ReplaceFaces:16 of
 msgid "A sequence of Face objects to be replaced."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ReplaceFaces:21 of
+#: abaqus.Part.PartFeature.PartFeature.ReplaceFaces:19 of
 msgid ""
 "A Boolean specifying whether the newly created face needs to be stitched "
 "to the existing geometry. The default is True."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Round:13 of
+#: abaqus.Part.PartFeature.PartFeature.Round:11 of
 msgid ""
 "Check `Round on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-roundpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Round:18 of
+#: abaqus.Part.PartFeature.PartFeature.Round:16 of
 msgid "**radius**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Round:18 of
+#: abaqus.Part.PartFeature.PartFeature.Round:16 of
 msgid "A Float specifying the radius of the fillets."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Round:21 of
+#: abaqus.Part.PartFeature.PartFeature.Round:19 of
 msgid ""
 "A sequence of Edge objects. Solid and Shell edges of a part can be "
 "rounded. The operation will fail for non-manifold edges. The **edgeList**"
@@ -6978,7 +6978,7 @@ msgid ""
 " specified."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Round:26 of
+#: abaqus.Part.PartFeature.PartFeature.Round:24 of
 msgid ""
 "A sequence of ConstrainedSketchVertex objects. Vertices that are "
 "connected to two wire edges can be rounded. The operation will fail for a"
@@ -6993,18 +6993,18 @@ msgid ""
 "object must define a closed profile."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Shell:14 of
+#: abaqus.Part.PartFeature.PartFeature.Shell:12 of
 msgid ""
 "Check `Shell on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shellpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Shell:33
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:42
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:38
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:42
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:37
-#: abaqus.Part.PartFeature.PartFeature.Wire:33 of
+#: abaqus.Part.PartFeature.PartFeature.Shell:31
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:40
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:36
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:40
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:35
+#: abaqus.Part.PartFeature.PartFeature.Wire:31 of
 msgid ""
 "A SymbolicConstant specifying the orientation of **sketchUpEdge** on the "
 "sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM. The default "
@@ -7019,22 +7019,22 @@ msgid ""
 "profile."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:14 of
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:12 of
 msgid ""
 "Check `ShellExtrude on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shellextrudepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:33
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:33 of
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:31
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:31 of
 msgid ""
 "A Float specifying the extrusion depth. The default is to not specify a "
 "depth. Either **depth** or **upToFace** must be used to define the "
 "extrusion depth."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:37
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:37 of
+#: abaqus.Part.PartFeature.PartFeature.ShellExtrude:35
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:35 of
 msgid ""
 "A Face specifying the face up to which to extrude. If **upToFace** is "
 "specified, the extrusion will be an up-to-face extrusion. The default is "
@@ -7049,14 +7049,14 @@ msgid ""
 "sections using a sequence of edges from the part or an EdgeArray."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:14 of
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:12 of
 msgid ""
 "Check `ShellLoft on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shellloftpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:26
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:25 of
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:24
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:23 of
 msgid ""
 "A SymbolicConstant specifying the tangent direction at the start section "
 "of the loft feature. Possible values are NONE, NORMAL, RADIAL and "
@@ -7066,8 +7066,8 @@ msgid ""
 "conjunction with the **endCondition** argument."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:33
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:32 of
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:31
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:30 of
 msgid ""
 "A SymbolicConstant specifying the tangent direction at the end section of"
 " the loft feature. Possible values are NONE, NORMAL, RADIAL and "
@@ -7077,13 +7077,13 @@ msgid ""
 "conjunction with the **startCondition** argument."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:67
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:66 of
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:65
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:64 of
 msgid "**paths**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:60
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:59 of
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:58
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:57 of
 msgid ""
 "A sequence of sequences of edges that pass through each section in the "
 "loft feature. Each sequence specifies a path followed by the face or an "
@@ -7096,8 +7096,8 @@ msgid ""
 "conjunction with the **startCondition** and **endCondition** arguments."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ShellLoft:70
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:69 of
+#: abaqus.Part.PartFeature.PartFeature.ShellLoft:68
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:67 of
 msgid ""
 "A Boolean specifying whether each path defined in the **paths** argument "
 "is applied locally or globally.If the path is applied locally, its effect"
@@ -7118,7 +7118,7 @@ msgid ""
 "SolidExtrude."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:16 of
+#: abaqus.Part.PartFeature.PartFeature.ShellRevolve:14 of
 msgid ""
 "Check `ShellRevolve on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shellrevolvepyc.htm?contextscope=all>`__."
@@ -7135,20 +7135,20 @@ msgid ""
 "checks are made for self-intersection."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:17 of
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:15 of
 msgid ""
 "Check `ShellSweep on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shellsweeppyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:26 of
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:24 of
 msgid ""
 "Profile may either be a ConstrainedSketch object or a sequence of Edge "
 "objects specifying the section to be swept."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.ShellSweep:43
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:43 of
+#: abaqus.Part.PartFeature.PartFeature.ShellSweep:41
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:41 of
 msgid ""
 "A Datum plane object or a planar Face object specifying the plane on "
 "which to sketch the profile. Not required when profile is a Face object. "
@@ -7164,7 +7164,7 @@ msgid ""
 " The ConstrainedSketch object must define a closed profile."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:14 of
+#: abaqus.Part.PartFeature.PartFeature.SolidExtrude:12 of
 msgid ""
 "Check `SolidExtrude on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-solidextrudepyc.htm?contextscope=all>`__."
@@ -7177,13 +7177,13 @@ msgid ""
 "using a sequence of edges from the part or an EdgeArray."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:14 of
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:12 of
 msgid ""
 "Check `SolidLoft on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-solidloftpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.SolidLoft:19 of
+#: abaqus.Part.PartFeature.PartFeature.SolidLoft:17 of
 msgid ""
 "A sequence of sequences of edges specifying the cross-sections to be "
 "lofted. Each outer sequence specifies a section through which Abaqus will"
@@ -7200,7 +7200,7 @@ msgid ""
 " revolution. The axis is defined by a single construction line."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:15 of
+#: abaqus.Part.PartFeature.PartFeature.SolidRevolve:13 of
 msgid ""
 "Check `SolidRevolve on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-solidrevolvepyc.htm?contextscope=all>`__."
@@ -7217,7 +7217,7 @@ msgid ""
 "plane or a planar Face. No checks are made for self-intersection."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.SolidSweep:17 of
+#: abaqus.Part.PartFeature.PartFeature.SolidSweep:15 of
 msgid ""
 "Check `SolidSweep on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-solidsweeppyc.htm?contextscope=all>`__."
@@ -7231,17 +7231,17 @@ msgid ""
 "specified, a value of 1.0 will be used."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Stitch:14 of
+#: abaqus.Part.PartFeature.PartFeature.Stitch:12 of
 msgid ""
 "Check `Stitch on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-stitchpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Stitch:19 of
+#: abaqus.Part.PartFeature.PartFeature.Stitch:17 of
 msgid "A sequence of Edge objects specifying the edges that need to be stitched."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Stitch:22 of
+#: abaqus.Part.PartFeature.PartFeature.Stitch:20 of
 msgid ""
 "A Float indicating the maximum gap to be stitched. The value should be "
 "smaller than the minimum feature size and bigger than the maximum gap "
@@ -7256,25 +7256,25 @@ msgid ""
 "object must define a closed profile."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Wire:14 of
+#: abaqus.Part.PartFeature.PartFeature.Wire:12 of
 msgid ""
 "Check `Wire on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-wirepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.Wire:19 of
+#: abaqus.Part.PartFeature.PartFeature.Wire:17 of
 msgid ""
 "A Datum plane object or a planar Face object specifying the plane on "
 "which to sketch."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.WireFromEdge:13 of
+#: abaqus.Part.PartFeature.PartFeature.WireFromEdge:11 of
 msgid ""
 "Check `WireFromEdge on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-wirefromedgepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.WireFromEdge:18 of
+#: abaqus.Part.PartFeature.PartFeature.WireFromEdge:16 of
 msgid ""
 "A list of Edge objects specifying the edges from which the wire is to be "
 "created."
@@ -7287,18 +7287,18 @@ msgid ""
 "datum point, a vertex, an interesting point, or a tuple."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:14 of
+#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:12 of
 msgid ""
 "Check `WirePolyLine on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-wirepolylinepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:21
-#: abaqus.Part.PartFeature.PartFeature.WireSpline:21 of
+#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:19
+#: abaqus.Part.PartFeature.PartFeature.WireSpline:19 of
 msgid "**points**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:19 of
+#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:17 of
 msgid ""
 "A sequence of ConstrainedSketchVertex, Datum point, or InterestingPoint "
 "objects specifying the points through which the polyline wire will pass. "
@@ -7306,12 +7306,12 @@ msgid ""
 "at least two values in the sequence."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:29
-#: abaqus.Part.PartFeature.PartFeature.WireSpline:29 of
+#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:27
+#: abaqus.Part.PartFeature.PartFeature.WireSpline:27 of
 msgid "**mergeType**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:24 of
+#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:22 of
 msgid ""
 "A SymbolicConstant specifying the merge behavior of the wire with "
 "existing geometry. If **mergeType** is MERGE, Abaqus merges the wire into"
@@ -7322,11 +7322,11 @@ msgid ""
 "separately. The default value is IMPRINT."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:34 of
+#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:32 of
 msgid "**meshable**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:32 of
+#: abaqus.Part.PartFeature.PartFeature.WirePolyLine:30 of
 msgid ""
 "A Boolean specifying whether the wire should be available for selection "
 "in meshing operations. If **meshable** = OFF, the wire can be used for "
@@ -7340,13 +7340,13 @@ msgid ""
 "datum point, a vertex, an interesting point, or a tuple."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.WireSpline:14 of
+#: abaqus.Part.PartFeature.PartFeature.WireSpline:12 of
 msgid ""
 "Check `WireSpline on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-wiresplinepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.WireSpline:19 of
+#: abaqus.Part.PartFeature.PartFeature.WireSpline:17 of
 msgid ""
 "A sequence of ConstrainedSketchVertex, Datum point, or InterestingPoint "
 "objects specifying the points through which the spline wire will pass. "
@@ -7354,7 +7354,7 @@ msgid ""
 "at least two values in the sequence."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.WireSpline:24 of
+#: abaqus.Part.PartFeature.PartFeature.WireSpline:22 of
 msgid ""
 "A SymbolicConstant specifying the merge behavior of the wire with "
 "existing geometry. If **mergeType** is MERGE, Abaqus merges the wire into"
@@ -7365,11 +7365,11 @@ msgid ""
 "separately. The default value is IMPRINT."
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.WireSpline:36 of
+#: abaqus.Part.PartFeature.PartFeature.WireSpline:34 of
 msgid "**smoothClosedSpline**"
 msgstr ""
 
-#: abaqus.Part.PartFeature.PartFeature.WireSpline:32 of
+#: abaqus.Part.PartFeature.PartFeature.WireSpline:30 of
 msgid ""
 "A Boolean specifying the behavior of Abaqus when the points defining a "
 "spline wire form a closed loop (the start and end points are the same). "
@@ -7399,5 +7399,11 @@ msgstr ""
 #~ " PartFromNodesAndElements, PartFromOdb, "
 #~ "PartFromSection3DMeshByPlane, PartFromSubstructure, "
 #~ "Part2DGeomFrom2DMesh, PartFromSubstructure"
+#~ msgstr ""
+
+#~ msgid "This object can be accessed by:"
+#~ msgstr ""
+
+#~ msgid "This function can be accessed by:"
 #~ msgstr ""
 

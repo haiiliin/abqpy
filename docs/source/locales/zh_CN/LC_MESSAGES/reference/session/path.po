@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-13 16:08+0000\n"
+"POT-Creation-Date: 2022-09-14 09:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -962,11 +962,11 @@ msgstr ""
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:5
 #: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:5
 #: abaqus.PathAndProbe.PathSession.PathSession.Stream:5 of
-msgid "This function can be accessed by:"
+msgid "This function can be accessed by::"
 msgstr ""
 
-#: abaqus.PathAndProbe.Path.Path:14
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:12 of
+#: abaqus.PathAndProbe.Path.Path:12
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:10 of
 msgid ""
 "Check `Path on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pathpyc.htm?contextscope=all>`__."
@@ -983,42 +983,42 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:17
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:17
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:17
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:17
-#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:17
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:17 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:15
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:15
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:15
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:15
+#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:15
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:15 of
 msgid "**name**"
 msgstr ""
 
 #: ../../docstring abaqus.PathAndProbe.Path.Path.name:2
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:17 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:15 of
 msgid "A String specifying the repository key."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:21 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:19 of
 msgid "**type**"
 msgstr ""
 
 #: ../../docstring abaqus.PathAndProbe.Path.Path.type:2
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:20 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:18 of
 msgid ""
 "A SymbolicConstant specifying the type of path being created. Possible "
 "values are NODE_LIST, POINT_LIST, EDGE_LIST, CIRCUMFERENTIAL, and RADIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:44 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:42 of
 msgid "**expression**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:24 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:22 of
 msgid ""
 "A sequence specifying the nodes or points that make up the path. The "
 "definition of the path expression depends on the **type** argument."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:27 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:25 of
 msgid ""
 "If **type** = NODE_LIST, **expression** must be a sequence of sequences. "
 "Each inner sequence contains two items, the first item is a String "
@@ -1027,13 +1027,13 @@ msgid ""
 "Ints."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:31 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:29 of
 msgid ""
 "If **type** = POINT_LIST, **expression** must be a sequence of tuples of "
 "three Floats, specifying the coordinates of each point."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:33 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:31 of
 msgid ""
 "If **type** = EDGE_LIST, **expression** must be a sequence of sequences. "
 "Each inner sequence contains two items, the first item is a String "
@@ -1046,19 +1046,19 @@ msgid ""
 "opposite."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:42 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:40 of
 msgid ""
 "When **type** = CIRCUMFERENTIAL or RADIAL, **expression** must be a "
 "sequence of three tuples of three Floats, specifying the coordinates of "
 "the points used to define a coordinate system."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:52 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:50 of
 msgid "**circleDefinition**"
 msgstr ""
 
 #: ../../docstring abaqus.PathAndProbe.Path.Path.circleDefinition:2
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:47 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:45 of
 msgid ""
 "A SymbolicConstant specifying the method in which the circle is being "
 "defined. This argument is valid only when **type** = CIRCUMFERENTIAL or "
@@ -1069,80 +1069,80 @@ msgid ""
 "arc of the circle."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:56 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:54 of
 msgid "**numSegments**"
 msgstr ""
 
 #: ../../docstring abaqus.PathAndProbe.Path.Path.numSegments:2
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:55 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:53 of
 msgid ""
 "An Int specifying the number of equal segments in the path. This argument"
 " is valid only when **type** = CIRCUMFERENTIAL or RADIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:60 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:58 of
 msgid "**startAngle**"
 msgstr ""
 
 #: ../../docstring abaqus.PathAndProbe.Path.Path.startAngle:2
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:59 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:57 of
 msgid ""
 "A Float specifying the start angle of the circumferential path. This "
 "argument is valid only when **type** = CIRCUMFERENTIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:64 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:62 of
 msgid "**endAngle**"
 msgstr ""
 
 #: ../../docstring abaqus.PathAndProbe.Path.Path.endAngle:2
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:63 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:61 of
 msgid ""
 "A Float specifying the end angle of the circumferential path. This "
 "argument is valid only when **type** = CIRCUMFERENTIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:68 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:66 of
 msgid "**radius**"
 msgstr ""
 
 #: ../../docstring abaqus.PathAndProbe.Path.Path.radius:2
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:67 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:65 of
 msgid ""
 "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the radius of "
 "the circumferential path. This argument is valid only when **type** = "
 "CIRCUMFERENTIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:72 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:70 of
 msgid "**radialAngle**"
 msgstr ""
 
 #: ../../docstring abaqus.PathAndProbe.Path.Path.radialAngle:2
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:71 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:69 of
 msgid ""
 "A Float specifying the angle between the radial path and the **X**-axis "
 "of the specified coordinate system. This argument is valid only when "
 "**type** = RADIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:76 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:74 of
 msgid "**startRadius**"
 msgstr ""
 
 #: ../../docstring abaqus.PathAndProbe.Path.Path.startRadius:2
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:75 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:73 of
 msgid ""
 "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the start radius"
 " of the radial path. This argument is valid only when **type** = RADIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:80 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:78 of
 msgid "**endRadius**"
 msgstr ""
 
 #: ../../docstring abaqus.PathAndProbe.Path.Path.endRadius:2
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:79 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:77 of
 msgid ""
 "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the end radius "
 "of the radial path. This argument is valid only when **type** = RADIAL."
@@ -1157,11 +1157,11 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:88 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:86 of
 msgid ":obj:`Path`"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:85 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:83 of
 msgid "A :py:class:`~abaqus.PathAndProbe.Path.Path` object."
 msgstr ""
 
@@ -1169,108 +1169,108 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:93 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:91 of
 msgid ""
 ":obj:`ModelError`, :obj:`ErrorUnsupportedNodeData`, "
 ":obj:`ErrorUnsupportedPointData`, ErrorIncorrectPathData,"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:96 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:94 of
 msgid ""
 ":obj:`KeyError`, :obj:`ErrorEmptyPathName`, :obj:`ErrorPathNotFound`, "
 ":obj:`and` ErrorNoOdbPathDisplay."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:108 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:106 of
 msgid ":obj:`ValueError`"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Path:99 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Path:97 of
 msgid ""
 "When **type** = CIRCUMFERENTIAL or RADIAL, the three points specified in "
 "**expression** are collinear."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:12
-#: abaqus.PathAndProbe.Spectrum.Spectrum:13 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:10
+#: abaqus.PathAndProbe.Spectrum.Spectrum:11 of
 msgid ""
 "Check `Spectrum on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-spectrumpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:17 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:15 of
 msgid "A string name for the spectrum."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:20 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:18 of
 msgid "**colors**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:20 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:18 of
 msgid "A sequence of strings indicating the colors of the spectrum."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:37 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:35 of
 msgid ":obj:`Spectrum`"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:25 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:23 of
 msgid "A :py:class:`~abaqus.PathAndProbe.Spectrum.Spectrum` object."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:12
-#: abaqus.PathAndProbe.Stream.Stream:13 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:10
+#: abaqus.PathAndProbe.Stream.Stream:11 of
 msgid ""
 "Check `Stream on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-streampyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:17 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:15 of
 msgid "A string name for the stream."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:20 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:18 of
 msgid "**numPointsOnRake**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:20 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:18 of
 msgid "An integer specifying the number of points along the rake."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:24 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:22 of
 msgid "**pointA**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:23 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:21 of
 msgid ""
 "A tuple of 3 floats specifying the starting point of the rake. "
 "Alternatively, a string representation of the node selected in the "
 "viewport."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:28 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:26 of
 msgid "**pointB**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:27 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:25 of
 msgid ""
 "A tuple of 3 floats specifying the end point of the rake. Alternatively, "
 "a string representation of the node selected in the viewport."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:31 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:29 of
 msgid "**path**"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:31 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:29 of
 msgid "APath object that specifies the rake."
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:48 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:46 of
 msgid ":obj:`Stream`"
 msgstr ""
 
-#: abaqus.PathAndProbe.PathSession.PathSession.Stream:36 of
+#: abaqus.PathAndProbe.PathSession.PathSession.Stream:34 of
 msgid "A :py:class:`~abaqus.PathAndProbe.Stream.Stream` object."
 msgstr ""
 
@@ -1292,10 +1292,10 @@ msgstr ""
 #: abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues:6
 #: abaqus.PathAndProbe.Spectrum.Spectrum:5 abaqus.PathAndProbe.Stream.Stream:5
 #: of
-msgid "This object can be accessed by:"
+msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody:14 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody:12 of
 msgid ""
 "Check `FreeBody on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodypyc.htm?contextscope=all>`__."
@@ -1331,117 +1331,117 @@ msgid ""
 "\\(name\\, elements\\, nodes\\)"
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:12 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:10 of
 msgid ""
 "Check `FreeBodyFromEdges on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodyfromedgespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:17
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:17
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:17 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:15
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:15
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:15 of
 msgid "A string name for the free body."
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:20 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:18 of
 msgid "**edges**"
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:20
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:20
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:20
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:23 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:18
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:18
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:18
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:21 of
 msgid ""
 "A DisplayGroup leaf object that specifies the physical constituents of "
 "the free body."
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:24
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:24
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:27 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:22
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:22
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:25 of
 msgid "**summationLoc**"
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:23
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:23
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:26 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:21
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:21
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:24 of
 msgid ""
 "A SymbolicConstant specifying the location of the summation point. "
 "Possible values are CENTROID, NODAL_AVERAGE and SPECIFY. The default "
 "value is CENTROID."
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:27
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:27
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:30 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:25
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:25
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:28 of
 msgid "**summationPoint**"
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:27
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:27
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:30 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:25
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:25
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:28 of
 msgid "A tuple of 3 floats specifying the summation point."
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:31
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:31
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:34 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:29
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:29
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:32 of
 msgid "**componentResolution**"
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:30
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:30
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:33 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:28
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:28
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:31 of
 msgid ""
 "A SymbolicConstant specifying the component resolution. Possible values "
 "are NORMAL_TANGENTIAL and CSYS. The default value is NORMAL_TANGENTIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:34
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:34
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:37 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:32
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:32
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:35 of
 msgid "**csysName**"
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:34
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:34
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:37 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:32
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:32
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:35 of
 msgid "A string specifying the name of the coordinate system."
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:51
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:51
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:54 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:49
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:49
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:52 of
 msgid ":obj:`FreeBody`"
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:39
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:39
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:42 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:37
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:37
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:40 of
 msgid "A :py:class:`~abaqus.PathAndProbe.FreeBody.FreeBody` object."
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:12 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:10 of
 msgid ""
 "Check `FreeBodyFromFaces on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodyfromfacespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:20 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:18 of
 msgid "**faces**"
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:12 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:10 of
 msgid ""
 "Check `FreeBodyFromNodesElements on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodyfromnodeselementspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:20 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:18 of
 msgid "**elements**"
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:23 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:21 of
 msgid "**nodes**"
 msgstr ""
 
@@ -1459,7 +1459,7 @@ msgid ""
 "object is created when you import the Visualization module."
 msgstr ""
 
-#: abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues:14 of
+#: abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues:12 of
 msgid ""
 "Check `CurrentProbeValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-currentprobevaluespyc.htm?contextscope=all>`__."
@@ -1494,7 +1494,7 @@ msgid ""
 "**nodeQuery** member when you import the visualization module."
 msgstr ""
 
-#: abaqus.PathAndProbe.NodeQuery.NodeQuery:15 of
+#: abaqus.PathAndProbe.NodeQuery.NodeQuery:13 of
 msgid ""
 "Check `NodeQuery on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-nodequerypyc.htm?contextscope=all>`__."
@@ -1579,7 +1579,7 @@ msgid ""
 "**defaultProbeOptions** member."
 msgstr ""
 
-#: abaqus.PathAndProbe.ProbeOptions.ProbeOptions:18 of
+#: abaqus.PathAndProbe.ProbeOptions.ProbeOptions:16 of
 msgid ""
 "Check `ProbeOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-probeoptionspyc.htm?contextscope=all>`__."
@@ -2067,7 +2067,7 @@ msgid ""
 "using the values from the **defaultProbeReport** member."
 msgstr ""
 
-#: abaqus.PathAndProbe.ProbeReport.ProbeReport:18 of
+#: abaqus.PathAndProbe.ProbeReport.ProbeReport:16 of
 msgid ""
 "Check `ProbeReport on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-probereportpyc.htm?contextscope=all>`__."
@@ -2175,7 +2175,7 @@ msgid ""
 "module."
 msgstr ""
 
-#: abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues:14 of
+#: abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues:12 of
 msgid ""
 "Check `SelectedProbeValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-selectedprobevaluespyc.htm?contextscope=all>`__."
@@ -2385,5 +2385,11 @@ msgstr ""
 #~ msgid ""
 #~ ":py:obj:`exit "
 #~ "<abaqus.PathAndProbe.PathSession.PathSession.exit>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "This function can be accessed by:"
+#~ msgstr ""
+
+#~ msgid "This object can be accessed by:"
 #~ msgstr ""
 
