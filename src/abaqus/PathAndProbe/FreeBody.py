@@ -8,9 +8,7 @@ class FreeBody:
     computed.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.freeBodies[name]
@@ -29,9 +27,7 @@ class FreeBody:
         """This method creates a FreeBody object and places it in the freeBodies repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.FreeBodyFromEdges
 
@@ -72,9 +68,7 @@ class FreeBody:
         """This method creates a FreeBody object and places it in the freeBodies repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.FreeBodyFromEdges
 
@@ -116,9 +110,7 @@ class FreeBody:
         """This method creates a FreeBody object and places it in the freeBodies repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.FreeBodyFromEdges
 

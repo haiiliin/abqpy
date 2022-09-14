@@ -10,9 +10,7 @@ class FluidCavityPressure(PredefinedField):
     The FluidCavityPressure object is derived from the PredefinedField object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].predefinedFields[name]
@@ -39,9 +37,7 @@ class FluidCavityPressure(PredefinedField):
         """This method creates a FluidCavityPressure object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].FluidCavityPressure
 

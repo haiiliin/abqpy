@@ -7,9 +7,7 @@ class MdbDataInstance:
     with a mesh in the cae model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.mdbData[name].instances[i]

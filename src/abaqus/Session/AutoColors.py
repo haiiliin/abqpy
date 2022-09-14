@@ -5,9 +5,7 @@ class AutoColors:
     """The AutoColors object defines a color palette.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.autoColors
     """

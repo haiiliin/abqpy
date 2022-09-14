@@ -7,9 +7,7 @@ class OdbAuxiliaryData:
     """The OdbAuxiliaryData object stores auxiliary data related to the steps in the analysis.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.odbData[name].diagnosticData.analysisErrors[i].data[i]

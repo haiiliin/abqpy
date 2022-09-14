@@ -8,9 +8,7 @@ class ErrorIndicatorResult(RuleResult):
     indicator variable in a RemeshingRule object for an adaptivity iteration.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import job
             mdb.adaptivityProcesses[name].iterations[i].ruleResults[name].indicatorResults[name]
@@ -30,9 +28,7 @@ class ErrorIndicatorResult(RuleResult):
         a RemeshingRule for a given adaptivity iteration.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.adaptivityProcesses[name].iterations[i].ruleResults[name].ErrorIndicatorResult
 

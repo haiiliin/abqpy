@@ -22,9 +22,7 @@ class XYPlot(XYPlotBase):
         """This method creates an AreaStyle.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.AreaStyle
                 xyPlot.AreaStyle
@@ -64,9 +62,7 @@ class XYPlot(XYPlotBase):
         """This method creates a LineStyle.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.LineStyle
                 xyPlot.LineStyle
@@ -105,9 +101,7 @@ class XYPlot(XYPlotBase):
         """This method creates a QuantityType object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.QuantityType
                 xyPlot.QuantityType
@@ -211,9 +205,7 @@ class XYPlot(XYPlotBase):
         """This method creates a SymbolStyle object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.SymbolStyle
                 xyPlot.SymbolStyle
@@ -267,9 +259,7 @@ class XYPlot(XYPlotBase):
         """This method creates a TextStyle.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.TextStyle
                 xyPlot.TextStyle
@@ -319,9 +309,7 @@ class XYPlot(XYPlotBase):
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.XYData
                 xyPlot.XYData
@@ -374,9 +362,7 @@ class XYPlot(XYPlotBase):
         """This method creates an XYData object by copying an existing XYData object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].userData.XYData
                 session.XYData

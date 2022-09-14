@@ -10,9 +10,7 @@ class Path:
     points.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.paths[name]
@@ -109,9 +107,7 @@ class Path:
         """This method creates a Path object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.Path
 

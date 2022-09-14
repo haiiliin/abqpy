@@ -7,9 +7,7 @@ class Piezoelectric:
     r"""The Piezoelectric object specifies piezoelectric material properties.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].piezoelectric
@@ -82,9 +80,7 @@ class Piezoelectric:
         """This method creates a Piezoelectric object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Piezoelectric
                 session.odbs[name].materials[name].Piezoelectric

@@ -10,9 +10,7 @@ class Light:
     **defaultLightOptions** and the **lightOptions** objects when a session is started.
 
     .. note::
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.defaultLightOptions.lights[i]
             session.viewports[name].lightOptions.lights[i]

@@ -9,9 +9,7 @@ class GasketThicknessBehavior:
     gasket.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].gasketThicknessBehavior
@@ -99,9 +97,7 @@ class GasketThicknessBehavior:
         """This method creates a GasketThicknessBehavior object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].GasketThicknessBehavior
                 session.odbs[name].materials[name].GasketThicknessBehavior

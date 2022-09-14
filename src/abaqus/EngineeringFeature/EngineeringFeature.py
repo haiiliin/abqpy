@@ -39,9 +39,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         only under the assembly.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.AssembledFastener
                 mdb.models[name].rootAssembly.engineeringFeatures.AssembledFastener
@@ -120,9 +118,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         under the assembly.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.ContourIntegral
                 mdb.models[name].rootAssembly.engineeringFeatures.ContourIntegral
@@ -210,9 +206,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         assembly.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.DebondVCCT
                 mdb.models[name].rootAssembly.engineeringFeatures.DebondVCCT
@@ -266,9 +260,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         only under the assembly.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.DiscreteFastener
                 mdb.models[name].rootAssembly.engineeringFeatures.DiscreteFastener
@@ -337,9 +329,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         """This method creates a HeatCapacitance object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.HeatCapacitance
                 mdb.models[name].rootAssembly.engineeringFeatures.HeatCapacitance
@@ -380,9 +370,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         """This method creates a NonstructuralMass object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.NonstructuralMass
                 mdb.models[name].rootAssembly.engineeringFeatures.NonstructuralMass
@@ -449,9 +437,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         the assembly.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.PointFastener
                 mdb.models[name].rootAssembly.engineeringFeatures.PointFastener
@@ -616,9 +602,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         """This method creates a PointMassInertia object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.PointMassInertia
                 mdb.models[name].rootAssembly.engineeringFeatures.PointMassInertia
@@ -707,9 +691,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         """This method creates a SpringDashpotToGround object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.SpringDashpotToGround
                 mdb.models[name].rootAssembly.engineeringFeatures.SpringDashpotToGround
@@ -776,9 +758,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         """This method creates a TwoPointSpringDashpot object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.TwoPointSpringDashpot
                 mdb.models[name].rootAssembly.engineeringFeatures.TwoPointSpringDashpot
@@ -861,9 +841,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         assembly.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.XFEMCrack
                 mdb.models[name].rootAssembly.engineeringFeatures.XFEMCrack

@@ -10,9 +10,7 @@ class Transform:
     transformation from sketch coordinates to assembly coordinates or to part coordinates.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             import assembly

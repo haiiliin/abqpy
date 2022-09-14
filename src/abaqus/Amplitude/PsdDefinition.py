@@ -10,9 +10,7 @@ class PsdDefinition(Amplitude):
     The PsdDefinition object is derived from the Amplitude object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import amplitude
             mdb.models[name].amplitudes[name]
@@ -74,9 +72,7 @@ class PsdDefinition(Amplitude):
         """This method creates a PsdDefinition object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].PsdDefinition
                 session.odbs[name].PsdDefinition

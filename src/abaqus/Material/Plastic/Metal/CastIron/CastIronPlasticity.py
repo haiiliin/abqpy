@@ -9,9 +9,7 @@ class CastIronPlasticity:
     r"""The CastIronPlasticity object specifies the Cast Iron plasticity model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].castIronPlasticity
@@ -46,9 +44,7 @@ class CastIronPlasticity:
         """This method creates a CastIronPlasticity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].CastIronPlasticity
                 session.odbs[name].materials[name].CastIronPlasticity

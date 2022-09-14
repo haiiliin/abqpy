@@ -30,9 +30,7 @@ class ModalDynamicsStep(AnalysisStep):
     The ModalDynamicsStep object is derived from the AnalysisStep object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].steps[name]
@@ -191,9 +189,7 @@ class ModalDynamicsStep(AnalysisStep):
         """This method creates a ModalDynamicsStep object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ModalDynamicsStep
 

@@ -13,9 +13,7 @@ class EqualRadiusConstraint(ConstrainedSketchConstraint):
         arcs and constrains them such that their radii are equal.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].EqualRadiusConstraint
 

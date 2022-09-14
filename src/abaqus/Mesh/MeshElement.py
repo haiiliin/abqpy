@@ -13,9 +13,7 @@ class MeshElement:
     the element label.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].allInternalSets[name].elements[i]
@@ -65,9 +63,7 @@ class MeshElement:
         """This method creates an element on an orphan mesh part from a sequence of nodes.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Element
 

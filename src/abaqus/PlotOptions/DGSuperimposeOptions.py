@@ -11,9 +11,7 @@ class DGSuperimposeOptions:
     using values from *odbDisplay.superimposeOptions*.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions
             session.viewports[name].layers[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions

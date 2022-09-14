@@ -13,9 +13,7 @@ class KeywordBlock:
     object. A model object contains only one KeywordBlock object.
 
     .. note::
-        This object can be accessed by:
-        
-        .. code-block:: python
+        This object can be accessed by::
         
             mdb.models[name].keywordBlock
     """

@@ -20,9 +20,7 @@ class OrientationOptions(DGOrientationOptions):
     The OrientationOptions object is derived from the DGOrientationOptions object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.defaultOdbDisplay.materialOrientationOptions

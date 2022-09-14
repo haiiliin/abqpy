@@ -9,9 +9,7 @@ class DrawingArea:
     placement of viewports.
 
     .. note::
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.drawingArea
     """

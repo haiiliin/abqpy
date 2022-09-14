@@ -14,9 +14,7 @@ def writeXYReport(fileName: str, xyData: typing.Tuple[XYData, ...], appendMode: 
     """This method writes an XYData object to a user-defined ASCII file.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             session.writeXYReport
 

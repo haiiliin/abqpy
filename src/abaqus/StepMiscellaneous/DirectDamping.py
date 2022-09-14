@@ -7,9 +7,7 @@ class DirectDamping:
     """A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object contains direct modal damping parameters.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].steps[name].directDamping

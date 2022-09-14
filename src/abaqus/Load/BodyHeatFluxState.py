@@ -12,9 +12,7 @@ class BodyHeatFluxState(LoadState):
     The BodyHeatFluxState object is derived from the LoadState object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].steps[name].loadStates[name]

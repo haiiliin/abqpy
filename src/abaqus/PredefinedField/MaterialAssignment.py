@@ -12,9 +12,7 @@ class MaterialAssignment(PredefinedField):
     The MaterialAssignment object is derived from the PredefinedField object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].predefinedFields[name]
@@ -70,9 +68,7 @@ class MaterialAssignment(PredefinedField):
         """This method creates a MaterialAssignment predefined field object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].MaterialAssignment
 

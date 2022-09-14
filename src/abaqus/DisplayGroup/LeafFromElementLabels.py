@@ -13,9 +13,7 @@ class LeafFromElementLabels(Leaf):
     This page discusses:
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import displayGroupOdbToolset
     """
@@ -39,9 +37,7 @@ class LeafFromElementLabels(Leaf):
         single part instance.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 LeafFromElementLabels
 
