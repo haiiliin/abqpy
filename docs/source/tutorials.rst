@@ -391,8 +391,9 @@ We can use :py:meth:`~abaqus.Session.SessionBase.SessionBase.openOdb` to open th
 .. autolink-concat:: on
 .. code-block:: Python
 
+    import visualization
     odb = session.openOdb('Job-1.odb')
-
+    session.viewports['Viewport: 1'].setValues(displayedObject=odb)
 
 Extract the data
 ~~~~~~~~~~~~~~~~
@@ -448,6 +449,7 @@ The whole output script of this example is showed as follows:
     from abaqus import *
     from abaqusConstants import *
     from driverUtils import *
+    import visualization
     import numpy as np
 
     executeOnCaeStartup()
