@@ -17,9 +17,7 @@ class PartFeature(BaseFeature):
     Feature object, see Feature object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
     """
@@ -33,9 +31,7 @@ class PartFeature(BaseFeature):
         are performed, it could be a slow operation depending on the complexity of the geometry.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -52,9 +48,7 @@ class PartFeature(BaseFeature):
         always successful.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -81,9 +75,7 @@ class PartFeature(BaseFeature):
         planar wire from the given ConstrainedSketch object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -105,9 +97,7 @@ class PartFeature(BaseFeature):
         the given ConstrainedSketch object by the given depth, creating a surface.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -131,9 +121,7 @@ class PartFeature(BaseFeature):
         the given ConstrainedSketch object by 360° about the **Y**-axis.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -157,9 +145,7 @@ class PartFeature(BaseFeature):
         the part.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -189,9 +175,7 @@ class PartFeature(BaseFeature):
         closed profile.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -238,9 +222,7 @@ class PartFeature(BaseFeature):
         line.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -292,9 +274,7 @@ class PartFeature(BaseFeature):
         perpendicular to the path. No checks are made for self-intersection.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -318,9 +298,7 @@ class PartFeature(BaseFeature):
         ConstrainedSketch object. The ConstrainedSketch object must define a closed profile.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -349,9 +327,7 @@ class PartFeature(BaseFeature):
         either an open or closed profile.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -402,9 +378,7 @@ class PartFeature(BaseFeature):
         single construction line.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -452,9 +426,7 @@ class PartFeature(BaseFeature):
         and swept perpendicular to the path. No checks are made for self-intersection.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -478,9 +450,7 @@ class PartFeature(BaseFeature):
         ConstrainedSketch object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -508,9 +478,7 @@ class PartFeature(BaseFeature):
         faces.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -546,9 +514,7 @@ class PartFeature(BaseFeature):
         with a given length.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -576,9 +542,7 @@ class PartFeature(BaseFeature):
         """This method mirrors existing part geometry across a plane to create new geometry.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -605,9 +569,7 @@ class PartFeature(BaseFeature):
         processing and make entities available during feature operations.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -623,9 +585,7 @@ class PartFeature(BaseFeature):
         """This method attempts to change imprecise entities so that the geometry becomes precise.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -650,9 +610,7 @@ class PartFeature(BaseFeature):
         surface, associated edges, and vertices.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -693,9 +651,7 @@ class PartFeature(BaseFeature):
         ConstrainedSketch object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -743,9 +699,7 @@ class PartFeature(BaseFeature):
         **upToFace**), or a through-all cut (if **depth** and **upToFace** are not specified).
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -814,9 +768,7 @@ class PartFeature(BaseFeature):
         edges from the part or an EdgeArray.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -890,9 +842,7 @@ class PartFeature(BaseFeature):
         ConstrainedSketch object must define a closed profile and an axis of revolution.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -965,9 +915,7 @@ class PartFeature(BaseFeature):
         Face. No checks are made for self-intersection.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1047,9 +995,7 @@ class PartFeature(BaseFeature):
         specify how far the faces need to be extended.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1095,9 +1041,7 @@ class PartFeature(BaseFeature):
         """This method creates a geometry face from a collection of orphan element faces.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1146,9 +1090,7 @@ class PartFeature(BaseFeature):
         given distances.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1194,9 +1136,7 @@ class PartFeature(BaseFeature):
         edges by the given distances.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1237,9 +1177,7 @@ class PartFeature(BaseFeature):
         distances.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1274,9 +1212,7 @@ class PartFeature(BaseFeature):
         selected edges.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1309,9 +1245,7 @@ class PartFeature(BaseFeature):
         """This method creates new faces by offsetting existing faces.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1354,9 +1288,7 @@ class PartFeature(BaseFeature):
         """This method converts a solid entity to a shell entity.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1382,9 +1314,7 @@ class PartFeature(BaseFeature):
         """This method removes faces from a solid entity or from a shell entity.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1409,9 +1339,7 @@ class PartFeature(BaseFeature):
         extending the neighboring faces of the solid.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1438,9 +1366,7 @@ class PartFeature(BaseFeature):
         the two arguments is required.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1474,9 +1400,7 @@ class PartFeature(BaseFeature):
         inverts the normals of the selected faces.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1499,9 +1423,7 @@ class PartFeature(BaseFeature):
         not be repaired.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1526,9 +1448,7 @@ class PartFeature(BaseFeature):
         the smaller of the two faces is removed.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1560,9 +1480,7 @@ class PartFeature(BaseFeature):
         behind some small edges that cannot be removed.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1588,9 +1506,7 @@ class PartFeature(BaseFeature):
         some small faces that cannot be removed.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1615,9 +1531,7 @@ class PartFeature(BaseFeature):
         selected, that alone is replaced with a new face.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1642,9 +1556,7 @@ class PartFeature(BaseFeature):
         of entities with the given radius.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1682,9 +1594,7 @@ class PartFeature(BaseFeature):
         profile.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1731,9 +1641,7 @@ class PartFeature(BaseFeature):
         ConstrainedSketch object can define either an open or closed profile.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1807,9 +1715,7 @@ class PartFeature(BaseFeature):
         from the part or an EdgeArray.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1898,9 +1804,7 @@ class PartFeature(BaseFeature):
         plane positioning arguments, see SolidExtrude.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -1977,9 +1881,7 @@ class PartFeature(BaseFeature):
         made for self-intersection.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -2067,9 +1969,7 @@ class PartFeature(BaseFeature):
         ConstrainedSketch object must define a closed profile.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -2143,9 +2043,7 @@ class PartFeature(BaseFeature):
         the part or an EdgeArray.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -2232,9 +2130,7 @@ class PartFeature(BaseFeature):
         axis is defined by a single construction line.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -2311,9 +2207,7 @@ class PartFeature(BaseFeature):
         Datum plane or a planar Face. No checks are made for self-intersection.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -2388,9 +2282,7 @@ class PartFeature(BaseFeature):
         performed. If **stitchTolerance** is not specified, a value of 1.0 will be used.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -2425,9 +2317,7 @@ class PartFeature(BaseFeature):
         profile.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -2466,9 +2356,7 @@ class PartFeature(BaseFeature):
         interesting point, or a tuple.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -2511,9 +2399,7 @@ class PartFeature(BaseFeature):
         interesting point, or a tuple.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 
@@ -2548,9 +2434,7 @@ class PartFeature(BaseFeature):
         more Edge objects of a Solid or Shell part.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
 

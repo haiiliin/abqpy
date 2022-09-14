@@ -15,9 +15,7 @@ class View:
     the Layer within a viewport.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.viewports[name].layers[name].view
             session.viewports[name].view
@@ -117,9 +115,7 @@ class View:
         Note:This method cannot be used to create a View for a Layer object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.View
 

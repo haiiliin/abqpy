@@ -9,9 +9,7 @@ class OperatorFilter(Filter):
     The OperatorFilter object is derived from the Filter object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import filter
             mdb.models[name].filters[name]
@@ -67,9 +65,7 @@ class OperatorFilter(Filter):
         """This method creates an OperatorFilter object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].OperatorFilter
                 session.odbs[name].OperatorFilter

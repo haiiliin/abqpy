@@ -9,9 +9,7 @@ class Amplitude:
     object are common to all objects derived from the Amplitude.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import amplitude
             mdb.models[name].amplitudes[name]

@@ -7,9 +7,7 @@ class StepOption:
     """A StepOption is an object used to define step options in a design response.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import optimization
             mdb.models[name].optimizationTasks[name].designResponses[name].stepOptions[i]

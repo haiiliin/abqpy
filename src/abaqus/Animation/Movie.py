@@ -11,9 +11,7 @@ class Movie(_OptionsBase):
     Upon creation, the Movie object is added to the session.movies repository.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import animation
             session.movies[name]
@@ -83,9 +81,7 @@ class Movie(_OptionsBase):
         """This method creates a Movie object from the contents of the specified file.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.Movie
 

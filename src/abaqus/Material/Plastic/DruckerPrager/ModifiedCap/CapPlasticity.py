@@ -10,9 +10,7 @@ class CapPlasticity:
     r"""The CapPlasticity object specifies the modified Drucker-Prager/Cap plasticity model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].capPlasticity
@@ -56,9 +54,7 @@ class CapPlasticity:
         """This method creates a CapPlasticity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].CapPlasticity
                 session.odbs[name].materials[name].CapPlasticity

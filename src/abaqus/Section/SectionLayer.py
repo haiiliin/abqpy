@@ -7,9 +7,7 @@ class SectionLayer:
     """The SectionLayer object defines the material layer in a composite shell.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].parts[name].compositeLayups[i].section.layup[i]
@@ -88,9 +86,7 @@ class SectionLayer:
         """This method creates a SectionLayer object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 section.SectionLayer
                 odbSection.SectionLayer

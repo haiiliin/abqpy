@@ -17,9 +17,7 @@ class MdbBase:
     and analysis controls.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb
     """
@@ -61,9 +59,7 @@ class MdbBase:
         """This constructor creates an empty Mdb object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 Mdb
 
@@ -90,9 +86,7 @@ class MdbBase:
         be used only if no other formats are available.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 Mdb
 
@@ -113,9 +107,7 @@ class MdbBase:
         """This method opens an existing model database file.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 Mdb
 

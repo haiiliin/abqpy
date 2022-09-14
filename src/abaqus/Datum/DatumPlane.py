@@ -10,9 +10,7 @@ class DatumPlane(Datum):
     The DatumPlane object is derived from the Datum object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].datums[i]

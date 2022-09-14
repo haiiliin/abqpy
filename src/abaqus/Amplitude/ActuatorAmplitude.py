@@ -9,9 +9,7 @@ class ActuatorAmplitude(Amplitude):
     The ActuatorAmplitude object is derived from the Amplitude object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import amplitude
             mdb.models[name].amplitudes[name]
@@ -35,9 +33,7 @@ class ActuatorAmplitude(Amplitude):
         """This method creates a ActuatorAmplitude object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ActuatorAmplitude
                 session.odbs[name].ActuatorAmplitude

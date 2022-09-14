@@ -14,9 +14,7 @@ class TableCollectionAssembly(AssemblyBase):
     created.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import assembly
             mdb.models[name].rootAssembly
@@ -39,9 +37,7 @@ class TableCollectionAssembly(AssemblyBase):
         elementProgressiveActivation repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.ElementProgressiveActivation
 

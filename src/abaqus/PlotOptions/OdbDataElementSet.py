@@ -6,9 +6,7 @@ class OdbDataElementSet:
     """The OdbDataElementSet object stores element set data.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.odbData[name].elementSets[i]

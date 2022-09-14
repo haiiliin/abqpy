@@ -9,9 +9,7 @@ class MeshFaceArray(typing.List[MeshFace]):
     """The MeshFaceArray is a sequence of MeshFace objects.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].elementFaces
@@ -25,9 +23,7 @@ class MeshFaceArray(typing.List[MeshFace]):
         """This method creates a MeshFaceArray object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mesh.MeshFaceArray
 

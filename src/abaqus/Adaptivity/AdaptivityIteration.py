@@ -11,9 +11,7 @@ class AdaptivityIteration:
     varying topology adaptivity process (adaptive remeshing).
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import job
             mdb.adaptivityProcesses[name].iterations[i]
@@ -53,9 +51,7 @@ class AdaptivityIteration:
         """This method creates an AdaptivityIteration object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.adaptivityProcesses[name].AdaptivityIteration
 
@@ -87,9 +83,7 @@ class AdaptivityIteration:
         a RemeshingRule for a given adaptivity iteration.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.adaptivityProcesses[name].AdaptivityIteration
 
@@ -127,9 +121,7 @@ class AdaptivityIteration:
         iteration.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.adaptivityProcesses[name].AdaptivityIteration
 

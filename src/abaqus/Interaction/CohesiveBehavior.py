@@ -7,9 +7,7 @@ class CohesiveBehavior:
     """The CohesiveBehaviour
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].interactionProperties[name].cohesiveBehavior
@@ -87,9 +85,7 @@ class CohesiveBehavior:
         """This method creates a CohesiveBehavior object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].interactionProperties[name].CohesiveBehavior
 

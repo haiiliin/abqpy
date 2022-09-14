@@ -12,9 +12,7 @@ class Arrow(Annotation, _OptionsBase):
     The Arrow object is derived from the Annotation object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import annotationToolset
             mdb.annotations[name]
@@ -140,9 +138,7 @@ class Arrow(Annotation, _OptionsBase):
         """This method creates an Arrow object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.Arrow
                 session.odbs[name].userData.Arrow

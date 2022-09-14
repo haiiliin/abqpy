@@ -69,9 +69,7 @@ class SessionBase:
     session is started.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session
     """
@@ -503,10 +501,7 @@ class SessionBase:
             to the printer. The default value is “lpr” or the value specified by the printOptions
             method. If you create a script to print directly to a Windows printer, the
             **printCommand** must take the following
-            form:
-            
-            .. autolink-skip:: section
-            .. code-block:: python
+            form::
             
                 session.printToPrinter.setValues(
                     printCommand='PRINTER[number of characters in name]:printername PROPERTIES[number of characters in properties]:document properties'

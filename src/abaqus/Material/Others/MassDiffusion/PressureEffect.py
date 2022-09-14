@@ -7,9 +7,7 @@ class PressureEffect:
     r"""The PressureEffect object defines equivalent pressure stress driven mass diffusion.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].diffusivity.pressureEffect
@@ -37,9 +35,7 @@ class PressureEffect:
         """This method creates a PressureEffect object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].diffusivity.PressureEffect
                 session.odbs[name].materials[name].diffusivity.PressureEffect

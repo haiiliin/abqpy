@@ -7,9 +7,7 @@ class SpecificHeat:
     """The SpecificHeat object specifies a material's specific heat.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].specificHeat
@@ -40,9 +38,7 @@ class SpecificHeat:
         """This method creates a SpecificHeat object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].SpecificHeat
                 session.odbs[name].materials[name].SpecificHeat

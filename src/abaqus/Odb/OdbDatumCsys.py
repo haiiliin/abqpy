@@ -14,9 +14,7 @@ class OdbDatumCsys:
     system to the output database.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].rootAssembly.datumCsyses[name]
@@ -55,9 +53,7 @@ class OdbDatumCsys:
         created with this method results in a fixed system.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysByThreePoints
 
@@ -100,9 +96,7 @@ class OdbDatumCsys:
         object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysByThreePoints
 
@@ -144,9 +138,7 @@ class OdbDatumCsys:
         line from the origin to the first node defines the rr-axis.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysByThreePoints
 
@@ -183,9 +175,7 @@ class OdbDatumCsys:
         The last argument is given in the form of an OdbMeshNode object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysByThreePoints
 
@@ -211,9 +201,7 @@ class OdbDatumCsys:
         """This method copies oneOdbDatumCsys object to a new OdbDatumCsys object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysByThreePoints
 

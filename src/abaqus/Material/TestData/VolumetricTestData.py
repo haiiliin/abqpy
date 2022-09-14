@@ -7,9 +7,7 @@ class VolumetricTestData:
     r"""The VolumetricTestData object provides volumetric test data.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].hyperelastic.volumetricTestData
@@ -57,9 +55,7 @@ class VolumetricTestData:
         """This method creates a VolumetricTestData object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].hyperelastic.VolumetricTestData
                 mdb.models[name].materials[name].hyperfoam.VolumetricTestData

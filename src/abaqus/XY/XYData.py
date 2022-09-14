@@ -25,9 +25,7 @@ class XYData(tuple):
     operations found in the abaqusMath module.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.charts[name].axes1[i].axisData.curves[i].data
@@ -114,9 +112,7 @@ class XYData(tuple):
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.XYData
                 xyPlot.XYData
@@ -168,9 +164,7 @@ class XYData(tuple):
         """This method creates an XYData object by copying an existing XYData object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.XYData
                 xyPlot.XYData
@@ -210,9 +204,7 @@ class XYData(tuple):
         """This method creates an XYData object from data in an ASCII file.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.XYDataFromFile
                 xyPlot.XYDataFromFile
@@ -290,9 +282,7 @@ class XYData(tuple):
         """This method creates an XYData object by reading history data from an Odb object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.XYDataFromHistory
                 xyPlot.XYDataFromHistory
@@ -366,9 +356,7 @@ class XYData(tuple):
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.xyDataListFromField
                 xyPlot.xyDataListFromField
@@ -394,9 +382,7 @@ class XYData(tuple):
             COMPONENT.Label: A String specifying the invariant or the component; for example,
             'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The
             dictionary contains pairs of the following:A String specifying the category selection
-            label.A String specifying the section point label. For example,
-
-            .. code-block:: python
+            label.A String specifying the section point label. For example::
 
                 variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
                 variable = (('S', INTEGRATION_POINT, ((COMPONENT, 'S11'), ), ),
@@ -470,9 +456,7 @@ class XYData(tuple):
         object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.XYDataFromFreeBody
                 xyPlot.XYDataFromFreeBody
@@ -530,9 +514,7 @@ class XYData(tuple):
         from an Odb object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.XYDataFromShellThickness
                 xyPlot.XYDataFromShellThickness
@@ -629,9 +611,7 @@ class XYData(tuple):
         """This method creates an XYData object from path information.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.XYDataFromPath
                 xyPlot.XYDataFromPath
@@ -694,10 +674,7 @@ class XYData(tuple):
             the component; for example, 'Mises' or 'S22'.Location: An optional Dictionary specifying
             the location. The dictionary contains pairs of the following:A String specifying the
             category selection label.A String specifying the section point label.For
-            example,
-            
-            .. autolink-skip:: section
-            .. code-block:: python
+            example::
             
                 variable = ('S',INTEGRATION_POINT, ((COMPONENT, 'S22' ), ), ) 
                 variable = (('S',INTEGRATION_POINT, ((COMPONENT, 'S11' ), ), ),

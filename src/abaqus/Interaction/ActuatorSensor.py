@@ -12,9 +12,7 @@ class ActuatorSensor(Interaction):
     The ActuatorSensor object is derived from the Interaction object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].interactions[name]
@@ -76,9 +74,7 @@ class ActuatorSensor(Interaction):
         """This method creates an ActuatorSensor object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ActuatorSensor
 

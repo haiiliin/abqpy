@@ -16,9 +16,7 @@ class ViewportAnnotationOptions:
     is created, the settings are copied from the current viewport.
 
     .. note::
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.defaultViewportAnnotationOptions
             session.viewports[name].viewportAnnotationOptions
