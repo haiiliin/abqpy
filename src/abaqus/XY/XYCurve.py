@@ -10,9 +10,7 @@ class XYCurve:
     """The XYCurve object is used to plot **X - Y** data and to store its display attributes.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.charts[name].axes1[i].axisData.curves[i]
@@ -66,9 +64,7 @@ class XYCurve:
         """This method creates an XYCurve object from an XYData object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.Curve
 

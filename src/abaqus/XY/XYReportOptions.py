@@ -9,9 +9,7 @@ class XYReportOptions:
     Abaqus creates the **xyReportOptions** member when you import the Visualization module.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.defaultXYReportOptions

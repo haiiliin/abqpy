@@ -10,9 +10,7 @@ class MullinsEffect:
     """The MullinsEffect specifies properties for mullins data.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].mullinsEffect

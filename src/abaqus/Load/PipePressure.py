@@ -11,9 +11,7 @@ class PipePressure(Load):
     The PipePressure object is derived from the Load object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].loads[name]
@@ -59,9 +57,7 @@ class PipePressure(Load):
         """This method creates a Pressure object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].PipePressure
 

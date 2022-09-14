@@ -8,9 +8,7 @@ class SelectedProbeValues:
     created when you import the Visualization module.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.selectedProbeValues

@@ -12,9 +12,7 @@ class LeafFromSurfaceVarRange(Leaf):
     The LeafFromSurfaceVarRange object is derived from the Leaf object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import displayGroupOdbToolset
     """
@@ -45,9 +43,7 @@ class LeafFromSurfaceVarRange(Leaf):
         """This method creates a Leaf object from surfaces with values lying in a variable range.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 LeafFromSurfaceVarRange
 

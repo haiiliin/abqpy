@@ -13,9 +13,7 @@ class AnalyticalField(Field):
     The AnalyticalField object is derived from the Field object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import fields
             mdb.models[name].analyticalFields[name]
@@ -65,9 +63,7 @@ class AnalyticalField(Field):
         """This method creates an OdbMeshRegionData object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].analyticalFields[name].OdbMeshRegionData
 
@@ -171,9 +167,7 @@ class AnalyticalField(Field):
         sectionPoint
             A Dictionary with String keys and String values. Each key specifies a region in the
             model; the corresponding value specifies a section point within that region. For
-            example:
-            
-            .. code-block:: python
+            example::
             
                 sectionPoint = {
                     'shell < MAT > < 7 section points >': 'SPOS, (fraction = 1.0)', 

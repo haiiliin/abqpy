@@ -6,9 +6,7 @@ class OdbDataNodeSet:
     """The OdbDataNodeSet object stores node set data.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.odbData[name].nodeSets[i]

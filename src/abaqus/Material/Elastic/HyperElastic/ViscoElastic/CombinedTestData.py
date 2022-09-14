@@ -6,9 +6,7 @@ class CombinedTestData:
     compliances or relaxation moduli as functions of time.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].viscoelastic.combinedTestData
@@ -39,9 +37,7 @@ class CombinedTestData:
         """This method creates a CombinedTestData object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].viscoelastic.CombinedTestData
                 session.odbs[name].materials[name].viscoelastic.CombinedTestData

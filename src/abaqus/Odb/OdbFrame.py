@@ -11,9 +11,7 @@ class OdbFrame:
     """The domain of the OdbFrame object is taken from the parent step.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].steps[name].frames[i]
@@ -64,9 +62,7 @@ class OdbFrame:
         """This method creates an OdbFrame object and appends it to the frame sequence.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].steps[name].Frame
 
@@ -98,9 +94,7 @@ class OdbFrame:
         **domain** = FREQUENCY or **domain** = MODAL.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].steps[name].Frame
 
@@ -130,9 +124,7 @@ class OdbFrame:
         the frame sequence.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].steps[name].Frame
 
@@ -170,9 +162,7 @@ class OdbFrame:
         """This method creates a FieldOutput object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].steps[name].Frame
 
@@ -219,9 +209,7 @@ class OdbFrame:
         output database.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].steps[name].Frame
 

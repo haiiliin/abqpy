@@ -8,9 +8,7 @@ class Ornl:
     Laboratory.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].creep.ornl
@@ -29,9 +27,7 @@ class Ornl:
         """This method creates an Ornl object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].creep.Ornl
                 mdb.models[name].materials[name].Plastic.Ornl

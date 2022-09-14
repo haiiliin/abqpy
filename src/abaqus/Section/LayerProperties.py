@@ -6,9 +6,7 @@ class LayerProperties:
     membrane, shell, and surface sections.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].parts[name].compositeLayups[i].section.rebarLayers.layerTable[i]
@@ -75,9 +73,7 @@ class LayerProperties:
         """This method creates a LayerProperties object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 section.LayerProperties
                 odbSection.LayerProperties

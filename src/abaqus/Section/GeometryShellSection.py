@@ -14,9 +14,7 @@ class GeometryShellSection(ShellSection):
     The GeometryShellSection object is derived from the ShellSection object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].parts[name].compositeLayups[i].section
@@ -118,9 +116,7 @@ class GeometryShellSection(ShellSection):
         """This method creates a GeometryShellSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].compositeLayups[name].Section
 
@@ -188,9 +184,7 @@ class GeometryShellSection(ShellSection):
         """This method creates a RebarLayers object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].compositeLayups[name].Section
 

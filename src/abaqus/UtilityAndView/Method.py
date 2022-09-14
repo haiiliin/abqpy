@@ -7,9 +7,7 @@ executed. This callback allows you to augment the standard behavior of Abaqus Sc
 Interface commands. 
 For example, in the following script the myCallback function is executed when the 
 writeInput method of an object whose type is JobType (in other words, any Job object) is 
-about to be called: 
-
-.. code-block:: python2
+about to be called::
 
     import methodCallback 
     from job import JobType 
@@ -19,9 +17,7 @@ about to be called:
     methodCallback.addCallback(JobType, 'writeInput', myCallback) 
 
 .. note:: 
-    This object can be accessed by:
-
-    .. code-block:: python
+    This object can be accessed by::
 
         import methodCallback
 
@@ -40,9 +36,7 @@ def addCallback(
     commands are about to be executed.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             methodCallback.addCallback
 
@@ -82,9 +76,7 @@ def removeCallback(caller: str, methodName: str, callback: str, userData: str = 
     callback, all arguments must exactly match those used when the callback was added.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             methodCallback.removeCallback
 

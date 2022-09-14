@@ -56,9 +56,7 @@ class OdbPart(OdbPartBase):
         assembly-level sets).
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet
                 session.odbs[name].rootAssembly.instances[name].NodeSet

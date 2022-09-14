@@ -8,9 +8,7 @@ class ShearRetention:
     crack surfaces in a Concrete model as a function of the tensile strain across the crack.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].concrete.shearRetention
@@ -42,9 +40,7 @@ class ShearRetention:
         """This method creates a ShearRetention object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].concrete.ShearRetention
                 session.odbs[name].materials[name].concrete.ShearRetention

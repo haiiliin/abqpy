@@ -46,9 +46,7 @@ class ConstrainedSketch(
         method returns None.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ConstrainedSketch
 
@@ -86,9 +84,7 @@ class ConstrainedSketch(
         the transform matrix to identity, creating a standalone copy.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ConstrainedSketch
 
@@ -114,9 +110,7 @@ class ConstrainedSketch(
         """This method creates a ConstrainedSketch object and places it in the sketches repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ConstrainedSketchFromGeometryFile
 

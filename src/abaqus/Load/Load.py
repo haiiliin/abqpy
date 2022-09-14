@@ -9,9 +9,7 @@ class Load:
     objects derived from Load.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].loads[name]

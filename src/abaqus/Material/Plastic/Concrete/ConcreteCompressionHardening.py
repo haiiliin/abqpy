@@ -8,9 +8,7 @@ class ConcreteCompressionHardening:
     plasticity model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].concreteDamagedPlasticity.concreteCompressionHardening
@@ -43,9 +41,7 @@ class ConcreteCompressionHardening:
         """This method creates a ConcreteCompressionHardening object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].concreteDamagedPlasticity.ConcreteCompressionHardening
                 session.odbs[name].materials[name].concreteDamagedPlasticity.ConcreteCompressionHardening

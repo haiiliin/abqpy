@@ -14,9 +14,7 @@ execution.
 
 .. note::
 
-    Theses functions can be accessed by:
-
-    .. code-block:: python
+    Theses functions can be accessed by::
 
         import redentABQ
 

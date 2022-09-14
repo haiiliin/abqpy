@@ -15,9 +15,7 @@ class LightOptions:
     member is copied from the current viewport.
 
     .. note::
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.defaultLightOptions
             session.viewports[name].lightOptions

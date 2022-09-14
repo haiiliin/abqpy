@@ -7,9 +7,7 @@ class Density:
     """The Density object specifies the material density.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].density
@@ -41,9 +39,7 @@ class Density:
         """This method creates a Density object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Density
                 session.odbs[name].materials[name].Density

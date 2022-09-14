@@ -16,9 +16,7 @@ class CompositeLayup:
     """The CompositeLayup object is used to specify a composite layup on a part.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].compositeLayups[i]
@@ -81,9 +79,7 @@ class CompositeLayup:
         """This method creates a CompositeLayup object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].CompositeLayup
 
@@ -194,9 +190,7 @@ class CompositeLayup:
         """This method creates a CompositePly object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].CompositeLayup
 
@@ -309,9 +303,7 @@ class CompositeLayup:
         """This method creates a CompositeShellSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].CompositeLayup
 
@@ -425,9 +417,7 @@ class CompositeLayup:
         """This method creates a GeometryShellSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].CompositeLayup
 
@@ -526,9 +516,7 @@ class CompositeLayup:
         """This method creates a HomogeneousShellSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].CompositeLayup
 

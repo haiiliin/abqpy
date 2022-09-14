@@ -12,9 +12,7 @@ class LeafFromDisplayGroup(Leaf):
     commands.The LeafFromDisplayGroup object is derived from the Leaf object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import displayGroupMdbToolset
             import displayGroupOdbToolset
@@ -32,9 +30,7 @@ class LeafFromDisplayGroup(Leaf):
         """This method creates a Leaf object from a sequence of Display Group objects.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 LeafFromDisplayGroup
 

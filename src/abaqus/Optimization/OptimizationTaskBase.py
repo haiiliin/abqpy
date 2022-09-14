@@ -17,9 +17,7 @@ class OptimizationTaskBase:
     OptimizationTask.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import optimization
             mdb.models[name].optimizationTasks[name]

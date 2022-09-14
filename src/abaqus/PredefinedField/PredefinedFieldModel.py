@@ -17,9 +17,7 @@ class PredefinedFieldModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name]
     """
@@ -31,9 +29,7 @@ class PredefinedFieldModel(ModelBase):
         """This method creates a FluidCavityPressure object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].FluidCavityPressure
 
@@ -69,9 +65,7 @@ class PredefinedFieldModel(ModelBase):
         """This method creates an InitialState predefined field object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].InitialState
 
@@ -127,9 +121,7 @@ class PredefinedFieldModel(ModelBase):
         """This method creates a KinematicHardening object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].KinematicHardening
 
@@ -191,9 +183,7 @@ class PredefinedFieldModel(ModelBase):
         """This method creates a MaterialAssignment predefined field object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].MaterialAssignment
 
@@ -257,9 +247,7 @@ class PredefinedFieldModel(ModelBase):
         """This method creates a Temperature object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Temperature
 
@@ -390,9 +378,7 @@ class PredefinedFieldModel(ModelBase):
         """This method creates a Velocity predefined field object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Velocity
 
@@ -459,9 +445,7 @@ class PredefinedFieldModel(ModelBase):
         """This method creates a Stress predefined field object.
 
         .. note::
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Stress
 
@@ -504,3 +488,145 @@ class PredefinedFieldModel(ModelBase):
             sigma23,
         )
         return predefinedField
+<<<<<<< HEAD
+=======
+    
+    @abaqus_method_doc
+    def Field(
+        self,
+        name: str,
+        createStepName: str,
+        region: Region,
+        outputVariable: str = "",
+        fieldVariableNum: int = None,
+        distributionType: SymbolicConstant = UNIFORM,
+        crossSectionDistribution: SymbolicConstant = CONSTANT_THROUGH_THICKNESS,
+        field: str = "",
+        amplitude: str = UNSET,
+        fileName: str = "",
+        beginStep: SymbolicConstant = None,
+        beginIncrement: SymbolicConstant = None,
+        endStep: SymbolicConstant = None,
+        endIncrement: SymbolicConstant = None,
+        interpolate: SymbolicConstant = OFF,
+        magnitudes: str = "",
+    ):
+        """This method creates a Field object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].Field
+
+        .. versionadded:: 2018
+            The `Field` method was added.
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        createStepName
+            A String specifying the name of the step in which the predefined field is created.
+        region
+            A Region object specifying the region to which the predefined field is applied. *Region*
+            is ignored if the predefined field has a **distributionType** member available, and
+            **distributionType** = FROM_FILE.
+        outputVariable
+            A String specifying the scalar nodal output variable that will be read from an output
+            database and used to initialize a specified predefined field. This argument is a
+            required argument if **distributionType** = FROM_FILE or
+            **distributionType** = FROM_FILE_AND_USER_DEFINED.
+        fieldVariableNum
+            An Int specifying the field variable number.
+        distributionType
+            A SymbolicConstant specifying how the predefined field varies spatially. Possible values
+            are UNIFORM, USER_DEFINED, FROM_FILE, FIELD, FROM_FILE_AND_USER_DEFINED, and
+            DISCRETE_FIELD. The default value is UNIFORM.
+        crossSectionDistribution
+            A SymbolicConstant specifying how the predefined field is distributed over the
+            cross-section of the region. Possible values are
+            
+            - CONSTANT_THROUGH_THICKNESS
+            - GRADIENTS_THROUGH_SHELL_CS
+            - GRADIENTS_THROUGH_BEAM_CS
+            - POINTS_THROUGH_SECTION
+            
+            The default value is CONSTANT_THROUGH_THICKNESS.
+        field
+            A String specifying the name of the AnalyticalField or DiscreteField object associated
+            with this predefined field. The **field** argument applies only when
+            **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. The default value is an
+            empty string.
+        amplitude
+            A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
+            UNSET should be used if the predefined field has no amplitude reference. The default
+            value is UNSET. 
+            
+            .. note::
+                **amplitude** should be given only if it is valid for the specified step.
+        fileName
+            A String specifying the name of the file from which the Field values are to be read when
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED.
+        beginStep
+            An Int specifying the first step from which Field values are to be read or the
+            SymbolicConstant FIRST_STEP or LAST_STEP. This argument is valid only when
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
+            default value is None.
+        beginIncrement
+            An Int specifying the first increment of the step set in **beginStep** or the
+            SymbolicConstants STEP_START or STEP_END. This argument is valid only when
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
+            default value is None.
+        endStep
+            An Int specifying the last step from which Field values are to be read or the
+            SymbolicConstants FIRST_STEP and LAST_STEP. This argument is valid only when
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
+            default value is None.
+        endIncrement
+            An Int specifying the last increment of the step set in **endStep** or the
+            SymbolicConstants STEP_START and STEP_END. This argument is valid only when
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
+            default value is None.
+        interpolate
+            A SymbolicConstant specifying whether to interpolate a field read from an output
+            database or results file. Possible values are OFF, ON, or MIDSIDE_ONLY. The default
+            value is OFF.
+        magnitudes
+            A Sequence of Doubles specifying the Field values when **distributionType** = UNIFORM or
+            FIELD. The value of the **magnitudes** argument is a function of the
+            **crossSectionDistribution** argument, as shown in the following list:
+            
+            - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS, **magnitudes** is a Double
+              specifying the Field.
+            - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS, **magnitudes** is a sequence
+              of Doubles specifying the mean value and the gradient in the thickness direction.
+            - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS, **magnitudes** is a sequence of
+              Doubles specifying the mean value, the gradient in the N1 direction, and the gradient in
+              the N2 direction.
+            - If **crossSectionDistribution** = POINTS_THROUGH_SECTION, **magnitudes** is a sequence of
+              Doubles specifying the Field at each point.
+
+        Returns
+        -------
+            A Field object.
+        """
+        self.predefinedFields[name] = predefinedField = Field(
+            name,
+            createStepName,
+            region,
+            outputVariable,
+            fieldVariableNum,
+            distributionType,
+            crossSectionDistribution,
+            field,
+            amplitude,
+            fileName,
+            beginStep,
+            beginIncrement,
+            endStep,
+            endIncrement,
+            interpolate,
+            magnitudes,
+        )
+        return predefinedField
+>>>>>>> 7d9a49b4 (Use `::` instead of `code-block` directive for code blocks (#1351))

@@ -16,9 +16,7 @@ class HistoryPoint:
     method.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].steps[name].historyRegions[name].point
@@ -92,9 +90,7 @@ class HistoryPoint:
         """This method creates a HistoryPoint object for a node.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 odbAccess.HistoryPoint
 
@@ -122,9 +118,7 @@ class HistoryPoint:
         """This method creates a HistoryPoint object for an element.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 odbAccess.HistoryPoint
 
@@ -172,9 +166,7 @@ class HistoryPoint:
         """This method creates a HistoryPoint object for a region.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 odbAccess.HistoryPoint
 
@@ -195,9 +187,7 @@ class HistoryPoint:
         """This method creates a HistoryPoint object for the OdbAssembly object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 odbAccess.HistoryPoint
 
@@ -218,9 +208,7 @@ class HistoryPoint:
         """This method creates a HistoryPoint object for the OdbInstance object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 odbAccess.HistoryPoint
 

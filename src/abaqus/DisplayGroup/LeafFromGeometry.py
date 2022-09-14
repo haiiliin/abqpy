@@ -12,9 +12,7 @@ class LeafFromGeometry(Leaf):
     The LeafFromGeometry object is derived from the Leaf object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import displayGroupMdbToolset
     """
@@ -31,9 +29,7 @@ class LeafFromGeometry(Leaf):
         leaf.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 LeafFromGeometry
 

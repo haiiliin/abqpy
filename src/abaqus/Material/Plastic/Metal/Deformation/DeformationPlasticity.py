@@ -7,9 +7,7 @@ class DeformationPlasticity:
     r"""The DeformationPlasticity object specifies the deformation plasticity model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].deformationPlasticity
@@ -35,9 +33,7 @@ class DeformationPlasticity:
         """This method creates a DeformationPlasticity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].DeformationPlasticity
                 session.odbs[name].materials[name].DeformationPlasticity

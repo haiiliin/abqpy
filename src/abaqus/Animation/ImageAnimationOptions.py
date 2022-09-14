@@ -10,9 +10,7 @@ class ImageAnimationOptions(_OptionsBase):
     creates the **imageAnimationOptions** member when the animation module is imported.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import animation
             session.imageAnimationOptions

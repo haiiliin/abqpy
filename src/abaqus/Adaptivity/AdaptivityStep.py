@@ -18,9 +18,7 @@ class AdaptivityStep(StepBase):
     derived from the Step.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].steps[name]
@@ -40,9 +38,7 @@ class AdaptivityStep(StepBase):
         AdaptiveMeshConstraintState object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].steps[name].AdaptiveMeshConstraintState
 
@@ -112,9 +108,7 @@ class AdaptivityStep(StepBase):
         AdaptiveMeshConstraintState object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].steps[name].DisplacementAdaptiveMeshConstraintState
 
@@ -223,9 +217,7 @@ class AdaptivityStep(StepBase):
         AdaptiveMeshConstraintState object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].steps[name].VelocityAdaptiveMeshConstraintState
 
@@ -321,9 +313,7 @@ class AdaptivityStep(StepBase):
         This method creates an AdaptiveMeshDomain object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].steps[name].AdaptiveMeshDomain
 

@@ -9,9 +9,7 @@ class MeshEdgeArray(typing.List[MeshEdge]):
     """The MeshEdgeArray is a sequence of MeshEdge objects.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].elementEdges
@@ -25,9 +23,7 @@ class MeshEdgeArray(typing.List[MeshEdge]):
         """This method creates a MeshEdgeArray object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mesh.MeshEdgeArray
 
