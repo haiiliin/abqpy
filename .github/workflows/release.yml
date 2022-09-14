@@ -2,6 +2,12 @@ name: Update suggested version
 
 on:
   workflow_dispatch:
+    inputs:
+      update:
+        type: boolean
+        description: Update version number in the repo or not
+        required: true
+        default: true
 
 jobs:
   update-release:
@@ -26,7 +32,8 @@ jobs:
           config-name: release-drafter-v${{ matrix.version }}.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Update suggested version and create commit for 'V20**'
+      - name: Update suggested version and create commit for 'V${{ matrix.version }}'
+        if: ${{ github.event.inputs.update }}
         run: |
           echo "tag = ${{ steps.create_release_drafter.outputs.tag_name }}"
           git branch -a
@@ -36,14 +43,15 @@ jobs:
           python ".github/update-suggested-version.py" "${{ steps.create_release_drafter.outputs.tag_name }}"
           git add .
           git commit -m "Update version by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-      - name: Push to the protected branch 'V20**'
-        if: ${{ matrix.branch != 'main' }}
+      - name: Push to the protected branch 'V${{ matrix.version }}'
+        if: ${{ github.event.inputs.update }}
         uses: CasperWA/push-protected@v2
         with:
           token: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
           branch: V${{ matrix.version }}
   
   update-version-on-main:
+    if: ${{ github.event.inputs.update }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
