@@ -18,9 +18,7 @@ class GraphicsOptions:
     settings in the environment file. For more information, see Tuning graphics cards.
 
     .. note::
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.defaultGraphicsOptions
             session.graphicsOptions

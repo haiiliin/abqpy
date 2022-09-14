@@ -41,9 +41,7 @@ class ModelBase:
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name]
 
@@ -230,9 +228,7 @@ class ModelBase:
         """This method creates a Model object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.Model
 
@@ -279,9 +275,7 @@ class ModelBase:
         the corresponding Abaqus/CAE objects.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.Model
 
@@ -307,9 +301,7 @@ class ModelBase:
         corresponding Abaqus/CAE objects.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.Model
 
@@ -352,9 +344,7 @@ class ModelBase:
         information, see Translating Nastran data to Abaqus files.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.Model
 

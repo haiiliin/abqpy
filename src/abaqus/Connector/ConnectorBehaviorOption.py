@@ -18,9 +18,7 @@ class ConnectorBehaviorOption:
     derived from the ConnectorBehaviorOption.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].sections[name].behaviorOptions[i]
@@ -74,9 +72,7 @@ class ConnectorBehaviorOption:
         """This method creates a TangentialBehavior object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
                 session.odbs[name].sections[name].behaviorOptions[i].TangentialBehavior
@@ -141,9 +137,7 @@ class ConnectorBehaviorOption:
         """This method creates a DerivedComponent object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
                 session.odbs[name].sections[name].behaviorOptions[i].TangentialBehavior
@@ -177,9 +171,7 @@ class ConnectorBehaviorOption:
         allowable connector behavior option, derived component term, or connector section.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
                 session.odbs[name].sections[name].behaviorOptions[i].TangentialBehavior

@@ -7,9 +7,7 @@ class OdbNumericalProblemSummary:
     """The OdbNumericalProblemSummary object stores the numerical problem summary of a job.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.odbData[name].diagnosticData.numericalProblemSummary

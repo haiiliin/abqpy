@@ -7,9 +7,7 @@ class MdbDataStep:
     """The MdbDataStep object.It corresponds to same named step in the cae model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.mdbData[name].steps[i]

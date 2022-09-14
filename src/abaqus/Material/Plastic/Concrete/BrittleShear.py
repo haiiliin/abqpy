@@ -8,9 +8,7 @@ class BrittleShear:
     a brittle cracking model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].brittleCracking.brittleShear
@@ -52,9 +50,7 @@ class BrittleShear:
         """This method creates a BrittleShear object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].brittleCracking.BrittleShear
                 session.odbs[name].materials[name].brittleCracking.BrittleShear

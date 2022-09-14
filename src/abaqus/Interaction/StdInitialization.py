@@ -10,9 +10,7 @@ class StdInitialization(ContactInitialization):
     The StdInitialization object is derived from the ContactInitialization object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].contactInitializations[name]
@@ -61,9 +59,7 @@ class StdInitialization(ContactInitialization):
         """This method creates a StdInitialization object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].StdInitialization
 

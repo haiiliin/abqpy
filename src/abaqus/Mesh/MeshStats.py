@@ -7,9 +7,7 @@ class MeshStats:
     the getMeshStats command. The object does not have any methods.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import mesh
     """

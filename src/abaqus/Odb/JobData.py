@@ -7,9 +7,7 @@ class JobData:
     """The JobData object describes the context in which the analysis was run.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].jobData

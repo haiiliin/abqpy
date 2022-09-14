@@ -8,9 +8,7 @@ class DiagnosticPrint:
     specific diagnostic checks
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].steps[name].diagnosticPrint
@@ -91,9 +89,7 @@ class DiagnosticPrint:
         """This method creates a DiagnosticPrint object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].steps[name].DiagnosticPrint
 

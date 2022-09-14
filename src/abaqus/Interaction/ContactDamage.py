@@ -7,9 +7,7 @@ class ContactDamage:
     """The ContactDamage object specifies damage options for a contact interaction property.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].interactionProperties[name].damage
@@ -233,9 +231,7 @@ class ContactDamage:
         """This method creates a ContactDamage object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].interactionProperties[name].Damage
 

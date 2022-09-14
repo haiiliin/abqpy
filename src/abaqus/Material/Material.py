@@ -72,9 +72,7 @@ class Material(MaterialBase):
     that one Material object cannot contain two AcousticMedium objects, for example.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name]
@@ -100,9 +98,7 @@ class Material(MaterialBase):
         """This method creates an AcousticMedium object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].AcousticMedium
                 session.odbs[name].materials[name].AcousticMedium
@@ -176,9 +172,7 @@ class Material(MaterialBase):
         """This method creates a BrittleCracking object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].BrittleCracking
                 session.odbs[name].materials[name].BrittleCracking
@@ -212,9 +206,7 @@ class Material(MaterialBase):
         """This method creates a CapPlasticity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].CapPlasticity
                 session.odbs[name].materials[name].CapPlasticity
@@ -247,9 +239,7 @@ class Material(MaterialBase):
         """This method creates a CastIronPlasticity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].CastIronPlasticity
                 session.odbs[name].materials[name].CastIronPlasticity
@@ -289,9 +279,7 @@ class Material(MaterialBase):
         """This method creates a ClayPlasticity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].ClayPlasticity
                 session.odbs[name].materials[name].ClayPlasticity
@@ -333,9 +321,7 @@ class Material(MaterialBase):
         """This method creates a Concrete object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Concrete
                 session.odbs[name].materials[name].Concrete
@@ -368,9 +354,7 @@ class Material(MaterialBase):
         """This method creates a ConcreteDamagedPlasticity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].ConcreteDamagedPlasticity
                 session.odbs[name].materials[name].ConcreteDamagedPlasticity
@@ -409,9 +393,7 @@ class Material(MaterialBase):
         """This method creates a Conductivity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Conductivity
                 session.odbs[name].materials[name].Conductivity
@@ -454,9 +436,7 @@ class Material(MaterialBase):
         """This method creates a Creep object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Creep
                 session.odbs[name].materials[name].Creep
@@ -500,9 +480,7 @@ class Material(MaterialBase):
         """This method creates a CrushableFoam object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].CrushableFoam
                 session.odbs[name].materials[name].CrushableFoam
@@ -533,6 +511,7 @@ class Material(MaterialBase):
         )
         return self.crushableFoam
 
+    @abaqus_method_doc
     def Damping(
         self,
         alpha: float = 0,
@@ -543,9 +522,7 @@ class Material(MaterialBase):
         """This method creates a Damping object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Damping
                 session.odbs[name].materials[name].Damping
@@ -585,9 +562,7 @@ class Material(MaterialBase):
         """This method creates a DeformationPlasticity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].DeformationPlasticity
                 session.odbs[name].materials[name].DeformationPlasticity
@@ -623,9 +598,7 @@ class Material(MaterialBase):
         """This method creates a Density object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Density
                 session.odbs[name].materials[name].Density
@@ -666,9 +639,7 @@ class Material(MaterialBase):
         """This method creates a Depvar object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Depvar
                 session.odbs[name].materials[name].Depvar
@@ -706,9 +677,7 @@ class Material(MaterialBase):
         """This method creates a Dielectric object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Dielectric
                 session.odbs[name].materials[name].Dielectric
@@ -749,9 +718,7 @@ class Material(MaterialBase):
         """This method creates a Diffusivity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Diffusivity
                 session.odbs[name].materials[name].Diffusivity
@@ -798,9 +765,7 @@ class Material(MaterialBase):
         """This method creates a DruckerPrager object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].DruckerPrager
                 session.odbs[name].materials[name].DruckerPrager
@@ -861,9 +826,7 @@ class Material(MaterialBase):
         """This method creates an Elastic object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Elastic
                 session.odbs[name].materials[name].Elastic
@@ -931,9 +894,7 @@ class Material(MaterialBase):
         """This method creates an ElectricalConductivity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].ElectricalConductivity
                 session.odbs[name].materials[name].ElectricalConductivity
@@ -982,9 +943,7 @@ class Material(MaterialBase):
         """This method creates an Eos object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Eos
                 session.odbs[name].materials[name].Eos
@@ -1087,9 +1046,7 @@ class Material(MaterialBase):
         """This method creates an Expansion object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Expansion
                 session.odbs[name].materials[name].Expansion
@@ -1138,9 +1095,7 @@ class Material(MaterialBase):
         """This method creates a FluidLeakoff object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].FluidLeakoff
                 session.odbs[name].materials[name].FluidLeakoff
@@ -1180,9 +1135,7 @@ class Material(MaterialBase):
         """This method creates a GapFlow object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].GapFlow
                 session.odbs[name].materials[name].GapFlow
@@ -1218,9 +1171,7 @@ class Material(MaterialBase):
         """This method creates a GasketMembraneElastic object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].GasketMembraneElastic
                 session.odbs[name].materials[name].GasketMembraneElastic
@@ -1266,9 +1217,7 @@ class Material(MaterialBase):
         """This method creates a GasketThicknessBehavior object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].GasketThicknessBehavior
                 session.odbs[name].materials[name].GasketThicknessBehavior
@@ -1349,9 +1298,7 @@ class Material(MaterialBase):
         """This method creates a GasketTransverseShearElastic object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].GasketTransverseShearElastic
                 session.odbs[name].materials[name].GasketTransverseShearElastic
@@ -1387,9 +1334,7 @@ class Material(MaterialBase):
         """This method creates a Gel object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Gel
                 session.odbs[name].materials[name].Gel
@@ -1432,9 +1377,7 @@ class Material(MaterialBase):
         """This method creates a Hyperelastic object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Hyperelastic
                 session.odbs[name].materials[name].Hyperelastic
@@ -1546,9 +1489,7 @@ class Material(MaterialBase):
         """This method creates a Hyperfoam object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Hyperfoam
                 session.odbs[name].materials[name].Hyperfoam
@@ -1591,9 +1532,7 @@ class Material(MaterialBase):
         """This method creates a Hypoelastic object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Hypoelastic
                 session.odbs[name].materials[name].Hypoelastic
@@ -1619,9 +1558,7 @@ class Material(MaterialBase):
         """This method creates an InelasticHeatFraction object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].InelasticHeatFraction
                 session.odbs[name].materials[name].InelasticHeatFraction
@@ -1650,9 +1587,7 @@ class Material(MaterialBase):
         """This method creates a JouleHeatFraction object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].JouleHeatFraction
                 session.odbs[name].materials[name].JouleHeatFraction
@@ -1680,9 +1615,7 @@ class Material(MaterialBase):
         """This method creates a LatentHeat object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].LatentHeat
                 session.odbs[name].materials[name].LatentHeat
@@ -1718,9 +1651,7 @@ class Material(MaterialBase):
         """This method creates a LowDensityFoam object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].LowDensityFoam
                 session.odbs[name].materials[name].LowDensityFoam
@@ -1782,9 +1713,7 @@ class Material(MaterialBase):
         """This method creates a MagneticPermeability object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MagneticPermeability
                 session.odbs[name].materials[name].MagneticPermeability
@@ -1850,9 +1779,7 @@ class Material(MaterialBase):
         """This method creates a MohrCoulombPlasticity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MohrCoulombPlasticity
                 session.odbs[name].materials[name].MohrCoulombPlasticity
@@ -1900,9 +1827,7 @@ class Material(MaterialBase):
         """This method creates a MoistureSwelling object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MoistureSwelling
                 session.odbs[name].materials[name].MoistureSwelling
@@ -1933,9 +1858,7 @@ class Material(MaterialBase):
         """This method creates a Permeability object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Permeability
                 session.odbs[name].materials[name].Permeability
@@ -1986,9 +1909,7 @@ class Material(MaterialBase):
         """This method creates a Piezoelectric object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Piezoelectric
                 session.odbs[name].materials[name].Piezoelectric
@@ -2030,9 +1951,7 @@ class Material(MaterialBase):
         """This method creates a Plastic object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Plastic
                 session.odbs[name].materials[name].Plastic
@@ -2093,9 +2012,7 @@ class Material(MaterialBase):
         """This method creates a PoreFluidExpansion object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].PoreFluidExpansion
                 session.odbs[name].materials[name].PoreFluidExpansion
@@ -2132,9 +2049,7 @@ class Material(MaterialBase):
         """This method creates a PorousBulkModuli object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].PorousBulkModuli
                 session.odbs[name].materials[name].PorousBulkModuli
@@ -2165,9 +2080,7 @@ class Material(MaterialBase):
         """This method creates a PorousElastic object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].PorousElastic
                 session.odbs[name].materials[name].PorousElastic
@@ -2209,9 +2122,7 @@ class Material(MaterialBase):
         """This method creates a PorousMetalPlasticity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].PorousMetalPlasticity
                 session.odbs[name].materials[name].PorousMetalPlasticity
@@ -2249,9 +2160,7 @@ class Material(MaterialBase):
         """This method creates a Regularization object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Regularization
                 session.odbs[name].materials[name].Regularization
@@ -2285,9 +2194,7 @@ class Material(MaterialBase):
         """This method creates a Solubility object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Solubility
                 session.odbs[name].materials[name].Solubility
@@ -2326,9 +2233,7 @@ class Material(MaterialBase):
         r"""This method creates a Sorption object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Sorption
                 session.odbs[name].materials[name].Sorption
@@ -2383,9 +2288,7 @@ class Material(MaterialBase):
         """This method creates a SpecificHeat object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].SpecificHeat
                 session.odbs[name].materials[name].SpecificHeat
@@ -2427,9 +2330,7 @@ class Material(MaterialBase):
         """This method creates a Swelling object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Swelling
                 session.odbs[name].materials[name].Swelling
@@ -2472,9 +2373,7 @@ class Material(MaterialBase):
         """This method creates a UserMaterial object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].UserMaterial
                 session.odbs[name].materials[name].UserMaterial
@@ -2530,9 +2429,7 @@ class Material(MaterialBase):
         """This method creates a UserOutputVariables object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].UserOutputVariables
                 session.odbs[name].materials[name].UserOutputVariables
@@ -2571,9 +2468,7 @@ class Material(MaterialBase):
         """This method creates a Viscoelastic object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Viscoelastic
                 session.odbs[name].materials[name].Viscoelastic
@@ -2642,9 +2537,7 @@ class Material(MaterialBase):
         """This method creates a Viscosity object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Viscosity
                 session.odbs[name].materials[name].Viscosity
@@ -2684,9 +2577,7 @@ class Material(MaterialBase):
         """This method creates a Viscous object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Viscous
                 session.odbs[name].materials[name].Viscous
@@ -2736,9 +2627,7 @@ class Material(MaterialBase):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].DuctileDamageInitiation
                 session.odbs[name].materials[name].DuctileDamageInitiation
@@ -2819,9 +2708,7 @@ class Material(MaterialBase):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].FldDamageInitiation
                 session.odbs[name].materials[name].FldDamageInitiation
@@ -2902,9 +2789,7 @@ class Material(MaterialBase):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].FlsdDamageInitiation
                 session.odbs[name].materials[name].FlsdDamageInitiation
@@ -2985,9 +2870,7 @@ class Material(MaterialBase):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].JohnsonCookDamageInitiation
                 session.odbs[name].materials[name].JohnsonCookDamageInitiation
@@ -3069,9 +2952,7 @@ class Material(MaterialBase):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MaxeDamageInitiation
                 session.odbs[name].materials[name].MaxeDamageInitiation
@@ -3156,9 +3037,7 @@ class Material(MaterialBase):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MaxsDamageInitiation
                 session.odbs[name].materials[name].MaxsDamageInitiation
@@ -3242,9 +3121,7 @@ class Material(MaterialBase):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MkDamageInitiation
                 session.odbs[name].materials[name].MkDamageInitiation
@@ -3325,9 +3202,7 @@ class Material(MaterialBase):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MsfldDamageInitiation
                 session.odbs[name].materials[name].MsfldDamageInitiation
@@ -3409,9 +3284,7 @@ class Material(MaterialBase):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].QuadeDamageInitiation
                 session.odbs[name].materials[name].QuadeDamageInitiation
@@ -3496,9 +3369,7 @@ class Material(MaterialBase):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].QuadsDamageInitiation
                 session.odbs[name].materials[name].QuadsDamageInitiation
@@ -3583,9 +3454,7 @@ class Material(MaterialBase):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MaxpeDamageInitiation
                 session.odbs[name].materials[name].MaxpeDamageInitiation
@@ -3670,9 +3539,7 @@ class Material(MaterialBase):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].MaxpsDamageInitiation
                 session.odbs[name].materials[name].MaxpsDamageInitiation
@@ -3756,9 +3623,7 @@ class Material(MaterialBase):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].ShearDamageInitiation
                 session.odbs[name].materials[name].ShearDamageInitiation
@@ -3839,9 +3704,7 @@ class Material(MaterialBase):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].HashinDamageInitiation
                 session.odbs[name].materials[name].HashinDamageInitiation

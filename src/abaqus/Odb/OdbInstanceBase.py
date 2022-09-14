@@ -22,9 +22,7 @@ class OdbInstanceBase:
     """A part instance is the usage of a part within an assembly.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].rootAssembly.instances[name]
@@ -87,9 +85,7 @@ class OdbInstanceBase:
         """This method creates an OdbInstance object from an OdbPart object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].rootAssembly.Instance
 

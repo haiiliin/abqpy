@@ -11,9 +11,7 @@ class TypeBC(BoundaryCondition):
     The TypeBC object is derived from the BoundaryCondition object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].boundaryConditions[name]
@@ -51,9 +49,7 @@ class TypeBC(BoundaryCondition):
         """This method creates an TypeBC object.
         
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].EncastreBC
                 mdb.models[name].PinnedBC
@@ -99,9 +95,7 @@ class TypeBC(BoundaryCondition):
         """This method creates an encastre TypeBC object.
         
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].EncastreBC
 
@@ -141,9 +135,7 @@ class TypeBC(BoundaryCondition):
         """This method creates a pinned TypeBC object.
         
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].PinnedBC
 
@@ -183,9 +175,7 @@ class TypeBC(BoundaryCondition):
         """This method creates a TypeBC object that specifies symmetry about the **X**-axis.
         
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].XsymmBC
 
@@ -225,9 +215,7 @@ class TypeBC(BoundaryCondition):
         """This method creates a TypeBC object that specifies symmetry about the **Y**-axis.
         
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].YsymmBC
 
@@ -267,9 +255,7 @@ class TypeBC(BoundaryCondition):
         """This method creates a TypeBC object that specifies symmetry about the **Z**-axis.
         
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ZsymmBC
 
@@ -309,9 +295,7 @@ class TypeBC(BoundaryCondition):
         """This method creates a TypeBC object that specifies antisymmetry about the **X**-axis.
         
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].XasymmBC
 
@@ -351,9 +335,7 @@ class TypeBC(BoundaryCondition):
         """This method creates a TypeBC object that specifies antisymmetry about the **Y**-axis.
         
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].YasymmBC
 
@@ -393,9 +375,7 @@ class TypeBC(BoundaryCondition):
         """This method creates a TypeBC object that specifies antisymmetry about the **Z**-axis.
         
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ZasymmBC
 

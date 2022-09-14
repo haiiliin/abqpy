@@ -10,9 +10,7 @@ class PlyStackPlotOptions(_OptionsBase):
     *detailPlotOptions.plyStackPlotPlotOptions* member whenever a Viewport is created.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.viewports[name].detailPlotOptions.plyStackPlotOptions
     """

@@ -33,9 +33,7 @@ class SectionOdb(OdbBase):
         """This method creates an AcousticInfiniteSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].AcousticInfiniteSection
                 session.odbs[name].AcousticInfiniteSection
@@ -76,9 +74,7 @@ class SectionOdb(OdbBase):
         """This method creates an AcousticInterfaceSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].AcousticInterfaceSection
                 session.odbs[name].AcousticInterfaceSection
@@ -139,9 +135,7 @@ class SectionOdb(OdbBase):
         """This method creates a BeamSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].BeamSection
                 session.odbs[name].BeamSection
@@ -286,9 +280,7 @@ class SectionOdb(OdbBase):
         """This method creates a CohesiveSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].CohesiveSection
                 session.odbs[name].CohesiveSection
@@ -359,9 +351,7 @@ class SectionOdb(OdbBase):
         """This method creates a CompositeShellSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].compositeLayups[i].CompositeShellSection
                 mdb.models[name].CompositeShellSection
@@ -469,9 +459,7 @@ class SectionOdb(OdbBase):
         """This method creates a CompositeSolidSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].CompositeSolidSection
                 session.odbs[name].CompositeSolidSection
@@ -525,9 +513,7 @@ class SectionOdb(OdbBase):
         """This method creates a ConnectorSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ConnectorSection
                 session.odbs[name].ConnectorSection
@@ -650,9 +636,7 @@ class SectionOdb(OdbBase):
         """This method creates a EulerianSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].EulerianSection
                 session.odbs[name].EulerianSection
@@ -687,9 +671,7 @@ class SectionOdb(OdbBase):
         """This method creates a GasketSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].GasketSection
                 session.odbs[name].GasketSection
@@ -754,9 +736,7 @@ class SectionOdb(OdbBase):
         """This method creates a GeneralStiffnessSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].GeneralStiffnessSection
                 session.odbs[name].GeneralStiffnessSection
@@ -847,9 +827,7 @@ class SectionOdb(OdbBase):
         """This method creates a HomogeneousShellSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].compositeLayups[i].HomogeneousShellSection
                 mdb.models[name].HomogeneousShellSection
@@ -955,9 +933,7 @@ class SectionOdb(OdbBase):
         """This method creates a HomogeneousSolidSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].HomogeneousSolidSection
                 session.odbs[name].HomogeneousSolidSection
@@ -1001,9 +977,7 @@ class SectionOdb(OdbBase):
         """This method creates a MembraneSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].MembraneSection
                 session.odbs[name].MembraneSection
@@ -1068,9 +1042,7 @@ class SectionOdb(OdbBase):
         """This method creates a MPCSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].MPCSection
                 session.odbs[name].MPCSection
@@ -1115,9 +1087,7 @@ class SectionOdb(OdbBase):
         """This method creates a PEGSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].PEGSection
                 session.odbs[name].PEGSection
@@ -1160,9 +1130,7 @@ class SectionOdb(OdbBase):
         """This method creates a SurfaceSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SurfaceSection
                 session.odbs[name].SurfaceSection
@@ -1195,9 +1163,7 @@ class SectionOdb(OdbBase):
         """This method creates a TrussSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].TrussSection
                 session.odbs[name].TrussSection

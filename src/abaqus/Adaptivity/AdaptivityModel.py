@@ -18,9 +18,7 @@ class AdaptivityModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name]
     """
@@ -57,9 +55,7 @@ class AdaptivityModel(ModelBase):
         AdaptiveMeshConstraint object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].AdaptiveMeshConstraint
 
@@ -111,9 +107,7 @@ class AdaptivityModel(ModelBase):
         """This method creates an AdaptiveMeshControl object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].AdaptiveMeshConstraint
 
@@ -209,9 +203,7 @@ class AdaptivityModel(ModelBase):
         """This method creates a DisplacementAdaptiveMeshConstraint object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].AdaptiveMeshConstraint
 
@@ -309,9 +301,7 @@ class AdaptivityModel(ModelBase):
         """This method creates a RemeshingRule object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].AdaptiveMeshConstraint
 
@@ -429,9 +419,7 @@ class AdaptivityModel(ModelBase):
         """This method creates a VelocityAdaptiveMeshConstraint object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].AdaptiveMeshConstraint
 

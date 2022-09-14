@@ -6,9 +6,7 @@ class Image:
     file. Upon creation, the Image object is added to the session.images repository.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.images[name]
     """
@@ -26,9 +24,7 @@ class Image:
         """This method creates an Image object from the contents of the specified file.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.Image
 

@@ -20,9 +20,7 @@ class InteractionContactInitializationModel(ModelBase):
         """This method creates a StdInitialization object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].StdInitialization
 

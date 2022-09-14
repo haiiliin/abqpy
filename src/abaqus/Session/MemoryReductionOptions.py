@@ -9,9 +9,7 @@ class MemoryReductionOptions:
     Abaqus creates the **MemoryReductionOptions** member when a session is started.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.memoryReductionOptions
     """

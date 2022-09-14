@@ -8,9 +8,7 @@ class NodeQuery:
     import the visualization module.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.nodeQuery

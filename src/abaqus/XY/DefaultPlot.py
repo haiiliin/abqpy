@@ -10,9 +10,7 @@ class DefaultPlot:
     automatically created when opening a session.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.defaultPlot

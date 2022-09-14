@@ -11,9 +11,7 @@ class AnnotationsToPlotArray(typing.List[Annotation]):
     can control which annotations are displayed in a particular viewport.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import annotationToolset
             session.viewports[name].annotationsToPlot

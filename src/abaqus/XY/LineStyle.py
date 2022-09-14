@@ -9,9 +9,7 @@ class LineStyle:
     LineStyle objects can be created using the methods described below.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.charts[name].area.border
@@ -93,9 +91,7 @@ class LineStyle:
         """This method creates a LineStyle.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.LineStyle
                 xyPlot.LineStyle

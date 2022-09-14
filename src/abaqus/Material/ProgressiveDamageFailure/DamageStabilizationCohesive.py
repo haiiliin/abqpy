@@ -6,9 +6,7 @@ class DamageStabilizationCohesive:
     damage model for surface-based cohesive behavior or enriched cohesive behavior.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].ductileDamageInitiation.damageStabilizationCohesive
@@ -51,9 +49,7 @@ class DamageStabilizationCohesive:
         """This method creates a DamageStabilizationCohesive object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].ductileDamageInitiation.DamageStabilizationCohesive
                 mdb.models[name].materials[name].fldDamageInitiation.DamageStabilizationCohesive

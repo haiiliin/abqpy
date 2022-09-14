@@ -10,9 +10,7 @@ class CellArray(typing.List[Cell]):
     """The CellArray is a sequence of Cell objects.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].allInternalSets[name].cells
@@ -35,9 +33,7 @@ class CellArray(typing.List[Cell]):
         """This method creates a CellArray object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 part.CellArray
 
@@ -77,9 +73,7 @@ class CellArray(typing.List[Cell]):
             that point. If **coordinates** is a sequence of sequence of Floats, findAt returns a
             sequence of Cell objects at the given locations. The sequence of sequence of Floats must
             be a sequence of sequence of point and normal data, not a sequence of point data. For
-            example,
-            
-            .. code-block:: python
+            example::
             
                 cells1 = myCrackedBlockInstance.cells.findAt(((5.5, -8.3, 294.2),), 
                                                              ((12.1, -8.3, 287.8),), 

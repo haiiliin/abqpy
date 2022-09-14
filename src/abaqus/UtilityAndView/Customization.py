@@ -8,9 +8,7 @@ from abqpy.decorators import abaqus_function_doc
 @abaqus_function_doc
 def journalMethodCall(objectPath: str, methodName: str, args: tuple, kargs: str):
     """This function may be used by a user-defined command to record itself in the Abaqus
-    journal file. For example
-    
-    .. code-block:: python
+    journal file. For example::
     
         def setValues(self, **kargs):
             for arg,value in kargs.items():
@@ -26,9 +24,7 @@ def journalMethodCall(objectPath: str, methodName: str, args: tuple, kargs: str)
         should call journalMethodCall.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             journalMethodCall
 

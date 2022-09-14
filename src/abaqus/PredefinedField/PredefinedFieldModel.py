@@ -17,9 +17,7 @@ class PredefinedFieldModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name]
     """
@@ -31,9 +29,7 @@ class PredefinedFieldModel(ModelBase):
         """This method creates a FluidCavityPressure object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].FluidCavityPressure
 
@@ -69,9 +65,7 @@ class PredefinedFieldModel(ModelBase):
         """This method creates an InitialState predefined field object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].InitialState
 
@@ -127,9 +121,7 @@ class PredefinedFieldModel(ModelBase):
         """This method creates a KinematicHardening object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].KinematicHardening
 
@@ -191,9 +183,7 @@ class PredefinedFieldModel(ModelBase):
         """This method creates a MaterialAssignment predefined field object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].MaterialAssignment
 
@@ -257,9 +247,7 @@ class PredefinedFieldModel(ModelBase):
         """This method creates a Temperature object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Temperature
 
@@ -390,9 +378,7 @@ class PredefinedFieldModel(ModelBase):
         """This method creates a Velocity predefined field object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Velocity
 
@@ -459,9 +445,7 @@ class PredefinedFieldModel(ModelBase):
         """This method creates a Stress predefined field object.
 
         .. note::
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Stress
 
