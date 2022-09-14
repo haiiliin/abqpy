@@ -31,8 +31,8 @@ jobs:
           echo "tag = ${{ steps.create_release_drafter.outputs.tag_name }}"
           git branch -a
           git checkout V${{ matrix.version }}  # attach this repo
-          git config --global user.email "abqpy-auto-update"
-          git config --global user.name "abqpy-auto-update"
+          git config --global user.email "hailin.wang@connect.polyu.hk"
+          git config --global user.name "abqpy-bot"
           python ".github/update-suggested-version.py" "${{ steps.create_release_drafter.outputs.tag_name }}"
           git add .
           git commit -m "Update version by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
@@ -65,8 +65,8 @@ jobs:
           echo "tag = ${{ steps.create_release_drafter.outputs.tag_name }}"
           git branch -a
           git checkout main  # attach this repo
-          git config --global user.email "abqpy-auto-update"
-          git config --global user.name "abqpy-auto-update"
+          git config --global user.email "hailin.wang@connect.polyu.hk"
+          git config --global user.name "abqpy-bot"
           python ".github/update-suggested-version.py" "${{ steps.create_release_drafter.outputs.tag_name }}"
           git add .
           git commit -m "Update version by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
