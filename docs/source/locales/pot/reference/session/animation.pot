@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2018.3.2.dev14+g0a05bcbb\n"
+"Project-Id-Version: abqpy 2018.3.2.dev22+gce8b181e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 00:16+0000\n"
+"POT-Creation-Date: 2022-09-14 09:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,10 +43,10 @@ msgstr ""
 #: ../../../../src/abaqus/Animation/ImageAnimationOptions.py:docstring of abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions:7
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie:6
 #: ../../../../src/abaqus/Animation/QuickTimeOptions.py:docstring of abaqus.Animation.QuickTimeOptions.QuickTimeOptions:7
-msgid "This object can be accessed by:"
+msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationOptions.py:docstring of abaqus.Animation.AnimationOptions.AnimationOptions:16
+#: ../../../../src/abaqus/Animation/AnimationOptions.py:docstring of abaqus.Animation.AnimationOptions.AnimationOptions:14
 msgid "Check `AnimationOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -523,7 +523,7 @@ msgstr ""
 msgid "The following commands operate on Session objects. For more information about the Session object, see Session object."
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession:13
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession:11
 msgid "Check `AnimationSession on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationsessionpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1193,94 +1193,94 @@ msgid "This method opens an existing output database (.odb) file and creates a n
 msgstr ""
 
 #: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:5
-msgid "This function can be accessed by:"
+msgid "This function can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:12
-#: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie:14
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:10
+#: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie:12
 msgid "Check `Movie on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-moviepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:17
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:15
 msgid "**name**"
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:17
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:15
 #: ../../docstring of abaqus.Animation.Movie.Movie.name:2
 msgid "A String specifying the repository name for the movie."
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:21
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:19
 #: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation:12
 msgid "**fileName**"
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:20
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:18
 #: ../../docstring of abaqus.Animation.Movie.Movie.fileName:2
 msgid "A String specifying the file from which the movie is to be read. The file extension must be specified and indicates the movie format (.avi, .mov, .mpeg, or .wmv)."
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:25
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:23
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie.setValues:11
 msgid "**startFrame**"
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:24
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:22
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie.setValues:10
 #: ../../docstring of abaqus.Animation.Movie.Movie.startFrame:2
 msgid "An Int specifying the first frame to be displayed from this movie. The default value is 0."
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:29
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:27
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie.setValues:15
 msgid "**endFrame**"
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:28
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:26
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie.setValues:14
 #: ../../docstring of abaqus.Animation.Movie.Movie.endFrame:2
 msgid "An Int specifying the last frame to be displayed from this movie. A negative number will indicate reverse numbering: -1 is the last frame of the movie. The default value is −1."
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:34
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:32
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie.setValues:20
 msgid "**timelineStartFrame**"
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:32
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:30
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie.setValues:18
 #: ../../docstring of abaqus.Animation.Movie.Movie.timelineStartFrame:2
 msgid "An Int specifying the global timeline frame number that corresponds to **startFrame**. A value of 0 will indicate the first frame to be displayed in the viewport. The default value is 0."
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:39
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:37
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie.setValues:25
 msgid "**timelineEndFrame**"
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:37
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:35
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie.setValues:23
 #: ../../docstring of abaqus.Animation.Movie.Movie.timelineEndFrame:2
 msgid "An Int specifying the global timeline frame number that corresponds to **endFrame**. A negative number will indicate reverse numbering: -1 indicates the last frame to be displayed in the viewport. The default value is −1."
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:43
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:41
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie.setValues:29
 msgid "**timelineStartTime**"
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:42
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:40
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie.setValues:28
 #: ../../docstring of abaqus.Animation.Movie.Movie.timelineStartTime:2
 msgid "A Float specifying the global timeline time that corresponds to the time of **startFrame**. The default value is 0.0."
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:48
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:46
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie.setValues:38
 msgid "**timelineEndTime**"
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:46
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:44
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie.setValues:32
 #: ../../docstring of abaqus.Animation.Movie.Movie.timelineEndTime:2
 msgid "The SymbolicConstant END_FRAME_TIME or a Float specifying the global timeline time that corresponds to the time of **endFrame**. The SymbolicConstant END_FRAME_TIME indicates the time in this movie corresponding to **endFrame**. The default value is END_FRAME_TIME."
@@ -1290,11 +1290,11 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:56
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:54
 msgid ":obj:`Movie`"
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:53
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:51
 msgid "A :py:class:`~abaqus.Animation.Movie.Movie` object."
 msgstr ""
 
@@ -1303,27 +1303,27 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:61
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:59
 msgid "ValueError: :obj:`Unable` :obj:`to` :obj:`open` :obj:`movie` :obj:`file`"
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:61
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:59
 msgid "If **fileName** does not exist or can not be read."
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:64
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:62
 msgid "ValueError: :obj:`Unsupported` :obj:`movie` format."
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:64
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:62
 msgid "If **fileName** references an unsupported movie file format"
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:75
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:73
 msgid "ValueError: :obj:`Unable` :obj:`to` :obj:`decode` :obj:`movie` :obj:`file`"
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:67
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:65
 msgid "If the contents of **fileName** are corrupt or can not be decoded."
 msgstr ""
 
@@ -1364,7 +1364,7 @@ msgstr ""
 msgid "The AVIOptions object is used to store values and attributes to be used in generating AVI animation. The AVIOptions object has no constructor. Abaqus creates the **aviOptions** member when the animation module is imported."
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/AVIOptions.py:docstring of abaqus.Animation.AVIOptions.AVIOptions:15
+#: ../../../../src/abaqus/Animation/AVIOptions.py:docstring of abaqus.Animation.AVIOptions.AVIOptions:13
 msgid "Check `AVIOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-avioptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1507,7 +1507,7 @@ msgstr ""
 msgid "The ImageAnimation object is used to build frame by frame animation."
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/ImageAnimation.py:docstring of abaqus.Animation.ImageAnimation.ImageAnimation:13
+#: ../../../../src/abaqus/Animation/ImageAnimation.py:docstring of abaqus.Animation.ImageAnimation.ImageAnimation:11
 msgid "Check `ImageAnimation on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imageanimationpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1571,7 +1571,7 @@ msgstr ""
 msgid "The ImageAnimationOptions object is used to store values and attributes associated with saving viewport animations. The ImageAnimationOptions object has no constructor. Abaqus creates the **imageAnimationOptions** member when the animation module is imported."
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/ImageAnimationOptions.py:docstring of abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions:15
+#: ../../../../src/abaqus/Animation/ImageAnimationOptions.py:docstring of abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions:13
 msgid "Check `ImageAnimationOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imageanimationoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1801,7 +1801,7 @@ msgstr ""
 msgid "The QuickTimeOptions object is used to store values and attributes to be used in generating QuickTime animation. The QuickTimeOptions object has no constructor. Abaqus creates the **quickTimeOptions** member when the animation module is imported."
 msgstr ""
 
-#: ../../../../src/abaqus/Animation/QuickTimeOptions.py:docstring of abaqus.Animation.QuickTimeOptions.QuickTimeOptions:15
+#: ../../../../src/abaqus/Animation/QuickTimeOptions.py:docstring of abaqus.Animation.QuickTimeOptions.QuickTimeOptions:13
 msgid "Check `QuickTimeOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-quicktimeoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 

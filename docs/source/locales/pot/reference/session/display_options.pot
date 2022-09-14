@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2018.3.2.dev14+g0a05bcbb\n"
+"Project-Id-Version: abqpy 2018.3.2.dev22+gce8b181e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 00:16+0000\n"
+"POT-Creation-Date: 2022-09-14 09:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,10 +55,10 @@ msgstr ""
 #: ../../../../src/abaqus/DisplayOptions/StopConditionDisplayOptions.py:docstring of abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions:9
 #: ../../../../src/abaqus/DisplayOptions/SymbolDisplayOptions.py:docstring of abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions:7
 #: ../../../../src/abaqus/DisplayOptions/ViewportAnnotationOptions.py:docstring of abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions:14
-msgid "This object can be accessed by:"
+msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/AssemblyDisplayOptions.py:docstring of abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions:17
+#: ../../../../src/abaqus/DisplayOptions/AssemblyDisplayOptions.py:docstring of abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions:15
 msgid "Check `AssemblyDisplayOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblydisplayoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -668,7 +668,7 @@ msgstr ""
 msgid "The BCDisplayOptions object stores settings that specify how assemblies are to be displayed in a particular viewport when session.viewports[name].assemblyDisplay.bcs=ON The BCDisplayOptions object has no constructor. When you create a new viewport, the settings are copied from the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/BCDisplayOptions.py:docstring of abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions:17
+#: ../../../../src/abaqus/DisplayOptions/BCDisplayOptions.py:docstring of abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions:15
 msgid "Check `BCDisplayOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bcdisplayoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -797,7 +797,7 @@ msgstr ""
 msgid "The ConstraintDisplayOptions object stores settings that specify how assemblies are to be displayed in a particular viewport when session.viewports[name].assemblyDisplay.constraints=ON The ConstraintDisplayOptions object has no constructor. When you create a new viewport, the settings are copied from the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/ConstraintDisplayOptions.py:docstring of abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions:17
+#: ../../../../src/abaqus/DisplayOptions/ConstraintDisplayOptions.py:docstring of abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions:15
 msgid "Check `ConstraintDisplayOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-constraintdisplayoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -862,7 +862,7 @@ msgstr ""
 msgid "The EngineeringFeatureDisplayOptions object stores settings that specify how assemblies are to be displayed in a particular viewport when session.viewports[name].assemblyDisplay.engineeringFeatures=ON The EngineeringFeatureDisplayOptions object has no constructor. When you create a new viewport, the settings are copied from the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/EngineeringFeatureDisplayOptions.py:docstring of abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions:20
+#: ../../../../src/abaqus/DisplayOptions/EngineeringFeatureDisplayOptions.py:docstring of abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions:18
 msgid "Check `EngineeringFeatureDisplayOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-engineeringfeaturedisplayoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -935,7 +935,7 @@ msgstr ""
 msgid "The GeometricRestrictionDisplayOptions object stores settings that specify how assemblies are to be displayed in a particular viewport when session.viewports[name].assemblyDisplay.geometricRestrictions=ON The GeometricRestrictionDisplayOptions object has no constructor. When you create a new viewport, the settings are copied from the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/GeometricRestrictionDisplayOptions.py:docstring of abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions:17
+#: ../../../../src/abaqus/DisplayOptions/GeometricRestrictionDisplayOptions.py:docstring of abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions:15
 msgid "Check `GeometricRestrictionDisplayOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-geometricrestrictiondisplayoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1120,7 +1120,7 @@ msgstr ""
 msgid "The GeometryDisplayOptions object stores settings that specify how assemblies are to be displayed in a particular viewport. The GeometryDisplayOptions object has no constructor. When you create a new viewport, the settings are copied from the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/GeometryDisplayOptions.py:docstring of abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions:18
+#: ../../../../src/abaqus/DisplayOptions/GeometryDisplayOptions.py:docstring of abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions:16
 msgid "Check `GeometryDisplayOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-geometrydisplayoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1225,7 +1225,7 @@ msgstr ""
 msgid "The GraphicsInfo object stores information about the graphics adapter installed in your system. The GraphicsInfo object has no constructor or methods; Abaqus creates the **GraphicsInfo** member when a session is started. If you execute Abaqus/CAE on a remote system and display the main window locally, the *glx server* is your local machine and the *glx client* is the remote machine. This definition of client and server follows the X11 naming convention. If you execute and display Abaqus/CAE on the same machine, you will typically see identical values for both the name of the server and the name of the client. The members are all read-only."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/GraphicsInfo.py:docstring of abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo:20
+#: ../../../../src/abaqus/DisplayOptions/GraphicsInfo.py:docstring of abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo:18
 msgid "Check `GraphicsInfo on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-graphicsinfopyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1312,7 +1312,7 @@ msgstr ""
 msgid "The GraphicsOptions object stores settings that control how objects are rendered in all viewports. GraphicsOptions objects are accessed in one of two ways: - The default graphics options. These settings are used as defaults when you start a session and by the Defaults button on the Graphics ConstrainedSketchOptions dialog box. - The current graphics options. The GraphicsOptions object has no constructor; Abaqus creates both the **defaultGraphicsOptions** and the **graphicsOptions** members when a session is started. When you start a session, Abaqus detects the graphics hardware installed on your system and uses the setValues method in the environment file (abaqus_v6.env ) to modify the members of the GraphicsOptions object. If your graphics hardware is not supported by Abaqus/CAE, or if you wish to override the default graphics options, you can modify settings in the environment file. For more information, see Tuning graphics cards."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/GraphicsOptions.py:docstring of abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions:24
+#: ../../../../src/abaqus/DisplayOptions/GraphicsOptions.py:docstring of abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions:22
 msgid "Check `GraphicsOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-graphicsoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1852,7 +1852,7 @@ msgstr ""
 msgid "The InteractionDisplayOptions object stores settings that specify how assemblies are to be displayed in a particular viewport when session.viewports[name].assemblyDisplay.interactions=ON The InteractionDisplayOptions object has no constructor. When you create a new viewport, the settings are copied from the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/InteractionDisplayOptions.py:docstring of abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions:17
+#: ../../../../src/abaqus/DisplayOptions/InteractionDisplayOptions.py:docstring of abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions:15
 msgid "Check `InteractionDisplayOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-interactiondisplayoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1941,7 +1941,7 @@ msgstr ""
 msgid "The Light object stores settings that control how objects are lit when the **renderStyle** is set to SHADED. The Light object has no constructor; Abaqus creates them as part of the **defaultLightOptions** and the **lightOptions** objects when a session is started."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/Light.py:docstring of abaqus.DisplayOptions.Light.Light:16
+#: ../../../../src/abaqus/DisplayOptions/Light.py:docstring of abaqus.DisplayOptions.Light.Light:14
 msgid "Check `Light on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-lightpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -2018,7 +2018,7 @@ msgstr ""
 msgid "The LightOptions object stores settings that control how objects are lit when the **renderStyle** is set to SHADED. LightOptions objects are accessed in one of two ways: - The default light options. These settings are used as defaults when you start a session and by the Defaults button on the Light ConstrainedSketchOptions dialog box. - The light options associated with a particular viewport. The LightOptions object has no constructor; Abaqus creates the **defaultLightOptions** member when a session is started. When a new viewport is created, the **lightOptions** member is copied from the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/LightOptions.py:docstring of abaqus.DisplayOptions.LightOptions.LightOptions:20
+#: ../../../../src/abaqus/DisplayOptions/LightOptions.py:docstring of abaqus.DisplayOptions.LightOptions.LightOptions:18
 msgid "Check `LightOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-lightoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -2120,7 +2120,7 @@ msgstr ""
 msgid "The LoadDisplayOptions object stores settings that specify how assemblies are to be displayed in a particular viewport when session.viewports[name].assemblyDisplay.loads=ON The LoadDisplayOptions object has no constructor. When you create a new viewport, the settings are copied from the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/LoadDisplayOptions.py:docstring of abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions:17
+#: ../../../../src/abaqus/DisplayOptions/LoadDisplayOptions.py:docstring of abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions:15
 msgid "Check `LoadDisplayOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-loaddisplayoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -2385,7 +2385,7 @@ msgstr ""
 msgid "The MeshDisplayOptions object stores settings that specify how the assembly is displayed in a particular viewport when session.viewports[name].assemblyDisplay.mesh=ON The MeshDisplayOptions object has no constructor. When you create a new viewport, the settings are copied from the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/MeshDisplayOptions.py:docstring of abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions:19
+#: ../../../../src/abaqus/DisplayOptions/MeshDisplayOptions.py:docstring of abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions:17
 msgid "Check `MeshDisplayOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshdisplayoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -2490,7 +2490,7 @@ msgstr ""
 msgid "The OptimizationTaskDisplayOptions object stores settings that specify how assemblies are to be displayed in a particular viewport when session.viewports[name].assemblyDisplay.optimizationTasks=ON The OptimizationTaskDisplayOptions object has no constructor. When you create a new viewport, the settings are copied from the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/OptimizationTaskDisplayOptions.py:docstring of abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions:17
+#: ../../../../src/abaqus/DisplayOptions/OptimizationTaskDisplayOptions.py:docstring of abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions:15
 msgid "Check `OptimizationTaskDisplayOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-optimizationtaskdisplayoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -2531,7 +2531,7 @@ msgstr ""
 msgid "The PartDisplayOptions object stores settings that specify how parts are to be displayed in a particular viewport. The PartDisplayOptions object has no constructor. When you create a new viewport, the settings are copied from the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/PartDisplayOptions.py:docstring of abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions:16
+#: ../../../../src/abaqus/DisplayOptions/PartDisplayOptions.py:docstring of abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions:14
 msgid "Check `PartDisplayOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partdisplayoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -2615,7 +2615,7 @@ msgstr ""
 msgid "The PredefinedFieldDisplayOptions object stores settings that specify how assemblies are to be displayed in a particular viewport when session.viewports[name].assemblyDisplay.predefinedFields=ON The PredefinedFieldDisplayOptions object has no constructor. When you create a new viewport, the settings are copied from the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/PredefinedFieldDisplayOptions.py:docstring of abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions:17
+#: ../../../../src/abaqus/DisplayOptions/PredefinedFieldDisplayOptions.py:docstring of abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions:15
 msgid "Check `PredefinedFieldDisplayOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-predefinedfielddisplayoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -2680,7 +2680,7 @@ msgstr ""
 msgid "The StopConditionDisplayOptions object stores settings that specify how assemblies are to be displayed in a particular viewport when session.viewports[name].assemblyDisplay.stopConditions=ON The StopConditionDisplayOptions object has no constructor. When you create a new viewport, the settings are copied from the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/StopConditionDisplayOptions.py:docstring of abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions:17
+#: ../../../../src/abaqus/DisplayOptions/StopConditionDisplayOptions.py:docstring of abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions:15
 msgid "Check `StopConditionDisplayOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-stopconditiondisplayoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -2713,7 +2713,7 @@ msgstr ""
 msgid "The SymbolDisplayOptions object stores settings that specify how the assembly is displayed in a particular viewport. The SymbolDisplayOptions object has no constructor. When you create a new viewport, the settings are copied from the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/SymbolDisplayOptions.py:docstring of abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions:15
+#: ../../../../src/abaqus/DisplayOptions/SymbolDisplayOptions.py:docstring of abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions:13
 msgid "Check `SymbolDisplayOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-symboldisplayoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -2786,7 +2786,7 @@ msgstr ""
 msgid "The ViewportAnnotationOptions object stores settings that control how annotations are rendered in a particular viewport. ViewportAnnotationOptions objects are accessed in one of two ways: - The default viewport annotations. These settings are used as defaults when other **viewportAnnotationOptions** members are created and can be set to customize user preferences. - The viewport annotations associated with a particular viewport. The ViewportAnnotationOptions object has no constructor; Abaqus creates the **defaultViewportAnnotationOptions** member when a session is started. When a new viewport is created, the settings are copied from the current viewport."
 msgstr ""
 
-#: ../../../../src/abaqus/DisplayOptions/ViewportAnnotationOptions.py:docstring of abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions:22
+#: ../../../../src/abaqus/DisplayOptions/ViewportAnnotationOptions.py:docstring of abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions:20
 msgid "Check `ViewportAnnotationOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportannotationoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 

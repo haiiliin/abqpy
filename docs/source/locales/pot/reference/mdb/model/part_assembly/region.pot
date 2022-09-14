@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2018.3.2.dev14+g0a05bcbb\n"
+"Project-Id-Version: abqpy 2018.3.2.dev22+gce8b181e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 00:16+0000\n"
+"POT-Creation-Date: 2022-09-14 09:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,19 +96,19 @@ msgstr ""
 msgid "The following commands operate on Part objects. For more information about the Part object, see Part object."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Region.py:docstring of abaqus.Region.Region.Region:45
+#: ../../../../src/abaqus/Region/Region.py:docstring of abaqus.Region.Region.Region:42
 #: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly:7
 #: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:6
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart:6
 #: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase:6
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set:21
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set:18
 #: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin:5
 #: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer:5
 #: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface:7
-msgid "This object can be accessed by:"
+msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart:13
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart:11
 msgid "Check `RegionPart on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partregpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -122,7 +122,7 @@ msgstr ""
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Set:5
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:6
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:6
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:10
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:8
 #: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:6
 #: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:5
 #: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromColor:9
@@ -132,11 +132,11 @@ msgstr ""
 #: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:6
 #: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:6
 #: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:5
-msgid "This function can be accessed by:"
+msgid "This function can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:13
-#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:13
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:11
+#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:11
 msgid "Check `EditSkin on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-editskinpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -172,80 +172,80 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:21
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:18
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Set:18
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:18
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:18
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:23
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:15
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromColor:22
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromElementLabels:18
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:18
-#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:18
-#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:18
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:16
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:18
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:19
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:16
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Set:16
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:16
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:16
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:19
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:13
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromColor:20
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromElementLabels:16
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:16
+#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:16
+#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:16
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:14
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:16
 msgid "**name**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:21
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:18
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:18
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:18
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:23
-#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:18
-#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:18
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:19
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:16
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:16
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:16
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:19
+#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:16
+#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:16
 msgid "A String specifying the repository key. The default value is an empty string."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:22
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:22
-#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:22
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:20
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:20
+#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:20
 msgid "**faces**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:21
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:21
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:19
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:19
 msgid "A sequence of Face objects specifying the faces on which skins should be created. Applicable to three and two-dimensional parts."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:26
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:26
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:22
-#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:26
-#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:22
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:24
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:24
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:20
+#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:24
+#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:20
 msgid "**edges**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:25
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:25
-#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:25
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:23
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:23
+#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:23
 msgid "A sequence of Edge objects specifying the edges on which skins should be created. Applicable to axisymmetric parts."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:30
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:30
-#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:30
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:28
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:28
+#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:28
 msgid "**elementFaces**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:29
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:29
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:27
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:27
 msgid "A sequence of MeshFace objects specifying the mesh faces on which skins should be created. Applicable to three and two-dimensional parts."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:34
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:34
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:26
-#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:34
-#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:26
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:32
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:32
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:24
+#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:32
+#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:24
 msgid "**elementEdges**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:33
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:33
-#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:33
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:31
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:31
+#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:31
 msgid "A sequence of MeshEdge objects specifying the mesh edges on which skins should be created. Applicable to axisymmetric parts."
 msgstr ""
 
@@ -267,13 +267,13 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:51
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:51
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:49
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:49
 msgid "skin: :obj:`Skin`"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:39
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:39
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:37
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:37
 msgid "A :py:class:`~abaqus.Region.Skin.Skin` object"
 msgstr ""
 
@@ -281,16 +281,16 @@ msgstr ""
 msgid "This method creates a set from a sequence of objects in a model database."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Set:13
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set:38
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Set:11
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set:33
 msgid "Check `Set on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Set:35
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Set:33
 msgid "set: :obj:`Set`"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Set:23
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Set:21
 msgid "A :py:class:`~abaqus.Region.Set.Set` object"
 msgstr ""
 
@@ -298,8 +298,8 @@ msgstr ""
 msgid "This method creates a skin from a sequence of objects in a model database. At least one of the optional arguments needs to be specified."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:13
-#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin:17
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:11
+#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin:15
 msgid "Check `Skin on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-skinpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -307,297 +307,297 @@ msgstr ""
 msgid "This method creates a stringer from a sequence of objects in a model database. At least one of the optional arguments needs to be specified."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:13
-#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer:17
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:11
+#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer:15
 msgid "Check `Stringer on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-stringerpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:21
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:19
 msgid "A sequence of Edge objects specifying the edges on which stringers should be created. Applicable to three and two-dimensional parts."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:25
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:23
 msgid "A sequence of MeshEdge objects specifying the mesh edges on which stringers should be created. Applicable to three and two-dimensional parts."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:43
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:41
 msgid "stringer: :obj:`Stringer`"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:31
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:29
 msgid "A :py:class:`~abaqus.Region.Stringer.Stringer` object"
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:2
-msgid "This method creates a surface from a sequence of objects in a model database. The surface will apply to the sides specified by the arguments.For example"
+msgid "This method creates a surface from a sequence of objects in a model database. The surface will apply to the sides specified by the arguments.For example::"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:16
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:18
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface:24
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:14
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:14
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface:22
 msgid "Check `Surface on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:25
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:27
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:23
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:23
 msgid "**side1Elements**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:24
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:26
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:22
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:22
 msgid "A sequence of MeshElement objects (surface applies to SIDE1 of element).  The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:29
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:31
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:27
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:27
 msgid "**side2Elements**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:28
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:30
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:26
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:26
 msgid "A sequence of MeshElement objects (surface applies to SIDE2 of element).  The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:33
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:35
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:31
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:31
 msgid "**side12Elements**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:32
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:34
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:30
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:30
 msgid "A sequence of MeshElement objects (surface applies to both SIDE1 and SIDE2 of element).  The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:37
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:39
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:35
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:35
 msgid "**end1Elements**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:36
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:38
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:34
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:34
 msgid "A sequence of MeshElement objects (surface applies to END1 of element).  The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:41
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:43
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:39
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:39
 msgid "**end2Elements**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:40
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:42
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:38
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:38
 msgid "A sequence of MeshElement objects (surface applies to END2 of element).  The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:45
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:47
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:43
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:43
 msgid "**circumElements**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:44
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:46
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:42
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:42
 msgid "A sequence of MeshElement objects (surface applies to circumference of element).  The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:49
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:51
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:47
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:47
 msgid "**face1Elements**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:48
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:50
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:46
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:46
 msgid "A sequence of MeshElement objects (surface applies to FACE1 of element) or MeshFace objects.  The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:53
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:55
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:51
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:51
 msgid "**face2Elements**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:52
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:54
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:50
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:50
 msgid "A sequence of MeshElement objects (surface applies to FACE2 of element) or MeshFace objects.  The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:57
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:59
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:55
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:55
 msgid "**face3Elements**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:56
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:58
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:54
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:54
 msgid "A sequence of MeshElement objects (surface applies to FACE3 of element) or MeshFace objects.  The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:61
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:63
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:59
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:59
 msgid "**face4Elements**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:60
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:62
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:58
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:58
 msgid "A sequence of MeshElement objects (surface applies to FACE4 of element) or MeshFace objects.  The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:65
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:67
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:63
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:63
 msgid "**face5Elements**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:64
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:66
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:62
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:62
 msgid "A sequence of MeshElement objects (surface applies to FACE5 of element) or MeshFace objects.  The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:69
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:71
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:67
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:67
 msgid "**face6Elements**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:68
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:70
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:66
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:66
 msgid "A sequence of MeshElement objects (surface applies to FACE6 of element) or MeshFace objects.  The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:72
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:74
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:70
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:70
 msgid "**side1Faces**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:72
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:74
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:70
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:70
 msgid "A sequence of Face objects (surface applies to SIDE1 of face). The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:75
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:77
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:73
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:73
 msgid "**side2Faces**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:75
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:77
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:73
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:73
 msgid "A sequence of Face objects (surface applies to SIDE2 of face). The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:79
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:81
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:77
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:77
 msgid "**side12Faces**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:78
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:80
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:76
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:76
 msgid "A sequence of Face objects (surface applies to both SIDE1 and SIDE2 of face).  The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:82
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:84
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:80
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:80
 msgid "**side1Edges**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:82
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:84
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:80
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:80
 msgid "A sequence of Edge objects (surface applies to SIDE1 of edge). The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:85
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:87
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:83
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:83
 msgid "**side2Edges**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:85
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:87
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:83
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:83
 msgid "A sequence of Edge objects (surface applies to SIDE2 of edge). The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:88
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:90
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:86
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:86
 msgid "**end1Edges**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:88
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:90
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:86
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:86
 msgid "A sequence of Edge objects (surface applies to END1 of edge). The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:91
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:93
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:89
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:89
 msgid "**end2Edges**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:91
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:93
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:89
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:89
 msgid "A sequence of Edge objects (surface applies to END2 of edge). The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:95
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:97
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:93
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:93
 msgid "**circumEdges**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:94
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:96
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:92
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:92
 msgid "A sequence of Edge objects (surface applies circumferentially to edge).  The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:125
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:127
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:123
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:123
 msgid "**kwargs**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:98
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:100
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:96
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:96
 msgid "The required parameters for different conditions are:"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:100
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:102
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:98
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:98
 msgid "On three-dimensional solid faces, you can use the following arguments:  side1Faces, side2Faces"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:103
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:105
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:101
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:101
 msgid "On three-dimensional shell faces, you can use the following arguments:  side1Faces, side2Faces, side12Faces"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:106
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:108
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:104
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:104
 msgid "On three-dimensional wire edges, you can use the following arguments: end1Edges, end2Edges, circumEdges"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:109
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:111
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:107
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:107
 msgid "On three-dimensional or two-dimensional or axisymmetric edges, you can use the following arguments: side1Edges, side2Edges"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:112
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:114
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:110
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:110
 msgid "On two-dimensional or axisymmetric shell elements, you can use the following arguments: face1Elements, face2Elements, face3Elements, face4Elements"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:115
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:117
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:113
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:113
 msgid "On solid elements, you can use the following arguments: face1Elements, face2Elements, face3Elements, face4Elements, face5Elements, face6Elements"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:118
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:120
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:116
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:116
 msgid "On three-dimensional shell elements, you can use the following arguments: side1Elements, side2Elements, side12Elements"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:121
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:123
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:119
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:119
 msgid "On three-dimensional wire elements, you can use the following arguments: end1Elements, end2Elements, circumElements"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:124
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:126
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:122
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:122
 msgid "On two-dimensional or axisymmetric wire elements, you can use the following arguments: side1Elements, side2Elements"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:144
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:140
 msgid "surf: :obj:`Surface`"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:132
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:128
 msgid "A :py:class:`~abaqus.Region.Surface.Surface` object"
 msgstr ""
 
@@ -609,7 +609,7 @@ msgstr ""
 msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no constructor command. Abaqus creates the **rootAssembly** member when a Model object is created."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly:15
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly:13
 msgid "Check `RegionAssembly on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblyregpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -617,15 +617,15 @@ msgstr ""
 msgid "This method creates a surface from a sequence of objects in a model database. The surface will apply to the sides specified by the arguments.For example surface=mdb.models['Model-1'].parts['Part-1'].Surface(side1Faces=side1Faces, name='Surf-1')"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:142
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:42
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:40
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:140
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:40
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:38
 msgid ":obj:`Surface`"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:130
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:30
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:28
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:128
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:28
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:26
 msgid "A :py:class:`~abaqus.Region.Surface.Surface` object."
 msgstr ""
 
@@ -637,7 +637,7 @@ msgstr ""
 msgid "Region features for Part"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase:13
+#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase:11
 msgid "Check `RegionPartBase on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -915,12 +915,12 @@ msgstr ""
 msgid ":py:obj:`name <abaqus.Region.RegionPartBase.RegionPartBase.name>`\\"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:15
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromColor:22
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromElementLabels:18
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:18
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:16
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:18
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:13
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromColor:20
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromElementLabels:16
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:16
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:14
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:16
 #: ../../None:4:<autosummary>:1
 msgid "A String specifying the repository key."
 msgstr ""
@@ -2632,7 +2632,7 @@ msgstr ""
 msgid "The following commands operate on Assembly objects. For more information about the Assembly object, see Assembly object."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:13
+#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:11
 msgid "Check `RegionAssemblyBase on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -3546,14 +3546,14 @@ msgid "Check `Assembly.markSurfaceInternal on help.3ds.com/2018 <https://help.3d
 msgstr ""
 
 #: ../../../../src/abaqus/Region/Region.py:docstring of abaqus.Region.Region.Region:2
-msgid "The purpose of the Region object is to provide a link between an attribute and the geometric or discrete entities to which the attribute is applied. An attribute (Load, BC, IC, etc.) is applied to one or more Region objects; each Region object in turn is associated with a picked Set or Surface or with a named Set or Surface. The Region object provides a unified interface (or \"façade\") to data and functionality located at the Set or Surface. A script that applies an attribute to a picked Set or Surface requires the explicit creation of a Region object and will implicitly create a matching internal Set or Surface. Conversely, a script that applies an attribute to a named Set or Surface requires the explicit creation of that Set or Surface (see 39.4) and will implicitly create a region object. The reference between Region and Set/Surface is by name (user-provided or internal.) If the Set/Surface is suppressed, deleted, or renamed, the Region object will not be able to find the associated Set/Surface, and will communicate that to the attribute, but will not be affected otherwise. If a Set/Surface with the same name becomes available (only possible with user-provided names) the Region object will re-establish the connection. Another way of correcting this problem is to re-apply the attribute. Wherever a particular Load, BC, IC, etc. command accepts a named set or a named surface, that command will also accept a Region object. For example"
+msgid "The purpose of the Region object is to provide a link between an attribute and the geometric or discrete entities to which the attribute is applied. An attribute (Load, BC, IC, etc.) is applied to one or more Region objects; each Region object in turn is associated with a picked Set or Surface or with a named Set or Surface. The Region object provides a unified interface (or \"façade\") to data and functionality located at the Set or Surface. A script that applies an attribute to a picked Set or Surface requires the explicit creation of a Region object and will implicitly create a matching internal Set or Surface. Conversely, a script that applies an attribute to a named Set or Surface requires the explicit creation of that Set or Surface (see 39.4) and will implicitly create a region object. The reference between Region and Set/Surface is by name (user-provided or internal.) If the Set/Surface is suppressed, deleted, or renamed, the Region object will not be able to find the associated Set/Surface, and will communicate that to the attribute, but will not be affected otherwise. If a Set/Surface with the same name becomes available (only possible with user-provided names) the Region object will re-establish the connection. Another way of correcting this problem is to re-apply the attribute. Wherever a particular Load, BC, IC, etc. command accepts a named set or a named surface, that command will also accept a Region object. For example::"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Region.py:docstring of abaqus.Region.Region.Region:33
+#: ../../../../src/abaqus/Region/Region.py:docstring of abaqus.Region.Region.Region:30
 msgid "Abaqus does not provide a regions repository; as an alternative, you should assign a variable to a Region object and refer to the variable. The lifecycle of a Region object is similar to the lifecycle of a Leaf object used by display groups; as a result, you should use a Region object immediately after you create it. The contents of a Region object are not intended to survive regeneration. If you use an out-of-date Region object, the script is unlikely to function correctly. Querying an attribute's Region will return a Region tuple. The contents of the tuple are the set name followed by the owners of the set and three flags expressed as integers. The flags indicate the region space, the type of region and the whether the region is an internal set."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Region.py:docstring of abaqus.Region.Region.Region:52
+#: ../../../../src/abaqus/Region/Region.py:docstring of abaqus.Region.Region.Region:47
 msgid "Check `Region on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-regionpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -3570,7 +3570,7 @@ msgid "Set"
 msgstr ""
 
 #: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set:2
-msgid "If a set spans more than one part instance, the members **vertices**, **edges**, **faces**, **cells**, **elements**, or **nodes** return a sequence of all the queried vertices/edges/faces/cells/elements/nodes respectively for each part instance contained in the set. For example:"
+msgid "If a set spans more than one part instance, the members **vertices**, **edges**, **faces**, **cells**, **elements**, or **nodes** return a sequence of all the queried vertices/edges/faces/cells/elements/nodes respectively for each part instance contained in the set. For example::"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -3718,75 +3718,75 @@ msgstr ""
 msgid "This method creates sets based on mapping sets from element centroid locations in an Odb."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:14
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:12
 msgid "Check `MapSetsFromOdb on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mapsetsfromodbpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:19
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:17
 msgid "**odbPath**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:19
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:17
 msgid "A String specifying the path to the ODB containing the source sets."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:22
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:20
 msgid "**odbSets**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:22
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:20
 msgid "A list of names of sets on the ODB to map."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:25
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:23
 msgid "**partSets**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:25
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:23
 msgid "A list of names of sets to construct or use corresponding to the ODB sets."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:28
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:26
 msgid "**method**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:28
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:26
 msgid "An enum to specify OVERWRITE, APPEND, INTERSECT, or REMOVE. The default is OVERWRITE."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:45
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:41
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromColor:44
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromElementLabels:40
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:46
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:43
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:39
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromColor:42
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromElementLabels:38
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:44
 msgid ":obj:`Set`"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:33
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.MapSetsFromOdb:31
 msgid "A :py:class:`~abaqus.Region.Set.Set` object or a tuple of Set objects."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:18
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:16
 msgid "**sets**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:18
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:16
 msgid "A sequence of Set objects."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:24
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:25
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:22
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:23
 msgid "**operation**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:21
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:19
 msgid "A SymbolicConstant specifying the boolean operation to perform. Possible values are UNION, INTERSECTION, and DIFFERENCE. The default value is UNION. Note that if DIFFERENCE is specified, the order of the given input sets is important; All sets specified after the first one are subtracted from the first one."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:29
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromColor:32
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromElementLabels:28
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:34
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetByBoolean:27
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromColor:30
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromElementLabels:26
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:32
 msgid "A :py:class:`~abaqus.Region.Set.Set` object."
 msgstr ""
 
@@ -3794,51 +3794,51 @@ msgstr ""
 msgid "This method creates a set containing faces of the part marked with a specified color attribute. Third-party applications can assign color attributes to faces, and the color attribute can be imported into Abaqus from an ACIS file. You can use this method to create sets only on parts; however, you can access the sets from instances of the parts in the assembly."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromColor:17
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromColor:15
 msgid "Check `SetFromColor on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setfromcolorpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromColor:27
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromColor:25
 msgid "**color**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromColor:25
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromColor:23
 msgid "A sequence of three Ints specifying the RGB color. Values can range from 0 to 255. The first integer is for red, the second for green, and the third for blue. For example, a face colored in yellow is identified by:`color=(255,255,0)`"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromElementLabels:13
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromElementLabels:11
 msgid "Check `SetFromElementLabels on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setfromelementlabelspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromElementLabels:23
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromElementLabels:21
 msgid "**elementLabels**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromElementLabels:21
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromElementLabels:19
 msgid "A sequence of element labels. An element label is a sequence of Int element identifiers. For example, for a part:`elementLabels=(2,3,5,7)`For an assembly:`elementLabels=(('Instance-1', (2,3,5,7)),       ('Instance-2', (1,2,3)))`"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:13
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:11
 msgid "Check `SetFromNodeLabels on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setfromnodelabelspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:23
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:21
 msgid "**nodeLabels**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:21
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:19
 msgid "A sequence of node labels. A node label is a sequence of Int node identifiers. For example, for a part:`nodeLabels=(2,3,5,7)`For an assembly:`nodeLabels=(('Instance-1', (2,3,5,7)), ('Instance-2', (1,2,3)))`"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:29
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:27
 msgid "**unsorted**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:26
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:24
 msgid "A Boolean specifying whether the created set is unsorted. The default value is False."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:28
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:26
 msgid "The `unsorted` argument was added."
 msgstr ""
 
@@ -3878,19 +3878,19 @@ msgstr ""
 msgid "This method modifies underlying entities of the selected skin."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:21
+#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:19
 msgid "A sequence of Face objects specifying the faces on which skins should be created. Applicable to three and two dimensional parts."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:29
+#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:27
 msgid "A sequence of MeshFace objects specifying the mesh faces on which skins should be created. Applicable to three and two dimensional parts."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:51
+#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:49
 msgid ":obj:`Skin`"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:39
+#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:37
 msgid "A :py:class:`~abaqus.Region.Skin.Skin` object."
 msgstr ""
 
@@ -3930,23 +3930,23 @@ msgstr ""
 msgid "This method modifies underlying entities of the selected stringer. At least one of the optional arguments needs to be specified."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:13
+#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:11
 msgid "Check `EditStringer on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-editstringerpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:21
+#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:19
 msgid "A sequence of Edge objects specifying the edges on which stringers should be created. Applicable to three and two dimensional parts."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:25
+#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:23
 msgid "A sequence of MeshEdge objects specifying the mesh edges on which stringers should be created. Applicable to three and two dimensional parts."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:43
+#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:41
 msgid ":obj:`Stringer`"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:31
+#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.EditStringer:29
 msgid "A :py:class:`~abaqus.Region.Stringer.Stringer` object."
 msgstr ""
 
@@ -4014,27 +4014,27 @@ msgstr ""
 msgid "This method creates a surface from a sequence of element sets in a model database."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:19
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:17
 msgid "**surfaces**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:19
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:17
 msgid "A sequence of Surface objects."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:22
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:20
 msgid "A SymbolicConstant specifying the boolean operation to perform. Possible values are UNION, INTERSECTION, andDIFFERENCE. The default value is UNION. Note that if DIFFERENCE is specified, the order of the given input surfaces is important; All surfaces specified after the first one are subtracted from the first one."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:13
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:11
 msgid "Check `SurfaceFromElsets on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacefromelsetspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:23
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:21
 msgid "**elementSetSeq**"
 msgstr ""
 
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:21
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:19
 msgid "A sequence of element sets. For example,`elementSetSeq=((elset1, S1),(elset2, S2))`where `elset1=mdb.models[name].rootAssembly.sets['Clutch']` and `S1` and `S2` indicate the side of the element set."
 msgstr ""
 
