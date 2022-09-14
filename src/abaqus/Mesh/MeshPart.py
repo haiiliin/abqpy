@@ -21,9 +21,7 @@ class MeshPart(PartBase):
     object, see Part object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import mesh
     """
@@ -1123,9 +1121,7 @@ class MeshPart(PartBase):
         """This method creates a node on an orphan mesh part.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Node
 

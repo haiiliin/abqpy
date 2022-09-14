@@ -9,9 +9,7 @@ class CombinedTermDesignResponse(DesignResponse):
     The CombinedTermDesignResponse object is derived from the DesignResponse object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import optimization
             mdb.models[name].optimizationTasks[name].designResponses[name]
@@ -102,9 +100,7 @@ class CombinedTermDesignResponse(DesignResponse):
         """This method creates a CombinedTermDesignResponse object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].CombinedTermDesignResponse
 

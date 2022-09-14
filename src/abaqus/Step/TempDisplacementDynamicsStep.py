@@ -26,9 +26,7 @@ class TempDisplacementDynamicsStep(AnalysisStep):
     The TempDisplacementDynamicsStep object is derived from the AnalysisStep object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].steps[name]
@@ -204,9 +202,7 @@ class TempDisplacementDynamicsStep(AnalysisStep):
         """This method creates a TempDisplacementDynamicsStep object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].TempDisplacementDynamicsStep
 

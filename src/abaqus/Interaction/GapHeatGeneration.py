@@ -6,9 +6,7 @@ class GapHeatGeneration:
     property.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].interactionProperties[name].heatGeneration
@@ -34,9 +32,7 @@ class GapHeatGeneration:
         """This method creates a GapHeatGeneration object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].interactionProperties[name].HeatGeneration
 

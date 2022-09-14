@@ -16,9 +16,7 @@ class TopologyTask(OptimizationTask):
     The TopologyTask object is derived from the OptimizationTask object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import optimization
             mdb.models[name].optimizationTasks[name]
@@ -234,9 +232,7 @@ class TopologyTask(OptimizationTask):
         """This method creates a TopologyTask object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].TopologyTask
 

@@ -10,9 +10,7 @@ class BrittleCracking:
     brittle cracking material model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].brittleCracking
@@ -68,9 +66,7 @@ class BrittleCracking:
         """This method creates a BrittleCracking object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].BrittleCracking
                 session.odbs[name].materials[name].BrittleCracking

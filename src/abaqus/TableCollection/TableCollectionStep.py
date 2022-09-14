@@ -11,9 +11,7 @@ class TableCollectionStep(StepBase):
     derived from the Step.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].steps[name]
@@ -33,9 +31,7 @@ class TableCollectionStep(StepBase):
         """This method creates an ActivateElements object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ActivateElements
 

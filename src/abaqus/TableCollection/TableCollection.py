@@ -12,9 +12,7 @@ class TableCollection:
     ParameterTable and PropertyTable objects.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name].tableCollections[name]
 
@@ -41,9 +39,7 @@ class TableCollection:
         repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].TableCollection
 
@@ -64,9 +60,7 @@ class TableCollection:
         """This method creates a DataTable object and places it in the dataTables array.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].TableCollection
 
@@ -94,9 +88,7 @@ class TableCollection:
         repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].TableCollection
 
@@ -120,9 +112,7 @@ class TableCollection:
         """This method creates a PropertyTable object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].TableCollection
 

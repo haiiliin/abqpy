@@ -7,9 +7,7 @@ class CommandRegister:
     capable of notifying the GUI when the contents of the class change.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import customKernel
     """
@@ -20,9 +18,7 @@ class CommandRegister:
         capable of notifying the GUI when the contents of the class change.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 customKernel.CommandRegister
 

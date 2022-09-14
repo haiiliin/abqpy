@@ -12,9 +12,7 @@ class ParameterTable:
     ParameterColumn may lead to data corruption.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name].tableCollections[name].parameterTables[name]
 
@@ -39,9 +37,7 @@ class ParameterTable:
         repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].tableCollections[name].ParameterTable
 
@@ -71,9 +67,7 @@ class ParameterTable:
         column member.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].tableCollections[name].ParameterTable
 

@@ -34,9 +34,7 @@ class AssemblyBase(AssemblyFeature):
     created.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import assembly
             mdb.models[name].rootAssembly
@@ -147,9 +145,7 @@ class AssemblyBase(AssemblyFeature):
         """This method creates a PartInstance object and puts it into the instances repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
 
@@ -182,9 +178,7 @@ class AssemblyBase(AssemblyFeature):
         """This method creates a ModelInstance object and puts it into the instances repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
 
@@ -213,9 +207,7 @@ class AssemblyBase(AssemblyFeature):
         """This method creates a PartInstance object and puts it into the instances repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
 

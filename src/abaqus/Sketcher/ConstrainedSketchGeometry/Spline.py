@@ -10,9 +10,7 @@ class Spline(ConstrainedSketchGeometry):
         """This method creates a spline curve running through a sequence of points.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].Spline
 

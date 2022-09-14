@@ -14,9 +14,7 @@ class Plastic:
     r"""The Plastic object specifies a metal plasticity model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].Plastic
@@ -114,9 +112,7 @@ class Plastic:
         """This method creates a Plastic object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Plastic
                 session.odbs[name].materials[name].Plastic

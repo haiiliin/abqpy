@@ -7,9 +7,7 @@ class SoretEffect:
     r"""The SoretEffect object defines temperature gradient driven mass diffusion.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].diffusivity.soretEffect
@@ -37,9 +35,7 @@ class SoretEffect:
         """This method creates a SoretEffect object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].diffusivity.SoretEffect
                 session.odbs[name].materials[name].diffusivity.SoretEffect

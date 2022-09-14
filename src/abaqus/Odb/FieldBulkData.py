@@ -11,9 +11,7 @@ class FieldBulkData:
     nodes. All elements in a class correspond to the same element type and material.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].steps[name].frames[i].fieldOutputs[name].bulkDataBlocks[i]

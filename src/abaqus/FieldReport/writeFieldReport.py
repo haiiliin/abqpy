@@ -26,9 +26,7 @@ def writeFieldReport(
     """This function writes a FieldOutput object to a user-defined ASCII file.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             session.writeFieldReport
 
@@ -74,9 +72,7 @@ def writeFieldReport(
         - **element3 (if applicable)**: A Dictionary with a String key and a String value
           specifying a single section point at which to report data. The key specifies a region in
           the model; the corresponding value specifies a section point within that region. For
-          example:
-          
-          .. code-block:: python
+          example::
           
             {'shell < MAT > < 7 section points >': 'SPOS (fraction = 1.0)'}
           

@@ -9,9 +9,7 @@ class RegionAssemblyBase(AssemblyBase):
     Assembly object, see Assembly object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import regionToolset
     """

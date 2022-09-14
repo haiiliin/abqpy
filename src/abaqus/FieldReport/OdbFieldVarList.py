@@ -10,9 +10,7 @@ class OdbFieldVarList(typing.List[str]):
     describing the given variable.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.viewports[name].layers[name].odbDisplay.fieldVariables

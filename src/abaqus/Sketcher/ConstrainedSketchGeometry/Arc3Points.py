@@ -14,9 +14,7 @@ class Arc3Points(ConstrainedSketchGeometry):
         the arc.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sketches[name].Arc3Points
 

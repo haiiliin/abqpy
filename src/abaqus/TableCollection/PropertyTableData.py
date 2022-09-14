@@ -10,9 +10,7 @@ class PropertyTableData:
     and variables mentioned in the PropertyTable object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb.models[name].tableCollections[name].propertyTables[name].propertyTableDatas[name]
 
@@ -62,9 +60,7 @@ class PropertyTableData:
         """This method creates a PropertyTableData object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].tableCollections[name].propertyTables[name].PropertTableData
 

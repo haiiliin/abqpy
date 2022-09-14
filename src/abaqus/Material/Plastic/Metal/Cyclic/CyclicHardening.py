@@ -8,9 +8,7 @@ class CyclicHardening:
     isotropic/kinematic hardening model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].Plastic.cyclicHardening
@@ -43,9 +41,7 @@ class CyclicHardening:
         """This method creates a CyclicHardening object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Plastic.CyclicHardening
                 session.odbs[name].materials[name].Plastic.CyclicHardening

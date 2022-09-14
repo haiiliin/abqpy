@@ -8,9 +8,7 @@ class CaeGuiPrefs:
     guiPreferences section of the abaqus_2021.gpr file.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import caePrefsAccess
             caePrefsAccess.openGuiPreferences(...)

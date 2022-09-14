@@ -18,9 +18,7 @@ class ViewCutOptions(_CopyOptionsBase):
     - The view cut options associated with a particular viewport.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.defaultOdbDisplay.viewCutOptions

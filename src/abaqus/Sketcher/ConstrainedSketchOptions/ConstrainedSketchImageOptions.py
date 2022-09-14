@@ -11,9 +11,7 @@ class ConstrainedSketchImageOptions:
     ConstrainedSketchImageOptions object has no constructor.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import sketch
             mdb.models[name].sketches[name].imageOptions

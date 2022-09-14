@@ -12,9 +12,7 @@ class Stringer:
     """The Stringer object stores information on stringer reinforcements created on entities.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].stringers[name]
@@ -38,9 +36,7 @@ class Stringer:
         one of the optional arguments needs to be specified.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Stringer
 
@@ -70,9 +66,7 @@ class Stringer:
         optional arguments needs to be specified.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Stringer
 

@@ -7,9 +7,7 @@ class Annotation:
     object are common to all objects derived from Annotation.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import annotationToolset
             mdb.annotations[name]

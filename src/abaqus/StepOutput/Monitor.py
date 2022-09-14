@@ -7,9 +7,7 @@ class Monitor:
     """The Monitor object defines a degree of freedom to monitor.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].steps[name].monitor
@@ -53,9 +51,7 @@ class Monitor:
         modal procedure.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].steps[name].Monitor
 

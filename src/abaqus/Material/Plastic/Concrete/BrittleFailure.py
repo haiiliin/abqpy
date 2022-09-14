@@ -7,9 +7,7 @@ class BrittleFailure:
     """The BrittleFailure object specifies the brittle failure of the material.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].brittleCracking.brittleFailure
@@ -49,9 +47,7 @@ class BrittleFailure:
         """This method creates a BrittleFailure object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].brittleCracking.BrittleFailure
                 session.odbs[name].materials[name].brittleCracking.BrittleFailure

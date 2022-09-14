@@ -8,9 +8,7 @@ class TangentialBehavior:
     behavior option.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].sections[name].behaviorOptions[i].tangentialBehavior
@@ -106,9 +104,7 @@ class TangentialBehavior:
         """This method creates a TangentialBehavior object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
                 session.odbs[name].sections[name].behaviorOptions[i].TangentialBehavior

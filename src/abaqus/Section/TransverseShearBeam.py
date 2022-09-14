@@ -9,9 +9,7 @@ class TransverseShearBeam:
     """The TransverseShearBeam object defines the transverse shear stiffness properties of a beam section.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].sections[name].beamTransverseShear
@@ -50,9 +48,7 @@ class TransverseShearBeam:
         """This method creates a TransverseShearBeam object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].sections[name].TransverseShearBeam
                 session.odbs[name].sections[name].TransverseShearBeam

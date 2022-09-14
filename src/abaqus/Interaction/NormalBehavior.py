@@ -9,9 +9,7 @@ class NormalBehavior:
     """The NormalBehavior object specifies normal behavior for a contact interaction property.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].interactionProperties[name].normalBehavior
@@ -126,9 +124,7 @@ class NormalBehavior:
         """This method creates a NormalBehavior object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].interactionProperties[name].NormalBehavior
 

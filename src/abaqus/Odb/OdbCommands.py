@@ -24,17 +24,13 @@ def isUpgradeRequiredForOdb(upgradeRequiredOdbPath: str):
     release.
     You can access this method using either of the following techniques:
     
-    - From a script running outside Abaqus/CAE. For example
-    
-      .. code-block:: python
+    - From a script running outside Abaqus/CAE. For example::
       
         import odbAccess
         needsUpgrade = odbAccess.isUpgradeRequiredForOdb(
             upgradeRequiredOdbPath='myOdb.odb')
       
-    - From the Visualization module in Abaqus/CAE. For example
-      
-      .. code-block:: python
+    - From the Visualization module in Abaqus/CAE. For example::
       
         import visualization
         needsUpgrade = session.isUpgradeRequiredForOdb(upgradeRequiredOdbPath='myOdb.odb')
@@ -101,9 +97,7 @@ def minEnvelop() -> typing.Tuple[FieldOutput, FieldOutput]:
 def openOdb(path: str, readOnly: Boolean = OFF, readInternalSets: Boolean = OFF) -> Odb:
     """This method opens an existing output database (`.odb`) file and creates a new Odb object.
     You typically execute this method outside of Abaqus/CAE when, in most cases, only one
-    output database is open at any time. For example:
-
-    .. code-block:: python
+    output database is open at any time. For example::
 
         import odbAccess
         shockLoadOdb = odbAccess.openOdb(path='myOdb.odb')
@@ -147,9 +141,7 @@ def openOdb(name: str, path: str = "", readOnly: Boolean = OFF) -> Odb:
     This method is accessed only via the session object inside Abaqus/CAE and adds the new
     Odb object to the session.odbs repository. This method allows you to open multiple
     output databases at the same time and to use the repository key to specify a particular
-    output database. For example,
-    
-    .. code-block:: python
+    output database. For example::
     
         import visualization
         session.openOdb(name='myOdb', path='stress.odb', readOnly=True)
@@ -200,16 +192,12 @@ def upgradeOdb(existingOdbPath: str, upgradedOdbPath: str):
     about the status of the upgrade to a log (.log) file.
     You can access this method using either of the following techniques:
     
-    - From a script running outside Abaqus/CAE. For example
-      
-      .. code-block:: python
+    - From a script running outside Abaqus/CAE. For example::
       
         import odbAccess
         odbAccess.upgradeOdb(existingOdbPath='oldOdb', upgradedOdbPath='upgradedOdb')
         
-    - From the session object in Abaqus/CAE. For example
-      
-      .. code-block:: python
+    - From the session object in Abaqus/CAE. For example::
       
         import visualization
         session.upgradeOdb(existingOdbPath='oldOdb', upgradedOdbPath='upgradedOdb')

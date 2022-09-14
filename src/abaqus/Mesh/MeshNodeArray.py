@@ -9,9 +9,7 @@ class MeshNodeArray(typing.List[MeshNode]):
     """The MeshNodeArray is a sequence of MeshNode objects.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].allInternalSets[name].nodes
@@ -46,9 +44,7 @@ class MeshNodeArray(typing.List[MeshNode]):
         """This method creates a MeshNodeArray object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mesh.MeshNodeArray
 

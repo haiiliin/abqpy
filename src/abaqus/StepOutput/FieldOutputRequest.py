@@ -9,9 +9,7 @@ class FieldOutputRequest:
     """The FieldOutputRequest object defines a field output request.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].fieldOutputRequests[name]
@@ -75,9 +73,7 @@ class FieldOutputRequest:
         """This method creates a FieldOutputRequest object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].FieldOutputRequest
 
