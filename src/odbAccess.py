@@ -4,11 +4,6 @@ from abaqus.UtilityAndView.BackwardCompatibility import BackwardCompatibility
 from abaqus.Odb.OdbSequenceAnalyticSurfaceSegment import OdbSequenceAnalyticSurfaceSegment
 
 
-<<<<<<< HEAD
-def openOdb(name: str, *args, **kwargs) -> Odb:
-    abqpy.abaqus.run(exit_after=True)
-    return Odb(name)
-=======
 def openOdb(path: str, readOnly: Boolean = OFF, readInternalSets: Boolean = OFF) -> Odb:
     """This method opens an existing output database (`.odb`) file and creates a new Odb object.
     You typically execute this method outside of Abaqus/CAE when, in most cases, only one
@@ -50,7 +45,6 @@ def openOdb(path: str, readOnly: Boolean = OFF, readInternalSets: Boolean = OFF)
     """
     abqpy.abaqus.run(cae=False)
     return Odb(path)
->>>>>>> 3c75c5a0 (Correct `run()` function always running `abaqus cae`, regardless of the called method (#1303))
 
 
 def AnalyticSurfaceProfile() -> OdbSequenceAnalyticSurfaceSegment:
