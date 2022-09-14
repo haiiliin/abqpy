@@ -15,9 +15,7 @@ class FieldOutput:
     """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object contains field data for a specific output variable.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].steps[name].frames[i].fieldOutputs[name]
@@ -86,9 +84,7 @@ class FieldOutput:
         """This method creates a FieldOutput object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].steps[name].frames[i].FieldOutput
 
@@ -134,9 +130,7 @@ class FieldOutput:
         output database.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].steps[name].frames[i].FieldOutput
 

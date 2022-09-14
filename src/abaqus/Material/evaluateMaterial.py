@@ -7,9 +7,7 @@ conditions.
 
 
 .. note::
-    This object can be accessed by:
-    
-    .. code-block:: python
+    This object can be accessed by::
     
         from material import evaluateMaterial
 
@@ -39,9 +37,7 @@ def evaluateMaterial(
     conditions.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             evaluateMaterial
 

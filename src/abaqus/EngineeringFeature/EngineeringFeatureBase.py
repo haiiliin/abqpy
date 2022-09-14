@@ -14,9 +14,7 @@ class EngineeringFeatureBase:
     repositories. The EngineeringFeature object has no explicit constructor or methods.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].engineeringFeatures

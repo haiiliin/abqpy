@@ -24,9 +24,7 @@ class RegionPart(RegionPartBase):
     object, see Part object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import regionToolset
     """
@@ -58,16 +56,12 @@ class RegionPart(RegionPartBase):
         **kwargs
     ) -> Surface:
         """This method creates a surface from a sequence of objects in a model database. The
-        surface will apply to the sides specified by the arguments.For example
-
-        .. code-block:: python
+        surface will apply to the sides specified by the arguments.For example::
 
             surface=mdb.models['Model-1'].parts['Part-1'].Surface(side1Faces=side1Faces, name='Surf-1')
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Surface
                 mdb.models[name].rootAssembly.Surface
@@ -215,9 +209,7 @@ class RegionPart(RegionPartBase):
         """This method creates a set from a sequence of objects in a model database.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
                 mdb.models[name].rootAssembly.Set
@@ -275,9 +267,7 @@ class RegionPart(RegionPartBase):
         """This method copies a set from an existing set.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
                 mdb.models[name].rootAssembly.Set
@@ -301,9 +291,7 @@ class RegionPart(RegionPartBase):
         """This method creates a set from a sequence of objects in a model database.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
                 mdb.models[name].rootAssembly.Set
@@ -333,9 +321,7 @@ class RegionPart(RegionPartBase):
         of the optional arguments needs to be specified.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Skin
 
@@ -377,9 +363,7 @@ class RegionPart(RegionPartBase):
         optional arguments needs to be specified.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].EditSkin
 
@@ -416,9 +400,7 @@ class RegionPart(RegionPartBase):
         one of the optional arguments needs to be specified.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].Stringer
 

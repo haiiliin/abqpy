@@ -9,9 +9,7 @@ class RegisteredTuple(CommandRegister, tuple):
     The RegisteredTuple object is derived from the CommandRegister object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import customKernel
     """
@@ -21,9 +19,7 @@ class RegisteredTuple(CommandRegister, tuple):
         """This method creates a RegisteredTuple object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 customKernel.RegisteredTuple
 

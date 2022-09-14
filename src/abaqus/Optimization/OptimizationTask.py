@@ -60,9 +60,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a SingleTermDesignResponse object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SingleTermDesignResponse
 
@@ -124,9 +122,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates an ObjectiveFunction object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ObjectiveFunction
 
@@ -166,9 +162,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates an OptimizationConstraint object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].OptimizationConstraint
 
@@ -216,9 +210,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a BeadFixedRegion object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].BeadFixedRegion
 
@@ -259,9 +251,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a BeadGrowth object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].BeadGrowth
 
@@ -295,9 +285,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a BeadPenetrationCheck object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].BeadPenetrationCheck
 
@@ -331,9 +319,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a BeadPlanarSymmetry object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].BeadPlanarSymmetry
 
@@ -368,9 +354,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a BeadPointSymmetry object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].BeadPointSymmetry
 
@@ -407,9 +391,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a BeadRotationalSymmetry object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].BeadRotationalSymmetry
 
@@ -458,9 +440,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a DesignDirection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].DesignDirection
 
@@ -541,9 +521,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a DrillControl object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].DrillControl
 
@@ -621,9 +599,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a FixedRegion object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].FixedRegion
 
@@ -667,9 +643,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a FrozenArea object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].FrozenArea
 
@@ -704,9 +678,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a Growth object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].Growth
 
@@ -749,9 +721,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a PenetrationCheck object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].PenetrationCheck
 
@@ -798,9 +768,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a ShapeDemoldControl object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ShapeDemoldControl
 
@@ -877,9 +845,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a ShapeMemberSize object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ShapeMemberSize
 
@@ -929,9 +895,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a ShapePlanarSymmetry object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ShapePlanarSymmetry
 
@@ -1000,9 +964,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a ShapePointSymmetry object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ShapePointSymmetry
 
@@ -1070,9 +1032,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a ShapeRotationalSymmetry object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ShapeRotationalSymmetry
 
@@ -1145,9 +1105,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a SizingClusterAreas object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingClusterAreas
 
@@ -1182,9 +1140,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a SizingCyclicSymmetry object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingCyclicSymmetry
 
@@ -1222,9 +1178,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a SizingFrozenArea object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingFrozenArea
 
@@ -1252,9 +1206,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a SizingMemberSize object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingMemberSize
 
@@ -1290,9 +1242,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a SizingPlanarSymmetry object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingPlanarSymmetry
 
@@ -1333,9 +1283,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a SizingPointSymmetry object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingPointSymmetry
 
@@ -1375,9 +1323,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a SizingRotationalSymmetry object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingRotationalSymmetry
 
@@ -1429,9 +1375,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a SlideRegionControl object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SlideRegionControl
 
@@ -1514,9 +1458,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a StampControl object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].StampControl
 
@@ -1592,9 +1534,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a TopologyCyclicSymmetry object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TopologyCyclicSymmetry
 
@@ -1646,9 +1586,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a TopologyDemoldControl object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TopologyDemoldControl
 
@@ -1711,9 +1649,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a TopologyMemberSize object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TopologyMemberSize
 
@@ -1747,6 +1683,137 @@ class OptimizationTask(OptimizationTaskBase):
         return geometricRestriction
 
     @abaqus_method_doc
+<<<<<<< HEAD
+=======
+    def TopologyMillingControl(
+        self,
+        name: str,
+        millingDirections: tuple,
+        region: Region,
+        csys: int = None,
+        millingCheckRegion: SymbolicConstant = MILLING_REGION,
+        radius: float = None,
+    ) -> TopologyMillingControl:
+        """This method creates a TopologyMillingControl object.
+
+        .. note:: 
+            This function can be accessed by::
+
+                mdb.models[name].optimizationTasks[name].TopologyMillingControl
+
+        .. versionadded:: 2022
+            The `TopologyMillingControl` method was added.
+
+        Parameters
+        ----------
+        name
+            A String specifying the geometric restriction repository key.
+        millingDirections
+            A tuple of VertexArray objects of length 2 specifying the milling directions. Each point
+            can be specified through a tuple of coordinates instead of through a ConstrainedSketchVertex.
+        region
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+        csys
+            None or a DatumCsys object specifying the local coordinate system of the
+            **millingDirections**. If **csys** = None, the global coordinate system is used. When this
+            member is queried, it returns an Int indicating the identifier of the DatumCsys. The
+            default value is None.
+        millingCheckRegion
+            The SymbolicConstant MILLING_REGION or a Region object specifying the milling check
+            region. If the value is MILLING_REGION, the value of **region** is used as both the
+            milling control region and the milling check region. The default value is
+            MILLING_REGION.
+        radius
+            A Float specifying the radius for the collision check during the removal of the elements
+            for the milling criteria.
+
+        Returns
+        -------
+        TopologyMillingControl
+            A :py:class:`~abaqus.Optimization.TopologyMillingControl.TopologyMillingControl` object.
+        """
+        self.geometricRestrictions[
+            name
+        ] = geometricRestriction = TopologyMillingControl(
+            name, millingDirections, region, csys, millingCheckRegion, radius
+        )
+        return geometricRestriction
+
+    @abaqus_method_doc
+    def TopologyOverhangControl(
+        self,
+        name: str,
+        pullDirection: tuple,
+        region: Region,
+        csys: int = None,
+        draftAngle: float = 45,
+        overhangCheckRegion: SymbolicConstant = OVERHANG_REGION,
+        pointRegion: Region = Region(),
+        radius: float = None,
+        technique: SymbolicConstant = AUTO,
+    ) -> TopologyOverhangControl:
+        """This method creates a TopologyOverhangControl object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].optimizationTasks[name].TopologyOverhangControl
+
+        .. versionadded:: 2019
+            The `TopologyOverhangControl` method was added.
+
+        Parameters
+        ----------
+        name
+            A String specifying the geometric restriction repository key.
+        pullDirection
+            A VertexArray object of length 2 specifying the overhang control print direction.
+            Instead of through a ConstrainedSketchVertex, each point can be specified through a tuple of coordinates.
+        region
+            A Region object specifying the region to which the geometric restriction is applied.
+        csys
+            None or a DatumCsys object specifying the local coordinate system of the
+            **pullDirection**. If **csys** = None, the global coordinate system is used. When this member
+            is queried, it returns an Int indicating the identifier of the DatumCsys. The default
+            value is None.
+        draftAngle
+            A Float specifying the overhang angle. The default value is 45.0.
+        overhangCheckRegion
+            The SymbolicConstant OVERHANG_REGION or a Region object specifying the overhang check
+            region. If the value is OVERHANG_REGION, the value of **region** is used as both the
+            overhang control region and the overhang check region. The default value is
+            OVERHANG_REGION.
+        pointRegion
+            A Region object specifying the point on a plane perpendicular to the **pullDirection**
+            that is used to specify the base plane when **technique** is POINT.
+        radius
+            A Float specifying the radius to define the size of the cones that are used in the
+            internal check for the overhang criteria.
+        technique
+            A SymbolicConstant specifying the overhang control technique used to define the base
+            plane. Possible values are AUTO, POINT, and NONE. The default value is AUTO.
+
+        Returns
+        -------
+            A TopologyOverhangControl object.
+        """
+        self.geometricRestrictions[
+            name
+        ] = geometricRestriction = TopologyOverhangControl(
+            name,
+            pullDirection,
+            region,
+            csys,
+            draftAngle,
+            overhangCheckRegion,
+            pointRegion,
+            radius,
+            technique,
+        )
+        return geometricRestriction
+
+    @abaqus_method_doc
+>>>>>>> 7d9a49b (Use `::` instead of `code-block` directive for code blocks (#1351))
     def TopologyPlanarSymmetry(
         self,
         name: str,
@@ -1758,9 +1825,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a TopologyPlanarSymmetry object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TopologyPlanarSymmetry
 
@@ -1805,9 +1870,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a TopologyPointSymmetry object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TopologyPointSymmetry
 
@@ -1849,9 +1912,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a TopologyRotationalSymmetry object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TopologyRotationalSymmetry
 
@@ -1904,9 +1965,7 @@ class OptimizationTask(OptimizationTaskBase):
         """This method creates a TurnControl object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TurnControl
 

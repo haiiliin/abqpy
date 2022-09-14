@@ -8,9 +8,7 @@ class PlanarTestData:
     tension).
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].hyperelastic.planarTestData
@@ -50,9 +48,7 @@ class PlanarTestData:
         """This method creates a PlanarTestData object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].hyperelastic.PlanarTestData
                 mdb.models[name].materials[name].hyperfoam.PlanarTestData

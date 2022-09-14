@@ -8,9 +8,7 @@ class RectangularProfile(Profile):
     The RectangularProfile object is derived from the Profile object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].profiles[name]
@@ -38,9 +36,7 @@ class RectangularProfile(Profile):
         """This method creates a RectangularProfile object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].RectangularProfile
                 session.odbs[name].RectangularProfile

@@ -9,9 +9,7 @@ class Constraint:
     common to all objects derived from the ConstrainedSketchConstraint.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].constraints[name]

@@ -12,9 +12,7 @@ class ConnectorDamage(ConnectorBehaviorOption):
     The ConnectorDamage object is derived from the ConnectorBehaviorOption object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].sections[name].behaviorOptions[i]
@@ -240,9 +238,7 @@ class ConnectorDamage(ConnectorBehaviorOption):
         """This method creates a connector damage behavior option for a ConnectorSection object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 import connectorBehavior
                 connectorBehavior.ConnectorDamage

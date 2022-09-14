@@ -8,9 +8,7 @@ class ThermalConductance:
     property.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].interactionProperties[name].thermalConductance
@@ -102,9 +100,7 @@ class ThermalConductance:
         """This method creates a ThermalConductance object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].interactionProperties[name].ThermalConductance
 

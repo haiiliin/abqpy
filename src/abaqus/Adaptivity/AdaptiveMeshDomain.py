@@ -8,9 +8,7 @@ class AdaptiveMeshDomain:
     Lagrangian Eularian (ALE) style adaptive smoothing mesh domain.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].steps[name].adaptiveMeshDomains[name]
@@ -46,9 +44,7 @@ class AdaptiveMeshDomain:
         """This method creates an AdaptiveMeshDomain object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].steps[name].AdaptiveMeshDomain
 

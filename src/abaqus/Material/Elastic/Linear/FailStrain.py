@@ -7,9 +7,7 @@ class FailStrain:
     r"""The FailStrain object defines parameters for strain-based failure measures.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].elastic.failStrain
@@ -40,9 +38,7 @@ class FailStrain:
         """This method creates a FailStrain object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].elastic.FailStrain
                 session.odbs[name].materials[name].elastic.FailStrain

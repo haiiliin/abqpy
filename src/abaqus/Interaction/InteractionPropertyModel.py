@@ -24,9 +24,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates an AcousticImpedanceProp object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].AcousticImpedanceProp
 
@@ -65,9 +63,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates an ActuatorSensorProp object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ActuatorSensorProp
 
@@ -103,9 +99,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates a CavityRadiationProp object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].CavityRadiationProp
 
@@ -137,9 +131,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates a ContactProperty object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].ContactProperty
 
@@ -167,9 +159,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates a FilmConditionProp object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].FilmConditionProp
 
@@ -225,9 +215,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates a FluidCavityProperty object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].FluidCavityProperty
 
@@ -369,9 +357,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates a FluidExchangeProperty object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].FluidExchangeProperty
 
@@ -463,6 +449,87 @@ class InteractionPropertyModel(ModelBase):
         return interactionProperty
 
     @abaqus_method_doc
+<<<<<<< HEAD
+=======
+    def FluidInflatorProperty(
+        self,
+        name: str,
+        definition: str,
+        effectiveArea: float,
+        tankVolume: float,
+        dischargeCoefficient: float = None,
+        dataTable: tuple = (),
+        numFluids: int = None,
+        mixtureType: str = "",
+        inflationTime: tuple = (),
+        fluidbehaviorName: tuple = (),
+        massFraction: tuple = (),
+    ) -> FluidInflatorProperty:
+        """This method creates a FluidInflatorProperty object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].FluidInflatorProperty
+
+        .. versionadded:: 2019
+            The `FluidInflatorProperty` method was added.
+
+        Parameters
+        ----------
+        name
+            A String specifying the interaction property repository key.
+        definition
+            A Symbolic constant specifying the method used for modeling the flow characteristics of
+            inflators. The default value is **definition** = DUAL PRESSURE. The possible values are DUAL
+            PRESSURE, PRESSURE AND MASS, TANK TEST, and TEMPERATURE AND MASS.
+        effectiveArea
+            A Float specifying the total inflator orifice area. This argument is applicable only if
+            **definition** = DUAL PRESSURE or **definition** = PRESSURE AND MASS.
+        tankVolume
+            A Float specifying the tank volume. This argument is applicable only if
+            **definition** = DUAL PRESSURE or **definition** = TANK TEST.
+        dischargeCoefficient
+            A Float specifying the discharge coefficient. This argument is applicable only if
+            **definition** = DUAL PRESSURE or **definition** = PRESSURE AND MASS.
+        dataTable
+            A sequence of sequences of Floats specifying the items described in the "Table data"
+            section below.
+        numFluids
+            An Int specifying the number of gas species used for this inflator.
+        mixtureType
+            A Symbolic constant specifying whether to use mass fraction or the molar fraction for a
+            mixture of ideal gases. The default value is MASS FRACTION. The possible values are MASS
+            FRACTION or MOLAR FRACTION.
+        inflationTime
+            A sequence of sequences of Floats specifying the inflation time.
+        fluidbehaviorName
+            A sequence of sequences of Strings specifying fluid behavior names.
+        massFraction
+            A sequence of sequences of Floats specifying the mass fraction or the molar fraction
+            corresponding to entered fluid behavior.
+
+        Returns
+        -------
+            A FluidInflatorProperty object.
+        """
+        self.interactionProperties[name] = interactionProperty = FluidInflatorProperty(
+            name,
+            definition,
+            effectiveArea,
+            tankVolume,
+            dischargeCoefficient,
+            dataTable,
+            numFluids,
+            mixtureType,
+            inflationTime,
+            fluidbehaviorName,
+            massFraction,
+        )
+        return interactionProperty
+
+    @abaqus_method_doc
+>>>>>>> 7d9a49b (Use `::` instead of `code-block` directive for code blocks (#1351))
     def IncidentWaveProperty(
         self,
         name: str,
@@ -501,9 +568,7 @@ class InteractionPropertyModel(ModelBase):
         """This method creates an IncidentWaveProperty object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].IncidentWaveProperty
 

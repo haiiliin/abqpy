@@ -9,9 +9,7 @@ class Calibration:
     Calibration object stores the data that is used for specifying materials from test data.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import calibration
             mdb.models[name].calibrations[name]
@@ -31,9 +29,7 @@ class Calibration:
         """This method creates a Calibration object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Calibration
 
@@ -54,9 +50,7 @@ class Calibration:
         """This method creates a Behavior object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Calibration
 
@@ -83,9 +77,7 @@ class Calibration:
         """This method creates a DataSet object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Calibration
 

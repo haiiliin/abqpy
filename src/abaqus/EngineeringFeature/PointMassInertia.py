@@ -11,9 +11,7 @@ class PointMassInertia(Inertia):
     The PointMassInertia object is derived from the Inertia object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].engineeringFeatures.inertias[name]
@@ -107,9 +105,7 @@ class PointMassInertia(Inertia):
         """This method creates a PointMassInertia object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.PointMassInertia
                 mdb.models[name].rootAssembly.engineeringFeatures.PointMassInertia

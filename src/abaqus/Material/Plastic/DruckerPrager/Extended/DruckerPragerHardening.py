@@ -8,9 +8,7 @@ class DruckerPragerHardening:
     models.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].druckerPrager.druckerPragerHardening
@@ -46,9 +44,7 @@ class DruckerPragerHardening:
         """This method creates a DruckerPragerHardening object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].druckerPrager.DruckerPragerHardening
                     session.odbs[name].materials[name].druckerPrager.DruckerPragerHardening

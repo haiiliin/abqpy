@@ -7,9 +7,7 @@ class GeometricProperties:
     """The GeometricProperties object specifies surface interaction properties.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].interactionProperties[name].geometricProperties
@@ -66,9 +64,7 @@ class GeometricProperties:
         """This method creates a GeometricProperties object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].interactionProperties[name].GeometricProperties
 

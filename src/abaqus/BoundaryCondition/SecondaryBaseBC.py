@@ -11,9 +11,7 @@ class SecondaryBaseBC(BoundaryCondition):
     The SecondaryBaseBC object is derived from the BoundaryCondition object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].boundaryConditions[name]
@@ -48,9 +46,7 @@ class SecondaryBaseBC(BoundaryCondition):
         """This method creates a SecondaryBaseBC object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SecondaryBaseBC
 

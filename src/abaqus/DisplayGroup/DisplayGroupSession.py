@@ -11,9 +11,7 @@ class DisplayGroupSession(SessionBase):
         """This method creates a DisplayGroup object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.DisplayGroup
 

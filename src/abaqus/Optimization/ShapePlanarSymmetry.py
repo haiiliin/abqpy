@@ -10,9 +10,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
     The ShapePlanarSymmetry object is derived from the GeometricRestriction object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import optimization
             mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
@@ -71,9 +69,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
         """This method creates a ShapePlanarSymmetry object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ShapePlanarSymmetry
 

@@ -8,9 +8,7 @@ class IMAField:
     MaterialAssignment predefined field.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].predefinedFields[name].fieldList

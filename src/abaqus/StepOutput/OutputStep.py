@@ -14,9 +14,7 @@ class OutputStep(StepBase):
     derived from the Step.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].steps[name]
@@ -40,9 +38,7 @@ class OutputStep(StepBase):
         """This method creates a DiagnosticPrint object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].steps[name].DiagnosticPrint
 
@@ -117,9 +113,7 @@ class OutputStep(StepBase):
         modal procedure.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].steps[name].Monitor
 
@@ -170,9 +164,7 @@ class OutputStep(StepBase):
         """This method creates a restart request.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].steps[name].Restart
 

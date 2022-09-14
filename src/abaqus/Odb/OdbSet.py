@@ -13,9 +13,7 @@ class OdbSet:
     """The set objects are used to identify regions of a model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].parts[name].elementSets[name]
@@ -58,9 +56,7 @@ class OdbSet:
         assembly-level sets).
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet
                 session.odbs[name].rootAssembly.instances[name].NodeSet
@@ -86,9 +82,7 @@ class OdbSet:
         """This method creates a node set from a sequence of node labels.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet
                 session.odbs[name].rootAssembly.instances[name].NodeSet
@@ -117,9 +111,7 @@ class OdbSet:
         assembly-level sets).
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet
                 session.odbs[name].rootAssembly.instances[name].NodeSet
@@ -146,9 +138,7 @@ class OdbSet:
         """This method creates an element set from a sequence of element labels.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet
                 session.odbs[name].rootAssembly.instances[name].NodeSet
@@ -175,9 +165,7 @@ class OdbSet:
         """This method creates a surface from the element and side identifiers for the assembly.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet
                 session.odbs[name].rootAssembly.instances[name].NodeSet
@@ -199,9 +187,7 @@ class OdbSet:
             | Two-dimensional elements         | FACE1, FACE2, FACE3, FACE4               |
             | Wire elements                    | END, END2                                |
             
-            For example:
-            
-            .. code-block:: python
+            For example::
             
                 side1Elements=instance1.elements[217:218]
                 side2Elements=instance2.elements[100:105]
@@ -222,9 +208,7 @@ class OdbSet:
         """This method creates a mesh surface from a sequence of element sets.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet
                 session.odbs[name].rootAssembly.instances[name].NodeSet
@@ -252,9 +236,7 @@ class OdbSet:
         """This method creates a mesh surface from a sequence of surface labels.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet
                 session.odbs[name].rootAssembly.instances[name].NodeSet

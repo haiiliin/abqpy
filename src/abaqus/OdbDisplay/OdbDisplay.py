@@ -38,9 +38,7 @@ class OdbDisplay:
     - The output database display options associated with a particular viewport.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             session.viewports[name].layers[name].odbDisplay
             import visualization
@@ -366,9 +364,7 @@ class OdbDisplay:
         sectionPoint
             A Dictionary with String keys and String values. Each key specifies a region in the
             model; the corresponding value specifies a section point within that region. For
-            example:
-            
-            .. code-block:: python
+            example::
             
                 sectionPoint={
                     'shell < MAT > < 7 section points >': 'SPOS, (fraction = 1.0)',
@@ -580,9 +576,7 @@ class OdbDisplay:
         """This method creates a ViewCut object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.viewports[name].layers[name].odbDisplay.ViewCut
                 session.viewports[name].odbDisplay.ViewCut

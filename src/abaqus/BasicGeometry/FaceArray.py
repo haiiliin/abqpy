@@ -11,9 +11,7 @@ class FaceArray(typing.List[Face]):
     must be updated for that part.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].allInternalSets[name].faces
@@ -45,9 +43,7 @@ class FaceArray(typing.List[Face]):
         """This method creates a FaceArray object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 part.FaceArray
 
@@ -257,10 +253,7 @@ class FaceArray(typing.List[Face]):
         ----------
         coordinates
             A sequence of a sequence of floats, where each sequence of floats describes the **X**-,
-            **Y**-, and **Z**-coordinates of a point.
-            
-            .. autolink-skip:: section
-            .. code-block:: python
+            **Y**-, and **Z**-coordinates of a point::
             
                 >>> r=f.getClosest(coordinates=((20.0, 20.0, 10.0), (-1.0, -15.0, 15), ))
                 >>> r.keys()

@@ -7,9 +7,7 @@ class AnalyticSurfaceSegment:
     """An individual segment of the analytic surface.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].parts[name].analyticSurface.segments[i]
@@ -34,9 +32,7 @@ class AnalyticSurfaceSegment:
         """This method creates an AnalyticSurfaceSegment object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 odbAccess.AnalyticSurfaceSegment
 

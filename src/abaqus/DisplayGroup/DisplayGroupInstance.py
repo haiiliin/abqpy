@@ -11,9 +11,7 @@ class DisplayGroupInstance:
     group and places it in the DisplayGroupInstanceRepository object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import assembly
             session.viewports[name].assemblyDisplay.displayGroupInstances[name]

@@ -10,10 +10,15 @@ class Coexecution:
     """The Coexecution object contains a set of jobs as associated parameters to define a
     co-simulation analysis.
 
+<<<<<<< HEAD
     .. note::
         This object can be accessed by:
 
         .. code-block:: python
+=======
+    .. note:: 
+        This object can be accessed by::
+>>>>>>> 7d9a49b (Use `::` instead of `code-block` directive for code blocks (#1351))
 
             import job
             mdb.coexecutions[name]

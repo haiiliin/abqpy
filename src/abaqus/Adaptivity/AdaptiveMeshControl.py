@@ -9,9 +9,7 @@ class AdaptiveMeshControl:
     an ALE adaptive mesh domain.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].adaptiveMeshControls[name]
@@ -100,9 +98,7 @@ class AdaptiveMeshControl:
         r"""This method creates an AdaptiveMeshControl object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].AdaptiveMeshControl
 

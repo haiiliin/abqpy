@@ -10,9 +10,7 @@ class SolidSection(Section):
     The ShellSection object is derived from the Section object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].sections[name]

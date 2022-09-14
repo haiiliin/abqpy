@@ -10,9 +10,7 @@ class AcisMdb(MdbBase):
     and analysis controls.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             mdb
     """
@@ -24,9 +22,7 @@ class AcisMdb(MdbBase):
         object is subsequently used by the PartFromGeometryFile method.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.openAcis
 
@@ -64,9 +60,7 @@ class AcisMdb(MdbBase):
         object is subsequently used by the PartFromGeometryFile method.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.openCatia
 
@@ -108,9 +102,7 @@ class AcisMdb(MdbBase):
         is subsequently used by the PartFromGeometryFile method.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.openEnf
 
@@ -155,9 +147,7 @@ class AcisMdb(MdbBase):
         object is subsequently used by the PartFromGeometryFile method.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.openIges
 
@@ -213,9 +203,7 @@ class AcisMdb(MdbBase):
         This object is subsequently used by the PartFromGeometryFile method.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.openParasolid
 
@@ -244,9 +232,7 @@ class AcisMdb(MdbBase):
         object is subsequently used by the PartFromGeometryFile method.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.openStep
 
@@ -277,9 +263,7 @@ class AcisMdb(MdbBase):
         This object is subsequently used by the PartFromGeometryFile method.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.openVda
 
@@ -299,3 +283,42 @@ class AcisMdb(MdbBase):
             The data in the VDA-FS file are corrupted.
         """
         return AcisFile()
+<<<<<<< HEAD
+=======
+
+    @staticmethod
+    @abaqus_method_doc
+    def openSolidworks(fileName: str, topology: SymbolicConstant = SOLID):
+        """This method creates an AcisFile object from a file containing Solidworks format
+        geometry. This object is subsequently used by the PartFromGeometryFile method.
+
+        .. note::
+            This function can be accessed by::
+
+                openSolidworks
+
+        .. versionadded:: 2020
+            The `openSolidworks` method was added.
+
+        Parameters
+        ----------
+        fileName
+            A String specifying the path to the Solidworks file to open.
+        topology
+            A SymbolicConstant specifying the topology of the data to be read from the file and of
+            the part to be created. Possible values are SOLID, SHELL, and WIRE. If **topology** = SOLID,
+            Abaqus/CAE attempts to attach cells to create a solid entity. If **topology** = SHELL,
+            Abaqus/CAE builds the body as a shell entity, not as a solid entity. The default value
+            is SOLID.
+
+        Returns
+        -------
+            An AcisFile object.
+
+        Raises
+        ------
+        Texterror: Failed to read Solidworks file
+            The data in the Solidworks file are corrupted.
+        """
+        return AcisFile()
+>>>>>>> 7d9a49b (Use `::` instead of `code-block` directive for code blocks (#1351))

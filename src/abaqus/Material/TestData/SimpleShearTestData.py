@@ -5,9 +5,7 @@ class SimpleShearTestData:
     r"""The SimpleShearTestData object provides simple shear test data.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].hyperfoam.simpleShearTestData
@@ -30,9 +28,7 @@ class SimpleShearTestData:
         """This method creates a SimpleShearTestData object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].hyperfoam.SimpleShearTestData
                 session.odbs[name].materials[name].hyperfoam.SimpleShearTestData
