@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 00:16+0000\n"
+"POT-Creation-Date: 2022-09-14 09:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,10 +52,10 @@ msgstr ""
 #: abaqus.Mesh.MeshNode.MeshNode:7 abaqus.Mesh.MeshNodeArray.MeshNodeArray:5
 #: abaqus.Mesh.MeshPart.MeshPart:6 abaqus.Mesh.MeshStats.MeshStats:6
 #: abaqus.Mesh.MesherOptions.MesherOptions:9 of
-msgid "This object can be accessed by:"
+msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly:15 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly:13 of
 msgid ""
 "Check `MeshAssembly on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblymgnpyc.htm?contextscope=all>`__."
@@ -3402,7 +3402,7 @@ msgstr ""
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getElementType:15
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.setMeshControls:24
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality:65
-#: abaqus.Mesh.MeshElement.MeshElement.Element:21
+#: abaqus.Mesh.MeshElement.MeshElement.Element:19
 #: abaqus.Mesh.MeshPart.MeshPart.getElementType:22
 #: abaqus.Mesh.MeshPart.MeshPart.setMeshControls:24
 #: abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality:65 of
@@ -4574,7 +4574,7 @@ msgid ""
 "setElementType command."
 msgstr ""
 
-#: abaqus.Mesh.ElemType.ElemType:13 of
+#: abaqus.Mesh.ElemType.ElemType:11 of
 msgid ""
 "Check `ElemType on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-elemtypepyc.htm?contextscope=all>`__."
@@ -5067,7 +5067,7 @@ msgid ""
 "repository on a part or part instance."
 msgstr ""
 
-#: abaqus.Mesh.MeshEdge.MeshEdge:21 of
+#: abaqus.Mesh.MeshEdge.MeshEdge:19 of
 msgid ""
 "Check `MeshEdge on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshedgepyc.htm?contextscope=all>`__."
@@ -5232,7 +5232,7 @@ msgstr ""
 msgid "The MeshEdgeArray is a sequence of MeshEdge objects."
 msgstr ""
 
-#: abaqus.Mesh.MeshEdgeArray.MeshEdgeArray:16 of
+#: abaqus.Mesh.MeshEdgeArray.MeshEdgeArray:14 of
 msgid ""
 "Check `MeshEdgeArray on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshedgearraypyc.htm?contextscope=all>`__."
@@ -5706,7 +5706,7 @@ msgid ""
 "repository. The index does not refer to the element label."
 msgstr ""
 
-#: abaqus.Mesh.MeshElement.MeshElement:39 of
+#: abaqus.Mesh.MeshElement.MeshElement:37 of
 msgid ""
 "Check `MeshElement on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshelementpyc.htm?contextscope=all>`__."
@@ -5717,7 +5717,7 @@ msgid ":py:obj:`label <abaqus.Mesh.MeshElement.MeshElement.label>`\\"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.Mesh.MeshElement.MeshElement.Element:24
+#: abaqus.Mesh.MeshElement.MeshElement.Element:22
 #: abaqus.Mesh.MeshElement.MeshElement.label:2 of
 msgid "An Int specifying the element label."
 msgstr ""
@@ -5839,44 +5839,44 @@ msgstr ""
 
 #: abaqus.Mesh.MeshElement.MeshElement.Element:5
 #: abaqus.Mesh.MeshPart.MeshPart.Node:5 of
-msgid "This function can be accessed by:"
+msgid "This function can be accessed by::"
 msgstr ""
 
-#: abaqus.Mesh.MeshElement.MeshElement.Element:12 of
+#: abaqus.Mesh.MeshElement.MeshElement.Element:10 of
 msgid ""
 "Check `Element on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-elementpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshElement.MeshElement.Element:17 of
+#: abaqus.Mesh.MeshElement.MeshElement.Element:15 of
 msgid "**nodes**"
 msgstr ""
 
-#: abaqus.Mesh.MeshElement.MeshElement.Element:17 of
+#: abaqus.Mesh.MeshElement.MeshElement.Element:15 of
 msgid "A sequence of MeshNode objects."
 msgstr ""
 
-#: abaqus.Mesh.MeshElement.MeshElement.Element:20 of
+#: abaqus.Mesh.MeshElement.MeshElement.Element:18 of
 msgid ""
 "A SymbolicConstant specifying the shape of the new element. Possible "
 "values are LINE2, LINE3, TRI3, TRI6, QUAD4, QUAD8, TET4, TET10, WEDGE6, "
 "WEDGE15, HEX8, and HEX20."
 msgstr ""
 
-#: abaqus.Mesh.MeshElement.MeshElement.Element:24
+#: abaqus.Mesh.MeshElement.MeshElement.Element:22
 #: abaqus.Mesh.MeshElement.MeshElement.setValues:25
 #: abaqus.Mesh.MeshElementArray.MeshElementArray.getFromLabel:10
 #: abaqus.Mesh.MeshNode.MeshNode.setValues:25
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getFromLabel:10
-#: abaqus.Mesh.MeshPart.MeshPart.Node:24 of
+#: abaqus.Mesh.MeshPart.MeshPart.Node:22 of
 msgid "**label**"
 msgstr ""
 
-#: abaqus.Mesh.MeshElement.MeshElement.Element:41 of
+#: abaqus.Mesh.MeshElement.MeshElement.Element:39 of
 msgid "element: :obj:`MeshElement`"
 msgstr ""
 
-#: abaqus.Mesh.MeshElement.MeshElement.Element:29
+#: abaqus.Mesh.MeshElement.MeshElement.Element:27
 #: abaqus.Mesh.MeshElementArray.MeshElementArray.getFromLabel:15 of
 msgid "A :py:class:`~abaqus.Mesh.MeshElement.MeshElement` object."
 msgstr ""
@@ -5950,7 +5950,7 @@ msgstr ""
 msgid "The MeshElementArray is a sequence of MeshElement objects."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray:36 of
+#: abaqus.Mesh.MeshElementArray.MeshElementArray:34 of
 msgid ""
 "Check `MeshElementArray on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshelementarraypyc.htm?contextscope=all>`__."
@@ -6580,7 +6580,7 @@ msgid ""
 "Abaqus/CAE session."
 msgstr ""
 
-#: abaqus.Mesh.MesherOptions.MesherOptions:16 of
+#: abaqus.Mesh.MesherOptions.MesherOptions:14 of
 msgid ""
 "Check `MesherOptions on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mesheroptionspyc.htm?contextscope=all>`__."
@@ -6686,7 +6686,7 @@ msgid ""
 "repository on a part or part instance."
 msgstr ""
 
-#: abaqus.Mesh.MeshFace.MeshFace:21 of
+#: abaqus.Mesh.MeshFace.MeshFace:19 of
 msgid ""
 "Check `MeshFace on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshfacepyc.htm?contextscope=all>`__."
@@ -6983,7 +6983,7 @@ msgstr ""
 msgid "The MeshFaceArray is a sequence of MeshFace objects."
 msgstr ""
 
-#: abaqus.Mesh.MeshFaceArray.MeshFaceArray:16 of
+#: abaqus.Mesh.MeshFaceArray.MeshFaceArray:14 of
 msgid ""
 "Check `MeshFaceArray on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshfacearraypyc.htm?contextscope=all>`__."
@@ -7264,7 +7264,7 @@ msgid ""
 "index does not refer to the node label."
 msgstr ""
 
-#: abaqus.Mesh.MeshNode.MeshNode:39 of
+#: abaqus.Mesh.MeshNode.MeshNode:37 of
 msgid ""
 "Check `MeshNode on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshnodepyc.htm?contextscope=all>`__."
@@ -7275,7 +7275,7 @@ msgid ":py:obj:`label <abaqus.Mesh.MeshNode.MeshNode.label>`\\"
 msgstr ""
 
 #: ../../None:5:<autosummary>:1 ../../docstring
-#: abaqus.Mesh.MeshNode.MeshNode.label:2 abaqus.Mesh.MeshPart.MeshPart.Node:24
+#: abaqus.Mesh.MeshNode.MeshNode.label:2 abaqus.Mesh.MeshPart.MeshPart.Node:22
 #: of
 msgid "An Int specifying the node label."
 msgstr ""
@@ -7398,7 +7398,7 @@ msgstr ""
 msgid "The MeshNodeArray is a sequence of MeshNode objects."
 msgstr ""
 
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray:37 of
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray:35 of
 msgid ""
 "Check `MeshNodeArray on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshnodearraypyc.htm?contextscope=all>`__."
@@ -7781,7 +7781,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getClosest:10
-#: abaqus.Mesh.MeshPart.MeshPart.Node:17 of
+#: abaqus.Mesh.MeshPart.MeshPart.Node:15 of
 msgid "**coordinates**"
 msgstr ""
 
@@ -7830,12 +7830,12 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getFromLabel:27
-#: abaqus.Mesh.MeshPart.MeshPart.Node:41 of
+#: abaqus.Mesh.MeshPart.MeshPart.Node:39 of
 msgid ":obj:`MeshNode`"
 msgstr ""
 
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getFromLabel:15
-#: abaqus.Mesh.MeshPart.MeshPart.Node:29 of
+#: abaqus.Mesh.MeshPart.MeshPart.Node:27 of
 msgid "A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object."
 msgstr ""
 
@@ -7876,7 +7876,7 @@ msgid ""
 "about the Part object, see Part object."
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart:13 of
+#: abaqus.Mesh.MeshPart.MeshPart:11 of
 msgid ""
 "Check `MeshPart on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partmgnpyc.htm?contextscope=all>`__."
@@ -10263,21 +10263,21 @@ msgstr ""
 msgid ":py:obj:`suppress <abaqus.Mesh.MeshPart.MeshPart.suppress>`\\ \\(\\)"
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.Node:12 of
+#: abaqus.Mesh.MeshPart.MeshPart.Node:10 of
 msgid ""
 "Check `Node on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-nodepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.Node:17 of
+#: abaqus.Mesh.MeshPart.MeshPart.Node:15 of
 msgid "A sequence of three Floats specifying the coordinates of the new node."
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.Node:21 of
+#: abaqus.Mesh.MeshPart.MeshPart.Node:19 of
 msgid "**localCsys**"
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.Node:20 of
+#: abaqus.Mesh.MeshPart.MeshPart.Node:18 of
 msgid ""
 "A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the "
 "local coordinate system. If unspecified, the global coordinate system "
@@ -10828,7 +10828,7 @@ msgid ""
 "methods."
 msgstr ""
 
-#: abaqus.Mesh.MeshStats.MeshStats:13 of
+#: abaqus.Mesh.MeshStats.MeshStats:11 of
 msgid ""
 "Check `MeshStats on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshstatspyc.htm?contextscope=all>`__."
@@ -11782,5 +11782,11 @@ msgstr ""
 #~ msgid ""
 #~ "Check `MeshStats on help.3ds.com/2021 "
 #~ "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshstatspyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid "This object can be accessed by:"
+#~ msgstr ""
+
+#~ msgid "This function can be accessed by:"
 #~ msgstr ""
 

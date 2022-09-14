@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-13 16:08+0000\n"
+"POT-Creation-Date: 2022-09-14 09:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,10 +51,10 @@ msgstr ""
 #: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions:7
 #: abaqus.Animation.Movie.Movie:6
 #: abaqus.Animation.QuickTimeOptions.QuickTimeOptions:7 of
-msgid "This object can be accessed by:"
+msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.Animation.AnimationOptions.AnimationOptions:16 of
+#: abaqus.Animation.AnimationOptions.AnimationOptions:14 of
 msgid ""
 "Check `AnimationOptions on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationoptionspyc.htm?contextscope=all>`__."
@@ -698,7 +698,7 @@ msgid ""
 "about the Session object, see Session object."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession:13 of
+#: abaqus.Animation.AnimationSession.AnimationSession:11 of
 msgid ""
 "Check `AnimationSession on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationsessionpyc.htm?contextscope=all>`__."
@@ -1626,31 +1626,31 @@ msgid ""
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.Movie:5 of
-msgid "This function can be accessed by:"
+msgid "This function can be accessed by::"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:12
-#: abaqus.Animation.Movie.Movie:14 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:10
+#: abaqus.Animation.Movie.Movie:12 of
 msgid ""
 "Check `Movie on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-moviepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:17 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:15 of
 msgid "**name**"
 msgstr ""
 
-#: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:17
+#: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:15
 #: abaqus.Animation.Movie.Movie.name:2 of
 msgid "A String specifying the repository name for the movie."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:21
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:19
 #: abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation:12 of
 msgid "**fileName**"
 msgstr ""
 
-#: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:20
+#: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:18
 #: abaqus.Animation.Movie.Movie.fileName:2 of
 msgid ""
 "A String specifying the file from which the movie is to be read. The file"
@@ -1658,12 +1658,12 @@ msgid ""
 ".mpeg, or .wmv)."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:25
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:23
 #: abaqus.Animation.Movie.Movie.setValues:11 of
 msgid "**startFrame**"
 msgstr ""
 
-#: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:24
+#: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:22
 #: abaqus.Animation.Movie.Movie.setValues:10
 #: abaqus.Animation.Movie.Movie.startFrame:2 of
 msgid ""
@@ -1671,12 +1671,12 @@ msgid ""
 "default value is 0."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:29
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:27
 #: abaqus.Animation.Movie.Movie.setValues:15 of
 msgid "**endFrame**"
 msgstr ""
 
-#: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:28
+#: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:26
 #: abaqus.Animation.Movie.Movie.endFrame:2
 #: abaqus.Animation.Movie.Movie.setValues:14 of
 msgid ""
@@ -1685,12 +1685,12 @@ msgid ""
 "the movie. The default value is −1."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:34
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:32
 #: abaqus.Animation.Movie.Movie.setValues:20 of
 msgid "**timelineStartFrame**"
 msgstr ""
 
-#: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:32
+#: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:30
 #: abaqus.Animation.Movie.Movie.setValues:18
 #: abaqus.Animation.Movie.Movie.timelineStartFrame:2 of
 msgid ""
@@ -1699,12 +1699,12 @@ msgid ""
 "displayed in the viewport. The default value is 0."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:39
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:37
 #: abaqus.Animation.Movie.Movie.setValues:25 of
 msgid "**timelineEndFrame**"
 msgstr ""
 
-#: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:37
+#: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:35
 #: abaqus.Animation.Movie.Movie.setValues:23
 #: abaqus.Animation.Movie.Movie.timelineEndFrame:2 of
 msgid ""
@@ -1714,12 +1714,12 @@ msgid ""
 "value is −1."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:43
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:41
 #: abaqus.Animation.Movie.Movie.setValues:29 of
 msgid "**timelineStartTime**"
 msgstr ""
 
-#: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:42
+#: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:40
 #: abaqus.Animation.Movie.Movie.setValues:28
 #: abaqus.Animation.Movie.Movie.timelineStartTime:2 of
 msgid ""
@@ -1727,12 +1727,12 @@ msgid ""
 "of **startFrame**. The default value is 0.0."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:48
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:46
 #: abaqus.Animation.Movie.Movie.setValues:38 of
 msgid "**timelineEndTime**"
 msgstr ""
 
-#: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:46
+#: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:44
 #: abaqus.Animation.Movie.Movie.setValues:32
 #: abaqus.Animation.Movie.Movie.timelineEndTime:2 of
 msgid ""
@@ -1746,11 +1746,11 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:56 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:54 of
 msgid ":obj:`Movie`"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:53 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:51 of
 msgid "A :py:class:`~abaqus.Animation.Movie.Movie` object."
 msgstr ""
 
@@ -1759,27 +1759,27 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:61 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:59 of
 msgid "ValueError: :obj:`Unable` :obj:`to` :obj:`open` :obj:`movie` :obj:`file`"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:61 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:59 of
 msgid "If **fileName** does not exist or can not be read."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:64 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:62 of
 msgid "ValueError: :obj:`Unsupported` :obj:`movie` format."
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:64 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:62 of
 msgid "If **fileName** references an unsupported movie file format"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:75 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:73 of
 msgid "ValueError: :obj:`Unable` :obj:`to` :obj:`decode` :obj:`movie` :obj:`file`"
 msgstr ""
 
-#: abaqus.Animation.AnimationSession.AnimationSession.Movie:67 of
+#: abaqus.Animation.AnimationSession.AnimationSession.Movie:65 of
 msgid "If the contents of **fileName** are corrupt or can not be decoded."
 msgstr ""
 
@@ -1834,7 +1834,7 @@ msgid ""
 "imported."
 msgstr ""
 
-#: abaqus.Animation.AVIOptions.AVIOptions:15 of
+#: abaqus.Animation.AVIOptions.AVIOptions:13 of
 msgid ""
 "Check `AVIOptions on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-avioptionspyc.htm?contextscope=all>`__."
@@ -2022,7 +2022,7 @@ msgstr ""
 msgid "The ImageAnimation object is used to build frame by frame animation."
 msgstr ""
 
-#: abaqus.Animation.ImageAnimation.ImageAnimation:13 of
+#: abaqus.Animation.ImageAnimation.ImageAnimation:11 of
 msgid ""
 "Check `ImageAnimation on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imageanimationpyc.htm?contextscope=all>`__."
@@ -2115,7 +2115,7 @@ msgid ""
 "member when the animation module is imported."
 msgstr ""
 
-#: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions:15 of
+#: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions:13 of
 msgid ""
 "Check `ImageAnimationOptions on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imageanimationoptionspyc.htm?contextscope=all>`__."
@@ -2410,7 +2410,7 @@ msgid ""
 "animation module is imported."
 msgstr ""
 
-#: abaqus.Animation.QuickTimeOptions.QuickTimeOptions:15 of
+#: abaqus.Animation.QuickTimeOptions.QuickTimeOptions:13 of
 msgid ""
 "Check `QuickTimeOptions on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-quicktimeoptionspyc.htm?contextscope=all>`__."
@@ -2558,5 +2558,11 @@ msgstr ""
 #~ ":py:obj:`exit "
 #~ "<abaqus.Animation.AnimationSession.AnimationSession.exit>`\\ "
 #~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid "This object can be accessed by:"
+#~ msgstr ""
+
+#~ msgid "This function can be accessed by:"
 #~ msgstr ""
 

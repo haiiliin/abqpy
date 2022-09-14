@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 00:16+0000\n"
+"POT-Creation-Date: 2022-09-14 09:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,10 +48,10 @@ msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb:6 abaqus.Mdb.Mdb.Mdb:6 abaqus.Mdb.MdbBase.MdbBase:6
 #: abaqus.Part.AcisMdb.AcisMdb:6 of
-msgid "This object can be accessed by:"
+msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb:13 of
+#: abaqus.Mdb.Mdb.Mdb:11 of
 msgid ""
 "Check `Mdb on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`__."
@@ -407,10 +407,10 @@ msgstr ""
 #: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:6
 #: abaqus.Part.AcisMdb.AcisMdb.openStep:6 abaqus.Part.AcisMdb.AcisMdb.openVda:6
 #: of
-msgid "This function can be accessed by:"
+msgid "This function can be accessed by::"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:13 of
+#: abaqus.Job.JobMdb.JobMdb.Job:11 of
 msgid ""
 "Check `Job on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobpyc.htm?contextscope=all>`__."
@@ -431,46 +431,46 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:19 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:18
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:17 abaqus.Mdb.Mdb.Mdb.Model:17
+#: abaqus.Job.JobMdb.JobMdb.Job:17 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:16
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:15 abaqus.Mdb.Mdb.Mdb.Model:15
 #: of
 msgid "**name**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:18 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:17
+#: abaqus.Job.JobMdb.JobMdb.Job:16 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:15
 #: of
 msgid ""
 "A String specifying the name of the new job. The name must be a valid "
 "Abaqus/CAE object name."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:23
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:20 of
+#: abaqus.Job.JobMdb.JobMdb.Job:21
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:18 of
 msgid "**model**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:22 of
+#: abaqus.Job.JobMdb.JobMdb.Job:20 of
 msgid ""
 "A String specifying the name of the model to be analyzed or a Model "
 "object specifying the model to be analyzed."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:26
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:31 abaqus.Mdb.Mdb.Mdb.Model:21
+#: abaqus.Job.JobMdb.JobMdb.Job:24
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:29 abaqus.Mdb.Mdb.Mdb.Model:19
 #: of
 msgid "**description**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:26 of
+#: abaqus.Job.JobMdb.JobMdb.Job:24 of
 msgid "A String specifying a description of the job."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:31 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:28
+#: abaqus.Job.JobMdb.JobMdb.Job:29 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:26
 #: of
 msgid "**type**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:29 of
+#: abaqus.Job.JobMdb.JobMdb.Job:27 of
 msgid ""
 "A SymbolicConstant specifying the type of job. Possible values are "
 "ANALYSIS, SYNTAXCHECK, RECOVER, and RESTART. The default value is "
@@ -478,12 +478,12 @@ msgid ""
 "is not available."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:36 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:33
+#: abaqus.Job.JobMdb.JobMdb.Job:34 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:31
 #: of
 msgid "**queue**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:34 of
+#: abaqus.Job.JobMdb.JobMdb.Job:32 of
 msgid ""
 "A String specifying the name of the queue to which to submit the job. The"
 " default value is an empty string.Note:You can use the **queue** argument"
@@ -491,12 +491,12 @@ msgid ""
 "queues are available only on Linux platforms."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:41 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:38
+#: abaqus.Job.JobMdb.JobMdb.Job:39 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:36
 #: of
 msgid "**waitHours**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:39 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:36
+#: abaqus.Job.JobMdb.JobMdb.Job:37 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:34
 #: of
 msgid ""
 "An Int specifying the number of hours to wait before submitting the job. "
@@ -505,12 +505,12 @@ msgid ""
 "**atTime** are mutually exclusive."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:46 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:43
+#: abaqus.Job.JobMdb.JobMdb.Job:44 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:41
 #: of
 msgid "**waitMinutes**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:44 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:41
+#: abaqus.Job.JobMdb.JobMdb.Job:42 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:39
 #: of
 msgid ""
 "An Int specifying the number of minutes to wait before submitting the "
@@ -519,12 +519,12 @@ msgid ""
 "and **atTime** are mutually exclusive."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:53 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:50
+#: abaqus.Job.JobMdb.JobMdb.Job:51 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:48
 #: of
 msgid "**atTime**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:49 of
+#: abaqus.Job.JobMdb.JobMdb.Job:47 of
 msgid ""
 "A String specifying the time at which to submit the job. If **queue** is "
 "empty, the string syntax must be valid for the Linux `at` command. If "
@@ -534,76 +534,76 @@ msgid ""
 "however, the `at` command is available only on Linux platforms."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:57 of
+#: abaqus.Job.JobMdb.JobMdb.Job:55 of
 msgid "**echoPrint**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:56 of
+#: abaqus.Job.JobMdb.JobMdb.Job:54 of
 msgid ""
 "A Boolean specifying whether an echo of the input data is printed. The "
 "default value is OFF."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:61 of
+#: abaqus.Job.JobMdb.JobMdb.Job:59 of
 msgid "**contactPrint**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:60 of
+#: abaqus.Job.JobMdb.JobMdb.Job:58 of
 msgid ""
 "A Boolean specifying whether contact constraint data are printed. The "
 "default value is OFF."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:65 of
+#: abaqus.Job.JobMdb.JobMdb.Job:63 of
 msgid "**modelPrint**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:64 of
+#: abaqus.Job.JobMdb.JobMdb.Job:62 of
 msgid ""
 "A Boolean specifying whether model definition data are printed. The "
 "default value is OFF."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:68 of
+#: abaqus.Job.JobMdb.JobMdb.Job:66 of
 msgid "**historyPrint**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:68 of
+#: abaqus.Job.JobMdb.JobMdb.Job:66 of
 msgid ""
 "A Boolean specifying whether history data are printed. The default value "
 "is OFF."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:72 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:54
+#: abaqus.Job.JobMdb.JobMdb.Job:70 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:52
 #: of
 msgid "**scratch**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:71 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:53
+#: abaqus.Job.JobMdb.JobMdb.Job:69 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:51
 #: of
 msgid ""
 "A String specifying the location of the scratch directory. The default "
 "value is an empty string."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:76 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:58
+#: abaqus.Job.JobMdb.JobMdb.Job:74 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:56
 #: of
 msgid "**userSubroutine**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:75 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:57
+#: abaqus.Job.JobMdb.JobMdb.Job:73 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:55
 #: of
 msgid ""
 "A String specifying the file containing the user's subroutine "
 "definitions. The default value is an empty string."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:80 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:62
+#: abaqus.Job.JobMdb.JobMdb.Job:78 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:60
 #: of
 msgid "**numCpus**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:79 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:61
+#: abaqus.Job.JobMdb.JobMdb.Job:77 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:59
 #: of
 msgid ""
 "An Int specifying the number of CPUs to use for this analysis if parallel"
@@ -611,12 +611,12 @@ msgid ""
 "default value is 1."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:84 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:66
+#: abaqus.Job.JobMdb.JobMdb.Job:82 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:64
 #: of
 msgid "**memory**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:83 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:65
+#: abaqus.Job.JobMdb.JobMdb.Job:81 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:63
 #: of
 msgid ""
 "An Int specifying the amount of memory available to Abaqus analysis. The "
@@ -624,12 +624,12 @@ msgid ""
 "default value is 90."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:89 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:71
+#: abaqus.Job.JobMdb.JobMdb.Job:87 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:69
 #: of
 msgid "**memoryUnits**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:87 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:69
+#: abaqus.Job.JobMdb.JobMdb.Job:85 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:67
 #: of
 msgid ""
 "A SymbolicConstant specifying the units for the amount of memory used in "
@@ -637,12 +637,12 @@ msgid ""
 "GIGA_BYTES. The default value is PERCENTAGE."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:94 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:76
+#: abaqus.Job.JobMdb.JobMdb.Job:92 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:74
 #: of
 msgid "**explicitPrecision**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:92 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:74
+#: abaqus.Job.JobMdb.JobMdb.Job:90 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:72
 #: of
 msgid ""
 "A SymbolicConstant specifying whether to use the double precision version"
@@ -651,12 +651,12 @@ msgid ""
 "SINGLE."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:98 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:80
+#: abaqus.Job.JobMdb.JobMdb.Job:96 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:78
 #: of
 msgid "**nodalOutputPrecision**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:97 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:79
+#: abaqus.Job.JobMdb.JobMdb.Job:95 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:77
 #: of
 msgid ""
 "A SymbolicConstant specifying the precision of the nodal output written "
@@ -664,51 +664,51 @@ msgid ""
 "value is SINGLE."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:103
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:85 of
+#: abaqus.Job.JobMdb.JobMdb.Job:101
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:83 of
 msgid "**parallelizationMethodExplicit**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:101
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:83 of
+#: abaqus.Job.JobMdb.JobMdb.Job:99 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:81
+#: of
 msgid ""
 "A SymbolicConstant specifying the parallelization method for "
 "Abaqus/Explicit. This value is ignored for Abaqus/Standard. Possible "
 "values are DOMAIN and LOOP. The default value is DOMAIN."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:108
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:90 of
+#: abaqus.Job.JobMdb.JobMdb.Job:106
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:88 of
 msgid "**numDomains**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:106
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:88 of
+#: abaqus.Job.JobMdb.JobMdb.Job:104
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:86 of
 msgid ""
 "An Int specifying the number of domains for parallel execution in "
 "Abaqus/Explicit. When **parallelizationMethodExplicit** = DOMAIN, "
 "**numDomains** must be a multiple of **numCpus**. The default value is 1."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:112
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:94 of
+#: abaqus.Job.JobMdb.JobMdb.Job:110
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:92 of
 msgid "**activateLoadBalancing**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:111
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:93 of
+#: abaqus.Job.JobMdb.JobMdb.Job:109
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:91 of
 msgid ""
 "A Boolean specifying whether to activate dyanmic load balancing for jobs "
 "running on multiple processors with multiple domains in Abaqus/Explicit. "
 "The default value is OFF."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:117
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:98 of
+#: abaqus.Job.JobMdb.JobMdb.Job:115
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:96 of
 msgid "**multiprocessingMode**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:115 of
+#: abaqus.Job.JobMdb.JobMdb.Job:113 of
 msgid ""
 "A SymbolicConstant specifying whether an analysis is decomposed into "
 "threads or into multiple processes that communicate through a message "
@@ -716,13 +716,13 @@ msgid ""
 "The default value is DEFAULT."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:123
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:117 of
+#: abaqus.Job.JobMdb.JobMdb.Job:121
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:115 of
 msgid "**licenseType**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:120
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:101 of
+#: abaqus.Job.JobMdb.JobMdb.Job:118
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:99 of
 msgid ""
 "A SymbolicConstant specifying the type of license type being used in the "
 "case of the DSLS SimUnit license model. Possible values are DEFAULT, "
@@ -741,11 +741,11 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:131 of
+#: abaqus.Job.JobMdb.JobMdb.Job:129 of
 msgid ":obj:`ModelJob`"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:128 of
+#: abaqus.Job.JobMdb.JobMdb.Job:126 of
 msgid "A :py:class:`~abaqus.Job.ModelJob.ModelJob` object."
 msgstr ""
 
@@ -761,29 +761,29 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:144
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:82 of
+#: abaqus.Job.JobMdb.JobMdb.Job:142
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:80 of
 msgid ":obj:`AbaqusException`"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:12 of
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:10 of
 msgid ""
 "Check `JobFromInputFile on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobfrominputfilepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:23 of
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:21 of
 msgid "**inputFileName**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:21 of
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:19 of
 msgid ""
 "A String specifying the input file to read. Possible values are any valid"
 " file name. If the .inp extension is not included in the value of the "
 "argument, the system will append it for the user."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:26 of
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:24 of
 msgid ""
 "A SymbolicConstant specifying the type of job. Possible values are "
 "ANALYSIS, SYNTAXCHECK, and RECOVER. The default value is ANALYSIS.For "
@@ -791,7 +791,7 @@ msgid ""
 "supported."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:31 of
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:29 of
 msgid ""
 "A String specifying the name of the queue to which to submit the job. The"
 " default value is an empty string.Note: You can use the **queue** "
@@ -799,7 +799,7 @@ msgid ""
 "remote queues are available only on Linux platforms."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:46 of
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:44 of
 msgid ""
 "A String specifying the time at which to submit the job. If **queue** is "
 "empty, the string syntax must be valid for the Linux `at` command. If "
@@ -809,173 +809,173 @@ msgid ""
 " however, the `at` command is available only on Linux platforms."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:97 of
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:95 of
 msgid ""
 "A SymbolicConstant specifying whether an analysis is decomposed into "
 "threads or into multiple processes that communicate through a message"
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:12 of
+#: abaqus.Mdb.Mdb.Mdb.Model:10 of
 msgid ""
 "Check `Model on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:17 of
+#: abaqus.Mdb.Mdb.Mdb.Model:15 of
 msgid "A String specifying the repository key."
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:20 of
+#: abaqus.Mdb.Mdb.Mdb.Model:18 of
 msgid ""
 "A String specifying the purpose and contents of the Model object. The "
 "default value is an empty string."
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:24 of
+#: abaqus.Mdb.Mdb.Mdb.Model:22 of
 msgid "**stefanBoltzmann**"
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:24 of
+#: abaqus.Mdb.Mdb.Mdb.Model:22 of
 msgid ""
 "None or a Float specifying the Stefan-Boltzmann constant. The default "
 "value is None."
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:27 of
+#: abaqus.Mdb.Mdb.Mdb.Model:25 of
 msgid "**absoluteZero**"
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:27 of
+#: abaqus.Mdb.Mdb.Mdb.Model:25 of
 msgid ""
 "None or a Float specifying the absolute zero constant. The default value "
 "is None."
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:32 of
+#: abaqus.Mdb.Mdb.Mdb.Model:30 of
 msgid "**waveFormulation**"
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:30 of
+#: abaqus.Mdb.Mdb.Mdb.Model:28 of
 msgid ""
 "A SymbolicConstant specifying the type of incident wave formulation to be"
 " used in acoustic problems. Possible values are NOT_SET, SCATTERED, and "
 "TOTAL. The default value is NOT_SET."
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:36 of
+#: abaqus.Mdb.Mdb.Mdb.Model:34 of
 msgid "**modelType**"
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:35 of
+#: abaqus.Mdb.Mdb.Mdb.Model:33 of
 msgid ""
 "A SymbolicConstant specifying the analysis model type. Possible values "
 "are STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is "
 "STANDARD_EXPLICIT."
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:39 of
+#: abaqus.Mdb.Mdb.Mdb.Model:37 of
 msgid "**universalGas**"
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:39 of
+#: abaqus.Mdb.Mdb.Mdb.Model:37 of
 msgid ""
 "None or a Float specifying the universal gas constant. The default value "
 "is None."
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:43 of
+#: abaqus.Mdb.Mdb.Mdb.Model:41 of
 msgid "**copyConstraints**"
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:42 of
+#: abaqus.Mdb.Mdb.Mdb.Model:40 of
 msgid ""
 "A boolean specifying whether to copy the constraints created in the model"
 " to the model that instances this model. The default value is ON."
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:47 of
+#: abaqus.Mdb.Mdb.Mdb.Model:45 of
 msgid "**copyConnectors**"
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:46 of
+#: abaqus.Mdb.Mdb.Mdb.Model:44 of
 msgid ""
 "A boolean specifying whether to copy the connectors created in the model "
 "to the model that instances this model. The default value is ON."
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:51 of
+#: abaqus.Mdb.Mdb.Mdb.Model:49 of
 msgid "**copyInteractions**"
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:50 of
+#: abaqus.Mdb.Mdb.Mdb.Model:48 of
 msgid ""
 "A boolean specifying whether to copy the interactions created in the "
 "model to the model that instances this model. The default value is ON."
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:68 of
+#: abaqus.Mdb.Mdb.Mdb.Model:66 of
 msgid "model: :obj:`Model`"
 msgstr ""
 
-#: abaqus.Mdb.Mdb.Mdb.Model:56 of
+#: abaqus.Mdb.Mdb.Mdb.Model:54 of
 msgid "A :py:class:`~abaqus.Model.Model.Model` object"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:12 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:10 of
 msgid ""
 "Check `OptimizationProcess on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-optimizationprocesspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:17 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:15 of
 msgid "A String specifying name of the optimization process."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:20 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:18 of
 msgid ""
 "A String specifying name of the model to be used for the optimization "
 "process."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:24 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:22 of
 msgid "**task**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:23 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:21 of
 msgid ""
 "A String specifying name of the optimization task to be used for the "
 "optimization process."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:28 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:26 of
 msgid "**prototypeJob**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:27 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:25 of
 msgid ""
 "A String specifying name of the job to be used as the prototype for all "
 "analysis jobs run by the optimization process."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:31 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:29 of
 msgid "A String specifying a description of the optimization process."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:35 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:33 of
 msgid "**maxDesignCycle**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:34 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:32 of
 msgid ""
 "An Int specifying the maximum number of allowed design cycles for the "
 "optimization process. The default value is 15."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:43 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:41 of
 msgid "**dataSaveFrequency**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:38 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:36 of
 msgid ""
 "An Enum specifying whether Abaqus should save every iteration file in the"
 " optimization process or a selection of iteration files saved at a user-"
@@ -986,44 +986,44 @@ msgid ""
 "parameter. The default value is OPT_DATASAVE_SPECIFY_CYCLE."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:47 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:45 of
 msgid "**saveInitial**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:46 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:44 of
 msgid ""
 "A Boolean specifying whether the initial cycle should be saved when "
 "**dataSaveFrequency** is OPT_DATASAVE_SPECIFY_CYCLE. The default value is"
 " True."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:51 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:49 of
 msgid "**saveFirst**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:50 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:48 of
 msgid ""
 "A Boolean specifying whether the first cycle should be saved when "
 "**dataSaveFrequency** is OPT_DATASAVE_SPECIFY_CYCLE. The default value is"
 " True."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:55 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:53 of
 msgid "**saveLast**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:54 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:52 of
 msgid ""
 "A Boolean specifying whether the last cycle should be saved when "
 "**dataSaveFrequency** is OPT_DATASAVE_SPECIFY_CYCLE. The default value is"
 " True."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:61 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:59 of
 msgid "**saveEvery**"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:58 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:56 of
 msgid ""
 "An Int specifying every nth cycle iterations to be saved when "
 "**dataSaveFrequency** is OPT_DATASAVE_SPECIFY_CYCLE. Abaqus saves file "
@@ -1032,11 +1032,11 @@ msgid ""
 "so on. The default value is None."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:69 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:67 of
 msgid ":obj:`OptimizationProcess`"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:66 of
+#: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:64 of
 msgid "An :py:class:`~abaqus.Job.OptimizationProcess.OptimizationProcess` object."
 msgstr ""
 
@@ -1101,8 +1101,8 @@ msgstr ""
 #: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:22
 #: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:27
 #: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:39
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:32 abaqus.Mdb.MdbBase.MdbBase.openMdb:37
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:41 abaqus.Mdb.MdbBase.MdbBase.openMdb:53
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:30 abaqus.Mdb.MdbBase.MdbBase.openMdb:35
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:39 abaqus.Mdb.MdbBase.MdbBase.openMdb:51
 #: abaqus.Mdb.MdbBase.MdbBase.save:20 abaqus.Mdb.MdbBase.MdbBase.save:24
 #: abaqus.Mdb.MdbBase.MdbBase.saveAs:21 abaqus.Mdb.MdbBase.MdbBase.saveAs:33 of
 msgid ":obj:`MdbError`"
@@ -1134,36 +1134,36 @@ msgid ""
 "available."
 msgstr ""
 
-#: abaqus.Mdb.MdbBase.MdbBase.importDxf:14 of
+#: abaqus.Mdb.MdbBase.MdbBase.importDxf:12 of
 msgid ""
 "Check `Mdb.importDxf on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
 "#simaker-mdbimportdxfpyc>`__."
 msgstr ""
 
-#: abaqus.Mdb.MdbBase.MdbBase.importDxf:19
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:18
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:18
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:20
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:18
-#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:18
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:21
-#: abaqus.Part.AcisMdb.AcisMdb.openStep:18
-#: abaqus.Part.AcisMdb.AcisMdb.openVda:18 of
+#: abaqus.Mdb.MdbBase.MdbBase.importDxf:17
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:16
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:16
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:18
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:16
+#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:16
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:19
+#: abaqus.Part.AcisMdb.AcisMdb.openStep:16
+#: abaqus.Part.AcisMdb.AcisMdb.openVda:16 of
 msgid "**fileName**"
 msgstr ""
 
-#: abaqus.Mdb.MdbBase.MdbBase.importDxf:19 of
+#: abaqus.Mdb.MdbBase.MdbBase.importDxf:17 of
 msgid "A String specifying the path to the dxf file to open."
 msgstr ""
 
-#: abaqus.Mdb.MdbBase.MdbBase.importDxf:36
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:26 of
+#: abaqus.Mdb.MdbBase.MdbBase.importDxf:34
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:24 of
 msgid ":obj:`Mdb`"
 msgstr ""
 
-#: abaqus.Mdb.MdbBase.MdbBase.importDxf:24
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:23 of
+#: abaqus.Mdb.MdbBase.MdbBase.importDxf:22
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:21 of
 msgid "A :py:class:`~abaqus.Mdb.Mdb.Mdb` object"
 msgstr ""
 
@@ -1181,63 +1181,63 @@ msgid ""
 "method."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:13 of
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:11 of
 msgid ""
 "Check `Mdb.openAcis on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
 "#simaker-mdbopenacispyc>`__."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:18 of
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:16 of
 msgid "A String specifying the path to the ACIS file to open."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:22
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:32 of
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:20
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:30 of
 msgid "**scaleFromFile**"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:21 of
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:19 of
 msgid ""
 "A Boolean specifying whether to scale, rotate, and translate the part "
 "using the transform read from the ACIS file. The default value is OFF."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:30
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:51
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:53
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:60
-#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:42
-#: abaqus.Part.AcisMdb.AcisMdb.openStep:30
-#: abaqus.Part.AcisMdb.AcisMdb.openVda:26 of
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:28
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:49
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:51
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:58
+#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:40
+#: abaqus.Part.AcisMdb.AcisMdb.openStep:28
+#: abaqus.Part.AcisMdb.AcisMdb.openVda:24 of
 msgid ":obj:`AcisFile`"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:27
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:39
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:41
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:57
-#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:30
-#: abaqus.Part.AcisMdb.AcisMdb.openStep:27
-#: abaqus.Part.AcisMdb.AcisMdb.openVda:23 of
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:25
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:37
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:39
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:55
+#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:28
+#: abaqus.Part.AcisMdb.AcisMdb.openStep:25
+#: abaqus.Part.AcisMdb.AcisMdb.openVda:21 of
 msgid "An :py:class:`~abaqus.Part.AcisFile.AcisFile` object."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:35 of
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:33 of
 msgid ""
 "Texterror: :obj:`ACIS` :obj:`File` :obj:`version` :obj:`exceeds` "
 ":obj:`Kernel`"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:35 of
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:33 of
 msgid "File is from a newer version of ACIS than the CAE kernel."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:46 of
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:44 of
 msgid "Texterror: :obj:`Failed` :obj:`to` :obj:`read` :obj:`ACIS` :obj:`file`"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:38 of
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:36 of
 msgid "The data in the ACIS file are corrupted."
 msgstr ""
 
@@ -1256,7 +1256,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:16
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:18 abaqus.Mdb.MdbBase.MdbBase.saveAs:15
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:16 abaqus.Mdb.MdbBase.MdbBase.saveAs:15
 #: of
 msgid "**pathName: str**"
 msgstr ""
@@ -1269,7 +1269,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:21
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:31 of
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:29 of
 msgid "invalid model database; If the file is an invalid model database"
 msgstr ""
 
@@ -1280,7 +1280,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:30
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:44 of
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:42 of
 msgid ""
 "cannot open file; If the command fails to open the model database file "
 "for reasons not mentioned above"
@@ -1293,26 +1293,26 @@ msgid ""
 "method."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:13 of
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:11 of
 msgid ""
 "Check `Mdb.openCatia on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
 "#simaker-mdbopencatiapyc>`__."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:18 of
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:16 of
 msgid "A String specifying the path to the CATIA file to open."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:25
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:32
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:47
-#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:25
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:28 of
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:23
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:30
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:45
+#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:23
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:26 of
 msgid "**topology**"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:21 of
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:19 of
 msgid ""
 "A SymbolicConstant specifying the topology of the data to be read from "
 "the file and of the part to be created. Possible values are SOLID , "
@@ -1322,22 +1322,22 @@ msgid ""
 "SOLID ."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:29
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:36 of
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:27
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:34 of
 msgid "**convertUnits**"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:28 of
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:26 of
 msgid ""
 "A SymbolicConstant specifying whether the original units should be "
 "retained. Possible values are ON and OFF. The default value is OFF."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:34 of
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:32 of
 msgid "**combineBodies**"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:32 of
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:30 of
 msgid ""
 "A Boolean specifying whether to combine the bodies in the CATPart file. "
 "If the bodies to be combined touch or overlap, invalid entities would "
@@ -1352,33 +1352,33 @@ msgid ""
 "PartFromGeometryFile method."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:14 of
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:12 of
 msgid ""
 "Check `Mdb.openEnf on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
 "#simaker-mdbopenenfpyc>`__."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:19 of
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:17 of
 msgid ""
 "A String specifying the path to the Elysium Neutral File that was created"
 " by I-DEAS, Pro/ENGINEER, or CATIA V5."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:25 of
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:23 of
 msgid "**fileType**"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:23 of
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:21 of
 msgid ""
 "A String specifying the type of CAD system that created the file. "
 "Possible values are “ideas”, “proe”, or “catiav5” or a combination "
 "similar to “proe/ideas/catiav5” if the type is unknown."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:28
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:43
-#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:21 of
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:26
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:41
+#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:19 of
 msgid ""
 "A SymbolicConstant specifying the topology of the data to be read from "
 "the file and of the part to be created. Possible values are SOLID , "
@@ -1388,7 +1388,7 @@ msgid ""
 "SOLID."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:35 of
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:33 of
 msgid ""
 "A Boolean specifying if the dimensions of the part should be converted to"
 " millimeters. The default value is OFF."
@@ -1401,22 +1401,22 @@ msgid ""
 "method."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:13 of
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:11 of
 msgid ""
 "Check `Mdb.openIges on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
 "#simaker-mdbopenigespyc>`__."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:18 of
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:16 of
 msgid "A String specifying the path to the IGES file to open."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:26 of
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:24 of
 msgid "**trimCurve**"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:21 of
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:19 of
 msgid ""
 "A SymbolicConstant specifying the method used to define the trim curves "
 "that bound parametric surfaces. Possible values are:DEFAULT, use either "
@@ -1427,7 +1427,7 @@ msgid ""
 "surface.The default value is DEFAULT."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:29 of
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:27 of
 msgid ""
 "A SymbolicConstant specifying whether the imported geometry needs to be "
 "scaled using the units information available in the IGES file. Possible "
@@ -1436,68 +1436,68 @@ msgid ""
 "system specified in the IGES file."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:36 of
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:34 of
 msgid "**msbo**"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:35 of
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:33 of
 msgid ""
 "A Boolean specifying if the IGES file contains MSBO (Manifold Solid B-Rep"
 " Object) entities. The default value is False."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:40 of
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:38 of
 msgid "**includedLayers**"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:39 of
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:37 of
 msgid ""
 "A sequence of Ints specifying the levels or layers of entities that will "
 "be translated from the IGES file to build the part. The default is to "
 "include all the layers."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:52 of
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:50 of
 msgid "**uniteWires**"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:50 of
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:48 of
 msgid ""
 "A SymbolicConstant specifying whether the imported wires need to be "
 "united or not. Possible values are ON and OFF. The default value is ON. "
 "When importing a sketch, this value is set to OFF."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:73 of
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:71 of
 msgid "Texterror: :obj:`Failed` :obj:`to` :obj:`read` :obj:`IGES` :obj:`file`"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:65 of
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:63 of
 msgid "The data in the IGES file are corrupted."
 msgstr ""
 
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:12 of
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:10 of
 msgid ""
 "Check `Mdb.openMdb on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
 "#simaker-mdbopenmdbpyc>`__."
 msgstr ""
 
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:17 of
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:15 of
 msgid ""
 "A String specifying the path to the model database file to open. If you "
 "do not provide a file extension, Abaqus/CAE attempts to open the file "
 "with .cae appended to the path."
 msgstr ""
 
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:35 of
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:33 of
 msgid ""
 "incompatible release number, expected *<Abaqus release>*, got *<earlier "
 "or later Abaqus release>*; If the file contains a model database from an "
 "Abaqus release other than the Abaqus release you are currently running"
 msgstr ""
 
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:40 of
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:38 of
 msgid ""
 "cannot open file; may be in use by another CAE session; If the model "
 "database file is already opened in write mode"
@@ -1510,14 +1510,14 @@ msgid ""
 "PartFromGeometryFile method."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:13 of
+#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:11 of
 msgid ""
 "Check `Mdb.openParasolid on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
 "#simaker-mdbopenparasolidpyc>`__."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:18 of
+#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:16 of
 msgid "A String specifying the path to the Parasolid file to open."
 msgstr ""
 
@@ -1528,22 +1528,22 @@ msgid ""
 "PartFromGeometryFile method."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:12 of
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:10 of
 msgid "The `openSolidworks` method was added."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:16 of
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:14 of
 msgid ""
 "Check `Mdb.openSolidworks on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
 "#simaker-mdbopensolidworkspyc>`__."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:21 of
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:19 of
 msgid "A String specifying the path to the Solidworks file to open."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:24 of
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:22 of
 msgid ""
 "A SymbolicConstant specifying the topology of the data to be read from "
 "the file and of the part to be created. Possible values are SOLID, SHELL,"
@@ -1553,17 +1553,17 @@ msgid ""
 "SOLID."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:36 of
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:34 of
 msgid ":obj:`An` :obj:`AcisFile` object."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:49 of
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:47 of
 msgid ""
 "Texterror: :obj:`Failed` :obj:`to` :obj:`read` :obj:`Solidworks` "
 ":obj:`file`"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:41 of
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:39 of
 msgid "The data in the Solidworks file are corrupted."
 msgstr ""
 
@@ -1574,32 +1574,32 @@ msgid ""
 "method."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openStep:13 of
+#: abaqus.Part.AcisMdb.AcisMdb.openStep:11 of
 msgid ""
 "Check `Mdb.openStep on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
 "#simaker-mdbopensteppyc>`__."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openStep:18 of
+#: abaqus.Part.AcisMdb.AcisMdb.openStep:16 of
 msgid "A String specifying the path to the STEP file to open."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openStep:22 of
+#: abaqus.Part.AcisMdb.AcisMdb.openStep:20 of
 msgid "**scale**"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openStep:21 of
+#: abaqus.Part.AcisMdb.AcisMdb.openStep:19 of
 msgid ""
 "A Float specifying the scaling factor to apply to the imported geometric "
 "entities. The default value is 1.0."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openStep:43 of
+#: abaqus.Part.AcisMdb.AcisMdb.openStep:41 of
 msgid "Texterror: :obj:`Failed` :obj:`to` :obj:`read` :obj:`STEP` :obj:`file`"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openStep:35 of
+#: abaqus.Part.AcisMdb.AcisMdb.openStep:33 of
 msgid "The data in the STEP file are corrupted."
 msgstr ""
 
@@ -1610,22 +1610,22 @@ msgid ""
 "PartFromGeometryFile method."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openVda:13 of
+#: abaqus.Part.AcisMdb.AcisMdb.openVda:11 of
 msgid ""
 "Check `Mdb.openVda on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
 "#simaker-mdbopenvdapyc>`__."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openVda:18 of
+#: abaqus.Part.AcisMdb.AcisMdb.openVda:16 of
 msgid "A String specifying the path to the VDA-FS file to open."
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openVda:39 of
+#: abaqus.Part.AcisMdb.AcisMdb.openVda:37 of
 msgid "Texterror: :obj:`Failed` :obj:`to` :obj:`read` :obj:`VDA` :obj:`file`"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb.openVda:31 of
+#: abaqus.Part.AcisMdb.AcisMdb.openVda:29 of
 msgid "The data in the VDA-FS file are corrupted."
 msgstr ""
 
@@ -1668,7 +1668,7 @@ msgstr ""
 msgid "MdbBase"
 msgstr ""
 
-#: abaqus.Mdb.MdbBase.MdbBase:13 of
+#: abaqus.Mdb.MdbBase.MdbBase:11 of
 msgid ""
 "Check `MdbBase on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`__."
@@ -1768,7 +1768,7 @@ msgstr ""
 msgid "AcisMdb"
 msgstr ""
 
-#: abaqus.Part.AcisMdb.AcisMdb:13 of
+#: abaqus.Part.AcisMdb.AcisMdb:11 of
 msgid ""
 "Check `AcisMdb on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`__."
@@ -1916,7 +1916,7 @@ msgstr ""
 msgid "JobMdb"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb:13 of
+#: abaqus.Job.JobMdb.JobMdb:11 of
 msgid ""
 "Check `JobMdb on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`__."
@@ -2172,5 +2172,11 @@ msgstr ""
 #~ msgid ""
 #~ "Check `JobMdb on help.3ds.com/2021 "
 #~ "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`_."
+#~ msgstr ""
+
+#~ msgid "This object can be accessed by:"
+#~ msgstr ""
+
+#~ msgid "This function can be accessed by:"
 #~ msgstr ""
 

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2021.3.2.dev14+g239df238\n"
+"Project-Id-Version: abqpy 2021.3.2.dev22+g50d8aa68\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 00:16+0000\n"
+"POT-Creation-Date: 2022-09-14 09:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,10 +44,10 @@ msgstr ""
 #: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody:7
 #: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling:7
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie:7
-msgid "This object can be accessed by:"
+msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel:12
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel:10
 msgid "Check `ConstraintModel on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -642,11 +642,11 @@ msgstr ""
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:5
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:5
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:5
-msgid "This function can be accessed by:"
+msgid "This function can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/AdjustPoints.py:docstring of abaqus.Constraint.AdjustPoints.AdjustPoints:18
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:12
+#: ../../../../src/abaqus/Constraint/AdjustPoints.py:docstring of abaqus.Constraint.AdjustPoints.AdjustPoints:16
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:10
 msgid "Check `AdjustPoints on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adjustpointspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -669,49 +669,49 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:17
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:17
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:17
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:17
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:17
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:17
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:17
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:17
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:17
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:15
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:15
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:15
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:15
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:15
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:15
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:15
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:15
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:15
 msgid "**name**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:17
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:17
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:17
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:17
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:17
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:17
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:17
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:17
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:17
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:15
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:15
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:15
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:15
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:15
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:15
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:15
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:15
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:15
 #: ../../None:4:<autosummary>:1
 #: ../../docstring of abaqus.Constraint.Constraint.Constraint.name:2
 msgid "A String specifying the constraint repository key."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:20
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:20
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:21
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:18
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:18
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:19
 msgid "**surface**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:20
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:18
 #: ../../docstring of abaqus.Constraint.AdjustPoints.AdjustPoints.surface:2
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the surface to which the **controlPoints** are adjusted."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:23
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:27
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:21
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:25
 msgid "**controlPoints**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:23
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:21
 #: ../../docstring of abaqus.Constraint.AdjustPoints.AdjustPoints.controlPoints:2
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control points."
 msgstr ""
@@ -728,284 +728,284 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:40
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:38
 msgid ":obj:`AdjustPoints`"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:28
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:26
 msgid "An :py:class:`~abaqus.Constraint.AdjustPoints.AdjustPoints` object."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:12
-#: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling:19
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:10
+#: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling:17
 msgid "Check `Coupling on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-couplingpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:20
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:18
 #: ../../docstring of abaqus.Constraint.Coupling.Coupling.surface:2
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the surface on which the coupling nodes are located."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:23
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:24
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:21
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:22
 msgid "**controlPoint**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:23
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:24
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:21
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:22
 #: ../../docstring of abaqus.Constraint.Coupling.Coupling.controlPoint:2
 #: ../../docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.controlPoint:2
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control point."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:26
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:24
 msgid "**influenceRadius**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:26
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:24
 #: ../../docstring of abaqus.Constraint.Coupling.Coupling.influenceRadius:2
 msgid "The SymbolicConstant WHOLE_SURFACE or a Float specifying the influence radius."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:30
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:28
 msgid "**couplingType**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:29
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:27
 #: ../../docstring of abaqus.Constraint.Coupling.Coupling.couplingType:2
 msgid "A SymbolicConstant specifying the coupling constraint type. Possible values are KINEMATIC, DISTRIBUTING, and STRUCTURAL."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:35
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:27
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:33
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:25
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:12
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.setValues:11
 msgid "**adjust**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:33
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:31
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:10
 #: ../../docstring of abaqus.Constraint.Coupling.Coupling.adjust:2
 msgid "A Boolean specifying if the control point will be adjusted (moved) to the surface. The point will be adjusted in the direction normal to the specified surface. The default value is OFF."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:40
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:38
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:17
 msgid "**localCsys**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:38
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:36
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:15
 #: ../../docstring of abaqus.Constraint.Coupling.Coupling.localCsys:2
 msgid "None or a DatumCsys object specifying the initial orientation of the local coordinate system for the coupling's degrees of freedom. If **localCsys** = None, the coupling is defined in the global coordinate system. The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:45
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:43
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:22
 msgid "**u1**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:43
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:41
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:20
 #: ../../docstring of abaqus.Constraint.Coupling.Coupling.u1:2
 msgid "A Boolean specifying if the displacement component in the 1-direction is constrained to the reference node for a kinematic coupling constraint. The default value is ON.The **u1** argument applies only when **couplingType** = KINEMATIC."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:50
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:48
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:27
 msgid "**u2**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:48
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:46
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:25
 #: ../../docstring of abaqus.Constraint.Coupling.Coupling.u2:2
 msgid "A Boolean specifying if the displacement component in the 2-direction is constrained to the reference node for a kinematic coupling constraint. The default value is ON.The **u2** argument applies only when **couplingType** = KINEMATIC."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:55
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:53
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:32
 msgid "**u3**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:53
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:51
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:30
 #: ../../docstring of abaqus.Constraint.Coupling.Coupling.u3:2
 msgid "A Boolean specifying if the displacement component in the 3-direction is constrained to the reference node for a kinematic coupling constraint. The default value is ON.The **u3** argument applies only when **couplingType** = KINEMATIC."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:60
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:58
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:37
 msgid "**ur1**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:58
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:56
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:35
 #: ../../docstring of abaqus.Constraint.Coupling.Coupling.ur1:2
 msgid "A Boolean specifying if the rotational displacement component about the 1-direction is constrained to the reference node for a kinematic coupling constraint. The default value is ON.The **ur1** argument applies only when **couplingType** = KINEMATIC."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:65
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:63
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:42
 msgid "**ur2**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:63
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:61
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:40
 #: ../../docstring of abaqus.Constraint.Coupling.Coupling.ur2:2
 msgid "A Boolean specifying if the rotational displacement component about the 2-direction is constrained to the reference node for a kinematic coupling constraint. The default value is ON.The **ur2** argument applies only when **couplingType** = KINEMATIC."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:70
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:68
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:47
 msgid "**ur3**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:68
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:66
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:45
 #: ../../docstring of abaqus.Constraint.Coupling.Coupling.ur3:2
 msgid "A Boolean specifying if the rotational displacement component about the 3-direction is constrained to the reference node for a kinematic coupling constraint. The default value is ON.The **ur3** argument applies only when **couplingType** = KINEMATIC."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:76
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:74
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:66
 msgid "**weightingMethod**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:73
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:71
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.setValues:50
 #: ../../docstring of abaqus.Constraint.Coupling.Coupling.weightingMethod:2
 msgid "A SymbolicConstant specifying an optional weighting method used for calculating the distributing weight factors. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC. The default value is UNIFORM.The **weightingMethod** argument applies only when **couplingType** = DISTRIBUTING."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:93
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:91
 msgid ":obj:`Coupling`"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:81
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:79
 msgid "A :py:class:`~abaqus.Constraint.Coupling.Coupling` object."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:12
-#: ../../../../src/abaqus/Constraint/DisplayBody.py:docstring of abaqus.Constraint.DisplayBody.DisplayBody:21
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:10
+#: ../../../../src/abaqus/Constraint/DisplayBody.py:docstring of abaqus.Constraint.DisplayBody.DisplayBody:19
 msgid "Check `DisplayBody on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displaybodypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:20
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:18
 msgid "**instance**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:20
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:18
 #: ../../docstring of abaqus.Constraint.DisplayBody.DisplayBody.instance:2
 msgid "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the part instance that is to be used for display only."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:23
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:21
 #: ../../docstring of abaqus.Constraint.DisplayBody.DisplayBody.controlPoints:2
 msgid "A :py:class:`~abaqus.BasicGeometry.ModelDotArray.ModelDotArray` object specifying the motion of the PartInstance. The control points may be ConstrainedSketchVertex, ReferencePoint, or MeshNode objects. Their motion will control the motion of the PartInstance. If this argument is set to an empty sequence, the PartInstance will remain fixed in space during the analysis. The sequence can have either one object or three objects."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:44
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:42
 msgid ":obj:`DisplayBody`"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:32
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:30
 msgid "A :py:class:`~abaqus.Constraint.DisplayBody.DisplayBody` object."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:12
-#: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion:19
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:10
+#: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion:17
 msgid "Check `EmbeddedRegion on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-embeddedregionpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:20
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:18
 msgid "**embeddedRegion**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:20
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:18
 #: ../../docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.embeddedRegion:2
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the body region to be embedded."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:24
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:22
 msgid "**hostRegion**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:23
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:21
 #: ../../docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.hostRegion:2
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the host region. A value of None indicates that the host region is the whole model."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:28
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:26
 #: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues:11
 msgid "**weightFactorTolerance**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:27
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:25
 #: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues:10
 #: ../../docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.weightFactorTolerance:2
 msgid "A Float specifying a small value below which the weighting factors will be zeroed out. The default value is 10-6."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:33
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:31
 #: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues:16
 msgid "**toleranceMethod**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:31
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:29
 #: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues:14
 #: ../../docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.toleranceMethod:2
 msgid "A SymbolicConstant specifying the method used to determine the embedded element tolerance. Possible values are ABSOLUTE, FRACTIONAL, and BOTH. The default value is BOTH."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:39
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:37
 #: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues:22
 msgid "**absoluteTolerance**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:36
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:34
 #: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues:19
 #: ../../docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.absoluteTolerance:2
 msgid "A Float specifying the absolute value by which a node on the embedded region may lie outside the host region. If **absoluteTolerance** = 0.0, the **fractionalTolerance** value will be used. The default value is 0.0.This argument applies only when **toleranceMethod** = ABSOLUTE or BOTH."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:46
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:44
 #: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues:42
 msgid "**fractionalTolerance**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:42
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:40
 #: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues:25
 #: ../../docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.fractionalTolerance:2
 msgid "A Float specifying the fractional value by which a node on the embedded region may lie outside the host region. The fractional value is based on the average element size within the host region. The default value is 0.05.If both tolerance arguments are specified, the smaller value will be used.This argument applies only when **toleranceMethod** = FRACTIONAL or BOTH."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:63
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:61
 msgid ":obj:`EmbeddedRegion`"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:51
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:49
 msgid "An :py:class:`~abaqus.Constraint.EmbeddedRegion.EmbeddedRegion` object."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:12
-#: ../../../../src/abaqus/Constraint/Equation.py:docstring of abaqus.Constraint.Equation.Equation:19
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:10
+#: ../../../../src/abaqus/Constraint/Equation.py:docstring of abaqus.Constraint.Equation.Equation:17
 msgid "Check `Equation on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-equationpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:21
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:19
 msgid "**terms**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:20
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:18
 #: ../../docstring of abaqus.Constraint.Equation.Equation.terms:2
 msgid "A sequence of (Float, String, Int, Int) sequences specifying a coefficient, Set name, degree of freedom, and coordinate system ID. The coordinate system ID is optional."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:29
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:27
 msgid ":obj:`Equation`"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:26
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:24
 msgid "An :py:class:`~abaqus.Constraint.Equation.Equation` object."
 msgstr ""
 
@@ -1014,191 +1014,191 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:42
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:40
 #: ../../../../src/abaqus/Constraint/Equation.py:docstring of abaqus.Constraint.Equation.Equation.setValues:21
 msgid ":obj:`If` **terms** :obj:`does` :obj:`not` :obj:`contain` :obj:`more` :obj:`than` :obj:`one` :obj:`entry`, :obj:`Equation` :obj:`must` :obj:`have` :obj:`two` or :obj:`more` terms."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:12
-#: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint:19
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:10
+#: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint:17
 msgid "Check `MultipointConstraint on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-multipointconstraintpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:20
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:18
 #: ../../docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.surface:2
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the surface on which the MultipointConstraint nodes are located."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:28
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:26
 msgid "**mpcType**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:27
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:25
 #: ../../docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.mpcType:2
 msgid "A SymbolicConstant specifying the MPC type of the constraint. Possible values are BEAM_MPC, ELBOW_MPC, PIN_MPC, LINK_MPC, TIE_MPC, and USER_MPC."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:34
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:32
 #: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues:13
 msgid "**csys**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:31
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:29
 #: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues:10
 #: ../../docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.csys:2
 msgid "None or a DatumCsys object specifying the initial orientation of the local coordinate system for the MultipointConstraint's degrees of freedom. If **localCsys** = None, the MultipointConstraint is defined in the global coordinate system. The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:39
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:37
 #: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues:18
 msgid "**userType**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:37
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:35
 #: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues:16
 #: ../../docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.userType:2
 msgid "An Int specifying to differentiate between different constraint types in a user-defined MultipointConstraint. The default value is 0.The **userType** argument applies only when **mpcType** = USER_MPC."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:44
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:42
 #: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues:36
 msgid "**userMode**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:42
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:40
 #: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues:21
 #: ../../docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.userMode:2
 msgid "A SymbolicConstant specifying the mode of the constraint when it is user-defined. Possible values are DOF_MODE_MPC and NODE_MODE_MPC. The default value is DOF_MODE_MPC.The **userMode** argument applies only when **mpcType** = USER_MPC."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:61
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:59
 msgid ":obj:`MultipointConstraint`"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:49
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:47
 msgid "A :py:class:`~abaqus.Constraint.MultipointConstraint.MultipointConstraint` object."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:12
-#: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody:19
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:10
+#: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody:17
 msgid "Check `RigidBody on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rigidbodypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:20
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:18
 msgid "**refPointRegion**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:20
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:18
 #: ../../docstring of abaqus.Constraint.RigidBody.RigidBody.refPointRegion:2
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the reference point."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:24
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:22
 #: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody.setValues:11
 msgid "**bodyRegion**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:23
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:21
 #: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody.setValues:10
 #: ../../docstring of abaqus.Constraint.RigidBody.RigidBody.bodyRegion:2
 msgid "None or a Region object specifying the elements constrained to the movement of the reference point. The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:28
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:26
 #: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody.setValues:15
 msgid "**tieRegion**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:27
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:25
 #: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody.setValues:14
 #: ../../docstring of abaqus.Constraint.RigidBody.RigidBody.tieRegion:2
 msgid "None or a Region object specifying the nodes tied to the movement of the reference point. The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:32
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:30
 #: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody.setValues:19
 msgid "**pinRegion**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:31
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:29
 #: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody.setValues:18
 #: ../../docstring of abaqus.Constraint.RigidBody.RigidBody.pinRegion:2
 msgid "None or a Region object specifying the nodes pinned to the movement of the reference point. The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:36
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:34
 #: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody.setValues:23
 msgid "**surfaceRegion**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:35
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:33
 #: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody.setValues:22
 #: ../../docstring of abaqus.Constraint.RigidBody.RigidBody.surfaceRegion:2
 msgid "None or a Region object specifying the analytic surface constrained to the movement of the reference point. The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:40
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:38
 #: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody.setValues:27
 msgid "**refPointAtCOM**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:39
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:37
 #: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody.setValues:26
 #: ../../docstring of abaqus.Constraint.RigidBody.RigidBody.refPointAtCOM:2
 msgid "A Boolean specifying whether the analysis product should recompute the reference point position to be at the center of mass. The default value is OFF."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:44
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:42
 #: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody.setValues:44
 msgid "**isothermal**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:43
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:41
 #: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody.setValues:30
 #: ../../docstring of abaqus.Constraint.RigidBody.RigidBody.isothermal:2
 msgid "A Boolean specifying whether the temperature degree of freedom should be constrained. The default value is OFF."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:61
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:59
 msgid ":obj:`RigidBody`"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:49
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:47
 msgid "A :py:class:`~abaqus.Constraint.RigidBody.RigidBody` object."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:12
-#: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling:19
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:10
+#: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling:17
 msgid "Check `ShellSolidCoupling on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shellsolidcouplingpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:20
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:18
 msgid "**shellEdge**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:20
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:18
 #: ../../docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.shellEdge:2
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the shell edge surface."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:23
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:21
 msgid "**solidFace**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:23
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:21
 #: ../../docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.solidFace:2
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the solid surface."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:27
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:31
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:25
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:29
 #: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues:11
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.setValues:15
 msgid "**positionToleranceMethod**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:26
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:30
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:24
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:28
 #: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues:10
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.setValues:14
 #: ../../docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.positionToleranceMethod:2
@@ -1206,144 +1206,144 @@ msgstr ""
 msgid "A SymbolicConstant specifying the method used to determine the position tolerance. Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:33
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:35
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:31
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:33
 #: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues:17
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.setValues:19
 msgid "**positionTolerance**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:30
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:28
 #: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues:14
 #: ../../docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.positionTolerance:2
 msgid "A Float specifying the position tolerance. The default value is 0.0.The **positionTolerance** argument applies only when **positionToleranceMethod** = SPECIFIED.Note:Abaqus will not constrain nodes on the solid face region outside the position tolerance."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:37
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:35
 #: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues:21
 msgid "**influenceDistanceMethod**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:36
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:34
 #: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues:20
 #: ../../docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.influenceDistanceMethod:2
 msgid "A SymbolicConstant specifying the method used to determine the influence distance. Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:41
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:39
 #: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues:38
 msgid "**influenceDistance**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:40
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:38
 #: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues:24
 #: ../../docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.influenceDistance:2
 msgid "A Float specifying the influence distance. The **influenceDistance** argument applies only when **influenceDistanceMethod** = SPECIFIED. The default value is 0.0."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:58
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:56
 msgid ":obj:`ShellSolidCoupling`"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:46
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:44
 msgid "A :py:class:`~abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling` object."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:12
-#: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie:19
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:10
+#: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie:17
 msgid "Check `Tie on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tiepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:20
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:18
 msgid "**master**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:20
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:18
 #: ../../docstring of abaqus.Constraint.Tie.Tie.master:2
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the master surface."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:23
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:21
 msgid "**slave**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:23
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:21
 #: ../../docstring of abaqus.Constraint.Tie.Tie.slave:2
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the slave surface."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:26
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:24
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.setValues:10
 #: ../../docstring of abaqus.Constraint.Tie.Tie.adjust:2
 msgid "A Boolean specifying whether initial positions of tied slave nodes are adjusted to lie on the master surface. The default value is ON."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:34
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:32
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.setValues:18
 #: ../../docstring of abaqus.Constraint.Tie.Tie.positionTolerance:2
 msgid "A Float specifying the position tolerance. The **positionTolerance** argument applies only when **positionToleranceMethod** = SPECIFIED. The default value is 0.0."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:39
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:37
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.setValues:23
 msgid "**tieRotations**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:38
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:36
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.setValues:22
 #: ../../docstring of abaqus.Constraint.Tie.Tie.tieRotations:2
 msgid "A Boolean specifying whether rotation degrees of freedom should be tied. The default value is ON."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:43
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:41
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.setValues:27
 msgid "**constraintRatioMethod**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:42
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:40
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.setValues:26
 #: ../../docstring of abaqus.Constraint.Tie.Tie.constraintRatioMethod:2
 msgid "A SymbolicConstant specifying the method used to determine the constraint ratio. Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:48
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:46
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.setValues:32
 msgid "**constraintRatio**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:46
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:44
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.setValues:30
 #: ../../docstring of abaqus.Constraint.Tie.Tie.constraintRatio:2
 msgid "A Float specifying the fractional distance between the master reference surface and the slave node at which the translational constraint should act. The **constraintRatio** argument applies only when **constraintRatioMethod** = SPECIFIED. The default value is 0.0."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:53
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:51
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.setValues:37
 msgid "**constraintEnforcement**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:51
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:49
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.setValues:35
 #: ../../docstring of abaqus.Constraint.Tie.Tie.constraintEnforcement:2
 msgid "A SymbolicConstant specifying the discretization method. Possible values are SOLVER_DEFAULT, NODE_TO_SURFACE, and SURFACE_TO_SURFACE. The default value is SOLVER_DEFAULT."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:57
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:55
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.setValues:54
 msgid "**thickness**"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:56
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:54
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.setValues:40
 #: ../../docstring of abaqus.Constraint.Tie.Tie.thickness:2
 msgid "A Boolean specifying whether shell element thickness is considered. The default value is ON."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:74
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:72
 msgid ":obj:`Tie`"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:62
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:60
 msgid "A :py:class:`~abaqus.Constraint.Tie.Tie` object."
 msgstr ""
 
@@ -1355,7 +1355,7 @@ msgstr ""
 msgid "The ConstrainedSketchConstraint object is the abstract base type for other ConstrainedSketchConstraint objects. The ConstrainedSketchConstraint object has no explicit constructor. The members of the ConstrainedSketchConstraint object are common to all objects derived from the ConstrainedSketchConstraint."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/Constraint.py:docstring of abaqus.Constraint.Constraint.Constraint:15
+#: ../../../../src/abaqus/Constraint/Constraint.py:docstring of abaqus.Constraint.Constraint.Constraint:13
 msgid "Check `Constraint on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-constraintpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1437,19 +1437,19 @@ msgstr ""
 msgid "The AdjustPoints constraint object is used to adjust points (nodes) to a surface. The AdjustPoints object is derived from the ConstrainedSketchConstraint object."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/AdjustPoints.py:docstring of abaqus.Constraint.AdjustPoints.AdjustPoints:13
-#: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling:14
-#: ../../../../src/abaqus/Constraint/DisplayBody.py:docstring of abaqus.Constraint.DisplayBody.DisplayBody:16
-#: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion:14
-#: ../../../../src/abaqus/Constraint/Equation.py:docstring of abaqus.Constraint.Equation.Equation:14
-#: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint:14
-#: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody:14
-#: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling:14
-#: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie:14
+#: ../../../../src/abaqus/Constraint/AdjustPoints.py:docstring of abaqus.Constraint.AdjustPoints.AdjustPoints:11
+#: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling:12
+#: ../../../../src/abaqus/Constraint/DisplayBody.py:docstring of abaqus.Constraint.DisplayBody.DisplayBody:14
+#: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion:12
+#: ../../../../src/abaqus/Constraint/Equation.py:docstring of abaqus.Constraint.Equation.Equation:12
+#: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint:12
+#: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody:12
+#: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling:12
+#: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie:12
 msgid "The corresponding analysis keywords are:"
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/AdjustPoints.py:docstring of abaqus.Constraint.AdjustPoints.AdjustPoints:15
+#: ../../../../src/abaqus/Constraint/AdjustPoints.py:docstring of abaqus.Constraint.AdjustPoints.AdjustPoints:13
 msgid "ADJUST"
 msgstr ""
 
@@ -1495,7 +1495,7 @@ msgstr ""
 msgid "The Coupling object defines a constraint between a group of coupling nodes located on a region and a reference point. The Coupling object is derived from the ConstrainedSketchConstraint object."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling:16
+#: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling:14
 msgid "COUPLING"
 msgstr ""
 
@@ -1617,7 +1617,7 @@ msgstr ""
 msgid "The DisplayBody object defines a constraint such that the specified instance is used for display only and does not take part in the analysis. However it will still be visible during postprocessing and its position at any frame will be defined by the translation and rotation of the specified control points. The DisplayBody object is derived from the ConstrainedSketchConstraint object."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/DisplayBody.py:docstring of abaqus.Constraint.DisplayBody.DisplayBody:18
+#: ../../../../src/abaqus/Constraint/DisplayBody.py:docstring of abaqus.Constraint.DisplayBody.DisplayBody:16
 msgid "DISPLAY BODY"
 msgstr ""
 
@@ -1663,7 +1663,7 @@ msgstr ""
 msgid "The EmbeddedRegion object allows you to embed a region of the model within a “host” region of the model or within the whole model. The EmbeddedRegion object is derived from the ConstrainedSketchConstraint object."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion:16
+#: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion:14
 msgid "EMBEDDED ELEMENT"
 msgstr ""
 
@@ -1745,7 +1745,7 @@ msgstr ""
 msgid "The Equation object defines a linear multi-point constraint between a set of degrees of freedom. The Equation object is derived from the ConstrainedSketchConstraint object."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/Equation.py:docstring of abaqus.Constraint.Equation.Equation:16
+#: ../../../../src/abaqus/Constraint/Equation.py:docstring of abaqus.Constraint.Equation.Equation:14
 msgid "EQUATION"
 msgstr ""
 
@@ -1791,7 +1791,7 @@ msgstr ""
 msgid "The MultipointConstraint object defines a constraint between a group of MultipointConstraint nodes located on a region and a reference point. The MultipointConstraint object is derived from the ConstrainedSketchConstraint object."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint:16
+#: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint:14
 msgid "MPC"
 msgstr ""
 
@@ -1865,7 +1865,7 @@ msgstr ""
 msgid "The RigidBody object constrains all the degrees of freedom on the specified regions to the degree of freedom of its associated reference point. The RigidBody object is derived from the ConstrainedSketchConstraint object."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody:16
+#: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody:14
 msgid "RIGID BODY"
 msgstr ""
 
@@ -1963,7 +1963,7 @@ msgstr ""
 msgid "The ShellSolidCoupling object defines two surfaces to be tied together for the duration of a simulation. The ShellSolidCoupling object is derived from the ConstrainedSketchConstraint object."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling:16
+#: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling:14
 msgid "SHELL TO SOLID COUPLING"
 msgstr ""
 
@@ -2047,7 +2047,7 @@ msgstr ""
 msgid "The Tie object defines two surfaces to be tied together for the duration of a simulation. The Tie object is derived from the ConstrainedSketchConstraint object."
 msgstr ""
 
-#: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie:16
+#: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie:14
 msgid "TIE"
 msgstr ""
 

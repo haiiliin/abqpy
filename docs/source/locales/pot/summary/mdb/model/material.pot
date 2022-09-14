@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2021.3.2.dev14+g239df238\n"
+"Project-Id-Version: abqpy 2021.3.2.dev22+g50d8aa68\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 00:16+0000\n"
+"POT-Creation-Date: 2022-09-14 09:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,10 +39,10 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material:12
 #: ../../../../src/abaqus/Material/MaterialModel.py:docstring of abaqus.Material.MaterialModel.MaterialModel:5
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb:5
-msgid "This object can be accessed by:"
+msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/Material/MaterialModel.py:docstring of abaqus.Material.MaterialModel.MaterialModel:12
+#: ../../../../src/abaqus/Material/MaterialModel.py:docstring of abaqus.Material.MaterialModel.MaterialModel:10
 msgid "Check `MaterialModel on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -544,7 +544,7 @@ msgstr ""
 msgid "The Odb object is the in-memory representation of an output database (ODB) file."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb:13
+#: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb:11
 msgid "Check `MaterialOdb on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -692,15 +692,15 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Material.Material.Material` object is the object used to specify a material. The Material object stores the various settings that determine how a material behaves. A material is created by combining one or more individual material options and sub options. A particular material option is associated with the Material object through a member. For example: the **acousticMedium** member may contain an AcousticMedium object. The alternative of having a MaterialOption abstract base class and a container of MaterialOptions was rejected because it would make it more difficult to enforce the fact that one Material object cannot contain two AcousticMedium objects, for example."
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material:21
+#: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material:19
 msgid "The corresponding analysis keywords are:"
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material:23
+#: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material:21
 msgid "MATERIAL"
 msgstr ""
 
-#: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material:26
+#: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material:24
 msgid "Check `Material on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialpyc.htm?contextscope=all>`__."
 msgstr ""
 

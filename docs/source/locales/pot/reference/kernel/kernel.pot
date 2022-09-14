@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2021.3.2.dev14+g239df238\n"
+"Project-Id-Version: abqpy 2021.3.2.dev22+g50d8aa68\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 00:16+0000\n"
+"POT-Creation-Date: 2022-09-14 09:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,10 +50,10 @@ msgstr ""
 #: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList:7
 #: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:7
 #: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:8
-msgid "This object can be accessed by:"
+msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister:13
+#: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister:11
 msgid "Check `CommandRegister on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-commandregisterpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -76,7 +76,7 @@ msgstr ""
 msgid "This class allows you to create a dictionary that can be queried from the GUI and is capable of notifying the GUI when the contents of the dictionary change. The keys to a RegisteredDictionary must be either strings or integers. The RegisteredDictionary object is derived from the CommandRegister object."
 msgstr ""
 
-#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:15
+#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:13
 msgid "Check `RegisteredDictionary on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registereddictionarypyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -395,7 +395,7 @@ msgstr ""
 msgid "This class allows you to create a list that can be queried from the GUI and is capable of notifying the GUI when the contents of the list change. The RegisteredList object is derived from the CommandRegister object."
 msgstr ""
 
-#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList:14
+#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList:12
 msgid "Check `RegisteredList on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registeredlistpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -642,7 +642,7 @@ msgstr ""
 msgid "This class allows you to create a tuple that can be queried from the GUI and is capable of notifying the GUI when the contents of any of the tuple's members change. The RegisteredTuple object is derived from the CommandRegister object."
 msgstr ""
 
-#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:14
+#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:12
 msgid "Check `RegisteredTuple on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registeredtuplepyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -761,7 +761,7 @@ msgstr ""
 msgid "The class from which you can derive your own classes that are designed to contain custom repositories. Instances of this class can be queried from the GUI and are capable of notifying the GUI when the contents of the instance change. The RepositorySupport object is derived from the CommandRegister object."
 msgstr ""
 
-#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:18
+#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:16
 msgid "Check `RepositorySupport on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repositorysupportpyc.htm?contextscope=all>`__."
 msgstr ""
 
