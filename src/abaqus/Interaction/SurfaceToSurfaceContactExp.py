@@ -14,9 +14,7 @@ class SurfaceToSurfaceContactExp(Interaction):
     The SurfaceToSurfaceContactExp object is derived from the Interaction object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import interaction
             mdb.models[name].interactions[name]
@@ -116,9 +114,7 @@ class SurfaceToSurfaceContactExp(Interaction):
         """This method creates a SurfaceToSurfaceContactExp object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SurfaceToSurfaceContactExp
 

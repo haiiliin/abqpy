@@ -10,9 +10,7 @@ class Job:
     objects derived from Job.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import job
             mdb.coexecutions[name].jobs[name]

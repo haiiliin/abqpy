@@ -11,9 +11,7 @@ class JobFromInputFile(Job):
     The JobFromInputFile object is derived from the Job object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import job
             mdb.jobs[name]
@@ -149,9 +147,7 @@ class JobFromInputFile(Job):
         """This method creates an analysis job using an input file for the model definition.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.JobFromInputFile
 

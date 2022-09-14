@@ -8,9 +8,7 @@ class ElemType:
     command.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import mesh
     """
@@ -172,9 +170,7 @@ class ElemType:
         """This method creates an ElemType object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mesh.ElemType
 

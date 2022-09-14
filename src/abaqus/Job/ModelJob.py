@@ -11,9 +11,7 @@ class ModelJob(Job):
     The ModelJob object is derived from the Job object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import job
             mdb.adaptivityProcesses[name].job
@@ -175,9 +173,7 @@ class ModelJob(Job):
         model definition.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.Job
 

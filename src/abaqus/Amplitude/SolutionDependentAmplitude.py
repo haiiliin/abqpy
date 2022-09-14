@@ -10,9 +10,7 @@ class SolutionDependentAmplitude(Amplitude):
     The SolutionDependentAmplitude object is derived from the Amplitude object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import amplitude
             mdb.models[name].amplitudes[name]
@@ -55,9 +53,7 @@ class SolutionDependentAmplitude(Amplitude):
         """This method creates a SolutionDependentAmplitude object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].SolutionDependentAmplitude
                 session.odbs[name].SolutionDependentAmplitude

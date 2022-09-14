@@ -11,9 +11,7 @@ class KinematicHardening(PredefinedField):
     The KinematicHardening object is derived from the PredefinedField object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import load
             mdb.models[name].predefinedFields[name]
@@ -77,9 +75,7 @@ class KinematicHardening(PredefinedField):
         """This method creates a KinematicHardening object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].KinematicHardening
 

@@ -11,9 +11,7 @@ class PenetrationCheck(GeometricRestriction):
     This page discusses:
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import optimization
             mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
@@ -45,9 +43,7 @@ class PenetrationCheck(GeometricRestriction):
         """This method creates a PenetrationCheck object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].PenetrationCheck
 

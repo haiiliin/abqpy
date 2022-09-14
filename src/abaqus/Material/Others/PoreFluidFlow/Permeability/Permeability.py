@@ -9,9 +9,7 @@ class Permeability:
     """The Permeability object defines permeability for pore fluid flow.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].permeability
@@ -69,9 +67,7 @@ class Permeability:
         r"""This method creates a Permeability object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Permeability
                 session.odbs[name].materials[name].Permeability

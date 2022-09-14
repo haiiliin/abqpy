@@ -12,9 +12,7 @@ class Leaf:
     (which are also evaluated when the DisplayGroup expression is evaluated).
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import displayGroupMdbToolset
             import displayGroupOdbToolset
@@ -29,9 +27,7 @@ class Leaf:
         """This method creates a Leaf object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 Leaf
 

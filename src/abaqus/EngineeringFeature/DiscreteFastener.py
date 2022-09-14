@@ -12,9 +12,7 @@ class DiscreteFastener(Fastener):
     The DiscreteFastener object is derived from the Fastener object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].engineeringFeatures.fasteners[name]
@@ -88,9 +86,7 @@ class DiscreteFastener(Fastener):
         only under the assembly.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.DiscreteFastener
                 mdb.models[name].rootAssembly.engineeringFeatures.DiscreteFastener

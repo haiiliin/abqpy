@@ -9,9 +9,7 @@ class OdbMeshElement:
     methods.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].parts[name].elements[i]

@@ -8,9 +8,7 @@ class Inertia:
     PointMassInertia.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].engineeringFeatures.inertias[name]

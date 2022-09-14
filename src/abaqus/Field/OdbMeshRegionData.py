@@ -8,9 +8,7 @@ class OdbMeshRegionData:
     file.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import field
             mdb.models[name].analyticalFields[name].odbMeshRegionData
@@ -179,9 +177,7 @@ class OdbMeshRegionData:
         """This method creates an OdbMeshRegionData object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].analyticalFields[name].OdbMeshRegionData
 
@@ -285,9 +281,7 @@ class OdbMeshRegionData:
         sectionPoint
             A Dictionary with String keys and String values. Each key specifies a region in the
             model; the corresponding value specifies a section point within that region. For
-            example:
-            
-            .. code-block:: python
+            example::
             
                 sectionPoint = {
                     'shell < MAT > < 7 section points >': 'SPOS, (fraction = 1.0)', 

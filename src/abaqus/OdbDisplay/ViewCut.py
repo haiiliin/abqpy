@@ -12,9 +12,7 @@ class ViewCut:
     session.viewports[name].odbDisplay.viewCuts repository.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.viewports[name].layers[name].odbDisplay.viewCuts[name]
@@ -131,9 +129,7 @@ class ViewCut:
         """This method creates a ViewCut object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.viewports[name].layers[name].odbDisplay.ViewCut
                 session.viewports[name].odbDisplay.ViewCut

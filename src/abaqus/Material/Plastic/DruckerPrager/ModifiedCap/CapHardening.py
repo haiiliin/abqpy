@@ -7,9 +7,7 @@ class CapHardening:
     """The CapHardening object specifies Drucker-Prager/Cap plasticity hardening.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].capPlasticity.capHardening
@@ -37,9 +35,7 @@ class CapHardening:
         """This method creates a CapHardening object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].capPlasticity.CapHardening
                 session.odbs[name].materials[name].capPlasticity.CapHardening

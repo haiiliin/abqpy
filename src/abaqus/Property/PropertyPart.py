@@ -28,9 +28,7 @@ class PropertyPart(PartBase):
         """This method creates a CompositeLayup object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].CompositeLayup
 
@@ -91,9 +89,7 @@ class PropertyPart(PartBase):
         """This method creates a SectionAssignment object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].SectionAssignment
                 mdb.models[name].rootAssembly.SectionAssignment
@@ -155,9 +151,7 @@ class PropertyPart(PartBase):
         """This method creates a MaterialOrientation object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].MaterialOrientation
 
@@ -263,9 +257,7 @@ class PropertyPart(PartBase):
         """This method assigns a beam section orientation to a region of a part.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].assignBeamSectionOrientation
 
@@ -290,9 +282,7 @@ class PropertyPart(PartBase):
         """This method assigns a material orientation to a region.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].assignMaterialOrientation
 
@@ -321,9 +311,7 @@ class PropertyPart(PartBase):
         """This method assigns a rebar reference orientation to a region.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].assignRebarOrientation
 
@@ -351,9 +339,7 @@ class PropertyPart(PartBase):
         two-dimensional geometric regions.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].flipNormal
 
@@ -378,9 +364,7 @@ class PropertyPart(PartBase):
         one-dimensional geometric regions.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].flipTangent
 
@@ -397,9 +381,7 @@ class PropertyPart(PartBase):
         """This method deletes a beam section orientation assignment.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].unassignBeamSectionOrientation
 
@@ -415,9 +397,7 @@ class PropertyPart(PartBase):
         """This method deletes a material orientation assignment.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].unassignMaterialOrientation
 
@@ -433,9 +413,7 @@ class PropertyPart(PartBase):
         """This method deletes a rebar orientation assignment.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].parts[name].unassignRebarOrientation
 

@@ -11,9 +11,7 @@ class HistoryRegion:
     """The HistoryRegion object contains history data for a single location in the model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import odbAccess
             session.odbs[name].steps[name].historyRegions[name]
@@ -46,9 +44,7 @@ class HistoryRegion:
         """This method creates a HistoryRegion object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].steps[name].HistoryRegion
 
@@ -140,9 +136,7 @@ class HistoryRegion:
         """This method creates a HistoryOutput object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 session.odbs[name].steps[name].HistoryRegion
 

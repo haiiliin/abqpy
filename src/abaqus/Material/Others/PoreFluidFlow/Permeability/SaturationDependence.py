@@ -6,9 +6,7 @@ class SaturationDependence:
     material on the saturation of the wetting liquid.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].permeability.saturationDependence
@@ -30,9 +28,7 @@ class SaturationDependence:
         """This method creates a SaturationDependence object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].permeability.SaturationDependence
                 session.odbs[name].materials[name].permeability.SaturationDependence

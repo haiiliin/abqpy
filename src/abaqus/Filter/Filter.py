@@ -9,9 +9,7 @@ class Filter:
     all objects derived from the Filter.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import filter
             mdb.models[name].filters[name]

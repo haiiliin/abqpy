@@ -5,9 +5,7 @@ class JouleHeatFraction:
     """The JouleHeatFraction object defines the fraction of electric energy released as heat.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].jouleHeatFraction
@@ -24,9 +22,7 @@ class JouleHeatFraction:
         """This method creates a JouleHeatFraction object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].JouleHeatFraction
                 session.odbs[name].materials[name].JouleHeatFraction

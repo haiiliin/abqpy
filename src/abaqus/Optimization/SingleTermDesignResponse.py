@@ -10,9 +10,7 @@ class SingleTermDesignResponse(DesignResponse):
     The SingleTermDesignResponse object is derived from the DesignResponse object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import optimization
             mdb.models[name].optimizationTasks[name].designResponses[name]
@@ -68,9 +66,7 @@ class SingleTermDesignResponse(DesignResponse):
         """This method creates a SingleTermDesignResponse object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SingleTermDesignResponse
 

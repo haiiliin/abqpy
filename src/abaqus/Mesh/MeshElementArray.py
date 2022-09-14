@@ -9,9 +9,7 @@ class MeshElementArray(typing.List[MeshElement]):
     """The MeshElementArray is a sequence of MeshElement objects.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].parts[name].allInternalSets[name].elements
@@ -45,9 +43,7 @@ class MeshElementArray(typing.List[MeshElement]):
         """This method creates a MeshElementArray object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mesh.MeshElementArray
 

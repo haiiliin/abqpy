@@ -6,9 +6,7 @@ class SuperElasticHardeningModifications:
     transformation stress levels of a material model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].superElasticity.SuperElasticHardening
@@ -33,9 +31,7 @@ class SuperElasticHardeningModifications:
         """This method creates a SuperElasticHardeningModifications object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].superElasticity.SuperElasticHardeningModifications
                 session.odbs[name].materials[name].superElasticity.SuperElasticHardeningModifications

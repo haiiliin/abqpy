@@ -30,9 +30,7 @@ def XYDataFromFile(
     """This method creates an XYData object from data in an ASCII file.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             session.XYDataFromFile
             xyPlot.XYDataFromFile
@@ -106,9 +104,7 @@ def XYDataFromFreeBody(
     object.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             session.XYDataFromFreeBody
             xyPlot.XYDataFromFreeBody
@@ -167,9 +163,7 @@ def XYDataFromHistory(
     """This method creates an XYData object by reading history data from an Odb object.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             session.XYDataFromHistory
             xyPlot.XYDataFromHistory
@@ -250,9 +244,7 @@ def XYDataFromPath(
     """This method creates an XYData object from path information.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             session.XYDataFromPath
             xyPlot.XYDataFromPath
@@ -291,6 +283,7 @@ def XYDataFromPath(
     includeAllElements
         A Boolean specifying whether to include elements which do not lie in the direction of
         the path. The default value is False.
+        
         .. versionadded:: 2018
             The `includeAllElements` argument was added.
     step
@@ -313,11 +306,8 @@ def XYDataFromPath(
         Possible values are INVARIANT and COMPONENT.Label: A String specifying the invariant or
         the component; for example, 'Mises' or 'S22'.Location: An optional Dictionary specifying
         the location. The dictionary contains pairs of the following:A String specifying the
-        category selection label.A String specifying the section point label.For
-        example,
-        
-        .. autolink-skip:: section
-        .. code-block:: python
+        category selection label.A String specifying the section point label. For
+        example::
         
             variable = ('S',INTEGRATION_POINT, ((COMPONENT, 'S22' ), ), ) 
             variable = (('S',INTEGRATION_POINT, ((COMPONENT, 'S11' ), ), ),
@@ -386,9 +376,7 @@ def XYDataFromShellThickness(
     from an Odb object.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             session.XYDataFromShellThickness
             xyPlot.XYDataFromShellThickness
@@ -414,18 +402,20 @@ def XYDataFromShellThickness(
         COMPONENT.Label: A String specifying the invariant or the component; for example,
         'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The
         dictionary contains pairs of the following:A String specifying the category selection
-        label.A String specifying the section point label.For example,`variable=
-        ('S',INTEGRATION_POINT, ( (COMPONENT, 'S22' ), ), ) variable= (('S',INTEGRATION_POINT,
-        ((COMPONENT, 'S11' ), ), ),            ('U',NODAL,((COMPONENT, 'U1'),)),) variable=
-        (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises' ), ),            {'shell < STEEL > < 3
-        section points >':'SNEG,                                    (fraction = -1.0)', }), )`
+        label.A String specifying the section point label. For example::
+
+            variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
+            variable = (('S', INTEGRATION_POINT, ((COMPONENT, 'S11'), ), ),
+                        ('U', NODAL,((COMPONENT, 'U1'), )), )
+            variable = (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises'), ),
+                        {'shell < STEEL > < 3 section points >': 'SNEG, (fraction = -1.0)', }), )
     elementSets
         A sequence of Strings specifying element sets or a String specifying a single element
         set.
     elementLabels
         A sequence of expressions specifying element labels per part instance in the model. Each
         part instance element expression is a sequence of a String specifying the part instance
-        name and a sequence of element expressions; for example,
+        name and a sequence of element expressions; for example, 
         `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The element
         expressions can be any of the following:An Int specifying a single element label; for
         example, `1`.A String specifying a single element label; for example, `'7'`.A String
@@ -476,9 +466,7 @@ def xyDataListFromField(
     """This method creates a list of XYData objects by reading field data from an Odb object.
 
     .. note:: 
-        This function can be accessed by:
-
-        .. code-block:: python
+        This function can be accessed by::
 
             session.xyDataListFromField
             xyPlot.xyDataListFromField
@@ -504,15 +492,13 @@ def xyDataListFromField(
         COMPONENT.Label: A String specifying the invariant or the component; for example,
         'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The
         dictionary contains pairs of the following:A String specifying the category selection
-        label.A String specifying the section point label. For example,
-
-        .. code-block:: python
+        label.A String specifying the section point label. For example::
 
             variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
             variable = (('S', INTEGRATION_POINT, ((COMPONENT, 'S11'), ), ),
                         ('U', NODAL,((COMPONENT, 'U1'), )), )
             variable = (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises'), ),
-                            {'shell < STEEL > < 3 section points >': 'SNEG, (fraction = -1.0)', }), )
+                        {'shell < STEEL > < 3 section points >': 'SNEG, (fraction = -1.0)', }), )
 
     elementSets
         A sequence of Strings specifying element sets or a String specifying a single element

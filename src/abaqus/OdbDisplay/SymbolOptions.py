@@ -21,9 +21,7 @@ class SymbolOptions(DGSymbolOptions):
     The SymbolOptions object is derived from the DGSymbolOptions object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.defaultOdbDisplay.symbolOptions

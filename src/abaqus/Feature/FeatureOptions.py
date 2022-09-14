@@ -8,9 +8,7 @@ class FeatureOptions:
     regeneration for all features in a model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import part
             mdb.models[name].featureOptions

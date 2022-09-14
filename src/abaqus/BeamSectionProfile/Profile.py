@@ -9,9 +9,7 @@ class Profile:
     is an abstract base type.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import section
             mdb.models[name].profiles[name]
@@ -28,9 +26,7 @@ class Profile:
         placed in the profiles repository.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].beamProfilesFromOdb
 

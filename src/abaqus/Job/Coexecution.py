@@ -11,9 +11,7 @@ class Coexecution:
     co-simulation analysis.
 
     .. note::
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import job
             mdb.coexecutions[name]

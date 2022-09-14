@@ -7,9 +7,7 @@ class Eos:
     r"""The Eos object specifies an equation of state model.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].eos
@@ -63,9 +61,7 @@ class Eos:
         """This method creates an Eos object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].materials[name].Eos
                 session.odbs[name].materials[name].Eos

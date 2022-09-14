@@ -9,9 +9,7 @@ class Chebyshev1Filter(Filter):
     The Chebyshev1Filter object is derived from the Filter object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import filter
             mdb.models[name].filters[name]
@@ -72,9 +70,7 @@ class Chebyshev1Filter(Filter):
         """This method creates a Chebyshev1Filter object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].Chebyshev1Filter
                 session.odbs[name].Chebyshev1Filter

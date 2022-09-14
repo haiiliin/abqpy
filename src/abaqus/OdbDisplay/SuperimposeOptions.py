@@ -21,9 +21,7 @@ class SuperimposeOptions(DGSuperimposeOptions):
     The SuperimposeOptions object is derived from the DGSuperimposeOptions object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.defaultOdbDisplay.superimposeOptions

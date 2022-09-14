@@ -14,9 +14,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     object.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import step
             mdb.models[name].adaptiveMeshConstraints[name]
@@ -56,9 +54,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         """This method creates a VelocityAdaptiveMeshConstraint object.
 
         .. note:: 
-            This function can be accessed by:
-
-            .. code-block:: python
+            This function can be accessed by::
 
                 mdb.models[name].VelocityAdaptiveMeshConstraint
 

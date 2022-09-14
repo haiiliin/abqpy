@@ -9,9 +9,7 @@ class ConstrainedSketcherOptions:
     object has no constructor.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import sketch
             session.sketcherOptions

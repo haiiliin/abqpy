@@ -9,9 +9,7 @@ class DisplayGroupInstanceRepository:
     repository defines additional methods as described below.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.viewports[name].layers[name].odbDisplay.displayGroupInstances

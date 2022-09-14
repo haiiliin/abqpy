@@ -11,9 +11,7 @@ class OdbDiagnosticStep:
     """The OdbDiagnosticStep object stores step data.
 
     .. note:: 
-        This object can be accessed by:
-
-        .. code-block:: python
+        This object can be accessed by::
 
             import visualization
             session.odbData[name].diagnosticData.steps[i]
