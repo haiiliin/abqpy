@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2016.3.2.dev11+g00c75b3d\n"
+"Project-Id-Version: abqpy 2016.3.2.dev14+gb4dac576\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-13 16:08+0000\n"
+"POT-Creation-Date: 2022-09-14 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../index.rst:125
+#: ../../index.rst:124
 msgid "Contents"
 msgstr ""
 
@@ -45,107 +45,103 @@ msgid "GitHub repository: `github.com/haiiliin/abqpy <https://github.com/haiilii
 msgstr ""
 
 #: ../../index.rst:29
-msgid "GitHub repository for translations: `github.com/haiiliin/abqpy-translations <https://github.com/haiiliin/abqpy-translations>`_"
-msgstr ""
-
-#: ../../index.rst:30
 msgid "PyPI: `pypi.org/project/abqpy <https://pypi.org/project/abqpy/>`_"
 msgstr ""
 
-#: ../../index.rst:31
+#: ../../index.rst:30
 msgid "Anaconda: `anaconda.org/haiiliin/abqpy <https://anaconda.org/haiiliin/abqpy>`_"
 msgstr ""
 
-#: ../../index.rst:32
+#: ../../index.rst:31
 msgid "Read the Docs: `readthedocs.org/projects/abqpy <https://readthedocs.org/projects/abqpy>`_"
 msgstr ""
 
-#: ../../index.rst:35
+#: ../../index.rst:34
 msgid "Quick Start"
 msgstr ""
 
-#: ../../index.rst:38
+#: ../../index.rst:37
 msgid "Installation"
 msgstr ""
 
-#: ../../index.rst:40
+#: ../../index.rst:39
 msgid "`abqpy` supports Python 3.7 or a later version. If you are using Python 3.6 or an earlier version, please upgrade to Python 3.7 or a later version."
 msgstr ""
 
-#: ../../index.rst:43
+#: ../../index.rst:42
 msgid "`abqpy` is uploaded to `PyPI <https://pypi.org/project/abqpy>`_, you can simply install it using pip:"
 msgstr ""
 
-#: ../../index.rst:50
+#: ../../index.rst:49
 msgid "`abqpy` is also uploaded to `anaconda <https://anaconda.org/haiiliin/abqpy>`_, you can use `conda` to install it, since abqpy (from V1.0.15) depends on `ipynbname` and it is not distributed to anaconda, you have to use `pip` to install it manually:"
 msgstr ""
 
-#: ../../index.rst:59
+#: ../../index.rst:58
 msgid "You may install the latest development version by cloning the `GitHub repository <https://github.com/haiiliin/abqpy>`_ and use `python` to install from the local directory:"
 msgstr ""
 
-#: ../../index.rst:71
+#: ../../index.rst:70
 msgid "Write your Abaqus/Python script"
 msgstr ""
 
-#: ../../index.rst:73
+#: ../../index.rst:72
 msgid "After installing the `abqpy` package, you can start writing your own Abaqus/Python script to build your model. You can refer `abqpy/examples at main · haiiliin/abqpy <https://github.com/haiiliin/abqpy/tree/main/examples>`_ for some tests of the script, for more detailed documentation, please check `abqpy documentation <https://haiiliin.com/abqpy/>`_."
 msgstr ""
 
-#: ../../index.rst:80
+#: ../../index.rst:79
 msgid "Setup your Abaqus Environment"
 msgstr ""
 
-#: ../../index.rst:82
+#: ../../index.rst:81
 msgid "In order to use Abaqus command to execute the Python script and submit the job, you need to tell `abqpy` where the Abaqus command is located. Usually, Abaqus command locates in a directory like this:"
 msgstr ""
 
-#: ../../index.rst:89
+#: ../../index.rst:88
 msgid "You can add the directory `C:/SIMULIA/Commands` to the system environment variable `Path`, or you can create a new system variable named `ABAQUS_BAT_PATH`, and set the value to the file path of the Abaqus command, i.e., `C:/SIMULIA/Commands/abaqus.bat`."
 msgstr ""
 
-#: ../../index.rst:94
+#: ../../index.rst:93
 msgid "Run your Abaqus/Python script"
 msgstr ""
 
-#: ../../index.rst:96
+#: ../../index.rst:95
 msgid "Now you can just run your Abaqus/Python script using your own Python interpreter that `abqpy` is installed."
 msgstr ""
 
 #: ../../index.rst:-1
-#: ../../index.rst:98
+#: ../../index.rst:97
 msgid "Create an Abaqus Model"
 msgstr ""
 
 #: ../../index.rst:-1
-#: ../../index.rst:105
+#: ../../index.rst:104
 msgid "Extract Output Data"
 msgstr ""
 
-#: ../../index.rst:113
+#: ../../index.rst:112
 msgid "What next?"
 msgstr ""
 
-#: ../../index.rst:116
+#: ../../index.rst:114
 msgid "You may wonder how does this package work, you can go :doc:`/getting_started` for more detailed introduction and go :doc:`/tutorials` for a simple tutorial. For more documentation about Abaqus/Python scripting, please check :doc:`/summary` for a list of descriptions of objects and methods of Abaqus models, check :doc:`/references` for more detailed API references."
 msgstr ""
 
-#: ../../index.rst:123
+#: ../../index.rst:122
 msgid "Documentation"
 msgstr ""
 
-#: ../../index.rst:136
+#: ../../index.rst:135
 msgid "Indices and tables"
 msgstr ""
 
-#: ../../index.rst:138
+#: ../../index.rst:137
 msgid ":ref:`genindex`"
 msgstr ""
 
-#: ../../index.rst:139
+#: ../../index.rst:138
 msgid ":ref:`modindex`"
 msgstr ""
 
-#: ../../index.rst:140
+#: ../../index.rst:139
 msgid ":ref:`search`"
 msgstr ""
