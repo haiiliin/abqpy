@@ -29,8 +29,8 @@ jobs:
         uses: haya14busa/action-cond@v1
         id: branch
         with:
-          cond: ${{ matrix.version == "main" }}
-          if_true: "main"  # string value
+          cond: ${{ matrix.version == 'main' }}
+          if_true: main  # string value
           if_false: V${{ matrix.version }} # string value
       - uses: actions/checkout@v3
         with:
@@ -40,7 +40,7 @@ jobs:
         uses: haya14busa/action-cond@v1
         id: drafter_suffix
         with:
-          cond: ${{ matrix.version == "main" }}
+          cond: ${{ matrix.version == 'main' }}
           if_true: "2022"  # string value
           if_false: ${{ matrix.version }} # string value
       - name: Update release drafter
