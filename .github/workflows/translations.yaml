@@ -39,4 +39,4 @@ jobs:
           [${{ github.run_id }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}).
         author: haiiliin <hailin.wang@connect.polyu.hk>
         labels: translation
-        branch: ${{ matrix.branch }}
+        branch: update-translations-to-${{ matrix.branch }}
