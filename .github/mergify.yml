@@ -122,7 +122,7 @@ pull_request_rules:
       - and:
         - label=translation
         - label!=conflicts
-        - title~=Update translations (\d+/\d+/\d+)
+        - title~=Update translations \(\d+\/\d+\/\d+\)
     actions:
       merge:
         method: squash
