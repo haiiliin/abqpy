@@ -43,4 +43,4 @@ jobs:
         title: Update translations (${{ steps.date.outputs.date }})
         labels: translation, ${{ matrix.branch }}
         branch: update-translations-to-${{ matrix.branch }}
-        token: ${{ ACTION_TOKEN }}
+        token: ${{ secrets.ACTION_TOKEN }}
