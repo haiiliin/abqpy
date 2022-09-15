@@ -130,7 +130,7 @@ def openOdb(path: str, readOnly: Boolean = OFF, readInternalSets: Boolean = OFF)
         installation of Abaqus needs upgrading.
           
     """
-    abqpy.abaqus.run()
+    abqpy.abaqus.run(cae=False)
     return Odb(path)
 
 
