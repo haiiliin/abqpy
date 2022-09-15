@@ -41,6 +41,7 @@ except pkg_resources.DistributionNotFound:
 release = '.'.join(version.split('.')[:3])
 if 'dev' in version:
     release += ' (dev)'
+version = release
 
 # For multiple languages
 locale_dirs = ['locales/']   # path is example but recommended.
