@@ -10,6 +10,7 @@ pull_request_rules:
           - "{{ author }}"
         labels:
           - backport
+          - main
 
   - name: Backport to V2022
     conditions:
@@ -24,6 +25,7 @@ pull_request_rules:
           - "{{ author }}"
         labels:
           - backport
+          - V2022
 
   - name: Backport to V2021
     conditions:
@@ -38,6 +40,7 @@ pull_request_rules:
           - "{{ author }}"
         labels:
           - backport
+          - V2021
 
   - name: Backport to V2020
     conditions:
@@ -52,6 +55,7 @@ pull_request_rules:
           - "{{ author }}"
         labels:
           - backport
+          - V2020
 
   - name: Backport to V2019
     conditions:
@@ -66,6 +70,7 @@ pull_request_rules:
           - "{{ author }}"
         labels:
           - backport
+          - V2019
 
   - name: Backport to V2018
     conditions:
@@ -80,6 +85,7 @@ pull_request_rules:
           - "{{ author }}"
         labels:
           - backport
+          - V2018
 
   - name: Backport to V2017
     conditions:
@@ -94,6 +100,7 @@ pull_request_rules:
           - "{{ author }}"
         labels:
           - backport
+          - V2017
 
   - name: Backport to V2016
     conditions:
@@ -108,6 +115,8 @@ pull_request_rules:
           - "{{ author }}"
         labels:
           - backport
+          - V2016
+
   - name: Auto merge backport pull request
     conditions:
       - and:
@@ -117,6 +126,7 @@ pull_request_rules:
     actions:
       merge:
         method: squash
+
   - name: Auto merge translation pull request
     conditions:
       - and:
@@ -126,6 +136,7 @@ pull_request_rules:
     actions:
       merge:
         method: squash
+
   - name: Auto merge updating version number pull request
     conditions:
       - and:
@@ -135,6 +146,7 @@ pull_request_rules:
     actions:
       merge:
         method: squash
+
   - name: Warn on conflicts
     conditions:
       - conflict
@@ -144,6 +156,7 @@ pull_request_rules:
       label:
         add:
           - conflict
+
   - name: Remove conflict label if not needed
     conditions:
       - -conflict
