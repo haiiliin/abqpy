@@ -12,27 +12,12 @@ jobs:
       fail-fast: false
       matrix:
         branch: [main, V2022, V2021, V2020, V2019, V2018, V2017, V2016]
-    env:
-      SPHINXINTL_TRANSIFEX_PROJECT_NAME: abqpy
-      SPHINXINTL_TRANSIFEX_USERNAME: hailin
-      SPHINXINTL_TRANSIFEX_PASSWORD: ${{ secrets.SPHINXINTL_TRANSIFEX_PASSWORD }}
 
     steps:
     - uses: actions/checkout@v2
-    - name: Get date
-      id: get-date
-      run: |
-        echo "::set-output name=date::$(/bin/date -u "+%Y%m%d")"
-        echo "::set-output name=yyyymm::$(/bin/date -u "+%Y%m")"
-      shell: bash
-    - name: cache pip
-      id: cache-pip
-      uses: actions/cache@v2
       with:
-        path: |
-          ~/.cache/pip
-          ~/.local/
-        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}-${{ steps.get-date.outputs.yyyymm }}
+        ref: ${{ matrix.branch }}
+        fetch-depth: 0
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
@@ -41,23 +26,13 @@ jobs:
       run: python --version
     - name: Install dependencies
       run: |
-        git fetch origin
-        git checkout origin/main
-        git checkout ${{ matrix.branch }}  # attach this repo
         pip install -r ./docs/requirements.txt
         python setup.py install
     - name: Update translations
       run: sh ./docs/source/locales/update.sh
-    - name: After success
-      run: |
-        git branch -a
-        git checkout ${{ matrix.branch }}  # attach this repo
-        git config --global user.email "hailin.wang@connect.polyu.hk"
-        git config --global user.name "abqpy-bot"
-        git add .
-        git commit -m "Update translations by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-    - name: Pushing to the protected branch 'protected'
-      uses: CasperWA/push-protected@v2
-      with:
-        token: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
-        branch: ${{ matrix.branch }}
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v4
+      commit-message: Update translations by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      author: haiiliin <hailin.wang@connect.polyu.hk>
+      labels: translation
+      branch: ${{ matrix.branch }}
