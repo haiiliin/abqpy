@@ -14,71 +14,54 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"]
+        version: ["main", "2016", "2017", "2018", "2019", "2020", "2021", "2022"]
 
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y/%m/%d')"
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
           python-version: '3.10'
-      - name: Update release drafter
-        id: create_release_drafter
-        uses: release-drafter/release-drafter@v5
+      - name: Determine Checkout Branch
+        uses: haya14busa/action-cond@v1
+        id: branch
         with:
-          config-name: release-drafter-v${{ matrix.version }}.yml
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Update suggested version and create commit for 'V${{ matrix.version }}'
-        if: ${{ inputs.update }}
-        run: |
-          echo "tag = ${{ steps.create_release_drafter.outputs.tag_name }}"
-          git branch -a
-          git checkout V${{ matrix.version }}  # attach this repo
-          git config --global user.email "hailin.wang@connect.polyu.hk"
-          git config --global user.name "abqpy-bot"
-          python ".github/update-suggested-version.py" "${{ steps.create_release_drafter.outputs.tag_name }}"
-          git add .
-          git commit -m "Update version by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-      - name: Push to the protected branch 'V${{ matrix.version }}'
-        if: ${{ inputs.update }}
-        uses: CasperWA/push-protected@v2
-        with:
-          token: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
-          branch: V${{ matrix.version }}
-  
-  update-version-on-main:
-    if: ${{ inputs.update }}
-    runs-on: ubuntu-latest
-    steps:
+          cond: ${{ matrix.version == "main" }}
+          if_true: "main"  # string value
+          if_false: V${{ matrix.version }} # string value
       - uses: actions/checkout@v3
         with:
+          ref: ${{ steps.branch.outputs.value }}
           fetch-depth: 0
-      - name: Set up Python
-        uses: actions/setup-python@v3
+      - name: Determine Release Drafter Suffix
+        uses: haya14busa/action-cond@v1
+        id: drafter_suffix
         with:
-          python-version: '3.10'
+          cond: ${{ matrix.version == "main" }}
+          if_true: "2022"  # string value
+          if_false: ${{ matrix.version }} # string value
       - name: Update release drafter
         id: create_release_drafter
         uses: release-drafter/release-drafter@v5
         with:
-          config-name: release-drafter-v2022.yml
+          config-name: release-drafter-v${{ steps.drafter_suffix.outputs.value }}.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Update suggested version and create commit for 'main'
+      - name: Update suggested version for ${{ steps.branch.outputs.value }}
+        if: ${{ inputs.update }}
         run: |
           echo "tag = ${{ steps.create_release_drafter.outputs.tag_name }}"
-          git branch -a
-          git checkout main  # attach this repo
-          git config --global user.email "hailin.wang@connect.polyu.hk"
-          git config --global user.name "abqpy-bot"
           python ".github/update-suggested-version.py" "${{ steps.create_release_drafter.outputs.tag_name }}"
-          git add .
-          git commit -m "Update version by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-      - name: Push to the protected branch 'main'
-        uses: CasperWA/push-protected@v2
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
         with:
-          token: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
-          branch: main
+          commit-message: Update release version by GitHub Action https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          body: |
+            This is an automated pull request to update the release version by GitHub Action [${{ github.run_id }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}).
+          author: haiiliin <hailin.wang@connect.polyu.hk>
+          title: Update release version (${{ steps.date.outputs.date }})
+          labels: version, ${{ steps.branch.outputs.value }}
+          branch: update-version-to-${{ steps.branch.outputs.value }}
+          token: ${{ secrets.ACTION_TOKEN }}
