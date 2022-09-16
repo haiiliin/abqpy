@@ -48,7 +48,7 @@ setuptools.setup(
                 'upgradeScript', 'visualization'],
     entry_points={
         'console_scripts': [
-            'abqpy = abqpy.__main__.cli',
+            'abqpy = abqpy.__main__:cli',
         ]
     },
 )
