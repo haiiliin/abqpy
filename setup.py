@@ -46,4 +46,9 @@ setuptools.setup(
                 'mesh', 'meshEdit', 'methodCallback', 'monitorManager', 'odbAccess', 'odbConnectorBehavior',
                 'odbMaterial', 'odbSection', 'part', 'redentABQ', 'section', 'symbolicConstants', 'textRepr',
                 'upgradeScript', 'visualization'],
+    entry_points={
+        'console_scripts': [
+            'abqpy = abqpy.__main__:cli',
+        ]
+    },
 )
