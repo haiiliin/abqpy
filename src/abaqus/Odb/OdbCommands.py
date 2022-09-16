@@ -4,6 +4,7 @@ import abqpy.abaqus
 from abqpy.decorators import abaqus_function_doc
 from .FieldOutput import FieldOutput
 from .Odb import Odb
+from .OdbSequenceAnalyticSurfaceSegment import OdbSequenceAnalyticSurfaceSegment
 from ..UtilityAndView.abaqusConstants import *
 
 """The Odb commands do the following: 
@@ -165,3 +166,19 @@ def upgradeOdb(existingOdbPath: str, upgradedOdbPath: str):
         If the output database upgrade fails.
     """
     ...
+
+# The following method was originally in the `OdbSequenceAnalyticSurfaceSegment` page documentation
+# But it accessed only in `odbAccess` module, which is importing `abaqus.Odb.OdbCommands`
+def AnalyticSurfaceProfile() -> OdbSequenceAnalyticSurfaceSegment:
+    """This method creates a OdbSequenceAnalyticSurfaceSegment object.
+    
+    Path::
+    
+        odbAccess.AnalyticSurfaceProfile()
+    
+    Returns
+    -------
+    OdbSequenceAnalyticSurfaceSegment
+        An :py:class:`~abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment` object.
+    """
+    return OdbSequenceAnalyticSurfaceSegment()
