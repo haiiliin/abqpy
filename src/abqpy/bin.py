@@ -1,10 +1,8 @@
-#!/usr/bin/env python
-
 import argparse
 import os
 
 
-def main():
+def cli():
     parser = argparse.ArgumentParser(description='The abqpy command line interface')
     parser.add_argument('script', metavar='script', type=str, nargs=1,
                         help='the python script to run')
