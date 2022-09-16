@@ -53,6 +53,17 @@ pip install abqpy
 conda install -c haiiliin abqpy
 ```
 
+You may install the latest development version by cloning the 
+[GitHub repository](https://github.com/haiiliin/abqpy) and use `python` to install from 
+the local directory:
+
+```shell
+git clone https://github.com/haiiliin/abqpy.git
+cd abqpy
+pip install -r requirements.txt
+python setup.py install
+```
+
 ## Install A Specific Version
 
 You can specify the version number when installing `abqpy`, for example:
@@ -74,32 +85,9 @@ to Abaqus kernel.
 
 Go [examples](examples) for tests using Jupyter Notebooks to build the Abaqus model.
  
-In order to use the **Jupyter Notebook** feature, you have to install the following packages:
+In order to use the **Jupyter Notebook** feature, you have to install `ipynbname`:
 ```shell
-pip install ipynbname  # to read the file name of the notebook
-pip install notebook
-pip install jupyterlab
-```
-Or use `conda` to install (the `ipynbname` package is only distributed in `PyPI`, 
-so you have to install it using `pip`):
-```shell
-conda install jupyterlab
-conda install jupyter notebook
-```
-
-Try the following command to make sure the `jupyter` command is available. 
-```shell
-jupyter --version
-```
-
-You may install the latest development version by cloning the 
-[GitHub repository](https://github.com/haiiliin/abqpy) and use `python` to install from 
-the local directory:
-
-```shell
-git clone https://github.com/haiiliin/abqpy.git
-cd abqpy
-python setup.py install
+pip install ipynbname
 ```
 
 ## Setup Abaqus Environment
