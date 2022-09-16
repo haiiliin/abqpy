@@ -46,6 +46,16 @@ pip install abqpy
 conda install -c haiiliin abqpy
 ```
 
+您也可以通过克隆 [GitHub 仓库](https://github.com/haiiliin/abqpy) 来安装最新的版本，
+并使用 `python` 从本地目录安装：
+
+```shell
+git clone https://github.com/haiiliin/abqpy.git
+cd abqpy
+pip install -r requirements.txt
+python setup.py install
+```
+
 ## 安装特定的版本
 
 您可以在安装 `abqpy` 时指定版本号，例如：
@@ -65,30 +75,9 @@ pip install abqpy==2022.*
 
 访问 [案例页](examples) 查看使用 Jupyter Notebook 创建 Abaqus 模型的案例。
  
-为了使用 **Jupyter Notebook** 功能，您必须安装以下 Python 包：
+为了使用 **Jupyter Notebook** 功能，您必须安装以下 `ipynbname`：
 ```shell
-pip install ipynbname  # to read the file name of the notebook
-pip install notebook
-pip install jupyterlab
-```
-或者使用 `conda` 安装（`ipynbname` 包只分发在 `PyPI` 中，所以你必须使用 `pip` 安装它）：
-```shell
-conda install jupyterlab
-conda install jupyter notebook
-```
-
-尝试以下命令以确保 `jupyter` 命令可用。
-```shell
-jupyter --version
-```
-
-您可以通过克隆 [GitHub 仓库](https://github.com/haiiliin/abqpy) 来安装最新的版本，
-并使用 `python` 从本地目录安装：
-
-```shell
-git clone https://github.com/haiiliin/abqpy.git
-cd abqpy
-python setup.py install
+pip install ipynbname 
 ```
 
 ## 设置 Abaqus 环境
