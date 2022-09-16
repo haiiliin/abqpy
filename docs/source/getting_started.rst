@@ -139,6 +139,7 @@ the local directory:
 
     git clone https://github.com/haiiliin/abqpy.git
     cd abqpy
+    pip install -r requirements.txt
     python setup.py install
 
 Optional Requirements
@@ -156,10 +157,22 @@ Install A Specific Version
 
 You can specify the version number when installing `abqpy`, for example:
 
+Using `pip`:
+
 .. code-block:: sh
 
+<<<<<<< HEAD
     pip install abqpy==2016.3.2
     conda install -c haiiliin abqpy=2016.3.2
+=======
+    pip install abqpy==2022.3.2
+
+Using `conda`:
+
+.. code-block:: sh
+
+    conda install -c haiiliin abqpy=2022.3.2
+>>>>>>> ae4a0e0c (Update docs (#1434))
 
 A better way is to use * to match specific version:
 
