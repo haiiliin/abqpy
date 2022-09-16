@@ -47,12 +47,10 @@ it using pip:
     pip install abqpy
 
 `abqpy` is also uploaded to `anaconda <https://anaconda.org/haiiliin/abqpy>`_, you can use 
-`conda` to install it, since abqpy (from V1.0.15) depends on `ipynbname` and it is not distributed to
-anaconda, you have to use `pip` to install it manually:
+`conda` to install it:
 
 .. code-block:: sh
 
-    pip install ipynbname
     conda install -c haiiliin abqpy
 
 You may install the latest development version by cloning the
@@ -61,9 +59,9 @@ the local directory:
 
 .. code-block:: sh
 
-    pip install ipynbname
     git clone https://github.com/haiiliin/abqpy.git
     cd abqpy
+    pip install -r requirements.txt
     python setup.py install
 
 Write your Abaqus/Python script
