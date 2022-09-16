@@ -1,0 +1,93 @@
+
+template = """
+from abaqus import *
+from abaqusConstants import *
+from caeModules import *
+from driverUtils import *
+
+executeOnCaeStartup()
+
+# Model
+model = mdb.models['Model-1']
+
+# Part
+sketch = model.ConstrainedSketch(name='sketch', sheetSize=1.0)
+sketch.rectangle((0, 0), ({{ width }}, {{ length }}))
+part = model.Part(name='part', dimensionality=THREE_D, type=DEFORMABLE_BODY)
+part.BaseSolidExtrude(sketch=sketch, depth={{ height }})
+
+# Create sets
+part.Set(name='set-all', cells=part.cells.findAt(coordinates=(({{ width / 2 }}, {{ length / 2 }}, {{ height / 2 }}),)))
+part.Set(name='set-bottom', faces=part.faces.findAt(coordinates=(({{ width / 2 }}, {{ length / 2 }}, 0.0),)))
+part.Set(name='set-top', faces=part.faces.findAt(coordinates=(({{ width / 2 }}, {{ length / 2 }}, {{ height }}),)))
+part.Surface(name='surface-top', 
+             side1Faces=part.faces.findAt(coordinates=(({{ width / 2 }}, {{ length / 2 }}, {{ height }}),)))
+
+# Assembly
+model.rootAssembly.DatumCsysByDefault(CARTESIAN)
+model.rootAssembly.Instance(name='instance', part=part, dependent=ON)
+
+# Material
+material = model.Material(name='material')
+material.Elastic(table=(({{ E }}, {{ mu }}),))
+material.Density(table=(({{ rho }},),))
+
+# Section
+model.HomogeneousSolidSection(name='section', material='material', thickness=None)
+part.SectionAssignment(region=part.sets['set-all'], sectionName='section')
+
+# Step
+step = model.StaticStep(name='Step-1', previous='Initial', description='',
+                        timePeriod={{ timePeriod }}, timeIncrementationMethod=AUTOMATIC,
+                        maxNumInc={{ maxNumInc }}, initialInc= {{ initialInc }}, 
+                        minInc= {{ minInc }}, maxInc= {{ maxInc }})
+
+# Output request
+field = model.FieldOutputRequest('F-Output-1', createStepName='Step-1',
+                                 variables=('S', 'E', 'U'))
+
+# Boundary condition
+bottom_instance = model.rootAssembly.instances['instance'].sets['set-bottom']
+bc = model.DisplacementBC(name='BC-1', createStepName='Initial',
+                          region=bottom_instance, u3=SET)
+
+# Load
+top_instance = model.rootAssembly.instances['instance'].surfaces['surface-top']
+pressure = model.Pressure('pressure', createStepName='Step-1', region=top_instance,
+                          magnitude={{ pressure }})
+
+# Mesh
+elem1 = mesh.ElemType(elemCode=C3D8R)
+elem2 = mesh.ElemType(elemCode=C3D6)
+elem3 = mesh.ElemType(elemCode=C3D4)
+part.setElementType(regions=(part.cells,), elemTypes=(elem1, elem2, elem3))
+part.seedPart(size={{ mesh_size }})
+part.generateMesh()
+
+# Job
+job = mdb.Job(name='{{ job_name }}', model='Model-1')
+job.writeInput()
+
+# Submit the job
+job.submit()
+job.waitForCompletion()
+
+# Save abaqus model
+mdb.saveAs('compression.cae')
+"""
+
+defaults = {
+    'width': 1.0,
+    'length': 1.0,
+    'height': 1.0,
+    'timePeriod': 1.0,
+    'maxNumInc': 100,
+    'initialInc': 0.01,
+    'minInc': 0.001,
+    'maxInc': 0.1,
+    'E': 1000.0,
+    'mu': 0.2,
+    'rho': 2500,
+    'pressure': 100.0,
+    'mesh_size': 0.1,
+}
