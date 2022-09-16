@@ -595,7 +595,9 @@ class SessionBase:
             A sequence of canvas objects to export.
         """
         ...
-
+    
+    # The following method was originally in the `OdbCommands` page documentation
+    # But it accessed only by `session` object.
     @abaqus_method_doc
     def openOdb(self, name: str, path: str = "", readOnly: Boolean = OFF) -> Odb:
         """This method opens an existing output database (`.odb`) file and creates a new Odb object.
