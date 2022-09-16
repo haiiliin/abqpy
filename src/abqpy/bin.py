@@ -3,17 +3,17 @@
 import argparse
 import os
 
-parser = argparse.ArgumentParser(description='The abqpy command line interface')
-parser.add_argument('script', metavar='script', type=str, nargs=1,
-                    help='the python script to run')
-parser.add_argument('-n', '--noGUI', dest='noGUI', action='store_true',
-                    help='run Abaqus in batch mode')
-parser.add_argument('-m', '--mode', dest='mode', type=str, default='cae', choices=['cae', 'python'],
-                    help='option to run Abaqus, either cae or python, by default cae')
-parser.add_argument('others', nargs=argparse.REMAINDER,
-                    help='other arguments to pass to Abaqus')
 
-if __name__ == "__main__":
+def main():
+    parser = argparse.ArgumentParser(description='The abqpy command line interface')
+    parser.add_argument('script', metavar='script', type=str, nargs=1,
+                        help='the python script to run')
+    parser.add_argument('-n', '--noGUI', dest='noGUI', action='store_true',
+                        help='run Abaqus in batch mode')
+    parser.add_argument('-m', '--mode', dest='mode', type=str, default='cae', choices=['cae', 'python'],
+                        help='option to run Abaqus, either cae or python, by default cae')
+    parser.add_argument('others', nargs=argparse.REMAINDER,
+                        help='other arguments to pass to Abaqus')
     args = parser.parse_args()
     if args.mode == 'cae':
         option = 'noGUI' if args.noGUI else 'script'
