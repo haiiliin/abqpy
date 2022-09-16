@@ -93,7 +93,6 @@ def minEnvelop() -> typing.Tuple[FieldOutput, FieldOutput]:
 
 
 @abaqus_function_doc
-@typing.overload
 def openOdb(path: str, readOnly: Boolean = OFF, readInternalSets: Boolean = OFF) -> Odb:
     """This method opens an existing output database (`.odb`) file and creates a new Odb object.
     You typically execute this method outside of Abaqus/CAE when, in most cases, only one
@@ -131,6 +130,7 @@ def openOdb(path: str, readOnly: Boolean = OFF, readInternalSets: Boolean = OFF)
         installation of Abaqus needs upgrading.
           
     """
+<<<<<<< HEAD
     ...
 
 
@@ -182,6 +182,10 @@ def openOdb(name: str, path: str = "", readOnly: Boolean = OFF) -> Odb:
 @abaqus_function_doc
 def openOdb(name: str, *args, **kwargs):
     abqpy.abaqus.run(exit_after=True)
+=======
+    abqpy.abaqus.run(cae=False)
+    return Odb(path)
+>>>>>>> a9476c26 (Open odb doc reference issue (#1452))
 
 
 @abaqus_function_doc
