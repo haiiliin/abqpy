@@ -13,7 +13,7 @@ def main():
     parser.add_argument('-m', '--mode', dest='mode', type=str, default='cae', choices=['cae', 'python'],
                         help='option to run Abaqus, either cae or python, by default cae')
     parser.add_argument('others', nargs=argparse.REMAINDER,
-                        help='other arguments to pass to Abaqus')
+                        help='other arguments to pass to the abaqus command')
     args = parser.parse_args()
     if args.mode == 'cae':
         option = 'noGUI' if args.noGUI else 'script'
