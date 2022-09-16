@@ -75,7 +75,7 @@ pip install abqpy==2022.*
 
 访问 [案例页](examples) 查看使用 Jupyter Notebook 创建 Abaqus 模型的案例。
  
-为了使用 **Jupyter Notebook** 功能，您必须安装以下 `ipynbname`：
+为了使用 **Jupyter Notebook** 功能，您必须安装 `ipynbname`：
 ```shell
 pip install ipynbname 
 ```
