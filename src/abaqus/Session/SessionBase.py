@@ -127,7 +127,7 @@ class SessionBase:
     quickTimeOptions: QuickTimeOptions = QuickTimeOptions()
 
     #: A repository of Viewport objects.
-    viewports: typing.Dict[str, Viewport] = {'Viewport: 1': Viewport('Viewport: 1')}
+    viewports: typing.Dict[str, Viewport] = {}
 
     #: A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object.
     customData: RepositorySupport = RepositorySupport()
