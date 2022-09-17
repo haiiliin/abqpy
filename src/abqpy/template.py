@@ -9,7 +9,7 @@ from jinja2 import Template
 class ScriptTemplate(Template):
     """A template class for Abaqus script.
     """
-    _params: Dict[str, Dict[str, Any]]
+    _params: Dict[str, Dict[str, Union[str, int, float, bool]]]
     #: A list of parameters required by the template.
     parameters = property(lambda self: list(self._params))
     #: The default parameters.
@@ -23,7 +23,7 @@ class ScriptTemplate(Template):
         cls,
         source: Union[os.PathLike, str, Template],
         config: Union[
-            Dict[str, Union[Dict[str, Any]]],
+            Dict[str, Dict[str, Union[str, int, float, bool]]],
             os.PathLike, str,
         ] = None,
     ):
@@ -126,20 +126,19 @@ def template_doc(cls: Type['_CompressionTemplate']):
     obj = cls()
     attr_docstrings = []
     parameters, types, defaults, descriptions = obj.parameters, obj.types, obj.defaults, obj.descriptions
-    for var in obj.parameters:
-        attr_docstrings.append(f'.. py:attribute:: {var}\n'
-                               f'    :type: {types[var]}\n'
-                               f'    :value: {defaults[var]}\n\n'
+    for var in parameters:
+        attr_docstrings.append(f'.. confval:: {var}\n'
+                               f'    :type: {types[var]}, defaults to {defaults[var]}\n\n'
                                f'    {descriptions[var]}')
     attrs_docstring = '\n\n'.join(attr_docstrings)
     docstring = f"""
-This is a template for the {cls.name}.
+This is a template for {cls.name}.
 
 .. warning::
     This is a template class just for documentation, do not use it directly.
 
 .. note::
-    Details of the parameters needed to render the template:
+    Details of the parameters requirements to render the template:
 
 {textwrap.indent(attrs_docstring, ' ' * 4)}
 
