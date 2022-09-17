@@ -32,8 +32,11 @@ def run(cae: bool = True) -> None:
     if not debug and gettrace is not None and gettrace():
         debug = True
 
+    # Check if it is imported by sphinx to generate docs
+    make_docs = os.environ.get("ABQPY_MAKE_DOCS", "false").lower() == "true"
+
     # If in debug mode do not run the abaqus command at all
-    if not debug:
+    if not debug and not make_docs:
         if cae:
             os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
         else:
