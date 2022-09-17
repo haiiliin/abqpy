@@ -293,7 +293,7 @@ class ViewportBase(_OptionsBase):
     def __init__(
         self,
         name: str,
-        origin: typing.Tuple[float, ...] = (0.0, 0.0),
+        origin: typing.Tuple[float, float] = (0.0, 0.0),
         width: float = 120.0,
         height: float = 80.0,
         border: Boolean = ON,

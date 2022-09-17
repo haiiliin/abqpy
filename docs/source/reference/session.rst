@@ -48,6 +48,15 @@ AnimationSession
 
     .. autoclasstoc::
 
+CanvasSession
+~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Canvas.CanvasSession.CanvasSession
+    :members:
+    :noindex:
+
+    .. autoclasstoc::
+
 DisplayGroupSession
 ~~~~~~~~~~~~~~~~~~~
 
