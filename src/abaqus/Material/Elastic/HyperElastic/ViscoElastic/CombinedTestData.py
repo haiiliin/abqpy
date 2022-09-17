@@ -34,7 +34,7 @@ class CombinedTestData:
 
     @abaqus_method_doc
     def __init__(self, table: tuple, volinf: float = None, shrinf: float = None):
-        """This method creates a CombinedTestData object.
+        r"""This method creates a CombinedTestData object.
 
         .. note:: 
             This function can be accessed by::
