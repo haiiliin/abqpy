@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-15 06:20+0000\n"
+"POT-Creation-Date: 2022-09-17 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1063,14 +1063,18 @@ msgstr ""
 
 #: ../../None:17:<autosummary>:1
 msgid ""
-":py:obj:`openOdb <abaqus.XY.XYSession.XYSession.openOdb>`\\ \\(name\\, "
-"\\*args\\, \\*\\*kwargs\\)"
+":py:obj:`openOdb <abaqus.XY.XYSession.XYSession.openOdb>`\\ \\(name\\[\\,"
+" path\\, readOnly\\]\\)"
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
 msgid ""
-"This method opens an existing output database (.odb) file and creates a "
-"new Odb object."
+"This method opens an existing output database (`.odb`) file and creates a"
+" new Odb object. This method is accessed only via the session object "
+"inside Abaqus/CAE and adds the new Odb object to the session.odbs "
+"repository. This method allows you to open multiple output databases at "
+"the same time and to use the repository key to specify a particular "
+"output database. For example::."
 msgstr ""
 
 #: abaqus.XY.XYCurve.XYCurve.Curve:5 abaqus.XY.XYData.XYData.XYDataFromFile:5
@@ -3609,7 +3613,7 @@ msgstr ""
 #: ../../None:17:<autosummary>:1
 msgid ""
 ":py:obj:`openOdb <abaqus.XY.XYSessionBase.XYSessionBase.openOdb>`\\ "
-"\\(name\\, \\*args\\, \\*\\*kwargs\\)"
+"\\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
 #: abaqus.XY.XYSessionBase.XYSessionBase.getLimitForXYDataPlots:22 of
@@ -8263,5 +8267,22 @@ msgstr ""
 #~ "help.3ds.com/0.1. "
 #~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyreportoptionspyc.htm?contextscope=all"
 #~ "#simaker-xyreportoptionssetvaluespyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`openOdb <abaqus.XY.XYSession.XYSession.openOdb>`\\ "
+#~ "\\(name\\, \\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method opens an existing output "
+#~ "database (.odb) file and creates a "
+#~ "new Odb object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`openOdb "
+#~ "<abaqus.XY.XYSessionBase.XYSessionBase.openOdb>`\\ \\(name\\,"
+#~ " \\*args\\, \\*\\*kwargs\\)"
 #~ msgstr ""
 
