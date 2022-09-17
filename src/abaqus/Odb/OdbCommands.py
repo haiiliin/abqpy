@@ -1,6 +1,5 @@
 import typing
 
-import abqpy.abaqus
 from abqpy.decorators import abaqus_function_doc
 from .FieldOutput import FieldOutput
 from .Odb import Odb
@@ -131,7 +130,6 @@ def openOdb(path: str, readOnly: Boolean = OFF, readInternalSets: Boolean = OFF)
         installation of Abaqus needs upgrading.
           
     """
-    abqpy.abaqus.run(cae=False)
     return Odb(path)
 
 
