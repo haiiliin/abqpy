@@ -67,8 +67,13 @@ python setup.py install
 ## Install A Specific Version
 
 You can specify the version number when installing `abqpy`, for example:
+
+Using `pip`:
 ```shell
 pip install abqpy==2016.3.2
+```
+Using `conda`:
+```shell
 conda install -c haiiliin abqpy=2016.3.2
 ```
 A better way is to use * to match specific version:
