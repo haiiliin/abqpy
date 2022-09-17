@@ -152,15 +152,15 @@ pull_request_rules:
       - conflict
     actions:
       comment:
-        message: "@{{author}} this pull request is now in conflict 😩"
+        message: "@{{author}} this pull request is now in conflicts 😩"
       label:
         add:
-          - conflict
+          - conflicts
 
-  - name: Remove conflict label if not needed
+  - name: Remove conflicts label if not needed
     conditions:
       - -conflict
     actions:
       label:
         remove:
-          - conflict
+          - conflicts
