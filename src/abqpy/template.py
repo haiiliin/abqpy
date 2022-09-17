@@ -9,7 +9,7 @@ from jinja2 import Template
 class ScriptTemplate(Template):
     """A template class for Abaqus script.
     """
-    _params: Dict[str, Dict[str, Any]]
+    _params: Dict[str, Dict[str, Union[str, int, float, bool]]]
     #: A list of parameters required by the template.
     parameters = property(lambda self: list(self._params))
     #: The default parameters.
@@ -23,7 +23,7 @@ class ScriptTemplate(Template):
         cls,
         source: Union[os.PathLike, str, Template],
         config: Union[
-            Dict[str, Union[Dict[str, Any]]],
+            Dict[str, Dict[str, Union[str, int, float, bool]]],
             os.PathLike, str,
         ] = None,
     ):
