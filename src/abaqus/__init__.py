@@ -1,13 +1,14 @@
 import abqpy.abaqus
 from .Canvas.Highlight import *
-from .Mdb.Mdb import Mdb as AbaqusMdb
+from .Mdb.Mdb import Mdb
 from .Odb.Odb import Odb
-from .Session.Session import Session as AbaqusSession
+from .Session.Session import Session
 from .UtilityAndView.BackwardCompatibility import BackwardCompatibility
 from .UtilityAndView.SymbolicConstant import SymbolicConstant
 from .UtilityAndView.abaqusConstants import Boolean, OFF
 from .UtilityAndView.User import *
 
+<<<<<<< HEAD
 
 class Mdb(AbaqusMdb):
 
@@ -29,6 +30,8 @@ class Session(AbaqusSession):
         return odb
 
 
+=======
+>>>>>>> a2cd44c (Do not run the abaqus command in debug mode (#1501))
 session = Session()
 mdb = Mdb()
 
@@ -36,3 +39,5 @@ backwardCompatibility = BackwardCompatibility()
 
 YES = SymbolicConstant('YES')
 NO = SymbolicConstant('NO')
+
+abqpy.abaqus.run(cae=True)

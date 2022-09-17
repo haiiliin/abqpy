@@ -2,7 +2,7 @@ import os
 import sys
 
 
-def run(cae: bool = True, exit_after: bool = True) -> None:
+def run(cae: bool = True) -> None:
     """Runs Abaqus command in system's CLI
     
     This function uses the top level script file to run the Abaqus
@@ -11,11 +11,8 @@ def run(cae: bool = True, exit_after: bool = True) -> None:
     Parameters
     ----------
     cae : bool, optional
-        Wether or not to use `abaqus cae` command or
+        Whether to use `abaqus cae` command or
         `abaqus python`, by default True
-    exit_after : bool, optional
-        Wether to exit of the Python3 interpreter
-        after calling Abaqus, by default False
     """
     abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
     filePath = os.path.abspath(sys.modules['__main__'].__file__)
@@ -28,9 +25,20 @@ def run(cae: bool = True, exit_after: bool = True) -> None:
         filePath = str(filePath).replace(".ipynb", ".py")
     except (FileNotFoundError, ImportError, Exception):
         pass
-    if cae:
-        os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
-    else:
-        os.system(f"{abaqus} python {filePath} {args}")
-    if exit_after:
+
+    # check if in debug mode and run
+    debug = os.environ.get("ABQPY_DEBUG", "false").lower() == "true"
+    gettrace = getattr(sys, 'gettrace', None)
+    if not debug and gettrace is not None and gettrace():
+        debug = True
+
+    # Check if it is imported by sphinx to generate docs
+    make_docs = os.environ.get("ABQPY_MAKE_DOCS", "false").lower() == "true"
+
+    # If in debug mode do not run the abaqus command at all
+    if not debug and not make_docs:
+        if cae:
+            os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
+        else:
+            os.system(f"{abaqus} python {filePath} {args}")
         sys.exit(0)
