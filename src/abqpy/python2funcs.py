@@ -39,3 +39,22 @@ def execPyFile(
     atxPort : int, optional, by default -1
     """
     ...
+
+
+def raw_input(prompt: str = "") -> str:
+    """Read a string from standard input.  The trailing newline is stripped.     
+    If the user hits EOF (Unix: Ctl-D, Windows: Ctl-Z+Return), raise EOFError.
+    On Unix, GNU readline is used if enabled.  The prompt string, if given,
+    is printed without a trailing newline before reading.
+    
+    Parameters
+    ----------
+    prompt : str, optional
+        The prompt written to standard output, by default ''
+    
+    Returns
+    -------
+    str
+        The input value converted to a string
+    """
+    return input(prompt)
