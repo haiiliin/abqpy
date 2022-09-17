@@ -74,7 +74,7 @@ class CanvasSession(SessionBase):
         RangeError: height must be a Float in the range: 30 <= width <= **maxHeight**
             If **height** is out of range.
         """
-        self.viewports[name] = viewports = Viewport(
+        self.viewports[name] = viewport = Viewport(
             name, origin, width, height, border, titleBar, titleStyle, customTitleString
         )
-        return viewports
+        return viewport
