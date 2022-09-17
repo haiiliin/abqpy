@@ -803,7 +803,7 @@ class Material(MaterialBase):
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ) -> DruckerPrager:
-        """This method creates a DruckerPrager object.
+        r"""This method creates a DruckerPrager object.
 
         .. note:: 
             This function can be accessed by::
@@ -981,7 +981,7 @@ class Material(MaterialBase):
         gasSpecificTable: tuple = (),
         table: tuple = (),
     ) -> Eos:
-        """This method creates an Eos object.
+        r"""This method creates an Eos object.
 
         .. note:: 
             This function can be accessed by::
@@ -1817,7 +1817,7 @@ class Material(MaterialBase):
         dependencies: int = 0,
         useTensionCutoff: Boolean = OFF,
     ) -> MohrCoulombPlasticity:
-        """This method creates a MohrCoulombPlasticity object.
+        r"""This method creates a MohrCoulombPlasticity object.
 
         .. note:: 
             This function can be accessed by::
@@ -1896,7 +1896,7 @@ class Material(MaterialBase):
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ) -> Permeability:
-        """This method creates a Permeability object.
+        r"""This method creates a Permeability object.
 
         .. note:: 
             This function can be accessed by::
