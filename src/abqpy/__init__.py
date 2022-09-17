@@ -1,5 +1,4 @@
 from pathlib import Path
-from .abaqus import run
 
 
 try:
