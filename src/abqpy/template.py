@@ -6,7 +6,7 @@ from jinja2 import Template
 
 
 class ScriptTemplate(Template):
-    _params: Dict[str, Dict]
+    _params: Dict[str, Dict[str, Any]]
     parameters = property(lambda self: list(self._params))
     defaults = property(lambda self: {name: param['default'] for name, param in self._params.items()})
 
