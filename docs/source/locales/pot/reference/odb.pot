@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2018.3.2\n"
+"Project-Id-Version: abqpy 2018.3.3 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-16 00:17+0000\n"
+"POT-Creation-Date: 2022-09-17 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -806,6 +806,7 @@ msgstr ""
 #: ../../../../src/abaqus/Odb/OdbAssemblyBase.py:docstring of abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addNodes:0
 #: ../../../../src/abaqus/Odb/OdbBase.py:docstring of abaqus.Odb.OdbBase.OdbBase.getFrame:0
 #: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:0
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:0
 #: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.upgradeOdb:0
 #: ../../../../src/abaqus/Odb/OdbDatumCsys.py:docstring of abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsys:0
 #: ../../../../src/abaqus/Odb/OdbDatumCsys.py:docstring of abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:0
@@ -1154,9 +1155,11 @@ msgstr ""
 #: ../../../../src/abaqus/Odb/OdbAssembly.py:docstring of abaqus.Odb.OdbAssembly.OdbAssembly.RigidBody:0
 #: ../../../../src/abaqus/Odb/OdbBase.py:docstring of abaqus.Odb.OdbBase.OdbBase.getFrame:0
 #: ../../../../src/abaqus/Odb/OdbBase.py:docstring of abaqus.Odb.OdbBase.OdbBase.update:0
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.AnalyticSurfaceProfile:0
 #: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:0
 #: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.maxEnvelop:0
 #: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.minEnvelop:0
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:0
 #: ../../../../src/abaqus/Odb/OdbDatumCsys.py:docstring of abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsys:0
 #: ../../../../src/abaqus/Odb/OdbDatumCsys.py:docstring of abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:0
 #: ../../../../src/abaqus/Odb/OdbDatumCsys.py:docstring of abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:0
@@ -1270,6 +1273,7 @@ msgstr ""
 #: ../../../../src/abaqus/Odb/OdbBase.py:docstring of abaqus.Odb.OdbBase.OdbBase.save:0
 #: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.maxEnvelop:0
 #: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.minEnvelop:0
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:0
 #: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.upgradeOdb:0
 #: ../../../../src/abaqus/Odb/OdbInstance.py:docstring of abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurf2DPlanar:0
 #: ../../../../src/abaqus/Odb/OdbInstance.py:docstring of abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfExtrude:0
@@ -5969,6 +5973,23 @@ msgstr ""
 msgid "OdbCommands"
 msgstr ""
 
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.AnalyticSurfaceProfile:2
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a OdbSequenceAnalyticSurfaceSegment object."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.AnalyticSurfaceProfile:4
+msgid "Path::"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.AnalyticSurfaceProfile:24
+msgid ":obj:`OdbSequenceAnalyticSurfaceSegment`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.AnalyticSurfaceProfile:12
+msgid "An :py:class:`~abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment` object."
+msgstr ""
+
 #: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:2
 msgid "This method determines if an output database file needs to be upgraded to the current release. You can access this method using either of the following techniques:"
 msgstr ""
@@ -6027,6 +6048,66 @@ msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.minEnvelop:9
 msgid "A sequence of two fieldOutput objects. The first fieldOutput object contains the minimum value. The second fieldOutput object contains the index of the field containing the minimum value. The index follows the order in which fields are positioned in the list of fieldOutput objects provided as the argument to the function."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:2
+msgid "This method opens an existing output database (`.odb`) file and creates a new Odb object. You typically execute this method outside of Abaqus/CAE when, in most cases, only one output database is open at any time. For example::"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:10
+msgid "Check `OdbCommands.openOdb on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionodbcommandspyc.htm?contextscope=all#simaker-functionodbcommandsopenodbpyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:15
+msgid "**path**"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:15
+msgid "A String specifying the path to an existing output database (`.odb`) file."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:20
+msgid "**readOnly**"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:18
+msgid "A Boolean specifying whether the file will permit only read access or both read and write access. The initial value is `False`, indicating that both read and write access will be permitted."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:25
+msgid "**readInternalSets**"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:23
+msgid "A Boolean specifying whether the file will permit access to sets specified as Internal on the database. The initial value is `False`, indicating that internal sets will not be read."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:33
+msgid ":obj:`Odb`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:30
+msgid "An :py:class:`~abaqus.Odb.Odb.Odb` object."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:39
+msgid "OdbError: :obj:`The` :obj:`database` :obj:`is` :obj:`from` :obj:`a` :obj:`previous` :obj:`release` :obj:`of` Abaqus."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:38
+msgid "If the output database was generated by a previous release of Abaqus and needs upgrading. Run `abaqus upgrade -job <newFilename> -odb <oldFileName>` to upgrade it."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:42
+msgid "OdbError: :obj:`Abaqus` :obj:`installation` :obj:`must` :obj:`be` :obj:`upgraded` :obj:`before` :obj:`this` :obj:`output` :obj:`database` :obj:`can` :obj:`be`"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:54
+msgid "opened."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:45
+msgid "If the output database was generated by a newer release of Abaqus, and the installation of Abaqus needs upgrading."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.upgradeOdb:2
@@ -7646,10 +7727,6 @@ msgid ":py:obj:`__init__ <abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequen
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid "This method creates a OdbSequenceAnalyticSurfaceSegment object."
-msgstr ""
-
-#: ../../None:7:<autosummary>:1
 msgid ":py:obj:`Start <abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Start>`\\ \\(origin\\)"
 msgstr ""
 
@@ -8393,11 +8470,11 @@ msgid ":py:obj:`writeOBJFile <abaqus.Odb.OdbSession.OdbSession.writeOBJFile>`\\ 
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid ":py:obj:`openOdb <abaqus.Odb.OdbSession.OdbSession.openOdb>`\\ \\(name\\, \\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`openOdb <abaqus.Odb.OdbSession.OdbSession.openOdb>`\\ \\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid "This method opens an existing output database (.odb) file and creates a new Odb object."
+msgid "This method opens an existing output database (`.odb`) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbSession.py:docstring of abaqus.Odb.OdbSession.OdbSession.ScratchOdb:10
