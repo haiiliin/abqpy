@@ -32,11 +32,9 @@ def run(cae: bool = True) -> None:
     
     # check if in debug mode and run
     debug = os.environ.get("ABQPY_DEBUG", "False").lower() == "true"
-    print('Debug mode is on because ABQPY_DEBUG is set to true')
     gettrace = getattr(sys, 'gettrace', None)
     if not debug and gettrace is not None and gettrace():
         debug = True
-        print("Debug mode is on because of debugger")
     
     # if not in debug mode, exit the program
     if not debug:
