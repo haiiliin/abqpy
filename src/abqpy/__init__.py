@@ -24,7 +24,7 @@ def _get_version():
                 local_scheme="node-and-date",
                 fallback_version=_default_version,
             )
-        except ValueError:
+        except Exception:
             return _default_version
     else:  # Get the version from the _version.py setuptools_scm file.
         return _default_version
