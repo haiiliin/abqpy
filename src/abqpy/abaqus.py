@@ -2,7 +2,7 @@ import os
 import sys
 
 
-def run(cae: bool = True, exit_after: bool = True) -> None:
+def run(cae: bool = True) -> None:
     """Runs Abaqus command in system's CLI
     
     This function uses the top level script file to run the Abaqus
@@ -13,9 +13,6 @@ def run(cae: bool = True, exit_after: bool = True) -> None:
     cae : bool, optional
         Wether or not to use `abaqus cae` command or
         `abaqus python`, by default True
-    exit_after : bool, optional
-        Wether to exit of the Python3 interpreter
-        after calling Abaqus, by default False
     """
     abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
     filePath = os.path.abspath(sys.modules['__main__'].__file__)
@@ -32,5 +29,12 @@ def run(cae: bool = True, exit_after: bool = True) -> None:
         os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
     else:
         os.system(f"{abaqus} python {filePath} {args}")
+    
+    # check if in debug mode and run
+    gettrace = getattr(sys, 'gettrace', None)
+    exit_after = False
+    if gettrace is None or not gettrace():
+        exit_after = True
+
     if exit_after:
         sys.exit(0)
