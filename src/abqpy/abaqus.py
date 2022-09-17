@@ -25,17 +25,17 @@ def run(cae: bool = True) -> None:
         filePath = str(filePath).replace(".ipynb", ".py")
     except (FileNotFoundError, ImportError, Exception):
         pass
-    if cae:
-        os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
-    else:
-        os.system(f"{abaqus} python {filePath} {args}")
-    
+
     # check if in debug mode and run
     debug = os.environ.get("ABQPY_DEBUG", "False").lower() == "true"
     gettrace = getattr(sys, 'gettrace', None)
     if not debug and gettrace is not None and gettrace():
         debug = True
-    
-    # if not in debug mode, exit the program
+
+    # If in debug mode do not run the abaqus command at all
     if not debug:
+        if cae:
+            os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
+        else:
+            os.system(f"{abaqus} python {filePath} {args}")
         sys.exit(0)
