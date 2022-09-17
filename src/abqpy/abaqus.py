@@ -36,5 +36,5 @@ def run(cae: bool = True) -> None:
     if gettrace is None or not gettrace():
         exit_after = True
 
-    if exit_after:
+    if exit_after and "pytest" not in sys.modules: # Reference: https://stackoverflow.com/a/44595269/9761768
         sys.exit(0)
