@@ -1,15 +1,8 @@
-import enum
 import importlib.util
 import os
 import typing
 
 from jinja2 import Template
-
-__all__ = [
-    'AvailableTemplate',
-    'ScriptTemplate',
-    'COMPRESSION',
-]
 
 
 def available_templates() -> typing.List[str]:
@@ -20,28 +13,18 @@ def available_templates() -> typing.List[str]:
     List[str]
         A list of existing templates.
     """
-    return [file[:-3] for file in os.listdir(os.path.join(os.path.dirname(__file__), 'templates'))
+    return [file[:-3]for file in os.listdir(os.path.join(os.path.dirname(__file__), 'templates'))
             if file.endswith('.py')]
-
-
-class AvailableTemplate(enum.IntEnum):
-    COMPRESSION = 0
-
-    def __str__(self):
-        return self.name.lower()
-
-
-COMPRESSION = AvailableTemplate.COMPRESSION
 
 
 class ScriptTemplate(Template):
     _vars: typing.Dict[str, typing.Any]
 
-    def __new__(cls, tmp: typing.Union[os.PathLike, AvailableTemplate, str, Template], **kwargs):
+    def __new__(cls, tmp: typing.Union[os.PathLike, str, Template], **kwargs):
         _vars = {}
         if os.path.exists(tmp):
             obj = super().__new__(cls, open(tmp, 'r', encoding='utf-8').read())
-        elif isinstance(tmp, AvailableTemplate) or tmp in available_templates():
+        elif tmp in available_templates():
             module = importlib.import_module(f'abqpy.templates.{tmp}')
             obj = super().__new__(cls, module.template)
             _vars.update(module.defaults)
@@ -51,7 +34,7 @@ class ScriptTemplate(Template):
         obj._vars.update(kwargs)
         return obj
 
-    def __init__(self, tmp: typing.Union[os.PathLike, AvailableTemplate, str, Template], **kwargs):
+    def __init__(self, tmp: typing.Union[os.PathLike, str, Template], **kwargs):
         """Get a template object.
 
         Parameters
@@ -109,4 +92,4 @@ def test_existing_templates():
 
 def test_render():
     """Test the render function."""
-    print(ScriptTemplate(COMPRESSION, width=2, length=2, height=2).render())
+    print(ScriptTemplate('COMPRESSION', width=2, length=2, height=2).render())
