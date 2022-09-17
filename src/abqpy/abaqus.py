@@ -11,7 +11,7 @@ def run(cae: bool = True) -> None:
     Parameters
     ----------
     cae : bool, optional
-        Wether or not to use `abaqus cae` command or
+        Whether to use `abaqus cae` command or
         `abaqus python`, by default True
     """
     abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
