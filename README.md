@@ -70,16 +70,11 @@ You can specify the version number when installing `abqpy`, for example:
 
 Using `pip`:
 ```shell
-<<<<<<< HEAD
 pip install abqpy==2018.3.2
-conda install -c haiiliin abqpy=2018.3.2
-=======
-pip install abqpy==2022.3.2
 ```
 Using `conda`:
 ```shell
-conda install -c haiiliin abqpy=2022.3.2
->>>>>>> a9ef4904 (split command lines also in README (#1476))
+conda install -c haiiliin abqpy=2018.3.2
 ```
 A better way is to use * to match specific version:
 ```shell
