@@ -1,4 +1,3 @@
-import sys
 import abqpy.abaqus
 from .Canvas.Highlight import *
 from .Mdb.Mdb import Mdb
