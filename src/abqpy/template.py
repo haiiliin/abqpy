@@ -1,14 +1,23 @@
 import os
-from typing import Any, Dict, Union
+from typing import Any, Dict, Union, Type
+import textwrap
 
 import toml
 from jinja2 import Template
 
 
 class ScriptTemplate(Template):
+    """A template class for Abaqus script.
+    """
     _params: Dict[str, Dict[str, Any]]
+    #: A list of parameters required by the template.
     parameters = property(lambda self: list(self._params))
+    #: The default parameters.
     defaults = property(lambda self: {name: param['default'] for name, param in self._params.items()})
+    #: The types of the parameters.
+    types = property(lambda self: {name: param['type'] for name, param in self._params.items()})
+    #: The descriptions of the parameters.
+    descriptions = property(lambda self: {name: param['description'] for name, param in self._params.items()})
 
     def __new__(
         cls,
@@ -18,6 +27,15 @@ class ScriptTemplate(Template):
             os.PathLike, str,
         ] = None,
     ):
+        """Create a new template.
+
+        Parameters
+        ----------
+        source : str or PathLike or Template
+            The template source.
+        config : str or PathLike or dict, optional
+            The config file or dict, by default None
+        """
         if os.path.exists(source) and os.path.isfile(config):
             source = open(source, 'r', encoding='utf-8').read()
         obj = super().__new__(cls, source)
@@ -103,9 +121,61 @@ class ScriptTemplate(Template):
             f.write(self.render(**kwargs))
 
 
+def template_doc(cls: Type['_CompressionTemplate']):
+    """Generate the docstring for the template class."""
+    obj = cls()
+    attr_docstrings = []
+    parameters, types, defaults, descriptions = obj.parameters, obj.types, obj.defaults, obj.descriptions
+    for var in obj.parameters:
+        attr_docstrings.append(f'.. py:attribute:: {var}\n'
+                               f'    :type: {types[var]}\n'
+                               f'    :value: {defaults[var]}\n\n'
+                               f'    {descriptions[var]}')
+    attrs_docstring = '\n\n'.join(attr_docstrings)
+    docstring = f"""
+This is a template for the {cls.name}.
+
+.. warning::
+    This is a template class just for documentation, do not use it directly.
+
+.. note::
+    Details of the parameters needed to render the template:
+
+{textwrap.indent(attrs_docstring, ' ' * 4)}
+
+    The source code of the template is::
+    
+{textwrap.indent(obj.source, ' ' * 8)}
+"""
+    cls.__doc__ = docstring
+    return cls
+
+
+class _DocumentTemplate(ScriptTemplate):
+    name = 'template'
+
+    def __new__(cls):
+        dirname = os.path.dirname(__file__)
+        source = os.path.join(dirname, '../../', 'templates', f'{cls.name}.tmp')
+        config = os.path.join(dirname, '../../', 'templates', f'{cls.name}.toml')
+        obj = super().__new__(cls, source, config)
+        obj.source = open(source, 'r', encoding='utf-8').read()
+        return obj
+
+
+@template_doc
+class _CompressionTemplate(_DocumentTemplate):
+    name = 'compression'
+
+
 def test_render():
     """Test the render function."""
     os.chdir(os.path.dirname(__file__))
     os.chdir('../../')
     template = ScriptTemplate('templates/compression.tmp', 'templates/compression.toml')
     print(template.render(width=2, length=2, height=2))
+
+
+def test_decorator():
+    """Test the decorator."""
+    print(_CompressionTemplate.__doc__)

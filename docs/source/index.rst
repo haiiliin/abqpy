@@ -125,6 +125,7 @@ Documentation
 
    getting_started
    tutorials
+   templates
    user
    summary
    references

@@ -38,7 +38,7 @@ default = 1.0
 min = 0.0
 
 [maxNumInc]
-type = "integer"
+type = "int"
 description = "Maximum number of increments"
 default = 1000
 min = 10
@@ -74,6 +74,6 @@ default = 0.1
 min = 0.0001
 
 [job_name]
-type = "string"
+type = "str"
 description = "Job name"
 default = "Job-1"
