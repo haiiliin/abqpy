@@ -2,7 +2,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class TriaxialTestData:
-    """The TriaxialTestData object provides triaxial test data.
+    r"""The TriaxialTestData object provides triaxial test data.
 
     .. note:: 
         This object can be accessed by::
