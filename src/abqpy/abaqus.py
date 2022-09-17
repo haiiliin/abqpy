@@ -27,7 +27,7 @@ def run(cae: bool = True) -> None:
         pass
 
     # check if in debug mode and run
-    debug = os.environ.get("ABQPY_DEBUG", "False").lower() == "true"
+    debug = os.environ.get("ABQPY_DEBUG", "false").lower() == "true"
     gettrace = getattr(sys, 'gettrace', None)
     if not debug and gettrace is not None and gettrace():
         debug = True
