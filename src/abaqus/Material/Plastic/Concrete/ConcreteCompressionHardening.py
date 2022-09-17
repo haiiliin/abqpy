@@ -4,7 +4,7 @@ from ....UtilityAndView.abaqusConstants import *
 
 @abaqus_class_doc
 class ConcreteCompressionHardening:
-    """The ConcreteCompressionHardening object specifies hardening for the concrete damaged
+    r"""The ConcreteCompressionHardening object specifies hardening for the concrete damaged
     plasticity model.
 
     .. note:: 
