@@ -479,7 +479,7 @@ class ContactProperty(InteractionProperty):
             An Int specifying the number of fracture criterion data field variables. The default
             value is 0.
         tolerance
-            A Float specifying the tolerance for VCCT\Enhanced VCCT type. The default value is 0.2.
+            A Float specifying the tolerance for VCCT Enhanced VCCT type. The default value is 0.2.
         specifyUnstableCrackProp
             A SymbolicConstant specifying whether to include unstable crack growth tolerance in
             fracture criterion. Possible values are ON and OFF. The default value is OFF.
