@@ -88,7 +88,7 @@ class ScriptTemplate(Template):
                     kwargs[name] = self._params[name]['max']
                 else:
                     raise ValueError(f'Parameter {name} is too large: {param}')
-        params = self.defaults.copy()
+        params = self.defaults
         params.update(kwargs)
         return params
 
