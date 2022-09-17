@@ -132,13 +132,13 @@ def template_doc(cls: Type['_CompressionTemplate']):
                                f'    {descriptions[var]}')
     attrs_docstring = '\n\n'.join(attr_docstrings)
     docstring = f"""
-This is a template for the {cls.name}.
+This is a template for {cls.name}.
 
 .. warning::
     This is a template class just for documentation, do not use it directly.
 
 .. note::
-    Details of the parameters needed to render the template:
+    Details of the parameters requirements to render the template:
 
 {textwrap.indent(attrs_docstring, ' ' * 4)}
 
