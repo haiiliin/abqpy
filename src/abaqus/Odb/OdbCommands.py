@@ -1,6 +1,5 @@
 import typing
 
-import abqpy.abaqus
 from abqpy.decorators import abaqus_function_doc
 from .FieldOutput import FieldOutput
 from .Odb import Odb
