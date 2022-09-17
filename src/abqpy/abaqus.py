@@ -31,10 +31,13 @@ def run(cae: bool = True) -> None:
         os.system(f"{abaqus} python {filePath} {args}")
     
     # check if in debug mode and run
+    debug = os.environ.get("ABQPY_DEBUG", "False").lower() == "true"
+    print('Debug mode is on because ABQPY_DEBUG is set to true')
     gettrace = getattr(sys, 'gettrace', None)
-    exit_after = False
-    if gettrace is None or not gettrace():
-        exit_after = True
-
-    if exit_after and "pytest" not in sys.modules: # Reference: https://stackoverflow.com/a/44595269/9761768
+    if not debug and gettrace is not None and gettrace():
+        debug = True
+        print("Debug mode is on because of debugger")
+    
+    # if not in debug mode, exit the program
+    if not debug:
         sys.exit(0)
