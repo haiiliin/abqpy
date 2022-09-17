@@ -1,29 +1,12 @@
-import numbers
 import os
-from typing import Any, Dict, Optional, Union, Type
+from typing import Any, Dict, Union
 
 import toml
 from jinja2 import Template
 
 
-class Parameter(dict):
-    """A parameter for a template."""
-    #: The name of the parameter.
-    name: str
-    #: The type of the parameter.
-    type: Type = str
-    #: The default value of the parameter.
-    default: Any = None
-    #: The description of the parameter.
-    description: str = ''
-    #: The minimum value of the parameter.
-    min: Optional[numbers.Number] = None
-    #: The maximum value of the parameter.
-    max: Optional[numbers.Number] = None
-
-
 class ScriptTemplate(Template):
-    _params: Dict[str, Parameter]
+    _params: Dict[str, Dict]
     parameters = property(lambda self: list(self._params))
     defaults = property(lambda self: {name: param['default'] for name, param in self._params.items()})
 
@@ -31,7 +14,7 @@ class ScriptTemplate(Template):
         cls,
         source: Union[os.PathLike, str, Template],
         config: Union[
-            Dict[str, Union[Parameter, Dict[str, Any]]],
+            Dict[str, Union[Dict[str, Any]]],
             os.PathLike, str,
         ] = None,
     ):
@@ -48,13 +31,48 @@ class ScriptTemplate(Template):
         obj._params = {}
         if isinstance(config, dict):
             for name, param in config.items():
-                if isinstance(param, Parameter):
-                    obj._params[name] = param
-                elif isinstance(param, dict):
-                    obj._params[name] = Parameter(name=name, **param)
+                if isinstance(param, Dict):
+                    obj._params[name] = dict(name=name, **param)
                 else:
                     raise TypeError(f'Invalid parameter type: {type(param)}')
         return obj
+
+    def check(self, correct_bounds=True, **kwargs):
+        """Check if the parameters are valid, if valid, return the processed parameters as a dict.
+
+        Parameters
+        ----------
+        correct_bounds : bool, optional
+            Whether to correct the parameters to the bounds, by default True
+        **kwargs
+            The parameters to check.
+
+        Returns
+        -------
+        Dict
+            The original or corrected parameters.
+
+        Raises
+        ------
+        ValueError
+            If the parameters are invalid.
+        """
+        for name, param in kwargs.items():
+            if name not in self._params:
+                raise ValueError(f'Invalid parameter: {name}')
+            if 'min' in self._params[name] and param < self._params[name]['min']:
+                if correct_bounds:
+                    kwargs[name] = self._params[name]['min']
+                else:
+                    raise ValueError(f'Parameter {name} is too small: {param}')
+            if 'max' in self._params[name] and param > self._params[name]['max']:
+                if correct_bounds:
+                    kwargs[name] = self._params[name]['max']
+                else:
+                    raise ValueError(f'Parameter {name} is too large: {param}')
+        params = self.defaults.copy()
+        params.update(kwargs)
+        return params
 
     def render(self, **kwargs) -> str:
         """Render the template.
@@ -69,9 +87,7 @@ class ScriptTemplate(Template):
         str
             The rendered template.
         """
-        params = self.defaults.copy()
-        params.update(kwargs)
-        return super().render(**params)
+        return super().render(**self.check(**kwargs))
 
     def write(self, file: Union[os.PathLike, str], **kwargs):
         """Write the rendered template to a file.
