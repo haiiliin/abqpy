@@ -1,0 +1,79 @@
+# Define parameters for the template
+
+[width]
+type = "float"
+description = "Width of the rectangle"
+default = 1.0
+min = 0.1
+
+[length]
+type = "float"
+description = "Length of the rectangle"
+default = 1.0
+min = 0.1
+
+[height]
+type = "float"
+description = "Height of the rectangle"
+default = 1.0
+min = 0.1
+
+[E]
+type = "float"
+description = "Young's modulus"
+default = 1.0
+min = 0.1
+
+[nu]
+type = "float"
+description = "Poisson's ratio"
+default = 0.3
+min = 0.0
+max = 0.499
+
+[timePeriod]
+type = "float"
+description = "Time period"
+default = 1.0
+min = 0.0
+
+[maxNumInc]
+type = "int"
+description = "Maximum number of increments"
+default = 1000
+min = 10
+
+[initialInc]
+type = "float"
+description = "Initial increment"
+default = 0.1
+min = 0.0001
+
+[minInc]
+type = "float"
+description = "Minimum increment"
+default = 0.01
+min = 0.0001
+
+[maxInc]
+type = "float"
+description = "Maximum increment"
+default = 1.0
+min = 0.0001
+
+[pressure]
+type = "float"
+description = "Pressure"
+default = 1.0
+min = 0.0
+
+[mesh_size]
+type = "float"
+description = "Mesh size"
+default = 0.1
+min = 0.0001
+
+[job_name]
+type = "str"
+description = "Job name"
+default = "Job-1"
