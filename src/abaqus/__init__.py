@@ -1,4 +1,5 @@
 import abqpy.abaqus
+from abqpy.python2funcs import *
 from .Canvas.Highlight import *
 from .Mdb.Mdb import Mdb
 from .Odb.Odb import Odb
