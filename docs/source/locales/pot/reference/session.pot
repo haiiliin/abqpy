@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2016.3.2\n"
+"Project-Id-Version: abqpy 2016.3.3 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-16 00:16+0000\n"
+"POT-Creation-Date: 2022-09-17 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1153,11 +1153,11 @@ msgid ":py:obj:`writeOBJFile <abaqus.Session.Session.Session.writeOBJFile>`\\ \\
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid ":py:obj:`openOdb <abaqus.Session.Session.Session.openOdb>`\\ \\(name\\, \\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`openOdb <abaqus.Session.Session.Session.openOdb>`\\ \\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid "This method opens an existing output database (.odb) file and creates a new Odb object."
+msgid "This method opens an existing output database (`.odb`) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::."
 msgstr ""
 
 #: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession.Movie:5
@@ -1482,12 +1482,12 @@ msgstr ""
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:15
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Spectrum:15
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:15
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:17
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:20
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromFile:17
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromHistory:28
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:20
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:10
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:17
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:20
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromFile:17
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromHistory:28
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:20
@@ -2507,8 +2507,10 @@ msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:29
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:29
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:23
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:16
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:14
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:23
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:16
 msgid "**path**"
 msgstr ""
@@ -3733,47 +3735,72 @@ msgstr ""
 
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:2
 #: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:2
-msgid "This method opens an existing output database (.odb) file and creates a new Odb object. You typically execute this method outside Abaqus/CAE when, in most cases, only one output database is open at any time. For example import odbAccess shockLoadOdb = odbAccess.openOdb(path='myOdb.odb')"
+msgid "This method opens an existing output database (`.odb`) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::"
 msgstr ""
 
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:9
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:9
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:12
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:12
 msgid "Check `Session.openOdb on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessionopenodbpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:14
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:14
-msgid "A String specifying the repository key. If the*name* is not the same as the*path* to the output database (.odb) file, the **path** must be specified as well. Additionally, to support backwards compatibility of the interface, if the **name** parameter is omitted, the **path** and **name** will be presumed to be the same."
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:17
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:17
+msgid "A String specifying the repository key. If the `name` is not the same as the `path` to the output database (`.odb`) file, the `path` must be specified as well. Additionally, to support backwards compatibility of the interface, if the `name` parameter is omitted, the `path` and `name` will be presumed to be the same."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:25
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:25
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:23
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:23
+msgid "A String specifying the path to an existing output database (`.odb`) file."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:28
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:28
+msgid "**readOnly**"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:26
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:26
+msgid "A Boolean specifying whether the file will permit only read access or both read and write access. The initial value is TRUE when the output database file is opened from Abaqus/CAE, indicating that only read access will be permitted."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:36
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:36
 msgid ":obj:`Odb`"
 msgstr ""
 
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:22
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:22
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:33
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:33
 msgid "An :py:class:`~abaqus.Odb.Odb.Odb` object."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:31
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:31
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:42
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:42
 msgid "OdbError: :obj:`The` :obj:`database` :obj:`is` :obj:`from` :obj:`a` :obj:`previous` :obj:`release` :obj:`of` :obj:`Abaqus`"
 msgstr ""
 
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:30
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:30
-msgid "If the output database was generated by a previous release of Abaqus and needs upgrading. Run `abaqus upgrade -job <newFilename> -odb <oldFileName>` to upgrade it."
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:41
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:41
+msgid "If the output database was generated by a previous release of Abaqus and needs upgrading, Run  `abaqus upgrade -job <newFilename> -odb <oldFileName>` to upgrade it."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:43
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:43
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:46
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:46
 msgid "OdbError: :obj:`Abaqus` :obj:`installation` :obj:`must` :obj:`be` :obj:`upgraded` :obj:`before` :obj:`this` :obj:`output` :obj:`database` :obj:`can` :obj:`be` :obj:`opened`"
 msgstr ""
 
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:34
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:34
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:45
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:45
 msgid "If the output database was generated by a newer release of Abaqus, and the installation of Abaqus needs upgrading."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:57
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:57
+msgid "AbaqusError: :obj:`Cannot` :obj:`open` :obj:`file` <filename>"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:49
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:49
+msgid "If the file is not a valid database."
 msgstr ""
 
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.SessionBase.SessionBase.printToFile:6
@@ -4629,7 +4656,7 @@ msgid ":py:obj:`writeOBJFile <abaqus.Session.SessionBase.SessionBase.writeOBJFil
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid ":py:obj:`openOdb <abaqus.Session.SessionBase.SessionBase.openOdb>`\\ \\(\\)"
+msgid ":py:obj:`openOdb <abaqus.Session.SessionBase.SessionBase.openOdb>`\\ \\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
 #: ../../reference/session.rst:43
@@ -4989,7 +5016,7 @@ msgid ":py:obj:`writeOBJFile <abaqus.Animation.AnimationSession.AnimationSession
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid ":py:obj:`openOdb <abaqus.Animation.AnimationSession.AnimationSession.openOdb>`\\ \\(name\\, \\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`openOdb <abaqus.Animation.AnimationSession.AnimationSession.openOdb>`\\ \\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
 #: ../../reference/session.rst:52
@@ -5337,7 +5364,7 @@ msgid ":py:obj:`writeOBJFile <abaqus.DisplayGroup.DisplayGroupSession.DisplayGro
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid ":py:obj:`openOdb <abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.openOdb>`\\ \\(name\\, \\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`openOdb <abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.openOdb>`\\ \\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
 #: ../../reference/session.rst:61
@@ -5689,7 +5716,7 @@ msgid ":py:obj:`writeOBJFile <abaqus.FieldReport.FieldReportSession.FieldReportS
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid ":py:obj:`openOdb <abaqus.FieldReport.FieldReportSession.FieldReportSession.openOdb>`\\ \\(name\\, \\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`openOdb <abaqus.FieldReport.FieldReportSession.FieldReportSession.openOdb>`\\ \\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
 #: ../../reference/session.rst:70
@@ -6037,7 +6064,7 @@ msgid ":py:obj:`writeOBJFile <abaqus.Job.JobSession.JobSession.writeOBJFile>`\\ 
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid ":py:obj:`openOdb <abaqus.Job.JobSession.JobSession.openOdb>`\\ \\(name\\, \\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`openOdb <abaqus.Job.JobSession.JobSession.openOdb>`\\ \\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
 #: ../../reference/session.rst:79
@@ -6385,7 +6412,7 @@ msgid ":py:obj:`writeOBJFile <abaqus.Odb.OdbSession.OdbSession.writeOBJFile>`\\ 
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid ":py:obj:`openOdb <abaqus.Odb.OdbSession.OdbSession.openOdb>`\\ \\(name\\, \\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`openOdb <abaqus.Odb.OdbSession.OdbSession.openOdb>`\\ \\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
 #: ../../reference/session.rst:88
@@ -6741,7 +6768,7 @@ msgid ":py:obj:`writeOBJFile <abaqus.PathAndProbe.PathSession.PathSession.writeO
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid ":py:obj:`openOdb <abaqus.PathAndProbe.PathSession.PathSession.openOdb>`\\ \\(name\\, \\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`openOdb <abaqus.PathAndProbe.PathSession.PathSession.openOdb>`\\ \\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
 #: ../../reference/session.rst:97
@@ -7153,7 +7180,7 @@ msgid ":py:obj:`writeOBJFile <abaqus.XY.XYSession.XYSession.writeOBJFile>`\\ \\(
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid ":py:obj:`openOdb <abaqus.XY.XYSession.XYSession.openOdb>`\\ \\(name\\, \\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`openOdb <abaqus.XY.XYSession.XYSession.openOdb>`\\ \\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
 #: ../../reference/session.rst:107
