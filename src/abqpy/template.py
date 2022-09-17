@@ -126,10 +126,9 @@ def template_doc(cls: Type['_CompressionTemplate']):
     obj = cls()
     attr_docstrings = []
     parameters, types, defaults, descriptions = obj.parameters, obj.types, obj.defaults, obj.descriptions
-    for var in obj.parameters:
-        attr_docstrings.append(f'.. py:attribute:: {var}\n'
-                               f'    :type: {types[var]}\n'
-                               f'    :value: {defaults[var]}\n\n'
+    for var in parameters:
+        attr_docstrings.append(f'.. confval:: {var}\n'
+                               f'    :type: {types[var]}, defaults to {defaults[var]}\n\n'
                                f'    {descriptions[var]}')
     attrs_docstring = '\n\n'.join(attr_docstrings)
     docstring = f"""

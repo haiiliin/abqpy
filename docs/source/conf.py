@@ -67,6 +67,7 @@ extensions = [
     'sphinx_copybutton',
     'sphinx.ext.intersphinx',
     'sphinx_codeautolink',
+    'sphinx_toolbox.confval',
 ]
 
 # Default behavior for code block concatenation for sphinx_codeautolink
