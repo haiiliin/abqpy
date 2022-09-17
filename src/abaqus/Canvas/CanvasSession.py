@@ -8,6 +8,7 @@ from ..UtilityAndView.abaqusConstants import *
 
 @abaqus_class_doc
 class CanvasSession(SessionBase):
+    
     @abaqus_method_doc
     def Viewport(
         self,
