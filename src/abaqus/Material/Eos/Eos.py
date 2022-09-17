@@ -58,7 +58,7 @@ class Eos:
         gasSpecificTable: tuple = (),
         table: tuple = (),
     ):
-        """This method creates an Eos object.
+        r"""This method creates an Eos object.
 
         .. note:: 
             This function can be accessed by::
