@@ -51,6 +51,7 @@ gettext_compact = False     # optional.
 
 # Add source code
 sys.path.insert(0, os.path.abspath('../../src'))
+os.environ['ABQPY_MAKE_DOCS'] = 'true'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
