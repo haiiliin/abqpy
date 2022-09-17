@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2019.3.2\n"
+"Project-Id-Version: abqpy 2019.3.3 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-16 00:17+0000\n"
+"POT-Creation-Date: 2022-09-17 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -893,9 +893,9 @@ msgid ":py:obj:`writeOBJFile <abaqus.Session.Session.Session.writeOBJFile>`\\ \\
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid ":py:obj:`openOdb <abaqus.Session.Session.Session.openOdb>`\\ \\(name\\, \\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`openOdb <abaqus.Session.Session.Session.openOdb>`\\ \\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid "This method opens an existing output database (.odb) file and creates a new Odb object."
+msgid "This method opens an existing output database (`.odb`) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::."
 msgstr ""
