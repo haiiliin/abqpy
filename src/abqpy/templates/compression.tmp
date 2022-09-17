@@ -1,5 +1,3 @@
-
-template = """
 from abaqus import *
 from abaqusConstants import *
 from caeModules import *
@@ -74,20 +72,3 @@ job.waitForCompletion()
 
 # Save abaqus model
 mdb.saveAs('compression.cae')
-"""
-
-defaults = {
-    'width': 1.0,
-    'length': 1.0,
-    'height': 1.0,
-    'timePeriod': 1.0,
-    'maxNumInc': 100,
-    'initialInc': 0.01,
-    'minInc': 0.001,
-    'maxInc': 0.1,
-    'E': 1000.0,
-    'mu': 0.2,
-    'rho': 2500,
-    'pressure': 100.0,
-    'mesh_size': 0.1,
-}
