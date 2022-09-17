@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2019.3.2\n"
+"Project-Id-Version: abqpy 2019.3.3 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-16 00:17+0000\n"
+"POT-Creation-Date: 2022-09-17 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,34 +100,42 @@ msgstr ""
 msgid "You may install the latest development version by cloning the `GitHub repository <https://github.com/haiiliin/abqpy>`_ and use `python` to install from the local directory:"
 msgstr ""
 
-#: ../../getting_started.rst:145
+#: ../../getting_started.rst:146
 msgid "Optional Requirements"
 msgstr ""
 
-#: ../../getting_started.rst:147
+#: ../../getting_started.rst:148
 msgid "If you want to use the Jupyter notebook to write your Abaqus/Python scripts, you need to install `ipynbname`:"
 msgstr ""
 
-#: ../../getting_started.rst:155
+#: ../../getting_started.rst:156
 msgid "Install A Specific Version"
 msgstr ""
 
-#: ../../getting_started.rst:157
+#: ../../getting_started.rst:158
 msgid "You can specify the version number when installing `abqpy`, for example:"
 msgstr ""
 
-#: ../../getting_started.rst:164
-msgid "A better way is to use * to match specific version:"
+#: ../../getting_started.rst:160
+msgid "Using `pip`:"
+msgstr ""
+
+#: ../../getting_started.rst:166
+msgid "Using `conda`:"
 msgstr ""
 
 #: ../../getting_started.rst:172
+msgid "A better way is to use * to match specific version:"
+msgstr ""
+
+#: ../../getting_started.rst:180
 msgid "Abaqus command"
 msgstr ""
 
-#: ../../getting_started.rst:174
+#: ../../getting_started.rst:182
 msgid "In order to use Abaqus command to execute the Python script and submit the job, you need to tell `abqpy` where the Abaqus command located. Usually, Abaqus command locates in a directory like this:"
 msgstr ""
 
-#: ../../getting_started.rst:181
+#: ../../getting_started.rst:189
 msgid "You can add the directory `C:/SIMULIA/Commands` to the system environment variable `Path`, or you can create a new system variable named `ABAQUS_BAT_PATH`, and set the value to the file path of the Abaqus command, i.e., `C:/SIMULIA/Commands/abaqus.bat`."
 msgstr ""
