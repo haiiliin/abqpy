@@ -1,6 +1,7 @@
 from pathlib import Path
-from .abaqus import run
 
+from .abaqus import run
+from .template import *
 
 try:
     from ._version import version as _default_version
