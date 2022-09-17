@@ -84,6 +84,7 @@ intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
     'scipy': ('https://docs.scipy.org/doc/scipy/', None),
     'matplotlib': ('https://matplotlib.org/stable/', None),
+    'jinjia2': ('https://jinja.palletsprojects.com/en/3.0.x/', None),
 }
 
 
