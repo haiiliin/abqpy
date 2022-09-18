@@ -15,11 +15,10 @@ def run(cae: bool = True) -> None:
         `abaqus python`, by default True
     """
     abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
-    try:
-        main_file = sys.modules['__main__'].__file__
-    except (KeyError, AttributeError):
-        return 
-    filePath = os.path.abspath(main_file)
+    if __name__ != '__main__':
+        return
+
+    filePath = os.path.abspath(sys.modules['__main__'].__file__)
     args = " ".join(sys.argv[1:])
 
     try:  # If it is a jupyter notebook
