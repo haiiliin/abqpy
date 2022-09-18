@@ -155,8 +155,8 @@ class _DocumentTemplate(ScriptTemplate):
 
     def __new__(cls):
         dirname = os.path.dirname(__file__)
-        source = os.path.join(dirname, '../../', 'templates', f'{cls.name}.tmp')
-        config = os.path.join(dirname, '../../', 'templates', f'{cls.name}.toml')
+        source = os.path.join(dirname, 'templates', f'{cls.name}.tmpl')
+        config = os.path.join(dirname, 'templates', f'{cls.name}.toml')
         obj = super().__new__(cls, source, config)
         obj.source = open(source, 'r', encoding='utf-8').read()
         return obj
@@ -171,7 +171,7 @@ def test_render():
     """Test the render function."""
     os.chdir(os.path.dirname(__file__))
     os.chdir('../../')
-    template = ScriptTemplate('templates/compression.tmp', 'templates/compression.toml')
+    template = ScriptTemplate('templates/compression.tmpl', 'templates/compression.toml')
     print(template.render(width=2, length=2, height=2))
 
 
