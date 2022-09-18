@@ -1,8 +1,9 @@
+from typing import Union
 from .AbaqusBoolean import AbaqusBoolean
 from .SymbolicConstant import SymbolicConstant
 
 # Alias for methods type annotation
-Boolean = AbaqusBoolean
+Boolean = Union[AbaqusBoolean,bool]
 
 # Additional alias from original module `symbolicConstants.py`
 BooleanType = bool
@@ -12,8 +13,8 @@ SymbolicConstantType = SymbolicConstant
 # Variables with simple values from original module `symbolicConstants.py`
 TRUE = True
 FALSE = False
-ON = Boolean(1)
-OFF = Boolean(0)
+ON = AbaqusBoolean(1)
+OFF = AbaqusBoolean(0)
 
 # Variables from original module `abaqusConstantsSupplement.py`
 """
