@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy 2022.3.3 (dev)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-18 00:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../templates.rst:3
+msgid "Templates"
+msgstr ""
+
+#: ../../templates.rst:5
+msgid "Templates to generate python scripts."
+msgstr ""
+
+#: ../../templates.rst:8
+msgid "Compression Model Template"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template._CompressionTemplate:2
+msgid "This is a template for compression."
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template._CompressionTemplate:5
+msgid "This is a template class just for documentation, do not use it directly."
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template._CompressionTemplate:8
+msgid "Details of the parameters requirements to render the template:"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template._CompressionTemplate:0
+msgid "**Type:** float, defaults to 1.0"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template._CompressionTemplate:0
+msgid "**Type:** float, defaults to 0.3"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template._CompressionTemplate:0
+msgid "**Type:** int, defaults to 1000"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template._CompressionTemplate:0
+msgid "**Type:** float, defaults to 0.1"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template._CompressionTemplate:0
+msgid "**Type:** float, defaults to 0.01"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template._CompressionTemplate:0
+msgid "**Type:** str, defaults to Job-1"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template._CompressionTemplate:75
+msgid "The source code of the template is::"
+msgstr ""
+
+#: ../../templates.rst:14
+msgid "ScriptTemplate"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate:2
+msgid "A template class for Abaqus script."
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.check:2
+msgid "Check if the parameters are valid, if valid, return the processed parameters as a dict."
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.check:0
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.render:0
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.write:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.check:8
+msgid "**correct_bounds** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.check:7
+msgid "bool, optional"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.check:8
+msgid "Whether to correct the parameters to the bounds, by default True"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.check:11
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.render:8
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.write:24
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.check:11
+msgid "The parameters to check."
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.check:0
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.render:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.check:19
+msgid ":obj:`Dict`"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.check:16
+msgid "The original or corrected parameters."
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.check:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.check:32
+msgid ":obj:`ValueError`"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.check:24
+msgid "If the parameters are invalid."
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.defaults:2
+msgid "The default parameters."
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.descriptions:2
+msgid "The descriptions of the parameters."
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.parameters:2
+msgid "A list of parameters required by the template."
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.render:2
+msgid "Render the template."
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.render:8
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.write:11
+msgid "The parameters to render the template."
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.render:25
+msgid ":class:`python:str`"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.render:13
+msgid "The rendered template."
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.types:2
+msgid "The types of the parameters."
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.write:2
+msgid "Write the rendered template to a file."
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.write:8
+msgid "**file** : :class:`python:str` or :obj:`PathLike`"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.write:7
+msgid "python:str or PathLike"
+msgstr ""
+
+#: ../../../../src/abqpy/template.py:docstring of abqpy.template.ScriptTemplate.write:8
+msgid "The file to write to."
+msgstr ""
