@@ -52,4 +52,5 @@ setuptools.setup(
             'abqpy = abqpy.__main__:cli',
         ]
     },
+    package_data={'abqpy': ['templates/*.toml', 'templates/*.tmpl']},
 )
